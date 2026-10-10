@@ -1,0 +1,69 @@
+{
+  "createdAt": 1774517456704,
+  "entityType": "session",
+  "id": "1774517456704_hztxym2c",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估你的 AI 应用是否需要结构化、流式 UI 生成而非纯文本回复",
+      "在本地用 CLI 跑通示例，验证组件约束、渲染链路和 prompt 生成效果"
+    ],
+    "archiveReason": "该内容展示了生成式UI的框架设计、组件约束与流式渲染思路，对关注AI产品前端和LLM交互界面的人有参考价值。",
+    "classifiedAt": 1774522731448,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "OpenUI生成式UI框架概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "OpenUI Lang 以流式、结构化方式生成 UI，替代纯文本或 JSON 输出",
+      "通过预定义组件库和 Zod schema，可以限制模型可生成的 UI 范围",
+      "框架提供 React 运行时、聊天状态管理、预置 UI 组件和 CLI 脚手架",
+      "项目强调 token efficiency，并给出多场景下相对 JSON 的基准对比"
+    ],
+    "oneHighValuePoint": "将“组件库约束 + Prompt 自动生成 + 流式结构化渲染”打通，形成了生成式UI的完整工程闭环。",
+    "oneLineReview": "概念和工程方向都较新，但内容偏项目介绍，证据与落地案例还不够扎实。",
+    "primaryCategory": "AI应用开发框架",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为生成式UI方向的框架参考资料",
+    "secondaryCategories": [
+      "前端工程",
+      "生成式UI",
+      "开发工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了 OpenUI 这一面向生成式 UI 的全栈框架，核心包括 OpenUI Lang、React 运行时、组件库、流式渲染器和脚手架工具，并强调相比 JSON 具有更高 token 效率，适合构建聊天助手和交互式 AI 应用。",
+    "tags": [
+      "OpenUI",
+      "Generative UI",
+      "React",
+      "流式渲染",
+      "LLM",
+      "CLI"
+    ],
+    "title": "thesysdev/openui: The Open Standard for Generative UI",
+    "totalScore": 65,
+    "url": "https://github.com/thesysdev/openui"
+  },
+  "payloadHash": "sha256:8d6482fac73e31f3e121b99eb3c02ad7b28662899370a15c8bae895f0b53bcc8",
+  "refs": {},
+  "revisionId": "sha256:394dd229465cb92aa86f7638ef8cec851913c5a0efe9fae5a6ec769e2eca9bb3",
+  "schemaVersion": 1,
+  "updatedAt": 1774522731453
+}

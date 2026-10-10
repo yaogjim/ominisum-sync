@@ -1,0 +1,69 @@
+{
+  "createdAt": 1780386293603,
+  "entityType": "session",
+  "id": "1780386293603_hn99qaw1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为主要业务线建立固定 Codex thread，并将 Daily thread 仅用于路由和分发",
+      "每轮任务结束后生成 checkpoint 摘要，记录结果、下一步和关键证据",
+      "减少在长上下文 thread 中发送“继续”“好”等低价值短消息",
+      "对日志、搜索结果和网页抓取输出设置摘要优先、局部展开的处理流程"
+    ],
+    "archiveReason": "提供了较具体的上下文生命周期管理方法，可作为 AI Coding 降本和会话组织的参考",
+    "classifiedAt": 1780386725472,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex上下文省Token工作流",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "按业务线而非零散任务划分长期 thread，有助于恢复上下文、控制成本和明确责任边界",
+      "大任务结束后应通过 session-end 或 checkpoint 摘要沉淀结果、下一步和证据，避免长期携带巨型上下文",
+      "短确认在长 thread 中也可能触发大量 input tokens，因此应避免在巨型会话中无意义续聊",
+      "长日志、搜索结果、截图等高 token 内容应先摘要，必要时再局部展开"
+    ],
+    "oneHighValuePoint": "AI coding 的 token 管理本质是上下文生命周期管理，而不是简单减少输入字数。",
+    "oneLineReview": "一篇短小但实用的 Codex 上下文管理经验帖，方法可落地但证据和系统性有限。",
+    "primaryCategory": "AI工具与工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合在使用 Codex 或类似 AI Agent 工具时复用",
+    "secondaryCategories": [
+      "AI Coding",
+      "效率管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享 Codex App 省 token 的实践：按业务线固定置顶 thread，任务到 checkpoint 后压缩收尾，避免在巨型上下文中发送短确认，控制日志和搜索输出，并将自动 loop 归属到具体业务线。",
+    "tags": [
+      "Codex",
+      "Token管理",
+      "上下文管理",
+      "AI工作流",
+      "会话管理"
+    ],
+    "title": "Leo｜一个人 + AI: 怎么把 Codex App 用到极致",
+    "totalScore": 64.5,
+    "url": "https://x.com/runes_leo/status/2059068749756743746"
+  },
+  "payloadHash": "sha256:93c31d0f9cd9d44646c3cef49cbe787929fcd1561c52d142dc225a832d8f02a4",
+  "refs": {},
+  "revisionId": "sha256:40bce898ccc12e38255e5aca05a957ba074bd30da5635c5956766a2327dee275",
+  "schemaVersion": 1,
+  "updatedAt": 1780387398638
+}

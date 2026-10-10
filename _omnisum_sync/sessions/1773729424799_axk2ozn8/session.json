@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773729424799,
+  "entityType": "session",
+  "id": "1773729424799_axk2ozn8",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在实际社媒分享场景中测试 FxEmbed/FixupX 对视频、多图、长文和引用帖的预览效果",
+      "若有稳定需求，可评估自部署该 Cloudflare Worker 方案并接入现有工作流"
+    ],
+    "archiveReason": "内容实用且信息集中，可在需要处理 X/Bluesky 链接预览时快速查阅",
+    "classifiedAt": 1773729454488,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "FxEmbed社媒预览增强工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "通过给 X 或 Bluesky 链接添加特定前缀可改善 Discord、Telegram 等平台的嵌入预览效果",
+      "FxEmbed 提供 API JSON、媒体直链、翻译、多图 mosaic、自部署和隐私友好等能力"
+    ],
+    "oneHighValuePoint": "可通过替换域名直接获取 X 帖子的 API JSON 与更完整的嵌入内容，解决跨平台分享体验差的问题。",
+    "oneLineReview": "这是一个很实用的工具型信息源，但更像产品速报而非高质量深度内容。",
+    "primaryCategory": "工具与效率",
+    "rating": "C",
+    "rejectReason": "缺乏实测数据、对比评估和更深入的技术拆解，方法论价值有限",
+    "retentionDecision": "短期参考后可归档，适合作为社媒链接处理工具备忘",
+    "secondaryCategories": [
+      "社交媒体工具",
+      "开源项目"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍开源项目 FxEmbed，用于改善 X/Twitter 与 Bluesky 链接在 Discord、Telegram 等平台的预览效果，并提供 API、翻译、多图拼接、媒体直链、自部署与隐私友好等特性说明。",
+    "tags": [
+      "FxEmbed",
+      "X/Twitter",
+      "Bluesky",
+      "Cloudflare Worker",
+      "链接预览"
+    ],
+    "title": "x.com/dotey/status/2033580906699485587",
+    "totalScore": 54,
+    "url": "https://x.com/dotey/status/2033580906699485587"
+  },
+  "payloadHash": "sha256:94f316a5c79c8cce5cb2f8781de7c39cbfacb50110e01759bd29420f61403a3d",
+  "refs": {},
+  "revisionId": "sha256:09f89d76c55c627836fe89ed894038a585fbb075c082f2776069b9c47edc5f3d",
+  "schemaVersion": 1,
+  "updatedAt": 1773729947566
+}

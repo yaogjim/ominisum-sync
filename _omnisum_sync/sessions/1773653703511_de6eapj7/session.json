@@ -1,0 +1,69 @@
+{
+  "createdAt": 1773653703511,
+  "entityType": "session",
+  "id": "1773653703511_de6eapj7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你有网页抓取需求，可优先验证其自适应选择器和反 Cloudflare 能力是否适配目标站点",
+      "将其与现有 Scrapy、Playwright 或 Requests 技术栈做一次小规模 PoC 对比",
+      "重点查看 benchmarks.py、tests 和实际 issue 反馈，验证宣传性能与稳定性",
+      "若计划长期采用，先评估代理、浏览器依赖和反爬策略的维护成本"
+    ],
+    "archiveReason": "内容覆盖功能特性、安装方式、示例代码和性能对比，适合作为后续评估或上手参考",
+    "classifiedAt": 1773829474288,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Scrapling网页抓取框架概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "可在单一框架中组合 HTTP、Stealth 浏览器与动态浏览器抓取模式",
+      "支持并发爬取、多会话路由、断点续跑与代理轮换等工程化能力",
+      "提供 CLI、Shell、MCP 接口，降低无代码或 AI 集成场景的使用门槛",
+      "README 通过代码样例展示了从单请求到完整 Spider 的使用路径"
+    ],
+    "oneHighValuePoint": "最有价值的是“自适应元素定位”能力，强调页面结构变化后仍可重新定位目标元素，能显著降低选择器失效带来的维护成本。",
+    "oneLineReview": "功能展示很强、上手示例充分，但更像产品说明书，方法论和独立证据支撑相对一般。",
+    "primaryCategory": "Web抓取工具与框架",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为工具选型和功能查阅资料短中期保留",
+    "secondaryCategories": [
+      "Python开发工具",
+      "自动化与爬虫工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份 Scrapling 项目的 README，介绍其作为 Python 网页抓取框架的核心能力，包括自适应元素定位、反爬绕过、并发爬虫、多会话、断点续爬、CLI 与 MCP 集成，并提供基础示例、安装说明和性能基准。",
+    "tags": [
+      "Web Scraping",
+      "Python",
+      "爬虫框架",
+      "反爬绕过",
+      "并发抓取"
+    ],
+    "title": "D4Vinci/Scrapling: 🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl!",
+    "totalScore": 65.5,
+    "url": "https://github.com/D4Vinci/Scrapling"
+  },
+  "payloadHash": "sha256:7abbec695c2c00c1743681a9f9c7efff3f38df142edf79e3ffc42c6423c37aef",
+  "refs": {},
+  "revisionId": "sha256:244c77c7965b4a4d1e41b712c7dff07702d9858402f6ff3b9514fa1bf1d9e520",
+  "schemaVersion": 1,
+  "updatedAt": 1773829474290
+}

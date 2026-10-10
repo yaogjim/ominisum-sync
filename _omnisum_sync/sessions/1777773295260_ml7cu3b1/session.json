@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777773295260,
+  "entityType": "session",
+  "id": "1777773295260_ml7cu3b1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如对该方向感兴趣，可后续关注项目是否开源及实现细节",
+      "暂不投入精读或归档，等待更完整的技术方案或案例"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777773812033,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 3,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "日本法人AI行政系统构想",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量过少，只有概念性设想，无法直接指导实践，也缺乏证据和展开内容。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "日本小型法人存在行政、税务、邮件等流程自动化需求",
+      "AI agent 可被设想用于企业内部行政事务统一入口"
+    ],
+    "oneHighValuePoint": "将企业员工行政、薪资、税务、邮件等事务统一纳入 AI agent 自动化管理的方向值得关注。",
+    "oneLineReview": "这是一个有潜在方向价值但当前几乎没有实质内容的项目预告。",
+    "primaryCategory": "AI应用",
+    "rating": "B",
+    "rejectReason": "内容仅为个人项目计划预告，缺少实现细节、方法论、案例或可复用经验，当前参考价值很低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "企业行政自动化",
+      "日本法人运营"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "作者表示计划为其日本法人开发一个基于 agent mail/phone 的员工 AI 系统，用于自动化管理行政、薪资、证明、税务、邮件和医疗等事务，并计划开源。",
+    "tags": [
+      "AI员工系统",
+      "法人管理",
+      "行政自动化",
+      "日本公司",
+      "agent"
+    ],
+    "title": "郭宇 guoyu.eth: 马上我的主要日本法人 chekusu Inc 又到一年一度的决算季，我打算做一个基于 agent mail/phone 的员工 AI 系统，把每个员工的行政，薪…",
+    "totalScore": 22,
+    "url": "https://x.com/turingou/status/2049151092974587997"
+  },
+  "payloadHash": "sha256:312fc54b611d1a03c8f3238f748cfb746f93614fd3875b04eb2926847521e682",
+  "refs": {},
+  "revisionId": "sha256:3c4593597789fa7a10a299a19d47beac3412a8f25d2518cb3b9a09f0eadff449",
+  "schemaVersion": 1,
+  "updatedAt": 1777774847610
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773725784229,
+  "entityType": "session",
+  "id": "1773725784229_3f9iiber",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的Agent工作流中对比测试Planning Mode与Execution Mode的完成率和质量",
+      "记录不同模式下的提示、任务类型与结果差异，验证该结论是否可复现"
+    ],
+    "archiveReason": "内容提供了关于Claude Code模式选择的实用观察，可作为后续实验验证的参考样本",
+    "classifiedAt": 1773725798949,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent规划模式表现反直觉",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent在不同运行模式下的系统约束会显著影响任务表现",
+      "给予模型更高自由度可能激发子任务分解与差异分析能力"
+    ],
+    "oneHighValuePoint": "专门的“规划模式”未必优于让执行模式自行生成计划，系统约束可能反而削弱Agent表现。",
+    "oneLineReview": "有启发性的实践观察，但证据链偏弱，更像调参线索而非稳定结论。",
+    "primaryCategory": "AI Agent实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留归档，适合作为Agent工作流调优线索",
+    "secondaryCategories": [
+      "模型评测",
+      "提示策略"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章转述一则关于Claude Code使用体验的观察：专用规划模式可能限制模型推理自由，导致Opus表现低于直接在执行模式中自行生成计划。文中引用了基准结果与简短解释，但证据主要来自社交媒体转述，仍需自行验证。",
+    "tags": [
+      "Claude Code",
+      "Planning Mode",
+      "Execution Mode",
+      "Agent自由度",
+      "模型评测"
+    ],
+    "title": "LotusDecoder: 视频里一个 tips claude code 需要避开专属“规划模式”，给予 Agent 自由度： 作者发现了一个极其反常的现象——如果在使用 Claude C…",
+    "totalScore": 58.5,
+    "url": "https://x.com/LotusDecoder/status/2033728715558101084"
+  },
+  "payloadHash": "sha256:2330518579ab36af0e1a70b2e2769f25d07be4e5d2cb62f0c0b7fb84f58da389",
+  "refs": {},
+  "revisionId": "sha256:d1d6b279f6344a0b144ad5c24a56b40aa2eaebafd8ed92b98d91fba9a50f25b5",
+  "schemaVersion": 1,
+  "updatedAt": 1773730590696
+}

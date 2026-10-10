@@ -1,0 +1,73 @@
+{
+  "createdAt": 1780371112249,
+  "entityType": "session",
+  "id": "1780371112249_3n4k1f9q",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在设计多智能体工作流前，先绘制任务依赖图，区分顺序阶段和可并行扇出任务。",
+      "为每个 Agent 定义角色、工具权限、输入范围、JSON 输出契约和失败处理策略。",
+      "在关键写入共享状态前增加验证器或评估器，降低上下文污染和级联失败风险。",
+      "为不可逆操作设置人工审批门，并通过 CLAUDE.md 或系统提示固化权限与错误处理规则。",
+      "优先从 3-7 个 Agent 的小规模工作流开始，验证编排收益是否超过协调成本。"
+    ],
+    "archiveReason": "文章提供了较完整的多智能体系统设计框架，包含拓扑、通信、治理、故障模式和落地检查清单，适合作为构建 Agent 工作流的参考资料。",
+    "classifiedAt": 1780371736938,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "多智能体工作流构建指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "多智能体系统的核心故障通常来自运行时协调、上下文传播和权限边界，而不是单个智能体推理能力不足。",
+      "六种常见编排拓扑包括顺序流水线、协调器-工作节点、并行扇出合并、生成器-验证器、共享状态和对抗性辩论。",
+      "生产级多智能体系统需要明确输出契约、权限范围、失败行为、人类审批门和可观测性机制。",
+      "上下文污染、级联故障、范围蔓延、静默替换和协调死锁是多智能体系统的主要故障模式。",
+      "是否使用多智能体应取决于任务是否具备独立并行路径、上下文窗口压力、对抗性验证需求、长任务检查点和可复用流程价值。"
+    ],
+    "oneHighValuePoint": "强调中间状态应存放在脚本变量、文件系统或结构化存储等“基底”中，而不是回灌到编排器上下文，从而避免重建单智能体上下文瓶颈。",
+    "oneLineReview": "这是一篇方法论价值较高、适合 AI 工程实践参考的多智能体系统设计指南，但证据和案例支撑相对不足。",
+    "primaryCategory": "AI工程与智能体系统",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "多智能体架构",
+      "Claude Code工作流",
+      "软件工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统介绍多智能体工作流的架构设计，覆盖 Claude 编排原语、六类拓扑、通信机制、故障模式、治理层、生产模式、设计流程与成本控制，偏实践指南。",
+    "tags": [
+      "多智能体",
+      "工作流编排",
+      "Claude Code",
+      "上下文管理",
+      "Agent治理",
+      "系统设计"
+    ],
+    "title": "如何构建多智能体工作流（完整指南）",
+    "totalScore": 77.5,
+    "url": "https://x.com/Av1dlive/status/2061386872321130782"
+  },
+  "payloadHash": "sha256:b508e1ff21b4f8a86d0b54d046d821f5efcf92c151a8d206c4656199081a1c19",
+  "refs": {},
+  "revisionId": "sha256:fc3e6e56cca3e4ef8586838363716b444a15365beb5871fd55e114fa2a58804b",
+  "schemaVersion": 1,
+  "updatedAt": 1780373526428
+}

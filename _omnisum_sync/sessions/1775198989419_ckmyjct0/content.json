@@ -1,0 +1,15 @@
+{
+  "createdAt": 1775198989419,
+  "entityType": "session-content",
+  "id": "1775198989419_ckmyjct0",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>宝玉</strong></header><div class=\"tw-body\">没必要worktree，可以 clone 几份放在固定的目录，轮着用就够了，每次pull最新然后checkout一个新的branch，完成后提PR合并到main</div><blockquote class=\"tw-quote\"><strong>@hyspace</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\" data-imt-pre=\"1\">请教monorepo太大导致没法git worktree，如何更好的并行开发？</span></p></blockquote></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Miami HEAT</strong> <span class=\"tw-eng\">♥ 208 · 💬 0</span><p>Win your way into the final game of the Regular Season :fire: Download the Hard Rock Bet app and enter now!</p></div><div class=\"tw-reply\"><strong>@CME Group Active Trader</strong> <span class=\"tw-eng\">♥ 48 · 💬 5</span><p>Gold futures and options provide the flexibility to trade in both directions, maximizing capital efficiency.</p></div><div class=\"tw-reply\"><strong>@宝玉</strong> <span class=\"tw-eng\">♥ 23 · 💬 4</span><p>这一条推文争议很大，我说的确实不够严谨，有过多个人偏好在里面（我自己不喜欢用worktree），提供了一种选择，但没必要否定另一种，这点是我不对<br><br>同样的，我原推提供的多个固定目录 clone 方案是没问题的，如果你觉得 worktree 好也必要去否定我的方案，大家都求存同异就好<br><br>适合的就是好的</p></div><div class=\"tw-reply\"><strong>@leifu _/</strong> <span class=\"tw-eng\">♥ 12 · 💬 4</span><p>宝玉老师好，对这个问题我有不同看法，monorepo大才更应该用worktree而不是多clone。<br><br>Worktree只多出一份工作树文件，共享同一个.git目录。多clone则是每份都要完整复制.git，monorepo越大，多clone的磁盘和clone时间代价越高。</p></div><div class=\"tw-reply\"><strong>@狐狸布布</strong> <span class=\"tw-eng\">♥ 6 · 💬 2</span><p>多repo clone的方案其实在大厂搜索推荐团队很常见<br><br>我们做A/B实验的时候 一个需求可能同时开3-4个实验分支 用worktree确实不如直接clone几份来得直觉<br><br>核心原因：AI coding agent（Claude Code/Cursor）天然就是一个agent一个目录 物理隔离比逻辑隔离更不容易出幺蛾子<br><br>唯一的坑是push前记得sync main</p></div></div>",
+    "pageContent": "宝玉: 没必要worktree，可以 clone 几份放在固定的目录，轮着用就够了，每次pull最新然后checkout一个新的branch，完成后提PR合并到main\n引用推文 (@hyspace):\n请教monorepo太大导致没法git worktree，如何更好的并行开发？\n---\n热门回复 (共 5 条):\n@Miami HEAT (♥ 208 · 💬 0):\nWin your way into the final game of the Regular Season :fire: Download the Hard Rock Bet app and enter now!\n\n@CME Group Active Trader (♥ 48 · 💬 5):\nGold futures and options provide the flexibility to trade in both directions, maximizing capital efficiency.\n\n@宝玉 (♥ 23 · 💬 4):\n这一条推文争议很大，我说的确实不够严谨，有过多个人偏好在里面（我自己不喜欢用worktree），提供了一种选择，但没必要否定另一种，这点是我不对\n\n同样的，我原推提供的多个固定目录 clone 方案是没问题的，如果你觉得 worktree 好也必要去否定我的方案，大家都求存同异就好\n\n适合的就是好的\n\n@leifu _/ (♥ 12 · 💬 4):\n宝玉老师好，对这个问题我有不同看法，monorepo大才更应该用worktree而不是多clone。\n\nWorktree只多出一份工作树文件，共享同一个.git目录。多clone则是每份都要完整复制.git，monorepo越大，多clone的磁盘和clone时间代价越高。\n\n@狐狸布布 (♥ 6 · 💬 2):\n多repo clone的方案其实在大厂搜索推荐团队很常见\n\n我们做A/B实验的时候 一个需求可能同时开3-4个实验分支 用worktree确实不如直接clone几份来得直觉\n\n核心原因：AI coding agent（Claude Code/Cursor）天然就是一个agent一个目录 物理隔离比逻辑隔离更不容易出幺蛾子\n\n唯一的坑是push前记得sync main\n"
+  },
+  "payloadHash": "sha256:53ba3262f0f09d89d54491d1c0d3fe809c7800a7c0139a401651a538791a1a27",
+  "refs": {},
+  "revisionId": "sha256:c702271804d5382ac651d7636289b6f344117aa06689c2b87f016196445af001",
+  "schemaVersion": 1,
+  "updatedAt": 1775199593480
+}

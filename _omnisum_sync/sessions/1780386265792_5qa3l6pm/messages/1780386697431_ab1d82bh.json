@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780386697432,
+  "entityType": "message",
+  "id": "1780386697431_ab1d82bh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AirOps智能体转型要点\n\n**评级**: B (60分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI产品与智能体设计\n**次类别**: Agent工程, AI工作流\n**标签**: #AirOps #Agent #Harness Engineering #Subagents #Markdown编排\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一条信息量尚可的AI Agent产品设计线索，但证据和细节不足，需要结合原视频进一步验证。\n**核心高价值点**: 将模型视为引擎，把tools、context、guardrails、memory等外围能力作为真正的产品工程重点。\n\n### 摘要\n文章概述AirOps在Claude大会分享中从复杂工作流构建器转向Agent方案的思路，强调Harness Engineering：模型只是引擎，关键在工具、上下文、护栏和子智能体等外围系统。\n\n### 知识要点\n- Agent产品可用Markdown文件进行编排，降低复杂工作流构建成本\n- 通过brand compliance、writer、brand kit等subagents拆分职责以提升输出质量\n- 每次优化后瓶颈会转移，需要持续追踪并解决新的friction point\n- Harness Engineering强调模型之外的工具、上下文、护栏和记忆系统的重要性\n\n### 行动项\n- 查找并观看AirOps在Claude大会上的完整分享，验证80% token减少和10倍速度提升的上下文\n- 在自己的Agent项目中尝试将品牌规范、写作、合规检查拆成独立subagent\n- 评估是否可用Markdown替代部分硬编码workflow配置\n- 建立friction point记录表，持续追踪Agent产品中的主要瓶颈变化\n\n### 存档判定\n归档: 是 — 原因: 提供了Agent产品从workflow builder转向agent-based approach的简明框架，适合作为后续研究线索\n删除: 否\n留存决策: 短期参考后可保留为AI Agent产品设计素材",
+    "role": "assistant",
+    "timestamp": 1780386697432,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:ece2d3fa85a7b097c1ae6f7b80a79edc033fb6bdd328212a25511df86a4ce418",
+  "refs": {
+    "sessionId": "1780386265792_5qa3l6pm"
+  },
+  "revisionId": "sha256:f4327fceee5ca3f7bdf01bc83f150c4a9fedadf4efaa62c21180a3ec6313595d",
+  "schemaVersion": 1,
+  "updatedAt": 1780386697432
+}

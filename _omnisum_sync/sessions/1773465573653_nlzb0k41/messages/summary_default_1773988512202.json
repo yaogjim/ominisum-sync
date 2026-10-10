@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773988512202,
+  "entityType": "message",
+  "id": "summary_default_1773988512202",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 内容大纲\n\n- **项目定位**：`gstack`是 Garry Tan 开源的 AI 软件工厂，把 Claude Code/Codex/Gemini CLI 组织成一支 “虚拟工程团队”，覆盖 CEO、设计、工程管理、QA、发布、文档等角色。\n- **核心主张**：借助一套高度流程化的技能系统，单人也能像 20 人团队一样并行推进产品开发，实现高频、高质量交付。\n- **工作流设计**：围绕完整冲刺链路展开：`Think → Plan → Build → Review → Test → Ship → Reflect`，每个技能产出都会自动喂给下游步骤。\n- **主要技能**：包括`/office-hours`（需求重构）、`/plan-ceo-review`（产品战略审视）、`/plan-eng-review`（架构与测试规划）、`/review`（代码审查）、`/qa`（真实浏览器测试修复）、`/ship`（发版提 PR）、`/document-release`（自动更新文档）等。\n- **增强能力**：支持多模型协作与交叉审查，如`/codex`提供 OpenAI Codex 的第二意见；`/browse`和`/qa`让 AI 真正 “看到并点击” 网页；`/careful`、`/freeze`、`/guard`提供安全护栏。\n- **安装与使用**：通过克隆仓库到`~/.claude/skills/gstack`或`~/.codex/skills/gstack`后运行`./setup`即可接入，也可直接 vendoring 到项目内共享给团队。\n- **目标用户**：技术型创始人、第一次使用 Claude Code 的开发者、Tech Lead/Staff Engineer，希望把 AI 从 “补全工具” 升级为 “可管理的专业团队”。\n- **差异化价值**：不是单点 prompt 工具，而是强调 “结构化分工 + 流程衔接 + 自动测试 / 文档 / 评审” 的端到端工程系统。\n\n# 一句话评论\n\n这是把 “AI 辅助编码” 升级为 “AI 组织化研发流程” 的典型产品，卖点不在模型本身，而在角色编排与交付闭环。\n\n# 一句话高价值内容\n\n最值得借鉴的是它把需求澄清、架构评审、设计审视、代码审查、真实 QA、发布和文档更新串成了一条连续流水线，让 AI 从 “写代码” 变成 “推动整个软件交付系统运转”。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1773988512202,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ce22ffd289efd6e318d6c8a29db9418307c7ac83d9663330fc1882e5295eb28d",
+  "refs": {
+    "sessionId": "1773465573653_nlzb0k41"
+  },
+  "revisionId": "sha256:8ca02ae10cf14f6b4f928de62b4859fa61dd6fed1986cddab12f16bfc268eb74",
+  "schemaVersion": 1,
+  "updatedAt": 1773988512202
+}

@@ -1,0 +1,77 @@
+{
+  "createdAt": 1775558687984,
+  "entityType": "session",
+  "id": "1775558687984_a1q2zkas",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将自己现有的笔记体系按“原始资料 / 编译结论 / 时间线”三层结构重新梳理一遍",
+      "先用最小可行版本实现单库 SQLite + FTS 搜索，再逐步补充 embeddings 与 MCP 接口",
+      "为常见知识操作定义独立技能文档，如 ingest、query、maintain，减少对一次性 prompt 的依赖",
+      "为现有知识库设计导入导出与一致性校验机制，避免未来迁移成本失控"
+    ],
+    "archiveReason": "提供了从理念到实现的完整个人知识库方案，兼具架构设计、工作流定义与可落地命令接口，适合作为后续搭建知识系统的参考蓝图。",
+    "classifiedAt": 1775559121195,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 9,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "个人知识大脑架构方案",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "个人知识库不应只做被动 RAG，而应由 LLM 持续维护一个可累积、可交叉引用的持久化 wiki",
+      "“thin CLI + fat skills”将流程智能放入 markdown 规则文件，降低代码复杂度并提高迭代速度",
+      "SQLite 可在单文件中统一承载全文检索、向量检索、结构化查询与元数据，适合单人知识库场景",
+      "通过 MCP 暴露知识库能力，可让不同 AI 客户端共享同一知识层",
+      "损失可逆迁移、可验证导出和日志化维护是知识系统长期可持续演进的关键"
+    ],
+    "oneHighValuePoint": "最有价值的是“compiled truth + timeline”双层知识结构，把持续更新的结论层与不可篡改的证据层分离，显著提升知识库可维护性与可追溯性。",
+    "oneLineReview": "这是一份高质量的个人知识系统设计稿，方法论和工程实现都很强，但证据主要来自经验判断而非实测数据。",
+    "primaryCategory": "个人知识管理",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "AI 工作流",
+      "知识库架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://gist.github.com/garrytan/49c88e83cf8d7ae95e087426368809cb",
+      "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+    ],
+    "summaryBrief": "文章先提出 LLM 维护式 wiki 的知识管理范式，再进一步扩展为基于 SQLite、FTS5、向量检索与 MCP 的 GBrain 实现方案，覆盖数据模型、CLI 命令、迁移策略、技能文件与维护流程，形成一套较完整的个人知识大脑设计蓝图。",
+    "tags": [
+      "PKM",
+      "LLM",
+      "RAG",
+      "SQLite",
+      "MCP",
+      "知识图谱"
+    ],
+    "title": "从知识检索到个人知识大脑",
+    "totalScore": 76,
+    "url": "omnisun://digest/1775558687984"
+  },
+  "payloadHash": "sha256:e4c77cfd49a7ed76e7a3b98563977775b9fbeb2829c42e031071eefcce7ad627",
+  "refs": {},
+  "revisionId": "sha256:4551fa7128e9cebbba6afe3bf4994b7910cf1c957d6a6b8a81833f0334cb25d6",
+  "schemaVersion": 1,
+  "updatedAt": 1775559384367
+}

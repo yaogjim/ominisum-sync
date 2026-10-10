@@ -1,0 +1,15 @@
+{
+  "createdAt": 1780387597383,
+  "entityType": "session-content",
+  "id": "1780387597383_cu1jmh44",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>九原客</strong></header><div class=\"tw-body\">Agent 其实有三个东西：<br><br>Agent 定义：系统提示词、技能包、扩展、工具定义等。这些本质是不可变的，修改则是新的版本，需要Reload。<br><br>Agent 持久化：包括 Memory、Workspace等。每次运行时需要加载（对象存储、PVC之类）。会话历史推荐不挂载而是放到SQL里提供session tools。<br><br>Agent 运行时：实际 Agent 的运行环境和配置，包括环境变量、沙盒、模型接入、工具代理等。<br><br>变化太快，我们自己最终选择是做了一个 CLI，使用两个yaml 来启动 Agent： cove --agent agent.yml --runtime runtime.yml（把持久化的endpoint放到了runtime里）<br><br>这个CLI支持同时启动多个 Agent，每个 Agent 多个Session。而且因为使用了Sandbox，所以 Agent 本身的核心逻辑就只是 CLI 的一个协程/线程而已。</div><blockquote class=\"tw-quote\"><strong>@idoubicc</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\" data-imt-pre=\"1\">聊一聊 Agent 的存算分离架构设计</span>👇<span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\" data-imt-pre=\"1\">\n\n一个有灵魂，有记忆的 Agent，一次任务的生命周期包括以下步骤\n\n1. 用户输入 query（text + files）\n2. Agent 读取提示词文件（soul.md，identify.md，user.md 等）\n3. Agent 读取可用的工具和技能（tools，skills 等）\n4. Agent x.com/idoubicc/statu…</span></p></blockquote></article>",
+    "pageContent": "九原客: Agent 其实有三个东西： Agent 定义：系统提示词、技能包、扩展、工具定义等。这些本质是不可变的，修改则是新的版本，需要Reload。 Agent 持久化：包括 Memory、Workspace等。每次运行时需要加载（对象存储、PVC之类）。会话历史推荐不挂载而是放到SQL里提供session tools。 Agent 运行时：实际 Agent 的运行环境和配置，包括环境变量、沙盒、模型接入、工具代理等。 变化太快，我们自己最终选择是做了一个 CLI，使用两个yaml 来启动 Agent： cove --agent agent.yml --runtime runtime.yml（把持久化的endpoint放到了runtime里） 这个CLI支持同时启动多个 Agent，每个 Agent 多个Session。而且因为使用了Sandbox，所以 Agent 本身的核心逻辑就只是 CLI 的一个协程/线程而已。\n引用推文 (@idoubicc):\n聊一聊 Agent 的存算分离架构设计 一个有灵魂，有记忆的 Agent，一次任务的生命周期包括以下步骤 1. 用户输入 query（text + files）\n2. Agent 读取提示词文件（soul.md，identify.md，user.md 等）\n3. Agent 读取可用的工具和技能（tools，skills 等）\n4. Agent x.com/idoubicc/statu…"
+  },
+  "payloadHash": "sha256:feb67ff902170745d9d5d37a339a92a469a535757c231e01a28f320106160884",
+  "refs": {},
+  "revisionId": "sha256:7f54a841c5c024f0c310b3c5469240a838f7734dbd2bb1bca11269b47ac80c41",
+  "schemaVersion": 1,
+  "updatedAt": 1780388883233
+}

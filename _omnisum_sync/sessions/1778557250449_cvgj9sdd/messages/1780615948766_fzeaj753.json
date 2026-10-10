@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780615948767,
+  "entityType": "message",
+  "id": "1780615948766_fzeaj753",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Multica巡查员提示词实践\n\n**评级**: B (56分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent工作流\n**次类别**: 项目管理自动化, 提示词工程\n**标签**: #Multica #Autopilot #Issue巡检 #Agent协作 #提示词\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 实用性较强的工具型短帖，但论证和案例支撑较弱，主要价值在于可复制的提示词模板。\n**核心高价值点**: 将 autopilot 设置为 run only，并要求无 actionable items 时自动关闭临时 issue，避免巡检任务本身污染看板。\n\n### 摘要\n文章分享了一个用于 Multica autopilot 的 issue 巡查员提示词，可定时检查 in_review、in_progress、blocked、todo 等状态中的堵塞、异常和无人 review 情况，并提醒使用 run only 模式避免生成垃圾 issue。\n\n### 知识要点\n- Autopilot 可用于定时巡查 issue 队列，识别无人 review、状态停滞、blocked 解除后未推进等问题。\n- 巡查类 agent 应限定权限，只做 comment、subscribe、assign、status update 等调度动作，不直接修改业务代码。\n- 提示词中明确检查范围、输出字段、风险边界和最终 Decision Summary，可提升自动化巡检的可控性。\n\n### 行动项\n- 如果使用 Multica，可创建一个 Review Queue Sweep autopilot，并按文中模板改写为自己的团队流程。\n- 将触发频率设置为每 30 分钟或按项目节奏调整，并启用 run only 模式。\n- 在提示词中补充自己的状态流转规则、owner 分配规则和高风险操作确认人。\n\n### 存档判定\n归档: 是 — 原因: 包含可直接复用的 Multica autopilot 巡查员提示词和基础配置步骤，适合需要自动化管理 issue 队列时参考。\n删除: 否\n留存决策: 短期参考后可按需保留",
+    "role": "assistant",
+    "timestamp": 1780615948767,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:ccc1b8d031ab32701c07809903cf1b0b6c9f20d80e97f86a410c3440739f20d5",
+  "refs": {
+    "sessionId": "1778557250449_cvgj9sdd"
+  },
+  "revisionId": "sha256:55eee3961500e740ae3bd342856a134f7524e075bc27060d2ef8d0adf8712a21",
+  "schemaVersion": 1,
+  "updatedAt": 1780615948767
+}

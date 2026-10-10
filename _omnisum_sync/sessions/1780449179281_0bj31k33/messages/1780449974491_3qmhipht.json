@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780449974492,
+  "entityType": "message",
+  "id": "1780449974491_3qmhipht",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent平台鉴权注入难题\n\n**评级**: B (57分)  |  **深度阅读**: 否  |  **建议操作**: 浏览\n\n**主类别**: AI工程\n**次类别**: Agent平台, 安全架构\n**标签**: #Agent #鉴权 #API_KEY #OAuth #Sandbox #提示词攻击\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 4 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一个有价值的安全风险提醒，但信息量和可执行细节都比较有限。\n**核心高价值点**: Agent工具凭证不应直接暴露在sandbox内部，否则难以防止被提示词诱导泄漏。\n\n### 摘要\n文章指出Agent Platform中CLI和MCP Server需要鉴权，若将API Key或OAuth信息放入sandbox，可能被提示词攻击泄漏，解决方向包括工具代理或HTTPS中间人注入。\n\n### 知识要点\n- Agent Platform中的Skill、CLI、MCP Server都可能涉及外部服务鉴权。\n- 将API_KEY或OAuth信息存入文件、环境变量等sandbox内部位置存在泄漏风险。\n- 提示词攻击可能诱导Agent对凭证进行编码、加密或变形输出，单纯输出过滤并不可靠。\n- 潜在解决方向包括工具代理和HTTPS中间人式凭证注入。\n\n### 行动项\n- 检查现有Agent或sandbox环境中是否直接保存了API Key、OAuth Token等敏感凭证。\n- 调研工具代理、短期凭证、按请求注入、权限隔离等Agent鉴权架构方案。\n\n### 存档判定\n归档: 是 — 原因: 指出了Agent Platform中凭证泄漏风险与两类可能方案，可作为安全设计提醒。\n不推荐: 内容过短，仅提出问题和方向，缺少实现细节、案例验证和系统方法论。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1780449974492,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:938ce7895b0ba179fa5dc90ee6dee99d0cc75ad0a9ed07c90fb191518be0e3bd",
+  "refs": {
+    "sessionId": "1780449179281_0bj31k33"
+  },
+  "revisionId": "sha256:9c52cc2126a927b5e389d06f7979dc726db367dc47f3a00f3b119af676d66e78",
+  "schemaVersion": 1,
+  "updatedAt": 1780449974492
+}

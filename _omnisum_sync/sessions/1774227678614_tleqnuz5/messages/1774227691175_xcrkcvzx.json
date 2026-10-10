@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774227691176,
+  "entityType": "message",
+  "id": "1774227691175_xcrkcvzx",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 多AI工具共享记忆方案\n\n**评级**: B (59.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工作流\n**次类别**: 知识管理, 开发效率\n**标签**: #Claude Code #Codex #OpenClaw #共享记忆 #Markdown #自动同步\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 思路朴素但实用，适合多AI工具重度用户参考，不过证据和细节仍偏少。\n**核心高价值点**: 把Markdown文件作为不绑定平台的“唯一记忆源”，显著降低模型切换和工具替换成本。\n\n### 摘要\n文章分享了一套让Claude Code、Codex、OpenClaw共享记忆的土法方案：以Markdown文件作为统一记忆层，通过session读写、symlink、cron同步和system prompt注入实现跨工具上下文连续性。核心价值在于减少切换工具时的重复解释成本。\n\n### 知识要点\n- 可用Markdown作为多AI助手共享记忆的中立存储层\n- 通过session开始读取、结束写入实现工作上下文延续\n- 可借助symlink与cron实现本地多工具间自动同步\n- system prompt注入快照是一种轻量级上下文分发方式\n- 多Agent共享同一文件存在写冲突风险，需考虑分文件写入和合并读取\n\n### 行动项\n- 尝试为自己的AI开发工作流建立一个`today.md`作为统一上下文文件\n- 设计session启动读取、结束写入的自动化脚本\n- 评估是否需要用分文件写入+合并读取来规避多Agent写冲突\n- 将该方案与现有代码审查或项目管理流程做一次小规模验证\n\n### 存档判定\n归档: 是 — 原因: 提供了跨模型共享上下文的低耦合实现思路，可作为后续搭建个人AI工作流的参考\n删除: 否\n留存决策: 短期参考后可保留，适合作为多Agent协作记忆方案的轻量案例",
+    "role": "assistant",
+    "timestamp": 1774227691176,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:196b49d8d57a6b891493472af2495ffbfaf647948e195c0d72aec7b46eb90e3b",
+  "refs": {
+    "sessionId": "1774227678614_tleqnuz5"
+  },
+  "revisionId": "sha256:134f3b8c21f307e5481915a6c9af2adff28cd37e6f1c2d3579da2d76cbb7a586",
+  "schemaVersion": 1,
+  "updatedAt": 1774227691176
+}

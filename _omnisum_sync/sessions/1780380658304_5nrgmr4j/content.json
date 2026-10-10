@@ -1,0 +1,15 @@
+{
+  "createdAt": 1780380658304,
+  "entityType": "session-content",
+  "id": "1780380658304_5nrgmr4j",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>lifcc</strong></header><div class=\"tw-body\">刚看到一个 Claude Code 插件，解决的问题很真实：<br>Understand-Anything<br>它的 slogan 很直接：<br>Graphs that teach > graphs that impress.<br>不是又一个把代码画成漂亮图的工具，而是想真正帮你理解代码的意义和业务逻辑。<br>当你接手一个十几万行、甚至几十万行的代码库时，最痛苦的往往不是写代码，而是「看不懂」——不知道业务是怎么串起来的，改一个地方会牵动哪里。<br>这个工具用 multi-agent pipeline + Tree-sitter，对代码库做结构化解析和语义理解，生成一个可交互的知识图谱。支持：<br><br>文件、函数、依赖可视化 + 自然语言摘要<br>切换「业务领域视图」，把代码映射到真实业务流程<br>自动生成 Guided Tour，一步步带你理解架构<br>语义搜索（比如问「负责认证的逻辑在哪」）<br>Diff 影响范围分析 + 增量更新</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HJEjcgbbkAAf-Vu?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@lifcc</strong> <span class=\"tw-eng\">♥ 2 · 💬 3</span><p>现在大家对于多agent的理解大体上是一致的，那就是拆分复杂任务，多流程，短下文<br><br>codex推出threads、anthropic放出workflow<br><br>今天langchain出了一个deepagent的blog，思路就是不要人一个agent扛所有事情。它更像一家小咨询公司:一个项目经理在上面统筹,下面一队各管一摊的专员。</p></div></div>",
+    "pageContent": "lifcc: 刚看到一个 Claude Code 插件，解决的问题很真实：\nUnderstand-Anything\n它的 slogan 很直接：\nGraphs that teach > graphs that impress.\n不是又一个把代码画成漂亮图的工具，而是想真正帮你理解代码的意义和业务逻辑。\n当你接手一个十几万行、甚至几十万行的代码库时，最痛苦的往往不是写代码，而是「看不懂」——不知道业务是怎么串起来的，改一个地方会牵动哪里。\n这个工具用 multi-agent pipeline + Tree-sitter，对代码库做结构化解析和语义理解，生成一个可交互的知识图谱。支持： 文件、函数、依赖可视化 + 自然语言摘要\n切换「业务领域视图」，把代码映射到真实业务流程\n自动生成 Guided Tour，一步步带你理解架构\n语义搜索（比如问「负责认证的逻辑在哪」）\nDiff 影响范围分析 + 增量更新\n![图片](https://pbs.twimg.com/media/HJEjcgbbkAAf-Vu?format=jpg&name=large)\n---\n热门回复 (共 1 条):\n@lifcc (♥ 2 · 💬 3):\n现在大家对于多agent的理解大体上是一致的，那就是拆分复杂任务，多流程，短下文\n\ncodex推出threads、anthropic放出workflow\n\n今天langchain出了一个deepagent的blog，思路就是不要人一个agent扛所有事情。它更像一家小咨询公司:一个项目经理在上面统筹,下面一队各管一摊的专员。\n"
+  },
+  "payloadHash": "sha256:e3c529cb8d8d76fce0cb88ed97e2f3df4c99c3e3fe0709bff8fba9d4a7c24f87",
+  "refs": {},
+  "revisionId": "sha256:cf655ca5bff889ca12f7bf861396e8f4b6acd5aedee5638d93e32f4b30cc9993",
+  "schemaVersion": 1,
+  "updatedAt": 1780380968578
+}

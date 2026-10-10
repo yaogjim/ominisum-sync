@@ -1,0 +1,68 @@
+{
+  "createdAt": 1776074582808,
+  "entityType": "session",
+  "id": "1776074582808_x8aa2wm6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将你当前或计划中的AI工作流按任务依赖性、上下文共享需求、是否事件驱动进行分类，再映射到五种模式中选择起点。",
+      "如果正在设计多智能体系统，优先从调度-子智能体模式做最小可行实现，并预设循环上限、人工兜底和升级条件。"
+    ],
+    "archiveReason": "提供了多智能体系统选型框架、适用场景与局限分析，适合作为后续架构设计参考。",
+    "classifiedAt": 1776077998082,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "多智能体协作模式选择指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "生成-验证者适合质量要求高且评价标准明确的任务，但必须定义清晰验证标准并设置终止条件。",
+      "调度-子智能体适合边界清晰、短平快、可拆解的任务，但调度者可能成为信息瓶颈。",
+      "智能体团队适合长期并行且独立的子任务，优势在于持续记忆和领域积累。",
+      "消息总线适合事件驱动和可扩展系统，但调试复杂且依赖路由质量。",
+      "共享状态适合高协作研究型任务，但需重点防范重复劳动、并发冲突和反应式死循环。"
+    ],
+    "oneHighValuePoint": "最有价值的是提出按“上下文边界与信息流动”而非按职能来拆分多智能体系统，这是比模式名称更底层的选型原则。",
+    "oneLineReview": "这是篇很实用的多智能体架构选型指南，方法框架清晰，落地启发强，但证据更多来自经验总结而非系统实验。",
+    "primaryCategory": "AI系统设计",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "多智能体架构",
+      "工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统梳理了生成-验证者、调度-子智能体、智能体团队、消息总线、共享状态五种多智能体协作模式，分别说明其工作机制、适用场景、局限性及模式间的选择标准，并给出从简单模式起步、按瓶颈逐步升级的实践建议。",
+    "tags": [
+      "多智能体",
+      "系统架构",
+      "模式选择",
+      "LLM应用",
+      "Anthropic"
+    ],
+    "title": "Anthropic 官方博文：多智能体协作指南：五种主流模式怎么选、怎么用？【译】",
+    "totalScore": 78,
+    "url": "https://x.com/dotey/status/2043240706156728322"
+  },
+  "payloadHash": "sha256:ca41f873e943857e0ba4ff9a258acc030810807696249678cbfbe35e1af4b824",
+  "refs": {},
+  "revisionId": "sha256:1d1a3a03087662fd589f4794e7f8515022313b0d87d737388e3912be0e04e24d",
+  "schemaVersion": 1,
+  "updatedAt": 1776077998087
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773730906145,
+  "entityType": "message",
+  "id": "1773730906144_lqed7y0w",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: LangChain前端流式集成动态\n\n**评级**: D (29.5分)  |  **深度阅读**: 否  |  **建议操作**: 跳过\n\n**主类别**: AI应用开发\n**次类别**: LangChain生态, 前端集成\n**标签**: #LangChain_JS #React #流式协议 #Agent前端渲染 #产品更新\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 3 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 4 | 20% |\n| 可操作性 | 2 | 15% |\n| 方法论价值 | 2 | 15% |\n| 可迁移性 | 2 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 有一定生态跟踪价值，但本身只是简短更新，缺乏足够内容支撑深入阅读。\n**核心高价值点**: LangChain_JS 正在强化 agent 到前端的流式渲染与 UI 集成能力，说明其产品方向正向开发体验优化倾斜。\n\n### 摘要\n这是一则关于 LangChain_JS 前端渲染能力的简短动态，提到将改进流式协议效率、暴露子代理沙箱活动，并补充前端工具，同时引用了 useStream 与 React UI 库集成的新文档。\n\n### 知识要点\n- LangChain_JS 提供将 agent 渲染到前端的能力，并持续优化开发体验。\n- 新文档展示了如何把 @langchain/react 的 useStream hook 接到不同 React UI 方案。\n\n### 行动项\n- 如正在使用 LangChain 前端方案，可进一步查看官方 useStream 集成文档而不是停留在这条动态。\n- 仅在你需要跟踪 LangChain 前端生态演进时保留官方文档链接，否则可直接删除此条内容。\n\n### 存档判定\n归档: 否\n不推荐: 内容更像简短产品动态预告，缺少实现细节、方法论、案例和可直接复用的信息。\n删除: 是\n留存决策: 建议立即删除\n删除原因: 信息量过低，证据薄弱，主要是路线图式更新，短期时效性强且很快过时。",
+    "role": "assistant",
+    "timestamp": 1773730906145,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:93e90e5269ba8b54413c5f06a77cdd6a048e62e41c42ff4bafe73c1956584a1a",
+  "refs": {
+    "sessionId": "1773730893256_lt4gy8uy"
+  },
+  "revisionId": "sha256:f1876c4c857a05452e48dc972c9df878a6b00a5cd02c85465a8929d49c9dc549",
+  "schemaVersion": 1,
+  "updatedAt": 1773730906145
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780615923748,
+  "entityType": "message",
+  "id": "1780615923747_guhfyjdo",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Codex指令新手使用指南\n\n**评级**: A (71分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI编程工具\n**次类别**: 开发效率, 工具教程\n**标签**: #Codex #AI编程 #Slash Commands #AGENTS.md #开发工作流\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇偏实用的 Codex 入门操作手册，方法清晰但新颖性和证据支撑一般。\n**核心高价值点**: 将 Codex 使用流程总结为“先读项目、再做计划、确认后修改、最后 diff 和 review 验收”，能有效降低 AI 编程失控风险。\n\n### 摘要\n文章面向 Codex 新手，介绍斜杠指令与普通 prompt 的区别，重点讲解 /init、/status、/model、/plan、/diff、/review 等常用命令，并给出一套较稳妥的 AI 编程工作流。\n\n### 知识要点\n- Codex 的斜杠指令用于管理工具行为，普通 prompt 用于描述具体任务。\n- AGENTS.md 可作为项目规则说明，让 Codex 复用项目约定。\n- 大任务应先使用 /plan，避免直接让 AI 修改代码。\n- AI 修改完成后必须查看 /diff，并用 /review 进行提交前检查。\n- /side 适合临时侧聊，/fork 适合创建新的实验路线。\n\n### 行动项\n- 在自己的项目中运行 /init 并补充 AGENTS.md 项目规则。\n- 使用 Codex 前先检查 /status 和 /permissions。\n- 处理复杂需求时先用 /plan 要求 Codex 给出方案而不是直接改代码。\n- 每次 AI 修改后固定执行 /diff、/review 和测试命令。\n\n### 存档判定\n归档: 是 — 原因: 内容系统梳理了 Codex 常用指令、权限控制、项目初始化、diff/review 等实践流程，适合作为新手上手和日常使用检查清单。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1780615923748,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:d5dd899f2ad99a6b7514686d9137c8f089ace4d69a22a4529b9820782e3ce69b",
+  "refs": {
+    "sessionId": "1778224738704_0gmodyrx"
+  },
+  "revisionId": "sha256:bf884871d1e079e88265650301627a78a67e24b672ceaddf74fa03635caf86e9",
+  "schemaVersion": 1,
+  "updatedAt": 1780615923748
+}

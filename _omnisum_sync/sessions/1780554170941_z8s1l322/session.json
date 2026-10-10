@@ -1,0 +1,81 @@
+{
+  "createdAt": 1780554170941,
+  "entityType": "session",
+  "id": "1780554170941_z8s1l322",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在选型AI Agent框架，可优先阅读Key Features和Benchmark Results部分",
+      "在测试环境中按Quick terminal install路径安装并运行opensquilla onboard和gateway run",
+      "重点验证模型路由、成本统计、沙箱、记忆和多渠道集成功能是否符合实际需求",
+      "对比其Benchmark设置与自身任务场景，避免直接采信单一项目自述结果"
+    ],
+    "archiveReason": "包含较完整的安装、配置、架构特性和基准数据，可作为评估开源AI Agent工具的参考材料",
+    "classifiedAt": 1780558660266,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "OpenSquilla智能体项目概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1780554170936,
+        "imageId": "img-1",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# OpenSquilla 项目总结：更省 Token 的 AI Agent 微内核\n\n## 一句话概括\n\n**OpenSquilla 是一个面向 CLI、Web UI 和聊天渠道的开源 AI Agent 框架，核心卖点是 “同样预算下获得更高智能密度”：通过本地模型路由，把每轮任务分配给最便宜且足够胜任的模型，从而降低 Token 成本、提升整体效率。**\n\n---\n\n## 核心定位\n\n### 一个 “微内核式” AI Agent\n\nOpenSquilla 采用**microkernel AI agent**架构，把 Agent 的核心能力抽象为统一的执行循环：\n\n- 模型选择\n- 工具调用\n- 重试机制\n- 记忆管理\n- 沙箱执行\n- 决策日志\n- Web 搜索\n- 本地 Embedding\n\n无论用户从**Web UI、CLI，还是 Slack、Telegram、飞书等聊天渠道**接入，最终都会走同一套核心逻辑，保证行为一致。\n\n---\n\n## 核心价值\n\n### 1. Token 效率更高\n\nOpenSquilla 内置**SquillaRouter 本地模型路由器**，可以根据任务复杂度选择合适模型：\n\n- 简单任务走更便宜模型\n- 复杂任务走更强模型\n- 避免所有任务都调用高价大模型\n\n这使它的目标不是单纯 “更聪明”，而是**在相同预算下完成更多、更复杂的任务**。\n\n### 2. 多模型、多供应商兼容\n\n它支持大量 LLM Provider，包括：\n\n- OpenRouter\n- OpenAI\n- Anthropic\n- Ollama\n- DeepSeek\n- Gemini\n- Qwen / DashScope\n- 以及 20+ 其他供应商\n\n开发者无需大改代码或配置结构，就能切换不同模型服务。\n\n### 3. 多入口统一体验\n\nOpenSquilla 支持多种使用入口：\n\n- Web 控制台\n- 命令行 CLI\n- Chat / REPL\n- Slack、Telegram、飞书、钉钉、企业微信、Discord 等聊天渠道\n\n重点是：**不同入口不是割裂产品，而是共享同一套 Agent 运行机制。**\n\n---\n\n## 主要能力\n\n### 持久化记忆\n\nOpenSquilla 支持记忆系统和本地 Embedding，可用于长期上下文、偏好、知识沉淀等场景。\n\n### 分层沙箱\n\n项目内置 sandbox 能力，用于约束 Agent 的执行环境，降低自动化任务中的安全风险。\n\n### 内置 Web 搜索\n\n可以配置搜索能力，让 Agent 在需要时检索外部信息，而不只依赖模型自身知识。\n\n### 渠道集成\n\n支持多个聊天平台接入，并提供连接状态检查，适合做企业内部助手、自动化客服、工作流机器人等。\n\n---\n\n## 安装与使用方式\n\n### 支持平台\n\nOpenSquilla 支持：\n\n- Windows\n- macOS\n- Linux\n\n### 推荐安装路径\n\n官方推荐使用**Quick terminal install**，通过`uv`安装发布版本：\n\n```bash\nopensquilla onboard\nopensquilla gateway run\n```\n\n然后访问：\n\n```text\nhttp://127.0.0.1:18791/control/\n```\n\n### Windows 便携版\n\nWindows 用户可以下载 portable zip，无需单独安装 Python，适合非开发者快速体验。\n\n### 开发者安装\n\n如果需要修改源码、运行测试或调试，可以使用：\n\n```bash\nuv sync\nuv run opensquilla ...\n```\n\n官方明确区分了 “从源码安装使用” 和 “开发源码” 两种场景。\n\n---\n\n## 配置方式\n\n### 首次配置\n\n使用：\n\n```bash\nopensquilla onboard\n```\n\n可以交互式完成：\n\n- Provider 配置\n- Router 配置\n- Channel 配置\n- Search 配置\n- Image Generation 配置\n- Memory Embedding 配置\n\n也支持无交互配置，适合 SSH、CI 或自动化部署。\n\n### 健康检查\n\n可以通过：\n\n```bash\nopensquilla doctor\n```\n\n或 Web UI 的 Health 页面检查：\n\n- Provider 是否可用\n- Memory 是否正常\n- Router 是否正常\n- Channel 是否连接\n- Sandbox 状态\n- Search / Image generation 配置等\n\n---\n\n## 当前版本重点：0.3.1\n\nOpenSquilla 0.3.1 是 0.3 系列的维护版本，主要改进包括：\n\n### 渠道体验优化\n\n增强 Slack Socket Mode、线程回复、签名密钥、应用提及等能力，保证聊天上下文更稳定。\n\n### 媒体与语音流程优化\n\n短剧、视频、语音、音频相关工作流更完整，生成媒体流程中加入更清晰的人工审查暂停点。\n\n### 聊天 UI 优化\n\n用户消息气泡支持多行文本，展示更自然，不再像压缩后的标签。\n\n### Provider 请求加固\n\n避免异常 tool-call 历史传给模型供应商，减少无效请求状态。\n\n### 安装与发布稳定性提升\n\n更新安装 URL、版本一致性检查、CI 检查和发布元数据。\n\n---\n\n## 产品视角解读\n\n### 它解决的问题\n\nOpenSquilla 试图解决 AI Agent 落地中的几个典型痛点：\n\n1. **成本不可控**：所有任务都调用昂贵模型，Token 消耗高。\n2. **入口割裂**：Web、CLI、聊天机器人各自一套逻辑。\n3. **供应商绑定**：切换模型或平台成本高。\n4. **Agent 行为不稳定**：工具调用、重试、日志、记忆缺少统一治理。\n5. **本地能力不足**：缺少本地路由、Embedding、沙箱等基础设施。\n\n### 它的产品方向\n\nOpenSquilla 更像是一个**AI Agent 基础设施产品**，不是单一聊天机器人。\n\n它适合的场景包括：\n\n- 企业内部 AI 助手\n- 多渠道智能客服\n- 自动化运维 Agent\n- 研发辅助工具\n- 低成本多模型调度平台\n- 可控、安全的本地 Agent 实验环境\n\n---\n\n## 总结\n\nOpenSquilla 的核心不是 “再做一个 AI Chatbot”，而是构建一个**统一、多入口、低成本、可扩展的 Agent 运行底座**。\n\n它通过本地模型路由提升 Token 使用效率，通过统一 turn loop 保证多入口一致性，通过多 Provider 支持降低模型绑定风险。对于关注 AI Agent 成本、可靠性和工程化落地的团队来说，这是一个值得关注的开源项目。",
+        "url": "https://opengraph.githubassets.com/2e40fb8285e3233dc815473df6a7d9de3d694437366bf2e31894138547b373b7/opensquilla/opensquilla",
+        "visualFacts": []
+      }
+    ],
+    "knowledgePoints": [
+      "OpenSquilla采用微内核式Agent架构，CLI、Web UI和聊天渠道共享同一TurnRunner执行循环",
+      "SquillaRouter使用本地LightGBM、ONNX和语义嵌入对任务复杂度分类，并路由到不同模型层级",
+      "项目支持20多个LLM服务商，并提供持久记忆、Web搜索、沙箱、技能、MCP和多渠道集成",
+      "README提供Windows、macOS、Linux下的便携版、uv安装、源码安装和开发安装路径",
+      "基准结果声称在PinchBench上以接近OpenClaw的分数显著降低总成本"
+    ],
+    "oneHighValuePoint": "通过本地模型路由将任务分发给不同成本层级模型，以在相近效果下降低Token和调用成本。",
+    "oneLineReview": "作为项目README具备较强实用性，但方法论和证据深度有限，更适合工具选型和快速上手参考。",
+    "primaryCategory": "AI工具与智能体",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可视使用情况保留",
+    "secondaryCategories": [
+      "开源项目",
+      "LLM工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了OpenSquilla开源AI Agent项目，重点包括本地模型路由、统一网关、多渠道接入、持久记忆、安全沙箱、安装配置方式及少量基准测试结果。",
+    "tags": [
+      "AI Agent",
+      "模型路由",
+      "Token优化",
+      "CLI工具",
+      "开源项目"
+    ],
+    "title": "opensquilla/opensquilla: OpenSquilla — Token-Efficient AI Agent with same budget, higher intelligence density",
+    "totalScore": 63.5,
+    "url": "https://github.com/opensquilla/opensquilla"
+  },
+  "payloadHash": "sha256:54dc4392fdf91d5540ff0b46796646a201e9adca9b9716175e1982ee218d8ad9",
+  "refs": {},
+  "revisionId": "sha256:de1688e13c485efa14de5b4195093f0aa91fb9c83cbe9d795bf60b978012a078",
+  "schemaVersion": 1,
+  "updatedAt": 1780560268197
+}

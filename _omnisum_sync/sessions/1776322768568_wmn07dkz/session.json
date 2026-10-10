@@ -1,0 +1,68 @@
+{
+  "createdAt": 1776322768568,
+  "entityType": "session",
+  "id": "1776322768568_wmn07dkz",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据示例在本地创建最小可运行 demo，验证 Agent、Tool 与 Handoff 的基本调用链路。",
+      "重点查看 examples 和 docs，判断该框架是否适合你的多智能体编排或自动化任务场景。",
+      "若关注真实执行能力，可优先测试 Sandbox Agent 在代码库分析、命令执行和状态保持上的表现。"
+    ],
+    "archiveReason": "这是官方仓库首页说明，适合在需要评估多智能体框架能力边界、安装方式和核心概念时快速查阅。",
+    "classifiedAt": 1776325481178,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "OpenAI多智能体Python框架概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "OpenAI Agents SDK 支持 Agent、Tool、Guardrail、Handoff、Session、Tracing 等多智能体工作流基础组件。",
+      "Sandbox Agents 可在受控容器或本地沙箱中执行文件检查、命令运行、补丁应用等长周期任务。",
+      "框架兼容 OpenAI API 以及 100 多种其他 LLM，强调 provider-agnostic 的架构设计。",
+      "支持语音代理、Redis 会话存储与示例工程，降低了快速试用门槛。"
+    ],
+    "oneHighValuePoint": "Sandbox Agents 将文件系统、命令执行和长任务状态管理纳入统一代理框架，是从聊天式代理走向真实工作流自动化的关键能力。",
+    "oneLineReview": "官方概览清晰易上手，但更像产品说明书，方法论和证据支撑偏弱。",
+    "primaryCategory": "AI开发框架",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为多智能体框架选型与快速上手参考",
+    "secondaryCategories": [
+      "多智能体系统",
+      "Python工程实践"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章本质上是 OpenAI Agents Python SDK 的仓库首页说明，介绍了多智能体工作流框架的核心能力、安装方式、Sandbox Agent、新增语音与会话支持等内容，适合作为快速了解产品能力与上手入口，但缺少深入原理、对比分析和实证数据。",
+    "tags": [
+      "OpenAI Agents SDK",
+      "多智能体",
+      "Python",
+      "Sandbox Agents",
+      "LLM工作流"
+    ],
+    "title": "openai/openai-agents-python: A lightweight, powerful framework for multi-agent workflows",
+    "totalScore": 61.5,
+    "url": "https://github.com/openai/openai-agents-python"
+  },
+  "payloadHash": "sha256:2134fd85322734127b55ad3e9c66666de784f82702a2a16239cf8fb2f5a0943f",
+  "refs": {},
+  "revisionId": "sha256:a40dca7da6501238007578dfce7c0f4e16ef9eb5e2a9cb9d9125ea5e8e1800c7",
+  "schemaVersion": 1,
+  "updatedAt": 1776404714818
+}

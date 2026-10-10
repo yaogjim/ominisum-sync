@@ -1,0 +1,69 @@
+{
+  "createdAt": 1773283575593,
+  "entityType": "session",
+  "id": "1773283575593_nffvy7iu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在做 Agent 产品，可参考其“场景库 + 规则评估 + LLM judge + CI”的评测框架",
+      "为现有工作流设计人审节点，并记录 send/edit/cancel 等行为作为反馈信号",
+      "评估是否能在你的 CRM、工单、沟通平台中复用“系统接入优先于对话壳”的落地策略"
+    ],
+    "archiveReason": "包含较完整的生产级 Agent 设计思路、评估闭环与反馈学习机制，适合后续复用",
+    "classifiedAt": 1773830384171,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "LangChain销售代理构建复盘",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "先定义成功标准和场景库，再进入 Agent 工作流开发与 CI 评估",
+      "Human-in-the-loop 不仅用于风控，也可作为高质量反馈数据采集机制",
+      "通过编辑 diff 提取个体偏好记忆，可让 Agent 自动学习不同用户风格",
+      "用受限工具集和结构化输出的子代理提升并行性、可控性与可调试性",
+      "生产级 Agent 需要系统接入、可追踪评估、状态管理与长流程编排能力"
+    ],
+    "oneHighValuePoint": "最有价值的是把人类审批动作、编辑差异和评估 trace 连接成持续学习闭环，而不是只停留在一次性自动化。",
+    "oneLineReview": "这是一篇偏实战的 Agent 生产化案例，方法框架有参考价值，但带有明显品牌宣传色彩。",
+    "primaryCategory": "AI Agent工程实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为 AI Agent 落地与评估实践案例参考",
+    "secondaryCategories": [
+      "销售自动化",
+      "LLM产品运营"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章复盘了 LangChain 如何构建面向销售团队的 GTM Agent，覆盖线索研究、邮件草拟、账户情报、记忆学习、子代理并行、评估体系与 Slack 人审闭环。方法论较强，但数据多为自报结果，证据独立性一般。",
+    "tags": [
+      "GTM Agent",
+      "LangSmith",
+      "Human-in-the-loop",
+      "Evals",
+      "多代理编排"
+    ],
+    "title": "How we built LangChain's GTM Agent",
+    "totalScore": 67.5,
+    "url": "https://x.com/LangChain/status/2031055593360990358"
+  },
+  "payloadHash": "sha256:7522a6709cf76476cdf36ad32d56fea6c453ec308bfc4dcf110b16d9222c267a",
+  "refs": {},
+  "revisionId": "sha256:dc07db79c674a9973e2ab5bfbcf8648929b9e65653f7d4a68603f7107b5cf495",
+  "schemaVersion": 1,
+  "updatedAt": 1773830384178
+}

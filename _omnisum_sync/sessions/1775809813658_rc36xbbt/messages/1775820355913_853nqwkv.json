@@ -1,0 +1,19 @@
+{
+  "createdAt": 1775820355914,
+  "entityType": "message",
+  "id": "1775820355913_853nqwkv",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Harness工程三维实践复盘\n\n**评级**: A (76.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI工程实践\n**次类别**: Agent工作流, 开发效率\n**标签**: #Harness Engineering #Claude Code #Agent协作 #上下文管理 #工作流设计\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 9 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 不是学术级严谨总结，但把Agent长期协作的核心问题讲得足够清楚且可直接借鉴。\n**核心高价值点**: 将Agent可靠性问题拆成交互、空间、时间三个独立维度，并分别配套规则外置、worktree隔离、状态持久化与主动截断机制。\n\n### 摘要\n文章基于作者半年使用Claude Code的踩坑经历，将OpenAI、Cursor、Anthropic关于harness engineering的观点归纳为交互、空间、时间三个扩展维度，并给出规则文档、worktree隔离、记忆刷写与长session截断等具体实践。\n\n### 知识要点\n- 交互维度的核心是把隐性知识外显化，建立CLAUDE.md、rules目录和SSOT路由表。\n- 空间维度的核心是多Agent并行隔离，代码修改任务适合放到独立git worktree中完成。\n- 时间维度的核心是应对长session退化，通过强制记忆刷写、任务持久化和超阈值重开降低偏航风险。\n- 专业化Agent通常比全能Agent更稳定，按搜索、规划、修错等角色拆分更有效。\n\n### 行动项\n- 为常用AI助手建立一个最小可用的CLAUDE.md，记录项目背景、代码规范、禁改区域和交付标准。\n- 梳理信息单一事实源，为关键数据建立SSOT路由表，避免多文件写入造成冲突。\n- 在并行Agent改代码时启用git worktree隔离，减少互相覆盖和合并冲突。\n- 为长任务增加session结束写记忆、跨session任务清单和超轮次主动重开机制。\n\n### 存档判定\n归档: 是 — 原因: 内容将三篇harness engineering实践统一到交互、空间、时间三个维度，并给出个人可落地方案，适合作为AI Agent工作流设计参考。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1775820355914,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:26e4044081f9c971ee604d2d93fe07ef362b9c60f7e6ca4ed1e76d6ca627db64",
+  "refs": {
+    "sessionId": "1775809813658_rc36xbbt"
+  },
+  "revisionId": "sha256:dc45a18d14e1714ca36dcd51202cc2536fb062131480b72d0ed498f6a2009572",
+  "schemaVersion": 1,
+  "updatedAt": 1775820355914
+}

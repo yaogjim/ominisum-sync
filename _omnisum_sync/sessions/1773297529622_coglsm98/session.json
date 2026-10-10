@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773297529622,
+  "entityType": "session",
+  "id": "1773297529622_coglsm98",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的智能体项目中明确当前目标是实验构建还是快速交付，再决定选框架还是工具包",
+      "用一张表对比候选方案的可替换性、默认能力、状态管理和错误恢复能力"
+    ],
+    "archiveReason": "对理解智能体框架、运行时与开箱即用工具的分层有帮助，可作为选型时的快速参考",
+    "classifiedAt": 1773830312468,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "智能体框架与工具区别",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "智能体开发可放在从原始代码到框架再到开箱即用工具包的连续光谱上理解",
+      "框架强调模块化和可替换组件，工具包强调内置决策与快速可用",
+      "LangChain 生态可区分为框架、运行时和更高层封装工具三层"
+    ],
+    "oneHighValuePoint": "最有价值的是用“控制权换速度”的视角解释框架与工具包选择，本质是在灵活性与预设能力之间做权衡。",
+    "oneLineReview": "适合入门澄清概念，但更像经验性观点总结，证据和深度都有限。",
+    "primaryCategory": "AI工程与智能体开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，适合作为概念辨析材料",
+    "secondaryCategories": [
+      "框架选型",
+      "产品架构认知"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章用“抽象与预设程度的光谱”解释智能体框架与工具包的差异：框架偏模块化、可替换，适合构建者；工具包偏内置决策、开箱即用，适合快速落地。并以 LangChain、Deep Agents、OpenClaw 等作为例子说明边界正在模糊。",
+    "tags": [
+      "智能体",
+      "Agent Framework",
+      "Harness",
+      "LangChain",
+      "架构选择"
+    ],
+    "title": "智能体测试套件与智能体框架的区别",
+    "totalScore": 55.5,
+    "url": "https://x.com/tonykipkemboi/status/2031068470922670471"
+  },
+  "payloadHash": "sha256:ec22051d7229170cd4d7cd9c151d5b153f228b045e06df4369b4022595abfa07",
+  "refs": {},
+  "revisionId": "sha256:aaa5311403c3e380a8e8a34638993c9facc31565cf42412908a03dd84fc59bb0",
+  "schemaVersion": 1,
+  "updatedAt": 1773830312472
+}

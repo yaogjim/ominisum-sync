@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780308480196,
+  "entityType": "message",
+  "id": "1780308491477_usn0yw12",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\nECC 是 Anthropic 黑客松冠军团队开源的 **AI 编程工作台**。\n\n它不只是提示词库，而是一整套面向 Claude Code / Cursor / Codex 的工程化工作流，包含：\n\n- **61 个 Agent**\n- **246 个 Skills**\n- **76 个预设命令**\n- 规则、Hook、安全扫描、MCP 配置等\n\n核心价值：  \n> 不是教你“怎么问 AI”，而是教你“怎么组织 AI 持续干活”。\n\n---\n\n## 二、解读\n\n普通人用 AI 编程，常见方式是：\n\n> 我问一句，AI 答一句。\n\n但 ECC 的思路更像是搭建一个“AI 公司”：\n\n- Agent：不同岗位的人，比如架构师、测试员、安全审查员\n- Skills：每个人会的具体技能\n- Commands：固定流程按钮，比如生成代码、检查漏洞、写文档\n- Rules / Hooks：工作纪律和自动触发机制\n- MCP：连接外部工具和数据源\n\n所以它强调的是 **流程化、模块化、可复用**。\n\n这对重度 AI 编程用户很有启发：  \nAI 不只是聊天助手，而可以被组织成一个稳定的开发系统。\n\n---\n\n## 三、我的意见\n\nECC 值得看，但不建议一上来全量照搬。\n\n原因很简单：\n\n- 61 个 Agent、246 个 Skills，规模很大\n- 对个人开发者来说，维护成本可能不低\n- 真正有价值的是它的“设计思路”，不是数量本身\n\n更合理的用法是：\n\n1. 先看它怎么拆分 Agent 和 Skills  \n2. 挑自己常用的流程复用  \n3. 从 3～5 个高频 Agent 开始搭  \n4. 慢慢形成自己的 AI 编程工作台  \n\n一句话评价：\n\n> ECC 的意义不在于“有多少提示词”，而在于展示了 AI 编程从单次对话走向工程化协作的方向。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780308480196,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d10b697250708a13cc20d02a2ded4826413d0153c2a673de275f4b6845375aac",
+  "refs": {
+    "sessionId": "1780308491246_0jb94nfg"
+  },
+  "revisionId": "sha256:b9a4b9ba4efc1f2ff1369c406b5974afdf7d0ef17964947c192433df2f30b90a",
+  "schemaVersion": 1,
+  "updatedAt": 1780308480196
+}

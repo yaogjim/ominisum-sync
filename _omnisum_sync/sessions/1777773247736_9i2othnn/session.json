@@ -1,0 +1,66 @@
+{
+  "createdAt": 1777773247736,
+  "entityType": "session",
+  "id": "1777773247736_9i2othnn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据截图或原文补全 ~/.zshrc / ~/.bashrc 中的 alias 配置并本地测试",
+      "如需要保留上下文切换模型，可进一步评估 langcli 或其他路由工具"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777773761722,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code多模型别名配置",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可通过 shell 启动配置文件为 Claude Code 设置多个不同模型入口",
+      "不同终端窗口运行不同别名时，上下文通常无法自动共享",
+      "类似方法也可用于按需开启代理或项目级环境配置"
+    ],
+    "oneHighValuePoint": "用 shell alias 或环境变量封装不同模型配置，可快速启动不同 Claude Code 后端。",
+    "oneLineReview": "一个实用但较浅的 Claude Code 多模型切换小技巧，适合快速参考，不值得长期保存。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容主要是一个简单 shell alias 配置技巧，信息量有限，缺少完整命令、原理说明和可靠案例验证。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Claude Code",
+      "Shell配置"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍通过在 ~/.zshrc 或 ~/.bashrc 中配置不同命令别名，使 Claude Code 在不同终端窗口中分别调用官方 Claude、蚂蚁百灵或 DeepSeek 等模型。评论中补充了上下文无法共享、可用 langcli 切换模型等观点。",
+    "tags": [
+      "Claude Code",
+      "大模型切换",
+      "alias",
+      "zshrc",
+      "终端配置"
+    ],
+    "title": "AI少年: 卧槽，这个给Claude Code 配置中转站或者第三方大模型的方式我还是第一次学到，太简单好用了，强烈推荐一波",
+    "totalScore": 45,
+    "url": "https://x.com/aehyok/status/2049503918829494675"
+  },
+  "payloadHash": "sha256:53982bcf8ed5c8a472d98d0831d3b2ee662fd7ab644535506414e6d684dbdc72",
+  "refs": {},
+  "revisionId": "sha256:0723e7054d09b917825275a2df5fad7ae1e8f4f675cde4b6ad24273ed8851b7f",
+  "schemaVersion": 1,
+  "updatedAt": 1777774646891
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1775558880148,
+  "entityType": "session",
+  "id": "1775558880148_thoodbkz",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在做 Agent 平台选型，可把可观测性、环境一致性、冷启动列为专项评估清单",
+      "进一步查阅回复中提到的架构博客或其他长文资料，补足该话题的实证与设计细节"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1775558892477,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "生产替换Pi-Mono讨论",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "claude agent sdk 在大规模生产部署中可能面临可观测性、沙箱部署和冷启动挑战",
+      "Agent in VM 路线可能带来较高成本，抽象 Filesystem 与 Shell 是一种替代思路",
+      "pi-mono 当前在工具完整性、约束设计和边缘情况处理上可能尚未达到生产级"
+    ],
+    "oneHighValuePoint": "将生产部署问题归结为运行时抽象层设计，提出通过抽象 Filesystem 和 Shell 缓解环境一致性与冷启动问题。",
+    "oneLineReview": "有一些真实痛点信号，但整体只是碎片化社区讨论，参考价值有限。",
+    "primaryCategory": "AI工程化",
+    "rating": "D",
+    "rejectReason": "内容以提问和零散观点为主，缺少系统分析、实证数据和可落地方案，讨论深度明显不足。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent基础设施",
+      "生产部署讨论"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一则围绕是否用 pi-mono 替换 claude agent sdk 的短讨论，核心提到可观测性、大规模部署与冷启动问题。回复补充了 Agent in VM 成本高、需要抽象 Filesystem/Shell、pi 距离生产可用仍有差距等观点，但整体缺乏验证与细节。",
+    "tags": [
+      "pi-mono",
+      "claude agent sdk",
+      "生产环境",
+      "可观测性",
+      "冷启动"
+    ],
+    "title": "Leo Xiang: 大家有在生产环境中使用 pi-mono 来替换 claude agent sdk 的么",
+    "totalScore": 29.5,
+    "url": "https://x.com/leeoxiang/status/2041000308109988061"
+  },
+  "payloadHash": "sha256:6bc6c0d44c9fc4f9d4ae1c1d716e60242174acb3b7927f33710c995907d77a92",
+  "refs": {},
+  "revisionId": "sha256:72167224214e2f540abed1256c0773ad5cb83f10ec6b31f63b45a0c0d02bfae6",
+  "schemaVersion": 1,
+  "updatedAt": 1775606664162
+}

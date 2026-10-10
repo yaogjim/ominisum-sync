@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777813002348,
+  "entityType": "message",
+  "id": "1777813213727_w78zjw1h",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n作者认为，AI 直接代写推文常常“不像本人”、充满“AI 味”。为了解决这个问题，他开源了 **tweetskill**：通过分析一个人的历史推文，把其表达风格“蒸馏”成 AI Agent 可读取的 skill 文件，让 AI 更像本人地写内容。\n\n## 1. 问题：AI 写推文不像本人\n\n- 作者长期遇到一个痛点：让 AI 帮忙写推文时，生成内容很容易被看出不是自己的语气。\n- 常见问题包括：\n  - 表达方式不符合本人习惯；\n  - 语气生硬、有明显“AI 味”；\n  - 不懂用户平时发推的格式、节奏和偏好。\n\n## 2. 解决思路：把推特人格“蒸馏”成 Skill\n\n- 作者认为，既然同事的工作方式可以被“蒸馏”成 skill，那么推特上的人格和表达风格也可以。\n- 因此他开源了 **tweetskill**。\n- tweetskill 的核心作用是：\n  - 分析用户的历史推文；\n  - 提炼出用户的语言风格、内容偏好和常用表达；\n  - 生成一个 AI Agent 可以直接读取的 `skill.md` 文件。\n\n## 3. tweetskill 的作用：让 AI 写得更像本人\n\n- tweetskill 会先把一个账号的推文历史分析清楚。\n- 分析完成后，会生成类似 `elonmusk-skill.md` 这样的文件。\n- 文件中会包含：\n  - 用户惯用的表达方式；\n  - 哪类推文更容易获得高互动；\n  - 用户从来不用或很少用的格式；\n  - 整体内容风格和写作习惯。\n\n例如，分析 `@elonmusk` 后，可以让 AI 读取 `elonmusk-skill.md`，再写一条关于 Grok 新版本的推文，从而更贴近马斯克的发推风格。\n\n## 4. 使用方法：安装并在 AI Agent 中调用\n\n- 安装命令：\n\n```bash\nnpx skills add DbgKinggg/tweetskill\n```\n\n- 安装时可以选择把 skill 安装到哪个 AI Agent 中，例如：\n  - Hermes\n  - OpenClaw\n  - Claude Code 等\n\n- 在 AI Agent 中可以直接输入类似命令：\n\n```text\nanalyze @elonmusk\n```\n\n- tweetskill 默认使用 **X 官方 API** 获取推文，因此会要求用户提供 **X Bearer Token**。\n\n## 5. 生成 Skill 后的用法\n\n- 跑完分析后，会得到一个对应账号的 skill 文件，例如：\n\n```text\nelonmusk-skill.md\n```\n\n- 之后可以这样使用：\n\n```text\n读 elonmusk-skill.md，帮我写一条关于 grok 新版本的推文\n```\n\n- 也可以直接把生成的 skill 文件放进 AI Agent 的配置里，让 AI 长期按照该风格写作。\n\n## 6. 可与其他 Skill 组合，增强效果\n\n- 作者还提到，tweetskill 可以搭配其他 skill 使用，例如：\n  - “去 AI 味”的 skill；\n  - surf skills 等调研增强工具；\n  - okx skill 等特定领域能力工具。\n\n- 通过组合不同 skill，AI 不仅能更像本人说话，还能具备更强的信息检索和内容调研能力。\n\n## 7. 项目信息\n\n- 项目名称：**tweetskill**\n- 开源地址：\n\n```text\nhttps://github.com/DbgKinggg/tweetskill\n```\n\n- 作者希望通过这个工具，让用户的推特表达风格被保存和复用，甚至实现一种“赛博永生”的效果。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1777813002348,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1f00ba225d7e3401581c7460bde5a95259536cfc050b3b40b6b26dddcb680356",
+  "refs": {
+    "sessionId": "1777812251475_2fnfh52i"
+  },
+  "revisionId": "sha256:a30d2b1e8bd8f7c7febac5fcda5e74c9c2645ed6092ad047d105baabf0dfa101",
+  "schemaVersion": 1,
+  "updatedAt": 1777813002348
+}

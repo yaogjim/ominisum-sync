@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780308480196,
+  "entityType": "message",
+  "id": "1780308514857_zeuci2i6",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# ECC 项目精简解读\n\n## 一、内容总结\n\n**ECC** 是一个面向 AI 编程工具的“增强系统”。\n\n它不是单纯配置文件，而是一整套：\n\n- **Agent**：专业子代理，如代码审查、架构设计、修复构建错误\n- **Skills**：工作流技能，如 TDD、代码审查、安全扫描、文档更新\n- **Rules**：编码规范、安全规则、语言规则\n- **Hooks**：自动化钩子，如格式化、检查、会话记忆\n- **MCP 配置**：连接 GitHub、数据库、搜索等外部工具\n- **跨工具适配**：支持 Claude Code、Cursor、Codex、OpenCode、GitHub Copilot 等\n\n核心目标：  \n> 让 AI 编程助手更像一个有流程、有记忆、有安全意识的工程团队。\n\n---\n\n## 二、深入浅出解读\n\n### 1. 它解决什么问题？\n\n普通 AI 编程工具常见问题：\n\n- 容易忘上下文\n- 写代码没流程\n- 不主动测试\n- 安全检查弱\n- 多工具配置混乱\n- Token 消耗高\n- 不同 IDE / CLI 体验不一致\n\nECC 想把这些问题统一解决。\n\n可以理解为：\n\n> 给 Claude Code / Cursor / Codex 装一个“工程化操作系统”。\n\n---\n\n### 2. 它的核心组件\n\n| 组件 | 通俗理解 |\n|---|---|\n| Agents | 不同岗位的 AI 员工 |\n| Skills | 固定工作流程模板 |\n| Rules | 必须遵守的团队规范 |\n| Hooks | 自动触发的检查器 |\n| MCP | 外部工具连接器 |\n| Dashboard | 可视化管理界面 |\n\n例如：\n\n- 写新功能 → `/ecc:plan`\n- 查安全问题 → `/security-scan`\n- 修构建失败 → `/build-fix`\n- 做代码审查 → `/code-review`\n- 强制 TDD → `tdd-workflow skill`\n\n---\n\n### 3. 最大特点\n\n#### 跨平台\n\n支持很多 AI 编程环境：\n\n- Claude Code\n- Cursor\n- Codex\n- OpenCode\n- Zed\n- GitHub Copilot\n- Gemini 等\n\n#### 工程化\n\n强调：\n\n- 先规划\n- 再实现\n- 再测试\n- 再审查\n- 再上线\n\n#### 可扩展\n\n你可以只装：\n\n- agents\n- rules\n- skills\n- hooks\n- MCP\n\n不用全量安装。\n\n---\n\n### 4. 需要注意的坑\n\n官方反复强调：\n\n> 不要重复安装。\n\n尤其是 Claude Code：\n\n- 插件安装和手动安装不要叠加\n- hooks 不要重复复制\n- rules 需要手动选择复制\n- MCP 不要一次性全开，否则上下文会被吃掉\n\n推荐做法：\n\n```bash\n/plugin marketplace add https://github.com/affaan-m/ECC\n/plugin install ecc@ecc\n```\n\n然后只复制需要的规则：\n\n```bash\ncp -R rules/common ~/.claude/rules/ecc/\ncp -R rules/typescript ~/.claude/rules/ecc/\n```\n\n---\n\n## 三、我的意见\n\nECC 很强，但不适合所有人。\n\n### 适合谁？\n\n适合：\n\n- 高频使用 Claude Code / Cursor 的开发者\n- 做中大型项目的人\n- 想让 AI 按工程流程工作的团队\n- 重视测试、安全、规范的人\n- 需要多 Agent 协作的人\n\n### 不太适合谁？\n\n不适合：\n\n- 只是偶尔问 AI 写几行代码\n- 不想折腾配置\n- 项目很小\n- 不理解 hooks / MCP / rules 的用户\n\n### 我的建议\n\n**不要一上来全量安装。**\n\n推荐路线：\n\n1. 先装最小版本\n2. 只启用常用语言规则\n3. 先用几个核心技能：\n   - plan\n   - code-review\n   - security-scan\n   - tdd-workflow\n4. 熟悉后再加 hooks、MCP、多 Agent\n\n---\n\n## 结论\n\nECC 本质上是：\n\n> AI 编程工具的“工程化增强包”。\n\n它能显著提升 AI 编程的稳定性、规范性和安全性。  \n但它也比较重，配置复杂。  \n\n**个人开发者建议轻量使用；团队或复杂项目值得深入配置。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780308480196,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:856119bd32388e41104e65e06897c36aa43d589ad6ad9ade05608495f3dcd8af",
+  "refs": {
+    "sessionId": "1780308513906_6bo7fd3l"
+  },
+  "revisionId": "sha256:436de3c3ae16731a9d92a962e8fbbdbfee4b04268ee940a4d38f1b89c83d87fe",
+  "schemaVersion": 1,
+  "updatedAt": 1780308480196
+}

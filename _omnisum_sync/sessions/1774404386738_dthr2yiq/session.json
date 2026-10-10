@@ -1,0 +1,71 @@
+{
+  "createdAt": 1774404386738,
+  "entityType": "session",
+  "id": "1774404386738_dthr2yiq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审视当前Agent系统的数据表示方式，优先将难以推理的原始结构改造成更适合LLM的抽象DSL",
+      "为复杂任务增加轻量级分类入口，按任务类型预注入技能文档而非统一堆叠全部上下文",
+      "设计核心工具集与按需激活工具的双层机制，控制上下文长度并提升缓存命中率",
+      "建立按节点成本和trace级别的可观测性体系，用真实执行数据驱动提示词和工具链优化"
+    ],
+    "archiveReason": "文章提供了生产级AI设计代理的架构拆解，包含上下文工程、工具激活、缓存策略与可观测性实践，对构建复杂Agent系统有持续参考价值。",
+    "classifiedAt": 1774407421598,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Moda设计智能体架构解析",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "blog.langchain.com",
+    "favicon": "https://blog.langchain.com/content/images/size/w256h256/2026/03/App.png",
+    "knowledgePoints": [
+      "视觉设计Agent不应直接依赖原始XY坐标，而应构建更适合LLM推理的布局抽象层",
+      "生产级多Agent系统可采用轻量分类、技能预加载、主循环执行和动态工具激活的分层架构",
+      "通过提示缓存断点与按需加载工具，可以在性能、成本和能力之间取得更优平衡",
+      "大项目应采用分层上下文管理，让Agent默认看摘要并在需要时主动拉取细节",
+      "LangSmith式可观测性对于提示迭代、成本定位、缓存分析和错误诊断非常关键"
+    ],
+    "oneHighValuePoint": "最有价值的是用可推理的布局抽象DSL替代原始坐标密集型场景表示，从根源提升LLM在视觉设计任务中的表现并降低token成本。",
+    "oneLineReview": "这是一篇偏工程实践的高质量案例文，方法论清晰，但证据更多来自团队经验而非严格评测。",
+    "primaryCategory": "AI智能体工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "多智能体系统",
+      "设计工具产品",
+      "LLM应用架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Moda如何用Deep Agents和LangSmith构建生产级AI设计平台，重点讲解多代理分工、视觉布局DSL、动态上下文加载、技能注入、工具按需激活和可观测性实践，方法论较强，但量化评估与客观证据仍偏少。",
+    "tags": [
+      "Deep Agents",
+      "LangSmith",
+      "上下文工程",
+      "设计代理",
+      "可观测性"
+    ],
+    "title": "How Moda Builds Production-Grade AI Design Agents with Deep Agents",
+    "totalScore": 73.5,
+    "url": "https://blog.langchain.com/how-moda-builds-production-grade-ai-design-agents-with-deep-agents/"
+  },
+  "payloadHash": "sha256:66bf812bcda7368e584e62cc07e17dd8470663c80c933d2d267b3ee39a72766d",
+  "refs": {},
+  "revisionId": "sha256:d2f0ced5b15a00fe85af432091412833bbdfcc9af964fb3cb0ab570132b88b8c",
+  "schemaVersion": 1,
+  "updatedAt": 1774434738131
+}

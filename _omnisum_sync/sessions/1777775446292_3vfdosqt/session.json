@@ -1,0 +1,69 @@
+{
+  "createdAt": 1777775446292,
+  "entityType": "session",
+  "id": "1777775446292_3vfdosqt",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查现有CLAUDE.md是否包含清晰的关键词trigger和文档路由规则。",
+      "将复杂规则拆分到按场景组织的子文档中，仅在触发时读取。",
+      "保留核心规则在主文件中，避免把所有细节塞入同一个长文档。",
+      "为Claude Code Skills补充明确frontmatter，降低路由误判概率。"
+    ],
+    "archiveReason": "提供了Claude Code规则文件分层、自动加载和关键词触发的实用思路，可作为优化AI编程工作流的参考。",
+    "classifiedAt": 1777775815010,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude规则分层触发策略",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Claude.md主文件应承担路由和核心规则职责，而不是承载所有细节。",
+      "rules目录可自动加载，docs目录可按场景加载，关键词trigger决定是否读取子文档。",
+      "长文档可能导致注意力稀释，规则冲突会随着规则数量增加而放大。",
+      "Skill frontmatter需要写清楚触发条件，否则router可能选错技能。"
+    ],
+    "oneHighValuePoint": "用关键词trigger按场景加载子文档，既节省上下文，又避免核心规则被长文档稀释。",
+    "oneLineReview": "短小但有启发，核心价值在于把Claude规则管理从“长短之争”转向“分层触发机制”。",
+    "primaryCategory": "AI工具使用",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "Prompt工程",
+      "Claude Code工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为Claude.md不是越长越好，关键在于能否通过自动加载和关键词触发实现分层读取，避免长文档导致注意力稀释和规则冲突，从而保护核心规则权重。",
+    "tags": [
+      "Claude.md",
+      "触发词",
+      "上下文管理",
+      "规则分层",
+      "AI编程"
+    ],
+    "title": "X 上的 Leo：“看完这条想冲去把 CLAUDE.md 改长——先别。 第二条实锤同意，Anthropic 自己 system prompt 几千 tokens，让用户写短是为了它自己留空间。 但我…",
+    "totalScore": 68.5,
+    "url": "https://x.com/runes_leo/status/2048952088361918479"
+  },
+  "payloadHash": "sha256:09a8e7d5d28a8563b8b15b100d464c0b21e283399b9c0742218a2fd5c0648d85",
+  "refs": {},
+  "revisionId": "sha256:757bbcdb79f26e8c6ad302dd2f2dded3ce69a637cc20629791828b2f07f59786",
+  "schemaVersion": 1,
+  "updatedAt": 1777795408651
+}

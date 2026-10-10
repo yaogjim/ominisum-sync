@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777773155743,
+  "entityType": "session",
+  "id": "1777773155743_h1m8o39p",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看 Cursor SDK 官方文档和 cookbook，确认实际能力边界。",
+      "尝试运行官方 CLI 示例，评估其在 CI/CD 或内部工具中的集成可行性。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777773640667,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 3,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Cursor SDK发布简评",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Cursor SDK 支持使用与 Cursor 桌面端相同的 runtime、harness 和模型构建 Agent。",
+      "潜在应用包括 CI/CD 自动修复、自动提 PR、工作流自动化和产品内代码生成。"
+    ],
+    "oneHighValuePoint": "Cursor SDK 可能使编程 Agent 从 IDE 内能力扩展为可嵌入的开发基础设施。",
+    "oneLineReview": "这是一个有关注价值的产品动态，但文章本身更像推广短帖而非深度分析。",
+    "primaryCategory": "AI编程工具",
+    "rating": "C",
+    "rejectReason": "内容以情绪化宣传为主，缺少技术细节、实测数据和深入分析，适合了解动态但不值得精读。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开发者工具",
+      "AI Agent"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Cursor SDK 发布，强调其可将 Cursor Agent 嵌入 CI/CD、自动化脚本和产品中，并复用桌面端 runtime、harness 和模型。整体偏资讯和观点宣传，技术细节有限。",
+    "tags": [
+      "Cursor",
+      "SDK",
+      "AI编程",
+      "CI/CD",
+      "代码代理"
+    ],
+    "title": "阿绎 AYi: 我等了整整一年的东西，终于来了， Cursor今天正式发布了它的SDK， 这回可远不只是又一个编程工具的小更新， 可以说是人类历史上第一次， 把生产级的编程能力…",
+    "totalScore": 52,
+    "url": "https://x.com/AYi_AInotes/status/2049546472245408166"
+  },
+  "payloadHash": "sha256:3e8eeae910807e284d879d84ca97bc8bcec9795e77a59fb19e2f0b17cb70cc19",
+  "refs": {},
+  "revisionId": "sha256:d65c6be4cbe7370f4f0f967422dd386cd47e6efa009de5c0f63d5330b1fcf2cd",
+  "schemaVersion": 1,
+  "updatedAt": 1777774582398
+}

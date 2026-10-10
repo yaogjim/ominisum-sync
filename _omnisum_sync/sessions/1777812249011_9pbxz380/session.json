@@ -1,0 +1,66 @@
+{
+  "createdAt": 1777812249011,
+  "entityType": "session",
+  "id": "1777812249011_9pbxz380",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 Claude Code，可按文中命令尝试安装 Codex 插件",
+      "用真实项目对比接入前后的 token 消耗和代码审查效果"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777812463065,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code接入Codex审查",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Claude Code 可通过 openai/codex-plugin-cc 插件接入 Codex",
+      "作者将 Codex 用作代码提交前的初步审查工具",
+      "文中声称该流程可能降低 Claude token 消耗并提升代码检查稳定性"
+    ],
+    "oneHighValuePoint": "提供了 Claude Code 接入 Codex 插件的具体安装命令。",
+    "oneLineReview": "适合作为插件安装提示速览，但不值得深度保存。",
+    "primaryCategory": "AI编程工具",
+    "rating": "C",
+    "rejectReason": "内容主要是个人体验和简单配置步骤，缺少系统评测、具体案例和可验证数据，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "代码审查",
+      "开发效率"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍在 Claude Code 中通过 OpenAI 官方 Codex 插件进行代码审查的简单配置流程，并分享作者主观体验：可降低 token 用量、提前发现代码细节问题，但缺少数据和案例支撑。",
+    "tags": [
+      "Claude Code",
+      "Codex",
+      "代码审查",
+      "插件配置",
+      "AI辅助开发"
+    ],
+    "title": "Joruno: 把 Codex 塞进 Claude Code 之后，我真的回不去了",
+    "totalScore": 44,
+    "url": "https://x.com/wsl8297/status/2048797883512902134"
+  },
+  "payloadHash": "sha256:9e412e2d88ab3b7c99ee5a6017545f96cf8da9ec56334179509fc800eee0e85f",
+  "refs": {},
+  "revisionId": "sha256:69fd307fe97dafc7907faf1f1434bc57d8b31519ece30a4551d095f88e99793d",
+  "schemaVersion": 1,
+  "updatedAt": 1777813385938
+}

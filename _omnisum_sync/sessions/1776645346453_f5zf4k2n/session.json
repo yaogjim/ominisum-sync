@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776645346453,
+  "entityType": "session",
+  "id": "1776645346453_f5zf4k2n",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为当前智能体项目定义任务复杂度、token消耗、延迟和成功率等评估指标",
+      "采用“先简后繁”的方式构建最小可用 harness，并基于评估结果决定是否增加编排能力"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776646153692,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "智能体框架轻重之争反思",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "智能体框架设计应围绕具体任务复杂度、成本和延迟目标进行权衡",
+      "更稳妥的路径是先做轻量实现，再通过 evals 和 dogfooding 决定何时扩展系统能力"
+    ],
+    "oneHighValuePoint": "最有价值的点是提出应从具体任务目标反推 harness 复杂度，而不是抽象争论框架应当薄还是厚。",
+    "oneLineReview": "有一定工程直觉，但更像观点表达，缺少数据、案例和可执行细节支撑。",
+    "primaryCategory": "AI工程",
+    "rating": "C",
+    "rejectReason": "观点性强于实证性，论据主要依赖经验判断，信息增量有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "智能体系统设计",
+      "框架选型"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为智能体开发中“轻量框架 vs 重量框架”的争论缺乏意义，关键应从任务目标倒推系统设计。作者主张先用轻量方案启动，再依据评估、成本、延迟与任务复杂度逐步扩展 harness。",
+    "tags": [
+      "Agent",
+      "Harness",
+      "框架设计",
+      "工程权衡",
+      "Eval驱动"
+    ],
+    "title": "Viv: not hot take🧊 the thin vs thick harness debate is pretty useless and completely…",
+    "totalScore": 46.5,
+    "url": "https://x.com/Vtrivedy10/status/2044130977526755636"
+  },
+  "payloadHash": "sha256:920c5cf3dfc60a87f7ce8bcf9a165bb97e4f1206ed60e20c4672f0da55d3b1ad",
+  "refs": {},
+  "revisionId": "sha256:fe0432511c042669e9ddfd203e709868c507d902cddfa54389d5a2854b9b2f4b",
+  "schemaVersion": 1,
+  "updatedAt": 1776647027134
+}

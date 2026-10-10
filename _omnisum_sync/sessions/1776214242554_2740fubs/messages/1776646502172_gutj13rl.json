@@ -1,0 +1,19 @@
+{
+  "createdAt": 1776646502173,
+  "entityType": "message",
+  "id": "1776646502172_gutj13rl",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Coding Agent对齐四步法\n\n**评级**: B (64.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程实践\n**次类别**: Agent开发, Harness Engineering\n**标签**: #coding agent #PRD对齐 #Claude Code #工程方法论 #模型评测\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 有启发的Agent工程实践贴，方法清晰，但更多是经验总结而非严谨验证。\n**核心高价值点**: 将源码对齐问题转化为“PRD事实层对齐”，再逐步生成执行计划，能显著降低直接比对大型代码库的复杂度。\n\n### 摘要\n文章分享了作者在复刻并调优 coding agent 过程中总结出的“四步PRD对齐法”：先做宏观差距分析，再细化PRD、追问开放问题、回查上游代码，最后转成执行计划。内容偏实践经验，方法有启发，但证据与数据支撑较弱。\n\n### 知识要点\n- 大型上游代码库对齐可通过PRD作为中间抽象层进行Gap Analysis\n- 复杂工程任务分步提示通常比一步到位生成更可控、更稳定\n\n### 行动项\n- 在自己的Agent项目中尝试建立 docs/product-specs 与 docs/exec-plans 两层文档流\n- 针对关键模块先做“当前实现/上游实现/差距Delta”三栏式PRD模板验证效果\n\n### 存档判定\n归档: 是 — 原因: 提供了可复用的四步PRD对齐流程，适合后续搭建或调优coding agent时参考\n删除: 否\n留存决策: 短期保留，作为Agent工程对齐流程的实践参考",
+    "role": "assistant",
+    "timestamp": 1776646502173,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:34f56481094754d92cfc5d47afcc15b581107f1d3ad818cd8aa02fe048ed6cf9",
+  "refs": {
+    "sessionId": "1776214242554_2740fubs"
+  },
+  "revisionId": "sha256:366ec8c28fdcc9e633c09826b2b20411d576ea12cf0cb6fc60e6187788c800f0",
+  "schemaVersion": 1,
+  "updatedAt": 1776646502173
+}

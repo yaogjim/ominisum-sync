@@ -1,0 +1,86 @@
+{
+  "createdAt": 1780307891754,
+  "entityType": "session",
+  "id": "1780307891754_49n8cva0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "研究pi-generative-ui仓库，重点阅读index.ts中工具注册、流式拦截和Glimpse窗口复用逻辑。",
+      "将read_me懒加载文档模式迁移到自己的Agent工具系统中，按任务类型动态加载规范。",
+      "在需要流式可视化输出的项目中测试morphdom或idiomorph，避免频繁innerHTML导致的闪烁。",
+      "设计自己的show_widget类工具接口，明确参数、加载状态、尺寸、交互回传和脚本执行边界。",
+      "评估安全边界，包括CDN allowlist、脚本执行权限、HTML注入风险和用户数据回传机制。"
+    ],
+    "archiveReason": "文章包含对Claude生成式UI机制的逆向分析、pi端复刻架构、流式工具调用处理、懒加载设计指南和DOM Diff渲染方案，具有较高工程参考价值。",
+    "classifiedAt": 1780308147788,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "pi复刻Claude动态UI",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "Claude generative UI本质上可能是show_widget工具调用，将HTML作为参数传入并流式渲染，而不是普通Markdown或Artifacts。",
+      "懒加载设计指南通过read_me工具按模块加载interactive、chart、mockup、art、diagram等规范，减少上下文浪费。",
+      "流式HTML不能简单反复innerHTML替换，否则会闪烁、重排和丢失状态，DOM Diff是更平滑的方案。",
+      "morphdom可对新旧DOM树做最小补丁更新，并对新增节点添加动画，实现接近Claude的渐进式渲染体验。",
+      "终端Agent无需自己渲染HTML，可通过原生WKWebView微窗口承载交互式UI，并用JSON桥接用户交互数据。",
+      "pi-ai将不同模型供应商的工具调用流统一为toolcall_start、toolcall_delta、toolcall_end，降低跨模型实现复杂度。",
+      "脚本标签在innerHTML注入后不会自动执行，需要在最终内容完成后克隆script节点触发执行。",
+      "设计系统对流式渲染有特殊约束，例如style优先、HTML其次、script最后，避免渐变、阴影、模糊等易闪烁样式。"
+    ],
+    "oneHighValuePoint": "read_me式懒加载文档模式能显著降低系统提示词常驻成本，并让模型按任务需要加载专用设计规范。",
+    "oneLineReview": "一篇高密度的AI工具工程实践文章，最有价值的是把生成式UI拆解为工具调用、懒加载指南和流式DOM渲染三层架构。",
+    "primaryCategory": "AI工程与智能体开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "生成式UI",
+      "Agent工具系统",
+      "前端流式渲染"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/LinearUncle/status/2060174371780751589",
+      "https://x.com/micLivs/status/2060115468531499224",
+      "https://michaellivs.com/blog/reverse-engineering-claude-generative-ui",
+      "https://github.com/Michaelliv/pi-generative-ui"
+    ],
+    "summaryBrief": "文章介绍如何逆向Claude的generative UI，并在pi终端智能体中用Glimpse、morphdom、工具调用流式事件和懒加载设计指南复刻实时交互式HTML/SVG组件，兼具架构拆解与实现细节。",
+    "tags": [
+      "Claude",
+      "Generative UI",
+      "pi",
+      "动态工作流",
+      "工具调用",
+      "DOM Diff",
+      "morphdom",
+      "Glimpse"
+    ],
+    "title": "pi生态复刻Claude动态能力",
+    "totalScore": 77.5,
+    "url": "omnisun://digest/1780307891754"
+  },
+  "payloadHash": "sha256:e605eb678548d02119a75ed0f7db15443dcb182959d36491a077b2e28bc45bce",
+  "refs": {},
+  "revisionId": "sha256:3128f1478466f1a8bbfa41c98106860f1894c00bd2a4dc84064a25dcead6634d",
+  "schemaVersion": 1,
+  "updatedAt": 1780308222825
+}

@@ -1,0 +1,69 @@
+{
+  "createdAt": 1773914050224,
+  "entityType": "session",
+  "id": "1773914050224_28l5cydh",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若你关注 AI Agent 或浏览器自动化，可先用 `opencli list` 和一个公开站点命令快速验证可用性",
+      "评估其与现有 Playwright、Puppeteer 或 RPA 方案相比的接入成本、稳定性与权限边界",
+      "如需长期使用，重点阅读 CLI-EXPLORER、TESTING 和故障排查文档，确认适配器开发流程"
+    ],
+    "archiveReason": "包含安装方式、支持平台、命令示例和测试入口，便于后续查阅与试用",
+    "classifiedAt": 1773918197065,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "OpenCLI网页转命令行工具介绍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "可通过浏览器扩展与微型守护进程复用 Chrome 登录态，实现低配置的网页自动化",
+      "工具同时支持 YAML 声明式流水线和 TypeScript 注入式适配器，兼顾快速配置与深度扩展",
+      "支持表格、JSON、YAML、Markdown、CSV 等多种输出格式，便于接入脚本和 LLM 工作流",
+      "提供面向 AI Agent 的探索、适配器生成与认证策略流程，适合作为代理型自动化基础设施"
+    ],
+    "oneHighValuePoint": "通过复用 Chrome 已登录会话，把原本只能在浏览器或 Electron 中操作的服务直接暴露为 CLI 命令，显著降低自动化接入门槛。",
+    "oneLineReview": "这是一个有想象力且较易落地的自动化工具说明文档，但方法论和证据支撑仍偏弱。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为浏览器自动化与AI代理工具选型资料",
+    "secondaryCategories": [
+      "浏览器自动化",
+      "命令行工具",
+      "开源项目"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了开源项目 OpenCLI，核心价值是将网站或 Electron 应用转为可调用的 CLI，并复用 Chrome 登录态完成自动化与数据提取。内容覆盖安装、命令列表、输出格式、下载能力、测试与排障，适合工具调研与快速上手。",
+    "tags": [
+      "OpenCLI",
+      "Browser Automation",
+      "Electron",
+      "CLI",
+      "AI Agent"
+    ],
+    "title": "jackwener/opencli: Make any website your CLI. A powerful, AI-native runtime for seamless browser automation and dynamic web data extraction.",
+    "totalScore": 64.5,
+    "url": "https://github.com/jackwener/opencli"
+  },
+  "payloadHash": "sha256:325d0c98b5eed077db0302b7f0bad834cc1a2c66effcd6d492516f020fe365ff",
+  "refs": {},
+  "revisionId": "sha256:b63b72b489d92cd3d546b9412c0ccdba62cc13cefd6f6738426f6c849a25653a",
+  "schemaVersion": 1,
+  "updatedAt": 1773918197069
+}

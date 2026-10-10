@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773913436160,
+  "entityType": "session",
+  "id": "1773913436160_pp240bis",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你需要命令行视频裁剪，可本地安装并试用其快捷键交互体验",
+      "如需长期使用，进一步查看源码和发布说明以确认稳定性与平台兼容性"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773918220881,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "终端视频裁剪工具简介",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "终端界面可以结合 ffmpeg 实现轻量级视频裁剪流程",
+      "项目依赖 chafa 进行终端内媒体预览或相关显示支持"
+    ],
+    "oneHighValuePoint": "直接通过键盘快捷键标记视频 in/out 点并导出裁剪片段，降低了轻量剪辑的操作成本。",
+    "oneLineReview": "一个实用但信息较薄的工具型项目页，适合快速扫一眼，不值得深读。",
+    "primaryCategory": "开发工具",
+    "rating": "C",
+    "rejectReason": "内容主要是项目简介和安装使用说明，信息量有限，缺少设计思路、性能对比和实际案例支撑。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "视频处理",
+      "命令行工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一个基于终端界面的简单视频裁剪工具项目页，提供安装方式、依赖说明和快捷键操作，适合快速了解其用途，但缺少方法论、使用场景分析和证据支撑。",
+    "tags": [
+      "Go",
+      "ffmpeg",
+      "TUI",
+      "视频裁剪",
+      "GitHub项目"
+    ],
+    "title": "emin-ozata/lazycut: A simple terminal UI for video trimming",
+    "totalScore": 40,
+    "url": "https://github.com/emin-ozata/lazycut"
+  },
+  "payloadHash": "sha256:affb810914fc39a4d1fabbe3a773de7b52bda1cfafe920ea3085ec61e86edb7d",
+  "refs": {},
+  "revisionId": "sha256:78654418625d269be1e16d762386de41813a1e22b37127b02da08e86d812cdd8",
+  "schemaVersion": 1,
+  "updatedAt": 1773918220883
+}

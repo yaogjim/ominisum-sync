@@ -1,0 +1,67 @@
+{
+  "createdAt": 1776061900886,
+  "entityType": "session",
+  "id": "1776061900886_oyhusum5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在项目的 AGENTS.md 或 CLAUDE.md 中加入 5-6 条高约束力原则，并控制篇幅",
+      "将开发规范尽量转化为 linter、测试和 CI 检查，而不是仅写成提示词"
+    ],
+    "archiveReason": "内容虽短，但包含可直接复用的 agent 协作原则，适合后续配置 AGENTS/CLAUDE.md 时查阅",
+    "classifiedAt": 1776078128135,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Coding Agent原则实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "代码仓库应作为智能体可见知识的唯一记录系统",
+      "AGENTS.md 更适合做地图式导航而非百科式说明",
+      "可机械验证的规则比散文化提示更稳定",
+      "执行计划和技术债追踪应作为版本化工件持续维护"
+    ],
+    "oneHighValuePoint": "最有价值的是“把品味编码为规则”，即优先用 linter、结构测试和 CI 约束智能体行为，而不是依赖长篇自然语言提示词。",
+    "oneLineReview": "一条高相关、强实践导向的经验帖，但证据和案例支撑明显不足。",
+    "primaryCategory": "AI工程方法",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为搭建 coding agent 工作流的轻量原则清单",
+    "secondaryCategories": [
+      "Coding Agent实践",
+      "开发流程治理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了一套用于指挥 coding agent 的轻量原则，核心包括：将知识落到 repo、让 AGENTS 文档只做导航、把品味转成可验证规则、将计划版本化、持续偿还技术债，以及卡住时优先补环境和上下文。",
+    "tags": [
+      "AGENTS.md",
+      "harness engineering",
+      "开发规范",
+      "代码仓库治理",
+      "智能体协作"
+    ],
+    "title": "海拉鲁编程客: 最近实践了一些 harness engineering ，我在 AGENTS/CLAUDE",
+    "totalScore": 61.5,
+    "url": "https://x.com/hylarucoder/status/2043202352447189368"
+  },
+  "payloadHash": "sha256:e3bb42b16e8caae7abbdcce92e8dfacad6836c3f63563d4bf37358ffacd052ff",
+  "refs": {},
+  "revisionId": "sha256:11495ced93cb4635dd97e130d9b153ab5c16fb31b8705b3eb121ececed618f0d",
+  "schemaVersion": 1,
+  "updatedAt": 1776078128141
+}

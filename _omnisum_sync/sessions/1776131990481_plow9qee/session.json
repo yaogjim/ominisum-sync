@@ -1,0 +1,71 @@
+{
+  "createdAt": 1776131990481,
+  "entityType": "session",
+  "id": "1776131990481_plow9qee",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为现有代理技能模板加入清晰的名称、描述和负面触发条件",
+      "为每个技能建立10到20条测试提示，并定义可衡量的成功标准",
+      "检查冗长技能文档，将参考资料拆分为按需加载的独立文件",
+      "定期对能力型技能做无技能基线测试，淘汰已被模型吸收的部分"
+    ],
+    "archiveReason": "内容高度聚焦于代理技能编写、触发描述、评估测试和淘汰策略，便于后续构建技能库时查阅",
+    "classifiedAt": 1776132006549,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "代理技能编写八条实战建议",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "代理技能可分为能力型技能与偏好型技能，两者生命周期和维护方式不同",
+      "SKILL.md 的描述应同时说明“做什么”和“何时用”，以提高触发准确率",
+      "技能说明应以明确指令和简短示例为主，避免冗长背景信息损害性能",
+      "应采用分层加载设计，把非核心内容放入 references、scripts、assets 中按需读取",
+      "测试需要覆盖应触发、不可触发和边界场景，并进行多次试验观察结果分布",
+      "当基础模型已内化某项能力时，应主动移除对应技能以减少上下文噪音"
+    ],
+    "oneHighValuePoint": "最有价值的是将“技能触发描述”视为核心机制，并强调先修正描述再修正指令，因为很多失败本质上来自错误触发。",
+    "oneLineReview": "一篇实用但不算深入的代理技能设计清单，适合快速吸收并用于搭建自己的技能规范。",
+    "primaryCategory": "AI代理开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为代理技能设计的轻量实践清单",
+    "secondaryCategories": [
+      "提示工程",
+      "工程实践"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结了编写代理技能的8条经验，包括技能定义、触发描述、精简说明、按需加载、给予代理适度自由、测试负面用例、发布前评估以及及时淘汰过时技能，偏工程实践导向，操作性较强但证据支撑有限。",
+    "tags": [
+      "Agent Skills",
+      "SKILL.md",
+      "技能设计",
+      "评估测试",
+      "上下文管理"
+    ],
+    "title": "8个撰写代理技能的技巧",
+    "totalScore": 66,
+    "url": "https://x.com/_philschmid/status/2043705157850951699"
+  },
+  "payloadHash": "sha256:2850ac36fb4f3a0f78a1b99bf6130c360d2d911eb123e417094d5af631cb7079",
+  "refs": {},
+  "revisionId": "sha256:a1b3b9d4b6f12bee3ac0a9416acb6ef8daf3805c83e295078f44e52803d3d99c",
+  "schemaVersion": 1,
+  "updatedAt": 1776139093294
+}

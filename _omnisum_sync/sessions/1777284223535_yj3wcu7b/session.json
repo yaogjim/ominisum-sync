@@ -1,0 +1,71 @@
+{
+  "createdAt": 1777284223535,
+  "entityType": "session",
+  "id": "1777284223535_yj3wcu7b",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查并清理 Claude 设置中的 Memory 页面，删除过时或错误信息。",
+      "为常用 Claude Projects 补充项目说明和关键上下文文档。",
+      "创建 Claude Master Folder，并建立 Instructions.md、Memory.md、Context.md、Archive-Guide.md 四个文件。",
+      "如已有 Obsidian 或 Notion 知识库，测试将其连接到 Claude 作为长期上下文源。"
+    ],
+    "archiveReason": "包含可直接复用的 Claude 记忆管理分层方案，适合作为搭建个人 AI 工作流的参考。",
+    "classifiedAt": 1777284674159,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude记忆系统三层搭建指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Claude 内置记忆需要定期清理、手动补充和纠错，否则容易积累无效上下文。",
+      "通过 Instructions.md、Memory.md、Context.md 和 Archive-Guide.md 可构建可复用的本地上下文文件系统。",
+      "Notion 更适合快速连接任务、笔记和数据库，Obsidian 更适合本地化、长期化的 AI 第二大脑。",
+      "AI 记忆系统需要备份机制，避免模型误改或覆盖重要上下文。"
+    ],
+    "oneHighValuePoint": "将 AI 记忆从平台内置功能扩展为可迁移、可备份、可维护的 Markdown/Obsidian 文件系统。",
+    "oneLineReview": "一篇实用性较强但证据支撑偏弱的 Claude 记忆系统搭建指南。",
+    "primaryCategory": "AI工具使用",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后择优归档",
+    "secondaryCategories": [
+      "知识管理",
+      "个人生产力",
+      "LLM工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了三层 Claude 记忆增强方案：基础记忆设置、基于 Markdown 的本地上下文文件系统，以及结合 Notion 或 Obsidian 的 AI 第二大脑。内容偏实操，适合 Claude 高频用户优化长期上下文管理。",
+    "tags": [
+      "Claude",
+      "AI记忆",
+      "Obsidian",
+      "Notion",
+      "第二大脑",
+      "提示词工程"
+    ],
+    "title": "如何赋予 Claude 完美记忆（完整指南）",
+    "totalScore": 69.5,
+    "url": "https://x.com/aiedge_/status/2046966170868486512"
+  },
+  "payloadHash": "sha256:70638045da71c9d91967b2b0cbf9f7b0cbc9b409026c19bac0a172b3b10bfc9e",
+  "refs": {},
+  "revisionId": "sha256:5b88265cf6bc942866ea86d985baeed780d7a13df0d6dccdb1dd3dac07dd9481",
+  "schemaVersion": 1,
+  "updatedAt": 1777284674163
+}

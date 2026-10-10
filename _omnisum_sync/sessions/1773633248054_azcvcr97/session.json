@@ -1,0 +1,75 @@
+{
+  "createdAt": 1773633248054,
+  "entityType": "session",
+  "id": "1773633248054_azcvcr97",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如你在做 AI Agent 或自动化测试，可评估其统一沙箱接口是否能替代自建执行环境",
+      "对照现有方案，重点比较其快照、浏览器模式、启动时延和价格模型",
+      "若需要多 Agent 协作场景，可进一步阅读其 session、relay 与 skill 机制文档"
+    ],
+    "archiveReason": "包含产品能力、API接口、定价方式和适配架构，可作为后续选型与对比的参考",
+    "classifiedAt": 1773829574118,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Sandbank云沙箱能力概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "帮我分析下 https://sandbank.dev/cloud 的技术栈、产品理念、商业模式",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "Sandbank 提供统一的 TypeScript 接口屏蔽不同云沙箱 Provider 的 API 差异",
+      "内置浏览器自动化支持轻量无头模式与真实 Chrome 模式，适合 E2E、登录与网页操作",
+      "通过快照、端口代理、终端和文件接口，可构建面向 AI Agent 的远程开发与执行环境",
+      "采用 x402 + USDC 的按次付费模型，无需传统注册和订阅"
+    ],
+    "oneHighValuePoint": "将多家云沙箱 Provider 抽象为统一接口，并把浏览器自动化、快照、数据库和 Agent 协作整合进同一运行环境。",
+    "oneLineReview": "一篇实用的产品与接口说明文档，适合快速了解能力边界，但方法论和证据支撑偏弱。",
+    "primaryCategory": "AI开发基础设施",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为云端沙箱与AI Agent运行环境的产品参考资料",
+    "secondaryCategories": [
+      "云端沙箱",
+      "浏览器自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/turingou/status/2033117438838194427",
+      "https://github.com/chekusu/sandbank/blob/main/README.zh-CN.md",
+      "https://sandbank.dev/cloud#api"
+    ],
+    "summaryBrief": "文章主要介绍 Sandbank Cloud 的云端沙箱服务，包括统一 SDK、多 Provider 适配、浏览器自动化、快照、数据库、端口代理与按次付费模式。信息覆盖较全，示例较多，适合了解产品能力与集成方式，但更偏产品说明，缺少真实案例与效果验证。",
+    "tags": [
+      "AI Agent",
+      "Sandbox",
+      "Browser Automation",
+      "E2E测试",
+      "云开发环境"
+    ],
+    "title": "Sandbank云端沙箱服务解析",
+    "totalScore": 65,
+    "url": "omnisun://digest/1773633248054"
+  },
+  "payloadHash": "sha256:cd61a985ff3de1b5d2c75fd015aed450412c2292e7dcf12091e8bada8a9a9093",
+  "refs": {},
+  "revisionId": "sha256:a9da74ccced6a7fa75166955ad78d1b36e39239ad5f97587105c172a58df5e90",
+  "schemaVersion": 1,
+  "updatedAt": 1773829574120
+}

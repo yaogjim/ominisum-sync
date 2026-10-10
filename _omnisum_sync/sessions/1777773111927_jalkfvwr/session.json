@@ -1,0 +1,66 @@
+{
+  "createdAt": 1777773111927,
+  "entityType": "session",
+  "id": "1777773111927_jalkfvwr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在评估 AI 编程代理工具，可快速试用 Helmor 的 GUI 编排体验。",
+      "关注 Helmor 是否补齐多账号切换和更高层任务编排能力。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777773584352,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Helmor本地编程代理体验",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量较低，证据不足，仅适合作为临时工具线索，不具备长期保存价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Helmor 是一个开源、本地优先的 Conductor 替代工具，定位于编程代理编排 GUI。",
+      "当前用户反馈的痛点包括多账号登录与切换能力不足。",
+      "mori 可作为 CLI 侧的 agent 工具，Helmor 可作为 GUI 侧工具。"
+    ],
+    "oneHighValuePoint": "Helmor 被描述为本地优先的 Conductor 替代方案，支持 GUI 编排编程代理和自动化环境部署。",
+    "oneLineReview": "适合作为 AI 编程代理工具发现线索，但不值得长期归档。",
+    "primaryCategory": "AI开发工具",
+    "rating": "D",
+    "rejectReason": "内容主要是个人使用感受和工具安利，缺乏系统评测、具体功能对比和可复用方法论。",
+    "retentionDecision": "记录工具名称后可删除",
+    "secondaryCategories": [
+      "编程代理",
+      "工具推荐"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "作者称实际使用了 Helmor，认为其交互和自动化环境部署体验较好，比 craft agent 更适合日常开发，但当前多账号切换不足。回复中还提到 CLI 使用 mori，GUI 使用 Helmor。",
+    "tags": [
+      "Helmor",
+      "Conductor",
+      "AI Agent",
+      "本地优先",
+      "开发工具"
+    ],
+    "title": "victor-wu.eth: 真用上了，不是看都没看就再在指指点点",
+    "totalScore": 33,
+    "url": "https://x.com/victor_wu/status/2049407047406674240"
+  },
+  "payloadHash": "sha256:3ac7d5173348e8439f08f03665e3e2f7ba231744356b72506da69bb8ab1389fb",
+  "refs": {},
+  "revisionId": "sha256:7758aba7146c167f7a3ba03db232a3cc15221e74cf9e0aca99b5f56999bd7636",
+  "schemaVersion": 1,
+  "updatedAt": 1777774756318
+}

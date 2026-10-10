@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773729673735,
+  "entityType": "message",
+  "id": "1773729886118_2gdgnhb5",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇内容主要在讲：OpenAI Codex 的 Subagents 已经正式可用，它的核心设计思路是把不同任务拆给不同代理，并通过“隔离 + 并行”提升效率、减少上下文污染。作者认为，这套机制很适合代码审查、批量分析这类工程场景。\n\n- 1. 代理如何分工\n  - Codex 内置了 3 类代理：`default` 负责通用兜底，`worker` 偏执行，主要做实现和修复，`explorer` 偏只读探索，专门用来追踪代码路径。\n  - 这种设计本质上是把“查问题”和“动代码”分开，避免一个代理既要理解全局、又要修改实现，导致上下文混乱。\n  - 除了内置代理，也支持自定义代理，只要把 TOML 文件放到 `.codex/agents/` 目录即可。\n\n- 2. 每个代理可以独立配置什么\n  - 每个 agent 都能单独设置模型和推理强度，比如把更贵、更强推理的模型留给复杂任务。\n  - 沙箱权限也可以分开配：例如 `explorer` 用 `read-only`，只负责看代码；真正修复问题的 agent 再开放写权限。\n  - 还可以给不同 agent 单独挂载 `mcp_servers`，比如专门给文档查询代理接文档 MCP，避免污染主流程环境。\n  - 这说明 Subagents 不是简单“多开几个助手”，而是让每个助手拥有不同能力边界。\n\n- 3. 并发控制的设计\n  - 配置里有两个关键参数：\n    - `max_threads = 6`：默认最多并发 6 个线程\n    - `max_depth = 1`：子代理不能继续派生子代理\n  - 作者特别提到 `max_depth = 1` 很有意思，因为它限制了递归式扩张，防止代理链条失控。\n  - 同时，它又保留了水平并发能力，也就是可以同时开多个代理干活，但不让它们无限套娃。\n\n- 4. CSV 批处理能力\n  - 实验性工具 `spawn_agents_on_csv` 支持按 CSV 批量启动代理：CSV 每一行对应一个 worker，并行执行后再统一导出结果。\n  - 示例里输入是：\n    - `csv_path: /tmp/components.csv`\n    - `instruction: \"Review {path} owned by {owner}. Return JSON via report_agent_job_result.\"`\n    - `output_csv_path: /tmp/review-results.csv`\n  - 输出结果 CSV 会包含 `job_id`、`status`、`last_error`、`result_json`。\n  - 这个能力很适合批量审计场景。比如把 100 个文件一次性丢进去，每个 worker 各自审查，最后再统一汇总结果。\n\n- 5. 审批和权限如何继承\n  - 子代理会继承父 session 的沙箱策略，也会继承运行时通过 `/approvals` 做的修改，以及 `--yolo` 标志。\n  - 在非交互模式下，如果子代理遇到需要新增审批的操作，不会停在那里等人确认，而是直接报错并返回给父流程。\n  - 这意味着整套机制在自动化流水线里更可控，不容易因为等待人工审批而卡死。\n\n- 6. 作者的整体判断和应用场景\n  - 作者认为，这套架构最核心的价值就是“隔离 + 并行”：\n    - 不同职责用不同代理\n    - 不同代理用不同模型和权限\n    - 把探索（exploration）和实现（implementation）拆开\n  - 这样做能减少“context rot”（上下文腐烂/污染），让每个代理只处理自己该处理的事。\n  - 作者还提到，这个方向和 Claude Code 的子代理实现很像，说明行业方案正在收敛。\n  - 在实际应用中，作者认为最直接的场景是 PR review：\n    - `explorer` 先梳理代码路径\n    - `reviewer` 并行检查安全、质量、测试\n    - `docs_researcher` 去查 API 文档\n    - 主进程等三个结果回来后再统一汇总\n  - 相比串行执行，这样会明显更快，而且上下文更干净。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773729673735,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8dd040e68f1aa938e64c05187ed1ddcc654061203a4574e61dced4ed3c53fec6",
+  "refs": {
+    "sessionId": "1773729388060_e32zl1km"
+  },
+  "revisionId": "sha256:62f2292937c0e2135c79321f3a7061f0e1717587dcd2e2d71fce706a332c1861",
+  "schemaVersion": 1,
+  "updatedAt": 1773729673735
+}

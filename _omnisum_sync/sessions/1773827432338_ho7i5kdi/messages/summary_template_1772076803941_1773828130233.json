@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773828130233,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773828130233",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章主要介绍了`Open SWE`：一个面向企业内部 “编码智能体” 的开源框架。它总结了 Stripe、Ramp、Coinbase 等公司在生产环境中的共同做法，并把这些成熟模式做成了可定制的通用方案。\n\n- **背景：为什么要做 Open SWE**\n  - 过去一年，很多工程团队都在做内部编码智能体，如 Stripe 的`Minions`、Ramp 的`Inspect`、Coinbase 的`Cloudbot`。\n  - 这些系统有一个共同点：不是让工程师换新工具，而是直接接入现有流程，比如`Slack`、`Linear`、`GitHub`。\n  - 文章的核心判断是：这些团队虽然独立开发，但架构上出现了明显 “趋同”，说明生产环境里确实存在一套通用需求。\n\n- **生产实践里总结出的共性模式**\n  - **隔离执行环境**：任务运行在独立的云沙箱里，沙箱内部有完整权限，但边界清晰，出错不会直接影响生产系统。\n  - **工具要精选，不是越多越好**：Stripe 提到他们的智能体大约可调用`500 个工具`，但重点在 “精心筛选和维护”，不是盲目堆积。\n  - **以 Slack 为主要入口**：三家公司都把`Slack`作为核心交互界面，减少工程师切换上下文的成本。\n  - **启动前先喂足上下文**：智能体会先读取`Linear issue`、`Slack 线程`、`GitHub PR`等完整信息，再开始执行，减少反复查找需求。\n  - **用子智能体拆解复杂任务**：把复杂问题拆成多个独立子任务，交给不同子智能体处理，职责更聚焦。\n\n- **Open SWE 的整体架构**\n  - Open SWE 是对上述模式的开源实现，底层基于`Deep Agents`和`LangGraph`。\n  - 它不是从零写一个新 Agent，而是 “组合” 已有框架能力，这样既能复用基础能力，也方便后续升级。\n  - 文章强调，它更像 “起点” 或 “底座”，而不是开箱即用的最终产品。\n\n- **1. Agent Harness：基于 Deep Agents 组合构建**\n  - Open SWE 直接构建在`Deep Agents`之上，而不是 fork 或重写。\n  - 这样做有两个好处：\n    - **升级方便**：如果 Deep Agents 在上下文管理、规划效率、Token 使用等方面变好，Open SWE 能直接受益。\n    - **定制更轻量**：组织自己的工具、提示词、流程可以通过配置完成，不必修改核心逻辑。\n  - 文中示例展示了可配置项：模型、系统提示词、工具集、沙箱后端、中间件等。\n\n- **2. Sandbox：隔离的云端执行环境**\n  - 每个任务都在独立的远程 Linux 沙箱中运行，代码仓库会被 clone 进去，Agent 在里面拥有完整 shell 权限。\n  - 默认支持多个沙箱提供商：`Modal`、`Daytona`、`Runloop`、`LangSmith`，也支持自定义后端。\n  - 关键行为包括：\n    - 同一对话线程会复用同一个持久沙箱；\n    - 沙箱失联后可自动重建；\n    - 多个任务可以并行执行，每个任务一个独立沙箱。\n  - 核心思路是：**先隔离，再放权**。\n\n- **3. Tools：工具集强调 “精选”**\n  - Open SWE 自带的是一组相对克制的工具，而不是无限扩展。\n  - 同时可用 Deep Agents 内建工具，如`read_file`、`write_file`、`edit_file`、`ls`、`glob`、`grep`、`write_todos`、`task`。\n  - 作者认为，小而精的工具集更容易测试、维护和理解；企业需要时，再明确加入内部 API、部署工具、测试框架等。\n\n- **4. Context Engineering：上下文注入方式**\n  - Open SWE 主要从两层获取上下文：\n    - **仓库级规则**：读取根目录的`AGENTS.md`，把团队约定、测试要求、架构决策等注入系统提示词。\n    - **任务级信息**：把`Linear issue`的标题、描述、评论，或`Slack 线程`历史，在启动前一次性传给 Agent。\n  - 这种 “双层上下文” 设计，既保证团队规范一致，又让当前任务信息足够完整。\n\n- **5. Orchestration：子智能体 + 中间件协同**\n  - **子智能体**：主 Agent 可通过`task`工具派生子 Agent，分别处理独立子任务，避免上下文互相污染。\n  - **中间件**：负责必须稳定执行的确定性逻辑，例如：\n    - `check_message_queue_before_model`：如果执行过程中用户又发来 Slack/Linear 消息，会在下一次模型调用前插入；\n    - `open_pr_if_needed`：如果 Agent 做完事却没开 PR，中间件会兜底完成；\n    - `ToolErrorMiddleware`：更稳妥地处理工具调用错误。\n  - 文章强调：把 “模型驱动的灵活决策” 和 “确定性流程控制” 分开，更可靠。\n\n- **6. Invocation：如何触发 Open SWE**\n  - **Slack**：在任意线程里`@bot`，还支持用`repo:owner/name`指定仓库，结果会回到原线程并附 PR 链接。\n  - **Linear**：在 issue 里评论`@openswe`，系统会读取完整 issue 上下文，先用`👀`表示收到，再把结果评论回去。\n  - **GitHub**：在 Agent 创建的 PR 评论里`@openswe`，可让它继续处理 review feedback，并推送到同一分支。\n  - 每次触发都会生成确定性的线程 ID，因此同一问题的后续消息会路由到同一个运行中的 Agent。\n\n- **7. Validation：校验与安全兜底**\n  - Agent 会被要求在提交前运行`lint`、格式化和测试。\n  - 若 Agent 没有主动开 PR，`open_pr_if_needed`中间件会自动补上。\n  - 这层机制还可以扩展，比如接入 CI 检查、视觉验证、审批流程等。\n\n- **为什么底层选 Deep Agents**\n  - 文章给出几个关键原因：\n    - **上下文管理**：长任务会产生很多中间数据，Deep Agents 用 “文件式记忆” 来存储，避免对话上下文爆掉。\n    - **规划能力**：`write_todos`能帮助拆解复杂、多步骤任务。\n    - **子智能体隔离**：不同子任务有独立上下文，更利于清晰推理。\n    - **中间件机制**：方便插入稳定、可控的逻辑，比如消息注入和自动开 PR。\n    - **持续升级**：Deep Agents 是独立维护的库，后续能力提升可直接传导到 Open SWE。\n\n- **可定制性：适配不同组织**\n  - Open SWE 的主要组件都可替换：\n    - 沙箱提供商\n    - 模型\n    - 工具集\n    - 触发渠道\n    - 系统提示词\n    - 中间件\n  - 也就是说，企业可以把它接到自己的内部 API、部署平台、监控系统或审批流里。\n\n- **和 Stripe / Ramp / Coinbase 的关系**\n  - 文章认为，Open SWE 与这些公司的内部系统在 “核心模式” 上高度相似。\n  - 差异主要在实现细节、内部集成和组织专属工具上。\n  - 换句话说，Open SWE 提供的是 “共性框架”，企业再补上 “个性部分”。\n\n- **结尾：定位与使用方式**\n  - Open SWE 已在 GitHub 开源，采用`MIT`许可证，可 fork、定制、内部部署。\n  - 官方还提供了：\n    - `Installation Guide`：安装和部署流程；\n    - `Customization Guide`：讲解如何替换沙箱、模型、工具、触发器等。\n  - 作者最后的定位很明确：它不是万能成品，而是一个经过生产实践启发的、适合作为企业内部编码智能体起点的开源框架。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "A结构化",
+    "timestamp": 1773828130233,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c656cdfa6ea64053bae47bba026cce8e039088c4387e5930442d1e521bd285f5",
+  "refs": {
+    "sessionId": "1773827432338_ho7i5kdi"
+  },
+  "revisionId": "sha256:6e84ee1b98e08d5da5b489195b2a8a24afa1011d8e39716284f52cf310be7949",
+  "schemaVersion": 1,
+  "updatedAt": 1773828130233
+}

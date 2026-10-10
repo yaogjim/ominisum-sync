@@ -1,0 +1,66 @@
+{
+  "createdAt": 1777901675354,
+  "entityType": "session",
+  "id": "1777901675354_dnhlu1v7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按自身需求筛选2-3个最常用抓取工具进行测试",
+      "为AI代理编写简单路由规则，根据链接类型和任务目标自动选择工具"
+    ],
+    "archiveReason": "包含多个网页抓取与MCP相关工具链接，可作为临时工具索引参考",
+    "classifiedAt": 1777901905283,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI网页抓取工具清单",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "网页抓取可按结构化平台、公开网页、JS渲染、反爬、浏览器交互等场景选择工具",
+      "Claude Code可集成多个MCP或抓取工具提升网页访问能力",
+      "工具过多时需要路由规则，避免人工记忆和反复试错"
+    ],
+    "oneHighValuePoint": "将不同抓取需求按场景分配给不同工具，并通过路由规则让AI自动选择。",
+    "oneLineReview": "实用的工具链接清单，但缺少系统评测、使用场景对比和证据支撑。",
+    "primaryCategory": "AI工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "网页抓取",
+      "MCP工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章整理了多个适用于AI代理和Claude Code的网页抓取、搜索、浏览器交互、反爬、JS渲染、文档查询等工具，并建议通过路由规则让AI根据任务自动选择工具。",
+    "tags": [
+      "Claude Code",
+      "网页抓取",
+      "MCP",
+      "自动化",
+      "工具清单"
+    ],
+    "title": "Leo: 评论区有朋友问工具链接，整理一下我装过的这些抓取工具供大家自选 ▎50+ 平台结构化抓取 → opencli (https://t",
+    "totalScore": 56,
+    "url": "https://x.com/runes_leo/status/2038409873193324776"
+  },
+  "payloadHash": "sha256:b14a8ce0541aa51df523eaec7708ac3004c5fbdde487b4433ce3834f11514b88",
+  "refs": {},
+  "revisionId": "sha256:2c801b9c0392712c4d2736e6d7cbac9fc9e20ffaa684afbd6a66c506880c6d2e",
+  "schemaVersion": 1,
+  "updatedAt": 1777902123848
+}

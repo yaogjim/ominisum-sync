@@ -1,0 +1,15 @@
+{
+  "createdAt": 1780386293603,
+  "entityType": "session-content",
+  "id": "1780386293603_hn99qaw1",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Leo｜一个人 + AI</strong></header><div class=\"tw-body\">怎么把 Codex App 用到极致？<br><br>补一条更实用的。<br><br>Codex App 想省 token，<br>我新发现这么几招：<br><br>1️⃣ 保留固定置顶 thread<br><br>每条业务线一个入口。<br>比如我，PM、内容、系统、研究，各走各的上下文。<br><br>这样好恢复，也好分工。<br><br>2️⃣ 大 thread 到 checkpoint 就收尾<br><br>一轮任务结束后，跑 session-end。<br>把结果、下一步、证据写回。<br><br>后面继续时，从摘要接，<br>少拖着整条巨型上下文滚。<br><br>3️⃣ 少在巨型 thread 里发短确认<br><br>“好”<br>“继续”<br>“现在搞”<br><br>这些字看着短，<br>但背后可能带着 10-20 万 input tokens 跑一轮。<br><br>我今天日志里就遇到了：<br><br>13 万 input，只命中 2.4k cache。<br>23 万 input，只命中 4.5k cache。<br><br>非常浪费。<br><br>4️⃣ 长日志、搜索结果、截图要控量<br><br>让 agent 先给摘要。<br>需要原文再局部展开。<br><br>尤其是 rg、find、网页抓取、X 搜索，<br>输出一爆，后面每轮都贵。<br><br>5️⃣ 自动 loop 归属到具体业务线<br><br>PM loop 放 PM thread。<br>内容 loop 放内容 thread。<br>Daily thread 只做路由和分发。<br><br>这样成本、状态、责任都清楚。<br><br>我现在的用法是：<br><br>10 个置顶 thread 保留。<br>每个 thread 都当“业务线入口”，<br>一轮到 checkpoint 就收尾压缩。<br><br>AI coding 的 token 管理，<br>本质是上下文生命周期管理。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HJEJjxbWEAA6akf?format=png&name=large\" alt=\"图片\" /></div><blockquote class=\"tw-quote\"><strong>@runes_leo</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\" data-imt-pre=\"1\">Codex 官方最近写了一篇\"如何把 Codex 用到极致\"。\n\n文章挺好，我按自己的工作流落地，做了三件官方没说的事。\n\n1) Thread（长期会话）不装在 App 里，装在仓库的一份文件里。\n\n每条业务线一份，版本可追，跨 App 共享。\n\n换 App 不用从头训。\n\n2) Thread 不按\"功能\"切，按\"业务线\"切。\n\n我现在 10</span></p></blockquote><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HJEJjxbWEAA6akf?format=png&name=large\" alt=\"引用图片\" /></div></article>",
+    "pageContent": "Leo｜一个人 + AI: 怎么把 Codex App 用到极致？ 补一条更实用的。 Codex App 想省 token，\n我新发现这么几招： 保留固定置顶 thread 每条业务线一个入口。\n比如我，PM、内容、系统、研究，各走各的上下文。 这样好恢复，也好分工。 大 thread 到 checkpoint 就收尾 一轮任务结束后，跑 session-end。\n把结果、下一步、证据写回。 后面继续时，从摘要接，\n少拖着整条巨型上下文滚。 少在巨型 thread 里发短确认 “好”\n“继续”\n“现在搞” 这些字看着短，\n但背后可能带着 10-20 万 input tokens 跑一轮。 我今天日志里就遇到了： 13 万 input，只命中 2.4k cache。\n23 万 input，只命中 4.5k cache。 非常浪费。 长日志、搜索结果、截图要控量 让 agent 先给摘要。\n需要原文再局部展开。 尤其是 rg、find、网页抓取、X 搜索，\n输出一爆，后面每轮都贵。 自动 loop 归属到具体业务线 PM loop 放 PM thread。\n内容 loop 放内容 thread。\nDaily thread 只做路由和分发。 这样成本、状态、责任都清楚。 我现在的用法是： 10 个置顶 thread 保留。\n每个 thread 都当“业务线入口”，\n一轮到 checkpoint 就收尾压缩。 AI coding 的 token 管理，\n本质是上下文生命周期管理。\n![图片](https://pbs.twimg.com/media/HJEJjxbWEAA6akf?format=png&name=large)\n引用推文 (@runes_leo):\nCodex 官方最近写了一篇\"如何把 Codex 用到极致\"。 文章挺好，我按自己的工作流落地，做了三件官方没说的事。 1) Thread（长期会话）不装在 App 里，装在仓库的一份文件里。 每条业务线一份，版本可追，跨 App 共享。 换 App 不用从头训。 2) Thread 不按\"功能\"切，按\"业务线\"切。 我现在 10\n![引用图片](https://pbs.twimg.com/media/HJEJjxbWEAA6akf?format=png&name=large)"
+  },
+  "payloadHash": "sha256:fcf6277ae810e952072615238d60cf69ea96505bf09b757568dc185072ba482c",
+  "refs": {},
+  "revisionId": "sha256:d4f50204ef5f91e8cdd30830cd4de3ee1586c2c12405148d6d93f4784474c826",
+  "schemaVersion": 1,
+  "updatedAt": 1780387398638
+}

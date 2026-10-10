@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773279570011,
+  "entityType": "session",
+  "id": "1773279570011_60yf2i9c",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在本地跑 Qwen3.5 agent，优先检查是否存在 reasoning token、tools 渲染顺序和 checkpoint 位置导致的缓存失配。",
+      "在官方修复前，可评估采用文中临时补丁或稳定化 chat template 输出顺序，并用 tokens processed 指标验证缓存是否真正生效。"
+    ],
+    "archiveReason": "包含问题成因分析、临时补丁、边界条件和后续修复方向，对实际排障有直接参考价值。",
+    "classifiedAt": 1773830489615,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Qwen3.5缓存失效排查",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Qwen3.5 在 MLX-LM 中的缓存问题不只是简单未命中，还涉及 reasoning token 破坏共享前缀与 SSM 缓存不可 trim 的结构性限制。",
+      "工具调用场景下，chat template 的 JSON 键顺序与参数顺序不稳定，也会让缓存键漂移并持续触发全量重处理。"
+    ],
+    "oneHighValuePoint": "最有价值的是明确指出 reasoning token 与不可裁剪的 SSM/Mamba 缓存共同导致多轮对话前缀复用失败，这是性能骤降的核心原因。",
+    "oneLineReview": "这是一篇偏工程排障的高实用讨论串，问题定位具体，但结论仍属过渡性方案。",
+    "primaryCategory": "LLM推理性能优化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期保留，作为Qwen3.5在MLX环境下缓存问题与临时修复方案的参考，待官方方案稳定后可降级处理。",
+    "secondaryCategories": [
+      "缓存机制",
+      "推理服务工程实践"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该Issue围绕Qwen3.5在mlx-lm中提示缓存命中差的问题展开，讨论了Mamba/SSM缓存不可裁剪、reasoning token导致前缀失配、tools序列化顺序变化等原因，并给出临时补丁与模板修复思路。",
+    "tags": [
+      "Qwen3.5",
+      "MLX-LM",
+      "prompt cache",
+      "Mamba/SSM",
+      "性能排障"
+    ],
+    "title": "Caching doesn't seem to be working for Qwen3.5 · Issue #903 · ml-explore/mlx-lm",
+    "totalScore": 65,
+    "url": "https://github.com/ml-explore/mlx-lm/issues/903"
+  },
+  "payloadHash": "sha256:9cf376713011114b8e8b0ad51a6779dc121592f0ee2fa6f07193d52954a1021d",
+  "refs": {},
+  "revisionId": "sha256:9784b93a2a25215e7f16a322b9ec00c02f79fa45a47ed62bede9b5f9e852e3e9",
+  "schemaVersion": 1,
+  "updatedAt": 1773830489621
+}

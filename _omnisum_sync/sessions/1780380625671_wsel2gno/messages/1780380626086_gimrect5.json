@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780380563882,
+  "entityType": "message",
+  "id": "1780380626086_gimrect5",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\n这篇内容讲的是 **Codex 里补充指令的两种方式**：\n\n| 功能 | 作用 | 是否打断当前任务 |\n|---|---|---|\n| **Steer / 引导** | 立刻调整当前任务方向 | 会干预 |\n| **Queue / 排队** | 安排后续任务 | 不打断 |\n\n补充勘误：\n\n> **Steer 快捷键**：  \n> Windows / Linux：`Ctrl + Enter`  \n> Mac：`Command + Enter`\n\n---\n\n## 二、通俗解读\n\n可以把 Codex Agent 想象成一个正在干活的助手。\n\n### 1. Steer：现在就改方向\n\n比如它正在写代码，你发现它理解错了。\n\n你可以直接说：\n\n> 不要用 React，改成 Vue。\n\n然后用 **Steer** 发出去。\n\n这相当于：\n\n> “停一下，听我补充一句，再继续。”\n\n适合用于：\n\n- 发现方向错了\n- 临时补充关键要求\n- 让它立即调整实现方式\n\n---\n\n### 2. Queue：先干完，再干下一个\n\n比如它正在修 bug，你又想到：\n\n> 修完后顺便写测试。\n\n这时可以用 **Queue**。\n\n它不会马上打断当前任务，而是排到后面。\n\n适合用于：\n\n- 当前任务没问题，只是追加后续工作\n- 让 Agent 连续执行多个步骤\n- 长任务时提前安排下一步\n\n---\n\n## 三、我的意见\n\n这两个功能的核心区别很简单：\n\n> **Steer 是“改现在”，Queue 是“排以后”。**\n\n我的建议：\n\n- 如果 Agent **跑偏了**：用 **Steer**\n- 如果只是 **追加任务**：用 **Queue**\n- 如果睡前想让它多跑一会：可以 Queue 几个 `Continue`\n\n但要注意：\n\n> 不要盲目一直 `Continue`，否则 Agent 可能会越跑越偏，或者做很多低价值工作。\n\n更好的做法是排明确任务，例如：\n\n```text\n继续检查剩余 bug\n补充测试用例\n优化代码结构\n生成总结报告\n```\n\n这样比单纯说 `Continue` 更稳。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780380563882,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:346ecb0fd2302c2b29b221092c1ac4237dafa6b56ef8ccca0a905f3c64242c16",
+  "refs": {
+    "sessionId": "1780380625671_wsel2gno"
+  },
+  "revisionId": "sha256:0e7109e96afe7c6a59bed25633b3314fd06b468cec2ed73ae177aa131ac00b92",
+  "schemaVersion": 1,
+  "updatedAt": 1780380563882
+}

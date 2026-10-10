@@ -1,0 +1,68 @@
+{
+  "createdAt": 1777773101090,
+  "entityType": "session",
+  "id": "1777773101090_mhb2gruf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看 GitHub cookbook 示例，评估是否可用于现有代码自动化流程。",
+      "尝试用 @cursor/sdk 构建一个最小本地 agent demo。",
+      "评估在 CI/CD 中接入 agent 做失败原因分析或自动修复 PR 的可行性。"
+    ],
+    "archiveReason": "包含 Cursor SDK 的能力概览、典型应用场景和 cookbook 链接，对跟踪 AI 编程工具生态有参考价值",
+    "classifiedAt": 1777773565918,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Cursor SDK公测解读",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Cursor SDK 可在本地或 Cursor 云端虚拟机运行 agent，并支持自动开 PR、推分支和附截图。",
+      "SDK 开放了代码库索引、语义搜索、grep、MCP 工具接入、skills、hooks 和子 agent 等能力。",
+      "典型场景包括 CI/CD 自动诊断与修复、内部业务工具、以及将 agent 嵌入客户产品。",
+      "Agent SDK 生态正在成为独立基础设施市场，Cursor、Anthropic、OpenAI 都在布局。"
+    ],
+    "oneHighValuePoint": "Cursor 正从 IDE 工具扩展为可被开发者集成的 agent 基础设施平台。",
+    "oneLineReview": "一篇信息较密集的 Cursor SDK 发布概览，适合了解 AI 编程 agent 基础设施趋势。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留链接与示例仓库",
+    "secondaryCategories": [
+      "智能体基础设施",
+      "编程自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Cursor 官方 TypeScript SDK 公测，开放其 agent 运行框架、云端沙箱、模型切换、代码索引、MCP、hooks 和子 agent 能力，并列举 CI/CD、内部工具和产品嵌入等应用场景。",
+    "tags": [
+      "Cursor",
+      "TypeScript SDK",
+      "AI Agent",
+      "代码自动化",
+      "CI/CD"
+    ],
+    "title": "宝玉: Cursor 今天开放了官方 TypeScript SDK 公测，把驱动自家编辑器、CLI 和网页版的智能体（agent，可自主执行编码任务的 AI 助手）整套…",
+    "totalScore": 63.5,
+    "url": "https://x.com/dotey/status/2049541257756811517"
+  },
+  "payloadHash": "sha256:9b45a622fe0fea08d903860420ad94993a51734bbe232a99af227e50626175a0",
+  "refs": {},
+  "revisionId": "sha256:34fe3b1525a6aaafebc283f87f391b650c731cc596e0b294f7935e73adc38836",
+  "schemaVersion": 1,
+  "updatedAt": 1777774284973
+}

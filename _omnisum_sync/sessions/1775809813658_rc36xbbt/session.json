@@ -1,0 +1,69 @@
+{
+  "createdAt": 1775809813658,
+  "entityType": "session",
+  "id": "1775809813658_rc36xbbt",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为常用AI助手建立一个最小可用的CLAUDE.md，记录项目背景、代码规范、禁改区域和交付标准。",
+      "梳理信息单一事实源，为关键数据建立SSOT路由表，避免多文件写入造成冲突。",
+      "在并行Agent改代码时启用git worktree隔离，减少互相覆盖和合并冲突。",
+      "为长任务增加session结束写记忆、跨session任务清单和超轮次主动重开机制。"
+    ],
+    "archiveReason": "内容将三篇harness engineering实践统一到交互、空间、时间三个维度，并给出个人可落地方案，适合作为AI Agent工作流设计参考。",
+    "classifiedAt": 1775820355912,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Harness工程三维实践复盘",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "交互维度的核心是把隐性知识外显化，建立CLAUDE.md、rules目录和SSOT路由表。",
+      "空间维度的核心是多Agent并行隔离，代码修改任务适合放到独立git worktree中完成。",
+      "时间维度的核心是应对长session退化，通过强制记忆刷写、任务持久化和超阈值重开降低偏航风险。",
+      "专业化Agent通常比全能Agent更稳定，按搜索、规划、修错等角色拆分更有效。"
+    ],
+    "oneHighValuePoint": "将Agent可靠性问题拆成交互、空间、时间三个独立维度，并分别配套规则外置、worktree隔离、状态持久化与主动截断机制。",
+    "oneLineReview": "不是学术级严谨总结，但把Agent长期协作的核心问题讲得足够清楚且可直接借鉴。",
+    "primaryCategory": "AI工程实践",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "Agent工作流",
+      "开发效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于作者半年使用Claude Code的踩坑经历，将OpenAI、Cursor、Anthropic关于harness engineering的观点归纳为交互、空间、时间三个扩展维度，并给出规则文档、worktree隔离、记忆刷写与长session截断等具体实践。",
+    "tags": [
+      "Harness Engineering",
+      "Claude Code",
+      "Agent协作",
+      "上下文管理",
+      "工作流设计"
+    ],
+    "title": "OpenAI/Cursor/Anthropic 同时发了 Harness   Engineering，我用半年踩坑验证了他们说的每一条",
+    "totalScore": 76.5,
+    "url": "https://x.com/runes_leo/status/2042243228678693244"
+  },
+  "payloadHash": "sha256:c9de77e64f2320b28494763105ddb482b2de43f64cb8bb12edd64575c09d569b",
+  "refs": {},
+  "revisionId": "sha256:c67e96582ae1dd9a15f159f2ae118e452ad142f451c7621118e8363b753dfb95",
+  "schemaVersion": 1,
+  "updatedAt": 1775820355913
+}

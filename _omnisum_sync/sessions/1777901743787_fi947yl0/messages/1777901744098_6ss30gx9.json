@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777901653815,
+  "entityType": "message",
+  "id": "1777901744098_6ss30gx9",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Multica：面向 AI-native 团队的「人 + Agent」协作平台\n\n## 一句话总结\n\nMultica 是一个开源协作平台，目标是让 AI Agent 像团队成员一样参与任务管理与执行，类似「Linear + Coding Agent」，适合高度依赖 AI 编程工具的小团队。\n\n## 为什么做 Multica？\n\n### 1. 团队知识被困在个人 Agent 会话里\n\n现在很多团队成员都在使用 Claude Code、Codex 等 coding agent，但 Agent 的执行过程、上下文和结果往往只存在个人 session 中。\n\n结果是：\n\n- A 做了什么，B 不知道\n- Agent 跑完了什么，只有发起人看到\n- 团队知识分散在不同人的工具里，无法沉淀和复用\n\n### 2. 多人多 Agent 缺少统一协作中枢\n\n当团队中多个成员、多个 Agent 同时处理任务时，很难知道：\n\n- 谁在做什么\n- Agent 执行到哪一步\n- 是否遇到阻塞\n- 当前任务整体进展如何\n\n人和 Agent、Agent 和 Agent 之间缺少一个统一的工作界面。\n\n## Multica 是什么？\n\n### 像 Linear 一样管理任务，但 Agent 是一等公民\n\nMultica 允许团队像给同事分配任务一样，把 issue 分配给 AI Agent。\n\nAgent 可以：\n\n- 自动领取任务\n- 在本地机器或云端环境执行代码\n- 提交执行结果\n- 更新任务状态\n- 在看板中发表评论\n\n所有过程都在同一个 workspace 中实时可见，团队成员可以统一查看进展。\n\n## 核心工作方式\n\n### 将个人 Coding Agent 注册到团队 Workspace\n\n团队成员可以把自己的 Claude Code、Codex 等 Agent 注册进 Multica workspace。\n\n之后，团队就可以：\n\n- 把任务分配给 Agent\n- 统一追踪 Agent 执行状态\n- 查看 Agent 输出和评论\n- 让 Agent 融入日常协作流程\n\n### 支持本地或云端 Agent Runtime\n\n可以在本机或专用机器上安装 Multica CLI，将本地算力注册到 workspace 中。\n\n基本流程包括：\n\n```bash\nbrew tap multica-ai/tap\nbrew install multica-cli\n\nmultica login\nmultica daemon start\n```\n\n## 适合哪些团队？\n\nMultica 主要适合：\n\n- 1-10 人的 AI-native 小团队\n- 已经大量使用 coding agent，但缺少协作中枢的团队\n- 希望把 Agent 纳入正式工作流，而不是单独作为个人工具使用的团队\n\n## 部署方式\n\nMultica 提供两种使用方式：\n\n1. 使用官方云服务：multica.ai\n2. 自行通过 Docker 部署，适合有一定技术能力的团队\n\n## 产品价值\n\nMultica 的核心价值在于：把 AI Agent 从「个人工具」升级为「团队成员」。\n\n它解决的不是单个 Agent 的能力问题，而是团队在规模化使用 Agent 后出现的协作、可见性和知识沉淀问题。对于 AI-native 团队来说，这是一个很实际的基础设施方向。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777901653815,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:94d1a01273b1283cb581a8bb2d6795f99d13f6bbf2f4c714f190f4a1315ee70a",
+  "refs": {
+    "sessionId": "1777901743787_fi947yl0"
+  },
+  "revisionId": "sha256:c7f09010f56cc75316dc795f094cb30c079bd08ea9d06a206b17a5253f5f026a",
+  "schemaVersion": 1,
+  "updatedAt": 1777901653815
+}

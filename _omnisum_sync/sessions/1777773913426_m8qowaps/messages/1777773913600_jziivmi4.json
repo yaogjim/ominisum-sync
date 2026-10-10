@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773857577,
+  "entityType": "message",
+  "id": "1777773913600_jziivmi4",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 从 Claude 转向 Codex：双轨使用成为新趋势\n\n## 核心观点\n\n越来越多用户开始从 Claude Code 转向 Codex，主要原因是对 Claude 当前体验的不满，以及 Codex 在代码处理、审查和验证上的表现更稳定、更高效。\n\n作者 Leo 也有类似感受，但并未完全切换，而是采用 **Claude Code + Codex 双轨并行** 的方式。\n\n## 双轨分工\n\n### Claude Code：适合日常与编排\n\nLeo 主要用 Claude Code 处理：\n\n- 日常对话\n- 内容生成\n- 工具类代码\n- 工作流编排\n\n它更适合偏通用、偏协作、偏流程组织的任务。\n\n### Codex：适合策略与验证\n\nCodex 则主要用于：\n\n- 策略类代码\n- 数据代码\n- 独立 Review\n- 结果 Verify\n\n它更适合严肃代码任务、逻辑校验和独立审查。\n\n## 用户转向 Codex 的原因\n\n引用推文中提到，用户在重度使用 Claude Code 13 个月后转向 Codex，原因包括：\n\n- Claude Opus 4.7 响应极慢\n- 处理一行代码可能需要 5-10 分钟\n- 应用体验不稳定、闪烁频繁\n- Low Thinking 模式效果差\n- 模型能力似乎被持续削弱\n\n相比之下，Codex 被认为表现更强、更慷慨。\n\n## 评论区补充\n\n用户讨论中提到几种实用方法：\n\n- 同一个任务分别让 Claude 和 Codex 出方案\n- 谁表达更清楚，就让谁执行\n- 另一个模型负责 Review\n- 双轨使用时要避免两个工具互相污染上下文\n\n## 总结\n\n这条内容反映出一个趋势：  \n**AI 编程工具不再是单一选择，而是开始进入“分工协作”阶段。**\n\nClaude Code 更适合日常产出和流程编排，Codex 更适合代码实现、数据逻辑和独立验证。对高频使用者来说，双轨模式可能比彻底切换更稳妥。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773857577,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9188abd4e22b89aa32d0d269a9c4683efb176743b8f056ad69d08140951759ab",
+  "refs": {
+    "sessionId": "1777773913426_m8qowaps"
+  },
+  "revisionId": "sha256:b255af7efe64c344cfb088a9eea18ab56fb49aa8822b32cb2c7edfab9f8b4391",
+  "schemaVersion": 1,
+  "updatedAt": 1777773857577
+}

@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773725958746,
+  "entityType": "message",
+  "id": "summary_template_1773725944931_1773725958746",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "{\n  \"title\": \"Claude Code 规划模式可能压制 Agent 表现\",\n  \"source_type\": \"帖子\",\n  \"primary_category\": \"AI 编程工具使用\",\n  \"secondary_categories\": [\"Agent 开发\", \"AI 思考与趋势\"],\n  \"tags\": [\"Claude Code\", \"规划模式\", \"执行模式\", \"Agent 自由度\", \"Cursor\"],\n  \"scores\": {\n    \"information_density\": 7,\n    \"novelty\": 8,\n    \"relevance\": 9,\n    \"actionability\": 7,\n    \"methodological_value\": 7,\n    \"transferability\": 7,\n    \"evidence_quality\": 5,\n    \"long_term_leverage\": 7\n  },\n  \"total_score\": 7,\n  \"rating\": \"E\",\n  \"deep_read\": \"否\",\n  \"action\": \"删除\",\n  \"should_archive\": false,\n  \"should_delete\": true,\n  \"retention_decision\": \"delete\",\n  \"archive_reason\": \"\",\n  \"reject_reason\": \"\",\n  \"delete_reason\": \"内容主要是二手转述与单点经验结论，证据不足且总分偏低，不足以作为稳定方法论保留。\",\n  \"summary_brief\": \"材料转述了一个关于 Claude Code 的反常观察：专属规划模式反而压低 Opus 表现，而执行模式因允许更自由的内部推理与子 Agent 协作，可能带来更高规划质量。\",\n  \"one_line_review\": \"有启发性但证据链薄弱，适合当实验线索，不值得投入过多时间。\",\n  \"one_high_value_point\": \"对 Agent 工具而言，过强的系统规划约束可能不如让模型在执行态中自行生成计划更有效。\",\n  \"knowledge_points\": [\n    \"工具框架本身会显著影响模型表现，不能只看底层模型能力。\",\n    \"执行模式可能释放模型的内部推理、差异分析与子 Agent 调度能力。\",\n    \"规划与执行若被硬性割裂，可能降低任务完成度并放大偏差。\"\n  ],\n  \"action_items\": [\n    \"在 Claude Code 中对同一任务分别测试规划模式与执行模式的完成质量。\",\n    \"记录不同 harness 对复杂 PRD 实现任务的成功率差异。\",\n    \"把 “减少过度约束” 加入 Agent 提示词与工作流设计检查项。\"\n  ]\n}",
+    "finish_reason": "stop",
+    "prompt_id": "template_1773725944931",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "分类评分 A",
+    "timestamp": 1773725958746,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:75de49075b62c89899c9aad3765fdc0b0b2615c99b440f0b68619ae936b9c579",
+  "refs": {
+    "sessionId": "1773725784229_3f9iiber"
+  },
+  "revisionId": "sha256:cf381c861b71b33455911d732b4585eb322adbc1bc4b89f035e0f30bafc315cf",
+  "schemaVersion": 1,
+  "updatedAt": 1773725958746
+}

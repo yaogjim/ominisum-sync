@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777901988055,
+  "entityType": "message",
+  "id": "1777901988054_t0hsta8b",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: open-agent-sdk替代方案发布\n\n**评级**: C (47分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI开发工具\n**次类别**: Agent开发, 开源项目\n**标签**: #Claude Code #Agent SDK #开源替代 #云端部署\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 2 | 15% |\n| 可迁移性 | 3 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 有一定工具线索价值，但更像项目宣传，缺乏验证材料和技术细节。\n**核心高价值点**: 指出 claude-agent-sdk 依赖本地 Claude Code 进程带来的黑盒和高开销问题，并提供开源替代方向。\n\n### 摘要\n文章介绍 open-agent-sdk，声称可替代 claude-agent-sdk，优势包括接口兼容、开源可定制、不依赖本地 CLI 进程，适合云端高并发 Agent 调用，并附 GitHub 项目链接。\n\n### 知识要点\n- claude-agent-sdk 的潜在问题包括依赖闭源 Claude Code 和进程级调用开销\n- open-agent-sdk 宣称兼容 claude-agent-sdk 接口，可通过替换包名迁移\n- 函数调用式 SDK 相比 CLI 进程调用更适合云端高并发场景\n\n### 行动项\n- 如正在使用 claude-agent-sdk，可浏览 open-agent-sdk 仓库评估兼容性\n- 检查项目源码、许可证、维护活跃度和实际性能表现后再决定是否采用\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是项目发布信息和功能宣称，缺少实现细节、性能数据、架构说明或实际案例，方法论价值较低。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1777901988055,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:5d4859ce4a1098ad95f8013ccc4a734503439f972a4a278e81b0b009036f19f8",
+  "refs": {
+    "sessionId": "1777901718878_16fhd57i"
+  },
+  "revisionId": "sha256:6d2d227b4e190d63c9f840f11aa332e60e7e99443cf3b430bdbf9bbc38b56f4d",
+  "schemaVersion": 1,
+  "updatedAt": 1777901988055
+}

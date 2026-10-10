@@ -1,0 +1,67 @@
+{
+  "createdAt": 1777005233486,
+  "entityType": "session",
+  "id": "1777005233486_vig5s5nw",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的 Agent 工作流中优先尝试“编码代理 + 独立评审代理”的双代理结构",
+      "设计多智能体系统时，将重点放在上下文裁剪、通信协议和任务边界，而非盲目增加并行代理数量"
+    ],
+    "archiveReason": "提供了当前多智能体在生产环境中可行模式的经验总结，适合作为后续设计 Agent 系统时的参考框架。",
+    "classifiedAt": 1777005669841,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "多智能体有效模式复盘",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "上下文工程比提示工程更关键，且在多智能体场景中难度显著上升",
+      "生成器-验证器循环中，评审代理保持干净上下文能显著提升问题发现率",
+      "小模型调用大模型的 smart-friend 模式本质上是能力路由而非简单升级",
+      "大任务的可行结构更接近 manager-subagents 的 map-reduce-and-manage，而非无结构群体协商"
+    ],
+    "oneHighValuePoint": "当前多智能体最有效的形态是“单线程写入 + 多代理提供智能支持”，核心瓶颈不是能力本身，而是上下文与通信设计。",
+    "oneLineReview": "这是一篇经验密度较高的多智能体实践复盘，方法论清晰，但证据仍偏内部案例与观点性总结。",
+    "primaryCategory": "AI工程实践",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "多智能体系统",
+      "软件开发自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于 Cognition 和 Windsurf 的实践，提出多智能体当前最有效的模式不是并行写入，而是单线程执行写操作、其他代理提供智能支持。重点讨论了上下文工程、生成器-验证器循环、smart-friend 架构和管理者式任务拆分。",
+    "tags": [
+      "多智能体",
+      "上下文工程",
+      "代码审查",
+      "模型路由",
+      "Agent协作"
+    ],
+    "title": "多智能体：实际有效的是什么",
+    "totalScore": 73.5,
+    "url": "https://x.com/walden_yan/status/2047054401341370639"
+  },
+  "payloadHash": "sha256:29da1b51a826de52df7cf9fa6df659e2f3611ca454270c6cdfa9a39695f16d7c",
+  "refs": {},
+  "revisionId": "sha256:f318ad3abe62f7ba12482f95c738f28809bc4437f20c470517f78f199110c2d5",
+  "schemaVersion": 1,
+  "updatedAt": 1777005978214
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773987772564,
+  "entityType": "message",
+  "id": "1773987813097_b49vx7eg",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 大纲式精炼总结\n\n- Nous Research 宣布：`Hermes Agent` 独立写出一部长篇小说《The Second Son of the House of Bells》\n- 小说规模为 `79,456` 字、共 `19` 章，且号称从写作到排版、封面、有声书、落地页均由 Agent 完成\n- 技术流程核心是类似 Karpathy `Autoresearch` 的 `modify → evaluate → keep/discard` 循环，但被扩展到小说创作\n- 具体环节包括：世界观构建、章节草稿、对抗式编辑、Opus 评审循环、LaTeX 排版、封面生成、有声书生成与发布页面搭建\n- Nous 同步公开了作品页面与开源代码，意图展示 Agent 不只是“写一段文本”，而是能完成完整内容生产流水线\n- 社区反应集中在两点：一是觉得想法很酷，二是质疑“小说质量与创作真实性”仍较难客观验证\n\n## 一句话评论\n\n这是 AI 从“生成片段”迈向“端到端完成复杂创作项目”的一个很有象征意义的案例。\n\n## 一句话高价值内容\n\n真正值得关注的不是“AI 写了一本小说”，而是它证明了 `Agent + 评审循环 + 多阶段工具链` 可能成为未来内容工业化生产的标准范式。",
+    "prompt_id": "default",
+    "role": "assistant",
+    "timestamp": 1773987772564,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:374f99196c30ecc88c5daf963dcd613031acf66c2a83930c7b128dea28c0aa8c",
+  "refs": {
+    "sessionId": "1773986129916_50wgsza7"
+  },
+  "revisionId": "sha256:749c043d137e45061d34c34cf66f5eeedd397d71cdb6af4316ec4eca025797d8",
+  "schemaVersion": 1,
+  "updatedAt": 1773987772564
+}

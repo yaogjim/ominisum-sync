@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780371026970,
+  "entityType": "session",
+  "id": "1780371026970_9xibjrp4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在做Agent托管服务，可评估当前常驻资源是否存在闲置浪费。",
+      "查看FastClaw项目，判断其按需sandbox架构是否适合现有服务迁移或借鉴。"
+    ],
+    "archiveReason": "提供了AI Agent托管服务从常驻Pod迁移到动态挂载sandbox后的成本变化案例，可作为云原生Agent架构降本参考。",
+    "classifiedAt": 1780371645558,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "FastClaw降本迁移案例",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "常驻式Agent托管在多租户场景下可能带来较高闲置资源成本。",
+      "存算分离与动态挂载sandbox可以将Agent运行从常驻模式改为按需服务模式。",
+      "FastClaw相比OpenClaw在代码体积、资源占用、启动速度和部署依赖上更轻量。"
+    ],
+    "oneHighValuePoint": "通过存算分离和Agent按需启动，避免大量Pod常驻，可显著降低托管服务的云资源成本。",
+    "oneLineReview": "这是一个有参考价值但细节不足的AI Agent基础设施降本案例。",
+    "primaryCategory": "AI基础设施",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "云原生架构",
+      "成本优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者分享将OpenClaw托管服务迁移到FastClaw的经历：原先500个Pod、18台服务器月成本近5000美元，迁移后通过存算分离和按需挂载sandbox将服务器降至3台，成本降到约1/6。",
+    "tags": [
+      "FastClaw",
+      "OpenClaw",
+      "Kubernetes",
+      "Agent框架",
+      "存算分离",
+      "降本"
+    ],
+    "title": "idoubi: 我年初开始做 OpenClaw 托管服务，在一套 k8s 集群部署了 500 个 Pod，每个 Pod 限制 4g 的运行内存",
+    "totalScore": 60.5,
+    "url": "https://x.com/idoubicc/status/2061405448356741364"
+  },
+  "payloadHash": "sha256:8d2198ca66e90e58c1ba54f14cc4bc72a21747d70881803cc558e083dc2bd9cc",
+  "refs": {},
+  "revisionId": "sha256:6b1f4df848c72b8b61666027fd4005acf1743f529c0919d8712324ba6bf6fc42",
+  "schemaVersion": 1,
+  "updatedAt": 1780373639743
+}

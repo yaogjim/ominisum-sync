@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780380110859,
+  "entityType": "message",
+  "id": "1780380156935_vgenamyq",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\n这篇内容的核心观点：\n\n> **做 AI Agent 产品，TypeScript 更适合做主工程语言；Python 更适合做模型、数据和实验。**\n\n作者认为：\n\n- **TS 更适合 Agent 产品层**\n  - 前端、后端、插件、浏览器、IDE、Slack 等生态更统一\n  - 类型系统能减少 JSON 参数、工具调用、状态流转出错\n  - 更适合异步、事件流、WebSocket、SSE、实时 UI\n  - 更适合做 Agent runtime、SDK、插件系统\n\n- **Python 仍然重要**\n  - 适合模型训练、数据处理、RAG、embedding、eval、离线任务、实验脚本\n\n推荐分工：\n\n| 场景 | 更适合 |\n|---|---|\n| Agent 产品、前端、编排、插件、实时交互 | TypeScript |\n| 模型、数据、评测、检索、训练、离线任务 | Python |\n\n---\n\n## 二、深入浅出解读\n\n以前大家觉得：\n\n> AI = 模型  \n> 所以 Python 是默认选择。\n\n但现在 AI Agent 已经不是单纯调模型了，而是一个完整产品系统：\n\n- 要有界面\n- 要调工具\n- 要实时流式输出\n- 要处理用户确认\n- 要管理状态\n- 要接数据库、支付、权限、日志、插件\n- 要在网页、浏览器插件、IDE、Slack 里运行\n\n这时候问题变成：\n\n> 不是“哪个语言更懂 AI”，而是“哪个语言更适合做产品系统”。\n\nTS 的优势在于它离用户界面、Web 产品、插件生态更近。\n\n举个简单例子：\n\n如果 Agent 要调用一个工具：\n\n```json\n{\n  \"userId\": \"123\",\n  \"action\": \"send_email\"\n}\n```\n\n如果字段写错，比如：\n\n```json\n{\n  \"userid\": \"123\"\n}\n```\n\nAgent 可能就挂了。\n\nTS 的类型系统可以提前发现这类问题，减少运行时炸锅。\n\n而 Python 更适合在背后做：\n\n- 数据清洗\n- 向量检索\n- 模型评测\n- embedding 生成\n- fine-tuning\n- 复杂计算\n\n所以更合理的架构不是二选一，而是：\n\n> **TS 做产品骨架，Python 做 AI 后厨。**\n\n---\n\n## 三、我的意见\n\n我认为这篇观点总体是对的，但“SB 才用 Python”这种说法太绝对。\n\n更准确的说法应该是：\n\n> **如果你做的是面向用户的 Agent 产品，TS 通常更顺手；  \n> 如果你做的是模型、算法、数据管线，Python 仍然是主力。**\n\n### 我的建议\n\n如果你是做 Agent 产品：\n\n1. **前端 + Agent 编排层：优先 TS**\n2. **工具调用、状态管理、流式响应：优先 TS**\n3. **RAG、embedding、eval、数据处理：用 Python**\n4. **不要为了语言信仰吵架，按场景选工具**\n\n### 最终结论\n\n> **Agent 产品不是单纯 AI 工程，而是产品工程。**  \n> 产品层靠 TS，模型数据层靠 Python，才是更现实的组合。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780380110859,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:fc67d290863fb375329e2db544a7212ab2b51cf5be79d7595303c97a5fc1874b",
+  "refs": {
+    "sessionId": "1780380156078_yc7l27l7"
+  },
+  "revisionId": "sha256:112531e667898db87805ea79b13fa51c50d0ede9a377382b243f3a56602d1b17",
+  "schemaVersion": 1,
+  "updatedAt": 1780380110859
+}

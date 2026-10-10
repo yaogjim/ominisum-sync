@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773372694193,
+  "entityType": "session",
+  "id": "1773372694193_8cuzpijg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计 Agent 工作流时优先考虑分层角色与任务边界，而非简单并行 swarm",
+      "为智能体任务建立 README、进度日志和结构化计划，作为可传递的外部记忆",
+      "在自动编码流程中补强单元测试、里程碑校验和回归验证机制"
+    ],
+    "archiveReason": "内容虽短，但提炼了多智能体协作、上下文切换与测试控制等关键实践，便于后续检索参考",
+    "classifiedAt": 1773830012868,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "长周期编程智能体经验总结",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "长周期自主编程任务中，单智能体会因上下文膨胀和目标漂移而失效",
+      "多智能体系统更适合采用规划者、子规划者、执行者、验证者的层级组织结构",
+      "新鲜上下文配合结构化工件交接，比长期保留上下文更稳健",
+      "单元测试、里程碑检查和回归验证应作为智能体行为控制信号"
+    ],
+    "oneHighValuePoint": "将文档、计划和进度日志视为智能体外部记忆，而不是依赖持久上下文，是最具工程价值的洞见。",
+    "oneLineReview": "观点抓得准且有启发，但证据与细节不足，更像高质量观察而非完整研究。",
+    "primaryCategory": "AI工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为设计长周期编程 Agent 的启发性材料",
+    "secondaryCategories": [
+      "智能体系统设计",
+      "AI编程工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结了长时间运行自主编程智能体的几个核心经验：单智能体难以扩展，组织化分工优于无序 swarm，新会话与文档工件比持久上下文更可靠，而测试与验证机制应成为系统控制中枢。",
+    "tags": [
+      "长周期Agent",
+      "多智能体架构",
+      "上下文管理",
+      "测试驱动",
+      "工程组织"
+    ],
+    "title": "Takeaways on Long-running Autonomous Coding Agents",
+    "totalScore": 61.5,
+    "url": "https://x.com/mihail_eric/status/2032145866614849665"
+  },
+  "payloadHash": "sha256:620a773a1e61aa8db48cd1069ed68f8d5ebe188c904b17a44695a9f4f130baea",
+  "refs": {},
+  "revisionId": "sha256:59e987f2496765f732b4efe7276a58f5bd5e6294cde41a37b5a6eee2b65018ca",
+  "schemaVersion": 1,
+  "updatedAt": 1773830012871
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1776325437244,
+  "entityType": "message",
+  "id": "1776325437243_n5kjluww",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: TypeScript Agent栈选型建议\n\n**评级**: C (42.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI Agent开发\n**次类别**: TypeScript技术栈, 工具与框架选型\n**标签**: #TypeScript #Agent #pi-mono #Electron #CLI #框架选型\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 有一些实用选型线索，但更像碎片化经验帖，缺少证据和系统比较。\n**核心高价值点**: 先从 CLI 形态验证 Agent 核心能力，再决定是否投入 UI 开发，有助于降低早期复杂度。\n\n### 摘要\n文章围绕 TypeScript 技术栈下的 Agent 开发展开简短选型建议，推荐 pi-mono、Electron 与从 CLI 起步，并给出一个开源项目作为参考。整体偏经验分享，适合作为快速踩点信息，不适合当作系统性决策依据。\n\n### 知识要点\n- TypeScript Agent 开发可关注 pi-mono、Vercel AI SDK、Claude Agent SDK 等方案\n- 应用层可先从 CLI 起步，避免过早投入界面开发\n- Electron 在稳定性和生态上有优势，但体积较大\n- 可参考 craft-agents-oss 这类开源项目学习实际工程组合方式\n\n### 行动项\n- 基于自身需求快速对比 pi-mono、AI SDK 与 Claude Agent SDK 的模型绑定、工具调用和成本\n- 先实现一个 CLI 版 Agent 原型，验证 prompt、工具调用与多 agent 协作流程\n- 研究 craft-agents-oss 的项目结构，提炼可复用工程实践\n- 如果桌面端体积敏感，再补充评估 Tauri 与 Electron 的取舍\n\n### 存档判定\n归档: 否\n不推荐: 内容以个人经验型推荐为主，论据和对比测试不足，信息深度有限。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1776325437244,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:e7de91ad260847292fe20ddf3e19ed54b0d4e192648e9441358a6efdad1268a2",
+  "refs": {
+    "sessionId": "1776322712203_uuxj0y4o"
+  },
+  "revisionId": "sha256:744e0a703d9e64bc5b705a927feed5cc84a90fe24f5588bba2bee8e4b2c918a3",
+  "schemaVersion": 1,
+  "updatedAt": 1776325437244
+}

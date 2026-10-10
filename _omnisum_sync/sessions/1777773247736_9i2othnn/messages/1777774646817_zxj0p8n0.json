@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777774510304,
+  "entityType": "message",
+  "id": "1777774646817_zxj0p8n0",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 一、内容总结\n\n这条推文主要分享了一个 **给 Claude Code 快速切换不同大模型/中转站的简单方法**：\n\n- 在 `~/.zshrc` 或 `~/.bashrc` 这类 Shell 启动配置文件里，提前写好不同的配置。\n- 通过不同命令启动 Claude Code：\n  - `claude`：使用官方 Claude 模型\n  - `claude-ling`：使用蚂蚁百灵 / Ling 模型\n  - `claude-ds`：使用 DeepSeek 模型\n- 本质上是给不同模型配置不同的启动命令，方便在不同终端窗口里分别使用。\n\n评论区也补充了几点：\n\n- 有人指出：不同窗口使用不同模型时，**上下文无法共享**。\n- 有人推荐 `langcli`，可以在不丢上下文的情况下切换模型。\n- 也有人认为这就是配置 `alias`，但确实简单实用。\n- 还有人提到类似方法也可以用于一键开启/关闭终端代理。\n\n---\n\n# 二、深入浅出解读\n\n## 1. 这个方法到底是什么？\n\n简单说，就是：\n\n> 给 Claude Code 配几套“启动方式”，每套启动方式对应一个模型服务。\n\n比如你平时输入：\n\n```bash\nclaude\n```\n\n默认可能走官方 Claude。\n\n但你可以自己加几个命令：\n\n```bash\nclaude-ds\nclaude-ling\n```\n\n让它们分别使用 DeepSeek、Ling 或其他第三方兼容服务。\n\n这类配置一般会放在：\n\n```bash\n~/.zshrc\n```\n\n或：\n\n```bash\n~/.bashrc\n```\n\n里面。\n\n---\n\n## 2. 为什么这样能切换模型？\n\n很多 AI CLI 工具都会读取环境变量，比如：\n\n- API Key\n- Base URL\n- Model Name\n- 代理地址\n- 自定义服务入口\n\n你可以给不同命令设置不同环境变量。\n\n概念上类似这样：\n\n```bash\nalias claude-ds='使用 DeepSeek 配置启动 claude'\nalias claude-ling='使用 Ling 配置启动 claude'\n```\n\n所以你输入不同命令时，Claude Code 实际连接的是不同的大模型服务。\n\n---\n\n## 3. 这个方法的优点\n\n### 简单\n\n不需要复杂插件，也不用频繁改配置文件。\n\n### 灵活\n\n可以给每个模型单独起一个命令：\n\n```bash\nclaude\nclaude-ds\nclaude-ling\nclaude-qwen\n```\n\n想用哪个就开哪个。\n\n### 适合多项目\n\n比如：\n\n- 项目 A 用 Claude\n- 项目 B 用 DeepSeek\n- 项目 C 用国产模型或中转站\n\n可以很方便地按项目选择模型。\n\n---\n\n## 4. 这个方法的缺点\n\n### 上下文不共享\n\n如果你开三个终端：\n\n- 窗口一用 Claude\n- 窗口二用 DeepSeek\n- 窗口三用 Ling\n\n它们之间通常不会共享对话历史。\n\n也就是说，你在 Claude 里聊过的内容，DeepSeek 不知道。\n\n### 兼容性不一定完美\n\n不是所有第三方模型都能 100% 兼容 Claude Code 的调用方式。\n\n可能会遇到：\n\n- 工具调用不稳定\n- 上下文长度不同\n- 输出格式不一致\n- 代码编辑能力有差异\n\n### API Key 安全问题\n\n如果把 Key 明文写进 `.zshrc` 或 `.bashrc`，要注意不要误传到 GitHub 或截图泄露。\n\n---\n\n# 三、我的意见\n\n这个方法很实用，尤其适合经常用 Claude Code、又想尝试不同模型的人。\n\n我的看法是：\n\n> 如果你只是想快速切换模型，这种 alias / 环境变量方案非常值得用；  \n> 如果你需要在同一个上下文里无缝切换模型，那就需要更专业的路由工具。\n\n推荐使用场景：\n\n| 场景 | 是否适合 |\n|---|---|\n| 快速体验 DeepSeek、Ling、Qwen 等模型 | 适合 |\n| 每个项目使用不同模型 | 适合 |\n| 临时切换中转站 | 适合 |\n| 多模型共享同一段上下文 | 不太适合 |\n| 企业级统一管理模型调用 | 需要更专业方案 |\n\n总结一句话：\n\n> 这是一个很朴素但很好用的技巧，本质就是“给不同模型配不同启动命令”。不高级，但高效。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1777774510304,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d65b046798ec3e7342803211bb0c6f9f9deea4dc5c392b6295b66a70023594d1",
+  "refs": {
+    "sessionId": "1777773247736_9i2othnn"
+  },
+  "revisionId": "sha256:3136f062ccd39949ab0b9022b06346ca0bcd48a496fc4e17403c22858ec9cefd",
+  "schemaVersion": 1,
+  "updatedAt": 1777774510304
+}

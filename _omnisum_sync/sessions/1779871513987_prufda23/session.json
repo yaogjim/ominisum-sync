@@ -1,0 +1,114 @@
+{
+  "createdAt": 1779871513987,
+  "entityType": "session",
+  "id": "1779871513987_prufda23",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理现有 LLM 应用中哪些逻辑仍是硬编码 context 编排，评估是否可交给 Agent 自主决策。",
+      "为 Agent 工作流设计可快速返回的反馈工具，如 lint、测试、日志、浏览器状态和代码检索。",
+      "基于 Agent 实际失败模式倒推边界设计，而不是仅依赖 prompt 约束。",
+      "在代码类 Agent 场景中引入沙箱、权限控制、结构化测试和最多重试次数等保险机制。",
+      "将 Prompt、Context、Harness 三层能力分开评估，避免把 runtime 能力误认为 Harness 设计。"
+    ],
+    "archiveReason": "文章提供了从 Prompt 到 Context 再到 Harness 的清晰工程演进框架，并结合多个 Agent 工程案例讨论自主性、反馈与边界设计，具备较高方法论和长期参考价值。",
+    "byline": "yan5xu",
+    "classifiedAt": 1780386786714,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 9,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "LLM工程三阶段演进",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      },
+      {
+        "alt": "James Yao",
+        "caption": "",
+        "height": 96,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/profile_images/474112824034086912/YbGtCn5y_x96.jpeg",
+        "role": "article",
+        "score": 55,
+        "src": "https://pbs.twimg.com/profile_images/474112824034086912/YbGtCn5y_x96.jpeg",
+        "width": 96
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 96,
+        "id": "img-2",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/profile_images/1818445093218430976/2Pvxg6Vf_x96.jpg",
+        "role": "article",
+        "score": 45,
+        "src": "https://pbs.twimg.com/profile_images/1818445093218430976/2Pvxg6Vf_x96.jpg",
+        "width": 96
+      }
+    ],
+    "knowledgePoints": [
+      "Prompt Engineering 主要优化静态单次输入，适合短任务，但难以处理动态展开的多步任务。",
+      "Context Engineering 的核心是用程序化方式管理多步任务中的信息流转，包括检索、压缩、反馈注入和上下文选择。",
+      "Harness Engineering 强调为 Agent 构建运行环境，让模型自主调用工具、获取反馈并判断下一步行动。",
+      "自主 Agent 必须配套能力边界，例如沙箱隔离、CI 次数限制、文件权限、结构化测试和架构约束。",
+      "Agent 工程的重点正在从模型能力本身转向环境设计、反馈循环、控制系统和评估治理。"
+    ],
+    "oneHighValuePoint": "Harness Engineering 的核心不是继续替 Agent 编排信息，而是赋予其自主获取反馈的工具，同时用沙箱、权限、测试和流程边界防止失控。",
+    "oneLineReview": "这是一篇框架清晰、案例较丰富的 LLM Agent 工程方法论文章，适合用于理解下一阶段 AI 应用工程的核心问题。",
+    "primaryCategory": "AI工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "大语言模型应用",
+      "Agent工程",
+      "软件工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将 LLM 工程演进划分为 Prompt Engineering、Context Engineering 与 Harness Engineering 三阶段，指出瓶颈从提问方式、信息编排转向自主反馈与边界控制，并通过 Stripe、Anthropic、OpenAI 等案例说明 Agent 工程的关键实践。",
+    "tags": [
+      "Prompt Engineering",
+      "Context Engineering",
+      "Harness Engineering",
+      "AI Agent",
+      "反馈循环",
+      "工程边界"
+    ],
+    "title": "从 Prompt 到 Harness：如何理解大语言模型工程",
+    "totalScore": 75.5,
+    "url": "https://x.com/yan5xu/status/2059117572826746979"
+  },
+  "payloadHash": "sha256:aeaefcf44ae3c29243220efe33f4254351e5ee8f9b0bd29be2d57e4c5b15c035",
+  "refs": {},
+  "revisionId": "sha256:d9e6eadffec4dcd42ca8fe063521e1c5ea499e9bca920389f9928eca687da2e5",
+  "schemaVersion": 1,
+  "updatedAt": 1780387322812
+}

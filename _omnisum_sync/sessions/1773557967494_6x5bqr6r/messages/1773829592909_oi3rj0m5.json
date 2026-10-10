@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773829592910,
+  "entityType": "message",
+  "id": "1773829592909_oi3rj0m5",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Ghostty终端入门配置指南\n\n**评级**: C (47.5分)  |  **深度阅读**: 否  |  **建议操作**: 浏览\n\n**主类别**: 开发工具配置\n**次类别**: 终端工具, AI编程环境\n**标签**: #Ghostty #Claude Code #macOS #终端配置 #开发效率\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 4 | 10% |\n| 新颖性 | 3 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 一篇偏营销风格的入门配置帖，实操性尚可，但信息深度和可复用方法有限。\n**核心高价值点**: 直接给出 Ghostty 的关键快捷键与配置路径，能让新手快速搭起适合 Claude Code 的分屏终端环境。\n\n### 摘要\n文章面向 Ghostty 新手，介绍安装、导入作者配置、分屏快捷键、主题美化和搭配 Starship、fastfetch、btop 的基础用法，重点强调其与 Claude Code 的配合体验，但内容更多是个人使用推荐与操作演示。\n\n### 知识要点\n- Ghostty 可通过 Homebrew 在 macOS 上安装，并使用 `~/.config/ghostty/config` 进行配置\n- 可借助分屏、放大当前面板、Starship 状态栏和监控工具提升终端使用体验\n\n### 行动项\n- 如你使用 macOS 与 Claude Code，可按文中步骤快速试配 Ghostty 并验证分屏工作流\n- 不要直接照搬作者配置，先检查快捷键、主题和 shell 初始化项是否与自己的环境冲突\n\n### 存档判定\n归档: 否\n不推荐: 内容偏入门和宣传化，方法论与证据支撑较弱，主要价值在于快速上手配置。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1773829592910,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:eac4151af0121b1c77fbcc491ca5facb89d7441b072803372fcb89c05f399647",
+  "refs": {
+    "sessionId": "1773557967494_6x5bqr6r"
+  },
+  "revisionId": "sha256:94c1671a8cfb04a861433576ede2b38062dc249cdd3e01c412ff524a5b2c8e41",
+  "schemaVersion": 1,
+  "updatedAt": 1773829592910
+}

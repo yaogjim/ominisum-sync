@@ -1,0 +1,71 @@
+{
+  "createdAt": 1777278168486,
+  "entityType": "session",
+  "id": "1777278168486_lsnu40np",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为当前产品团队梳理一套清晰的团队原则，包括核心用户、关键目标、重要取舍和成功指标。",
+      "尝试建立类似research preview的轻量发布机制，用于快速验证不确定功能。",
+      "减少不必要的跨团队审批环节，明确哪些发布只需工程、文档和市场的轻量协作即可完成。",
+      "将PRD区分为轻量一页纸和重型PRD两类，只在高歧义或长周期项目中使用完整PRD。",
+      "定期做指标readout，让团队成员理解业务状态并能独立做产品判断。"
+    ],
+    "archiveReason": "包含Anthropic产品团队在AI原生产品中缩短交付周期、降低发布摩擦、弱化传统PRD与路线图依赖的实践经验，具有较强参考价值",
+    "classifiedAt": 1777284690014,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "Anthropic产品高速迭代法",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Anthropic将许多产品功能周期从6个月压缩到1个月、1周甚至1天，核心依赖流程降噪和团队授权，而不仅是模型能力提升。",
+      "研究预览模式可以降低发布承诺，让团队更快把想法交给用户验证，并允许后续快速迭代或撤回。",
+      "AI产品中PRD没有消失，但更多用于高歧义或重基础设施项目；日常迭代更依赖清晰目标、指标和团队原则。",
+      "PM需要帮助团队定义用户、问题、关键用例和取舍原则，使工程师能自主决策并快速推进。",
+      "随着代码生成成本下降，产品判断力和决定“该构建什么”的能力变得更加稀缺。"
+    ],
+    "oneHighValuePoint": "AI原生产品的PM核心能力正在从多季度路线图协调，转向定义清晰目标并建立低摩擦、可重复的快速发布机制。",
+    "oneLineReview": "一份关于AI时代产品团队如何压缩从想法到上线周期的高价值访谈材料。",
+    "primaryCategory": "AI产品管理",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为AI产品团队高速迭代和PM角色变化的参考材料",
+    "secondaryCategories": [
+      "团队协作",
+      "产品迭代方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章讨论Anthropic产品团队如何在Claude Code等AI产品中实现高速迭代，强调明确目标、研究预览发布、低流程阻力、紧密跨职能协作，以及AI时代PM角色从长期规划转向快速验证和产品判断。",
+    "tags": [
+      "Anthropic",
+      "Claude Code",
+      "AI PM",
+      "快速迭代",
+      "产品方法论"
+    ],
+    "title": "How Anthropic’s product team moves faster than anyone else | Cat Wu (Head of Product, Claude Code) - YouTube",
+    "totalScore": 70,
+    "url": "https://www.youtube.com/watch?v=PplmzlgE0kg"
+  },
+  "payloadHash": "sha256:292c1233f8d7862221a8633862dc7a5df082c1b64238e4305ba59fc448e49a50",
+  "refs": {},
+  "revisionId": "sha256:88d67732c4f329833549815abbe91cdb261504d04164b21e8a3068425c7cd198",
+  "schemaVersion": 1,
+  "updatedAt": 1777284690017
+}

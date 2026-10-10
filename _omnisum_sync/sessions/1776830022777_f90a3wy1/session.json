@@ -1,0 +1,63 @@
+{
+  "createdAt": 1776830022777,
+  "entityType": "session",
+  "id": "1776830022777_f90a3wy1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在评估智能体工具，可优先试做“会前客户调研”或“会后跟进起草”这两类低集成成本场景。",
+      "设计自动化流程时，可先采用“定时任务+文件存储+消息推送”的轻量架构验证价值，再决定是否扩展为多代理系统。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776830975720,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Hermes真实用例盘点",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Hermes 的常见落地场景集中在低交互、高频、可定时执行的信息整理与推送任务。",
+      "较稳定的工作流通常采用 cron 或事件触发、Markdown/JSON 文件中转、Telegram/Discord 等消息出口。"
+    ],
+    "oneHighValuePoint": "文中提炼出的共性模式较有启发性：定时触发、基于文件读写、结果推送到消息应用，而不是依赖复杂仪表板。",
+    "oneLineReview": "这是一份不错的用例雷达图，但更像社媒信号整理而非可直接复用的高质量研究。",
+    "primaryCategory": "AI智能体应用",
+    "rating": "C",
+    "rejectReason": "案例覆盖面广但多数来自社媒帖文汇编，证据质量偏弱，方法论提炼有限，容易随产品迭代快速过时。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "工作流自动化",
+      "工具选型参考"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章汇总了近30天 Hermes Agent 在社媒上的七类主要用法，包括会前调研、会后跟进、播客摘要、新闻简报、内容运营、个人助手和代理监控。价值在于快速了解真实落地场景，但主要基于零散社区案例，数据口径与效果验证不足。",
+    "tags": [
+      "Hermes Agent",
+      "自动化工作流",
+      "社区案例"
+    ],
+    "title": "Hermes Agent：人们实际用它做什么（Reddit、X 和 YouTube 最近 30 天的数据）",
+    "totalScore": 53.5,
+    "url": "https://x.com/mvanhorn/status/2045935785661349956"
+  },
+  "payloadHash": "sha256:df4ab9ce5b1b4760ebd58d3a099c5c97c9cd9dd40d740dc3bac509c544f1fb9f",
+  "refs": {},
+  "revisionId": "sha256:beef5b2fcd0522e578f8d4532213215b6955ef40fc0dbaddcfe5f9e0597caf8f",
+  "schemaVersion": 1,
+  "updatedAt": 1776830975725
+}

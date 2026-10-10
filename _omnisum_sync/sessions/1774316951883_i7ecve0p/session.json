@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774316951883,
+  "entityType": "session",
+  "id": "1774316951883_i7ecve0p",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审查当前代理或笔记系统，识别是否存在单文件记忆膨胀问题",
+      "尝试按项目或主题拆分长期记忆文件，并设计按需加载规则"
+    ],
+    "archiveReason": "提供了按需加载记忆、分域存储和定时任务联动的可借鉴思路",
+    "classifiedAt": 1774316969317,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI代理分层记忆方案",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "将代理长期记忆拆分为多个领域化文件，而非单一 MEMORY.md",
+      "通过自定义桥接机制让代理在当前会话按需读取相关记忆",
+      "用 cron 和研究流程回写记忆，形成持续更新的闭环"
+    ],
+    "oneHighValuePoint": "最有价值的点是把代理记忆从“全量常驻上下文”改为“分域文件+按需注入”，显著降低噪声与上下文膨胀。",
+    "oneLineReview": "是一个有启发的工程实践贴，但更像经验分享，证据和细节支撑不足。",
+    "primaryCategory": "AI代理工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，适合作为代理记忆架构的轻量案例",
+    "secondaryCategories": [
+      "上下文管理",
+      "个人知识系统"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一种改进 AI 代理记忆管理的实践：将上下文拆分为多个按领域组织的 markdown 文件，仅在相关任务中按需加载，并通过桥接技能和 cron 任务实现持续读写与跨项目视图整合。",
+    "tags": [
+      "AI Agent",
+      "Memory",
+      "Context Engineering",
+      "Markdown",
+      "Automation"
+    ],
+    "title": "witcheer ☯︎: my @NousResearch &lt;&gt; @stackwalnuts setup that fixed most of the memory issu…",
+    "totalScore": 59,
+    "url": "https://x.com/witcheer/status/2036032001229181341"
+  },
+  "payloadHash": "sha256:8547756795b8e6cf3a78316038fa49fca7d5bb052ea5e2a59510aeee3ab18c98",
+  "refs": {},
+  "revisionId": "sha256:b734e525a29b0c51b5a71d086de95d1576a9df7424b8146bfa26dd15f4d9bdcc",
+  "schemaVersion": 1,
+  "updatedAt": 1774334439727
+}

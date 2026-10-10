@@ -1,0 +1,15 @@
+{
+  "createdAt": 1773557105813,
+  "entityType": "session-content",
+  "id": "1773557105813_tx5kl9rk",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<main><!--$--><!--/$--> <p>从 0 到 1 构建 nano Claude Code-like agent，每次只加一个机制</p> <p><a href=\"/zh/timeline/\">开始学习</a></p> <h2>核心模式</h2> <p>所有 AI 编程 Agent 共享同一个循环：调用模型、执行工具、回传结果。生产级系统会在其上叠加策略、权限和生命周期层。</p> <div><p><span>agent_loop.py</span></p> <pre><code>while True:\n    response = client.messages.create(messages=messages, tools=tools)\n    if response.stop_reason != \"tool_use\":\n        break\n    for tool_call in response.content:\n        result = execute_tool(tool_call.name, tool_call.input)\n        messages.append(result)</code></pre></div> <h2>消息增长</h2> <p>观察 Agent 循环执行时消息数组的增长</p> <p><span>messages[]</span> <span>len=3</span></p> <p><span>user</span></p> <p><span>assistant</span></p> <p><span>tool_call</span></p> <h2>学习路径</h2> <p>12 个渐进式课程，从简单循环到隔离化自治执行</p> <h2>架构层次</h2> <p>五个正交关注点组合成完整的 Agent</p> <div><h3>Tools &amp; Execution</h3> <span>2个版本</span></div> <p><a href=\"/zh/s01/\"><span>s01: The Agent Loop</span></a> <a href=\"/zh/s02/\"><span>s02: Tools</span></a></p> <div><h3>Planning &amp; Coordination</h3> <span>4个版本</span></div> <div><h3>Memory Management</h3> <span>1个版本</span></div> <p><a href=\"/zh/s06/\"><span>s06: Compact</span></a></p> <div><h3>Concurrency</h3> <span>1个版本</span></div> <p><a href=\"/zh/s08/\"><span>s08: Background Tasks</span></a></p> <div><h3>Collaboration</h3> <span>4个版本</span></div> <p><a href=\"/zh/s09/\"><span>s09: Agent Teams</span></a> <a href=\"/zh/s10/\"><span>s10: Team Protocols</span></a> <a href=\"/zh/s11/\"><span>s11: Autonomous Agents</span></a> <a href=\"/zh/s12/\"><span>s12: Worktree + Task Isolation</span></a></p></main>",
+    "pageContent": " 从 0 到 1 构建 nano Claude Code-like agent，每次只加一个机制 开始学习 核心模式 所有 AI 编程 Agent 共享同一个循环：调用模型、执行工具、回传结果。生产级系统会在其上叠加策略、权限和生命周期层。 agent_loop.py while True: response = client.messages.create(messages=messages, tools=tools) if response.stop_reason != \"tool_use\": break for tool_call in response.content: result = execute_tool(tool_call.name, tool_call.input) messages.append(result) 消息增长 观察 Agent 循环执行时消息数组的增长 messages[] len=3 user assistant tool_call 学习路径 12 个渐进式课程，从简单循环到隔离化自治执行 架构层次 五个正交关注点组合成完整的 Agent Tools & Execution 2个版本 s01: The Agent Loop s02: Tools Planning & Coordination 4个版本 Memory Management 1个版本 s06: Compact Concurrency 1个版本 s08: Background Tasks Collaboration 4个版本 s09: Agent Teams s10: Team Protocols s11: Autonomous Agents s12: Worktree + Task Isolation"
+  },
+  "payloadHash": "sha256:1d06c7eb8f203e95acc749551d1f7b11d4a8492b0d91ca1de84d05dd609faf02",
+  "refs": {},
+  "revisionId": "sha256:dfd70293e12a7cbaafa3231bb31332243d874af1269be157d0fada5bdc1d4a38",
+  "schemaVersion": 1,
+  "updatedAt": 1773829678966
+}

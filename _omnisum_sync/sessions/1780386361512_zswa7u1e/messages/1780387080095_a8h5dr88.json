@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780386903935,
+  "entityType": "message",
+  "id": "1780387080095_a8h5dr88",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n作者用一条 prompt 回顾了自己过去 30 天的 Codex 使用记录，发现它的价值不在于“多做自动化”，而在于帮助判断哪些动作真的值得固化。最终，AI 没有建议堆更多 workflow，而是只新增了 2 个真正有用的 skill。\n\n## 1. 用 prompt 复盘 Codex 记录，结果超出预期\n\n作者将这条 prompt 用在自己的 Codex 记录上，让 Codex 回看过去的 sessions、Memories 和 Chronicle，识别重复模式，并判断是否需要新增 skill、subagent 或 automation。\n\n关键点：\n\n- 目标不是盲目创建新工具；\n- 而是从历史使用记录中找出真正重复、稳定、值得固化的动作；\n- 复盘范围是过去 30 天的 Codex 记录。\n\n## 2. AI 将重复动作分成 3 类\n\nCodex 没有直接建议作者继续堆 workflow，而是把过去 30 天的重复行为分成了三类：\n\n1. **真该固化的**  \n   - 确实反复出现；\n   - 有明确复用价值；\n   - 适合做成 skill 或自动化。\n\n2. **已经被 skill / automation 覆盖的**  \n   - 这些动作虽然重复，但已有工具能处理；\n   - 不需要重复建设。\n\n3. **看起来重要但证据还不够的**  \n   - 表面上像是高频问题；\n   - 但缺少足够复发证据；\n   - 暂时不应急着自动化。\n\n## 3. 最终只新增了 2 个 skill\n\n经过筛选后，作者只新增了两个 skill：\n\n- **Codex sessions 复盘 skill**  \n  - 作用：把 Codex sessions 复盘整理成可复用资产；\n  - 目的是将过往经验沉淀下来，而不是每次重新处理。\n\n- **Cursor handoff closeout skill**  \n  - 作用：处理 Cursor 交接收尾；\n  - 专门防止 backlog 中出现一种常见漂移：  \n    “明明说已经完成了，但任务状态还卡在 WIP。”\n\n## 4. 作者对这类 prompt 的核心理解\n\n作者认为，这类 prompt 的真正价值不是让 agent 建更多东西，而是让 agent 学会“少建东西”。\n\n关键原则包括：\n\n- **不是自动化越多越好**；\n- 每个自动化都应该有明确依据；\n- 需要满足三个条件：\n  - 有复发证据；\n  - 有稳定输入；\n  - 有明确停止条件。\n\n## 5. 引用推文的补充背景\n\n引用推文提出了这个 prompt 的改进版本：让 Codex 回顾用户的 sessions、Memories 和 Chronicle，识别模式、复用已有内容，并只创建“最小但有用”的 skill、subagent 或 automation。\n\n这与作者的结论一致：  \n**AI 自动化的重点不是扩张，而是克制、复用和精确固化。**",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780386903935,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9a1bba26f91d8548f56df8bb5d4f3f7c8015f40c7b499ec02554362f3eebe3c8",
+  "refs": {
+    "sessionId": "1780386361512_zswa7u1e"
+  },
+  "revisionId": "sha256:0faf25db6bdf36bd6b697de240abf861b42d35ff54863e3f7675c77fe9d4d444",
+  "schemaVersion": 1,
+  "updatedAt": 1780386903935
+}

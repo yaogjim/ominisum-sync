@@ -1,0 +1,63 @@
+{
+  "createdAt": 1773729412697,
+  "entityType": "session",
+  "id": "1773729412697_kzrop6r5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将该模板改写为更中性的通用任务拆解提示词并测试在自己常见任务上的效果",
+      "补充评估清单，对比使用前后输出质量、时间成本和可复用性"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773729424795,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "毛式任务拆解提示词模板",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "系统提示词可通过固定输出结构提高任务分配的一致性",
+      "高可执行提示词通常包含任务拆解、里程碑、参考资源和质量把关机制"
+    ],
+    "oneHighValuePoint": "把任务拆解、时间节点、资源托底和最终把关整合进统一提示词框架，提升了提示词的执行约束力。",
+    "oneLineReview": "可直接拿来试用的任务拆解模板，但包装感强、证据弱，适合速览不适合深读。",
+    "primaryCategory": "AI提示词",
+    "rating": "C",
+    "rejectReason": "内容偏模板营销，方法论较浅，缺乏效果验证与失败边界说明。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "任务管理",
+      "内容创作"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了一个可跨模型复用的系统提示词模板，核心是将简单任务拆成事项、时间节点、资源支持和兜底机制，强调任务布置的结构化与可执行性。但整体更像包装后的提示词示例，缺少实证与适用边界分析。",
+    "tags": [
+      "Prompt Engineering",
+      "任务拆解",
+      "系统提示词"
+    ],
+    "title": "x.com/BirdTechVision/status/2033518588905279864",
+    "totalScore": 47.5,
+    "url": "https://x.com/BirdTechVision/status/2033518588905279864"
+  },
+  "payloadHash": "sha256:70a419e8261d82031ae8ebe4c260bb41e1bb4214743f92005f26b034cdebfaf0",
+  "refs": {},
+  "revisionId": "sha256:7ed84be11aa733e3cc43d6d9cc59f2c540558ce75e15ead1633b9eb20927fb08",
+  "schemaVersion": 1,
+  "updatedAt": 1773729934372
+}

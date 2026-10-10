@@ -1,0 +1,23 @@
+{
+  "createdAt": 1774342252098,
+  "entityType": "message",
+  "id": "summary_default_1774342252098",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 大纲式精炼总结\n\n- **核心问题**：把 LLM 的文本输出手动解析成 UI 状态，过程繁琐、脆弱，而且难以保证一致性、品牌规范和可访问性。  \n- **核心观点**：与其 “解析文本再拼 UI”，不如让 AI 直接生成**结构化 JSON 状态**，再由前端把它确定性地渲染成界面。  \n- **关键方法**：文章提出**RUG（约束式 UI 生成）**思路 —— 模型只能从你预先定义、测试过的组件集合里选用组件，而不能随意生成 HTML。  \n- **JSON Render 的角色**：它把流程抽象为`AI -> JSON 状态 -> UI`，通过 “契约” 让模型输出和前端渲染解耦。  \n- **三大原语**：  \n  - `Schema`：定义 JSON UI 规范的结构与校验规则  \n  - `Catalog`：定义模型可使用的组件、属性、动作，相当于 UI 词汇表  \n  - `Registry`：把目录中的组件和动作映射到真实运行时代码，实现实际渲染与行为执行  \n- **工作机制**：模型生成符合 schema 和 catalog 的 JSON；前端 registry 根据该 JSON 调用真实组件和动作，渲染出页面。  \n- **优势**：保留动态布局能力，同时确保 UI 仍在开发者可控范围内，减少胶水代码和脆弱约定。  \n- **边界说明**：JSON Render 不是 Agent 框架，它专注于 “把模型生成的结构化状态渲染成 UI”，而不是负责复杂代理循环。  \n- **文章延展**：作者下一篇将展示如何用 JSON Render 和 Remotion 做一个基于 GitHub 仓库数据生成 “吐槽视频” 的动态 AI 视频项目。  \n\n## 一句话评论\n\n这篇文章最有价值的地方，是把 “AI 做 UI” 从不可靠的文本猜测，提升为一种可验证、可约束、可工程化的状态驱动架构。\n\n## 一句话高价值内容\n\n**真正值得带走的结论是：AI 应用的前端不该围绕 “聊天回复” 设计，而应围绕 “模型生成的结构化应用状态” 设计。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1774342252098,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b0e542c82ffece26ea14486225b714264e221f0fae0ca25e83364659a869bc3d",
+  "refs": {
+    "sessionId": "1774342252154_b4utmgyp"
+  },
+  "revisionId": "sha256:1e114826ac9fb94b558619f168eef47af57a4f2465d354ad75dae0a30ea98203",
+  "schemaVersion": 1,
+  "updatedAt": 1774342252098
+}

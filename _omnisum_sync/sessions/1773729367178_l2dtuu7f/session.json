@@ -1,0 +1,64 @@
+{
+  "createdAt": 1773729367178,
+  "entityType": "session",
+  "id": "1773729367178_l2dtuu7f",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若仅为获取支付思路，可记录其虚拟卡订阅流程并自行核验服务安全性与合规性",
+      "优先寻找更稳定、官方或长期可持续的Claude订阅与支付方案"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773729381074,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 2,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude订阅虚拟卡教程",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息时效性极强且依赖第三方灰色渠道，缺乏可靠验证与完整风控说明，长期保留价值很低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可通过第三方服务生成虚拟预付Visa卡用于海外订阅支付",
+      "账单地址和姓名需要与虚拟卡注册信息保持一致",
+      "订阅成功不等于后续退款、风控和封号场景可被妥善处理"
+    ],
+    "oneHighValuePoint": "最有价值的信息是给出了从开卡到填写账单信息完成Claude订阅的完整最小操作链路。",
+    "oneLineReview": "这是一个可操作但高时效、高风险、低方法论价值的订阅绕行帖。",
+    "primaryCategory": "AI工具订阅支付",
+    "rating": "D",
+    "rejectReason": "内容主要是短期可变的支付绕行经验，证据薄弱，存在合规与稳定性风险，方法论价值很低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "操作教程",
+      "经验分享"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章分享了用第三方虚拟预付Visa卡订阅Claude的具体步骤，强调国内Visa可用、当前0手续费，并补充了验证码、退款和封号相关的个人测试经验。但整体基于个人样本，证据有限，稳定性和合规风险较高。",
+    "tags": [
+      "Claude",
+      "订阅支付",
+      "虚拟Visa卡"
+    ],
+    "title": "国内订阅Claude最简单的方式，只需一张国内Visa卡，0手续费，5分钟搞定",
+    "totalScore": 33,
+    "url": "https://x.com/akokoi1/status/2033335986214854911"
+  },
+  "payloadHash": "sha256:b96598fdafb10169679cb46a0747ccc70d27ea9a09ff44fd3b3fdd471f24af09",
+  "refs": {},
+  "revisionId": "sha256:ca0ff065461c2f85d48d311c50deb3554d545b6eba4ed1b98649340239f7f3bf",
+  "schemaVersion": 1,
+  "updatedAt": 1773729381077
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1777855782080,
+  "entityType": "session",
+  "id": "1777855782080_pjy9esd9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为自己的项目编写或引入 CLAUDE.md，明确 AI 编程行为边界",
+      "在提示词中加入遇到歧义先询问、只修改目标代码、避免无需求抽象等规则"
+    ],
+    "archiveReason": "提供了约束 AI 编程行为的简洁原则，可作为编写 CLAUDE.md 或 Agent 行为规范的参考",
+    "classifiedAt": 1777877879869,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude代码约束提示词",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "LLM 编程常见问题包括不澄清需求、过度抽象、扩大修改范围和缺少验证目标",
+      "CLAUDE.md 可作为项目级行为规则文件，用于约束 Claude Code 的工作方式",
+      "有效的 AI 编程提示应鼓励先提问、最小实现、精准修改和测试驱动验证"
+    ],
+    "oneHighValuePoint": "提示词工程的核心不是给 AI 更多自由，而是通过明确边界约束其行为。",
+    "oneLineReview": "内容不深但实用，适合作为 AI 编程提示词边界设计的速览材料。",
+    "primaryCategory": "AI编程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留为提示词实践案例",
+    "secondaryCategories": [
+      "提示词工程",
+      "软件工程实践"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍一个登上 GitHub 热榜的 CLAUDE.md 文件，认为其通过先澄清、少抽象、精准修改、目标可验证四条原则，约束 LLM 编程时常见的自作主张和过度修改问题。",
+    "tags": [
+      "Claude Code",
+      "CLAUDE.md",
+      "AI编程规范",
+      "提示词边界",
+      "最小修改"
+    ],
+    "title": "沐阳: 一个 CLAUDE",
+    "totalScore": 63,
+    "url": "https://x.com/yyyole/status/2050921667128623457"
+  },
+  "payloadHash": "sha256:9efadb76c6ecf95a9662b908ee90844b65f7df6d65f88a2ceeb918ec24adb198",
+  "refs": {},
+  "revisionId": "sha256:e95d8be483ee19be047085f7795815762cf241b1c0a141c538ae1981baa24b65",
+  "schemaVersion": 1,
+  "updatedAt": 1777882570497
+}

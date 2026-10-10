@@ -1,0 +1,68 @@
+{
+  "createdAt": 1775546898572,
+  "entityType": "session",
+  "id": "1775546898572_44k8a4xu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尝试在Obsidian中建立一个最小可用LLM Wiki目录结构，并定义AGENTS.md或CLAUDE.md规则",
+      "选取一个持续积累的主题进行单源逐步摄入，验证摘要、交叉引用和知识更新流程"
+    ],
+    "archiveReason": "提出了可复用的LLM+Wiki知识沉淀框架，具备较强方法论价值和长期参考意义",
+    "classifiedAt": 1775558997933,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "LLM驱动个人知识库模式",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "gist.github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "用持久化Wiki替代纯RAG式问答，减少重复检索与重复综合",
+      "知识库架构分为原始资料层、Wiki层和Schema规则层",
+      "核心操作包括Ingest、Query和Lint，形成持续演化闭环",
+      "index.md和log.md分别承担内容导航与演化记录功能",
+      "Obsidian、qmd、Dataview、Marp等工具可增强实际工作流"
+    ],
+    "oneHighValuePoint": "最有价值的点是把LLM从“查询时临时检索”转变为“持续维护知识编译产物”，让知识沉淀真正具备复利效应。",
+    "oneLineReview": "这是一个方法论很强、落地路径清晰，但证据支撑仍偏概念化的高价值构想。",
+    "primaryCategory": "AI知识管理",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议长期保留，适合作为搭建个人或团队AI知识库的模式参考",
+    "secondaryCategories": [
+      "LLM应用方法",
+      "个人知识库"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出一种不同于传统RAG的知识管理方案：让LLM持续维护一个结构化、可演化的Markdown Wiki，在新资料进入时完成摘要、归档、交叉引用与矛盾更新，从而形成可累积的个人或团队知识库。",
+    "tags": [
+      "LLM",
+      "Obsidian",
+      "知识管理",
+      "Personal Wiki",
+      "RAG替代思路"
+    ],
+    "title": "llm-wiki",
+    "totalScore": 76,
+    "url": "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+  },
+  "payloadHash": "sha256:31a560759e9949deaba8bc0665562491acc032fc86ae5a3565fde0662390deb5",
+  "refs": {},
+  "revisionId": "sha256:073f6ed3ff5c37198f4765a2d1259757ccbcf3c5a9d05af6377206a412f25080",
+  "schemaVersion": 1,
+  "updatedAt": 1775559460926
+}

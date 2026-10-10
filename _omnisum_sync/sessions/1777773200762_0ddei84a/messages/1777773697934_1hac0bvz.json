@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777773697935,
+  "entityType": "message",
+  "id": "1777773697934_1hac0bvz",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Cursor SDK平台锁定之争\n\n**评级**: C (49.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI工具与Agent平台\n**次类别**: 开发者工具, 平台战略\n**标签**: #Cursor SDK #Agent Runtime #平台锁定 #AI编程 #云依赖\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 3 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一个有启发的行业观察，但证据和展开不足，只适合快速了解观点。\n**核心高价值点**: 模型层趋同后，sandbox、状态管理、重试、可观测性等 Agent Runtime 能力可能成为 AI 编程工具的真正壁垒。\n\n### 摘要\n文章指出 Cursor SDK 与 Anthropic、OpenAI Agent SDK 的差异在于必须使用 Cursor API key 并经过 Cursor 云，体现平台锁定或平台战略；其核心押注是模型商品化后，Agent Runtime 层成为差异化关键。\n\n### 知识要点\n- Cursor SDK 相比 Anthropic/OpenAI Agent SDK 更依赖 Cursor 云和 API key，存在平台锁定特征。\n- Agent Runtime 包含 sandbox、computer use、状态管理、重试逻辑、可观测性等工程能力，不只是 prompt 封装。\n- 如果基础模型持续商品化，AI 开发工具的竞争焦点可能从模型选择转向运行时和平台生态。\n\n### 行动项\n- 评估引入 Cursor SDK 时的云依赖、数据安全和供应商锁定风险。\n- 对比 Cursor、OpenAI、Anthropic Agent SDK 在本地运行能力、可观测性、状态管理和成本结构上的差异。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是短推观点，缺少详细论证、数据或案例，适合作为趋势信号而非系统性资料。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1777773697935,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:39204cde49b6ac33cca3a2adf4672a63bf2bf2981f76afbae0a59e12d2973dcd",
+  "refs": {
+    "sessionId": "1777773200762_0ddei84a"
+  },
+  "revisionId": "sha256:881f2e2e07d051d815d22f1cd938461422c9c0bb37351cd2b46fda605b01b684",
+  "schemaVersion": 1,
+  "updatedAt": 1777773697935
+}

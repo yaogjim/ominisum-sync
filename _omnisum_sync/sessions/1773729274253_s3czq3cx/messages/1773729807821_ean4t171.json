@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773729673735,
+  "entityType": "message",
+  "id": "1773729807821_ean4t171",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这段内容的主旨是：作者认为，`Agent` 不适合做成垂直细分产品，而应该做成通用能力平台；垂类产品更适合围绕 `Agent` 去提供具体应用和能力支持。\n\n- 先提出核心判断  \n  - 作者在和两位朋友交流后想明白：`垂类不要做 agent`。  \n  - 原因是 `agent` 天然更适合做成通用型能力，甚至像 `OS（操作系统）` 一样，服务不同场景。  \n\n- 接着说明垂类产品该怎么做  \n  - 垂直领域产品不应重复造一个 `agent`，而应转向“给 agent 做应用”。  \n  - 也就是说，垂类的价值在于：结合行业知识、场景流程和数据，去增强 `agent` 的能力。  \n  - 例如：法律、医疗、招聘这类垂类，更适合提供专业工具、流程模块或场景化服务，而不是各自做一个独立底层 agent。  \n\n- 最后给出能力演进路径  \n  - 最基础的是 `skill`：给 `agent` 提供可调用的技能。  \n  - 更高级一点：把业务逻辑封装在内部，帮 `agent` 少走步骤、少消耗 `token`。  \n  - 再高级一点：保存用户状态，也就是 `memory`，让 `agent` 能持续理解和记住用户。  \n\n- 关键信息提炼  \n  - 交流对象：`两个朋友`。  \n  - 核心观点：`agent 一定是通用的，或者类似于 os`。  \n  - 能力层级：`skill -> 封装逻辑省 token -> 保存状态（memory）`。  \n\n如果你愿意，我也可以把这段内容进一步整理成“适合发朋友圈/笔记”的一句话版或三句话版。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773729673735,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:dcffd83d442b33c6ba1f2f59be48637bda4cf1301eaa9bc46d38ca0468e51f10",
+  "refs": {
+    "sessionId": "1773729274253_s3czq3cx"
+  },
+  "revisionId": "sha256:7afa48de2ae412515490d427f5c4474771881f3973c74c2988c55d118c98ba49",
+  "schemaVersion": 1,
+  "updatedAt": 1773729673735
+}

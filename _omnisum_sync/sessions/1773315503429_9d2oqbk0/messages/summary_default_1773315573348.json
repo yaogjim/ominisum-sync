@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773315573348,
+  "entityType": "message",
+  "id": "summary_default_1773315573348",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "**精炼总结**：Lucid 是一个以 MCP 服务器形式提供的 “实时可验证知识层”，通过文档搜索、包版本检查、事实核验、API 参考四类工具与自动触发的 skills，让自治代理用最新权威来源回答问题、减少幻觉与过期信息。  \n\n**一句话评论**：把 “检索 + 核验” 做成标准化工具并由意图自动触发，比单纯 RAG 更贴近代理实际工作流。  \n\n**一句话高价值内容**：落地路径很清晰 —— 装插件与 skills、设置`LUCID_API_KEY`，即可让代理在写代码 / 查文档 / 选版本 / 做断言时优先调用`lucid_search_docs /lucid_check_package/lucid_verify_fact /lucid_fetch_api_ref`以保证回答以实时证据为准。",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1773315573348,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:39bd66c8b3c655d6639474156d95fde079b8c82ca2225b146feb25f77a1dacc0",
+  "refs": {
+    "sessionId": "1773315503429_9d2oqbk0"
+  },
+  "revisionId": "sha256:cfc738827f099ebba0592b5cd0c571917e783eaaf33a2c4ad610cd5d17b9d085",
+  "schemaVersion": 1,
+  "updatedAt": 1773315573348
+}

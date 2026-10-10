@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777901653815,
+  "entityType": "message",
+  "id": "1777901675645_lbi5vzuk",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# AI 抓取工具清单：按场景选工具，而不是靠记忆试错\n\n## 核心内容\n\n作者整理了一批自己用过的网页与数据抓取工具，主要用于给 Claude Code / AI Agent 配置外部信息获取能力。  \n这些工具覆盖网页抓取、社交平台、搜索、浏览器交互、JS 渲染、反爬、文档查询等场景。\n\n作者的核心观点是：**工具太多后，真正的问题不是有没有工具，而是 AI 面对一个链接或任务时该选哪个工具。**  \n解决方式是：**写一套路由规则，让 AI 根据任务类型自动选择合适工具。**\n\n---\n\n## 工具分类与适用场景\n\n### 1. 多平台结构化抓取\n\n- **opencli**  \n  适合抓取 50+ 平台的结构化数据。\n\n### 2. X / Twitter 数据\n\n- **xreach**  \n  适合读取推文、搜索内容、抓 timeline。\n- **6551 MCP**  \n  面向 X 数据与 Crypto 新闻场景。\n\n### 3. 通用网页读取\n\n- **Jina Reader**  \n  适合公开网页内容提取，偏轻量、通用。\n- **XCrawl**  \n  作为“终极兜底”方案，用于其他工具不好处理的网页。\n\n### 4. 浏览器与网页交互\n\n- **web-access**  \n  通过 CDP 直连 Chrome，适合日常浏览器级访问。\n- **Chrome MCP**  \n  通过 Chrome 扩展实现浏览器交互。\n- **Playwright MCP**  \n  适合需要 JS 渲染、页面自动化操作的场景。\n\n### 5. 反爬与复杂网页\n\n- **Scrapling**  \n  适合处理有反爬机制的网站。\n- **Apify**  \n  适合特定平台的深度爬取，也有现成抓取器生态。\n\n### 6. 搜索与文档查询\n\n- **Grok Bridge**  \n  用于 Grok 搜索能力接入。\n- **Context7**  \n  适合查询技术文档、上下文资料。\n\n---\n\n## 产品视角总结\n\n这条内容本质上不是简单的“工具推荐”，而是在讲 **AI Agent 的工具编排问题**：\n\n> 当工具数量变多，关键能力从“会调用工具”升级为“会选择工具”。\n\n对产品和 AI 应用设计来说，重点有三个：\n\n1. **按任务场景拆分工具能力**  \n   不同工具解决不同类型的信息获取问题。\n\n2. **建立工具路由规则**  \n   让 AI 根据链接类型、网站特征、是否需要登录、是否需要 JS 渲染等条件自动选工具。\n\n3. **保留兜底方案**  \n   当前置工具失败时，需要有浏览器交互、Playwright、Apify、XCrawl 等兜底路径。\n\n---\n\n## 一句话总结\n\n作者分享了一套 AI 抓网页/抓数据的工具栈，并指出真正高效的做法不是人工记住每个工具，而是让 AI 通过路由规则自动选择最合适的抓取工具。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777901653815,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d3b08537f37a3e53518734e33de7ccccf40bb9f0ec4e3e691ee0a4f1203b1e0f",
+  "refs": {
+    "sessionId": "1777901675354_dnhlu1v7"
+  },
+  "revisionId": "sha256:653b0e6271d88d6ededbffcb450d4a8dd3e837bbd0f0456c26407d1707ffd845",
+  "schemaVersion": 1,
+  "updatedAt": 1777901653815
+}

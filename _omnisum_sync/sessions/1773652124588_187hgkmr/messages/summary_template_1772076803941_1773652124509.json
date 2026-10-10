@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773652124509,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773652124509",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章主要介绍了`tui-studio`这个项目：它是一个类似 Figma 的可视化编辑器，用来设计终端界面（TUI）应用。核心价值在于：用户可以通过拖拽和可视化配置来搭建 TUI，并一键导出到多个主流框架。\n\n- **项目定位**\n  - `tui-studio`是一个 “终端 UI 可视化设计工具”，目标是降低 TUI 应用的设计和开发门槛。\n  - 它提供实时画布，用户像做界面设计一样搭建终端应用，而不是纯手写代码。\n\n- **核心功能**\n  - 支持可视化画布：组件可拖拽到画布中，并实时预览 ANSI 终端效果，还能调节缩放。\n  - 内置`20+`种 TUI 组件，包括`Screen`、`Box`、`Button`、`TextInput`、`Table`、`Tabs`、`Modal`、`Tooltip`等。\n  - 提供多种布局方式：`Absolute`、`Flexbox`、`Grid`，并可细调属性。\n  - 支持分层管理：有图层面板，可拖动排序、切换显示 / 隐藏、锁定和重命名组件。\n  - 提供属性面板，可直接编辑布局、样式和组件专属属性。\n  - 支持完整的撤销 / 重做历史记录。\n\n- **主题与界面体验**\n  - 内置多套颜色主题，如`Dracula`、`Nord`、`Solarized Dark/Light`、`Monokai`、`Gruvbox`、`Tokyo Night`、`Nightfox`、`Sonokai`，且能实时刷新画布效果。\n  - 编辑器本身支持深色 / 浅色模式切换，并且会跨会话保存。\n  - 支持渐变背景，可设置线性渐变角度和多个颜色点，并以贴近真实 ANSI 终端输出的字符带形式渲染。\n\n- **效率工具与操作方式**\n  - 提供命令面板，可通过`Cmd/Ctrl+P`快速创建组件、切换主题和切换深浅模式。\n  - 常用快捷键完整，例如：\n    - 保存：`Cmd/Ctrl+S`\n    - 打开：`Cmd/Ctrl+O`\n    - 导出：`Cmd/Ctrl+E`\n    - 撤销：`Cmd/Ctrl+Z`\n    - 重做：`Cmd/Ctrl+Shift+Z`或`Cmd/Ctrl+Y`\n  - 还支持组件快捷键，例如按`b`快速创建`Button`，按`t`创建`Tabs`，按`l`创建`List`。\n\n- **保存、导出与兼容性**\n  - 项目文件保存为`.tui`格式，本质是 JSON，包含版本、项目元数据、主题和组件树等信息。\n  - 支持多框架导出，覆盖多种语言生态：\n    - `Ink`：TypeScript / React\n    - `BubbleTea`：Go\n    - `Blessed`：JavaScript\n    - `Textual`：Python\n    - `OpenTUI`：TypeScript\n    - `Tview`：Go\n  - 保存 / 加载可通过原生系统文件选择器或浏览器下载方式完成，兼容不同浏览器。\n\n- **快速开始与技术栈**\n  - 启动方式很直接：`git clone`后执行`npm install`、`npm run dev`，再打开`http://localhost:5173`。\n  - 技术栈包括：\n    - `React 19`\n    - `TypeScript 5.8`\n    - `Vite 7`\n    - `Zustand 5`\n    - `Tailwind CSS`\n    - `Lucide React`\n  - 常用命令有`npm run dev`、`npm run build`、`npm run lint`、`npm run preview`。\n\n- **项目现状**\n  - 仓库显示共有`132`次提交。\n  - 代码语言占比以`TypeScript 97.0%`为主，`JavaScript 2.5%`，其余`0.5%`。\n  - 目前 “未发布正式 Release，也没有发布 Packages”。\n  - 作者还特别说明：自己主要是设计师，代码大多由 Claude 辅助完成。\n\n一个直观例子是：如果你想设计一个带`Tabs`、`List`、`Button`和`Modal`的终端工具界面，不需要从零写布局代码，可以先在画布里拖出来、调样式和主题，再导出成`BubbleTea`或`Ink`代码继续开发。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1773652124509,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:69a65382b26b2a8c635dfc38bd6baf6ed44259535d1ebc0807fbb51cd9ab5ed0",
+  "refs": {
+    "sessionId": "1773652124588_187hgkmr"
+  },
+  "revisionId": "sha256:87d357ea1e172e66e57ea0c22d3d79c32ca4b562c0d7264da35c80ea36a163d4",
+  "schemaVersion": 1,
+  "updatedAt": 1773652124509
+}

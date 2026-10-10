@@ -1,0 +1,70 @@
+{
+  "createdAt": 1780307354962,
+  "entityType": "session",
+  "id": "1780307354962_oy9ffkn2",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如有合法自动化测试需求，可先在隔离环境用 docker run --rm cloakhq/cloakbrowser cloaktest 验证基础能力。",
+      "评估使用场景的法律、平台条款和伦理边界，避免用于未授权爬取、账号滥用或绕过访问控制。",
+      "若实际使用，优先记录目标站点的检测失败原因，并按文档逐项验证代理、geoip、headless、humanize、字体和持久化 profile 配置。",
+      "不要直接相信 README 中的通过率结论，应建立自己的检测基准和复现实验。"
+    ],
+    "archiveReason": "包含安装、API调用、Docker部署、指纹配置和排障方法，若涉及浏览器自动化或反检测研究可作为工具文档参考。",
+    "classifiedAt": 1780307579651,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "CloakBrowser隐身浏览器指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "CloakBrowser 可作为 Playwright/Puppeteer 的 drop-in replacement，通过自定义 Chromium 二进制实现反指纹能力。",
+      "关键配置包括住宅代理、geoip=True、headless=False、humanize=True、固定 fingerprint seed 和持久化 profile。",
+      "文档覆盖 canvas、WebGL、audio、fonts、WebRTC、TLS/CDP 信号、存储配额、Widevine、字体环境等多类检测面。",
+      "项目提供 Python、TypeScript、Docker、CDP 远程连接、持久化上下文和多框架集成示例。",
+      "测试结果和对比表较丰富，但多数为项目方自证，缺少独立复现数据。"
+    ],
+    "oneHighValuePoint": "通过源码级 Chromium 补丁而非 JS 注入来降低自动化指纹暴露，并保持 Playwright/Puppeteer 近似原生 API。",
+    "oneLineReview": "高可操作性的工具文档，但证据主要来自项目自述，且应用场景存在明显合规风险。",
+    "primaryCategory": "技术/浏览器自动化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后按需保留",
+    "secondaryCategories": [
+      "反检测浏览器",
+      "Playwright/Puppeteer工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章是 CloakBrowser 的 GitHub README，介绍其基于源码级 Chromium 指纹补丁的隐身浏览器能力，并提供 Python/JS 安装、Playwright/Puppeteer 替换、代理、geoip、humanize、Docker 和排障配置。",
+    "tags": [
+      "Chromium",
+      "Playwright",
+      "反指纹",
+      "自动化测试",
+      "爬虫工具"
+    ],
+    "title": "CloakHQ/CloakBrowser: Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.",
+    "totalScore": 64.5,
+    "url": "https://github.com/CloakHQ/CloakBrowser"
+  },
+  "payloadHash": "sha256:78fffd50bdb656e98522e7881165f9ad12e639b32e4848ce06ac6f8fbbcd3a23",
+  "refs": {},
+  "revisionId": "sha256:04ef095fa6126fd6c3ba836a66ab943c5da6229694b82dc3a924bfad1e1709ea",
+  "schemaVersion": 1,
+  "updatedAt": 1780307961543
+}

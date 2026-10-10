@@ -1,0 +1,65 @@
+{
+  "createdAt": 1774227660154,
+  "entityType": "session",
+  "id": "1774227660154_r9pu3r4o",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需了解该议题，优先查阅路透社或官方采购文件等一手来源",
+      "不要基于该推文形成判断，可仅将其作为后续检索线索"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774227678610,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 1,
+      "novelty": 4,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "推文称Palantir成美军AI核心",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "证据质量低，原文信息量有限，依赖二手转述与评论区猜测，难以作为可靠学习或决策依据。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Palantir被舆论视为美国军事AI基础设施的重要参与者",
+      "社交媒体对军事AI新闻常混杂一手报道、二手转述与未经证实的推断"
+    ],
+    "oneHighValuePoint": "唯一较有价值的点是提示了AI系统正加速进入国防指挥与目标处理链条，值得后续追踪一手报道。",
+    "oneLineReview": "话题吸睛但信息贫乏，属于高争议低证据密度的社交媒体噪声。",
+    "primaryCategory": "AI军事应用舆情",
+    "rating": "D",
+    "rejectReason": "内容主要是社交媒体转述和情绪化判断，信息源混杂，缺乏系统论证、方法框架与可执行结论。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "国防科技",
+      "社交媒体转述"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一条关于Palantir与Claude被用于军事目标识别和打击的X平台转述帖，核心内容来自对路透社报道的再加工，并夹杂大量情绪化延伸和评论区猜测，可信度与方法价值都较弱。",
+    "tags": [
+      "Palantir",
+      "Claude",
+      "五角大楼",
+      "军事AI",
+      "X推文"
+    ],
+    "title": "shirish: Palantir AI + Claude was used to detect, prioritize, and strike over 1,000 targe…",
+    "totalScore": 25,
+    "url": "https://x.com/shiri_shh/status/2035762040879644774"
+  },
+  "payloadHash": "sha256:7bff2151abf2aabe14da3acc0345ac8de89cbdb3f900c3b0bca31d3b3a4cf10f",
+  "refs": {},
+  "revisionId": "sha256:1658dc4d2e316478490d60260a54e19b8a8181b2c02b359e6f5d39029dd03d1d",
+  "schemaVersion": 1,
+  "updatedAt": 1774236576013
+}

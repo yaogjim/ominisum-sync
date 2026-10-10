@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777877960710,
+  "entityType": "message",
+  "id": "1777877960709_an9oi9no",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Codex Pet Skill工程解析\n\n**评级**: A (83.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI Agent工程\n**次类别**: Codex Skills, 工作流编排, 生成式AI工程化\n**标签**: #Codex #Skills #Agent工程 #Manifest #Provenance #QA #子代理 #工作流\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 9 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 9 | 15% |\n| 可迁移性 | 9 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 9 | 10% |\n\n**一句话点评**: 这不是宠物生成教程，而是一篇有较强方法论价值的 Agent 工程化案例拆解。\n**核心高价值点**: 将模型输出视为生产材料，而不是可信成果；通过 manifest、provenance、确定性编译、QA 和局部修复形成可控提交链路。\n\n### 摘要\n文章以 Codex hatch-pet skill 为案例，分析真正高价值 Skill 如何通过 manifest、确定性脚本、资产协议、子代理分工、provenance、QA 和局部修复，把不可控模型生成纳入可验证工程流水线。\n\n### 知识要点\n- 成熟 Skill 不应只是 prompt 包，而应封装领域协议、执行边界、工具链、验收标准和修复策略。\n- imagegen-jobs.json 作为外部 manifest，可记录任务依赖、输入输出、生成方式、hash、来源和完成状态，避免长任务状态只存在于上下文中。\n- 子代理适合并行生成候选，但 manifest、record、finalize、package 等真值提交权应由父代理集中控制。\n- QA 应区分结构正确性和语义正确性，脚本验证尺寸、透明、hash 等，视觉一致性仍需人工或模型检查。\n- repair workflow 的核心是最小失败范围修复，而不是整体重试，能降低成本和漂移风险。\n\n### 行动项\n- 参考 hatch-pet 的结构，为自己的 Agent Skill 设计 SKILL.md、references、scripts 和 manifest。\n- 在复杂 Agent 工作流中引入外部任务清单，记录依赖、状态、来源、hash 和可恢复信息。\n- 将多代理架构拆分为 control plane 与 worker plane，限制子代理写权限。\n- 为生成式任务建立结构 QA 与语义 QA 两层验收机制。\n- 将失败处理从简单 retry 改造成基于最小失败范围的 repair 流程。\n\n### 存档判定\n归档: 是 — 原因: 文章系统拆解了 hatch-pet skill 的目录结构、资产协议、任务 manifest、子代理边界、溯源、QA 与修复流程，对理解可控 Agent 生产系统有较高参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1777877960710,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:374761d6424ae4bb7ada55c2ac56b29a9a808277437ca3a5af9d64a2e38288a7",
+  "refs": {
+    "sessionId": "1777855838051_7r8imuzt"
+  },
+  "revisionId": "sha256:5e83f664d84f7c6b11983470ab249a728b64c4627c68aa794d1a972346efcfd4",
+  "schemaVersion": 1,
+  "updatedAt": 1777877960710
+}

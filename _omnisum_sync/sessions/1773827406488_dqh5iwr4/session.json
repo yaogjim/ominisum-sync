@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773827406488,
+  "entityType": "session",
+  "id": "1773827406488_dqh5iwr4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在做本地 LLM 微调或推理，可按 Quickstart 在测试环境快速安装并验证工作流",
+      "将其与现有方案如 Ollama、LM Studio、vLLM 或手写训练脚本对比，评估是否值得纳入工具链"
+    ],
+    "archiveReason": "包含产品能力边界、安装方式、支持平台与工作流概览，后续评估本地微调工具时可复用",
+    "classifiedAt": 1773827419418,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Unsloth Studio发布介绍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "unsloth.ai",
+    "favicon": "https://unsloth.ai/docs/~gitbook/image?url=https%3A%2F%2F2815821428-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Forganizations%252FHpyELzcNe0topgVLGCZY%252Fsites%252Fsite_mXXTe%252Ficon%252FUdYqQdRpLXMz6O8ejTLD%252Funsloth%2520sticker.png%3Falt%3Dmedia%26token%3D2a5ba961-51cb-4094-8545-6eb20ad1e06e&width=48&height=48&sign=4a2dca42&sv=2",
+    "knowledgePoints": [
+      "Unsloth Studio 支持本地运行、训练和导出 GGUF 与 safetensor 模型",
+      "可从 PDF、CSV、JSON、DOCX、TXT 自动生成训练数据，并支持 YAML 配置导入",
+      "当前重点支持 NVIDIA GPU，Mac 和 CPU 主要用于聊天推理，MLX/AMD/Intel 支持仍在推进"
+    ],
+    "oneHighValuePoint": "把本地模型训练、数据处理、推理对比和导出整合进统一界面，显著降低了非工程用户的上手门槛。",
+    "oneLineReview": "这是一篇偏产品发布与使用说明的文档，实用性尚可，但方法论和证据支撑偏弱。",
+    "primaryCategory": "AI工程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为工具选型与安装上手资料",
+    "secondaryCategories": [
+      "模型微调",
+      "本地推理部署"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了 Unsloth Studio 这一开源本地化无代码界面，覆盖模型训练、推理、数据集生成、导出与对比评测等功能，并提供安装方式、平台支持、工作流说明和常见问题解答。",
+    "tags": [
+      "Unsloth",
+      "LLM微调",
+      "本地AI",
+      "无代码工具",
+      "模型导出"
+    ],
+    "title": "Introducing Unsloth Studio | Unsloth Documentation",
+    "totalScore": 57.5,
+    "url": "https://unsloth.ai/docs/new/studio"
+  },
+  "payloadHash": "sha256:e2f6f4049b20edf0e83823755c50682a918e158bb2918d53e4b6acbf54f9dfcc",
+  "refs": {},
+  "revisionId": "sha256:eff19f31e31f0a7e5514a7e373779219a4a5b00c797a515c6c8c1768038a600b",
+  "schemaVersion": 1,
+  "updatedAt": 1773828150241
+}

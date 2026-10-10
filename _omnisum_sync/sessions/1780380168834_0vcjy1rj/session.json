@@ -1,0 +1,65 @@
+{
+  "createdAt": 1780380168834,
+  "entityType": "session",
+  "id": "1780380168834_0vcjy1rj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理一个目标企业中的高频重复业务流程，并拆分为可调用工具。",
+      "在设计Agent前先明确输入数据、输出标准、异常处理人与兜底机制。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780380948153,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 3,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "ToB AI落地形态观点",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量较低，核心观点可一句话概括，证据质量弱，不值得长期保存。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "ToB AI的价值来自接入业务流程并执行具体任务，而非仅提供对话能力。",
+      "业务抽象前需要先明确任务边界、数据口径和异常处理责任。",
+      "更稳妥的落地方式是先选择报价、线索清洗、工单分派等高频流程跑通。"
+    ],
+    "oneHighValuePoint": "ToB AI落地的核心不是做聊天界面，而是把真实业务流程抽象为AI可调用、可执行的工具。",
+    "oneLineReview": "有一个值得注意的ToB AI落地方向，但整体更像口号而非成体系方法。",
+    "primaryCategory": "AI产品与ToB软件",
+    "rating": "D",
+    "rejectReason": "内容主要是观点表达，缺少案例、数据和完整论证，方法论展开不足。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent应用",
+      "业务流程自动化"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章认为ToB AI软件的关键形态是把企业业务抽象为工具调用，让AI真正执行任务。评论补充指出，落地前需先处理任务边界、数据口径、异常责任等基础流程问题。",
+    "tags": [
+      "ToB AI",
+      "工具调用",
+      "业务抽象",
+      "Agent落地"
+    ],
+    "title": "赵纯想: 这就是所有 ToB AI 软件的最终形态，只要不是这样，就肯定设计错了",
+    "totalScore": 35.5,
+    "url": "https://x.com/chunxiangai/status/2059508804493119704"
+  },
+  "payloadHash": "sha256:49f833d622c853df8385ace58b399209d7fd090a290814a35390650daf44579c",
+  "refs": {},
+  "revisionId": "sha256:7b49484699afa358111d53b3eef72637e12876fb1151d1f2c7578fd582314f1e",
+  "schemaVersion": 1,
+  "updatedAt": 1780380948639
+}

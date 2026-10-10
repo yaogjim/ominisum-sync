@@ -1,0 +1,65 @@
+{
+  "createdAt": 1780891640675,
+  "entityType": "session",
+  "id": "1780891640675_i1jno0zx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注硬件供应链，可记录其观察方法而非保存原帖。",
+      "若需验证该推测，应收集各 SKU、batch、发货时间的结构化数据进行对比。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780892231628,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 2,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 4,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Pebble产线发货推测",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息时效性强且证据不足，除非正在跟踪 Pebble Time 2 发货或硬件产线，否则无长期保留价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "单条总装线在多 SKU 生产时可能导致不同 SKU 发货节奏不均。",
+      "发货脉冲和跨 batch 现象可能与产线切换、夜间维护或停运切线有关。"
+    ],
+    "oneHighValuePoint": "通过发货节奏反推产线配置和 SKU 切换机制，是一个可借鉴的观察角度。",
+    "oneLineReview": "一个有趣但证据薄弱的供应链运营猜测，适合速览不值得保留。",
+    "primaryCategory": "硬件供应链观察",
+    "rating": "D",
+    "rejectReason": "内容极短，主要是基于社区发货贴的个人推测，缺少数据、案例和可复用分析过程，参考价值有限。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "生产运营",
+      "社区信息分析"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "作者根据一周内 Pebble subreddit 的发货追踪贴，推测 Pebble Time 2 可能只有一条表体总装线，且不同 SKU 需切线生产，从而解释跨批次发货脉冲和彩色 SKU 发货较慢的现象。",
+    "tags": [
+      "Pebble",
+      "产线",
+      "SKU",
+      "发货节奏",
+      "供应链推测"
+    ],
+    "title": "x.com/Carlos_Gong/status/2063623835891728710",
+    "totalScore": 32.5,
+    "url": "https://x.com/Carlos_Gong/status/2063623835891728710"
+  },
+  "payloadHash": "sha256:47e154a719719909a4a57850edc20b451b254c3b686e5ad964bbb32cba8375dd",
+  "refs": {},
+  "revisionId": "sha256:48f85930ee41f8a92ede084b92efabb114a7c4b718a728ccd574ed21ebc7fafc",
+  "schemaVersion": 1,
+  "updatedAt": 1780892231886
+}

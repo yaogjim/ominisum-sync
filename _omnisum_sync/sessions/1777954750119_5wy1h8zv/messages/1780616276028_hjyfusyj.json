@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780616276029,
+  "entityType": "message",
+  "id": "1780616276028_hjyfusyj",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 浏览器自动化追踪工具指南\n\n**评级**: A (70分)  |  **深度阅读**: 可选  |  **建议操作**: 精读\n\n**主类别**: 浏览器自动化调试\n**次类别**: 可观测性, 开发工具\n**标签**: #CDP #Browserbase #自动化调试 #浏览器追踪 #Playwright\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 这是一篇高可操作性的工具文档，适合浏览器自动化调试场景，但方法论和证据支撑相对有限。\n**核心高价值点**: 通过第二个只读 CDP 客户端无侵入地附加到已有自动化会话，实现中途追踪和事后分析。\n\n### 摘要\n文章介绍 browser-trace 工具的用途、安装、工作机制和本地及 Browserbase 远程使用流程。它通过只读 CDP 客户端记录浏览器事件、截图和 DOM 快照，并提供切分、查询和排障方法。\n\n### 知识要点\n- Chrome DevTools Protocol 支持多个并发客户端，可用一个只读客户端旁路采集事件而不干扰主自动化流程。\n- browser-trace 会将 CDP firehose、截图、DOM 快照按时间和页面导航边界切分，便于定位网络、控制台、运行时和页面事件问题。\n- Browserbase 远程会话需要 keep-alive，并注意主自动化客户端与 tracer 的连接顺序，否则会话可能提前结束。\n- 通过 query.mjs、jq 和目录化 JSONL 文件可以快速分析失败请求、控制台错误、页面跳转和特定主机请求。\n\n### 行动项\n- 在需要排查浏览器自动化失败时，按文档启动 browser-trace 并保留 cdp/raw.ndjson、screenshots 和 dom 快照。\n- 为常见排障场景整理 jq 查询模板，例如失败请求、4xx/5xx 响应、console error 和页面导航序列。\n- 如果使用 Browserbase，优先使用 bb-capture.mjs 创建 keep-alive 会话并在结束后运行 bb-finalize.mjs 拉取平台侧 artifacts。\n\n### 存档判定\n归档: 是 — 原因: 包含完整安装、运行、目录结构、查询命令、最佳实践和故障排查流程，可作为实操手册复用。\n删除: 否\n留存决策: 适合归档为浏览器自动化调试参考文档，实际需要排查 CDP、Browserbase 或自动化运行问题时再重点查阅。",
+    "role": "assistant",
+    "timestamp": 1780616276029,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:a631ec7d22ce36901b3bb2aa26eb5c13e802555f10d0d035b0458f394d27887f",
+  "refs": {
+    "sessionId": "1777954750119_5wy1h8zv"
+  },
+  "revisionId": "sha256:974a71c9517ad72b1084eb39c20a63ff39b9cca2add7b1d856757e75b7565d72",
+  "schemaVersion": 1,
+  "updatedAt": 1780616276029
+}

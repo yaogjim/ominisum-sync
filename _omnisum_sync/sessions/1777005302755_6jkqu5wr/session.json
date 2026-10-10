@@ -1,0 +1,76 @@
+{
+  "createdAt": 1777005302755,
+  "entityType": "session",
+  "id": "1777005302755_6jkqu5wr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审视当前团队的代码生成与PR审查预算比例，优先优化审查而非盲目追求更多生成token",
+      "评估是否需要引入可复现实验平台，将数据处理、训练、上线统一到同一工作流中",
+      "在可度量优化任务中尝试Auto Research式闭环，而不是仅停留在手工参数搜索",
+      "检查现有CI/CD是否已成为AI辅助开发后的吞吐瓶颈，尤其关注测试失败、回滚和合并冲突",
+      "对低延迟或长上下文业务，考虑评估非Transformer或蒸馏模型的实际性价比"
+    ],
+    "archiveReason": "内容覆盖AI研发流程、ML工作流、自动化实验、仿真评估与模型选型，适合反复参考团队级AI工程实践。",
+    "classifiedAt": 1777005590821,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "Shopify谈AI工程栈演进",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/f5d14552/img/favicon_32x32.png",
+    "knowledgePoints": [
+      "Token消耗不是核心指标，关键是高质量模型之间的批判回路与审查预算配置",
+      "AI提升产出后，PR数量、测试失败率与部署回滚会成为新的系统级瓶颈",
+      "Tangle通过内容哈希、可复现执行和实验复用解决ML工作流中的数字考古问题",
+      "Tangent把Auto Research嵌入实验平台，可在明确目标函数下自动迭代优化",
+      "SimGym依赖历史行为数据与浏览器级仿真，提高电商场景下改版预测与转化建议的可信度",
+      "Liquid等非Transformer架构在低延迟、小模型、长上下文和蒸馏场景中具备工程优势"
+    ],
+    "oneHighValuePoint": "最有价值的观点是：AI时代真正的瓶颈不再是代码生成，而是高质量PR审查、CI/CD稳定性和可复现实验系统。",
+    "oneLineReview": "一篇偏战略与方法论的AI工程访谈，洞见强于证据，适合做方向判断与架构启发。",
+    "primaryCategory": "AI工程与研发效能",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "ML基础设施",
+      "DevOps/CI/CD",
+      "产品化AI应用"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一场围绕Shopify AI工程体系的高密度访谈，重点讨论AI时代CI/CD与PR审查的新瓶颈、可复现实验平台Tangle、自动研究系统Tangent、客户仿真SimGym，以及Liquid等非Transformer模型在真实业务中的应用。",
+    "tags": [
+      "Shopify",
+      "AI Coding",
+      "PR Review",
+      "Tangle",
+      "Auto Research",
+      "SimGym",
+      "ML Infra",
+      "Liquid AI"
+    ],
+    "title": "CI/CD Breaks at AI Speed: Tangle, Graphite Stacks, Pro-Model PR Review — Mikhail Parakhin, Shopify - YouTube",
+    "totalScore": 71,
+    "url": "https://www.youtube.com/watch?v=RrkGoX3Cw7o"
+  },
+  "payloadHash": "sha256:36727ded143764dfc06ba19d6fd2b9ba5562126bd717358ba80c948738261b07",
+  "refs": {},
+  "revisionId": "sha256:1161e103953badaebe06adb360a8eed87fb11e82b9d89faba2571b1d7850977b",
+  "schemaVersion": 1,
+  "updatedAt": 1777006000032
+}

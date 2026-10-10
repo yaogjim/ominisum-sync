@@ -1,0 +1,15 @@
+{
+  "createdAt": 1780308517951,
+  "entityType": "session-content",
+  "id": "1780308517951_0bhwbxvi",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>凡高</strong></header><div class=\"tw-body\">我又发现了Codex里面的一个新玩法，Subagents就是多智能体去进行协作。<br><br>可以在Codex的对话框里去创建多个子智能体去进行分工协作，最后再进行合并，每个子智能体都能单独的去负责一个板块的内容。<br><br>想要开启子智能体的话也很方便，只需要在对话框里说<让多个 Subagents 并行协作处理这个任务>就会自动创建好多个子智能体了。<br><br>后悔没早点发现这个玩法，之前做项目都是一步步的来，当然这个消耗的额度也很快，GPT Plus用户不太建议这么玩，因为一下子就用完额度了。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HJP0gBnaIAA3tL7?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Ray Wang</strong> <span class=\"tw-eng\">♥ 1.1K · 💬 71</span><p>low-energy outfit<br><br>这个剪辑好有意思</p></div><div class=\"tw-reply\"><strong>@GIZIYE</strong> <span class=\"tw-eng\">♥ 4 · 💬 0</span><p>错误的，TOKEN越少越要用这个功能，因为你可以让主线程对任务进行拆解，再根据复杂程度派发给不同智能程度的agent，远比你一直用一个agent省token，还省了大把记忆空间。</p></div><div class=\"tw-reply\"><strong>@阿里嘎多美羊羊桑</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>都是实操和要点啊 最喜欢这个有真东西的  博主~</p></div><div class=\"tw-reply\"><strong>@memory</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>这个功能挺实用的，复制粘贴都能省不少时间。</p></div><div class=\"tw-reply\"><strong>@Kriswillwin</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>最近发现在 Codex 用 subagent 总是差点意思，然后就去读了 @OpenAI 官方的文章，参照文章里的用法配置好了全局的 agent.md，效果好了不止一个档次，顺手做成了 skills：<br>https://<br>github.com/Kris77z/codex-<br>subagents-optimizer<br>…<br><br>尤其最近 codex 上下文很容爆（5.5 medium/xhigh），一爆就是超长等待，在合适的时机派发 subagent</p></div></div>",
+    "pageContent": "凡高: 我又发现了Codex里面的一个新玩法，Subagents就是多智能体去进行协作。 可以在Codex的对话框里去创建多个子智能体去进行分工协作，最后再进行合并，每个子智能体都能单独的去负责一个板块的内容。 想要开启子智能体的话也很方便，只需要在对话框里说<让多个 Subagents 并行协作处理这个任务>就会自动创建好多个子智能体了。 后悔没早点发现这个玩法，之前做项目都是一步步的来，当然这个消耗的额度也很快，GPT Plus用户不太建议这么玩，因为一下子就用完额度了。\n![图片](https://pbs.twimg.com/media/HJP0gBnaIAA3tL7?format=jpg&name=large)\n---\n热门回复 (共 5 条):\n@Ray Wang (♥ 1.1K · 💬 71):\nlow-energy outfit\n\n这个剪辑好有意思\n\n@GIZIYE (♥ 4 · 💬 0):\n错误的，TOKEN越少越要用这个功能，因为你可以让主线程对任务进行拆解，再根据复杂程度派发给不同智能程度的agent，远比你一直用一个agent省token，还省了大把记忆空间。\n\n@阿里嘎多美羊羊桑 (♥ 1 · 💬 1):\n都是实操和要点啊 最喜欢这个有真东西的  博主~\n\n@memory (♥ 1 · 💬 1):\n这个功能挺实用的，复制粘贴都能省不少时间。\n\n@Kriswillwin (♥ 1 · 💬 0):\n最近发现在 Codex 用 subagent 总是差点意思，然后就去读了 @OpenAI 官方的文章，参照文章里的用法配置好了全局的 agent.md，效果好了不止一个档次，顺手做成了 skills：\nhttps://\ngithub.com/Kris77z/codex-\nsubagents-optimizer\n…\n\n尤其最近 codex 上下文很容爆（5.5 medium/xhigh），一爆就是超长等待，在合适的时机派发 subagent\n"
+  },
+  "payloadHash": "sha256:d375c7a10aa1c6b6469f844d3fd4b5cae0210990fb3db9fc10b697a83b6f934f",
+  "refs": {},
+  "revisionId": "sha256:c612a7bd88e481775129bca394f96b504a374921f40cfa81c5ba0292dea770c2",
+  "schemaVersion": 1,
+  "updatedAt": 1780308628980
+}

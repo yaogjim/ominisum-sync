@@ -1,0 +1,19 @@
+{
+  "createdAt": 1776403203602,
+  "entityType": "message",
+  "id": "1776403203601_4jadttsj",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude上下文管理启示\n\n**评级**: B (60.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工具使用方法\n**次类别**: 大模型上下文管理, 编程工作流\n**标签**: #Claude Code #Context Rot #长上下文 #会话管理 #AI编程\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 有启发、有操作性，但更像高质量经验帖而非证据充分的方法论文章。\n**核心高价值点**: 把每次模型输出后的后续动作视为一个会话管理决策点，而不是默认持续Continue。\n\n### 摘要\n文章围绕Claude Code的长上下文使用误区展开，强调真正影响长任务成功率的不是窗口更大，而是主动管理会话，包括Continue、Rewind、/clear、/compact、Subagent等策略，并提出根据token阈值主动清理上下文的实践建议。\n\n### 知识要点\n- 长上下文并不天然提升效果，随着token增长模型表现可能衰减\n- Rewind、/clear、/compact、Subagent等操作本质上是在控制上下文污染\n- 可通过观察自身token使用曲线来寻找任务中的Context Rot阈值\n\n### 行动项\n- 在Claude Code长任务中建立里程碑节点，避免无脑连续Continue\n- 用`/usage`观察token消耗并记录模型开始变差的阈值\n- 在任务阶段切换时主动使用`/compact`或`/clear`清理上下文\n- 把独立脏活拆给Subagent，减少主会话上下文污染\n\n### 存档判定\n归档: 是 — 原因: 提供了可直接尝试的上下文管理操作建议，对Claude Code用户有现实参考价值\n不推荐: 论证主要依赖观点表达和个体经验，缺乏系统数据与原始材料展开，不足以作为高可信深度资料\n删除: 否\n留存决策: 短期参考后可保留，适合作为AI编程会话管理的经验贴收藏",
+    "role": "assistant",
+    "timestamp": 1776403203602,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:d962507371cd29094cee8325990c6726acd9b516709275332150d8b63e77fe06",
+  "refs": {
+    "sessionId": "1776399369351_drq3iss5"
+  },
+  "revisionId": "sha256:9beafa409fedf75566787cfc29bb6e4b1b9d6e6f818ff27f507be8a027758907",
+  "schemaVersion": 1,
+  "updatedAt": 1776403203602
+}

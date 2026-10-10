@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773653830010,
+  "entityType": "session",
+  "id": "1773653830010_wg8ioups",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "复用其三阶段抓取流程到其他 SvelteKit 或 SSR 驱动的网站做接口发现",
+      "结合自己的目标站点补充响应样本、字段说明与稳定性验证，提高证据质量"
+    ],
+    "archiveReason": "包含完整的抓取链路、环境配置和端点归纳，对后续类似站点逆向有复用价值",
+    "classifiedAt": 1773829411689,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 5,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "StockAnalysis接口逆向抓取",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "可通过 Playwright 注入浏览器 Cookie 来模拟认证态并捕获真实网络请求",
+      "SvelteKit 应用的数据来源可能主要是 SSR 与 __data.json，而非传统 REST API",
+      "抓取流程可拆为请求采集、路径归一化、动态参数占位替换与文档生成"
+    ],
+    "oneHighValuePoint": "明确区分了真正运行时调用的 /api/ 端点与由 SvelteKit SSR 和 __data.json 提供的数据路径，避免在逆向时误判接口层。",
+    "oneLineReview": "一份偏实战的接口逆向仓库说明，方法清晰、可复用，但更像工具说明而非高置信研究成果。",
+    "primaryCategory": "数据抓取与接口逆向",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为接口发现与抓取流程模板",
+    "secondaryCategories": [
+      "金融数据工具",
+      "SvelteKit站点分析"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一个针对 stockanalysis.com 的 API 抓取与逆向文档型仓库，说明如何通过 Playwright 模拟登录态、抓取运行时请求、解析 SvelteKit 的 __data.json，并生成接口文档，实操性较强但证据与结果验证仍有限。",
+    "tags": [
+      "API逆向",
+      "Playwright",
+      "股票数据",
+      "SvelteKit",
+      "Python"
+    ],
+    "title": "haskaomni/stockanalysis: stockanalysis.com API crawler & reverse-engineered API docs",
+    "totalScore": 65.5,
+    "url": "https://github.com/haskaomni/stockanalysis"
+  },
+  "payloadHash": "sha256:1af6793d6e646ce3c71c1241b3abc53057298b8ae330cc1e805e2fa980f91d1a",
+  "refs": {},
+  "revisionId": "sha256:8fb61d22be61994de69f7605e70f3d357f49dee2ebcf4d2ec74087b9dadaadaa",
+  "schemaVersion": 1,
+  "updatedAt": 1773829411692
+}

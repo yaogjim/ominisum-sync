@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780387580274,
+  "entityType": "message",
+  "id": "1780387607562_hn0fl70j",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 总结\n\nPerplexity 提出 **Search as Code（SaC）**：  \n让 AI 不再一次次用 `function calling` 调搜索 API，而是 **直接写 Python 代码，在沙箱里编排搜索流程**。\n\n核心变化：\n\n> 从「LLM 调搜索」变成「LLM 写代码组织搜索」。\n\n它解决的问题：\n\n- 多次搜索时，function calling 太慢，容易变成串行瓶颈\n- 搜索结果粗糙，浪费 token\n- 中间过程塞进上下文，污染模型判断\n- 复杂任务需要并行、去重、过滤、验证，传统 API 不够灵活\n\nSaC 的架构：\n\n1. **模型层**：理解任务，生成搜索代码  \n2. **沙箱层**：安全执行代码，负责并行、过滤、聚合  \n3. **SDK 层**：提供搜索、排序、过滤等原子能力  \n\n案例中，SaC 在 CVE 漏洞检索任务里：\n\n- 准确率：**100%**\n- Token 消耗降低：**85.1%**\n- 多项基准测试表现领先\n\n---\n\n# 解读\n\n传统搜索像这样：\n\n> AI 问一次 → 搜一次 → 等结果 → 再问一次\n\n复杂任务会非常低效。\n\nSaC 更像这样：\n\n> AI 先写一个搜索脚本 → 脚本自动批量搜索、筛选、验证、汇总\n\n这就像从：\n\n> 人工一条条查资料\n\n变成：\n\n> 写一个爬虫/分析程序自动查资料\n\n区别在于，这个程序不是人写的，而是 **AI 临时生成的**。\n\n它的优势主要有三个：\n\n## 1. 更快\n\n代码可以并行执行大量搜索，不必每一步都等 LLM 决策。\n\n## 2. 更省 token\n\n中间结果留在沙箱里，不全部塞进模型上下文。\n\n## 3. 更可控\n\n代码可以写清楚规则，比如：\n\n- 只看厂商官网\n- 排除第三方聚合站\n- 必须包含 CVE、产品、修复版本\n- 自动去重和验证\n\n这比普通搜索 API 更适合复杂研究任务。\n\n---\n\n# 我的意见\n\n我认为 SaC 的方向是对的。\n\n未来 Agent 不应该只会「调用工具」，而应该会「编排工具」。  \n也就是说，AI 的能力会从：\n\n> 会用工具\n\n升级到：\n\n> 会写流程、会组织工具、会自动验证结果\n\n不过它也有风险：\n\n- 代码执行必须有严格沙箱\n- 搜索 SDK 的设计很关键\n- 生成代码出错会影响结果\n- 基准测试来自 Perplexity，自家结果需要第三方验证\n\n整体看，**Search as Code 可能是搜索 Agent 的重要进化方向**。  \n它不是简单优化搜索 API，而是把搜索变成一种可编程、可组合、可自动验证的基础设施。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780387580274,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:949acc970790c7265b85656bcb14191dfd0f56f2fb5861b0d5e69570ba09c131",
+  "refs": {
+    "sessionId": "1780387606537_eeqapupv"
+  },
+  "revisionId": "sha256:5870be56086534f68edc0a9dd1b0d87ae687eb65e5b6eecbcbb1fdd66ff1e27b",
+  "schemaVersion": 1,
+  "updatedAt": 1780387580274
+}

@@ -1,0 +1,72 @@
+{
+  "createdAt": 1773557026075,
+  "entityType": "session",
+  "id": "1773557026075_6zmzkoac",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估当前Agent系统中上下文压缩方案的失真点，并对比引入检索记忆后的效果",
+      "设计带元数据的记忆存储结构，支持语义检索、邻近上下文拉取和多轮补搜"
+    ],
+    "archiveReason": "提出了从压缩转向检索记忆的实用思路，适合归档为Agent架构参考",
+    "classifiedAt": 1773829706229,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent记忆优于上下文压缩",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "请综合我提供的多个内容，进行跨文档深度总结整理，再深入浅出解读。",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "上下文压缩无论采用摘要还是滑动窗口，本质上都会丢失任务相关信息",
+      "Agentic Memory可通过embedding召回相关chunk，并结合topic ID与位置信息补全邻近上下文",
+      "记忆系统不仅解决单轮上下文限制，还能支持跨session的知识积累"
+    ],
+    "oneHighValuePoint": "把“上下文窗口限制”从压缩问题重构为检索与召回问题，是文中最有价值的认知转换。",
+    "oneLineReview": "观点清晰且有启发，但更像经验分享，证据与细节支撑不足。",
+    "primaryCategory": "AI Agent",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为Agent记忆系统设计思路的启发素材",
+    "secondaryCategories": [
+      "记忆系统",
+      "RAG检索"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/yan5xu/status/2032478407146311850",
+      "https://x.com/yan5xu/status/2032477267973255591"
+    ],
+    "summaryBrief": "文章核心观点是：上下文压缩天然有损，真正解决长上下文问题的方向不是追求无损压缩，而是为Agent提供可搜索、可召回的记忆系统。作者结合embedding召回、topic ID和位置元数据，说明如何让Agent按需找回历史上下文。",
+    "tags": [
+      "上下文压缩",
+      "Agentic Memory",
+      "语义检索",
+      "RAG",
+      "长对话"
+    ],
+    "title": "可用标题别再迷信上下文压缩Agent 的真正出路是可搜索可召回的记忆系统如果你想要我也可以再给你- 更像公众号文章的标题",
+    "totalScore": 63.5,
+    "url": "omnisun://digest/1773557026075"
+  },
+  "payloadHash": "sha256:45cc96098894bfe6e1e2f3b0585e50ddfb7b2ff82082a11050af23c09d5e8f45",
+  "refs": {},
+  "revisionId": "sha256:96be9b33fbad7b401e49f725a7d6393ca4ff1668084a572f4a1f5ab7a9760081",
+  "schemaVersion": 1,
+  "updatedAt": 1773829706232
+}

@@ -1,0 +1,72 @@
+{
+  "createdAt": 1774498706044,
+  "entityType": "session",
+  "id": "1774498706044_9vsm9epe",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的AI开发流程中加入分析-计划-执行-校验的闭环步骤",
+      "为复杂任务建立高频commit习惯，便于失败后让AI基于diff反思",
+      "遇到同一问题两次未解决时，切换模型或工具而不是继续重复提示",
+      "尝试在前端任务中用BDD替代部分TDD以提升生成与验证效率"
+    ],
+    "archiveReason": "包含可直接借鉴的AI协作流程、Git使用技巧和任务拆解方法，适合后续实践时回看",
+    "classifiedAt": 1774502477579,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编程前端提效经验总结",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI编程可分为全自动执行与半自动修正两个阶段",
+      "使用循环校验机制可降低AI在需求分析和执行中的遗漏",
+      "BDD可在部分场景下替代TDD以提升协作效率",
+      "频繁Git commit可作为AI编程中的可回退存档点",
+      "多窗口并行执行任务时需要通过提示词明确任务边界",
+      "提示词应减少过度限制，同时补充关键上下文并及时打断纠偏"
+    ],
+    "oneHighValuePoint": "当同一问题连续两次修不好时，让AI回看Git历史和diff进行反思，比重复下相同指令更有效。",
+    "oneLineReview": "有实操味道的AI编程经验帖，但更像个人工作流分享，证据和系统性不足。",
+    "primaryCategory": "AI辅助编程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，适合作为AI编程工作流备忘",
+    "secondaryCategories": [
+      "前端开发流程",
+      "工程效率方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结作者在公司中使用AI进行前端开发的两阶段流程：先全自动分析、计划、执行并循环校验，再进入半自动问题修复模式；强调多次提交、借助Git历史反思、必要时更换模型，以及少限制多补上下文的提示词策略。",
+    "tags": [
+      "vibe coding",
+      "AI编程",
+      "前端开发",
+      "BDD",
+      "Git工作流",
+      "提示词"
+    ],
+    "title": "Frad: 在公司里和同事分享了好几次，关于为什么我的 vibe coding 大家觉得又快又好，而且写的前端质量也肯起来不错的秘诀",
+    "totalScore": 59.5,
+    "url": "https://x.com/FradSer/status/2036619884122267745"
+  },
+  "payloadHash": "sha256:65730c2a553c23232202c8631279d4d0060ca3630773b5962a67f2f697241cd3",
+  "refs": {},
+  "revisionId": "sha256:a3899e45159a9a8baa4b3e3a67a8c923f44650a74e00e72f8305b87458bfadcb",
+  "schemaVersion": 1,
+  "updatedAt": 1774502477581
+}

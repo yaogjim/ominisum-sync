@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776645876783,
+  "entityType": "session",
+  "id": "1776645876783_mfbp1how",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看 GitHub 仓库的 README、安装方式和支持的代理列表",
+      "评估其是否适合你的本地自动化任务或自托管工作流"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776646385868,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "开源代理例程自动化发布",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Multica Autopilot 试图开源化 Claude Code 的 Routines 能力",
+      "该工具强调兼容多种代理并支持本地运行自动化例程"
+    ],
+    "oneHighValuePoint": "指出了一个可在本地用多种代理运行自动化例程的开源方向，适合关注代理编排的人快速跟进。",
+    "oneLineReview": "有一定工具发现价值，但信息量有限，属于值得知道却不值得精读的发布帖。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容更像产品发布预告，细节、方法和证据不足，难以支撑深入学习。",
+    "retentionDecision": "低优先级留存，短期关注产品演进即可",
+    "secondaryCategories": [
+      "自动化工作流",
+      "开源项目发布"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章核心是在社交平台宣布 Multica Autopilot，称其为 Claude Code 中 Routines 的开源替代，可让不同代理在本地运行例程。信息偏发布性质，提供了仓库链接，但缺少架构、案例、性能和实际配置细节。",
+    "tags": [
+      "Claude Code",
+      "Routines",
+      "Multica Autopilot",
+      "Agent",
+      "开源"
+    ],
+    "title": "X 上的 Jiayuan (JY) Zhang：“We created the open-source version of Routines in Claude Code. Introducing …",
+    "totalScore": 42.5,
+    "url": "https://x.com/jiayuan_jy/status/2044155895110848739"
+  },
+  "payloadHash": "sha256:c017eac3f761ef88c7fbed9e1f41b38dcc39bb73a6405d3c2577b56b68ae5007",
+  "refs": {},
+  "revisionId": "sha256:1b07329467f7571136e2baefbdce501658da7bc050a03a61176710b6f8a2f548",
+  "schemaVersion": 1,
+  "updatedAt": 1776647069663
+}

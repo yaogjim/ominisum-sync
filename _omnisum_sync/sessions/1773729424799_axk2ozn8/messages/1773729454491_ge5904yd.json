@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773729454492,
+  "entityType": "message",
+  "id": "1773729454491_ge5904yd",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: FxEmbed社媒预览增强工具\n\n**评级**: C (54分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 工具与效率\n**次类别**: 社交媒体工具, 开源项目\n**标签**: #FxEmbed #X/Twitter #Bluesky #Cloudflare Worker #链接预览\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 5 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 这是一个很实用的工具型信息源，但更像产品速报而非高质量深度内容。\n**核心高价值点**: 可通过替换域名直接获取 X 帖子的 API JSON 与更完整的嵌入内容，解决跨平台分享体验差的问题。\n\n### 摘要\n文章介绍开源项目 FxEmbed，用于改善 X/Twitter 与 Bluesky 链接在 Discord、Telegram 等平台的预览效果，并提供 API、翻译、多图拼接、媒体直链、自部署与隐私友好等特性说明。\n\n### 知识要点\n- 通过给 X 或 Bluesky 链接添加特定前缀可改善 Discord、Telegram 等平台的嵌入预览效果\n- FxEmbed 提供 API JSON、媒体直链、翻译、多图 mosaic、自部署和隐私友好等能力\n\n### 行动项\n- 在实际社媒分享场景中测试 FxEmbed/FixupX 对视频、多图、长文和引用帖的预览效果\n- 若有稳定需求，可评估自部署该 Cloudflare Worker 方案并接入现有工作流\n\n### 存档判定\n归档: 是 — 原因: 内容实用且信息集中，可在需要处理 X/Bluesky 链接预览时快速查阅\n不推荐: 缺乏实测数据、对比评估和更深入的技术拆解，方法论价值有限\n删除: 否\n留存决策: 短期参考后可归档，适合作为社媒链接处理工具备忘",
+    "role": "assistant",
+    "timestamp": 1773729454492,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:010064c721ce123b2eb7ac24059121878b266ad10bf6994759a6eb4e6217e56d",
+  "refs": {
+    "sessionId": "1773729424799_axk2ozn8"
+  },
+  "revisionId": "sha256:c9938c3fa3a4c8f8d6939c13754529c08da42bba7060d911f1052bf53af2416a",
+  "schemaVersion": 1,
+  "updatedAt": 1773729454492
+}

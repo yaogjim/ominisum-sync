@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777284789416,
+  "entityType": "message",
+  "id": "1777284789415_9hkgzhxj",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent组织架构新共识\n\n**评级**: A (75分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI Agent基础设施\n**次类别**: 系统架构, 多Agent协作, AI产品设计\n**标签**: #Agent #Sandbox #Session #Control Plane #Agent Infra\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 一篇高质量的Agent infra趋势综述，价值在于把多个产品案例抽象成清晰的架构共识。\n**核心高价值点**: Agent不能与执行容器绑定，session、harness、sandbox必须分层，才能支持恢复、治理、观测和长期运行。\n\n### 摘要\n文章讨论强Agent成为可组织劳动单元后，系统架构应从模型中心转向session、harness、sandbox分层，并强调durable session、控制面与数据面分离，以及多Agent产品的不同组织形态。\n\n### 知识要点\n- Agent系统应区分session、harness/workflow与sandbox，避免将记忆、控制、凭证和执行环境混在同一生命周期中\n- session不等于context window，长期运行Agent需要durable session、event log、approval、policy、resume与replay等机制\n- Agent架构将进一步分化为control plane和data plane，前者负责规划治理，后者负责执行和环境承载\n- 多Agent产品形态会分化为面向工程用户的coding workflow和面向普通用户的数字员工组织界面\n\n### 行动项\n- 研究Anthropic Managed Agents、Vercel Open Agents和Cube Sandbox的架构设计\n- 在设计Agent系统时显式拆分session、workflow/harness和sandbox对象\n- 评估现有Agent产品是否具备durable session、observability、approval和policy能力\n- 将control plane与data plane分层作为Agent基础设施设计原则\n\n### 存档判定\n归档: 是 — 原因: 文章系统梳理了Agent基础设施中的session、sandbox、harness、control plane与data plane分层，对Agent产品架构设计有长期参考价值\n删除: 否\n留存决策: 长期保留，适合作为理解Agent运行时架构和产品组织形态的参考材料",
+    "role": "assistant",
+    "timestamp": 1777284789416,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:1ba31b10d39830b18928fd4daa261e57962616f9eea7cf79b9c804d5c8322b0a",
+  "refs": {
+    "sessionId": "1777276959728_ld22smdu"
+  },
+  "revisionId": "sha256:056055e36873814313667ea1a6d71d0876f1d3ce220b148f132ee98a246fa049",
+  "schemaVersion": 1,
+  "updatedAt": 1777284789416
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773917446223,
+  "entityType": "session",
+  "id": "1773917446223_n0zhj8rv",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在做ESP32-S3感知项目，可提取其中的刷写命令、硬件支持矩阵和参数配置流程",
+      "若关注多传感器融合，可进一步查看其ADR和融合脚本实现，评估是否适合迁移到自己的系统"
+    ],
+    "archiveReason": "包含版本差异、刷写命令、硬件兼容性和问题修复记录，具备操作参考价值",
+    "classifiedAt": 1773917986541,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "RuView发布说明与固件更新",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "ESP32-S3固件可通过UART自动识别不同mmWave模块并与WiFi CSI进行融合",
+      "发布说明中包含针对跌倒误报、任务看门狗、闪存容量适配等具体工程修复"
+    ],
+    "oneHighValuePoint": "最有价值的是将mmWave雷达与WiFi CSI做自动检测与加权融合，并给出兼容回退机制与刷写部署步骤。",
+    "oneLineReview": "工程信息扎实、操作性强，但更像发布日志而非高层方法论文章。",
+    "primaryCategory": "嵌入式传感与WiFi CSI",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合在实际部署RuView或ESP32 CSI方案时查阅",
+    "secondaryCategories": [
+      "开源项目发布说明",
+      "边缘感知系统"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一组RuView项目的GitHub Releases说明，重点覆盖ESP32-S3 CSI固件更新、mmWave传感器融合、误报修复、看门狗修复、4MB闪存支持及桌面端发布信息。实操细节充分，但方法论抽象较弱，更适合作为部署与排障参考。",
+    "tags": [
+      "ESP32-S3",
+      "WiFi CSI",
+      "mmWave",
+      "固件发布",
+      "传感器融合"
+    ],
+    "title": "Releases · ruvnet/RuView",
+    "totalScore": 56,
+    "url": "https://github.com/ruvnet/RuView/releases"
+  },
+  "payloadHash": "sha256:faa046558596f1a3b2a36f95f1ae6532949012886d43baca5eeff0a0b930845c",
+  "refs": {},
+  "revisionId": "sha256:c17ce71fe60806947338b6214fcb6f3843236456fb24cc0d9e70bb9426564be9",
+  "schemaVersion": 1,
+  "updatedAt": 1773918602007
+}

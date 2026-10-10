@@ -1,0 +1,72 @@
+{
+  "createdAt": 1776064116355,
+  "entityType": "session",
+  "id": "1776064116355_3rl0wlhj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在实际使用 Claude Code 时建立会话规则：任务不变且 1 小时内持续交互时优先继续当前会话",
+      "在 `~/.claude/settings.json` 中按需设置 `CLAUDE_CODE_DISABLE_1M_CONTEXT` 或 `CLAUDE_CODE_AUTO_COMPACT_WINDOW`",
+      "审查并精简项目中的 `CLAUDE.md`、技能和 MCP 服务，减少每轮请求的固定上下文",
+      "为代码库配置 `permissions.deny`，排除 `node_modules`、构建产物和敏感文件以降低搜索浪费",
+      "将简单日常任务优先分配给 Sonnet，将复杂架构和高推理任务留给 Opus"
+    ],
+    "archiveReason": "内容高度实用，包含可直接复用的会话管理原则、配置项和决策规则",
+    "classifiedAt": 1776078039831,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code省Token策略解析",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "提示缓存只对完全一致的输入前缀生效，且存在时效窗口",
+      "是否开新会话应基于任务是否切换、缓存是否过期、上下文是否充满噪音来判断",
+      "1M 上下文虽然同价，但缓存失效后的重建成本极高，日常编码应谨慎使用",
+      "控制输入比控制输出更重要，长日志和大文件应通过路径引用而非直接粘贴",
+      "精简 CLAUDE.md、减少技能与 MCP 工具加载，可以显著降低隐性 Token 消耗"
+    ],
+    "oneHighValuePoint": "最有价值的点是明确了“缓存还热且任务未切换时，继续当前会话通常比开新会话更省 Token”的反直觉原则。",
+    "oneLineReview": "这是一篇实操价值很高的 Claude Code 成本优化指南，但证据主要来自社区经验与官方零散表述，严谨性略弱。",
+    "primaryCategory": "AI编程工具使用策略",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议长期保留，适合作为 Claude Code 使用与成本控制的实操参考",
+    "secondaryCategories": [
+      "LLM上下文管理",
+      "成本优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕 Claude Code 的提示缓存机制，解释为何频繁开新会话不一定省 Token，并给出继续会话或重开会话的判断条件、1M 上下文的使用边界、模型切换、CLAUDE.md 精简、权限限制等多项实操建议。",
+    "tags": [
+      "Claude Code",
+      "Token优化",
+      "提示缓存",
+      "上下文窗口",
+      "AI编码",
+      "成本控制"
+    ],
+    "title": "Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对",
+    "totalScore": 76,
+    "url": "https://x.com/dotey/status/2043463546025992494"
+  },
+  "payloadHash": "sha256:c6596dda94c5526bc601e9f7c5374321e7f9a218ca49d9958dd0eac8d59e5651",
+  "refs": {},
+  "revisionId": "sha256:1257ae70d1453ae563bdf27b7485f61d0b68655ed7734aaef76cbb0262cbce71",
+  "schemaVersion": 1,
+  "updatedAt": 1776078039832
+}

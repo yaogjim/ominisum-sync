@@ -1,0 +1,70 @@
+{
+  "createdAt": 1773222338054,
+  "entityType": "session",
+  "id": "1773222338054_dhlg6vap",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的代码仓库中试建一个 `worktrees/` 目录，并将其加入 `.gitignore`",
+      "选择两个独立的小任务，用 `git worktree add` 建立并行工作区进行对比实验",
+      "在 VS Code 中验证多个工作目录下 AI 编码助手的上下文隔离效果",
+      "补充本地测试、依赖安装、端口占用等并行开发配套规范，避免工作流落地时出问题"
+    ],
+    "archiveReason": "提供了将 git worktree 用于 Claude Code 并行任务处理的具体思路和基础操作，可在需要搭建类似流程时快速回看",
+    "classifiedAt": 1773830441677,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude Code并行开发流",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "git worktree 可以在同一仓库中同时检出多个分支并保持相互独立",
+      "可在项目根目录建立并忽略 `worktrees/` 容器目录来管理多个并行工作区",
+      "在 VS Code 中可结合 Git Worktree Manager 等插件管理多个工作目录并分别运行 Claude Code",
+      "该工作流适合按 Issue 维度拆分任务，减少切换分支带来的中断"
+    ],
+    "oneHighValuePoint": "把 git worktree 作为多 Agent 并行开发的基础设施，用空间隔离替代分支来回切换，显著降低上下文打断成本。",
+    "oneLineReview": "一个有启发性的 AI 编程工作流案例，实用但更多是经验性分享而非完整方法论。",
+    "primaryCategory": "AI辅助编程工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为AI并行开发工作流的入门案例",
+    "secondaryCategories": [
+      "Git实践",
+      "开发效率",
+      "人机协同"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕 Claude Code 并行开发展开，核心是借助 git worktree 为不同任务创建独立工作目录，从而同时运行多个 AI 编码实例。内容兼顾概念解释、基本命令和 VS Code 操作，但偏经验分享，证据与边界条件讨论不足。",
+    "tags": [
+      "Claude Code",
+      "git worktree",
+      "并行开发",
+      "VS Code",
+      "AI编码助手"
+    ],
+    "title": "我要打十个！我的 Claude Code 并行开发工作流",
+    "totalScore": 62,
+    "url": "https://x.com/libukai/status/2031051533937480146"
+  },
+  "payloadHash": "sha256:16c4f6391e96a0c006bfa2f18764caec9459dbfba658e2aebe4988d325043ecc",
+  "refs": {},
+  "revisionId": "sha256:6ee1f48b93e3d8a89bfc0f2a9f2956b1c7eb1ebaf47464f21b13065ec9be4bc8",
+  "schemaVersion": 1,
+  "updatedAt": 1773830441683
+}

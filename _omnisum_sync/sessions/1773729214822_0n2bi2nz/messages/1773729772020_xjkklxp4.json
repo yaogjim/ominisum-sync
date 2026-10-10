@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773729673735,
+  "entityType": "message",
+  "id": "1773729772020_xjkklxp4",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章的主旨是：作者通过把“多标签页切换”改造成“可编排的独立工作区”，成功同时管理 10 个 Claude Code 代理而不混乱。核心方法是用 `cmux` 管理工作区、用一个“总控代理”统一调度，再配合 Obsidian 仪表盘跟踪进度。\n\n- 问题背景：多标签页模式很容易失控\n  - 作者一开始同时开很多 Claude Code 标签页做不同任务，比如研究、写草稿、视频脚本等。\n  - 很快就会出现 10 个标签页混在一起的情况，连“哪个窗口在做什么”都分不清。\n  - 结果是频繁切换打断思路，session 变旧、上下文丢失，整体效率很差。\n\n- 解决方案：用 `cmux` 把标签页变成“独立工作区”\n  - 作者改用 `cmux`，它是一个终端工作区管理工具。\n  - 每个任务不再是一个普通标签页，而是一个“隔离的工作区”，可以起明确名字，比如 `orchestrator`、`feature-research`、`video-script`、`daily-review`。\n  - 每个工作区都有自己的终端，还能在内部再开终端，并支持快捷键切换。\n  - 最大优势是：`cmux` 可编程，Claude Code 可以直接读取和操作其他工作区。\n\n- 工作原理：靠 3 个命令实现代理之间协作\n  - 作者强调核心只靠 3 个命令：`list`、`read`、`send`。\n  - `cmux list-workspaces`：查看所有工作区，看到的是清晰的工作区名称，而不是“第 4 个标签页”。\n  - `cmux read-screen --workspace ...`：读取某个工作区当前屏幕内容，不打断那个代理。\n  - `cmux send --workspace ... \"...\"`：直接给某个工作区里的代理发消息，例如问“今天进展如何”。\n  - 一个典型流程是：总控代理发消息后，等待约 15 秒，再读取该工作区屏幕查看结果。\n  - 这样就实现了不同代理之间的跨工作区沟通。\n\n- 核心角色：一个总控代理统一管理其他代理\n  - 作者会专门保留一个主工作区作为“orchestrator（总控）”。\n  - 这个总控代理负责创建、调度和管理其他代理，而作者自己只需要和这一个代理对话。\n  - 比如想做“每日回顾”，总控代理会新建一个名为 `daily review` 的工作区，并给出提示词：读取今天的 daily note，然后总结内容。\n  - 新工作区创建后，一个 Claude Code 代理就会在里面独立执行任务。\n  - 这样每个任务都有自己的独立空间，职责清晰，不容易串线。\n\n- 防止混乱的关键：用 Obsidian 仪表盘追踪所有 session\n  - 仅有多个工作区还不够，作者还用 Obsidian 和 Obsidian Bases 做统一追踪。\n  - 每个工作区对应一个 session 文件，这些 session 会自动汇总到 dashboard（仪表盘）里。\n  - 仪表盘会自动查询并展示关键信息：`status`、`date`、`title`、相关工作区等。\n  - session 会按状态分组，例如：`blocked`、`done`、`in-progress`、`review`。\n  - 重点是“自动化”：创建 session 并链接到 dashboard 后，它就会自动出现；新工作区生成时，代理还会自己创建对应的 session 文件，不需要手动登记。\n\n- 质量控制：任务不是“做完了”，而是“验证过了”\n  - 作者特别强调：不是代理说完成就算完成，必须经过人工验证。\n  - 用户会查看仪表盘、检查输出、写评论。\n  - 总控代理再把这些评论转发给对应工作区里的代理继续修改。\n  - 每个 session 不只是记录任务，还包含目标、进度、结果，以及“完成定义（definition of done）”。\n\n- 完整工作流：从日计划到反馈闭环\n  - 整个流程是：`daily note -> sessions -> spawn workspaces -> verify output -> comment -> orchestrator relays`\n  - 先在 daily note 里规划当天任务。\n  - 总控代理读取计划，理解当天目标，并据此创建 session、启动对应工作区。\n  - 用户中途查看进展、给出反馈，代理通过读取文件看到评论后继续推进。\n  - 这形成了一个可追踪、可验证、可反馈的完整闭环。\n\n- 最终效果：从混乱切换到可扩展的多代理系统\n  - 作者以前形容自己的状态像“终端幽灵混战”，从夏天开始就一直感到不堪重负。\n  - 现在借助 `cmux` 的工作区机制，再叠加 session 和 dashboard，系统变得更可扩展、更可控，并且和 Obsidian 深度集成。\n  - 简单说，作者不是在“同时盯着 10 个标签页”，而是在用一个总控系统管理 10 个有边界、有记录、有反馈机制的代理。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773729673735,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:556bab52de2bbaea4a183d0fb0150786201481469c32ebf11e963ca5e622a0f8",
+  "refs": {
+    "sessionId": "1773729214822_0n2bi2nz"
+  },
+  "revisionId": "sha256:c49785e1921a89b64eee57058698aa64d20027c7b7ed29faa40579edc2315728",
+  "schemaVersion": 1,
+  "updatedAt": 1773729673735
+}

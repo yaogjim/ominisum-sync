@@ -1,0 +1,64 @@
+{
+  "createdAt": 1774498789024,
+  "entityType": "session",
+  "id": "1774498789024_z0m9bekq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为现有CLI增加--help示例、--yes、--dry-run和stdin支持",
+      "检查命令是否幂等，并统一资源+动作的命令结构命名"
+    ],
+    "archiveReason": "内容简短但实用，适合在设计Agent可用CLI时快速回看",
+    "classifiedAt": 1774502548547,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "面向智能体的CLI设计要点",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent使用CLI时最怕交互式阻塞，因此应默认支持完整的非交互执行",
+      "高质量的子命令帮助信息和示例比冗长文档更利于Agent逐步探索",
+      "幂等、dry-run、可操作错误信息能显著提升自动化执行的稳定性"
+    ],
+    "oneHighValuePoint": "把所有关键输入都设计为显式flag并提供可复制的示例，是提升Agent调用成功率的核心。",
+    "oneLineReview": "一篇实用但不算深入的Agent友好型CLI设计清单。",
+    "primaryCategory": "AI工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为设计检查清单保留",
+    "secondaryCategories": [
+      "开发工具设计",
+      "命令行接口"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结了让CLI更适合智能体调用的若干原则，包括非交互式设计、分层帮助文档、可管道化输入输出、快速报错、幂等性、dry-run与确认跳过等，偏工程实践清单，启发性尚可但证据支撑较弱。",
+    "tags": [
+      "Agent",
+      "CLI",
+      "开发者体验"
+    ],
+    "title": "Building CLIs for agents",
+    "totalScore": 62.5,
+    "url": "https://x.com/ericzakariasson/status/2036762680401223946"
+  },
+  "payloadHash": "sha256:bec3d18457681f5d601eea3ed7e75694b00b9372d18e7997abfd22abfa3d4881",
+  "refs": {},
+  "revisionId": "sha256:cdd668a51c969753a5ba48d2d58c2f2dbd6fcbb13a96059b7f8e07d97be10298",
+  "schemaVersion": 1,
+  "updatedAt": 1774510151699
+}

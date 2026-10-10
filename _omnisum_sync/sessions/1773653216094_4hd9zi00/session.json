@@ -1,0 +1,70 @@
+{
+  "createdAt": 1773653216094,
+  "entityType": "session",
+  "id": "1773653216094_4hd9zi00",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据自己的Agent场景建立一张选型表，按是否需要真实二进制、持久状态、强隔离和低冷启动进行筛选",
+      "若在做本地CLI代理，优先研究`sandbox-runtime`或类似OS级隔离方案",
+      "若在做云端高安全代理，比较gVisor、Firecracker和状态化沙箱的隔离强度与运维复杂度",
+      "在现有Agent架构评审中单独检查网络隔离策略，而不是只关注文件写权限"
+    ],
+    "archiveReason": "内容系统梳理了代理沙箱的主流技术路线、适用场景与选型建议，对后续做Agent基础设施、安全设计和产品定位都有持续参考价值。",
+    "classifiedAt": 1773829506618,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI代理沙箱方案全景比较",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "michaellivs.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Agent沙箱主流方案可归纳为模拟环境、OS级隔离/容器、MicroVM三类",
+      "CLI代理本地运行更适合使用OS原语而非要求用户安装Docker",
+      "云端代理若强调持久状态与快照恢复，可优先考虑状态化沙箱或持久VM",
+      "网络出口控制是防止密钥泄露和数据外传的关键安全边界",
+      "技术产品的定位不应只描述底层实现，而应描述它为Agent带来的能力"
+    ],
+    "oneHighValuePoint": "最有价值的点是把看似复杂的代理沙箱生态压缩成三种核心方案，并明确指出网络隔离与文件系统隔离同等重要。",
+    "oneLineReview": "一篇面向实战的Agent沙箱选型综述，信息密集且可落地，但证据更多来自案例归纳而非系统实验对比。",
+    "primaryCategory": "AI工程基础设施",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "Agent安全架构",
+      "运行时沙箱技术"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将代理沙箱归纳为模拟环境、容器级隔离和MicroVM三大路线，并结合Claude Code、Codex CLI、E2B、Fly Sprites等实例说明各自性能、隔离强度、运维成本与适用场景，最后给出面向CLI、本地、云端和浏览器Agent的选型建议。",
+    "tags": [
+      "AI Agent",
+      "Sandbox",
+      "容器",
+      "MicroVM",
+      "安全隔离"
+    ],
+    "title": "A thousand ways to sandbox an agent",
+    "totalScore": 75.5,
+    "url": "https://michaellivs.com/blog/sandbox-comparison-2026"
+  },
+  "payloadHash": "sha256:c33de328913980441afced01207150af09a2c117ef61f92dab8aeb3738117730",
+  "refs": {},
+  "revisionId": "sha256:95932a6dee5ed0e8ae9b9ba45a0cdc7b4170a0bbe31a715cc3e23f9c8aebd022",
+  "schemaVersion": 1,
+  "updatedAt": 1773829506620
+}

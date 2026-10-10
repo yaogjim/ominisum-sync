@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780380563882,
+  "entityType": "message",
+  "id": "1780380674059_ybjetfnw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\n这篇内容讲的是：\n\n> 让 Codex 回顾你过去的使用记录，找出你反复让 AI 做的事情，并把它们沉淀成 **Skill** 或 **Subagent**。\n\n常见重复任务包括：\n\n- CI 报错排查\n- PR Review\n- 写 Changelog\n- Debug\n- 文档更新\n- 发布准备\n- 测试失败分类\n\n核心 Prompt：\n\n```text\nLook through my recent Codex sessions and identify repeated workflows or repeated asks.\nFor anything I keep doing manually, suggest:\n1. a skill if it is a reusable workflow\n2. a custom subagent if it is a bounded role or investigation task\n\nFocus on practical things like CI failures, PR reviews, changelogs, docs updates, release prep, debugging, and test triage.\nCreate the useful ones only. Keep them simple.\n```\n\n---\n\n## 二、解读\n\n### 1. 本质：把重复提问变成工具\n\n很多开发者每天都在重复问 AI：\n\n> “这个 CI 为什么挂了？”  \n> “帮我看下 PR。”  \n> “帮我写 changelog。”\n\n这些其实不是一次性问题，而是**重复工作流**。\n\n如果每次都重新描述，就会：\n\n- 浪费时间\n- 浪费 token\n- 输出不稳定\n- 难以积累经验\n\n所以更好的方式是：  \n把高频任务整理成固定的 **Skill** 或 **Subagent**。\n\n---\n\n### 2. Skill 和 Subagent 的区别\n\n| 类型 | 适合什么 | 关键词 |\n|---|---|---|\n| Skill | 固定流程、可复用操作 | 怎么做 |\n| Subagent | 明确角色、单一任务 | 谁来做 |\n\n简单理解：\n\n- **Skill**：像 SOP，例如“CI 排查流程”\n- **Subagent**：像专员，例如“测试失败分析员”\n\n例子：\n\n```text\nCI 失败排查 → Skill\nPR 审查员 → Subagent\n发布前检查流程 → Skill\nBug 调查员 → Subagent\n```\n\n---\n\n### 3. 这个 Prompt 好在哪里\n\n它有几个很实用的设计点：\n\n- **基于真实历史**：不是凭空生成，而是看最近会话\n- **强制分类**：必须判断是 Skill 还是 Subagent\n- **聚焦高频场景**：CI、PR、文档、发布、调试等\n- **限制产出数量**：只做有用的，保持简单\n\n这能避免 AI 乱生成一堆“看起来高级、实际没用”的东西。\n\n---\n\n## 三、我的意见\n\n这个思路很有价值。\n\n因为 AI 编程助手真正的效率提升，不只是“回答一次问题”，而是：\n\n> 把你的重复工作习惯，逐步固化成可复用能力。\n\n但我建议别一上来就搞复杂 Agent 系统。\n\n更实际的做法是：\n\n1. 先让 Codex 总结高频任务\n2. 选 3 个最常用的\n3. 做成简单 Skill\n4. 用一段时间再优化\n\n优先沉淀这些：\n\n- CI 失败排查\n- PR Review\n- Changelog 生成\n- Bug 调查\n- Release Checklist\n\n一句话：\n\n> 不要让 AI 每次重新理解你；要让 AI 慢慢学会你的工作方式。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780380563882,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:89fbc3594b7990b0e0d6026f9dce99bb844fffd85bbdc1adf95f04bfcd11da9d",
+  "refs": {
+    "sessionId": "1780380673507_6ojrkes8"
+  },
+  "revisionId": "sha256:1331f15283fb2c5ff29677b7612a6a398c699d3073e8c03cc6e1d94e58f4f9ca",
+  "schemaVersion": 1,
+  "updatedAt": 1780380563882
+}

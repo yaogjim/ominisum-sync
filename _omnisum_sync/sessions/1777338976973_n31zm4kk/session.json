@@ -1,0 +1,80 @@
+{
+  "createdAt": 1777338976973,
+  "entityType": "session",
+  "id": "1777338976973_n31zm4kk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将文中的生产级 Agent Runtime 能力表整理为自己的 Agent 项目架构检查清单。",
+      "评估当前或未来 Agent 项目是否具备持久执行、检查点恢复、长期记忆和可观测性能力。",
+      "在设计高风险工具调用时，优先使用中间件或确定性策略实现限制，而不是仅依赖提示词。",
+      "如果构建需要人工审批的 Agent，参考 interrupt/resume 模式设计审批、澄清和恢复流程。",
+      "对需要代码执行的 Agent，规划沙箱隔离、资源限制和密钥代理机制，避免凭证暴露。"
+    ],
+    "archiveReason": "系统梳理了生产级智能体所需的持久执行、内存、多租户、人在回路、可观测性、沙箱、集成和定时任务等运行时能力，具备较高架构参考价值",
+    "classifiedAt": 1777442637238,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "生产级深度代理运行时",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.langchain.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "生产级智能体不仅需要提示词、工具和技能，还需要持久执行、内存、多租户、HITL、可观测性、沙箱和集成协议等运行时能力。",
+      "持久执行通过检查点、任务队列、租约释放和恢复机制，使长时间运行的 Agent 能在崩溃、部署或等待人工审批后继续执行。",
+      "短期记忆通常属于线程级检查点，长期记忆则需要跨线程、跨会话的持久存储，并可结合语义搜索进行检索。",
+      "人在回路可以通过 interrupt 和 resume 等原语实现审批、澄清问题、草稿审核和输入验证等流程。",
+      "中间件比提示词更适合承载确定性策略，例如 PII 脱敏、工具调用限制、模型重试、模型降级和人工审核门控。",
+      "生产 Agent 的可观测性需要完整追踪模型调用、工具调用、子代理、中间件钩子、成本、延迟、错误和用户上下文。",
+      "Time travel 基于检查点实现运行回放、分叉和反事实调试，有助于定位 Agent 在某一步做出错误决策的原因。",
+      "任意代码执行必须通过沙箱隔离，并避免将密钥直接放入沙箱环境，可采用认证代理注入凭证。",
+      "MCP、A2A 和 Webhooks 分别解决工具/数据集成、Agent 间通信和下游工作流触发问题。",
+      "Cron 能支持主动型智能体任务，如夜间研究、日程准备、监控巡检和周期性合规检查。"
+    ],
+    "oneHighValuePoint": "将生产级 Agent 的核心问题从提示词和工具上移到运行时基础设施，明确指出持久执行是 HITL、长任务、重试、恢复、调试和定时任务的底座。",
+    "oneLineReview": "这是一篇偏产品化但架构价值较高的 Agent Runtime 能力清单，适合用于理解生产级智能体部署的关键基础设施。",
+    "primaryCategory": "AI Agent工程化",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为生产级 Agent 运行时能力清单和架构参考",
+    "secondaryCategories": [
+      "生产部署",
+      "LangChain生态",
+      "智能体架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍生产级深度代理所需的运行时基础设施，强调持久执行是内存、HITL、流式、定时任务和并发处理的基础，并系统说明 LangSmith Deployment 与 deepagents deploy 在多租户、观测、沙箱、MCP/A2A、Cron 等方面的能力。",
+    "tags": [
+      "Deep Agents",
+      "LangSmith",
+      "持久执行",
+      "HITL",
+      "可观测性",
+      "多租户",
+      "MCP",
+      "Agent Runtime"
+    ],
+    "title": "The Runtime Behind Production Deep Agents",
+    "totalScore": 72.5,
+    "url": "https://www.langchain.com/blog/runtime-behind-production-deep-agents?utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-_fFZ-PtiXfvQ1CIieA4u_xgkA8mh0KQuvYSNBJzWutl7XmGLYovPaw3KJc4LIYWvSAJ5N4"
+  },
+  "payloadHash": "sha256:2cf208e8507c054a5a4d7b082793717c06031fd2a79610bfc1645373a91e52a8",
+  "refs": {},
+  "revisionId": "sha256:f81e590eefbb2f56fb98923bbe9e8ad2e2638b21899b577e66b4988c93fc568f",
+  "schemaVersion": 1,
+  "updatedAt": 1777442637244
+}

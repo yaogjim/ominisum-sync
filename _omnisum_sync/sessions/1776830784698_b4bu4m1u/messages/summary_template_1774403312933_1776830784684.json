@@ -1,0 +1,23 @@
+{
+  "createdAt": 1776830784684,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1776830784684",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Cloudflare 正在补齐 Agent 全栈能力\n\n## 核心观点\n\n过去一周，Cloudflare 基本把 AI Agent 需要的关键基础设施补齐了。它做的已经不只是 “帮 AI 省 token”，而是在搭一整套 Agent 运行时：从记忆、浏览、推理到执行动作，越来越接近一个完整平台。\n\n## Cloudflare 补了哪些能力\n\nCloudflare 这次补齐的能力，覆盖了 Agent 落地最常见的几个环节：\n\n- **Agents SDK v2**：更完整的 Agent 开发框架  \n- **Agent Memory**：给 Agent 增加可管理的长期上下文记忆  \n- **Browser Run**：让 Agent 能直接操作浏览器，并支持人工介入  \n- **AI Gateway**：统一接入 14 家模型供应商，方便切换和管理  \n- **Registrar API**：Agent 甚至可以自己注册域名  \n\n这意味着 Cloudflare 想做的，不是单点工具，而是 Agent 的底层操作系统。\n\n## 为什么这件事重要\n\n以前大家更多把 Cloudflare 看成 “网络层” 或 “加速省钱工具”，比如把网页转成干净文本，减少 AI 读取网页时的 token 浪费。\n\n但现在它的角色在升级：\n\n- 不只是优化成本，而是承接 Agent 的完整运行过程  \n- 不只是模型调用，而是把 “记忆 + 浏览 + 推理 + 动作” 串起来  \n- 不只是提供接口，而是直接参与 Agent 生态标准化  \n\n一句话：Cloudflare 正从 “基础设施配角”，变成 Agent 时代的核心平台之一。\n\n## 作者自己的技术选择\n\n作者已经把剩下的 3 个 Vercel 项目删掉，全面清理并迁移到 Cloudflare Pages。原因很现实：\n\n- **更适合个人维护多个项目**\n- **免费额度够用**\n- **冷启动快**\n- **配置简单**\n\n配合`Workers + R2 + D1`，对独立开发者或小团队来说，整体性价比很高。\n\n## 仍然保留的谨慎点\n\n作者并没有完全 all in Cloudflare，**数据库仍保留部分自建 PostgreSQL**。\n\n原因是：涉及策略或真钱系统时，最怕再多一层不可控依赖。也就是说，Cloudflare 很适合大部分应用层能力，但在最核心、最敏感的数据层，作者依然倾向自己掌控。\n\n## 一个值得注意的信号\n\nCloudflare 还成为了 OpenAI 新 Agents SDK 的 sandbox partner，这说明它不仅在补产品能力，也在进入更核心的 Agent 生态合作链条。\n\n这释放出一个明确信号：**Cloudflare 正在争夺 AI Agent 基础设施入口。**\n\n## 一句话总结\n\nCloudflare 正从 “帮 AI 省 token 的网络工具”，升级为 “承载 Agent 全生命周期的基础设施平台”；对独立开发者很友好，但在核心数据库等高风险场景，仍需保留自主可控。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1776830784684,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b4d655e89cd82688a4830f6d5475b9144d43e6efc23247b9f01f5fce6f8bfd5a",
+  "refs": {
+    "sessionId": "1776830784698_b4bu4m1u"
+  },
+  "revisionId": "sha256:890b70f5882d95a95135fd7dd9d17d8121842e18f3f9cdffaaf5e5f3f2a05d82",
+  "schemaVersion": 1,
+  "updatedAt": 1776830784684
+}

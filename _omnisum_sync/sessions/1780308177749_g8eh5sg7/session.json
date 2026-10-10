@@ -1,0 +1,70 @@
+{
+  "createdAt": 1780308177749,
+  "entityType": "session",
+  "id": "1780308177749_g8eh5sg7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需在 pi 中调用 Cursor 模型，按 Quick start 安装 pi-cursor-sdk 并配置 Cursor SDK API Key。",
+      "使用 pi --list-models cursor 检查模型目录，必要时运行 /cursor-refresh-models 刷新。",
+      "根据需要设置 --cursor-fast、--cursor-no-fast、--cursor-mode plan 或 --thinking 控制运行模式。",
+      "若遇到 MCP 或工具桥接问题，检查 PI_CURSOR_SETTING_SOURCES、PI_CURSOR_PI_TOOL_BRIDGE 和相关超时环境变量。"
+    ],
+    "archiveReason": "如果正在使用 pi、Cursor SDK 或研究 AI 编程代理工具集成，可作为安装、配置和排障参考文档归档。",
+    "classifiedAt": 1780381012902,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "pi接入Cursor模型扩展文档",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "pi-cursor-sdk 可通过本地 @cursor/sdk 代理让 pi 使用 Cursor 模型，并支持 /login、/model、/cursor-refresh-models 等操作。",
+      "扩展支持 Cursor fast/plan 模式、思考参数映射、图片输入、本地 MCP 工具桥接和模型目录缓存。",
+      "Cursor API 密钥需要通过 pi 的认证机制、环境变量或 --api-key 显式配置，不能复用 Cursor 桌面或 CLI 登录状态。",
+      "MCP 桥接默认隐藏与 Cursor 原生工具重叠的 pi 工具，可通过环境变量启用、禁用或调整超时。",
+      "文档包含较多维护者测试、调试、发布冒烟测试和故障排查流程。"
+    ],
+    "oneHighValuePoint": "详细说明了如何通过本地 Cursor SDK 代理在 pi 中使用 Cursor 模型，并保留 pi 的模型选择、思考控制和 MCP 工具桥接能力。",
+    "oneLineReview": "高密度但高度特定的工具 README，适合相关用户查阅，不具备广泛方法论价值。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可按需保留",
+    "secondaryCategories": [
+      "开发工具集成",
+      "技术文档"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该文档介绍 pi-cursor-sdk 的安装、认证、模型发现、思考控制、快速/计划模式、图片输入、MCP 工具桥接、测试发布闸口、限制与故障排查，属于较完整的扩展使用与维护说明。",
+    "tags": [
+      "pi-cursor-sdk",
+      "Cursor SDK",
+      "AI Coding Agent",
+      "MCP",
+      "模型集成"
+    ],
+    "title": "fitchmultz/pi-cursor-sdk: Run Cursor models inside the pi coding agent via local Cursor SDK agents, with native model selection, thinking controls, fast/plan modes, image input, and MCP-bridged pi tools.",
+    "totalScore": 62.5,
+    "url": "https://github.com/fitchmultz/pi-cursor-sdk"
+  },
+  "payloadHash": "sha256:b4c5af682f9bec82207bec98901a28c5b5b7521ab203b9f6eaeca9a7ca80e5e4",
+  "refs": {},
+  "revisionId": "sha256:d958d8c57b328cb2a806dd861ab5cfaf869ba1459fbfa337e82c11622f0ad48c",
+  "schemaVersion": 1,
+  "updatedAt": 1780384846922
+}

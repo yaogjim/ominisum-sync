@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773351264_uswckqho",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Bill The Investor：AI Agent 从 Demo 到 Business 的关键断层\n\n## 核心观点\n\n99% 的 AI Agent 开发者卡在了「能演示」到「能商业化」之间。  \n真正的难点不只是让 Agent 跑通一次，而是让它长期、稳定、自动地交付结果。\n\n## 问题所在：大家都在卷能力，忽视稳定性\n\n当前很多开发者关注的是：\n\n- Agent 的推理逻辑\n- 工具调用能力\n- 多步任务执行\n- Demo 效果展示\n\n但很少有人投入精力去建设底层稳定系统，比如：\n\n- 任务失败后的恢复机制\n- 异常处理\n- 状态管理\n- 监控与告警\n- 长期运行的可靠性\n\n## Demo 和 Business 的本质区别\n\n一个 Agent 能成功跑通一次，只能说明它适合做演示。  \n但一个真正能成为生意的 Agent，必须做到：\n\n- 不依赖人工反复干预\n- 每天稳定运行\n- 持续产出可用结果\n- 能在真实业务环境中承受异常和波动\n\n## 关键比喻：大家都在造引擎，却没人装稳定器\n\n现在 AI Agent 行业的问题，不是没有「引擎」，而是缺少「稳定器」。  \n能力强不等于能商用，稳定交付才是从技术产品走向商业产品的关键。\n\n## 一句话总结\n\nAI Agent 的商业化瓶颈不在于 Demo 有多炫，而在于能否构建一套稳定、可靠、可持续运行的系统。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d58e23ad1326f4a3abbd41d78c8ded0faaa4db909c703bc255793978e9179e1d",
+  "refs": {
+    "sessionId": "1777773351179_r45dw4ob"
+  },
+  "revisionId": "sha256:4a5c36a4dd1db46d8e2dff72d30f2826907b0a19d5040f5f24c59049da6bca6d",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

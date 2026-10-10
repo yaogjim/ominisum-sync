@@ -1,0 +1,19 @@
+{
+  "createdAt": 1776646339177,
+  "entityType": "message",
+  "id": "1776646339176_sacvruac",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: BlockNote编辑器选型速评\n\n**评级**: B (58.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 开发工具与技术选型\n**次类别**: React 富文本编辑器, AI 集成应用\n**标签**: #BlockNote #React #ProseMirror #Tiptap #AI编辑器 #技术选型\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一篇有实用价值的开源工具速评，适合做初步选型参考，但证据和深度都有限。\n**核心高价值点**: 最有价值的信息是明确指出 BlockNote 核心功能可商用，但 AI、导出、多列等高级扩展涉及 GPL-3.0 或商业许可，这直接影响闭源产品选型。\n\n### 摘要\n文章简要介绍了 BlockNote 作为基于 ProseMirror 和 Tiptap 的 React 富文本编辑器的特点，重点强调其低上手门槛、Notion 风格块编辑、AI 集成、协作与导出能力，并与 Tiptap 做了简要选型对比，同时提醒高级扩展包的 GPL 商业许可限制。\n\n### 知识要点\n- BlockNote 提供高封装的 Notion 风格块编辑体验，适合快速嵌入式编辑器开发。\n- BlockNote 支持通过扩展集成 AI、Yjs 协作和文档导出，但部分高级能力有许可证限制。\n\n### 行动项\n- 如果正在做内容管理或知识库产品，可将 BlockNote 与 Tiptap 按定制深度、开发成本和授权模式做一次对比评估。\n- 在闭源商业项目中使用前，先核查是否会依赖 xl- 高级扩展包，以避免 GPL 许可证风险。\n\n### 存档判定\n归档: 是 — 原因: 文章对 BlockNote 的定位、能力边界和许可证差异做了较清晰概述，便于后续选型时快速回看。\n删除: 否\n留存决策: 短期参考后可保留，适合作为编辑器选型线索",
+    "role": "assistant",
+    "timestamp": 1776646339177,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:ca991e5abba5c90dc50fd9ace5f88d696dc8b1e29fe6a7f1336bc5aedaa4ff5a",
+  "refs": {
+    "sessionId": "1776645571366_5lx5l4gb"
+  },
+  "revisionId": "sha256:2ecec7f4ac64053856ef0737db7215fe2916cc6567ac8e931a53983a84283636",
+  "schemaVersion": 1,
+  "updatedAt": 1776646339177
+}

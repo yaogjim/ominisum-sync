@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777773925515,
+  "entityType": "message",
+  "id": "1777773925514_45pt89a6",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Codex桌面应用插件系统\n\n**评级**: C (49.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: 开发工具\n**次类别**: AI编程工具, 桌面应用扩展\n**标签**: #Codex #Electron #插件系统 #GitHub项目 #桌面应用\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 3 | 10% |\n\n**一句话点评**: 适合正在使用Codex桌面版且愿意尝试非官方扩展的开发者快速了解，但长期参考价值有限。\n**核心高价值点**: 其核心机制是只对应用做一次启动加载器补丁，后续运行时和插件均放在用户目录中，便于热更新和快速迭代。\n\n### 摘要\n文章介绍了一个名为Codex++的非官方Codex桌面应用插件系统，可通过修改Electron应用包来加载自定义tweak，并提供安装、更新、卸载、插件目录和安全提示等说明。\n\n### 知识要点\n- Codex++通过 patch app.asar 并注入loader来扩展Codex桌面应用\n- 插件以ESM模块形式存在，包含manifest和start/stop生命周期\n- 项目会备份原应用、重新计算asar完整性、在macOS上重新签名\n- 官方Codex更新可能覆盖补丁，需要通过repair或watcher重新应用\n\n### 行动项\n- 如正在使用Codex桌面版，可先查看SECURITY.md和ARCHITECTURE.md评估风险\n- 在非主力环境中测试安装与卸载流程，避免影响正式Codex应用\n- 若需要自定义快捷键或UI，可参考默认tweak仓库实现方式\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是项目README和安装说明，适用场景较窄，项目仍处于alpha阶段，缺少实际案例、稳定性验证和深入方法论。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1777773925515,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:d6aacd59bdf4fdf4b1630da4df5eb2e04b8677848b62f117e0388d5e990769b2",
+  "refs": {
+    "sessionId": "1777773375757_oqztfs8u"
+  },
+  "revisionId": "sha256:0ccbf5dbe79c95145c39c94dadbda8c23fa523b6a09c1d63491c74dce05872cd",
+  "schemaVersion": 1,
+  "updatedAt": 1777773925515
+}

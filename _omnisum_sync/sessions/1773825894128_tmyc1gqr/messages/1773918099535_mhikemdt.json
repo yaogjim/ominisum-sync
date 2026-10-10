@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773918099536,
+  "entityType": "message",
+  "id": "1773918099535_mhikemdt",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude Code技能实践指南\n\n**评级**: A (77.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI工程与开发效率\n**次类别**: 智能体工具设计, 团队知识管理\n**标签**: #Claude Code #Skills #Agent Engineering #上下文工程 #开发流程自动化\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一篇偏实践的方法型文章，最强价值在于把零散的 Skill 使用经验整理成可执行的分类框架与设计原则。\n**核心高价值点**: 最有价值的是将 Skills 归纳为九类能力模块，并强调用文件夹结构、脚本、hooks 和渐进式披露来做上下文工程，而不是把 Skill 仅当作 markdown 提示词。\n\n### 摘要\n文章总结了 Anthropic 内部构建和使用 Claude Code Skills 的实践，给出九类典型 Skill 场景、编写原则、配置与存储技巧，以及在团队内分发、治理和评估效果的方法，兼具策略视角与落地建议。\n\n### 知识要点\n- Skills 应聚焦单一类别，跨多个类别往往会导致设计混乱和触发不清。\n- 高质量 Skill 的核心不是重复常识，而是沉淀 Claude 易犯错的 gotchas、参考资料、脚本和模板。\n- description 字段应描述何时触发 Skill，而不是泛泛介绍 Skill 做什么。\n- 可通过稳定数据目录、日志文件或 SQLite 为 Skill 提供可持续记忆能力。\n- 按需 hooks 可在特定会话中启用安全护栏或编辑范围限制，提高高风险操作的可靠性。\n\n### 行动项\n- 按文中的九类框架盘点自己团队已有的 AI Skills，找出缺口与重复建设。\n- 优先为高频且高风险流程设计验证类、审查类和运维类 Skills。\n- 为现有 Skills 补充 gotchas、reference 文件和脚本资源，减少把 Skill 当纯提示词的低效写法。\n- 重写关键 Skills 的 description，使其更像触发条件而非功能摘要。\n- 建立轻量审核与使用统计机制，淘汰低质量或低使用率 Skills。\n\n### 存档判定\n归档: 是 — 原因: 包含可直接复用的 Skills 分类框架、编写原则与团队推广经验，适合后续搭建 AI 开发工作流时反复参考。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1773918099536,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:5462da925b0f32dbc2276e8d0b4ba3aafb4ed39e545feaf55500ac5c5fff5cc8",
+  "refs": {
+    "sessionId": "1773825894128_tmyc1gqr"
+  },
+  "revisionId": "sha256:4768114a2bf7043c1c8d15565a8c0b74e9bf25c55277012977e55edc075a2f2f",
+  "schemaVersion": 1,
+  "updatedAt": 1773918099536
+}

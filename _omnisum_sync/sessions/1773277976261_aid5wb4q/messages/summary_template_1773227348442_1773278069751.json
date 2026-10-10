@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773278069751,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773278069751",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "以下是基于你提供内容提炼出的**Skill 编写最佳实践（精炼版）**：\n\n---\n\n## 1. 保持简洁\n- **只写 Claude 不知道的内容**，避免解释常识。\n- `SKILL.md`应尽量短小，建议**不超过 500 行**。\n- 元数据（名称、描述）最关键；正文只在相关时加载，但一旦加载就会占用上下文。\n\n---\n\n## 2. 控制指令 “自由度”\n根据任务风险选择约束强度：\n- **高自由度**：适合开放性任务，如代码审查、分析总结。\n- **中自由度**：适合有推荐模式但允许调整的任务，如模板生成。\n- **低自由度**：适合脆弱、易错、必须严格执行顺序的任务，如数据库迁移。\n\n原则：**任务越脆弱，指令越具体。**\n\n---\n\n## 3. 名称与描述要利于发现\n### 名称\n- 用一致、明确的命名方式，优先用**动名词 / 动作导向**：\n  - `processing-pdfs`\n  - `analyzing-spreadsheets`\n  - `writing-documentation`\n- 避免：\n  - 模糊名：`helper`、`tools`\n  - 过宽泛：`documents`、`data`\n\n### 描述\n- 描述必须同时说明：\n  1. **这个 Skill 做什么**\n  2. **什么时候该用**\n- 写出明确触发词和场景。\n- 避免模糊描述，如 “处理文件”“帮助文档”。\n\n---\n\n## 4. 用 “概览 + 按需展开” 的结构\n把`SKILL.md`当作目录页：\n- 放核心说明、快速开始、入口链接\n- 详细内容拆到单独文件：\n  - `REFERENCE.md`\n  - `EXAMPLES.md`\n  - `FORMS.md`\n\n这样做的好处：\n- 降低上下文负担\n- 让 Claude 只读取当前任务需要的部分\n\n---\n\n## 5. 避免深层嵌套引用\n- 所有关键参考文件应**直接从`SKILL.md`链接**\n- 不要`SKILL.md -> advanced.md -> details.md`这种多层跳转\n- 超过 100 行的参考文件，顶部加**目录（Contents）**\n\n原则：**一层引用优于多层引用。**\n\n---\n\n## 6. 复杂任务写成工作流\n对多步骤任务，提供：\n- 顺序步骤\n- 决策分支\n- 检查清单（checklist）\n\n尤其推荐加入：\n- **验证 → 修复 → 再验证**的循环\n\n这能显著减少 Claude 跳步、漏步和出错。\n\n---\n\n## 7. 用模板和示例约束输出\n如果输出格式重要：\n- 提供**模板**\n- 提供**输入 / 输出示例对**\n\n适用场景：\n- commit message\n- 报告格式\n- API 响应结构\n- 文档写作风格\n\n原则：**示例通常比抽象描述更有效。**\n\n---\n\n## 8. 保持术语一致\n全文统一用词，不要混用近义词：\n- 固定用`API endpoint`，不要同时写`URL /route/path`\n- 固定用`field`，不要混`box /element/control`\n\n一致性能减少歧义，提高执行稳定性。\n\n---\n\n## 9. 不写会过时的内容\n避免写 “某日期前后怎么做” 这类容易失效的说明。\n\n更好的方式：\n- 主体只写**当前推荐做法**\n- 旧方法放到**Legacy / Old patterns**小节中\n\n---\n\n## 10. 针对实际模型测试\n不同模型对 Skill 的需求不同：\n- **Haiku**：可能需要更明确、更多指导\n- **Sonnet**：适合平衡型说明\n- **Opus**：避免过度解释\n\n如果要跨模型使用，说明应做到：\n- 足够清楚\n- 但不过度冗长\n\n---\n\n## 11. 先做评估，再写大文档\n推荐流程：\n1. 先让 Claude 在**没有 Skill**时完成任务\n2. 记录失败点 / 缺失信息\n3. 设计评估场景\n4. 只补充解决这些问题所需的最少内容\n5. 反复测试、迭代\n\n原则：**不要为想象中的问题写说明，只为真实失败补充内容。**\n\n---\n\n## 12. 用 Claude 帮你迭代 Skill\n建议双实例协作：\n- **Claude A**：帮助编写 / 优化 Skill\n- **Claude B**：实际使用 Skill 做任务\n\n迭代方式：\n- 观察 Claude B 哪里出错\n- 把具体问题反馈给 Claude A\n- 持续精简、重组、补充关键指令\n\n---\n\n# 一句话总结\n**好 Skill 的核心是：简洁、可发现、结构清晰、按需展开、经过真实任务验证。**\n\n如果你愿意，我还可以把这些内容进一步整理成一份**“可直接套用的 Skill 编写清单（Checklist）”**。",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773278069751,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bdc9a128f96f1e77869469288e43a325e754814d7908e28e269cb003066e0dd2",
+  "refs": {
+    "sessionId": "1773277976261_aid5wb4q"
+  },
+  "revisionId": "sha256:cedd5bcdca62272b2f77870032ef21e7b81a40103df857605899b10d567b2a27",
+  "schemaVersion": 1,
+  "updatedAt": 1773278069751
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1776645406515,
+  "entityType": "message",
+  "id": "1776645659257_exrcxfs3",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Claude Code Routines：让 AI 从“回答问题”变成“自动干活”\n\n## 核心结论\nClaude Code 新增的 `Routines`，本质上是一个可预设、可触发、可自动执行的 AI 任务模板。它不再只是等你下指令，而是能在云端按规则自己运行，替你处理重复性的开发事务。\n\n## 它能做什么\nRoutines 适合把一类固定流程交给 AI 持续执行，比如：\n- 定时整理 Issue、Backlog\n- 有人提交 PR 时自动做代码审查\n- 监控系统报警后，自动查日志、定位问题并发起修复 PR\n- 代码合并后，自动同步更新文档\n\n一句话：它更像“AI 初级工程师”或“自动化代理”，而不只是聊天式助手。\n\n## 触发方式\nRoutines 目前支持 3 种触发方式：\n- **定时触发**：按固定时间自动执行\n- **GitHub 事件触发**：如 PR、代码合并等事件触发\n- **API 触发**：外部系统可直接调用，让 AI 接手处理任务\n\n这意味着，它可以真正接入企业现有的研发和监控流程。\n\n## 对开发者的价值\n它的最大价值，是把过去需要自己搭建的自动化流程大幅简化。  \n以前可能要写 CI 脚本、配 GitHub Actions、再连 Slack Bot；现在一个 Routine 就能串起来，而且还能调用 Claude 已连接的 MCP 服务，如 Slack、Linear、Google Drive 等。\n\n本质上，它降低了自动化门槛，也拓展了 AI 在工程流程中的实际可用性。\n\n## 使用门槛与限制\n目前 `Pro`、`Max`、`Team`、`Enterprise` 用户都可使用。  \nRoutines 数量不限，但**每日运行次数有限制**，超出后需要额外付费。\n\n另外，它还处于 **Research Preview（研究预览）** 阶段，接口格式和能力边界未来都可能调整。\n\n## 需要特别注意的风险\n一个关键点是：Routine 执行操作时，**默认使用的是你的身份和权限**。  \n比如：\n- 提交代码，用的是你的 GitHub 账号\n- 发送消息，用的是你的 Slack 账号\n\n所以，权限配置和操作边界必须谨慎，否则自动化效率提升的同时，也可能放大误操作风险。\n\n## 总结\n`Routines` 的意义，不只是新增了一个功能，而是把 AI 编程助手从“被动响应”推进到“主动执行”。  \n对于已经在用 Claude Code 的开发者来说，它可能是目前最接近“给自己配一个 AI 助理工程师”的产品形态。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1776645406515,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c18bb567495105cfd6c691a77898f5a4dc217ed21099c76cb3e312adca1e384a",
+  "refs": {
+    "sessionId": "1776645659253_995j99o6"
+  },
+  "revisionId": "sha256:052f42db73b0576dbef9f5df8467dbcb6c085ff88993a378f330d9f0b12c40ef",
+  "schemaVersion": 1,
+  "updatedAt": 1776645406515
+}

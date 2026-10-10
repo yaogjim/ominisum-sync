@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773729408408,
+  "entityType": "session",
+  "id": "1773729408408_t8u90d9o",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "重点研读Definition 8及第4节测量方法，判断该指标是否能映射到你当前的数据选择或训练监控流程。",
+      "将文中的epiplexity视角与现有MDL、scaling laws、数据混合策略做对照，提炼可复用的评估框架。",
+      "如果你做预训练或数据工程，可尝试用损失曲线面积近似评估不同数据子集的结构信息差异。"
+    ],
+    "archiveReason": "提出面向计算受限观察者的新信息度量，并将其连接到数据选择、预训练和OOD泛化，具备持续研究参考价值",
+    "classifiedAt": 1773729442075,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 6,
+      "information_density": 9,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 9,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "论文",
+    "classifyTitle": "重构信息理论的Epiplexity框架",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "arxiv.org",
+    "favicon": "https://arxiv.org/static/browse/0.3.4/images/icons/favicon-32x32.png",
+    "knowledgePoints": [
+      "经典Shannon信息与Kolmogorov复杂度默认观察者计算能力无限，难以刻画现代模型真正可学习的结构信息。",
+      "epiplexity通过时间受限MDL分解结构信息与随机信息，试图解释合成数据、因果顺序、涌现和归纳等现象。",
+      "预序编码与requential coding可作为epiplexity的经验估计方法，并可用于分析预训练数据质量与OOD迁移潜力。"
+    ],
+    "oneHighValuePoint": "将“模型选择”对偶地转化为“数据选择”问题，用epiplexity衡量数据中可被计算受限模型吸收的结构信息，而非仅看熵或困惑度。",
+    "oneLineReview": "这是一篇野心很大的理论论文，概念新颖且启发性强，但实证与可落地性仍弱于其理论叙事。",
+    "primaryCategory": "机器学习理论",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "信息论",
+      "预训练与数据选择"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出“epiplexity”作为计算受限观察者可提取结构信息的形式化度量，用于解释经典信息论与现代机器学习实践之间的三类悖论，并给出基于预序编码和requential coding的估计方法，展示其与数据价值和OOD泛化的关联。",
+    "tags": [
+      "epiplexity",
+      "计算受限智能",
+      "OOD泛化"
+    ],
+    "title": "From Entropy to Epiplexity: Rethinking Information for Computationally Bounded Intelligence",
+    "totalScore": 74.5,
+    "url": "https://arxiv.org/html/2601.03220v1"
+  },
+  "payloadHash": "sha256:a7128c0b10e374d082ffb8503940e8f7a24a3f7e68d1955140e74fd087efca0b",
+  "refs": {},
+  "revisionId": "sha256:d268b9df2f118b1a1f5c58b93ce25e6dfbd5fef680bd0101cdfd2320f9770a42",
+  "schemaVersion": 1,
+  "updatedAt": 1773729946738
+}

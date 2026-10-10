@@ -1,0 +1,158 @@
+{
+  "createdAt": 1780368173957,
+  "entityType": "session",
+  "id": "1780368173957_s74ulw1d",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "借鉴文中的 Layer 1-3b 工作流，为自己的研究型 Agent 设计分层任务拆解。",
+      "将常用查询归类为数据表、单实体解释、机制比较等固定模板，写入子代理提示词。",
+      "在 Agent 项目中引入工作底稿机制，避免所有中间信息堆积在消息历史中。",
+      "为工具调用建立可观测性指标，包括调用成本、延迟、错误率、低质量响应率和引用有效性。",
+      "如从事金融或合规相关 AI 应用，可重点复用其审计追踪与引用映射设计。"
+    ],
+    "archiveReason": "文章提供了较完整的金融研究多代理架构、查询拆分策略、可观测性与评估方法，可作为构建复杂研究型 Agent 的参考模板。",
+    "classifiedAt": 1780368728486,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 9,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "金融宏观研究代理架构实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.langchain.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "最终输出总结，如 LangSmith 界面所示。请查看 GitHub 仓库中的完整报告。",
+        "height": 1237,
+        "id": "img-16",
+        "nearbyText": "",
+        "resolvedUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a183c491817ffd03364cbdf_c4fb318c.png",
+        "role": "figure",
+        "score": 95,
+        "src": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a183c491817ffd03364cbdf_c4fb318c.png",
+        "width": 2048
+      },
+      {
+        "alt": "",
+        "caption": "正在撰写其报告的 landscape-scanner 子代理",
+        "height": 1167,
+        "id": "img-17",
+        "nearbyText": "",
+        "resolvedUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a183c69fd6b6da72160e3c3_3d325fd3.png",
+        "role": "figure",
+        "score": 95,
+        "src": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a183c69fd6b6da72160e3c3_3d325fd3.png",
+        "width": 2048
+      },
+      {
+        "alt": "",
+        "caption": "过滤掉对 you_finance_research 的每一次调用，并创建一个用于评估的数据集",
+        "height": 1331,
+        "id": "img-19",
+        "nearbyText": "",
+        "resolvedUrl": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a18417397f7299d29062a81_f6448603.png",
+        "role": "figure",
+        "score": 95,
+        "src": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a18417397f7299d29062a81_f6448603.png",
+        "width": 2048
+      }
+    ],
+    "knowledgePoints": [
+      "复杂金融研究 Agent 不应把所有问题塞进单次大查询，而应按数据检索、定性解释、机制比较等查询形状拆分。",
+      "子代理通过明确职责、独立工具配置和文件化工作底稿，可以降低上下文膨胀并提升流程可控性。",
+      "LangSmith 追踪可记录工具调用、提示词、响应、成本、延迟和中间决策，使最终报告可追溯到原始来源。",
+      "研究型 Agent 的评估可结合离线实验、自定义评估器、在线评估、人工注释队列和工具级分析。",
+      "金融服务场景中，AI 输出的审计链路与结论本身同等重要，尤其涉及 MiFID II、DORA 和欧盟 AI Act 等合规要求。"
+    ],
+    "oneHighValuePoint": "将复杂研究任务拆成数据表检索、异常检测、分解分析、国家调查、交叉验证和综合报告等层级，并通过工作底稿与追踪实现可审计性。",
+    "oneLineReview": "虽带有明显产品宣传色彩，但其多代理研究流程、查询预算控制和可观测性设计具有较高复用价值。",
+    "primaryCategory": "AI Agent 工程",
+    "published": "2026-05-20T18:00:00.000Z",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "schema": [
+      {
+        "@type": "Article",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "S. Tangedipalli"
+          },
+          {
+            "@type": "Person",
+            "name": "K. Singh"
+          },
+          {
+            "@type": "Person",
+            "name": "S. Sharma"
+          },
+          {
+            "@type": "Person",
+            "name": "A. Pothana"
+          }
+        ],
+        "dateModified": "2026-05-29T23:45:12.995Z",
+        "datePublished": "2026-05-20T18:00:00.000Z",
+        "description": "",
+        "headline": "EU macroeconomic analysis with Deep Agents, LangSmith, and the You.com Finance Research API",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://cdn.prod.website-files.com/65c81e88c254bb0f97633a71/6a19109c2af7527cb5ec809e_logo%20and%20title%20-%2020%20characters%20max%20(8).png"
+        },
+        "mainEntityOfPage": "http://langchain.com/blog/financial-ai-that-investigates-macro-trends-eu-economic-analysis-with-you-com-and-langchain",
+        "publisher": {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://cdn.prod.website-files.com/65b8cd72835ceeacd4449a53/69cbbfc0ca79c1ce905c52e5_Vector-31.svg"
+          },
+          "name": "LangChain Blog",
+          "url": "http://langchain.com/blog"
+        },
+        "url": "http://langchain.com/blog/financial-ai-that-investigates-macro-trends-eu-economic-analysis-with-you-com-and-langchain"
+      }
+    ],
+    "schemaAuthor": "S. Tangedipalli",
+    "schemaTypes": [
+      "Article"
+    ],
+    "secondaryCategories": [
+      "金融科技",
+      "LLM 应用架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "siteName": "LangChain Blog",
+    "summaryBrief": "文章展示了用 Deep Agents、LangSmith 和 You.com 金融研究 API 构建欧盟 GDP 宏观分析代理的案例，涵盖子代理分工、查询形状、工作底稿、追踪审计、评估与部署流程。",
+    "tags": [
+      "LangChain",
+      "LangSmith",
+      "Deep Agents",
+      "金融研究代理",
+      "可观测性",
+      "多代理工作流"
+    ],
+    "title": "",
+    "totalScore": 70.5,
+    "url": "https://www.langchain.com/blog/financial-ai-that-investigates-macro-trends-eu-economic-analysis-with-you-com-and-langchain"
+  },
+  "payloadHash": "sha256:56b8a5aa5eba2c65be9ca67d8907dad75f418d532cc05beb60de216329a79849",
+  "refs": {},
+  "revisionId": "sha256:0bcf6d9165f94a7179e51f1e547b142694ca64841d1cb33264f1836ab3108be9",
+  "schemaVersion": 1,
+  "updatedAt": 1780373442695
+}

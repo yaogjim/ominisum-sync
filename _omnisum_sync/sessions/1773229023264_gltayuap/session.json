@@ -1,0 +1,70 @@
+{
+  "createdAt": 1773229023264,
+  "entityType": "session",
+  "id": "1773229023264_gltayuap",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理团队代码库中的隐性规范，沉淀为架构文档、lint规则和测试约束。",
+      "检查现有CI与测试反馈链路，确保Agent能够获得可解析、可修复的反馈信号。",
+      "将代码评审标准转化为机器可读的检查项，减少Agent重复犯同类错误。",
+      "把AI辅助开发重点从“写更多代码”转向“设计更好的反馈回路与控制面”。"
+    ],
+    "archiveReason": "提供了一个高解释力的上位框架，把AI工程实践与控制论、Kubernetes控制器和反馈系统联系起来，适合作为理解Agent工程演进的参考材料。",
+    "classifiedAt": 1773830309737,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Harness工程的控制论解读",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Harness Engineering可被理解为控制论在AI软件工程中的体现，本质是闭合高层反馈回路。",
+      "从手动执行到声明目标和设计控制器，是蒸汽机、Kubernetes到AI工程共享的范式迁移。",
+      "AI Agent落地的关键不只是测试环境可运行，更在于把架构约束、审美标准和修复策略编码化。",
+      "生成比验证更难，因此人类长期优势会更多体现在评判、校准和定义正确性上。"
+    ],
+    "oneHighValuePoint": "最有价值的点是指出AI Agent失败往往不是模型能力不足，而是团队没有把“什么是好代码”的隐性标准外化为可执行规则。",
+    "oneLineReview": "这是篇框架感很强的AI工程文章，类比精准，方法论价值明显高于操作细节。",
+    "primaryCategory": "AI工程方法论",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "软件工程",
+      "控制论",
+      "AI Agent开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将Harness Engineering概括为控制论在软件工程中的新表现：工程师不再直接写代码，而是设计环境、反馈机制与约束规则，让AI在闭环中执行。核心价值在于提出“把隐性判断力外化为机器可读标准”的方法论，对AI Agent落地极具启发。",
+    "tags": [
+      "Harness Engineering",
+      "控制论",
+      "反馈回路",
+      "软件架构",
+      "AI Agent"
+    ],
+    "title": "宝玉: 转译：Harness 工程就是控制论 读 OpenAI 那篇 Harness 工程的文章[1]时，我一直有种说不上来的感觉",
+    "totalScore": 76.5,
+    "url": "https://x.com/dotey/status/2031231856071372830"
+  },
+  "payloadHash": "sha256:c743dc170f75561f7b61a9f4cd584cae8b64703fb4bc773193bbff959765cae1",
+  "refs": {},
+  "revisionId": "sha256:12ceb9e8ca1d79fa0b222e7a7ad868356d3a0965e592e9950c75b67777d5c983",
+  "schemaVersion": 1,
+  "updatedAt": 1773830309743
+}

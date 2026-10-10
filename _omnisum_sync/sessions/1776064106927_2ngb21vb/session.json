@@ -1,0 +1,67 @@
+{
+  "createdAt": 1776064106927,
+  "entityType": "session",
+  "id": "1776064106927_2ngb21vb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估当前使用的智能体框架是否支持导出、迁移和自主管理长期记忆",
+      "在架构选型时把“记忆所有权”和“跨模型可迁移性”列为核心检查项"
+    ],
+    "archiveReason": "对理解代理框架、记忆耦合与平台锁定风险有一定启发，便于后续做架构比较时回看",
+    "classifiedAt": 1776078061726,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "代理记忆与框架所有权",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "代理框架本质上是围绕模型、工具和上下文交互的执行层，不会因模型变强而消失",
+      "短期记忆与长期记忆都深受框架如何加载、压缩、存储和暴露上下文的机制影响",
+      "封闭框架和托管 API 会把状态与记忆锁在平台内部，显著提高迁移成本",
+      "开放记忆存储和模型无关架构有助于降低供应商锁定风险"
+    ],
+    "oneHighValuePoint": "记忆不是可随意外挂的插件，而是代理框架管理上下文与状态的核心能力，因此“谁控制框架，谁就控制记忆”。",
+    "oneLineReview": "有洞见的架构立场文，但更像观点倡议而非严谨分析。",
+    "primaryCategory": "AI智能体工程",
+    "rating": "B",
+    "rejectReason": "论证以观点陈述为主，证据和可验证案例较少，且夹带产品推广，需结合其他资料交叉判断",
+    "retentionDecision": "短期参考后归档，适合作为智能体架构选型时的观点材料",
+    "secondaryCategories": [
+      "记忆系统设计",
+      "平台锁定与开放生态"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章强调代理框架不会消失，且与记忆系统深度绑定；若使用封闭框架或托管 API，记忆控制权将让渡给平台，进而形成强锁定。核心主张是记忆与框架应开放并可迁移。",
+    "tags": [
+      "Agent Framework",
+      "Memory",
+      "Open Source",
+      "Vendor Lock-in",
+      "Context Engineering"
+    ],
+    "title": "你的框架，你的记忆",
+    "totalScore": 61.5,
+    "url": "https://x.com/hwchase17/status/2042978500567609738"
+  },
+  "payloadHash": "sha256:4b2fee3d991dfdb15a037afac62be9a4e78461ac878f49f32ba46c791e453a1c",
+  "refs": {},
+  "revisionId": "sha256:e48a4a965bb2cddfdda20c1ac225f22f9cdc2fef7b620c604f02d539c7d40f1e",
+  "schemaVersion": 1,
+  "updatedAt": 1776078061731
+}

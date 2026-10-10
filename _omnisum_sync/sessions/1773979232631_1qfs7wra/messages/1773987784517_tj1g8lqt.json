@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773987772562,
+  "entityType": "message",
+  "id": "1773987784517_tj1g8lqt",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 内容总结\n\n- **LiteParse 是什么**：LlamaIndex 开源的无模型文档解析工具，面向 AI Agent 使用场景，免费、无需 GPU。\n- **核心优势**：在普通硬件上可实现约 2 秒解析 500 页，速度快、成本低。\n- **效果表现**：官方称其在多数文档解析上比 `PyPDF`、`PyMuPDF`、`MarkItDown` 更准确、输出更适合 AI 理解。\n- **能力范围**：支持 50+ 文件格式，包括 PDF、Office 文档和图片，并支持原生截图能力。\n- **关键亮点**：对于复杂 PDF 表格，采用“空间网格”输出，尽量保留结构，避免被轻量解析器压平成无序文本。\n- **定位边界**：不是 VLM/OCR 工具替代品，但在大多数常见文档场景里，轻量解析已足够强大。\n- **生态兼容**：可一行安装并接入 Claude Code、OpenClaw 等 AI Agent 工作流。\n- **背景来源**：LiteParse 是 LlamaParse 多年生产级文档解析经验中提炼出的轻量核心能力。\n\n# 一句话评论\n\nLiteParse 的价值不只是“更快更便宜”，而是把“足够好的文档理解”真正做成了 AI Agent 可直接调用的基础设施。\n\n# 一句话高价值内容\n\n对多数 AI 应用来说，真正重要的不是还原漂亮排版，而是以低成本保留可推理的文本与表格结构，而 LiteParse 正是在这个点上切中了实用价值。",
+    "prompt_id": "default",
+    "role": "assistant",
+    "timestamp": 1773987772562,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d6d5c104bed298af7f7c6044f179f08c61954ad1ac20551b8d83784bf8796cbc",
+  "refs": {
+    "sessionId": "1773979232631_1qfs7wra"
+  },
+  "revisionId": "sha256:f55de3c701d47de6c3259b5ce4ed9e24658e0951e74f9477bbd0df7c99b238a1",
+  "schemaVersion": 1,
+  "updatedAt": 1773987772562
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774246967484,
+  "entityType": "session",
+  "id": "1774246967484_k2qi6wli",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看 Clausetta 的开源 hank 配置，理解其输入规范、测试夹具与生成流程",
+      "评估自己的代理或工具链是否需要统一接口层，并尝试用测试驱动方式构建 shim"
+    ],
+    "archiveReason": "提供了代理框架适配层自动生成的思路，可在后续做多代理集成时参考",
+    "classifiedAt": 1774246981939,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Clausetta适配器生成方案",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "代理框架之间可通过统一接口规范与自动生成的 shim 实现互操作",
+      "使用测试套件和 Markdown 规范作为夹具，可支持适配层的构建与验证闭环",
+      "规范驱动开发可用于应对底层 harness 更新后的快速重建与部署"
+    ],
+    "oneHighValuePoint": "把适配层生成过程转化为“规范+测试夹具+构建验证循环”，使代理接口兼容可以被反复再生而非手工维护。",
+    "oneLineReview": "思路新鲜、方向很强，但更像产品展示帖而非可直接复用的深度技术拆解。",
+    "primaryCategory": "AI工程与代理框架集成",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为代理框架互操作性的案例素材",
+    "secondaryCategories": [
+      "开发工具链",
+      "规范驱动开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了开源项目 Clausetta，可通过测试套件与 Markdown 规范自动为不同代理框架生成兼容 Claude Code 风格接口的适配层。核心价值在于“构建-验证”循环与规范驱动开发思路，但内容偏展示性质，证据与细节不足。",
+    "tags": [
+      "Agent适配层",
+      "Claude接口",
+      "开源项目",
+      "规范驱动开发",
+      "连接器生成"
+    ],
+    "title": "Hrishi: Clausetta (Clawd + Rosetta) is still one of the coolest things I've seen hanks d…",
+    "totalScore": 55.5,
+    "url": "https://x.com/hrishioa/status/2035814032276623810"
+  },
+  "payloadHash": "sha256:6f21e31168c40ae2b5bf9d82ced759dc19b7295358c05b3a1720ba2b904b6d22",
+  "refs": {},
+  "revisionId": "sha256:5c43aafc37180e01da28c5f626ff23948106fbb65e4206606233b6dd15cd8cf3",
+  "schemaVersion": 1,
+  "updatedAt": 1774247497439
+}

@@ -1,0 +1,23 @@
+{
+  "createdAt": 1775198552785,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1775198552785",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 开头概括\n\nMultica 是一个面向 AI-native 小团队的开源协作平台，核心目标是把分散在个人 agent 会话里的知识和任务流程统一到一个团队协作中枢里。  \n它的定位可以理解为 “像 Linear 一样管理任务，但把 AI agent 当作团队正式成员来协作”。\n\n## 一、为什么要做 Multica\n\n- 文章先指出了团队在使用 coding agent 时的两个核心痛点：\n  - **知识无法共享**：每个人都在用 agent，但上下文散落在各自 session 中，别人看不到过程和结果。\n  - **多人 + 多 Agent 缺少协作中枢**：当多个 agent 同时跑任务时，团队很难统一看到 “谁在做什么、进度如何、是否卡住”。\n\n- 作者用很直白的场景说明问题：\n  - A 做完了一件事，B 不知道；\n  - agent 跑完一轮，结果只有发起人能看到；\n  - 最终团队知识变成一座座 “孤岛”。\n\n- 本质上，Multica 想解决的不是单个 agent 能不能写代码，而是**团队如何围绕多个 agent 高效协作**。\n\n## 二、Multica 是什么\n\n- 用一句话概括：\n  - **Multica = 像 Linear 一样管理任务，但 AI agent 是一等公民。**\n\n- 它支持的协作方式是：\n  - 像给同事派任务一样，把 issue 分配给 agent；\n  - agent 自动领取任务；\n  - 在本地机器执行代码；\n  - 提交结果、更新状态、发表评论；\n  - 整个过程都在同一个看板中实时可见。\n\n- 核心设计思路很简单：\n  - 团队成员把自己的 coding agent（文中举例：**Claude Code / Codex**）注册到团队 workspace；\n  - 之后 agent 就能像 “AI 员工” 一样参与日常工作流，而不是作为孤立工具存在。\n\n## 三、适合什么团队\n\n- 文中明确给出了适用人群：\n  - **1-10 人的 AI-native 小团队**\n  - 已经大量使用 coding agent，但缺少统一协作中心的团队\n  - 希望把 agent 融入日常工作流，而不是单独使用的团队\n\n- 这说明 Multica 并不是面向所有公司，而是更适合：\n  - 团队规模不大；\n  - agent 使用频率高；\n  - 对协作透明度和知识沉淀要求高的场景。\n\n## 四、Multica 的使用方式\n\n### 1. 创建 Workspace\n\n- 有两种方式：\n  - 直接使用`multica.ai`的云服务；\n  - 自己通过`docker`部署。\n\n- 创建完成后，会得到一个空的 workspace，作为团队协作的基础空间。\n\n### 2. 连接本地或云端 Agent Runtime\n\n- 在运行 agent 的机器上安装`multica cli`，比如本机或一台专用的`mac mini`。\n- 文中给出的安装命令是：\n\n```bash\nbrew tap multica-ai/tap\nbrew install multica-cli\nmultica login\nmultica daemon start\n```\n\n- 完成鉴权和注册后，本地算力就会接入 workspace，成为可调度的 runtime。\n\n### 3. 创建第一个 AI 员工\n\n- 在 Agents 页面中，可以创建一个具体的 agent，并选择它运行在哪台机器上。\n- 每个 Agent 都有：\n  - 独立记忆\n  - 独立设置\n  - 独立角色定位\n\n- 文中举的例子是：\n  - 创建了一个**SRE 工程师角色的 AI 员工**\n  - 专门负责**Multica 服务部署工作**\n\n### 4. 给 Agent 分配任务\n\n- 使用方式和给人派任务类似：\n  - 创建一个 issue；\n  - 直接分配给某个 agent。\n\n- 文中的具体案例是：\n  - 让这个 AI 员工帮忙部署服务；\n  - 只需要在系统里创建 issue 并指派给它即可。\n\n- 作者还提到一个很有代表性的案例：\n  - **Multica 这个项目本身，就是使用 Multica 来开发的。**\n  - 这相当于用自己的产品管理自己的研发流程，说明它已经被拿来做真实协作验证。\n\n## 五、这款产品的关键价值\n\n- 从文章逻辑看，Multica 的核心价值主要有 3 点：\n  - **任务透明**：所有人都能实时看到 agent 在做什么。\n  - **知识沉淀**：不再只有发起人知道 agent 做过什么，团队可以共享上下文。\n  - **人机协作统一**：人和 agent、agent 和 agent 可以在同一套看板和任务系统里协同。\n\n- 换句话说，它想解决的不是 “让 agent 更聪明”，而是 “让 agent 更像团队成员，能被管理、被协作、被追踪”。\n\n## 六、文章结尾传达的信息\n\n- 文章最后给出了明显的开源项目信号：\n  - 提供官网入口；\n  - 欢迎用户**star、试用、提 issue、提交 PR**。\n\n- 这说明 Multica 当前处在积极吸引开发者和早期团队参与的阶段，重点是：\n  - 让更多 AI-native 团队试用；\n  - 收集反馈；\n  - 通过开源社区完善产品。\n\n# 总结\n\nMultica 关注的不是 “单个 AI agent 的能力”，而是 “团队如何围绕多个 agent 高效协作”。  \n它通过 workspace、runtime、AI 员工和任务看板，把原本零散的 agent 使用方式，变成一个对团队可见、可分工、可追踪的协作系统，尤其适合**1-10 人、重度使用 coding agent 的 AI-native 小团队**。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1775198552785,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:01abf50a6272dfdc035204a6e10e781e7e15ff551995b21c1460f67399040d36",
+  "refs": {
+    "sessionId": "1775198552873_9czthmra"
+  },
+  "revisionId": "sha256:af59a6e4b15d7f4de82bfae213fdf49e44a65d7d12abd8013c86c3b2e626a05a",
+  "schemaVersion": 1,
+  "updatedAt": 1775198552785
+}

@@ -1,0 +1,70 @@
+{
+  "createdAt": 1773308838396,
+  "entityType": "session",
+  "id": "1773308838396_1vw36ycn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在构建长会话Agent，可评估把上下文压缩从固定阈值改为模型可调用工具",
+      "为Agent定义明确的压缩触发指引，如任务完成、新需求覆盖旧需求、进入大规模读写前",
+      "在本地任务上对比自主压缩与固定阈值压缩的成功率、成本与中断感受",
+      "补充评测：统计误触发压缩、遗漏压缩和压缩后任务成功率的变化"
+    ],
+    "archiveReason": "提出了自主触发上下文压缩的实用设计思路，并给出使用方式与适用场景，适合后续构建长程Agent时参考。",
+    "classifiedAt": 1773830165448,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "智能体自主压缩上下文机制",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "固定token阈值触发压缩并不总是最优，任务边界往往是更好的压缩时机",
+      "自主压缩适用于开始新任务、提炼出结论、准备读取大量新上下文或进入复杂多步流程前",
+      "实现上可保留最近约10%上下文并总结更早消息，以兼顾连续性与容量",
+      "保留完整历史于虚拟文件系统可降低错误压缩带来的信息丢失风险",
+      "该设计体现让模型接管更多工作记忆控制、减少手工规则调参的Agent工程趋势"
+    ],
+    "oneHighValuePoint": "最有价值的点是把“何时压缩上下文”从固定阈值规则转为由模型在任务边界和信息提炼完成后自主决策。",
+    "oneLineReview": "一个方向正确且有工程启发的小功能介绍，但证据与细节深度仍不足以支撑更高评级。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为Agent上下文管理设计案例参考",
+    "secondaryCategories": [
+      "上下文管理",
+      "开发工具设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Deep Agents 在 SDK 与 CLI 中新增的自主上下文压缩能力，让模型在合适时机自行触发压缩而非固定阈值压缩。内容覆盖动机、触发场景、实现方式、代码示例与初步测试经验，适合关注长上下文Agent设计的人快速了解。",
+    "tags": [
+      "LLM Agent",
+      "Context Compression",
+      "Deep Agents",
+      "Agent Memory",
+      "SDK"
+    ],
+    "title": "Autonomous context compression",
+    "totalScore": 64.5,
+    "url": "https://x.com/masondrxy/status/2031798630177251514"
+  },
+  "payloadHash": "sha256:42baab9923f31459b547a22842c35eb124e8e9650211ae15040c05496e1c29f9",
+  "refs": {},
+  "revisionId": "sha256:38db402e9d80ccb5aea1afab7294c41d1318158b15a13670f2c28c054462065e",
+  "schemaVersion": 1,
+  "updatedAt": 1773830165452
+}

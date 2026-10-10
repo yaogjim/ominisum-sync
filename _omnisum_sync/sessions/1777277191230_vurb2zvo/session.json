@@ -1,0 +1,68 @@
+{
+  "createdAt": 1777277191230,
+  "entityType": "session",
+  "id": "1777277191230_vurb2zvo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在设计智能体长期记忆时评估文件系统式记忆方案，而不仅依赖向量数据库",
+      "为代理提供明确的记忆目录结构和读写工具，观察其是否能自主沉淀经验",
+      "将记忆文件导出作为调试智能体行为和评估长期学习效果的手段"
+    ],
+    "archiveReason": "提供了Claude托管代理记忆机制、文件式记忆设计和跨会话持久化的实际案例，对理解智能体上下文管理有参考价值",
+    "classifiedAt": 1777284762194,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude代理文件记忆机制",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Claude Managed Agents的记忆以文件形式持久化，并可挂载到/mnt/memory/<store-name>/路径下",
+      "多个代理可以共享同一内存存储，平台负责实时同步和并发处理",
+      "文件式记忆具备可读、可导出、可共享的优势，有利于调试和理解代理行为",
+      "较新的模型能从失败经验中提炼结构化记忆，而早期模型更容易记录低价值文本"
+    ],
+    "oneHighValuePoint": "让智能体使用通用文件系统自行组织记忆，可能比预设专用记忆工具更灵活。",
+    "oneLineReview": "一篇有价值的Claude代理记忆功能介绍，案例有启发性，但证据主要偏轶事。",
+    "primaryCategory": "AI智能体",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为智能体记忆设计的案例材料",
+    "secondaryCategories": [
+      "长期记忆",
+      "上下文管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Claude Managed Agents新增文件式记忆能力，可跨会话访问、同步和导出。通过Claude玩宝可梦案例说明新模型能更好地自主组织记忆，并强调通用文件工具在智能体长期记忆中的价值。",
+    "tags": [
+      "Claude",
+      "Managed Agents",
+      "Agent Memory",
+      "文件系统",
+      "上下文工程"
+    ],
+    "title": "Claude 托管代理中的内存",
+    "totalScore": 69.5,
+    "url": "https://x.com/RLanceMartin/status/2047720067107033525"
+  },
+  "payloadHash": "sha256:3e6c7e27da7398c633ec10b9861ecc070ec2b95bd3b964967cc367f334e01a59",
+  "refs": {},
+  "revisionId": "sha256:8154d2b36124fa87c1120d870790c5788920e74a01a64ab23416f75a2d359da2",
+  "schemaVersion": 1,
+  "updatedAt": 1777284762198
+}

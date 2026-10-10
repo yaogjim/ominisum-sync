@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780615491585,
+  "entityType": "message",
+  "id": "1780615491584_7pbf91x2",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Multica开源托管智能体平台\n\n**评级**: B (60.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: 智能体平台, 开源项目, 软件工程协作\n**标签**: #AI Agent #Coding Agent #自托管 #开发协作 #GitHub\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一个有一定参考价值的开源 AI 编码智能体平台 README，但整体偏产品宣传，缺少真实案例和效果证据。\n**核心高价值点**: 将编码智能体纳入任务看板、状态流转、阻塞反馈和技能沉淀流程，使其更接近团队协作基础设施而非单次命令行工具。\n\n### 摘要\n文章介绍了 Multica 这一开源托管编码智能体平台，强调可将 Claude Code、Codex、Copilot CLI 等工具整合为团队成员式代理，支持任务分配、进度追踪、技能复用、自托管、CLI 和运行时管理。\n\n### 知识要点\n- Multica 支持把多个编码智能体 CLI 接入统一运行时，并通过 WebSocket 实时追踪执行进度\n- 平台提出 Agents as Teammates、Squads、Autopilots、Reusable Skills 等协作概念\n- 架构由 Next.js 前端、Go 后端、PostgreSQL/pgvector 数据库和本地 Agent Daemon 组成\n- 支持云端使用与 Docker 自托管部署，并提供 CLI 进行登录、工作区、Issue 和 Daemon 管理\n\n### 行动项\n- 如果正在评估 AI 编码智能体协作平台，可尝试本地安装并验证任务分配与执行流程\n- 对比 Multica 与现有 Claude Code、Codex、Cursor Agent 工作流的实际效率差异\n- 重点检查其自托管部署、权限模型、运行时隔离和团队协作稳定性\n\n### 存档判定\n归档: 是 — 原因: 作为开源托管编码智能体平台的产品与部署参考，适合后续评估同类工具时对比使用\n删除: 否\n留存决策: 短期参考后可按需保留",
+    "role": "assistant",
+    "timestamp": 1780615491585,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:d836aab625f03981bc651de604038bb8ee4cc9892c68ed03e34c2f6b7782134f",
+  "refs": {
+    "sessionId": "1780534112892_3b7enand"
+  },
+  "revisionId": "sha256:388e14c28b714bc311c95eb128c38efc0021c34097fbae9c77c876f2f1ac05e9",
+  "schemaVersion": 1,
+  "updatedAt": 1780615491585
+}

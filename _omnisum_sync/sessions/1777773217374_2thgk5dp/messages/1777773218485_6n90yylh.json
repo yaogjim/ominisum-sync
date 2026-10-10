@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773218485_6n90yylh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Moxt 实测：把组织上下文折叠进文件夹\n\n## 核心观点\n\n作者认为，当前多数 AI 产品的关键瓶颈不是模型能力，而是 **上下文太散、格式太脏、记忆不可控**。  \nMoxt 的价值在于：把个人或组织的知识、规则、任务和 AI 同事，统一放进一个 AI 原生的 Workspace，让 AI 真正“读得懂、用得上、能持续工作”。\n\n---\n\n## 1. AI 需要一个自己的工作空间\n\n过去工作中的 Context 分散在飞书、Notion、本地文件、微信、脑子里，切任务时大量时间浪费在搬运信息。\n\nMoxt 的解决方式很朴素：让 AI 在文件系统里工作，用 AI 更容易理解的格式承载内容。\n\n它会把不同来源的资料转成 AI 友好的格式：\n\n- Word / PDF / Notion → Markdown\n- Excel → CSV\n- 可视化报告 → HTML\n\n作者认为，Markdown、CSV、HTML 这些格式比复杂 GUI 文档更适合 AI 理解。  \nWorkspace 的意义在于：Context 不再是每次对话临时喂给 AI，而是可以持续累积的知识资产。\n\n---\n\n## 2. 用 AGENTS.md 定义“你是谁”\n\nMoxt 中每个用户都有个人 AI“momo”，其行为规则写在 `AGENTS.md` 中。\n\n作者创建了一个自己的 AI 分身“AI 藏师傅”，把历史内容、语录、写作风格、价值观都沉淀进去，包括：\n\n- 网名与平台矩阵\n- 常用口头禅\n- 写作语气\n- 内容偏好\n- 核心信条\n- 写稿与对话模式切换规则\n\n作者的体感是：  \nAI 的“记忆”不该是黑盒，而应该是可以打开、修改、删除的 Markdown 文件。\n\n其中最重要的判断是：  \n**Rules 也是 Context，而且是最高密度的 Context。**\n\n---\n\n## 3. Context 不只是越多越好，还要会减法\n\nMoxt 有一个 AI 同事模板叫“熵减官”，专门负责：\n\n- 清理过时文档\n- 发现内容矛盾\n- 归档无效资料\n\n作者认为，很多人的知识库不是不够多，而是太乱、太旧。  \n旧观点、无效资料、废弃项目会污染 AI 的判断。\n\n所以好的 AI Workspace 不只是无限存东西，而应该能帮助用户持续“熵减”。\n\n---\n\n## 4. AI 同事要会行动、会记忆、会协作\n\nMoxt 不只是让 AI 读资料，还让 AI 能执行工作。\n\n典型能力包括：\n\n### Skill 组合\n\n作者把自己在 Claude Code 中积累的 Skills 直接迁移到 Moxt，例如：\n\n- 去 AI 味\n- 风格改写\n- 公众号排版\n- PPT 生成\n\n这些 Skill 本质也是 Markdown 文件，因此迁移成本很低。\n\n### 定时任务\n\n例如每天早上自动抓取 Twitter、Newsletter、Hacker News，生成科技热点日报。\n\n### Webhook\n\n例如 GitHub 仓库有新 Issue 时，AI 自动分类：\n\n- Bug → 待修复\n- 功能建议 → 路线图候选\n- 使用问题 → FAQ 草稿\n\n### MCP 与外部系统连接\n\nMoxt 支持连接 Slack、GitHub、Sentry、Figma、Linear 等外部系统，让 AI 能跨工具查询和执行任务。\n\n---\n\n## 5. AI 输出不只是文字，还能直接交付成品\n\n作者对 Moxt 最惊艳的一点，是它能把输出从文字扩展到视觉化成品。\n\n同一份数据，Moxt 可以生成：\n\n- 可交互数据看板\n- 结构完整的 PPT\n- 产品页面 Demo\n- 后台 Dashboard\n- HTML 可视化报告\n\n这些内容都以 HTML 形式保存在 Workspace 中，可以直接打开预览和交付。\n\n这对组织尤其有价值，因为视觉化内容比纯文字更容易理解、汇报和协作。\n\n---\n\n## 6. 作者总结的 Agent 能力公式\n\n作者提出：\n\n> Agent 能力 = 工具 × 上下文 ×（人格 + Memory + Skill）\n\n其中：\n\n- 工具：决定 AI 能做什么\n- 上下文：决定 AI 知道什么\n- 人格 / Memory / Skill：决定 AI 是否像你、懂你、能按你的方式工作\n\n这是乘法关系，任何一项缺失，整体能力都会大幅下降。\n\nMoxt 的优势在于，把这些要素都产品化，并且用文件系统和纯文本方式让用户可控、可理解。\n\n---\n\n## 最终判断\n\n作者认为，Moxt 的核心不是替代人，而是放大人的能力。\n\nAI 应该承担的是：\n\n- 搬运上下文\n- 整理资料\n- 执行重复任务\n- 自动监控信息\n- 生成初稿和可视化交付物\n\n而人真正稀缺的是：\n\n- 判断\n- 审美\n- 品味\n- 决策\n- 执念\n\n所以 Moxt 更适合那些 Context 分散、任务频繁切换、希望沉淀方法论和 AI 工作流的个人或组织。  \n它的本质是：用 AI 同事扩大人的执行带宽，同时保留人的判断和品味。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:436fdd6aa68b2ca6476b0a87b555d90ad49a1bcdad37b34267dc6c0588a32681",
+  "refs": {
+    "sessionId": "1777773217374_2thgk5dp"
+  },
+  "revisionId": "sha256:583e1927b7de7e8abf42adcb39d50caf1f0a38a1f5055335d2aa63da7cff1d27",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

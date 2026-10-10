@@ -1,0 +1,69 @@
+{
+  "createdAt": 1780380645477,
+  "entityType": "session",
+  "id": "1780380645477_9la0xqss",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估现有Agent运行环境是否存在凭证直接注入环境变量或文件的问题。",
+      "为Agent沙箱设计出站访问白名单和默认拒绝策略。",
+      "将长期密钥迁移到代理层或密钥管理服务，通过请求匹配规则注入认证头。",
+      "为高风险Agent任务增加网络日志记录和包源访问限制。"
+    ],
+    "archiveReason": "提供了AI Agent沙箱出站网络控制、凭证外置和动态认证代理的实用架构思路，适合作为Agent安全设计参考。",
+    "classifiedAt": 1780380952434,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "代理沙箱网络安全边界",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent沙箱不应默认拥有开放互联网访问，应通过基础设施策略限制可访问目标。",
+      "Auth Proxy可在出站请求路径上注入认证头，使Agent具备调用API的能力但无法读取凭证。",
+      "动态凭证回调可支持OAuth刷新、用户范围令牌和内部认证服务生成的短期凭证。",
+      "控制沙箱网络路径后，可进一步实现DNS重映射、网络日志审计和请求转换。"
+    ],
+    "oneHighValuePoint": "将凭证从Agent运行时移出，在网络代理层按策略注入认证头，是降低提示注入、恶意依赖和日志泄露风险的关键设计。",
+    "oneLineReview": "一篇有实用架构价值的Agent沙箱安全设计说明，但证据和案例支撑偏弱。",
+    "primaryCategory": "AI基础设施安全",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "Agent沙箱",
+      "网络访问控制"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍LangSmith沙箱Auth Proxy如何通过出站网络代理控制Agent访问外部服务，避免凭证进入运行时，并支持访问白名单、头部注入、动态OAuth凭证、DNS重映射和网络审计等能力。",
+    "tags": [
+      "Auth Proxy",
+      "LangSmith",
+      "沙箱安全",
+      "凭证管理",
+      "出站网络控制"
+    ],
+    "title": "Auth Proxy 如何保障 LangSmith 代理沙箱的网络访问安全",
+    "totalScore": 68.5,
+    "url": "https://x.com/hwchase17/status/2057506580447510889"
+  },
+  "payloadHash": "sha256:87ded51788e74492299e5e778f78ad61e64bdfa0d35bd936f76386a95f55fdbd",
+  "refs": {},
+  "revisionId": "sha256:620b1e71b0091c6a1d815945fc48da53420257968575aa6cb09ed37eec73e7ec",
+  "schemaVersion": 1,
+  "updatedAt": 1780384725277
+}

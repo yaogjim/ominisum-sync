@@ -1,0 +1,69 @@
+{
+  "createdAt": 1773299123655,
+  "entityType": "session",
+  "id": "1773299123655_fku66wi7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若你关注边缘设备AI部署，可用 Docker 或 Termux 按文档快速跑通一次最小可用实例",
+      "在实际采用前，独立验证其内存占用、启动速度和稳定性，不要直接采信 README 中的性能宣传"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773830259018,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "轻量级AI助手部署说明",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "轻量级AI Agent可通过单二进制方式部署在 ARM、RISC-V、MIPS、x86 等多种架构设备上",
+      "项目支持 Termux、Docker Compose、本地编译等多种安装路径",
+      "通过统一配置文件可接入多个模型提供商与多种聊天渠道",
+      "Webhook 类渠道共享同一 Gateway 服务端口，降低了部署复杂度"
+    ],
+    "oneHighValuePoint": "提供了较完整的跨平台部署与多渠道集成配置示例，可直接用于快速验证低资源设备上的 AI Agent 落地。",
+    "oneLineReview": "适合做轻量AI助手部署的快速入门参考，但宣传成分较重、证据不足，长期学习价值一般。",
+    "primaryCategory": "AI工具与部署",
+    "rating": "C",
+    "rejectReason": "内容以产品宣传和安装说明为主，方法论与证据支撑较弱，适合作为项目选型时快速浏览，不适合深度学习。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开源项目README",
+      "边缘设备AI",
+      "多渠道机器人集成"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份 PicoClaw 开源项目的 README，主打在低成本、低内存硬件上部署轻量级 AI Assistant，提供了 Termux、Docker、本地构建及 Telegram、Discord、WhatsApp 等多渠道接入说明，偏安装手册和功能展示。",
+    "tags": [
+      "AI Agent",
+      "Go",
+      "边缘部署",
+      "Termux",
+      "Docker",
+      "聊天机器人"
+    ],
+    "title": "sipeed/picoclaw: Tiny, Fast, and Deployable anywhere — automate the mundane, unleash your creativity",
+    "totalScore": 54,
+    "url": "https://github.com/sipeed/picoclaw"
+  },
+  "payloadHash": "sha256:814834f910ec34d0dec0a283a82635ca7f72dce8461cd0704fcb76e3fde8a7c5",
+  "refs": {},
+  "revisionId": "sha256:a59c6edacc699241c019f51136c5f14e0512234718008fe29b92060c3d188c04",
+  "schemaVersion": 1,
+  "updatedAt": 1773830259025
+}

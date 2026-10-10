@@ -1,0 +1,66 @@
+{
+  "createdAt": 1775558949457,
+  "entityType": "session",
+  "id": "1775558949457_dvap9qpf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的 AI 编程流程中尝试把大目标拆成阶段任务和独立子任务会话",
+      "对比测试 GSD、spec-kit 或基于 CLAUDE.md + hook 的轻量工作流方案"
+    ],
+    "archiveReason": "点出了大项目中 AI 编程失真与上下文污染的核心问题，并给出可迁移的拆解思路",
+    "classifiedAt": 1775558961318,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编程中的上下文污染问题",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "大型项目中，过长对话历史会导致 AI 编程出现上下文污染和输出跑偏",
+      "通过阶段拆解与独立子会话执行，可以提升 AI 在复杂任务中的稳定性",
+      "比起继续堆 prompt，流程纪律和执行护栏可能更重要"
+    ],
+    "oneHighValuePoint": "将大任务拆成独立子任务并放入全新上下文窗口处理，是缓解 AI 编程上下文污染的高性价比策略。",
+    "oneLineReview": "抓住了 AI 编程在复杂项目中的真实痛点，但更像经验帖而非严格验证的方法论文章。",
+    "primaryCategory": "AI 编程工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为 AI 编程工作流优化的案例素材",
+    "secondaryCategories": [
+      "开发效率",
+      "LLM 协作方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕 Claude Code 在大型项目中因上下文过长而跑偏的问题，介绍 GSD 通过阶段拆解和独立会话执行子任务来控制上下文污染。内容切中 AI 编程实践痛点，但论证主要基于经验观察，缺少系统数据支撑。",
+    "tags": [
+      "Claude Code",
+      "上下文污染",
+      "任务拆解",
+      "GSD",
+      "AI编程"
+    ],
+    "title": "sitin: 用 Claude Code 写点小脚本确实挺爽，但项目一大就不行了",
+    "totalScore": 62.5,
+    "url": "https://x.com/sitinme/status/2041127440408547631"
+  },
+  "payloadHash": "sha256:b43720fee7d1b4ba3f4f95812ba006c34b97e84efa4f6b4548ffe23bcac1f009",
+  "refs": {},
+  "revisionId": "sha256:272e91f37f5b738f4c82bfe5d3fc2a27b11bbbc248b5552aef44a0130889553a",
+  "schemaVersion": 1,
+  "updatedAt": 1775559613499
+}

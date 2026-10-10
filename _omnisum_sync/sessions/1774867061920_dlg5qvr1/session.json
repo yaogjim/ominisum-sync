@@ -1,0 +1,73 @@
+{
+  "createdAt": 1774867061920,
+  "entityType": "session",
+  "id": "1774867061920_dlg5qvr1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为现有代理工作流建立失效模式清单，逐项检查是否存在上下文不足、规划偏差和验证懈怠问题。",
+      "在复杂任务中引入多计划生成与独立评审机制，优先选择可维护性更高的方案。",
+      "设计标准化会话交接模板，明确目标、当前状态、关键文件、未决风险和下一步动作。",
+      "将验证环节从执行环节中拆分，使用独立代理或独立上下文专门做验收测试。",
+      "为长周期代理任务增加任务拆解器，把高复杂问题压缩成可连续执行的小任务单元。",
+      "收集提示、轨迹、结果和失败案例数据，建立内部评分标准持续迭代代理框架。"
+    ],
+    "archiveReason": "对长时间运行代理系统的失效模式、编排策略和验证机制有较强参考价值，适合后续设计工作流时反复查阅。",
+    "classifiedAt": 1774868008655,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "长周期代理工程框架反思",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "长时间运行代理的关键风险包括错误攻击向量、规划粘性不足、上下文焦虑和复杂性恐惧。",
+      "通过生成多个候选计划并由独立代理评估可维护性，可减少短视方案和技术债积累。",
+      "会话交接本质是高保真压缩，需要围绕任务目标和代码库结构设计信息密集的handoff提示。",
+      "验证应由新上下文下的独立代理完成，避免代理为错误实现编写自洽测试。",
+      "每次长会话后应执行代码库熵治理，包括修正文档、清理无用代码和消除矛盾信息。",
+      "高质量代理框架需要完整遥测和评分体系，以支持持续迭代优化。"
+    ],
+    "oneHighValuePoint": "最有价值的点是把长周期代理失败拆解为一组可操作的失效模式，并据此设计专门的编排代理、交接机制和验证流程。",
+    "oneLineReview": "这是一篇经验驱动但方法感很强的代理工程实践总结，洞察深刻但证据支撑偏弱。",
+    "primaryCategory": "AI代理工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "软件工程方法论",
+      "智能体工作流设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统梳理了长时间运行自主代理在前置上下文、规划偏差、上下文焦虑、复杂性回避、验证懈怠和代码库熵增等方面的常见失效模式，并提出通过多代理编排、任务拆解、会话交接、独立验证和遥测评分来缓解这些问题。",
+    "tags": [
+      "自主代理",
+      "长上下文",
+      "任务编排",
+      "验证机制",
+      "工程框架"
+    ],
+    "title": "如何解决长时间运行的自主代理工程工作流问题",
+    "totalScore": 73.5,
+    "url": "https://x.com/systematicls/status/2038241033755168959"
+  },
+  "payloadHash": "sha256:c570919599a91b162a47460da6037949ba124d83fbbf579a5f838fcee843cdfc",
+  "refs": {},
+  "revisionId": "sha256:3424c8d4cc5afdced73babdee91be9c6670ae2ca6dcdf423ccd2bb568054e2a4",
+  "schemaVersion": 1,
+  "updatedAt": 1774868251808
+}

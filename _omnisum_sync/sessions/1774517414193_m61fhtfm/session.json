@@ -1,0 +1,67 @@
+{
+  "createdAt": 1774517414193,
+  "entityType": "session",
+  "id": "1774517414193_m61fhtfm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估该框架是否适合你的场景，重点验证图表、流程图和交互组件生成稳定性",
+      "参考其skills与MCP拆分方式，在自有Agent系统中复用提示工程和工具暴露结构"
+    ],
+    "archiveReason": "包含框架定位、架构拆分、运行方式与典型渲染模式，适合作为技术选型资料留存",
+    "classifiedAt": 1774522744158,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "开源生成式UI框架概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "生成式UI可通过sandboxed iframe承载HTML/SVG等动态内容，提高安全性与渲染隔离性",
+      "技能式提示组织与渐进披露可减少主提示词膨胀，提升Agent调用复杂视觉能力的可维护性"
+    ],
+    "oneHighValuePoint": "将复杂可视化生成规则拆成按需加载的SKILL.md技能模块，而不是全部塞进系统提示词，体现了较强的Agent工程化思路。",
+    "oneLineReview": "项目方向很有启发，但更像产品型README，演示充分而证据与实战细节不足。",
+    "primaryCategory": "AI应用开发框架",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合在需要搭建生成式UI或Agent可视化方案时回看",
+    "secondaryCategories": [
+      "生成式UI",
+      "Agent工程",
+      "前端架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个开源生成式UI框架，展示如何结合CopilotKit、LangGraph与MCP，让Agent输出可交互的HTML/SVG/图表/3D界面，并给出快速启动、架构分层和技能式提示组织方式。",
+    "tags": [
+      "CopilotKit",
+      "LangGraph",
+      "MCP",
+      "Generative UI",
+      "Next.js",
+      "开源框架"
+    ],
+    "title": "CopilotKit/OpenGenerativeUI: Open-Source Generative UI Framework",
+    "totalScore": 62.5,
+    "url": "https://github.com/CopilotKit/OpenGenerativeUI"
+  },
+  "payloadHash": "sha256:8b394dcd355f089b12fb42213ec5f8654e6b60705dede088bb4ea9d8099b76de",
+  "refs": {},
+  "revisionId": "sha256:cacf7b3d5816289f1f7003de83a952b83328b95fe4621164289da2e0286a8ce0",
+  "schemaVersion": 1,
+  "updatedAt": 1774522744165
+}

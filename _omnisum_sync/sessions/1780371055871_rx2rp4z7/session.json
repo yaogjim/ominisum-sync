@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780371055871,
+  "entityType": "session",
+  "id": "1780371055871_rx2rp4z7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "遇到 Codex 断联或变慢时，先对比同网络下其他设备表现。",
+      "让 Codex 检查本地 config 配置文件，重点查看固定参数和自动加载的 MCP。",
+      "临时禁用不必要的 MCP 后测试连接稳定性和推理速度。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780371683821,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex断联变慢排查经验",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Codex 的推理速度和连接稳定性可能受本地配置文件影响。",
+      "强制加载某些 MCP 或写死参数可能导致性能下降。",
+      "同一网络下不同设备表现差异可作为排除网络问题的线索。"
+    ],
+    "oneHighValuePoint": "Codex 变慢或断联时，应检查 config 配置和默认加载的 MCP，而不只归因于网络问题。",
+    "oneLineReview": "一个有用但非常粗略的 Codex 故障排查提示，适合遇到类似问题时临时参考。",
+    "primaryCategory": "AI工具使用",
+    "rating": "C",
+    "rejectReason": "内容为个人经验分享，缺少具体配置项、复现过程和系统性排查方法，参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开发工具",
+      "故障排查"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者发现 Codex 推理慢和频繁断联并非网络问题，而是配置文件中写死参数及强制加载 MCP 导致。建议遇到类似问题时，让 Codex 自行检查配置文件并根据现象排查。",
+    "tags": [
+      "Codex",
+      "配置文件",
+      "MCP",
+      "断联",
+      "性能优化"
+    ],
+    "title": "歸藏(guizang.ai): 妈的，终于搞定我的 Codex 断联和推理慢的问题了",
+    "totalScore": 41,
+    "url": "https://x.com/op7418/status/2061335964992323744"
+  },
+  "payloadHash": "sha256:f824fd61dd0bbbdf1115a084a8082b47214247278d358b9b0ab7a53c097391a9",
+  "refs": {},
+  "revisionId": "sha256:30eb9ed412e07bcf8945ccf76e5c5bd02e5a1c77ba7f1d7ebd99c14635134b6e",
+  "schemaVersion": 1,
+  "updatedAt": 1780371684180
+}

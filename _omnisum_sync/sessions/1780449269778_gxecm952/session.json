@@ -1,0 +1,66 @@
+{
+  "createdAt": 1780449269778,
+  "entityType": "session",
+  "id": "1780449269778_gxecm952",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在开发 pi 扩展，可查看 Crabbox 是否适合作为跨平台测试工具。",
+      "如主要使用 pi 与 Cursor，可对比 pi-cursor-sdk 与 OpenAI 兼容端点的抽象差异。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780450051314,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 3,
+      "relevance": 4,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Crabbox测试Pi扩展动态",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息碎片化且时效性强，缺乏可复用知识和充分证据，除非正在跟踪该作者项目，否则无长期保留价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Crabbox 可用于跨 Windows、Linux、WSL2 和 macOS 测试 pi 扩展项目。",
+      "Crabbox 0.13.0 增加模态沙箱运行、原生 Windows 脚本和更清晰的 SSH/同步失败提示。",
+      "pi-cursor-sdk 强调在 Cursor 代理循环基础上接入 pi 原生扩展、工具、会话和上下文能力。"
+    ],
+    "oneHighValuePoint": "pi-cursor-sdk 通过保留 Cursor 顶级代理循环并结合 MCP 扩展，可能比通用 OpenAI 兼容端点更适合深度使用 pi 的场景。",
+    "oneLineReview": "适合了解相关项目动态，但作为知识资料价值较低。",
+    "primaryCategory": "开发工具",
+    "rating": "D",
+    "rejectReason": "内容主要是个人项目动态和版本信息，缺少完整背景、操作步骤、案例数据和系统方法论，独立参考价值较低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "AI编程工具",
+      "跨平台测试"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章是一条关于作者采用 Crabbox 测试和验证 pi 扩展项目跨平台兼容性的推文，提到若干扩展版本及 Crabbox 更新，并简要说明 pi-cursor-sdk 相比通用 Cursor 端点的抽象优势。",
+    "tags": [
+      "Crabbox",
+      "pi扩展",
+      "Cursor",
+      "MCP",
+      "跨平台"
+    ],
+    "title": "Mitch Fultz: I adopted Crabbox to test and validate my pi extension projects on different pla…",
+    "totalScore": 32,
+    "url": "https://x.com/fitchmultz/status/2061879325407015082"
+  },
+  "payloadHash": "sha256:63d0b1ea5fb234dd8d6b310ae449c03cc003557877cc90bf664c5e3f7313f963",
+  "refs": {},
+  "revisionId": "sha256:c446ca8851f6120f889a86b16677e6783b4cc87d95429280fa7b0c98b6e613ef",
+  "schemaVersion": 1,
+  "updatedAt": 1780450051684
+}

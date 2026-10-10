@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774317075045,
+  "entityType": "session",
+  "id": "1774317075045_qb9360kk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估你现有 AI 应用是否存在 API Key 在本地、CI、容器和代理中的扩散问题",
+      "对比自建或采购 AI gateway 方案，重点检查身份映射、审计日志、成本统计与权限控制能力"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774317093951,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Tailscale自助AI网关发布",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "tailscale.com",
+    "favicon": "https://tailscale.com/favicon.svg",
+    "knowledgePoints": [
+      "AI 系统中的 API Key 扩散会随着本地开发、CI、容器和代理运行时而不断放大风险",
+      "通过统一网关持有上游模型凭证，并让客户端基于身份访问，可改善审计、授权与成本可视化",
+      "集中控制点有助于追踪组织内不同用户、服务与代理的模型使用行为"
+    ],
+    "oneHighValuePoint": "将模型提供商凭证从应用环境中抽离，改为通过身份认证网关统一代理，是控制 AI Key 扩散与审计缺失的核心思路。",
+    "oneLineReview": "这是篇合格的产品方向介绍，但更像营销稿而非可直接复用的技术实践文。",
+    "primaryCategory": "AI基础设施与安全",
+    "rating": "C",
+    "rejectReason": "内容以产品宣传为主，缺少技术细节、实施步骤和效果数据支撑，信息增量有限。",
+    "retentionDecision": "低优先级保留，短期参考后可删除",
+    "secondaryCategories": [
+      "API密钥管理",
+      "开发者平台"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Tailscale 将 Aperture 以自助式 alpha 形式开放，主打通过网关集中管理 LLM API Key、基于 Tailscale 身份转发请求，并统一观察 AI 使用、成本与审计情况。本质上是安全架构与产品能力说明，技术深度和证据较弱。",
+    "tags": [
+      "Tailscale",
+      "AI网关",
+      "密钥集中化",
+      "身份认证",
+      "用量审计"
+    ],
+    "title": "Aperture by Tailscale is now self-serve: Centralized AI access, usage, and spend",
+    "totalScore": 46.5,
+    "url": "https://tailscale.com/blog/aperture-self-serve?utm_source=twitter&utm_medium=owned-social&utm_campaign=aperture-self-serve"
+  },
+  "payloadHash": "sha256:f0dafabbd1fac8db24ec689f9209fb9d42858c93b52ba993e9e1b3779a774bbc",
+  "refs": {},
+  "revisionId": "sha256:5e0119396f0d5f19f69eb006b0d87c7c42e8011a97bdd958e840f03f3526d205",
+  "schemaVersion": 1,
+  "updatedAt": 1774334891453
+}

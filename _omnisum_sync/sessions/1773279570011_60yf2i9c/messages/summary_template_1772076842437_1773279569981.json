@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773279569981,
+  "entityType": "message",
+  "id": "summary_template_1772076842437_1773279569981",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 总结\n\n这个 Issue 讨论的是：**Qwen3.5 在`mlx-lm`里提示词缓存（prompt caching）效果很差，常常每次都重跑整段上下文**，导致速度慢、显存 / 内存占用高，尤其在多轮对话、工具调用、代码代理场景中更明显。\n\n核心原因主要有 3 类：\n\n1. **Qwen3.5 / Hybrid / Mamba (SSM) 缓存不可随意裁剪**\n   - 普通 KV cache 可以按共享前缀复用。\n   - 但 Mamba/SSM 类缓存**不能方便地 trim**，所以只要新请求和旧缓存不完全对齐，就很难命中。\n\n2. **Reasoning（思维链）token 破坏缓存前缀**\n   - 上一次缓存里可能包含：`Prompt + Reasoning + Assistant`\n   - 但下一次请求客户端通常不会把 reasoning token 再发回来，只会发：`Prompt + Assistant + User`\n   - 结果是缓存虽然 “看起来相关”，但真正可复用的前缀很短，收益很差，甚至会产生很多没用的大缓存副本。\n\n3. **工具调用 / 模板渲染不稳定**\n   - Qwen3.5 的 chat template 里，tools 和参数 JSON 的键顺序可能变化。\n   - 文本哪怕只变一点，缓存键就不同，导致缓存 miss。\n\n此外，维护者也确认：\n- **这是个真实问题**，不是用户误用。\n- 修复方向包括：\n  - 按层处理缓存，而不是按整个模型一刀切；\n  - 对 reasoning model，只保存到 reasoning 开始前的缓存；\n  - 对不可裁剪缓存，使用更合理的 checkpoint /snapshot 机制；\n  - 在内存接近上限时，不再无限复制大缓存。\n\n---\n\n# 通俗解读\n\n可以把缓存理解成 “**做题草稿**”。\n\n正常情况下：\n- 你上一轮已经把前面的题目都算过了；\n- 下一轮只是在原题后面加一句新问题；\n- 那么你应该直接接着算，不用从头再来。\n\n但 Qwen3.5 这里的问题是：\n\n## 1. 草稿本不好剪\n有些模型的缓存像一叠便签，想保留前半段很容易；\n但 Qwen3.5 里有一部分缓存更像一整块连续状态，**不能从中间随便剪掉**。\n\n所以如果新请求和旧请求不是 “几乎一模一样接着来”，就没法优雅复用，只能重算很多内容。\n\n---\n\n## 2. 模型脑内 “思考过程” 没有被下一轮带上\n比如第一轮：\n\n- 用户：请帮我写函数\n- 模型内部：先分析需求、列步骤……（reasoning）\n- 模型输出：这是函数代码\n\n缓存里其实可能存了：\n- 用户问题\n- 模型 reasoning\n- 模型回答\n\n但第二轮客户端发来的内容通常不会包含 reasoning，只会发：\n- 用户问题\n- 模型回答\n- 新用户问题\n\n这就像你上次草稿里夹了一大段 “心里默算”，但下次题目里这段没了。  \n于是缓存系统会发现：**咦，后面对不上了**，只能退回到更早的位置，甚至几乎重来。\n\n---\n\n## 3. 工具列表哪怕顺序变一下，也算 “不是同一个提示词”\n对于 agent /tool calling 场景，prompt 里往往会嵌入工具定义 JSON。\n\n如果第一轮是：\n\n```json\n{\"type\":\"object\",\"required\":[\"pattern\"],\"additionalProperties\":false}\n```\n\n第二轮变成：\n\n```json\n{\"additionalProperties\":false,\"type\":\"object\",\"required\":[\"pattern\"]}\n```\n\n虽然语义完全一样，但字符串不同。  \n**缓存是按 token / 文本匹配，不会理解 “你这只是换了个字段顺序”**，所以还是 miss。\n\n---\n\n# 我的意见\n\n## 一、这不是单点 bug，而是 “多因素叠加”\n我认为这件事不能简单理解成 “Qwen3.5 缓存坏了”，更准确地说是：\n\n- **模型结构特性**（SSM /hybrid）\n- **reasoning token 的处理方式**\n- **chat template /tools 序列化不稳定**\n- **当前 LRU prompt cache 策略过于粗糙**\n\n这些因素叠在一起，才导致体验特别差。\n\n---\n\n## 二、短期最有效的办法：先解决 “稳定前缀”\n如果你现在就要用 Qwen3.5，我建议优先做这几件事：\n\n### 1. 保证 tools 渲染稳定\n- 对 JSON key 排序\n- 对 tool arguments 排序\n- 保证每轮模板输出尽量一致\n\n这是**投入小、收益大**的优化。\n\n### 2. checkpoint 放在 reasoning / 最后用户消息之前\n- 不要把`<think>`后面的内容也作为主要缓存锚点\n- 尽量缓存 “稳定前缀”\n\n这对 reasoning model 很关键。\n\n### 3. 接受 “最后一轮可能仍要重算”\n由于 SSM 层不可裁剪，**完全像传统 Transformer 一样丝滑复用，短期可能做不到**。\n现实目标应该是：\n- 不要每次从开头重跑\n- 只重跑最近一轮附近的内容\n\n这已经能明显改善体验。\n\n---\n\n## 三、从工程角度看，官方后续方向是对的\n我比较认同维护者提到的思路：\n\n- **按层处理缓存**\n- 对不可 trim 的层做快照 / 锚点恢复\n- 对 reasoning 模型只存到 reasoning 开始前\n- 内存不足时避免复制巨型缓存\n\n这是比 “头痛医头” 更稳的路线。\n\n---\n\n## 四、如果你是普通用户，当前结论很简单\n### 可以这样理解：\n- **不是 Qwen3.5 不能缓存**\n- 而是它在`mlx-lm`当前实现下，**缓存命中条件更苛刻**\n- 尤其在：\n  - 多轮对话\n  - agent\n  - 工具调用\n  - reasoning 输出\n  这些场景下更容易失效\n\n### 实际建议：\n- 如果追求稳定缓存体验，当前阶段**MiniMax / 非 hybrid 模型可能更省心**\n- 如果必须用 Qwen3.5：\n  - 更新到较新版本\n  - 使用更 cache-friendly 的 chat template\n  - 固定 tools/args 顺序\n  - 减少 prompt 在每轮中的细微变化\n\n---\n\n# 一句话结论\n\n**这个问题本质上不是 “缓存完全没做”，而是 Qwen3.5 的模型结构 + reasoning + tools 模板，让现有缓存机制很难高效复用；短期靠稳定模板和更好的 checkpoint 能缓解，长期需要框架层重构缓存策略。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "解读",
+    "timestamp": 1773279569981,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e6699f46c606138a53f79f9d929e04b9785f43b78e966dd45f363452cb973947",
+  "refs": {
+    "sessionId": "1773279570011_60yf2i9c"
+  },
+  "revisionId": "sha256:a03529c5f385443b694a4ed2bb66cb4d7d5ddbc699ba87bafe5ca70862e59003",
+  "schemaVersion": 1,
+  "updatedAt": 1773279569981
+}

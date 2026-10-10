@@ -1,0 +1,66 @@
+{
+  "createdAt": 1776645458767,
+  "entityType": "session",
+  "id": "1776645458767_w3ypagga",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查当前仓库中的 Markdown 文件，按用途拆分到审计、文档、计划和规范目录",
+      "为团队定义统一的目录语义和命名约定，减少人与代理对文件角色的误解"
+    ],
+    "archiveReason": "内容虽短，但提出了可直接借鉴的仓库信息分层思路，便于后续实践时参考",
+    "classifiedAt": 1776646213199,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "面向代理的仓库结构建议",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI 代理在代码仓库中容易因文档语义混杂而产生错误联想",
+      "用 /audits、/docs、/plans、/specs 区分验证、描述、计划和规范可提升可读性",
+      "文档命名与目录语义会直接影响代理的上下文检索与推断质量"
+    ],
+    "oneHighValuePoint": "将“证据、描述、意图、执行规范”分目录存放，能显著降低 AI 代理理解仓库时的歧义。",
+    "oneLineReview": "是一个有启发的仓库组织经验贴，但证据薄弱，更像实务提示而非完整方法论。",
+    "primaryCategory": "AI工程实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留归档，适合作为仓库整理的启发性原则",
+    "secondaryCategories": [
+      "知识管理",
+      "代码仓库设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章主张 AI 代理出错的根因常不是 Markdown 太多，而是仓库缺乏结构化语义分层。作者建议将验证、描述、计划和规范分别放入 /audits、/docs、/plans、/specs，以减少代理对文件含义的猜测。",
+    "tags": [
+      "AI代理",
+      "仓库结构",
+      "Markdown",
+      "Claude Code",
+      "Codex"
+    ],
+    "title": "X 上的 klöss：“your markdown files aren't the problem your agents are failing because... your repo has …",
+    "totalScore": 59.5,
+    "url": "https://x.com/kloss_xyz/status/2044169678961234282"
+  },
+  "payloadHash": "sha256:d3657839cbccb261add8e279a3e04e882b635a5f40ab323a6af4b5bd88bf59e6",
+  "refs": {},
+  "revisionId": "sha256:9996f6888ffe53df4b0ab30b84010e87f08171b21be46c8e8aa35faed87bd4ff",
+  "schemaVersion": 1,
+  "updatedAt": 1776646748160
+}

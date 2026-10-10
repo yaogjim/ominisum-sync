@@ -1,0 +1,72 @@
+{
+  "createdAt": 1780558081156,
+  "entityType": "session",
+  "id": "1780558081156_89hgw3uu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果正在做Agent前端，先盘点当前渲染工具数量，超过15个应评估是否迁移到Declarative/A2UI模式。",
+      "为现有生成式UI需求按三类模式重新分类：核心精确流程、长尾动态组件、一次性可视化。",
+      "在设计Agent UI时优先定义组件catalog和schema契约，避免直接依赖模型自由生成HTML。",
+      "对Open-ended HTML渲染使用sandboxed iframe，并限制sandbox权限，避免允许same-origin。"
+    ],
+    "archiveReason": "文章提供了Controlled、Declarative、Open-ended三类生成式UI模式的对比框架，并包含选型建议、代码示例和常见问题，具有较高方法论价值。",
+    "classifiedAt": 1780558609847,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "生成式UI三种架构模式",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Controlled模式由前端预置组件，Agent只选择渲染哪个组件，适合少量高价值、需要精确设计的流程。",
+      "Declarative模式由Agent输出UI schema，前端通过组件目录映射渲染，适合大量卡片、表单、仪表盘等长尾场景。",
+      "Open-ended模式让Agent生成原始HTML或驱动MCP Apps，灵活但品牌一致性和安全性较差，适合一次性可视化。",
+      "Controlled模式的主要扩展瓶颈是组件工具定义会持续占用上下文窗口，组件越多token成本越高。",
+      "A2UI、AG-UI、MCP、A2A分别承担Agent到UI、Agent到用户、Agent到工具、Agent间通信等不同角色。"
+    ],
+    "oneHighValuePoint": "用三种模式建立生成式UI选型框架：像素级确定性选Controlled，长尾组件与规模化选Declarative，一次性临时可视化选Open-ended。",
+    "oneLineReview": "一篇较系统的生成式UI架构选型文章，方法论清晰但证据偏经验化且带有一定工具推广色彩。",
+    "primaryCategory": "AI应用开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为生成式UI架构选型参考",
+    "secondaryCategories": [
+      "前端架构",
+      "生成式UI",
+      "Agent工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将生成式UI分为Controlled、Declarative和Open-ended三种模式，分别分析其架构方式、适用场景、扩展性、token成本和常见故障，并建议默认采用Declarative，关键流程用Controlled，临时可视化才用Open-ended。",
+    "tags": [
+      "Generative UI",
+      "AG-UI",
+      "A2UI",
+      "MCP",
+      "CopilotKit",
+      "前端架构"
+    ],
+    "title": "生成式 UI 是新的前端",
+    "totalScore": 72,
+    "url": "https://x.com/Saboo_Shubham_/status/2062220865643982875"
+  },
+  "payloadHash": "sha256:1c497a0ae637ecdd5b1140bd0ed447d76ba4702f8334f7b21fde52c2d11a2493",
+  "refs": {},
+  "revisionId": "sha256:5127e862a428177530d898776bc5dccc50d4cbfb3afcde7d1bd563dfa26954f8",
+  "schemaVersion": 1,
+  "updatedAt": 1780560424054
+}

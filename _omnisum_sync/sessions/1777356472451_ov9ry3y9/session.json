@@ -1,0 +1,67 @@
+{
+  "createdAt": 1777356472451,
+  "entityType": "session",
+  "id": "1777356472451_ov9ry3y9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注文档自动化，可打开原博客查看具体流程设计和提示词/代码实现。",
+      "参考 GitHub 仓库，评估其是否能迁移到合同审核、简历解析、票据核验等类似场景。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777375212928,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "贷款收入核验AI自动化方案",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "贷款申请处理中大量时间消耗在税表、工资单、W-2、银行对账单之间的收入交叉核对。",
+      "端到端自动化此类流程需要高精度 OCR、结构化抽取、跨文档一致性检查和置信度标注。",
+      "LlamaParse 可用于复杂金融文档解析，Claude Agent SDK 可用于生成结构化输出和编排核验流程。"
+    ],
+    "oneHighValuePoint": "贷款审核的核心难点不只是字段提取，而是跨多类文档进行一致性核验并保留可审计证据。",
+    "oneLineReview": "一个有现实应用价值的 AI 文档自动化案例线索，但推文本身信息量和证据支撑不足。",
+    "primaryCategory": "AI应用",
+    "rating": "C",
+    "rejectReason": "正文主要是推广博客和代码仓库，缺少具体实现细节、评测数据和完整方法论，单独保留价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "文档处理",
+      "金融科技"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍用 LlamaParse 和 Claude Agent SDK 自动化贷款收入核验流程，通过高精度 OCR 提取税表、工资单、银行流水等文档信息，并跨文档核对收入一致性，附有博客和代码仓库链接。",
+    "tags": [
+      "AI Agent",
+      "OCR",
+      "LlamaParse",
+      "Claude",
+      "贷款审核",
+      "文档自动化"
+    ],
+    "title": "Jerry Liu: Processing loan applications traditionally takes a staggering amount of time goi…",
+    "totalScore": 53.5,
+    "url": "https://x.com/jerryjliu0/status/2048860020021031105"
+  },
+  "payloadHash": "sha256:83f1e4a2e00113a7946b6091418ca2b7a0d498bb9d5e38d453fde35371ab5ae2",
+  "refs": {},
+  "revisionId": "sha256:439ee688f69a52d44433123401e48c2fac759c9a8c3c2e98198ffe9b949850b5",
+  "schemaVersion": 1,
+  "updatedAt": 1777813366260
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773653624132,
+  "entityType": "message",
+  "id": "1773653703516_1dbz8ppt",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章主要介绍了 `Scrapling`：一个“自适应”的 Python 网页抓取框架，既能做单次请求，也能做大规模爬虫。它的核心卖点是：抗网页改版、能绕过部分反爬、支持并发抓取与断点续爬，同时兼顾性能和易用性。\n\n- **项目定位与核心价值**\n  - `Scrapling` 目标是用一个库覆盖从简单抓取到完整爬虫的需求。\n  - 它强调 3 个核心能力：**自适应元素定位**、**反爬绕过**、**可扩展爬虫框架**。\n  - 例如，页面结构变了以后，之前保存的 `.product` 选择结果仍可通过 `adaptive=True` 自动重新定位，不必完全重写选择器。\n\n- **主要功能特点**\n  - 提供类似 Scrapy 的 Spider API，支持 `start_urls`、`parse` 回调、`Request/Response` 对象。\n  - 支持**并发抓取**、**多会话**、**按域名限速**、**下载延迟**、**暂停/恢复**、**实时流式输出**。\n  - 内置 **ProxyRotator** 代理轮换、被封请求检测与重试、JSON/JSONL 导出。\n  - 支持多种选择方式：CSS、XPath、文本搜索、正则、相似元素查找、自动生成选择器等。\n  - 还内置 MCP Server，可先提取目标内容再交给 AI，减少 token 消耗、提高处理效率。\n\n- **抓取方式与使用示例**\n  - 普通请求可用 `Fetcher`，动态页面可用 `DynamicFetcher`，更隐蔽的请求可用 `StealthyFetcher`。\n  - `StealthyFetcher` 支持浏览器指纹伪装，并可处理 Cloudflare Turnstile / Interstitial 一类拦截。\n  - 示例中：\n    - `StealthyFetcher.fetch(...)` 用于低调抓取受保护页面；\n    - `DynamicFetcher.fetch(...)` 用于完整浏览器自动化；\n    - `Selector(\"<html>...</html>\")` 可直接解析 HTML，不抓网页也能用。\n  - 也支持同步/异步模式，以及带上下文的 Session，用于保持 cookie 和状态。\n\n- **爬虫能力与扩展性**\n  - 可以快速写完整爬虫，比如从 `quotes.toscrape.com` 抓取名言和作者，并自动翻页。\n  - 支持在同一个 Spider 中混用不同会话：\n    - 普通页面走快速 HTTP 会话；\n    - 受保护页面走 stealth 会话。\n  - 支持断点续爬：运行时指定 `crawldir=\"./crawl_data\"`，按 `Ctrl+C` 后会自动保存，下次可从中断处继续。\n  - 还支持 `async for item in spider.stream()` 这种实时消费抓取结果的方式，适合长任务或接 UI/数据管道。\n\n- **CLI 与开发体验**\n  - 内置命令行工具，可直接进入交互式抓取 Shell：`scrapling shell`。\n  - 还能不写代码直接抽取网页内容，例如：\n    - 输出 `.txt` 时提取文本；\n    - 输出 `.md` 时转成 Markdown；\n    - 输出 `.html` 时保留 HTML。\n  - 这对快速验证页面内容、调试选择器、临时导出数据很方便。\n\n- **性能与可靠性数据**\n  - 官方基准测试里，解析器性能表现很强：\n    - `Scrapling`：`2.02 ms`\n    - `Parsel/Scrapy`：`2.04 ms`\n    - `Raw Lxml`：`2.54 ms`\n    - `PyQuery`：`24.17 ms`\n    - `Selectolax`：`82.63 ms`\n    - `BS4 + Lxml`：`1584.31 ms`\n    - `BS4 + html5lib`：`3391.91 ms`\n  - 自适应元素查找方面：\n    - `Scrapling`：`2.39 ms`\n    - `AutoScraper`：`12.45 ms`\n    - 约快 `5.209x`\n  - 所有 benchmark 都是 **100+ 次运行平均值**。\n  - 项目还强调了工程质量：**92% 测试覆盖率**、完整类型标注，并通过 PyRight / MyPy 自动检查。\n\n- **安装与依赖说明**\n  - 要求 **Python 3.10+**。\n  - 基础安装：`pip install scrapling`，只包含解析器。\n  - 若要使用抓取器/浏览器功能，需要：\n    - `pip install \"scrapling[fetchers]\"`\n    - 然后执行 `scrapling install`\n  - 额外功能还包括：\n    - `scrapling[ai]`：MCP / AI 功能\n    - `scrapling[shell]`：Shell 与 extract 命令\n    - `scrapling[all]`：全部功能\n  - 还提供预装浏览器和完整依赖的 Docker 镜像。\n\n- **项目背景与其他信息**\n  - 项目作者是 **Karim Shoair**，采用 **BSD-3-Clause** 许可证。\n  - 仓库页面显示已有 **40+ releases**。\n  - 文章中还提到该项目已被“数百位 Web Scraper”持续使用了一年，并支持 Docker、CLI、MCP、代理与企业级反反爬协作场景。\n\n如果你愿意，我还可以继续把这篇内容整理成一版更适合“汇报/PPT”的超短总结。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773653624132,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:672f91ced0f664a7ee73c537f4f13a13a30b7233d81407f3f93cd83c81c34269",
+  "refs": {
+    "sessionId": "1773653703511_de6eapj7"
+  },
+  "revisionId": "sha256:6255c849dc7cdab3cdbdbc4c501646ab30c4ccf627bf94d34d1f5d690205116a",
+  "schemaVersion": 1,
+  "updatedAt": 1773653624132
+}

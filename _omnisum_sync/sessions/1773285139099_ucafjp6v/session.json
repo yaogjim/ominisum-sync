@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773285139099,
+  "entityType": "session",
+  "id": "1773285139099_ucafjp6v",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估是否可将现有AI编码流程改造成“任务契约+验证”模式，并选一个小任务试点。",
+      "提炼适用于自身项目的Contract模板，明确允许修改范围、禁止项和测试选择器规则。"
+    ],
+    "archiveReason": "提供了较完整的AI原生任务契约、验证流程与CLI使用范式，对AI辅助研发工作流设计有持续参考价值。",
+    "classifiedAt": 1773830281415,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "AI原生任务契约验证工具",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Task Contract由Intent、Decisions、Boundaries、Completion Criteria四部分构成，可作为AI代理执行的主规划界面。",
+      "通过lifecycle与guard把规范质量检查、场景验证、变更边界控制和仓库级校验整合进开发与提交流程。",
+      "支持rewrite/parity场景，强调先绑定可观察行为，再让代理实现代码，减少回归和语义漂移。"
+    ],
+    "oneHighValuePoint": "最有价值的是把“任务说明”提升为可验证的Task Contract，使AI编码、边界控制、测试选择与审查标准统一到同一份契约上。",
+    "oneLineReview": "方法论很强、工具链清晰，是AI代理规范驱动开发的高价值实践文档，但证据与实际效果验证仍偏弱。",
+    "primaryCategory": "AI辅助开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "软件工程方法论",
+      "开发工具链"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了agent-spec这一面向AI代理执行任务的BDD/规范验证工具，核心是以Task Contract描述意图、决策、边界与完成条件，并通过lint、verify、lifecycle、guard等命令将规范驱动开发、验证和审查流程串联起来。",
+    "tags": [
+      "BDD",
+      "任务契约",
+      "AI Agent",
+      "规范驱动开发",
+      "代码验证"
+    ],
+    "title": "ZhangHanDong/agent-spec: `agent-spec` is an AI-native BDD/spec verification tool for task execution.",
+    "totalScore": 71.5,
+    "url": "https://github.com/ZhangHanDong/agent-spec"
+  },
+  "payloadHash": "sha256:d25571a806573aef63d184390c010be42b6c956382c2781106fb3fa393296fe5",
+  "refs": {},
+  "revisionId": "sha256:7b4e670dfaaeb70ee1fd53950acc4af1af9ebdf757ed950416b50f3d87c3e8fb",
+  "schemaVersion": 1,
+  "updatedAt": 1773830281420
+}

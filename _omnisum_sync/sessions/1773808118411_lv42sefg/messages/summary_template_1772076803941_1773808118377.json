@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773808118377,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773808118377",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇内容主要讲的是：Intercom 正在把 Claude Code 从 “写代码助手” 扩展成 “内部全栈工程平台”。他们已经做出一套较完整的插件、技能、权限控制和观测体系，同时也在探索高风险但高价值的能力。\n\n- 第一部分：整体建设规模\n  - Intercom 内部已经为 Claude Code 搭建了一个插件系统。\n  - 当前规模包括：`13 个插件`、`100+ skills（技能）`，以及一套`hooks（钩子）`机制。\n  - 这些能力组合起来，让 Claude 不只是回答问题，而是能更深度参与工程流程。\n\n- 第二部分：最激进的能力 —— 连接生产环境\n  - 他们给 Claude 接入了一个`只读的 Rails 生产控制台`，通过 MCP 使用。\n  - 这意味着 Claude 可以对生产数据执行任意 Ruby 代码，但限定为只读场景。\n  - 具体用途包括：\n    - 检查`feature flag`是否开启；\n    - 验证业务逻辑；\n    - 查看缓存状态等。\n  - 作者形容这个功能 “要么是会毁掉 Intercom 的最糟糕想法，要么是绝对天才”，说明它价值很大，但风险也非常高。\n\n- 第三部分：为高风险能力加安全护栏\n  - 为了降低生产环境访问风险，他们加了多层安全限制：\n    - 只允许访问`read-replica（只读副本）`；\n    - 屏蔽关键数据表；\n    - 每次查询前都必须做模型校验；\n    - 使用`Okta`做身份认证；\n    - 用`DynamoDB`保存审计日志。\n  - 简单说，就是让 Claude “能看、能验证”，但尽量避免误操作核心数据。\n\n- 第四部分：全链路观测 Claude 的使用过程\n  - 他们把 Claude Code 生命周期中的每个关键事件都接入了`OpenTelemetry`。\n  - 一共追踪了`14 类事件`，例如：\n    - `SessionStart`\n    - `UserPromptSubmit`\n    - `PreToolUse`\n    - `PostToolUse`\n    - `PermissionRequest`\n    - `SubagentStart`\n  - 这些数据会流向`Honeycomb`，用于观察 Claude 在真实工作中的表现。\n  - 但他们强调 “隐私优先”：`明确不采集用户 prompt、消息内容和工具输入`。\n\n- 第五部分：会话记录分析与持续优化\n  - Claude 的会话转录会同步到`S3`。\n  - 为保护隐私，用户名会做`SHA256 哈希`处理。\n  - 这样团队就能分析：大家在真实场景下到底是怎么使用 Claude 的。\n  - 在`SessionEnd`时，还会通过一个 hook，用`Claude Haiku`分析整段会话，寻找可改进的地方。\n  - 这相当于让系统不仅 “被使用”，还能 “自动复盘并优化”。\n\n- 第六部分：核心价值\n  - 这套系统的重点，不只是给 Claude 增加更多功能，而是把它做成一个可接入生产环境、可审计、可观测、可持续优化的工程平台。\n  - 从案例看，Intercom 的思路很明确：一边大胆开放能力，一边用权限、审计和隐私机制兜底。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1773808118377,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d72a60c34299ad260032ed9fdf21d8f2ccd04f0a03289736643b4459c5ad85f7",
+  "refs": {
+    "sessionId": "1773808118411_lv42sefg"
+  },
+  "revisionId": "sha256:c17d39a2f881c5bef030e85ca5a7e2af340ff2e27134a1341ddf9fd994321297",
+  "schemaVersion": 1,
+  "updatedAt": 1773808118377
+}

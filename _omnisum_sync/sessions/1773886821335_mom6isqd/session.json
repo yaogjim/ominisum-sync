@@ -1,0 +1,69 @@
+{
+  "createdAt": 1773886821335,
+  "entityType": "session",
+  "id": "1773886821335_mom6isqd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看并评估`flash-moe`代码仓库，重点关注推理流水线、量化方案和缓存设计。",
+      "将“信任系统缓存”原则纳入本地推理或高I/O工程项目的性能排查清单。",
+      "对类似MoE模型尝试分析专家激活分布，验证是否存在更稳定的预取或缓存策略。"
+    ],
+    "archiveReason": "包含本地超大模型推理、Apple硬件特性与缓存优化的高价值实践线索，适合后续追踪源码与复现实验。",
+    "classifiedAt": 1773918276346,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "本地流式运行超大MoE模型",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "MoE模型因推理时仅激活少量专家，天然适合基于SSD的权重流式加载。",
+      "Apple统一内存与高SSD带宽使超出DRAM容量的大模型本地运行具备现实可行性。",
+      "应用层缓存可能与操作系统缓存和硬件内存压缩机制冲突，反而拖慢性能。",
+      "人类设定目标与评价指标、代理执行高频实验的协作式autoresearch流程具有实用价值。"
+    ],
+    "oneHighValuePoint": "删除自建Metal专家缓存、转而信任macOS缓存机制后性能提升38%，说明系统级资源调度往往优于应用层自作聪明的缓存设计。",
+    "oneLineReview": "有明显新意和工程启发，但证据链仍偏弱，更像高质量实验记录而非充分验证的技术结论。",
+    "primaryCategory": "AI系统工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期重点参考，后续结合代码仓库决定是否长期保留",
+    "secondaryCategories": [
+      "本地大模型推理",
+      "苹果硬件优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章记录了借助Claude Code与苹果“LLM in a Flash”思路，在48GB内存MacBook上流式运行Qwen 397B的实验过程，核心价值在于MoE稀疏性利用、SSD权重流式加载和“不要与系统缓存竞争”的反直觉优化结论。",
+    "tags": [
+      "MoE",
+      "Apple Silicon",
+      "LLM in a Flash",
+      "本地推理",
+      "缓存优化",
+      "Claude Code"
+    ],
+    "title": "Autoresearching Apple's \"LLM in a Flash\" to run Qwen 397B locally\n自动研究苹果的“快速快速语言模型”以本地运行 Qwen 397B",
+    "totalScore": 66.5,
+    "url": "https://x.com/danveloper/status/2034353876753592372"
+  },
+  "payloadHash": "sha256:603edc9ddae2dd106a6884417c55082e4bbf89a3126f3285c36bd9da9cdd9311",
+  "refs": {},
+  "revisionId": "sha256:f144a3e065d0e87ccb8fe2a4e582f08fe69b6eeb13d583294c8779aa159accae",
+  "schemaVersion": 1,
+  "updatedAt": 1773918276350
+}

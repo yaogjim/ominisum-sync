@@ -1,0 +1,71 @@
+{
+  "createdAt": 1780308513906,
+  "entityType": "session",
+  "id": "1780308513906_6bo7fd3l",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按需查看ECC的Shorthand Guide和Security Guide，而不是一次性阅读完整README。",
+      "如果使用Claude Code，可先尝试最小化安装，只复制common和实际使用语言的rules。",
+      "检查当前AI编程环境是否存在重复Hooks、重复MCP或过多工具导致的上下文膨胀。",
+      "借鉴其Skills/Agents/Rules/Hooks分层思路，整理自己的AI编程工作流模板。"
+    ],
+    "archiveReason": "包含跨Claude Code、Cursor、Codex、OpenCode等工具的安装、配置、工作流、Token优化、安全扫描和Agent编排信息，适合作为工具选型与实践参考。",
+    "classifiedAt": 1780308603986,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客/文档",
+    "classifyTitle": "ECC智能编码工具集指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "ECC支持Claude Code、Cursor、Codex、OpenCode、GitHub Copilot等多种AI编程环境，并提供不同程度的配置适配。",
+      "Skills被定位为主要工作流入口，Commands逐步作为兼容层保留。",
+      "安装时不应叠加插件安装和完整手动安装，否则容易产生重复Hooks、重复技能和异常行为。",
+      "Token优化建议包括默认使用Sonnet、限制thinking tokens、提前compact、减少MCP数量和控制活跃工具数量。",
+      "AgentShield可用于扫描Claude Code配置中的Secrets、权限、Hook注入、MCP风险和Agent配置问题。"
+    ],
+    "oneHighValuePoint": "将AI编程工具的Agent、Skills、Rules、Hooks、MCP和Token优化整合成一套可复用的跨工具工作流体系。",
+    "oneLineReview": "信息量大且实操性强，但内容偏README式堆叠和项目宣传，证据质量主要依赖自述。",
+    "primaryCategory": "AI编程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，作为AI编码工具链和Agent工作流配置参考",
+    "secondaryCategories": [
+      "开发效率",
+      "Agent工作流",
+      "Claude Code生态"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章是ECC项目的GitHub README，介绍其作为跨AI编程工具的Agent工作流系统，涵盖安装方式、技能与Agent目录、Hooks、规则、MCP配置、安全扫描、Token优化和多工具适配方案。",
+    "tags": [
+      "ECC",
+      "Claude Code",
+      "AI Agent",
+      "开发工作流",
+      "工具配置"
+    ],
+    "title": "affaan-m/ECC: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "totalScore": 72.5,
+    "url": "https://github.com/affaan-m/ECC"
+  },
+  "payloadHash": "sha256:dc11569027c3c4a97536de3f3b1e64c06e21341f8e22638934659ee7ad7c5bc9",
+  "refs": {},
+  "revisionId": "sha256:f290fd5d42bd90583e090a41e7dda3bd72a0eeb6d7fb65f25c7f39ebb6e0800f",
+  "schemaVersion": 1,
+  "updatedAt": 1780308737167
+}

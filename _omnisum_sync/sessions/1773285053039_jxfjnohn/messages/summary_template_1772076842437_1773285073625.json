@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773285073625,
+  "entityType": "message",
+  "id": "summary_template_1772076842437_1773285073625",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 总结\n\n`distill`是一个命令行工具，核心作用是：**把很长的 CLI 输出压缩成 LLM 真正需要的小答案**，从而**大幅节省 token 成本**。  \n它适合处理日志、测试结果、`git diff`、`terraform plan`、`npm audit`等大段输出，官方称可节省**最高 99% token**。\n\n它的使用方式很简单：把命令输出通过管道交给`distill`，再用一句**明确的问题**告诉它你想要什么格式的结果。\n\n例如：\n\n```bash\nbun test 2>&1 | distill \"Did the tests pass? Return only: PASS or FAIL, followed by failing test names if any.\"\n```\n\n此外，它支持多种模型提供商，不只 OpenAI，还包括：\n\n- Ollama\n- LM Studio\n- Jan\n- LocalAI\n- vLLM\n- SGLang\n- llama.cpp\n- MLX\n- Docker Model Runner\n- OpenAI-compatible 接口\n\n---\n\n# 深入浅出地解读\n\n## 1. 它解决的是什么问题？\n\n现在很多 AI 编程代理或自动化流程，都会把命令输出直接丢给大模型。  \n问题是：**很多输出又长又杂，但真正有用的信息可能只有一句话。**\n\n比如：\n\n- 测试日志几千行，用户只想知道：**通过还是失败**\n- `git diff`很长，用户只想知道：**哪些文件改了、改了什么**\n- `terraform plan`很复杂，用户只想知道：**是否安全上线**\n- `npm audit`一大堆信息，用户只想要：**漏洞列表 JSON**\n\n所以`distill`本质上像一个 “**命令行输出摘要器**”。\n\n---\n\n## 2. 它为什么有价值？\n\n### 省钱\nLLM 的输入通常按 token 收费。  \n如果你把几千上万 token 的原始日志都发过去，成本会很高。\n\n`distill`的思路是：\n\n> 先把大段输出 “浓缩” 成小结果，再交给 AI 或直接使用。\n\n这样可以显著减少 token 消耗。\n\n### 提高效率\n长输出不仅费钱，还影响阅读。  \n`distill`能直接给出你要的结论，比如：\n\n- `PASS / FAIL`\n- 变更文件列表\n- 风险级别\n- JSON 结果\n\n这比人工翻日志快很多。\n\n### 适合接入 AI Agent\n项目特别强调：  \n如果你在用 Codex、Claude Code、OpenCode 这类代理，最好把**所有非交互式 shell 命令**都默认通过`distill`处理，除非必须看原始输出。\n\n这说明它很适合做成 AI Agent 的 “输出过滤层”。\n\n---\n\n## 3. 它的关键使用原则\n\n这个项目最重要的理念不是 “压缩输出”，而是：\n\n## **提问必须非常明确**\n\n作者反复强调：\n\n- 不能模糊提问\n- 必须明确说清楚要什么\n- 最好明确输出格式\n\n### 不好的写法\n```bash\ndistill \"Which files are shown?\"\n```\n\n### 好的写法\n```bash\ndistill \"Which files are shown? Return only the filenames.\"\n```\n\n也就是说，`distill`更像一个 “**按要求提炼信息的助手**”，而不是自己猜你想要什么。  \n你要求越清楚，它输出越稳定、越省 token。\n\n---\n\n## 4. 适合哪些场景？\n\n很适合：\n\n- **测试结果总结**\n- **错误日志提炼**\n- **代码变更总结**\n- **安全 / 风险判断**\n- **提取结构化数据**\n- **搜索结果筛选**\n\n例如：\n\n```bash\ngit diff 2>&1 | distill \"What changed? Return only the files changed and a one-line summary for each file.\"\n```\n\n这个就非常实用：不看完整 diff，也能快速知道改动重点。\n\n---\n\n## 5. 它不适合什么场景？\n\n项目里也明确说了，以下情况可以**不要用`distill`**：\n\n- **必须要看原始完整输出**\n- **交互式命令 / TUI 界面会被破坏**\n\n比如：\n\n- 需要完整堆栈排查\n- 需要手动输入密码、确认项\n- 使用`vim`、`top`、`htop`之类交互程序\n\n虽然它能检测简单提示（如`[y/N]`、`password:`）并透传，但本质上它还是更适合**非交互式命令**。\n\n---\n\n## 6. 这个工具的实际意义是什么？\n\n一句话说：\n\n> 它不是替代命令行，而是给命令行输出加一个 “AI 过滤器”。\n\n以前流程是：\n\n**命令输出很多内容 → 全部发给 LLM → LLM 再提炼**\n\n现在变成：\n\n**命令输出很多内容 → `distill`先压缩 → 只把精华交给 LLM 或人看**\n\n这个思路对 AI 编程工作流非常实用，尤其是在：\n\n- 长日志频繁出现\n- token 成本敏感\n- 本地模型 / 私有部署较多\n- 自动化 Agent 需要稳定输出格式\n\n---\n\n# 我的意见\n\n## 优点\n\n- **定位很准**：专门解决 “CLI 输出太长” 这个真实痛点\n- **价值直接**：省 token、提效率、便于自动化\n- **接入简单**：通过管道就能用\n- **兼容性好**：支持很多 OpenAI 兼容服务和本地模型\n- **理念正确**：强调 “明确提示词”，这对稳定输出很关键\n\n## 可能的不足\n\n- **依赖提示词质量**：问得不清楚，结果就可能不稳定\n- **可能丢细节**：压缩本身就意味着信息筛选，不适合所有排障场景\n- **仍依赖模型能力**：如果底层模型太弱，摘要质量可能一般\n- **自动化中需谨慎**：像安全、部署、审计这类场景，不能只看摘要就做决定\n\n## 我的建议\n\n如果你：\n\n- 经常用 AI 分析命令输出\n- 想降低 token 成本\n- 在做 Agent / 自动化开发流程\n- 使用本地模型或兼容 OpenAI 的服务\n\n那么这个工具**很值得尝试**。\n\n但最佳实践是：\n\n1. **默认用于非交互、长输出命令**\n2. **提示词写得非常具体**\n3. **关键场景保留查看原始输出的能力**\n4. **对安全、部署、审计结果进行人工复核**\n\n---\n\n# 一句话结论\n\n`distill`是一个很实用的 “小而美” 工具：**用极低接入成本，把冗长命令输出变成简洁答案，特别适合 AI 编程与自动化场景。**  \n如果你常被日志和 token 成本困扰，它很有价值。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "解读",
+    "timestamp": 1773285073625,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9e8c5c90af7065eccc92838f9960ae2c1303743e5982454b43f8ea8d87058d4f",
+  "refs": {
+    "sessionId": "1773285053039_jxfjnohn"
+  },
+  "revisionId": "sha256:05ff88455c27e3e6d30f20ad94f00d4725d626dd84c9c47344c6276bd0e4f184",
+  "schemaVersion": 1,
+  "updatedAt": 1773285073625
+}

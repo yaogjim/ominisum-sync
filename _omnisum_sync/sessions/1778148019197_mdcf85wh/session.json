@@ -1,0 +1,136 @@
+{
+  "createdAt": 1778148019197,
+  "entityType": "session",
+  "id": "1778148019197_mdcf85wh",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在AI Coding任务说明中增加“非目标/不做事项”字段。",
+      "对多Agent产出的PR增加是否偏离原始需求、是否引入不必要抽象的审查项。"
+    ],
+    "archiveReason": "提出了多Agent开发中任务拆分过细和缺乏非目标约束导致过度设计的典型问题，可作为AI Coding流程设计的提醒案例。",
+    "byline": "Barret李靖",
+    "classifiedAt": 1780615824360,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "多Agent任务边界失控",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1778148028723,
+        "imageId": "img-1",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# 多 Agent 开发中的过度设计风险\n\n## 核心观点\n\n在**Spec-Driven Development（规格驱动开发）**中，如果任务拆得太细，但没有明确任务边界、约束条件和 “不做什么”，多 Agent 协作时很容易出现**过度设计**。\n\n问题不是 Agent 不会写代码，而是它们会基于局部最优，各自补充 “最佳实践”，最终偏离真实需求。\n\n## 典型案例\n\n原始需求很简单：\n\n> 给后台系统增加一个文件上传能力。\n\n真实场景也很明确：\n\n> 单机部署，文件上传到本地磁盘。\n\n但由于缺少边界约束，不同 subagent 开始各自扩展：\n\n- 一个引入`repository pattern`\n- 一个设计`storage provider abstraction`\n- 一个兼容 S3 / OSS / GCS\n- 一个补异步队列和事件系统\n- 最后甚至拆出一个`upload-sdk`\n\n结果从一个简单文件上传功能，演变成一套半成品云存储框架。\n\n## 问题本质\n\n每个局部设计看起来都合理，甚至符合工程最佳实践。\n\n但整体来看：\n\n- 超出了业务需求\n- 增加了系统复杂度\n- 拉高了维护成本\n- 延长了交付周期\n- 让团队难以判断 PR 是否该合并\n\n这类问题最麻烦的是：代码质量可能并不差，但方向错了。\n\n## 对产品和研发管理的启示\n\n多 Agent 协作时，不能只写 “要做什么”，更要明确：\n\n- **只做到什么程度**\n- **不支持哪些场景**\n- **不引入哪些架构**\n- **当前需求的部署环境**\n- **未来扩展是否现在就需要**\n\n尤其是简单业务需求，应该避免被 Agent 自动扩展成 “平台化”“抽象化”“框架化” 工程。\n\n## 一句话总结\n\nAI Agent 越强，越需要清晰的规格边界；否则它们会把一个简单需求，认真地做成一个复杂系统。",
+        "url": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "visualFacts": []
+      },
+      {
+        "analyzedAt": 1778148028723,
+        "imageId": "img-12",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# 多 Agent 开发中的过度设计风险\n\n## 核心观点\n\n在**Spec-Driven Development（规格驱动开发）**中，如果任务拆得太细，但没有明确任务边界、约束条件和 “不做什么”，多 Agent 协作时很容易出现**过度设计**。\n\n问题不是 Agent 不会写代码，而是它们会基于局部最优，各自补充 “最佳实践”，最终偏离真实需求。\n\n## 典型案例\n\n原始需求很简单：\n\n> 给后台系统增加一个文件上传能力。\n\n真实场景也很明确：\n\n> 单机部署，文件上传到本地磁盘。\n\n但由于缺少边界约束，不同 subagent 开始各自扩展：\n\n- 一个引入`repository pattern`\n- 一个设计`storage provider abstraction`\n- 一个兼容 S3 / OSS / GCS\n- 一个补异步队列和事件系统\n- 最后甚至拆出一个`upload-sdk`\n\n结果从一个简单文件上传功能，演变成一套半成品云存储框架。\n\n## 问题本质\n\n每个局部设计看起来都合理，甚至符合工程最佳实践。\n\n但整体来看：\n\n- 超出了业务需求\n- 增加了系统复杂度\n- 拉高了维护成本\n- 延长了交付周期\n- 让团队难以判断 PR 是否该合并\n\n这类问题最麻烦的是：代码质量可能并不差，但方向错了。\n\n## 对产品和研发管理的启示\n\n多 Agent 协作时，不能只写 “要做什么”，更要明确：\n\n- **只做到什么程度**\n- **不支持哪些场景**\n- **不引入哪些架构**\n- **当前需求的部署环境**\n- **未来扩展是否现在就需要**\n\n尤其是简单业务需求，应该避免被 Agent 自动扩展成 “平台化”“抽象化”“框架化” 工程。\n\n## 一句话总结\n\nAI Agent 越强，越需要清晰的规格边界；否则它们会把一个简单需求，认真地做成一个复杂系统。",
+        "url": "https://pbs.twimg.com/amplify_video_thumb/2052012231278080001/img/GeJRSfFTnKlPS0si.jpg",
+        "visualFacts": []
+      },
+      {
+        "analyzedAt": 1778148028723,
+        "imageId": "img-20",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# 多 Agent 开发中的过度设计风险\n\n## 核心观点\n\n在**Spec-Driven Development（规格驱动开发）**中，如果任务拆得太细，但没有明确任务边界、约束条件和 “不做什么”，多 Agent 协作时很容易出现**过度设计**。\n\n问题不是 Agent 不会写代码，而是它们会基于局部最优，各自补充 “最佳实践”，最终偏离真实需求。\n\n## 典型案例\n\n原始需求很简单：\n\n> 给后台系统增加一个文件上传能力。\n\n真实场景也很明确：\n\n> 单机部署，文件上传到本地磁盘。\n\n但由于缺少边界约束，不同 subagent 开始各自扩展：\n\n- 一个引入`repository pattern`\n- 一个设计`storage provider abstraction`\n- 一个兼容 S3 / OSS / GCS\n- 一个补异步队列和事件系统\n- 最后甚至拆出一个`upload-sdk`\n\n结果从一个简单文件上传功能，演变成一套半成品云存储框架。\n\n## 问题本质\n\n每个局部设计看起来都合理，甚至符合工程最佳实践。\n\n但整体来看：\n\n- 超出了业务需求\n- 增加了系统复杂度\n- 拉高了维护成本\n- 延长了交付周期\n- 让团队难以判断 PR 是否该合并\n\n这类问题最麻烦的是：代码质量可能并不差，但方向错了。\n\n## 对产品和研发管理的启示\n\n多 Agent 协作时，不能只写 “要做什么”，更要明确：\n\n- **只做到什么程度**\n- **不支持哪些场景**\n- **不引入哪些架构**\n- **当前需求的部署环境**\n- **未来扩展是否现在就需要**\n\n尤其是简单业务需求，应该避免被 Agent 自动扩展成 “平台化”“抽象化”“框架化” 工程。\n\n## 一句话总结\n\nAI Agent 越强，越需要清晰的规格边界；否则它们会把一个简单需求，认真地做成一个复杂系统。",
+        "url": "https://pbs.twimg.com/amplify_video_thumb/2052155119794581504/img/_O63zrZ7bwlW8yxa.jpg",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 720,
+        "id": "img-12",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/amplify_video_thumb/2052012231278080001/img/GeJRSfFTnKlPS0si.jpg",
+        "role": "tweet",
+        "score": 70,
+        "src": "https://pbs.twimg.com/amplify_video_thumb/2052012231278080001/img/GeJRSfFTnKlPS0si.jpg",
+        "width": 720
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 675,
+        "id": "img-20",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/amplify_video_thumb/2052155119794581504/img/_O63zrZ7bwlW8yxa.jpg",
+        "role": "tweet",
+        "score": 70,
+        "src": "https://pbs.twimg.com/amplify_video_thumb/2052155119794581504/img/_O63zrZ7bwlW8yxa.jpg",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "多Agent并行开发容易因缺少统一边界而产生局部最优、整体失控的问题。",
+      "Spec文档应包含需求范围、部署约束、技术边界和明确的非目标声明。",
+      "过度设计往往看似符合最佳实践，但可能严重偏离原始业务需求。"
+    ],
+    "oneHighValuePoint": "在多Agent调度前，不仅要定义要做什么，还要明确不做什么，否则局部合理的设计会累积成整体过度工程。",
+    "oneLineReview": "短小但有现实警示意义，核心价值在于提醒AI协作开发必须明确任务边界和非目标。",
+    "primaryCategory": "AI开发方法论",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Spec-Driven Development",
+      "多Agent协作"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出在Spec-Driven Development和多Agent协作中，如果任务颗粒度过细且缺少边界与“不做什么”的声明，容易让各子Agent各自引入最佳实践，最终偏离真实需求并造成过度设计。",
+    "tags": [
+      "AI Coding",
+      "任务边界",
+      "过度设计",
+      "需求约束",
+      "多智能体"
+    ],
+    "title": "Barret李靖: Spec-Driven Development 如果把任务的颗粒度拆得过细，且没有控制好任务边界和不做什么的声明，在调度多 agents干活时，特别容易出现过度…",
+    "totalScore": 58.5,
+    "url": "https://x.com/Barret_China/status/2052176618744053824"
+  },
+  "payloadHash": "sha256:f7a1de4c8cd5b22da120fc9e6f6119da86722e6a90778ec7db1b5ecef54ada8a",
+  "refs": {},
+  "revisionId": "sha256:388db462077265c723a684592a3ae81efb9909ea1e521ac6f2ad87421c9b9c9f",
+  "schemaVersion": 1,
+  "updatedAt": 1780615825163
+}

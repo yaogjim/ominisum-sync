@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773653216060,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773653216060",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章的核心观点是：给智能体（agent）开放`bash`很强大，但前提是必须做好沙箱隔离。作者认为，真正重要的沙箱方案其实只有 3 类，不同场景选对方案，比一味追求 “最强隔离” 更重要。\n\n- **为什么需要沙箱**\n  - `bash`是最能扩展 agent 能力的接口：一个入口就能调用`grep`、`curl`、Python 和整个 Unix 工具链。\n  - 但如果不受限制，agent 拿到完整 shell 权限会有安全风险，所以必须 “先沙箱，再放权”。\n  - 作者强调：沙箱不是为了束缚 agent，而是为了让你敢给它更强的能力。\n\n- **第一类：模拟环境（Simulated environments）**\n  - 这类方案不提供真正的操作系统，而是在 JavaScript 或 WASM 里 “模拟 shell”。\n  - 代表产品是`just-bash`：基于 TypeScript，内存虚拟文件系统，支持`cat`、`grep`、`sed`、`jq`、`curl`等**40+ Unix 工具**，而且**启动时间不到 1ms**。\n  - 优点是：启动极快、无需容器 / 虚拟机、甚至可直接在浏览器运行。\n  - 缺点是：不能跑真实二进制、原生模块或 GPU；如果 agent 依赖`ffmpeg`、`numpy`这类能力，就不适合。\n  - 其他例子：\n    - `Amla Sandbox`：首次运行约**300ms**，后续约**0.5ms**，支持脚本化 “代码模式” 和参数约束 DSL。\n    - `AgentVM`：把 Alpine Linux 编译到 WASM 中，属于实验性方案。\n  - 适用场景：agent 主要处理文本和文件，希望 “零开销、秒开”。\n\n- **第二类：操作系统级隔离（容器 / OS primitives）**\n  - 这是最常见、最实用的一类：利用 Linux namespace、cgroups、seccomp 等机制，把进程限制在一个 “盒子” 里。\n  - 这类方案能运行真实代码和真实二进制，比模拟环境更通用。\n  - 轻量级做法：\n    - `Claude Code`本地用`bubblewrap`（Linux）和`Seatbelt`（macOS）；网络通过代理并限制域名白名单。\n    - `Codex CLI`用`Landlock + seccomp`（Linux）、`Seatbelt`（macOS）、Windows restricted tokens；默认禁网，写权限只限当前工作区。\n  - 容器做法：\n    - `LLM-Sandbox`封装 Docker/Kubernetes/Podman，支持 Python、JavaScript、Java、C++、Go、R 等语言，还支持保留解释器状态的交互式会话。\n  - 更强的容器隔离：\n    - `gVisor`用 Go 实现用户态内核，拦截系统调用；Google Cloud Run 在用，Anthropic 的 Claude 网页版也在用。\n  - 适用场景：需要真实二进制、运行在云上、希望复用 Docker /k8s 生态。\n\n- **第三类：MicroVM / 真虚拟机**\n  - 这是隔离最强的一类：每个 agent 拥有独立内核、独立内存空间，边界由硬件级别保证。\n  - 标准方案是`Firecracker`：AWS 为 Lambda 打造，**启动约 125ms**，**内存开销约 5MB**，但要求 KVM，运维比容器更复杂。\n  - 代表产品：\n    - `E2B`：基于 Firecracker / Cloud Hypervisor，**冷启动低于 200ms**，已服务**2 亿 + sandboxes**，并且**SOC 2 合规**。\n    - `Fly Sprites`：主打 “持久化 Linux 虚拟机”，创建**1-2 秒**，checkpoint 约**300ms**，恢复几乎瞬时，支持**100GB 持久存储**。\n    - `Daytona`：支持启动、暂停、分叉、快照、恢复，**冷启动低于 90ms**，还支持桌面自动化。\n    - `Cloudflare Sandbox`、`Modal`：分别面向 Cloudflare 生态和批处理 / 强化学习场景。\n  - 适用场景：把 “安全隔离” 当成产品核心卖点，或确实需要最强隔离能力。\n\n- **浏览器本身也可以是沙箱**\n  - 作者引用了一个有意思的观点：浏览器已经积累了**30 年**运行不可信代码的安全机制。\n  - 例如：\n    - `File System Access API`类似受限文件系统；\n    - `CSP`（内容安全策略）可以限制网络访问；\n    - `WebAssembly`可在隔离 worker 中执行。\n  - 案例：`Co-do`演示应用允许用户选择文件夹、配置 AI 服务、执行文件操作，全部都在浏览器沙箱限制内完成。\n  - 局限是：不能提供通用 shell，能力主要限于 JS/WASM。\n  - 适合：轻量、零安装、跨平台的浏览器内 agent。\n\n- **实际产品怎么选**\n  - 本地 CLI agent（如 Claude Code、Codex CLI）最终都收敛到同一模式：**OS 原生隔离 + 受控网络通道**，而不是 Docker。\n  - 作者特别强调：**网络隔离和文件系统隔离同样重要**。\n    - 没有网络隔离，agent 可能把`~/.ssh`等敏感信息外传；\n    - 没有文件系统隔离，它可能偷偷修改 shell 配置，之后再获取网络能力。\n  - 云服务的常见选择：\n    - `Claude Web`：`gVisor`，冷启动约**500ms**；\n    - `E2B`：约**200ms**，最长可保留**24 小时**；\n    - `Fly Sprites` / `Daytona`：强调持久化和状态性；\n    - `Vercel Sandbox`：Firecracker，约**125ms**；\n    - `Modal`：适合长时间批处理，最长**24 小时**。\n\n- **E2B 的启示：技术领先，不等于市场领先**\n  - `E2B`在 agent 爆发前**3 年**就做了 Firecracker 沙箱，产品成熟、API 完整、规模也大。\n  - 但等市场真正起来后，赛道已经挤满了`Fly Sprites`、`Modal`、`Cloudflare`、`Vercel`等竞争者，先发优势被削弱。\n  - 作者认为问题不只是技术，而是定位：\n    - “给 agent 的云沙箱” 是在描述产品是什么；\n    - “给 agent 一台真正的电脑” 是在描述产品能带来什么价值。\n  - 结论：不要只讲 “盒子”，要讲 agent 拿到这个能力后能做什么。\n\n- **作者给出的选型建议**\n  - 如果做**本地 CLI 工具**：优先 OS 级原语，用户通常不愿意为 CLI 安装 Docker。\n  - 如果做**云上的 agent**：\n    - 想简单：`gVisor` + Kubernetes；\n    - 想要持久状态：`Fly Sprites`或`Daytona`；\n    - 想要最强隔离：`Firecracker`（如`E2B`、`Vercel Sandbox`）。\n  - 如果 agent 只做**文本 / 文件处理**：`just-bash`最轻，几乎零成本。\n  - 如果你做的是**以安全为卖点的平台**：MicroVM 值得投入，哪怕运维更重。\n  - 如果只是**快速原型验证**：模拟环境开发体验最好，不用管容器镜像，反馈也最快。\n\n- **结尾结论**\n  - 虽然表面上 “沙箱方案有一千种”，但真正关键的只有三类：模拟环境、OS / 容器隔离、MicroVM。\n  - 大多数 agent 其实不需要 Firecracker 这种顶级隔离，它们更需要的是`grep`加文件系统。\n  - 作者的最终建议很明确：先从`just-bash`或`sandbox-runtime`这种够用的方案开始，后面再按需求逐步升级。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1773653216060,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:917f0946078d5e258c107e4dd1c5990875a10f031a16f73fe24ea90ab5d4c3b0",
+  "refs": {
+    "sessionId": "1773653216094_4hd9zi00"
+  },
+  "revisionId": "sha256:3c6e570a70504173a948b9315111aa4e76a23be45e1ad7961980d47578008bd3",
+  "schemaVersion": 1,
+  "updatedAt": 1773653216060
+}

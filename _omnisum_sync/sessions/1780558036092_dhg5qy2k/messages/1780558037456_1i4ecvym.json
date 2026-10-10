@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780558010887,
+  "entityType": "message",
+  "id": "1780558037456_1i4ecvym",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# PostgresFS：给智能体“伪造文件系统”为何输给一个技能？\n\n## 1. 深度总结\n\n文章讨论一个问题：\n\n> **给 AI Agent 操作数据库时，应该把数据库包装成“文件系统”，还是直接给它查询技能 + 本地 Shell？**\n\n作者对比了两种方案：\n\n| 方案 | 做法 | 核心特点 |\n|---|---|---|\n| **PostgresFS** | 把 Postgres 包装成文件系统 | Agent 用 `ls/cat/grep/find` 探索数据库 |\n| **Skill 技能方案** | 给 Agent 一个 SQL 查询脚本 | 查询结果落到本地文件，再用真实 Bash 分析 |\n\n实验结果显示：\n\n- 两者准确率都很高，约 **93%-99%**；\n- 延迟差距不大；\n- 但 **Skill 方案更简单、更可组合、更接近真实 Shell 工作流**；\n- PostgresFS 的问题在于：  \n  每次 `cat/grep/find` 都要转成 SQL，产生数据库往返、解析、传输成本。\n\n核心结论：\n\n> **熟悉的界面不等于高效的执行环境。**  \n> 对 Agent 来说，真正重要的不是“看起来像文件系统”，而是数据是否已经在本地，能否被真实工具自由组合处理。\n\n---\n\n## 2. 深入浅出解读\n\n可以把它理解成两种工作方式。\n\n### 方式一：PostgresFS\n\n像让 Agent 住在一个“假文件系统”里。\n\n它以为自己在执行：\n\n```bash\ncat docs/page1.md\ngrep \"config\" docs/*\n```\n\n但背后其实是：\n\n```sql\nSELECT ...\nFROM docs\nWHERE ...\n```\n\n问题是：\n\n> Agent 每读一次文件，系统都要去数据库跑一次查询。\n\n就像你每看一页书，都要去图书馆前台申请一次。\n\n---\n\n### 方式二：Skill\n\n先让 Agent 问数据库：\n\n```sql\nSELECT content\nFROM docs\nWHERE product = 'xxx';\n```\n\n然后把结果保存成本地文件：\n\n```bash\nresult.json\n```\n\n之后 Agent 就可以真正使用：\n\n```bash\ngrep\nawk\nsort\njq\nwc\nsed\n```\n\n这时所有操作都在本地完成。\n\n就像先把相关书籍借回家，再慢慢翻、标注、对比。\n\n---\n\n## 3. 为什么“技能”赢了？\n\n关键不是 SQL，也不是 Postgres。\n\n关键是：\n\n> **数据局部性。**\n\n也就是：\n\n- 数据在数据库里：每次操作都要远程读取；\n- 数据在本地：后续操作都能快速组合。\n\nPostgresFS 看起来很优雅：\n\n```bash\nls /docs\ncat /docs/a.md\ngrep error /docs/*\n```\n\n但这些命令都是“伪装”的。\n\n真正的问题是：\n\n> 它重新发明了一个文件系统，但更慢、更复杂、更难维护。\n\n而 Skill 方案很朴素：\n\n1. 用数据库做它擅长的事：大规模过滤、检索；\n2. 把小范围数据拉到本地；\n3. 用 Shell 做它擅长的事：组合、分析、管道处理。\n\n这是一种更清晰的分工。\n\n---\n\n## 4. 文章真正想说什么？\n\n不是说“文件系统接口没用”。\n\n而是说：\n\n> **不要因为 Agent 熟悉 Bash，就把所有东西都伪装成文件系统。**\n\nAgent 熟悉 Bash 是事实。\n\n但 Bash 强大的原因不是命令长得熟悉，而是：\n\n- 数据在本地；\n- 工具真实存在；\n- 管道高度可组合；\n- 中间结果容易保存和复用；\n- 分析路径可以快速分叉和迭代。\n\n如果只是给数据库套一层 `cat/grep/find`，但每次操作都回数据库，那只是“外形像 Bash”，不是“能力像 Bash”。\n\n---\n\n## 5. 辩证思考\n\n### 文件系统抽象的价值\n\nPostgresFS / ChromaFS 这类方案不是完全错误。\n\n它适合：\n\n- 文档规模较小；\n- 任务以浏览为主；\n- Agent 不擅长写 SQL；\n- 需要极低学习成本；\n- 希望界面统一、体验友好。\n\n对很多应用来说，`ls/cat/grep` 确实比 SQL 更自然。\n\n---\n\n### 技能方案的优势\n\n但在复杂任务中，Skill 更稳：\n\n- 实现成本低；\n- 不需要维护一个“假文件系统”；\n- 可以利用真实 Bash 生态；\n- 数据拉到本地后可重复分析；\n- 更适合多步骤、分支式推理。\n\n它体现了一种更务实的架构思想：\n\n> **数据库负责筛选，Shell 负责加工，Agent 负责调度。**\n\n---\n\n### 真正的架构原则\n\n这篇文章的重点不是“PostgresFS 不好”，而是提醒：\n\n> **不要被接口形态迷惑，要看数据流和执行成本。**\n\n判断一个 Agent 工具设计好不好，不该只问：\n\n- 这个接口 Agent 熟不熟？\n- 看起来像不像文件系统？\n- 能不能用 Bash 命令？\n\n更应该问：\n\n- 数据在哪里？\n- 每次操作有没有跨系统往返？\n- 中间结果能不能复用？\n- 工具能不能组合？\n- 维护抽象层的成本值不值？\n\n---\n\n## 6. 一句话结论\n\n> **给 Agent 的最好工具，不一定是最像人类熟悉界面的工具，而是最能让数据流动简单、局部计算高效、工具组合自然的工具。**\n\n更短一点：\n\n> **别急着伪造文件系统。先让数据库查准，再让本地 Shell 做深。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780558010887,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8e157147bf70612492f90b4e1dc8ac6a4be95b74d18aa42c99c4363b86e3dc8a",
+  "refs": {
+    "sessionId": "1780558036092_dhg5qy2k"
+  },
+  "revisionId": "sha256:016ceb4a469e1462dc7130910d8f183001edbb32f1ac4fcdee24d39a5d1037f1",
+  "schemaVersion": 1,
+  "updatedAt": 1780558010887
+}

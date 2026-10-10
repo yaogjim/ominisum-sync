@@ -1,0 +1,71 @@
+{
+  "createdAt": 1780380128022,
+  "entityType": "session",
+  "id": "1780380128022_z6uhtrso",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为自己的项目设计一个AI PR审查流程，至少包含安全、正确性、性能、可维护性几个检查视角。",
+      "尝试让不同模型或不同代理独立审查同一PR，并在清空上下文后汇总结果。",
+      "只优先修复严重和高优先级问题，避免被低价值边界问题拖慢。",
+      "在AI指出问题后要求其解释失败路径，并用测试或代码阅读进行人工验证。",
+      "将AI审查结果沉淀为团队代码审查清单或项目专属Claude/Codex技能。"
+    ],
+    "archiveReason": "提供了可复用的AI辅助代码审查工作流，对提升代码质量和团队工程实践有长期参考价值。",
+    "classifiedAt": 1780380870943,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "用AI慢写高质量代码",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "nolanlawson.com",
+    "favicon": "https://nolanlawson.com/wp-content/uploads/2025/01/favicon.png?w=32",
+    "knowledgePoints": [
+      "AI编码不只适合生成代码，也适合用于代码审查、漏洞发现和理解复杂失败模式。",
+      "多模型、多代理或多角色并行审查可以从不同角度发现安全、正确性、性能、可维护性等问题。",
+      "真正的AI辅助开发价值可能来自更慢但更深入的质量改进，而不是单纯增加代码产出。",
+      "AI发现的问题仍需开发者具备领域知识进行优先级判断和误报排除。",
+      "把既有漏洞当作支线任务处理，有助于理解代码库隐含假设和薄弱环节。"
+    ],
+    "oneHighValuePoint": "将多个模型或多个角色并行用于PR审查，再由人工综合验证，可显著降低幻觉和误报，并发现隐藏缺陷。",
+    "oneLineReview": "一篇强调用AI放慢速度、提升代码质量而非盲目提速的高价值工程实践文章。",
+    "primaryCategory": "软件工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "AI辅助编程",
+      "代码审查"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章反驳“AI只适合快速生成低质代码”的观点，提出用多个AI代理和模型进行慢速、对抗式PR审查，优先发现并修复高严重度问题，从而提升代码库健康度和开发者理解深度。",
+    "tags": [
+      "LLM",
+      "代码质量",
+      "PR审查",
+      "多模型评审",
+      "慢速编程"
+    ],
+    "title": "Using AI to write better code more slowly | Read the Tea Leaves",
+    "totalScore": 74,
+    "url": "https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/"
+  },
+  "payloadHash": "sha256:5117fd00cf05fb7ad904af233d82b6bd94a2220e3f4a5733e1457aa9b46d27d8",
+  "refs": {},
+  "revisionId": "sha256:a7e0e40c7d89649a8336a4da155ec3f5b63ac882a9a306d3af76c04d045e88ee",
+  "schemaVersion": 1,
+  "updatedAt": 1780384050911
+}

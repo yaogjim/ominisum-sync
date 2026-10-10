@@ -1,0 +1,68 @@
+{
+  "createdAt": 1775639398987,
+  "entityType": "session",
+  "id": "1775639398987_qewq4oox",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "参考其主代理加子代理结构，设计你自己的数据问答或分析助手任务分发机制",
+      "梳理目标数据集的元数据、粒度、业务规则和常见分析模式，沉淀为可复用技能定义",
+      "评估是否已有数据目录或 MCP 服务可接入，以减少自定义工具和技能开发工作量"
+    ],
+    "archiveReason": "文章提供了一个多智能体数据分析助手的架构思路，可作为后续搭建类似系统时的轻量参考。",
+    "classifiedAt": 1775820505216,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "用Deep Agent搭建数据代理",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "vorashm.substack.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "多智能体架构可用主编排代理加领域子代理的方式拆分复杂数据分析任务",
+      "针对非通用业务数据集，可通过技能封装元数据、业务规则和分析模式减少上下文负担",
+      "run_sql、discover_schema、export_sql 等自定义工具是企业数据代理落地的核心接口层",
+      "托管 MCP 或数据目录能力可替代部分手写技能定义，降低维护成本"
+    ],
+    "oneHighValuePoint": "通过主代理负责高层任务分发、子代理承载领域细节与技能按需加载，来控制上下文膨胀并提升长对话效率。",
+    "oneLineReview": "有一定架构启发，但更像项目展示而非经过充分验证的系统化教程。",
+    "primaryCategory": "AI智能体开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为数据代理系统设计案例留存",
+    "secondaryCategories": [
+      "数据分析自动化",
+      "多智能体系统"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍作者基于 Deep Agent SDK 构建本地终端数据分析代理的思路，重点说明主编排代理、品牌子代理、技能和 SQL 工具的组合方式，并给出后续 UI、可视化和数据仓库集成路线图。",
+    "tags": [
+      "Deep Agent SDK",
+      "LangChain",
+      "数据代理",
+      "多智能体",
+      "SQL工具"
+    ],
+    "title": "Building Data Agents with Deep Agent SDK - by Shyam Vora",
+    "totalScore": 57,
+    "url": "https://vorashm.substack.com/p/building-data-agents-with-deep-agent"
+  },
+  "payloadHash": "sha256:98291245afa72a5fe9eea24c6a56ef507c40b957e5b31f4bee9c7164d5421c9c",
+  "refs": {},
+  "revisionId": "sha256:2a30cf1adf4374dc8da588ec6a4f2b15d3a3ac0e637befa08a2fff6d8b9acd76",
+  "schemaVersion": 1,
+  "updatedAt": 1775820505219
+}

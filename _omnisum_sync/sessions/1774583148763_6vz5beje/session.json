@@ -1,0 +1,70 @@
+{
+  "createdAt": 1774583148763,
+  "entityType": "session",
+  "id": "1774583148763_6vz5beje",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若你在做Agent或RAG系统，优先评估是否引入图结构、BM25和时间建模，而非只堆大模型或向量库。",
+      "将文中提到的主流框架按你的场景做对照选型：低延迟优先看Mem0，时序与审计优先看Zep，代理型记忆优先看Letta。",
+      "把LongMemEval和LoCoMo加入你的内部评测集，避免只用单一检索准确率衡量系统效果。",
+      "对文中自报成绩和社交媒体来源进行二次验证，重点核查论文原文、代码实现与独立复现实验。"
+    ],
+    "archiveReason": "系统梳理了AI记忆系统的主流基准、架构模式与关键权衡，适合作为后续选型和研究参考。",
+    "classifiedAt": 1774583406399,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "AI记忆系统架构综述",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "LongMemEval、LoCoMo、MemBench等基准分别覆盖信息提取、多会话推理、时间推理和知识更新等不同能力。",
+      "混合向量+图存储通常优于纯向量方案，尤其在多跳关系和复杂推理场景中表现更好。",
+      "显式时间建模是长期记忆系统的关键能力，双时间戳或双时态模型可显著提升时间推理效果。",
+      "主动记忆巩固机制能缓解记忆规模扩大后的噪声累积和检索退化问题。",
+      "代理控制的内存管理在某些场景下可超越专门基础设施，但会带来更高的不确定性和token成本。"
+    ],
+    "oneHighValuePoint": "最有价值的点是明确提出并用多套基准对比支撑：高性能AI记忆系统的关键不在更大模型，而在混合存储、多策略检索和时间建模等架构设计。",
+    "oneLineReview": "这是一篇高信息密度的行业综述，适合建立AI记忆系统的整体认知，但证据来源混杂、需二次核验。",
+    "primaryCategory": "AI系统架构",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "长期记忆系统",
+      "RAG与知识图谱"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章汇总了AI记忆系统在基准测试、架构范式与代表性框架上的进展，核心结论是架构优于模型规模，混合存储、多策略检索、显式时间建模和主动记忆巩固是当前高性能方案的共识。",
+    "tags": [
+      "AI Memory",
+      "Benchmark",
+      "GraphRAG",
+      "LongMemEval",
+      "Agent Architecture"
+    ],
+    "title": "AI 存储系统的现状：基准测试、架构及实际有效的方法",
+    "totalScore": 70.5,
+    "url": "https://x.com/yoheinakajima/status/2037201711937577319"
+  },
+  "payloadHash": "sha256:7cc9a15f3b033f159b2e720956e48bebd2b4006cf3e150f1128af5f3e112bc18",
+  "refs": {},
+  "revisionId": "sha256:0382f5c7d5a0e9a2bccbe2573ffb090c8181594f0601747e384d188353a41f07",
+  "schemaVersion": 1,
+  "updatedAt": 1774583683659
+}

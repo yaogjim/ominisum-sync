@@ -1,0 +1,20 @@
+{
+  "createdAt": 1774867018597,
+  "entityType": "message",
+  "id": "1774867098471_0pkdj5li",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Anthropic 隐藏版“Vercel 竞品”一文速读\n\n## 核心结论\n\n这篇文章的核心观点是：**Anthropic 不只是做大模型和编程助手，它还在悄悄搭建一整套 AI 原生应用平台**。  \n作者通过对 Claude Code Web 运行环境做逆向分析，发现了一个内部部署平台 **Antspace**，以及一个网页应用生成环境 **Baku**。这意味着 Anthropic 可能想把“写应用、配后端、上线部署”全部收进自己的体系里。\n\n---\n\n## 文章讲了什么\n\n### 1. Claude Code Web 跑在 Firecracker 微型虚拟机里\n作者先确认：Claude Code Web 的底层环境不是普通容器，而是 **Firecracker MicroVM**。  \n这类技术也被 AWS Lambda、Fargate 使用，特点是 **轻量、隔离强、启动快**。\n\n文章还发现，这个环境极度精简：\n- 没有 systemd、sshd、cron\n- `PID 1` 是 Anthropic 自定义的 `process_api`\n- 它既像 init 进程，也像远程进程管理网关\n\n一句话：**Anthropic 为 AI 编码会话做了专门定制的运行时。**\n\n---\n\n### 2. 会话不是每次新建，而是从快照恢复\n作者发现 Claude Code 的会话不是现开一台机器，而是基于 **冻结好的 VM 快照** 恢复。  \n这样做的好处是：\n\n- 启动更快\n- 环境更一致\n- 资源复用效率更高\n\n这说明 Anthropic 在底层基础设施上已经做得很深，不是简单调个容器就完事。\n\n---\n\n### 3. 最大发现：一个没公开过的内部平台 `Antspace`\n作者在一个未剥离符号的 Go 二进制里，找到了一套完整的部署逻辑。  \n除了熟悉的 `VercelClient`，还发现了一个从未公开提及的：\n\n- `AntspaceClient`\n\n从代码和字符串中可以推断，Antspace 是一个 **内部 PaaS / 部署平台**，部署流程大致是：\n\n1. 创建部署\n2. 上传 `tar.gz` 构建产物\n3. 通过流式状态返回部署进度\n4. 最终完成上线\n\n也就是说，**Anthropic 自己做了一套类似 Vercel 的部署系统**，而不是只接第三方服务。\n\n---\n\n## Baku 是什么\n\n### 4. Baku 是 Claude 网页端“生成 Web 应用”的内部环境\n文章还发现一个代号叫 **Baku** 的环境。  \n它本质上像一个 AI 驱动的网页应用生成器，技术栈偏向：\n\n- Vite\n- React\n- TypeScript\n- Supabase\n\n更重要的是，它不是只帮你写前端页面，而是能顺手把数据库、类型生成、函数部署等能力一起接上。\n\n这意味着用户可能会经历这样一条链路：\n\n**自然语言提需求 → Claude 生成应用 → 自动配 Supabase → 部署到 Antspace → 应用直接可用**\n\n---\n\n## 这件事为什么重要\n\n### 5. Anthropic 的目标可能不是“AI 编程助手”，而是“AI 原生应用平台”\n文章最有价值的判断在这里：  \nAnthropic 正在构建的，不只是一个帮你写代码的工具，而是一个完整平台。\n\n它想覆盖的链条包括：\n- 理解需求：LLM\n- 生成代码：Claude / 编码代理\n- 提供运行环境：MicroVM\n- 管理后端能力：Supabase 集成\n- 最终部署上线：Antspace\n\n这让 Anthropic 的潜在竞争对手不只是 OpenAI，还包括：\n\n- `Vercel / Netlify`：部署托管\n- `Replit / Bolt / Lovable`：AI 生成应用\n- `Supabase / Firebase`：后端平台\n\n**真正的战略意义是：Anthropic 想掌控“从想法到上线”的整条链路。**\n\n---\n\n## 作者的方法也值得注意\n\n### 6. 这不是黑客攻击，而是“正常逆向分析”\n作者强调，所有发现都来自普通 Linux 工具，例如：\n\n- `dmesg`\n- `strace`\n- `strings`\n- `objdump`\n- `go tool objdump`\n\n没有漏洞利用，没有提权，没有网络攻击。  \n之所以能看到这么多，是因为 Anthropic 部署的某个 Go 二进制 **没有 strip，保留了完整调试符号和构建信息**。\n\n换句话说：**不是作者太神，而是对方留的信息实在太多。**\n\n---\n\n## 一句话总结\n\n### 7. 最终总结\n这篇文章揭示的是：**Anthropic 很可能正在从“模型公司”升级为“AI 应用基础设施公司”**。  \n如果这个方向成立，未来它卖的就不只是 Claude，而是一个让用户“用自然语言直接做出并发布应用”的完整平台。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1774867018597,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:015d5c19ab635cbf2a2084410938dc1d3009394be5d3b025330e2da8c4c02034",
+  "refs": {
+    "sessionId": "1774865364459_6thkls5g"
+  },
+  "revisionId": "sha256:e4e2e1e91016bb0f0c6cf45cde02f9394a3300cf4c21584b6c8b945468d17796",
+  "schemaVersion": 1,
+  "updatedAt": 1774867018597
+}

@@ -1,0 +1,73 @@
+{
+  "createdAt": 1779873616627,
+  "entityType": "session",
+  "id": "1779873616627_dacdf7ro",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估ToB项目报价时，先拆分税费、毛利、销售费用、维保和风险准备金，再核算研发预算",
+      "接政企定制项目之前，明确需求边界、验收标准、维保范围和现场支持要求",
+      "为不确定需求、安全整改和客户临时要求单独设置风险Buffer"
+    ],
+    "archiveReason": "可作为政企/ToB项目报价成本拆分的经验参考",
+    "classifiedAt": 1780616077317,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "政企软件报价成本拆解",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "ToB项目可能需要预留约30%毛利和约30%风险Buffer，再按剩余部分估算研发成本",
+      "政企软件报价中还包含税费、销售费用、项目经理、三年维保、现场服务等隐性成本",
+      "客户需求变更、漏扫、安全合规和随叫随到支持会显著抬高交付风险"
+    ],
+    "oneHighValuePoint": "ToB项目报价不能只按研发工作量估算，通常需预留毛利和较高风险Buffer。",
+    "oneLineReview": "短小但有现实感的ToB项目报价经验，适合快速了解政企软件成本结构。",
+    "primaryCategory": "软件项目管理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "ToB销售",
+      "项目报价"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/9hills/status/2059266199633252725",
+      "https://x.com/9hills/status/2059270166979207539"
+    ],
+    "summaryBrief": "文章以推文讨论形式解释政企ToB软件报价看似高的原因，指出报价中需扣除税费、毛利、销售费用、风险准备金、维保和项目管理成本，真正留给研发的人力预算有限。",
+    "tags": [
+      "政企软件",
+      "成本拆分",
+      "项目报价",
+      "风险Buffer",
+      "ToB"
+    ],
+    "title": "政企软件高报价背后的成本逻辑",
+    "totalScore": 57,
+    "url": "omnisun://digest/1779873616626"
+  },
+  "payloadHash": "sha256:0cf6ae639bf71491a5ddda89b14752860bd4cd54e46832a488d3b8ffcd75ef5a",
+  "refs": {},
+  "revisionId": "sha256:235729fd2885dd2fd99d880866e44c84ec4ed9488118ff1924f23b69b3054ad2",
+  "schemaVersion": 1,
+  "updatedAt": 1780616078069
+}

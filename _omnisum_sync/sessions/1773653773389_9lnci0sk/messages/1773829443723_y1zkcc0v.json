@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773829443724,
+  "entityType": "message",
+  "id": "1773829443723_y1zkcc0v",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Context Mode工具与会话管理\n\n**评级**: B (65.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: MCP生态, 上下文管理, 开发效率\n**标签**: #MCP #Claude Code #Codex CLI #上下文压缩 #会话连续性\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 这是一篇偏产品文档的高密度工具说明，实用性强，但证据主要来自项目自述，方法抽象层不高。\n**核心高价值点**: 最有价值的是把“上下文节省”和“会话连续性”拆成可执行架构：用 sandbox 工具阻断原始数据进入上下文，再用 SQLite+FTS5+BM25 在压缩后按需恢复状态。\n\n### 摘要\n文章介绍了 Context Mode 作为 MCP 上下文虚拟化层的定位，重点解决大模型工具调用导致的上下文膨胀和会话压缩后状态丢失问题。内容覆盖 Claude Code、Gemini CLI、Copilot、Cursor、OpenCode、Codex CLI 的安装、Hook 机制、能力差异、基准数据和安全策略。\n\n### 知识要点\n- MCP 工具调用可通过 Hook 和指令文件双层机制减少原始输出进入上下文\n- 会话连续性可通过事件持久化、压缩前快照和恢复时检索注入来实现\n- 不同 AI 编码平台对 Hook、SessionStart、PreCompact 的支持度差异很大\n- SQLite FTS5、BM25、trigram 和 Levenshtein 可组合用于轻量级上下文检索\n\n### 行动项\n- 如果你使用 Claude Code、Gemini CLI 或 Copilot，可挑一个环境试装并验证 ctx_stats 的节省效果\n- 对你当前常用的 AI 编码平台建立一张 Hook 支持矩阵，判断是否值得引入此类工具\n- 借鉴其架构思路，评估自己的 AI 工作流是否也需要事件持久化和检索式会话恢复\n\n### 存档判定\n归档: 是 — 原因: 包含具体安装配置、平台兼容性、工具能力矩阵和性能数据，后续搭建MCP工作流时可查阅\n删除: 否\n留存决策: 中期保留，作为AI编码工具链配置与选型参考",
+    "role": "assistant",
+    "timestamp": 1773829443724,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:cf9190ed756f7c31937249c4e58d21b90a2e5763769ed685cd20eb99a87739ec",
+  "refs": {
+    "sessionId": "1773653773389_9lnci0sk"
+  },
+  "revisionId": "sha256:7a57a78985e4c52ddb22805ba16c628d24d4bab4b1fd627a0f56f6f575448313",
+  "schemaVersion": 1,
+  "updatedAt": 1773829443724
+}

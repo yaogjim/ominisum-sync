@@ -1,0 +1,69 @@
+{
+  "createdAt": 1780386265792,
+  "entityType": "session",
+  "id": "1780386265792_5qa3l6pm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查找并观看AirOps在Claude大会上的完整分享，验证80% token减少和10倍速度提升的上下文",
+      "在自己的Agent项目中尝试将品牌规范、写作、合规检查拆成独立subagent",
+      "评估是否可用Markdown替代部分硬编码workflow配置",
+      "建立friction point记录表，持续追踪Agent产品中的主要瓶颈变化"
+    ],
+    "archiveReason": "提供了Agent产品从workflow builder转向agent-based approach的简明框架，适合作为后续研究线索",
+    "classifiedAt": 1780386696606,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AirOps智能体转型要点",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent产品可用Markdown文件进行编排，降低复杂工作流构建成本",
+      "通过brand compliance、writer、brand kit等subagents拆分职责以提升输出质量",
+      "每次优化后瓶颈会转移，需要持续追踪并解决新的friction point",
+      "Harness Engineering强调模型之外的工具、上下文、护栏和记忆系统的重要性"
+    ],
+    "oneHighValuePoint": "将模型视为引擎，把tools、context、guardrails、memory等外围能力作为真正的产品工程重点。",
+    "oneLineReview": "一条信息量尚可的AI Agent产品设计线索，但证据和细节不足，需要结合原视频进一步验证。",
+    "primaryCategory": "AI产品与智能体设计",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留为AI Agent产品设计素材",
+    "secondaryCategories": [
+      "Agent工程",
+      "AI工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章概述AirOps在Claude大会分享中从复杂工作流构建器转向Agent方案的思路，强调Harness Engineering：模型只是引擎，关键在工具、上下文、护栏和子智能体等外围系统。",
+    "tags": [
+      "AirOps",
+      "Agent",
+      "Harness Engineering",
+      "Subagents",
+      "Markdown编排"
+    ],
+    "title": "Vincent Logic | 信号＞噪音: 刚看完AirOps在Claude大会上的分享，干货满满🔥 他们从复杂的workflow builder转型到agent-based approach的思路很有…",
+    "totalScore": 60,
+    "url": "https://x.com/VincentLogic/status/2058944327364051337"
+  },
+  "payloadHash": "sha256:900d161e5895df44025e5763b900b5a87f917429ca4334b3b1cc613a4750d358",
+  "refs": {},
+  "revisionId": "sha256:409738ec63ef1caa855a6265829bc4f4a9078b7ea36f1ec2e5e5e4b7edd8901b",
+  "schemaVersion": 1,
+  "updatedAt": 1780387399505
+}

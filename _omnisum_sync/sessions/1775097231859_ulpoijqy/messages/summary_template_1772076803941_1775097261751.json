@@ -1,0 +1,23 @@
+{
+  "createdAt": 1775097261751,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1775097261751",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 主旨概括\n\n这篇内容主要介绍了一个 PR：为客户端补上`cch`请求签名机制，用`xxHash64`对请求体做完整性哈希，从而匹配 Anthropic 原本的请求校验方式，并解锁如`fast mode`这类能力。  \n核心改动是：统一在请求发送前，把请求体里预留的`cch=00000`占位符替换成真实哈希值，而不是再依赖 Bun 的原生 HTTP 实现。\n\n## 1. 这个 PR 做了什么\n\n- 实现了`cch`请求签名机制，目标是复刻逆向分析文章中描述的行为。\n- `cch`是放在`x-anthropic-billing-header`相关内容中的一个完整性校验字段，用来校验序列化后的请求体。\n- 新增依赖`xxhash-wasm`，通过 WebAssembly 计算`xxHash64`，优点是：\n  - 速度快\n  - 跨平台\n  - 不需要原生绑定\n- 新增模块`src/utils/cch.ts`，专门负责：\n  - 计算`cch`\n  - 检查是否存在占位符\n  - 替换占位符\n- 修改`src/services/api/client.ts`中的`buildFetch`：\n  - 拦截发往`/v1/messages`的请求\n  - 如果请求体里有`cch=00000`，就先计算真实值，再替换后发送\n- 修改`src/constants/system.ts`：\n  - 去掉`NATIVE_CLIENT_ATTESTATION`特性开关\n  - 让系统始终附带`cch=00000`占位符\n  - 真正的签名计算改到 JS 层执行\n\n## 2. `cch`的算法逻辑\n\n原文给出的算法步骤非常明确，流程如下：\n\n1. 先构造完整请求体，并在其中保留`cch=00000`占位符  \n2. 对整个请求体字节序列计算`xxHash64`\n3. 使用固定种子：`0x6E52736AC806831E`\n4. 计算结果再做掩码：`& 0xFFFFF`\n5. 最终格式化为**5 位、补零、小写十六进制字符串**\n6. 用这个值替换掉原来的`cch=00000`\n\n### 例子\n\n- 如果哈希最终结果低 20 位是`0x1a3f`\n- 那么格式化后就会变成`01a3f`\n- 请求体中的`cch=00000`会被替换成`cch=01a3f`\n\n这说明它不是一个完整长哈希，而是取了结果的一部分作为短校验值。\n\n## 3. 什么时候会触发签名\n\nPR 中说明，这个行为与原本 Bun 的原生实现保持一致，只有满足以下条件才会计算`cch`：\n\n- URL 路径包含`/v1/messages`\n- 请求头中存在`anthropic-version`\n- 请求体中包含`cch=00000`占位符\n\n也就是说，不是所有请求都会签名，而是只针对 Anthropic 消息接口的特定请求生效。\n\n## 4. 代码结构上的改动\n\n### `package.json`\n\n- 新增依赖：`xxhash-wasm ^1.1.0`\n\n### `src/utils/cch.ts`\n\n- 新增 CCH 工具模块\n- 负责：\n  - 懒加载 / 复用 xxHash64 hasher\n  - `computeCch (body)`：计算哈希\n  - `replaceCchPlaceholder (body, cch)`：替换占位符\n  - `hasCchPlaceholder (body)`：检测是否存在占位符\n\n### `src/services/api/client.ts`\n\n- 在 fetch wrapper 中拦截请求\n- 对符合条件的请求体异步计算`cch`\n- 替换完成后再发送给服务端\n\n### `src/constants/system.ts`\n\n- 不再依赖旧的 feature gate\n- 默认把`cch=00000`拼进 attribution header\n- 使签名流程更统一，逻辑也更容易迁移到 JS 环境\n\n## 5. 请求发送流程是怎么跑的\n\n原文用时序图描述了完整过程，可以概括成：\n\n- 客户端发起请求\n- `FetchWrapper`检查：\n  - 是否是`/v1/messages`\n  - 是否有`cch=00000`\n- 如果满足条件：\n  - 调用`CCHUtil`\n  - `CCHUtil`初始化或复用`xxHash64`实例\n  - 用 UTF-8 编码后的 body 和固定 seed 计算哈希\n  - 截取结果并格式化成 5 位 hex\n  - 把 body 中的占位符替换掉\n- 最后把更新后的请求体发给 API Server\n\n一句话理解：**请求先 “签名”，再真正发出去。**\n\n## 6. 测试与验证情况\n\n文中列出的测试计划包括：\n\n- `bun run build`成功\n- `bun run build:dev`成功\n- TypeScript 编译没有新增错误\n- 手动测试确认：\n  - 发往 Anthropic API 的请求里能看到计算后的`cch`\n  - 通过 OAuth 认证时，`fast mode`可以正常工作\n\n这些测试说明：\n- 构建层面是通的\n- 功能层面至少做了基本人工验证\n- 这个改动的实际目标之一，就是恢复或启用`fast mode`\n\n## 7. Code Review 提出的两个重要问题\n\n### 问题一：不要静默吞掉 CCH 签名错误\n\nCodeRabbit 指出，在`src/services/api/client.ts`中，当前`try/catch`同时包住了日志解析和 CCH 签名逻辑，导致：\n\n- 如果`computeCch`失败\n- 请求会继续发出\n- 但错误被静默忽略，难以及时发现回归问题\n\n建议改法：\n\n- 把 “URL 解析 / 日志记录” 和 “CCH 签名” 拆成两个独立的`try/catch`\n- 如果签名失败：\n  - 记录日志\n  - 保持原 body 不变\n  - 继续发送请求\n\n这样可以保证请求不中断，同时也能看到失败信号。\n\n### 问题二：占位符匹配范围太大，可能误伤用户内容\n\nCodeRabbit 还指出，`src/utils/cch.ts`里的辅助函数目前是全局查找`cch=00000`，这会带来风险：\n\n- 如果用户消息正文里刚好出现`cch=00000`\n- 代码可能误替换用户文本\n- 反而真正的 attribution header 没被正确签名\n\n建议改法：\n\n- 只在`attribution-header`这段内容里查找和替换`cch`\n- 用正则把匹配范围限定在 header 片段中\n- 如果 header 不存在，就：\n  - `replaceCchPlaceholder`返回原始 body\n  - `hasCchPlaceholder`返回 false\n\n这是一个很关键的健壮性问题，因为它关系到 “替换的是不是该替换的地方”。\n\n## 8. 合并前检查结果\n\n预检查结果是：\n\n- 通过：`2`项\n- 警告 / 失败：`1`项\n\n### 通过项\n\n- PR 标题检查通过\n- Description Check 跳过，但整体描述可接受\n\n### 警告项\n\n- `Docstring Coverage`只有`16.67%`\n- 要求阈值是`80.00%`\n\n这意味着功能本身基本没问题，但文档注释覆盖率明显不足，属于合并前需要补的工程质量项。\n\n## 9. 整体价值\n\n这个 PR 的实际意义可以概括为 3 点：\n\n- **兼容性更强**：把原来依赖 Bun 原生栈的签名逻辑搬到 JS 层，减少运行环境限制\n- **功能恢复更完整**：满足 Anthropic 请求校验要求，有助于启用`fast mode`\n- **实现更清晰**：签名逻辑拆成独立模块，后续更容易维护和测试\n\n如果用一句通俗的话说，这次改动就是：**给每个关键请求在发出前补上一个 “简短但必要的身份校验码”，让服务端愿意开启更完整的能力。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1775097261751,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:84a8628f116e4abbe69acfc861b5a03f607f84dc2ce62ef87c3b60e5ce9bfee6",
+  "refs": {
+    "sessionId": "1775097231859_ulpoijqy"
+  },
+  "revisionId": "sha256:ad3ebf1ae2b61e1b07db9a4adf236ee7673afb8b1deebb844d0a95b3ad027dd1",
+  "schemaVersion": 1,
+  "updatedAt": 1775097261751
+}

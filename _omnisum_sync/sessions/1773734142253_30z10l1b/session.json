@@ -1,0 +1,69 @@
+{
+  "createdAt": 1773734142253,
+  "entityType": "session",
+  "id": "1773734142253_30z10l1b",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "提炼其 Session Lifecycle、Task State Machine、Failure Recovery 设计用于评估现有 Agent 系统",
+      "参考其 Proposal + Task DAG 流程，为自己的 AI 开发流程补上规划与验证环节",
+      "对照其 MCP 工具分层与角色权限模型，重构现有多代理协作接口设计"
+    ],
+    "archiveReason": "内容系统梳理了 AI-Human 协作开发平台的角色设计、任务流转、会话管理与部署方式，对理解代理工程化与多智能体协作有持续参考价值。",
+    "classifiedAt": 1773734168523,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "AI协作代理编排平台综述",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Agent Harness 负责模型之外的会话、状态、上下文交接、编排与恢复能力",
+      "AI-DLC 工作流通过 Proposal、Task DAG、Execute、Verify 实现人机协同闭环",
+      "多角色代理可通过 MCP 工具、会话心跳和任务状态机进行统一编排",
+      "插件化生命周期钩子可自动处理子代理启动、心跳、退出与任务释放",
+      "可观测性通过活动流、Kanban、会话归属和通知系统来支撑协作调试"
+    ],
+    "oneHighValuePoint": "最有价值的是把“AI proposes, humans verify”落成可执行的 Agent Harness 机制，而不只停留在理念层面。",
+    "oneLineReview": "这是一篇偏产品与架构说明的高质量项目文档，方法框架清晰，工程落地性强，但证据支撑仍以功能罗列为主。",
+    "primaryCategory": "AI工程化",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "多智能体协作",
+      "开发工具链"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Chorus 这一面向 AI 与人类协作的软件开发代理平台，重点阐述会话生命周期、任务状态机、上下文恢复、子代理编排、可观测性与失败恢复，并给出完整架构、技术栈、部署与插件接入方式。",
+    "tags": [
+      "Agent Harness",
+      "AI-DLC",
+      "多代理系统",
+      "任务编排",
+      "开发流程"
+    ],
+    "title": "Chorus-AIDLC/Chorus: The Agent Harness for AI-Human Collaboration, inspired by the AI-DLC (AI-Driven Development Lifecycle)",
+    "totalScore": 74,
+    "url": "https://github.com/Chorus-AIDLC/Chorus"
+  },
+  "payloadHash": "sha256:f68f64a73361bee6d1699ec3abeec36db2ee6238db371fe51c2403cb8ea1c472",
+  "refs": {},
+  "revisionId": "sha256:59d64e6d7f07646e573264ef93c4650944fd9b7e99aae29a81048392e1d1fd0f",
+  "schemaVersion": 1,
+  "updatedAt": 1773734416077
+}

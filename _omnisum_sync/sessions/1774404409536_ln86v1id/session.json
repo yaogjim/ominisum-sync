@@ -1,0 +1,69 @@
+{
+  "createdAt": 1774404409536,
+  "entityType": "session",
+  "id": "1774404409536_ln86v1id",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将文中的Leader-Expert分层、DAG任务编排和验证闭环整理为自己的Agent系统设计清单",
+      "对照现有单代理方案，评估是否存在上下文竞争、角色混杂和缺少功能验证的问题",
+      "如需落地，可优先试验浏览器验证专家和变更感知测试，而不是直接复制整套产品叙事"
+    ],
+    "archiveReason": "对多智能体编程系统、任务编排、验证机制和安全沙箱提供了较完整的架构视角，适合后续做方案对比时查阅",
+    "classifiedAt": 1774407426458,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Qoder专家模式架构拆解",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Harness可视为位于Agent Framework之上的生产级控制层，负责规划、工具调用、上下文管理、验证与回滚",
+      "多智能体系统可通过Leader加星型拓扑减少上下文竞争、角色切换损耗和长链路漂移",
+      "跨模型调度能让不同任务匹配不同模型能力，从而同时优化质量与成本",
+      "功能正确性验证应补足浏览器E2E、变更感知QA和语义级代码审查，而非只依赖静态质量指标",
+      "终端执行安全需要结合命令解析、规则拦截、语义分析和沙箱隔离的多层防护"
+    ],
+    "oneHighValuePoint": "最有价值的是把“Harness Engineering”从单代理封装提升为“团队级编排系统”，强调协调层、执行层和验证层的明确分离。",
+    "oneLineReview": "有一定方法论启发，但本质上仍是偏营销的架构宣讲，证据强度不足以支撑其性能结论。",
+    "primaryCategory": "AI工程化",
+    "rating": "B",
+    "rejectReason": "带有明显产品宣传色彩，数据主要来自内部基准，缺乏可复现的实证细节",
+    "retentionDecision": "中期保留，作为AI编程代理架构设计的案例参考",
+    "secondaryCategories": [
+      "智能体系统设计",
+      "开发工具与编程代理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕Qoder的Experts Mode展开，提出将单体代码代理升级为由Leader协调的多专家系统，通过DAG并行、角色隔离、跨模型调度、功能验证和终端安全机制提升代码生成质量与成本效率。",
+    "tags": [
+      "Harness Engineering",
+      "多智能体协作",
+      "代码代理",
+      "系统架构",
+      "AI开发效率"
+    ],
+    "title": "How Qoder builds Harness Engineering into Experts Mode",
+    "totalScore": 66,
+    "url": "https://x.com/qoder_ai_ide/status/2036437931867644016"
+  },
+  "payloadHash": "sha256:f6a328abd6d2715ffabfec25aa8bc52c6ab1134da000b5c1e9355f7d8ff56171",
+  "refs": {},
+  "revisionId": "sha256:18f44e8a31a0b9cf9c4997f24dba25dc375193f4d4bdfa20ef152ce08ef260e2",
+  "schemaVersion": 1,
+  "updatedAt": 1774433949242
+}

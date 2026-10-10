@@ -1,0 +1,70 @@
+{
+  "createdAt": 1774581608826,
+  "entityType": "session",
+  "id": "1774581608826_nua2g4mr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "借鉴其双代理边界设计，评估自己项目中公开入口与私有能力是否需要拆分",
+      "为现有 AI 工具链增加成本上限、操作频率限制和审计日志",
+      "在需要自托管实时交互的场景中，考虑 IRC/WebSocket 这类简单稳定协议",
+      "梳理模型分层策略，区分低成本热路径与高推理冷路径任务"
+    ],
+    "archiveReason": "文章提供了清晰的代理分层、安全隔离、成本控制与通信协议选型思路，适合作为构建轻量自托管 AI 系统的参考案例。",
+    "classifiedAt": 1774584861153,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "用IRC构建AI数字门卫",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "georgelarson.me",
+    "favicon": "",
+    "knowledgePoints": [
+      "用 IRC 作为 AI 代理通信层可以获得自托管、低耦合、低锁定的优势",
+      "公开代理与私有代理分层部署是兼顾能力与安全的关键架构手法",
+      "模型选择应按任务分层而非盲目使用最大模型",
+      "A2A 协议适合做结构化代理协作，但必须配合可见性和审计机制",
+      "成本上限、工具白名单和沙箱化是面向公众代理的基础防线"
+    ],
+    "oneHighValuePoint": "最有价值的是将公开代理与私有代理彻底隔离，并用分层模型调用与严格升级策略控制风险、成本和能力边界。",
+    "oneLineReview": "不是炫技式聊天机器人展示，而是一篇把代理架构、安全边界和成本约束讲清楚的高质量工程实践文。",
+    "primaryCategory": "AI代理系统设计",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "安全架构",
+      "个人技术项目"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍作者如何用 IRC、自托管组件和双代理边界构建一个可公开访问的 AI“数字门卫”，重点展示了模型分层、A2A 调用、安全隔离、成本上限与最小攻击面的系统设计思路。",
+    "tags": [
+      "AI Agent",
+      "IRC",
+      "A2A协议",
+      "自托管",
+      "安全边界"
+    ],
+    "title": "building a digital doorman - george larson",
+    "totalScore": 71.5,
+    "url": "https://georgelarson.me/writing/2026-03-23-nullclaw-doorman/"
+  },
+  "payloadHash": "sha256:1ec1d87a25d55ac72926f50f251b5357259bbdc88b7d0d59fe5e08c642003c8d",
+  "refs": {},
+  "revisionId": "sha256:3b89e65d7dfbfec397816f86e57d68a066e9689753f62a0df05055a6ce5299c7",
+  "schemaVersion": 1,
+  "updatedAt": 1774584861154
+}

@@ -1,0 +1,68 @@
+{
+  "createdAt": 1774317041720,
+  "entityType": "session",
+  "id": "1774317041720_bs3ttb72",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估自己的知识库是否需要采用“目标-项目-日常”级联结构",
+      "如使用 Obsidian 和 Claude Code，可先试用其 /onboard 或 /adopt 流程验证适配度",
+      "借鉴其周回顾、月回顾和项目联动设计，重构自己的复盘模板"
+    ],
+    "archiveReason": "提供了较完整的仓库结构、命令体系和落地流程，可作为搭建 Obsidian + Claude Code 工作流的参考模板",
+    "classifiedAt": 1774317063264,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Obsidian与Claude知识系统",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "通过级联结构把长期目标与每日执行连接，减少目标与行动脱节",
+      "利用 Claude Code 的 skills、agents、hooks 和 markdown 文件组织 PKM 工作流",
+      "支持从现有 Obsidian 仓库迁移接入，而不是强制重建知识库",
+      "通过周/月回顾和项目状态汇总形成持续复盘机制"
+    ],
+    "oneHighValuePoint": "最有价值的是把“三年目标—年度目标—项目—月度—周回顾—日任务”设计成可执行闭环，并用命令化技能把流程真正落地。",
+    "oneLineReview": "适合作为 AI 驱动 PKM 系统的实现样板，但更像产品化 README，方法有启发，证据不足。",
+    "primaryCategory": "个人知识管理",
+    "rating": "B",
+    "rejectReason": "宣传性表述较多，缺乏真实使用案例、效果数据和失败边界说明，证据支撑偏弱",
+    "retentionDecision": "短期参考并归档，适合在搭建个人知识管理与AI协作流程时查阅",
+    "secondaryCategories": [
+      "AI工作流",
+      "效率系统"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一套基于 Obsidian 与 Claude Code 的个人知识管理启动模板，核心是把长期目标、项目、周回顾和日任务串成级联执行系统，并通过技能命令、代理和自动化脚本实现规划、复盘与更新。",
+    "tags": [
+      "Obsidian",
+      "Claude Code",
+      "PKM",
+      "目标管理",
+      "工作流自动化"
+    ],
+    "title": "ballred/obsidian-claude-pkm: A complete starter kit for an Obsidian + Claude Code personal knowledge management system.",
+    "totalScore": 65.5,
+    "url": "https://github.com/ballred/obsidian-claude-pkm"
+  },
+  "payloadHash": "sha256:924d32e997a884cf7eb1867471af81abdd335d821917afcc34da1a1235741400",
+  "refs": {},
+  "revisionId": "sha256:7d5016cdde35ca2e66a76575099cf44262381fae09a5e6ac2c70060acd8b46a6",
+  "schemaVersion": 1,
+  "updatedAt": 1774334589559
+}

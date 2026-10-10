@@ -1,0 +1,94 @@
+{
+  "createdAt": 1780533269892,
+  "entityType": "session",
+  "id": "1780533269892_dh787ycy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如参与 Multica 开发，可按 make dev 和 worktree-env 流程搭建本地环境。",
+      "在自己的项目中参考其共享基础设施加多数据库隔离的 worktree 开发模式。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780615507824,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 4,
+      "methodology_value": 6,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Multica本地开发贡献指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1780533302972,
+        "imageId": "img-1",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# Multica 贡献指南总结：本地开发与多工作区隔离流程\n\n## 1. 文档核心目的\n\n这是一份面向 Multica 开源项目贡献者的本地开发指南，主要说明如何在本地搭建、开发、测试和排障。\n\n它覆盖：\n\n- 首次环境初始化\n- 主代码目录开发\n- Git worktree 隔离开发\n- PostgreSQL 数据库管理\n- 后端、前端、daemon 全栈本地测试\n- Electron 桌面端本地联调\n- 常见问题与重置方案\n\n---\n\n## 2. 本地开发模型：共享 PostgreSQL，按数据库隔离\n\nMultica 的本地开发采用一个关键设计：\n\n> 所有 checkout /worktree 共享同一个 PostgreSQL Docker 容器，但每个 checkout 使用独立数据库。\n\n具体方式：\n\n- PostgreSQL 固定运行在`localhost:5432`\n- 主目录默认使用数据库：`multica`\n- 每个 worktree 使用独立数据库，例如：`multica_my_feature_702`\n- 后端和前端端口也会为不同 worktree 自动生成，避免冲突\n\n这种设计的好处是：\n\n- Docker 资源更简单\n- 多个 feature 可以并行开发\n- 数据和端口互不干扰\n- 不需要为每个分支启动一套完整 Docker Compose\n\n---\n\n## 3. 环境文件规则：主目录用`.env`，worktree 用`.env.worktree`\n\n文档强调一个重要规则：\n\n> 主 checkout 使用`.env`，worktree 必须使用`.env.worktree`，不要把`.env`复制到 worktree。\n\n原因是当前命令优先读取`.env`。如果 worktree 里误放了`.env`，可能会错误连接到主数据库，导致数据污染。\n\n主目录初始化：\n\n```bash\ncp .env.example .env\n```\n\nworktree 初始化：\n\n```bash\nmake worktree-env\n```\n\n该命令会自动生成：\n\n- 独立数据库名\n- 独立后端端口\n- 独立前端端口\n- 对应的`DATABASE_URL`\n\n---\n\n## 4. 首次启动：一个命令`make dev`\n\n无论在主目录还是 worktree，推荐直接运行：\n\n```bash\nmake dev\n```\n\n它会自动完成：\n\n- 判断当前是主目录还是 worktree\n- 创建对应 env 文件\n- 检查 Node.js、pnpm、Go、Docker\n- 安装前端依赖\n- 启动共享 PostgreSQL 容器\n- 创建数据库\n- 执行数据库迁移\n- 启动后端和前端\n\n这是项目推荐的 “一键开发入口”。\n\n---\n\n## 5. 主目录与 worktree 的典型开发流\n\n### 主目录开发\n\n适合维护稳定的 main 本地环境：\n\n```bash\nmake start-main\nmake stop-main\nmake check-main\n```\n\n默认：\n\n- 后端端口：`8080`\n- 前端端口：`3000`\n- 数据库：`multica`\n\n### Feature Worktree 开发\n\n适合开发新功能、修 Bug、并行验证：\n\n```bash\ngit worktree add ../multica-feature -b feat/my-change main\ncd ../multica-feature\nmake dev\n```\n\n之后日常使用：\n\n```bash\nmake dev\nmake stop-worktree\nmake check-worktree\n```\n\n每个 worktree 都有自己的数据库和端口，但共享同一个 PostgreSQL 容器。\n\n---\n\n## 6. 测试体系：统一通过`make check`\n\n本地完整检查可运行：\n\n```bash\nmake check-main\n```\n\n或在 worktree 中：\n\n```bash\nmake check-worktree\n```\n\n它会执行：\n\n- TypeScript 类型检查\n- TypeScript 单元测试\n- Go 测试\n- Playwright E2E 测试\n\n测试流程会在需要时自动启动后端和前端。\n\n---\n\n## 7. 全栈隔离测试：后端、前端、daemon 都从源码运行\n\n文档还描述了更完整的本地隔离测试方案，适合验证跨组件改动。\n\n目标是实现：\n\n- 本地后端\n- 本地前端\n- 本地 daemon\n- 自动认证\n- 不影响系统已安装的 Multica CLI 配置\n- 多个 worktree 并行运行不冲突\n\n每个 worktree 会生成唯一 daemon profile，例如：\n\n```text\ndev-multica_feat_auth-347\n```\n\n该 profile 会有独立的：\n\n- 配置文件\n- daemon PID\n- health port\n- workspace 目录\n- 本地数据库\n\n这保证了自动化测试、CI 或 AI agent 工作流可以无人工干预地运行。\n\n---\n\n## 8. 桌面端本地联调\n\n如果要测试 Electron 桌面应用，可在后端启动后运行：\n\n```bash\npnpm dev:desktop\n```\n\n它会自动：\n\n- 编译本地 CLI\n- 创建独立桌面 profile\n- 启动独立 daemon\n- 连接本地后端\n\n如果后端使用非默认端口，需要在桌面端配置：\n\n```env\nVITE_API_URL=http://localhost:<backend-port>\nVITE_WS_URL=ws://localhost:<backend-port>/ws\n```\n\n---\n\n## 9. 排障与重置\n\n### 常见问题\n\n如果提示缺少 env 文件：\n\n- 主目录执行：\n\n```bash\ncp .env.example .env\n```\n\n- worktree 执行：\n\n```bash\nmake worktree-env\n```\n\n检查 env：\n\n```bash\ncat .env\ncat .env.worktree\n```\n\n重点确认：\n\n- `POSTGRES_DB`\n- `DATABASE_URL`\n- `PORT`\n- `FRONTEND_PORT`\n\n### 停止服务\n\n停止后端和前端：\n\n```bash\nmake stop\n```\n\n停止共享 PostgreSQL 容器但保留数据：\n\n```bash\nmake db-down\n```\n\n### 重置当前数据库\n\n只重置当前 checkout 对应数据库：\n\n```bash\nmake stop\nmake db-reset\nmake start\n```\n\n不会影响其他 worktree 数据库。\n\n### 彻底清空所有本地 PostgreSQL 数据\n\n```bash\ndocker compose down -v\n```\n\n注意：这会删除主数据库和所有 worktree 数据库，需要重新 setup。\n\n---\n\n## 10. 产品与工程视角解读\n\n这份贡献指南的核心价值是降低多分支并行开发复杂度。\n\n它通过 “共享基础设施 + 逻辑隔离” 的方式，在开发体验和资源成本之间取得平衡：\n\n- 不为每个分支启动独立数据库容器，减少资源开销\n- 每个 worktree 拥有独立数据库，避免数据污染\n- 自动生成端口和 profile，降低配置负担\n- 支持本地全栈自动化验证，适合 AI agent / CI 场景\n- 明确区分生产 CLI 配置与本地开发 profile，降低误操作风险\n\n整体来看，这是一个较成熟的开源项目本地开发体系，特别适合多人协作、多 feature 并行、以及涉及后端、前端、CLI、daemon、桌面端的复杂产品形态。",
+        "url": "https://opengraph.githubassets.com/0ad0f9679926990203be50faa43bba2e7f6dbc105ae4998bfcb0f08073463022/multica-ai/multica",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/0ad0f9679926990203be50faa43bba2e7f6dbc105ae4998bfcb0f08073463022/multica-ai/multica",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/0ad0f9679926990203be50faa43bba2e7f6dbc105ae4998bfcb0f08073463022/multica-ai/multica",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "主 checkout 使用 .env，worktree 使用 .env.worktree，避免误连主数据库。",
+      "Git worktree 可结合路径哈希生成独立数据库名、后端端口和前端端口。",
+      "make dev 可自动完成环境检查、依赖安装、数据库启动、迁移和前后端启动。",
+      "完整隔离测试可为本地 daemon 创建独立 profile，避免污染生产 CLI 配置。"
+    ],
+    "oneHighValuePoint": "通过共享 PostgreSQL 容器、按 worktree 分配独立数据库和端口，实现多分支并行开发隔离。",
+    "oneLineReview": "一份实用但强项目绑定的开发环境与贡献流程文档。",
+    "primaryCategory": "软件开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "开源协作",
+      "本地开发环境"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "本文是 Multica 项目的贡献指南，详细说明本地开发、Git worktree 隔离、多数据库配置、测试、daemon、桌面端调试及重置流程。内容高度面向该项目，操作性强，但通用方法论和长期复用价值有限。",
+    "tags": [
+      "Git worktree",
+      "PostgreSQL",
+      "Docker",
+      "Makefile",
+      "开发流程"
+    ],
+    "title": "multica/CONTRIBUTING.md at main · multica-ai/multica",
+    "totalScore": 58.5,
+    "url": "https://github.com/multica-ai/multica/blob/main/CONTRIBUTING.md"
+  },
+  "payloadHash": "sha256:bcdae5d0ea644e477d962416d5640b737ca1b05f4fb2eb3cfc7cba8d257b7a28",
+  "refs": {},
+  "revisionId": "sha256:66026ea8b6a4c898fc675b7d5a062f5a590bd84b955297db90021915df5c3db7",
+  "schemaVersion": 1,
+  "updatedAt": 1780615508461
+}

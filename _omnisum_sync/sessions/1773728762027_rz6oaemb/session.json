@@ -1,0 +1,67 @@
+{
+  "createdAt": 1773728762027,
+  "entityType": "session",
+  "id": "1773728762027_rz6oaemb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如你有相关需求，可查看 GitHub 项目确认安装步骤、权限范围和配置要求",
+      "在实际使用前重点验证数据是否真实实时、是否有延迟及账户数据接入的安全性"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773728787969,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude接入实时股票数据",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Claude Desktop 可通过 MCP 接入外部金融数据源",
+      "Public.com 免费账户可提供股票与期权相关 API 数据",
+      "接入后可在聊天中查询实时股价、期权链、希腊值和持仓信息"
+    ],
+    "oneHighValuePoint": "将实时券商市场数据直接接入 Claude 对话窗口，可把行情查询、期权链浏览和策略讨论整合到同一工作流中。",
+    "oneLineReview": "这是一个有实操价值的工具接入速报，但更像宣传性摘要而非扎实教程。",
+    "primaryCategory": "AI工具与金融数据集成",
+    "rating": "C",
+    "rejectReason": "内容主要是转述教程亮点，缺少实测细节、限制条件和风险说明，方法论沉淀较弱。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Claude MCP生态",
+      "股票与期权分析"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍通过 Public.com 免费 API 和 Claude Desktop 的 MCP 连接，实现实时股票报价、期权链、希腊值及个人持仓查询。步骤较简洁，适合想快速搭建 AI 投资研究工作流的人，但缺乏延迟、稳定性和合规风险等关键验证信息。",
+    "tags": [
+      "Claude Desktop",
+      "MCP",
+      "Public.com API",
+      "实时行情",
+      "期权链",
+      "投资研究"
+    ],
+    "title": "Hanya Hu: 堪称一个人的华尔街",
+    "totalScore": 50.5,
+    "url": "https://x.com/RealHanyaHu/status/2033696050075021785"
+  },
+  "payloadHash": "sha256:363bf3ae60a6cb9a699e1f4a6677cb6a627a7f15752ad7aa6dccf344f029e5b7",
+  "refs": {},
+  "revisionId": "sha256:4a25bad08dacd8e9e642eb67e92f203d58f57eeba9e7d8133c611fbcbaa05e81",
+  "schemaVersion": 1,
+  "updatedAt": 1773730641823
+}

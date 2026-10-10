@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773308805156,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773308805156",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "下面用一个**“运维助手查询 Nginx HTTPS 配置”**的具体实例，给出基于你这篇内容的**CRAG + LangChain + Milvus 最佳实践（精炼版）**：\n\n---\n\n## 实例场景\n用户提问：\n\n> 如何在 Nginx 上配置 HTTPS 证书？\n\n传统 RAG 可能检索到：\n1. Apache HTTPS 配置教程（高相似，但场景错）\n2. 2019 年旧版 Nginx 配置（高相似，但已过期）\n3. HTTPS 原理说明（相关但不能直接解决问题）\n\n这就是典型的**Embedding 相似度虚高**。\n\n---\n\n## 该实例上的最佳实践\n\n### 1. 检索不要只做向量 TopK，要加 “租户 + 元数据 + 混合检索”\n**做法：**\n- 用**Milvus**存：\n  - dense embedding：语义检索\n  - sparse embedding：BM25 / 关键词检索\n  - metadata：`agent_id /confidence/verified /updated_at/source_type`\n- 查询时先按`agent_id`隔离，再按`confidence > 0.7`过滤。\n- 对 “Nginx / SSL /certbot/version” 这类强关键词，优先启用**混合检索**，避免只靠向量命中 Apache 文档。\n\n**最佳实践一句话：**\n> 语义召回负责 “找像的”，BM25 和 metadata 负责 “排除错的”。\n\n---\n\n### 2. TopK 之后必须加 “轻量评估器”，做三元判决\n**做法：**\n对检索出的 Top3 文档，不直接喂给大模型，而是先让评估器输出：\n- `relevant`：文档可直接支撑回答\n- `ambiguous`：部分相关，需要补充\n- `incorrect`：不该进入生成\n\n**在这个实例里：**\n- Apache 教程 → `incorrect`\n- 旧版 Nginx 教程 → `ambiguous`\n- HTTPS 原理文档 → `ambiguous`\n\n如果没有`relevant`，就不要让主模型直接回答 “操作步骤”。\n\n**最佳实践一句话：**\n> 评估器不是为了解释世界，而是为了在毫秒级拦住错文档。\n\n---\n\n### 3. 不要把整篇文档塞进上下文，只注入 “关键片段”\n**做法：**\n对 Nginx HTTPS 文档，只提取：\n- `listen 443 ssl`\n- `ssl_certificate`\n- `ssl_certificate_key`\n- 重载命令`nginx -t && systemctl reload nginx`\n\n不要把无关的 SSL 原理、历史版本说明、背景介绍一起塞进去。\n\n**最佳实践一句话：**\n> 给模型的是 “可执行片段”，不是 “相关文章全文”。\n\n---\n\n### 4. 模糊或错误时，自动触发 Web 搜索补新\n**做法：**\n如果内部知识库只有旧版 Nginx 配置，没有新版推荐写法：\n- `ambiguous`：内部精炼结果 + Web 搜索结果合并\n- `incorrect`：直接放弃内部结果，走 Web 搜索兜底\n\n**在这个实例里：**\n可补充搜索：\n- Nginx 官方文档\n- Let’s Encrypt / Certbot 最新说明\n- Ubuntu/CentOS 当前推荐部署方式\n\n**最佳实践一句话：**\n> 内部库负责业务沉淀，Web 搜索负责时效性兜底。\n\n---\n\n### 5. 把 “记忆污染治理” 做成默认机制\n**做法：**\n将每条记忆写入 Milvus 时，维护：\n- `confidence`\n- `verified`\n- `updated_at`\n- `source`\n- `version`\n\n并加规则：\n- 低置信度内容不参与主检索\n- 超过一定时间的配置类知识降权\n- 已被评估为错误的内容禁止再次入库\n\n**在这个实例里：**\n如果某条旧配置已被判为过期，就不能继续作为高优先级记忆参与召回。\n\n**最佳实践一句话：**\n> CRAG 不只是纠错一次，而是防止错误反复回来。\n\n---\n\n## 最推荐的一套落地策略\n如果你要把这个实例真正上线，最稳妥的组合是：\n\n- **Milvus**：做多租户 + 混合检索 + metadata 过滤\n- **LangChain / LangGraph middleware**：在模型调用前拦截，执行 CRAG\n- **轻量评估器**：先判`relevant /ambiguous/incorrect`\n- **知识精炼**：只保留 Nginx HTTPS 配置关键句\n- **Web 搜索兜底**：补最新官方实践\n- **动态注入上下文**：只对当前轮次生效，不污染长期消息栈\n\n---\n\n## 最后总结\n针对 “**Embedding 相似度虚高**” 这个问题，这个实例中的最佳实践可以浓缩成一句话：\n\n> **不要相信相似度分数本身，而要在 “检索后、生成前” 增加评估、精炼和纠正。**\n\n如果你愿意，我还可以继续把这个实例整理成一版：\n\n1. **面试式回答版**（适合对外讲解）  \n2. **PPT 一页纸版**  \n3. **可直接放文章结尾的 “最佳实践总结” 版**",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773308805156,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a078e795022bb80caf68adcd8616b1ea486face0b3193b678517a135a64bd731",
+  "refs": {
+    "sessionId": "1773308094187_siw3xn6o"
+  },
+  "revisionId": "sha256:af8c2b767e06d95e2565f07008c1cb63572176214b5f227958068d2085a929a6",
+  "schemaVersion": 1,
+  "updatedAt": 1773308805156
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1774517388321,
+  "entityType": "session",
+  "id": "1774517388321_0z5jq2c5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在做AI应用或Agent产品，可评估将生成式UI设计为独立工具调用而非文本输出",
+      "在自己的流式前端原型中尝试采用DOM diff和脚本后置执行策略验证体验提升"
+    ],
+    "archiveReason": "兼具产品机制拆解、实现路径和流式渲染工程细节，可作为生成式UI与代理工具设计参考。",
+    "classifiedAt": 1774522738907,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude生成式UI逆向拆解",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "michaellivs.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Claude生成式UI本质上是工具调用而非Markdown内嵌HTML",
+      "流式渲染可通过部分JSON解析、增量DOM更新和脚本延迟执行实现",
+      "morphdom比反复setHTML或innerHTML替换更适合保持视觉连续性",
+      "按模块惰性加载设计指南能减少模型上下文负担"
+    ],
+    "oneHighValuePoint": "最有价值的是将“流式工具调用 + 增量HTML解析 + DOM diff + 延迟脚本执行”总结为一套可复用的生成式UI实现架构。",
+    "oneLineReview": "这是一篇少见的把产品现象、协议线索和可运行实现串起来的高密度工程拆解文。",
+    "primaryCategory": "AI产品工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "逆向工程",
+      "终端交互设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章通过抓包、行为观察和原型实现，拆解了Claude生成式UI的工具调用、流式DOM更新与CSP/CDN机制，并进一步在终端代理Pi中基于Glimpse与morphdom复现类似体验，工程细节丰富。",
+    "tags": [
+      "Claude",
+      "Generative UI",
+      "Reverse Engineering",
+      "Terminal Agent",
+      "WKWebView"
+    ],
+    "title": "Reverse-engineering Claude's generative UI - then building it for the terminal",
+    "totalScore": 72.5,
+    "url": "https://michaellivs.com/blog/reverse-engineering-claude-generative-ui/"
+  },
+  "payloadHash": "sha256:45df62940ef30967288265f8db3784138de13305a4353d3937a4afab603d1621",
+  "refs": {},
+  "revisionId": "sha256:8758259ee6c6f7027b52552ef9c9dded572ea6f96aa35909d7de414aa2a92926",
+  "schemaVersion": 1,
+  "updatedAt": 1774522738911
+}

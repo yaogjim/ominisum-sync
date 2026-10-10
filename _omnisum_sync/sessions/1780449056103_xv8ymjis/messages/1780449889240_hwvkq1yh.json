@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780449889241,
+  "entityType": "message",
+  "id": "1780449889240_hwvkq1yh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Search as Code工程实践\n\n**评级**: C (47.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI Agent工程\n**次类别**: 搜索架构, API设计\n**标签**: #Search as Code #Code Mode #Micro Agent Runtime #Perplexity #MCP\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 3 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 有概念启发，但信息过短，缺乏工程细节和证据支撑。\n**核心高价值点**: 将搜索或复杂 API 能力转化为可运行代码接口，可能比传统 function call 或 REST API 更适合长任务 Agent。\n\n### 摘要\n文章提到一种类似 Cloudflare Dynamic Worker 的 code mode 实践，将复杂 API 调用包装为 micro agent runtime，用代码直接调用搜索栈，以降低 agent 多轮函数调用成本，并提升确定性和输出质量。\n\n### 知识要点\n- Code Mode 可被视为介于 MCP、技能生成和传统 REST API 之间的一种 Agent 工程接口形态。\n- Search as Code 的核心是让 Agent 编写并执行代码直接调用搜索栈，减少逐个函数调用带来的摩擦。\n- 回复中提到 re-in-act 范式可能有助于平衡成本、确定性和上下文腐烂问题。\n\n### 行动项\n- 查看 Perplexity Search as Code 原文，判断其架构细节和适用场景。\n- 对比 Code Mode、MCP、REST API、Skill-based generation 在成本、确定性和可维护性上的差异。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是观点型短推，缺少完整论证、实现细节和可复用案例，适合作为概念线索而非深入资料。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1780449889241,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:3beedccfb72fcfdf2c1a1322ffbddef9e3137ff536986f8430dbc9cfa9be364f",
+  "refs": {
+    "sessionId": "1780449056103_xv8ymjis"
+  },
+  "revisionId": "sha256:68ba286ea8160a6224addf1c1b81e7eab73b127c3bd59fff0dfd9261a308fd4a",
+  "schemaVersion": 1,
+  "updatedAt": 1780449889241
+}

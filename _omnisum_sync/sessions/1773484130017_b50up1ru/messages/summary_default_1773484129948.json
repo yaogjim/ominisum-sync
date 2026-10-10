@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773484129948,
+  "entityType": "message",
+  "id": "summary_default_1773484129948",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "**精炼总结：** Karpathy 的 Autoresearch 之所以有价值，不在于 “AI 会做研究”，而在于它用单文件可控修改、固定指标、限时实验、失败回滚和完整日志，把自主代理变成了一个可靠、可重复、可持续优化的受约束搜索系统。\n\n**一句话评论：**这篇文章最有启发的地方是点明了：真正让智能体可用的不是更大自由度，而是更强约束和更稳的实验框架。\n\n**一句话高价值内容：**如果你在做 Agent，最该优先设计的不是 “让它更聪明”，而是 “让它的每次尝试都可衡量、可回退、可审计、可持续运行”。",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1773484129948,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:488440fe3b766a9e0a9a9c53539bc5dc1f4e816f201cc8b77744716addaa0211",
+  "refs": {
+    "sessionId": "1773484130017_b50up1ru"
+  },
+  "revisionId": "sha256:67ebbf292a0f8560979c49b343b99c82cf27715e3716a802b8b5b4b3b6f8762a",
+  "schemaVersion": 1,
+  "updatedAt": 1773484129948
+}

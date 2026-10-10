@@ -1,0 +1,112 @@
+{
+  "createdAt": 1779153063281,
+  "entityType": "session",
+  "id": "1779153063281_lz9whcg5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在重要功能开发前撰写 ADR，记录目标、假设、方案权衡和潜在后果。",
+      "使用 LLM 时限定在低风险、可验证、边界清晰的任务上，避免直接外包架构判断和数据分析结论。",
+      "在遇到编码阻力时暂停并审视架构，而不是盲目依赖 AI 生成更多代码。",
+      "对 LLM 输出进行人工审查，尤其关注其遗漏的上下文、数据质量问题和隐含假设。",
+      "保留团队协作、代码评审、测试、设计和产品沟通等流程，不将其简单视为应被消除的摩擦。"
+    ],
+    "archiveReason": "文章从软件复杂性、抽象、协作、责任感和技术伦理等多个角度系统反思 LLM 驱动编程，具有较强的方法论和长期参考价值。",
+    "byline": "宝玉",
+    "classifiedAt": 1780616040613,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "反思凭感觉编程的风险",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HIk2hGsXwAAQm33?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HIk2hGsXwAAQm33?format=jpg&name=medium",
+        "width": 1200
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 675,
+        "id": "img-5",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HIk569xWYAAkp0D?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HIk569xWYAAkp0D?format=jpg&name=medium",
+        "width": 1199
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 675,
+        "id": "img-6",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HIk6Po6WEAAp1SZ?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HIk6Po6WEAAp1SZ?format=jpg&name=medium",
+        "width": 1199
+      }
+    ],
+    "knowledgePoints": [
+      "LLM 主要帮助减少编写代码、查命令、生成样板等偶然复杂性，但难以替代架构设计和问题建模中的本质复杂性。",
+      "软件开发中的摩擦不全是坏事，它常常是架构不合理、理解不足或协作流程需要介入的信号。",
+      "抽象既能简化现实，也会遮蔽现实，开发者需要持续审视模型遗漏了什么。",
+      "架构决策记录 ADR 可作为迫使自己澄清假设、方案和后果的有效工具。",
+      "LLM 无法真正承担道德责任、产品责任和系统后果，最终责任仍由人类开发者承担。"
+    ],
+    "oneHighValuePoint": "将 LLM 编程的局限放在“偶然复杂性 vs 本质复杂性”的框架下分析，指出真正困难的是抽象、判断、协作和责任，而不是单纯写代码。",
+    "oneLineReview": "一篇立场鲜明但论证扎实的反 AI 编程热潮文章，最有价值的是提醒开发者不要把判断力和责任感外包给工具。",
+    "primaryCategory": "软件工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "人工智能",
+      "技术伦理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章反思作者为何不采用“凭感觉编程”，认为 LLM 可降低偶然复杂性，却难以处理本质复杂性、责任、协作和系统设计判断。作者强调摩擦、架构记录、数据审问和人类责任感在软件开发中的价值。",
+    "tags": [
+      "LLM",
+      "Vibe Coding",
+      "软件复杂性",
+      "架构决策",
+      "AI风险"
+    ],
+    "title": "为什么我不“凭感觉编程”",
+    "totalScore": 77,
+    "url": "https://x.com/dotey/status/2056247701264630062"
+  },
+  "payloadHash": "sha256:a7b3f708f29018c44b903778f3f82c9f3ddd325add526af9075c1e74d330f81a",
+  "refs": {},
+  "revisionId": "sha256:74dd25e5645d9c435efc56b636d16b22447ddcb48e784fe4520fcbfbcb6f2f15",
+  "schemaVersion": 1,
+  "updatedAt": 1780616046332
+}

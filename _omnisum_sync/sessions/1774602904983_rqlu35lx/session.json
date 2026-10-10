@@ -1,0 +1,78 @@
+{
+  "createdAt": 1774602904983,
+  "entityType": "session",
+  "id": "1774602904983_rqlu35lx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你有家庭健康资料分散管理的问题，可先参考其目录结构搭一个最小可用版健康档案库",
+      "将最近一次体检报告、当前用药清单和复查时间线整理为结构化模板，验证AI提取效果",
+      "为系统补充医学免责声明、人工复核流程和异常指标的就医升级规则，避免误判",
+      "如涉及敏感隐私数据，优先评估本地模型方案或关闭云端模型数据留存选项"
+    ],
+    "archiveReason": "提供了较完整的本地化健康档案搭建思路、目录结构和可直接套用的Prompt清单，后续实施时有参考价值",
+    "classifiedAt": 1774606205951,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "AI家庭健康档案搭建指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "可用Obsidian作为家庭健康档案的本地存储中心，按成员组织病史、用药、体检和复查记录",
+      "可通过多组Prompt把非结构化健康资料转成结构化信息，如体检报告提取、药盒识别、趋势分析和复查日历生成",
+      "AI在健康管理中的高价值场景是信息整理、提醒和沟通转译，而不是直接替代医生诊断",
+      "本地存储加云端分析是折中方案，隐私敏感场景可改用本地模型"
+    ],
+    "oneHighValuePoint": "把分散的体检、用药、病史和可穿戴设备数据统一沉淀到本地知识库，再用AI做提取、趋势分析和提醒，是全文最具长期复用价值的设计。",
+    "oneLineReview": "这是一个很实用的AI健康管理工作流样板，但更像个人系统搭建经验，而非经过验证的医疗方法论。",
+    "primaryCategory": "AI应用与个人知识管理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期重点参考，可归档留作搭建个人/家庭健康管理系统时复用",
+    "secondaryCategories": [
+      "健康管理",
+      "Obsidian工作流",
+      "Prompt工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/runes_leo/status/2036468625171763599",
+      "https://x.com/runes_leo/status/2036703713117491409",
+      "https://github.com/runesleo/ai-health-vault/blob/main/README_CN.md"
+    ],
+    "summaryBrief": "文章展示了用Claude Code、Obsidian和日历工具搭建家庭健康管理系统的流程，包括体检报告提取、药盒识别、趋势分析、复查提醒和口语化输出，并附带可复用模板与Prompt。价值在于工作流整合清晰，但医学有效性和证据支撑较弱。",
+    "tags": [
+      "AI健康管理",
+      "Obsidian",
+      "Claude Code",
+      "家庭档案",
+      "体检报告",
+      "Prompt模板"
+    ],
+    "title": "AI家庭健康管理全攻略",
+    "totalScore": 64,
+    "url": "omnisun://digest/1774602904983"
+  },
+  "payloadHash": "sha256:17762842f479df2dafecb6f0ea15320cb0210e4b4c27a52ca72aa0caeea6b679",
+  "refs": {},
+  "revisionId": "sha256:31f6efb9ee272019f34e0192e58aa9d965993367dbfd733c41a4192768881748",
+  "schemaVersion": 1,
+  "updatedAt": 1774606205956
+}

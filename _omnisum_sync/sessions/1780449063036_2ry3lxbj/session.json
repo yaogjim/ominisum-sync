@@ -1,0 +1,69 @@
+{
+  "createdAt": 1780449063036,
+  "entityType": "session",
+  "id": "1780449063036_2ry3lxbj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在Obsidian中建立Codex记忆目录，并创建AGENTS.md、INDEX.md、TODO.md等核心文件",
+      "为Codex设置规则：每次任务仅读取索引和最相关的少量记忆文件",
+      "制定长期记忆写入白名单与敏感信息黑名单",
+      "在重要任务结束前要求Codex总结并更新相关记忆文件"
+    ],
+    "archiveReason": "提供了可直接复用的Codex外部记忆库目录结构和写入规则，适合作为AI工作流配置参考",
+    "classifiedAt": 1780449890910,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Obsidian作为Codex长期记忆库",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "外部Markdown知识库可作为AI Agent跨会话、跨项目的长期记忆层",
+      "长期记忆应只保存偏好、边界、稳定路径、关键命令、决策和可复用工作流",
+      "敏感信息、完整聊天记录和临时过程不应写入长期记忆",
+      "任务结束前进行memory closeout有助于沉淀长期价值信息和未闭环事项"
+    ],
+    "oneHighValuePoint": "不要让AI全量读取记忆库，而是默认只读规则与索引，再按任务关键词读取最相关的1-3个文件。",
+    "oneLineReview": "一个实用但证据较弱的AI外部记忆管理方案，适合快速借鉴而非完全照搬。",
+    "primaryCategory": "AI工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留为AI记忆管理方案模板",
+    "secondaryCategories": [
+      "知识管理",
+      "提示词工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍用Obsidian作为Codex跨项目长期记忆库的方法，通过索引、分目录管理、按需读取、短准写入和任务结束前记忆收尾，降低Token消耗并提升重要信息复用率。",
+    "tags": [
+      "Codex",
+      "Obsidian",
+      "长期记忆",
+      "Token优化",
+      "AI Agent"
+    ],
+    "title": "逸尘: 让Codex不再失忆——外接Obsidian大脑Token优化，重要记忆全部记住 之前外国朋友的方法我用了下，发现Token消耗其实挺大，所以让Codex优化了…",
+    "totalScore": 68.5,
+    "url": "https://x.com/gengdaJ/status/2061756699170807819"
+  },
+  "payloadHash": "sha256:0e6191621a663f4bbc4413821d8bfb8ef35bded34153067f788b07116341876c",
+  "refs": {},
+  "revisionId": "sha256:e30e9e6c5b913a851ddca7fe5dc041736cfc4eae45110a10db488955b9745557",
+  "schemaVersion": 1,
+  "updatedAt": 1780454506484
+}

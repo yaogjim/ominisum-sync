@@ -1,0 +1,15 @@
+{
+  "createdAt": 1774920261828,
+  "entityType": "session-content",
+  "id": "1774920261828_c7bmsgzx",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>卡颂</strong></header><div class=\"tw-body\">很多程序员的 Skill 数量已经失控了。<br><br>今天试了 superpowers，明天又被安利 compound-engineering，后天跟风又装了 gstack，Skill 数量瞬间膨胀到几十个，Skill 之间的跳转、召回逻辑变得无比不稳定。<br><br>这是很多人都会经历的，本质原因是：这些框架都是对 Harness Engineering 最佳实践的探索，自身都有亮点（比如 superpowers 的 Skill 编排，compound 的持续学习），但能力又有交集。<br><br>当前 Skill 管理工具的思路都是“屏蔽复杂度”（比如启用/停用 某个 Skill），而不是“降低复杂度”。<br><br>我当前在实践的方式是：以 superpowers 为基础框架，把其他框架的亮点（比如 compound）合并在基础框架上。当然，合并、测试 Skill 都是通过 Skill 完成的。<br><br>这样能控制 Skill 数量的膨胀速度～</div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Vint</strong> <span class=\"tw-eng\">♥ 22 · 💬 0</span><p>可以试试这个 Skill 管理工具，按需开启和关闭整套 Skill。<br><br><br>https://<br>github.com/VintLin/skill-<br>flow<br>…</p></div><div class=\"tw-reply\"><strong>@aresyang</strong> <span class=\"tw-eng\">♥ 22 · 💬 0</span><p>使用unix哲学的skill-gov 秒掉你的技能管理问题</p></div><div class=\"tw-reply\"><strong>@吉姆斯</strong> <span class=\"tw-eng\">♥ 3 · 💬 0</span><p>可以按照自己工作流把每个skill里面最需要的整合到一起，用起来会方便不少</p></div><div class=\"tw-reply\"><strong>@lifcc</strong> <span class=\"tw-eng\">♥ 3 · 💬 0</span><p>我也是superpowers打底，现在60多个skill按领域分（coding/部署/运维各一套），关键是让每个skill只管一个窄领域不要重叠，superpowers负责路由分发。合并的时候最容易踩坑的是skill之间的触发条件冲突，两个skill都match同一个pattern就开始打架</p></div><div class=\"tw-reply\"><strong>@hexarrior</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>试试graph based workflow，比用skill更可控<br>试试基于图的工作流，比用技能更可控</p></div></div>",
+    "pageContent": "卡颂: 很多程序员的 Skill 数量已经失控了。 今天试了 superpowers，明天又被安利 compound-engineering，后天跟风又装了 gstack，Skill 数量瞬间膨胀到几十个，Skill 之间的跳转、召回逻辑变得无比不稳定。 这是很多人都会经历的，本质原因是：这些框架都是对 Harness Engineering 最佳实践的探索，自身都有亮点（比如 superpowers 的 Skill 编排，compound 的持续学习），但能力又有交集。 当前 Skill 管理工具的思路都是“屏蔽复杂度”（比如启用/停用 某个 Skill），而不是“降低复杂度”。 我当前在实践的方式是：以 superpowers 为基础框架，把其他框架的亮点（比如 compound）合并在基础框架上。当然，合并、测试 Skill 都是通过 Skill 完成的。 这样能控制 Skill 数量的膨胀速度～\n---\n热门回复 (共 5 条):\n@Vint (♥ 22 · 💬 0):\n可以试试这个 Skill 管理工具，按需开启和关闭整套 Skill。\n\n\nhttps://\ngithub.com/VintLin/skill-\nflow\n…\n\n@aresyang (♥ 22 · 💬 0):\n使用unix哲学的skill-gov 秒掉你的技能管理问题\n\n@吉姆斯 (♥ 3 · 💬 0):\n可以按照自己工作流把每个skill里面最需要的整合到一起，用起来会方便不少\n\n@lifcc (♥ 3 · 💬 0):\n我也是superpowers打底，现在60多个skill按领域分（coding/部署/运维各一套），关键是让每个skill只管一个窄领域不要重叠，superpowers负责路由分发。合并的时候最容易踩坑的是skill之间的触发条件冲突，两个skill都match同一个pattern就开始打架\n\n@hexarrior (♥ 1 · 💬 0):\n试试graph based workflow，比用skill更可控\n试试基于图的工作流，比用技能更可控\n"
+  },
+  "payloadHash": "sha256:7037468dbd270ebb3fd164cbb5217fc0cf088d91b7e90d5390d45ea9637ee882",
+  "refs": {},
+  "revisionId": "sha256:a12f21808077b795b7694970f20e7fb55d03b3a4176f1377f990ddac2960bf4c",
+  "schemaVersion": 1,
+  "updatedAt": 1774922499555
+}

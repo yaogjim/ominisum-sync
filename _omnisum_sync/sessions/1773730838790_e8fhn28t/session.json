@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773730838790,
+  "entityType": "session",
+  "id": "1773730838790_e8fhn28t",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果对该思路感兴趣，进一步查找原始论文或技术报告，确认Residual Attention或Block AttnRes的具体实现与实验结果。",
+      "将“时间轴-深度轴”二维表格作为分析框架，比较RNN、ResNet、Transformer中的信息流动方式。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773730863132,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 5,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "ResNet与LSTM旋转类比",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "ResNet残差连接可被视为沿深度维度传播信息，与LSTM沿时间维度传播状态形成类比。",
+      "所谓“90度旋转的attention”强调同一token在不同层之间做信息聚合，而非仅在同层token间注意。"
+    ],
+    "oneHighValuePoint": "把网络计算看成“时间轴-深度轴”的二维表格，有助于统一理解RNN、ResNet和跨层Attention的结构关系。",
+    "oneLineReview": "这是一个有启发但不够扎实的架构类比，适合打开思路，不适合作为结论依据。",
+    "primaryCategory": "深度学习架构认知",
+    "rating": "C",
+    "rejectReason": "主要价值在启发式类比，缺少论文级细节、实验数据与可复现方法，难以支撑深入学习或直接落地。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "神经网络类比理解",
+      "Transformer改进讨论"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章用“旋转90度”的视角把ResNet、LSTM与Attention联系起来，强调时间维度与深度维度的对偶性，并引出跨层attention与Residual Attention的直觉，但整体更像概念速记，证据与细节明显不足。",
+    "tags": [
+      "ResNet",
+      "LSTM",
+      "Attention",
+      "Residual Attention",
+      "架构类比"
+    ],
+    "title": "Rainier: A ResNet is an LSTM rotated 90 degrees 把网络的计算过程想象成一个表格 - 横轴是time step， 这是 RNN / …",
+    "totalScore": 49.5,
+    "url": "https://x.com/mtrainier2020/status/2033634252315881766"
+  },
+  "payloadHash": "sha256:d0a97af9e088c136c9895c2e02ff07921299d0ee6e90025cabda351b356a0f57",
+  "refs": {},
+  "revisionId": "sha256:74f1f56b9164a677f7924614198f1d4d124faf4f81d3648e2577ace169008233",
+  "schemaVersion": 1,
+  "updatedAt": 1773731108691
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773318573_4b0d6nmu",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Geek Lite：多 Agent 编排看板与开发环境\n\n## 一句话总结\n\n**Kandev 是一个运行在服务器上的 AI Agent 编排开发工具**，可以让人类在审查代码变更的同时，并行调度多个 AI Agent 执行不同任务，提升 AI 辅助开发的效率与可控性。\n\n## 核心功能\n\n### 1. 多 Agent 接入与编排\n\nKandev 支持通过 **ACP 协议**接入多个 AI Agent，包括：\n\n- Claude Code\n- Codex\n- Copilot\n- Gemini\n- 以及其他共 7 类 Agent\n\n在开发流水线中，每一步都可以指定不同的 Agent 执行，实现类似“AI 团队分工协作”的效果。\n\n### 2. 看板与流水线管理任务\n\n任务可以通过：\n\n- 看板管理\n- 流水线编排\n- 并行执行\n- 父子任务拆分\n\n这意味着复杂需求可以被拆成多个子任务，由不同 Agent 同时处理。\n\n### 3. 内置完整开发工作区\n\nKandev 提供一套集成式开发环境，包括：\n\n- 终端\n- 编辑器\n- Git 面板\n- 浏览器预览\n\n人类可以直接在同一个工作区内查看、审查、修改和合并 Agent 的产出。\n\n### 4. 代码隔离与执行环境\n\n为了避免多个 Agent 互相干扰，Kandev 使用 **git worktree** 隔离不同 Agent 的代码变更。\n\n执行方式支持：\n\n- 本地进程\n- Docker\n- 远程 sprites.dev 环境\n\n## 产品价值\n\n### 对开发团队\n\nKandev 更像是一个“AI 开发团队调度平台”，而不是单一 AI 编程助手。它适合处理多任务、多分支、多 Agent 协作的开发场景。\n\n### 对产品和工程管理者\n\n它的价值在于把 AI 编程从“单点对话”升级为“流程化协作”：\n\n- 人负责审查和决策\n- Agent 负责并行执行\n- 看板负责组织任务\n- Git 负责隔离与追踪变更\n\n## 总结判断\n\nKandev 代表了一类新的 AI 开发工具方向：**从单 Agent 辅助编程，走向多 Agent 协作式软件生产**。\n\n它的关键不只是让 AI 写代码，而是提供了任务编排、环境隔离、代码审查和流程管理能力，让 AI 更接近一个可调度、可管理的工程团队。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8a9f9a300647229ed83fe41949fc5a77fd7d226588b304c02bb16ecd0f2a1a3a",
+  "refs": {
+    "sessionId": "1777773318321_byedyaob"
+  },
+  "revisionId": "sha256:06a2ba0abb7ac1520c96aa1d715842db499c2a2e6403fbb9f9e2ef96dfa786e5",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

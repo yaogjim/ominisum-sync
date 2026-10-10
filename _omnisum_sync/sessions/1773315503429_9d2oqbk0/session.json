@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773315503429,
+  "entityType": "session",
+  "id": "1773315503429_9d2oqbk0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如你在做Agent工程，可对比Lucid与现有RAG、搜索插件、浏览器工具在事实校验上的差异与成本。",
+      "若考虑采用，优先验证其文档覆盖率、响应延迟、错误率和价格是否适合你的实际工作流。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773830092368,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Lucid智能体知识层项目介绍",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Lucid通过MCP server向Agent暴露四类实时知识工具：文档搜索、包信息检查、事实验证、API引用获取。",
+      "项目强调基于意图触发skills，让Agent在回答时自动调用外部知识源而非仅依赖训练数据。"
+    ],
+    "oneHighValuePoint": "将“文档检索、包检查、事实验证、API引用”封装为可自动触发的MCP工具链，降低Agent使用实时知识的接入成本。",
+    "oneLineReview": "概念方向不错，但目前更像营销型README，信息不够扎实。",
+    "primaryCategory": "AI Agent基础设施",
+    "rating": "C",
+    "rejectReason": "内容偏产品宣传与安装说明，缺少架构细节、实测效果、对比分析和可信案例支撑，方法论价值有限。",
+    "retentionDecision": "低优先级短期参考，若近期会评估Agent知识校验工具可暂留，否则后续可删除",
+    "secondaryCategories": [
+      "MCP工具生态",
+      "开发者工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Lucid作为MCP服务器，为智能体提供实时文档检索、包版本检查、事实校验和API引用查询能力，核心卖点是减少幻觉并以在线信息覆盖训练数据，但缺乏性能、准确率和实际案例验证。",
+    "tags": [
+      "AI Agent",
+      "MCP Server",
+      "实时知识",
+      "RAG",
+      "开发工具"
+    ],
+    "title": "get-Lucid/Lucid: An intelligence layer grounding autonomous agents in verified, real-time knowledge at scale.",
+    "totalScore": 44.5,
+    "url": "https://github.com/get-Lucid/Lucid"
+  },
+  "payloadHash": "sha256:5e6d7a473e0853685e1d28148c290e20a7a7c504e56a0359f2c9e79758aa467e",
+  "refs": {},
+  "revisionId": "sha256:bc68f2ebd914fae837b2de63d134c606c57413c0f057a3a31a6287510917bef4",
+  "schemaVersion": 1,
+  "updatedAt": 1773830092372
+}

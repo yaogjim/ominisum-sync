@@ -1,0 +1,69 @@
+{
+  "createdAt": 1774262541408,
+  "entityType": "session",
+  "id": "1774262541408_7xslv6z6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的常用任务上测试“自动专家身份生成+作答”的两阶段提示链路",
+      "将该方法与静态角色提示、CoT、ReAct 等策略做小规模 A/B 对比",
+      "如果用于生产或研究，补充人工评测与任务级指标，避免只依赖 LLM-as-a-judge"
+    ],
+    "archiveReason": "提出了可复用的专家身份增强思路，并给出数据构造与模型训练流程，适合后续查阅",
+    "classifiedAt": 1774262564735,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "论文",
+    "classifyTitle": "专家提示增强指令跟随",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "arxiv.org",
+    "favicon": "https://static.arxiv.org/static/browse/0.3.4/images/icons/favicon-32x32.png",
+    "knowledgePoints": [
+      "通过少样本 In-Context Learning 自动生成与指令匹配的专家身份描述",
+      "将专家身份与原始指令拼接，可提升回答的完整性和专业化风格",
+      "可用增强后的回答重新生成指令微调数据，训练开源对话模型",
+      "固定通用专家描述弱于按任务定制的专家身份描述",
+      "GPT-4 作为裁判模型可快速比较回答质量，但存在评测偏差风险"
+    ],
+    "oneHighValuePoint": "将“为具体任务自动匹配专家身份”作为通用提示增强步骤，可直接迁移到数据合成、回答增强和角色化交互场景。",
+    "oneLineReview": "是一个有启发但证据强度有限的提示工程论文，适合借鉴思路，不宜过度相信结论。",
+    "primaryCategory": "大语言模型提示工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "建议归档留存，作为提示工程和指令数据构造的参考材料",
+    "secondaryCategories": [
+      "指令微调",
+      "开源模型评测"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出 ExpertPrompting：先为每条指令自动生成细粒度专家身份描述，再让模型以该身份作答，并据此构造训练数据训练 ExpertLLaMA。方法简单且有一定启发性，但证据主要依赖 GPT-4 自动评测，实验严谨性一般。",
+    "tags": [
+      "ExpertPrompting",
+      "Prompt Engineering",
+      "Instruction Tuning",
+      "ExpertLLaMA",
+      "GPT-4评测"
+    ],
+    "title": "ExpertPrompting: Instructing Large Language Models to be Distinguished Experts",
+    "totalScore": 69.5,
+    "url": "https://arxiv.org/html/2305.14688v2"
+  },
+  "payloadHash": "sha256:84747e4e8533c86123852c70b2739f07cbf88d505c623e1af0c1f6bf5e475ec9",
+  "refs": {},
+  "revisionId": "sha256:b40f64c89bd1fd51e2c7a7a1076683f9120975a374c3d2495131dc2aa110ac7f",
+  "schemaVersion": 1,
+  "updatedAt": 1774262830903
+}

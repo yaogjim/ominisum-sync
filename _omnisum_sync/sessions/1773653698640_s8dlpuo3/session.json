@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773653698640,
+  "entityType": "session",
+  "id": "1773653698640_s8dlpuo3",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估自己当前代码协作流程中哪些重复操作可由编排层自动化，如建分支、转发 CI 日志、处理 review comments",
+      "如果团队已有 Codex、Claude Code 或 Aider 使用场景，可先用小仓库验证其 worktree 隔离和自动修复 CI 的实际效果"
+    ],
+    "archiveReason": "提供了较完整的产品能力、插件架构、CLI命令和配置示例，适合作为后续选型或实现参考",
+    "classifiedAt": 1773829338360,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "并行编码代理编排工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "多智能体编码场景的关键瓶颈不在生成能力，而在任务隔离、状态追踪、CI反馈处理和审查闭环",
+      "通过 Runtime、Agent、Workspace、Tracker、Notifier 等插件槽位，可以将代理系统做成可替换的工程基础设施"
+    ],
+    "oneHighValuePoint": "把“多代理写代码”从单终端操作提升为可批量管理的工程流程，核心价值在于 worktree 隔离、反馈自动回流和插件化编排。",
+    "oneLineReview": "更像一份成熟的项目说明书，工程落地感强，但证据和效果对比仍偏宣传式。",
+    "primaryCategory": "AI工程化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "可归档留存，作为多代理编排与工程自动化方案参考",
+    "secondaryCategories": [
+      "开发工具",
+      "多智能体协作"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一款面向代码仓库的多智能体编排工具，支持并行派发编码代理、隔离 worktree、自动处理 CI 失败和审查意见，并通过插件化架构适配不同代理、运行时和任务跟踪系统。",
+    "tags": [
+      "Agent Orchestrator",
+      "并行编码代理",
+      "CI自动修复",
+      "代码审查自动化",
+      "GitHub工作流"
+    ],
+    "title": "ComposioHQ/agent-orchestrator: Agentic orchestrator for parallel coding agents — plans tasks, spawns agents, and autonomously handles CI fixes, merge conflicts, and code reviews.",
+    "totalScore": 65,
+    "url": "https://github.com/ComposioHQ/agent-orchestrator"
+  },
+  "payloadHash": "sha256:b84e8971a8d34ad6232bbf08349506dbb6ce7d861d87322072f39360a55f1e5b",
+  "refs": {},
+  "revisionId": "sha256:243c4bfc9598cf1644a95e9298787324641059847454b440c4fc435374fe2d43",
+  "schemaVersion": 1,
+  "updatedAt": 1773829338362
+}

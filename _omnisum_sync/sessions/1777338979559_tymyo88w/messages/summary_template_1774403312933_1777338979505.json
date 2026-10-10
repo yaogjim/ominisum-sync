@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777338979505,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1777338979505",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Credit Genie 如何用 Insights Agent 改进 AI 金融助手\n\n## 一句话总结\n\nCredit Genie 通过 Insights Agent 分析用户与 AI 金融助手 AskGenie 的真实对话，发现大量未被覆盖的用户需求，并据此补齐功能缺口，将 AI 助手从 “财务问答工具” 升级为更完整的金融服务入口。\n\n## 核心背景\n\nCredit Genie 是一个移动优先的金融健康平台，提供现金预支、信用建设和个性化财务洞察服务。\n\n他们在 App 中推出了 AI 金融助手 AskGenie，希望帮助用户理解财务状况、获取个性化建议。但上线后，团队需要知道：用户到底在 AskGenie 里问什么？产品是否真正满足了需求？\n\n## Insights Agent 做了什么\n\nCredit Genie 使用 Insights Agent 对大量用户对话进行聚类分析。\n\n有两种分析方式：\n\n- **预定义分类 V1**：按团队事先设定的类别分析。\n- **自动生成分类 V2**：不预设类别，让系统从真实对话中自动发现主题。\n\n结果显示，用户并不只是询问财务建议，还大量把 AskGenie 当作客服入口使用。\n\n## 关键发现\n\nInsights Agent 自动识别出几个高频需求：\n\n- **还款管理**：用户想修改现金预支的还款日期。\n- **现金预支状态查询**：用户想知道预支金额、到账时间、余额和费用。\n- **产品与功能问题**：用户希望了解或申请新的现金预支。\n- **支持请求**：用户直接在 AskGenie 中寻求客服帮助。\n\n这说明，虽然 Credit Genie 已有独立客服机器人，但用户更倾向于在当前 AI 助手中完成问题解决，而不是跳转到另一个入口。\n\n## 产品改进动作\n\n基于 Insights Agent 的发现，Credit Genie 对 AskGenie 做了三类升级：\n\n### 1. 增加现金预支查询能力\n\nAskGenie 可以查询：\n\n- 获批现金预支金额\n- 预计到账日期\n- 计划还款日期\n- 历史现金预支记录\n\n### 2. 支持直接操作\n\n用户可以在聊天中：\n\n- 修改还款日期\n- 申请新的现金预支\n\n这让 AskGenie 从 “回答问题” 变成 “完成任务”。\n\n### 3. 引入聊天内支持请求\n\n用户无需跳转到独立客服机器人，可以直接在 AskGenie 内提交支持请求，减少体验割裂。\n\n## 对产品团队的启发\n\n### 用户行为比产品假设更重要\n\n团队原本以为用户主要会问财务洞察问题，但真实数据表明，大量用户把 AI 助手当作服务入口。\n\n### AI 对话数据是产品发现工具\n\nInsights Agent 不只是监控工具，更像是一个持续的用户研究系统。它能从对话中发现未满足需求，并直接转化为功能路线图。\n\n### AI 产品需要持续反馈闭环\n\nCredit Genie 现在每周运行 Insights Agent，用来观察用户行为变化、新兴需求和功能缺口，从而加快产品迭代节奏。\n\n## 最终价值\n\nCredit Genie 通过 Insights Agent 建立了一个持续反馈机制：\n\n> 用户对话 → 自动聚类 → 发现需求 → 补齐功能 → 持续监测\n\n这让 AskGenie 更贴近真实用户场景，也让 AI 金融助手从单点能力进化为更完整的金融服务体验。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1777338979505,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2f662609afb8c9a1c5eeb06d851f444dcff0fb05c71b13ab05b4f29f45846768",
+  "refs": {
+    "sessionId": "1777338979559_tymyo88w"
+  },
+  "revisionId": "sha256:351889d556cf7f54415802e37d17dbc3c50934b551528de91f6159daad20ee05",
+  "schemaVersion": 1,
+  "updatedAt": 1777338979505
+}

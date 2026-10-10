@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773918002104,
+  "entityType": "message",
+  "id": "1773918002104_wfwkzoxk",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Hermes智能代理项目简介\n\n**评级**: B (56.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent工具\n**次类别**: 开源项目介绍, 开发者工具\n**标签**: #AI Agent #Hermes #开源 #CLI #多平台集成\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 功能宣传很强、上手信息充足，但证据支撑不足，更像产品README而非深度方法文章。\n**核心高价值点**: 最有价值的是它将记忆、技能沉淀、跨会话检索和多平台入口整合为一个持续演化的Agent工作流。\n\n### 摘要\n这是一份Hermes Agent的项目主页说明，重点介绍其自学习闭环、多平台接入、终端与消息网关、任务调度和多模型支持等能力，并给出安装、配置、迁移和贡献开发指引。\n\n### 知识要点\n- Hermes支持CLI与Telegram、Discord、Slack等多平台统一接入\n- 项目强调内建学习闭环，包括技能生成、记忆持久化和历史会话检索\n- 支持多模型切换、多种终端后端以及定时任务调度\n- 提供从OpenClaw迁移配置、记忆和技能的完整路径\n\n### 行动项\n- 若你在做Agent选型，可将Hermes与AutoGen、OpenDevin、OpenInterpreter做功能矩阵对比\n- 按README执行最小安装并验证CLI、多模型切换和消息网关能力\n- 重点审查其记忆机制、技能系统和安全审批流程是否满足生产需求\n\n### 存档判定\n归档: 是 — 原因: 内容覆盖功能、安装、使用入口和迁移方案，适合后续做工具对比或上手参考\n删除: 否\n留存决策: 短期参考后保留，适合作为Agent工具选型资料",
+    "role": "assistant",
+    "timestamp": 1773918002104,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:5ebfd8d1f4e5fe9f7dec2a6d56169811ea77001ab6586cf40152e0cdba3c2dba",
+  "refs": {
+    "sessionId": "1773557202681_8avopsup"
+  },
+  "revisionId": "sha256:f60cba99c5c7cbbe3022af4fc0c9092b02aeadb62d7605be88a80272bdd268e3",
+  "schemaVersion": 1,
+  "updatedAt": 1773918002104
+}

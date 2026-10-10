@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780558584075,
+  "entityType": "message",
+  "id": "1780558584074_hzthdml4",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent记忆方案MemOS实测\n\n**评级**: A (70.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI Agent\n**次类别**: 长期记忆, 个人知识管理\n**标签**: #MemOS #Agent Memory #Reflect2Evolve #Claude #RAG #本地插件\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 一篇有实际测试、有架构信息、有方法论启发的 Agent 长期记忆案例，但证据仍以个人体验为主。\n**核心高价值点**: Agent 记忆的核心不应只是存储历史对话，而应从执行过程里提炼可复用的行为策略和技能。\n\n### 摘要\n文章通过 MemOS Local Plugin 的实测，对比传统“检索旧对话”式记忆方案，说明其通过 trace、policy、skill 逐步沉淀任务经验，并在写作和产品页任务中验证了高频任务记忆的有效性与跨项目迁移边界。\n\n### 知识要点\n- 传统 Agent 记忆方案多依赖对话存储与向量检索，容易出现信噪比低、记忆扁平、无法从错误中归纳策略等问题。\n- MemOS 的 Reflect2Evolve 思路是将对话沉淀为 trace，再归纳为 policy，最后结晶为可复用 skill。\n- 高频重复任务更容易形成稳定记忆和技能，单次偏好不一定会被立即固化。\n- 本地记忆系统可结合 SQLite、FTS5、向量检索、RRF、MMR、时间衰减和 LLM 过滤提升记忆检索质量。\n- 多 Agent 共享同一套记忆核心，可以避免切换工具导致记忆资产归零。\n\n### 行动项\n- 尝试安装 MemOS Local Plugin，并用一个高频任务测试 trace 到 skill 的沉淀效果。\n- 将当前手写在 CLAUDE.md 中的固定规则区分为显性规则、可学习偏好和可沉淀技能。\n- 设计至少两个跨 session 测试任务，验证 Agent 是否能在不重复提示的情况下调用历史经验。\n- 观察 Viewer 中的 memory、experience、skill 和 support 数量，判断哪些任务值得长期训练。\n- 对比现有 RAG 记忆方案，重点评估其是否具备策略归纳、版本演化和上下文区分能力。\n\n### 存档判定\n归档: 是 — 原因: 文章提供了较完整的 Agent 长期记忆实践案例，包含 trace、policy、skill 的演化思路和本地记忆系统架构，适合作为后续研究 Agent Memory 与个人工作流自动化的参考。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1780558584075,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:b0735413083d3cf1076392320b32362bb462a44dc1c431ea4a7b8549f154e924",
+  "refs": {
+    "sessionId": "1780558047506_45nwnwpy"
+  },
+  "revisionId": "sha256:5407d56307afc9a4be390fb3fefd345b8395c865c8166fffd89748eb3a7f2b08",
+  "schemaVersion": 1,
+  "updatedAt": 1780558584075
+}

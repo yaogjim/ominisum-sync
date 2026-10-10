@@ -1,0 +1,73 @@
+{
+  "createdAt": 1774581081343,
+  "entityType": "session",
+  "id": "1774581081343_8q1gmue5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为当前智能体系统梳理 5-10 个关键生产行为，并补齐对应的针对性 eval，而非继续泛化堆 benchmark。",
+      "建立评估标签体系与 docstring 规范，在 CI 中支持按行为类别和模型进行子集评测。",
+      "审视现有代理框架是否需要引入 middleware 层来承载 PII 处理、重试、总结、动态工具选择等横切逻辑。"
+    ],
+    "archiveReason": "内容包含智能体评估设计、指标体系与中间件扩展框架，适合后续搭建或优化代理系统时反复参考。",
+    "classifiedAt": 1774584840039,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "智能体评估与中间件方法",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "我是一名资深产品经理，对科技、ai、商业、产品、社会等有深刻理解。\n请对我提供的多个内容综合分析提炼，思考和推演对我在产品的实践上有哪些启发？以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "评估应按被测行为分类，并为每个 eval 写明其能力映射与标签，便于分组运行和长期维护。",
+      "模型选择应先看正确性，再在达标模型中比较效率、延迟和成本，并借助“理想轨迹”衡量行为质量。",
+      "Agent Middleware 通过 before_model、wrap_model_call、wrap_tool_call 等钩子，将业务逻辑、合规与运行时控制从核心代理循环中解耦。"
+    ],
+    "oneHighValuePoint": "最有价值的是提出“评估直接塑造代理行为”，强调应围绕生产中真正关心的行为设计针对性 eval，而不是盲目堆测试数量。",
+    "oneLineReview": "对做智能体产品和框架的人很有参考价值，方法清晰，但案例与量化证据仍偏少。",
+    "primaryCategory": "AI工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "智能体评估",
+      "代理框架设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/Vtrivedy10/status/2037203679997018362",
+      "https://x.com/sydneyrunkle/status/2037184580143243751"
+    ],
+    "summaryBrief": "文章分为两部分：一是如何围绕真实生产行为构建深度智能体评估，包括数据来源、分类体系、正确性与效率指标、CI运行方式；二是介绍 Agent Middleware 作为定制代理框架的关键抽象，用于处理合规、上下文管理、动态工具选择与生产护栏。",
+    "tags": [
+      "Deep Agents",
+      "LangChain",
+      "评测体系",
+      "Agent Middleware",
+      "生产级智能体"
+    ],
+    "title": "智能体产品的行为系统竞争力",
+    "totalScore": 70.5,
+    "url": "omnisun://digest/1774581081343"
+  },
+  "payloadHash": "sha256:1dade663116e1d5d282f503df15a861a3457d2b25244bb81da41659b07f5d63a",
+  "refs": {},
+  "revisionId": "sha256:15977a06fc94aefc043f25976df3e88cee32bb612b271e50a1c288cdda0d4df8",
+  "schemaVersion": 1,
+  "updatedAt": 1774584840040
+}

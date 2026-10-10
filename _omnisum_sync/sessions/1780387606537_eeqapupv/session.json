@@ -1,0 +1,70 @@
+{
+  "createdAt": 1780387606537,
+  "entityType": "session",
+  "id": "1780387606537_eeqapupv",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "阅读Perplexity原始研究文章，核验SaC架构细节和benchmark数据。",
+      "对比现有Agent项目中的function calling流程，识别是否存在串行调用、上下文膨胀和中间状态污染问题。",
+      "尝试设计一个小型Search as Code原型，用Python沙箱编排搜索、过滤、去重和结果验证流程。",
+      "整理可复用的搜索原语接口，评估哪些能力适合交给代码执行而不是LLM上下文处理。"
+    ],
+    "archiveReason": "文章系统梳理了Search as Code的架构逻辑、适用场景和与传统function calling的差异，对理解Agent搜索基础设施演进有较高参考价值。",
+    "classifiedAt": 1780388672840,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Search as Code架构解析",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "传统function calling在高频、多步、并行搜索任务中容易形成串行瓶颈，并导致上下文污染。",
+      "Search as Code通过模型生成代码、沙箱执行、SDK原语组合，实现对检索、过滤、聚合、验证等流程的可编排控制。",
+      "代码在该范式中既是编排器，也是能力补足器，可动态实现SDK缺失的过滤、去重、验证逻辑。",
+      "Agent Skills不必详列所有函数，更重要的是提供简洁、可泛化的组合指南和示例。",
+      "AI原生基础设施的接口设计可能通过autoresearch循环持续自我优化。"
+    ],
+    "oneHighValuePoint": "将LLM从“调用搜索API”转变为“用代码编排搜索原语”，可显著降低复杂检索任务中的上下文膨胀和串行瓶颈。",
+    "oneLineReview": "这是一篇高质量的AI搜索架构趋势解读，适合关注Agent基础设施的人精读。",
+    "primaryCategory": "AI基础设施",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "Agent架构",
+      "搜索系统"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Perplexity提出的Search as Code架构：由模型生成Python代码，在沙箱中编排搜索原语，以减少串行function calling带来的延迟、token浪费和上下文污染，并通过CVE分析等案例展示其在复杂检索任务中的优势。",
+    "tags": [
+      "Search as Code",
+      "AI Agent",
+      "搜索架构",
+      "Function Calling",
+      "代码编排"
+    ],
+    "title": "yibie: Search as Code：搜索架构的下一次范式转移 Perplexity 刚刚发布了一个新架构，叫 Search as Code（SaC）",
+    "totalScore": 74,
+    "url": "https://x.com/yibie/status/2061633153325015067"
+  },
+  "payloadHash": "sha256:073cb30f4a5c6677de8b7ed64c23bf9f3e76bea301e72c187aad71921ebb7b23",
+  "refs": {},
+  "revisionId": "sha256:ca552ce484ab71fc2f22050394fe3937a33804b4d73288294027dcb02d328bbf",
+  "schemaVersion": 1,
+  "updatedAt": 1780388907152
+}

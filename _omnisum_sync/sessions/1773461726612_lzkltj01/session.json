@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773461726612,
+  "entityType": "session",
+  "id": "1773461726612_lzkltj01",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理你当前使用的模型与供应商差异，评估是否需要自建一层最小统一API而非依赖重量级SDK。",
+      "在自己的代理或工具链中加入AbortController、partial result与tool参数校验，以提升交互体验和稳定性。"
+    ],
+    "archiveReason": "文章对统一LLM API、上下文切换、工具调用与代理循环的设计取舍有较强实践参考价值，适合作为构建自有代理框架时的经验样本。",
+    "classifiedAt": 1773829938287,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "极简编码代理构建经验",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "mariozechner.at",
+    "favicon": "",
+    "knowledgePoints": [
+      "统一LLM API时，真正需要兼容的核心接口类型并不多，但不同供应商在tool calling、reasoning和token统计上存在大量细碎差异。",
+      "跨供应商上下文接力本质上只能做到best-effort，需要处理thinking traces、tool call状态和厂商签名数据的转换与回放。",
+      "高质量代理基础设施应原生支持请求中断、流式部分结果返回、参数校验和事件驱动UI集成。"
+    ],
+    "oneHighValuePoint": "最有价值的是强调“上下文工程优先”，并围绕可控上下文、跨供应商切换和工具调用抽象来设计代理核心。",
+    "oneLineReview": "一篇偏工程实践的构建复盘，方法启发不错，但论证和完整性不足以支撑更高评级。",
+    "primaryCategory": "AI工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考，按需保留",
+    "secondaryCategories": [
+      "编码代理",
+      "LLM基础设施"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结作者自建极简编码代理的经验，重点讨论统一多供应商LLM API、上下文跨模型切换、可中断流式调用、工具结果分层展示与最小代理循环设计，实践感强，但证据多为个人经验且正文明显截断。",
+    "tags": [
+      "coding agent",
+      "LLM API抽象",
+      "tool calling",
+      "context engineering",
+      "TUI"
+    ],
+    "title": "What I learned building an opinionated and minimal coding agent",
+    "totalScore": 67.5,
+    "url": "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/"
+  },
+  "payloadHash": "sha256:a280ae172a32d3b995fc2d02c85ed64ca82d54bd2137bb26f8adbb07289b8617",
+  "refs": {},
+  "revisionId": "sha256:c55ab095c1196144905e6d8571317b19faf09da6a0097a009dbc2c02ba07fe62",
+  "schemaVersion": 1,
+  "updatedAt": 1773829938292
+}

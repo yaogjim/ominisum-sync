@@ -1,0 +1,71 @@
+{
+  "createdAt": 1780307288986,
+  "entityType": "session",
+  "id": "1780307288986_w733q016",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将并行运行的AI代理数量限制在自己能够高质量审查的低个位数范围内。",
+      "为代理输出设置自动验证要求，例如测试通过、截图对比或明确变更说明。",
+      "采用批量审核方式，减少频繁上下文切换带来的认知损耗。",
+      "为复杂架构判断预留连续深度工作时间，避免被代理协调任务切碎。",
+      "在多代理工作流中建立类似背压机制，让代理产出速度匹配人工审查速度。"
+    ],
+    "archiveReason": "提出了AI代理工作流中的注意力瓶颈问题，并给出可复用的并发系统类比和实践原则，适合作为AI辅助开发方法论参考。",
+    "classifiedAt": 1780307488818,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI代理编排税与注意力架构",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "多代理并行并不等于产出线性增长，人的审查能力会成为类似GIL的串行锁。",
+      "阿姆达尔定律适用于AI代理工作流：优化非瓶颈环节不会提升整体吞吐量。",
+      "上下文切换会显著增加编排成本，过多代理可能导致浅层审查或认知投降。",
+      "应按审查速率限制代理并发量，而不是按工具界面允许的最大数量启动代理。",
+      "可通过测试、截图、自动校验等方式让代理证明低价值部分，把人的注意力留给关键判断。"
+    ],
+    "oneHighValuePoint": "真正的瓶颈不是代理生成速度，而是人类对结果进行判断、审查和整合的串行注意力吞吐量。",
+    "oneLineReview": "用并发系统视角解释多代理开发中的注意力瓶颈，概念清晰且具备较强实践启发。",
+    "primaryCategory": "AI工程效率",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "软件工程方法论",
+      "个人生产力"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出“编排税”概念：启动多个AI代理很容易，但人的审查、判断和合并能力仍是单线程瓶颈。应像设计并发系统一样设计注意力架构，通过限制代理数量、批量审核、自动验证和保护连续时间来提升真实产出。",
+    "tags": [
+      "AI代理",
+      "编排成本",
+      "注意力管理",
+      "并发系统",
+      "代码审查"
+    ],
+    "title": "编排税",
+    "totalScore": 73.5,
+    "url": "https://x.com/addyosmani/status/2059844244907696186"
+  },
+  "payloadHash": "sha256:f9acefea3798562a7c87ca1129072fab3fefb88392ffd9e287a5dfb3059e13ee",
+  "refs": {},
+  "revisionId": "sha256:d84125a7c2194dddf820b2c1cc53e0329468c251215d59b9798b423e57be00f3",
+  "schemaVersion": 1,
+  "updatedAt": 1780307834554
+}

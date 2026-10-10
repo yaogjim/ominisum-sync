@@ -1,0 +1,63 @@
+{
+  "createdAt": 1776075081738,
+  "entityType": "session",
+  "id": "1776075081738_q1rvbi77",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "进入 GitHub 和在线 Demo，亲自验证中文长文本、情绪控制和稳定性表现",
+      "将其与 ElevenLabs、Minimax 等产品按成本、延迟、可控性和授权方式做实测对比"
+    ],
+    "archiveReason": "可作为开源语音生成工具线索与竞品对标入口，便于后续实测验证。",
+    "classifiedAt": 1776078006252,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "开源语音生成模型VoxCPM2速报",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "VoxCPM2 主打开源、本地运行、30 种语言支持与语音克隆能力",
+      "文中引用了与 ElevenLabs 的语音相似度对比数据，但未展开测试方法细节"
+    ],
+    "oneHighValuePoint": "提供了一个可本地部署、支持多语言和商业使用的开源 TTS/语音克隆项目线索。",
+    "oneLineReview": "这是一个有工具发现价值的情报帖，但远不足以作为严肃选型依据。",
+    "primaryCategory": "AI工具与语音生成",
+    "rating": "C",
+    "rejectReason": "内容高度营销化，缺少完整测试方法、样本设置和可复现实验过程，结论可信度有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开源模型动态",
+      "TTS语音合成"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以社交媒体口吻介绍开源语音生成项目 VoxCPM2，强调其在多语言语音相似度、成本、本地部署和商用许可上的优势，并给出 GitHub 与 Demo 线索，但整体偏宣传，缺乏系统验证。",
+    "tags": [
+      "VoxCPM2",
+      "语音克隆",
+      "开源TTS"
+    ],
+    "title": "阿绎 AYi: holy shit，刷到一个开源语音生成项目，中英文语音效果真的吊炸，有点行业掀桌子的意思🚀 ElevenLabs 个人版每月 $5 到 $99 ，商业版更是…",
+    "totalScore": 51.5,
+    "url": "https://x.com/AYi_AInotes/status/2043167839079506023"
+  },
+  "payloadHash": "sha256:366a8d59f1b0c7d0054597a9b59ffd89803a90085f3c6f2813a0b87b82f49eab",
+  "refs": {},
+  "revisionId": "sha256:acfff22305cd845d8628af922dd8608a4ba1aa76c8c9e446df9a8d9a68b15286",
+  "schemaVersion": 1,
+  "updatedAt": 1776078006254
+}

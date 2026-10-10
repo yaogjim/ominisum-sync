@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773343312_jsjxrqv0",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# One Agent 还是 Multi-Agent：关键在“上下文隔离”\n\n## 核心观点\n\n作者认为：**短期内 One Agent 更实用，Multi-Agent 目前还没看到明显优势**。  \n两者本质区别不在“有几个角色”，而在于：**每个智能体是否拥有独立的系统提示词、记忆和技能集**。\n\n---\n\n## 两种 Agent 范式\n\n### 1. One Agent：一个智能体扮演多个角色\n\n所有角色共享同一套：\n\n- 系统提示词\n- 技能集\n- 记忆 Memory\n\n通过 Prompt 切换身份，例如：\n\n> 你是前端工程师  \n> 你是 QA  \n> 你是产品经理\n\n作者认为，这种方式目前已经足够实用，让一个 Agent “既当爹又当妈”并没有明显问题。\n\n---\n\n### 2. Multi-Agent：多个真正独立的智能体\n\n每个 Agent 彼此隔离，拥有独立的：\n\n- 系统提示词\n- 记忆\n- 技能集\n- 上下文\n\n共享信息主要依赖项目文档或外部知识库。\n\n这种模式更强调**上下文管理和职责隔离**，但作者认为目前实际收益还不明显。\n\n---\n\n## 作者对 Multi-Agent 的主要质疑\n\n### 不应按项目拆 Agent\n\n作者认为，为每个项目单独配置一套 Agent 并不合理。\n\n类比现实公司：\n\n> 公司不会为每个项目都单独配一个 QA、一个研发、一个设计师。\n\n如果每个项目都复制一批 Agent，会导致资源和经验被割裂，难以沉淀复用。\n\n---\n\n## 更合理的 Multi-Agent 方向\n\n### Agent 应该像“后端服务”一样复用\n\n作者认为，如果要做 Multi-Agent，更合理的方式是：\n\n- 一个 Agent 服务多个项目\n- 在多个项目中积累经验\n- 成为跨项目、跨代码库的专业角色\n\n例如：\n\n> 一个长期运行的 Code Review Agent，可以在不同代码库中积累审查经验。\n\n这类 Agent 更适合作为独立智能体，而不是为每个项目重复创建。\n\n---\n\n## 热门回复中的补充观点\n\n### 支持 Multi-Agent 的观点\n\n有人认为，真实商业项目中 **Multi-Agent 才是正道**，因为 Agent 工作流的核心是：\n\n> 精准的上下文管理。\n\n也就是说，复杂业务场景下，不同角色、不同项目、不同知识边界需要被严格管理。\n\n---\n\n### 更细化的实践方向\n\n还有回复提出一种折中架构：\n\n- 横向按项目划分上下文\n- 纵向按团队角色划分上下文\n- 设计师、程序员拥有各自技能和记忆\n- 但又共享同一个项目的上下文\n\n这种方式不是简单“按项目复制 Agent”，而是把**项目上下文**和**角色上下文**组合起来。\n\n---\n\n## 一句话总结\n\n当前阶段，**One Agent 更简单实用；Multi-Agent 的价值不在于按项目复制一堆角色，而在于构建可跨项目复用、持续积累经验的专业智能体。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b35e30239531d84604d208df63bdc51086097e55338dbba4b4ca5b469fbcbd79",
+  "refs": {
+    "sessionId": "1777773343030_53kgskct"
+  },
+  "revisionId": "sha256:721a3e811689061befbc4b8059da2908df31b49b7fa703cd4ee1cb8a5728428f",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

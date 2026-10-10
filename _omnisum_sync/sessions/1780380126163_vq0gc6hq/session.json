@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780380126163,
+  "entityType": "session",
+  "id": "1780380126163_vq0gc6hq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计AI产品界面前，先明确核心工作流中谁是主要执行者。",
+      "根据主导方调整视觉面积和界面中心位置。",
+      "在评审Agent产品原型时，用“谁是核心谁在中间”作为快速检查标准。"
+    ],
+    "archiveReason": "提供了一个简洁可复用的Agent产品界面布局判断框架，适合作为AI产品设计参考。",
+    "classifiedAt": 1780380869885,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent产品布局设计原则",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent产品设计需先判断是“人主导、Agent辅助”还是“Agent主导、人监督”。",
+      "主流Agent产品如Codex App、Claude Desktop、Cursor Agent多采用Agent对话区居中的设计。",
+      "PPT、写作等高决策密度任务可能更适合人主导；代码生成等可委托任务更适合Agent主导。"
+    ],
+    "oneHighValuePoint": "界面中心区域应分配给当前任务的主要执行者：人主导则工作区居中，Agent主导则对话/任务区居中。",
+    "oneLineReview": "一个简洁有效的Agent产品布局判断原则，但论证和案例支撑较弱。",
+    "primaryCategory": "AI产品设计",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "Agent交互设计",
+      "用户体验设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出Agent产品界面布局应取决于工作主导者：若人是主导，工作区居中、Agent在侧边辅助；若Agent是主导，则Agent对话区居中，工作结果或工具区在侧边展示。",
+    "tags": [
+      "AI Agent",
+      "产品布局",
+      "人机协作",
+      "交互设计",
+      "ToB AI"
+    ],
+    "title": "宝玉: Agent 产品的设计，要看定位是以 Agent 为主还是以人为主 Agent 为辅",
+    "totalScore": 63.5,
+    "url": "https://x.com/dotey/status/2059666423538983242"
+  },
+  "payloadHash": "sha256:8e0515aafe99238ee3cd8acb4f99a65d8b24cba79f5f367918521baa4a1a15a3",
+  "refs": {},
+  "revisionId": "sha256:4f92b4ea3b0b4f6de8dca2466ff8a01c74260258a8114d1a3779f6c86d41e421",
+  "schemaVersion": 1,
+  "updatedAt": 1780384035000
+}

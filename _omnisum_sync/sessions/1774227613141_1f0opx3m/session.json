@@ -1,0 +1,68 @@
+{
+  "createdAt": 1774227613141,
+  "entityType": "session",
+  "id": "1774227613141_1f0opx3m",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "补读原始综述论文，核对文中几个反直觉结论的实验依据",
+      "在自己的代码工作流中优先优化检索、上下文裁剪与工具调用，而非盲目追求更长context"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774227630935,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "代码智能转向信息调度",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "小模型结合合适的强化学习策略可能在特定代码任务上胜过更大模型",
+      "长上下文存在“lost in the middle”问题，信息未必能被模型有效利用",
+      "动态类型语言如Python会放大代码理解与生成中的不确定性",
+      "对齐过程可能在一定程度上压制代码生成与推理能力",
+      "coding agent harness的价值在于稳定获取、组织和反馈上下文信息"
+    ],
+    "oneHighValuePoint": "把代码智能问题从“堆更大模型和更长上下文”重新框定为“信息调度与利用效率”问题。",
+    "oneLineReview": "观点抓住了代码智能的真实瓶颈，但更像启发式观察而非可直接落地的深度分析。",
+    "primaryCategory": "AI编程与代码智能",
+    "rating": "C",
+    "rejectReason": "内容主要是对综述论文的二手转述，论据展开不足，缺少可验证细节与系统分析。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "大模型研究综述",
+      "Agent工程实践"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于一篇代码大模型综述提出判断：代码智能竞争正从模型规模转向信息是否被正确获取、调度与利用，强调长上下文未必有效，检索、注意力与agent闭环更关键。",
+    "tags": [
+      "Code LLM",
+      "上下文工程",
+      "RL",
+      "lost in the middle",
+      "coding agent"
+    ],
+    "title": "凡人小北: 用 ChatGPT 的学习模式把这篇 paper 过了一遍，有个判断越来越清晰： 代码智能的问题，已经开始从模型大小迁移到信息有没有被用对 字节、阿里、腾讯 +…",
+    "totalScore": 49.5,
+    "url": "https://x.com/frxiaobei/status/2035633563224395831"
+  },
+  "payloadHash": "sha256:8f71efd88361d1fdaa1ba03547d848194cc26a0e8ae58bb8a59343cffd1484d1",
+  "refs": {},
+  "revisionId": "sha256:4c1cef347793e060313f29df94337e09bbf89438c72166b3239f8b1ec9989d91",
+  "schemaVersion": 1,
+  "updatedAt": 1774236221808
+}

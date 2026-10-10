@@ -1,0 +1,68 @@
+{
+  "createdAt": 1777277196863,
+  "entityType": "session",
+  "id": "1777277196863_2qqfukxn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在项目的 .claude/agents/ 中创建一个简单的 code-reviewer 或 explorer 子代理并测试效果",
+      "在长时间 Claude Code 会话中尝试启用 CLAUDE_CODE_FORK_SUBAGENT=1",
+      "评估 context-timeline 钩子是否有助于监控上下文消耗"
+    ],
+    "archiveReason": "包含 Claude Code 子代理配置示例、使用场景和上下文隔离思路，对AI编程工作流有一定实用价值",
+    "classifiedAt": 1777284775914,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude子代理整理上下文",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Claude Code 子代理可通过带前置元数据的 Markdown 文件定义，并放在 .claude/agents/ 或 ~/.claude/agents/ 中使用",
+      "CLAUDE_CODE_FORK_SUBAGENT=1 可让子代理继承父会话完整上下文，同时保持工具调用隔离",
+      "内置探索类子代理适合在不污染主上下文的情况下搜索和理解代码库",
+      "context-timeline 钩子可用于观察主代理和子代理的上下文使用情况"
+    ],
+    "oneHighValuePoint": "通过子代理隔离 grep、find、ls 等工具调用，只让最终摘要返回主会话，从而降低上下文污染。",
+    "oneLineReview": "一篇实用但证据支撑较弱的 Claude Code 子代理使用指南，适合快速上手和优化长会话体验。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，适合使用 Claude Code 时作为配置和工作流参考",
+    "secondaryCategories": [
+      "Claude Code",
+      "开发效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Claude Code 子代理的用途、创建方式、存放位置、内置探索能力、上下文分叉配置以及监控钩子，核心目标是减少长会话中的工具调用噪声，保持主上下文整洁。",
+    "tags": [
+      "子代理",
+      "上下文管理",
+      "Claude Code",
+      "AI辅助编程",
+      "工作流优化"
+    ],
+    "title": "使用子代理保持你的 Claude 代码上下文整洁",
+    "totalScore": 66,
+    "url": "https://x.com/dani_avila7/status/2048486242321662189"
+  },
+  "payloadHash": "sha256:af408932bcf4aa52c87446740642fad888c1d10f750ce3f64c566c880f66f7c9",
+  "refs": {},
+  "revisionId": "sha256:47e381de467020eeaa817718f353187c51f718e36305a86d2a4954eda230684b",
+  "schemaVersion": 1,
+  "updatedAt": 1777284775918
+}

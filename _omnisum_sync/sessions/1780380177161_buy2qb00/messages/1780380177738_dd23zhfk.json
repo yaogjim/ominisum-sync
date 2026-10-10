@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780380110859,
+  "entityType": "message",
+  "id": "1780380177738_dd23zhfk",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\n这条内容本质上是在分享一个 **高质量 Codex 提示词**：\n\n> 让 Codex 基于 Pi Agent 的官方文档和源码，生成一个完整的中文教程站点，主题是：  \n> **《Pi Agent 的原理与实现：从零到一实现一个 AI Agent》**\n\n目标不是简单翻译或源码讲解，而是做成一个 **适合计算机本科毕业生学习的实战教程**：\n\n- 用 **VitePress** 搭建中文教学网站\n- 讲清楚 Pi Agent 的：\n  - 核心原理\n  - 架构设计\n  - 关键模块\n  - 实现流程\n- 通过多个小 Demo 循序渐进学习\n- 最后实现一个可运行的简化版 AI Agent\n- 技术栈偏向：\n  - 前端：React\n  - 后端：Node.js\n  - 语言：TypeScript\n\n---\n\n## 二、深入浅出解读\n\n### 1. 这不是一个普通提示词\n\n它不是简单问：\n\n> “帮我讲讲 Pi Agent。”\n\n而是明确要求 Codex 做三件事：\n\n```text\n先理解源码和文档\n再设计教学路径\n最后生成完整教程项目\n```\n\n这类提示词的价值在于：  \n**它把 AI 当成“技术导师 + 项目架构师 + 文档工程师”来用。**\n\n---\n\n### 2. 教程重点不是“看懂源码”\n\n很多源码教程的问题是：\n\n- 一上来贴代码\n- 直接分析文件\n- 缺少背景\n- 初学者不知道为什么这么设计\n\n而这个提示词强调：\n\n> 不是源码解读，而是渐进式教学。\n\n也就是说，它更像这样：\n\n```text\n先讲 Agent 是什么\n再讲 Pi Agent 解决什么问题\n然后拆成小模块\n每个模块做一个 Demo\n最后拼成完整项目\n```\n\n学习体验会更接近“手把手做项目”。\n\n---\n\n### 3. 为什么用 VitePress？\n\nVitePress 适合做技术教程网站，因为它支持：\n\n- Markdown 文档\n- 代码示例\n- Mermaid 图表\n- 项目目录展示\n- 流程图、架构图\n- 部署到 Vercel / GitHub Pages\n\n简单说：\n\n> VitePress 很适合把一个复杂技术项目，整理成结构清晰的在线课程。\n\n---\n\n### 4. Pi Agent 学习价值在哪里？\n\nPi Agent 属于 AI Agent 方向。\n\nAI Agent 可以简单理解为：\n\n> 一个不只是聊天，而是能理解任务、调用工具、执行步骤、返回结果的 AI 系统。\n\n一个 Agent 通常包含：\n\n| 模块 | 作用 |\n|---|---|\n| LLM | 负责理解和推理 |\n| Tools | 负责执行具体能力 |\n| Memory | 保存上下文或历史信息 |\n| Planner | 拆解任务 |\n| Executor | 执行步骤 |\n| Runtime | 管理运行流程 |\n\n所以学习 Pi Agent，不只是学一个项目，而是在学：\n\n> AI Agent 的基本工程实现方式。\n\n---\n\n## 三、我的意见\n\n这个提示词质量很高，原因有三点：\n\n### 1. 目标清晰\n\n它明确说明最终产物是：\n\n> 一个完整可运行的 VitePress 中文教程站点。\n\n不是泛泛而谈，而是有明确交付物。\n\n---\n\n### 2. 学习路径合理\n\n它要求从：\n\n```text\n概念 → Demo → 模块 → 完整项目 → 扩展方向\n```\n\n这非常适合初学者。\n\n比直接啃源码更有效。\n\n---\n\n### 3. 很适合用来“AI 辅助学习开源项目”\n\n以后学习复杂项目，也可以套用这个思路：\n\n```text\n请你阅读官方文档和源码，\n不要直接讲源码，\n而是设计一套适合初学者的渐进式教程，\n包含核心概念、架构图、Demo、最终项目和运行方式。\n```\n\n---\n\n## 四、简短建议\n\n如果你想真正学会 Pi Agent，不要只看生成的教程。\n\n更好的方式是：\n\n1. 先跑通官方项目\n2. 再看教程理解架构\n3. 跟着 Demo 手写一遍\n4. 最后自己改一个小功能\n\n例如：\n\n- 加一个新工具 Tool\n- 改一个任务规划流程\n- 接入一个新的模型 API\n- 增加简单 Memory 机制\n\n---\n\n## 五、一句话评价\n\n> 这是一个把 AI 从“问答工具”升级成“技术课程生成器”的优秀提示词示例，尤其适合用来学习复杂开源项目和 AI Agent 工程实现。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780380110859,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3c126455810849404b02ae705d4b90aebfc6a6bbd977f5550ce46c38e6a7b28b",
+  "refs": {
+    "sessionId": "1780380177161_buy2qb00"
+  },
+  "revisionId": "sha256:e3fafc6d18d692dbeaa153d974c19ef77e99f921f40a044e5d99431a637e524a",
+  "schemaVersion": 1,
+  "updatedAt": 1780380110859
+}

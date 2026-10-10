@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780386229660,
+  "entityType": "message",
+  "id": "1780386367212_6719dk6s",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 1. 总结\n\n作者认为：\n\n- 国内 AI 公司没必要重复造 Coding Agent 框架。\n- 可以直接基于 **pi-coding-agent** 做自己的 Agent，包括 DeepSeek、Kimi 等。\n- 现在 Agent 的“大框架”已经逐渐稳定，类似 Transformer 架构一样。\n- 更重要的是：用统一框架作为 **Harness / 测试基准**，观察和改进自家模型的 Agent 能力。\n\n评论区的核心分歧：\n\n- 有人认为真正强的是 **Cursor 这类产品 + 数据 + 后训练**，不是单纯框架。\n- 作者回应：正因为如此，pi 这类框架可定制，能模拟 Claude Code、Codex 等环境，方便调模型行为。\n\n---\n\n## 2. 解读\n\n简单说，这条推文在讲：\n\n> Coding Agent 的底层框架可能已经没那么神秘了，大家没必要各写一套，重点应该转向模型能力和产品体验。\n\n### 什么是 Harness？\n\n可以理解为：\n\n> 给模型跑任务、调用工具、执行代码、观察结果的一套“测试和运行环境”。\n\n比如一个 Coding Agent 需要：\n\n- 读文件\n- 改代码\n- 跑测试\n- 看报错\n- 再修改\n- 最后提交结果\n\n这些流程就需要一个稳定的框架来承载。\n\n### 作者的观点\n\n作者觉得：\n\n- Agent 框架本身已经逐渐标准化；\n- 重复开发意义不大；\n- 统一框架反而方便比较不同模型；\n- 真正该卷的是：\n  - 模型会不会规划；\n  - 会不会调试；\n  - 会不会长期执行任务；\n  - 会不会像 Claude Code / Cursor 一样好用。\n\n---\n\n## 3. 我的意见\n\n我基本认同。\n\n### 框架不是核心壁垒\n\nAgent 框架很重要，但它更像“生产线”。\n\n真正决定产品水平的是：\n\n- 模型能力；\n- 训练数据；\n- 后训练方法；\n- 工具调用质量；\n- IDE / CLI 产品体验；\n- 用户数据反馈闭环。\n\n### 统一框架有好处\n\n国内厂商如果都基于成熟框架改造，可以：\n\n- 少走弯路；\n- 更快验证模型；\n- 更容易对比效果；\n- 把资源投入到模型和体验上。\n\n### 但不能只靠框架\n\n仅仅套一个 pi-coding-agent，不会自动变成 Claude Code 或 Cursor。\n\n最终差距还是在：\n\n> 数据、后训练、产品打磨、真实用户反馈。\n\n---\n\n## 结论\n\n**Agent 框架可以复用，Agent 能力不能照搬。**\n\n国内厂商用统一框架做底座是好事，但真正的竞争力，还是来自模型训练、产品体验和数据闭环。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780386229660,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:722154c18cb96b2f9dc3dac542505e5ed823625833b97bdc617d83491617598a",
+  "refs": {
+    "sessionId": "1780308548427_4vm2lqc7"
+  },
+  "revisionId": "sha256:758648ccea7e511cf7bb0ac1c3921898baeb1ffd44aa5f56e5dc2da8a5dc6fa9",
+  "schemaVersion": 1,
+  "updatedAt": 1780386229660
+}

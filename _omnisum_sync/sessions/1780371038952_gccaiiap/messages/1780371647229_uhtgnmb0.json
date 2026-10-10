@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780371647230,
+  "entityType": "message",
+  "id": "1780371647229_uhtgnmb0",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: FastClaw多智能体框架概览\n\n**评级**: B (61.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent框架\n**次类别**: 开源项目, 开发工具\n**标签**: #多智能体 #Go #LLM #沙箱 #GitHub\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 作为项目README信息较全、可操作性强，但主要是功能说明，缺少实测案例和深入方法论。\n**核心高价值点**: FastClaw将Agent身份文件、模型配置、技能、会话、沙箱和多渠道接入统一到一个可部署的运行时中。\n\n### 摘要\n文章介绍FastClaw这一Go编写的轻量级AI Agent运行时，涵盖安装、Web后台、Agent管理、模型供应商、技能、沙箱、API、CLI、部署方式和许可证限制等内容。\n\n### 知识要点\n- FastClaw支持OpenAI、Anthropic、Ollama、OpenRouter等多种LLM提供商，并允许按Agent覆盖模型配置。\n- 每个Agent拥有独立的SOUL.md、IDENTITY.md、MEMORY.md、技能和会话，支持用户与渠道级隔离。\n- 默认使用SQLite存储，也可通过Postgres、对象存储和Kubernetes实现多Pod部署。\n- 提供Docker或E2B沙箱、MCP支持、插件系统、定时任务、OpenAI兼容API和Web SSE流式聊天接口。\n\n### 行动项\n- 如正在选型AI Agent运行时，可本地安装并测试Dashboard、Agent创建、模型配置和沙箱执行能力。\n- 重点核查其许可证限制，确认是否适合商业SaaS或内部部署场景。\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的框架功能、架构、部署和CLI使用信息，可作为评估AI Agent运行时工具的参考资料。\n删除: 否\n留存决策: 短期参考后按需保留",
+    "role": "assistant",
+    "timestamp": 1780371647230,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:6e0375f553d00dbffbc9b9e1734d404556fd7056bd07dd9d5fc71de19c61284a",
+  "refs": {
+    "sessionId": "1780371038952_gccaiiap"
+  },
+  "revisionId": "sha256:ef45e6feca9163f438a19ff0bc0b0b7dc8079285558e0fe8167c2bf8434deecf",
+  "schemaVersion": 1,
+  "updatedAt": 1780371647230
+}

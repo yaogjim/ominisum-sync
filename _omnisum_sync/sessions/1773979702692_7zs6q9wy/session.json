@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773979702692,
+  "entityType": "session",
+  "id": "1773979702692_7zs6q9wy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尝试把自己的决策清单或评审框架写成一个可复用的AI prompt或skill",
+      "在代码审查或项目评估中加入“这个问题值不值得解决”这类上位问题进行验证"
+    ],
+    "archiveReason": "提供了把决策框架封装为AI skill 的思路，适合后续做提示词或Agent设计时参考",
+    "classifiedAt": 1773985352050,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI技能与判断力框架",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI skill 可以从执行任务扩展到提供决策挑战与认知校准",
+      "将Bezos、Munger、Jobs式思维框架写成prompt是一种可复用的方法论方向"
+    ],
+    "oneHighValuePoint": "把高质量判断框架而非单点任务流程封装进AI skill，能显著提升Agent在复杂决策场景中的价值。",
+    "oneLineReview": "有启发但偏观点表达，方法方向不错，证据与细节明显不足。",
+    "primaryCategory": "AI应用与工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，适合作为AI工作流与判断力增强方向的启发材料",
+    "secondaryCategories": [
+      "认知框架",
+      "Agent工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章核心观点是：比起开源代码，更高价值的是开源判断力，把YC式的决策框架做成AI skill，可让Agent不仅执行任务，还能挑战问题本身并辅助优化决策。",
+    "tags": [
+      "AI skill",
+      "判断力",
+      "决策框架",
+      "Agent",
+      "YC"
+    ],
+    "title": "Jason Zuo: 开源代码不稀奇，开源判断力才是真正的赛博大神 这几天 skill 教程满天飞，Google Anthropic 全在教你怎么给 AI 写skill 但 Garr…",
+    "totalScore": 59,
+    "url": "https://x.com/xxx111god/status/2034785534246007022"
+  },
+  "payloadHash": "sha256:56bcfefee843fcd69c8f38596628147dfe75021c5c29637e09c542a89c6ab211",
+  "refs": {},
+  "revisionId": "sha256:c8a8d8056612b062d09811c275c436676fe51cde7eed05f378a9bfdfc950d320",
+  "schemaVersion": 1,
+  "updatedAt": 1773988034721
+}

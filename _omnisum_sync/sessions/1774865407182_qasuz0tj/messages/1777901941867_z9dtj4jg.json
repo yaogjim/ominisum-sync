@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777901941868,
+  "entityType": "message",
+  "id": "1777901941867_z9dtj4jg",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Coding Agent配套工具清单\n\n**评级**: C (52.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI编程工具\n**次类别**: Coding Agent, 开发工作流\n**标签**: #Coding Agent #工具清单 #多Agent管理 #Skills管理 #AI编程\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 适合作为 AI 编程工具发现线索，但不值得深度阅读。\n**核心高价值点**: 将 Coding Agent 配套工具按 Skills 管理、多 Agent 管理、手机控制、看板和桌面应用进行分类。\n\n### 摘要\n文章列举了作者配合 Coding Agent 使用的几类工具，包括 Skills 管理、多 Agent 管理、手机控制、看板和桌面应用，并给出若干个人偏好选择及回复中的补充工具。\n\n### 知识要点\n- smux 可用于多 Agent 管理，并通过 tmux-bridge 控制终端。\n- Coding Agent 工作流可借助看板拆分需求、创建 worktree 并驱动不同 Agent 执行。\n- 作者偏好选择封装 Claude Code、Codex 或 OpenCode 的工具，而不是完全替代底层模型或工具链。\n\n### 行动项\n- 按需试用 xingkongliang/skills-manager、smux、happy coder、Conductor 或 Cline Kanban。\n- 若正在搭建 Coding Agent 工作流，可对比 agHub、skill-optimizer、Skill Flow 等回复中提到的替代工具。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是个人工具选择清单，缺少系统评测、使用场景细节和证据支撑，长期参考价值有限。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1777901941868,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:11f9822a8b84ca8c09dd1c050143b5b6c810bfedf2116df3097283e6b237cd56",
+  "refs": {
+    "sessionId": "1774865407182_qasuz0tj"
+  },
+  "revisionId": "sha256:27ef39c70309bd59a1b3d87ed0ce568bb15ce07f87ded21a231fabf9272c8711",
+  "schemaVersion": 1,
+  "updatedAt": 1777901941868
+}

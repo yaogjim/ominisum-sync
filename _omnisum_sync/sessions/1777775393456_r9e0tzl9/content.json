@@ -1,0 +1,15 @@
+{
+  "createdAt": 1777775393456,
+  "entityType": "session-content",
+  "id": "1777775393456_r9e0tzl9",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Oliver</strong></header><div class=\"tw-body\">介绍 Mesa：有史以来构建的最强大的文件系统，专为企业级 AI 代理设计。<br><br>每个团队建设代理最终都会遇到同样的难题：文件存放在哪里？<br><br>不是聊天记录，而是代理实际处理的工件。<br>您的代理人红线标注的这些合同<br>它更新的索赔文件<br>它在你睡着的时候一夜之间编辑了这份200页的审计报告<br><br>如今这些文档存储在一个 30 分钟后失效的沙箱中、一个并发写入会相互覆盖的 S3 存储桶中，或者一个从未被设计用于处理代理规模流量的 GitHub 仓库中。<br><br>所以我们开发了 Mesa。<br><br>世界上首个兼容 POSIX 的文件系统，内置版本控制，专为代理从头开始设计。你可以像其他任何文件系统一样将其挂载到沙箱中。你的代理可以像正常文件一样读取和写入文件。在幕后，每一次变更都会被版本化、可分支、可审查且可回滚——就像代码库一样，适用于任何文件类型。<br><br>Mesa 提供<br>– 分支，以便代理能够并行工作而无需锁定<br>在沙箱终止时存活的持久化存储<br>– 稀疏物化，使海量文档集瞬间加载<br>– 每个代理的细粒度访问控制<br>– 完整历史记录供人工审核和审计<br><br>设计伙伴正在法律、医疗、GTM、业务运营和编码代理等领域将 Mesa 投入生产环境运行。<br><br>内部测试版已开放：评论区链接</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HHAIr2HWEAAo4uO?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Subramanya N</strong> <span class=\"tw-eng\">♥ 152 · 💬 4</span><p>https://<br>github.com/subramanya1997<br>/markdownfs<br>… 开源版本为它</p></div><div class=\"tw-reply\"><strong>@Yohei</strong> <span class=\"tw-eng\">♥ 19 · 💬 2</span><p>有点像一个跨代理的基于 Git 版本控制的工件/画布，真的很酷</p></div><div class=\"tw-reply\"><strong>@Oliver</strong> <span class=\"tw-eng\">♥ 19 · 💬 2</span><p>是的。可以把它想象成一个无头 GitHub，拥有与 POSIX 兼容的接口，支持任何文件类型，并且为构建智能代理的开发者提供出色的开发体验。</p></div><div class=\"tw-reply\"><strong>@Henry Mascot</strong> <span class=\"tw-eng\">♥ 4 · 💬 1</span><p>非常有趣<br>刚刚开始将我所有的代理迁移到与一个数据源交互<br><br>也许 mesa 正是我需要的</p></div><div class=\"tw-reply\"><strong>@Ashpreet Bedi</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>非常酷！我很想测试一下它</p></div></div>",
+    "pageContent": "Oliver: 介绍 Mesa：有史以来构建的最强大的文件系统，专为企业级 AI 代理设计。 每个团队建设代理最终都会遇到同样的难题：文件存放在哪里？ 不是聊天记录，而是代理实际处理的工件。\n您的代理人红线标注的这些合同\n它更新的索赔文件\n它在你睡着的时候一夜之间编辑了这份200页的审计报告 如今这些文档存储在一个 30 分钟后失效的沙箱中、一个并发写入会相互覆盖的 S3 存储桶中，或者一个从未被设计用于处理代理规模流量的 GitHub 仓库中。 所以我们开发了 Mesa。 世界上首个兼容 POSIX 的文件系统，内置版本控制，专为代理从头开始设计。你可以像其他任何文件系统一样将其挂载到沙箱中。你的代理可以像正常文件一样读取和写入文件。在幕后，每一次变更都会被版本化、可分支、可审查且可回滚——就像代码库一样，适用于任何文件类型。 Mesa 提供\n– 分支，以便代理能够并行工作而无需锁定\n在沙箱终止时存活的持久化存储\n– 稀疏物化，使海量文档集瞬间加载\n– 每个代理的细粒度访问控制\n– 完整历史记录供人工审核和审计 设计伙伴正在法律、医疗、GTM、业务运营和编码代理等领域将 Mesa 投入生产环境运行。 内部测试版已开放：评论区链接\n![图片](https://pbs.twimg.com/media/HHAIr2HWEAAo4uO?format=jpg&name=large)\n---\n热门回复 (共 5 条):\n@Subramanya N (♥ 152 · 💬 4):\nhttps://\ngithub.com/subramanya1997\n/markdownfs\n… 开源版本为它\n\n@Yohei (♥ 19 · 💬 2):\n有点像一个跨代理的基于 Git 版本控制的工件/画布，真的很酷\n\n@Oliver (♥ 19 · 💬 2):\n是的。可以把它想象成一个无头 GitHub，拥有与 POSIX 兼容的接口，支持任何文件类型，并且为构建智能代理的开发者提供出色的开发体验。\n\n@Henry Mascot (♥ 4 · 💬 1):\n非常有趣\n刚刚开始将我所有的代理迁移到与一个数据源交互\n\n也许 mesa 正是我需要的\n\n@Ashpreet Bedi (♥ 1 · 💬 1):\n非常酷！我很想测试一下它\n"
+  },
+  "payloadHash": "sha256:ed14cf0248f043c8b3a8c461cdce1a0a476ff3e7a6907db064971fc00b19501c",
+  "refs": {},
+  "revisionId": "sha256:8f7f1313f7c84146d3ccbcb3c83ff1e70ba5d4de39c43904bc1051d193e9518f",
+  "schemaVersion": 1,
+  "updatedAt": 1777795536672
+}

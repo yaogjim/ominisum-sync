@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780384039895,
+  "entityType": "message",
+  "id": "1780384224453_yudb199l",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章介绍了 Codex 中给正在运行的 Agent 补充指令的两种方式：**Steer（引导/任务干预）** 和 **Queue（排队）**。简单来说，**Steer 是改变当前正在做的事，Queue 是安排后续要做的事**。\n\n## 1. 背景：Agent 任务通常不会立刻结束\n\n- Codex Agent 执行一个任务时，往往需要等待几分钟甚至更久。\n- 在任务运行过程中，如果用户突然有新的要求想补充，就可以使用两种方式：\n  - **Steer：中途干预当前任务**\n  - **Queue：把新任务排到后面**\n\n## 2. Steer：中途打断并调整方向\n\n- **Steer** 的作用是：在当前任务尚未完成时，给 Codex 新的指引，让它调整接下来的执行方向。\n- 它类似于：\n  - 先手动停止当前任务；\n  - 输入新指令；\n  - 再让 Agent 继续执行。\n- 但 Steer 不需要手动停止，Codex 会在下一轮工具调用的间隙，把新指令加入上下文。\n\n> 勘误：Codex 中 Steer 的快捷键为：  \n> - Windows / Linux：`Ctrl + Enter`  \n> - Mac：`Command + Enter`\n\n## 3. Queue：不打断当前任务，安排后续工作\n\n- **Queue** 的作用是：不影响当前正在运行的任务，而是把新指令放到后续队列中。\n- 当 Codex 完成当前步骤或当前任务后，会继续执行队列中的任务。\n- 如果提交多条 Queue 消息，Codex 不会一次性全部执行，而是：\n  1. 执行第一条；\n  2. 完成后再执行下一条；\n  3. 依次推进。\n\n## 4. 使用案例：睡觉前让 Agent 多跑一会\n\n- 作者提到，自己有时会在睡觉前，在一个长任务后面加入几个 **“Continue”** 消息到 Queue。\n- 这样做的目的是让 Codex 在当前任务完成后继续推进，避免中途停下来。\n- 热门回复中也有人表示，自己会“睡觉前打 6 个继续不要停”，让任务持续运行。\n\n## 5. 核心区别总结\n\n| 功能 | 作用 | 是否打断当前任务 | 适合场景 |\n|---|---|---|---|\n| **Steer** | 调整当前任务方向 | 会干预当前任务 | 发现 Agent 跑偏了，需要立刻纠正 |\n| **Queue** | 安排后续任务 | 不打断当前任务 | 想让 Agent 做完当前任务后继续执行新任务 |\n\n**一句话理解：Steer 是“现在改方向”，Queue 是“之后接着做”。**",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780384039895,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:967f320cc03d837c64a7b7508ee16ce0db9762588b61dbfbbc0f3bdd563b7fea",
+  "refs": {
+    "sessionId": "1780380625671_wsel2gno"
+  },
+  "revisionId": "sha256:b292cdaef50558afae25a072ccabb3a002d5ccb9a46484a89330ef23c854e0f1",
+  "schemaVersion": 1,
+  "updatedAt": 1780384039895
+}

@@ -1,0 +1,72 @@
+{
+  "createdAt": 1775558975665,
+  "entityType": "session",
+  "id": "1775558975665_ad77jhu1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "借鉴其Schema与命令设计，评估是否为自己的知识库或文档系统做SQLite一体化改造",
+      "提炼“compiled truth + timeline”结构，应用到人物档案、项目记录或研究笔记中",
+      "尝试把现有AI工作流中的隐性操作规则沉淀为Markdown技能文件，而不是硬编码到程序中",
+      "若准备落地，实现一个最小可用版本：pages + FTS5 + import/export + MCP serve"
+    ],
+    "archiveReason": "这是一个高完整度的知识库系统设计规范，包含架构、Schema、CLI、迁移方案与AI工作流，适合作为后续实现和类似项目的参考模板。",
+    "classifiedAt": 1775558990328,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 9,
+      "long_term_leverage": 9,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "GBrain个人知识库方案",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "gist.github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "单文件SQLite可同时承载全文检索、结构化数据和向量嵌入，适合个人规模知识库",
+      "通过“compiled truth + timeline”分离当前结论层与证据时间线层，可兼顾可读性、可追溯性与可维护性",
+      "MCP + CLI 让知识库可被Claude Code等多种AI客户端统一读写调用",
+      "迁移方案强调lossless、round-trippable、verifiable，保证从Markdown到数据库的可逆性",
+      "fat skills将摄取、查询、维护、富化、简报等流程固化为可复用工作流"
+    ],
+    "oneHighValuePoint": "最有价值的是把“知识系统的智能”从应用代码中抽离到可迭代的Markdown技能文件里，用薄CLI承载稳定工具层、用fat skills承载工作流与判断逻辑。",
+    "oneLineReview": "一份完成度很高的个人知识脑技术规格说明，方法论和可执行性强，但证据更多来自经验判断而非实测数据。",
+    "primaryCategory": "知识管理系统设计",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "AI工作流",
+      "SQLite架构",
+      "个人知识库"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出一个基于SQLite、FTS5、向量检索与MCP的个人知识脑方案，核心思想是“thin CLI, fat skills”。内容覆盖数据库Schema、CLI命令、迁移算法、技能文件设计及向量搜索取舍，偏工程规格书而非实现复盘。",
+    "tags": [
+      "PKM",
+      "SQLite",
+      "RAG",
+      "MCP",
+      "CLI",
+      "知识图谱"
+    ],
+    "title": "GBrain.md",
+    "totalScore": 81.5,
+    "url": "https://gist.github.com/garrytan/49c88e83cf8d7ae95e087426368809cb"
+  },
+  "payloadHash": "sha256:3add1c4783a1915f333452fbb488461221a04ebedf01e9771eb4b86b2bdbab29",
+  "refs": {},
+  "revisionId": "sha256:1150a740e9fbb7cee0ccf51d461b451ac9a145b3114423a96869daae77ce95d2",
+  "schemaVersion": 1,
+  "updatedAt": 1775559543441
+}

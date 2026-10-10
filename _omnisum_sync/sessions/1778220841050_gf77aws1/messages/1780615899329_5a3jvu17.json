@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780615899330,
+  "entityType": "message",
+  "id": "1780615899329_5a3jvu17",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 宝玉Claude技能集说明\n\n**评级**: B (61.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工具与自动化\n**次类别**: Claude Code插件, 内容生成工具, 发布自动化\n**标签**: #Claude Code #Skills #内容生成 #社媒发布 #AI图像生成\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一个实用型工具说明文档，命令示例丰富，但主要是功能清单，方法论和证据支撑有限。\n**核心高价值点**: 将内容生成、视觉设计和多平台发布封装为 Claude Code 可调用技能，可直接嵌入日常内容生产流程。\n\n### 摘要\n文章是 baoyu-skills 仓库的中文 README，介绍 Claude Code 技能集的安装、更新、插件市场注册，以及小红书图片、信息图、SVG 图表、封面、幻灯片、漫画、公众号/X/微博发布和图像生成等技能用法。\n\n### 知识要点\n- 可通过 npx skills add 或 Claude Code 插件市场安装 baoyu-skills。\n- 技能覆盖内容卡片、信息图、SVG 图表、封面图、幻灯片、漫画和文章插图等生成场景。\n- 支持 X、微信公众号、微博等平台的内容发布自动化。\n- baoyu-imagine 支持多个图像生成服务商及参考图、宽高比、质量等参数。\n\n### 行动项\n- 如正在使用 Claude Code，可按文档安装 baoyu-skills 并测试 1-2 个高频技能。\n- 优先尝试 baoyu-diagram、baoyu-infographic 或 baoyu-post-to-wechat 等与实际工作流相关的工具。\n- 将常用命令整理为个人内容生产 SOP，避免每次查阅完整 README。\n\n### 存档判定\n归档: 是 — 原因: 作为 Claude Code 技能安装、调用和内容自动化工作流的参考文档，有一定实用价值。\n删除: 否\n留存决策: 短期参考后可按使用情况保留",
+    "role": "assistant",
+    "timestamp": 1780615899330,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:696157af4c1e618ca71dc7bcad7964ec1bd6a2cf6c815a3266abb1e983e360b9",
+  "refs": {
+    "sessionId": "1778220841050_gf77aws1"
+  },
+  "revisionId": "sha256:c7fe3be7ce6f104c3b8a073b49c29ab7613ea1ad99efa09a09bfaacb13caf241",
+  "schemaVersion": 1,
+  "updatedAt": 1780615899330
+}

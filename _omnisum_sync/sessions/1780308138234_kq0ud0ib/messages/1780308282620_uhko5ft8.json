@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780308282621,
+  "entityType": "message",
+  "id": "1780308282620_uhko5ft8",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Anthropic工作坊提示词要点\n\n**评级**: D (32分)  |  **深度阅读**: 否  |  **建议操作**: 删除\n\n**主类别**: AI开发\n**次类别**: Prompt工程, Claude Code\n**标签**: #Anthropic #Prompt #Context管理 #Claude #AI编程\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 2 | 10% |\n| 新颖性 | 2 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 2 | 15% |\n| 方法论价值 | 2 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 1 | 10% |\n| 长期杠杆 | 3 | 10% |\n\n**一句话点评**: 这是一个有潜在方向价值但正文信息严重不足的转发型线索。\n**核心高价值点**: 提示了 Claude/AI 编程实践中值得系统关注的六个核心维度：Prompt、Context、Role、示例、输出约束和任务拆分。\n\n### 摘要\n文章仅提到 Anthropic workshop 拆解了 Prompt 组织、Context 管理、Role 设置、示例提供、输出约束和多轮任务拆分等主题，但没有展开具体做法或案例。\n\n### 知识要点\n- Claude Code 使用中上下文管理可能比单纯提示词更关键。\n- 高质量 AI 编程流程通常需要明确角色、示例、输出格式和多轮任务拆分。\n\n### 行动项\n- 如对 Claude Code 感兴趣，可直接查找 Anthropic workshop 原视频或完整笔记，而非保存此条推文。\n- 整理自己的 CLAUDE.md 或项目 AI 使用规范时，可检查是否覆盖 Prompt、Context、Role、示例和输出约束。\n\n### 存档判定\n归档: 否\n不推荐: 正文仅是对 Anthropic workshop 内容方向的概括性转述，缺少具体方法、案例、步骤和原始要点展开，热门回复也高度噪音化。\n删除: 是\n留存决策: 短期参考后可删除\n删除原因: 信息量过低，主要价值只是指向一个视频或外部文章，本条内容本身不具备长期留存价值。",
+    "role": "assistant",
+    "timestamp": 1780308282621,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:dcb50469e11ab0b4e7e904156449c3144f109075978b44e02de43ae32b0925ef",
+  "refs": {
+    "sessionId": "1780308138234_kq0ud0ib"
+  },
+  "revisionId": "sha256:b191913f63f3b32b63aad1905e84f8e42f76a667c300f15f7ac00096725c8fbc",
+  "schemaVersion": 1,
+  "updatedAt": 1780308282621
+}

@@ -1,0 +1,23 @@
+{
+  "createdAt": 1775006156650,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1775006156650",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Claude Code 封号问题总结\n\n这篇文章的核心观点是：**Claude Code 被封号，更多不是 “客户端偷偷作恶”，而是 CLI 本身会暴露出更多风控信号**。作者通过查看源码发现，**单靠 VPN 换 IP 不够，因为还有多种机制会持续标记你的设备、身份和行为模式**。\n\n## 1. 作者为什么去看源码\n\n- 作者经常看到用户反馈 “Claude Code 又被封了”，但网上对原因的解释大多不够清晰。\n- 因此在源码泄露后，作者第一时间去分析，想确认：**CLI 到底是怎么触发风控的**。\n- 结论是：\n  - **没发现明显 “作恶证据” 或地域封锁黑幕**；\n  - 真正的问题在于：**Claude Code 会主动或被动暴露多类身份与行为信息**。\n\n## 2. 第一个 “叛徒”：`device_id`持久不变\n\n- 每次向`/api/messages`发请求时，都会在`user_id`字段里携带：\n  - `device_id`\n  - `account_uuid`\n  - `session_id`\n- 其中最关键的是：**`device_id`是本地持久化的 UUID**，只要不清本地文件，它就不会变。\n- 这意味着：\n  - 你换了 VPN 节点，**IP 变了**；\n  - 但**`device_id`还是同一个**。\n- 服务端看到的就可能是：\n  - 同一设备先从日本访问；\n  - 又从美国访问；\n  - 半小时后再从新加坡访问。\n- 这种**短时间跨多个国家的行为**，非常像异常访问模式。\n- 重点：**这个字段关不掉**，因为它属于 API 协议本身，不是普通遥测。\n\n## 3. 第二个 “叛徒”：写进 prompt 的归因水印\n\n- 除了 HTTP 请求本身，系统还会在每次对话的**system prompt**里注入一段信息：\n  - `cc_version`：CLI 版本号\n  - `cc_entrypoint`：入口类型，如`cli` / `desktop` / `vscode`\n  - `cch`：客户端证明字段\n  - `cc_workload`：工作负载信息\n- 关键问题在于：\n  - 这不是普通请求头；\n  - 而是**直接写在 prompt 里的 “水印”**。\n- 所以即使你通过代理、中间人等方式处理 HTTP，也**很难改掉这类信息**。\n- 作用相当于：**每条消息都在告诉服务端 “我是 CLI 用户”**。\n\n## 4. 第三个 “叛徒”：请求头直接标记`x-app: cli`\n\n- 在默认请求头中，CLI 会主动发送：\n  - `x-app: cli`\n  - `User-Agent: claude-cli/...`\n  - `X-Claude-Code-Session-Id`\n- 这相当于直接给自己贴标签：**“我是 CLI 用户”**。\n- 与 Web 版相比：\n  - Web 用户混在海量浏览器流量里，不容易单独识别；\n  - CLI 用户则被明确区分出来。\n- 这会带来一个结果：**服务端可以单独给 CLI 用户设置更严格的风控规则**。\n\n## 5. 第四个 “叛徒”：高频遥测，每 5 秒一次\n\n- 作者发现，Claude Code 的遥测系统默认**每 5 秒上报一次**。\n- 文章列出的上报内容包括：\n  - 操作系统、架构、Node 版本\n  - 终端类型、包管理器\n  - 是否处于 CI、是否远程环境\n  - CPU / 内存使用率\n  - `accountUuid`、`organizationUuid`、`emailAddress`\n  - `sessionId`、`subscriptionType`\n- 作者举了一个很直观的数据：\n  - **30 分钟的编码 session，会产生 360 次遥测请求**。\n- 而且：\n  - 每次请求都带 IP；\n  - 所以会持续给服务端补充行为轨迹。\n- 好消息是：**这一项可以关闭**。\n  - 可设置：`DISABLE_TELEMETRY=1`\n\n## 6. 第五个 “叛徒”：重试机制会放大异常行为\n\n- 请求失败时，CLI 默认会自动重试，规则包括：\n  - **最多重试 10 次**\n  - 指数退避：`500ms → 1s → 2s → 4s ...`，最大到`32s`\n  - 遇到`429`会重试\n  - 遇到`401`会刷新 token 后重试\n- 风险在于：\n  - 如果你的 VPN 不稳定；\n  - 一次请求失败，可能演变成短时间内连续大量请求。\n- 如果此时 IP 还在跳动，服务端看到的就是：\n  - **同一会话**\n  - **多个 IP**\n  - **高频失败 + 高频重试**\n- 这很容易被识别成异常流量模式。\n\n## 7. 为什么 CLI 比 Web 更容易中招\n\n- 作者的判断是：**不是 Anthropic 特别 “针对 CLI”**，而是 CLI 的设计天然会暴露更多风控信号。\n- 前面 5 个因素叠加后，CLI 用户相比 Web 用户更容易被识别：\n  - 有稳定的`device_id`\n  - 有 prompt 里的归因水印\n  - 有`x-app: cli`这类明确标签\n  - 有高频遥测\n  - 有失败后的自动重试放大行为\n- 所以本质上是：\n  - **Web 用户更 “隐身”**\n  - **CLI 用户更 “可观测”**\n\n## 8. 作者给出的 4 个自救方案\n\n### 方案 A：关闭遥测\n\n- 目的：**减少大部分额外暴露**\n- 配置：\n  ```bash\n  export DISABLE_TELEMETRY=1\n  ```\n- 更激进一点还可以：\n  ```bash\n  export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1\n  ```\n- 作者的判断：这一步能**减少约 80% 的暴露**。\n\n### 方案 B：用 API Key 替代 OAuth 登录\n\n- 目的：减少与账号信息相关的额外暴露。\n- 效果：\n  - 不再调用`/api/oauth/profile`\n  - `account_uuid`会变成空字符串\n- 配置：\n  ```bash\n  export ANTHROPIC_API_KEY=sk-ant-xxx\n  ```\n\n### 方案 C：改用第三方云提供商\n\n- 作者认为这是**最安全的方案**。\n- 可选平台：\n  - AWS Bedrock\n  - Google Vertex AI\n  - Azure Foundry\n- 原因：\n  - 遥测会自动关闭\n  - 请求发往 AWS / GCP / Azure，而不是`api.anthropic.com`\n  - **Anthropic 直接看不到你的 IP**\n- 示例配置：\n  ```bash\n  export CLAUDE_CODE_USE_BEDROCK=1\n  export CLAUDE_CODE_USE_VERTEX=1\n  ```\n\n### 方案 D：保持稳定 IP，并减少重试次数\n\n- 重点是：\n  - 尽量使用**稳定出口 IP**\n  - 最好是住宅 IP\n  - 避免同一 session 内频繁跳国家、跳地区\n- 同时把最大重试次数调低：\n  ```bash\n  export CLAUDE_CODE_MAX_RETRIES=2\n  ```\n\n## 9. 作者给出的优先级建议与最终结论\n\n- 作者给出的方案优先级是：\n  - **Bedrock / Vertex**\n  - **关闭遥测 + API Key**\n  - **稳定 IP（住宅更佳）+ 减少重试**\n- 最终结论有两层：\n  - **没有发现客户端里存在 “专门地域封锁” 的黑幕代码**；\n  - 但**Claude Code 的设计确实比 Web 版更容易触发服务端风控**。\n- 用更直白的话说：\n  - 封号更像是**基于行为模式的算法判断**；\n  - 而不是官方专门 “盯着某一类地区用户封”。\n\n## 10. 一句话理解全文\n\n- **问题不只是 “你用了 VPN”，而是 “同一个设备在不断向服务端暴露身份、水印、遥测和异常重试行为”**。\n- 只要理解了这些触发点，就能更有针对性地降低风险。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1775006156650,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7ec3f8c7dd1af2b04ec8d4e2c42bed9dfdf2f5f27d434dac9883f2a673715526",
+  "refs": {
+    "sessionId": "1775006060001_5wi0248w"
+  },
+  "revisionId": "sha256:12deae7e9e139b1af3a3911e55bba60169cb5b379f4bbb98b9b23ba5ee871d7d",
+  "schemaVersion": 1,
+  "updatedAt": 1775006156650
+}

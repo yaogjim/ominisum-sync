@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773830322559,
+  "entityType": "message",
+  "id": "1773830322558_sjfb3mzu",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 通俗拆解Agent调度架构\n\n**评级**: B (59.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程化\n**次类别**: Agent系统设计, 开发工作流\n**标签**: #Claude Code #Linear #Harness Engineering #Agent编排 #工作流自动化\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 适合入门建立整体框架感，但更像架构速写，缺少实证、细节和可直接复现的操作说明。\n**核心高价值点**: 把 Linear、MCP、tmux、JSONL、worktree、pipeline 分别映射为“指挥台、嘴耳、手、眼、隔间、流程线”，能快速建立一套可沟通的系统心智模型。\n\n### 摘要\n文章用高度口语化的比喻解释一套以 Linear、MCP、tmux、JSONL、worktree 等组件组成的 Agent harness 架构，强调各模块在任务调度、交互、观测、隔离与流程编排中的角色，适合快速建立整体认知。\n\n### 知识要点\n- Agent harness 可以拆分为调度入口、通信接口、执行接口、观测日志、隔离环境和流程编排等层次。\n- Git worktree 与步骤化 subroutine pipeline 可分别承担物理隔离和流程约束/验证职责。\n\n### 行动项\n- 按文中组件关系画一张自己的 Agent 工作流架构图，检查当前系统是否具备调度、观测、隔离和验证四层能力。\n- 如果正在做自动化编码或任务执行系统，可优先评估是否引入 worktree 隔离和日志流式回传机制。\n\n### 存档判定\n归档: 是 — 原因: 对理解Agent harness各组件分工有较高概览价值，适合作为术语映射和系统心智模型的速查材料。\n删除: 否\n留存决策: 短期参考后可保留归档",
+    "role": "assistant",
+    "timestamp": 1773830322559,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:dd034644794cd7c868f2d109b78326997874a066629b0cffb8790ac85c193f53",
+  "refs": {
+    "sessionId": "1773297446673_hmyue7e4"
+  },
+  "revisionId": "sha256:ba7c171fceadfa77445901b6a12cfabc326ee81d92343c43bf5e0f1690d76904",
+  "schemaVersion": 1,
+  "updatedAt": 1773830322559
+}

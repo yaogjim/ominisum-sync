@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780386697895,
+  "entityType": "message",
+  "id": "1780386697894_24is85wp",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude Code缓存省Token机制\n\n**评级**: A (75.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI工程与大模型使用优化\n**次类别**: LLM缓存机制, Claude Code使用技巧\n**标签**: #KV Cache #Claude Code #Token优化 #Prompt缓存 #大模型工程\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 一篇兼具原理解释、源码观察和实操建议的Claude Code缓存优化指南。\n**核心高价值点**: 缓存是前缀匹配链条，保持系统提示、工具集、CLAUDE.md和模型稳定，持续在同一session追加对话，能显著降低Token成本。\n\n### 摘要\n文章从本地模型实验出发，解释Transformer KV缓存为何能显著降低多轮对话的输入处理成本，并结合Claude Code源码分析缓存分层、TTL、断裂原因和省Token使用姿势。\n\n### 知识要点\n- KV缓存复用历史token的Key和Value，只对Decoder-only生成模型的单向注意力特别有效。\n- Claude Code缓存依赖前缀匹配，系统提示、工具schema、消息历史、模型切换都会影响缓存命中。\n- Pro/Max用户缓存TTL可达1小时，缓存读取会刷新TTL，因此持续会话和定期keep-alive可减少冷启动成本。\n- Sub-agent通常与主线程工具集、模型和消息历史不同，难以复用主线程缓存。\n\n### 行动项\n- 使用Claude Code时尽量保持同一session连续对话，避免频繁新开session。\n- 在开始任务前配置好CLAUDE.md、MCP工具和模型，任务中途尽量不要修改。\n- 避免频繁切换Opus、Sonnet、Haiku等模型，按阶段集中切换。\n- 对长时间任务可考虑在TTL过期前发送轻量请求维持缓存。\n\n### 存档判定\n归档: 是 — 原因: 文章系统解释了KV缓存、Claude Code缓存断裂原因和具体省Token策略，对长期使用AI编程工具和理解LLM推理成本有较高参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1780386697895,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:cd1531e73c4a274f4b307554808a92ce73f9271b791b6a08da1c4597e4b6cf8e",
+  "refs": {
+    "sessionId": "1780386275728_835nkurl"
+  },
+  "revisionId": "sha256:9723930e3154253c9d64c0e8d852203900e0cc63a6bd0409751dff84cc274972",
+  "schemaVersion": 1,
+  "updatedAt": 1780386697895
+}

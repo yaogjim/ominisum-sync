@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777356449608,
+  "entityType": "message",
+  "id": "1777356504629_837932fi",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# AI Coding 时代，好的编程习惯仍然重要\n\n## 核心观点\n\n即使进入 AI Coding 时代，清晰的模块划分、合理的文件粒度、简单的依赖关系依然非常重要。  \n这些习惯不仅方便人类维护代码，也能显著降低 AI Agent 理解和修改代码的复杂度。\n\n## 关键发现：人觉得简单，AI 未必简单\n\n作者在做 Agent benchmark 时发现，一个“把几千行大文件拆成十多个小模块”的重构任务：\n\n- 对人类开发者来说不算难，主要是移动代码、整理 import、编译验证。\n- 对 AI Agent 来说却很复杂，需要反复读取大文件、记住函数关系、跨文件修改、修复编译错误。\n- 结果是 Token 消耗巨大，状态管理成本很高，效率并不理想。\n\n这说明：开发者视角下的“简单机械活”，对 Agent 可能是高成本任务。\n\n## AI Agent 当前的局限\n\n目前主流 Coding Agent 的文件编辑方式仍偏基础：\n\n- Claude Code 常用 `old_string / new_string` 文本替换。\n- Codex 常用 `apply_patch` 生成 diff。\n- 这些方式适合小范围修改，但不适合大规模重构、代码搬迁、批量删除。\n\n因此，Agent 往往需要先把大量代码读进上下文，再生成大段替换内容，导致效率低、错误多。\n\n## 有效改进：让 Agent 使用脚本辅助重构\n\n作者发现，如果提示 Agent 先用脚本、`sed`、`perl` 等命令行工具粗拆大文件，再逐步修复问题，任务完成度会明显提升。\n\n但很多 Agent 默认不会这么做，因为系统提示词通常更鼓励使用内置编辑工具，而不是命令行工具。\n\n## 未来方向：更高级的代码编辑工具\n\n作者认为，Coding Agent 需要的不只是“文本替换”接口，而是更接近 IDE 的结构化重构能力，例如：\n\n- 基于 parser、LSP、compiler 理解代码结构；\n- 支持移动函数、删除实现块、自动整理 imports；\n- 让 Agent 以代码结构为单位操作，而不是纯文本替换。\n\n## 产品启示\n\nAI Coding 并不会让工程规范失效，反而会让好的代码结构更有价值。\n\n越早通过工程规范和 harness engineering，把良好的编程习惯变成 Agent 的默认工作方式，后续维护和重构成本就越低。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777356449608,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1ac8a68181033490be0b626326f504faba6105b2976539ea057ad5c1de7a1a2f",
+  "refs": {
+    "sessionId": "1777356504627_542llp0g"
+  },
+  "revisionId": "sha256:487f6bce6bca033c83d20aa61c218ddfbf4948d546f4c06045d3240e39f62480",
+  "schemaVersion": 1,
+  "updatedAt": 1777356449608
+}

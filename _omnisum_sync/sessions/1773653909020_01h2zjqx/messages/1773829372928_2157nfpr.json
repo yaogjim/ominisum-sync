@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773829372929,
+  "entityType": "message",
+  "id": "1773829372928_2157nfpr",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AI代理浏览器自动化CLI概览\n\n**评级**: B (63.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent工具与浏览器自动化\n**次类别**: 开发者工具, CLI文档\n**标签**: #browser automation #AI agents #CLI #Rust #CDP\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 功能非常全、上手很快，但偏工具手册而非高质量深度文章。\n**核心高价值点**: 基于`snapshot + ref`的交互模式对LLM尤其友好，能把页面理解与稳定元素操作结合起来。\n\n### 摘要\n这是一份面向AI代理的浏览器自动化CLI项目说明，覆盖安装、命令集、会话管理、安全策略、CDP连接、云浏览器接入与iOS支持等内容。实操性很强，但更像功能索引，缺少性能对比、真实案例和方法论沉淀。\n\n### 知识要点\n- 提供面向AI代理的浏览器自动化CLI，支持点击、填表、截图、等待、网络拦截等完整操作\n- 通过`snapshot`输出可访问性树并生成`@eN`引用，提升LLM选择元素的稳定性\n- 支持会话隔离、持久化profile、状态文件与加密存储，便于处理登录态\n- 内置安全能力，如域名白名单、操作确认、内容边界标记和输出长度限制\n- 可通过CDP连接现有Chrome，也可接入Browserless、Browserbase等云浏览器服务\n\n### 行动项\n- 如果你在做AI代理或自动化测试，可实际安装并验证`snapshot + ref`工作流是否优于Playwright脚本选择器\n- 评估其安全选项（域名白名单、action policy、content boundaries）是否适合你的代理执行环境\n\n### 存档判定\n归档: 是 — 原因: 命令覆盖全面，适合作为后续接入AI代理浏览器控制时的参考文档\n删除: 否\n留存决策: 中期保留，作为AI代理浏览器自动化工具选型与查阅手册",
+    "role": "assistant",
+    "timestamp": 1773829372929,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:26f9367a235eb2af1ecf028345a37ac47ac73fd3eac262755c5b89e436b3a9cf",
+  "refs": {
+    "sessionId": "1773653909020_01h2zjqx"
+  },
+  "revisionId": "sha256:49e4b5daa8c2222c52f510a9b5915ab03102835fdbca29b7c1f7f349ade748fe",
+  "schemaVersion": 1,
+  "updatedAt": 1773829372929
+}

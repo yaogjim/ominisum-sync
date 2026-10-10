@@ -1,0 +1,69 @@
+{
+  "createdAt": 1780380156078,
+  "entityType": "session",
+  "id": "1780380156078_yc7l27l7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若开发Agent产品MVP，优先评估使用TS搭建前端、Agent orchestrator、tool schema和streaming链路。",
+      "将Python保留在模型实验、数据处理、复杂检索、评测和离线任务模块中。",
+      "为Agent工具输入输出、状态、消息格式和外部API响应建立统一类型定义。",
+      "在技术选型时区分模型层、数据层、产品层、编排层和用户交互层，避免单一语言包打天下。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780380939306,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent产品技术栈分工建议",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent产品通常涉及前端、后端、工具调用、事件流、UI状态和插件系统，TS在类型共享和Web生态接入上有优势。",
+      "Python仍适合模型实验、数据处理、embedding pipeline、RAG、eval、fine-tuning和离线任务。",
+      "Agent系统中大量JSON对象流转，类型系统可减少工具参数、状态字段和返回结构错误。",
+      "AI应用从模型中心逐渐转向产品工程，技术栈选择应围绕产品交付链路而非单纯模型开发。"
+    ],
+    "oneHighValuePoint": "将Agent系统拆分为Python负责模型与数据层、TS负责产品与运行时层，是较实用的技术栈分工思路。",
+    "oneLineReview": "有一定实践启发，但证据薄弱，更适合作为Agent技术栈选型的观点参考。",
+    "primaryCategory": "AI工程",
+    "rating": "C",
+    "rejectReason": "内容主要是观点型推文，论证依赖个人经验和团队背书，缺少真实案例、数据或系统性技术比较。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent开发",
+      "技术栈选型"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为Agent产品开发中TS更适合承担产品层、编排层、运行时、前端交互和插件系统，而Python更适合模型实验、数据处理、RAG、评测和离线任务。核心观点是AI应用已从模型工程转向产品工程，因此技术栈应按场景分工。",
+    "tags": [
+      "Agent",
+      "TypeScript",
+      "Python",
+      "产品工程",
+      "AI应用开发"
+    ],
+    "title": "Max For AI: 昨天见了一个非常牛逼的Agent团队，我敢说在国内绝对是T0的级别（之前DPSK还找他们搞了点Agent数据） 刚好聊到了这两天推上吵得非常热闹的AI产品（Ag…",
+    "totalScore": 52.5,
+    "url": "https://x.com/MaxForAI/status/2059550600908738702"
+  },
+  "payloadHash": "sha256:19afe6a56c6d666ec9e5eb89ffbc3224bfc0b994f7d7d509c441a07a9b026557",
+  "refs": {},
+  "revisionId": "sha256:01506a719d438779c06fb15077ea5049198166a10abf8211fae9ab58562f2d61",
+  "schemaVersion": 1,
+  "updatedAt": 1780380939896
+}

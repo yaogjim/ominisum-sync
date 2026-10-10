@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774318860192,
+  "entityType": "message",
+  "id": "1774318860191_tti7y8bp",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 智能体授权模式简析\n\n**评级**: B (59.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent系统设计\n**次类别**: 权限与身份认证, 产品架构\n**标签**: #Agent Authorization #On-behalf-of #Fixed Credentials #LangSmith Fleet #Human-in-the-loop\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一篇概念清晰但偏产品宣发的短文，对理解智能体授权边界有用，但证据和深度不足。\n**核心高价值点**: 最有价值的点是明确区分了智能体以终端用户身份执行与以固定凭证执行两种授权模型，这直接影响权限边界、渠道支持和安全策略设计。\n\n### 摘要\n文章围绕智能体授权展开，区分了“代表用户执行”和“使用固定凭证执行”两种模式，并结合 LangSmith Fleet 的 Assistant 与 Claw 设计说明其适用场景、渠道限制及人工审核的重要性。\n\n### 知识要点\n- 智能体授权可分为 on-behalf-of 与 fixed credentials 两类\n- 共享型智能体若使用固定凭证，需要配合 human-in-the-loop 降低高风险操作\n- 跨渠道共享助手需要建立外部渠道用户 ID 与内部身份系统的映射\n\n### 行动项\n- 在设计企业智能体时先明确采用用户代理授权还是固定服务账号授权\n- 为固定凭证型智能体补充高风险操作的人审或审批机制\n\n### 存档判定\n归档: 是 — 原因: 对理解智能体权限模型有概念澄清价值，适合作为产品设计参考案例留存。\n删除: 否\n留存决策: 短期参考后可归档",
+    "role": "assistant",
+    "timestamp": 1774318860192,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:99216ef738f7bfb40952d72537cc1618c1ec6b205d805d7da755e990a7afd57f",
+  "refs": {
+    "sessionId": "1774317063268_gjnnxqg0"
+  },
+  "revisionId": "sha256:00afe2b0df4eba427d9d26e4d10def1fb1048406137c61870e900bedaaacd7c6",
+  "schemaVersion": 1,
+  "updatedAt": 1774318860192
+}

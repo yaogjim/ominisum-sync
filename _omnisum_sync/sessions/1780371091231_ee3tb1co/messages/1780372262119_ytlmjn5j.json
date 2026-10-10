@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780372080848,
+  "entityType": "message",
+  "id": "1780372262119_ytlmjn5j",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章讨论的是：**AI Agent 的历史记忆不一定要先整理成 Markdown Wiki，更适合保留为结构化、可查询的工作历史数据库**。作者认为，把原始 session “压扁”成 Markdown 会损失上下文关系，反而增加不必要的中间层。\n\n---\n\n## 1. 作者的核心疑问：为什么要把 Agent Session 编译成 Wiki？\n\n作者不理解为什么要把 AI Agent 的运行记录整理成 Markdown Wiki。\n\n原始的 Agent Session 本身已经是结构化数据，包含：\n\n- `messages`：对话消息\n- `tool calls`：工具调用记录\n- `tool results`：工具返回结果\n- `files`：相关文件\n- `subagents`：子 Agent 信息\n- `workflows`：工作流\n- `parent chains`：父级调用链或上下文链路\n\n作者认为，这些数据天然带有关联关系，直接保存即可。\n\n---\n\n## 2. 作者主张：直接放进 SQLite，比转成 Markdown 更合理\n\n作者认为，如果维持原始 session 中的结构和关联关系，并直接存入 SQLite，就已经是一个很强的系统。\n\n相比之下，把它先总结成 Markdown 页面，会带来问题：\n\n- 信息被“压扁”\n- 原本清晰的因果链会丢失\n- 工具调用、结果、文件之间的引用关系需要后续重新恢复\n- Markdown Wiki 变成了一个额外的中间实体\n\n作者用“若无必要，勿增实体”来表达自己的设计哲学：**不应该为了整理而额外制造一层格式转换。**\n\n---\n\n## 3. Agent 的记忆不应首先服务于人类浏览\n\n作者强调，Agent 的历史记录不应该首先被设计成“给人看的知识库”。\n\n更合理的定位是：\n\n> 一个可查询的工作历史数据库。\n\n也就是说，Agent 后续可以根据需要，在应用层自行决定：\n\n- 如何检索历史记录\n- 如何聚合信息\n- 如何总结上下文\n- 如何优化自己的工作流程\n\n这样比提前把所有内容写成 Markdown Wiki 更灵活，也更接近 Agent 自己使用记忆的方式。\n\n---\n\n## 4. 项目案例：Obelisk 正在探索这种方向\n\n作者提到一个相关项目：\n\n- GitHub：`github.com/tommy0103/obelisk`\n\n该项目正在探索如何实践这种理念。\n\n作者认为：\n\n- 让 Agent 自己写脚本查询历史数据，只是第一步；\n- 更重要的是，让 Agent 能够高效写脚本查询；\n- 进一步目标是，让 Agent 几乎不丢失任何历史上下文。\n\n换句话说，重点不是“把历史变成人类可读笔记”，而是让 Agent 能真正利用完整历史。\n\n---\n\n## 5. 被引用观点：另一种方案是把 Session 编译成 Markdown Wiki\n\n原引用推文提出了另一种做法：\n\n每次 AI 编码 Agent 的 session 结束后，自动把：\n\n- 对话\n- 工具调用\n- 工作进度\n\n编译成 Markdown Wiki，并存进 Git 仓库。\n\n这样下次换一个 Agent 启动时，可以直接看到：\n\n> “上次进行到哪了”。\n\n这个方案的特点是：\n\n- 用 hooks 自动捕获过程\n- 用文件系统和 Git 做持久化\n- 替代手动写笔记\n- 也避免维护向量数据库的麻烦\n\n作者的观点正是对这种方案提出不同意见：他认为 Markdown Wiki 方便人看，但未必是 Agent 记忆的最佳形式。\n\n---\n\n## 6. 热门回复观点概览\n\n### 6.1 Agent 工程师需要评估意识\n\n一条热门回复提到，最近面试 Agent 工程师时发现：\n\n- 一半候选人是本硕期间发过 AI 相关论文的人；\n- 另一半是 Java 后端或前端转来的。\n\n回复者认为，相比 AI 背景的人，前后端转 Agent 的人中，很多缺少对 Agent / RAG 做 eval 的意识。\n\n常见问题是：\n\n- 项目只停留在“能跑”\n- 想法可能不错\n- 但问不出具体指标\n\n该回复获得了 **226 赞、34 条评论**。\n\n---\n\n### 6.2 有人吐槽 Claude Opus 4.8 表现变差\n\n多条热门回复集中吐槽 Claude Opus 4.8。\n\n有人表示，做 Agent Team 的人才能明显感受到 Opus 4.8 的问题：\n\n- 以前能很好协作的 Agents 现在出现退化\n- 一开始以为是自己代码出了 bug\n- Debug 后甚至模型自己也承认可能是 Opus 4.8 的原因\n\n另一条回复也说：\n\n- Opus 4.7 已经不如预期\n- Opus 4.8 差到能明显感受到\n- Opus 4.5 / 4.6 时期的优势似乎已经不在\n- 可能会考虑取消订阅\n\n相关回复分别获得了 **173 赞、26 条评论** 和 **94 赞、18 条评论**。\n\n---\n\n### 6.3 老套餐用户被认为“赚到了”\n\n还有回复提到，一些早期年付套餐用户现在很划算。\n\n例子包括：\n\n- GLM 老年付套餐\n- Copilot 老套餐年付\n\n以前很多人认为年付不划算，因为 AI 服务会越来越便宜；但现在这些老套餐可能一个月能用上百亿 Token，因此让人羡慕。\n\n该回复获得了 **49 赞、28 条评论**。\n\n---\n\n### 6.4 有人质疑 Git 管理的必要性\n\n最后一条回复认为，如果只是为了用 Git 管理而管理，意义不大。\n\n他觉得更简单的方式可能是：\n\n- 直接复制 session 文件\n- 加密后用 Git 管理\n\n该回复获得了 **2 赞、1 条评论**。\n\n---\n\n## 总结\n\n文章的核心分歧在于：**Agent 的记忆应该优先变成人类可读的 Markdown Wiki，还是保留为机器可查询的结构化数据库？**\n\n作者倾向后者，认为原始 session 已经包含丰富结构，直接存入 SQLite 更能保留上下文和因果关系，也更适合 Agent 后续检索、总结和复用。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780372080848,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1db624fb3bc44d8ec391932a269a746dc90353adee758ce40ae946ea430f1424",
+  "refs": {
+    "sessionId": "1780371091231_ee3tb1co"
+  },
+  "revisionId": "sha256:9aefd5eb6dd5413487cdca9068a37ae7e03a38219755286484486c9efa4c1c4b",
+  "schemaVersion": 1,
+  "updatedAt": 1780372080848
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774522731454,
+  "entityType": "message",
+  "id": "1774522731453_tesdwko2",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: OpenUI生成式UI框架概览\n\n**评级**: B (65分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI应用开发框架\n**次类别**: 前端工程, 生成式UI, 开发工具\n**标签**: #OpenUI #Generative UI #React #流式渲染 #LLM #CLI\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 概念和工程方向都较新，但内容偏项目介绍，证据与落地案例还不够扎实。\n**核心高价值点**: 将“组件库约束 + Prompt 自动生成 + 流式结构化渲染”打通，形成了生成式UI的完整工程闭环。\n\n### 摘要\n文章介绍了 OpenUI 这一面向生成式 UI 的全栈框架，核心包括 OpenUI Lang、React 运行时、组件库、流式渲染器和脚手架工具，并强调相比 JSON 具有更高 token 效率，适合构建聊天助手和交互式 AI 应用。\n\n### 知识要点\n- OpenUI Lang 以流式、结构化方式生成 UI，替代纯文本或 JSON 输出\n- 通过预定义组件库和 Zod schema，可以限制模型可生成的 UI 范围\n- 框架提供 React 运行时、聊天状态管理、预置 UI 组件和 CLI 脚手架\n- 项目强调 token efficiency，并给出多场景下相对 JSON 的基准对比\n\n### 行动项\n- 评估你的 AI 应用是否需要结构化、流式 UI 生成而非纯文本回复\n- 在本地用 CLI 跑通示例，验证组件约束、渲染链路和 prompt 生成效果\n\n### 存档判定\n归档: 是 — 原因: 该内容展示了生成式UI的框架设计、组件约束与流式渲染思路，对关注AI产品前端和LLM交互界面的人有参考价值。\n删除: 否\n留存决策: 中期保留，作为生成式UI方向的框架参考资料",
+    "role": "assistant",
+    "timestamp": 1774522731454,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:be9360a8c322018cedb1707aaf04631765269c8b766686fa7ada35ee5918adc2",
+  "refs": {
+    "sessionId": "1774517456704_hztxym2c"
+  },
+  "revisionId": "sha256:9003e0454b69d4149e48960506e3a8ce1b53f923e3d81a2d94fd5ac7d580bae0",
+  "schemaVersion": 1,
+  "updatedAt": 1774522731454
+}

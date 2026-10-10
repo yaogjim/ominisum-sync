@@ -1,0 +1,70 @@
+{
+  "createdAt": 1776322752442,
+  "entityType": "session",
+  "id": "1776322752442_qv0enc8f",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在使用 Claude Code 时，为新任务默认开启新 session，避免无关上下文累积",
+      "调试失败后优先尝试 /rewind，而不是在污染过的上下文里继续修正",
+      "对长任务主动提前 /compact，并附带压缩重点说明，减少坏压缩风险",
+      "将代码库调研、结果验证、文档生成等高噪声工作交给 subagents"
+    ],
+    "archiveReason": "内容包含具体的会话管理经验和操作策略，适合作为工具使用备忘",
+    "classifiedAt": 1776325451500,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude Code会话管理指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "长上下文会带来 context rot，模型在上下文变长时性能可能下降",
+      "rewind 比事后纠错更适合清理错误尝试带来的上下文污染",
+      "compact 是有损压缩，clear 是手工重建上下文，两者适用场景不同",
+      "subagents 适合处理中间输出很多但最终只需结论的任务"
+    ],
+    "oneHighValuePoint": "最有价值的点是把每次模型回复后的下一步操作视为“上下文管理决策点”，并明确区分 continue、rewind、clear、compact、subagents 的适用边界。",
+    "oneLineReview": "这是一篇偏实践的 Claude Code 使用说明，方法清晰但证据和案例支撑偏弱。",
+    "primaryCategory": "AI 编程工具使用",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为 Claude Code 实践参考",
+    "secondaryCategories": [
+      "上下文工程",
+      "效率优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕 Claude Code 的 1M 上下文能力，解释了 context rot、compact、rewind、clear 与 subagents 的适用场景，核心价值在于帮助用户更高效地管理长会话与任务切换。",
+    "tags": [
+      "Claude Code",
+      "上下文窗口",
+      "会话管理",
+      "compact",
+      "rewind",
+      "subagents"
+    ],
+    "title": "使用 Claude Code：会话管理 & 1M 上下文",
+    "totalScore": 63.5,
+    "url": "https://x.com/trq212/status/2044548257058328723"
+  },
+  "payloadHash": "sha256:2dac10d9d2da706077185349caa92acd154b2092c18659c45472ec71dea2bb48",
+  "refs": {},
+  "revisionId": "sha256:acedc6878dcdbf455bf1f7af213aa843e3ed4017e15c6763f8894bb01554d4ef",
+  "schemaVersion": 1,
+  "updatedAt": 1776404652018
+}

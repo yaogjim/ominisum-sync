@@ -1,0 +1,76 @@
+{
+  "createdAt": 1780307340920,
+  "entityType": "session",
+  "id": "1780307340920_wl384y4m",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为自己的智能体应用列出3-4个核心实体类型和3-4个核心关系类型。",
+      "用Pydantic为实体和关系补充清晰字段描述、示例值和领域术语。",
+      "为关系增加source/target约束，避免LLM生成无意义或不可查询的边。",
+      "检查现有向量记忆系统中是否存在多跳查询失败的场景，并评估是否需要引入知识图谱记忆。",
+      "如果使用Zep，可基于文中模式实验set_ontology和context_template。"
+    ],
+    "archiveReason": "提供了智能体长期记忆中用本体和Pydantic Schema约束知识图谱抽取的实用方法，可作为设计领域记忆系统的参考。",
+    "classifiedAt": 1780307554711,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用Pydantic约束智能体记忆",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "向量检索适合相似度匹配，但在需要跨多个事实连接的多跳推理中容易遗漏桥接信息。",
+      "知识图谱通过实体节点、关系边和路径遍历支持结构化、多跳查询。",
+      "无Schema的LLM抽取容易生成泛化实体类型和关系标签，导致后续无法精确过滤和查询。",
+      "Pydantic可以用于定义智能体记忆中的实体模型、边模型、字段说明和约束关系。",
+      "实体和字段描述不仅是类型定义，也能向抽取模型注入领域词汇和分类标准。",
+      "source/target约束可以限制哪些实体之间允许形成特定关系，减少无效记忆。",
+      "Zep的抽取流程包括实体抽取、实体解析、事实抽取、事实解析和时间提取。",
+      "记忆Schema应从少量高价值实体和关系开始，覆盖领域80%的核心逻辑，再逐步扩展。"
+    ],
+    "oneHighValuePoint": "智能体记忆的关键不是单纯把信息存进图，而是用领域本体约束LLM抽取什么实体、关系和属性。",
+    "oneLineReview": "一篇面向智能体长期记忆实践的高价值技术短文，方法清晰但证据主要依赖示例而非实测数据。",
+    "primaryCategory": "AI智能体",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "长期记忆",
+      "知识图谱",
+      "结构化抽取"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出向量记忆在多跳推理中容易失效，知识图谱虽可解决连接问题，但若缺少预定义本体会退化为泛化节点和关系。作者以Zep为例，展示如何用Pydantic定义实体、边、属性和约束，从而提升智能体记忆的可查询性与结构化程度。",
+    "tags": [
+      "Pydantic",
+      "Zep",
+      "Agent Memory",
+      "Knowledge Graph",
+      "Ontology",
+      "Schema"
+    ],
+    "title": "Pydantic 修复了我的代理的记忆",
+    "totalScore": 73,
+    "url": "https://x.com/akshay_pachaar/status/2058976178908885210"
+  },
+  "payloadHash": "sha256:b9960c2a70cca22341c6396d7d94eda37bb9795208914d4f8330a15ea9c2b51c",
+  "refs": {},
+  "revisionId": "sha256:97486804431ecc6961f90672c9a5b00cb863c54209c524a2f11f82cb44d85c68",
+  "schemaVersion": 1,
+  "updatedAt": 1780307850238
+}

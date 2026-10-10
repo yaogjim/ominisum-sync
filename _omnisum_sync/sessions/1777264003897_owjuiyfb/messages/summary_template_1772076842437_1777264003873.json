@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777264003873,
+  "entityType": "message",
+  "id": "summary_template_1772076842437_1777264003873",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、内容总结\n\n作者试用了**Multica**半小时后体验很差，主要吐槽了几个问题：\n\n1. **无法直观添加本地文件夹 / GitHub 仓库**作为 Workspace 或 Project。\n2. 文档写支持**GitHub 导入 Skills**，但实际使用频繁报错；本地 Agent 显示 offline。\n3. 和 Agent 对话时一直处于**loading**状态，无法正常返回结果。\n4. 因为上述问题，文档中描述的 “发布 issue 后自动运行” 等功能没能真正体验到。\n\n后续作者补充说：  \n**重启后问题已解决一部分**。他认为 Multica 的产品思路是：\n\n> 在一个 Workspace 里，通过 issue 把任务分发给不同 Agent。\n\n这和 Slock 的方式不同，Slock 更像是在一个 channel 里直接和多个 Agent 对话、分发任务。\n\n官方人员也回复解释：\n\n- 本地文件夹 / Git 仓库其实可以添加，但需要在**Agent Instructions**里告诉 Agent 本地路径。\n- Workspace Context 的设计后续会重构。\n- GitHub Skills 导入目前并不是完全支持，只支持特定格式，例如`skills.sh`和 CloudHub。\n- 一直 loading 理论上不该出现，可能是网络问题，建议提交 GitHub issue。\n\n其他用户也补充说：  \n目前市面上的 Agent 工具普遍不够好用，部分场景下还是**Claude Code**更直接可靠。\n\n---\n\n## 二、深入浅出解读\n\n### 1. 用户期待的是 “开箱即用”，但 Multica 还偏工程化\n\n作者的主要不满，不只是某个功能坏了，而是：\n\n> 文档写得像是已经支持，但实际操作起来并不顺畅。\n\n比如 “添加本地项目” 这件事，用户自然会期待有一个明显按钮：\n\n> 添加文件夹 → 选择路径 → 开始使用\n\n但 Multica 的实际方式是要在 Agent Instructions 里手动写路径。  \n这对开发者来说可以理解，但对普通用户来说就不够直观。\n\n---\n\n### 2. Multica 的核心思路是 “issue 驱动 Agent”\n\nMultica 更像是把 AI Agent 当成一个 “开发团队成员”。\n\n流程大概是：\n\n```text\nWorkspace → 创建 issue → 分配给 Agent → Agent 执行任务\n```\n\n这有点像 GitHub Issues 的工作流。\n\n优点是：\n\n- 任务有结构；\n- 方便追踪；\n- 适合多人 / 多 Agent 协作。\n\n缺点是：\n\n- 前期操作成本高；\n- issue 一旦写错，修改起来麻烦；\n- 不如聊天式交互自然。\n\n作者提到一个很关键的观点：\n\n> issue 应该是和 Agent 沟通之后形成的结果，而不是一开始就让用户写完整 issue。\n\n也就是说，用户更希望先聊天讨论，AI 帮忙整理需求，最后再生成 issue。\n\n---\n\n### 3. 文档和产品实际能力存在落差\n\n官方回复里其实透露了一个问题：\n\n文档或界面写 “支持 GitHub Skills 导入”，但真实情况是：\n\n> 只支持符合特定格式的平台或仓库。\n\n这就容易造成误解。\n\n用户看到 “支持 GitHub”，会理解为：\n\n> 任意 GitHub repo 都能导入。\n\n但官方实际意思可能是：\n\n> 支持某些符合规范的 GitHub Skill repo。\n\n这个差异会直接伤害用户体验。\n\n---\n\n### 4. 一直 loading 是最影响信任的问题\n\nAI Agent 工具最怕的不是慢，而是：\n\n> 没有反馈。\n\n如果只是慢，但有进度提示，用户还能等。  \n如果一直 loading，用户不知道是：\n\n- 网络问题；\n- Agent 挂了；\n- 后端报错；\n- 本地配置错了；\n- 任务还在执行。\n\n这会让人非常焦虑，也会迅速降低信任感。\n\n---\n\n## 三、我的意见\n\n我认为这次吐槽反映的不是单个 bug，而是 Multica 当前产品成熟度的问题。\n\n### Multica 的方向是有价值的\n\n用 issue 管理 Agent 任务，这个思路适合复杂项目，尤其是软件开发场景。  \n如果做得好，它可以成为一种 “AI 项目管理 + 自动执行” 的工作台。\n\n### 但当前体验还不够顺滑\n\n主要问题在于：\n\n1. **入口不直观**  \n   本地项目、GitHub 仓库、Agent、Skills 这些核心功能应该有清晰入口，而不是靠写 Instructions。\n\n2. **文档表达需要更准确**  \n   支持什么、不支持什么、需要什么格式，都应该写明白。\n\n3. **错误反馈要更友好**  \n   不应该只显示 loading，而应该告诉用户当前卡在哪里。\n\n4. **issue 工作流可以更智能**  \n   最理想的体验应该是：\n\n```text\n用户先和 Agent 聊需求\n↓\nAgent 帮用户整理任务\n↓\n自动生成 issue\n↓\n用户确认\n↓\n分发给不同 Agent 执行\n```\n\n而不是一开始就要求用户写清楚 issue。\n\n---\n\n## 四、简单结论\n\nMultica 的理念不错，但目前还像一个 “半成品工程工具”。  \n它适合愿意折腾、理解 Agent 工作流的开发者；  \n但如果用户想要稳定、直接、少配置的体验，现阶段可能还是**Claude Code**或更成熟的聊天式工具更实用。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "解读",
+    "timestamp": 1777264003873,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3b3a770f8db4531d6f8f3356f82a1472b3a64632e0185ed3d6a4458f05654f97",
+  "refs": {
+    "sessionId": "1777264003897_owjuiyfb"
+  },
+  "revisionId": "sha256:5eb3a76cf9e8ddaa599a4c5e1c2aad3b958d76ac223fdd5a4f0bd30044686cc8",
+  "schemaVersion": 1,
+  "updatedAt": 1777264003873
+}

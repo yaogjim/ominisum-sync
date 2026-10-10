@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780308075248,
+  "entityType": "message",
+  "id": "1780308205901_0ax8oimx",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\n**Herdr** 是一个运行在终端里的“AI Agent 多路复用器”。\n\n简单说：  \n它像 **tmux + AI Agent 状态看板**，可以在一个终端里同时管理多个 AI 编程助手、多个项目、多个窗口，并显示它们是：\n\n- 🔴 等你输入 / 授权\n- 🟡 正在工作\n- 🔵 已完成但你还没看\n- 🟢 空闲\n\n它支持：\n\n- 终端内运行，不是 GUI / Electron\n- 工作区、标签页、分屏\n- 断开后后台继续运行，再次连接可恢复\n- 支持 SSH 远程使用\n- 支持 Claude Code、Codex、OpenCode、GitHub Copilot CLI、Kimi Code CLI 等多种 Agent\n- 鼠标操作、复制、主题、通知\n- Socket API，方便 Agent 主动创建窗口、读输出、汇报状态\n\n---\n\n## 二、深入浅出解读\n\n### 1. 它解决什么问题？\n\n现在很多人会同时跑多个 AI 编程 Agent：\n\n- 一个修 bug\n- 一个写测试\n- 一个重构代码\n- 一个跑命令\n- 一个等你批准操作\n\n问题是：  \n**终端一多，就乱；Agent 一多，就不知道谁卡住了。**\n\nHerdr 的目标就是：\n\n> 让你在一个终端里管理一群 AI Agent，并一眼看出谁在干活、谁卡住、谁完成了。\n\n---\n\n### 2. 它和 tmux 有什么区别？\n\ntmux 主要解决：\n\n- 分屏\n- 会话保持\n- 断开重连\n\n但 tmux 不知道 AI Agent 在干嘛。\n\nHerdr 在此基础上加了：\n\n- Agent 状态识别\n- 工作区级别管理\n- AI 工具集成\n- 更友好的鼠标操作\n- 状态侧边栏\n\n可以理解为：\n\n> tmux 是“终端窗口管理器”，Herdr 是“面向 AI Agent 的终端工作台”。\n\n---\n\n### 3. 它和 GUI Agent 管理器有什么区别？\n\n很多 GUI 工具会把 Agent 包在自己的界面里。\n\nHerdr 不这么做。  \n它让你看到的仍然是：\n\n> Agent 原本的真实终端输出。\n\n优点是：\n\n- 不改变原有工作流\n- 适合命令行重度用户\n- 能在 SSH 远程机器上用\n- 更轻量，不依赖 Electron\n\n---\n\n### 4. 核心使用方式\n\n安装：\n\n```bash\ncurl -fsSL https://herdr.dev/install.sh | sh\n```\n\n或：\n\n```bash\nbrew install herdr\n```\n\n启动：\n\n```bash\nherdr\n```\n\n常用快捷键：\n\n| 操作 | 快捷键 |\n|---|---|\n| 新建标签页 | `Ctrl+b` 后按 `c` |\n| 分屏 | `Ctrl+b` 后按 `v` 或 `-` |\n| 新建工作区 | `Ctrl+b` 后按 `Shift+n` |\n| 切换工作区 | `Ctrl+b` 后按 `w` |\n| 断开但后台继续运行 | `Ctrl+b` 后按 `q` |\n| 重新进入 | 再次运行 `herdr` |\n\n---\n\n## 三、我的意见\n\nHerdr 很适合这类人：\n\n- 经常用 Claude Code、Codex、OpenCode 等 AI 编程工具\n- 同时跑多个 Agent\n- 喜欢终端工作流\n- 经常 SSH 到远程服务器开发\n- 觉得 tmux 不够懂 AI Agent\n\n但它不一定适合：\n\n- 完全不熟悉终端的人\n- 只偶尔用一个 AI 助手的人\n- 更喜欢图形界面的人\n\n我的判断：\n\n> Herdr 是一个很有潜力的“AI 时代 tmux”。  \n> 如果你已经开始用多个 Agent 干活，它会明显提升管理效率；如果你只是单 Agent 轻度使用，暂时没必要上。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780308075248,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c77b96210f0e12c4ab043a74e01947f9f3307260400098ebda858a1c3eddb38a",
+  "refs": {
+    "sessionId": "1780308205519_6ix2bu8z"
+  },
+  "revisionId": "sha256:f04ac533b638ed2282c18fefe1fe8e334e9713371aac1af687eb9ee904d2876c",
+  "schemaVersion": 1,
+  "updatedAt": 1780308075248
+}

@@ -1,0 +1,23 @@
+{
+  "createdAt": 1779077212176,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1779077212176",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Microsoft Presidio：开源敏感数据识别与匿名化框架\n\n## 一句话总结\n\n**Presidio 是微软开源的 PII（个人敏感信息）检测、脱敏、遮盖与匿名化框架**，可用于文本、图片和结构化数据，适合企业在 AI、数据分析、合规治理等场景中保护隐私数据。\n\n## 核心定位\n\nPresidio 的目标是帮助组织更简单、透明、可定制地处理敏感数据，降低隐私泄露风险。\n\n它可以识别并处理常见敏感信息，例如：\n\n- 姓名\n- 地址 / 地理位置\n- 电话号码\n- 信用卡号\n- 社保号\n- 金融数据\n- 比特币钱包地址\n- 医疗影像中的敏感信息等\n\n## 主要能力\n\n### 1. 敏感信息识别\n\nPresidio Analyzer 支持多种识别方式：\n\n- NLP 命名实体识别\n- 正则表达式\n- 规则逻辑\n- 校验和判断\n- 上下文感知识别\n- 多语言支持\n- 可接入外部 PII 检测模型\n\n这意味着它既能识别规则明确的数据，也能处理较复杂的自然语言场景。\n\n### 2. 数据匿名化与脱敏\n\nPresidio Anonymizer 可对识别出的敏感信息进行处理，例如：\n\n- 删除\n- 替换\n- 掩码\n- 加密或自定义匿名化策略\n\n适合用于日志清洗、数据集发布、AI 训练数据预处理等场景。\n\n### 3. 图片敏感信息遮盖\n\nPresidio Image Redactor 支持对图片中的敏感文本进行遮盖，包括：\n\n- 常规图片\n- DICOM 医疗影像\n\n这对医疗、保险、政务等行业尤其有价值。\n\n### 4. 结构化数据处理\n\nPresidio Structured 可处理表格、结构化数据中的敏感字段，适合数据仓库、BI、数据治理流程。\n\n## 产品与技术特点\n\n### 可插拔、可定制\n\nPresidio 强调扩展性，企业可以根据业务需要：\n\n- 自定义识别器\n- 自定义脱敏规则\n- 接入自有模型\n- 构建特定行业的数据保护流程\n\n### 多种部署方式\n\n支持：\n\n- Python\n- PySpark\n- Docker\n- Kubernetes\n- 源码部署\n\n适合从本地开发到生产级云原生部署。\n\n## 适用场景\n\nPresidio 特别适合以下场景：\n\n- AI 训练数据脱敏\n- 日志与客服记录清洗\n- 数据湖 / 数据仓库隐私治理\n- 医疗影像去标识化\n- 合规审计与数据共享\n- SaaS 产品中的用户隐私保护\n\n## 重要提醒\n\nPresidio 使用自动化检测机制，**不能保证识别出所有敏感信息**。\n\n因此，在高风险或强合规场景下，应结合：\n\n- 人工审核\n- 权限控制\n- 数据分类分级\n- DLP 系统\n- 加密与访问审计\n\n形成完整的数据安全体系。\n\n## 商业与产品价值\n\nPresidio 的价值不只是 “脱敏工具”，更像是企业隐私计算与数据治理链路中的基础组件。\n\n对于 AI 产品和数据产品来说，它可以帮助企业在以下两者之间取得平衡：\n\n- 数据可用性\n- 隐私与合规安全\n\n尤其在大模型应用、企业知识库、数据开放和跨团队数据协作中，Presidio 可以作为敏感数据进入系统前的 “安全网关”。\n\n## 总结\n\nPresidio 是一个成熟、开放、可扩展的敏感数据保护框架，覆盖文本、图片和结构化数据。它适合技术团队快速构建 PII 检测、脱敏和匿名化能力，也适合作为企业数据安全与 AI 合规基础设施的一部分。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1779077212176,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4b57ba7ea3a440ad6a9110123e430224bc7e17d28aea1ee01f3bc52b3ee83e3e",
+  "refs": {
+    "sessionId": "1779077212263_2qrctn79"
+  },
+  "revisionId": "sha256:0ac9e08aeb2af5aef1882faecf1915326f44949cc34134f94c532c95fdfbcda2",
+  "schemaVersion": 1,
+  "updatedAt": 1779077212176
+}

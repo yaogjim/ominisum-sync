@@ -1,0 +1,73 @@
+{
+  "createdAt": 1780380642888,
+  "entityType": "session",
+  "id": "1780380642888_jn4ed2pj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据自己的硬件、模型类型、上下文长度、并发量和服务目标建立推理引擎选型表",
+      "对候选引擎使用真实业务输入/输出分布进行基准测试，而不是引用通用排行榜",
+      "在部署前分别评估prefill、decode、KV缓存、并行方式和互联瓶颈",
+      "如果是生产服务，优先测试vLLM或SGLang；如果是NVIDIA高端集群，再加入TensorRT-LLM和Dynamo对比"
+    ],
+    "archiveReason": "提供了较完整的推理引擎分类、硬件匹配策略、基准测试指标和常见误区，具备较高复用价值",
+    "classifiedAt": 1780380939775,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "LLM推理引擎选型指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "LLM推理主要分为prefill和decode两个阶段，前者偏计算密集，后者更受内存带宽限制",
+      "显存容量决定模型能否装下，内存带宽和调度器质量决定实际解码速度和服务表现",
+      "llama.cpp适合可移植、本地、边缘和混合卸载场景，不适合严肃多节点生产服务",
+      "vLLM是开源生产服务的默认起点，SGLang更适合长上下文、MoE、结构化输出和复杂路由场景",
+      "TensorRT-LLM适合深度绑定NVIDIA数据中心并追求极致性能的场景",
+      "基准测试应关注TTFT、TPOT、p95/p99、并发、上下文长度、KV缓存命中率和成本，而不是单用户tok/s"
+    ],
+    "oneHighValuePoint": "不要先选推理引擎，而应先明确硬件策略、工作负载形态、服务模型和瓶颈，再让引擎选择自然浮现。",
+    "oneLineReview": "一篇面向LLM推理部署的高价值选型地图，实践指导性强，但证据主要依赖经验总结而非系统数据。",
+    "primaryCategory": "AI基础设施",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为LLM推理引擎和硬件策略选型的参考清单",
+    "secondaryCategories": [
+      "LLM推理",
+      "本地AI硬件"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统梳理了LLM推理引擎的选型逻辑，强调应先确定硬件、工作负载和服务模型，再选择llama.cpp、MLX、ExLlama、vLLM、SGLang、TensorRT-LLM等工具，并给出基准测试指标和常见误区。",
+    "tags": [
+      "推理引擎",
+      "vLLM",
+      "SGLang",
+      "TensorRT-LLM",
+      "llama.cpp",
+      "硬件选型",
+      "基准测试"
+    ],
+    "title": "LLM 的推理引擎及本地 AI 硬件（2026 年版）",
+    "totalScore": 76,
+    "url": "https://x.com/TheAhmadOsman/status/2057183854444843202"
+  },
+  "payloadHash": "sha256:cc6aa32d5679dcc4e1c1547dafeb1aa9072b604336a7688c6362c99f21ee1db8",
+  "refs": {},
+  "revisionId": "sha256:5a09bb259f5439bed6109590692502ced36d57e19bf77d9d31603c0dbfd6284e",
+  "schemaVersion": 1,
+  "updatedAt": 1780384467739
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780891730467,
+  "entityType": "session",
+  "id": "1780891730467_3b7qdh53",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需研究 Claude Design，可抓取 HAR 并检查请求中的二进制 payload。",
+      "在客户端 JS bundle 中搜索 protobuf schema 或相关消息定义。",
+      "等待或查找作者是否发布完整工具或技术文章。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780892298607,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Design协议解析线索",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "HAR 文件可作为分析前端与服务端通信内容的入口。",
+      "protobuf 协议若缺少 schema 难以直接解析，但前端客户端代码中可能包含可用 schema。",
+      "Claude Design 的请求 Prompt 可通过解析二进制通信内容进行观察。"
+    ],
+    "oneHighValuePoint": "Claude Design 与服务器通信并非 JSON，而是 protobuf，schema 可能隐藏在客户端 JS 中，可用于协议分析。",
+    "oneLineReview": "有一定技术线索价值，但信息过短，更像研究提示而非可复用教程。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容主要是简短动态和工具展示，缺少完整实现细节、代码链接、方法步骤和系统性分析。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "逆向工程",
+      "Prompt工程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者提到为研究 Claude Design 编写了一个工具，可解析 HAR 文件并解密其传输的二进制内容，从而查看请求 Prompt。回复中补充其通信协议使用 protobuf，schema 可从客户端 JS 中寻找。",
+    "tags": [
+      "Claude Design",
+      "HAR解析",
+      "Protocol Buffers",
+      "Cursor",
+      "Prompt分析"
+    ],
+    "title": "宝玉: 最近为了研究 Claude Design，专门写了一个工具，可以解析 HAR 文件，解密 Claude Design 传输的二进制内容，这样可以方便的看到请求的…",
+    "totalScore": 45.5,
+    "url": "https://x.com/dotey/status/2063475943402872982"
+  },
+  "payloadHash": "sha256:534296a5603feea538c31f65c496c200cc880b6ef4312e9f541993d6591801f6",
+  "refs": {},
+  "revisionId": "sha256:dfb0bbe0e76fcdda65d3a4dff6a2ac708af5b9a8805d54007453d27c42114202",
+  "schemaVersion": 1,
+  "updatedAt": 1780892299188
+}

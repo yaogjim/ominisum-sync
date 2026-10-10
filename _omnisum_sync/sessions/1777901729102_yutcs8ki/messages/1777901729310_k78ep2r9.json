@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777901653815,
+  "entityType": "message",
+  "id": "1777901729310_k78ep2r9",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# CodeAny：用 Go 重构 Claude Code 逻辑，尝试复刻其能力\n\n## 核心内容\n\n作者表示，昨晚让 Claude Code 分析其 sourcemap，并将其中的 **CLI 和 UI 逻辑抽离出来**，再用 **Go 语言重构**，同时引入 `open-agent-sdk-go` 作为核心引擎。\n\n第二天早上验收时发现，新的项目 **CodeAny** 已经基本完成，功能较完整，运行多个测试场景后效果不错，速度也很快。\n\n## CodeAny 是什么\n\nCodeAny 是一个开源项目，目标是复刻或替代 Claude Code 的部分能力。\n\n项目地址：  \nhttps://github.com/codeany-ai/codeany\n\n从作者描述看，它具备以下方向的能力：\n\n- CLI 交互\n- UI 逻辑\n- 联网搜索\n- 自动调用工具\n- MCP 支持\n- 自定义 skills 完成任务\n- 接近 Claude Code 的使用体验\n\n## 作者的判断\n\n作者认为：\n\n> Claude Code 能做的，CodeAny 理论上基本也能做。\n\n原因是 CodeAny 的逻辑来自对 Claude Code sourcemap 的分析与重构，因此理论上可以继续复刻 Claude Code 的更多功能。\n\n不过作者也提到，目前只是跑了几个简单 case，还没有进行完整测试。\n\n## 额外进展\n\n作者还表示，Claude Code 自动帮他生成了多个语言版本的 Open Agent SDK，包括：\n\n- Python\n- Rust\n- Go\n- TypeScript\n\n作者感叹“只是睡了一觉，Claude Code 自动干完这么多活”，体现出 AI 编程代理在自动化开发中的效率。\n\n## 评论区关注点\n\n评论区主要关注几个问题：\n\n- 为什么不用 Claude Code，而要用 CodeAny？\n- CodeAny 具体支持哪些功能？\n- 是否支持 hook、session 管理、权限配置等高级能力？\n\n这些问题说明，CodeAny 是否能真正替代 Claude Code，还取决于后续功能完整度、稳定性和工程体验。\n\n## 一句话总结\n\nCodeAny 是作者基于 Claude Code 逻辑重构出的开源 AI 编程代理，初步测试显示功能完整、速度快，目标是复刻 Claude Code 的核心体验，并可能成为其开源替代方案。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777901653815,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:15aa18ecaeb1c3c4132dbcf4081de1fe6bfeae89b301b559a1aba44f1d416824",
+  "refs": {
+    "sessionId": "1777901729102_yutcs8ki"
+  },
+  "revisionId": "sha256:6508785d1cb1570967087d19cfaab70bb09b740499eed06b3af586af6470748b",
+  "schemaVersion": 1,
+  "updatedAt": 1777901653815
+}

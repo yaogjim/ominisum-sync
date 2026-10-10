@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773557941750,
+  "entityType": "session",
+  "id": "1773557941750_aj09bdos",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如对求职自动化感兴趣，可查看其GitHub仓库评估真实可用性与合规风险",
+      "重点关注该工具的接口设计、JSON输出规范和反风控实现是否可复用"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773829608201,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 1,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 5,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI驱动求职CLI工具推广",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "CLI工具可作为招聘平台自动化操作的接口层",
+      "面向AI Agent的JSON schema输出能提升自动化可控性"
+    ],
+    "oneHighValuePoint": "将招聘网站操作封装为CLI并提供结构化JSON输出，便于AI Agent自动调用。",
+    "oneLineReview": "有一点工具新意，但基本停留在功能罗列和营销层面，参考价值有限。",
+    "primaryCategory": "AI工具",
+    "rating": "D",
+    "rejectReason": "内容更像产品宣传帖，缺少实现细节、效果验证和方法沉淀，信息噪声高于有效信息。",
+    "retentionDecision": "低优先级，可短期参考后删除",
+    "secondaryCategories": [
+      "求职自动化",
+      "CLI应用"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章简要介绍了一个面向BOSS直聘的CLI工具，支持职位搜索、批量打招呼、CSV导出、Cookie提取及AI全程操作等功能，但整体以宣传为主，缺乏演示数据、使用流程、风险说明和实际效果验证。",
+    "tags": [
+      "CLI",
+      "AI Agent",
+      "求职工具",
+      "自动投递",
+      "BOSS直聘"
+    ],
+    "title": "卡比卡比: CLI 宇宙继续",
+    "totalScore": 31.5,
+    "url": "https://x.com/jakevin7/status/2032687003649585343"
+  },
+  "payloadHash": "sha256:48a7b1cd45953709ab570e4045fd9b5ff5a86b4a7df6aead7ac96f6ec522960f",
+  "refs": {},
+  "revisionId": "sha256:bb7049109803677782d06d0220a386ca4dd6e9a7a1ae37d0cca2cd13f47b09e6",
+  "schemaVersion": 1,
+  "updatedAt": 1773829608205
+}

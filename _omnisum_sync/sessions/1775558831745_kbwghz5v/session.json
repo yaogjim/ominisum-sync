@@ -1,0 +1,66 @@
+{
+  "createdAt": 1775558831745,
+  "entityType": "session",
+  "id": "1775558831745_kbwghz5v",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用自己的智能体项目梳理一次 model、harness、context 三层职责边界",
+      "检查当前系统是否完整记录 traces，并评估其是否支持后续优化闭环"
+    ],
+    "archiveReason": "提出了模型、harness、context 三层持续学习框架，便于后续搭建个人知识地图",
+    "classifiedAt": 1775558851827,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI智能体持续学习三层框架",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "智能体持续学习可分为模型权重更新、harness 优化、context 记忆更新三个层面",
+      "traces 是三类持续学习的共同数据基础，可用于训练、评估、代码修改和记忆提炼",
+      "context 学习既可离线进行，也可在热路径中动态更新，并可按 agent、用户、组织多层配置"
+    ],
+    "oneHighValuePoint": "最有价值的是把“持续学习”从单一的模型训练问题，扩展为模型、运行框架和上下文记忆三层协同优化问题。",
+    "oneLineReview": "框架感很强，但更像高质量观点帖，离可验证的方法论和实证材料还有距离。",
+    "primaryCategory": "AI智能体",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "可归档留存，作为理解智能体持续学习分层设计的概念索引，后续结合论文或文档补强细节",
+    "secondaryCategories": [
+      "持续学习",
+      "系统设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将 AI 智能体的持续学习拆分为模型、harness 与 context 三层，强调 traces 是三类优化的共同基础。价值主要在概念框架清晰，便于系统化理解，但证据与落地细节较少，更适合作为思路引子而非实操指南。",
+    "tags": [
+      "Agent",
+      "Continual Learning",
+      "Model-Harness-Context",
+      "Memory",
+      "Traces"
+    ],
+    "title": "AI 智能体的持续学习",
+    "totalScore": 65,
+    "url": "https://x.com/hwchase17/status/2040467997022884194"
+  },
+  "payloadHash": "sha256:ebbe032ca9302ee3054293d1ad19f340c7dacd176064345c6b18c9d106c14d62",
+  "refs": {},
+  "revisionId": "sha256:c610b0244a96cbb15a1e2cff7aae9bac62a1fc84e10986512492ce06e4f3f045",
+  "schemaVersion": 1,
+  "updatedAt": 1775637499847
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780308503974,
+  "entityType": "session",
+  "id": "1780308503974_9529d56a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确有 Agent 搜索需求，可查看 AnySearch GitHub 或官方文档验证功能。",
+      "在实际采用前，与现有搜索 API 在数据源覆盖、价格、稳定性和隐私条款上做对比测试。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780308608290,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AnySearch工具功能速览",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "主要是产品卖点罗列，证据不足，长期参考价值较低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AnySearch 主打面向 AI Agent 工作流的搜索 API 集成。",
+      "其声称支持财经、论文、食品成分等多个独有或垂直数据源。",
+      "智能路由可根据领域、子类别、内容类型和地区匹配搜索源。",
+      "RRF 算法用于融合多源结果，提高结果命中质量。"
+    ],
+    "oneHighValuePoint": "AnySearch 通过语义理解和多维匹配自动路由到合适数据源，可降低手动接入多个垂直数据库的成本。",
+    "oneLineReview": "适合快速了解一个新搜索工具，但不足以作为深入决策依据。",
+    "primaryCategory": "AI工具",
+    "rating": "D",
+    "rejectReason": "内容偏推广，信息较碎片化，缺少实际测试过程、对比数据和可复用方法论。",
+    "retentionDecision": "记录工具名和核心卖点后可删除",
+    "secondaryCategories": [
+      "搜索工具",
+      "AI Agent"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章介绍 AnySearch 作为面向 AI Agent 的搜索工具，强调匿名使用、零遥测、多数据源、工作流集成、智能路由和 RRF 排序，并列举股票巡检、论文解读、食品成分检测等应用场景。",
+    "tags": [
+      "AnySearch",
+      "AI Agent",
+      "搜索API",
+      "智能路由",
+      "数据源"
+    ],
+    "title": "黄赟: 分享一个为 AI Agent 而生的搜索工具 —— AnySearch 打动我的有这么 5个小点： 1/ 匿名都能用，零遥测，零蒸馏 2/ 多个独有数据源，一个…",
+    "totalScore": 37,
+    "url": "https://x.com/huangyun_122/status/2059282668890816718"
+  },
+  "payloadHash": "sha256:f18592c5452b5e38752123b8d76cbf1ff45984534c30e104b523acb2091a1929",
+  "refs": {},
+  "revisionId": "sha256:f28fb059cf61b9636f08098e696552d61e358e6d880a4e159752fef93cd5fc2c",
+  "schemaVersion": 1,
+  "updatedAt": 1780308608785
+}

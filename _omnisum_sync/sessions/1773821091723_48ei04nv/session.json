@@ -1,0 +1,63 @@
+{
+  "createdAt": 1773821091723,
+  "entityType": "session",
+  "id": "1773821091723_48ei04nv",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果对该产品感兴趣，优先查找其文档、CLI示例或真实用户案例，而不是依赖官网宣传页判断价值。",
+      "将“先写brief再交给AI编码代理”的做法纳入自己的AI协作流程做小规模验证。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773829142861,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Hamster产品官网宣传页评估",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息密度低、证据薄弱、可操作性差，主要是官网文案，难以形成稳定知识沉淀。",
+    "domain": "tryhamster.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "AI代理执行开发前，需要结构化brief承载目标、约束、上下文和团队决策。",
+      "产品需求与任务规划可通过与Jira、Linear、GitHub等工具联动实现同步。"
+    ],
+    "oneHighValuePoint": "强调“先形成高质量brief，再让AI代理执行”，点出了AI开发中上下文与约束管理的重要性。",
+    "oneLineReview": "概念有一定吸引力，但本质上是营销页，不足以支撑深入学习或决策参考。",
+    "primaryCategory": "AI产品与团队协作",
+    "rating": "D",
+    "rejectReason": "内容以营销宣传为主，缺乏具体机制、案例拆解和可验证细节，阅读收益较低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "产品管理",
+      "AI开发工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一篇Hamster产品官网介绍，核心主张是用AI生成需求brief和任务计划，让团队聚焦方向对齐，由AI代理执行开发工作，并与GitHub、Notion、Linear、Jira等工具联动。但全文偏宣传，缺少真实案例、方法细节和实证支持。",
+    "tags": [
+      "AI原生交付",
+      "产品需求简报",
+      "代理式开发"
+    ],
+    "title": "Hamster - let AI run the wheel | Hamster",
+    "totalScore": 31.5,
+    "url": "https://tryhamster.com/"
+  },
+  "payloadHash": "sha256:570f77b39e632464f33915aab9226b68f297f73592da339bfa49f75677615d4a",
+  "refs": {},
+  "revisionId": "sha256:d6917150cba80ac3eee2a73c8bc727481bd80037e5728934b27cb2ecfb4202f6",
+  "schemaVersion": 1,
+  "updatedAt": 1773829142863
+}

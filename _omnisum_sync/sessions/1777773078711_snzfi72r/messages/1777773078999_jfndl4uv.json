@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773078999_jfndl4uv",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 为什么 LLM Wiki 模式不适合自主 Agent？\n\n## 核心观点\n\nKarpathy 提出的 **LLM Wiki / 第二大脑模式**，非常适合人类与 AI 协作：  \n它把知识沉淀成可阅读、可编辑、可迭代的文档，解决了“人和 AI 都会遗忘”的问题。\n\n但这个模式并不适合 **长期自主运行的 Agent**。\n\n---\n\n## 为什么对人有效，对 Agent 低效？\n\n### 1. 人类需要“整页阅读”，Agent 只需要“精准事实”\n\n人类看 Wiki，可以浏览整篇内容、理解上下文、手动筛选重点。  \n但 Agent 在执行任务时，往往只需要：\n\n- 一个事实\n- 一个状态\n- 一个用户偏好\n- 一个历史决策结果\n\n整页 Markdown 对 Agent 来说信息密度太低。\n\n---\n\n### 2. 无关 Token 会增加成本和幻觉风险\n\n人类多读一点无关内容问题不大。  \n但 Agent 每多读取 100 个无关 token，都会带来：\n\n- 更高推理成本\n- 更长上下文\n- 更大干扰\n- 更高幻觉概率\n\n对机器而言，“优雅的长文档”可能是结构性浪费。\n\n---\n\n### 3. Agent 的记忆写入频率远高于人类\n\n人类只是偶尔更新笔记。  \n但 Agent 每次：\n\n- 做决策\n- 调用工具\n- 更新状态\n- 学到用户偏好\n\n都可能需要写入记忆。\n\n如果仍然用 Wiki 文档承载所有记忆，系统会迅速变得臃肿、混乱、难检索。\n\n---\n\n## 最大隐患：记忆漂移\n\n长期运行的 Agent 还会面临“记忆漂移”问题。\n\n人类会自然过滤旧信息，知道哪些内容已经过时。  \n但 Agent 可能把旧笔记和新信息放在同等权重下处理。\n\n结果是：\n\n- 时间越久，记忆越混乱\n- 旧偏好干扰新偏好\n- 历史状态污染当前判断\n- Agent 变得“不听话”或不稳定\n\n这是长时 Agent 的核心挑战之一。\n\n---\n\n## 未来方向：分层记忆系统\n\n下一代 Agent 的记忆不应该只是一堆 Markdown 文档，而应该是分层结构：\n\n### 面向人类：Markdown\n\n用于：\n\n- 阅读\n- 编辑\n- 审查\n- 知识沉淀\n- 人机协作\n\n### 面向机器：结构化内存\n\n用于：\n\n- 快速检索\n- 精准调用\n- 状态管理\n- 偏好记录\n- 决策追踪\n- 自动更新和遗忘\n\n---\n\n## 一句话总结\n\n**LLM Wiki 是给人类看的第二大脑，而不是给自主 Agent 用的长期记忆系统。**\n\n真正可靠的长期 Agent，需要的是：\n\n> 人类可读的 Markdown + 机器高效调用的结构化记忆 + 防止记忆漂移的更新机制。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ad8c497193a5cef91d90ce5767fddf42a17044b7719aa2a7d992293f99c2d3c9",
+  "refs": {
+    "sessionId": "1777773078711_snzfi72r"
+  },
+  "revisionId": "sha256:ea6d1ff97053a77b9079cf5de7f42486bd133e2a123a519866c0b006620bfd24",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

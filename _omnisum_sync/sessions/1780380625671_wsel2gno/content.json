@@ -1,0 +1,15 @@
+{
+  "createdAt": 1780380625671,
+  "entityType": "session-content",
+  "id": "1780380625671_wsel2gno",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>宝玉</strong></header><div class=\"tw-body\">Codex 使用技巧：Steer 和 Queue<br><br>通常 Agent 执行一个任务不会马上结束，可能会要等几分钟甚至更久，如果这时候你有个新的要求想补充，这里有两种方式补充：Steer（任务干预） 和 Queue（排队）。<br><br>> Steer（快捷键：Shift + Enter）：在当前任务还没完成时，中途打断 Codex 并给它指引新的方向。<br><br>这个功能相当于你按停止，输入新指令然后再让 Agent 继续。但不需要你去手动停止再让它继续，只要输入指令，按 Shift + 回车，或者先回车，在点击“Steer”按钮就可以发送。Agent 会在下一轮工具调用间隙直接添加新的指令到上下文。<br><br>> Queue（快捷键：Enter）：在 Codex 完成当前步骤后，给它安排接下来的活儿。<br><br>任务排队就不太一样了。它不会打断正在进行的任务，而是把新任务排在队伍后面。而且你提交多条信息，它在任务结束后，不会一次性把你队列的消息执行，而是执行一条，完成这一条对应的任务后，继续下一条。<br><br>所以有时候我睡觉前，会在一个长任务后面加上几个 “Continue” 消息到队列，让它尽可能多跑一会，免得中间就停止了。<br><br>简单来说，“Steer”是改变 Codex 眼下正在做的事，而“Queue”是安排它接下来要做的事。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HIzEsa9WoAAe8WY?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@宝玉</strong> <span class=\"tw-eng\">♥ 7 · 💬 1</span><p>勘误：<br>> Codex 中 Steer（引导） 的快捷键为：Ctrl + 回车（Mac 系统为 Command + 回车）。</p></div><div class=\"tw-reply\"><strong>@SoLivemore</strong> <span class=\"tw-eng\">♥ 3 · 💬 1</span><p>mac 好像是cmd 加enter</p></div><div class=\"tw-reply\"><strong>@实践哥MinLi</strong> <span class=\"tw-eng\">♥ 5 · 💬 0</span><p>睡觉前打6个继续不要停，持续推进，我也经常这么做</p></div><div class=\"tw-reply\"><strong>@BTCOW</strong> <span class=\"tw-eng\">♥ 2 · 💬 1</span><p>有时候觉得 ，大博主现在都转AI全自动运营了，有些文章也没有经过特别的调教，哎，读起来一股机翻味，感觉不是给人读的给ai 读的</p></div><div class=\"tw-reply\"><strong>@Yan</strong> <span class=\"tw-eng\">♥ 3 · 💬 0</span><p>「加上几个 “Continue” 消息」应该等价于一个。在我的 agent 实现中，是把 follow up 队列中的消息全部拉出来一起提交，而不是逐个提交</p></div></div>",
+    "pageContent": "宝玉: Codex 使用技巧：Steer 和 Queue 通常 Agent 执行一个任务不会马上结束，可能会要等几分钟甚至更久，如果这时候你有个新的要求想补充，这里有两种方式补充：Steer（任务干预） 和 Queue（排队）。 > Steer（快捷键：Shift + Enter）：在当前任务还没完成时，中途打断 Codex 并给它指引新的方向。 这个功能相当于你按停止，输入新指令然后再让 Agent 继续。但不需要你去手动停止再让它继续，只要输入指令，按 Shift + 回车，或者先回车，在点击“Steer”按钮就可以发送。Agent 会在下一轮工具调用间隙直接添加新的指令到上下文。 > Queue（快捷键：Enter）：在 Codex 完成当前步骤后，给它安排接下来的活儿。 任务排队就不太一样了。它不会打断正在进行的任务，而是把新任务排在队伍后面。而且你提交多条信息，它在任务结束后，不会一次性把你队列的消息执行，而是执行一条，完成这一条对应的任务后，继续下一条。 所以有时候我睡觉前，会在一个长任务后面加上几个 “Continue” 消息到队列，让它尽可能多跑一会，免得中间就停止了。 简单来说，“Steer”是改变 Codex 眼下正在做的事，而“Queue”是安排它接下来要做的事。\n![图片](https://pbs.twimg.com/media/HIzEsa9WoAAe8WY?format=jpg&name=large)\n---\n热门回复 (共 5 条):\n@宝玉 (♥ 7 · 💬 1):\n勘误：\n> Codex 中 Steer（引导） 的快捷键为：Ctrl + 回车（Mac 系统为 Command + 回车）。\n\n@SoLivemore (♥ 3 · 💬 1):\nmac 好像是cmd 加enter\n\n@实践哥MinLi (♥ 5 · 💬 0):\n睡觉前打6个继续不要停，持续推进，我也经常这么做\n\n@BTCOW (♥ 2 · 💬 1):\n有时候觉得 ，大博主现在都转AI全自动运营了，有些文章也没有经过特别的调教，哎，读起来一股机翻味，感觉不是给人读的给ai 读的\n\n@Yan (♥ 3 · 💬 0):\n「加上几个 “Continue” 消息」应该等价于一个。在我的 agent 实现中，是把 follow up 队列中的消息全部拉出来一起提交，而不是逐个提交\n"
+  },
+  "payloadHash": "sha256:abcf099522259b2c3f87c9230530e070af56698364083209dca76fba2e3594dd",
+  "refs": {},
+  "revisionId": "sha256:f1470c8878492ed92e78a079008345d729b8fdec4bfc10f17c8be49902ddcdee",
+  "schemaVersion": 1,
+  "updatedAt": 1780384674997
+}

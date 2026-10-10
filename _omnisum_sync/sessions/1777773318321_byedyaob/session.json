@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777773318321,
+  "entityType": "session",
+  "id": "1777773318321_byedyaob",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "打开 GitHub 仓库查看安装方式、支持的 Agent 类型和使用门槛",
+      "在测试项目中试用 git worktree 多Agent并行开发流程，评估是否适合现有开发工作流"
+    ],
+    "archiveReason": "提供了一个值得试用的多Agent编排开发工具入口，适合作为工具备选清单保存",
+    "classifiedAt": 1777773847504,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Kandev多Agent编排工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Kandev 支持通过 ACP 协议接入多个 AI Agent，并在流水线不同步骤指定不同 Agent",
+      "工具内置看板、终端、编辑器、git 面板和浏览器预览，支持本地进程、Docker 和远程执行"
+    ],
+    "oneHighValuePoint": "用 git worktree 隔离多个 Agent 的代码变更，便于人类并行审查和调度任务。",
+    "oneLineReview": "这是一个有实用价值的AI开发工具线索，但内容偏简短，缺少实际评测和案例支撑。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考，适合在需要多Agent协作开发环境时回看",
+    "secondaryCategories": [
+      "多Agent编排",
+      "软件工程效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了 Kandev，一个运行在服务器上的多 AI Agent 编排工具，支持 Claude Code、Codex、Copilot、Gemini 等 Agent，通过看板、流水线、子任务和 git worktree 实现并行开发与隔离。",
+    "tags": [
+      "Kandev",
+      "AI Agent",
+      "Claude Code",
+      "Codex",
+      "Git Worktree"
+    ],
+    "title": "Geek Lite: 提供一个多 Agent 编排的看板与开发环境，让人类在审查变更的同时并行调度多个 AI Agent 执行任务",
+    "totalScore": 57.5,
+    "url": "https://x.com/QingQ77/status/2050204843470639264"
+  },
+  "payloadHash": "sha256:a93dedeebd830e90a026f2693096e2bf249ea26e2b5f0f61c3ac20ddee8066ce",
+  "refs": {},
+  "revisionId": "sha256:900eb2154c2636021dfbdd0ffca908837377fc6453f0baedc392e9d80da60152",
+  "schemaVersion": 1,
+  "updatedAt": 1777774360410
+}

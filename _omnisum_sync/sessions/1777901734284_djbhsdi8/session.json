@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777901734284,
+  "entityType": "session",
+  "id": "1777901734284_djbhsdi8",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注 AI 编程工具，可直接查看 Codeany 和 open-agent-sdk 仓库",
+      "若要评估实用性，应补充测试成本、token 消耗、生成质量和可维护性"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777902012919,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codeany自动重构体验",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量较低，证据不足，除几个项目链接外缺乏可沉淀的方法论或操作指南。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Claude Code 可被用于较复杂的代码分析、重构和多语言 SDK 生成任务",
+      "Codeany 似乎基于 open-agent-sdk-go 构建，并提供 Python、Rust、Go、TypeScript SDK"
+    ],
+    "oneHighValuePoint": "提示了 open-agent-sdk 的多语言实现及 Codeany 这个潜在可关注项目。",
+    "oneLineReview": "适合作为工具动态速览，不值得长期保存。",
+    "primaryCategory": "AI编程工具",
+    "rating": "D",
+    "rejectReason": "内容主要是个人体验分享，缺少实现细节、成本数据、复现步骤和系统性评测，长期参考价值较低。",
+    "retentionDecision": "短期了解后建议删除",
+    "secondaryCategories": [
+      "代码生成",
+      "开发者工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "作者称使用 Claude Code 分析 sourcemap，并将 CLI 与 UI 逻辑抽出用 Go 重构，引入 open-agent-sdk-go，生成了 Codeany 及多个语言版本 SDK。内容偏个人体验，缺少详细过程与评测。",
+    "tags": [
+      "Claude Code",
+      "Codeany",
+      "SDK",
+      "AI Agent",
+      "代码重构"
+    ],
+    "title": "idoubi: 还帮我写了四个语言版本的 SDK👇 https://t",
+    "totalScore": 32.5,
+    "url": "https://x.com/idoubicc/status/2039538966131785852"
+  },
+  "payloadHash": "sha256:1e060bd506f329daf899dfce96801e7d98e8f7dfd087379c33255fc5494dcf0a",
+  "refs": {},
+  "revisionId": "sha256:b5f45b45054dee5b9a3b65deb75acea43e4325721d8552720b3641bafe737891",
+  "schemaVersion": 1,
+  "updatedAt": 1777902611459
+}

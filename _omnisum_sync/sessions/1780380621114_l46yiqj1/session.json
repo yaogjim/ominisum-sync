@@ -1,0 +1,71 @@
+{
+  "createdAt": 1780380621114,
+  "entityType": "session",
+  "id": "1780380621114_l46yiqj1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理自己每周重复使用的 AI 工作流，挑选 2-3 个高频流程尝试封装为技能包。",
+      "为常用写作、代码审查、研究或运营流程整理固定上下文、检查清单和输出规范。",
+      "验证 Hermes Agent 的安装、技能创建和 bundle 调用流程是否适合现有工作环境。",
+      "将可复用的工作流配置纳入版本管理，便于迭代和团队共享。"
+    ],
+    "archiveReason": "提供了将重复 AI 工作流封装为技能包和斜杠命令的实用思路，可作为构建个人 Agent 工作流库的参考。",
+    "classifiedAt": 1780380912975,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Hermes技能包工作流",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Hermes 技能是按需加载的 Markdown 文件，可通过斜杠命令调用，减少无关上下文占用。",
+      "技能包是 YAML 文件，可将多个技能和固定指令组合成一个复合工作流。",
+      "重复超过两次的 AI 工作流程适合封装为 bundle，以降低设置成本。",
+      "技能包可放入 dotfiles 或团队仓库，实现个人流程和团队流程的分发复用。",
+      "文章认为未来 AI Agent 的竞争点之一是个人斜杠命令库，而不只是模型能力。"
+    ],
+    "oneHighValuePoint": "把重复执行的 AI 协作流程封装成可调用的斜杠命令，使个人工作方式变成可复用、可迁移的工作流接口。",
+    "oneLineReview": "有较强启发和实操价值，但论证偏营销化，需自行验证工具成熟度与实际收益。",
+    "primaryCategory": "AI工作流与智能体",
+    "rating": "B",
+    "rejectReason": "文章主要是观点型推广内容，证据质量较弱，缺少实际性能对比、用户案例数据和局限性分析。",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "提示词工程",
+      "个人知识管理",
+      "自动化工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Hermes Agent 的技能包机制：用简短 YAML 将多个技能和固定指令组合为一个斜杠命令，以减少重复粘贴上下文的设置成本，并将个人或团队工作流封装、复用和分发。",
+    "tags": [
+      "AI Agent",
+      "Hermes",
+      "技能包",
+      "YAML",
+      "工作流自动化"
+    ],
+    "title": "AI 智能体领域的下一个重大突破是一个 12 行的 YAML 文件（技能包）",
+    "totalScore": 66.5,
+    "url": "https://x.com/AntoineRSX/status/2057346702412243323"
+  },
+  "payloadHash": "sha256:addfd6d682e047592ef15d854632da8e3699df34a08a068c4d2f599167417cb3",
+  "refs": {},
+  "revisionId": "sha256:937213599b1a82621789dc4b82c04e63eb344043f9eae7a2dce2a4274bb54d65",
+  "schemaVersion": 1,
+  "updatedAt": 1780384628909
+}

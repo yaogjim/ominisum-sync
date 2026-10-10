@@ -1,0 +1,15 @@
+{
+  "createdAt": 1776830784698,
+  "entityType": "session-content",
+  "id": "1776830784698_b4bu4m1u",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Leo</strong></header><div class=\"tw-body\">过去这一周 CF 基本把 agent 生态补齐了——Agents SDK v2、Agent Memory（managed context 外挂）、Browser Run（agent 级浏览器 + human in the loop）、AI Gateway（14 家 provider 统一接入）、Registrar API 让 agent 自己注册域名，还成了 OpenAI 新 Agents SDK 的 sandbox partner。<br><br>这已经不是\"替 agent 省 token\"，是把 agent 运行时栈（记忆/浏览/推理/动作）全做齐了。<br><br>今天顺手把剩的 3 个 Vercel project 全删了——昨晚供应链事件之后彻底清理。我的几个在跑的项目早就迁 CF Pages 了。Worker + R2 + D1 对\"一个人维护多项目\"的场景太合适：免费额度吃不满，冷启动快，配置少。<br><br>唯一没 all in 的是数据库。策略相关的还在自建 PG——真钱系统最烦多一层不可控依赖。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HGZ_YGAaAAAXLEv?format=jpg&name=large\" alt=\"图片\" /></div><blockquote class=\"tw-quote\"><strong>@runes_leo</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\">AI 读网页时，大量 token 浪费在导航栏、广告、脚本这些\"包装\"上，真正有用的内容可能只占 20%。            \n                                                                                \nCloudflare 现在可以在源头把网页转成干净文本直接喂给 AI，省 80% token。 x.com/Cloudflare/sta…</span></p></blockquote></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@alvin617.eth</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>agent week 沒白搭，他們確實支援得很快</p></div><div class=\"tw-reply\"><strong>@柯里昂Kleon</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>有什么bug吗？准备新项目往赛博菩萨上迁了</p></div><div class=\"tw-reply\"><strong>@Suresh</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>拥有 14 个提供商的 AI 网关听起来不错，直到某个提供商把工具格式弄得有点奇怪，对吧</p></div></div>",
+    "pageContent": "Leo: 过去这一周 CF 基本把 agent 生态补齐了——Agents SDK v2、Agent Memory（managed context 外挂）、Browser Run（agent 级浏览器 + human in the loop）、AI Gateway（14 家 provider 统一接入）、Registrar API 让 agent 自己注册域名，还成了 OpenAI 新 Agents SDK 的 sandbox partner。 这已经不是\"替 agent 省 token\"，是把 agent 运行时栈（记忆/浏览/推理/动作）全做齐了。 今天顺手把剩的 3 个 Vercel project 全删了——昨晚供应链事件之后彻底清理。我的几个在跑的项目早就迁 CF Pages 了。Worker + R2 + D1 对\"一个人维护多项目\"的场景太合适：免费额度吃不满，冷启动快，配置少。 唯一没 all in 的是数据库。策略相关的还在自建 PG——真钱系统最烦多一层不可控依赖。\n![图片](https://pbs.twimg.com/media/HGZ_YGAaAAAXLEv?format=jpg&name=large)\n引用推文 (@runes_leo):\nAI 读网页时，大量 token 浪费在导航栏、广告、脚本这些\"包装\"上，真正有用的内容可能只占 20%。 Cloudflare 现在可以在源头把网页转成干净文本直接喂给 AI，省 80% token。 x.com/Cloudflare/sta…\n---\n热门回复 (共 3 条):\n@alvin617.eth (♥ 1 · 💬 1):\nagent week 沒白搭，他們確實支援得很快\n\n@柯里昂Kleon (♥ 0 · 💬 0):\n有什么bug吗？准备新项目往赛博菩萨上迁了\n\n@Suresh (♥ 0 · 💬 0):\n拥有 14 个提供商的 AI 网关听起来不错，直到某个提供商把工具格式弄得有点奇怪，对吧\n"
+  },
+  "payloadHash": "sha256:954d9db79d880add3a0db62a516c922eb098dcd26eda948235f6783f3e895d25",
+  "refs": {},
+  "revisionId": "sha256:954fdeeebf6866d771623900011a4d0221e194935516d7fa42c0f26f55711428",
+  "schemaVersion": 1,
+  "updatedAt": 1776830926672
+}

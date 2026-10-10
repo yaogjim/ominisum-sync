@@ -1,0 +1,71 @@
+{
+  "createdAt": 1773557243843,
+  "entityType": "session",
+  "id": "1773557243843_nurc9uxu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "优先查看 01 安装指南、04 MCP 集成、05 Hooks 系统，判断 Claude Code 是否适合你的开发流",
+      "如果关注个人自动化，先按 OpenClaw 的 OC-02、OC-03、OC-04 路线快速跑通最小闭环",
+      "对 README 中宣称的版本、功能覆盖和“源码验证”说法，进入具体文档抽样核实",
+      "将其作为索引收藏，而不是把 README 本身当作完整知识来源"
+    ],
+    "archiveReason": "内容覆盖安装、配置、进阶功能与学习路径，适合作为工具上手和查阅索引",
+    "classifiedAt": 1773829652981,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "Claude与OpenClaw双教程总览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Claude Code 教程覆盖安装、基础使用、MCP、Hooks、Subagent、Skills、Plugins、Agent-SDK 与综合实战",
+      "OpenClaw 教程覆盖安装、模型接入、消息平台、技能系统、记忆系统、多 Agent、Docker 与安全配置",
+      "仓库通过阅读路线、难度标记和 FAQ 设计降低了新手上手门槛",
+      "README 主要承担导航与版本说明作用，具体技术细节仍需进入各章节文档验证"
+    ],
+    "oneHighValuePoint": "将 Claude Code 的编程工作流与 OpenClaw 的日常自动化工作流并列组织，提供了清晰的双线学习路径与阶段化上手路线。",
+    "oneLineReview": "适合作为 AI 工具学习入口和目录索引，但 README 本身偏宣传与导览，独立信息价值有限。",
+    "primaryCategory": "AI工具与开发效率",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期高频参考，后续可按实际使用情况长期保留",
+    "secondaryCategories": [
+      "编程助手教程",
+      "Agent工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份面向 Claude Code 与 OpenClaw 的中文教程仓库总览，强调从零上手到企业实战，提供模块化学习路径、功能目录、安装要求和更新日志。更像导航型 README，适合快速判断是否值得进入具体章节深读。",
+    "tags": [
+      "Claude Code",
+      "OpenClaw",
+      "AI编程",
+      "中文教程",
+      "Agent",
+      "MCP",
+      "Hooks"
+    ],
+    "title": "KimYx0207/Claude-Code-x-OpenClaw-Guide-Zh: 从零到企业实战：Claude Code 官方编程神器 + OpenClaw 224K Stars 开源AI助手 | 双顶流中文教程 | 21篇教程 130000+字",
+    "totalScore": 64.5,
+    "url": "https://github.com/KimYx0207/Claude-Code-x-OpenClaw-Guide-Zh/tree/main"
+  },
+  "payloadHash": "sha256:ee3bd0c001df3d0ba98011c8c9ecd437215feab9dcb17d3cd6a15f41f1d319c8",
+  "refs": {},
+  "revisionId": "sha256:3f4b542189986b2e738e9316927568d15756f0f83a1deb72e9afc1c2596edfa4",
+  "schemaVersion": 1,
+  "updatedAt": 1773829652989
+}

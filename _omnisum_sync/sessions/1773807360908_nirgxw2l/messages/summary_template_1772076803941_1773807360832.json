@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773807360832,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773807360832",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章介绍了`sondera-coding-agent-hooks`：一个给 AI 编码代理加 “安全护栏” 的参考监控系统。它通过 Rust Hook、Cedar 策略、YARA 规则和可选的 LLM 分类器，拦截代理的命令、文件操作和网络请求，重点防止数据外泄和危险操作。\n\n- **项目定位**\n  - 这是一个面向 AI 编码代理的安全监控框架，适配`Claude Code`、`Cursor`、`GitHub Copilot`和`Gemini CLI`。\n  - 核心目标是：阻止敏感信息外传、限制破坏性操作、控制信息流转。\n  - 其中：\n    - `YARA`签名和`Cedar`策略判断是**确定性的**；\n    - 基于 LLM 的 “数据敏感度分类” 和 “安全代码策略判断” 是**概率性的**。\n\n- **如何开始使用**\n  - 仅使用`YARA + Cedar`时，不依赖外部服务。\n  - 如果要启用 LLM 分类器，需要安装`Ollama`，并拉取`gpt-oss-safeguard-20b`模型，模型大小约**12 GB**。\n  - 系统核心服务是`sondera-harness-server`，它负责加载策略并通过 Unix Socket 接收各类 Hook 请求。\n  - 默认 Socket 路径优先级：\n    - 1：`/var/run/sondera/sondera-harness.sock`\n    - 2：`~/.sondera/sondera-harness.sock`\n  - 这意味着：有权限时优先走系统级安全路径，普通用户才退回到家目录。\n\n- **Hook 与策略机制**\n  - `sondera-claude`会注册 Claude Code 生命周期中的各类 Hook，例如`pre-tool-use`、`post-tool-use`、`session-start`。\n  - `Cursor`、`Copilot`、`Gemini`也有对应实现，使用方式类似。\n  - 所有策略都放在`policies/`目录，服务启动时会加载全部`.cedar`和`.cedarschema`文件。\n  - 策略采用 “**单条 forbid 优先**” 机制：只要有一条禁止规则命中，就会覆盖允许规则。\n\n- **内置策略覆盖的风险类型**\n  - `destructive.cedar`：拦截高破坏操作，比如：\n    - `rm -rf`\n    - `git force-push`\n    - `terraform destroy`\n    - `DROP DATABASE`\n    - 删除锁文件\n    - `kill -9`\n  - `file.cedar`：关注文件级风险，比如：\n    - 私钥访问\n    - 把 secrets 写进源码\n    - 脚本混淆\n    - OWASP/CWE 类安全违规（如注入、弱加密、权限控制失效）\n  - `ifc.cedar`：实现信息流控制，例如：\n    - 按敏感等级限制外发\n    - 污点传播控制\n    - 限制网络工具使用\n    - 根据数据敏感等级动态限制步骤数\n  - `supply_chain_risk.cedar`：防供应链攻击，例如：\n    - 拼写投毒（typosquatting）\n    - 依赖混淆（dependency confusion）\n    - 构建脚本注入\n    - 锁文件篡改\n    - 借注册表通道外泄数据\n\n- **系统架构**\n  - 各个 AI 代理先把自己的事件通过 Hook 适配器输出为 JSON。\n  - Hook 二进制再通过`tarpc RPC + Unix socket`转发给 Harness 服务。\n  - Harness 会协调 3 类防护能力：\n    - `YARA-X`：匹配提示注入、数据外泄、密钥、混淆等模式；\n    - 基于`gpt-oss-safeguard-20b`的策略模型：判断是否违反安全代码生成要求；\n    - 基于同一模型的信息流控制模块：给数据打敏感度标签。\n  - 最后再结合`Cedar`策略和`Fjall`键值存储中的实体状态，输出裁决结果：`Allow / Deny / Escalate`。\n\n- **统一事件模型**\n  - 系统把不同代理的行为统一抽象成 4 类事件：\n    - `Action`：执行前动作，如`ShellCommand`、`FileRead`、`FileWrite`、`WebFetch`\n    - `Observation`：执行后结果，如命令输出、文件结果、网页抓取结果\n    - `Control`：生命周期事件，如开始、完成、失败\n    - `State`：环境快照，如工作目录、打开文件、git 分支\n  - 关键价值是：不同代理虽然工具名字不同，但都会被归一化成同一类动作。\n  - 例如 Claude、Cursor、Copilot、Gemini 的 bash/shell 工具，都会被统一成`ShellCommand`，所以同一套 Cedar 规则可跨代理复用。\n\n- **代码仓库结构**\n  - `crates/harness`：Cedar 策略引擎、实体存储、轨迹存储、RPC\n  - `crates/guardrails/signature`：YARA-X 签名扫描\n  - `crates/guardrails/ifc`：基于 LLM 的数据分类\n  - `crates/guardrails/policy`：基于 LLM 的安全策略判断\n  - `crates/mcp`：用于交互式编写 Cedar 策略的 MCP 服务\n  - `apps/claude`、`apps/cursor`、`apps/copilot`、`apps/gemini`：各代理的 Hook 实现\n\n- **开发与部署要点**\n  - 开发阶段提供了标准 Rust 命令：\n    - 测试：`cargo test --workspace`\n    - 格式检查：`cargo fmt --all -- --check`\n    - 静态检查：`cargo clippy --all-features -- -D warnings`\n  - 生产部署时最关键的是**Socket 路径安全**：\n    - 谁先绑定 Socket，谁就控制所有 Hook 客户端的裁决结果。\n  - 文中明确建议预先创建并锁定目录：\n    - `sudo mkdir -p /var/run/sondera`\n    - `sudo chown sondera:sondera /var/run/sondera`\n    - `sudo chmod 0750 /var/run/sondera`\n  - 如果使用`systemd`，建议用`RuntimeDirectory=sondera`自动创建受控目录。\n  - 文章特别提醒：**生产环境不要使用家目录回退路径**，因为其父目录通常可被其他用户写入，容易发生 “抢先绑定” 风险。\n\n- **补充信息**\n  - 许可证为`MIT`。\n  - 当前发布信息显示：\n    - `1`个 tag\n    - `No packages published`\n  - 语言占比：\n    - `Rust 84.9%`\n    - `YARA 7.7%`\n    - `Shell 7.4%`\n\n如果你愿意，我还可以把这篇内容进一步压缩成一版 “适合发给同事看的 100 字摘要”。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1773807360832,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d5b02692253aaa0a75064f40cdbc5154b7f35946fffefd517b34b8c447e50ecd",
+  "refs": {
+    "sessionId": "1773807360908_nirgxw2l"
+  },
+  "revisionId": "sha256:f0112e704ff3db287e20a85a6d9b711e007dc89f83243722d088ccd97b0eb9e7",
+  "schemaVersion": 1,
+  "updatedAt": 1773807360832
+}

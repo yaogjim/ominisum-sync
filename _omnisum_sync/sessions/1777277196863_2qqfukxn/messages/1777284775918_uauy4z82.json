@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777284775919,
+  "entityType": "message",
+  "id": "1777284775918_uauy4z82",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude子代理整理上下文\n\n**评级**: B (66分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI编程工具\n**次类别**: Claude Code, 开发效率\n**标签**: #子代理 #上下文管理 #Claude Code #AI辅助编程 #工作流优化\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇实用但证据支撑较弱的 Claude Code 子代理使用指南，适合快速上手和优化长会话体验。\n**核心高价值点**: 通过子代理隔离 grep、find、ls 等工具调用，只让最终摘要返回主会话，从而降低上下文污染。\n\n### 摘要\n文章介绍 Claude Code 子代理的用途、创建方式、存放位置、内置探索能力、上下文分叉配置以及监控钩子，核心目标是减少长会话中的工具调用噪声，保持主上下文整洁。\n\n### 知识要点\n- Claude Code 子代理可通过带前置元数据的 Markdown 文件定义，并放在 .claude/agents/ 或 ~/.claude/agents/ 中使用\n- CLAUDE_CODE_FORK_SUBAGENT=1 可让子代理继承父会话完整上下文，同时保持工具调用隔离\n- 内置探索类子代理适合在不污染主上下文的情况下搜索和理解代码库\n- context-timeline 钩子可用于观察主代理和子代理的上下文使用情况\n\n### 行动项\n- 在项目的 .claude/agents/ 中创建一个简单的 code-reviewer 或 explorer 子代理并测试效果\n- 在长时间 Claude Code 会话中尝试启用 CLAUDE_CODE_FORK_SUBAGENT=1\n- 评估 context-timeline 钩子是否有助于监控上下文消耗\n\n### 存档判定\n归档: 是 — 原因: 包含 Claude Code 子代理配置示例、使用场景和上下文隔离思路，对AI编程工作流有一定实用价值\n删除: 否\n留存决策: 短期参考后可保留，适合使用 Claude Code 时作为配置和工作流参考",
+    "role": "assistant",
+    "timestamp": 1777284775919,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:2f4adc2fe974beab83ce6bc0e7f041ed6615bc044bdd834f16b7149c57ec5b67",
+  "refs": {
+    "sessionId": "1777277196863_2qqfukxn"
+  },
+  "revisionId": "sha256:d458bb94deee24567ce284172318e06e1a6b166d0dcf8d396dd2258db255fc96",
+  "schemaVersion": 1,
+  "updatedAt": 1777284775919
+}

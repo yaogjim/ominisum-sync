@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774227665955,
+  "entityType": "session",
+  "id": "1774227665955_gwjuq0ka",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "调研完整视频或原始项目文档，确认该记忆机制的真实实现方式",
+      "在自己的代理系统中评估异步记忆提取与分层存储的可行性"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774227677312,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Hermes代理自改进记忆机制",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可通过周期性拦截对话触发后台代理进行记忆整理",
+      "记忆可按用户画像、技术知识和技能沉淀分层存储",
+      "LLM可基于自我评估决定哪些内容值得长期保存"
+    ],
+    "oneHighValuePoint": "将记忆提取放到异步后台任务中执行，从而避免主对话链路被记忆整理过程干扰。",
+    "oneLineReview": "概念有启发，但信息不完整，适合快速获取灵感，不适合作为可靠资料深入学习。",
+    "primaryCategory": "AI智能体",
+    "rating": "C",
+    "rejectReason": "内容过短且碎片化，主要是对机制的推测性描述，缺少完整上下文、实现细节与验证证据。",
+    "retentionDecision": "低优先级留存，短期参考后可删除",
+    "secondaryCategories": [
+      "记忆机制",
+      "LLM应用设计"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章以推文串形式介绍 Hermes 代理的“自我改进型记忆”思路：每隔若干轮对话触发后台任务，让代理复盘对话并将用户信息、技术记忆或技能分别写入不同记忆文件，以异步方式减少对主对话的干扰。",
+    "tags": [
+      "Hermes",
+      "Agent Memory",
+      "Self-Improving",
+      "NousResearch",
+      "异步后台任务"
+    ],
+    "title": "Igor Kudryk: The self-improving memory of Hermes agent from @NousResearch is a pretty neat th…",
+    "totalScore": 45.5,
+    "url": "https://x.com/fancylancer3991/status/2035486175599693889"
+  },
+  "payloadHash": "sha256:d1bbbf0f2f7bf7e7f6d6fb228a3e19631148b132dadecfa29836a50264f83e60",
+  "refs": {},
+  "revisionId": "sha256:67928ff0f92452761e8365e79e0503d691f646d0025710043748b12e9364eba7",
+  "schemaVersion": 1,
+  "updatedAt": 1774236260461
+}

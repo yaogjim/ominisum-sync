@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773650191980,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773650191980",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章主要介绍了 Sandbank：一个给 AI Agent 使用的 “统一云沙箱 SDK”。它的核心价值是把不同云厂商的沙箱能力封装成同一套 TypeScript 接口，让开发者 “一次编写，多云运行”。\n\n- **1. 产品定位：解决多云沙箱接口不统一的问题**\n  - AI Agent 需要隔离执行环境，但 Daytona、Fly.io、Cloudflare Workers 等平台 API 各不相同。\n  - Sandbank 把这些差异统一到同一个接口后面，开发者只需更换适配器，不必改业务代码。\n  - 例子：把`DaytonaAdapter`换成`FlyioAdapter`或`CloudflareAdapter`，其余创建沙箱、执行命令、销毁沙箱的代码都不用变。\n\n- **2. 整体架构：核心层 + 适配器层 + 底层平台**\n  - 上层是你的应用或 AI Agent。\n  - 中间是 Sandbank 的核心模块：\n    - `@sandbank.dev/core`：统一 Provider 接口\n    - `@sandbank.dev/skills`：Skill 注册和注入\n    - `@sandbank.dev/agent`：沙箱内 Agent 客户端\n    - `@sandbank.dev/relay`：多 Agent 通信中枢\n  - 下层是各类适配器：\n    - `@sandbank.dev/daytona`\n    - `@sandbank.dev/flyio`\n    - `@sandbank.dev/cloudflare`\n    - `@sandbank.dev/boxlite`\n  - 最底层对应真实运行环境：Daytona、Fly.io Machines、Cloudflare Workers、以及自托管 Docker 的 BoxLite。\n\n- **3. 支持的能力：基础功能统一，扩展功能按需检测**\n  - 所有 Provider 都必须支持 5 个基础操作：\n    - 创建 / 销毁沙箱\n    - 列出沙箱\n    - 执行命令\n    - 读写文件\n    - Skill 注入\n  - 扩展能力是 “可选的”，需要运行时检测后再使用，例如：\n    - `volumes`：持久卷\n    - `port.expose`：对外暴露端口\n    - `exec.stream`：实时输出 stdout/stderr\n    - `snapshot`：状态快照与恢复\n    - `terminal`：交互式 Web 终端\n    - `sleep`：休眠与唤醒\n  - 重要细节：\n    - Cloudflare 的 volumes 需要额外启用`storage`配置。\n    - Cloudflare 保留了**3000 端口**作为控制面板，用户可用端口范围是**1024–65535，但不包括 3000**。\n\n- **4. 不同 Provider 的特性差异：统一接口下仍保留平台特点**\n  - Daytona：完整 VM，冷启动约**10 秒**。\n  - Fly.io：Firecracker 微虚拟机，冷启动约**3–5 秒**。\n  - Cloudflare：V8 隔离 + 容器，冷启动约**1 秒**，速度最快。\n  - BoxLite：Docker 容器，冷启动约**2–5 秒**，适合自托管。\n  - 文件 I/O 方式也不同：\n    - Daytona、Cloudflare：原生 SDK\n    - Fly.io、BoxLite：通过`exec` + base64\n  - 区域能力也不同：\n    - Daytona、Fly.io：多区域\n    - Cloudflare：全球边缘\n    - BoxLite：自托管\n\n- **5. 多 Agent 协作：内置编排和消息通信能力**\n  - Sandbank 不只是单个沙箱管理工具，还支持多 Agent 协同工作。\n  - 通过`createSession`可以同时启动多个角色不同的 Agent，比如：\n    - `architect`\n    - `developer`\n  - Agent 之间可以共享上下文，例如把接口规范`['/users', '/posts']`放进共享 context，所有 Agent 都能读写。\n  - 沙箱内部的 Agent 可通过`@sandbank.dev/agent`自动读取`SANDBANK_*`环境变量，接收任务、发送结果，并最终回报完成状态。\n  - 例子中，Agent 最后汇报：**“完成了 5 个 API 端点”**。\n\n- **6. 快速开始：创建、执行、写文件、销毁**\n  - 安装后先配置 Provider，例如 Daytona 需要设置`DAYTONA_API_KEY`。\n  - 创建沙箱时可指定：\n    - 镜像：`node:22`\n    - CPU：**2**\n    - 内存：**2048 MB**\n    - 自动销毁时间：**30 分钟**\n  - 然后可以在沙箱内执行命令、写入文件、运行脚本，最后再销毁沙箱。\n  - 这说明 Sandbank 的使用流程比较直接，适合快速接入 AI Agent 执行环境。\n\n- **7. 开发与测试：覆盖单元测试、一致性测试和真实集成测试**\n  - 项目支持多种开发命令：\n    - `pnpm test`：单元测试\n    - `pnpm test:conformance`：跨 Provider 一致性测试\n    - `pnpm typecheck`：类型检查\n  - 集成测试会调用真实 API，并通过环境变量启用：\n    - Daytona：`DAYTONA_API_KEY`\n    - Fly.io：`FLY_API_TOKEN`、`FLY_APP_NAME`\n    - Cloudflare：`E2E_WORKER_URL`\n  - 这表明项目不仅关注接口统一，还强调不同平台行为的一致性验证。\n\n- **8. 设计原则：追求最小共性、显式行为和可组合性**\n  - 只抽象 “最大公约数” 能力：`exec + files + lifecycle`，避免过度封装。\n  - 强调 “显式优于隐式”：不自动 fallback、不缓存、不隐式重试。\n  - 不支持的能力就直接报错，而不是伪造结果。\n  - 销毁操作要求幂等：即使沙箱已经销毁，也不报错。\n  - Provider 层和 Session 层完全解耦，可以自由组合。\n  - 许可证为**MIT**。\n\n如果你愿意，我也可以进一步把这篇内容整理成：\n1. `一句话版摘要`\n2. `适合汇报 / 分享的 PPT 提纲版`\n3. `面向技术选型的对比版`",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1773650191980,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:afb1eaf9297b4aa1e1c274f151ecfab96e7ec49fff8da08a6d8ea5f09c14d055",
+  "refs": {
+    "sessionId": "1773650025674_pyak56iq"
+  },
+  "revisionId": "sha256:32e19a28443a795f4ed490b86f0ef46295641878b7ad281a3aaddc94e68a6056",
+  "schemaVersion": 1,
+  "updatedAt": 1773650191980
+}

@@ -1,0 +1,72 @@
+{
+  "createdAt": 1777773156220,
+  "entityType": "session",
+  "id": "1777773156220_vl1zon4o",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为项目建立并持续维护AGENTS.md，记录构建、测试、架构约束、禁区和常见错误。",
+      "在使用AI写代码前先定义验收标准，包括测试、lint、类型检查、benchmark或golden case。",
+      "将团队代码标准从口头约定和文档转化为可执行检查、模板、hook和CI规则。",
+      "调整AI编码度量指标，减少对代码量、commit数、PR数的依赖，关注变更失败率、review负担、回滚率和代码存活率。",
+      "每次review、事故和AI出错后，把结论写回规则、测试或共享上下文，形成组织记忆。"
+    ],
+    "archiveReason": "文章系统梳理了AI编码时代真正可积累的工程资产，包含上下文、验证、标准、平台和组织记忆等可复用框架，具备长期参考价值。",
+    "classifiedAt": 1777773814314,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 8,
+      "information_density": 9,
+      "long_term_leverage": 9,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI编码复利资产指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "yage.ai",
+    "favicon": "",
+    "knowledgePoints": [
+      "AI会放大团队既有工程能力，也会放大验证不足、架构混乱和度量错误等缺陷。",
+      "代码生成成本下降后，瓶颈会转移到理解、验证、整合、架构边界和决策标准。",
+      "AGENTS.md、测试套件、CI、安全扫描、规则文件和本地知识库是面向Agent的复利资产。",
+      "传统逐行人工review无法承接AI生成速度，review应转向意图、设计和业务风险评估。",
+      "如果AI生成的坏模式被后续Agent继续模仿，会形成上下文污染和工程债务复利。"
+    ],
+    "oneHighValuePoint": "AI编码真正有复利的资产，是能让下一轮工作更容易的上下文、验证体系、可执行标准和组织记忆，而不是工具、prompt技巧或代码产量。",
+    "oneLineReview": "一篇把AI Coding从工具效率提升上升到工程系统复利建设的高价值文章。",
+    "primaryCategory": "软件工程",
+    "rating": "S",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "AI编程",
+      "工程管理",
+      "团队效能"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出AI编码的核心价值不在短期生成速度，而在能否沉淀机器可读上下文、确定性验证、团队标准、平台治理和组织记忆；同时警惕上下文污染、安全风险和系统理解流失。",
+    "tags": [
+      "AI Coding",
+      "工程复利",
+      "验证体系",
+      "上下文管理",
+      "平台工程"
+    ],
+    "title": "AI coding 里真正有复利的东西",
+    "totalScore": 85.5,
+    "url": "https://yage.ai/share/ai-coding-compound-interest-20260429.html?utm_source=twitter&utm_medium=thread&utm_campaign=ai-coding-compound-interest-20260429"
+  },
+  "payloadHash": "sha256:fba07413cba996ee26b18e0a4c2ba349f4dffa130d8d95ba55676332b91dda42",
+  "refs": {},
+  "revisionId": "sha256:2025351af10a23c8ce5dee9878f1b08445f8eb295724a87d1701cf9a39ed9c76",
+  "schemaVersion": 1,
+  "updatedAt": 1777774197187
+}

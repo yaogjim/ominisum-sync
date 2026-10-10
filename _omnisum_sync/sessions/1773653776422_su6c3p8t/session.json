@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773653776422,
+  "entityType": "session",
+  "id": "1773653776422_su6c3p8t",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "挑选与你当前工作流最相关的3-5个Agent，先在一个真实项目中小范围试用",
+      "参考其Agent模板结构，为你自己的高频任务定制内部专用Agent",
+      "评估其多工具安装脚本与目录规范，决定是否纳入团队开发环境标准化配置"
+    ],
+    "archiveReason": "包含大量可直接复用的代理角色定义、安装方式与多工具集成说明，适合后续检索",
+    "classifiedAt": 1773829333896,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "多工具AI代理角色库",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "可将不同职能的Agent按开发、设计、营销、产品、测试等领域模块化组织",
+      "通过转换与安装脚本把同一套Agent定义适配到Claude Code、Copilot、Cursor等多种工具",
+      "Agent设计强调身份设定、工作流、交付物、成功指标，而不仅是单条Prompt"
+    ],
+    "oneHighValuePoint": "最有价值的是把大量专业化Agent人格、流程、交付物与多工具安装集成打包为可直接复用的工程资产。",
+    "oneLineReview": "像一份高可用的Agent角色模板大全，但更偏资源集合而非深度方法论文档。",
+    "primaryCategory": "AI工具与Agent工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为AI代理模板库和工具接入索引保留",
+    "secondaryCategories": [
+      "提示工程",
+      "开发效率工具",
+      "多工具集成"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份面向多种AI开发工具的代理角色仓库说明，提供大量按职能划分的Agent模板、安装脚本、跨平台转换方式与典型协作示例。实用性较强，但内容偏清单化，方法论深度和证据支撑有限。",
+    "tags": [
+      "AI Agents",
+      "Claude Code",
+      "Prompt Engineering",
+      "Developer Tools",
+      "Multi-Agent"
+    ],
+    "title": "msitarzewski/agency-agents: A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+    "totalScore": 58,
+    "url": "https://github.com/msitarzewski/agency-agents/"
+  },
+  "payloadHash": "sha256:e3436f530c28be4d7bb3781262c783dc77177d240ecc990ebd9cc3d67e120833",
+  "refs": {},
+  "revisionId": "sha256:c6e142573d8128cde18e7e544aca708dbfa40647fb0db2cc05ce71a59ccffa56",
+  "schemaVersion": 1,
+  "updatedAt": 1773829333911
+}

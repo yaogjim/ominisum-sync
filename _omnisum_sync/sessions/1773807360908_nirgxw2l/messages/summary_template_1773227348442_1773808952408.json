@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773808952408,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773808952408",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "可以。基于你提供的`sondera-ai/sondera-coding-agent-hooks`内容，我用一个具体场景来说明：\n\n**场景：让 Claude Code 帮你维护一个支付系统仓库，但你要确保它不能误删数据、不能泄露密钥、也不能把敏感代码发到外部。**\n\n这个项目本身已经提供了三层能力：\n\n- `YARA`：做确定性的特征检测，拦截明显危险内容\n- `Cedar policy`：做确定性的授权与禁止规则\n- 可选`LLM classifier`：做敏感度分类和安全代码策略判断\n\n真正的最佳实践，不是 “把它装上就行”，而是：**用 “确定性规则兜底”，用 “概率性模型补强”，再配合最小权限部署。**\n\n**具体实例**\n\n假设你的仓库是一个 Rust + SQL 的支付服务，目录里有这些内容：\n\n- `src/payment/`\n- `migrations/`\n- `.env`\n- `secrets/prod_api_key.pem`\n- `docs/architecture.md`\n\n你希望 AI coding agent 能做这些事：\n\n- 允许：读代码、改业务逻辑、跑测试、生成文档\n- 禁止：读取生产密钥、执行`rm -rf`、删锁文件、跑`DROP DATABASE`\n- 严控：把源码或配置通过`curl`/`wget`/ 外部网页发送出去\n\n这时，最佳落地方式不是只依赖默认策略，而是在默认策略之上加一层 “项目级策略”。\n\n可以把它理解为：`base.cedar`和`destructive.cedar`负责通用防护，你再写一个`payments.cedar`专门保护支付系统。\n\n一个很实用的策略方向是：\n\n```cedar\nforbid (\n  principal,\n  action,\n  resource\n)\nwhen {\n  action in [Action::\"FileRead\", Action::\"FileWrite\", Action::\"ShellCommand\"]\n  && resource has path\n  && (\n    resource.path like \"secrets/%\" ||\n    resource.path == \".env\" ||\n    resource.path like \"%.pem\"\n  )\n};\n```\n\n再加一条限制数据库破坏性命令：\n\n```cedar\nforbid (\n  principal,\n  action,\n  resource\n)\nwhen {\n  action == Action::\"ShellCommand\"\n  && resource has command\n  && (\n    resource.command like \"% DROP DATABASE%\" ||\n    resource.command like \"% TRUNCATE %\" ||\n    resource.command like \"% terraform destroy%\"\n  )\n};\n```\n\n再加一条限制外发：\n\n```cedar\nforbid (\n  principal,\n  action,\n  resource\n)\nwhen {\n  action == Action::\"WebFetch\"\n  && principal has taint\n  && principal.taint == \"sensitive\"\n};\n```\n\n这个例子不一定和仓库里的实体字段 100% 一致，但它准确表达了最佳实践：**策略应围绕 “资产、行为、流向” 来写，而不是围绕工具名字来写。**\n\n因为项目里已经强调了一点：不同 agent 的工具最终会被归一化成同一种事件，比如都变成`ShellCommand`、`FileRead`、`WebFetch`。  \n这意味着你的策略应该写在 “统一事件层”，而不是写死 “Claude 的 Bash 工具” 或 “Cursor 的 shell hook”。\n\n**基于这个实例的最佳实践**\n\n- **先做 “默认拒绝高危动作”，再逐步放开**\n  - 对`rm -rf`、`git push --force`、`kill -9`、`DROP DATABASE`、锁文件删除这类操作直接禁止\n  - 这是最值得放在 Cedar 里的部分，因为它们应当是确定性的，不该交给 LLM 判断\n\n- **把 “敏感数据识别” 和 “外发限制” 联动起来**\n  - 不是只拦`curl`，而是先给读到的内容打敏感标签，再禁止敏感内容流向`WebFetch`、外部命令、第三方工具\n  - 这正是你提供内容里`IFC`的价值：不是只看 “做了什么”，而是看 “敏感信息是否发生越权流动”\n\n- **生产环境不要使用 home 目录 socket 回退**\n  - 文档里这一点非常关键\n  - `/var/run/sondera/sondera-harness.sock`或 systemd `RuntimeDirectory=sondera`才是正确做法\n  - 否则 socket 被抢先绑定，整个 adjudication 都可能被劫持，防护体系会失效\n\n- **把 LLM 分类器当 “增强器”，不要当最终裁决者**\n  - 你提供的说明已经明确：YARA 和 Cedar 是确定性的，LLM classifier 是概率性的\n  - 所以，像 “私钥不能读”“生产库不能删”“敏感内容不能外发” 这类规则，必须由 YARA/Cedar 保底\n  - LLM 更适合补充判断：这段新代码是否引入弱加密、是否疑似越权、这份文本是否属于敏感业务数据\n\n- **按仓库资产分层，而不是按文件后缀简单分组**\n  - 最佳实践不是只写 “`.pem`禁止”\n  - 而是分三层：\n    - 高敏：`secrets/`、`.env`、密钥、token、生产配置\n    - 中敏：核心业务规则、风控逻辑、数据库 schema\n    - 低敏：公开文档、测试样例、非敏感脚本\n  - 然后对不同层定义不同`step-count limits`、不同外发限制、不同人工升级（Escalate）策略\n\n- **把 “允许 AI 修改代码” 与 “禁止 AI 直接执行上线动作” 分开**\n  - 例如允许：\n    - `FileEdit`\n    - `cargo test`\n    - `cargo fmt`\n  - 但禁止或升级审批：\n    - `kubectl apply`\n    - `terraform apply/destroy`\n    - `psql`连生产实例\n    - `git push --force`\n  - 这是 agent 安全中很常见、也最有效的边界划分\n\n- **为每类 deny 准备可解释反馈**\n  - 最好不要只返回 “Denied”\n  - 应该给 agent 或操作者一个稳定原因，比如：\n    - “拒绝读取`secrets/prod_api_key.pem`：命中高敏资产访问规则”\n    - “拒绝执行`DROP DATABASE`：命中破坏性数据库操作规则”\n    - “拒绝外发`src/payment/`内容：命中敏感数据外传规则”\n  - 这样 agent 更容易回退到安全方案，比如改为请求 mock 数据、只修改本地逻辑、生成补丁而不执行\n\n**这个实例里，一套更成熟的落地方案**\n\n如果我是把这个仓库上线到团队里，我会这样配置：\n\n- `base.cedar`：保留通用默认规则\n- `destructive.cedar`：继续拦截不可逆操作\n- 新增`payments.cedar`：\n  - 禁读`secrets/`、`.env`、`*.pem`\n  - 禁止生产数据库破坏命令\n  - 禁止敏感 taint 的`WebFetch`\n  - 对`git push`、发布命令、云资源变更设为`Escalate`\n- `ifc.toml`：\n  - 明确把 “支付、用户身份、交易、密钥、账单” 定义为高敏提示词\n- `policies.toml`：\n  - 对 “弱加密”“硬编码密钥”“鉴权绕过”“SQL 注入” 提高告警权重\n- 部署上：\n  - 用 systemd 管理 harness server\n  - 固定`/run/sondera/` socket\n  - 目录权限最小化\n  - 不允许开发者各自启动一个替代 harness\n\n**一句话总结这个实例上的最佳实践**\n\n不是 “给 AI agent 加一个拦截器” 就结束，而是要把`sondera`用成一个统一裁决层：  \n**用归一化事件建模跨 agent 一致防护，用 Cedar 写死高风险边界，用 IFC 控制敏感信息流向，用 LLM 只做补充判断，最后用安全的 socket 与部署方式保证整个控制面不被绕过。**\n\n如果你愿意，我下一步可以直接继续给你两种内容中的一种：\n\n1. 按这个 “支付系统仓库” 场景，写一份更完整的`payments.cedar`示例  \n2. 按 “企业内部研发团队” 的实际落地方式，给你整理一份可执行的最佳实践清单",
+    "finish_reason": "stop",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773808952408,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:67df67b292f72a7ffb7f94543c77de4014055f43fb8da75972596bcffd18cbb5",
+  "refs": {
+    "sessionId": "1773807360908_nirgxw2l"
+  },
+  "revisionId": "sha256:4429a15a8fe2f62fc944a0b7aa4d7403a76cba53878ba1b2b6faea4a2fe47419",
+  "schemaVersion": 1,
+  "updatedAt": 1773808952408
+}

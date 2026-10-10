@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773653624120,
+  "entityType": "message",
+  "id": "1773653662709_4ybk7dcq",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章主要介绍了 `FxEmbed` 这个开源项目：它用来修复 X/Twitter（并规划支持 Bluesky）在 Discord、Telegram 等平台上的嵌入展示问题，让帖子里的图片、视频、投票、翻译等内容显示得更完整、更好用。  \n它的核心卖点是：功能比默认嵌入更强，同时尽量保护隐私，并且基于 Cloudflare Workers，部署成本低、延迟也更低。\n\n- 项目定位与用途\n  - `FxEmbed` 是一个帮助“优化社交平台帖子预览”的工具，主要面向 X/Twitter 链接，也计划支持 Bluesky。\n  - 目标场景是在 Discord、Telegram 等聊天平台中分享内容时，不用打开浏览器，也能看到更完整的信息。\n  - 仓库活跃度较高：文章中显示已有 `3,105` 次提交。\n\n- 核心功能：让嵌入内容更完整\n  - 支持视频和 GIF 直接播放；在 Discord 中，还能自动嵌入部分外部视频平台内容，比如 YouTube。\n  - 支持显示投票结果，即使投票还在进行中也可以展示。\n  - 支持展示引用帖及其媒体内容；如果主帖没有媒体，系统还会把引用帖里的媒体补出来，帮助理解上下文。\n  - 支持帖子翻译：只要在链接后加上 2 位 ISO 语言代码即可，例如英文用 `/en`。\n  - 例子：如果想把帖子翻译成英文，只需在原链接后追加 `/en`。\n\n- 媒体展示与链接玩法\n  - 支持直接链接到媒体本身，而不是嵌入卡片。\n  - 方法包括：\n    - 在域名前加 `d.`，如 `d.fxtwitter.com`\n    - 视频链接后加 `.mp4`\n    - 图片链接后加 `.jpg`\n  - 支持多图帖子，并可精确选中某一张图，例如 `/photo/3` 表示第 3 张。\n  - 默认情况下会利用 Discord 原生多图显示，方便查看单张高清图。\n  - 也支持把多图合成一张拼图（mosaic），使用 `m.` 子域名。\n  - 例子：\n    - `https://fxtwitter.com/example/status/1548119328498728960.mp4`\n    - `https://fixupx.com/example/status/1548117889437208581.jpg`\n    - `https://d.fixupx.com/example/status/1547514042146865153/photo/3`\n\n- 不同视图模式\n  - `Gallery view`：使用 `g.fxtwitter.com` 或 `g.fixupx.com`，只显示媒体和作者信息，界面更干净，适合只分享图片/视频的频道。\n  - `Text-only view`：使用 `t.fxtwitter.com` 或 `t.fixupx.com`，只显示文字，不显示图片和视频。\n  - 支持线程展开：只需分享原线程中的任意一条，就能查看整串对话，还会追溯回复关系直到对话起点。\n\n- 链接优化与跳转能力\n  - 默认 X/Twitter 嵌入里常见的 `t.co` 短链接会被替换成原始链接，避免用户看不出跳转目标。\n  - 支持自定义跳转域名，比如跳到 Nitter：\n    - `https://fxtwitter.com/set_base_redirect?url=https://nitter.net`\n  - 但这个设置是按域名单独生效的：如果你在 `fxtwitter.com` 上设置了，不代表 `fixupx.com` 也会同步生效。\n  - 重定向时还会自动去掉追踪参数，例如 `?s`、`&t`，减少广告和遥测用途的数据残留。\n\n- 隐私与数据处理\n  - 项目强调：不会保存用户发送过哪些帖子，也没有公开记录谁嵌入了什么内容。\n  - 原因是其核心服务运行在 `Cloudflare Workers` 上：只有收到请求时才运行，没有持久内存，也没有文件系统或数据库可供读取。\n  - 只使用 `Cloudflare Analytics Engine` 统计基础、匿名、聚合的数据，不包含可识别个人或具体帖子的内容。\n  - 调试时开发者可能临时使用终端实时日志（`wrangler tail`），但这些日志不会被保存。\n  - 只有在极少数脚本运行报错时，出问题的 URL 可能被记录，用于排查异常。\n\n- 与其他方案对比\n  - 文中把 `FxTwitter / FixupX` 与默认 Twitter 嵌入、`vxTwitter (fixvx)` 做了对比。\n  - `FxTwitter / FixupX` 的优势包括：\n    - 支持帖子/图片嵌入\n    - 支持头像显示\n    - 支持视频\n    - 支持外部视频（如 YouTube，Discord 可用）\n    - 支持投票结果\n    - 支持引用帖\n    - 支持多图\n    - 支持翻译\n    - 支持替换 `t.co`\n    - 支持跳转到原始媒体文件\n    - 支持 Gallery view\n    - 支持去除追踪参数\n    - 支持 Telegram Instant View\n    - 提供开发者状态抓取 API\n  - 其中一个重要限制是：需要网页容器的外部媒体（如 YouTube）在 Telegram 中不能嵌入，但普通媒体可以；Discord 两种都更友好。\n\n- 技术实现与部署方式\n  - 项目为边缘计算设计，强调“离用户更近”，从而降低全球不同地区用户的访问延迟。\n  - 推荐部署方式是 `Cloudflare Workers`，其免费额度是“每个账号每天 `100,000` 次请求”。\n  - 项目主要使用 `TypeScript` 编写，占比 `98.5%`，`JavaScript` 占 `1.5%`。\n  - 官方目前只提供 Cloudflare Workers 的部署支持，虽然理论上也可能运行在支持 `Hono` 的其他平台上。\n\n- 部署步骤与配置\n  - 基本流程：\n    - 克隆仓库\n    - 安装 Node.js\n    - 在仓库目录运行 `npm install`\n    - 复制 `wrangler.example.toml` 为 `wrangler.toml`，填入 Cloudflare 账号 ID\n    - 复制 `.env.example` 为 `.env`，改成自己的域名和配置\n    - 如需品牌定制，可复制 `branding.example.json` 为 `branding.json`\n    - 登录 Cloudflare：`npx wrangler login`\n    - 部署：`npm run deploy` 或 `npx wrangler deploy --no-bundle`\n  - 如果要监控异常，还可以在 `.env` 中配置 `Sentry`。\n\n- FAQ 与补充信息\n  - `fxtwitter.com` 是主域名；`fixupx.com` 是为了方便修复 `x.com` 链接；`twittpr.com` 则适合做快速文本替换。\n  - Telegram 有时不会请求嵌入，可能是其嵌入服务器过载；文中建议尝试 `Webpage Bot` 清缓存。\n  - Bluesky 当前还没有像 X/Twitter 那样的 `/photo/1` 语法，但未来可能会补充类似能力。\n  - 项目当前运营的域名包括：\n    - `fxtwitter.com`\n    - `twittpr.com`\n    - `fixupx.com`\n    - `xfixup.com`\n    - `fxbsky.app`\n  - 项目采用 `MIT` 许可证，可自由提 Pull Request。\n  - GitHub 页面还显示：`500+` 生产环境部署。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773653624120,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c3e72959a15214ae0d3a0f890aa40cffebdb56104266b78fe4224b586efc2dfc",
+  "refs": {
+    "sessionId": "1773653587902_3ps4qcci"
+  },
+  "revisionId": "sha256:e902376b60f549aec1bd1be9ff45e7e54045070841c0ca18d9d8b8df5737565b",
+  "schemaVersion": 1,
+  "updatedAt": 1773653624120
+}

@@ -1,0 +1,79 @@
+{
+  "createdAt": 1773993083081,
+  "entityType": "session",
+  "id": "1773993083081_c9urjm7y",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审查现有智能体请求结构，按静态系统提示、项目上下文、会话上下文、动态消息重新排序以提高缓存命中率。",
+      "避免在对话中途切换模型或增删工具，改用子代理和工具化状态转换。",
+      "为技能体系建立分类清单，优先补齐验证、数据分析、代码评审和操作手册类技能。",
+      "给技能增加 gotchas、配置文件、脚本与稳定数据目录，减少模型重复犯错。",
+      "把缓存命中率和技能触发率纳入监控，像监控可用性一样持续追踪。"
+    ],
+    "archiveReason": "内容来自一线产品实践，包含提示词缓存、工具设计、技能体系等可直接复用的智能体工程经验，适合作为构建代码代理的参考资料。",
+    "classifiedAt": 1773993812213,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "代码智能体工程设计经验",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "提示词缓存本质是前缀匹配，静态内容必须尽量前置，动态内容后置。",
+      "会话中切换模型、增删工具、修改系统提示都会显著破坏缓存命中率。",
+      "计划模式、工具搜索、上下文压缩都应设计成缓存安全的状态转换机制。",
+      "工具设计应从模型真实能力出发，通过观察输出和实验不断迭代。",
+      "技能不是单一 Markdown，而是可包含脚本、配置、资源与数据存储的工作目录。",
+      "渐进式披露和子代理是扩展能力而不污染主上下文的有效方式。"
+    ],
+    "oneHighValuePoint": "最有价值的观点是把提示词缓存视为系统级约束来设计代理架构，而不是把它当成单点优化技巧。",
+    "oneLineReview": "这是一组高价值的智能体工程实践笔记，方法感强、可落地，但证据主要来自经验总结而非系统实验。",
+    "primaryCategory": "AI智能体系统设计",
+    "rating": "S",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "提示词缓存优化",
+      "Agent工具与技能设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/trq212/status/2024574133011673516",
+      "https://x.com/trq212/status/2027463795355095314",
+      "https://x.com/trq212/status/2033949937936085378"
+    ],
+    "summaryBrief": "文章汇总了 Claude Code 在提示词缓存、工具设计与技能体系上的一线经验，强调系统需围绕缓存约束设计，通过稳定前缀、消息更新、渐进式披露和技能化扩展来降低成本并提升代理可靠性。",
+    "tags": [
+      "Claude Code",
+      "Prompt Caching",
+      "Tool Design",
+      "Skills",
+      "Agent Engineering"
+    ],
+    "title": "代码智能体操作系统三层设计",
+    "totalScore": 74,
+    "url": "omnisun://digest/1773993083081"
+  },
+  "payloadHash": "sha256:ddfbe7b4834f21c8251235068668da62822d82ea43ea6c7a4edadf4a15960e26",
+  "refs": {},
+  "revisionId": "sha256:50445a7f6d39c427990213ba78bdba548b2b8c702e70778dfa2d67f57244389d",
+  "schemaVersion": 1,
+  "updatedAt": 1774000449535
+}

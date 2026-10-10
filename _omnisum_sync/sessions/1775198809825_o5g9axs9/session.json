@@ -1,0 +1,68 @@
+{
+  "createdAt": 1775198809825,
+  "entityType": "session",
+  "id": "1775198809825_o5g9axs9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为团队 Skills 建立独立 Git 仓库并规范 PR 提交流程",
+      "评估是否用 Symlink 或同步脚本连接项目中的 .agents/skills",
+      "为脚本类 Skills 增加基础单元测试，并整理常见验证样例"
+    ],
+    "archiveReason": "包含团队维护 agent skills 的实操建议，可作为搭建初期的轻量参考。",
+    "classifiedAt": 1775198980078,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "团队Skills管理经验简述",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Skills 目录适合纳入 Git 做版本控制、审查和回滚",
+      "Symlink 能避免重复拷贝并保持唯一真实来源",
+      "Markdown 类 Skill 难以自动验证，需结合测试集与人工检查",
+      "项目级 Skills 比全局 Skills 更利于控制上下文开销"
+    ],
+    "oneHighValuePoint": "通过 Symlink 将运行目录直接指向 Skills 源仓库，可把发现问题、修改、评审和发布串成一条顺畅链路。",
+    "oneLineReview": "有一定实操价值，但更像经验贴而非成熟方法论。",
+    "primaryCategory": "AI工程协作",
+    "rating": "C",
+    "rejectReason": "内容较短，更多是经验罗列，缺少系统方法、量化验证和深入案例支撑。",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "Agent工作流",
+      "知识与配置管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕团队内 Skills 管理提出几条实用建议：使用 Git 进行版本控制、通过 Symlink 连接唯一源 Repo、优先让 Agent 编辑并走 PR 流程、以测试集和回滚机制弥补验证困难，并建议大部分 Skills 随项目存放而非全局配置。",
+    "tags": [
+      "Codex CLI",
+      "Skills管理",
+      "Git",
+      "Symlink",
+      "团队协作"
+    ],
+    "title": "宝玉: 团队内的 skills 管理和维护的一点经验分享（以 codex cli 用的",
+    "totalScore": 53,
+    "url": "https://x.com/dotey/status/2039762741284553033"
+  },
+  "payloadHash": "sha256:55745c4677db01cba89481f11bb5a283eb4f9cc675cc799e5186d8f4124e29ba",
+  "refs": {},
+  "revisionId": "sha256:5e714a3f3f381960d0eb2b6c7f1c101735aec2013b97af05f62512bb7893a48a",
+  "schemaVersion": 1,
+  "updatedAt": 1775199983878
+}

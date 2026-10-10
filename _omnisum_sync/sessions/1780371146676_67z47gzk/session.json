@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780371146676,
+  "entityType": "session",
+  "id": "1780371146676_67z47gzk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查现有自动化脚本中频繁因边界条件失败的场景，评估是否改为LLM参与处理",
+      "为新建AI工作流先设计日志、回滚、人工确认等护栏，再决定是否固化为脚本",
+      "对成熟稳定、规则明确的流程再沉淀为脚本或可复用工具"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780371805004,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI工作流不宜过早脚本化",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "传统脚本在未预判边界条件、异常路径、特殊字符、外部格式变化时容易失效",
+      "LLM适合用于探索期、边界不清晰、需要解释和行动建议的自动化系统",
+      "当token成本低且系统具备可逆、可控的工程护栏时，可延后脚本固化"
+    ],
+    "oneHighValuePoint": "不要过早将探索期AI工作流固化为脚本，应先利用LLM处理未知边界并持续自修复。",
+    "oneLineReview": "一个有启发的AI自动化经验反思，但证据主要来自个人案例，方法论尚不完整。",
+    "primaryCategory": "AI工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "自动化",
+      "工程效率"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者反思过早把AI代码能力固化为Python脚本，导致边界条件频繁失效。主张在token便宜且工程护栏足够强时，优先让新系统运行在LLM能力上，经过试错后再沉淀为稳定工具。",
+    "tags": [
+      "LLM",
+      "脚本自动化",
+      "边界条件",
+      "Harness Engineering",
+      "效率工具"
+    ],
+    "title": "XDash: 复盘几个月来的 AI 使用，犯了个错： 过早地将模型的代码能力，固化成了一个个 python 脚本来跑，认为这样更省钱、边界更可控（而不是用 LLM 能力）",
+    "totalScore": 56,
+    "url": "https://x.com/XDash/status/2061291617542365393"
+  },
+  "payloadHash": "sha256:fe9afaf4fed66aba900dde98c051d540ed9439ce23a7437629aa38ea61b9f218",
+  "refs": {},
+  "revisionId": "sha256:0c592dce2f8599742d40ef85de37b17aa50a33432ac1618853c99cdf9fc047fa",
+  "schemaVersion": 1,
+  "updatedAt": 1780373786286
+}

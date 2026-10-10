@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773302810873,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773302810873",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "下面给你一个**具体实例**，并基于文章内容提炼出**最佳实践**。\n\n---\n\n## 实例：企业内部 “研发助手” Agent\n\n场景：  \n用户在 Slack 里对研发助手说：\n\n> “帮我看看昨天线上报警的原因；如果需要，整理一份竞品价格调研；另外明天早上 9 点提醒我查看今天部署后的稳定性数据。”\n\n这个系统里，父 Agent 应这样拆分：\n\n### 1. Sync 子 Agent：阻塞式\n**任务**：分析昨天报警原因，读取日志、最近变更、告警记录，并给父 Agent 一个简明结论。  \n**为什么用 Sync**：父 Agent 需要这个结果，才能继续回答用户 “报警原因是什么”。\n\n---\n\n### 2. Async 子 Agent：异步式\n**任务**：调研竞品价格并生成报告，完成后直接回 Slack。  \n**为什么用 Async**：这是长任务，不需要阻塞当前对话，用户可以先拿到主问题答案。\n\n---\n\n### 3. Scheduled 子 Agent：定时式\n**任务**：明天早上 9 点自动拉取最近 24 小时部署稳定性指标，并发送分析。  \n**为什么用 Scheduled**：任务要在未来某个时间点执行，而且执行时需要拿 “最新数据”。\n\n---\n\n# 基于这个实例的最佳实践（精炼）\n\n### 1. 用 “三种模式” 覆盖全部委托场景\n- **Sync**：当前回合必须依赖结果\n- **Async**：独立长任务，完成后再通知\n- **Scheduled**：未来触发，且要基于当时的新数据执行\n\n> 经验法则：**不确定时默认 Async**。\n\n---\n\n### 2. 子 Agent 的首要价值是 “上下文压缩”，不是 “智能分工”\n在报警分析这个例子里，子 Agent 可能读 10 份日志、调用 20 次工具；父 Agent 只接收一段摘要。  \n这样能显著降低父 Agent 上下文膨胀，保持长对话稳定。\n\n> 最佳实践：**父 Agent 只拿摘要，不拿完整执行轨迹。**\n\n---\n\n### 3. Sync 返回 “简洁总结”，Async/Scheduled 返回 “面向用户的完整答复”\n- **Sync 子 Agent**：输出要短、结构化、便于父 Agent 后续综合\n- **Async/Scheduled 子 Agent**：输出要完整，因为它们往往直接面向用户\n\n> 同一个子 Agent 执行器可以复用，只通过 prompt framing 区分风格。\n\n---\n\n### 4. 工具设计上，分成多个明确工具，不要用一个工具加 mode 参数\n例如：\n- `delegate_task`（同步）\n- `delegate_async_task`（异步）\n- `schedule_task`（定时）\n\n这样比一个`delegate (mode=sync|async|scheduled)`更稳。  \n因为模型通常**更擅长选工具**，不擅长**在参数里做精细模式判断**。\n\n---\n\n### 5. 子 Agent 默认不要继续派生子 Agent\n在这个研发助手例子中，建议先做**深度 1 委托**：\n- 父 Agent 可以委托\n- 子 Agent 不再继续委托\n\n这样可避免递归膨胀、路由混乱和调试困难。\n\n---\n\n### 6. Async 和 Scheduled 必须返回 “任务句柄”\n比如返回：\n- taskId\n- sessionId\n- eventId\n\n这样父 Agent 之后才能：\n- 查询状态\n- 获取结果\n- 取消任务\n- 修改计划任务\n\n> 这是异步系统从 “能跑” 到 “可运营” 的关键。\n\n---\n\n### 7. 路由信息与任务执行解耦\n在 Slack 场景中，子 Agent 不需要知道自己在 Slack。  \n它只接收：\n- `channel`\n- `destination`\n- `channelMeta`\n\n执行完后统一交给消息分发层发送。  \n这样以后接入 Telegram、邮件、钉钉时，不必改子 Agent 逻辑。\n\n---\n\n### 8. 先做 “通用子 Agent”，谨慎做 “专家子 Agent”\n对于 “报警分析、竞品调研、定时汇报” 这类任务，优先用**通用子 Agent + 清晰任务描述**。  \n不要过早拆成：\n- 日志专家 Agent\n- 价格专家 Agent\n- 部署专家 Agent\n\n因为专门化会带来：\n- 路由复杂度\n- 错误分派风险\n- 测试面膨胀\n\n> 优先让 “任务描述” 承担 specialization，而不是让 “Agent 类型” 承担。\n\n---\n\n## 一句话总结\n在 “研发助手” 这个实例里，**最佳实践**是：\n\n> 用**Sync 拿当前必需结果**、用**Async 处理独立长任务**、用**Scheduled 在未来时点获取新数据执行任务**；同时坚持**父 Agent 只收摘要、工具显式分离、默认单层委托、异步任务可追踪、路由与执行解耦、优先通用而非专家化**。\n\n如果你愿意，我还可以继续把这个实例进一步整理成一张**“何时用 Sync / Async / Scheduled” 决策表**。",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773302810873,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0c4b723b379f078f313c82fffc5fce0eac0ae8f8d5e80823c645968f117480b3",
+  "refs": {
+    "sessionId": "1773302511052_89k80r74"
+  },
+  "revisionId": "sha256:d5151b5b87f5d26fb904acd9db4656102857f793aab5a474460414c9cccf2ddf",
+  "schemaVersion": 1,
+  "updatedAt": 1773302810873
+}

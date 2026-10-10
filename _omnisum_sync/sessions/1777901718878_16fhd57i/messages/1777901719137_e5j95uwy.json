@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777901653815,
+  "entityType": "message",
+  "id": "1777901719137_e5j95uwy",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# idoubi 发布 open-agent-sdk：开源替代 claude-agent-sdk\n\n## 文章核心\n\n作者通过让 Claude Code 分析 `claude-code-sourcemap` 源码，将其中的 Agent 逻辑抽离出来，开发了一个新的开源项目：`open-agent-sdk`。\n\n它的目标是替代 `claude-agent-sdk`，用于更灵活、高效地开发 Agent 产品。\n\n项目地址：  \nhttps://github.com/shipany-ai/open-agent-sdk\n\n---\n\n## claude-agent-sdk 的问题\n\n作者认为，`claude-agent-sdk` 虽然能加速 Agent 产品开发，但存在明显缺陷：\n\n1. **依赖闭源 Claude Code**  \n   Claude Code 本身不开源，调用逻辑是黑盒，出问题很难排查和修复。\n\n2. **运行成本较高**  \n   每次处理 query 都需要创建 Claude Code 进程，资源开销大，不适合云端高并发、大规模调用。\n\n---\n\n## open-agent-sdk 的优势\n\n`open-agent-sdk` 基于 Claude Code 的源码逻辑重新实现，主要特点包括：\n\n1. **接口兼容**  \n   基本兼容 `claude-agent-sdk` 的接口，迁移时只需替换包名。\n\n2. **完全开源**  \n   开发者可以自由查看、修改和定制逻辑，避免黑盒依赖。\n\n3. **无 CLI 进程开销**  \n   通过函数调用实现，不依赖本地 Claude Code CLI 进程，更适合云端 Agent 高并发场景。\n\n4. **MIT 协议**  \n   项目采用 MIT 开源协议，方便商业和个人项目使用。\n\n---\n\n## 作者的比喻\n\n作者用一个比喻形容这个项目：\n\n> Claude Code 家后院起火，我让 Claude Code 把家里的桌椅板凳、锅碗瓢盆都搬出来，盖了一座新房子，让大家都可以免费住。\n\n意思是：基于 Claude Code 暴露出的逻辑，重建了一个开放、可复用、可定制的 Agent SDK。\n\n---\n\n## 产品与商业价值\n\n从产品角度看，`open-agent-sdk` 的价值主要在于：\n\n- 降低 Agent 产品开发门槛；\n- 减少对闭源工具的依赖；\n- 提升云端部署和高并发调用能力；\n- 方便企业做深度定制和私有化集成。\n\n它更适合希望构建自有 Agent 平台、Coding Agent、自动化工作流产品的团队。\n\n---\n\n## 热门评论关注点\n\n评论区主要关注：\n\n- 其他开源 Coding Agent Harness 项目的联动；\n- 是否会有人开发配套客户端；\n- 在 Serverless 环境中，是否能执行类 Bash 工具或文件系统操作。\n\n这些讨论说明，开发者对“开源、可控、可部署”的 Agent 基础设施需求正在增强。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777901653815,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d83a175ab0b79a5952b2f9d16cfd719ddab457e9d2cd30ea6d97c8c81a9f66df",
+  "refs": {
+    "sessionId": "1777901718878_16fhd57i"
+  },
+  "revisionId": "sha256:9861c976dfd5fce656aab03d819d9319fc3af92f4ecd2e14e8e2a28e92519dc0",
+  "schemaVersion": 1,
+  "updatedAt": 1777901653815
+}

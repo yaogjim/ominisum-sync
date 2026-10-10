@@ -1,0 +1,70 @@
+{
+  "createdAt": 1777276959728,
+  "entityType": "session",
+  "id": "1777276959728_ld22smdu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "研究Anthropic Managed Agents、Vercel Open Agents和Cube Sandbox的架构设计",
+      "在设计Agent系统时显式拆分session、workflow/harness和sandbox对象",
+      "评估现有Agent产品是否具备durable session、observability、approval和policy能力",
+      "将control plane与data plane分层作为Agent基础设施设计原则"
+    ],
+    "archiveReason": "文章系统梳理了Agent基础设施中的session、sandbox、harness、control plane与data plane分层，对Agent产品架构设计有长期参考价值",
+    "classifiedAt": 1777284789413,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent组织架构新共识",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Agent系统应区分session、harness/workflow与sandbox，避免将记忆、控制、凭证和执行环境混在同一生命周期中",
+      "session不等于context window，长期运行Agent需要durable session、event log、approval、policy、resume与replay等机制",
+      "Agent架构将进一步分化为control plane和data plane，前者负责规划治理，后者负责执行和环境承载",
+      "多Agent产品形态会分化为面向工程用户的coding workflow和面向普通用户的数字员工组织界面"
+    ],
+    "oneHighValuePoint": "Agent不能与执行容器绑定，session、harness、sandbox必须分层，才能支持恢复、治理、观测和长期运行。",
+    "oneLineReview": "一篇高质量的Agent infra趋势综述，价值在于把多个产品案例抽象成清晰的架构共识。",
+    "primaryCategory": "AI Agent基础设施",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为理解Agent运行时架构和产品组织形态的参考材料",
+    "secondaryCategories": [
+      "系统架构",
+      "多Agent协作",
+      "AI产品设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章讨论强Agent成为可组织劳动单元后，系统架构应从模型中心转向session、harness、sandbox分层，并强调durable session、控制面与数据面分离，以及多Agent产品的不同组织形态。",
+    "tags": [
+      "Agent",
+      "Sandbox",
+      "Session",
+      "Control Plane",
+      "Agent Infra"
+    ],
+    "title": "当 agent 足够强之后，我们该如何把它们组织起来",
+    "totalScore": 75,
+    "url": "https://x.com/t1anyufan/status/2047961721290281090?s=46&t=bx0WG1AGHlEB9ipAHDEpnw"
+  },
+  "payloadHash": "sha256:d7c17b6fdcb5647e3a8dc4c0ec5ddb1f6c225c753bdcc50ff773db64d025e1a3",
+  "refs": {},
+  "revisionId": "sha256:b52eff0c3bf77f82d41eed74c123106f7c8984e46146b8244220a1acbe499453",
+  "schemaVersion": 1,
+  "updatedAt": 1777284789416
+}

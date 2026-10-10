@@ -1,0 +1,63 @@
+{
+  "createdAt": 1773827400680,
+  "entityType": "session",
+  "id": "1773827400680_auuc6ob3",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文档在目标机器上试跑一次安装流程，验证硬件与系统兼容性",
+      "将其与现有微调方案在速度、显存占用和可视化能力上做一次对比评估"
+    ],
+    "archiveReason": "项目覆盖训练、推理、UI、硬件支持和安装路径，适合作为工具索引与后续对比基线",
+    "classifiedAt": 1773827419969,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "本地开源模型训练平台概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Unsloth 同时提供 Studio Web UI 与代码方式，支持本地训练和推理",
+      "项目强调更快训练和更低显存占用，并支持 GGUF、LoRA、safetensors 等格式"
+    ],
+    "oneHighValuePoint": "将本地开源模型训练、推理、导出和多模态交互整合到统一 Web UI 中，显著降低了使用门槛。",
+    "oneLineReview": "适合做工具发现与快速上手参考，但更像产品清单而非高质量深度技术文章。",
+    "primaryCategory": "AI模型训练工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为本地训练与推理工具选型参考",
+    "secondaryCategories": [
+      "大模型本地部署",
+      "开源训练框架"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份 Unsloth GitHub 项目说明，核心价值在于快速展示其本地训练、推理、模型导出、多模态支持和安装方式。内容偏产品能力罗列，实操入口清晰，但方法论较弱，性能收益缺少充分独立证据支撑。",
+    "tags": [
+      "Unsloth",
+      "LLM微调",
+      "本地推理"
+    ],
+    "title": "unslothai/unsloth: Unified web UI for training and running open models like Qwen, DeepSeek, and Gemma locally.",
+    "totalScore": 63.5,
+    "url": "https://github.com/unslothai/unsloth"
+  },
+  "payloadHash": "sha256:8f48a05e5f4829998a1b33fb1a72c665197224234aa896b4dca53e7dd85bbdf6",
+  "refs": {},
+  "revisionId": "sha256:c6001b8a44833ca0ae383721c8782d2757fb0afa99ddf9092a6b65a5929bf9ba",
+  "schemaVersion": 1,
+  "updatedAt": 1773827419982
+}

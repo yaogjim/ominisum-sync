@@ -1,0 +1,70 @@
+{
+  "createdAt": 1776322712203,
+  "entityType": "session",
+  "id": "1776322712203_uuxj0y4o",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "基于自身需求快速对比 pi-mono、AI SDK 与 Claude Agent SDK 的模型绑定、工具调用和成本",
+      "先实现一个 CLI 版 Agent 原型，验证 prompt、工具调用与多 agent 协作流程",
+      "研究 craft-agents-oss 的项目结构，提炼可复用工程实践",
+      "如果桌面端体积敏感，再补充评估 Tauri 与 Electron 的取舍"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776325437239,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "TypeScript Agent栈选型建议",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "TypeScript Agent 开发可关注 pi-mono、Vercel AI SDK、Claude Agent SDK 等方案",
+      "应用层可先从 CLI 起步，避免过早投入界面开发",
+      "Electron 在稳定性和生态上有优势，但体积较大",
+      "可参考 craft-agents-oss 这类开源项目学习实际工程组合方式"
+    ],
+    "oneHighValuePoint": "先从 CLI 形态验证 Agent 核心能力，再决定是否投入 UI 开发，有助于降低早期复杂度。",
+    "oneLineReview": "有一些实用选型线索，但更像碎片化经验帖，缺少证据和系统比较。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "C",
+    "rejectReason": "内容以个人经验型推荐为主，论据和对比测试不足，信息深度有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "TypeScript技术栈",
+      "工具与框架选型"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕 TypeScript 技术栈下的 Agent 开发展开简短选型建议，推荐 pi-mono、Electron 与从 CLI 起步，并给出一个开源项目作为参考。整体偏经验分享，适合作为快速踩点信息，不适合当作系统性决策依据。",
+    "tags": [
+      "TypeScript",
+      "Agent",
+      "pi-mono",
+      "Electron",
+      "CLI",
+      "框架选型"
+    ],
+    "title": "宝玉: 如果是 TypeScript 技术栈，做 Agent 开发首选 pi-mono，功能强，调用方便",
+    "totalScore": 42.5,
+    "url": "https://x.com/dotey/status/2044429284131951084"
+  },
+  "payloadHash": "sha256:89844cbfbc089c24d01ecef2dcbcdbda40ec439663818faead8f69f28dacdbf1",
+  "refs": {},
+  "revisionId": "sha256:150b5752de8d9e2b46ae6c71c0f6f31029a1a47d5672f07b2910e38ea09e5f38",
+  "schemaVersion": 1,
+  "updatedAt": 1776643673701
+}

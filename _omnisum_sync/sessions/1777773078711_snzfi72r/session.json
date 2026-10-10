@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777773078711,
+  "entityType": "session",
+  "id": "1777773078711_snzfi72r",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "调研Agent分层记忆架构，包括事实记忆、状态记忆、偏好记忆和事件日志的拆分方式",
+      "在设计Agent系统时避免直接将整篇Markdown笔记塞入上下文，优先抽取结构化事实和可检索状态"
+    ],
+    "archiveReason": "提供了关于Agent记忆设计的简洁判断，可作为后续研究分层记忆和结构化内存的线索",
+    "classifiedAt": 1777773528247,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent记忆为何不能照搬Wiki",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "人类笔记系统强调可读性和可编辑性，Agent记忆系统强调精确检索、状态更新和低噪声上下文",
+      "长期Agent如果不处理旧信息权重和记忆漂移，可能随着运行时间增加而表现退化"
+    ],
+    "oneHighValuePoint": "Agent记忆应区分人类可读的Markdown层与机器高效调用的结构化内存层。",
+    "oneLineReview": "观点清晰但证据不足，适合作为Agent记忆架构设计的启发性短评。",
+    "primaryCategory": "AI Agent",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "LLM记忆系统",
+      "知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为Karpathy式LLM Wiki更适合人类阅读与维护，不适合长期自主运行的Agent。Agent需要低噪声、结构化、可频繁更新的分层记忆，否则会增加token成本、幻觉风险和记忆漂移问题。",
+    "tags": [
+      "Agent记忆",
+      "第二大脑",
+      "结构化内存",
+      "LLM Wiki",
+      "记忆漂移"
+    ],
+    "title": "阿绎 AYi: 我终于想明白，为什么Karpathy的LLM Wiki模式，在自主Agent身上完全行不通了",
+    "totalScore": 59.5,
+    "url": "https://x.com/AYi_AInotes/status/2049318687065174449"
+  },
+  "payloadHash": "sha256:3947b646ba0adb2277e293c8355980b3d856f748a63dce2433486fb5ffe61713",
+  "refs": {},
+  "revisionId": "sha256:c2c3bc451ea2e1d2fdf18198a052f514b0ac8eed939a0346e7f2213aeb8a13f4",
+  "schemaVersion": 1,
+  "updatedAt": 1777774266288
+}

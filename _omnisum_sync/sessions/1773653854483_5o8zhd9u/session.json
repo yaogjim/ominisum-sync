@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773653854483,
+  "entityType": "session",
+  "id": "1773653854483_5o8zhd9u",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "参考其多源检索与评分框架，提炼适合自己场景的信息研究工作流",
+      "如有实际需求，可先小范围试用并重点验证结果质量、引用真实性和时效性"
+    ],
+    "archiveReason": "包含安装方式、数据源设计、评分机制和多个应用示例，适合作为同类研究Agent的参考样本",
+    "classifiedAt": 1773829422067,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "多源热点研究AI技能库",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "通过跨平台信号源聚合近30天内容并做去重、排序、综合摘要",
+      "使用二阶段检索、实体提取、句柄解析和跨平台收敛检测提升召回与相关性",
+      "将研究结果进一步转化为可复制的提示词、briefing和持续监控工作流"
+    ],
+    "oneHighValuePoint": "最有价值的是其“多源信号聚合+统一评分+二次补充检索”的研究流程设计，具备较强方法参考意义。",
+    "oneLineReview": "功能设计完整、示例丰富，适合了解多源研究Agent的实现思路，但需要对其效果宣传保持审慎。",
+    "primaryCategory": "AI工具与研究自动化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期重点参考，若后续实际使用该工具可转为长期保留",
+    "secondaryCategories": [
+      "开源项目文档",
+      "Agent工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份开源AI research skill的README，核心能力是聚合Reddit、X、YouTube、HN、Polymarket等近30天信息并生成带引用的总结。文档覆盖功能演进、安装配置、评分逻辑和大量案例，实操性强，但营销成分偏重，证据多来自项目自述。",
+    "tags": [
+      "AI Agent",
+      "多源信息检索",
+      "GitHub README",
+      "趋势研究",
+      "提示词生成"
+    ],
+    "title": "mvanhorn/last30days-skill: AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "totalScore": 68.5,
+    "url": "https://github.com/mvanhorn/last30days-skill"
+  },
+  "payloadHash": "sha256:a7ac51aa2b63e88d25543765e583a1445571602c63193d515bfe15d17c65b400",
+  "refs": {},
+  "revisionId": "sha256:41fe0d637a01bbad9a5cfe6ed763c08038c6222a4d91d7101ee79a3370b54c4d",
+  "schemaVersion": 1,
+  "updatedAt": 1773829422082
+}

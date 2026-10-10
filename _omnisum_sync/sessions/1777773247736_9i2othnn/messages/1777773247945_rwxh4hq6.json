@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773247945_rwxh4hq6",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Claude Code 多模型配置技巧：用 Shell Alias 快速切换模型\n\n## 核心内容\n\n文章介绍了一种给 **Claude Code 配置中转站或第三方大模型** 的简单方法：  \n在 `~/.zshrc` 或 `~/.bashrc` 等 Shell 启动配置文件中，提前写好不同的命令别名，然后通过不同命令启动 Claude Code，对应使用不同模型。\n\n例如：\n\n- `claude`：使用官方 Claude 模型\n- `claude-ling`：使用蚂蚁百灵 / Ling 模型\n- `claude-ds`：使用 DeepSeek 模型\n\n本质上是通过 **环境变量 + alias** 的方式，为不同模型配置不同的 API 地址、Key 或模型参数。\n\n## 价值亮点\n\n### 1. 切换模型更简单\n\n过去切换 Claude Code 模型可能需要改配置、重启、折腾插件。  \n这种方式只需要打开不同终端窗口，输入不同命令即可。\n\n### 2. 适合多项目、多模型场景\n\n可以根据项目需要选择不同模型：\n\n- 官方 Claude 适合通用编码\n- DeepSeek 适合性价比或特定代码任务\n- Ling 等第三方模型适合测试新模型能力\n\n### 3. 配置灵活，可扩展\n\n这种方式不仅能切模型，也可以扩展到：\n\n- 按需开启代理\n- 配置不同 API 中转站\n- 为不同项目绑定不同模型服务\n\n## 评论区补充观点\n\n### 上下文无法共享\n\n有人指出：  \n如果每个终端窗口使用一个模型，那么不同窗口之间的 Claude Code 上下文无法共享。\n\n### 可用 LangCLI 等工具增强体验\n\n评论中提到 `langcli` 这类工具，可以在不丢失上下文的情况下切换模型，并兼容 Claude Code。\n\n### 本质是 Alias 配置\n\n也有人总结得很直接：  \n这套方案本质上就是给不同模型配置多个 `alias`，简单但实用。\n\n## 一句话总结\n\n这是一个通过 Shell Alias 给 Claude Code 快速配置多模型入口的小技巧，优点是简单、灵活、低成本，适合经常在 Claude、DeepSeek、Ling 等模型之间切换的开发者。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6c9082702008ae71d2d750476ca8fb4aba2ce914ffc1fe12bd2c749f930c1c57",
+  "refs": {
+    "sessionId": "1777773247736_9i2othnn"
+  },
+  "revisionId": "sha256:b1a173a0ab1c07a6f767b6221a0112d8b748712f6b348a01104b4e6406cc9127",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

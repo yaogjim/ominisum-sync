@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780380563882,
+  "entityType": "message",
+  "id": "1780380708064_7mmjvsi8",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 一、总结\n\n**pi-cursor-sdk** 是一个给 **pi 编程代理**用的扩展。\n\n它的作用：\n\n> 让 pi 可以通过本地 `@cursor/sdk` 调用 **Cursor 模型**，比如 Composer、GPT、Claude、Gemini 等。\n\n核心能力：\n\n- 在 pi 里使用 Cursor 模型：`cursor/composer-2-5`\n- 支持 `/login` 保存 Cursor API Key\n- 支持 `/model` 切换 Cursor 模型\n- 支持 Cursor 的：\n  - fast 快速模式\n  - plan 计划模式\n  - thinking 思考控制\n  - 图片输入\n  - 会话恢复\n  - MCP 工具\n- 可以把 pi 的部分工具桥接给 Cursor 使用\n- 不使用 Cursor 云代理，只使用本地 Cursor SDK Agent\n\n---\n\n# 二、解读\n\n## 1. 它解决什么问题？\n\n如果你平时用 **pi** 作为命令行 AI 编程助手，但又想用 **Cursor 的模型生态**，这个扩展就很有用。\n\n简单说：\n\n> pi 负责交互体验，Cursor SDK 负责模型能力。\n\n你不用离开 pi，就能调用 Cursor 模型。\n\n---\n\n## 2. 怎么用？\n\n安装：\n\n```bash\npi install npm:pi-cursor-sdk\n```\n\n启动：\n\n```bash\npi --model cursor/composer-2-5\n```\n\n进入 pi 后登录：\n\n```text\n/login\n```\n\n选择：\n\n```text\nUse an API key → Cursor → 粘贴 Cursor SDK API Key\n```\n\n如果登录后模型列表没更新：\n\n```text\n/cursor-refresh-models\n```\n\n---\n\n## 3. API Key 注意点\n\n它 **不会复用**：\n\n- Cursor 桌面版登录\n- Cursor CLI 登录\n- Cursor 订阅状态\n- OAuth 状态\n\n必须单独提供 **Cursor SDK API Key**。\n\n可以来自：\n\n- Cursor Dashboard → Integrations\n- Team service account key\n\n---\n\n## 4. 模型 ID 怎么看？\n\n示例：\n\n```bash\ncursor/gpt-5.5@1m:medium\n```\n\n含义：\n\n| 部分 | 含义 |\n|---|---|\n| `cursor/` | Cursor 提供方 |\n| `gpt-5.5` | 模型 |\n| `@1m` | 上下文窗口 |\n| `:medium` | pi 控制的思考等级 |\n\n---\n\n## 5. fast / plan / thinking 是什么？\n\n### fast\n\n快速模式，适合更快响应。\n\n```bash\npi --model cursor/composer-2-5 --cursor-fast\n```\n\n关闭：\n\n```bash\npi --model cursor/composer-2-5 --cursor-no-fast\n```\n\n### plan\n\nCursor 的计划模式。\n\n```bash\npi --model cursor/composer-2-5 --cursor-mode plan\n```\n\n### thinking\n\npi 可以控制部分模型的思考强度：\n\n```bash\npi --model cursor/gpt-5.5@1m --thinking medium\n```\n\n但如果 `pi --list-models` 显示 `thinking=no`，只代表 **pi 不能控制思考参数**，不代表模型不会思考。\n\n---\n\n## 6. 工具桥接是什么？\n\n这个扩展可以把 pi 中一部分工具暴露给 Cursor 使用。\n\n例如：\n\n- pi 工具名：`sem_reindex`\n- Cursor 侧看到：`pi__sem_reindex`\n\n但默认会隐藏一些 Cursor 已有的基础工具：\n\n- `read`\n- `bash`\n- `write`\n- `edit`\n- `grep`\n- `find`\n- `ls`\n\n因为 Cursor 本身就有类似能力，避免重复和冲突。\n\n如果要关闭桥接：\n\n```bash\nPI_CURSOR_PI_TOOL_BRIDGE=0 pi --model cursor/composer-2-5\n```\n\n---\n\n## 7. 它的边界\n\n它不是万能的。\n\n限制包括：\n\n- 只支持本地 Cursor SDK Agent\n- 不支持 Cursor 云代理\n- 必须有 Cursor SDK API Key\n- Web Search / Web Fetch 是否显示，取决于 Cursor SDK 是否暴露事件\n- token 统计是近似值\n- 某些 Cursor 内部工具活动可能无法实时显示\n\n---\n\n# 三、我的意见\n\n这个项目适合：\n\n- 已经在用 pi 的开发者\n- 想在 pi 里调用 Cursor 模型的人\n- 需要 Cursor 模型 + pi 工具生态结合的人\n- 熟悉命令行、API Key、MCP 的高级用户\n\n不太适合：\n\n- 只想简单聊天的人\n- 不想配置 API Key 的人\n- 不熟悉终端和环境变量的人\n- 希望直接复用 Cursor 登录状态的人\n\n我的判断：\n\n> 这是一个偏高级、偏工程化的桥接扩展，价值在于把 pi 的交互体验和 Cursor 的模型能力打通。\n\n优点：\n\n- 功能很完整\n- 与 pi 集成较深\n- 支持模型发现、缓存、思考控制、图片、MCP\n- 对调试和平台测试考虑很细\n\n缺点：\n\n- 配置项很多\n- 文档信息量偏大\n- 新手上手成本较高\n- 很依赖 Cursor SDK 的能力边界\n\n一句话评价：\n\n> 如果你已经重度使用 pi 和 Cursor，这是一个很实用的增强插件；如果只是普通用户，可能会觉得太复杂。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780380563882,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b48b7ffa795665ba514de3cac9e92ffbfcfcc91e2d4f2a5453a642d2c3bfa62c",
+  "refs": {
+    "sessionId": "1780308177749_g8eh5sg7"
+  },
+  "revisionId": "sha256:5f9140c4e09bfe42e8235d5baaab70f634f0fc34a1cd64ebf956b52eb6b51723",
+  "schemaVersion": 1,
+  "updatedAt": 1780380563882
+}

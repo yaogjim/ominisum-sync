@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777901653815,
+  "entityType": "message",
+  "id": "1777901710952_avfh8fb5",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Podwise Skills：把播客从“收听内容”升级为“研究工具”\n\n## 一句话总结\n\nPodwise Skills 通过 AI 自动检索、总结、对比和反驳播客内容，让用户不再依赖逐期收听，而是直接围绕问题获取高密度结论、观点分歧和研究洞察。\n\n## 核心观点\n\n作者强烈推荐 Podwise Skills，认为它改变了播客的使用方式：\n\n过去是：\n\n> 订阅节目 → 倍速收听 → 手动整理信息\n\n现在变成：\n\n> 提出研究问题 → AI 聚合相关播客 → 输出结论、分歧、反驳与重点\n\n本质上，播客从“内容消费媒介”变成了“知识研究数据库”。\n\n## 主要能力\n\n### 1. 跨播客主题研究\n\n用户可以直接输入类似：\n\n```bash\n/podwise AI Agent 2026 趋势\n```\n\n系统会自动检索全网相关播客内容，跨多期节目进行总结，提炼出主题趋势和核心结论。\n\n这对需要快速了解某个行业、技术或商业趋势的人非常有价值。\n\n### 2. 自动识别观点冲突\n\nPodwise 不只是做摘要，还能标出不同嘉宾之间的观点差异和冲突。\n\n例如关于 AI Agent 的未来，有人看好企业落地，有人认为仍受限于成本、可靠性或组织流程，系统会把这些分歧整理出来。\n\n这比单纯摘要更接近研究报告的价值。\n\n### 3. 观点反驳与压力测试\n\n作者提到，如果听到 Peter Thiel 这类人物的观点，可以直接交给 AI 进行反驳和压力测试。\n\n这相当于让 AI 扮演一个“会抬杠的投研同事”，帮助用户判断观点是否站得住脚，而不是被动接受权威观点。\n\n### 4. Weekly Recap 自动补重点\n\n作者现在不再倍速听播客，而是把关注的二三十个节目交给 Podwise 做 weekly recap 和 catch-up。\n\n效果是：\n\n- 每周节省 10 小时以上\n- 信息密度更高\n- 不容易错过重点\n- 更适合高频信息获取者\n\n## 产品价值\n\n### 对个人用户\n\nPodwise 解决的是信息过载问题。\n\n用户不再需要完整听完大量播客，而是围绕问题直接获取有价值的信息。\n\n### 对研究型用户\n\n它更像是“播客版 Perplexity + 投研助手”。\n\n尤其适合：\n\n- 产品经理\n- 投资人\n- 创业者\n- 行业研究员\n- AI / 科技从业者\n- 内容创作者\n\n### 对播客生态\n\n这意味着播客内容的价值会从“节目播放量”延伸到“知识可检索性”和“观点可引用性”。\n\n未来优质播客可能不只是被听见，而是被 AI 反复调用、提炼和再利用。\n\n## 使用方式\n\n安装命令：\n\n```bash\nnpx skills add hardhackerlabs/podwise-cli\n```\n\n示例查询：\n\n```bash\n/podwise AI Agent 企业落地案例\n```\n\n项目地址：\n\n[https://github.com/hardhackerlabs/podwise-cli](https://github.com/hardhackerlabs/podwise-cli)\n\n## 值得关注的问题\n\n评论区有人提出几个关键问题：\n\n- 播客转文字稿的流程如何处理？\n- Podwise API 在哪里获取？\n- 是否需要会员才能获得较好体验？\n- 如何保证资料来源和证据链？\n\n作者回应称，转写和处理会在提问过程中自动完成，最终直接给出优化后的结果。\n\n## 结论\n\nPodwise Skills 的核心价值不是“帮你听播客”，而是“帮你用播客做研究”。\n\n它代表了一种新的信息获取方式：\n\n> 不再消费内容，而是调度内容；  \n> 不再听完节目，而是提取结论；  \n> 不再被动接收，而是主动质询和整合。\n\n如果它的体验足够稳定，这类工具会显著改变知识工作者处理长音频内容的方式。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777901653815,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:66b1e89580b1a26dd03444b56c0397cd9709d9451b90c5b834fd2599c6ab04de",
+  "refs": {
+    "sessionId": "1777901710641_h1x48vlp"
+  },
+  "revisionId": "sha256:85d8631fcd5502c7b103c3feea5a4c6eb30fe45a72767c3b5ed2a91d75cde9b5",
+  "schemaVersion": 1,
+  "updatedAt": 1777901653815
+}

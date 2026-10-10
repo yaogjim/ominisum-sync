@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780370999176,
+  "entityType": "message",
+  "id": "1780371040924_hpj3j0og",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\nCoze 新版本核心升级：**支持多 Agent 协作**。\n\n主要亮点：\n\n- **多个 Agent 可在同一项目里协作**\n  - 可分角色、分技能、分模型\n  - 例如：Claude Code 做规划，Codex 做代码 Review，Coze Agent 做文案和素材\n\n- **Agent 来源更开放**\n  - 支持 Coze 原生 Agent\n  - 支持云端 Claude Code、Codex CLI、OpenClaw\n  - 也支持本地 Claude Code、Codex CLI、OpenClaw 接入\n\n- **云端和本地都能用**\n  - 云端：Coze 提供云电脑和自动部署\n  - 本地：可访问本机代码和文件\n\n- **编程和视频创作也升级**\n  - 编程：从想法、设计、开发到部署都放进一个项目\n  - 视频：灵感、脚本、分镜、素材、剪辑可连续推进\n\n---\n\n## 二、解读\n\n简单说，Coze 想做的是：\n\n> 把多个 AI 助手放进同一个“项目群聊”里，让它们像团队成员一样分工合作。\n\n以前使用 Claude Code、Codex、OpenClaw，往往是：\n\n- 一个窗口写代码\n- 一个窗口审代码\n- 一个窗口做文案\n- 上下文容易断\n- 文件和任务难同步\n\n现在 Coze 的思路是：\n\n- 你建一个项目\n- 拉进多个 Agent\n- 每个 Agent 负责不同任务\n- 需要谁干活，就 `@谁`\n\n这更像一个 **AI 工作室**：\n\n| 角色 | 任务 |\n|---|---|\n| Claude Code | 架构、规划、复杂代码 |\n| Codex | 编码、Review、修 bug |\n| Coze Agent | 文案、素材、流程衔接 |\n| OpenClaw | 自动化操作、本地任务 |\n\n这样复杂任务不再压给一个 AI，而是让多个 AI 接力完成。\n\n---\n\n## 三、我的意见\n\n这是一次很重要的升级。\n\n因为未来 AI 工具的关键，不只是“单个模型有多强”，而是：\n\n> 能不能把多个 AI、多人协作、文件、代码、流程整合到一个项目里。\n\nCoze 这次的方向是对的，尤其适合：\n\n- 软件开发\n- 产品设计\n- 内容创作\n- 视频制作\n- 自动化工作流\n\n不过也要注意：\n\n- 多 Agent 协作容易变复杂\n- 任务分配不好，反而会混乱\n- 云端 Agent 涉及代码和文件，隐私安全要重视\n- 最终效果仍取决于提示词、权限、上下文管理\n\n一句话评价：\n\n> Coze 正在从“做 Bot 的平台”，升级成“AI 团队协作平台”。这比单纯堆模型更有价值。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780370999176,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:cac56d717f40160468c0b8578b86bd0d873881c3dad27e885a6eb81605d72bdd",
+  "refs": {
+    "sessionId": "1780371040379_beel03xy"
+  },
+  "revisionId": "sha256:9b24fd22711f0b7a51f2f9bae579ac213b3966aa3731989db24fdb6994f6d2de",
+  "schemaVersion": 1,
+  "updatedAt": 1780370999176
+}

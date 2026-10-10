@@ -1,0 +1,72 @@
+{
+  "createdAt": 1775819217068,
+  "entityType": "session",
+  "id": "1775819217068_7l2v7taf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用五层框架审视现有智能体项目，检查是否在数据、安全和接口层存在架构短板。",
+      "将记忆、知识和会话状态从文件系统迁移到结构化数据库或对象存储方案中。",
+      "把高风险工具访问改为基于角色和审批流的显式授权，而不是仅靠提示词限制。",
+      "为不同界面建立统一的身份映射和访问控制策略，避免渠道间权限漂移。",
+      "参考 Dash 的实现，选一个真实任务做端到端最小可运行原型验证。"
+    ],
+    "archiveReason": "提供了构建智能体软件的五层系统框架，兼具架构视角与工程落地参考价值。",
+    "classifiedAt": 1775820261898,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "智能体软件的系统工程框架",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "优化单个组件无法替代系统级设计，智能体软件本质上仍是系统工程问题。",
+      "生产级智能体需统一考虑代理逻辑、数据上下文、安全边界、交互界面和基础设施五层。",
+      "权限控制应由工具与系统配置强制执行，而不是依赖提示词约束模型行为。",
+      "智能体效果提升很多时候来自数据层和上下文工程优化，而不只是模型升级。",
+      "多入口界面下的身份认证与访问控制必须保持一致，否则容易产生系统性漏洞。"
+    ],
+    "oneHighValuePoint": "最有价值的是把智能体系统拆成五个必须协同设计的工程层次，避免把文件系统、bash 或提示词当作万能核心抽象。",
+    "oneLineReview": "不是在讲提示词技巧，而是在提醒你把智能体当成完整软件系统来设计。",
+    "primaryCategory": "AI工程方法论",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "系统工程",
+      "智能体架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将智能体软件视为系统工程问题，提出智能体工程、数据工程、安全工程、界面工程和基础设施工程五层框架，并结合 Dash 项目说明如何通过权限隔离、结构化上下文和统一接口设计来构建可用的生产级代理系统。",
+    "tags": [
+      "智能体软件",
+      "系统工程",
+      "数据工程",
+      "安全工程",
+      "多界面架构",
+      "基础设施"
+    ],
+    "title": "系统工程：构建有效的智能体软件",
+    "totalScore": 77.5,
+    "url": "https://x.com/ashpreetbedi/status/2041568919085854847"
+  },
+  "payloadHash": "sha256:2961acc1cbb53ba8a73a2abd2ed205fe57f9c00bccdd10272379d88634073e02",
+  "refs": {},
+  "revisionId": "sha256:0f69d8e81de83154562d60cf697c9cbabc11be8381b1b83fe46f7294c92c417d",
+  "schemaVersion": 1,
+  "updatedAt": 1775820261906
+}

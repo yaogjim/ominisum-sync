@@ -1,0 +1,68 @@
+{
+  "createdAt": 1780449205737,
+  "entityType": "session",
+  "id": "1780449205737_7xna1a7n",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 Codex Desktop，可在隔离环境中试装验证第三方 API 接入效果。",
+      "检查项目源码和权限请求，确认自动修改配置及本地控制能力的安全风险。",
+      "若需要纯文本模型处理视觉任务，可参考其 Vision Bridge 思路进行原型实验。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780449990545,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "OpenCodex本地网关简介",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "OpenCodex 可自动修改 Codex Desktop 配置以接入第三方 OpenAI 兼容 API。",
+      "项目提供本地 Web 控制台用于管理 API Key、模型、日志和 Codex 重启。",
+      "Computer Use 引擎基于 macOS CGEvent 实现鼠标、键盘和窗口控制。",
+      "Vision Bridge 可将截图压缩后交给视觉模型描述，再将描述注入文本模型上下文。"
+    ],
+    "oneHighValuePoint": "Vision Bridge 通过多模态模型描述截图并注入提示词，使纯文本模型也能参与视觉类 Computer Use 流程。",
+    "oneLineReview": "适合作为工具发现线索，但不值得深度阅读或长期收藏。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容主要是项目README和功能宣传，缺少架构细节、实现原理、使用案例和可靠性证据，长期知识价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "本地网关",
+      "Codex Desktop扩展"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了 GitHub 项目 OpenCodex，一个面向 Codex Desktop 的本地网关，支持第三方 API、Web 控制台、macOS Computer Use 控制以及 Vision Bridge。内容包含核心功能和基础安装命令，但缺少深入技术说明和实际验证案例。",
+    "tags": [
+      "OpenCodex",
+      "Codex Desktop",
+      "Computer Use",
+      "Vision Bridge",
+      "GitHub项目"
+    ],
+    "title": "AITabby/opencodex: Local gateway for Codex Desktop — custom API, web dashboard, Vision Bridge",
+    "totalScore": 48,
+    "url": "https://github.com/AITabby/opencodex"
+  },
+  "payloadHash": "sha256:d1a43498ccc307538e3a8bf068e53e4e2433b49c507a0afcd15e4b7a2fbc298f",
+  "refs": {},
+  "revisionId": "sha256:591da79337e374ad28ada2a50c28151528780c515af3465de134a5683e3ed1c8",
+  "schemaVersion": 1,
+  "updatedAt": 1780449990919
+}

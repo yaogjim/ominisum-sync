@@ -1,0 +1,70 @@
+{
+  "createdAt": 1780380596738,
+  "entityType": "session",
+  "id": "1780380596738_802mjz09",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据自身代码库瓶颈判断需要哪类可靠性机制：规范治理、角色分工、上下文管理、TDD约束或架构改进。",
+      "试用Spec Kit或OpenSpec，将一个小功能改造为规范、计划、任务、验证四阶段流程。",
+      "为AI生成代码建立可执行契约，包括测试、架构约束、代码审查清单和不可违反的工程原则。",
+      "在团队中补充证据包机制，记录每次AI辅助变更检查了什么、未检查什么以及剩余风险。"
+    ],
+    "archiveReason": "系统梳理了规范驱动开发在AI编码中的背景、证据、工具实现和关键争议，适合作为设计AI开发流程的参考资料。",
+    "classifiedAt": 1780380883976,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编码中的规范驱动开发",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI生成代码的核心风险不是语法合理性，而是用户意图、规范约束与程序行为之间的语义偏差。",
+      "SDD可分为规范优先、规范锚定、规范作为源三个严谨级别。",
+      "治理强度可从事后审查、自然语言规范、可执行合约上升到宪法治理。",
+      "Spec Kit强调章程治理，BMAD强调多代理角色协作，OpenSpec适合存量项目变更，GSD强调上下文窗口管理，Superpowers强调自动触发的行为约束。",
+      "反方观点认为过度依赖规范到代码可能削弱系统设计能力，AI时代更应重视代码库质量和架构熵控制。"
+    ],
+    "oneHighValuePoint": "将不同SDD工具理解为不同的“可靠性来源理论”：章程、角色、变更文件夹、上下文管理、自动触发或设计规范。",
+    "oneLineReview": "这是一篇高密度的AI编码流程综述，价值在于把SDD工具、学术依据和反方批判放在同一框架下比较。",
+    "primaryCategory": "AI辅助软件工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "规范驱动开发",
+      "AI编码工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章梳理规范驱动开发成为AI编码默认架构的原因，引用多项研究说明AI代码生成的可靠性问题，并比较Spec Kit、BMAD、OpenSpec、GSD、Superpowers等工具的不同治理思路，同时呈现反对观点。",
+    "tags": [
+      "SDD",
+      "AI编程",
+      "软件工程",
+      "代码生成",
+      "开发流程"
+    ],
+    "title": "规范驱动开发是人工智能编码的新默认做法",
+    "totalScore": 72.5,
+    "url": "https://x.com/AlphaSignalAI/status/2057523186766377470"
+  },
+  "payloadHash": "sha256:ceab72f93bc38d3d672f212a5bdbd6f50baf63d842aba333346e6e70cb6bf285",
+  "refs": {},
+  "revisionId": "sha256:94b86599eec4a9f6350e5cfaa7f740c70262148b9a6f1ac628917a8217c75cea",
+  "schemaVersion": 1,
+  "updatedAt": 1780384451274
+}

@@ -1,0 +1,70 @@
+{
+  "createdAt": 1774320928287,
+  "entityType": "session",
+  "id": "1774320928287_jqk2b8b5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为当前项目创建精简版 `CLAUDE.md`，只保留高频命令、架构约束和关键约定",
+      "补充 `.claude/settings.json`，明确允许命令与敏感文件拒绝规则",
+      "将常用审查或修复流程封装成 `commands/` 中的自定义命令",
+      "当配置膨胀时，将规范拆分到 `.claude/rules/` 并增加路径作用域"
+    ],
+    "archiveReason": "内容结构清晰、可直接用于搭建 Claude Code 项目级配置，具备一定复用价值",
+    "classifiedAt": 1774320950869,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude配置目录实战指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "`.claude/` 分为项目级目录与 `~/.claude/` 全局目录，分别承载团队配置与个人偏好",
+      "`CLAUDE.md` 是最高杠杆配置入口，应包含命令、架构、约定与陷阱，避免冗长文档化",
+      "`rules/` 可将规范模块化，并通过路径作用域只在相关文件上下文中生效",
+      "`commands/` 可封装斜杠命令，支持通过 shell 注入上下文与参数化调用",
+      "`skills/` 与 `agents/` 适用于更复杂的自动工作流和子代理角色隔离"
+    ],
+    "oneHighValuePoint": "将 `CLAUDE.md` 保持精简，并把复杂规范拆入 `.claude/rules/` 按路径作用域加载，是提升可维护性的关键做法。",
+    "oneLineReview": "一篇偏实操的配置说明文，适合快速建立 Claude Code 使用框架，但证据和深度仍有限。",
+    "primaryCategory": "AI 编程工具配置",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为 Claude Code 配置入门和查阅资料",
+    "secondaryCategories": [
+      "开发工作流",
+      "Claude Code 使用指南"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统梳理了 Claude Code 中 `.claude/` 与 `CLAUDE.md`、rules、commands、skills、agents、settings 等配置结构，重点说明项目级与全局级目录分工，并给出入门配置步骤与示例。",
+    "tags": [
+      "Claude Code",
+      ".claude",
+      "CLAUDE.md",
+      "AI代理",
+      "开发配置"
+    ],
+    "title": "The Structure of the .claude/ Folder",
+    "totalScore": 65.5,
+    "url": "https://x.com/akshay_pachaar/status/2035341800739877091"
+  },
+  "payloadHash": "sha256:2348fb80b4a6e94787d23bfa56369cc9c016af2770bb3022bcebe750e946c892",
+  "refs": {},
+  "revisionId": "sha256:e06b6fb74374acd35146ad01f79605ebb4caa88b96937053d7de8d1b7de203b7",
+  "schemaVersion": 1,
+  "updatedAt": 1774334398207
+}

@@ -1,0 +1,69 @@
+{
+  "createdAt": 1780380785964,
+  "entityType": "session",
+  "id": "1780380785964_g9sdp0b2",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将该CLAUDE.md或同类规则加入常用AI编程项目中试用。",
+      "在项目级规则中补充团队特定约束，如测试要求、错误处理模式和代码风格。",
+      "观察AI生成代码的diff，评估是否减少了无关修改和过度设计。",
+      "把常见开发任务改写为带测试或验证标准的目标式指令。"
+    ],
+    "archiveReason": "提供了一套可直接复用的AI代码代理行为约束原则和配置方式，适合作为Claude Code或Cursor项目规则模板。",
+    "classifiedAt": 1780381119895,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude代码行为改进指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "LLM编码常见问题包括默认错误假设、隐藏困惑、过度抽象、无关重构和误删代码。",
+      "通过CLAUDE.md或插件形式，可以把编码代理的行为规则固化到项目上下文中。",
+      "外科手术式修改原则要求每一处改动都能直接追溯到用户请求，避免顺手重构。",
+      "目标驱动执行强调先定义成功标准和验证方式，再进入实现循环。"
+    ],
+    "oneHighValuePoint": "将模糊命令转化为可验证的成功标准，让LLM围绕测试和明确目标自主迭代。",
+    "oneLineReview": "这是一个实用的AI编程代理行为规范模板，方法清晰但证据支撑偏弱。",
+    "primaryCategory": "AI编程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "提示工程",
+      "软件工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍一个用于改善Claude Code行为的CLAUDE.md配置仓库，核心包含先思考、保持简单、外科手术式修改、目标驱动执行四项原则，并给出插件、项目文件和Cursor规则的安装使用方式。",
+    "tags": [
+      "Claude Code",
+      "LLM编程",
+      "CLAUDE.md",
+      "代码代理",
+      "工程规范"
+    ],
+    "title": "multica-ai/andrej-karpathy-skills: A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+    "totalScore": 71,
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills"
+  },
+  "payloadHash": "sha256:d57db61bdac535781fd97f5753f8a87e2600df9e4f360c8f53f1b54858cc08bf",
+  "refs": {},
+  "revisionId": "sha256:75f9d289432bae4f6117f2b1b66f34c1e7601b89d7af9391cfccd010e5db6621",
+  "schemaVersion": 1,
+  "updatedAt": 1780384562247
+}

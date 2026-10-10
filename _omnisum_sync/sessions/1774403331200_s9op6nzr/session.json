@@ -1,0 +1,69 @@
+{
+  "createdAt": 1774403331200,
+  "entityType": "session",
+  "id": "1774403331200_s9op6nzr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文中分类梳理自己现有 Agent 的 system prompt、memory、skills 和 runtime context 边界",
+      "在长任务场景中加入文件卸载、摘要触发阈值和子代理委派策略",
+      "为工具补全名称、描述和参数说明，优化模型的工具选择质量",
+      "为跨会话场景设计 /memories/ 目录结构和长期记忆写入规范"
+    ],
+    "archiveReason": "这是关于 Agent 上下文设计与压缩机制的系统性文档，适合作为构建复杂智能体时的长期参考资料。",
+    "classifiedAt": 1774407387474,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Deep Agents上下文工程指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "docs.langchain.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Memory 适合始终注入的短而关键的约束，Skills 适合按需加载的专用能力",
+      "通过文件卸载、摘要和子代理隔离，可以在长任务中控制上下文窗口膨胀",
+      "运行时上下文不会自动进入提示词，只有通过工具或中间件显式注入模型才可见",
+      "长期记忆应通过 CompositeBackend 和持久化存储来跨线程保留"
+    ],
+    "oneHighValuePoint": "最有价值的是将上下文管理拆分为输入上下文、运行时上下文、压缩、隔离和长期记忆五类机制，形成了可直接套用的 Agent 上下文工程框架。",
+    "oneLineReview": "一篇偏工程实践的高质量官方文档，方法体系完整，尤其适合做 Agent 架构设计时反复查阅。",
+    "primaryCategory": "AI工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "Agent设计",
+      "LangChain文档"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统梳理了 Deep Agents 的上下文工程，包括输入上下文、运行时上下文、记忆、技能、工具提示、上下文压缩、摘要机制、子代理隔离和长期记忆设计，兼具架构说明与实践建议，适合用于搭建复杂 Agent 系统时参考。",
+    "tags": [
+      "上下文工程",
+      "Deep Agents",
+      "LangChain",
+      "长上下文管理",
+      "子代理"
+    ],
+    "title": "Context engineering in Deep Agents - Docs by LangChain",
+    "totalScore": 76.5,
+    "url": "https://docs.langchain.com/oss/python/deepagents/context-engineering"
+  },
+  "payloadHash": "sha256:e642e564cd7f2ced0f6384508b90216479e5e077137512fbe82ea02bf6213254",
+  "refs": {},
+  "revisionId": "sha256:b958c82b904079983e87093c6cdc7151975d10b3e3e318cfb6ad14f34ed15366",
+  "schemaVersion": 1,
+  "updatedAt": 1774434745055
+}

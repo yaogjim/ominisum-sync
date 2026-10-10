@@ -1,0 +1,67 @@
+{
+  "createdAt": 1773285122653,
+  "entityType": "session",
+  "id": "1773285122653_33cqgxcy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "提炼其本地优先架构与统一数据模型设计，应用到个人知识库或抓取工具中",
+      "参考其CLI导出JSON和缓存实时读取模式，设计自己的自动化数据接口"
+    ],
+    "archiveReason": "包含完整的产品定位、架构思路、CLI用法与工作流示例，对本地优先工具设计和社交数据自动化有较高参考价值。",
+    "classifiedAt": 1773830288064,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 9,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "本地优先X数据工作台",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "本地优先应用可用SQLite作为跨Web UI和CLI共享的规范化真相源",
+      "归档数据与实时传输层应收敛到同一数据模型以降低系统复杂度",
+      "面向代理和自动化的工具应提供稳定JSON导出而非仅提供界面操作",
+      "AI排序应叠加在本地数据之上，而不应成为底层事实来源"
+    ],
+    "oneHighValuePoint": "最有价值的是将归档导入、实时抓取、统一规范化数据模型和代理可消费JSON接口整合进同一个本地优先架构。",
+    "oneLineReview": "产品完成度尚未成熟，但在本地优先数据工作流与可脚本化接口设计上很有参考价值。",
+    "primaryCategory": "开发工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "社交媒体数据管理",
+      "本地优先架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一款面向X/Twitter的本地优先工作台，结合Web UI与CLI，支持归档导入、实时读取缓存、搜索、收件箱分流、回复与封禁操作，并以SQLite作为统一本地数据真相源，强调自动化、代理友好和低依赖在线服务。",
+    "tags": [
+      "SQLite",
+      "X/Twitter",
+      "CLI",
+      "本地优先",
+      "自动化"
+    ],
+    "title": "steipete/birdclaw: Stores all your tweets nicely claw-able for agents.",
+    "totalScore": 77.5,
+    "url": "https://github.com/steipete/birdclaw"
+  },
+  "payloadHash": "sha256:b6a726b8512e2676f50ae5692fd337029463a2d3b70441a9f6737f38f621e46a",
+  "refs": {},
+  "revisionId": "sha256:52f7ac5273e4addee393c602a25a7013401230d3f8e2b4d574151e8f1a587cd1",
+  "schemaVersion": 1,
+  "updatedAt": 1773830288067
+}

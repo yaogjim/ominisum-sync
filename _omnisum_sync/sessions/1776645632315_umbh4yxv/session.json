@@ -1,0 +1,66 @@
+{
+  "createdAt": 1776645632315,
+  "entityType": "session",
+  "id": "1776645632315_umbh4yxv",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若你在做浏览器内开发工具，可对比评估 DOM 渲染与 xterm.js 的 Canvas 路线取舍",
+      "查看 wterm 仓库或演示，重点验证性能、选择复制体验和无障碍支持是否达到生产标准"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776646406694,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Web终端DOM渲染项目简介",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Web 终端可采用 DOM 渲染以增强可选择、可搜索和无障碍支持",
+      "Zig 核心编译为小体积 WASM，可用于网页端终端能力封装",
+      "终端传输层可通过 WebSocket 加入断线重连机制提升可用性"
+    ],
+    "oneHighValuePoint": "将 Web 终端从 Canvas 路线转向 DOM 渲染，直接换取可选择文本、搜索和无障碍等原生能力。",
+    "oneLineReview": "有一定新意的项目发布信息，但更像产品亮点罗列，缺乏足够证据和方法论沉淀。",
+    "primaryCategory": "前端开发工具",
+    "rating": "C",
+    "rejectReason": "内容主要是项目宣传式简介，信息点有限，缺少性能对比、实现细节和实际案例支撑。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "终端模拟器",
+      "WebAssembly"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章以社交平台短帖形式介绍网页终端模拟器 wterm，强调采用 DOM 而非 Canvas 渲染，支持文本选择、无障碍、24位颜色、主题及带重连的 WebSocket，并提到 Zig+WASM 的轻量核心实现。",
+    "tags": [
+      "DOM渲染",
+      "Web终端",
+      "Zig",
+      "WASM",
+      "开发工具"
+    ],
+    "title": "X 上的 Chris Tate：“Introducing wterm (“dub-term”) A terminal emulator for the web → DOM rendering — no…",
+    "totalScore": 50.5,
+    "url": "https://x.com/ctatedev/status/2044224002109907392"
+  },
+  "payloadHash": "sha256:8f69fc837cbdcfa0fa0c8cbc8212608d4a6639af3d718bcd1c108222db512d80",
+  "refs": {},
+  "revisionId": "sha256:6d43834bb7644d3926feb46ecb26965c17336b7802ac5176afa8edcec5482a75",
+  "schemaVersion": 1,
+  "updatedAt": 1776647087031
+}

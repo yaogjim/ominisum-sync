@@ -1,0 +1,75 @@
+{
+  "createdAt": 1773555892448,
+  "entityType": "session",
+  "id": "1773555892448_hlalxwd1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "先在一个小型仓库中试装acpx，验证持久会话、命名会话和JSON输出是否符合自己的自动化需求",
+      "若已使用Claude Code，可挑选dotclaude中的review或superpowers插件做一次真实任务演练",
+      "对比ACP集成与原始PTY集成在稳定性、权限控制和可观测性上的差异，再决定是否纳入主工作流"
+    ],
+    "archiveReason": "涉及ACP、acpx与dotclaude的安装方式、能力边界和典型命令，适合作为后续试用时的参考索引",
+    "classifiedAt": 1773829830726,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "ACP多Agent工作流工具综述",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "请综合我提供的多个内容，进行跨文档深度总结整理，再深入浅出解读。",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "acpx是面向ACP的无头CLI，可统一调用Codex、Claude等Agent并支持持久化会话",
+      "dotclaude提供面向Claude Code的插件市场，覆盖review、gitflow、refactor、superpowers等场景",
+      "ACP方式强调结构化协议通信，减少对终端字符流抓取的脆弱依赖",
+      "多Agent协作可通过命名会话、并行任务流和分层review提升开发流程组织性"
+    ],
+    "oneHighValuePoint": "acpx把不同编码Agent统一到ACP协议下，提供持久会话、命名会话、排队执行和结构化输出，明显优于传统PTY抓取式集成。",
+    "oneLineReview": "有一定启发和上手价值，但更像工具宣传加README拼接，深度与证据都一般。",
+    "primaryCategory": "AI开发工具与工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考，按需保留",
+    "secondaryCategories": [
+      "多Agent协作",
+      "Claude Code插件生态"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/FradSer/status/2032376535852945563",
+      "https://github.com/FradSer/dotclaude/",
+      "https://github.com/openclaw/acpx"
+    ],
+    "summaryBrief": "文章核心是推荐用acpx通过ACP协议在不同编码Agent之间进行结构化协作，并补充dotclaude插件市场的能力清单。信息偏工具说明与功能罗列，适合快速了解生态，不足以作为严谨方法论或深度实践指南。",
+    "tags": [
+      "ACP",
+      "acpx",
+      "dotclaude",
+      "多Agent",
+      "Claude Code"
+    ],
+    "title": "可选标题1. 从 ACP 到 dotclaude多 Agent 协作开发工作流深度总结2. acpxACP 与 dotc",
+    "totalScore": 64,
+    "url": "omnisun://digest/1773555892448"
+  },
+  "payloadHash": "sha256:f363901473f138ed55c9832300dd6122bfd60ce774b7b5881e500f5ab5e92e58",
+  "refs": {},
+  "revisionId": "sha256:125492958c942de7b2aa9236f3a4f90e7a98bf71733257d2ba45820bebbb7ef8",
+  "schemaVersion": 1,
+  "updatedAt": 1773829830739
+}

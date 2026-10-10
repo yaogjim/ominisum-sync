@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776645479247,
+  "entityType": "session",
+  "id": "1776645479247_ccs1peik",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "从文中列出的主题里挑 1-2 个，回到对应原播客或原作者框架做一手验证",
+      "如果你也有本地资料库，可尝试用 AI 做跨文档主题聚合并输出可执行清单"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776646222662,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "播客精华的AI摘要展示",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "产品激活、定位、优先级和产品探索被归纳为高频核心主题",
+      "反直觉观点强调减少功能、增加摩擦、减少人员和拒绝过度依赖 A/B 测试"
+    ],
+    "oneHighValuePoint": "把海量播客转录交给 AI 做跨节目主题聚合，能高效生成后续深挖的研究清单。",
+    "oneLineReview": "适合拿来找选题和启发，不适合直接当作可靠的方法论资料。",
+    "primaryCategory": "产品管理",
+    "rating": "C",
+    "rejectReason": "内容本质上是对大量播客观点的二手转述，缺少上下文展开、原始论证与系统证据，更适合作为线索清单而非深度材料。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "AI应用",
+      "知识提炼"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一条展示 Claude 对 320 期播客转录进行主题归纳的社交帖，提炼了产品构建者常见的十个核心主题与十个反直觉观点，适合快速获取启发，但缺乏背景、案例细节和方法展开。",
+    "tags": [
+      "产品构建",
+      "播客摘要",
+      "Claude",
+      "经验清单",
+      "社交媒体内容"
+    ],
+    "title": "X 上的 Lenny Rachitsky：“Testing out the new Claude Cowork. I asked it to go through every Lenny's Podc…",
+    "totalScore": 51.5,
+    "url": "https://x.com/lennysan/status/2010840092865413254"
+  },
+  "payloadHash": "sha256:dde46f119cb6b4ded47bfab0093fcd322216884b37e320c2298654c1d0e5911d",
+  "refs": {},
+  "revisionId": "sha256:2ee5b6fbcebeedd9d65d47a885569d5974f7bc2b117790d7666a03d657485e81",
+  "schemaVersion": 1,
+  "updatedAt": 1776647045562
+}

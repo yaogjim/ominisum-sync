@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780380563882,
+  "entityType": "message",
+  "id": "1780380648221_eohph7t0",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\nLangSmith 的 **Sandbox Auth Proxy** 用来保护 AI 代理沙箱的网络访问安全。\n\n核心做法：\n\n- **凭证不放进沙箱**\n  - 不把 API Key 写进 `.env`、文件或环境变量\n  - 由沙箱外部的 Auth Proxy 在请求时自动注入认证头\n\n- **网络访问可控**\n  - 代理只能访问被允许的目标\n  - 例如只允许访问 OpenAI、Anthropic、GitHub 或内部 API\n\n- **策略统一执行**\n  - 不依赖代码、SDK、包管理器是否遵守代理配置\n  - 所有出站请求都经过统一网络控制层\n\n- **支持动态凭证**\n  - 可通过回调获取短期 OAuth Token、用户级 Token\n  - 凭证仍不暴露给代理运行环境\n\n---\n\n## 二、深入浅出解读\n\n可以把 AI 代理想象成一个“自动写代码的实习生”。\n\n它可能会：\n\n- 写代码\n- 安装依赖\n- 调 API\n- 访问 GitHub\n- 请求模型服务\n- 运行命令\n\n问题是：  \n**这个实习生很能干，但不一定可信。**\n\n如果直接把 API Key 给它，就像把公司钥匙交给它：\n\n> 一旦它被提示注入、恶意依赖、错误代码影响，密钥就可能泄露。\n\nAuth Proxy 的思路是：\n\n> 不给它钥匙，只让它通过门禁系统办事。\n\n也就是说：\n\n1. 代理发起请求  \n2. 请求经过 Auth Proxy  \n3. Auth Proxy 判断能不能访问  \n4. 如果允许，再帮它加上认证信息  \n5. 代理本身看不到密钥  \n\n例如：\n\n```text\n代理请求 OpenAI API\n        ↓\nAuth Proxy 检查规则\n        ↓\n允许访问，并自动加 Authorization\n        ↓\n请求发送到 OpenAI\n```\n\n这样代理可以正常工作，但不能偷看到 API Key。\n\n---\n\n## 三、它解决了什么问题？\n\n### 1. 防止密钥泄露\n\n以前：\n\n```text\nAPI Key 放进沙箱\n代理、依赖、日志、文件都有机会接触它\n```\n\n现在：\n\n```text\nAPI Key 留在沙箱外\n代理只能使用能力，不能读取凭证\n```\n\n---\n\n### 2. 限制乱访问互联网\n\n如果代理能访问任意网站，就可能：\n\n- 下载恶意包\n- 调用未知服务\n- 泄露数据\n- 执行不安全脚本\n\nAuth Proxy 可以限制：\n\n```text\n只允许访问指定 API\n只允许访问内部包镜像\n禁止访问未知域名\n禁止访问不可信服务\n```\n\n---\n\n### 3. 更适合大规模代理运行\n\n一个代理泄露密钥已经很危险。  \n如果是成千上万个代理同时运行，风险会被放大。\n\n所以必须把：\n\n- 凭证管理\n- 网络策略\n- 权限控制\n\n放到沙箱外部，由平台统一控制。\n\n---\n\n## 四、我的意见\n\n这是一个非常合理的安全设计。\n\nAI 代理和人类开发者不同：\n\n- 人类需要开放环境来探索\n- 代理更适合“最小权限”\n- 任务明确时，访问范围就应该明确限制\n\n我认为未来 AI Agent 平台的默认安全模式应该是：\n\n```text\n不给密钥\n不给全网访问\n只给必要能力\n所有出站流量可审计\n```\n\nAuth Proxy 的价值不只是“自动加 API Key”，而是把代理运行时和安全控制面分离。\n\n一句话概括：\n\n> AI 代理可以干活，但不能拿钥匙；可以出门，但必须走安检。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780380563882,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:452d06fa670a8e3d373a229888b78033e9fa3310cd1b6860857fa0d18cbfda3f",
+  "refs": {
+    "sessionId": "1780380645477_9la0xqss"
+  },
+  "revisionId": "sha256:bfbbaf055ecbea7d26fc81ed2710fea399df1680a227091bee1e668d2eb72e8d",
+  "schemaVersion": 1,
+  "updatedAt": 1780380563882
+}

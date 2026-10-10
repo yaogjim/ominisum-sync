@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777774035725,
+  "entityType": "message",
+  "id": "1777774035724_atmtk92k",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude Code使用心法与技巧\n\n**评级**: A (73分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI编程工具\n**次类别**: 提示词工程, 开发效率\n**标签**: #Claude Code #AI编程 #上下文管理 #Agent协作 #Prompt工程\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 一篇有实操价值的 Claude Code 工作流心法总结，但部分机制解释和效果数据缺乏充分证据支撑。\n**核心高价值点**: 将 Claude Code 从“工具”重新理解为“有限注意力、有限时间、有行为偏好的同事”，由此推导出上下文管理、任务隔离和异步协作策略。\n\n### 摘要\n文章基于 Claude Code 32 个技巧，重点拆解了将 Claude 当作 junior 同事、及时 compact、跑偏重开、sub agents 上下文隔离、简单任务用 Haiku、/loop 做监控等核心心法，强调以管理有限注意力的同事来使用 AI 编程工具。\n\n### 知识要点\n- 超过一定上下文长度后应使用 /compact 重新聚焦关键信息，减少 lost in the middle 影响。\n- sub agents 的核心价值不只是并行，而是隔离探索过程，避免污染主上下文。\n- 任务跑偏时应 fail fast，及时退出重开，而不是在污染上下文中继续修正。\n- 简单任务使用较小模型可能减少过度设计，复杂任务再交给更强模型或 ultrathink。\n- /loop 更适合持续监控类任务，而不是让模型长时间连续写代码。\n\n### 行动项\n- 在 Claude Code 项目中启用 /init，并维护清晰的项目说明与约束文档。\n- 当上下文超过约 60% 或模型开始遗忘需求时，立即使用 /compact。\n- 为代码搜索、调研、测试影响面分析等探索型任务尝试使用 sub agents。\n- 建立任务复杂度分级规则：简单任务交给 Haiku，复杂任务交给 Sonnet/Opus。\n- 将 CI 检查、PR 队列、慢查询等周期性状态检查改造成 /loop 监控任务。\n\n### 存档判定\n归档: 是 — 原因: 文章不仅罗列 Claude Code 技巧，还抽象出上下文管理、任务拆分、模型选择和异步监控等可复用方法，对 AI 编程工作流有较高参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1777774035725,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:f50fceb013377340f370db52cd96d3468f1ded46e42d7fbdf6d9b4206f09a52b",
+  "refs": {
+    "sessionId": "1777773891761_qxx3riar"
+  },
+  "revisionId": "sha256:c1c3a9d47470356734a2edf7ee9a3c8c8d55b01d3a12b136038620fd6a3b1ea4",
+  "schemaVersion": 1,
+  "updatedAt": 1777774035725
+}

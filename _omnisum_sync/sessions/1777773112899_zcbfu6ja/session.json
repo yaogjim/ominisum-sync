@@ -1,0 +1,71 @@
+{
+  "createdAt": 1777773112899,
+  "entityType": "session",
+  "id": "1777773112899_zcbfu6ja",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在设计Agent记忆系统时区分热记忆、冷历史、技能记忆和用户模型，不要把所有内容放进系统提示词。",
+      "为长期记忆设置严格容量上限，只保存用户偏好、稳定事实、反复修正和可复用规范。",
+      "实现会话历史搜索机制，用数据库和摘要模型替代全量上下文注入。",
+      "在上下文压缩前增加记忆冲刷步骤，主动保存长期有用信息。",
+      "评估当前Agent系统是否因频繁修改系统提示词而破坏Prompt Caching。"
+    ],
+    "archiveReason": "文章提炼了AI Agent记忆系统的分层架构、冷热分离、提示词缓存优化等关键设计原则，对构建长期可用的智能体系统有较高参考价值。",
+    "classifiedAt": 1777773569248,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Hermes Agent记忆系统拆解",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Hermes 使用 MEMORY.md 和 USER.md 保存极小规模的高价值常驻记忆，避免把全部历史塞入系统提示词。",
+      "SQLite 会话库和 session_search 用于长尾历史回溯，通过全文搜索和辅助模型摘要返回相关上下文。",
+      "压缩长对话前执行 memory flush，将值得长期保留的信息写入持久记忆，降低摘要丢失风险。",
+      "技能系统相当于程序记忆，只在提示词中放技能索引，按需加载具体技能内容。",
+      "Honcho 层通过首轮注入和后续附加到用户消息的方式兼顾用户建模与提示词缓存稳定性。"
+    ],
+    "oneHighValuePoint": "将记忆分为常驻精简记忆、可搜索历史、程序化技能和深层用户模型，并通过保持提示词稳定来优化缓存成本。",
+    "oneLineReview": "这是一篇较高价值的AI Agent记忆系统架构分析，重点不在记住更多，而在分层、低成本、缓存友好地记住正确内容。",
+    "primaryCategory": "AI Agent架构",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "记忆系统设计",
+      "大模型应用工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章拆解 Hermes Agent 的四层记忆架构：小型提示词记忆、SQLite 会话搜索、技能记忆和 Honcho 用户建模，核心原则是保持系统提示词稳定以利用缓存，将大量历史信息转为按需检索。",
+    "tags": [
+      "Hermes Agent",
+      "AI记忆",
+      "Prompt Caching",
+      "上下文工程",
+      "Agent架构"
+    ],
+    "title": "宝玉: 转译：深度拆解 Hermes Agent 的记忆系统：它如何修正 OpenClaw 的误区 如果你读过我之前关于 ChatGPT、Claude 以及 Clawd…",
+    "totalScore": 77,
+    "url": "https://x.com/dotey/status/2049534755729707205"
+  },
+  "payloadHash": "sha256:4ac8f9c5774435a1dbed2f4d964b7b164077bb054018b28d716e491d06dce428",
+  "refs": {},
+  "revisionId": "sha256:9bcd17c8c626a0a6154f6d11cd74c94b1fd6d8d3c773a92001ed4907a420d474",
+  "schemaVersion": 1,
+  "updatedAt": 1777774218040
+}

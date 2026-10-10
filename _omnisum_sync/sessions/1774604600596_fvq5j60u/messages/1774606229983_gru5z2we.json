@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774606229984,
+  "entityType": "message",
+  "id": "1774606229983_gru5z2we",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: pi-mono智能体工具链概览\n\n**评级**: B (65.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程与智能体架构\n**次类别**: LLM应用开发, 开发工具链\n**标签**: #AI Agent #Monorepo #LLM API #Coding Agent #TUI/Web UI\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 适合作为工程参考文档浏览，不适合作为高质量深度分析文章精读。\n**核心高价值点**: 最有价值的是把统一多模型调用、Agent 状态机、终端/网页 UI 和自托管推理部署串成一套可复用的全栈工具链。\n\n### 摘要\n文章本质上是对 pi-mono 仓库多个 README 的聚合，介绍统一 LLM API、Agent Core、Coding Agent、TUI、Web UI 与 GPU pods 管理等模块，适合做功能盘点和接口查询，但结构冗长、证据与案例支撑不足。\n\n### 知识要点\n- 统一 LLM API 支持多提供商、多模型切换、工具调用、流式事件与跨提供商上下文传递\n- Agent Core 明确了消息流、事件流、工具执行钩子与并行/串行工具执行策略\n- Coding Agent 通过扩展、技能、模板和主题实现高度可定制的终端智能体工作流\n- TUI 与 Web UI 分别提供终端和浏览器侧的交互组件与会话存储能力\n- Pods 模块展示了基于 vLLM 的远程 GPU 模型部署与 OpenAI 兼容接口封装方式\n\n### 行动项\n- 若你在做智能体工程，可优先阅读 `packages/ai` 与 `packages/agent` 的 README，提炼统一事件模型和工具调用流程\n- 将其作为选型参考，对比 LangChain、Mastra、OpenAI SDK 等现有方案的扩展性与复杂度\n- 如果需要终端式编码代理，可重点关注 `packages/coding-agent` 的扩展机制和会话管理设计\n\n### 存档判定\n归档: 是 — 原因: 内容覆盖统一LLM API、Agent运行时、CLI、TUI、Web UI与部署模块，适合后续查阅具体接口和架构设计。\n不推荐: 文本主要是README与仓库目录拼接，噪声较多，缺少作者整理后的重点提炼与横向比较。\n删除: 否\n留存决策: 短期参考并归档，适合作为选型与实现细节查询资料",
+    "role": "assistant",
+    "timestamp": 1774606229984,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:a0a1de5127a9fea8dd9166ba249eccfd2fdb452205676b7df0722fcfa44d1426",
+  "refs": {
+    "sessionId": "1774604600596_fvq5j60u"
+  },
+  "revisionId": "sha256:7a544429242738358f742563836f4e7f7f2873fbe410ce15afe13aaf48f950e5",
+  "schemaVersion": 1,
+  "updatedAt": 1774606229984
+}

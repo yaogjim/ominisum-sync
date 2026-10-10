@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773830489622,
+  "entityType": "message",
+  "id": "1773830489621_iciv44jk",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Qwen3.5缓存失效排查\n\n**评级**: B (65分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: LLM推理性能优化\n**次类别**: 缓存机制, 推理服务工程实践\n**标签**: #Qwen3.5 #MLX-LM #prompt cache #Mamba/SSM #性能排障\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一篇偏工程排障的高实用讨论串，问题定位具体，但结论仍属过渡性方案。\n**核心高价值点**: 最有价值的是明确指出 reasoning token 与不可裁剪的 SSM/Mamba 缓存共同导致多轮对话前缀复用失败，这是性能骤降的核心原因。\n\n### 摘要\n该Issue围绕Qwen3.5在mlx-lm中提示缓存命中差的问题展开，讨论了Mamba/SSM缓存不可裁剪、reasoning token导致前缀失配、tools序列化顺序变化等原因，并给出临时补丁与模板修复思路。\n\n### 知识要点\n- Qwen3.5 在 MLX-LM 中的缓存问题不只是简单未命中，还涉及 reasoning token 破坏共享前缀与 SSM 缓存不可 trim 的结构性限制。\n- 工具调用场景下，chat template 的 JSON 键顺序与参数顺序不稳定，也会让缓存键漂移并持续触发全量重处理。\n\n### 行动项\n- 如果你在本地跑 Qwen3.5 agent，优先检查是否存在 reasoning token、tools 渲染顺序和 checkpoint 位置导致的缓存失配。\n- 在官方修复前，可评估采用文中临时补丁或稳定化 chat template 输出顺序，并用 tokens processed 指标验证缓存是否真正生效。\n\n### 存档判定\n归档: 是 — 原因: 包含问题成因分析、临时补丁、边界条件和后续修复方向，对实际排障有直接参考价值。\n删除: 否\n留存决策: 短期保留，作为Qwen3.5在MLX环境下缓存问题与临时修复方案的参考，待官方方案稳定后可降级处理。",
+    "role": "assistant",
+    "timestamp": 1773830489622,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:fa0610024d3fedff7ac92ad421b82f5c38d994a879b1f03fa7f438ec6575d637",
+  "refs": {
+    "sessionId": "1773279570011_60yf2i9c"
+  },
+  "revisionId": "sha256:a82a8845a4d947a8fe8526d03b2ba28218f7b8fdc79001c51bb0a71d842c3cfe",
+  "schemaVersion": 1,
+  "updatedAt": 1773830489622
+}

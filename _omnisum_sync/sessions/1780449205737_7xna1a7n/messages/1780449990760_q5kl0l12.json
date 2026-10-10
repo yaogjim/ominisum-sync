@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780449990761,
+  "entityType": "message",
+  "id": "1780449990760_q5kl0l12",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: OpenCodex本地网关简介\n\n**评级**: C (48分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI开发工具\n**次类别**: 本地网关, Codex Desktop扩展\n**标签**: #OpenCodex #Codex Desktop #Computer Use #Vision Bridge #GitHub项目\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 3 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 适合作为工具发现线索，但不值得深度阅读或长期收藏。\n**核心高价值点**: Vision Bridge 通过多模态模型描述截图并注入提示词，使纯文本模型也能参与视觉类 Computer Use 流程。\n\n### 摘要\n文章介绍了 GitHub 项目 OpenCodex，一个面向 Codex Desktop 的本地网关，支持第三方 API、Web 控制台、macOS Computer Use 控制以及 Vision Bridge。内容包含核心功能和基础安装命令，但缺少深入技术说明和实际验证案例。\n\n### 知识要点\n- OpenCodex 可自动修改 Codex Desktop 配置以接入第三方 OpenAI 兼容 API。\n- 项目提供本地 Web 控制台用于管理 API Key、模型、日志和 Codex 重启。\n- Computer Use 引擎基于 macOS CGEvent 实现鼠标、键盘和窗口控制。\n- Vision Bridge 可将截图压缩后交给视觉模型描述，再将描述注入文本模型上下文。\n\n### 行动项\n- 如正在使用 Codex Desktop，可在隔离环境中试装验证第三方 API 接入效果。\n- 检查项目源码和权限请求，确认自动修改配置及本地控制能力的安全风险。\n- 若需要纯文本模型处理视觉任务，可参考其 Vision Bridge 思路进行原型实验。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是项目README和功能宣传，缺少架构细节、实现原理、使用案例和可靠性证据，长期知识价值有限。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1780449990761,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:3d137a85cc1857bb02db1dae8608d404fcb3b3f01bf7c90a228ba85dd2580401",
+  "refs": {
+    "sessionId": "1780449205737_7xna1a7n"
+  },
+  "revisionId": "sha256:2302e2d7a8f0d708c5de234593e202a4aceda1dec4c7770d1a04682fe82e1ee8",
+  "schemaVersion": 1,
+  "updatedAt": 1780449990761
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1776645406515,
+  "entityType": "message",
+  "id": "1776645426674_p58rurfk",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# dflash-mlx v0：一款更完善的本地推理服务工具\n\n## 核心内容\n`dflash-mlx v0.1.1` 发布后，`dflash-serve` 已支持多个关键能力，包括：**工具调用、推理、流式输出，以及完全兼容 OpenAI API 的服务接口**。这意味着它可以更方便地接入现有 AI 应用生态。\n\n## 兼容性价值\n这次更新的一个重点是**生态兼容性很强**。它已经可以与 `OpenCode`、`aider`、`Continue`、`Open WebUI` 等工具配合使用，同时也能通过 `oMLX` 获取。  \n通俗说，它不只是“能跑模型”，而是在朝着“能直接接入主流工作流”的方向演进。\n\n## 社区反馈\n热门讨论里，大家最关注的是两点：\n\n### 1. 本地高性能推理正在变得可行\n有人提到，**全精度 MiniMax-M2.7 已经可以在家用设备上运行**，而且速度表现不错：  \n- 解码约 `100 tokens/s`\n- 预填充约 `5050 tokens/s`\n\n这说明本地大模型推理的性能门槛正在下降。\n\n### 2. MLX 生态在快速成熟\n社区用户展示了很强的硬件配置和测试环境，也有人反馈 `oMLX` 在**单机推理、编码代理、缓存管理、量化效果**等方面表现优秀。  \n整体信号很明确：**MLX 相关工具链正在快速扩展，生态活跃度明显提升。**\n\n## 一句话总结\n`dflash-mlx` 这次更新的意义，不只是功能变多了，而是它正在成为一个**更标准化、更易接入、更适合本地 AI 工作流的推理服务层**；同时也反映出 **MLX 本地推理生态正在加速成熟**。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1776645406515,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7e62ed9e1d844c608549cdd4e7818beaaa7db8db458881d601bcdd11d8a34098",
+  "refs": {
+    "sessionId": "1776645426672_84zs7qse"
+  },
+  "revisionId": "sha256:e82db1597ffecc9e750ff7985529db4a2688554934b20742c2ba290d545477a2",
+  "schemaVersion": 1,
+  "updatedAt": 1776645406515
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1780307301722,
+  "entityType": "session",
+  "id": "1780307301722_zet2czja",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估现有产品是否需要提供API、CLI、MCP或Agent Skill接口",
+      "梳理产品中哪些功能可能被Agent原生能力替代，哪些仍需要GUI承载"
+    ],
+    "archiveReason": "提供了关于通用Agent、App、SaaS未来形态的简明分类框架，可作为产品趋势判断素材",
+    "classifiedAt": 1780307508895,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent OS与应用未来形态",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "通用Agent可能成为用户与数字服务交互的统一入口",
+      "部分SaaS产品未来需要提供CLI、MCP或Skill能力以便被Agent调用",
+      "不是所有App都会消失，复杂或高确认成本场景仍可能保留GUI"
+    ],
+    "oneHighValuePoint": "将未来App形态归纳为消亡、后台工具化、GUI插件化三类，便于思考AI Agent时代的产品定位。",
+    "oneLineReview": "观点简洁、有启发性，但主要是趋势判断，缺少数据和案例支撑。",
+    "primaryCategory": "AI产品趋势",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "Agent",
+      "SaaS演进"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为通用Agent可能成为未来操作系统，应用将出现消亡、转为CLI/MCP/Skill、保留GUI插件三种形态。SaaS若想适应Agent时代，需要提供可被Agent调用的接口与技能。",
+    "tags": [
+      "Agent OS",
+      "AI应用形态",
+      "MCP",
+      "CLI",
+      "SaaS"
+    ],
+    "title": "宝玉: 通用 Agent 就是未来的操作系统了，就像现在我们操作电脑需要借助操作系统，以后我们跟 AI 通信会通过 Agent OS",
+    "totalScore": 55.5,
+    "url": "https://x.com/dotey/status/2060949916256460894"
+  },
+  "payloadHash": "sha256:6716f804e53f46686b699773641db3ecffa924a0a1f42ee3af47477a9a65195c",
+  "refs": {},
+  "revisionId": "sha256:a371d90b512bd18cf9e5c8e024e4277da628cec7421806af58031e785df428f0",
+  "schemaVersion": 1,
+  "updatedAt": 1780308058308
+}

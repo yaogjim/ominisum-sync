@@ -1,0 +1,133 @@
+{
+  "createdAt": 1779153058220,
+  "entityType": "session",
+  "id": "1779153058220_uiyvgvgi",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为现有代码库设计分层CLAUDE.md结构，区分全局规范和子目录本地规范。",
+      "梳理可通过Hooks自动化的格式化、测试、lint和会话后配置改进流程。",
+      "评估是否为关键语言启用LSP集成，以提升AI工具在大型代码库中的符号导航能力。",
+      "将高频任务流程抽象为Skills，并避免把所有说明堆入全局上下文。",
+      "为团队指定AI编程工具配置负责人，统一维护权限、插件、规范和最佳实践。"
+    ],
+    "archiveReason": "包含Claude Code在大型代码库中的配置分层、工具链扩展和组织治理方法，可作为AI编程工具落地参考。",
+    "classifiedAt": 1780616032419,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude Code大型代码库实践",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "claude.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "Claude Code 的扩展层一目了然。",
+        "height": 1976,
+        "id": "img-2",
+        "nearbyText": "",
+        "resolvedUrl": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a04aaf1c37c6196e5ee19bb_fig1-the-claude-code-harness-v1%402x.png",
+        "role": "figure",
+        "score": 95,
+        "src": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a04aaf1c37c6196e5ee19bb_fig1-the-claude-code-harness-v1%402x.png",
+        "width": 2880
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 1404,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a04e25f1984beb50dc5525b_fig2-phases-of-claude-code-rollout-v1%402x.png",
+        "role": "figure",
+        "score": 75,
+        "src": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a04e25f1984beb50dc5525b_fig2-phases-of-claude-code-rollout-v1%402x.png",
+        "width": 2880
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 2204,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a04e2860abbe67418ca0f8b_fig3-getting-started-checklist-v2%402x.png",
+        "role": "figure",
+        "score": 75,
+        "src": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a04e2860abbe67418ca0f8b_fig3-getting-started-checklist-v2%402x.png",
+        "width": 2880
+      }
+    ],
+    "knowledgePoints": [
+      "大型代码库中AI编程工具的效果不仅取决于模型，还取决于围绕模型构建的工具链和上下文管理体系。",
+      "CLAUDE.md应保持精简且分层，根文件提供全局指引，子目录文件提供局部规范，避免上下文膨胀。",
+      "Hooks不仅可用于约束行为，也可用于自动化检查、动态加载上下文和持续改进配置。",
+      "Skills通过按需加载专业知识实现渐进式披露，避免所有知识都塞入全局上下文。",
+      "LSP集成能提供符号级导航，减少大型代码库中基于文本搜索造成的噪声。",
+      "MCP服务器可将Claude连接到内部文档、工单、分析平台和结构化搜索工具。",
+      "成功落地AI编程工具需要明确配置所有权、治理机制和跨职能协作，而不只是个人自发使用。"
+    ],
+    "oneHighValuePoint": "将Claude Code能力拆解为CLAUDE.md、Hooks、Skills、Plugins、LSP、MCP和子代理等可组合扩展层，并说明各自适用场景和常见误区。",
+    "oneLineReview": "这是一篇偏厂商视角但方法论清晰、可操作性较强的AI编程工具规模化落地指南。",
+    "primaryCategory": "AI辅助编程",
+    "published": "May 14, 2026",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "dateModified": "May 15, 2026",
+        "datePublished": "May 14, 2026",
+        "description": "The most successful Claude Code deployments share a set of recognizable patterns across configurations, tooling, and org structure. This article is part of Claude Code at scale, a new series covering best practices for engineering organizations building with Claude Code at enterprise scale.",
+        "headline": "How Claude Code works in large codebases: Best practices and where to start",
+        "image": "https://cdn.prod.website-files.com/68a44d4040f98a4adf2207b6/6a060215e86f555c3638a2a1_og_how-claude-code-works-in-large-codebases-best-practices-and-where-to-start.jpg",
+        "mainEntityOfPage": {
+          "@id": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start",
+          "@type": "WebPage"
+        },
+        "publisher": {
+          "@id": "https://claude.com/#organization"
+        }
+      }
+    ],
+    "schemaTypes": [
+      "BlogPosting"
+    ],
+    "secondaryCategories": [
+      "工程效率",
+      "大型代码库治理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结了Claude Code在大型代码库中的部署模式，强调CLAUDE.md、Hooks、Skills、Plugins、LSP、MCP和子代理的分层使用，并提出代码库导航、配置维护和组织所有权等实践建议。",
+    "tags": [
+      "Claude Code",
+      "大规模代码库",
+      "AI编程工具",
+      "开发者生产力",
+      "工程组织"
+    ],
+    "title": "How Claude Code works in large codebases: Best practices and where to start | Claude",
+    "totalScore": 70,
+    "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start"
+  },
+  "payloadHash": "sha256:f349d4312090ad2e95a8a364a05756f8e2d62ad4fdddbf7868677d86b0c3f6d8",
+  "refs": {},
+  "revisionId": "sha256:f5634ec30d79bbe285aaf5ffe794ed6475ca92daf8e967ce60de9348504f31f7",
+  "schemaVersion": 1,
+  "updatedAt": 1780616034584
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780616250551,
+  "entityType": "message",
+  "id": "1780616250550_ii45defd",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Codex++插件注入工程解析\n\n**评级**: A (70分)  |  **深度阅读**: 可选  |  **建议操作**: 精读\n\n**主类别**: 软件工程\n**次类别**: Electron逆向工程, AI开发工具\n**标签**: #Codex++ #Electron #插件系统 #逆向工程 #asar #代码注入 #macOS签名\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一篇高信息密度的硬核工程案例摘要，适合了解闭源 Electron 应用扩展与补丁体系设计。\n**核心高价值点**: 最有价值的是其展示了插件系统注入不只是 monkey patch，而是需要同时处理包结构、完整性校验、二进制开关、签名和自动更新链路的完整工程闭环。\n\n### 摘要\n文章介绍 Codex++ 如何为闭源 Electron 版 OpenAI Codex 桌面应用实现插件系统，涉及 asar 重打包、完整性哈希更新、Electron fuse 修改、macOS 重签名、AST source patch 以及 Sparkle 自动更新兼容等关键工程手段。\n\n### 知识要点\n- Electron 应用的 app.asar 可通过修改入口文件实现 loader 注入，但需要保留 unpacked 文件集并采用原子重打包避免损坏应用\n- Electron 的 asar 完整性校验依赖 Info.plist 中的 ElectronAsarIntegrity，修改后需要同步更新 asar header 的 SHA-256\n- Electron fuse 可通过 sentinel 字符串定位并修改特定开关，例如关闭 EnableEmbeddedAsarIntegrityValidation\n- 修改 macOS 应用内容会破坏原 Developer ID 签名，需要使用 codesign 进行 ad-hoc 重签名\n- 面对 minified 闭源 bundle，可通过 fingerprint 匹配和 AST 级 source patch 定位并暴露内部对象\n- 为兼容 Sparkle 自动更新，可在更新前恢复原始签名应用，更新后再自动触发补丁修复流程\n\n### 行动项\n- 阅读 Codex++ GitHub 源码，重点查看 asar patch、fuse 修改、签名修复和 Sparkle hook 的具体实现\n- 将该案例整理为 Electron 应用扩展机制研究笔记，提炼可复用的安全降级、原子写入和更新兼容设计模式\n\n### 存档判定\n归档: 是 — 原因: 文章浓缩展示了从asar修改、完整性校验、Electron fuse、macOS重签名到更新兼容的一整套工程化注入方案，具有较高案例参考价值\n删除: 否\n留存决策: 短期重点参考并归档，适合作为Electron闭源应用扩展和补丁工程案例留存",
+    "role": "assistant",
+    "timestamp": 1780616250551,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:b7a50a234e42f971e230f966ec9a061e993e325d223e4774ac7cba300441c259",
+  "refs": {
+    "sessionId": "1777627739404_mdbwbu8e"
+  },
+  "revisionId": "sha256:add3094fd365eedf0eebc5ebec4ad2dfbb51f9710cdd200b5a402840b60e720e",
+  "schemaVersion": 1,
+  "updatedAt": 1780616250551
+}

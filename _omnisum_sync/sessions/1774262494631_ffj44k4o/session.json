@@ -1,0 +1,67 @@
+{
+  "createdAt": 1774262494631,
+  "entityType": "session",
+  "id": "1774262494631_ffj44k4o",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你常做本地 AI 部署，可进一步查看 Pinokio 官方文档验证 Agent Interpreter 的真实能力边界",
+      "对比 Pinokio 与手工环境管理在安装成本、代理接入、调试效率上的差异后再决定是否采用"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774262511118,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Pinokio代理集成功能速评",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Pinokio 的定位是本地 AI 应用的一键安装与运行环境",
+      "Pinokio 7 强调 Agent Interpreter，可让 AI CLI 代理零配置接入本地应用",
+      "作者给出一个借助 Gemini CLI 读取日志并快速修复应用问题的案例"
+    ],
+    "oneHighValuePoint": "Pinokio 7 的 Agent Interpreter 试图把本地 AI 应用统一暴露给各类 AI CLI 代理进行自动发现和控制，这个产品方向值得关注。",
+    "oneLineReview": "有一点工具发现价值，但更像宣传帖而非高质量可复用内容。",
+    "primaryCategory": "AI工具与本地部署",
+    "rating": "C",
+    "rejectReason": "内容偏宣传和体验分享，缺少系统说明、实测细节与可验证证据。",
+    "retentionDecision": "低优先级保留，短期参考后可删除",
+    "secondaryCategories": [
+      "AI代理",
+      "产品更新",
+      "开发效率工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一条关于 Pinokio 7 新功能 Agent Interpreter 的社交媒体介绍，核心卖点是让 Claude Code、Codex 等 AI 代理零配置发现并控制 Pinokio 内的本地应用。附带一个个人排障案例，但整体信息有限，偏产品安利。",
+    "tags": [
+      "Pinokio",
+      "本地AI",
+      "AI代理",
+      "Agent Interpreter",
+      "CLI工具"
+    ],
+    "title": "@TheINAOG: Hey, they just dropped something creamy in Pinokio",
+    "totalScore": 43,
+    "url": "https://x.com/TheINAOG/status/2035658260053684389"
+  },
+  "payloadHash": "sha256:d5d5b82dff29d76d5d58568568e2414292008615d95c9c8997d8f3da8362c66f",
+  "refs": {},
+  "revisionId": "sha256:60c4f8265a8d040fc840bd1b2ce452668a268890b730a92ae3745a6ed2344bb0",
+  "schemaVersion": 1,
+  "updatedAt": 1774262511121
+}

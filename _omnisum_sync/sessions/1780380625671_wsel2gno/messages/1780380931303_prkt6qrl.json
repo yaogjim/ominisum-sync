@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780380931304,
+  "entityType": "message",
+  "id": "1780380931303_prkt6qrl",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Codex任务引导与排队技巧\n\n**评级**: B (56分)  |  **深度阅读**: 否  |  **建议操作**: 浏览\n\n**主类别**: AI工具使用\n**次类别**: 编程助手, 效率技巧\n**标签**: #Codex #AI Agent #Steer #Queue #任务管理\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 一条实用但较浅的 Codex 操作提示，适合快速了解 Steer 与 Queue 的区别。\n**核心高价值点**: 明确区分 Steer 是干预当前任务，Queue 是安排后续任务。\n\n### 摘要\n文章介绍 Codex Agent 执行任务时补充指令的两种方式：Steer 用于中途干预并改变当前方向，Queue 用于在当前任务完成后排队执行后续任务，并补充了正确快捷键说明。\n\n### 知识要点\n- Steer 可在 Agent 当前任务未完成时插入新指令，引导其改变执行方向\n- Queue 不打断当前任务，而是将消息排队，在当前步骤或任务完成后依次执行\n- Codex 中 Steer 的快捷键勘误为 Ctrl + Enter，Mac 为 Command + Enter\n- 可通过排队多个 Continue 让长任务在无人值守时持续推进\n\n### 行动项\n- 在使用 Codex 时，根据需求选择 Steer 干预当前任务或 Queue 安排后续任务\n- 尝试在长任务后排队 Continue，观察是否能稳定延长 Agent 工作时间\n- 记录不同 Agent 实现中 Queue 消息是逐条执行还是合并提交\n\n### 存档判定\n归档: 否\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1780380931304,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:c696de76ca703a9211fd063eb2599366a3a2bc67d83740afddcc747ca8f29331",
+  "refs": {
+    "sessionId": "1780380625671_wsel2gno"
+  },
+  "revisionId": "sha256:d622b7abacc43aa4724127036d6f2d889f3e16c41a1d9c0820c78063d8b7aa94",
+  "schemaVersion": 1,
+  "updatedAt": 1780380931304
+}

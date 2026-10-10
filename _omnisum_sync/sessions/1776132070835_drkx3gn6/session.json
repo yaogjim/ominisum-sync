@@ -1,0 +1,66 @@
+{
+  "createdAt": 1776132070835,
+  "entityType": "session",
+  "id": "1776132070835_drkx3gn6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用“生成内核”框架审视自己负责的产品，识别哪些能力应沉淀为AI可调用的核心套件与工具。",
+      "在做AI集成时避免过度绑定单一协议，优先设计可迁移的能力层和接口抽象。"
+    ],
+    "archiveReason": "文章提出了可复用的“生成内核”框架，并结合Shopify、Salesforce、WooCommerce等案例分析平台在AI时代的战略分化，适合后续反复参考。",
+    "classifiedAt": 1776132083326,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Shopify开放AI后台的意义",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "yage.ai",
+    "favicon": "",
+    "knowledgePoints": [
+      "Shopify选择开放协议层，让外部AI负责发现与交互，自身掌控交易闭环。",
+      "“生成内核”包括核心套件、引导知识、杠杆工具集三部分，可用于设计AI原生产品。",
+      "MCP等协议当前仍不稳定，未来更可能是多协议并存而非单一标准统一。"
+    ],
+    "oneHighValuePoint": "最有价值的是“生成内核”三层框架，把AI时代的软件平台拆解为核心套件、引导知识和杠杆工具集，便于分析产品与平台的长期竞争力。",
+    "oneLineReview": "这是一篇框架感很强的行业分析文，方法论价值高于新闻价值。",
+    "primaryCategory": "AI原生软件架构",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "电商平台战略",
+      "协议与开发者生态"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章借Shopify向AI Agent开放后台能力一事，分析其与Salesforce、WooCommerce等平台的不同AI策略，并提出“生成内核”框架：核心套件、引导知识、杠杆工具集。作者进一步指出协议层仍处于早期混战，真正长期有价值的是理解如何设计可被AI调用的平台能力。",
+    "tags": [
+      "Shopify",
+      "AI Agent",
+      "生成内核",
+      "MCP",
+      "平台开放策略"
+    ],
+    "title": "Shopify 把后台全开放给 AI 了：从生成内核的视角看这件事为什么重要",
+    "totalScore": 75.5,
+    "url": "https://yage.ai/share/shopify-generative-kernel-20260413.html?utm_source=twitter&utm_medium=thread&utm_campaign=shopify-generative-kernel"
+  },
+  "payloadHash": "sha256:4bd7bcc72c259ea6eebd6ee37cb6dff60d577261ab63e0fffbbd3ad65e1f48ae",
+  "refs": {},
+  "revisionId": "sha256:7351bab9e958c22ec8d8fa6a9c38734956cdefb798ed8ebdef03d36b8e4042cc",
+  "schemaVersion": 1,
+  "updatedAt": 1776138977779
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774320950871,
+  "entityType": "message",
+  "id": "1774320950870_rtpyufzp",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude配置目录实战指南\n\n**评级**: B (65.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI 编程工具配置\n**次类别**: 开发工作流, Claude Code 使用指南\n**标签**: #Claude Code #.claude #CLAUDE.md #AI代理 #开发配置\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇偏实操的配置说明文，适合快速建立 Claude Code 使用框架，但证据和深度仍有限。\n**核心高价值点**: 将 `CLAUDE.md` 保持精简，并把复杂规范拆入 `.claude/rules/` 按路径作用域加载，是提升可维护性的关键做法。\n\n### 摘要\n文章系统梳理了 Claude Code 中 `.claude/` 与 `CLAUDE.md`、rules、commands、skills、agents、settings 等配置结构，重点说明项目级与全局级目录分工，并给出入门配置步骤与示例。\n\n### 知识要点\n- `.claude/` 分为项目级目录与 `~/.claude/` 全局目录，分别承载团队配置与个人偏好\n- `CLAUDE.md` 是最高杠杆配置入口，应包含命令、架构、约定与陷阱，避免冗长文档化\n- `rules/` 可将规范模块化，并通过路径作用域只在相关文件上下文中生效\n- `commands/` 可封装斜杠命令，支持通过 shell 注入上下文与参数化调用\n- `skills/` 与 `agents/` 适用于更复杂的自动工作流和子代理角色隔离\n\n### 行动项\n- 为当前项目创建精简版 `CLAUDE.md`，只保留高频命令、架构约束和关键约定\n- 补充 `.claude/settings.json`，明确允许命令与敏感文件拒绝规则\n- 将常用审查或修复流程封装成 `commands/` 中的自定义命令\n- 当配置膨胀时，将规范拆分到 `.claude/rules/` 并增加路径作用域\n\n### 存档判定\n归档: 是 — 原因: 内容结构清晰、可直接用于搭建 Claude Code 项目级配置，具备一定复用价值\n删除: 否\n留存决策: 中期保留，作为 Claude Code 配置入门和查阅资料",
+    "role": "assistant",
+    "timestamp": 1774320950871,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:cc3f506a7694fbe4d0438103fa83be70c5a06d09c27d2589b9c327ed45490c09",
+  "refs": {
+    "sessionId": "1774320928287_jqk2b8b5"
+  },
+  "revisionId": "sha256:ee7701a56455bb5fee9445523dd04e2395f525d56507d171e66f11b3f238279f",
+  "schemaVersion": 1,
+  "updatedAt": 1774320950871
+}

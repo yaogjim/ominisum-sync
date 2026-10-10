@@ -1,0 +1,68 @@
+{
+  "createdAt": 1776399333906,
+  "entityType": "session",
+  "id": "1776399333906_qfuapznp",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "挑选其中的反模式规则，整理成团队前端设计检查清单",
+      "在一个现有项目中试用其 CLI 或扩展，验证检测结果是否真正提升界面质量",
+      "将文中的设计命令思路转化为你常用 AI 编码工具的提示词模板"
+    ],
+    "archiveReason": "包含可执行命令、反模式清单与安装方式，后续在实际项目中可查阅",
+    "classifiedAt": 1776403161394,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "AI设计反套路工具介绍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "impeccable.style",
+    "favicon": "https://impeccable.style/favicon-79ezr327.svg",
+    "knowledgePoints": [
+      "可通过反模式库约束 AI 避免模板化设计，如滥用紫色渐变、卡片套卡片、单一字体等",
+      "工具支持命令式设计引导、CLI 检测、浏览器扩展和 AI harness 集成",
+      "强调在排版、色彩、布局、动效和可用性上建立可复用的审查维度",
+      "可将设计检测接入 CI 或预提交流程，形成前端质量守门机制"
+    ],
+    "oneHighValuePoint": "将常见 AI 生成设计问题显式化为可检测的反模式规则，并配套命令和 CLI 做流程约束。",
+    "oneLineReview": "有一套较完整的AI设计约束思路，但证据不足，适合工具型浏览而非无条件精读。",
+    "primaryCategory": "AI设计工具",
+    "rating": "B",
+    "rejectReason": "营销表述偏多，案例与量化证据不足，需结合实际试用判断价值",
+    "retentionDecision": "短期参考后可保留，适合作为AI辅助设计与前端审查工具索引",
+    "secondaryCategories": [
+      "前端设计方法",
+      "开发者效率工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Impeccable 这一面向 AI 生成前端设计的技能包、命令集与检测工具，强调通过反模式规则、设计命令和 CLI/浏览器扩展来提升生成结果质量，但整体偏产品宣传，实证部分较弱。",
+    "tags": [
+      "AI生成设计",
+      "设计反模式",
+      "前端审查",
+      "CLI工具",
+      "设计系统"
+    ],
+    "title": "Impeccable: The missing upgrade to Anthropic's impeccable skill",
+    "totalScore": 60.5,
+    "url": "https://impeccable.style/#faq"
+  },
+  "payloadHash": "sha256:21ae2613a086bf4726c51dabc5822b66f642ed2a5a5c33544b62c62834d48f00",
+  "refs": {},
+  "revisionId": "sha256:c40578130b605851fdf1a9453ef31faab36fa0d56e2e34ded7e238a1124a7940",
+  "schemaVersion": 1,
+  "updatedAt": 1776404775106
+}

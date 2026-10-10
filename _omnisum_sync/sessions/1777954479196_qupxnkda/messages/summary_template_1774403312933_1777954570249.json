@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777954570249,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1777954570249",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# FPBrowser2API 项目总结：指纹浏览器驱动的 AI 生成自动化框架\n\n## 1. 项目定位\n\n**FPBrowser2API**是一个基于 “指纹浏览器 + 页面上下文执行” 的半自动化框架，用于研究 AI 视频、AI 图片生成网站的自动化调用流程。\n\n它不是传统的直接 HTTP API 脚本，而是通过真实浏览器环境模拟真人操作，再在页面内部执行请求、上传文件、轮询任务和读取结果。\n\n当前重点适配方向包括：\n\n- **Sora**\n- **VEO / Google Flow / Google Labs**\n- **Grok Imagine**\n- **Banana / GEM_PIX_2 图片生成**\n- **Dreamina / 即梦国际站 / Seedance2.0**\n\n项目声明仅供技术研究、学习验证和私有测试环境使用，不建议用于商业化、批量滥用或违反平台规则的场景。\n\n---\n\n## 2. 核心思路\n\n### 用指纹浏览器模拟真实用户环境\n\n项目依赖指纹浏览器来维护更接近真人访问的环境，包括：\n\n- 独立浏览器窗口\n- Cookie、LocalStorage\n- UA、代理、浏览器指纹\n- 已登录账号状态\n- 目标站点访问上下文\n\n用户可以先在指纹浏览器中手动完成登录、验证、订阅等准备，后端再通过 CDP 连接该窗口，复用真实会话完成自动化任务。\n\n### 在页面上下文中执行请求\n\n框架连接浏览器后，会在网页内部执行`fetch`、上传、轮询等操作。\n\n这样可以继承页面已有的：\n\n- 登录态\n- Cookie\n- Token\n- 浏览器指纹\n- 代理网络环境\n\n本质上是把 “浏览器里的人类会话” 包装成后端可调度的任务接口。\n\n---\n\n## 3. 系统架构\n\n### 指纹浏览器层\n\n当前主要适配**RoxyBrowser**。\n\n核心流程是：\n\n1. 在 RoxyBrowser 创建空间、项目和浏览器窗口  \n2. 配置代理、账号、目标站点登录态  \n3. 后台同步窗口信息  \n4. 任务类型绑定具体窗口  \n5. 任务调度服务选择可用窗口  \n6. Playwright 通过 CDP 连接真实浏览器  \n7. 执行器在页面上下文中完成具体任务\n\n### 后端调度层\n\n核心模块包括：\n\n- `fp_browser_client.py`：适配 RoxyBrowser API\n- `playwright_broswer_context.py`：Playwright/CDP 浏览器上下文\n- `task_service.py`：任务队列、窗口池、并发与额度调度\n- `sora_task_executor.py`：Sora 执行器\n- `veo_workflow_executor.py`：VEO / Flow 执行器\n- `grok_workflow_executor.py`：Grok 执行器\n- `jimeng_task_executor.py`：Dreamina / Seedance 研究方向\n\n---\n\n## 4. 任务与窗口池机制\n\n### 任务类型\n\n系统通过任务类型决定使用哪个执行器，例如：\n\n- `sora_gen_video`\n- `veo_workflow`\n- `grok_workflow`\n- `dreamina_workflow`\n\n每种任务类型可以绑定多个指纹浏览器窗口，从而支持多账号、多代理、多窗口并发。\n\n### 窗口调度\n\n`TaskService`会根据以下因素选择合适窗口：\n\n- 是否启用\n- 是否有剩余额度\n- 冷却时间\n- 错误次数\n- 并发槽位\n- 登录态是否正常\n\n窗口可预先打开并保持目标页面，减少任务启动延迟。\n\n---\n\n## 5. Sora 执行器能力\n\n`sora_task_executor.py`主要负责 Sora 相关自动化逻辑。\n\n### 主要能力\n\n- 获取登录态和 accessToken\n- 创建视频生成任务\n- 支持 prompt、首帧图、比例、时长等参数\n- 轮询生成进度\n- 从 drafts 中提取生成结果\n- 发布草稿并返回结果链接\n- 创建 Sora 角色\n- 查询额度、订阅、邀请码\n- 清理 drafts\n- 检测并处理 Cloudflare / Turnstile 挑战页\n\n### 产品视角理解\n\n它把 Sora 网页端能力抽象成了一个后端 API，可以让外部系统以任务形式提交生成需求，并自动完成等待、发布、结果提取。\n\n---\n\n## 6. VEO / Google Flow 执行器能力\n\n`veo_workflow_executor.py`面向 Google Labs / Flow / VEO 工作流。\n\n### 视频生成能力\n\n支持多种模式：\n\n- 文生视频 T2V\n- 图生视频 I2V\n- 首尾帧生成\n- 多图参考 Ingredients / R2V\n- 横版、竖版模型\n- 生成状态轮询\n- 任务失败重试\n\n### 图片生成能力\n\n当`n_frames = 1`时进入图片模式，支持：\n\n- 文生图\n- 图生图\n- 多图参考图生图\n- Banana / GEM_PIX_2 类图片模型\n- 2K 放大\n- OSS 存储大图结果\n\n### 辅助能力\n\n还包括：\n\n- Google 登录辅助\n- Access Token 获取与缓存\n- Flow 项目管理\n- 额度刷新\n- Cloudflare 挑战页检测与恢复\n\n---\n\n## 7. 管理后台与 API\n\n项目提供管理后台，用于配置和运维：\n\n- 系统配置\n- 项目管理\n- 任务类型管理\n- 任务列表\n- 测试页面\n- 请求日志\n- 用户管理\n- 浏览器窗口同步与管理\n\n对外 API 使用 Bearer Token 鉴权，支持：\n\n- 获取任务类型\n- 创建任务\n- 查询任务状态\n- 指定窗口执行任务\n\n从产品形态看，它更像是一个 “AI 生成任务中台”，把多个网页端 AI 工具统一封装为异步任务接口。\n\n---\n\n## 8. 项目价值\n\n### 技术价值\n\n该项目展示了一种通用的自动化研究范式：\n\n> 指纹浏览器真人环境 + 页面上下文请求 + 窗口池调度 + 执行器插件化\n\n这种方式理论上可扩展到更多复杂网站，尤其是没有公开 API、但网页端能力较完整的产品。\n\n### 产品价值\n\n如果放在合规测试环境中，它可以用于：\n\n- 多账号任务调度研究\n- AI 生成链路自动化验证\n- 视频 / 图片生成工作流封装\n- 前端站点接口逆向分析\n- 浏览器自动化稳定性研究\n\n### 风险与限制\n\n项目明确不保证稳定性，也不承诺绕过第三方风控的成功率。\n\n实际效果高度依赖：\n\n- 账号质量\n- 代理质量\n- 浏览器环境\n- 目标站点策略\n- 平台风控变化\n- 合规边界\n\n---\n\n## 9. 一句话总结\n\n**FPBrowser2API 是一个将指纹浏览器中的真实登录会话封装成后端任务 API 的自动化研究框架，重点用于 Sora、VEO、Grok、Seedance 等 AI 生成网站的任务提交、状态轮询和结果提取，但应严格限定在授权、研究和私有测试场景中使用。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1777954570249,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e71160ad309072ce42af92487b2e11d657bb8e25a8c3409a15c59b1458ef1651",
+  "refs": {
+    "sessionId": "1777954479196_qupxnkda"
+  },
+  "revisionId": "sha256:5236a600105f4d836db79a22675c5f19cf3b1670109c8fac82b9128c62186452",
+  "schemaVersion": 1,
+  "updatedAt": 1777954570249
+}

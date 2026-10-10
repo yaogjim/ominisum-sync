@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777284386489,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1777284386489",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Lody：随时随地指挥你的 Agent 团队\n\n## 一句话总结\n\nLody 是一个面向 AI Native 软件开发团队的工作空间：让用户可以在桌面、Web、移动端统一控制各类 Code Agent，并通过本地优先、多端同步、上下文管理和 Multi-Agent 编排，提升 AI 编程的并行效率与可控性。\n\n---\n\n## 1. 背景：从 Loro 到 Lody\n\nLody 的底层能力来自团队此前做的**Loro**。\n\nLoro 是一个高性能 CRDTs 框架，主要解决多端同步、多人协作、离线编辑中的数据冲突问题。它强调：\n\n- **本地优先**：用户设备上的数据是核心数据源。\n- **最终一致性**：多端数据最终自动合并一致。\n- **业务无关同步**：相比中心化 OT，更适合通用协作场景。\n- **支持版本控制与端到端加密**。\n- **用户拥有数据控制权和所有权**。\n\n团队需要一个真实业务场景来验证 Loro 的能力，于是选择了自己每天高频使用的 AI Coding 场景，做出了 Lody。\n\n---\n\n## 2. Lody 是什么\n\nLody 可以理解为一个**跨平台 Code Agent 控制台**。\n\n用户可以在：\n\n- 桌面端\n- Web 端\n- 移动端\n\n统一控制自己设备或服务器上的各类 Code Agent。\n\n它支持：\n\n- Chat 对话\n- Local Project 本地项目\n- GitHub WorkTree 项目\n- PR、分支、CI 信息联动\n- 文件查看与 Diff 查看\n- 图片输入与输出\n- 多模型、多 CLI 统一管理\n\n核心目标是：**让用户像管理一个 Agent 团队一样，随时随地分配、跟进、验收开发任务。**\n\n---\n\n## 3. 当前解决的核心问题\n\n## 3.1 AI Coding 的并行开发混乱\n\n现在的 Code Agent 经常需要十几分钟到一小时完成任务。用户往往会开多个窗口并行开发，但容易出现：\n\n- 多个 Agent 修改同一份代码相互覆盖\n- 分支与目录管理混乱\n- Worktree 使用复杂\n- 环境变量和本地测试体验差\n- 人类注意力被大量非核心流程消耗\n\nLody 的做法是：\n\n> Worktree 只给 Agent 使用，人类继续使用自己的本地工作目录。\n\nLody 自动管理 Worktree、分支、PR 和回收流程，用户只需要关注任务本身。\n\n---\n\n## 3.2 多端无缝同步\n\nLody 支持多端同步，用户可以在电脑上发起任务，在手机上继续查看和指挥。\n\n典型场景：\n\n- 出门路上查看 Agent 执行结果\n- 地铁、高铁等弱网环境下继续跟进任务\n- 手机端随时补充指令\n- 执行端在服务器上持续运行，不受控制端网络影响\n\n这让 AI Coding 从 “坐在电脑前操作” 变成了 “随时随地指挥”。\n\n---\n\n## 3.3 统一管理不同模型和 CLI\n\nLody 通过 ACP 对接多个 Code CLI，让用户可以在同一个界面管理不同模型。\n\n不同模型有不同优势：\n\n- Claude / Opus 更擅长 UI 和前端设计\n- Codex 更擅长逻辑代码\n- 小任务可以交给更便宜的模型\n\nLody 的价值在于：**根据任务特点灵活切换模型，而不是被某一个工具或模型绑定。**\n\n---\n\n## 4. Lody 的产品价值\n\n## 4.1 节省注意力\n\nLody 最大的体验提升不是单点功能，而是减少用户对工程细节的关注。\n\n用户不再需要频繁思考：\n\n- 哪个任务在哪个目录？\n- 哪个 Agent 改了什么？\n- Worktree 怎么管理？\n- 分支是否最新？\n- 多个任务是否相互干扰？\n\n这些都交给系统处理，人只需要关注目标、结果和验收。\n\n---\n\n## 4.2 让 AI 对话成为新的 “源代码”\n\n作者提出一个重要判断：\n\n> 在 Vibe Coding 时代，对话本身正在变成真正的源代码。\n\n因为很多功能的背景、决策、修改过程、Bug 修复原因，都存在于和 AI 的对话中。\n\nLody 支持分享对话链接，团队成员可以直接查看：\n\n- 当时为什么这么做\n- 选择了哪些方案\n- 修改了哪些代码\n- 遇到了什么问题\n- AI 是如何一步步解决的\n\n这让 AI Coding 的过程不再是黑盒，而是可追溯、可复用的知识资产。\n\n---\n\n## 5. 未来方向：AI Native 软件开发 Workspace\n\nLody 的长期目标不是只做 Code Agent 工具，而是成为**AI Native 软件开发团队的 Workspace**。\n\n它希望覆盖完整软件开发流程：\n\n- 立项\n- PRD 编写\n- 技术调研\n- 市场调研\n- 设计稿\n- 开发实现\n- Review\n- 测试与验收\n\n本质上，Lody 想成为团队的**Context 同步层**。\n\n---\n\n## 6. 核心问题：团队 Context 太分散\n\n当前团队的真实上下文分散在多个工具中：\n\n- Git 里的代码\n- Notion 文档\n- Figma 设计\n- Slack 讨论\n- Linear Issue\n- PR Review Comments\n- 各类 AI 对话\n\n这导致两个问题：\n\n1. 人类接手代码时，需要重新理解历史背景。\n2. AI 修改代码时，缺少上下文，容易破坏已有能力或重复犯错。\n\nLody 的方向是把这些上下文结构化保存，并和代码关联起来。\n\n未来当 AI 开启新任务时，可以自动检索相关历史对话、决策和迭代记录，避免从零理解项目。\n\n---\n\n## 7. Lody 的差异化：本地优先的 Context 管理\n\nLody 依托 Loro CRDTs，将 Context 数据做成本地优先、可同步、可版本化的数据层。\n\n它希望提供类似：\n\n> 面向结构化 Context 的 Git。\n\n这意味着：\n\n- 所有上下文可以本地保存\n- 支持多端同步\n- 支持团队协作\n- 支持离线优先\n- 支持端到端加密\n- 支持版本回滚\n- 支持并行编辑和自动合并\n- 避免供应商锁定\n\n这是 Lody 和其他 Agent 产品的重要差异：不只是更强的 Agent，而是更安全、更开放、更可控的 Context 基础设施。\n\n---\n\n## 8. Multi-Agent：下一阶段的 Agent 团队编排\n\nLody 未来还会探索 Multi-Agent。\n\n作者认为，同质模型之间简单分工，价值有限；真正有潜力的是**异构 Multi-Agent**：\n\n- 不同模型负责自己擅长的任务\n- 强模型处理复杂问题\n- 便宜模型处理简单任务\n- Review Agent、Search Agent、Coding Agent 各司其职\n- Agent 之间可以互相协作和请求帮助\n\n随着模型速度提升、成本下降，未来一个任务可能几分钟完成。届时，人类已经无法逐个跟进所有 Agent 的执行细节。\n\n因此，更合理的模式是：\n\n> 人类表达目标，由 Lody Agent 理解意图、拆解任务、分配 Agent、自动验证，最后把结果推给人类审查。\n\n---\n\n## 9. 最终愿景：最懂团队的 Agent Leader\n\nLody 希望成为团队中的 Agent Leader。\n\n它理解：\n\n- 当前有哪些功能在开发\n- 哪些 Bug 正在修\n- 哪些任务卡住了\n- 哪个 Agent 适合做什么\n- 团队的代码规范\n- 用户的偏好和优先级\n- 历史上下文和决策过程\n\n最终，Lody 不只是一个工具，而是一个拥有团队上下文、能协调多个 Agent 的智能工作空间。\n\n---\n\n## 10. 关键启示\n\n对产品和技术团队而言，这篇文章的核心启示是：\n\n1. **AI Coding 的瓶颈正在从 “模型能力” 转向 “上下文管理与工作流编排”。**\n2. **未来的软件开发工具，不只是 IDE，而是 Agent Workspace。**\n3. **对话、决策和历史过程会成为新的核心研发资产。**\n4. **本地优先、数据所有权、端到端加密，可能成为 AI 工具的重要差异化。**\n5. **当 Agent 执行速度大幅提升后，人类角色会从执行者转向目标定义者和最终审查者。**\n\n---\n\n# 总结\n\nLody 当前是一个跨平台 Code Agent 控制台，解决 AI Coding 中的并行开发、多端同步、模型切换和过程可控问题。\n\n长期来看，它想成为 AI Native 软件开发团队的 Workspace：用本地优先的方式管理团队上下文，用 Multi-Agent 编排完成复杂任务，让用户能够随时随地指挥自己的 Agent 团队，同时保留对数据、安全和工作流的控制权。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1777284386489,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d77a21064f37406e78c45968b8f57a125e5db9c952b0c177f1d4713b6cae71f3",
+  "refs": {
+    "sessionId": "1777284386514_35sxttm5"
+  },
+  "revisionId": "sha256:8dafd58d50af1050fc75e387327350d0c2c32028d1a9d1899a0b7bce063395fa",
+  "schemaVersion": 1,
+  "updatedAt": 1777284386489
+}

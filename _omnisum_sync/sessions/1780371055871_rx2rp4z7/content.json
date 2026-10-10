@@ -1,0 +1,15 @@
+{
+  "createdAt": 1780371055871,
+  "entityType": "session-content",
+  "id": "1780371055871_rx2rp4z7",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>歸藏(guizang.ai)</strong></header><div class=\"tw-body\">妈的，终于搞定我的 Codex 断联和推理慢的问题了！<br><br>我有一台电脑上的 Codex 推理速度巨慢，即使开了快速模式也很慢，还有一个问题就是经常连不上。<br><br>我一直以为是自己的网络有问题，但它和我的 Mac Studio 处于同一个网络环境，Mac Studio 运行就非常快。<br><br>结果今天发现，是我的 config 配置文件有问题。里面写死了两个参数，还写死了两个必须加载的 MCP，导致速度巨慢。<br><br>如果你也有类似问题的话，我推荐让你的 Codex 自己检查一下配置文件。你只需要跟它描述具体的表现就行。</div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@智见AI-大鹏</strong> <span class=\"tw-eng\">♥ 5 · 💬 2</span><p>我的Codex也是，一到下午就总是Reconnecting，但我看推上很多说人说是WebSocket本身的缺陷。我试试让Codex自己解决一下</p></div><div class=\"tw-reply\"><strong>@FUGUI</strong> <span class=\"tw-eng\">♥ 7 · 💬 0</span><p>如果是对话里图片太多，可以参考我这个 skill，安全清楚对话内图片，图片多了会导致重连 然后变慢</p></div><div class=\"tw-reply\"><strong>@Jackywine</strong> <span class=\"tw-eng\">♥ 2 · 💬 1</span><p>告诉 codex 优化网络访问速度就行</p></div><div class=\"tw-reply\"><strong>@bitwjg</strong> <span class=\"tw-eng\">♥ 3 · 💬 0</span><p>看来经常reconnecting是个普遍问题，我一直以为是我自己梯子的问题。还有就是自动压缩上下文的时候总是remote连接超时的问题</p></div><div class=\"tw-reply\"><strong>@ailands19</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>是哪两个参数导致的呢？MCP如果都是stdio的，应该还好，我有5个要加载的mcp，没啥问题</p></div></div>",
+    "pageContent": "歸藏(guizang.ai): 妈的，终于搞定我的 Codex 断联和推理慢的问题了！ 我有一台电脑上的 Codex 推理速度巨慢，即使开了快速模式也很慢，还有一个问题就是经常连不上。 我一直以为是自己的网络有问题，但它和我的 Mac Studio 处于同一个网络环境，Mac Studio 运行就非常快。 结果今天发现，是我的 config 配置文件有问题。里面写死了两个参数，还写死了两个必须加载的 MCP，导致速度巨慢。 如果你也有类似问题的话，我推荐让你的 Codex 自己检查一下配置文件。你只需要跟它描述具体的表现就行。\n---\n热门回复 (共 5 条):\n@智见AI-大鹏 (♥ 5 · 💬 2):\n我的Codex也是，一到下午就总是Reconnecting，但我看推上很多说人说是WebSocket本身的缺陷。我试试让Codex自己解决一下\n\n@FUGUI (♥ 7 · 💬 0):\n如果是对话里图片太多，可以参考我这个 skill，安全清楚对话内图片，图片多了会导致重连 然后变慢\n\n@Jackywine (♥ 2 · 💬 1):\n告诉 codex 优化网络访问速度就行\n\n@bitwjg (♥ 3 · 💬 0):\n看来经常reconnecting是个普遍问题，我一直以为是我自己梯子的问题。还有就是自动压缩上下文的时候总是remote连接超时的问题\n\n@ailands19 (♥ 0 · 💬 1):\n是哪两个参数导致的呢？MCP如果都是stdio的，应该还好，我有5个要加载的mcp，没啥问题\n"
+  },
+  "payloadHash": "sha256:3194dbbbc33ebacd2bde3064016adf74355a6bf125c3425e5635ab6ef2905886",
+  "refs": {},
+  "revisionId": "sha256:01ddc9858b5b5464d2c0a8ebfd8cbcd72e3c006553ac607bd2864bf3939b684d",
+  "schemaVersion": 1,
+  "updatedAt": 1780371684180
+}

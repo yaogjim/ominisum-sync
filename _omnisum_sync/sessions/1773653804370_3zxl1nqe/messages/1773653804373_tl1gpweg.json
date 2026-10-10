@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773653624132,
+  "entityType": "message",
+  "id": "1773653804373_tl1gpweg",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章主要介绍了 `Context+`：一个面向大型工程代码库的 MCP 服务器，目标是把复杂代码库转成“可搜索、可导航、可关联”的语义图谱，帮助开发者更准确地理解和修改代码。  \n它的核心卖点是高准确性（强调 99%），通过结合 RAG、Tree-sitter AST、谱聚类和类似 Obsidian 的双链机制，提升代码检索与分析能力。\n\n- **项目定位与核心思路**\n  - `Context+` 面向大型工程场景，重点解决“代码太大、结构太复杂、普通搜索不够用”的问题。\n  - 它不是简单关键词搜索，而是把代码库组织成一个“分层特征图（hierarchical feature graph）”。\n  - 核心技术包括：\n    - `RAG`：增强语义检索\n    - `Tree-sitter AST`：理解代码结构\n    - `Spectral Clustering`：按语义聚类代码\n    - `Obsidian-style linking`：用双链方式把功能、文件、符号连接起来\n\n- **主要工具能力**\n  - 项目提供了多类 MCP 工具，覆盖“结构查看、语义检索、影响分析、写代码、记忆图谱”等任务。\n  - 结构类工具：\n    - `get_context_tree`：查看项目 AST 树、文件头、函数/类/方法行号，并自动裁剪输出\n    - `get_file_skeleton`：只看函数签名、类方法、类型定义，不读完整实现\n  - 语义检索类工具：\n    - `semantic_code_search`：按“含义”搜代码，而不是按文本精确匹配\n    - `semantic_identifier_search`：按函数、类、变量级别检索，并给出调用位置和行号\n    - `semantic_navigate`：通过谱聚类，把语义相关文件分组浏览\n  - 分析类工具：\n    - `get_blast_radius`：追踪某个符号被哪些文件、哪些行引用，避免改动后留下断裂引用\n    - `run_static_analysis`：调用原生 linter/编译器检查死代码、未使用变量、类型错误，支持 `TypeScript、Python、Rust、Go`\n  - 代码操作类工具：\n    - `propose_commit`：写代码前先校验规则，并创建“影子恢复点”\n    - `get_feature_hub`：通过 `.md` + `[[wikilinks]]` 组织功能和代码文件的映射\n  - 版本恢复类工具：\n    - `list_restore_points`：列出 AI 修改前保存的恢复点\n    - `undo_change`：恢复到某次 AI 改动前的状态，而且**不影响 git 历史**\n  - 记忆图谱类工具：\n    - 支持节点增改、关系创建、语义搜索、衰减清理、批量自动链接、图遍历检索\n    - 例如：当相似度 `cosine ≥ 0.72` 时，会自动创建关联边\n\n- **安装与使用方式**\n  - 文章强调“几乎不用安装”，只需把 `Context+` 加到 IDE 的 MCP 配置里即可。\n  - 支持多个开发环境：`Claude Code、Cursor、VS Code、Windsurf、OpenCode`\n  - 启动方式示例：\n    - `bunx contextplus`\n    - 或 `npx -y contextplus`\n  - 也可以直接生成配置文件，例如：\n    - `npx -y contextplus init claude`\n    - `bunx contextplus init cursor`\n  - 配置中需要设置模型环境变量，重要示例包括：\n    - `OLLAMA_EMBED_MODEL=nomic-embed-text`\n    - `OLLAMA_CHAT_MODEL=gemma2:27b`\n    - `OLLAMA_API_KEY=YOUR_OLLAMA_API_KEY`\n\n- **命令行与工程结构**\n  - CLI 提供几个核心子命令：\n    - `init [target]`：生成不同 IDE 的 MCP 配置\n    - `skeleton [path]` 或 `tree [path]`：直接在终端查看项目结构树\n    - `[path]`：启动 MCP 服务，默认当前目录\n  - 从源码运行的方式：\n    - `npm install`\n    - `npm run build`\n  - 架构分为三层：\n    - `Core`：多语言 AST 解析、gitignore 感知遍历、Ollama 向量嵌入、wikilink hub 图、带衰减评分的内存属性图\n    - `Tools`：提供 **17 个 MCP 工具**\n    - `Git`：影子恢复点系统，用于撤销 AI 改动\n\n- **缓存、配置与性能设计**\n  - 服务启动后会创建 `.mcp_data/`，用于缓存文件、标识符、调用点的 embedding，减少重复计算。\n  - 它还有“实时跟踪器”，会对变更过的文件/函数做增量刷新。\n  - 重要默认配置数据包括：\n    - `CONTEXTPLUS_EMBED_BATCH_SIZE=8`\n    - `CONTEXTPLUS_EMBED_CHUNK_CHARS=2000`\n    - `CONTEXTPLUS_MAX_EMBED_FILE_SIZE=51200`\n    - `CONTEXTPLUS_EMBED_TRACKER=true`\n    - `CONTEXTPLUS_EMBED_TRACKER_MAX_FILES=8`\n    - `CONTEXTPLUS_EMBED_TRACKER_DEBOUNCE_MS=700`\n  - 一些参数会被限制在区间内，例如：\n    - batch size 限制在 `5-10`\n    - chunk chars 限制在 `256-8000`\n\n- **语言支持、测试与项目状态**\n  - 文中提到项目支持多语言 AST：\n    - 一处写 `36 languages`\n    - 架构部分写 `tree-sitter, 43 extensions`\n  - 测试命令包括：\n    - `npm test`\n    - `npm run test:demo`\n    - `npm run test:all`\n  - 仓库语言占比：\n    - `TypeScript 60.3%`\n    - `JavaScript 37.8%`\n    - `CSS 1.9%`\n  - 仓库信息显示约有 `80 commits`，版本更新到 `1.0.8`\n\n- **可以怎么理解这个项目**\n  - 如果把普通代码助手比作“在文件里搜词”，那 `Context+` 更像“先理解项目结构，再按语义和关系图找答案”。\n  - 例如你想改一个函数：\n    - 普通搜索可能只能找到文本匹配\n    - `Context+` 可以进一步告诉你：函数定义在哪、谁调用了它、相关功能聚类有哪些、改动会影响哪些文件，甚至还能回滚 AI 的改动\n\n如果你愿意，我也可以进一步把这篇内容压缩成“超短版 5 条总结”或整理成“适合汇报/发给同事”的版本。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773653624132,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:84ea9074b04d527cf579ed796c5dadd3af964d3db15394003fab8ca7845303b1",
+  "refs": {
+    "sessionId": "1773653804370_3zxl1nqe"
+  },
+  "revisionId": "sha256:e4dbb24f13e40d08dbe68d4fcac720dff10b184c76670c77b58bfa55992b56c4",
+  "schemaVersion": 1,
+  "updatedAt": 1773653624132
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774246920364,
+  "entityType": "session",
+  "id": "1774246920364_lhc3aeyq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查找作者提到的完整技术说明、热图和代码，验证实验设置与评测是否可靠",
+      "将“中间层块复制”作为后续模型结构实验假设，结合公开模型做小规模复现"
+    ],
+    "archiveReason": "提出了有启发性的中间层功能分工假设，可作为后续查找完整论文或代码的索引",
+    "classifiedAt": 1774246943044,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "LLM中层复制提效实验",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "复制单个中间层通常无益，但复制约7层的中间层块可能带来性能提升",
+      "Transformer可能存在前层编码、中层推理、后层解码的功能分工",
+      "通过重排层结构而非训练参数，也可能改变模型推理表现"
+    ],
+    "oneHighValuePoint": "最有价值的点是提出“中间层作为整体推理电路而非独立层优化单元”的假设，这为结构级模型改造提供了新思路。",
+    "oneLineReview": "想法很新，但更像高价值研究线索而非可直接采纳的成熟结论。",
+    "primaryCategory": "大模型架构分析",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为模型结构假设与实验线索的灵感材料",
+    "secondaryCategories": [
+      "模型解释性",
+      "推理能力优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以社交媒体线程形式介绍作者通过复制并重排Qwen2-72B的7个中间层，在不训练权重的情况下提升排行榜表现。核心观点是Transformer存在功能性解剖结构：前层编码，中层推理，后层解码，但证据主要来自热图和个案描述。",
+    "tags": [
+      "Transformer",
+      "Qwen2-72B",
+      "层复制",
+      "神经解剖学",
+      "推理增强"
+    ],
+    "title": "David: 1/n I topped the HuggingFace Open LLM Leaderboard without changing a single weig…",
+    "totalScore": 59,
+    "url": "https://x.com/dnhkng/status/2035681641624920559"
+  },
+  "payloadHash": "sha256:4778fba929af58f2af8a48533f2ac164fdb0a8d3e60d84046459bafc2601e3dc",
+  "refs": {},
+  "revisionId": "sha256:10ecacc55d23c7c1d03086322d0cd8d78324a3401d44e06e7dee25867dfd52ca",
+  "schemaVersion": 1,
+  "updatedAt": 1774247456156
+}

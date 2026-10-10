@@ -1,0 +1,63 @@
+{
+  "createdAt": 1773310985240,
+  "entityType": "session",
+  "id": "1773310985240_9wfnpfhl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在研究多代理协作，可重点对比其 org chart、budget enforcement 和 audit log 的设计思路",
+      "如需评估实际价值，下一步应查看源码架构、Issue 讨论和真实使用案例，而不是只读 README"
+    ],
+    "archiveReason": "可作为多代理编排产品形态与功能设计的参考样本，但不适合作为方法论或决策依据长期保存",
+    "classifiedAt": 1773830118577,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "AI公司编排框架介绍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "多代理系统可通过组织结构、任务归属和预算约束来提高可控性",
+      "心跳调度、会话持久化和审计日志是长期自治代理系统的关键基础设施"
+    ],
+    "oneHighValuePoint": "把多代理协作从“多个聊天窗口”提升为“公司治理层”的抽象，用 org chart、budget、governance 统一管理是其最有启发性的设计点。",
+    "oneLineReview": "概念包装很新，但更像产品宣传页，适合快速了解方向，不适合深度依赖。",
+    "primaryCategory": "AI Agent Orchestration",
+    "rating": "C",
+    "rejectReason": "宣传性强于分析性，缺少真实案例、效果数据和架构细节，方法抽象多于落地经验",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开源工具",
+      "多代理系统"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份开源项目 README，介绍 Paperclip 如何通过组织架构、预算、治理和心跳机制来编排多个 AI 代理协同工作。产品定位清晰，功能想象力较强，但主要是概念展示与功能罗列，证据和实践细节不足。",
+    "tags": [
+      "Paperclip",
+      "AI代理",
+      "组织编排"
+    ],
+    "title": "paperclipai/paperclip: Open-source orchestration for zero-human companies",
+    "totalScore": 53.5,
+    "url": "https://github.com/paperclipai/paperclip"
+  },
+  "payloadHash": "sha256:14a26668373efe37270f0fcb4e8987a64a8eef2820814dbddc76ebf3c8a0e2ff",
+  "refs": {},
+  "revisionId": "sha256:9a05bc9086f366948b38422566fc2000016489c1c679d893f0fa869fb3a59a83",
+  "schemaVersion": 1,
+  "updatedAt": 1773830118581
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777005347469,
+  "entityType": "session",
+  "id": "1777005347469_1riydnqf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在团队内部区分AI适用场景与不适用场景，避免用演示案例替代工程评估",
+      "对涉及迁移和重构的任务建立人工审查机制，不接受“AI几天搞定”的口头预估"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777005643420,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "警惕管理层AI能力幻觉",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "内容主要是个人吐槽与经验判断，重复常见观点，缺乏系统性沉淀和长期复用价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI在复杂旧系统迁移、强弱类型转换等场景中仍高度依赖人工判断",
+      "将AI当作副驾驶通常比把它当全自动驾驶更符合当前能力边界"
+    ],
+    "oneHighValuePoint": "最有价值的是指出“天天用AI的人往往更清楚其边界”，提醒警惕管理层基于演示效果形成错误预期。",
+    "oneLineReview": "观点有现实感，但基本是吐槽帖，参考价值明显低于方法文或实证复盘。",
+    "primaryCategory": "AI工具认知",
+    "rating": "D",
+    "rejectReason": "以情绪化观点输出为主，缺少方法框架、数据证据和可执行建议，讨论深度不足。",
+    "retentionDecision": "信息价值较低，若已理解其核心观点可直接删除",
+    "secondaryCategories": [
+      "技术管理",
+      "项目实践反思"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章批评部分管理者和团队高估AI能力，认为其能在极短时间内完成复杂项目迁移与全流程开发。作者强调AI更适合作为副驾驶，而非完全替代工程判断，但全文主要停留在情绪表达和个案观察层面。",
+    "tags": [
+      "AI幻觉",
+      "技术管理",
+      "代码生成",
+      "项目迁移",
+      "社交媒体观点"
+    ],
+    "title": "周尔复: AI 大跃进 最近加入新项目组后，参加了几次会议，接触了下 CTO 和技术总监，发现他们对 AI 的认知已经越来越浮夸了，觉得 AI 能搞定一切",
+    "totalScore": 33.5,
+    "url": "https://x.com/cholf5/status/2046963915180183975"
+  },
+  "payloadHash": "sha256:61ed7ef6c43f00ff498c2c5c2032be02ee82485485caf7865db55c8fb04807b6",
+  "refs": {},
+  "revisionId": "sha256:7fee2f8a60e6a6ef0527c2881956952b30901793e3c1dbc0754f8947e8ec1428",
+  "schemaVersion": 1,
+  "updatedAt": 1777005643437
+}

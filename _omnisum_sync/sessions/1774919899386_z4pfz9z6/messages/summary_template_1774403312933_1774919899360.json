@@ -1,0 +1,23 @@
+{
+  "createdAt": 1774919899360,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1774919899360",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 用 Claude Code 无缝调用 Codex\n\n## 一句话概括\n这篇文章介绍了一个 Claude Code 插件：让你不用离开 Claude Code，就能直接调用 Codex 做代码评审、对抗性审查和任务接管，相当于在同一工作流里多了一个 “第二审稿人”。\n\n## 它解决了什么问题\n核心价值不是 “多一个工具”，而是 “多一个不同的代理视角”。\n\n在实际开发中，同一个模型既写代码又审代码，容易忽略同类问题。这个插件的意义在于：让 Claude 负责生成，让 Codex 负责复查、质疑和补位，提升高风险任务的可靠性。\n\n## 主要能力\n### 1. 常规评审\n使用`/codex:review`，让 Codex 做标准的只读审查。\n\n适合日常开发，作为默认的 “第二遍检查”。\n\n### 2. 对抗性评审\n使用`/codex:adversarial-review`，让 Codex 不只是检查代码，而是主动挑战实现方案、挖隐藏假设。\n\n这类能力尤其适合迁移、认证改动、基础设施脚本、重构等高风险场景，因为这些问题往往不是语法错误，而是思路和假设出了偏差。\n\n### 3. 任务接管\n使用`/codex:rescue`，可以把任务直接交给 Codex 继续处理。\n\n适合当前线程卡住，或者你想换一个代理继续推进时使用。\n\n## 如何开始\n安装流程很简单：\n\n- 添加并安装插件\n- 运行`/codex:setup`\n- 确保本地已安装并登录 Codex CLI\n- 需要`Node.js 18.18+`\n- 认证方式支持`ChatGPT 订阅（含免费版）`或`OpenAI API Key`\n\n如果任务较长，还可以后台运行，并通过`/codex:status`、`/codex:result`、`/codex:cancel`管理。\n\n## 为什么它显得轻量\n这个插件本质上不是新造一个运行环境，而是直接调用本地的 Codex CLI 和应用服务器。\n\n这意味着它会继承你在 Codex 里已有的认证、配置、环境和 MCP 设置，所以接入成本低、使用体验也更顺滑。\n\n## 推荐使用方式\n一个很实用的默认模式是：\n\n- 所有任务先跑一次`/codex:review`\n- 高风险任务再加`/codex:adversarial-review`\n- 卡住时用`/codex:rescue`\n\n这样既不打断原有 Claude Code 工作流，又能把 Codex 作为 “复核层” 和 “接管层” 使用。\n\n## 需要注意的点\n插件支持开启 review gate：先让 Codex 审完，Claude Code 才能退出。\n\n这个机制适合强约束场景，但要谨慎使用，因为 Claude 和 Codex 之间可能形成长循环，快速消耗额度。\n\n## 文章结论\n这不是一个复杂的新系统，而是一个很实用的工作流增强插件。\n\n它最大的意义，是让 Claude Code 用户在不切换环境的前提下，引入 Codex 作为真正独立的第二视角。对于追求质量和稳定性的开发流程，尤其是高风险任务，这个价值很直接。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1774919899360,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a20e80e5264c9431f19e265c84db2dd18823e7f5266622d200f8f542cd35eb80",
+  "refs": {
+    "sessionId": "1774919899386_z4pfz9z6"
+  },
+  "revisionId": "sha256:fd4aca98d55698fd0d61b2aecc41d9c63f00a886f1a36bf42ef723c89009a25f",
+  "schemaVersion": 1,
+  "updatedAt": 1774919899360
+}

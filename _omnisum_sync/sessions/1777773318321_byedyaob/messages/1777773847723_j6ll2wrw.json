@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777773847724,
+  "entityType": "message",
+  "id": "1777773847723_j6ll2wrw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Kandev多Agent编排工具\n\n**评级**: B (57.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: 多Agent编排, 软件工程效率\n**标签**: #Kandev #AI Agent #Claude Code #Codex #Git Worktree\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 这是一个有实用价值的AI开发工具线索，但内容偏简短，缺少实际评测和案例支撑。\n**核心高价值点**: 用 git worktree 隔离多个 Agent 的代码变更，便于人类并行审查和调度任务。\n\n### 摘要\n文章介绍了 Kandev，一个运行在服务器上的多 AI Agent 编排工具，支持 Claude Code、Codex、Copilot、Gemini 等 Agent，通过看板、流水线、子任务和 git worktree 实现并行开发与隔离。\n\n### 知识要点\n- Kandev 支持通过 ACP 协议接入多个 AI Agent，并在流水线不同步骤指定不同 Agent\n- 工具内置看板、终端、编辑器、git 面板和浏览器预览，支持本地进程、Docker 和远程执行\n\n### 行动项\n- 打开 GitHub 仓库查看安装方式、支持的 Agent 类型和使用门槛\n- 在测试项目中试用 git worktree 多Agent并行开发流程，评估是否适合现有开发工作流\n\n### 存档判定\n归档: 是 — 原因: 提供了一个值得试用的多Agent编排开发工具入口，适合作为工具备选清单保存\n删除: 否\n留存决策: 短期参考，适合在需要多Agent协作开发环境时回看",
+    "role": "assistant",
+    "timestamp": 1777773847724,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:f3b95fb6a9c7791773184f8cc020f7c7fbc3cf441a3dce9ab79ee0257d6a80f9",
+  "refs": {
+    "sessionId": "1777773318321_byedyaob"
+  },
+  "revisionId": "sha256:cc101f8bf358dbf3a19c51dc734b367cd8030d320f14fb5247ba0f8261e3427e",
+  "schemaVersion": 1,
+  "updatedAt": 1777773847724
+}

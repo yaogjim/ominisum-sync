@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773730520873,
+  "entityType": "message",
+  "id": "1773730618782_xovnjyug",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章的主旨是：在 Codex 中，`subagents`（子代理）适合处理“可以拆开并行”的复杂任务，核心价值不只是提速，更是让不同角色分工更清晰、结论更可靠。作者尤其强调：真正好用的关键，不在于多开几个 agent，而在于把每个 agent 的职责设计得足够单一、明确。\n\n- 第一部分：什么是 subagents\n  - Codex 支持手动创建 `subagents`，它们是专门处理某一类任务的子代理。\n  - 每个子代理都有自己独立的：\n    - 指令（instructions）\n    - 模型设置（model settings）\n    - 工具上下文（tool context）\n  - 最后由 Codex 把多个子代理的结果合并成一个回复。\n  - 它最适合用于“能明显拆分”的工作，比如：\n    - PR 审查\n    - 代码库探索\n    - Debug 流程中一边排查、一边验证或实现\n\n- 第二部分：使用前要注意的成本\n  - `subagents` 不是默认自动启用，只有你明确要求时 Codex 才会创建。\n  - 每个子代理都会单独调用模型和工具，因此通常会比单代理运行消耗更多 token。\n  - 也就是说，只有在任务确实能并行拆分时，使用它才更划算。\n\n- 第三部分：自定义 agent 才是重点\n  - Codex 自带一些内置 agent，例如：\n    - `default`\n    - `worker`\n    - `explorer`\n  - 但作者认为，真正的威力来自“自定义 agent”。\n  - 自定义 agent 以独立 TOML 文件存在于：\n    - `~/.codex/agents/`\n    - `.codex/agents/`\n  - 每个 agent 至少要定义 3 个字段：\n    - `name`\n    - `description`\n    - `developer_instructions`\n  - 其他配置可以继承或单独覆盖，比如：\n    - `model`\n    - `model_reasoning_effort`\n    - `sandbox_mode`\n    - `mcp_servers`\n    - `skills.config`\n  - 文中示例把 `reviewer` 定义为一个专注于“正确性、安全性、缺失测试”的 PR 审查 agent，这说明 agent 最好围绕单一目标设计。\n\n- 第四部分：为什么 agent 要“窄而专”\n  - 作者明确提出：最好的 agent 应该职责很窄。\n  - 例如：\n    - mapper 只负责“梳理结构/映射代码”\n    - reviewer 只负责“评审风险”\n    - docs agent 只负责“核对 API 或文档”\n  - 如果一个 agent 责任太多，就会失去 subagents 的大部分优势。\n  - 通俗理解：不要让一个人同时做“找问题、查文档、改代码、写总结”，分工越清楚，输出越可信。\n\n- 第五部分：运行机制和限制\n  - 子代理会继承父会话的沙箱和审批状态，不是权限更高的独立会话。\n  - 也就是说，它们只是同一运行策略下的并行工作者。\n  - 全局限制在 `[agents]` 配置下，例如：\n    - `max_threads = 6`：最多并发 6 个线程\n    - `max_depth = 1`：最多一层委派深度\n  - 其中：\n    - `max_threads` 控制并发数量\n    - `max_depth` 控制代理再继续委派的层级\n\n- 第六部分：推荐的使用方式\n  - 作者给出一个很实用的角色拆分方案：\n    - `pr_explorer`：追踪受影响的代码路径\n    - `reviewer`：寻找正确性和安全风险\n    - `docs_researcher`：验证补丁依赖的框架/API 行为\n  - 这样做的好处是：\n    - 上下文更小\n    - 角色更清楚\n    - 结果更容易信任\n  - 文中示例任务是：让多个 agent 一起审查某个分支相对 `main` 的改动，分别做代码路径分析、风险审查、API 校验，最后再统一汇总。\n\n- 第七部分：实用建议\n  - 只在任务“真的适合并行”时使用 subagents。\n  - agent 要保持“职责单一、立场明确”。\n  - 做探索和审查时，优先用只读沙箱，更安全。\n  - 搜索、代码映射这类任务可用更快的模型；判断、评审这类任务可用更强的模型。\n  - `max_depth` 尽量保持低，除非确实需要多层委派。\n\n- 结尾：文章结论\n  - 作者认为，subagents 的本质不是单纯并行，而是“角色隔离 + 协同调度”。\n  - 它带来的核心收益包括：\n    - 边界更清晰\n    - 上下文漂移更少\n    - 复杂任务更容易拆解\n  - 如果你在 Codex 里做 PR review、排查问题或分析大型代码库，subagents 会是非常值得用的能力。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773730520873,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6cc67b5969a36c009d66fc89f70796c4f88200105019ba41ad24b6f0651a4395",
+  "refs": {
+    "sessionId": "1773728726218_olvovng4"
+  },
+  "revisionId": "sha256:abac6b408d4ec5302833c41b22e1d2090b71b9dbf8164a8d98e762388d22b582",
+  "schemaVersion": 1,
+  "updatedAt": 1773730520873
+}

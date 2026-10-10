@@ -1,0 +1,67 @@
+{
+  "createdAt": 1773556673550,
+  "entityType": "session",
+  "id": "1773556673550_niixbqq6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "基于文中示例封装一个内部`codex exec`调用脚本，统一处理stdout/stderr、错误码与JSON解析。",
+      "为常见任务设计JSON Schema模板，用于代码审查、信息抽取和变更摘要等结构化输出场景。"
+    ],
+    "archiveReason": "内容高度实操，覆盖Codex exec的输入输出、权限模型、结构化输出与CI集成，适合作为后续搭建自动化代理流程的参考手册。",
+    "classifiedAt": 1773829760950,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 9,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Codex无头执行实战指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "`codex exec`是非交互式单次执行入口，stderr输出过程、stdout仅输出最终结果，适合脚本和CI。",
+      "可通过`--json`输出JSONL事件流，再结合`--output-schema`实现结构化抽取与机器可解析结果。",
+      "权限控制核心由sandbox和approval组成，`--full-auto`与`--yolo`语义不同，前者并不等于完全放开。",
+      "通过`-c`可覆盖大量配置项，包括web search、reasoning summary、工具启停与沙箱细节。"
+    ],
+    "oneHighValuePoint": "最有价值的是把`codex exec`抽象为“输出格式 × 权限级别”的二维状态机，能帮助快速理解其行为边界并正确封装到自动化流程中。",
+    "oneLineReview": "一篇偏工程手册型的高实用文章，细节丰富、可直接上手，但原创思想与普适方法论相对一般。",
+    "primaryCategory": "AI工程化",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "开发工具使用",
+      "Agent应用集成"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统梳理了Codex CLI中`codex exec`的无头调用方式，覆盖输入输出模式、JSONL事件流、Schema结构化输出、权限与沙箱控制、会话恢复及CI封装示例，适合做Agent工程化落地参考。",
+    "tags": [
+      "Codex CLI",
+      "headless execution",
+      "agentic apps",
+      "JSON Schema",
+      "CI自动化"
+    ],
+    "title": "headless maxxing",
+    "totalScore": 77,
+    "url": "https://x.com/alxfazio/status/2032556496781779302"
+  },
+  "payloadHash": "sha256:e951581706e9eddf240534ca98a83a08adfd859311ed51f87956bca491f83ad5",
+  "refs": {},
+  "revisionId": "sha256:8a95909472d30c5fd6d933dcae934428e265bc1784da6c0329ffd9a689c733e9",
+  "schemaVersion": 1,
+  "updatedAt": 1773829760955
+}

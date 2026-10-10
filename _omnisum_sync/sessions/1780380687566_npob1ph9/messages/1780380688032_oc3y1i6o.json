@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780380563882,
+  "entityType": "message",
+  "id": "1780380688032_oc3y1i6o",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\n郭宇表示：  \n他已把主要开发环境从 **GitHub + 本地电脑**，迁移到 **AGS（Agent Git Service）+ 云服务器 + AI Agent**。\n\n核心变化：\n\n- **AGS 成为代码源头**，GitHub 只做备份和 issue 管理。\n- 开发、提交、构建、测试、发布都在 **远程服务器** 上完成。\n- AI 开发代理自动干活，人通过 ChatGPT iOS / Codex 监控和指导。\n- 本地 Mac 基本不用了，只有 iOS 模拟器还依赖 Mac。\n- 他还在做新产品 **VAS（Virtual Agent Server）**，想把这种 AI 开发环境接入语音设备。\n\n---\n\n## 二、解读\n\n### 1. 他不再“自己坐在电脑前写代码”\n\n传统方式是：\n\n> 人打开电脑 → 写代码 → 提交 GitHub → 构建发布\n\n他的方式变成：\n\n> 人提出目标 → AI Agent 在服务器上开发 → 自动构建发布 → 人远程监督\n\n也就是说，开发主力从“人手敲代码”变成了“人指挥 AI”。\n\n---\n\n### 2. GitHub 被降级了\n\n以前 GitHub 是核心：\n\n> 代码托管、协作、发布、issue 都靠它\n\n现在 AGS 是核心：\n\n> AI Agent 直接围绕 AGS 工作\n\nGitHub 只剩：\n\n- 备份代码\n- 管理开源项目 issue\n\n这说明他更看重 **适合 AI Agent 操作的开发基础设施**。\n\n---\n\n### 3. 为什么放弃本地开发？\n\n主要原因：\n\n- 云服务器网络更稳\n- 算力更集中\n- 不受本地电脑限制\n- 可以随时用手机指挥开发\n- 不想一直坐在屏幕前\n\n本质是：\n\n> 把开发环境从“个人电脑”搬到“云端机器”。\n\n---\n\n### 4. VAS 想做什么？\n\nVAS 可以理解为：\n\n> 给 AI Agent 准备的一台虚拟开发服务器。\n\n它不仅能开发代码，还能接入语音控制。\n\n未来可能是：\n\n> 你对音箱说：“帮我修一下登录 bug。”  \n> AI 就在远程服务器上改代码、测试、发布。\n\n---\n\n## 三、我的意见\n\n这是一个很有代表性的趋势：\n\n> 软件开发正在从“人写代码”，转向“人管理 AI 开发流程”。\n\n但它更适合：\n\n- 独立开发者\n- 小团队\n- 熟悉 DevOps 的技术人员\n- 高度依赖 AI 编程的人\n\n暂时不适合：\n\n- 复杂大团队\n- 强合规项目\n- 对安全要求极高的系统\n- 还没有成熟自动测试的项目\n\n我的判断：\n\n**本地开发不会马上消失，但会逐渐变成备用方案。**  \n未来主流可能是：\n\n> 云端开发环境 + AI Agent + 人类审核 + 自动发布\n\n一句话概括：\n\n> 郭宇不是简单换了个 GitHub，而是在尝试一种“AI 原生开发工作流”。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780380563882,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:18e6d159607a1aa963a4b466cd3af80cafe9e409069b83ef9b2fe4cad12a64d1",
+  "refs": {
+    "sessionId": "1780380687566_npob1ph9"
+  },
+  "revisionId": "sha256:dc82444806186a3c57aca3b6989b49145b4ba4c0d2b645fafa4cd27318997ba6",
+  "schemaVersion": 1,
+  "updatedAt": 1780380563882
+}

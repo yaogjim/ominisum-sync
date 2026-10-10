@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773484130017,
+  "entityType": "session",
+  "id": "1773484130017_b50up1ru",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的Agent工作流中引入固定评估指标、失败回滚和实验日志机制。",
+      "为Agent增加类似`program.md`的操作规范文件，将边界、流程和恢复策略显式化。",
+      "将部分实验任务改造成限时评估循环，观察是否能提高单位时间迭代效率。"
+    ],
+    "archiveReason": "对构建可靠的Agent实验框架有较强方法论参考价值，适合反复查阅。",
+    "classifiedAt": 1773829883941,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Autoresearch设计方法解析",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "将开放式AI研究任务重构为受约束的优化循环，可显著提升自治系统稳定性。",
+      "固定评估指标与受限修改范围能降低Agent误优化和基准污染风险。",
+      "时间预算驱动的评估方式更贴近真实工程中的算力与迭代约束。",
+      "可逆性、可观测性和崩溃恢复机制是无人值守Agent系统的关键基础设施。"
+    ],
+    "oneHighValuePoint": "最有价值的点是强调“先优化harness而不是先追求更强自治”，即通过清晰目标、稳定评估和可逆失败来提升Agent实际可用性。",
+    "oneLineReview": "这是一篇方法论强于结论、证据略弱但非常适合Agent工程实践者阅读的分析文。",
+    "primaryCategory": "AI Agent系统设计",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "自动化实验框架",
+      "机器学习工程方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章拆解了Karpathy的Autoresearch如何通过单文件编辑、固定指标、限时实验、失败回滚和日志记录，把“自主研究”收缩为可控优化问题。核心价值不在模型本身，而在于展示了高可靠Agent系统应如何设计约束、评估与恢复机制。",
+    "tags": [
+      "Autoresearch",
+      "Karpathy",
+      "Agent Harness",
+      "实验评估",
+      "系统约束"
+    ],
+    "title": "How Karpathy's Autoresearch Works And What You Can Learn From It",
+    "totalScore": 71.5,
+    "url": "https://x.com/manthanguptaa/status/2032464949952598152"
+  },
+  "payloadHash": "sha256:ac3c7bd3363fe9b67f8749a7ed2d91f9e449fda78fc27535640dabde8426e568",
+  "refs": {},
+  "revisionId": "sha256:2e77636a3647e7e63802f1e5632b7ee12311dc1aa54ef68d18b06a5b8d9ae4f0",
+  "schemaVersion": 1,
+  "updatedAt": 1773829883944
+}

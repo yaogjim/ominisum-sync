@@ -1,0 +1,70 @@
+{
+  "createdAt": 1773807360908,
+  "entityType": "session",
+  "id": "1773807360908_nirgxw2l",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估是否可将该项目的事件模型和策略机制用于现有AI开发工具链安全治理",
+      "重点阅读policies目录，提炼适合自身场景的Cedar规则模板",
+      "验证是否能在本地以最小配置运行harness与对应代理hook",
+      "将其与现有代码审查、密钥防泄漏和供应链检测流程做对比整合"
+    ],
+    "archiveReason": "内容涉及AI编码代理安全治理、策略执行与信息流控制，具备较强的工程参考和长期复用价值。",
+    "classifiedAt": 1773829130117,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "AI编码代理安全钩子框架",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "可通过Hook适配层统一拦截不同AI编码代理的Shell、文件和网络行为",
+      "Cedar策略可作为确定性权限与安全规则引擎，支持默认允许加定向禁止",
+      "YARA与LLM分类器可组合实现敏感数据识别、代码安全评估和外泄防护",
+      "信息流控制可用于限制敏感数据在代理执行过程中的传播与输出",
+      "生产部署中Unix socket路径与权限配置本身就是关键安全边界"
+    ],
+    "oneHighValuePoint": "最有价值的是将不同编码代理的行为统一抽象为标准事件模型，再用Cedar策略与多重护栏进行跨代理一致裁决。",
+    "oneLineReview": "这是一篇高信息密度的工程型项目文档，对AI编码代理安全控制的实现路径给出了较完整的参考。",
+    "primaryCategory": "AI Agent安全与工程基础设施",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "开发者工具",
+      "安全策略与权限控制"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个面向Claude、Cursor、Copilot、Gemini等编码代理的安全钩子框架，通过Rust Hook、Cedar策略、YARA检测和可选LLM分类器，对Shell、文件和网络操作进行统一拦截与裁决，重点解决数据外泄、破坏性操作和信息流控制问题。",
+    "tags": [
+      "AI coding agent",
+      "Cedar policy",
+      "Hook框架",
+      "信息流控制",
+      "安全防护"
+    ],
+    "title": "sondera-ai/sondera-coding-agent-hooks: Hooking implementations and supporting tools for various coding agents (Claude, Cursor, Gemini, etc)",
+    "totalScore": 73.5,
+    "url": "https://github.com/sondera-ai/sondera-coding-agent-hooks"
+  },
+  "payloadHash": "sha256:b20c0edf438914d834c05fcddf649fe8b3fff2a30596ce154fd4fb52e9b5ee27",
+  "refs": {},
+  "revisionId": "sha256:d1798051711e676fad26d08b50b95b2da1944b5a9456a1d33d2de8e62e5c87fb",
+  "schemaVersion": 1,
+  "updatedAt": 1773829130120
+}

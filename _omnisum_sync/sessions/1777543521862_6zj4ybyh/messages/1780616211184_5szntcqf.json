@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780616211185,
+  "entityType": "message",
+  "id": "1780616211184_5szntcqf",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude工作流缓解信息焦虑\n\n**评级**: C (50.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI效率工具\n**次类别**: 信息管理, 个人工作流\n**标签**: #Claude Code #信息流管理 #工作流 #AI辅助 #焦虑缓解\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 有一定启发性的个人工作流展示，但更像案例片段而非可直接复用的系统教程。\n**核心高价值点**: 将信息流逐条转化为明确动作与处理时间，是缓解信息过载的关键。\n\n### 摘要\n作者分享用 Claude Code 和自定义 skill 搭建每日信息处理工作流，通过 /today 和 /morning 将外部信息流整理成可执行清单，从而降低信息焦虑。回复中补充了 skill 描述应使用 Use when / NOT when 的触发写法。\n\n### 知识要点\n- 可用 AI 工具定期汇总 KOL、GitHub Trending、频道消息、平台变更等外部信息源。\n- 信息处理清单应明确动作类型，例如写推、评估安装、跳过、分享、进入 backlog。\n- Claude Code skill 的 description 仅写功能介绍可能影响调用，应改为 Use when 和 NOT when 形式。\n\n### 行动项\n- 尝试为每日信息流建立固定的 AI 汇总入口和处理清单。\n- 检查已有 Claude Code skill 描述，改写为明确的触发条件和排除条件。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是个人经验展示，缺少完整流程、配置细节和效果数据，方法论展开不足。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1780616211185,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:44cac53cf3443f94f7c0feaad86f070b8a7c381cbbe512437aee4fb70dcc1859",
+  "refs": {
+    "sessionId": "1777543521862_6zj4ybyh"
+  },
+  "revisionId": "sha256:a067f1dba48415dcc21066a398d0280fa5823b8785696073127206c3e9d750b3",
+  "schemaVersion": 1,
+  "updatedAt": 1780616211185
+}

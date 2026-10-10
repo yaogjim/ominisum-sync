@@ -1,0 +1,66 @@
+{
+  "createdAt": 1776645702953,
+  "entityType": "session",
+  "id": "1776645702953_5h3128vg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若你在做Agent工程化，可本地运行示例验证其任务图和服务暴露能力",
+      "与LangGraph、OpenAI Agents SDK等现有方案做一轮功能和运维成本对比后再决定是否采用"
+    ],
+    "archiveReason": "包含安装方式、核心能力、代码示例与部署路径，可在后续搭建Agent服务时快速参考",
+    "classifiedAt": 1776646490797,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "开源Agent服务项目Motus简介",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Motus主打无框架Agent Serving，可兼容OpenAI Agents SDK、Anthropic SDK、Google ADK和Plain Python",
+      "通过`@agent_task`和数据流依赖自动推断任务图，支持并行执行、重试、超时与回退策略",
+      "提供本地服务、云部署、可观测性、MCP集成、Docker沙箱和多模型提供商支持"
+    ],
+    "oneHighValuePoint": "将普通Python函数通过`@agent_task`直接转为可并行、可重试、可追踪的任务图节点，降低了Agent工作流工程化门槛。",
+    "oneLineReview": "一份偏产品化的项目说明文档，实操入口清晰，但证据和对比不足，适合快速了解不适合盲目重仓。",
+    "primaryCategory": "AI工程化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为Agent服务基础设施选型资料",
+    "secondaryCategories": [
+      "Agent框架",
+      "开源基础设施"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章本质上是Motus开源项目的README，介绍其作为Agent Serving基础设施的定位、安装方式、运行时能力与示例代码，强调无框架接入、并行任务图、可观测性、本地服务和云部署等特性。",
+    "tags": [
+      "Motus",
+      "Agent Serving",
+      "Python",
+      "任务编排",
+      "开源项目"
+    ],
+    "title": "lithos-ai/motus: The open-source agent-serving project",
+    "totalScore": 59,
+    "url": "https://github.com/lithos-ai/motus"
+  },
+  "payloadHash": "sha256:d26bb6ba9a67236c5e678d8cf06173c0c5d8e663a6d9fbb957a0da1350123025",
+  "refs": {},
+  "revisionId": "sha256:914cb1d873addb9b3e9e9d6ebd2d8c281fe1a375d4ac0e389a4543df285a4fcb",
+  "schemaVersion": 1,
+  "updatedAt": 1776646964467
+}

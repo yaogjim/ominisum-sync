@@ -1,0 +1,67 @@
+{
+  "createdAt": 1777775435559,
+  "entityType": "session",
+  "id": "1777775435559_bg3nx1gl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "住院第一天询问主管医生本病组大致住院天数和费用上限。",
+      "被建议出院或转院时，询问原因是医学指标达标还是医保住院日或费用约束。",
+      "转院前计算总成本，包括再入院费用、交通、陪护、挂号和重复检查成本。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777775796723,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "DRG控费下的住院出院机制",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "DRG按疾病诊断相关分组预设医保支付额度和平均住院日，可能改变医院对检查、用药和住院时长的激励结构。",
+      "医保控费可能降低单次住院费用和平均住院日，但也可能带来转院、再入院、门诊拆分和患者总成本上升等局部扭曲。",
+      "医保、自费和商业保险患者可能因支付方式不同而面对不同的住院管理约束。"
+    ],
+    "oneHighValuePoint": "患者在被建议出院或转院时，应区分这是医学指标达到出院标准，还是医保支付规则触发的管理性出院。",
+    "oneLineReview": "有现实提醒价值，但证据引用不够完整，需结合权威资料交叉验证。",
+    "primaryCategory": "医疗政策",
+    "rating": "B",
+    "rejectReason": "文章以个人经历和概括性研究引用为主，缺少完整出处和严谨数据链，适合作为现象观察，不宜作为权威依据。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "医保支付改革",
+      "患者决策"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章从三甲医院经历切入，解释DRG/DIP医保支付改革如何影响平均住院日、转院、再入院和患者自付成本，并给出住院时询问病组天花板、判断出院原因、计算总成本等建议。",
+    "tags": [
+      "DRG",
+      "医保控费",
+      "住院管理",
+      "患者自付",
+      "转院"
+    ],
+    "title": "为什么住院 14 天必须出院",
+    "totalScore": 55.5,
+    "url": "https://x.com/rwayne/status/2049109111456055587"
+  },
+  "payloadHash": "sha256:c33293d6a7d451a96fb942315949f7502cec1f9aea69549f0c1d646a717a08e6",
+  "refs": {},
+  "revisionId": "sha256:f50d213ada6f3e6ca930ab4f80976877fa297b4b3b4ae51c2b043cc9530e9808",
+  "schemaVersion": 1,
+  "updatedAt": 1777795396278
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773316537775,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773316537775",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "下面给你一个**基于 Aurogen 的具体实例**，并在这个实例之上提炼出一套**最佳实践（精炼版）**。\n\n---\n\n## 具体实例：搭建一个 “多 Agent 客服知识助手”\n\n### 场景\n一家小团队希望快速部署一个内部 AI 助手，用来处理：\n\n- 产品文档问答\n- 工单初筛\n- FAQ 自动回复\n- 复杂问题转交人工\n\n### 用 Aurogen 的配置方式\n利用它的**模块化、多 Agent、Web 配置、动态生效**特性，设计如下：\n\n#### 1. Provider\n配置一个主模型 Provider：\n- Base URL：企业已有的兼容 OpenAI API 服务\n- API Key：团队统一管理\n\n#### 2. Agents\n创建 3 个 Agent：\n\n- **Agent A：FAQ 助手**\n  - 负责标准问题、常见问答\n  - 关闭 Thinking，追求低成本和高响应速度\n\n- **Agent B：知识库助手**\n  - 负责文档检索、产品说明、操作指引\n  - 开启 Thinking，用于稍复杂的推理\n\n- **Agent C：升级路由助手**\n  - 判断问题是否需要人工介入\n  - 输出 “自动答复 / 转人工 / 需要补充信息”\n\n#### 3. Channels\n- Web Channel：给内部员工或客服直接使用\n- 后续可以扩展更多 Channel，复用同一套 Agent 体系\n\n#### 4. Skills\n从兼容生态中导入：\n- FAQ 查询技能\n- 工单总结技能\n- 知识库搜索技能\n\n---\n\n# 在这个实例上的最佳实践\n\n## 1）按职责拆 Agent，不要一个 Agent 包打天下\n**最佳实践：**\n将 “问答、检索、路由” 拆成不同 Agent。\n\n**原因：**\nAurogen 的优势就在于模块化和多 Agent 并行 / 组合。  \n如果所有任务都堆到一个 Agent：\n- Prompt 会越来越臃肿\n- 调试困难\n- 成本更高\n- 结果稳定性更差\n\n**建议：**\n先拆成最小可用的 2～3 个角色，再逐步扩展。\n\n---\n\n## 2）把 “快响应” 和 “强推理” 分层配置\n**最佳实践：**\n- 高频简单任务 → 便宜、快的模型，关闭 Thinking\n- 复杂分析任务 → 更强模型，按需开启 Thinking\n\n**原因：**\nAurogen 支持 Agent 级配置，这正适合做成本 / 性能分层。  \n不要所有 Agent 都用最高配置。\n\n**建议：**\n优先优化 80% 的常见请求，把高成本能力留给少数复杂场景。\n\n---\n\n## 3）优先通过 Web 面板迭代配置，而不是频繁改代码\n**最佳实践：**\n先用 Web 面板完成：\n- Provider 配置\n- Agent 绑定\n- Model ID 调整\n- Channel 关联\n\n**原因：**\nAurogen 的一大优势就是**动态加载、配置即时生效、无需重启**。  \n这非常适合业务快速试错。\n\n**建议：**\n只有当流程稳定后，再考虑沉淀成标准化部署文档或自动化脚本。\n\n---\n\n## 4）先从单一 Channel 跑通，再扩展多入口\n**最佳实践：**\n第一阶段只启用 Web Channel 验证全链路。\n\n**原因：**\n多 Channel 虽然是 Aurogen 的强项，但早期同时铺开会增加排障复杂度。  \n应先验证：\n- Provider 是否稳定\n- Agent 分工是否合理\n- Skills 是否可用\n- 输出质量是否达标\n\n**建议：**\n遵循 “单 Channel 成功 → 多 Channel 复制” 的路线。\n\n---\n\n## 5）使用兼容生态时，先做 Skill 白名单管理\n**最佳实践：**\n从 clawhub.ai 导入 Skill 后，不要直接全量开放，先建立白名单。\n\n**原因：**\n生态兼容是优点，但外部 Skill 的质量、权限范围、输出格式可能不一致。  \n尤其在客服 / 企业场景中，技能失控会影响稳定性。\n\n**建议：**\n每个导入 Skill 都做 3 件事：\n- 明确用途\n- 小范围测试\n- 指定可调用 Agent\n\n---\n\n## 6）生产环境一定先做密码和工作区持久化\n**最佳实践：**\n部署后第一件事：\n- 设置 Web 面板密码\n- 持久化`.workspace`\n\n**原因：**\nAurogen 默认通过 Web 管理，若部署到 VPS / 云服务器，不做安全和持久化会有明显风险。\n\n**建议：**\nDocker 运行时务必挂载持久卷，例如：\n- 配置持久化\n- 导入技能持久化\n- 历史状态保留\n\n---\n\n## 7）把 “默认 Provider” 当作模板，不要直接长期裸用\n**最佳实践：**\n编辑默认 Provider 后，尽快按用途复制出多个 Provider 配置，例如：\n- 通用对话 Provider\n- 高质量推理 Provider\n- 低成本 Provider\n\n**原因：**\n这样后续 Agent 调优时更灵活，也方便切换底层模型供应商。\n\n**建议：**\n命名规范统一，例如：\n- `provider_fast`\n- `provider_reasoning`\n- `provider_backup`\n\n---\n\n## 8）先建立最小闭环，再追求多实例与复杂编排\n**最佳实践：**\n第一版目标只做：\n“用户提问 → Agent 处理 → 返回答案”\n\n不要一上来就追求：\n- 多实例并发编排\n- 复杂子 Agent 树\n- 大量 Skill 串联\n\n**原因：**\nAurogen 功能很多，但最佳落地方式是先做可验证闭环。  \n复杂编排应建立在稳定基线上。\n\n---\n\n# 一句话总结\n\n**Aurogen 最适合的用法，不是 “把所有能力塞进一个大模型”，而是 “用 Web 面板快速搭一个职责清晰、成本分层、可持续扩展的多 Agent 系统”。**\n\n如果你愿意，我下一步可以直接把这个实例进一步写成一份：\n\n1. **Aurogen 落地方案配置清单**  \n或  \n2. **适合复制执行的部署 SOP（5 分钟版）**。",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773316537775,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:fd974f1a3dc7d3da1f92af8440ce820fbd7dd598de4372829e9b277a3fb9c8bf",
+  "refs": {
+    "sessionId": "1773316142231_ztr80i0a"
+  },
+  "revisionId": "sha256:09a4042811a6f542a574e2d37d8ace9248916eca7ef7b17697d5a3acf5afc945",
+  "schemaVersion": 1,
+  "updatedAt": 1773316537775
+}

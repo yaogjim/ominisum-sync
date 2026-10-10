@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777438962919,
+  "entityType": "message",
+  "id": "summary_default_1777438962919",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "> **一句话总结：**用 Claude Code 连接 Obsidian，把你的真实输入变成可被 AI 持续追问、提炼和监督的原创内容系统。\n\n## 极简拆解\n\n### 1. 核心逻辑\n不是先追热点、洗稿、搭复杂知识库，而是先积累自己的真实语料：录音、阅读感想、日常思考。\n\n### 2. 工作流\n- **输入层**：对话录音、阅读笔记、灵感想法  \n- **存储层**：Obsidian 本地 Markdown 知识库  \n- **处理层**：Claude Code 调用本地文件  \n- **输出层**：用`/challenge`、`/emerge`、`/draft`生成问题、洞察与复盘  \n- **闭环**：成长 → 原创 → 流量 → 倒逼继续成长\n\n### 3. 关键价值\nAI 不再只是 “凭空生成”，而是基于你的长期背景、行动记录和真实表达，帮你挖掘更像你的内容。\n\n### 4. 实操重点\n少折腾插件模板，多持续输入；少收藏别人的东西，多沉淀自己的判断；少追求一次性爆文，多建立可复利的内容系统。\n\n## 辩证评价\n\n这套方法的价值在于把 “内容生产” 从模仿他人，转向基于自身经历和思考的长期资产沉淀。  \n但它并不适合只想快速搬运、短期套利的人，因为真正的门槛不是工具，而是持续记录、反思和输出的习惯。\n\n## 高价值 / 反常识总结\n\n真正让 AI 变强的不是提示词，而是你长期积累的高质量个人语料。  \n原创不是靠灵感爆发，而是靠一个能持续逼你输入、思考、表达和复盘的系统。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1777438962919,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:944fe75796b38e0738d913d9642cecec2874f5925afe0e30f00c51bfa1da744f",
+  "refs": {
+    "sessionId": "1777438545732_we0556mo"
+  },
+  "revisionId": "sha256:68b4409de46fc46415ba80d60d442ca76225d1bf72601485cebc436f599974dd",
+  "schemaVersion": 1,
+  "updatedAt": 1777438962919
+}

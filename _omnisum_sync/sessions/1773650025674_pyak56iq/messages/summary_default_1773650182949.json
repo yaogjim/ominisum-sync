@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773650182949,
+  "entityType": "message",
+  "id": "summary_default_1773650182949",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "- 精炼总结：Sandbank 是一个为 AI Agent 和云沙箱场景设计的统一 SDK，用同一套 TypeScript 接口屏蔽 Daytona、Fly.io、Cloudflare 和自托管 BoxLite 的差异，实现 “一次编写，多云运行”。\n- 一句话评论：这不是单纯的适配器集合，而是把沙箱生命周期、能力检测和多 Agent 编排抽象成了可落地的跨云基础设施层。\n- 一句话高价值内容：它最有价值的地方在于以 “最小统一接口 + 可选能力扩展” 避免了厂商锁定，让业务代码能在不同沙箱提供商之间低成本迁移。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1773650182949,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:865b7ef3cb0d71aa1ef1c30daae0a811fb4f6fae96e74ae28997989c211c575d",
+  "refs": {
+    "sessionId": "1773650025674_pyak56iq"
+  },
+  "revisionId": "sha256:41b1ba42b14a5a720eeb86598e8d3d8157dc4024d432eda895934e0152ddb3b3",
+  "schemaVersion": 1,
+  "updatedAt": 1773650182949
+}

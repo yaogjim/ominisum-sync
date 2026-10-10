@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773730520873,
+  "entityType": "message",
+  "id": "1773730553655_llcn0d8b",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章的主旨是：作者把有“长期记忆”的 Letta Code 和“无状态”的 Claude Code、Codex 结合起来使用，以兼顾上下文积累能力和单任务专注能力。核心观点是：让 Letta Code 负责记忆、调度和补充背景信息，再把具体任务分派给更聚焦的子代理。\n\n- 第一部分：为什么要把“有记忆代理”和“无状态代理”结合\n  - 作者平时主要使用 Letta Code，因为它是“memory-first coding agent（记忆优先的编程代理）”，能记住代码库、个人偏好和过去决策。\n  - 但在某些场景下，无状态代理（如 Codex、Claude Code）反而更合适，因为它们每次都是“干净上下文”，只关注当前问题，噪音更少、更容易聚焦。\n  - 问题在于：干净上下文虽然更专注，但也会带来“代理失忆”，即它们不了解之前积累的经验和背景。\n\n- 第二部分：作者如何在 Letta Code 中接入 Claude Code 和 Codex\n  - 作者给 Letta Code 增加了一个内置 skill，用来调用 Claude Code 或 Codex 作为“子代理”。\n  - 这个 skill 会明确告诉 Letta Code：这些子代理没有记忆，因此必须提前给它们补充必要上下文。\n  - 作者用一个很形象的比喻：Claude Code 和 Codex 像“今天刚入职但很聪明的新员工”，如果不给足说明和背景，它们就要重新摸索。\n  - 实际使用中，Letta Code 会在分发任务时，把关键文件、编码偏好等重要背景一并传给 Codex，这样既能利用 Letta Code 的记忆，又能让 Codex 在隔离上下文中专注处理单个任务。\n\n- 第三部分：如何选择不同的子代理\n  - 作者在 skill 里写了不同模型的推荐使用场景，同时也允许代理自己逐渐学习如何判断。\n  - `Codex CLI (gpt-5.3-codex)`：适合“最难的调试、复杂推理”。\n  - 它的优点是：前沿推理能力强、调试能力优秀、最适合最困难的问题。\n  - 它的缺点是：长流程任务时速度慢，而且上下文压缩（compactions）可能破坏任务轨迹。\n  - `Codex CLI (gpt-5.4)`：适合“快速的通用任务”。\n  - 优点是：更容易让人理解、通用性强、速度更快；缺点是：比 `gpt-5.3-codex` 更容易犯一些低级错误。\n  - `Claude Code CLI (opus)`：适合“写文档、重构、开放式任务、指令模糊的任务”。\n  - 优点是：写作能力强、能理解模糊需求、通用性好；缺点是：容易生成“slop（空泛/冗余内容）”，或者写出没必要的过多代码。\n\n- 第四部分：Letta Code 还能帮作者“屏蔽”难用的模型交互\n  - 作者特别提到，`Codex 5.3` 在处理高难度调试时“非常强”，但“非常难交流”。\n  - 具体问题包括：作者常常分不清它是否已经跑偏，而且它也经常误解作者的话。\n  - Letta Code 的价值就在这里：它替作者和 Codex 交互，帮忙写好 prompt，再把原本“不好读的执行轨迹”整理后解释给作者听。\n  - 也就是说，Letta Code 不只是调度器，还是“翻译层”和“缓冲层”。\n\n- 第五部分：作者很喜欢的一个用法——让子代理给计划提意见\n  - 作者最喜欢的模式之一，是让 Codex 或 Claude Code 对已有计划做反馈，充当“第二意见”。\n  - 具体做法是：先把计划写进一个文件，再调用子代理去审查它。\n  - 原文给出的命令示例是：\n```bash\nclaude -p \"Read /tmp/my-plan.md and critique it. What am I missing? What could go wrong?\" \\\n  --model opus --dangerously-skip-permissions -C /path/to/repo\n```\n  - 这样做的好处是：审查者从“干净上下文”开始，不容易被原计划的既有假设牵着走，因此更容易发现遗漏和风险。\n\n- 第六部分：Letta Code 与子代理之间可以持续来回沟通\n  - Letta Code 不只是一次性下发任务，它还能和子代理多轮对话。\n  - 比如 Codex 执行任务后如果有问题，Letta Code 能看到输出，并在同一个 session 中继续回复，让 Codex 接着做。\n  - 这意味着整个流程不是“主代理发任务—子代理一次性返回”这么简单，而是可以形成持续协作。\n\n- 第七部分：作者对未来多代理协作的看法\n  - 作者认为，随着代理越来越长时运行、越来越自主，人类会越来越难直接管理它们。\n  - 因此，一个很好的模式是：让 Letta Code 这种擅长积累记忆、理解用户和工作背景的代理，来统一负责调度任务，并把合适的上下文交给隔离、无状态的子代理。\n  - 简单说，就是“一个有记忆的总控代理 + 多个专注单任务的子代理”的协作架构。\n\n- 第八部分：如何体验和获取这个能力\n  - 作者说，这个 skill 已经可以在最新版 Letta Code 中使用。\n  - 安装命令是：\n```bash\nnpm i -g @letta-ai/letta-code\n```\n  - 另外，这个完整 skill 是开源的，位置在：\n    `letta-ai/letta-code/src/skills/builtin/dispatching-coding-agents/SKILL.md`\n\n如果你愿意，我还可以进一步把这篇文章压缩成“超短版 3 点总结”或整理成“优缺点对照表”。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773730520873,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:fcea8ec25c770ea4046f6b5d8f116f596a305ec2f399e07b0130e5d75b31b7b0",
+  "refs": {
+    "sessionId": "1773725750708_s8v2mcs7"
+  },
+  "revisionId": "sha256:724e0365bdc29816693db206b1ede4559c942082cab217be9fa268fc39ada5cf",
+  "schemaVersion": 1,
+  "updatedAt": 1773730520873
+}

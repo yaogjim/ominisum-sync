@@ -1,0 +1,68 @@
+{
+  "createdAt": 1780380625671,
+  "entityType": "session",
+  "id": "1780380625671_wsel2gno",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在使用 Codex 时，根据需求选择 Steer 干预当前任务或 Queue 安排后续任务",
+      "尝试在长任务后排队 Continue，观察是否能稳定延长 Agent 工作时间",
+      "记录不同 Agent 实现中 Queue 消息是逐条执行还是合并提交"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780380931046,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex任务引导与排队技巧",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Steer 可在 Agent 当前任务未完成时插入新指令，引导其改变执行方向",
+      "Queue 不打断当前任务，而是将消息排队，在当前步骤或任务完成后依次执行",
+      "Codex 中 Steer 的快捷键勘误为 Ctrl + Enter，Mac 为 Command + Enter",
+      "可通过排队多个 Continue 让长任务在无人值守时持续推进"
+    ],
+    "oneHighValuePoint": "明确区分 Steer 是干预当前任务，Queue 是安排后续任务。",
+    "oneLineReview": "一条实用但较浅的 Codex 操作提示，适合快速了解 Steer 与 Queue 的区别。",
+    "primaryCategory": "AI工具使用",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "编程助手",
+      "效率技巧"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Codex Agent 执行任务时补充指令的两种方式：Steer 用于中途干预并改变当前方向，Queue 用于在当前任务完成后排队执行后续任务，并补充了正确快捷键说明。",
+    "tags": [
+      "Codex",
+      "AI Agent",
+      "Steer",
+      "Queue",
+      "任务管理"
+    ],
+    "title": "宝玉: Codex 使用技巧：Steer 和 Queue 通常 Agent 执行一个任务不会马上结束，可能会要等几分钟甚至更久，如果这时候你有个新的要求想补充，这里有两…",
+    "totalScore": 56,
+    "url": "https://x.com/dotey/status/2057235477623939482"
+  },
+  "payloadHash": "sha256:dfb73a3f3206c494c22b8b9eb8bc35aa5b185aba86a8baec1437435bd00b8cbf",
+  "refs": {},
+  "revisionId": "sha256:d793ce4adb7decaa7af2b64b197cba450d22dcbf14172d9554f7a4f9497e5306",
+  "schemaVersion": 1,
+  "updatedAt": 1780384674997
+}

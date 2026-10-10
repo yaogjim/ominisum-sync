@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777005699345,
+  "entityType": "message",
+  "id": "1777005699344_f2k6hwbn",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent协作下Worktree局限\n\n**评级**: D (39分)  |  **深度阅读**: 否  |  **建议操作**: 跳过\n\n**主类别**: AI 编码协作\n**次类别**: Git 工作流, 多 Agent 协同\n**标签**: #git worktree #multi-agent #协作冲突 #版本控制 #开发流程\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 4 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 3 | 15% |\n| 方法论价值 | 3 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 有话题性但论证不足，更像引战式观点提示而非高质量方法文章。\n**核心高价值点**: 指出“文件系统级隔离”与“多 Agent 实时可见协作”之间存在天然张力，这个问题意识本身值得关注。\n\n### 摘要\n文章以社交媒体短帖形式批评 git worktree 不适合多 Agent 并行协作，认为隔离目录导致彼此不可见、冲突延后爆发，并引用 virtual branches 与 CRDT 作为可能方向，但整体仍停留在观点层面。\n\n### 知识要点\n- git worktree 的隔离特性会降低多 Agent 实时感知彼此修改的能力\n- virtual branches 与 CRDT 被视为一种替代性的协作实现思路\n\n### 行动项\n- 评估你的多 Agent 工作流是否真的需要实时共享上下文，而非依赖分支隔离与合并机制\n- 对比 worktree、单仓共享目录、PR 队列和 conflict bot 等方案在实际项目中的冲突成本\n\n### 存档判定\n归档: 否\n不推荐: 核心观点较单薄，主要是立场表达而非系统分析，缺少实验数据、真实案例和可执行替代方案，讨论价值有限。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1777005699345,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:8809eeb4f5b8ccec06ef768351147eb683fbb22c95074f61e1410914ced16f1b",
+  "refs": {
+    "sessionId": "1777005396849_ncljx3ga"
+  },
+  "revisionId": "sha256:c105590575959ca48aa572799ed5b809ec266f1fa2a92beb2270b895b424017b",
+  "schemaVersion": 1,
+  "updatedAt": 1777005699345
+}

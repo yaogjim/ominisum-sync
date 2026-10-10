@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774404443996,
+  "entityType": "session",
+  "id": "1774404443996_crqa4xei",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用文中的能力模块搭建一份内部编码代理平台评估清单，盘点当前缺口",
+      "区分哪些能力必须自研、哪些可采购，先验证MVP边界再决定长期路线"
+    ],
+    "archiveReason": "提供了较完整的编码代理平台能力框架与选型因素，可作为后续评估供应商或自研路线的参考提纲",
+    "classifiedAt": 1774407476803,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "编码代理部署建买抉择",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "企业级编码代理落地的难点不在MVP，而在审计、交接、评测、数据接入与安全治理等规模化能力",
+      "build vs buy 不应二选一，适合按开发环境特殊性自研关键部分，其余能力采购或集成",
+      "上下文架构与持续改进机制是代理系统长期积累组织知识和提升效果的关键"
+    ],
+    "oneHighValuePoint": "最有价值的是把“编码代理平台”拆解为控制平面、编排、上下文架构、评测观测和治理合规等可独立评估的基础能力模块。",
+    "oneLineReview": "框架感强、实操启发尚可，但明显带有产品推介色彩且证据支撑不足。",
+    "primaryCategory": "AI工程管理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为企业部署编码代理时的初步决策清单",
+    "secondaryCategories": [
+      "开发工具选型",
+      "智能体基础设施"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕企业如何大规模部署云端编码代理，讨论自研与采购的权衡，提出控制平面、编排、上下文架构、评测观测、治理合规等核心能力，并建议多数公司采用渐进式、混合式方案。",
+    "tags": [
+      "编码代理",
+      "build vs buy",
+      "工程管理",
+      "Agent orchestration",
+      "企业部署"
+    ],
+    "title": "Build vs buy: how to deploy coding agents at scale",
+    "totalScore": 60.5,
+    "url": "https://x.com/zachlloydtweets/status/2036509756404158559"
+  },
+  "payloadHash": "sha256:e1ffc55e8d03e7009ba4506353e1a2aa0678eb6bb542e3d8ace3dda6dc1ae07c",
+  "refs": {},
+  "revisionId": "sha256:badc0c46e077636187302cb730909368bf24722d1e592bda2808f9c03d8923d2",
+  "schemaVersion": 1,
+  "updatedAt": 1774433892574
+}

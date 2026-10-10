@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774867045612,
+  "entityType": "session",
+  "id": "1774867045612_49pr7tue",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "挑选 1-2 个高频开发流程，尝试用 /loop 或 Hooks 做最小可行自动化",
+      "为前端或测试场景补上可验证反馈回路，如浏览器预览、测试执行或编译检查"
+    ],
+    "archiveReason": "内容集中梳理了 Claude Code 的高阶功能与典型用法，后续上手或配置自动化时可回查",
+    "classifiedAt": 1774867992861,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code隐藏功能盘点",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可通过 /loop 与 /schedule 让 Claude Code 按周期自动执行代码审查、PR 清理和反馈处理",
+      "Hooks 可在会话生命周期关键节点注入确定性逻辑，实现日志、审批和上下文加载等自动化",
+      "Git worktrees、/batch 与自定义 agent 支持多实例并行开发和批量代码迁移"
+    ],
+    "oneHighValuePoint": "把 Claude Code 从对话式助手升级为持续运行的自动化代理，核心思路是用 skill、loop、hook 和 worktree 组合构建工作流。",
+    "oneLineReview": "一篇高密度的功能清单型文章，实操启发不少，但证据与案例深度一般。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为 Claude Code 功能索引与实践清单",
+    "secondaryCategories": [
+      "开发效率",
+      "工作流自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章汇总了 Claude Code 的 15 个常被低估的功能，包括远程控制、定时任务、Hooks、工作树并行、批处理、自定义代理和语音编程等，并补充了适用场景、限制条件与实践提醒，偏工具导览与工作流启发。",
+    "tags": [
+      "Claude Code",
+      "AI Agent",
+      "自动化工作流",
+      "开发工具",
+      "代码审查"
+    ],
+    "title": "宝玉: 你日常用 Claude Code，用了多少功能",
+    "totalScore": 66.5,
+    "url": "https://x.com/dotey/status/2038481514732691940"
+  },
+  "payloadHash": "sha256:44e08bae64e702ab1126cd87d06893d6d9b2fef7947900a7ea442cef741a0ffa",
+  "refs": {},
+  "revisionId": "sha256:e5aabeb94ecd7ccf4013e30bdaa0caf1559fbbdab260f966a73898039fc2de8e",
+  "schemaVersion": 1,
+  "updatedAt": 1774868305977
+}

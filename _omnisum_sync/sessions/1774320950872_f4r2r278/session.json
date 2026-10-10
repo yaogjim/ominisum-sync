@@ -1,0 +1,65 @@
+{
+  "createdAt": 1774320950872,
+  "entityType": "session",
+  "id": "1774320950872_f4r2r278",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审视团队是否存在AI生成代码缺少背景说明、设计记录和问题闭环沉淀的情况。",
+      "在PR、缺陷修复和事故复盘中补充决策背景与上下文记录，降低后续理解成本。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774320961647,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编码加速与上下文债",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI提升代码产出速度，未必同步提升团队对系统的整体理解能力。",
+      "知识流失和上下文断裂可能成为比写代码更昂贵的工程成本中心。"
+    ],
+    "oneHighValuePoint": "“上下文债”这一命名较准确地描述了AI加速产出后，团队对代码和决策背景理解不足所积累的隐性成本。",
+    "oneLineReview": "概念有启发性，但更像营销化观点输出，证据和方法细节明显不足。",
+    "primaryCategory": "AI辅助软件工程",
+    "rating": "C",
+    "rejectReason": "内容以观点表达和产品宣传为主，缺少可验证数据、案例拆解和可直接落地的方法。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "工程管理",
+      "知识管理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出“上下文债”概念，认为AI显著提高写代码速度的同时，也加剧了团队对代码、缺陷和历史决策的理解成本。核心主张是企业应重视知识沉淀，并通过上下文图谱减少调试与协作中的信息断层。",
+    "tags": [
+      "AI编程",
+      "上下文债",
+      "代码理解",
+      "知识沉淀",
+      "调试效率"
+    ],
+    "title": "Machina: AI made writing code 10x faster, but it also made understanding your own codebas…",
+    "totalScore": 43,
+    "url": "https://x.com/EXM7777/status/2036116117350220167"
+  },
+  "payloadHash": "sha256:7fa725cab0e14ef7d3b37ad8e74fb53a750b60642900012de6417c2e75f88f00",
+  "refs": {},
+  "revisionId": "sha256:68b911e8829f7f5bf21acb615a7c9fa00d830cc2a1c96f3e1e2bff1554a6e332",
+  "schemaVersion": 1,
+  "updatedAt": 1774334565715
+}

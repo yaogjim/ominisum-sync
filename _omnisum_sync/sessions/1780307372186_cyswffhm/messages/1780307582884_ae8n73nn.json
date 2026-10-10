@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780307582885,
+  "entityType": "message",
+  "id": "1780307582884_ae8n73nn",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AI编码代理持久记忆方案\n\n**评级**: A (77分)  |  **深度阅读**: 可选  |  **建议操作**: 精读\n\n**主类别**: AI开发工具\n**次类别**: 智能体记忆, MCP生态, 开发效率\n**标签**: #AI Agent #持久记忆 #MCP #代码助手 #知识图谱 #检索增强\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一份信息量很大的项目README，工程可操作性强，但带有明显自我宣传色彩，部分基准仍需独立验证。\n**核心高价值点**: 将AI编码代理的会话、工具调用、文件上下文和决策沉淀为可检索的长期记忆，并通过BM25、向量和知识图谱融合检索，在后续会话中自动注入相关上下文。\n\n### 摘要\n文章介绍 agentmemory，一个面向AI编码代理的持久记忆系统，支持Claude Code、Cursor、Codex等多种工具，通过MCP、REST、hooks自动捕获会话、压缩记忆、混合检索并注入上下文，附带安装、部署、配置、API和基准测试说明。\n\n### 知识要点\n- agentmemory通过hooks自动捕获AI编码代理的工具调用、提示、错误和会话结束信息，减少手动维护记忆的成本\n- 系统采用BM25、向量检索、知识图谱和RRF融合，提高长期记忆召回的相关性\n- 支持MCP、REST API和iii函数调用，可接入Claude Code、Cursor、Codex、Copilot CLI、Gemini CLI等多种代理\n- 记忆生命周期包括原始观察、会话摘要、语义事实、流程模式、衰减、强化、遗忘和冲突处理\n- 提供本地嵌入、OpenAI兼容模型、Ollama、LM Studio等配置，适合低成本或本地化部署\n- 附带viewer、session replay、OpenTelemetry traces和iii console，便于调试记忆写入、检索和压缩过程\n\n### 行动项\n- 如正在高频使用AI编码代理，可本地运行 npx @agentmemory/agentmemory demo 验证记忆检索效果\n- 评估当前主力编码工具是否支持MCP或hooks，并尝试接入agentmemory\n- 重点阅读Memory Pipeline、Retrieval、Config和Benchmarks部分，判断是否适合自己的开发流程\n- 若处理敏感代码，优先测试本地嵌入、本地LLM、AGENTMEMORY_SECRET和隐私过滤配置\n- 对其官方benchmark保持谨慎，建议用自己的项目会话构造小型对照测试\n\n### 存档判定\n归档: 是 — 原因: 内容包含完整安装配置、架构设计、检索机制、基准测试和多代理集成方案，对构建或评估AI Agent长期记忆系统有参考价值\n删除: 否\n留存决策: 长期保留，适合作为AI编码代理记忆系统选型和实践参考",
+    "role": "assistant",
+    "timestamp": 1780307582885,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:b4fd8c88045a860da752623602f0f382349759398c1df6431a790eb0aa02357b",
+  "refs": {
+    "sessionId": "1780307372186_cyswffhm"
+  },
+  "revisionId": "sha256:b038717ee1699eb5e0d604df34738c4f34efd490e193579654909584c768cb27",
+  "schemaVersion": 1,
+  "updatedAt": 1780307582885
+}

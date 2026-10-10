@@ -1,0 +1,66 @@
+{
+  "createdAt": 1780448905352,
+  "entityType": "session",
+  "id": "1780448905352_eotg10zt",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 LangChain Agent，可进一步查看 RubricMiddleware 官方文档或原文。",
+      "在复杂代理任务中尝试将最终目标拆成可检查的评分标准。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780449771660,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "LangChain代理评分量规",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "RubricMiddleware 可用于给代理附加明确的评价标准。",
+      "代理可基于评分结果进行自我修正，减少首次输出不完整的问题。",
+      "该机制适合长期任务、复杂工作流和需要稳定输出质量的生产场景。"
+    ],
+    "oneHighValuePoint": "通过评分量规驱动智能体自评与修正，可提升复杂任务中输出与目标的一致性。",
+    "oneLineReview": "这是一个有启发但信息不足的功能公告，适合了解方向，不值得深读。",
+    "primaryCategory": "AI Agent",
+    "rating": "C",
+    "rejectReason": "内容主要是产品功能公告和转述，信息量有限，缺少实现细节、代码示例和实证案例。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "LangChain",
+      "智能体评估"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 LangChain Deep Agents 的新特性 Agent Rubrics，可在调用代理时附加评分标准，让评估器检查并促使代理自我修正输出，适用于长期或复杂任务中的质量控制。",
+    "tags": [
+      "Agent Rubrics",
+      "RubricMiddleware",
+      "自我修正",
+      "LangChain",
+      "AI工作流"
+    ],
+    "title": "LangChain: New in Deep Agents: Agent Rubrics",
+    "totalScore": 48.5,
+    "url": "https://x.com/LangChain/status/2061875246110507011"
+  },
+  "payloadHash": "sha256:0400283da3c399fb09245244328c8a0c613d7d554d0f2c8e97bbe9a583261a80",
+  "refs": {},
+  "revisionId": "sha256:7028e6fb064a1474af214fa672b105a5c541d105abf544a682aa1b1676f450b9",
+  "schemaVersion": 1,
+  "updatedAt": 1780449772030
+}

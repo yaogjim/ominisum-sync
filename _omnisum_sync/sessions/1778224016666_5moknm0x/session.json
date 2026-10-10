@@ -1,0 +1,107 @@
+{
+  "createdAt": 1778224016666,
+  "entityType": "session",
+  "id": "1778224016666_5moknm0x",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尝试建立一个用于评审和改进其他Skill的元Skill。",
+      "在设计新Skill前，先让大模型输出调研报告和初步方案，再进行人工修订。"
+    ],
+    "archiveReason": "",
+    "byline": "姚金刚",
+    "classifiedAt": 1780615902061,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI Skill前期设计流程",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 1200,
+        "id": "img-22",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HHsDkxUa8AAIzkl?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HHsDkxUa8AAIzkl?format=jpg&name=medium",
+        "width": 553
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 1200,
+        "id": "img-23",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HHsDkxXbwAAbtY5?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HHsDkxXbwAAbtY5?format=jpg&name=medium",
+        "width": 553
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 1200,
+        "id": "img-24",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HHsDkxYasAAGVx6?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HHsDkxYasAAGVx6?format=jpg&name=medium",
+        "width": 553
+      }
+    ],
+    "knowledgePoints": [
+      "Skill设计可先通过大模型深度调研生成初版方案，再由人工补充完善。",
+      "持续打磨元Skill，有助于形成可复用的质量控制标准。",
+      "在初版基础上进行3-5轮迭代，可提升最终Skill质量。"
+    ],
+    "oneHighValuePoint": "用“元Skill”承担质量控制和标准制定，以提升后续 Skill 产出的稳定性。",
+    "oneLineReview": "提供了一个可参考的 AI Skill 设计流程，但过于简略，证据和细节不足。",
+    "primaryCategory": "AI应用方法",
+    "rating": "C",
+    "rejectReason": "内容较短，主要是经验性流程描述，缺少完整案例、量化标准和具体操作细节，长期保存价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Prompt Engineering",
+      "个人知识管理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了提升 AI Skill 前期质量的简要流程：先用 GPT 做深度调研和初步方案，再结合个人经验补充完善，通过元Skill进行质量控制，随后迭代数轮提升成品质量。",
+    "tags": [
+      "AI Skill",
+      "元Skill",
+      "GPT调研",
+      "迭代优化",
+      "质量控制"
+    ],
+    "title": "姚金刚: 下午和@Vist8 交流，聊到Skill的设计思路，如何尽量的提升Skill前期的质量，以减少迭代的次数，一些经验分享： 1、先提前把自己的想法与经验，让GPT…",
+    "totalScore": 42.5,
+    "url": "https://x.com/yaojingang/status/2052358487154532751"
+  },
+  "payloadHash": "sha256:d5a450703aebf7a419256d15c67126770795abeb6892c674f6bcaf2a19a83c42",
+  "refs": {},
+  "revisionId": "sha256:877187254b2de0700619748e7ab364bfd86684d7830b2bbd1596b3b16cb18eac",
+  "schemaVersion": 1,
+  "updatedAt": 1780615902861
+}

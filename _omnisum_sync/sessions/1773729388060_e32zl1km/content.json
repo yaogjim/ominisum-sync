@@ -1,0 +1,15 @@
+{
+  "createdAt": 1773729388060,
+  "entityType": "session-content",
+  "id": "1773729388060_e32zl1km",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>陈成</strong></header><div class=\"tw-body\">OpenAI Codex Subagents 今天 GA 了，读完文档梳理几个关键架构细节。<br><br>代理的分工设计<br><br>内置三类代理，职责不同：<br><br>• default：通用兜底<br>• worker：执行导向，负责实现和修复<br>• explorer：只读探索，专门 trace 代码路径<br><br>你也可以自定义，放 TOML 文件到 .codex/agents/ 就行。每个 agent 可以单独配：<br><br>• model + model_reasoning_effort（贵的模型留给高推理任务）<br>• sandbox_mode（explorer 设 read-only，fixer 才放开写权限）<br>• 独立挂载 mcp_servers（给文档查询 agent 接 docs MCP，不污染主进程）<br><br>并发控制<br><br>[agents]<br>max_threads = 6     # 默认值，最大并发线程数<br>max_depth = 1       # 子代理不能再派生子代理<br><br>max_depth = 1 是个有意思的设计选择——防止失控的递归调用链，同时还是允许水平扩展。<br><br>CSV 批处理（实验性）<br><br>spawn_agents_on_csv 这个工具有点意思，每行一个 worker，并行跑完导出结果：<br><br>csv_path: /tmp/components.csv<br>instruction: \"Review {path} owned by {owner}. <br>              Return JSON via report_agent_job_result.\"<br>output_csv_path: /tmp/review-results.csv<br><br>结果 CSV 包含 job_id、status、last_error、result_json。适合批量 audit 场景——100 个文件扔进去，每个 worker 独立跑，最后合并。<br><br>审批继承机制<br><br>子代理继承父 session 的沙箱策略，包括运行时的 /approvals 改动和 --yolo 标志。在非交互模式下，碰到需要新审批的操作直接报错返回给父流程，不会挂起等待。<br><br>整体感受<br><br>这套设计的核心是隔离 + 并行：不同职责的 agent 用不同的模型和权限，exploration 和 implementation 分开跑，避免上下文污染（context rot）。跟 Claude Code 的子代理实现很像，属于同一方向的收敛。<br><br>实际用的话，PR review 场景最直接：explorer 先 map 代码路径，reviewer 并行跑安全+质量+测试，docs_researcher 查 API 文档，主进程等三个都完成再汇总。比串行跑快很多，context 也更干净。</div><div class=\"tw-cards\"><a href=\"https://t.co/eebGE6GYTc\">Subagents</a></div></article>",
+    "pageContent": "陈成: OpenAI Codex Subagents 今天 GA 了，读完文档梳理几个关键架构细节。 代理的分工设计 内置三类代理，职责不同： • default：通用兜底\n• worker：执行导向，负责实现和修复\n• explorer：只读探索，专门 trace 代码路径 你也可以自定义，放 TOML 文件到 .codex/agents/ 就行。每个 agent 可以单独配： • model + model_reasoning_effort（贵的模型留给高推理任务）\n• sandbox_mode（explorer 设 read-only，fixer 才放开写权限）\n• 独立挂载 mcp_servers（给文档查询 agent 接 docs MCP，不污染主进程） 并发控制 [agents]\nmax_threads = 6 # 默认值，最大并发线程数\nmax_depth = 1 # 子代理不能再派生子代理 max_depth = 1 是个有意思的设计选择——防止失控的递归调用链，同时还是允许水平扩展。 CSV 批处理（实验性） spawn_agents_on_csv 这个工具有点意思，每行一个 worker，并行跑完导出结果： csv_path: /tmp/components.csv\ninstruction: \"Review {path} owned by {owner}. Return JSON via report_agent_job_result.\"\noutput_csv_path: /tmp/review-results.csv 结果 CSV 包含 job_id、status、last_error、result_json。适合批量 audit 场景——100 个文件扔进去，每个 worker 独立跑，最后合并。 审批继承机制 子代理继承父 session 的沙箱策略，包括运行时的 /approvals 改动和 --yolo 标志。在非交互模式下，碰到需要新审批的操作直接报错返回给父流程，不会挂起等待。 整体感受 这套设计的核心是隔离 + 并行：不同职责的 agent 用不同的模型和权限，exploration 和 implementation 分开跑，避免上下文污染（context rot）。跟 Claude Code 的子代理实现很像，属于同一方向的收敛。 实际用的话，PR review 场景最直接：explorer 先 map 代码路径，reviewer 并行跑安全+质量+测试，docs_researcher 查 API 文档，主进程等三个都完成再汇总。比串行跑快很多，context 也更干净。\n[Subagents](https://t.co/eebGE6GYTc)\n\n链接:\n- https://t.co/eebGE6GYTc"
+  },
+  "payloadHash": "sha256:e7e3a38947882a8906a03000532b847798ca74ce35c2b9b8b7241a3442ceb013",
+  "refs": {},
+  "revisionId": "sha256:1c140ceaa695a2a3a6bb2111140b8ddcad14ac805ae2379e422997fc50b47bbe",
+  "schemaVersion": 1,
+  "updatedAt": 1773729886118
+}

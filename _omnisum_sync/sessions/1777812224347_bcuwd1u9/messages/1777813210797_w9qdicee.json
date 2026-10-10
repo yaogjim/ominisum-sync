@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777813002348,
+  "entityType": "message",
+  "id": "1777813210797_w9qdicee",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n这篇内容推荐了 TypeScript 大神 **Matt Pocock** 的个人 AI/工程技能集合 **skills**，作者认为它的价值不在于“包装精美”，而在于真实反映了一位成熟工程师日常使用 AI、规划设计和开发的思考方式。\n\n---\n\n## 1. 推荐对象：Matt Pocock 的个人 skills 集合\n\n- 作者看到别人推荐了 Matt Pocock 的个人 skills 项目：  \n  [https://github.com/mattpocock/skills/](https://github.com/mattpocock/skills/)\n- Matt Pocock 是 TypeScript 领域知名开发者。\n- 这个项目不是专门为了教学打造的“完美框架”，而是直接来自他自己的 `.claude` 目录。\n\n**关键点：**  \n它更像是一个真实工程师日常工作流的“原始样本”，因此显得更有“活人气息”。\n\n---\n\n## 2. 项目价值：能看到真实工程师的思维方式\n\n作者认为，这套 skills 覆盖了多个工程环节：\n\n- **Planning & Design**：规划与设计\n- **Development**：开发实现\n- **Tooling & Setup**：工具与环境配置\n- **Writing & Knowledge**：写作与知识管理\n\n这些内容让人可以观察 Matt Pocock 如何使用 AI 辅助工作，以及他如何拆解问题、设计方案、推进开发。\n\n**关键点：**  \n作者并不只是下载这些 skills，而是通过阅读内容来学习其中的思考方式。\n\n---\n\n## 3. 作者特别喜欢的 skill：`grill-me`\n\n作者重点提到一个很喜欢的技能：**grill-me**。\n\n它的作用是让 AI 对你的计划、设计或方案进行非常严格、毫不留情的追问和质疑。\n\n具体来说，AI 会不断追问：\n\n- 为什么这样设计？\n- 有没有其他分支方案？\n- 每个决策的依据是什么？\n- 潜在风险有没有考虑清楚？\n- 是否真正达成共识？\n\n**通俗理解：**  \n`grill-me` 就像让 AI 扮演一个非常挑剔的技术评审，逼你把方案的每个细节都想明白。\n\n---\n\n## 4. 热门回复中的补充观点\n\n### 4.1 关于 Codex 性能优化\n\n有回复推荐了一个工具：**Keep Codex Fast**  \n用于解决 Codex 用久后本地状态膨胀、运行变慢的问题。\n\n它可以清理：\n\n- 本地堆积的聊天记录\n- worktree\n- 日志\n- 过期配置\n\n链接：  \n[https://github.com/vibeforge1111/keep-codex-fast](https://github.com/vibeforge1111/keep-codex-fast)\n\n---\n\n### 4.2 对 `grill-me` 的兴趣\n\n有用户表示，自己甚至专门为 `grill-me` 这个 skill 做了一张图，说明这个工具点引起了一些共鸣。\n\n---\n\n### 4.3 对高强度规划方式的担忧\n\n也有用户提出另一种看法：\n\n- 这种事无巨细的 planning/design 方式，在前期可能会消耗大量心力。\n- 到 development 阶段，如果实际实现稍微走偏，人可能容易崩溃。\n\n**关键点：**  \n严格规划有价值，但也可能带来心理负担和执行压力。\n\n---\n\n## 总结\n\nMatt Pocock 的 skills 项目值得关注，因为它展示的是一套真实工程师在 AI 辅助开发中的实际工作方法，而不是刻意包装的教程。其中 `grill-me` 尤其有代表性：它通过高强度质询，帮助开发者把方案想得更清楚、更扎实。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1777813002348,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c4036d5c4113b4510f0eae8753f9937cb3c248a5f596d9918f76b6ab99ca175b",
+  "refs": {
+    "sessionId": "1777812224347_bcuwd1u9"
+  },
+  "revisionId": "sha256:d819ecdd46b17419a3b61f1529cc859c1c5af7890b3f902dbc55835bc8dedffa",
+  "schemaVersion": 1,
+  "updatedAt": 1777813002348
+}

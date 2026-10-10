@@ -1,0 +1,23 @@
+{
+  "createdAt": 1775097231688,
+  "entityType": "message",
+  "id": "summary_default_1775097231688",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "一句话总结：这个 PR 的本质，是把原本依赖原生客户端偷偷做的请求 “签名补丁”，改成在 JavaScript 里自己算出来并塞回请求体，从而解锁像 fast mode 这类能力。\n\n## 核心内容\n- **做了什么**：新增`xxhash-wasm`，实现`cch`计算模块；拦截`/v1/messages`请求，把`cch=00000`占位符替换成真实 5 位十六进制哈希。  \n- **算法要点**：对 “带占位符的完整请求体” 做`xxHash64 (body, seed)`，再与`0xFFFFF`取低 20 位，输出零填充 5 位 hex。  \n- **接入方式**：`system.ts`始终注入占位符，`client.ts`发送前动态签名。  \n- **风险点**：当前 review 指出两处潜在问题 —— 异常被吞掉、占位符匹配范围过宽，可能误改用户正文。  \n- **验证情况**：构建通过，但测试仍偏手工，且文档注释覆盖率不足。\n\n## 辩证评价\n这次改动很实用，把平台特性从 “依赖 Bun 原生实现” 变成 “跨环境可复现逻辑”，工程可控性明显提升。  \n但它本质上是基于逆向分析复刻私有机制，长期稳定性取决于上游协议是否变化，维护成本并不低。\n\n## 高价值 / 反常识\n很多 “高级功能开关” 不一定靠显式权限控制，可能只是靠一个看似不起眼的请求体完整性字段在网关侧放行。  \n真正危险的不是哈希算法本身难不难，而是 “替换范围” 和 “失败时静默继续” 这类边缘处理，最容易让功能偶发失效且难排查。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1775097231688,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:24d433698fdbe7340d6e6b7c4eb35ae13664d6600994629a9888768b6faf8396",
+  "refs": {
+    "sessionId": "1775097231859_ulpoijqy"
+  },
+  "revisionId": "sha256:f4eb6bfb283e7aed3b7949aba9f04d2a760fa87202585433d29b44bf7467a216",
+  "schemaVersion": 1,
+  "updatedAt": 1775097231688
+}

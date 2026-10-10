@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773251501_y54l197j",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Claude Code 接入 Ling-2.6-1T：不用切全局配置，也能多模型并行\n\n## 文章核心\n\n作者介绍了一种在 **Claude Code** 中快速体验蚂蚁即将开源的万亿参数 MoE 模型 **Ling-2.6-1T** 的方法。\n\n重点不是替代 Claude，而是实现：  \n**一个终端继续用 Claude 官方订阅，另一个终端使用 Ling-2.6-1T，互不影响。**\n\n---\n\n## Ling-2.6-1T 是什么\n\n**Ling-2.6-1T** 是蚂蚁 InclusionAI 发布的旗舰 MoE 模型：\n\n- 总参数规模：**1T**\n- 激活参数：**63B**\n- 架构：**MLA + 混合线性注意力**\n- 特点：主打 **Fast-Thinking**\n- 优势：将推理能力内化进模型，不输出冗长思维链，因此 token 成本更低，约为同级思考模型的四分之一\n\n目前该模型已在 **OpenRouter** 上线，可通过 API 使用。\n\n---\n\n## 为什么不用 cc-switch\n\n很多人用 **cc-switch** 切换 Claude Code 配置，但它更适合全局切换。\n\n作者的需求是：\n\n- 同时打开多个终端会话\n- 一个使用 Claude 官方账号\n- 一个使用 Ling-2.6-1T\n- 两边互不干扰\n\n而 cc-switch 修改的是全局配置，会影响所有会话，因此不适合这个场景。\n\n---\n\n## 核心思路\n\nClaude Code 的模型提供方由环境变量控制。\n\n而不同终端会话的环境变量是独立的，所以只需要：\n\n> 给不同终端加载不同环境变量，就可以让 Claude Code 使用不同模型。\n\n不需要频繁切换配置文件。\n\n---\n\n## 操作流程\n\n### 1. 获取 OpenRouter API Key\n\n先到 OpenRouter 注册账号，并生成 API Key。\n\nLing-2.6-1T 当前可通过 OpenRouter 调用。\n\n---\n\n### 2. 在 Shell 配置中添加函数\n\n在 `~/.zshrc` 或 `~/.bashrc` 中添加一个 `claude-ling` 函数。\n\n该函数会临时设置：\n\n- OpenRouter API 地址\n- OpenRouter API Key\n- Ling-2.6-1T 模型名\n- 禁用 Claude Code 非必要流量\n\n这样运行 `claude-ling` 时，就会启动一个使用 Ling-2.6-1T 的 Claude Code 会话。\n\n---\n\n### 3. 多终端并行使用\n\n打开两个终端：\n\n- 终端 1：输入 `claude`  \n  使用 Claude 官方订阅\n\n- 终端 2：输入 `claude-ling`  \n  使用 Ling-2.6-1T\n\n由于环境变量只在当前函数启动的子进程里生效，所以两个会话不会互相影响。\n\n---\n\n## 使用效果\n\n作者用 Ling-2.6-1T 在 Claude Code 中生成了一个图书馆网页。\n\n结果显示，该模型在：\n\n- 代码生成\n- 页面设计\n- 前端实现\n- 审美表达\n\n方面表现不错，体现出较强的代码能力和设计感。\n\n---\n\n## 总结\n\n这篇文章的价值在于提供了一个实用技巧：\n\n> 不改全局配置，只通过终端环境变量，就能在 Claude Code 中并行使用不同模型。\n\n对于经常使用 Claude Code、OpenRouter、多模型 API 的开发者或产品经理来说，这种方式更灵活，也更适合真实工作流。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:414430e5e5932f8003c7fd55e29931e17663a20120a112fc13140f21a063a777",
+  "refs": {
+    "sessionId": "1777773251265_hcvajx3q"
+  },
+  "revisionId": "sha256:5df4280e5f33dfeff4379379c9c5229d45f2715abd9349ffd79ed2c2cea5a171",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

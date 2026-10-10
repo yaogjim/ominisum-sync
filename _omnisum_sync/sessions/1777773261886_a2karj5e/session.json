@@ -1,0 +1,70 @@
+{
+  "createdAt": 1777773261886,
+  "entityType": "session",
+  "id": "1777773261886_a2karj5e",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如使用 Claude Code，可尝试运行 npx codexthropic@latest 并配置 ANTHROPIC_BASE_URL 进行验证。",
+      "研究其 SSE、Tool Use 和 reasoning 状态映射实现，作为构建 LLM API 代理或协议适配层的参考。",
+      "检查项目源码和测试覆盖情况，确认其安全性、认证处理和长期维护可靠性。"
+    ],
+    "archiveReason": "包含较完整的 AI coding agent 协议桥接实现思路和可直接尝试的工具用法，适合作为 API 代理与工具调用映射参考。",
+    "classifiedAt": 1777773784725,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code 连接 Codex 代理工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Anthropic 与 OpenAI Codex 的流式事件模型需要逐事件映射，并维护 block index 状态机。",
+      "Anthropic tool_use、tool_result 和 tool_choice 可分别映射到 Codex function_call、function_call_output 与 function tool 配置。",
+      "OAuth 刷新需要处理过期预刷新、single-flight 合并、401 强制刷新、refresh_token 文件变更检测和原子写入。",
+      "reasoning effort 可通过 thinking.budget_tokens 阈值映射到 low、medium、high、xhigh 等后端参数。"
+    ],
+    "oneHighValuePoint": "将 Codex 的 reasoning.encrypted_content 塞入 Anthropic thinking block 的 signature 字段，以维持多轮工具调用中的推理连续性。",
+    "oneLineReview": "一篇信息密度较高的工具发布帖，最有价值的是展示了 Claude Code 与 Codex 后端之间的协议桥接细节。",
+    "primaryCategory": "AI 编程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留",
+    "secondaryCategories": [
+      "API 代理",
+      "协议适配",
+      "开发效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 codexthropic，一个本地 Node 代理，可将 Anthropic Messages API 转译为 OpenAI Codex Responses API，使 Claude Code 连接 GPT-5.5 后端。内容涵盖 SSE 事件映射、Tool Use 转换、多轮 reasoning 状态传递、OAuth 刷新和使用方式。",
+    "tags": [
+      "Claude Code",
+      "OpenAI Codex",
+      "Anthropic API",
+      "Node.js",
+      "SSE",
+      "Tool Use"
+    ],
+    "title": "陈成: 写了个小工具 codexthropic，一个本地 Node 代理，把 Anthropic Messages API 翻译成 OpenAI Codex Respo…",
+    "totalScore": 70,
+    "url": "https://x.com/chenchengpro/status/2049378400859729958"
+  },
+  "payloadHash": "sha256:4ae8ec29642e3fcff6bf1e6e9ec00b4c51d2e0732af80963917227e499890190",
+  "refs": {},
+  "revisionId": "sha256:5e817b03642e5c22107af1acbadad80c723f059b249d5277cae4890ab0f55d77",
+  "schemaVersion": 1,
+  "updatedAt": 1777774234610
+}

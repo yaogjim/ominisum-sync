@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773557068427,
+  "entityType": "session",
+  "id": "1773557068427_6km4ml5k",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的RAG或Agent流水线中评估是否用agent-fetch替代默认网页抓取组件",
+      "针对常见目标站点建立一组对比测试，验证其相对curl或内置fetch的内容完整率",
+      "梳理现有内容采集链路中哪些场景需要Cookies、分页爬取和自定义CSS选择器支持"
+    ],
+    "archiveReason": "内容兼具工具价值与方法设计，适合未来在Agent、RAG和网页抽取场景中反复参考。",
+    "classifiedAt": 1773829699971,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI代理网页全文抓取工具",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "浏览器指纹伪装可显著改善网站返回内容被截断或降级的问题",
+      "网页正文提取应组合Readability、JSON-LD、框架数据源、REST接口和文本密度等多种策略",
+      "针对Next.js、RSC和WordPress等现代站点结构，直接利用框架或API数据往往比HTML解析更稳定",
+      "正文提取结果可通过字符长度和策略间倍数比较进行自动择优"
+    ],
+    "oneHighValuePoint": "最有价值的是将多种提取策略并行执行并基于内容完整度自动择优，而不是依赖单一解析方案。",
+    "oneLineReview": "这是一个实用性很强的工程型项目说明，方法设计清晰，但证据更多来自功能描述而非系统评测。",
+    "primaryCategory": "AI工具与内容抓取",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "网页解析与数据采集",
+      "Agent工程实践"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个面向AI代理的网页全文抓取工具，通过浏览器指纹伪装与多策略提取，解决普通HTTP抓取常见的内容截断、结构丢失和站点适配问题，并提供CLI、编程接口与多页爬取能力。",
+    "tags": [
+      "AI Agent",
+      "Web Fetch",
+      "内容提取",
+      "RAG",
+      "TypeScript"
+    ],
+    "title": "teng-lin/agent-fetch: Full-content web fetcher for AI agents — Chrome TLS fingerprinting, browser impersonation, and multi-strategy article extraction",
+    "totalScore": 72,
+    "url": "https://github.com/teng-lin/agent-fetch"
+  },
+  "payloadHash": "sha256:c3a1bbf0d5ec929449fd4f791802d068400416ed626932209ad418a00e738c36",
+  "refs": {},
+  "revisionId": "sha256:03470f8047f5e8846e63a9205b47b13e77ce4e63857d4a9284f759199a024046",
+  "schemaVersion": 1,
+  "updatedAt": 1773829699976
+}

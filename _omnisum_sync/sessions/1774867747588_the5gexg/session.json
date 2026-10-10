@@ -1,0 +1,65 @@
+{
+  "createdAt": 1774867747588,
+  "entityType": "session",
+  "id": "1774867747588_the5gexg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的项目启动前，尝试用该提示词做一次需求澄清访谈，观察计划是否发生关键变化。",
+      "将现有AI协作流程按“方向确认-执行构建-复盘沉淀”三段重组，验证是否提升产出质量。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774868093190,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI办公流提示实践分享",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI辅助开发流程可拆为需求澄清、计划评审、执行、质检、复盘沉淀几个阶段。",
+      "提示词“采访我，直到你对我真正想要什么有95%的把握”强调挖掘深层目标而非表层需求。"
+    ],
+    "oneHighValuePoint": "先通过持续追问澄清“真正想要什么”，再进入规划和执行阶段，能降低一开始就做错方向的风险。",
+    "oneLineReview": "有一点启发性，但更像社交媒体上的流程安利，方法雏形大于实证价值。",
+    "primaryCategory": "AI工作流",
+    "rating": "C",
+    "rejectReason": "内容主要是个人体验和流程罗列，缺少完整上下文、可复现细节与效果验证，信息价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "提示工程",
+      "个人效率"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一则关于使用“95%把握真实需求”提示词配合多种AI工作流命令完成3小时办公时间会话的经验帖。核心观点是先澄清真实需求，再做规划、执行、复盘与沉淀，但缺少具体案例和证据支撑。",
+    "tags": [
+      "Claude Code",
+      "office-hours",
+      "prompt",
+      "工作流",
+      "AI辅助开发"
+    ],
+    "title": "Vox: just finished a 3-hour /office-hours session using the prompt from the article: …",
+    "totalScore": 41.5,
+    "url": "https://x.com/Voxyz_ai/status/2038292854510874716"
+  },
+  "payloadHash": "sha256:758e529755b5ace397efee407d3228fc259828550f4891c1390eeafefb2c00cd",
+  "refs": {},
+  "revisionId": "sha256:0d4a3a35af3ebca2180b74363130ef1fc2c19e780d67bb77fa1334507377f591",
+  "schemaVersion": 1,
+  "updatedAt": 1774868589211
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777775455381,
+  "entityType": "session",
+  "id": "1777775455381_c4nh7yrc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的 Claude.md 或 Skill.md 中测试长文档与短文档在同一复杂任务下的效果差异。",
+      "让 Claude Code 审查规则文档中的冗余、冲突和低价值内容，保留高有效信息密度的指令。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777775821543,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude规则文档长短之争",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Claude Code 的规则文档长度可能需要根据任务复杂度和模型指令遵循能力调整，而不是机械遵守短文档建议。",
+      "长文档可能提升规则覆盖度，但也会带来注意力稀释、规则冲突和维护成本上升。"
+    ],
+    "oneHighValuePoint": "复杂任务中，过度依赖渐进式披露或子文档可能导致关键规则未被模型读取。",
+    "oneLineReview": "有启发但证据薄弱，适合作为提示词文档设计的反向假设而非最佳实践。",
+    "primaryCategory": "AI编程工具",
+    "rating": "C",
+    "rejectReason": "主要是个人经验判断，缺少系统实验、可复现案例和量化对比，评论区也指出了上下文稀释和规则冲突等反面风险。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "提示词工程",
+      "Claude Code实践"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出反共识观点：Claude Code 的 Skill.md 和 Claude.md 不必刻意短，复杂任务下长文档可能更有效，因为分散到子文档可能不会被读取。但论证主要依赖个人经验，缺少实验数据。",
+    "tags": [
+      "Claude Code",
+      "Skill.md",
+      "Claude.md",
+      "上下文管理",
+      "AI Agent"
+    ],
+    "title": "X 上的 花叔：“我每天和Claude Code一起工作10小时，说一个「反共识」观点，其实Anthropic一直在骗你～ Skills中的Skill.md和Claude.md文档其实都是： 越长效果…",
+    "totalScore": 46.5,
+    "url": "https://x.com/AlchainHust/status/2048395161885979131"
+  },
+  "payloadHash": "sha256:f388d91f827044b387acd7047161d65966111831f1326214baf863fade89da75",
+  "refs": {},
+  "revisionId": "sha256:5b281fc8b91db23cdc7d516b645ca623a892c293a376729aededbf92075f5337",
+  "schemaVersion": 1,
+  "updatedAt": 1777795587617
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773557105813,
+  "entityType": "session",
+  "id": "1773557105813_tx5kl9rk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按课程顺序先实现最小版 agent loop，再逐步增加 memory、planning 和 task isolation 机制",
+      "把文中的五类架构关注点整理成自己的 Agent 系统设计清单，用于评估现有项目缺口"
+    ],
+    "archiveReason": "内容提供了 Claude Code-like agent 的学习路径、核心循环和模块化架构视角，便于后续按章节查阅",
+    "classifiedAt": 1773829678963,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "Claude Code入门课程概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "learn.shareai.run",
+    "favicon": "https://learn.shareai.run/favicon.ico?favicon.0b3bf435.ico",
+    "knowledgePoints": [
+      "AI 编程 Agent 的核心运行模式是基于工具调用的循环执行",
+      "完整 Agent 系统可拆分为工具执行、规划协同、记忆管理、并发与多 Agent 协作等正交模块"
+    ],
+    "oneHighValuePoint": "把 AI 编程 Agent 抽象为“模型调用—工具执行—结果回传”的统一循环，并在其上叠加策略、权限和生命周期层。",
+    "oneLineReview": "适合作为 AI Agent 工程化学习入口，但更像提纲而非完整高质量内容。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，适合作为后续系统学习 AI Agent 工程化的入口索引",
+    "secondaryCategories": [
+      "编程教程",
+      "系统架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以课程导航形式概述了 Claude Code-like agent 的构建路径，提炼出模型调用、工具执行、结果回传的基础循环，并列出消息增长、内存管理、并发、团队协作与隔离执行等渐进式主题。",
+    "tags": [
+      "Claude Code",
+      "Agent Loop",
+      "工具调用",
+      "课程导航",
+      "AI编程Agent"
+    ],
+    "title": "Learn Claude Code",
+    "totalScore": 57.5,
+    "url": "https://learn.shareai.run/zh/"
+  },
+  "payloadHash": "sha256:84e3782ec51d8baa49afd74d7643417b3a5c76185691c64913f03ff384faead0",
+  "refs": {},
+  "revisionId": "sha256:5e0566d57a8d67d36d469f6c68f35261c68936d89ca676d5f210d4eecca4bb36",
+  "schemaVersion": 1,
+  "updatedAt": 1773829678966
+}

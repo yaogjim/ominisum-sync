@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774247005994,
+  "entityType": "session",
+  "id": "1774247005994_64nsq4tp",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "挑选一个高频任务，先写出包含步骤、检查项和输出格式的 Markdown 技能文件",
+      "评估是否将 Telegram 或其他聊天入口接入现有 AI 工作流，降低调用门槛"
+    ],
+    "archiveReason": "提出了可复用的 AI 工作流封装思路，适合作为后续搭建自动化系统的灵感样本。",
+    "classifiedAt": 1774247020826,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "手机触发AI工作流技能",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可将内容审核、SEO 审计等高频任务封装为标准化技能文件",
+      "聊天工具可作为 AI 工作流的轻量函数调用入口",
+      "技能文件本质上是在沉淀可重复使用的决策流程与输出规范"
+    ],
+    "oneHighValuePoint": "把高频任务中的判断流程固化为 Markdown 技能文件，再通过聊天入口触发执行，是将 AI 从对话工具升级为流程函数库的关键思路。",
+    "oneLineReview": "概念有启发，但更像产品秀而非可直接落地的完整方案。",
+    "primaryCategory": "AI工作流自动化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留归档",
+    "secondaryCategories": [
+      "提示工程",
+      "个人效率系统"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章展示了一种把常用工作流写成 Markdown 技能文件，并通过 Telegram 调用 Claude 执行的做法。核心价值在于把反复决策流程结构化为可复用函数，但内容偏演示型，缺少实现细节与效果证据。",
+    "tags": [
+      "Claude Code",
+      "技能文件",
+      "Telegram 机器人",
+      "函数调用",
+      "工作流自动化"
+    ],
+    "title": "Machina: Claude Code Channels + skills turns your phone into a function-calling interface…",
+    "totalScore": 55.5,
+    "url": "https://x.com/EXM7777/status/2035777788696051717"
+  },
+  "payloadHash": "sha256:a3705b0dea2506c4ae151fd3711e6caf04de8a473f25583ecd75317db47f5127",
+  "refs": {},
+  "revisionId": "sha256:d2c8fa4d4a76196bb3ab05d6a8121bfba1c82fe0799a81c5394577a9ee0febba",
+  "schemaVersion": 1,
+  "updatedAt": 1774247507779
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780386229660,
+  "entityType": "message",
+  "id": "1780386364978_nzrtpzfx",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 1. 总结\n\n这条内容在介绍一个叫 **CodeGraph** 的工具：\n\n- 作用：给 AI 编程工具加“代码知识图谱”\n- 原理：把函数、变量、依赖关系等提前索引\n- 好处：AI 不用反复扫文件，能直接查结构\n- 数据：大项目中工具调用从 **52 次降到 3 次**\n- 效果：速度快 **46%**，Token 成本少 **35%**\n- 特点：本地运行，代码不外传\n- 支持：Claude Code、Cursor，Windows/Mac/Linux\n\n评论区主要质疑两点：\n\n- 为什么很多人推 GitHub 项目却不放链接？\n- 这种宣传背后是否有利益链？\n\n---\n\n## 2. 解读\n\n简单说，CodeGraph 想解决的是：\n\n> AI 写代码时，不知道整个项目结构，只能一遍遍翻文件。\n\n这就像一个新人接手 4000 个文件的大项目：\n\n- 没有地图：只能到处翻目录、看文件\n- 有知识图谱：直接知道“谁调用谁”“变量在哪”“依赖关系是什么”\n\n所以它可能让 AI 更快理解项目，减少无效搜索。\n\n### 为什么能省 Token？\n\n因为 AI 少读很多无关代码。\n\n以前可能要读：\n\n```text\n文件 A → 文件 B → 文件 C → 文件 D ...\n```\n\n现在可以先查图谱：\n\n```text\n函数 X 在哪里？\n谁调用了它？\n依赖哪些模块？\n```\n\n读得少，自然更快、更便宜。\n\n---\n\n## 3. 我的意见\n\n这个方向是对的。\n\nAI 编程的瓶颈之一，就是 **上下文理解成本太高**。  \n大项目里，AI 不是不会写代码，而是经常不知道该看哪里。\n\n但也要注意：\n\n- 宣传数据需要看真实测试条件\n- “52 次变 3 次”可能是特定场景\n- GitHub 23k stars 不等于一定好用\n- 不放项目链接，会降低可信度\n- 知识图谱质量决定实际效果\n\n## 结论\n\n**CodeGraph 这类工具很有价值，尤其适合大项目。**\n\n如果你经常用 Claude Code / Cursor 处理大型代码库，确实值得试。  \n但不要只看宣传数字，最好自己在项目里跑一遍，看是否真的省时间、省 Token。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780386229660,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ae49bb642b46afb6c51b6c87eec11709497e791a6fa069ce16dfc28b37c9f776",
+  "refs": {
+    "sessionId": "1780386364701_7z5wjf49"
+  },
+  "revisionId": "sha256:3e75f33c0198edaf3a296109a1a6e10ea5f76b45d721d1816be67efe06df5de7",
+  "schemaVersion": 1,
+  "updatedAt": 1780386229660
+}

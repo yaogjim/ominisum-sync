@@ -1,0 +1,23 @@
+{
+  "createdAt": 1775033893014,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1775033893014",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章主旨\n\n这篇文章主要介绍了`instructkr/claw-code`项目的来历、定位和当前进展：它并不是简单保存泄露代码的仓库，而是试图在法律与伦理边界内，重建一个可用的代理工具框架。文章同时强调，这个项目因极高关注度在发布后仅**2 小时突破 50K stars**，并正从 Python 版本继续推进到 Rust 重写。\n\n## 1. 项目定位与核心卖点\n\n- `claw-code`被描述为 “**史上最快突破 50K 星标的仓库**”，在发布后仅**2 小时**达成这一里程碑。\n- 项目目标不是 “存档泄露的 Claude Code”，而是 “**更好地利用工具，真正把事情做成**”。\n- 当前方向是：先完成**Python 移植版**，再继续推进**Rust 重写**。\n- 仓库信息显示：\n  - 总提交数为**129 commits**\n  - 语言占比为**Rust 89.3%**、**Python 10.7%**\n\n## 2. 项目起源：从泄露事件到重写\n\n- 作者提到，**2026 年 3 月 31 日凌晨 4 点**，得知 Claude Code 源代码被泄露，社区迅速陷入混乱。\n- 出于法律风险和现实压力，作者没有直接使用泄露代码，而是选择 “**从零开始把核心功能移植到 Python**”。\n- 他强调，结果是一个**重新实现（reimplementation）**版本：\n  - 借鉴了 Claude Code 的**架构模式**\n  - 但**没有复制专有源代码**\n- 文章传递的核心态度是：这不是 “搬运泄露代码”，而是一次**独立重建**。\n\n## 3. 开发方式：借助 oh-my-codex（OmX）端到端编排\n\n- 整个项目由**oh-my-codex（OmX）**进行端到端编排，OmX 是建立在**OpenAI Codex**之上的工作流层。\n- 作者具体提到两种模式：\n  - **`$team`模式**：用于并行代码审查\n  - **`$ralph`模式**：用于架构级验证和持续执行循环\n- 也就是说，这个项目本身就是一个 “**AI 编排开发工作流**” 的案例。\n- 文章强调，从读取原始工具框架结构，到生成带测试的 Python 代码树，整个过程都由 OmX 协调完成。\n\n## 4. 作者背景与外部报道\n\n- 作者表示，自己长期关注 “**工具编排工程**”，研究代理系统如何连接工具、组织任务、管理运行时上下文。\n- 文中引用了《华尔街日报》在**2026 年 3 月 21 日**的报道，说明作者并非偶然参与这一方向，而是长期深度使用者。\n- 其中最关键的数据和案例包括：\n  - 作者去年独自使用了**250 亿 Claude Code tokens**\n  - 他认为：\n    - **Codex 更擅长推理**\n    - **Claude Code 更擅长生成简洁、易分享的代码**\n- 报道还举了两个典型用户例子，说明这类工具的受众已超出程序员群体：\n  - 一位**比利时心脏病医生**开发了帮助患者管理医疗护理的应用\n  - 一位**加州律师**开发了自动化建筑许可审批的工具\n- 作者总结这些用户画像时提到：现场不只有工程师，还有**律师、医生、牙医**等没有软件工程背景的人。\n\n## 5. 当前移植状态：仓库已转向 Python 优先\n\n- 文章明确说明：仓库当前的**主代码树以 Python 为优先**。\n- 目前结构包括：\n  - `src/`：活跃的 Python 移植工作区\n  - `tests/`：Python 验证测试\n  - `assets/omx/`：OmX 工作流截图\n- 作者特别说明：\n  - **泄露快照已不再是被跟踪的主代码仓库状态**\n  - 仓库已经转向专注于**Python 移植工作**\n- 这表明项目在定位上做了切换：从 “研究公开快照” 转到 “建设独立实现”。\n\n## 6. 目前 Python 版本能做什么\n\n- 新的 Python `src/`代码树已提供一套基础功能：\n  - `port_manifest.py`：总结当前 Python 工作区结构\n  - `models.py`：数据类，描述子系统、模块和待办状态\n  - `commands.py`：命令端口元数据\n  - `tools.py`：工具移植元数据\n  - `query_engine.py`：生成移植总结\n  - `main.py`：CLI 入口\n- 文章给出了具体使用示例：\n  - 查看移植总结：`python3 -m src.main summary`\n  - 打印工作区清单：`python3 -m src.main manifest`\n  - 查看模块：`python3 -m src.main subsystems --limit 16`\n  - 运行测试：`python3 -m unittest discover -s tests -v`\n  - 运行奇偶校验审计：`python3 -m src.main parity-audit`\n  - 查看命令 / 工具清单：\n    - `python3 -m src.main commands --limit 10`\n    - `python3 -m src.main tools --limit 10`\n\n## 7. 项目现阶段的能力边界\n\n- 作者很明确地提醒：当前 Python 版本**还不能完全一对一替代原始 TypeScript 系统**。\n- 虽然它已经更贴近原始归档中的：\n  - 根入口文件结构\n  - 顶层子系统名称\n  - 命令 / 工具清单\n- 但它仍然**缺少完整运行时等效能力**，可执行部分比原始归档更少。\n- 简单说，现在更像是：\n  - **结构和框架已经搭好**\n  - 但还不是完整可替换的成品\n\n## 8. 社区、协作与免责声明\n\n- 项目正在与**@bellman_ych**（OmX 创建者）合作继续推进。\n- 文中也引导用户加入**instructkr Discord**，讨论 LLM、工具工程和智能体工作流。\n- 在法律和归属问题上，文章给出明确免责声明：\n  - 仓库**不主张拥有原始 Claude 代码的所有权**\n  - 项目**不隶属于 Anthropic**\n  - 也**未获得 Anthropic 认可、支持或维护**\n\n## 9. 一句话理解这篇文章\n\n- 如果用一句话概括，这篇文章讲的是：作者借着一次高热度事件，把一个围绕泄露代码的争议项目，重新塑造成一个**面向工具工程与代理系统的独立重建项目**，并用 Python 和 OmX 工作流先搭出了可验证的基础框架。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1775033893014,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8107112b69b67f2487c330223d3ad5734ee714547bf107120e080803101f5616",
+  "refs": {
+    "sessionId": "1775033893108_jwyio64v"
+  },
+  "revisionId": "sha256:78f2757fbfa16dab3f52576ab6c5a38e7746d9ad478b7736926911b3016762aa",
+  "schemaVersion": 1,
+  "updatedAt": 1775033893014
+}

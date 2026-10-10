@@ -1,0 +1,105 @@
+{
+  "createdAt": 1779153315221,
+  "entityType": "session",
+  "id": "1779153315221_fuwa1ke3",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在AI编程提示词中加入“持续维护 implementation-notes.md/html”的要求",
+      "在代码审查时优先检查 notes 中记录的规范解释、偏离原因和权衡取舍"
+    ],
+    "archiveReason": "提供了一个简单可复用的AI编程提示词，可用于减少模型实现过程中的隐性决策风险",
+    "byline": "Thariq",
+    "classifiedAt": 1780616014535,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "实现规范时记录决策与权衡",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 416,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HInbJHobUAMaPDB?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HInbJHobUAMaPDB?format=jpg&name=medium",
+        "width": 1199
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 236,
+        "id": "img-22",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HIob3GqbcAAc522?format=png&name=900x900",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HIob3GqbcAAc522?format=png&name=900x900",
+        "width": 778
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "即使规格写得详细，实现过程中仍会存在模糊性和未知因素",
+      "通过 implementation-notes 文件记录设计决策、偏离点和权衡，可以提高AI生成代码的可审查性"
+    ],
+    "oneHighValuePoint": "要求AI在实现过程中同步维护决策记录，可降低规格模糊导致的不可见偏差。",
+    "oneLineReview": "一个轻量但实用的AI编程协作技巧，价值在于让模型显式暴露实现中的隐性判断。",
+    "primaryCategory": "AI编程实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "提示词工程",
+      "软件开发流程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了一个AI辅助编程提示词：在实现规格说明时，持续维护 implementation-notes 文件，记录模糊点、设计决策、偏离规范之处和权衡，帮助使用者理解模型实现过程。",
+    "tags": [
+      "AI辅助编程",
+      "Implementation Notes",
+      "需求规格",
+      "决策记录"
+    ],
+    "title": "Thariq: a prompt I've been using a lot recently: implement &lt;SPEC&gt; and while you do…",
+    "totalScore": 60,
+    "url": "https://x.com/trq212/status/2056415973125796184"
+  },
+  "payloadHash": "sha256:5680711c97e5f9cbb9236b85a1576a14c3d9d24c7033ef2ac443df81cd945dbc",
+  "refs": {},
+  "revisionId": "sha256:3fae58a7bf0a87504e60b470c0c6b25a4bf08c76c2bac3e5962df85f1eabe932",
+  "schemaVersion": 1,
+  "updatedAt": 1780616015212
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1780371065907,
+  "entityType": "session",
+  "id": "1780371065907_pwq2big1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "学习并整理Agent/RAG项目常见评估指标。",
+      "在自己的AI项目中补充效果评估、数据集和评测流程。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780371701704,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 3,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent工程师应重视评估",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent工程能力不仅包括实现功能，还包括对效果进行评估的能力。",
+      "RAG和Agent项目的eval指标往往需要结合具体业务场景定制。"
+    ],
+    "oneHighValuePoint": "Agent/RAG 项目不能只做到“能跑”，还需要明确评估指标和验证体系。",
+    "oneLineReview": "有一个值得注意的观点，但整体只是碎片化观察，参考价值有限。",
+    "primaryCategory": "AI工程",
+    "rating": "C",
+    "rejectReason": "内容主要是个人面试观察，信息量有限，缺乏系统方法和充分案例支撑。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent开发",
+      "技术招聘"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者基于近期面试 Agent 工程师的经历指出，AI背景候选人相比前后端转型者更重视 agent/RAG 的评估指标，很多转型项目停留在能跑阶段，缺少 eval 意识。",
+    "tags": [
+      "Agent",
+      "RAG",
+      "Eval",
+      "AI工程师",
+      "面试"
+    ],
+    "title": "吊顶高松灯: 这几天面试 Agent 工程师下来，有一半的面试的都是本硕期间发过 AI 周边论文的，剩下的一半才是Java后端或者前端转来的",
+    "totalScore": 40.5,
+    "url": "https://x.com/object_nullll/status/2061412751445266741"
+  },
+  "payloadHash": "sha256:a5d3593020da3ead01f6db8bce82b2db2676961f6086f7730b5349ff3a4baa7f",
+  "refs": {},
+  "revisionId": "sha256:1b1dd57617b2f28f0740f2fe9c355cee23e9595e25a3ce650808829a1ba2fc93",
+  "schemaVersion": 1,
+  "updatedAt": 1780371702086
+}

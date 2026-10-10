@@ -1,0 +1,80 @@
+{
+  "createdAt": 1774604600596,
+  "entityType": "session",
+  "id": "1774604600596_fvq5j60u",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若你在做智能体工程，可优先阅读 `packages/ai` 与 `packages/agent` 的 README，提炼统一事件模型和工具调用流程",
+      "将其作为选型参考，对比 LangChain、Mastra、OpenAI SDK 等现有方案的扩展性与复杂度",
+      "如果需要终端式编码代理，可重点关注 `packages/coding-agent` 的扩展机制和会话管理设计"
+    ],
+    "archiveReason": "内容覆盖统一LLM API、Agent运行时、CLI、TUI、Web UI与部署模块，适合后续查阅具体接口和架构设计。",
+    "classifiedAt": 1774606229963,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "pi-mono智能体工具链概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "统一 LLM API 支持多提供商、多模型切换、工具调用、流式事件与跨提供商上下文传递",
+      "Agent Core 明确了消息流、事件流、工具执行钩子与并行/串行工具执行策略",
+      "Coding Agent 通过扩展、技能、模板和主题实现高度可定制的终端智能体工作流",
+      "TUI 与 Web UI 分别提供终端和浏览器侧的交互组件与会话存储能力",
+      "Pods 模块展示了基于 vLLM 的远程 GPU 模型部署与 OpenAI 兼容接口封装方式"
+    ],
+    "oneHighValuePoint": "最有价值的是把统一多模型调用、Agent 状态机、终端/网页 UI 和自托管推理部署串成一套可复用的全栈工具链。",
+    "oneLineReview": "适合作为工程参考文档浏览，不适合作为高质量深度分析文章精读。",
+    "primaryCategory": "AI工程与智能体架构",
+    "rating": "B",
+    "rejectReason": "文本主要是README与仓库目录拼接，噪声较多，缺少作者整理后的重点提炼与横向比较。",
+    "retentionDecision": "短期参考并归档，适合作为选型与实现细节查询资料",
+    "secondaryCategories": [
+      "LLM应用开发",
+      "开发工具链"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://github.com/badlogic/pi-mono/tree/main",
+      "https://github.com/badlogic/pi-mono/tree/main/packages/ai",
+      "https://github.com/badlogic/pi-mono/tree/main/packages/agent",
+      "https://github.com/badlogic/pi-mono/tree/main/packages/coding-agent",
+      "https://github.com/badlogic/pi-mono/tree/main/packages/tui",
+      "https://github.com/badlogic/pi-mono/tree/main/packages/web-ui",
+      "https://github.com/badlogic/pi-mono/tree/main/packages/pods"
+    ],
+    "summaryBrief": "文章本质上是对 pi-mono 仓库多个 README 的聚合，介绍统一 LLM API、Agent Core、Coding Agent、TUI、Web UI 与 GPU pods 管理等模块，适合做功能盘点和接口查询，但结构冗长、证据与案例支撑不足。",
+    "tags": [
+      "AI Agent",
+      "Monorepo",
+      "LLM API",
+      "Coding Agent",
+      "TUI/Web UI"
+    ],
+    "title": "pi-mono智能体全栈架构解析",
+    "totalScore": 65.5,
+    "url": "omnisun://digest/1774604600596"
+  },
+  "payloadHash": "sha256:74229300790ebb083afb4d69a43976c94c819fde2d1689945cbb5f20923ba615",
+  "refs": {},
+  "revisionId": "sha256:c449f62a10688ab16d0085606035a799911949a54422c866862f88b99bc4c709",
+  "schemaVersion": 1,
+  "updatedAt": 1774606229984
+}

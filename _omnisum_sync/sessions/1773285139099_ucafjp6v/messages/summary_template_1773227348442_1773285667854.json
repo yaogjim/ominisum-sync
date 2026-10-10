@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773285667854,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773285667854",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "下面给你一个**具体实例**，并基于该实例提炼出**agent-spec 的最佳实践**。\n\n---\n\n## 实例：实现 “用户注册 API”\n\n### 1）任务契约（Task Contract）\n```spec\ntask\nname: \"User Registration API\"\ntags: [api, contract]\n---\n\n## Intent\n实现一个可验证的用户注册接口，供 agent 开发、供机器验证。\n\n## Decisions\n- 只暴露`POST /api/v1/users/register`\n- 只有密码哈希成功后才持久化用户\n\n## Boundaries\n### Allowed Changes\n- crates/api/**\n- tests/integration/register_api.rs\n\n### Forbidden\n- 不修改现有登录接口契约\n- 注册时不创建 session\n\n## Completion Criteria\nScenario: Successful registration\nTest: test_register_api_returns_201_for_new_user\nGiven no user with email \"alice@example.com\" exists\nWhen client submits the registration request:\n  | field    | value                |\n  | email    | alice@example.com    |\n  | password | Str0ng!Pass#2026     |\nThen response status should be 201\nAnd response body should contain \"user_id\"\n```\n\n---\n\n## 基于该实例的最佳实践（精炼）\n\n### 1. 先写契约，再写代码\n不要先让 agent “自由发挥”。先把**Intent / Decisions / Boundaries / Completion Criteria**写清楚，避免实现偏航。\n\n### 2. Completion Criteria 必须绑定到明确测试\n像例子里这样写：\n```spec\nTest: test_register_api_returns_201_for_new_user\n```\n这样验证是**确定性的**，避免只靠自然语言判断 “像是完成了”。\n\n### 3. Decisions 只写 “已确定” 的技术选择\n例如：\n- 接口路径固定\n- 哈希成功后才落库\n\n不要把开放性设计问题塞进去，否则 agent 会被过度约束。\n\n### 4. Boundaries 要同时约束 “可改路径” 和 “禁止行为”\n最佳实践不是只写 Allowed Changes，还要写 Forbidden。  \n例如本例明确：\n- 不能改登录契约\n- 不能在注册时创建 session\n\n这样能防止 agent 为了 “通过测试” 顺手破坏别的功能。\n\n### 5. 对外可观察行为必须先绑定\n对于 API/CLI/ 重写类任务，要优先约束：\n- 输入输出\n- 状态码\n- 返回体结构\n- 失败行为\n\n本例中，`201`和响应体包含`\"user_id\"`就是典型的可观察行为约束。\n\n### 6. 用 lifecycle 做任务级验收，用 guard 做仓库级把关\n推荐流程：\n```bash\nagent-spec lint specs/user-registration.spec\nagent-spec lifecycle specs/user-registration.spec --code . --change-scope worktree\nagent-spec guard --spec-dir specs --code .\n```\n- `lifecycle`：验当前任务是否满足契约\n- `guard`：验整个仓库变更是否破坏其他契约\n\n### 7. 评审看 “契约是否正确 + 验证是否通过”，不要只看代码\nagent-spec 的核心不是 “代码写得像不像”，而是：\n1. 契约定义是否正确  \n2. 代码是否通过契约验证\n\n这样更适合 AI 协作开发。\n\n---\n\n## 一句话总结\n**最佳实践就是：把 “要做什么、不能动什么、如何算完成” 先写成可验证契约，再让 agent 在边界内实现，并用 lifecycle/guard 做确定性验收。**",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773285667854,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:348a24ebf85f2dfef70a4f5c751b7065b4f648265b12db5db44f55cf2d85f641",
+  "refs": {
+    "sessionId": "1773285139099_ucafjp6v"
+  },
+  "revisionId": "sha256:0963f73022f38ad4aaecd45278a1d785041b00b0a62f1d33a4076540e547c88b",
+  "schemaVersion": 1,
+  "updatedAt": 1773285667854
+}

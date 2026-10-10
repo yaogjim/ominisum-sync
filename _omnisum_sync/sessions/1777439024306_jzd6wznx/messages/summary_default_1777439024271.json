@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777439024271,
+  "entityType": "message",
+  "id": "summary_default_1777439024271",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "一句话总结：**创意工具的 AI 化正在从 “帮你写脚本” 走向 “能操作、能看结果、能自我修正的创意 Agent”，但真正被自动化的是执行摩擦，不是审美与创意判断。**\n\n## 极简精炼\n\n### 1. 发生了什么\nAnthropic 发布**Claude for Creative Work**，通过 Connector 让 Claude 直接操控 Photoshop、Blender、Fusion、SketchUp、Ableton 等创意软件。  \n核心变化：用户用自然语言下指令，Claude 调用软件 API 执行操作。\n\n### 2. 三代演进\n- **第一代：LLM 写脚本**  \n  ChatGPT/Claude 生成 Blender Python、Photoshop 脚本，人手复制运行；问题是 AI 看不到结果。\n- **第二代：协议连接**  \n  MCP、BlenderMCP、CLI-Anything 等让 AI 与软件双向通信，减少人工中转；但仍缺视觉反馈。\n- **第三代：闭环 Agent**  \n  Agent 不只执行命令，还能看渲染截图、评估结果、继续修改，形成 “操作 — 观察 — 修正” 循环。\n\n### 3. 判断框架\n创意工具 Agent 化需要三层：\n1. **可编程接口**：软件能被 API 控制。  \n2. **自然语言到操作的连接层**：LLM 能调用工具。  \n3. **感知与评估闭环**：AI 能看到结果并判断对错。  \n\n当前真正瓶颈不是模型不会写代码，而是**AI 能否看见并评估自己做出的创意结果**。\n\n### 4. 人的角色\nAI 更适合自动化场景搭建、格式转换、参数配置、错误分析等 “非创意劳动”。  \n创意方向、审美判断、品牌风格、叙事构图仍主要依赖人。\n\n## 辩证评价\n\nAnthropic 的优势不在底层技术独占，而在把社区分散探索产品化、平台化，并借助官方合作降低使用门槛。  \n但由于 API、MCP、多模态能力都较开放，OpenAI、Adobe、Figma 或社区生态都可能快速复制类似能力。\n\n## 高价值 / 反常识总结\n\n很多人以为瓶颈是 “AI 没有设计能力”，但更现实的瓶颈是：**AI 看不到或判断不了自己做出来的东西是否正确**。  \n当执行能力被 AI 普及后，创意行业更稀缺的不是工具熟练度，而是**品位、方向感和判断力**。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1777439024271,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:99253453e138b8c391b5aac04798c9e5d5a19c32544f3de6147b3ef4a245ce15",
+  "refs": {
+    "sessionId": "1777439024306_jzd6wznx"
+  },
+  "revisionId": "sha256:5c41f1a5bc1cdd8b5458879ae90116bcaf7d26316896eaa0d7b93b19f1a7e29b",
+  "schemaVersion": 1,
+  "updatedAt": 1777439024271
+}

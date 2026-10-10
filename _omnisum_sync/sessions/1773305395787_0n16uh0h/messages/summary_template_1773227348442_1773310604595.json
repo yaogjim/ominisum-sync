@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773310604595,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773310604595",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "下面给你一个**具体实例**，并基于该实例提炼出**最佳实践**。\n\n---\n\n## 实例：产品团队要回答  \n**“当前 roadmap 上有哪些功能，可能与既有决策冲突？”**\n\n### 错误做法：全放 Markdown / 文件夹\n例如：\n\n```txt\ncompany/\n  strategy/\n  decisions/\n  projects/product-alpha/features/\n  meetings/\n  research/\n```\n\n表面上看很清晰，但一旦要回答：\n\n- 哪个功能关联了哪些决策？\n- 哪些决策已经被后续决策覆盖？\n- 哪些结论只是会议纪要里的猜测，不是正式决定？\n- Google Doc 更新后，哪些摘要、哪些结论需要重算？\n\n就会变成：\n\n- 到处 grep / 全文搜索\n- 靠 wikilink 猜关系\n- 靠标签区分 “正式 / 非正式”\n- 靠人工或 agent 反复维护副本\n\n结果是：**能读，不能治理；能遍历，不能校验；能链接，不能持续保持真相一致。**\n\n---\n\n## 最佳实践：三层架构\n\n### 1）源系统层：只认原始事实\n来源包括：\n\n- Google Docs：策略文档\n- Slack：讨论与决策上下文\n- Jira / Linear：roadmap、feature、issue\n- CRM：客户反馈\n- Notion：会议纪要\n\n**原则**：  \n不要把这些原文 “复制” 成另一个 markdown 事实库，而是保存**源链接 / 源 ID**。\n\n---\n\n### 2）数据库层：存 “结构化上下文图”\n把真正需要推理、查询、依赖追踪的内容抽出来，存成结构化记录。\n\n比如核心表：\n\n- `sources`\n  - source_id\n  - source_type（gdoc/slack/jira/notion）\n  - external_id\n  - updated_at\n\n- `decisions`\n  - decision_id\n  - title\n  - status（proposed/active/superseded）\n  - owner\n  - effective_date\n  - supersedes_decision_id\n  - source_id\n\n- `features`\n  - feature_id\n  - name\n  - roadmap_status\n  - owner\n  - source_id\n\n- `decision_feature_links`\n  - decision_id\n  - feature_id\n  - relation_type（supports/conflicts_with/constraints）\n\n- `claims`\n  - claim_id\n  - subject\n  - predicate\n  - object\n  - confidence\n  - claim_type（fact/inference/speculation）\n  - source_id\n\n- `derivations`\n  - derived_entity_id\n  - derived_from_source_id\n  - extraction_method\n  - last_verified_at\n\n这样一来，系统能明确知道：\n\n- 什么是**正式决策**\n- 什么只是**会议里的观点**\n- 什么已经**失效**\n- 某条知识是从哪里抽取出来的\n- 上游变化后，哪些下游需要重新评估\n\n---\n\n### 3）文件层：只放 “给 agent 的工作说明”\n文件依然有价值，但用途要变：\n\n适合放：\n\n- SOP\n- 提示词模板\n- 分析框架\n- agent scratchpad\n- 团队约定的操作手册\n\n不适合放：\n\n- 作为唯一事实源的结构化业务知识\n- 大量需要跨实体查询和更新传播的关系数据\n\n**一句话**：  \n**文件用于引导，数据库用于记忆，业务系统用于存真相。**\n\n---\n\n## 这个实例下的最佳实践（精炼）\n\n### 1. 不复制真相，只保存指针\n把 Google Doc、Slack、Jira 的**URL/ID**存进数据库，而不是复制出一份 markdown 摘要当主记录。  \n**好处**：避免双份内容漂移。\n\n### 2. 先建 “类型”，再建 “链接”\n至少区分：\n\n- decision\n- feature\n- source\n- claim\n- owner\n- dependency\n\n再定义关系：\n\n- supports\n- conflicts_with\n- derived_from\n- supersedes\n- owned_by\n\n**好处**：agent 看到的不只是文本，而是 “这是什么、和谁什么关系”。\n\n### 3. 区分 “权威性” 和 “时效性”\n每条记录必须有：\n\n- status（active /superseded/draft）\n- owner\n- source\n- updated_at\n- confidence /authority_level\n\n**好处**：避免把猜测、纪要、正式决策混成一类。\n\n### 4. 所有派生知识都要记录 provenance\n任何摘要、结论、标签、冲突判断，都记录：\n\n- derived_from 哪个 source\n- 何时生成\n- 用什么规则 /agent 生成\n- 上游变更后是否需要重算\n\n**好处**：实现 “更新可追踪、错误可回滚”。\n\n### 5. 用数据库回答问题，不用全文搜索硬猜\n像 “哪些功能与当前决策冲突” 这种问题，本质是结构化查询，不应依赖 markdown 遍历。  \n**好处**：查询稳定、可重复、可自动化。\n\n### 6. 文件系统只做入口，不做知识图本体\n保留少量高价值文件：\n\n- onboarding.md\n- where-to-look.md\n- agent-playbook.md\n\n但不要让目录树承担数据库职责。  \n**好处**：避免 “表面简单，实际偷偷重建数据库”。\n\n### 7. 让 agent 维护 ETL，而不是维护副本\nagent 的职责应是：\n\n- 从源系统 API 拉取更新\n- 抽取结构化实体和关系\n- 更新数据库\n- 标记受影响的派生结论待重算\n\n而不是：\n- 到处改 markdown 副本\n- 靠文本同步事实\n\n**好处**：把维护变成 “依赖传播”，不是 “内容搬运”。\n\n---\n\n## 最后总结成一句话\n在这个实例里，**最佳实践不是 “把知识整理成更好的文件夹”**，而是：\n\n> **用源系统保存事实，用数据库保存结构、关系和 provenance，用文件给 agent 提供操作入口。**\n\n如果你愿意，我还可以继续把这个实例进一步整理成一版**“可直接落地的最小数据库 schema + agent 工作流”**。",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773310604595,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1bdb14ae8dd43c13249bac4aefcc411ba79471589e7ca87e3fad593712062fd6",
+  "refs": {
+    "sessionId": "1773305395787_0n16uh0h"
+  },
+  "revisionId": "sha256:6cf4f72d76c852f086d8788b51020e2c8325f629d0032c03a077e7f3673b132a",
+  "schemaVersion": 1,
+  "updatedAt": 1773310604595
+}

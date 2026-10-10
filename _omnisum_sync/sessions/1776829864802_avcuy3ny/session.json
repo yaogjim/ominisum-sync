@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776829864802,
+  "entityType": "session",
+  "id": "1776829864802_avcuy3ny",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "以后写AI相关PRD时先补一页Eval定义与验收指标",
+      "建立实验与Token消耗记录表用于复盘不同方案效果"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776831031058,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "先定Eval再谈方案",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "证据不足、方法不完整、可操作性弱，保留价值较低",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "AI产品PRD可先定义成功标准与评测方式",
+      "经验不足阶段可通过持续试错积累判断力"
+    ],
+    "oneHighValuePoint": "在AI产品需求阶段优先定义Eval标准，而不是过早纠结具体技术实现方案。",
+    "oneLineReview": "有一个值得记住的产品思路，但整体只是社交媒体短评，深度和证据都明显不足。",
+    "primaryCategory": "AI产品方法",
+    "rating": "D",
+    "rejectReason": "内容更像碎片化观点表达，缺少展开论证、具体案例和可执行细节",
+    "retentionDecision": "信息量有限，观点可一句话记住，无需长期留存",
+    "secondaryCategories": [
+      "需求文档",
+      "评测设计"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章核心观点是写AI相关PRD时先明确评测标准，不急于提前限定技术方案，作者认为在经验不足阶段应通过不断试错积累认知，并顺带提到记录Token支出可用于复盘或展示经历。",
+    "tags": [
+      "PRD",
+      "Eval",
+      "AI产品",
+      "需求定义",
+      "经验积累"
+    ],
+    "title": "victor-wu.eth: 写 PRD 的时候很诚实告诉 CLaude ，别跟我扯技术方案，我也看不懂，我先把 Eval 定好，具体用什么方案到时候在说，除了某些我看得懂，且就是要采用的技…",
+    "totalScore": 34.5,
+    "url": "https://x.com/victor_wu/status/2045959448745922722"
+  },
+  "payloadHash": "sha256:e6771b5da617f5f141e92a9d7b6efcb2451506459f50754e395b9d6ec4071bf5",
+  "refs": {},
+  "revisionId": "sha256:02ce70097d6941043c24880b368f85dd8f11288d4a9d1a0daeefa37729390577",
+  "schemaVersion": 1,
+  "updatedAt": 1776831031063
+}

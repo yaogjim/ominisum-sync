@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776645557370,
+  "entityType": "session",
+  "id": "1776645557370_229r13ra",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你正在比较 AI 终端工具，可进一步查阅 Warp 官方博客或文档获取完整功能说明",
+      "不要基于这条动态直接做工具迁移决策，优先寻找真实评测、演示和实际使用案例"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776646326339,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 1,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "Warp集成CLI代理宣传",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量极低，证据不足，可操作性和方法论价值几乎没有，后续可被更完整的博客或文档替代。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Warp 宣称已支持 Claude Code、Codex、OpenCode 和 Gemini CLI 等 CLI 代理",
+      "Warp 正在强化与 AI 编程相关的终端交互功能，如代码审查、通知和富文本输入"
+    ],
+    "oneHighValuePoint": "Warp 正在把多种 CLI Agent 的运行支持整合进统一终端工作流，这反映了终端工具向 AI 协作中枢演进的产品方向。",
+    "oneLineReview": "典型的社交媒体产品宣传帖，知道有这回事即可，没有精读价值。",
+    "primaryCategory": "AI开发工具",
+    "rating": "D",
+    "rejectReason": "内容主要是产品宣传与功能罗列，缺少深入说明、使用方法、效果对比和实际案例。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "终端工具",
+      "产品动态"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一则 Warp 在 X 上发布的产品动态，宣布支持在 Warp 中运行多种 CLI 代理，并强调垂直标签页、通知、代码审查、移动远程控制和富文本输入等功能，但正文仅为营销式概述。",
+    "tags": [
+      "Warp",
+      "CLI Agent",
+      "Claude Code",
+      "Codex",
+      "产品宣传"
+    ],
+    "title": "X 上的 Warp：“You can now run any CLI agent with first-class support in Warp, including Claude Code, Co…",
+    "totalScore": 31.5,
+    "url": "https://x.com/warpdotdev/status/2044065236789911931"
+  },
+  "payloadHash": "sha256:bbf74935c2b23c04082cfb436dcd73e5d609aa53425eade10a3617856fcc97bd",
+  "refs": {},
+  "revisionId": "sha256:edfce9e1b88e88fc0b55890521228cfeaf3907755dff43e5f598fa4449dc4dda",
+  "schemaVersion": 1,
+  "updatedAt": 1776647227900
+}

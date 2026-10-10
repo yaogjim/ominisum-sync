@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773729673735,
+  "entityType": "message",
+  "id": "1773729967235_rlg9nrol",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇内容主要介绍了一份关于 `Nano Banana 2` 的开发者指南，重点说明如何通过 `Gemini Interactions API` 完成多种图像生成与增强任务。核心价值是：它不仅生成速度快，还结合了较强的世界知识、文本渲染能力和多模态检索能力。\n\n- 第一部分：指南主题与模型定位  \n  - 文章介绍的对象是 `Nano Banana 2`，对应模型名为 `gemini-3.1-flash-image-preview`。  \n  - 它被描述为“最新的图像生成模型”，特点是具备 `Gemini Flash` 级别的速度。  \n  - 同时，它还继承了 `Nano Banana Pro` 的一些关键能力，比如更强的世界知识、较精准的文字渲染等。  \n\n- 第二部分：指南覆盖的 4 个核心用例  \n  - 指南围绕 `4 个实际开发场景` 展开，帮助开发者理解如何调用 API。  \n  - 这些场景不是单纯“出图”，而是把图像生成与搜索、事实校验、参考图合成结合起来。  \n  - 整体思路是：让生成结果更真实、更可控，也更贴近真实应用需求。  \n\n- 第三部分：Text → Image（文本生成图片）  \n  - 一个具体示例是：生成一张“京都旅行海报（Kyoto travel poster）”，而且要求是 `photorealistic`（照片级真实感）。  \n  - 这说明模型适合把自然语言描述直接转成高质量视觉内容。  \n  - 适用场景可以是旅游宣传图、营销素材、概念海报等。  \n\n- 第四部分：结合 Web Search 做事实增强  \n  - 指南提到可以配合 `Web Search`，让生成图片时参考真实地标信息。  \n  - 关键作用是“基于真实事实进行 grounding（事实锚定）”，避免画面内容与现实严重脱节。  \n  - 例如在生成京都相关海报时，可以结合真实景点资料，让地标元素更准确。  \n\n- 第五部分：结合 Image Search 提升视觉准确性  \n  - 通过 `Image Search`，系统可以先检索真实照片，再用于提升生成结果的视觉可靠性。  \n  - 重点不是只“搜图”，而是把真实照片作为参考，提高外观、结构和细节的一致性。  \n  - 这对地标建筑、城市街景、特定物体等场景尤其有帮助。  \n\n- 第六部分：Reference Photo（参考照片合成）  \n  - 指南还支持使用 `Reference Photo`，把一个真实人物合成到指定场景中。  \n  - 这意味着模型不仅能创作新图，还能基于已有人物照片做场景融合。  \n  - 例如，可以把某个人的真实照片自然地放入旅行海报或特定环境画面中。  \n\n- 关键信息总结  \n  - 模型：`Nano Banana 2` / `gemini-3.1-flash-image-preview`  \n  - 形式：开发者指南 + `Gemini Interactions API` 实操  \n  - 用例数量：`4 个`  \n  - 代表案例：京都旅行海报、基于真实地标事实生成、检索真实照片辅助出图、将真实人物参考照合成进场景。  \n\n如果你愿意，我也可以把这段内容进一步压缩成“超短版摘要”或整理成“适合发给同事的要点版”。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773729673735,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:98a920a4a7bcd4f2d4fe5bd29c0d8b7d6aa30e756f3c4d6421ccc76e348eca45",
+  "refs": {
+    "sessionId": "1773729442102_rqweh3fm"
+  },
+  "revisionId": "sha256:d3d83e92b4f4c78eea14a802b35d16a18df33bdcc87362890414d26f2c5134dc",
+  "schemaVersion": 1,
+  "updatedAt": 1773729673735
+}

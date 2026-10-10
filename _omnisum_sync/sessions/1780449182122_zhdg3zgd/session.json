@@ -1,0 +1,70 @@
+{
+  "createdAt": 1780449182122,
+  "entityType": "session",
+  "id": "1780449182122_zhdg3zgd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尝试为一个真实开发任务建立 plan.md，并测试先规划后执行的效果",
+      "整理个人常用任务，选择一个重复流程封装为自定义代理技能",
+      "评估是否将会议转录、笔记库或历史方案接入 AI 助手作为长期上下文",
+      "谨慎评估绕过权限、远程控制和浏览器会话授权等安全风险，避免直接照搬高风险配置"
+    ],
+    "archiveReason": "包含较多可直接复用的智能体工程流程、工具链配置、规划-执行循环和个人知识库接入方法",
+    "classifiedAt": 1780449970888,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "智能体工程工作流技巧",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "先用 /ce-plan 生成结构化 plan.md，再用 /ce-work 执行，可降低代理偷懒和上下文丢失的风险",
+      "多个智能体会话并行运行时，人类的核心价值从亲自执行转为提供判断、方向和反馈信号",
+      "原始会议转录、历史笔记和过往计划可作为个人知识库接入代理，形成复合上下文",
+      "将重复两次以上的工作流程封装为可复用技能或 CLI，可持续提高后续代理执行效率",
+      "语音输入、多标签终端、远程控制和邮件触发可降低启动任务的摩擦成本"
+    ],
+    "oneHighValuePoint": "将复杂任务拆成“研究-计划-plan.md-执行-反馈”的循环，并把计划文件作为跨会话、跨工具的稳定上下文检查点。",
+    "oneLineReview": "实践密度高、工具链具体，但证据多为个人经验和宣传式案例，适合筛选吸收而非全盘照搬。",
+    "primaryCategory": "AI工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "短期精读并提炼可复用工作流，长期可作为智能体工程实践参考",
+    "secondaryCategories": [
+      "智能体工作流",
+      "开发效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统总结了作者使用 Claude Code、Codex、Compound Engineering、语音输入、多终端会话、远程控制、笔记库和自定义技能构建智能体工程工作流的实践经验，强调先规划再执行、人类负责判断、代理负责执行。",
+    "tags": [
+      "Agent Engineering",
+      "Claude Code",
+      "Codex",
+      "工作流自动化",
+      "AI编程"
+    ],
+    "title": "我所知道的每一个智能体工程技巧（2026年6月）",
+    "totalScore": 72,
+    "url": "https://x.com/mvanhorn/status/2061877533885473181"
+  },
+  "payloadHash": "sha256:c89a422e9f3c7a577a350cad0b92a9df17dccc1f2b6bd9dcab07334c9b7eb813",
+  "refs": {},
+  "revisionId": "sha256:1b5843f58c087316a08ab55eb7c7d03b424fef4630301e9c27b846c65aa0c71c",
+  "schemaVersion": 1,
+  "updatedAt": 1780454390920
+}

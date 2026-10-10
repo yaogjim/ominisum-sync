@@ -1,0 +1,96 @@
+{
+  "createdAt": 1780534112892,
+  "entityType": "session",
+  "id": "1780534112892_3b7enand",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果正在评估 AI 编码智能体协作平台，可尝试本地安装并验证任务分配与执行流程",
+      "对比 Multica 与现有 Claude Code、Codex、Cursor Agent 工作流的实际效率差异",
+      "重点检查其自托管部署、权限模型、运行时隔离和团队协作稳定性"
+    ],
+    "archiveReason": "作为开源托管编码智能体平台的产品与部署参考，适合后续评估同类工具时对比使用",
+    "classifiedAt": 1780615490990,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Multica开源托管智能体平台",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1780534158886,
+        "imageId": "img-6",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# Multica 项目总结\n\nMultica 是一个开源的 “托管 AI 编程代理平台”，目标是把 Claude Code、Codex、GitHub Copilot CLI 等编码代理变成真正的团队成员。用户可以像给同事分配任务一样给 Agent 分配 Issue，并追踪进度、复用技能、管理运行环境。\n\n---\n\n## 1. 项目定位：让 AI Agent 成为团队成员\n\nMultica 的核心理念是：**AI Agent 不只是一次性工具，而是可以长期协作的 “队友”**。\n\n- 用户可以把任务分配给 Agent，就像分配给工程师一样。\n- Agent 会自动接任务、写代码、汇报进度、提出阻塞问题、更新状态。\n- 避免反复复制 Prompt，也减少人工盯着 Agent 执行的成本。\n- Agent 会出现在看板、评论区和任务流中，参与团队协作。\n- 平台支持开源、自托管、厂商中立，适合人类工程师与 AI Agent 混合协作。\n\n支持的 Agent / CLI 包括：\n\n- Claude Code\n- Codex\n- GitHub Copilot CLI\n- OpenClaw\n- OpenCode\n- Hermes\n- Gemini\n- Pi\n- Cursor Agent\n- Kimi\n- Kiro CLI\n\n---\n\n## 2. 名称含义：从 Multics 到 Multica\n\n“Multica” 的名字来自：\n\n> **Multiplexed Information and Computing Agent**\n\n它致敬了 1960 年代的操作系统**Multics**。\n\n- Multics 的核心思想是 “分时”：让多个用户共享一台机器。\n- Multica 借鉴这个思想，把 “分时协作” 带到 AI Agent 时代。\n- 过去软件团队常常是 “一个工程师处理一个任务”。\n- Multica 希望让人类和多个 AI Agent 同时处理任务，提高团队吞吐量。\n\n文章中的关键比喻是：\n\n> 两个工程师加上一队 AI Agent，可以像二十个人一样推进工作。\n\n---\n\n## 3. 核心功能：管理 Agent 的完整生命周期\n\nMultica 管理 Agent 从任务分配到执行、监控、技能复用的全过程。\n\n### 3.1 Agents as Teammates：Agent 像同事一样工作\n\nAgent 拥有类似团队成员的身份：\n\n- 有自己的 Profile\n- 出现在任务看板上\n- 可以发表评论\n- 可以创建 Issue\n- 会主动报告阻塞问题\n\n例如：你可以把一个 Bug 修复任务直接分配给某个 Agent，它会自动开始处理，并在任务中更新进展。\n\n---\n\n### 3.2 Squads：用 “团队” 方式管理 Agent\n\nSquads 允许把多个 Agent 和人类成员组成一个小队，由一个 Leader Agent 负责分发任务。\n\n- 用户可以把任务分配给整个小队，而不是具体某个人。\n- Leader Agent 会判断谁最适合处理。\n- 随着团队规模变大，任务路由会更稳定。\n\n示例：\n\n```text\n@FrontendTeam\n```\n\n比手动选择：\n\n```text\n@alice 或 @bob 或 @carol\n```\n\n更适合大团队协作。\n\n---\n\n### 3.3 Autonomous Execution：自动执行任务\n\nMultica 支持完整的自动任务生命周期管理：\n\n- 入队 enqueue\n- 领取 claim\n- 开始 start\n- 完成 complete\n- 失败 fail\n\n同时通过**WebSocket**实时展示执行进度。\n\n通俗来说，就是用户只需要分配任务，Agent 会自动排队、执行、汇报结果。\n\n---\n\n### 3.4 Autopilots：定时自动化任务\n\nAutopilots 用于让 Agent 自动执行周期性工作。\n\n支持触发方式：\n\n- Cron 定时任务\n- Webhook\n- 手动运行\n\n适合的场景包括：\n\n- 每日站会总结\n- 每周报告\n- 定期代码审计\n- 周期性检查任务\n\n每次 Autopilot 运行时，都会自动创建 Issue，并分配给合适的 Agent。\n\n---\n\n### 3.5 Reusable Skills：把经验沉淀为可复用技能\n\nMultica 支持把 Agent 的解决方案沉淀成团队技能。\n\n可复用的技能包括：\n\n- 部署流程\n- 数据库迁移\n- 代码审查\n- 常见问题处理\n\n这样团队使用时间越久，Agent 积累的能力越多，整体效率会逐步提升。\n\n---\n\n### 3.6 Unified Runtimes：统一管理运行环境\n\nMultica 提供统一仪表盘来管理计算环境。\n\n支持：\n\n- 本地 Daemon\n- 云端 Runtime\n- 自动检测本机可用的 Agent CLI\n- 实时监控运行状态\n\nRuntime 可以理解为：**真正执行 Agent 任务的计算环境**，比如用户自己的电脑或云服务器。\n\n---\n\n### 3.7 Multi-Workspace：多工作区隔离\n\nMultica 支持多个 Workspace，适合不同团队或项目独立管理。\n\n每个 Workspace 都有独立的：\n\n- Agents\n- Issues\n- 设置项\n\n这有助于在多团队、多项目场景下保持隔离。\n\n---\n\n## 4. 安装与快速开始\n\n### 4.1 macOS / Linux 安装\n\n可以通过 Homebrew 安装：\n\n```bash\nbrew install multica-ai/tap/multica\n```\n\n升级命令：\n\n```bash\nbrew upgrade multica-ai/tap/multica\n```\n\n如果没有 Homebrew，也可以使用安装脚本：\n\n```bash\ncurl -fsSL https://raw.githubusercontent.com/multica-ai/multica/main/scripts/install.sh | bash\n```\n\n---\n\n### 4.2 Windows 安装\n\nWindows 用户可以使用 PowerShell：\n\n```powershell\nirm https://raw.githubusercontent.com/multica-ai/multica/main/scripts/install.ps1 | iex\n```\n\n---\n\n### 4.3 一键配置云端版本\n\n安装后执行：\n\n```bash\nmultica setup\n```\n\n该命令会完成：\n\n- 连接 Multica Cloud\n- 登录认证\n- 启动本地 Daemon\n\n---\n\n### 4.4 自托管部署\n\n如果想在本机部署完整 Multica 服务，可以使用：\n\n```bash\ncurl -fsSL https://raw.githubusercontent.com/multica-ai/multica/main/scripts/install.sh | bash -s -- --with-server\nmultica setup self-host\n```\n\n自托管会从 GHCR 拉取官方镜像，默认使用最新稳定版本，要求本机安装 Docker。\n\n---\n\n## 5. 使用流程：从连接 Runtime 到分配任务\n\nMultica 的基本使用路径如下：\n\n1. 运行配置命令：\n\n```bash\nmultica setup\n```\n\n2. 本地 Daemon 会在后台运行，并自动检测 PATH 中可用的 Agent CLI。\n\n3. 打开 Multica Web 应用，进入：\n\n```text\nSettings → Runtimes\n```\n\n确认本机已经作为 Active Runtime 出现。\n\n4. 进入：\n\n```text\nSettings → Agents\n```\n\n创建新的 Agent。\n\n5. 为 Agent 选择：\n\n- Runtime\n- Provider，例如 Claude Code、Codex、Copilot CLI、Gemini、Kimi 等\n- Agent 名称\n\n6. 在看板中创建 Issue，或使用命令创建：\n\n```bash\nmultica issue create\n```\n\n7. 把 Issue 分配给 Agent，Agent 会自动执行并汇报进度。\n\n---\n\n## 6. CLI 命令能力\n\nMultica CLI 用于连接本地机器和 Multica 平台，支持认证、工作区管理、Issue 管理和 Daemon 管理。\n\n常用命令包括：\n\n| 命令 | 作用 |\n|---|---|\n| `multica login` | 登录认证，会打开浏览器 |\n| `multica daemon start` | 启动本地 Agent Runtime |\n| `multica daemon status` | 查看 Daemon 状态 |\n| `multica setup` | 一键配置 Multica Cloud |\n| `multica setup self-host` | 配置自托管部署 |\n| `multica workspace list` | 查看工作区列表 |\n| `multica workspace switch <id\\|slug>` | 切换默认工作区 |\n| `multica issue list` | 查看 Issue |\n| `multica issue create` | 创建 Issue |\n| `multica update` | 更新到最新版本 |\n\n---\n\n## 7. 技术架构\n\nMultica 的整体架构由前端、后端、数据库和 Agent Daemon 组成。\n\n```text\nNext.js Frontend\n        ↓\nGo Backend\n        ↓\nPostgreSQL\n        ↑\nAgent Daemon\n```\n\n关键技术栈：\n\n| 层级 | 技术 |\n|---|---|\n| 前端 | Next.js 16，App Router |\n| 后端 | Go，Chi router，sqlc，gorilla/websocket |\n| 数据库 | PostgreSQL 17，pgvector |\n| Agent Runtime | 本地 Daemon，执行 Claude Code、Codex、Copilot CLI、Gemini、Kimi 等 |\n\n其中：\n\n- 前端负责 Web 界面和任务看板。\n- Go 后端负责 API、任务调度和 WebSocket 实时通信。\n- PostgreSQL 存储任务、Agent、Workspace 等数据。\n- 本地 Daemon 负责真正执行 Agent 任务。\n\n---\n\n## 8. 开发与贡献\n\n如果想参与 Multica 项目开发，需要以下环境：\n\n- Node.js v20+\n- pnpm v10.28+\n- Go v1.26+\n- Docker\n\n开发启动命令：\n\n```bash\nmake dev\n```\n\n该命令会自动完成：\n\n- 检测开发环境\n- 创建环境变量文件\n- 安装依赖\n- 设置数据库\n- 执行迁移\n- 启动所有服务\n\n此外，项目还包含一个 iOS 移动客户端，位于：\n\n```text\napps/mobile/\n```\n\n---\n\n## 9. 项目活跃度数据\n\n从 GitHub 页面信息看，项目较为活跃：\n\n- 提交数：**3,438 commits**\n- Releases：**83 + 82 releases**\n- 支持自托管部署\n- 提供 Helm Chart、Docker Compose、GHCR 镜像等部署能力\n\n---\n\n## 总结\n\nMultica 的价值在于把各种 AI 编程工具统一管理起来，让它们从 “单次调用的工具” 变成 “可分配任务、可追踪进度、可积累技能的团队成员”。它尤其适合希望在人类工程师和 AI Agent 之间建立长期协作流程的开发团队。",
+        "url": "https://github.com/multica-ai/multica/raw/main/docs/assets/banner.jpg",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "Multica — humans and agents, side by side",
+        "caption": "",
+        "height": 784,
+        "id": "img-6",
+        "nearbyText": "Multica Your next 10 hires won't be human. The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills. Website · Cloud · X · Self-Hosting · Contributing English | 简体中文 Wha...",
+        "resolvedUrl": "https://github.com/multica-ai/multica/raw/main/docs/assets/banner.jpg",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/multica-ai/multica/raw/main/docs/assets/banner.jpg",
+        "width": 1400
+      }
+    ],
+    "knowledgePoints": [
+      "Multica 支持把多个编码智能体 CLI 接入统一运行时，并通过 WebSocket 实时追踪执行进度",
+      "平台提出 Agents as Teammates、Squads、Autopilots、Reusable Skills 等协作概念",
+      "架构由 Next.js 前端、Go 后端、PostgreSQL/pgvector 数据库和本地 Agent Daemon 组成",
+      "支持云端使用与 Docker 自托管部署，并提供 CLI 进行登录、工作区、Issue 和 Daemon 管理"
+    ],
+    "oneHighValuePoint": "将编码智能体纳入任务看板、状态流转、阻塞反馈和技能沉淀流程，使其更接近团队协作基础设施而非单次命令行工具。",
+    "oneLineReview": "这是一个有一定参考价值的开源 AI 编码智能体平台 README，但整体偏产品宣传，缺少真实案例和效果证据。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可按需保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "智能体平台",
+      "开源项目",
+      "软件工程协作"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了 Multica 这一开源托管编码智能体平台，强调可将 Claude Code、Codex、Copilot CLI 等工具整合为团队成员式代理，支持任务分配、进度追踪、技能复用、自托管、CLI 和运行时管理。",
+    "tags": [
+      "AI Agent",
+      "Coding Agent",
+      "自托管",
+      "开发协作",
+      "GitHub"
+    ],
+    "title": "multica-ai/multica: The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
+    "totalScore": 60.5,
+    "url": "https://github.com/multica-ai/multica"
+  },
+  "payloadHash": "sha256:4cc936c09fd7869132a355edf281eb6d54e189812ac6806369929b3bdba8223f",
+  "refs": {},
+  "revisionId": "sha256:aee9b722acaf2dffdb58d8a9b93e5d2661ad93fa5f926a2d2401c2558d65f602",
+  "schemaVersion": 1,
+  "updatedAt": 1780615491734
+}

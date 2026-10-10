@@ -1,0 +1,15 @@
+{
+  "createdAt": 1780449152915,
+  "entityType": "session-content",
+  "id": "1780449152915_dk85dzu5",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>yetone</strong></header><div class=\"tw-body\">但是这个应该不能去把责任归到用户身上，而必须是归到 Anthropic 身上。因为新的模型刚推出的时候，它内部没经过大量的测试，导致 Inference Infra 出现各种 bug，导致各种降智行为，甚至这一次 Opus 4.8 对 edit tool 调用的 old_string 参数都会传错。推出之后，当把用户当成小白鼠测试过一段时间之后，他们收集到这些真实的用户的血与泪换来的 feedback 后，偷偷把这个模型的 Inference Infra bug 修完，然后舆论回暖，导致大家嘲笑刚开始吐槽这个模型的人，这个很不公平的。<br><br>比如前天 opus 4.8 就偷偷修好了我上面提到的 edit tool 调用的时候 old_string 都传错的弱智问题，你看，从昨天开始使用 opus 4.8 的人，跟刚开始就使用 opus 4.8 的人对其评价就完全不一样。</div><blockquote class=\"tw-quote\"><strong>@bettycyoder</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\" data-imt-pre=\"1\">每次出新版本都这样 刚出的时候喷成狗 过阵子又真香 我已经看透了哈哈哈</span></p></blockquote></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@yetone</strong> <span class=\"tw-eng\">♥ 10 · 💬 3</span><p>我前几天被坑哭了，边烧钱边被坑的感觉，你能体会吗？</p></div><div class=\"tw-reply\"><strong>@leelv999</strong> <span class=\"tw-eng\">♥ 4 · 💬 0</span><p>“哭也要 token 哦”</p></div><div class=\"tw-reply\"><strong>@AstroHan</strong> <span class=\"tw-eng\">♥ 3 · 💬 0</span><p>对，明明就是内部测试有问题，harness 把 tool schema 弄错，造成模型降智和空转，内部居然没测试完就发出来，连续发了多个版本热修才修好。。。太草台班子了</p></div><div class=\"tw-reply\"><strong>@小娜学AI</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>之前和AI讨论过，所有在线模型都没有价值！ 必须本地部署开源模型才有价值，<br>基于在线大模型做的应用也没有价值！<br>AI给的答案很深刻！</p></div><div class=\"tw-reply\"><strong>@herrkaefer</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>好嘛，以后用模型，要躲开新发布之初弱智期，还要躲开下代模型发布之前的降智期</p></div></div>",
+    "pageContent": "yetone: 但是这个应该不能去把责任归到用户身上，而必须是归到 Anthropic 身上。因为新的模型刚推出的时候，它内部没经过大量的测试，导致 Inference Infra 出现各种 bug，导致各种降智行为，甚至这一次 Opus 4.8 对 edit tool 调用的 old_string 参数都会传错。推出之后，当把用户当成小白鼠测试过一段时间之后，他们收集到这些真实的用户的血与泪换来的 feedback 后，偷偷把这个模型的 Inference Infra bug 修完，然后舆论回暖，导致大家嘲笑刚开始吐槽这个模型的人，这个很不公平的。 比如前天 opus 4.8 就偷偷修好了我上面提到的 edit tool 调用的时候 old_string 都传错的弱智问题，你看，从昨天开始使用 opus 4.8 的人，跟刚开始就使用 opus 4.8 的人对其评价就完全不一样。\n引用推文 (@bettycyoder):\n每次出新版本都这样 刚出的时候喷成狗 过阵子又真香 我已经看透了哈哈哈\n---\n热门回复 (共 5 条):\n@yetone (♥ 10 · 💬 3):\n我前几天被坑哭了，边烧钱边被坑的感觉，你能体会吗？\n\n@leelv999 (♥ 4 · 💬 0):\n“哭也要 token 哦”\n\n@AstroHan (♥ 3 · 💬 0):\n对，明明就是内部测试有问题，harness 把 tool schema 弄错，造成模型降智和空转，内部居然没测试完就发出来，连续发了多个版本热修才修好。。。太草台班子了\n\n@小娜学AI (♥ 0 · 💬 1):\n之前和AI讨论过，所有在线模型都没有价值！ 必须本地部署开源模型才有价值，\n基于在线大模型做的应用也没有价值！\nAI给的答案很深刻！\n\n@herrkaefer (♥ 0 · 💬 0):\n好嘛，以后用模型，要躲开新发布之初弱智期，还要躲开下代模型发布之前的降智期\n"
+  },
+  "payloadHash": "sha256:9085dcb4a1409a7e5241419d24d3cca620c66a9483118e9245596fb96d6fb5f0",
+  "refs": {},
+  "revisionId": "sha256:cbb954a0dd0016bf3bd1549e408ec7dd0196b0277fe89879ae579a7b78505157",
+  "schemaVersion": 1,
+  "updatedAt": 1780449953529
+}

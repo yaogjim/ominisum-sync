@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780384039895,
+  "entityType": "message",
+  "id": "1780384182897_ox0yfh7i",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n这个 GitHub 项目提供了一个 **CLAUDE.md 指南文件 / Claude Code 插件**，用于改善 Claude Code 等 AI 编程助手的行为。它基于 Andrej Karpathy 对大模型写代码常见问题的观察，核心目标是：**少猜测、少过度设计、少乱改代码，并用明确目标和测试来验证结果**。\n\n---\n\n## 1. 项目背景：LLM 写代码的常见问题\n\n作者引用 Andrej Karpathy 的观点，指出当前大模型在编程时常有几类问题：\n\n- **擅自假设用户意图**  \n  模型经常不确认需求，就默认某种理解并继续实现。\n\n- **不暴露困惑和不确定性**  \n  遇到模糊需求时，不会主动提问，也不会说明权衡。\n\n- **容易过度设计**  \n  可能把本来 100 行能解决的问题，写成 1000 行复杂抽象。\n\n- **误改无关代码**  \n  有时会修改、删除自己并不理解的注释或代码，即使这些内容和任务无关。\n\n---\n\n## 2. 解决方案：用一个文件约束 AI 编程行为\n\n项目提出将一组规则放进单个 `CLAUDE.md` 文件，或作为 Claude Code 插件安装，用来指导 AI 编程助手的行为。\n\n核心包括四条原则：\n\n| 原则 | 解决的问题 |\n|---|---|\n| Think Before Coding：编码前先思考 | 避免错误假设、隐藏困惑、忽略权衡 |\n| Simplicity First：简单优先 | 避免过度设计和臃肿抽象 |\n| Surgical Changes：外科手术式修改 | 避免改动无关代码 |\n| Goal-Driven Execution：目标驱动执行 | 用测试和明确验收标准推动任务完成 |\n\n---\n\n## 3. 原则一：编码前先思考，不要偷偷假设\n\n这一原则要求 AI 在动手写代码前，先明确自己对任务的理解。\n\n关键要求：\n\n- **明确写出假设**  \n  如果需求不清楚，应先说明假设，而不是直接猜。\n\n- **提出多种可能解释**  \n  如果用户的话有歧义，不要私自选择一种解释。\n\n- **必要时提出反对意见**  \n  如果有更简单、更合理的方案，AI 应主动指出。\n\n- **困惑时停止并提问**  \n  不要在不理解的情况下继续写代码。\n\n通俗来说：  \n> 不要“自作聪明”地猜用户想要什么，先确认再行动。\n\n---\n\n## 4. 原则二：简单优先，避免过度工程化\n\n该原则用来对抗 AI 容易写复杂代码的问题。\n\n具体要求包括：\n\n- 不实现用户没要求的功能。\n- 不为一次性代码创建复杂抽象。\n- 不添加没被要求的“灵活性”或“可配置性”。\n- 不为不可能发生的情况写复杂错误处理。\n- 如果 200 行代码能缩成 50 行，就应简化。\n\n判断标准是：\n\n> 如果一位资深工程师会觉得这段代码太复杂，那就应该重写得更简单。\n\n例如：  \n用户只是要求“给表单增加邮箱校验”，AI 不应该顺便设计一整套通用校验框架。\n\n---\n\n## 5. 原则三：只改必须改的地方\n\n这一原则强调：修改现有代码时，要像做“外科手术”一样精准。\n\n关键要求：\n\n- 不要顺手“优化”旁边的代码、注释或格式。\n- 不要重构没有坏掉的部分。\n- 遵循项目现有风格，即使你个人会用不同写法。\n- 如果发现无关的废弃代码，可以指出，但不要擅自删除。\n\n关于清理代码，规则也很明确：\n\n- 可以删除由自己本次修改造成的无用 import、变量或函数。\n- 不要删除本来就存在的死代码，除非用户明确要求。\n\n判断标准是：\n\n> 每一行改动都应该能直接对应到用户的请求。\n\n---\n\n## 6. 原则四：用目标和验证标准驱动执行\n\n项目强调，不要只给 AI 下“命令”，而应该给它明确的成功标准。\n\n例如：\n\n| 原始指令 | 更好的目标化表达 |\n|---|---|\n| Add validation：添加校验 | 为非法输入写测试，然后让测试通过 |\n| Fix the bug：修 bug | 写一个能复现 bug 的测试，然后让它通过 |\n| Refactor X：重构 X | 确保重构前后测试都通过 |\n\n对于多步骤任务，建议 AI 先写简短计划：\n\n```text\n1. 执行某步骤 → 验证方式：某检查\n2. 执行某步骤 → 验证方式：某检查\n3. 执行某步骤 → 验证方式：某检查\n```\n\n核心思想来自 Andrej Karpathy 的观点：\n\n> LLM 非常擅长循环执行，直到达到具体目标。不要只告诉它做什么，而要给它成功标准。\n\n---\n\n## 7. 安装方式\n\n项目提供两种主要使用方式。\n\n### 方式 A：Claude Code 插件，推荐\n\n在 Claude Code 中先添加 marketplace：\n\n```bash\n/plugin marketplace add forrestchang/andrej-karpathy-skills\n```\n\n然后安装插件：\n\n```bash\n/plugin install andrej-karpathy-skills@karpathy-skills\n```\n\n安装后，这些规则可以在所有项目中使用。\n\n### 方式 B：使用 CLAUDE.md，适合单个项目\n\n新项目中下载：\n\n```bash\ncurl -o CLAUDE.md https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md\n```\n\n已有项目中追加：\n\n```bash\necho \"\" >> CLAUDE.md\ncurl https://raw.githubusercontent.com/forrestchang/andrej-karpathy-skills/main/CLAUDE.md >> CLAUDE.md\n```\n\n此外，仓库也包含 Cursor 规则文件：\n\n```text\n.cursor/rules/karpathy-guidelines.mdc\n```\n\n因此在 Cursor 中打开项目时，也可以应用类似规则。\n\n---\n\n## 8. 如何判断这些规则是否有效\n\n如果规则生效，应该能看到这些改善：\n\n- **代码 diff 更干净**  \n  只出现用户要求的改动。\n\n- **过度设计减少**  \n  第一次生成的代码就更简单直接。\n\n- **实现前会先提问**  \n  不再等出错后才发现需求理解错了。\n\n- **PR 更小、更清晰**  \n  没有顺手重构、格式化或“顺便优化”。\n\n---\n\n## 9. 可定制性：可与项目规则合并\n\n这些指南可以和项目自己的规则合并使用。\n\n例如可以在 `CLAUDE.md` 中增加项目专属要求：\n\n```markdown\n## Project-Specific Guidelines\n\n- Use TypeScript strict mode\n- All API endpoints must have tests\n- Follow the existing error handling patterns in `src/utils/errors.ts`\n```\n\n也就是说，通用原则负责约束 AI 的行为方式，项目规则负责约束具体技术规范。\n\n---\n\n## 10. 权衡说明：更谨慎，但可能稍慢\n\n作者也说明，这些规则会让 AI 更偏向谨慎，而不是一味追求速度。\n\n对于简单任务，例如：\n\n- 修一个拼写错误\n- 改一个明显的一行 bug\n- 调整一个简单配置\n\n不一定需要完整流程。\n\n这些规则的目标不是拖慢简单任务，而是减少非平凡任务中的昂贵错误。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780384039895,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8b048313942c08f22902f208ca4a8784c7e409058735890b8e722b37bfbce4f7",
+  "refs": {
+    "sessionId": "1780380785964_g9sdp0b2"
+  },
+  "revisionId": "sha256:9f2b696d36672199c2a0fa2ce28add995fcd5a2f6b48d6888859888b0f9a480c",
+  "schemaVersion": 1,
+  "updatedAt": 1780384039895
+}

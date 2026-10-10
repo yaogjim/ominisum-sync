@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776645448766,
+  "entityType": "session",
+  "id": "1776645448766_ks7dtf3k",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注本地AI部署，可进一步查找hermes-bench和Ornstein-27B-v2的完整基准数据",
+      "将该观点与真实硬件成本、吞吐、延迟和任务质量测试做交叉验证后再决定是否跟进"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776646196025,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "家用本地AI性价比拐点讨论",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "证据薄弱、信息密度低、可操作性差，且内容高度依赖社交语境，后续检索和复用价值有限。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "消费级GPU和旧工作站正在被用于本地运行中型推理模型与代理",
+      "部分用户认为本地模型已能覆盖聊天、辅导等轻量消费者场景"
+    ],
+    "oneHighValuePoint": "透露出一个值得关注的信号：消费级硬件运行本地代理型模型正在从“能跑”向“够用”过渡。",
+    "oneLineReview": "有一点趋势信号，但远不足以构成高价值参考材料。",
+    "primaryCategory": "AI基础设施与本地部署",
+    "rating": "D",
+    "rejectReason": "核心内容主要是未经展开的观点和零散评论，缺少完整测试结果、方法细节与可复用结论。",
+    "retentionDecision": "信息量有限，短期参考价值很低，建议删除",
+    "secondaryCategories": [
+      "大模型推理",
+      "社交媒体观点"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章核心观点是家用本地AI在消费级硬件上的性价比正在接近实用临界点，并以3090、本地工作站和Mac设备的零散使用体验作为佐证。但整体缺乏系统数据、明确基准结果和方法展开，更像情绪化趋势判断。",
+    "tags": [
+      "本地AI",
+      "消费级硬件",
+      "RTX3090",
+      "代理",
+      "社交媒体"
+    ],
+    "title": "X 上的 nisten🇨🇦e/acc：“it's really starting to look like local AI at home is crossing the practicalit…",
+    "totalScore": 31.5,
+    "url": "https://x.com/nisten/status/2044183475427619037"
+  },
+  "payloadHash": "sha256:6e7be781a3fe71d2f50ec5e20b52d1ed0dbad4951ea0d1b4bd0f9f85fe8e9f20",
+  "refs": {},
+  "revisionId": "sha256:b8aee33d4a4a50732d7a3fb2bc7ad5fe47a39867f5f43ca4ba44a41d436d57dc",
+  "schemaVersion": 1,
+  "updatedAt": 1776647162484
+}

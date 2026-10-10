@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780386903935,
+  "entityType": "message",
+  "id": "1780387029402_fadxj596",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n这篇内容总结了 AirOps 在 Claude 大会上的分享：他们从复杂的 workflow builder 转向 agent-based approach，并提出“harness engineering（驾驭工程）”的思路。核心观点是：AI 模型只是“引擎”，真正决定产品效果的是围绕模型的工具、上下文、记忆、约束和质量控制体系。\n\n---\n\n## 1. AirOps 的转型：从工作流构建器到 Agent 方法\n\nAirOps 原本使用较复杂的 workflow builder，但后来转向更灵活的 agent-based approach。\n\n关键变化包括：\n\n- 不再主要依赖复杂代码或流程图来编排 AI 工作流。\n- 改用 **markdown 文件来组织和编排 agent**。\n- 让 agent 更像一个可被配置、可协作的系统，而不是一条固定流程。\n\n通俗理解：  \n过去像是在搭一条固定流水线；现在更像是组织一个 AI 团队，每个成员有自己的职责和规则。\n\n---\n\n## 2. “Harness Engineering”：模型只是引擎，周边系统才是关键\n\n文章中最重要的比喻是 **harness engineering**。\n\n它把 AI 模型比作赛车的“引擎”，但光有引擎并不能直接上路。真正让 AI 产品稳定运行的，是围绕模型的一整套系统：\n\n- **Tools：工具**\n- **Context：上下文**\n- **Guardrails：安全和质量边界**\n- **Memory：记忆**\n- **Constraints：约束条件**\n\n也就是说，AI 产品的竞争力不只是选了哪个大模型，而是如何设计模型周围的“驾驭系统”。\n\n---\n\n## 3. 用 Subagents 提升输出质量\n\nAirOps 通过拆分多个 subagents 来保证最终内容质量。\n\n文中提到的例子包括：\n\n- **Brand compliance subagent**：检查内容是否符合品牌规范。\n- **Writer subagent**：负责具体写作。\n- **Brand kit subagent**：专门管理品牌资料和品牌语气。\n\n其中一个关键细节是：  \nAirOps 没有每次都把大量品牌文档塞进主 agent，而是把 **Brand Kit 单独拆成 subagent**。这样可以让主 agent 更轻量，也能减少混乱和 token 消耗。\n\n---\n\n## 4. 持续追踪摩擦点：解决一个问题后，问题会转移\n\n作者提到一个很重要的产品思路：  \n**每次解决一个问题后，friction point（摩擦点）会移动。**\n\n也就是说，AI 产品优化不是一次性完成的。你解决了速度问题，可能接下来会暴露质量问题；你解决了质量问题，可能又会出现成本问题。\n\n因此团队需要持续追踪新的瓶颈，不断优化系统。\n\n---\n\n## 5. 结果数据：效率提升非常明显\n\nAirOps 的方法带来了很直接的效果：\n\n- **Token 消耗减少 80%**\n- **速度提升 10 倍**\n\n这说明合理的 agent 架构和上下文管理，不只是理论上更优，也能明显降低成本、提升性能。\n\n---\n\n## 6. 热门回复中的补充观点\n\n### 6.1 训练小模型可能成为重要 AI 技能\n\n一条热门回复提到：  \n**训练小模型可能是 2026 年最被低估的 AI 技能。**\n\n例子是 CJ Zafir 在 2026 年 5 月 11 日发推，想教普通人 fine-tune 开源模型，获得了：\n\n- **2538 个赞**\n- **316 次转发**\n- **178,000 次观看**\n\n这说明越来越多人开始关注 fine-tuning、开源模型和小模型定制能力。\n\n---\n\n### 6.2 可视化通用工作流工具 Longflow\n\n另一条回复推荐了 **longflow** 项目。\n\n它被描述为：\n\n- 可视化通用工作流工具\n- 可以安装到 Codex 里使用\n- 适合想更直观管理 AI 工作流的人\n\n这与 AirOps 的主题相关：大家都在探索如何更好地编排 AI 系统。\n\n---\n\n### 6.3 手工管理记忆有时比自动记忆更有效\n\n有用户分享自己的体验：  \n按话题用 markdown 手工保存记忆，实际效果可能比 RAG、向量数据库或 agent 自动记忆更好。\n\n原因是：\n\n- RAG + 向量数据库有时检索效果不稳定。\n- 自动记忆容易抓不住重点。\n- 重要信息可能不记，垃圾信息和过时内容反而记很多。\n- 手工整理 markdown 更可控、更清晰。\n\n这也呼应了 AirOps 用 markdown 编排 agent 的思路：简单、透明、可维护的上下文管理非常重要。\n\n---\n\n## 总结\n\n这篇内容的核心启发是：AI 产品的重点不只是模型本身，而是如何设计模型周围的系统。通过 markdown 编排、subagents 分工、上下文管理和持续优化摩擦点，AirOps 实现了 token 消耗减少 80%、速度提升 10 倍的效果，体现了 agent 产品设计正在从“堆模型”转向“工程化驾驭模型”。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780386903935,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c69e88ccb4797c5d03667ad40807277c459e8aa70064cf2bbef93bd9fdb1325d",
+  "refs": {
+    "sessionId": "1780386265792_5qa3l6pm"
+  },
+  "revisionId": "sha256:386fe6dfc014e85f52b9c9489509f12ca11164f4f27c580c75c28e5cb34d3701",
+  "schemaVersion": 1,
+  "updatedAt": 1780386903935
+}

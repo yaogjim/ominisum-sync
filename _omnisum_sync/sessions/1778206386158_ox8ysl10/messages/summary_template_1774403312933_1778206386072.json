@@ -1,0 +1,23 @@
+{
+  "createdAt": 1778206386072,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1778206386072",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# LangChain Deep Agents Sandboxes 总结\n\n## 1. 核心概念：给 Agent 一个隔离执行环境\n\nSandboxes（沙箱）是 Deep Agents 中用于隔离 Agent 执行环境的后端能力。\n\n因为 Agent 可能会：\n\n- 生成和执行代码\n- 读写文件\n- 运行 shell 命令\n- 访问网络或安装依赖\n\n所以必须把它和宿主系统隔离，避免它读取本地文件、环境变量、密钥，或影响宿主进程。\n\n配置 sandbox backend 后，Agent 会获得：\n\n- 标准文件系统工具：`ls`、`read_file`、`write_file`、`edit_file`、`glob`、`grep`\n- `execute`工具：可在沙箱内执行 shell 命令\n- 与宿主系统隔离的安全边界\n\n---\n\n## 2. 为什么需要 Sandboxes\n\n沙箱的核心价值是安全。\n\n它允许 Agent 在一个受控环境里自由执行代码、操作文件、安装依赖，而不会直接威胁宿主系统。\n\n典型场景包括：\n\n### 编程 Agent\n\n适合让 Agent：\n\n- 使用 shell\n- 操作 Git\n- 克隆代码仓库\n- 构建、测试项目\n- 执行 Docker-in-Docker 流程\n\n### 数据分析 Agent\n\n适合让 Agent：\n\n- 加载数据文件\n- 安装`pandas`、`numpy`等库\n- 执行统计分析\n- 生成报表、PPT、图表等结果文件\n\n---\n\n## 3. 生命周期：沙箱如何与业务资源绑定\n\n沙箱会消耗资源，也会产生费用，因此需要管理生命周期。\n\n### Thread-scoped：按会话隔离，默认推荐\n\n每个对话线程拥有独立沙箱。\n\n特点：\n\n- 首次运行时创建\n- 同一线程后续消息复用\n- 线程清理或 TTL 到期后销毁\n- 每次新对话都是干净环境\n\n适合：\n\n- 数据分析 Bot\n- 一次性任务型 Agent\n- 多用户隔离场景\n\n### Assistant-scoped：按助手共享\n\n同一个 Assistant 的所有会话共享一个沙箱。\n\n特点：\n\n- 文件、依赖、代码仓库会长期保留\n- 多个对话可复用同一工作区\n- 需要定期清理，避免磁盘和内存无限增长\n\n适合：\n\n- 长期维护代码仓库的编程助手\n- 需要持久工作区的 Agent\n\n---\n\n## 4. 集成模式：两种架构选择\n\n### 模式一：Agent 运行在沙箱内\n\nAgent 框架直接部署在沙箱中，外部应用通过网络与它通信。\n\n优点：\n\n- 接近本地开发体验\n- Agent 与执行环境耦合紧密\n\n缺点：\n\n- API Key 需要放进沙箱，安全风险高\n- 更新 Agent 逻辑需要重建镜像\n- 需要额外通信层，如 HTTP / WebSocket\n\n适合：\n\n- 提供商 SDK 已处理通信\n- 希望生产环境尽量模拟本地环境\n\n### 模式二：沙箱作为工具\n\nAgent 运行在宿主服务中，需要执行代码时调用远程沙箱工具。\n\n优点：\n\n- Agent 代码可快速迭代\n- API Key 留在宿主环境，更安全\n- Agent 状态与执行环境解耦\n- 沙箱失败不会丢失 Agent 状态\n- 可并行调用多个沙箱\n- 按执行资源付费\n\n缺点：\n\n- 每次工具调用存在网络延迟\n\n文档示例主要采用这一模式，通常更适合生产系统。\n\n---\n\n## 5. 技术机制：核心是`execute ()`\n\nSandbox backend 的核心方法是：\n\n```python\nexecute ()\n```\n\n它负责在沙箱中执行 shell 命令并返回结果。\n\n其他文件系统能力，例如：\n\n- 读文件\n- 写文件\n- 编辑文件\n- 列目录\n- 搜索文件\n\n本质上都是基于`execute ()`封装出来的。\n\n这带来一个好处：\n\n> 新增一个沙箱提供商时，只需要实现`execute ()`，基础文件工具由框架自动处理。\n\n当命令输出过大时，结果会自动保存到文件中，避免撑爆模型上下文窗口，Agent 可通过`read_file`分段读取。\n\n---\n\n## 6. 文件访问：两条通道要区分\n\n### Agent 文件工具\n\n由 LLM 在任务执行中调用，包括：\n\n- `read_file`\n- `write_file`\n- `edit_file`\n- `ls`\n- `glob`\n- `grep`\n- `execute`\n\n这些操作发生在沙箱内部。\n\n### 应用文件传输 API\n\n由业务应用代码调用，包括：\n\n- `upload_files ()`\n- `download_files ()`\n\n用于在宿主系统与沙箱之间传输文件。\n\n常见用途：\n\n- Agent 执行前上传源代码、配置、数据\n- Agent 执行后下载产物、报告、构建结果\n- 提前放入依赖或初始化资源\n\n---\n\n## 7. 安全边界与风险\n\n沙箱可以保护宿主系统，但不能完全解决 Agent 安全问题。\n\n它可以防止：\n\n- Agent 读取宿主本地文件\n- Agent 获取宿主环境变量\n- Agent 干扰宿主进程\n\n但不能防止：\n\n### 上下文注入\n\n如果攻击者控制了 Agent 输入，可能诱导 Agent 在沙箱内执行恶意命令。\n\n### 网络外泄\n\n如果沙箱允许联网，恶意指令可能让 Agent 把数据通过 HTTP、DNS 等方式传出。\n\n---\n\n## 8. 密钥处理原则\n\n文档强调：\n\n> 不要把任何密钥放进沙箱。\n\n包括：\n\n- API Key\n- Token\n- 数据库凭据\n- 环境变量中的敏感信息\n- 挂载文件里的秘密\n\n即使是短期或受限权限密钥，只要 Agent 能读到，攻击者也可能通过上下文注入让它泄露。\n\n推荐做法：\n\n### 推荐：密钥留在沙箱外部工具中\n\n认证逻辑在宿主环境运行，Agent 只调用工具，不直接接触凭据。\n\n### 可选：通过网络代理注入凭据\n\n由代理在请求转发时添加认证信息，Agent 只发普通请求，不知道真实密钥。\n\n---\n\n## 9. 最佳实践\n\n生产使用时建议：\n\n- 为沙箱配置 TTL，自动清理闲置资源\n- 按`thread_id`管理会话级沙箱\n- 不需要联网时关闭网络访问\n- 审查沙箱输出后再用于业务动作\n- 对工具输出做敏感信息过滤或脱敏\n- 将沙箱中产生的一切内容视为不可信输入\n- Assistant-scoped 模式下定期清理或快照重置\n\n---\n\n## 10. 产品视角总结\n\nSandboxes 是让 Agent 从 “只能回答” 走向 “能安全执行” 的关键基础设施。\n\n它解决的是 AI Agent 产品化中的核心矛盾：\n\n> Agent 需要足够自由地执行任务，但系统必须控制风险边界。\n\n对于产品和架构设计来说，关键决策包括：\n\n- 沙箱按会话隔离，还是按助手长期持久化\n- Agent 放在沙箱内，还是沙箱作为远程工具\n- 是否允许联网\n- 如何管理文件输入输出\n- 密钥是否彻底与执行环境隔离\n- 如何通过 TTL、快照、清理策略控制成本和状态膨胀\n\n一句话概括：\n\n> Deep Agents Sandboxes 为 AI Agent 提供了一个可执行、可隔离、可管理的安全工作区，是构建编程 Agent、数据分析 Agent 和自动化执行型 Agent 的重要基础能力。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1778206386072,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a86661c8dca18beb5492a091625251182c6c4570d26c71849b0d4bec971258d1",
+  "refs": {
+    "sessionId": "1778206386158_ox8ysl10"
+  },
+  "revisionId": "sha256:ca10b7b913d9221c5818ccfaede1197aed0131d0b9651da176d2f057ebe56393",
+  "schemaVersion": 1,
+  "updatedAt": 1778206386072
+}

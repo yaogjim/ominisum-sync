@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773653624132,
+  "entityType": "message",
+  "id": "1773653872499_a81boe63",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章介绍了 `nanoAgent`：一个用约 100 行 Python 写成的极简 AI Agent。核心观点是：如果你能读懂这点代码，就能理解“Agent”到底是怎么工作的。\n\n- **项目定位：用最少代码解释 Agent 原理**\n  - `nanoAgent` 是一个最小化实现的 AI Agent，基于 OpenAI 的 function calling。\n  - 它的目标不是做复杂框架，而是用非常少的代码，让人直接看懂 Agent 的运行机制。\n  - 项目口号很明确：这是“能与系统交互的最简单 Agent 构建方式”。\n\n- **使用方式：安装简单，开箱即用**\n  - 安装只需要执行：`pip install -r requirements.txt`\n  - 运行前需要设置环境变量，核心包括：\n    - `OPENAI_API_KEY`\n    - 可选：`OPENAI_BASE_URL`\n    - 可选：`OPENAI_MODEL`，默认示例是 `gpt-4o-mini`\n  - 支持 macOS/Linux、Windows PowerShell、Windows CMD 三种环境配置方式。\n\n- **怎么运行：直接给自然语言任务**\n  - 用户可以直接把任务作为命令行参数传给脚本，例如：\n    - 列出当前目录所有 Python 文件\n    - 创建 `hello.txt`，内容为 `Hello World`\n    - 读取 `README.md`\n  - 这说明它面向的是“用自然语言驱动工具执行”的场景，而不是传统手写脚本流程。\n\n- **核心逻辑：Agent 本质上就是一个循环**\n  - 文章把 Agent 逻辑压缩成一个非常清晰的循环：\n    1. 接收用户任务\n    2. 让模型决定要调用哪些工具\n    3. 执行工具\n    4. 把结果返回给模型\n    5. 重复，直到任务完成\n  - 原文直接强调：**核心就是 `call model → execute tools → repeat`**\n  - 也就是说，Agent 的本质并不神秘，核心只是“模型决策 + 工具调用 + 结果回传”的闭环。\n\n- **工具能力：目前聚焦 3 个基础能力**\n  - `execute_bash`：执行任意 bash 命令\n  - `read_file`：读取文件内容\n  - `write_file`：向文件写入内容\n  - 这 3 个能力已经足以覆盖很多典型任务，比如：\n    - 查询当前目录和文件\n    - 创建一个打印 `hello world` 的 Python 脚本\n    - 查找所有 `.py` 文件并统计总代码行数\n\n- **工程改进：最近增强了健壮性**\n  - 项目最近特别加强了错误处理，避免 Agent 因异常工具调用而直接崩溃。\n  - 重点处理了两类问题：\n    - 工具调用参数里有格式错误的 JSON\n    - 模型调用了不存在的工具\n  - 改进后的行为是：把这些情况作为**明确的工具错误返回给模型**，而不是让整个 Agent crash。\n  - 这说明项目虽然极简，但已经开始考虑真实使用中的稳定性问题。\n\n- **补充信息：项目状态与扩展方向**\n  - 仓库提到如果想进一步了解更现代的工具获取方式，尤其是 MCP，可以参考作者另一个项目：`nanoMCP`\n  - 当前仓库共 **11 次提交**\n  - 使用 **MIT License**\n  - 语言为 **Python 100.0%**\n  - 目前没有发布 release，也没有 packages\n\n一句话看，这篇文章/README 想传达的是：**Agent 并不一定复杂，靠约 100 行 Python 和 3 个基础工具，就能把核心机制讲明白并跑起来。**",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773653624132,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c271a710e317f45e59a0f7cc01e1306fbb072abf7db8b2a19f88b532a172c740",
+  "refs": {
+    "sessionId": "1773653872492_bjnqn8k5"
+  },
+  "revisionId": "sha256:4fbfce4d059ad5e52eba9388cc10f4194d2222179afc16b2202304effa480b57",
+  "schemaVersion": 1,
+  "updatedAt": 1773653624132
+}

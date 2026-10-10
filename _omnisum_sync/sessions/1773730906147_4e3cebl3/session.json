@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773730906147,
+  "entityType": "session",
+  "id": "1773730906147_4e3cebl3",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个常用任务，尝试用模型API而非现成SaaS工具完成，并记录成本、效果与限制",
+      "针对长上下文和记忆文件设计一次压力测试，观察模型在信息保留与丢失上的边界"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773730926611,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "反对依赖AI包装器的观点",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "直接使用API和底层工具有助于理解模型限制、上下文衰减与记忆管理问题",
+      "从为自己构建小型自动化开始，再逐步分享、售卖和复用，是一种低成本验证路径"
+    ],
+    "oneHighValuePoint": "最有价值的点是强调通过直接接触底层模型、观察失败边界和迭代指令质量来建立真实理解，而不是停留在现成工具界面层。",
+    "oneLineReview": "有一定启发性，但更像鼓动式观点输出，方法粗糙且证据不足。",
+    "primaryCategory": "AI工具使用策略",
+    "rating": "C",
+    "rejectReason": "观点表达有煽动性，论证主要依赖个人经验和类比，缺少可验证案例与数据支撑。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "个人效率",
+      "创业认知"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章主张不要过度依赖AI包装型产品，而应直接使用底层模型API与核心工具，通过持续试错、观察失败案例和构建个人自动化来建立理解，并进一步形成可出售的工作流能力。",
+    "tags": [
+      "AI工作流",
+      "API",
+      "提示工程",
+      "自动化",
+      "创业叙事"
+    ],
+    "title": "why you can't afford to use openclaw",
+    "totalScore": 50.5,
+    "url": "https://x.com/starks_arq/status/2033614404755898779"
+  },
+  "payloadHash": "sha256:b42584d6d39a9edee083fa8f0f2705d687b119514fd8f57f8d1c2a0bcee29410",
+  "refs": {},
+  "revisionId": "sha256:74d577df028b496ab3de102ea4232a4e5cff496512d050d82f96296613581a5d",
+  "schemaVersion": 1,
+  "updatedAt": 1773731119374
+}

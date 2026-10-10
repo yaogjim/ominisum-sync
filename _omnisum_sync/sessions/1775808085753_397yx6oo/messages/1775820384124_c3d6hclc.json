@@ -1,0 +1,19 @@
+{
+  "createdAt": 1775820384125,
+  "entityType": "message",
+  "id": "1775820384124_c3d6hclc",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 开源智能体部署方案评测\n\n**评级**: B (58.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent工程\n**次类别**: 开源部署平台, LLM基础设施\n**标签**: #Deep Agents #LangChain #Agent Deployment #Memory Lock-in #Open Ecosystem\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇有选型启发但明显偏营销的产品发布文，观点有价值，证据不足。\n**核心高价值点**: 最有价值的点是把“智能体框架锁定”进一步上升到“记忆所有权锁定”，提醒部署方案选择不仅是模型问题，更是数据与长期迁移成本问题。\n\n### 摘要\n文章介绍 LangChain 推出的 Deep Agents Deploy Beta，强调其可一键部署与模型无关的开源智能体框架，并突出开放生态、标准协议和内存所有权，主打对比 Claude Managed Agents 的封闭锁定问题。\n\n### 知识要点\n- 生产级智能体部署通常涉及编排逻辑、多租户扩展、沙箱环境和交互端点整合\n- 开放标准如 AGENTS.md、MCP、A2A、Agent Protocol 有助于降低生态锁定\n- 智能体记忆与框架深度耦合，长期来看比模型切换更容易形成迁移成本\n\n### 行动项\n- 将 Deep Agents Deploy 与 Claude Managed Agents、AutoGen、OpenAI Agents 等方案做一页式选型对比\n- 重点验证其自托管内存、沙箱集成和多协议端点是否满足你的实际生产需求\n\n### 存档判定\n归档: 是 — 原因: 涉及开源智能体部署、内存所有权和开放协议，适合后续做框架选型对比时参考\n不推荐: 内容偏产品发布与立场表达，缺少性能数据、真实案例和客观对比，不足以支撑精读\n删除: 否\n留存决策: 短期参考后归档，适合作为选型和生态观察材料保留",
+    "role": "assistant",
+    "timestamp": 1775820384125,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:72d50e6e007f80984b12fec21cb60577b85b9f14b9ed61d59e2a017291046ab8",
+  "refs": {
+    "sessionId": "1775808085753_397yx6oo"
+  },
+  "revisionId": "sha256:338a52ab782ce937762dbc84d3270fed0f4e5d931e91b99a3040e7a6cdaaf1cf",
+  "schemaVersion": 1,
+  "updatedAt": 1775820384125
+}

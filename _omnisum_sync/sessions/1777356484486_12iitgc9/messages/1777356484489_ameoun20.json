@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777356449608,
+  "entityType": "message",
+  "id": "1777356484489_ameoun20",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章总结：Codex 真正“接住”了复杂工作流\n\n## 核心观点\n\n作者认为，真正带来 AI 使用粘性的不是某个单一模型，而是围绕个人长期积累的 **Context、工作框架 Harness、Agent 网络**。  \nCodex + GPT-5.5 在接入 Computer Use / Browser Use 后，展现出很强的“主动理解任务、跨 Agent 获取信息、直接执行”的能力，让作者产生了明显惊艳感。\n\n---\n\n## 1. 作者搭建了一个多 Agent 工作系统\n\n作者原本基于 Claude Code 搭建了一套完善的 Work Harness，并命名为 **Echo**。\n\nEcho 具备：\n\n- 记忆系统\n- SOUL 人格/工作风格设定\n- 设计知识与经验沉淀\n- 与助手 Agent **Thrum** 协作讨论\n\n作者会把自己的设计知识输入给 Echo，再让 Echo 和 Thrum 多轮讨论，用于帮助 AI 学习设计判断。\n\n---\n\n## 2. 用真实设计反馈训练 AI 的“品味”\n\n作者发现，设计品味很难用抽象语言直接描述，但坏设计很容易被指出。\n\n因此他采用了一种更接近人类设计师成长的方式：\n\n1. 让 Echo 在 Figma 中画图  \n2. 作者手动修改设计  \n3. 让 Echo 自己观察修改前后的差异  \n4. Echo 在 Figma 中留下问题评论  \n5. 作者进一步解释原因  \n\n这相当于用真实案例和批注，训练 AI 形成更好的设计判断力。\n\n---\n\n## 3. Claude Opus 4.7 表现不稳，Codex 接手 Harness\n\nEcho 原本跑在 Claude Opus 4.6 上，但升级到 4.7 后开始频繁出问题。\n\n于是作者尝试让 Codex 接手原本深度绑定 Claude Code 的 Harness。  \n虽然系统里很多地方写死了 Claude，迁移并不简单，但 Codex 能够：\n\n- 识别当前 Harness 的问题\n- 参考作者过去 OpenClaw 和 Hermes 的架构经验\n- 完成从 Claude 到 Codex 的适配改造\n\n这是 Codex 第一次让作者感觉“稳稳接住了”。\n\n---\n\n## 4. Codex + Computer Use 展现出主动执行力\n\n第二次惊艳来自 Codex 结合 Computer Use / Browser Use 后的能力。\n\n作者有多个 Agent：\n\n- **Friday**：负责生活和工作日程、长期规划\n- **Echo**：负责具体干活\n- 二者通过 **A2A** 实现信息互通\n\n作者让 Echo 去问 Friday：现在有没有什么可以主动帮忙做的事。\n\n结果 Echo 会：\n\n1. 主动向 Friday 获取上下文  \n2. 判断当前优先事项  \n3. 调用 Computer Use 查看 Figma / 浏览器  \n4. 直接开始推进任务  \n\n这让 AI 更像一个“知道该问谁、问完就干活”的员工。\n\n---\n\n## 5. A2A 的价值：让 Agent 之间共享上下文\n\n作者强调，A2A 的关键价值是让不同 Agent 能共享信息。\n\n就像给员工派任务时告诉他：\n\n> “有问题去问 XXX。”\n\n然后这个员工会自己去沟通、补齐背景、推进执行。\n\n这意味着，用户不需要在每个 AI 对话里重复解释背景，Agent 网络可以自动流转上下文。\n\n---\n\n## 6. 最大启发：模型不是护城河，工作系统才是\n\n作者最后指出，自己曾经以为离不开 ChatGPT，后来又依赖 Claude，现在又回到 GPT-5.5 / Codex。\n\n但他意识到：\n\n> 模型只是劳动力，真正有粘性的是自己的 Context、Harness 和 Agent Network。\n\n也就是说，模型可以替换，但围绕用户长期积累出来的个人工作系统，才是真正的生产力核心。\n\n---\n\n## 一句话总结\n\n这篇文章的核心不是夸 Codex 本身，而是说明：当 AI 模型接入真实工具、长期上下文和多 Agent 协作网络后，它开始从“聊天助手”变成一个能主动问人、理解背景、执行任务的真实工作伙伴。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777356449608,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:98aeeaaabe81502ac624dc1c71a23692114645e6d476c69f1ff7050ae103e961",
+  "refs": {
+    "sessionId": "1777356484486_12iitgc9"
+  },
+  "revisionId": "sha256:93fe59868463e65fd64846ec98b498e9876529b08b383f56ad653011efb35992",
+  "schemaVersion": 1,
+  "updatedAt": 1777356449608
+}

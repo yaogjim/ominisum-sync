@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774247020832,
+  "entityType": "session",
+  "id": "1774247020832_kmbbrmbz",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在评估模型时，分别设计裸模型能力测试与带工程包装的系统测试。",
+      "审视当前使用场景是否过窄，避免只在编程Agent或聊天场景中判断模型优劣。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774247033095,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "模型能力与Agent工程辨析",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "模型能力与Agent工程能力需要拆开评估，不能只看具体工具中的修bug表现。",
+      "复杂harness或工程包装可能放大系统表现，却削弱对模型本身能力的判断。",
+      "轻量框架与生态完整性之间存在取舍，社区规模会影响工具采用。"
+    ],
+    "oneHighValuePoint": "指出“壳工程”可能掩盖模型本体能力，这对评估Agent系统真实上限是一个关键提醒。",
+    "oneLineReview": "有判断力但证据薄弱的行业观察，适合快速扫一眼，不适合当作严肃结论依赖。",
+    "primaryCategory": "AI Agent",
+    "rating": "C",
+    "rejectReason": "观点有一定启发，但内容较短，缺少系统论证、数据支撑和可执行方法，整体参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "大模型评估",
+      "工程实践讨论"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕模型能力与Agent工程能力的区别展开，认为当前用户使用场景过窄，且过度依赖外层工程包装，导致模型真实能力被掩盖。评论区进一步讨论了轻量框架与生态兼容性的权衡。",
+    "tags": [
+      "模型能力",
+      "Agent工程",
+      "harness engineering",
+      "工作流",
+      "社区讨论"
+    ],
+    "title": "PsiACE: @ixiaowenz 我觉得是两个问题： 第一，使用的场景太少了，很多人都还是局限在过去的工作流/chatbot或者特定在编程领域的 Agent 第二，现在流行…",
+    "totalScore": 41.5,
+    "url": "https://x.com/repsiace/status/2035742549520879716"
+  },
+  "payloadHash": "sha256:427ab9f1c3f7f158e5c5491ecc2cdff291d47ea4328326114649908303160586",
+  "refs": {},
+  "revisionId": "sha256:fd3577fd47ddc969373e9d0c1438110ab90d3b757c85529e49b67f74b5ba62f6",
+  "schemaVersion": 1,
+  "updatedAt": 1774247900494
+}

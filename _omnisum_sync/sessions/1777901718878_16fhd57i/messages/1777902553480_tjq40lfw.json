@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777902497964,
+  "entityType": "message",
+  "id": "1777902553480_tjq40lfw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、内容总结\n\n这条推文主要在介绍一个开源项目：**open-agent-sdk**。\n\n作者表示：\n\n- 他让 Claude Code 分析了 `claude-code-sourcemap` 的源码；\n- 将其中的核心逻辑抽离出来；\n- 写了一个新的 SDK：`open-agent-sdk`；\n- 目标是替代官方的 `claude-agent-sdk`。\n\n项目地址：\n\n> https://github.com/shipany-ai/open-agent-sdk\n\n作者认为 `claude-agent-sdk` 有几个问题：\n\n1. **依赖 Claude Code**\n   - Claude Code 本身不开源；\n   - 出问题很难定位和修改。\n\n2. **调用成本较高**\n   - 每次处理 query 都需要启动 Claude Code 进程；\n   - 本地 CLI 进程开销大；\n   - 不适合云端高并发场景。\n\n而 `open-agent-sdk` 的特点是：\n\n1. **接口兼容**\n   - 和 `claude-agent-sdk` 的接口形式类似；\n   - 理论上只需要换包名就能迁移。\n\n2. **完全开源**\n   - 可以查看源码；\n   - 可以二次开发和定制。\n\n3. **函数调用**\n   - 不依赖本地 CLI 进程；\n   - 减少额外开销；\n   - 更适合云端部署和高并发 Agent 产品。\n\n---\n\n## 二、深入浅出解读\n\n可以把这件事理解成：\n\n> 原来的 `claude-agent-sdk` 像是一个遥控器，但真正干活的是背后的 Claude Code。  \n> 现在 `open-agent-sdk` 想把背后那套干活逻辑重新做成一个开源版本，让大家可以直接拿来用。\n\n### 1. 为什么有人想替代 `claude-agent-sdk`？\n\n因为它虽然方便，但有明显限制。\n\n如果你用它做 Agent 产品，比如：\n\n- AI 编程助手；\n- 自动化任务 Agent；\n- 云端代码生成服务；\n- 多用户同时调用的 Agent 平台；\n\n那么你会遇到几个问题：\n\n#### 黑盒问题\n\n`claude-agent-sdk` 背后依赖 Claude Code，但 Claude Code 不开源。\n\n这意味着：\n\n- 你不知道内部具体怎么处理；\n- 出 bug 只能等官方修；\n- 想深度定制也很难；\n- 云端部署时可控性差。\n\n#### 性能问题\n\n原来的方案需要启动 Claude Code 进程。\n\n这类似于：\n\n> 每来一个请求，就临时打开一个完整应用来处理。\n\n这种方式在个人电脑上还可以接受，但如果放到云端、高并发场景，就会变得比较重：\n\n- 启动慢；\n- 占资源；\n- 不易横向扩展；\n- 成本更高。\n\n---\n\n### 2. `open-agent-sdk` 想解决什么？\n\n它想把 Agent SDK 变成更轻、更透明、更可控的形态。\n\n#### 从“启动进程”变成“调用函数”\n\n原来像这样：\n\n```text\n用户请求 → 启动 Claude Code 进程 → 处理任务 → 返回结果\n```\n\n现在希望变成：\n\n```text\n用户请求 → 直接调用 SDK 函数 → 处理任务 → 返回结果\n```\n\n后者明显更适合服务端使用。\n\n#### 从“黑盒”变成“开源”\n\n开源之后，开发者可以：\n\n- 看源码；\n- 改逻辑；\n- 加功能；\n- 修 bug；\n- 适配自己的模型或工具链。\n\n这对做 Agent 产品的人很有吸引力。\n\n---\n\n## 三、我的意见\n\n我觉得这个项目的方向是有价值的，尤其适合想做 **云端 Agent 产品** 的开发者。\n\n### 优点\n\n- **降低接入成本**：如果真的兼容 `claude-agent-sdk`，迁移会比较方便。\n- **提升可控性**：开源代码更容易调试和定制。\n- **更适合服务端**：不依赖 CLI 进程，对高并发更友好。\n- **有利于生态发展**：社区可以基于它做更多 Agent 框架和产品。\n\n### 但也要注意几个风险\n\n#### 1. 法律和授权风险\n\n作者提到基于 `claude-code-sourcemap` 分析源码并抽离逻辑。\n\n这可能涉及：\n\n- 反编译；\n- 源码还原；\n- 许可证边界；\n- 商业产品使用风险。\n\n如果要在正式商业项目里使用，建议先确认：\n\n- 项目许可证是否清晰；\n- 是否存在侵权风险；\n- 是否依赖 Anthropic 未授权的内部逻辑。\n\n#### 2. 稳定性风险\n\n开源项目早期通常会有：\n\n- bug；\n- 文档不完善；\n- 接口变动；\n- 边界场景处理不够成熟。\n\n如果是生产环境，最好先做充分测试。\n\n#### 3. 兼容性风险\n\n虽然作者说“完全兼容”，但实际可能还是会有细节差异，比如：\n\n- 工具调用行为；\n- 上下文管理；\n- 文件系统操作；\n- 流式输出；\n- 错误处理；\n- 权限控制。\n\n迁移时不能只换包名就直接上线，最好逐项验证。\n\n---\n\n## 四、结论\n\n`open-agent-sdk` 的核心价值是：\n\n> 把原本依赖 Claude Code 黑盒进程的 Agent SDK，变成一个开源、轻量、可定制、适合云端部署的 SDK。\n\n如果你只是个人使用 Claude Code，可能感知不大。\n\n但如果你在做：\n\n- Agent 平台；\n- AI 编程助手；\n- 云端自动化工具；\n- 多用户 AI 开发服务；\n\n那这个项目值得关注。\n\n不过，正式商用前需要重点评估：\n\n- 法律合规；\n- 项目成熟度；\n- 兼容性；\n- 安全性；\n- 维护活跃度。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1777902497964,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:131df355de5b94bd316c2f942610a785d11a8a9cd42b6c7f20b86886c5e045fc",
+  "refs": {
+    "sessionId": "1777901718878_16fhd57i"
+  },
+  "revisionId": "sha256:ba947cd7c228564f38daa0a5f9ba1208fec4e99ea6c5eefa0b444c972e40097a",
+  "schemaVersion": 1,
+  "updatedAt": 1777902497964
+}

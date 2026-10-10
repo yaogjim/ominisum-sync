@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777284674163,
+  "entityType": "message",
+  "id": "1777284674162_dbw55p14",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude记忆系统三层搭建指南\n\n**评级**: B (69.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工具使用\n**次类别**: 知识管理, 个人生产力, LLM工作流\n**标签**: #Claude #AI记忆 #Obsidian #Notion #第二大脑 #提示词工程\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇实用性较强但证据支撑偏弱的 Claude 记忆系统搭建指南。\n**核心高价值点**: 将 AI 记忆从平台内置功能扩展为可迁移、可备份、可维护的 Markdown/Obsidian 文件系统。\n\n### 摘要\n文章介绍了三层 Claude 记忆增强方案：基础记忆设置、基于 Markdown 的本地上下文文件系统，以及结合 Notion 或 Obsidian 的 AI 第二大脑。内容偏实操，适合 Claude 高频用户优化长期上下文管理。\n\n### 知识要点\n- Claude 内置记忆需要定期清理、手动补充和纠错，否则容易积累无效上下文。\n- 通过 Instructions.md、Memory.md、Context.md 和 Archive-Guide.md 可构建可复用的本地上下文文件系统。\n- Notion 更适合快速连接任务、笔记和数据库，Obsidian 更适合本地化、长期化的 AI 第二大脑。\n- AI 记忆系统需要备份机制，避免模型误改或覆盖重要上下文。\n\n### 行动项\n- 检查并清理 Claude 设置中的 Memory 页面，删除过时或错误信息。\n- 为常用 Claude Projects 补充项目说明和关键上下文文档。\n- 创建 Claude Master Folder，并建立 Instructions.md、Memory.md、Context.md、Archive-Guide.md 四个文件。\n- 如已有 Obsidian 或 Notion 知识库，测试将其连接到 Claude 作为长期上下文源。\n\n### 存档判定\n归档: 是 — 原因: 包含可直接复用的 Claude 记忆管理分层方案，适合作为搭建个人 AI 工作流的参考。\n删除: 否\n留存决策: 短期参考后择优归档",
+    "role": "assistant",
+    "timestamp": 1777284674163,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:fc9118b5ded1a5aa3129bab98668cd7a0de26d2b0e843939a15625be8d802ad4",
+  "refs": {
+    "sessionId": "1777284223535_yj3wcu7b"
+  },
+  "revisionId": "sha256:ce38eac39b368c4ada38652e16d7221c77b5bc04df535d2a6ddb3f4e3d48a05c",
+  "schemaVersion": 1,
+  "updatedAt": 1777284674163
+}

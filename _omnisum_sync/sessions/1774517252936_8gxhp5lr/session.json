@@ -1,0 +1,78 @@
+{
+  "createdAt": 1774517252936,
+  "entityType": "session",
+  "id": "1774517252936_8gxhp5lr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据你的技术栈在OpenUI与json-render之间做一次小型POC，对比组件约束、流式渲染和接入成本。",
+      "将“按需加载技能/说明文档”的模式应用到你自己的AI Agent或Copilot系统提示设计中。",
+      "为现有AI产品梳理一套受控组件库与Schema，验证生成式UI能否替代部分固定页面或结果页。",
+      "重点复盘逆向Claude案例中的流式工具调用与DOM diff方案，评估是否适合终端、Web或桌面端集成。"
+    ],
+    "archiveReason": "内容覆盖生成式UI的主流开源框架、实现路径与设计模式，对后续AI产品设计和工程选型有持续参考价值。",
+    "classifiedAt": 1774522766084,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "生成式界面框架与范式综述",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "我是一名资深产品经理，对科技、ai、商业、产品、社会等有深刻理解。\n请对我提供的多个内容综合分析提炼，思考和推演对我在产品的实践上有哪些启发？以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "生成式UI的核心约束是组件目录、Schema和受控渲染，而不是自由生成HTML。",
+      "懒加载设计规范到模型上下文是一种高效的提示词架构，可减少基础上下文成本。",
+      "流式生成UI时，直接反复替换innerHTML体验很差，需依靠DOM diff实现平滑增量更新。",
+      "不同框架的主要差异在于中间表示格式、跨端支持能力、组件生态和流式渲染策略。"
+    ],
+    "oneHighValuePoint": "最有价值的是把Claude式生成式界面拆成“工具调用+按需加载设计规范+流式HTML渲染+DOM diff平滑更新”的可复用架构模式。",
+    "oneLineReview": "这是一篇高价值的生成式UI框架与实现路径综述，适合做技术选型和产品范式参考。",
+    "primaryCategory": "AI产品/生成式UI",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "开发框架对比",
+      "交互设计方法",
+      "工程实现案例"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://github.com/thesysdev/openui",
+      "https://github.com/vercel-labs/json-render",
+      "https://michaellivs.com/blog/reverse-engineering-claude-generative-ui/",
+      "https://github.com/CopilotKit/OpenGenerativeUI"
+    ],
+    "summaryBrief": "文章汇总了OpenUI、json-render、OpenGenerativeUI等生成式界面框架，并通过逆向Claude UI的案例拆解了流式渲染、工具调用、懒加载说明文档与DOM diff等关键实现机制，兼具产品视角与工程落地价值。",
+    "tags": [
+      "Generative UI",
+      "OpenUI",
+      "json-render",
+      "Claude",
+      "AI产品设计"
+    ],
+    "title": "生成式界面重构AI产品范式",
+    "totalScore": 75,
+    "url": "omnisun://digest/1774517252936"
+  },
+  "payloadHash": "sha256:41c47ea677b9df1001c8ed6aa667dc789a47b544568a8773683f07ef13492e70",
+  "refs": {},
+  "revisionId": "sha256:0b088e9e0652e395a65ccef8fc2f1ecb8d443aea30ded7a4c7dec1f4938e988b",
+  "schemaVersion": 1,
+  "updatedAt": 1774522766112
+}

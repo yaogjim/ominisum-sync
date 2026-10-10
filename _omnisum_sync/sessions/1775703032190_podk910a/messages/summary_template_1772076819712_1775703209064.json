@@ -1,0 +1,23 @@
+{
+  "createdAt": 1775703209064,
+  "entityType": "message",
+  "id": "summary_template_1772076819712_1775703209064",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 高价值总结\n\n- **Anthropic 真正在设计的，不只是一个 Agent 产品，而是一套 “Agent OS” 式基础设施。**\n  - 核心不是把今天最好用的 agent flow 固化下来，而是先定义**长期稳定的系统接口**，把易变的部分留给未来重写。\n\n- **最重要的判断：不要把 “暂时性的模型缺陷” 写进 “永久性的系统结构”。**\n  - 许多 Agent 框架喜欢把规划、拆步骤、固定 DAG、记忆策略等硬编码进去。\n  - 但这些往往只是对当前模型短板的 “补丁”，模型一变强，框架反而变成技术债。\n\n- **Anthropic 提出的不是固定 harness，而是`meta-harness`。**\n  - 它不承诺具体编排逻辑长期有效；\n  - 它只承诺几类稳定抽象：`session`、`harness`、`sandbox`。\n\n# 架构核心\n\n- **`session` = 可恢复的事件日志，不是上下文窗口。**\n  - 它不是聊天记录，也不是 prompt 镜像；\n  - 它应该是**append-only event log**：可查询、可回放、可恢复、可重组。\n  - 这意味着 “历史” 从模型上下文中解耦出来，成为真正的系统状态层。\n\n- **`harness` = 可替换的推理 / 调度层。**\n  - 不持有状态；\n  - 不绑定具体工具部署位置；\n  - 只暴露类似`execute (name, input) -> string`的稳定调用接口。\n  - 本质上，它更像 “脑干”，负责调度，不负责永久保存世界状态。\n\n- **`sandbox` = 具体执行环境，是 “手” 而不是 “脑”。**\n  - 执行环境可以独立存在、共享、替换、延迟启动；\n  - 不必跟 session 或 harness 强耦合；\n  - 这为后续的 “many brains, many hands” 打基础。\n\n# 反常识信息\n\n- **反常识 1：会话不是消息列表，而是 “执行事实流”。**\n  - 业界常把 session 理解为聊天历史；\n  - 这里更接近分布式系统里的**durable log**。\n  - 这比 “摘要记忆”“长上下文拼接” 高一个抽象层级。\n\n- **反常识 2：恢复能力不该建立在 prompt 里，而该建立在事件日志里。**\n  - `trimming`不等于历史消失；\n  - `compaction`不等于事实不可恢复；\n  - 恢复时可以重新取原始事件，而不是只能依赖摘要后的残片。\n\n- **反常识 3：安全不能建立在 “模型应该想不到” 上。**\n  - 传统思路：限制 token、缩小上下文、缩小权限范围；\n  - Anthropic 的判断是：这本质上仍然在赌模型能力不够强。\n  - 随着模型变强，这种安全假设会越来越脆弱。\n\n- **反常识 4：credentials 不应直接进入 sandbox。**\n  - 比如 Git token 不直接暴露给模型；\n  - 而是通过 MCP proxy /vault 等受控链路间接调用。\n  - 安全边界建立在系统架构上，而不是建立在模型 “看不懂、想不到、拿不到” 上。\n\n- **反常识 5：性能瓶颈可能不在推理，而在执行环境预耦合。**\n  - 文章数据里 TTFT 显著下降：\n    - p50 降约 60%\n    - p95 降超 90%\n  - 说明此前慢，未必是模型慢，而是请求一进来就预付了整个 sandbox / 容器成本。\n\n# 最值得记住的思想\n\n- **把 “上下文窗口” 看成执行现场，而不是永久记忆。**\n  - context window = 当前工作台\n  - session log = 证据仓库\n  - harness = 检索与重组器\n\n- **Agent 不应绑定某个执行壳，而应绑定 “可恢复状态 + 可调用能力”。**\n  - 这会让 Agent 更像 runtime substrate，而不是单一流程脚本。\n\n- **真正面向未来的设计，不是做出今天最强的 harness，而是避免今天的 harness 限制明天的模型。**\n  - 这是全文最有价值的产品哲学。\n\n# 作者的 3 点启发\n\n- **会话不是消息列表，而是执行事实流。**\n- **工具环境不要内化为 agent 自身。**\n- **上下文工程应被视为可替换策略，而非固定架构。**\n\n# 一句话结论\n\n- **Anthropic 押注的不是某种 Agent 编排技巧，而是：随着模型持续变强，Agent 系统最终会收敛为一组稳定抽象接口，像一个 “微型操作系统” 那样运行。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076819712",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "高价值",
+    "timestamp": 1775703209064,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bb742eb4a3a49e0200c8519cda70090be18b7a78982b75f2d663630026a40698",
+  "refs": {
+    "sessionId": "1775703032190_podk910a"
+  },
+  "revisionId": "sha256:8d2357abf9a6776bf36014a7d4bf51db7b607860bf606a9b9d87cffb61777abf",
+  "schemaVersion": 1,
+  "updatedAt": 1775703209064
+}

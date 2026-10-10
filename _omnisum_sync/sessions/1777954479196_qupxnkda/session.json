@@ -1,0 +1,138 @@
+{
+  "createdAt": 1777954479196,
+  "entityType": "session",
+  "id": "1777954479196_qupxnkda",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "仅在合法授权的私有测试环境中研究其架构设计，避免用于绕过平台规则或批量滥用。",
+      "如需借鉴，可重点查看任务调度、窗口池管理和 Playwright CDP 连接部分。",
+      "不要直接复用默认账号、默认 API Key 或涉及规避风控的实现。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780616274268,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "技术博客/开源项目文档",
+    "classifyTitle": "指纹浏览器自动化逆向框架",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1777954597515,
+        "imageId": "img-4",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# FPBrowser2API 项目总结：指纹浏览器驱动的 AI 生成自动化框架\n\n## 1. 项目定位\n\n**FPBrowser2API**是一个基于 “指纹浏览器 + 页面上下文执行” 的半自动化框架，用于研究 AI 视频、AI 图片生成网站的自动化调用流程。\n\n它不是传统的直接 HTTP API 脚本，而是通过真实浏览器环境模拟真人操作，再在页面内部执行请求、上传文件、轮询任务和读取结果。\n\n当前重点适配方向包括：\n\n- **Sora**\n- **VEO / Google Flow / Google Labs**\n- **Grok Imagine**\n- **Banana / GEM_PIX_2 图片生成**\n- **Dreamina / 即梦国际站 / Seedance2.0**\n\n项目声明仅供技术研究、学习验证和私有测试环境使用，不建议用于商业化、批量滥用或违反平台规则的场景。\n\n---\n\n## 2. 核心思路\n\n### 用指纹浏览器模拟真实用户环境\n\n项目依赖指纹浏览器来维护更接近真人访问的环境，包括：\n\n- 独立浏览器窗口\n- Cookie、LocalStorage\n- UA、代理、浏览器指纹\n- 已登录账号状态\n- 目标站点访问上下文\n\n用户可以先在指纹浏览器中手动完成登录、验证、订阅等准备，后端再通过 CDP 连接该窗口，复用真实会话完成自动化任务。\n\n### 在页面上下文中执行请求\n\n框架连接浏览器后，会在网页内部执行`fetch`、上传、轮询等操作。\n\n这样可以继承页面已有的：\n\n- 登录态\n- Cookie\n- Token\n- 浏览器指纹\n- 代理网络环境\n\n本质上是把 “浏览器里的人类会话” 包装成后端可调度的任务接口。\n\n---\n\n## 3. 系统架构\n\n### 指纹浏览器层\n\n当前主要适配**RoxyBrowser**。\n\n核心流程是：\n\n1. 在 RoxyBrowser 创建空间、项目和浏览器窗口  \n2. 配置代理、账号、目标站点登录态  \n3. 后台同步窗口信息  \n4. 任务类型绑定具体窗口  \n5. 任务调度服务选择可用窗口  \n6. Playwright 通过 CDP 连接真实浏览器  \n7. 执行器在页面上下文中完成具体任务\n\n### 后端调度层\n\n核心模块包括：\n\n- `fp_browser_client.py`：适配 RoxyBrowser API\n- `playwright_broswer_context.py`：Playwright/CDP 浏览器上下文\n- `task_service.py`：任务队列、窗口池、并发与额度调度\n- `sora_task_executor.py`：Sora 执行器\n- `veo_workflow_executor.py`：VEO / Flow 执行器\n- `grok_workflow_executor.py`：Grok 执行器\n- `jimeng_task_executor.py`：Dreamina / Seedance 研究方向\n\n---\n\n## 4. 任务与窗口池机制\n\n### 任务类型\n\n系统通过任务类型决定使用哪个执行器，例如：\n\n- `sora_gen_video`\n- `veo_workflow`\n- `grok_workflow`\n- `dreamina_workflow`\n\n每种任务类型可以绑定多个指纹浏览器窗口，从而支持多账号、多代理、多窗口并发。\n\n### 窗口调度\n\n`TaskService`会根据以下因素选择合适窗口：\n\n- 是否启用\n- 是否有剩余额度\n- 冷却时间\n- 错误次数\n- 并发槽位\n- 登录态是否正常\n\n窗口可预先打开并保持目标页面，减少任务启动延迟。\n\n---\n\n## 5. Sora 执行器能力\n\n`sora_task_executor.py`主要负责 Sora 相关自动化逻辑。\n\n### 主要能力\n\n- 获取登录态和 accessToken\n- 创建视频生成任务\n- 支持 prompt、首帧图、比例、时长等参数\n- 轮询生成进度\n- 从 drafts 中提取生成结果\n- 发布草稿并返回结果链接\n- 创建 Sora 角色\n- 查询额度、订阅、邀请码\n- 清理 drafts\n- 检测并处理 Cloudflare / Turnstile 挑战页\n\n### 产品视角理解\n\n它把 Sora 网页端能力抽象成了一个后端 API，可以让外部系统以任务形式提交生成需求，并自动完成等待、发布、结果提取。\n\n---\n\n## 6. VEO / Google Flow 执行器能力\n\n`veo_workflow_executor.py`面向 Google Labs / Flow / VEO 工作流。\n\n### 视频生成能力\n\n支持多种模式：\n\n- 文生视频 T2V\n- 图生视频 I2V\n- 首尾帧生成\n- 多图参考 Ingredients / R2V\n- 横版、竖版模型\n- 生成状态轮询\n- 任务失败重试\n\n### 图片生成能力\n\n当`n_frames = 1`时进入图片模式，支持：\n\n- 文生图\n- 图生图\n- 多图参考图生图\n- Banana / GEM_PIX_2 类图片模型\n- 2K 放大\n- OSS 存储大图结果\n\n### 辅助能力\n\n还包括：\n\n- Google 登录辅助\n- Access Token 获取与缓存\n- Flow 项目管理\n- 额度刷新\n- Cloudflare 挑战页检测与恢复\n\n---\n\n## 7. 管理后台与 API\n\n项目提供管理后台，用于配置和运维：\n\n- 系统配置\n- 项目管理\n- 任务类型管理\n- 任务列表\n- 测试页面\n- 请求日志\n- 用户管理\n- 浏览器窗口同步与管理\n\n对外 API 使用 Bearer Token 鉴权，支持：\n\n- 获取任务类型\n- 创建任务\n- 查询任务状态\n- 指定窗口执行任务\n\n从产品形态看，它更像是一个 “AI 生成任务中台”，把多个网页端 AI 工具统一封装为异步任务接口。\n\n---\n\n## 8. 项目价值\n\n### 技术价值\n\n该项目展示了一种通用的自动化研究范式：\n\n> 指纹浏览器真人环境 + 页面上下文请求 + 窗口池调度 + 执行器插件化\n\n这种方式理论上可扩展到更多复杂网站，尤其是没有公开 API、但网页端能力较完整的产品。\n\n### 产品价值\n\n如果放在合规测试环境中，它可以用于：\n\n- 多账号任务调度研究\n- AI 生成链路自动化验证\n- 视频 / 图片生成工作流封装\n- 前端站点接口逆向分析\n- 浏览器自动化稳定性研究\n\n### 风险与限制\n\n项目明确不保证稳定性，也不承诺绕过第三方风控的成功率。\n\n实际效果高度依赖：\n\n- 账号质量\n- 代理质量\n- 浏览器环境\n- 目标站点策略\n- 平台风控变化\n- 合规边界\n\n---\n\n## 9. 一句话总结\n\n**FPBrowser2API 是一个将指纹浏览器中的真实登录会话封装成后端任务 API 的自动化研究框架，重点用于 Sora、VEO、Grok、Seedance 等 AI 生成网站的任务提交、状态轮询和结果提取，但应严格限定在授权、研究和私有测试场景中使用。**",
+        "url": "https://private-user-images.githubusercontent.com/16873499/585968169-c619aab0-1198-40e3-a490-69a378842086.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc5NTQ3MzIsIm5iZiI6MTc3Nzk1NDQzMiwicGF0aCI6Ii8xNjg3MzQ5OS81ODU5NjgxNjktYzYxOWFhYjAtMTE5OC00MGUzLWE0OTAtNjlhMzc4ODQyMDg2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNTA1VDA0MTM1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZmOTkwMGIxODVmMTY0MGExMmUyNjA5MTg1YTcyYThiYzg0ODlmOTI5YTJjOTQ1MzU1ZGI5MmYzYjRjOTMzMzQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.bG7mmr1y7JOigxf53aRXKJLfemRbmVoFcSFZHdkPUU8",
+        "visualFacts": []
+      },
+      {
+        "analyzedAt": 1777954597515,
+        "imageId": "img-5",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# FPBrowser2API 项目总结：指纹浏览器驱动的 AI 生成自动化框架\n\n## 1. 项目定位\n\n**FPBrowser2API**是一个基于 “指纹浏览器 + 页面上下文执行” 的半自动化框架，用于研究 AI 视频、AI 图片生成网站的自动化调用流程。\n\n它不是传统的直接 HTTP API 脚本，而是通过真实浏览器环境模拟真人操作，再在页面内部执行请求、上传文件、轮询任务和读取结果。\n\n当前重点适配方向包括：\n\n- **Sora**\n- **VEO / Google Flow / Google Labs**\n- **Grok Imagine**\n- **Banana / GEM_PIX_2 图片生成**\n- **Dreamina / 即梦国际站 / Seedance2.0**\n\n项目声明仅供技术研究、学习验证和私有测试环境使用，不建议用于商业化、批量滥用或违反平台规则的场景。\n\n---\n\n## 2. 核心思路\n\n### 用指纹浏览器模拟真实用户环境\n\n项目依赖指纹浏览器来维护更接近真人访问的环境，包括：\n\n- 独立浏览器窗口\n- Cookie、LocalStorage\n- UA、代理、浏览器指纹\n- 已登录账号状态\n- 目标站点访问上下文\n\n用户可以先在指纹浏览器中手动完成登录、验证、订阅等准备，后端再通过 CDP 连接该窗口，复用真实会话完成自动化任务。\n\n### 在页面上下文中执行请求\n\n框架连接浏览器后，会在网页内部执行`fetch`、上传、轮询等操作。\n\n这样可以继承页面已有的：\n\n- 登录态\n- Cookie\n- Token\n- 浏览器指纹\n- 代理网络环境\n\n本质上是把 “浏览器里的人类会话” 包装成后端可调度的任务接口。\n\n---\n\n## 3. 系统架构\n\n### 指纹浏览器层\n\n当前主要适配**RoxyBrowser**。\n\n核心流程是：\n\n1. 在 RoxyBrowser 创建空间、项目和浏览器窗口  \n2. 配置代理、账号、目标站点登录态  \n3. 后台同步窗口信息  \n4. 任务类型绑定具体窗口  \n5. 任务调度服务选择可用窗口  \n6. Playwright 通过 CDP 连接真实浏览器  \n7. 执行器在页面上下文中完成具体任务\n\n### 后端调度层\n\n核心模块包括：\n\n- `fp_browser_client.py`：适配 RoxyBrowser API\n- `playwright_broswer_context.py`：Playwright/CDP 浏览器上下文\n- `task_service.py`：任务队列、窗口池、并发与额度调度\n- `sora_task_executor.py`：Sora 执行器\n- `veo_workflow_executor.py`：VEO / Flow 执行器\n- `grok_workflow_executor.py`：Grok 执行器\n- `jimeng_task_executor.py`：Dreamina / Seedance 研究方向\n\n---\n\n## 4. 任务与窗口池机制\n\n### 任务类型\n\n系统通过任务类型决定使用哪个执行器，例如：\n\n- `sora_gen_video`\n- `veo_workflow`\n- `grok_workflow`\n- `dreamina_workflow`\n\n每种任务类型可以绑定多个指纹浏览器窗口，从而支持多账号、多代理、多窗口并发。\n\n### 窗口调度\n\n`TaskService`会根据以下因素选择合适窗口：\n\n- 是否启用\n- 是否有剩余额度\n- 冷却时间\n- 错误次数\n- 并发槽位\n- 登录态是否正常\n\n窗口可预先打开并保持目标页面，减少任务启动延迟。\n\n---\n\n## 5. Sora 执行器能力\n\n`sora_task_executor.py`主要负责 Sora 相关自动化逻辑。\n\n### 主要能力\n\n- 获取登录态和 accessToken\n- 创建视频生成任务\n- 支持 prompt、首帧图、比例、时长等参数\n- 轮询生成进度\n- 从 drafts 中提取生成结果\n- 发布草稿并返回结果链接\n- 创建 Sora 角色\n- 查询额度、订阅、邀请码\n- 清理 drafts\n- 检测并处理 Cloudflare / Turnstile 挑战页\n\n### 产品视角理解\n\n它把 Sora 网页端能力抽象成了一个后端 API，可以让外部系统以任务形式提交生成需求，并自动完成等待、发布、结果提取。\n\n---\n\n## 6. VEO / Google Flow 执行器能力\n\n`veo_workflow_executor.py`面向 Google Labs / Flow / VEO 工作流。\n\n### 视频生成能力\n\n支持多种模式：\n\n- 文生视频 T2V\n- 图生视频 I2V\n- 首尾帧生成\n- 多图参考 Ingredients / R2V\n- 横版、竖版模型\n- 生成状态轮询\n- 任务失败重试\n\n### 图片生成能力\n\n当`n_frames = 1`时进入图片模式，支持：\n\n- 文生图\n- 图生图\n- 多图参考图生图\n- Banana / GEM_PIX_2 类图片模型\n- 2K 放大\n- OSS 存储大图结果\n\n### 辅助能力\n\n还包括：\n\n- Google 登录辅助\n- Access Token 获取与缓存\n- Flow 项目管理\n- 额度刷新\n- Cloudflare 挑战页检测与恢复\n\n---\n\n## 7. 管理后台与 API\n\n项目提供管理后台，用于配置和运维：\n\n- 系统配置\n- 项目管理\n- 任务类型管理\n- 任务列表\n- 测试页面\n- 请求日志\n- 用户管理\n- 浏览器窗口同步与管理\n\n对外 API 使用 Bearer Token 鉴权，支持：\n\n- 获取任务类型\n- 创建任务\n- 查询任务状态\n- 指定窗口执行任务\n\n从产品形态看，它更像是一个 “AI 生成任务中台”，把多个网页端 AI 工具统一封装为异步任务接口。\n\n---\n\n## 8. 项目价值\n\n### 技术价值\n\n该项目展示了一种通用的自动化研究范式：\n\n> 指纹浏览器真人环境 + 页面上下文请求 + 窗口池调度 + 执行器插件化\n\n这种方式理论上可扩展到更多复杂网站，尤其是没有公开 API、但网页端能力较完整的产品。\n\n### 产品价值\n\n如果放在合规测试环境中，它可以用于：\n\n- 多账号任务调度研究\n- AI 生成链路自动化验证\n- 视频 / 图片生成工作流封装\n- 前端站点接口逆向分析\n- 浏览器自动化稳定性研究\n\n### 风险与限制\n\n项目明确不保证稳定性，也不承诺绕过第三方风控的成功率。\n\n实际效果高度依赖：\n\n- 账号质量\n- 代理质量\n- 浏览器环境\n- 目标站点策略\n- 平台风控变化\n- 合规边界\n\n---\n\n## 9. 一句话总结\n\n**FPBrowser2API 是一个将指纹浏览器中的真实登录会话封装成后端任务 API 的自动化研究框架，重点用于 Sora、VEO、Grok、Seedance 等 AI 生成网站的任务提交、状态轮询和结果提取，但应严格限定在授权、研究和私有测试场景中使用。**",
+        "url": "https://private-user-images.githubusercontent.com/16873499/585968218-467b9021-ad71-400c-94fe-b24ceed925bc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc5NTQ3MzIsIm5iZiI6MTc3Nzk1NDQzMiwicGF0aCI6Ii8xNjg3MzQ5OS81ODU5NjgyMTgtNDY3YjkwMjEtYWQ3MS00MDBjLTk0ZmUtYjI0Y2VlZDkyNWJjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNTA1VDA0MTM1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU5ODU3MzZkODQ2NWMxNGJiNmNlNTg0OTc2YjllODk1OWYyNDAwMTQyNTQ4YjY0MTdlZTQzOTU4Y2M1ZmFjNmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.KEvRJjrorsfvG7SZhEaDeAM0QUkJEaQAg23I78n0msU",
+        "visualFacts": []
+      },
+      {
+        "analyzedAt": 1777954597515,
+        "imageId": "img-6",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# FPBrowser2API 项目总结：指纹浏览器驱动的 AI 生成自动化框架\n\n## 1. 项目定位\n\n**FPBrowser2API**是一个基于 “指纹浏览器 + 页面上下文执行” 的半自动化框架，用于研究 AI 视频、AI 图片生成网站的自动化调用流程。\n\n它不是传统的直接 HTTP API 脚本，而是通过真实浏览器环境模拟真人操作，再在页面内部执行请求、上传文件、轮询任务和读取结果。\n\n当前重点适配方向包括：\n\n- **Sora**\n- **VEO / Google Flow / Google Labs**\n- **Grok Imagine**\n- **Banana / GEM_PIX_2 图片生成**\n- **Dreamina / 即梦国际站 / Seedance2.0**\n\n项目声明仅供技术研究、学习验证和私有测试环境使用，不建议用于商业化、批量滥用或违反平台规则的场景。\n\n---\n\n## 2. 核心思路\n\n### 用指纹浏览器模拟真实用户环境\n\n项目依赖指纹浏览器来维护更接近真人访问的环境，包括：\n\n- 独立浏览器窗口\n- Cookie、LocalStorage\n- UA、代理、浏览器指纹\n- 已登录账号状态\n- 目标站点访问上下文\n\n用户可以先在指纹浏览器中手动完成登录、验证、订阅等准备，后端再通过 CDP 连接该窗口，复用真实会话完成自动化任务。\n\n### 在页面上下文中执行请求\n\n框架连接浏览器后，会在网页内部执行`fetch`、上传、轮询等操作。\n\n这样可以继承页面已有的：\n\n- 登录态\n- Cookie\n- Token\n- 浏览器指纹\n- 代理网络环境\n\n本质上是把 “浏览器里的人类会话” 包装成后端可调度的任务接口。\n\n---\n\n## 3. 系统架构\n\n### 指纹浏览器层\n\n当前主要适配**RoxyBrowser**。\n\n核心流程是：\n\n1. 在 RoxyBrowser 创建空间、项目和浏览器窗口  \n2. 配置代理、账号、目标站点登录态  \n3. 后台同步窗口信息  \n4. 任务类型绑定具体窗口  \n5. 任务调度服务选择可用窗口  \n6. Playwright 通过 CDP 连接真实浏览器  \n7. 执行器在页面上下文中完成具体任务\n\n### 后端调度层\n\n核心模块包括：\n\n- `fp_browser_client.py`：适配 RoxyBrowser API\n- `playwright_broswer_context.py`：Playwright/CDP 浏览器上下文\n- `task_service.py`：任务队列、窗口池、并发与额度调度\n- `sora_task_executor.py`：Sora 执行器\n- `veo_workflow_executor.py`：VEO / Flow 执行器\n- `grok_workflow_executor.py`：Grok 执行器\n- `jimeng_task_executor.py`：Dreamina / Seedance 研究方向\n\n---\n\n## 4. 任务与窗口池机制\n\n### 任务类型\n\n系统通过任务类型决定使用哪个执行器，例如：\n\n- `sora_gen_video`\n- `veo_workflow`\n- `grok_workflow`\n- `dreamina_workflow`\n\n每种任务类型可以绑定多个指纹浏览器窗口，从而支持多账号、多代理、多窗口并发。\n\n### 窗口调度\n\n`TaskService`会根据以下因素选择合适窗口：\n\n- 是否启用\n- 是否有剩余额度\n- 冷却时间\n- 错误次数\n- 并发槽位\n- 登录态是否正常\n\n窗口可预先打开并保持目标页面，减少任务启动延迟。\n\n---\n\n## 5. Sora 执行器能力\n\n`sora_task_executor.py`主要负责 Sora 相关自动化逻辑。\n\n### 主要能力\n\n- 获取登录态和 accessToken\n- 创建视频生成任务\n- 支持 prompt、首帧图、比例、时长等参数\n- 轮询生成进度\n- 从 drafts 中提取生成结果\n- 发布草稿并返回结果链接\n- 创建 Sora 角色\n- 查询额度、订阅、邀请码\n- 清理 drafts\n- 检测并处理 Cloudflare / Turnstile 挑战页\n\n### 产品视角理解\n\n它把 Sora 网页端能力抽象成了一个后端 API，可以让外部系统以任务形式提交生成需求，并自动完成等待、发布、结果提取。\n\n---\n\n## 6. VEO / Google Flow 执行器能力\n\n`veo_workflow_executor.py`面向 Google Labs / Flow / VEO 工作流。\n\n### 视频生成能力\n\n支持多种模式：\n\n- 文生视频 T2V\n- 图生视频 I2V\n- 首尾帧生成\n- 多图参考 Ingredients / R2V\n- 横版、竖版模型\n- 生成状态轮询\n- 任务失败重试\n\n### 图片生成能力\n\n当`n_frames = 1`时进入图片模式，支持：\n\n- 文生图\n- 图生图\n- 多图参考图生图\n- Banana / GEM_PIX_2 类图片模型\n- 2K 放大\n- OSS 存储大图结果\n\n### 辅助能力\n\n还包括：\n\n- Google 登录辅助\n- Access Token 获取与缓存\n- Flow 项目管理\n- 额度刷新\n- Cloudflare 挑战页检测与恢复\n\n---\n\n## 7. 管理后台与 API\n\n项目提供管理后台，用于配置和运维：\n\n- 系统配置\n- 项目管理\n- 任务类型管理\n- 任务列表\n- 测试页面\n- 请求日志\n- 用户管理\n- 浏览器窗口同步与管理\n\n对外 API 使用 Bearer Token 鉴权，支持：\n\n- 获取任务类型\n- 创建任务\n- 查询任务状态\n- 指定窗口执行任务\n\n从产品形态看，它更像是一个 “AI 生成任务中台”，把多个网页端 AI 工具统一封装为异步任务接口。\n\n---\n\n## 8. 项目价值\n\n### 技术价值\n\n该项目展示了一种通用的自动化研究范式：\n\n> 指纹浏览器真人环境 + 页面上下文请求 + 窗口池调度 + 执行器插件化\n\n这种方式理论上可扩展到更多复杂网站，尤其是没有公开 API、但网页端能力较完整的产品。\n\n### 产品价值\n\n如果放在合规测试环境中，它可以用于：\n\n- 多账号任务调度研究\n- AI 生成链路自动化验证\n- 视频 / 图片生成工作流封装\n- 前端站点接口逆向分析\n- 浏览器自动化稳定性研究\n\n### 风险与限制\n\n项目明确不保证稳定性，也不承诺绕过第三方风控的成功率。\n\n实际效果高度依赖：\n\n- 账号质量\n- 代理质量\n- 浏览器环境\n- 目标站点策略\n- 平台风控变化\n- 合规边界\n\n---\n\n## 9. 一句话总结\n\n**FPBrowser2API 是一个将指纹浏览器中的真实登录会话封装成后端任务 API 的自动化研究框架，重点用于 Sora、VEO、Grok、Seedance 等 AI 生成网站的任务提交、状态轮询和结果提取，但应严格限定在授权、研究和私有测试场景中使用。**",
+        "url": "https://private-user-images.githubusercontent.com/16873499/585968279-34238cc6-66c0-41eb-97b0-405014ea467c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc5NTQ3MzIsIm5iZiI6MTc3Nzk1NDQzMiwicGF0aCI6Ii8xNjg3MzQ5OS81ODU5NjgyNzktMzQyMzhjYzYtNjZjMC00MWViLTk3YjAtNDA1MDE0ZWE0NjdjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNTA1VDA0MTM1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI2OWUwMjVkODk3NTk3NzRjMGQ3MDI0ZjczYTU5MmE4Mjk0NmU3M2RmNjVlOTM1ZWRhOGM3MWNiYmJmOWU2OTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.0uUg05UPPvimj_4ng55nf4UaCbvA6_MMkMorCgJxNbU",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "ScreenShot_2026-04-30_185608_912",
+        "caption": "",
+        "height": 857,
+        "id": "img-4",
+        "nearbyText": "FPBrowser2API：指纹浏览器驱动的半自动化 AI 生成框架 项目主题：利用指纹浏览器半自动化模拟真人环境 + 逆向注入/页面上下文代码执行，实现高并发自动化 AI 视频 & AI 图片生成。当前框架已围绕 Sora、veo3.1 / VEO/Google Flow、Grok、banana2/pro、Seedance2.0 国际站等方向设计；理论上可扩展到任意网站的自动化与接口逆向研究，并内置 Cloudflare/claudeflare 验证页检测、等待、自愈重启与...",
+        "resolvedUrl": "https://private-user-images.githubusercontent.com/16873499/585968169-c619aab0-1198-40e3-a490-69a378842086.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc5NTQ3MzIsIm5iZiI6MTc3Nzk1NDQzMiwicGF0aCI6Ii8xNjg3MzQ5OS81ODU5NjgxNjktYzYxOWFhYjAtMTE5OC00MGUzLWE0OTAtNjlhMzc4ODQyMDg2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNTA1VDA0MTM1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZmOTkwMGIxODVmMTY0MGExMmUyNjA5MTg1YTcyYThiYzg0ODlmOTI5YTJjOTQ1MzU1ZGI5MmYzYjRjOTMzMzQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.bG7mmr1y7JOigxf53aRXKJLfemRbmVoFcSFZHdkPUU8",
+        "role": "article",
+        "score": 73,
+        "src": "https://private-user-images.githubusercontent.com/16873499/585968169-c619aab0-1198-40e3-a490-69a378842086.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc5NTQ3MzIsIm5iZiI6MTc3Nzk1NDQzMiwicGF0aCI6Ii8xNjg3MzQ5OS81ODU5NjgxNjktYzYxOWFhYjAtMTE5OC00MGUzLWE0OTAtNjlhMzc4ODQyMDg2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNTA1VDA0MTM1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTZmOTkwMGIxODVmMTY0MGExMmUyNjA5MTg1YTcyYThiYzg0ODlmOTI5YTJjOTQ1MzU1ZGI5MmYzYjRjOTMzMzQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.bG7mmr1y7JOigxf53aRXKJLfemRbmVoFcSFZHdkPUU8",
+        "width": 1920
+      },
+      {
+        "alt": "ScreenShot_2026-04-30_185628_966",
+        "caption": "",
+        "height": 883,
+        "id": "img-5",
+        "nearbyText": "FPBrowser2API：指纹浏览器驱动的半自动化 AI 生成框架 项目主题：利用指纹浏览器半自动化模拟真人环境 + 逆向注入/页面上下文代码执行，实现高并发自动化 AI 视频 & AI 图片生成。当前框架已围绕 Sora、veo3.1 / VEO/Google Flow、Grok、banana2/pro、Seedance2.0 国际站等方向设计；理论上可扩展到任意网站的自动化与接口逆向研究，并内置 Cloudflare/claudeflare 验证页检测、等待、自愈重启与...",
+        "resolvedUrl": "https://private-user-images.githubusercontent.com/16873499/585968218-467b9021-ad71-400c-94fe-b24ceed925bc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc5NTQ3MzIsIm5iZiI6MTc3Nzk1NDQzMiwicGF0aCI6Ii8xNjg3MzQ5OS81ODU5NjgyMTgtNDY3YjkwMjEtYWQ3MS00MDBjLTk0ZmUtYjI0Y2VlZDkyNWJjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNTA1VDA0MTM1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU5ODU3MzZkODQ2NWMxNGJiNmNlNTg0OTc2YjllODk1OWYyNDAwMTQyNTQ4YjY0MTdlZTQzOTU4Y2M1ZmFjNmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.KEvRJjrorsfvG7SZhEaDeAM0QUkJEaQAg23I78n0msU",
+        "role": "article",
+        "score": 73,
+        "src": "https://private-user-images.githubusercontent.com/16873499/585968218-467b9021-ad71-400c-94fe-b24ceed925bc.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc5NTQ3MzIsIm5iZiI6MTc3Nzk1NDQzMiwicGF0aCI6Ii8xNjg3MzQ5OS81ODU5NjgyMTgtNDY3YjkwMjEtYWQ3MS00MDBjLTk0ZmUtYjI0Y2VlZDkyNWJjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNTA1VDA0MTM1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU5ODU3MzZkODQ2NWMxNGJiNmNlNTg0OTc2YjllODk1OWYyNDAwMTQyNTQ4YjY0MTdlZTQzOTU4Y2M1ZmFjNmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.KEvRJjrorsfvG7SZhEaDeAM0QUkJEaQAg23I78n0msU",
+        "width": 1910
+      },
+      {
+        "alt": "ScreenShot_2026-04-30_185638_945",
+        "caption": "",
+        "height": 914,
+        "id": "img-6",
+        "nearbyText": "FPBrowser2API：指纹浏览器驱动的半自动化 AI 生成框架 项目主题：利用指纹浏览器半自动化模拟真人环境 + 逆向注入/页面上下文代码执行，实现高并发自动化 AI 视频 & AI 图片生成。当前框架已围绕 Sora、veo3.1 / VEO/Google Flow、Grok、banana2/pro、Seedance2.0 国际站等方向设计；理论上可扩展到任意网站的自动化与接口逆向研究，并内置 Cloudflare/claudeflare 验证页检测、等待、自愈重启与...",
+        "resolvedUrl": "https://private-user-images.githubusercontent.com/16873499/585968279-34238cc6-66c0-41eb-97b0-405014ea467c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc5NTQ3MzIsIm5iZiI6MTc3Nzk1NDQzMiwicGF0aCI6Ii8xNjg3MzQ5OS81ODU5NjgyNzktMzQyMzhjYzYtNjZjMC00MWViLTk3YjAtNDA1MDE0ZWE0NjdjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNTA1VDA0MTM1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI2OWUwMjVkODk3NTk3NzRjMGQ3MDI0ZjczYTU5MmE4Mjk0NmU3M2RmNjVlOTM1ZWRhOGM3MWNiYmJmOWU2OTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.0uUg05UPPvimj_4ng55nf4UaCbvA6_MMkMorCgJxNbU",
+        "role": "article",
+        "score": 73,
+        "src": "https://private-user-images.githubusercontent.com/16873499/585968279-34238cc6-66c0-41eb-97b0-405014ea467c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Nzc5NTQ3MzIsIm5iZiI6MTc3Nzk1NDQzMiwicGF0aCI6Ii8xNjg3MzQ5OS81ODU5NjgyNzktMzQyMzhjYzYtNjZjMC00MWViLTk3YjAtNDA1MDE0ZWE0NjdjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNTA1VDA0MTM1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI2OWUwMjVkODk3NTk3NzRjMGQ3MDI0ZjczYTU5MmE4Mjk0NmU3M2RmNjVlOTM1ZWRhOGM3MWNiYmJmOWU2OTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.0uUg05UPPvimj_4ng55nf4UaCbvA6_MMkMorCgJxNbU",
+        "width": 1919
+      }
+    ],
+    "knowledgePoints": [
+      "指纹浏览器可用于隔离 Cookie、LocalStorage、UA、代理和浏览器指纹，并通过 CDP 暴露给 Playwright 连接。",
+      "任务调度层可按窗口状态、额度、冷却时间、错误次数和并发槽位选择可用账号窗口。",
+      "页面上下文 fetch 能继承真实浏览器环境中的登录态和请求上下文，用于站点接口自动化。",
+      "项目采用执行器插件化方式区分 Sora、VEO、Grok、Dreamina 等不同站点流程。"
+    ],
+    "oneHighValuePoint": "通过“指纹浏览器登录态 + CDP 连接 + 页面上下文执行 + 任务调度窗口池”实现站点自动化的整体架构思路。",
+    "oneLineReview": "信息量尚可但合规风险较高，更适合作为技术架构速览而非长期知识资产。",
+    "primaryCategory": "自动化与逆向工程",
+    "rating": "C",
+    "rejectReason": "内容偏项目宣传和功能罗列，缺少实现细节、实验数据与可靠案例，且涉及绕过风控和批量自动化的高合规风险。",
+    "retentionDecision": "短期参考后可删除",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI生成工具",
+      "浏览器自动化"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个基于指纹浏览器、Playwright/CDP 和页面上下文 fetch 的自动化框架，用于 Sora、VEO、Grok、Seedance 等 AI 生成站点的任务提交、轮询、结果获取和窗口池管理。",
+    "tags": [
+      "指纹浏览器",
+      "Playwright",
+      "CDP",
+      "Sora",
+      "VEO",
+      "Cloudflare"
+    ],
+    "title": "lakysir/fpbrowser2api: fpbrowser2api逆向研究群-sora2/grok/veo/seedance2.0，QQ群：1035463132",
+    "totalScore": 48.5,
+    "url": "https://github.com/lakysir/fpbrowser2api"
+  },
+  "payloadHash": "sha256:d7d3d13666cb86a979c42a4e9a3b1afc8e5a7deed921d98838a9b8f5c448a6ad",
+  "refs": {},
+  "revisionId": "sha256:6229a8a8d115020df8102ff63d1da7d8fdb21d640a3f604d309171dfae96cb21",
+  "schemaVersion": 1,
+  "updatedAt": 1780616276210
+}

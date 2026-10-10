@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780452973551,
+  "entityType": "message",
+  "id": "1780453199754_ef925a5a",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章分享了作者将 **“人控制主 Codex、主 Codex 调度子 Codex”** 的工作流终于稳定跑通：通过 `tmux` 让一个主控 AI 持续观察、派发、纠偏和验收多个子 AI 的任务执行，从而实现更长时间、更稳定的自动化编程协作。\n\n---\n\n## 1. 核心工作流：人 → 主 Codex → 子 Codex\n\n作者搭建了一套分层控制模式：\n\n- **人负责控制主 Codex**\n- **主 Codex 负责控制子 Codex**\n- 子 Codex 执行具体任务，主 Codex 进行监控和调度\n\n具体实现方式是：\n\n- 主 Codex 通过 `tmux capture-pane` 观察 worker Codex 的终端状态\n- 再通过 `send-keys` / `paste` 给 worker Codex 下发任务包\n- 在 `/goal` 模式下持续监控执行过程\n- 如果发现卡住或偏离目标，主 Codex 会进行纠偏\n- 任务完成后，主 Codex 负责验收结果\n\n---\n\n## 2. 主 Codex 的能力：从“执行者”变成“调度者”\n\n作者总结了主 Codex 当前已经具备的能力：\n\n- **能观察状态**：查看子 Codex 当前在做什么\n- **能派发任务**：给不同 worker 下发具体任务\n- **能检查是否卡住**：判断任务是否停滞或出错\n- **能持续推进**：不是一次性 prompt，而是持续调度\n- **能验收结果**：任务结束后检查产出是否符合目标\n\n这意味着 Codex 不只是单次回答问题，而可以像一个“项目经理”一样，管理多个执行中的 coding agent。\n\n---\n\n## 3. 价值：任务可以长时间持续运行\n\n热门回复中，作者进一步说明：\n\n- 配合内部编排工具和资产后，一个任务可以持续运行很久\n- 不再依赖“一次性 prompt 赌结果”\n- 通过持续观察、调度和纠偏，可以提高复杂任务完成的稳定性\n\n简单理解：以前是“给 AI 一句话，等它一次性给结果”；现在更像是“让 AI 持续干活，中途有人/主控 AI 监督和调整”。\n\n---\n\n## 4. 可扩展性：tmux 可控制其他命令行 Coding Agent\n\n作者还提到，这套方式不只适用于 Codex：\n\n- 使用 `tmux` 也能控制其他命令行 coding agent\n- 例如可以调度 `cc` 等工具\n- 主控可以自动读取其他 `tmux` 窗口里的上下文历史\n- 不需要人工滚屏、复制终端内容\n\n这让多个命令行 AI 工具之间的自动化协作成为可能。\n\n---\n\n## 5. 相关资源与社区反馈\n\n作者表示相关工具已放在回复中，包括：\n\n- Google Sheets 中的内部编排工具或资产链接\n- GitHub 项目：`tradecatlabs/vibe-coding-cn`\n- 其中包含 `skills/auto-tmux` 相关内容\n\n社区反馈中，有人表示这套方案“很牛”，并希望未来能做成 **App 插件**，进一步降低使用门槛。\n\n---\n\n## 总结\n\n这篇内容的重点是：作者通过 `tmux` 打通了一个稳定的多 Agent 编程协作流程，让主 Codex 能够监控和调度多个子 Codex，从而让复杂任务可以持续执行、动态纠偏并最终验收结果。其意义在于把 AI 编程从“单次生成”推进到“持续自动化协作”。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780452973551,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0761a45e076fe1d140d9af6b268c28f6a3830c516499322c4112bfc968e73e27",
+  "refs": {
+    "sessionId": "1780449087827_j68x7wva"
+  },
+  "revisionId": "sha256:2f6c96e7fc3c2374a25928759a9a3c974a630a5dea2413b3cac7d57b745d00ef",
+  "schemaVersion": 1,
+  "updatedAt": 1780452973551
+}

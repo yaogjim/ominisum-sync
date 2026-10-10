@@ -1,0 +1,20 @@
+{
+  "createdAt": 1775114897838,
+  "entityType": "message",
+  "id": "msg_1775114897838_ta1kw84ts",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "使用`omc`可以分成 3 步：安装、初始化、开始下任务。\n\n**快速开始**\n- 安装插件：\n```bash\n/plugin marketplace add https://github.com/Yeachan-Heo/oh-my-claudecode\n/plugin install oh-my-claudecode\n```\n- 初始化配置：\n```bash\n/omc-setup\n```\n- 直接开始做事：\n```bash\nautopilot: build a REST API for managing tasks\n```\n\n**最常用的几种用法**\n- `autopilot`：全自动执行，适合 “直接帮我做”\n```bash\nautopilot: build a todo app\n```\n- `team`：推荐模式，适合规范地拆分规划、执行、验证\n```bash\n/team 3:executor \"fix all TypeScript errors\"\n```\n- `deep-interview`：需求还不清楚时先澄清\n```bash\n/deep-interview \"I want to build a task management app\"\n```\n- `plan`：先让它帮你规划\n```bash\nplan the API\n```\n- `ralph`：持久模式，适合 “必须做完”\n```bash\nralph: refactor auth\n```\n- `ulw`：最大并行，适合批量修复\n```bash\nulw fix all errors\n```\n\n**如果你想用 Codex / Gemini 一起协作**\n- 用`omc-teams`在`tmux`里启动真实 CLI 工作者：\n```bash\n/omc-teams 2:codex \"review auth module for security issues\"\n/omc-teams 2:gemini \"redesign UI components for accessibility\"\n/omc-teams 1:claude \"implement the payment flow\"\n```\n- 一个命令同时用 Codex + Gemini：\n```bash\n/ccg Review this PR — architecture (Codex) and UI components (Gemini)\n```\n\n**推荐你这样理解**\n- 不知道怎么开始：用`deep-interview`\n- 已经知道要做什么：用`autopilot`\n- 想按流程稳一点：用`team`\n- 想让它一定完成：用`ralph`\n- 想多模型一起看：用`omc-teams`或`ccg`\n\n**使用前最好确认**\n- 如果要用 Team，建议在`~/.claude/settings.json`开启：\n```json\n{\n  \"env\": {\n    \"CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS\": \"1\"\n  }\n}\n```\n- 如果要用`omc-teams`：\n  - 需要有活跃的`tmux`\n  - 需要安装对应 CLI，比如`codex`或`gemini`\n\n**更新 OMC**\n```bash\n/plugin marketplace update omc\n/omc-setup\n```\n- 如果更新后异常，可运行：\n```bash\n/omc-doctor\n```\n\n**一个最简单的上手流程**\n1. 运行`/omc-setup`\n2. 先试：\n```bash\n/deep-interview \"我想做一个任务管理系统\"\n```\n3. 明确需求后再执行：\n```bash\nautopilot: build a task management app\n```\n\n如果你愿意，我可以下一步直接给你一份 “`omc`常用命令速查表”，或者按你的场景推荐该用`autopilot`、`team`、`ralph`里的哪一个。",
+    "finish_reason": "stop",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1775114897838
+  },
+  "payloadHash": "sha256:87c7fbefa4ffadb2f75ec2dd48ac293257fbe72542953182f0b9f7db86abf2b8",
+  "refs": {
+    "sessionId": "1775035779427_o5k1h5sl"
+  },
+  "revisionId": "sha256:bdbb1553359343cf7d8016587e7815097a5f70fb96fa5f7e9a543e6703718b47",
+  "schemaVersion": 1,
+  "updatedAt": 1775114897838
+}

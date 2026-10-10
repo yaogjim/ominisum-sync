@@ -1,0 +1,73 @@
+{
+  "createdAt": 1773551995041,
+  "entityType": "session",
+  "id": "1773551995041_ptv6mt8e",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查当前代码库是否具备可机读的架构文档、Lint 规则和可解析测试反馈",
+      "为 Agent 工作流设计外部状态协议，如决策日志、长期记忆文档和状态同步文件"
+    ],
+    "archiveReason": "文章提出了将 Agentic Coding 视为反馈控制系统的框架，并结合软件工程规范化给出较强的解释力",
+    "classifiedAt": 1773829826568,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agentic Coding与控制论转向",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "请综合我提供的多个内容，进行跨文档深度总结整理，再深入浅出解读。",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "Harness Engineering 可视为控制论式闭环：设定目标、观测偏差、自动纠偏",
+      "Agent 效果高度依赖文档、测试、Lint、架构约束等可机读规范",
+      "模型记忆不稳定，长期知识应通过外部协议和持久化文档承载",
+      "生成比验证更难，未来工程师优势更可能体现在定义标准与评估输出"
+    ],
+    "oneHighValuePoint": "最有价值的点是把 Agent 的稳定性问题从“提示词技巧”转向“可机读的协议、约束和反馈回路设计”来理解。",
+    "oneLineReview": "概念框架很强、启发性高，但证据和实操细节仍不足以支撑更高评级。",
+    "primaryCategory": "AI工程方法论",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "可归档保留，适合作为理解 Agent 工程化方向的中期参考",
+    "secondaryCategories": [
+      "软件工程",
+      "Agent系统设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/tison1096/status/2032341840599421126",
+      "https://x.com/odysseus0z/status/2030416758138634583"
+    ],
+    "summaryBrief": "文章将 Harness Engineering 解释为控制论在软件工程中的再现，核心观点是 LLM 不是替代软件工程，而是放大了文档、测试、架构约束和反馈回路的重要性。补充讨论也指出当前模型记忆差、难稳定校准，协议层外化知识比 prompt 更可靠。",
+    "tags": [
+      "Agentic Coding",
+      "控制论",
+      "Harness Engineering",
+      "软件工程",
+      "反馈回路"
+    ],
+    "title": "Agentic Coding 的本质从软件工程到控制论的工程化转变",
+    "totalScore": 63.5,
+    "url": "omnisun://digest/1773551995040"
+  },
+  "payloadHash": "sha256:613531be52ea1a3f261ffef3f3b53f3932588bebf5e2ef8259c6f551f05189ae",
+  "refs": {},
+  "revisionId": "sha256:976a3c3f967138dedd249306b1817a50d24d4e4727ff1d529ca286cf25d97040",
+  "schemaVersion": 1,
+  "updatedAt": 1773829826571
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777901991701,
+  "entityType": "message",
+  "id": "1777901991700_24zzrf6i",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Codeany复刻Claude Code体验\n\n**评级**: C (40.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI开发工具\n**次类别**: 智能编程助手, 开源项目\n**标签**: #Claude Code #Codeany #AI Agent #CLI工具 #open-agent-sdk\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 4 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 2 | 15% |\n| 可迁移性 | 3 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 3 | 10% |\n\n**一句话点评**: 适合作为新AI编程工具线索关注，但内容本身信息和证据都较薄。\n**核心高价值点**: 提供了 Codeany 及 open-agent-sdk 多语言实现的项目入口，可作为替代 Claude Code 的开源工具线索。\n\n### 摘要\n作者称使用 Claude Code 分析其 sourcemap，并用 Go 重构 CLI 与 UI 逻辑，生成 Codeany 及多语言 SDK。初步测试认为其可复刻 Claude Code 的联网搜索、skills、MCP、CLI 调用等功能，但尚未完整验证。\n\n### 知识要点\n- Codeany 声称基于 Claude Code sourcemap 分析并用 Go 重构核心 CLI/UI 逻辑。\n- 项目引入 open-agent-sdk-go，并配套 Python、Rust、Go、TypeScript 多语言 SDK。\n- 作者初步测试了联网搜索、skills、MCP、CLI 自动调用等能力。\n\n### 行动项\n- 打开 GitHub 仓库检查项目活跃度、许可证、安装方式和核心功能完整性。\n- 用 2-3 个真实开发任务对比 Codeany 与 Claude Code 的稳定性、速度和权限控制。\n- 重点验证 hook、session 管理、permission 配置、MCP 调用等关键能力是否可用。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是个人体验和项目宣传，缺少系统评测、实现细节和可复用方法论，证据质量较弱。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1777901991701,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:3d2af7c386698071fa88148b21b2a5fb2fcfc1400bd8964bfd024d64c01c5f41",
+  "refs": {
+    "sessionId": "1777901729102_yutcs8ki"
+  },
+  "revisionId": "sha256:3caf4165059fe7c76dc8d496618395576713fd3f7c0c43f95d743da9b52422e4",
+  "schemaVersion": 1,
+  "updatedAt": 1777901991701
+}

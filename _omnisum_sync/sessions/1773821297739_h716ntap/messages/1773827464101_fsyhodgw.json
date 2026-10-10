@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773827464102,
+  "entityType": "message",
+  "id": "1773827464101_fsyhodgw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AI开发任务管理工具概览\n\n**评级**: B (63分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: 任务管理, 开发效率, MCP工具链\n**标签**: #Claude #Cursor #Task Master #AI编程 #MCP\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一份可操作性较强的工具说明文档，但更像产品接入指南，证据和方法论含量一般。\n**核心高价值点**: 通过 PRD 解析生成任务，并可结合 MCP 在多种 AI 编辑器中统一调用，是其最有实际价值的工作流整合点。\n\n### 摘要\n这是一份面向AI驱动开发的任务管理系统说明文档，介绍了 Task Master 在 Cursor、Claude Code、Windsurf 等环境中的安装、MCP 配置、PRD 解析、任务生成与工具裁剪能力，偏实用接入手册而非深度分析。\n\n### 知识要点\n- Task Master 可通过 MCP 集成到多种 AI 编辑器与 CLI 环境中使用\n- 支持主模型、研究模型和回退模型的多模型配置\n- 可通过 parse-prd、next、show、research 等命令驱动任务化开发\n- 支持按工具集合裁剪上下文窗口占用，降低 token 成本\n- Claude Code 和 Codex CLI 可减少对外部 API key 的依赖\n\n### 行动项\n- 若你常用 Cursor 或 Claude Code，可先在一个小项目中试装并验证 PRD 到任务拆解流程\n- 重点评估 TASK_MASTER_TOOLS 的 core 或 standard 模式是否能降低上下文成本\n- 将其与现有 issue 管理、PRD 模板和开发规范对齐，判断是否值得纳入团队工作流\n\n### 存档判定\n归档: 是 — 原因: 包含安装方式、命令示例、模型配置和编辑器集成信息，适合作为工具接入时的操作参考\n不推荐: 缺少真实效果对比、案例复盘和性能证据，方法论深度有限\n删除: 否\n留存决策: 短期参考后可归档，适合在评估AI开发工作流工具时备用",
+    "role": "assistant",
+    "timestamp": 1773827464102,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:373b614917ffe906e7f35fa67fab044174ce2a6bb3b13137129e0ed69126e2ad",
+  "refs": {
+    "sessionId": "1773821297739_h716ntap"
+  },
+  "revisionId": "sha256:9937288766bcfffbff7b5a8d4981c73944eb6f0dc3123356ff9ea0cd2b2f1a44",
+  "schemaVersion": 1,
+  "updatedAt": 1773827464102
+}

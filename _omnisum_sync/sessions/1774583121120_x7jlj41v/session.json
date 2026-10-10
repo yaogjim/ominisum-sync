@@ -1,0 +1,70 @@
+{
+  "createdAt": 1774583121120,
+  "entityType": "session",
+  "id": "1774583121120_x7jlj41v",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果使用 Claude 生态，先在桌面配置连接器、CLAUDE.md 和知识文件，再测试移动端 Dispatch",
+      "为常用工作目录建立自然语言快捷别名，减少移动端路径授权摩擦",
+      "将工作区接入 Google Drive、Dropbox 或 iCloud，同步移动端与桌面文件",
+      "建立自己的 AI 知识层仓库，沉淀规则、模板和工作流，而不是只追新功能"
+    ],
+    "archiveReason": "包含具体使用场景、常见坑点和工具选型框架，对后续搭建移动端 AI 工作流有参考价值",
+    "classifiedAt": 1774583373771,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude手机调度实测指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Dispatch 的核心不是手机聊天，而是从移动端统一编排多个独立桌面任务会话",
+      "文件同步盘可作为手机与桌面之间的输入输出桥梁，缓解移动端文件传输缺陷",
+      "CLAUDE.md 与知识文件应沉淀为跨界面复用的知识层，而不是绑定在单一入口上",
+      "不同 Claude 入口适用于不同任务，应按编排、远控、Web 会话、频道能力选择"
+    ],
+    "oneHighValuePoint": "最有价值的点是将手机视为异步任务编排器、桌面视为执行层，并用统一知识层支撑多个 AI 入口。",
+    "oneLineReview": "有较强一线实践感和操作启发，但证据主要来自个人体验，方法论深度与可验证性一般。",
+    "primaryCategory": "AI工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为 Claude 多端工作流的实践样例保留",
+    "secondaryCategories": [
+      "产品管理",
+      "移动办公",
+      "Claude工具使用"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于作者 48 小时实测，介绍 Claude Dispatch 在手机端编排桌面 AI 任务的使用方式、典型产品经理工作流、常见摩擦点及替代方案，并提出“知识层比具体界面更重要”的观点。",
+    "tags": [
+      "Claude Dispatch",
+      "异步工作流",
+      "产品经理",
+      "移动端AI",
+      "知识层"
+    ],
+    "title": "Claude Dispatch 指南：48 小时从我的手机运行 AI",
+    "totalScore": 60.5,
+    "url": "https://x.com/PawelHuryn/status/2036058594433519790"
+  },
+  "payloadHash": "sha256:8f52c44c3e28b052f303ae1721f3067b2f4f8a379d1a0066cdedb974091196f5",
+  "refs": {},
+  "revisionId": "sha256:d497110fcac1cdc5ec25efa8ddb5c1f01147940cbcb1730f5812b5a3a4df2da2",
+  "schemaVersion": 1,
+  "updatedAt": 1774583712787
+}

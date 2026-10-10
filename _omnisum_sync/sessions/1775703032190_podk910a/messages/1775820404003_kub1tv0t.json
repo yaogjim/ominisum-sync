@@ -1,0 +1,19 @@
+{
+  "createdAt": 1775820404004,
+  "entityType": "message",
+  "id": "1775820404003_kub1tv0t",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent OS式基础设施观察\n\n**评级**: B (66分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent 架构\n**次类别**: 系统设计, 工程方法论\n**标签**: #Anthropic #Harness #Agent OS #Session Log #Sandbox\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 有启发的二手架构解读，概念密度不错，但证据和可落地细节不足。\n**核心高价值点**: 最有价值的点是把 session 定义为“可恢复的执行事实流”而非上下文窗口镜像，这为 Agent 的恢复性、调试性和长期演进提供了更稳的抽象边界。\n\n### 摘要\n文章从 Anthropic 的 Harness 实践出发，提炼出 session、harness、sandbox 三层抽象，强调不要把暂时性的模型缺陷固化为永久系统结构，并提出 Agent 基础设施将趋近于“微型操作系统”的判断。\n\n### 知识要点\n- session 应被视为 append-only 的事件日志，而不是简单聊天记录\n- harness 应设计成可替换的 orchestration layer，尽量减少对模型当前缺陷的固化假设\n- sandbox 与 brain 解耦后，有利于恢复性、安全性和按需 provision 的性能优化\n- 安全边界不应建立在“模型暂时做不到某事”的脆弱假设上\n\n### 行动项\n- 检查现有 Agent 系统中是否把模型短期缺陷写死为固定流程、DAG 或 prompt 结构\n- 将会话状态、调度逻辑和执行环境分层建模，优先定义长期稳定接口\n- 把敏感凭证从模型可直接访问的执行环境中剥离，改为受控代理调用\n- 评估是否可用事件日志替代纯摘要式 memory 作为恢复与审计基础\n\n### 存档判定\n归档: 是 — 原因: 对 Agent 基础设施的稳定接口、可恢复状态和执行环境解耦提出了有价值的结构化视角\n删除: 否\n留存决策: 短期参考后归档，适合作为 Agent 架构抽象的观点材料保留",
+    "role": "assistant",
+    "timestamp": 1775820404004,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:9344be56579d7d20bffa72715edfbc09b2eac2e03cf603c2766b500bd53b5dd0",
+  "refs": {
+    "sessionId": "1775703032190_podk910a"
+  },
+  "revisionId": "sha256:73a06227b6aff7f6a014a573cc9804d71029967d35d07b5da93c5b2c027894d5",
+  "schemaVersion": 1,
+  "updatedAt": 1775820404004
+}

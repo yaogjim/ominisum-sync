@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773631399082,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773631066908",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "可以。结合你提供的文章内容，我用一个很具体的场景来讲：\n\n**实例：你要用 Claude Code 开发一个个人博客首页，左边让 Claude 写代码，右边实时调试，下面监控系统。**\n\n在这个实例里，Ghostty 不只是 “好看终端”，而是一个真正的多窗口开发工作台。  \n下面我直接给你一套更像 “能落地照做” 的最佳实践。\n\n**具体实例**\n\n假设你现在要做一个`Next.js`博客首页改版，目录叫：\n\n```bash\n~/projects/my-blog\n```\n\n你的目标是：\n- 左侧主面板：运行`claude`，让 Claude Code 帮你改首页\n- 右侧面板：运行开发服务器，看报错和日志\n- 下方面板：运行`btop`，监控资源占用\n\n你在 Ghostty 里的操作流程可以是：\n\n```bash\ncd ~/projects/my-blog\n```\n\n左侧主面板执行：\n\n```bash\nclaude\n```\n\n右侧分屏执行：\n\n```bash\nnpm run dev\n```\n\n下方分屏执行：\n\n```bash\nbtop\n```\n\n如果还想看项目状态，可以再开一个面板执行：\n\n```bash\ngit status\n```\n\n这样你就得到一个非常清晰的开发现场：\n\n- 左边：Claude 负责生成和修改代码\n- 右边：本地服务输出日志、编译信息、报错信息\n- 下边：系统资源监控，防止终端卡顿或 dev server 吃满 CPU\n- 额外面板：Git 状态确认改了什么\n\n这就是文章里 “左 Claude、右 debug、下监控” 的最佳落地版本。\n\n**在这个实例之上的最佳实践**\n\n- **主面板永远留给 Claude**\n  - 不要在 Claude 所在面板里混着跑`npm run dev`、`git log`、`ls`。\n  - 最佳做法是让 Claude 面板只负责 “对话、执行任务、查看结果”，这样上下文最干净，不容易被日志冲掉。\n\n- **日志面板固定职责**\n  - 右侧面板专门跑：\n    ```bash\n    npm run dev\n    ```\n  - 这样 Claude 改完代码后，你不用切来切去找报错，编译结果始终在一个固定位置。\n  - 这是分屏最核心的价值：**职责分离**。\n\n- **把 “放大快捷键” 用于长输出场景**\n  - 当 Claude 一次输出很多解释、重构方案、diff 或命令结果时，立刻按：\n    - `Cmd + Shift + Enter`\n  - 最佳实践不是 “看不清再忍着滚”，而是**长输出立刻全屏看**，看完再恢复。\n  - 特别适合这几种情况：\n    - Claude 给出长篇重构计划\n    - 测试失败输出很多栈信息\n    - 构建报错链很长\n\n- **开发服务不要和 Claude 抢焦点**\n  - 很多人会在 Claude 面板里临时跑`npm run dev`，结果日志不断刷新，把当前会话冲掉。\n  - 更好的方式是：\n    - Claude 面板只负责智能协作\n    - `npm run dev`固定在右侧\n    - 测试命令固定在另一个面板，比如：\n      ```bash\n      npm test\n      ```\n  - 这样信息结构非常稳定，效率比单窗口高很多。\n\n- **把 Git 状态做成 “收尾检查面板”**\n  - 每轮 Claude 改完代码后，到一个固定面板运行：\n    ```bash\n    git status\n    git diff\n    ```\n  - 最佳实践是：**不要盲目接受 Claude 的改动**，而是每次都快速检查变更范围。\n  - 尤其适合防止这些问题：\n    - 改了不该改的文件\n    - 误删样式\n    - 改动超出你的原始需求\n\n- **监控面板只在需要时打开**\n  - `btop`很有用，但不需要永远盯着。\n  - 最佳实践是：\n    - 平时开着用于感知性能\n    - 如果你只是轻量开发，可以关闭它，给 Claude 和日志留更多空间\n  - 什么时候必须开：\n    - 跑大型前端构建\n    - Claude 执行大量命令\n    - 机器开始发热、卡顿、风扇狂转\n\n**推荐的面板布局**\n\n针对这个博客开发实例，我建议你固定成下面的结构：\n\n- 左侧大面板：`claude`\n- 右上：`npm run dev`\n- 右下：`git status` / `git diff`\n- 需要时临时再加一个下方面板：`btop`\n\n这个布局比 “平均分屏” 更实用，因为：\n\n- Claude 面板最需要空间\n- 日志次重要，但必须随时能看\n- Git 检查需要存在感，但不需要太大\n- 监控是辅助信息，不应抢主工作区\n\n**命令组织的最佳实践**\n\n如果你每天都这样工作，建议把启动流程标准化。  \n例如每次进入项目先这样：\n\n```bash\ncd ~/projects/my-blog\n```\n\n然后按固定顺序开：\n\n1. 左侧：`claude`\n2. 右侧：`npm run dev`\n3. 右下：`git status`\n4. 需要时：`btop`\n\n这样做的好处是：\n- 每次工作区结构一致\n- 大脑负担更低\n- 出问题时你知道去哪个面板找信息\n\n终端工作流最怕 “每次都临时想面板干什么”，固定下来效率会明显提高。\n\n**基于你文章内容，最关键的 5 条实践原则**\n\n- **一屏一职责**：Claude、日志、Git、监控分开，不混用\n- **Claude 面板最大化**：把主要视觉空间留给 AI 协作\n- **长输出就放大**：`Cmd + Shift + Enter`是高频核心键\n- **每轮改动后看 Git**：先审查，再继续\n- **配置稳定优先**：先用成熟`config`，不要一开始就自己魔改\n\n**一个完整的高效开发回合示例**\n\n你可以把一次实际工作理解成这样：\n\n1. 在左侧 Claude 面板说：  \n   “帮我把首页 hero 区改成更有设计感的布局，并保留响应式表现。”\n\n2. Claude 修改代码后，你立刻看右侧`npm run dev`面板：\n   - 有没有编译错误\n   - 有没有 hydration warning\n   - 有没有样式构建报错\n\n3. 如果 Claude 输出很长，按：\n   - `Cmd + Shift + Enter`\n   查看完整方案和变更说明\n\n4. 然后去 Git 面板执行：\n   ```bash\n   git diff\n   ```\n   检查它到底改了哪些文件\n\n5. 如果机器开始卡，去`btop`看是不是 dev server 或构建进程占用过高\n\n这就是 Ghostty + Claude Code 在真实项目里的最佳配合方式。\n\n**最适合新手直接照搬的一套配置思路**\n\n如果你现在就想开始，我建议你不要追求 “功能最多”，而是先稳定用这套：\n\n- 主题：`Catppuccin Mocha`\n- 主工作方式：左右分屏\n- 核心快捷键：\n  - `Cmd + D`\n  - `Cmd + Shift + Enter`\n  - `Cmd + Shift + ,`\n  - `Cmd + W`\n- 辅助工具：\n  - `starship`\n  - `btop`\n  - `fastfetch`\n\n原因很简单：  \n这套已经足够支撑 90% 的 Claude Code 日常开发，而且学习成本最低。\n\n如果你愿意，我下一步可以直接继续帮你输出两种内容中的一种：\n\n1. 一份 “适合 Claude Code 用户的 Ghostty 最佳配置清单”  \n2. 一份 “这篇文章可直接发布的优化版正文，更像爆款教程”",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773631399082,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:035a5b691e52620ad291f0f1cd3bd501a1cddcd547e408b5c836e9d7f8c29fc9",
+  "refs": {
+    "sessionId": "1773557967494_6x5bqr6r"
+  },
+  "revisionId": "sha256:86f4e1786e7261825cefd9d86d4604e29ca4c2acba1d7fefd091ff17770906bc",
+  "schemaVersion": 1,
+  "updatedAt": 1773631399082
+}

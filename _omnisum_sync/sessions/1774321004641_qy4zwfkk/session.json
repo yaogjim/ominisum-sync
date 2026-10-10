@@ -1,0 +1,67 @@
+{
+  "createdAt": 1774321004641,
+  "entityType": "session",
+  "id": "1774321004641_qy4zwfkk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "参考文中流程，尝试为自己的AI视觉项目建立场景-角色-镜头三段式生成管线",
+      "把常用构图、角度、姿态、情绪整理成Token库，减少重复写长提示词"
+    ],
+    "archiveReason": "提供了较完整的AI商业视觉生产流程与可复用提示词框架，可在需要搭建类似工作流时回查",
+    "classifiedAt": 1774321023360,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI虚拟制作流程搭建指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可通过参考图+LLM拆解的方式生成更稳定的空间与角色提示词",
+      "将角色生成拆分为正面、近景、侧面、背面四个视角有助于提升角色一致性",
+      "Token化提示词框架比长段自然语言更适合商业视觉的批量控制"
+    ],
+    "oneHighValuePoint": "将复杂提示词拆成可替换的Token矩阵，用结构化变量控制镜头、姿态、情绪与构图，提升生成一致性与可控性。",
+    "oneLineReview": "是一篇偏营销导向但仍有一定实操价值的AI设计流程帖。",
+    "primaryCategory": "AI设计工作流",
+    "rating": "A",
+    "rejectReason": "推广成分较重，证据支撑偏弱，部分结论带明显营销导向",
+    "retentionDecision": "短期参考后保留，适合作为AI设计流程模板备用",
+    "secondaryCategories": [
+      "虚拟制作",
+      "提示词工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕Claude、Nano Banana与OpenArt搭建商业级虚拟制作流程，涵盖场景生成、角色构建、Token化提示词控制与最终商业素材落地。实操步骤清晰，但内容明显带有赞助推广色彩，数据与效果论证不足。",
+    "tags": [
+      "OpenArt",
+      "Claude",
+      "AI设计",
+      "虚拟场景",
+      "角色生成",
+      "商业创意"
+    ],
+    "title": "CLAUDE + OPENART WORLDS. The Virtual Production Pipeline",
+    "totalScore": 60.5,
+    "url": "https://x.com/AmirMushich/status/2036169931612467708"
+  },
+  "payloadHash": "sha256:fcf53863fe0b0db51c6593064154c11541b5f9eedbf15a4de33d4e6bc4d46edb",
+  "refs": {},
+  "revisionId": "sha256:76762df623d1355e4865b2cfb683275243aedb38a24caafea1697b64ff072c30",
+  "schemaVersion": 1,
+  "updatedAt": 1774434802950
+}

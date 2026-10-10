@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773729236859,
+  "entityType": "session",
+  "id": "1773729236859_6bwo78wl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在实际项目中设计一个并行代码审查提示词，分别检查安全、测试缺口和性能问题",
+      "为常见重复任务定义一个自定义代理配置并放入`.codex/agents/`目录测试效果"
+    ],
+    "archiveReason": "内容对理解Codex子代理的基本概念、适用场景和使用提示有直接参考价值，可作为工具上手速查材料。",
+    "classifiedAt": 1773730989447,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex子代理使用指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "子代理通过并行处理不同子任务来减少主线程上下文污染",
+      "可按任务性质为主代理和工作代理选择不同模型与推理强度",
+      "Codex支持内置代理，也支持通过TOML文件自定义专用代理",
+      "并行写同一文件、强顺序依赖任务和简单改单文件场景不适合子代理",
+      "子代理会增加token消耗，应在并行收益明确时使用"
+    ],
+    "oneHighValuePoint": "最有价值的点是明确了子代理的判断原则：只有当任务能拆分为彼此独立的并行块时，使用子代理才真正有收益。",
+    "oneLineReview": "这是一篇实用但偏宣传型的功能速览，适合快速了解子代理怎么用，不适合作为深度方法论材料。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "证据和案例支撑较弱，更多是功能介绍与经验性建议，缺少系统验证。",
+    "retentionDecision": "短期参考后可归档保留",
+    "secondaryCategories": [
+      "Agent工作流",
+      "代码审查效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了Codex子代理的核心机制：将原本单线程任务拆分为多个并行专用代理，以减少上下文噪声并提升输出质量。内容涵盖使用方式、模型选择、内置代理、TOML自定义方法、适用与不适用场景，以及一个快速上手提示词示例。",
+    "tags": [
+      "Codex",
+      "Subagents",
+      "并行协作",
+      "代码审查",
+      "开发效率"
+    ],
+    "title": "How to run subagents in Codex",
+    "totalScore": 64.5,
+    "url": "https://x.com/emanueledpt/status/2033651724603240688"
+  },
+  "payloadHash": "sha256:cfb86dcfcca43675ae4b37d1903fd97331f9a7e244d2caf2170bbe3f37a71696",
+  "refs": {},
+  "revisionId": "sha256:af0831ae3bbc7cba6b41f955b1a95c1a62f39d9b8cc7bb8ef44bce3a46f9ae87",
+  "schemaVersion": 1,
+  "updatedAt": 1773731336188
+}

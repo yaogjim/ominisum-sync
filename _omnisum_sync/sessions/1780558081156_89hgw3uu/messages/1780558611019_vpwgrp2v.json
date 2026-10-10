@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780558611020,
+  "entityType": "message",
+  "id": "1780558611019_vpwgrp2v",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 生成式UI三种架构模式\n\n**评级**: A (72分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI应用开发\n**次类别**: 前端架构, 生成式UI, Agent工程\n**标签**: #Generative UI #AG-UI #A2UI #MCP #CopilotKit #前端架构\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇较系统的生成式UI架构选型文章，方法论清晰但证据偏经验化且带有一定工具推广色彩。\n**核心高价值点**: 用三种模式建立生成式UI选型框架：像素级确定性选Controlled，长尾组件与规模化选Declarative，一次性临时可视化选Open-ended。\n\n### 摘要\n文章将生成式UI分为Controlled、Declarative和Open-ended三种模式，分别分析其架构方式、适用场景、扩展性、token成本和常见故障，并建议默认采用Declarative，关键流程用Controlled，临时可视化才用Open-ended。\n\n### 知识要点\n- Controlled模式由前端预置组件，Agent只选择渲染哪个组件，适合少量高价值、需要精确设计的流程。\n- Declarative模式由Agent输出UI schema，前端通过组件目录映射渲染，适合大量卡片、表单、仪表盘等长尾场景。\n- Open-ended模式让Agent生成原始HTML或驱动MCP Apps，灵活但品牌一致性和安全性较差，适合一次性可视化。\n- Controlled模式的主要扩展瓶颈是组件工具定义会持续占用上下文窗口，组件越多token成本越高。\n- A2UI、AG-UI、MCP、A2A分别承担Agent到UI、Agent到用户、Agent到工具、Agent间通信等不同角色。\n\n### 行动项\n- 如果正在做Agent前端，先盘点当前渲染工具数量，超过15个应评估是否迁移到Declarative/A2UI模式。\n- 为现有生成式UI需求按三类模式重新分类：核心精确流程、长尾动态组件、一次性可视化。\n- 在设计Agent UI时优先定义组件catalog和schema契约，避免直接依赖模型自由生成HTML。\n- 对Open-ended HTML渲染使用sandboxed iframe，并限制sandbox权限，避免允许same-origin。\n\n### 存档判定\n归档: 是 — 原因: 文章提供了Controlled、Declarative、Open-ended三类生成式UI模式的对比框架，并包含选型建议、代码示例和常见问题，具有较高方法论价值。\n删除: 否\n留存决策: 长期保留，适合作为生成式UI架构选型参考",
+    "role": "assistant",
+    "timestamp": 1780558611020,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:2db4ced93c686ad0131710021d61541a2783929a4f8f620d17d10fc0ab50790e",
+  "refs": {
+    "sessionId": "1780558081156_89hgw3uu"
+  },
+  "revisionId": "sha256:3060bc638fa58d408f8427e27761fb092e8592c6d248064f3afe7eb3e68d3dda",
+  "schemaVersion": 1,
+  "updatedAt": 1780558611020
+}

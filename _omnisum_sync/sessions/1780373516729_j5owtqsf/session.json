@@ -1,0 +1,107 @@
+{
+  "createdAt": 1780373516729,
+  "entityType": "session",
+  "id": "1780373516729_j5owtqsf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需测试该模型，可根据显存选择合适的 GGUF 量化文件。",
+      "部署时同时下载 mmproj 文件以启用视觉能力。",
+      "实际使用前自行进行安全性、能力和拒答率测试，不应仅依赖模型卡声明。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780616121239,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Qwen3.6无审查模型卡",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "huggingface.co",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive.png",
+        "width": 0
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 120,
+        "id": "img-2",
+        "nearbyText": "",
+        "resolvedUrl": "https://huggingface.co/avatars/5953a2284f07548e018b8e08527dd26c.svg",
+        "role": "article",
+        "score": 45,
+        "src": "https://huggingface.co/avatars/5953a2284f07548e018b8e08527dd26c.svg",
+        "width": 120
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 80,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://huggingface.co/avatars/46f91853fe23c1e732611dd77d949849.svg",
+        "role": "article",
+        "score": 45,
+        "src": "https://huggingface.co/avatars/46f91853fe23c1e732611dd77d949849.svg",
+        "width": 80
+      }
+    ],
+    "knowledgePoints": [
+      "K_P 量化声称通过模型特定分析保留关键权重质量，并兼容 GGUF 运行时。",
+      "该模型为 MoE 架构，35B 总参数、约 3B 激活参数，支持长上下文和多模态。",
+      "使用 llama.cpp 时建议启用 --jinja，并保持至少 128K 上下文以保留 thinking 能力。"
+    ],
+    "oneHighValuePoint": "提供了不同 GGUF 量化版本的文件大小、推荐参数和 llama.cpp 启动示例，可直接用于本地部署。",
+    "oneLineReview": "适合作为临时下载和部署参考，但缺乏评测证据与深入技术价值。",
+    "primaryCategory": "人工智能",
+    "rating": "C",
+    "rejectReason": "内容主要是模型卡和下载说明，缺乏系统评测、方法细节和可信证据，长期学习价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "大语言模型",
+      "模型部署"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "该文是 Hugging Face 上一个 Qwen3.6-35B-A3B 无审查量化模型的模型卡，介绍了不同 GGUF 量化版本、K_P 量化说明、模型规格、推荐推理参数和 llama.cpp 使用命令。",
+    "tags": [
+      "Hugging Face",
+      "Qwen",
+      "GGUF",
+      "量化模型",
+      "uncensored"
+    ],
+    "title": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive · Hugging Face",
+    "totalScore": 43,
+    "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive"
+  },
+  "payloadHash": "sha256:6ac6e2cffed525454ad387013dd0223df98729fdf14a9646d4ab89c2160bc655",
+  "refs": {},
+  "revisionId": "sha256:ad82bc2b70aa1ea0d1b96ce1da6dd445bf551cd5e336e5203322ff6d8d08aa1a",
+  "schemaVersion": 1,
+  "updatedAt": 1780616121856
+}

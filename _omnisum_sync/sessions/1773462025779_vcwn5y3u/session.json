@@ -1,0 +1,67 @@
+{
+  "createdAt": 1773462025779,
+  "entityType": "session",
+  "id": "1773462025779_vcwn5y3u",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文中思路手写一个最小 agent loop，依次实现消息历史、系统提示和工具分发",
+      "对自己当前使用的 coding agent 工具集做一次精简，评估上下文开销与效果变化"
+    ],
+    "archiveReason": "内容有明确实践路径，适合作为日后快速回顾编码代理核心循环的入门材料",
+    "classifiedAt": 1773829914923,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "手把手构建编码代理实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "mgratzer.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "编码代理的核心可简化为基于 LLM API 的循环、消息历史和工具调用调度",
+      "工具定义会消耗上下文预算，工具越少越锋利通常越有效",
+      "shell 工具能显著提升代理能力，同时也立刻引入真实的安全风险",
+      "多代理的价值不只在并行化，也在于拆分上下文负载"
+    ],
+    "oneHighValuePoint": "把“新增能力”抽象为“定义工具 schema + 实现执行路径”，这是理解 agent 扩展机制的关键心智模型。",
+    "oneLineReview": "一篇偏实操的入门型文章，能帮助你拆掉 coding agent 的神秘感，但深度和证据都有限。",
+    "primaryCategory": "AI工程实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为理解编码代理底层机制的实践参考",
+    "secondaryCategories": [
+      "Coding Agent",
+      "教程型技术博客"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍作者制作 Bloomery 技能的思路，用 8 个渐进步骤带读者手写一个约 300 行的 coding agent。重点强调上下文管理、工具调用、shell 权限与系统提示等核心机制，偏入门实践，但证据和案例支撑较弱。",
+    "tags": [
+      "Agentic Loop",
+      "LLM工具调用",
+      "编码代理",
+      "实践教程",
+      "上下文管理"
+    ],
+    "title": "From Ore to Iron: Build Your Own Coding Agent | Martin Gratzer",
+    "totalScore": 64.5,
+    "url": "https://mgratzer.com/posts/from-ore-to-iron/"
+  },
+  "payloadHash": "sha256:5d7b7e838e1541a2bf3971a2beb30c81dfc499a0a9750c737dae4c64714c8990",
+  "refs": {},
+  "revisionId": "sha256:e2dc90c3fdab67070bf991ae4dbf0abc129812dc72e62bef632b52bf6704b80c",
+  "schemaVersion": 1,
+  "updatedAt": 1773829914926
+}

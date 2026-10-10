@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773829937870,
+  "entityType": "message",
+  "id": "1773829937869_wsh3avdw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 2025智能体设计演进综述\n\n**评级**: A (83.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI Agent 设计方法论\n**次类别**: Coding Agent 架构, 长上下文与上下文工程\n**标签**: #Agent-native #coding agent #context engineering #RLM #agent architecture\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 9 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 9 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 9 | 10% |\n\n**一句话点评**: 少有地把 coding agent、上下文管理、工具粒度和产品架构放到同一框架下讲清楚，值得作为 2025 Agent 设计参考材料长期保留。\n**核心高价值点**: 最有价值的是对“工具应保持原子化、能力要与用户操作保持 parity、复杂特性尽量通过上下文与组合而非硬编码工作流实现”的统一方法论总结。\n\n### 摘要\n这是一组围绕 2025 年 Agent 设计演进的精选文章，核心主题包括极简工具集、上下文工程、线程/子代理架构、RLM 长上下文推理，以及 agent-native 产品设计原则。既有一线工程经验，也有较强的方法抽象与实验支撑。\n\n### 知识要点\n- 极简系统提示词与最小工具集在 coding agent 中依然可以取得很强效果，关键在上下文控制与可观测性。\n- Agent-native 应用设计强调 parity、granularity、composability、emergent capability 和持续改进。\n- RLM 通过 REPL + 递归调用把长上下文处理从“整段输入”转为“按需分解与查询”，可缓解 context rot。\n- Slate 提出 thread + episode 架构，试图在 ReAct 的灵活性与子代理/压缩架构的长任务能力之间取得平衡。\n\n### 行动项\n- 将文中的 Agent 设计原则整理成自己的评审清单：工具原子性、上下文可控性、可观测性、完成信号与安全边界。\n- 结合当前项目尝试做一个最小 coding agent 或 agent-native 原型，验证极简工具集与文件优先状态管理是否足够。\n\n### 存档判定\n归档: 是 — 原因: 内容系统梳理了 2025 年 coding agent 与 agent-native 架构的关键分歧、设计原则和代表性实现，兼具方法论与工程启发价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1773829937870,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:ae17298d2415ef8d1e51fbe5116d7f04746f042052dd4cf881d406b8a4a992ca",
+  "refs": {
+    "sessionId": "1773461721883_19gj37rb"
+  },
+  "revisionId": "sha256:2b166070f6764bd235ec3787e4173821ca0058735483ae1e2e354a5a082473c7",
+  "schemaVersion": 1,
+  "updatedAt": 1773829937870
+}

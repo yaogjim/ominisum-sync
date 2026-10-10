@@ -1,0 +1,69 @@
+{
+  "createdAt": 1776061731193,
+  "entityType": "session",
+  "id": "1776061731193_j7tdkcnw",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估当前项目是否存在过度工程，尝试以VPS+单体服务+SQLite重构一个最小可行版本。",
+      "为AI批处理任务建立本地推理与云端模型混合方案，对比真实成本与吞吐表现。"
+    ],
+    "archiveReason": "提供了低成本搭建和运营小型SaaS的完整技术选择框架，适合作为精益架构参考。",
+    "classifiedAt": 1776078142999,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "低成本运营SaaS技术栈",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "stevehanov.ca",
+    "favicon": "",
+    "knowledgePoints": [
+      "早期SaaS可优先采用低成本VPS而非默认上云，减少基础设施复杂度与现金消耗。",
+      "Go静态编译二进制适合小团队部署，降低依赖管理和服务器资源占用。",
+      "SQLite在启用WAL后可覆盖大量中小规模Web应用场景，未必需要一开始就上Postgres。",
+      "本地GPU推理适合批量、长时AI任务，可显著降低API成本并提高实验自由度。",
+      "统一LLM接入层和故障回退机制有助于控制多模型供应商切换成本。"
+    ],
+    "oneHighValuePoint": "最有价值的是其“先用最小可行基础设施验证业务，再按真实瓶颈升级”的成本—复杂度匹配原则。",
+    "oneLineReview": "一篇立场鲜明、可执行性很强的精益SaaS基础设施指南，但证据更多来自个人经验而非系统数据。",
+    "primaryCategory": "创业技术架构",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "精益创业",
+      "基础设施成本优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕“用极低月成本运行多个盈利SaaS”展开，主张使用VPS、Go、SQLite、本地GPU推理和OpenRouter替代复杂云架构与高额AI成本。核心价值在于给出一套适合早期产品验证与自筹资金创业的精简技术栈与思路。",
+    "tags": [
+      "VPS",
+      "Go",
+      "SQLite",
+      "本地LLM",
+      "Bootstrapped SaaS",
+      "成本控制"
+    ],
+    "title": "How I run multiple $10K MRR companies on a $20/month tech stack | Steve Hanov's Blog",
+    "totalScore": 76.5,
+    "url": "https://stevehanov.ca/blog/how-i-run-multiple-10k-mrr-companies-on-a-20month-tech-stack"
+  },
+  "payloadHash": "sha256:278afebd198778fc0e7a907c89e7aa19583cff463e23a2190c1141f5145a4ea2",
+  "refs": {},
+  "revisionId": "sha256:b66a99152e0fac81c6e801328c7ceb3efa1d4bf3d20a5b6c5614292a2f6af98b",
+  "schemaVersion": 1,
+  "updatedAt": 1776078143003
+}

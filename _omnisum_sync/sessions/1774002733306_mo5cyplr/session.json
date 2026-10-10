@@ -1,0 +1,82 @@
+{
+  "createdAt": 1774002733306,
+  "entityType": "session",
+  "id": "1774002733306_mo5cyplr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为当前Agent项目补齐最小Harness：验收标准、自动化测试、失败回滚与日志追踪。",
+      "重构系统提示与知识注入方式，将低频知识迁移到Skills或文件按需加载。",
+      "审计现有工具定义，优先修正描述不清、粒度过细、返回过长和不可恢复的工具。",
+      "建立20-50个真实失败案例组成的回归评测集，区分Pass@k与Pass^k指标。",
+      "为长任务设计外部状态文件、进度记录和跨session恢复机制，而非依赖会话上下文。"
+    ],
+    "archiveReason": "内容系统性强，覆盖Agent工程落地的关键模块，适合作为后续设计、评测和治理的参考框架。",
+    "classifiedAt": 1774003856112,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 9,
+      "long_term_leverage": 9,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Agent工程架构实践全景",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "Harness应同时提供清晰目标、自动化验证、反馈信号与回退机制，才能让Agent稳定收敛。",
+      "上下文工程的核心不是扩大窗口，而是分层管理、按需加载、压缩保真与把可重建信息外化到文件系统。",
+      "工具应按ACI原则围绕Agent目标设计，强调低歧义、可恢复、可发现与低上下文成本。",
+      "评测需区分能力评测与回归测试，并同时观察transcript与outcome，避免误判Agent表现。",
+      "多Agent的前提不是并行，而是协议、隔离、任务图和交叉验证等协作基础设施。"
+    ],
+    "oneHighValuePoint": "最有价值的判断是：决定Agent系统效果的往往不是更强模型，而是Harness、验证闭环、工具定义与上下文治理这些外围工程基础设施。",
+    "oneLineReview": "这是一篇少见的从工程系统视角而非单点技巧出发，完整讨论Agent落地约束与方法的高价值综述。",
+    "primaryCategory": "AI智能体工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "LLM应用架构",
+      "工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/HiTw93/status/2034627967926825175",
+      "https://x.com/HiTw93/status/2032091246588518683",
+      "https://x.com/trq212/status/2033949937936085378",
+      "https://x.com/trq212/status/2024574133011673516",
+      "https://x.com/trq212/status/2027463795355095314"
+    ],
+    "summaryBrief": "文章系统梳理了Agent工程的核心模块，包括控制流、Harness、上下文工程、工具设计、记忆、多Agent组织、评测、追踪与安全，并结合Claude Code与OpenClaw等案例给出较强的工程化经验与落地原则。",
+    "tags": [
+      "Agent",
+      "Claude Code",
+      "上下文工程",
+      "工具设计",
+      "评测体系",
+      "可观测性",
+      "提示缓存"
+    ],
+    "title": "智能体工程系统核心解读",
+    "totalScore": 82.5,
+    "url": "omnisun://digest/1774002733306"
+  },
+  "payloadHash": "sha256:39982feb4b68f1ba33d7047b2acc00e0bb7098529fb4c05c383d50d0c527cc42",
+  "refs": {},
+  "revisionId": "sha256:de66882c185fd36b0f83456919f78823da88a755f8089ad0a66e541e05dd75d5",
+  "schemaVersion": 1,
+  "updatedAt": 1774003856124
+}

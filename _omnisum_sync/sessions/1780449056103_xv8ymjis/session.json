@@ -1,0 +1,66 @@
+{
+  "createdAt": 1780449056103,
+  "entityType": "session",
+  "id": "1780449056103_xv8ymjis",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看 Perplexity Search as Code 原文，判断其架构细节和适用场景。",
+      "对比 Code Mode、MCP、REST API、Skill-based generation 在成本、确定性和可维护性上的差异。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780449889023,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Search as Code工程实践",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Code Mode 可被视为介于 MCP、技能生成和传统 REST API 之间的一种 Agent 工程接口形态。",
+      "Search as Code 的核心是让 Agent 编写并执行代码直接调用搜索栈，减少逐个函数调用带来的摩擦。",
+      "回复中提到 re-in-act 范式可能有助于平衡成本、确定性和上下文腐烂问题。"
+    ],
+    "oneHighValuePoint": "将搜索或复杂 API 能力转化为可运行代码接口，可能比传统 function call 或 REST API 更适合长任务 Agent。",
+    "oneLineReview": "有概念启发，但信息过短，缺乏工程细节和证据支撑。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "C",
+    "rejectReason": "内容主要是观点型短推，缺少完整论证、实现细节和可复用案例，适合作为概念线索而非深入资料。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "搜索架构",
+      "API设计"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提到一种类似 Cloudflare Dynamic Worker 的 code mode 实践，将复杂 API 调用包装为 micro agent runtime，用代码直接调用搜索栈，以降低 agent 多轮函数调用成本，并提升确定性和输出质量。",
+    "tags": [
+      "Search as Code",
+      "Code Mode",
+      "Micro Agent Runtime",
+      "Perplexity",
+      "MCP"
+    ],
+    "title": "郭宇 guoyu.eth: 另外一种类似 cloudflare dynamic worker 的工程实践，这种流派也可以叫 code mode，本质上是将复杂 API 调用包装成不同的 m…",
+    "totalScore": 47.5,
+    "url": "https://x.com/turingou/status/2061766544741560387"
+  },
+  "payloadHash": "sha256:c5313b4095502b94969998d948fa7b442613a8639966f4ddef1f6bb086f18456",
+  "refs": {},
+  "revisionId": "sha256:3dbef798b114e401fb717d12910591b170c8159eb65f3653a349ff60134c6306",
+  "schemaVersion": 1,
+  "updatedAt": 1780449889369
+}

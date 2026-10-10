@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777902095773,
+  "entityType": "message",
+  "id": "1777902119956_gbctqw2o",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\nLeo 分享了一种 AI 编程协作流程：**让 Claude Opus 负责写代码，让 Codex 负责代码评审**。关键在于给 Codex 明确限定评审范围，避免它把 review 变成重构建议。\n\n---\n\n## 1. 核心做法：Claude 写代码，Codex 做评审\n\n- Leo 的工作流是：\n  - **Claude Opus**：负责生成代码。\n  - **Codex**：负责独立审查代码正确性。\n- 他给 Codex 的提示词重点是让它从以下角度检查：\n  1. 逻辑是否正确？\n  2. 是否遗漏边缘情况？\n  3. 是否存在安全问题？\n  4. 是否符合原始需求？\n\n---\n\n## 2. 提示词关键点：只报告问题，不做重构\n\nLeo 特别强调提示词最后一句很重要：\n\n> 请勿建议重构、重命名、样式修改或添加注释。仅报告缺陷、逻辑错误和安全问题。\n\n- 如果不加这句话，Codex 可能会把代码评审理解成“帮忙优化代码”。\n- 结果可能出现大量重构、命名、格式、注释类建议，偏离真正的 review 目标。\n- Leo 的重点是：**让 Codex 专注发现 bug、逻辑漏洞和安全风险，而不是做代码美化。**\n\n---\n\n## 3. 热门回复：不同用户的 AI 编程实践\n\n### 3.1 有人认为 Claude Opus 小 bug 较多\n\n用户 @段少DaDalus 表示：\n\n- **Opus 4.6 小 bug 太多**，用起来比较难受。\n- 他在新项目中已经把开发模型切换成 **Codex 5.3**。\n\nLeo 回复说：\n\n- 如果用 Codex 开发，是否还需要额外 review？\n- 他自己因为长期使用 Claude 体系，已经越来越顺手。\n- 迁移到其他系统的成本变高。\n\n---\n\n### 3.2 有人尝试多模型“委员会”评审\n\n用户 @你瞅啥 分享：\n\n- 他写了一个 skill，让：\n  - Codex\n  - Gemini\n  - Claude  \n  组成一个“committee”，通过一轮辩论得出结论。\n\nLeo 认为这个思路有意思，并补充经验：\n\n- 他试过类似方法。\n- 关键是要给每个模型分配**不同审查角度**。\n- 否则多个模型容易互相附和，无法产生真正有效的分歧和审查。\n\n---\n\n### 3.3 有人推荐自动化工具 cc-review\n\n用户 @Hao ∞ 浩哥 推荐了自己的工具：\n\n- 工具地址：`github.com/haohappy/multi…`\n- 目标是结合 **Claude Code** 和 **Codex** 的优势。\n- 它试图把 AI 代码审查变成自动闭环：\n  - Claude Code 生成代码；\n  - Codex 进行 review；\n  - 自动处理反馈和修改流程。\n\n传统流程中，开发者需要手动在 Claude Code 和 Codex 之间复制计划、代码和反馈，容易繁琐且遗漏；该工具希望减少这些人工搬运。\n\n---\n\n## 4. 总结启发\n\n- AI 写代码时，可以采用“**一个模型生成，另一个模型审查**”的分工方式，提高可靠性。\n- 做 AI 代码评审时，提示词要明确边界：\n  - 只查缺陷；\n  - 不提风格；\n  - 不做重构。\n- 多模型协作有潜力，但要避免模型之间互相附和，最好给不同模型设定不同审查角色。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1777902095773,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c6e8a866c3753ae10f74115773e4b9651bf7825099231d86f8f3f86e85b29b0c",
+  "refs": {
+    "sessionId": "1777901698362_ga40zz1a"
+  },
+  "revisionId": "sha256:24ba439fe74b0334a1171b70e698601b37b10637d3c9505fd6437b187b0947ad",
+  "schemaVersion": 1,
+  "updatedAt": 1777902095773
+}

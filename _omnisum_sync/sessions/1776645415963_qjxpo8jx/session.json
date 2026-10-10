@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776645415963,
+  "entityType": "session",
+  "id": "1776645415963_qjxpo8jx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在使用 Hermes，可自行检索对应 GitHub 仓库并快速试用 /架构图 命令",
+      "若需要更高泛化性，可对比社区提到的其他架构图生成项目后再决定是否保留"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776646163583,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Hermes内置架构图技能",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "缺乏方法论和证据支撑，可操作信息极少，长期复用价值低",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Hermes Agent 新增了通过命令生成架构图的内置技能",
+      "该能力来自可移植的开源项目，并在社区中已有替代实现"
+    ],
+    "oneHighValuePoint": "Hermes 已将一个基于 MIT 许可的架构图生成能力直接内置，降低了相关功能的接入门槛。",
+    "oneLineReview": "像产品更新公告而非深度内容，知道有这个功能即可，无需投入精读时间。",
+    "primaryCategory": "AI工具更新",
+    "rating": "D",
+    "rejectReason": "内容主要是功能宣发和用户反馈截图，缺少原理、使用示例、效果边界与系统性说明",
+    "retentionDecision": "信息量较低，除非你正在使用Hermes，否则短期参考价值也有限，建议删除",
+    "secondaryCategories": [
+      "开发者工具",
+      "社交媒体动态"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一条关于 Hermes Agent 新增内置“架构图”技能的动态，说明更新后可通过命令生成架构图，并提到原作者采用 MIT 许可证，社区回复中补充了相关仓库和相似项目链接。",
+    "tags": [
+      "Hermes",
+      "架构图生成",
+      "AI Agent",
+      "技能集成",
+      "Twitter/X"
+    ],
+    "title": "Teknium 🪽: This skill is now built in to Hermes",
+    "totalScore": 34,
+    "url": "https://x.com/Teknium/status/2044190761609244986"
+  },
+  "payloadHash": "sha256:6958212deb8df856bba6e49e82c186aec22e73b4a1d7c8039ce4a732dcd63cab",
+  "refs": {},
+  "revisionId": "sha256:86375e3c3edc28ac5dd2f75a8fea4546420a2f1857c2ecea7e2abbf23629a9e6",
+  "schemaVersion": 1,
+  "updatedAt": 1776647124538
+}

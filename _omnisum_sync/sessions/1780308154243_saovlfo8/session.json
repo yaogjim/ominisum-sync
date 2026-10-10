@@ -1,0 +1,66 @@
+{
+  "createdAt": 1780308154243,
+  "entityType": "session",
+  "id": "1780308154243_saovlfo8",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估现有 Agent 项目中哪些能力被框架强耦合，如凭证、路由、审批、预算和追踪。",
+      "在设计新 Agent 系统时优先定义模块边界和类型化接口，避免过早绑定到单一框架。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780308297639,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "代理框架应模块化构建",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent harness 不应被视为单一框架，而是多个独立工程关注点的组合。",
+      "共享总线加类型化函数契约可以提高 Agent 系统各组件的可替换性。",
+      "长期运行的 Agent 团队可能会因框架耦合、凭证管理、审批流和可观测性需求而重写底层工具系统。"
+    ],
+    "oneHighValuePoint": "将 Agent 工具系统拆解为状态机、凭证、审批、预算、追踪等独立关注点，并通过工作器模型组合，而不是接受一体化框架锁定。",
+    "oneLineReview": "观点有启发性，但主要是转述和架构主张，缺少实证案例与落地细节。",
+    "primaryCategory": "AI工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent架构",
+      "软件架构"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为多数团队直接采用 LangChain、LangGraph 等框架时，会把循环、工具、内存、凭证、预算、审批等不同关注点绑定在一起，导致长期维护困难。更好的方式是用共享总线和类型化函数契约，将各层拆成可替换的工作器。",
+    "tags": [
+      "AI Agent",
+      "LangChain",
+      "模块化架构",
+      "工具系统",
+      "工作器模型"
+    ],
+    "title": "Rohit Ghumare: Almost everyone is building agent harness systems the wrong way",
+    "totalScore": 62,
+    "url": "https://x.com/ghumare64/status/2060072412868235587"
+  },
+  "payloadHash": "sha256:4a356d04b4911cd33496422ce843d7e61b7e273e0b765ff42f8c223716979e99",
+  "refs": {},
+  "revisionId": "sha256:7363922088042fe7f634715696ad9cdbca536cfc81fe367bf3e057038b23f3c8",
+  "schemaVersion": 1,
+  "updatedAt": 1780308513767
+}

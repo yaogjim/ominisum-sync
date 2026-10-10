@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780307233698,
+  "entityType": "message",
+  "id": "1780307348806_b208t409",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Codex++ 项目精简解读\n\n## 一、内容总结\n\n**Codex++** 是一个面向 **Codex App** 的外部增强工具。\n\n它的核心作用是：\n\n- 不修改 Codex 原始文件\n- 通过外部启动器启动 Codex\n- 使用 CDP 注入脚本，增强 Codex 功能\n- 提供管理工具，用于配置、更新、诊断和管理增强功能\n\n支持平台：\n\n- Windows\n- macOS Intel\n- macOS Apple Silicon\n\n主要功能包括：\n\n- 中转 API 注入\n- 插件入口解锁\n- 会话删除\n- Markdown 导出\n- 项目移动\n- Timeline\n- 用户脚本管理\n- Provider 同步\n- 自动更新\n- Zed 打开入口\n- Git worktree 辅助创建\n\n---\n\n## 二、通俗解读\n\n可以把 **Codex++** 理解成：\n\n> 给 Codex App 套了一个“增强外壳”。\n\n它不是破解 Codex，也不是改 Codex 安装包，而是：\n\n1. 先由 Codex++ 启动 Codex\n2. 再往 Codex 页面里注入一些增强脚本\n3. 最后让 Codex 变得更好用\n\n### 它解决了什么问题？\n\n#### 1. API Key 模式下插件不好用\n\n原版 Codex 在某些情况下会要求登录 ChatGPT，导致插件入口受限。\n\nCodex++ 可以帮你解锁相关入口。\n\n#### 2. 原版会话不好删除\n\nCodex 原生更多是“归档”，不是真删除。\n\nCodex++ 增加了会话删除按钮。\n\n#### 3. 想用 API 中转\n\n如果你已经登录了官方账号，但又想把请求转到自己的 API 服务，Codex++ 支持配置：\n\n- Base URL\n- API Key\n- 多个中转配置\n- 一键切回官方登录态\n\n#### 4. 想更方便管理\n\n它提供了一个管理面板，可以：\n\n- 查看状态\n- 修复问题\n- 查看日志\n- 配置增强功能\n- 管理用户脚本\n- 检查更新\n\n---\n\n## 三、优点与风险\n\n## 优点\n\n- **不改原版文件**，相对安全\n- **功能实用**，补足 Codex 原生短板\n- **支持中转 API**，适合国内或团队场景\n- **有管理界面**，比纯脚本工具更友好\n- **支持自动更新**\n- **Windows/macOS 都支持**\n\n## 风险\n\n- 依赖 Codex 页面结构，Codex 更新后可能失效\n- macOS 包未签名，可能提示“已损坏”\n- 中转服务涉及 API Key，需注意安全\n- 项目里有较多赞助商和中转广告，选择时要谨慎\n- 注入脚本类工具天然存在兼容性风险\n\n---\n\n## 四、我的意见\n\n**Codex++ 适合有 Codex 使用基础、希望提升效率的人。**\n\n如果你只是普通用户，建议先用原版 Codex；  \n如果你遇到以下问题，可以考虑 Codex++：\n\n- 想用 API 中转\n- 想删除会话\n- 想导出 Markdown\n- 想解锁插件入口\n- 想管理多个 Provider\n- 想要更舒服的 Codex 工作流\n\n但要注意：\n\n> 不要随便填写重要 API Key 到不信任的中转服务。\n\n建议优先：\n\n1. 使用官方 Release 下载\n2. 看清权限和配置路径\n3. 备份 `~/.codex`\n4. 谨慎选择 API 中转商\n5. Codex 更新后，如异常先看项目 Issue\n\n---\n\n## 五、一句话评价\n\n**Codex++ 是一个让 Codex App 更好用的外挂式增强工具，功能很实用，但适合有一定技术判断力的用户使用。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780307233698,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:355ae73942aee3457ee47c2abe1910f542ecfb4252d06be5057a8ce03820ebe4",
+  "refs": {
+    "sessionId": "1780307347702_zyuqo4ky"
+  },
+  "revisionId": "sha256:f7427b70e2bb0f872382b6b67af15bf287381f4a44334d07d8c6ea39c8febbfb",
+  "schemaVersion": 1,
+  "updatedAt": 1780307233698
+}

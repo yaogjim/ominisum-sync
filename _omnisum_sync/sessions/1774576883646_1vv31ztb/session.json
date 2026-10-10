@@ -1,0 +1,78 @@
+{
+  "createdAt": 1774576883646,
+  "entityType": "session",
+  "id": "1774576883646_1vv31ztb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在做个人AI助手或Agent系统，可借鉴其三级记忆与L0摘要机制设计本地知识库",
+      "挑选一个真实工作域，先用Markdown目录和固定文件模板手工验证该架构是否适合你的使用场景"
+    ],
+    "archiveReason": "提供了较完整的文件式记忆分层、路由和维护流水线设计，对搭建个人AI工作台有参考价值",
+    "classifiedAt": 1774584752025,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude持久记忆架构设计",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "我是一名资深产品经理，对科技、ai、商业、产品、社会等有深刻理解。\n请对我提供的多个内容综合分析提炼，思考和推演对我在产品的实践上有哪些启发？以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "通过热记忆、领域温记忆和冰川归档实现分层上下文加载，降低token与检索成本",
+      "用L0摘要、L1标题扫描、L2全文读取构建渐进式检索协议",
+      "通过housekeeping、reflect、evolve、foresight等流水线技能维持记忆健康和规则演进",
+      "以单一事实源和wiki链接避免信息重复，提升长期一致性",
+      "线程文件将分散观察提升为可读叙事，适合长期主题追踪"
+    ],
+    "oneHighValuePoint": "最有价值的是把“记忆”设计成可被Unix工具直接检索和维护的纯文本文件系统，而不是黑盒数据库。",
+    "oneLineReview": "这是一个方法论较强、实现思路清晰的AI记忆系统设计稿，但更像架构提案而非被充分验证的成熟方案。",
+    "primaryCategory": "AI工具与认知架构",
+    "rating": "B",
+    "rejectReason": "证据主要来自作者经验与系统说明，缺少真实长期使用数据、对照实验和失败案例验证",
+    "retentionDecision": "中期保留，适合作为设计个人AI记忆系统时的参考样例",
+    "secondaryCategories": [
+      "知识管理系统",
+      "Agent工作流设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://github.com/marciopuga/cog",
+      "https://lab.puga.com.br/cog/",
+      "https://lab.puga.com.br/cog/#/pipeline",
+      "https://lab.puga.com.br/cog/#/architecture",
+      "https://lab.puga.com.br/cog/#/memory",
+      "https://lab.puga.com.br/cog/#/cowork"
+    ],
+    "summaryBrief": "文章介绍了一个面向Claude Code的纯文本认知架构Cog，通过热/温/冰川三级记忆、L0-L2检索、线程化沉淀和定时流水线维护，实现跨会话的持久上下文与自我整理能力。设计清晰、可复用，但实证支撑偏弱。",
+    "tags": [
+      "Claude Code",
+      "持久记忆",
+      "文件系统架构",
+      "工作流自动化",
+      "知识管理"
+    ],
+    "title": "从会话工具到持续进化产品系统",
+    "totalScore": 69,
+    "url": "omnisun://digest/1774576883646"
+  },
+  "payloadHash": "sha256:b5280935f673715fdb0d58ea3b868e4928330ef60791343b5ca105c7b79e0ddc",
+  "refs": {},
+  "revisionId": "sha256:05b3c40992eeecd6de46899437343d347131e335777af975276c4b9c2f63a644",
+  "schemaVersion": 1,
+  "updatedAt": 1774584752030
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773729673735,
+  "entityType": "message",
+  "id": "1773729840095_qyibkpew",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章的主旨是：很多人还在用“一个 AI 对话处理一个任务”的单线程方式写代码，但作者介绍了一种更高效的协作模式——用 `tmux` 把 Claude 和多个 Codex 组织成一个并行工作的 Agent 团队。核心价值在于：让 AI 像真实开发团队一样分工协作，提高开发效率并减少来回切换。\n\n- 第一部分：传统方式 vs 新玩法\n  - 大多数人现在还是“一个模型、一个对话、一次一个任务”地使用 AI 写代码。\n  - 作者提出的新方式，是让多个 AI Agent 并行工作，而不是串行处理。\n  - 其中，Claude 负责“理解需求、拆任务”，相当于“大脑”；多个 Codex 负责具体执行，相当于“执行手”。\n\n- 第二部分：团队分工设计\n  - 这套架构里，Codex 被分成 3 个明确角色：\n  - `coder`：负责写代码。\n  - `tester`：负责跑测试。\n  - `reviewer`：负责代码审查。\n  - 这些角色分别运行在独立的 `tmux pane` 中，形成一个小型 AI 开发团队。\n\n- 第三部分：上手的 5 个步骤\n  - 第 1 步是安装工具：通过 `brew install tmux` 安装 `tmux`，再用 `npm install -g @anthropic-ai/claude-code @openai/codex` 安装 Claude 和 Codex。\n  - 第 2 步是用 `git worktree` 给每个 Agent 建独立工作区，例如：\n    - `git worktree add ../project-coder main`\n    - `git worktree add ../project-tester main`\n    - `git worktree add ../project-reviewer main`\n  - 这样做的重点是避免并行协作时互相修改同一份文件，“踩文件”的问题可以被解决。\n  - 第 3 步是创建 `tmux session` 并分成 4 个 pane，例如 `tmux new-session -d -s agent-team`，再通过分屏把 Claude 和 3 个 Codex 放进不同窗口区域。\n  - 第 4 步是在每个 pane 启动对应 Agent，比如 Claude 在一个 pane 中运行，`coder` 则进入 `../project-coder` 后启动 `codex`。\n  - 第 5 步也是最关键的一步：通过脚本向不同 pane 分发任务，并读取执行结果。\n\n- 第四部分：这套方案为什么成立\n  - `tmux` 的两个核心能力是：\n    - `send-keys`：向 pane 写入命令或任务。\n    - `capture-pane`：读取 pane 中的输出结果。\n  - 有了这两个能力，Claude 拆解完任务后，就可以自动把任务发给不同的 Codex pane。\n  - 这意味着整个协作过程不需要人工来回复制粘贴，`tmux` 实际上扮演了“消息总线”的角色。\n\n- 第五部分：文中的具体案例\n  - 文章给出的任务例子是：`实现登录功能，JWT，带单测`。\n  - 这说明该方案不只是概念展示，而是可以把一个实际开发需求直接下发给某个 Agent 去执行。\n  - 同时，文中也给出读取执行结果的示例：`tmux capture-pane -t agent-team:0.1 -p`，说明任务下发和结果回收都可以自动化完成。\n\n- 第六部分：更省事的替代方案\n  - 如果不想自己手动配置整套环境，可以直接执行 `brew install claude-squad`。\n  - 作者说明，这个工具和前面的方案底层逻辑一样，只是帮用户省掉手动搭建步骤。\n\n一句话看，这篇文章重点不是介绍某个单独工具，而是在讲一种“AI 团队协作”的工作流：用 Claude 负责指挥、多个 Codex 分工执行，再借助 `tmux` 实现自动分发和回收结果。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773729673735,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:155f03c69351efca19f930f53251e31fe220064c653a149073a528c6653b597c",
+  "refs": {
+    "sessionId": "1773729324919_0swq0d2r"
+  },
+  "revisionId": "sha256:2b020d867549f962bd7a30a851ec1599952f52e64e504632d86b11810c8a2aa1",
+  "schemaVersion": 1,
+  "updatedAt": 1773729673735
+}

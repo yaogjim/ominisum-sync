@@ -1,0 +1,69 @@
+{
+  "createdAt": 1780386353264,
+  "entityType": "session",
+  "id": "1780386353264_yrlzgx6v",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将该提示词保存为Codex月度复盘模板",
+      "每30天运行一次，筛选重复且高成本的工作流",
+      "把高置信度流程转化为技能、子代理或自动化",
+      "记录跳过项和待收集证据的工作流，供下次复盘使用"
+    ],
+    "archiveReason": "提供了可直接复用的Codex自我改进提示词，能帮助识别重复工作并转化为技能、子代理或自动化流程",
+    "classifiedAt": 1780386836143,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex自我改进提示词",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "识别可打包工作流应满足重复发生、输入稳定、流程可复用、输出明确等条件",
+      "优先复用或扩展已有技能、代理和自动化，避免重复创建",
+      "先生成候选短名单，再只创建高置信度的缺失项",
+      "应跳过一次性、模糊、敏感或证据不足的任务"
+    ],
+    "oneHighValuePoint": "将重复工作按“技能、子代理、自动化、跳过”四类进行最小适当封装，避免过度设计。",
+    "oneLineReview": "这是一个实用性较强的AI工作流复盘提示词，但证据支撑主要来自转述，深度有限。",
+    "primaryCategory": "AI工作流优化",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为定期复盘和构建AI工作流资产的参考模板",
+    "secondaryCategories": [
+      "提示词工程",
+      "个人自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了一段Codex自我改进提示词，用于回顾近期工作、识别重复流程，并判断应打包为技能、子代理、自动化或跳过，强调证据、边界和可验证性。",
+    "tags": [
+      "Codex",
+      "自我改进",
+      "工作流复盘",
+      "自动化",
+      "AI Agent"
+    ],
+    "title": "QingYue: 这是一条非常宝贵的被官方认证过的codex self improve prompt： 推荐使用： “回顾我过去 30 天的最近工作（如果历史更短，则回顾所有可用…",
+    "totalScore": 72,
+    "url": "https://x.com/YuLin807/status/2058603511584367091"
+  },
+  "payloadHash": "sha256:009f22593c4994f06abee2107a58351ddce4fe42753839718a0946023675cc70",
+  "refs": {},
+  "revisionId": "sha256:1a956bcdae3a30c1d7d5210e8d57d1a87c11853a895cc5de0e05cd06b80ed1db",
+  "schemaVersion": 1,
+  "updatedAt": 1780387332548
+}

@@ -1,0 +1,69 @@
+{
+  "createdAt": 1775196972274,
+  "entityType": "session",
+  "id": "1775196972274_ux4m67ik",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估自己关注领域中的AI项目是否受限于数据孤岛、治理缺失和系统割裂，而非单纯模型能力不足。",
+      "若需落地企业AI，可优先梳理高价值数据源、权限策略和人工审核节点，再考虑具体厂商方案。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1775197056469,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "边缘AI与客户洞察营销文",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.forbes.com",
+    "favicon": "https://i.forbesimg.com/48X48-F.png",
+    "knowledgePoints": [
+      "边缘AI适合对时延敏感的医疗场景，如影像分诊、患者监测和院内实时决策。",
+      "企业级客户服务AI要先解决数据发现、清洗、元数据增强、权限治理和审计问题。",
+      "代理式AI在企业中更适合与人在回路机制结合，以降低合规与误判风险。",
+      "模块化、开放式数据平台优于强制全量迁移到单一平台的重构路径。"
+    ],
+    "oneHighValuePoint": "强调AI落地的真正瓶颈往往不是模型，而是分散数据、治理能力和工作流集成，这一点比“继续堆更多AI”更关键。",
+    "oneLineReview": "有一定方向感，但本质上是戴尔与NVIDIA方案导向的营销型内容，参考价值有限。",
+    "primaryCategory": "企业AI与数据平台",
+    "rating": "C",
+    "rejectReason": "内容以品牌方案宣传为主，案例与数据支撑薄弱，方法框架较泛，信息重复较多。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "客户体验管理",
+      "边缘计算",
+      "数字化转型"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕两条主线展开：医疗场景中的边缘AI实时推理，以及CIO/CDO如何利用统一数据平台和代理式AI改善客户体验。核心观点是通过模块化数据基础、治理与人在回路机制，把分散数据转成可用于生产级AI的资产，但整体偏厂商方案宣传。",
+    "tags": [
+      "代理式AI",
+      "RAG",
+      "数据治理",
+      "Dell",
+      "NVIDIA",
+      "品牌营销"
+    ],
+    "title": "The New CIO/CDO Mandate: Turn Every Customer Interaction Into Insight",
+    "totalScore": 40,
+    "url": "https://www.forbes.com/sites/delltechnologies/2026/03/31/the-new-ciocdo-mandate-turn-every-customer-interaction-into-insight/?utm_source=twitter&utm_medium=paid&utm_campaign=dell_forbes"
+  },
+  "payloadHash": "sha256:09ddc397b0df98c328b67030b628ad38f0cedda2e4675d3bf2c8d6d65f00e228",
+  "refs": {},
+  "revisionId": "sha256:6e8d2d403e0584f0ac7439173257b9726ebf92b17fd4e3b4dedc92b06894b71c",
+  "schemaVersion": 1,
+  "updatedAt": 1775197324754
+}

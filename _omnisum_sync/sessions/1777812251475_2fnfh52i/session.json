@@ -1,0 +1,68 @@
+{
+  "createdAt": 1777812251475,
+  "entityType": "session",
+  "id": "1777812251475_2fnfh52i",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看 GitHub 仓库 DbgKinggg/tweetskill，确认安装要求和 API 权限",
+      "选择自己的 X 账号或目标账号测试 analyze 命令",
+      "将生成的 skill 文件用于一次实际推文改写，对比是否明显降低AI味"
+    ],
+    "archiveReason": "提供了一个可尝试的开源工具和明确安装用法，适合后续测试AI模仿个人写作风格",
+    "classifiedAt": 1777812464688,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用tweetskill蒸馏推文风格",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "tweetskill 可通过 npx skills add DbgKinggg/tweetskill 安装到 Hermes、OpenClaw、Claude Code 等 Agent 中",
+      "工具默认使用 X 官方 API 获取推文，需要提供 X Bearer Token",
+      "分析后会生成类似 elonmusk-skill.md 的风格文件，包含表达习惯、常用格式和高互动内容模式",
+      "生成的 skill 文件可直接作为上下文，让 AI 按特定账号风格撰写推文"
+    ],
+    "oneHighValuePoint": "将个人历史推文分析成可被 AI Agent 读取的 skill 文件，用于降低AI写作中的“AI味”。",
+    "oneLineReview": "一个有实际尝试价值的AI写作风格蒸馏工具介绍，但证据和案例支撑较弱。",
+    "primaryCategory": "AI工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可根据是否实际使用决定保留",
+    "secondaryCategories": [
+      "内容创作",
+      "个人知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者介绍开源工具 tweetskill，可分析指定 X 账号的历史推文，生成包含表达习惯、爆款模式、禁用格式等信息的 skill 文件，用于帮助 AI Agent 写出更接近原账号语气的推文。",
+    "tags": [
+      "AI写作",
+      "推文风格蒸馏",
+      "Agent Skill",
+      "开源工具",
+      "社交媒体"
+    ],
+    "title": "Sammie 逗比国国王: 一直有个问题我觉得没有完美解决办法：让 AI 帮我写推文，写出来一眼就不是我的语气，而且各种AI味",
+    "totalScore": 55,
+    "url": "https://x.com/DbgKinggg/status/2048678609649623235"
+  },
+  "payloadHash": "sha256:a1e2f6f14420e0abc048b4ac51563d67f12af1c2be2c213991fe2e10f5ea788c",
+  "refs": {},
+  "revisionId": "sha256:9ba7406e315c6c6539a50b96b92366967eab60dd84a218be3d0121400cd19246",
+  "schemaVersion": 1,
+  "updatedAt": 1777813213873
+}

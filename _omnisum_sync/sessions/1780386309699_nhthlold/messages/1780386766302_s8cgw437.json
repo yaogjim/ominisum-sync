@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780386766303,
+  "entityType": "message",
+  "id": "1780386766302_s8cgw437",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: TencentDB记忆架构解析\n\n**评级**: A (74分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI Agent工程\n**次类别**: 长期记忆系统, 开源工具评测\n**标签**: #Agent Memory #TencentDB Agent Memory #OpenClaw #Hermes Agent #本地优先 #分层记忆 #Mermaid压缩\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 一篇信息量较高、工程细节充分的 Agent Memory 方案解析，适合做本地长期记忆系统设计参考。\n**核心高价值点**: 将长期记忆设计为 L0 Conversation、L1 Atom、L2 Scenario、L3 Persona 的可追溯语义金字塔，而不是仅依赖扁平向量库。\n\n### 摘要\n文章介绍腾讯开源 TencentDB Agent Memory 的四层长期记忆架构、Mermaid 短期记忆压缩、OpenClaw 与 Hermes 集成方式、混合检索机制、Benchmark 表现及适用场景，强调其本地优先、白盒可调试和分层语义记忆设计。\n\n### 知识要点\n- TDAI 使用 L0 到 L3 的分层记忆结构，使高层画像结论可以向下追溯到场景、原子记忆和原始对话。\n- 短期任务状态通过 Mermaid 图压缩并注入上下文，原始工具日志落盘，需要时再按 node_id 回查。\n- 检索采用 BM25、向量检索与 RRF 融合，并支持本地 SQLite FTS5、sqlite-vec 及降级策略。\n- OpenClaw 集成较成熟，支持插件安装、自动捕获对话、分层提取和召回注入。\n- Hermes 集成采用 Python 进程调用 Node.js sidecar，并包含熔断、背压、进程监督等可靠性设计。\n- 该方案更适合长期、多 session、同一用户持续交互的 Agent，不适合短会话或无持续上下文需求的场景。\n\n### 行动项\n- 如正在构建长期使用的 Agent，可安装 OpenClaw 插件并观察 persona.md、scenario、atom 等中间产物。\n- 评估自己的 Agent 是否存在重复解释项目背景、偏好和 SOP 的问题，以判断是否需要长期记忆模块。\n- 借鉴 L0-L3 分层记忆模型设计可审计、可追溯的长期记忆系统。\n- 在长任务 Agent 中尝试使用 Mermaid、HTML 或其他紧凑符号表示压缩工具调用历史。\n- 对比 TDAI、mem0、Letta、Zep 等方案，选择本地优先或云托管路径。\n- 若不使用 OpenClaw 或 Hermes，可研究 TdaiCore 与 HostAdapter 的解耦方式，评估自定义适配成本。\n\n### 存档判定\n归档: 是 — 原因: 文章系统梳理了本地优先 Agent 长期记忆的分层架构、短期上下文压缩、集成方式和适用边界，对构建可调试记忆系统有较高参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1780386766303,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:72b97831054d7d1f015ba4dc1ebf5acf01d2f95abd4519fa6665045f79205d82",
+  "refs": {
+    "sessionId": "1780386309699_nhthlold"
+  },
+  "revisionId": "sha256:03a350170c3c80b48713cc1112c2c7213a2683a351972ba54a8cdb3a56ded8b7",
+  "schemaVersion": 1,
+  "updatedAt": 1780386766303
+}

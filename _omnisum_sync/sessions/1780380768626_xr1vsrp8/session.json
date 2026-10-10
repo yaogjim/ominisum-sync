@@ -1,0 +1,69 @@
+{
+  "createdAt": 1780380768626,
+  "entityType": "session",
+  "id": "1780380768626_xr1vsrp8",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为自己的代码仓库建立AGENTS.md，记录命名规范、运行方式、业务约束和常见坑。",
+      "将AI编程任务拆成代码理解、实施计划、局部修改、测试补全、PR审查几个阶段使用。",
+      "在重构、测试补全、性能排查等重复性任务中尝试让AI生成初稿，再人工审查。",
+      "整理一组类似文章中的提示词模板，用于日常开发复用。"
+    ],
+    "archiveReason": "包含OpenAI内部使用Codex的典型场景、提示词示例和可复用最佳实践，可作为AI辅助开发工作流参考。",
+    "classifiedAt": 1780381105305,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "OpenAI使用Codex实践",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "openai.com",
+    "favicon": "https://openai.com/favicon.svg",
+    "knowledgePoints": [
+      "Codex适合处理约一小时人工工作量、边界清晰、上下文充分的代码任务。",
+      "在提示中加入文件路径、组件名、diff、文档片段和现有模块范式，可以显著提升生成质量。",
+      "维护AGENTS.md可为Codex提供仓库级约定、业务逻辑、依赖和已知特殊情况。",
+      "Best-of-N可同时生成多个方案，用于比较实现思路并组合更优解。"
+    ],
+    "oneHighValuePoint": "先用Ask模式生成实施计划，再切换到Code模式执行，是降低复杂代码任务出错率的关键流程。",
+    "oneLineReview": "这是一篇偏产品宣传但实践价值较高的AI辅助编程工作流参考文章。",
+    "primaryCategory": "AI编程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "软件工程效率",
+      "工程实践"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结OpenAI内部团队使用Codex的七类场景，包括代码理解、重构迁移、性能优化、测试覆盖、提速开发、保持心流和方案探索，并给出任务拆分、上下文提供、环境配置、AGENTS.md等实践建议。",
+    "tags": [
+      "Codex",
+      "AI辅助编程",
+      "代码重构",
+      "测试生成",
+      "开发效率"
+    ],
+    "title": "How OpenAI uses Codex | OpenAI",
+    "totalScore": 71.5,
+    "url": "https://openai.com/business/guides-and-resources/how-openai-uses-codex/"
+  },
+  "payloadHash": "sha256:1f223c2a43c580d8818f4e387fcb1e3c17732ad9d3b5ff5f9c21188481b34ae3",
+  "refs": {},
+  "revisionId": "sha256:2b58a416f4639ea7ace5b38d9faf2c5a8c5435c2c41e7829c8a0512dc00effba",
+  "schemaVersion": 1,
+  "updatedAt": 1780384194918
+}

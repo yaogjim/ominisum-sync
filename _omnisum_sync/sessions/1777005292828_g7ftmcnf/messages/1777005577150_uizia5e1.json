@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777005577151,
+  "entityType": "message",
+  "id": "1777005577150_uizia5e1",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Hermes智能体自动化实战\n\n**评级**: B (68.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI智能体与自动化工作流\n**次类别**: Webhook集成, 开发工具实战\n**标签**: #Hermes Agent #Webhooks #自动化工作流 #GitHub #Telegram #定时任务\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇偏实操的Agent自动化入门案例集，启发性不错，但证据与抽象层次仍有限。\n**核心高价值点**: 最有价值的是把Webhook分成入站触发与出站调用两类，并分别用真实业务案例说明配置路径和适用场景。\n\n### 摘要\n文章以Hermes Agent为核心，讲解Webhook的入站与出站模式，并通过Beehiiv订阅提醒、GitHub自动PR审查、定时分析新闻并更新网站三个案例，展示如何把智能体接入真实业务流程。\n\n### 知识要点\n- Webhook本质是事件驱动的HTTP POST，可替代轮询触发Agent执行\n- Hermes既可作为Webhook接收方，也可作为主动发送HTTP请求的一方\n- 入站场景通常需要公开URL、路由配置、签名校验与提示词模板\n- 出站场景可结合定时任务、脚本和终端工具，把Agent结果推送到外部系统\n- GitHub PR自动审查流程依赖Webhook、CLI认证、Agent提示词和评论发布链路\n- 面向应用增强时，Agent可先分析RSS或业务数据，再以结构化JSON回写前端或后端接口\n\n### 行动项\n- 用文中的入站/出站框架梳理自己现有业务里可被Webhook触发的环节\n- 先复现一个最小可用案例，例如GitHub PR提醒或订阅通知到Telegram\n- 将定时任务与Agent结合，输出结构化JSON而非自然语言，便于系统集成\n- 补充安全与稳定性设计，如签名校验、重试机制、固定域名和监控告警\n\n### 存档判定\n归档: 是 — 原因: 包含3个较完整的自动化集成案例，可在实际搭建Agent触发链路时快速回看\n删除: 否\n留存决策: 短期参考后保留，适合作为搭建Webhook驱动Agent工作流的示例资料",
+    "role": "assistant",
+    "timestamp": 1777005577151,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:cf25d4753554b1d731c27891a098aff9a512f044413b8f0a95b6fbb000a79522",
+  "refs": {
+    "sessionId": "1777005292828_g7ftmcnf"
+  },
+  "revisionId": "sha256:a34d71079d3e28e98a3bad0b8efdee81703348ddfee21cd8d9c85684a7dfc391",
+  "schemaVersion": 1,
+  "updatedAt": 1777005577151
+}

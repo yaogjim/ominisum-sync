@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773262210_retk3tdg",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# codexthropic：让 Claude Code 直接调用 OpenAI Codex 后端\n\n## 一句话总结\n\n作者做了一个本地 Node.js 代理工具 **codexthropic**，把 **Anthropic Messages API** 翻译成 **OpenAI Codex Responses API**，让用户可以用 **Claude Code 作为前端**，连接 **OpenAI GPT-5.5 / Codex 后端** 来写代码。\n\n## 背景与动机\n\nClaude Code 被认为是当前体验很好的 AI 编程 Agent 前端，但它只能使用 Anthropic 协议。\n\n与此同时，OpenAI Codex / GPT-5.5 的代码能力也很强，但主要通过 OpenAI 自家的 Codex CLI 使用。\n\n**codexthropic 的价值在于：把 Claude Code 的交互体验和 OpenAI Codex 的模型能力连接起来。**\n\n## 核心能力\n\n### 1. 协议翻译\n\n工具在本地启动一个 Node 代理，将 Anthropic 的消息格式和 OpenAI Codex 的响应格式互相转换。\n\n例如：\n\n- Anthropic 的流式事件\n- Codex 的流式事件\n- 工具调用\n- 多轮上下文\n- 推理状态\n\n都会被代理层自动映射。\n\n### 2. 支持工具调用\n\n它能把 Anthropic 的 tool use 转换成 Codex 的 function calling。\n\n包括：\n\n- 工具定义转换\n- 工具调用转换\n- 工具结果转换\n- tool choice 策略映射\n\n这意味着 Claude Code 原本依赖的工具调用机制，在 Codex 后端上也能继续工作。\n\n### 3. 保持多轮推理连续性\n\n这是比较巧妙的一点。\n\nCodex 有加密的推理状态 `reasoning.encrypted_content`，需要在多轮调用中传递，才能保持连续推理。\n\ncodexthropic 的做法是：  \n把这个状态塞进 Anthropic 的 `thinking block signature` 字段里，让 Claude Code 原样带回，下一轮再恢复给 Codex。\n\n这样可以实现跨轮次推理不断链。\n\n### 4. 处理本地 Codex 认证\n\n工具会读取本地 `~/.codex/auth.json`，复用用户已经登录过的 Codex 认证信息。\n\n它还支持：\n\n- JWT 自动刷新\n- 并发刷新合并\n- 401 后强制刷新重试\n- 检测本地 token 文件变化\n- 原子写入，避免认证文件损坏\n\n## 使用方式\n\n使用很简单：\n\n```bash\nnpx codexthropic@latest\n```\n\n然后在另一个终端运行：\n\n```bash\nANTHROPIC_BASE_URL=http://127.0.0.1:8765 ANTHROPIC_API_KEY=any claude\n```\n\n要求：\n\n- Node.js 20+\n- 本地已完成 `codex login`\n- 使用 Claude Code 客户端\n\n## 产品与商业意义\n\n这个工具本质上是一个 **协议适配层**。\n\n它说明了一个趋势：  \nAI Agent 的前端体验、模型能力、工具生态正在逐渐解耦。\n\n未来用户可能不再被某一家厂商的完整闭环绑定，而是可以自由组合：\n\n- 最好的 Agent 前端\n- 最强的模型后端\n- 最适合自己的工具链\n- 本地化的认证和执行环境\n\n## 关键价值\n\n- 降低 Claude Code 与 OpenAI Codex 之间的使用壁垒\n- 让开发者复用熟悉的 Claude Code 工作流\n- 提供更灵活的模型后端选择\n- 体现了 API 代理和协议转换在 AI 工具生态中的重要性\n\n## 总结\n\ncodexthropic 是一个面向开发者的小工具，但它背后的意义不小：  \n它把不同 AI 编程生态之间的协议墙打通，让用户可以把 **Claude Code 的产品体验** 和 **OpenAI Codex 的模型能力** 组合起来使用。\n\n这类工具代表了 AI 应用生态中的一个重要方向：**模型、前端、工具和认证逐渐模块化，用户开始拥有更高的组合自由度。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d0a97613e2b7b5cdf948626fc89185306696a822016cf7dad3cd9d747bcd25c1",
+  "refs": {
+    "sessionId": "1777773261886_a2karj5e"
+  },
+  "revisionId": "sha256:d21c3546484a30694af31a8980a2fa0432a3552989a0081c0d1ea8633b6782b4",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

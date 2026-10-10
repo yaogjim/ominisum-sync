@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777333302147,
+  "entityType": "message",
+  "id": "1777333325155_xz1nl2gu",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章总结：ContextProvider——代理与工具之间缺失的中间层\n\n## 核心观点\n\n当 AI Agent 接入大量工具时，直接把所有工具暴露给主代理，会带来严重的上下文污染、工具冲突和性能下降。作者提出一种新架构：在 Agent 和工具之间加入 **ContextProvider（上下文提供者）**，让主代理只面对简化后的自然语言查询/更新接口。\n\n---\n\n## 现有 Agent 架构的三大问题\n\n### 1. 上下文污染严重\n\n每个工具都需要在提示词中写入 schema、描述、使用示例等信息。  \n当 Slack、Gmail、Calendar、Drive、GitHub、CRM 等工具叠加后，工具数量很容易超过 50 个。\n\n结果是：\n\n- 模型开始“幻觉”不存在的工具\n- 调错工具\n- 参数结构错误\n- 主代理上下文被工具说明占满\n\n---\n\n### 2. 工具作用域重叠，难以区分\n\n不同系统里经常有类似命名的工具或参数，例如：\n\n- `search` 可能来自 Slack、Drive、Notion\n- `send_message` 可能是发 Slack、邮件或 CRM 消息\n- `workspace` 在不同服务中含义不同\n\n模型很难稳定判断应该调用哪个工具，尤其当工具来自第三方 MCP、SDK 或其他团队时，命名规范也无法彻底解决。\n\n---\n\n### 3. 主代理被迫理解所有工具细节\n\n为了正确使用 Slack，提示词里要写：\n\n- 发消息前先查用户 ID\n- 发频道消息前先解析频道 ID\n- 如何分页\n- 如何处理 API 特殊规则\n\nGmail、Calendar、Drive 也都有类似规则。\n\n最终主代理不只要理解用户意图，还要理解每个 API 的调用逻辑，导致系统提示越来越臃肿，维护成本极高。\n\n---\n\n## 作者提出的方案：ContextProvider\n\n### 新架构\n\n传统方式是：\n\n```text\nAgent <- Tools\n```\n\n或：\n\n```text\nAgent <- MCP Server <- Tools\n```\n\n作者建议改为：\n\n```text\nAgent <-> ContextProvider\n```\n\n每个 ContextProvider 封装一个数据源，例如 Slack、Google Drive、数据库、文件系统等。\n\n---\n\n## ContextProvider 如何工作\n\n每个数据源只向主代理暴露两个自然语言工具：\n\n```text\nquery_<source>(问题)\nupdate_<source>(指令)\n```\n\n例如：\n\n- `query_slack`\n- `update_slack`\n- `query_drive`\n- `query_crm`\n- `update_crm`\n\n主代理不再看到 Slack 的十几个底层工具，也不需要理解 Slack 的调用细节。\n\n真正的复杂逻辑由 ContextProvider 背后的子代理处理，包括：\n\n- 工具选择\n- API 调用规则\n- 分页\n- ID 查询\n- 读写权限控制\n- 错误处理\n\n主代理只拿到干净的结果。\n\n---\n\n## 方案价值\n\n### 1. 降低主代理复杂度\n\n主代理只需要判断：\n\n> 我应该问哪个数据源？是查询还是更新？\n\n而不需要理解每个工具的具体调用方式。\n\n---\n\n### 2. 工具数量更可控\n\n如果有 N 个数据源，最多只暴露 `2N` 个工具。  \n相比直接暴露几十上百个底层工具，复杂度大幅降低。\n\n---\n\n### 3. 数据源可独立维护\n\n新增一个数据源只需加一行配置，移除也很简单。  \n更换底层供应商，例如 Web 搜索从 Exa 换成 Parallel，主代理无需感知。\n\n---\n\n### 4. 安全性更好\n\n读写可以拆成不同子代理和权限：\n\n- 只读代理负责查询\n- 写入代理负责修改\n- GitHub 示例中，代理可以读主分支，但只能在工作分支写入并生成 PR，不能直接推送主分支\n\n这让权限边界更清晰。\n\n---\n\n## 与 Skill 的关系\n\nSkill 可以把某类任务的说明从主提示词中拆出来，确实缓解了部分问题。\n\n但 Skill 仍然会让主代理直接面对底层工具。  \n当多个 Skill 同时加载时，工具冲突依旧存在。\n\n作者认为更好的方式是：\n\n> ContextProvider + Skill\n\n也就是让子代理加载对应数据源的 Skill，而不是让主代理加载所有 Skill。\n\n这样 Skill 只在真正操作某个数据源时生效，主代理保持简洁。\n\n---\n\n## 示例场景\n\n### 1. 数据库读写隔离\n\n通过不同子代理分别处理数据库读取和写入，确保权限安全。\n\n### 2. GitHub 读写分离\n\n代理可以读取主分支代码，但写入发生在独立 worktree 中，最终生成 PR，避免直接修改主分支。\n\n### 3. Slack + Web 联合分析\n\n代理从 Slack 频道提取话题，再进行网络搜索，最后生成内部讨论与外部资料对应的简报。\n\n### 4. MCP 包装\n\n一个包含 50 个工具的 MCP Server，可以被包装成单个：\n\n```text\nquery_<id>\n```\n\n主代理不再直接接触所有底层工具文档。\n\n---\n\n## 仍待解决的问题\n\n作者也提到一些开放问题：\n\n- 主代理提示词能否进一步缩短，甚至不写工具使用说明？\n- 同一会话内的查询结果如何缓存，避免重复执行？\n- 多用户 OAuth 授权如何在主代理和子代理之间稳定传递？\n- 什么情况下应该直接暴露底层工具，而不是封装进 ContextProvider？\n\n---\n\n## 一句话总结\n\n**ContextProvider 的本质，是把“如何使用工具”的复杂性从主代理中剥离，交给专门面向单一数据源的子代理处理，让主代理只负责意图理解和跨源编排。**\n\n这是一种更适合大规模工具接入、多数据源协作和企业级 Agent 架构的中间层设计。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777333302147,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4a3b1ee8a2e1fcad73127476be9d0bd0d284f0ec9781c25de4f309b1060c30d6",
+  "refs": {
+    "sessionId": "1777333325153_397daumv"
+  },
+  "revisionId": "sha256:d4cd5ee341979b925069e002c56620611b15c3e0941dac6c415f0278a60fdcca",
+  "schemaVersion": 1,
+  "updatedAt": 1777333302147
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774498708789,
+  "entityType": "session",
+  "id": "1774498708789_bcjzn526",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估是否可复用其多代理分工结构到自己的客服或销售通话分析场景",
+      "参考其模型路由和 MCP 集成方式，搭建一个最小可运行的内部自动化分析流程"
+    ],
+    "archiveReason": "提供了一个可运行的多智能体语音分析集成案例，适合后续做类似工作流时参考",
+    "classifiedAt": 1774502471512,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "多模型语音分析代理示例",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "多智能体可并行分工处理同一通话文本的不同分析任务",
+      "AI Gateway 可统一管理模型路由、鉴权、限流和可观测性",
+      "MCP 可把 LLM 生成的行动项直接接入外部项目管理工具"
+    ],
+    "oneHighValuePoint": "用单一 AI Gateway 统一路由多个不同模型，并通过 MCP 直接把行动项落到 Linear，展示了较完整的 AI 工作流闭环。",
+    "oneLineReview": "这是一个工程集成示例而非深度方法论文章，实操性不错，但证据和通用性一般。",
+    "primaryCategory": "AI应用工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为多模型代理编排的实现样例",
+    "secondaryCategories": [
+      "多智能体系统",
+      "LLM工具链集成"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该内容展示了一个基于 DeepAgents、TrueFoundry AI Gateway 和 Linear MCP 的语音通话分析代理示例。核心价值在于演示如何并行调用多个 LLM 完成情绪分析、行动项提取和通话辅导，并汇总为统一报告。",
+    "tags": [
+      "DeepAgents",
+      "TrueFoundry",
+      "LangGraph",
+      "Linear MCP",
+      "语音通话分析"
+    ],
+    "title": "truefoundry/tfy-voice-analyser-agent: Voice call analyzer using DeepAgents + TFY AI Gateway + Linear MCP",
+    "totalScore": 57.5,
+    "url": "https://github.com/truefoundry/tfy-voice-analyser-agent"
+  },
+  "payloadHash": "sha256:528bc12bdc054e5497668bb7f0a37ca615892b838d3f9b873544f5aa75b1e21b",
+  "refs": {},
+  "revisionId": "sha256:5e6da4e9d2f3b852520c831f548e73ca5fc3e672d834f533bc2fe9acd4307a87",
+  "schemaVersion": 1,
+  "updatedAt": 1774595153402
+}

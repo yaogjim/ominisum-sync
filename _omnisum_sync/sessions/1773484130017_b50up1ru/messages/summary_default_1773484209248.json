@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773484209248,
+  "entityType": "message",
+  "id": "summary_default_1773484209248",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "**精炼归纳：**  \nKarpathy 的 Autoresearch 本质上不是 “通用 AI 科学家”，而是一个高度约束的自动化优化闭环：只允许代理修改`train.py`，在固定 5 分钟预算内运行实验，用稳定指标`val_bpb`评估，提升则保留、无效则回滚。文章的核心观点是：真正让智能体变得 “有用” 的，不是更大自由度，而是清晰目标、稳定评测、可逆实验、日志追踪与故障恢复构成的强约束 harness。\n\n**2 句话评论批判：**  \n这篇文章的优点是把 “智能体能力” 讨论从炫技演示拉回到系统工程，准确指出评测稳定性、失败处理和回滚机制才是自治系统能否落地的关键。  \n但它也略微高估了这种框架的可迁移性，因为在单一文件、单一指标、单机硬件下成立的优化闭环，未必能自然扩展到开放研究、多目标权衡或复杂真实生产环境。\n\n**2 句话高价值内容：**  \n最有价值的启发是：`program.md`这类 “给代理的操作说明” 本身就是系统架构的一部分，未来很多 agent 产品的核心竞争力会在这层流程约束而不只是模型本身。  \n另一个高价值点是 “按固定墙钟时间优化” 比按固定 step 优化更贴近现实，因为真实世界往往受限于算力、延迟、成本和迭代速度，而不是理想化的离线指标。",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1773484209248,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:60e38d7255e617e4ea598ad6f59cbea3a805b53d76b474a25b6cd6f1bc1ca9ff",
+  "refs": {
+    "sessionId": "1773484130017_b50up1ru"
+  },
+  "revisionId": "sha256:b197e1b1c9ee3c7542ef00efcfbd63c972bfe63e032a98341dc8401e8bd1000e",
+  "schemaVersion": 1,
+  "updatedAt": 1773484209248
+}

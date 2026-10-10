@@ -1,0 +1,71 @@
+{
+  "createdAt": 1773655102641,
+  "entityType": "session",
+  "id": "1773655102641_b0z5h6b7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用“上下文文件系统”思路梳理现有Agent系统中的Memory、RAG、Tools与Human-in-the-loop模块",
+      "为上下文对象补充统一元数据、版本、来源和访问控制设计",
+      "在实际项目中建立Context Constructor、Loader、Evaluator三段式流水线",
+      "评估当前上下文管理是否存在临时拼接、不可追踪和知识漂移问题"
+    ],
+    "archiveReason": "提出了较系统的上下文工程架构视角，适合作为Agent与LLM系统设计的长期参考框架。",
+    "classifiedAt": 1773829316554,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "论文",
+    "classifyTitle": "上下文工程的文件系统抽象",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "arxiv.org",
+    "favicon": "",
+    "knowledgePoints": [
+      "上下文工程应覆盖选择、检索、压缩、加载、评估与刷新等完整生命周期",
+      "可用文件系统抽象统一承载记忆、工具、外部知识与人类输入等异构上下文",
+      "在Token窗口约束下，上下文构造需要显式设计选择、压缩与增量流式加载机制",
+      "上下文治理需要元数据、访问控制、可追溯性与验证机制支撑",
+      "人类在Agent系统中应承担策展、校验与共同推理角色，而非被完全移出环路"
+    ],
+    "oneHighValuePoint": "把分散的Prompt、RAG、Memory、Tool整合为可治理、可追踪、可验证的统一上下文基础设施，是其最有价值的贡献。",
+    "oneLineReview": "这是一篇概念框架很强、架构视角清晰，但实证支撑仍偏有限的上下文工程论文。",
+    "primaryCategory": "AI系统架构",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "上下文工程",
+      "Agent工程",
+      "软件工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将上下文工程提升到软件架构层，提出受Unix“万物皆文件”启发的文件系统抽象，用统一挂载、元数据与访问控制管理记忆、工具和知识源，并在AIGNE中实现上下文构造、加载与评估流水线，强调可验证性、治理性与人机协作。",
+    "tags": [
+      "上下文工程",
+      "文件系统抽象",
+      "AIGNE",
+      "Agent",
+      "LLM架构"
+    ],
+    "title": "Everything is Context: Agentic File System Abstraction for Context Engineering",
+    "totalScore": 78.5,
+    "url": "https://arxiv.org/html/2512.05470?_immersive_translate_auto_translate=1"
+  },
+  "payloadHash": "sha256:f3d66af491a53183c2a9a083378e0a7a1ad411b48a6828d6aec60704fe52db2e",
+  "refs": {},
+  "revisionId": "sha256:9cabb07ee347cec97560f44305500d424811c63ca52d183dce3c28d438b76823",
+  "schemaVersion": 1,
+  "updatedAt": 1773829316561
+}

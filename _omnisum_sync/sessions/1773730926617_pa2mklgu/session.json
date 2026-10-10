@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773730926617,
+  "entityType": "session",
+  "id": "1773730926617_pa2mklgu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如对 agent harness 感兴趣，直接查阅 DeepAgents 官方仓库和文档而非停留在该推文",
+      "对比 DeepAgents、Google ADK 等框架的架构、成本和可扩展性后再决定是否深入"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773730940005,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "DeepAgents框架推广短帖",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "短帖内容过于概述，缺乏可复用知识和证据，不足以支持后续参考价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "DeepAgents 被定位为构建和扩展 agent harness 的开源起点",
+      "作者强调 evals 与 dogfooding 对持续改进 agent 的重要性"
+    ],
+    "oneHighValuePoint": "提到 agent harness 中较关键的基础能力组合：文件系统、多模型、上下文管理与大工具调用卸载。",
+    "oneLineReview": "有方向感但几乎没有展开，适合当作线索，不适合作为知识资产留存。",
+    "primaryCategory": "AI Agent框架",
+    "rating": "D",
+    "rejectReason": "内容以宣传性表述为主，缺少具体技术细节、方法展开、性能对比和实证支撑，信息增量很低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "开发工具",
+      "社交媒体观点"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一则关于 DeepAgents 的宣传型推文，强调其作为内部 agent harness 的起点，支持文件系统、多模型、上下文压缩和工具调用卸载等能力，但未提供实现细节、评测数据或明确使用指南。",
+    "tags": [
+      "DeepAgents",
+      "LangChain",
+      "Harness Engineering",
+      "Agent Framework",
+      "X推文"
+    ],
+    "title": "Viv: the deepagents library is basically our starting point for doing harness enginee…",
+    "totalScore": 30.5,
+    "url": "https://x.com/Vtrivedy10/status/2033608199564067098"
+  },
+  "payloadHash": "sha256:97a4b1f1ff98d0c1f8648e9c3d25adfc29faf98522cbdbf93f0d087f79bb40f7",
+  "refs": {},
+  "revisionId": "sha256:0a108e4e6dac51380fec4139f515d80a1297d4c14ff83e2698bd8f4337e4f436",
+  "schemaVersion": 1,
+  "updatedAt": 1773730940008
+}

@@ -1,0 +1,69 @@
+{
+  "createdAt": 1777773132949,
+  "entityType": "session",
+  "id": "1777773132949_zg3wxp8j",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如非授权安全研究，不运行、不复现、不传播该工具。",
+      "若仅做防御研究，可记录其反欺诈观察点后删除原始仓库链接。",
+      "关注自身系统是否存在类似协议重放、验证码自动化和批量注册绕过风险。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777773610179,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 2,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 3,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "支付重放与反欺诈工具评估",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "具备明显滥用风险，可能被用于规避支付、批量注册或绕过平台风控；与一般学习资料相比保留风险大于收益。",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "支付订阅链路可能涉及 Stripe、PayPal、OAuth、PKCE、人工审批等多个协议阶段。",
+      "验证码自动化求解通常结合 VLM、CLIP/OpenCV 启发式方法和浏览器行为模拟。",
+      "平台反欺诈可能采用 IP 指纹、批次关联、probe 层与 ban 层分离等多层机制。",
+      "无人值守自动化系统需要代理切换、DNS 配额清理、进程回收、滑块处理等自愈模块。"
+    ],
+    "oneHighValuePoint": "对反欺诈机制中 IP 指纹、批次关联和延迟封禁的观察具有一定安全研究参考价值。",
+    "oneLineReview": "技术细节不少，但核心用途过于灰色，保留价值有限且风险较高。",
+    "primaryCategory": "网络安全风险研究",
+    "rating": "C",
+    "rejectReason": "内容涉及订阅支付协议重放、验证码自动求解、批量账号存活与反欺诈规避，法律和平台合规风险较高；工程实现也偏粗放，长期学习价值有限。",
+    "retentionDecision": "建议删除，仅在明确授权的安全研究场景下短期隔离参考",
+    "secondaryCategories": [
+      "协议逆向",
+      "自动化工具",
+      "反欺诈机制"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该仓库介绍了一个针对 ChatGPT 订阅链路的端到端协议重放工具，包含 hCaptcha 自动求解、代理与自愈 daemon、反欺诈实测数据等。信息较密集但用途高度敏感，存在明显合规与滥用风险。",
+    "tags": [
+      "支付协议重放",
+      "hCaptcha求解",
+      "反欺诈",
+      "浏览器自动化",
+      "高风险工具"
+    ],
+    "title": "DanOps-1/Gpt-Agreement-Payment: ChatGPT Plus/Team/Pro 订阅协议端到端重放工具集 · hCaptcha 视觉求解器 · 反欺诈机制实证研究 / End-to-end protocol replay toolkit for ChatGPT Plus/Team/Pro subscription with from-scratch hCaptcha solver and empirical anti-fraud research",
+    "totalScore": 44,
+    "url": "https://github.com/DanOps-1/Gpt-Agreement-Payment"
+  },
+  "payloadHash": "sha256:44d8ce3d5365f7447af208c69c9d2c36e03060ecf15b4e99390efa2394c14893",
+  "refs": {},
+  "revisionId": "sha256:4994d9ffe20dbadbe55fb28f0c06638d86c96a8978052db478c54cc36269689a",
+  "schemaVersion": 1,
+  "updatedAt": 1777774571031
+}

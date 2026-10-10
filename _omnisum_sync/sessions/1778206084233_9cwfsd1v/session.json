@@ -1,0 +1,85 @@
+{
+  "createdAt": 1778206084233,
+  "entityType": "session",
+  "id": "1778206084233_9cwfsd1v",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在设计LangGraph应用时，根据状态更新模式选择LastValue、Topic、BinaryOperatorAggregate或DeltaChannel。",
+      "对长对话或大规模累积状态检查checkpoint体积，若随线程长度线性增长则评估引入DeltaChannel。",
+      "为DeltaChannel设置合适的snapshot_frequency，在存储成本和读取延迟之间权衡。",
+      "深入阅读StateGraph编译后的nodes和channels结构，以理解高层API与Pregel运行时的映射关系。"
+    ],
+    "archiveReason": "官方运行时文档，解释LangGraph底层执行模型、通道机制和DeltaChannel优化，对构建复杂智能体工作流有持续参考价值。",
+    "classifiedAt": 1780615860011,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 7,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "LangGraph Pregel运行时机制",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "docs.langchain.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://langchain-5e9cc07a.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DLangGraph%2BAPIs%26appearance%3Dsystem%26title%3DLangGraph%2Bruntime%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Flangchain-5e9cc07a%252FnQm-sjd_MByLhgeW%252Fimages%252Fbrand%252Flangchain-docs-dark-blue.png%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DnQm-sjd_MByLhgeW%2526q%253D85%2526s%253D5babf1a1962208fd7eed942fa2432ecb%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Flangchain-5e9cc07a%252FnQm-sjd_MByLhgeW%252Fimages%252Fbrand%252Flangchain-docs-light-blue.png%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DnQm-sjd_MByLhgeW%2526q%253D85%2526s%253D0bcd2a1f2599ed228bcedf0f535b45b1%26primaryColor%3D%2523161F34%26lightColor%3D%25237FC8FF%26darkColor%3D%2523006DDD%26backgroundLight%3D%2523FFFFFF%26backgroundDark%3D%2523030710&w=1200&q=100",
+        "role": "hero",
+        "score": 70,
+        "src": "https://langchain-5e9cc07a.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DLangGraph%2BAPIs%26appearance%3Dsystem%26title%3DLangGraph%2Bruntime%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Flangchain-5e9cc07a%252FnQm-sjd_MByLhgeW%252Fimages%252Fbrand%252Flangchain-docs-dark-blue.png%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DnQm-sjd_MByLhgeW%2526q%253D85%2526s%253D5babf1a1962208fd7eed942fa2432ecb%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Flangchain-5e9cc07a%252FnQm-sjd_MByLhgeW%252Fimages%252Fbrand%252Flangchain-docs-light-blue.png%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DnQm-sjd_MByLhgeW%2526q%253D85%2526s%253D0bcd2a1f2599ed228bcedf0f535b45b1%26primaryColor%3D%2523161F34%26lightColor%3D%25237FC8FF%26darkColor%3D%2523006DDD%26backgroundLight%3D%2523FFFFFF%26backgroundDark%3D%2523030710&w=1200&q=100",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "Pregel运行时采用Bulk Synchronous Parallel模型，每步包含Plan、Execution、Update三个阶段。",
+      "Actor以PregelNode形式存在，订阅通道、读取数据并向通道写入更新。",
+      "Channel通过值类型、更新类型和更新函数定义数据传递与状态演化方式。",
+      "DeltaChannel适合频繁写入且长期增长的大型状态，但要求bulk reducer具有关联性。"
+    ],
+    "oneHighValuePoint": "DeltaChannel通过仅存储增量并配合snapshot_frequency控制读取延迟，可显著优化长线程、大状态场景下的 checkpoint 存储成本。",
+    "oneLineReview": "这是理解LangGraph底层执行语义和状态通道设计的高价值官方文档。",
+    "primaryCategory": "AI工程与智能体框架",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "LangGraph",
+      "运行时架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍LangGraph Pregel运行时的核心机制，包括actor、channel、Plan-Execution-Update三阶段执行模型，以及LastValue、Topic、BinaryOperatorAggregate、DeltaChannel等通道类型和适用场景。",
+    "tags": [
+      "LangGraph",
+      "Pregel",
+      "StateGraph",
+      "DeltaChannel",
+      "并行计算"
+    ],
+    "title": "LangGraph runtime - Docs by LangChain",
+    "totalScore": 73.5,
+    "url": "https://docs.langchain.com/oss/python/langgraph/pregel#deltachannel-beta"
+  },
+  "payloadHash": "sha256:d7f7a2390cc99b6b4e82daa00452bdf239d99306dab9cea71d490ff207898d15",
+  "refs": {},
+  "revisionId": "sha256:531a9ed92d4323301c67790737fd644326695227dbd17a87159d7db0fe80d28a",
+  "schemaVersion": 1,
+  "updatedAt": 1780615860631
+}

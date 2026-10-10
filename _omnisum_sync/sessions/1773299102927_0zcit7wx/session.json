@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773299102927,
+  "entityType": "session",
+  "id": "1773299102927_0zcit7wx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将五层框架改写为适合自己场景的研究提示词模板并试跑一次",
+      "对比普通AI总结与Drill式分析在同一主题下的输出差异，验证实际价值"
+    ],
+    "archiveReason": "包含可复用的五层分析框架和实际使用示例，可作为后续提示词与研究流程设计参考。",
+    "classifiedAt": 1773830259418,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Drill项目方法与功能概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "可用五层分析框架替代普通AI摘要式研究流程",
+      "高质量研究应包含对关键假设的显式拆解与对抗式验证"
+    ],
+    "oneHighValuePoint": "最有价值的是将深度研究拆成“材料收集—隐性共识—假设拆解—对抗验证—高质量问题”五层流程，便于复用。",
+    "oneLineReview": "方法框架有启发，但更像产品宣传页而非经过充分验证的高质量研究文档。",
+    "primaryCategory": "AI分析方法与效率工具",
+    "rating": "B",
+    "rejectReason": "仓库主页偏宣传材料，证据与效果验证不足，难以支撑更高评级。",
+    "retentionDecision": "短期参考后保留方法论部分",
+    "secondaryCategories": [
+      "提示词工程",
+      "战略分析框架"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该项目是一个面向Claude Code的分析技能包，主打通过自动搜索与五层框架，将表层信息整理升级为更具对抗性和决策价值的深度分析。内容展示了安装方式、使用示例与核心方法论，但实证支撑较弱。",
+    "tags": [
+      "Claude Code",
+      "AI研究助手",
+      "分析框架",
+      "市场研究",
+      "决策支持"
+    ],
+    "title": "pingfanfan/Drill",
+    "totalScore": 58.5,
+    "url": "https://github.com/pingfanfan/Drill"
+  },
+  "payloadHash": "sha256:53ce33d53754b8f8698af3a1f9299b3b8d1fe4334f6f576bef855d5e4d189f8f",
+  "refs": {},
+  "revisionId": "sha256:1734911a164a3a28884386ff7a350022476f9f8d5c28e46464a433915ab4391b",
+  "schemaVersion": 1,
+  "updatedAt": 1773830259423
+}

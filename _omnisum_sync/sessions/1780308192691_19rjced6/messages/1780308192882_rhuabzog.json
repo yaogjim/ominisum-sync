@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780308075248,
+  "entityType": "message",
+  "id": "1780308192882_rhuabzog",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\n作者分享了一套 **AI 编程工作流**：\n\n- **GPT-5.5**：负责“干活”，像执行机器一样写代码  \n- **DeepSeek-V4-Pro**：负责更偏思考的环节，如：\n  - Plan 规划\n  - Design 设计\n  - Review 审查\n  - Test 测试方案\n- 每晚设定一个 **Goal**\n- 将 Goal 拆成多个 **Phase**\n- 每个 Phase 流程是：\n\n```text\n写测试 → 写代码 → Code Review → 简化代码 → 跑测试 → 修正 → Commit\n```\n\n评论区主要关注：\n\n- Codex 最近是否变慢\n- DeepSeek 和 Codex 各自适合什么任务\n- 工具界面如何实现\n- Agent 交互是否太繁琐\n\n---\n\n## 二、解读\n\n这条内容的核心不是“哪个模型最强”，而是：\n\n> 把 AI 当成团队里的不同角色来用。\n\n简单说：\n\n- **强执行模型**：适合快速写代码、改代码\n- **强推理模型**：适合规划、设计、评审、找问题\n- **测试先行**：先定义结果，再让 AI 实现\n- **分阶段推进**：避免一次性让 AI 做太大任务，减少失控\n- **Review + Simplify**：防止 AI 写出臃肿、过度设计的代码\n\n这其实是一种比较成熟的 **AI 软件开发流水线**。\n\n不是简单地说：\n\n> “帮我写个功能”\n\n而是变成：\n\n> “先拆任务，再写测试，再实现，再审查，再修正。”\n\n这会显著提高 AI 编程的可靠性。\n\n---\n\n## 三、我的意见\n\n我认为这套方法很实用，尤其适合中大型项目。\n\n但关键不在模型名字，而在流程：\n\n> 好流程 > 好模型。\n\n建议普通开发者可以简化成这样：\n\n```text\n1. 让 AI 先拆任务\n2. 每次只做一个小功能\n3. 先写测试或验收标准\n4. 再让 AI 写代码\n5. 让另一个模型 Review\n6. 跑测试后再提交\n```\n\n最值得借鉴的是这句话：\n\n> 不要让 AI 一口气“自由发挥”，要让它在明确流程里干活。\n\nAI 越强，越需要流程约束。否则它只是更快地把问题放大。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780308075248,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4f217dd1145d832b7c113862ca4b2fc4d0a77e76f937710410b86d4c909b6b2c",
+  "refs": {
+    "sessionId": "1780308192691_19rjced6"
+  },
+  "revisionId": "sha256:e42ff88411eb4dbbb261c090d750ac356be9368b819084892d08fb5d035f56cf",
+  "schemaVersion": 1,
+  "updatedAt": 1780308075248
+}

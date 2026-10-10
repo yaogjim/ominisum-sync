@@ -1,0 +1,74 @@
+{
+  "createdAt": 1774603389721,
+  "entityType": "session",
+  "id": "1774603389721_az9y00ry",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估是否用 Obsidian 为自己或家人建立统一健康档案与复查时间线",
+      "参考开源模板，抽取可复用的 Prompt 设计到自己的 AI 工作流中"
+    ],
+    "archiveReason": "包含可直接复用的工具组合、Prompt结构和健康管理流程设计，对后续搭建个人知识库或长期管理型产品有参考价值",
+    "classifiedAt": 1774606219257,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "本地AI家庭健康管理方案",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "我是一名资深产品经理，对科技、ai、商业、产品、社会等有深刻理解。\n请对我提供的多个内容综合分析提炼，思考和推演对我在产品的实践上有哪些启发？以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "可用 Claude Code + Obsidian + 日历提醒快速搭建本地家庭健康档案系统",
+      "通过模板和 Prompt 将体检报告、药盒照片、Apple Watch 数据转成结构化记录",
+      "长期健康管理的核心不是一次性体检，而是持续更新、趋势跟踪和复查提醒"
+    ],
+    "oneHighValuePoint": "最有价值的是把分散的体检、用药、复查和可穿戴设备数据统一进本地知识库，再通过AI做结构化提取与持续追踪。",
+    "oneLineReview": "这是一个很强的AI工作流案例，但更像可复用实践清单，而不是经过验证的健康管理方法论。",
+    "primaryCategory": "AI应用实践",
+    "rating": "B",
+    "rejectReason": "证据主要来自个人经验与项目说明，缺少医学验证、效果对照和系统化评估，不能作为严肃健康决策依据",
+    "retentionDecision": "短期参考并归档，适合作为个人AI工作流和家庭健康档案搭建案例保留",
+    "secondaryCategories": [
+      "健康数据管理",
+      "个人知识库",
+      "产品启发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/runes_leo/status/2036468625171763599",
+      "https://x.com/runes_leo/status/2036703713117491409",
+      "https://github.com/runesleo/ai-health-vault/blob/main/README_CN.md"
+    ],
+    "summaryBrief": "文章介绍作者用 Claude Code、Obsidian 和本地模板搭建家庭健康管理系统的实践，包括体检报告提取、药盒识别、趋势分析、复查提醒和面向老人沟通的口语化输出，并开源了模板与 Prompt。",
+    "tags": [
+      "Claude Code",
+      "Obsidian",
+      "健康管理",
+      "家庭档案",
+      "Prompt工程"
+    ],
+    "title": "AI时代长期管理型产品启示",
+    "totalScore": 64.5,
+    "url": "omnisun://digest/1774603389721"
+  },
+  "payloadHash": "sha256:a4385a73774e21cba53bdf863c78b8de91d71b72287628bd8e22f9055ba8747e",
+  "refs": {},
+  "revisionId": "sha256:ed0aeb8615665deba82e33a90226c52ad9f8727c7a910d7deed43118a2e9f79c",
+  "schemaVersion": 1,
+  "updatedAt": 1774606219262
+}

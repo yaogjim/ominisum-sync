@@ -1,0 +1,70 @@
+{
+  "createdAt": 1776131949923,
+  "entityType": "session",
+  "id": "1776131949923_ybm7bxpa",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审视当前团队流程，找出规划、测试、发布和反馈环中最先限制AI产能的瓶颈。",
+      "优先补齐可观测性、自动化测试、确定性流水线和特性开关，而不是只增加代码生成工具。",
+      "评估是否需要通过monorepo或统一接口提升代理对系统全局的可见性。",
+      "在小范围内建立“代理开发 + 人类审核风险”的试点流程，并用A/B测试和发布频率验证收益。"
+    ],
+    "archiveReason": "提供了较完整的AI原生工程流程、组织分工与技术栈重构思路，适合作为团队转型参考样本。",
+    "classifiedAt": 1776131964705,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI原生工程重构实践",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI优先的核心是围绕代理重设计工程流程，而非在旧流程上叠加AI工具。",
+      "统一代码库、确定性CI/CD、结构化日志和自动化测试是让代理稳定参与生产开发的关键基础设施。",
+      "工程组织将从大量人工编码转向少数架构师制定SOP与护栏、多数操作者负责验证与风险判断。",
+      "若产品、QA、营销等任一环节仍按人类速度运行，就会重新成为整体系统瓶颈。"
+    ],
+    "oneHighValuePoint": "最有价值的点是把“AI优先”定义为系统级重构：让规划、验证、部署、监控和分诊全链路都可被代理理解与执行，而不是只提升写代码效率。",
+    "oneLineReview": "这是一篇高信号的AI原生工程改造案例文，方法框架强，但证据强度仍不足以支持普遍结论。",
+    "primaryCategory": "AI工程组织与流程重构",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "AI原生软件开发",
+      "工程管理与DevOps"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以一家小团队实践为例，论证“AI优先”不等于给现有流程外挂AI，而是要围绕代理重构规划、开发、测试、部署和组织结构。其价值在于给出了较完整的流程设计与角色重定义，但证据主要来自单一案例，数据严谨性有限。",
+    "tags": [
+      "AI优先",
+      "工程流程重构",
+      "monorepo",
+      "CI/CD",
+      "自动化测试",
+      "组织变革"
+    ],
+    "title": "为什么你的“AI 优先”策略可能是错误的",
+    "totalScore": 76.5,
+    "url": "https://x.com/intuitiveml/status/2043545596699750791"
+  },
+  "payloadHash": "sha256:97f9db26eba6c7ea6745cce652bfa24e3e277b41dc83e5c62497697c0cf12f36",
+  "refs": {},
+  "revisionId": "sha256:e3275dec31e470d60b072cbeec0e49bf7482e5c3baeb80bd5ef06e71bd3204cb",
+  "schemaVersion": 1,
+  "updatedAt": 1776404823513
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776826940689,
+  "entityType": "session",
+  "id": "1776826940689_0goxvfj8",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估是否将本地文件式会话存储引入自己的 AI 研究或编码代理系统",
+      "参考其 plan-fetch-digest-write 循环与错误码设计，抽象出可复用的代理任务执行框架"
+    ],
+    "archiveReason": "提供了较完整的代理研究工作流设计、命令用法、会话存储结构与方法论，适合后续参考实现类似系统。",
+    "classifiedAt": 1776831054563,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "增量式代理研究CLI项目说明",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "用 session.md 与 session.jsonl 组合实现可恢复的跨会话研究状态管理",
+      "通过 wiki、图表、错误码和覆盖率信号把研究流程约束成可持续积累的代理工作流"
+    ],
+    "oneHighValuePoint": "最有价值的是将代理“长期记忆”外置为可审查、可编辑、可恢复的本地文件会话格式，从而让研究任务真正支持跨轮次累积。",
+    "oneLineReview": "这是篇偏工程说明文档，方法论和落地性都不错，但证据主要来自作者自述，缺少更严谨的效果验证。",
+    "primaryCategory": "AI Agent 工具与工作流",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "研究自动化",
+      "开发者工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个面向 AI 代理的增量研究 CLI，通过磁盘持久化会话、事件日志、wiki 与图表生成，使研究任务可跨会话续跑。内容兼具产品定位、架构思路、命令示例与集成方式，对构建可持续学习型代理有较强参考价值。",
+    "tags": [
+      "AI代理",
+      "Research CLI",
+      "长期记忆",
+      "增量研究",
+      "Rust"
+    ],
+    "title": "actionbook/ascent-research: research cli for agent",
+    "totalScore": 73,
+    "url": "https://github.com/actionbook/ascent-research"
+  },
+  "payloadHash": "sha256:d94e96d5b7918e5c91f734147160ff5dd73658af2b96ddbbe64d6681d0978770",
+  "refs": {},
+  "revisionId": "sha256:dd937fb888d2d82a1eda60ec5be5497d7e51b734436fe45d73c9614049543f8a",
+  "schemaVersion": 1,
+  "updatedAt": 1776831054568
+}

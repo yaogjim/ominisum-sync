@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777627739372,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1777627739372",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Codex++ 项目总结：用硬核工程给 Codex 桌面版 “补上插件系统”\n\n## 一句话概括\n\nCodex++ 是一个为**OpenAI Codex 桌面应用**打造的非官方插件系统。由于 Codex 本身是闭源、签名、无扩展机制的 Electron 应用，Codex++ 通过修改应用包、绕过完整性校验、处理签名和自动更新等方式，把插件能力 “硬注入” 进去。\n\n---\n\n## 项目核心价值\n\nCodex++ 不是普通的 monkey patch，而是一套完整的工程化扩展方案。\n\n它解决的问题是：\n\n- Codex 桌面端没有官方插件机制；\n- 应用是闭源且代码签名的；\n- Electron 自带完整性校验；\n- macOS 会阻止被篡改应用运行；\n- 自动更新机制 Sparkle 又依赖官方签名。\n\n换句话说，它是在一个几乎不允许扩展的封闭应用里，强行搭建出插件系统。\n\n---\n\n## 四层技术突破\n\n## 1. 修改 asar 应用包\n\nCodex 是 Electron 应用，核心代码打包在`app.asar`中。\n\nCodex++ 会：\n\n- 解包`app.asar`；\n- 修改`package.json`的`main`入口；\n- 把原入口替换成自己的`loader.cjs`；\n- 同时保留原始 unpacked 文件结构，避免模块加载失败；\n- 使用临时文件 + rename 的方式重打包，防止写坏应用。\n\n这一层相当于把 Codex 的启动入口劫持到自己的加载器。\n\n---\n\n## 2. 更新完整性校验\n\nElectron 会校验 asar header 的 SHA-256 哈希，这个值存储在 macOS 的`Info.plist`中。\n\n修改 asar 后，Codex++ 会同步更新这个哈希值，否则应用会因为完整性校验失败而无法正常运行。\n\n---\n\n## 3. 关闭 Electron Fuse 校验\n\nElectron Framework 中有一组 fuse 开关，用来控制安全能力。\n\nCodex++ 会通过固定 sentinel 字符串定位 fuse 区域，并将其中的：\n\n`EnableEmbeddedAsarIntegrityValidation`\n\n从开启改为关闭。\n\n这相当于进一步关闭 Electron 对嵌入 asar 的完整性验证，和第二层哈希更新形成双保险。\n\n---\n\n## 4. 重新签名应用\n\n修改应用后，原本的 Developer ID 签名会失效。\n\nCodex++ 使用 macOS 的`codesign`做 ad-hoc 重签名，让系统不拦截应用启动。\n\n这一步解决的是 macOS 安全机制层面的运行问题。\n\n---\n\n## 插件加载设计：优先保证 Codex 不崩\n\nCodex++ 注入的`loader.cjs`只有约 70 行，设计原则很明确：\n\n> 插件系统崩了，不能带崩 Codex。\n\n它把所有逻辑包在安全函数中：\n\n- 出错只写日志；\n- 不中断主流程；\n- 最终一定执行原始 Codex 入口。\n\n这体现了很强的工程克制：扩展系统只是增强层，不能影响主应用稳定性。\n\n---\n\n## Runtime 注入：从混淆代码中找内部服务\n\nCodex 的前端 bundle 是压缩混淆过的，内部变量名不可读。\n\nCodex++ 的做法是用 fingerprint 匹配：\n\n- 搜索包含`buildFlavor`的工厂函数；\n- 检查其中是否同时包含`allowDevtools`、`preloadPath`、`globalState`等多个特征属性；\n- 命中后回溯找到对应变量；\n- 再注入到`globalThis.codexpp_window_services`。\n\n这不是简单字符串替换，而是接近 JS AST 级别的源码补丁。\n\n---\n\n## 自动更新兼容：最精巧也最脆弱的一环\n\nCodex 使用 Sparkle 做自动更新，而 Sparkle 要求应用有有效的 Developer ID 签名。\n\n但 Codex++ 修改后的应用只有 ad-hoc 签名，无法直接更新。\n\n它的解决方案是：\n\n1. hook Node 的`Module._load`；\n2. 拦截 Sparkle 的`installUpdatesIfAvailable`；\n3. 更新前把备份的原始签名应用复制回来；\n4. 让 Sparkle 正常完成官方更新；\n5. 更新后由`launchd`监听`app.asar`变化；\n6. 自动重新执行 Codex++ 的修复和注入流程。\n\n最终实现用户无感自动更新。\n\n---\n\n## 工程评价\n\nCodex++ 的厉害之处在于，它不是单点 hack，而是覆盖了完整生命周期：\n\n- 启动入口劫持；\n- 完整性校验处理；\n- Electron fuse 修改；\n- macOS 重签名；\n- 混淆代码识别；\n- 运行时内部对象暴露；\n- 自动更新兼容；\n- 崩溃隔离与恢复机制。\n\n这是一套从二进制层、应用包层、JS 运行时层到更新系统层的完整工程体系。\n\n---\n\n## 风险与局限\n\n这个方案也有明显脆弱性：\n\n- 依赖当前 Codex 应用内部结构；\n- OpenAI 只要改 bundle 结构，fingerprint 可能失效；\n- Sparkle hook 和 fuse 修改都属于非官方路径；\n- 每次客户端更新都可能导致补丁失效；\n- 长期稳定性无法保证。\n\n因此它适合技术探索和高阶玩家使用，不适合作为长期稳定依赖。\n\n---\n\n## 产品视角启发\n\nCodex++ 反映了一个明确信号：\n\n> 高价值 AI 工具如果缺少官方扩展机制，用户和开发者会用工程手段自行撬开生态。\n\n这说明 Codex 这类 AI Coding 产品未来可能需要：\n\n- 官方插件系统；\n- 可控的扩展 API；\n- 安全沙箱机制；\n- 插件市场；\n- 多 Agent /workflow 能力；\n- 更开放的本地自动化接口。\n\n否则，民间扩展会持续以非官方方式出现，并承担更高安全和维护成本。\n\n---\n\n## 总结\n\nCodex++ 是一个工程水准极高的非官方插件系统项目。它通过修改 Electron 应用包、绕过完整性验证、重新签名、源码注入和自动更新修复等手段，为封闭的 Codex 桌面端强行增加扩展能力。\n\n它的意义不只在技术炫技，更在于揭示了 AI 编程工具生态的一个方向：**用户需要更开放、更可扩展、更可组合的智能开发平台。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1777627739372,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bf035910c96d9af9c4679f0db208e68525ba010b249bed907cc962fc977df61f",
+  "refs": {
+    "sessionId": "1777627739404_mdbwbu8e"
+  },
+  "revisionId": "sha256:0c6796dd60f6e6de20ffcacab497d737304ec755baac4071badf813791b5792a",
+  "schemaVersion": 1,
+  "updatedAt": 1777627739372
+}

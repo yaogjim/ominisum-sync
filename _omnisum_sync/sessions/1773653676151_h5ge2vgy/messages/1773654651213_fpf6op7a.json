@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773654606389,
+  "entityType": "message",
+  "id": "1773654651213_fpf6op7a",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这不是一个“更强的 coding agent”，而是把 AI 开发从“人盯代理执行”升级为“系统按工作单元自动编排”。`Symphony` 的核心价值，在于把任务管理、执行隔离、验收证明、合并落地串成一条可运营的交付流水线。\n\n**产品解读**\n- 从“监督 AI”转向“管理工作”：产品对象不再是单个 agent，而是 `work item -> run -> proof -> acceptance -> merge` 的闭环。\n- 面向团队协作而非个人提效：它监听 `Linear` 这类任务系统，说明入口是团队已有流程，而不是让工程师手动发 prompt。\n- 强调“可验收的自动化”：不是只产出代码，而是同时产出 `CI 状态`、`PR review`、`complexity analysis`、`walkthrough video`，本质是给组织一个“可审计的 AI 交付包”。\n- 把 AI 开发纳入工程治理：安全合并、隔离运行、任务级自主执行，说明它瞄准的是研发管理和交付效率，不只是代码生成。\n\n**技术架构解读**\n- `isolated run` 是系统核心：每个任务独立环境、独立上下文、独立执行轨迹，避免多任务串扰、上下文污染和权限扩散。\n- 事件驱动编排：典型链路应是 `任务系统 webhook -> 调度器 -> worker/agent run -> CI/Review/Artifact 汇总 -> 回写任务系统/PR`。\n- 多代理不是重点，编排层才是重点：真正壁垒不在“调用哪个模型”，而在任务拆分、上下文注入、状态机、失败恢复、证据归档。\n- “proof of work” 是比代码更重要的产物：系统必须能回答“为什么这段改动可信、是否通过验证、风险在哪”。\n\n**设计实现的关键最佳实践**\n- **任务状态机先行**：定义清晰状态，如 `queued / preparing / implementing / validating / awaiting-review / accepted / merged / failed`，不要靠日志推断流程。\n- **执行环境强隔离**：每个 run 使用独立分支、临时工作区、最小权限凭证；理想形态是容器或远程沙箱，而不是共享本地 runner。\n- **上下文分层注入**：给 agent 的上下文分成三层：任务描述、仓库规则、局部代码上下文。避免把整个仓库和所有历史对话都塞进去。\n- **验收标准结构化**：任务卡必须带 `目标 / 非目标 / 验收条件 / 风险约束`，否则 agent 很容易“写了很多，但没解决问题”。\n- **先验证后提交**：实现链路应固定为 `code -> test -> static analysis -> PR comment -> human/auto gate -> merge`，不要让 agent 直接落主分支。\n- **失败可恢复**：运行失败后要保留中间产物、日志、diff、模型推理摘要，支持重试和人工接管，而不是整条链路重跑。\n\n**一个推荐的落地架构例子**\n- 入口层：监听 `Linear/Jira/GitHub Issues`，只消费带明确标签的任务，如 `ai-ready`。\n- 编排层：调度器读取任务模板，生成 run plan，分配到对应 worker。\n- 执行层：worker 拉代码、创建分支、调用 coding agent 实现。\n- 验证层：自动跑 `unit test / lint / type check / integration smoke test`。\n- 证据层：生成 `PR 描述`、测试结果、风险说明、变更摘要、必要时录制 walkthrough。\n- 治理层：根据规则自动合并，或进入人工审批。\n\n一个简化流程可以是：\n\n```text\nLinear任务进入“In Progress”\n-> Symphony创建隔离run\n-> agent读取任务+仓库规范+相关代码\n-> 生成改动并提交分支\n-> CI执行测试和静态检查\n-> 自动生成PR与变更说明\n-> Review bot给出风险与复杂度分析\n-> 满足门禁后自动merge\n-> 回写Linear状态与结果\n```\n\n**产品经理视角的最佳实践**\n- 不要一开始就做“全自动”，先从低风险任务切入：测试补全、文档更新、小型 CRUD、内部工具。\n- 任务模板化比模型升级更重要：高质量任务卡能显著提升成功率。\n- 先定义“不允许 agent 做什么”：例如数据库 schema 破坏性变更、支付逻辑、权限系统核心路径。\n- 用 SLA 管理 AI 执行：如“30 分钟内产出 PR，失败自动转人工”，而不是无限重试。\n\n**工程实现视角的最佳实践**\n- 仓库必须有“机器可读规范”：如 `CONTRIBUTING.md`、测试命令、代码风格、模块边界说明。\n- 提前建设 harness engineering：标准启动命令、可重复测试、确定性脚本、无交互式依赖，这是 Symphony 能跑起来的前提。\n- 观测性必不可少：每个 run 记录 `输入任务、使用上下文、执行步骤、token/耗时、测试结果、失败原因`。\n- 合并门禁要硬编码：例如必须 `CI 通过 + 无高危 review finding + owner approval` 才能 merge。\n\n**一个高质量任务卡示例**\n```text\n标题：为订单页增加“导出 CSV”功能\n\n目标：\n- 用户可在订单列表页导出当前筛选结果为 CSV\n\n非目标：\n- 不做异步导出\n- 不支持超大数据量分片下载\n\n验收条件：\n- 保持现有筛选条件生效\n- CSV 包含订单号、用户、金额、状态、创建时间\n- 前后端测试通过\n- 不影响现有分页性能\n\n约束：\n- 复用现有权限校验\n- 不新增第三方导出库\n```\n\n这种任务比“给订单页加导出功能”更适合 Symphony，因为 agent 能直接围绕验收条件执行。\n\n**你可以如何判断 Symphony 是否值得引入**\n- 适合：任务流标准化、PR/CI 流程成熟、代码库测试基础较好、有大量中低复杂度工程任务。\n- 不适合：需求高度模糊、测试体系薄弱、部署流程混乱、代码库缺少明确边界和规范。\n\n**本质判断**\n- `Symphony` 代表的不是“AI 写代码工具”，而是“AI 原生研发操作系统”的早期形态。\n- 它最值得关注的地方，不是 Elixir 实现本身，而是它提出了一个新单位：不是管理 agent，而是管理 work。\n\n如果你愿意，我可以继续给你两部分内容中的任意一个：\n1. 结合你团队现状，给出一版 `Symphony 落地路线图`\n2. 按 `SPEC` 思路，拆解它的核心模块和系统设计图",
+    "prompt_id": "template_1773104490445",
+    "role": "assistant",
+    "timestamp": 1773654606389,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:826e9195a93fdd14ffa45c77de37df834b5787db8a18864f1e93529001090e7b",
+  "refs": {
+    "sessionId": "1773653676151_h5ge2vgy"
+  },
+  "revisionId": "sha256:56172ad92a58b1d0a98b08883cd9313e05558a057faa9d288d2437053c06a411",
+  "schemaVersion": 1,
+  "updatedAt": 1773654606389
+}

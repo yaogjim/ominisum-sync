@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773653624132,
+  "entityType": "message",
+  "id": "1773653906699_ne6o7b5v",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇 README 主要介绍了 `CASR GUI` 是什么、怎么开发使用，以及它为“跨 AI 编码代理查看和转换会话”提供了哪些能力。核心可以理解为：它把原本偏底层的会话转换能力，做成了一个可视化桌面工具。\n\n- **1. 项目定位与核心能力**\n  - `CASR GUI` 是一个桌面应用，用来在不同 AI 编码代理之间浏览、查看、转换会话。\n  - 它基于 `casr` 核心库，重点提供图形化操作，包括：\n    - 可视化识别 Provider\n    - 浏览会话列表\n    - 预览单个会话内容\n    - 一键转换到其他 Provider\n    - 一键复制恢复命令和对话 ID\n  - 当前支持 `14 个 Provider`，包括：Claude Code、Codex、Gemini、Cursor、Cline、Aider、ChatGPT 等。\n\n- **2. 技术方案与目录结构**\n  - 前端使用 `React 19 + TypeScript + Tailwind CSS + Vite`，桌面框架是 `Tauri v2`，后端使用 `Rust`。\n  - 核心转换逻辑依赖本地 `casr` 库（`../../session-resumer`）。\n  - 项目结构分工明确：\n    - `src/` 放 React 前端\n    - `src-tauri/` 放 Rust 后端\n    - 前后端通过 Tauri 命令通信\n  - 例如：\n    - `providers.rs` 负责获取 Provider\n    - `sessions.rs` 负责列出会话、获取会话详情\n    - `convert.rs` 负责执行会话转换\n\n- **3. 环境要求与开发/构建方式**\n  - 开发环境要求较直接：\n    - `Node.js 18+`\n    - Rust 稳定版工具链\n    - Tauri 对应系统依赖\n    - Windows 建议安装 `WebView2 Runtime`\n  - 本地开发命令：\n    - `npm install`\n    - `npm run tauri dev`\n  - 开发时会发生：\n    - Vite 启动在 `http://localhost:1420`\n    - Tauri 启动桌面壳并连接前端\n    - Rust 代码变更会触发热重建\n  - 生产构建命令是 `npm run tauri build`，产物在 `src-tauri/target/release/bundle/`。\n\n- **4. 实际使用流程**\n  - 使用路径是一个标准的“三栏式操作”：\n    - 启动应用\n    - 左侧选 Provider\n    - 中间选会话\n    - 右侧看元信息和消息预览\n    - 选择目标 Provider 后点击 `Convert`\n    - 再复制 `resume command` 去目标代理继续会话\n  - 如果只想记录会话标识，还可以点击 `Copy ID`。\n  - 文中还提到已有产品界面截图，展示了“全局总览、会话详情、转换结果”三类界面。\n\n- **5. 前后端接口与类型约束**\n  - 前端通过 Tauri 调用 4 个核心命令：\n    - `get_providers`\n    - `list_sessions`\n    - `get_session`\n    - `convert_session`\n  - 这些接口分别返回：\n    - `ProviderInfo[]`\n    - `SessionSummary[]`\n    - `SessionDetail`\n    - `ConvertResult`\n  - 重要细节是：前端 payload 的键名必须和约定一致。\n    - 例如 `get_session` 要用 `sessionId`、`sourceHint`\n    - `convert_session` 要用 `target`、`sessionId`\n  - 前端类型统一定义在 `src/types/index.ts`；如果后端返回结构改了，前端类型也必须同步更新，否则容易出错。\n\n- **6. 性能优化与常见问题**\n  - 文档列出了几项已经落地的优化，说明项目重点关注“请求稳定性”和“目录扫描性能”：\n    - `useTauri` 用 `useCallback + useMemo` 稳定 invoke 引用，避免 effect 误触发导致循环请求\n    - 会话列表做了内存缓存，缓存 key 为 `provider|limit|sort`\n    - `TTL = 60 秒`\n    - 最大缓存条目数为 `24`\n    - 后端目录扫描限制 `max_depth(4)`，避免深层目录拖慢性能\n    - 消息预览按字符截断，防止 UTF-8 中文边界导致 panic\n  - 常见问题也给出了明确原因和处理方式，例如：\n    - **会话重复加载循环**：通常是旧版本问题，建议只保留一个 `tauri dev` 进程，并使用带缓存和扫描限制的版本\n    - **前后端参数不一致**：前端要使用 `sessionId / sourceHint`\n    - **中文或 emoji 截断报错**：不能用字节切片 `[..n]`，要用 `.chars().take(n)`\n    - **看不到会话**：检查 Provider 是否选对、源文件是否存在、目录是否可访问\n\n- **7. 安全、贡献与许可证**\n  - 工具读取的是本地 Provider 会话目录数据，查看和转换过程本身**不强制上传云端**。\n  - 但转换结果可能会包含消息历史和上下文增强内容，这点需要用户自行留意。\n  - 贡献建议很简洁：\n    - 新建分支\n    - 本地验证 `npm run build`、`cargo check`\n    - 提交 PR 时说明行为变化、UI 截图、协议或数据结构改动\n  - 项目许可证是 `MIT`。\n\n如果你愿意，我也可以进一步把这篇内容压缩成一版“超短摘要”，适合放到汇报或笔记里。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773653624132,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e8a79289cbdb3de0aa249ab7941da8c311491c82c789374df5b5a4d4d25cf2f3",
+  "refs": {
+    "sessionId": "1773653906696_0h1scm0n"
+  },
+  "revisionId": "sha256:bb95e9fe24f8320066746bff0a63358813aa95808b78f4b4be78d270a3b626ff",
+  "schemaVersion": 1,
+  "updatedAt": 1773653624132
+}

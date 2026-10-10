@@ -1,0 +1,65 @@
+{
+  "createdAt": 1780308192691,
+  "entityType": "session",
+  "id": "1780308192691_19rjced6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "可在个人AI编程流程中试验“每晚一个Goal、拆成多个Phase”的节奏。",
+      "为每个开发Phase增加固定检查清单：测试、实现、Review、Simplify、运行测试、修正、Commit。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780308342379,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 1,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 4,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编码夜间流程实践",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "无充分证据支撑，主要价值仅为一句开发流程提示，长期保存价值较低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI辅助编程可按Goal和Phase拆解，降低任务复杂度。",
+      "每个Phase采用测试先行、代码实现、审查、简化、测试和提交的闭环流程。"
+    ],
+    "oneHighValuePoint": "将AI编码任务拆成Phase，并强制采用测试优先、Review、Simplify、测试修正、Commit的闭环流程。",
+    "oneLineReview": "有一个可借鉴的AI编程流程，但内容过短、缺少验证，保存价值有限。",
+    "primaryCategory": "AI辅助编程",
+    "rating": "D",
+    "rejectReason": "内容只是单条经验分享，缺少上下文、案例、效果数据和具体工具配置，信息量有限。",
+    "retentionDecision": "提取流程要点后可删除",
+    "secondaryCategories": [
+      "工作流",
+      "软件开发"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章是一条关于AI辅助编程工作流的短推，建议每晚设定一个Goal，拆分为Phase，并按先写测试、写代码、Review、简化、运行测试、修正、提交的顺序推进。",
+    "tags": [
+      "AI编程",
+      "TDD",
+      "Code Review",
+      "开发流程",
+      "大模型工具"
+    ],
+    "title": "九原客: gpt-5.5 就是无情的干活机器，plan、design、review、test等都用deepseek-v4-pro 每晚一个 Goal，拆成Phase后，每…",
+    "totalScore": 37.5,
+    "url": "https://x.com/9hills/status/2060004371665137799"
+  },
+  "payloadHash": "sha256:986a7e522c44139847acdb6cc9ee63df98db745970c9bf15599cf6751a1154c4",
+  "refs": {},
+  "revisionId": "sha256:634835552459ad338ddf30a566e499fd3fec7d8a16044df4e6da5a62c79d0dd0",
+  "schemaVersion": 1,
+  "updatedAt": 1780308343786
+}

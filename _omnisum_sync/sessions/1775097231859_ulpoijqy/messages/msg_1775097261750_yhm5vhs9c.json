@@ -1,0 +1,23 @@
+{
+  "createdAt": 1775097261750,
+  "entityType": "message",
+  "id": "msg_1775097261750_yhm5vhs9c",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "请以结构化方式并用通俗易懂的语言 精炼总结 文章内容，如果需要可以举具体的例子，并用中文返回。\n要求总结结构如下：   \n- 开头用1-2句话概括主旨,   \n- 按原文逻辑分段组织内容,   \n- 每段内容提炼关键点，用简练语言表达,  \n- 保留原文中的重要数据和案例.   \n，以 markdown 格式显示。\n   --reasoning_effort high",
+    "is_prompt": true,
+    "model": "gpt-5.4",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "prompt_type": "summary_template",
+    "role": "user",
+    "timestamp": 1775097261750
+  },
+  "payloadHash": "sha256:063192c35011dafb0848d05ea829c5c9265c6b8c118b1d01289d9f23a0d3b3c3",
+  "refs": {
+    "sessionId": "1775097231859_ulpoijqy"
+  },
+  "revisionId": "sha256:d5c84dbaaef73c8a2059be24ff0e495fc610b952fc84ef8899c79f2343942433",
+  "schemaVersion": 1,
+  "updatedAt": 1775097261750
+}

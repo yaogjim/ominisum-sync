@@ -1,0 +1,71 @@
+{
+  "createdAt": 1773825894128,
+  "entityType": "session",
+  "id": "1773825894128_tmyc1gqr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文中的九类框架盘点自己团队已有的 AI Skills，找出缺口与重复建设。",
+      "优先为高频且高风险流程设计验证类、审查类和运维类 Skills。",
+      "为现有 Skills 补充 gotchas、reference 文件和脚本资源，减少把 Skill 当纯提示词的低效写法。",
+      "重写关键 Skills 的 description，使其更像触发条件而非功能摘要。",
+      "建立轻量审核与使用统计机制，淘汰低质量或低使用率 Skills。"
+    ],
+    "archiveReason": "包含可直接复用的 Skills 分类框架、编写原则与团队推广经验，适合后续搭建 AI 开发工作流时反复参考。",
+    "classifiedAt": 1773918099532,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude Code技能实践指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Skills 应聚焦单一类别，跨多个类别往往会导致设计混乱和触发不清。",
+      "高质量 Skill 的核心不是重复常识，而是沉淀 Claude 易犯错的 gotchas、参考资料、脚本和模板。",
+      "description 字段应描述何时触发 Skill，而不是泛泛介绍 Skill 做什么。",
+      "可通过稳定数据目录、日志文件或 SQLite 为 Skill 提供可持续记忆能力。",
+      "按需 hooks 可在特定会话中启用安全护栏或编辑范围限制，提高高风险操作的可靠性。"
+    ],
+    "oneHighValuePoint": "最有价值的是将 Skills 归纳为九类能力模块，并强调用文件夹结构、脚本、hooks 和渐进式披露来做上下文工程，而不是把 Skill 仅当作 markdown 提示词。",
+    "oneLineReview": "这是一篇偏实践的方法型文章，最强价值在于把零散的 Skill 使用经验整理成可执行的分类框架与设计原则。",
+    "primaryCategory": "AI工程与开发效率",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "智能体工具设计",
+      "团队知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结了 Anthropic 内部构建和使用 Claude Code Skills 的实践，给出九类典型 Skill 场景、编写原则、配置与存储技巧，以及在团队内分发、治理和评估效果的方法，兼具策略视角与落地建议。",
+    "tags": [
+      "Claude Code",
+      "Skills",
+      "Agent Engineering",
+      "上下文工程",
+      "开发流程自动化"
+    ],
+    "title": "构建 Claude Code 的经验：我们如何使用 Skills【译】",
+    "totalScore": 77.5,
+    "url": "https://x.com/dotey/status/2034002188994060691"
+  },
+  "payloadHash": "sha256:ddba906aa048080c5bf3f063b2639073af1107f21787cbf72320c18dbf68bb6c",
+  "refs": {},
+  "revisionId": "sha256:167ad88c9f704158098d32e7adf5a5cf41aa4546ff599d30098ce1bea88efcec",
+  "schemaVersion": 1,
+  "updatedAt": 1773918099535
+}

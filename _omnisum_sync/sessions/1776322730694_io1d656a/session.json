@@ -1,0 +1,67 @@
+{
+  "createdAt": 1776322730694,
+  "entityType": "session",
+  "id": "1776322730694_io1d656a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如你正在调研Agent工作台，可重点查看其Sources、Automations和CLI run能力是否匹配你的流程",
+      "若考虑试用，优先验证本地MCP接入、权限模式和远程server部署是否满足实际安全与协作需求"
+    ],
+    "archiveReason": "包含较完整的功能、架构、安装、部署和CLI用法信息，后续检索价值较高",
+    "classifiedAt": 1776325716047,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Craft Agents开源工具评测",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Craft Agents支持通过MCP、REST API、本地文件系统和自定义OpenAPI接入外部能力",
+      "项目同时提供桌面端、CLI和远程thin-client模式，适合本地与服务器协同使用",
+      "内置自动化机制，可基于标签、计划任务、工具调用等事件触发Agent会话"
+    ],
+    "oneHighValuePoint": "将桌面UI、CLI、远程无头服务、多源连接与自动化事件机制整合到同一Agent工作流中，具备较强的实用集成价值。",
+    "oneLineReview": "一份可操作性不错的Agent工具说明文档，但更像功能宣传与使用手册，研究深度和证据支撑不足。",
+    "primaryCategory": "AI Agent工具",
+    "rating": "B",
+    "rejectReason": "宣传性较强，缺少真实使用案例、性能数据和对比评测，方法论沉淀有限",
+    "retentionDecision": "短期参考后保留，适合作为Agent工具选型和集成能力速查资料",
+    "secondaryCategories": [
+      "开源项目README",
+      "开发效率工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份Craft Agents开源项目的README，重点介绍其桌面端与CLI形态、MCP/API/本地源接入、多模型支持、远程服务模式、自动化能力及安全配置。内容覆盖面广、上手性强，但偏产品说明书，缺少证据与实践复盘。",
+    "tags": [
+      "Agent",
+      "MCP",
+      "Electron",
+      "CLI",
+      "多模型接入",
+      "自动化"
+    ],
+    "title": "lukilabs/craft-agents-oss",
+    "totalScore": 59.5,
+    "url": "https://github.com/lukilabs/craft-agents-oss/"
+  },
+  "payloadHash": "sha256:c46452a0e863a74b7d5578f6c1c0d45db79962aa0d4589114b7b69c27aba7a32",
+  "refs": {},
+  "revisionId": "sha256:1ec6160edc428535cc98b1150ce1997bab41d229a2237e2df0a7c1a1adb4a3fb",
+  "schemaVersion": 1,
+  "updatedAt": 1776404939453
+}

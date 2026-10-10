@@ -1,0 +1,69 @@
+{
+  "createdAt": 1774001285541,
+  "entityType": "session",
+  "id": "1774001285541_yfrwtbrk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文中九类技能框架盘点你当前团队已有和缺失的 AI 技能",
+      "优先为高频流程建立验证型或业务流程自动化技能，并补充易错点清单",
+      "将技能拆分为说明、参考、模板、脚本和配置文件，减少单一 Markdown 的臃肿",
+      "为技能增加使用统计和淘汰机制，定期清理低频或重叠技能"
+    ],
+    "archiveReason": "内容提供了较系统的技能分类、设计原则与团队分发经验，适合作为构建 AI 编码工作流的参考框架。",
+    "classifiedAt": 1774001303110,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude技能构建实战经验",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "技能可分为库/API参考、验证、数据分析、业务流程自动化、脚手架、代码评审、部署、操作手册、基础设施运维九类",
+      "高质量技能应重点沉淀易错点、避免显而易见的信息，并保留适应具体场景的灵活性",
+      "技能目录可作为上下文工程载体，利用参考文件、模板、脚本和稳定存储实现渐进式披露与记忆",
+      "通过按需钩子、配置文件和使用埋点，可以提升技能安全性、可维护性与可观测性"
+    ],
+    "oneHighValuePoint": "最有价值的是将技能视为“可包含脚本、数据、配置和钩子的文件夹系统”，通过渐进式披露与可组合脚本提升代理执行质量。",
+    "oneLineReview": "这是一篇实操价值较高的 Agent 技能设计指南，方法框架清晰，但证据更多来自经验而非严谨数据。",
+    "primaryCategory": "AI工程与开发效率",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "Agent技能设计",
+      "团队流程自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结了 Anthropic 在 Claude Code 中构建和使用技能的实践，给出了九类常见技能、若干设计原则以及分享、治理和监测技能的经验，偏重实战经验和工作流优化。",
+    "tags": [
+      "Claude Code",
+      "Skills",
+      "Agent Engineering",
+      "开发工作流",
+      "自动化"
+    ],
+    "title": "构建 Claude 代码的经验：我们如何运用技能",
+    "totalScore": 72,
+    "url": "https://x.com/trq212/status/2033949937936085378"
+  },
+  "payloadHash": "sha256:7961983c81ea9429ddbb1d86a465d5ea804a8c36066158bb2d6fc106df580811",
+  "refs": {},
+  "revisionId": "sha256:a30f3ea7a91370527759a788bb062cc05981b68c40e29de2d44a819bc93c4b68",
+  "schemaVersion": 1,
+  "updatedAt": 1774001485238
+}

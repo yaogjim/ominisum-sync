@@ -1,0 +1,67 @@
+{
+  "createdAt": 1777005382862,
+  "entityType": "session",
+  "id": "1777005382862_b69miz28",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如有需求，打开GitHub仓库检查README、依赖环境和适用平台",
+      "在测试前确认数据备份、隐私授权和合规边界",
+      "评估该Skill是否能接入现有AI摘要或知识管理流程"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777284952697,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "微信聊天记录解析Skill发布",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "微信本地聊天记录可能被解析后用于结构化分析和摘要生成",
+      "群聊内容可通过AI整理成日报以降低信息筛选成本",
+      "聊天数据应用场景包括客户追踪、话术优化和群聊监控，但涉及隐私与合规风险"
+    ],
+    "oneHighValuePoint": "将微信本地聊天数据解析与AI摘要结合，可形成群聊日报和信息筛选工作流。",
+    "oneLineReview": "有一定工具线索价值，但更像发布动态而非完整教程。",
+    "primaryCategory": "AI工具与自动化",
+    "rating": "C",
+    "rejectReason": "正文主要是工具发布和使用场景宣传，缺少完整步骤、技术细节、风险说明和实际效果验证，信息量有限",
+    "retentionDecision": "短期参考后可删除，如确有微信数据解析或群聊摘要需求可临时保存仓库链接",
+    "secondaryCategories": [
+      "数据解析",
+      "个人知识管理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍作者将微信聊天记录解析流程封装为一个AI Skill，可用于解密本地微信数据并生成群聊日报、客户追踪等应用，但正文仅提供仓库链接和应用设想，缺少具体实现细节与证据。",
+    "tags": [
+      "微信聊天记录",
+      "AI Skill",
+      "数据解密",
+      "群聊日报",
+      "自动化工作流"
+    ],
+    "title": "逸尘: 来了！来了！我把大家呼声最高的微信聊天记录解析全流程封装成了一个Skill：https://t.co/rUmPngKPvr 大家把仓库地址丢给AI，他就能一步步…",
+    "totalScore": 49.5,
+    "url": "https://x.com/gengdaJ/status/2046944097789993059"
+  },
+  "payloadHash": "sha256:a59f5e9dbaa52fd4fe7f10cbfb06a3578b822432f636d1029d6d422a2a3f9f99",
+  "refs": {},
+  "revisionId": "sha256:28826332398ca77b7d6922af9c50bc92f5260a837f9063f8d7ae8c7d6b738dd2",
+  "schemaVersion": 1,
+  "updatedAt": 1777284952699
+}

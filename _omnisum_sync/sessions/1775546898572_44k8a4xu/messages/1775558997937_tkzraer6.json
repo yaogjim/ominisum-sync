@@ -1,0 +1,19 @@
+{
+  "createdAt": 1775558997938,
+  "entityType": "message",
+  "id": "1775558997937_tkzraer6",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: LLM驱动个人知识库模式\n\n**评级**: A (76分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI知识管理\n**次类别**: LLM应用方法, 个人知识库\n**标签**: #LLM #Obsidian #知识管理 #Personal Wiki #RAG替代思路\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 9 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一个方法论很强、落地路径清晰，但证据支撑仍偏概念化的高价值构想。\n**核心高价值点**: 最有价值的点是把LLM从“查询时临时检索”转变为“持续维护知识编译产物”，让知识沉淀真正具备复利效应。\n\n### 摘要\n文章提出一种不同于传统RAG的知识管理方案：让LLM持续维护一个结构化、可演化的Markdown Wiki，在新资料进入时完成摘要、归档、交叉引用与矛盾更新，从而形成可累积的个人或团队知识库。\n\n### 知识要点\n- 用持久化Wiki替代纯RAG式问答，减少重复检索与重复综合\n- 知识库架构分为原始资料层、Wiki层和Schema规则层\n- 核心操作包括Ingest、Query和Lint，形成持续演化闭环\n- index.md和log.md分别承担内容导航与演化记录功能\n- Obsidian、qmd、Dataview、Marp等工具可增强实际工作流\n\n### 行动项\n- 尝试在Obsidian中建立一个最小可用LLM Wiki目录结构，并定义AGENTS.md或CLAUDE.md规则\n- 选取一个持续积累的主题进行单源逐步摄入，验证摘要、交叉引用和知识更新流程\n\n### 存档判定\n归档: 是 — 原因: 提出了可复用的LLM+Wiki知识沉淀框架，具备较强方法论价值和长期参考意义\n删除: 否\n留存决策: 建议长期保留，适合作为搭建个人或团队AI知识库的模式参考",
+    "role": "assistant",
+    "timestamp": 1775558997938,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:97b67020aaf2debc458a1d99113aac7a23ef1ccff062255e182ff67df28a4c89",
+  "refs": {
+    "sessionId": "1775546898572_44k8a4xu"
+  },
+  "revisionId": "sha256:934f36bffec107dfbbad5d3a7c4a6156b0b92ed82719936fc1a6814b57742fdf",
+  "schemaVersion": 1,
+  "updatedAt": 1775558997938
+}

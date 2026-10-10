@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773730788157,
+  "entityType": "session",
+  "id": "1773730788157_6u8n0kpa",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你关注WebAssembly应用，可进一步查看q3js项目实现细节与部署方式",
+      "将“通知唤回+固定活跃时段”机制评估是否适用于你的社区或多人产品"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773730802710,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 6,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "浏览器重启Quake III服务",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Q3JS可将ioquake3编译为WebAssembly并在浏览器中运行",
+      "浏览器通知和固定活动时段可用于提升多人产品的在线匹配效率"
+    ],
+    "oneHighValuePoint": "最有价值的是为多人在线冷启动问题加入Web Notifications和每日固定时段开局机制，体现了简单有效的社区活跃设计。",
+    "oneLineReview": "一个有趣但偏轻量的浏览器游戏复活案例，亮点在分发与活跃度设计，不在技术深度。",
+    "primaryCategory": "WebAssembly游戏部署",
+    "rating": "C",
+    "rejectReason": "内容以项目分享为主，方法论、证据和可迁移价值较弱，更多是轻量案例而非系统性文章。",
+    "retentionDecision": "低优先级保留，短期参考后可删除",
+    "secondaryCategories": [
+      "独立开发案例",
+      "游戏社区运营"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者分享将基于ioquake3的Q3JS编译到WebAssembly后，在浏览器中直接运行Quake III，并通过网页通知和固定开赛时间缓解在线人数不足问题。内容有一定产品化思路，但信息较零散。",
+    "tags": [
+      "Quake III",
+      "WebAssembly",
+      "Q3JS",
+      "浏览器游戏",
+      "通知机制"
+    ],
+    "title": "@levelsio: ✨ 7 years after I set up a Quake III server, I have it running again, but now in…",
+    "totalScore": 42.5,
+    "url": "https://x.com/levelsio/status/2033674799382405354"
+  },
+  "payloadHash": "sha256:2f501619b65c5a43dd2dc4d7a42a596be7194abe23ee2efc70c49791be484973",
+  "refs": {},
+  "revisionId": "sha256:c216800de6ba89162f3e0a20762785ad4868a1941e8fa670ca0401d397828b40",
+  "schemaVersion": 1,
+  "updatedAt": 1773731103041
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1774317093957,
+  "entityType": "session",
+  "id": "1774317093957_7a4egrqo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的 Claude Code 或类似代理环境中试验完成标记校验机制",
+      "评估将 Hook 用于任务验证、失败重试和上下文合并的可行性",
+      "对该插件进行小规模真实任务测试，验证是否确实提升成功率与稳定性"
+    ],
+    "archiveReason": "提供了一个可直接尝试的插件方案，并概括了任务验证与上下文合并机制，便于后续复用",
+    "classifiedAt": 1774317111807,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude插件验证工作流分享",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可通过插件或 Hook 在 Claude Code 中注入任务约束与完成标准",
+      "利用固定完成标记和缺失报错机制可增强代理执行的验证闭环",
+      "未完成任务时合并旧 prompt、AI 输出和新 prompt，有助于维持连续上下文"
+    ],
+    "oneHighValuePoint": "把“完成标准校验”嵌入每轮执行闭环，用强制标记和失败重试机制提升 AI 代理任务完成质量。",
+    "oneLineReview": "有启发性的工作流小技巧，但更像可试验的思路而非被充分验证的方法论。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留归档，适合作为 Claude Code 工作流优化的案例收藏",
+    "secondaryCategories": [
+      "Prompt工程",
+      "Claude Code工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个用于 Claude Code 的 meeseeks-vetted 插件，通过注入提示词约束、检查“Fully Vetted.”完成标记，以及在未完成任务时合并上下文，来强化任务闭环与验证流程。内容偏经验分享，实操性尚可，但证据与案例不足。",
+    "tags": [
+      "Claude Code",
+      "插件",
+      "Hook",
+      "验证机制",
+      "工作流"
+    ],
+    "title": "Frad: 类似的方法，我自己在 Claude Code 里面实验了很久，参考下面的提示词修改之后觉得可以让大家也用上",
+    "totalScore": 59.5,
+    "url": "https://x.com/FradSer/status/2036142586000453934"
+  },
+  "payloadHash": "sha256:1e3f51c3e6ccf7ce514cbc8a4f9d22b46e4d6b578f9c003159bbc7489987b211",
+  "refs": {},
+  "revisionId": "sha256:db07a2142779b1c0e87706a6577d6fda80fec3c3ef1c6fbdbf2a3bc4365b86b2",
+  "schemaVersion": 1,
+  "updatedAt": 1774334626758
+}

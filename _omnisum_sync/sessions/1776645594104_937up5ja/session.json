@@ -1,0 +1,69 @@
+{
+  "createdAt": 1776645594104,
+  "entityType": "session",
+  "id": "1776645594104_937up5ja",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查现有知识图谱系统是否具备针对查询模式的三元组索引与邻接表设计",
+      "针对高频路径查询评估是否可引入双向搜索、缓存或物化视图",
+      "为 SPARQL 或图查询建立选择性统计与基数估计机制",
+      "对探索式或相似性查询评估采样、嵌入和近似最近邻方案"
+    ],
+    "archiveReason": "内容覆盖索引、遍历、连接、缓存与分布式查询等核心主题，适合作为后续查阅的概览材料",
+    "classifiedAt": 1776646340997,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "知识图谱查询优化综述",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "六种 SPO 排列索引可将三元组查询从全表扫描优化为对数级查找",
+      "双向 BFS、A*、Dijkstra 等算法适用于不同类型的路径查询场景",
+      "查询规划的关键在于选择性优先和基数估计，以降低中间结果规模",
+      "物化视图、子图缓存、布隆过滤器和图嵌入可显著改善特定查询延迟"
+    ],
+    "oneHighValuePoint": "把知识图谱查询优化拆解为“索引 + 遍历算法 + 连接顺序 + 预计算/近似”四层问题，有助于形成系统性的性能分析框架。",
+    "oneLineReview": "覆盖面广、结构清晰，但更像综述性速查表，实证和原创洞见偏弱。",
+    "primaryCategory": "知识图谱与图数据库",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为知识图谱查询优化的入门综述",
+    "secondaryCategories": [
+      "查询优化",
+      "系统性能工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统梳理了知识图谱查询变慢的主要原因，并按索引、图遍历、查询规划、缓存物化、近似方法和分布式执行六个方向总结常见优化技术，适合作为图查询性能优化的入门地图。",
+    "tags": [
+      "知识图谱",
+      "图查询",
+      "索引设计",
+      "查询规划",
+      "图算法"
+    ],
+    "title": "如何制作极快的知识图谱",
+    "totalScore": 64,
+    "url": "https://x.com/techwith_ram/status/2044032272081588395"
+  },
+  "payloadHash": "sha256:e2221495030bd26fbfd5b334296b5c72cfbc7457442c586f975b3ac095119864",
+  "refs": {},
+  "revisionId": "sha256:b45419d262e172feb166b001196648e659e94ef0b40a0e61900d611607f8cce2",
+  "schemaVersion": 1,
+  "updatedAt": 1776646864724
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773316218646,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773316181273",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "Aurogen🍊 是一个对 OpenClaw 体系进行**完整重构**的开源项目，目标是同时做到：**功能完整、部署简单、方便扩展**。  \n它主打**模块化、多 Agent 并行、Web 配置、兼容 OpenClaw 生态**，适合想快速搭建和扩展 AI Agent 系统的人。\n\n---\n\n## 1. 项目背景与定位\n- 开发者认为，社区里已经有很多 OpenClaw 替代品，但常见问题是：\n  - 要么功能缩水；\n  - 要么部署和二次开发门槛高。\n- Aurogen 的目标是：**完整重写 OpenClaw 模式**，尽量避免这些取舍。\n\n---\n\n## 2. 核心特性\n### 2.1 全模块化\n- Aurogen 把 OpenClaw 中的核心概念都做成模块，包括：\n  - **Agents**\n  - **Channels**\n  - **Providers**\n  - **Skills**\n- 这些模块可以被**实例化、组合、并行运行**。\n- 一个部署里可以同时运行多个 agent（原文用 “many lobsters” 形容）。\n\n**例子：**  \n你可以在同一个系统里，同时配置多个 Agent，分别接不同模型、不同任务，而不是只能跑一个固定流程。\n\n### 2.2 配置简单\n- 不再依赖**CLI 命令行**和**配置文件**。\n- 安装后只需要：\n  1. 打开 Web 面板；\n  2. 设置密码；\n  3. 配置第一个 Provider；\n  4. 就能在 Web Channel 里开始使用。\n- 所有模块都是**动态加载**，改设置后**立即生效，不用重启**。\n\n### 2.3 生态兼容\n- Aurogen 与**OpenClaw 生态完全兼容**。\n- 可以直接从**clawhub.ai**下载 skill 并导入。\n- 内置公共技能也支持原生 ClaWHub 集成。\n\n---\n\n## 3. 项目命名\n- **Aurogen = Aurora（曙光 / 极光 / 罗马神话中的曙光女神） + generation**\n- 发音有点像**orange（橙子）**，所以项目用 🍊 作为形象符号。\n\n---\n\n## 4. 项目进展\n原文给出的时间线如下：\n- **2026-03-12**：文档网站上线，并优化了用户体验\n- **2026-03-11**：发布一键安装包，可直接从 Releases 下载\n- **2026-03-10**：Aurogen 正式上线\n\n文档地址：\n- **docs.aurogen.site**\n\n---\n\n## 5. 与其他项目的对比\n文中对比了**Aurogen、OpenClaw、NanoBot、PicoClaw、ZeroClaw**，主要结论：\n\n### 5.1 共同支持的能力\n这些项目大多都支持：\n- **Memory**\n- **Tools / Skills**\n- **Sub-agents**\n\n### 5.2 Aurogen 的突出差异\nAurogen 额外支持：\n- **Web panel**（OpenClaw 也支持，其他几个不支持）\n- **Multi-agent（非 sub-agent）**：只有 Aurogen 支持\n- **Multi-instance per channel**：只有 Aurogen 支持\n\n### 5.3 BOOTSTRAP 机制\n- **Aurogen、OpenClaw**：支持\n- **NanoBot、PicoClaw、ZeroClaw**：不支持\n\n### 5.4 最低硬件成本\n原文给出的参考：\n- **Aurogen**：Linux SBC，约**$50**\n- **OpenClaw**：Mac Mini，**$599**\n- **NanoBot**：Linux SBC，约**$50**\n- **PicoClaw**：Linux Board，约**$10**\n- **ZeroClaw**：任意硬件，约**$10**\n\n补充说明：\n- NanoBot 有**部分多实例支持**，但配置更复杂。\n- 原文也说明：这些项目都很优秀且持续维护中，对比表可能很快过时。\n\n---\n\n## 6. 安装与运行方式\n### 6.1 一键安装包\n每个安装包都**内置 Python 和 Node.js 运行时**，不需要额外安装环境。\n\n支持平台：\n- **macOS Apple Silicon（M1/M2/M3/M4）**\n- **Linux ARM64**\n- **Linux x86_64**\n- **Windows x64**\n\n启动方式：\n- macOS / Linux：\n  ```bash\n  tar -xzf aurogen-x.x.x-<platform>.tar.gz\n  cd aurogen-x.x.x-<platform>\n  bash start.sh\n  ```\n- Windows：\n  - 解压 zip\n  - 双击`start.bat`\n\n启动后访问：\n- **http://localhost:8000**\n\n---\n\n## 7. Docker 与开发模式\n### 7.1 Docker\n构建镜像：\n```bash\ndocker build -t aurogen .\n```\n\n运行：\n```bash\ndocker run --rm -p 8000:8000 \\\n  -v \"$(pwd)/aurogen/.workspace:/app/aurogen/.workspace\" \\\n  aurogen\n```\n\n### 7.2 Docker Compose\n在项目根目录运行：\n```bash\ndocker compose up -d --build\n```\n\n### 7.3 开发环境\n前提：\n- `conda`（或其他 Python 环境管理器）\n- `Node.js`\n\n后端启动：\n```bash\nconda create -n aurogen python=3.12\nconda activate aurogen && cd ./aurogen && pip install -r requirements.txt\nuvicorn app.app:app --host 0.0.0.0 --port 8000 --reload\n```\n\n前端启动：\n```bash\ncd ./aurogen_web && npm i\nnpm run dev\n```\n\n---\n\n## 8. 首次使用流程\n部署后，原文建议按下面步骤完成初始配置：\n\n1. 打开 Web 面板并设置密码  \n   - 特别适合部署在云服务器 / VPS 时使用。\n\n2. 进入**Providers**\n   - 编辑默认 Provider\n   - 填写：\n     - **API Key**\n     - **Base URL**\n   - 点击保存\n\n3. 进入**Agent**\n   - 选择刚配置好的 Provider\n   - 设置**Model ID**\n   - 可选择是否开启**Thinking**\n\n4. （可选）进入**Channel**\n   - 确认 Web Channel 使用的是刚配置好的 Agent\n\n5. 完成后即可在**Web Channel**中开始聊天\n\n---\n\n## 9. 结尾信息\n- 完整文档：\n  - **docs.aurogen.site**\n- 当前 GitHub 页面显示：\n  - **暂无 Releases 发布记录**\n  - **暂无 Packages**\n  - **Contributors：1 人（UniRound-Tec）**\n\n如果你愿意，我还可以继续帮你把这篇内容整理成更适合做笔记的**“超简版提纲”**。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1773316218646,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:81ab76eb4df1bbb5ac3dfe938bb1bbe3b5398f456fa44dc18fe7a43260274471",
+  "refs": {
+    "sessionId": "1773316142231_ztr80i0a"
+  },
+  "revisionId": "sha256:b791ef905db4e053a7cb1ecf73358657279df45bb1e4e997abd9841e199aa94c",
+  "schemaVersion": 1,
+  "updatedAt": 1773316218646
+}

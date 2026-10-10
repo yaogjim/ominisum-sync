@@ -1,0 +1,19 @@
+{
+  "createdAt": 1775820296059,
+  "entityType": "message",
+  "id": "1775820296058_5ctqtone",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Hermes Agent上手指南\n\n**评级**: B (68.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent工具实践\n**次类别**: 开发效率, 自动化工作流\n**标签**: #Hermes Agent #AI代理 #配置实践 #自动化 #记忆系统\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇高可操作但偏经验流的 Hermes Agent 入门实战清单，适合快速上手，不适合当作严谨评测。\n**核心高价值点**: 最有价值的是把 Hermes 的核心能力拆成可立即尝试的十个实践入口，降低了新用户从安装到形成工作流的上手门槛。\n\n### 摘要\n文章基于作者亲测经验，梳理了 Hermes Agent 安装、浏览器反爬、SOUL.md、辅助模型、记忆系统、搜索、Hooks、沙箱、多Agent、备份与Skill 等十个上手方向，偏重实操与功能亮点总结，但证据多为个人体验，系统性与客观对比仍有限。\n\n### 知识要点\n- Hermes 支持通过 SOUL.md、auxiliary、memory、web_search、hooks 和 sandbox 进行较深度的个性化配置\n- Session Search、技能沉淀与多 profile/多 agent 机制构成了 Hermes 在长期使用中的差异化能力\n\n### 行动项\n- 按文章顺序优先尝试安装部署、SOUL.md、auxiliary 和 web_search 四项基础配置\n- 结合自身使用场景评估是否启用外部记忆、Docker 沙箱、Hooks 审计与备份机制\n\n### 存档判定\n归档: 是 — 原因: 包含较多 Hermes Agent 的实操配置经验、功能清单与避坑细节，适合作为上手阶段参考索引\n删除: 否\n留存决策: 短期重点参考，可在实际部署或评估Agent框架时保留",
+    "role": "assistant",
+    "timestamp": 1775820296059,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:c805964bb229c5af8e63c6e8dc0ae182e6e911ea66386c27a5efb9e397a10e29",
+  "refs": {
+    "sessionId": "1775816958144_z71q5dm6"
+  },
+  "revisionId": "sha256:2f31b6e91eb84d63cc1b997c0b82b88ba780db8ca7322f7dd227908b98cff7f1",
+  "schemaVersion": 1,
+  "updatedAt": 1775820296059
+}

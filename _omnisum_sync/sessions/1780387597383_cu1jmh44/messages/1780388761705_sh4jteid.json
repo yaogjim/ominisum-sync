@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780388744810,
+  "entityType": "message",
+  "id": "1780388761705_sh4jteid",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章讨论了 **Agent（智能体）的架构拆分方式**：可以将 Agent 分为“定义、持久化、运行时”三部分，以便更好地管理版本、数据和运行环境。作者实践中选择用 CLI + YAML 配置来启动和管理多个 Agent 与 Session。\n\n---\n\n## 1. Agent 的三个核心组成\n\n作者认为，Agent 本质上可以拆成三类内容：\n\n### 1）Agent 定义：相对不可变的部分\n\n包括：\n\n- 系统提示词\n- 技能包\n- 扩展能力\n- 工具定义\n\n这些内容决定了 Agent “是什么、会什么、能调用什么”。  \n作者强调：这些内容本质上是不可变的，如果修改，就应该视为一个新版本，需要重新加载（Reload）。\n\n**例子：**  \n如果一个 Agent 原本只会写代码，后来新增了“数据分析技能包”，这就相当于 Agent 定义发生变化，应当作为新版本处理。\n\n---\n\n## 2. Agent 持久化：保存记忆和工作空间\n\nAgent 的持久化部分包括：\n\n- Memory：记忆\n- Workspace：工作区\n- 其他运行过程中需要长期保存的数据\n\n这些数据每次运行时都需要加载，可能存放在：\n\n- 对象存储\n- PVC（持久化卷）\n- 其他外部存储系统\n\n作者还特别提到：  \n**会话历史不推荐直接挂载到 Agent 运行环境里，而是建议放到 SQL 数据库中，并通过 session tools 提供访问能力。**\n\n这样做的好处是更清晰地管理会话数据，也更方便查询、复用和维护。\n\n---\n\n## 3. Agent 运行时：实际执行环境\n\nAgent 运行时指的是 Agent 真正执行任务时所依赖的环境和配置，包括：\n\n- 环境变量\n- 沙盒环境\n- 模型接入配置\n- 工具代理\n- 其他运行配置\n\n这部分决定了 Agent “在哪里运行、怎么运行、能访问哪些资源”。\n\n---\n\n## 4. 作者的实践方案：CLI + 两个 YAML 文件\n\n由于 Agent 架构变化很快，作者团队最终选择做了一个 CLI 工具来启动 Agent。\n\n启动方式类似：\n\n```bash\ncove --agent agent.yml --runtime runtime.yml\n```\n\n其中：\n\n- `agent.yml`：描述 Agent 定义\n- `runtime.yml`：描述运行时配置\n- 持久化相关的 endpoint 也被放到了 `runtime.yml` 中\n\n这种方式把 Agent 的定义和运行环境分开管理，更容易维护和切换。\n\n---\n\n## 5. 支持多 Agent、多 Session\n\n这个 CLI 支持：\n\n- 同时启动多个 Agent\n- 每个 Agent 同时运行多个 Session\n\n并且由于使用了 Sandbox（沙盒），Agent 的核心逻辑在实现上只是 CLI 中的一个协程或线程。\n\n也就是说，Agent 本身并不一定需要是一个复杂的独立服务，而可以被 CLI 统一调度和管理。\n\n---\n\n## 6. 引用推文背景：Agent 的存算分离\n\n引用推文提到的是 **Agent 的存算分离架构设计**。\n\n一个“有灵魂、有记忆”的 Agent，在一次任务生命周期中大致会经历：\n\n1. 用户输入 query，包括文本和文件\n2. Agent 读取提示词文件，例如 `soul.md`、`identify.md`、`user.md`\n3. Agent 读取可用工具和技能，例如 `tools`、`skills`\n4. Agent 开始执行任务\n\n这与作者的观点一致：  \nAgent 不只是模型调用，而是由提示词、技能、工具、记忆、工作区和运行环境共同组成的系统。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780388744810,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:716add7d1b81e2dc73648e629bb4bcaf098d10b88129257bcb0f167673edee9e",
+  "refs": {
+    "sessionId": "1780387597383_cu1jmh44"
+  },
+  "revisionId": "sha256:bf1f75c48930c8e65b4aabb979fdfca10a2a16572a099353ba6d02198dc28c1c",
+  "schemaVersion": 1,
+  "updatedAt": 1780388744810
+}

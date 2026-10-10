@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780307233698,
+  "entityType": "message",
+  "id": "1780307291527_rpxw5nt4",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\n**Read Frog（陪读蛙）** 是一个开源浏览器扩展，用 AI 帮助用户进行沉浸式翻译和语言学习。\n\n核心功能：\n\n- **网页双语翻译 / 仅译文模式**\n- **划词翻译、解释、朗读**\n- **结合上下文的 AI 翻译**\n- **YouTube 字幕翻译**\n- **免费 TTS 朗读**\n- **批量请求，降低 API 成本**\n- **支持 20+ AI 服务商**\n  - OpenAI、Claude、Gemini、DeepSeek、Grok、Ollama 等\n- **也支持免费翻译**\n  - Google Translate、Microsoft Translate、DeepLX\n\n项目目前仍在快速开发中，支持 Chrome、Edge、Firefox。\n\n---\n\n## 二、通俗解读\n\n简单说，**Read Frog 就像一个 AI 外语陪读助手**。\n\n你在浏览网页、看文章、刷 YouTube 时，它可以帮你：\n\n1. **边看原文边看翻译**  \n   适合学外语，不只是看懂，还能对照学习。\n\n2. **选中一句话就能翻译或解释**  \n   遇到不懂的词、句子，可以马上问 AI。\n\n3. **翻译更懂上下文**  \n   普通翻译可能只看一句话，容易翻错。  \n   Read Frog 会参考整篇文章内容，让翻译更准确。\n\n4. **能朗读文本**  \n   对练听力、发音有帮助。\n\n5. **支持很多 AI 模型**  \n   你可以用便宜的、免费的、本地的，或者高级模型。\n\n6. **开源，可自己改、自己部署、自己接模型**  \n   对开发者比较友好。\n\n---\n\n## 三、我的意见\n\n我认为 **Read Frog 很适合三类人**：\n\n- 想读英文网页、论文、博客的人\n- 想通过真实内容学外语的人\n- 喜欢折腾 AI 工具和浏览器插件的人\n\n它的优势是：\n\n- 功能全面\n- 开源透明\n- 支持模型多\n- 更偏“语言学习”，不只是机器翻译\n\n但也有几点要注意：\n\n- 高质量 AI 翻译通常需要 API Key，可能有成本\n- 项目还在活跃开发，可能会有 bug\n- 功能多，对新手来说配置可能稍复杂\n\n**一句话评价：**\n\n> Read Frog 是一个很有潜力的开源沉浸式翻译工具，特别适合把“看网页”变成“学语言”的人。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780307233698,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0e8d973a0b3894a092dc03adc82156b0479be147eec251645ae2a2b77e412f55",
+  "refs": {
+    "sessionId": "1780307290892_aittfo1h"
+  },
+  "revisionId": "sha256:9d918d584baefec2d19a2354a5df370c25c2d512de04f4d3388f92f037733b0c",
+  "schemaVersion": 1,
+  "updatedAt": 1780307233698
+}

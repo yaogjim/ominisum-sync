@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774868054742,
+  "entityType": "message",
+  "id": "1774868054741_lzd2qbil",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AI时代CLI工具崛起解析\n\n**评级**: B (64.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent工具与接口设计\n**次类别**: 开发工具生态, 企业协作平台, 产品设计方法\n**标签**: #CLI #AI Agent #MCP #飞书 #工具设计 #dry-run\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 观点清晰、框架完整，但更像趋势判断与产品解读，证据和实证支撑偏弱。\n**核心高价值点**: 最有价值的是提出“面向AI设计CLI”的四项原则：自描述help、默认dry-run、可修复错误信息、结构化且可控的输出。\n\n### 摘要\n文章围绕飞书开源CLI展开，解释为何AI Agent时代CLI重新重要，并比较CLI、MCP、技能三种接入方式，进一步总结面向Agent设计CLI的关键原则，如help自描述、dry-run、可修复错误信息和结构化输出。\n\n### 知识要点\n- CLI相较API的优势在于可通过--help实现较强自描述性，更利于Agent即时探索和调用\n- CLI、MCP、技能并非替代关系，分别对应执行接口、注册式工具接入和操作说明层\n- 为AI Agent设计CLI时，应优先支持dry-run、json输出、分页过滤和可执行的错误修复提示\n- 企业级Agent落地的核心难点仍在权限控制、审计追踪和人机协作边界\n\n### 行动项\n- 评估自己常用工具是否适合通过CLI方式暴露给AI Agent调用\n- 设计或审查内部CLI时，补齐help、dry-run、结构化输出和错误恢复提示\n- 在Agent自动执行写操作前，建立统一的dry-run预览和人工确认流程\n\n### 存档判定\n归档: 是 — 原因: 对CLI为何适合AI Agent、以及面向Agent设计CLI的原则有较清晰的总结，可作为产品和工具设计参考\n删除: 否\n留存决策: 中期保留，作为理解AI Agent工具接口设计趋势的参考材料",
+    "role": "assistant",
+    "timestamp": 1774868054742,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:4dca3822fd9ac1f3a7dd1f6f940939b7e4b6d62cd813e09fbd52d30f133183f5",
+  "refs": {
+    "sessionId": "1774867707903_x1rf9uya"
+  },
+  "revisionId": "sha256:e2d077feb6358a08c25e1d19bdd4b131405013fe2a2d472e12998ca07b5371a3",
+  "schemaVersion": 1,
+  "updatedAt": 1774868054742
+}

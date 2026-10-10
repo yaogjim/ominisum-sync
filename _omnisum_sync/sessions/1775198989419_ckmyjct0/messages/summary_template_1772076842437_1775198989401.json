@@ -1,0 +1,23 @@
+{
+  "createdAt": 1775198989401,
+  "entityType": "message",
+  "id": "summary_template_1772076842437_1775198989401",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 总结\n\n这段内容在讨论一个问题：**大型 monorepo 并行开发时，到底该用`git worktree`，还是直接 clone 多份仓库。**\n\n核心观点有三层：\n\n- **宝玉的原观点**：没必要执着于`worktree`，直接在固定目录里 clone 几份仓库，分别拉最新代码、切新分支、开发提 PR，也能很好地并行工作。\n- **争议点**：有人认为这个说法不严谨，因为对大型 monorepo 来说，`worktree`往往更省磁盘、更省 clone 成本。\n- **后续修正**：宝玉也补充承认，自己原话带有个人偏好，不该否定`worktree`；本质上两种方案都可行，**适合团队和场景的就是好的**。\n\n# 解读\n\n## 这件事本质上在争什么\n\n其实不是在争 “谁对谁错”，而是在争：\n\n**并行开发时，更看重 “资源效率”，还是更看重 “操作直觉和隔离感”。**\n\n- `worktree`更偏向**省资源**\n  - 共用同一个`.git`\n  - 不用每次完整 clone\n  - 对大仓库更节省磁盘空间和时间\n\n- 多 clone 更偏向**强隔离、好理解**\n  - 一个目录就是一套完整环境\n  - 分支、依赖、临时改动彼此不容易串\n  - 对多人协作、AI agent、多实验并行时更直观\n\n## 为什么会有分歧\n\n因为不同人面对的问题不一样。\n\n### 1. 从 Git 资源角度看\n支持`worktree`的人，关注的是：\n\n- monorepo 本来就大\n- 多 clone 会重复复制`.git`\n- 每多一份副本，磁盘和初始化成本就更高\n\n所以他们会觉得：**仓库越大，越应该用`worktree`。**\n\n### 2. 从实际开发体验看\n支持多 clone 的人，关注的是：\n\n- 多目录更符合人的直觉\n- 每个任务一个目录，不容易搞混\n- 对 AI coding agent 来说，**一个 agent 对应一个物理目录**，隔离更稳，出错更少\n\n所以他们会觉得：**多 clone 虽然 “笨”，但简单、稳、好管。**\n\n## 这段讨论真正有价值的地方\n\n最重要的不是技术结论，而是一个很现实的判断：\n\n> 工程实践里，很多方案并没有绝对优劣，关键看你的成本落在哪。\n\n如果你最怕的是：\n\n- 磁盘占用\n- clone 太慢\n- 仓库太大\n\n那`worktree`更合理。\n\n如果你最怕的是：\n\n- 目录混乱\n- 分支串线\n- AI agent 或多人并行时互相影响\n\n那多 clone 反而更省心。\n\n# 我的意见\n\n我认为这件事的合理结论是：\n\n- **从 Git 原理和资源效率看，`worktree`通常更优。**\n- **从团队操作体验和隔离性看，多 clone 也完全成立。**\n- 宝玉后面的修正更成熟：**不要把个人偏好说成通用最优解。**\n\n如果要给一个通俗建议：\n\n1. **个人开发、机器资源紧张、大仓库**：优先试`git worktree`\n2. **多任务并行、多人协作、AI agent 驱动开发**：多 clone 往往更稳\n3. **团队层面**：别争 “标准答案”，而是统一一种大家最不容易出错的方式\n\n一句话说：\n\n> `worktree`更 “经济”，多 clone 更 “省脑子”；哪种更好，取决于你更缺磁盘，还是更缺心智带宽。`",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "解读",
+    "timestamp": 1775198989401,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4355526b27355d087d3fc6def4067442218e25ddde1e97a49e57cb73ecdea579",
+  "refs": {
+    "sessionId": "1775198989419_ckmyjct0"
+  },
+  "revisionId": "sha256:e2b91ec68e1fc6a981c83dbbab20cd7bb13a226b109397738b8ed49ef1e12611",
+  "schemaVersion": 1,
+  "updatedAt": 1775198989401
+}

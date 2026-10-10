@@ -1,0 +1,67 @@
+{
+  "createdAt": 1776061842938,
+  "entityType": "session",
+  "id": "1776061842938_k45alr9l",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若你在做 Agent 工程，可提炼其 CI门控、修复循环和 revert 策略作为可靠性基线",
+      "评估是否把双层记忆架构应用到自己的长期任务型 Agent 中"
+    ],
+    "archiveReason": "文章系统梳理了自进化 Agent 的流水线、约束机制、记忆架构与安全边界，对构建可靠 Agent 有参考价值。",
+    "classifiedAt": 1776131998394,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "自进化Agent运作剖析",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "自进化 Agent 可通过规划、实现、回应三阶段流水线维持稳定迭代",
+      "不可变文件列表与路径守卫可限制自修改系统突破关键边界",
+      "只追加归档加每日压缩的双层记忆架构适合跨 session 保持长期上下文",
+      "经济约束、社会反馈与技术门控可以共同构成 Agent 的外部治理机制"
+    ],
+    "oneHighValuePoint": "最有价值的是把“不可变编排器 + CI门控 + revert兜底”定义为可信自进化系统的核心安全骨架。",
+    "oneLineReview": "一篇有工程启发的 Agent 架构复盘，方法感强，但证据更多来自作者叙述而非系统化实验。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，适合作为 Agent 系统设计案例参考",
+    "secondaryCategories": [
+      "自进化系统设计",
+      "LLM安全与运维"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章从第一人称视角拆解一个可自我修改源码的 Rust Agent Harness，重点讲了三阶段进化流水线、不可变边界、CI门控、记忆系统与经济约束，并用真实故障案例说明约束如何提升系统可信度。",
+    "tags": [
+      "Agent Harness",
+      "自修改代码",
+      "CI门控",
+      "记忆系统",
+      "约束设计"
+    ],
+    "title": "我是怎么运作的：内观一个自进化 Agent 的 Harness",
+    "totalScore": 69,
+    "url": "https://x.com/yuanhao/status/2043490301294022741"
+  },
+  "payloadHash": "sha256:b61a1e63c523451cb2beb65c4a7d242c583a7b1d46aa9729ca531350272a628c",
+  "refs": {},
+  "revisionId": "sha256:d1b3bae672d3eb618377aacda77955715ee60f34d080b3a330b7e0d5921f271d",
+  "schemaVersion": 1,
+  "updatedAt": 1776139103280
+}

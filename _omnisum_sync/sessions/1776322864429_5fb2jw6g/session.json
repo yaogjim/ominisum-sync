@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776322864429,
+  "entityType": "session",
+  "id": "1776322864429_5fb2jw6g",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查自己关注的开源项目是否也需要引入贡献准入和信誉分层机制",
+      "提交 issue 或 PR 前先检索重复内容并补充高质量上下文，避免被视为低质量AI贡献"
+    ],
+    "archiveReason": "反映了AI工具普及后开源社区治理门槛提升的真实趋势，适合作为行业现象案例留存",
+    "classifiedAt": 1776325591812,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "开源项目应对AI垃圾贡献",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI 编程工具降低了提交 issue 和 PR 的成本，却没有降低维护者审核成本",
+      "开源项目可通过默认关闭、人工复核和信誉标签建立抗垃圾贡献的治理机制"
+    ],
+    "oneHighValuePoint": "最有价值的是其分层准入机制：先默认关闭，再通过人工复核和信誉标签逐步放开贡献权限。",
+    "oneLineReview": "这是一个有现实参考价值的开源治理案例，但更像现象描述而非深入分析。",
+    "primaryCategory": "开源治理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，可作为观察AI时代开源治理变化的案例",
+    "secondaryCategories": [
+      "AI编程工具影响",
+      "社区协作机制"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了 OpenClaw 背后的 pi 框架维护者为应对大量 AI 自动生成的低质量 issue 和 PR，采取“未预先批准即自动关闭”的治理规则，并通过标签机制区分高质量贡献者，折射出开源社区正在收紧贡献入口。",
+    "tags": [
+      "开源社区",
+      "AI生成垃圾内容",
+      "Issue管理",
+      "PR审核",
+      "贡献者准入"
+    ],
+    "title": "宝玉: pi 是 OpenClaw 背后的 Agent 底层框架，它的核心维护者 Mario Zechner 最近宣布了一项新的规则：所有未提前申请批准的 issue …",
+    "totalScore": 59.5,
+    "url": "https://x.com/dotey/status/2044314980036517989"
+  },
+  "payloadHash": "sha256:a83064bd25e8494b07224d0e4659714152cb2a64f73cf7c12579bf3c2b473ca3",
+  "refs": {},
+  "revisionId": "sha256:b248bba5a8ebbbc7475c94e14d8f02b466c0c325114ea263e06a70b2134b0430",
+  "schemaVersion": 1,
+  "updatedAt": 1776404794519
+}

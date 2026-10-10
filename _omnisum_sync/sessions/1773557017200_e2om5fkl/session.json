@@ -1,0 +1,74 @@
+{
+  "createdAt": 1773557017200,
+  "entityType": "session",
+  "id": "1773557017200_e2om5fkl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的AI编程工作流中加入任务完成后主动压缩或总结上下文的规则",
+      "对长链路任务采用外部文件记录关键决策，避免压缩后丢失核心约束",
+      "在使用Agent框架时测试任务边界触发压缩与固定阈值压缩的效果差异"
+    ],
+    "archiveReason": "提供了关于上下文压缩时机选择的实用思路，对长任务和AI协作流程有直接参考价值",
+    "classifiedAt": 1773829721282,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI上下文压缩策略总结",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "请综合我提供的多个内容，进行跨文档深度总结整理，再深入浅出解读。",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "固定token阈值压缩会在复杂重构中打断关键上下文，导致任务跑偏",
+      "更合适的压缩时机包括任务完成后、切换任务前、进入大规模输入或多步骤执行前",
+      "允许Agent自主决定压缩时机，本质上是在把工作记忆管理权交还给模型",
+      "Deep Agents采用保留最近10%上下文并总结其余内容的压缩机制"
+    ],
+    "oneHighValuePoint": "把“是否压缩上下文”从固定阈值触发改为任务边界触发，是提升AI编程稳定性的关键思路。",
+    "oneLineReview": "这是篇有启发但证据一般的实用型文章，价值主要在工作流改进而非理论突破。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为AI编程工作流优化的思路备忘",
+    "secondaryCategories": [
+      "AI编程工具",
+      "上下文管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/runes_leo/status/2032300114744918087",
+      "https://x.com/masondrxy/status/2031798630177251514"
+    ],
+    "summaryBrief": "文章围绕AI编程中“中途失忆”问题，指出核心不在模型变差，而在上下文压缩发生在错误时机。Deep Agents通过让模型自主选择压缩时点，改善复杂任务中的连续性，并给出若干适用场景与简单接入方式。",
+    "tags": [
+      "上下文压缩",
+      "Agent设计",
+      "Claude Code",
+      "Deep Agents",
+      "长上下文"
+    ],
+    "title": "可选标题1. AI 不是变笨了而是在错误时机“失忆”了关于上下文压缩的深度总结2. 当 AI 编程中途突然跑偏问题不在模",
+    "totalScore": 67.5,
+    "url": "omnisun://digest/1773557017200"
+  },
+  "payloadHash": "sha256:e6a39927367913fa75a0756b8273236a8611f1c164a848f9cb66cdd2fc8217a9",
+  "refs": {},
+  "revisionId": "sha256:3753b5c73ee1151a7485084b1ca85d9c78ab09d8e093c2657f742558446f3f4c",
+  "schemaVersion": 1,
+  "updatedAt": 1773829721287
+}

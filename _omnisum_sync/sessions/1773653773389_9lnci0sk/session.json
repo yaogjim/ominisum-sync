@@ -1,0 +1,69 @@
+{
+  "createdAt": 1773653773389,
+  "entityType": "session",
+  "id": "1773653773389_9lnci0sk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你使用 Claude Code、Gemini CLI 或 Copilot，可挑一个环境试装并验证 ctx_stats 的节省效果",
+      "对你当前常用的 AI 编码平台建立一张 Hook 支持矩阵，判断是否值得引入此类工具",
+      "借鉴其架构思路，评估自己的 AI 工作流是否也需要事件持久化和检索式会话恢复"
+    ],
+    "archiveReason": "包含具体安装配置、平台兼容性、工具能力矩阵和性能数据，后续搭建MCP工作流时可查阅",
+    "classifiedAt": 1773829443717,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Context Mode工具与会话管理",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "MCP 工具调用可通过 Hook 和指令文件双层机制减少原始输出进入上下文",
+      "会话连续性可通过事件持久化、压缩前快照和恢复时检索注入来实现",
+      "不同 AI 编码平台对 Hook、SessionStart、PreCompact 的支持度差异很大",
+      "SQLite FTS5、BM25、trigram 和 Levenshtein 可组合用于轻量级上下文检索"
+    ],
+    "oneHighValuePoint": "最有价值的是把“上下文节省”和“会话连续性”拆成可执行架构：用 sandbox 工具阻断原始数据进入上下文，再用 SQLite+FTS5+BM25 在压缩后按需恢复状态。",
+    "oneLineReview": "这是一篇偏产品文档的高密度工具说明，实用性强，但证据主要来自项目自述，方法抽象层不高。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为AI编码工具链配置与选型参考",
+    "secondaryCategories": [
+      "MCP生态",
+      "上下文管理",
+      "开发效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了 Context Mode 作为 MCP 上下文虚拟化层的定位，重点解决大模型工具调用导致的上下文膨胀和会话压缩后状态丢失问题。内容覆盖 Claude Code、Gemini CLI、Copilot、Cursor、OpenCode、Codex CLI 的安装、Hook 机制、能力差异、基准数据和安全策略。",
+    "tags": [
+      "MCP",
+      "Claude Code",
+      "Codex CLI",
+      "上下文压缩",
+      "会话连续性"
+    ],
+    "title": "mksglu/context-mode: MCP is the protocol for tool access. We're the virtualization layer for context.",
+    "totalScore": 65.5,
+    "url": "https://github.com/mksglu/context-mode"
+  },
+  "payloadHash": "sha256:4d39912d15e5d225ccae3912567e3f7c3a4f0808245bb1871f518b3e2f9f928f",
+  "refs": {},
+  "revisionId": "sha256:feb04b7395095970150195cdbe646a7275a597f181868fc2169ed49f6c26eba2",
+  "schemaVersion": 1,
+  "updatedAt": 1773829443724
+}

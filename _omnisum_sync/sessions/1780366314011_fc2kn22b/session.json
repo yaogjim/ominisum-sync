@@ -1,0 +1,110 @@
+{
+  "createdAt": 1780366314011,
+  "entityType": "session",
+  "id": "1780366314011_fc2kn22b",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为常用项目创建或完善 AGENTS.md，写入构建、测试、Review 和依赖规则",
+      "整理个人常用的 Codex 任务模板，如读项目、修 bug、重构、补测试和 review",
+      "在复杂开发任务中采用先 /plan、确认后小步实现、完成后 /review 的流程",
+      "将高频工作流封装为 Skill 或自定义 Slash Command"
+    ],
+    "archiveReason": "包含较完整的 Codex 使用流程、权限控制、规划、测试、审查和经验沉淀方法，具备较强实操价值",
+    "byline": "知识猫图解",
+    "classifiedAt": 1780616124532,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex专家工作流指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HJt4AeUbIAAHjFf?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HJt4AeUbIAAHjFf?format=jpg&name=medium",
+        "width": 1200
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      },
+      {
+        "alt": "James Yao",
+        "caption": "",
+        "height": 96,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/profile_images/474112824034086912/YbGtCn5y_x96.jpeg",
+        "role": "article",
+        "score": 55,
+        "src": "https://pbs.twimg.com/profile_images/474112824034086912/YbGtCn5y_x96.jpeg",
+        "width": 96
+      }
+    ],
+    "knowledgePoints": [
+      "复杂任务应先让 Codex 只读分析项目并输出计划，再由人类确认后执行",
+      "AGENTS.md、Skills 和自定义 Slash Command 可以沉淀团队规范和重复流程",
+      "高风险任务需要通过权限模式、明确禁止项和可验证停止条件控制 Codex 行为",
+      "代码修改后必须通过 lint、typecheck、test、build 和 review 验证"
+    ],
+    "oneHighValuePoint": "把 Codex 纳入“目标、范围、约束、验收、计划、测试、审查、沉淀”的可控工程工作流，而不是依赖单次提示词。",
+    "oneLineReview": "实操性很强的 Codex 工程化使用清单，但证据支撑和原创深度一般，部分内容有明显 AI 生成式重复感。",
+    "primaryCategory": "AI编程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，可作为使用 Codex 进行工程开发的工作流参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "软件工程工作流",
+      "提示词工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统总结了专家级使用 Codex 的工程方法，包括明确目标范围、只读分析、维护 AGENTS.md、使用 /plan、/goal、权限控制、测试验证、review、subagents、Skills、MCP 和复盘沉淀。",
+    "tags": [
+      "Codex",
+      "AI编程",
+      "工程工作流",
+      "AGENTS.md",
+      "代码审查"
+    ],
+    "title": "如何像专家一样使用Codex",
+    "totalScore": 72.5,
+    "url": "https://x.com/GeekCatX/status/2061373240258470154"
+  },
+  "payloadHash": "sha256:a75582e108e34811fac8ade466963491c31b5d8d35c30a95ad4f0a1263773c63",
+  "refs": {},
+  "revisionId": "sha256:b21ead3c10742f0a4a80c5ae6377ed5f16c74e2785889b27251b4840490a0ea3",
+  "schemaVersion": 1,
+  "updatedAt": 1780616126032
+}

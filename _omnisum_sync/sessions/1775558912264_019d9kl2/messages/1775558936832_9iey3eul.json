@@ -1,0 +1,19 @@
+{
+  "createdAt": 1775558936833,
+  "entityType": "message",
+  "id": "1775558936832_9iey3eul",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: X书签本地抓取工具分享\n\n**评级**: B (55.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工作流工具\n**次类别**: 内容抓取, 知识管理\n**标签**: #X书签 #CLI工具 #本地同步\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 有明确工具价值和一定操作性，但信息来源偏转述，证据与方法深度明显不足。\n**核心高价值点**: 无需 X API Key 即可把书签本地化到 SQLite，显著提升后续搜索、分类和 Agent 调用效率。\n\n### 摘要\n文章核心是在推荐 fieldtheory 这一可将 X 书签同步到本地 SQLite 的轻量 CLI，通过读取 Chrome 会话 Cookie 调用 X 内部 GraphQL API，无需官方 API Key，并给出 Mac 下的基础安装与同步命令。\n\n### 知识要点\n- fieldtheory 可通过 Chrome 会话 Cookie 调用 X 内部 GraphQL API 抓取书签\n- 工具支持增量同步和全量重抓，适合构建本地可检索书签库\n\n### 行动项\n- 在 Mac/Linux 环境安装 Node.js 20+ 后执行 npm install -g fieldtheory 进行试用\n- 使用 ft sync 和 ft sync --full 验证同步效果，并评估是否纳入个人知识管理流程\n\n### 存档判定\n归档: 是 — 原因: 提供了可直接试用的工具名、原理和基础安装步骤，对后续检索和复现实验有参考价值\n删除: 否\n留存决策: 短期参考后可保留，适合在需要抓取X书签或搭建本地知识库时回看",
+    "role": "assistant",
+    "timestamp": 1775558936833,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:45b7a1abd84794346d22d8838b7a6824d31cdde15777fe87c12ec92ae9190395",
+  "refs": {
+    "sessionId": "1775558912264_019d9kl2"
+  },
+  "revisionId": "sha256:07ed78fc28ed764d4ef6ebf573ede592a5fab9b3aa127b99f8d7c1204c607e3a",
+  "schemaVersion": 1,
+  "updatedAt": 1775558936833
+}

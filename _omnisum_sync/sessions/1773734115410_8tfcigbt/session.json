@@ -1,0 +1,69 @@
+{
+  "createdAt": 1773734115410,
+  "entityType": "session",
+  "id": "1773734115410_8tfcigbt",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为当前项目建立地图式 `AGENTS.md` 与分层文档索引，减少上下文注入混乱",
+      "把高频 review 意见编码为 Linter、结构化测试或 CI 拒绝规则",
+      "为 AI 编码流程加入 Plan-Build-Verify-Fix 的强制验证闭环",
+      "为长任务设计进度文件和跨会话记忆机制，避免上下文窗口断裂"
+    ],
+    "archiveReason": "系统梳理了 AI Agent 工程化控制、约束与验证框架，适合作为后续设计 Agent 工作流和团队规范的参考材料。",
+    "classifiedAt": 1773734285876,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Harness工程范式综述",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Harness Engineering 的核心不是优化模型，而是优化模型运行环境与控制系统",
+      "复杂长周期 Agent 任务需要外部记忆、结构化约束和强制验证闭环",
+      "将评审意见转化为 Linter、测试和 CI 规则是提升 Agent 自主性的关键手段",
+      "可观测性与文档不再只服务人类，也要服务 Agent 的持续执行与纠错"
+    ],
+    "oneHighValuePoint": "最有价值的洞察是“用约束换自主”——通过机械化规则、验证闭环和可观测性注入，才能让 Agent 在复杂项目中稳定扩展。",
+    "oneLineReview": "这是一篇高价值的 AI Agent 工程方法综述，强在框架整合与实践启发，弱在一手证据和数据严谨性不足。",
+    "primaryCategory": "AI工程方法论",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "Agent工程",
+      "软件工程范式"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于多篇资料综合提出 Harness Engineering 的核心框架，强调用约束、反馈和验证系统替代单纯优化模型，适用于长期、复杂的 AI Agent 软件开发场景，并给出若干落地实践建议。",
+    "tags": [
+      "Harness Engineering",
+      "AI Agent",
+      "工程约束",
+      "上下文工程",
+      "自动化验证"
+    ],
+    "title": "Harness Engineering 深度解读：AI Agent 时代的工程范式革命",
+    "totalScore": 74.5,
+    "url": "https://x.com/jakevin7/status/2033784104659882013"
+  },
+  "payloadHash": "sha256:06016de205577d59c2ddd1a9495354371119a836827a8d6575e5c27e3da1bb75",
+  "refs": {},
+  "revisionId": "sha256:4fc753836573d4a9b7c93525afe2f17725fa266d8b4238282baff29c8dc35833",
+  "schemaVersion": 1,
+  "updatedAt": 1773734409892
+}

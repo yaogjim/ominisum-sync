@@ -1,0 +1,71 @@
+{
+  "createdAt": 1780449164148,
+  "entityType": "session",
+  "id": "1780449164148_92pbpstu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尝试为一个复杂代码审查任务设计扇出-合成加对抗性验证工作流。",
+      "将近期重复出现的Claude修正问题整理为CLAUDE.md规则，并用验证代理复核。",
+      "在使用动态工作流前评估任务是否真的需要额外token和多代理编排。",
+      "为研究、事实核查或批量排序类任务准备可复用的工作流模板。"
+    ],
+    "archiveReason": "文章系统介绍了Claude Code动态工作流的适用场景、常见模式和实践技巧，对构建多智能体任务编排有较高参考价值。",
+    "classifiedAt": 1780450119749,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude Code动态工作流指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "动态工作流适合长时间、大规模并行、高结构化或需要验证的复杂任务，不适合所有常规编码任务。",
+      "常见模式包括分类-执行、扇出-合成、对抗性验证、生成-过滤、锦标赛和循环直到完成。",
+      "动态工作流可用于代码迁移、深度研究、事实核查、候选排序、规则提炼、根因调查和大规模分类。",
+      "工作流可设置token预算，并可与/goal、/loop结合，用于周期性或持续性任务。",
+      "通过隔离不同代理权限，可以降低不可信输入导致高权限操作风险。"
+    ],
+    "oneHighValuePoint": "将复杂任务拆成多个独立上下文的子代理，并通过对抗性验证和合成步骤降低目标漂移、自我偏好和代理懒惰。",
+    "oneLineReview": "这是一篇对Claude Code动态工作流很有启发的实践指南，但证据和实测数据支撑相对不足。",
+    "primaryCategory": "AI工具与智能体工作流",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "Claude Code",
+      "提示工程",
+      "软件工程效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Claude Code动态工作流的原理、适用场景和常见模式，包括扇出合成、对抗性验证、生成过滤、锦标赛和循环执行等，并给出研究、重构、排序、核实、根因分析等应用案例。",
+    "tags": [
+      "动态工作流",
+      "Claude Code",
+      "多智能体",
+      "对抗性验证",
+      "自动化"
+    ],
+    "title": "适用于所有任务的框架：Claude Code 中的动态工作流",
+    "totalScore": 74.5,
+    "url": "https://x.com/trq212/status/2061907337154367865"
+  },
+  "payloadHash": "sha256:d07ec2ee17b4a9e293aebe35435e2ea8d0a9520904639ead59c0ed3fc1f607eb",
+  "refs": {},
+  "revisionId": "sha256:02bdd4f430d89e26788b4efd0ebe76b7dd71b2ec0c4fc14ba03c6f3fbf692c98",
+  "schemaVersion": 1,
+  "updatedAt": 1780454369159
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773653624132,
+  "entityType": "message",
+  "id": "1773653830012_rrmk6pmo",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章介绍了一个开源项目：它通过模拟已登录浏览器，抓取并整理 `stockanalysis.com` 前端实际使用的接口。核心结论是：该网站大部分数据并不是传统 REST API 提供的，而是依赖 SvelteKit 的 SSR 和 `__data.json` 机制，真正可直接调用的 `/api/` 接口其实很少。\n\n- 项目目的与背景\n  - 这个仓库的作用，是“逆向梳理” `stockanalysis.com` 的内部数据接口，并自动生成接口文档。\n  - 作者强调：`stockanalysis.com` 是一个 SvelteKit 单页应用（SPA），多数页面数据来自服务端渲染和 `__data.json`，不是常见的独立 REST 接口。\n  - 因此，这个爬虫的重点不是抓“所有页面请求”，而是识别前端运行时真正会调用的少量 `/api/` 接口。\n\n- 已发现的核心接口\n  - 项目目前识别出的主要接口包括：\n    - `GET /api/search?q={query}`：全站搜索，支持股票、ETF、国际代码。\n    - `GET /api/quotes/s/{ticker}`：股票实时行情。\n    - `GET /api/quotes/e/{ticker}`：ETF 实时行情。\n    - `GET /api/symbol/s/{ticker}/history?type=chart|annual|quarterly`：股票历史价格。\n    - `GET /api/symbol/e/{ticker}/history?type=chart`：ETF 历史价格。\n    - `GET /api/mc/pre?c=1`、`/api/mc/post?c=1`、`/api/mc/1d?c=1`：分别对应盘前、盘后、常规时段的迷你图表（示例是 `SPY`）。\n  - 这些接口覆盖了搜索、实时报价、历史图表、市场迷你图等前端高频需求。\n\n- 项目工作流程\n  - 整个流程是一个清晰的链路：\n    - `a.sh` → `cookie_parser.py` → `crawler.py` → `normalizer.py` → `generate_docs.py`\n    - 最终输出到 `output/raw_requests.json`、`output/normalized.json`、`output/api_docs.md`\n  - 各脚本分工明确：\n    - `cookie_parser.py`：从浏览器 DevTools 导出的 cURL 中提取 Cookie。\n    - `crawler.py`：用 Playwright 启动无头 Chromium，注入 Cookie 后抓取请求。\n    - `normalizer.py`：只保留 `stockanalysis.com/api/*`，把动态路径如 `{ticker}`、`{id}` 标准化并去重。\n    - `generate_docs.py`：把规范化结果生成人类可读的 API 文档。\n    - `data_json_parser.py`：解析 SvelteKit 的 `__data.json` 响应，支持识别财务、ETF 持仓、市场异动、IPO 等页面数据。\n    - `run.py`：串联整个流程。\n  - 简单说，它既抓“真实请求”，也处理 SvelteKit 特有的数据格式。\n\n- 爬虫如何发现接口\n  - `crawler.py` 分三阶段运行：\n    - 第一阶段：完整加载页面，捕获浏览器自动发起的 XHR/fetch 请求，例如 `/api/quotes/`、`/api/mc/` 和认证相关接口。\n    - 第二阶段：在已登录浏览器上下文中，主动抓取每个路由的 `__data.json`，用来发现 SvelteKit 数据端点。\n    - 第三阶段：直接探测已知 `/api/` URL 模式。\n  - 这种设计兼顾了“前端真实调用”和“框架内部数据机制”，比只抓网络请求更完整。\n\n- 使用方式与运行要求\n  - 环境要求是 `Python 3.12+`。\n  - 安装流程包括：克隆仓库、创建虚拟环境、安装依赖、安装 `playwright chromium`。\n  - 使用前需要先登录 `stockanalysis.com`，再从 Chrome DevTools 导出主页面请求的 cURL，粘贴到 `a.sh` 中，程序会自动提取 Cookie 和 User-Agent。\n  - 执行命令是 `python run.py`。\n  - 输出文件包括：\n    - `raw_requests.json`：所有抓到的网络请求，可能超过 `15MB`。\n    - `normalized.json`：去重和标准化后的接口列表。\n    - `api_docs.md`：最终 API 文档。\n  - 如果已经有原始抓包结果，也可以只重新运行：\n    - `python normalizer.py`\n    - `python generate_docs.py`\n\n- 重要说明与限制\n  - 爬虫运行大约需要 `~3 分钟`，会用无头 Chromium 加载约 `40` 个页面。\n  - 登录 Cookie 会过期；如果出现 `401/403`，需要重新从浏览器导出新的 Cookie。\n  - 一个关键发现是：筛选器页面（如 `/stocks/screener/`、`/etf/screener/`）以及所有财务报表页面，并没有单独的 `/api/` 接口，它们的数据直接通过 SvelteKit SSR 提供。\n  - 这说明：并不是网站上的每类数据都能通过“找 REST API”方式拿到，很多内容其实要靠解析 `__data.json` 或 SSR 数据。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773653624132,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6f87690d8d77da2838ff1ee46b9bdd2e7ad0cf73e9fb3c817fb2498e4b11e408",
+  "refs": {
+    "sessionId": "1773653830010_wg8ioups"
+  },
+  "revisionId": "sha256:4960e2c53343f9305f72e6fd862089dfcc500ce39fb687081a9c90c14d4e0513",
+  "schemaVersion": 1,
+  "updatedAt": 1773653624132
+}

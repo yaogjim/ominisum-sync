@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773653676151,
+  "entityType": "session",
+  "id": "1773653676151_h5ge2vgy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "阅读 SPEC.md，评估其任务编排、验收与安全落地机制是否适合现有团队流程",
+      "结合自身仓库与 issue/看板系统，判断是否值得试验类似的自治开发工作流"
+    ],
+    "archiveReason": "体现了从管理编码代理转向管理工作流的产品方向，对AI研发流程设计有参考价值",
+    "classifiedAt": 1773829350248,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 5,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Symphony自治开发编排简介",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "自治开发系统可围绕任务看板触发独立实现运行，而非人工逐步监督代理",
+      "交付证明可由 CI 状态、PR 反馈、复杂度分析和演示视频等多维信号组成"
+    ],
+    "oneHighValuePoint": "最有价值的是提出“从监督 coding agents 转向管理待完成工作”的抽象升级。",
+    "oneLineReview": "方向感很强，但当前公开页面更像概念与入口说明，信息深度有限。",
+    "primaryCategory": "AI工程与开发自动化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为关注自治开发工作流演进的项目入口",
+    "secondaryCategories": [
+      "智能体编排",
+      "开发流程管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一个 GitHub 项目说明页，介绍 Symphony 如何把项目任务转化为隔离的自治实现运行，并结合 Linear、CI、PR 审查等流程完成交付。概念方向有启发，但公开内容偏简介，细节、案例与实证支撑不足。",
+    "tags": [
+      "OpenAI",
+      "Symphony",
+      "Coding Agent",
+      "Autonomous Runs",
+      "Linear",
+      "CI/CD"
+    ],
+    "title": "openai/symphony: Symphony turns project work into isolated, autonomous implementation runs, allowing teams to manage work instead of supervising coding agents.",
+    "totalScore": 58,
+    "url": "https://github.com/openai/symphony"
+  },
+  "payloadHash": "sha256:44743b66fb0212d5773ffd3a6d54a17b03b461f440d0689d1d8d1330ced25f09",
+  "refs": {},
+  "revisionId": "sha256:3e84bc175123cd37f7f1d0d7dfa832c95f2ead52e45c685dd0046d87eb528308",
+  "schemaVersion": 1,
+  "updatedAt": 1773829350250
+}

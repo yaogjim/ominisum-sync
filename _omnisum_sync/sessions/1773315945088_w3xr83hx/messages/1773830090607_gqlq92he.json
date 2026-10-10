@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773830090608,
+  "entityType": "message",
+  "id": "1773830090607_gqlq92he",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Factory接入Fast模型说明\n\n**评级**: C (46分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: API配置与集成\n**次类别**: GitHub Issue, OpenAI Responses API\n**标签**: #Codex Fast Models #vibeproxy #Factory Droid #extraArgs #snake_case\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 4 | 10% |\n| 新颖性 | 3 | 10% |\n| 相关性 | 5 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 有一点实用配置价值，但更像零散故障排查记录，不足以构成高价值文章。\n**核心高价值点**: 明确指出 extraArgs 会直接映射到 OpenAI Responses API 的顶层 body 参数，且字段必须使用 snake_case。\n\n### 摘要\n这是一条关于在 Factory 中通过 OpenAI Responses API 使用 Fast 模型的 GitHub 问题回复，核心信息是 extraArgs 会直接映射到 /responses 请求体顶层参数，且必须使用 snake_case，并给出了 service_tier 与 store 的示例。\n\n### 知识要点\n- Factory 在 provider 为 openai 时通过 OpenAI Responses API 发请求\n- extraArgs 对应 POST /responses 的顶层参数而非嵌套字段\n- service_tier 和 store 可通过 extraArgs 传递\n\n### 行动项\n- 在自定义模型配置中将 extraArgs 字段名改为 snake_case\n- 按示例检查 provider、baseUrl、apiKey 和 extraArgs 的映射是否正确\n\n### 存档判定\n归档: 否\n不推荐: 内容非常短，主要是针对特定配置问题的单点解答，方法论和通用价值有限。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1773830090608,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:4f76b09d2cc7105c8ec8ee3258e428e5c10db00e5deaed8e878bc6930b46212d",
+  "refs": {
+    "sessionId": "1773315945088_w3xr83hx"
+  },
+  "revisionId": "sha256:f09137b91fc41981dbaf185c538875180d9547f833024aff9fde8225997247c8",
+  "schemaVersion": 1,
+  "updatedAt": 1773830090608
+}

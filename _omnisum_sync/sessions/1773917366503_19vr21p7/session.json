@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773917366503,
+  "entityType": "session",
+  "id": "1773917366503_19vr21p7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关心房产风险，另行查阅就业、居民杠杆、库存和成交数据再判断",
+      "基于自身现金流和负债结构，独立评估是否需要处置非核心资产"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773918059312,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 1,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 2,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "大裁员下的房价悲观判断",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "缺少证据支撑与分析框架，观点高度泛化，难以形成稳定可复用认知，且信息噪音高于增量价值。",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "裁员可能通过收入预期恶化和断供风险影响房地产需求",
+      "不确定周期中保守配置与现金流管理是常见防御思路"
+    ],
+    "oneHighValuePoint": "唯一稍有价值的是提醒在高不确定性环境下关注现金流安全与非核心资产风险。",
+    "oneLineReview": "有态度但没论证，作为情绪样本可看，作为决策依据不可靠。",
+    "primaryCategory": "宏观经济观点",
+    "rating": "D",
+    "rejectReason": "内容以情绪化判断和二手转述为主，缺乏数据、案例和完整论证，参考价值很低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "房地产判断",
+      "就业风险",
+      "个人资产配置"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章基于“大裁员”预期，推断未来全国房价继续下行，并给出卖掉非核心地段房产、不买房、不创业、持有现金、学习AI和海外赚钱等建议。整体属于社交媒体上的宏观悲观判断，缺乏数据与严谨分析。",
+    "tags": [
+      "裁员",
+      "房价",
+      "失业",
+      "资产配置",
+      "AI冲击"
+    ],
+    "title": "Robinson · 鲁棒逊: 衍生一条 这样的大裁员发生后，全国房价会继续下行，因为过去支撑高房价的主力群体，会开始失业，还不起房贷的人群，会持续增多 https://t",
+    "totalScore": 26.5,
+    "url": "https://x.com/python_xxt/status/2034456248243085438"
+  },
+  "payloadHash": "sha256:da9dc71d057b008da193c97c619b6291041bb8af9f6f1ac379ede90f30ac8b7e",
+  "refs": {},
+  "revisionId": "sha256:d532f969f39057e73fbaf75e7e401d4e95076613334c183507c4486255617809",
+  "schemaVersion": 1,
+  "updatedAt": 1773918059314
+}

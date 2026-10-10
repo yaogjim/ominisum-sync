@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773557202681,
+  "entityType": "session",
+  "id": "1773557202681_8avopsup",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若你在做Agent选型，可将Hermes与AutoGen、OpenDevin、OpenInterpreter做功能矩阵对比",
+      "按README执行最小安装并验证CLI、多模型切换和消息网关能力",
+      "重点审查其记忆机制、技能系统和安全审批流程是否满足生产需求"
+    ],
+    "archiveReason": "内容覆盖功能、安装、使用入口和迁移方案，适合后续做工具对比或上手参考",
+    "classifiedAt": 1773918002100,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Hermes智能代理项目简介",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Hermes支持CLI与Telegram、Discord、Slack等多平台统一接入",
+      "项目强调内建学习闭环，包括技能生成、记忆持久化和历史会话检索",
+      "支持多模型切换、多种终端后端以及定时任务调度",
+      "提供从OpenClaw迁移配置、记忆和技能的完整路径"
+    ],
+    "oneHighValuePoint": "最有价值的是它将记忆、技能沉淀、跨会话检索和多平台入口整合为一个持续演化的Agent工作流。",
+    "oneLineReview": "功能宣传很强、上手信息充足，但证据支撑不足，更像产品README而非深度方法文章。",
+    "primaryCategory": "AI Agent工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为Agent工具选型资料",
+    "secondaryCategories": [
+      "开源项目介绍",
+      "开发者工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份Hermes Agent的项目主页说明，重点介绍其自学习闭环、多平台接入、终端与消息网关、任务调度和多模型支持等能力，并给出安装、配置、迁移和贡献开发指引。",
+    "tags": [
+      "AI Agent",
+      "Hermes",
+      "开源",
+      "CLI",
+      "多平台集成"
+    ],
+    "title": "NousResearch/hermes-agent: The agent that grows with you",
+    "totalScore": 56.5,
+    "url": "https://github.com/NousResearch/hermes-agent"
+  },
+  "payloadHash": "sha256:b9fbc214cc266048190ec69f7408bf15498a51f43195c4a7a535552e8bd74241",
+  "refs": {},
+  "revisionId": "sha256:918c72fab97cd382aca70b3020f2ec242d31600da7571aa19b54a03a245c3c6b",
+  "schemaVersion": 1,
+  "updatedAt": 1773918002104
+}

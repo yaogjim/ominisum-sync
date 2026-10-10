@@ -1,0 +1,70 @@
+{
+  "createdAt": 1775196988671,
+  "entityType": "session",
+  "id": "1775196988671_t029ss0m",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为自己的智能体系统梳理3到5类关键生产行为，并据此设计定向评估用例",
+      "给现有评估补充分类标签、docstring和失败模式追踪，建立可复盘的评测台账",
+      "在评估指标中加入效率维度，如步骤数、工具调用数、耗时和成本",
+      "将评估接入CI，只对相关标签子集运行实验以控制成本"
+    ],
+    "archiveReason": "内容提供了面向生产环境的智能体评估框架、指标设计和实验组织方式，适合作为后续搭建评测体系的参考模板。",
+    "classifiedAt": 1775197073983,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "智能体评估设计方法",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "评估应围绕目标行为设计，并通过docstring与标签实现自文档化和分组运行",
+      "模型选择应先看正确性，再在达标模型中比较延迟、成本与效率",
+      "可借助“理想轨迹”衡量智能体是否存在多余步骤、冗余工具调用和未并行化问题",
+      "内部试用反馈、外部基准和手工编写测试可共同构成评估数据来源",
+      "评估可通过pytest与GitHub Actions集成进CI，支持低成本定向实验"
+    ],
+    "oneHighValuePoint": "最有价值的是提出“评估会塑造智能体行为”，因此应围绕生产中真实关心的行为构建少而准的定向评估，而不是盲目堆积测试数量。",
+    "oneLineReview": "这是一篇方法论较强、工程导向明确的智能体评估实践文，但证据和量化结果仍偏少。",
+    "primaryCategory": "AI智能体评估",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "LLM工程",
+      "评测方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕深度智能体评估的构建方法展开，强调评估应直接映射生产中关心的行为，并介绍了数据来源、分类方法、正确性与效率指标、理想轨迹概念，以及如何在 CI 中运行定向评估。",
+    "tags": [
+      "智能体",
+      "评估体系",
+      "LangSmith",
+      "模型选择",
+      "CI测试"
+    ],
+    "title": "我们如何构建深度智能体的评估",
+    "totalScore": 71,
+    "url": "https://x.com/Vtrivedy10/status/2037203679997018362"
+  },
+  "payloadHash": "sha256:3e901e9bd806e2a1c5074ed8f81f638097f3414539cd6c4658dca7a920e4380c",
+  "refs": {},
+  "revisionId": "sha256:4d069a544ab84d3c65b417cd351f561a6085ceab39ba689388045cb368ef82a1",
+  "schemaVersion": 1,
+  "updatedAt": 1775197144567
+}

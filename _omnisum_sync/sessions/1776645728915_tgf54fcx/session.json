@@ -1,0 +1,66 @@
+{
+  "createdAt": 1776645728915,
+  "entityType": "session",
+  "id": "1776645728915_tgf54fcx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如对项目感兴趣，直接阅读 GitHub 仓库源码和文档而非依赖该帖",
+      "检索正式技术文档或代码结构说明，验证“openharness”命名与架构猜测是否成立"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776646518654,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Open Agents架构图讨论",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "除了一张架构图和命名猜测外，几乎没有深入信息，讨论噪音较多，长期参考价值很低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Open Agents 是 Vercel Labs 开源的 Agent 相关项目",
+      "帖子提到项目内部可能存在“openharness”命名线索",
+      "评论区关联到 Browser Harness 与 Claude Code 的使用体验"
+    ],
+    "oneHighValuePoint": "唯一相对有价值的是通过架构图快速了解 Open Agents 可能的模块关系与执行链路。",
+    "oneLineReview": "有一点热点观察价值，但整体更像碎片化围观，不足以作为高质量资料留存。",
+    "primaryCategory": "AI Agent",
+    "rating": "D",
+    "rejectReason": "内容以社交媒体短帖和评论为主，信息碎片化严重，缺乏系统分析、可复用方法和可靠证据。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "开源项目观察",
+      "架构分析"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一条关于 Vercel 开源 Open Agents 的短帖，核心内容是作者绘制了一张架构流程图，并对内部命名“openharness”做出猜测。评论区延伸到 Claude Code、Browser Harness 和模型能力讨论，但整体缺乏系统展开与证据支持。",
+    "tags": [
+      "Vercel",
+      "Open Agents",
+      "架构图",
+      "社交媒体",
+      "Agent工具链"
+    ],
+    "title": "nash_su - e/acc: 给 Vercel 新开源的 Open Agents 做了个架构流程图 有趣的是很多内部引用的名字叫 openharness，不是到是不是基于港科大的 openh…",
+    "totalScore": 31,
+    "url": "https://x.com/nash_su/status/2043959493365743898"
+  },
+  "payloadHash": "sha256:cb25b61d21510e847a01bca892d7af5bd27496efedd99c05d29a3957ceb65788",
+  "refs": {},
+  "revisionId": "sha256:10f28705414473ae3951fb01b6d21440ad25f392f8bdc7829d26e7202dcad0bf",
+  "schemaVersion": 1,
+  "updatedAt": 1776647282707
+}

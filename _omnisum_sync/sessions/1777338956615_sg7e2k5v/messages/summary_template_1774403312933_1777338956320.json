@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777338956320,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1777338956320",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Deep Agents Deploy：Claude Managed Agents 的开放替代方案\n\n## 一句话总结\n\nDeep Agents Deploy 是一个开源、模型无关的 Agent 部署方案，目标是让开发者用一条命令把自定义 Agent 部署到生产环境，同时避免被单一模型、封闭框架和专有记忆系统锁定。\n\n---\n\n## 核心价值\n\n### 1. 一条命令部署生产级 Agent\n\n过去将 LLM Agent 上线需要处理多项复杂工作：\n\n- 部署 Agent 编排逻辑和记忆系统\n- 支持多租户与可扩展架构\n- 配置沙箱环境，供 Agent 执行任务\n- 暴露交互端点，如 MCP、A2A、人类介入、记忆访问等\n\nDeep Agents Deploy 将这些流程简化为：\n\n```bash\ndeepagents deploy\n```\n\n---\n\n## 你实际部署的是什么？\n\n### 1. 自定义 Agent\n\n使用`deepagents deploy`时，开发者可以配置自己的 Agent，包括：\n\n- **model**：支持 OpenAI、Google、Anthropic、Azure、Bedrock、Ollama 等多种模型和服务商\n- **AGENTS.md**：Agent 的核心系统指令\n- **skills**：Agent 技能，可通过 Markdown 提供知识，通过脚本执行动作\n- **mcp.json**：定义 Agent 可通过 MCP 协议调用的工具\n- **sandbox**：为 Agent 提供执行环境，支持 Daytona、Runloop、Modal、LangSmith 等\n\n核心特点是：**框架开放，模型可替换，能力可扩展。**\n\n---\n\n## 与 Claude Managed Agents 的差异\n\n### 1. 架构类似，但开放性不同\n\nDeep Agents Deploy 和 Claude Managed Agents 在高层架构上类似，都包括：\n\n- Agent harness / 编排框架\n- Agent server\n- 沙箱环境\n- 工具调用与记忆管理\n\n但关键区别在于：\n\n- **Claude Managed Agents 是封闭生态**\n- **Deep Agents Deploy 是开源、模型无关、可自托管的开放方案**\n\n---\n\n## 为什么 “记忆” 是关键？\n\n### 1. 真正的锁定不只是模型，而是记忆\n\n文章认为，单纯切换模型并不难，最多需要调整提示词。\n\n真正的锁定来自 Agent 的记忆系统：\n\n- Agent 与用户交互后会积累上下文\n- 这些记忆会形成业务知识和客户理解\n- 如果记忆被封闭 API 托管，迁移成本会极高\n\n一旦离开封闭框架，就可能意味着：\n\n> Agent 的历史经验和用户记忆需要全部重建。\n\n---\n\n## 对企业和产品的影响\n\n### 1. 记忆是数据飞轮的一部分\n\n对于内部 Agent，比如 SDR 销售代理，记忆会帮助它越来越理解业务流程。\n\n对于面向客户的 Agent，问题更重要：\n\n- 它会积累客户偏好\n- 记录客户上下文\n- 提升未来交互体验\n- 形成产品的数据飞轮\n\n如果这些记忆在封闭 API 内部，本质上这些数据资产就不再完全属于企业自己。\n\n---\n\n## Deep Agents Deploy 的解决方案\n\n### 1. 记忆可控、可查、可迁移\n\nDeep Agents Deploy 将记忆存储为标准格式，例如：\n\n- `AGENTS.md`\n- skills 文件\n- 其他结构化文件\n\n同时支持：\n\n- 通过 API 直接查询记忆\n- 自托管部署\n- 记忆保存在自己的数据库中\n- 不绑定特定模型或云厂商\n\n这意味着企业可以真正掌控 Agent 的长期资产。\n\n---\n\n## 产品视角总结\n\n### 1. 这是 Agent 基础设施的开放化竞争\n\nDeep Agents Deploy 的核心定位不是简单 “部署工具”，而是对抗封闭 Agent 平台锁定的开放基础设施。\n\n它解决的是三个关键问题：\n\n- **部署复杂度**：用一条命令降低 Agent 上线门槛\n- **模型灵活性**：避免绑定单一模型供应商\n- **记忆所有权**：让企业保有自己的 Agent 数据资产\n\n---\n\n## 最终判断\n\nDeep Agents Deploy 的价值在于：\n\n> 让企业既能快速部署生产级 Agent，又能保留模型选择权和记忆所有权。\n\n对于重视长期数据资产、客户体验飞轮和技术自主权的团队，开放 Agent 框架相比封闭托管方案更具战略价值。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1777338956320,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3f21ccd959af4ab5f2eccb6ec60ccafb2235749dcc2a7658e08175b55f11e3ba",
+  "refs": {
+    "sessionId": "1777338956615_sg7e2k5v"
+  },
+  "revisionId": "sha256:c2527c2c2a536036b1142c1c5a93827f8328e1d081c6af8ef2faa4c4dbaa9c15",
+  "schemaVersion": 1,
+  "updatedAt": 1777338956320
+}

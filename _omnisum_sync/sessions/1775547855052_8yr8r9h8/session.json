@@ -1,0 +1,84 @@
+{
+  "createdAt": 1775547855052,
+  "entityType": "session",
+  "id": "1775547855052_8yr8r9h8",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为当前项目建立精简版`AGENTS.md`与结构化`docs/`目录，把关键架构、规范和执行计划沉淀到仓库中。",
+      "梳理现有系统的架构不变量，并用linter、结构测试或CI规则进行机械化约束。",
+      "评估当前工具链中哪些依赖对智能体不透明，优先替换为更稳定、可推理的实现或自研关键子集。",
+      "为智能体补齐可观测性、UI操作和本地验证能力，形成可闭环的自动修复反馈回路。",
+      "建立定期扫描代码异味、文档腐烂和模式漂移的后台任务，持续执行轻量化重构。"
+    ],
+    "archiveReason": "内容提供了智能体优先研发的系统性框架、架构约束和知识管理实践，适合作为AI工程团队设计工作流与代码仓库治理的长期参考。",
+    "classifiedAt": 1775559118579,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 9,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "智能体优先工程系统设计",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "我是一名资深产品经理，对科技、ai、商业、产品、社会等有深刻理解。\n请对我提供的多个内容综合分析提炼，思考和推演对我在产品的实践上有哪些启发？以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "仓库即记录系统：对智能体不可见的知识等同于不存在，关键规范和计划必须进入版本化代码仓库。",
+      "AGENTS.md应作为目录而非百科，通过渐进式披露控制上下文负载。",
+      "通过自定义linter、结构测试和CI机械化执行架构边界与品味不变量，比依赖文档和人工记忆更可靠。",
+      "优化目标从人类可读转向智能体可推理，优先使用API稳定、训练覆盖充分的“无聊技术”。",
+      "高吞吐智能体开发中，等待成本高于纠错成本，因此需要缩短PR生命周期并减少不必要的阻塞门。",
+      "智能体会放大仓库中的好坏模式，因此必须建立持续的“垃圾回收”和技术债清理机制。"
+    ],
+    "oneHighValuePoint": "最有价值的点是把工程师角色从写代码转为设计环境、约束和反馈回路，并将知识、规则与计划全部版本化沉淀到仓库中。",
+    "oneLineReview": "这是一篇少见地把“如何让智能体稳定写出可维护系统”讲清楚的高价值工程方法论文章。",
+    "primaryCategory": "AI工程方法论",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "智能体系统设计",
+      "软件工程管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://openai.com/zh-Hans-CN/index/harness-engineering/",
+      "https://github.com/deusyu/harness-engineering/blob/main/concepts/00-overview.md",
+      "https://github.com/deusyu/harness-engineering/blob/main/concepts/01-repo-as-source-of-truth.md",
+      "https://github.com/deusyu/harness-engineering/blob/main/concepts/02-mechanical-enforcement.md",
+      "https://github.com/deusyu/harness-engineering/blob/main/concepts/04-agent-readability.md",
+      "https://github.com/deusyu/harness-engineering/blob/main/concepts/05-throughput-changes-merge.md",
+      "https://github.com/deusyu/harness-engineering/blob/main/concepts/03-entropy-and-garbage-collection.md"
+    ],
+    "summaryBrief": "文章基于OpenAI内部实践，总结了在“零手写代码”条件下用Codex构建产品的工程方法，核心包括仓库即记录系统、机械化约束、智能体可读性、熵管理与高吞吐合并策略，对AI时代的软件工程组织方式有较强参考价值。",
+    "tags": [
+      "Codex",
+      "Harness Engineering",
+      "Agentic Coding",
+      "代码仓库治理",
+      "工程效率",
+      "架构约束"
+    ],
+    "title": "智能体时代的产品系统设计",
+    "totalScore": 77.5,
+    "url": "omnisun://digest/1775547855052"
+  },
+  "payloadHash": "sha256:16a6c774f855833f6ce58554b85f1e6df86a292d3ce7bb1660ecfd5af7457afe",
+  "refs": {},
+  "revisionId": "sha256:65200c6cc57654824f81e64ce2c1d27f3af268cb7f38fd19528f148a2746c890",
+  "schemaVersion": 1,
+  "updatedAt": 1775559439370
+}

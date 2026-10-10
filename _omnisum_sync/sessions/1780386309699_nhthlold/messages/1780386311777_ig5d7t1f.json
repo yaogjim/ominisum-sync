@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780386229660,
+  "entityType": "message",
+  "id": "1780386311777_ig5d7t1f",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 一、总结\n\n腾讯开源了 **TencentDB Agent Memory（TDAI）**，核心目标是：\n\n> 让 AI Agent 像人一样，能长期记住用户、项目、偏好和任务状态。\n\n它的特点：\n\n- **不用传统扁平向量库堆历史**\n- 改用 **4 层长期记忆金字塔**\n  - L0：原始对话\n  - L1：原子事实\n  - L2：场景/任务总结\n  - L3：用户画像 Persona\n- 短期任务状态用 **Mermaid 图** 压缩，避免工具日志撑爆上下文\n- 支持 **OpenClaw** 和 **Hermes Agent**\n- 本地优先：SQLite + sqlite-vec，可查看、可调试\n- PersonaMem 准确率从 **48% 提升到 76%**\n- 搜索类长任务 token 可减少约 **61%**\n\n---\n\n# 二、通俗解读\n\n传统 Agent 记忆像这样：\n\n> 把聊天记录切碎，丢进向量库，用时再捞几段出来。\n\n问题是：\n\n- 捞出来的片段可能不连续\n- 片段之间缺少因果关系\n- Agent 不知道哪些是长期偏好，哪些只是临时信息\n- 出错了也很难追溯原因\n\nTDAI 换了一种方式：\n\n## 1. 长期记忆：像整理笔记\n\n它不是简单存聊天记录，而是逐层提炼：\n\n```text\n原始对话\n  ↓\n关键事实\n  ↓\n典型场景\n  ↓\n用户画像\n```\n\n比如你说过：\n\n> 我做后端项目，主要用 Python，不喜欢太花哨的输出。\n\nTDAI 最后可能整理成：\n\n```text\n用户偏好：\n- 技术栈偏 Python\n- 输出风格偏简洁\n- 关注后端工程实践\n```\n\n下次新会话，它就不用再问你一遍。\n\n---\n\n## 2. 短期记忆：把长任务压缩成图\n\n长任务里，Agent 会调用很多工具：\n\n- 搜索\n- 读文件\n- 跑测试\n- 查日志\n\n这些内容很容易撑爆上下文。\n\nTDAI 的做法是：\n\n> 原始日志存到文件里，只把任务关系压成 Mermaid 图放进上下文。\n\n好处：\n\n- token 更少\n- Agent 还能理解任务进展\n- 人也能看懂\n- 需要细节时再按节点找原文\n\n---\n\n## 3. 白盒可调试\n\n这是它很重要的优势。\n\n很多记忆系统像黑箱：\n\n> 召回错了，你不知道为什么错。\n\nTDAI 每层都是 Markdown / JSONL，可直接打开看。\n\n你能追溯：\n\n```text\nPersona 结论\n  ↓\n来自哪个场景\n  ↓\n来自哪些事实\n  ↓\n来自哪段原始对话\n```\n\n这对工程落地很关键。\n\n---\n\n# 三、我的意见\n\n我认为 TDAI 的价值不在于“又一个记忆库”，而在于它抓住了 Agent 记忆的关键问题：\n\n> 记忆不只是存储，而是结构化、可追溯、可更新。\n\n它适合这些场景：\n\n- 长期陪伴型 Agent\n- 编程助手\n- 研究助手\n- 企业内部知识 Agent\n- 多轮、多天、多项目协作场景\n\n但它也不是万能的：\n\n- 短聊天用不上\n- 冷启动需要积累数据\n- L1/L2/L3 提炼仍依赖 LLM，存在成本和误差\n- 目前生态还偏 OpenClaw / Hermes\n\n## 简单判断\n\n如果你的 Agent 经常出现这些问题：\n\n- 总忘记项目背景\n- 每次都要重复解释偏好\n- 长任务被日志撑爆上下文\n- 记忆召回错了还没法 debug\n\n那 TDAI 很值得试。\n\n如果只是普通聊天机器人，意义不大。\n\n---\n\n# 四、一句话结论\n\n**TencentDB Agent Memory 的亮点是：用分层记忆 + 符号压缩 + 本地白盒存储，让 Agent 更像一个真正会长期记事的助手。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780386229660,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c77a6df29c8ead684474c7cf22e67a18380cd75623b2332fb2c2622379ddd55d",
+  "refs": {
+    "sessionId": "1780386309699_nhthlold"
+  },
+  "revisionId": "sha256:ee02bdc9c264170baf20cd37df4854bae38fac8f223754d91b78d17b10d5c6c1",
+  "schemaVersion": 1,
+  "updatedAt": 1780386229660
+}

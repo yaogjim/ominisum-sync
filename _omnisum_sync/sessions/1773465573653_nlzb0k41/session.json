@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773465573653,
+  "entityType": "session",
+  "id": "1773465573653_nlzb0k41",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "参考其 Think-Plan-Build-Review-Test-Ship-Reflect 流程，梳理你当前的AI开发工作流并补齐缺失环节",
+      "优先试验文中最可落地的能力，如代码评审、QA自动回归和发布前检查，而不是一次性全量采用整套体系"
+    ],
+    "archiveReason": "包含较完整的AI编码工作流设计、角色分工和命令体系，便于后续对比同类工具",
+    "classifiedAt": 1773918145709,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "多代理AI编码工具介绍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "将需求澄清、架构评审、设计审查、QA、发布和复盘串成闭环流程，可提升AI辅助开发的稳定性",
+      "通过不同专项技能和命令路由，让AI在不同阶段承担不同角色，而不是依赖单一通用提示词",
+      "引入跨模型二次审查、安全护栏和浏览器自动化测试，试图降低AI生成代码的风险"
+    ],
+    "oneHighValuePoint": "把 AI 编码从“单次补全工具”升级为“按软件生命周期串联的多角色流程系统”这一组织方式最有参考价值。",
+    "oneLineReview": "方法框架有启发，但更像高势能产品宣言而非经充分验证的工程实践报告。",
+    "primaryCategory": "AI辅助开发",
+    "rating": "B",
+    "rejectReason": "宣传色彩较强，证据不足，很多效果描述缺少可验证案例与客观数据支撑",
+    "retentionDecision": "短期参考后保留，适合作为AI开发工作流案例库的一部分",
+    "secondaryCategories": [
+      "开发工具链",
+      "工程流程方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一篇围绕 gstack 的项目说明文档，主张将 Claude Code 组织成多角色虚拟工程团队，覆盖需求澄清、设计评审、代码审查、QA、发布与复盘等流程。内容对AI编程工作流有启发，但明显偏营销叙事，实证支撑较弱。",
+    "tags": [
+      "Claude Code",
+      "多代理协作",
+      "AI编程",
+      "软件工程",
+      "自动化QA"
+    ],
+    "title": "garrytan/gstack: Use Garry Tan's exact Claude Code setup: 15 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+    "totalScore": 56.5,
+    "url": "https://github.com/garrytan/gstack"
+  },
+  "payloadHash": "sha256:b590672bcacfcbd0ab633f04187ef3a9e6b7fd4aa684349cbf72c31e69998af5",
+  "refs": {},
+  "revisionId": "sha256:2d0dd5d35dd3173dad41f66fd54f13988dce4432ae078a3ac277da1bfbfd43d3",
+  "schemaVersion": 1,
+  "updatedAt": 1773988528808
+}

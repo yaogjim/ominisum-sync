@@ -1,0 +1,23 @@
+{
+  "createdAt": 1780365923673,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1780365923673",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\nJason Zhou 认为 Claude 的`/workflow`能力 “非常重要”，因为它让 AI 代理更适合处理复杂、多步骤、需要持续跟踪的真实工作任务。过去这类任务对代理很难，但现在可以通过工作流模式拆解、执行并追踪进度。\n\n---\n\n## 1. `/workflow`适合处理复杂业务任务\n\n原文举了几个典型任务，说明`/workflow`的价值：\n\n- **销售线索开发**：  \n  例如 “帮我找到并筛选 200 个符合理想客户画像（ICP）的优质线索”。\n\n- **SEO 审计与内容创作**：  \n  例如 “审计 SEO，修复所有问题，并据此撰写内容”。\n\n- **财务 / 行政处理**：  \n  例如 “帮我处理并记录 82 张发票”。\n\n这些任务的共同特点是：  \n**步骤多、需要判断质量、需要持续执行和记录进度**，因此传统 AI 代理往往难以稳定完成。\n\n---\n\n## 2. 过去 AI 代理难做，现在通过工作流改善\n\nJason Zhou 表示，上述任务以前对代理来说 “很难做好”，但现在情况不同了。  \n原因是`/workflow`可以把复杂任务拆成结构化流程，而不是让 AI 一次性 “凭感觉” 完成。\n\n核心变化包括：\n\n- 将任务拆成多个阶段；\n- 明确每一步要做什么；\n- 使用脚本辅助执行；\n- 用表格追踪进度。\n\n这让 AI 更像一个 “项目执行助手”，而不是单次问答工具。\n\n---\n\n## 3. 如何激活`/workflow`\n\nJason Zhou 在回复中补充了使用方式：\n\n- 在提示词中直接包含**`workflow`**；\n- 或执行**`/effort`**，并选择**`ultracode`**模式。\n\n激活后，系统会自动进入工作流模式。\n\n---\n\n## 4. `/workflow`激活后会做什么\n\n开启后，它主要会完成两件事：\n\n1. **设计 DAG 阶段并编写脚本**  \n   - DAG 可以理解为 “有顺序、有依赖关系的任务流程图”。\n   - 比如先收集线索，再筛选 ICP，再打分排序，最后输出表格。\n\n2. **生成进度跟踪表格**  \n   - 用来记录每个阶段完成了多少；\n   - 哪些任务已完成；\n   - 哪些还需要人工确认或继续处理。\n\n---\n\n## 5. 工作流文件会被保存\n\nJason Zhou 提到，生成的工作流会保存在本地路径：\n\n```bash\n~/.claude/projects/xxx/workflows\n```\n\n这意味着用户可以回看、复用或继续之前的工作流，而不是每次重新开始。\n\n---\n\n## 6. 热门回复中的相关讨论\n\n原文下方还有一些热门回复，反映了社区对 AI 代理和工作流工具的关注：\n\n- 有用户提到，很多人在关注 Anthropic 内部如何理解 Claude 的最新进展。\n- 有人分享了构建 AI 工具栈的方式，例如使用 VPS、Hermes、记忆库、Codex 认证等。\n- Perplexity 提到推出**Search as Code**，面向 AI 代理的新搜索架构：  \n  不再一次次调用搜索函数，而是生成 Python 代码直接调用搜索栈。\n\n---\n\n## 总结\n\n`/workflow`的核心意义在于：**把复杂任务变成可拆解、可执行、可追踪的流程**。  \n它特别适合销售线索筛选、SEO 审计、发票处理等多步骤任务，让 AI 代理从 “回答问题” 进一步走向 “执行工作”。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1780365923673,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:10b664435e3bf3866550aea8c16201e26c5e85189d52f139ec82506a615ad60f",
+  "refs": {
+    "sessionId": "1780365923710_jqlx23xl"
+  },
+  "revisionId": "sha256:c26d50da7235982ec2eca5b413aecfa565255c6d73c1c489cdb8f073d1df52d3",
+  "schemaVersion": 1,
+  "updatedAt": 1780365923673
+}

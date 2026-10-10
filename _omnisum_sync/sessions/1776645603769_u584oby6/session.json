@@ -1,0 +1,68 @@
+{
+  "createdAt": 1776645603769,
+  "entityType": "session",
+  "id": "1776645603769_u584oby6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查当前项目的模块边界是否清晰，优先拆分高耦合代码",
+      "补齐自动化测试、CI/CD 和验证反馈回路，建立最小可行质量闸门",
+      "为团队制定 AI 协作规范，明确代码审查、可观测性和质量指标要求"
+    ],
+    "archiveReason": "虽然内容篇幅短且证据不足，但观点对团队建设测试、模块化和验证闭环有持续参考价值",
+    "classifiedAt": 1776646354362,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编程回归工程基本功",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Harness engineering 可视为传统软件工程最佳实践在 AI Agent 开发中的延伸",
+      "模块化设计能降低 AI 生成代码带来的耦合与维护风险",
+      "严密的验证循环是控制 AI 输出质量和防止系统失控的关键",
+      "企业若盲目追求 AI 代码产出，可能更快形成难以治理的技术债"
+    ],
+    "oneHighValuePoint": "AI 不会削弱软件工程基本功的重要性，反而会把模块化和验证闭环从“加分项”变成“生存条件”。",
+    "oneLineReview": "观点正确且有现实针对性，但更像高质量提醒而非有证据支撑的深度分析。",
+    "primaryCategory": "AI辅助软件工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为AI时代工程治理的观点摘录",
+    "secondaryCategories": [
+      "工程管理",
+      "代码质量与测试"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章核心观点是：所谓 harness engineering 并非新范式，本质上仍是经典软件工程实践在 AI 编程场景下的再强调。随着 AI 生成代码增多，企业更需要模块化架构、测试体系和严密验证闭环，否则会更快积累难以维护的代码债务。",
+    "tags": [
+      "Harness Engineering",
+      "模块化",
+      "验证闭环",
+      "AI Agent",
+      "软件工程"
+    ],
+    "title": "宝玉: 和博主意见略同，首先 harness engineering 不是什么新鲜事，不过就是回归了“优秀的工程实践”：写好测试、搭好架构、做好模块化",
+    "totalScore": 60.5,
+    "url": "https://x.com/dotey/status/2044107506679447688"
+  },
+  "payloadHash": "sha256:2308a79c0b3616d88e3bf7bd7d5190212ca97e09088b0a178fd88cf5e9aab64d",
+  "refs": {},
+  "revisionId": "sha256:f306f8283774111580a0c1ec7d88dbacbd5e6b22200a35b9c120300c5ee4cd44",
+  "schemaVersion": 1,
+  "updatedAt": 1776646877277
+}

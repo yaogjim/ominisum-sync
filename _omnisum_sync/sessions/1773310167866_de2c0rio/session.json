@@ -1,0 +1,70 @@
+{
+  "createdAt": 1773310167866,
+  "entityType": "session",
+  "id": "1773310167866_de2c0rio",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估当前工作流是否确实受 Claude 配额中断影响，再决定是否搭建本地代理",
+      "如需使用，先阅读 better-ccflare 项目说明并核对平台兼容性与安全边界",
+      "配置本地代理后为服务增加 API Key 和仅本地监听限制",
+      "记录账号切换策略，避免高频切换导致潜在风控问题"
+    ],
+    "archiveReason": "提供了可直接操作的本地代理搭建步骤，对多账号限额管理有现实参考价值",
+    "classifiedAt": 1773830150504,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "本地反代串联Claude账号教程",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "可用 better-ccflare 在本地建立 Claude Code 的统一代理入口",
+      "通过 OAuth 接入多个 Claude 账号并启用自动切换与自动刷新",
+      "可在 Claude Code 配置中通过 ANTHROPIC_BASE_URL 指向本地服务",
+      "为本地代理额外生成 API Key 可提升本机访问安全性",
+      "频繁切换账号可能触发平台风控，需要控制 session 使用方式"
+    ],
+    "oneHighValuePoint": "最有价值的是用本地代理统一接入多个 Claude 账号，并通过 Auto Fallback 在限流时自动切换账号以保持工作连续性。",
+    "oneLineReview": "一篇偏实操的效率向教程，能解决痛点，但证据与风险讨论明显不足。",
+    "primaryCategory": "AI工具与开发效率",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，适合作为特定场景下的配置备忘",
+    "secondaryCategories": [
+      "Claude Code",
+      "本地代理配置"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍如何通过开源工具 better-ccflare 在本地搭建反代服务，将多个 Claude 账号接入同一入口，配合 Dashboard 管理账号、自动切换和 API Key 保护，以缓解 Claude Code 的额度中断问题。",
+    "tags": [
+      "Claude",
+      "反向代理",
+      "多账号",
+      "OAuth",
+      "本地部署"
+    ],
+    "title": "Day 5：自建本地反代，五分钟教你把多个 Claude 账号串起来",
+    "totalScore": 61.5,
+    "url": "https://x.com/jiunian/status/2031917553333797012"
+  },
+  "payloadHash": "sha256:8ab770496683f88b31171b138820196885368384e5f83edef3d6165dabc0d8d7",
+  "refs": {},
+  "revisionId": "sha256:b67e09ee2df6fb830ad5717d699865631b963a4dd187f23e5eae8be039e1834a",
+  "schemaVersion": 1,
+  "updatedAt": 1773830150508
+}

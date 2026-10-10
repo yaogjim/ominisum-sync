@@ -1,0 +1,23 @@
+{
+  "createdAt": 1774920261796,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1774920261796",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 很多程序员的 Skill 数量为何会失控\n\n## 现象：Skill 越装越多，系统却越来越乱\n\n很多程序员在尝试不同 Skill 框架时，容易陷入 “今天装一个、明天换一个” 的状态。结果是 Skill 数量迅速膨胀到几十个，彼此之间的跳转、调用和召回逻辑变得越来越不稳定，最终影响整体效率。\n\n## 原因：工具在叠加，复杂度却没有真正减少\n\n问题的根源不在于某个框架不好，而在于这些框架本质上都在探索 Harness Engineering 的最佳实践，各自都有亮点，但能力范围又彼此重叠。  \n目前大多数 Skill 管理工具的思路是 “隐藏复杂度”，比如通过启用 / 停用 Skill 来管理；但这并没有真正 “减少复杂度”，只是把复杂问题暂时遮住了。\n\n## 做法：用一个基础框架统一整合能力\n\n作者当前的实践思路是：选定`superpowers`作为基础框架，再把其他框架的优势能力逐步合并进来，比如吸收`compound`的持续学习能力。  \n这样不是让多个框架并行存在，而是以一个主框架为核心，统一承接其他能力，从而控制 Skill 的数量增长。\n\n## 关键点：不是多，而是清晰、不重叠\n\n评论区也给出了一些补充经验：  \n核心不是 Skill 数量绝对少，而是每个 Skill 的职责要足够单一、边界清晰，避免多个 Skill 同时命中同一类任务，引发冲突。`superpowers`更适合承担路由和分发角色，而具体 Skill 则应聚焦在窄领域能力上。\n\n## 一句话总结\n\n**Skill 管理的关键，不是不断增加和开关 Skill，而是用统一框架整合能力、减少重叠，让系统从 “看起来可控” 变成 “真正更简单”。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1774920261796,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5f9c3c99e64836cf87532f0de99d59d4b521a95401e1f7ad08e54888b9a3dcbc",
+  "refs": {
+    "sessionId": "1774920261828_c7bmsgzx"
+  },
+  "revisionId": "sha256:4233774f720ddf7a13fd6f1b18a1cb5b31976aac0d9abbf7d18930997835425e",
+  "schemaVersion": 1,
+  "updatedAt": 1774920261796
+}

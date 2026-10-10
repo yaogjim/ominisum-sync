@@ -1,0 +1,67 @@
+{
+  "createdAt": 1777773351675,
+  "entityType": "session",
+  "id": "1777773351675_2ol8q4b6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "参考“模型 + Harness”框架复盘现有AI Agent或编程助手设计",
+      "在自建Agent中优先设计专用工具、权限约束、审计日志和上下文裁剪机制"
+    ],
+    "archiveReason": "概括了Claude Code中工具系统、上下文压缩、自主循环与权限约束等关键工程设计，对理解Agent产品架构有参考价值",
+    "classifiedAt": 1777773885098,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code架构拆解",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Claude Code的核心执行模式可抽象为模型响应、工具调用、结果回传、继续生成的循环",
+      "专用工具、权限级别、操作校验和结构化日志是降低Agent越界和错误扩散的重要设计",
+      "上下文压缩、JIT加载和Sub-Agent隔离可减少主循环认知负载，提升稳定性",
+      "模型指令遵循能力增强会提升Agent边界控制和长期可靠性"
+    ],
+    "oneHighValuePoint": "将Agent产品拆解为“模型 + Harness”，并进一步把Harness归纳为工具系统、上下文工程和自主循环的组合。",
+    "oneLineReview": "一篇有启发的Claude Code工程架构速写，但证据链和落地细节不足。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "B",
+    "rejectReason": "内容主要是观点总结，缺少源码引用、数据验证和完整案例支撑，不适合作为严肃技术依据",
+    "retentionDecision": "短期参考后可保留为AI Agent架构观察材料",
+    "secondaryCategories": [
+      "AI编程工具",
+      "上下文工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将Claude Code概括为模型加Harness的自主循环系统，重点讨论工具系统、权限校验、上下文压缩、JIT文件加载、Sub-Agent隔离，以及未来Harness能力可能被模型内化的趋势。",
+    "tags": [
+      "Claude Code",
+      "Agent Harness",
+      "工具调用",
+      "上下文管理",
+      "AI编程"
+    ],
+    "title": "Barret李靖: Claude Code 的核心是一个 while 循环：模型生成响应 → 如果包含工具调用，执行 → 结果返回 → 模型生成下一个响应 → 持续循环",
+    "totalScore": 66,
+    "url": "https://x.com/Barret_China/status/2050263524119884062"
+  },
+  "payloadHash": "sha256:45b056fdcda458514d28f75cf146434504a55adea929f764ed3f18a8918013b1",
+  "refs": {},
+  "revisionId": "sha256:99be1fd653622cd77c36fe60b9dc9201fa2218eb01fd1a16a9e0203d2d9b62a5",
+  "schemaVersion": 1,
+  "updatedAt": 1777774376488
+}

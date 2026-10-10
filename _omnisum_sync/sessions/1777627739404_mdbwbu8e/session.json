@@ -1,0 +1,112 @@
+{
+  "createdAt": 1777627739404,
+  "entityType": "session",
+  "id": "1777627739404_mdbwbu8e",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "阅读 Codex++ GitHub 源码，重点查看 asar patch、fuse 修改、签名修复和 Sparkle hook 的具体实现",
+      "将该案例整理为 Electron 应用扩展机制研究笔记，提炼可复用的安全降级、原子写入和更新兼容设计模式"
+    ],
+    "archiveReason": "文章浓缩展示了从asar修改、完整性校验、Electron fuse、macOS重签名到更新兼容的一整套工程化注入方案，具有较高案例参考价值",
+    "byline": "陈成",
+    "classifiedAt": 1780616249625,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex++插件注入工程解析",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      },
+      {
+        "alt": "Article cover image",
+        "caption": "",
+        "height": 272,
+        "id": "img-14",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HHDctZRb0AAgU8L?format=jpg&name=small",
+        "role": "article",
+        "score": 65,
+        "src": "https://pbs.twimg.com/media/HHDctZRb0AAgU8L?format=jpg&name=small",
+        "width": 680
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 340,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/card_img/2050051524634750976/Fnd_sV2S?format=jpg&name=small",
+        "role": "article",
+        "score": 55,
+        "src": "https://pbs.twimg.com/card_img/2050051524634750976/Fnd_sV2S?format=jpg&name=small",
+        "width": 680
+      }
+    ],
+    "knowledgePoints": [
+      "Electron 应用的 app.asar 可通过修改入口文件实现 loader 注入，但需要保留 unpacked 文件集并采用原子重打包避免损坏应用",
+      "Electron 的 asar 完整性校验依赖 Info.plist 中的 ElectronAsarIntegrity，修改后需要同步更新 asar header 的 SHA-256",
+      "Electron fuse 可通过 sentinel 字符串定位并修改特定开关，例如关闭 EnableEmbeddedAsarIntegrityValidation",
+      "修改 macOS 应用内容会破坏原 Developer ID 签名，需要使用 codesign 进行 ad-hoc 重签名",
+      "面对 minified 闭源 bundle，可通过 fingerprint 匹配和 AST 级 source patch 定位并暴露内部对象",
+      "为兼容 Sparkle 自动更新，可在更新前恢复原始签名应用，更新后再自动触发补丁修复流程"
+    ],
+    "oneHighValuePoint": "最有价值的是其展示了插件系统注入不只是 monkey patch，而是需要同时处理包结构、完整性校验、二进制开关、签名和自动更新链路的完整工程闭环。",
+    "oneLineReview": "这是一篇高信息密度的硬核工程案例摘要，适合了解闭源 Electron 应用扩展与补丁体系设计。",
+    "primaryCategory": "软件工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "短期重点参考并归档，适合作为Electron闭源应用扩展和补丁工程案例留存",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Electron逆向工程",
+      "AI开发工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Codex++ 如何为闭源 Electron 版 OpenAI Codex 桌面应用实现插件系统，涉及 asar 重打包、完整性哈希更新、Electron fuse 修改、macOS 重签名、AST source patch 以及 Sparkle 自动更新兼容等关键工程手段。",
+    "tags": [
+      "Codex++",
+      "Electron",
+      "插件系统",
+      "逆向工程",
+      "asar",
+      "代码注入",
+      "macOS签名"
+    ],
+    "title": "陈成: 发现一个工程水准极高的项目：Codex++，给 OpenAI Codex 桌面应用做的插件系统",
+    "totalScore": 70,
+    "url": "https://x.com/chenchengpro/status/2050051524580303178"
+  },
+  "payloadHash": "sha256:ad101e1c199d9ded5bb5bc93ebaa71b283827c9ed5ede351f9cfc7046a2ca0c3",
+  "refs": {},
+  "revisionId": "sha256:aaee77f2716f1e95b4d63904b730fe62826471daa1e1cfe0c5c62dc1ed05da70",
+  "schemaVersion": 1,
+  "updatedAt": 1780616250738
+}

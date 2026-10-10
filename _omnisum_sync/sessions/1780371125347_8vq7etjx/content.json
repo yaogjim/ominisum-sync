@@ -1,0 +1,15 @@
+{
+  "createdAt": 1780371125347,
+  "entityType": "session-content",
+  "id": "1780371125347_8vq7etjx",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>plusxiaxia</strong></header><div class=\"tw-body\">部门负责人私下吐槽我缺乏整体架构能力。<br>但我的判断很简单：ROI讲不清，场景没跑通，数据没治理好，不碰平台化。<br>大模型网关、Agent Runtime 、知识库等，供应商早就卷成熟了。<br>几个正式工从0造一遍，不是战略资产，而是维护负债。<br>传统企业做AI，怕的就是不自量力造轮子</div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@paperpaper</strong> <span class=\"tw-eng\">♥ 373 · 💬 29</span><p>大拉屎时代来临<br><br>来源未知，这下更是全自动垃圾生产了，唯一受害者又回到了严谨做学术的和认真的会议审稿人。<br><br>该变天了哦</p></div><div class=\"tw-reply\"><strong>@吊顶高松灯</strong> <span class=\"tw-eng\">♥ 228 · 💬 34</span><p>这几天面试 Agent 工程师下来，有一半的面试的都是本硕期间发过 AI 周边论文的，剩下的一半才是Java后端或者前端转来的。<br><br>比起 AI 正规军，前后端这批很多人没有对agent/rag 进行 eval 的意识，很多项目停在“能跑了”，想法可能还行，但是问不出指标</p></div><div class=\"tw-reply\"><strong>@车厘子</strong> <span class=\"tw-eng\">♥ 123 · 💬 88</span><p>最近有个很明显的体感是， Agent Tool Call 的天花板基本被锁死了。<br><br>自从 CLI 这条路被挖出来，大家都发现输入输出的 schema 纯浪费 Token ，在工具特别多的情况下都不如写 skill 里。<br><br>tool 太多了不如走 skill+cli，tool 太少了又是典型的“覆盖主力工况”，天花板太低。没救了。</p></div><div class=\"tw-reply\"><strong>@idoubi</strong> <span class=\"tw-eng\">♥ 227 · 💬 19</span><p>我年初开始做 OpenClaw 托管服务，在一套 k8s 集群部署了 500 个 Pod，每个 Pod 限制 4g 的运行内存。日常开着 18 台 4c16g 的服务器作为节点池，一个月成本将近 5k 刀。<br><br>几个月下来，托管服务的 MRR 突破了 8k 刀，除去运营成本，利润非常低。<br><br>今天终于把服务迁移到了</p></div><div class=\"tw-reply\"><strong>@plusxiaxia</strong> <span class=\"tw-eng\">♥ 6 · 💬 2</span><p>供应商都是几十人的产研团队去卷某个方面，我们这几杆枪卷不起。</p></div></div>",
+    "pageContent": "plusxiaxia: 部门负责人私下吐槽我缺乏整体架构能力。\n但我的判断很简单：ROI讲不清，场景没跑通，数据没治理好，不碰平台化。\n大模型网关、Agent Runtime 、知识库等，供应商早就卷成熟了。\n几个正式工从0造一遍，不是战略资产，而是维护负债。\n传统企业做AI，怕的就是不自量力造轮子\n---\n热门回复 (共 5 条):\n@paperpaper (♥ 373 · 💬 29):\n大拉屎时代来临\n\n来源未知，这下更是全自动垃圾生产了，唯一受害者又回到了严谨做学术的和认真的会议审稿人。\n\n该变天了哦\n\n@吊顶高松灯 (♥ 228 · 💬 34):\n这几天面试 Agent 工程师下来，有一半的面试的都是本硕期间发过 AI 周边论文的，剩下的一半才是Java后端或者前端转来的。\n\n比起 AI 正规军，前后端这批很多人没有对agent/rag 进行 eval 的意识，很多项目停在“能跑了”，想法可能还行，但是问不出指标\n\n@车厘子 (♥ 123 · 💬 88):\n最近有个很明显的体感是， Agent Tool Call 的天花板基本被锁死了。\n\n自从 CLI 这条路被挖出来，大家都发现输入输出的 schema 纯浪费 Token ，在工具特别多的情况下都不如写 skill 里。\n\ntool 太多了不如走 skill+cli，tool 太少了又是典型的“覆盖主力工况”，天花板太低。没救了。\n\n@idoubi (♥ 227 · 💬 19):\n我年初开始做 OpenClaw 托管服务，在一套 k8s 集群部署了 500 个 Pod，每个 Pod 限制 4g 的运行内存。日常开着 18 台 4c16g 的服务器作为节点池，一个月成本将近 5k 刀。\n\n几个月下来，托管服务的 MRR 突破了 8k 刀，除去运营成本，利润非常低。\n\n今天终于把服务迁移到了\n\n@plusxiaxia (♥ 6 · 💬 2):\n供应商都是几十人的产研团队去卷某个方面，我们这几杆枪卷不起。\n"
+  },
+  "payloadHash": "sha256:f0e9024dec2b1ca0e6676b367d9a48a877c42f98a5fc133857ee522d2dd0e061",
+  "refs": {},
+  "revisionId": "sha256:28a9e08ec40baa8979130e6e1bcf5a7694030c11c60241fdaee1d4dfe9bf333f",
+  "schemaVersion": 1,
+  "updatedAt": 1780373770744
+}

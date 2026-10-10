@@ -1,0 +1,69 @@
+{
+  "createdAt": 1780386275728,
+  "entityType": "session",
+  "id": "1780386275728_835nkurl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "使用Claude Code时尽量保持同一session连续对话，避免频繁新开session。",
+      "在开始任务前配置好CLAUDE.md、MCP工具和模型，任务中途尽量不要修改。",
+      "避免频繁切换Opus、Sonnet、Haiku等模型，按阶段集中切换。",
+      "对长时间任务可考虑在TTL过期前发送轻量请求维持缓存。"
+    ],
+    "archiveReason": "文章系统解释了KV缓存、Claude Code缓存断裂原因和具体省Token策略，对长期使用AI编程工具和理解LLM推理成本有较高参考价值。",
+    "classifiedAt": 1780386696606,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code缓存省Token机制",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "KV缓存复用历史token的Key和Value，只对Decoder-only生成模型的单向注意力特别有效。",
+      "Claude Code缓存依赖前缀匹配，系统提示、工具schema、消息历史、模型切换都会影响缓存命中。",
+      "Pro/Max用户缓存TTL可达1小时，缓存读取会刷新TTL，因此持续会话和定期keep-alive可减少冷启动成本。",
+      "Sub-agent通常与主线程工具集、模型和消息历史不同，难以复用主线程缓存。"
+    ],
+    "oneHighValuePoint": "缓存是前缀匹配链条，保持系统提示、工具集、CLAUDE.md和模型稳定，持续在同一session追加对话，能显著降低Token成本。",
+    "oneLineReview": "一篇兼具原理解释、源码观察和实操建议的Claude Code缓存优化指南。",
+    "primaryCategory": "AI工程与大模型使用优化",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "LLM缓存机制",
+      "Claude Code使用技巧"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章从本地模型实验出发，解释Transformer KV缓存为何能显著降低多轮对话的输入处理成本，并结合Claude Code源码分析缓存分层、TTL、断裂原因和省Token使用姿势。",
+    "tags": [
+      "KV Cache",
+      "Claude Code",
+      "Token优化",
+      "Prompt缓存",
+      "大模型工程"
+    ],
+    "title": "搞懂缓存机制，从Gemma4到Claude Code省80%Token",
+    "totalScore": 75.5,
+    "url": "https://x.com/MinLiBuilds/status/2041178722230030384"
+  },
+  "payloadHash": "sha256:4b823586c40e837203dfa796d2d21fa8eb1a8ef8c4a03d10fab34334dcec71e1",
+  "refs": {},
+  "revisionId": "sha256:25e0334a52f05e4cef514cfbd19959f89660eb271282c6a1e583ea0f0e174bcb",
+  "schemaVersion": 1,
+  "updatedAt": 1780387246741
+}

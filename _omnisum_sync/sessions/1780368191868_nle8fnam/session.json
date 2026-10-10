@@ -1,0 +1,107 @@
+{
+  "createdAt": 1780368191868,
+  "entityType": "session",
+  "id": "1780368191868_nle8fnam",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "等待第三方实测验证本地大模型、游戏性能和续航表现",
+      "关注英伟达AI PC生态是否真正获得Windows开发者与OEM支持"
+    ],
+    "archiveReason": "",
+    "byline": "AYi",
+    "classifiedAt": 1780368758807,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "英伟达AI PC冲击论",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "缺乏证据支撑且包含较多夸张表述，无法作为可靠技术或产业分析资料长期留存。",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 675,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/amplify_video_thumb/2061526571584778240/img/k-J0805G_VGHaF8W.jpg",
+        "role": "tweet",
+        "score": 70,
+        "src": "https://pbs.twimg.com/amplify_video_thumb/2061526571584778240/img/k-J0805G_VGHaF8W.jpg",
+        "width": 1200
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 720,
+        "id": "img-16",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/amplify_video_thumb/2047793156838531072/img/ME23A8t33k_NdFu2.jpg",
+        "role": "tweet",
+        "score": 70,
+        "src": "https://pbs.twimg.com/amplify_video_thumb/2047793156838531072/img/ME23A8t33k_NdFu2.jpg",
+        "width": 720
+      }
+    ],
+    "knowledgePoints": [
+      "AI PC可能改变传统以CPU和制程为核心的PC竞争逻辑",
+      "CUDA生态是英伟达相对Intel、AMD、苹果和高通的重要护城河",
+      "ARM版Windows兼容性、散热、续航、价格和真实性能仍是关键不确定因素"
+    ],
+    "oneHighValuePoint": "将未来PC竞争焦点从CPU性能转向AI算力与开发者生态，尤其强调CUDA长期积累的壁垒。",
+    "oneLineReview": "适合快速了解市场情绪，不适合作为严肃产业判断依据。",
+    "primaryCategory": "科技产业观察",
+    "rating": "D",
+    "rejectReason": "内容以情绪化判断和趋势叙事为主，缺少可靠数据、产品细节和可验证证据，实际参考价值有限。",
+    "retentionDecision": "短期了解热点即可，建议删除",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI硬件",
+      "PC产业"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章认为英伟达通过RTX Spark类AI PC方案，以ARM、Blackwell GPU、统一内存和CUDA生态挑战传统Wintel、苹果和高通格局，但论述主要基于发布会叙事和推测，缺少实测与数据支撑。",
+    "tags": [
+      "NVIDIA",
+      "AI PC",
+      "CUDA",
+      "ARM",
+      "产业趋势"
+    ],
+    "title": "AYi: 苹果、Intel、AMD、高通， 今晚大概率睡不好了",
+    "totalScore": 38.5,
+    "url": "https://x.com/AYi_AInotes/status/2061526783477088693"
+  },
+  "payloadHash": "sha256:017c2b7709131cee866a24ecfd4361f705f9c4eab56f93c1b4add6d48b87d55c",
+  "refs": {},
+  "revisionId": "sha256:8ad79517bc3cca75c258945baa1d3b54d573cfe498f40f5466d6360ea2b79687",
+  "schemaVersion": 1,
+  "updatedAt": 1780368759375
+}

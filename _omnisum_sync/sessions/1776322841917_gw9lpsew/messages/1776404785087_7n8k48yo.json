@@ -1,0 +1,20 @@
+{
+  "createdAt": 1776404604109,
+  "entityType": "message",
+  "id": "1776404785087_7n8k48yo",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Leeway 用「Skills + 脚本」替代自建 Agent 框架，跑通了 14 天的内容工作流，核心结论是：很多场景下，不必先造复杂 Agent 系统，先把“可复用的方法”沉淀成 Skill 更实用。\n# 文章也强调了一条很重要的实践路径：**Skill 负责“怎么做”，Routine 负责“什么时候做”**，两者结合，才是可持续的自动化。\n\n## 1. Skill 到底是什么\n\n- 作者先解释：**Skill 不是 SDK、不是框架、也不是 API**，本质上就是一个文件夹，里面放说明文档和执行脚本。\n- 典型结构包括：\n  - `SKILL.md`：告诉 Claude 这个技能是做什么的、怎么调用\n  - `references/`：放背景知识、禁用表达、规则约束\n  - `scripts/`：放 Python 或 Bash 脚本\n- Skill 的关键优势是：**需要时才加载进上下文，不需要时不占 token**。\n- 它还具备工程化上的便利：\n  - 可以用 Git 管理\n  - 可以分享和复用\n  - 可以做版本控制\n- 文中引用 Barry 的观点：**Agent 虽然聪明，但缺少领域知识，到了真实业务环境容易失效；Skill 的价值，是把人类验证过的方法打包给 Agent 执行。**\n\n## 2. 作者实际搭了什么系统\n\n- 作者用 Skills 模式搭了一整套内容工作流，持续跑了 **两周（14 天）**。\n- 整套系统没有使用：\n  - LangChain\n  - 自建 Agent 框架\n- 实际使用的只有两类东西：**5 个 Agent 定义文件 + 5 个执行脚本**。\n\n### Agent 定义文件\n\n- `engagement-agent.md`：负责 Twitter / Reddit 回复策略，以及三源扫描规则\n- `intelligence-agent.md`：负责 **8 个平台**的热点扫描和交叉验证\n- `distribution-agent.md`：负责 `S-012` 内容生成和发布流程\n- `relationship-agent.md`：负责 **11 人 CRM** 评分和跟进节奏\n- `viral-autopsy-agent.md`：负责爆款内容拆解和模式提取\n\n### 执行脚本\n\n- `voice_gate.py`（**292 行**）：包含 **30+ 禁词、7 组正则、打分系统**，主要用来拦截 AI 模板化表达\n- `twitter_gql.py`（**349 行**）：直接调用 Twitter GraphQL API 发帖、点赞、回复\n- `consume_handoff.py`（**156 行**）：处理云端 Routine 产出的消费者逻辑\n- `scan-daily.sh`（**165 行**）：做多平台批量扫描\n- `gen_graveyard_card.py`（**93 行**）：负责配图生成\n\n- 作者总结这套架构时说得很直白：\n  - **Skill 文件是知识层**\n  - **脚本是执行层**\n  - **Claude 是运行时**\n\n## 3. 为什么它比自建 Agent 框架更好用\n\n- 作者提到自己第一周也试过 **LangGraph**，但到第 **3 天**就放弃了。\n- 原因主要有 4 个：\n\n### 3.1 调试更简单\n\n- LangGraph 一旦 state graph 超过 **5 个节点**，排查 bug 会很痛苦。\n- 因为你很难迅速判断问题到底出在：\n  - state\n  - node\n  - edge condition\n- 相比之下，Skill 方式更直接：**markdown prompt 哪行有问题，就改哪一行。**\n\n### 3.2 上下文更节省\n\n- 很多 Agent 框架会把大量内容一起塞进上下文，容易造成“上下文爆炸”。\n- Skill 是**按需加载**：\n  - 比如 Claude 在执行 `voice gate` 时，不需要知道 `relationship scoring` 的规则\n- 这样既减少 token 浪费，也让任务边界更清晰。\n\n### 3.3 版本控制更友好\n\n- Skill 本质是普通文件，`git diff` 一看就明白。\n- 反过来，Agent 的 state 如果序列化之后再比较，往往很难读、很难维护。\n\n### 3.4 非程序员也能参与修改\n\n- 例如 `voice_gate.py` 里的禁词规则，团队成员只要能编辑 markdown / 文本文件，就能直接补充一条。\n- 不要求每个人都懂 Python。\n- 文中还引用 Barry 的说法：**财富 100 强公司的法务和 HR 都在自己写 Skill**。\n- 作者认为这很可信，因为 Skill 的使用门槛就是“能编辑文本文件”。\n\n## 4. 这套系统跑出了什么结果\n\n- 作者给出了 **14 天**的实际运行数据：\n  - 发布了 **4 篇 `S-012` curation 长推**，并且都通过了 `voice gate`\n  - 维护了 **11 人关系网络**，由 `relationship-agent` 自动提醒跟进\n  - 在 `tracker.jsonl` 中记录了 **100+ 条 engagement**\n  - `intelligence-agent` 累计扫描 **8 个平台**，产出 **17 条 cross-platform signal**\n  - `voice gate` 至少拦截了 **3 次 AI 模板句**\n- 其中作者认为最有价值的 Skill 是：**`voice_gate`**。\n\n### 具体案例\n\n- 作者举了一个很直接的例子：\n  - 之前在 Reddit 上有一条评论被批评为 **“AI slop”**\n  - 这条评论最后拿了 **-14 分**\n- 之后作者写了 `voice_gate` 检查器，用来过滤 AI 味过重的表达。\n- 结果是：**从那以后，再没有因为这类问题被骂过。**\n- 这说明 Skill 不只是“能跑”，还真正改善了内容质量。\n\n## 5. Skill 和 Routine 应该怎么配合\n\n- 作者最后谈到从 Skill 到 Routine 的进化路径，认为二者是互补关系：\n\n### Skill 的作用\n\n- **Skill = 知识层**\n- 它负责定义：**“怎么做”**\n- 比如告诉 Claude：\n  - 扫描 HN 时用 Firebase API\n  - 只看 AI 相关内容\n  - `score > 100` 才值得关注\n\n### Routine 的作用\n\n- **Routine = 执行层**\n- 它负责定义：**“什么时候做”**\n- 比如规定：**每天早上 7 点执行一次这个 Skill**\n\n### 两者缺一不可\n\n- 没有 Skill 的 Routine，就像一个**每天定时发呆的 cron job**\n- 没有 Routine 的 Skill，就像一个**只能手动调用的函数**\n- 只有组合起来，才能形成完整自动化。\n\n## 6. 作者给出的实践建议\n\n- 正确顺序不是先上自动调度，而是：\n  1. **先写 Skill**\n  2. **先验证它真的能跑通**\n  3. **再迁移到 Routine**\n- 作者特别强调：**这个顺序不能反。**\n\n如果你愿意，我也可以进一步把这篇内容整理成一版更适合发朋友圈 / 飞书 / 知识库的“短版总结”。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1776404604109,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7123929d2026e2c3f8578caa3960e4287627287f668125923629874719b4be24",
+  "refs": {
+    "sessionId": "1776322841917_gw9lpsew"
+  },
+  "revisionId": "sha256:78d8527d4546c1e6c8b65cf9ac5911cabf3b9cb33c0de15e4fabd5b35bde133d",
+  "schemaVersion": 1,
+  "updatedAt": 1776404604109
+}

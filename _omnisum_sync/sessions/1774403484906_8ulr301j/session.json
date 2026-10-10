@@ -1,0 +1,68 @@
+{
+  "createdAt": 1774403484906,
+  "entityType": "session",
+  "id": "1774403484906_8ulr301j",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "结合当前Agent项目，梳理是否需要规划、子代理、记忆和沙箱执行这四类核心能力",
+      "继续阅读文中链接的Sandboxes、Skills、Memory和Context engineering文档以获取具体配置方法"
+    ],
+    "archiveReason": "内容适合作为LangChain Deep Agents能力总览和功能入口文档，便于后续实现时回查",
+    "classifiedAt": 1774407383115,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "LangChain代理Harness能力概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "docs.langchain.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Harness通过write_todos支持长流程任务规划与状态跟踪",
+      "子代理机制可实现上下文隔离、并行执行和token效率优化",
+      "上下文管理结合压缩、隔离和长期记忆以应对上下文窗口限制",
+      "沙箱后端可为Agent暴露execute能力，实现安全代码执行",
+      "Skills与Memory分别提供按需加载的能力模块和持续可用的偏好记忆"
+    ],
+    "oneHighValuePoint": "将子代理、上下文压缩、虚拟文件系统和代码执行整合为统一harness层，是构建长时任务Agent的关键抽象。",
+    "oneLineReview": "一篇结构清晰的官方能力总览文档，适合建立认知框架，但不够深入到可直接落地。",
+    "primaryCategory": "AI Agent开发文档",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为框架能力索引可中长期保留，按需查阅即可",
+    "secondaryCategories": [
+      "LangChain框架",
+      "Agent架构设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统介绍了LangChain Deep Agents中harness的核心能力，包括规划、虚拟文件系统、子代理、上下文管理、代码执行、人类介入、技能与记忆等，适合作为能力地图和功能入口，但更偏概览说明，缺少深入示例与证据支撑。",
+    "tags": [
+      "LangChain",
+      "Deep Agents",
+      "Harness",
+      "子代理",
+      "上下文管理"
+    ],
+    "title": "Harness capabilities - Docs by LangChain",
+    "totalScore": 58.5,
+    "url": "https://docs.langchain.com/oss/python/deepagents/harness"
+  },
+  "payloadHash": "sha256:87705724742b41e1e822f8b2d2ea1d83035220728dd685f4201baa1f6af89141",
+  "refs": {},
+  "revisionId": "sha256:1e274c79dbfc5a139a1676d3732539f02ccc42b0e0319e6fbcfd592e5e6accb3",
+  "schemaVersion": 1,
+  "updatedAt": 1774434000256
+}

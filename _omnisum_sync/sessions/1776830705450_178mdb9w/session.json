@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776830705450,
+  "entityType": "session",
+  "id": "1776830705450_178mdb9w",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理自己的 AI 工具链，尝试设定单一入口和明确的任务路由规则",
+      "为不同模型定义职责边界，并验证记忆继承与角色一致性是否稳定"
+    ],
+    "archiveReason": "提供了多模型分流、统一入口和会话记忆整合的实践线索，可作为后续搭建 agent 路由的参考",
+    "classifiedAt": 1776830910013,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Hermes多模型路由实战",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "多模型系统可按策略、代码、轻任务等类型进行分流以控制成本",
+      "统一入口、session 与 memory 能显著改善 agent 工作流的一致性与顺手度"
+    ],
+    "oneHighValuePoint": "最有价值的是把 Hermes 设为唯一入口与唯一 SSOT，再按任务类型将高价和低价模型分层分流。",
+    "oneLineReview": "有实战味道但信息量有限，适合当作多模型路由配置的灵感速记。",
+    "primaryCategory": "AI工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为多模型工作流配置样例",
+    "secondaryCategories": [
+      "多模型协同",
+      "Agent基础设施"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了作者将 Hermes 作为唯一入口来统一内容、规划、商业化与产品化任务，并按任务类型分流给 Claude、Codex 和低价模型执行，核心价值在于建立单一事实源与更顺手的 session、memory 工作流。",
+    "tags": [
+      "Hermes",
+      "Claude",
+      "Codex",
+      "路由策略",
+      "SSOT"
+    ],
+    "title": "Leo: 继续搞 Hermes，终于调到能进实战了",
+    "totalScore": 56,
+    "url": "https://x.com/runes_leo/status/2046578699861131728"
+  },
+  "payloadHash": "sha256:49fdc905bd9ce825a3c7877f8abd32cec9507989453b52c704ebfc601c22ebc4",
+  "refs": {},
+  "revisionId": "sha256:03a653bf9b4fad75623ea99fdee992497d730ea298cdbc57c923a0ee3864ed8b",
+  "schemaVersion": 1,
+  "updatedAt": 1776830910016
+}

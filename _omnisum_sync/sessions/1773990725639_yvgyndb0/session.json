@@ -1,0 +1,67 @@
+{
+  "createdAt": 1773990725639,
+  "entityType": "session",
+  "id": "1773990725639_yvgyndb0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你关注 AI Agent 本地执行链路，可进一步查看 Pinokio 官方页面与实际安装方式",
+      "验证 Hermes 与 Pinokio 是否支持你当前工作流中的目标应用与自动化场景"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773991081902,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 7,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Hermes联动Pinokio演示",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Hermes Agent 支持与 Pinokio 协作控制本地已安装应用",
+      "该方案强调跨平台安装运行，原生 Windows 无需 WSL",
+      "帖子展示了通过代理自动完成视频生成任务的端到端流程",
+      "支持通过局域网和二维码在手机端访问代理终端"
+    ],
+    "oneHighValuePoint": "Hermes 可通过 Pinokio 自动发现、启动并调用本地已安装应用完成任务，体现了代理到本机工具执行的闭环能力。",
+    "oneLineReview": "有产品想象力，但更像宣传演示而非可深度复用的技术内容。",
+    "primaryCategory": "AI代理工具",
+    "rating": "C",
+    "rejectReason": "内容主要是功能宣传和演示描述，缺少技术细节、方法拆解和可靠证据支撑。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "自动化工作流",
+      "产品发布演示"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一条关于 Hermes Agent 与 Pinokio 集成能力的演示帖，重点展示一键安装、跨平台运行，以及自动调用本地已安装应用完成视频生成等场景。信息点有一定新鲜感，但整体偏产品宣传，细节与证据不足。",
+    "tags": [
+      "Hermes Agent",
+      "Pinokio",
+      "AI Agent",
+      "应用控制",
+      "一键部署"
+    ],
+    "title": "cocktail peanut: Hermes can talk to Pinokio to control any app you have installed, automatically",
+    "totalScore": 46.5,
+    "url": "https://x.com/cocktailpeanut/status/2034699401461944765"
+  },
+  "payloadHash": "sha256:832a13bff875ed6f280287dbd16289d4c352c3afcefe5bb7ab35a032e8dddc0b",
+  "refs": {},
+  "revisionId": "sha256:4b524806f8dc3bd29e753fe1e57f00567e476e7d254f3fb483c26dcf340b4ecf",
+  "schemaVersion": 1,
+  "updatedAt": 1774005308715
+}

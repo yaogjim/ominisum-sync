@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780308075248,
+  "entityType": "message",
+  "id": "1780308141390_wkrvm3j8",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 写好 CLAUDE.md 的 8 条经验\n\n## 一、内容总结\n\n核心观点：**CLAUDE.md 不是越详细越好，而是越精准越好。**\n\n8 条经验：\n\n1. **控制长度**：最好不超过 200 行，避免占用上下文。\n2. **写清禁区**：不仅告诉 Claude 用什么，也要告诉它不要用什么。\n3. **规则要具体**：少写“代码要干净”，多写“禁止 any、组件不超 200 行”。\n4. **CLAUDE.md 做索引**：不要塞满文档，只告诉 Claude 去哪里看。\n5. **敏感目录单独配置**：如 auth、billing、infra 可放本地 CLAUDE.md。\n6. **用 Hook 强制规则**：测试、格式化、危险操作不要靠 Claude 记忆。\n7. **建立记忆文件**：用 MEMORY.md 记录长期经验和坑。\n8. **写清工作风格**：让 Claude 一开始就知道你的偏好和沟通方式。\n\n---\n\n## 二、深入浅出解读\n\nCLAUDE.md 可以理解为：\n\n> 给 Claude Code 的“项目说明书 + 工作规矩 + 避坑指南”。\n\n但问题是，很多人把它写成了“百科全书”。\n\n这会导致两个问题：\n\n- Claude 抓不住重点；\n- 上下文被无关内容占满。\n\n所以好的 CLAUDE.md 应该像一张**高质量地图**：\n\n- 告诉 Claude 项目是什么；\n- 告诉它技术栈；\n- 告诉它哪些不能碰；\n- 告诉它遇到问题去哪查；\n- 告诉它你的工作习惯。\n\n最关键的是：**规则必须能执行、能判断、能验证。**\n\n比如：\n\n```md\n❌ 写高质量代码\n```\n\n这句话太虚。\n\n改成：\n\n```md\n✅ 禁止使用 any\n✅ 使用 named export\n✅ 不保留 console.log\n✅ 单组件不超过 200 行\n```\n\nClaude 才知道该怎么做。\n\n---\n\n## 三、我的意见\n\n这篇文章最有价值的一点是：\n\n> CLAUDE.md 不是文档仓库，而是 AI 协作协议。\n\n我建议优先做 5 件事：\n\n1. **先删减**  \n   把 CLAUDE.md 压到 200 行以内。\n\n2. **加禁用清单**  \n   明确哪些库、框架、写法不能引入。\n\n3. **把模糊规则改具体**  \n   所有规则都要能一眼判断对错。\n\n4. **给高风险目录加本地 CLAUDE.md**  \n   尤其是认证、支付、数据库迁移、基础设施。\n\n5. **维护 MEMORY.md**  \n   把 Claude 反复踩的坑记下来，形成长期记忆。\n\n---\n\n## 四、最简模板\n\n```md\n# Project Overview\n\n这是一个 B2B 数据分析系统。\n目标：帮助运营人员快速发现数据问题。\n\n# Tech Stack\n\n- Next.js 15\n- TypeScript\n- Tailwind CSS\n- Supabase\n- PostgreSQL\n\n# Do NOT Introduce\n\n- Redux\n- styled-components\n- Material UI\n- MongoDB\n\n# Coding Rules\n\n- 使用 named export\n- 禁止 any\n- async/await 替代 then\n- 不保留 console.log\n- 单组件尽量不超过 200 行\n\n# Docs\n\n- 架构：docs/architecture.md\n- API：docs/api.md\n- 部署：docs/deploy.md\n\n# Working Style\n\n- 先给方案，再写代码\n- 不确定时先问\n- 重大改动前先确认\n- 回复用中文\n```\n\n---\n\n## 一句话结论\n\n**好的 CLAUDE.md，不是让 Claude 读更多，而是让 Claude 少走弯路。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780308075248,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:dec0e3a0f049d9bc5690d46958aa0debde7d6129b0c0f7b50dc3d0f0915849be",
+  "refs": {
+    "sessionId": "1780308140446_p209cs9r"
+  },
+  "revisionId": "sha256:f67eaa80d6619e1f22fc0b564873ca632c6f8e7633ea09ff15c3799c84339157",
+  "schemaVersion": 1,
+  "updatedAt": 1780308075248
+}

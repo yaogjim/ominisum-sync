@@ -1,0 +1,19 @@
+{
+  "createdAt": 1776325536137,
+  "entityType": "message",
+  "id": "1776325536136_rjfdlcfd",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Meta-Harness代码发布简讯\n\n**评级**: D (32.5分)  |  **深度阅读**: 否  |  **建议操作**: 跳过\n\n**主类别**: AI智能体工具发布\n**次类别**: LLM评测与优化, 科研项目动态\n**标签**: #Meta-Harness #代码发布 #LLM代理 #Stanford #GitHub仓库\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 3 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 4 | 20% |\n| 可操作性 | 4 | 15% |\n| 方法论价值 | 3 | 15% |\n| 可迁移性 | 3 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 有项目追踪价值，但作为单篇内容几乎只有“已发布代码”这一条信息。\n**核心高价值点**: 提供了官方 GitHub 仓库入口，便于直接转向一手代码和 ONBOARDING 文档。\n\n### 摘要\n这是一条关于 Meta-Harness 开源代码发布的推文，核心信息是仓库已上线，可用于复现实验并帮助用户在新领域构建 Meta-Harness。正文没有展开方法机制、适用边界、效果数据或实践示例。\n\n### 知识要点\n- Meta-Harness 项目已开源官方实现\n- 仓库目标不仅是复现实验，还支持新领域中的 harness 构建\n- 使用入口强调让代理阅读 ONBOARDING.md 并通过对话完成上手\n\n### 行动项\n- 如果你对 LLM harness/agent optimization 感兴趣，直接查看 GitHub 仓库与 ONBOARDING.md\n- 若无明确相关项目需求，可删除该推文，仅在需要时通过仓库地址重新检索\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是发布通知，缺少方法细节、实验结果和可执行说明，评论区也基本无有效补充。\n删除: 是\n留存决策: 信息过于简略，除非你正跟进该项目，否则建议删除\n删除原因: 仅提供仓库发布消息和非常粗略的用途说明，信息密度低、证据不足，独立留存价值很弱。",
+    "role": "assistant",
+    "timestamp": 1776325536137,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:5cb8e9a3f12fab24a4f1f81d37535f65f2d352f78965e4d0adbdb2bd2c5d6f1b",
+  "refs": {
+    "sessionId": "1776322825325_i506oce7"
+  },
+  "revisionId": "sha256:3ae39d9be90c07759a3e21117f58c9e951eeef0aa474743d30007b56342d0182",
+  "schemaVersion": 1,
+  "updatedAt": 1776325536137
+}

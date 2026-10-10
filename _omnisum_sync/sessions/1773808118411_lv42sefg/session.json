@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773808118411,
+  "entityType": "session",
+  "id": "1773808118411_lv42sefg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估当前 AI 开发工具是否需要插件化能力、审计日志和权限分层设计",
+      "如果在团队内部推广 AI 编码工具，可优先补齐可观测性埋点与安全治理方案"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773829116442,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Intercom内部Claude插件实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "可通过 MCP 为 Claude 接入只读生产环境能力，但必须配套权限控制与审计",
+      "对 Claude Code 生命周期事件做可观测性埋点有助于分析真实使用模式",
+      "会话转录可用于事后分析和持续优化 AI 工具体验"
+    ],
+    "oneHighValuePoint": "最有价值的是把高风险生产数据访问能力与多重安全门、审计和身份验证结合起来，体现了企业级 AI 工具落地的关键治理思路。",
+    "oneLineReview": "有启发性的企业AI工程案例速写，但更像炫技式亮点清单，实操价值有限。",
+    "primaryCategory": "AI工程化",
+    "rating": "C",
+    "rejectReason": "内容主要是零散亮点展示，缺少完整上下文、实现细节和可复用步骤，证据支撑也较弱。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开发工具链",
+      "企业AI应用"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章以线程形式简述 Intercom 为 Claude Code 构建内部插件系统的若干亮点，包括只读生产控制台、权限与审计安全门、OpenTelemetry 全链路埋点，以及会话转录分析机制，展示了企业级 AI 工程平台化的一些方向。",
+    "tags": [
+      "Claude Code",
+      "MCP",
+      "插件系统",
+      "OpenTelemetry",
+      "企业内部工具"
+    ],
+    "title": "Brian Scanlan: We've been building an internal Claude Code plugin system at Intercom with 13 pl…",
+    "totalScore": 42.5,
+    "url": "https://x.com/brian_scanlan/status/2033978300003987527"
+  },
+  "payloadHash": "sha256:fe7b1cf0c56c01481dfe2056997f7db2ae7be743d1a4ae86f75143da46c7f87e",
+  "refs": {},
+  "revisionId": "sha256:1691ae385b69fe7f27a04614231879b489d1592252026ba446784a58fabb53b3",
+  "schemaVersion": 1,
+  "updatedAt": 1773829116446
+}

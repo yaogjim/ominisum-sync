@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773986129916,
+  "entityType": "session",
+  "id": "1773986129916_50wgsza7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看 `autonovel` 开源仓库，重点拆解其生成、评审和保留/丢弃循环设计",
+      "评估该流程是否可迁移到报告生成、课程内容生产或其他长文本任务"
+    ],
+    "archiveReason": "展示了 AI 智能体在长文本创作与多步骤工作流编排上的新案例，具备案例参考价值。",
+    "classifiedAt": 1773986143417,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Hermes智能体写小说案例",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI 智能体可将世界观设计、写作、编辑、排版和分发串成端到端流程",
+      "modify-evaluate-keep/discard 循环可从研究任务迁移到创意写作任务",
+      "对抗性编辑可用于发现情节漏洞和提升长文本一致性"
+    ],
+    "oneHighValuePoint": "最有价值的是将 autoresearch 式的 modify-evaluate-keep/discard 循环迁移到小说生产全流程，体现了智能体在复杂创作任务中的编排潜力。",
+    "oneLineReview": "这是一个很新颖的 AI 长篇创作展示，但更偏概念验证和营销发布，参考价值高于证据强度。",
+    "primaryCategory": "AI智能体",
+    "rating": "B",
+    "rejectReason": "证据主要来自宣传性推文，缺少可验证的质量评测、过程细节和结果对比。",
+    "retentionDecision": "短期参考后可保留归档",
+    "secondaryCategories": [
+      "内容生成",
+      "自动化工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以推文形式介绍 Nous Research 的 Hermes Agent 完成了一本约 7.9 万字小说，并串联世界观构建、章节撰写、对抗性编辑、排版、封面、有声书与落地页生成等流程。亮点在于把 modify-evaluate-keep/discard 循环扩展到小说创作，但目前更像展示案例而非严谨方法报告。",
+    "tags": [
+      "Hermes Agent",
+      "Autonovel",
+      "AI写作",
+      "工作流",
+      "小说生成"
+    ],
+    "title": "Nous Research: Hermes Agent wrote a novel",
+    "totalScore": 55.5,
+    "url": "https://x.com/NousResearch/status/2034734063928426685"
+  },
+  "payloadHash": "sha256:8c38082505ad586aafc775830ebdc486fb667e0551af08debe162e2fcd5c03e7",
+  "refs": {},
+  "revisionId": "sha256:cf85630f156c9ce5b11deed146c4090f8ae2ac00689f029cdb7e4d85f6e6847f",
+  "schemaVersion": 1,
+  "updatedAt": 1773987813097
+}

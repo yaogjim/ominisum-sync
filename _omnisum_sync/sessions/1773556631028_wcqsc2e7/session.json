@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773556631028,
+  "entityType": "session",
+  "id": "1773556631028_wcqsc2e7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在Agent执行链路中加入关键运行时检查，并返回可操作的错误信息而非仅靠系统提示约束。",
+      "记录模型的异常但有价值的自主行为，区分应拦截的风险行为与应产品化支持的真实需求。"
+    ],
+    "archiveReason": "提出了关于Agent设计的实用原则，适合在构建工具调用和运行时护栏时参考。",
+    "classifiedAt": 1773829775394,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "训练先验胜过提示工程",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "当提示词与训练分布冲突时，模型通常更遵循训练先验而非显式指令。",
+      "对编码模型而言，“错误反馈->代码修复”是高度内化的行为模式，可作为比提示更可靠的控制机制。"
+    ],
+    "oneHighValuePoint": "不要仅靠提示阻止模型行为，而应在沙箱中放开执行、用运行时检查捕获问题，并用清晰错误信息驱动模型自我修复。",
+    "oneLineReview": "有启发但证据偏弱，适合作为Agent系统设计的经验性原则参考。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后归档",
+    "secondaryCategories": [
+      "提示工程",
+      "系统设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于大量Agent运行案例提出：训练先验往往压过提示词约束，更有效的方法不是反复提示，而是在运行时允许尝试、捕获错误并返回明确反馈，让模型沿着其熟悉的“报错-修复”模式完成纠偏。",
+    "tags": [
+      "LLM Agent",
+      "训练先验",
+      "运行时约束",
+      "错误修复循环",
+      "工具调用"
+    ],
+    "title": "Give your Agent Maximum Freedom",
+    "totalScore": 61.5,
+    "url": "https://x.com/gregpr07/status/2032539581359546757"
+  },
+  "payloadHash": "sha256:d5265d1e6418a18ac2fc2e4f18f5a22c6fcf6f9c36d1ebd4cc25b312c451b44d",
+  "refs": {},
+  "revisionId": "sha256:56242c2e3c029ba8af4f0e5b1b45a3f9fa5cb1558690585a4da5cf5834a7279b",
+  "schemaVersion": 1,
+  "updatedAt": 1773829775397
+}

@@ -1,0 +1,117 @@
+{
+  "createdAt": 1778200426211,
+  "entityType": "session",
+  "id": "1778200426211_3qrc4h9j",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查未被Codex发现的skill入口文件是否严格命名为SKILL.md。",
+      "如维护相关代码，可考虑将技能发现逻辑改为大小写不敏感匹配，并保留精确SKILL.md优先策略。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780615825122,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 7,
+      "information_density": 6,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex技能发现大小写缺陷",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/fd11853e7efbf8c90977d2de1fa3efd18418f4781c8b8d2235d5304f6407ea6d/openai/codex/issues/20637",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/fd11853e7efbf8c90977d2de1fa3efd18418f4781c8b8d2235d5304f6407ea6d/openai/codex/issues/20637",
+        "width": 0
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://github.com/20637/codex/issues/20637",
+        "role": "hero",
+        "score": 70,
+        "src": "https://github.com/20637/codex/issues/20637",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "Codex全局技能目录位于~/.agents/skills，本地技能目录位于~/.codex/skills。",
+      "当前问题根因可能是core-skills loader在发现阶段使用file_name == \"SKILL.md\"的精确大小写匹配。",
+      "临时解决方式包括将SKILL.MD重命名为SKILL.md，或将全局技能软链接到~/.codex/skills后重新扫描。"
+    ],
+    "oneHighValuePoint": "Codex核心skill加载器仅精确匹配“SKILL.md”，将“SKILL.MD”重命名为正确大小写即可恢复发现。",
+    "oneLineReview": "对遇到Codex技能加载异常的人有直接排障价值，但整体是局部问题记录。",
+    "primaryCategory": "AI开发工具",
+    "published": "2026-05-01T10:31:19.000-07:00",
+    "rating": "C",
+    "rejectReason": "内容主要是特定版本Codex技能发现的局部缺陷，适用范围窄，长期方法论价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "DiscussionForumPosting",
+        "articleBody": "### What version of the Codex App are you using (From “About Codex” dialog)?\n\nVersion 26.422.62136 (2180)\n\n### What subscription do you have?\n\nPro\n\n### What platform is your computer?\n\nDarwin 25.4.0 arm64 arm\n\n### What issue are you seeing?\n\nCodex appeared not to discover a globally installed skill when the skill entry file was named SKILL.MD instead of exactly SKILL.md.\n\nThe skill was listed by the generic skills CLI using npx skills ls -g --json. It included better-auth-security-best-practices.\n\nBut the skill did not appear in Codex’s available skills for the session, while neighboring skills in the same directory did.\n\nThe global skill existed at ~/.agents/skills/better-auth-security-best-practices/SKILL.MD.\n\nOther discovered skills used ~/.agents/skills/<skill-name>/SKILL.md.\n\nAfter renaming SKILL.MD to SKILL.md, the skill became discoverable by exact SKILL.md scans.\n\n\n\n\n\n### What steps can reproduce the bug?\n\n1. Install or create a global skill under ~/.agents/skills, for example ~/.agents/skills/example-skill/SKILL.MD.\n2. Ensure the file is named SKILL.MD, not SKILL.md.\n3. Confirm the skill is registered/listed by running npx skills ls -g --json.\n4. Start or use Codex and check the available skills list for the session.\n5. Observe that the skill may be absent from Codex’s available skills, while other skills with exact SKILL.md files are present.\n6. Rename the file from SKILL.MD to SKILL.md.\n7. Check discovery again after refresh/restart.\n\nIn my case, the affected path was ~/.agents/skills/better-auth-security-best-practices/SKILL.MD.\n\nI did not prove whether a fresh Codex restart would have loaded SKILL.MD; the observed issue was that the current Codex session did not list the skill while the skills CLI did.\n\n\n### What is the expected behavior?\n\nCodex should either discover skill entry files case-insensitively, at least on macOS, or show a warning when a registered skill folder exists but does not contain an exact SKILL.md.\n\nA registered skill should not be silently absent from Codex’s available skills when the only apparent issue is filename casing.\n\n\n\n### Additional information\n\nEnvironment details:\n\nOS: macOS\nPlatform: Darwin 25.4.0 arm64 arm\nGlobal skills location: ~/.agents/skills\nCodex native skills location: ~/.codex/skills\nWorkaround used:\n\nRenamed SKILL.MD to SKILL.md\nSymlinked the global skill folders into ~/.codex/skills\nAfter that, exact scans using find -L ~/.codex/skills -maxdepth 2 -type f -name SKILL.md resolved the skill correctly.\n\n\n\n\n\n",
+        "author": {
+          "@type": "Person",
+          "name": "KingPsychopath",
+          "url": "https://github.com/KingPsychopath"
+        },
+        "datePublished": "2026-05-01T10:31:19.000-07:00",
+        "headline": "Codex skill discovery silently misses global skill when entry file is SKILL.MD",
+        "interactionStatistic": {
+          "@type": "InteractionCounter",
+          "interactionType": "https://schema.org/CommentAction",
+          "userInteractionCount": 1
+        },
+        "url": "https://github.com/20637/codex/issues/20637"
+      }
+    ],
+    "schemaAuthor": "KingPsychopath",
+    "schemaTypes": [
+      "DiscussionForumPosting"
+    ],
+    "secondaryCategories": [
+      "Bug报告",
+      "Codex技能系统"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "该Issue记录了Codex在发现全局skill时只匹配精确文件名SKILL.md，导致SKILL.MD被静默忽略的问题，并提供了复现步骤、临时解决方案及潜在补丁方向。",
+    "tags": [
+      "Codex",
+      "GitHub Issue",
+      "SKILL.md",
+      "大小写敏感",
+      "技能发现"
+    ],
+    "title": "Codex skill discovery silently misses global skill when entry file is SKILL.MD · Issue #20637 · openai/codex",
+    "totalScore": 50,
+    "url": "https://github.com/openai/codex/issues/20637"
+  },
+  "payloadHash": "sha256:cb6fe57e9e02ae0d5c81684d6c383d3849f5eaaa41fd4008cb705132b00b6fe5",
+  "refs": {},
+  "revisionId": "sha256:550dda88bec2e5a728abd276a0e35f5bc1699656527e2c6be008782409de4e18",
+  "schemaVersion": 1,
+  "updatedAt": 1780615825841
+}

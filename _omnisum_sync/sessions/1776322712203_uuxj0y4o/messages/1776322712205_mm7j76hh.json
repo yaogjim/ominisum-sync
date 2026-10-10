@@ -1,0 +1,20 @@
+{
+  "createdAt": 1776322700008,
+  "entityType": "message",
+  "id": "1776322712205_mm7j76hh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Agent 开发技术栈建议总结\n\n## 核心观点\n\n如果你用的是 TypeScript 技术栈，做 Agent 开发时，`pi-mono` 是更推荐的首选方案，原因是功能更强、调用更方便。其次可以考虑 Vercel 的 `AI SDK`。相比之下，`Claude Agent SDK` 不太推荐，因为它过度绑定 Claude 生态，但它目前仍有一个独特优势：开发阶段可以共享 `Claude Max` 订阅，短期内比较省事。\n\n## 应用形态选择\n\n在桌面应用层，`Electron` 仍然是优先选择，优势是成熟稳定、生态完善，而且 AI 相关训练语料足够多，遇到问题更容易找到参考。它的主要缺点是应用体积偏大。也有观点提到，若追求更轻量的包体，可以考虑 `Tauri`，能显著缩小安装包大小。\n\n## 开发路径建议\n\n对于刚开始做 Agent 的人，不建议一上来就做图形界面，更适合先从 `CLI`（命令行）开始。这样可以把精力集中在 Agent 本身的能力建设上，比如任务拆解、调用链路、工具设计，而不是过早陷入界面和交互细节。除非你的产品核心竞争力本身就是 UI。\n\n## 学习参考项目\n\n文中推荐了一个开源项目 `craft-agents-oss`，其技术组合是 `TypeScript + pi-mono + Electron + React + Claude Agent SDK`。这个项目比较适合作为学习样本，用来理解一套完整 Agent 产品是如何组织技术栈和工程结构的。\n\n## 更重要的工程能力\n\n除了选框架，Agent 开发真正绕不开的是一系列通用工程问题，包括：\n\n- Prompt 和 Context 管理\n- Agent 与 Sub-agent 协作\n- 工具调用设计及结果处理\n- Skill 能力封装\n- Hook、Session 管理等外围机制\n\n也就是说，技术栈只是起点，真正拉开差距的是 Agent 工程化能力。\n\n## 一句话结论\n\n这条内容的核心建议可以概括为：  \n**TypeScript 做 Agent，优先选 `pi-mono`；桌面端优先 `Electron`；产品早期先做 `CLI`；多研究成熟开源项目和通用 Agent 工程问题。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1776322700008,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a2ecf769a715fbb5e49a2fc507c4fbda963fea199f03d2581632fd02ddd8661e",
+  "refs": {
+    "sessionId": "1776322712203_uuxj0y4o"
+  },
+  "revisionId": "sha256:de8282d9a29801ad79a05c52956db0a2501f5be8a0c1547016d3f41a2ac33d38",
+  "schemaVersion": 1,
+  "updatedAt": 1776322700008
+}

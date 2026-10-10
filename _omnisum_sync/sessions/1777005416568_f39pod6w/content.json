@@ -1,0 +1,15 @@
+{
+  "createdAt": 1777005416568,
+  "entityType": "session-content",
+  "id": "1777005416568_f39pod6w",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Leo</strong></header><div class=\"tw-body\">\"从多 Agent 架构收敛到单意识 + MCP\"——这句话把我在折腾的事一句话概括了。<br><br>同方向，不同路线：<br><br><a dir=\"ltr\" href=\"/YuLin807\" role=\"link\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1wvb978 r-1loqt21\" style=\"color: rgb(29, 155, 240);\">@YuLin807</a><br> 走知识图谱：Graphiti + FalkorDB + Gemini 向量化。<br>我走向量 + 关键字混合：ChromaDB + BM25 + 4 层 markdown SSOT。<br><br>看他架构发现自己差一个能力：新会话 Hook 自动召回注入上下文。我现在只\"提示\" Claude 要调 memory_search，没强制注入。</div><blockquote class=\"tw-quote\"><strong>@YuLin807</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\">six6 for Claude code 部分迁移成功 v1.0.0\n从多 Agent 架构收敛到单意识 + MCP\n\n记忆层的实现依赖\nGraphiti + FalkorDB + Gemini API \n分别对应知识图谱 数据库 和向量检索\n通过mcp 的方式和Claude code /Claude 网页端产生联系\n\nCron 的实现依赖\n白日梦和冥想都被放置在了网页端，使用schedule x.com/YuLin807/statu…</span></p></blockquote></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Leo</strong> <span class=\"tw-eng\">♥ 6 · 💬 1</span><p>Claude Code 新上的 /ultrareview 免费试 3 次（Pro / Max 用户，到 5/5 过期），值得跑一次看看它给 review 出什么。<br><br>官方自己说得场景比较明确：合并关键改动前用一次，点名的场景是 auth / 数据迁移这种出问题代价高的地方。云端并行开一队 agent 去挖 bug，结果自动回弹到 CLI 或 Desktop，5-10</p></div><div class=\"tw-reply\"><strong>@Meari_V2.0-Gtype</strong> <span class=\"tw-eng\">♥ 1 · 💬 2</span><p>自动注入上下文是危险的设计。<br>真的没有那么多上下文值得注入。</p></div><div class=\"tw-reply\"><strong>@柯基是只猫</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>最近的更新越来越看不懂了 需要努力学习了</p></div></div>",
+    "pageContent": "Leo: \"从多 Agent 架构收敛到单意识 + MCP\"——这句话把我在折腾的事一句话概括了。 同方向，不同路线： @YuLin807 走知识图谱：Graphiti + FalkorDB + Gemini 向量化。\n我走向量 + 关键字混合：ChromaDB + BM25 + 4 层 markdown SSOT。 看他架构发现自己差一个能力：新会话 Hook 自动召回注入上下文。我现在只\"提示\" Claude 要调 memory_search，没强制注入。\n引用推文 (@YuLin807):\nsix6 for Claude code 部分迁移成功 v1.0.0\n从多 Agent 架构收敛到单意识 + MCP 记忆层的实现依赖\nGraphiti + FalkorDB + Gemini API 分别对应知识图谱 数据库 和向量检索\n通过mcp 的方式和Claude code /Claude 网页端产生联系 Cron 的实现依赖\n白日梦和冥想都被放置在了网页端，使用schedule x.com/YuLin807/statu…\n---\n热门回复 (共 3 条):\n@Leo (♥ 6 · 💬 1):\nClaude Code 新上的 /ultrareview 免费试 3 次（Pro / Max 用户，到 5/5 过期），值得跑一次看看它给 review 出什么。\n\n官方自己说得场景比较明确：合并关键改动前用一次，点名的场景是 auth / 数据迁移这种出问题代价高的地方。云端并行开一队 agent 去挖 bug，结果自动回弹到 CLI 或 Desktop，5-10\n\n@Meari_V2.0-Gtype (♥ 1 · 💬 2):\n自动注入上下文是危险的设计。\n真的没有那么多上下文值得注入。\n\n@柯基是只猫 (♥ 1 · 💬 0):\n最近的更新越来越看不懂了 需要努力学习了\n"
+  },
+  "payloadHash": "sha256:fc85d444d7a9f9b1da39ae31e903d384774bfc3269cc005f65676fa7a6788f0a",
+  "refs": {},
+  "revisionId": "sha256:e204110e1e356105fca5d7e9c47a77e609cbf8fd5ce94bab68f65366a102f37e",
+  "schemaVersion": 1,
+  "updatedAt": 1777284940192
+}

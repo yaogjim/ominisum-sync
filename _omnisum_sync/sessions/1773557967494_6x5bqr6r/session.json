@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773557967494,
+  "entityType": "session",
+  "id": "1773557967494_6x5bqr6r",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如你使用 macOS 与 Claude Code，可按文中步骤快速试配 Ghostty 并验证分屏工作流",
+      "不要直接照搬作者配置，先检查快捷键、主题和 shell 初始化项是否与自己的环境冲突"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773829592907,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 3,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "Ghostty终端入门配置指南",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Ghostty 可通过 Homebrew 在 macOS 上安装，并使用 `~/.config/ghostty/config` 进行配置",
+      "可借助分屏、放大当前面板、Starship 状态栏和监控工具提升终端使用体验"
+    ],
+    "oneHighValuePoint": "直接给出 Ghostty 的关键快捷键与配置路径，能让新手快速搭起适合 Claude Code 的分屏终端环境。",
+    "oneLineReview": "一篇偏营销风格的入门配置帖，实操性尚可，但信息深度和可复用方法有限。",
+    "primaryCategory": "开发工具配置",
+    "rating": "C",
+    "rejectReason": "内容偏入门和宣传化，方法论与证据支撑较弱，主要价值在于快速上手配置。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "终端工具",
+      "AI编程环境"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章面向 Ghostty 新手，介绍安装、导入作者配置、分屏快捷键、主题美化和搭配 Starship、fastfetch、btop 的基础用法，重点强调其与 Claude Code 的配合体验，但内容更多是个人使用推荐与操作演示。",
+    "tags": [
+      "Ghostty",
+      "Claude Code",
+      "macOS",
+      "终端配置",
+      "开发效率"
+    ],
+    "title": "Ghostty：Claude Code的最佳搭档，从零到快乐鬼混",
+    "totalScore": 47.5,
+    "url": "https://x.com/BruceBlue/status/2032703807189299694"
+  },
+  "payloadHash": "sha256:bdf07a347579f369ea428bc8cca2e7d59be180e97a1a205f014ec0dc844905e0",
+  "refs": {},
+  "revisionId": "sha256:b20558d609468a862d07b0e52ace3158017e18509ff76086d466ce02a119f1eb",
+  "schemaVersion": 1,
+  "updatedAt": 1773829592910
+}

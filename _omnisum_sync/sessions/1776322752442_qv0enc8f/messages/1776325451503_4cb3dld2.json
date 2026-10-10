@@ -1,0 +1,19 @@
+{
+  "createdAt": 1776325451504,
+  "entityType": "message",
+  "id": "1776325451503_4cb3dld2",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude Code会话管理指南\n\n**评级**: B (63.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI 编程工具使用\n**次类别**: 上下文工程, 效率优化\n**标签**: #Claude Code #上下文窗口 #会话管理 #compact #rewind #subagents\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 这是一篇偏实践的 Claude Code 使用说明，方法清晰但证据和案例支撑偏弱。\n**核心高价值点**: 最有价值的点是把每次模型回复后的下一步操作视为“上下文管理决策点”，并明确区分 continue、rewind、clear、compact、subagents 的适用边界。\n\n### 摘要\n文章围绕 Claude Code 的 1M 上下文能力，解释了 context rot、compact、rewind、clear 与 subagents 的适用场景，核心价值在于帮助用户更高效地管理长会话与任务切换。\n\n### 知识要点\n- 长上下文会带来 context rot，模型在上下文变长时性能可能下降\n- rewind 比事后纠错更适合清理错误尝试带来的上下文污染\n- compact 是有损压缩，clear 是手工重建上下文，两者适用场景不同\n- subagents 适合处理中间输出很多但最终只需结论的任务\n\n### 行动项\n- 在使用 Claude Code 时，为新任务默认开启新 session，避免无关上下文累积\n- 调试失败后优先尝试 /rewind，而不是在污染过的上下文里继续修正\n- 对长任务主动提前 /compact，并附带压缩重点说明，减少坏压缩风险\n- 将代码库调研、结果验证、文档生成等高噪声工作交给 subagents\n\n### 存档判定\n归档: 是 — 原因: 内容包含具体的会话管理经验和操作策略，适合作为工具使用备忘\n删除: 否\n留存决策: 中期保留，作为 Claude Code 实践参考",
+    "role": "assistant",
+    "timestamp": 1776325451504,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:e448f4583218ebb730242f137315bd05643190dd0a15aa856ea601a153e00698",
+  "refs": {
+    "sessionId": "1776322752442_qv0enc8f"
+  },
+  "revisionId": "sha256:3b1cd64f4454b146e64498c09236f268152f808b2d2ee3ef1cd9f3e98ec62578",
+  "schemaVersion": 1,
+  "updatedAt": 1776325451504
+}

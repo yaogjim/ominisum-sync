@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774522720859,
+  "entityType": "message",
+  "id": "1774522720858_wrehbtdl",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: LangChain多智能体模式解析\n\n**评级**: B (66分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程与智能体架构\n**次类别**: LangChain框架文档, 多智能体系统设计\n**标签**: #LangChain #Multi-agent #Agent Architecture #Context Engineering #LLM应用\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇偏工程文档型的模式综述，实用但不算新，适合查框架而非获取深洞见。\n**核心高价值点**: 最有价值的是将Subagents、Handoffs、Skills、Router四类模式按控制方式、并行性、状态管理和成本特征进行对比，便于实际选型。\n\n### 摘要\n文章系统整理了LangChain多智能体的四种核心模式及其适用场景、性能权衡和上下文设计要点，强调context engineering是系统效果的关键，适合作为多智能体架构入门与选型参考。\n\n### 知识要点\n- 多智能体设计的核心不是堆代理，而是context engineering与信息分发策略。\n- Subagents适合集中编排与上下文隔离，Handoffs适合多阶段对话流，Router适合明确分类分发，Skills适合按需加载能力。\n\n### 行动项\n- 根据自身场景先判断是否真的需要多智能体，再在四种模式中做最小可行选型。\n- 在实现前明确上下文传递、状态持久化、并行执行和工具返回格式等关键设计决策。\n\n### 存档判定\n归档: 是 — 原因: 内容系统梳理了Subagents、Handoffs、Skills、Router等模式，适合作为方案设计时的查阅资料。\n不推荐: 缺少真实生产案例、定量实验细节和更深入的失败模式分析，原创性也较弱。\n删除: 否\n留存决策: 作为多智能体架构选型参考短中期保留",
+    "role": "assistant",
+    "timestamp": 1774522720859,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:eece1de7b5ba806d45510dc92c8ea953aa2d19afb278a200bab6c1a6204ee98d",
+  "refs": {
+    "sessionId": "1774521060119_6lx6an4p"
+  },
+  "revisionId": "sha256:5dc941fec0403a56a80ecc73c8edd66b756e5463bb39646a62ce52475804913f",
+  "schemaVersion": 1,
+  "updatedAt": 1774522720859
+}

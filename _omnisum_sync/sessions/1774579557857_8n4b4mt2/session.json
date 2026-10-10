@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774579557857,
+  "entityType": "session",
+  "id": "1774579557857_8n4b4mt2",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在评估 AI 代理工具，可用文中提到的“工程师->QA”流程做一个最小实验",
+      "在自己的项目中整理一份角色提示、成功标准和审查规则清单，用于测试多代理协作效果"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774584812905,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Paperclip多代理创业宣传帖",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "多代理系统需要显式记忆与角色上下文设计",
+      "结构化交付流程比一次性端到端生成更稳",
+      "将品牌标准和审美偏好文档化是提升代理输出质量的关键"
+    ],
+    "oneHighValuePoint": "把 AI 代理当作初级员工来训练，通过角色提示、成功标准和 QA 交接逐步修正规则，而不是频繁重写整套系统。",
+    "oneLineReview": "有一些关于多代理协作的启发，但本质更像营销贴而非高质量方法论内容。",
+    "primaryCategory": "AI代理与创业工具",
+    "rating": "C",
+    "rejectReason": "内容以宣传性概述为主，缺少实测细节、对比分析和可靠证据支撑。",
+    "retentionDecision": "低优先级留存，若近期在评估多代理工具可短期参考，否则可后续清理",
+    "secondaryCategories": [
+      "多代理工作流",
+      "开源工具观察"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章以社交媒体串文形式介绍 Paperclip 作为多 AI 代理管理平台的卖点，包括角色设定、技能扩展、QA 流程、例程自动化和可导入团队等概念，但整体偏营销表达，缺少案例数据与落地细节。",
+    "tags": [
+      "Paperclip",
+      "AI代理",
+      "多代理协作",
+      "创业自动化",
+      "工作流编排"
+    ],
+    "title": "GREG ISENBERG: I met the guy behind Paperclip",
+    "totalScore": 45.5,
+    "url": "https://x.com/gregisenberg/status/2037262467684864075"
+  },
+  "payloadHash": "sha256:52be62b603addb3786b252437ab9f8d9470699c257917729ecc78846819c7e7b",
+  "refs": {},
+  "revisionId": "sha256:9d2ee233277ddd807a4e6dedf2b5d4fdfa8f46510db5cd10aea7cd27b2fe1b14",
+  "schemaVersion": 1,
+  "updatedAt": 1774584812906
+}

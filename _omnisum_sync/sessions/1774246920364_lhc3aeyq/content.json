@@ -1,0 +1,15 @@
+{
+  "createdAt": 1774246920364,
+  "entityType": "session-content",
+  "id": "1774246920364_lhc3aeyq",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>David</strong></header><div class=\"tw-body\">1/n 我在 HuggingFace Open LLM 排行榜上排名第一，且未修改任何一个权重。<br>无需训练。无需合并。无需梯度下降。<br>我复制了 Qwen2-72B 的 7 个中间层并将它们重新拼接起来。<br>这是 LLM 神经解剖学的故事 🧵</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HEAvk4aaMAAVG1B?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@David</strong> <span class=\"tw-eng\">♥ 76 · 💬 3</span><p>11/n 关键发现：复制单个中间层几乎从未有帮助。通常会使情况更糟。<br>但是复制一个大约7个图层的块？大幅提升。<br>中间层并没有进行独立的迭代优化。它们是电路——一种作为整体单元时效果最佳的多步骤流程。</p></div><div class=\"tw-reply\"><strong>@David</strong> <span class=\"tw-eng\">♥ 67 · 💬 1</span><p>3/n 这让我意识到了一些事情。如果一个 Transformer 能处理英语、Python、普通话以及 Base64，那么：<br>早期层必须是翻译器——将输入解析为某种抽象的内部表示<br><br>后期图层重新翻译输出<br>中间层？纯粹的推理！</p></div><div class=\"tw-reply\"><strong>@David</strong> <span class=\"tw-eng\">♥ 58 · 💬 1</span><p>10/n 但热图讲述了一个更精彩的故事。<br>它们本质上是 Transformer 在思考时的功能性磁共振成像。每个像素 = 对重新分层模型的一次完整评估。</p></div><div class=\"tw-reply\"><strong>@David</strong> <span class=\"tw-eng\">♥ 59 · 💬 1</span><p>4/n 线索 #2: Alpindale 的 Goliath-120B<br>一个 Frankenmerge，它将一个模型的第 16 层的 OUTPUT 输入到另一个模型的第 8 层的 INPUT 中。这种分布是模型在训练期间从未见过的。<br>本应该是胡言乱语，但它却奏效了。层比预期的更可互换。</p></div><div class=\"tw-reply\"><strong>@David</strong> <span class=\"tw-eng\">♥ 52 · 💬 3</span><p>5/n 于是我有一个假设：Transformer 模型具有真正的功能性解剖结构。<br>早期层进行编码。晚期层进行解码。中间层在通用的内部空间中进行推理。<br>也许我不需要教模型新的事实。我只需要给它更多时间思考。</p></div></div>",
+    "pageContent": "David: 1/n 我在 HuggingFace Open LLM 排行榜上排名第一，且未修改任何一个权重。\n无需训练。无需合并。无需梯度下降。\n我复制了 Qwen2-72B 的 7 个中间层并将它们重新拼接起来。\n这是 LLM 神经解剖学的故事\n![图片](https://pbs.twimg.com/media/HEAvk4aaMAAVG1B?format=jpg&name=large)\n---\n热门回复 (共 5 条):\n@David (♥ 76 · 💬 3):\n11/n 关键发现：复制单个中间层几乎从未有帮助。通常会使情况更糟。\n但是复制一个大约7个图层的块？大幅提升。\n中间层并没有进行独立的迭代优化。它们是电路——一种作为整体单元时效果最佳的多步骤流程。\n\n@David (♥ 67 · 💬 1):\n3/n 这让我意识到了一些事情。如果一个 Transformer 能处理英语、Python、普通话以及 Base64，那么：\n早期层必须是翻译器——将输入解析为某种抽象的内部表示\n\n后期图层重新翻译输出\n中间层？纯粹的推理！\n\n@David (♥ 58 · 💬 1):\n10/n 但热图讲述了一个更精彩的故事。\n它们本质上是 Transformer 在思考时的功能性磁共振成像。每个像素 = 对重新分层模型的一次完整评估。\n\n@David (♥ 59 · 💬 1):\n4/n 线索 #2: Alpindale 的 Goliath-120B\n一个 Frankenmerge，它将一个模型的第 16 层的 OUTPUT 输入到另一个模型的第 8 层的 INPUT 中。这种分布是模型在训练期间从未见过的。\n本应该是胡言乱语，但它却奏效了。层比预期的更可互换。\n\n@David (♥ 52 · 💬 3):\n5/n 于是我有一个假设：Transformer 模型具有真正的功能性解剖结构。\n早期层进行编码。晚期层进行解码。中间层在通用的内部空间中进行推理。\n也许我不需要教模型新的事实。我只需要给它更多时间思考。\n"
+  },
+  "payloadHash": "sha256:4783b1b8d04b567dadbcdaeba14305b355de0275f42556b30b45f90caf68551b",
+  "refs": {},
+  "revisionId": "sha256:1b473aa323b5f24b8149c4eb8ddf19552c0032a451cf5a5ede42033feecd6ed1",
+  "schemaVersion": 1,
+  "updatedAt": 1774247456156
+}

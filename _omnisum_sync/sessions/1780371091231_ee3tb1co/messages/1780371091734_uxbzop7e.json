@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780370999176,
+  "entityType": "message",
+  "id": "1780371091734_uxbzop7e",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\n作者认为：  \n**Agent 的历史记录不应该先被“编译成 Markdown Wiki”，而应该保留原始结构化 session，直接作为可查询数据库使用。**\n\n因为原始 session 本身就包含：\n\n- messages：对话\n- tool calls / results：工具调用与结果\n- files：文件\n- subagents：子代理\n- workflows：工作流\n- parent chains：上下文链路\n\n如果先总结成 Markdown，会导致：\n\n- 信息被压缩、丢失\n- 因果关系变弱\n- 引用关系需要重新还原\n- 多了一个不必要的中间层\n\n作者主张：  \n**Agent 记忆更像“工作历史数据库”，而不是给人看的知识库。**\n\n---\n\n## 二、解读\n\n### 1. Markdown Wiki 适合人看，不一定适合 Agent 用\n\n把 session 总结成 Wiki，好处是：\n\n- 人类容易读\n- Git 容易管理\n- 换 Agent 时能快速知道“上次做了什么”\n\n但问题是：  \n**Markdown 是扁平文本，很多结构信息会消失。**\n\n比如：\n\n```text\n用户提出需求\n→ Agent 调用工具\n→ 工具返回错误\n→ Agent 修改方案\n→ 再次执行成功\n```\n\n如果只写成一句：\n\n> 修复了某个 bug\n\n那 Agent 下次就很难知道：\n\n- 为什么这么改？\n- 哪个工具失败过？\n- 哪个文件受影响？\n- 当时有哪些约束？\n- 哪些方案被否决了？\n\n---\n\n### 2. 原始 session 更像“数据库”\n\n作者的意思是：  \n既然 session 本来就是结构化的，就应该像数据库一样存起来。\n\n比如放进 SQLite 后，可以查询：\n\n```sql\n查找所有失败的工具调用\n查找某个文件被修改前后的上下文\n查找某个子 Agent 的执行链路\n查找某个任务从开始到结束的完整过程\n```\n\n这比 Markdown 更适合 Agent 做自动分析。\n\n---\n\n### 3. 核心分歧是：给人看，还是给 Agent 用？\n\n两种方案关注点不同：\n\n| 方案 | 主要服务对象 | 优点 | 缺点 |\n|---|---|---|---|\n| Markdown Wiki | 人 | 易读、易管理 | 信息压扁，结构丢失 |\n| SQLite / 结构化 Session | Agent | 可查询、可追溯 | 人类阅读不直观 |\n\n作者认为：  \n**Agent 记忆系统首先应该服务 Agent，而不是服务人。**\n\n---\n\n## 三、我的意见\n\n我认同作者的大方向：  \n**原始 session 不应该被 Markdown 替代。**\n\n更合理的做法是：\n\n```text\n原始 session 作为底层数据源\nMarkdown 作为上层展示结果\n```\n\n也就是说：\n\n- 底层保留完整结构化数据\n- Agent 可以查询、回溯、分析\n- 人类需要时，再自动生成 Markdown 总结\n\n不要把总结当成记忆本身。  \n**总结是视图，不是事实源。**\n\n一句话概括：\n\n> Agent 的长期记忆，应该先是数据库，再是笔记本。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780370999176,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:efcdb46defa8a9ced74b5d2cc2cf074545527dfe584548bb1f4eb3bc283a1362",
+  "refs": {
+    "sessionId": "1780371091231_ee3tb1co"
+  },
+  "revisionId": "sha256:bf29e00e45ca086646651fa73765b827ae45f12229fce7401824e4295c114fb2",
+  "schemaVersion": 1,
+  "updatedAt": 1780370999176
+}

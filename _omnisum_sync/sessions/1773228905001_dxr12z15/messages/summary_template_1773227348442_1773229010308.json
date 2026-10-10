@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773229010308,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773229010308",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "以下是基于你提供内容提炼出的**最佳实践（精炼版）**：\n\n## 1. 把高频维护流程沉淀为 repo-local skills\n将重复性的 OSS 维护工作（验证、发布检查、集成测试、PR 总结、文档同步等）封装为`.agents/skills/`下的技能，避免每次靠人工口述或临时判断。\n\n## 2. 用 AGENTS.md 定义 “必须触发” 的规则\n在仓库根目录用简短的**if/then**规则明确：\n- 什么时候必须先做方案评估\n- 什么时候必须跑验证\n- 什么时候必须查官方文档\n- 什么时候必须生成 PR handoff  \n核心原则：**技能可选，触发规则必须清晰且稳定。**\n\n## 3. 技能设计要 “小而专”\n每个 skill 只做一件事，并具备：\n- 明确触发条件\n- 清晰输入范围\n- 固定输出结果  \n不要做 “大而全” 的万能技能，优先做窄职责、可复用的工作流。\n\n## 4. 把 “仓库标准” 编码进 skill\n例如验证 skill 中直接固化：\n- 格式化\n- lint\n- type check\n- test\n- build/check 顺序  \n这样 skill 就代表仓库对 “完成 / 通过” 的正式定义，而不是让模型自行猜测。\n\n## 5. 条件化强制验证，而不是一刀切\n不要要求所有改动都跑全量验证。  \n最佳实践是：**仅当运行时代码、测试、示例、构建 / 测试行为变更时强制验证**；纯文档修改则保持轻量。\n\n## 6. 把发布元数据校验也纳入工作流\n对于 monorepo 或 npm/pypi 发布流程，不仅检查代码，还要校验：\n- changeset 是否存在\n- bump level 是否正确\n- 发布说明是否匹配实际 diff  \n即：**让模型对自己生成的发布元数据负责。**\n\n## 7. 涉及平台 / API 集成时，强制查 “当前官方文档”\n不要让模型凭记忆回答 OpenAI API 或平台集成问题。  \n应通过统一 skill 接入官方文档源（如 Docs MCP），确保判断基于最新规范。\n\n## 8. PR 收尾标准化\n在任务完成或准备 review 时，统一触发 PR summary skill，自动生成：\n- branch name 建议\n- PR title\n- draft PR description  \n这能显著减少维护者在交接阶段的重复写作成本。\n\n## 9. Skill description 要写 “用途 + 触发时机 + 输出”\n`SKILL.md`的`description`不只是说明文字，而是**路由元数据**。  \n好的 description 应明确：\n- 这个 skill 做什么\n- 何时触发\n- 输出是什么  \n如果技能调用不稳定，先优化 description，而不是先加复杂逻辑。\n\n## 10. 模型负责判断，脚本负责机械执行\n推荐职责划分：\n- **模型**：解释、比较、归因、总结、给建议\n- **脚本**：重复性 shell 操作、固定检查流程、生成确定性输出  \n原则：**把确定性的机械步骤下沉到 scripts，把需要上下文理解的部分留给模型。**\n\n## 11. 兼容性规则写进 AGENTS.md\n像公共 API 参数顺序、dataclass 字段兼容性、发布前必须补兼容性测试等这类**发布级规则**，应与技能触发规则放在同一个中心位置，避免遗漏。\n\n## 12. 本地工作流与 CI 保持一致\n当某个 skill 已经足够稳定、且应成为团队标准时，同步接入 GitHub Actions。  \n目标是：**本地与 CI 使用同一套规则和判断逻辑**，减少 “本地过、线上不过” 的偏差。\n\n---\n\n## 一句话总结\n最佳实践不是 “给模型更多自由”，而是：  \n**把 OSS 维护中的高频流程产品化为技能，用 AGENTS.md 强制关键触发点，再用脚本和 CI 固化可重复执行的标准。**",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773229010308,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:fa8797a3453af9fae55614eef66d4b049b4084f5275cd5faaa46323ce483ab80",
+  "refs": {
+    "sessionId": "1773228905001_dxr12z15"
+  },
+  "revisionId": "sha256:25e9e569946b94782db6e01a3f36c9fda168df5af5257e19b42537193977d86b",
+  "schemaVersion": 1,
+  "updatedAt": 1773229010308
+}

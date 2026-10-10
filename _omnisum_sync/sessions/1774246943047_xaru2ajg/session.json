@@ -1,0 +1,65 @@
+{
+  "createdAt": 1774246943047,
+  "entityType": "session",
+  "id": "1774246943047_xaru2ajg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注长新冠或转录组分析，可后续追踪其开源流程与更多样本验证结果",
+      "如需实操参考，优先寻找包含完整方法、代码和对照数据的正式文章或项目文档"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774246967322,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "自建长新冠RNA分析流程",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "该流程基于原始FASTQ文件，且当前针对去核糖体RNA样本设置",
+      "个人RNA数据被用于探索长新冠相关的炎症和潜在肠道特异性转录信号"
+    ],
+    "oneHighValuePoint": "最有价值的是作者直接基于原始FASTQ数据构建面向长新冠研究的RNA分析流程，而不是停留在结果汇总层面。",
+    "oneLineReview": "有探索价值的个人研究记录，但目前更像项目预告而非可复用的高质量分析材料。",
+    "primaryCategory": "生物信息学",
+    "rating": "C",
+    "rejectReason": "内容主要是个人项目进展摘要，方法细节、结果解释和证据支撑都较弱，难以作为可靠研究或实操材料。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "长新冠研究",
+      "个人研究项目"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者花约200小时为自身长新冠血液样本搭建RNA分析流程，并简述初步发现与后续开源计划。内容有一定探索性，但公开信息较碎片化，缺少方法细节、数据规模和结果验证。",
+    "tags": [
+      "RNA分析",
+      "FASTQ",
+      "长新冠",
+      "个人实验",
+      "流程开发"
+    ],
+    "title": "Duane Storey: I spent about 200 hours over the last two months building an RNA pipeline to ana…",
+    "totalScore": 41.5,
+    "url": "https://x.com/DuaneStorey/status/2035677446628864252"
+  },
+  "payloadHash": "sha256:6b083def1390c7809643188809fee6f965b9a170d0a9254696158226652c8661",
+  "refs": {},
+  "revisionId": "sha256:6954cdf211376c683f959395466532460c079feac56820b4a4cd1f42f9ccfa2a",
+  "schemaVersion": 1,
+  "updatedAt": 1774247807656
+}

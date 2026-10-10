@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773816250587,
+  "entityType": "session",
+  "id": "1773816250587_n2jugtjz",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需继续使用Claude，优先核对自身网络环境、地区合规性和注册信息真实性。",
+      "不要依赖文中的替代产品推荐，单独查阅Anthropic官方政策与可信社区经验后再决策。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773829145391,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 2,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude封号规避与替代指南",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "时效性强、信息来源单一且带明显推广倾向，可替代性高，保留价值有限。",
+    "domain": "lobehub.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Claude账号封禁常见触发因素包括频繁切换IP、使用临时手机号、地区限制和违规行为。",
+      "若误封可尝试通过官方申诉渠道提交账户信息和登录情况进行人工复核。"
+    ],
+    "oneHighValuePoint": "最有价值的信息是归纳了Claude账号风控的常见触发因素，并提醒尽量保持稳定网络与合规使用行为。",
+    "oneLineReview": "一篇以实用提示包装的导流文，能速览但不值得长期保存。",
+    "primaryCategory": "AI工具使用",
+    "rating": "D",
+    "rejectReason": "内容以常识性建议和产品导流为主，证据薄弱，方法论和长期价值都较低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "账号风控",
+      "产品替代方案"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章概述了Claude账号被封的常见原因，如IP频繁变动、地区限制和注册信息异常，并给出申诉邮件模板与基础规避建议。但整体缺乏官方数据、案例验证和深入分析，后半部分明显导向LobeHub替代方案。",
+    "tags": [
+      "Claude",
+      "账号封禁",
+      "申诉",
+      "风控",
+      "LobeHub"
+    ],
+    "title": "How to Solve Claude AI Account Suspe... · LobeHub",
+    "totalScore": 34.5,
+    "url": "https://lobehub.com/blog/avoid-claude-ai-account-disabled-issue"
+  },
+  "payloadHash": "sha256:cff74443e0375360a9ba2ea7d2bcd096abdb332556b07417346922940ea354a0",
+  "refs": {},
+  "revisionId": "sha256:dfb50412f1cbd7b2f8b5ec41f574256d777d9e30de42f9f33dc9a507486ceb95",
+  "schemaVersion": 1,
+  "updatedAt": 1773829145393
+}

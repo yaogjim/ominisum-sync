@@ -1,0 +1,67 @@
+{
+  "createdAt": 1777260077903,
+  "entityType": "session",
+  "id": "1777260077903_qh85xe18",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为开源项目或个人项目设定固定不处理 issue 的休息窗口。",
+      "区分真实紧急问题与普通用户诉求，避免默认即时响应。",
+      "建立用户沟通边界，减少被少数负面反馈牵动情绪。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777284928390,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "开源维护者倦怠与边界",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "开源维护者直接面对用户反馈，容易形成不健康的拟社会关系和支持压力。",
+      "少数负面用户的攻击往往比多数正面反馈更容易影响维护者心态。",
+      "非安全关键软件中的紧急性经常被高估，固定休息时间有助于降低倦怠风险。"
+    ],
+    "oneHighValuePoint": "开源项目中的“紧急感”很多时候是心理压力而非真实危机，维护者应主动建立休息边界。",
+    "oneLineReview": "一条有共鸣但方法论较弱的开源维护者倦怠提醒。",
+    "primaryCategory": "开源维护",
+    "rating": "C",
+    "rejectReason": "内容主要是个人经验与情绪表达，缺乏系统方法、数据支撑和深入展开，适合作为提醒而非长期资料。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "职业倦怠",
+      "开发者心理健康"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章讨论开源维护者因持续处理 issue 和用户期待而产生的紧迫感与职业倦怠，强调多数紧急性并不真实，维护者需要设定休息边界，避免被少数负面用户过度消耗。",
+    "tags": [
+      "OSS",
+      "开源项目",
+      "倦怠管理",
+      "用户支持",
+      "工作边界"
+    ],
+    "title": "Mario Zechner: i'm sort of addicted to working my butt off, always have been",
+    "totalScore": 49.5,
+    "url": "https://x.com/badlogicgames/status/2048471650274840949"
+  },
+  "payloadHash": "sha256:b19a878f50a1ab077b4f3b95d94d719c00577741e6a1204de8ce516c596b63d5",
+  "refs": {},
+  "revisionId": "sha256:eee575e9b77bafcfe8ed6cfaf91e56f3a50653beb4f14bd879e8645288dea412",
+  "schemaVersion": 1,
+  "updatedAt": 1777284928394
+}

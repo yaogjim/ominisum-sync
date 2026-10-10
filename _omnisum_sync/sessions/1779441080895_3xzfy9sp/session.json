@@ -1,0 +1,114 @@
+{
+  "createdAt": 1779441080895,
+  "entityType": "session",
+  "id": "1779441080895_3xzfy9sp",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为常用工作场景创建 3-5 个置顶 Codex 对话流，例如代码审查、日报生成、文档整理、项目跟进",
+      "整理一个 AGENTS.md，明确 Codex 如何读写长期知识库、记录项目上下文和更新待办事项",
+      "将重复性流程固化为 Skills 或 SOP，例如 PR 审查、Slack 消息汇总、文档反馈处理",
+      "为长任务设定可验证的完成标准，例如测试全部通过、性能指标达标或端到端流程跑通",
+      "尝试组合使用语音输入、任务干预和任务排队，提升与 Codex 协同处理模糊任务的效率"
+    ],
+    "archiveReason": "文章系统梳理了 Codex 从代码助手扩展为通用工作代理的关键能力，包括持久对话、任务干预、自动化、目标设定、共享记忆等，具备较高方法论和实践参考价值",
+    "byline": "宝玉",
+    "classifiedAt": 1780616040150,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex高阶工作流指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HIzPbRzXYAENc4Y?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HIzPbRzXYAENc4Y?format=jpg&name=medium",
+        "width": 1200
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 664,
+        "id": "img-8",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HIzQFlCXkAAo-jU?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HIzQFlCXkAAo-jU?format=jpg&name=medium",
+        "width": 1200
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 665,
+        "id": "img-9",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HIzQP6RWMAAhrRX?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HIzQP6RWMAAhrRX?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "持久对话流可以保留长期上下文，适合创建幕僚长、产品发布、文档审查、外部监控等专属工作线程",
+      "任务干预用于中途修正当前执行方向，任务排队用于安排后续步骤，两者共同增强人对 Agent 执行过程的控制",
+      "MCP、浏览器、Chrome 登录状态和 computer-use 能让 Codex 触达代码库之外的 Slack、Gmail、网页和桌面应用",
+      "对话流自动化适合需要持续检查反馈、定期处理消息、跟踪 PR 或文档评论的长期任务",
+      "目标设定应包含明确验证器，例如测试用例、性能基准、可复现 Bug、验证矩阵或端到端工作流",
+      "共享记忆可以通过 Obsidian vault、AGENTS.md 或官方记忆功能沉淀人员、项目、决策、卡点和待办事项"
+    ],
+    "oneHighValuePoint": "将 Codex 的长期上下文、自动化执行和可验证目标结合起来，使其从一次性代码生成工具转变为持续推进任务的工作代理。",
+    "oneLineReview": "这是一篇适合搭建 Codex 长期工作流的实用指南，但证据和实战案例深度仍有限。",
+    "primaryCategory": "AI工具与工作流",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为构建 AI Agent 工作流和 Codex 使用 SOP 的参考材料",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI编程助手",
+      "自动化工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了如何高阶使用 Codex：通过持久对话流、语音输入、任务干预与排队、MCP 和连接器、自动化、目标设定、侧边栏审查以及共享记忆，将 Codex 从编程助手扩展为可持续推进复杂任务的工作代理。",
+    "tags": [
+      "Codex",
+      "AI Agent",
+      "MCP",
+      "自动化",
+      "持久记忆",
+      "人机协作"
+    ],
+    "title": "来自 Codex 官方团队的分享：如何把 Codex 用到极致",
+    "totalScore": 74,
+    "url": "https://x.com/dotey/status/2057250417638035555"
+  },
+  "payloadHash": "sha256:1499044cffbf394e4258a7c290c24ddfc7c5ab6eb0381a6fb4bdc9699710e1c0",
+  "refs": {},
+  "revisionId": "sha256:05701c5106b8437f302920cbbca043d638f876df89ea9410293e11625c4f1755",
+  "schemaVersion": 1,
+  "updatedAt": 1780616045423
+}

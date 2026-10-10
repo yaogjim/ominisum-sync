@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777773772197,
+  "entityType": "message",
+  "id": "1777773772196_40vfzkag",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude Code接入Ling模型\n\n**评级**: B (61分)  |  **深度阅读**: 否  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: Claude Code, 大模型API配置\n**标签**: #Claude Code #OpenRouter #Ling-2.6-1T #环境变量 #AI编程\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 实用性较强的 Claude Code 临时接入模型教程，但证据和长期价值一般。\n**核心高价值点**: 利用终端会话级环境变量隔离不同 Claude Code 模型配置，避免全局切换带来的互相影响。\n\n### 摘要\n文章介绍如何通过环境变量在不同终端会话中分别使用 Claude 官方订阅和 OpenRouter 上的 Ling-2.6-1T 模型，避免全局配置切换互相干扰，并给出 shell 函数示例。\n\n### 知识要点\n- Claude Code 的模型提供方可通过 ANTHROPIC_BASE_URL、ANTHROPIC_AUTH_TOKEN、ANTHROPIC_MODEL 等环境变量控制。\n- 将环境变量封装进 shell 函数，可以让特定子进程使用独立模型配置，不影响其他终端会话。\n- OpenRouter 可作为第三方模型接入 Claude Code 的中转 API 服务。\n\n### 行动项\n- 如需测试 Ling-2.6-1T，可先在 OpenRouter 生成 API Key。\n- 将 claude-ling 函数加入 ~/.zshrc 或 ~/.bashrc，并用 /status 验证模型和 base URL。\n- 实际使用前对 Ling-2.6-1T 的代码生成效果、稳定性和成本进行小规模验证。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是一次性配置教程，模型能力评价缺少系统性测试和证据支撑，长期参考价值有限。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1777773772197,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:5eb90b6e8843d5bc1fcbbca4442978b47368028684343e1fedcb3cac112a420e",
+  "refs": {
+    "sessionId": "1777773251265_hcvajx3q"
+  },
+  "revisionId": "sha256:d2a43e255ad2b6058c7f553f918cd57f0ee0a2b385b42411ccee5925389cfd1e",
+  "schemaVersion": 1,
+  "updatedAt": 1777773772197
+}

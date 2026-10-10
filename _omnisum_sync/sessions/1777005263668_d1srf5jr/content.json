@@ -1,0 +1,15 @@
+{
+  "createdAt": 1777005263668,
+  "entityType": "session-content",
+  "id": "1777005263668_d1srf5jr",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>xwh</strong></header><div class=\"tw-body\">是的啊，所以 Steve Yegge 搞了 beads，但是我觉得不好用，也在迭代一个自己的工具。<br><br>需要一个 graph db 来阐明计划里的依赖关系，来完成不同Agent 的编排，以及单个 Agent 本身有一个 Code => CI & Review => Fix => Human in the Loop 的循环。</div><blockquote class=\"tw-quote\"><strong>@SaitoWu</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\">git worktree 在 Agent 时代的致命局限性：\n\n</span>▫️<span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\">每个 worktree 都是完全隔离的文件夹，Agent 之间根本看不到彼此正在改的文件和内容，像五个盲人各自摸一头大象。\n\n</span>▫️<span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\">冲突只能在最后 merge 时才爆发，Agent 无法实时“互相看见”对方的工作，只能各自狂写然后打架，效率直接腰斩。\n\n</span>▫️<span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\">worktree x.com/SaitoWu/status…</span></p></blockquote></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@xwh</strong> <span class=\"tw-eng\">♥ 3 · 💬 1</span><p>欢迎关注 “AI炼金术”，不幸的是，这个大概就是未来…<br><br>想象一下你真的知道为什么打开电视机就能有电视节目看么…</p></div><div class=\"tw-reply\"><strong>@Saito</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>Scott 的解决方案更像是在线文档编辑的 CRDT 方案，不过确实文档上奏效的话，对于代码一样会生效。</p></div><div class=\"tw-reply\"><strong>@xwh</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>文档和代码应该是一体的，文档只是代码的一个 summary + overall guide</p></div></div>",
+    "pageContent": "xwh: 是的啊，所以 Steve Yegge 搞了 beads，但是我觉得不好用，也在迭代一个自己的工具。 需要一个 graph db 来阐明计划里的依赖关系，来完成不同Agent 的编排，以及单个 Agent 本身有一个 Code => CI & Review => Fix => Human in the Loop 的循环。\n引用推文 (@SaitoWu):\ngit worktree 在 Agent 时代的致命局限性： 每个 worktree 都是完全隔离的文件夹，Agent 之间根本看不到彼此正在改的文件和内容，像五个盲人各自摸一头大象。 冲突只能在最后 merge 时才爆发，Agent 无法实时“互相看见”对方的工作，只能各自狂写然后打架，效率直接腰斩。 worktree x.com/SaitoWu/status…\n---\n热门回复 (共 3 条):\n@xwh (♥ 3 · 💬 1):\n欢迎关注 “AI炼金术”，不幸的是，这个大概就是未来…\n\n想象一下你真的知道为什么打开电视机就能有电视节目看么…\n\n@Saito (♥ 0 · 💬 1):\nScott 的解决方案更像是在线文档编辑的 CRDT 方案，不过确实文档上奏效的话，对于代码一样会生效。\n\n@xwh (♥ 0 · 💬 0):\n文档和代码应该是一体的，文档只是代码的一个 summary + overall guide\n"
+  },
+  "payloadHash": "sha256:571f44dfe33ad60423f57e158136493b708d2af0de48d2ab05e37f2a669a78cd",
+  "refs": {},
+  "revisionId": "sha256:6afdcc11b1d167d2f5cba91eb9ef5fab0e27dbfb7ec0b3c4663699d84969b0a3",
+  "schemaVersion": 1,
+  "updatedAt": 1777005566611
+}

@@ -1,0 +1,75 @@
+{
+  "createdAt": 1780386309699,
+  "entityType": "session",
+  "id": "1780386309699_nhthlold",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在构建长期使用的 Agent，可安装 OpenClaw 插件并观察 persona.md、scenario、atom 等中间产物。",
+      "评估自己的 Agent 是否存在重复解释项目背景、偏好和 SOP 的问题，以判断是否需要长期记忆模块。",
+      "借鉴 L0-L3 分层记忆模型设计可审计、可追溯的长期记忆系统。",
+      "在长任务 Agent 中尝试使用 Mermaid、HTML 或其他紧凑符号表示压缩工具调用历史。",
+      "对比 TDAI、mem0、Letta、Zep 等方案，选择本地优先或云托管路径。",
+      "若不使用 OpenClaw 或 Hermes，可研究 TdaiCore 与 HostAdapter 的解耦方式，评估自定义适配成本。"
+    ],
+    "archiveReason": "文章系统梳理了本地优先 Agent 长期记忆的分层架构、短期上下文压缩、集成方式和适用边界，对构建可调试记忆系统有较高参考价值。",
+    "classifiedAt": 1780386765364,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "TencentDB记忆架构解析",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "verysmallwoods.substack.com",
+    "favicon": "https://substackcdn.com/icons/substack/icon.svg",
+    "knowledgePoints": [
+      "TDAI 使用 L0 到 L3 的分层记忆结构，使高层画像结论可以向下追溯到场景、原子记忆和原始对话。",
+      "短期任务状态通过 Mermaid 图压缩并注入上下文，原始工具日志落盘，需要时再按 node_id 回查。",
+      "检索采用 BM25、向量检索与 RRF 融合，并支持本地 SQLite FTS5、sqlite-vec 及降级策略。",
+      "OpenClaw 集成较成熟，支持插件安装、自动捕获对话、分层提取和召回注入。",
+      "Hermes 集成采用 Python 进程调用 Node.js sidecar，并包含熔断、背压、进程监督等可靠性设计。",
+      "该方案更适合长期、多 session、同一用户持续交互的 Agent，不适合短会话或无持续上下文需求的场景。"
+    ],
+    "oneHighValuePoint": "将长期记忆设计为 L0 Conversation、L1 Atom、L2 Scenario、L3 Persona 的可追溯语义金字塔，而不是仅依赖扁平向量库。",
+    "oneLineReview": "一篇信息量较高、工程细节充分的 Agent Memory 方案解析，适合做本地长期记忆系统设计参考。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "长期记忆系统",
+      "开源工具评测"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍腾讯开源 TencentDB Agent Memory 的四层长期记忆架构、Mermaid 短期记忆压缩、OpenClaw 与 Hermes 集成方式、混合检索机制、Benchmark 表现及适用场景，强调其本地优先、白盒可调试和分层语义记忆设计。",
+    "tags": [
+      "Agent Memory",
+      "TencentDB Agent Memory",
+      "OpenClaw",
+      "Hermes Agent",
+      "本地优先",
+      "分层记忆",
+      "Mermaid压缩"
+    ],
+    "title": "腾讯开源 TencentDB Agent Memory：给 OpenClaw 和 Hermes Agent 接上 4 层本地长期记忆，PersonaMem 准确率 48% → 76%",
+    "totalScore": 74,
+    "url": "https://verysmallwoods.substack.com/p/tencentdb-agent-memory-openclaw-hermes?r=1vcnoc&utm_campaign=post&utm_medium=web&triedRedirect=true"
+  },
+  "payloadHash": "sha256:d41d328d527b3da8baa1ce3451f11e74097e9ce4f8ab056a023393f192500d8a",
+  "refs": {},
+  "revisionId": "sha256:b89b04a34f7a00921bcde85278f9f3016905b732616ea8120cd6ca4572de6496",
+  "schemaVersion": 1,
+  "updatedAt": 1780387328215
+}

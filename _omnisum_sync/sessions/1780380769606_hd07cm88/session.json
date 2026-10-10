@@ -1,0 +1,68 @@
+{
+  "createdAt": 1780380769606,
+  "entityType": "session",
+  "id": "1780380769606_hd07cm88",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将五步提问法改造成自己的 AI 助手需求收集模板。",
+      "在创建 Codex Skill 时复用其 SKILL.md 结构和安全检查清单。",
+      "为常用重复任务尝试生成一个简单 Skill，并补充至少 3 个测试提问。"
+    ],
+    "archiveReason": "包含较完整的零基础 Skill 创建流程、输出结构和安全检查清单，适合作为模板参考。",
+    "classifiedAt": 1780381097053,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 8,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "零基础Codex Skill创建指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "clawhub.ai",
+    "favicon": "https://clawhub.ai/favicon.ico",
+    "knowledgePoints": [
+      "零基础 Skill 创建可通过“想做什么、输入什么、输出什么、最怕哪里错、如何触发”五步完成需求澄清。",
+      "生成 Skill 时应同时包含 SKILL.md、README.md、examples.md，并明确角色、触发场景、流程、输出格式和安全边界。",
+      "涉及删除、付款、授权、发送消息、读取隐私文件或使用密钥等高风险动作时，必须先要求用户确认。",
+      "高级模式只在批量处理、外部服务连接、脚本、API、团队分发等复杂需求出现时启用。"
+    ],
+    "oneHighValuePoint": "用五个生活化问题替代专业术语，帮助非技术用户把模糊需求转化为可执行 Skill。",
+    "oneLineReview": "实用性较强的 Skill 创建提示词模板，但缺少案例验证和更深入的方法论论证。",
+    "primaryCategory": "AI工具与提示词工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "自动化工作流",
+      "产品化方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章是一份面向零基础用户的 Codex Skill 创建教练说明，提供从需求澄清、简单模式提问、高级模式判断，到 SKILL.md、README、示例与安全检查的完整生成流程。",
+    "tags": [
+      "Codex Skill",
+      "零基础引导",
+      "提示词模板",
+      "安全边界",
+      "工作流设计"
+    ],
+    "title": "duange-zero-skill — ClawHub",
+    "totalScore": 66.5,
+    "url": "https://clawhub.ai/lifenglei/duange-zero-skill"
+  },
+  "payloadHash": "sha256:998a70f293e6e5279053cace9255d69f12eba737d22f1fd6f8d669ff210b0d3c",
+  "refs": {},
+  "revisionId": "sha256:01b514b11154f1f3506191e29e0dabd2bcd255b82418d7f7e1bb5809ca745494",
+  "schemaVersion": 1,
+  "updatedAt": 1780384878616
+}

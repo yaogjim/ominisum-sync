@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777284827014,
+  "entityType": "message",
+  "id": "1777284827013_1knkmstn",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Multica使用体验吐槽\n\n**评级**: D (28.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI工具体验\n**次类别**: 开发工具, Agent产品\n**标签**: #Multica #AI Agent #产品体验 #Bug反馈 #开发工作流\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 3 | 10% |\n| 新颖性 | 2 | 10% |\n| 相关性 | 5 | 20% |\n| 可操作性 | 3 | 15% |\n| 方法论价值 | 2 | 15% |\n| 可迁移性 | 2 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 2 | 10% |\n\n**一句话点评**: 适合快速了解 Multica 当前体验问题，但不具备长期参考价值。\n**核心高价值点**: Multica 更偏向在 Workspace 内通过 issue 分发给不同 agent，而 Slock 更像在 channel 中与多个 agent 交流分配任务。\n\n### 摘要\n文章是用户对 Multica 使用半小时后的负面体验反馈，涉及本地文件夹/GitHub仓库接入、Skill导入、Agent loading 等问题。后续回复说明部分问题可通过重启或配置解决，并对比了 Multica 与 Slock 的任务分发思路。\n\n### 知识要点\n- Multica 的工作流设计偏 issue-based agent task dispatch\n- 部分本地文件夹或 Git repo 接入可能需要在 Agent Instructions 中配置路径\n- Skill 的 GitHub 导入存在格式兼容或平台支持限制\n\n### 行动项\n- 如正在评估 Multica，可重点测试本地仓库接入、Skill导入和长时间 loading 问题\n- 对比 Multica、Slock 与 Claude Code 在实际开发工作流中的稳定性和任务分发体验\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是个人即时使用吐槽和少量回复澄清，缺乏系统评测、可复用方法和充分证据。\n删除: 是\n留存决策: 短期参考后可删除\n删除原因: 信息时效性强且价值有限，主要记录个别软件故障与使用体验，不适合长期留存。",
+    "role": "assistant",
+    "timestamp": 1777284827014,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:cb8b28e9a2e122d7deb4a37e96087e76634972afaa8ef2bfc99fe95d1de48504",
+  "refs": {
+    "sessionId": "1777264003897_owjuiyfb"
+  },
+  "revisionId": "sha256:386234a85adfc61c36fb16908599bfdbd84cef412670e9ce8813f1fb1b6b960a",
+  "schemaVersion": 1,
+  "updatedAt": 1777284827014
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777357149842,
+  "entityType": "message",
+  "id": "1777357196765_0jmhzjky",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n作者分享了自己从 Claude Code 迁移到 Codex/GPT-5.5 的使用体验：真正让他感到惊艳的，不只是模型能力，而是 **Codex 结合 Computer use、Browser use、A2A 多 Agent 协作后，能主动理解任务、追问上下文并执行现实工作**。  \n他认为，模型本身只是“劳动力”，真正有粘性的是自己搭建的 **context、harness 和 agent network**。\n\n---\n\n## 1. 先前基于 Claude Code 搭建了完整工作系统 Echo\n\n- 作者之前在 **Claude Code** 基础上搭建了一套较完善的 **Work Harness**，参考了早期在 **OpenClaw** 和 **Hermes** 中的经验。\n- 这套系统有：\n  - 完善的记忆系统；\n  - SOUL；\n  - 一个主 Agent：**Echo**。\n- Echo 还有一个助手，跑在 **Copilot SDK** 上，名叫 **Thrum**，意思类似“持续轰鸣的声音”。\n\n---\n\n## 2. 用 Echo 和 Thrum 做设计学习与批评\n\n- 作者想把自己的 **design knowledge 和 experience** 喂给 Echo，但设计经验很难直接用语言描述清楚。\n- 因此，他让 Echo 和 Thrum 通过 **headless** 的方式，对输入内容进行多轮讨论。\n- 随着上下文越来越多，作者开始让她们在 **Figma** 里画图。\n\n### 初期问题\n\n- 一开始 AI 画出来的设计很“AI味”：\n  - 元素挤在一起；\n  - 到处是“框套框”；\n  - 缺少设计品味。\n\n### 改进方式\n\n- 作者发现，设计师很难正面描述“好设计是什么”，但很容易指出“哪里不好”。\n- 所以他采用了一种类似人类设计师学习的方式：\n  1. Echo 先做设计；\n  2. 作者手动修改一轮；\n  3. 让 Echo 自己去 Figma 看；\n  4. Echo 在有问题的地方留言评论；\n  5. 作者再逐一解答。\n\n- 这样既解决了抽象设计经验难以表达的问题，也能落到具体案例中学习。\n\n---\n\n## 3. Claude Opus 4.7 体验变差，作者尝试让 Codex 接手\n\n- Echo 原本一直跑在 **Claude Opus 4.6** 上。\n- 后来升级到 **Opus 4.7** 后，体验变差，作者形容为“开始天天这砍一刀，那落一下”。\n- 正好 **GPT-5.5** 出现，于是作者尝试让 **Codex** 接手原本完全基于 Claude Code 搭建的 Harness。\n\n### 遇到的问题\n\n- 原有 Harness 里很多地方是写死 Claude 的，并不通用。\n- 但作者之前有 OpenClaw 和 Hermes 的经验，知道“换 LLM 不换架构”是可行的。\n\n### Codex 的表现\n\nCodex 按作者预期完成了迁移改造：\n\n1. 先发现当前 Harness 的问题；\n2. 再参考 OpenClaw 和 Hermes 的方式；\n3. 最后稳定接住原有系统。\n\n作者称这是 **Codex 第一次真正稳稳接住他**。\n\n---\n\n## 4. 第二次惊艳：Codex 主动利用 Computer use 做现实任务\n\n- 第二次让作者惊艳的是 Codex 结合 **Computer use** 后的现实任务能力。\n- 作者提到，自己受到用户 **@YuLin807** 的推荐影响，对 Codex 的长任务能力、根因分析能力以及调用 Safari 浏览器的能力产生兴趣。\n\n热门回复中也强调：\n\n> “立刻去用 codex & GPT5.5 + computer use，交给他更多现实任务、真实任务。  \n> 他的长任务能力和根因分析以及调用现有 Safari 浏览器的能力，一流/断层/天下第一！”\n\n---\n\n## 5. A2A 让多个 Agent 共享上下文，像团队协作一样工作\n\n- 作者每天早上会和另一个 Agent **Friday** 整理日程。\n- 因此 Friday 知道作者生活和工作的所有规划。\n- Echo 主要负责干活，作者通常是“带着任务来，带着结果走”。\n\n为了让两个 Agent 共享更多项目信息，作者搭建了 **A2A**：\n\n- 晚上 Friday 复盘时，可以问 Echo 白天做了什么；\n- Echo 如果缺少上下文，也可以直接去问 Friday。\n\n### 一个具体案例\n\n- 作者当时正在赶一个需要手动做设计的任务，不想让 Codex 闲着。\n- 于是让 Echo 去问 Friday：结合 Codex 的 Computer use，现在有没有什么能主动帮忙做的事。\n- Echo 得知作者当务之急是做一个 **demo video**，立刻准备拿 Computer use 权限去盯 Figma。\n- 作者赶紧叫停，让它去做和当前工作无关的事。\n\n---\n\n## 6. Codex 主动整理 O1 签证相关材料\n\n- 作者之前和 Friday 聊过很久去美国的事。\n- 由于现在 **H1B 几乎不可能**，作者考虑尝试 **O1 签证**。\n- O1 的证据材料之一是奖项，因此作者也想看看 **Antenna** 是否能从 Design concept 角度尝试提交。\n\nEcho 通过 A2A 向 Friday 问清楚背景后，直接开始执行：\n\n- 整理要提交的材料；\n- 梳理相关证据；\n- 在作者还在另一块屏幕手搓设计时，Echo 已经把材料准备好了。\n\n作者对此非常感动，认为这体现了多 Agent 协作的价值。\n\n---\n\n## 7. 作者对 A2A + Codex 的核心评价\n\n- 有了 A2A 后，一个 Agent 中聊过的内容，可以被其他 Agent 无缝获取。\n- 这就像给员工派活时说：“有问题去找某某”，然后他会自己去问清楚并完成任务。\n- 作者认为，真正让他惊艳的不是单点模型能力，而是：\n\n  - Codex 的 Computer use；\n  - Browser use；\n  - 不懂就问；\n  - 问完就干；\n  - 能完成真实长任务。\n\n他把这种能力形容为“好员工能力”。\n\n---\n\n## 8. 结尾观点：模型会变，但真正重要的是系统和上下文\n\n- 作者说明这篇文章不是技术分享，而是一篇个人感慨。\n- 他强调，自己曾经以为离不开 ChatGPT，后来又觉得离不开 Claude Opus 4.5，如今又和 GPT-5.5 “破镜重圆”。\n- 但他最终意识到：\n\n> 模型只是劳动力，单纯劳动力没有真正的用户粘性。  \n> 真正有粘性的是自己的 context、harness 和 agent network。\n\n- 作者也承认，未来如果 **Opus 4.8** 更强，他可能还会回到 Claude。\n- 但至少现在，Codex 结合 GPT-5.5、Computer use、Browser use 和 A2A 的表现，让他非常满意，所以感叹：\n\n> “Codex，他真的，我哭死。”",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1777357149842,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:674ddc139836c19f3fe637fc3c50f8034d299ad147c49471d7b917719f9fb796",
+  "refs": {
+    "sessionId": "1777356484486_12iitgc9"
+  },
+  "revisionId": "sha256:b922c6c7a959686273e9ae1189fd466b820b2b0568dc58a345d9f41f1c5c3383",
+  "schemaVersion": 1,
+  "updatedAt": 1777357149842
+}

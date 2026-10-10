@@ -1,0 +1,75 @@
+{
+  "createdAt": 1780308140446,
+  "entityType": "session",
+  "id": "1780308140446_p209cs9r",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查并精简现有 CLAUDE.md，将其控制在 200 行以内",
+      "新增 Do NOT introduce 区块，列出项目禁止引入的库、框架和技术方案",
+      "把模糊编码规则改写为可在 5 秒内判断是否符合的具体规则",
+      "为 auth、billing、infra 等高风险目录添加本地 CLAUDE.md",
+      "将格式化、测试、敏感文件修改确认等规则配置为 Claude Code Hook",
+      "新增 MEMORY.md，并在 CLAUDE.md 中要求 Claude 在任务开始和结束时读取与更新"
+    ],
+    "archiveReason": "文章提供了较完整且可直接落地的 CLAUDE.md 编写原则，包含上下文控制、禁用清单、本地规则、Hook 和记忆文件等实践方法",
+    "classifiedAt": 1780308283881,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "CLAUDE.md实战优化指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "CLAUDE.md 应控制在约 200 行以内，避免无关信息占用上下文窗口",
+      "除了声明技术栈，还应明确列出 Do NOT introduce 禁用库和禁用方案",
+      "规则应写成可验证的具体指令，而不是“干净代码”“保持简洁”等模糊原则",
+      "CLAUDE.md 更适合作为文档入口和上下文路由，而不是承载全部架构文档",
+      "敏感模块可单独放置本地 CLAUDE.md，用于设置安全红线和模块级注意事项",
+      "Hook 可以把 CLAUDE.md 中的规则转化为自动格式化、测试和保护关键文件的强制机制",
+      "MEMORY.md 可作为简单、可追踪的长期记忆文件，沉淀跨会话经验"
+    ],
+    "oneHighValuePoint": "将 CLAUDE.md 设计成“上下文路由器”而非资料库，通过指针和分层上下文减少噪音、提高 Claude 的项目理解效率。",
+    "oneLineReview": "一篇高可操作性的 Claude Code 项目上下文配置指南，证据深度一般但实践价值较高。",
+    "primaryCategory": "AI编程实践",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为 Claude Code 项目配置和团队 AI 协作规范的参考模板",
+    "secondaryCategories": [
+      "Claude Code",
+      "工程效率",
+      "项目文档"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结了写好 CLAUDE.md 的 8 条实战经验，强调短小、可执行、按需引用文档、设置禁用清单、本地规则、Hook 强制执行和长期记忆机制，以提升 Claude Code 对项目的理解和协作质量。",
+    "tags": [
+      "CLAUDE.md",
+      "Claude Code",
+      "AI协作",
+      "上下文管理",
+      "开发规范"
+    ],
+    "title": "写好 CLAUDE.md 的 8 条经验：让 Claude Code 更懂你的项目",
+    "totalScore": 75.5,
+    "url": "https://x.com/vincemask/status/2052368318825402507"
+  },
+  "payloadHash": "sha256:af9f228829ea6a764f2b9629db5dd2d9a94dc3b95e994c5f2a1a8521bb96ff56",
+  "refs": {},
+  "revisionId": "sha256:df34007cd448ef9105c62d1c5703586248eccdcbcc6d60bbabbc97d56fa558ed",
+  "schemaVersion": 1,
+  "updatedAt": 1780308668167
+}

@@ -1,0 +1,74 @@
+{
+  "createdAt": 1773822479008,
+  "entityType": "session",
+  "id": "1773822479008_kf72uwwe",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的项目中尝试用一页brief模板统一记录目标、约束、验收标准和风险",
+      "复盘近期需求返工案例，判断问题源头是执行失误还是前期对齐不足"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773829157596,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "AI团队对齐与Brief驱动交付",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先精炼总结，再深入浅出解读。",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "AI时代软件交付的关键瓶颈可能从编码效率转向跨角色对齐效率",
+      "高质量brief应包含目标、范围、约束、验收标准、风险与非目标",
+      "许多评审环节本质上是在补偿前期方向不清导致的下游纠偏成本"
+    ],
+    "oneHighValuePoint": "将多数评审关卡的根因统一归结为“启动前brief不清晰”，这个框架有助于重新审视研发流程瓶颈。",
+    "oneLineReview": "抓住了AI时代“对齐比执行更稀缺”的真问题，但论证更像产品宣传而非严谨分析。",
+    "primaryCategory": "AI产品与团队协作",
+    "rating": "C",
+    "rejectReason": "内容以产品营销和观点表达为主，缺少可验证数据、系统案例和可直接复用的落地细节。",
+    "retentionDecision": "低优先级留存，可短期参考后删除",
+    "secondaryCategories": [
+      "产品管理",
+      "AI工程流程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://tryhamster.com/",
+      "https://tryhamster.com/docs/hamster-studio",
+      "https://x.com/EyalToledano/status/2034081600066228429",
+      "https://x.com/EyalToledano/status/2034012717510758858"
+    ],
+    "summaryBrief": "文章核心观点是：在AI加速编码后，团队瓶颈从“写代码”转向“前期对齐”，应通过高质量brief把目标、约束和验收标准提前说清，以减少后续评审返工。观点有启发，但整体偏营销，证据较弱。",
+    "tags": [
+      "AI-native delivery",
+      "团队对齐",
+      "Brief驱动",
+      "开发流程",
+      "Agent协作"
+    ],
+    "title": "AI时代团队对齐才是核心稀缺能力",
+    "totalScore": 46.5,
+    "url": "omnisun://digest/1773822479008"
+  },
+  "payloadHash": "sha256:7cffbe795e995e5bd4f45a5ce53303652f53168d7f2665a8815279dd6616ee57",
+  "refs": {},
+  "revisionId": "sha256:3ee67eaee4017e4911102ff80849c7ddd4b2f4a7b9caa8db2027c7b65b82b96b",
+  "schemaVersion": 1,
+  "updatedAt": 1773829157601
+}

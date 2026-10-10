@@ -1,0 +1,66 @@
+{
+  "createdAt": 1776645454303,
+  "entityType": "session",
+  "id": "1776645454303_7352pq3h",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注模型合并方向，去查找对应 Hugging Face 模型卡与正式评测",
+      "将此类社交媒体帖子仅作为线索来源，不作为技术判断依据"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776646204702,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "模型拼接热潮的短评",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "缺乏系统信息与证据支撑，可操作性弱，后续复用价值很低",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Franken-merging 指将多个模型或能力源进行拼接式合并的实践",
+      "模型合并可能带来能力扩展，也可能损失推理稳定性",
+      "社交媒体上的模型宣发信息通常缺少可复现验证"
+    ],
+    "oneHighValuePoint": "提示了“模型拼接/合并”在开源大模型社区仍是活跃方向，但可能伴随推理能力退化。",
+    "oneLineReview": "有话题感但缺少实证与方法，属于可略过的社区噪声。",
+    "primaryCategory": "人工智能",
+    "rating": "D",
+    "rejectReason": "内容主要是社交媒体碎片化讨论，缺少技术细节、实验设计和可验证结论，参考价值较低",
+    "retentionDecision": "信息噪声偏高，除非你专门跟踪模型合并社区动态，否则建议删除",
+    "secondaryCategories": [
+      "大模型工程",
+      "社交媒体观点"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一则关于“franken-merging”仍然流行的社交媒体短帖，围绕一个混合式大模型展开，评论提到其推理能力可能下降，但整体没有给出实验过程、指标或方法细节。",
+    "tags": [
+      "模型合并",
+      "Franken-merge",
+      "LLM",
+      "X平台",
+      "未审查模型"
+    ],
+    "title": "X 上的 nisten🇨🇦e/acc：“franken-merging is alive and well”",
+    "totalScore": 33.5,
+    "url": "https://x.com/nisten/status/2044173380438343905"
+  },
+  "payloadHash": "sha256:9606075b535be60d28532ae3d76d1d2b7fbabeda53afb214532376aaaf2ff699",
+  "refs": {},
+  "revisionId": "sha256:79b97c7b1b6f0c06990429b85a25f233a19305188eeb084cecd50531caf7f5bf",
+  "schemaVersion": 1,
+  "updatedAt": 1776647184392
+}

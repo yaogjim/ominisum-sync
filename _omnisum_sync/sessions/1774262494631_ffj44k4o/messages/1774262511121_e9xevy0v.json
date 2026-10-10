@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774262511122,
+  "entityType": "message",
+  "id": "1774262511121_e9xevy0v",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Pinokio代理集成功能速评\n\n**评级**: C (43分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI工具与本地部署\n**次类别**: AI代理, 产品更新, 开发效率工具\n**标签**: #Pinokio #本地AI #AI代理 #Agent Interpreter #CLI工具\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 5 | 20% |\n| 可操作性 | 4 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 有一点工具发现价值，但更像宣传帖而非高质量可复用内容。\n**核心高价值点**: Pinokio 7 的 Agent Interpreter 试图把本地 AI 应用统一暴露给各类 AI CLI 代理进行自动发现和控制，这个产品方向值得关注。\n\n### 摘要\n这是一条关于 Pinokio 7 新功能 Agent Interpreter 的社交媒体介绍，核心卖点是让 Claude Code、Codex 等 AI 代理零配置发现并控制 Pinokio 内的本地应用。附带一个个人排障案例，但整体信息有限，偏产品安利。\n\n### 知识要点\n- Pinokio 的定位是本地 AI 应用的一键安装与运行环境\n- Pinokio 7 强调 Agent Interpreter，可让 AI CLI 代理零配置接入本地应用\n- 作者给出一个借助 Gemini CLI 读取日志并快速修复应用问题的案例\n\n### 行动项\n- 如果你常做本地 AI 部署，可进一步查看 Pinokio 官方文档验证 Agent Interpreter 的真实能力边界\n- 对比 Pinokio 与手工环境管理在安装成本、代理接入、调试效率上的差异后再决定是否采用\n\n### 存档判定\n归档: 否\n不推荐: 内容偏宣传和体验分享，缺少系统说明、实测细节与可验证证据。\n删除: 否\n留存决策: 低优先级保留，短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1774262511122,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:c5df262ed852aae83bc2f22214446a8746b59fe1a729f4a540f96fb930dd478f",
+  "refs": {
+    "sessionId": "1774262494631_ffj44k4o"
+  },
+  "revisionId": "sha256:15e3c93df5df32ca3db9cd02e8c8d8dc6f5fda1ed164c2f3a16b9a384593b5a5",
+  "schemaVersion": 1,
+  "updatedAt": 1774262511122
+}

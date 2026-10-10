@@ -1,0 +1,20 @@
+{
+  "createdAt": 1776139857215,
+  "entityType": "message",
+  "id": "1776139887505_zcpdw64f",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# OpenMontage 是什么\n\n## 核心结论\nOpenMontage 开源了一整套 AI 视频制作基础设施，不是单一的“文生视频”工具，而是一条完整的视频生产流水线。它把搜索、写脚本、生成素材、剪辑、配音、字幕、动画和渲染串起来，并且可以由 AI 编码助手用自然语言直接调度完成。\n\n## 它厉害在哪\n相比很多只是“套壳模型 + 漂亮界面”的 AI 视频产品，OpenMontage 更像底层生产系统。用户只需要描述需求，AI 助手就能像“导演”一样组织整个制作过程，真正把视频生成从单点能力升级为端到端流程能力。\n\n## 技术能力概览\n它整合了非常完整的工具链：\n- 11 个工作流、49 个工具\n- 多家视频生成模型，包括 Kling、Runway、Veo、MiniMax，以及本地 GPU 方案\n- 多家图像生成模型，包括 FLUX、Imagen、DALL-E、Stable Diffusion\n- 多种 TTS 配音方案，包括 ElevenLabs 和离线免费方案\n- WhisperX 做逐词字幕嵌入\n- React + Remotion 做动画合成\n\n## 成本与可用性\n它的另一个亮点是成本控制做得很强：\n- 单个广告样片成本仅约 0.69 美元\n- 执行前会先做成本估算\n- 单次超过 0.50 美元的操作需要审批\n- 总预算上限为 10 美元\n\n更重要的是，它可以在几乎不依赖额外 API 成本的情况下运行：本地配音、免费素材库、开源动画工具都被充分利用。\n\n## 这意味着什么\n这类项目的价值不在于“又一个 AI 视频 App”，而在于它正在把视频生产能力做成可复用、可编排、可自动化的基础设施。对内容生产、营销、广告和商业传播来说，这类系统未来可能比单一模型产品更有长期价值。\n\n## 一句话总结\nOpenMontage 不是一个视频生成玩具，而是一个低成本、可控、可扩展的 AI 视频生产引擎，代表了 AI 内容制作从“工具化”走向“基础设施化”。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1776139857215,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4b3d674fddb47d3c1a4d889a044623f1e0a7ab1286a4200711304487686692c4",
+  "refs": {
+    "sessionId": "1776139887503_b9bw4er4"
+  },
+  "revisionId": "sha256:bbb9848a29a0ee3e081ed5337ce13d2e29fb54971e42f1734d7a2a2d799e225f",
+  "schemaVersion": 1,
+  "updatedAt": 1776139857215
+}

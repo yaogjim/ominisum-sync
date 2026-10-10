@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773222410856,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773222410856",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "**主旨概括：**  \n这篇文章介绍了一种适合**Claude Code 并行开发**的工作流：借助**Git Worktree**，在同一个仓库里同时开多个独立工作区，让多个 AI 编码实例互不打扰地并行干活。作者认为，这不仅提升开发效率，也预示了未来 “**一个人管理多个 AI agent**” 的人机协同模式。\n\n---\n\n## 1. 作者为什么研究这个工作流\n- 作者近**两个月**一直在研究 Claude Code，并投入了不少成本。\n- 他认为 Claude Code 的能力非常强，尤其体现在：\n  - **推理和规划能力强**\n  - **能自主调用工具**\n  - **上下文窗口大**\n- 作者甚至把它看作**AGI 的雏形**，觉得它不仅能帮写代码，还在改变人的思维方式。\n- 一个核心判断是：未来可能不是 “人自己做事”，而是 “**人负责管理多个 AI**”。\n\n**例子：**  \n如果一个 Claude Code 正在主工作区修复杂务，这时又来了一个紧急小任务，就需要另一个 Claude Code 同时开工，但又不能打断前一个。\n\n---\n\n## 2. 现实问题：传统`git checkout`不适合并行\n- 当一个 Claude Code 实例正在当前工作区运行时，另一个实例如果也想工作，就会遇到冲突。\n- 因为传统的**`git checkout`会切换整个工作区状态**：\n  - 当前文件会变\n  - 分支会变\n  - 可能还要重新安装依赖或重新编译\n- 这会直接干扰正在工作的 Claude Code。\n\n**关键点：**  \n作者需要的是一个 “**临时战场**”—— 在主工作区之外，再开一个完全独立的环境处理新任务。\n\n---\n\n## 3. 解决方案：Git Worktree\n- 作者找到的关键工具是**Git Worktree**，这是 Git 在**2015 年**就发布的功能。\n- 它允许你在**同一个仓库**下创建**多个工作目录**，每个目录都可以独立检出不同分支。\n- 这样就能在每个工作目录中启动一个独立的 Claude Code 实例，互不影响。\n\n**通俗理解：**\n- `git checkout`像**一台老式收音机**，一次只能听一个频道（一个分支）。\n- `git worktree`像**摆了一排收音机**，每台都能同时播放不同频道（不同分支）。\n- 它们共享同一个 Git 历史，但各自独立工作。\n\n**核心结论：**  \n`git worktree`把原本 “**时间上串行**” 的切换分支，变成了 “**空间上并行**” 的多个工作区。\n\n---\n\n## 4. 为什么这个能力很重要\n- 有了多个 worktree，就可以**同时运行多个 Claude Code 实例**。\n- 这也是最近 Claude Code “限量风波” 的背景之一：\n  - 有开发者利用`git worktree`\n  - **7x24 小时**持续跑多个 Claude Code 实例\n  - 每月**token 消耗甚至高达数万美元**\n\n**说明：**  \n这说明并行工作流不是小优化，而是会显著放大 AI 编程助手的使用强度和效率。\n\n---\n\n## 5. 典型用法：按 Issue 并行开发\n作者给出的最实用场景，是**同时处理多个 GitHub Issue**。\n\n### 5.1 先创建专用目录并忽略它\n- 在项目根目录创建一个专门放 worktree 的目录，比如：\n  - `worktrees`\n- 然后把它加入`.gitignore`：\n\n```bash\necho \"worktrees/\" >> .gitignore\nmkdir worktrees\n```\n\n**这样做的原因：**\n- `worktrees/`这个容器目录本身不需要被 Git 跟踪\n- 但里面每个具体的 worktree（如`worktrees/issue-12`）依然是**Git 直接管理的完整工作区**\n- 好处是：\n  - 主干目录保持干净\n  - 每个任务仍能独立提交、独立管理版本\n\n---\n\n### 5.2 为每个 Issue 创建独立工作区\n假设要同时处理两个任务：**issue-12**和**issue-13**\n\n可以这样创建：\n\n```bash\ngit worktree add worktrees/issue-12 main\ngit worktree add worktrees/issue-13 main\n```\n\n**含义：**\n- 都基于`main`分支创建\n- 但它们是两个独立目录，可以分别开展不同任务\n\n---\n\n### 5.3 在不同工作区里分别启动 Claude Code\n- 进入`worktrees/issue-12`\n  - 创建`fix/issue-12`分支\n  - 启动一个 Claude Code，修 Bug\n- 再进入`worktrees/issue-13`\n  - 创建`feat/issue-13`分支\n  - 启动另一个 Claude Code，开发新功能\n\n**效果：**\n- 不需要等一个任务做完再切另一个\n- 两个任务能并行推进\n- 各自上下文、文件状态、分支状态都独立\n\n---\n\n### 5.4 Review 修改也会更顺手\n- 如果`issue-12`收到 Review 意见，只需要回到：\n  - `cd worktrees/issue-12`\n- 所有上下文会立刻恢复：\n  - 代码状态还在\n  - 分支还在\n  - 修改历史还在\n\n**好处：**\n- 不用频繁 checkout\n- 不用重新进入思路\n- 从 “不断切换” 变成 “随时回到对应现场”\n\n---\n\n## 6. 在 VS Code 里的具体操作\n文章还介绍了在**VS Code / 类 IDE**中的实操流程。\n\n### 6.1 插件辅助管理\n- 基于 VS Code 自带的 Source Control\n- 建议安装两个插件，重点提到：\n  - **Git Worktree Manager**\n  - **Git History**\n\n### 6.2 创建和管理多个工作目录\n- 通过**Git Worktree Manager**面板，可以快速创建、查看、删除 worktree。\n\n### 6.3 把新工作目录加入 workspace\n- 右键新的 worktree 目录，选择：\n  - **“Add folder to workspace”**\n- 这样做的目的，是让每个 Claude Code 实例都能明确运行在对应的独立目录下。\n\n### 6.4 确认 Claude Code 工作目录正确\n- 在某个 worktree 目录中随便打开一个文件，再启动 Claude Code\n- 就可以看到 Claude Code 的工作目录已经正确绑定到该 worktree\n\n### 6.5 开发、提交、查看历史\n- 在各自工作区中完成开发并提交 commit\n- 打开**Git History**面板会发现：\n  - 虽然同时开了多个工作目录\n  - 但提交历史和分支关系，和传统`git checkout`切分支的效果**完全一致**\n- 后续仍按正常 Git 合并流程处理即可\n\n### 6.6 收尾清理\n任务完成后：\n1. 先从 workspace 移除对应工作目录\n2. 再删除该 worktree 目录\n\n**结论：**  \n这样就形成了一套完整的 Claude Code 并行开发工作流。\n\n---\n\n## 7. 作者最后的思考：从 “人与人协作” 到 “人与 AI 协作”\n- 作者认为，这套工作流本质上并不新，它只是把 Git 原本解决 “**多人协作**” 的逻辑，迁移到了 “**一人管理多个 AI**” 的场景。\n- 背后的协作原则没有变：\n  - **隔离**\n  - **并行**\n  - **集成**\n- 也就是说，人机协同的未来，可能不是发明全新方法，而是把人类多年积累的协作经验复用到 AI 身上。\n\n**一句话总结：**  \n既然 AI 越来越像 “协作者”，那就应该像管理人类团队一样，给它独立空间、清晰分工和良好协作机制。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1773222410856,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:18cab4aa5c74c2cc53b35e5295bbba5e9fff7c641f7a2c3bef0217fc6908c238",
+  "refs": {
+    "sessionId": "1773222338054_dhlg6vap"
+  },
+  "revisionId": "sha256:4a48bab33704745560be8e4139cd50345661aa500e7237388de7385137a91a3b",
+  "schemaVersion": 1,
+  "updatedAt": 1773222410856
+}

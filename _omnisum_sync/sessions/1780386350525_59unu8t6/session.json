@@ -1,0 +1,66 @@
+{
+  "createdAt": 1780386350525,
+  "entityType": "session",
+  "id": "1780386350525_59unu8t6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估现有 AI 产品时，区分其是辅助型 App+AI 还是具备自主执行能力的 Agent。",
+      "设计 Agent 产品时，重点考虑哪些任务可交由 Agent 自主执行，哪些环节需要人工确认。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780386828739,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent与App+AI的主体差异",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "传统 App+AI 中，AI通常作为辅助组件嵌入到人的操作流程中。",
+      "Agent 应用中，执行主体转移给 Agent，人更多负责目标设定、监督和验收。",
+      "执行主体变化会带来产品交互、权限控制、可靠性和容错机制的重新设计需求。"
+    ],
+    "oneHighValuePoint": "Agent 应用的本质变化不是简单加入 AI，而是从“人操作工具”转向“人指挥智能体执行”。",
+    "oneLineReview": "用一句清晰判断抓住了 Agent 产品范式的关键差异，但论证和方法论展开不足。",
+    "primaryCategory": "AI产品与Agent",
+    "rating": "C",
+    "rejectReason": "内容较短，主要是一个概念性判断，缺少系统展开、案例验证和可执行方法。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "人机交互",
+      "产品设计"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出 Agent 应用与传统 App+AI 的核心差异在于执行主体：传统模式由人操作 App，AI辅助；Agent 模式由人下达目标，Agent 自主操作 App 或 CLI 完成任务。",
+    "tags": [
+      "Agent",
+      "App+AI",
+      "执行主体",
+      "交互范式",
+      "AI产品"
+    ],
+    "title": "宝玉: Agent 应用和传统 App + AI 的最大差别，在于执行的主体不同",
+    "totalScore": 52.5,
+    "url": "https://x.com/dotey/status/2059129670558200101"
+  },
+  "payloadHash": "sha256:6113886cb0ebabfe17b33ae30db4b9e4b93000b023a3dc47f7b28291fbaaa0e0",
+  "refs": {},
+  "revisionId": "sha256:98e3e04343ca85ed65162fadf679e3b971a5520fbc89d4667883df80124f4952",
+  "schemaVersion": 1,
+  "updatedAt": 1780386829148
+}

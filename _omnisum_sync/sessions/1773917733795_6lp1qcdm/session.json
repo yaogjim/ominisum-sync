@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773917733795,
+  "entityType": "session",
+  "id": "1773917733795_6lp1qcdm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "挑选与你当前工作最相关的 3-5 个 agent，先在单一工具链中试装验证效果",
+      "参考其 agent 模板结构，抽象出适合自己团队的角色定义与交付规范"
+    ],
+    "archiveReason": "包含较完整的代理分类、安装方式与多工具适配说明，适合作为后续搭建代理系统时检索参考",
+    "classifiedAt": 1773917964406,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "多工具AI代理仓库总览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "多角色 AI agent 可以按职能拆分为工程、设计、营销、产品、测试等分工体系",
+      "同一套 agent 描述可通过转换脚本适配 Claude Code、Copilot、Cursor、Aider、Qwen Code 等不同工具",
+      "高质量 agent 模板通常包含身份设定、任务边界、工作流、交付物和成功指标"
+    ],
+    "oneHighValuePoint": "最有价值的是其将同一套 agent 体系适配到多个主流 AI 编码工具，并提供转换与安装脚本，降低了迁移和落地成本。",
+    "oneLineReview": "实用性强于思想性，像一份可直接拿来试用的代理目录，而不是高质量方法论文档。",
+    "primaryCategory": "AI工具与代理工程",
+    "rating": "B",
+    "rejectReason": "内容偏仓库清单与宣传页，方法论提炼不足，证据质量一般，重复枚举较多",
+    "retentionDecision": "作为代理模板与工具集成参考短中期保留",
+    "secondaryCategories": [
+      "开发效率",
+      "提示词工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份多角色 AI 代理仓库说明，核心价值在于提供大量按职能划分的 agent 模板，并支持 Claude Code、Copilot、Cursor、Aider 等工具的安装与转换。适合用作代理体系搭建参考，但内容以目录罗列为主，实证和方法抽象较弱。",
+    "tags": [
+      "AI Agents",
+      "Claude Code",
+      "多工具集成",
+      "开发工作流",
+      "代理模板"
+    ],
+    "title": "msitarzewski/agency-agents: A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+    "totalScore": 59.5,
+    "url": "https://github.com/msitarzewski/agency-agents"
+  },
+  "payloadHash": "sha256:bba2959b7e8b1984178252d7ff241d476e2c9c972a18c9ab95166f7c24eb8d54",
+  "refs": {},
+  "revisionId": "sha256:5190a962c71ea990d208a7f6f131ccea30f38d3df22a29705b28f8ff2afd5ce1",
+  "schemaVersion": 1,
+  "updatedAt": 1775115437719
+}

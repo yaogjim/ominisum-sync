@@ -1,0 +1,66 @@
+{
+  "createdAt": 1775636167085,
+  "entityType": "session",
+  "id": "1775636167085_y1ebn5xc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在评估本地AI代理，可把Hermes与OpenClaw按控制方式、记忆机制和自动化需求做选型对比。",
+      "优先查阅Hermes官方文档或源码，补足本文未展开的技能学习机制、评估流程和安全设计细节。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1775820523304,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Hermes与OpenClaw对比评估",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.turingpost.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Hermes强调以代理循环为核心的自我改进架构，而非以控制平面为中心。",
+      "Hermes采用分层记忆设计，包括持久笔记、可检索会话历史和程序性技能。",
+      "Hermes支持模型无关运行时，可在不同模型提供商之间切换而无需改代码。"
+    ],
+    "oneHighValuePoint": "最有价值的点是将代理能力积累定义为“程序性记忆”，即把成功工作流沉淀为可复用技能，而不仅仅存储事实记忆。",
+    "oneLineReview": "有一些值得关注的架构差异点，但更像引流型概览而非可直接采用的深度分析。",
+    "primaryCategory": "AI代理架构分析",
+    "rating": "C",
+    "rejectReason": "文章前半部分有一定信息量，但后半段被付费墙截断，论证和细节不足，且带有明显宣传导向。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开源AI工具",
+      "本地代理工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了Nous Research的Hermes Agent，并将其与OpenClaw进行架构与理念对比，强调自我改进、程序性记忆、分层记忆栈和模型无关运行时等特性。但正文关键信息被付费墙截断，导致实操、案例和证据支撑不足。",
+    "tags": [
+      "Hermes Agent",
+      "OpenClaw",
+      "自我改进代理",
+      "记忆系统",
+      "本地AI"
+    ],
+    "title": "AI 101: Hermes Agent – OpenClaw’s Rival? Differences and Best Use Cases",
+    "totalScore": 49.5,
+    "url": "https://www.turingpost.com/p/hermes"
+  },
+  "payloadHash": "sha256:0f84630e8d40dc8c62624bfaedf21e49cb0f839156d3685983f587a14ef7a6bb",
+  "refs": {},
+  "revisionId": "sha256:c8a7fea860df35e5ace9d9d5b5ec1282f1c247dde63bb31bdeb24584007a3194",
+  "schemaVersion": 1,
+  "updatedAt": 1775820523308
+}

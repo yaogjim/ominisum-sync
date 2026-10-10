@@ -1,0 +1,68 @@
+{
+  "createdAt": 1776645436958,
+  "entityType": "session",
+  "id": "1776645436958_tchx2irz",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若你在 Apple Silicon 上使用 MLX 跑 Qwen 模型，可实际部署 dflash-mlx 并复现实测吞吐数据",
+      "对照项目中的 benchmark 方法，评估你的目标模型在不同上下文长度下的 acceptance 和 speedup",
+      "进一步研究其 rollback 与 verify kernel 设计，提炼到你自己的推理框架或服务系统中"
+    ],
+    "archiveReason": "包含较完整的实现细节、性能基准、安装方式和工程优化思路，对本地大模型推理优化有持续参考价值。",
+    "classifiedAt": 1776646182451,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "苹果硅DFlash推测解码实现",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "块扩散草稿模型可一次并行生成 16 个 token，再由目标模型单次前向验证实现无损推测解码",
+      "通过 tape-replay rollback 只重放被接受步骤，可降低 recurrent state 回滚开销",
+      "针对长上下文验证与 M=16 int4 matmul 提供定制 Metal kernel，可在 Apple Silicon 上获得显著吞吐提升",
+      "基准测试显示在多种 Qwen 目标模型上可获得约 1.2x 到 4.4x 的推理加速"
+    ],
+    "oneHighValuePoint": "最有价值的是用 tape-replay rollback 替代完整状态快照恢复，在保持无损验证的同时显著降低回滚成本并改善长序列接受率。",
+    "oneLineReview": "这是一篇偏工程实现的高价值项目说明，技术细节和基准都较扎实，适合关注本地 LLM 推理优化的人精读。",
+    "primaryCategory": "大模型推理加速",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "Apple Silicon工程优化",
+      "MLX推测解码"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了在 Apple Silicon 上基于 MLX 实现的无损 DFlash 推测解码方案，重点说明 tape-replay rollback、长上下文 verify 优化和 int4 qmm 自定义 Metal 内核，并给出多组 Qwen 模型的吞吐提升与使用方法。",
+    "tags": [
+      "MLX",
+      "Speculative Decoding",
+      "Apple Silicon",
+      "Metal Kernel",
+      "LLM Inference"
+    ],
+    "title": "bstnxbt/dflash-mlx: Lossless DFlash speculative decoding for MLX on Apple Silicon",
+    "totalScore": 76.5,
+    "url": "https://github.com/bstnxbt/dflash-mlx"
+  },
+  "payloadHash": "sha256:3f78777fb0e1a31764861898762a7a4c94ef0e7320941a67bdcc5859d3887324",
+  "refs": {},
+  "revisionId": "sha256:fa6784efa5ec3cca48a6eeef831489b05ca50f62d2dc548af552a19a4b3c008d",
+  "schemaVersion": 1,
+  "updatedAt": 1776646678009
+}

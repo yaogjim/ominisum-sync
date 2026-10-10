@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777901718878,
+  "entityType": "session",
+  "id": "1777901718878_16fhd57i",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 claude-agent-sdk，可浏览 open-agent-sdk 仓库评估兼容性",
+      "检查项目源码、许可证、维护活跃度和实际性能表现后再决定是否采用"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777901987835,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 2,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "open-agent-sdk替代方案发布",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "claude-agent-sdk 的潜在问题包括依赖闭源 Claude Code 和进程级调用开销",
+      "open-agent-sdk 宣称兼容 claude-agent-sdk 接口，可通过替换包名迁移",
+      "函数调用式 SDK 相比 CLI 进程调用更适合云端高并发场景"
+    ],
+    "oneHighValuePoint": "指出 claude-agent-sdk 依赖本地 Claude Code 进程带来的黑盒和高开销问题，并提供开源替代方向。",
+    "oneLineReview": "有一定工具线索价值，但更像项目宣传，缺乏验证材料和技术细节。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容主要是项目发布信息和功能宣称，缺少实现细节、性能数据、架构说明或实际案例，方法论价值较低。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent开发",
+      "开源项目"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 open-agent-sdk，声称可替代 claude-agent-sdk，优势包括接口兼容、开源可定制、不依赖本地 CLI 进程，适合云端高并发 Agent 调用，并附 GitHub 项目链接。",
+    "tags": [
+      "Claude Code",
+      "Agent SDK",
+      "开源替代",
+      "云端部署"
+    ],
+    "title": "idoubi: 让 Claude Code 分析了一遍 claude-code-sourcemap 源码，把逻辑全部抽离出来，写了个 open-agent-sdk，用于替代 c…",
+    "totalScore": 47,
+    "url": "https://x.com/idoubicc/status/2039006326882546141"
+  },
+  "payloadHash": "sha256:b9a32cef8ece976c587fe00d79b59900f1d26088ef6cdf64926a026a01574eda",
+  "refs": {},
+  "revisionId": "sha256:fbf3593a6eb0c44aa22ecee3699682aedf2c1adad8d3107b819615fedfe88cc8",
+  "schemaVersion": 1,
+  "updatedAt": 1777902553688
+}

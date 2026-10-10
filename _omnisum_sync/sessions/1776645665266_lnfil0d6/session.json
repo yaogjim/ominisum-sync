@@ -1,0 +1,63 @@
+{
+  "createdAt": 1776645665266,
+  "entityType": "session",
+  "id": "1776645665266_lnfil0d6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "避免食用高风险隔夜熟食和海鲜类食物",
+      "如有胆道或泌尿系结石问题，尽快进行正规医疗评估"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776646471223,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 1,
+      "information_density": 4,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 3,
+      "transferability": 2
+    },
+    "classifySourceType": "社交媒体",
+    "classifyTitle": "隔夜菜与脓毒症提醒",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量低且无数据、案例或权威出处支撑，后续检索和复用价值很弱。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "部分隔夜食品可能带来更高感染风险",
+      "胆道结石和泌尿系结石拖延处理可能诱发严重感染"
+    ],
+    "oneHighValuePoint": "将隔夜高风险食物和结石拖延治疗与脓毒症风险直接关联，具备即时警醒意义。",
+    "oneLineReview": "有一定警示作用，但更像零散提醒，缺少证据与方法论支撑。",
+    "primaryCategory": "健康风险提醒",
+    "rating": "D",
+    "rejectReason": "内容过于简短，缺乏背景说明、证据支持与可验证来源，更多是个人提醒而非系统化信息。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "饮食安全",
+      "医疗常识"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章是一则健康提醒，劝告不要食用隔夜菜，尤其是隔夜卤味和花蛤，并建议尽早处理胆道结石和泌尿系结石，以免拖延发展成脓毒症进入 ICU。",
+    "tags": [
+      "隔夜菜",
+      "脓毒症",
+      "饮食卫生"
+    ],
+    "title": "x.com/ivremort_/status/2044098612305768785",
+    "totalScore": 27.5,
+    "url": "https://x.com/ivremort_/status/2044098612305768785"
+  },
+  "payloadHash": "sha256:accbec4c31717ad47c2edfc0f997499f4f5bfcacfe87e92841b09a7af252fcd2",
+  "refs": {},
+  "revisionId": "sha256:2a9eca3a712453af73f318c0b49639d0f662d6758b5121c2adf637048c6b7368",
+  "schemaVersion": 1,
+  "updatedAt": 1776647268842
+}

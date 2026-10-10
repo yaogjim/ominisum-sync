@@ -1,0 +1,71 @@
+{
+  "createdAt": 1773734223009,
+  "entityType": "session",
+  "id": "1773734223009_av3z4dm1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用“目标行为 -> 所需Harness能力”的方式重审你当前Agent系统的架构缺口。",
+      "优先检查是否具备文件系统、代码执行、沙箱隔离、验证闭环这四类基础能力。",
+      "为长任务设计上下文压缩、状态持久化和失败后续跑机制。",
+      "评估现有Harness是否过度绑定某个模型或工具调用方式，降低迁移风险。"
+    ],
+    "archiveReason": "对智能体系统设计给出了清晰定义框架，适合作为Agent工程实践的概念地图与复盘参考。",
+    "classifiedAt": 1773734241285,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "智能体Harness设计解剖",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent可被视为模型能力与外部执行系统Harness的组合，而非单纯的大模型本身。",
+      "文件系统、bash、沙箱、搜索、记忆与验证闭环构成当前Agent Harness的核心基础设施。",
+      "上下文腐化需要通过压缩、工具输出卸载和渐进式工具暴露等机制治理。",
+      "长程自主执行依赖持久状态、规划机制、验证反馈和多轮上下文续接。",
+      "Harness设计会反向影响模型训练与泛化表现，存在对特定工具逻辑的适配与过拟合现象。"
+    ],
+    "oneHighValuePoint": "最有价值的是从“期望的Agent行为”反推“Harness设计”的分析框架，可直接指导智能体系统的能力拆解与架构决策。",
+    "oneLineReview": "这是一篇框架感很强的Agent工程方法文，定义清晰、结构完整，但证据支撑偏经验性。",
+    "primaryCategory": "AI工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "智能体架构",
+      "LLM系统设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出“Agent = Model + Harness”的核心定义，系统拆解了文件系统、bash执行、沙箱、记忆、搜索、上下文压缩、规划与验证等Harness关键组件，并讨论了Harness与模型训练的协同演化及未来方向。",
+    "tags": [
+      "Agent",
+      "Harness",
+      "LLM",
+      "工具调用",
+      "上下文工程",
+      "沙箱执行"
+    ],
+    "title": "The Anatomy of an Agent Harness",
+    "totalScore": 77.5,
+    "url": "https://x.com/vtrivedy10/status/2031408954517971368"
+  },
+  "payloadHash": "sha256:0f70bdc446b650235a15d8f208f766b5767a92598d28acd7d3b92d4671556469",
+  "refs": {},
+  "revisionId": "sha256:3080ca9697e710afe1194a03076f157c9a1ab29989a63456d86ece5a39bf4fb8",
+  "schemaVersion": 1,
+  "updatedAt": 1773734492982
+}

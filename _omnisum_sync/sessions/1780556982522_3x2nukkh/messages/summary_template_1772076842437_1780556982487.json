@@ -1,0 +1,23 @@
+{
+  "createdAt": 1780556982487,
+  "entityType": "message",
+  "id": "summary_template_1772076842437_1780556982487",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 深度总结\n\n这条内容的核心建议是：\n\n> **如果你在做 CLI 工具，不仅要给人写`--help`，也要给 AI Agent 写 “帮助入口”。**\n\n具体做法：\n\n1. 在`--help`中增加**AI agents 专区**\n2. 提供一个命令，让 Agent 能加载与当前 CLI 匹配的使用技能 / 说明，例如：\n\n```bash\nharbor skills get harbor\n```\n\n3. 这些 skills 应该随 CLI 一起发布，且与版本匹配，内容包括：\n   - 常见工作流\n   - 服务使用指南\n   - 可复制的示例命令\n   - 比单纯参数文档更高层的操作模式\n\n作者认为：  \n**不要让 Agent 只靠 flag 文档猜命令，而应提供可发现、可加载、版本一致的操作知识。**\n\n---\n\n# 深入浅出解读\n\n传统 CLI 的帮助文档主要服务于人：\n\n```bash\ntool --help\n```\n\n人看完参数后，可以结合经验判断怎么用。\n\n但 AI Agent 不一样。它更需要：\n\n- 明确入口\n- 标准化说明\n- 可执行示例\n- 当前版本对应的真实用法\n- 最佳实践，而不只是参数列表\n\n所以作者建议：\n\n```bash\ntool skills list\ntool skills get xxx\ntool skills path xxx\n```\n\n这相当于给 CLI 加一个 “AI 使用说明书”。\n\n## 类比\n\n过去我们写文档是给人看的：\n\n> “这里有说明，你自己理解。”\n\n现在要给 Agent 准备：\n\n> “这是推荐流程，这是示例，这是当前版本的正确用法，照这个来。”\n\n---\n\n# 关键洞察\n\n## 1. CLI 正在从 “人机接口” 变成 “Agent 接口”\n\n未来很多 CLI 不再主要由人手动输入，而是由 AI 调用。  \n因此工具设计要考虑：\n\n- Agent 如何发现功能\n- Agent 如何避免误用\n- Agent 如何获得上下文\n- Agent 如何执行复杂流程\n\n## 2. `AGENTS.md`不应承载一切\n\n回复中提到：\n\n> AGENTS.md 只适合放必须始终存在的上下文，其他内容应按需发现。\n\n也就是说：\n\n- 固定背景：放`AGENTS.md`\n- 工具用法：通过 CLI 自身暴露\n- 复杂技能：按需加载\n\n这是一种更轻、更动态的 Agent 文档设计。\n\n## 3. “技能” 比 “参数说明” 更重要\n\n参数说明回答的是：\n\n> 这个命令有哪些选项？\n\n技能说明回答的是：\n\n> 遇到某类任务时，应该怎么完成？\n\nAgent 更需要后者。\n\n---\n\n# 辩证思考\n\n## 好处\n\n### 1. 降低 Agent 误操作\n\n版本匹配的 skills 能减少幻觉式调用，避免 Agent 编造不存在的参数。\n\n### 2. 提升自动化质量\n\nAgent 不只是 “知道命令”，而是知道 “流程”。\n\n### 3. 文档和工具绑定更紧\n\nCLI 发布时同时发布 Agent 技能，避免文档滞后。\n\n---\n\n## 风险\n\n### 1. 维护成本增加\n\n开发者不仅要维护代码和人类文档，还要维护 Agent 文档。\n\n### 2. 可能形成新的碎片化标准\n\n如果每个 CLI 都自定义一套`skills`格式，Agent 仍然难以通用理解。\n\n### 3. Agent 依赖增强\n\n工具越为 Agent 优化，人类用户体验可能被边缘化，需要平衡。\n\n---\n\n# 我的判断\n\n这是一个很重要的趋势：\n\n> **未来优秀的 CLI，不只是给人好用，也要给 Agent 好用。**\n\n但关键不在于一定要叫`skills`，而在于形成三点共识：\n\n1. **可发现**：Agent 能知道哪里有帮助  \n2. **可执行**：文档包含真实示例和工作流  \n3. **可版本化**：说明与当前 CLI 版本一致  \n\n一句话总结：\n\n> **给 CLI 加 Agent 帮助，不是锦上添花，而是在 Agent 时代让工具可被正确使用的基础设施。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "解读",
+    "timestamp": 1780556982487,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:cd67d0836a5bb7230b22c53988184c29d27c662bcf70956c1347f24050308aa0",
+  "refs": {
+    "sessionId": "1780556982522_3x2nukkh"
+  },
+  "revisionId": "sha256:468f69a47dff6cf4f6731f0d113408f6a56b19bf317d680070c3722901d98027",
+  "schemaVersion": 1,
+  "updatedAt": 1780556982487
+}

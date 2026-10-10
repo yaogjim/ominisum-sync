@@ -1,0 +1,15 @@
+{
+  "createdAt": 1775558880148,
+  "entityType": "session-content",
+  "id": "1775558880148_thoodbkz",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Leo Xiang</strong></header><div class=\"tw-body\">大家有在生产环境中使用 pi-mono 来替换 claude agent sdk 的么？  claude agent sdk 做大规模部署挑战蛮多：<br><br>1、可观测；<br>2、大规模部署（每个进程部署一个沙箱，本地开发和云端部署环境不完全一致）；<br>3、以及冷启动问题。<br><br>在考虑对线上的项目做这个替换。</div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Wh1isper</strong> <span class=\"tw-eng\">♥ 8 · 💬 2</span><p>我写过两个博客说这个，我觉得Agent in VM的路线成本太高了，而人们又需要一个本地的Agent来调试开发。我的结论是我们需要抽象Filesystem和Shell，然后在上面构建agent和封装，这样能解决2和3的问题，1的话我认为不是特别困难，任何方案都可以做到<br><br><br>https://<br>blog.wh1isper.top/2026/02/17/202<br>6-02-17-architecture-of-cloud-agent/<br>…</p></div><div class=\"tw-reply\"><strong>@Leo Xiang</strong> <span class=\"tw-eng\">♥ 5 · 💬 0</span><p>ai sdk 离coding  sdk 还有一定的距离。</p></div><div class=\"tw-reply\"><strong>@流明</strong> <span class=\"tw-eng\">♥ 5 · 💬 0</span><p>以我折腾pi的经验，感觉pi离生产还是挺远的<br>pi 实现的太精简了，原生的几个tool是远远不够的<br>要做到生产可用还要实现非常多的工具和与之相配套的约束及很多边缘状况处理<br>就好比一个 Linux Kernel ，只有基本功能，要生产可用，还是得搞成一个发行版，大概是这个逻辑<br><br>虽然没在生产环境中部署过pi</p></div><div class=\"tw-reply\"><strong>@Gangsta</strong> <span class=\"tw-eng\">♥ 0 · 💬 2</span><p>pi比ai sdk好在哪里啊</p></div><div class=\"tw-reply\"><strong>@青雲</strong> <span class=\"tw-eng\">♥ 4 · 💬 0</span><p>可以试试，session-first 设计</p></div></div>",
+    "pageContent": "Leo Xiang: 大家有在生产环境中使用 pi-mono 来替换 claude agent sdk 的么？ claude agent sdk 做大规模部署挑战蛮多： 1、可观测；\n2、大规模部署（每个进程部署一个沙箱，本地开发和云端部署环境不完全一致）；\n3、以及冷启动问题。 在考虑对线上的项目做这个替换。\n---\n热门回复 (共 5 条):\n@Wh1isper (♥ 8 · 💬 2):\n我写过两个博客说这个，我觉得Agent in VM的路线成本太高了，而人们又需要一个本地的Agent来调试开发。我的结论是我们需要抽象Filesystem和Shell，然后在上面构建agent和封装，这样能解决2和3的问题，1的话我认为不是特别困难，任何方案都可以做到\n\n\nhttps://\nblog.wh1isper.top/2026/02/17/202\n6-02-17-architecture-of-cloud-agent/\n…\n\n@Leo Xiang (♥ 5 · 💬 0):\nai sdk 离coding  sdk 还有一定的距离。\n\n@流明 (♥ 5 · 💬 0):\n以我折腾pi的经验，感觉pi离生产还是挺远的\npi 实现的太精简了，原生的几个tool是远远不够的\n要做到生产可用还要实现非常多的工具和与之相配套的约束及很多边缘状况处理\n就好比一个 Linux Kernel ，只有基本功能，要生产可用，还是得搞成一个发行版，大概是这个逻辑\n\n虽然没在生产环境中部署过pi\n\n@Gangsta (♥ 0 · 💬 2):\npi比ai sdk好在哪里啊\n\n@青雲 (♥ 4 · 💬 0):\n可以试试，session-first 设计\n"
+  },
+  "payloadHash": "sha256:6193a83a02a92e14568bb6802ad4d2adf2427662b4470fc15899f6fec817a4b6",
+  "refs": {},
+  "revisionId": "sha256:83eb2c019b7325b8fd54ec5a97fd6041b68378fbef66bc19df3d85c18b6726bd",
+  "schemaVersion": 1,
+  "updatedAt": 1775606664162
+}

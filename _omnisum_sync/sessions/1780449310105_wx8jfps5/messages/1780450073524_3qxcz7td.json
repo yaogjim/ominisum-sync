@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780450073525,
+  "entityType": "message",
+  "id": "1780450073524_3qxcz7td",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Crabbox远程测试控制平面\n\n**评级**: B (61分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 软件工程工具\n**次类别**: 远程测试, 云端开发环境\n**标签**: #Crabbox #远程执行 #测试自动化 #云资源 #AI Agent\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 信息量较高的工具型文档，适合评估远程测试与 AI Agent 执行环境方案，但缺少实测案例和效果证据。\n**核心高价值点**: 将控制面与数据面分离：broker 管理租赁、成本和状态，CLI 直接通过 SSH/rsync 与 runner 执行同步和命令。\n\n### 摘要\n文章是 Crabbox 项目 README，介绍其通过 CLI、Cloudflare Worker broker 和远程 runner 实现云端租赁机器、同步本地改动、远程运行测试、日志观测、成本控制和多云 provider 支持等能力。\n\n### 知识要点\n- Crabbox 支持本地 dirty checkout 同步到远程 runner，并运行测试或命令。\n- 架构由 Go CLI、Cloudflare Worker broker、云端或委托 runner 三部分组成。\n- 支持 AWS、Azure、GCP、Hetzner、Proxmox、静态 SSH、本地容器等多种执行环境。\n- 提供 warmup、prewarm、job、actions hydrate、capsule、checkpoint、pond、日志与事件观测等功能。\n- 通过租赁上限、月度预算、provider fallback 和 usage 统计实现云资源成本管控。\n\n### 行动项\n- 如需要远程测试加速，可安装 crabbox 并尝试 crabbox run -- pnpm test。\n- 评估团队是否需要自建 Cloudflare Worker broker 来统一管理云 provider 凭据和预算。\n- 对比 Crabbox 与现有 CI、devcontainer、远程开发环境或 AI Agent sandbox 方案的适配成本。\n- 查看 How Crabbox Works、Providers、Configuration 和 Security 文档以判断生产可用性。\n\n### 存档判定\n归档: 是 — 原因: 提供了一个面向维护者和AI Agent的远程测试执行工具概览，包含架构、功能、配置和 provider 支持信息，可作为工具选型参考。\n删除: 否\n留存决策: 短期参考后可按需保留",
+    "role": "assistant",
+    "timestamp": 1780450073525,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:92fbc1c505a1a1e879395d347291b6d34699e2dde7f3bf20985c3a11e6b92bc5",
+  "refs": {
+    "sessionId": "1780449310105_wx8jfps5"
+  },
+  "revisionId": "sha256:b663588f315e24b2463faad98b954cb742b33d543cb6eb5ab7cafa7f70f2f003",
+  "schemaVersion": 1,
+  "updatedAt": 1780450073525
+}

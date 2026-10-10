@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774575500850,
+  "entityType": "session",
+  "id": "1774575500850_303440je",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你关注隐私或技术治理，可继续追踪FISA 702改革与数据经纪商监管进展",
+      "将本文作为“商业数据+政府采购+AI监控”交叉议题的案例，补充阅读法律原文与判例"
+    ],
+    "archiveReason": "文章梳理了美国政府购买商业数据规避搜查令的争议，并连接到FISA改革与AI监控扩张，适合作为隐私治理案例留存。",
+    "classifiedAt": 1774584773523,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 7,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 5,
+      "transferability": 6
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "政府采购数据监控漏洞",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.npr.org",
+    "favicon": "https://media.npr.org/chrome/favicon/favicon-32x32.png",
+    "knowledgePoints": [
+      "美国部分政府机构可通过数据经纪商购买位置等商业数据，规避直接批量采集的法律限制",
+      "FISA 702续期被隐私倡导者视为关闭“data broker loophole”的关键立法窗口",
+      "AI能将原本碎片化的商业数据自动拼接成个人生活全景，显著提高监控规模与效率"
+    ],
+    "oneHighValuePoint": "最有价值的是明确指出政府可通过“购买数据”绕开原本受第四修正案限制的搜查令要求，这一制度漏洞在AI时代会被进一步放大。",
+    "oneLineReview": "一篇时效性强、证据尚可但方法论偏弱的隐私政策新闻分析。",
+    "primaryCategory": "数据隐私与数字监控",
+    "rating": "C",
+    "rejectReason": "缺少系统方法论和直接可执行建议，更多是新闻性梳理而非深度研究。",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "公共政策与法律",
+      "人工智能治理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章报道美国政府机构通过向数据经纪商购买位置等商业数据，在无搜查令情况下扩大对公民的监控，并指出FISA 702续期可能成为堵住该漏洞的关键窗口，同时强调AI会放大这类数据的监控能力。",
+    "tags": [
+      "数据经纪商",
+      "政府监控",
+      "FISA 702",
+      "第四修正案",
+      "AI隐私风险"
+    ],
+    "title": "Your data is everywhere. The government is buying it up : NPR",
+    "totalScore": 51.5,
+    "url": "https://www.npr.org/2026/03/25/nx-s1-5752369/ice-surveillance-data-brokers-congress-anthropic"
+  },
+  "payloadHash": "sha256:87fdf850164f3adc2076525834eb8cc14cef57d373ce3b52597a041a432123ad",
+  "refs": {},
+  "revisionId": "sha256:70e2b2b8e2999f6e5f8b6bae38233304456dc13dc730876fec7674f54c74f867",
+  "schemaVersion": 1,
+  "updatedAt": 1774584773526
+}

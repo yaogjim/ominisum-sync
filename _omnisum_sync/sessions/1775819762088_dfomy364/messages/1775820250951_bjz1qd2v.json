@@ -1,0 +1,19 @@
+{
+  "createdAt": 1775820250952,
+  "entityType": "message",
+  "id": "1775820250951_bjz1qd2v",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude Code入门技巧清单\n\n**评级**: C (45分)  |  **深度阅读**: 否  |  **建议操作**: 浏览\n\n**主类别**: AI编程工具使用\n**次类别**: 开发效率, Claude Code入门\n**标签**: #Claude Code #命令行技巧 #开发工作流\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 有一些新手可直接上手的小技巧，但整体偏零散，推广性内容过多，长期参考价值有限。\n**核心高价值点**: 直接使用 `claude -c`、`/clear`、`/compact` 和 `!命令` 这类操作能明显降低上下文管理和工具切换成本。\n\n### 摘要\n文章介绍了Claude Code的几种启动方式、会话恢复、上下文清理、在会话内执行命令等入门技巧，并延伸推荐语音输入、多实例终端和窗口切换工具以提升协作效率。\n\n### 知识要点\n- Claude Code支持通过 `claude -c`、`claude -n`、`claude -r` 等方式快速恢复或命名会话\n- 会话中可用 `!命令` 执行终端命令，并用 `/clear`、`/compact` 管理上下文\n\n### 行动项\n- 把 `claude -c`、`/clear`、`/compact`、`!npm run lint` 加入个人Claude Code操作清单\n- 如果经常并行跑多个Agent，可评估分屏终端和语音输入工具是否真能提升效率\n\n### 存档判定\n归档: 否\n不推荐: 内容偏经验分享和工具推荐，广告与主观表述较多，方法论和证据支撑较弱。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1775820250952,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:d1c288dba0975a97741c30277afa55356ab85b4e6260ae7025f683353ff32d87",
+  "refs": {
+    "sessionId": "1775819762088_dfomy364"
+  },
+  "revisionId": "sha256:3acfba3a288485afdb3d54d46b09db36cfaa2120f9bfd4d2ccb320b50179438b",
+  "schemaVersion": 1,
+  "updatedAt": 1775820250952
+}

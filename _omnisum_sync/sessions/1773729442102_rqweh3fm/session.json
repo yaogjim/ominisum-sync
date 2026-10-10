@@ -1,0 +1,67 @@
+{
+  "createdAt": 1773729442102,
+  "entityType": "session",
+  "id": "1773729442102_rqweh3fm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在做多模态应用，可进一步查阅原始开发指南获取具体 API 调用方式",
+      "评估是否将搜索增强与参考图机制纳入自己的图像生成工作流"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773729462155,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Gemini图像API开发指南简介",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Gemini Interactions API 可围绕图像生成构建多步工作流",
+      "网页搜索可用于为生成内容注入真实地标事实",
+      "图像搜索与参考图可提升视觉准确性和人物合成效果"
+    ],
+    "oneHighValuePoint": "将图像生成与网页搜索、图像搜索、参考图组合，体现了多模态工作流比单纯文生图更实用。",
+    "oneLineReview": "有一定工具线索价值，但更像产品宣传入口，不足以单独支撑深入学习。",
+    "primaryCategory": "AI应用开发",
+    "rating": "C",
+    "rejectReason": "内容本质上是对开发指南的简短宣传，信息量有限，缺少方法细节、性能对比与实际案例验证。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "图像生成",
+      "开发者工具",
+      "多模态API"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一条介绍 Nano Banana 2 与 Gemini Interactions API 开发指南的推文，提到四类用例：文生图、结合网页搜索做事实锚定、图像搜索提升视觉准确性、基于参考图进行人物合成。整体偏产品展示，细节不足。",
+    "tags": [
+      "Gemini API",
+      "图像生成",
+      "开发指南",
+      "Nano Banana 2",
+      "多模态"
+    ],
+    "title": "x.com/_philschmid/status/2033573455761662039",
+    "totalScore": 41,
+    "url": "https://x.com/_philschmid/status/2033573455761662039"
+  },
+  "payloadHash": "sha256:66575c7c845de56166d1e7c4feb069a99e70b74230ffe2bca97d3fb03f413ced",
+  "refs": {},
+  "revisionId": "sha256:2ae76eff121333e69c1dcce6912d69cec21df622cf27fd8ff14bb98f5346e28b",
+  "schemaVersion": 1,
+  "updatedAt": 1773729967235
+}

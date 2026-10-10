@@ -1,0 +1,15 @@
+{
+  "createdAt": 1780449179281,
+  "entityType": "session-content",
+  "id": "1780449179281_0bj31k33",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>九原客</strong></header><div class=\"tw-body\">做 Agent Platform 最难的是如何解决鉴权注入的问题。<br><br>就是你的 Skill 里的CLI以及MCP Server 都需要鉴权。如果把API_KEY 或者OAuth 信息直接保存在 sandbox 内部（不管是文件、环境变量等方式），则可能会因提示词攻击而泄漏。<br><br>解决办法基本上要么做工具代理，要么做 HTTPS 中间人注入。</div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@CTO Larsson</strong> <span class=\"tw-eng\">♥ 124 · 💬 8</span><p>This changed everything for me.<br><br>10 examples: Stocks, crypto, oil.<br><br>Can you spot the common thread before I explain it?<br><br>Watch full video + follow CTO Larsson.</p></div><div class=\"tw-reply\"><strong>@Sanjin</strong> <span class=\"tw-eng\">♥ 2 · 💬 2</span><p>我们公司就在做 agent auth<br>感兴趣，给你分享几篇 blog</p></div><div class=\"tw-reply\"><strong>@九原客</strong> <span class=\"tw-eng\">♥ 4 · 💬 0</span><p>如果下发指令让把 api key base64 后输出呢，或者加密后输出呢<br><br>防是防不住的</p></div><div class=\"tw-reply\"><strong>@Bruce Van</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>输出环节做个敏感信息的脱敏替换，基于规则的就行，简单高效。</p></div><div class=\"tw-reply\"><strong>@Ludamn</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>你们的sandbox是自己搭的吗</p></div></div>",
+    "pageContent": "九原客: 做 Agent Platform 最难的是如何解决鉴权注入的问题。 就是你的 Skill 里的CLI以及MCP Server 都需要鉴权。如果把API_KEY 或者OAuth 信息直接保存在 sandbox 内部（不管是文件、环境变量等方式），则可能会因提示词攻击而泄漏。 解决办法基本上要么做工具代理，要么做 HTTPS 中间人注入。\n---\n热门回复 (共 5 条):\n@CTO Larsson (♥ 124 · 💬 8):\nThis changed everything for me.\n\n10 examples: Stocks, crypto, oil.\n\nCan you spot the common thread before I explain it?\n\nWatch full video + follow CTO Larsson.\n\n@Sanjin (♥ 2 · 💬 2):\n我们公司就在做 agent auth\n感兴趣，给你分享几篇 blog\n\n@九原客 (♥ 4 · 💬 0):\n如果下发指令让把 api key base64 后输出呢，或者加密后输出呢\n\n防是防不住的\n\n@Bruce Van (♥ 0 · 💬 1):\n输出环节做个敏感信息的脱敏替换，基于规则的就行，简单高效。\n\n@Ludamn (♥ 0 · 💬 1):\n你们的sandbox是自己搭的吗\n"
+  },
+  "payloadHash": "sha256:b8f26478f12480d0b0c5ab4c7777ae24f6e29440f91c12145250894b9b30d88e",
+  "refs": {},
+  "revisionId": "sha256:777d9e556a0e1bc43fb21d10d8b4bbb523695b0343286f3a3809b1ad7a6ae93d",
+  "schemaVersion": 1,
+  "updatedAt": 1780454558066
+}

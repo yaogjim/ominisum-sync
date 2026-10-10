@@ -1,0 +1,70 @@
+{
+  "createdAt": 1780558123409,
+  "entityType": "session",
+  "id": "1780558123409_h5n3y6w1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文章顺序选择3-5个基础项目先做：BPE分词器、单头注意力、多头注意力、迷你Transformer、KV缓存。",
+      "为每个项目记录损失曲线、延迟曲线、注意力热力图或失败案例，而不是只完成代码实现。",
+      "将该路线图拆成12周学习计划，并根据自身目标优先选择训练、推理部署、RAG或评估方向。",
+      "对文中提到的关键论文和系统单独查找原始资料，补足文章缺少的证据和实现细节。"
+    ],
+    "archiveReason": "覆盖了从分词、注意力、训练、推理、量化、服务到评估安全的完整LLM工程项目路径，可作为学习路线索引",
+    "classifiedAt": 1780558644169,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "LLM工程项目路线图",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "LLM工程应按底层组件到系统能力逐步学习：分词器、嵌入、位置编码、注意力、Transformer块、训练目标、解码和KV缓存。",
+      "推理效率不仅取决于模型结构，还受KV缓存、MQA/GQA/MLA、FlashAttention、量化、显存带宽和服务框架影响。",
+      "长上下文、MoE、RAG、智能体、多模态、评估和安全都应被视为完整系统的一部分，而不是孤立概念。",
+      "每个学习项目都应产出代码、实验笔记、图表、失败案例和简短技术说明，以形成可复现知识资产。"
+    ],
+    "oneHighValuePoint": "反复强调“构建、绘制、破坏、解释、发布工件”的项目循环，这是比单纯阅读概念更有效的LLM工程学习方法。",
+    "oneLineReview": "覆盖面很广、行动导向明确，但深度和证据不足，更适合作为学习路线索引而非技术教程。",
+    "primaryCategory": "人工智能/LLM工程",
+    "rating": "B",
+    "rejectReason": "内容偏路线图和概念清单，细节、代码、实验数据和引用证据不足，且疑似AI生成或机器翻译痕迹较重",
+    "retentionDecision": "短期参考后可归档，适合作为LLM工程学习项目清单，不必逐字精读",
+    "secondaryCategories": [
+      "机器学习工程",
+      "学习路线",
+      "模型训练与部署"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出一套项目制LLM工程学习路线，按分词、嵌入、位置编码、注意力、训练、推理、长上下文、MoE、数据、后训练、量化、服务、评估、安全等模块逐步构建完整小型LLM系统。",
+    "tags": [
+      "LLM",
+      "Transformer",
+      "项目制学习",
+      "推理部署",
+      "评估与安全"
+    ],
+    "title": "循序渐进的 LLM 工程项目 (2026 年版)",
+    "totalScore": 68.5,
+    "url": "https://x.com/TheAhmadOsman/status/2058745340895870985"
+  },
+  "payloadHash": "sha256:56b3d49112f474b9738c1bcd0375ddb5c30592f07f6837dab527d8bb65f677e8",
+  "refs": {},
+  "revisionId": "sha256:716344930111509682a6c3ff69d7d13be2eb5ad21a3457659f21d33b462ddffc",
+  "schemaVersion": 1,
+  "updatedAt": 1780560288623
+}

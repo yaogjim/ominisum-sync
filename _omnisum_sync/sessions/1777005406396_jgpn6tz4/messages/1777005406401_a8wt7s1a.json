@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777005174647,
+  "entityType": "message",
+  "id": "1777005406401_a8wt7s1a",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Autoresearch 是什么\n\nAutoresearch 是一个“从需求到上线尽量自动化”的软件开发工具。  \n它以 GitHub Issue 作为起点，调用多个 AI Agent 协同工作，完成写代码、审查、修复、提 PR、合并和关闭 Issue 的完整闭环。\n\n## 核心机制\n\n它的关键做法不是只靠一个模型写代码，而是让多个 Agent 轮流接力：\n- 一个负责生成代码\n- 另一个负责交叉审核\n- 发现问题后继续迭代修复\n- 达到评分标准后自动提交 PR 并完成合并\n\n本质上，它是在模拟一个“小型自动化研发团队”。\n\n## 主要特点\n\n### 1. 用 Issue 驱动开发\n开发流程直接从 GitHub Issue 启动，比较贴近真实团队的任务管理方式，便于接入现有研发流程。\n\n### 2. 多 Agent 协作\nClaude、Codex、OpenCode 等多个 Agent 分工协作、相互审核，不是单点生成，而是通过轮转提高结果质量。\n\n### 3. 支持多语言\n不局限于某一种技术栈，Go、Python、Rust、Java 等都可以使用，适用面比较广。\n\n### 4. 可配置、可续跑\n可以在 `.autoresearch/` 中自定义 Agent 指令和规则；如果执行中断，还能继续接着跑，提升了工程可用性。\n\n## 这件事为什么值得关注\n\n它代表的不是“AI 辅助写代码”，而是更进一步的“AI 自动推进研发流程”。  \n真正的价值不只在生成代码，而在于能否同时处理好上下文理解、代码审查、问题修复和回归质量控制。\n\n## 一句话总结\n\nAutoresearch 想做的是：  \n**把 GitHub Issue 直接变成自动化研发流水线，让多个 AI Agent 互相制衡、持续迭代，最终完成可合并的代码交付。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777005174647,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bdaa24344139fc51f02689b76c94fcfe8268c6b568d1ed4dc99197e660198018",
+  "refs": {
+    "sessionId": "1777005406396_jgpn6tz4"
+  },
+  "revisionId": "sha256:c142bbc6c86eb965cd579d964280d69fccde704b96eaa713512368e327da0266",
+  "schemaVersion": 1,
+  "updatedAt": 1777005174647
+}

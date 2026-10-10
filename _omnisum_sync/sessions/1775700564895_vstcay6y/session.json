@@ -1,0 +1,79 @@
+{
+  "createdAt": 1775700564895,
+  "entityType": "session",
+  "id": "1775700564895_vstcay6y",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "基于 Obsidian 或本地 Markdown 仓库搭建一个最小可用的 LLM Wiki 原型，先创建 raw、entities、concepts、index.md 和 log.md。",
+      "为自己的知识领域编写一份 SCHEMA.md，明确标签体系、页面创建阈值、交叉引用规则和更新策略。",
+      "选择 5-10 篇高价值文章做手动或半自动导入，验证 LLM 是否能稳定生成可维护的 wiki 页面。",
+      "增加 lint 检查流程，定期发现孤立页面、失效链接、过时内容和标签污染问题。",
+      "评估是否需要引入本地搜索工具或 Agent skill，将该模式从个人试验扩展到持续使用的研究工作流。"
+    ],
+    "archiveReason": "提供了可复用的知识库架构、操作流程与实现模板，适合后续搭建个人或团队知识系统时反复参考。",
+    "classifiedAt": 1775820446572,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "LLM Wiki知识管理模式评估",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "LLM Wiki 的核心差异是让 LLM 在原始资料与查询之间维护一个持久、互联、可更新的 Wiki 层。",
+      "三层架构包括 raw sources、wiki pages 和 schema/config，分别负责事实源、知识编译结果与维护规则。",
+      "核心操作流程包括 ingest、query、lint，强调每次导入都更新索引、日志、交叉引用和冲突标记。",
+      "通过 index.md 和 log.md 可以在中小规模场景下替代复杂 RAG 基础设施，保持可导航与可追踪性。",
+      "Hermes Agent 的 skill 文档把该模式进一步工程化，给出了目录模板、页面阈值、标签体系与巡检规则。"
+    ],
+    "oneHighValuePoint": "最有价值的是把知识管理从“人工打标签和整理”转成“LLM 持续维护结构化 Wiki”，实现知识的累积式编译而非每次从原始资料重新检索。",
+    "oneLineReview": "这是一个方法论价值很高的知识管理范式说明，工程证据一般，但框架清晰且极具启发性。",
+    "primaryCategory": "AI辅助知识管理",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "个人知识库",
+      "研究工作流",
+      "LLM应用方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/dotey/status/2041509264221483449",
+      "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+      "https://github.com/NousResearch/hermes-agent/blob/main/skills/research/llm-wiki/SKILL.md"
+    ],
+    "summaryBrief": "文章围绕 Karpathy 提出的 LLM Wiki 模式，阐述了用 LLM 将原始资料持续编译为结构化、互联的 Markdown Wiki，而非传统 RAG 的临时检索式回答，并给出了面向 Obsidian/Hermes Agent 的目录结构、导入、查询、巡检和维护规范。",
+    "tags": [
+      "LLM Wiki",
+      "知识管理",
+      "Obsidian",
+      "Agent工作流",
+      "Markdown知识库"
+    ],
+    "title": "LLMWiki重塑知识管理方式",
+    "totalScore": 76.5,
+    "url": "omnisun://digest/1775700564895"
+  },
+  "payloadHash": "sha256:be69b9c42b0f94d3e6e77096cc5574910bbbb7ec4dee1f1d9fe07c532f59600d",
+  "refs": {},
+  "revisionId": "sha256:58e624c02343280de2e7d77b2af9bea68d61b5e549397001858659e260f9c35d",
+  "schemaVersion": 1,
+  "updatedAt": 1775820446577
+}

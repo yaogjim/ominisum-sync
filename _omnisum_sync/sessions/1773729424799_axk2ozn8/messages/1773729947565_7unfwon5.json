@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773729673735,
+  "entityType": "message",
+  "id": "1773729947565_7unfwon5",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章主要介绍了开源项目 FxEmbed：它能改善 Twitter/X 和 Bluesky 链接在 Discord、Telegram 等平台上的预览效果。核心价值是“改一下链接就能更完整地展示内容”，同时还提供 API、翻译、媒体提取等实用功能。\n\n- 背景与作用\n  - FxEmbed 解决的是社交平台链接“预览太差”的问题，尤其是 X（原 Twitter）和 Bluesky 的内容在 Discord、Telegram 中经常显示不完整。\n  - 它可以让链接正常展示更多内容，比如视频、GIF、投票结果、引用推文和多图。\n\n- 使用方式\n  - 用法很简单：\n    - 在 `x.com` 前加 `fx`\n    - 在 `http://x.com/` 前加 `fixup`\n    - 在 `http://bsky.app` 前加 `fx`\n  - 这样处理后，链接预览会更完整、更适合在聊天工具里传播。\n\n- API 与数据获取\n  - 如果想拿到原始 API JSON 数据，可以把 X 链接的域名改成 `api.fxtwitter.com`。\n  - 它不仅支持普通帖子，也支持长文内容。\n  - 文中给了例子：\n    - `https://api.fxtwitter.com/dotey/status/2029969547927658673`\n    - 引用案例还提到，可通过这个接口抓取推特长文：\n      - `https://api.fxtwitter.com/levie/status/2030714592238956960`\n\n- 亮点功能\n  - 支持帖子翻译：在链接末尾加 `/en` 等语言代码即可。\n  - 支持直接获取媒体文件链接，方便下载或二次处理。\n  - 支持多图拼接的 `mosaic` 模式。\n  - 提供纯图模式、纯文字模式。\n  - 对 Telegram 还支持 `Instant View` 线程展开。\n  - 会自动去除追踪参数，链接更干净。\n\n- 技术实现\n  - 项目使用 TypeScript 编写，运行在 Cloudflare Worker 上，属于边缘计算架构。\n  - 免费额度为每天 `10 万次请求`，说明它在成本和可用性之间做了较好平衡。\n\n- 隐私与开源\n  - 隐私设计是一个重点：`没有日志、没有数据库、没有广告和追踪`。\n  - Worker 执行完成后会释放内存，尽量做到“不留痕迹”。\n  - 项目采用 `MIT` 协议开源，用户也可以自己部署。  \n\n一句话看，FxEmbed 不只是“优化链接预览”的小工具，更像是一个兼顾展示效果、数据访问、隐私和可自部署能力的轻量基础设施。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773729673735,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d49a34839da02dd25008765410d75f9d1e25f5224fc031b0009609fdb851dcf0",
+  "refs": {
+    "sessionId": "1773729424799_axk2ozn8"
+  },
+  "revisionId": "sha256:9c06279768682750a714d481c9d94e63fd98258024527bafbfc98e423ddf3cff",
+  "schemaVersion": 1,
+  "updatedAt": 1773729673735
+}

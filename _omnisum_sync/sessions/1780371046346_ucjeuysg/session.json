@@ -1,0 +1,66 @@
+{
+  "createdAt": 1780371046346,
+  "entityType": "session",
+  "id": "1780371046346_ucjeuysg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将该提示词改写为适合自己学习编程、产品或业务问题的教学模板。",
+      "在使用 AI 学习复杂主题时，要求其维护一份理解清单并逐项测验。",
+      "补充实际案例和评分标准，以提升该提示词的可复用性。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780371668588,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 1,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 7
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "互动式教学测验提示词",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "gist.github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "渐进式教学应在每个阶段确认学习者已掌握当前内容，而不是最后统一检查。",
+      "理解检查应覆盖问题背景、解决方案、设计决策、边界情况和更广泛影响。",
+      "通过开放题、选择题、代码阅读或调试等方式验证学习效果。"
+    ],
+    "oneHighValuePoint": "要求学习者先复述理解，再由 AI 填补知识缺口，并在进入下一阶段前验证掌握程度。",
+    "oneLineReview": "可作为教学型 AI Prompt 的参考模板，但内容较短且缺乏实证支撑。",
+    "primaryCategory": "AI提示词",
+    "rating": "C",
+    "rejectReason": "内容只是一个简短提示词，缺少案例、效果验证和具体适配说明，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "学习方法",
+      "教学设计"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提供了一段用于引导 AI 充当高效教师的提示词，强调分阶段教学、持续维护理解清单、让学习者复述、追问原因，并通过开放题或选择题验证掌握情况。",
+    "tags": [
+      "Prompt",
+      "主动测验",
+      "渐进式学习",
+      "理解检查"
+    ],
+    "title": "Learn Quiz",
+    "totalScore": 52.5,
+    "url": "https://gist.github.com/ThariqS/1389dcdff9eba4789887a2211370f06b"
+  },
+  "payloadHash": "sha256:b6ee1ecbdcc481e58ba51b2bd52aa4f9d3222cd131a3917991e8c11953152c1e",
+  "refs": {},
+  "revisionId": "sha256:09b95a9d4d180ca689ec47b413f184a96df5ec2284efeaa48fad04155f712da4",
+  "schemaVersion": 1,
+  "updatedAt": 1780371668799
+}

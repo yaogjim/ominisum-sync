@@ -1,0 +1,23 @@
+{
+  "createdAt": 1775703032168,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1775703032168",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Anthropic 新 Harness 的核心意思：把 Agent 做成 “微型操作系统”\n\n## 一、核心判断：不要把今天的模型缺陷写成永久架构\n\n这篇文章表面在讲 Anthropic 的新产品，实质在回答一个更重要的问题：\n\n**当模型能力不断提升时，Agent 系统里哪些东西应该是稳定的，哪些东西应该允许持续重写？**\n\n作者的判断是：  \n**未来的 Agent 基础设施，会越来越像一个 “Agent OS（微型操作系统）”。**\n\n也就是说，系统不应该围绕 “当前模型不够强” 来设计，而应该围绕**长期稳定的抽象接口**来设计。\n\n---\n\n## 二、Anthropic 的方法：不固定 Harness 形态，只固定接口\n\nAnthropic 没有把某一种具体的 harness 设计当成最终答案，而是做了一个更上层的**meta-harness**。\n\n它只定义三类长期稳定的接口：\n\n- **Session**：可恢复的事件日志 / 持久状态\n- **Harness**：推理与调度循环 / “脑干”\n- **Sandbox**：执行环境与工具 / “手脚”\n\n这三者分离，是整个架构最关键的创新。\n\n---\n\n## 三、三个关键抽象分别意味着什么\n\n### 1. Session：不是聊天记录，而是 “执行事实流”\n\nAnthropic 强调，**session 不是模型上下文窗口的镜像**。\n\n它更像一个**append-only event log**，也就是：\n\n- 可查询\n- 可回放\n- 可恢复\n- 可重组\n\n这意味着，会话历史不再只是 prompt 的一部分，而是系统层面的真实执行记录。  \n好处是：**即使上下文被裁剪，历史事实也不会丢失。**\n\n### 2. Harness：不持有状态的编排层\n\nAnthropic 把 harness 从原来的容器里拆出来，变成一个更轻、更通用的 orchestration layer。\n\n新的 harness 特点是：\n\n- **不保存状态**\n- **不绑定具体工具位置**\n- 只暴露统一接口：`execute (name, input) -> string`\n\n这背后的思想是：  \n**AI 不需要知道自己运行在哪，只需要知道自己 “能调用哪些能力”。**\n\n### 3. Sandbox：只是具体执行能力，不再和大脑绑定\n\n在这个架构里：\n\n- **Claude + harness = brain**\n- **sandbox /tools/ MCP /custom infra = hands**\n\n一旦 brain 和 hands 解耦，就能实现：\n\n- 不同执行环境独立存在\n- 不同 session 之间共享能力\n- 按需加载 sandbox，而不是每次都预启动完整环境\n\n这就是 Anthropic 提到的**“many brains, many hands”**的基础。\n\n---\n\n## 四、为什么这套设计重要\n\n### 1. 更容易恢复和扩展\n\nAnthropic 借鉴了分布式系统的经典原则：\n\n**不要执着保住某个进程，要保住可恢复的事实记录和重启协议。**\n\n这样即使 harness 崩溃、容器挂掉，也能基于 session 恢复执行。\n\n### 2. 更安全\n\nAnthropic 的一个重要观点是：\n\n**安全不能建立在 “模型暂时还不够聪明” 这个假设上。**\n\n所以他们不把敏感凭证直接暴露给模型，例如 Git token 不放在 sandbox 里，而是通过 proxy + vault 受控调用。\n\n本质上是：  \n**不要赌模型想不到攻击路径。**\n\n### 3. 性能更好\n\n新架构把 “脑” 先启动，把 “手” 按需 provision，避免每次请求都预付完整执行环境成本。\n\n结果是：\n\n- **p50 TTFT 下降约 60%**\n- **p95 TTFT 下降超过 90%**\n\n这说明过去的主要瓶颈，很多时候不是模型推理，而是**请求入口处过早耦合了执行环境**。\n\n---\n\n## 五、这背后的产品哲学\n\n这篇文章真正传递的，不只是一个工程方案，而是一种产品哲学：\n\n**不相信今天的 Agent Harness 会是最终形态，所以优先投资稳定接口，而不是一次性最优实现。**\n\n换句话说，Anthropic 在赌的是：\n\n- 模型能力会持续提升\n- 今天很多 “补丁式框架设计” 未来都会过时\n- 真正值得沉淀的是系统抽象，而不是某种固定工作流\n\n---\n\n## 六、对 Agent 设计的三点启发\n\n### 1. 会话不是消息列表，而是执行事实流\n不要把 session 只理解成聊天记录，应把它设计成可恢复、可检索、可回放的历史系统。\n\n### 2. 工具环境不要内化进 Agent 本体\n执行环境应是外部能力，而不是 Agent 身份的一部分，这样才有扩展性和可替换性。\n\n### 3. 上下文工程要保持可替换\n今天的检索、裁剪、摘要策略，都不该被写死成永久架构，否则模型一变强就会形成技术债。\n\n---\n\n## 七、一句话总结\n\nAnthropic 这篇文章最值得关注的，不是某个具体产品功能，而是它释放出的信号：\n\n**未来 Agent 的核心，不是把流程写死，而是建立一套长期稳定的系统抽象，让 “脑、记忆、手” 彼此解耦，并随模型能力演进持续重组。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1775703032168,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:438e652ddd43b2afac0f9f461f4b3056ed1a561557df952aa54f476cb3e3629f",
+  "refs": {
+    "sessionId": "1775703032190_podk910a"
+  },
+  "revisionId": "sha256:069aef77f0f6d49b5c5e458aa9ce6a08cb32cf45a2cef934750dbb858e4de710",
+  "schemaVersion": 1,
+  "updatedAt": 1775703032168
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776645514945,
+  "entityType": "session",
+  "id": "1776645514945_yuwgxv4k",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需做人群模拟，可先单独实现姓名生成模块并校验姓氏、性别、年代分布",
+      "进一步查找作者后续文章或项目仓库，验证方法是否有完整实验、评估指标和商业应用案例"
+    ],
+    "archiveReason": "提出了基于真实姓名分布、性别与年代条件建模生成中国人姓名的思路，对做人群模拟和数据集设计有启发",
+    "classifiedAt": 1776646261472,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "中国姓名生成数据集思路",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "中文姓名生成需要对齐真实姓氏分布，不能只靠原始样本随机采样",
+      "姓名与性别、出生年代存在显著耦合，可用条件概率模型或半监督方法建模"
+    ],
+    "oneHighValuePoint": "把姓名生成从简单采样提升到按姓氏真实分布、性别和出生年代联合建模，是提高合成人群真实性的关键一步。",
+    "oneLineReview": "有想法也有方法雏形，但目前更像项目日志，证据和细节还不够扎实。",
+    "primaryCategory": "数据生成与用户建模",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为合成数据与用户建模的案例素材",
+    "secondaryCategories": [
+      "AI产品方法论",
+      "中文姓名数据分析"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍作者构建两千万“有机中国人”数据集的起点：姓名生成。核心思路是收集真实姓名数据，校正姓氏分布，并引入性别和年代条件建模，以提升模拟人群的真实性。",
+    "tags": [
+      "合成数据",
+      "用户画像",
+      "姓名生成",
+      "条件建模",
+      "中文语料"
+    ],
+    "title": "两千万个有机的中国人--姓名篇",
+    "totalScore": 61.5,
+    "url": "https://x.com/xleaps/status/2043877518059381212"
+  },
+  "payloadHash": "sha256:4d3b6f7e71a84437e96507b44d51d13dbdecb86ed2baf4e1b1e766ee1d4483f0",
+  "refs": {},
+  "revisionId": "sha256:48b39d713b833521b3b746a93de2a48f4d687c3b503ef6d743c3456488590871",
+  "schemaVersion": 1,
+  "updatedAt": 1776646822998
+}

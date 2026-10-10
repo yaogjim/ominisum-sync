@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773827432338,
+  "entityType": "session",
+  "id": "1773827432338_ho7i5kdi",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估你当前开发流程中是否已有 Slack、GitHub、工单系统等适合作为代理入口的触发面",
+      "参考文中模式设计一版内部编码代理最小可行架构，重点验证沙箱隔离、上下文注入和中间件安全网"
+    ],
+    "archiveReason": "文章梳理了内部编码代理的常见架构模式，对搭建企业内AI开发代理有一定参考价值",
+    "classifiedAt": 1773918073724,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Open SWE框架发布概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "内部编码代理常见模式包括隔离沙箱、精选工具集、Slack优先入口、丰富启动上下文和子代理编排",
+      "通过中间件将确定性流程与模型驱动决策分离，有助于提高代理系统可靠性",
+      "AGENTS.md 与任务源上下文结合，可形成仓库级规范与任务级信息的双层上下文工程"
+    ],
+    "oneHighValuePoint": "最有价值的是将生产环境中内部编码代理的共性抽象为一套可复用架构模式，而不只是单一产品介绍。",
+    "oneLineReview": "适合作为内部编码代理架构速览，但宣传色彩偏重，证据与实证细节不足。",
+    "primaryCategory": "AI工程与开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "可归档为内部编码代理架构参考，后续选型或设计时再查阅",
+    "secondaryCategories": [
+      "智能体架构",
+      "软件工程自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍开源框架 Open SWE，总结了 Stripe、Ramp、Coinbase 等内部编码代理的共性架构，包括沙箱隔离、工具精选、上下文注入、子代理编排和工作流集成，并说明 Open SWE 如何将这些模式产品化为可定制框架。",
+    "tags": [
+      "Open SWE",
+      "Coding Agent",
+      "LangGraph",
+      "Deep Agents",
+      "开发工作流"
+    ],
+    "title": "Open SWE: An Open-Source Framework for Internal Coding Agents\n开源软件工程：一个用于内部编码代理的开源框架",
+    "totalScore": 58.5,
+    "url": "https://x.com/LangChain/status/2033959303766512006"
+  },
+  "payloadHash": "sha256:78f7e09b9db4595b0199c045d5e075a7910ae188d764f076502449b2334a1912",
+  "refs": {},
+  "revisionId": "sha256:b729cb40a86cce852aaf71301fcf245535f2c843508cef3a8de59136edf1a435",
+  "schemaVersion": 1,
+  "updatedAt": 1773918073726
+}

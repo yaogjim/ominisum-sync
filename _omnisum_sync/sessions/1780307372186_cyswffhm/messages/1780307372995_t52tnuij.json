@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780307233698,
+  "entityType": "message",
+  "id": "1780307372995_t52tnuij",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# agentmemory 项目速读\n\n## 1. 总结\n\n**agentmemory** 是一个给 AI 编程助手用的「长期记忆系统」。\n\n它的目标很简单：\n\n> 让 Claude Code、Cursor、Codex、Copilot CLI 等 AI 编程 Agent 记住过去做过什么，避免每次都重新解释项目背景。\n\n它会在后台记录 AI 的操作、代码修改、错误、决策和上下文，并把这些内容压缩成可搜索的长期记忆。\n\n核心特点：\n\n- 支持多种 Agent：Claude Code、Cursor、Codex、Gemini CLI、Copilot CLI 等\n- 支持 MCP、REST API、hooks\n- 自动记录工具调用和会话过程\n- 支持语义搜索、关键词搜索、知识图谱\n- 可视化查看记忆和会话回放\n- 本地运行，默认使用 SQLite / iii-engine\n- 支持本地 embedding，降低成本\n- 可跨多个 AI Agent 共享记忆\n\n一句话概括：\n\n> 它像是 AI 编程助手的大脑外挂，让 Agent 不再“失忆”。\n\n---\n\n## 2. 通俗解读\n\n### 它解决什么问题？\n\n现在很多 AI 编程工具都有一个痛点：\n\n> 每开一个新会话，AI 就像刚入职一样，什么都不记得。\n\n你得反复告诉它：\n\n- 项目结构是什么\n- 用了什么框架\n- 之前为什么这么写\n- 哪些坑踩过\n- 测试在哪里\n- 代码风格是什么\n\nagentmemory 做的事就是：\n\n> 把这些信息自动存起来，下次 AI 自动查出来用。\n\n---\n\n### 举个例子\n\n第一次你让 AI 做 JWT 登录：\n\n```text\n使用 jose 做 JWT，不用 jsonwebtoken，因为要兼容 Edge Runtime。\n认证逻辑在 src/middleware/auth.ts。\n测试在 test/auth.test.ts。\n```\n\n第二次你让 AI 做限流：\n\n```text\n给 API 加 rate limit。\n```\n\n普通 AI 可能会问：\n\n> 你的认证怎么做的？文件在哪？用什么库？\n\n用了 agentmemory 后，它会直接知道：\n\n- 认证在 `src/middleware/auth.ts`\n- 使用的是 `jose`\n- 测试文件在哪\n- 为什么当初不用 `jsonwebtoken`\n\n所以它能更快进入工作状态。\n\n---\n\n## 3. 它是怎么工作的？\n\n简化理解为三步：\n\n### 第一步：自动记录\n\nAI 每次读文件、改代码、跑测试、报错，agentmemory 都会记录下来。\n\n类似：\n\n```text\nAI 修改了 auth.ts\nAI 运行了测试\n测试失败\nAI 修复了 token 校验\n```\n\n---\n\n### 第二步：压缩成记忆\n\n它不会把所有日志原样塞进上下文，而是提炼成：\n\n- 事实\n- 决策\n- 项目习惯\n- 常见错误\n- 文件关系\n- 工作流程\n\n比如：\n\n```text\n项目使用 jose 处理 JWT。\n认证中间件位于 src/middleware/auth.ts。\n测试覆盖 token validation。\n```\n\n---\n\n### 第三步：下次自动检索\n\n新会话开始时，它会根据当前问题检索相关记忆，只注入最有用的一小部分。\n\n这样比直接把全部历史复制给 AI 更省 token。\n\n---\n\n## 4. 亮点\n\n### 记忆更强\n\n它不是简单的文本文件，而是结合了：\n\n- BM25 关键词搜索\n- 向量语义搜索\n- 知识图谱搜索\n- RRF 融合排序\n\n通俗说：\n\n> 不只是找关键词，还能理解意思相近的内容。\n\n比如搜索：\n\n```text\ndatabase performance optimization\n```\n\n它可能找到过去的：\n\n```text\nN+1 query fix\n```\n\n---\n\n### 跨 Agent 使用\n\n一个记忆服务器，可以给多个工具共用：\n\n- Claude Code\n- Cursor\n- Codex\n- Copilot CLI\n- Gemini CLI\n- Cline\n- Roo Code\n- Windsurf\n\n这点很重要。\n\n因为你的项目记忆不再被锁死在某一个 AI 工具里。\n\n---\n\n### 成本低\n\n官方文档声称：\n\n| 方式 | 年 token / 成本 |\n|---|---|\n| 全量粘贴上下文 | 很高，甚至超窗口 |\n| LLM 总结 | 约 $500 / 年 |\n| agentmemory | 约 $10 / 年 |\n| 本地 embedding | 可接近 $0 |\n\n核心原因是：\n\n> 它只把相关记忆注入上下文，而不是把所有东西都塞进去。\n\n---\n\n### 可视化强\n\n它提供 Viewer：\n\n```text\nhttp://localhost:3113\n```\n\n可以看：\n\n- 记忆列表\n- 会话历史\n- 工具调用\n- 知识图谱\n- Session Replay\n\n适合调试 AI 到底记住了什么。\n\n---\n\n## 5. 安装方式\n\n最简单：\n\n```bash\nnpm install -g @agentmemory/agentmemory\nagentmemory\n```\n\n或：\n\n```bash\nnpx -y @agentmemory/agentmemory@latest\n```\n\n连接 Claude Code：\n\n```bash\nagentmemory connect claude-code\n```\n\n安装技能：\n\n```bash\nnpx skills add rohitg00/agentmemory -y\n```\n\n打开可视化界面：\n\n```text\nhttp://localhost:3113\n```\n\n---\n\n## 6. 适合谁？\n\n适合：\n\n- 长期维护一个代码库的人\n- 经常用 AI 编程的人\n- 多个 AI 工具混用的人\n- 项目上下文复杂的人\n- 想让 AI 记住技术决策的人\n- 团队想共享 AI 记忆的人\n\n不太适合：\n\n- 只是偶尔问几句代码问题的人\n- 项目很小、上下文很简单的人\n- 不想折腾本地服务和配置的人\n\n---\n\n## 7. 我的看法\n\n我认为 **agentmemory 的方向非常有价值**。\n\nAI 编程工具现在最大的问题之一不是模型不够强，而是：\n\n> 它们没有持续记忆，无法真正理解一个长期项目。\n\nagentmemory 把「会话历史」变成「可检索的项目知识库」，这比简单的 `CLAUDE.md`、`.cursorrules` 更进一步。\n\n不过也要注意几点：\n\n1. **配置偏复杂**  \n   支持的工具很多，但文档也因此很长，新手可能会被吓到。\n\n2. **依赖 iii-engine**  \n   这是它的核心能力来源，但也增加了部署和排错成本。\n\n3. **自动记忆需要治理**  \n   AI 记住错东西、过期信息、隐私内容，都会带来问题。虽然它有遗忘、过滤、审计机制，但仍需谨慎。\n\n4. **Benchmark 要理性看待**  \n   官方数据很好看，但实际效果还要看项目规模、使用习惯和 Agent 集成质量。\n\n---\n\n## 8. 结论\n\n**agentmemory 是一个面向 AI 编程 Agent 的长期记忆层。**\n\n它最适合解决：\n\n> AI 每次开新会话都忘记项目上下文的问题。\n\n如果你深度使用 Claude Code、Cursor、Codex 等工具做长期项目，它值得尝试。\n\n我的建议：\n\n> 小项目没必要上；中大型项目、长期维护项目、多 Agent 工作流，非常值得试。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780307233698,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:41470b6b439dbad802839103132dbedf95d6490d9c1e48769aba0446b1e54734",
+  "refs": {
+    "sessionId": "1780307372186_cyswffhm"
+  },
+  "revisionId": "sha256:779d33aec556b5641643a7e04a6bf335bd103fb3d46eb58a51b76266df7dd668",
+  "schemaVersion": 1,
+  "updatedAt": 1780307233698
+}

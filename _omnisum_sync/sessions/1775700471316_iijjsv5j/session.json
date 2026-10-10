@@ -1,0 +1,76 @@
+{
+  "createdAt": 1775700471316,
+  "entityType": "session",
+  "id": "1775700471316_iijjsv5j",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文中结构先搭建一个最小可用 wiki 目录，并编写自己的 SCHEMA.md",
+      "挑选 5-10 篇高价值资料做首次 ingest，验证页面更新、交叉引用和索引维护效果",
+      "为当前知识库增加 lint 检查项，如孤立页面、失效链接、标签污染和过时内容",
+      "评估是否需要把高价值问答结果自动回写到 queries 或 comparisons 目录中"
+    ],
+    "archiveReason": "提供了可直接落地的 LLM Wiki 架构、导入/查询/lint 流程与目录规范，适合作为个人或团队知识库设计参考模板。",
+    "classifiedAt": 1775820456041,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "LLM Wiki第二大脑方法",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "我是一名对科技、ai、商业、产品、社会等有深刻理解的资深产品经理，我希望你能以简洁、有趣、通俗易懂、引人入胜的方式，对我提供的文章内容进行洞察，生动形象地解读其中对我的参考意义，请以markdown 格式返回，内容务必精炼、高质量、可实践（杜绝“不是，而是”这类的表述方式；杜绝夸夸其谈、讲大道理；要实用。）。  --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "LLM Wiki 的三层架构：raw sources、wiki、schema",
+      "知识库核心操作包括 ingest、query、lint，并要求 index 与 log 持续维护",
+      "通过页面阈值、标签分类法、交叉引用和归档规则控制知识库质量",
+      "Obsidian、Git、qmd、Dataview 等工具可组成低成本本地化工作流"
+    ],
+    "oneHighValuePoint": "最有价值的是把知识库从“原始资料检索层”升级为“持续编译的结构化 Wiki 层”，让 LLM 在摄取阶段完成总结、交叉引用与冲突维护。",
+    "oneLineReview": "概念清晰、方法论强、落地性高，但证据主要停留在设想与实现样例，缺少效果验证。",
+    "primaryCategory": "AI知识管理",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "个人知识库",
+      "研究工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/dotey/status/2041509264221483449",
+      "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f",
+      "https://github.com/NousResearch/hermes-agent/blob/main/skills/research/llm-wiki/SKILL.md"
+    ],
+    "summaryBrief": "文章提出用 LLM 持续维护结构化 Markdown Wiki，替代传统只在查询时临时检索的 RAG。核心价值在于把知识整理、交叉引用、冲突标注和归档流程产品化，并给出较完整的目录、Schema、导入、查询与审计规范。",
+    "tags": [
+      "LLM",
+      "知识库",
+      "第二大脑",
+      "Obsidian",
+      "Agent"
+    ],
+    "title": "LLM知识库如何变成第二大脑",
+    "totalScore": 74.5,
+    "url": "omnisun://digest/1775700471316"
+  },
+  "payloadHash": "sha256:2b8205dde4b3dcc289882ccb10109c69903cabe75133f2895984f48f0550bf85",
+  "refs": {},
+  "revisionId": "sha256:f968ff92abb6c46855a9c22de24a1de2aef32245c6d3932d97666a0dece8d915",
+  "schemaVersion": 1,
+  "updatedAt": 1775820456046
+}

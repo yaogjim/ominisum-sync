@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776846327814,
+  "entityType": "session",
+  "id": "1776846327814_rdp4ctna",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查自己的AI提示词或skill库，标记与新方法重叠度超过80%的条目",
+      "建立“对照吸收”流程：先比对结构，再只提取可验证的增量部分并合并进现有模板"
+    ],
+    "archiveReason": "提供了处理高重叠skill的实用判断原则，可作为个人工具链整理的参考样例",
+    "classifiedAt": 1777005988202,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "技能栈重叠与对照吸收",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "大型AI技能栈中，触发准确性会成为比方法论本身更稀缺的资源",
+      "可通过拆解爆款prompt或skill，提炼增量模块并拼接回已有系统"
+    ],
+    "oneHighValuePoint": "当现有skill与新skill重叠度超过80%时，优先“对照吸收”而非直接新增，以减少模型触发误差和维护成本。",
+    "oneLineReview": "有明确工作流启发，但更像经验贴，证据和普适性都有限。",
+    "primaryCategory": "AI工作流优化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合在整理个人AI技能栈时回看",
+    "secondaryCategories": [
+      "提示工程",
+      "知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕“是否新增hv-analysis skill”展开，核心观点是当技能栈已很庞大时，触发准确性比继续堆叠方法更重要。作者通过对照吸收方式，从爆款skill中提炼3个真正增量点，分别并入现有技能模块，避免重复安装。",
+    "tags": [
+      "Skill管理",
+      "Prompt复用",
+      "功能重叠",
+      "工作流优化",
+      "AI工具链"
+    ],
+    "title": "Leo: 这篇 24 万阅读的横纵分析法 Article 刷屏那天，我的第一反应是想装他的 hv-analysis skill",
+    "totalScore": 59.5,
+    "url": "https://x.com/runes_leo/status/2046792861245731029"
+  },
+  "payloadHash": "sha256:eac63a31046ad39f39796db8ac55d77e0e8480082ba097768aa3d3fc80849f93",
+  "refs": {},
+  "revisionId": "sha256:c32268ebc3b4390b1ef19101c32de3b9d3dc2990a18286e73d84fc98d203b154",
+  "schemaVersion": 1,
+  "updatedAt": 1777005988206
+}

@@ -1,0 +1,15 @@
+{
+  "createdAt": 1773729324919,
+  "entityType": "session-content",
+  "id": "1773729324919_0swq0d2r",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>陈成</strong></header><div class=\"tw-body\">大多数人用 AI 写代码，还是一个模型、一个对话、一次一个任务。<br><br>但有种玩法正在悄悄扩散——用 Tmux 把 Claude 和多个 Codex 组成一支真实的 Agent 团队，并行干活。<br><br>架构很简单：Claude 当大脑，负责理解需求、拆解任务。Codex 当执行手，coder 写代码、tester 跑测试、reviewer 做审查，三个角色各跑在独立的 tmux pane 里。<br><br>───<br><br>上手只需要五步：<br><br>① 装好工具<br><br>brew install tmux<br>npm install -g <a dir=\"ltr\" href=\"/anthropic\" role=\"link\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1wvb978 r-1loqt21\" style=\"color: rgb(29, 155, 240);\">@anthropic</a><br>-ai/claude-code @openai/codex<br><br>② 用 git worktree 给每个 agent 独立工作区<br><br>git worktree add ../project-coder main<br>git worktree add ../project-tester main<br>git worktree add ../project-reviewer main<br><br>并行最怕互相踩文件，worktree 解决这个问题。<br><br>③ 开 tmux session，分四个 pane<br><br>tmux new-session -d -s agent-team<br>tmux split-window -h && tmux split-window -v<br><br>Claude 占左上，三个 Codex 各占一格。<br><br>④ 各 pane 启动对应 agent<br><br>tmux send-keys -t agent-team:0.0 \"claude\" Enter<br>tmux send-keys -t agent-team:0.1 \"cd ../project-coder && codex\" Enter<br><br>⑤ 写脚本分发任务（这是关键）<br><br>tmux send-keys -t agent-team:0.1 \"实现登录功能，JWT，带单测\" Enter<br>tmux capture-pane -t agent-team:0.1 -p  # 读取输出<br><br>───<br><br>Tmux 的核心能力就是 send-keys 写入、capture-pane 读取——这让 Claude 的任务拆解结果可以自动注入到各个 Codex pane，不用手动复制粘贴。Tmux 是这套协作的消息总线。<br><br>嫌麻烦的话，brew install claude-squad 一行搞定，底层逻辑一样，帮你省掉手动配置。</div></article>",
+    "pageContent": "陈成: 大多数人用 AI 写代码，还是一个模型、一个对话、一次一个任务。 但有种玩法正在悄悄扩散——用 Tmux 把 Claude 和多个 Codex 组成一支真实的 Agent 团队，并行干活。 架构很简单：Claude 当大脑，负责理解需求、拆解任务。Codex 当执行手，coder 写代码、tester 跑测试、reviewer 做审查，三个角色各跑在独立的 tmux pane 里。 ─── 上手只需要五步： ① 装好工具 brew install tmux\nnpm install -g @anthropic\n-ai/claude-code @openai/codex ② 用 git worktree 给每个 agent 独立工作区 git worktree add ../project-coder main\ngit worktree add ../project-tester main\ngit worktree add ../project-reviewer main 并行最怕互相踩文件，worktree 解决这个问题。 ③ 开 tmux session，分四个 pane tmux new-session -d -s agent-team\ntmux split-window -h && tmux split-window -v Claude 占左上，三个 Codex 各占一格。 ④ 各 pane 启动对应 agent tmux send-keys -t agent-team:0.0 \"claude\" Enter\ntmux send-keys -t agent-team:0.1 \"cd ../project-coder && codex\" Enter ⑤ 写脚本分发任务（这是关键） tmux send-keys -t agent-team:0.1 \"实现登录功能，JWT，带单测\" Enter\ntmux capture-pane -t agent-team:0.1 -p # 读取输出 ─── Tmux 的核心能力就是 send-keys 写入、capture-pane 读取——这让 Claude 的任务拆解结果可以自动注入到各个 Codex pane，不用手动复制粘贴。Tmux 是这套协作的消息总线。 嫌麻烦的话，brew install claude-squad 一行搞定，底层逻辑一样，帮你省掉手动配置。"
+  },
+  "payloadHash": "sha256:f5a5c26d28fcf6bfa2d071917fbbf7f5e216fff321dd00de5ad608697a856259",
+  "refs": {},
+  "revisionId": "sha256:19cabdd126edcb3e78926fa748d2bd3e89dfa5a5ecb7a5b91ce57a01f1a2ad63",
+  "schemaVersion": 1,
+  "updatedAt": 1773729840095
+}

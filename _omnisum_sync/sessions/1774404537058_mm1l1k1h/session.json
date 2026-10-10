@@ -1,0 +1,69 @@
+{
+  "createdAt": 1774404537058,
+  "entityType": "session",
+  "id": "1774404537058_mm1l1k1h",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估是否将现有 Agent 的可复用工作流抽象为技能，并接入类似的版本化与质量监控机制",
+      "重点阅读其 `skill_engine`、`host_skills` 和 `gdpval_bench` 相关实现，验证方法是否适合自己的任务场景"
+    ],
+    "archiveReason": "包含智能体技能进化、共享机制、评测结果与集成方式，对后续构建低成本可演化Agent系统有较高参考价值。",
+    "classifiedAt": 1774407573394,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 9,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "OpenSpace智能体自进化框架",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "OpenSpace 通过 FIX、DERIVED、CAPTURED 三种演化模式持续优化技能",
+      "技能退化检测结合执行后分析、工具退化监控和指标监控三类触发机制",
+      "通过共享技能社区实现单个智能体经验向群体能力迁移",
+      "在相同 backbone LLM 条件下，用 GDPVal 基准展示质量提升与 token 降低",
+      "框架支持 MCP 集成、CLI 调用、本地 dashboard 与云端技能管理"
+    ],
+    "oneHighValuePoint": "最有价值的是把“任务执行后的成功/失败经验”沉淀为可版本化、可共享、可自动修复的技能资产，而不是每次从零推理。",
+    "oneLineReview": "这是一篇偏项目发布型长文，但在智能体自进化、经验沉淀和共享机制上有明显方法论价值。",
+    "primaryCategory": "AI智能体框架",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "智能体工程",
+      "开源项目",
+      "LLM应用方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 OpenSpace 这一可集成到多种 AI Agent 中的自进化技能框架，核心卖点是技能自动修复、自动衍生、经验共享与 token 降本。内容提供了基准测试、代码结构、接入方式和实际案例，兼具工程实现与方法论价值。",
+    "tags": [
+      "AI Agent",
+      "Self-Evolving Skills",
+      "MCP",
+      "Benchmark",
+      "Open Source"
+    ],
+    "title": "HKUDS/OpenSpace: \"OpenSpace: Make Your Agents: Smarter, Low-Cost, Self-Evolving\" -- Community: https://open-space.cloud/",
+    "totalScore": 78,
+    "url": "https://github.com/HKUDS/OpenSpace"
+  },
+  "payloadHash": "sha256:db4d651524209c8f62c1f026f7d17284ba6eb26b7590b916dc18c174474fcf5c",
+  "refs": {},
+  "revisionId": "sha256:df2a2573762a76cde317c801e1f1037b86d2edfd3fa3d0d6ff5e6a2ac1da4987",
+  "schemaVersion": 1,
+  "updatedAt": 1774434812846
+}

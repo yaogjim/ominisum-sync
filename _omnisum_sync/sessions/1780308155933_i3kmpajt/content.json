@@ -1,0 +1,15 @@
+{
+  "createdAt": 1780308155933,
+  "entityType": "session-content",
+  "id": "1780308155933_i3kmpajt",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Frad</strong></header><div class=\"tw-body\">Claude Code 的 dynamic workflows 初步看下来就是我最近非常喜欢用的流程的加强版，我的流程：<br>1. 启动足够多的 subagent 从不同角度给出方案<br>2. 参考所有方案，在独立的上下文中反思给出最合理的版本<br>3. 开始实施<br><br>不同的是，Claude Code 的版本在 2 使用了更健全的 evaluator 评估机制，本质上还是 harness 中 generator 加 evaluator 的延续，并且把步骤 2 拆分成了评估后使用最高分答案拼合加上其他答案的高分部分的方案，想必也是经过了大量结合 Opus 4.8 的测试成果。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HJbQ-5QbsAAXhHF?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Corey Chiu</strong> <span class=\"tw-eng\">♥ 32 · 💬 36</span><p>好家伙，trae 真官宣了<br><br>胡彦斌担任这个什么领造官，够硬核的</p></div><div class=\"tw-reply\"><strong>@yetone</strong> <span class=\"tw-eng\">♥ 74 · 💬 15</span><p>我用 Claude Code，我用 Cursor，但我是 TRAE 的领造官。</p></div><div class=\"tw-reply\"><strong>@响马</strong> <span class=\"tw-eng\">♥ 48 · 💬 10</span><p>复杂软件的 ai 重构，我自己实操过两次。<br>一次是 drawio 的 ts 重写。设定目标是与官方误差两个像素，写了个 svg 精准检测脚本，生成了几万个用例，锁死目标。历时两个月。<br>第二次是 PlantUML 的 ts 重写。这个项目的目标是只兼容语法，不保持风格，就很慢，不断需要人眼评估。历时三个月。</p></div><div class=\"tw-reply\"><strong>@Ding</strong> <span class=\"tw-eng\">♥ 34 · 💬 13</span><p>要说 OPC 最牛逼的群体，肯定是课外班老师，一个教小学英语的老师，只要水平还不错，自己出去单干，直接把客源带走一大半，200 块钱一节课，每周排的满满当当。我儿子现在上课的那个老师就是。<br><br>但如果你是大厂出来的，大部分人那就是个废物，能在五年内做到收入和上班持平都算奇迹了。</p></div></div>",
+    "pageContent": "Frad: Claude Code 的 dynamic workflows 初步看下来就是我最近非常喜欢用的流程的加强版，我的流程：\n1. 启动足够多的 subagent 从不同角度给出方案\n2. 参考所有方案，在独立的上下文中反思给出最合理的版本\n3. 开始实施 不同的是，Claude Code 的版本在 2 使用了更健全的 evaluator 评估机制，本质上还是 harness 中 generator 加 evaluator 的延续，并且把步骤 2 拆分成了评估后使用最高分答案拼合加上其他答案的高分部分的方案，想必也是经过了大量结合 Opus 4.8 的测试成果。\n![图片](https://pbs.twimg.com/media/HJbQ-5QbsAAXhHF?format=jpg&name=large)\n---\n热门回复 (共 4 条):\n@Corey Chiu (♥ 32 · 💬 36):\n好家伙，trae 真官宣了\n\n胡彦斌担任这个什么领造官，够硬核的\n\n@yetone (♥ 74 · 💬 15):\n我用 Claude Code，我用 Cursor，但我是 TRAE 的领造官。\n\n@响马 (♥ 48 · 💬 10):\n复杂软件的 ai 重构，我自己实操过两次。\n一次是 drawio 的 ts 重写。设定目标是与官方误差两个像素，写了个 svg 精准检测脚本，生成了几万个用例，锁死目标。历时两个月。\n第二次是 PlantUML 的 ts 重写。这个项目的目标是只兼容语法，不保持风格，就很慢，不断需要人眼评估。历时三个月。\n\n@Ding (♥ 34 · 💬 13):\n要说 OPC 最牛逼的群体，肯定是课外班老师，一个教小学英语的老师，只要水平还不错，自己出去单干，直接把客源带走一大半，200 块钱一节课，每周排的满满当当。我儿子现在上课的那个老师就是。\n\n但如果你是大厂出来的，大部分人那就是个废物，能在五年内做到收入和上班持平都算奇迹了。\n"
+  },
+  "payloadHash": "sha256:3496568a5d76f7bd97c7410100d3248eeb510c951db11a036d3d1a327a549a8c",
+  "refs": {},
+  "revisionId": "sha256:b5892b10667dacd250628a4cefa133db562ef5093c0596ba47508f96b356df39",
+  "schemaVersion": 1,
+  "updatedAt": 1780308303467
+}

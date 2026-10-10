@@ -1,0 +1,68 @@
+{
+  "createdAt": 1780558068431,
+  "entityType": "session",
+  "id": "1780558068431_47gfve3x",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将渲染、仿真、规划三分法加入世界模型相关知识框架",
+      "进一步查阅POMDP、model-based RL、robotic learning与sim-to-real相关资料",
+      "关注World Labs、NVIDIA Omniverse等在生成式仿真和空间智能领域的进展"
+    ],
+    "archiveReason": "文章提出渲染、仿真、规划三类世界模型功能划分，并指出统一世界模型的发展方向，对AI趋势理解有参考价值",
+    "classifiedAt": 1780558599916,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "世界模型功能分类与趋势",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "世界模型可从POMDP中的状态、观测、行动循环来理解",
+      "渲染器输出观测，规划器输出行动，仿真器建模状态变化与物理动态",
+      "仿真面临3D数据稀缺、sim-to-real差距、生成几何物理不一致等难题",
+      "未来趋势是渲染、仿真、规划边界逐渐融合为统一世界模型"
+    ],
+    "oneHighValuePoint": "将世界模型拆分为渲染、仿真、规划三类功能，并指出仿真是连接视觉表征与行动决策的核心中枢。",
+    "oneLineReview": "一篇概念框架清晰但证据支撑偏弱、带有一定产品宣传色彩的世界模型趋势文章。",
+    "primaryCategory": "人工智能",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为理解世界模型概念框架的背景材料",
+    "secondaryCategories": [
+      "世界模型",
+      "机器人与空间智能"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章从POMDP智能体-环境循环出发，讨论世界模型的功能分类，强调渲染、仿真与规划三类能力正在融合，并认为仿真是连接视觉生成与具身行动的关键环节。",
+    "tags": [
+      "世界模型",
+      "空间智能",
+      "仿真",
+      "规划器",
+      "生成式AI"
+    ],
+    "title": "世界模型的功能性分类法",
+    "totalScore": 65.5,
+    "url": "https://x.com/drfeifei/status/2062247238143996275"
+  },
+  "payloadHash": "sha256:ebb90fbee26b55930e79c43d6d9001e737acca71c9880a3e7f80601b70cbcede",
+  "refs": {},
+  "revisionId": "sha256:2fa692d5fce77dd44b82c42a1c727b3ef48e02a2d34f7fc10683e5a298c59c45",
+  "schemaVersion": 1,
+  "updatedAt": 1780560331031
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1773653944292,
+  "entityType": "session",
+  "id": "1773653944292_l6o1ald7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你的方向涉及逆向、取证或本地数据接口，可重点阅读密钥提取、WAL处理和图片解密部分",
+      "如需接入AI工作流，可评估其MCP Server设计并抽取成自己的本地数据访问模式"
+    ],
+    "archiveReason": "包含较完整的原理说明、环境要求、跨平台使用方法和实现细节，后续检索价值较高",
+    "classifiedAt": 1773829363664,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "微信4.0数据库解密工具概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "微信4.0本地数据库基于SQLCipher 4，使用AES-256-CBC与PBKDF2-HMAC-SHA512",
+      "可通过进程内存扫描匹配raw key与salt模式，再结合page 1的HMAC校验验证密钥",
+      "SQLite WAL预分配固定大小时应使用mtime而非文件大小检测写入变化",
+      "微信.dat图片存在XOR、V1、V2三种加密格式，V2需从内存中提取AES密钥"
+    ],
+    "oneHighValuePoint": "最有价值的是明确说明了如何通过扫描进程内存中的raw key模式并结合HMAC校验来确认SQLCipher数据库密钥。",
+    "oneLineReview": "信息很密、实操性强，但更像项目说明书，证据和验证数据不足，方法论抽象有限。",
+    "primaryCategory": "逆向工程与数据提取",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合在需要研究本地数据结构、内存取证或MCP接入时查阅",
+    "secondaryCategories": [
+      "安全研究工具",
+      "Python开源项目"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份微信4.0本地数据库解密工具的项目说明，覆盖Windows、Linux、macOS三平台，介绍了从运行中进程内存提取SQLCipher密钥、解密数据库、解析图片格式以及实时消息监听和MCP接入的实现思路与用法。",
+    "tags": [
+      "微信",
+      "SQLCipher",
+      "内存扫描",
+      "数据库解密",
+      "实时监控"
+    ],
+    "title": "ylytdeng/wechat-decrypt: WeChat 4.0 database decryptor - extract keys from memory, decrypt SQLCipher 4 databases, real-time message monitor",
+    "totalScore": 61.5,
+    "url": "https://github.com/ylytdeng/wechat-decrypt"
+  },
+  "payloadHash": "sha256:7380732b40b9d0c0d32e23dca13734f79527b9d2df4b655e13f42cd3d1fbb71d",
+  "refs": {},
+  "revisionId": "sha256:cb49fa643923dc28f6c0b18577664b06e061cbb4806b7c3032ba07401e8f23b5",
+  "schemaVersion": 1,
+  "updatedAt": 1773829363668
+}

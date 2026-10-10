@@ -1,0 +1,15 @@
+{
+  "createdAt": 1780308534350,
+  "entityType": "session-content",
+  "id": "1780308534350_3emygl5x",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>CJ Zafir</strong></header><div class=\"tw-body\">我用于小型语言模型（20亿到150亿参数模型）的微调框架<br><br>生成一个新的数据集（约1.5亿）并微调模型的成本大约是150美元。<br><br>Codex 5.5= 编排器 / 操作员<br>Deekseek v4 pro /Kimi 2.6= 数据生成引擎 (非常便宜)<br>Qwen 3.5 是最佳微调模型（4B、9B、27B）<br>Unsloth = 更快、更便宜的微调框架。<br>Colab = 最便宜的云 GPU（A100 80GB 每小时 0.66 美元）<br>G Drive = 用于存储数据集（良好的 Codex + Colab 集成）<br>Huggingface = 托管数据集 + 模型<br><br>因此，Codex 作为计划者和审计者，<br>Deepseek 作为最便宜的执行器，<br>Unsloth 快速微调<br>Colab 获取最便宜的 A100 GPU<br>Huggingface 托管微调后的模型。<br><br>任何人都可以在自己的系统上微调并运行一个 Sonnet 4.5 级的自定义模型。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HJQRKmbaoAASpOA?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@CJ Zafir</strong> <span class=\"tw-eng\">♥ 11 · 💬 1</span><p>构建了一个个人助手，它能接管我的 Mac 并完成任务（击败了 Siri、Sonnet 4.5 和 Gemini 3 pro）。<br><br>将在发布后分享完整报告。</p></div><div class=\"tw-reply\"><strong>@CJ Zafir</strong> <span class=\"tw-eng\">♥ 11 · 💬 1</span><p>好的，找时间做那个。</p></div><div class=\"tw-reply\"><strong>@Gregor</strong> <span class=\"tw-eng\">♥ 5 · 💬 3</span><p>imo $150/run sounds cheap until you're on iteration 12 and your evals are still lying to you</p></div><div class=\"tw-reply\"><strong>@Bitcoin Comfy</strong> <span class=\"tw-eng\">♥ 5 · 💬 1</span><p>微调没那么容易<br><br>针对这样的“小型”模型，1.5亿行的数据集基本上会摧毁它，彻底摧毁它<br><br>你不能用那么多行，如果你将行数保持在4位数的范围内并进行某种强化学习，结果会好得多</p></div><div class=\"tw-reply\"><strong>@West Loop Guy</strong> <span class=\"tw-eng\">♥ 2 · 💬 2</span><p>你用它来做什么的例子是什么？</p></div></div>",
+    "pageContent": "CJ Zafir: 我用于小型语言模型（20亿到150亿参数模型）的微调框架 生成一个新的数据集（约1.5亿）并微调模型的成本大约是150美元。 Codex 5.5= 编排器 / 操作员\nDeekseek v4 pro /Kimi 2.6= 数据生成引擎 (非常便宜)\nQwen 3.5 是最佳微调模型（4B、9B、27B）\nUnsloth = 更快、更便宜的微调框架。\nColab = 最便宜的云 GPU（A100 80GB 每小时 0.66 美元）\nG Drive = 用于存储数据集（良好的 Codex + Colab 集成）\nHuggingface = 托管数据集 + 模型 因此，Codex 作为计划者和审计者，\nDeepseek 作为最便宜的执行器，\nUnsloth 快速微调\nColab 获取最便宜的 A100 GPU\nHuggingface 托管微调后的模型。 任何人都可以在自己的系统上微调并运行一个 Sonnet 4.5 级的自定义模型。\n![图片](https://pbs.twimg.com/media/HJQRKmbaoAASpOA?format=jpg&name=large)\n---\n热门回复 (共 5 条):\n@CJ Zafir (♥ 11 · 💬 1):\n构建了一个个人助手，它能接管我的 Mac 并完成任务（击败了 Siri、Sonnet 4.5 和 Gemini 3 pro）。\n\n将在发布后分享完整报告。\n\n@CJ Zafir (♥ 11 · 💬 1):\n好的，找时间做那个。\n\n@Gregor (♥ 5 · 💬 3):\nimo $150/run sounds cheap until you're on iteration 12 and your evals are still lying to you\n\n@Bitcoin Comfy (♥ 5 · 💬 1):\n微调没那么容易\n\n针对这样的“小型”模型，1.5亿行的数据集基本上会摧毁它，彻底摧毁它\n\n你不能用那么多行，如果你将行数保持在4位数的范围内并进行某种强化学习，结果会好得多\n\n@West Loop Guy (♥ 2 · 💬 2):\n你用它来做什么的例子是什么？\n"
+  },
+  "payloadHash": "sha256:5a12d568d6153829bb8ba3651538c0c80a9154908fa07326a4022cd954215fbc",
+  "refs": {},
+  "revisionId": "sha256:ceda456c577ed203e294e09374990c352faf8c693d3057a3f8aca1181ca12c3e",
+  "schemaVersion": 1,
+  "updatedAt": 1780308624865
+}

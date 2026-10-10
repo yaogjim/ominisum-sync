@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773729274253,
+  "entityType": "session",
+  "id": "1773729274253_s3czq3cx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估你的垂类场景更适合做通用Agent还是Agent应用层",
+      "梳理可封装为skill、workflow、memory的核心能力模块"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773729297478,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "垂类Agent应做应用层",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "垂类Agent产品可从skill能力切入",
+      "通过封装内部逻辑可减少主Agent调用成本",
+      "用户状态沉淀可形成memory层能力"
+    ],
+    "oneHighValuePoint": "把垂类产品定位为Agent的应用层与能力层，而非重复造通用Agent。",
+    "oneLineReview": "有方向感但像随手观点，适合启发，不足以作为决策依据。",
+    "primaryCategory": "AI产品策略",
+    "rating": "C",
+    "rejectReason": "观点有一定启发，但内容极短，论证不足，缺少案例、数据和可验证方法。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent设计",
+      "垂直应用定位"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出一个产品判断：垂类方向不应直接做通用Agent，而应围绕Agent做应用层能力，逐步从skill、内部逻辑封装到用户状态记忆沉淀，强调垂类产品的更优落点。",
+    "tags": [
+      "Agent",
+      "垂类产品",
+      "Skill",
+      "Memory",
+      "产品定位"
+    ],
+    "title": "x.com/yan5xu/status/2033495066082505033",
+    "totalScore": 48,
+    "url": "https://x.com/yan5xu/status/2033495066082505033"
+  },
+  "payloadHash": "sha256:9d87e7f4f559ce69966780aa03de20dbbc9e49409cf6112bc4b1fe00fe491d82",
+  "refs": {},
+  "revisionId": "sha256:858bf90673a0a1b32798055fada9cbc73c2086148bf22a5d47bfcfe3009e2079",
+  "schemaVersion": 1,
+  "updatedAt": 1773729807821
+}

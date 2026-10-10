@@ -1,0 +1,15 @@
+{
+  "createdAt": 1777901698362,
+  "entityType": "session-content",
+  "id": "1777901698362_ga40zz1a",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Leo</strong></header><div class=\"tw-body\">Claude Opus 写代码，Codex 做代码评审。给 Codex 的提示词：<br><br>你正在审查由另一个 AI 助手编写的代码。你的工作是独立验证正确性。<br>逻辑正确吗？<br>有没有遗漏的边缘情况？<br>3. 有任何安全问题吗？<br>4. 这是否符合所陈述的要求？<br>请勿建议重构、重命名、样式修改或添加注释。仅报告缺陷、逻辑错误和安全问题。<br><br>最后一行最重要。不加的话，Codex 可能会把审查当重构做。</div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@段少DaDalus</strong> <span class=\"tw-eng\">♥ 2 · 💬 2</span><p>Opus 4.6 小 bug 太多了实在受不了，新项目的开发者我切成 Codex 5.3 了…</p></div><div class=\"tw-reply\"><strong>@Leo</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>那还需要review吗？我是claude系统搞久了越来越顺手，迁移成本越来越高了</p></div><div class=\"tw-reply\"><strong>@你瞅啥</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>我写了一个skill 让codex 和 gemini 加上 claude 自己组一个commitee 让一轮辩论 得出结论</p></div><div class=\"tw-reply\"><strong>@Hao ∞ 浩哥</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>试试我的工具，结合Claude Code 和Codex 两者的优势。<br><br><br>http://<br>github.com/haohappy/multi…<br><br>让 AI 代码审查实现全自动闭环。传统工作流中，开发者需要在 Claude Code 和 Codex 之间手动搬运计划和代码、复制反馈、反复修改，过程繁琐且容易遗漏。cc-review 将这一循环自动化——Claude Code 生成，Codex</p></div><div class=\"tw-reply\"><strong>@Leo</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>哈哈 三模型辩论挺有意思。我试过类似的，发现关键是给每个模型不同的审查角度，不然它们容易互相附和。你这个 skill 开源了吗？</p></div></div>",
+    "pageContent": "Leo: Claude Opus 写代码，Codex 做代码评审。给 Codex 的提示词： 你正在审查由另一个 AI 助手编写的代码。你的工作是独立验证正确性。\n逻辑正确吗？\n有没有遗漏的边缘情况？\n3. 有任何安全问题吗？\n4. 这是否符合所陈述的要求？\n请勿建议重构、重命名、样式修改或添加注释。仅报告缺陷、逻辑错误和安全问题。 最后一行最重要。不加的话，Codex 可能会把审查当重构做。\n---\n热门回复 (共 5 条):\n@段少DaDalus (♥ 2 · 💬 2):\nOpus 4.6 小 bug 太多了实在受不了，新项目的开发者我切成 Codex 5.3 了…\n\n@Leo (♥ 1 · 💬 1):\n那还需要review吗？我是claude系统搞久了越来越顺手，迁移成本越来越高了\n\n@你瞅啥 (♥ 1 · 💬 1):\n我写了一个skill 让codex 和 gemini 加上 claude 自己组一个commitee 让一轮辩论 得出结论\n\n@Hao ∞ 浩哥 (♥ 1 · 💬 1):\n试试我的工具，结合Claude Code 和Codex 两者的优势。\n\n\nhttp://\ngithub.com/haohappy/multi…\n\n让 AI 代码审查实现全自动闭环。传统工作流中，开发者需要在 Claude Code 和 Codex 之间手动搬运计划和代码、复制反馈、反复修改，过程繁琐且容易遗漏。cc-review 将这一循环自动化——Claude Code 生成，Codex\n\n@Leo (♥ 0 · 💬 1):\n哈哈 三模型辩论挺有意思。我试过类似的，发现关键是给每个模型不同的审查角度，不然它们容易互相附和。你这个 skill 开源了吗？\n"
+  },
+  "payloadHash": "sha256:1b1152d56e9b14ba837c2df805e5c791c7e864b92a90ac98bfe47821660cff1a",
+  "refs": {},
+  "revisionId": "sha256:3be928ee2bef8b9b3c02ffe770293085d1a59c02de16276d401bd5e25bb566d8",
+  "schemaVersion": 1,
+  "updatedAt": 1777902120077
+}

@@ -1,0 +1,70 @@
+{
+  "createdAt": 1780386353733,
+  "entityType": "session",
+  "id": "1780386353733_atatkncs",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将该提示词精简为自己的网络排障Agent系统提示词模板",
+      "补充常用路由系统如 OpenWrt、RouterOS、Linux 路由器的只读诊断命令清单",
+      "为每类网络问题设计改动前后可复测的量化指标",
+      "在实际排障中记录基线、操作、复测结果和回滚方案，形成案例库"
+    ],
+    "archiveReason": "包含较完整的网络排障Agent工作流程、权限边界和验证闭环，可作为提示词模板复用",
+    "classifiedAt": 1780386812963,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 8,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "网络排障Agent提示词",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "网络Agent应优先通过SSH自助采集信息，减少人工逐项转述造成的低效和误差",
+      "任何配置修改、重启、断网等操作前都应说明风险、回滚方案并获得明确授权",
+      "网络问题不能只凭主观体验判断，应先建立基线，再在同条件下复测验证",
+      "排障应按本机、无线层、路由器、有线层、上级设备、公网等链路分层缩小范围",
+      "Bufferbloat、Wi-Fi同频干扰等隐蔽问题往往需要负载下延迟、抖动和丢包等指标才能发现"
+    ],
+    "oneHighValuePoint": "将网络排障明确拆成获取SSH、自助只读诊断、分层定位、授权改动和量化eval闭环几个阶段。",
+    "oneLineReview": "这是一个结构完整、可直接改用的网络排障Agent提示词，但缺少真实案例和数据验证。",
+    "primaryCategory": "AI提示词与自动化运维",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留为提示词模板",
+    "secondaryCategories": [
+      "网络排障",
+      "Prompt Engineering"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了一个用于远程网络维护的Agent提示词，强调优先获取SSH权限、只读自助诊断、最小化打扰现场人员、改动前需授权，并通过基线、复测和回退形成可量化验证闭环。",
+    "tags": [
+      "网络优化",
+      "SSH诊断",
+      "Agent提示词",
+      "验证闭环",
+      "只读排查"
+    ],
+    "title": "Frad: 分享一个这两天折腾下来，价值 $73",
+    "totalScore": 64,
+    "url": "https://x.com/FradSer/status/2058827514487918608"
+  },
+  "payloadHash": "sha256:14d8d40bea806abb7b7105578dc918cce01853b29d8134f8a9a04b58f5da6def",
+  "refs": {},
+  "revisionId": "sha256:4aad466621afed3c3c7eb5eed3150295101fdf5bf877f527612d41f99cb7e042",
+  "schemaVersion": 1,
+  "updatedAt": 1780387487975
+}

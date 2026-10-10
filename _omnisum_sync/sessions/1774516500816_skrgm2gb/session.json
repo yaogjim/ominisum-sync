@@ -1,0 +1,78 @@
+{
+  "createdAt": 1774516500816,
+  "entityType": "session",
+  "id": "1774516500816_skrgm2gb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据自身技术栈对比评估OpenUI与json-render的组件约束、流式协议和跨端能力",
+      "尝试用小型Demo验证“组件目录生成提示词 + 流式Renderer + DOM diff”这套实现链路",
+      "将按需加载技能文档或设计规范的模式引入Agent系统，减少主系统提示词膨胀"
+    ],
+    "archiveReason": "内容覆盖主流开源方案、架构差异、流式渲染实现和设计模式，对后续框架选型与系统设计有持续参考价值",
+    "classifiedAt": 1774522770357,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "生成式UI框架演进综述",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，综合在一起进行分析，分析相互之间的脉络和关系，并推演后续的可能情况。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "生成式UI的核心约束是用受控组件目录或Schema限制模型输出，而不是直接生成任意HTML",
+      "流式渲染要避免频繁全量替换DOM，采用morphdom等差分更新方案更平滑",
+      "read_me式按需加载设计规范能降低系统提示词成本，提高模型上下文利用率",
+      "生成式UI框架正在向跨端渲染、MCP集成、组件注册表和工具化脚手架方向演进"
+    ],
+    "oneHighValuePoint": "最有价值的是把Claude式生成式UI拆解为“按需加载指导文档 + 工具调用 + 流式HTML + DOM diff平滑更新”的可复用实现模式。",
+    "oneLineReview": "这是一篇偏工程实践和框架选型导向的生成式UI综述，方法论价值高于严格证据强度。",
+    "primaryCategory": "AI应用开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议中长期保留，适合作为生成式UI框架选型与实现思路参考",
+    "secondaryCategories": [
+      "生成式UI",
+      "前端工程",
+      "Agent工具链"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://github.com/thesysdev/openui",
+      "https://github.com/vercel-labs/json-render",
+      "https://michaellivs.com/blog/reverse-engineering-claude-generative-ui/",
+      "https://github.com/CopilotKit/OpenGenerativeUI"
+    ],
+    "summaryBrief": "文章汇总了OpenUI、json-render、OpenGenerativeUI等生成式UI框架，并重点分析Claude式生成式UI的工具调用、流式HTML渲染、DOM diff和平滑更新方案，兼具框架比较与工程实现参考价值。",
+    "tags": [
+      "OpenUI",
+      "json-render",
+      "Claude",
+      "Generative UI",
+      "MCP",
+      "流式渲染"
+    ],
+    "title": "生成式UI四条演进主线",
+    "totalScore": 71.5,
+    "url": "omnisun://digest/1774516500816"
+  },
+  "payloadHash": "sha256:1c14fadbf455569c42a0ce0ff70cd3368ecf70bc3ddc340391f93a4dd63cb5ec",
+  "refs": {},
+  "revisionId": "sha256:d965d9c2850f96fb14115c6d8b41c9d9ef958c35c3ce7760842b84b822841295",
+  "schemaVersion": 1,
+  "updatedAt": 1774522770385
+}

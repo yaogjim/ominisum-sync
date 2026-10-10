@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773652143934,
+  "entityType": "session",
+  "id": "1773652143934_f0z9u2m4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你的工作涉及爬虫、自动化测试或 AI agent 执行环境，可用现有 Puppeteer 脚本做一次兼容性与性能对比测试",
+      "重点验证其在目标站点上的稳定性、API 覆盖率和实际资源消耗，再决定是否纳入正式技术栈"
+    ],
+    "archiveReason": "该内容对浏览器自动化、爬虫和AI代理运行时选型有实际参考价值，且包含安装、兼容性和测试信息",
+    "classifiedAt": 1773917967355,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "面向AI自动化的轻量浏览器",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Lightpanda 采用 Zig 重写无头浏览器，目标是面向 AI agent、抓取和测试场景优化资源占用与启动速度",
+      "项目通过 CDP 与 Puppeteer、Playwright、chromedp 兼容，可作为 Chrome 的轻量替代方案进行自动化接入",
+      "当前仍处于 Beta 阶段，Web API 覆盖不完整，适合实验和选型评估，不适合直接假设为成熟生产标准件"
+    ],
+    "oneHighValuePoint": "最有价值的是提出“非 Chromium 分叉、专为无头自动化重写浏览器”这一产品路线，并给出了可直接接入 Puppeteer/CDP 的使用方式。",
+    "oneLineReview": "这是一个有潜力的工具型项目说明文档，实操信息充分，但证据与成熟度仍偏早期。",
+    "primaryCategory": "AI工程基础设施",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为工具选型参考保留，短中期有用",
+    "secondaryCategories": [
+      "浏览器自动化",
+      "开源工具评估"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章主要是 Lightpanda 开源项目的 README，介绍其作为面向 AI 代理和自动化场景的轻量级无头浏览器，强调低内存、快启动和 Playwright/Puppeteer 兼容，并提供安装、运行、构建与测试说明。",
+    "tags": [
+      "headless browser",
+      "AI agents",
+      "automation",
+      "Zig",
+      "CDP"
+    ],
+    "title": "lightpanda-io/browser: Lightpanda: the headless browser designed for AI and automation",
+    "totalScore": 63.5,
+    "url": "https://github.com/lightpanda-io/browser"
+  },
+  "payloadHash": "sha256:5fe727f18af441144867ab88b29613e2d7a731f0808e24caae3388fdab6b960e",
+  "refs": {},
+  "revisionId": "sha256:380d0fe254a39555bdf07a471df5508ab6de0b299ef95a407708b0f10b5676be",
+  "schemaVersion": 1,
+  "updatedAt": 1773918668344
+}

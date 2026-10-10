@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780449152915,
+  "entityType": "session",
+  "id": "1780449152915_dk85dzu5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "重要生产任务避免在模型刚发布时立即切换到新版本。",
+      "对新模型进行小规模回归测试，重点验证工具调用、编辑工具和关键工作流。",
+      "记录模型异常行为和时间点，区分模型能力问题与基础设施 bug。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780449953124,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "新模型早期发布风险",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "新发布模型可能存在推理基础设施或 tool schema 相关 bug，导致表现异常。",
+      "模型上线后的热修可能显著改变用户对同一版本模型的评价。",
+      "早期用户反馈可能被厂商用于修复问题，但也会承担额外成本和风险。"
+    ],
+    "oneHighValuePoint": "使用新发布的大模型时，应警惕早期推理基础设施和工具调用链路存在未修复缺陷。",
+    "oneLineReview": "有一定现实提醒价值，但主要停留在个案吐槽层面。",
+    "primaryCategory": "AI模型使用经验",
+    "rating": "C",
+    "rejectReason": "内容主要是个人使用体验和社区吐槽，缺乏系统性分析、数据验证和可复用方法论。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "大模型产品质量",
+      "开发者工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为新模型刚发布时出现降智和工具调用错误，应归因于 Anthropic 的推理基础设施测试不足，而不是用户误用。作者以 Opus 4.8 的 edit tool 参数错误为例，指出早期用户承担了测试成本。",
+    "tags": [
+      "Anthropic",
+      "Opus 4.8",
+      "Inference Infra",
+      "模型发布",
+      "工具调用"
+    ],
+    "title": "yetone: 但是这个应该不能去把责任归到用户身上，而必须是归到 Anthropic 身上",
+    "totalScore": 46,
+    "url": "https://x.com/yetone/status/2061768480308027420"
+  },
+  "payloadHash": "sha256:4e597d8264e51b3f04b07e63914450027cdc3abd253df185d5adafee71c04dcb",
+  "refs": {},
+  "revisionId": "sha256:86c3a83283e84817604eaf1771b7502302d9ebc962b3530aeaeeeb56ad4f208f",
+  "schemaVersion": 1,
+  "updatedAt": 1780449953529
+}

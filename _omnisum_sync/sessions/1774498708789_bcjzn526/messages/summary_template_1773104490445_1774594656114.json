@@ -1,0 +1,23 @@
+{
+  "createdAt": 1774594757652,
+  "entityType": "message",
+  "id": "summary_template_1773104490445_1774594656114",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这不是一个 “通话总结 Demo”，而是一个很典型的企业级 AI Agent 产品雏形：用多模型协作完成 “理解 -> 判断 -> 执行” 的闭环。它的价值不在模型多，而在产品链路设计是对的。\n\n**产品解读**\n- **核心用户**：客服主管、销售经理、客户成功、运营负责人，不是终端客服本人。\n- **核心任务**：不是 “帮我写摘要”，而是 “帮我判断问题、提炼风险、推动后续动作”。\n- **产品闭环**：输入通话记录，输出洞察，同时把 action item 直接写进`Linear`，这才是真正可落地的工作流。\n- **关键产品设计点**：把结果拆成 3 类固定产物最合理：`情绪判断`、`行动项`、`沟通改进建议`。这对应了管理者最关心的 3 个维度：客户状态、业务推进、团队能力。\n- **为什么不是单模型一把梭**：因为管理型场景要求 “结构化、可审阅、可执行”，而不是只要一段自然语言总结。\n\n**技术设计解读**\n- **架构本质**：`Planner + 多个 Specialist Agent + Tool Executor`，这是当前企业 AI 最稳的模式之一。\n- **TrueFoundry AI Gateway`的价值**：不是 “多一个中间层”，而是把模型调用从业务代码里抽离出来，统一做路由、鉴权、限流、观测、成本控制。\n- **MCP 的价值**：让 LLM 不只生成文本，而是能安全调用业务工具；这里 Linear 只是一个例子，本质是把 AI 接进企业系统。\n- **并行子 Agent 的意义**：情绪、行动项、话术辅导本来就是低耦合任务，天然适合并发，延迟和质量都更优。\n- **模型选型逻辑是合理的**：\n  - `Gemini Flash`做情绪 / 轻分析，快且便宜\n  - `Claude Sonnet`做行动项抽取和规划，稳定性强\n  - `GPT-5 Mini`做 coaching，语言生成更自然\n- **这其实是一个 “模型能力分层” 设计**，而不是简单炫技。\n\n**设计实现上最值得借鉴的点**\n- **职责隔离**：每个 agent 只做一件事，prompt 更稳定，输出更容易约束。\n- **统一编排**：由 planner 汇总，不让 3 个 agent 彼此乱对话，降低系统复杂度。\n- **工具调用后置**：先判断 action item，再创建 Linear issue，避免模型一上来就乱写工单。\n- **模型名通过网关配置**：`agent.py`里的模型标识和网关注册名绑定，这是一种很实用的生产模式。\n- **最小可运行代码量小**：`agent.py`约 130 行，说明设计清晰，没有过早工程化。\n\n**最佳实践例子 1：客服质检产品**\n- **输入**：客服录音转写文本 + 通话元数据（坐席、客户、工单号、时长）\n- **Agent 分工**：\n  - `Sentiment Agent`：识别客户是否从抱怨转为接受，输出情绪曲线和风险等级\n  - `Action Agent`：提取退款、补发、升级、回访等事项\n  - `Coach Agent`：识别客服是否打断客户、是否确认诉求、是否给出明确承诺\n- **输出结构**：\n  - `risk_level`: high/medium/low\n  - `customer_intent`: 退款 / 投诉 / 咨询\n  - `action_items`: 可执行列表\n  - `coach_feedback`: 3 条以内\n- **落地动作**：\n  - 高风险通话自动打标签\n  - 承诺类事项自动进 Linear 或 CRM\n  - 低分通话进入主管复检队列\n- **产品收益**：从 “抽样听录音” 变成 “全量自动质检 + 自动派单”。\n\n**最佳实践例子 2：销售复盘产品**\n- **不要只做摘要**，要抽取：\n  - 客户预算是否明确\n  - 决策人是否到场\n  - 时间表是否存在\n  - 下一步是否有 owner\n- **建议的 agent 切法**：\n  - `Deal Qualification Agent`\n  - `Next-Step Agent`\n  - `Sales Coaching Agent`\n- **自动化动作**：\n  - 若发现 “无下一步会议”，自动在 Linear 创建 follow-up\n  - 若识别到 “提到竞争对手”，自动打 CRM 标签\n  - 若预算模糊，提示销售补问标准问题\n- **这类设计比简单会议纪要更有产品价值**，因为它直接服务 pipeline 管理。\n\n**开发实现最佳实践**\n- **1. 强制结构化输出**\n  - 不要让 agent 直接返回大段文本。\n  - 用固定 schema，比如：\n```json\n{\n  \"sentiment_score\": 6.5,\n  \"risk_flags\": [\"customer_frustration\", \"billing_confusion\"],\n  \"action_items\": [\n    {\"title\": \"Confirm refund eligibility\", \"owner\": \"support\", \"priority\": \"high\"}\n  ],\n  \"coach_tips\": [\"Acknowledge frustration earlier\"]\n}\n```\n- **原因**：后续要入库、排序、派单、画报表，结构化比文案更重要。\n\n- **2. Tool call 要有阈值控制**\n  - 不是提到一件事就创建 issue。\n  - 例如只创建：\n    - 高优先级事项\n    - 有明确 owner 的事项\n    - 有截止预期的事项\n  - 当前仓库 “最多创建 top 2 action items” 就是很好的产品约束。\n\n- **3. 给每个 agent 单独定义成功标准**\n  - 情绪 agent：关注一致性和风险召回\n  - 行动项 agent：关注可执行性和误报率\n  - coaching agent：关注建议是否具体、可复用\n- **不要用一个 “总体感觉不错” 来评估整个系统。**\n\n- **4. 建可观测性而不是只看日志**\n  - 记录：\n    - 每个 agent 的耗时\n    - 每个模型 token 消耗\n    - issue 创建成功率\n    - action item 命中率\n    - 人工修改率\n- **这是 AI 产品能否进入生产环境的分水岭。**\n\n- **5. 人工审核要可配置**\n  - 最佳实践不是一上来全自动。\n  - 先做：\n    - `draft mode`：仅生成建议，不真正创建 issue\n    - `review mode`：人工确认后再写入 Linear\n    - `auto mode`：成熟后开放自动执行\n- **企业客户最在意的是可控性，不是自动化程度。**\n\n**容易踩坑的地方**\n- **把 transcript 当事实**：ASR 本身会有错字、漏字，尤其人名、金额、日期。\n- **情绪分析过拟合措辞**：客户说得激烈不一定代表高风险，要结合上下文和结果。\n- **行动项过度生成**：LLM 很容易把 “讨论过” 错当成 “要执行”。\n- **跨模型输出风格不一致**：需要统一 schema 和 planner 的汇总规范。\n- **工具调用权限过大**：MCP 接企业系统时，一定做最小权限控制和审计。\n\n**如果我要把这个项目做成正式产品，我会这样升级**\n- **输入层**：接入真实音频转写、说话人分离、客户元数据\n- **分析层**：把 agent 输出全部 schema 化，并做置信度评分\n- **执行层**：Linear 只是起点，继续接 CRM、工单系统、Slack\n- **反馈层**：加入 “人工修订回流”，让系统学习哪些 action item 是真的有效\n- **管理层**：做团队面板，看 CSAT、情绪波动、话术问题、任务闭环率\n\n**一句话判断**\n- 从产品上看，它抓住了企业 AI 最值钱的一点：`把洞察变成动作`。\n- 从技术上看，它采用了当前最稳的路线：`多 Agent 分工 + 网关统一接模 + MCP 安全落地`。\n- 最佳实践不是 “再加更多模型”，而是把`结构化输出、执行阈值、人工审核、效果观测`这四件事做扎实。\n\n如果你愿意，我可以进一步给你一版：\n1. 这个项目的 “生产级架构改造方案”\n2. 面向客服 / 销售场景的`agent schema + prompt`最佳实践模板\n3. 一份适合创业公司落地的 MVP 产品设计稿",
+    "finish_reason": "stop",
+    "prompt_id": "template_1773104490445",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-技术开发实现",
+    "timestamp": 1774594757652,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:569766cee44625cca8b1d07fa7434a98c71e0efff96bf3879faadcb4dc0e5560",
+  "refs": {
+    "sessionId": "1774498708789_bcjzn526"
+  },
+  "revisionId": "sha256:97d4a4eac51f0dc9c56a6d22eda6a9d3f23344e989b3247f72608175e3460a22",
+  "schemaVersion": 1,
+  "updatedAt": 1774594757652
+}

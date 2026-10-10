@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780387580274,
+  "entityType": "message",
+  "id": "1780387597754_bzhfqm6k",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\n作者认为：**Agent 不是一个单一程序，而是由三部分组成：**\n\n1. **Agent 定义**\n   - 系统提示词\n   - 技能包\n   - 扩展\n   - 工具定义  \n   这些相对固定，改了就相当于新版本，需要重新加载。\n\n2. **Agent 持久化**\n   - Memory\n   - Workspace\n   - 文件、状态等  \n   每次运行时需要加载。  \n   会话历史不建议直接挂载，建议放到 SQL 里，通过 session tools 访问。\n\n3. **Agent 运行时**\n   - 环境变量\n   - 沙盒\n   - 模型接入\n   - 工具代理\n   - 运行配置等\n\n因为 Agent 技术变化太快，作者没有做复杂平台，而是做了一个 CLI：\n\n```bash\ncove --agent agent.yml --runtime runtime.yml\n```\n\n用两个 YAML 文件分别描述 Agent 本身和运行环境。\n\n---\n\n## 二、通俗解读\n\n可以把 Agent 理解成一个“AI 员工”。\n\n### 1. Agent 定义 = 员工的人设和能力说明书\n\n比如：\n\n- 他是谁\n- 要怎么说话\n- 会什么技能\n- 能用哪些工具\n\n这部分类似“岗位说明书”。  \n一旦改了，就等于换了一个新版本的员工。\n\n---\n\n### 2. Agent 持久化 = 员工的记忆和工作资料\n\n比如：\n\n- 以前做过什么\n- 用户偏好是什么\n- 工作目录里有哪些文件\n- 历史任务记录\n\n这些东西不能每次重启就丢，所以要单独保存。\n\n作者还提到：  \n**聊天记录最好放数据库，而不是直接挂载到运行环境里。**\n\n这样更清晰，也更容易查询和管理。\n\n---\n\n### 3. Agent 运行时 = 员工的办公室和设备\n\n比如：\n\n- 在什么环境里运行\n- 用哪个模型\n- 能不能联网\n- 有没有沙盒隔离\n- 工具怎么调用\n\n这不是 Agent 的“灵魂”，而是它工作的“场地和设备”。\n\n---\n\n## 三、核心观点\n\n作者其实在讲一个重要架构思想：\n\n> Agent 要做“定义、存储、运行环境”的分离。\n\n也就是：\n\n```text\nAgent 定义 ≠ Agent 记忆 ≠ Agent 运行环境\n```\n\n这样做好处是：\n\n- 更容易升级\n- 更容易迁移\n- 更容易复用\n- 更容易多 Agent、多 Session 并发运行\n- 不容易被快速变化的技术栈绑死\n\n---\n\n## 四、我的意见\n\n我认同这个思路。\n\n现在 Agent 领域变化太快，过早做“大平台”风险很高。  \n用 CLI + YAML 的方式更轻量，也更灵活。\n\n尤其是这几点很关键：\n\n1. **Agent 定义版本化**\n   - 改提示词、工具、技能，就应该视为新版本。\n\n2. **Memory 和 Workspace 独立管理**\n   - 不要和运行环境混在一起。\n\n3. **运行时用沙盒隔离**\n   - 安全性和可控性更好。\n\n4. **会话历史进数据库**\n   - 比直接挂载文件更适合长期管理。\n\n简单说：\n\n> 这套设计不是在“做一个聊天机器人”，而是在给 Agent 搭一个可维护、可扩展的底座。\n\n但如果只是个人小项目，没必要一开始就搞太复杂。  \n可以先从两个文件开始：\n\n```text\nagent.yml    定义 Agent 是谁、会什么\nruntime.yml  定义 Agent 在哪里、怎么跑\n```\n\n这已经是一个很好的起点。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780387580274,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b42f730ad28a8698297893511392ab9fe4dd1d5d4b6a919b3c3e17ec7949bcdb",
+  "refs": {
+    "sessionId": "1780387597383_cu1jmh44"
+  },
+  "revisionId": "sha256:c3d5d1ae78eb7b0695f10d2137a9171698aa8dddaf64a4d6fa7b10e9bfd4f70b",
+  "schemaVersion": 1,
+  "updatedAt": 1780387580274
+}

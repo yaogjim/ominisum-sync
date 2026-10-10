@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780380915029,
+  "entityType": "message",
+  "id": "1780380915028_3f30nsab",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Shopify的Claude Code团队配置\n\n**评级**: B (69.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI编程与工程效率\n**次类别**: 团队研发流程, LLM工程实践\n**标签**: #Claude Code #AI编程 #MCP #研发效率 #团队知识管理\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 实践建议较实用，但来源可信度和证据支撑不足，更适合作为AI编程流程优化的启发材料。\n**核心高价值点**: 将CLAUDE.md作为团队共享上下文提交到代码仓库，用少量规则显性化项目约定，提升AI agent输出一致性。\n\n### 摘要\n文章总结了所谓Shopify团队使用Claude Code的配置方法，包括统一LLM入口、并行agent、critique loop、MCP接入真实系统、维护CLAUDE.md、收紧权限，以及将工程师时间从执行转向策略验证。\n\n### 知识要点\n- 通过LLM proxy统一Claude Code、Copilot、Cursor等工具入口，可集中管理用量、成本和模型路由\n- 复杂任务可拆分给多个并行agent处理，人类负责审查diff、筛选结果和最终合并\n- 架构类问题适合使用critique loop，让模型先提出方案、批判风险、再修订并给出置信度\n- 通过MCP让Claude访问真实文档、CLI、GitHub、Slack、数据库或内部知识库，可降低上下文过时问题\n- AI写代码后，人的核心价值会更多转向需求判断、方案验证和架构决策\n\n### 行动项\n- 为当前项目创建精简版CLAUDE.md，控制在60行以内，包含技术栈、常用命令、目录结构和硬性规则\n- 尝试为AI编程工具设置权限边界，允许读写代码和跑测试，禁止push、deploy、读取secrets等不可逆操作\n- 在一次复杂开发任务中试验2-3个并行agent分工，并记录人工审查和合并成本\n- 针对架构决策设计critique loop提示词，要求模型输出方案、风险、修订版和置信度\n\n### 存档判定\n归档: 是 — 原因: 包含若干可直接借鉴的AI编程团队实践，如LLM gateway、CLAUDE.md、权限控制和并行agent使用方式\n不推荐: 证据质量较弱，主要来自社交媒体转述，缺少原始配置细节、数据验证和完整案例支撑\n删除: 否\n留存决策: 短期参考后可归档",
+    "role": "assistant",
+    "timestamp": 1780380915029,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:ea61aa9bcb2767263066ae84233722e3ac0ec7d25b0fce58e286c5c7ad907955",
+  "refs": {
+    "sessionId": "1780380612540_e5lq5fzd"
+  },
+  "revisionId": "sha256:c6ea1277579737deadc873a9e2f786a21133e66ec8ccdafe44a1cdef0cfdec2a",
+  "schemaVersion": 1,
+  "updatedAt": 1780380915029
+}

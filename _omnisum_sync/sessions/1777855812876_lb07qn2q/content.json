@@ -1,0 +1,15 @@
+{
+  "createdAt": 1777855812876,
+  "entityType": "session-content",
+  "id": "1777855812876_lb07qn2q",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>海拉鲁编程客</strong></header><div class=\"tw-body\">干完了，总计 13 个小时，分享一下结果。<br><br>从结果上看，基本满足了我的重构要求：去掉了一些不必要的依赖，之前 Golang 项目里选择了 Huma 管理 API Schema，后来感觉意义不大，让 AI 手搓了一套 Codegen 反而更加轻量可控。<br><br>在设定 /goal 时，我指定了一个本地 Markdown 文档，这意味着模型所有的行为都会以 Todo 的形式记录在其中。目前该文档已膨胀到 3500 多行，通过阅读它就能清晰地看到模型的行为轨迹。<br><br>在阅读文档的过程中，我发现了几处与预期有偏差的地方（毕竟涉及跨语言和多端的修改）。此时，只需在终端继续输入变更需求，Codex 就会在下一次对话中捕获这些修改，并同步更新到本地文档中。</div><blockquote class=\"tw-quote\"><strong>@hylarucoder</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\">强烈推荐大家试试 codex 新出的 /goal\n\n写好计划已经背着我干了一夜的活了。\n\n以前还需要套个 py 上点马具才能跑，现在列好计划，goal开干就对了。</span></p></blockquote></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@plutoless</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>啥时候分享一下这个todo文档啊，学习一下</p></div><div class=\"tw-reply\"><strong>@MARTIN</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>海哥用的reasoning 是什么级别？</p></div><div class=\"tw-reply\"><strong>@海拉鲁编程客</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>就是很普通的文档，直接和 codex 聊。 <br><br>总结成 docs/plans/xxxxx.md<br>然后细化多少个阶段，每个阶段都要用 todo 标记。<br>最后一段留给验收。</p></div><div class=\"tw-reply\"><strong>@海拉鲁编程客</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>默认 high， 其他的我总觉得不是瞎写，就是过渡思考。<br><br>但这都不重要，最重要的是有一个反馈和纠偏机制。就像刚才的那个文档。</p></div><div class=\"tw-reply\"><strong>@比特魔法师-蓝V互关</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>现在写代码像带了个不睡觉的实习生。  <br>干活就算了。  <br>它还顺手给你写了3500行工作日报。  <br><br>最绝的是，写偏了也不怕。  <br>你一句话，它自己回去改 Todo。  <br>这哪是 AI 编程啊，这是会自我复盘的牛马。  <br><br>程序员嘴上说稳得很。  <br>心里已经开始默默学怎么验收了，哈。</p></div></div>",
+    "pageContent": "海拉鲁编程客: 干完了，总计 13 个小时，分享一下结果。 从结果上看，基本满足了我的重构要求：去掉了一些不必要的依赖，之前 Golang 项目里选择了 Huma 管理 API Schema，后来感觉意义不大，让 AI 手搓了一套 Codegen 反而更加轻量可控。 在设定 /goal 时，我指定了一个本地 Markdown 文档，这意味着模型所有的行为都会以 Todo 的形式记录在其中。目前该文档已膨胀到 3500 多行，通过阅读它就能清晰地看到模型的行为轨迹。 在阅读文档的过程中，我发现了几处与预期有偏差的地方（毕竟涉及跨语言和多端的修改）。此时，只需在终端继续输入变更需求，Codex 就会在下一次对话中捕获这些修改，并同步更新到本地文档中。\n引用推文 (@hylarucoder):\n强烈推荐大家试试 codex 新出的 /goal 写好计划已经背着我干了一夜的活了。 以前还需要套个 py 上点马具才能跑，现在列好计划，goal开干就对了。\n---\n热门回复 (共 5 条):\n@plutoless (♥ 0 · 💬 1):\n啥时候分享一下这个todo文档啊，学习一下\n\n@MARTIN (♥ 0 · 💬 1):\n海哥用的reasoning 是什么级别？\n\n@海拉鲁编程客 (♥ 1 · 💬 0):\n就是很普通的文档，直接和 codex 聊。 \n\n总结成 docs/plans/xxxxx.md\n然后细化多少个阶段，每个阶段都要用 todo 标记。\n最后一段留给验收。\n\n@海拉鲁编程客 (♥ 1 · 💬 0):\n默认 high， 其他的我总觉得不是瞎写，就是过渡思考。\n\n但这都不重要，最重要的是有一个反馈和纠偏机制。就像刚才的那个文档。\n\n@比特魔法师-蓝V互关 (♥ 1 · 💬 0):\n现在写代码像带了个不睡觉的实习生。  \n干活就算了。  \n它还顺手给你写了3500行工作日报。  \n\n最绝的是，写偏了也不怕。  \n你一句话，它自己回去改 Todo。  \n这哪是 AI 编程啊，这是会自我复盘的牛马。  \n\n程序员嘴上说稳得很。  \n心里已经开始默默学怎么验收了，哈。\n"
+  },
+  "payloadHash": "sha256:c9c3a198b1b74b2b793d0f5244a87d2d3ee275499e5f3c97112a66dc1caf83ef",
+  "refs": {},
+  "revisionId": "sha256:84828b4f324136888e61183ae8dc269d188871103094dfff4115a71d0d6cbfa8",
+  "schemaVersion": 1,
+  "updatedAt": 1777882600381
+}

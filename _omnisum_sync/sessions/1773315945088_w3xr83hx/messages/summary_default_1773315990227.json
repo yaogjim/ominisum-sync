@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773315990228,
+  "entityType": "message",
+  "id": "summary_default_1773315990227",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "**精炼总结：**该 issue 讨论了在 Factory Droid 中启用 Codex Fast Models 失败的问题，核心原因是`provider:\"openai\"`时`extraArgs`必须按 OpenAI Responses API 的顶层参数并使用`snake_case`（如`service_tier`,`store`）配置。  \n\n**一句话评论：**这本质上不是模型不兼容，而是参数映射格式不符合接口规范导致的集成报错。  \n\n**一句话高价值内容：**直接在`customModels [].extraArgs`中传`{\"service_tier\":\"priority\",\"store\": false}`可作为 Fast 模式的最小可用配置模板。",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1773315990228,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:62ecba952236013d98b17f411e5879ab54274136f95af4130ca649987a525730",
+  "refs": {
+    "sessionId": "1773315945088_w3xr83hx"
+  },
+  "revisionId": "sha256:66fd46a80212544c5464ac659522c365fc64733020dc53637e77e13adf4b4a85",
+  "schemaVersion": 1,
+  "updatedAt": 1773315990228
+}

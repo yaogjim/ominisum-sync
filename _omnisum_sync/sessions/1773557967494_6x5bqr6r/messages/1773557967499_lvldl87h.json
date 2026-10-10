@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773557874567,
+  "entityType": "message",
+  "id": "1773557967499_lvldl87h",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章的主旨是：**Ghostty 是一个非常适合搭配 Claude Code 使用的 Mac 终端工具，核心优势是快、好看、好分屏，能明显提升写代码和调试的体验。**  \n作者用一篇入门指南，带你从安装、配置到美化和分屏实战，快速搭建一套“开箱即用”的 Claude 开发环境。\n\n---\n\n## 1. 为什么推荐 Ghostty\n作者先指出很多人使用终端时常见的痛点，比如：**终端卡顿、Claude 输出太长难看清、不知道怎么分屏、改配置容易报错**。  \nGhostty 被推荐为解决这些问题的工具，原因主要有 3 点：\n\n- **性能快**：支持 **GPU 加速**，在 macOS 上用 **Metal**，即使 Claude 输出很多内容也不容易卡。\n- **界面美观**：原生 macOS 风格，支持透明毛玻璃、**Catppuccin Mocha** 主题、连字字体。\n- **功能实用**：支持 **Kitty 图形协议**、下拉终端、快捷分屏、布局永久保存。\n\n重要背景信息：\n- 官网：**https://ghostty.org/**\n- 由 HashiCorp 联合创始人 **mitchellh** 从 **2021 年**开始开发\n- **2024 年底正式开源**\n- 核心使用 **Zig 语言**编写\n\n一句话理解：**Ghostty 兼顾速度、颜值和实用性，而且免费开源。**\n\n---\n\n## 2. 安装方式很简单\n安装步骤只有一条命令：\n\n```bash\nbrew install --cask ghostty\n```\n\n安装后可通过 **Spotlight（Command + 空格）搜索 Ghostty** 打开。  \n作者提醒：**第一次打开可能会出现两个窗口**，这是正常现象，不必紧张。\n\n---\n\n## 3. 最推荐的配置方法：直接用现成稳定配置\n作者认为，最省事的方法不是自己一点点调，而是直接使用他已经整理好的稳定配置：\n\nGitHub 仓库：\n**https://github.com/BruceLanLan/bruceblue-ghostty-config**\n\n操作逻辑：\n- 打开仓库中的 `config`\n- 点击 **Raw**\n- 复制全部内容\n- 在本地执行：\n\n```bash\nopen ~/.config/ghostty/config\n```\n\n- 粘贴覆盖原配置\n- 保存后按 **Cmd + Shift + ,** 重载配置\n\n这个配置已经包含：\n- **Catppuccin Mocha 紫色主题**\n- **Cmd + D 左右分屏**\n- **Cmd + Shift + Enter 一键放大当前面板**\n- **零报错**\n- **布局永久保存**\n\n也可以通过下载 ZIP 的方式，直接把 `config` 文件复制到 `~/.config/ghostty/`。\n\n---\n\n## 4. 最需要记住的 5 个快捷键\n作者强调：**记住下面 5 个命令就足够日常使用。**\n\n- **Cmd + D**：左右添加屏幕  \n  - 典型用法：**左边 Claude 写代码，右边 debug**\n- **Cmd + Shift + Enter**：放大当前屏幕，再按恢复\n- **Cmd + W**：关闭当前屏幕\n- **Cmd + Shift + ,**：重载配置\n- **Cmd + Q**：完全退出 Ghostty\n\n补充说明：\n- 切换屏幕时，**鼠标点一下即可**\n- 如果改了主题或分屏配置，**记得重载配置**\n\n---\n\n## 5. 美化方案：主题 + Starship 状态栏\n在美化部分，作者推荐两个重点：\n\n### 主题\n确认配置里使用：\n```bash\ntheme = Catppuccin Mocha\n```\n\n这套紫色主题被认为更舒服、适合长时间看代码。\n\n### 彩虹状态栏\n为了让终端显示更多信息，比如 **git 状态、时间、CPU**，作者推荐安装 **Starship**：\n\n```bash\nbrew install starship\nstarship preset catppuccin-powerline -o ~/.config/starship.toml\n```\n\n然后在 `~/.zshrc` 最后加入：\n\n```bash\neval \"$(starship init zsh)\"\n```\n\n保存后，**Cmd + Q 重启 Ghostty** 即可生效。\n\n---\n\n## 6. 实战场景：如何搭一个“快乐开发现场”\n作者给出了一个具体示例，展示 Ghostty 怎样配合 Claude 提升效率。\n\n先安装两个监控工具：\n\n```bash\nbrew install fastfetch btop\n```\n\n然后这样布置：\n- 按 **Cmd + D**：增加右侧屏幕\n- 左边输入：`claude`\n- 右边输入：`fastfetch`（看系统信息）\n- 再按 **Cmd + Shift + D**：增加下方屏幕\n- 输入：`btop`（实时监控 CPU）\n- 用 **Cmd + Shift + Enter**：放大任意面板查看重点内容\n\n这个例子体现了 Ghostty 的核心使用方式：\n- **Claude 负责写代码**\n- **另一个面板负责调试或监控**\n- **多面板协同工作，效率更高**\n\n---\n\n## 7. 文章结论\n作者最后想传达的是：**Ghostty 不只是一个终端，而是 Claude Code 的高效搭档。**  \n对于新手来说，它最大的价值不是“功能多”，而是能用很少的步骤就实现：\n\n- 自动进入更舒服的开发环境\n- 快速左右分屏\n- 一键放大 Claude 长输出\n- 同时查看代码、调试信息和系统状态\n\n可以把它理解成一个具体场景：  \n**左边让 Claude 写代码，右边看 debug，下方监控 CPU，整个界面既清晰又流畅。**  \n这就是作者所说的“快乐鬼混”开发体验。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773557874567,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b014ac1402f2b6445fcfce8587be62615ce84d5cbcc9b5450be1453a3ade415e",
+  "refs": {
+    "sessionId": "1773557967494_6x5bqr6r"
+  },
+  "revisionId": "sha256:e3b6995dfd80f8982f59ce89848630e443a50fed177df8c11326a7f6fdcd7cdf",
+  "schemaVersion": 1,
+  "updatedAt": 1773557874567
+}

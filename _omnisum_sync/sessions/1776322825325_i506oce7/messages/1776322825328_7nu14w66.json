@@ -1,0 +1,20 @@
+{
+  "createdAt": 1776322700008,
+  "entityType": "message",
+  "id": "1776322825328_7nu14w66",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Meta-Harness 开源发布：让 AI 代理在新领域中持续变强\n\n## 核心信息\n\nYoonho Lee 宣布正式开源 `Meta-Harness` 代码仓库。  \n这不仅是论文实验的复现工具，更重要的是，它希望帮助用户在全新任务和领域中，快速搭建并优化自己的 AI 代理评测与改进框架。\n\n## 这是什么\n\n`Meta-Harness` 可以理解为一种“让 AI 自己优化使用方式”的方法。  \n它关注的不是单次任务表现，而是如何基于历史代码、执行轨迹和评分结果，持续改进代理在真实复杂问题中的表现。\n\n## 解决了什么问题\n\n这项工作的关键目标，是解决一个很难的问题：**长期信用分配**。  \n也就是，AI 在多轮尝试、长期迭代后取得了结果，系统如何判断到底哪些行为、代码或决策真正带来了提升。\n\n这正是让 AI 从“会做任务”走向“会持续变好”的核心难点。\n\n## 对用户的实际价值\n\n仓库的设计目标很明确：\n\n- 支持复现论文实验\n- 支持在新领域中构建自己的 `Meta-Harness`\n- 用户只需让代理读取 `ONBOARDING.md` 并开始交互，即可上手\n\n这意味着，它更像一个可落地的工程化框架，而不只是学术演示。\n\n## 一句话总结\n\n`Meta-Harness` 的意义在于：**把 AI 代理的优化，从“调一次 prompt”推进到“端到端、可持续、自我改进”的系统能力。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1776322700008,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f12f9501fe3b0406757e0b93708bbfab260175525f65d29ec67a0bb69efbb615",
+  "refs": {
+    "sessionId": "1776322825325_i506oce7"
+  },
+  "revisionId": "sha256:e7b8137a7ff2b9ac6bf3a809c946096b999621cb2d909515fb218fbeb5966763",
+  "schemaVersion": 1,
+  "updatedAt": 1776322700008
+}

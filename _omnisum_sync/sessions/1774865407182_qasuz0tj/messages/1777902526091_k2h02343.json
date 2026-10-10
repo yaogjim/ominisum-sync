@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777902497964,
+  "entityType": "message",
+  "id": "1777902526091_k2h02343",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 总结\n\n作者在寻找几类能配合 **Coding Agent** 使用的工具，并给出了自己的选择：\n\n1. **Skills 管理**  \n   选择：`xingkongliang/skills-manager`\n\n2. **多 Agent 管理**  \n   选择：`ShawnPana/smux`  \n   理由：通过 `tmux-bridge` 控制终端，方式优雅。\n\n3. **手机控制 Coding Agent**  \n   选择：`happy coder`\n\n4. **看板 / 任务拆分**  \n   选择：`Conductor` 或 `Cline Kanban`  \n   用途：拆分需求、创建 worktree、驱动不同 Agent 完成任务。  \n   作者认为：维护已有代码库时，看板更合适；从零写项目时，更喜欢 `smux`。\n\n5. **Desktop 应用**  \n   用于非编码任务。  \n   推荐：`Codex App`，如果没有订阅，可以看看 `Alma` 等。\n\n作者的整体偏好是：\n\n> 选择“封装”现有能力，而不是完全替代底层工具。  \n> 底层尽量保持使用 Claude Code、Codex 或 OpenCode。\n\n热门回复中还补充了几个工具：\n\n- `aghub`：有人认为可以同时覆盖 skill 管理和 agent 管理，还支持 MCP。\n- `skill-optimizer`：不是管理 skill 开关，而是诊断 skill 的质量。\n- `Skill Flow`：另一个 skill 管理工具。\n- 有人表示自己也开发了类似工具，底层封装 Claude 和 Codex。\n\n---\n\n# 解读\n\n这条内容本质上是在讨论：\n\n> 如何搭建一套更高效的 AI 编程工作流。\n\n现在很多人已经不只是单独使用 ChatGPT、Claude 或 Codex 写代码，而是开始把它们组合成一套“自动化开发系统”。\n\n可以简单理解为：\n\n## 1. Skills 管理：给 Agent 配工具箱\n\nCoding Agent 本身像一个程序员，但它需要不同的“技能包”。\n\n比如：\n\n- 写测试\n- 重构代码\n- 生成文档\n- 修复 bug\n- 做代码审查\n- 调用特定工具链\n\nSkills 管理工具的作用，就是帮你管理这些技能：  \n哪些启用、哪些禁用、什么时候触发、效果好不好。\n\n---\n\n## 2. 多 Agent 管理：让多个 AI 程序员协作\n\n一个 Agent 可能负责前端，另一个负责后端，还有一个负责测试。\n\n多 Agent 管理工具就是协调这些 AI：\n\n- 分配任务\n- 管理不同终端\n- 查看执行状态\n- 避免互相干扰\n\n作者喜欢 `smux`，是因为它基于 `tmux` 控制终端，比较接近真实开发环境，灵活性高。\n\n---\n\n## 3. 手机控制：随时随地调度 AI\n\n手机控制工具的价值在于：\n\n- 出门也能查看 Agent 进度\n- 远程启动任务\n- 简单审批或修改需求\n- 不必一直守在电脑前\n\n这类工具适合已经把 Agent 当成“远程开发助手”的用户。\n\n---\n\n## 4. 看板：把需求拆成可执行任务\n\n看板工具更适合管理复杂项目。\n\n比如一个需求可以拆成：\n\n- 设计数据库\n- 写接口\n- 写前端页面\n- 补测试\n- 修 bug\n- 提交 PR\n\n然后每个任务交给不同 Agent 去做。\n\n作者提到，看板更适合维护已有代码库，因为已有项目结构清楚，任务边界也更明确。\n\n但如果是从零开始写代码，作者更喜欢 `smux`，因为终端式操作更自由，不容易被看板流程限制。\n\n---\n\n## 5. Desktop 应用：处理非编码任务\n\nDesktop 类应用不一定只写代码，也可以做：\n\n- 总结文档\n- 整理需求\n- 分析资料\n- 写产品说明\n- 生成计划\n- 辅助沟通\n\n这类应用现在很多，作者认为 `Codex App` 已经很好用。\n\n---\n\n# 我的意见\n\n我比较认同作者的核心观点：\n\n> 不要急着找一个“大而全”的 AI 编程平台，而是优先选择能封装 Claude Code、Codex、OpenCode 等底层能力的工具。\n\n原因很简单：\n\n## 1. 底层模型和编码工具才是核心\n\n真正决定效果的，往往不是外壳 App，而是底层能力：\n\n- 模型是否强\n- 是否理解代码库\n- 是否能稳定执行命令\n- 是否能处理长上下文\n- 是否能安全修改文件\n\n所以工具最好是增强 Claude Code、Codex，而不是把它们完全替换掉。\n\n---\n\n## 2. 工作流要根据场景选\n\n不同场景适合不同工具：\n\n| 场景 | 更适合的工具 |\n|---|---|\n| 小任务、快速实验 | Claude Code / Codex 直接用 |\n| 多个 Agent 并行 | smux / tmux 类工具 |\n| 维护已有项目 | 看板工具 |\n| 远程控制 | happy coder 类手机 App |\n| 管理技能包 | skills-manager / Skill Flow |\n| 诊断效果 | skill-optimizer |\n\n不需要一开始就全部上。\n\n---\n\n## 3. 普通开发者可以这样入门\n\n如果只是想提高编程效率，我建议从简单组合开始：\n\n1. 先用好 **Claude Code 或 Codex**\n2. 再加一个 **任务管理方式**，比如简单 Markdown 或看板\n3. 如果任务变多，再引入 **多 Agent 管理**\n4. 最后再考虑 **Skill 管理、手机控制、自动诊断**\n\n不要为了搭系统而搭系统。\n\n---\n\n# 简短结论\n\n这条内容反映了一个趋势：\n\n> AI 编程正在从“单个聊天助手”变成“多 Agent 协作工作流”。\n\n作者推荐的工具组合偏工程化、偏实用，核心思路是：\n\n- 底层用 Claude Code / Codex / OpenCode\n- 外层用工具做封装和调度\n- 根据场景选择 Skills、多 Agent、看板、手机端、Desktop App\n\n我的建议是：  \n**先把一个主力 Coding Agent 用熟，再逐步增加管理工具。工具越多不一定越高效，稳定、清晰、可控才最重要。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1777902497964,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e7ef297d259f21911998a3ff48737fce318c99fb1cd56745f262151a7dbad461",
+  "refs": {
+    "sessionId": "1774865407182_qasuz0tj"
+  },
+  "revisionId": "sha256:90dc4131f18bf1d5c84e3581ccec4a67f49357ab541de51971a16623615a7bfd",
+  "schemaVersion": 1,
+  "updatedAt": 1777902497964
+}

@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773653909020,
+  "entityType": "session",
+  "id": "1773653909020_01h2zjqx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在做AI代理或自动化测试，可实际安装并验证`snapshot + ref`工作流是否优于Playwright脚本选择器",
+      "评估其安全选项（域名白名单、action policy、content boundaries）是否适合你的代理执行环境"
+    ],
+    "archiveReason": "命令覆盖全面，适合作为后续接入AI代理浏览器控制时的参考文档",
+    "classifiedAt": 1773829372919,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "AI代理浏览器自动化CLI概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "提供面向AI代理的浏览器自动化CLI，支持点击、填表、截图、等待、网络拦截等完整操作",
+      "通过`snapshot`输出可访问性树并生成`@eN`引用，提升LLM选择元素的稳定性",
+      "支持会话隔离、持久化profile、状态文件与加密存储，便于处理登录态",
+      "内置安全能力，如域名白名单、操作确认、内容边界标记和输出长度限制",
+      "可通过CDP连接现有Chrome，也可接入Browserless、Browserbase等云浏览器服务"
+    ],
+    "oneHighValuePoint": "基于`snapshot + ref`的交互模式对LLM尤其友好，能把页面理解与稳定元素操作结合起来。",
+    "oneLineReview": "功能非常全、上手很快，但偏工具手册而非高质量深度文章。",
+    "primaryCategory": "AI Agent工具与浏览器自动化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为AI代理浏览器自动化工具选型与查阅手册",
+    "secondaryCategories": [
+      "开发者工具",
+      "CLI文档"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份面向AI代理的浏览器自动化CLI项目说明，覆盖安装、命令集、会话管理、安全策略、CDP连接、云浏览器接入与iOS支持等内容。实操性很强，但更像功能索引，缺少性能对比、真实案例和方法论沉淀。",
+    "tags": [
+      "browser automation",
+      "AI agents",
+      "CLI",
+      "Rust",
+      "CDP"
+    ],
+    "title": "vercel-labs/agent-browser: Browser automation CLI for AI agents",
+    "totalScore": 63.5,
+    "url": "https://github.com/vercel-labs/agent-browser"
+  },
+  "payloadHash": "sha256:33f24efe6fb5a0d24170bcc7f57c4b6c026cdb49af20edd343efeff5101a3aec",
+  "refs": {},
+  "revisionId": "sha256:40543cda6de629e778d8acfd14f00fe19b58a56125862dec6182e0ac5e232105",
+  "schemaVersion": 1,
+  "updatedAt": 1773829372929
+}

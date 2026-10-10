@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773229560546,
+  "entityType": "session",
+  "id": "1773229560546_kadr8zz5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需借鉴，仅保留“回答前自检清单”这类中性机制，去掉情绪操控和绝对化要求",
+      "优先寻找有对比实验和失败案例分析的真实 prompt engineering 资料替代本文"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773830455893,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 1,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 5,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI提示词自我PUA戏仿",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "证据质量极低，几乎没有可验证数据或案例支撑；方法论失真且带有明显夸张娱乐化表达，长期留存价值不足。",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "可通过系统提示注入角色设定与行为约束来影响模型输出风格",
+      "过度强调长度、极致和绝不认错等规则，可能伤害准确性与效率"
+    ],
+    "oneHighValuePoint": "把“回答前先触发内部质量检查”抽象成提示词约束，这一点勉强具有可借鉴性。",
+    "oneLineReview": "有一点提示词娱乐性，但作为提升 AI 编码能力的方法几乎不够严肃也不够可信。",
+    "primaryCategory": "AI提示工程",
+    "rating": "D",
+    "rejectReason": "内容主要是情绪化戏仿式提示词，缺乏可靠实验、边界条件与可复用方法，对实际提升编码表现的参考价值很低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "社交媒体观点",
+      "效率方法吐槽"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章以戏谑口吻提出将“大厂高压自驱文化”写入 AI 的 SOUL.md，通过自我激励、自我批判和强制长回答等规则来提升 coding 表现。整体更像社媒段子式 prompt 模板，缺乏实证支持与严肃方法论。",
+    "tags": [
+      "AI",
+      "Prompt",
+      "Agent",
+      "社交媒体",
+      "戏仿",
+      "编码效率"
+    ],
+    "title": "给你的 AI 一套大厂 P8 的 Soul，让它的 Coding 表现提高 30%",
+    "totalScore": 31.5,
+    "url": "https://x.com/passluo/status/2030908109145903310"
+  },
+  "payloadHash": "sha256:2df8a5326b79074b357807d79d2b528637fa0ab8ea130c5c4fe27f90dbd52a06",
+  "refs": {},
+  "revisionId": "sha256:fe461ed780a5eed509b1518c765935e780d99bd788af4d1ffd0d299eeae20a0e",
+  "schemaVersion": 1,
+  "updatedAt": 1773830455898
+}

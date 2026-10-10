@@ -1,0 +1,67 @@
+{
+  "createdAt": 1774316988720,
+  "entityType": "session",
+  "id": "1774316988720_240x75f8",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为目标市场梳理核心外部数据源，并设计定时采集与增量更新流程",
+      "建立统一的本地存储格式与幂等去重机制，持续沉淀可回测的数据资产"
+    ],
+    "archiveReason": "虽然篇幅很短，但点出了策略开发中数据采集、同步、持久化比策略本身更关键，适合做方法论备忘",
+    "classifiedAt": 1774317008668,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 5,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "预测市场的数据基建价值",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "预测市场不同细分赛道依赖不同外部数据源与采集频率",
+      "增量同步、幂等去重、本地持久化是数据管道的关键设计点",
+      "长期沉淀的结构化历史数据本身可以形成竞争优势"
+    ],
+    "oneHighValuePoint": "长期积累、可重复利用的专有历史数据，比短期可复制的策略代码更接近真实护城河。",
+    "oneLineReview": "有启发但不够展开，是一条有价值的经验判断，不是一篇证据充分的深度文章。",
+    "primaryCategory": "数据工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后归档，适合作为数据驱动型交易系统的基础设施提醒",
+    "secondaryCategories": [
+      "量化交易",
+      "预测市场"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章核心观点是：预测市场量化里真正构成护城河的并非策略代码，而是长期稳定的数据采集、增量同步、本地持久化与幂等去重等基础设施。内容短但方向明确，启发在于强调先搭数据底座再谈策略。",
+    "tags": [
+      "Polymarket",
+      "数据采集",
+      "增量同步",
+      "本地持久化",
+      "jsonl",
+      "数据基建"
+    ],
+    "title": "Leo: 预测市场量化做久了发现，策略代码只是冰山尖，下面 80% 是数据基建",
+    "totalScore": 56.5,
+    "url": "https://x.com/runes_leo/status/2036028294244524126"
+  },
+  "payloadHash": "sha256:f78211c9c375132b9da2b93caa3ba3c25a18063fd760e62d8848ab3c9b80b1c0",
+  "refs": {},
+  "revisionId": "sha256:8383621f3f65099a0e4a13a5af0be286a76541d3a900594e36071633721c1937",
+  "schemaVersion": 1,
+  "updatedAt": 1774334465380
+}

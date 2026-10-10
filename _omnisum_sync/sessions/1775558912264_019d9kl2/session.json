@@ -1,0 +1,63 @@
+{
+  "createdAt": 1775558912264,
+  "entityType": "session",
+  "id": "1775558912264_019d9kl2",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在 Mac/Linux 环境安装 Node.js 20+ 后执行 npm install -g fieldtheory 进行试用",
+      "使用 ft sync 和 ft sync --full 验证同步效果，并评估是否纳入个人知识管理流程"
+    ],
+    "archiveReason": "提供了可直接试用的工具名、原理和基础安装步骤，对后续检索和复现实验有参考价值",
+    "classifiedAt": 1775558936829,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "X书签本地抓取工具分享",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "fieldtheory 可通过 Chrome 会话 Cookie 调用 X 内部 GraphQL API 抓取书签",
+      "工具支持增量同步和全量重抓，适合构建本地可检索书签库"
+    ],
+    "oneHighValuePoint": "无需 X API Key 即可把书签本地化到 SQLite，显著提升后续搜索、分类和 Agent 调用效率。",
+    "oneLineReview": "有明确工具价值和一定操作性，但信息来源偏转述，证据与方法深度明显不足。",
+    "primaryCategory": "AI工作流工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，适合在需要抓取X书签或搭建本地知识库时回看",
+    "secondaryCategories": [
+      "内容抓取",
+      "知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章核心是在推荐 fieldtheory 这一可将 X 书签同步到本地 SQLite 的轻量 CLI，通过读取 Chrome 会话 Cookie 调用 X 内部 GraphQL API，无需官方 API Key，并给出 Mac 下的基础安装与同步命令。",
+    "tags": [
+      "X书签",
+      "CLI工具",
+      "本地同步"
+    ],
+    "title": "逸尘: 这个是我近期觉得最牛逼的工具分享",
+    "totalScore": 55.5,
+    "url": "https://x.com/gengdaJ/status/2040730937290629573"
+  },
+  "payloadHash": "sha256:9eba761327457d2e7776fc9c97c54686cf482b9dd0e2e0b1213e03b06608fd81",
+  "refs": {},
+  "revisionId": "sha256:e8250013d323c3fa4eb978fb809d3f0b2a09f455b3effd699dece4c6bcf4b69e",
+  "schemaVersion": 1,
+  "updatedAt": 1775559642435
+}

@@ -1,0 +1,15 @@
+{
+  "createdAt": 1774404555035,
+  "entityType": "session-content",
+  "id": "1774404555035_1wwakkwv",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>0xSero</strong></header><div class=\"tw-body\"><br>人们说 Qwen3.5-27B 非常强大，所言不虚。<br><br>Bubble size = 总参数 - 世界知识、语言、技能<br>2. X 轴 = 激活的参数 - 每个 token 的原始智能<br>3. Y 轴 = tokens/秒 - 预填充和解码生成速度<br><br>GLM-5 | 744B 参数  | 40B 活跃<br>Kimi-K2.5 | 1 万亿参数 | 32 亿活跃<br>Qwen3.5-27B | 270 亿激活参数<br>Qwen3.5-Plus | 3970 亿参数  | 170 亿激活参数<br>MiniMax-M2.7 | 2290 亿参数  | 100 亿激活<br><br>MoEs 能够存储更多的世界知识，以及信息的广度。<br><br>对于 Mixture-of-Expert，你可以将其参数配置到最多 1 万亿，这样你可以给它提供 20 万亿 token 或更多的训练数据，它会学到更多。<br><br>但在运行时，只有其中一小部分会被激活。以 MiniMax-M2.5 为例：<br><br>同时只有 10B 处于活跃状态，因此当你使用它时，你能获得与 nemotron-8B 相近的速度和智能水平，只是 MiniMax-M2.5 能够了解更多信息，因此表现更好。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HELcbCLXQAIZw-P?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@BillsKhakis</strong> <span class=\"tw-eng\">♥ 252 · 💬 17</span><p>自豪地在美国裁剪和缝制。经典风格，卓越舒适。</p></div><div class=\"tw-reply\"><strong>@Fiddler AI</strong> <span class=\"tw-eng\">♥ 162 · 💬 15</span><p>您的团队推出 AI 的速度比以往任何时候都快。他们是否在可观测性、治理和信任方面跟上了步伐？<br><br>Fiddler 是企业级 AI 的控制平面。为团队提供标准化遥测、持续监控以及可审计的治理，覆盖智能代理全生命周期。</p></div><div class=\"tw-reply\"><strong>@sudo rm -rf</strong> <span class=\"tw-eng\">♥ 20 · 💬 4</span><p>我想要一个通义千问的 70B 密集模型</p></div><div class=\"tw-reply\"><strong>@Pierre Bongrand</strong> <span class=\"tw-eng\">♥ 8 · 💬 1</span><p>如果可以的话，上面的公式里，减号让我有点不舒服。或许直接把这些减号替换成“->”就行。</p></div><div class=\"tw-reply\"><strong>@pls seed</strong> <span class=\"tw-eng\">♥ 5 · 💬 2</span><p>我正在使用 27b 模型，它是一个很棒的模型。默认情况下它会过度思考，但是可以通过系统提示来控制。</p></div></div>",
+    "pageContent": "0xSero: 人们说 Qwen3.5-27B 非常强大，所言不虚。 Bubble size = 总参数 - 世界知识、语言、技能\n2. X 轴 = 激活的参数 - 每个 token 的原始智能\n3. Y 轴 = tokens/秒 - 预填充和解码生成速度 GLM-5 | 744B 参数 | 40B 活跃\nKimi-K2.5 | 1 万亿参数 | 32 亿活跃\nQwen3.5-27B | 270 亿激活参数\nQwen3.5-Plus | 3970 亿参数 | 170 亿激活参数\nMiniMax-M2.7 | 2290 亿参数 | 100 亿激活 MoEs 能够存储更多的世界知识，以及信息的广度。 对于 Mixture-of-Expert，你可以将其参数配置到最多 1 万亿，这样你可以给它提供 20 万亿 token 或更多的训练数据，它会学到更多。 但在运行时，只有其中一小部分会被激活。以 MiniMax-M2.5 为例： 同时只有 10B 处于活跃状态，因此当你使用它时，你能获得与 nemotron-8B 相近的速度和智能水平，只是 MiniMax-M2.5 能够了解更多信息，因此表现更好。\n![图片](https://pbs.twimg.com/media/HELcbCLXQAIZw-P?format=jpg&name=large)\n---\n热门回复 (共 5 条):\n@BillsKhakis (♥ 252 · 💬 17):\n自豪地在美国裁剪和缝制。经典风格，卓越舒适。\n\n@Fiddler AI (♥ 162 · 💬 15):\n您的团队推出 AI 的速度比以往任何时候都快。他们是否在可观测性、治理和信任方面跟上了步伐？\n\nFiddler 是企业级 AI 的控制平面。为团队提供标准化遥测、持续监控以及可审计的治理，覆盖智能代理全生命周期。\n\n@sudo rm -rf (♥ 20 · 💬 4):\n我想要一个通义千问的 70B 密集模型\n\n@Pierre Bongrand (♥ 8 · 💬 1):\n如果可以的话，上面的公式里，减号让我有点不舒服。或许直接把这些减号替换成“->”就行。\n\n@pls seed (♥ 5 · 💬 2):\n我正在使用 27b 模型，它是一个很棒的模型。默认情况下它会过度思考，但是可以通过系统提示来控制。\n"
+  },
+  "payloadHash": "sha256:2684d655090dfaf449dc781186feda0eb10111a9b1f76e539a88d7d56d85ec69",
+  "refs": {},
+  "revisionId": "sha256:8a98c4161c7c5a11ae3df476a1ea56cafc101db63bcbbf66b096eb19b98876f0",
+  "schemaVersion": 1,
+  "updatedAt": 1774433594265
+}

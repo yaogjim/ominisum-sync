@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773297585940,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773297585940",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "下面给你一个**具体实例**，并提炼成这套 harness engineering 的**最佳实践（精炼版）**。\n\n---\n\n## 具体实例：用 Linear 驱动一个 “修复登录 bug” 的自动开发流程\n\n### 场景\n用户在手机上打开 Linear，新建一个 issue：\n\n**标题**：修复登录接口在 token 过期时返回 500  \n**内容**：\n- 复现路径：登录后放置 2 小时，再调用`/api/profile`\n- 预期结果：返回 401\n- 实际结果：返回 500\n- 仓库：`backend-api`\n\n然后把这个 issue assign 给机器人。\n\n---\n\n## 这套系统如何运转\n\n### 1. Linear 作为入口\n- issue 是任务单元\n- assign 是启动信号\n- comment 是人机沟通通道\n- timeline 是可观测面板\n\n**最佳实践**：\n- issue 模板标准化：`问题描述 / 复现步骤 / 预期结果 / 仓库 / 验收标准`\n- assign 才触发执行，避免 agent 被噪音信息唤醒\n- 所有进展回写 issue timeline，确保手机可追踪\n\n---\n\n### 2. EdgeWorker 作为调度中枢\n它收到 webhook 后判断：\n- 这是**bugfix**\n- 对应仓库是`backend-api`\n- 应该走流程：`coding → verification → summary`\n\n**最佳实践**：\n- 不让 agent “自由发挥选流程”，而是由中枢按任务类型路由\n- bug /feature/refactor 使用不同 prompt 和 pipeline\n- 在入口层做约束，比事后补救更便宜\n\n---\n\n### 3. Git worktree 作为隔离环境\n系统自动创建：\n- 分支：`fix/linear-184-token-expired-401`\n- worktree：独立目录\n\n这样 agent 改代码不会污染主工作区，也不会和别的 issue 冲突。\n\n**最佳实践**：\n- 一 issue 一 worktree 一 branch\n- 不在 main 或共享目录直接操作\n- 所有临时文件、测试改动都限制在隔离区\n\n---\n\n### 4. tmux + Claude Code 开始执行\nEdgeWorker 在 tmux 会话里启动 Claude Code，把 prompt 注入进去，比如：\n\n- 阅读 issue\n- 定位登录鉴权逻辑\n- 找出 500 的原因\n- 修改成 token 过期时返回 401\n- 补测试\n- 运行验证\n\nClaude Code 真正负责：\n- 读代码\n- 改代码\n- 跑测试\n- 调工具\n\n**最佳实践**：\n- agent 保持 “原生交互模式” 运行，不要阉割能力\n- harness 只负责 “约束 + 编排 + 观察”，不替代 agent 本身\n- 用 tmux 作为稳定物理接口，降低集成复杂度\n\n---\n\n### 5. JSONL log 做实时观察\nClaude Code 执行时产生 session.jsonl，harness 持续读取并解析：\n\n例如 timeline 上同步显示：\n- 正在读取`auth/middleware.ts`\n- 发现异常：token 过期被统一包装成内部错误\n- 正在修改错误映射逻辑\n- 正在运行测试：`auth.spec.ts`\n- 测试通过，准备生成总结\n\n**最佳实践**：\n- 流式回传 “阶段性进展”，不要只回最终结果\n- 展示 “正在做什么”，而不是暴露冗长原始思维\n- 反馈结构化：`阶段 / 动作 / 结果 / 阻塞`\n\n---\n\n### 6. 遇到不确定点时，通过 Linear 问用户\n如果 agent 发现一个分歧：\n- token 过期到底返回`401`还是`403`？\n\n它通过 Linear MCP 在 issue 下提问：\n> 我发现当前系统对鉴权失败存在 401/403 两种历史实现。  \n> 这个问题的验收标准是否以 401 为准？\n\n用户在手机上回复：\n> 统一改成 401。\n\nagent 接着干。\n\n**最佳实践**：\n- 不确定的产品决策，及时 ask_user，不要擅自猜\n- 让 Linear 成为唯一的人机对话面板，避免沟通分散到 IM / 终端\n- 问题要具体、可决策，减少来回轮次\n\n---\n\n### 7. Subroutine pipeline 保证流程完整\n不是 “改完就算”，而是强制经过：\n\n1. **coding**：只允许读写代码、搜索、编辑  \n2. **verification**：只允许跑测试、lint、类型检查  \n3. **git-gh**：准备提交信息、PR 材料  \n4. **summary**：输出变更摘要、风险、验证结果\n\n**最佳实践**：\n- 分阶段限权，降低误操作\n- verification 独立出来，避免 “写完直接宣布完成”\n- summary 固定格式，便于 issue 回看和审计\n\n---\n\n## 这个实例上的最佳实践总结\n\n### 一句话版\n**让 Linear 管任务，EdgeWorker 定策略，worktree 做隔离，tmux 驱动 agent，JSONL 做观测，pipeline 保证闭环。**\n\n### 精炼原则\n1. **入口标准化**：issue 模板统一，assign 才触发  \n2. **调度中心化**：任务分类、仓库路由、prompt 选择都在 EdgeWorker  \n3. **执行隔离化**：每个 issue 独立 branch/worktree  \n4. **交互单一化**：所有人机沟通都回到 Linear  \n5. **观测流式化**：进展持续回传，不做黑盒执行  \n6. **流程强约束**：coding、verification、summary 必须分阶段  \n7. **决策显式化**：遇到产品歧义立刻 ask_user  \n8. **能力原生化**：Claude Code 保持原生能力，harness 不重复造轮子\n\n---\n\n## 最终你可以把它理解成\n这个实例里最好的落地方式不是 “做一个会写代码的机器人”，而是：\n\n**做一个可调度、可观察、可追问、可隔离、可验收的自动化软件工人系统。**\n\n如果你愿意，我还可以进一步把这个实例整理成一张：  \n**“Linear 驱动 Claude Code 的 harness 架构图（极简版）”**。",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773297585940,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9f899c53bccc6e088a93a93fb9eeb9a07937d95a4514047de086ae03826c5c3e",
+  "refs": {
+    "sessionId": "1773297446673_hmyue7e4"
+  },
+  "revisionId": "sha256:7dffcf169736d8d93c660d2a6c16c144e08a730ed6cea9625edcd19fa9c15f34",
+  "schemaVersion": 1,
+  "updatedAt": 1773297585940
+}

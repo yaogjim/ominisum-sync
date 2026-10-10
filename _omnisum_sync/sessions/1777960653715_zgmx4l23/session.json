@@ -1,0 +1,67 @@
+{
+  "createdAt": 1777960653715,
+  "entityType": "session",
+  "id": "1777960653715_zgmx4l23",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "打开keep-codex-fast仓库，查看其具体清理规则和安全边界",
+      "在本地Codex环境中检查thread、worktrees和日志占用空间",
+      "将安全清理流程做成定时任务或交给AI agent定期执行"
+    ],
+    "archiveReason": "提供了一个可操作的Codex本地状态清理思路和相关GitHub工具链接，适合在遇到性能问题时参考",
+    "classifiedAt": 1777960828813,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex卡顿清理维护方法",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Codex卡顿可能与本地thread、worktrees、日志等状态文件膨胀有关",
+      "可通过归档旧任务、旧worktrees和过大日志来改善本地工具性能",
+      "keep-codex-fast项目提供了维护Codex本地状态的思路或技能封装"
+    ],
+    "oneHighValuePoint": "将Codex本地状态检查与清理流程封装成可由AI agent定期执行的维护任务。",
+    "oneLineReview": "一条偏经验分享的实用推文，信息不深但对Codex重度用户有即时参考价值。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留链接，若已实践或记录到工具维护流程中可删除原推文",
+    "secondaryCategories": [
+      "开发效率",
+      "本地环境维护"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提到通过检查Codex本地占用空间、归档过大的thread、旧worktrees和日志，并将这些检查做成定时任务，可缓解Codex卡顿问题。核心价值在于指向keep-codex-fast工具，并建议用AI agent辅助维护。",
+    "tags": [
+      "Codex",
+      "AI Agent",
+      "性能优化",
+      "定时清理",
+      "worktrees"
+    ],
+    "title": "x.com/vikingmute/status/2051194933730738452",
+    "totalScore": 55.5,
+    "url": "https://x.com/vikingmute/status/2051194933730738452"
+  },
+  "payloadHash": "sha256:0f4f0b95baa0631875506b607d7692aba8f0de1f7c3cced372276387d39458ca",
+  "refs": {},
+  "revisionId": "sha256:764fdb50bff181d0c894f8b8a1d577d2ab409f11fb799e61a087ea2b19412f1f",
+  "schemaVersion": 1,
+  "updatedAt": 1777965312058
+}

@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777277212997,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1777277212997",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 使用子代理保持 Claude Code 上下文整洁\n\n本文介绍了 Claude Code 中 “子代理” 的作用：让复杂任务在独立上下文中执行，只把最终结果返回给主会话，从而避免大量无用工具调用污染上下文。文章还说明了如何创建子代理、内置子代理的用途、分叉上下文机制，以及用于实时观察上下文变化的工具。\n\n---\n\n## 1. 什么是子代理\n\n子代理可以理解为一个 “专门干某类活的助手”。\n\n它有自己的：\n\n- 上下文窗口\n- 系统提示词\n- 可用工具\n- 权限设置\n\n主代理会在需要时调用它，子代理独立完成任务后，只返回总结结果。\n\n例如，可以创建一个代码审查子代理：\n\n```markdown\n---\nname: code-reviewer\ndescription: Reviews code for quality, security, and maintainability. Use after writing or modifying code.\ntools: Read, Grep, Glob, Bash\nmodel: sonnet\n---\n\nYou are a senior code reviewer. When invoked:\n1. Run git diff to see recent changes\n2. Focus on modified files\n3. Start the review immediately\n```\n\n这个子代理的作用是：\n\n- 查看最近代码变更\n- 聚焦被修改的文件\n- 直接进行代码审查\n\nClaude Code 会根据`description`自动判断何时调用它。\n\n---\n\n## 2. 子代理文件放在哪里\n\n子代理通过 Markdown 文件定义，可以放在不同位置。\n\n常见位置有：\n\n- `.claude/agents/`  \n  适合项目级使用，可以提交到版本控制，方便团队共享。\n\n- `~/.claude/agents/`  \n  适合个人使用，在不同项目中都可用。\n\n如果多个位置存在同名子代理，优先级更高的位置会覆盖其他位置。\n\n---\n\n## 3. 没有子代理的问题：上下文会变得混乱\n\n如果没有子代理，所有操作都由主代理在同一个上下文中完成。\n\n例如你让 Claude：\n\n- 检查控制器\n- 查找代码模式\n- 验证某些实现\n- 搜索文件和目录\n\n它可能会执行大量命令：\n\n- `grep`\n- `find`\n- `ls`\n- `glob`\n- `cd`\n\n这些工具调用都会留在主会话上下文里。\n\n文章举例说，长时间使用 30 分钟后，可能积累**80k 个几乎不会再看的噪声 token**。\n\n问题在于：\n\n- 上下文被无用信息占满\n- Claude 压缩上下文时，重要细节可能被总结丢失\n- 主会话越来越难保持清晰\n\n---\n\n## 4. 内置子代理：探索与规划\n\nClaude Code 自带一些常见场景下可用的子代理，其中最常用的是 “探索” 类子代理。\n\n### 探索子代理的作用\n\n它可以在不污染主上下文的情况下搜索代码库。\n\n例如它会在自己的独立窗口中执行：\n\n- `grep`\n- `find`\n- 文件搜索\n- 代码定位\n\n最后只返回真正有用的结果。\n\n也就是说，原本主窗口里可能出现**50 次工具调用**，现在只会变成几行简洁答案。\n\n无关的搜索过程会被丢弃，不进入主上下文。\n\n---\n\n## 5. 分叉上下文：让子代理继承主会话理解\n\n默认情况下，子代理从空白上下文开始。\n\n这有利于保持简洁，但也有缺点：\n\n如果你已经花了很多时间让 Claude 理解项目，比如主会话已经积累了**100k token**的代码库背景信息，普通子代理无法继承这些理解。\n\n为了解决这个问题，可以使用 “分叉上下文”。\n\n开启方式：\n\n```bash\nexport CLAUDE_CODE_FORK_SUBAGENT=1\n```\n\n开启后，子代理在生成时会继承父代理当前完整上下文。\n\n也可以使用`/fork`命令按需创建分叉子代理。\n\n---\n\n## 6. 分叉子代理的工作方式\n\n开启分叉后，子代理具备以下特点：\n\n- 在分叉时继承父会话的完整上下文\n- 与父代理共享提示词缓存前缀\n- 从第 2 个到第 N 个子代理开始，输入 token 成本大约降低**10 倍**\n- 子代理独立运行\n- 子代理的工具调用不会污染父会话\n- 最终只返回结果总结\n\n简单来说，分叉子代理既能理解主会话已有背景，又不会把搜索、分析过程塞回主上下文。\n\n---\n\n## 7. 实时查看上下文：context-timeline 钩子\n\n文章还介绍了一个作者构建的监控工具：`context-timeline`。\n\n链接：\n\n```text\nhttps://www.aitmpl.com/component/hook/monitoring/context-timeline\n```\n\n安装命令：\n\n```bash\nnpx claude-code-templates@latest --hook monitoring/context-timeline\n```\n\n它的作用是：\n\n- 在会话开启时启动\n- 展示主代理的上下文时间线\n- 展示各个子代理何时开始工作\n- 实时显示子代理独立上下文中的运行情况\n- 显示子代理完成后返回给主代理的内容\n\n这个工具适合用来观察主代理和多个子代理之间的上下文流动。\n\n---\n\n## 8. 作者建议\n\n作者建议从一个简单的子代理开始，放在：\n\n```text\n.claude/agents/\n```\n\n这样可以在项目中长期使用，也方便团队共享。\n\n在第一次长时间 Claude Code 会话中，你就能明显感受到区别：主上下文更干净，搜索过程更少干扰，重要信息更不容易被淹没。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1777277212997,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ff6ffd7fc52d38ce66f356b87757a6b616b327f0440ad84aec1c7f04e2d08d94",
+  "refs": {
+    "sessionId": "1777277196863_2qqfukxn"
+  },
+  "revisionId": "sha256:fd27c646a17459b7e9deaf11782fe5679577828f500db95f35029706323e17cb",
+  "schemaVersion": 1,
+  "updatedAt": 1777277212997
+}

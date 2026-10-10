@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777442625630,
+  "entityType": "message",
+  "id": "1777442625629_aai6grfg",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Deep Agents部署开放替代\n\n**评级**: B (59.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI智能体开发\n**次类别**: LLM应用部署, 开源框架\n**标签**: #Deep Agents #LangChain #AI Agent #模型无关 #记忆管理\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一篇偏产品发布和立场宣传的技术博客，有一定选型参考价值，但证据和实操细节不足。\n**核心高价值点**: 代理框架的长期锁定风险主要来自记忆和上下文资产，而不仅是模型API本身。\n\n### 摘要\n文章发布Deep Agents deploy测试版，强调其作为开源、模型无关的代理部署方案，可统一部署编排、沙箱、端点和记忆，并主打避免专有托管代理带来的记忆锁定。\n\n### 知识要点\n- Deep Agents deploy试图用一个命令完成代理编排、沙箱和交互端点的生产部署。\n- 其配置核心包括model、AGENTS.md、skills、mcp.json和sandbox。\n- 文章认为开放代理框架的重要性在于让企业保有代理记忆和客户交互数据。\n- Claude Managed Agents被描述为封闭生态，可能在记忆层造成迁移成本。\n\n### 行动项\n- 如正在评估AI Agent部署平台，可对比Deep Agents deploy与Claude Managed Agents的锁定风险。\n- 查看Deep Agents文档和GitHub，确认其部署流程、沙箱集成和记忆存储格式是否满足项目需求。\n\n### 存档判定\n归档: 是 — 原因: 介绍了Deep Agents deploy的定位、部署要素及与Claude Managed Agents的差异，可作为AI Agent部署方案选型参考。\n删除: 否\n留存决策: 短期参考后可保留",
+    "role": "assistant",
+    "timestamp": 1777442625630,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:7ad395e1982644bea6a49bb44b33e2a75bd63a0709f113206bcdcebe94eeee9e",
+  "refs": {
+    "sessionId": "1777338956615_sg7e2k5v"
+  },
+  "revisionId": "sha256:1640fb45aa8686d0603b0d294702f92d84f65ecc3faf22ccc2d7f056b274d91e",
+  "schemaVersion": 1,
+  "updatedAt": 1777442625630
+}

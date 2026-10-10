@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773650025674,
+  "entityType": "session",
+  "id": "1773650025674_pyak56iq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你的工作涉及 AI Agent 基础设施，可评估其是否能替代现有单一云厂商沙箱接入层",
+      "根据文中的能力矩阵，对照自身需求核对目标 Provider 是否支持 volumes、port.expose、snapshot 等能力",
+      "先用 README 的快速开始示例跑通一个最小原型，再决定是否深入阅读源码和一致性测试"
+    ],
+    "archiveReason": "作为产品 README，适合在选型或接入云沙箱时检索参考，信息结构清晰且示例完整",
+    "classifiedAt": 1773829578448,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "统一云沙箱SDK介绍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "通过 Provider 抽象层统一创建、销毁、执行命令和文件读写等沙箱基础操作",
+      "用可选能力检测模式处理 volumes、port expose、snapshot、streaming 等差异化特性",
+      "支持多 Agent 会话编排、共享上下文和 Relay 通信中枢",
+      "设计原则强调最小接口、显式行为、幂等销毁与 Provider/Session 解耦"
+    ],
+    "oneHighValuePoint": "最有价值的是将多家云沙箱能力统一到同一 TypeScript 接口，并用运行时能力检测避免伪兼容。",
+    "oneLineReview": "这是一篇完成度较高的产品说明文档，实用性不错，但更偏接口总览而非深度方法论沉淀。",
+    "primaryCategory": "开发工具与基础设施",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，后续在需要多云沙箱方案时再深入阅读",
+    "secondaryCategories": [
+      "AI Agent 工程",
+      "云端沙箱与运行环境"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Sandbank 这一面向 AI Agent 的统一沙箱 SDK，通过抽象 Provider 接口屏蔽 Daytona、Fly.io、Cloudflare 与自托管 BoxLite 的差异，并提供能力矩阵、快速开始、会话编排与设计原则。",
+    "tags": [
+      "TypeScript SDK",
+      "多云抽象",
+      "Sandbox",
+      "AI Agent",
+      "Provider Adapter"
+    ],
+    "title": "sandbank/README.zh-CN.md at main · chekusu/sandbank",
+    "totalScore": 64,
+    "url": "https://github.com/chekusu/sandbank/blob/main/README.zh-CN.md"
+  },
+  "payloadHash": "sha256:8a1ab549c9aba7a357e9a78bd3fcc716bf087de4349c312978822c15942056b3",
+  "refs": {},
+  "revisionId": "sha256:45ab6f6404a71b47e9dfd66471b25111dab2a4c9c521c1b1d061ac16fa7368ec",
+  "schemaVersion": 1,
+  "updatedAt": 1773829578453
+}

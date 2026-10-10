@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773986969468,
+  "entityType": "message",
+  "id": "1773986982700_hhw161hk",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "• Lightpanda 是一个用 Zig 从零实现的无头浏览器，不是 Chromium 或 WebKit 的分支/补丁版本。  \n• 它主打高性能与低资源占用：内存约为 Chrome 的 1/9，执行速度可达 Chrome 的 11 倍，并且支持瞬时启动。  \n• 由于兼容 Playwright、Puppeteer 和 chromedp（通过 CDP 协议），它可以较容易接入并替换现有自动化工具链。  \n• 对 AI Agent 抓取、大规模爬虫、LLM 训练数据采集、自动化测试等场景来说，这意味着在同样硬件上可显著提升并发能力并降低成本。  \n• 项目提供简单安装方式，可直接下载可执行文件，也提供 Docker 镜像来一键启动 CDP server。  \n• 当前项目仍在持续完善中，Web API 支持尚未完整，Playwright 兼容性也有一些注意事项，但作为 AI Agent 基础设施已经具备实用价值。  \n• 文章最后认为，用 Zig 来构建浏览器这条技术路线很值得持续关注。",
+    "prompt_id": "bullet",
+    "role": "assistant",
+    "timestamp": 1773986969468,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:849a241e639d29d095975002726aa267af7dfa3921b868b53c4b124ed69d3dad",
+  "refs": {
+    "sessionId": "1773986047896_n97uc0w8"
+  },
+  "revisionId": "sha256:20810dccfcb9ac000d19b938d7e2962517dc8b8ec1bd88cae678b94abd636778",
+  "schemaVersion": 1,
+  "updatedAt": 1773986969468
+}

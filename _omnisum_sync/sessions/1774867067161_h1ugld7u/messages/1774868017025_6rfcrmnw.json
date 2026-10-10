@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774868017026,
+  "entityType": "message",
+  "id": "1774868017025_6rfcrmnw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent胜负手在Harness\n\n**评级**: A (73.5分)  |  **深度阅读**: 可选  |  **建议操作**: 精读\n\n**主类别**: AI Agent工程\n**次类别**: 系统设计, LLM应用方法论\n**标签**: #Harness Engineering #Agent #评估闭环 #架构约束 #记忆治理\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一篇方向判断准确、框架清晰，但证据多为二手整理的Agent工程综述。\n**核心高价值点**: 最有价值的是把Agent系统抽象为“模型是CPU、Harness是操作系统”，帮助理解竞争优势正从Prompt转向工程化运行框架。\n\n### 摘要\n文章将Agent能力差异归因于模型之外的Harness系统，重点概括评估闭环、架构约束、记忆治理三大支柱，并结合OpenAI、Anthropic、LangChain等案例说明工程化才是长期竞争优势。\n\n### 知识要点\n- Harness Engineering的三大核心支柱是评估闭环、架构约束和记忆治理。\n- 很多Agent性能差异主要来自模型外部系统设计，而非模型本身能力差距。\n- 约束工具数量、用linter和CI固化架构规则，往往比增加自由度更能提升稳定性。\n- 记忆系统若缺乏验证机制，会把单个Agent的幻觉扩散成整个系统的污染。\n\n### 行动项\n- 梳理你当前Agent流程中哪些问题属于Harness层，而不是模型层问题。\n- 优先为关键任务补上独立评估器、自动化测试和架构约束机制。\n- 调研并试用一个开源Harness项目，如OpenHands、DeepAgents或DeerFlow。\n- 为长期运行的Agent设计记忆写入审核与知识验证机制，避免错误经验沉淀。\n\n### 存档判定\n归档: 是 — 原因: 内容系统梳理了Harness Engineering的核心框架，并汇总了多家实践与开源项目，便于后续搭建Agent系统时快速回顾。\n删除: 否\n留存决策: 建议中长期保留，适合作为Agent工程化方向的综述型参考材料。",
+    "role": "assistant",
+    "timestamp": 1774868017026,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:ceb61a6a98e7f7613e16db63e27ac3419562b7cd8a9b3ea0424588de796514e3",
+  "refs": {
+    "sessionId": "1774867067161_h1ugld7u"
+  },
+  "revisionId": "sha256:6275ecd5d06ef9e1969b90c79f9f98c1548b9f5788e0054edea3c518aaabede8",
+  "schemaVersion": 1,
+  "updatedAt": 1774868017026
+}

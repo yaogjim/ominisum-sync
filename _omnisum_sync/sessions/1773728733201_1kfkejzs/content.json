@@ -1,0 +1,15 @@
+{
+  "createdAt": 1773728733201,
+  "entityType": "session-content",
+  "id": "1773728733201_1kfkejzs",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>sitin</strong></header><div class=\"tw-body\">Codex 补上了一个很关键的能力：Subagents（子 Agent）。<br><br>这个功能看起来像是“多了几个助手”，但本质上解决的是 AI 编程里一个很真实的痛点：上下文污染。<br><br>平时我们让 AI 写代码，最烦的不是它不会写，而是它一边查代码库、一边搜依赖、一边分析结构，聊着聊着主对话就被各种探索信息塞满了。<br><br>最后真正要改代码的时候，模型反而开始忘记最初目标，越聊越散。<br><br>Codex 这次的思路挺对：把“探索”和“执行”拆开。主对话负责盯住核心任务，子 Agent 则被派出去单独干活，比如查数据库连接方式、梳理项目结构、补测试、定位 bug。<br><br>每个子 Agent 都有自己独立的上下文窗口，跑完再把结果汇报回来。这样主线程不会被一堆过程信息弄脏，整个协作体验会清爽很多。<br><br>一直觉得，AI 编程真正往前走，不只是模型更强，而是这种“工作流层”的能力越来越成熟。因为真实开发从来不是一句 prompt 出结果，而是要拆任务、查资料、试错、并行推进。<br><br>谁能把这些流程做顺，谁就更像真正能干活的 Agent。Claude Code 之前在这块走得比较早，Cursor 也有 Background Agent，现在 Codex 把这块补上。<br><br>它支持批量派发任务：像从 CSV 一次性生成多个 Agent 去处理重复改动，这种能力一旦用在大规模代码清理、批量迁移、批量补测试这些场景里，其实会很猛。<br><br>以前这种活又脏又碎，人干很烦，单 Agent 干又慢，现在并行拆出去，味道就不一样了。<br><br>整体看下来，我觉得 Subagents 不是什么花哨功能，而是 Codex 变得更“工程化”了。<br><br>对普通用户来说，可能就是“更好用了”；但对经常拿 AI 真干活的人来说，这种能力很重要，因为它直接决定了 AI 到底是在帮你做事，还是只是在对话里表演。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/amplify_video_thumb/2033717326491881475/img/XtqK2QdWrFoUWW_4.jpg\" alt=\"图片\" /></div><div class=\"tw-videos\"><a href=\"https://x.com/sitinme/status/2033722486731510240\"><img src=\"https://pbs.twimg.com/amplify_video_thumb/2033717326491881475/img/XtqK2QdWrFoUWW_4.jpg\" alt=\"视频\" /></a></div></article>",
+    "pageContent": "sitin: Codex 补上了一个很关键的能力：Subagents（子 Agent）。 这个功能看起来像是“多了几个助手”，但本质上解决的是 AI 编程里一个很真实的痛点：上下文污染。 平时我们让 AI 写代码，最烦的不是它不会写，而是它一边查代码库、一边搜依赖、一边分析结构，聊着聊着主对话就被各种探索信息塞满了。 最后真正要改代码的时候，模型反而开始忘记最初目标，越聊越散。 Codex 这次的思路挺对：把“探索”和“执行”拆开。主对话负责盯住核心任务，子 Agent 则被派出去单独干活，比如查数据库连接方式、梳理项目结构、补测试、定位 bug。 每个子 Agent 都有自己独立的上下文窗口，跑完再把结果汇报回来。这样主线程不会被一堆过程信息弄脏，整个协作体验会清爽很多。 一直觉得，AI 编程真正往前走，不只是模型更强，而是这种“工作流层”的能力越来越成熟。因为真实开发从来不是一句 prompt 出结果，而是要拆任务、查资料、试错、并行推进。 谁能把这些流程做顺，谁就更像真正能干活的 Agent。Claude Code 之前在这块走得比较早，Cursor 也有 Background Agent，现在 Codex 把这块补上。 它支持批量派发任务：像从 CSV 一次性生成多个 Agent 去处理重复改动，这种能力一旦用在大规模代码清理、批量迁移、批量补测试这些场景里，其实会很猛。 以前这种活又脏又碎，人干很烦，单 Agent 干又慢，现在并行拆出去，味道就不一样了。 整体看下来，我觉得 Subagents 不是什么花哨功能，而是 Codex 变得更“工程化”了。 对普通用户来说，可能就是“更好用了”；但对经常拿 AI 真干活的人来说，这种能力很重要，因为它直接决定了 AI 到底是在帮你做事，还是只是在对话里表演。\n![图片](https://pbs.twimg.com/amplify_video_thumb/2033717326491881475/img/XtqK2QdWrFoUWW_4.jpg)\n[![视频](https://pbs.twimg.com/amplify_video_thumb/2033717326491881475/img/XtqK2QdWrFoUWW_4.jpg)](https://x.com/sitinme/status/2033722486731510240)"
+  },
+  "payloadHash": "sha256:adf106a5dd4611332f0609dad39f93c5084b631ec059e13adfe72f8746ec737e",
+  "refs": {},
+  "revisionId": "sha256:a258706f13f663c0300d3586a8f454e9b337f15caa5a394f136c288a1ba766a1",
+  "schemaVersion": 1,
+  "updatedAt": 1773730634238
+}

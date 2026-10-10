@@ -1,0 +1,70 @@
+{
+  "createdAt": 1776645596238,
+  "entityType": "session",
+  "id": "1776645596238_bz3558jj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文中建议建立 `SOUL.md`、`AGENTS.md`、`MEMORY.md` 的职责分层，并测试 `nudge_interval` 对记忆固化的影响。",
+      "选择一个高频重复工作流，引导 Hermes 创建首个 Skill，并验证新会话下的复用效果。",
+      "如需长期运行，优先搭建 Systemd 或 Docker Compose 方案，并补齐心跳、白名单和日志排查流程。"
+    ],
+    "archiveReason": "内容覆盖 Hermes 高级用法全链路，包含配置、排障、部署与协作实践，适合作为后续搭建和复查手册。",
+    "classifiedAt": 1776646356756,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "Hermes高级进阶实战指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Hermes 记忆系统由内置记忆、外部 Memory Provider 和运行时上下文共同构成，且依赖冻结快照与策展式写入机制。",
+      "重复任务应从 MEMORY.md 中上升为可复用 Skill，以降低重复推理成本并提高跨会话复用性。",
+      "多 Agent 协作的关键不在并发数，而在上下文显式传递、Profile 隔离和资源冲突控制。",
+      "生产环境部署需重点关注 Gateway 常驻运行、Cron 时区、日志监控、安全审批和平台白名单配置。",
+      "MCP 可作为 Hermes 扩展外部工具链的重要接口，用于文件系统、数据库和自定义 API 集成。"
+    ],
+    "oneHighValuePoint": "把 Hermes 的长期能力沉淀拆解为“记忆保存事实、Skill 固化流程”，并进一步说明二者如何联动，这是最具方法论价值的核心框架。",
+    "oneLineReview": "一篇覆盖面很全、可直接照做的 Hermes 进阶手册，但证据和官方来源支撑仍偏经验型。",
+    "primaryCategory": "AI Agent 工程实践",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "开发工具配置",
+      "生产化部署",
+      "多Agent协作"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一篇面向已完成基础安装用户的 Hermes 高阶教程，系统梳理了记忆机制、技能自生成、多 Agent 协作、生产化部署、MCP 集成和常见问题排查，并给出大量命令示例、配置建议与实操步骤，偏重工程落地和使用经验总结。",
+    "tags": [
+      "Hermes",
+      "Agent记忆系统",
+      "技能自进化",
+      "MCP",
+      "生产部署"
+    ],
+    "title": "Hermes Agent 从中级到高级进阶指南",
+    "totalScore": 77,
+    "url": "https://x.com/BTCqzy1/status/2044259795499450414"
+  },
+  "payloadHash": "sha256:b2bb9d2504804f5cb6a545176466541ff5f676f8d4327a41c14dc3993f8e3d64",
+  "refs": {},
+  "revisionId": "sha256:649ef2bc0fc5b000959bc6662caf6df79455a9c440851e9e1c8526481b25cd53",
+  "schemaVersion": 1,
+  "updatedAt": 1776646761238
+}

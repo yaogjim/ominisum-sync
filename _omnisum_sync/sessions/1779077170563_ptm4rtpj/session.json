@@ -1,0 +1,111 @@
+{
+  "createdAt": 1779077170563,
+  "entityType": "session",
+  "id": "1779077170563_ptm4rtpj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需做英文NLP原型，可按示例安装spaCy并下载en_core_web_sm模型进行试用",
+      "评估当前任务是否需要NER、句法分析、文本分类或自定义训练管线",
+      "若要生产化NLP流程，进一步阅读spaCy项目系统和训练配置文档",
+      "对比spaCy、Stanza、Flair及LLM方案在目标任务上的准确率、成本和部署复杂度"
+    ],
+    "archiveReason": "官方首页集中介绍了spaCy的核心能力、安装示例、训练配置、生产化流程和基准结果，适合作为工具入口与后续查阅索引",
+    "classifiedAt": 1780615991660,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "spaCy工业级NLP工具概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "spacy.io",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Prodigy: Radically efficient machine teaching",
+        "caption": "",
+        "height": 702,
+        "id": "img-1",
+        "nearbyText": "Prodigy is an annotation tool so efficient that data scientists can do the annotation themselves, enabling a new level of rapid iteration. Whether you're working on entity recognition, intent detection or image classification, Prodigy can h...",
+        "resolvedUrl": "https://spacy.io/_next/static/media/prodigy_overview.28855944.jpg",
+        "role": "article",
+        "score": 73,
+        "src": "https://spacy.io/_next/static/media/prodigy_overview.28855944.jpg",
+        "width": 2520
+      },
+      {
+        "alt": "spaCy Tailored Pipelines",
+        "caption": "",
+        "height": 313,
+        "id": "img-3",
+        "nearbyText": "Get a custom spaCy pipeline, tailor-made for your NLP problem by spaCy's core developers. Streamlined. Nobody knows spaCy better than we do. Send us your pipeline requirements and we'll be ready to start producing your solution in no time a...",
+        "resolvedUrl": "https://spacy.io/_next/static/media/spacy-tailored-pipelines_wide.40a24484.png",
+        "role": "article",
+        "score": 73,
+        "src": "https://spacy.io/_next/static/media/spacy-tailored-pipelines_wide.40a24484.png",
+        "width": 1681
+      },
+      {
+        "alt": "Advanced NLP with spaCy: A free online course",
+        "caption": "",
+        "height": 630,
+        "id": "img-4",
+        "nearbyText": "In this free and interactive online course you’ll learn how to use spaCy to build advanced natural language understanding systems, using both rule-based and machine learning approaches. It includes 55 exercises featuring videos, slide decks...",
+        "resolvedUrl": "https://spacy.io/_next/static/media/course.6d34fa59.jpg",
+        "role": "article",
+        "score": 73,
+        "src": "https://spacy.io/_next/static/media/course.6d34fa59.jpg",
+        "width": 2300
+      }
+    ],
+    "knowledgePoints": [
+      "spaCy支持分词、词性标注、依存句法分析、命名实体识别、文本分类、词形还原、实体链接等多类NLP任务",
+      "spaCy v3提供可复现实验配置系统，训练过程通过配置文件显式管理，减少隐藏默认值",
+      "spacy-llm可将大语言模型集成到结构化NLP管线中，用于快速原型和提示工程",
+      "spaCy提供项目系统、可视化工具、模型打包和部署能力，面向生产环境使用",
+      "页面提供了OntoNotes和CoNLL等数据集上的NER与管线性能基准"
+    ],
+    "oneHighValuePoint": "spaCy不仅是NLP库，还提供从原型、训练配置、评估到生产部署的端到端项目工作流。",
+    "oneLineReview": "适合作为了解spaCy能力边界和工具入口的官方概览，但方法论深度和新颖性有限。",
+    "primaryCategory": "自然语言处理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为NLP工具选型和入门参考可长期保留，但无需精读全文",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Python工具库",
+      "机器学习工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章为spaCy官方介绍页，展示其Python NLP处理示例、语言支持、预训练管线、NER、词性标注、依存分析、LLM集成、训练配置、项目工作流、课程和基准测试结果。",
+    "tags": [
+      "spaCy",
+      "NLP",
+      "Python",
+      "NER",
+      "文本处理",
+      "生产部署"
+    ],
+    "title": "spaCy · Industrial-strength Natural Language Processing in Python",
+    "totalScore": 57,
+    "url": "https://spacy.io/"
+  },
+  "payloadHash": "sha256:2a4d8de7dd371eec430a0ae83b8ec4a9dc034c4cd47012443b844b064e549050",
+  "refs": {},
+  "revisionId": "sha256:ddc6e3f100262e13ee8a6bee0ca63985ca2ce28a748661fecefde1359382dde7",
+  "schemaVersion": 1,
+  "updatedAt": 1780615992625
+}

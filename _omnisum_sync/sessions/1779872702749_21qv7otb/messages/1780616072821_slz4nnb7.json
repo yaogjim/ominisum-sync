@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780616072822,
+  "entityType": "message",
+  "id": "1780616072821_slz4nnb7",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AI工程流程技能清单\n\n**评级**: B (67分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程\n**次类别**: 智能体开发流程, 软件工程方法论\n**标签**: #Claude Code #AI编程 #工程流程 #Agent Skills #Compound Engineering\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一个有实践价值的AI工程技能库索引，但证据和案例深度不足，更适合作为工具清单而非深度方法论文章。\n**核心高价值点**: AI工程的核心价值不只是加速编码，而是通过需求澄清、计划、评审和知识沉淀，让每次工程工作降低下一次工作的成本。\n\n### 摘要\n文章汇总了Compound Engineering、Shaping Skills、Matt Pocock Skills等Claude Code/AI编程技能库，重点围绕规划、需求澄清、TDD、代码审查、知识沉淀和工程流程复利展开，附带安装方式和典型使用场景。\n\n### 知识要点\n- Compound Engineering强调80%规划与评审、20%执行，通过brainstorm、plan、work、review、compound形成闭环。\n- Shaping Skills将Shape Up方法迁移到LLM协作中，用framing、kickoff、breadboarding等技能沉淀可执行设计文档。\n- Matt Pocock Skills强调真实工程中的对齐、领域语言、TDD反馈环、诊断循环和架构改进，避免AI只做表层vibe coding。\n- 多个技能库都把AI编程从单次提示词转向可复用、可组合、可审查的流程资产。\n\n### 行动项\n- 选择一个现有项目试装compound-engineering-plugin，并跑一轮/ce-brainstorm、/ce-plan、/ce-code-review、/ce-compound流程。\n- 将/grill-me或/grill-with-docs类需求澄清技能加入日常AI编码前置流程。\n- 为项目建立CONTEXT.md或ADR文档，让AI代理共享领域语言和历史决策。\n- 评估是否将TDD、诊断、代码评审和架构改进类技能固化为个人AI开发工作流模板。\n\n### 存档判定\n归档: 是 — 原因: 包含多个可直接试用的AI工程技能库与流程框架，可作为搭建个人AI辅助开发工作流的参考清单。\n删除: 否\n留存决策: 短期参考后可选择性保留",
+    "role": "assistant",
+    "timestamp": 1780616072822,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:cf83442efd9076e779dc89e757b612d9f760a37353d330280a0e9cc9b4d120ef",
+  "refs": {
+    "sessionId": "1779872702749_21qv7otb"
+  },
+  "revisionId": "sha256:5ab7154a163256590b755650022476533149acf023a177211fe1ee97c6031f0d",
+  "schemaVersion": 1,
+  "updatedAt": 1780616072822
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773392958768,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773389634731",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "可以。用文中最典型的一个实例：**“文本分块（text chunking）skill”**。\n\n## 具体实例\n目标：让 agent 发明一个`chunkText (text, maxLen)`的 JS skill，把长文本切成适合检索 / 摘要的片段。\n\n---\n\n## 这个实例上的最佳实践\n\n### 1. 先把 skill 做 “小而纯”\n- 只做一件事：文本分块\n- 输入输出固定：`string -> string []`\n- 不混入网络、文件、数据库操作\n- 保证 deterministic，同样输入必须同样输出\n\n### 2. 用明确评测替代 “感觉可用”\n至少评估 4 项：\n- **正确性**：每块长度不超限、不丢文本\n- **鲁棒性**：空文本、超长文本、Unicode、异常符号不崩\n- **质量**：尽量按句子 / 段落边界切，不要粗暴截断\n- **性能**：大文本下延迟和内存可控\n\n### 3. 变异要小步快跑\n不要每次让 agent 从零重写 chunker，而是优先：\n- 调整分块阈值\n- 增加句号 / 换行优先切分\n- 增加 try-catch\n- 增加输入类型校验\n- 组合已有 normalizer skill\n\n这样更容易知道 “哪次修改真的变好了”。\n\n### 4. 只传播通过基准测试的版本\n一个 chunking skill 进入共享目录前，至少满足：\n- 单元测试全过\n- 对抗输入不崩\n- 比父版本至少一项更优（更稳 / 更快 / 切分更自然）\n- 资源消耗不过线\n\n### 5. 保留 lineage，方便回滚\n每个新 skill 记录：\n- 父 skill hash\n- 改了什么\n- 测试分数变化\n\n这样一旦某个版本在真实任务中退化，可以快速回退到上一个稳定版本。\n\n### 6. 用组合而不是重复造轮子\n最佳 chunker 不一定是单独写出来的，往往是：\n- `normalizer -> chunker -> entity extractor`\n\n所以 chunking skill 应优先复用网络里已验证过的基础 skill，而不是自己重新处理所有边界。\n\n### 7. 安全执行必须放在沙箱里\n即使只是文本分块，也要：\n- 在 WASM sandbox 中运行\n- 无文件、无网络、无系统调用\n- 限制时间和内存\n\n这样 P2P 分享 skill 才可控、可信。\n\n---\n\n## 一句话总结\n在**text chunking**这个实例上，最佳实践不是 “让 agent 多写代码”，而是：\n\n**把 skill 做小、评测做严、变异做小步、传播只发优胜版本、执行放进安全沙箱。**\n\n如果你愿意，我还可以把这个实例进一步写成一个**可直接落地的 skill 规格 + 测试样例**。",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773392958768,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:94614642d2fcfa6022ce39ee20ddd30ea49b9bc562f4d1d4b9af3726b1385a1c",
+  "refs": {
+    "sessionId": "1773367218634_8n4tgh49"
+  },
+  "revisionId": "sha256:9ac75bde32559b2c8fec55a9c0931aab35a393ea01d00af424875805c98282ff",
+  "schemaVersion": 1,
+  "updatedAt": 1773392958768
+}

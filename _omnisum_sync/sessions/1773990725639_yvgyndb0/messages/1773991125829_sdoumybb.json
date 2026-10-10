@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773991115374,
+  "entityType": "message",
+  "id": "1773991125829_sdoumybb",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 内容总结\n\n- `Hermes Agent` 推出了一键启动器，可在 `Windows / macOS / Linux` 上安装、启动并管理整个代理/网关栈，无需 `WSL`。\n- 演示视频展示了从安装、配置到首次对话的完整流程，主打“低门槛快速上手”。\n- `Hermes Agent` 的核心卖点是：开源、可持续学习、具备多级记忆系统，并能长期访问专用机器环境。\n- 与 `Pinokio` 集成后，Hermes 可以自动调用本地已安装应用：识别相关程序、必要时启动、执行任务并返回结果。\n- 示例中，用户请求生成视频后，Hermes 会自动联动 `Pinokio` 和 `WanGP` 完成视频生成。\n- 补充信息包括：网关运行稳定、可结合 `Discord` 集成使用、可在 `pinokio.co` 获取，并支持手机扫码远程打开终端。\n\n# 一句话评论\n\n这是一次把“本地 AI 代理 + 应用自动化调度”真正做成可直接体验产品的有效展示。\n\n# 一句话高价值内容\n\n真正有价值的不是“一键安装”，而是 `Hermes + Pinokio` 让 AI 从“聊天助手”升级为“能自动操作你本机软件完成任务的执行代理”。",
+    "prompt_id": "default",
+    "role": "assistant",
+    "timestamp": 1773991115374,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:cef4a2851b2f6bf04b814f03ed4e93348169b3d64d081bf9c889000aae23b1f1",
+  "refs": {
+    "sessionId": "1773990725639_yvgyndb0"
+  },
+  "revisionId": "sha256:21a83508687f90af6b665073752e6a736a1f64786fa03245648e0d9a8b289a84",
+  "schemaVersion": 1,
+  "updatedAt": 1773991115374
+}

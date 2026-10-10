@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773316949003,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773316949003",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "下面用一个**“电商商品分类小模型”**的具体实例，说明 Autoresearch 的最佳实践。\n\n## 具体实例\n目标：训练一个**0.8B 的商品分类 SLM**，用于把商品标题 / 描述自动归类到标准类目。  \n约束：\n\n- 训练脚本固定为`train.py`\n- 每次实验**5 分钟**\n- 优化指标：**线上分布贴近的验证集 F1**\n- Agent 只能改：\n  - 学习率、batch size、weight decay\n  - loss 设计\n  - pooling 方式\n  - 分类头结构\n  - 正则化参数\n- Agent 不能碰：\n  - 测试集\n  - 数据清洗逻辑\n  - 评估脚本\n\n运行一晚后，Agent 自动尝试 80~100 次实验，例如：\n\n- 把 mean pooling 改成 attention pooling\n- 调整 AdamW betas\n- 给长尾类目加 class weight\n- 加 label smoothing\n- 调整 warmup ratio\n- 改 dropout 和初始化方式\n\n最终保留有效改动，模型从**F1=84.2 提升到 87.1**，并且推理成本仍低于原先的大模型方案。\n\n---\n\n## 在这个实例上的最佳实践（精炼）\n\n### 1. **先锁死评估，再开放优化**\nAutoresearch 成败不在 “试得多”，而在 “评得准”。  \n最佳实践：\n\n- 保留**完全隔离的 held-out test set**\n- Agent 只看训练集 + 小验证集\n- 验证指标必须接近真实业务目标，而不是方便计算的代理指标\n\n> 否则 Agent 只会 “刷分”，不会真正提升线上效果。\n\n### 2. **把搜索空间限制在高价值、低风险改动**\n不要让 Agent 随意改整个工程。  \n最佳实践：\n\n- 只允许改`train.py`\n- 先开放超参、正则、loss、head、pooling\n- 后续再开放更高风险结构改动\n\n> 这样更稳、更容易复现，也更适合夜间自动跑。\n\n### 3. **固定每轮实验预算，保证可比性**\n文章里的关键设计就是**固定 5 分钟预算**。  \n最佳实践：\n\n- 每次实验相同训练时长 / 相同步数\n- 相同数据切片\n- 相同评估流程\n\n> 不然有些实验只是 “跑得更久”，不是 “方法更好”。\n\n### 4. **用 Git 记录每次实验，形成可回溯记忆**\n最佳实践：\n\n- 每次实验一个 commit\n- commit message 写清：改了什么、指标如何\n- 只保留优于 baseline 的版本\n\n> 这样 Agent 和人类都能快速理解哪些改动真正有效。\n\n### 5. **采用二元决策：保留 / 丢弃**\n不要让流程依赖人工主观判断。  \n最佳实践：\n\n- 指标提升就保留\n- 无提升就回滚\n- 设定最小提升阈值，避免噪声误判\n\n> 核心是把优化循环做成 “自动化生产线”。\n\n### 6. **优先选小模型任务，先验证再放大**\nAutoresearch 最适合**训练快、反馈快**的任务。  \n最佳实践：\n\n- 先用 0.5B~1B 小模型验证\n- 找到稳定收益后，再迁移到更大模型\n\n> 很多改进会从小模型迁移到大模型，成本却低很多。\n\n### 7. **持续刷新评估集，防止 benchmark 被刷穿**\n当 Agent 一晚跑上百次，静态验证集很快会失效。  \n最佳实践：\n\n- 定期从真实线上错误案例补充新样本\n- 加入长尾类目、脏文本、歧义标题\n- 维护 “困难集”\n\n> Autoresearch 的瓶颈最终不是训练，而是 eval 质量。\n\n---\n\n## 一句话总结\n**Autoresearch 最佳落地方式，不是让 Agent “随便改模型”，而是让它在一个严格受控、评估可信、反馈极快的闭环里高频试错。**  \n对商品分类、检索排序、NER、意图识别这类任务，尤其适合先从**小模型 + 固定预算 + 强评估**开始。\n\n如果你愿意，我可以进一步把这个例子展开成一份**可直接执行的 Autoresearch 落地方案（流程图 + 实验模板）**。",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773316949003,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:56fd3691ca52503213111ed9f8cee5c0fb4f6479f26cbc37e41795e87605beea",
+  "refs": {
+    "sessionId": "1773316729823_gbpxixdz"
+  },
+  "revisionId": "sha256:5029e4ec73fe2f4eabe4fd50721931f482752ab1c85280ccb055cea35e478771",
+  "schemaVersion": 1,
+  "updatedAt": 1773316949003
+}

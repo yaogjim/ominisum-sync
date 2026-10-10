@@ -1,0 +1,15 @@
+{
+  "createdAt": 1773729462159,
+  "entityType": "session-content",
+  "id": "1773729462159_b8kvy0x2",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>劳伦斯</strong></header><div class=\"tw-body\">Claude Pro 套餐真的太不够用了，Codex 又特别多，而且Codex 干活漂亮又干净 —— Claude 说的。  <br><br>我基于 Tmux 做了一个简单的尝试，实现 TUI 可视化 Agent Team ，让  Claude 作为大脑，指挥 N 个 Codex 干活。  简单实现的情况下，干起活来真的又快又好。<br>  <br>claude 做完方案，直接开三个codex （tester、coder、reviwer）。  <br><br>现在跑通了最简单的框架，我打算开始升级一下，让整个协作更好，看看能做到什么程度，之后出保姆级教程。<br><br>这里最有价值的就是：跑通简单框架 -> 再升级</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HDguV-hbkAAvrUq?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Ohio State Hoops</strong> <span class=\"tw-eng\">♥ 478 · 💬 0</span><p>A night to remember.</p></div><div class=\"tw-reply\"><strong>@Allen Cao</strong> <span class=\"tw-eng\">♥ 14 · 💬 2</span><p>核心就是把context的管控权控制在用户手里，可以看下我写的这个handoff-session的skill，思路是类似的，把context的管控和session现场通过一定方式控制在开发者手里并提炼，实现不同session、agent、甚至设备快速交接、协作。</p></div><div class=\"tw-reply\"><strong>@Dang</strong> <span class=\"tw-eng\">♥ 5 · 💬 2</span><p>这条路子我也很认同。\\n\\n真正有价值的不是一上来就追求完美协作，而是先把最小可跑通的分工框架搭起来：谁负责拆解，谁负责实现，谁负责测试，谁负责review。\\n\\n一旦这个闭环跑通，后面优化的就不是\"能不能用\"，而是吞吐、上下文切分和角色边界。对独立开发者来说，这比单纯堆模型额度更重要。</p></div><div class=\"tw-reply\"><strong>@劳伦斯</strong> <span class=\"tw-eng\">♥ 7 · 💬 1</span><p>这个厉害。继续接收优秀的项目的做法。</p></div><div class=\"tw-reply\"><strong>@Sure</strong> <span class=\"tw-eng\">♥ 1 · 💬 2</span><p>小白不懂就问，这个和oh-my-opencode那种多角色有什么区别吗？烦请大佬解答</p></div></div>",
+    "pageContent": "劳伦斯: Claude Pro 套餐真的太不够用了，Codex 又特别多，而且Codex 干活漂亮又干净 —— Claude 说的。 我基于 Tmux 做了一个简单的尝试，实现 TUI 可视化 Agent Team ，让 Claude 作为大脑，指挥 N 个 Codex 干活。 简单实现的情况下，干起活来真的又快又好。 claude 做完方案，直接开三个codex （tester、coder、reviwer）。 现在跑通了最简单的框架，我打算开始升级一下，让整个协作更好，看看能做到什么程度，之后出保姆级教程。 这里最有价值的就是：跑通简单框架 -> 再升级\n![图片](https://pbs.twimg.com/media/HDguV-hbkAAvrUq?format=jpg&name=large)\n---\n热门回复 (共 5 条):\n@Ohio State Hoops (♥ 478 · 💬 0):\nA night to remember.\n\n@Allen Cao (♥ 14 · 💬 2):\n核心就是把context的管控权控制在用户手里，可以看下我写的这个handoff-session的skill，思路是类似的，把context的管控和session现场通过一定方式控制在开发者手里并提炼，实现不同session、agent、甚至设备快速交接、协作。\n\n@Dang (♥ 5 · 💬 2):\n这条路子我也很认同。\\n\\n真正有价值的不是一上来就追求完美协作，而是先把最小可跑通的分工框架搭起来：谁负责拆解，谁负责实现，谁负责测试，谁负责review。\\n\\n一旦这个闭环跑通，后面优化的就不是\"能不能用\"，而是吞吐、上下文切分和角色边界。对独立开发者来说，这比单纯堆模型额度更重要。\n\n@劳伦斯 (♥ 7 · 💬 1):\n这个厉害。继续接收优秀的项目的做法。\n\n@Sure (♥ 1 · 💬 2):\n小白不懂就问，这个和oh-my-opencode那种多角色有什么区别吗？烦请大佬解答\n"
+  },
+  "payloadHash": "sha256:749b2ba658118ed233173252862778b70c24069402128644ba706ee96e0ba9d5",
+  "refs": {},
+  "revisionId": "sha256:5e0c967dbcba9627a04c5f03121e013f1c4be636f497993c924ae8db21af3ef0",
+  "schemaVersion": 1,
+  "updatedAt": 1773729990258
+}

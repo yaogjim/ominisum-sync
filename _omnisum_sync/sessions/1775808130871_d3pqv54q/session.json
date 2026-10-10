@@ -1,0 +1,70 @@
+{
+  "createdAt": 1775808130871,
+  "entityType": "session",
+  "id": "1775808130871_d3pqv54q",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用文章中的Harness拆解法审视你当前Agent系统：状态、工具、沙箱、验证、上下文管理是否齐全",
+      "优先评估文件系统与Git是否被当作智能体持久工作账本来设计",
+      "检查是否存在上下文膨胀问题，并引入压缩、日志卸载或技能按需加载机制",
+      "把测试、日志、浏览器或代码检查器纳入自我验证回路，而不是只依赖模型输出"
+    ],
+    "archiveReason": "文章对Agent Harness的组成、作用和未来演化给出了较完整的框架化总结，适合后续做系统设计时回看",
+    "classifiedAt": 1775820383249,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "智能体框架核心解剖",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "blog.langchain.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Agent能力的关键不仅在模型，还在Harness提供的状态、工具、约束和执行环境",
+      "文件系统是持久记忆、上下文管理、协作和长任务执行的核心基础设施",
+      "bash加代码执行让智能体具备通用问题求解能力，减少为每个任务预制工具的需求",
+      "上下文腐烂需要依靠压缩、工具输出卸载和技能渐进披露等机制治理",
+      "长期自主执行依赖规划、自我验证、Git追踪和跨上下文窗口的状态延续"
+    ],
+    "oneHighValuePoint": "最有价值的点是把文件系统视为智能体长期执行、协作、记忆与上下文卸载的基础原语，从而统一解释多种Agent能力来源。",
+    "oneLineReview": "这是一篇框架认知很强但证据支撑偏弱的智能体工程综述文。",
+    "primaryCategory": "AI智能体工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为理解智能体系统设计边界的概念参考",
+    "secondaryCategories": [
+      "LLM系统设计",
+      "开发者工具与基础设施"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出“Agent = Model + Harness”，将文件系统、bash、沙箱、上下文压缩、记忆注入、规划与验证等能力统一归入框架层，强调优秀智能体表现更多依赖模型外部的工程设计与执行环境配置。",
+    "tags": [
+      "Agent Harness",
+      "智能体框架",
+      "上下文管理",
+      "工具调用",
+      "沙箱执行"
+    ],
+    "title": "The Anatomy of an Agent Harness",
+    "totalScore": 69,
+    "url": "https://blog.langchain.com/the-anatomy-of-an-agent-harness/"
+  },
+  "payloadHash": "sha256:884dbf3bac85081934a936af4287acd244ca03775424a3265a4ee294be417766",
+  "refs": {},
+  "revisionId": "sha256:092dc7ea8f6f1dad3fdb58ccd657ca02622bc4894d3a9072aa1955014534a911",
+  "schemaVersion": 1,
+  "updatedAt": 1775820383252
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780371038952,
+  "entityType": "session",
+  "id": "1780371038952_gccaiiap",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在选型AI Agent运行时，可本地安装并测试Dashboard、Agent创建、模型配置和沙箱执行能力。",
+      "重点核查其许可证限制，确认是否适合商业SaaS或内部部署场景。"
+    ],
+    "archiveReason": "包含较完整的框架功能、架构、部署和CLI使用信息，可作为评估AI Agent运行时工具的参考资料。",
+    "classifiedAt": 1780371646941,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "FastClaw多智能体框架概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "FastClaw支持OpenAI、Anthropic、Ollama、OpenRouter等多种LLM提供商，并允许按Agent覆盖模型配置。",
+      "每个Agent拥有独立的SOUL.md、IDENTITY.md、MEMORY.md、技能和会话，支持用户与渠道级隔离。",
+      "默认使用SQLite存储，也可通过Postgres、对象存储和Kubernetes实现多Pod部署。",
+      "提供Docker或E2B沙箱、MCP支持、插件系统、定时任务、OpenAI兼容API和Web SSE流式聊天接口。"
+    ],
+    "oneHighValuePoint": "FastClaw将Agent身份文件、模型配置、技能、会话、沙箱和多渠道接入统一到一个可部署的运行时中。",
+    "oneLineReview": "作为项目README信息较全、可操作性强，但主要是功能说明，缺少实测案例和深入方法论。",
+    "primaryCategory": "AI Agent框架",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后按需保留",
+    "secondaryCategories": [
+      "开源项目",
+      "开发工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍FastClaw这一Go编写的轻量级AI Agent运行时，涵盖安装、Web后台、Agent管理、模型供应商、技能、沙箱、API、CLI、部署方式和许可证限制等内容。",
+    "tags": [
+      "多智能体",
+      "Go",
+      "LLM",
+      "沙箱",
+      "GitHub"
+    ],
+    "title": "fastclaw-ai/fastclaw: Multi-Agent Framework",
+    "totalScore": 61.5,
+    "url": "https://github.com/fastclaw-ai/fastclaw"
+  },
+  "payloadHash": "sha256:b53df7644729c98a11fe4583ac24d2abee1a129d4107146aefb50a84811bf3f3",
+  "refs": {},
+  "revisionId": "sha256:08f0326d7931c9fe72e24eeea19d75d9eda7f8c6783f0a8245647212e86c5b12",
+  "schemaVersion": 1,
+  "updatedAt": 1780373859476
+}

@@ -1,0 +1,70 @@
+{
+  "createdAt": 1774262528208,
+  "entityType": "session",
+  "id": "1774262528208_kh1wnz5f",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估是否可将当前内容生产或研究流程改造成可量化的实验闭环",
+      "用文中的示例小队快速跑一次最小可行实验，验证配置复杂度与输出质量",
+      "重点核查其评分机制和基线比较逻辑，避免 LLM 自评带来偏差",
+      "若计划长期使用，补充接入真实业务指标而非仅依赖模型评分"
+    ],
+    "archiveReason": "内容包含清晰的产品机制、配置方式和使用示例，后续搭建类似实验闭环时可复查",
+    "classifiedAt": 1774262541406,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "AI实验循环工具介绍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "AI agent 可通过读取和更新 `strategy.md` 实现基于实验结果的迭代学习",
+      "实验闭环核心包括执行、打分、样本判定、策略更新四个环节",
+      "可用 MCP server 和 REST API 将实验系统接入外部 agent 或工作流",
+      "QMD 可作为跨团队共享记忆与语义检索层，增强知识复用"
+    ],
+    "oneHighValuePoint": "把增长实验闭环抽象成可重复执行的 agent 学习系统，用 `strategy.md` 持续沉淀经验证有效的策略。",
+    "oneLineReview": "方法框架清楚、落地性强，但更像项目 README，证据与实际效果验证不足。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为AI agent实验化运营的工具说明书保留",
+    "secondaryCategories": [
+      "增长实验方法",
+      "开发工具与自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了 swarma 这一面向 AI agent swarm 的实验循环工具，将增长团队常用的“假设-测试-度量-学习”流程产品化，支持策略文件迭代、低成本评估、判定保留/回滚，并提供 MCP、REST API 与 QMD 知识层集成。",
+    "tags": [
+      "AI Agent",
+      "A/B测试",
+      "实验循环",
+      "策略迭代",
+      "MCP",
+      "增长方法论"
+    ],
+    "title": "swarma/README.zh.md at main · glitch-rabin/swarma",
+    "totalScore": 63.5,
+    "url": "https://github.com/glitch-rabin/swarma/blob/main/README.zh.md"
+  },
+  "payloadHash": "sha256:d038b5d51a00bc940d909ba19d35450277eb42249c8c0bab203df425df4c63ef",
+  "refs": {},
+  "revisionId": "sha256:6581935f6bea5e69afb7f491a1d75e4e13679582593afdbe2c61f0f4d0cd3d5b",
+  "schemaVersion": 1,
+  "updatedAt": 1774262829713
+}

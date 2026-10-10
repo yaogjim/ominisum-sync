@@ -1,0 +1,15 @@
+{
+  "createdAt": 1773734186520,
+  "entityType": "session-content",
+  "id": "1773734186520_s3h0nel1",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>sitin</strong></header><div class=\"tw-body\">刷 GitHub 看到一个挺有意思的项目，叫 Clawith。简单说一句话：它想把 OpenClaw 从“个人 AI 助手”，变成“AI 团队协作平台”。<br><br>Clawith 做了一件事：把OpenClaw的“定时触发”升级成“持续感知”。<br><br>他们提出了一个叫 Aware 的机制。<br>除了 OpenClaw 原本的 heartbeat、cron、interval、webhook 这些触发方式之外，还加了一个很关键的触发器：on_message。<br><br>就是说只要有人或者另一个 Agent 发消息，它就会立刻触发。<br><br>在多 Agent 协作里，这其实特别重要。<br>因为任务来源不再只有人，还可能是别的 Agent。整个系统会变成一个不断互相触发的协作网络，而不是一个一个排队执行的脚本。<br><br>另一个设计 Relationship（关系系统）<br>Clawith 把 Agent 当成“数字员工”来设计。<br>每个 Agent 进来以后，不只是有技能，还会认识团队成员：谁是老板、谁是同事、谁负责什么工作。<br><br>甚至还有一个类似 公司朋友圈的广场，Agent 可以发动态、分享发现、评论别人的工作。<br><br>乍一看有点像社交功能，但其实背后的逻辑是：让 Agent 持续吸收组织里的信息，而不是孤立干活。<br><br>很多人现在在做 Agent，其实还是在做“会自动执行的工具”。<br><br>但真正的方向可能不是工具，而是 数字劳动力。<br><br>一个人养一个 Agent，和一个团队养一群 Agent，是完全不同的问题。<br><br>当 Agent 开始互相协作、互相触发、互相传递任务的时候，你就会发现——这已经不是“AI 帮你干点活”。而是一群 AI 在一起工作。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HDk5Gm7boAENGlU?format=png&name=large\" alt=\"图片\" /><img src=\"https://pbs.twimg.com/media/HDk5KzbbEAAUEMp?format=png&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@sitin</strong> <span class=\"tw-eng\">♥ 5 · 💬 5</span><p>Claude 每次福利都是钓鱼哈哈哈哈，一大早又死一批号，<br>http://<br>aigocode.com 现在都不敢领他的各种福利。</p></div></div>",
+    "pageContent": "sitin: 刷 GitHub 看到一个挺有意思的项目，叫 Clawith。简单说一句话：它想把 OpenClaw 从“个人 AI 助手”，变成“AI 团队协作平台”。 Clawith 做了一件事：把OpenClaw的“定时触发”升级成“持续感知”。 他们提出了一个叫 Aware 的机制。\n除了 OpenClaw 原本的 heartbeat、cron、interval、webhook 这些触发方式之外，还加了一个很关键的触发器：on_message。 就是说只要有人或者另一个 Agent 发消息，它就会立刻触发。 在多 Agent 协作里，这其实特别重要。\n因为任务来源不再只有人，还可能是别的 Agent。整个系统会变成一个不断互相触发的协作网络，而不是一个一个排队执行的脚本。 另一个设计 Relationship（关系系统）\nClawith 把 Agent 当成“数字员工”来设计。\n每个 Agent 进来以后，不只是有技能，还会认识团队成员：谁是老板、谁是同事、谁负责什么工作。 甚至还有一个类似 公司朋友圈的广场，Agent 可以发动态、分享发现、评论别人的工作。 乍一看有点像社交功能，但其实背后的逻辑是：让 Agent 持续吸收组织里的信息，而不是孤立干活。 很多人现在在做 Agent，其实还是在做“会自动执行的工具”。 但真正的方向可能不是工具，而是 数字劳动力。 一个人养一个 Agent，和一个团队养一群 Agent，是完全不同的问题。 当 Agent 开始互相协作、互相触发、互相传递任务的时候，你就会发现——这已经不是“AI 帮你干点活”。而是一群 AI 在一起工作。\n![图片](https://pbs.twimg.com/media/HDk5Gm7boAENGlU?format=png&name=large)\n![图片](https://pbs.twimg.com/media/HDk5KzbbEAAUEMp?format=png&name=large)\n---\n热门回复 (共 1 条):\n@sitin (♥ 5 · 💬 5):\nClaude 每次福利都是钓鱼哈哈哈哈，一大早又死一批号，\nhttp://\naigocode.com 现在都不敢领他的各种福利。\n"
+  },
+  "payloadHash": "sha256:7ba7a517530627e0315bf4f0d5f945296365420d46a3ee7bfb45bbb8108f789c",
+  "refs": {},
+  "revisionId": "sha256:d85f30f595c36c651d2c35331f1a6feb83c4bfac4d8061b683e2ef7b67406433",
+  "schemaVersion": 1,
+  "updatedAt": 1773735374516
+}

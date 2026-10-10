@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773653624132,
+  "entityType": "message",
+  "id": "1773653698644_ct1a77au",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章介绍了 `Agent Orchestrator`：一个用来“批量管理 AI 编码代理”的编排工具。它的核心价值是把多代理协作中的分支管理、CI 修复、审查意见处理等繁琐流程自动化，让人只在需要判断时介入。\n\n- **项目定位：解决“多个 AI 代理并行写代码”的协作问题**\n  - 单独运行 1 个 AI 代理很容易，但同时管理 30 个代理时，难点变成协同与跟踪。\n  - 传统做法需要人工完成：建分支、启动代理、检查是否卡住、查看 CI 报错、转发 review 评论、跟踪 PR 是否可合并、最后清理环境。\n  - 这个工具的目标是：你只需要执行 `ao spawn`，剩下的大部分流程由系统自动处理。\n\n- **它是怎么工作的：给每个代理独立的工作环境**\n  - 每个 AI 代理都会有自己独立的 `git worktree`、分支和 PR，避免相互干扰。\n  - 当 CI 失败时，系统会把日志发回代理，让代理继续修复。\n  - 当审查者提出修改意见时，系统会自动把评论交给代理处理。\n  - 只有在“需要人类判断”的情况下，系统才通知你介入。\n  - 一个典型流程是：`ao spawn my-project 123` 后，系统会创建隔离工作区、启动运行时（如 `tmux` 或 Docker）、拉起代理（如 Claude Code、Codex、Aider），再由代理自主读代码、写测试、提 PR。\n\n- **快速开始：支持从远程仓库或本地仓库启动**\n  - 方式一：从仓库 URL 直接开始，适合最快上手。\n    - 安装后运行：`ao start https://github.com/your-org/your-repo`\n    - 系统会自动识别语言、包管理器、源码平台和默认分支，并生成 `agent-orchestrator.yaml`，同时启动 dashboard 和 orchestrator。\n  - 方式二：从已有本地仓库开始。\n    - 先执行：`ao init --auto`\n    - 再执行：`ao start`\n  - Dashboard 默认在 `http://localhost:3000`，也可以用 `ao status` 查看命令行状态。\n\n- **插件化架构：几乎所有组件都可替换**\n  - 文中强调有 8 个可插拔槽位（“Every abstraction is swappable”）。\n  - 默认组合包括：\n    - Runtime：`tmux`\n    - Agent：`claude-code`\n    - Workspace：`worktree`\n    - Tracker：`github`\n    - Notifier：`desktop`\n  - 可替代项包括：`docker`、`k8s`、`codex`、`aider`、`linear`、`slack`、`webhook` 等。\n  - 插件实现方式比较直接：实现 `packages/core/src/types.ts` 中定义的 TypeScript 接口，并导出 `PluginModule` 即可。\n\n- **配置和自动反应机制：重点是“事件来了，自动处理”**\n  - 配置文件是 `agent-orchestrator.yaml`，可设置端口、默认运行时、代理类型、工作区方式、通知方式和项目列表。\n  - 文中给了一个重要反应规则示例：\n    - `ci-failed`：自动发送给代理修复，`retries: 2`\n    - `changes-requested`：自动发送给代理处理，`escalateAfter: 30m`\n    - `approved-and-green`：默认不自动合并，而是通知你；可手动改成自动合并\n  - 也就是说，CI 失败、评审要求修改、PR 已批准且 CI 通过，这三类关键状态都能被自动接管。\n\n- **CLI 能力：覆盖代理生命周期管理**\n  - 常用命令包括：\n    - `ao status`：查看所有会话概览\n    - `ao spawn <project> [issue]`：启动一个代理\n    - `ao send <session> \"Fix the tests\"`：给代理发额外指令\n    - `ao session ls`：列出会话\n    - `ao session kill <session>`：终止会话\n    - `ao session restore <session>`：恢复崩溃代理\n    - `ao dashboard`：打开 Web 面板\n    - `ao doctor [--fix]`、`ao update`：维护和修复本地安装\n\n- **维护能力：不仅能跑，还强调自检和修复**\n  - `ao doctor` 会检查：\n    - PATH 和启动器解析\n    - 必需二进制工具是否可用\n    - `tmux` 和 GitHub CLI 健康状态\n    - 配置目录支持情况\n    - 过期临时文件\n    - 核心构建/运行时完整性\n  - `ao update` 会：\n    - 将本地安装仓库快进到 `main`\n    - 执行 `pnpm install`\n    - 重建 `@composio/ao-core`、`@composio/ao-cli`、`@composio/ao-web`\n    - 用 `npm link` 刷新全局 `ao`\n    - 最后跑 CLI smoke tests\n\n- **使用门槛、开发和文档情况**\n  - 前置要求：\n    - `Node.js 20+`\n    - `Git 2.25+`\n    - `tmux`（默认运行时）\n    - `gh CLI`（GitHub 集成）\n  - 开发命令：\n    - `pnpm install && pnpm build`\n    - `pnpm test`\n    - `pnpm dev`\n  - 测试规模较大：共有 `3,288` 个测试用例。\n  - 文档较完整，覆盖 Setup Guide、Examples、Development Guide、Contributing、Troubleshooting。\n\n- **项目成熟度与仓库信息**\n  - 仓库有 `288 commits`。\n  - 发布信息显示为 `4 + 3 releases`。\n  - 许可证是 `MIT`。\n  - 语言构成：\n    - TypeScript `92.7%`\n    - Shell `6.7%`\n    - Other `0.6%`\n\n- **一句话看价值**\n  - 这不是单纯“再包一层 AI coding agent”，而是把“多代理并行开发”的管理成本系统化解决。\n  - 最适合的场景是：团队要同时处理多条 issue / ticket / PR，希望 AI 代理能自主推进，而人只保留最终决策权。\n\n如果你愿意，我还可以继续把这篇内容再压缩成一版“适合汇报/发群”的 100 字摘要。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773653624132,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:81073a916af9de7ed7b779e2a28bf89e00d23a2f151a97e9cbcd7bdac55bf70f",
+  "refs": {
+    "sessionId": "1773653698640_s8dlpuo3"
+  },
+  "revisionId": "sha256:2d3e880575aa0b327f458b6e68b05fe42128d536ab3b429320dd67e043e52a0e",
+  "schemaVersion": 1,
+  "updatedAt": 1773653624132
+}

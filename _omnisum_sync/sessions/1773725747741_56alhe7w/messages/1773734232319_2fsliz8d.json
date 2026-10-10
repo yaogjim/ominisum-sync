@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773734232320,
+  "entityType": "message",
+  "id": "1773734232319_2fsliz8d",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent与原生应用边界判断\n\n**评级**: B (65.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI产品战略\n**次类别**: Agent架构, 商业模式分析\n**标签**: #Agent OS #Agent-native Application #产品定位 #竞争壁垒 #上下文容量 #注意力带宽\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 观点锋利、框架清楚，但更像战略判断而非被充分验证的方法论。\n**核心高价值点**: 将 Agent 的核心限制抽象为“上下文容量”和“注意力带宽”两个物理约束，并据此解释 Application 的存在价值。\n\n### 摘要\n文章认为 Agent 更像 OS，垂类不应直接做 OS，而应构建具备领域状态、基础设施与规模经济的 Agent-native Application，以解决上下文容量和注意力带宽两类约束并形成壁垒。\n\n### 知识要点\n- Prompt、Script、Application 构成从指路到代劳再到服务化沉淀的三层演进路径\n- Agent-native Application 的壁垒来自领域状态、基础设施投入和规模经济，而非单纯技能封装\n- OS 负责 WHAT，Application 负责 HOW，二者之间可能形成认知共生飞轮\n\n### 行动项\n- 审视当前 Agent 产品是否误把 OS 能力建设当作垂类竞争方向\n- 设计应用层时优先沉淀领域状态与业务历史，而非只做可复制的 prompt 或脚本封装\n- 在方案评审中加入“容量约束”和“注意力带宽约束”两个检查维度\n\n### 存档判定\n归档: 是 — 原因: 提出了较清晰的 Agent OS 与 Application 分层框架，可作为后续思考产品边界与壁垒设计的参考材料\n删除: 否\n留存决策: 中期保留，适合用于建立 Agent 产品定位认知框架，但不宜作为决策依据单独使用",
+    "role": "assistant",
+    "timestamp": 1773734232320,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:4d91d00de9dd8d0f63950f8b6a9928c796612a81e76df42306f51a370f1e5d9e",
+  "refs": {
+    "sessionId": "1773725747741_56alhe7w"
+  },
+  "revisionId": "sha256:86c6c4d0c9a20d693c15f7d95f16c237198356445a1b76b3bde22f5e6aff7763",
+  "schemaVersion": 1,
+  "updatedAt": 1773734232320
+}

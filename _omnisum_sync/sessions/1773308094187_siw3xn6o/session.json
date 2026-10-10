@@ -1,0 +1,70 @@
+{
+  "createdAt": 1773308094187,
+  "entityType": "session",
+  "id": "1773308094187_siw3xn6o",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在现有RAG流程中加入独立评估器，对Top-K检索结果做relevant/ambiguous/incorrect三元分类。",
+      "为向量库增加置信度、时间衰减和验证状态等元数据，降低记忆污染风险。",
+      "针对专有名词和版本号查询，验证Dense+Sparse混合检索是否优于纯向量召回。",
+      "补做离线评测和线上监控，重点跟踪误召回率、Web搜索触发率、延迟和回答正确率。"
+    ],
+    "archiveReason": "包含可直接复用的CRAG工程实现思路、Milvus选型要点和示例代码，适合作为搭建原型时的参考材料。",
+    "classifiedAt": 1773830198507,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "CRAG落地与Milvus实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "传统RAG容易因语义相似但场景不符、内容过时和记忆污染导致高分误检索。",
+      "CRAG通过三元判决将检索结果分为正确、模糊、错误，并分别采取直接使用、补充外部知识或丢弃的策略。",
+      "知识精炼可通过文档分解、查询重写和知识选择减少无关上下文，降低幻觉和token浪费。",
+      "Milvus适合CRAG场景的原因包括Partition Key多租户隔离、Dense+Sparse+元数据过滤的混合检索，以及JSON字段扩展。",
+      "用LangGraph middleware而非复杂状态图可简化CRAG集成路径，提高可维护性。"
+    ],
+    "oneHighValuePoint": "把传统RAG改造成“检索-评估-纠正-生成”闭环，并用轻量评估器在生成前过滤或补强上下文，是解决高相似低可用问题的核心思路。",
+    "oneLineReview": "有较强工程参考价值，但更像实践型推广文，证据和严谨性不足以支撑更高评级。",
+    "primaryCategory": "AI工程实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后归档保留",
+    "secondaryCategories": [
+      "RAG系统设计",
+      "向量数据库应用"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕RAG检索误召回问题，介绍CRAG的评估-纠正机制，并结合Milvus的多租户、混合检索和动态Schema能力，给出基于LangGraph middleware的简化实现方案，偏工程落地导向。",
+    "tags": [
+      "CRAG",
+      "LangChain",
+      "Milvus",
+      "RAG",
+      "Agent"
+    ],
+    "title": "Embedding相似度虚高，如何用langchain+Milvus搭建CRAG解决？",
+    "totalScore": 67.5,
+    "url": "https://x.com/yinmin1987/status/2031902782819876934"
+  },
+  "payloadHash": "sha256:d3564a60a01acfcb6d409395014ba4417596926456d0756c458dc9d4278fd5e4",
+  "refs": {},
+  "revisionId": "sha256:a891f393db1d9aaa4c881fc1d77cd18da9315b4eda63b43a10ad5c1a40bc547e",
+  "schemaVersion": 1,
+  "updatedAt": 1773830198512
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773101458_javqgkt0",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Cursor 开放官方 TypeScript SDK：从 AI 编程工具走向 Agent 基建平台\n\n## 一句话总结\n\nCursor 发布官方 TypeScript SDK 公测版，把其编辑器、CLI、网页版背后的 AI 编程智能体能力开放给开发者，开发者可以用它构建自己的编码 Agent、自动化工作流，甚至嵌入到自家产品中。\n\n## 核心变化：Cursor 不只是 IDE 了\n\nCursor 过去主要是一个 AI 编程编辑器，现在开始把底层能力产品化。\n\n这次开放的 SDK，相当于把 Cursor 内部用于驱动 Agent 的运行框架、云端环境、模型调用、代码检索和工具接入能力打包出来，供外部开发者直接使用。\n\n换句话说，Cursor 正在从“AI IDE”升级为“Agent 基础设施平台”。\n\n## SDK 能做什么\n\n开发者安装：\n\n```bash\nnpm install @cursor/sdk\n```\n\n即可调用 Cursor Agent。\n\nAgent 可以运行在两种环境中：\n\n- **本机环境**：适合轻量任务和本地开发。\n- **Cursor 云端虚拟机**：每个 Agent 拥有独立沙箱、完整开发环境和代码仓库，即使电脑断网或休眠，任务也能继续执行。\n\n云端 Agent 完成任务后，还可以：\n\n- 自动提交代码\n- 创建 PR\n- 推送分支\n- 附带截图或结果说明\n\n## 开放的关键能力\n\nCursor SDK 开放了其内部 Agent 运行框架，包括：\n\n- 代码库索引\n- 语义搜索\n- 即时 grep\n- MCP 工具接入\n- 从 `.cursor/skills/` 自动加载技能\n- Agent 执行循环的 hooks，可观察和干预过程\n- 子 Agent 拆分任务能力\n\n这些能力让开发者不必从零搭建 Agent 工程系统，可以直接复用 Cursor 已验证的底层框架。\n\n## 模型选择更灵活\n\nCursor SDK 不绑定单一模型。\n\n开发者可以切换使用：\n\n- OpenAI 模型\n- Anthropic 模型\n- Google 模型\n- Cursor 自研的 Composer 2\n\n其中 Composer 2 是 Cursor 面向编码任务训练的模型，主打以更低成本接近前沿模型效果。\n\n## 典型应用场景\n\n官方给出的使用场景包括：\n\n### 1. CI/CD 自动化\n\n在流水线中自动完成：\n\n- 总结代码变更\n- 定位失败原因\n- 自动修复问题\n- 创建修复 PR\n\n### 2. 内部工具\n\n让非技术团队也能通过自然语言查询产品数据或触发内部流程，例如销售、市场、运营团队。\n\n### 3. 嵌入客户产品\n\n企业可以把 Cursor Agent 直接嵌入自己的 SaaS 或开发者产品中，让终端用户在应用内完成智能编码或自动化任务。\n\n## 商业意义\n\n这次 SDK 发布说明 Cursor 的商业边界正在扩大。\n\n过去用户主要为 Cursor 编辑器付费；未来用户也可能为 Cursor 的 Agent 运行环境、模型调用和自动化能力付费。\n\n这意味着 Cursor 不再只是卖一个 AI 编程工具，而是在卖一套 AI Agent 基础设施。\n\n## 行业背景\n\nAnthropic 已推出 Claude Agent SDK，OpenAI 也有 Codex 相关 SDK。\n\n这说明一个趋势正在形成：\n\n> Agent 基础设施正在成为独立市场。\n\n未来竞争不只是模型能力，而是谁能提供更稳定、更好用、更易集成的 Agent 运行平台。\n\n## 结论\n\nCursor SDK 的发布，是 Cursor 平台化的重要一步。\n\n它把原本封装在编辑器里的核心能力开放给开发者，让 Cursor 从“AI 编程编辑器”进一步变成“AI 编程 Agent 基建平台”。对于开发者和企业来说，这降低了构建代码 Agent、自动化研发流程和智能产品功能的门槛。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:edc10a488125c29711dee44646859efbfe558fc16ee70cf21a43859b35f2f79a",
+  "refs": {
+    "sessionId": "1777773101090_mhb2gruf"
+  },
+  "revisionId": "sha256:55312218582113218285ac36953e2727a78f7837bb2e3cf19a2d2d9b56c6b061",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

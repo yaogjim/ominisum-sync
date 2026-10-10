@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777901653815,
+  "entityType": "message",
+  "id": "1777901689242_hzttasyv",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Coding Agent 配套工具选型总结\n\n## 核心观点\n\n作者正在寻找一套能配合 Coding Agent 使用的工具链，覆盖 **Skills 管理、多 Agent 调度、手机控制、需求看板、桌面应用** 等场景。整体偏好是：**选择对 Claude Code、Codex、OpenCode 等底层能力的“封装”，而不是完全替代它们。**\n\n---\n\n## 1. Skills 管理\n\n作者最终选择：\n\n- **xingkongliang/skills-manager**\n\n用途是管理 Coding Agent 的技能能力。\n\n评论区补充了几个替代方案：\n\n- **aghub**：可结合 MCP 做更完整的 Agent / Skill 管理\n- **skill-optimizer**：偏向诊断 Skill 质量，比如是否触发、是否被拒、Workflow 是否中断\n- **Skill Flow**：另一个 Skills 管理方案\n\n---\n\n## 2. 多 Agent 管理\n\n作者最终选择：\n\n- **ShawnPana/smux**\n\n特点是通过：\n\n- **tmux-bridge 控制终端**\n- 支持多个 Agent 协作\n- 使用方式优雅，适合并行开发任务\n\n作者认为，如果是从零开始写代码，相比看板类工具，自己更喜欢 **smux**。\n\n---\n\n## 3. 手机控制\n\n作者选择：\n\n- **happy coder**\n\n虽然市面上出现了不少新的手机控制类 App，但作者仍然倾向于使用 happy coder。\n\n评论区有人提到：\n\n- happy coder 稳定性略差\n- 最近更新较少\n\n---\n\n## 4. 看板工具\n\n用途包括：\n\n- 拆分需求\n- 创建 worktree\n- 驱动不同 Agent 完成不同任务\n\n作者考虑的工具：\n\n- **Conductor**\n- **Cline Kanban**\n\n作者认为，看板类 App 更适合维护已有代码库，因为结构更清晰；但如果是从头写项目，更偏好 smux。\n\n---\n\n## 5. Desktop 应用\n\nDesktop 应用主要用于处理一些非编码任务。\n\n作者认为这类工具已经非常多，选择空间很大，例如：\n\n- **Codex App**：体验不错\n- **Alma**：适合没有订阅时考虑\n\n---\n\n## 总结\n\n这篇内容本质上是在分享一套 **围绕 Coding Agent 的个人工作流工具栈**：\n\n- Skills 管理：skills-manager\n- 多 Agent 调度：smux\n- 手机控制：happy coder\n- 看板协作：Conductor / Cline Kanban\n- 桌面非编码任务：Codex App / Alma\n\n作者的关键原则是：  \n**不要过度替换底层 Agent，而是在 Claude Code、Codex、OpenCode 等成熟工具之上做封装和协同。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777901653815,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d5b7fee57a763399f7267c7a8e1baab299afae59e880b5a25f9595fa8bc8df0c",
+  "refs": {
+    "sessionId": "1774865407182_qasuz0tj"
+  },
+  "revisionId": "sha256:48c2b8dd55956f03c216ab0187791e042d726b48423eca62360d4f2a7afa3f89",
+  "schemaVersion": 1,
+  "updatedAt": 1777901653815
+}

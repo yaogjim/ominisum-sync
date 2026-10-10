@@ -1,0 +1,65 @@
+{
+  "createdAt": 1780308103978,
+  "entityType": "session",
+  "id": "1780308103978_yw6oeedo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确有兴趣，逐个到GitHub核实项目真实性、star数、许可证和维护状态",
+      "不要直接依据该榜单做技术选型或收藏归档"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780308238956,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 1,
+      "information_density": 5,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "疑似失实的AI开源项目榜单",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "核心信息可信度不足，项目作者、影响力、时间线和信息差判断均存在被质疑之处，容易误导后续判断。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI Agent、CLI编程工具和可穿戴AI是当前开源生态中的活跃方向",
+      "社交媒体榜单类内容若无来源和方法论，容易混杂夸大、错误或幻觉信息"
+    ],
+    "oneHighValuePoint": "可作为发现若干AI Agent相关项目名称的线索，但必须逐一核实。",
+    "oneLineReview": "看似信息密集，实则缺乏核验，作为开源项目情报来源风险较高。",
+    "primaryCategory": "AI开源项目资讯",
+    "rating": "D",
+    "rejectReason": "内容以项目榜单形式罗列信息，但缺乏来源链接、评估标准和验证过程，且热门回复指出多处事实错误或疑似AI生成失实内容，参考价值较低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "AI Agent",
+      "开源工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章罗列若干所谓值得关注的AI开源项目，并按S级、A级排序，强调信息差和影响力。但内容缺乏证据支撑，多个项目描述被评论质疑存在事实错误或夸大，整体可信度较低。",
+    "tags": [
+      "AI Agent",
+      "开源项目",
+      "项目榜单",
+      "信息差",
+      "可信度低"
+    ],
+    "title": "Y11: 最值得关注的开源项目（按影响力和信息差排序） --- S 级：必须关注 1",
+    "totalScore": 35.5,
+    "url": "https://x.com/seclink/status/2059976049476124866"
+  },
+  "payloadHash": "sha256:ee8407ff03ecc3af42faa3583af0ee0697ef56c699e5fd42059dd9a42e515e32",
+  "refs": {},
+  "revisionId": "sha256:3a934c729637a22858c6537cc908109d1cb921d93d1f878fe329f6db4dddb97b",
+  "schemaVersion": 1,
+  "updatedAt": 1780308240703
+}

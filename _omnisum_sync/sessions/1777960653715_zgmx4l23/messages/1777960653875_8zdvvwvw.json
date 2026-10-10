@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777960596648,
+  "entityType": "message",
+  "id": "1777960653875_8zdvvwvw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章总结：让 Codex 保持流畅的维护方法\n\n## 核心问题\n\n作者反馈：最新版 Codex 使用时明显变卡，例如切换任务卡顿、上传图片加载慢。初步看内存占用不高，因此怀疑可能不是运行内存问题，而是本地项目、线程、日志、工作区等状态积累过多导致。\n\n## 解决思路\n\n评论中有人推荐了一个工具/方法：  \n[keep-codex-fast](https://github.com/vibeforge1111/keep-codex-fast)\n\n其核心思想是：**定期检查 Codex 本地状态，并清理或归档不再需要的历史数据**。\n\n主要包括：\n\n- 检查本地占用空间\n- 归档超大的无用 thread\n- 将旧的 worktrees 移动到 archive\n- 归档过大的日志文件\n- 将上述检查与清理流程做成定时任务\n\n## 推荐用法\n\n可以让 AI Agent 直接执行维护检查，例如：\n\n```text\nUse $keep-codex-fast to inspect my Codex local state and recommend a safe maintenance plan.\n```\n\n也就是让 Agent 检查 Codex 当前本地状态，并给出安全的维护清理方案。\n\n## 产品视角理解\n\n这类问题本质上不是单纯的性能 bug，而是**长期使用后的本地状态膨胀问题**。\n\n随着任务、线程、日志、工作区不断积累，工具即使内存占用不高，也可能因为本地索引、文件扫描、状态加载等操作变慢。\n\n因此，AI 编程工具需要类似“系统清理/项目归档”的长期维护机制。\n\n## 一句话总结\n\nCodex 变卡可能是本地历史状态积累过多导致，可以通过 `keep-codex-fast` 定期检查、归档旧任务和日志，让 Codex 保持更快、更轻量的运行状态。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777960596648,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f9c889bde9f15c33418644835b6ce2f748b660e3d66f239d0c9b52b82e7bdba8",
+  "refs": {
+    "sessionId": "1777960653715_zgmx4l23"
+  },
+  "revisionId": "sha256:c3dc809b54dae8ee63de3757baf19da8d6f61aaf549c34b731e881415aff31e3",
+  "schemaVersion": 1,
+  "updatedAt": 1777960596648
+}

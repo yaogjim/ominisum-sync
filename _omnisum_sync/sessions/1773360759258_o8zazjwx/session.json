@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773360759258,
+  "entityType": "session",
+  "id": "1773360759258_o8zazjwx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你确实有多账号管理需求，可单独调研自建中转层的稳定性、成本与合规风险",
+      "优先寻找包含部署步骤、限流策略和监控方案的更完整资料替代本帖"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773830058144,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "多账号中转站使用随感",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "缺乏系统方法、证据和可复用经验，时效性强且平台讨论噪声大，长期留存价值低。",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "可通过轻量服务器加中转服务整合多个模型账号的调用入口",
+      "统一 API-Key 管理可减少多账号切换的操作复杂度"
+    ],
+    "oneHighValuePoint": "将多账号通过自建中转层统一成单一 API 入口，能简化日常模型调用和密钥管理。",
+    "oneLineReview": "有一点实践启发，但整体更像零散社交分享，参考价值有限。",
+    "primaryCategory": "AI工具与开发工作流",
+    "rating": "D",
+    "rejectReason": "主体内容仅是个人使用感受，缺少配置细节、成本数据、稳定性指标和可复现步骤，评论区也较为发散。",
+    "retentionDecision": "信息噪声较高，除非你正在研究账号中转方案，否则建议删除",
+    "secondaryCategories": [
+      "API中转与账号管理",
+      "社区讨论"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章核心是在阿里云轻量服务器上通过 sub2api 统一挂载多个账号，形成内部中转站，并用统一 API-Key 管理调用。内容偏个人体验分享，提到系统稳定一周左右，但没有提供部署流程、成本、风控或性能数据。",
+    "tags": [
+      "sub2api",
+      "阿里云轻量服务器",
+      "统一API-Key",
+      "cc-switch",
+      "Claude Code"
+    ],
+    "title": "马天翼: 我不是把所有账号都搞了一个阿里云轻量服务器，然后走 sub2api 了，等于自己搭建了一个内部中转站么",
+    "totalScore": 37.5,
+    "url": "https://x.com/fkysly/status/2032115796496032086"
+  },
+  "payloadHash": "sha256:3f73bb99007548f8fb55247508514839c60019d9829326482a9dd64257b6930c",
+  "refs": {},
+  "revisionId": "sha256:aa86019effff3002cec42d5fa4fddc80d74b2dedb703192f9e4bc29bf0bada66",
+  "schemaVersion": 1,
+  "updatedAt": 1773830058148
+}

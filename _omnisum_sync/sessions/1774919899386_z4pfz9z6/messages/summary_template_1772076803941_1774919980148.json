@@ -1,0 +1,23 @@
+{
+  "createdAt": 1774919980148,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1774919980148",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章主旨\n\n这篇文章介绍了一个面向 Claude Code 的 Codex 官方插件：它让用户不用离开 Claude Code，就能把 Codex 接入同一套开发流程中。  \n核心价值是：用不同代理做 “第二次检查”，尤其适合常规评审、高风险场景的对抗性评审，以及把任务直接转交给 Codex 处理。\n\n## 1. 这个插件是做什么的\n\n- 如果你已经在用 Claude Code，这个插件可以把 Codex 无缝接入现有工作流。\n- 主要有 3 个用途：\n  - `常规评审`：做标准的只读代码审查。\n  - `对抗性评审`：更 “挑刺”、更怀疑实现方案，主动找隐藏问题。\n  - `任务接管`：当当前线程卡住，或者你想换个代理继续推进时，把任务交给 Codex。\n- 文章强调，它最大的意义不是 “多一个工具”，而是 “在同一环境里得到不同代理的第二视角”。\n\n## 2. 如何安装和配置\n\n- 安装步骤如下：\n\n```bash\n/plugin marketplace add openai/codex-plugin-cc\n/plugin install codex@openai-codex\n/codex:setup\n```\n\n- 插件仓库地址：`https://github.com/openai/codex-plugin-cc`\n- 使用前提：\n  - 需要`ChatGPT 订阅（包括免费版）`，或者`OpenAI API 密钥`\n  - 需要`Node.js 18.18 或更高版本`\n- 如果本地还没有安装 Codex，需要执行：\n\n```bash\nnpm install -g @openai/codex\n```\n\n- 如果已经安装但还没认证，需要执行：\n\n```bash\n!codex login\n```\n\n- 这说明插件本质上依赖本地 Codex 环境，而不是一套全新的独立系统。\n\n## 3. 核心命令与推荐用法\n\n- 文章列出了 3 个核心命令：\n  - `/codex:review`：运行标准的只读 Codex 审查\n  - `/codex:adversarial-review`：执行更具挑战性的 “对抗性审查”\n  - `/codex:rescue`：直接把任务分配给 Codex\n- 长任务支持后台运行，并可用这些命令管理：\n  - `/codex:status`\n  - `/codex:result`\n  - `/codex:cancel`\n\n### 一个简单的首次运行方式\n\n```bash\n/codex:review --background\n/codex:status\n/codex:result\n```\n\n- 这套流程的重点是：你不需要离开 Claude Code，就能拿到 Codex 的独立复查结果。\n- 作者给出的 “默认工作模式” 很清晰：\n  - 所有内容先跑`/codex:review`\n  - 高风险内容再跑`/codex:adversarial-review`\n  - 线程卡住或需要换代理时，用`/codex:rescue`\n\n## 4. 什么场景最适合用对抗性审查\n\n- 文章特别强调：`对抗性审查`是这个插件里很有价值的能力。\n- 它尤其适合这些高风险场景：\n  - `迁移`\n  - `认证变更`\n  - `基础设施脚本`\n  - `重构`\n  - 以及那些 “风险来自隐藏假设，而不是明显语法错误” 的任务\n- 通俗理解就是：\n  - 普通审查更像 “看看有没有明显 bug”\n  - 对抗性审查更像 “故意质疑你的方案是否建立在错误前提上”\n- 例如：\n  - 一次认证改造，代码可能语法完全正确，但权限边界、回滚逻辑、旧 token 兼容策略可能有隐藏风险；\n  - 这种情况下，对抗性审查比普通检查更有价值。\n\n## 5. 它为什么显得轻量\n\n- 插件并不是单独再造一个运行时，而是通过：\n  - `本地 Codex CLI`\n  - `Codex 应用服务器`\n  来完成委托调用。\n- 因此它会直接复用你在 Codex 里已经配置好的内容：\n  - 本地认证\n  - 配置\n  - 环境\n  - MCP 设置\n- 文章用一句话概括这个设计：  \n  它不是一个独立的新系统，“它就是 Codex，只是从 Claude Code 内部调用出来”。\n\n## 6. 可选的 “评审关卡” 功能\n\n- 可以通过下面命令启用评审关卡：\n\n```bash\n/codex:setup --enable-review-gate\n```\n\n- 作用是：在 Codex 审查完成之前，阻止 Claude Code 直接退出。\n- 这个功能适合那些希望 “先审后结束” 的用户，但作者提醒要谨慎：\n  - 它可能导致 Claude 和 Codex 之间形成长时间循环\n  - 会更快消耗使用额度\n- 换句话说，这个功能能提升流程约束力，但也可能带来成本和效率问题。\n\n## 7. 作者的最终结论\n\n- 这款插件的定位很明确：  \n  `保留 Claude Code 的主工作流，同时在 Codex 擅长的地方继续用 Codex。`\n- 作者给出的建议是：\n  - 安装插件\n  - 运行`/codex:setup`\n  - 把`/codex:review`当作默认的 “第二遍检查”\n  - 当普通检查不够时，再使用`/codex:adversarial-review`或`/codex:rescue`\n- 核心思想不是替代 Claude Code，而是让两个代理在同一流程里协作，各自发挥优势。\n\n## 8. 热门回复反映了什么观点\n\n- 文末共有`5 条热门回复`，讨论的重点集中在 “不同模型交叉审查” 的价值。\n- 最有代表性的观点是：\n  - `对抗性审查才是真正的突破口`\n  - 同一个模型审查自己生成的内容，就像自己校对自己的文章，容易重复忽略同样的问题\n- 这个观点在评论中被多次重复，说明大家普遍认可：\n  - `Claude 负责生成`\n  - `Codex 负责批判性审查`\n  是一种更稳妥、与模型无关的工作流。\n- 其他评论则补充了两点现实价值：\n  - 官方插件比自己用`hook`、`共享消息系统`、甚至`tmux`拼接协作方案更简单\n  - 一些用户也在确认：`免费版 ChatGPT 订阅`是否也可用于该插件（原文给出的答案是支持 “包括免费版”）\n\n## 9. 一句话总结\n\n- 这篇文章本质上是在推荐一种 “双代理协作” 的开发方式：用 Claude Code 继续主流程，再用 Codex 做独立复核、对抗性挑错或任务接管。\n- 如果你经常处理高风险改动，这个插件最值得关注的不是 “接入方便”，而是它提供了一个真正不同视角的第二审查者。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1774919980148,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e28816b778e18095131e2fa4cbaaae331fcf06d09aecfaf2a96842f3c5c56b20",
+  "refs": {
+    "sessionId": "1774919899386_z4pfz9z6"
+  },
+  "revisionId": "sha256:7ecc204c5c30b24cdf46509550200ec68919ecb835c6818e352c765d981d762a",
+  "schemaVersion": 1,
+  "updatedAt": 1774919980148
+}

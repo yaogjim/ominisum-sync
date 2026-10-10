@@ -1,0 +1,15 @@
+{
+  "createdAt": 1777812249011,
+  "entityType": "session-content",
+  "id": "1777812249011_9pbxz380",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Joruno</strong></header><div class=\"tw-body\">把 Codex 塞进 Claude Code 之后，我真的回不去了。<br><br>最近折腾出一个特别顺手的玩法：在 Claude Code 里直接接入 Codex 做代码审查（而且是 OpenAI 官方插件）。<br><br>配置不复杂，几步搞定：<br><br>1. /plugin marketplace add openai/codex-plugin-cc<br>2. /plugin install codex@openai-codex<br>3. /reload-plugins<br>4. /codex:setup<br><br>我的日常用法也很简单：代码写完就丢给 Codex 先过一遍。小改动、常规检查、边角问题基本都让它先拦下来，再决定要不要继续深挖。<br><br>用了一段时间的真实体感：<br><br>- token 用量肉眼可见地降了，基本能省一半<br>- 更惊喜的是，代码质量反而更稳了，很多细节坑会更早被揪出来</div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Joruno</strong> <span class=\"tw-eng\">♥ 4 · 💬 2</span><p>@grok<br> 你告诉他吧</p></div><div class=\"tw-reply\"><strong>@杜冠魁</strong> <span class=\"tw-eng\">♥ 1 · 💬 2</span><p>@grok<br> 这个插件的使用方法告诉我</p></div><div class=\"tw-reply\"><strong>@Kyota</strong> <span class=\"tw-eng\">♥ 1 · 💬 2</span><p>Claude太贵了，昨天一天就跑了170</p></div><div class=\"tw-reply\"><strong>@Kakoum</strong> <span class=\"tw-eng\">♥ 2 · 💬 1</span><p>在两者之间切换，你是怎么做的？我在使用 Claude Code 的同时，还有一个 20 欧元的 OpenAI 订阅，我正在犹豫是否像你那样做。</p></div><div class=\"tw-reply\"><strong>@阿台BlueBird</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>这组合拳打得真香，代码审查效率起飞了！</p></div></div>",
+    "pageContent": "Joruno: 把 Codex 塞进 Claude Code 之后，我真的回不去了。 最近折腾出一个特别顺手的玩法：在 Claude Code 里直接接入 Codex 做代码审查（而且是 OpenAI 官方插件）。 配置不复杂，几步搞定： 1. /plugin marketplace add openai/codex-plugin-cc\n2. /plugin install codex@openai-codex\n3. /reload-plugins\n4. /codex:setup 我的日常用法也很简单：代码写完就丢给 Codex 先过一遍。小改动、常规检查、边角问题基本都让它先拦下来，再决定要不要继续深挖。 用了一段时间的真实体感： - token 用量肉眼可见地降了，基本能省一半\n- 更惊喜的是，代码质量反而更稳了，很多细节坑会更早被揪出来\n---\n热门回复 (共 5 条):\n@Joruno (♥ 4 · 💬 2):\n@grok\n 你告诉他吧\n\n@杜冠魁 (♥ 1 · 💬 2):\n@grok\n 这个插件的使用方法告诉我\n\n@Kyota (♥ 1 · 💬 2):\nClaude太贵了，昨天一天就跑了170\n\n@Kakoum (♥ 2 · 💬 1):\n在两者之间切换，你是怎么做的？我在使用 Claude Code 的同时，还有一个 20 欧元的 OpenAI 订阅，我正在犹豫是否像你那样做。\n\n@阿台BlueBird (♥ 1 · 💬 1):\n这组合拳打得真香，代码审查效率起飞了！\n"
+  },
+  "payloadHash": "sha256:2acd4ef714c77fd35f23ad53cb96c3ed4d1160eed26351f054bf312ce5782411",
+  "refs": {},
+  "revisionId": "sha256:089139ae16f236e62b261aceaf93605286aa6d78c7477f1ab77167950f0824a3",
+  "schemaVersion": 1,
+  "updatedAt": 1777813385938
+}

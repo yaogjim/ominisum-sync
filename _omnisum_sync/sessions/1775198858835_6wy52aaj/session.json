@@ -1,0 +1,67 @@
+{
+  "createdAt": 1775198858835,
+  "entityType": "session",
+  "id": "1775198858835_6wy52aaj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查现有Agent系统是否把可检索信息错误写入长期记忆，并建立“不该记”的白名单/黑名单",
+      "尝试设计一个精简记忆索引文件，结合专题文件按需读取替代全量塞入上下文"
+    ],
+    "archiveReason": "虽然证据链较弱，但提炼了若干有启发性的Agent记忆架构思路，适合后续做方案对照",
+    "classifiedAt": 1775199014520,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code记忆架构拆解",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent记忆可分为显式静态记忆与动态自动记忆两条轨道协同工作",
+      "长期记忆应限制写入范围，优先保留用户偏好、反馈、项目状态和引用索引",
+      "超长工具输出应落盘并只在上下文中保留摘要与引用",
+      "后台反思、去重和遗忘机制有助于降低上下文污染并提升长期稳定性"
+    ],
+    "oneHighValuePoint": "最有价值的是“记目录而不是背全文”的设计原则，即用精简索引加按需文件读取替代无边界向量记忆堆积。",
+    "oneLineReview": "有启发但证据不足，更像高质量架构解读帖而非可直接采信的一手技术资料。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，适合作为Agent记忆系统设计灵感素材",
+    "secondaryCategories": [
+      "记忆系统设计",
+      "上下文管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于所谓Claude Code还原源码，概括其受限式结构化记忆、双轨记忆、四类记忆系统、上下文压缩和后台反思机制，强调少记全文、多记索引、按需读取与定期清理的工程思想。",
+    "tags": [
+      "Claude Code",
+      "Agent架构",
+      "记忆机制",
+      "上下文压缩",
+      "工程方法"
+    ],
+    "title": "Rachel🥥: ClaudeCode意外流出的代码可以说是当前 AI Agent 工程领域最好的一本架构教科书",
+    "totalScore": 61.5,
+    "url": "https://x.com/Zesee/status/2039647686387999068"
+  },
+  "payloadHash": "sha256:ba38a4eff18a803cfdec7d85b7c1e7f260a590ee8a0b7a3be841b269df9635d8",
+  "refs": {},
+  "revisionId": "sha256:2b13a77c09fece8e76a9f28023f8688d4cc272672244f9cfc086e2bee9f1bfc7",
+  "schemaVersion": 1,
+  "updatedAt": 1775199152526
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1775650350746,
+  "entityType": "session",
+  "id": "1775650350746_ysyxd5re",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若正在评估自托管 Agent 工具，可将其与 OpenClaw、Claude Code、Codex CLI 做针对性对比",
+      "若计划试用，可优先按 README 的 Quick Start 或 Docker Compose 路径完成本地部署验证"
+    ],
+    "archiveReason": "包含较完整的功能清单、部署方式、环境变量和安全接入说明，适合后续查阅",
+    "classifiedAt": 1775820488114,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Hermes网页界面说明",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Hermes WebUI 旨在与 Hermes CLI 保持近乎 1:1 的功能对齐，复用既有 Agent 与模型配置",
+      "项目支持 Docker、环境变量配置、SSH 隧道与 Tailscale 访问，并提供基础密码认证与安全头设置"
+    ],
+    "oneHighValuePoint": "最大的价值在于提供了从本地启动、Docker、SSH 隧道到 Tailscale 远程访问的一整套可落地接入路径。",
+    "oneLineReview": "一篇偏产品说明与部署手册的项目文档，实用性强，但更多是功能罗列而非深层洞见。",
+    "primaryCategory": "AI Agent工具与部署",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后归档，作为自托管Agent界面与部署选型资料保留",
+    "secondaryCategories": [
+      "开源项目文档",
+      "WebUI与自托管"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份 Hermes WebUI 的 GitHub README，重点介绍其与 Hermes Agent 的关系、功能特性、安装启动方式、Docker 部署、SSH/Tailscale 访问、安全设置及测试覆盖情况。实操信息充分，但方法论和抽象框架较弱。",
+    "tags": [
+      "Hermes",
+      "WebUI",
+      "自托管",
+      "AI Agent",
+      "README"
+    ],
+    "title": "nesquena/hermes-webui: Hermes WebUI",
+    "totalScore": 58,
+    "url": "https://github.com/nesquena/hermes-webui?tab=readme-ov-file"
+  },
+  "payloadHash": "sha256:fead7e57cb8076939ef1a4ec14221e31232b922d92e7cc4c90bc342e6c6dcf8c",
+  "refs": {},
+  "revisionId": "sha256:5024af89745213aa7df673c60c5b59e0b74992482b4216be84dd03ecf5948fb8",
+  "schemaVersion": 1,
+  "updatedAt": 1775820488124
+}

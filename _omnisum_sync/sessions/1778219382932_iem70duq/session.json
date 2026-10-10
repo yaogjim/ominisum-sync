@@ -1,0 +1,293 @@
+{
+  "createdAt": 1778219382932,
+  "entityType": "session",
+  "id": "1778219382932_iem70duq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将文中的五阶段流程整理为个人二进制分析检查清单。",
+      "搭建 Ghidra、GDB/GEF、radare2、strace、Frida 等基础工具环境。",
+      "选择一个合法样本，按初始评估、静态分析、动态分析的顺序完整演练一次。",
+      "在分析过程中记录函数重命名、关键字符串、输入入口和危险函数调用。"
+    ],
+    "archiveReason": "提供了较完整的二进制分析流程、常用工具和典型场景，可作为逆向工程入门检查清单保存。",
+    "classifiedAt": 1780615893704,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 3,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "二进制逆向分析流程指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "claude-plugins.dev",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://claude-plugins.dev/api/og/skills/@macaugh/super-rouge-hunter-skills/binary-analysis.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://claude-plugins.dev/api/og/skills/@macaugh/super-rouge-hunter-skills/binary-analysis.png",
+        "width": 0
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://claude-plugins.dev/",
+        "role": "hero",
+        "score": 70,
+        "src": "https://claude-plugins.dev",
+        "width": 0
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://claude-plugins.dev/favicon.svg",
+        "role": "hero",
+        "score": 70,
+        "src": "https://claude-plugins.dev/favicon.svg",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "二进制分析可分为初始评估、静态分析、动态分析、漏洞识别和利用开发等阶段。",
+      "初始评估常用 file、strings、ldd、checksec、readelf、objdump 等命令了解架构、依赖和安全保护。",
+      "静态分析可通过 Ghidra、IDA、radare2 识别函数、字符串、交叉引用和控制流。",
+      "动态分析可使用 GDB、GEF、strace、ltrace、Frida 等工具观察运行时行为。",
+      "常见漏洞模式包括缓冲区溢出、格式化字符串、Use After Free 和整数溢出。",
+      "逆向分析应重视命名、注释、交叉引用追踪和授权合规。"
+    ],
+    "metaAuthor": "Claude Plugins Community",
+    "oneHighValuePoint": "强调将静态分析与动态分析结合：静态揭示结构，动态验证行为。",
+    "oneLineReview": "内容实用但偏通用清单化，方法完整性尚可，缺少深入案例和证据支撑。",
+    "primaryCategory": "网络安全",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@id": "https://claude-plugins.dev/#website",
+            "@type": "WebSite",
+            "description": "Community registry for Claude plugins and Agent Skills compatible with Claude, Cursor, VS Code, OpenCode, Codex, Amp Code, Letta, and Goose",
+            "name": "Claude Code Plugins",
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueName": "search_term_string",
+                  "valueRequired": true
+                },
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://claude-plugins.dev/?q={search_term_string}"
+                }
+              }
+            ],
+            "publisher": {
+              "@id": "https://claude-plugins.dev/#organization"
+            },
+            "url": "https://claude-plugins.dev"
+          },
+          {
+            "@id": "https://claude-plugins.dev/#organization",
+            "@type": "Organization",
+            "logo": {
+              "@id": "https://claude-plugins.dev/#logo"
+            },
+            "name": "Claude Code Plugins",
+            "sameAs": [
+              "https://github.com/Kamalnrf/claude-plugins",
+              "https://discord.gg/Pt9uN4FXR4"
+            ],
+            "url": "https://claude-plugins.dev"
+          },
+          {
+            "@id": "https://claude-plugins.dev/#logo",
+            "@type": "ImageObject",
+            "caption": "Claude Code Plugins",
+            "contentUrl": "https://claude-plugins.dev/favicon.svg",
+            "url": "https://claude-plugins.dev/favicon.svg"
+          },
+          {
+            "@id": "https://claude-plugins.dev/skills/@macaugh/super-rouge-hunter-skills/binary-analysis#webpage",
+            "@type": "WebPage",
+            "description": "Systematic approach to analyzing compiled binaries, understanding program behavior, and identifying vulnerabilities without source code access",
+            "isPartOf": {
+              "@id": "https://claude-plugins.dev/#website"
+            },
+            "name": "Binary Analysis and Reverse Engineering",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://claude-plugins.dev/skills/@macaugh/super-rouge-hunter-skills/binary-analysis"
+                ]
+              }
+            ],
+            "url": "https://claude-plugins.dev/skills/@macaugh/super-rouge-hunter-skills/binary-analysis"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "item": "https://claude-plugins.dev",
+                "name": "Home",
+                "position": 1
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://claude-plugins.dev/skills",
+                "name": "Skills",
+                "position": 2
+              },
+              {
+                "@type": "ListItem",
+                "name": "Binary Analysis and Reverse Engineering",
+                "position": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@id": "https://claude-plugins.dev/#website",
+        "@type": "WebSite",
+        "description": "Community registry for Claude plugins and Agent Skills compatible with Claude, Cursor, VS Code, OpenCode, Codex, Amp Code, Letta, and Goose",
+        "name": "Claude Code Plugins",
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "query-input": {
+              "@type": "PropertyValueSpecification",
+              "valueName": "search_term_string",
+              "valueRequired": true
+            },
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://claude-plugins.dev/?q={search_term_string}"
+            }
+          }
+        ],
+        "publisher": {
+          "@id": "https://claude-plugins.dev/#organization"
+        },
+        "url": "https://claude-plugins.dev"
+      },
+      {
+        "@id": "https://claude-plugins.dev/#organization",
+        "@type": "Organization",
+        "logo": {
+          "@id": "https://claude-plugins.dev/#logo"
+        },
+        "name": "Claude Code Plugins",
+        "sameAs": [
+          "https://github.com/Kamalnrf/claude-plugins",
+          "https://discord.gg/Pt9uN4FXR4"
+        ],
+        "url": "https://claude-plugins.dev"
+      },
+      {
+        "@id": "https://claude-plugins.dev/#logo",
+        "@type": "ImageObject",
+        "caption": "Claude Code Plugins",
+        "contentUrl": "https://claude-plugins.dev/favicon.svg",
+        "url": "https://claude-plugins.dev/favicon.svg"
+      },
+      {
+        "@id": "https://claude-plugins.dev/skills/@macaugh/super-rouge-hunter-skills/binary-analysis#webpage",
+        "@type": "WebPage",
+        "description": "Systematic approach to analyzing compiled binaries, understanding program behavior, and identifying vulnerabilities without source code access",
+        "isPartOf": {
+          "@id": "https://claude-plugins.dev/#website"
+        },
+        "name": "Binary Analysis and Reverse Engineering",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://claude-plugins.dev/skills/@macaugh/super-rouge-hunter-skills/binary-analysis"
+            ]
+          }
+        ],
+        "url": "https://claude-plugins.dev/skills/@macaugh/super-rouge-hunter-skills/binary-analysis"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "item": "https://claude-plugins.dev",
+            "name": "Home",
+            "position": 1
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://claude-plugins.dev/skills",
+            "name": "Skills",
+            "position": 2
+          },
+          {
+            "@type": "ListItem",
+            "name": "Binary Analysis and Reverse Engineering",
+            "position": 3
+          }
+        ]
+      }
+    ],
+    "schemaTypes": [
+      "WebSite",
+      "Organization",
+      "ImageObject",
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "secondaryCategories": [
+      "逆向工程",
+      "漏洞分析"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章概述了二进制逆向分析的静态分析、动态调试、漏洞识别和工具生态，涵盖 Ghidra、GDB、strace、Frida 等工具，并给出硬编码凭证、协议分析、许可证绕过等常见场景。",
+    "tags": [
+      "二进制分析",
+      "逆向工程",
+      "GDB",
+      "Ghidra",
+      "动态分析",
+      "漏洞挖掘"
+    ],
+    "title": "Binary Analysis and Reverse Engineering - Agent Skills",
+    "totalScore": 61.5,
+    "url": "https://claude-plugins.dev/skills/@macaugh/super-rouge-hunter-skills/binary-analysis"
+  },
+  "payloadHash": "sha256:13222b693b9490ae7ad223054087d4a420cfeedc5a2cafd8ec79e4b3ca8291c5",
+  "refs": {},
+  "revisionId": "sha256:2ccb19e365f9e99a4e8085a5a8e17f3c778181a22c118215f2a9d5bf2208401e",
+  "schemaVersion": 1,
+  "updatedAt": 1780615894414
+}

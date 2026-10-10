@@ -1,0 +1,68 @@
+{
+  "createdAt": 1774583175889,
+  "entityType": "session",
+  "id": "1774583175889_dk15ah6t",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "借鉴其三层放行模型，审视自己在AI代理、自动化脚本或Copilot类工具中的权限边界设计。",
+      "在实际工作流中建立“用户意图是否明确授权”的检查清单，避免代理或脚本越权执行高风险操作。"
+    ],
+    "archiveReason": "文章系统阐述了AI编程代理在权限控制、风险建模、分类器设计与评估上的完整思路，具有较强参考价值。",
+    "classifiedAt": 1774583417600,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude自动模式安全设计",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.anthropic.com",
+    "favicon": "https://www.anthropic.com/images/icons/favicon-32x32.png",
+    "knowledgePoints": [
+      "通过输入层提示注入探测与输出层动作分类器形成双层防御，降低代理被外部内容操控的风险。",
+      "采用两阶段分类器架构：第一阶段低成本高召回拦截，第二阶段带推理降误报，实现安全与性能平衡。",
+      "将权限判定建立在真实世界影响、用户授权边界和信任域定义上，而非仅靠静态命令黑名单。"
+    ],
+    "oneHighValuePoint": "最有价值的是将“用户意图对齐”作为权限判定核心，而不是只看命令表面危险性，从而专门防御AI代理常见的过度主动行为。",
+    "oneLineReview": "这是一篇少见地把AI代理权限治理讲清楚、并给出真实指标与设计取舍的高质量工程文章。",
+    "primaryCategory": "AI工程与安全",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "AI代理系统设计",
+      "权限控制与风险治理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Claude Code的auto mode，试图在手动审批与完全跳过权限之间找到安全与效率平衡。核心方案包括输入侧提示注入探测、输出侧两阶段转录分类器、分层放行策略，以及基于真实流量和危险行为数据集的效果评估。",
+    "tags": [
+      "Claude Code",
+      "Auto Mode",
+      "AI Agent",
+      "安全机制",
+      "权限管理",
+      "提示注入",
+      "分类器"
+    ],
+    "title": "Claude Code auto mode: a safer way to skip permissions \\ Anthropic",
+    "totalScore": 74.5,
+    "url": "https://www.anthropic.com/engineering/claude-code-auto-mode"
+  },
+  "payloadHash": "sha256:ab96bddb46f4b5a5a06efb1c4685bd0a48d096ba88bd3f93bf03cb6f7e107969",
+  "refs": {},
+  "revisionId": "sha256:4d76092e321621287bffc1f247d74657ee0610cacba280f6267153f8213e9565",
+  "schemaVersion": 1,
+  "updatedAt": 1774583778072
+}

@@ -1,0 +1,73 @@
+{
+  "createdAt": 1780307253457,
+  "entityType": "session",
+  "id": "1780307253457_spkd2eft",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为自己的项目设计一个/one-shot研发流程，覆盖需求分析、设计、实现、测试和PR提交。",
+      "建立AI可读取和创建的issue模板，让任务描述更结构化、细粒度。",
+      "尝试搭建至少一个自动loop，例如错误日志分析后自动生成修复issue。",
+      "在AI编码任务中要求先输出详细design和edge case清单，再进入实现阶段。",
+      "为AI生成代码增加验收机制，包括用例、人工检查和详细运行日志。"
+    ],
+    "archiveReason": "提供了较完整的AI辅助编程高并发工作流，包括one-shot研发、issue自动化、loop机制和验收方法，具备复用价值。",
+    "classifiedAt": 1780307447349,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编程高并发工作流",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI编程效率的关键不只是提示词，而是构建能持续消耗token并稳定产出的自动化流程。",
+      "one-shot流程应将需求分析、design、edge case推演、实现和PR提交尽量自动化。",
+      "通过多目录或worktree实现多任务并发，可以同时运行多个AI开发会话。",
+      "issue系统可作为AI任务调度层，todo状态触发自动开发并提交PR。",
+      "日志分析、竞品分析、夜间bug扫描等loop可以持续发现问题并自动创建任务。",
+      "提高Agent产出可靠性需要把更多时间放在架构设计、edge case和验收日志上。"
+    ],
+    "oneHighValuePoint": "把研发流程拆成可自动执行的/one-shot任务，并结合issue系统和多个loop，实现AI Agent并发推进项目迭代。",
+    "oneLineReview": "一篇偏实战经验型的AI编程工作流分享，证据不足但方法框架有较强参考价值。",
+    "primaryCategory": "AI编程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "Agent工作流",
+      "软件工程效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享作者高强度使用AI编程的实践方法：通过/one-shot自动化研发流程、并发目录管理、issue自动创建与执行、日志和竞品分析loop持续生成任务，并用设计优先、用例和人工验收提升代码可靠性。",
+    "tags": [
+      "AI编程",
+      "Claude Code",
+      "自动化研发",
+      "Issue管理",
+      "并发开发",
+      "Agent Loop"
+    ],
+    "title": "我怎么用 AI 编程 2026.06",
+    "totalScore": 71,
+    "url": "https://x.com/chenchengpro/status/2061114453345943921"
+  },
+  "payloadHash": "sha256:2cfd3a778bec283629d0650c33507dc4522f0368ebdc0f0e6a7ab1473fd1e08f",
+  "refs": {},
+  "revisionId": "sha256:8a31f76a0798d2311db1b5e1dbcabfc82fb62a4b89de9e77979fc470bc5574b2",
+  "schemaVersion": 1,
+  "updatedAt": 1780307836785
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773830259025,
+  "entityType": "message",
+  "id": "1773830259024_1rdr9bs5",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 轻量级AI助手部署说明\n\n**评级**: C (54分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工具与部署\n**次类别**: 开源项目README, 边缘设备AI, 多渠道机器人集成\n**标签**: #AI Agent #Go #边缘部署 #Termux #Docker #聊天机器人\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 适合做轻量AI助手部署的快速入门参考，但宣传成分较重、证据不足，长期学习价值一般。\n**核心高价值点**: 提供了较完整的跨平台部署与多渠道集成配置示例，可直接用于快速验证低资源设备上的 AI Agent 落地。\n\n### 摘要\n这是一份 PicoClaw 开源项目的 README，主打在低成本、低内存硬件上部署轻量级 AI Assistant，提供了 Termux、Docker、本地构建及 Telegram、Discord、WhatsApp 等多渠道接入说明，偏安装手册和功能展示。\n\n### 知识要点\n- 轻量级AI Agent可通过单二进制方式部署在 ARM、RISC-V、MIPS、x86 等多种架构设备上\n- 项目支持 Termux、Docker Compose、本地编译等多种安装路径\n- 通过统一配置文件可接入多个模型提供商与多种聊天渠道\n- Webhook 类渠道共享同一 Gateway 服务端口，降低了部署复杂度\n\n### 行动项\n- 若你关注边缘设备AI部署，可用 Docker 或 Termux 按文档快速跑通一次最小可用实例\n- 在实际采用前，独立验证其内存占用、启动速度和稳定性，不要直接采信 README 中的性能宣传\n\n### 存档判定\n归档: 否\n不推荐: 内容以产品宣传和安装说明为主，方法论与证据支撑较弱，适合作为项目选型时快速浏览，不适合深度学习。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1773830259025,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:8875b373242967aaf3833bc9683684c7de68879fbae9284a4c1f7ea048be30ff",
+  "refs": {
+    "sessionId": "1773299123655_fku66wi7"
+  },
+  "revisionId": "sha256:754191ea6b63c3a31fe5c7e30f45a2a38de7e55e733de291a342a3f384ca0cbe",
+  "schemaVersion": 1,
+  "updatedAt": 1773830259025
+}

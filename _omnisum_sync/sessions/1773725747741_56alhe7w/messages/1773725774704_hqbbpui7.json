@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773725774705,
+  "entityType": "message",
+  "id": "1773725774704_hqbbpui7",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent原生应用壁垒判断\n\n**评级**: B (67分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI应用战略\n**次类别**: Agent架构, 产品方法论\n**标签**: #Agent #Agent-native Application #产品战略 #应用壁垒 #上下文容量 #注意力带宽\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 框架感强、判断犀利，但证据不足，更适合启发思考而非直接采纳。\n**核心高价值点**: 最有价值的点是把 Agent 产品分为 Prompt、Script、Application 三层，并用“领域状态+基础设施+规模经济”解释真正壁垒来自何处。\n\n### 摘要\n文章将 Agent 视为 OS，认为垂类应避免直接做 OS，而应构建具备领域状态、基础设施与规模经济的 Agent-native Application，以解决上下文容量和注意力带宽两类约束，并形成可持续壁垒。\n\n### 知识要点\n- Agent 的核心约束被概括为上下文容量和注意力带宽，而非单纯模型能力不足\n- Skill 若缺少外部状态与持续沉淀，最终容易沦为可复制的接口或模板\n- Agent-native Application 的价值在于能力解锁和认知卸载两类外部化支持\n- OS 负责 WHAT，Application 负责 HOW，两者通过接口形成认知共生\n\n### 行动项\n- 用文中的三层光谱检查手头 AI 产品是 Prompt、Script 还是 Application\n- 评估现有方案是否具备领域状态、基础设施投入和规模经济中的至少一项真实壁垒\n- 在产品设计中优先考虑哪些任务应由 Agent 处理，哪些应外包给专用应用以降低认知负担\n\n### 存档判定\n归档: 是 — 原因: 文章提出了较清晰的概念框架，可作为评估 Agent、Skill 与 Application 差异的讨论素材\n不推荐: 缺少数据、案例和反例验证，更多是观点性判断，不能直接作为决策依据\n删除: 否\n留存决策: 中期保留，适合作为理解 Agent 产品分层与竞争壁垒的观点材料参考",
+    "role": "assistant",
+    "timestamp": 1773725774705,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:679a6a0ed3fe301044f8db69133b6a3a403a01f4f41efd6c0dcf929fe4fa4d20",
+  "refs": {
+    "sessionId": "1773725747741_56alhe7w"
+  },
+  "revisionId": "sha256:adaadb6c62d4171739c4d9ba652de4eb53e0bda90bb6d53c5f7d38d2cf1bb455",
+  "schemaVersion": 1,
+  "updatedAt": 1773725774705
+}

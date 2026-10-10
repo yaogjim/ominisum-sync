@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773826051346,
+  "entityType": "session",
+  "id": "1773826051346_gb2s0rk6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估当前是否真的需要部署复杂代理系统，并量化维护成本与产出",
+      "尝试先用 Claude Code 或 Codex 搭建最小可行工作流，再决定是否升级为重型方案"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773829155201,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 1,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "OpenClaw实用性批判短评",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "内容证据薄弱、信息量有限、可操作性低，且更像情绪化判断而非高质量分析。",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "自建代理/自动化系统往往存在较高维护成本与稳定性问题",
+      "轻量化工作流工具在多数场景下可能比重型自治代理更实用"
+    ],
+    "oneHighValuePoint": "与其高成本维护复杂代理系统，不如优先投入到更直接产生杠杆的工作流与核心技能建设。",
+    "oneLineReview": "有一点现实提醒价值，但本质上只是未经充分论证的主观看法。",
+    "primaryCategory": "AI工具评测",
+    "rating": "D",
+    "rejectReason": "观点鲜明但主要停留在个人感受与立场表达，缺少系统比较、可复现案例和数据支撑。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "开发效率",
+      "自动化工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章核心观点是多数人投入大量时间折腾 OpenClaw 及替代方案并不划算，建议把时间转向用 Claude Code 或 Codex 构建更轻量工作流，并深耕一项高杠杆技能。整体偏经验性吐槽，缺乏证据与方法展开。",
+    "tags": [
+      "OpenClaw",
+      "Claude Code",
+      "Codex",
+      "AI代理",
+      "本地自动化"
+    ],
+    "title": "Machina: i spent hours inside OpenClaw and its alternatives so you don't have to",
+    "totalScore": 28.5,
+    "url": "https://x.com/EXM7777/status/2033989016337698841"
+  },
+  "payloadHash": "sha256:6d4494d6bfed17f42655f8cbf7507c29851be05e423ea9219daeeefc915b58f5",
+  "refs": {},
+  "revisionId": "sha256:92fe45f9a40a3b05fe7e2b2d84d663452aee4791d636979462e1e9eba1d1347d",
+  "schemaVersion": 1,
+  "updatedAt": 1773829155203
+}

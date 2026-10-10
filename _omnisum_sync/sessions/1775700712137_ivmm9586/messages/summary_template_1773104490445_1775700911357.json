@@ -1,0 +1,23 @@
+{
+  "createdAt": 1775700911357,
+  "entityType": "message",
+  "id": "summary_template_1773104490445_1775700911357",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这是一个很成熟的 “AI 持续知识操作系统” 设计，不是普通笔记库，也不是传统 RAG。它的核心价值在于：把 “每次临时检索” 升级为 “长期积累、持续校正、结构化演进” 的知识资产。\n\n**核心判断**\n- 产品上，它解决的是 “研究知识无法沉淀、重复加工、前后不一致” 这三个高频痛点。\n- 技术上，它采用`raw source -> curated wiki -> schema governance`的三层架构，本质是 “可审计的知识编译系统”。\n- 与 RAG 相比，优势不是召回率，而是 “可持续更新、一致性、交叉引用、可追溯”。\n- 适合研究团队、投研、竞争情报、政策分析、实验记录，不适合强事务型业务数据。\n\n**产品设计解读**\n- `raw/`不可变：这是证据层，保证溯源、复盘、审计。产品上相当于 “事实仓库”。\n- `entities/concepts/comparisons/queries`：这是认知层，把碎片材料转成可复用知识对象。\n- `SCHEMA.md`：这是治理层，定义分类法、命名规则、页面阈值、更新政策，避免知识库失控。\n- `index.md + log.md`：一个负责导航，一个负责时间线，分别解决 “找得到” 和 “说得清怎么来的”。\n\n最佳实践例子：\n```text\n错误做法：把所有文章摘要堆在一个 docs/ 目录里，靠搜索找。\n正确做法：\n- 原文进入 raw/articles/\n- “OpenAI” 进 entities/openai.md\n- “测试时计算 scaling” 进 concepts/test-time-compute.md\n- “OpenAI vs Anthropic” 进 comparisons/openai-vs-anthropic.md\n- 某次关于 agent memory 的综合问答沉淀到 queries/agent-memory-landscape.md\n```\n\n**为什么这比传统 RAG 更高级**\n- RAG 每次 query 都重新切片、召回、拼接，容易结果漂移。\n- 这个方案先把知识 “编译” 为结构化 Markdown，再查询 “已整理知识”。\n- 结果是：\n  - 同一概念不会反复总结\n  - 矛盾信息可以显式标记\n  - 链接网络会越来越强\n  - 查询成本随时间下降，而不是一直重复算力消耗\n\n适用场景例子：\n- AI 研究团队：维护模型、论文、人物、路线图\n- 战略团队：维护公司、产品、融资、组织关系\n- 医疗 / 法务研究：维护概念、案例、争议、时效性变化\n\n**设计上的亮点**\n- “先定向再操作” 非常关键：先读`SCHEMA.md`、`index.md`、`log.md`，相当于让 agent 先做 context bootstrapping。\n- “页面阈值” 设计很好：只有 2+ 来源提及或单一来源核心主题才建页，能抑制知识膨胀。\n- “至少 2 个 outbound links” 很聪明：强制形成知识网络，降低孤岛率。\n- “矛盾不覆盖，而是显式记录” 是高质量知识库的标志，尤其适合快速变化领域。\n\n**工程实现上最值得借鉴的部分**\n- Markdown + 文件夹，而不是数据库优先：低门槛、可迁移、对人类友好、兼容 Obsidian/VS Code/Git。\n- Frontmatter 规范化：让 agent 可以稳定读写元数据，支持 lint、筛选、审计。\n- `log.md` append-only：天然适合追踪 agent 行为，也方便做回放和责任边界划分。\n- lint 机制不是可选项，而是知识库长期可用性的保障。\n\n推荐的数据模型：\n```yaml\n---\ntitle: Test-Time Compute\ncreated: 2025-02-01\nupdated: 2025-02-10\ntype: concept\ntags: [inference, scaling, evaluation]\nsources:\n  - raw/articles/openai-o1-analysis-2025.md\n  - raw/papers/test-time-scaling-2025.md\ncontradictions: [reasoning-costs.md]\n---\n```\n\n**从产品到技术的最佳实践**\n- 人负责 “定义边界和判断价值”，agent 负责 “提炼、交叉引用、维护一致性”。\n- 不要让 agent 自由发明 taxonomy，标签体系必须先在`SCHEMA.md`中治理。\n- 导入多个来源时做 batch ingest，不要一个来源更新一次 index，避免重复写和结构震荡。\n- 对 “查询结果是否归档” 设门槛，只有难复现、强综合、高价值内容才进入`queries/`。\n\n一个很实用的团队流程：\n```text\n1. 研究员每天丢 5 篇文章 / 2 份报告 / 会议纪要到 raw/\n2. agent 每天定时 ingest，更新相关 entities/concepts/comparisons\n3. 每周跑一次 lint，修复断链、孤儿页、过时页\n4. 每月人工 review taxonomy 和高冲突页面\n```\n\n**如果你要把它做成产品，建议这样落地**\n- 第一层：文件系统 + Markdown，先跑通单机知识流\n- 第二层：加 ingestion pipeline\n  - URL 抓取\n  - PDF 解析\n  - OCR /transcript\n  - 元数据抽取\n- 第三层：加知识治理\n  - link checker\n  - schema validator\n  - stale detector\n  - contradiction detector\n- 第四层：加交互层\n  - 问答入口\n  - entity/concept 自动建议\n  - “建议归档该回答” 按钮\n  - 变更 diff 可视化\n\n一个可落地的后端模块划分：\n```text\ningestion-service\n- fetch_url ()\n- parse_pdf ()\n- normalize_markdown ()\n- save_raw_source ()\n\nwiki-compiler\n- extract_entities ()\n- extract_concepts ()\n- resolve_existing_pages ()\n- update_or_create_pages ()\n- update_index ()\n- append_log ()\n\nwiki-linter\n- check_broken_links ()\n- check_orphans ()\n- validate_frontmatter ()\n- detect_staleness ()\n- detect_tag_drift ()\n- detect_contradictions ()\n```\n\n**几个关键风险**\n- 最大风险不是模型能力，而是知识治理失控：标签泛滥、页面重复、链接失效、索引不更新。\n- 如果没有`SCHEMA.md`，最后会退化成 “AI 自动生成的一堆碎片文档”。\n- 如果修改`raw/`，就破坏证据链，后续无法审计。\n- 如果不做 lint，6 个月后知识库可用性会急剧下降。\n\n**最值得产品化的增强点**\n- 自动提议 “该内容应更新哪些现有页面”，而不是只会新建页面。\n- 基于来源时间和可信度做冲突优先级排序。\n- 在查询时显示 “答案来自哪些 wiki 页面 + 哪些 raw source”。\n- 自动生成 topic map，而不只是 index。\n- 对大规模更新加审批流，防止 agent 一次改坏 20 个页面。\n\n**一个更高级的 AI 最佳实践**\n- 不要把 LLM 放在 “最终答案生成器” 位置，而要放在 “知识编译器” 和 “知识维护器” 位置。\n- 真正高价值的模式是：\n  - LLM 负责吸收新资料\n  - 结构化知识库负责长期记忆\n  - lint / 规则负责一致性\n  - 人类负责最终判断和边界校正\n\n一句话总结：\n- 这套设计的本质不是 “让 AI 更会搜”，而是 “让 AI 帮你持续建设一个可追溯、可维护、可复用的研究大脑”。\n\n如果你愿意，我下一步可以继续给你两种更实用的输出：\n1. 把这套方案拆成一个可落地的产品 PRD\n2. 把这套方案拆成一个可实现的技术架构与目录模板",
+    "finish_reason": "stop",
+    "prompt_id": "template_1773104490445",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-技术开发实现",
+    "timestamp": 1775700911357,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8e7c81e9e94805a12e4f40374113dab6b1268cb32b6599386a37589d1218cac0",
+  "refs": {
+    "sessionId": "1775700712137_ivmm9586"
+  },
+  "revisionId": "sha256:df5f07b35a34646e5acadc6c935677f4deb7ec95681aed111533553dd29f62bc",
+  "schemaVersion": 1,
+  "updatedAt": 1775700911357
+}

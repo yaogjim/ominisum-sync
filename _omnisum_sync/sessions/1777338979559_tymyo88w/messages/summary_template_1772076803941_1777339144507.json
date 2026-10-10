@@ -1,0 +1,22 @@
+{
+  "createdAt": 1777339144507,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1777339144507",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Credit Genie 如何用 Insights Agent 改进 AI 金融助手 AskGenie\n\nCredit Genie 在移动应用中推出 AI 金融助手 AskGenie 后，使用 LangSmith Insights Agent 大规模分析用户对话，发现了产品功能缺口。通过这些洞察，团队补齐了现金预支查询、还款日期修改、站内客服提交等能力，并把 Insights Agent 纳入每周产品迭代流程。\n\n---\n\n## 1. 推出 AI 金融助手 AskGenie\n\n- Credit Genie 的目标是帮助用户更好地理解和管理个人财务。\n- 团队使用**LangGraph**构建了**AskGenie**，并将其集成到 Credit Genie 移动 App 中。\n- AskGenie 上线后，新的挑战变成：  \n  **如何理解用户到底在和 AI 助手聊什么，以及哪些需求没有被满足。**\n- 因此，团队开始分析 AskGenie 对应的**LangSmith traces（调用轨迹）**，并借助**Insights Agent**做规模化分析。\n\n---\n\n## 2. Insights Agent 发现了意料之外的用户需求\n\nInsights Agent 的重要价值在于：不只做系统观测，还能帮助发现产品机会。\n\n### 两种分类方式的结果对比\n\n文章中提到，团队使用了两种配置：\n\n| 分类方式 | 类别 | 占比 |\n|---|---:|---:|\n| 预设分类 V1 | Customer Support 客服支持 | 36% |\n| 预设分类 V1 | Financial Insights 财务洞察 | 30% |\n| 预设分类 V1 | Product & Features 产品与功能 | 25% |\n| 预设分类 V1 | Policy & Compliance 政策与合规 | 9% |\n| 自动生成分类 V2 | Repayment Management 还款管理 | 33% |\n| 自动生成分类 V2 | Financial Insights 财务洞察 | 30% |\n| 自动生成分类 V2 | Advance Acquisition 现金预支获取 | 27% |\n| 自动生成分类 V2 | Access Barriers 访问障碍 | 10% |\n\n### 关键发现\n\n- 团队原本预期用户会用 AskGenie 了解财务状况，对应**Financial Insights，占比 30%**。\n- 但结果显示，大量用户把 AskGenie 当成客服入口：\n  - V1 中**Customer Support 占 36%**。\n  - 这让团队感到意外，因为 App 内已经有单独的客服聊天机器人。\n- 进一步分析后发现，用户经常提出这些需求：\n  - 修改现金预支的还款日期；\n  - 查询现金预支状态；\n  - 查询余额和费用；\n  - 跟踪现金预支到账情况。\n\n---\n\n## 3. 从用户行为中定位 AskGenie 的功能缺口\n\nInsights Agent 自动聚类出的用户问题，直接暴露了 AskGenie 的能力不足。\n\n### 具体缺口\n\n- 用户希望 AskGenie 能提供现金预支相关信息，例如：\n  - 已批准的现金预支金额；\n  - 预计到账日期；\n  - 当前还款日期；\n  - 历史现金预支记录。\n- 用户还希望直接在聊天中完成操作，例如：\n  - 修改还款日期；\n  - 申请新的现金预支；\n  - 提交客服请求。\n\n换句话说，用户并不只是想 “咨询”，还希望 AskGenie 能直接 “办事”。\n\n---\n\n## 4. 根据洞察补齐产品能力\n\n基于 Insights Agent 的分析结果，Credit Genie 对 AskGenie 做了几项改进。\n\n### 新增现金预支信息查询工具\n\nAskGenie 现在可以帮助用户查询：\n\n- 已批准的现金预支金额；\n- 现金预支预计到账时间；\n- 计划还款日期；\n- 用户过往现金预支记录。\n\n### 支持在聊天中完成操作\n\n团队还扩展了 AskGenie 的能力，让用户可以直接在聊天界面中：\n\n- 修改还款日期；\n- 申请新的现金预支。\n\n### 优化客服体验\n\n- 过去可能需要把用户转到单独的客服机器人。\n- 改进后，AskGenie 内新增了**站内弹窗**，用户可以不离开当前聊天界面，直接提交客服请求。\n\n---\n\n## 5. 将 Insights Agent 纳入持续迭代流程\n\nCredit Genie 没有把 Insights Agent 当成一次性审计工具，而是将其变成持续反馈机制。\n\n### 当前做法\n\n- 团队每周定期运行 Insights Agent。\n- 用它观察用户行为是否出现变化，识别新的趋势或需求。\n- 分析结果会反馈给产品团队，用于后续产品规划和实验。\n\n### 带来的价值\n\n- 更快发现用户真实需求；\n- 更早捕捉行为变化；\n- 缩短产品创意、实验和优化的周期；\n- 让 AI 产品迭代更加贴近用户实际使用场景。\n\n---\n\n## 6. 关于 Credit Genie\n\n- Credit Genie 是一个移动优先的金融健康平台。\n- 它通过 AI 提供个性化金融洞察。\n- 平台还提供即时现金访问、信用建设等工具和服务。\n- 其长期目标是帮助用户获得更稳定的财务未来。\n\n---\n\n## 核心总结\n\n- **Insights Agent 帮 Credit Genie 发现了未预料到的大量客服类需求，尤其是还款管理和现金预支查询。**\n- **这些分析结果直接转化为 AskGenie 的新功能，包括现金预支状态查询、还款日期修改和聊天内提交客服请求。**\n- **通过每周运行 Insights Agent，Credit Genie 建立了一个持续的用户反馈闭环，让 AI 金融助手能不断根据真实用户行为优化。**",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1777339144507,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2fb3f1f8aa90c175230d9a832d861ac6eda59cf3a14bf83ebe4e254fef558aad",
+  "refs": {
+    "sessionId": "1777338979559_tymyo88w"
+  },
+  "revisionId": "sha256:5cae4542b623617dc8c805b86671daf9a346e06c9c93c2d4fe0ee5225e87e8a8",
+  "schemaVersion": 1,
+  "updatedAt": 1777339144507
+}

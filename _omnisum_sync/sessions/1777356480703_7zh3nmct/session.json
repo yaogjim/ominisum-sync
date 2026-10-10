@@ -1,0 +1,68 @@
+{
+  "createdAt": 1777356480702,
+  "entityType": "session",
+  "id": "1777356480703_7zh3nmct",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "阅读原始Nature论文，确认阈下学习实验设置、适用边界和证据强度",
+      "在评估蒸馏模型时增加模型谱系、教师模型来源和合成数据链路记录",
+      "关注针对隐性特征、隐藏载体和蒸馏污染的检测方法研究"
+    ],
+    "archiveReason": "文章提出了模型蒸馏中隐性特征传递对合规、审计和开源生态的影响，具备一定参考价值",
+    "classifiedAt": 1777375213725,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "蒸馏模型的隐性谱系风险",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "阈下学习表明模型行为特征可能在严格过滤后的数据中隐性传递",
+      "现有AI合规框架过度依赖训练数据可审计和模型行为可测试的前提",
+      "自蒸馏和合成数据流程可能导致隐性特征在模型代际间累积",
+      "开源模型无法直接解决隐性学习问题，但为外部检测和研究提供必要条件"
+    ],
+    "oneHighValuePoint": "蒸馏模型可能通过训练数据中的隐藏信号继承教师模型特征，使“干净数据集”和传统数据审计假设变得不可靠。",
+    "oneLineReview": "一篇有启发性的AI治理评论，观点新颖但证据与操作方案仍偏不足。",
+    "primaryCategory": "人工智能治理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为AI治理与蒸馏风险的观点材料",
+    "secondaryCategories": [
+      "模型蒸馏",
+      "AI安全"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕《自然》论文中的阈下学习现象，讨论蒸馏模型可能继承不可见行为特征，并指出这会挑战现有AI合规、数据审计、模型谱系和开源透明性的基本假设。",
+    "tags": [
+      "阈下学习",
+      "模型谱系",
+      "合成数据",
+      "开源模型",
+      "AI合规"
+    ],
+    "title": "蒸馏管道中的幽灵",
+    "totalScore": 66,
+    "url": "https://x.com/TheTuringPost/status/2048901122979446991"
+  },
+  "payloadHash": "sha256:a61878a6723c46d49ee83ca5c12f1d05e9cf8168e01c0a2ffcee1a075340efba",
+  "refs": {},
+  "revisionId": "sha256:027b1880e35e2c02a63594675008fa784bc628ede7489feed3b2bd8595cd3140",
+  "schemaVersion": 1,
+  "updatedAt": 1777813134855
+}

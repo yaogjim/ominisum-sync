@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774522766112,
+  "entityType": "message",
+  "id": "1774522766111_qktrpfrz",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 生成式界面框架与范式综述\n\n**评级**: A (75分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI产品/生成式UI\n**次类别**: 开发框架对比, 交互设计方法, 工程实现案例\n**标签**: #Generative UI #OpenUI #json-render #Claude #AI产品设计\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一篇高价值的生成式UI框架与实现路径综述，适合做技术选型和产品范式参考。\n**核心高价值点**: 最有价值的是把Claude式生成式界面拆成“工具调用+按需加载设计规范+流式HTML渲染+DOM diff平滑更新”的可复用架构模式。\n\n### 摘要\n文章汇总了OpenUI、json-render、OpenGenerativeUI等生成式界面框架，并通过逆向Claude UI的案例拆解了流式渲染、工具调用、懒加载说明文档与DOM diff等关键实现机制，兼具产品视角与工程落地价值。\n\n### 知识要点\n- 生成式UI的核心约束是组件目录、Schema和受控渲染，而不是自由生成HTML。\n- 懒加载设计规范到模型上下文是一种高效的提示词架构，可减少基础上下文成本。\n- 流式生成UI时，直接反复替换innerHTML体验很差，需依靠DOM diff实现平滑增量更新。\n- 不同框架的主要差异在于中间表示格式、跨端支持能力、组件生态和流式渲染策略。\n\n### 行动项\n- 根据你的技术栈在OpenUI与json-render之间做一次小型POC，对比组件约束、流式渲染和接入成本。\n- 将“按需加载技能/说明文档”的模式应用到你自己的AI Agent或Copilot系统提示设计中。\n- 为现有AI产品梳理一套受控组件库与Schema，验证生成式UI能否替代部分固定页面或结果页。\n- 重点复盘逆向Claude案例中的流式工具调用与DOM diff方案，评估是否适合终端、Web或桌面端集成。\n\n### 存档判定\n归档: 是 — 原因: 内容覆盖生成式UI的主流开源框架、实现路径与设计模式，对后续AI产品设计和工程选型有持续参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1774522766112,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:011b7fb7cbe38c2d8d1bbb2edd07044c6c0ce35fb96147d064aac7ab04e910c1",
+  "refs": {
+    "sessionId": "1774517252936_8gxhp5lr"
+  },
+  "revisionId": "sha256:30be492aab823e36dd4010c27c29274d5b0306cabdbeda0bc36019fa9e5a0e1d",
+  "schemaVersion": 1,
+  "updatedAt": 1774522766112
+}

@@ -1,0 +1,70 @@
+{
+  "createdAt": 1780380612540,
+  "entityType": "session",
+  "id": "1780380612540_e5lq5fzd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为当前项目创建精简版CLAUDE.md，控制在60行以内，包含技术栈、常用命令、目录结构和硬性规则",
+      "尝试为AI编程工具设置权限边界，允许读写代码和跑测试，禁止push、deploy、读取secrets等不可逆操作",
+      "在一次复杂开发任务中试验2-3个并行agent分工，并记录人工审查和合并成本",
+      "针对架构决策设计critique loop提示词，要求模型输出方案、风险、修订版和置信度"
+    ],
+    "archiveReason": "包含若干可直接借鉴的AI编程团队实践，如LLM gateway、CLAUDE.md、权限控制和并行agent使用方式",
+    "classifiedAt": 1780380913774,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Shopify的Claude Code团队配置",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "通过LLM proxy统一Claude Code、Copilot、Cursor等工具入口，可集中管理用量、成本和模型路由",
+      "复杂任务可拆分给多个并行agent处理，人类负责审查diff、筛选结果和最终合并",
+      "架构类问题适合使用critique loop，让模型先提出方案、批判风险、再修订并给出置信度",
+      "通过MCP让Claude访问真实文档、CLI、GitHub、Slack、数据库或内部知识库，可降低上下文过时问题",
+      "AI写代码后，人的核心价值会更多转向需求判断、方案验证和架构决策"
+    ],
+    "oneHighValuePoint": "将CLAUDE.md作为团队共享上下文提交到代码仓库，用少量规则显性化项目约定，提升AI agent输出一致性。",
+    "oneLineReview": "实践建议较实用，但来源可信度和证据支撑不足，更适合作为AI编程流程优化的启发材料。",
+    "primaryCategory": "AI编程与工程效率",
+    "rating": "B",
+    "rejectReason": "证据质量较弱，主要来自社交媒体转述，缺少原始配置细节、数据验证和完整案例支撑",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "团队研发流程",
+      "LLM工程实践"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结了所谓Shopify团队使用Claude Code的配置方法，包括统一LLM入口、并行agent、critique loop、MCP接入真实系统、维护CLAUDE.md、收紧权限，以及将工程师时间从执行转向策略验证。",
+    "tags": [
+      "Claude Code",
+      "AI编程",
+      "MCP",
+      "研发效率",
+      "团队知识管理"
+    ],
+    "title": "出海去孵化器: 号称 Shopify 2",
+    "totalScore": 69.5,
+    "url": "https://x.com/chuhaiqu/status/2057287519809745360"
+  },
+  "payloadHash": "sha256:6618b293d3d65456131ab7baadd9cf3bbed7ba19761bf07547c978f496d7a337",
+  "refs": {},
+  "revisionId": "sha256:a128aeb7c067373a05da28aacc4678af0c33fcf5c0c528ebfa2f30161887a596",
+  "schemaVersion": 1,
+  "updatedAt": 1780384661225
+}

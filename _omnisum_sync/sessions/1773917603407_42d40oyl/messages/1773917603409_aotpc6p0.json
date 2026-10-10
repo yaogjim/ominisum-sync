@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773917564761,
+  "entityType": "message",
+  "id": "1773917603409_aotpc6p0",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 主旨概括\n\n`World Monitor` 是一个“实时全球情报仪表盘”项目，把新闻聚合、地缘政治监测、基础设施追踪和金融信号整合到一个统一界面中，并通过 AI 生成摘要与风险判断。  \n它的核心价值在于：用一个系统同时观察全球局势、市场变化和突发事件，并支持本地化部署、多语言和桌面端使用。\n\n## 1. 项目定位与核心功能\n\n- 这是一个面向“态势感知”的综合平台，目标是把分散的全球信息集中展示。\n- 平台聚合了 `435+` 个精选新闻源，覆盖 `15` 个类别，并用 AI 生成简报，帮助用户快速理解重点。\n- 地图能力是项目的一大亮点，采用“双地图引擎”：\n  - `3D globe`：基于 `globe.gl`\n  - `WebGL 平面地图`：基于 `deck.gl`\n- 系统内置 `45` 个数据图层，可用于观察地缘、军事、灾害、基础设施等不同维度。\n- 它不仅展示单一事件，还强调“跨流关联”，即把军事、经济、灾害和升级信号放在一起分析，帮助识别风险叠加。\n\n举例来说，如果某地区同时出现“港口中断、军事动员、能源价格波动、灾害预警”，平台会比单独看一条新闻更容易发现背后的关联风险。\n\n## 2. 风险评估、金融监测与 AI 能力\n\n- 项目提供 `Country Intelligence Index`（国家情报指数），通过 `12` 类信号做综合风险评分。\n- 在金融侧，平台支持 `92` 家证券交易所，并覆盖：\n  - 大宗商品\n  - 加密货币\n  - `7` 信号市场综合指标\n- 这意味着它不仅适合看国际新闻，也适合监测“事件如何传导到市场”。\n\n例如，某国发生政治冲突时，系统可以把新闻动态、国家风险评分、商品价格和股市信号放在一起看，帮助判断是否会影响能源、航运或金融市场。\n\n- AI 部分支持本地运行，强调“`Local AI`”：\n  - 可通过 `Ollama` 在本地运行\n  - `无需 API Key`\n- 这对重视隐私、成本控制或离线能力的用户尤其有吸引力。\n\n## 3. 多版本、多平台和国际化能力\n\n- 项目可从同一套代码库生成 `5` 个站点版本：\n  - `world`\n  - `tech`\n  - `finance`\n  - `commodity`\n  - `happy`\n- 同时提供原生桌面应用，基于 `Tauri 2`，支持：\n  - `macOS`\n  - `Windows`\n  - `Linux`\n- 国际化能力也比较强，支持 `21` 种语言，并包含：\n  - 原生语言新闻源\n  - RTL（从右到左）排版支持\n\n这说明它不是单纯面向英语用户的新闻面板，而是希望成为一个全球化、多终端可用的监测平台。\n\n## 4. 快速开始与开发方式\n\n- 基础启动流程很直接：\n  ```bash\n  git clone https://github.com/koala73/worldmonitor.git\n  cd worldmonitor\n  npm install\n  npm run dev\n  ```\n- 启动后访问 `localhost:5173`。\n- 基础运行“`不需要环境变量`”，这降低了初次体验门槛。\n- 如果要开发特定版本，可使用：\n  ```bash\n  npm run dev:tech\n  npm run dev:finance\n  npm run dev:commodity\n  npm run dev:happy\n  ```\n- 部署方面，文中提到支持 `Vercel`、`Docker` 和静态部署，自托管选项较丰富。\n\n简单说，就是“开箱即跑”，同时也方便按不同主题站点做二次开发或部署。\n\n## 5. 技术栈与系统架构\n\n- 前端使用：\n  - `Vanilla TypeScript`\n  - `Vite`\n  - `globe.gl + Three.js`\n  - `deck.gl + MapLibre GL`\n- 桌面端使用：\n  - `Tauri 2 (Rust)`\n  - 搭配 `Node.js sidecar`\n- AI/ML 相关技术包括：\n  - `Ollama`\n  - `Groq`\n  - `OpenRouter`\n  - `Transformers.js`（浏览器侧）\n- API 契约层使用：\n  - `Protocol Buffers`\n  - 共 `92` 个 protos\n  - `22` 个 services\n  - `sebuf HTTP annotations`\n- 部署层包括：\n  - `Vercel Edge Functions (60+)`\n  - `Railway relay`\n  - `Tauri`\n  - `PWA`\n- 缓存策略包括：\n  - `Redis (Upstash)`\n  - `3-tier cache`\n  - `CDN`\n  - `service worker`\n\n从这些配置可以看出，这不是一个简单的信息展示网页，而是一个架构比较完整的全栈系统：前端可视化强、边缘部署多、缓存体系也较成熟。\n\n## 6. 贡献方式与构建命令\n\n- 项目欢迎贡献，说明中引导开发者查看 `CONTRIBUTING.md`。\n- 提供了常见开发命令：\n  ```bash\n  npm run typecheck\n  npm run build:full\n  ```\n- 前者用于类型检查，后者用于生产构建。\n\n这表明项目在工程化上有一定规范，适合协作开发。\n\n## 7. 授权方式与商业使用限制\n\n- 项目采用 `AGPL-3.0`，但明确说明：\n  - `非商业用途` 可使用\n  - `商业用途` 需要单独购买商业授权\n- 文中列出的许可规则包括：\n  - 个人 / 研究 / 教育：`Yes`\n  - 非商业自托管：`Yes, with attribution`\n  - 非商业 fork 和修改：`Yes, share source under AGPL-3.0`\n  - 商业使用 / SaaS / 品牌重包装：`Requires commercial license`\n\n这意味着个人研究或学习使用基本没问题，但如果公司想拿去做商业产品、SaaS 或换品牌运营，就需要联系维护者购买授权。\n\n## 8. 作者、版权与安全披露\n\n- 作者为 `Elie Habib`，并有 GitHub 贡献者共同参与。\n- 版权声明为：`Copyright (C) 2024-2026 Elie Habib. All rights reserved.`\n- 安全致谢部分特别提到研究员 `Cody Richard`，其在 `2026` 年披露了 `3` 个安全问题，涉及：\n  - IPC 命令暴露\n  - renderer 到 sidecar 的信任边界分析\n  - fetch patch 凭证注入架构问题\n- 项目提供了专门的安全政策，用于规范负责任披露。\n\n这说明项目对安全问题有一定重视，尤其是桌面端与多进程通信场景下的安全边界。\n\n## 9. 项目活跃度与补充信息\n\n- 仓库显示有 `2,395` 次提交，说明开发持续时间较长、迭代较频繁。\n- 发布记录显示有 `43 + 42 releases`，可理解为项目发布较活跃。\n- 页面中还列出了多个站点入口，例如：\n  - `worldmonitor.app`\n  - `docs.worldmonitor.app`\n  - `finance.worldmonitor.app`\n  - `commodity.worldmonitor.app`\n\n整体来看，这是一个功能覆盖面很广、工程化程度较高的全球监测平台型项目，既适合研究和自托管使用，也具备向专业情报/市场监测工具发展的潜力。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773917564761,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c21938d688fd1b0860b9f713244c9ad5715abfd7526d612dec7cfc45ecfb2bd2",
+  "refs": {
+    "sessionId": "1773917603407_42d40oyl"
+  },
+  "revisionId": "sha256:01044dcd928f323166803088280f61ad609b05cd79799eff2f7bf942c26eb96e",
+  "schemaVersion": 1,
+  "updatedAt": 1773917564761
+}

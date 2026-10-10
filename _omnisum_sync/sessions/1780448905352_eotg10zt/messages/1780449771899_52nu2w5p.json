@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780449771900,
+  "entityType": "message",
+  "id": "1780449771899_52nu2w5p",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: LangChain代理评分量规\n\n**评级**: C (48.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI Agent\n**次类别**: LangChain, 智能体评估\n**标签**: #Agent Rubrics #RubricMiddleware #自我修正 #LangChain #AI工作流\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 3 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 4 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 这是一个有启发但信息不足的功能公告，适合了解方向，不值得深读。\n**核心高价值点**: 通过评分量规驱动智能体自评与修正，可提升复杂任务中输出与目标的一致性。\n\n### 摘要\n文章介绍 LangChain Deep Agents 的新特性 Agent Rubrics，可在调用代理时附加评分标准，让评估器检查并促使代理自我修正输出，适用于长期或复杂任务中的质量控制。\n\n### 知识要点\n- RubricMiddleware 可用于给代理附加明确的评价标准。\n- 代理可基于评分结果进行自我修正，减少首次输出不完整的问题。\n- 该机制适合长期任务、复杂工作流和需要稳定输出质量的生产场景。\n\n### 行动项\n- 如正在使用 LangChain Agent，可进一步查看 RubricMiddleware 官方文档或原文。\n- 在复杂代理任务中尝试将最终目标拆成可检查的评分标准。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是产品功能公告和转述，信息量有限，缺少实现细节、代码示例和实证案例。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1780449771900,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:409e6bf5752367687a4802c836cce3dd225f4288c09bddf993ab03c9d18f5696",
+  "refs": {
+    "sessionId": "1780448905352_eotg10zt"
+  },
+  "revisionId": "sha256:0d100f93d3979553827978a13f79ec663764734b73c7d7a6214fc80d2ffcf7ce",
+  "schemaVersion": 1,
+  "updatedAt": 1780449771900
+}

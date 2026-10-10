@@ -1,0 +1,19 @@
+{
+  "createdAt": 1776325481184,
+  "entityType": "message",
+  "id": "1776325481183_qfo9ig2v",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: OpenAI多智能体Python框架概览\n\n**评级**: B (61.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发框架\n**次类别**: 多智能体系统, Python工程实践\n**标签**: #OpenAI Agents SDK #多智能体 #Python #Sandbox Agents #LLM工作流\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 官方概览清晰易上手，但更像产品说明书，方法论和证据支撑偏弱。\n**核心高价值点**: Sandbox Agents 将文件系统、命令执行和长任务状态管理纳入统一代理框架，是从聊天式代理走向真实工作流自动化的关键能力。\n\n### 摘要\n文章本质上是 OpenAI Agents Python SDK 的仓库首页说明，介绍了多智能体工作流框架的核心能力、安装方式、Sandbox Agent、新增语音与会话支持等内容，适合作为快速了解产品能力与上手入口，但缺少深入原理、对比分析和实证数据。\n\n### 知识要点\n- OpenAI Agents SDK 支持 Agent、Tool、Guardrail、Handoff、Session、Tracing 等多智能体工作流基础组件。\n- Sandbox Agents 可在受控容器或本地沙箱中执行文件检查、命令运行、补丁应用等长周期任务。\n- 框架兼容 OpenAI API 以及 100 多种其他 LLM，强调 provider-agnostic 的架构设计。\n- 支持语音代理、Redis 会话存储与示例工程，降低了快速试用门槛。\n\n### 行动项\n- 根据示例在本地创建最小可运行 demo，验证 Agent、Tool 与 Handoff 的基本调用链路。\n- 重点查看 examples 和 docs，判断该框架是否适合你的多智能体编排或自动化任务场景。\n- 若关注真实执行能力，可优先测试 Sandbox Agent 在代码库分析、命令执行和状态保持上的表现。\n\n### 存档判定\n归档: 是 — 原因: 这是官方仓库首页说明，适合在需要评估多智能体框架能力边界、安装方式和核心概念时快速查阅。\n删除: 否\n留存决策: 中期保留，作为多智能体框架选型与快速上手参考",
+    "role": "assistant",
+    "timestamp": 1776325481184,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:488c79d79279042640663bd469a52dd55d24dd242a54128afc5b7a8acab425ae",
+  "refs": {
+    "sessionId": "1776322768568_wmn07dkz"
+  },
+  "revisionId": "sha256:ecff24266842f6cc63e9f84b6822cbd5dac491be0c710d31cfc28f33ffcc47e2",
+  "schemaVersion": 1,
+  "updatedAt": 1776325481184
+}

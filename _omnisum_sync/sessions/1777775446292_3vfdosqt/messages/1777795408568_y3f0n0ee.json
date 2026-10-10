@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777795233058,
+  "entityType": "message",
+  "id": "1777795408568_y3f0n0ee",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章讨论的是 Claude Code 中 `CLAUDE.md`、Skills 文档到底该写长还是写短。作者认为，真正关键不是文档长短，而是**规则能否被自动加载，以及是否有清晰的关键词触发机制**。\n\n---\n\n## 1. 对“文档越长越好”的看法：不要盲目加长\n\n原引用推文提出一个“反共识”观点：  \n> Claude Code 的 `Skill.md` 和 `CLAUDE.md` 文档越长效果越好。\n\n理由之一是：Anthropic 自己的 system prompt 就有几千 tokens，所以让用户写短，可能只是为了给官方系统提示词留上下文空间。\n\n作者 Leo 部分认同这一点，但提醒：**不要因为看到这个观点就立刻把 `CLAUDE.md` 改得很长**。因为“长 vs 短”不是核心问题。\n\n---\n\n## 2. 作者的核心观点：关键是“自动加载 + 关键词 trigger”\n\nLeo 认为真正重要的是：\n\n- 文档是否能在合适场景下被自动加载；\n- 是否设置了明确的关键词 trigger；\n- Claude 是否能根据任务命中 trigger 后主动读取对应文档。\n\n他的做法是：\n\n- `rules/`：自动加载通用规则；\n- `docs/`：按不同场景加载文档；\n- `CLAUDE.md` 主文件：只写关键词 trigger 和路由规则；\n- 复杂任务中，只要 trigger 命中，Claude 就会 `Read` 对应子文档，避免忘记读取。\n\n简单说，主文档不一定要塞满所有内容，而是要像“目录 + 路由器”，告诉 Claude 什么时候去读什么。\n\n---\n\n## 3. Skill 文档也是同理：frontmatter 要写清楚\n\n作者提到 Skill 的 `frontmatter` 也遵循类似逻辑。\n\n如果 Skill 的描述、触发条件写得不够清楚，Claude 的 router 就可能选错 Skill。  \n结果是：即使 Skill 本身写得很好，也可能完全用不上。\n\n也就是说：\n\n- Skill 内容长不长不是第一问题；\n- 能不能被正确触发、正确路由，才是关键。\n\n---\n\n## 4. 长文档的问题：注意力被稀释，规则冲突增加\n\nLeo 引用了评论区观点：长文档会带来两个风险：\n\n- **注意力稀释**：文档越长，模型对核心规则的关注越弱；\n- **规则冲突增加**：规则之间可能互相矛盾，复杂度甚至会指数级上升。\n\n因此，关键词 trigger 的价值不只是节省 context，更重要的是：\n\n> 保护核心规则的权重，不让它们被大量次要内容稀释。\n\n---\n\n## 5. 实操建议：trigger 写够就分层，写不够就放主文档\n\n作者最后给出实际判断标准：\n\n- 如果关键词 trigger 写得足够明确，可以采用分层结构：\n  - 主文档负责路由；\n  - 子文档负责具体规则；\n  - 按需读取。\n- 如果 trigger 写得不够好，那就不要过度拆分，最好把关键内容直接放在主文档里。\n\n换句话说：  \n**分层文档的前提，是你能清楚告诉 Claude 什么时候该读哪份文档。**\n\n---\n\n## 6. 评论区补充观点\n\n评论区有人认同关键词 trigger 的思路，认为以前总是让 Claude 自己判断，但这样容易误判。\n\nLeo 也回应说：  \n如果全部交给 Claude 自己判断，错误率可能会更高。\n\n这进一步强化了文章观点：  \n**不要完全依赖模型“自己理解”，而要用明确关键词和规则降低误判。**",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1777795233058,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:502e80dbff6a48d09821cba6c9947c57864c381aec9c6760c9375fe610aa9905",
+  "refs": {
+    "sessionId": "1777775446292_3vfdosqt"
+  },
+  "revisionId": "sha256:15c267350251e2260308b196dfcb0650dca2475c7127790d9c0092a0ac0ff691",
+  "schemaVersion": 1,
+  "updatedAt": 1777795233058
+}

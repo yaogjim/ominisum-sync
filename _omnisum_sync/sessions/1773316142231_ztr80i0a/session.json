@@ -1,0 +1,67 @@
+{
+  "createdAt": 1773316142231,
+  "entityType": "session",
+  "id": "1773316142231_ztr80i0a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你正在评估多代理框架，可快速对照其与OpenClaw替代品的功能差异",
+      "如需试用，可优先使用Docker或一键安装包验证实际部署体验"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773830075829,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Aurogen项目发布与安装说明",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Aurogen主打模块化、并行化和多实例运行能力",
+      "项目兼容OpenClaw生态，可导入现有skills",
+      "提供一键安装包、Docker和本地开发三种部署方式",
+      "配置流程围绕Provider、Agent和Channel三个核心模块展开"
+    ],
+    "oneHighValuePoint": "通过Web面板完成动态配置并即时生效，降低了多代理系统的部署和使用门槛。",
+    "oneLineReview": "有一定上手价值，但更像产品宣传页和安装手册，缺乏深入技术分析与实证。",
+    "primaryCategory": "AI代理框架",
+    "rating": "C",
+    "rejectReason": "内容以项目宣传和安装指引为主，方法论与证据支撑较弱，深度不足。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开源项目介绍",
+      "部署教程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章是Aurogen开源项目的README，主要介绍其相对OpenClaw生态的兼容性、模块化多代理特性、Web配置方式以及一键安装、Docker和开发环境部署流程，偏项目发布说明。",
+    "tags": [
+      "Aurogen",
+      "OpenClaw",
+      "多代理",
+      "开源项目",
+      "安装部署"
+    ],
+    "title": "UniRound-Tec/Aurogen: \"Aurogen🍊: The Multi-Agent Evolution of OpenClaw.\"",
+    "totalScore": 46.5,
+    "url": "https://github.com/UniRound-Tec/Aurogen"
+  },
+  "payloadHash": "sha256:5d9207d58e1bf13f4239e53d01713958dd0fa85bccbefbe3f210de95ec989baf",
+  "refs": {},
+  "revisionId": "sha256:7a1d415c76270ccae8d196c40266e6e21be337a143b8a99dd345c04151705962",
+  "schemaVersion": 1,
+  "updatedAt": 1773830075834
+}

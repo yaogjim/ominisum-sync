@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780380627616,
+  "entityType": "message",
+  "id": "1780380627615_c5k2dftu",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent产品技术栈选择\n\n**评级**: B (58.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程\n**次类别**: Agent开发, 技术栈选择\n**标签**: #Agent #TypeScript #Python #AI产品 #工程架构\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 观点鲜明且有一定实践参考价值，但证据主要来自个人转述，论证不够严谨。\n**核心高价值点**: 将Agent系统拆分为TS负责产品层与编排层、Python负责模型与数据层，是较实用的技术分工建议。\n\n### 摘要\n文章主张Agent产品开发更适合使用TypeScript，原因包括更贴近Web产品链路、异步事件流支持较好、类型系统有助于约束工具和状态结构，并建议Python主要用于模型、数据、评测和离线任务。\n\n### 知识要点\n- Agent产品通常涉及前端、后端、工具调用、事件流、状态管理和插件系统，TypeScript在统一类型和Web生态衔接上有优势。\n- Python仍适合模型实验、数据处理、RAG pipeline、embedding、eval、fine-tuning和离线任务。\n- Agent系统的稳定性问题常来自工具参数、返回结构、状态字段和上下文对象不一致。\n\n### 行动项\n- 如果开发Agent产品MVP，可优先考虑使用TypeScript实现前端和Agent orchestrator。\n- 涉及模型训练、数据处理、复杂检索或评测系统时，再引入Python模块。\n- 为Agent工具输入输出、状态对象、消息格式和UI事件建立统一类型定义。\n\n### 存档判定\n归档: 否\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1780380627616,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:160a251232320a17fd63faf20cb21f8229f91b74ade75c9cf2e61d22d0280c86",
+  "refs": {
+    "sessionId": "1780380156078_yc7l27l7"
+  },
+  "revisionId": "sha256:843b167dc5485c7b7c48b06772e8b797e6d48a681a9b363cd4982380c74f54fe",
+  "schemaVersion": 1,
+  "updatedAt": 1780380627616
+}

@@ -1,0 +1,75 @@
+{
+  "createdAt": 1773362464233,
+  "entityType": "session",
+  "id": "1773362464233_gz2a8haa",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审视现有知识库，识别哪些内容其实在用 Markdown 伪装数据库，并列出高频查询场景。",
+      "为决策、功能、来源、观点等核心实体设计最小 schema，并加入 status、owner、source、updated_at 等字段。",
+      "将摘要、标签、结论等派生内容补充 provenance 字段，建立源文档变更后的重算机制。",
+      "保留少量高价值说明文档作为 Agent 入口，把关系型知识迁移到数据库或图数据库中。"
+    ],
+    "archiveReason": "文章提出了可落地的三层架构与数据建模原则，适合作为知识库、Agent 工作流和内部信息系统设计的参考框架。",
+    "classifiedAt": 1773830037353,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "文件系统非知识底座",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先精炼总结，再深入浅出解读。",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "文件系统适合导航、SOP、提示词和工作说明，不适合作为唯一事实源承载复杂关系数据。",
+      "知识系统应区分 source、decision、feature、claim、derivation 等类型，并显式记录关系、状态与权威性。",
+      "所有派生知识都应记录来源、生成方式和校验时间，以支持上游变更后的重算与回滚。",
+      "复杂业务问题本质上应通过结构化查询回答，而不是依赖全文搜索和人工维护链接。"
+    ],
+    "oneHighValuePoint": "最有价值的是把“文件用于引导，数据库用于记忆，业务系统用于存真相”明确拆成三层架构，直接解决知识漂移与关系查询问题。",
+    "oneLineReview": "观点鲜明、结构清楚，方法论很实用，但证据主要靠推理与经验，缺少实证支撑。",
+    "primaryCategory": "知识管理与AI系统设计",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "数据建模",
+      "组织协作流程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/gukevinr/status/2031889622385729730",
+      "https://x.com/gukevinr/status/2031889622385729730"
+    ],
+    "summaryBrief": "文章反对把公司知识全面落到 Markdown 和文件夹中，认为文件适合做入口与说明，数据库更适合承载实体关系、状态、溯源和依赖传播，源业务系统才应保存事实真相，并给出三层架构与结构化建模建议。",
+    "tags": [
+      "知识库架构",
+      "数据库建模",
+      "provenance",
+      "AI Agent",
+      "上下文管理"
+    ],
+    "title": "文件不是知识真相底座",
+    "totalScore": 77.5,
+    "url": "omnisun://digest/1773362464233"
+  },
+  "payloadHash": "sha256:a011ac1d2c1f8c9fb42638ed8bbc7a260f62031430e10206569fc0b4b54ddd33",
+  "refs": {},
+  "revisionId": "sha256:66a094338ee7183f829e5ab64f44f251d97f531e28178b130547af771cb6caa7",
+  "schemaVersion": 1,
+  "updatedAt": 1773830037356
+}

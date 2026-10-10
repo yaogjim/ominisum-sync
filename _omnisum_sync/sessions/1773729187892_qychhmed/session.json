@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773729187892,
+  "entityType": "session",
+  "id": "1773729187892_qychhmed",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "借鉴文中的问题清单，先梳理目标用户的一天流程、压力点和重复事务",
+      "设计一个最小可用助手方案，优先选择一个响应型、一个主动型、一个监测型任务",
+      "如果要落地类似系统，重点先写好ONBOARDING.md和SOUL.md，避免只关注技术配置"
+    ],
+    "archiveReason": "提供了面向非技术用户设计个人AI助理的实际经验、提示词模板和落地思路，可作为类似项目的启发性案例。",
+    "classifiedAt": 1773729208975,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "为家人打造AI助理实录",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "个人AI助手的关键设计不只是配置完成，而是适配真实生活流与低摩擦交互",
+      "SOUL.md、USER.md、ONBOARDING.md可作为智能体人格、上下文与冷启动引导的核心文件",
+      "面向非技术用户时，纯文本回复、隐藏系统错误、减少确认步骤能显著提升信任",
+      "任务可分为被动响应、主动执行、环境监测三类，适合规划助手的首批能力"
+    ],
+    "oneHighValuePoint": "最有价值的是提出“为不会读说明书的人设计AI助手”，核心不在能力堆砌，而在于让助手嵌入用户既有沟通方式、具备持续记忆并主动行动。",
+    "oneLineReview": "一篇偏案例驱动的实战分享，产品设计洞察比技术深度更有价值。",
+    "primaryCategory": "AI应用实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留为案例素材",
+    "secondaryCategories": [
+      "个人效率系统",
+      "智能体设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以为配偶搭建个人AI助手的过程为例，强调真正耗时的不在技术配置，而在于理解用户生活流程、建立信任与设计无感交互，并给出OpenClaw、BlueBubbles、SOUL.md、ONBOARDING.md等实操模板。",
+    "tags": [
+      "OpenClaw",
+      "个人AI助手",
+      "用户体验",
+      "自动化",
+      "智能体配置"
+    ],
+    "title": "How I built my wife a personal AI assistant on OpenClaw (and what actually took time)",
+    "totalScore": 62,
+    "url": "https://x.com/cathrynlavery/status/2033560884061106603"
+  },
+  "payloadHash": "sha256:95c3bce25f92a95161f51ff2204c91ba4c23d55ee9e5b1172aed66d88cd08f04",
+  "refs": {},
+  "revisionId": "sha256:a097c0d2d84cfc28c6ab5f051212184bcf2b678ee7fd0accb43107ce238010bf",
+  "schemaVersion": 1,
+  "updatedAt": 1773729731126
+}

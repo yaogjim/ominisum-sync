@@ -1,0 +1,107 @@
+{
+  "createdAt": 1777543521862,
+  "entityType": "session",
+  "id": "1777543521862_6zj4ybyh",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尝试为每日信息流建立固定的 AI 汇总入口和处理清单。",
+      "检查已有 Claude Code skill 描述，改写为明确的触发条件和排除条件。"
+    ],
+    "archiveReason": "",
+    "byline": "Leo",
+    "classifiedAt": 1780616210617,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude工作流缓解信息焦虑",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 862,
+        "id": "img-5",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HHDo3tybIAArBym?format=png&name=900x900",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HHDo3tybIAArBym?format=png&name=900x900",
+        "width": 748
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      },
+      {
+        "alt": "James Yao",
+        "caption": "",
+        "height": 96,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/profile_images/474112824034086912/YbGtCn5y_x96.jpeg",
+        "role": "article",
+        "score": 55,
+        "src": "https://pbs.twimg.com/profile_images/474112824034086912/YbGtCn5y_x96.jpeg",
+        "width": 96
+      }
+    ],
+    "knowledgePoints": [
+      "可用 AI 工具定期汇总 KOL、GitHub Trending、频道消息、平台变更等外部信息源。",
+      "信息处理清单应明确动作类型，例如写推、评估安装、跳过、分享、进入 backlog。",
+      "Claude Code skill 的 description 仅写功能介绍可能影响调用，应改为 Use when 和 NOT when 形式。"
+    ],
+    "oneHighValuePoint": "将信息流逐条转化为明确动作与处理时间，是缓解信息过载的关键。",
+    "oneLineReview": "有一定启发性的个人工作流展示，但更像案例片段而非可直接复用的系统教程。",
+    "primaryCategory": "AI效率工具",
+    "rating": "C",
+    "rejectReason": "内容主要是个人经验展示，缺少完整流程、配置细节和效果数据，方法论展开不足。",
+    "retentionDecision": "短期参考后可删除",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "信息管理",
+      "个人工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者分享用 Claude Code 和自定义 skill 搭建每日信息处理工作流，通过 /today 和 /morning 将外部信息流整理成可执行清单，从而降低信息焦虑。回复中补充了 skill 描述应使用 Use when / NOT when 的触发写法。",
+    "tags": [
+      "Claude Code",
+      "信息流管理",
+      "工作流",
+      "AI辅助",
+      "焦虑缓解"
+    ],
+    "title": "Leo: 没建工作流前，每天起床打开 X 刷一会儿就开始焦虑——爆款看不完、KOL 推文跟不上、PM 平台又升级了不知道哪条该 follow",
+    "totalScore": 50.5,
+    "url": "https://x.com/runes_leo/status/2049631565710528661"
+  },
+  "payloadHash": "sha256:cb4e3c672f3b403624392ed284decb4b000c7525c2ebcddc8174e8af6fa83550",
+  "refs": {},
+  "revisionId": "sha256:bac5c76ea0bd8583a7ffb826c9afdab7eb09a2fed374ae83b319ff0446e098f3",
+  "schemaVersion": 1,
+  "updatedAt": 1780616211326
+}

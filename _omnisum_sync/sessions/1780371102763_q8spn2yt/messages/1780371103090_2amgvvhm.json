@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780370999176,
+  "entityType": "message",
+  "id": "1780371103090_2amgvvhm",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 1. 总结\n\n宝玉的观点是：\n\n> **不要指望一个 AI 模型样样最强。**\n\n不同模型各有优势，正确用法是：\n\n- **多用几个模型**\n- **了解各自长处**\n- **按任务组合使用**\n- **针对模型特性调提示词**\n\n他认为：\n\n- **Opus 4.8**\n  - 写作一般\n  - UI 设计、UI 实现不错\n  - 系统设计、任务规划能力强\n- **GPT-5.5**\n  - 可与 Opus 对比使用\n  - 在某些实现任务上未必优于 Opus\n- **Claude Design**\n  - 适合先做设计，再交给不同模型实现\n\n---\n\n## 2. 解读\n\n这段话的核心不是“哪个模型最好”，而是：\n\n> **AI 不是选老婆，而是组团队。**\n\n一个模型可能：\n\n- 写文章强\n- 写代码一般\n- 做 UI 很强\n- 做计划很稳\n- 处理复杂任务更靠谱\n\n所以用 AI 时，不要迷信单一模型。\n\n更好的流程是：\n\n```text\n先让一个模型做方案/设计\n再让另一个模型实现\n最后用第三个模型检查和优化\n```\n\n比如：\n\n```text\nClaude Design：做界面设计\nOpus 4.8：实现 UI / 做系统规划\nGPT-5.5：补充代码 / 改写 / 检查\n```\n\n另外，同一个模型在不同工具里表现也会不同。\n\n例如：\n\n- Claude Code\n- Cursor\n- ChatGPT\n- API Agent\n\n它们的上下文、工具能力、提示词方式不同，结果也会不一样。\n\n---\n\n## 3. 我的意见\n\n我同意这个观点。\n\n现在用 AI，最重要的不是问：\n\n> “哪个模型最强？”\n\n而是问：\n\n> “这个任务适合哪个模型？”\n\n建议普通用户这样用：\n\n| 任务 | 用法 |\n|---|---|\n| 写作 | 多模型对比，选表达最自然的 |\n| 编程 | 一个写，一个审，一个改 |\n| UI 设计 | 先设计，再实现 |\n| 复杂任务 | 先让 AI 做计划，再执行 |\n| 重要内容 | 不要只信一个模型 |\n\n一句话：\n\n> **别追求万能模型，要学会搭配模型。**\n\n会搭配的人，AI 效果会明显更好。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780370999176,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:63ebd235a5f2b4f965bb84f5569dde8c8fb8185799f1a4c4d77ae7b25ce43526",
+  "refs": {
+    "sessionId": "1780371102763_q8spn2yt"
+  },
+  "revisionId": "sha256:b11b38a4ce7d5952d25f5c88bfabccdd70beec3252186f42af6332a87001f722",
+  "schemaVersion": 1,
+  "updatedAt": 1780370999176
+}

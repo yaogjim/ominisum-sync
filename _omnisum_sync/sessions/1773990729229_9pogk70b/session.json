@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773990729229,
+  "entityType": "session",
+  "id": "1773990729229_9pogk70b",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若你在做企业AI应用，提炼文中的权限、身份、审计三层治理框架用于需求清单。",
+      "对比你当前的Agent系统是否支持共享凭据与用户级OAuth两种执行模式。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773991085249,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "LangSmith企业代理管理发布",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "blog.langchain.com",
+    "favicon": "https://blog.langchain.com/content/images/size/w256h256/2026/03/App.png",
+    "knowledgePoints": [
+      "企业级代理共享需要区分可克隆、可运行、可编辑三类权限。",
+      "代理身份可分为共享凭据模式和代表用户执行模式，适用于不同安全场景。",
+      "多代理协作落地需要统一审批入口和完整审计追踪。"
+    ],
+    "oneHighValuePoint": "最有价值的是把代理治理拆成权限、身份凭据、审批流程和可观测性四个企业落地关键模块。",
+    "oneLineReview": "这是一篇合格的产品能力概览，但营销色彩较强，实证与可复用方法偏少。",
+    "primaryCategory": "AI Agent平台与企业协作",
+    "rating": "C",
+    "rejectReason": "内容以产品宣传为主，方法论和实证支撑较弱，可操作细节有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "产品发布",
+      "企业权限与治理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 LangSmith Fleet 的企业级代理管理能力，重点包括代理共享、权限分层、身份与凭据模型、Slack 机器人身份、Inbox 审批和可观测性审计。整体更像产品发布说明，适合快速了解功能边界，但不适合深度学习方法论。",
+    "tags": [
+      "LangSmith",
+      "Agent管理",
+      "权限模型",
+      "企业AI",
+      "Slack集成"
+    ],
+    "title": "Introducing LangSmith Fleet",
+    "totalScore": 42.5,
+    "url": "https://blog.langchain.com/introducing-langsmith-fleet/?utm_medium=social&utm_source=twitter&utm_campaign=q1-2026_fleet-launch_aw"
+  },
+  "payloadHash": "sha256:c25a6caa058507247bff623a3d2abccf84cc88e1c5a58cf82de0d2a3234f94b5",
+  "refs": {},
+  "revisionId": "sha256:ed0ccee21048a79a6e41d76b674b460cb16a1e83733160febab236805ad79a94",
+  "schemaVersion": 1,
+  "updatedAt": 1774005336262
+}

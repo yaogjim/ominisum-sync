@@ -1,0 +1,70 @@
+{
+  "createdAt": 1780371021747,
+  "entityType": "session",
+  "id": "1780371021747_marmuhor",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审查现有AI应用代码库，识别哪些代码只是为了弥补对模型的不信任而存在。",
+      "尝试将一个重复工作流改写为可版本化的Markdown技能，并配套最小代码、单元测试和LLM评估。",
+      "在智能体项目中区分确定性代码层与自然语言指令层，减少不必要的胶水代码。",
+      "评估当前项目是否过度限制LLM调用，重新计算token成本与开发速度之间的权衡。"
+    ],
+    "archiveReason": "文章提出了AI代理时代减少传统代码控制层、转向可测试技能与指令层的架构视角，适合作为智能体工程思路参考。",
+    "classifiedAt": 1780371626401,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI代理架构的工厂陷阱",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "传统软件架构中大量验证、重试、测试和调度代码，可能源于对模型能力的不信任，在更强模型环境下会变成冗余控制层。",
+      "作者提出“Markdown是程序”的观点，即把意图、判断和流程固化为版本化、可测试、可复用的技能。",
+      "智能体工程可能需要新的系统原语，如技能包、解析器、评估器和薄确定性代码层。",
+      "在LLM成本快速下降的背景下，过度节省token可能会牺牲探索速度和先发优势。",
+      "未来软件开发的瓶颈可能从代码产出转向目标清晰度、产品判断和任务设计能力。"
+    ],
+    "oneHighValuePoint": "将可复用、可测试的Markdown技能视为AI代理工程的新抽象层，而不是继续堆砌大量传统胶水代码。",
+    "oneLineReview": "观点有启发性但带有明显营销和夸张色彩，适合提炼思路而非照单全收。",
+    "primaryCategory": "AI工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后提炼归档",
+    "secondaryCategories": [
+      "软件架构",
+      "智能体开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章反思用大量传统代码和测试约束LLM代理的做法，认为这相当于为AI建造低效工厂。作者主张转向Markdown技能、薄代码层、可测试指令与token最大化，让代理更自由地完成复杂任务。",
+    "tags": [
+      "AI Agent",
+      "LLM应用架构",
+      "Skillify",
+      "Markdown工程",
+      "软件范式转变"
+    ],
+    "title": "停止为你的代理商建造富士康工厂",
+    "totalScore": 67.5,
+    "url": "https://x.com/garrytan/status/2061454423034110372"
+  },
+  "payloadHash": "sha256:cb75865a95102d93272918edf5689ffa436d532a5569e07cb7428366319e893c",
+  "refs": {},
+  "revisionId": "sha256:d1059a189b71b419d1e568ec78831ccbaec8997101f8d82acc4150bf35075844",
+  "schemaVersion": 1,
+  "updatedAt": 1780373652564
+}

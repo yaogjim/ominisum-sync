@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777259999436,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1777259999436",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Viewfin-Labs/slop-check 总结\n\n## 1. 项目定位\n\n**slop-check**是一个用于审查内容 “AI 味 / AI slop” 的 Claude Code Skill。\n\n它可以检查推文、回复、长文、LinkedIn 内容等，判断文本是否像 AI 批量生成、缺乏观点、模板化或过度精致，并给出修改建议。\n\n核心目标是回答一个问题：\n\n> 一个真正懂这个领域、有观点的人，会这样写吗？\n\n如果答案是 “不太会” 或 “还行”，那就可能是 slop。\n\n---\n\n## 2. 核心功能\n\n使用者粘贴任意内容后，工具会输出：\n\n- **Tier 1 违规项**：指出具体有问题的原文片段\n- **3 个质量门槛判断**：\n  - 是否提供新增价值\n  - 是否有明确立场\n  - 开头是否足够吸引人\n- **8 个维度评分**，每项 1–10 分\n- **Top 3 问题与改写方向**\n- **最终结论**：\n  - PASS：可发布\n  - NEEDS REWRITE：需要修改\n  - REWRITE：不建议发布\n\n---\n\n## 3. 评分维度\n\n工具从 8 个维度判断内容质量：\n\n| 维度 | 关注点 |\n|---|---|\n| original_take | 是否有非显而易见的观点 |\n| no_ai_tells | 是否避开典型 AI 词汇、句式和格式 |\n| voice_match | 是否像一个具体的人，而不是资讯简报 |\n| platform_fit | 是否适合目标平台 |\n| keyword_density | 是否减少术语堆砌，提高信息密度 |\n| no_engagement_bait | 是否避免空洞互动引导，如 “Thoughts?” |\n| no_emotional_inflation | 是否避免夸张、炒作、过度承诺 |\n| humanness | 是否有真实人的不规则表达、粗糙感和个人质感 |\n\n其中，**no_ai_tells**和**humanness**权重更高，说明项目认为 “去 AI 味” 和 “人味” 是核心判断标准。\n\n---\n\n## 4. 评分结果规则\n\n整体评分分为三档：\n\n- **≥ 8 分：PASS**\n- **6–7 分：NEEDS REWRITE**\n- **< 6 分：REWRITE**\n\n此外，只要出现某些严重违规，即使总分不低，也必须重写。\n\n---\n\n## 5. 重点反 AI Slop 规则\n\n项目列出了大量禁用模式，包括：\n\n### 禁用格式\n\n- em dash 长破折号\n- 粗体 markdown\n- emoji 结尾\n\n### 禁用开头\n\n- 先奉承对方\n- 复述原帖内容\n- 空泛背景铺垫\n\n### 禁用词汇\n\n包括早期典型 AI 词：\n\n- pivotal\n- robust\n- delve\n- synergy\n\n也包括 2026 年新型营销黑话：\n\n- game-changer\n- move the needle\n- narrative\n- execution risk\n- conviction\n- flywheel\n- moat\n\n---\n\n## 6. 三个质量门槛\n\n内容必须通过三个基础门槛：\n\n### Gate 1：提供新增价值\n\n必须至少包含以下之一：\n\n- 具体数据\n- 具名案例\n- 新的理解框架\n- 可验证预测\n- 第一手观察\n\n### Gate 2：有可反驳的立场\n\n内容不能只是安全、正确、无争议。\n\n它必须表达一个清晰观点，并且足够具体到 “聪明人可以反驳”。\n\n### Gate 3：前 8 个词抓住注意力\n\n开头不能只是背景铺垫，而要马上让读者愿意继续看。\n\n---\n\n## 7. 新一代 AI Slop 特征\n\n文章认为，新模型已经会主动避开老式 AI 痕迹，所以 AI 味变得更隐蔽。\n\n新的高风险特征包括：\n\n### 假装有节奏感\n\n句子长短交替得过于机械，像节拍器，而不是真人的自然变化。\n\n### 不对称精致\n\n开头和结尾很流畅，但中间内容很薄。\n\n### 看似有观点，实则共识\n\n表达方式像观点，但内容仍是行业中位数判断，没有真正锋利立场。\n\n### 段落过于均匀\n\n每段长度差不多，信息分布过于对称。\n\n### 总是升华结尾\n\n每篇内容都以宏大总结收尾，而真人往往说完重点就停。\n\n---\n\n## 8. 不同平台的适配\n\n### X / Twitter\n\n短内容会跳过部分结构检查，更关注开头和观点密度。\n\n### ViewFT 文章\n\n更重视：\n\n- 人味\n- 原创观点\n- 具体性\n\n因为文章会进入 ChatGPT、Perplexity、Grok 等引用生态，必须有可信细节。\n\n### Threads\n\n首条重点看是否能让人继续读，整条线程再看结构问题。\n\n### Replies\n\n回复必须提供原帖没有的新信息，否则视为低价值。\n\n---\n\n## 9. 产品价值判断\n\n从产品角度看，slop-check 的价值不只是 “检测 AI 写作”，而是建立一套**面向内容可信度的审稿标准**。\n\n它针对的是一个新问题：\n\n> 当所有人都能写出流畅文本后，真正稀缺的是具体经验、明确立场和真实人味。\n\n这类工具适合用于：\n\n- 创作者发布前自检\n- 品牌内容审稿\n- 社交媒体运营\n- AI 内容工作流质检\n- 高质量社区或媒体平台的内容标准化\n\n---\n\n## 10. 一句话总结\n\n**slop-check 是一个反 AI 味内容审查工具，用 8 个维度和 3 个质量门槛，帮助创作者把 “流畅但空泛” 的 AI 文本，改成更具体、更有人味、更有立场的内容。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1777259999436,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c74bae1f9c1a9c22e1e12dafcdd3d5fe952ce72debcf8c9d905682a0381e7a1c",
+  "refs": {
+    "sessionId": "1777259999512_lrarm4h3"
+  },
+  "revisionId": "sha256:f7b4ee3a660d7116bb0b692072ed191435456891ce1065fbc384654d783c8bb0",
+  "schemaVersion": 1,
+  "updatedAt": 1777259999436
+}

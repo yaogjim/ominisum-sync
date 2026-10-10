@@ -1,0 +1,66 @@
+{
+  "createdAt": 1775543950147,
+  "entityType": "session",
+  "id": "1775543950147_nze6v8w1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理文中提到的运行时替换、工具桥接和多租户架构思路，提炼适合自己项目的技术路线",
+      "如果从事Agent产品开发，可重点验证FastClaw/Open Agent SDK这类轻量运行时方案是否适合你的部署场景"
+    ],
+    "archiveReason": "集中记录了多个Agent相关项目的产品思路、架构取舍与实践感受，对跟踪AI coding workflow有参考价值",
+    "classifiedAt": 1775547780640,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Vibe Coding项目复盘",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "OpenClaw在多租户云部署中面临内存、隔离、启动时延与成本问题",
+      "通过兼容协议、自研运行时和工具桥接层，可以降低Agent系统对单一闭源生态的依赖",
+      "Vibe Coding显著提升原型产出速度，但测试、验收与聚焦能力成为新的瓶颈"
+    ],
+    "oneHighValuePoint": "最有价值的是作者基于真实部署成本与运行时限制，得出OpenClaw不适合多租户云端场景，并进一步自研FastClaw与Open Agent SDK替代方案。",
+    "oneLineReview": "项目密集、想法活跃，但更像高频产品日志而非经过充分验证的方法论总结。",
+    "primaryCategory": "AI开发实践",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为AI原型开发与Agent产品方向的案例素材",
+    "secondaryCategories": [
+      "Agent产品设计",
+      "个人项目复盘"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章回顾作者近三个月借助Claude Code完成的一系列Agent相关项目，涵盖托管、UI、运行时、工具路由与协作平台等方向，重点展示了快速原型能力、架构替换思路及对AI编程角色变化的反思，但系统性与证据支撑较弱。",
+    "tags": [
+      "Vibe Coding",
+      "Claude Code",
+      "Agent",
+      "项目复盘",
+      "开源工具"
+    ],
+    "title": "我的 Vibe Coding 项目",
+    "totalScore": 61.5,
+    "url": "https://x.com/idoubicc/status/2040821048577565144"
+  },
+  "payloadHash": "sha256:25ce2ba77ae76e3623e7cf7d750d571591626a1e846724a81ddeeaeae8427a0f",
+  "refs": {},
+  "revisionId": "sha256:15df5a188cc7620ca63248d017c22e6f80ed0c0ea746b49f430f117f9482a628",
+  "schemaVersion": 1,
+  "updatedAt": 1775559550115
+}

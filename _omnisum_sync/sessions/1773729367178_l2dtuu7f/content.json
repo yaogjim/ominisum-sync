@@ -1,0 +1,15 @@
+{
+  "createdAt": 1773729367178,
+  "entityType": "session-content",
+  "id": "1773729367178_l2dtuu7f",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-article\"><header><strong>WY</strong><h1>国内订阅Claude最简单的方式，只需一张国内Visa卡，0手续费，5分钟搞定</h1></header><div class=\"tw-article-body\"><p><span data-text=\"true\">刚找到了一个订阅Claude会员的途径，0手续费，没有复杂的流程，超简单，只要有一张Visa卡就行，国内的也可以，一共分5步：</span></p>\n<ol><li><span data-text=\"true\">npm install -g agent-cards</span></li><li><span data-text=\"true\">agent-cards signup</span></li><li><span data-text=\"true\">agent-cards cards create --amount 20（充值$20，注册用英文名，支持大陆Visa卡充值）</span></li><li><span data-text=\"true\">agent-cards cards details [ID]（查看卡片信息，ID填上面命令返回的ID）</span></li><li><span data-text=\"true\">Claude订阅页面填入银行卡信息，账单地址填卡片地址，姓名填注册时到英文名。</span></li></ol>\n<p><span data-text=\"true\">这个方法实际上就是创建一张虚拟预付 Visa 卡订阅，虚拟卡提供商是 </span><div class=\"css-175oi2r r-1loqt21 r-1471scf r-o7ynqc r-6416eg r-1ny4l3l\"><a href=\"https://agentcard.sh/\" target=\"_blank\"><span data-text=\"true\">https://agentcard.sh</span></a><span data-text=\"true\">，agent-cards这个代码库我也用Claude扫描过，没有恶意代码。</span></div></p>\n<p><span data-text=\"true\">先做个免责声明，这不是推广，按照以上步骤操作，我订阅成功了。但是这个卡的退款流程我还没测试完整，我知道的是每次订阅都要充一次值创建一张卡，订阅之后卡就会关闭，没使用的卡7天后也会自动关卡，卡里没用完的余额会退回支付渠道。所以</span><span style=\"font-weight: bold;\">花多少就充多少，没有必要多充</span><span data-text=\"true\">。</span></p>\n<p><span data-text=\"true\">至于Claude封号退款的问题，问了AI客服说不知道，到时候可能要和人工客服掰扯。</span></p>\n<p><span data-text=\"true\">另外这卡现在公测期间0手续费，限量1000张，我前几天申请的时候卡发完了，昨天才申请到。</span></p>\n<p><span data-text=\"true\">我有稳定的Claude订阅老号，这次为了测试订阅流程用的是纯新号，刚注册完就订阅，VPN是8.8一个月万人骑的机场，IP美国，也是为了测试封号到底是不是跟机场有关。</span></p>\n<p><span data-text=\"true\">因为IP不够纯净，会跳短信验证码，我用的英国giffgaff卡收手机验证码，这个卡大家也可以去办一个，实体卡，一年保号费用才5块钱左右，专收验证码。</span></p>\n<p><span data-text=\"true\">如果卡号发完了也别着急，我再继续去帮大家找渠道。</span></p></div></article>",
+    "pageContent": "刚找到了一个订阅Claude会员的途径，0手续费，没有复杂的流程，超简单，只要有一张Visa卡就行，国内的也可以，一共分5步：\nnpm install -g agent-cards\nagent-cards signup\nagent-cards cards create --amount 20（充值$20，注册用英文名，支持大陆Visa卡充值）\nagent-cards cards details [ID]（查看卡片信息，ID填上面命令返回的ID）\nClaude订阅页面填入银行卡信息，账单地址填卡片地址，姓名填注册时到英文名。\n这个方法实际上就是创建一张虚拟预付 Visa 卡订阅，虚拟卡提供商是 https://agentcard.sh，agent-cards这个代码库我也用Claude扫描过，没有恶意代码。\n先做个免责声明，这不是推广，按照以上步骤操作，我订阅成功了。但是这个卡的退款流程我还没测试完整，我知道的是每次订阅都要充一次值创建一张卡，订阅之后卡就会关闭，没使用的卡7天后也会自动关卡，卡里没用完的余额会退回支付渠道。所以花多少就充多少，没有必要多充。\n至于Claude封号退款的问题，问了AI客服说不知道，到时候可能要和人工客服掰扯。\n另外这卡现在公测期间0手续费，限量1000张，我前几天申请的时候卡发完了，昨天才申请到。\n我有稳定的Claude订阅老号，这次为了测试订阅流程用的是纯新号，刚注册完就订阅，VPN是8.8一个月万人骑的机场，IP美国，也是为了测试封号到底是不是跟机场有关。\n因为IP不够纯净，会跳短信验证码，我用的英国giffgaff卡收手机验证码，这个卡大家也可以去办一个，实体卡，一年保号费用才5块钱左右，专收验证码。\n如果卡号发完了也别着急，我再继续去帮大家找渠道。"
+  },
+  "payloadHash": "sha256:d5515fdc013a28719c27fd2fb9dbffec8bd920359f0eead6390e51d3f1857655",
+  "refs": {},
+  "revisionId": "sha256:5d21b88b126dbca61d8eb4a0ffebfd14cfe13957f9998bf86edd11b8db22ac20",
+  "schemaVersion": 1,
+  "updatedAt": 1773729381077
+}

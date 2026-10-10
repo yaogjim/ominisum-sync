@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773829686434,
+  "entityType": "message",
+  "id": "1773829686433_ejaut8wu",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 多助手CLI配置管理工具\n\n**评级**: B (62.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 开发工具\n**次类别**: AI 编码助手, CLI 工具, 配置管理\n**标签**: #Claude Code #Codex #Gemini #OpenCode #配置切换 #MCP #Rust\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一份实用但偏说明书式的工具 README，操作价值高，思考增量有限。\n**核心高价值点**: 将多个 AI 编码助手的 provider、MCP、prompt、skills 与本地代理统一到一个 CLI 中管理，显著降低多工具切换和配置分散的成本。\n\n### 摘要\n这是一份 cc-switch-cli 的项目说明文档，介绍了面向 Claude Code、Codex、Gemini 和 OpenCode 的统一 CLI 管理能力，覆盖 provider、MCP、prompts、skills、备份、WebDAV 同步、代理和环境检查等功能，并给出安装方式、命令示例与架构说明。\n\n### 知识要点\n- 可通过统一 CLI 管理 Claude Code、Codex、Gemini、OpenCode 的 provider 与 MCP 配置\n- 支持 prompts、skills、WebDAV 同步、备份恢复、代理控制和环境冲突检查\n- 采用 SQLite 作为状态存储，并通过安全 live sync 同步到各应用实际配置文件\n- 提供交互式 TUI 和命令行两种操作模式，适合不同使用习惯\n\n### 行动项\n- 如果你同时使用多个 AI 编码助手，可评估是否用该工具统一管理 provider、MCP 和 prompt\n- 优先试用 `provider switch`、`mcp sync`、`env check` 三类核心命令验证实际收益\n- 结合自身工作流判断 WebDAV 同步和 skills 管理是否值得纳入长期环境配置\n\n### 存档判定\n归档: 是 — 原因: 面向多 AI 编码助手的统一配置与切换，命令清单完整，后续在实际搭建环境时可直接参考。\n不推荐: 内容偏产品说明书，方法论和证据支撑较弱，对非该工具用户价值有限。\n删除: 否\n留存决策: 作为特定场景工具文档保留，按需查阅",
+    "role": "assistant",
+    "timestamp": 1773829686434,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:d6eae7e808776b5a575ff938653d8a588c580862216eb92bf8d6acbab3deb199",
+  "refs": {
+    "sessionId": "1773557104420_acfdmnns"
+  },
+  "revisionId": "sha256:dfb43045a3e88cb3947bd3f978d3ca4f77df0bc3242511710e908cea4cbed92d",
+  "schemaVersion": 1,
+  "updatedAt": 1773829686434
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773972685699,
+  "entityType": "session",
+  "id": "1773972685699_ex2mk2xy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "仅保留你真正关心的1-2个原始链接，单独评估完整内容。",
+      "删除这条聚合记录，避免低质量碎片继续占用注意力。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773990727446,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 4,
+      "transferability": 4
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Readwise收件箱碎片合集",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "碎片化严重，原文不可读性高，信息重复且上下文缺失，后续检索和复用价值很低。",
+    "domain": "read.readwise.io",
+    "favicon": "https://read.readwise.io/reader-fav.ico",
+    "knowledgePoints": [
+      "多代理或AI系统中，可通过显式上下文文件、审计链、shadow testing减少黑盒风险。",
+      "爆款内容可从核心观点、情绪触发点、论证方式和语言风格等维度进行逆向拆解。"
+    ],
+    "oneHighValuePoint": "少数片段提到将设计规范、审计链、shadow testing等方法结构化为可复用系统，这类思路有一定方法论价值。",
+    "oneLineReview": "像一份未经整理的灵感流，不是可直接吸收的文章。",
+    "primaryCategory": "信息聚合",
+    "rating": "D",
+    "rejectReason": "内容是多个短帖和链接的拼接，结构松散、噪声高、证据薄弱，缺少完整论证与系统展开。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "AI工具动态",
+      "个人观点摘录"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一组Readwise收件箱中的碎片化条目，包含AI模型、coding agent、内容拆解、交易审计、创作者收入等零散片段，但整体缺乏统一主题、完整上下文和可靠证据支撑。",
+    "tags": [
+      "Readwise",
+      "信息流",
+      "碎片化内容",
+      "AI",
+      "Substack"
+    ],
+    "title": "Inbox | Readwise",
+    "totalScore": 34.5,
+    "url": "https://read.readwise.io/new"
+  },
+  "payloadHash": "sha256:b3dd996f6b3b2a9d97dc6c6e2ebada65cd0c38449d2bf0c2590185b73028d5b0",
+  "refs": {},
+  "revisionId": "sha256:161e8bb3e07baacc8db86c642b6df379f0982edd16d68328f860e7d7fb92c7ee",
+  "schemaVersion": 1,
+  "updatedAt": 1773990727451
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780371120857,
+  "entityType": "session",
+  "id": "1780371120857_lhyz8ump",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需评估 M3，可等待作者后续基于 Multica Issue 的量化 benchmark。",
+      "在自己的 AI 编程流程中尝试“生成模型 + 审查模型”的双 Agent 模式。",
+      "不要仅依据社交媒体体感评价决定模型选型，应结合实际任务测试。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780371762250,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "M3编码体验与评测计划",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息较碎片化且证据不足，模型版本体验类内容时效性强，后续若有正式 benchmark 结果可替代此条。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "M3 的一次性编码结果可能不够全面，需要额外审查环节弥补。",
+      "真实项目 Issue 可作为大模型编码能力 benchmark 的测试材料。",
+      "多模型协作可用于优化代码生成质量与成本之间的权衡。"
+    ],
+    "oneHighValuePoint": "将低成本模型用于代码生成，再用更强模型作为 gate/mentor 做 code review，以平衡效果与 token 成本。",
+    "oneLineReview": "有一个可借鉴的多 Agent 编码流程思路，但整体仍停留在主观体验层面。",
+    "primaryCategory": "AI编程工具评测",
+    "rating": "D",
+    "rejectReason": "内容主要是个人体感和未完成评测计划，缺少量化数据与完整案例支撑，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "大模型应用",
+      "代码审查流程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "作者说明其对 M3 编码能力的评价仅为个人体验，认为相比旧版有明显提升，但一次性输出不如顶级模型全面。建议用 M3 写代码、Opus 做代码审查，并计划基于真实 Issue 做量化评测。",
+    "tags": [
+      "M3",
+      "Opus",
+      "AI编程",
+      "Code Review",
+      "主观体验"
+    ],
+    "title": "Jiayuan (JY) Zhang: 几个客观性说明： 1）这一条和 MiniMax 没有任何关系（我从来不接商单） 2）「体感」不等于真实水平，不是量化数据 用了更多的一些体验，整体上 codin…",
+    "totalScore": 35,
+    "url": "https://x.com/jiayuan_jy/status/2061370837878399267"
+  },
+  "payloadHash": "sha256:064063dafc2e35ea35c671f3982c7d61c99b017f3722d319e8a2c756428e233d",
+  "refs": {},
+  "revisionId": "sha256:2b80e6af87b4d946eb041a79fef20f662ff49a13843ebbd98375f7715a359551",
+  "schemaVersion": 1,
+  "updatedAt": 1780371762645
+}

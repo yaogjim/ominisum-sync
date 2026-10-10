@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773830473165,
+  "entityType": "message",
+  "id": "1773830473164_c5hmctln",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Qwen3.5反复Prefill成因分析\n\n**评级**: B (61.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 本地大模型推理与性能优化\n**次类别**: MLX缓存机制, Qwen模型部署问题\n**标签**: #Qwen3.5 #MLX #LM Studio #KV Cache #Prefill #OpenClaw\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一篇问题定位价值高于方法沉淀的工程排障型内容，适合遇到同类问题时查阅。\n**核心高价值点**: 最有价值的是把反复Prefill归因到缓存机制、聊天模板序列不稳定和Qwen3.5架构特性三者叠加，而非单点配置错误。\n\n### 摘要\n文章围绕Qwen3.5在MLX、LM Studio与OpenClaw中反复触发Prefill的问题展开，归纳出KV Cache失效、Jinja模板差异、模型SSM层不可裁剪等复合原因，并整理了社区Issue中的临时补丁与优化方向。\n\n### 知识要点\n- Qwen3.5在MLX中缓存命中差与Mamba/SSM类不可裁剪缓存有关\n- 推理模型的reasoning token不回放会破坏后续请求的缓存前缀匹配\n- Jinja聊天模板中的tools和参数顺序不稳定会导致缓存键漂移\n- 社区已有通过修改checkpoint位置和排序JSON键的临时缓解方案\n\n### 行动项\n- 若在Apple Silicon本地部署Qwen3.5，优先核查chat template、tools序列化顺序与缓存实现版本\n- 在实际项目中复现并对比Qwen3.5与GLM 4.7 Flash的多轮对话缓存命中情况\n- 跟踪mlx-lm相关Issue与PR，评估是否引入社区补丁或等待正式修复\n\n### 存档判定\n归档: 是 — 原因: 包含对Qwen3.5在MLX生态下反复Prefill问题的成因拆解、Issue线索和临时修复思路，具备故障排查参考价值\n删除: 否\n留存决策: 短期参考后可归档，适合在排查本地推理缓存问题时回看",
+    "role": "assistant",
+    "timestamp": 1773830473165,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:a52df63d3a5510e160adf4c83bb6a02a7f6f5efebba0c91dedc590cc27aa2529",
+  "refs": {
+    "sessionId": "1773280356447_6lvncdvd"
+  },
+  "revisionId": "sha256:fafe0fdf269560f569a03af0037be2e569e937a7c65b103fc4cb6d2c5fd9cc7f",
+  "schemaVersion": 1,
+  "updatedAt": 1773830473165
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777812214394,
+  "entityType": "message",
+  "id": "1777812251683_9qi933m7",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Tweetskill：把你的推特人格“蒸馏”成 AI 写作风格\n\n## 核心问题\n\n作者认为，AI 帮人写推文时，经常会出现两个问题：\n\n- 语气不像本人\n- 内容有明显“AI 味”\n\n即使内容正确，也很容易让人一眼看出不是自己写的。\n\n## 解决思路\n\n作者开源了一个工具 **tweetskill**，目标是把一个人的历史推文进行分析，并“蒸馏”成 AI Agent 可读取的 **skill 文件**。\n\n这个 skill 文件会总结用户的写作习惯，例如：\n\n- 常用表达方式\n- 哪类推文更容易获得传播\n- 常用/不用的格式\n- 个人语言风格和内容偏好\n\n之后 AI 再写推文时，就可以参考这个文件，更接近原本账号的人格和语气。\n\n## 使用方式\n\n安装命令：\n\n```bash\nnpx skills add DbgKinggg/tweetskill\n```\n\n安装时可选择对应的 AI Agent，例如：\n\n- Hermes\n- OpenClaw\n- Claude Code\n\n之后在 AI Agent 中输入类似命令：\n\n```text\nanalyze @elonmusk\n```\n\n工具默认使用 X 官方 API 获取推文，并需要用户提供 X Bearer Token。\n\n## 输出结果\n\n分析完成后，会生成类似：\n\n```text\nelonmusk-skill.md\n```\n\n这个文件就是账号风格的“人格说明书”。\n\n之后可以让 AI 读取该文件，例如：\n\n```text\n读 elonmusk-skill.md，帮我写一条关于 grok 新版本的推文\n```\n\n也可以把 skill 文件直接放进 AI Agent 的配置里长期使用。\n\n## 产品价值\n\ntweetskill 本质上是在解决 **AI 个性化表达** 的问题。\n\n它不是简单让 AI 写内容，而是先理解一个人的历史表达，再生成更贴近本人风格的内容。配合其他 skill，例如去 AI 味、调研增强、交易/信息分析等能力，作者称之为一种“赛博永生”的内容代理方式。\n\n## 一句话总结\n\n**tweetskill 是一个把推特历史内容分析成 AI 可复用人格文件的开源工具，用来让 AI 写出更像本人语气、少一些 AI 味的推文。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777812214394,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:148673c927c68bb2f2354a25710cbc55b800fcd10bf55783551b89028b9b5681",
+  "refs": {
+    "sessionId": "1777812251475_2fnfh52i"
+  },
+  "revisionId": "sha256:173280eaa62ea91d36b1c1fa6d008cd14085eaea923810d5323470798f562879",
+  "schemaVersion": 1,
+  "updatedAt": 1777812214394
+}

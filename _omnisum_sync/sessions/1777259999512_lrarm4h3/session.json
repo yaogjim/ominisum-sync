@@ -1,0 +1,67 @@
+{
+  "createdAt": 1777259999512,
+  "entityType": "session",
+  "id": "1777259999512_lrarm4h3",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将其8维评分和3个质量门槛整理成自己的内容发布前检查表。",
+      "尝试安装或参考 Slop-Check，对已有AI辅助写作内容进行一次批量审核。",
+      "在写作时避免模板化开头、空洞CTA、均匀段落和没有具体例子的共识表达。"
+    ],
+    "archiveReason": "包含可复用的AI内容质量评分维度、质量门槛和具体反AI味检查清单，适合作为写作审核工具参考。",
+    "classifiedAt": 1777284929302,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI味内容检测工具框架",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "AI内容检测可从原创观点、人类声音、平台适配、关键词密度、情绪夸张、互动诱导等维度评分。",
+      "新一代AI文本的典型问题不只是陈词滥调，还包括机械化句长变化、均匀段落、共识型观点和过度顺滑的结构。",
+      "内容发布前应通过三个门槛：是否增加具体价值、是否提出可反驳立场、前8个词是否能吸引阅读。"
+    ],
+    "oneHighValuePoint": "将AI味检测拆解为具体维度、质量门槛、禁用表达和结构模式，可直接转化为内容发布前的审核清单。",
+    "oneLineReview": "这是一个实用性较强的AI内容质检工具说明，方法框架有参考价值，但证据和案例支撑不足。",
+    "primaryCategory": "AI内容质量评估",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留为内容评估框架素材",
+    "secondaryCategories": [
+      "写作方法论",
+      "GitHub工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个名为 Slop-Check 的 Claude Code skill，用于检测推文、文章、LinkedIn帖子等内容中的AI味模式，并通过8个维度、3个质量门槛和违规清单给出修改建议与发布 verdict。",
+    "tags": [
+      "AI写作",
+      "内容审核",
+      "反AI味",
+      "Claude Code",
+      "评分框架"
+    ],
+    "title": "Viewfin-Labs/slop-check",
+    "totalScore": 69,
+    "url": "https://github.com/Viewfin-Labs/Slop-Check"
+  },
+  "payloadHash": "sha256:a6ed4c0b769f0ddc69d1427d1dae06eee3f38f3a26d3f4c7b19f6e688fd1507b",
+  "refs": {},
+  "revisionId": "sha256:2d67776341b0bb5efbcf32974dac7cb92b5f871f0bf44c6877fe516b8beec830",
+  "schemaVersion": 1,
+  "updatedAt": 1777284929306
+}

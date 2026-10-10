@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777276959715,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1777276959715",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 当 Agent 足够强之后，关键不再是 “模型”，而是 “组织方式”\n\n## 核心观点\n\n随着 Coding Agent 能力增强，Agent 已经不只是一个会回答问题的模型，而更像一个可以持续工作、交接任务、调用工具、产出成果的 “数字执行体”。\n\n因此，接下来的重点不是单个 Agent 有多聪明，而是：**如何把 Agent 作为一种新型劳动单元，稳定、安全、可治理地组织起来。**\n\n---\n\n## 一、Agent 运行架构的共识：Session / Harness / Sandbox 必须分离\n\n过去很多系统会把模型、记忆、工具、凭证、文件系统、执行环境都塞进一个容器里，这会导致系统脆弱、昂贵、难治理。\n\n新的共识是三层分离：\n\n- **Session**：承载长期状态、任务连续性和恢复能力  \n- **Harness / Workflow**：负责控制流程、调度、审批、治理  \n- **Sandbox**：只负责执行命令、访问文件、运行代码等底层能力  \n\n这样做的好处是：\n\n- Session 可以长期存在，不依赖单次上下文窗口\n- Sandbox 可以即用即弃，更安全、更低成本\n- Agent Provider 可以独立升级，不破坏产品语义\n- 权限、审批、日志、观测等治理能力有稳定插入点\n\n代表方向包括：\n\n- **Anthropic Managed Agents**：定义运行时架构\n- **Vercel Open Agents**：提供云端参考实现\n- **Cube Sandbox / E2B**：提供安全执行基础设施\n\n---\n\n## 二、Session 不等于 Context Window\n\n文章强调，真正生产级 Agent 面对的不是几十轮对话，而是持续数小时、数天甚至更久的工作。\n\n所以，**上下文窗口只能承载短期推理，不能承载长期记忆和工作状态。**\n\n生产级 Agent 需要的是 durable session，也就是可持久化、可恢复、可追踪的工作会话，包含：\n\n- Run / Event Log\n- Resume / Replay\n- Approval / Policy\n- Handoff\n- Sandbox 状态\n- 跨模型、跨入口协作能力\n\n这意味着未来的 Agent Router 不再只是转发 message，而是要管理更复杂的系统对象：`session`、`run`、`event`、`approval`、`handoff`等。\n\n---\n\n## 三、Control Plane 和 Data Plane 会彻底分层\n\n过去大家容易把 Agent 看成 “模型 + 工具调用” 的单体程序。\n\n但未来更合理的架构是：\n\n### Control Plane：控制平面\n\n负责：\n\n- 理解目标\n- 拆解任务\n- 规划步骤\n- 调度工具\n- 权限治理\n- 失败恢复\n\n### Data Plane：数据平面\n\n负责：\n\n- 执行命令\n- 管理文件系统\n- 浏览器操作\n- 网络访问\n- 端口暴露\n- 快照恢复\n\n这种分层会让系统更稳定：模型升级、Sandbox 替换、Session 恢复、Agent Loop 优化都可以相对独立演进。\n\n谁能先把这两层拆清楚，谁就更容易做出真正可靠的**Agent-as-Worker**产品。\n\n---\n\n## 四、Agent 成为一等公民后，产品形态开始分化\n\n当 Agent 不再只是聊天助手，而是数字员工，产品形态会出现不同路线。\n\n### 路线一：面向开发者和工程场景\n\n这类产品默认用户理解代码、仓库、CLI、Runtime、日志、工程流。\n\n典型形态更像：\n\n- GitHub Issue\n- 看板\n- Workflow\n- Daemon\n- 多 Agent 协作任务流\n\n例如**Multica**：不是让用户和助手聊天，而是启动后台进程，通过看板分配任务。\n\n### 路线二：面向普通用户和组织场景\n\n这类产品隐藏基础设施复杂度，让用户感觉像是在 “雇佣一个人”。\n\n例如：\n\n- **Slock**：把 Agent 放进 IM、Channel、DM、任务上下文中\n- **wanman**：用 CEO、Marketing 等组织角色包装多 Agent 系统，让普通用户理解 “数字公司” 的协作方式\n\n这类产品的重点不是展示 Runtime，而是构建用户熟悉的组织叙事。\n\n---\n\n## 五、组织 Agent 没有唯一答案\n\n作者认为，“如何组织 Agent” 不会有标准答案。\n\n因为不同协作工具本身就有不同组织范式：\n\n- 飞书\n- 微信\n- GitHub\n- Slack\n- Discord\n- Telegram\n- 邮件\n\n同时，5 个 Agent、50 个 Agent、500 个 Agent 的组织方式也完全不同。\n\n但无论产品表层怎么变化，底层技术前提正在趋同：\n\n- Durable Session\n- Hosted Control Plane\n- Agent-Sandbox Separation\n- Policy\n- Observability\n\n---\n\n## 总结\n\nAgent 足够强之后，竞争焦点会从 “单个模型能力” 转向 “系统组织能力”。\n\n未来真正重要的是：  \n**能否把 Agent 当作长期运行、可治理、可协作、可交接的数字劳动单元来设计。**\n\n这要求产品和技术同时完成一次升级：  \n从 “聊天助手” 走向 “数字员工”，从 “模型调用” 走向 “Agent 操作系统”。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1777276959715,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ad20e6d0e87a92b5376a6c1b4024372c2b34c5571fa3cd5b1155629dde2a5a94",
+  "refs": {
+    "sessionId": "1777276959728_ld22smdu"
+  },
+  "revisionId": "sha256:cb3baa2f2f7fce8ca7e531192277d22d978942c7fb673d134004aa4dd86c788c",
+  "schemaVersion": 1,
+  "updatedAt": 1777276959715
+}

@@ -1,0 +1,83 @@
+{
+  "createdAt": 1775547729613,
+  "entityType": "session",
+  "id": "1775547729613_8kqhz462",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审视当前项目中散落在聊天、文档和个人记忆中的知识，优先迁移到仓库内可版本化文档",
+      "为代码库建立最小化 AGENTS.md 入口和分层文档索引，避免把规则堆成超长提示词",
+      "补充可被智能体利用的 lint、结构测试和 CI 规则，把审查意见逐步转成机器可执行约束",
+      "为本地开发环境增加可观测性、UI 驱动和隔离运行能力，增强智能体自验证闭环",
+      "建立定期扫描坏模式和自动提交重构 PR 的清理流程，降低 AI 生成代码的长期漂移风险"
+    ],
+    "archiveReason": "文章提供了智能体优先软件工程的系统性框架，包含组织知识、约束架构、反馈回路和熵治理等高复用方法，适合作为后续搭建AI开发流程的参考。",
+    "classifiedAt": 1775559139365,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 9,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "智能体优先工程范式解析",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "AGENTS.md 应作为目录页而非百科全书，采用渐进式披露来节省上下文资源",
+      "通过自定义 linter、结构测试和 CI 机械化执行架构不变量，比口头规范更适合智能体协作",
+      "优化目标应从人类可读扩展为智能体可读，让日志、UI、指标和文档都能被模型直接推理",
+      "智能体会复制已有好坏模式，因此需要黄金规则和持续垃圾回收机制抑制代码库熵增",
+      "高吞吐智能体开发下应重新思考合并门控，降低等待成本并依赖快速纠错和自动化背压机制"
+    ],
+    "oneHighValuePoint": "最有价值的是“仓库即记录系统”的原则：凡是不以版本化工件进入代码仓库的知识，对智能体都等于不存在。",
+    "oneLineReview": "这是一篇少见地把“AI写代码”上升为完整工程系统设计的方法论文章，参考价值高于一般效率宣传稿。",
+    "primaryCategory": "AI工程方法论",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "软件工程",
+      "开发效率",
+      "智能体协作"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://openai.com/zh-Hans-CN/index/harness-engineering/",
+      "https://github.com/deusyu/harness-engineering/blob/main/concepts/00-overview.md",
+      "https://github.com/deusyu/harness-engineering/blob/main/concepts/01-repo-as-source-of-truth.md",
+      "https://github.com/deusyu/harness-engineering/blob/main/concepts/02-mechanical-enforcement.md",
+      "https://github.com/deusyu/harness-engineering/blob/main/concepts/04-agent-readability.md",
+      "https://github.com/deusyu/harness-engineering/blob/main/concepts/05-throughput-changes-merge.md",
+      "https://github.com/deusyu/harness-engineering/blob/main/concepts/03-entropy-and-garbage-collection.md"
+    ],
+    "summaryBrief": "文章总结了OpenAI使用Codex在零手写代码前提下构建百万行代码产品的实践，核心思想是让工程师从写代码转向设计环境、定义约束、沉淀知识和搭建反馈回路，以提升智能体开发的可靠性与吞吐量。",
+    "tags": [
+      "Codex",
+      "Harness Engineering",
+      "Agentic Coding",
+      "代码仓库治理",
+      "工程范式"
+    ],
+    "title": "Harness工程重塑软件开发范式",
+    "totalScore": 78.5,
+    "url": "omnisun://digest/1775547729613"
+  },
+  "payloadHash": "sha256:7d1375f269eea934d537fe1b1392d0998081b7394f96af62f739dc3c5d1a33ab",
+  "refs": {},
+  "revisionId": "sha256:84ede86b3401d21041533a59445c729d29e15e452af3856b1fd0ac1e95c9785b",
+  "schemaVersion": 1,
+  "updatedAt": 1775559369471
+}

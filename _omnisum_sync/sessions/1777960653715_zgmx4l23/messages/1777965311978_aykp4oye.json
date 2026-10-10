@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777965277217,
+  "entityType": "message",
+  "id": "1777965311978_aykp4oye",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n作者分享了自己解决 **Codex 最新版变卡** 的方法：通过一个名为 **keep-codex-fast** 的工具/经验总结，把清理 Codex 本地状态的流程做成可复用的“技能”，让 AI agent 定期检查和维护，从而提升运行流畅度。\n\n---\n\n## 1. 问题背景：Codex 使用变卡\n\n- 作者此前遇到的问题是：  \n  - Codex 最新版明显变卡；\n  - 切换任务时会卡顿；\n  - 上传图片时 loading 很久；\n  - 同时运行的任务并不多，只有一两个；\n  - 内存占用看起来也不高。\n\n- 作者怀疑可能与 **项目开得太多** 或 **本地状态积累过多** 有关。\n\n---\n\n## 2. 解决思路：清理 Codex 本地状态\n\n作者看到评论区推荐的一篇文章，并将其中经验总结成一个可执行的 skill：\n\n> 核心思想是：先检查占用空间，再清理或归档过大的、不常用的内容。\n\n主要操作包括：\n\n- **检查占用空间**  \n  找出 Codex 本地哪些文件、线程、日志或工作区占用了大量空间。\n\n- **归档超大的不用 thread**  \n  对体积很大、但暂时不用的会话线程进行归档，减少当前活跃数据负担。\n\n- **移动旧 worktrees 到 archive**  \n  将旧的、不再频繁使用的工作树移动到归档目录。\n\n- **归档过大的日志文件**  \n  避免日志长期累积导致本地状态膨胀。\n\n---\n\n## 3. 自动化维护：做成定时任务\n\n作者认为，这些检查和清理动作可以进一步自动化：\n\n- 将空间检查、线程归档、worktree 迁移、日志归档等流程做成 **定时任务**；\n- 定期检查 Codex 本地状态；\n- 让 AI agent 自动给出维护建议，甚至协助执行安全清理。\n\n示例指令：\n\n```text\nUse $keep-codex-fast to inspect my Codex local state and recommend a safe maintenance plan.\n```\n\n意思是：  \n让 `$keep-codex-fast` 检查当前 Codex 本地状态，并推荐一个安全的维护计划。\n\n---\n\n## 4. 重要资源与案例\n\n作者推荐的项目是：\n\n- GitHub 项目：  \n  [https://github.com/vibeforge1111/keep-codex-fast](https://github.com/vibeforge1111/keep-codex-fast)\n\n该项目把“保持 Codex 快速运行”的经验整理成可复用的技能，适合遇到类似卡顿问题的用户参考。\n\n---\n\n## 总结\n\n这篇内容的重点是：**Codex 卡顿不一定是内存问题，也可能是本地线程、worktrees、日志等状态数据积累过多导致的。**  \n通过定期检查空间占用、归档旧数据和大文件，并让 AI agent 自动维护，可以有效改善 Codex 的运行体验。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1777965277217,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2bfe0fb50533b0bda73bf369a86c9ee4983af9065f48fe6de176c2b431dc6eb4",
+  "refs": {
+    "sessionId": "1777960653715_zgmx4l23"
+  },
+  "revisionId": "sha256:0a65b492b196528397acd9154cdd7ba4e3d3e97aaa118a9a764fd11a0f589263",
+  "schemaVersion": 1,
+  "updatedAt": 1777965277217
+}

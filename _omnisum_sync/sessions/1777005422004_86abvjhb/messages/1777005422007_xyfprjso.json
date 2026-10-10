@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777005174647,
+  "entityType": "message",
+  "id": "1777005422007_xyfprjso",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Agent Vault：给 AI Agent 上“保险箱”的开源方案\n\n## 一句话总结\nAgent Vault 的核心理念是：**不要把真实密钥直接交给 Agent**，而是通过一个中间代理层代为保管和注入凭证，让 Agent 能访问外部服务，但看不到底层密钥。\n\n## 背景问题：传统密钥管理不适合 Agent\n过去的密钥管理方式，默认程序是可预测、可控制的，因此可以直接把密钥发给应用使用。  \n但 AI Agent 不一样：它具有**非确定性、易受提示注入操控**的特点，一旦被诱导，就可能主动泄露环境中的密钥，进而带来数据泄露和账号滥用风险。\n\n## 现有方案：能缓解，但治标不治本\n很多团队会采用短期凭证、自动轮换、动态密钥等办法，降低密钥泄露后的危害。  \n这些方法虽然有用，但本质上仍然默认 Agent “拿到过密钥”，所以问题没有真正解决，只是把风险窗口缩短了。\n\n## Agent Vault 的解法：让 Agent 永远接触不到密钥\nAgent Vault 是一个开源的 HTTP 凭证代理和密钥库。  \n它的思路是：**由 Agent Vault 替 Agent 持有密钥**，当 Agent 发出请求时，Agent Vault 在请求转发过程中自动附加认证信息。这样 Agent 本身无需知道密钥内容，也无法直接读取。\n\n## 工作机制：在 HTTPS 层统一代理\nAgent Vault 部署在 Agent 附近，通常通过 `HTTPS_PROXY` 接管所有出站请求。  \n无论 Agent 是通过 API、CLI、SDK 还是 MCP 调用外部服务，最终都会变成 HTTPS 请求。Agent Vault 就在这一层拦截请求、匹配目标服务、注入正确凭证，再把请求转发出去。\n\n## 为什么它重要\n这种方式的价值在于，它把“密钥安全”从具体工具和接口中抽离出来，变成一个统一的基础设施能力。  \n好处包括：\n- Agent 不直接持有密钥，显著降低泄露风险\n- 不依赖特定接口，适配 API、CLI、SDK、MCP 等多种场景\n- 更容易统一做白名单、审计、限流和访问控制\n\n## 文章的核心判断\n作者认为，**“凭证代理（credential brokering）”会成为 Agent 时代密钥管理的主流方向**。  \n这代表一种重要转变：从“把密钥发给工作负载”，转向“让工作负载通过受控代理使用密钥”。\n\n## 当前局限\nAgent Vault 仍处于研究预览阶段，还不够成熟。  \n它也并非适用于所有场景，例如某些环境不会遵守 `HTTPS_PROXY`，某些供应商 SDK 还会做 TLS 证书固定，这都会影响其通用性。\n\n## 结论\nAgent Vault 的意义不只是一个开源工具，而是提出了一种更适合 AI Agent 的安全架构：  \n**Agent 负责调用，代理层负责持钥和注入。**  \n这让 Agent 能继续“做事”，但不再轻易成为密钥泄露的入口。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777005174647,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d51704cbd4ac95bdbe3eda3f7cbd9462b6ed307a40a3361cdb61a12da10c5255",
+  "refs": {
+    "sessionId": "1777005422004_86abvjhb"
+  },
+  "revisionId": "sha256:e5b2a4077c69572e94634044722ed4ada74e7e689f3d5433ab82f1877135d9ad",
+  "schemaVersion": 1,
+  "updatedAt": 1777005174647
+}

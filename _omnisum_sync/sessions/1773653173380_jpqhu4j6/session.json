@@ -1,0 +1,69 @@
+{
+  "createdAt": 1773653173380,
+  "entityType": "session",
+  "id": "1773653173380_jpqhu4j6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估你的智能体后端是否应从工具堆叠切换为受控终端模型",
+      "为沙箱设计四层防御：运行时隔离、出口代理、资源限制、文件系统挂载策略",
+      "实现一个最小版 process_api，验证 SSE 流式执行与会话级容器管理",
+      "梳理业务所需外部域名清单，尝试用 JWT 白名单代理替代完全禁网策略"
+    ],
+    "archiveReason": "对智能体执行环境、安全隔离、网络控制和容器生命周期设计提供了可复用的工程方案与实现细节。",
+    "classifiedAt": 1773829527129,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude沙箱逆向与复刻",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "michaellivs.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "gVisor 适合作为不可信代码执行的主要隔离边界，运维复杂度低于 Firecracker",
+      "会话级容器比逐命令容器更适合智能体场景，可将冷启动隐藏在推理延迟之后",
+      "通过自定义 PID 1 进程统一处理命令执行、资源限制和 SSE 输出流是可复用模式",
+      "基于 JWT 白名单的 HTTP CONNECT 出口代理能细粒度控制网络访问"
+    ],
+    "oneHighValuePoint": "最有价值的点是将“禁网”改为“受控联网”，通过 JWT 编码白名单的出口代理解决依赖安装与数据外泄之间的平衡问题。",
+    "oneLineReview": "这是一篇兼顾逆向观察与工程落地的高质量实践文，尤其适合做智能体执行环境的系统设计参考。",
+    "primaryCategory": "AI智能体基础设施",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "沙箱安全架构",
+      "容器与系统设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章先通过在 Claude 内部探测运行环境，推断其使用 gVisor、出口代理和自定义 PID 1 进程，再给出作者自建沙箱的镜像、会话生命周期、JWT 白名单代理和流式执行方案，兼具观察、架构决策与代码实现。",
+    "tags": [
+      "Claude",
+      "gVisor",
+      "Sandbox",
+      "Agent",
+      "Egress Proxy"
+    ],
+    "title": "Reverse-engineering Claude's sandbox, then building my own",
+    "totalScore": 74,
+    "url": "https://michaellivs.com/blog/sandboxed-execution-environment"
+  },
+  "payloadHash": "sha256:35bd58d63cc0d13f3a3f7dc9e5bb065813062d371671c015c294d01b522bd3e3",
+  "refs": {},
+  "revisionId": "sha256:db3a7848d6070851c645c4ff4820a15c37bafd698d8c84818ad187d7a6d7dd8b",
+  "schemaVersion": 1,
+  "updatedAt": 1773829527131
+}

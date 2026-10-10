@@ -1,0 +1,68 @@
+{
+  "createdAt": 1774592548482,
+  "entityType": "session",
+  "id": "1774592548482_ejkgc04t",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估现有工作流中是否存在适合用多智能体角色分工替代的重复性任务",
+      "尝试为自己的AI工作流设计最小化的CEO-工程师-QA协作框架",
+      "在实践中重点验证记忆机制、审批规则和并发配置对结果质量的影响"
+    ],
+    "archiveReason": "包含AI公司编排、角色设计、记忆与心跳机制等值得后续参考的产品思路",
+    "classifiedAt": 1774606190959,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "Paperclip零人类公司解析",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "aistudio.google.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "AI智能体可通过组织结构、角色分工和审批流进行编排管理",
+      "“心跳”机制用于让智能体在每次运行时重建上下文与行动顺序",
+      "技能库与可导入公司架构能提升智能体团队的复用性与扩展性",
+      "本地运行、预算跟踪和单任务执行是当前智能体管理的重要工程约束"
+    ],
+    "oneHighValuePoint": "把管理 AI 从“管具体任务”提升到“管组织目标、角色分工和审批机制”的视角转换最有价值。",
+    "oneLineReview": "概念新、演示强，但更像前沿产品宣讲而非经充分验证的方法论文档。",
+    "primaryCategory": "AI智能体协作与编排",
+    "rating": "B",
+    "rejectReason": "证据主要来自创始人口述与演示，缺少独立数据、失败案例和可验证效果，因此不宜高估",
+    "retentionDecision": "短期参考后可保留，适合作为了解AI智能体组织化管理的案例材料",
+    "secondaryCategories": [
+      "AI创业工具",
+      "工作流自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕 Paperclip 这一“零人类公司”编排工具展开，介绍了如何通过 CEO、工程师、QA 等 AI 智能体构建组织，重点讲解了任务流、心跳机制、记忆系统、技能安装和公司架构导入等概念。内容具启发性，但验证性与证据支撑较弱。",
+    "tags": [
+      "Paperclip",
+      "AI Agents",
+      "零人类公司",
+      "智能体编排",
+      "AI创业"
+    ],
+    "title": "Paperclip：零人类公司 AI | Google AI Studio",
+    "totalScore": 58.5,
+    "url": "https://aistudio.google.com/app/u/1/prompts/1DMUd0xNuIKohLdVtOP-PQfc8B8JgAPkf"
+  },
+  "payloadHash": "sha256:4df1ec411ae9b0554a22fadd51e31a52b412315d23d8b06dc38ea8bb9452282f",
+  "refs": {},
+  "revisionId": "sha256:cc3c199d571da1030f0f1b018a3e033182da4351aa8e6fb4d56036c96bca3b91",
+  "schemaVersion": 1,
+  "updatedAt": 1774606190964
+}

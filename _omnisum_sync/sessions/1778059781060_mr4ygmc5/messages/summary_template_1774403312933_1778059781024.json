@@ -1,0 +1,23 @@
+{
+  "createdAt": 1778059781024,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1778059781024",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Claude Design 发布：用对话生成原型、幻灯片和单页文档\n\n## 一句话总结\n\nAnthropic 推出**Claude Design**：用户只需和 Claude 对话，就能生成并迭代设计原型、PPT、单页文档等视觉内容，面向产品、设计、营销和业务团队提升创作效率。\n\n## 核心功能\n\n### 1. 对话生成设计初稿\n\n用户描述想要的内容，Claude 会自动生成第一个版本，例如：\n\n- 产品原型\n- 演示幻灯片\n- 一页式文档\n- 可视化页面或交互设计\n\n这降低了从 “想法” 到 “可视化表达” 的门槛。\n\n### 2. 多种方式继续优化\n\n生成后可以通过多种方式迭代：\n\n- 继续对话修改\n- 内联评论\n- 直接编辑\n- 使用自定义滑块调整视觉参数\n\n这让 Claude Design 不只是 “生成工具”，更像一个可协作的设计助理。\n\n### 3. 读取代码库和设计文件\n\nClaude 可以理解团队现有的：\n\n- 代码库\n- 设计文件\n- 品牌规范\n- 设计系统\n\n并自动应用到新项目中，确保输出符合团队品牌和产品风格。\n\n## 产品定位\n\n### 面向非专业设计师的设计生产力工具\n\nClaude Design 主要解决的是：  \n**让产品经理、创业者、运营、销售、管理者快速把想法变成可展示、可讨论、可交付的视觉资产。**\n\n它不是单纯替代 Figma 或 Canva，而是把 AI 对话能力接入设计流程，让设计从 “手工操作” 变成 “意图驱动”。\n\n## 输出与协作\n\n### 支持导出和交接\n\n生成内容可以导出到：\n\n- Canva\n- PDF\n- PPTX\n\n如果设计内容适合工程实现，也可以交接给**Claude Code**，进一步推进到开发阶段。\n\n这意味着 Anthropic 正在打通从 “创意 → 设计 → 开发” 的工作流。\n\n## 技术基础与开放范围\n\n### 由 Claude Opus 4.7 驱动\n\nClaude Design 由 Anthropic 当前最强视觉模型**Claude Opus 4.7**支持。\n\n目前以**研究预览版**形式开放，适用于：\n\n- Pro\n- Max\n- Team\n- Enterprise\n\n## 行业意义\n\n### AI 正在进入设计生产核心流程\n\nClaude Design 代表了一个趋势：  \nAI 不再只是辅助写文案、生成图片，而是开始承担产品原型、视觉表达、品牌一致性和交付衔接等更核心的创作流程。\n\n对产品团队来说，它可能显著缩短：\n\n- 需求表达时间\n- 原型制作时间\n- 方案沟通成本\n- 跨职能协作周期\n\n## 社区反馈\n\n### 兴奋与焦虑并存\n\n热门回复中有人调侃：  \n大家在庆祝新功能的同时，也意识到这类工具未来可能会重塑甚至替代部分设计岗位。\n\n这反映出市场对 AI 设计工具的双重情绪：\n\n- 一方面期待效率提升\n- 另一方面担忧职业替代\n\n## 总结判断\n\nClaude Design 是 Anthropic 向 “AI 原生工作流平台” 迈出的重要一步。  \n它把 Claude 从聊天助手进一步扩展为**可生成、可编辑、可交付的设计协作工具**。\n\n对产品经理而言，最值得关注的是：  \n**未来表达产品想法的方式，可能不再是写 PRD 或画线框图，而是直接用自然语言驱动 AI 生成可讨论的产品方案。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1778059781024,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:23f1c8cecc13168ba4fd6e9097c5e5a9a61be7d2a8251821fa2caece0a92fb9a",
+  "refs": {
+    "sessionId": "1778059781060_mr4ygmc5"
+  },
+  "revisionId": "sha256:19ee9a886dcd60857f3f76d3096380ef5779127a48ad894b77e4c9e386893302",
+  "schemaVersion": 1,
+  "updatedAt": 1778059781024
+}

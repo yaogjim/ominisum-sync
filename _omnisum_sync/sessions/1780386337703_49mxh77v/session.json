@@ -1,0 +1,65 @@
+{
+  "createdAt": 1780386337703,
+  "entityType": "session",
+  "id": "1780386337703_49mxh77v",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估现有业务流程中哪些节点适合 Agent 介入，如审核、分诊、匹配、初稿生成等。",
+      "避免从零自研通用 Agent Harness，优先基于成熟平台构建垂直场景解决方案。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780386807288,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent赛道的应用机会",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "MCP主要解决连接问题，Skills主要解决领域知识问题，但真实业务落地还需要工作流、交互和数据层面的重构。",
+      "垂直 Agent 的机会不在复制旧流程，而在寻找人类反复判断、规则不完全固定的业务节点。"
+    ],
+    "oneHighValuePoint": "不要与模型公司竞争基础设施，而应在其提供的模型与 Harness 之上构建垂直业务应用和工作流。",
+    "oneLineReview": "观点方向有参考价值，但更像行业判断碎片，证据和方法展开不足。",
+    "primaryCategory": "AI应用与产品策略",
+    "rating": "B",
+    "rejectReason": "内容以观点判断为主，篇幅较短，缺少系统论证和可靠案例支撑。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent",
+      "垂直行业应用"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为继续做通用 Agent Harness 价值有限，难以与模型公司竞争；更有机会的是基于成熟 Harness，在垂直领域重构 AI Native 工作流、设计人机协同交互、整理高质量数据，并解决真实业务落地问题。",
+    "tags": [
+      "Agent Harness",
+      "AI Native工作流",
+      "垂直领域",
+      "Human in Loop",
+      "AI应用层"
+    ],
+    "title": "宝玉: 去做一个 Agent Harness 这种事情价值不大了，怎么做也做不过模型公司，模型一升级好多活都白干了",
+    "totalScore": 56.5,
+    "url": "https://x.com/dotey/status/2058929615058477106"
+  },
+  "payloadHash": "sha256:f112e4194cbb83d6463748cc2a3d916ac5c61d28e6a2c7636591155c35c74dae",
+  "refs": {},
+  "revisionId": "sha256:47cbad217a0d5a1953508e068601d584eb1dd5469af07d318f3219c2e9d51edf",
+  "schemaVersion": 1,
+  "updatedAt": 1780387462882
+}

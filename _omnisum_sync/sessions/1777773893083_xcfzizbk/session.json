@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777773893083,
+  "entityType": "session",
+  "id": "1777773893083_xcfzizbk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需研究该案，应查阅法院公开文件和原始证据，而非仅依赖推文转述。",
+      "若仅关注AI行业舆论，可速览后删除。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777774045409,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "马斯克诉OpenAI邮件证据",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息碎片化且带有明显情绪化表述，证据链不完整，评论区噪音较多，不适合作为长期参考资料。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "马斯克与OpenAI的争议涉及早期非营利承诺、资金投入和后续商业化转型。",
+      "文章提到2017年邮件和Greg Brockman日记可能成为诉讼中的证据材料。"
+    ],
+    "oneHighValuePoint": "OpenAI早期非营利承诺与后续商业化转型之间的潜在矛盾，是理解该诉讼的核心争议之一。",
+    "oneLineReview": "适合快速了解舆论焦点，但不具备严肃研究或决策参考价值。",
+    "primaryCategory": "AI行业动态",
+    "rating": "D",
+    "rejectReason": "内容主要是社交媒体转述和立场判断，缺乏完整原始材料、法律背景和系统分析，实用价值较低。",
+    "retentionDecision": "短期了解舆论后可删除",
+    "secondaryCategories": [
+      "法律诉讼",
+      "公司治理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章转述马斯克与OpenAI诉讼中的邮件和日记材料，认为证据更支持马斯克一方，指向OpenAI早期非营利承诺与后续商业化之间的冲突。",
+    "tags": [
+      "OpenAI",
+      "马斯克",
+      "Sam Altman",
+      "AI治理",
+      "诉讼"
+    ],
+    "title": "AB Kuai.Dong: 这场马斯克与 OpenAI 的撕逼中，证据则是支持了马斯克一方",
+    "totalScore": 28,
+    "url": "https://x.com/_FORAB/status/2049330988543840671"
+  },
+  "payloadHash": "sha256:6c4299b985c3ba73d4f7e8edce12707b16fac7f573da687fd60f17ec830352df",
+  "refs": {},
+  "revisionId": "sha256:e74633bcbc42fc92ada6da0d1a31629e4bef8834ca372df89587277fb6d0febf",
+  "schemaVersion": 1,
+  "updatedAt": 1777774330907
+}

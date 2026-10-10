@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777543521842,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1777543521842",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 信息焦虑的解法：把信息流变成可执行清单\n\n## 核心观点\n\n作者 Leo 分享了一个个人信息处理工作流：  \n通过 Claude Code 和自定义 skills，把每天来自 X、KOL、GitHub、TG、PM 平台、AI 行业等外部信息，整理成明确的行动清单，从而缓解信息过载带来的焦虑。\n\n本质上，这不是减少信息，而是把信息 “结构化、决策化、行动化”。\n\n---\n\n## 之前的问题：信息太多，但无法决策\n\n在没有工作流之前，作者每天打开 X 就会焦虑：\n\n- 爆款内容看不完\n- KOL 推文跟不上\n- 产品管理平台持续更新\n- 不知道哪些内容该跟进\n- 不知道哪些信息值得投入时间\n\n真正造成焦虑的不是信息量本身，而是每条信息都悬而未决。\n\n---\n\n## 现在的方案：每天 30 分钟跑工作流\n\n作者每天运行两个 Claude Code skill：\n\n### `/today`：看内部状态\n\n用于梳理自己的：\n\n- 当前策略\n- 在途任务\n- 本周目标\n- backlog 和优先级\n\n### `/morning`：扫外部信息\n\n用于扫描外部信息源，包括：\n\n- KOL 爆款内容\n- GitHub Trending\n- Telegram 频道\n- PM 平台变化\n- AI 行业动态\n- 私聊信息\n- 深度文章\n\n最终输出一份当天信息清单。\n\n---\n\n## 关键价值：每条信息都有动作\n\n工作流会把当天信息拆成明确动作，例如：\n\n- 写推文\n- 评估是否安装 / 使用\n- 扫一眼后跳过\n- 分享给付费读者\n- 放入 backlog\n- 推迟到周日处理\n\n这让作者从 “我还有很多没看” 转变为 “每条信息我都知道怎么处理”。\n\n---\n\n## 情绪变化：焦虑消失的原因\n\n作者强调，焦虑消失并不是因为信息变少了，而是因为信息被安排好了。\n\n核心变化是：\n\n> 信息从开放状态，变成了已决策状态。\n\n对偏理性、结构化思维的人来说，这种状态会带来很强的掌控感。\n\n---\n\n## 延伸发现：AI Skill 的描述方式很重要\n\n热门回复中，作者提到自己发现大量 Claude Code skill 其实 “装废了”。\n\n原因是 skill 的 description 如果只是写：\n\n> 用于某某 workflow\n\nAI 主线程并不知道什么时候该调用它。\n\n更好的写法应该是：\n\n- Use when：什么时候使用\n- NOT when：什么时候不要使用\n\n这说明 AI 工具配置的关键，不只是功能本身，而是触发条件是否清晰。\n\n---\n\n## 产品与 AI 启发\n\n### 1. 信息产品的价值不只是聚合\n\n真正有价值的是帮用户完成：\n\n- 筛选\n- 判断\n- 排期\n- 行动建议\n\n也就是从 “内容流” 升级为 “决策流”。\n\n### 2. AI 工作流的核心是降低认知负担\n\n好的 AI agent /workflow 不只是回答问题，而是帮用户减少未决事项，形成可执行计划。\n\n### 3. Prompt / Skill 设计要面向触发场景\n\nAI 工具不是 “有功能就会被用”，必须告诉 AI：\n\n- 什么场景调用\n- 什么场景不调用\n- 输入是什么\n- 输出应该是什么\n\n---\n\n## 一句话总结\n\nLeo 的方法本质上是用 AI 把混乱的信息流转化为可执行任务流：不是让世界变安静，而是让每条信息都有归宿。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1777543521842,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:fe3f1ef1614713da1863d7d4449c4f6bcb0c0c830e01cdd0f02c5435e6ce23be",
+  "refs": {
+    "sessionId": "1777543521862_6zj4ybyh"
+  },
+  "revisionId": "sha256:4d8694fc469c429d45186aa3aa8954340f4f0ebebd7507a2f930add9924f01b9",
+  "schemaVersion": 1,
+  "updatedAt": 1777543521842
+}

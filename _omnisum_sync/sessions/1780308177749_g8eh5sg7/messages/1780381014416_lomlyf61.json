@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780381014417,
+  "entityType": "message",
+  "id": "1780381014416_lomlyf61",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: pi接入Cursor模型扩展文档\n\n**评级**: B (62.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI编程工具\n**次类别**: 开发工具集成, 技术文档\n**标签**: #pi-cursor-sdk #Cursor SDK #AI Coding Agent #MCP #模型集成\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 高密度但高度特定的工具 README，适合相关用户查阅，不具备广泛方法论价值。\n**核心高价值点**: 详细说明了如何通过本地 Cursor SDK 代理在 pi 中使用 Cursor 模型，并保留 pi 的模型选择、思考控制和 MCP 工具桥接能力。\n\n### 摘要\n该文档介绍 pi-cursor-sdk 的安装、认证、模型发现、思考控制、快速/计划模式、图片输入、MCP 工具桥接、测试发布闸口、限制与故障排查，属于较完整的扩展使用与维护说明。\n\n### 知识要点\n- pi-cursor-sdk 可通过本地 @cursor/sdk 代理让 pi 使用 Cursor 模型，并支持 /login、/model、/cursor-refresh-models 等操作。\n- 扩展支持 Cursor fast/plan 模式、思考参数映射、图片输入、本地 MCP 工具桥接和模型目录缓存。\n- Cursor API 密钥需要通过 pi 的认证机制、环境变量或 --api-key 显式配置，不能复用 Cursor 桌面或 CLI 登录状态。\n- MCP 桥接默认隐藏与 Cursor 原生工具重叠的 pi 工具，可通过环境变量启用、禁用或调整超时。\n- 文档包含较多维护者测试、调试、发布冒烟测试和故障排查流程。\n\n### 行动项\n- 如需在 pi 中调用 Cursor 模型，按 Quick start 安装 pi-cursor-sdk 并配置 Cursor SDK API Key。\n- 使用 pi --list-models cursor 检查模型目录，必要时运行 /cursor-refresh-models 刷新。\n- 根据需要设置 --cursor-fast、--cursor-no-fast、--cursor-mode plan 或 --thinking 控制运行模式。\n- 若遇到 MCP 或工具桥接问题，检查 PI_CURSOR_SETTING_SOURCES、PI_CURSOR_PI_TOOL_BRIDGE 和相关超时环境变量。\n\n### 存档判定\n归档: 是 — 原因: 如果正在使用 pi、Cursor SDK 或研究 AI 编程代理工具集成，可作为安装、配置和排障参考文档归档。\n删除: 否\n留存决策: 短期参考后可按需保留",
+    "role": "assistant",
+    "timestamp": 1780381014417,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:a0d45be7348011a0da8a469edc02ed8aba7bd33cc60ab19775757f668a5f6c29",
+  "refs": {
+    "sessionId": "1780308177749_g8eh5sg7"
+  },
+  "revisionId": "sha256:990c583730751a7e0e7586789a4aaef72b9e71b4cda8c987eb46e98d03e4fd68",
+  "schemaVersion": 1,
+  "updatedAt": 1780381014417
+}

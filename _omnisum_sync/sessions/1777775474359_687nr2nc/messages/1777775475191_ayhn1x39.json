@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777775254467,
+  "entityType": "message",
+  "id": "1777775475191_ayhn1x39",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 认识 Scout：开源公司的“大脑”\n\n## 一句话总结\n\nScout 是一个开源的“上下文代理”，试图把 Slack、Google Drive、CRM、知识库等分散信息连接起来，让 AI 能像员工一样理解公司、追踪事项、沉淀知识，并进一步演化为企业 AI 操作系统。\n\n## 核心观点：公司需要“活的大脑”\n\n文章认为，未来每家公司都需要一个“公司大脑”：\n\n- 把分散在 Slack、邮件、文档、工单、数据库里的知识连接起来；\n- 让 AI 能理解公司的背景、决策、流程和客户关系；\n- 不只是搜索信息，而是能持续学习、更新、执行和跟进。\n\n但作者反对传统做法：把所有数据丢进向量数据库，再靠搜索召回。因为索引容易过期、分块不准确、权限复杂、信息源遗漏严重。\n\n## Scout 的关键理念：导航优于搜索\n\nScout 的核心设计是“导航优于搜索”。\n\n传统 AI 知识库通常依赖：\n\n- 数据导入；\n- 分块；\n- 向量化；\n- top-k 检索。\n\nScout 更像程序员读代码：\n\n- 先看有哪些信息源；\n- 再进入 Slack、Drive、CRM 等具体系统；\n- 按路径、线程、文档逐步查找；\n- 获取实时、可验证、可追溯的信息。\n\n好处是：\n\n- 信息更实时；\n- 引用更真实；\n- 权限由原系统控制；\n- 不依赖过期索引。\n\n代价是：每次查询需要更多 LLM 调用，成本和延迟更高。\n\n## 关键架构：Context Providers\n\nScout 在主 Agent 和各种工具之间加了一层：Context Providers。\n\n每个信息源，比如 Slack、Google Drive、CRM，都被封装成一个上下文提供者，只暴露简单接口：\n\n- `query_slack`\n- `update_slack`\n- `query_gdrive`\n- `query_crm`\n- `update_crm`\n- `query_knowledge`\n- `update_knowledge`\n\n这样做的价值是：\n\n1. **减少上下文污染**  \n   主 Agent 不需要理解 Slack、Drive 等复杂工具细节。\n\n2. **降低工具复杂度**  \n   Slack 的分页、线程、用户查询等特殊逻辑由子 Agent 处理。\n\n3. **增强扩展性**  \n   新增工具不会显著破坏主 Agent 的稳定性。\n\n作者认为，这比单纯给 Agent 加“技能”更有效，因为技能仍然会把工具调用结果塞进主上下文，容易导致 Agent 混乱。\n\n## Scout 会自动构建公司知识库和 CRM\n\nScout 不只是查询工具，还会在工作中不断沉淀结构化知识。\n\n例如：\n\n- 有人提到“Anthropic 的 Josh 分享了一篇 RLM 论文”；\n- Scout 会把 Josh 记录进 CRM；\n- 把论文解析并写入知识库；\n- 把两者关联起来。\n\n再比如：\n\n- “v3 schema 迁移决策还没定”；\n- Scout 会记录为待跟进事项；\n- 后续可以通过定时任务主动提醒。\n\nScout 自带 CRM 表：\n\n- 联系人；\n- 项目；\n- 笔记；\n- 跟进事项。\n\n还支持按需生成新表，比如用户说“帮我追踪咖啡摄入量”，它就可以创建对应数据结构。\n\n## 从“公司大脑”到“AI 操作系统”\n\n文章把“公司大脑”和“企业 AI 操作系统”区分为两层：\n\n- **公司大脑**：数据与上下文层，负责理解公司知识；\n- **AI 操作系统**：执行与闭环层，负责基于理解做决策、执行任务、持续反馈。\n\nScout 目前更接近“公司大脑”的基础设施，但它具备向 AI 操作系统演进的潜力：\n\n- 多信息源连接；\n- 自动沉淀知识；\n- CRM 和知识库更新；\n- 定时任务；\n- Slack 交互；\n- 后续可扩展 GitHub、Gmail、Calendar 等系统。\n\n## 产品价值\n\nScout 的价值不在于做一个更好的搜索框，而在于让 AI 真正成为“懂公司的人”。\n\n它解决的是企业 AI 落地中的核心问题：\n\n- AI 不知道公司上下文；\n- 信息分散在各个系统；\n- 静态知识库很快过期；\n- Agent 工具太多后容易失控；\n- 企业需要可持续更新的知识与执行闭环。\n\n## 总结\n\nScout 代表了一种新的企业 AI 基础设施思路：不是把公司数据静态索引起来，而是让 AI 通过上下文提供者实时导航各类信息源，并在过程中持续构建知识库、CRM 和待办闭环。\n\n它的本质是：让 AI 从“会搜索资料的助手”，进化为“理解公司运转方式的团队成员”。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777775254467,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0f189162329f2f3120dcfb8eb26012c2a3f8972300971328381f089a2e96ec55",
+  "refs": {
+    "sessionId": "1777775474359_687nr2nc"
+  },
+  "revisionId": "sha256:a41e1b044454cc84e031e9b3aacb14b122e2c3b9cce74c572095dc092a151b6a",
+  "schemaVersion": 1,
+  "updatedAt": 1777775254467
+}

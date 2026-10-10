@@ -1,0 +1,20 @@
+{
+  "createdAt": 1776645406515,
+  "entityType": "message",
+  "id": "1776645571368_urxuejsl",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# BlockNote：适合快速落地的 AI 富文本编辑器\n\n## 一句话总结\n\nBlockNote 是一个面向 React 的开源富文本编辑器，主打 **Notion 风格编辑体验 + 低接入门槛 + 原生 AI 集成**，很适合需要“编辑器 + AI 写作辅助”的产品团队快速上线。\n\n## 核心特点\n\n### 1. 开箱即用，集成成本低\n它基于 ProseMirror 和 Tiptap 构建，但做了更高层封装。  \n开发者用几行代码就能接入一个功能完整的编辑器，像拖拽、嵌套、斜杠菜单、格式工具栏等都默认具备，不需要自己从底层搭建。\n\n### 2. 原生支持 AI 写作能力\n通过 `@blocknote/xl-ai` 扩展，可以直接在编辑器中加入 AI 能力。  \n用户可以选中文本后让 AI 改写、续写，也可以通过 `/ai` 调用。支持接 OpenAI、Anthropic、自定义模型端点，甚至可以结合 RAG 接知识库。\n\n### 3. AI 修改过程可控\nAI 的修改不是“黑箱式覆盖”，而是对改动内容透明展示。  \n用户可以逐条接受或拒绝，这对内容生产、知识管理等场景很重要，既提升效率，也保留人工把关。\n\n## 适用场景\n\n### 1. 内容型产品\n比如 CMS、知识库、文档平台、博客后台等，需要强编辑能力的产品。\n\n### 2. AI 辅助写作产品\n如果你的产品需要“写作 + 改写 + 续写 + 知识增强”一体化体验，BlockNote 可以明显减少重复造轮子。\n\n### 3. 协作文档场景\n它支持基于 Yjs 的多人实时协作，也有导出 PDF、Word、ODT 的能力，适合正式文档和团队协作场景。\n\n## 选型判断：BlockNote vs Tiptap\n\n### 适合选 BlockNote\n如果团队目标是 **快速上线、少碰底层、优先产品交付**，BlockNote 更合适。\n\n### 适合选 Tiptap\n如果你要做的是 **高度定制化编辑器**，需要深度控制 Schema、插件和编辑行为，Tiptap 更灵活，但学习成本更高。\n\n## 需要注意的地方\n\n### 许可证差异\n核心编辑器使用 `MPL-2.0`，商业项目可自由使用。  \n但 AI 集成、多列布局、文档导出等 `xl-` 高级包使用 `GPL-3.0`，如果是闭源商业项目，通常需要购买商业许可。\n\n## 结论\n\nBlockNote 的价值不在“编辑器功能更强”，而在于它把 **编辑体验、AI 能力和产品落地效率** 打包好了。  \n如果你更关注 **更快做出可用产品**，它是一个很值得优先评估的方案。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1776645406515,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:12794aa79306147d55fedb70122c42e6b360b7c7ab7c2dddbb9c35ff033d1fd8",
+  "refs": {
+    "sessionId": "1776645571366_5lx5l4gb"
+  },
+  "revisionId": "sha256:feb60ac13d2ac7c302024d893c0499db30b5bf67dfc9156669a89c245ca1372f",
+  "schemaVersion": 1,
+  "updatedAt": 1776645406515
+}

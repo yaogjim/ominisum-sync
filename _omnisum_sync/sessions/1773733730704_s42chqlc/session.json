@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773733730704,
+  "entityType": "session",
+  "id": "1773733730704_s42chqlc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果正在使用 macOS 或 Linux，可按文中步骤安装 Ghostty 并先导入完整配置模板",
+      "根据自己的工作流重点调整字体、Tab 行为、Quick Terminal 热键和窗口恢复策略"
+    ],
+    "archiveReason": "包含可直接复用的安装命令、快捷键和完整配置模板，适合后续查阅",
+    "classifiedAt": 1773734253544,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "Ghostty终端配置上手指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Ghostty 使用纯文本 key = value 配置，并支持命令查看主题、字体和默认配置文档",
+      "Ghostty 内置分屏、Quick Terminal、窗口状态恢复等能力，可替代部分插件化终端方案"
+    ],
+    "oneHighValuePoint": "提供了一份可直接复制使用的完整 Ghostty 配置，能显著降低首次配置成本。",
+    "oneLineReview": "一篇偏实用的入门配置清单，适合快速上手，但方法深度和证据都较弱。",
+    "primaryCategory": "开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留为配置备忘",
+    "secondaryCategories": [
+      "终端效率",
+      "环境配置"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章面向初次使用 Ghostty 的开发者，介绍安装、配置文件位置、主题字体、分屏、下拉终端和窗口恢复等功能，并附一份可直接复制的完整配置。优点是实操性强，缺点是缺少性能对比和实际证据支撑。",
+    "tags": [
+      "Ghostty",
+      "终端",
+      "配置",
+      "macOS",
+      "开发效率"
+    ],
+    "title": "Ghostty 终端入门指南：安装、配置、用起来",
+    "totalScore": 59,
+    "url": "https://x.com/alin_zone/status/2033524177295274496"
+  },
+  "payloadHash": "sha256:1dfb16efa04db5104979b20a197938c8240affa1ca78ae81359841c1f5bbcf69",
+  "refs": {},
+  "revisionId": "sha256:f7ce1cba395b2048831fce010c4d4c8febc21bbaf00e367cc27f789c90a62555",
+  "schemaVersion": 1,
+  "updatedAt": 1773734517925
+}

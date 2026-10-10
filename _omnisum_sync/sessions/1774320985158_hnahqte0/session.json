@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774320985158,
+  "entityType": "session",
+  "id": "1774320985158_hnahqte0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如你在做 browser agent 或 RL benchmark，可重点阅读 pipeline 与 evaluation 目录设计",
+      "先本地启动一个预置应用并运行一次评测，验证其任务定义与 verifier 机制是否适合你的场景"
+    ],
+    "archiveReason": "包含较完整的环境生成、评测运行和云端批处理流程，后续搭建同类基准时可复用",
+    "classifiedAt": 1774321004639,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "自动生成网页任务环境框架",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "可从真实文档和工作流自动构建高拟真网页环境与难度分级任务",
+      "支持通过程序化 verifier 对浏览器智能体任务完成情况进行自动验证",
+      "提供基于 EC2 的并行生成与评测基础设施，适合大规模跑批"
+    ],
+    "oneHighValuePoint": "将代码代理与浏览器代理结合，自动生成应用、任务与程序化验证器，形成可扩展的浏览器智能体评测流水线。",
+    "oneLineReview": "方法设计值得关注，但当前更像工程说明书而非经过充分验证的研究成果。",
+    "primaryCategory": "AI智能体评测",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，适合作为浏览器智能体评测与环境生成方案参考",
+    "secondaryCategories": [
+      "浏览器自动化",
+      "基准环境生成"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份 GitHub README，介绍如何自动生成可验证的浏览器任务环境，并提供预构建应用、评测脚本和基于 EC2 的批量生成流程。方法框架有参考价值，但证据主要停留在项目说明层面，缺少系统实验结果。",
+    "tags": [
+      "WebArena-Infinity",
+      "browser agents",
+      "benchmark",
+      "环境生成",
+      "任务验证"
+    ],
+    "title": "web-arena-x/webarena-infinity: An approach to utomatically generating browser environment with verifiable tasks",
+    "totalScore": 67,
+    "url": "https://github.com/web-arena-x/webarena-infinity"
+  },
+  "payloadHash": "sha256:ff0b435832e57646a69c7a8f18ca82d8323bd9964d35e36805582c142e4ea191",
+  "refs": {},
+  "revisionId": "sha256:5a590e4122aa99ba277228d90222b1230e506fd999cc7cc1cb46a96fe3fd6a7d",
+  "schemaVersion": 1,
+  "updatedAt": 1774334482160
+}

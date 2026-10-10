@@ -1,0 +1,15 @@
+{
+  "createdAt": 1776645658357,
+  "entityType": "session-content",
+  "id": "1776645658357_x5ibohjg",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>LotusDecoder</strong></header><div class=\"tw-body\">大概 claude code + opus-4.6 还是降智了，<br><br>今天做一个调查主机集群的任务，<br>文档里端口号写错了， ssh config是对的。<br><br>出来的结果，codex 觉察到了这一点还是连上去了。<br>claude code 没有多做一步。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HF6fECjasAMyfJL?format=png&name=large\" alt=\"图像\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@LotusDecoder</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>单路agent长时任务用 planning-with-files + ralph-loop，<br><br>多agent是搞好 sandbox + autoresearch 迭代超爽了。</p></div><div class=\"tw-reply\"><strong>@就这样</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>直接让模型去读取config文件了吗？这个操作很危险啊，尤其要注意，它到底有没有读取私钥。<br>我现在是直接告诉他怎么调用，ssh 服务器名称，它不能去读config和其他文件，已经做好密钥登录了</p></div><div class=\"tw-reply\"><strong>@LotusDecoder</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>是的，你考虑得周全。<br><br>这些敏感操作还是需要做隔离。</p></div></div>",
+    "pageContent": "LotusDecoder: 大概 claude code + opus-4.6 还是降智了， 今天做一个调查主机集群的任务，\n文档里端口号写错了， ssh config是对的。 出来的结果，codex 觉察到了这一点还是连上去了。\nclaude code 没有多做一步。\n![图像](https://pbs.twimg.com/media/HF6fECjasAMyfJL?format=png&name=large)\n---\n热门回复 (共 3 条):\n@LotusDecoder (♥ 0 · 💬 1):\n单路agent长时任务用 planning-with-files + ralph-loop，\n\n多agent是搞好 sandbox + autoresearch 迭代超爽了。\n\n@就这样 (♥ 0 · 💬 1):\n直接让模型去读取config文件了吗？这个操作很危险啊，尤其要注意，它到底有没有读取私钥。\n我现在是直接告诉他怎么调用，ssh 服务器名称，它不能去读config和其他文件，已经做好密钥登录了\n\n@LotusDecoder (♥ 0 · 💬 1):\n是的，你考虑得周全。\n\n这些敏感操作还是需要做隔离。\n"
+  },
+  "payloadHash": "sha256:9f201c7c98698a4b92d563a91331e0c9f2c5719a8883637871d9a04585d5905b",
+  "refs": {},
+  "revisionId": "sha256:ab66c11cad42a95a2ce3bd27957a9f589f8aa272f49fb0beaf54a358a94d2343",
+  "schemaVersion": 1,
+  "updatedAt": 1776647110512
+}

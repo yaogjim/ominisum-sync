@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773557193833,
+  "entityType": "session",
+  "id": "1773557193833_zx33bsui",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你关注自动化监控或副业工具，可重点查看其任务流、通知链路和 SQLite 迁移设计",
+      "如需复用此思路，可提炼出账号管理、任务调度、AI筛选和结果通知四层架构"
+    ],
+    "archiveReason": "包含较完整的部署步骤、功能说明、系统流程和配置项，可在需要搭建监控爬虫或AI筛选流程时复用",
+    "classifiedAt": 1773829672262,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "闲鱼AI监控系统项目说明",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Playwright 可用于构建带登录态管理和定时调度的电商监控爬虫系统",
+      "SQLite 可作为中小型监控系统的统一存储层，替代分散的 JSON/日志文件",
+      "AI 任务生成适合通过异步 job 机制解耦，避免前端长时间阻塞",
+      "代理轮换、失败保护和通知集成是自动化监控系统的重要工程组件"
+    ],
+    "oneHighValuePoint": "将电商监控、账号管理、AI分析、通知和后台管理整合为一套可部署系统，具备较强的工程参考价值。",
+    "oneLineReview": "工程落地信息充分、可直接上手，但更像产品文档，理论深度和证据质量一般。",
+    "primaryCategory": "AI自动化工具",
+    "rating": "B",
+    "rejectReason": "更偏项目说明书而非深度技术文章，方法抽象和证据支撑较弱",
+    "retentionDecision": "短期参考后保留，适合作为同类自动化监控项目的实现样板",
+    "secondaryCategories": [
+      "电商监控",
+      "开源项目README"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份基于 Playwright、FastAPI、SQLite 和多模态 AI 的闲鱼商品监控系统 README，重点介绍了多任务监控、账号与代理轮换、通知、Docker 部署、Web UI 管理和数据迁移等功能，适合快速了解项目能力与部署方式。",
+    "tags": [
+      "Playwright",
+      "闲鱼",
+      "AI分析",
+      "自动化监控",
+      "FastAPI",
+      "Docker"
+    ],
+    "title": "Usagi-org/ai-goofish-monitor: 别养小龙虾了，来试试养鱼吧！本项目基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+    "totalScore": 63.5,
+    "url": "https://github.com/Usagi-org/ai-goofish-monitor"
+  },
+  "payloadHash": "sha256:480b84c85376beb6384587f9b05c24281f7d294217ff1083ccf25980261545ef",
+  "refs": {},
+  "revisionId": "sha256:990c5e4ed93b9c0ab375ab3f3d3d63c690de2113e290968e3985c941d4830dad",
+  "schemaVersion": 1,
+  "updatedAt": 1773829672267
+}

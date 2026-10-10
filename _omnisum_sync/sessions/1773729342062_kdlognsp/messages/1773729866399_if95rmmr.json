@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773729673735,
+  "entityType": "message",
+  "id": "1773729866399_if95rmmr",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章介绍了 `lossless-claw`：一个给 OpenClaw 用的“无损上下文管理”插件。它的核心价值是：在对话超出模型上下文窗口时，不再简单截断旧消息，而是通过“保存 + 分层总结 + 可追溯检索”的方式，让代理尽量做到“不会遗忘”。\n\n- 第一部分：它解决了什么问题  \n  - 普通代理在对话太长时，通常会删掉早期消息；`lossless-claw` 则改成“无损压缩”。  \n  - 它会把每条消息保存到 SQLite 数据库里，并按会话组织。  \n  - 旧消息会先被总结成较小摘要，再继续向上压缩成更高层级节点，最终形成一个 DAG（有向无环图）。  \n  - 每次组装上下文时，系统会混合“摘要 + 最近原始消息”，既控制 token，又尽量保留历史信息。  \n  - 还提供 3 个工具帮助代理回忆历史：`lcm_grep`、`lcm_describe`、`lcm_expand`。  \n  - 文章强调“Nothing is lost”——原始消息不会丢，摘要还能回链到原文细节。\n\n- 第二部分：如何快速开始  \n  - 前提条件包括：支持插件上下文引擎的 OpenClaw、Node.js 22+、以及已配置好的 LLM 提供商。  \n  - 推荐安装命令：`openclaw plugins install @martian-engineering/lossless-claw`。  \n  - 本地开发可用链接安装：`openclaw plugins install --link /path/to/lossless-claw`。  \n  - 安装后通常无需手动改 JSON；若手动配置，需要把 `contextEngine` 指向 `lossless-claw`。  \n  - 修改配置后要重启 OpenClaw。\n\n- 第三部分：配置方式与关键参数  \n  - 配置来源有两种：插件配置和环境变量；环境变量优先级更高。  \n  - 典型插件配置包含 3 个核心项：`freshTailCount`、`contextThreshold`、`incrementalMaxDepth`。  \n  - 关键默认值很重要：  \n    - `LCM_FRESH_TAIL_COUNT=32`：保护最近 32 条消息不被压缩。  \n    - `LCM_CONTEXT_THRESHOLD=0.75`：上下文达到窗口的 75% 时触发压缩。  \n    - `LCM_INCREMENTAL_MAX_DEPTH=0`：默认只做叶子层压缩；示例推荐设为 `-1`，表示无限向上凝练。  \n  - 其他重要参数还包括：  \n    - `LCM_LEAF_MIN_FANOUT=8`：每个叶子摘要至少覆盖 8 条原始消息。  \n    - `LCM_CONDENSED_MIN_FANOUT=4`：高层摘要至少合并 4 个摘要节点。  \n    - `LCM_LEAF_CHUNK_TOKENS=20000`：叶子压缩单块最大源 token。  \n    - `LCM_LEAF_TARGET_TOKENS=1200`、`LCM_CONDENSED_TARGET_TOKENS=2000`：摘要目标长度。  \n    - `LCM_MAX_EXPAND_TOKENS=4000`：展开查询的 token 上限。  \n    - `LCM_LARGE_FILE_TOKEN_THRESHOLD=25000`：超过这个大小的文件块会被单独拦截和存储。  \n\n- 第四部分：推荐配置思路  \n  - 文中给出一套适合长期会话的起始方案：  \n    - `freshTailCount=32`：保住近期连续对话体验。  \n    - `incrementalMaxDepth=-1`：每次压缩后允许 DAG 持续向上凝练。  \n    - `contextThreshold=0.75`：给模型回复预留余量。  \n  - 一个直观例子是：当聊天很长时，系统不会直接删旧内容，而是把较早内容变成可追溯摘要，最近 32 条仍保留原样，模型既能接上话题，也能回查历史。\n\n- 第五部分：它的边界与会话重置机制  \n  - 插件虽然能保留历史，但不会改变 OpenClaw 自身的“会话重置策略”。  \n  - 如果用户觉得会话“重置得太快”，需要调大 OpenClaw 的 `session.reset.idleMinutes`。  \n  - 文中推荐长期使用时可设为：  \n    - `mode: \"idle\"`  \n    - `idleMinutes: 10080`（即 7 天）  \n  - 还给出了几个参考值：  \n    - `1440 = 1天`  \n    - `10080 = 7天`  \n    - `43200 = 30天`  \n    - `525600 = 365天`  \n  - 如果同时启用“每日重置”，则会在“跨天”或“空闲超时”两者中先满足的那个时点重置。\n\n- 第六部分：文档、开发与项目结构  \n  - 项目提供了多类文档：配置指南、架构说明、Agent 工具、TUI 参考、FTS5 全文搜索等。  \n  - 开发命令比较直接：  \n    - 测试：`npx vitest`  \n    - 类型检查：`npx tsc --noEmit`  \n  - 代码主体用 TypeScript 编写，占比 `71.4%`；TUI 用 Go 编写，占比 `28.1%`。  \n  - 核心模块分工清晰：  \n    - `engine.ts` 负责上下文引擎  \n    - `compaction.ts` 负责压缩与凝练  \n    - `retrieval.ts` 负责检索  \n    - `large-files.ts` 处理大文件  \n    - `integrity.ts` 和 `transcript-repair.ts` 负责修复与一致性检查  \n  - 还带一个交互式终端 UI（`tui/`），支持摘要修复、重写、跨会话 DAG 复制等操作。\n\n- 第七部分：项目状态与基本信息  \n  - 这是一个基于 Voltropy 的 LCM 论文思想实现的 OpenClaw 插件。  \n  - 仓库显示已有 `128` 次提交。  \n  - 使用 MIT 许可证。  \n  - 页面显示有 `1` 个 Release、`7` 个部署记录，目前“Packages”处显示未发布包。\n\n如果你愿意，我也可以继续把这篇内容再压缩成“超短版 5 条要点”。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773729673735,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:29ad5a57f7fb2d0a2fc1530938ac2b95b9dd1dff03267a6f0b96888d9c74e38a",
+  "refs": {
+    "sessionId": "1773729342062_kdlognsp"
+  },
+  "revisionId": "sha256:66de206d812b18e63d6f29fbd4c4ce6a7f0cd31cd3ba20deb2ae87b251555b61",
+  "schemaVersion": 1,
+  "updatedAt": 1773729673735
+}

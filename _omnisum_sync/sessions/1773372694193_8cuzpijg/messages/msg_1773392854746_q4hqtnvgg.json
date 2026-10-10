@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773392854748,
+  "entityType": "message",
+  "id": "msg_1773392854746_q4hqtnvgg",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "下面是一版**适合团队内部分享的 1 页 SOP 模板**，主题是：\n\n# 长周期 Autonomous Coding Agent 协作 SOP（1 页版）\n\n## 1. 适用场景\n适用于以下任务：\n\n- 持续数天到数周的开发任务\n- 跨多个模块 / 文件的重构、迁移、集成\n- 需要多轮验证、可回滚、可追踪的项目\n- 适合 AI Agent 参与执行，但不能依赖单次长对话完成的工作\n\n---\n\n## 2. 核心原则\n### 原则 1：不要让单个 Agent 长时间连续工作\n- 单 Agent 容易上下文膨胀、重复阅读、遗忘决策、逐渐跑偏\n- 必须拆成多角色协作，而不是靠一个 Agent “从头干到尾”\n\n### 原则 2：结构优于 swarm\n采用固定分工，而不是让多个 Agent 自由并行乱跑：\n\n- **Planner**：定义目标、拆阶段、定优先级\n- **Sub-planner**：拆成具体子任务\n- **Worker**：执行单一小任务\n- **Validator**：测试、验收、回归检查\n\n### 原则 3：文档是 Agent 的记忆\n不要依赖会话记忆，依赖外部工件：\n\n- README /architecture\n- plan.md\n- progress.md\n- decision_log.md\n- acceptance.md\n\n### 原则 4：测试是控制系统\n没有客观验证，Agent 会高概率 “自信做错”。\n\n必须具备：\n\n- 单元测试\n- 集成测试\n- 回归测试\n- 里程碑验收标准\n\n---\n\n## 3. 标准流程\n### Step 1：Planner 产出总计划\n输出：\n\n- 任务目标\n- 范围边界\n- 风险点\n- 里程碑\n- 回滚策略\n\n### Step 2：Sub-planner 拆子任务\n每个子任务必须明确：\n\n- 目标\n- 涉及文件 / 模块\n- 不允许修改的范围\n- 完成标准\n- 验证方式\n\n### Step 3：Worker 用 “新上下文” 执行\n每次启动 Worker，仅提供：\n\n- 当前任务说明\n- 必要架构文档\n- 最新 progress.md\n- 验收标准\n- 相关代码文件\n\n**禁止**让 Worker 继承冗长历史对话作为主要上下文。\n\n### Step 4：Worker 交付结果\n交付内容包括：\n\n- 代码改动\n- 测试补充 / 更新\n- 变更说明\n- progress.md 更新\n- 必要时补 decision_log.md\n\n### Step 5：Validator 独立验证\n验证内容：\n\n- 是否通过测试\n- 是否符合验收标准\n- 是否引入回归\n- 是否超出任务边界\n- 是否需要返工\n\n### Step 6：阶段复盘\n每完成一个里程碑：\n\n- 更新总体进度\n- 记录关键决策\n- 清理失效计划\n- 生成下一阶段任务列表\n\n---\n\n## 4. 任务拆分标准\n一个合格子任务应满足：\n\n- **小**：可在一个短周期内完成\n- **清**：目标明确，边界清晰\n- **独立**：尽量减少与其他任务耦合\n- **可验收**：有客观测试或检查方法\n\n### 示例\n**好任务：**\n- 为支付路由增加新渠道分发逻辑\n- 为订单回调补充签名校验测试\n- 增加灰度开关并补文档\n\n**坏任务：**\n- 把支付系统整体重构一下\n- 优化这块代码\n- 看看哪里能改进\n\n---\n\n## 5. 必备文档模板\n### `plan.md`\n记录：\n\n- 项目目标\n- 阶段划分\n- 子任务清单\n- 负责人 / Agent 角色\n- 风险与依赖\n\n### `progress.md`\n记录：\n\n- 已完成\n- 进行中\n- 阻塞项\n- 下一步\n\n### `decision_log.md`\n记录：\n\n- 关键技术决策\n- 决策原因\n- 被否决方案\n- 后续影响\n\n### `acceptance.md`\n记录：\n\n- 每个里程碑验收条件\n- 测试要求\n- 回归要求\n- 发布 / 回滚条件\n\n---\n\n## 6. Do / Don’t\n### Do\n- 任务分层管理\n- 每次任务使用新上下文\n- 用文档做交接\n- 先定义测试，再执行改动\n- 验证独立于执行\n\n### Don’t\n- 让一个 Agent 持续跑很久不重置\n- 把大量无关上下文都塞进提示词\n- 不做文档沉淀\n- 没有验收标准就开始改代码\n- 用 “感觉对了” 代替测试通过\n\n---\n\n## 7. 最低落地要求\n团队要开始采用这套方式，至少做到：\n\n- 有明确角色分工\n- 所有任务必须拆小\n- 所有任务必须有验收标准\n- 所有阶段必须更新 progress.md\n- 所有关键改动必须经过 Validator 检查\n\n---\n\n## 8. 一句话总结\n**长周期 AI 编程不是把 Agent 跑得更久，而是把协作结构、文档记忆和测试控制建立起来。**\n\n---\n\n如果你需要，我还可以继续帮你补两版配套材料：\n\n1. **可直接复制到 Confluence / 飞书文档的排版版**\n2. **适合项目启动时使用的 SOP 清单版（Checklist）**",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1773392854748
+  },
+  "payloadHash": "sha256:b42cb99f38174eeb6ffc4e16de61356749d85540e8ac69e31c851efa0fdf47f8",
+  "refs": {
+    "sessionId": "1773372694193_8cuzpijg"
+  },
+  "revisionId": "sha256:6ef5bbf7b1b6df9b7180c083ba4ad3c8c55e6c196d196f802ede328a1d865bc6",
+  "schemaVersion": 1,
+  "updatedAt": 1773392854748
+}

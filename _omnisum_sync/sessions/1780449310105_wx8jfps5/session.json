@@ -1,0 +1,70 @@
+{
+  "createdAt": 1780449310105,
+  "entityType": "session",
+  "id": "1780449310105_wx8jfps5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需要远程测试加速，可安装 crabbox 并尝试 crabbox run -- pnpm test。",
+      "评估团队是否需要自建 Cloudflare Worker broker 来统一管理云 provider 凭据和预算。",
+      "对比 Crabbox 与现有 CI、devcontainer、远程开发环境或 AI Agent sandbox 方案的适配成本。",
+      "查看 How Crabbox Works、Providers、Configuration 和 Security 文档以判断生产可用性。"
+    ],
+    "archiveReason": "提供了一个面向维护者和AI Agent的远程测试执行工具概览，包含架构、功能、配置和 provider 支持信息，可作为工具选型参考。",
+    "classifiedAt": 1780450072986,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Crabbox远程测试控制平面",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Crabbox 支持本地 dirty checkout 同步到远程 runner，并运行测试或命令。",
+      "架构由 Go CLI、Cloudflare Worker broker、云端或委托 runner 三部分组成。",
+      "支持 AWS、Azure、GCP、Hetzner、Proxmox、静态 SSH、本地容器等多种执行环境。",
+      "提供 warmup、prewarm、job、actions hydrate、capsule、checkpoint、pond、日志与事件观测等功能。",
+      "通过租赁上限、月度预算、provider fallback 和 usage 统计实现云资源成本管控。"
+    ],
+    "oneHighValuePoint": "将控制面与数据面分离：broker 管理租赁、成本和状态，CLI 直接通过 SSH/rsync 与 runner 执行同步和命令。",
+    "oneLineReview": "信息量较高的工具型文档，适合评估远程测试与 AI Agent 执行环境方案，但缺少实测案例和效果证据。",
+    "primaryCategory": "软件工程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可按需保留",
+    "secondaryCategories": [
+      "远程测试",
+      "云端开发环境"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章是 Crabbox 项目 README，介绍其通过 CLI、Cloudflare Worker broker 和远程 runner 实现云端租赁机器、同步本地改动、远程运行测试、日志观测、成本控制和多云 provider 支持等能力。",
+    "tags": [
+      "Crabbox",
+      "远程执行",
+      "测试自动化",
+      "云资源",
+      "AI Agent"
+    ],
+    "title": "openclaw/crabbox: Crabbox: warm a box, sync the diff, run the suite.",
+    "totalScore": 61,
+    "url": "https://github.com/openclaw/crabbox"
+  },
+  "payloadHash": "sha256:5741875c9475b6227a7cd53c68b23aebc27f3c68418282f070bee2983e3df4eb",
+  "refs": {},
+  "revisionId": "sha256:773af0aa49fd5ca11645a2664da0992414a0187eb34b3f777d402ae7c4f3803d",
+  "schemaVersion": 1,
+  "updatedAt": 1780454674811
+}

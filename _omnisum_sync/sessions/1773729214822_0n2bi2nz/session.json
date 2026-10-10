@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773729214822,
+  "entityType": "session",
+  "id": "1773729214822_0n2bi2nz",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尝试用终端工作区而非浏览器标签页来隔离不同 AI 任务会话",
+      "为每个代理任务建立 session 模板，记录目标、进度、结果和完成标准",
+      "搭建一个统一状态面板，集中查看 blocked、in-progress、review、done 等状态",
+      "在多代理流程中加入人工验收和评论回传机制，避免误完成"
+    ],
+    "archiveReason": "提供了可复用的多代理编排思路、终端工作区隔离方案和配套的任务追踪框架",
+    "classifiedAt": 1773729236853,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "多代理工作流管理实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "使用 cmux 的 list、read、send 三个核心命令实现跨工作区的代理编排",
+      "通过 Obsidian session 文件与 dashboard 自动汇总任务状态，降低人工追踪成本",
+      "引入 definition of done 和人工验证环节，避免代理输出未经审查直接完成"
+    ],
+    "oneHighValuePoint": "将“主控代理+隔离工作区+可查询状态面板”组合成闭环，是避免多代理上下文混乱的关键设计。",
+    "oneLineReview": "是一个有启发性的多代理协作实践帖，但更像经验展示而非经过验证的系统方法。",
+    "primaryCategory": "AI工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合在搭建多代理工作流时回看",
+    "secondaryCategories": [
+      "效率工具",
+      "知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍作者如何用 cmux 替代多标签页管理 Claude Code 多代理任务，并结合 Obsidian session/dashboard 追踪状态、验证结果和回传评论，形成从日计划到执行再到验收的完整闭环。",
+    "tags": [
+      "Claude Code",
+      "多代理协作",
+      "cmux",
+      "Obsidian",
+      "工作流编排"
+    ],
+    "title": "How I Manage 10 Claude Code Agents Without Losing My Mind",
+    "totalScore": 59.5,
+    "url": "https://x.com/ArtemXTech/status/2033588201844040141"
+  },
+  "payloadHash": "sha256:c578f8cc29202a000f7451002a843183ed36a80670ea4b75d85f2fc1b6fc2b79",
+  "refs": {},
+  "revisionId": "sha256:baa05c69ab1e629f7f4a53cde8b71a2c11ea65ae2ca99a782769623989d2131f",
+  "schemaVersion": 1,
+  "updatedAt": 1773729772020
+}

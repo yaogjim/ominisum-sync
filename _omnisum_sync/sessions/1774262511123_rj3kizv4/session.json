@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774262511123,
+  "entityType": "session",
+  "id": "1774262511123_rj3kizv4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你常本地运行AI开源项目，可进一步查看README和脚本语法示例评估是否适合纳入工具链",
+      "在实际使用前重点验证其脚本安全边界、支持的平台以及与你现有环境管理方案的兼容性"
+    ],
+    "archiveReason": "该内容对理解Pinokio的定位、脚本审核机制和隔离式安装方式有一定参考价值",
+    "classifiedAt": 1774262532404,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Pinokio一键AI项目启动器",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Pinokio通过统一脚本语法和隔离目录实现开源项目的一键安装与启动",
+      "其Discover页面的脚本需经过发布者验证、仓库冻结转移和人工审核流程",
+      "依赖安装被限制在~/pinokio及应用子目录内，以降低越权执行风险"
+    ],
+    "oneHighValuePoint": "最有价值的是其围绕脚本执行安全设计了隔离目录、路径约束、venv和人工审核结合的机制。",
+    "oneLineReview": "这是一个有实用价值的工具型项目说明，但更像产品介绍而非高质量深度文章。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容偏产品说明与仓库简介，缺少深入原理、性能对比和实际案例支撑",
+    "retentionDecision": "短期参考后可保留，适合作为AI项目本地部署工具备查资料",
+    "secondaryCategories": [
+      "开源项目文档",
+      "本地运行与环境隔离"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章实质上是Pinokio GitHub仓库说明，重点介绍其作为开源项目一键启动器的定位，以及脚本审核、隔离执行、依赖安装和安全验证机制。对想快速了解工具用途有帮助，但证据和深度有限。",
+    "tags": [
+      "Pinokio",
+      "AI Browser",
+      "脚本安全",
+      "一键部署",
+      "GitHub项目"
+    ],
+    "title": "pinokiocomputer/pinokio: AI Browser",
+    "totalScore": 53,
+    "url": "https://github.com/pinokiocomputer/pinokio"
+  },
+  "payloadHash": "sha256:8d149cab0efa253f0d824304a0a680e8ca12fa897284d51664123f1d8f60ceda",
+  "refs": {},
+  "revisionId": "sha256:332ea3b67ab6e973c153f0dbbe9c0db729d7a3b06d66dd7de45011b930d6117c",
+  "schemaVersion": 1,
+  "updatedAt": 1774262532406
+}

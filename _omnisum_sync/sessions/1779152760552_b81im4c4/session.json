@@ -1,0 +1,115 @@
+{
+  "createdAt": 1779152760552,
+  "entityType": "session",
+  "id": "1779152760552_b81im4c4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需测试Pi，先安装少量核心组件，避免一次性引入过多插件污染上下文",
+      "配置OpenAI兼容模型时检查developer role、reasoning effort、contextWindow和maxTokens是否与端点能力匹配",
+      "复杂工程任务中强制要求Agent先输出计划、风险点、验收标准和测试覆盖范围，再进入执行",
+      "为常见任务沉淀skill，例如仓库调试、前端polish、测试规范、财务数据分析和项目SOP",
+      "将高成本深推理模型用于复杂规划和最终审查，将快速低成本模型用于样板代码、局部测试和普通review"
+    ],
+    "archiveReason": "包含较完整的Claude Code到Pi的迁移视角、模型配置示例、组件选择原则和plan-first工作流方法，具备复用价值",
+    "byline": "WquGuru",
+    "classifiedAt": 1780616017012,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Pi迁移与Ring配置指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HIiJFOWboAAQVbZ?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HIiJFOWboAAQVbZ?format=jpg&name=medium",
+        "width": 1200
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 689,
+        "id": "img-6",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HIkzTVkaQAAwZW8?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HIkzTVkaQAAwZW8?format=jpg&name=medium",
+        "width": 1200
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 490,
+        "id": "img-7",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HIkzXRSbYAAaDvY?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HIkzXRSbYAAaDvY?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "Pi采用minimal core设计，核心工具较少，subagent、plan、MCP、web、context prune等能力主要依赖扩展组件实现",
+      "接入OpenAI兼容模型时，models.json中的supportsDeveloperRole、thinkingLevelMap、contextWindow和maxTokens配置会显著影响可用性和输出质量",
+      "Ring-2.6-1T适合在目标明确、上下文充分、流程清晰的工程任务中使用，高频任务用high，复杂规划和最终审查用xhigh",
+      "Pi的价值在于可控的上下文和工具注入，适合做非Anthropic模型评测和多模型fallback工作流",
+      "skill的核心价值不是外挂能力，而是将测试规范、调试流程、设计验收和项目SOP固化为可复用工作流"
+    ],
+    "oneHighValuePoint": "将Pi定位为更透明、可控、可复现的Agent底座，而不是Claude Code的直接替代品，并强调通过plan-first、skill和review机制释放开源模型能力。",
+    "oneLineReview": "一篇实践导向较强的Pi Agent迁移指南，配置细节和工作流建议有较高参考价值，但证据和实测数据仍偏有限。",
+    "primaryCategory": "AI编程工具与Agent工作流",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为Pi Agent迁移、开源模型接入和Agent工作流设计的实践参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "模型评测环境",
+      "开发工具配置",
+      "Agent工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章面向Claude Code用户，系统介绍Pi Coding Agent的定位、组件化架构、与Claude Code的能力映射、Ring-2.6-1T接入配置、最小可用插件栈、常见坑以及plan-first与skill驱动的Agent工作流。",
+    "tags": [
+      "Pi Coding Agent",
+      "Claude Code",
+      "Ring-2.6-1T",
+      "Agent工作流",
+      "plan-first",
+      "skills",
+      "模型配置"
+    ],
+    "title": "Pi Coding Agent 最全面指南（完美支持/goal）",
+    "totalScore": 76,
+    "url": "https://x.com/wquguru/status/2056235143623495975"
+  },
+  "payloadHash": "sha256:9861aa59b0f9b8493a2fd691083bbf320a0d1f334ae04bd1acf3a00c22c12a3c",
+  "refs": {},
+  "revisionId": "sha256:8cb974c4fc1ff5f418e3f60786522b40192bc9a1e0975e936da85813c873519f",
+  "schemaVersion": 1,
+  "updatedAt": 1780616018779
+}

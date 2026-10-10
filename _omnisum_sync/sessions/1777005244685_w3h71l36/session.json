@@ -1,0 +1,66 @@
+{
+  "createdAt": 1777005244685,
+  "entityType": "session",
+  "id": "1777005244685_w3h71l36",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "把自己当前重复执行的一项内容任务拆成调研、生成、自动化三步并尝试模板化",
+      "验证文中方法时优先补充真实转化数据与A/B测试，而不是只看浏览量"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777005543907,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent爆款图文工作流拆解",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "从真实付费需求而非单纯高互动内容中寻找选题与表达形式",
+      "将提示词抽象为可变量化的Meta Prompt以支持批量生成",
+      "把成功对话流程保存为Agent并通过定时运行减少重复劳动"
+    ],
+    "oneHighValuePoint": "把一次性提示词生产升级为可复用的Meta Prompt加定时Agent，是文中最具方法论价值的部分。",
+    "oneLineReview": "有一定启发性，但更像营销型经验分享，框架有用，细节和证据明显不够。",
+    "primaryCategory": "AI内容创作",
+    "rating": "C",
+    "rejectReason": "案例有吸引力，但整体偏营销和平台导流，方法拆解较粗，证据与可复现细节不足。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "社媒增长",
+      "Agent自动化"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章以多个高浏览案例为引子，介绍一套面向社媒图文创作的Agent流程：先从平台销量与需求端调研，再反推提示词并抽象为Meta Prompt，最后保存为可定时运行的Agent，实现批量化内容生产与自动化输出。",
+    "tags": [
+      "Agent工作流",
+      "内容生产",
+      "爆款图文",
+      "自动化",
+      "社交媒体运营"
+    ],
+    "title": "打破信息差：分享我干出十几条图文爆款的Agent工作流（附案例分析）",
+    "totalScore": 48.5,
+    "url": "https://x.com/lxfater/status/2046891553063670101"
+  },
+  "payloadHash": "sha256:bd8cea6f8b2246c4284bb8f8bc651fdcad79c6497ff16a2147b03b5beac785fe",
+  "refs": {},
+  "revisionId": "sha256:38edd3bec80ae84a21cad8465dc5b37b1ff654e94905057c20bd7f2093179ba5",
+  "schemaVersion": 1,
+  "updatedAt": 1777006137761
+}

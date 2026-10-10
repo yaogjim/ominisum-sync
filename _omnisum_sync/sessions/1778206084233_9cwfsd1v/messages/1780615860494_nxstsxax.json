@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780615860495,
+  "entityType": "message",
+  "id": "1780615860494_nxstsxax",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: LangGraph Pregel运行时机制\n\n**评级**: A (73.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI工程与智能体框架\n**次类别**: LangGraph, 运行时架构\n**标签**: #LangGraph #Pregel #StateGraph #DeltaChannel #并行计算\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是理解LangGraph底层执行语义和状态通道设计的高价值官方文档。\n**核心高价值点**: DeltaChannel通过仅存储增量并配合snapshot_frequency控制读取延迟，可显著优化长线程、大状态场景下的 checkpoint 存储成本。\n\n### 摘要\n文章介绍LangGraph Pregel运行时的核心机制，包括actor、channel、Plan-Execution-Update三阶段执行模型，以及LastValue、Topic、BinaryOperatorAggregate、DeltaChannel等通道类型和适用场景。\n\n### 知识要点\n- Pregel运行时采用Bulk Synchronous Parallel模型，每步包含Plan、Execution、Update三个阶段。\n- Actor以PregelNode形式存在，订阅通道、读取数据并向通道写入更新。\n- Channel通过值类型、更新类型和更新函数定义数据传递与状态演化方式。\n- DeltaChannel适合频繁写入且长期增长的大型状态，但要求bulk reducer具有关联性。\n\n### 行动项\n- 在设计LangGraph应用时，根据状态更新模式选择LastValue、Topic、BinaryOperatorAggregate或DeltaChannel。\n- 对长对话或大规模累积状态检查checkpoint体积，若随线程长度线性增长则评估引入DeltaChannel。\n- 为DeltaChannel设置合适的snapshot_frequency，在存储成本和读取延迟之间权衡。\n- 深入阅读StateGraph编译后的nodes和channels结构，以理解高层API与Pregel运行时的映射关系。\n\n### 存档判定\n归档: 是 — 原因: 官方运行时文档，解释LangGraph底层执行模型、通道机制和DeltaChannel优化，对构建复杂智能体工作流有持续参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1780615860495,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:f9bba791edebe5c4176616e198f76610fb81d22cbd5b8626c90097b4825235f4",
+  "refs": {
+    "sessionId": "1778206084233_9cwfsd1v"
+  },
+  "revisionId": "sha256:1d790010efba4b76c001158fe25b07353aac390c7a35dc96785bf5862f091c70",
+  "schemaVersion": 1,
+  "updatedAt": 1780615860495
+}

@@ -1,0 +1,70 @@
+{
+  "createdAt": 1777277112489,
+  "entityType": "session",
+  "id": "1777277112489_fw91n7kl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个现有产品界面，让AI基于当前UI起草一版DESIGN.md。",
+      "与设计师或工程师一起审阅文件，删除模糊表达，补充颜色角色、组件状态、布局、响应式和无障碍规则。",
+      "在下一次AI生成UI任务中附上DESIGN.md，并要求代理先说明冲突、生成后列出遵循和违反的规则。",
+      "建立更新规则：当同类问题重复出现或新模式多次使用时，将其沉淀回DESIGN.md。"
+    ],
+    "archiveReason": "提供了可直接复用的AI界面生成约束方法、DESIGN.md结构清单和提示词范式，适合沉淀为产品与设计协作流程。",
+    "classifiedAt": 1777284802460,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用DESIGN.md约束AI界面生成",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "DESIGN.md可由机器可读的YAML和人类可读的Markdown组成，分别承载精确设计令牌与设计判断理由。",
+      "优秀的设计约束应记录具体决策，而不是使用“现代、简洁、优质”等模糊形容词。",
+      "代理生成UI后应被要求列出遵循的规则、发明的新模式、与DESIGN.md不一致之处以及缺失规范。",
+      "DESIGN.md不应替代设计师，而应沉淀重复决策，减少每个界面重新争论视觉规则的成本。",
+      "当同类代理错误、重复审核意见或新组件模式多次出现时，应更新DESIGN.md。"
+    ],
+    "oneHighValuePoint": "将设计规范放入AI代理能直接读取和引用的仓库文本文件中，并要求代理在生成后逐条自检，是降低AI UI漂移的高杠杆做法。",
+    "oneLineReview": "一篇实用性很强的AI产品设计流程文章，方法清晰，但证据主要来自经验判断而非系统案例或数据。",
+    "primaryCategory": "AI产品管理",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "设计系统",
+      "AI代理工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出用仓库中的DESIGN.md作为面向AI代理的纯文本设计系统，约束颜色、排版、组件、布局、无障碍和禁用模式，提升AI生成UI的一致性，并给出PM创建、使用、审核和更新该文件的清单。",
+    "tags": [
+      "DESIGN.md",
+      "AI原型",
+      "设计规范",
+      "产品管理",
+      "UI一致性"
+    ],
+    "title": "DESIGN.md | AI 匹配你的用户界面所需的那个文件",
+    "totalScore": 76.5,
+    "url": "https://x.com/nurijanian/status/2048327986777350425"
+  },
+  "payloadHash": "sha256:e9ca46ceb5eaf2f7af12acc186019c7ffbfa51c7ccd4d79f2c8d9acabd2fcb0e",
+  "refs": {},
+  "revisionId": "sha256:b4a71f2e0f0249d3309d1e713e185f748545a14f703a2158c963f3f359701466",
+  "schemaVersion": 1,
+  "updatedAt": 1777284802462
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1774227544007,
+  "entityType": "session",
+  "id": "1774227544007_8qjfyeiy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注该议题，应补充查阅互联网城市就业结构、按揭负担率和房价收入比等数据",
+      "将此类社交媒体观点仅作为风险假设，不应直接据此做资产处置决策"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774227559753,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI冲击下房价抛售论",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "证据质量极低，信息量有限，结论过度绝对化，容易误导现实决策，长期保留价值很低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "高房价与高收入可加杠杆人群密切相关",
+      "AI对特定行业就业的冲击可能传导至资产价格"
+    ],
+    "oneHighValuePoint": "提出“房价支撑关键不只是人口，而是具备举债能力的人口”这一观察角度。",
+    "oneLineReview": "有一点直觉性洞见，但整体属于缺证据的情绪化判断，参考价值偏低。",
+    "primaryCategory": "宏观判断",
+    "rating": "D",
+    "rejectReason": "核心观点高度武断，缺乏数据、案例和完整因果链支撑，更多是情绪化判断而非可依赖分析。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "房地产",
+      "AI就业影响"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章以社交媒体短帖形式断言：AI将在2026年前后冲击互联网就业，进而削弱相关城市居民杠杆能力，引发房产抛售潮和房价下行。全文几乎无数据支撑，仅靠单一逻辑链进行推演。",
+    "tags": [
+      "房价",
+      "互联网行业",
+      "AI裁员",
+      "城市风险",
+      "个人投资判断"
+    ],
+    "title": "Robinson · 鲁棒逊: 一个观察 如果你所在城市，互联网行业发达，就业人口众多，请立刻、马上，抛售手中所有房产",
+    "totalScore": 27.5,
+    "url": "https://x.com/python_xxt/status/2035649045402935695"
+  },
+  "payloadHash": "sha256:4d93c158094f876eeb77df12b58179a62488dd4d913e337e414c044114ca497e",
+  "refs": {},
+  "revisionId": "sha256:df4bc18e9a7c9d897004a6702a102b11d1450dfab79feb17feff42e35fcdf7e0",
+  "schemaVersion": 1,
+  "updatedAt": 1774236566509
+}

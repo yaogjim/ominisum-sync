@@ -1,0 +1,65 @@
+{
+  "createdAt": 1780380715968,
+  "entityType": "session",
+  "id": "1780380715968_35wfuuwf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将该提示词改写为适合自己工具链的版本，用于审计最近 30 天工作流",
+      "建立一个候选自动化清单，按技能、子代理、自动化、跳过四类进行归档"
+    ],
+    "archiveReason": "提供了一个较完整的提示词框架，可用于让 AI 从历史工作中识别可封装的技能、子代理和自动化任务",
+    "classifiedAt": 1780381036473,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用Codex发现可自动化流程",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可自动化任务应满足重复出现、输入稳定、流程可复用、输出明确、能提升速度或质量等条件",
+      "AI 代理可先生成候选清单，再只创建高置信度且未被现有工具覆盖的最小有用资产"
+    ],
+    "oneHighValuePoint": "用明确筛选标准判断哪些重复任务值得封装为技能、子代理或自动化，而不是盲目创建资产。",
+    "oneLineReview": "这是一个实用的 AI 工作流审计提示词，但证据支撑较弱，主要价值在于可直接复用。",
+    "primaryCategory": "AI工具与提示工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留为提示词模板",
+    "secondaryCategories": [
+      "工作流自动化",
+      "个人知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提供一段用于 Codex 的提示词，要求其分析最近会话、记忆和工作记录，识别重复性高、可复用、值得封装的工作流，并按技能、子代理、自动化或跳过进行分类处理。",
+    "tags": [
+      "Codex",
+      "提示词",
+      "自动化",
+      "子代理",
+      "工作流封装"
+    ],
+    "title": "Vaibhav (VB) Srivastav: UPDATE: Came up with an even better version of this prompt after the feedback As…",
+    "totalScore": 69,
+    "url": "https://x.com/reach_vb/status/2058538305872949490"
+  },
+  "payloadHash": "sha256:7f8b3ad2e83c8728ae35a51f6df61c02ee6f0acea8cb9163b12fe04287d020cd",
+  "refs": {},
+  "revisionId": "sha256:76c888ba7410826e178403f68a89971716183fa644dab05095d29e1b0aa2da1e",
+  "schemaVersion": 1,
+  "updatedAt": 1780386249405
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774865407182,
+  "entityType": "session",
+  "id": "1774865407182_qasuz0tj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按需试用 xingkongliang/skills-manager、smux、happy coder、Conductor 或 Cline Kanban。",
+      "若正在搭建 Coding Agent 工作流，可对比 agHub、skill-optimizer、Skill Flow 等回复中提到的替代工具。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777901941671,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Coding Agent配套工具清单",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "smux 可用于多 Agent 管理，并通过 tmux-bridge 控制终端。",
+      "Coding Agent 工作流可借助看板拆分需求、创建 worktree 并驱动不同 Agent 执行。",
+      "作者偏好选择封装 Claude Code、Codex 或 OpenCode 的工具，而不是完全替代底层模型或工具链。"
+    ],
+    "oneHighValuePoint": "将 Coding Agent 配套工具按 Skills 管理、多 Agent 管理、手机控制、看板和桌面应用进行分类。",
+    "oneLineReview": "适合作为 AI 编程工具发现线索，但不值得深度阅读。",
+    "primaryCategory": "AI编程工具",
+    "rating": "C",
+    "rejectReason": "内容主要是个人工具选择清单，缺少系统评测、使用场景细节和证据支撑，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Coding Agent",
+      "开发工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章列举了作者配合 Coding Agent 使用的几类工具，包括 Skills 管理、多 Agent 管理、手机控制、看板和桌面应用，并给出若干个人偏好选择及回复中的补充工具。",
+    "tags": [
+      "Coding Agent",
+      "工具清单",
+      "多Agent管理",
+      "Skills管理",
+      "AI编程"
+    ],
+    "title": "九原客: 最近在找几类配合 Coding Agent 的 App，分别是： 1",
+    "totalScore": 52.5,
+    "url": "https://x.com/9hills/status/2038477455410032648"
+  },
+  "payloadHash": "sha256:02a41d55805fec39cf1ee7bb237f337587d624b8caea985f8180f7f35fb63a1e",
+  "refs": {},
+  "revisionId": "sha256:c3fbb06343de0bced8e2eb9cf65c60addad3d315ff1d357db0ef0e9fd224b3cb",
+  "schemaVersion": 1,
+  "updatedAt": 1777902526273
+}

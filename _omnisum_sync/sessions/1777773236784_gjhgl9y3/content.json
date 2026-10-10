@@ -1,0 +1,15 @@
+{
+  "createdAt": 1777773236784,
+  "entityType": "session-content",
+  "id": "1777773236784_gjhgl9y3",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>WquGuru</strong></header><div class=\"tw-body\">Agent SDK赛道越来越卷了，继Claude Agent SDK推出一年，Codex Agent SDK推出一个月，又涌入一个新的竞争者——Cursor Agent SDK，从提供的harness功能上来说它和Claude Agent SDK非常一致：<br><br>•  内置工具：读写文件、Edit代码、Shell/Bash、Grep、Glob、语义搜索、MCP外部工具等<br>•  Subagents：都支持，可定义专精子Agent拆解任务<br>•  Hooks：都能拦截/干预Agent循环（Cursor用.cursor/hooks.json；Claude支持Pre/Post ToolUse回调）<br>•  MCP/Skills：项目目录自动加载，均支持MCP接外部工具<br>•  上下文管理：代码仓库索引、语义搜索、grep，两者都极强<br><br>核心差异是Cursor云端Agent天生带Git/PR集成，但是Claude更稳定，权限控制更细，安全性更强<br><br>适用场景方面，如果需要云端无头运行、CI/CD自动化（自动提PR）、嵌入产品、纯TS项目，选Cursor SDK；重度Claude用户、有TS+Python需求、本地自控、企业合规场景、追求极致稳定性和性能，则选Claude Agent SDK。</div><blockquote class=\"tw-quote\"><strong>@dotey</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\">Cursor 今天开放了官方 TypeScript SDK 公测，把驱动自家编辑器、CLI 和网页版的智能体（agent，可自主执行编码任务的 AI 助手）整套打包交给开发者。装上 npm install @cursor/sdk 就能用。\n\n调用方式很灵活。Agent 可以跑在本机，也可以塞到 Cursor 云端的独立虚拟机里。云端模式下每个 agent x.com/cursor_ai/stat…</span></p></blockquote></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@WquGuru</strong> <span class=\"tw-eng\">♥ 13 · 💬 8</span><p>很多人嘲笑孙哥搞AI中转站<br>http://<br>B.AI，说又是割韭菜？其实中转站底层逻辑和孙哥基本盘高度一致。</p></div><div class=\"tw-reply\"><strong>@九原客</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>需要他家的API Key，还不如Claude Agents SDK 呢，后者兼容所有 Anthropic 协议的模型。</p></div></div>",
+    "pageContent": "WquGuru: Agent SDK赛道越来越卷了，继Claude Agent SDK推出一年，Codex Agent SDK推出一个月，又涌入一个新的竞争者——Cursor Agent SDK，从提供的harness功能上来说它和Claude Agent SDK非常一致： • 内置工具：读写文件、Edit代码、Shell/Bash、Grep、Glob、语义搜索、MCP外部工具等\n• Subagents：都支持，可定义专精子Agent拆解任务\n• Hooks：都能拦截/干预Agent循环（Cursor用.cursor/hooks.json；Claude支持Pre/Post ToolUse回调）\n• MCP/Skills：项目目录自动加载，均支持MCP接外部工具\n• 上下文管理：代码仓库索引、语义搜索、grep，两者都极强 核心差异是Cursor云端Agent天生带Git/PR集成，但是Claude更稳定，权限控制更细，安全性更强 适用场景方面，如果需要云端无头运行、CI/CD自动化（自动提PR）、嵌入产品、纯TS项目，选Cursor SDK；重度Claude用户、有TS+Python需求、本地自控、企业合规场景、追求极致稳定性和性能，则选Claude Agent SDK。\n引用推文 (@dotey):\nCursor 今天开放了官方 TypeScript SDK 公测，把驱动自家编辑器、CLI 和网页版的智能体（agent，可自主执行编码任务的 AI 助手）整套打包交给开发者。装上 npm install @cursor/sdk 就能用。 调用方式很灵活。Agent 可以跑在本机，也可以塞到 Cursor 云端的独立虚拟机里。云端模式下每个 agent x.com/cursor_ai/stat…\n---\n热门回复 (共 2 条):\n@WquGuru (♥ 13 · 💬 8):\n很多人嘲笑孙哥搞AI中转站\nhttp://\nB.AI，说又是割韭菜？其实中转站底层逻辑和孙哥基本盘高度一致。\n\n@九原客 (♥ 1 · 💬 0):\n需要他家的API Key，还不如Claude Agents SDK 呢，后者兼容所有 Anthropic 协议的模型。\n"
+  },
+  "payloadHash": "sha256:ef9cb7f08eb17b31001acb157fbc530e9b320bb2af4cc2a372c2f4c6a154c215",
+  "refs": {},
+  "revisionId": "sha256:8e00759b89cd738a0abada90613f6b3f68a473691e9b18168bab0ad3e45c9906",
+  "schemaVersion": 1,
+  "updatedAt": 1777774642351
+}

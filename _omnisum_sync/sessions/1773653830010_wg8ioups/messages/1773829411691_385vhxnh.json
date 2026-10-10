@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773829411692,
+  "entityType": "message",
+  "id": "1773829411691_385vhxnh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: StockAnalysis接口逆向抓取\n\n**评级**: B (65.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 数据抓取与接口逆向\n**次类别**: 金融数据工具, SvelteKit站点分析\n**标签**: #API逆向 #Playwright #股票数据 #SvelteKit #Python\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 5 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一份偏实战的接口逆向仓库说明，方法清晰、可复用，但更像工具说明而非高置信研究成果。\n**核心高价值点**: 明确区分了真正运行时调用的 /api/ 端点与由 SvelteKit SSR 和 __data.json 提供的数据路径，避免在逆向时误判接口层。\n\n### 摘要\n这是一个针对 stockanalysis.com 的 API 抓取与逆向文档型仓库，说明如何通过 Playwright 模拟登录态、抓取运行时请求、解析 SvelteKit 的 __data.json，并生成接口文档，实操性较强但证据与结果验证仍有限。\n\n### 知识要点\n- 可通过 Playwright 注入浏览器 Cookie 来模拟认证态并捕获真实网络请求\n- SvelteKit 应用的数据来源可能主要是 SSR 与 __data.json，而非传统 REST API\n- 抓取流程可拆为请求采集、路径归一化、动态参数占位替换与文档生成\n\n### 行动项\n- 复用其三阶段抓取流程到其他 SvelteKit 或 SSR 驱动的网站做接口发现\n- 结合自己的目标站点补充响应样本、字段说明与稳定性验证，提高证据质量\n\n### 存档判定\n归档: 是 — 原因: 包含完整的抓取链路、环境配置和端点归纳，对后续类似站点逆向有复用价值\n删除: 否\n留存决策: 短期参考后保留，适合作为接口发现与抓取流程模板",
+    "role": "assistant",
+    "timestamp": 1773829411692,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:2aa257170f9b9690a26c48d9cab0f1d27e527d1aebb373783245592b6ed92627",
+  "refs": {
+    "sessionId": "1773653830010_wg8ioups"
+  },
+  "revisionId": "sha256:157e45ebb5e1fd9c9f7977731410aa95f0fee403c9abe5dc18e73dfe285fc16d",
+  "schemaVersion": 1,
+  "updatedAt": 1773829411692
+}

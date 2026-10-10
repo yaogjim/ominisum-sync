@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774522770385,
+  "entityType": "message",
+  "id": "1774522770384_gv486xcf",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 生成式UI框架演进综述\n\n**评级**: A (71.5分)  |  **深度阅读**: 可选  |  **建议操作**: 精读\n\n**主类别**: AI应用开发\n**次类别**: 生成式UI, 前端工程, Agent工具链\n**标签**: #OpenUI #json-render #Claude #Generative UI #MCP #流式渲染\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一篇偏工程实践和框架选型导向的生成式UI综述，方法论价值高于严格证据强度。\n**核心高价值点**: 最有价值的是把Claude式生成式UI拆解为“按需加载指导文档 + 工具调用 + 流式HTML + DOM diff平滑更新”的可复用实现模式。\n\n### 摘要\n文章汇总了OpenUI、json-render、OpenGenerativeUI等生成式UI框架，并重点分析Claude式生成式UI的工具调用、流式HTML渲染、DOM diff和平滑更新方案，兼具框架比较与工程实现参考价值。\n\n### 知识要点\n- 生成式UI的核心约束是用受控组件目录或Schema限制模型输出，而不是直接生成任意HTML\n- 流式渲染要避免频繁全量替换DOM，采用morphdom等差分更新方案更平滑\n- read_me式按需加载设计规范能降低系统提示词成本，提高模型上下文利用率\n- 生成式UI框架正在向跨端渲染、MCP集成、组件注册表和工具化脚手架方向演进\n\n### 行动项\n- 根据自身技术栈对比评估OpenUI与json-render的组件约束、流式协议和跨端能力\n- 尝试用小型Demo验证“组件目录生成提示词 + 流式Renderer + DOM diff”这套实现链路\n- 将按需加载技能文档或设计规范的模式引入Agent系统，减少主系统提示词膨胀\n\n### 存档判定\n归档: 是 — 原因: 内容覆盖主流开源方案、架构差异、流式渲染实现和设计模式，对后续框架选型与系统设计有持续参考价值\n删除: 否\n留存决策: 建议中长期保留，适合作为生成式UI框架选型与实现思路参考",
+    "role": "assistant",
+    "timestamp": 1774522770385,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:71bc2eaf957da1ba9322744002895250a4a6530fbee7aa0f81cd52432976ebcb",
+  "refs": {
+    "sessionId": "1774516500816_skrgm2gb"
+  },
+  "revisionId": "sha256:0e98936037777b4e51fea34726d32995d93b05c65d75db445e6432bfa7721fcb",
+  "schemaVersion": 1,
+  "updatedAt": 1774522770385
+}

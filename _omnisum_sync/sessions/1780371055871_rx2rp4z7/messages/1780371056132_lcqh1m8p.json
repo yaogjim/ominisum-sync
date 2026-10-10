@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780370999176,
+  "entityType": "message",
+  "id": "1780371056132_lcqh1m8p",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 1. 总结\n\n作者的 **Codex 经常断联、推理很慢**，一开始以为是网络问题。  \n后来发现真正原因是：**配置文件写死了某些参数，并强制加载了两个 MCP**，导致性能变差。\n\n他的建议是：  \n> 如果你也遇到 Codex 慢、断联，可以让 Codex 自己检查配置文件，并描述具体症状。\n\n---\n\n## 2. 解读\n\n简单说，这不是一定是“网不好”，也可能是 **配置拖慢了 Codex**。\n\n可能的问题包括：\n\n- 配置文件里固定了不合适的参数\n- 启动时强制加载某些 MCP\n- MCP 本身响应慢或初始化慢\n- 上下文太大、图片太多\n- WebSocket 连接不稳定\n- 自动压缩上下文时远程超时\n\n也就是说，Codex 慢可能不是单一原因，而是：\n\n> 网络 + 配置 + MCP + 上下文大小 共同影响。\n\n---\n\n## 3. 我的意见\n\n遇到 Codex 慢或 Reconnecting，可以按这个顺序排查：\n\n1. **先检查配置文件**\n   - 是否写死了特殊参数\n   - 是否强制加载不必要的 MCP\n\n2. **临时关闭 MCP 测试**\n   - 全部关掉，看速度是否恢复\n   - 再一个个打开，找出拖慢的那个\n\n3. **清理上下文**\n   - 图片太多、历史太长，都可能导致变慢\n\n4. **别一上来怪网络**\n   - 同网络下其他设备正常，通常说明问题可能在本机配置\n\n---\n\n## 结论\n\n这条内容的核心价值是：\n\n> Codex 慢和断联，不一定是网络问题，配置文件和 MCP 很可能是罪魁祸首。\n\n最实用的做法：\n\n> 直接让 Codex 帮你检查自己的配置文件。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780370999176,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e818b43a175f433e0906249ee914b5da1070b80db5c21bc86aae04656fab4f90",
+  "refs": {
+    "sessionId": "1780371055871_rx2rp4z7"
+  },
+  "revisionId": "sha256:962c34ff5a8e74e2611234fec4edbfd1e4f6b4a03872a52ad88f5717806eb7ca",
+  "schemaVersion": 1,
+  "updatedAt": 1780370999176
+}

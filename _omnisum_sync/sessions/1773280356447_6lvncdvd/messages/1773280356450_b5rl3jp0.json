@@ -1,0 +1,21 @@
+{
+  "createdAt": 1773280356450,
+  "entityType": "message",
+  "id": "1773280356450_b5rl3jp0",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "[Digest Prompt]\n请以结构化方式并用通俗易懂的语言 总结 文章内容（精炼！），如果需要可以举具体的例子，并用中文返回。\n要求总结结构如下：   \n- 开头用1-2句话概括主旨,   \n- 按原文逻辑分段组织内容,   \n- 每段内容提炼关键点，用简练语言表达,  \n- 保留原文中的重要数据和案例.",
+    "is_prompt": true,
+    "prompt_template_name": "Digest",
+    "role": "user",
+    "timestamp": 1773280356450,
+    "type": "text"
+  },
+  "payloadHash": "sha256:86f6377a7156e43c4166523c08fddb449cf2140f3b5210c6a6363133be91e774",
+  "refs": {
+    "sessionId": "1773280356447_6lvncdvd"
+  },
+  "revisionId": "sha256:df3c7b3cd5edd12d5ad989fc78f65222a176ea3704166a296e1a3254f0b4ff1a",
+  "schemaVersion": 1,
+  "updatedAt": 1773280356450
+}

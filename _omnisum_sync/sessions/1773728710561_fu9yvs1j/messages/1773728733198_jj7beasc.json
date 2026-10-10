@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773728733199,
+  "entityType": "message",
+  "id": "1773728733198_jj7beasc",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Letta转向开放记忆代理\n\n**评级**: B (56.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI代理基础设施\n**次类别**: 产品路线图, 记忆系统与Agent Runtime\n**标签**: #Letta #Agent Harness #Persistent Memory #Computer Use #MemFS\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一篇有方向判断但证据不足的产品路线宣言，适合做行业跟踪，不适合当方法论定稿。\n**核心高价值点**: 最有价值的是把代理记忆从专用数据库工具迁移到基于git文件与bash操作的通用上下文仓库思路。\n\n### 摘要\n文章宣布Letta从早期服务端Agent设计转向以Letta Code为核心的开放式、模型无关Agent运行时，强调持久记忆、计算机使用、技能与子代理，并列出旧功能弃用与迁移安排。\n\n### 知识要点\n- 开放式Agent Harness正在围绕computer use、memory、skills和subagents重构\n- Letta提出将记忆投影到git-backed文件系统中，以通用工具替代专用memory API\n- 部分服务端能力正迁移到客户端执行，以增强透明度、组合性与控制权\n\n### 行动项\n- 如果你在跟踪Agent框架，记录Letta对MemFS、skills和subagents的设计取舍并与Anthropic/OpenAI方案对比\n- 若已使用Letta旧功能，优先核对弃用项和迁移时间表，评估对现有系统的影响\n\n### 存档判定\n归档: 是 — 原因: 包含Letta产品战略转向、功能弃用与迁移路径，对关注Agent基础设施有参考价值\n删除: 否\n留存决策: 阶段性保留，适合用于跟踪开放式代理框架与记忆系统方向演进",
+    "role": "assistant",
+    "timestamp": 1773728733199,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:04783641d267b491037d7991c23691b7ae0d6db620a0d146231352c7a7da8a1b",
+  "refs": {
+    "sessionId": "1773728710561_fu9yvs1j"
+  },
+  "revisionId": "sha256:7056d7f6672aed0fc7201c20b90200a40682ffeaf83c96d5c4b3f988dae3cac0",
+  "schemaVersion": 1,
+  "updatedAt": 1773728733199
+}

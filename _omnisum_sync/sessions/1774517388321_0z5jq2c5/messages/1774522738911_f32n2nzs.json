@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774522738912,
+  "entityType": "message",
+  "id": "1774522738911_f32n2nzs",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude生成式UI逆向拆解\n\n**评级**: A (72.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI产品工程\n**次类别**: 逆向工程, 终端交互设计\n**标签**: #Claude #Generative UI #Reverse Engineering #Terminal Agent #WKWebView\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 这是一篇少见的把产品现象、协议线索和可运行实现串起来的高密度工程拆解文。\n**核心高价值点**: 最有价值的是将“流式工具调用 + 增量HTML解析 + DOM diff + 延迟脚本执行”总结为一套可复用的生成式UI实现架构。\n\n### 摘要\n文章通过抓包、行为观察和原型实现，拆解了Claude生成式UI的工具调用、流式DOM更新与CSP/CDN机制，并进一步在终端代理Pi中基于Glimpse与morphdom复现类似体验，工程细节丰富。\n\n### 知识要点\n- Claude生成式UI本质上是工具调用而非Markdown内嵌HTML\n- 流式渲染可通过部分JSON解析、增量DOM更新和脚本延迟执行实现\n- morphdom比反复setHTML或innerHTML替换更适合保持视觉连续性\n- 按模块惰性加载设计指南能减少模型上下文负担\n\n### 行动项\n- 如果你在做AI应用或Agent产品，可评估将生成式UI设计为独立工具调用而非文本输出\n- 在自己的流式前端原型中尝试采用DOM diff和脚本后置执行策略验证体验提升\n\n### 存档判定\n归档: 是 — 原因: 兼具产品机制拆解、实现路径和流式渲染工程细节，可作为生成式UI与代理工具设计参考。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1774522738912,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:8844d32d0b3e1704d9f1179814556535577f9cb5dcd6ddcaad785ecf18c9500a",
+  "refs": {
+    "sessionId": "1774517388321_0z5jq2c5"
+  },
+  "revisionId": "sha256:2512e984f6c260247e7df2d4abdd8129b23654e9c157afd894bc0191a22ce2f7",
+  "schemaVersion": 1,
+  "updatedAt": 1774522738912
+}

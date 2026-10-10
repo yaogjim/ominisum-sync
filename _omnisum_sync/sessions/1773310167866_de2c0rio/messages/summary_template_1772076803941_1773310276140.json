@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773310306984,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773310276140",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "**主旨概括：**  \n这篇文章介绍了一个**本地反代方案**：用开源工具**better-ccflare**把多个 Claude 账号接到同一个本地代理里，让 Claude Code 在某个账号额度用完时自动切换，减少被限额打断工作的情况。  \n核心优势是：**账号和数据都留在本地，不依赖第三方中转站**，部署也比较简单，几分钟可跑通。\n\n---\n\n## 一、为什么要这么做：解决 Claude Pro 的额度中断问题\n- Claude Code **每 5 个小时有固定 token 额度**。  \n- 一旦某个账号额度用完，就要等下一轮刷新，任务可能被迫中断。  \n- 作者不想：\n  - 一边做任务一边计算额度和时间；\n  - 去买不放心的第三方 API 中转服务；\n  - 直接花更多钱升级到更高档订阅。  \n- 所以最后选择：**自己搭一个本地代理，把多个 Claude 账号串起来轮流用。**\n\n**举例：**  \n如果你有 2 个 Claude Pro 账号，当账号 A 限额后，代理可以自动切到账号 B，使用体验会比只用一个账号更平滑。\n\n---\n\n## 二、整体思路：本地反代统一转发多个账号\n- 在本地启动一个反代服务，Claude Code 之后的请求都先打到本地地址。  \n- 再由这个代理决定：**当前请求该走哪个 Claude 账号**。  \n- 对官方来说，仍然是**正常的 OAuth 授权流量**，不是把账号托管给别人。  \n- 数据存储在**本地 SQLite**，**不上云**。  \n\n### 使用的工具\n- 工具名：**better-ccflare**\n- 特点：\n  - GitHub 开源；\n  - 主要为**Claude Code**设计；\n  - 也支持其他 API，例如：\n    - OpenAI\n    - OpenRouter\n    - VertexAI\n\n---\n\n## 三、具体搭建步骤：以 Mac（Apple Silicon）为例\n\n### 1）下载并启动二进制文件\n- 作者提供的是**Mac - Apple Silicon**场景。  \n- 可以直接在终端运行命令完成：\n  - 下载 / 授权 / 启动（文中给的是一条懒人命令）；\n  - 或手动运行：\n```bash\nBETTER_CCFLARE_HOST=127.0.0.1 ./better-ccflare-macos-arm64\n```\n\n### 2）确认服务是否启动成功\n- 成功后会看到类似提示：\n```bash\nServer running on http://127.0.0.1:8080\nDashboard: http://127.0.0.1:8080/dashboard\n```\n- 说明本地代理已经跑起来了。  \n- 如果每次手动启动太麻烦，可以让 AI 帮你写个快速启动脚本。\n\n---\n\n## 四、添加 Claude 账号：多个账号重复授权即可\n- 打开浏览器进入：\n  - `http://127.0.0.1:8080/dashboard`\n- 在**Account**页面点击**Add Account**。  \n- 通过**OAuth**授权 Claude 账号。  \n- 如果有多个账号，就重复添加。  \n\n### 建议开启两个功能\n- **Auto Fallback**：自动切换到可用账号。  \n- **Auto Refresh**：自动刷新 OAuth 授权，避免失效。\n\n**关键作用：**\n- 某个账号限流或额度耗尽时，系统能更顺畅地切换到其他账号继续工作。\n\n---\n\n## 五、修改 Claude Code 配置：让请求走本地代理\n- 在 Claude Code 的`settings.json`里，把`apiBaseUrl`改为本地地址。  \n- 文中实际给的是环境变量方式，示例为：\n```json\n{\n  \"env\": {\n    \"ANTHROPIC_BASE_URL\": \"http://127.0.0.1:8080\",\n    \"ANTHROPIC_DEFAULT_OPUS_MODEL\": \"claude-opus-4-6\",\n    \"ANTHROPIC_DEFAULT_SONNET_MODEL\": \"claude-sonnet-4-6\",\n    \"ANTHROPIC_DEFAULT_HAIKU_MODEL\": \"claude-haiku-4-5-20251001\"\n  }\n}\n```\n\n### 配完后的效果\n- Claude Code 表面上**用法不变**；  \n- 但底层请求已经先走本地代理，再由代理决定使用哪个账号。\n\n---\n\n## 六、可选但推荐：生成 API Key 增加一层保护\n- 在 Dashboard 的**API Keys**页面点击**Generate API Key**。  \n- 把生成的 Key 填回 Claude Code 配置中。  \n\n### 为什么建议做\n- 仅靠`127.0.0.1`，主要是网络层隔离；  \n- 加上 API Key 后，请求还必须带 Key 才能通过，安全性更高。  \n\n### 作者的类比\n- `127.0.0.1`：像是把大门焊死；  \n- API Key：像是内部门禁卡。  \n\n---\n\n## 七、最终效果与注意事项\n### 效果\n- 日常使用时，Claude Code 基本**感知不到区别**；  \n- 但体验更稳定，因为：\n  - 不必过度担心单账号限额；\n  - 一个账号被限流后，可以切到下一个账号；\n  - **两个账号错峰使用**，节奏更平滑。\n\n### 注意事项\n- **不要频繁切换账号。**\n- 因为对 Anthropic 来说，频繁切账号可能属于**异常行为**，有风控风险。  \n- 建议：**同一个聊天窗口（session）在一段时间内尽量固定使用同一个账号。**\n\n---\n\n## 一句话总结\n这篇文章的核心是在本地用**better-ccflare + 多个 Claude 账号 + Claude Code 配置改 Base URL**，做出一个**安全、低成本、可自动切换账号的本地代理方案**，重点解决**Claude Pro 每 5 小时额度限制带来的工作中断问题**。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1773310306984,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:46f29093a7bb5ca94e3f09157ee35c610d3236d034c5d0d78e409153d2d6c35d",
+  "refs": {
+    "sessionId": "1773310167866_de2c0rio"
+  },
+  "revisionId": "sha256:1347d31da785ac1748e502689c3636a88095ec6dd52338da49bf1480c41de9f9",
+  "schemaVersion": 1,
+  "updatedAt": 1773310306984
+}

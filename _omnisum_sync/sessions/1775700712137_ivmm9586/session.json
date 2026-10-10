@@ -1,0 +1,68 @@
+{
+  "createdAt": 1775700712137,
+  "entityType": "session",
+  "id": "1775700712137_ivmm9586",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "参考文中的目录结构与 SCHEMA 模板搭建自己的 Markdown 知识库",
+      "把导入、查询、lint、归档流程固化为可复用的代理操作规范"
+    ],
+    "archiveReason": "提供了较完整的 LLM Wiki 结构设计、操作流程和维护规范，可作为知识库与代理协作的参考模板。",
+    "classifiedAt": 1775820430287,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "LLM维基知识库构建规范",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "使用 raw、entities、concepts、comparisons、queries 分层管理知识库内容",
+      "通过 SCHEMA.md 约束命名、标签、前置元数据、页面阈值和更新策略",
+      "每次会话开始前先读取 SCHEMA、index 和最近日志以避免重复与冲突",
+      "lint 流程可系统检查孤立页面、断链、标签漂移、陈旧内容和索引完整性",
+      "Obsidian 与无头同步方案适合服务器代理持续写入、桌面端持续消费"
+    ],
+    "oneHighValuePoint": "最有价值的是把知识库维护拆成定向、导入、查询、巡检、归档五类核心操作，并用 SCHEMA、index、log 三个文件维持长期一致性。",
+    "oneLineReview": "方法框架很强、可直接落地，但更像规范文档而非有实证支撑的深度研究。",
+    "primaryCategory": "AI知识管理",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "代理工作流",
+      "个人知识库"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份面向代理与人协作维护 Markdown 维基知识库的操作规范，覆盖目录结构、Schema、导入、查询、巡检、归档与 Obsidian 集成，强调交叉引用、一致性和可持续维护。",
+    "tags": [
+      "LLM Wiki",
+      "Obsidian",
+      "知识库",
+      "Markdown",
+      "Agent"
+    ],
+    "title": "hermes-agent/skills/research/llm-wiki/SKILL.md at main · NousResearch/hermes-agent",
+    "totalScore": 76,
+    "url": "https://github.com/NousResearch/hermes-agent/blob/main/skills/research/llm-wiki/SKILL.md"
+  },
+  "payloadHash": "sha256:fd34d16042a60f46c1102c102402befd5effc513c9c840f69e93f460c1580a1f",
+  "refs": {},
+  "revisionId": "sha256:c508c4cbf0ff910ea1f6726819ae5aeaabd6df5db26d2caa0cad8468e7701c3b",
+  "schemaVersion": 1,
+  "updatedAt": 1775820430291
+}

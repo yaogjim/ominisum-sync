@@ -1,0 +1,20 @@
+{
+  "createdAt": 1774236556350,
+  "entityType": "message",
+  "id": "1774236574515_2e0v4b0p",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 大纲式精炼总结\n\n- 发布了一个新 Skill：`baoyu-youtube-transcript`，可直接输入 YouTube 链接或视频 ID 抓取字幕，无需 API Key。  \n- 支持多种输入形式与输出格式，默认生成带时间戳的 Markdown，也可导出 SRT，并支持多语言与翻译。  \n- 底层基于 YouTube `InnerTube API` 获取字幕，再通过智能断句把碎片化字幕整理成更自然的句子。  \n- 可自动解析视频描述中的章节时间戳，生成按章节组织的文档；无章节时则按段落分组。  \n- 通过 AI 后处理补充“说话人识别”，结合标题、频道名、对话内容推断发言者，并统一修正全篇标签。  \n- 内置缓存机制，首次抓取后保存元数据、原始字幕、断句结果和封面图，后续换格式或参数可直接复用。  \n\n## 一句话评论\n\n这是一个把“字幕抓取、结构化整理、说话人识别、缓存复用”整合得很完整的实用型 Agent Skill。  \n\n## 一句话高价值内容\n\n它的核心价值不只是“抓字幕”，而是用 `InnerTube API + 智能断句 + AI 说话人识别 + 缓存` 把 YouTube 视频快速转成可读、可再加工的高质量文档资产。",
+    "prompt_id": "default",
+    "role": "assistant",
+    "timestamp": 1774236556350,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bec07258f570071a332e0a7e7379659ddcfd455e736c6ec41688bdfe556fec8a",
+  "refs": {
+    "sessionId": "1774227532802_jj3mxkl4"
+  },
+  "revisionId": "sha256:69f83b832a2c862d966f2168473b38a99ad4048e2893bee593198390a6dd8d7c",
+  "schemaVersion": 1,
+  "updatedAt": 1774236556350
+}

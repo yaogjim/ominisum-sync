@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777773351179,
+  "entityType": "session",
+  "id": "1777773351179_r45dw4ob",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估现有Agent项目是否具备无人值守、异常恢复和持续交付能力",
+      "在Agent开发中补充监控、重试、日志、状态管理和人工接管机制"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777773895732,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 1,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI Agent从演示到生意断层",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Demo级Agent与商业级Agent的核心差异在于稳定性和持续交付能力",
+      "AI Agent产品化需要关注底层运行系统，而不仅是推理逻辑或功能能力"
+    ],
+    "oneHighValuePoint": "AI Agent商业化的关键不只是能力展示，而是能否稳定、持续、低干预地交付结果。",
+    "oneLineReview": "观点方向正确，但停留在判断层面，缺少可执行的方法和证据支撑。",
+    "primaryCategory": "AI产品与商业化",
+    "rating": "C",
+    "rejectReason": "内容较短，主要是观点表达，缺少案例、数据和具体落地方法，参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "AI Agent",
+      "创业观察"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出多数AI Agent开发者停留在Demo阶段，过度关注逻辑和能力，而忽视稳定运行、自动交付等底层系统建设。真正具备商业价值的Agent应能长期稳定运行，而非仅一次性跑通。",
+    "tags": [
+      "AI Agent",
+      "稳定性",
+      "Demo到Business",
+      "产品化",
+      "商业化"
+    ],
+    "title": "Bill The Investor: 99% 的 AI Agent 开发者都卡在了从 Demo 到 Business 的临界点上",
+    "totalScore": 43,
+    "url": "https://x.com/billtheinvestor/status/2050276977077338259"
+  },
+  "payloadHash": "sha256:0e37271f140340d0b0e3529497de22b1203bad5823861d2cea769514580a0c9a",
+  "refs": {},
+  "revisionId": "sha256:e05bd72191fa0d448841327c63f3c536c574913089eda35582953e03495d0df2",
+  "schemaVersion": 1,
+  "updatedAt": 1777774715787
+}

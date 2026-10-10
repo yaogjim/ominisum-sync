@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780448801243,
+  "entityType": "message",
+  "id": "1780449056407_zs07371i",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 深度总结\n\n这条内容讨论的是一种新的 AI 工程实践：**Code Mode / Search as Code**。\n\n核心意思是：\n\n> 不再让 AI Agent 一步步调用复杂 API，而是让它直接生成并运行代码，通过代码调用底层能力栈。\n\n以 Perplexity 的 **Search as Code** 为例：\n\n- 传统方式：Agent 反复调用搜索函数、解析结果、再调用下一步。\n- 新方式：Agent 直接写 Python 代码，调用 Perplexity 的搜索栈完成任务。\n- 结果：减少中间步骤，提高效率、稳定性和输出质量。\n\n郭宇认为，这类模式类似 **Cloudflare Dynamic Worker**，也可以看作把复杂 API 封装成不同的 **micro agent runtime**。\n\n它的特点是：\n\n| 模式 | 特点 |\n|---|---|\n| REST API | 固定接口，适合传统软件 |\n| MCP | 标准化工具协议，能力强但成本较高 |\n| Skill 即时生成 | 灵活但输出质量不稳定 |\n| Code Mode | 用代码组织调用，成本较低，适应性和质量较好 |\n\n一句话总结：\n\n> Code Mode 是让 Agent 从“调用工具”升级为“写代码调度能力”。\n\n---\n\n# 深入浅出解读\n\n可以把它理解成三种工作方式。\n\n## 1. 传统 API：像填表\n\n你告诉系统：\n\n```text\n调用搜索接口\n参数是 A\n返回结果 B\n```\n\n优点是稳定，缺点是不够灵活。  \n复杂任务需要反复调用很多接口，像一层层填表。\n\n---\n\n## 2. Agent 调工具：像请助理跑腿\n\nAgent 会想：\n\n```text\n我先搜索一下\n再总结一下\n再继续查\n再对比一下\n```\n\n这种方式更智能，但容易出现：\n\n- 步骤太多\n- 成本变高\n- 上下文变乱\n- 中间结果噪音多\n- 长任务稳定性下降\n\n---\n\n## 3. Code Mode：像让工程师写脚本\n\nAgent 不再一步步“跑腿”，而是直接写一段代码：\n\n```python\nresults = search(query)\nfiltered = rank(results)\nsummary = summarize(filtered)\n```\n\n它把多个动作组织成一个可执行流程。\n\n好处是：\n\n- 少绕弯\n- 更确定\n- 更容易复用\n- 更适合长任务\n- 输出质量更稳定\n\n所以 Perplexity 的 **Search as Code** 本质上是：\n\n> 把搜索能力变成 Agent 可编程调用的运行环境。\n\n---\n\n# 关键价值\n\n## 1. 降低 Agentic Loop 噪音\n\n传统 Agent 会不断：\n\n```text\n思考 → 调工具 → 观察 → 再思考 → 再调工具\n```\n\n循环越长，越容易失控。\n\nCode Mode 把这些步骤压缩成代码流程，减少无效循环。\n\n---\n\n## 2. 提升确定性\n\n代码比自然语言步骤更明确。\n\n自然语言可能含糊：\n\n```text\n帮我查一下最重要的信息\n```\n\n代码可以明确：\n\n```python\ntop_results = search(query, limit=10)\n```\n\n这让系统更可控。\n\n---\n\n## 3. 比 MCP 更轻\n\nMCP 偏协议化、标准化，适合连接各种工具。  \n但它也意味着接入、维护和运行成本更高。\n\nCode Mode 更像：\n\n> 给 Agent 一个可运行的小型能力环境。\n\n不一定要完整协议，但足够实用。\n\n---\n\n## 4. 比 Skill 更稳\n\nSkill 通常是临时生成或调用某种能力。  \n灵活，但可能不稳定。\n\nCode Mode 把能力写成代码逻辑，结构更清晰，质量更可控。\n\n---\n\n# 我的辩证思考\n\n## Code Mode 是趋势，但不是万能解\n\n它确实解决了当前 Agent 的一个核心问题：\n\n> Agent 太爱“绕圈子”，而代码能让流程更短、更稳。\n\n尤其适合：\n\n- 搜索\n- 数据分析\n- 报表生成\n- 工作流自动化\n- 多步骤工具调用\n- 长任务执行\n\n但它也有风险。\n\n---\n\n## 风险一：代码生成带来安全问题\n\n让 Agent 写代码并执行，天然存在风险：\n\n- 越权调用\n- 数据泄露\n- 代码注入\n- 无限循环\n- 资源滥用\n\n所以 Code Mode 必须配套：\n\n- 沙箱\n- 权限控制\n- 日志审计\n- 资源限制\n- 可回滚机制\n\n否则它不是生产力工具，而是事故放大器。\n\n---\n\n## 风险二：调试难度可能上升\n\n表面上看，代码更清晰。  \n但当 Agent 生成的代码越来越复杂时，问题会变成：\n\n> 谁来理解这些 AI 写出来的流程？\n\n如果缺少可观测性，Code Mode 也可能变成新的黑箱。\n\n---\n\n## 风险三：可能削弱 API 标准化\n\nREST API、MCP 的价值在于标准化。  \nCode Mode 更灵活，但也可能导致每家公司都搞自己的 runtime。\n\n短期效率高，长期可能产生新的碎片化。\n\n---\n\n# 最精炼结论\n\n**Code Mode / Search as Code 的本质：**\n\n> 让 AI Agent 不再机械调用工具，而是通过代码直接编排底层能力。\n\n它的优势是：\n\n- 更快\n- 更稳\n- 更便宜\n- 更适合复杂任务\n\n但前提是：\n\n- 安全可控\n- 可观测\n- 可调试\n- 有清晰边界\n\n最终它可能不会完全取代 REST API 或 MCP，而是成为 AI 时代新的中间层：\n\n> API 给人类软件用，Code Mode 给 AI Agent 用。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780448801243,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:17943f1b5f11473b4199181508ffe58a30ad544e5e24fc584cccfb9e4ff0d5bb",
+  "refs": {
+    "sessionId": "1780449056103_xv8ymjis"
+  },
+  "revisionId": "sha256:99bbf6b64f04f2bfe56e78a0bedda1086e17d048af2a2e43fa4759fa1ec77d48",
+  "schemaVersion": 1,
+  "updatedAt": 1780448801243
+}

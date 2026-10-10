@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777960828957,
+  "entityType": "message",
+  "id": "1777960828956_9qjsdurz",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Codex卡顿清理维护方法\n\n**评级**: B (55.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI编程工具\n**次类别**: 开发效率, 本地环境维护\n**标签**: #Codex #AI Agent #性能优化 #定时清理 #worktrees\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 一条偏经验分享的实用推文，信息不深但对Codex重度用户有即时参考价值。\n**核心高价值点**: 将Codex本地状态检查与清理流程封装成可由AI agent定期执行的维护任务。\n\n### 摘要\n文章提到通过检查Codex本地占用空间、归档过大的thread、旧worktrees和日志，并将这些检查做成定时任务，可缓解Codex卡顿问题。核心价值在于指向keep-codex-fast工具，并建议用AI agent辅助维护。\n\n### 知识要点\n- Codex卡顿可能与本地thread、worktrees、日志等状态文件膨胀有关\n- 可通过归档旧任务、旧worktrees和过大日志来改善本地工具性能\n- keep-codex-fast项目提供了维护Codex本地状态的思路或技能封装\n\n### 行动项\n- 打开keep-codex-fast仓库，查看其具体清理规则和安全边界\n- 在本地Codex环境中检查thread、worktrees和日志占用空间\n- 将安全清理流程做成定时任务或交给AI agent定期执行\n\n### 存档判定\n归档: 是 — 原因: 提供了一个可操作的Codex本地状态清理思路和相关GitHub工具链接，适合在遇到性能问题时参考\n删除: 否\n留存决策: 短期参考后可保留链接，若已实践或记录到工具维护流程中可删除原推文",
+    "role": "assistant",
+    "timestamp": 1777960828957,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:f9d1e42210ea070479deb8dde61ca3d99e9423c9c2a672c593b15d819563006f",
+  "refs": {
+    "sessionId": "1777960653715_zgmx4l23"
+  },
+  "revisionId": "sha256:402d4fc9acba7b50218cec2f0a296f8995141f4553faa343f932d9568b73a926",
+  "schemaVersion": 1,
+  "updatedAt": 1777960828957
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780388744806,
+  "entityType": "message",
+  "id": "1780388779000_dgk47v81",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章认为，Perplexity 提出的 **Search as Code（SaC）** 可能代表 AI 搜索架构的一次重要范式转移：AI agent 不再通过一次次 function calling 调用搜索 API，而是直接编写代码来编排复杂搜索流程。  \n这种方式可以显著降低 token 消耗、提升并行能力和任务准确率，尤其适合需要大量检索的复杂研究任务。\n\n---\n\n## 一、传统 function calling 的问题：搜索变成“串行瓶颈”\n\n传统 AI 搜索架构大致是：\n\n> 模型提出查询 → 搜索引擎执行预设流程 → 返回结果 → 模型继续处理\n\n这种模式在简单问答中可用，但在复杂任务中效率很低。比如 Perplexity 的 Computer 产品中，单个任务可能在几分钟内触发 **数百甚至数千次检索操作**，而每次操作都需要一次 LLM 推理往返，形成明显瓶颈。\n\n主要问题有三点：\n\n1. **上下文粒度太粗**\n   - 模型可能只需要一条精确信息，却被迫调用“重召回”搜索接口。\n   - 结果会把大量无关内容塞进 context window，浪费 token，也稀释有效信息。\n\n2. **无法利用模型已有的领域知识**\n   - 模型可能知道如何组合词汇搜索、语义搜索，或哪些来源更可靠。\n   - 但传统搜索 API 只暴露有限查询参数，模型无法灵活执行自己的搜索策略。\n\n3. **控制流低效，污染上下文**\n   - 复杂搜索往往需要并行 fan-out、去重、过滤、聚合。\n   - 用串行 function calls 实现这些流程不仅慢，还会把大量中间状态放进模型上下文，导致性能下降。\n\n---\n\n## 二、SaC 的核心方案：让模型写代码来编排搜索\n\nPerplexity 的 Search as Code 不是改良 function calling，而是直接换了一种接口范式：\n\n> 模型生成 Python 代码 → 沙箱执行代码 → 代码调用 Agentic Search SDK 的原子能力\n\n核心变化是：\n\n> 模型不再“调用搜索”，而是“编排搜索”。\n\nSaC 的三层架构包括：\n\n### 1. 模型层：负责决策与生成代码\n\n模型理解用户需求，拆解任务，决定搜索策略，并生成 Python 代码来实现这些策略。\n\n### 2. 计算沙箱：负责执行与控制流\n\n沙箱提供安全代码执行环境，处理：\n\n- 并行搜索\n- 批处理\n- 重试\n- 过滤\n- 聚合\n- 去重\n\n这些确定性操作不再占用模型上下文。\n\n### 3. Agentic Search SDK：提供搜索原子能力\n\nPerplexity 将搜索系统拆成可组合的模块，例如：\n\n- 检索\n- 排序\n- 过滤\n- fan-out\n- 渲染\n\n这不是简单把搜索 API 包成 SDK，而是把整个搜索栈重构成可被代码组合的搜索原语。\n\n---\n\n## 三、案例：CVE 漏洞分析任务\n\n文章引用了 Perplexity 的一个具体案例：\n\n任务要求：\n\n- 找出 **2023-2025 年间 200+ 个高危 CVE**\n- 每个 CVE 都必须引用厂商自己的安全公告\n- 包含受影响产品、修复版本\n- 证明修复版本确实与对应 CVE 相关\n\nSaC 的表现：\n\n- **准确率：100%**\n- **Token 消耗：从 288.7K 降到 42.9K**\n- **Token 减少：85.1%**\n- 其他被测试系统，包括 OpenAI、Anthropic、Exa 等，准确率均 **低于 25%**\n\nSaC 表现更好的原因主要有三点：\n\n### 1. 把规则直接写进搜索计划\n\n代码明确规定只搜索厂商公告，结构性排除：\n\n- NVD\n- MITRE\n- 第三方聚合器\n\n这样避免了不可靠或间接来源。\n\n### 2. 用 LLM 做中间规划\n\nSaC 不是硬编码爬虫，而是让 agent 在运行时生成搜索策略。  \n例如，代码会先判断哪些“厂商-年份”组合有足够候选页面，再优化查询并验证后继续执行。\n\n### 3. 用代码验证搜索结果\n\n任务要求每条记录必须同时满足：\n\n- 厂商原文\n- 绑定一个 CVE\n- 绑定一个受影响产品\n- 绑定一个修复版本\n\n代码会根据这个 schema 自动去重、拒绝聚合器 URL、丢弃弱证据，直到结果达标。\n\n---\n\n## 四、基准测试：SaC 在复杂搜索中优势明显\n\nPerplexity 在 5 个基准上测试了 SaC，并与以下系统对比：\n\n- OpenAI Responses API\n- Anthropic Managed Agents\n- Exa Agent\n- Parallel Tasks\n\n测试基准包括：\n\n- DSQA\n- BrowseComp\n- HLE\n- WideSearch\n- WANDR\n\n结果：\n\n- SaC 在 **5 个基准中赢了 4 个**\n- 在最难的 WANDR 基准上，SaC 得分是第二名的 **2.5 倍**\n- SaC 使用的是 **GPT 5.5 high reasoning**\n\n成本表现也较强：\n\n- SaC 的低推理设置比所有非 SaC 系统都便宜，同时性能不输\n- 中等推理设置在 **每任务 1 美元以下**，性能超过所有竞争对手\n\n---\n\n## 五、三个更深层的洞察\n\n### 1. 代码不仅是编排器，也是能力补全器\n\nSaC 中的代码不只是调用已有搜索功能，还能弥补 SDK 不具备的能力。\n\n例如，如果 SDK 不支持复杂正则过滤：\n\n- 传统方案：发近似查询，再让模型在上下文中筛噪声\n- SaC 方案：先并行收集候选结果，再用 Python 去重和精确过滤\n\n因此，代码既能“编排已有能力”，也能“制造缺失能力”。\n\n---\n\n### 2. SDK 可以通过 autoresearch 自我进化\n\nPerplexity 没有完全手工设计 SDK，而是建立了一个 **autoresearch 循环**，连续运行数周，自动提出并验证 SDK 改进。\n\n优化指标包括：\n\n- 延迟\n- 代码生成质量\n- 任务完成率\n\n这说明构建 AI 原语的工具本身，也需要采用 AI 原生的方式演化。\n\n---\n\n### 3. Agent Skills 设计要精简\n\n教模型使用定制 SDK 是难点，因为这些 SDK 不在模型预训练数据中。\n\nPerplexity 的做法是使用精心设计的 Agent Skills：\n\n- 根文件不到 **2000 token**\n- 不列出所有函数\n- 让模型通过 runtime reflection 获取函数信息\n- 重点提供简洁、可泛化的指南和少量示例\n\n目标是教模型如何组合搜索原语，而不是死记 API 文档。\n\n---\n\n## 六、文章结论：AI 搜索接口可能不再是 function calling\n\n文章认为，Search as Code 体现了一个更大的趋势：\n\n> AI agent 的下一步，不是更好的 function calling，而是用代码作为编排器。\n\n旧范式与新范式对比如下：\n\n| 旧范式 | 新范式 |\n|---|---|\n| 串行 function calls | 并行代码编排 |\n| 预设搜索 pipeline | 运行时动态组装 |\n| LLM 调 API | LLM 写代码调原语 |\n| 上下文膨胀 | 中间状态留在沙箱 |\n| 人设计接口 | autoresearch 进化接口 |\n\n简言之，SaC 的价值在于：让模型从“搜索 API 的使用者”变成“搜索流程的设计者和执行编排者”，从而更适合处理大规模、复杂、需要验证的研究型任务。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780388744806,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f22fffcf1b9a21f1b1aaae52ca775b0b169e0ec469d1b2ae51f12795e32cc3d7",
+  "refs": {
+    "sessionId": "1780387606537_eeqapupv"
+  },
+  "revisionId": "sha256:4159983d247ec14b410ecc00810092db026defc8d9c7f42be37858c34a8b822e",
+  "schemaVersion": 1,
+  "updatedAt": 1780388744806
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1774404406757,
+  "entityType": "session",
+  "id": "1774404406757_igjqf35v",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关心该议题，优先查找OpenAI官方公告或可信媒体报道进行交叉验证",
+      "仅将其作为观察信号，不要据此更新研究结论或业务判断"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774407454012,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 4,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "OpenAI放弃Sora传闻评析",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "证据质量极低，方法论和可操作性几乎为零，且基于传闻的判断容易误导后续认知。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI公司可能根据算力和收入效率调整产品线优先级",
+      "社交媒体上的行业爆料需要区分正式公告与二手传闻"
+    ],
+    "oneHighValuePoint": "唯一有参考价值的是提醒关注AI公司资源向高收入业务线集中这一可能趋势。",
+    "oneLineReview": "这是一则可当作市场噪音扫过的传闻帖，不足以作为判断OpenAI战略的依据。",
+    "primaryCategory": "AI行业动态",
+    "rating": "D",
+    "rejectReason": "内容主要是二手转述和未经证实的社交媒体评论，信息碎片化，缺乏原始出处、完整上下文和可验证证据。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "OpenAI",
+      "产品战略传闻"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章基于社交媒体转述，讨论OpenAI可能放弃Sora及视频生成业务，并将资源转向代码、企业服务与机器人方向。但全文缺乏可靠来源、数据支撑与正式公告，更多是观点拼接而非可信分析。",
+    "tags": [
+      "Sora",
+      "OpenAI",
+      "视频生成",
+      "战略收缩",
+      "社交媒体"
+    ],
+    "title": "Jesse Lau 遁一子: 一如往常，读一下大佬的评论 https://t",
+    "totalScore": 26.5,
+    "url": "https://x.com/jesselaunz/status/2036578323783111036"
+  },
+  "payloadHash": "sha256:a4ee3577fd9c2c663a6509933ed2a8f5f6756ce90c6caf53f673359a2b6111fa",
+  "refs": {},
+  "revisionId": "sha256:419d6fe71b05374d8faf3aa716a6e8f54e27aef6fc3b1e50ee893ca0420374e8",
+  "schemaVersion": 1,
+  "updatedAt": 1774407454019
+}

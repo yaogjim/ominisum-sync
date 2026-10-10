@@ -1,0 +1,66 @@
+{
+  "createdAt": 1780448829812,
+  "entityType": "session",
+  "id": "1780448829812_piq2q6jl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如对AI配图有需求，可查找原始Harness论文获取完整方法和实现细节。",
+      "尝试用结构化JSON规格描述图表需求，并设计生成、验证、修订的迭代流程。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780449712784,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Harness图表生成框架速览",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Harness框架将图表生成拆为设计者、执行者、验证者、修订者四类角色。",
+      "结构化规格文档可作为多智能体协作中的共享状态，便于定位问题并自动修订。",
+      "可结合URL抓取、提示词生成、图像生成与审美验收构建自动配图工作流。"
+    ],
+    "oneHighValuePoint": "通过共享结构化规格文档S连接设计、执行、验证和修订角色，形成可迭代的图表生成闭环。",
+    "oneLineReview": "有一定启发的AI图表生成工作流线索，但信息不完整，适合速览而非深读。",
+    "primaryCategory": "AI工具与工作流",
+    "rating": "C",
+    "rejectReason": "内容主要是社交媒体简述，缺少论文细节、实验结果和完整实现步骤，证据支撑较弱。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "多智能体框架",
+      "AI生成图表"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章简述了一个用于AI生成论文图表的Harness框架，将流程拆分为设计者、执行者、验证者和修订者，并提到作者基于该思路写了Skill，可通过URL抓取内容生成配图。",
+    "tags": [
+      "Harness",
+      "论文图表生成",
+      "AI Agent",
+      "Codex",
+      "结构化规格"
+    ],
+    "title": "向阳乔木: 读了今天Huggingface最热论文，关于如何让AI生成论文图表的Harness框架",
+    "totalScore": 53.5,
+    "url": "https://x.com/vista8/status/2061881016344772999"
+  },
+  "payloadHash": "sha256:de15ce5b751b68cb2ecde8a49dd558f64f2ceb9e09226af0cb74a74a9915e5f1",
+  "refs": {},
+  "revisionId": "sha256:45e9fd4813a899cf353412fb2c076227c0528a4870496815853d0fe48801347b",
+  "schemaVersion": 1,
+  "updatedAt": 1780449713095
+}

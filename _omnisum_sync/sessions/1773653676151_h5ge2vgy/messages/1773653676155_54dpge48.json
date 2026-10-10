@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773653624132,
+  "entityType": "message",
+  "id": "1773653676155_54dpge48",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章主要介绍了 `openai/symphony` 是什么、能做什么，以及如何开始使用它。核心意思是：Symphony 把“盯着代码代理干活”升级成“直接管理任务流”，让团队用更高层级的方式推进项目。\n\n- 第一部分：Symphony 的定位  \n  - Symphony 的目标是把项目工作拆成彼此隔离、可自主执行的实现任务。  \n  - 团队不需要一直监督编码代理，而是把重点放在“管理要完成的工作”上。  \n  - 用通俗的话说，它像一个“任务调度中枢”：发现任务、分配给代理、跟踪结果、最后安全落地。  \n\n- 第二部分：它是怎么工作的  \n  - 文中提到一个演示场景：Symphony 会监控 `Linear` 看板，一旦发现任务，就自动拉起代理去处理。  \n  - 代理完成任务后，不只是交代码，还会提供“工作证明”，包括：  \n    - CI 状态  \n    - PR Review 反馈  \n    - 复杂度分析  \n    - 讲解视频（walkthrough videos）  \n  - 当这些结果被接受后，代理可以把 PR 安全合入。  \n  - 这说明 Symphony 不只是“写代码”，而是覆盖了从接单、实现、验证到合并的一整套流程。  \n\n- 第三部分：它带来的价值  \n  - 文章强调：工程师不需要持续盯着 `Codex` 这类编码代理。  \n  - 人的角色从“监督每一步编码细节”转成“在更高层面管理任务和结果”。  \n  - 举例来说，以前可能要手动分配任务、催进度、看 CI、审 PR；现在 Symphony 试图把这些环节自动串起来。  \n\n- 第四部分：使用前提与适用场景  \n  - 文中指出，Symphony 最适合已经采用 `harness engineering` 的代码库。  \n  - 它被描述为下一阶段：从“管理编码代理”进化到“管理待完成的工作”。  \n  - 也就是说，如果团队已经有较规范的自动化、验证流程和代理协作基础，Symphony 的价值会更明显。  \n\n- 第五部分：如何开始运行  \n  - 官方建议可以让你喜欢的编码代理，按照 `SPEC.md` 去实现 Symphony。  \n  - 仓库中提供了 `elixir/README.md`，用于指导环境搭建和运行基于 Elixir 的实现。  \n  - 还给了一个直接可用的指令思路：让代理“根据 `elixir/README.md` 为我的仓库配置 Symphony”。  \n  - 这说明项目本身更像“规范 + 示例实现”，不只是一个开箱即用的单一程序。  \n\n- 第六部分：仓库与项目信息  \n  - 许可证是 `Apache License 2.0`。  \n  - 当前没有发布正式 `Releases`，也没有发布 `Packages`。  \n  - 语言占比中，`Elixir` 为 `95.4%`，`Python` 为 `3.0%`，`CSS` 为 `1.3%`，其他为 `0.3%`。  \n  - 最近一次提交信息提到：`Add SSH worker support to Symphony Elixir`，说明项目仍在持续演进。  \n\n如果一句话概括：Symphony 想把“AI 写代码”进一步升级为“AI 自动完成并交付项目任务”，让团队从盯执行，转向管结果。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773653624132,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e1306dc69f5a5ead5bdd364ea850c216037e3cd577a0911053055e700beebaa4",
+  "refs": {
+    "sessionId": "1773653676151_h5ge2vgy"
+  },
+  "revisionId": "sha256:a88642f8902642b72e998013feb4682d8b7c2e44d62301f88cc118109883984f",
+  "schemaVersion": 1,
+  "updatedAt": 1773653624132
+}

@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773821297645,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773821297645",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章主要介绍了`claude-task-master`（Task Master）这个面向 AI 开发场景的任务管理系统：它能把 PRD 转成可执行任务，并接入 Cursor、Claude Code、Windsurf、VS Code 等编辑器工作流。核心价值是让你直接在 AI 聊天界面里规划、拆解、执行和跟踪开发任务。\n\n- **项目定位**\n  - Task Master 是一个 “给 AI 驱动开发用” 的任务管理系统，主打和各种 AI 聊天工具无缝配合。\n  - 支持多个环境和工具，例如 Cursor、Claude Code、Windsurf、VS Code、Roo、Lovable 等。\n  - 仓库活跃度较高：文中显示有`1,212 Commits`、`91+`个版本发布。\n\n- **文档与上手方式**\n  - 项目提供完整文档，包括：配置指南、教程、命令参考、任务结构说明、示例交互、迁移指南等。\n  - Claude Code 用户可直接通过命令接入：\n    - `claude mcp add taskmaster-ai -- npx -y task-master-ai`\n  - 但即使装好了 MCP，也通常还需要在`.env`或`mcp`配置里补上真实 API Key。\n\n- **模型与 API Key 要求**\n  - Task Master 的部分命令依赖 AI 模型，因此需要配置至少`1`个可用模型来源。\n  - 支持的提供商包括：\n    - Anthropic\n    - OpenAI\n    - Google Gemini\n    - Perplexity\n    - xAI\n    - OpenRouter\n  - 也支持无需 API Key 的方式：\n    - `Claude Code CLI`\n    - `Codex CLI（通过 ChatGPT 订阅 OAuth）`\n  - 系统可配置`3`类模型：\n    - 主模型（main model）\n    - 研究模型（research model）\n    - 备用模型（fallback model）\n  - 其中研究模型不是必须，但文中明确说 “强烈推荐”。\n\n- **MCP 集成与配置**\n  - 文章重点介绍了通过 MCP（Model Control Protocol）把 Task Master 接入编辑器的方法。\n  - 支持按 “全局” 或 “项目级” 配置，不同编辑器对应不同路径，例如：\n    - Cursor：`~/.cursor/mcp.json`\n    - VS Code：`<project_folder>/.vscode/mcp.json`\n    - Windsurf：`~/.codeium/windsurf/mcp_config.json`\n  - 配置示例中可加入多种 API Key，如`ANTHROPIC_API_KEY`、`OPENAI_API_KEY`、`GOOGLE_API_KEY`等。\n  - 如果 MCP 设置里显示`0 tools enabled`，文中建议：\n    - 重启编辑器\n    - 检查 API Key 是否配置正确\n\n- **核心工作流：从 PRD 到任务执行**\n  - 官方建议：**始终从详细 PRD 开始**，因为 PRD 越详细，生成的任务质量越高。\n  - 新项目可以把 PRD 写到：\n    - `.taskmaster/docs/prd.txt`\n  - 旧项目可使用：\n    - `scripts/prd.txt`\n    - 或通过`task-master migrate`迁移\n  - 初始化后还会提供一个 PRD 模板：\n    - `.taskmaster/templates/example_prd.txt`\n  - 在 AI 聊天里可直接让系统做这些事：\n    - 解析需求：`Parse my PRD`\n    - 规划下一步：`What's the next task?`\n    - 实现某个任务：如 “帮我实现 task 3”\n    - 查看多个任务：如`tasks 1, 3, and 5`\n    - 扩展任务：如 “展开 task 4”\n    - 做技术调研：如研究`Node.js JWT authentication`最佳实践\n\n- **安装与常用命令**\n  - 安装方式：\n    - 全局安装：`npm install -g task-master-ai`\n    - 项目内安装：`npm install task-master-ai`\n  - 初始化命令：\n    - `task-master init`\n    - 或本地项目里用`npx task-master init`\n  - 常用命令包括：\n    - `task-master parse-prd your-prd.txt`：解析 PRD 生成任务\n    - `task-master list`：列出任务\n    - `task-master next`：看下一个任务\n    - `task-master show 1,3,5`：查看指定任务\n    - `task-master research\"...\"`：带上下文做技术调研\n    - `task-master move ...`：跨标签移动任务\n  - 例如：\n    - 把`backlog`中的任务`5`移到`in-progress`\n    - 一次性把`5,6,7`移到`done`，并附带依赖项\n\n- **工具加载与 Token 优化**\n  - MCP 支持 “按需加载工具”，减少上下文窗口占用。\n  - 默认会加载全部`36`个工具，约占`21,000 tokens`，这是为了兼容旧安装方式。\n  - 可通过`TASK_MASTER_TOOLS`调整模式：\n    - `all`：`36`个工具，约`21,000 tokens`\n    - `standard`：`15`个工具，约`10,000 tokens`\n    - `core/lean`：`7`个工具，约`5,000 tokens`\n    - `custom`：自定义工具列表\n  - 文中给出明确建议：\n    - 新用户：用`standard`\n    - 大项目：用`core`\n    - 复杂流程：用`all`或自定义\n  - 例如 Claude Code 用户可设置`core`模式，实现约`70%`的 token 降低。\n\n- **Claude Code 支持**\n  - Task Master 已支持通过 Claude Code CLI 使用 Claude 模型。\n  - 可用模型包括：\n    - `claude-code/opus`\n    - `claude-code/sonnet`\n  - 优点很直接：\n    - 不需要 API Key\n    - 直接使用本地 Claude 实例\n\n- **故障排查**\n  - 如果初始化或运行有问题，文中提供了两种备选方式：\n    - 直接用 Node 运行：\n      - `node node_modules/claude-task-master/scripts/init.js`\n    - 或克隆仓库后执行：\n      - `git clone ...`\n      - `cd claude-task-master`\n      - `node scripts/init.js`\n\n- **许可证与使用边界**\n  - 采用`MIT License with Commons Clause`。\n  - 允许做的事：\n    - 个人、商业、学术使用\n    - 修改代码\n    - 分发副本\n    - 基于它开发并销售产品\n  - 不允许做的事：\n    - 直接售卖 Task Master 本身\n    - 把 Task Master 作为托管服务提供\n    - 基于它做竞品\n\n如果你愿意，我也可以继续把这篇内容再压缩成一版 “适合发给同事看的 100 字摘要”。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "A结构化",
+    "timestamp": 1773821297645,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:868fdef6cc604eb74645bd0852821b783b999e0c387870c668c10fb89bcbb182",
+  "refs": {
+    "sessionId": "1773821297739_h716ntap"
+  },
+  "revisionId": "sha256:4334960e0aedf4b3bc6745960229823d462383a59e2eea01e7f1fafc97c252ca",
+  "schemaVersion": 1,
+  "updatedAt": 1773821297645
+}

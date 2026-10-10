@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774326740243,
+  "entityType": "session",
+  "id": "1774326740243_6702wavc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "调研现有 Agent runtime 或 sandbox 方案，比较其权限模型、资源控制与审计能力",
+      "评估自己的代理工作流是否需要统一的系统级策略层，而非按框架分别加固"
+    ],
+    "archiveReason": "提出了统一代理运行时这一值得跟踪的基础设施方向，可作为后续调研线索",
+    "classifiedAt": 1774326752179,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "代理虚拟机AVM简介",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "代理运行时可作为独立基础设施层，统一承接安全、审计与资源治理",
+      "可通过策略文件、审批提示、ACL、PII 检测和沙箱隔离构建系统级代理控制面",
+      "V8 类比强调框架负责体验，底层运行时负责可信执行"
+    ],
+    "oneHighValuePoint": "最有价值的点是将代理安全、权限、资源和审计统一下沉到系统级运行时，而不是让每个框架各自重复实现。",
+    "oneLineReview": "概念方向抓得准，但更像愿景型发布帖，论证和证据明显不足。",
+    "primaryCategory": "AI基础设施",
+    "rating": "B",
+    "rejectReason": "内容偏产品宣发，缺少技术细节、实测数据与独立验证，暂不适合精读",
+    "retentionDecision": "短期保留，作为代理运行时与安全治理方向的行业信号参考",
+    "secondaryCategories": [
+      "Agent安全",
+      "运行时系统"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 AVM 作为位于代理框架与操作系统之间的统一运行时，主打安全策略、隐私防护、资源限制、审批流程与沙箱执行，并借 V8 类比强调其作为代理基础设施底层的定位。",
+    "tags": [
+      "AI Agent",
+      "安全沙箱",
+      "资源治理",
+      "权限控制",
+      "运行时"
+    ],
+    "title": "Varun: Introducing the Agent Virtual Machine (AVM) Think V8 for agents",
+    "totalScore": 57.5,
+    "url": "https://x.com/varun_mathur/status/2036140875991097356"
+  },
+  "payloadHash": "sha256:f58a64e98db4d2559bdbbf4f5302b2b6e117dee66fbf864ea5e89fd3aa1633b6",
+  "refs": {},
+  "revisionId": "sha256:52b080436392b5096bb142ff21185dc1ac402fd69021ed943528b6892d350d00",
+  "schemaVersion": 1,
+  "updatedAt": 1774334752834
+}

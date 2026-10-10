@@ -1,0 +1,70 @@
+{
+  "createdAt": 1773827388366,
+  "entityType": "session",
+  "id": "1773827388366_5bf5pbaa",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审视你当前的AI工作流，优先优化工具接口、输出格式和上下文压缩策略，而不是只更换模型。",
+      "在代理式编码流程中加入搜索结果截断、分段文件查看和编辑后自动校验机制。",
+      "基于自身任务场景整理一套最小可用harness设计清单，用于评估代理系统稳定性。"
+    ],
+    "archiveReason": "文章提炼了AI代理系统设计中的高杠杆原则，对构建编码代理、研究代理和长期工作流都有持续参考价值。",
+    "classifiedAt": 1773918125865,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI代理环境设计方法论",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent-Computer Interface（ACI）是连接语言模型与计算机环境的关键抽象层。",
+      "上下文窗口更像工作记忆而非RAM，噪声信息会直接降低代理推理质量。",
+      "对搜索结果设上限并强制收窄查询，可显著减少上下文污染。",
+      "状态化文件查看器与明确行号设计能降低编辑任务的认知负担。",
+      "将lint或语法校验嵌入编辑环节，可阻断级联错误并提升调试效率。"
+    ],
+    "oneHighValuePoint": "相比一味追求更强模型，限制搜索输出、提供状态化文件视图和即时lint反馈这类环境设计，往往更能显著提升代理实际表现。",
+    "oneLineReview": "这是一篇偏观点驱动但方法论价值较高的AI代理工程文章，适合做系统设计认知升级。",
+    "primaryCategory": "AI工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "智能体设计",
+      "开发工具链"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章核心观点是：AI系统效果差异主要不在模型本身，而在其运行环境设计。作者结合SWE-agent、Claude Code与Codex案例，强调搜索、文件查看、编辑反馈和上下文管理等接口设计，对代理性能有决定性影响。",
+    "tags": [
+      "LLM Agent",
+      "Harness",
+      "ACI",
+      "Claude Code",
+      "SWE-agent",
+      "上下文管理"
+    ],
+    "title": "The Harness Is Everything: What Cursor, Claude Code, and Perplexity Actually Built\n驾驭一切：Cursor、Claude 代码和 Perplexity 究竟打造了什么",
+    "totalScore": 75.5,
+    "url": "https://x.com/rohit4verse/status/2033945654377283643"
+  },
+  "payloadHash": "sha256:cebbf699904defc1bfd5764a0d484abeb1f6b157ea042e0abd7ffbf709398c95",
+  "refs": {},
+  "revisionId": "sha256:4108b28fdb15063c509ebefb402f0e25cd6f9351f87141cc7750476cf02f2828",
+  "schemaVersion": 1,
+  "updatedAt": 1773918125876
+}

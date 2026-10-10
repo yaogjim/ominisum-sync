@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773991115374,
+  "entityType": "message",
+  "id": "1773991124493_8c6nz52n",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 大纲式精炼总结\n\n- **产品定位**：LangSmith 推出 `Fleet`，面向企业统一创建、使用与管理一组可共享的 AI agents。  \n- **核心变化**：当“创建 agent”变得足够容易后，真正难点转向 **权限、身份、凭证、审计与共享治理**。  \n- **关键能力**：\n  - **共享与权限**：支持按个人或全工作区共享，并细分为 `clone / run / edit` 三类权限。\n  - **Agent 身份与凭证**：支持两类模式——`Claws` 用固定共享凭证，`Assistants` 代表具体用户并用其个人 OAuth 权限执行。\n  - **Slack 身份化**：每个 agent 可拥有独立 Slack bot 身份，团队可直接 `@agent` 协作。\n  - **Inbox 人审机制**：集中查看、审批、拒绝 agent 行为，实现 human-in-the-loop。\n  - **可观测性与审计**：记录每次工具调用、决策、输出和访问数据，形成企业级追踪审计链路。  \n- **适用场景**：适合企业把零散的单点 agent，逐步扩展成跨团队、跨流程、可控可审计的 agent fleet。  \n\n## 一句话评论\n\nLangSmith Fleet 抓住了企业级 AI 落地的关键痛点：不是“怎么做出 agent”，而是“怎么安全、可控、可审计地把 agent 用起来”。  \n\n## 一句话高价值内容\n\n这篇内容最有价值的点是：它把企业 Agent 平台的核心框架讲清楚了——**共享权限 + 身份凭证 + 人工审批 + 全链路追踪**，这四件事才是 AI agent 从 demo 走向组织级部署的真正基础。",
+    "prompt_id": "default",
+    "role": "assistant",
+    "timestamp": 1773991115374,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8d1099de3b22af9a639a971faf70e84853c3921aaede6cced313b157ef9cfda0",
+  "refs": {
+    "sessionId": "1773990729229_9pogk70b"
+  },
+  "revisionId": "sha256:75e009f46c24cae8f6ef36db7d866593464566de7e9f09a13206a3091e050a4d",
+  "schemaVersion": 1,
+  "updatedAt": 1773991115374
+}

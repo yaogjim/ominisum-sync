@@ -1,0 +1,69 @@
+{
+  "createdAt": 1780307347702,
+  "entityType": "session",
+  "id": "1780307347702_zyuqo4ky",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果正在使用 Codex App，可下载对应系统安装包试用 Codex++ 管理工具。",
+      "使用前检查是否接受 CDP 注入、API 中转和第三方推荐内容加载带来的安全与隐私风险。",
+      "如需 API 中转，先备份 ~/.codex/config.toml 和 auth.json，再配置 Base URL 与 Key。",
+      "遇到菜单未出现或后端连接问题时，优先查看管理工具诊断页和日志。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780307561796,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Codex增强启动器说明",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Codex++ 支持通过管理工具配置多个 API 中转，并可在官方登录态和 API 模式之间切换。",
+      "工具提供会话删除、Markdown 导出、项目移动、Timeline、用户脚本注入等 Codex 原生缺失的增强功能。",
+      "macOS 未签名应用可能被 Gatekeeper 拦截，可通过 xattr 移除 quarantine 属性解决。",
+      "项目由 Rust 后端、Tauri + React 管理工具、注入脚本和安装打包脚本组成。"
+    ],
+    "oneHighValuePoint": "Codex++ 采用外部 launcher 与 Chromium DevTools Protocol 注入方式增强 Codex，而不修改原始安装文件，降低侵入性和维护风险。",
+    "oneLineReview": "对 Codex 用户有直接工具价值，但更像项目说明书，通用知识沉淀有限。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容主要是项目 README 和安装使用说明，夹杂大量赞助商信息，方法论和长期知识价值较低。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开源项目",
+      "Codex增强工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Codex++ 这一 Codex App 外部增强启动器，说明其通过 CDP 注入实现插件解锁、会话删除、Markdown 导出、API 中转、用户脚本、自动更新等功能，并提供安装、配置、故障排查和开发结构说明。",
+    "tags": [
+      "Codex++",
+      "Tauri",
+      "CDP注入",
+      "API中转",
+      "AI编程"
+    ],
+    "title": "BigPizzaV3/CodexPlusPlus: An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服",
+    "totalScore": 53.5,
+    "url": "https://github.com/BigPizzaV3/CodexPlusPlus"
+  },
+  "payloadHash": "sha256:4516a1c08008ab00e586bc0cabf30ecab7b348e81f5f77f32a54f42d02dfcb8c",
+  "refs": {},
+  "revisionId": "sha256:0126397f8b5951060afdc4b5f708a656cb2eb5b7726a4ac3297d6c30c880e78c",
+  "schemaVersion": 1,
+  "updatedAt": 1780307562988
+}

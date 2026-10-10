@@ -1,0 +1,79 @@
+{
+  "createdAt": 1773280119766,
+  "entityType": "session",
+  "id": "1773280119766_s9565zjs",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在Apple Silicon本地跑Qwen 3.5，可优先检查是否存在工具参数顺序变化、thinking标签漂移和模板不一致问题。",
+      "对比测试GLM等替代模型在相同工作流中的缓存命中与响应延迟，评估是否临时切换模型更划算。",
+      "在自建推理服务中尽量固定system prompt、tool schema和序列化顺序，减少前缀不稳定带来的重复prefill。",
+      "关注mlx-lm相关Issue和后续PR，待官方对混合缓存/分层缓存机制完善后再决定是否长期采用Qwen 3.5本地部署。"
+    ],
+    "archiveReason": "内容聚焦于特定模型和推理框架的缓存问题，适合在本地部署或性能排障时作为案例备查。",
+    "classifiedAt": 1773830460788,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Qwen本地缓存失效解析",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "先对内容进行总结；再进行深入浅出地解读；最后给出你的意见；要求 通俗易懂，以简体中文和 markdown 格式返回，内容精炼。",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "Qwen 3.5在MLX下的缓存失效与Mamba/SSM类不可裁剪缓存有关，导致多轮对话难以高效复用前缀。",
+      "reasoning模型会在缓存键中引入不会被后续请求重放的推理token，造成前缀早期分叉和低效命中。",
+      "工具调用的JSON字段顺序和Jinja模板渲染差异会破坏提示词稳定性，从而让Prompt Cache失效。",
+      "社区临时修复包括调整checkpoint位置、排序tool/args键、定制chat_template，但仍非彻底官方解法。"
+    ],
+    "oneHighValuePoint": "最有价值的是把Qwen 3.5缓存失效拆解为“模型架构限制 + 服务端缓存实现 + 模板/工具渲染差异”三层问题，而不是简单归咎于单一框架Bug。",
+    "oneLineReview": "一篇有工程参考价值的排障汇总，但更像问题线索集合而非成熟方案文档。",
+    "primaryCategory": "本地大模型推理与性能优化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "LLM工程实践",
+      "Prompt Cache机制",
+      "Apple Silicon本地部署"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/0xkeenz/status/2031114389215223813",
+      "https://github.com/ml-explore/mlx-lm/issues/903"
+    ],
+    "summaryBrief": "文章汇总了Qwen 3.5在MLX/LM Studio本地推理中反复预填充、Prompt Cache命中差的问题，指出根因并非单点故障，而是SSM层不可裁剪、reasoning token干扰、工具参数序列化不稳定及Jinja模板差异共同造成，并附带社区临时修复思路。",
+    "tags": [
+      "Qwen3.5",
+      "MLX",
+      "Prompt Cache",
+      "LM Studio",
+      "OpenClaw",
+      "Jinja模板",
+      "KV Cache",
+      "推理性能"
+    ],
+    "title": "可选标题1. Qwen 3.5 在本地推理中为何总是“重读提示词”Prompt Cache 失效问题解析2. Qwen ",
+    "totalScore": 64.5,
+    "url": "omnisun://digest/1773280119766"
+  },
+  "payloadHash": "sha256:ba0816a536bc20c4f3c433109f2bcc0a4b795729ca618e860d85fd4903ed7d2a",
+  "refs": {},
+  "revisionId": "sha256:1ea61d9fb9ad2e23fd546265bd2cacb8c637fa3fb64dc2a3cd78931285f148ed",
+  "schemaVersion": 1,
+  "updatedAt": 1773830460794
+}

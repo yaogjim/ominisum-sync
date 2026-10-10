@@ -1,0 +1,67 @@
+{
+  "createdAt": 1774403479302,
+  "entityType": "session",
+  "id": "1774403479303_lo9miyva",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的Agent项目中评估哪些高噪声任务适合拆分为子代理以减少主上下文膨胀",
+      "按文档示例设计至少一个研究型或代码型子代理，并限制其工具集与输出格式"
+    ],
+    "archiveReason": "内容具备较强工具文档价值，适合在实际搭建LangChain子代理时回查参数、模式与最佳实践",
+    "classifiedAt": 1774407404738,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "LangChain子代理机制说明",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "docs.langchain.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "子代理适用于多步任务、专门领域指令和上下文隔离，不适合简单单步任务",
+      "自定义子代理可独立配置名称、描述、系统提示词、工具、模型、中断策略和技能",
+      "通用子代理默认继承主代理能力，而自定义子代理默认不继承技能，且技能状态完全隔离",
+      "可通过结构化输出、命名空间上下文和lc_agent_name元数据提升可控性与可观测性"
+    ],
+    "oneHighValuePoint": "最有价值的是明确提出用子代理做“上下文隔离”，把多步工具调用的中间噪声从主代理上下文中剥离出去。",
+    "oneLineReview": "一篇实用但偏手册型的官方文档，适合查配置，不适合作为深度方法论材料。",
+    "primaryCategory": "AI智能体开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为实现多代理委派时的配置手册",
+    "secondaryCategories": [
+      "LangChain文档",
+      "多代理架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "本文介绍LangChain Deep Agents中的同步子代理机制，重点解释其在上下文隔离、任务委派、模型与工具配置、技能继承、结构化输出及常见故障排查中的作用，偏工程说明文档而非原理分析。",
+    "tags": [
+      "Subagents",
+      "LangChain",
+      "Deep Agents",
+      "上下文隔离",
+      "Agent工程"
+    ],
+    "title": "Subagents - Docs by LangChain",
+    "totalScore": 65.5,
+    "url": "https://docs.langchain.com/oss/python/deepagents/subagents"
+  },
+  "payloadHash": "sha256:589744d4210239a0a669f3f6c11ba055a7c55775802db1ec60eb9cc87762e3c0",
+  "refs": {},
+  "revisionId": "sha256:d624fc70d88e5d8fbe4618888ac115936ac07caf2ee75460bcdcdbb043d56767",
+  "schemaVersion": 1,
+  "updatedAt": 1774433959106
+}

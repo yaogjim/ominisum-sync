@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780384039895,
+  "entityType": "message",
+  "id": "1780384208061_8ekzd0cr",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章总结了 Shopify 面向 **2.3 万名工程师**使用 Claude Code 等 AI 编程工具的配置思路：核心不是简单“让 AI 写代码”，而是通过统一入口、并行 agent、真实系统接入、权限控制和团队上下文管理，把 AI 变成可控的工程协作基础设施。\n\n---\n\n## 1. 统一 AI 入口：先搭 LLM Proxy\n\nShopify 没有把工程团队绑定在某一个 AI 工具上，而是先搭了一层统一的 **LLM proxy / gateway**。\n\n- Claude Code、Copilot、Cursor 等工具都通过同一个入口访问模型。\n- 后端可以接入 OpenAI、Anthropic、Google 等不同模型供应商。\n- 好处是：\n  - 统一统计用量；\n  - 控制成本；\n  - 做模型路由；\n  - 未来更换模型时，工程师不用重搭工作流。\n\n**简单理解：**  \n不是每个工具各自直连模型，而是先经过公司统一网关，方便管理和切换。\n\n---\n\n## 2. 大任务用 Parallel Agents：不要只当聊天框\n\n文章强调，不要把 Claude Code 当成单个聊天窗口使用。面对复杂任务时，应拆成多个子任务，让多个 agent 并行工作。\n\n例如一个大功能可以这样分工：\n\n- 一个 agent 修改认证逻辑；\n- 一个 agent 编写 payment flow 测试；\n- 一个 agent 更新 API 文档。\n\n人的角色不再是逐行写代码，而是：\n\n- 查看 diff；\n- 判断输出是否靠谱；\n- 丢掉错误结果；\n- 合并可用部分。\n\n**关键点：**  \nAI 负责并行探索和执行，人负责审查、筛选和整合。\n\n---\n\n## 3. 架构问题用 Critique Loop：让 AI 自我审查\n\n写代码可以多 agent 并行，但架构决策更适合让一个 agent 进行多轮反思和批判。\n\n推荐的 prompt 思路是：\n\n1. 先给出方案；\n2. 批判该方案在规模扩大时可能出现的问题；\n3. 基于批判修订方案；\n4. 再次批判修订版；\n5. 最后给出每个决策的置信度。\n\n**核心建议：**  \n不要急着采用 Claude 的第一版答案，要让它先找出自己方案里的漏洞，再逐步改进。\n\n---\n\n## 4. 让 Claude 访问真实系统：接入 MCP\n\nShopify 开源了 `shopify-dev-mcp`，让 Claude Code 能直接接触真实开发环境，而不是只停留在文本层面。\n\n它可以帮助 Claude：\n\n- 查询最新文档；\n- 验证 GraphQL schema；\n- 运行 Shopify CLI；\n- 处理产品、metafields、themes；\n- 执行 bulk operations 等批量操作。\n\n其他团队也可以接入自己日常使用的 MCP，例如：\n\n- GitHub；\n- Slack；\n- 数据库；\n- 内部文档系统。\n\n**意义：**  \nAI 不只是“凭记忆回答”，而是能查真实资料、运行真实命令、验证真实系统状态。\n\n---\n\n## 5. 把 CLAUDE.md 提交到 Git：共享团队上下文\n\n文章建议把 `CLAUDE.md` 当作团队共享上下文，提交到代码仓库中，让所有 agent 都能看到同一套项目规则。\n\n内容应控制在 **60 行以内**，只放最重要的信息，例如：\n\n- 技术栈；\n- 常用命令；\n- 目录结构；\n- 硬性规则。\n\n原文特别提醒：  \n不要塞太多标准和说明，因为这些内容每次都会进入上下文，过多会拖慢每一轮响应。\n\n**本质：**  \n`CLAUDE.md` 是把团队里的隐性知识显性化，让 AI 按团队习惯工作。\n\n---\n\n## 6. 权限先收紧：可逆操作交给 AI，不可逆操作留给人\n\nAgent 可以被允许做一些低风险操作，例如：\n\n- 读文件；\n- 改代码；\n- 跑测试；\n- 执行 lint；\n- 查看 git status；\n- 查看 diff；\n- commit。\n\n但高风险操作应直接禁止，例如：\n\n- push；\n- deploy；\n- 删除数据库；\n- `rm -rf`；\n- 读取 `.env`；\n- 访问 secrets。\n\n**原则：**  \n默认可以接受 AI 的编辑，但任何不可逆、高风险操作都必须由人来决定。\n\n---\n\n## 7. 工程师时间分配变化：从执行转向策略验证\n\n原文提到，Shopify 的工程时间分配正在发生变化：\n\n- 过去：**70% 执行，30% 策略**；\n- 现在：**70% 策略，30% 执行**。\n\n当 AI 能写更多代码后，人的价值不再主要是“敲代码”，而是判断：\n\n- 用户流程是否合理；\n- 需求是否成立；\n- 架构应该怎么选；\n- 哪个方案更值得做。\n\n文章提到的 **20% productivity gain**，并不是来自更快完成同一个方案，而是来自更快尝试 **10 个不同方案**。\n\n**关键变化：**  \nAI 编程的瓶颈正在从“写不出来”，转向“是否知道该写什么、该选什么方案”。\n\n---\n\n## 总结\n\nShopify 的做法说明，真正有效的 AI 编程不是简单给工程师发一个 Claude Code，而是要建立一整套工程化机制：统一入口、并行 agent、真实系统接入、共享上下文、严格权限和策略优先。  \n未来拉开团队差距的，不只是 AI 写代码的速度，而是团队能否更快验证方向、做出更好的技术和产品决策。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780384039895,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2ff18bd8abb497917043dfe2f33b3d4ef25800071edcf231d0214b9007c1023d",
+  "refs": {
+    "sessionId": "1780380612540_e5lq5fzd"
+  },
+  "revisionId": "sha256:06aa00292820bec3fa221802d7481e5aac0979e814af5295a57b8980762c3c18",
+  "schemaVersion": 1,
+  "updatedAt": 1780384039895
+}

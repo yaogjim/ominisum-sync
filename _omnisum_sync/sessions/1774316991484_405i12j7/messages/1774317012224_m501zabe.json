@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774317012225,
+  "entityType": "message",
+  "id": "1774317012224_m501zabe",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 生成式UI框架项目说明\n\n**评级**: B (66.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发框架\n**次类别**: 前端工程, 生成式UI\n**标签**: #Vercel #JSON Render #Generative UI #React #跨平台\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 概念清晰、工程落地感强，但更像产品 README，方法和证据深度仍有限。\n**核心高价值点**: 最有价值的是“用 catalog + schema 约束 AI 输出 UI JSON”的模式，在提升生成灵活性的同时保持可预测性和安全边界。\n\n### 摘要\n这是一份 json-render 框架的项目说明文档，核心思想是让 AI 在预定义组件目录和 schema 约束下生成可预测的 JSON UI，再由不同平台渲染器安全渲染。内容覆盖安装、快速开始、跨平台支持、状态与动作机制，但缺少效果评估与真实案例数据。\n\n### 知识要点\n- 通过 defineCatalog 将组件、props schema 和 actions 显式声明，形成 AI 可用的受限能力边界\n- 同一套 JSON Spec 可映射到 React、Vue、Svelte、React Native、PDF、Email、Video、Terminal 等多个渲染目标\n- 支持流式 Spec 编译、动态 props、条件可见性、状态监听与动作触发，适合构建可交互生成式界面\n\n### 行动项\n- 评估是否可将现有 AI 界面生成需求重构为“受限组件目录 + JSON Spec 渲染”的架构\n- 优先阅读 Quick Start 和 SpecStream、Dynamic Props、Actions 部分，验证其与当前技术栈的适配性\n\n### 存档判定\n归档: 是 — 原因: 覆盖框架定位、核心 API、跨平台渲染器与示例，适合作为工具选型和方案参考\n删除: 否\n留存决策: 作为生成式 UI 与组件约束式 AI 输出的参考资料短中期保留",
+    "role": "assistant",
+    "timestamp": 1774317012225,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:5f8a6b3d478f910c61cbd43721e0e8ae8d9b05d24fbe410b5569a227f6f9543d",
+  "refs": {
+    "sessionId": "1774316991484_405i12j7"
+  },
+  "revisionId": "sha256:439d3f2c3b32ed39ed60bcbda6da5ff169e8bec3604e0f15d4a56b13c0412707",
+  "schemaVersion": 1,
+  "updatedAt": 1774317012225
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773112135_y4k0o4u9",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Helmor：本地优先的编程 Agent 编排工具，体验被认可\n\n## 核心观点\n\n作者实际使用了 Helmor 后认为：这不是“看都没看就点评”的工具，而是一个交互体验优秀、很适合日常开发工作的编程 Agent GUI 工具。\n\n相比 Craft Agent，作者觉得 Helmor 更符合自己的开发习惯。\n\n## Helmor 的亮点\n\n### 1. 交互体验好\n\n作者明确称赞 Helmor 的交互“做得真棒”，说明其 GUI、流程设计和使用手感较成熟。\n\n### 2. 自动化环境部署有价值\n\n作者特别提到“自动化环境部署”是一个很不错的点。  \n这意味着 Helmor 不只是调用 Agent，而是在开发环境准备、任务执行链路上进一步降低了使用门槛。\n\n### 3. 本地优先，不依赖云端\n\n原项目介绍中提到，Helmor 是一个开源、本地优先的 Conductor 替代方案，支持在本地编排各类编程代理，不必强依赖云服务。\n\n### 4. 支持从 Conductor 一键导入\n\nHelmor 可以从 Conductor 迁移工作流，降低已有用户切换成本。\n\n## 当前不足\n\n### 多账号支持不完善\n\n作者目前最大痛点是：  \nHelmor 只能登录一个账号，不能方便切换账号。\n\n对于多账号用户来说，这会影响实际使用效率。  \n不过项目作者回应称，多账号功能很快会支持。\n\n## 作者当前工具组合\n\n作者表示，自己目前主要使用两个 Agent 工具：\n\n- **CLI 工具**：mori\n- **GUI 工具**：Helmor\n\n他认为这两个工具都很有匠心，值得推荐。\n\n## 进一步建议\n\n作者建议 Helmor 可以融合 OpenAI Symphony 类似的思路，在现有 Agent 之上增加一层“任务编排层”。\n\n这样可以解决两个问题：\n\n1. 单个任务上下文不足  \n2. 多个任务堆在同一个 session 里导致效率下降\n\n本质上，是希望 Helmor 从“Agent 管理工具”进一步升级为“任务级生产力编排平台”。\n\n## 总结\n\nHelmor 是一个面向开发者的本地优先 AI 编程 Agent 编排工具，优势在于 GUI 体验好、自动化环境部署、支持 Conductor 导入，更适合日常开发场景。\n\n目前主要短板是多账号切换，但已在计划支持中。整体来看，作者认为它是一个值得长期关注和使用的开发工具。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5732dc16fcbb0c102d55b3c2883a3696754a7ef7b8d70512ad9cf22e3ab4dc96",
+  "refs": {
+    "sessionId": "1777773111927_jalkfvwr"
+  },
+  "revisionId": "sha256:a0f20ad72ffe9d6d10227fb232743c91ab9d9bc3948bfe37ad24695e474aecf2",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

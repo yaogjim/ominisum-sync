@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774001999530,
+  "entityType": "session",
+  "id": "1774001999530_qym0e8uv",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在当前常用项目中创建CLAUDE.md并写入代码规范、常见坑和运行指令",
+      "测试新会话下Claude是否稳定遵循该文件内容，并根据结果持续迭代模板"
+    ],
+    "archiveReason": "提供了一个可立即应用的项目级上下文管理方法，适合后续搭建团队规范时参考",
+    "classifiedAt": 1774002012674,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用CLAUDE.md固化项目上下文",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可通过项目根目录的CLAUDE.md持久化AI编程上下文",
+      "应优先记录历史错误、团队规范和项目专属运行规则",
+      "对非简单任务先规划、偏航即重规划是可复用的协作原则"
+    ],
+    "oneHighValuePoint": "把项目固定记忆沉淀到CLAUDE.md中，让AI在每次会话自动继承关键上下文，显著减少重复提示成本。",
+    "oneLineReview": "这是一个很实用的AI编程小技巧，但更像经验分享而非经过充分验证的方法论。",
+    "primaryCategory": "AI编程效率",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为AI编码协作流程的轻量实践备忘",
+    "secondaryCategories": [
+      "提示词工程",
+      "开发流程实践"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章核心观点是：在项目根目录放置CLAUDE.md，将历史坑点、团队代码惯例和项目运行规则写入，让Claude在每次新会话自动读取，减少重复解释上下文的成本，提高AI辅助编程一致性。",
+    "tags": [
+      "Claude Code",
+      "CLAUDE.md",
+      "项目上下文",
+      "代码规范",
+      "AI协作"
+    ],
+    "title": "阿绎 AYi: 打造Claude Code的核心开发者@bcherny，最近透露了他们团队天天用Claude的秘诀，我们之前用Claude的方式，全是低效的无用功",
+    "totalScore": 60,
+    "url": "https://x.com/AYi_AInotes/status/2034676933074801038"
+  },
+  "payloadHash": "sha256:0f4cdcdf7451be3c271b1f051c78c5cfaef68d4efb283a160b69df47205e1986",
+  "refs": {},
+  "revisionId": "sha256:0a7e836c733e7e60895c57d4ba98f66473a142f6fdada9b6cad5a3668ba433c3",
+  "schemaVersion": 1,
+  "updatedAt": 1774002012676
+}

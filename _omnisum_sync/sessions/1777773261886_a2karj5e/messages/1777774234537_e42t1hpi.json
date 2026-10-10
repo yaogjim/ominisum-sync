@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777774153769,
+  "entityType": "message",
+  "id": "1777774234537_e42t1hpi",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n陈成发布了一个本地 Node 代理工具 **codexthropic**，可以把 **Anthropic Messages API** 转换为 **OpenAI Codex Responses API**。它的核心价值是：让用户能用 **Claude Code 这个优秀的 AI 编程前端**，直接连接 **OpenAI GPT-5.5 / Codex 后端** 来写代码。\n\n---\n\n## 1. 工具定位：连接 Claude Code 和 OpenAI Codex\n\n- **codexthropic** 是一个本地运行的 Node 代理。\n- 它负责在中间做协议翻译：\n  - 前端：Claude Code，只支持 Anthropic 协议。\n  - 后端：OpenAI Codex / GPT-5.5，代码能力强，但通常只能通过 OpenAI 自家的 Codex CLI 使用。\n- 通过这个代理，用户可以把两者优势结合起来：\n\n> 用 Claude Code 的交互体验 + OpenAI GPT-5.5 的代码能力。\n\n---\n\n## 2. 核心技术难点：协议和事件模型完全不同\n\n工具需要处理的不只是简单转发，而是完整协议转换。\n\n### SSE 流式事件映射\n\nAnthropic 和 OpenAI Codex 的流式事件模型不同，需要逐个事件翻译。\n\n- Anthropic 事件包括：\n  - `message_start`\n  - `content_block_start`\n  - `content_block_delta`\n  - `content_block_stop`\n  - `message_delta`\n  - `message_stop`\n\n- Codex 事件包括：\n  - `response.created`\n  - `response.output_text.delta`\n  - `response.output_item.added`\n  - `response.completed`\n\n此外，还要维护 **block index 状态机**，确保流式输出顺序和结构正确。\n\n---\n\n## 3. Tool Use 映射：支持工具调用\n\ncodexthropic 完整支持工具调用映射。\n\n主要转换包括：\n\n- Anthropic 的 `tools` 定义 → Codex 的 `function tools`\n- Anthropic 的 `tool_use block` → Codex 的 `function_call item`\n- Anthropic 的 `tool_result` → Codex 的 `function_call_output`\n\n`tool_choice` 也会对应转换：\n\n| Anthropic | Codex |\n|---|---|\n| `auto` | `auto` |\n| `any` | `required` |\n| `none` | `none` |\n| 指定工具名 | `{type:function, name}` |\n\n---\n\n## 4. 多轮推理连续性：保留加密思维链状态\n\n这是作者认为最巧妙的部分。\n\n- Codex 有一个 `reasoning.encrypted_content` 字段，用于保存加密的推理状态。\n- 这个状态需要在多轮工具调用之间持续传递，否则推理会断裂。\n- codexthropic 的做法是：\n  - 把 Codex 的加密推理内容塞进 Anthropic 的 `thinking block` 的 `signature` 字段。\n  - Claude Code 会原样回传这些 thinking blocks。\n  - 下一轮请求时，再从 `signature` 中恢复为 Codex 的 reasoning input item。\n\n这样就能实现：\n\n> 多轮对话和工具调用中，模型的推理状态保持连续。\n\n---\n\n## 5. OAuth 认证：自动刷新和容错处理\n\ncodexthropic 会读取本地认证文件：\n\n```bash\n~/.codex/auth.json\n```\n\n认证机制包括：\n\n- JWT 过期前 **60 秒** 自动刷新。\n- 并发请求使用 **single-flight** 合并，避免重复刷新 token。\n- 刷新失败后有 **30 秒冷却时间**，防止反复失败造成请求风暴。\n- 收到 `401` 后会强制刷新并重试一次。\n- 如果 Codex CLI 在后台轮换了 `refresh_token`，代理会检测磁盘文件变化并自动重载，无需重启。\n- 写入 auth 文件时使用：\n  - 临时文件 `tmp`\n  - `fsync`\n  - `rename`\n\n以保证认证文件不会被写坏。\n\n---\n\n## 6. reasoning effort 映射：按 token 预算转换推理强度\n\nAnthropic 的 `thinking.budget_tokens` 会被映射到 Codex 的 reasoning effort：\n\n| Anthropic thinking.budget_tokens | Codex reasoning effort |\n|---|---|\n| `< 4000` | `low` |\n| `< 16000` | `medium` |\n| `< 32000` | `high` |\n| `≥ 32000` | `xhigh` |\n\n另外：\n\n- `adaptive thinking`\n- `output_config.effort:max`\n\n也会映射为 `xhigh`。\n\n---\n\n## 7. 模型映射规则\n\n由于 ChatGPT 账号的 Codex 后端目前只接受 `gpt-5.5`，所以工具做了统一映射：\n\n- 所有 Claude 模型名都会映射到：\n\n```text\ngpt-5.5\n```\n\n包括：\n\n- `opus`\n- `sonnet`\n- `haiku`\n\n而以下模型名会直接透传：\n\n- `gpt-*`\n- `o*`\n\n---\n\n## 8. 使用方式：启动简单，依赖少\n\n使用步骤很简单：\n\n### 启动代理\n\n```bash\nnpx codexthropic@latest\n```\n\n### 另一个终端启动 Claude Code\n\n```bash\nANTHROPIC_BASE_URL=http://127.0.0.1:8765 \\\nANTHROPIC_API_KEY=any \\\nclaude\n```\n\n运行要求：\n\n- Node.js **20+**\n- 已经执行过 `codex login`，完成本地认证\n- 工具本身：\n  - **零运行时依赖**\n  - 使用纯 `node:http` 实现\n  - 有 **88 个离线测试** 覆盖边界情况\n\n---\n\n## 9. 热门回复简要\n\n- 有用户提到 **Codex Pet Skill** 设计精妙，并写了长文解析，认为 Skill 的本质是“把不可控的模型能力放进可控的工程边界中”。\n- 也有人认为类似产品已经不少，本质上像一个 API 代理。\n- 有用户询问是否只能使用 Key，官方订阅模式是否可用。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1777774153769,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c8613c2c3933e8134081f47fd4587767679422f04b60129ecfb5d3ffcfdea249",
+  "refs": {
+    "sessionId": "1777773261886_a2karj5e"
+  },
+  "revisionId": "sha256:0abae3a7b644895fb201f63682f32b2e0414fa1f78dad681d8e4f3eba12b4c98",
+  "schemaVersion": 1,
+  "updatedAt": 1777774153769
+}

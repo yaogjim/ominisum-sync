@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774320905730,
+  "entityType": "session",
+  "id": "1774320905730_zxuo05vu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "优先挑选 3-5 条低成本实践落地，如别名、测试闭环、@文件引用、/clear 和白名单权限",
+      "建立最小可用的 CLAUDE.md 与 Hooks 规则，并在每次典型错误后迭代更新"
+    ],
+    "archiveReason": "内容高度可操作，适合作为 Claude Code 使用清单和配置备忘录",
+    "classifiedAt": 1774320931070,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 3,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code四十条实战技巧",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "通过 /clear、/compact、@文件引用和计划模式管理上下文，可减少会话污染并提升结果稳定性",
+      "借助 CLAUDE.md、条件规则、Hooks 和 Skills，可把经验沉淀为可复用的系统级配置",
+      "使用工作树、子代理和后台任务，可把 Claude Code 从单线程助手扩展为并行协作工具"
+    ],
+    "oneHighValuePoint": "最有价值的是“给 Claude 一个自检闭环”——在提示中明确要求运行测试并修复失败项，可显著提升输出质量。",
+    "oneLineReview": "高密度的实践清单，适合拿来即用，但证据薄弱、宣传感偏强。",
+    "primaryCategory": "AI编程工具工作流",
+    "rating": "B",
+    "rejectReason": "缺乏实证数据、案例拆解和风险边界说明，部分收益表述明显偏营销化",
+    "retentionDecision": "短期参考并择优实践，保留为工具配置清单",
+    "secondaryCategories": [
+      "开发效率提升",
+      "Claude Code实践"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章汇总了 40 条 Claude Code 使用技巧，覆盖别名配置、上下文管理、规则文件、钩子、MCP、子代理和工作树等方面，核心价值在于把 AI 编程工具从“对话助手”升级为“自动化工作流系统”。",
+    "tags": [
+      "Claude Code",
+      "AI Coding",
+      "工作流优化",
+      "提示工程",
+      "开发工具"
+    ],
+    "title": "我错误地使用 Claude 代码几个月了。这 40 种实践彻底改变了一切。",
+    "totalScore": 68,
+    "url": "https://x.com/Suryanshti777/status/2035725923983507873"
+  },
+  "payloadHash": "sha256:36fd7c7485e653328a24287a3c15e250ceecf384b7fdcde982af1a7a31a0a219",
+  "refs": {},
+  "revisionId": "sha256:4e55f9ef7ef4a3b7a1d9c14b1c695e65618fbb33af48f0aefdacc3e00df14fa6",
+  "schemaVersion": 1,
+  "updatedAt": 1774334383583
+}

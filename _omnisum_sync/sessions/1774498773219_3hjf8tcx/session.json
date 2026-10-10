@@ -1,0 +1,67 @@
+{
+  "createdAt": 1774498773219,
+  "entityType": "session",
+  "id": "1774498773219_3hjf8tcx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在做 agent 系统，可借鉴分层调试接口与低 token 成本数据格式设计",
+      "评估现有 agent benchmark 是否仍匹配你的系统能力，必要时补充更真实的复杂任务与新型 judge"
+    ],
+    "archiveReason": "提供了浏览器智能体自动迭代、评测闭环和判题器设计的若干实战线索",
+    "classifiedAt": 1774502544423,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "浏览器智能体自动研究实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "自动研究循环可通过并行运行多轮 Claude Code 会话，搜索更优 agent 方案而非依赖复杂编排代码",
+      "分层调试 CLI 和紧凑数据格式能显著降低超长 trace 的 token 成本，提高 agent 调试效率",
+      "当 agent 具备写代码和调用 API 能力后，传统判题方式会失效，需要 agentic judge 与人类评审对齐",
+      "自动迭代系统天然容易对单任务过拟合，因此需要 train/validation 划分和跨旧数据集验证"
+    ],
+    "oneHighValuePoint": "把浏览器 agent 从仅靠点击输入的工具集合升级为可写 Python 的 coding agent，更贴近大模型训练分布，显著提升数据提取与边界情况处理能力。",
+    "oneLineReview": "有启发性的工程经验贴，但更像宣传式总结，方法有价值，证据偏弱。",
+    "primaryCategory": "AI智能体工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留归档，适合作为浏览器智能体评测与迭代方法的案例素材",
+    "secondaryCategories": [
+      "浏览器自动化",
+      "评测与基准测试"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了用 Claude Code 驱动浏览器智能体自动研究的流程，包括并行实验、分层调试 CLI、基准测试、agentic judge 以及防止过拟合的做法。内容有方法启发，但证据主要来自作者陈述，细节与数据支撑不足。",
+    "tags": [
+      "Claude Code",
+      "Browser Agent",
+      "Auto-Research",
+      "Benchmark",
+      "Agentic Judge"
+    ],
+    "title": "How we built the best browser agent with Karpathy's Auto-Research",
+    "totalScore": 57.5,
+    "url": "https://x.com/mamagnus00/status/2036895484300976201"
+  },
+  "payloadHash": "sha256:00f41192912af1bee28a1333a92f3ee5e587ce5849588b0630e0953ce5effa4f",
+  "refs": {},
+  "revisionId": "sha256:61ccca5eee89d2acdd254ed4d214c713e1f1e1e6b6bb6d52c9856c5e38ac874a",
+  "schemaVersion": 1,
+  "updatedAt": 1774510139610
+}

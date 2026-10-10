@@ -1,0 +1,23 @@
+{
+  "createdAt": 1774606464557,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1774606464557",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# AIO Sandbox：给 AI Agent 用的 “一体化沙箱”\n\n## 一句话概括\n\nAIO Sandbox 是一个把**浏览器、终端、文件系统、MCP、VSCode、Jupyter**全部装进同一个 Docker 容器里的运行环境，目标是让 AI Agent 和开发者在一个统一、安全、可直接使用的空间里完成复杂任务。\n\n## 它解决了什么问题\n\n传统沙箱通常只能做一件事，比如只管浏览器、只管代码执行，或者只管命令行。  \n这会带来两个明显问题：\n\n- **能力割裂**：浏览器下载的文件，命令行和代码环境未必能直接用\n- **协作成本高**：多个工具之间来回传递文件和上下文很麻烦\n\nAIO Sandbox 的核心价值，就是把这些能力打通，变成一个 “可协同工作的完整工作台”。\n\n## 核心能力\n\n### 1. 统一环境\n所有组件运行在同一个容器里，共享同一套文件系统。  \n比如：浏览器下载的文件，可以立刻被 Shell、Jupyter、File API 直接读取和处理。\n\n### 2. 多种操作入口\n它同时提供多种使用方式：\n\n- **VNC 浏览器**：可视化远程操作浏览器\n- **VSCode Server**：在浏览器里直接写代码\n- **Terminal**：执行命令\n- **Jupyter**：运行 Python 交互式任务\n- **MCP 服务**：方便 AI Agent 标准化调用工具\n\n### 3. 面向 Agent 的接口\n它不是单纯给人用的开发环境，更是给 AI Agent 设计的基础设施。  \n通过 API 和 MCP，Agent 可以统一调用：\n\n- 浏览器自动化\n- 文件读写\n- Shell 命令执行\n- 文档处理\n\n### 4. 开箱即用\n项目强调**零配置启动**。  \n直接用 Docker 跑起来，几十秒内就能访问文档、浏览器、VSCode 和 MCP 服务。\n\n## 为什么有价值\n\n从产品视角看，这个项目本质上是在做**AI Agent 的基础设施层整合**：\n\n- 对开发者：降低环境搭建和工具拼装成本\n- 对 Agent：减少上下文切换和工具割裂\n- 对业务：更容易搭建可执行、可扩展、可控的 Agent 工作流\n\n它不是某个单点工具，而更像是**Agent Runtime 的标准化底座**。\n\n## 典型使用场景\n\n### 网页处理自动化\nAgent 可以访问网页、抓取内容、截图，再交给 Jupyter 或文件系统做后续处理。\n\n### 开发与调试\n开发者可以直接在同一个环境里写代码、跑命令、看文件、调浏览器，不需要多个工具来回切换。\n\n### Agent 集成\n它支持 Python、JavaScript、Go SDK，也能与 LangChain、OpenAI 工具调用等方案集成，适合接入更复杂的 Agent 系统。\n\n## 技术特点\n\n### 架构设计\n整体架构分为几层：\n\n- 上层是浏览器、VNC、VSCode、Shell、文件操作\n- 中间是 MCP Hub 和沙箱能力融合\n- 底层有预览代理和服务监控\n\n这说明它不仅是 “把工具堆在一起”，而是做了一层统一编排。\n\n### 接口能力\n提供一组清晰的核心 API，例如：\n\n- 获取沙箱环境信息\n- 执行 Shell 命令\n- 读写文件\n- 浏览器截图\n- 执行 Jupyter 代码\n\n这使它既适合人直接使用，也适合程序化调用。\n\n## 产品判断\n\n### 这类产品的本质\nAIO Sandbox 的真正价值，不是 “又一个开发容器”，而是：\n\n- 为 AI Agent 提供统一执行环境\n- 把浏览器、代码、文件、工具协议整合成一个系统\n- 降低 Agent 从 “会思考” 到 “能执行” 的落地门槛\n\n### 它适合谁\n更适合以下人群：\n\n- AI Agent 开发者\n- 需要浏览器自动化 + 代码执行的团队\n- 做工具链、工作流平台、智能体产品的公司\n- 希望快速搭建 Agent 运行底座的工程团队\n\n## 总结\n\nAIO Sandbox 可以理解为一个**AI Agent 专用的一体化操作系统容器**。  \n它最大的优势不是单项能力有多强，而是把分散的执行能力整合进同一个安全、统一、可编程的环境里。\n\n一句话说：**它在补 AI Agent 落地中的 “执行基础设施” 短板。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1774606464557,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2f4b565271a34006f410861c756e2de4a41666d9a47d6cfa555c9fefdd7857e0",
+  "refs": {
+    "sessionId": "1774606464652_9h43tlxx"
+  },
+  "revisionId": "sha256:8614eea3caf812569cd31d5058f3f82acc4a0eeb919d28da296b16c6e3511150",
+  "schemaVersion": 1,
+  "updatedAt": 1774606464557
+}

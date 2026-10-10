@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777005174647,
+  "entityType": "message",
+  "id": "1777005335928_0l66aa4z",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Claude Code 用户为何开始转向 Codex\n\n## 核心观点\n\n作者观察到，最近不少原本重度使用 Claude Code 的用户，正在悄悄转向 Codex，自己也属于其中之一。实际体验下来，两者已接近“五五开”，而在稍复杂的任务上，作者明显更愿意交给 Codex。\n\n## 作者当前的 AI 分工\n\n作者开通 ChatGPT Pro 不到一周后，已经形成了较清晰的工具分工：\n\n- **Claude Max**：负责主线对话、内容生产、整体统筹\n- **ChatGPT Pro + Codex CLI**：负责策略代码编写、预测市场数据基座等偏工程任务\n- **Copilot CLI**：用于零散探索和兜底，但使用频率较低\n\n从活跃任务数量看，Codex 已占到约 **48%**，说明它已成为接近主力的工作工具。\n\n## 为什么转向 Codex\n\n作者给出的核心原因很直接：  \n**复杂任务上，Codex 的表现更让人放心，而 Claude 最近有“降智”感。**\n\n也就是说，这不是简单的“尝鲜”，而是基于真实工作流中的任务分配结果做出的选择。尤其在代码、数据 pipeline、独立 review 这类更偏执行和工程落地的场景里，Codex 的优势更明显。\n\n## 更大的工作流趋势\n\n作者还提到，正在高频使用 **Hermes**，尝试把它做成统一入口。这反映出一个更大的趋势：\n\n- 用户不再依赖单一 AI\n- 而是开始把不同 AI 当作“不同岗位的同事”来协作\n- 再通过一个统一入口或工作流系统进行调度和管理\n\n本质上，大家比的已经不只是模型能力，而是**谁更适合进入真实生产流程**。\n\n## 评论区反馈\n\n评论区整体也印证了这个趋势：不少人认为“转向 Codex 是大势所趋”，也有人直言最近 Claude 的体验下滑。不过，也有观点认为 Hermes 作为唯一入口仍然比较费力、性价比一般。\n\n## 一句话总结\n\n这条内容传递出的关键信号是：  \n**在真实高频工作场景中，越来越多用户开始把 Codex 当成更可靠的工程执行者，而 Claude 则更多保留在内容和统筹角色。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777005174647,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:230b57b4da152f7e6500cb3e9626678f934257fef9fb375a47caa968aa8ae34e",
+  "refs": {
+    "sessionId": "1777005335918_vtqsuyjg"
+  },
+  "revisionId": "sha256:bf7aafef64466a7978059c8e2b91f417fe9a0c345745ec5363ba285a9ddcd7e5",
+  "schemaVersion": 1,
+  "updatedAt": 1777005174647
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773729345926,
+  "entityType": "message",
+  "id": "1773729345925_sl69qg91",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Tmux并行AI编程协作法\n\n**评级**: B (68.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI编程工作流\n**次类别**: 开发效率工具, 多Agent协作\n**标签**: #tmux #Claude #Codex #git worktree #Agent团队\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 这是一个很实用的终端多Agent编程套路，但更像可操作的经验贴，而不是经过验证的方法论总结。\n**核心高价值点**: 把 tmux 的 send-keys 和 capture-pane 当作多Agent之间的消息总线，是文中最有启发性的设计点。\n\n### 摘要\n文章介绍了一种基于 tmux、git worktree、Claude 与多个 Codex 的并行 AI 编程协作方式。核心是让 Claude 负责拆解任务，多个 Codex 分角色执行，并通过 tmux 的 send-keys 与 capture-pane 形成消息总线，实现自动化任务分发与结果读取。\n\n### 知识要点\n- 可用 git worktree 为不同 Agent 创建互不干扰的独立工作区\n- tmux 可通过 pane 隔离角色，并用 send-keys/capture-pane 实现自动化交互\n- 多Agent协作可采用“一个负责拆解，多个负责执行/测试/审查”的角色分工\n\n### 行动项\n- 按文中步骤在一个小型项目中搭建 Claude+Codex+tmux 的四窗格协作环境\n- 补充一层脚本或编排器，统一任务分发、日志汇总和结果回传\n- 验证该工作流在真实开发任务中的收益，如并行效率、冲突率和测试覆盖提升\n\n### 存档判定\n归档: 是 — 原因: 提供了可立即复现的多Agent协作思路、基本架构和关键命令，适合后续搭建时查阅\n不推荐: 内容较短，缺少性能对比、失败案例、适用边界和实证数据，难以支撑更高评级\n删除: 否\n留存决策: 短期参考后保留，适合作为搭建多Agent终端工作流的速查材料",
+    "role": "assistant",
+    "timestamp": 1773729345926,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:ed45709377bab6f42690b2833c8d15ef89940f3957b28087d05f3246f9483266",
+  "refs": {
+    "sessionId": "1773729324919_0swq0d2r"
+  },
+  "revisionId": "sha256:dd8b29eac6a727da218e385d99155866c0d4a140cb6dff07786ce2ef307aa1ce",
+  "schemaVersion": 1,
+  "updatedAt": 1773729345926
+}

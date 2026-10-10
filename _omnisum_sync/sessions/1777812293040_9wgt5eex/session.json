@@ -1,0 +1,64 @@
+{
+  "createdAt": 1777812293040,
+  "entityType": "session",
+  "id": "1777812293040_9wgt5eex",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在复杂提示中加入“请先复述你理解的需求”步骤",
+      "无需归档，若已掌握该技巧可直接删除"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777812526498,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用复述改进AI提示沟通",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息密度低，证据不足，方法论不完整，长期保留价值有限。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "人机沟通可借鉴人类沟通中的复述确认技巧",
+      "在复杂输出前先让AI反馈其理解，有助于减少迭代成本"
+    ],
+    "oneHighValuePoint": "让AI复述用户需求，可作为检查理解偏差的轻量提示策略。",
+    "oneLineReview": "有一个可尝试的小提示技巧，但不足以构成值得保存的方法论内容。",
+    "primaryCategory": "AI提示与交互",
+    "rating": "D",
+    "rejectReason": "内容非常短，主要是一个提示技巧片段和无关产品更新回复，缺乏展开、案例和验证。",
+    "retentionDecision": "短期速览后可删除",
+    "secondaryCategories": [
+      "沟通技巧",
+      "工具动态"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章提出一个简短观点：人类沟通中的“复述确认”技巧也可用于AI交互，例如要求AI把需求用ASCII艺术复述出来，以减少反复试错。但内容未展开论证，回复部分主要是产品更新信息。",
+    "tags": [
+      "AI提示词",
+      "复述确认",
+      "人机沟通",
+      "Twitter"
+    ],
+    "title": "Jimmy Koppel: Human communication skills work for AIs too \"Repeat back to me what I just said\"…",
+    "totalScore": 34.5,
+    "url": "https://x.com/jimmykoppel/status/2048886165260956005"
+  },
+  "payloadHash": "sha256:b880ae43951bc8bd03f7724bad06fe3c686ceb32556cc8ebf93b1cc91aece736",
+  "refs": {},
+  "revisionId": "sha256:0db4604aec729fa444f7d123ff5082fe72f26069eb0cab84da71ef57a709b225",
+  "schemaVersion": 1,
+  "updatedAt": 1777813450282
+}

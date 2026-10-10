@@ -1,0 +1,65 @@
+{
+  "createdAt": 1780449202146,
+  "entityType": "session",
+  "id": "1780449202146_m2p89vhc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如对 Codex 集成有需求，直接查阅官方 Codex Python SDK 文档。",
+      "尝试安装 openai-codex 并验证是否适合现有 Python 工作流。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780449994503,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 2,
+      "long_term_leverage": 3,
+      "methodology_value": 1,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex Python SDK发布",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量过低，长期参考价值有限；保留价值仅在于知道 openai-codex 包和 Codex Python SDK 已发布。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "安装包名为 openai-codex，可通过 pip 安装。",
+      "SDK 通过本地 Codex 应用服务器进程与标准输入输出/JSON-RPC 通信，而不是每次输入都启动新的 Node 进程。"
+    ],
+    "oneHighValuePoint": "Codex 可通过 Python SDK 嵌入应用，并复用现有 Codex 认证。",
+    "oneLineReview": "适合快速获知发布动态，但不值得长期保存。",
+    "primaryCategory": "AI开发工具",
+    "rating": "D",
+    "rejectReason": "内容只是产品发布短讯，缺少完整文档链接、示例代码、使用场景、限制说明和实测案例，热门回复大多与正文无关。",
+    "retentionDecision": "短期确认官方文档后可删除",
+    "secondaryCategories": [
+      "Python SDK",
+      "Agent工具链"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一条关于 Codex Python SDK 发布的 X 帖，提到可在 Python 应用和工作流中嵌入 Codex，支持运行轮次、流式进度、恢复会话、传图和沙箱控制，并可通过 pip install openai-codex 安装。",
+    "tags": [
+      "Codex",
+      "Python",
+      "SDK",
+      "OpenAI",
+      "开发工具"
+    ],
+    "title": "Vaibhav (VB) Srivastav: We just released the Codex Python SDK 🔥 You can now embed Codex directly into y…",
+    "totalScore": 31,
+    "url": "https://x.com/reach_vb/status/2061569472792572163"
+  },
+  "payloadHash": "sha256:c885adfc6816f7cb4f447741c2c1315d158139b71a9e8500d304120fa5ac36d1",
+  "refs": {},
+  "revisionId": "sha256:b629994e7e6390105c2bc8cc405b4b650d5a816382d1298863f568c50dc4cfb7",
+  "schemaVersion": 1,
+  "updatedAt": 1780449994858
+}

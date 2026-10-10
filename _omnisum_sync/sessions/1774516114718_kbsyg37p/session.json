@@ -1,0 +1,78 @@
+{
+  "createdAt": 1774516114718,
+  "entityType": "session",
+  "id": "1774516114718_kbsyg37p",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据自身技术栈对 OpenUI、json-render、OpenGenerativeUI 做一次选型矩阵评估",
+      "尝试实现一个最小可用的生成式UI原型，验证流式渲染与组件白名单机制",
+      "把“懒加载技能/规范文档”引入你的 Agent 或 Copilot 提示系统中"
+    ],
+    "archiveReason": "系统梳理了生成式UI的核心框架、实现路径、流式渲染机制与设计约束，适合作为后续选型和架构参考。",
+    "classifiedAt": 1774522788934,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "生成式界面框架全景对比",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "生成式UI可通过受限组件目录、系统提示生成和流式渲染实现可控输出",
+      "DOM diff 比简单 innerHTML 更适合流式 HTML 渲染与渐进动画",
+      "按需加载模块化设计规范是一种高效的 LLM 上下文管理策略",
+      "OpenUI 与 json-render 在 token 效率、跨平台支持和组件生态上各有取舍"
+    ],
+    "oneHighValuePoint": "最有价值的是把 Claude 的生成式 UI 抽象为“按需加载设计规范 + 工具调用输出 HTML + DOM diff 渐进渲染”的可复用架构模式。",
+    "oneLineReview": "这是一篇高信息密度的生成式UI工程综述，尤其对 Claude 式流式界面的实现拆解很有参考价值。",
+    "primaryCategory": "AI工程与生成式UI",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "前端框架对比",
+      "LLM应用架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://github.com/thesysdev/openui",
+      "https://github.com/vercel-labs/json-render",
+      "https://michaellivs.com/blog/reverse-engineering-claude-generative-ui/",
+      "https://github.com/CopilotKit/OpenGenerativeUI"
+    ],
+    "summaryBrief": "文章汇总了 OpenUI、json-render、OpenGenerativeUI 等生成式界面方案，并重点拆解 Claude 的 generative UI 实现机制，包括工具调用、流式 HTML 注入、DOM diff、设计规范懒加载等，兼具框架对比与工程复盘价值。",
+    "tags": [
+      "生成式UI",
+      "OpenUI",
+      "json-render",
+      "Claude",
+      "框架评测",
+      "流式渲染",
+      "AI产品工程"
+    ],
+    "title": "生成式界面技术全景解读",
+    "totalScore": 73.5,
+    "url": "omnisun://digest/1774516114718"
+  },
+  "payloadHash": "sha256:62a74ea6ee421ac018f1ff1f2dc046f4d1430988f6461eee540f4e2d5d284b3d",
+  "refs": {},
+  "revisionId": "sha256:6c6656222067f863a8ab863ce78bc29d0c023096ec6f511bcaa6d505bfac3d7a",
+  "schemaVersion": 1,
+  "updatedAt": 1774522788951
+}

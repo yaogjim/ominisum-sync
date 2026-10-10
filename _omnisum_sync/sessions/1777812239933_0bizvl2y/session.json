@@ -1,0 +1,66 @@
+{
+  "createdAt": 1777812239933,
+  "entityType": "session",
+  "id": "1777812239933_0bizvl2y",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果自建 AI 编程 Agent 链路，应增加模型版本回归测试与成功率监控。",
+      "关注不同模型版本在 plan、实现、评审、返工各阶段的失败模式。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777812442674,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编程Agent链路失效观察",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "自动化开发 Agent 链路可包括 plan、implementation、cross-review、rework 等环节。",
+      "模型能力退化会显著影响多 Agent harness 的端到端成功率。",
+      "工程 harness 与模型能力之间存在相互制约关系，并非单纯工程问题。"
+    ],
+    "oneHighValuePoint": "Agent harness 的效果并不只取决于工程编排，底层模型能力波动可能直接导致整条自动化链路失效。",
+    "oneLineReview": "有一个值得注意的 Agent 工程现象，但缺少展开和证据，适合速览不宜精读。",
+    "primaryCategory": "AI Agent工程实践",
+    "rating": "C",
+    "rejectReason": "内容主要是个人经验性短帖，缺少具体实现细节、数据统计和可复用方法，参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "AI编程工具",
+      "模型能力评估"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者提到曾用 Claude Code 与 Codex 构建自动化开发 harness，可根据 issue 自动完成 plan、实现、交叉评审和返工，一天提交百余 PR。但近期 Opus 能力下降后，整条链路成功率不足 50%，反映模型能力波动会反向制约 Agent 工程系统。",
+    "tags": [
+      "Claude Code",
+      "Codex",
+      "AI Agent",
+      "Harness",
+      "自动化开发"
+    ],
+    "title": "lifcc: 之前用claudecode + codex 做了一个harness的项目，只要提交issue就自动有agent 做plan、impl、cross-review、…",
+    "totalScore": 49.5,
+    "url": "https://x.com/mylifcc/status/2048594890087673896"
+  },
+  "payloadHash": "sha256:714fadab9ac26cada3fbb5cf5a6f105d8a88a54448626a77a1df4abb94fa9834",
+  "refs": {},
+  "revisionId": "sha256:0156c15cbe4d0754e37de9a7dd865904cc483cee06bb8f836281e779a260fbf5",
+  "schemaVersion": 1,
+  "updatedAt": 1777813363421
+}

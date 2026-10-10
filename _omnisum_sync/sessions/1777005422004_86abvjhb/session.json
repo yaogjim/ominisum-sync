@@ -1,0 +1,70 @@
+{
+  "createdAt": 1777005422004,
+  "entityType": "session",
+  "id": "1777005422004_86abvjhb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估你当前的 Agent 系统是否存在“直接向 Agent 暴露 API Key/OAuth Token”的风险点，并梳理外部服务访问路径。",
+      "将文中“凭证不交给 Agent、只在出口层注入”的思路纳入你的 Agent 安全架构设计清单。",
+      "验证现有运行环境是否支持 HTTPS_PROXY、网络出口锁定和本地 CA 信任链，以判断该方案的适配成本。",
+      "进一步调研证书固定、非标准客户端和绕过代理场景，确认该架构在生产环境中的边界条件。"
+    ],
+    "archiveReason": "提出了面向 AI Agent 的凭证隔离新架构，兼具问题定义、设计思路与实现细节，适合作为后续安全设计参考。",
+    "classifiedAt": 1777005730735,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Agent Vault凭证代理方案",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "传统面向确定性程序的密钥分发模式不适合易受提示注入影响的 AI Agent。",
+      "凭证代理的核心价值在于将 Agent 与真实凭证解耦，在网络出口层统一附加认证信息。",
+      "利用 HTTPS_PROXY 和本地可信 CA，可在 API、CLI、SDK、MCP 等多种调用路径下统一接管出站请求。",
+      "完整方案不仅依赖代理设置，还要求网络层强制所有出站流量经过代理，避免 Agent 绕过控制面。",
+      "MITM 型代理虽然增强了可观测性和策略控制能力，但也带来证书信任、兼容性与安全边界的新挑战。"
+    ],
+    "oneHighValuePoint": "最有价值的点是把“Agent 不可信”作为前提，重新定义密钥管理边界：不要把密钥交给 Agent，而是在所有出站 HTTPS 流量的底层统一做代理注入与策略控制。",
+    "oneLineReview": "这是一篇对 AI Agent 凭证管理痛点判断准确、架构思路清晰，但证据与落地约束仍不够充分的高价值文章。",
+    "primaryCategory": "AI安全与基础设施",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "密钥管理",
+      "代理系统架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕 AI Agent 场景下的密钥泄露风险，提出用 HTTP/HTTPS 凭证代理替代传统直接下发密钥的模式。核心做法是让 Agent 通过本地代理访问外部服务，由代理层注入凭证、统一审计与策略控制，从而隔离 Agent 与真实密钥。",
+    "tags": [
+      "AI Agent",
+      "Secrets Management",
+      "Credential Proxy",
+      "HTTP Proxy",
+      "Security Architecture"
+    ],
+    "title": "Agent Vault：开源凭证代理和代理保管库",
+    "totalScore": 73.5,
+    "url": "https://x.com/dangtony98/status/2046982854710857762"
+  },
+  "payloadHash": "sha256:2c0b907b7713d6963bb035bbcd3cb3adb8d25af06519bd12765c3148feec4591",
+  "refs": {},
+  "revisionId": "sha256:e1b9cf69ea1d3e24dfb7d29a17ef0c41c45d2536b22475d2ecb671a0960ea2b2",
+  "schemaVersion": 1,
+  "updatedAt": 1777006027173
+}

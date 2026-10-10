@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774317063268,
+  "entityType": "session",
+  "id": "1774317063268_gjnnxqg0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在设计企业智能体时先明确采用用户代理授权还是固定服务账号授权",
+      "为固定凭证型智能体补充高风险操作的人审或审批机制"
+    ],
+    "archiveReason": "对理解智能体权限模型有概念澄清价值，适合作为产品设计参考案例留存。",
+    "classifiedAt": 1774318860189,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "智能体授权模式简析",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "智能体授权可分为 on-behalf-of 与 fixed credentials 两类",
+      "共享型智能体若使用固定凭证，需要配合 human-in-the-loop 降低高风险操作",
+      "跨渠道共享助手需要建立外部渠道用户 ID 与内部身份系统的映射"
+    ],
+    "oneHighValuePoint": "最有价值的点是明确区分了智能体以终端用户身份执行与以固定凭证执行两种授权模型，这直接影响权限边界、渠道支持和安全策略设计。",
+    "oneLineReview": "这是一篇概念清晰但偏产品宣发的短文，对理解智能体授权边界有用，但证据和深度不足。",
+    "primaryCategory": "AI Agent系统设计",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "权限与身份认证",
+      "产品架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕智能体授权展开，区分了“代表用户执行”和“使用固定凭证执行”两种模式，并结合 LangSmith Fleet 的 Assistant 与 Claw 设计说明其适用场景、渠道限制及人工审核的重要性。",
+    "tags": [
+      "Agent Authorization",
+      "On-behalf-of",
+      "Fixed Credentials",
+      "LangSmith Fleet",
+      "Human-in-the-loop"
+    ],
+    "title": "x.com/hwchase17/status/2036120567938719940",
+    "totalScore": 59.5,
+    "url": "https://x.com/hwchase17/status/2036120567938719940"
+  },
+  "payloadHash": "sha256:61bafae0196fefc8c84cd5ed67b055ae567823e17e7a216038fa5b521a6d2b36",
+  "refs": {},
+  "revisionId": "sha256:b3cd18af5ac5550f1ac11b4053575002a59e44e172622e79b5f988ef194324b0",
+  "schemaVersion": 1,
+  "updatedAt": 1774334802108
+}

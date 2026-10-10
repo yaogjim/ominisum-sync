@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773730838636,
+  "entityType": "session",
+  "id": "1773730838636_85etw5bo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如该主题相关，先检索NVIDIA官方公告或技术文档确认产品真实性",
+      "仅将其作为市场噪声样本参考，不作为技术学习材料"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773730858432,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 4,
+      "relevance": 3,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "NemoClaw社媒发布简评",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息噪声高且证据不足，无法支撑学习、决策或后续复用价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "企业对可访问敏感数据的AI代理平台存在明确需求",
+      "社交媒体上的AI产品消息需要通过官方文档或发布渠道二次验证"
+    ],
+    "oneHighValuePoint": "唯一值得关注的是其折射出市场对“企业级安全AI代理基础设施”的叙事方向。",
+    "oneLineReview": "像营销口号多过信息内容，几乎不具备可验证的学习价值。",
+    "primaryCategory": "AI基础设施",
+    "rating": "D",
+    "rejectReason": "内容高度营销化，缺乏技术细节、方法论和可靠证据，主要是未经验证的产品宣传。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "AI Agents",
+      "企业安全"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一则关于所谓NVIDIA发布“NemoClaw”AI agent操作系统的社交媒体短帖，核心卖点是企业级、安全、可接入敏感数据，但全文没有提供正式来源、技术架构、验证数据或实际案例支撑。",
+    "tags": [
+      "NVIDIA",
+      "AI Agent OS",
+      "企业级安全",
+      "OpenClaw",
+      "社交媒体快讯"
+    ],
+    "title": "Ejaaz: there we go",
+    "totalScore": 25.5,
+    "url": "https://x.com/cryptopunk7213/status/2033638397051597020"
+  },
+  "payloadHash": "sha256:62c0534d8aa06e3a766b25ee394a0030c7081f0bbcf36c0614e6249bc31692bb",
+  "refs": {},
+  "revisionId": "sha256:4472a305c72df3b0f7ec0e21bd3e716cf68277720b3c73483eb5266186c34f18",
+  "schemaVersion": 1,
+  "updatedAt": 1773730858435
+}

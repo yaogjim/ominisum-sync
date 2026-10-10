@@ -1,0 +1,20 @@
+{
+  "createdAt": 1776645406515,
+  "entityType": "message",
+  "id": "1776645632317_r8pcdguc",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# wterm：一个更适合网页的终端方案\n\n## 核心内容\n\nChris Tate 发布了 `wterm`，这是一个运行在网页里的终端模拟器。它最大的特点是：**采用 DOM 渲染，而不是 Canvas 渲染**。这意味着它更像网页原生内容，而不只是“画出来”的终端界面。\n\n## 主要亮点\n\n### 1. 更符合网页使用习惯\n由于使用 DOM 渲染，`wterm` 原生支持很多网页层面的能力，比如：\n\n- 文本选择\n- 复制 / 粘贴\n- `⌘ + F` 页面查找\n- 无障碍访问\n\n这让它在 Web 环境里的可用性更强，也更贴近日常使用体验。\n\n### 2. 终端能力并不弱\n`wterm` 并不是只强调易用性，也具备较完整的终端功能，包括：\n\n- 脏行跟踪\n- 24 位色彩支持\n- 主题能力\n- 基于 WebSocket 的传输与断线重连\n\n说明它不仅能“显示终端”，也在认真解决性能和连接稳定性问题。\n\n### 3. 技术实现很轻量\n它的核心是用 Zig 编写，并编译成 **约 12 KB 的 WASM**。这意味着：\n\n- 体积小\n- 加载轻\n- 适合嵌入 Web 应用\n\n同时它支持 `just-bash`、本地运行和 SSH 场景，具备实际落地价值。\n\n## 价值判断\n\n### 为什么值得关注\n在很多终端库为了性能转向 Canvas 的背景下，`wterm` 反过来选择 DOM，是一个很大胆的方向。它试图在**性能、网页原生能力、可访问性**之间找到新的平衡。\n\n## 一句话总结\n\n`wterm` 是一个轻量、面向 Web 原生体验的终端模拟器：**用 DOM 换来更好的交互与可访问性，同时尽量保留终端性能和完整能力。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1776645406515,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c478de933b97526a04c3e54134fea3cdcfe2447807184ba94dc51210fad82538",
+  "refs": {
+    "sessionId": "1776645632315_umbh4yxv"
+  },
+  "revisionId": "sha256:21bf6cd4794a81917e5a9b9d780c83f3e08f3b114d72a7f3b188cd2595204ff7",
+  "schemaVersion": 1,
+  "updatedAt": 1776645406515
+}

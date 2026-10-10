@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780616125865,
+  "entityType": "message",
+  "id": "1780616125864_4g6uzphv",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Codex专家工作流指南\n\n**评级**: A (72.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI编程工具\n**次类别**: 软件工程工作流, 提示词工程\n**标签**: #Codex #AI编程 #工程工作流 #AGENTS.md #代码审查\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 实操性很强的 Codex 工程化使用清单，但证据支撑和原创深度一般，部分内容有明显 AI 生成式重复感。\n**核心高价值点**: 把 Codex 纳入“目标、范围、约束、验收、计划、测试、审查、沉淀”的可控工程工作流，而不是依赖单次提示词。\n\n### 摘要\n文章系统总结了专家级使用 Codex 的工程方法，包括明确目标范围、只读分析、维护 AGENTS.md、使用 /plan、/goal、权限控制、测试验证、review、subagents、Skills、MCP 和复盘沉淀。\n\n### 知识要点\n- 复杂任务应先让 Codex 只读分析项目并输出计划，再由人类确认后执行\n- AGENTS.md、Skills 和自定义 Slash Command 可以沉淀团队规范和重复流程\n- 高风险任务需要通过权限模式、明确禁止项和可验证停止条件控制 Codex 行为\n- 代码修改后必须通过 lint、typecheck、test、build 和 review 验证\n\n### 行动项\n- 为常用项目创建或完善 AGENTS.md，写入构建、测试、Review 和依赖规则\n- 整理个人常用的 Codex 任务模板，如读项目、修 bug、重构、补测试和 review\n- 在复杂开发任务中采用先 /plan、确认后小步实现、完成后 /review 的流程\n- 将高频工作流封装为 Skill 或自定义 Slash Command\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的 Codex 使用流程、权限控制、规划、测试、审查和经验沉淀方法，具备较强实操价值\n删除: 否\n留存决策: 长期保留，可作为使用 Codex 进行工程开发的工作流参考",
+    "role": "assistant",
+    "timestamp": 1780616125865,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:f9db8c1e02862a08bb63f909731bfa266104dbda09321b7baebc992acd722682",
+  "refs": {
+    "sessionId": "1780366314011_fc2kn22b"
+  },
+  "revisionId": "sha256:20e0a761d529cd570884ab38db58010333ddf5f9928a75274afe63dff1989d99",
+  "schemaVersion": 1,
+  "updatedAt": 1780616125865
+}

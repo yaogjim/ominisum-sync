@@ -1,0 +1,23 @@
+{
+  "createdAt": 1775026926440,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1775026926440",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章主旨\n\n这篇文章围绕一次 Claude Code 源码意外泄露事件，梳理了 Anthropic 在产品设计、反爬取 / 反蒸馏、安全校验、隐藏机制和未来路线图上的一些关键做法。作者的核心判断是：**真正敏感的不是代码本身，而是代码里暴露出的产品策略、内部功能开关和未来方向。**\n\n## 1. 事件背景：一次源码泄露，引出更大的争议\n\n- Anthropic 意外随 Claude Code 的 npm 包发布了`.map`文件，导致**完整可读源码被公开**，随后虽然下架，但源码已被广泛镜像和分析。\n- 这已经是 Anthropic **一周内第二次意外曝光**，前一次是模型规格泄露，因此外界开始猜测其内部流程是否存在问题。\n- 时间点尤其敏感：就在**10 天前**，Anthropic 还曾向 OpenCode 发法律威胁，要求其移除 Claude 认证能力，因为第三方工具借此以**订阅费率**而不是**按 token 付费**的方式调用 Opus。\n- 作者因此认为，这次泄露让 Anthropic 的一些 “防外部使用”“防模仿” 的机制显得更有针对性，也更值得关注。\n\n## 2. 反蒸馏设计：通过 “假工具” 污染别人训练数据\n\n- 在`claude.ts`中，存在名为`ANTI_DISTILLATION_CC`的标志；开启后，请求会带上`anti_distillation: ['fake_tools']`。\n- 这意味着服务器会**悄悄往系统提示里注入诱饵工具定义**，目的是污染那些试图抓取 Claude Code API 流量并拿去训练竞品模型的人。\n- 该功能由 GrowthBook 功能开关`tengu_anti_distill_fake_tool_injection`控制，而且**只对第一方 CLI 会话生效**。\n- 另外还有第二套机制：服务器会在工具调用间**缓存并摘要助手文本**，返回带签名的摘要；这样抓包者只能拿到摘要，拿不到完整推理链。\n\n### 这一机制的局限\n\n- 作者认为，绕过它并不难：\n  - 只要在请求到 API 前，通过 MITM 代理**删掉`anti_distillation`字段**即可；\n  - 设置环境变量`CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=true`可关闭相关实验功能；\n  - 使用**第三方 API 提供商**或**SDK 入口**而不是 CLI，本身就不会触发这些检查。\n- 更重要的是，连接器文本摘要功能只对**Anthropic 内部用户（`USER_TYPE === 'ant'`）**生效，普通外部用户根本遇不到。\n- 作者结论：**真正有效的保护可能更多是法律，而不是技术。**\n\n## 3. “Undercover” 模式：主动隐藏 AI 和 Anthropic 身份痕迹\n\n- `undercover.ts`实现了一种 “卧底模式”：当 Claude Code 用在非内部代码库时，会让",
+    "finish_reason": "incomplete",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1775026926440,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0cf66324f89506f0bd1c4203326ea0c0cd695090d100f2d4b7f1e6761de8a554",
+  "refs": {
+    "sessionId": "1775026794097_ei8rdg4y"
+  },
+  "revisionId": "sha256:77bf7b3cd32d29c35610f06ef2a66f289aa32b5324efe36e4711895fd0b2312d",
+  "schemaVersion": 1,
+  "updatedAt": 1775026926440
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780308367084,
+  "entityType": "message",
+  "id": "1780308367083_7fldwsu8",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Herdr终端智能体复用器\n\n**评级**: B (56.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 开发工具\n**次类别**: AI Agent, 终端工具\n**标签**: #Herdr #terminal #agent multiplexer #tmux替代 #AI编程工具\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 3 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 这是一个实用型工具说明文档，适合有多AI Agent终端协作需求的人快速评估和试用。\n**核心高价值点**: Herdr将tmux式会话持久化与AI Agent状态感知结合，可在终端内同时管理多个Agent的阻塞、运行和完成状态。\n\n### 摘要\n文章是Herdr项目README，介绍其作为终端内Agent复用器的功能：工作区、标签、面板、会话持久化、Agent状态感知、远程连接、Socket API、集成安装和快捷键配置。\n\n### 知识要点\n- Herdr支持工作区、标签和面板，并允许客户端断开后后台会话继续运行。\n- 工具可通过进程名和终端输出自动检测多种AI Agent状态，也支持Socket API进行更可靠的集成。\n- 支持Linux和macOS，可通过安装脚本、Homebrew或二进制包安装，并支持远程SSH使用。\n- 默认快捷键类似tmux，支持分屏、切换标签、工作区导航、复制模式和会话分离。\n\n### 行动项\n- 如果经常同时运行Claude Code、Codex、OpenCode等CLI Agent，可安装Herdr进行一次小规模试用。\n- 对照现有tmux或终端工作流，评估Herdr的Agent状态栏、会话恢复和远程连接是否能提升效率。\n\n### 存档判定\n归档: 是 — 原因: 提供了一个面向AI Agent工作流的终端复用工具，包含安装、快捷键、会话持久化、远程连接和集成方式，若有多Agent并行开发需求可作为工具备选。\n删除: 否\n留存决策: 短期参考后按使用情况决定是否长期保留",
+    "role": "assistant",
+    "timestamp": 1780308367084,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:6272438380e820d2036eae17c80132a17fbd8c0856d7a650e5e273806de86ea4",
+  "refs": {
+    "sessionId": "1780308205519_6ix2bu8z"
+  },
+  "revisionId": "sha256:e66171ca0864d7cf937f0b3b0c5f0082b7f7aa7ec693023ceeef6cab60314fd9",
+  "schemaVersion": 1,
+  "updatedAt": 1780308367084
+}

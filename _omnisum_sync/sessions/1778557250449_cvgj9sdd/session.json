@@ -1,0 +1,108 @@
+{
+  "createdAt": 1778557250449,
+  "entityType": "session",
+  "id": "1778557250449_cvgj9sdd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果使用 Multica，可创建一个 Review Queue Sweep autopilot，并按文中模板改写为自己的团队流程。",
+      "将触发频率设置为每 30 分钟或按项目节奏调整，并启用 run only 模式。",
+      "在提示词中补充自己的状态流转规则、owner 分配规则和高风险操作确认人。"
+    ],
+    "archiveReason": "包含可直接复用的 Multica autopilot 巡查员提示词和基础配置步骤，适合需要自动化管理 issue 队列时参考。",
+    "byline": "QingYue",
+    "classifiedAt": 1780615948054,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Multica巡查员提示词实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 845,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HH9_e9QbsAAvX6n?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HH9_e9QbsAAvX6n?format=jpg&name=medium",
+        "width": 1200
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 464,
+        "id": "img-5",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HH-BPEha4AAcoQZ?format=jpg&name=small",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HH-BPEha4AAcoQZ?format=jpg&name=small",
+        "width": 680
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 464,
+        "id": "img-6",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HH-BVgNbIAAmjFZ?format=jpg&name=small",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HH-BVgNbIAAmjFZ?format=jpg&name=small",
+        "width": 680
+      }
+    ],
+    "knowledgePoints": [
+      "Autopilot 可用于定时巡查 issue 队列，识别无人 review、状态停滞、blocked 解除后未推进等问题。",
+      "巡查类 agent 应限定权限，只做 comment、subscribe、assign、status update 等调度动作，不直接修改业务代码。",
+      "提示词中明确检查范围、输出字段、风险边界和最终 Decision Summary，可提升自动化巡检的可控性。"
+    ],
+    "oneHighValuePoint": "将 autopilot 设置为 run only，并要求无 actionable items 时自动关闭临时 issue，避免巡检任务本身污染看板。",
+    "oneLineReview": "实用性较强的工具型短帖，但论证和案例支撑较弱，主要价值在于可复制的提示词模板。",
+    "primaryCategory": "AI Agent工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可按需保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "项目管理自动化",
+      "提示词工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了一个用于 Multica autopilot 的 issue 巡查员提示词，可定时检查 in_review、in_progress、blocked、todo 等状态中的堵塞、异常和无人 review 情况，并提醒使用 run only 模式避免生成垃圾 issue。",
+    "tags": [
+      "Multica",
+      "Autopilot",
+      "Issue巡检",
+      "Agent协作",
+      "提示词"
+    ],
+    "title": "QingYue: #multica 和大家分享一下我使用 autopilot 功能制作的巡查员提示词 他的功能主要在于识别你的issue 中的堵塞和异常，你不用时时刻刻盯着你的看…",
+    "totalScore": 56,
+    "url": "https://x.com/YuLin807/status/2053502612344041670"
+  },
+  "payloadHash": "sha256:07a8591692cfd6926b08697b4e6c3936b025e9c6f3adf95834fff4ebd48018a3",
+  "refs": {},
+  "revisionId": "sha256:f81834f3be658a4696425470f74fe37b057d90236943281065596f78631ad8c9",
+  "schemaVersion": 1,
+  "updatedAt": 1780615948918
+}

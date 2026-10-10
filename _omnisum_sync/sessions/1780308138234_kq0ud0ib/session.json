@@ -1,0 +1,65 @@
+{
+  "createdAt": 1780308138234,
+  "entityType": "session",
+  "id": "1780308138234_kq0ud0ib",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如对 Claude Code 感兴趣，可直接查找 Anthropic workshop 原视频或完整笔记，而非保存此条推文。",
+      "整理自己的 CLAUDE.md 或项目 AI 使用规范时，可检查是否覆盖 Prompt、Context、Role、示例和输出约束。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780308282358,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 2,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Anthropic工作坊提示词要点",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量过低，主要价值只是指向一个视频或外部文章，本条内容本身不具备长期留存价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Claude Code 使用中上下文管理可能比单纯提示词更关键。",
+      "高质量 AI 编程流程通常需要明确角色、示例、输出格式和多轮任务拆分。"
+    ],
+    "oneHighValuePoint": "提示了 Claude/AI 编程实践中值得系统关注的六个核心维度：Prompt、Context、Role、示例、输出约束和任务拆分。",
+    "oneLineReview": "这是一个有潜在方向价值但正文信息严重不足的转发型线索。",
+    "primaryCategory": "AI开发",
+    "rating": "D",
+    "rejectReason": "正文仅是对 Anthropic workshop 内容方向的概括性转述，缺少具体方法、案例、步骤和原始要点展开，热门回复也高度噪音化。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Prompt工程",
+      "Claude Code"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章仅提到 Anthropic workshop 拆解了 Prompt 组织、Context 管理、Role 设置、示例提供、输出约束和多轮任务拆分等主题，但没有展开具体做法或案例。",
+    "tags": [
+      "Anthropic",
+      "Prompt",
+      "Context管理",
+      "Claude",
+      "AI编程"
+    ],
+    "title": "Vince 聊开发: 这场 workshop 比较难得的一点，是 Anthropic 直接把他们内部常用的用法拆开讲了 包括： 1、Prompt 怎么组织 2、Context 怎么管…",
+    "totalScore": 32,
+    "url": "https://x.com/vincemask/status/2059843906582532209"
+  },
+  "payloadHash": "sha256:5dc822f882930d659d76158f1fd6bd50748319d38c855af39baeac37c3e4d092",
+  "refs": {},
+  "revisionId": "sha256:0c42eba61dfff5779b7a81af22f6344d1f71f587d96833401dd7bbfc8f3c64e3",
+  "schemaVersion": 1,
+  "updatedAt": 1780308282740
+}

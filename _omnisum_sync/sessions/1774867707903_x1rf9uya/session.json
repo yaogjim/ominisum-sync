@@ -1,0 +1,70 @@
+{
+  "createdAt": 1774867707903,
+  "entityType": "session",
+  "id": "1774867707903_x1rf9uya",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估自己常用工具是否适合通过CLI方式暴露给AI Agent调用",
+      "设计或审查内部CLI时，补齐help、dry-run、结构化输出和错误恢复提示",
+      "在Agent自动执行写操作前，建立统一的dry-run预览和人工确认流程"
+    ],
+    "archiveReason": "对CLI为何适合AI Agent、以及面向Agent设计CLI的原则有较清晰的总结，可作为产品和工具设计参考",
+    "classifiedAt": 1774868054740,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI时代CLI工具崛起解析",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "CLI相较API的优势在于可通过--help实现较强自描述性，更利于Agent即时探索和调用",
+      "CLI、MCP、技能并非替代关系，分别对应执行接口、注册式工具接入和操作说明层",
+      "为AI Agent设计CLI时，应优先支持dry-run、json输出、分页过滤和可执行的错误修复提示",
+      "企业级Agent落地的核心难点仍在权限控制、审计追踪和人机协作边界"
+    ],
+    "oneHighValuePoint": "最有价值的是提出“面向AI设计CLI”的四项原则：自描述help、默认dry-run、可修复错误信息、结构化且可控的输出。",
+    "oneLineReview": "观点清晰、框架完整，但更像趋势判断与产品解读，证据和实证支撑偏弱。",
+    "primaryCategory": "AI Agent工具与接口设计",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为理解AI Agent工具接口设计趋势的参考材料",
+    "secondaryCategories": [
+      "开发工具生态",
+      "企业协作平台",
+      "产品设计方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕飞书开源CLI展开，解释为何AI Agent时代CLI重新重要，并比较CLI、MCP、技能三种接入方式，进一步总结面向Agent设计CLI的关键原则，如help自描述、dry-run、可修复错误信息和结构化输出。",
+    "tags": [
+      "CLI",
+      "AI Agent",
+      "MCP",
+      "飞书",
+      "工具设计",
+      "dry-run"
+    ],
+    "title": "宝玉: 飞书 CLI 开源了，为什么 AI Agent 时代，大家都在做命令行工具",
+    "totalScore": 64.5,
+    "url": "https://x.com/dotey/status/2038406683865624800"
+  },
+  "payloadHash": "sha256:374eaa206622b72d87d9c3f8e9877ccece6ada7ea653dc9f5ec1894adb3496ab",
+  "refs": {},
+  "revisionId": "sha256:5dff65efeec79c29a4055185b70950fefd58de838f268b73fb1d88ef475b4525",
+  "schemaVersion": 1,
+  "updatedAt": 1774868434529
+}

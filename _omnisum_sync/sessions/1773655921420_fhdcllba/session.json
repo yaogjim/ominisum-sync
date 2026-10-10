@@ -1,0 +1,71 @@
+{
+  "createdAt": 1773655921420,
+  "entityType": "session",
+  "id": "1773655921420_fhdcllba",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "盘点当前团队所处等级，优先补齐第3到第6级的基础能力而非盲目追求全自动。",
+      "建立或优化规则文件、结构化文档与共享技能库，减少重复提示和隐性知识损失。",
+      "为智能体接入测试、lint、CI、安全边界等回压机制，提升自主执行可靠性。",
+      "尝试将实现、审查、研究分配给不同模型或不同实例，验证协作收益。",
+      "选择一个明确场景试点后台智能体，如文档更新、依赖升级、PR审查或回归验证。"
+    ],
+    "archiveReason": "文章提供了较完整的智能体工程分级框架，便于后续对照团队现状、规划工具链与流程升级。",
+    "classifiedAt": 1773829320058,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "智能体工程八级进阶框架",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "上下文工程的核心是提升每个token的信息密度，并在正确时间提供正确上下文。",
+      "复合工程强调将每次与LLM协作的经验沉淀为规则、文档或环境约束，形成可复利流程。",
+      "Harness Engineering 的关键是为智能体构建可验证、可回压、可自纠错的完整执行环境。",
+      "后台智能体的前提不是更长提示词，而是清晰边界、可靠工具和自动化反馈循环。",
+      "多模型分工与实现者/审查者解耦，能显著提升智能体产出质量与信号可信度。"
+    ],
+    "oneHighValuePoint": "最有价值的是把“上下文、工具、反馈回路、文档沉淀、后台编排”串成连续成熟度模型，而不是把智能体能力仅理解为模型能力提升。",
+    "oneLineReview": "这是一篇方法框架强、实战感足，但证据严谨性不足的智能体工程路线图文章。",
+    "primaryCategory": "AI工程方法论",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为智能体工程实践路线图与团队能力对齐参考。",
+    "secondaryCategories": [
+      "智能体开发",
+      "研发效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出“智能体工程”的八级进阶模型，从补全、上下文工程、复合工程、MCP与技能、Harness、后台智能体一直到多智能体团队，重点强调约束、反馈回路、共享技能与异步编排对研发吞吐量的决定性作用。",
+    "tags": [
+      "Agentic Engineering",
+      "上下文工程",
+      "MCP",
+      "后台智能体",
+      "开发流程"
+    ],
+    "title": "智能体工程的 8 个等级【译】",
+    "totalScore": 70.5,
+    "url": "https://x.com/dotey/status/2033441957985280451"
+  },
+  "payloadHash": "sha256:7b97f935461b191ff6fdb474823ebd55e18efd8713c5724641300c5c80d2bc2c",
+  "refs": {},
+  "revisionId": "sha256:5a63e30aa6fdde367c17867f6e35aae3513473885c2d2b3affa6b049bd5577df",
+  "schemaVersion": 1,
+  "updatedAt": 1773829320059
+}

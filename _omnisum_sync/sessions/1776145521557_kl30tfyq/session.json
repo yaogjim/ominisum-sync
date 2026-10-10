@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776145521557,
+  "entityType": "session",
+  "id": "1776145521557_kl30tfyq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的项目中建立最小可复用模板，预置测试、目录结构和代码风格约束。",
+      "尝试将AI编码流程切换为以测试驱动和原型并行为核心的工作方式，并审视现有流程中的新瓶颈。"
+    ],
+    "archiveReason": "包含对AI编程拐点、测试策略、模板化工程、提示注入风险等较系统的经验总结，具备持续参考价值。",
+    "classifiedAt": 1776146751881,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "AI编程拐点与暗工厂前瞻",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "AI编程的关键不只是生成代码，而是通过测试、模板和上下文复用来稳定提升交付质量。",
+      "提示注入的“致命三要素”是私有数据、恶意指令入口和数据外传能力三者同时存在。"
+    ],
+    "oneHighValuePoint": "最有价值的是将“代码变便宜”作为核心前提，进而重构开发流程，把重点从手写代码转向测试、模板、验证与经验资产复用。",
+    "oneLineReview": "观点密集且有方法论启发，但更像前沿实践者的高质量判断，不是经过严谨验证的研究结论。",
+    "primaryCategory": "AI软件工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议中长期保留，适合作为理解AI编程范式变化与工程实践演进的参考材料。",
+    "secondaryCategories": [
+      "开发效率",
+      "技术趋势"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一篇围绕AI编程拐点、agentic engineering、暗工厂开发模式与安全风险的长访谈。内容对软件工程实践转型有较强启发，尤其在测试驱动、模板复用、经验沉淀等方面较有操作性，但整体证据更多来自个人经验与案例，数据支撑偏弱。",
+    "tags": [
+      "AI编程",
+      "Agentic Engineering",
+      "软件工程",
+      "测试驱动开发",
+      "Prompt Injection"
+    ],
+    "title": "An AI state of the union: We’ve passed the inflection point & dark factories are coming - YouTube",
+    "totalScore": 71,
+    "url": "https://www.youtube.com/watch?v=wc8FBhQtdsA"
+  },
+  "payloadHash": "sha256:4f63a5dddac22f4b2528a4cb0571c07ae7987d9bb627ef28fb3917ac4bafeab8",
+  "refs": {},
+  "revisionId": "sha256:fe1610868c4161c7bca2525b8caf00931fb9a16c7ca13ef246dd87387f9e1be1",
+  "schemaVersion": 1,
+  "updatedAt": 1776146751883
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773918179238,
+  "entityType": "message",
+  "id": "1773918179237_nr4ueixx",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Hermes智能体工作台项目\n\n**评级**: B (58分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: 开源项目, 智能体工作流, 前端应用\n**标签**: #Hermes Agent #AI Workspace #PWA #FastAPI #TypeScript\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 作为项目README，它的落地性不错，但更偏产品说明与安装指引，方法论和证据支撑较弱。\n**核心高价值点**: 最有价值的是它将聊天、终端、记忆、技能和文件管理统一到一个智能体工作台中，并提供可直接运行的部署路径。\n\n### 摘要\n这是一份Hermes Workspace开源项目说明，介绍了面向Hermes Agent的原生Web工作台，集成聊天、终端、记忆、技能和文件浏览等功能，并提供本地、Docker、PWA和移动端访问的部署方式。\n\n### 知识要点\n- Hermes Workspace通过FastAPI后端和SSE流式输出实现智能体实时交互\n- 项目支持PWA安装、Tailscale远程访问以及Docker一键启动\n\n### 行动项\n- 如果你在搭建AI Agent操作台，可按README快速本地部署并验证交互链路\n- 参考其模块划分，评估是否将聊天、记忆、技能和终端整合为统一工作界面\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的功能说明、部署步骤和技术选型信息，可在需要搭建类似系统时快速参考\n删除: 否\n留存决策: 短期参考后保留，适合作为搭建AI智能体工作台的实现样例",
+    "role": "assistant",
+    "timestamp": 1773918179238,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:1000db422fed574475fcc52619641e4df25ac014794cc793c6ecce4b343b7a31",
+  "refs": {
+    "sessionId": "1773914969685_9fxa0brp"
+  },
+  "revisionId": "sha256:2be3676b577c0028a3f36af39c666efb653d0751edc18bbb5b2291782807a19d",
+  "schemaVersion": 1,
+  "updatedAt": 1773918179238
+}

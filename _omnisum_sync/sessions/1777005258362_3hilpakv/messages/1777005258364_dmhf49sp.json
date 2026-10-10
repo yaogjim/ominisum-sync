@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777005174647,
+  "entityType": "message",
+  "id": "1777005258364_dmhf49sp",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 小龙虾抓取能力的实用补充：`xcrawl`\n\n## 核心观点\n\n作者认为，小龙虾原生的网页抓取能力并不算完善，主要问题是**抓取速度偏慢、Token 消耗偏高**。因此，很多人在实际使用中，会额外搭配 `firecrawl` 或 `JINA` 这类工具。\n\n## 推荐方案：`xcrawl` 作为低门槛替代\n\n文中重点推荐了 `xcrawl` 作为一个更方便的平替方案。它的特点是：\n\n- 安装和接入更简单\n- 只需把文档交给小龙虾读取\n- Skill 可以自动安装\n- 按提示配置 Key 即可使用\n- 也可以直接在 `ClawHub` 搜索 `xcrawl` 一键导入\n\n整体上，作者强调的是：**上手门槛低，适合普通用户快速接入网页抓取能力。**\n\n## 四类核心使用场景\n\n`xcrawl` 覆盖了绝大多数网页采集需求，主要有四种模式：\n\n- `Search`：做搜索引擎查询，直接返回标题、URL、摘要和排名等结构化结果\n- `Map`：扫描整站，先列出所有 URL，适合做前置规划\n- `Scrape`：对指定 URL 抓取一次，并输出干净的 Markdown，方便直接喂给 LLM\n- `Crawl`：递归抓取整个网站，适合搭知识库或做 RAG\n\n作者判断，**日常 90% 的网页抓取需求，基本都可以落在这四类里。**\n\n## 一个典型案例\n\n作者举了一个很实用的例子：让小龙虾**每天定时抓取 Claude Code 的 changelog**，再配一个快捷指令，比如 `ccc`。这样只要执行一次指令，就能快速知道 Claude Code 当天更新了什么功能。\n\n这说明，抓取工具不仅是“拿数据”，更可以直接嵌入工作流，变成**持续更新的信息助手**。\n\n## 更大的意义\n\n作者最后表达的核心判断是：有了这类数据采集工具后，Agent 就能获得更多上下文信息，因此也能**更好地服务人类**。如果不太在意性能和 Token 消耗，`browser-use` 也可以作为备选方案。\n\n## 一句话总结\n\n这篇内容本质上是在说：**如果你觉得小龙虾原生抓取不够高效，`xcrawl` 是一个更轻量、易接入、覆盖主流场景的补充工具。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777005174647,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5045f973757de5b62a86650acdc33727acb74a2cfcaccefcb63866a2bbc86980",
+  "refs": {
+    "sessionId": "1777005258362_3hilpakv"
+  },
+  "revisionId": "sha256:db61991bc9a840118046635767fa58dea47fa220c7d31bd66f16fa8b63d8eb12",
+  "schemaVersion": 1,
+  "updatedAt": 1777005174647
+}

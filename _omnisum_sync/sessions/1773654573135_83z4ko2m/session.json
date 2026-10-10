@@ -1,0 +1,78 @@
+{
+  "createdAt": 1773654573135,
+  "entityType": "session",
+  "id": "1773654573135_83z4ko2m",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按你的实际场景建立一个四象限选型表：组织编排、编码执行、工作流闭环、专家角色库",
+      "优先试用 Agent Orchestrator 或 Paperclip，验证多代理任务隔离、预算治理和审计能力",
+      "若需要快速增强单代理能力，可从 agency-agents 中挑选高频角色做本地集成",
+      "补充查阅各项目的架构文档、Issue 活跃度和真实案例，再决定是否深度采用"
+    ],
+    "archiveReason": "汇总了四类代表性智能体协作方案，便于后续做工具选型、概念对比和生态跟踪",
+    "classifiedAt": 1773829359218,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "四类智能体协作平台对比",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先精炼总结，再深入浅出解读，最后给出你的评论（要实事求是，要有批判思维）。",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "Paperclip 强调以组织结构、预算、治理和目标对齐来管理一组智能体",
+      "Symphony 聚焦把项目任务转化为隔离的自治实现运行，并以工单和验收流程管理代理",
+      "Agent Orchestrator 侧重并行编码代理的工作树隔离、CI 反馈闭环和代码评审自动化",
+      "agency-agents 提供大量领域专家型代理模板，适合作为角色化协作资产库"
+    ],
+    "oneHighValuePoint": "将智能体协作平台分成组织编排、任务自治执行、并行编码代理调度和角色化专家代理四种模式，有助于快速建立选型框架。",
+    "oneLineReview": "适合作为多智能体协作工具地图的入门索引，但更像资料汇编而非深入分析。",
+    "primaryCategory": "AI智能体协作与编排",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留归档，适合作为智能体协作平台选型入口材料",
+    "secondaryCategories": [
+      "开发工具生态",
+      "多智能体系统",
+      "开源项目评估"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://github.com/paperclipai/paperclip",
+      "https://github.com/openai/symphony",
+      "https://github.com/ComposioHQ/agent-orchestrator",
+      "https://github.com/msitarzewski/agency-agents/"
+    ],
+    "summaryBrief": "文章汇总了 Paperclip、Symphony、Agent Orchestrator 和 agency-agents 四类智能体协作平台，覆盖企业级编排、任务自治执行、并行编码代理调度与角色化专家代理库。适合快速建立多智能体协作工具图谱，但内容偏项目 README 拼接，分析深度和证据支撑不足。",
+    "tags": [
+      "智能体编排",
+      "多代理协作",
+      "开源工具",
+      "代码自动化",
+      "AgentOps"
+    ],
+    "title": "四类智能体协作平台解析",
+    "totalScore": 56.5,
+    "url": "omnisun://digest/1773654573135"
+  },
+  "payloadHash": "sha256:274229bd23cd23b5af8b8ef577899183141a880c6bcc589cfc9b9921d2880b42",
+  "refs": {},
+  "revisionId": "sha256:e7f6741ceda572eb1fb3cd59bca00a8044a4e43c506f221ea3d63dc5f9f797db",
+  "schemaVersion": 1,
+  "updatedAt": 1773829359233
+}

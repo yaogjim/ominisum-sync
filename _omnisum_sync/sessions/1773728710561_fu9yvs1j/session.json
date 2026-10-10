@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773728710561,
+  "entityType": "session",
+  "id": "1773728710561_fu9yvs1j",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在跟踪Agent框架，记录Letta对MemFS、skills和subagents的设计取舍并与Anthropic/OpenAI方案对比",
+      "若已使用Letta旧功能，优先核对弃用项和迁移时间表，评估对现有系统的影响"
+    ],
+    "archiveReason": "包含Letta产品战略转向、功能弃用与迁移路径，对关注Agent基础设施有参考价值",
+    "classifiedAt": 1773728733195,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Letta转向开放记忆代理",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "开放式Agent Harness正在围绕computer use、memory、skills和subagents重构",
+      "Letta提出将记忆投影到git-backed文件系统中，以通用工具替代专用memory API",
+      "部分服务端能力正迁移到客户端执行，以增强透明度、组合性与控制权"
+    ],
+    "oneHighValuePoint": "最有价值的是把代理记忆从专用数据库工具迁移到基于git文件与bash操作的通用上下文仓库思路。",
+    "oneLineReview": "这是一篇有方向判断但证据不足的产品路线宣言，适合做行业跟踪，不适合当方法论定稿。",
+    "primaryCategory": "AI代理基础设施",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "阶段性保留，适合用于跟踪开放式代理框架与记忆系统方向演进",
+    "secondaryCategories": [
+      "产品路线图",
+      "记忆系统与Agent Runtime"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章宣布Letta从早期服务端Agent设计转向以Letta Code为核心的开放式、模型无关Agent运行时，强调持久记忆、计算机使用、技能与子代理，并列出旧功能弃用与迁移安排。",
+    "tags": [
+      "Letta",
+      "Agent Harness",
+      "Persistent Memory",
+      "Computer Use",
+      "MemFS"
+    ],
+    "title": "Letta's next phase",
+    "totalScore": 56.5,
+    "url": "https://x.com/Letta_AI/status/2033670953956479223"
+  },
+  "payloadHash": "sha256:2b6b93f51db8c2b0b635b40463d6e356bf20ef6b9b7b70fe779b8af209ad4758",
+  "refs": {},
+  "revisionId": "sha256:8ebd67f6f6785c9ac66ea13c7623859cd1324bc93d0afff6018670bed35f8cae",
+  "schemaVersion": 1,
+  "updatedAt": 1773730623423
+}

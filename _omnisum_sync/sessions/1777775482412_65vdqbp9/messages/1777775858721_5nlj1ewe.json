@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777775858722,
+  "entityType": "message",
+  "id": "1777775858721_5nlj1ewe",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Warp开源仓库概览\n\n**评级**: D (37.5分)  |  **深度阅读**: 否  |  **建议操作**: 删除\n\n**主类别**: 开发工具\n**次类别**: AI编程工具, 终端工具\n**标签**: #Warp #Agentic IDE #Terminal #开源项目 #GitHub\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 4 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 2 | 15% |\n| 可迁移性 | 2 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 3 | 10% |\n\n**一句话点评**: 适合快速了解Warp项目入口，但不值得作为知识内容长期保存。\n**核心高价值点**: Warp将终端、代码代理和开源贡献流程结合，定位为agentic development environment。\n\n### 摘要\n文章是Warp GitHub仓库的README摘要，介绍其作为源自终端的agentic开发环境，支持内置或外部CLI Agent，并提供安装、构建、贡献、许可证和社区入口等基础信息。\n\n### 知识要点\n- Warp支持内置编码代理，也可接入Claude Code、Codex、Gemini CLI等外部CLI Agent。\n- Warp客户端代码开源，UI框架采用MIT许可证，其余代码采用AGPL v3许可证。\n- 从源码运行Warp可使用bootstrap、run、presubmit等脚本完成环境设置、构建和检查。\n\n### 行动项\n- 如需评估Warp，可直接访问官方文档或GitHub仓库查看最新安装与功能说明。\n- 若计划贡献代码，阅读CONTRIBUTING.md和WARP.md了解贡献流程与工程规范。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是GitHub仓库README的基础信息和导航，缺乏深入分析、案例、方法论或实质性技术细节。\n删除: 是\n留存决策: 建议删除，仅在需要评估Warp项目时临时访问原仓库即可\n删除原因: 信息价值较低，主要包含项目介绍、安装入口、贡献流程和许可证说明，可通过原始仓库随时获取，无长期保存必要。",
+    "role": "assistant",
+    "timestamp": 1777775858722,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:33bac069303206a37dea3a19da68023845bfaf0e1cf2a9fddddd1961633766bd",
+  "refs": {
+    "sessionId": "1777775482412_65vdqbp9"
+  },
+  "revisionId": "sha256:137b95b449e514cd487db3a86e71948b6126c8cfd8ecaa5baea0a98cfa2295ef",
+  "schemaVersion": 1,
+  "updatedAt": 1777775858722
+}

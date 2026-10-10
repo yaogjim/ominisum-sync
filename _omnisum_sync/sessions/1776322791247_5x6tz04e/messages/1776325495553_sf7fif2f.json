@@ -1,0 +1,19 @@
+{
+  "createdAt": 1776325495554,
+  "entityType": "message",
+  "id": "1776325495553_sf7fif2f",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Hermes系统提示词拆解\n\n**评级**: B (67.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent架构分析\n**次类别**: Prompt Engineering, Agent运维优化\n**标签**: #Hermes Agent #System Prompt #Token优化 #AGENTS.md #Skill索引\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇偏实战的Agent提示词逆向分析文，实用性不错，但证据和方法抽象层次仍有限。\n**核心高价值点**: 指出Hermes默认会加载体积巨大的项目级AGENTS.md，调整主agent的cwd或自定义提示文件即可显著减少约5k token开销。\n\n### 摘要\n文章系统拆解了Hermes Agent的系统提示词组成，定位了SOUL、Memory、Skills、AGENTS.md等模块的token占用，并给出通过调整cwd与项目级提示文件来减少约50%上下文token的实操建议。\n\n### 知识要点\n- Hermes系统提示词由身份、记忆规则、记忆快照、用户画像、技能索引、项目指南、平台提示和会话元信息等模块拼接而成\n- Skills索引与AGENTS.md是主要token消耗来源，其中AGENTS.md可能占系统提示近一半\n- Hermes按项目路径动态选择.hremes.md、AGENTS.md、CLAUDE.md或.cursorrules等文件注入上下文\n- 工具加载由配置和check_fn共同决定，并非所有注册工具都会进入当前会话\n\n### 行动项\n- 检查自己的Hermes或类似Agent是否默认注入过大的项目级说明文件，并评估是否需要精简\n- 在实际使用中导出完整系统提示词，按模块统计token占用，优先优化高占比上下文\n- 为不同项目设置合适的cwd或定制更轻量的AGENTS.md，以降低长期对话成本\n- 定期清理或治理Skill和Memory内容，避免上下文膨胀影响效率与稳定性\n\n### 存档判定\n归档: 是 — 原因: 包含对Hermes系统提示词结构、上下文来源和token优化点的实践性拆解，可作为后续排查和优化Agent配置的参考材料\n删除: 否\n留存决策: 短期参考后可归档，适合在调试Agent提示词或做上下文瘦身时回看",
+    "role": "assistant",
+    "timestamp": 1776325495554,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:761da1cfe6c373d080a9badd9c7fbcd77893b90cd11d9104af3be3e3bced142b",
+  "refs": {
+    "sessionId": "1776322791247_5x6tz04e"
+  },
+  "revisionId": "sha256:3fe158279ccbcfeffab2ff6b9dad2178db0085a48cc528947fbb6655e418c3be",
+  "schemaVersion": 1,
+  "updatedAt": 1776325495554
+}

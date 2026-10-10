@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780308284594,
+  "entityType": "message",
+  "id": "1780308284593_8vd2zhif",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: CLAUDE.md实战优化指南\n\n**评级**: A (75.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI编程实践\n**次类别**: Claude Code, 工程效率, 项目文档\n**标签**: #CLAUDE.md #Claude Code #AI协作 #上下文管理 #开发规范\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 一篇高可操作性的 Claude Code 项目上下文配置指南，证据深度一般但实践价值较高。\n**核心高价值点**: 将 CLAUDE.md 设计成“上下文路由器”而非资料库，通过指针和分层上下文减少噪音、提高 Claude 的项目理解效率。\n\n### 摘要\n文章总结了写好 CLAUDE.md 的 8 条实战经验，强调短小、可执行、按需引用文档、设置禁用清单、本地规则、Hook 强制执行和长期记忆机制，以提升 Claude Code 对项目的理解和协作质量。\n\n### 知识要点\n- CLAUDE.md 应控制在约 200 行以内，避免无关信息占用上下文窗口\n- 除了声明技术栈，还应明确列出 Do NOT introduce 禁用库和禁用方案\n- 规则应写成可验证的具体指令，而不是“干净代码”“保持简洁”等模糊原则\n- CLAUDE.md 更适合作为文档入口和上下文路由，而不是承载全部架构文档\n- 敏感模块可单独放置本地 CLAUDE.md，用于设置安全红线和模块级注意事项\n- Hook 可以把 CLAUDE.md 中的规则转化为自动格式化、测试和保护关键文件的强制机制\n- MEMORY.md 可作为简单、可追踪的长期记忆文件，沉淀跨会话经验\n\n### 行动项\n- 检查并精简现有 CLAUDE.md，将其控制在 200 行以内\n- 新增 Do NOT introduce 区块，列出项目禁止引入的库、框架和技术方案\n- 把模糊编码规则改写为可在 5 秒内判断是否符合的具体规则\n- 为 auth、billing、infra 等高风险目录添加本地 CLAUDE.md\n- 将格式化、测试、敏感文件修改确认等规则配置为 Claude Code Hook\n- 新增 MEMORY.md，并在 CLAUDE.md 中要求 Claude 在任务开始和结束时读取与更新\n\n### 存档判定\n归档: 是 — 原因: 文章提供了较完整且可直接落地的 CLAUDE.md 编写原则，包含上下文控制、禁用清单、本地规则、Hook 和记忆文件等实践方法\n删除: 否\n留存决策: 长期保留，适合作为 Claude Code 项目配置和团队 AI 协作规范的参考模板",
+    "role": "assistant",
+    "timestamp": 1780308284594,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:b040d5600dff205b6df40a0f0038ed066388906a85ad8254f4cf9ca0d4da5238",
+  "refs": {
+    "sessionId": "1780308140446_p209cs9r"
+  },
+  "revisionId": "sha256:9c35036e70626c3cf43c9d1e5c71691afbf889a9b2ebc54cc15a7728629468bd",
+  "schemaVersion": 1,
+  "updatedAt": 1780308284594
+}

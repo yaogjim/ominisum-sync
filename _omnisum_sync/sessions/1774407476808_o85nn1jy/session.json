@@ -1,0 +1,70 @@
+{
+  "createdAt": 1774407476808,
+  "entityType": "session",
+  "id": "1774407476808_o85nn1jy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为自己的 AI 工作流设计独立评估器，并定义 3-5 个硬性评分维度与阈值。",
+      "在复杂生成任务中引入生成器-评估器迭代回路，优先应用到易出现自评失真的环节。",
+      "对现有 agent 系统做组件拆解实验，验证哪些脚手架在当前模型版本下仍然必要。",
+      "将高层规格、迭代合同、QA 发现等信息文件化，建立跨会话可交接的结构化工件。"
+    ],
+    "archiveReason": "文章系统总结了长时运行编码代理的架构演进、评估机制与简化原则，对构建AI开发工作流有持续参考价值。",
+    "classifiedAt": 1774407499452,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "长时代理开发框架设计",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.anthropic.com",
+    "favicon": "https://www.anthropic.com/images/icons/favicon-32x32.png",
+    "knowledgePoints": [
+      "长任务代理容易因上下文膨胀和自评偏差而失真，需要通过上下文重置或独立评估器缓解。",
+      "三代理架构中规划器负责扩展规格，生成器负责实现，评估器负责基于可测试标准做外部审查。",
+      "对主观任务如前端设计，可通过评分 rubric 将审美判断转化为结构化反馈循环。",
+      "评估器价值取决于任务是否处于模型能力边界，模型变强后应重新审视 harness 复杂度。",
+      "harness 设计应持续做组件级压力测试，删除不再必要的脚手架，只保留真实提升性能的部分。"
+    ],
+    "oneHighValuePoint": "最有价值的是把“生成”和“评估”彻底拆开，并用可评分标准与迭代合同把主观质量和工程质量都变成可优化对象。",
+    "oneLineReview": "这是一篇高价值的 AI 工程实践复盘，方法论强于结论，尤其适合做代理式开发系统的人精读。",
+    "primaryCategory": "AI工程与智能体系统",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "软件开发方法论",
+      "LLM应用架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了 Anthropic 为长时间运行应用开发构建的 harness，从单代理升级到规划器、生成器、评估器三代理架构，并通过前端设计与全栈应用案例说明上下文重置、独立评估、迭代合同和 QA 回路如何提升复杂任务完成质量。",
+    "tags": [
+      "多智能体",
+      "Harness设计",
+      "长任务编码",
+      "生成器评估器",
+      "QA自动化"
+    ],
+    "title": "Harness design for long-running application development \\ Anthropic",
+    "totalScore": 78,
+    "url": "https://www.anthropic.com/engineering/harness-design-long-running-apps"
+  },
+  "payloadHash": "sha256:925600f1394366cdeea22d19fafc7b136ee1111e632458c3f8a26051229c7177",
+  "refs": {},
+  "revisionId": "sha256:143637b87c475ca40d99b3028f7609448619a179b2146279b9a77dfeec6bbc2f",
+  "schemaVersion": 1,
+  "updatedAt": 1774434672504
+}

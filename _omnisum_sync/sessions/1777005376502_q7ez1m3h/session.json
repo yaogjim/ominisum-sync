@@ -1,0 +1,67 @@
+{
+  "createdAt": 1777005376502,
+  "entityType": "session",
+  "id": "1777005376502_q7ez1m3h",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如有类似需求，可先评估本地隐私、合规和微信协议风险后再尝试部署",
+      "参考其配置结构，设计自己的本地消息提取与日报自动化流程"
+    ],
+    "archiveReason": "包含较完整的安装、依赖、配置和技术原理，可在需要做本地聊天摘要或数据库解密时复用",
+    "classifiedAt": 1777005681401,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "微信聊天日报生成器说明",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "微信 Mac 4.x 本地数据库使用 SQLCipher 4 与 AES-256-CBC 分页加密",
+      "可通过 Frida hook CCKeyDerivationPBKDF 在运行时提取数据库密钥",
+      "聊天消息可能使用 ZSTD 压缩，需要额外解压处理",
+      "本地 AI 摘要生成可用于群聊监控和指定日期复盘"
+    ],
+    "oneHighValuePoint": "最有价值的是把微信本地加密数据库解密、联系人筛选和 AI 日报生成串成了一条可执行的自动化流程。",
+    "oneLineReview": "这是一个实用但偏场景化的技术说明，操作性强，但证据和效果验证不足。",
+    "primaryCategory": "AI工具与自动化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为特定场景下的实现方案备查",
+    "secondaryCategories": [
+      "微信数据处理",
+      "本地隐私分析"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍一个基于 Claude Code Skill 的微信聊天日报生成器，能够从微信 Mac 本地加密数据库提取聊天记录，通过 Frida 获取密钥并解密 SQLCipher 数据库，再用 AI 生成按主题分类的日报摘要，强调本地处理和隐私风险说明。",
+    "tags": [
+      "微信",
+      "日报生成",
+      "SQLCipher",
+      "Frida",
+      "本地AI"
+    ],
+    "title": "yichen-skills/wechat-daily at main · mcncarl/yichen-skills",
+    "totalScore": 64.5,
+    "url": "https://github.com/mcncarl/yichen-skills/tree/main/wechat-daily"
+  },
+  "payloadHash": "sha256:8074fa97e3a571b07afeae7e071d14142ec058d1b609a61d7d16702b5d8d202d",
+  "refs": {},
+  "revisionId": "sha256:674edd84468aa8ee3a56d06d291cdd4e31ecf6f88d86c1f21711ef26ed6390a8",
+  "schemaVersion": 1,
+  "updatedAt": 1777006101219
+}

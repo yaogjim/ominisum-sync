@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773918013362,
+  "entityType": "message",
+  "id": "1773918013361_l50gshwn",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: DeepAgents仓库简介评估\n\n**评级**: B (60.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent开发框架\n**次类别**: LangChain生态, 开源工具评估\n**标签**: #LangChain #LangGraph #Agent Harness #GitHub仓库 #开发框架\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 适合快速了解产品能力边界，但更像项目宣传页而非高质量方法论文章。\n**核心高价值点**: 最有价值的是它把规划、文件系统、子代理、上下文管理和沙箱执行整合为开箱即用的Agent基础设施。\n\n### 摘要\n这是一份Deep Agents项目的仓库首页简介，概述了其作为LangChain和LangGraph之上Agent harness的定位、核心能力、快速安装方式和可扩展点，适合用于工具选型和初步了解，但缺少深入原理、性能数据与真实案例支撑。\n\n### 知识要点\n- Deep Agents提供计划拆解、文件读写、Shell执行、子代理委派等开箱即用能力\n- 该项目基于LangGraph构建，可直接复用流式处理、持久化和检查点等能力\n\n### 行动项\n- 若你在做Agent工程化，可对照其Quickstart快速搭建一个最小可运行原型\n- 进一步查看官方文档和示例，重点验证其安全边界、扩展方式和生产可用性\n\n### 存档判定\n归档: 是 — 原因: 该内容适合在搭建Agent开发环境、评估LangChain生态工具时作为项目入口参考\n删除: 否\n留存决策: 短期参考后保留，适合作为选型和快速上手资料",
+    "role": "assistant",
+    "timestamp": 1773918013362,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:829665b09e935bd5d570887ee5f209bbb461fcd666197d66d3e8030871877058",
+  "refs": {
+    "sessionId": "1773917555717_8qsembp9"
+  },
+  "revisionId": "sha256:364dc046780f977cfe497e8d8fb07e0020eeecd4c679f8c81afeb314e108830e",
+  "schemaVersion": 1,
+  "updatedAt": 1773918013362
+}

@@ -1,0 +1,68 @@
+{
+  "createdAt": 1776645686219,
+  "entityType": "session",
+  "id": "1776645686219_iqhmvagu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "体验 `game.gradient-bang.com`，观察多 agent 协作、语音交互和任务执行链路",
+      "阅读 `github.com/pipecat-ai/gradient-bang` 的实现，重点关注代理编排、记忆管理和动态 UI 机制"
+    ],
+    "archiveReason": "提供了一个少见的多 agents 实时协作落地案例，并附带可体验地址和开源仓库链接",
+    "classifiedAt": 1776646478424,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "多Agent协作游戏案例速览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "多智能体系统可以通过子代理编排和部分上下文共享实现实时协作",
+      "长上下文管理与跨会话 episodic memory 是复杂 AI 应用的重要能力",
+      "动态 UI 可由 LLM 即时驱动生成，形成更强交互式产品体验",
+      "游戏场景是验证 LLM Function Calling 与实时语音交互能力的有效载体"
+    ],
+    "oneHighValuePoint": "最有价值的是把多智能体协作、长上下文记忆、结构化世界事件和语音交互整合进一个可体验的实时游戏场景中。",
+    "oneLineReview": "这是一个有启发性的案例入口，但更像项目推荐帖而非深度分析。",
+    "primaryCategory": "AI应用",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为多智能体交互产品案例素材保留",
+    "secondaryCategories": [
+      "多智能体系统",
+      "开源项目案例"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个用于探索多 agents 实时协作的在线多人宇宙游戏 Gradient Bang，强调其实时语音交互、Function Call 驱动任务执行，以及子代理编排、上下文共享、长期记忆和动态 UI 等技术点，但内容偏概览，缺少深入拆解与证据支撑。",
+    "tags": [
+      "LLM",
+      "多Agent协作",
+      "实时语音",
+      "在线游戏",
+      "Function Calling",
+      "开源项目"
+    ],
+    "title": "X 上的 nash_su - e/acc：“为了探索多 agents 实时协作，竟然做了一个在线多人游戏！ Gradient Bang 是一个在线的多人宇宙游戏，你可以和其他玩家和 LLM进行 探索、…",
+    "totalScore": 58.5,
+    "url": "https://x.com/nash_su/status/2044246135704068152"
+  },
+  "payloadHash": "sha256:b746cccda383052132a259f25e6a31c1361f844d4b3a42b8a837c66d7d88bccf",
+  "refs": {},
+  "revisionId": "sha256:bdf29929d692fa256be9b37a972e90ec2ab86081a752f7f84dea9fd1f17de6fe",
+  "schemaVersion": 1,
+  "updatedAt": 1776646916346
+}

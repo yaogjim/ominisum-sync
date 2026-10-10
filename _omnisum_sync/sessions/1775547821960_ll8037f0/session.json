@@ -1,0 +1,66 @@
+{
+  "createdAt": 1775547821960,
+  "entityType": "session",
+  "id": "1775547821960_ll8037f0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在现有 Git 仓库中试运行 `npx kanban`，评估其对当前开发流程的适配度",
+      "挑选一个可拆分的小型需求，测试多任务卡并行执行、自动提交和差异审阅体验"
+    ],
+    "archiveReason": "内容提供了较完整的功能概览、使用方式和典型工作流，可作为后续评估同类工具的参考",
+    "classifiedAt": 1775547834072,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "并行CLI代理看板工具介绍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "通过为每个任务创建临时 Git worktree，可降低并行代理工作的合并冲突风险",
+      "任务卡之间可建立依赖关系，并结合自动提交实现半自主或全自主任务链",
+      "在看板内集成差异查看、评论回传和Git操作，可减少在多个工具之间切换"
+    ],
+    "oneHighValuePoint": "将任务卡、Git worktree、代理终端和依赖链自动化结合起来，让多个代理能在隔离环境中并行推进复杂任务。",
+    "oneLineReview": "这是一个有明显产品新意的工具说明，但更偏功能宣传，证据与实战案例不足。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为多代理开发工具选型资料保留",
+    "secondaryCategories": [
+      "多代理协作",
+      "开发效率工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个在本地浏览器中运行的看板式工具，用于并行调度多个CLI代理。核心价值在于为每个任务卡创建独立工作树、终端和差异视图，并支持任务依赖链、自动提交、自动PR及Git可视化管理。",
+    "tags": [
+      "CLI Agent",
+      "Kanban",
+      "并行执行",
+      "Git Worktree",
+      "自动提交"
+    ],
+    "title": "cline/kanban: Launch a local web app that runs CLI agents in parallel",
+    "totalScore": 62.5,
+    "url": "https://github.com/cline/kanban"
+  },
+  "payloadHash": "sha256:e7a8521495091276fe6623364f3f7e6620ac2e54d29b9139e8cc3fb1216d8c6a",
+  "refs": {},
+  "revisionId": "sha256:4f43ca996a98c785dae6996111115cd7cd0eb9326b9eddce3c622762e34c1ea0",
+  "schemaVersion": 1,
+  "updatedAt": 1775559784400
+}

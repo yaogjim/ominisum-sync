@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773916203363,
+  "entityType": "message",
+  "id": "summary_template_1772076865357_1773916203363",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这是一个很典型的 “从 Agent 能力层走向工作台层” 的项目：它不是再做一个聊天壳子，而是在试图定义 “AI Agent 的操作系统界面”。如果判断是否值得做，不应只看功能堆叠，而要看它是否抓住了一个正在形成的明确需求：用户不再满足于单轮对话，而需要一个可持续操作、可观测、可管理、可扩展的 Agent workspace。\n\n**一、项目一句话判断**\n- `Hermes Workspace`的本质，不是 AI 聊天应用，而是 Hermes Agent 的原生控制台 / 工作台。\n- 它切入的是 “Agent 使用层” 的空白：把聊天、文件、终端、记忆、技能、观察器整合成一个统一界面。\n- 从方向上看，产品定位是对的，且比单纯 chat UI 更接近长期价值区。\n- 从 PMF 阶段看，它更像 “强需求早期验证” 而不是 “已稳定增长产品”。\n- 从商业化看，开源 + 自托管 + 即将云化，是一条很合理的演进路径，但现在离可规模化付费还差两步：稳定工作流闭环、多人协作价值。\n\n**二、核心产品定位**\n- 产品定位：`Hermes Agent 的 Native Web Workspace`\n- 用户心智：不是 “跟 AI 聊天”，而是 “管理一个会行动的 Agent”\n- 核心价值主张：\n  - 一个界面统一管理：`chat + files + terminal + memory + skills + inspector`\n  - 支持 Agent 实时流式执行与工具调用可视化\n  - 让用户对 Agent 的上下文、记忆、技能、工作目录有 “可见、可控、可编辑” 的掌控感\n- 差异化表达很清楚：`Not a chat wrapper. A complete workspace`\n\n这句定位是对的，因为它直接把自己从大量同质化 AI UI 中拉开了。\n\n**三、用户需求与场景判断**\n这个产品最可能先打中的不是大众用户，而是 3 类高意愿高容忍度人群：\n\n- `AI 开发者 / Agent Builder`\n  - 需要观察 Agent 行为\n  - 需要调试 memory、skills、tool calls、session\n  - 需要文件和终端集成，而不是纯聊天\n- `独立开发者 / 技术型超级个体`\n  - 希望把 Agent 变成 “第二操作位”\n  - 需要在桌面、手机、远程设备之间持续访问自己的 Agent\n  - 对自托管、Tailscale、PWA 接受度高\n- `研究型 / 高级工作流用户`\n  - 对多轮任务、长期上下文、能力编排更敏感\n ",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076865357",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-产品技术PMF",
+    "timestamp": 1773916203363,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1d2066997f2407166ee19728437090c4a623ed61eb362ae08b833d681392ad4c",
+  "refs": {
+    "sessionId": "1773914969685_9fxa0brp"
+  },
+  "revisionId": "sha256:8ba960f73c34502a7451e3ec7fcff5a8653838cb127ea651d69b56a08c39beee",
+  "schemaVersion": 1,
+  "updatedAt": 1773916203363
+}

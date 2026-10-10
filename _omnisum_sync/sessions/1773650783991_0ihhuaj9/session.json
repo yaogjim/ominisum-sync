@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773650783991,
+  "entityType": "session",
+  "id": "1773650783991_0ihhuaj9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在做 AI Agent 或测试基础设施，可评估 sandbox cloud 是否适合接入现有浏览器自动化流程",
+      "进一步查阅官方文档，验证其对登录态持久化、远程调试和测试稳定性的实际支持"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773829565033,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Sandbox云浏览器自动化上线",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "sandbox cloud 提供基于内置 browser cli 和 skill 的网站自动化操作能力",
+      "可用于 e2e 测试、模拟用户登录及凭证与用户态快照备份"
+    ],
+    "oneHighValuePoint": "将浏览器自动化、用户态快照和云端沙箱结合，能降低登录态维护与端到端测试环境配置成本。",
+    "oneLineReview": "有一定工具情报价值，但更像宣传性短讯，方法论和证据都偏弱。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容主要是产品上线通知，信息较碎片化，缺少系统说明、对比分析和实证数据支撑。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "浏览器自动化",
+      "云端沙箱"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章本质上是一则产品动态，介绍 sandbox cloud 上线浏览器自动化能力，可通过内置 browser cli 和 skill 操作网站、执行 e2e 测试，并结合 snapshot 做凭证和用户态备份。评论区补充了 Chrome Remote Debugging 与轻量抓取的实践线索。",
+    "tags": [
+      "browser automation",
+      "sandbox cloud",
+      "e2e测试",
+      "AI Agent",
+      "凭证快照"
+    ],
+    "title": "郭宇 guoyu.eth: sandbox cloud 正式上线浏览器自动化服务，所有创建的沙箱都可以通过内置的 browser cli 和 skill 来自动化操作网站，运行 e2e 测…",
+    "totalScore": 43,
+    "url": "https://x.com/turingou/status/2033117438838194427"
+  },
+  "payloadHash": "sha256:470f50811439b8bb128f2a4ebd56fe90e60b97f7e6b403b4d41a38f32c06d8df",
+  "refs": {},
+  "revisionId": "sha256:9669957d2da94bb89c266aa64eb3c102e629904e55d7330dfd1fdbef14916c8a",
+  "schemaVersion": 1,
+  "updatedAt": 1773829565036
+}

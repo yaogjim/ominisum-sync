@@ -1,0 +1,70 @@
+{
+  "createdAt": 1773653728723,
+  "entityType": "session",
+  "id": "1773653728723_rya4raeu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在用 Claude Code 和 NotebookLM，可按 README 先本地试装并验证核心链路是否稳定",
+      "选取一篇文章、一个视频和一个 PDF 进行对比测试，评估生成质量与时间成本",
+      "重点检查微信抓取、OCR 识别和长文档处理的成功率与准确度",
+      "将其纳入个人知识管理流程前，补充对隐私、版权和 NotebookLM 限制的验证"
+    ],
+    "archiveReason": "提供了较完整的功能范围、安装步骤和使用示例，后续搭建 NotebookLM 自动化流程时可直接参考",
+    "classifiedAt": 1773829462395,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "多源内容转NotebookLM工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Claude Skill 可作为 NotebookLM 的前置内容采集与格式转换层",
+      "支持网页、微信、YouTube、PDF、EPUB、图片、音频和压缩包等多种输入源",
+      "可将同一内容自动转为播客、PPT、脑图、Quiz、报告等多种学习输出",
+      "通过 markitdown、OCR、字幕提取和 MCP 组合实现多模态处理",
+      "适合构建个人知识整理、学习复盘和内容再创作工作流"
+    ],
+    "oneHighValuePoint": "把“多源内容获取 + 格式转换 + NotebookLM生成”串成一条自然语言驱动的自动化链路，显著降低知识加工门槛。",
+    "oneLineReview": "实用性强的工具型项目说明文档，适合快速了解能力边界，但证据和方法论深度一般。",
+    "primaryCategory": "AI效率工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留归档，适合作为工具选型和工作流搭建素材",
+    "secondaryCategories": [
+      "内容处理自动化",
+      "NotebookLM工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份 GitHub README，介绍一个 Claude Skill：将微信文章、网页、YouTube、PDF、Markdown、图片等多源内容接入 NotebookLM，并生成播客、PPT、思维导图、Quiz、报告等输出。文档强调安装便捷、自然语言触发和多源整合能力，但缺少真实效果对比、稳定性数据与边界说明。",
+    "tags": [
+      "Claude Skill",
+      "NotebookLM",
+      "多模态处理",
+      "自动化",
+      "知识转化"
+    ],
+    "title": "joeseesun/anything-to-notebooklm: Claude Skill: Multi-source content processor for NotebookLM. Supports WeChat articles, web pages, YouTube, PDF, Markdown, search queries → Podcast/PPT/MindMap/Quiz etc.",
+    "totalScore": 61.5,
+    "url": "https://github.com/joeseesun/anything-to-notebooklm"
+  },
+  "payloadHash": "sha256:420e726fc6a77c014ad1ba907bf2e668101955f797fe1336e5de5be06363b929",
+  "refs": {},
+  "revisionId": "sha256:4292f61a8c659856a31148c79d34151274998f27b848500cdc5e08e859dcb20f",
+  "schemaVersion": 1,
+  "updatedAt": 1773829462397
+}

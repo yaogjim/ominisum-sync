@@ -1,0 +1,69 @@
+{
+  "createdAt": 1780448935074,
+  "entityType": "session",
+  "id": "1780448935074_iycbb4sc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在评估浏览器代理方案时，按凭证可见性、不可信页面文本、运行规模和任务沙盒化程度决定使用raw CDP还是harness框架。",
+      "设计浏览器Agent时优先补齐DOM安全过滤、操作缓存、凭证代理和文件系统卸载能力，而不是只增加CDP工具调用。",
+      "将高频网站操作沉淀为可复用的Markdown技能或确定性辅助脚本，避免每次任务重新推理页面结构。"
+    ],
+    "archiveReason": "提供了浏览器代理从演示走向生产环境所需的分层框架，对Agent工程、安全、缓存、身份与凭证管理有较高参考价值。",
+    "classifiedAt": 1780449783256,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "浏览器代理生产化框架",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "原始CDP适合沙盒内单任务探索，但在生产环境会遇到提示注入、验证码、指纹识别、凭证泄露和上下文膨胀等问题。",
+      "浏览器代理框架可拆为安全层、缓存层、身份层、凭证代理层、技能层和文件系统层，以提升可靠性、成本效率和安全性。",
+      "技能文件和文件系统分别承担长期记忆与工作记忆，能减少重复推理并避免上下文窗口被大规模DOM、截图、PDF或JSON数据淹没。",
+      "小型、可编辑、有立场的抽象比完全裸露底层协议更适合生产级Agent系统。"
+    ],
+    "oneHighValuePoint": "生产级浏览器代理的关键不是暴露更多底层CDP能力，而是在模型与真实网络之间建立安全、身份、缓存、凭证和记忆等可组合的框架层。",
+    "oneLineReview": "一篇偏产品立场但有工程价值的浏览器代理生产化框架说明。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "浏览器自动化",
+      "LLM应用架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章反驳“只给模型原始CDP即可”的观点，提出生产级浏览器代理需要安全层、缓存层、身份层、凭证代理、技能记忆和文件系统等框架组件，并类比Claude Code说明上下文工程与护栏的重要性。",
+    "tags": [
+      "浏览器代理",
+      "CDP",
+      "Agent框架",
+      "生产化",
+      "安全护栏",
+      "上下文工程"
+    ],
+    "title": "网络并非为浏览器代理而构建，以下是我们如何搭建一个工具使其正常工作的方法。",
+    "totalScore": 70.5,
+    "url": "https://x.com/kylejeong/status/2061882958651474268"
+  },
+  "payloadHash": "sha256:4a4bbef2d84ffecf71057dfb147a59e33f7057c2344cd12ab55b4907cb1559c9",
+  "refs": {},
+  "revisionId": "sha256:35505e8b6d8345fb7b14db0961e42fbf4edfa557b6317a8db27d03228a450b26",
+  "schemaVersion": 1,
+  "updatedAt": 1780454213659
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773730898588,
+  "entityType": "session",
+  "id": "1773730898588_s0jsttq3",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若关注生成式前端，可仅记录其中的提示词作为实验素材",
+      "若需要学习 Three.js 实战，转而寻找包含代码结构与性能优化说明的教程"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773730918048,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 2,
+      "novelty": 6,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI生成Three.js互动演示",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "社交媒体短帖时效性强，除展示效果外几乎无系统性知识沉淀，难以支持后续学习或复用。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Three.js 可用于构建带镜头切换的互动网页场景",
+      "大模型可通过高层提示词直接生成复杂视觉演示代码原型"
+    ],
+    "oneHighValuePoint": "可将其视为一个“用单条高层提示词生成复杂前端场景”的趣味 benchmark 案例。",
+    "oneLineReview": "有趣但偏噱头，展示价值大于学习价值。",
+    "primaryCategory": "AI生成内容演示",
+    "rating": "D",
+    "rejectReason": "内容以炫技展示为主，缺少实现细节、方法拆解、性能分析和可复用经验，信息价值偏低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "Three.js",
+      "社交媒体案例"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一条展示型推文，介绍用 three.js 与大模型生成一个包含名人角色跳《Thriller》的互动网页，并给出一句核心提示词与演示链接，但没有提供实现过程、技术难点或可复用框架。",
+    "tags": [
+      "Three.js",
+      "AIGC",
+      "互动网页",
+      "提示词",
+      "演示案例"
+    ],
+    "title": "Tz: Muhahaha，我把这个使用 three",
+    "totalScore": 32.5,
+    "url": "https://x.com/Tz_2022/status/2033615464438362571"
+  },
+  "payloadHash": "sha256:7454fa2b0010c1c2982f68ddd725fb98e66d705c1b5e73d5f7973b6acb4d03db",
+  "refs": {},
+  "revisionId": "sha256:67d0a1b2231537bee767a1ffdd01ba8932f9cd1d4a7e0065b90ef5f227747d33",
+  "schemaVersion": 1,
+  "updatedAt": 1773730918052
+}

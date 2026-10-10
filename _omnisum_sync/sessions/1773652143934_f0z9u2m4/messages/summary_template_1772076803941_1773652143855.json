@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773652143855,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773652143855",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章主要介绍了 Lightpanda：一个专门为 AI 代理和自动化场景打造的无头浏览器。它的核心卖点是 “从零构建、非 Chromium 分支”，强调更低资源占用和更快执行速度。\n\n- **项目定位**\n  - Lightpanda 是一个开源无头浏览器，专为 AI、LLM 训练、爬虫、测试和自动化设计。\n  - 它不是 Chromium 或 WebKit 的改版，而是用 Zig 语言从头开发的新浏览器。\n  - 设计思路很明确：只做无头场景需要的能力，不做图形渲染等 “重功能”。\n\n- **核心优势**\n  - 官方给出的性能数据很突出：\n    - 内存占用比 Chrome 低**9 倍**\n    - 执行速度比 Chrome 快**11 倍**\n    - 启动速度也强调 “几乎瞬时”\n  - 这些优势主要面向大规模自动化部署场景，比如同时跑很多浏览器实例时，能明显降低 RAM、CPU 和运维成本。\n\n- **支持能力与兼容性**\n  - 已支持的核心能力包括：\n    - JavaScript 执行（基于**v8**）\n    - DOM 树与 DOM API\n    - Ajax / XHR / Fetch\n    - Cookies、表单输入、点击操作\n    - 自定义请求头、代理、网络拦截\n    - CDP/WebSocket 服务\n    - 可选遵守`robots.txt`（`--obey_robots`）\n  - 可兼容主流自动化生态：\n    - **Playwright 1**\n    - **Puppeteer**\n    - **chromedp**\n  - 但文中也明确说明：**Web API 支持仍是部分实现（WIP）**，覆盖率还在持续补齐。\n\n- **使用方式**\n  - 提供多种快速启动方式：\n    - 直接下载二进制，支持**Linux x86_64**和**macOS aarch64**\n    - Windows 可通过**WSL2**运行\n    - 也提供官方 Docker 镜像，支持**amd64**和**arm64**\n  - 典型用法有两类：\n    - `fetch`：直接抓取并执行页面 JS 后输出内容\n    - `serve`：启动 CDP 服务，供 Puppeteer 等客户端连接\n  - 例子中展示了用 Puppeteer 连接`ws://127.0.0.1:9222`，再访问页面并提取所有链接，说明接入方式与现有脚本生态较接近。\n\n- **状态与限制**\n  - 当前项目处于**Beta**阶段，仍在持续开发中。\n  - 官方明确提醒：\n    - 稳定性和兼容性在提升\n    - 许多网站已经能正常工作\n    - 但仍可能出现报错或崩溃，建议遇到问题时提交 issue\n  - 对 Playwright 还特别做了免责声明：\n    - 同一脚本在未来版本中可能失效\n    - 原因是 Playwright 会根据浏览器能力动态切换执行策略，而新路径可能依赖 Lightpanda 尚未实现的 API\n\n- **遥测与隐私**\n  - 默认会收集并发送使用遥测数据。\n  - 如果不希望上报，可以通过环境变量关闭：\n    - `LIGHTPANDA_DISABLE_TELEMETRY=true`\n  - 文中还提供了隐私政策链接，说明这一点是公开透明的。\n\n- **构建与依赖**\n  - 项目使用**Zig 0.15.2**开发，构建时要求版本匹配。\n  - 主要依赖包括：\n    - `zig-js-runtime`（含 v8）\n    - `Libcurl`\n    - `html5ever`\n    - Linux 下还需要`clang`、`make`、`curl`、`git`等\n    - 还依赖**Rust**\n  - 支持通过`make build` / `make build-dev`或`zig build run`进行构建。\n  - 还支持**v8 snapshot**优化：可先生成`snapshot.bin`，再在构建时嵌入，提高启动效率。\n\n- **测试体系**\n  - 单元测试可通过`make test`运行。\n  - 端到端测试需要额外克隆 demo 仓库，并安装 Node 依赖和**Go > 1.24**，然后运行`make end2end`。\n  - 项目还接入了**Web Platform Tests（WPT）**，说明其目标是逐步向标准浏览器能力靠拢。\n  - 但官方也提醒：如果跑完整套 WPT，耗时会很长，建议用`ReleaseFast`模式提升速度。\n\n- **为什么要做这个项目**\n  - 文章最后解释了项目动机：\n    - 过去抓网页只需像 cURL 一样发请求\n    - 现在网页大量依赖 JavaScript：如**Ajax、SPA、无限滚动、点击展开、即时搜索**\n    - 主流前端框架如**React、Vue、Angular**让 “只抓 HTML” 越来越不够用\n  - 团队认为，直接把大型桌面浏览器搬到服务器跑并不理想，因为：\n    - 太吃内存和 CPU\n    - 大规模部署成本高\n    - 打包、部署、维护复杂\n    - 包含许多无头场景根本不需要的功能\n  - 所以他们选择从零实现一个 “真正为无头而生” 的浏览器，这也是 Lightpanda 最核心的差异化价值。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1773652143855,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f729f18c1f9897a9a361120780c36da2aa240dd4b5a89614d36121a7e85c47dd",
+  "refs": {
+    "sessionId": "1773652143934_f0z9u2m4"
+  },
+  "revisionId": "sha256:99ca32a4048810766f712177ad0c9854dc6ad23b97dfd01cbe3882cb8e1d3c13",
+  "schemaVersion": 1,
+  "updatedAt": 1773652143855
+}

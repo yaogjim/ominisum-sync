@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777773566294,
+  "entityType": "message",
+  "id": "1777773566293_al5qibjs",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Cursor SDK公测解读\n\n**评级**: B (63.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: 智能体基础设施, 编程自动化\n**标签**: #Cursor #TypeScript SDK #AI Agent #代码自动化 #CI/CD\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇信息较密集的 Cursor SDK 发布概览，适合了解 AI 编程 agent 基础设施趋势。\n**核心高价值点**: Cursor 正从 IDE 工具扩展为可被开发者集成的 agent 基础设施平台。\n\n### 摘要\n文章介绍 Cursor 官方 TypeScript SDK 公测，开放其 agent 运行框架、云端沙箱、模型切换、代码索引、MCP、hooks 和子 agent 能力，并列举 CI/CD、内部工具和产品嵌入等应用场景。\n\n### 知识要点\n- Cursor SDK 可在本地或 Cursor 云端虚拟机运行 agent，并支持自动开 PR、推分支和附截图。\n- SDK 开放了代码库索引、语义搜索、grep、MCP 工具接入、skills、hooks 和子 agent 等能力。\n- 典型场景包括 CI/CD 自动诊断与修复、内部业务工具、以及将 agent 嵌入客户产品。\n- Agent SDK 生态正在成为独立基础设施市场，Cursor、Anthropic、OpenAI 都在布局。\n\n### 行动项\n- 查看 GitHub cookbook 示例，评估是否可用于现有代码自动化流程。\n- 尝试用 @cursor/sdk 构建一个最小本地 agent demo。\n- 评估在 CI/CD 中接入 agent 做失败原因分析或自动修复 PR 的可行性。\n\n### 存档判定\n归档: 是 — 原因: 包含 Cursor SDK 的能力概览、典型应用场景和 cookbook 链接，对跟踪 AI 编程工具生态有参考价值\n删除: 否\n留存决策: 短期参考后可保留链接与示例仓库",
+    "role": "assistant",
+    "timestamp": 1777773566294,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:8b06ef0c7fa60b1869ab3c2b6c0e8772ff2731eef40662c820042fe9b4c1a36e",
+  "refs": {
+    "sessionId": "1777773101090_mhb2gruf"
+  },
+  "revisionId": "sha256:135e611bf33eb5c1569a4c29e7cf2e2567f97da56779e7b0292a62b5eaf76699",
+  "schemaVersion": 1,
+  "updatedAt": 1777773566294
+}

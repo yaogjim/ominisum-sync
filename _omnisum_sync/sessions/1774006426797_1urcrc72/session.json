@@ -1,0 +1,69 @@
+{
+  "createdAt": 1774006426797,
+  "entityType": "session",
+  "id": "1774006426797_1urcrc72",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计Agent时优先区分热工作集记忆与冷历史检索，避免把全部历史塞进系统提示。",
+      "在长会话压缩前增加一次仅开放记忆写入工具的刷新步骤，保留偏好、纠错和稳定规范。",
+      "为可复用流程单独建立技能层，而不是把程序性知识混入用户画像或普通事实记忆。"
+    ],
+    "archiveReason": "文章基于源码和文档拆解智能体记忆分层设计，对理解AI Agent架构、缓存约束与长期记忆实现有持续参考价值。",
+    "classifiedAt": 1774006451057,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Hermes智能体记忆架构解析",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Hermes将持久记忆拆分为提示内小型事实记忆、SQLite会话回忆、技能型程序性记忆和可选深度用户模型四层。",
+      "压缩长上下文前先触发内存刷新，把持久事实写入MEMORY.md或USER.md，再重建提示以降低信息损失。",
+      "通过冻结系统提示快照和将额外上下文放入工具检索层，Hermes在记忆能力与提示缓存效率之间取得平衡。"
+    ],
+    "oneHighValuePoint": "最有价值的点是将“热记忆保持极小且稳定以适配提示缓存，冷历史按需检索”明确为智能体记忆系统的核心设计原则。",
+    "oneLineReview": "这是一篇少见的基于实现细节而非表面行为的Agent记忆架构分析，方法论价值明显高于一般产品介绍。",
+    "primaryCategory": "AI Agent系统设计",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "记忆架构",
+      "提示工程",
+      "系统分析"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章通过阅读Hermes Agent源码与文档，拆解其五层记忆体系：冻结提示记忆、SQLite会话检索、压缩前内存刷新、技能型程序性记忆与可选Honcho用户建模，并指出其核心原则是保持提示稳定、把大部分记忆转移到工具层。",
+    "tags": [
+      "Hermes Agent",
+      "记忆系统",
+      "Prompt Cache",
+      "SQLite",
+      "Session Search",
+      "Agent Skills"
+    ],
+    "title": "我读了 Hermes Agent 的记忆系统，它修正了 OpenClaw 出错的地方",
+    "totalScore": 73.5,
+    "url": "https://x.com/manthanguptaa/status/2034849672985288957"
+  },
+  "payloadHash": "sha256:ee1bca5f1466b6ac7bbf5d879ff010b1f288e617b99643c620b8cc2be6e74916",
+  "refs": {},
+  "revisionId": "sha256:fdcde7880675ffbe16c3298607b1194d8694ad4c1bdd8944d65aaa06c7e98400",
+  "schemaVersion": 1,
+  "updatedAt": 1774006529508
+}

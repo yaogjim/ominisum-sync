@@ -1,0 +1,69 @@
+{
+  "createdAt": 1773886593488,
+  "entityType": "session",
+  "id": "1773886593488_z10iwxa0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文中域划分建立Claude学习清单，优先补Agent SDK、MCP与hooks机制",
+      "将文中高风险场景规则应用到自己的Agent设计中，检查是否仍依赖纯prompt控制"
+    ],
+    "archiveReason": "内容覆盖Claude Agent SDK、API、MCP和多智能体设计，适合作为后续系统学习入口和检索清单",
+    "classifiedAt": 1773918180315,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Claude架构师考试拆解课",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "子代理与协调器不共享上下文，关键信息必须显式传递",
+      "智能体循环应依赖`stop_reason`等确定性信号，而非解析自然语言文本",
+      "高风险工作流应通过hooks、prerequisite gates等机制进行程序化强制",
+      "多智能体研究系统的常见根因在于协调器任务分解失衡而非下游执行失败",
+      "并行Task调用与结构化元数据传递可提升速度与可追溯性"
+    ],
+    "oneHighValuePoint": "最有价值的是明确区分了提示词约束与程序化约束：涉及资金、安全、合规时必须用hooks或前置门控，而不能只靠prompt。",
+    "oneLineReview": "这是篇高密度的Claude架构学习提纲，但更像经验型备考笔记而非严谨教程。",
+    "primaryCategory": "AI工程与智能体开发",
+    "rating": "B",
+    "rejectReason": "论证主要依赖作者个人拆解与口述总结，缺少实测案例、数据支撑和正式文档结构化引用",
+    "retentionDecision": "短期参考并归档，适合作为Claude生态学习路线索引",
+    "secondaryCategories": [
+      "LLM应用架构",
+      "Claude生态学习资源"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕“Claude Certified Architect”考试范围，提炼Claude Code、Agent SDK、API与MCP的核心知识点，尤其强调智能体编排、子代理上下文隔离、工具调用约束和高风险场景下的程序化控制，兼具学习路径与提示词模板价值。",
+    "tags": [
+      "Claude",
+      "Agent SDK",
+      "MCP",
+      "多智能体",
+      "AI架构",
+      "考试拆解"
+    ],
+    "title": "I want to become a Claude architect (full course).\n我想要成为一名 Claude 架构师（完整课程）。",
+    "totalScore": 64.5,
+    "url": "https://x.com/hooeem/status/2033198345045336559"
+  },
+  "payloadHash": "sha256:924c12d18006eb08baf1aa97af9eec8d0984693136351642611ea270e26d36fd",
+  "refs": {},
+  "revisionId": "sha256:4ff8f32436a7eb788fc634c0fd345b09257048acb68503d00b0f3d835b842017",
+  "schemaVersion": 1,
+  "updatedAt": 1773918180328
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1775546343326,
+  "entityType": "session",
+  "id": "1775546343326_yhvzrg73",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在做 agent 或个人知识管理，可对比其分层记忆方案与常规 RAG 的差异",
+      "检查 benchmarks 和 tests 目录，验证其 96.6%-100% 指标的复现性与评测口径"
+    ],
+    "archiveReason": "包含较完整的产品思路、架构分层、命令示例和 benchmark 数据，适合后续做同类工具对比",
+    "classifiedAt": 1775547796638,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "本地AI记忆系统MemPalace",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "通过 wing-room-hall-tunnel 的结构化组织提升检索命中率，而不是只靠向量检索",
+      "AAAK 试图把长期上下文压缩为可被通用 LLM 直接读取的结构化文本",
+      "结合本地向量库、知识图谱和 MCP 工具，可形成离线可控的 AI 长期记忆栈"
+    ],
+    "oneHighValuePoint": "最有价值的是把长期记忆拆成常驻轻量上下文加按需检索的分层方案，用极少 token 持续唤醒世界模型。",
+    "oneLineReview": "这是篇信息量不低的 AI memory system 项目说明，但营销表达偏重，适合调研而非直接全信。",
+    "primaryCategory": "AI工程与记忆系统",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后归档，适合作为AI记忆系统方案调研样本保留",
+    "secondaryCategories": [
+      "Agent基础设施",
+      "本地知识管理",
+      "RAG/检索增强"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个本地运行的 AI 记忆系统 MemPalace，核心包括宫殿式分层组织、AAAK 压缩表示、知识图谱和 MCP 工具接入。内容覆盖产品理念、CLI 用法、架构设计与 benchmark，但整体带有较强宣传色彩，证据与方法细节仍不够扎实。",
+    "tags": [
+      "AI记忆",
+      "MCP",
+      "本地优先",
+      "知识图谱",
+      "上下文管理"
+    ],
+    "title": "milla-jovovich/mempalace: The highest-scoring AI memory system ever benchmarked. And it's free.",
+    "totalScore": 69.5,
+    "url": "https://github.com/milla-jovovich/mempalace"
+  },
+  "payloadHash": "sha256:b05b7e9eac0c39578d8ef0ce0f43c73fd2a0ac1b89bcf03a4f5e75a132cefe24",
+  "refs": {},
+  "revisionId": "sha256:799b87c22d663a384fab6d0060c563b703e06201a235645df9567796637ebcae",
+  "schemaVersion": 1,
+  "updatedAt": 1775559839976
+}

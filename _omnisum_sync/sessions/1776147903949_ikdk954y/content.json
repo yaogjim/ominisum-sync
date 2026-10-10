@@ -1,0 +1,15 @@
+{
+  "createdAt": 1776147903949,
+  "entityType": "session-content",
+  "id": "1776147903949_ikdk954y",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Barret李靖</strong></header><div class=\"tw-body\">Spec-driven development (SDD) 的通用实现基本会参照 openspec，实践下来，效果还是一般，大模型会偷懒，任务拆解不充分，也缺少 review 过程。<br><br>想让 Agent 持续跑长程任务，同时确保交付质量，需要让它明确项目目标，并将任务拆解到最小颗粒度，再让每个小任务在干净的环境下执行，执行之后，用子 Agent 对当前提交的代码进行 review，进入到 review → feedback → modify → review 的循环。<br><br>每个环节都需要精心构造最有效的 context，例如 review 过程，需要给定代码上下文、修改记录、验证手段、脚本工具库等等。<br><br>真实项目的执行过程，会包含立项、拆迭代、拆任务等过程，将这套流程复刻到 coding agent 的 plan 过程，依然奏效。如图一，它是一个跑了大概半天任务，而对于更复杂的任务，可以跑一两天不停歇。<br><br>每个 sprints 和 tasks 的执行过程，以及 review 的规范，尽量严苛，可以考虑编写脚本的方式来保障质量，例如架构必须分层，L2 可以调用 L1 和 L0，倘若 L0 调用了 L2 就是反模式，需要报错阻断，这种规则问题就可以交给 eslint + governance scripts 来保障的。code review 过程中，也可以要求 AI 根据需要，自主编写文档/程序来确保项目规则/脚本持续沉淀。</div></article>",
+    "pageContent": "Barret李靖: Spec-driven development (SDD) 的通用实现基本会参照 openspec，实践下来，效果还是一般，大模型会偷懒，任务拆解不充分，也缺少 review 过程。 想让 Agent 持续跑长程任务，同时确保交付质量，需要让它明确项目目标，并将任务拆解到最小颗粒度，再让每个小任务在干净的环境下执行，执行之后，用子 Agent 对当前提交的代码进行 review，进入到 review → feedback → modify → review 的循环。 每个环节都需要精心构造最有效的 context，例如 review 过程，需要给定代码上下文、修改记录、验证手段、脚本工具库等等。 真实项目的执行过程，会包含立项、拆迭代、拆任务等过程，将这套流程复刻到 coding agent 的 plan 过程，依然奏效。如图一，它是一个跑了大概半天任务，而对于更复杂的任务，可以跑一两天不停歇。 每个 sprints 和 tasks 的执行过程，以及 review 的规范，尽量严苛，可以考虑编写脚本的方式来保障质量，例如架构必须分层，L2 可以调用 L1 和 L0，倘若 L0 调用了 L2 就是反模式，需要报错阻断，这种规则问题就可以交给 eslint + governance scripts 来保障的。code review 过程中，也可以要求 AI 根据需要，自主编写文档/程序来确保项目规则/脚本持续沉淀。"
+  },
+  "payloadHash": "sha256:6e6909c0c8c4facb882c0908cc357182d67d3ea6c6ef92081a642bce00bc4e67",
+  "refs": {},
+  "revisionId": "sha256:9e6a39d89ccd1e33bb6aed613bbe193a5bfe78cf9bf67dbb2a0b8a0ac2af7185",
+  "schemaVersion": 1,
+  "updatedAt": 1776404875779
+}

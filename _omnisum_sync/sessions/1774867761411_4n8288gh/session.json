@@ -1,0 +1,74 @@
+{
+  "createdAt": 1774867761411,
+  "entityType": "session",
+  "id": "1774867761411_4n8288gh",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据自身场景先选 gstack 或 CE 作为主框架，避免一开始叠太多工具导致流程冲突",
+      "在项目开始前试用文中的“95% confidence”澄清提示，让 AI 先反向采访需求",
+      "为现有 AI 编码流程补上跨会话知识沉淀机制，例如建立 docs/solutions/ 类目录",
+      "将浏览器端到端 QA 与代码级检查分离，避免开发代理自测自评",
+      "用“决策-规划-执行-评审-记忆”五层框架审视自己当前工具链的缺口"
+    ],
+    "archiveReason": "对AI辅助编程工具的分层定位、组合方式与知识沉淀机制有较强参考价值，可作为后续搭建个人开发工作流的对照材料。",
+    "classifiedAt": 1774868109678,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "三种Claude代码工具对比",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "gstack 更强于前置决策与真实浏览器 QA，而非长期知识沉淀",
+      "Superpowers 提供流程纪律化能力，但会话间经验默认不会累积",
+      "Compound Engineering 的核心差异在于 /ce:compound，将问题、方案、预防策略写入结构化知识库",
+      "AI 开发流程可拆为决策、规划、执行、评审、记忆五层，不同工具重心不同",
+      "构建者与评估者分离能显著降低自评偏乐观问题"
+    ],
+    "oneHighValuePoint": "最有价值的点是把“跨会话知识沉淀”单独视为一层能力，指出 AI 编码的长期效率差异不只来自模型能力，而来自是否能把每次任务经验转成可检索的结构化资产。",
+    "oneLineReview": "不是单纯的工具测评，而是一篇把 AI 编码工作流拆成层级并给出组合策略的高价值实践文章。",
+    "primaryCategory": "AI工程工具评测",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "开发工作流",
+      "智能体协作",
+      "知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将 gstack、Superpowers 与 Compound Engineering 放在规划、执行、评审、跨会话记忆四层框架下比较，核心观点是三者并非直接竞品，而是分别强化决策质检、流程规范和知识复利，尤其强调将经验写入可检索知识库的重要性。",
+    "tags": [
+      "Claude Code",
+      "gstack",
+      "Superpowers",
+      "Compound Engineering",
+      "AI开发流程",
+      "代码评审",
+      "知识沉淀"
+    ],
+    "title": "I Compared gstack, Superpowers, and Compound Engineering. They Solve Three Completely Different Prob\n我比较了 gstack、Superpowers 和 Compound Engineering。它们解决了三个完全不同的问题。",
+    "totalScore": 76.5,
+    "url": "https://x.com/Voxyz_ai/status/2038237755654783107"
+  },
+  "payloadHash": "sha256:965a69f18a25bef3d7eaa77a572705e6c7909d6abe4f41d9ff64b50a6f4f38ae",
+  "refs": {},
+  "revisionId": "sha256:7c7ae741bc3621dc59936a75b2ecef95dd7e7f9bed00f3f2c972a923cb4a2ca6",
+  "schemaVersion": 1,
+  "updatedAt": 1774868306289
+}

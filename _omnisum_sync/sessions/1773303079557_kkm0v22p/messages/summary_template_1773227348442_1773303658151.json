@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773303658151,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773303658151",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "下面给你一个**具体实例 + 该实例上的最佳实践（精炼版）**，直接承接你文章里的核心思想。\n\n---\n\n## 实例：让 Agent 分析生产日志中的 500 错误峰值\n\n### 场景\n用户说：\n\n> “帮我看看`access.log`里最近为什么 500 错误变多了，给我一个初步判断。”\n\n如果用传统多工具方案，可能会拆成：\n- read_file\n- search_text\n- count_lines\n- sort\n- summarize\n\n而按你的设计，只需要一个：\n\n```bash\nrun (command=\"cat access.log | grep ' 500 ' | tail -100 | cut -d' ' -f1 | sort | uniq -c | sort -nr | head\")\n```\n\nAgent 一次调用，就能得到：\n- 最近 500 错误样本\n- 高频来源 IP\n- 初步排查线索\n\n---\n\n## 这个实例上的最佳实践\n\n### 1. **让一次 run 承载完整工作流，而不是拆成多次 tool call**\n优先鼓励 Agent 生成**管道化命令**，把读取、过滤、聚合、排序放进一次调用里。\n\n**好：**\n```bash\ncat access.log | grep ' 500 ' | wc -l\n```\n\n**不好：**\n- 先读文件\n- 再过滤\n- 再计数\n\n原则：**能在 shell 里组合完成的，就不要在 Agent 循环里拆开。**\n\n---\n\n### 2. **返回大输出时，不要把全文塞给 LLM**\n如果`access.log`很大，最佳实践不是直接返回全部内容，而是：\n- 展示前 200 行或关键片段\n- 自动落盘完整输出\n- 告诉 Agent 下一步怎么探索\n\n例如返回：\n\n```text\n--- output truncated (5320 lines, 210KB) ---\nFull output: /tmp/cmd-output/cmd-7.txt\nExplore:\ncat /tmp/cmd-output/cmd-7.txt | grep ' 500 '\ncat /tmp/cmd-output/cmd-7.txt | tail -100\n[exit:0 | 38ms]\n```\n\n原则：**给 Agent “导航入口”，不要给它 “信息洪水”。**\n\n---\n\n### 3. **错误信息必须可执行地纠偏**\n如果 Agent 写错命令，比如日志文件不存在：\n\n**好错误：**\n```text\n[error] cat: access.log not found. Use: ls to inspect files in current topic\n```\n\n而不是：\n\n```text\nno such file\n```\n\n原则：**错误信息不仅说明错了，还要提示下一步命令。**\n\n---\n\n### 4. **统一输出脚注，让 Agent 学会判断成功、失败与成本**\n每次结果都带：\n\n```text\n[exit:0 | 38ms]\n```\n\n这样 Agent 会逐渐形成策略：\n- `exit != 0`：先看错误，不盲试\n- `ms`很短：可继续探索\n- `s`很长：减少无效试探\n\n原则：**输出格式一致，本身就是 Agent 的训练信号。**\n\n---\n\n### 5. **Help 设计要支持逐层自发现**\n比如 Agent 不知道如何做日志过滤时，可以先问：\n\n```bash\nrun (command=\"grep\")\n```\n\n得到：\n\n```text\ngrep — Filter lines matching a pattern\nusage: grep <pattern> [-i] [-v] [-c]\n```\n\n然后它自然会继续构造：\n\n```bash\ncat access.log | grep ' 500 '\n```\n\n原则：**help 不是文档附件，而是 Agent 的在线导航系统。**\n\n---\n\n## 这个实例背后的总原则\n\n用一句话概括：\n\n> **把 “日志分析” 设计成 Unix 风格字符串组合问题，而不是多工具编排问题。**\n\n也就是：\n- **执行层**保证 shell 语义纯净\n- **呈现层**保证 LLM 能理解、能纠错、能继续探索\n\n---\n\n## 最精炼的结论\n\n在 “分析生产日志” 这个实例中，最佳实践是：\n\n1. **只暴露一个`run (command)`**\n2. **鼓励 Agent 用管道一次完成完整分析**\n3. **大输出截断 + 落盘 + 给出探索建议**\n4. **错误信息必须直接指向下一步命令**\n5. **统一返回`[exit:code | duration]`作为持续反馈**\n\n---\n\n如果你愿意，我还可以进一步把这个实例改写成一种更像**“文章里的最佳实践小节”**的成稿版本，方便你直接贴到原文后面。",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773303658151,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:db8a2ae2266b343c089e17ad3081b85b036c552cbe9b4a2da422dfc30b8e21d7",
+  "refs": {
+    "sessionId": "1773303079557_kkm0v22p"
+  },
+  "revisionId": "sha256:48a9b655b753b1d8e21af6e3800785ce58aecc0110ea6c3f46c7ac4756771d78",
+  "schemaVersion": 1,
+  "updatedAt": 1773303658151
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773918098474,
+  "entityType": "message",
+  "id": "1773918098473_hxvagx5e",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Chorus智能体编排平台概览\n\n**评级**: B (65.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程化\n**次类别**: 多智能体协作, 开发基础设施\n**标签**: #Agent Harness #AI-DLC #MCP #多Agent #任务编排\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇信息很密的产品型 README，适合快速了解多智能体协作基础设施，但证据支撑明显不足。\n**核心高价值点**: 最有价值的是将多 Agent 协作问题抽象为 Harness 层能力，而不是寄希望于单个模型本身。\n\n### 摘要\n文章介绍 Chorus 作为 Agent Harness 的定位，强调会话生命周期、任务状态机、上下文连续性、子 Agent 编排、可观测性与故障恢复，并给出 AI-DLC 工作流、技术栈、部署方式及 Claude Code 插件集成方案。\n\n### 知识要点\n- Agent Harness 通过会话、状态机、上下文注入和故障恢复提升长任务稳定性\n- AI-DLC 工作流将 Proposal、任务 DAG、执行和人工验证串成闭环\n- Claude Code 插件通过生命周期 Hook 自动管理 Session 和任务衔接\n- 系统采用 MCP 工具分权限域设计，支持 PM、Developer、Admin 三类角色\n\n### 行动项\n- 对照自身项目，评估是否需要独立的 Session 生命周期和任务状态机设计\n- 借鉴文中的角色分工与 Proposal 审批流，梳理团队的 AI 协作流程\n- 若在做多 Agent 系统，可重点查看其 MCP 工具权限划分与 checkin 机制实现\n\n### 存档判定\n归档: 是 — 原因: 适合作为了解 Agent Harness 架构、角色分工与落地流程的产品型参考资料。\n不推荐: 内容偏产品说明与功能罗列，实证数据和真实案例不足，不足以支撑精读优先级。\n删除: 否\n留存决策: 短期参考后可归档保留",
+    "role": "assistant",
+    "timestamp": 1773918098474,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:259f1a0bfc1b7e0e73e452295b0a8fbc0956f66db788389bf0350607ff1a4d9c",
+  "refs": {
+    "sessionId": "1773740960052_rnxfsc93"
+  },
+  "revisionId": "sha256:c88a813e150f475619f7e6c7c756a11873d019575fe77452f4d09e205a5ab9c7",
+  "schemaVersion": 1,
+  "updatedAt": 1773918098474
+}

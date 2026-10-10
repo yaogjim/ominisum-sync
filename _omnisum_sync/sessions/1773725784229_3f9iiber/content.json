@@ -1,0 +1,15 @@
+{
+  "createdAt": 1773725784229,
+  "entityType": "session-content",
+  "id": "1773725784229_3f9iiber",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>LotusDecoder</strong></header><div class=\"tw-body\">视频里一个 tips <br><br>claude code 需要避开专属“规划模式”，给予 Agent 自由度： <br><br>作者发现了一个极其反常的现象——如果在使用 Claude Code 时开启系统专门设定的“规划模式 (Planning Mode)”，Opus 的得分只有糟糕的 77% 。<br><br>但如果直接切换到“执行模式 (Execution Mode)”并让它去写计划，得分会暴涨 15 分，达到 92% 左右。<br><br>这是因为执行模式解除了系统框架对模型的束缚，赋予了 Opus 更多的自由度来构建自己的思维过程。在这种状态下，它会自主衍生子 Agent 或进行内部的差异分析（Gap Analysis），从而产出更严密的规划 。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/amplify_video_thumb/2033623624259932160/img/dLzc8QUz0kR93wj5.jpg\" alt=\"图片\" /></div><div class=\"tw-videos\"><a href=\"https://x.com/LotusDecoder/status/2033728715558101084\"><img src=\"https://pbs.twimg.com/amplify_video_thumb/2033623624259932160/img/dLzc8QUz0kR93wj5.jpg\" alt=\"视频\" /></a></div><blockquote class=\"tw-quote\"><strong>@edwinarbus</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\">Matt Maher tested frontier models in Cursor v. other harnesses. Cursor boosted model performance by 11% on average:\n\nGemini: 52% → 57%\nGPT-5.4: 82% → 88%\nOpus: 77% → 93%\n\nHis benchmark measures how well models implement a 100-feature PRD. </span><span class=\"r-18u37iz\"><span dir=\"ltr\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1wvb978\">@cursor_ai</span></span><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\"> consistently outperformed.</span></p></blockquote></article>",
+    "pageContent": "LotusDecoder: 视频里一个 tips claude code 需要避开专属“规划模式”，给予 Agent 自由度： 作者发现了一个极其反常的现象——如果在使用 Claude Code 时开启系统专门设定的“规划模式 (Planning Mode)”，Opus 的得分只有糟糕的 77% 。 但如果直接切换到“执行模式 (Execution Mode)”并让它去写计划，得分会暴涨 15 分，达到 92% 左右。 这是因为执行模式解除了系统框架对模型的束缚，赋予了 Opus 更多的自由度来构建自己的思维过程。在这种状态下，它会自主衍生子 Agent 或进行内部的差异分析（Gap Analysis），从而产出更严密的规划 。\n![图片](https://pbs.twimg.com/amplify_video_thumb/2033623624259932160/img/dLzc8QUz0kR93wj5.jpg)\n[![视频](https://pbs.twimg.com/amplify_video_thumb/2033623624259932160/img/dLzc8QUz0kR93wj5.jpg)](https://x.com/LotusDecoder/status/2033728715558101084)\n引用推文 (@edwinarbus):\nMatt Maher tested frontier models in Cursor v. other harnesses. Cursor boosted model performance by 11% on average: Gemini: 52% → 57%\nGPT-5.4: 82% → 88%\nOpus: 77% → 93% His benchmark measures how well models implement a 100-feature PRD. @cursor_ai consistently outperformed."
+  },
+  "payloadHash": "sha256:3a85843fa25aecc406f4dcb631e00b72950afe9638b27876f7cbaf9ca4efea62",
+  "refs": {},
+  "revisionId": "sha256:b27aba130934c4cffd33c7b8aac5b302a45f6613e995a5518e3d590f11be0a52",
+  "schemaVersion": 1,
+  "updatedAt": 1773730590696
+}

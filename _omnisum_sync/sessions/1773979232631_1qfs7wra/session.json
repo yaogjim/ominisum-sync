@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773979232631,
+  "entityType": "session",
+  "id": "1773979232631_1qfs7wra",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看GitHub仓库和官方博客，确认支持格式、安装方式和实际输出样例",
+      "用自己的PDF或Office文档对比LiteParse与PyMuPDF等工具的解析质量"
+    ],
+    "archiveReason": "涉及AI代理可用的文档解析工具，具备一定工具情报价值和后续选型参考意义",
+    "classifiedAt": 1773985310380,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "LiteParse文档解析工具介绍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "LiteParse定位为无需模型和GPU的轻量级本地文档解析工具",
+      "其输出设计更偏向服务LLM问答和任务执行，而不是严格保真Markdown格式",
+      "复杂PDF表格可通过空间网格表示提升人类与AI的可读性"
+    ],
+    "oneHighValuePoint": "提出了面向AI理解优化的空间网格式表格解析思路，而非仅追求传统Markdown还原。",
+    "oneLineReview": "有工具情报价值，但更像宣传帖，适合快速了解而非作为可靠决策依据。",
+    "primaryCategory": "AI工具",
+    "rating": "B",
+    "rejectReason": "内容偏产品宣传，缺少系统对比、测试方法和完整技术细节，不足以支撑精读",
+    "retentionDecision": "短期参考后可保留归档，待需要评估文档解析方案时再深入查看",
+    "secondaryCategories": [
+      "文档解析",
+      "开发工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一篇关于开源文档解析工具LiteParse的发布帖，强调其无需GPU、支持多格式、适合AI代理接入，并展示了复杂表格解析效果。内容对工具发现有帮助，但证据主要来自作者自述，缺少独立评测与方法细节。",
+    "tags": [
+      "LiteParse",
+      "开源工具",
+      "文档解析",
+      "AI Agent",
+      "LlamaIndex"
+    ],
+    "title": "Jerry Liu: Introducing LiteParse - the best model-free document parsing tool for AI agents …",
+    "totalScore": 57.5,
+    "url": "https://x.com/jerryjliu0/status/2034665976428724267"
+  },
+  "payloadHash": "sha256:829c058310dd7fbcc9f61f3413eaad17ae5c7389c30f81e6bb3f2c7a600e298c",
+  "refs": {},
+  "revisionId": "sha256:ca6ba52c006cb138b85cb97b0a2352cc344c131b3bfd7851b8b2fc559b49f05c",
+  "schemaVersion": 1,
+  "updatedAt": 1773987784518
+}

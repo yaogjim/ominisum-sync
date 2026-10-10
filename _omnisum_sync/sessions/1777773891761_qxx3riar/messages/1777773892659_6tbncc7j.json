@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773857577,
+  "entityType": "message",
+  "id": "1777773892659_6tbncc7j",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Claude Code 的 32 个使用技巧：核心总结\n\n## 一句话总结\n\n这篇文章的核心不是罗列 Claude Code 技巧，而是提出一个更重要的心智模型：**不要把 Claude Code 当成无限算力工具，而要把它当成一个“有限注意力、有限时间、有性格的 junior 同事”来管理。**\n\n---\n\n## 1. 32 个技巧分三层\n\n### 入门技巧\n\n重点是让 Claude 更好理解项目和任务：\n\n- 用 `/init` 生成项目说明文件 `cloud.md`\n- 用 `plan mode` 先规划再执行\n- 用 `/context` 查看 token 占用\n- 超过一定上下文后用 `/compact` 压缩\n- 把 Claude 当 junior 同事，多提问题，少下命令\n- 在 todo 中加入 self check，让它自检\n\n### 进阶技巧\n\n重点是提升效率和复用能力：\n\n- 用 sub agents 并行处理任务\n- 用 custom skills 复用 prompt 文件\n- 简单任务交给 Haiku，节省成本和 token\n- 跑偏时直接退出，重新 prompt\n- 用截图辅助视觉 debug\n\n### 高阶技巧\n\n重点是多任务、异步化和复杂协作：\n\n- 用 `/loop` 自动执行周期性任务\n- 用 Git worktrees 多 session 并行开发\n- 用 VPS 托管，保持长期运行\n- 用 ultrathink 处理高难度问题\n- 用 agent team 让多个 agent 分工协作\n\n---\n\n## 2. 把 Claude 当 junior 同事，本质是 Prompt 工程\n\n这不是“说话客气”的问题，而是影响模型思考方式。\n\n如果你直接命令它“修这里”，它可能只会机械修改你指出的地方。  \n如果你描述问题“这里看起来怪怪的，你查查原因”，它会更倾向于理解上下文，主动排查真正原因。\n\n更好的方式是：**描述现象，不预设答案。**\n\n例如：\n\n- 不好：这里有 race condition，修一下\n- 更好：这里偶尔会出错，你查查原因\n\n预设越少，模型越容易展开推理。\n\n---\n\n## 3. `/compact` 的重点不是省 token，而是管理注意力\n\n文章强调，60% 上下文阈值不是单纯为了省钱，而是为了对抗 **lost in the middle** 问题。\n\nLLM 在长上下文中，对开头和结尾记得更清楚，中间内容最容易被忽略。  \n当 context 太长时，Claude 会开始忘记之前的重要需求。\n\n`/compact` 的价值是：\n\n- 保留关键决策\n- 保留未完成事项\n- 压缩掉无关过程\n- 重新聚焦模型注意力\n\n判断是否该 compact，不只看 token 数，而要看 Claude 是否开始“忘事”。\n\n---\n\n## 4. 跑偏了要及时重开，不要硬纠正\n\n当 Claude 明显走偏时，继续补 prompt 让它修正，往往成本更高。\n\n原因是错误推理已经污染了上下文：\n\n- 你的纠正会继续占 context\n- 它的道歉和修正也会占 context\n- 前面的错误会形成锚定效应\n\n更好的策略是：**fail fast，及时 ESC，重新组织 prompt。**\n\n重开不是浪费，而是更聪明的资源分配。\n\n---\n\n## 5. Sub agents 的核心价值是上下文隔离\n\n很多人以为 sub agents 的重点是并行，其实更重要的是 **隔离上下文污染**。\n\n父 agent 负责大局和决策，sub agent 负责探索和执行。  \nsub agent 可以翻代码、试错、走弯路，但最后只把结论交给主线。\n\n适合 sub agent 的任务是：\n\n- 需要大量探索\n- 但最终只需要少量结论\n\n例如：\n\n- 找出所有 deprecated API 使用位置\n- 调研某个库的用法\n- 定位 bug 可能出现在哪些文件\n- 列出需要修改的测试\n\n---\n\n## 6. 简单任务交给 Haiku，是为了避免过度设计\n\n强模型不一定适合所有任务。\n\nSonnet / Opus 在简单任务上，可能会因为“想太多”而写出过度复杂的代码，比如增加不必要的边界处理、抽象、注释和设计模式。\n\n文章给出的判断标准是：\n\n- 1–2 步任务：交给 Haiku\n- 5 步以上：交给 Sonnet 或 Opus\n- 10 步以上：再考虑 ultrathink\n\n核心原则是：**不要无脑使用最强模型。简单任务用轻量模型，往往更直接、更干净。**\n\n---\n\n## 7. `/loop` 的真正价值是异步监控\n\n`/loop` 不是让 Claude 连续写 3 天代码，而是让它变成一个“值班同事”。\n\n它适合处理周期性检查任务：\n\n- 每 10 分钟检查 CI 是否通过\n- CI 失败时分析原因\n- 每小时检查数据库慢查询\n- 每天查看 PR review 队列\n\n这类任务的特点是：\n\n- 输入是状态\n- 输出是“有事 / 没事”\n- 不需要连续处理\n- 适合等待和提醒\n\n它让 Claude 从同步工具，升级为异步协作者。\n\n---\n\n## 8. 最重要的心智模型\n\n所有技巧背后都可以归纳为一句话：\n\n> 把 Claude Code 当成一个有限注意力、有限时间、有性格的同事来管理。\n\n对应关系是：\n\n- 注意力有限：需要 `/compact`、`/clear`、sub agent 隔离\n- 时间有限：需要 `/loop`、agent team、多 session 并行\n- 有性格：需要 plan mode、反问机制、junior 同事式 prompt\n\n---\n\n## 结论\n\n这篇文章真正有价值的地方，不是 32 个操作技巧本身，而是背后的使用范式转变：\n\n从 **“我在使用一个工具”**，升级为 **“我在管理一个 AI 同事”**。\n\n一旦采用这个心智模型，Claude Code 的代码质量、执行效率和 token 成本都会明显改善。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773857577,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5efad3f1467a0b6d82d5086d4a7c1cd4016e9a2f68a23574f2ef46df08461495",
+  "refs": {
+    "sessionId": "1777773891761_qxx3riar"
+  },
+  "revisionId": "sha256:2dacfb4b6f5962fa4298421aebb624a8d834267119df13d03506c7ea081fcf69",
+  "schemaVersion": 1,
+  "updatedAt": 1777773857577
+}

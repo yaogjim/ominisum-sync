@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780386229660,
+  "entityType": "message",
+  "id": "1780386278372_04ly97yp",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 1. 总结\n\n**Trigger.dev** 是一个开源的 **AI Agent / Workflow 平台**，GitHub 约 **15.1k stars**。\n\n它主要解决的问题是：\n\n> 让 AI Agent 的长流程任务跑得更稳定、更可控，而不是开发者自己搭一堆基础设施。\n\n核心能力包括：\n\n- 长时间任务执行，不怕超时\n- 自动重试、断点恢复、队列、幂等\n- 支持人工介入审批\n- 支持 LLM 流式输出和实时状态订阅\n- 可运行浏览器、FFmpeg、Python 等任务\n- 用 TypeScript SDK 直接写 workflow\n\n一句话：\n\n> Trigger.dev 把「稳定运行 AI Agent 工作流」这件事产品化了。\n\n---\n\n## 2. 解读\n\n做 AI Agent 不难，难的是让它 **稳定跑完复杂任务**。\n\n比如一个 Agent 要完成：\n\n1. 读取用户需求\n2. 调用多个工具\n3. 生成内容\n4. 等待人工确认\n5. 继续执行后续步骤\n6. 失败后自动重试\n\n如果自己开发，就会遇到很多麻烦：\n\n- 任务跑太久被中断\n- 中途失败不知道从哪恢复\n- 多个任务排队混乱\n- 人工审批不好接入\n- 状态不可见，排错困难\n\nTrigger.dev 的价值就在于：\n\n> 它帮你处理「任务执行基础设施」，你只需要专注写业务逻辑。\n\n可以理解为：\n\n**它不是单纯的 Agent 框架，而是 Agent 背后的任务调度和执行系统。**\n\n---\n\n## 3. 我的意见\n\nTrigger.dev 适合这些场景：\n\n- 多 Agent 协作系统\n- 自动化工作流\n- 需要人工审核的 AI 流程\n- 长时间运行的任务\n- 对稳定性、可观测性要求高的项目\n\n如果只是做简单聊天机器人，可能用不上。\n\n但如果你在做：\n\n> “AI 帮我连续完成一整套复杂工作”\n\n那这类平台非常值得参考。\n\n我的判断：\n\n**未来 AI Agent 的竞争，不只是模型能力，而是谁能把 Agent 流程跑得更稳、更久、更可控。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780386229660,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2a521562cee59a1dba3d8eb485e25aea1754933fc89bfe217f2f5278b74b22d8",
+  "refs": {
+    "sessionId": "1780386277243_je8ru1yg"
+  },
+  "revisionId": "sha256:1e3acda2df32d2acd000d6010ed35c99cc1b837fccd0b3610eaf669ecdb869e2",
+  "schemaVersion": 1,
+  "updatedAt": 1780386229660
+}

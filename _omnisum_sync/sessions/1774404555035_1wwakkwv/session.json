@@ -1,0 +1,65 @@
+{
+  "createdAt": 1774404555035,
+  "entityType": "session",
+  "id": "1774404555035_1wwakkwv",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "后续阅读官方技术报告或基准测试，验证文中关于Qwen3.5-27B和其他模型的具体结论。",
+      "在选型时分别记录模型的总参数、激活参数和tokens/秒，而不是只看模型名义规模。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774407585807,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Qwen3.5与MoE参数解读",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "MoE模型总参数大并不等于每个token都会动用全部参数，实际推理依赖激活参数规模。",
+      "激活参数规模更接近单token的原始推理成本，而总参数规模更影响知识容量和训练数据承载能力。"
+    ],
+    "oneHighValuePoint": "区分“总参数”与“激活参数”来理解MoE模型为何能在保持较快推理速度的同时拥有更强知识容量。",
+    "oneLineReview": "有一定启发性，但更像经验性判断而非扎实分析，适合快速浏览不适合深入依赖。",
+    "primaryCategory": "大语言模型评测",
+    "rating": "C",
+    "rejectReason": "内容更像观点型短帖，缺少系统论证、实验细节和可复现结论，信息价值有限。",
+    "retentionDecision": "低优先级保留，短期参考后可删除",
+    "secondaryCategories": [
+      "模型架构理解",
+      "MoE性能分析"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章用一张图和简短说明比较多个大模型的总参数、激活参数与生成速度，强调MoE模型可通过大参数量存储更多知识，但单次推理只激活少量专家，因此兼顾知识容量与运行效率。",
+    "tags": [
+      "Qwen3.5-27B",
+      "MoE",
+      "模型参数",
+      "推理速度",
+      "LLM比较"
+    ],
+    "title": "0xSero: People are not lying when they say Qwen3",
+    "totalScore": 44.5,
+    "url": "https://x.com/0xSero/status/2036434423613173909"
+  },
+  "payloadHash": "sha256:2d9227ba40ec083d99092298941699284cf397d8c17e8d3527ffed6c1044773d",
+  "refs": {},
+  "revisionId": "sha256:02048b84442c605e9afa249ecb3be721ffbf3fbf9f106439dd99160e7c4fc65b",
+  "schemaVersion": 1,
+  "updatedAt": 1774433594265
+}

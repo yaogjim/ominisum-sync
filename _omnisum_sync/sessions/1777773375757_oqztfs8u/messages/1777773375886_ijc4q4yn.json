@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773375886_ijc4q4yn",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Codex++：Codex 桌面应用的插件/增强系统\n\n## 一句话总结\n\n**Codex++ 是一个非官方的 Codex 桌面应用“插件系统”**，通过修改本地 Codex.app，让用户无需重新构建应用，就能注入自定义功能、修复 UI 问题，并在设置中管理插件。\n\n## 项目定位\n\nCodex++ 面向想要扩展 Codex 桌面端能力的高级用户或开发者。\n\n它的核心价值是：\n\n- 给 Codex 增加「Tweaks」插件管理能力\n- 支持启用、禁用、配置自定义插件\n- 插件代码独立于 Codex 应用本体，方便快速迭代\n- 可用于 UI 优化、快捷键增强、功能补丁等场景\n\n目前项目状态为 **alpha**，架构已设计完成，但安装器还需要更多真实设备测试。\n\n## 工作原理\n\nCodex++ 会对本地 Codex.app 做一次性补丁：\n\n1. 修改 `app.asar`，让 Codex 启动时加载 Codex++ 的 loader\n2. loader 从用户目录加载 runtime\n3. runtime 扫描并加载 tweaks 插件\n4. 在 Codex 设置页中注入一个「Tweaks」管理标签页\n\n除了一次性的应用补丁外，runtime、插件、配置等都放在用户目录中，因此插件开发和更新不需要反复修改应用包。\n\n## 安装与使用\n\n项目支持 macOS、Linux、Windows。\n\n常用命令包括：\n\n```bash\ncodexplusplus status\ncodexplusplus repair\ncodexplusplus update\ncodexplusplus uninstall\n```\n\n其中：\n\n- `install`：安装 Codex++ 并 patch Codex.app\n- `repair`：修复或重新应用补丁\n- `update`：更新 Codex++ runtime\n- `uninstall`：卸载并恢复\n- `update-codex`：先恢复官方签名版本，再让 Codex 官方更新器工作\n\n安装器还会备份原始应用，并安装一个 watcher，用于检测 Codex 更新后自动重新应用 Codex++ 补丁。\n\n## 插件机制\n\n每个插件是一个独立目录，包含：\n\n```text\nmy-tweak/\n├── manifest.json\n└── index.js\n```\n\n`manifest.json` 中定义插件 ID、名称、版本、作者、GitHub 仓库等信息。\n\n插件具备 `start/stop` 生命周期，并以 ESM 模块形式加载。\n\n首次安装时默认包含两个插件：\n\n- 自定义键盘快捷键\n- UI 改进插件\n\n## 更新机制\n\nCodex++ 本身可以自动检测 GitHub Release 并更新 runtime。\n\n但插件不会自动更新。  \nCodex++ 只会在设置页提示「Update Available」，用户需要自行查看 GitHub Release、变更说明和代码后手动替换插件文件。\n\n这是一种更偏安全和可控的设计。\n\n## 风险与限制\n\n这是一个非官方项目，存在明显风险：\n\n- 不隶属于 OpenAI\n- 会修改 Codex.app，破坏原始代码签名\n- macOS 上可能需要手动允许重新签名后的应用运行\n- 官方 Sparkle 更新可能覆盖补丁\n- 属于 alpha 阶段，稳定性仍需验证\n\n官方更新 Codex 时，需要通过 `codexplusplus update-codex` 流程处理，避免更新失败或签名冲突。\n\n## 适合谁使用\n\n适合：\n\n- Codex 桌面端重度用户\n- 想增强 Codex UI 或快捷键的人\n- 熟悉 Electron、插件机制、GitHub Release 的开发者\n- 能接受非官方 patch 风险的技术用户\n\n不太适合：\n\n- 普通用户\n- 对安全、稳定性要求极高的生产环境\n- 不希望修改应用签名或本地安装包的人\n\n## 总体评价\n\nCodex++ 本质上是给 Codex 桌面端加了一套类似「插件市场/插件管理器」的能力。  \n它解决了官方桌面应用不可扩展的问题，但代价是需要修改应用包、承担签名和兼容性风险。\n\n如果未来稳定性和安全机制成熟，它可能成为 Codex 桌面端生态扩展的重要基础设施。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0377c9b0086a3434e5e4a51a0154f8ccc0e984613edce3c3e3d3c6a838a85821",
+  "refs": {
+    "sessionId": "1777773375757_oqztfs8u"
+  },
+  "revisionId": "sha256:76868619537015eb85611c7b9e2fc0567285dad9b966ec3bbd63d922eb060565",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

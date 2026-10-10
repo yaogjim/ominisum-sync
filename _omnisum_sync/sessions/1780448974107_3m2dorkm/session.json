@@ -1,0 +1,79 @@
+{
+  "createdAt": 1780448974107,
+  "entityType": "session",
+  "id": "1780448974107_3m2dorkm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "重点阅读微技能、MCP、WorkIQ 和上下文工程相关部分，提炼可复用的企业 AI 工作流设计原则。",
+      "关注 GitHub Copilot CLI、桌面应用、云代理及其 SDK 方向，评估是否可纳入个人或团队开发流程。",
+      "将“原子技能而非超级技能”的方法应用到自己的 Agent 工作流设计中。",
+      "研究开源项目在 AI 生成 PR 时代的信任机制，如贡献者背书、规则化审核和自动化验证。",
+      "关注 GitHub Actions 在自动化和 Agent 运行时中的新角色，评估自身项目的 CI/CD 成本与安全风险。"
+    ],
+    "archiveReason": "内容涵盖 GitHub 在 AI Agent 时代的产品路线、内部 AI 工作流、开源信任机制、Copilot 演进和基础设施扩展挑战，对理解 AI 编程平台趋势有较高参考价值。",
+    "classifiedAt": 1780449820480,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "视频/播客",
+    "classifyTitle": "GitHub智能体时代规划",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "read.readwise.io",
+    "favicon": "https://read.readwise.io/reader-fav.ico",
+    "knowledgePoints": [
+      "GitHub 正面临 AI Agent 带来的提交、PR、Actions 计算量和权限系统的指数级压力。",
+      "GitHub 内部 AI 工作流强调不改变员工原有工作方式，而是通过 MCP、WorkIQ、Slack、Teams、Email 等上下文连接来增强工作。",
+      "大型全能技能容易脆弱，GitHub 更倾向于可组合的原子级微技能。",
+      "AI 生成 PR 的核心问题不是单纯验证代码，而是如何重新建立维护者、贡献者和工具之间的信任关系。",
+      "Copilot 正从代码补全演进为 CLI、桌面应用、云代理和 SDK 统一框架。",
+      "未来开发者工具的核心竞争力将来自上下文、记忆、规则、企业安全和跨工具编排。",
+      "Actions 已从 CI/CD 扩展为通用自动化计算层，因此在 Agent 时代承受更大基础设施压力。",
+      "Microsoft 和 GitHub 正关注本地/云端 Agent 沙盒化、企业合规和新型 AI 操作系统组件。"
+    ],
+    "oneHighValuePoint": "GitHub 认为未来关键不只是代码生成，而是让 Agent 接入组织上下文、工作流、权限、安全和开发者平台，成为完整 SDLC 的运行层。",
+    "oneLineReview": "一篇信息量较高的 GitHub AI Agent 时代战略访谈，但转录和抓取噪声较多，需筛选阅读。",
+    "primaryCategory": "AI工程与开发者平台",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "软件工程",
+      "开发者工具",
+      "AI Agent",
+      "平台基础设施"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章为 GitHub 高管 Kyle Daigle 的访谈转录，讨论 GitHub 如何应对 AI Agent 带来的提交量暴增、Copilot 从补全走向代理化、企业内部 AI 工作流、微技能、MCP、开源信任、Actions 扩展和未来开发者平台形态。",
+    "tags": [
+      "GitHub",
+      "Copilot",
+      "AI Agent",
+      "MCP",
+      "开发者平台",
+      "开源治理",
+      "CI/CD",
+      "企业AI"
+    ],
+    "title": "GitHub's plan for Agents — Kyle Daigle, GitHub | Readwise",
+    "totalScore": 77,
+    "url": "https://read.readwise.io/new/read/01kt4kvtt131db0pwj2pscb682"
+  },
+  "payloadHash": "sha256:07bcc91a87b721c423bea423d15cc37c8e74ca512b653a8748cba742f547ab14",
+  "refs": {},
+  "revisionId": "sha256:4efa11755a1bb9e9342ffa66c70768e220589ece7b79bdda4aba707fc9629f1c",
+  "schemaVersion": 1,
+  "updatedAt": 1780454249279
+}

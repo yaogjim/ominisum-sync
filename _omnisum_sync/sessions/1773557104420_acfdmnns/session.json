@@ -1,0 +1,71 @@
+{
+  "createdAt": 1773557104420,
+  "entityType": "session",
+  "id": "1773557104420_acfdmnns",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你同时使用多个 AI 编码助手，可评估是否用该工具统一管理 provider、MCP 和 prompt",
+      "优先试用 `provider switch`、`mcp sync`、`env check` 三类核心命令验证实际收益",
+      "结合自身工作流判断 WebDAV 同步和 skills 管理是否值得纳入长期环境配置"
+    ],
+    "archiveReason": "面向多 AI 编码助手的统一配置与切换，命令清单完整，后续在实际搭建环境时可直接参考。",
+    "classifiedAt": 1773829686429,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "多助手CLI配置管理工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "可通过统一 CLI 管理 Claude Code、Codex、Gemini、OpenCode 的 provider 与 MCP 配置",
+      "支持 prompts、skills、WebDAV 同步、备份恢复、代理控制和环境冲突检查",
+      "采用 SQLite 作为状态存储，并通过安全 live sync 同步到各应用实际配置文件",
+      "提供交互式 TUI 和命令行两种操作模式，适合不同使用习惯"
+    ],
+    "oneHighValuePoint": "将多个 AI 编码助手的 provider、MCP、prompt、skills 与本地代理统一到一个 CLI 中管理，显著降低多工具切换和配置分散的成本。",
+    "oneLineReview": "一份实用但偏说明书式的工具 README，操作价值高，思考增量有限。",
+    "primaryCategory": "开发工具",
+    "rating": "B",
+    "rejectReason": "内容偏产品说明书，方法论和证据支撑较弱，对非该工具用户价值有限。",
+    "retentionDecision": "作为特定场景工具文档保留，按需查阅",
+    "secondaryCategories": [
+      "AI 编码助手",
+      "CLI 工具",
+      "配置管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份 cc-switch-cli 的项目说明文档，介绍了面向 Claude Code、Codex、Gemini 和 OpenCode 的统一 CLI 管理能力，覆盖 provider、MCP、prompts、skills、备份、WebDAV 同步、代理和环境检查等功能，并给出安装方式、命令示例与架构说明。",
+    "tags": [
+      "Claude Code",
+      "Codex",
+      "Gemini",
+      "OpenCode",
+      "配置切换",
+      "MCP",
+      "Rust"
+    ],
+    "title": "SaladDay/cc-switch-cli: ⭐️ A cross-platform CLI All-in-One assistant tool for Claude Code, Codex & Gemini CLI.",
+    "totalScore": 62.5,
+    "url": "https://github.com/SaladDay/cc-switch-cli"
+  },
+  "payloadHash": "sha256:5a0c4e83ac7922a40ee9776bc387ff44767255e8fc8828d2fcd6ce1d6501e065",
+  "refs": {},
+  "revisionId": "sha256:0edbfa3f44a8a8b64045311f2f546d2408a3b34da0cff74febaec964e51a3c4f",
+  "schemaVersion": 1,
+  "updatedAt": 1773829686433
+}

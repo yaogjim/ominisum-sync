@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780307233698,
+  "entityType": "message",
+  "id": "1780307318626_o1hz64oj",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\n**pi-codex-goal** 是一个给 **pi** 增加“目标追踪”能力的插件，功能类似 Codex 的 Goals。\n\n它主要提供：\n\n- 一个命令：`/goal`\n- 三个模型可调用工具：\n  - `create_goal`：创建目标\n  - `get_goal`：查看目标\n  - `update_goal`：标记目标完成\n\n目标状态会保存在 **pi 会话历史**里，不需要外部数据库，能跟随会话恢复、分叉、压缩等操作。\n\n推荐使用：\n\n```bash\n/create-goal <任务描述>\n```\n\n而不是手写 `/goal`，因为模型会自动把普通任务扩展成更完整的执行目标、验收标准和约束。\n\n---\n\n## 二、通俗解读\n\n这个项目解决的问题是：\n\n> 让 AI 在长任务中不忘记自己要干什么，并且能持续推进直到完成。\n\n比如你让 AI：\n\n> “实现一个功能，并验证它能正常工作。”\n\n普通对话里，AI 可能中途跑偏、忘记检查、或者提前说完成。\n\n有了这个插件后，它会：\n\n1. **记录当前目标**\n2. **持续检查进度**\n3. **在会话恢复后继续任务**\n4. **任务没完成时自动提醒模型继续**\n5. **只有验证后才能标记完成**\n\n简单说，它像是给 AI 加了一个“任务清单 + 进度状态 + 完成确认机制”。\n\n---\n\n## 三、核心功能\n\n### 1. 创建目标\n\n```bash\n/create-goal Build the requested feature and verify it end to end\n```\n\n推荐方式。  \n它会让模型把任务整理成更严谨的目标。\n\n---\n\n### 2. 查看目标\n\n```bash\n/goal\n```\n\n可以看到：\n\n- 当前目标\n- 状态\n- token 使用量\n- 活跃耗时\n\n---\n\n### 3. 暂停 / 恢复 / 清除\n\n```bash\n/goal pause\n/goal resume\n/goal clear\n```\n\n适合中断任务、恢复任务或重新开始。\n\n---\n\n### 4. 标记完成\n\n模型通过：\n\n```text\nupdate_goal(status: \"complete\")\n```\n\n来完成目标。\n\n注意：  \n目标一旦完成，就不会被自动重新打开。\n\n---\n\n## 四、它的特点\n\n- 不需要数据库\n- 跟随 pi 会话保存\n- 支持会话恢复\n- 支持 token 预算\n- 支持自动续跑\n- 支持错误恢复\n- 防止重复写入状态\n- 完成目标后状态稳定，不会反复变动\n\n---\n\n## 五、适合什么场景？\n\n适合：\n\n- 长代码任务\n- 自动化修复 Bug\n- 端到端验证\n- 多步骤开发任务\n- 需要 AI 持续执行直到完成的工作流\n\n不太适合：\n\n- 简单问答\n- 一次性短任务\n- 不需要状态管理的聊天\n\n---\n\n## 六、我的意见\n\n这个项目的价值在于：**提高 AI 执行长任务的可靠性**。\n\n它不是让模型更聪明，而是让模型更“守规矩”：\n\n- 有目标\n- 有状态\n- 有验证\n- 有完成条件\n- 不容易半途而废\n\n如果你经常用 pi 做代码开发、自动化任务或长流程操作，这类插件很实用。\n\n但如果只是日常聊天或简单提问，它可能显得偏重。\n\n**一句话评价：**\n\n> 这是一个给 pi 加“任务记忆和执行约束”的插件，适合让 AI 更稳定地完成复杂任务。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780307233698,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f9c574c0d7fac5d9fd2eb85c7cbc6b54802e99a9b5e69a053dd233184d6314a4",
+  "refs": {
+    "sessionId": "1780307318444_92wwo779"
+  },
+  "revisionId": "sha256:3f9830f3d6fb7fc76873b5f3ec13d27c3dbdb74f248f4bfad6f43dd160598f24",
+  "schemaVersion": 1,
+  "updatedAt": 1780307233698
+}

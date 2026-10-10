@@ -1,0 +1,75 @@
+{
+  "createdAt": 1773280356447,
+  "entityType": "session",
+  "id": "1773280356447_6lvncdvd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若在Apple Silicon本地部署Qwen3.5，优先核查chat template、tools序列化顺序与缓存实现版本",
+      "在实际项目中复现并对比Qwen3.5与GLM 4.7 Flash的多轮对话缓存命中情况",
+      "跟踪mlx-lm相关Issue与PR，评估是否引入社区补丁或等待正式修复"
+    ],
+    "archiveReason": "包含对Qwen3.5在MLX生态下反复Prefill问题的成因拆解、Issue线索和临时修复思路，具备故障排查参考价值",
+    "classifiedAt": 1773830473159,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Qwen3.5反复Prefill成因分析",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "请以结构化方式并用通俗易懂的语言 总结 文章内容（精炼！），如果需要可以举具体的例子，并用中文返回。\n要求总结结构如下：   \n- 开头用1-2句话概括主旨,   \n- 按原文逻辑分段组织内容,   \n- 每段内容提炼关键点，用简练语言表达,  \n- 保留原文中的重要数据和案例.",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "Qwen3.5在MLX中缓存命中差与Mamba/SSM类不可裁剪缓存有关",
+      "推理模型的reasoning token不回放会破坏后续请求的缓存前缀匹配",
+      "Jinja聊天模板中的tools和参数顺序不稳定会导致缓存键漂移",
+      "社区已有通过修改checkpoint位置和排序JSON键的临时缓解方案"
+    ],
+    "oneHighValuePoint": "最有价值的是把反复Prefill归因到缓存机制、聊天模板序列不稳定和Qwen3.5架构特性三者叠加，而非单点配置错误。",
+    "oneLineReview": "这是一篇问题定位价值高于方法沉淀的工程排障型内容，适合遇到同类问题时查阅。",
+    "primaryCategory": "本地大模型推理与性能优化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合在排查本地推理缓存问题时回看",
+    "secondaryCategories": [
+      "MLX缓存机制",
+      "Qwen模型部署问题"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/0xkeenz/status/2031114389215223813",
+      "https://github.com/ml-explore/mlx-lm/issues/903"
+    ],
+    "summaryBrief": "文章围绕Qwen3.5在MLX、LM Studio与OpenClaw中反复触发Prefill的问题展开，归纳出KV Cache失效、Jinja模板差异、模型SSM层不可裁剪等复合原因，并整理了社区Issue中的临时补丁与优化方向。",
+    "tags": [
+      "Qwen3.5",
+      "MLX",
+      "LM Studio",
+      "KV Cache",
+      "Prefill",
+      "OpenClaw"
+    ],
+    "title": "Qwen 3.5 在 MLX / LM Studio / OpenClaw 中反复 Prefill 的成因解析KV Ca",
+    "totalScore": 61.5,
+    "url": "omnisun://digest/1773280356447"
+  },
+  "payloadHash": "sha256:0b5852e222987c8247c9afd1d18ff71e23dbdf90fab9db663a6bfc7f675b521d",
+  "refs": {},
+  "revisionId": "sha256:1a4544fcaf8879cfa843cf4e27ab6ca86464a13ec37badb899d899fd500f7adc",
+  "schemaVersion": 1,
+  "updatedAt": 1773830473164
+}

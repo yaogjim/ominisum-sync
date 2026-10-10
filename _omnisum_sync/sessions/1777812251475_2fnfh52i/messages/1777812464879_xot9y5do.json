@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777812464880,
+  "entityType": "message",
+  "id": "1777812464879_xot9y5do",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 用tweetskill蒸馏推文风格\n\n**评级**: B (55分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工具\n**次类别**: 内容创作, 个人知识管理\n**标签**: #AI写作 #推文风格蒸馏 #Agent Skill #开源工具 #社交媒体\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 一个有实际尝试价值的AI写作风格蒸馏工具介绍，但证据和案例支撑较弱。\n**核心高价值点**: 将个人历史推文分析成可被 AI Agent 读取的 skill 文件，用于降低AI写作中的“AI味”。\n\n### 摘要\n作者介绍开源工具 tweetskill，可分析指定 X 账号的历史推文，生成包含表达习惯、爆款模式、禁用格式等信息的 skill 文件，用于帮助 AI Agent 写出更接近原账号语气的推文。\n\n### 知识要点\n- tweetskill 可通过 npx skills add DbgKinggg/tweetskill 安装到 Hermes、OpenClaw、Claude Code 等 Agent 中\n- 工具默认使用 X 官方 API 获取推文，需要提供 X Bearer Token\n- 分析后会生成类似 elonmusk-skill.md 的风格文件，包含表达习惯、常用格式和高互动内容模式\n- 生成的 skill 文件可直接作为上下文，让 AI 按特定账号风格撰写推文\n\n### 行动项\n- 查看 GitHub 仓库 DbgKinggg/tweetskill，确认安装要求和 API 权限\n- 选择自己的 X 账号或目标账号测试 analyze 命令\n- 将生成的 skill 文件用于一次实际推文改写，对比是否明显降低AI味\n\n### 存档判定\n归档: 是 — 原因: 提供了一个可尝试的开源工具和明确安装用法，适合后续测试AI模仿个人写作风格\n删除: 否\n留存决策: 短期参考后可根据是否实际使用决定保留",
+    "role": "assistant",
+    "timestamp": 1777812464880,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:5799b5cb9293bc4796db4a6a769a7714db505c8b00991c7ec793040f7ecac613",
+  "refs": {
+    "sessionId": "1777812251475_2fnfh52i"
+  },
+  "revisionId": "sha256:3c8cb8b9fbd5b15521bd1e76d459bd8769dd83375ff8fb1c14620ea43a9f7fb6",
+  "schemaVersion": 1,
+  "updatedAt": 1777812464880
+}

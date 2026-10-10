@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780308148982,
+  "entityType": "message",
+  "id": "1780308148981_00nmsl7x",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: pi复刻Claude动态UI\n\n**评级**: A (77.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI工程与智能体开发\n**次类别**: 生成式UI, Agent工具系统, 前端流式渲染\n**标签**: #Claude #Generative UI #pi #动态工作流 #工具调用 #DOM Diff #morphdom #Glimpse\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 一篇高密度的AI工具工程实践文章，最有价值的是把生成式UI拆解为工具调用、懒加载指南和流式DOM渲染三层架构。\n**核心高价值点**: read_me式懒加载文档模式能显著降低系统提示词常驻成本，并让模型按任务需要加载专用设计规范。\n\n### 摘要\n文章介绍如何逆向Claude的generative UI，并在pi终端智能体中用Glimpse、morphdom、工具调用流式事件和懒加载设计指南复刻实时交互式HTML/SVG组件，兼具架构拆解与实现细节。\n\n### 知识要点\n- Claude generative UI本质上可能是show_widget工具调用，将HTML作为参数传入并流式渲染，而不是普通Markdown或Artifacts。\n- 懒加载设计指南通过read_me工具按模块加载interactive、chart、mockup、art、diagram等规范，减少上下文浪费。\n- 流式HTML不能简单反复innerHTML替换，否则会闪烁、重排和丢失状态，DOM Diff是更平滑的方案。\n- morphdom可对新旧DOM树做最小补丁更新，并对新增节点添加动画，实现接近Claude的渐进式渲染体验。\n- 终端Agent无需自己渲染HTML，可通过原生WKWebView微窗口承载交互式UI，并用JSON桥接用户交互数据。\n- pi-ai将不同模型供应商的工具调用流统一为toolcall_start、toolcall_delta、toolcall_end，降低跨模型实现复杂度。\n- 脚本标签在innerHTML注入后不会自动执行，需要在最终内容完成后克隆script节点触发执行。\n- 设计系统对流式渲染有特殊约束，例如style优先、HTML其次、script最后，避免渐变、阴影、模糊等易闪烁样式。\n\n### 行动项\n- 研究pi-generative-ui仓库，重点阅读index.ts中工具注册、流式拦截和Glimpse窗口复用逻辑。\n- 将read_me懒加载文档模式迁移到自己的Agent工具系统中，按任务类型动态加载规范。\n- 在需要流式可视化输出的项目中测试morphdom或idiomorph，避免频繁innerHTML导致的闪烁。\n- 设计自己的show_widget类工具接口，明确参数、加载状态、尺寸、交互回传和脚本执行边界。\n- 评估安全边界，包括CDN allowlist、脚本执行权限、HTML注入风险和用户数据回传机制。\n\n### 存档判定\n归档: 是 — 原因: 文章包含对Claude生成式UI机制的逆向分析、pi端复刻架构、流式工具调用处理、懒加载设计指南和DOM Diff渲染方案，具有较高工程参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1780308148982,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:0f8b2bdb00aad24604065cd355d01fe08ab12d49e79dbc6a22a9d551e7e7109b",
+  "refs": {
+    "sessionId": "1780307891754_49n8cva0"
+  },
+  "revisionId": "sha256:60e298c64b19d85640c54c7b0fb5b4f0835808001829998ef9f4044402dbdda2",
+  "schemaVersion": 1,
+  "updatedAt": 1780308148982
+}

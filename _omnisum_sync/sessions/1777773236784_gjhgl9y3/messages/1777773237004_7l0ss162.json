@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773237004_7l0ss162",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Cursor Agent SDK 入局：Agent SDK 赛道加速内卷\n\n## 1. 核心事件\n\nCursor 开放了官方 **TypeScript SDK 公测**，开发者可以通过：\n\n```bash\nnpm install @cursor/sdk\n```\n\n直接调用 Cursor 的 Agent 能力。  \n这意味着继 **Claude Agent SDK**、**Codex Agent SDK** 之后，Agent SDK 赛道又来了一个重要玩家。\n\n## 2. Cursor 与 Claude 的能力高度相似\n\n从功能上看，Cursor Agent SDK 和 Claude Agent SDK 非常接近：\n\n- **内置工具**：支持读写文件、代码编辑、Shell/Bash、Grep、Glob、语义搜索等\n- **Subagents**：可定义子 Agent，拆解复杂任务\n- **Hooks**：可拦截或干预 Agent 执行流程\n- **MCP / 外部工具**：支持接入外部工具和项目目录自动加载\n- **上下文管理**：都具备代码仓库索引、语义搜索、grep 等能力\n\n简单说：两者都在做“能自主理解代码仓库并执行开发任务的 AI 编程助手”。\n\n## 3. 关键差异\n\n### Cursor 的优势\n\nCursor 的云端 Agent 天然集成了：\n\n- Git\n- Pull Request\n- 云端虚拟机\n- CI/CD 自动化流程\n\n因此更适合做无人值守的自动开发、自动提 PR、云端编码任务。\n\n### Claude 的优势\n\nClaude Agent SDK 相对更成熟：\n\n- 稳定性更强\n- 权限控制更细\n- 安全性更好\n- 支持 TypeScript + Python\n- 更适合本地自控和企业合规场景\n\n## 4. 如何选择\n\n### 适合选 Cursor Agent SDK 的场景\n\n如果你需要：\n\n- 云端无头运行\n- 自动化 CI/CD\n- 自动提交 PR\n- 嵌入产品中使用\n- 纯 TypeScript 技术栈\n\nCursor SDK 更合适。\n\n### 适合选 Claude Agent SDK 的场景\n\n如果你是：\n\n- Claude 重度用户\n- 有 TypeScript + Python 双语言需求\n- 更看重本地可控\n- 企业合规要求高\n- 追求稳定性、安全性和性能\n\nClaude Agent SDK 更稳妥。\n\n## 5. 一句话总结\n\nCursor Agent SDK 的加入，说明 **AI 编程 Agent 正在从“工具能力”走向“平台能力”**。  \n未来竞争重点不只是模型，而是谁能提供更完整、更安全、更自动化的开发者工作流。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:fd94be636e58b388546e76449a4f516c53f52cc6af0b564af2ba864737c21aca",
+  "refs": {
+    "sessionId": "1777773236784_gjhgl9y3"
+  },
+  "revisionId": "sha256:557bfccefd6c6c94d99caae4e427015126c19941a1a2243b0064d11657995fc5",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773653390911,
+  "entityType": "session",
+  "id": "1773653390911_kob09wnq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按README快速验证单条推文抓取和时间线抓取是否在本地环境稳定可用",
+      "评估Camofox依赖和反爬风险，再决定是否纳入正式数据采集链路"
+    ],
+    "archiveReason": "包含明确的功能边界、命令示例和自动化监控思路，作为工具索引有实用价值",
+    "classifiedAt": 1773829487078,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "免登录抓取X内容工具库",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "可通过公开接口、无头浏览器和第三方解析组合实现免登录社交内容抓取",
+      "用退出码区分无更新、有更新和错误，适合Cron或告警自动化",
+      "增长监控可通过导数、滑动窗口和多信号加权来识别传播爆点"
+    ],
+    "oneHighValuePoint": "将推文抓取、关键词发现、@mentions监控和增长爆点检测整合为统一的JSON工作流，便于直接接入Agent或定时任务。",
+    "oneLineReview": "实操价值强、功能覆盖广，但更像工具说明书，证据与稳定性论证不足。",
+    "primaryCategory": "开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合在需要抓取X内容或搭建监控流程时回看",
+    "secondaryCategories": [
+      "数据采集",
+      "社交媒体分析"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一个无需登录或API Key即可抓取X/Twitter推文、回复、时间线和文章的Python工具库，面向AI Agent与自动化场景，提供JSON输出、Cron友好退出码，并扩展到微信搜索与推文增长监控。",
+    "tags": [
+      "X/Twitter抓取",
+      "自动化",
+      "JSON输出",
+      "Agent工具",
+      "监控分析"
+    ],
+    "title": "ythx-101/x-tweet-fetcher: 🦞 Fetch tweets and replies from X/Twitter without login or API keys. OpenClaw skill.",
+    "totalScore": 63.5,
+    "url": "https://github.com/ythx-101/x-tweet-fetcher"
+  },
+  "payloadHash": "sha256:d5f5ca7a8467a264dd93a849c1959f577e989a1a8d9cd0616c2fae4caefef780",
+  "refs": {},
+  "revisionId": "sha256:5ec578a0dff150409e9ac57d093e984ff67795c0a529c0ee1a3f81b39cca0a1d",
+  "schemaVersion": 1,
+  "updatedAt": 1773829487080
+}

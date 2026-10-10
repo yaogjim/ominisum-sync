@@ -1,0 +1,71 @@
+{
+  "createdAt": 1777773217374,
+  "entityType": "session",
+  "id": "1777773217374_2thgk5dp",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "整理自己的核心工作流，将常用规则、偏好和写作风格写成 Markdown 文件。",
+      "检查现有知识库中过时、重复、矛盾的内容，建立定期归档机制。",
+      "尝试把一个重复性内容生产流程拆成多个可复用 Skill。",
+      "评估是否需要使用 Moxt 或类似工具，将分散在 Notion、飞书、本地文件和聊天记录中的上下文统一管理。"
+    ],
+    "archiveReason": "包含关于AI上下文管理、Workspace、AGENTS.md、Memory、Skill与自动化工作流的可复用思路，可作为搭建个人或组织AI工作台的参考。",
+    "classifiedAt": 1777773706129,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Moxt组织级AI工作空间实测",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI工作空间应尽量使用 Markdown、CSV、HTML 等模型友好的原生格式，减少格式噪音。",
+      "AGENTS.md、MEMORY.md 和 Skills 目录可以把人格、偏好、流程和能力沉淀为可维护资产。",
+      "Context 的质量比数量更重要，过时和矛盾信息会污染 AI 输出。",
+      "Cron、Webhook、MCP 等机制可以让 AI Agent 从被动问答转向主动处理事件。",
+      "Agent 能力可理解为工具、上下文、人格、记忆和技能的组合结果。"
+    ],
+    "oneHighValuePoint": "将上下文、人格规则、记忆和技能都沉淀为可读写的文件资产，是构建可持续AI工作流的关键思路。",
+    "oneLineReview": "一篇偏产品种草但有一定方法论价值的AI工作空间实测文。",
+    "primaryCategory": "AI工作流与知识管理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留方法论部分",
+    "secondaryCategories": [
+      "Agent应用",
+      "个人生产力",
+      "组织协作"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以个人实测形式介绍 Moxt 如何通过文件系统、Markdown、AGENTS.md、Memory、Skills、Cron、Webhook 和 MCP 解决 AI 上下文分散与格式混乱问题，并展示其在内容生产、项目管理和可视化交付中的应用。",
+    "tags": [
+      "Moxt",
+      "AI Agent",
+      "Context管理",
+      "知识库",
+      "自动化工作流"
+    ],
+    "title": "Moxt 实测：把你的组织，折叠进一堆文件夹",
+    "totalScore": 64.5,
+    "url": "https://x.com/op7418/status/2049457761533239340"
+  },
+  "payloadHash": "sha256:39fa18318d84e489eb5cfac1c74ffad6f7d3ce4c9b0a8a697ccad8dde7080183",
+  "refs": {},
+  "revisionId": "sha256:a10ae18e509cee0fe4086964d84b0560faf878b0cccda290b727784b2ddcfd81",
+  "schemaVersion": 1,
+  "updatedAt": 1777774324139
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1780380177161,
+  "entityType": "session",
+  "id": "1780380177161_buy2qb00",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需学习 Pi Agent，可优先访问文中提供的在线教程和 GitHub 源码",
+      "可复用该提示词模板，让 Codex 为其他开源项目生成渐进式学习教程"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780380659432,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Pi Agent教程生成提示词",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "技术教程生成可要求模型先理解源码、文档、架构与实现链路，再组织成教学项目",
+      "高质量教程应包含概念解释、架构图、流程图、代码示例、Demo、练习和常见错误说明"
+    ],
+    "oneHighValuePoint": "将源码学习任务转化为渐进式 VitePress 教学项目的提示词结构较清晰。",
+    "oneLineReview": "适合作为 AI 生成技术教程的提示词参考，但单篇内容技术含量有限。",
+    "primaryCategory": "AI Agent学习资源",
+    "rating": "C",
+    "rejectReason": "正文主要是一个用于生成教程的提示词，本身缺少实际技术展开、案例验证和完整方法论，价值依赖外部链接。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "提示词工程",
+      "技术教程生成"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了一个让 Codex 基于 Pi Agent 官方文档和源码生成 VitePress 中文教程站点的提示词，强调从原理、架构、Demo 到最终项目实现的渐进式教学设计。",
+    "tags": [
+      "Pi Agent",
+      "Codex",
+      "AI Agent",
+      "VitePress",
+      "教程生成"
+    ],
+    "title": "Cell 细胞: Codex 提示词： 请帮我完成一个详细的教程，主题是 「 Pi Agent 的原理与实现：从零到一实现一个 AI Agent」",
+    "totalScore": 42.5,
+    "url": "https://x.com/cellinlab/status/2059463085585211489"
+  },
+  "payloadHash": "sha256:1a25860c79e92e8eed0bfd305e16ceaf392f69970735601d796219577d7ce640",
+  "refs": {},
+  "revisionId": "sha256:ba2a1cb17f207fcd36169941a7ecf7328e53e332e38e90e7bc7061cf2eef5b96",
+  "schemaVersion": 1,
+  "updatedAt": 1780380659936
+}

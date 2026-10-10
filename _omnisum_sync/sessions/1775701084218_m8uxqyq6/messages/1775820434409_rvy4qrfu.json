@@ -1,0 +1,19 @@
+{
+  "createdAt": 1775820434410,
+  "entityType": "message",
+  "id": "1775820434409_rvy4qrfu",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude托管代理发布速报\n\n**评级**: B (60.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent平台与产品动态\n**次类别**: 大模型开发平台, 云端托管基础设施\n**标签**: #Anthropic #Claude Managed Agents #Agent即服务 #开发平台 #产品发布\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 这是一篇信息集中的产品速报，适合把握Agent平台化趋势，但方法论和证据深度有限。\n**核心高价值点**: 最有价值的是明确指出大模型厂商正从卖模型转向卖完整Agent开发平台，这对技术选型和生态判断很关键。\n\n### 摘要\n文章概述了Anthropic推出Claude Managed Agents公测，主打沙箱、长会话、多Agent协作等托管能力，并列举Notion、Sentry等案例，强调其降低生产级Agent部署门槛，代表模型厂商向完整Agent开发平台延伸。\n\n### 知识要点\n- Claude Managed Agents提供沙箱执行、长时间运行会话和多Agent协调等托管能力。\n- Anthropic试图通过托管基础设施降低生产级Agent构建门槛并强化生态绑定。\n\n### 行动项\n- 评估现有Agent项目中哪些基础设施环节可由托管平台替代，以缩短上线周期。\n- 对比Anthropic、OpenAI等平台的Agent托管能力、成本结构和生态锁定风险。\n\n### 存档判定\n归档: 是 — 原因: 反映了Agent平台化和托管化的行业趋势，对跟踪AI基础设施演进有参考价值。\n删除: 否\n留存决策: 短期参考后归档保留",
+    "role": "assistant",
+    "timestamp": 1775820434410,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:8b0b1244274341191858a2b0526ad299ff1ccb5ee650171379dbe32c3d37a357",
+  "refs": {
+    "sessionId": "1775701084218_m8uxqyq6"
+  },
+  "revisionId": "sha256:1e675aff880c1214959cda5567d9f72a6c37ffc747a983699ca16ff9fe362a71",
+  "schemaVersion": 1,
+  "updatedAt": 1775820434410
+}

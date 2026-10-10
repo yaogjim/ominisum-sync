@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773653173329,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773653173329",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章的主旨是：作者先 “逆向” 分析了 Claude 的沙箱设计，再基于同样思路搭建了自己的 agent 沙箱。核心观点是：与其给智能体堆很多专用工具，不如直接给终端，但前提是要用一套可靠的隔离和网络控制机制把风险关住。\n\n- **1. 为什么要给 agent 一个终端，而不是很多工具**\n  - 作者认为，做智能体有两条路：一种是给每个动作都单独做成工具；另一种是直接给终端。\n  - 工具方案扩展性差：查库、搜日志、转数据都要单独定义 schema、校验和错误处理，动作一多就很难维护。\n  - 终端则是 “元工具”：一个 Bash 接口就能调用 Python、grep、awk、curl 等整套 Unix 能力，训练数据也更丰富、通用性更强。\n  - 但问题也很明显：一旦允许 agent 执行任意代码，就必须解决 “隔离” 和 “资源控制”。\n\n- **2. 作者如何逆向 Claude 的沙箱**\n  - 作者直接让 Claude 检查自己的运行环境，发现它跑在`gVisor`沙箱中，而不是普通容器或虚拟机。\n  - 关键证据是：`uname -a`里出现`runsc`，这是 gVisor 的典型标志。\n  - 资源限制方面，Claude 的沙箱大约有`9GB 内存`、`4 个 CPU`，对沙箱来说算比较宽裕。\n  - 网络并没有彻底关闭，而是走一个带`JWT`的代理；JWT 里写了允许访问的域名白名单，例如`github.com`、`pypi.org`、`npmjs.org`、`api.anthropic.com`，并且`4 小时过期`。\n  - `PID 1`不是 shell，也不是 systemd，而是一个自定义程序`/process_api`，监听`2024`端口，并在应用层施加`4GB 内存限制`。\n  - 另一个意外发现是：Claude 在沙箱内部是以`root`身份运行的，说明 Anthropic 更依赖 gVisor 隔离，而不是 Linux 用户权限。\n\n- **3. 作者对 Claude 架构的关键结论**\n  - Claude 的设计不是 “完全断网”，而是 “通过出口代理精细控网”。\n  - 它不是让 shell 直接当入口，而是用一个专门的`process_api`作为 PID 1，负责接收命令、拉起 shell、施加限制。\n  - 它敢在容器里用`root`，是因为真正的安全边界是 gVisor，而不是容器内的普通用户机制。\n  - Claude 的镜像很大，约`7GB`，内含`ffmpeg、ImageMagick、LaTeX、Playwright、LibreOffice`等文件处理工具；作者自己的场景只需要约`200MB`的精简镜像。\n\n- **4. 几种沙箱方案的比较，以及为什么选 gVisor**\n  - `Firecracker`：隔离最强，是真正的微型虚拟机，启动约`125ms`，额外内存开销约`5MB`；但依赖`KVM`，在普通 Kubernetes 虚拟机节点里很难跑，运维复杂。\n  - `gVisor`：在用户态拦截系统调用，相当于给容器套了一层 “Go 写的内核”；能在 Docker 能跑的地方使用，部署更简单，但系统调用开销略高。\n  - 普通`Docker`：和宿主机共享内核，虽然容器逃逸不常见，但对 “不可信代码” 来说风险仍然过高。\n  - 因此，Anthropic 选了`gVisor`，作者也做了同样选择。\n\n- **5. 作者自己实现的沙箱长什么样**\n  - 基础镜像用的是`python:3.13-slim-bookworm`，只装了常见 Unix 工具和 Python 依赖，结构尽量轻量。\n  - 容器里预建了几个目录：`/workspace`、`/mnt/user-data/uploads`、`/mnt/user-data/outputs`，目录组织尽量模仿 Claude。\n  - 核心组件是`process_api.py`：一个运行在`PID 1`的 HTTP 服务，负责执行命令。\n  - 作者同样没有专门创建非 root 用户，因为安全边界主要交给 gVisor。\n\n- **6. 容器生命周期设计：为什么选 “会话级”**\n  - 作者比较了三种方式：\n  - `预热池`：延迟最低，约`10-50ms`，但要管理池、分配、清理，系统复杂。\n  - `每次执行新建容器`：实现最简单，但每次都有`600ms-1.2s`冷启动，太慢。\n  - `会话级容器`：一个用户会话对应一个容器，只在首次启动时有约`500ms`冷启动，之后执行几乎即时。\n  - 作者最终选了会话级，因为这点冷启动时间通常会被 LLM 思考时间掩盖，用户感知不明显。\n\n- **7. 安全设计的四层防护**\n  - 第一层是`gVisor`：这是最主要的隔离边界，哪怕容器里的代码 “逃逸”，面对的也只是 gVisor，而不是宿主机。\n  - 第二层是 “带白名单的出口代理”：只允许访问`pypi.org`、`github.com`、`npm`等指定站点，防止把数据发到任意恶意域名。\n  - 第三层是资源限制：作者设置了`4GB 内存`、`4 CPU`，避免失控进程拖垮宿主机。\n  - 第四层是文件系统限制：只有`/workspace`和`/mnt/user-data/outputs`可写，上传目录只读，防止容器修改镜像或把数据持久化到非指定区域。\n\n- **8. 出口代理是整套设计里最巧妙的部分**\n  - 作者强调：真正聪明的地方不是 “禁网”，而是 “允许必要网络 + 严格限制去向”。\n  - 代理把允许访问的主机写进`JWT`，每个会话生成自己的短期令牌，默认有效期也是`4 小时`。\n  - 请求经过代理时，会校验目标主机是否在白名单内；如果不在，就直接返回`403 Forbidden`。\n  - 这样既能支持`pip install requests`这类正常需求，因为`pypi.org`在白名单中；又能阻止向`evil.com`之类未知域名外传数据。\n\n- **9. 命令执行和输出流是怎么做的**\n  - 用户不想等命令跑完才看到结果，所以作者用了`Server-Sent Events (SSE)`做流式输出。\n  - 外部服务把命令发给容器内的`process_api`，后者执行 shell，并持续把`stdout/stderr`推出来。\n  - 这和 Claude 的模式很像：`PID 1`不是交互式 shell，而是一个专门的命令执行服务。\n  - 这样用户能实时看到执行过程，比如安装依赖、打印日志、报错信息等。\n\n- **10. 从沙箱内部看到的最终效果**\n  - 在容器里执行`uname -r`，会看到`runsc`，证明跑在 gVisor 上。\n  - 执行`whoami`会显示`root`，但这个 root 只在沙箱内有效，对外没有宿主权限。\n  - 访问`https://pypi.org`会得到`200 OK`，因为它在白名单中。\n  - 访问`https://evil.com`会得到`403 Forbidden - Host not allowed`，说明出口代理生效。\n  - 文件系统看起来是完整的，但真正可写区域被限制在`/workspace`等挂载目录中，例如`/workspace`实际映射到宿主上的租户目录。\n\n如果你愿意，我也可以继续把这篇文章再压缩成一个 “超短版摘要”，或者整理成 “技术架构图式” 的要点版。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1773653173329,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f06bc2b1145b0faada89a96ad88590c72969231049c1b19011fe7c878ec34e26",
+  "refs": {
+    "sessionId": "1773653173380_jpqhu4j6"
+  },
+  "revisionId": "sha256:e0468efe5138147f5ee1372e31b25fca02d667ded61d629a36d4226ef89b933a",
+  "schemaVersion": 1,
+  "updatedAt": 1773653173329
+}

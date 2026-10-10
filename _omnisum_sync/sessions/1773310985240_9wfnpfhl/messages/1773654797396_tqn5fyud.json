@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773654753311,
+  "entityType": "message",
+  "id": "1773654797396_tqn5fyud",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "可以。基于你给的 `paperclipai/paperclip` 内容，我用一个具体实例来讲：\n\n**实例：用 Paperclip 运营一家“AI 会议纪要 SaaS”小公司**\n\n目标是：\n“在 6 个月内，做出一款 AI 会议纪要产品，并做到首批 100 个付费用户。”\n\n公司里有这些 AI 代理：\n\n- `CEO Agent`：拆解公司目标、排优先级、审查周计划\n- `CTO Agent`：负责技术路线、架构和研发任务分配\n- `Engineer Agent`：开发功能、修 bug、写测试\n- `Designer Agent`：做 landing page、产品界面和品牌素材\n- `Marketing Agent`：写博客、发社媒、做投放文案\n- `Support Agent`：整理用户反馈、生成 FAQ、处理重复问题\n\n这些 agent 都接入到 Paperclip，由它统一管理目标、预算、任务、审批和审计。\n\n**在这个实例上的最佳实践**\n\n- **先定义公司级目标，再定义任务**\n  - 不要一上来给 `Engineer Agent` 一个“做登录页”的孤立任务。\n  - 更好的做法是：先在 Paperclip 里定义公司目标，比如“提升试用转化率到 8%”，然后再挂出“优化 landing page 首屏”“增加 demo 视频”“补充用户证言”等任务。\n  - 这样 agent 拿到任务时，能看到完整目标链路，知道自己不是在“做页面”，而是在“提高转化”。\n\n- **按组织结构分工，不要让所有 agent 平级抢活**\n  - 最佳做法不是把所有任务都直接发给工程 agent。\n  - 应该像公司一样建 org chart：`CEO -> CTO -> Engineer`，`CEO -> Marketing`，`CEO -> Support`。\n  - 例如发现“试用转化率低”时，`CEO Agent` 不直接让工程师改代码，而是先让 `Marketing Agent` 分析流量漏斗、让 `Support Agent` 汇总试用用户流失原因，再由 `CTO Agent` 生成研发需求。\n  - 这样 Paperclip 的“上下级委派”才能发挥作用，避免 agent 各自乱跑。\n\n- **给每个 agent 设月度预算和单任务上限**\n  - 这是这个系统最重要的实践之一。\n  - 比如：\n    - `CEO Agent`：高权限，低频执行，中等预算\n    - `Engineer Agent`：高频执行，较高预算\n    - `Marketing Agent`：中频执行，严格限制实验预算\n    - `Support Agent`：低成本、定时跑\n  - 具体到这个实例，可以设：\n    - 工程 agent 月预算 `$300`\n    - 营销 agent 月预算 `$150`\n    - 支持 agent 月预算 `$50`\n  - 同时给单次 heartbeat 也设成本阈值，防止某个 agent 因为 prompt 循环或任务歧义烧掉太多 token。\n\n- **把 heartbeat 用在“周期性经营动作”上，不要所有事都实时触发**\n  - Paperclip 很适合做定时经营，而不只是“收到任务就执行”。\n  - 在这个例子里：\n    - `Support Agent` 每 2 小时汇总新反馈\n    - `Marketing Agent` 每天上午生成内容草稿和渠道建议\n    - `CEO Agent` 每周一审查上周指标并调整优先级\n  - 最佳实践是：把重复性、节律性的工作交给 heartbeat；把高风险动作留给事件触发或人工审批。\n\n- **高风险动作必须加治理和审批门**\n  - Paperclip 强调 governance，这在真实业务里非常关键。\n  - 在这个 SaaS 例子中，以下动作不应自动执行：\n    - 修改定价\n    - 删除用户数据\n    - 发布生产环境变更\n    - 大规模发送营销邮件\n    - 更换公司级目标或预算\n  - 最佳做法是让 agent 可以“提出建议”和“准备执行方案”，但关键动作必须进入审批状态，由你这个“board”来确认。\n\n- **任务描述要写成“业务结果 + 约束”，不要只写动作**\n  - 差的写法：`写一个 onboarding 页面`\n  - 好的写法：`设计并交付一个 onboarding 页面，目标是让首次注册用户在 3 分钟内完成首个会议纪要生成；必须适配移动端；不得修改现有计费流程`\n  - 因为 Paperclip 的强项是让 agent 理解“为什么做”，所以任务里一定要包含成功标准和边界条件。\n\n- **让 Support Agent 成为公司的“事实收集器”**\n  - 这个项目最容易忽略的一点，是客户反馈应该进入目标系统，而不是散落在聊天和文档里。\n  - 比如 `Support Agent` 每天汇总：\n    - 取消订阅原因\n    - 试用用户卡点\n    - 高频功能诉求\n  - 然后在 Paperclip 中把这些反馈自动关联到“提升激活率”“减少流失率”等公司目标。\n  - 这样 `CEO Agent` 和 `CTO Agent` 做决策时，看到的是可追踪的业务证据，而不是零散意见。\n\n- **用审计日志复盘“为什么做出这个决策”**\n  - 比如某周 `CEO Agent` 决定暂停“多语言功能”，转去优先做“Zoom 集成”。\n  - 最佳实践不是只记录结果，而是保留完整链路：\n    - 哪些用户反馈支持这个判断\n    - 哪些指标出现下滑\n    - 哪个 agent 提出了建议\n    - 谁审批通过\n  - Paperclip 的价值之一就在于“每次对话、每次工具调用、每次决策”都可追溯。这个能力应当被主动用于复盘，而不只是事后查错。\n\n- **把 agent 当员工管理，不要当万能助手使用**\n  - 这是这个项目传达的核心理念。\n  - 在这个实例里，`Marketing Agent` 不应该去改数据库 schema，`Engineer Agent` 也不该负责品牌定位。\n  - 最佳实践是给每个 agent 明确：\n    - 岗位职责\n    - 可用工具\n    - 汇报对象\n    - 预算\n    - 触发频率\n    - 是否需要审批\n  - 角色越清晰，协作越稳定，越接近真实公司的运营方式。\n\n**一个推荐的落地配置方式**\n\n如果你刚开始用 Paperclip，可以先跑一个最小组织，而不是一口气上 10 个 agent：\n\n- `CEO Agent`\n- `CTO Agent`\n- `Engineer Agent`\n- `Marketing Agent`\n\n先只围绕一个北极星目标运行：\n`30 天内获得 20 个真实试用用户`\n\n然后只设置 3 类任务：\n\n- 产品开发：做出最小可用功能\n- 增长验证：找到有效获客渠道\n- 用户反馈：总结阻塞点并回流到 roadmap\n\n这样能先验证：\n- 任务是否被正确委派\n- budget 是否合理\n- heartbeat 是否太频繁\n- 审批流是否拖慢关键动作\n\n**一句话总结这个实例的最佳实践**\n\n在 Paperclip 里，最优做法不是“让很多 AI 自动干活”，而是：\n**把 AI 按公司结构组织起来，让所有任务都服务于公司目标，并用预算、审批、审计和心跳机制来约束执行。**\n\n如果你愿意，我下一步可以继续给你两种内容里的任意一种：\n\n1. 把这个实例进一步展开成一套 `Paperclip` 组织设计方案\n2. 直接给你一个“适合放进 Paperclip 的 agent 配置草案 + 任务模板”",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "timestamp": 1773654753311,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ef264d513e50e7616ee1eabecfc7cd5e1d9d0e899694792afb1f063cdd33c3f0",
+  "refs": {
+    "sessionId": "1773310985240_9wfnpfhl"
+  },
+  "revisionId": "sha256:7ffe010c299b585c80b5e61250e8e015503c1048b090996945823a3df2ff7473",
+  "schemaVersion": 1,
+  "updatedAt": 1773654753311
+}

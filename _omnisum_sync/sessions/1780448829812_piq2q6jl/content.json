@@ -1,0 +1,15 @@
+{
+  "createdAt": 1780448829812,
+  "entityType": "session-content",
+  "id": "1780448829812_piq2q6jl",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>向阳乔木</strong></header><div class=\"tw-body\">读了今天Huggingface最热论文，关于如何让AI生成论文图表的Harness框架。<br><br>框架会围绕一个共享的结构化规格文档 S。<br><br>① 设计者 D：根据 S 生成可执行的视觉方案<br>② 执行者 E：将方案渲染成图像（或代码）<br>③ 验证者 V：输出带有具体问题定位的诊断报告<br>④ 修订者 R：将诊断转化为结构化操作，直接修改 S 中的对应字段<br><br>参考并简化，写了一个Skill：<br><br>设计者（生图提示词）<br>执行者（Codex调用GPT-image-2生图）<br>验收者（审美评判，这个可能不靠谱）<br><br>另外整合了抓取Skill，只需要提供URL就能生成配图，哪怕是 X URL。<br><br>生成效果如下：</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HJ1Fj1-aUAAkWCg?format=jpg&name=large\" alt=\"图片\" /><img src=\"https://pbs.twimg.com/media/HJ1Fm0SbEAABhTn?format=jpg&name=large\" alt=\"图片\" /><img src=\"https://pbs.twimg.com/media/HJ1Fq12aEAA4f_j?format=jpg&name=large\" alt=\"图片\" /><img src=\"https://pbs.twimg.com/media/HJ1F0jKbYAAuFij?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@向阳乔木</strong> <span class=\"tw-eng\">♥ 88 · 💬 73</span><p>这个有点厉害，Codex 出 Python SDK了。<br><br>安装指令：pip install openai-codex<br><br>整合到自己的代码中，相当于直接内置了顶级编程和生图Agent？<br><br>最关键的是，可以复用 Codex 登录态。</p></div></div>",
+    "pageContent": "向阳乔木: 读了今天Huggingface最热论文，关于如何让AI生成论文图表的Harness框架。 框架会围绕一个共享的结构化规格文档 S。 ① 设计者 D：根据 S 生成可执行的视觉方案\n② 执行者 E：将方案渲染成图像（或代码）\n③ 验证者 V：输出带有具体问题定位的诊断报告\n④ 修订者 R：将诊断转化为结构化操作，直接修改 S 中的对应字段 参考并简化，写了一个Skill： 设计者（生图提示词）\n执行者（Codex调用GPT-image-2生图）\n验收者（审美评判，这个可能不靠谱） 另外整合了抓取Skill，只需要提供URL就能生成配图，哪怕是 X URL。 生成效果如下：\n![图片](https://pbs.twimg.com/media/HJ1Fj1-aUAAkWCg?format=jpg&name=large)\n![图片](https://pbs.twimg.com/media/HJ1Fm0SbEAABhTn?format=jpg&name=large)\n![图片](https://pbs.twimg.com/media/HJ1Fq12aEAA4f_j?format=jpg&name=large)\n![图片](https://pbs.twimg.com/media/HJ1F0jKbYAAuFij?format=jpg&name=large)\n---\n热门回复 (共 1 条):\n@向阳乔木 (♥ 88 · 💬 73):\n这个有点厉害，Codex 出 Python SDK了。\n\n安装指令：pip install openai-codex\n\n整合到自己的代码中，相当于直接内置了顶级编程和生图Agent？\n\n最关键的是，可以复用 Codex 登录态。\n"
+  },
+  "payloadHash": "sha256:e950084395ab5618b45f2c8ca449eb7c878c32e1d2f36a099a32d760dc5ad101",
+  "refs": {},
+  "revisionId": "sha256:a6077e8a0bd34b91dd810fe1ff114c57ee0d2f45f173376a0b1673aaefd513cd",
+  "schemaVersion": 1,
+  "updatedAt": 1780449713095
+}

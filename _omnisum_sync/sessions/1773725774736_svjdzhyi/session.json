@@ -1,0 +1,66 @@
+{
+  "createdAt": 1773725774736,
+  "entityType": "session",
+  "id": "1773725774736_svjdzhyi",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若确需订阅，可先核对代理节点、账单地址和卡片国家是否一致",
+      "实际支付前预留高于月费的余额，并准备失败后的替代支付方案"
+    ],
+    "archiveReason": "包含可直接执行的支付排障步骤，对短期完成 Claude 订阅有一定参考价值。",
+    "classifiedAt": 1773725803154,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Bitget钱包订阅Claude攻略",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Stripe 类支付风控对 IP 国家与账单地址一致性较敏感",
+      "预授权可能导致实际扣款高于标价，余额需留出缓冲",
+      "使用加密钱包虚拟卡订阅海外 AI 工具存在稳定性与合规风险"
+    ],
+    "oneHighValuePoint": "明确指出 Claude 订阅支付成功的关键在于代理 IP、账单地址和卡片信息三者国家一致。",
+    "oneLineReview": "一篇强操作、弱证据的支付攻略，解决眼前问题可以，但不适合作为长期方法论依赖。",
+    "primaryCategory": "AI工具订阅与支付",
+    "rating": "C",
+    "rejectReason": "内容主要基于个人经验，证据不足，方法稳定性和合规性风险较高，长期价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "跨境支付",
+      "实操教程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了使用 Bitget Wallet 的 U Card 订阅 Claude Pro 的操作步骤，核心是让代理 IP、账单地址和卡片国家信息保持一致，并提醒预留余额应对预授权，同时提及首月返现活动。",
+    "tags": [
+      "Claude",
+      "Bitget Wallet",
+      "U Card",
+      "Stripe",
+      "订阅支付"
+    ],
+    "title": "Jason Zhu: 实操 | 用 Bitget Wallet 半价订阅 Claude 很多人卡在 Claude 订阅，其实思路很简单： IP、地址、卡三件事对齐 一、准备先把全局代…",
+    "totalScore": 47.5,
+    "url": "https://x.com/GoSailGlobal/status/2033736097898131599"
+  },
+  "payloadHash": "sha256:019a2345c84b3a84f8d6e907b2edc186d4adc4005beed4fed726461c05274ce2",
+  "refs": {},
+  "revisionId": "sha256:4e398af8fdd48a3b16023c2f6e6ba98be07bd0fe3aea4be213c6503a5a94e09b",
+  "schemaVersion": 1,
+  "updatedAt": 1773730577636
+}

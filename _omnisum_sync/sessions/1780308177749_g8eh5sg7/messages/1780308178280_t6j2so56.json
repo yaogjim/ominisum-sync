@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780308075248,
+  "entityType": "message",
+  "id": "1780308178280_t6j2so56",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# pi-cursor-sdk 简评\n\n## 1. 内容总结\n\n`pi-cursor-sdk` 是一个 **pi 编程代理扩展**，作用是：\n\n> 让 pi 可以调用 Cursor 的本地 SDK 模型，比如 Composer、GPT、Claude、Gemini 等。\n\n核心能力：\n\n- 在 pi 里使用 Cursor 模型：`cursor/composer-2.5`\n- 支持 pi 原生 `/model` 模型选择\n- 支持 Cursor API Key 登录\n- 支持思考控制、Fast 模式、Plan 模式\n- 支持图片输入\n- 支持把 pi 工具通过本地 MCP 桥接给 Cursor 使用\n- 使用本地 Cursor SDK Agent，不使用 Cursor 云端 Agent\n\n快速使用：\n\n```bash\npi install npm:pi-cursor-sdk\npi --model cursor/composer-2.5\n```\n\n进入 pi 后：\n\n```text\n/login\n```\n\n选择 Cursor，并填入 Cursor SDK API Key。\n\n---\n\n## 2. 通俗解读\n\n可以把它理解成：\n\n> 给 pi 装了一个“Cursor 模型适配器”。\n\n原本 pi 可能用自己的模型提供商；装上这个扩展后，pi 就能像使用普通模型一样使用 Cursor 的模型库。\n\n### 它解决了什么问题？\n\n如果你喜欢：\n\n- pi 的交互体验\n- pi 的工具系统\n- pi 的模型切换方式\n- Cursor 的模型能力\n\n那这个项目就是把两边接起来。\n\n---\n\n## 3. 重点功能\n\n### 模型选择\n\n可以直接指定 Cursor 模型：\n\n```bash\npi --model cursor/composer-2.5\npi --model cursor/gpt-5.5@1m\npi --model cursor/claude-opus-4-8@300k\n```\n\n也可以在 pi 内用：\n\n```text\n/model\n```\n\n### API Key\n\n必须使用 Cursor SDK API Key。\n\n它 **不会复用**：\n\n- Cursor Desktop 登录\n- Cursor Agent CLI 登录\n- Cursor 订阅状态\n\n推荐方式是在 pi 内 `/login` 保存。\n\n---\n\n### Fast 模式\n\n部分 Cursor 模型支持快速模式：\n\n```bash\npi --model cursor/composer-2.5 --cursor-fast\npi --model cursor/composer-2.5 --cursor-no-fast\n```\n\n交互中可用：\n\n```text\n/cursor-fast\n```\n\n---\n\n### Plan 模式\n\n可以让 Cursor 进入偏规划的模式：\n\n```bash\npi --model cursor/composer-2.5 --cursor-mode plan\n```\n\n交互中：\n\n```text\n/cursor-mode plan\n/cursor-mode agent\n```\n\n注意：  \nCursor 的 Plan 模式不等于 pi 自己的 Plan 工具系统。\n\n---\n\n### pi 工具桥接\n\n它可以把 pi 当前可用的工具，通过本地 MCP 暴露给 Cursor。\n\n简单说：\n\n> Cursor 模型可以调用部分 pi 工具。\n\n默认会隐藏一些重复工具，例如：\n\n- read\n- bash\n- write\n- edit\n- grep\n- find\n- ls\n\n因为 Cursor 本地 Agent 本身已有类似能力。\n\n关闭桥接：\n\n```bash\nPI_CURSOR_PI_TOOL_BRIDGE=0 pi --model cursor/composer-2.5\n```\n\n---\n\n### 图片输入\n\n支持把最新用户消息里的图片传给 Cursor。\n\n但历史图片不会一直保留，后续追问最好重新附图或文字描述。\n\n---\n\n## 4. 限制\n\n主要限制有：\n\n- 只支持本地 Cursor SDK Agent\n- 不支持 Cursor 云端 Agent\n- 必须有 Cursor SDK API Key\n- Cursor 工具回放多为展示，不会真的重新执行\n- 部分模型虽然会“思考”，但 pi 不一定能控制思考等级\n- Cursor SDK 某些工具事件可能不会完整暴露给 pi\n\n---\n\n## 5. 适合谁用？\n\n适合：\n\n- 已经在用 pi 的开发者\n- 想在 pi 里使用 Cursor 模型的人\n- 想结合 pi 工具和 Cursor Agent 能力的人\n- 熟悉命令行、环境变量、MCP 的高级用户\n\n不太适合：\n\n- 只想开箱即用的新手\n- 不想配置 API Key 的用户\n- 不熟悉 pi / Cursor SDK / MCP 的用户\n\n---\n\n## 6. 我的意见\n\n这是一个 **偏高级、偏工程化** 的集成项目。\n\n优点：\n\n- 功能很完整\n- 和 pi 的模型选择、登录、工具系统结合较深\n- 对 Fast、Plan、Thinking、MCP 都做了适配\n- 文档说明非常细\n\n缺点：\n\n- 配置项很多，学习成本高\n- 对 Cursor SDK 依赖较强\n- 出问题时排查门槛不低\n- 普通用户可能会觉得复杂\n\n我的建议：\n\n> 如果你已经熟悉 pi，并且想把 Cursor 模型接进自己的命令行开发流，这是值得尝试的。  \n> 如果你只是普通 Cursor 用户，直接用 Cursor 本体可能更省心。\n\n一句话评价：\n\n**它不是给所有人的工具，但对 pi + Cursor 深度用户很有价值。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780308075248,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:63c85562b97385db53f2f0cbc7604e406a0a3b54c9ed284e6f8dee27ee49aab7",
+  "refs": {
+    "sessionId": "1780308177749_g8eh5sg7"
+  },
+  "revisionId": "sha256:289d68e9af0ef1db4c0ab3e3009f82f33077eb0f535218106b58c667cd21eb9b",
+  "schemaVersion": 1,
+  "updatedAt": 1780308075248
+}

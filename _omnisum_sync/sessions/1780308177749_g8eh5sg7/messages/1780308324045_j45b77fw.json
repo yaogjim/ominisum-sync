@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780308324046,
+  "entityType": "message",
+  "id": "1780308324045_j45b77fw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: pi接入Cursor模型SDK指南\n\n**评级**: B (67.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: Cursor, SDK集成, 命令行工具\n**标签**: #pi-cursor-sdk #Cursor SDK #AI编码代理 #MCP #模型接入\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一份面向实际使用者的详尽集成文档，操作价值高，但方法论和通用迁移价值有限。\n**核心高价值点**: 最有价值的是明确说明了 pi 与 Cursor SDK 的认证、模型发现、MCP 工具桥接和调试开关的完整配置路径。\n\n### 摘要\n文章是 pi-cursor-sdk 项目的 README，介绍如何在 pi coding agent 中通过本地 Cursor SDK 使用 Cursor 模型，涵盖安装、认证、模型选择、thinking 控制、fast/plan 模式、图片输入、MCP 工具桥接、缓存、调试与故障排查。\n\n### 知识要点\n- pi-cursor-sdk 可让 pi 通过本地 @cursor/sdk agent runtime 调用 Cursor 模型，并保留 pi 的模型选择、thinking 控制和会话体验。\n- Cursor SDK API key 需要通过 /login、CURSOR_API_KEY 或 --api-key 配置，不能复用 Cursor Desktop 或 Cursor Agent CLI 登录状态。\n- 模型目录会按 API key 指纹缓存到本地，支持通过 /cursor-refresh-models 强制刷新实时 Cursor 模型列表。\n- 扩展支持 Cursor fast 模式、plan 模式、thinking 参数映射、图片输入以及上下文窗口变体模型 ID。\n- pi 工具可通过本地 loopback MCP bridge 暴露给 Cursor，本地 Cursor 原生工具与 pi bridge 工具是两套不同工具面。\n- 提供了多种环境变量用于控制工具桥接、MCP 超时、Cursor setting sources、调试日志和模型缓存行为。\n\n### 行动项\n- 如需使用该扩展，先安装：pi install npm:pi-cursor-sdk。\n- 通过 /login 或 CURSOR_API_KEY 配置 Cursor SDK API key。\n- 启动时使用 pi --model cursor/composer-2.5 验证模型是否可用。\n- 运行 /cursor-refresh-models 刷新 Cursor 实时模型目录。\n- 根据需要配置 PI_CURSOR_PI_TOOL_BRIDGE、PI_CURSOR_SETTING_SOURCES 和 MCP 超时环境变量。\n- 用文中的 smoke test 命令验证认证、模型调用和输出链路是否正常。\n\n### 存档判定\n归档: 是 — 原因: 包含安装、认证、模型选择、工具桥接、调试和故障排查等完整操作说明，适合作为配置参考文档\n删除: 否\n留存决策: 短期参考后可归档，若实际使用 pi 与 Cursor 集成则建议长期保留",
+    "role": "assistant",
+    "timestamp": 1780308324046,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:88857a8b497fb1f17f0fd828a7e1139710045e8427924ea88ca0666538db4e78",
+  "refs": {
+    "sessionId": "1780308177749_g8eh5sg7"
+  },
+  "revisionId": "sha256:bc6524b07b179724fa02e1268cb8d8d3fa69282ba635827e573d54f0fd21b3f9",
+  "schemaVersion": 1,
+  "updatedAt": 1780308324046
+}

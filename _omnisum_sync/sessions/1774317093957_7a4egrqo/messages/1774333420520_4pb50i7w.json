@@ -1,0 +1,20 @@
+{
+  "createdAt": 1774333084844,
+  "entityType": "message",
+  "id": "1774333420520_4pb50i7w",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 主旨概括\n\n这篇内容主要介绍了 Frad 在 Claude Code 中实践很久的一套工作流插件 `meeseeks-vetted`，核心目标是：**强制 AI 在任务完成前做好验证，避免“看起来做完了，其实没完全确认”的情况**。  \n作者认为，如果把 Claude Code 看作一个“操作系统”，那么 Hook/插件机制就是编排这个系统行为的关键工具，而这个插件正是把这种思路落地的一种方式。\n\n## 1. 插件是什么，以及怎么安装\n\n作者正式介绍了一个名为 `meeseeks-vetted` 的插件，并给出了安装方式：\n\n```bash\nclaude plugin marketplace add FradSer/dotclaude\nclaude plugin install meeseeks-vetted@frad-dotclaude\n```\n\n关键点：\n- 插件来自 `FradSer/dotclaude`\n- 名称是 `meeseeks-vetted`\n- 作者说明，这套方法是自己在 Claude Code 里实验了很久后，参考相关提示词进一步修改出来的\n\n通俗理解：\n- 它不是单纯“优化提示词”，而是把“任务必须验证完成”这件事，做成了一个可执行的流程规则\n- 这样 AI 不只是“回答你”，而是要按预设标准完成并自检\n\n## 2. 这个插件的核心工作原理\n\n作者把插件逻辑拆成了 3 个步骤。\n\n### 2.1 在任务开始时，先注入约束\n\n当用户输入 prompt 时，系统会自动注入一段提示词，用来约束：\n- 如何判断任务是否完成\n- 什么样的结果才算达标\n\n并且要求：\n- 任务完成后，回复必须以 `Fully Vetted.` 结尾\n\n这里作者提到，这种做法类似 `ralph-loop`。\n\n通俗理解：\n- 相当于一开始就告诉 AI：“不是做一点就算完，必须满足明确标准，而且要打上完成标记。”\n- `Fully Vetted.` 就像一个“验收章”\n\n### 2.2 每轮结束时，检查有没有完成标记\n\n每一轮执行结束后，系统会检查输出里是否包含：\n\n```text\nFully Vetted.\n```\n\n如果没有：\n- 系统就会报错\n- 并把原始 prompt 和已修改的文件返回\n- 要求 AI 补充验证后再重试\n\n关键点：\n- 这里不是“没写标记就算了”，而是直接拦截\n- 还会保留上下文信息，方便下一轮继续完善\n\n通俗例子：\n- 比如你让 AI 修改一段代码，它改完了但没有确认测试、校验或检查结果\n- 这时插件不会放过，而是要求它继续验证，直到真正符合“完成标准”\n\n### 2.3 如果任务没完成，新 prompt 会自动合并上下文\n\n作者还提到一个很重要的机制：\n\n如果旧任务还没完成，但用户又输入了新的 prompt，系统不会简单地“开启新话题”，而是会合并：\n- 旧 prompt\n- AI 已有输出\n- 用户新 prompt\n\n然后把合并后的内容，作为统一上下文进入下一轮执行。\n\n关键点：\n- 防止任务中途断裂\n- 避免 AI 忘掉之前做了什么、还差什么\n- 让多轮协作更连贯\n\n通俗理解：\n- 就像一个持续推进的工单系统，而不是每次对话都重新开一个窗口\n\n## 3. 作者对 Claude Code 工作方式的理解\n\n作者用了一个很形象的比喻：\n\n- 如果把 Claude Code 当成一个“操作系统”\n- 那么 Hook 就是编排这个操作系统最重要的工具\n\n并且指出：\n- 这种逻辑与 `ralph-loop` 是非常一致的\n\n这说明作者关注的不只是“某个提示词怎么写”，而是：\n- 怎样用 Hook/插件去塑造 AI 的执行流程\n- 怎样把“任务管理、验证、重试、上下文继承”变成一套稳定机制\n\n简化来说：\n- 提示词决定 AI “怎么想”\n- Hook/插件决定 AI “必须怎么做”\n\n## 4. 相关链接与补充信息\n\n文中保留了相关资源链接：\n- 项目地址：`https://github.com/FradSer/dotclaude`\n\n热门回复中还有两条补充信息：\n\n### 4.1 `dotfiles` 已默认支持相关配置\n\nFrad 提到：\n- `FradSer/dotfiles` 已经默认支持 `CLAUDE_CODE_NEW_INIT=1`\n\n这说明：\n- 作者不仅提供了插件本身\n- 还把相关初始化能力整合进了自己的 dotfiles 配置中，方便直接使用\n\n相关仓库：\n- `https://github.com/FradSer/dotfiles`\n\n### 4.2 一个轻松的玩笑式回复\n\n另一条回复写道：\n\n> I'm Mr. Meeseeks! Look at me!  \n> 我是觅思客先生！看着我！\n\n这显然是在呼应插件名 `meeseeks-vetted`，带一点幽默感，也让这个工具名称更容易被记住。\n\n## 5. 总结\n\n这篇内容的重点，不是单纯推荐一个插件，而是在分享一种更可靠的 AI 编排思路：\n\n- 先定义“完成标准”\n- 再强制检查“是否真正完成”\n- 没完成就返回上下文并重试\n- 多轮对话时自动合并上下文，持续推进任务\n\n其中最关键的标志是：\n- 完成时必须以 `Fully Vetted.` 结尾\n\n从实用角度看，这套方法特别适合：\n- 代码修改\n- 多轮协作任务\n- 需要验收和回溯的复杂操作\n\n它的价值在于：**让 AI 不只是“给出一个答案”，而是更像一个必须经过验收流程的执行者。**",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1774333084844,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ab14bb72f2b75c617606e02e4fad6035411c2962921a78622c1c8af345e146eb",
+  "refs": {
+    "sessionId": "1774317093957_7a4egrqo"
+  },
+  "revisionId": "sha256:f76624fbceecd5f3bc9ab54e57e70fdfeab2d6acefc1ad19514c86757129ca83",
+  "schemaVersion": 1,
+  "updatedAt": 1774333084844
+}

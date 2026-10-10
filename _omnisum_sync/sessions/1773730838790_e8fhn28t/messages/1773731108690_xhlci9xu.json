@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773731095388,
+  "entityType": "message",
+  "id": "1773731108690_xhlci9xu",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "精炼总结：这条内容用“旋转 90 度”的视角把 ResNet、LSTM 和 Attention 统一到同一个计算表格里，核心是把“时间轴”和“深度轴”看作可对偶转换，并进一步引出一种让同一 token 跨层做 attention 的 Residual Attention / Block AttnRes 结构。\n\n一句话评论：这是一个很强的解释框架，厉害之处不只是类比新颖，而是它把“网络结构创新”变成了“计算轴重排”的问题。\n\n一句话高价值内容：真正值得记住的是——很多模型改进未必来自新算子，而可能来自把已有算子沿着另一条维度重新组织。",
+    "prompt_id": "default",
+    "role": "assistant",
+    "timestamp": 1773731095388,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d2ae8511e1a53bd5dc20c1a6bd766bfab7256d64e69ac72240d77715671c0406",
+  "refs": {
+    "sessionId": "1773730838790_e8fhn28t"
+  },
+  "revisionId": "sha256:7b65fae2113393c53a00dc5c713985c6f08ea4f8986962827af21293711c0aeb",
+  "schemaVersion": 1,
+  "updatedAt": 1773731095388
+}

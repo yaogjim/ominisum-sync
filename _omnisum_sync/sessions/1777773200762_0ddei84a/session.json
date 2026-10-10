@@ -1,0 +1,66 @@
+{
+  "createdAt": 1777773200762,
+  "entityType": "session",
+  "id": "1777773200762_0ddei84a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估引入 Cursor SDK 时的云依赖、数据安全和供应商锁定风险。",
+      "对比 Cursor、OpenAI、Anthropic Agent SDK 在本地运行能力、可观测性、状态管理和成本结构上的差异。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777773697670,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Cursor SDK平台锁定之争",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Cursor SDK 相比 Anthropic/OpenAI Agent SDK 更依赖 Cursor 云和 API key，存在平台锁定特征。",
+      "Agent Runtime 包含 sandbox、computer use、状态管理、重试逻辑、可观测性等工程能力，不只是 prompt 封装。",
+      "如果基础模型持续商品化，AI 开发工具的竞争焦点可能从模型选择转向运行时和平台生态。"
+    ],
+    "oneHighValuePoint": "模型层趋同后，sandbox、状态管理、重试、可观测性等 Agent Runtime 能力可能成为 AI 编程工具的真正壁垒。",
+    "oneLineReview": "一个有启发的行业观察，但证据和展开不足，只适合快速了解观点。",
+    "primaryCategory": "AI工具与Agent平台",
+    "rating": "C",
+    "rejectReason": "内容主要是短推观点，缺少详细论证、数据或案例，适合作为趋势信号而非系统性资料。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开发者工具",
+      "平台战略"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出 Cursor SDK 与 Anthropic、OpenAI Agent SDK 的差异在于必须使用 Cursor API key 并经过 Cursor 云，体现平台锁定或平台战略；其核心押注是模型商品化后，Agent Runtime 层成为差异化关键。",
+    "tags": [
+      "Cursor SDK",
+      "Agent Runtime",
+      "平台锁定",
+      "AI编程",
+      "云依赖"
+    ],
+    "title": "艾略特: 围观了一天 X 上对 Cursor SDK 的反应，最值得看的不是 Cursor 自己的官方说法",
+    "totalScore": 49.5,
+    "url": "https://x.com/elliotchen100/status/2049644389581124011"
+  },
+  "payloadHash": "sha256:a0fa51b9ed346fa930b33ffb6bd6a6181ff79b8f7406ce0cecb8ece5d449afb3",
+  "refs": {},
+  "revisionId": "sha256:cedb160bceab499f286eb221da3416a29cb7008128e589096ead26cb53adb009",
+  "schemaVersion": 1,
+  "updatedAt": 1777774622382
+}

@@ -1,0 +1,71 @@
+{
+  "createdAt": 1777773891761,
+  "entityType": "session",
+  "id": "1777773891761_qxx3riar",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在 Claude Code 项目中启用 /init，并维护清晰的项目说明与约束文档。",
+      "当上下文超过约 60% 或模型开始遗忘需求时，立即使用 /compact。",
+      "为代码搜索、调研、测试影响面分析等探索型任务尝试使用 sub agents。",
+      "建立任务复杂度分级规则：简单任务交给 Haiku，复杂任务交给 Sonnet/Opus。",
+      "将 CI 检查、PR 队列、慢查询等周期性状态检查改造成 /loop 监控任务。"
+    ],
+    "archiveReason": "文章不仅罗列 Claude Code 技巧，还抽象出上下文管理、任务拆分、模型选择和异步监控等可复用方法，对 AI 编程工作流有较高参考价值。",
+    "classifiedAt": 1777774032518,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code使用心法与技巧",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "超过一定上下文长度后应使用 /compact 重新聚焦关键信息，减少 lost in the middle 影响。",
+      "sub agents 的核心价值不只是并行，而是隔离探索过程，避免污染主上下文。",
+      "任务跑偏时应 fail fast，及时退出重开，而不是在污染上下文中继续修正。",
+      "简单任务使用较小模型可能减少过度设计，复杂任务再交给更强模型或 ultrathink。",
+      "/loop 更适合持续监控类任务，而不是让模型长时间连续写代码。"
+    ],
+    "oneHighValuePoint": "将 Claude Code 从“工具”重新理解为“有限注意力、有限时间、有行为偏好的同事”，由此推导出上下文管理、任务隔离和异步协作策略。",
+    "oneLineReview": "一篇有实操价值的 Claude Code 工作流心法总结，但部分机制解释和效果数据缺乏充分证据支撑。",
+    "primaryCategory": "AI编程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "提示词工程",
+      "开发效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于 Claude Code 32 个技巧，重点拆解了将 Claude 当作 junior 同事、及时 compact、跑偏重开、sub agents 上下文隔离、简单任务用 Haiku、/loop 做监控等核心心法，强调以管理有限注意力的同事来使用 AI 编程工具。",
+    "tags": [
+      "Claude Code",
+      "AI编程",
+      "上下文管理",
+      "Agent协作",
+      "Prompt工程"
+    ],
+    "title": "Claude Code 的 32 个使用技巧 - 入门，进阶，高阶",
+    "totalScore": 73,
+    "url": "https://x.com/elliotchen100/status/2049299210668032393"
+  },
+  "payloadHash": "sha256:588c0b353698942adc9c0ab128465fd51d149ca10aeded157076e83f008d5cb6",
+  "refs": {},
+  "revisionId": "sha256:666058a6209c32cd68f8484ba50463032c40ee0c506f6019a77b6a73ef9bc674",
+  "schemaVersion": 1,
+  "updatedAt": 1777774205932
+}

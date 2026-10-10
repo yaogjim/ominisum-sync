@@ -1,0 +1,15 @@
+{
+  "createdAt": 1776147939716,
+  "entityType": "session-content",
+  "id": "1776147939716_oxbln6v6",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>victor-wu.eth</strong></header><div class=\"tw-body\">今天给同事搭了一套 Agent 自动化工作流，爽了一把。<br><br>之前我们是怎么处理 bug 的：<br><br>同事在 CC里发现 bug → 手动来跟我说<br>我让他去提 Issue → 他提完再跟我说<br>我开始修 → 修完再跟他说<br>他再去验证 → 最后手动关 Issue<br><br>人传人传人传人<br><br>——<br><br>现在：<br><br>同事 CC 发现 bug → Hook 自动拉起 Sub-agent → 直接调用 Issue 模块提 bug → TG Bot 频道实时通知<br><br>我：<br><br>Claude 定位 + 修复 → CodeX review → 自动提 PR → Macroscope 最终 review → merge → 关联issue → TG Bot 频道实时通知<br><br>再往前推一步：<br><br>让 Hermes Agent 去处理“小 bug 自动修复”。在我看到之前就已经被处理掉了。</div></article>",
+    "pageContent": "victor-wu.eth: 今天给同事搭了一套 Agent 自动化工作流，爽了一把。 之前我们是怎么处理 bug 的： 同事在 CC里发现 bug → 手动来跟我说\n我让他去提 Issue → 他提完再跟我说\n我开始修 → 修完再跟他说\n他再去验证 → 最后手动关 Issue 人传人传人传人 —— 现在： 同事 CC 发现 bug → Hook 自动拉起 Sub-agent → 直接调用 Issue 模块提 bug → TG Bot 频道实时通知 我： Claude 定位 + 修复 → CodeX review → 自动提 PR → Macroscope 最终 review → merge → 关联issue → TG Bot 频道实时通知 再往前推一步： 让 Hermes Agent 去处理“小 bug 自动修复”。在我看到之前就已经被处理掉了。"
+  },
+  "payloadHash": "sha256:d385a51fe366a6ad3fee80665c7a4e91ef77b40313dcb55afc7b6fdd9902b42e",
+  "refs": {},
+  "revisionId": "sha256:46eb31684c4196c19386624fda0a13cb90e5660eb0a3ad3521c754cc94882381",
+  "schemaVersion": 1,
+  "updatedAt": 1776643607494
+}

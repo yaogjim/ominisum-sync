@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773857577,
+  "entityType": "message",
+  "id": "1777773927989_sa97gmbg",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Pi：一个克制、可组合的终端编程 Agent\n\n## 核心概览\n\n**pi-mono** 是一个 TypeScript 单仓项目，核心产品叫 **Pi**。  \nPi 是一个运行在终端里的编程 Agent，可以完成：\n\n- 读取文件\n- 写入文件\n- 编辑代码\n- 执行命令\n\n它的作者是 **Mario Zechner**，也是 libGDX 游戏框架作者。项目起点很直接：他不喜欢市面上的 Coding Agent，于是自己写了一个。\n\n## 最大特点：克制而不是堆功能\n\nPi 最特别的地方不是功能复杂，而是设计非常克制。\n\n它的核心工具只有：\n\n- `read`\n- `write`\n- `edit`\n- `bash`\n\n相比很多 Coding Agent 一上来就加入 MCP、子 Agent、Plan 模式、权限弹窗等复杂机制，Pi 更像是一个**干净的 Agent 内核**。\n\n需要更多能力时，再通过：\n\n- Extensions\n- Skills\n- Packages\n\n进行扩展。\n\n## 架构价值：适合学习和二次开发\n\npi-mono 的架构拆分清晰，把不同能力做成独立 npm 包，包括：\n\n- LLM 调用\n- Agent Runtime\n- 终端 Agent\n- TUI\n- Web UI\n- Slack Bot\n- GPU Pod 管理\n\n开发者不一定要使用完整体系，也可以单独使用其中模块，例如：\n\n- 用 `pi-ai` 统一接入多家模型\n- 用 `pi-agent-core` 搭建自己的 Agent 运行时\n\n## 实用设计\n\nPi 还包含不少面向真实使用场景的设计：\n\n- 会话树分支\n- 上下文压缩\n- 扩展机制\n- 技能系统\n- 包生态\n- SDK 嵌入模式\n\n这些能力让它既轻量，又具备构建复杂应用的基础。\n\n## 为什么值得关注\n\nPi 的价值在于：**足够轻、足够透明、足够可组合**。\n\n它不是一个大而全的 Coding Agent，而是一个可以被理解、改造、嵌入和扩展的 Agent 内核。  \n这也是 OpenClaw 等复杂应用能基于它构建的核心原因。\n\n## 热门回复要点\n\n- 有人推荐哈佛开源教材《Machine Learning Systems》，强调 AI 不只是训练模型，更要关注生产环境落地。\n- 有人提到用 Codex 结合 Chronicle 分析个人电脑操作习惯，优化工作方式。\n- 有人讨论 OpenAI Skills，认为 Skill 的本质是把模型能力放进可控的工程边界。\n- 也有用户表示，正是因为 Pi 的“克制”，才愿意把它作为产品内核使用。\n\n## 一句话总结\n\n**Pi 是一个极简、透明、模块化的终端编程 Agent，更适合作为 Agent 系统的底层内核，而不是一个臃肿的一站式工具。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773857577,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:49be69979380be9253725c59f0300d0a4b24c07b8b4cb08f78b684fe0a260b0c",
+  "refs": {
+    "sessionId": "1777773927681_qq0s4t63"
+  },
+  "revisionId": "sha256:293d9e7802ac18b5281263db9b451493bf5a86f5d9c67c15f027fa177c380714",
+  "schemaVersion": 1,
+  "updatedAt": 1777773857577
+}

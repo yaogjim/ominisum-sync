@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777005244034,
+  "entityType": "session",
+  "id": "1777005244034_qg7cgfos",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看 `lucebox-hub` 仓库文档与基准配置，确认结果是否可复现",
+      "对比现有推理栈中 kernel launch、功耗限制和量化方案的性能瓶颈"
+    ],
+    "archiveReason": "包含具体性能数据、优化方向和项目链接，可作为后续查阅的线索性材料",
+    "classifiedAt": 1777005544772,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "手写CUDA释放3090推理潜力",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "内核融合可显著减少 LLM 推理中的调度与启动开销",
+      "在显存受限条件下，可通过改写加载器与树操作内核实现单卡推测解码"
+    ],
+    "oneHighValuePoint": "将原本约 100 次 CUDA kernel launch 合并为一次 dispatch，说明通用框架开销可能是消费级 GPU 推理性能瓶颈的关键来源。",
+    "oneLineReview": "有启发性的高性能推理案例，但原文更像项目速报，证据和方法展开不足。",
+    "primaryCategory": "AI推理优化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为消费级GPU推理优化案例索引",
+    "secondaryCategories": [
+      "GPU性能工程",
+      "LLM部署"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章概述 Lucebox 通过手写 CUDA 内核和改造 GGUF 路线，在 RTX 3090 上显著提升 LLM 推理吞吐与能效，并展示单卡推测解码与大上下文部署的可行性。",
+    "tags": [
+      "RTX3090",
+      "CUDA内核融合",
+      "LLM推理",
+      "能效优化",
+      "推测解码"
+    ],
+    "title": "Geek Lite: 消费级显卡其实有足够的硬件潜力，只是通用框架把大部分性能浪费在无效开销上",
+    "totalScore": 66,
+    "url": "https://x.com/QingQ77/status/2046901828840046811"
+  },
+  "payloadHash": "sha256:426cfb0e59603d2a000d67e488194dcb89563647a44a7455d94ffbec165547c0",
+  "refs": {},
+  "revisionId": "sha256:a36a724c80270a43934445c40ff48dfeb8a265d0e612789f0c6b532750c4abef",
+  "schemaVersion": 1,
+  "updatedAt": 1777006050756
+}

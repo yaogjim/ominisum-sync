@@ -1,0 +1,69 @@
+{
+  "createdAt": 1775703032190,
+  "entityType": "session",
+  "id": "1775703032190_podk910a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查现有 Agent 系统中是否把模型短期缺陷写死为固定流程、DAG 或 prompt 结构",
+      "将会话状态、调度逻辑和执行环境分层建模，优先定义长期稳定接口",
+      "把敏感凭证从模型可直接访问的执行环境中剥离，改为受控代理调用",
+      "评估是否可用事件日志替代纯摘要式 memory 作为恢复与审计基础"
+    ],
+    "archiveReason": "对 Agent 基础设施的稳定接口、可恢复状态和执行环境解耦提出了有价值的结构化视角",
+    "classifiedAt": 1775820404001,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent OS式基础设施观察",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "session 应被视为 append-only 的事件日志，而不是简单聊天记录",
+      "harness 应设计成可替换的 orchestration layer，尽量减少对模型当前缺陷的固化假设",
+      "sandbox 与 brain 解耦后，有利于恢复性、安全性和按需 provision 的性能优化",
+      "安全边界不应建立在“模型暂时做不到某事”的脆弱假设上"
+    ],
+    "oneHighValuePoint": "最有价值的点是把 session 定义为“可恢复的执行事实流”而非上下文窗口镜像，这为 Agent 的恢复性、调试性和长期演进提供了更稳的抽象边界。",
+    "oneLineReview": "有启发的二手架构解读，概念密度不错，但证据和可落地细节不足。",
+    "primaryCategory": "AI Agent 架构",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后归档，适合作为 Agent 架构抽象的观点材料保留",
+    "secondaryCategories": [
+      "系统设计",
+      "工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章从 Anthropic 的 Harness 实践出发，提炼出 session、harness、sandbox 三层抽象，强调不要把暂时性的模型缺陷固化为永久系统结构，并提出 Agent 基础设施将趋近于“微型操作系统”的判断。",
+    "tags": [
+      "Anthropic",
+      "Harness",
+      "Agent OS",
+      "Session Log",
+      "Sandbox"
+    ],
+    "title": "AlexZ 🦀: Anthropic 发布了新的 Harness 工程实践文章",
+    "totalScore": 66,
+    "url": "https://x.com/blackanger/status/2041951380836147479"
+  },
+  "payloadHash": "sha256:12bb2c6d741b60cb9f3902915fa505293e1722e1c31bdb06d765a6835f5c1a74",
+  "refs": {},
+  "revisionId": "sha256:f14a60af5c02ae0079e6a44fe4b09b45f8d676b52401ed031bd3249c98655d56",
+  "schemaVersion": 1,
+  "updatedAt": 1775820404003
+}

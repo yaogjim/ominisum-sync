@@ -1,0 +1,67 @@
+{
+  "createdAt": 1776404517648,
+  "entityType": "session",
+  "id": "1776404517648_4p7qxzej",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用测试覆盖率、发布自动化、监控告警和回滚能力评估当前团队是否具备AI落地基础",
+      "优先在后端服务、内部工具或可快速试错的模块试点AI驱动开发流程"
+    ],
+    "archiveReason": "文章对AI First落地条件做了较清晰的工程化拆解，便于后续评估团队准备度",
+    "classifiedAt": 1776404698882,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI优先的工程前提反思",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI提速后，需求、测试、发布与协作流程会成为新的系统瓶颈",
+      "自动化测试、CI/CD、监控与回滚机制是AI持续交付的必要条件",
+      "AI First并不适用于所有产品，UI密集、高质量敏感和高安全场景需谨慎",
+      "任务粒度和架构清晰度会直接影响多Agent协作与AI维护效果"
+    ],
+    "oneHighValuePoint": "最有价值的是把AI First拆解为可检查的工程前提，而不是停留在工具订阅和口号层面。",
+    "oneLineReview": "不是在鼓吹AI万能，而是在提醒没有工程底座的AI First只会放大混乱。",
+    "primaryCategory": "AI工程化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为AI落地前的工程检查清单",
+    "secondaryCategories": [
+      "软件工程",
+      "研发流程自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为所谓AI First本质上首先是软件工程First，AI能否真正提效取决于测试覆盖、CI/CD、监控、任务管理与系统架构等基础是否完善，并指出该模式更适合后端驱动、可快速试错的场景。",
+    "tags": [
+      "AI First",
+      "CI/CD",
+      "自动化测试",
+      "A/B测试",
+      "工程基础设施"
+    ],
+    "title": "宝玉: 今天刷到这篇文章几次，说点不一样的",
+    "totalScore": 67.5,
+    "url": "https://x.com/dotey/status/2043936713618104582"
+  },
+  "payloadHash": "sha256:f26c0e6c29978def81ff97a7698a76ac17cdfa477f5f17bc97ed7667bfff392a",
+  "refs": {},
+  "revisionId": "sha256:58469f3a269d3585dca8bc4805a0ab581c4efdc610910f0cbda172977eef6c02",
+  "schemaVersion": 1,
+  "updatedAt": 1776404857985
+}

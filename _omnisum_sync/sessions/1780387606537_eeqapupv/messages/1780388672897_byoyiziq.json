@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780388672898,
+  "entityType": "message",
+  "id": "1780388672897_byoyiziq",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Search as Code架构解析\n\n**评级**: A (74分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI基础设施\n**次类别**: Agent架构, 搜索系统\n**标签**: #Search as Code #AI Agent #搜索架构 #Function Calling #代码编排\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一篇高质量的AI搜索架构趋势解读，适合关注Agent基础设施的人精读。\n**核心高价值点**: 将LLM从“调用搜索API”转变为“用代码编排搜索原语”，可显著降低复杂检索任务中的上下文膨胀和串行瓶颈。\n\n### 摘要\n文章介绍Perplexity提出的Search as Code架构：由模型生成Python代码，在沙箱中编排搜索原语，以减少串行function calling带来的延迟、token浪费和上下文污染，并通过CVE分析等案例展示其在复杂检索任务中的优势。\n\n### 知识要点\n- 传统function calling在高频、多步、并行搜索任务中容易形成串行瓶颈，并导致上下文污染。\n- Search as Code通过模型生成代码、沙箱执行、SDK原语组合，实现对检索、过滤、聚合、验证等流程的可编排控制。\n- 代码在该范式中既是编排器，也是能力补足器，可动态实现SDK缺失的过滤、去重、验证逻辑。\n- Agent Skills不必详列所有函数，更重要的是提供简洁、可泛化的组合指南和示例。\n- AI原生基础设施的接口设计可能通过autoresearch循环持续自我优化。\n\n### 行动项\n- 阅读Perplexity原始研究文章，核验SaC架构细节和benchmark数据。\n- 对比现有Agent项目中的function calling流程，识别是否存在串行调用、上下文膨胀和中间状态污染问题。\n- 尝试设计一个小型Search as Code原型，用Python沙箱编排搜索、过滤、去重和结果验证流程。\n- 整理可复用的搜索原语接口，评估哪些能力适合交给代码执行而不是LLM上下文处理。\n\n### 存档判定\n归档: 是 — 原因: 文章系统梳理了Search as Code的架构逻辑、适用场景和与传统function calling的差异，对理解Agent搜索基础设施演进有较高参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1780388672898,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:387bb8b1bf2a8d62b706843beaa832e3107b65c6d77f4db574e68352832eab16",
+  "refs": {
+    "sessionId": "1780387606537_eeqapupv"
+  },
+  "revisionId": "sha256:555a7b27d127b266f6aa4aacdfa53ef07f592ee79ac9023b3b26bdd3399abdf5",
+  "schemaVersion": 1,
+  "updatedAt": 1780388672898
+}

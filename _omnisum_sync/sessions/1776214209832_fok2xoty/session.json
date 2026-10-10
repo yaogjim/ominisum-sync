@@ -1,0 +1,68 @@
+{
+  "createdAt": 1776214209832,
+  "entityType": "session",
+  "id": "1776214209832_fok2xoty",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查当前项目的测试覆盖率、部署自动化和线上监控是否足以支撑AI高频提交",
+      "把现有研发流程按需求拆解、编码、测试、发布、回滚逐段识别人工瓶颈",
+      "优先建设功能开关与可观测性，而不是先扩大AI编码使用范围"
+    ],
+    "archiveReason": "提供了较完整的AI驱动研发流水线思路，可用于对照团队基础设施成熟度",
+    "classifiedAt": 1776646511421,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI优先的工程化反思",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "AI放大研发效率的前提是自动化测试、CI/CD、监控和回滚机制先成熟",
+      "任务粒度、架构边界和统一上下文会显著影响AI代理的可用性",
+      "高频发布要靠功能开关、A/B测试和线上观测形成快速反馈闭环",
+      "AI在后端驱动、可数据验证的场景更适用，在UI密集和高安全场景受限更大"
+    ],
+    "oneHighValuePoint": "最有价值的是把“AI优先”重新定义为“围绕AI重构可验证、可回滚、可观测的软件交付系统”，而不是单纯给现有流程加几个AI工具。",
+    "oneLineReview": "有启发性的工程化案例，但证据主要来自单一团队自述，适合作为思路参考而非直接当成通用结论。",
+    "primaryCategory": "AI工程与研发管理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，适合作为AI工程化转型的案例参考",
+    "secondaryCategories": [
+      "软件工程",
+      "组织流程优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章核心观点是，与其喊AI First，不如先把软件工程基础设施做到位。测试、CI/CD、监控、任务管理和架构清晰度决定了AI能否真正放大研发效率；否则AI只会把瓶颈从编码转移到其他环节。",
+    "tags": [
+      "AI First",
+      "CI/CD",
+      "自动化测试",
+      "工程效率",
+      "研发流程"
+    ],
+    "title": "为什么你的\"AI 优先\"战略可能大错特错？",
+    "totalScore": 66.5,
+    "url": "https://x.com/dotey/status/2043953753921847582"
+  },
+  "payloadHash": "sha256:3b794d7c817e44b0fb3e909780af0952acf2050ebb291886db44ea06ba3488dd",
+  "refs": {},
+  "revisionId": "sha256:7e142310749bf18011ec0d0513f110a9d7f3f039766bfbfeb782b9b3a62859af",
+  "schemaVersion": 1,
+  "updatedAt": 1776647022272
+}

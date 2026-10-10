@@ -1,0 +1,67 @@
+{
+  "createdAt": 1773549331373,
+  "entityType": "session",
+  "id": "1773549331373_n5w6a0wl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "结合当前团队实际，评估哪些KR拆解工作可交由AI代理完成",
+      "在目标管理中尝试区分O与KR，检查是否存在过度KR化导致的内耗"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773829849110,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agents时代的MBO判断",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "MBO强调共同制定目标与自我管理，而非上级单向压目标",
+      "OKR在实践中常因KR拆解不准而带来频繁对齐和组织内耗",
+      "Agents可能承担目标拆解、试错和验证等执行性工作",
+      "未来团队形态可能向更扁平的一人团队演化"
+    ],
+    "oneHighValuePoint": "把“KR可由AI持续拆解与验证，管理重点回到O本身”作为Agents时代重审MBO的核心切入点。",
+    "oneLineReview": "有观点火花，但更像未经展开的判断，参考价值有限。",
+    "primaryCategory": "管理方法",
+    "rating": "C",
+    "rejectReason": "观点有启发性，但篇幅短、论证薄弱，缺少案例和数据支撑，更多是趋势判断而非成熟方法。",
+    "retentionDecision": "低优先级留存，短期参考后可删除",
+    "secondaryCategories": [
+      "AI组织变革",
+      "绩效管理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为在Agents时代，传统OKR中难以预先拆解且易引发内耗的KR，可交由AI承担，因此回归更强调目标本身的MBO会更适合未来团队管理，并进一步推演出“一人团队”与组织扁平化趋势。",
+    "tags": [
+      "MBO",
+      "OKR",
+      "Agents",
+      "组织管理",
+      "一人团队"
+    ],
+    "title": "(2) Frank Wang 玉伯: Agents 时代，比 OKR 更好的绩效管理方式，是德鲁克 1954 年提出的 MBO（Management by Objectives）目标管理法",
+    "totalScore": 45.5,
+    "url": "https://x.com/lifesinger/status/2032433389224284614"
+  },
+  "payloadHash": "sha256:e405080f5310854ff28b4ad8d5c5fbe4d3c14627209c65d1a08a03658b4d739f",
+  "refs": {},
+  "revisionId": "sha256:c9550a08ea03fddea15cc337f3ea069630df0b66fbcfd12bad08f2bb4c97784b",
+  "schemaVersion": 1,
+  "updatedAt": 1773829849113
+}

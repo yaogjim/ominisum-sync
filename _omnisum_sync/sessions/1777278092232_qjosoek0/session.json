@@ -1,0 +1,66 @@
+{
+  "createdAt": 1777278092232,
+  "entityType": "session",
+  "id": "1777278092232_qjosoek0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "仅提取与AI产品和SaaS风险相关的观点作为趋势参考。",
+      "如从事软件或AI产品工作，可检查自身产品是否只是大模型外层封装，并评估数据、工作流或物理世界集成壁垒。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777284693530,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "AI冲击SaaS与科技周谈",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Claude Design被视为Anthropic将模型潜在设计能力产品化的案例，可能冲击Figma、Adobe等工具型软件。",
+      "嘉宾提出纯SaaS或模型脚手架型产品面临被基础模型功能释放替代的风险。",
+      "讨论中提到法律研究、商业智能、医疗文档、金融终端、HR系统等领域也可能受到AI原生工具冲击。"
+    ],
+    "oneHighValuePoint": "基础大模型能力释放可能直接侵蚀大量只是在模型外包装界面的垂直SaaS产品。",
+    "oneLineReview": "适合快速了解AI科技圈近期叙事，但不值得精读或长期保存。",
+    "primaryCategory": "人工智能",
+    "rating": "C",
+    "rejectReason": "内容以播客闲聊和科技新闻串联为主，信息较分散，缺少系统论证、数据支撑和可执行方法。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "科技趋势",
+      "商业分析"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "该视频围绕AI与科技热点展开，包括Anthropic推出Claude Design、AI对SaaS和设计工具的冲击、xAI与Grok路线、OpenAI人员流动、太空与能源等话题。整体偏趋势讨论和观点碰撞，启发性有限。",
+    "tags": [
+      "AI",
+      "SaaS",
+      "Anthropic",
+      "Claude",
+      "科技播客"
+    ],
+    "title": "Elon's $60B Cursor Bet, Claude kills SaaS, and OpenAI's Mass Departures | EP #249 - YouTube",
+    "totalScore": 40,
+    "url": "https://www.youtube.com/watch?v=Bj0i-yvIUQs"
+  },
+  "payloadHash": "sha256:3257643afd936eaac0d991ef088e79a3925c2c55c699495e0e6c399e0b110724",
+  "refs": {},
+  "revisionId": "sha256:0f88490a6a0f153565f49e83ee131e68438cdb08d229c76f9bf49bfc128e71e8",
+  "schemaVersion": 1,
+  "updatedAt": 1777284693533
+}

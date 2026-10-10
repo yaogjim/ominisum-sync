@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773830281420,
+  "entityType": "message",
+  "id": "1773830281419_v3vqk3fh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AI原生任务契约验证工具\n\n**评级**: A (71.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI辅助开发\n**次类别**: 软件工程方法论, 开发工具链\n**标签**: #BDD #任务契约 #AI Agent #规范驱动开发 #代码验证\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 9 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 方法论很强、工具链清晰，是AI代理规范驱动开发的高价值实践文档，但证据与实际效果验证仍偏弱。\n**核心高价值点**: 最有价值的是把“任务说明”提升为可验证的Task Contract，使AI编码、边界控制、测试选择与审查标准统一到同一份契约上。\n\n### 摘要\n文章介绍了agent-spec这一面向AI代理执行任务的BDD/规范验证工具，核心是以Task Contract描述意图、决策、边界与完成条件，并通过lint、verify、lifecycle、guard等命令将规范驱动开发、验证和审查流程串联起来。\n\n### 知识要点\n- Task Contract由Intent、Decisions、Boundaries、Completion Criteria四部分构成，可作为AI代理执行的主规划界面。\n- 通过lifecycle与guard把规范质量检查、场景验证、变更边界控制和仓库级校验整合进开发与提交流程。\n- 支持rewrite/parity场景，强调先绑定可观察行为，再让代理实现代码，减少回归和语义漂移。\n\n### 行动项\n- 评估是否可将现有AI编码流程改造成“任务契约+验证”模式，并选一个小任务试点。\n- 提炼适用于自身项目的Contract模板，明确允许修改范围、禁止项和测试选择器规则。\n\n### 存档判定\n归档: 是 — 原因: 提供了较完整的AI原生任务契约、验证流程与CLI使用范式，对AI辅助研发工作流设计有持续参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1773830281420,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:893a9cde35cb586e09dc373642544d1263ecdf30d9e1c0fb68b08268867416eb",
+  "refs": {
+    "sessionId": "1773285139099_ucafjp6v"
+  },
+  "revisionId": "sha256:de144ee9f216725e5fe9c41b5f71daf1523b53e9ca4632e2cbdc7f7a87208e88",
+  "schemaVersion": 1,
+  "updatedAt": 1773830281420
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773729278458,
+  "entityType": "message",
+  "id": "1773729278457_13s3b1yf",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AI智能体工作原理入门\n\n**评级**: C (49.5分)  |  **深度阅读**: 否  |  **建议操作**: 浏览\n\n**主类别**: 人工智能基础\n**次类别**: AI Agent, LLM工具调用\n**标签**: #AI Agents #Tool Calling #Orchestration Loop\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 3 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 一篇讲清基本概念的入门文，但深度、新意和证据支撑都比较弱。\n**核心高价值点**: 明确区分了模型只负责生成工具调用意图，而真正执行工具的是外部 runtime/orchestration loop。\n\n### 摘要\n文章以非技术读者为对象，介绍了 AI Agent 的核心组成，包括工具定义、模型生成工具调用、运行时编排循环、上下文记忆以及真实 API 执行层，适合作为理解智能体基本工作流程的入门材料。\n\n### 知识要点\n- 工具定义通常由名称、描述和参数 schema 构成，并随请求一起传给模型。\n- AI Agent 的核心在于循环式编排：模型决策、工具执行、结果回填、继续推理直到完成。\n\n### 行动项\n- 结合文中流程图式思路，亲自实现一个最小化 tool-calling agent 以验证理解。\n- 进一步阅读更深入的 Agent Runtime、上下文管理和错误恢复机制资料。\n\n### 存档判定\n归档: 否\n不推荐: 内容偏入门科普，缺少深入机制分析、工程细节和实证支撑，整体价值有限。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1773729278458,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:5cb2dff8476fa7c7bdbd3697ea3a344b30f818bcadc802d1a1e05ed00ac43a80",
+  "refs": {
+    "sessionId": "1773729257278_7cqokgw1"
+  },
+  "revisionId": "sha256:3229f3c5f8dbd526b1fb572c16252487cdfb28d619e8ccea3fa541cf5d1c2860",
+  "schemaVersion": 1,
+  "updatedAt": 1773729278458
+}

@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773392894946,
+  "entityType": "message",
+  "id": "summary_template_1773104490445_1773392894946",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "下面从**产品设计**、**技术架构**、**落地实现**三个层面解读这篇《Takeaways on Long-running Autonomous Coding Agents》。\n\n---\n\n# 核心判断\n\n这篇内容的本质不是 “模型更强”，而是：\n\n> **把 Coding Agent 从一个会写代码的助手，升级成一个可持续运转的工程生产系统。**\n\n长期运行的 autonomous coding agent，核心挑战不是生成能力，而是**稳定性、可控性、上下文治理、结果验证**。  \n所以产品上要从 “对话式 AI 工具” 转向 “任务编排系统”；技术上要从 “单 Agent + Prompt” 转向 “多角色 + 工件驱动 + 验证闭环”。\n\n---\n\n# 1. 单 Agent 不可扩展：问题不在模型，在系统设计\n\n## 产品解读\n单个 Agent 做复杂、长周期任务，会出现典型失控：\n\n- 上下",
+    "prompt_id": "template_1773104490445",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-技术开发",
+    "timestamp": 1773392894946,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:93da0bc26fe168bc86ce404d84e032a31233f438e8d6266314a4545db5b451c6",
+  "refs": {
+    "sessionId": "1773372694193_8cuzpijg"
+  },
+  "revisionId": "sha256:5bfde926ecc42c358370153c86854784bed37cb5cc58b44fbacb7f9412558d44",
+  "schemaVersion": 1,
+  "updatedAt": 1773392894946
+}

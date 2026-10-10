@@ -1,0 +1,15 @@
+{
+  "createdAt": 1774867710527,
+  "entityType": "session-content",
+  "id": "1774867710527_xwicd6la",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>AI Builder Club</strong></header><div class=\"tw-body\">1/<br><br>Claude Code 用户：真正有效的 token 节省策略 💰 <br><br>我的 Claude Code token 使用量开始快速攀升，而我的订阅限制不够。<br><br>我构建了一个优化工作流程，将 token 使用量减少了 60%，且没有减慢我的速度。<br><br>以下是核心步骤 👇🧵</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HEkM5F3bYAA3TyS?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@AI Builder Club</strong> <span class=\"tw-eng\">♥ 56 · 💬 3</span><p>5/<br><br>不要直接将原始日志发送到 Claude。<br><br>原始命令输出很容易就会达到数千行。<br><br>原样发送它们，一次对话就可能让你的 token 使用量暴增。<br><br>使用开源工具 RTK（Rust Token Killer），该工具会在过滤和压缩命令输出之前</p></div><div class=\"tw-reply\"><strong>@AI Builder Club</strong> <span class=\"tw-eng\">♥ 41 · 💬 2</span><p>2/<br><br>首先，运行 /context 进行快速自检。<br><br>这个命令确切地告诉你是什么在消耗你的令牌：系统提示、MCP 工具、内存文件。<br><br>第一次运行它时，我发现，在我甚至还没开始编码之前，我的上下文已经丢失了35%。<br><br>主要原因是太</p></div><div class=\"tw-reply\"><strong>@AI Builder Club</strong> <span class=\"tw-eng\">♥ 28 · 💬 1</span><p>3/<br><br>仔细管理你的上下文。<br><br>首先，精简 Claude md 文件。这个文件会被加载到每个会话中。<br><br>在那里添加一条规则：要求模型尽可能简洁地回应，去除不必要的礼貌用语，并减少无效的 token 使用。<br><br>然后是会话管理。Claude</p></div><div class=\"tw-reply\"><strong>@AI Builder Club</strong> <span class=\"tw-eng\">♥ 19 · 💬 2</span><p>4/<br><br>不要过度使用 Opus 和 Ultrathink。<br><br>Ultrathink 和 Opus 功能强大，但如果您过于频繁地让它们保持运行，token 使用量会快速增长。<br><br>很多人默认开启 Ultrathink，因为他们认为更多的思考总是意味着更好的结果。实际上，深度思考是</p></div><div class=\"tw-reply\"><strong>@AI Builder Club</strong> <span class=\"tw-eng\">♥ 10 · 💬 1</span><p>6/<br><br>如果你对这样的 AI 开发工作流感兴趣，加入我们在 <br>@aibuilderclub_<br><br><br>我们分享设置指南、代理实验以及关于使用 AI 进行构建的每周工作坊。</p></div></div>",
+    "pageContent": "AI Builder Club: 1/ Claude Code 用户：真正有效的 token 节省策略 我的 Claude Code token 使用量开始快速攀升，而我的订阅限制不够。 我构建了一个优化工作流程，将 token 使用量减少了 60%，且没有减慢我的速度。 以下是核心步骤\n![图片](https://pbs.twimg.com/media/HEkM5F3bYAA3TyS?format=jpg&name=large)\n---\n热门回复 (共 5 条):\n@AI Builder Club (♥ 56 · 💬 3):\n5/\n\n不要直接将原始日志发送到 Claude。\n\n原始命令输出很容易就会达到数千行。\n\n原样发送它们，一次对话就可能让你的 token 使用量暴增。\n\n使用开源工具 RTK（Rust Token Killer），该工具会在过滤和压缩命令输出之前\n\n@AI Builder Club (♥ 41 · 💬 2):\n2/\n\n首先，运行 /context 进行快速自检。\n\n这个命令确切地告诉你是什么在消耗你的令牌：系统提示、MCP 工具、内存文件。\n\n第一次运行它时，我发现，在我甚至还没开始编码之前，我的上下文已经丢失了35%。\n\n主要原因是太\n\n@AI Builder Club (♥ 28 · 💬 1):\n3/\n\n仔细管理你的上下文。\n\n首先，精简 Claude md 文件。这个文件会被加载到每个会话中。\n\n在那里添加一条规则：要求模型尽可能简洁地回应，去除不必要的礼貌用语，并减少无效的 token 使用。\n\n然后是会话管理。Claude\n\n@AI Builder Club (♥ 19 · 💬 2):\n4/\n\n不要过度使用 Opus 和 Ultrathink。\n\nUltrathink 和 Opus 功能强大，但如果您过于频繁地让它们保持运行，token 使用量会快速增长。\n\n很多人默认开启 Ultrathink，因为他们认为更多的思考总是意味着更好的结果。实际上，深度思考是\n\n@AI Builder Club (♥ 10 · 💬 1):\n6/\n\n如果你对这样的 AI 开发工作流感兴趣，加入我们在 \n@aibuilderclub_\n\n\n我们分享设置指南、代理实验以及关于使用 AI 进行构建的每周工作坊。\n"
+  },
+  "payloadHash": "sha256:d3ac7b8bdd45ecf960491b640b661be8cd36012e83f7d6a3db411626762013d4",
+  "refs": {},
+  "revisionId": "sha256:b7a6aaa75b34ca797504dd79cab3109376c0bdcc58083e4686248a29122969c2",
+  "schemaVersion": 1,
+  "updatedAt": 1774868401428
+}

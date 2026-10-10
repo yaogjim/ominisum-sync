@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773977807001,
+  "entityType": "message",
+  "id": "summary_default_1773977807001",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "精炼总结：文章认为`Skills`不是 AI 时代的低代码翻版，而是面向 Agent 的通用能力封装，核心优势在于可被 Agent 自用与迭代、并有机会形成跨平台流通的标准化生态。\n\n一句话评论：这个观点最有说服力的地方不在 “替代低代码”，而在于`Skills`把 “工具使用者” 和 “工具改进者” 第一次合并成了同一个主体。\n\n一句话高价值内容：判断`Skills`是否成立，关键不要只看当前成功率，而要看它能否形成 “Agent 调用 — 反馈 — 优化 — 复用” 的自进化闭环与可交易生态。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1773977807001,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ed04e8e32f42c603b08c8b4383daeae299d5c0bbade492d9992e88745ee7be8c",
+  "refs": {
+    "sessionId": "1773977789750_y7tdhhfm"
+  },
+  "revisionId": "sha256:6c9c55163dad1be3d0e8e97ccb5d4080f78af25a2f79591f658e109e06def63f",
+  "schemaVersion": 1,
+  "updatedAt": 1773977807001
+}

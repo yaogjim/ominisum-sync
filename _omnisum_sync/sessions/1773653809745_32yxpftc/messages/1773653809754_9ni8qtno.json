@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773653624132,
+  "entityType": "message",
+  "id": "1773653809754_9ni8qtno",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章主要介绍了 `tinyfish-cookbook` 这个开源仓库：它汇集了大量基于 TinyFish Web Agent 的示例项目、自动化方案和工作流，帮助开发者快速学习如何把“网站当成可编程接口”来用。核心重点是：TinyFish 提供了一个能自动操作真实网站并返回结构化 JSON 的 API，同时这个仓库展示了很多实际应用场景。\n\n- **仓库定位：一个 TinyFish 示例与配方合集**\n  - `tinyfish-cookbook` 是一个持续增长的开源示例库，包含 recipes、demo 和 automation。\n  - 每个文件夹基本都是一个独立项目，开发者可以直接查看具体实现，学习如何解决真实业务问题。\n  - 仓库当前有 `79` 次提交，内容还在持续更新，并且“每周都会增加更多 recipes”。\n\n- **TinyFish 的核心能力：把网站变成 API**\n  - TinyFish 主打“给一个网址 + 自然语言目标，就返回干净的 JSON”。\n  - 它屏蔽了传统网页自动化中麻烦的部分，比如：\n    - 无头浏览器配置\n    - 选择器处理\n    - 代理管理\n    - 动态内容抓取\n    - 多步骤表单/筛选/日历流程\n  - 适合同时跨多个网站执行任务，直接把真实网页当作“可编程的数据源”。\n\n- **性能与可信度：强调基准测试和企业级能力**\n  - 文中重点宣传 TinyFish 达到 SOTA（最先进水平）。\n  - 在 `Mind2Web benchmark` 上得分 `90%`。\n  - 对比结果：\n    - 比 Gemini 高 `21` 分\n    - 比 OpenAI 高 `29` 分\n    - 比 Anthropic 高 `34` 分\n  - 还提到他们把 `300` 个任务并行运行，并公开了每一次运行结果，强调透明性。\n  - 同时说明该基础设施已被 Google、Doordash、Classpass 等大企业使用。\n\n- **为什么用 TinyFish：产品卖点**\n  - 一套 API 同时提供：\n    - 全托管浏览器和 Agent 基础设施\n    - 任意网站转 API 的能力\n    - 自然语言输入目标\n    - 真实浏览器自动化\n    - 内置 stealth mode（含轮换代理和隐身配置，且“无额外费用”）\n    - 生产级日志与调试能力\n    - 多种接入方式：HTTP API、可视化 Playground、MCP Server\n  - 通俗理解：开发者不用自己拼装一堆爬虫/自动化工具，直接调用一个服务就能完成复杂网页任务。\n\n- **仓库中的项目示例：覆盖很多真实场景**\n  - 仓库列出了大量实际应用，说明 TinyFish 不只是概念，而是能落地到多个行业场景。\n  - 典型案例包括：\n    - `competitor-analysis`：实时竞品价格情报面板\n    - `fast-qa`：支持并行测试执行和实时浏览器预览的无代码 QA 平台\n    - `lego-hunter`：跨 `15+` 家零售商搜索稀有乐高，并分析价格和库存\n    - `openbox-deals`：聚合 `8` 家零售商的翻新/开箱特价商品\n    - `research-sentry`：扫描 ArXiv、PubMed 等学术来源的语音优先研究助手\n    - `summer-school-finder`：搜索并比较全球大学暑校项目\n    - `viet-bike-scout`：比较越南多个城市的摩托车租赁价格\n  - 这些例子覆盖电商、教育、科研、物流、金融、娱乐、政府招标等多个方向。\n\n- **n8n 工作流：更偏自动化集成**\n  - 除了应用项目，仓库还提供预构建的 `n8n workflows`，导入 JSON 就能用。\n  - 示例包括：\n    - `Competitor Scout`：用 OpenAI 规划 + TinyFish 采集证据，研究竞品功能决策\n    - `Web Research Agent`：抓取任意网站并将摘要报告保存到 Notion\n    - `Daily Product Hunt Tracker`：定时把每日前 `5` 个热门 Product Hunt 产品推送到 Telegram\n  - 这说明 TinyFish 不只适合写应用，也适合接入自动化工作流平台。\n\n- **上手方式：调用简单，不依赖重 SDK**\n  - 文中强调“不需要安装沉重的 SDK”，只用标准 HTTP 请求即可。\n  - 使用流程很简单：\n    - 在 `tinyfish.ai` 注册\n    - 获取 API Key\n    - 调用接口 `https://agent.tinyfish.ai/v1/automation/run-sse`\n  - 示例任务是：访问 `https://agentql.com`，自动找出所有订阅套餐和价格，并以 JSON 返回。\n  - 这说明它的使用门槛较低，适合快速验证想法。\n\n- **社区与贡献：鼓励共建**\n  - 官方欢迎用户把自己基于 TinyFish 做的项目提交到仓库中。\n  - 提供了贡献指南，并邀请用户加入 Discord 提问、交流和展示作品。\n  - 仓库本身被定位为“社区驱动”的分享空间，而不只是官方文档。\n\n- **免责声明：示例可参考，但生产使用需自行验证**\n  - 仓库中的代码、脚本和文档均按 “AS IS” 提供，不保证准确性、可靠性和安全性。\n  - TinyFish 没有义务维护社区贡献内容，也不保证修复 bug 或安全问题。\n  - 用户需要自己评估和测试后再用于生产环境。\n  - 若因使用这些内容导致系统故障、数据丢失或安全问题，TinyFish 不承担责任。\n\n如果你愿意，我还可以进一步把这篇内容压缩成“超短版 5 条总结”，或者整理成“适合汇报/PPT”的版本。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773653624132,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7938d1f6e7ed6001b076e723562fc3bfa249ede27bbda045def30bb84b24fb1f",
+  "refs": {
+    "sessionId": "1773653809745_32yxpftc"
+  },
+  "revisionId": "sha256:60daf73e4565a8f5feb148b69b08295ba9a74b71939edfc55410ce349d455125",
+  "schemaVersion": 1,
+  "updatedAt": 1773653624132
+}

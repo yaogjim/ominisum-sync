@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780615508347,
+  "entityType": "message",
+  "id": "1780615508346_9m3k9keo",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Multica本地开发贡献指南\n\n**评级**: B (58.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 软件开发\n**次类别**: 开源协作, 本地开发环境\n**标签**: #Git worktree #PostgreSQL #Docker #Makefile #开发流程\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 5 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 一份实用但强项目绑定的开发环境与贡献流程文档。\n**核心高价值点**: 通过共享 PostgreSQL 容器、按 worktree 分配独立数据库和端口，实现多分支并行开发隔离。\n\n### 摘要\n本文是 Multica 项目的贡献指南，详细说明本地开发、Git worktree 隔离、多数据库配置、测试、daemon、桌面端调试及重置流程。内容高度面向该项目，操作性强，但通用方法论和长期复用价值有限。\n\n### 知识要点\n- 主 checkout 使用 .env，worktree 使用 .env.worktree，避免误连主数据库。\n- Git worktree 可结合路径哈希生成独立数据库名、后端端口和前端端口。\n- make dev 可自动完成环境检查、依赖安装、数据库启动、迁移和前后端启动。\n- 完整隔离测试可为本地 daemon 创建独立 profile，避免污染生产 CLI 配置。\n\n### 行动项\n- 如参与 Multica 开发，可按 make dev 和 worktree-env 流程搭建本地环境。\n- 在自己的项目中参考其共享基础设施加多数据库隔离的 worktree 开发模式。\n\n### 存档判定\n归档: 否\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1780615508347,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:33cfe63a70bdb8e26b20e11f423b0691eebb609bcdd4bb2db6734c6b37fd20d0",
+  "refs": {
+    "sessionId": "1780533269892_dh787ycy"
+  },
+  "revisionId": "sha256:a8cca8edbd6b3b49d7cc0839aab2f21e048cd3a571ac09e3e8caacbf300916a4",
+  "schemaVersion": 1,
+  "updatedAt": 1780615508347
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780386229660,
+  "entityType": "message",
+  "id": "1780386335058_6ygk4hza",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 从 Prompt 到 Harness：LLM 工程怎么理解？\n\n## 一、总结\n\nLLM 工程大致经历了三阶段：\n\n| 阶段 | 核心问题 | 做法 | 局限 |\n|---|---|---|---|\n| Prompt Engineering | 怎么问模型 | 优化提示词 | 只能处理短任务、单步任务 |\n| Context Engineering | 给模型看什么 | 程序管理上下文、工具反馈、检索信息 | 规则靠人硬编码，模型被动接收 |\n| Harness Engineering | 怎么让 Agent 自主干活且不失控 | 给工具、给反馈、设边界 | 难点变成环境、权限、评估、治理 |\n\n一句话：\n\n> Prompt 是“把话说清楚”；  \n> Context 是“把信息喂对”；  \n> Harness 是“搭一个安全可控的工作场，让 Agent 自己干”。\n\n---\n\n## 二、深入浅出解读\n\n## 1. Prompt Engineering：会提问\n\n早期用 ChatGPT，重点是：\n\n- 怎么写提示词？\n- 要不要加角色？\n- 要不要说“一步步思考”？\n- 要不要给示例？\n\n适合：\n\n- 写邮件\n- 翻译\n- 总结\n- 写一个函数\n\n但问题是：\n\n> 它只适合“一问一答”，不适合复杂任务。\n\n比如让 AI 修 bug，光靠一个 prompt 不够。因为修 bug 过程中会不断出现新信息：日志、测试失败、类型错误、关联代码等。\n\n---\n\n## 2. Context Engineering：会喂信息\n\n后来任务变复杂了，关键变成：\n\n> 模型下一步需要看到什么？\n\n比如 Cursor 不会把整个代码库都塞给模型，而是动态选择相关文件、错误信息、测试结果。\n\n这就是 Context Engineering：\n\n- 上一步结果怎么传给下一步？\n- 测试失败怎么注入上下文？\n- 历史太长怎么压缩？\n- 检索结果放多少？\n\n它解决了多步任务的问题。\n\n但它也有瓶颈：\n\n> 信息流转规则大多是人写死的。\n\n比如程序规定：“LSP 报错就全部塞进去。”  \n但模型可能自己更清楚哪些重要、哪些不重要。\n\n于是问题变成：\n\n> 既然模型变强了，能不能让它自己决定看什么、查什么、跑什么？\n\n---\n\n## 3. Harness Engineering：放手，但上保险\n\nHarness Engineering 的核心是两件事：\n\n### 第一，放手\n\n给 Agent 工具，让它自己用：\n\n- 搜代码\n- 跑测试\n- 跑 lint\n- 查文档\n- 看浏览器报错\n- 调内部工具\n\n不再由程序机械决定它看什么，而是让 Agent 自己判断。\n\n### 第二，上保险\n\n因为 Agent 自主运行后可能失控，所以要设边界：\n\n- 不能访问生产环境\n- 只能改特定文件\n- 最多跑几轮 CI\n- 违反架构测试就失败\n- 沙箱隔离\n- 权限分级\n\n所以 Harness 不是简单“给工具”，而是：\n\n> 给 Agent 一个能自主行动、能获得反馈、但不会乱来的运行环境。\n\n---\n\n## 三、几个案例说明\n\n## Stripe Minions\n\nAgent 每周合并大量 PR。\n\n它可以自己：\n\n- 跑 lint\n- 跑测试\n- 搜代码\n- 查内部文档\n\n但也被限制：\n\n- 只能在隔离环境跑\n- 不能碰生产\n- CI 最多跑两轮\n- 工具权限受控\n\n重点：\n\n> 让 Agent 快速得到反馈，快速自我修正。\n\n---\n\n## Anthropic Agent 实验\n\nAgent 自己做 Web 应用，但暴露问题：\n\n- 一次做太多\n- 没做完就说完成\n- 没测试也说通过\n\n于是加约束：\n\n- 每次只做一个 feature\n- feature 状态用 JSON 管理\n- 必须用浏览器端到端验证\n\n重点：\n\n> 边界不是凭空设计的，而是从失败中总结出来的。\n\n---\n\n## OpenAI Codex 团队\n\n工程师不再主要写代码，而是设计：\n\n- 环境\n- 反馈循环\n- 测试系统\n- 架构约束\n\n一句话：\n\n> Agent 不难，难的是 Harness。\n\n---\n\n## 四、我的意见\n\n我认同文章的主线：\n\n> LLM 工程的重点，正在从“写 prompt”转向“设计系统”。\n\n未来真正有价值的能力不是单纯会写提示词，而是会设计：\n\n- 工具链\n- 权限系统\n- 沙箱环境\n- 自动测试\n- 反馈循环\n- 评估机制\n- 多 Agent 协作规则\n\n但也要注意一点：\n\nHarness Engineering 不是取代 Prompt 和 Context，而是建立在它们之上。\n\n最终形态更像这样：\n\n```text\nPrompt：表达意图\nContext：组织信息\nHarness：设计环境与边界\nEval：判断结果好不好\nGovernance：管理权限与责任\n```\n\n## 最简结论\n\n> Prompt Engineering 让模型“听懂话”；  \n> Context Engineering 让模型“看对信息”；  \n> Harness Engineering 让 Agent“自己干活，但不能乱来”。  \n\nLLM 工程的核心，正在从“调教模型”变成“设计模型工作的世界”。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780386229660,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:17fcb75d3a6f0e33e974811a470ac19925f86e0a3abb777d4569b716ad8c0b52",
+  "refs": {
+    "sessionId": "1779871513987_prufda23"
+  },
+  "revisionId": "sha256:e1d9490bcdb242e0d8dbd361f67ea1095ca34c8de3622ceac4c57fb09643b6ef",
+  "schemaVersion": 1,
+  "updatedAt": 1780386229660
+}

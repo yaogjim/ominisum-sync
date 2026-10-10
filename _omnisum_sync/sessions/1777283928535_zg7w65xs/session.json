@@ -1,0 +1,66 @@
+{
+  "createdAt": 1777283928535,
+  "entityType": "session",
+  "id": "1777283928535_zg7w65xs",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注该主题，应另找AI就业影响的研究报告或数据分析文章",
+      "不建议基于该片段做职业决策"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777284663172,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI裁员与国企下岗类比",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息密度低，证据质量差，可操作性几乎没有，无法形成有效知识积累。",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "国企下岗潮曾部分依靠房地产和加入WTO后的制造业出口吸收劳动力",
+      "AI裁员可能造成部分工程师岗位的结构性消失",
+      "社交媒体观点需要结合数据和产业研究进一步验证"
+    ],
+    "oneHighValuePoint": "AI导致的岗位替代可能不同于历史上的产业转移，未必有足够的新行业承接被挤出的工程师群体。",
+    "oneLineReview": "有一个值得注意的宏观类比，但内容过短且缺乏论证，不值得保留。",
+    "primaryCategory": "AI与就业",
+    "rating": "D",
+    "rejectReason": "内容主要是社交媒体片段，观点未经展开，缺乏数据、案例和完整论证，热门回复多数与主题无关。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "职业风险",
+      "社会观察"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章将国企下岗潮与AI裁员进行类比，认为当年下岗人员被房地产和出口制造业吸收，而AI裁员中的中产工程师可能难以被新产业吸收，只能另谋生路。",
+    "tags": [
+      "AI裁员",
+      "就业冲击",
+      "国企下岗",
+      "中产岗位",
+      "社交媒体观点"
+    ],
+    "title": "Lexi 勒西: 国企下岗跟这次的 AI 裁员，有很多的相似之处",
+    "totalScore": 26.5,
+    "url": "https://x.com/lexi_labs/status/2048645333278933048"
+  },
+  "payloadHash": "sha256:95c4237d19e8763ee55187d1e188ecd1acca07cb7df1f009e76db0e98c627f3e",
+  "refs": {},
+  "revisionId": "sha256:f553cf9b0d5b788f55b5a2b44cbddeba24efa77fab44a59ca8c8c3e4ad24e775",
+  "schemaVersion": 1,
+  "updatedAt": 1777284663176
+}

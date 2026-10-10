@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780450051539,
+  "entityType": "message",
+  "id": "1780450051538_ahzpj8xh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Crabbox测试Pi扩展动态\n\n**评级**: D (32分)  |  **深度阅读**: 否  |  **建议操作**: 删除\n\n**主类别**: 开发工具\n**次类别**: AI编程工具, 跨平台测试\n**标签**: #Crabbox #pi扩展 #Cursor #MCP #跨平台\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 3 | 10% |\n| 新颖性 | 3 | 10% |\n| 相关性 | 4 | 20% |\n| 可操作性 | 3 | 15% |\n| 方法论价值 | 3 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 3 | 10% |\n\n**一句话点评**: 适合了解相关项目动态，但作为知识资料价值较低。\n**核心高价值点**: pi-cursor-sdk 通过保留 Cursor 顶级代理循环并结合 MCP 扩展，可能比通用 OpenAI 兼容端点更适合深度使用 pi 的场景。\n\n### 摘要\n文章是一条关于作者采用 Crabbox 测试和验证 pi 扩展项目跨平台兼容性的推文，提到若干扩展版本及 Crabbox 更新，并简要说明 pi-cursor-sdk 相比通用 Cursor 端点的抽象优势。\n\n### 知识要点\n- Crabbox 可用于跨 Windows、Linux、WSL2 和 macOS 测试 pi 扩展项目。\n- Crabbox 0.13.0 增加模态沙箱运行、原生 Windows 脚本和更清晰的 SSH/同步失败提示。\n- pi-cursor-sdk 强调在 Cursor 代理循环基础上接入 pi 原生扩展、工具、会话和上下文能力。\n\n### 行动项\n- 如正在开发 pi 扩展，可查看 Crabbox 是否适合作为跨平台测试工具。\n- 如主要使用 pi 与 Cursor，可对比 pi-cursor-sdk 与 OpenAI 兼容端点的抽象差异。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是个人项目动态和版本信息，缺少完整背景、操作步骤、案例数据和系统方法论，独立参考价值较低。\n删除: 是\n留存决策: 建议立即删除\n删除原因: 信息碎片化且时效性强，缺乏可复用知识和充分证据，除非正在跟踪该作者项目，否则无长期保留价值。",
+    "role": "assistant",
+    "timestamp": 1780450051539,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:0ea9b81114372098e5ed3da48dc2ecdcfac92d85e278ccba2086e21b2e26a813",
+  "refs": {
+    "sessionId": "1780449269778_gxecm952"
+  },
+  "revisionId": "sha256:4ba552cca11534024a5f695a4ca3ae4be417a821d10498b33914d2abd94daf5b",
+  "schemaVersion": 1,
+  "updatedAt": 1780450051539
+}

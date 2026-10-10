@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776645547747,
+  "entityType": "session",
+  "id": "1776645547747_f66b367x",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你正管理多个 AI 编码会话，可对比测试 Warp、tmux/cmux 和 Ghostty 的多窗口切换效率与稳定性。",
+      "重点验证文中提到的 Git Diff 评论、异步通知和远程控制是否真正改善你的日常工作流。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776646310998,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Warp终端切换体验短评",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Warp 在多项目并行场景中提供左侧窗口列表、Tab 图标识别和右侧 Git Diff 评论能力。",
+      "异步通知与远程控制等功能可降低频繁切换项目时的上下文恢复成本。"
+    ],
+    "oneHighValuePoint": "提出“从主动轮询多个窗口转向等待异步召回”的交互收益，这一点对多项目并行开发有实际启发。",
+    "oneLineReview": "有一些工具使用细节，但整体更像带有推荐倾向的主观安利帖。",
+    "primaryCategory": "工具评测",
+    "rating": "D",
+    "rejectReason": "内容以个人偏好和功能罗列为主，缺乏系统比较、稳定性验证和可复用方法。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "终端工具",
+      "AI开发工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一则关于作者重新切回 Warp 终端的短帖，核心在于称赞其多标签识别、Git Diff 评论、异步通知、移动端遥控和 ClaudeCode 适配等功能，但整体更多是主观体验表达，缺少数据、案例和系统化分析。",
+    "tags": [
+      "Warp",
+      "终端",
+      "Claude Code",
+      "Codex",
+      "工作流优化"
+    ],
+    "title": "吕立青_JimmyLv 2𐃏26: 一天不到，我又切回到 https://t",
+    "totalScore": 32.5,
+    "url": "https://x.com/Jimmy_JingLv/status/2044309817041523193"
+  },
+  "payloadHash": "sha256:1cf5234b861515cc0883e1a595c5350796d103bc00205b0a1e1f8bc139a78e7b",
+  "refs": {},
+  "revisionId": "sha256:218e86b7f2fcbfb8a836d1f0dc2f723a7ce45034f2ae33f36b8a300f2e04b16a",
+  "schemaVersion": 1,
+  "updatedAt": 1776647208319
+}

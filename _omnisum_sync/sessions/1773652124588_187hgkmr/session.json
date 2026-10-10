@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773652124588,
+  "entityType": "session",
+  "id": "1773652124588_187hgkmr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你有终端应用需求，可本地运行项目验证导出代码质量与可维护性。",
+      "对照自己常用的 TUI 框架，重点评估其组件覆盖率、布局精度和主题映射能力。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773829549167,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 7,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "终端界面可视化设计工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "TUI 也可以采用类似 Figma 的可视化编辑方式进行原型设计与布局编排。",
+      "终端界面设计可抽象为组件树、布局引擎、主题系统和多框架导出四个核心能力。"
+    ],
+    "oneHighValuePoint": "支持从可视化编辑直接导出到 Ink、Bubble Tea、Textual、Tview 等多个 TUI 框架，降低跨技术栈原型实现成本。",
+    "oneLineReview": "一个方向有趣、上手友好但信息深度不足的 TUI 设计工具项目页。",
+    "primaryCategory": "开发工具",
+    "rating": "C",
+    "rejectReason": "内容更像项目展示页，偏功能罗列，缺少设计取舍、用户案例和效果验证，深度有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "终端用户界面",
+      "低代码设计工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一款面向 Terminal UI 的可视化设计工具，提供拖拽画布、组件库、主题切换、多框架代码导出与快捷键支持。对想快速搭建 TUI 原型的人有一定参考价值，但主要是 README 级信息，方法论和证据支撑较弱。",
+    "tags": [
+      "TUI",
+      "可视化编辑器",
+      "代码生成",
+      "GitHub项目",
+      "前端工具链"
+    ],
+    "title": "jalonsogo/tui-studio: Visual design tool for building Terminal User Interfaces",
+    "totalScore": 53.5,
+    "url": "https://github.com/jalonsogo/tui-studio"
+  },
+  "payloadHash": "sha256:6b993f963294948e549c5749b40353fcfeafd4073ec58d22f16ba3a57a41971c",
+  "refs": {},
+  "revisionId": "sha256:3ab319bdd1cd76ef3140f2e2b843d7277982c555df48929560bfaab813b25bac",
+  "schemaVersion": 1,
+  "updatedAt": 1773829549170
+}

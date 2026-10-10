@@ -1,0 +1,65 @@
+{
+  "createdAt": 1774227519556,
+  "entityType": "session",
+  "id": "1774227519556_vuy1bc43",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将文中的核心提示词整理为适合自己工作流的 Codex 自定义指令模板",
+      "在实际任务中测试加入“先验证再汇报”要求后，对输出质量和返工率的影响"
+    ],
+    "archiveReason": "内容虽短，但有明确可复用的指令模板，对日常使用 Codex 或类似 Agent 有直接参考价值",
+    "classifiedAt": 1774227532756,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex自定义指令优化建议",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "通过自定义指令约束 AI 的沟通风格，可降低技术表达门槛",
+      "将验证、检查清单和完成标准前置，有助于提升 Agent 交付质量"
+    ],
+    "oneHighValuePoint": "最有价值的是把“先验证再汇报”明确写入自定义指令，能显著改善 AI 产出从草稿式交付到可用成果的转变。",
+    "oneLineReview": "这是一个很实用的提示词模板，但本质上是经验技巧分享，不足以构成高等级方法论内容。",
+    "primaryCategory": "AI工具使用",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，适合作为优化AI助手沟通与交付方式的提示词模板",
+    "secondaryCategories": [
+      "提示词工程",
+      "开发效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章核心是给 Codex 增加一段自定义指令，要求其用非技术化语言汇报结果、先自行验证交付质量、并以完成标准驱动执行。内容偏经验型提示词分享，实操性强，但证据和系统性有限。",
+    "tags": [
+      "Codex",
+      "自定义指令",
+      "提示词",
+      "Agent协作",
+      "结果验证"
+    ],
+    "title": "宝玉: 转译：把下面这段加到你的 Codex 自定义指令里，体验会好太多：",
+    "totalScore": 57.5,
+    "url": "https://x.com/dotey/status/2035590649081196710"
+  },
+  "payloadHash": "sha256:9213d74ecca265f3ffc8c6a672ea5fd437bde053c8f35ca8b410be454ed3f5c7",
+  "refs": {},
+  "revisionId": "sha256:af99e6cbd13552ebc1cc97308f064f97a0f638c3058698c244bc0778b97d6183",
+  "schemaVersion": 1,
+  "updatedAt": 1774235894914
+}

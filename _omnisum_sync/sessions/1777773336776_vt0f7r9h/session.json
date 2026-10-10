@@ -1,0 +1,66 @@
+{
+  "createdAt": 1777773336776,
+  "entityType": "session",
+  "id": "1777773336776_vt0f7r9h",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "关注 Cursor SDK 的实际接口能力、权限模型和集成案例。",
+      "如评估类似方案，应优先用低风险非生产问题进行试点，而不是直接接入关键线上流程。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777773867122,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Cursor SDK嵌入式Agent演示",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Cursor SDK 可被描述为将编程 Agent 能力嵌入外部工具和业务流程的基础设施。",
+      "Share to Agent 模式降低了从问题信号到代码分析之间的操作摩擦。",
+      "自动化处理生产问题需要额外关注权限、审计和人工刹车机制。"
+    ],
+    "oneHighValuePoint": "AI Agent 的入口可能从 IDE 扩展到 Gmail、Slack、Jira 等业务系统，形成“Share to Agent”的低摩擦工作流。",
+    "oneLineReview": "有一定趋势观察价值，但证据薄弱、方法论不足，更适合快速了解而非深度收藏。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容主要是对演示视频的情绪化解读，缺少技术细节、实测数据和可复用方法论，参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "智能体应用",
+      "开发者效率"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了 Cursor SDK 演示中通过 Gmail 将客户问题分享给 Agent，由其自动读取邮件、分析仓库和支付流程并输出报告的场景，强调 AI Agent 可嵌入 SaaS 工作流，但整体偏宣传化。",
+    "tags": [
+      "Cursor SDK",
+      "AI Agent",
+      "数字员工",
+      "开发流程自动化",
+      "Share to Agent"
+    ],
+    "title": "阿绎 AYi: 我刚才看完这个Cursor SDK的演示被惊艳到了🤨🤨🤩🤩 这可不是啥炫技的demo 啊兄弟们， 视频演示的是 AI数字员工正式上岗的第一天， 客户发了…",
+    "totalScore": 45,
+    "url": "https://x.com/AYi_AInotes/status/2050024653549412695"
+  },
+  "payloadHash": "sha256:d655c649cf98c1a388d47be50d41f1b230f51e14854338c0e60e3fda27128433",
+  "refs": {},
+  "revisionId": "sha256:ee6ed1a6509452d9defdfa936b92b3044953e73cb8aaae7cf7a9fb2944f09e6c",
+  "schemaVersion": 1,
+  "updatedAt": 1777774703192
+}

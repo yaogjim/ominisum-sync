@@ -1,0 +1,115 @@
+{
+  "createdAt": 1778220356117,
+  "entityType": "session",
+  "id": "1778220356117_p0pcmhf6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择Nanobot或类似轻量Agent项目，先用Claude Code完成本地安装和最小运行。",
+      "为项目建立CLAUDE.md、docs/spec.md、docs/prompt_plan.md和docs/todo.md四类上下文文件。",
+      "接入一个真实聊天通道，如飞书、Telegram或WhatsApp，让Agent进入日常使用场景。",
+      "新增功能前先让AI追问需求边界并生成spec，再拆成5到10个可测试小步骤。",
+      "为每个新增能力补充pytest测试，外部接口使用Mock，避免真实请求。"
+    ],
+    "archiveReason": "文章提供了较完整的个人Agent搭建路径、项目脚手架、需求澄清、测试和多模型评审流程，具备较强复用价值。",
+    "byline": "Xudong Han",
+    "classifiedAt": 1780615917788,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "个人Agent自建工作流实战",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HHmGrS8WkAU4DzM?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HHmGrS8WkAU4DzM?format=jpg&name=medium",
+        "width": 1200
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 356,
+        "id": "img-5",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HHlspAhXsAEkAHe?format=png&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HHlspAhXsAEkAHe?format=png&name=medium",
+        "width": 1200
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 515,
+        "id": "img-6",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HHnEnzxW8AM9dA8?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HHnEnzxW8AM9dA8?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "选择轻量Agent基座时应关注代码规模、Agent loop可读性、聊天通道扩展和多模型Provider支持。",
+      "CLAUDE.md适合存放项目非显然信息、测试规则和个人偏好，不应替代linter等确定性工具。",
+      "通过explore → plan → code → commit流程，可先澄清需求边界，再进入编码，减少返工。",
+      "每新增功能都应配套pytest测试，并覆盖正常、空输入和异常场景。",
+      "借鉴其他开源Agent设计时应区分思想级、模块级和文件级复用，避免整套依赖搬运。"
+    ],
+    "oneHighValuePoint": "先用CLAUDE.md、docs/spec.md、prompt_plan.md和todo.md建立跨会话上下文，再让AI从模糊需求逼问出可执行spec。",
+    "oneLineReview": "这是一篇偏实战的个人Agent搭建方法论，虽证据主要来自个人经验，但可操作性和工作流价值较高。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI编程工作流",
+      "个人知识系统",
+      "开源项目实践"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章复盘作者用Claude Code、Nanobot和飞书在15天内搭建个人Agent的流程，涵盖选型、安装、项目说明文件、spec拆解、测试体系、借鉴开源设计及Codex评审等实践方法。",
+    "tags": [
+      "Agent",
+      "Claude Code",
+      "Vibe Coding",
+      "Nanobot",
+      "飞书机器人",
+      "测试驱动",
+      "Spec工作流"
+    ],
+    "title": "2026年个人Agent自建实战：我用Vibe Coding + 借开源轮子，15天搭出每天都在用的工作系统（方法篇）",
+    "totalScore": 80,
+    "url": "https://x.com/Xudong07452910/status/2051891753821556976"
+  },
+  "payloadHash": "sha256:b4066f155f7358684f53ead578c70d72a673e9933a70eed3ead9d67a92aa5169",
+  "refs": {},
+  "revisionId": "sha256:d58eebd6bb578ba59cc7e3e3933a4f3ef18223001b44202db824ecd7c4eb0f09",
+  "schemaVersion": 1,
+  "updatedAt": 1780615919981
+}

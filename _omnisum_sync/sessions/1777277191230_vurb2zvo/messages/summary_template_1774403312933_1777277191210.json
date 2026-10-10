@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777277191210,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1777277191210",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Claude 托管代理中的 “记忆”：让 Agent 学会自我积累经验\n\n## 核心观点\n\nClaude Managed Agents 现在支持**跨会话记忆**：记忆以文件形式存储，可在不同会话中持续访问，也可通过 API 导出。  \n这意味着 Agent 不再只是依赖单次对话上下文，而是可以像人一样把经验沉淀下来，用于后续任务。\n\n---\n\n## 记忆机制：用 “文件系统” 而不是黑盒记忆\n\nClaude 的记忆被设计成一组可持久化的文本文档，挂载在工作区目录中：\n\n```bash\n/mnt/memory/<store-name>/\n```\n\nClaude 可以像操作普通文件一样读写、组织这些记忆。平台负责让这些文件跨会话保存，并在多个 Agent 之间实时同步。\n\n这种设计的关键是：**记忆不是隐藏在模型内部，而是外显为文件**，因此更容易理解、调试、共享和导出。\n\n---\n\n## 宝可梦案例：模型越强，越会 “管理记忆”\n\n早期模型 Sonnet 3.5 在玩 Pokémon 时，虽然也能写记忆文件，但更多是在记录无关对话或事实。例如它会记下 Caterpie 和 Weedle 的区别，却无法提炼真正影响游戏推进的策略。\n\n结果是：跑了 14,000 步，生成了 31 个文件，但仍卡在第二个城镇。\n\n而更强的 Opus 4.6 则表现出明显进步：它会把记忆组织到目录中，并总结真正有用的经验，例如：\n\n- 遇到 Bellsprout 要快速击败，避免被 Sleep + Wrap 控制\n- 一代宝可梦背包上限是 20 个物品\n- 旋转地砖迷宫需要尝试不同入口\n- 某些墙体已确认不可通行\n\n这说明更强的模型不仅会 “存储信息”，还会学习**什么值得记、如何组织、何时复用**。\n\n---\n\n## 产品意义：通用工具可能优于专用记忆模块\n\n文章强调一个趋势：与其为 Agent 设计复杂的专用记忆系统，不如给它通用工具，让它自己管理上下文和记忆。\n\n文件系统就是一个典型例子：\n\n- 简单通用\n- 可读可改\n- 支持目录结构\n- 可共享、可导出\n- 容易被人类审计\n\n这与一些研究方向一致，例如 CoALA、memGPT 等，它们都在探索如何借鉴认知科学和操作系统机制，构建智能体长期记忆。\n\n---\n\n## 协作能力：多个 Agent 可共享同一记忆库\n\nClaude Managed Agents 支持多个 Agent 挂载同一个 memory store。  \n如果一个 Agent 修改了记忆，其他 Agent 可以实时看到更新。\n\n平台还会处理并发冲突，避免一个 Agent 覆盖另一个 Agent 的修改。\n\n这为多 Agent 协作提供了基础：不同 Agent 可以围绕同一个长期知识库持续工作，而不是每次从零开始。\n\n---\n\n## 可观测性：记忆可以导出和分析\n\n文件形式的记忆还有一个重要优势：**可解释、可导出、可复盘**。\n\n开发者可以通过 API 拉取完整记忆内容：\n\n```python\nclient.beta.memory_stores.memories.list (store_id, view=\"full\")\n```\n\n这让团队能够分析 Agent 到底学到了什么、记住了什么、是否记错了、是否需要人工干预。\n\n---\n\n## 本质变化：从 “会话智能” 走向 “持续智能”\n\n过去的 Agent 很大程度上依赖单次上下文窗口，容易出现：\n\n- 任务中断后丢失状态\n- 需要重复输入背景信息\n- 无法长期积累经验\n- 难以形成稳定偏好和策略\n\n有了持久记忆后，Agent 可以把会话日志中的重要内容转化为长期文件，逐步形成自己的工作记录、经验库和任务上下文。\n\n这使 Agent 从 “高级脚本” 更接近真正的自主系统。\n\n---\n\n## 一句话总结\n\nClaude Managed Agents 的记忆功能，本质上是把长期上下文做成可读写、可共享、可导出的文件系统，让 Agent 能够跨会话积累经验，并逐步学会管理自己的知识与行为。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1777277191210,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0be14d1c7077c53cd99dc4313471bc7dec7fc6cb638029430736af5f7574e4f1",
+  "refs": {
+    "sessionId": "1777277191230_vurb2zvo"
+  },
+  "revisionId": "sha256:82af90acfed9eae52c119e2f3310a2e04e3a52f685f20228c9d66d5325bdbd65",
+  "schemaVersion": 1,
+  "updatedAt": 1777277191210
+}

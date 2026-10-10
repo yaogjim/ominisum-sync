@@ -1,0 +1,69 @@
+{
+  "createdAt": 1777960656768,
+  "entityType": "session",
+  "id": "1777960656768_4h594f8a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如长期使用Codex，可安装或参考 keep-codex-fast 进行一次只读状态检查",
+      "为重要项目建立 docs/codex-handoffs 目录并保存会话handoff文档",
+      "在执行任何Codex状态维护前，先备份并确认Codex已关闭",
+      "设置每周或双周提醒，仅运行报告，不自动执行变更"
+    ],
+    "archiveReason": "提供了较清晰的Codex维护流程、备份优先原则和可直接复用的提示词",
+    "classifiedAt": 1777960809514,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Codex本地状态安全维护方案",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Codex长期使用后，本地聊天、日志、worktree、项目引用等状态可能造成性能拖累",
+      "安全维护流程应先检查、再生成handoff、备份、归档，避免直接删除或自动变更",
+      "handoff文档应包含目标、变更、相关文件、已运行命令、错误、开放决策和下一步",
+      "定期维护应以提醒和报告为主，不应自动执行归档、删除、移动或清理操作"
+    ],
+    "oneHighValuePoint": "在归档旧聊天前先生成handoff文档和重启提示词，以保留上下文并提升新会话速度。",
+    "oneLineReview": "实用性较强的Codex本地维护README，但证据和案例支撑不足。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合在长期使用Codex且本地状态膨胀时查阅",
+    "secondaryCategories": [
+      "开发环境维护",
+      "工作流管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个名为 keep-codex-fast 的 Codex skill，用于以只读检查、先备份、先生成handoff文档、归档而非删除的方式维护本地Codex状态，减少聊天、日志、worktree等历史积累带来的性能拖累。",
+    "tags": [
+      "Codex",
+      "本地状态清理",
+      "备份优先",
+      "handoff文档",
+      "开发效率"
+    ],
+    "title": "vibeforge1111/keep-codex-fast: A backup-first Codex skill for keeping local Codex state fast, clean, and recoverable.",
+    "totalScore": 62.5,
+    "url": "https://github.com/vibeforge1111/keep-codex-fast"
+  },
+  "payloadHash": "sha256:69f84e235accf0997d30926da2b97e3493751f90479dadd6d8c129102af7bdc6",
+  "refs": {},
+  "revisionId": "sha256:f11ebc9b0a38edd4637083950b6cc1ccb39f75875b67be005fc070c28f66b9a7",
+  "schemaVersion": 1,
+  "updatedAt": 1777965317362
+}

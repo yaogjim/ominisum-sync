@@ -1,0 +1,67 @@
+{
+  "createdAt": 1775819809566,
+  "entityType": "session",
+  "id": "1775819809566_vsjo8c8x",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "仅将其作为抓取思路索引，逐个平台补查可复现的官方或社区文档",
+      "在实际使用前验证接口稳定性、合规性和是否存在失效风险"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1775820248138,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "多平台内容抓取方法汇总",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "静态镜像页面配合爬虫工具可用于抓取 X 推文和长文内容",
+      "公众号文章可通过对原始链接做 URL 编码后调用第三方接口转为 Markdown",
+      "小红书页面可从 meta 和 window.INITIAL_STATE 中提取结构化笔记数据",
+      "抖音内容可通过无头浏览器监听页面网络响应并提取 aweme/detail 返回的 JSON"
+    ],
+    "oneHighValuePoint": "通过无头浏览器直接执行页面 JS 并拦截目标 API 响应，可绕过手工处理部分动态签名参数。",
+    "oneLineReview": "有一些可快速借鉴的抓取线索，但更像零散经验贴，离可靠方法文档还有明显距离。",
+    "primaryCategory": "内容抓取与自动化",
+    "rating": "C",
+    "rejectReason": "内容偏工具清单式罗列，缺少完整步骤、稳定性说明、合规边界和验证案例，实操参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "社交媒体数据采集",
+      "AI工具工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章汇总了用 Claude Code 或 Openclaw 抓取 X、公众号、小红书、即刻、抖音等平台内容的若干思路，核心是借助第三方接口、页面解析和无头浏览器拦截响应来获取正文、图片或视频直链，但论证较弱且细节不完整。",
+    "tags": [
+      "Claude Code",
+      "Openclaw",
+      "网页抓取",
+      "社交平台",
+      "自动化"
+    ],
+    "title": "逸尘: 汇总用Claude Code或者Openclaw抓取各平台文章、图片、视频方法：所有都不需要自己的token，我都采用了最安全的方式",
+    "totalScore": 46.5,
+    "url": "https://x.com/gengdaJ/status/2041518062533566791"
+  },
+  "payloadHash": "sha256:80f37af5261025061605337f2510417a3c81a8b9ead6076c418d30b830f95a39",
+  "refs": {},
+  "revisionId": "sha256:ce5fae00db042b143e2ac201f56c16226e842cfc94970599f25bd6e9e59c220c",
+  "schemaVersion": 1,
+  "updatedAt": 1775820248139
+}

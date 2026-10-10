@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776830771117,
+  "entityType": "session",
+  "id": "1776830771117_grohwh1i",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若你关注安全工程，可仅提炼其中关于客户端信任边界和状态原子性的防御启示，避免保留原文。",
+      "将相关概念替换为更可靠的学习材料，如支付系统设计、订阅校验和业务逻辑漏洞防护案例。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776830913736,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 3,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 4,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "订阅漏洞复盘与变现反思",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "低证据质量、强灰产倾向、可复用价值有限，且可能带来错误认知与合规风险。",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "订阅系统若将付款人与应用账号绑定关系交给客户端传递，容易产生业务逻辑漏洞。",
+      "异步状态变更若缺乏原子性与幂等控制，可能出现典型 TOCTOU 问题。"
+    ],
+    "oneHighValuePoint": "反复指出“不要信任客户端、收据与设备”的核心安全原则，提醒订阅系统必须建立服务端强校验与原子化状态管理。",
+    "oneLineReview": "有少量安全直觉可取，但整体更像灰产复盘与招募帖，不适合作为高质量知识留存。",
+    "primaryCategory": "网络安全",
+    "rating": "D",
+    "rejectReason": "内容以个人经历和推断为主，证据薄弱，夹杂明显灰产变现导向，方法论提炼不足且不适合作为正规学习材料。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "业务逻辑漏洞",
+      "黑灰产观察"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章以个人复盘方式讲述 ChatGPT 订阅相关业务逻辑漏洞的发现思路，并延伸到分发、团队和后续变现计划。虽提到客户端信任、收据校验与 TOCTOU 等概念，但论证主要依赖叙述，缺少可验证证据。",
+    "tags": [
+      "订阅系统",
+      "RevenueCat",
+      "客户端信任",
+      "TOCTOU",
+      "社交媒体长帖"
+    ],
+    "title": "Chatgpt复盘，和接下来想做的事",
+    "totalScore": 39,
+    "url": "https://x.com/xkajon/status/2046731979039944948"
+  },
+  "payloadHash": "sha256:e606372a34682aabeaeee4cf8b3d8be262eeebc4254baca1ebc353f0463bf7ec",
+  "refs": {},
+  "revisionId": "sha256:e93cdd73c3b269967e7597f0999873f5396ea87bfac6984d6c06903d3f45379f",
+  "schemaVersion": 1,
+  "updatedAt": 1776830913741
+}

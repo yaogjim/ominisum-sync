@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780372080848,
+  "entityType": "message",
+  "id": "1780372228933_teoftdq5",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章精炼总结\n\n作者分享了自己从 **OpenClaw 托管服务迁移到 FastClaw** 的经历：通过架构优化，将服务器数量从 **18 台降到 3 台**，运营成本降至原来的 **1/6**，显著改善了盈利空间。\n\n## 1. OpenClaw 托管服务的初始架构与成本\n\n- 作者年初开始做 **OpenClaw 托管服务**。\n- 在一套 **Kubernetes 集群**中部署了 **500 个 Pod**。\n- 每个 Pod 限制 **4GB 运行内存**。\n- 日常需要维持 **18 台 4 核 16GB 的服务器**作为节点池。\n- 每月服务器成本接近 **5000 美元**。\n\n**结果：**  \n虽然几个月后托管服务的 **MRR（月经常性收入）突破 8000 美元**，但扣除运营成本后，实际利润非常低。\n\n## 2. 迁移到 FastClaw 后的变化\n\n作者将服务迁移到了 **FastClaw**，核心变化是采用了 **存算分离架构**。\n\n- Agent 不再需要长期常驻运行。\n- 只有在收到请求时，才会动态挂载 sandbox 来提供服务。\n- 服务器数量从 **18 台减少到 3 台**。\n- 运营成本降至原来的 **1/6**。\n\n**效果：**  \n由于成本大幅下降，作者认为下个月服务有机会真正开始赚钱。\n\n## 3. FastClaw 相比 OpenClaw 的优势\n\n作者认为 FastClaw 比 OpenClaw 更轻量，主要体现在：\n\n1. **代码体积更小**  \n   - FastClaw 代码体积约为 OpenClaw 的 **1/40**。\n\n2. **资源占用更低**  \n   - 运行资源占用约为 OpenClaw 的 **1/7**。\n\n3. **部署更简单**  \n   - FastClaw 支持 **单二进制分发**，没有额外环境依赖。\n\n4. **启动速度更快**  \n   - OpenClaw 的 gateway 启动大约需要 **15 秒**。\n   - FastClaw 可以做到 **秒级启动**。\n\n## 4. FastClaw 的定位与适用场景\n\n- FastClaw 是一个面向 **云原生多租户场景**设计的 Agent 运行框架。\n- 同时也适用于 **本地运行场景**。\n- 作者表示会继续完善该项目，并欢迎大家体验。\n\n项目地址：  \n[https://github.com/fastclaw-ai/fastclaw](https://github.com/fastclaw-ai/fastclaw)",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780372080848,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:097e99662e7061e129266e2fed65b9f0112307a12b796e4c908aaf84a026ef6b",
+  "refs": {
+    "sessionId": "1780371026970_9xibjrp4"
+  },
+  "revisionId": "sha256:a363a3f44676d99fc378a2f32488316797bdc16c8155a2115be58f906cfe92b0",
+  "schemaVersion": 1,
+  "updatedAt": 1780372080848
+}

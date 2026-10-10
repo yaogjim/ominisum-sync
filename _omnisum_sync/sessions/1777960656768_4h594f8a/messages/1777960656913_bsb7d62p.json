@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777960596648,
+  "entityType": "message",
+  "id": "1777960656913_bsb7d62p",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# keep-codex-fast：让 Codex 本地状态保持轻快、干净、可恢复\n\n## 一句话总结\n\n这是一个面向 Codex 的“安全维护技能”：先备份、先交接、只归档不删除，帮助长期使用 Codex 后清理本地状态，降低卡顿，同时尽量不丢上下文。\n\n## 它解决什么问题\n\n长期使用 Codex 后，本地会积累大量内容：\n\n- 长聊天记录\n- 终端与日志\n- 多仓库项目历史\n- worktree\n- 旧线程和配置引用\n- 大量 Node / dev server 进程信息\n\n这些内容可能让 Codex 变慢、变重。`keep-codex-fast` 的目标是帮你看清楚本地状态，并用低风险方式做维护。\n\n## 核心原则\n\n## 1. 先交接，再归档\n\n在归档旧聊天前，先为重要项目生成 handoff 文档，记录：\n\n- 当前目标\n- 已完成内容\n- 修改过或关注过的文件\n- 跑过的命令和测试\n- 已知问题\n- 待决策事项\n- 下一步行动\n- 可粘贴到新 Codex 会话的恢复提示词\n\n这样可以用新线程继续工作，而不依赖臃肿的旧上下文。\n\n## 2. 归档，不删除\n\n工具默认不会永久删除聊天、日志或 worktree，而是移动到归档目录，并在操作前生成备份和恢复信息。\n\n## 3. 默认只读，手动确认后才修改\n\n默认运行只做检查和报告，不会写文件、移动目录或修改本地 Codex 状态。只有明确使用 `--apply` 或要求 Codex 执行维护时，才会变更。\n\n## 主要能力\n\n它可以帮助 Codex：\n\n- 检查哪些本地状态变大了\n- 为旧会话创建交接文档\n- 备份重要状态\n- 归档旧聊天\n- 移动过期 worktree\n- 轮转大日志\n- 清理无效项目配置引用\n- 报告占用较重的 Node / 开发进程，但不会杀进程\n- 处理 Windows 路径不一致等本地状态问题\n\n## 推荐使用方式\n\n## 初次检查\n\n安装后让 Codex 执行：\n\n```text\nUse $keep-codex-fast to inspect my Codex local state and recommend a safe maintenance plan.\n```\n\n它会先展示当前状态和建议，再由你决定哪些保留、哪些归档。\n\n## 安全维护\n\n在重要会话已有 handoff 文档后，再执行安全维护：\n\n```text\nUse $keep-codex-fast to apply safe Codex maintenance.\n```\n\n维护前应确认：\n\n- 重要会话已有 handoff，或确定不需要\n- Codex 已关闭\n- 先备份，再归档\n- 不做自动删除\n\n## 定期维护\n\n作者建议设置“提醒”，而不是自动执行清理。\n\n原因是：自动化无法判断哪些聊天对你仍然重要，也无法知道你是否已完成 handoff。\n\n适合的节奏：\n\n- 高频使用 Codex：每周提醒\n- 普通使用：每两周提醒\n\n提醒只应生成报告，不应自动执行归档、移动、删除或修改。\n\n## 命令行用法\n\n## 只读报告\n\n```bash\npython scripts/keep_codex_fast.py\n```\n\n## 查看详细信息\n\n```bash\npython scripts/keep_codex_fast.py --details\n```\n\n## 仅备份，不修改\n\n```bash\npython scripts/keep_codex_fast.py --backup-only\n```\n\n## 执行归档和维护\n\n```bash\npython scripts/keep_codex_fast.py --apply --archive-older-than-days 10 --worktree-older-than-days 7\n```\n\n## 等 Codex 退出后再维护\n\n```bash\npython scripts/keep_codex_fast.py --apply --wait-for-codex-exit\n```\n\n## 产品价值\n\n## 对重度用户\n\n它降低了长期使用 Codex 后的维护成本，让“清理上下文”不再可怕。\n\n## 对多项目开发者\n\n通过 handoff 文档，把聊天上下文沉淀到项目里，方便未来恢复。\n\n## 对安全性敏感用户\n\n默认只读、先备份、只归档不删除，整体风险较低。\n\n## 核心心智模型\n\n> 聊天用于执行。  \n> Handoff 文档用于记忆。  \n> 归档用于保存历史。  \n> 新线程用于保持速度。\n\n## 总结\n\n`keep-codex-fast` 本质上是一个“Codex 本地状态维护工具”。它不追求激进清理，而是强调安全、可恢复、可持续：先看清楚状态，再写交接文档，最后通过备份和归档减少本地负担，让 Codex 长期保持轻快。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777960596648,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b66019089890d8551a5112a60143d6486ba1edb7f6fa24f6f58df26c2cea7d2b",
+  "refs": {
+    "sessionId": "1777960656768_4h594f8a"
+  },
+  "revisionId": "sha256:3c48c73134f4734384f50aca74467e428ea76bb925f1dc9ca0ebf894bae28112",
+  "schemaVersion": 1,
+  "updatedAt": 1777960596648
+}

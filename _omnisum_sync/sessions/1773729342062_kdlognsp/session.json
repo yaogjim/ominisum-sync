@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773729342062,
+  "entityType": "session",
+  "id": "1773729342062_kdlognsp",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估是否将 DAG 摘要和原文可展开机制引入自己的 Agent 上下文管理方案",
+      "重点查看其 compaction、retrieval 和 summary store 设计以提炼可复用实现模式"
+    ],
+    "archiveReason": "包含较完整的插件能力说明、配置参数和架构线索，可作为后续实现同类系统时的参考资料",
+    "classifiedAt": 1773729363937,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 5,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "OpenClaw无损上下文插件",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "长对话上下文可通过原始消息持久化加分层摘要节点组合来控制 token 成本",
+      "检索工具与摘要图结合，可以在压缩历史后仍支持按需回溯细节"
+    ],
+    "oneHighValuePoint": "用 DAG 式分层摘要替代传统截断式上下文压缩，并保留原始消息可追溯与可展开能力。",
+    "oneLineReview": "思路有启发、工程说明较全，但更像产品文档而非经过验证的深度方法论文章。",
+    "primaryCategory": "AI工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后归档，适合作为长上下文代理设计的实现样例保留",
+    "secondaryCategories": [
+      "上下文管理",
+      "开发工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章本质上是项目 README，介绍了 OpenClaw 的无损上下文管理插件，通过 SQLite 持久化、分层摘要和 DAG 结构替代滑动窗口截断，并提供安装、配置、工具能力与项目结构说明。",
+    "tags": [
+      "OpenClaw",
+      "LLM上下文压缩",
+      "DAG摘要",
+      "SQLite",
+      "插件架构"
+    ],
+    "title": "Martian-Engineering/lossless-claw: Lossless Claw — LCM (Lossless Context Management) plugin for OpenClaw",
+    "totalScore": 59,
+    "url": "https://github.com/martian-engineering/lossless-claw"
+  },
+  "payloadHash": "sha256:4ae61e243a3308a53b8bada212b5c71ff9b27666a6cb5b8d35a827e546ce884d",
+  "refs": {},
+  "revisionId": "sha256:688f5fa9058ec289e7e27eb71abe61522abe2861ae1de670201caf141aa0eef2",
+  "schemaVersion": 1,
+  "updatedAt": 1773729866399
+}

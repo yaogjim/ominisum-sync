@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773884986470,
+  "entityType": "session",
+  "id": "1773884986470_s2iisrzj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "借鉴文中方法，对关键 Go 二进制进行 strings、objdump、符号表级分析，建立自己的逆向检查流程",
+      "持续跟踪 Anthropic、Vercel、Replit 等在 AI 原生开发闭环上的产品演进，更新竞品认知"
+    ],
+    "archiveReason": "包含对 Claude Code 运行环境、内部部署形态与产品战略的高信息量拆解，对理解 AI coding 产品演进有持续参考价值。",
+    "classifiedAt": 1773918270633,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "逆向Claude运行环境揭秘",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Claude Code 运行在 Firecracker MicroVM 中，环境极简且由自研 process_api 充当 init 与网关",
+      "未 strip 的 Go 二进制可通过符号表、字符串和 objdump 还原内部包结构与关键能力",
+      "Anthropic 可能存在内部 PaaS 平台 Antspace，以及面向网页应用生成的 Baku 环境",
+      "environment-runner 支持 anthropic 托管与 BYOC 两类环境，暗示企业私有云部署能力"
+    ],
+    "oneHighValuePoint": "最有价值的是从 environment-runner 二进制中挖出 Antspace、Baku、BYOC 三条线索，并据此拼出 Anthropic 从模型到部署平台的闭环布局。",
+    "oneLineReview": "一篇信息密度很高的逆向拆解，产品战略判断有启发，但证据链仍主要依赖静态分析推断。",
+    "primaryCategory": "AI基础设施与产品战略",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "逆向工程",
+      "开发工具生态"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章通过对 Claude Code 虚拟机内未剥离的 Go 二进制进行静态分析与运行追踪，推断出 Anthropic 的内部平台组件、部署模式与产品闭环方向，并提出其正从编码助手走向 AI 原生 PaaS 的判断。",
+    "tags": [
+      "Claude Code",
+      "Anthropic",
+      "Firecracker",
+      "PaaS",
+      "逆向分析",
+      "AI编程"
+    ],
+    "title": "AprilNEA: 在 Claude Code 的虚拟机里，我们发现了什么 起点 我们对 Claude Code 运行环境做了一次完整的逆向工程",
+    "totalScore": 71.5,
+    "url": "https://x.com/AprilNEA/status/2034216942924624054"
+  },
+  "payloadHash": "sha256:8a069cbbc6a7293bb5794da6de1c087ba33ebc4db018ef508ed12fa191cc5490",
+  "refs": {},
+  "revisionId": "sha256:b6f9fecb543864758a6fadf5e3466115b3521adf195805c9a1b7bfb09000b0bd",
+  "schemaVersion": 1,
+  "updatedAt": 1773918270637
+}

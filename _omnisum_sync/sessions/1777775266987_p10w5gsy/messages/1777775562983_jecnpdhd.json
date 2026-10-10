@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777775562984,
+  "entityType": "message",
+  "id": "1777775562983_jecnpdhd",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AI包工头岗位与技能\n\n**评级**: B (56分)  |  **深度阅读**: 否  |  **建议操作**: 浏览\n\n**主类别**: AI工作流\n**次类别**: 职业发展, Agent应用\n**标签**: #AI Agent #Agent Operator #Claude Code #工作流 #AI协作\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 概念有启发，实践方向明确，但论证较弱，更适合作为趋势提醒而非系统方法论。\n**核心高价值点**: 把高频工作流沉淀为可复用的skill，是进入Agent协作实践的低门槛切入点。\n\n### 摘要\n文章提出“AI包工头/Agent Operator”这一岗位概念，强调通过MCP、CLI、skills.md、AGENTS.md和业务嗅觉编排AI Agent完成工作，并建议从高频工作流沉淀为skill开始实践。\n\n### 知识要点\n- Agent Operator的核心能力包括工具编排、规则沉淀、流程拆解和业务判断。\n- AI犯错记录可以转化为规则文档或检测脚本，形成自动化质量门禁。\n- 普通人使用Agent应先练习拆需求、找工具、人审结果三项基础能力。\n\n### 行动项\n- 挑选一个最高频工作流，尝试写成一个skill或标准操作流程。\n- 整理AI在工作中反复犯的错误，沉淀为规则文档或提交前检查脚本。\n\n### 存档判定\n归档: 否\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1777775562984,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:6ab1cb4dd8863e98e05f2e9c5aeccdd127c8e9ab2d6446f8e13d80a5646f82fe",
+  "refs": {
+    "sessionId": "1777775266987_p10w5gsy"
+  },
+  "revisionId": "sha256:5e96f3b17edc462c75ed7d7ef00d97126b490d4237ccde3b50d9c3dd2642a567",
+  "schemaVersion": 1,
+  "updatedAt": 1777775562984
+}

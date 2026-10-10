@@ -1,0 +1,23 @@
+{
+  "createdAt": 1777627759543,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1777627759543",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Claude Code Skills 生态盘点：从个人脚本到标准化组件市场\n\n## 核心结论\n\nClaude Code 的社区 Skills 生态已经超出 “小众插件” 范畴，正在演化为一个跨 AI 编程工具的标准化组件市场。\n\n关键变化是：Anthropic 推出了开放标准**Agent Skills**。未来一个`SKILL.md`不只服务 Claude Code，也可以运行在 GitHub Copilot、Cursor、Gemini CLI、OpenAI Codex、JetBrains Junie 等工具中。\n\n这意味着 Skill 正在从 “某个工具的附属能力”，变成可复用、可分发、可交易的独立生产力资产。\n\n---\n\n## 生态规模：已经形成市场雏形\n\n目前最大的社区市场**ClawHub**已有：\n\n- **52,700+ 工具**\n- **18 万用户**\n- **1200 万次下载**\n- **35+ 主流 AI 工具采纳 Agent Skills 标准**\n\n这说明 Claude Code Skills 不再只是开发者自娱自乐的脚本集合，而是具备了平台生态的雏形。\n\n---\n\n## 质量问题：生态繁荣但鱼龙混杂\n\n社区有人审查了 ClawHub 上**13,729 个 Skill**，最终只保留**5,211 个**，淘汰率高达**62%**。\n\n主要问题包括：\n\n- 重复内容多\n- 低质量工具多\n- 存在恶意或不安全内容\n- 很多 Skill 只是简单包装，实用价值有限\n\n所以作者建议：不要盲目安装，优先参考社区精选清单。\n\n---\n\n## 值得关注的 Skill 类型\n\n### 1. Token 优化\n\n代表工具：**caveman**\n\n它让 Claude 用极简表达输出，最多可减少约 65% 的 token 消耗。\n\n这类工具的火爆说明一个核心痛点：AI Agent 使用成本正在成为高频用户的关键约束。\n\n---\n\n### 2. 规划与工程能力\n\n代表工具包括：\n\n- **planning-with-files**：用 Markdown 文件实现持久化规划流程，类似 Manus 的工作方式\n- **everything-claude-code**：覆盖 skills、memory、security、agent 调优等完整工具包\n- **claude-code-best-practice**：总结从 vibe coding 到 agentic engineering 的方法论\n\n这类 Skill 的价值在于：让 AI 编程从 “临时对话” 变成 “结构化工程协作”。\n\n---\n\n### 3. 研究与知识管理\n\n代表工具包括：\n\n- **last30days**：整合 Reddit、X、YouTube、HN 等来源，做近 30 天深度研究\n- **graphify**：把任意文件夹转成可查询知识图谱\n- **codebase-to-course**：把代码库转成互动式 HTML 教程\n\n这些工具把 Agent 从 “代码生成器” 扩展为 “研究助理” 和 “知识组织者”。\n\n---\n\n### 4. 浏览器与自动化\n\n代表工具包括：\n\n- **dev-browser**：为 Agent 增加浏览器能力\n- **playwright-skill**：支持 Playwright 自动化操作\n\n这类能力对网页测试、信息采集、自动化执行非常关键，是 Agent 从 “思考” 走向 “行动” 的基础设施。\n\n---\n\n### 5. 内容创作\n\n代表工具包括：\n\n- **humanizer**：弱化 AI 写作痕迹\n- **prompt-master**：为不同 AI 工具生成高质量 prompt\n- **fireworks-tech-graph**：生成生产级 SVG 技术图表\n- **guizang-ppt**：生成杂志风 HTML 演示文稿和 WebGL 内容\n\n这类 Skill 说明 Claude Code 的使用场景已不局限于写代码，也在进入内容生产、表达设计和商业呈现领域。\n\n---\n\n### 6. 安全方向\n\n代表工具包括：\n\n- **trailofbits/skills**：智能合约审计与漏洞检测\n- **Claude-Red**：攻击性安全技能库\n- **android-reverse-engineering**：Android 逆向工程\n\n安全类 Skill 价值高，但风险也更大，尤其需要关注来源可信度和使用边界。\n\n---\n\n### 7. 更重型的插件能力\n\n除了 Skill，还有更复杂的插件形态，例如：\n\n- **claude-mem**：自动记录 session 历史，为 Claude 增加持久记忆\n- **claude-hud**：实时显示上下文用量、活跃 Agent、todo 进度\n- **claude-octopus**：把同一任务分配给多个模型，进行盲点检测\n\n这些更像是 “Agent 操作系统插件”，不仅增强某个任务，而是增强整体工作流。\n\n---\n\n## 大型集合：生态入口正在形成\n\n作者还推荐了一些大型 Skill 集合：\n\n- **alirezarezvani/claude-skills**：235+ 生产级 Skill，覆盖工程、营销、管理等领域\n- **Jeffallan/claude-skills**：66 个全栈开发 Skill\n- **antigravity-awesome-skills**：1400+ 可安装 Skill 和 CLI 精选清单\n- **ComposioHQ/awesome-claude-skills**\n- **hesreallyhim/awesome-claude-code**\n- **VoltAgent/awesome-openclaw-skills**\n\n这些集合的作用类似早期 App Store 榜单，是普通用户进入生态的主要入口。\n\n---\n\n## 产品与商业启示\n\n### 1. Skill 会成为 Agent 时代的 “应用形态”\n\n过去 SaaS 是完整产品，插件是功能扩展；但在 Agent 时代，一个高质量 Skill 可能就是一个可复用的工作流产品。\n\n### 2. 标准化是生态爆发的前提\n\n`SKILL.md`能跨 Claude Code、Cursor、Copilot、Codex 使用，降低了开发者分发成本，也扩大了用户市场。\n\n标准一旦稳定，围绕 Skill 的市场、评价、分发、付费、权限、安全审核都会出现。\n\n### 3. 高质量精选和安全治理会成为核心基础设施\n\n当前生态最大的问题不是数量不够，而是质量参差不齐。\n\n未来真正有价值的平台能力可能包括：\n\n- Skill 审核\n- 安全扫描\n- 权限管理\n- 使用评分\n- 企业白名单\n- 付费分发\n- 工作流模板市场\n\n---\n\n## 一句话总结\n\nClaude Code Skills 生态正在从零散的个人脚本，演变为跨工具、可复用、可分发的 Agent 组件市场；Agent Skills 开放标准可能是这一生态走向规模化的关键拐点。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1777627759543,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d83184146516f9e81290a7a28bbb02813f2b6a309e0bb1304a5da4a4abfe38ca",
+  "refs": {
+    "sessionId": "1777627759569_6u4mmhuj"
+  },
+  "revisionId": "sha256:bd0489cd1010f65eb1a58a0da1d82481725592bc40706be098190197374d6568",
+  "schemaVersion": 1,
+  "updatedAt": 1777627759543
+}

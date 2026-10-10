@@ -1,0 +1,19 @@
+{
+  "createdAt": 1775558990343,
+  "entityType": "message",
+  "id": "1775558990342_q1dbcc8k",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: GBrain个人知识库方案\n\n**评级**: A (81.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: 知识管理系统设计\n**次类别**: AI工作流, SQLite架构, 个人知识库\n**标签**: #PKM #SQLite #RAG #MCP #CLI #知识图谱\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 9 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 9 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 9 | 10% |\n\n**一句话点评**: 一份完成度很高的个人知识脑技术规格说明，方法论和可执行性强，但证据更多来自经验判断而非实测数据。\n**核心高价值点**: 最有价值的是把“知识系统的智能”从应用代码中抽离到可迭代的Markdown技能文件里，用薄CLI承载稳定工具层、用fat skills承载工作流与判断逻辑。\n\n### 摘要\n文章提出一个基于SQLite、FTS5、向量检索与MCP的个人知识脑方案，核心思想是“thin CLI, fat skills”。内容覆盖数据库Schema、CLI命令、迁移算法、技能文件设计及向量搜索取舍，偏工程规格书而非实现复盘。\n\n### 知识要点\n- 单文件SQLite可同时承载全文检索、结构化数据和向量嵌入，适合个人规模知识库\n- 通过“compiled truth + timeline”分离当前结论层与证据时间线层，可兼顾可读性、可追溯性与可维护性\n- MCP + CLI 让知识库可被Claude Code等多种AI客户端统一读写调用\n- 迁移方案强调lossless、round-trippable、verifiable，保证从Markdown到数据库的可逆性\n- fat skills将摄取、查询、维护、富化、简报等流程固化为可复用工作流\n\n### 行动项\n- 借鉴其Schema与命令设计，评估是否为自己的知识库或文档系统做SQLite一体化改造\n- 提炼“compiled truth + timeline”结构，应用到人物档案、项目记录或研究笔记中\n- 尝试把现有AI工作流中的隐性操作规则沉淀为Markdown技能文件，而不是硬编码到程序中\n- 若准备落地，实现一个最小可用版本：pages + FTS5 + import/export + MCP serve\n\n### 存档判定\n归档: 是 — 原因: 这是一个高完整度的知识库系统设计规范，包含架构、Schema、CLI、迁移方案与AI工作流，适合作为后续实现和类似项目的参考模板。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1775558990343,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:e7b52316e68630bc66d247bdd6fd12ba4b3f10548ccd004aaa466771467452f4",
+  "refs": {
+    "sessionId": "1775558975665_ad77jhu1"
+  },
+  "revisionId": "sha256:40dc90a3b7d9bee91cd80bce92697a51f9b6326491b2c87c499ae203da8589ec",
+  "schemaVersion": 1,
+  "updatedAt": 1775558990343
+}

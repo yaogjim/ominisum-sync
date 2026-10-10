@@ -1,0 +1,67 @@
+{
+  "createdAt": 1777773251265,
+  "entityType": "session",
+  "id": "1777773251265_hcvajx3q",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需测试 Ling-2.6-1T，可先在 OpenRouter 生成 API Key。",
+      "将 claude-ling 函数加入 ~/.zshrc 或 ~/.bashrc，并用 /status 验证模型和 base URL。",
+      "实际使用前对 Ling-2.6-1T 的代码生成效果、稳定性和成本进行小规模验证。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777773771960,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code接入Ling模型",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Claude Code 的模型提供方可通过 ANTHROPIC_BASE_URL、ANTHROPIC_AUTH_TOKEN、ANTHROPIC_MODEL 等环境变量控制。",
+      "将环境变量封装进 shell 函数，可以让特定子进程使用独立模型配置，不影响其他终端会话。",
+      "OpenRouter 可作为第三方模型接入 Claude Code 的中转 API 服务。"
+    ],
+    "oneHighValuePoint": "利用终端会话级环境变量隔离不同 Claude Code 模型配置，避免全局切换带来的互相影响。",
+    "oneLineReview": "实用性较强的 Claude Code 临时接入模型教程，但证据和长期价值一般。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "内容主要是一次性配置教程，模型能力评价缺少系统性测试和证据支撑，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Claude Code",
+      "大模型API配置"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍如何通过环境变量在不同终端会话中分别使用 Claude 官方订阅和 OpenRouter 上的 Ling-2.6-1T 模型，避免全局配置切换互相干扰，并给出 shell 函数示例。",
+    "tags": [
+      "Claude Code",
+      "OpenRouter",
+      "Ling-2.6-1T",
+      "环境变量",
+      "AI编程"
+    ],
+    "title": "claude 被封号，不用怕，我们有个更快更适合的模型",
+    "totalScore": 61,
+    "url": "https://x.com/jinglian/status/2049477633080009064"
+  },
+  "payloadHash": "sha256:71ca507fc9ef28db051be4db9d924f4ae1d364a94154dc13fb3e6c0a06cea1ac",
+  "refs": {},
+  "revisionId": "sha256:33503895e7170b711d5c83165f5ffb3f9e6520915febc6a1e0a029ddb71bda28",
+  "schemaVersion": 1,
+  "updatedAt": 1777774337142
+}

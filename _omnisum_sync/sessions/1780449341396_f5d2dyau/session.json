@@ -1,0 +1,66 @@
+{
+  "createdAt": 1780449341396,
+  "entityType": "session",
+  "id": "1780449341396_f5d2dyau",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在开发Agent，可浏览pi-docs-playbook仓库判断是否有可复用模板。",
+      "梳理自己的Agent项目是否已有稳定底座、工具定义、记忆和运行时设计。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780450108110,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "从Pi底座开发Agent的反思",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "直接用大模型生成Agent容易停留在玩具阶段，缺乏工程化基础。",
+      "Agent开发可能需要区分定义、持久化状态和运行时执行环境。",
+      "将文档和playbook喂给Codex或Claude，可能比空泛提示更有效。"
+    ],
+    "oneHighValuePoint": "不要期望通过几句话让大模型凭空生成稳定Agent，应先提供清晰的底座、文档和参考实现。",
+    "oneLineReview": "有一个值得注意的开发方向提示，但正文信息量不足，需跳转原文或仓库才有实际价值。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "C",
+    "rejectReason": "内容主要是社交媒体短帖和回复摘录，信息碎片化，缺少完整方法、实现细节和案例验证。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "大模型应用",
+      "开发经验"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者反思直接让Claude或Codex生成Agent难以得到可用结果，认为需要一个可参考的底座，并推荐使用Pi相关文档和playbook作为Agent开发起点。评论区补充了Agent架构、持久化和运行时等讨论。",
+    "tags": [
+      "Agent",
+      "Pi",
+      "Codex",
+      "Claude",
+      "AI Native"
+    ],
+    "title": "Sunny: 其实我不是一开始就在pi上开发agent的，我直接框框和我的claude和codex说我要做一个agent，他要能干嘛干嘛，做了若干个“玩具”之后才发现这样行不…",
+    "totalScore": 43.5,
+    "url": "https://x.com/0xenderzcx/status/2061778378089533835"
+  },
+  "payloadHash": "sha256:335a7e46d7e205aa4425d6ad88b8803c482ad6941e53a23dc869e77497bff0f3",
+  "refs": {},
+  "revisionId": "sha256:c19b0e5dc929b56e94e97178373b465bcd729a464ecd028b182a10d5cc4e55f7",
+  "schemaVersion": 1,
+  "updatedAt": 1780450108592
+}

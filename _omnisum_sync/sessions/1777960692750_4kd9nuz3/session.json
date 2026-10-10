@@ -1,0 +1,67 @@
+{
+  "createdAt": 1777960692750,
+  "entityType": "session",
+  "id": "1777960692750_4kd9nuz3",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在设计 AI agent 系统，可参考该四层架构拆分职责。",
+      "进一步查找摩根大通 Ask David 的完整技术分享或原始视频，以获取真实实现细节。",
+      "在使用 LLM-as-judge 时增加外部标准、结构化评估和人工抽检，避免自我确认偏差。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777960875710,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "摩根大通多智能体架构",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "supervisor agent 可用于统一编排检索、结构化数据处理和分析等专业子任务。",
+      "LLM 作为裁判或反射节点需要谨慎设计，否则可能只是重复模型自身置信度，难以真正提升质量。",
+      "高精度企业工作流中，人机闭环仍然是补足最后准确率差距的重要机制。"
+    ],
+    "oneHighValuePoint": "企业级多智能体系统可采用“主管代理编排 + 专业子代理执行 + LLM反思检查 + 人工确认”的分层架构。",
+    "oneLineReview": "提供了一个常见企业级多智能体架构轮廓，但深度不足，只适合快速获取方向感。",
+    "primaryCategory": "AI工程",
+    "rating": "C",
+    "rejectReason": "内容主要是对视频或案例的简短转述，缺少完整架构细节、实现步骤和可靠证据支撑。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "多智能体系统",
+      "企业AI应用"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章转述摩根大通投资研究团队构建多智能体系统 Ask David 的大致架构，包括 supervisor agent 编排、专业子代理、LLM 反射裁判节点和人机闭环，但正文信息较少，缺乏具体实现细节。",
+    "tags": [
+      "multi-agent",
+      "supervisor agent",
+      "LLM裁判",
+      "人机闭环",
+      "RAG"
+    ],
+    "title": "Adam Ghowiba: JP Morgan's investment research team just shared exactly how they built their mu…",
+    "totalScore": 50.5,
+    "url": "https://x.com/adamghowiba/status/2050886233921061281"
+  },
+  "payloadHash": "sha256:04dbafc10e026ac1f68e141179ecf2a3172cd2d78fb40646ecd98e5e2e976342",
+  "refs": {},
+  "revisionId": "sha256:c8b2c6bcd7c828e56a487c42e8860ceada528f37c299f4c08102d21a0b79796a",
+  "schemaVersion": 1,
+  "updatedAt": 1777961001583
+}

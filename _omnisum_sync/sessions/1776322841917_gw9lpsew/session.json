@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776322841917,
+  "entityType": "session",
+  "id": "1776322841917_gw9lpsew",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选一个现有Agent任务，尝试改写为“Markdown规则文件+独立脚本”的轻量Skill结构",
+      "为高频输出任务增加类似voice gate的质量检查器，验证是否能减少模板化内容"
+    ],
+    "archiveReason": "提供了不用自建Agent框架、改用Skill加脚本组织工作流的实践样例，有一定方法参考价值",
+    "classifiedAt": 1776325555287,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用Skill替代Agent框架实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Skill可由SKILL.md、参考资料和执行脚本组成，按需加载进模型上下文",
+      "先用Skill验证流程，再接Routine做定时执行，是较稳妥的自动化演进路径"
+    ],
+    "oneHighValuePoint": "将Skill定义为“可版本化的领域知识包”，把知识层和执行层拆开，减少上下文膨胀与框架复杂度。",
+    "oneLineReview": "是篇有实践味道的轻量Agent方法分享，但更像经验帖而非严谨方案评估。",
+    "primaryCategory": "AI工程实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为轻量Agent设计思路备忘",
+    "secondaryCategories": [
+      "Agent工作流",
+      "内容自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于两周内容工作流实践，主张用Skill文件夹加脚本替代复杂Agent框架，强调知识层与执行层分离、按需加载上下文、便于版本控制和非程序员协作。内容有启发，但证据主要为个人经验，缺少系统对比与可复现实验。",
+    "tags": [
+      "Skills",
+      "Claude",
+      "Agent",
+      "自动化工作流",
+      "内容运营"
+    ],
+    "title": "Leeway: 5 个 agent 定义文件 + 5 个 Python 脚本 + 0 个自建 Agent 框架",
+    "totalScore": 66.5,
+    "url": "https://x.com/leewaytor/status/2044510799478325600"
+  },
+  "payloadHash": "sha256:580572bc49b346150c7566540c3445bd07e082e2b6fd6c7322be008d1df808c9",
+  "refs": {},
+  "revisionId": "sha256:72888aef45de8968cffbecd45bbf7851bcf17091905c7fd3a48696af742d7529",
+  "schemaVersion": 1,
+  "updatedAt": 1776404785088
+}

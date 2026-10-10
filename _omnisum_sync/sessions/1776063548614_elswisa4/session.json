@@ -1,0 +1,66 @@
+{
+  "createdAt": 1776063548614,
+  "entityType": "session",
+  "id": "1776063548614_elswisa4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在使用 Hermes，可先从单一可用配置克隆出 2-4 个专家 profile，并分别重写各自的 SOUL.md。",
+      "为当前项目新增一份 AGENTS.md 或团队说明文件，明确角色分工、交接规则与产出标准。"
+    ],
+    "archiveReason": "提供了可直接复用的多智能体角色拆分与配置思路，适合作为 Hermes 初始搭建参考。",
+    "classifiedAt": 1776078084140,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Hermes多智能体搭建指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Hermes profiles 的核心价值是隔离记忆、会话、技能、个性与网关状态，而不是简单换角色名。",
+      "SOUL.md 用于定义稳定身份，AGENTS.md 用于承载项目共享上下文，二者应明确分离。",
+      "一个实用的起步团队可由编排者、研究员、写作者和构建者/调试者组成。"
+    ],
+    "oneHighValuePoint": "最有价值的点是强调多智能体效果的核心不在提示词增强，而在记忆、会话、身份和配置状态的隔离。",
+    "oneLineReview": "有实操启发但证据偏弱，更像一篇经验型配置指南而非经验证的方法论文章。",
+    "primaryCategory": "AI工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "多智能体系统",
+      "Hermes工具使用"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕 Hermes 的 profiles 机制，说明如何通过角色隔离构建编排、研究、写作、调试四类智能体，并区分 SOUL.md 的身份定义与 AGENTS.md 的项目上下文，用于提升多智能体协作稳定性。",
+    "tags": [
+      "Hermes",
+      "多智能体",
+      "角色隔离",
+      "SOUL.md",
+      "AGENTS.md"
+    ],
+    "title": "如何在 Hermes 中构建多智能体团队",
+    "totalScore": 61.5,
+    "url": "https://x.com/NeoAIForecast/status/2043455838459920718"
+  },
+  "payloadHash": "sha256:f9212eef3000b5e3b89103b9ede214361d5b612c662dedf8de9b8ceb4f9a5c68",
+  "refs": {},
+  "revisionId": "sha256:1b166bf2486447f52a0ca31631a82c7de7f09c8ed817d8101cff1fc85d9b4852",
+  "schemaVersion": 1,
+  "updatedAt": 1776078084144
+}

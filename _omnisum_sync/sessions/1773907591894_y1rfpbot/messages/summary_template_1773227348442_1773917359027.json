@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773917359027,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773917359027",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "可以。基于你这条内容，我建议不要只把它理解成 “一个终端 fork 的功能介绍”，而要把它包装成一个非常明确的场景型产品：为 “同时调度多个 AI coding agent 的开发者” 提供可观察、可恢复、可切换的工作台。\n\n我用一个具体实例来讲。\n\n**具体实例**\n\n假设一个独立开发者在同时推进一个支付功能上线，他开了 6 个 Claude Code session：\n\n- Tab 1：`P1 Stripe Webhook`\n- Tab 2：`P2 Subscription Cron`\n- Tab 3：`P3 Billing UI Fix`\n- Tab 4：`P4 Test Coverage`\n- Tab 5：`P5 Deploy Script`\n- Tab 6：`P6 Docs & Changelog`\n\n如果用普通终端，他很快会遇到 4 个问题：\n\n- 不知道哪个 agent 卡住了，哪个已经跑完\n- 切回来时忘了这个 tab 本来要做什么\n- 同样的命令要反复敲，比如 attach、resume、test、deploy\n- 重启后 session 上下文断裂，要重新找状态\n\n你的`Ghostty Dev`已经覆盖了这些痛点，所以最佳实践不是 “再多加功能”，而是把这些能力组织成一套稳定工作流。\n\n**在这个实例上的最佳实践**\n\n- 把 tab 命名从 “窗口标签” 升级成 “任务 ID + 目标结果”，比如`P1 Stripe Webhook - retry fix`，而不是只写`stripe`；这样用户扫一眼就知道每个 agent 的业务目标\n- 顶部状态不要只显示 “运行中”，而要约束成 4 类明确状态：`Planning`、`Coding`、`Building/Testing`、`Done/Needs Input`；状态越少，越适合多 tab 并行识别\n- 每个 tab 的笔记面板要默认记录 3 件事：`目标`、`约束`、`下次接手要做什么`；这样用户中断两小时后回来，能在 10 秒内恢复上下文\n- Snippets 不要做成 “命令收藏夹”，而要按工作流分组，例如`Resume`、`Validate`、`Ship`；这样它是调度工具，不只是快捷输入\n- Sidebar 的一键操作要围绕 “恢复执行” 设计，而不是围绕 “终端管理” 设计；用户真正关心的是 “把第 3 个 agent 重新拉起来”，不是 “切到某个 pane”\n- Session 持久化的最佳标准不是 “窗口恢复”，而是 “恢复后用户知道现在该做什么”；所以恢复时最好把任务名、最后状态、最近 note 一起带回来\n\n**把这个实例再做深一层**\n\n以上面 6 个 tab 为例，一个成熟的最佳实践界面应该让用户在 5 秒内完成这几个判断：\n\n- 哪些任务已完成：比如`P4 Test Coverage`、`P6 Docs & Changelog`\n- 哪些任务需要人工介入：比如`P1 Stripe Webhook`显示`Needs Input`\n- 哪些任务仍在消耗资源：比如`P2 Subscription Cron`正在`Building`\n- 哪个任务风险最高：比如`P5 Deploy Script`虽然在跑，但属于上线链路，应高亮\n- 如果现在只能处理一个，优先处理哪个：通常是`Needs Input`或阻塞主链路的 tab\n\n这就是这个产品的核心价值：不是 “更好看的 tab”，而是 “把多 agent 并行开发变成一个可调度系统”。\n\n**产品层面的最佳实践**\n\n- 定位语一定要从功能导向改成结果导向。比起 “基于 Ghostty 的 fork”，更强的说法是：`让 5+ 个 Claude Code session 变得可管理、可恢复、可观察`\n- 第一屏传播只讲一个核心痛点：`开 5 个 AI agent 后，根本分不清谁在干啥`；这句已经很好，比讲技术实现更容易传播\n- 技术亮点如`kqueue 零轮询`、原子写入、安全隔离，放在第二层；它们负责建立可信度，不负责拉新\n- 最强演示不是功能截图，而是一个真实多任务场景的 before/after：普通终端一团乱，Ghostty Dev 下 6 个任务状态清晰可见\n- 不要把产品卖点说成 “适合所有开发者”，而要明确写给一类人：`同时跑多个 Claude Code / Aider /tmux/zellij session 的重度 AI coding 用户`\n\n**如果把它写成更强的宣传文案，最佳实践是这样**\n\n比现在更好的写法，不是增加信息量，而是增强 “场景 → 痛点 → 解法 → 结果” 的链路。\n\n示例：\n\n“我 fork 了一个专门给多 AI coding session 用的 Ghostty。  \n因为当你同时开 5 个 Claude Code tab 时，最大问题已经不是写代码，而是根本分不清谁在 build、谁卡住、谁做完了。\n\n所以我做了 4 件事：\n\n- 每个 tab 顶部实时显示 agent 状态，直接知道谁在跑、谁结束了\n- 每个 tab 都能单独命名和记笔记，重启后完整恢复上下文\n- 常用命令做成 snippets，一键继续 tmux /zellij/ Claude Code 工作流\n- Sidebar 固定任务信息和关键操作，不再来回跳 pane 找 session\n\n结果就是：你终于可以像调度 5 个并行任务一样调度 5 个 AI agent，而不是在一堆 tab 里迷路。”\n\n这个版本的好处是：读者能立刻理解 “为什么要用”，而不是只知道 “你做了什么”。\n\n**一句话总结这类产品的最佳实践**\n\n不是做 “AI 时代更强的终端”，而是做 “AI agent 并行开发的任务控制台”。\n\n如果你愿意，我下一步可以直接给你两种成品：\n1. 把这条内容改写成一版更强的 Twitter/X 发帖文案\n2. 基于这个产品，整理一版官网首页文案结构（Hero + Features + Use Cases）",
+    "finish_reason": "stop",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773917359027,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2e2832af1c0b1abb55fccbf4c38da13bbee5d606772996ebb57a72bcc056ea51",
+  "refs": {
+    "sessionId": "1773907591894_y1rfpbot"
+  },
+  "revisionId": "sha256:3a0018fb594cd3c1307bcb111f4b4e2ec31e47efa484ff4b9f6268bba0f335db",
+  "schemaVersion": 1,
+  "updatedAt": 1773917359027
+}

@@ -1,0 +1,68 @@
+{
+  "createdAt": 1775196992838,
+  "entityType": "session",
+  "id": "1775196992838_9yy6alqa",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将你常用的AI任务改写为“角色+成品+来源+格式”的结果导向提示模板",
+      "挑选文中1到2个与你工作最接近的示例提示，实际运行并比较输出质量",
+      "建立自己的高频任务提示库，优先沉淀可复用的交付规格说明"
+    ],
+    "archiveReason": "包含一套较实用的结果导向提示框架和示例模板，可作为AI工具使用参考。",
+    "classifiedAt": 1775197078599,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "结果导向提示词方法论",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "结果导向提示优于任务导向提示，更适合代理式多模型系统",
+      "高质量提示至少应包含角色背景、目标产物、来源约束、交付格式四要素",
+      "减少中途微观干预，先让系统完整执行再在末端验收更有效",
+      "不同场景可通过固定模板快速复用，如竞品分析、投资人更新、会议准备等"
+    ],
+    "oneHighValuePoint": "最有价值的是把提示词从“提问题”重构为“写交付规格说明”，显著提升生成结果的可用性。",
+    "oneLineReview": "实操价值强于认知深度，是一篇有用但证据偏弱的AI提示词经验帖。",
+    "primaryCategory": "AI工具使用方法",
+    "rating": "B",
+    "rejectReason": "论证主要依赖主观经验和营销式表述，缺乏系统数据验证与边界条件分析。",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "提示词工程",
+      "知识工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕 Perplexity Computer 提出“结果优先而非任务优先”的提示方式，强调通过明确角色、目标产物、信息来源与交付格式来驱动多模型编排系统生成可直接交付的成果，并附带 8 个可复制的提示模板。",
+    "tags": [
+      "Perplexity",
+      "Prompt Engineering",
+      "AI Agent",
+      "结果导向",
+      "工作流自动化"
+    ],
+    "title": "不要安装 Perplexity Computer，除非...",
+    "totalScore": 62.5,
+    "url": "https://x.com/rryssf_/status/2039792141828870298"
+  },
+  "payloadHash": "sha256:561b8293f506b939c3b52936d7abe3c4dd2f82ed827a10489aa08fef2b490c1e",
+  "refs": {},
+  "revisionId": "sha256:30f7b4e9d47bfb66cc594e7e5d6845ea155b9fc01eb9637c822c02cde9771f66",
+  "schemaVersion": 1,
+  "updatedAt": 1775197197669
+}

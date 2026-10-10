@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773315503349,
+  "entityType": "message",
+  "id": "summary_default_1773315503349",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "**精炼总结**：Lucid 是一个以 MCP Server 形式运行的 “实时知识层”，通过文档搜索、包版本检查、事实校验、API 引用抓取四个工具与自动触发技能，让 автономous agents 的回答始终基于已验证的实时信息，从而减少幻觉与过时信息。\n\n**一句话评论**：它把 “让 AI 不瞎编” 从提示工程问题，变成了可插拔的基础设施能力。\n\n**一句话高价值内容**：四个核心工具分别覆盖 “查文档 / 查包版本 / 验事实 / 拉 API 签名示例”，再用五个技能按意图自动路由调用，确保 “训练数据 vs 实时来源冲突时以文档为准”。",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1773315503349,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b07c7f33d13d91c93ed21da49faab4152afc13e52952df126d5a6ba0d5d513e3",
+  "refs": {
+    "sessionId": "1773315503429_9d2oqbk0"
+  },
+  "revisionId": "sha256:dff79e443dc1c8432ec98dc2eb6dd4b269a368e2f8c8c9ebef9310d8ed75932b",
+  "schemaVersion": 1,
+  "updatedAt": 1773315503349
+}

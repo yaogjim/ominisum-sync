@@ -1,0 +1,67 @@
+{
+  "createdAt": 1774867710527,
+  "entityType": "session",
+  "id": "1774867710527_xwicd6la",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在下次Claude Code会话开始前运行/context，记录主要token消耗来源。",
+      "检查并精简Claude md或常驻上下文文件，加入简洁响应规则。",
+      "为终端输出增加过滤或压缩步骤，避免直接粘贴大段原始日志。"
+    ],
+    "archiveReason": "内容提供了可立即应用的Claude Code节流技巧，适合作为工作流优化备忘清单。",
+    "classifiedAt": 1774868062126,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code省Token技巧",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Claude Code的上下文消耗可能在开始编码前就已被系统提示、MCP工具和记忆文件占用。",
+      "原始日志和长命令输出是高token消耗源，适合先过滤压缩后再交给模型。",
+      "高强度推理模式如Opus和Ultrathink应按需使用，而非默认常开。"
+    ],
+    "oneHighValuePoint": "先用/context定位token消耗来源，再针对系统提示、记忆文件和日志输出做精简，比盲目削减使用频率更有效。",
+    "oneLineReview": "实用但偏浅，适合拿来立刻试，不足以作为系统方法论材料。",
+    "primaryCategory": "AI开发工具与工作流优化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "Claude Code使用技巧",
+      "成本控制"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一条关于Claude Code节省token的短线程，核心建议包括先用/context检查上下文消耗、精简Claude md和会话上下文、减少Opus与Ultrathink滥用，以及不要直接发送原始日志，改用压缩过滤工具处理输出。",
+    "tags": [
+      "Claude Code",
+      "Token优化",
+      "AI编程",
+      "上下文管理",
+      "工作流"
+    ],
+    "title": "AI Builder Club: 1/ Claude Code users: token-saving tactics that actually work 💰 My Claude Code …",
+    "totalScore": 59,
+    "url": "https://x.com/aibuilderclub_/status/2038174485053046868"
+  },
+  "payloadHash": "sha256:0f733d93b95b282beea129bc006312b00ae3e8259e228d7430994100f34bae0e",
+  "refs": {},
+  "revisionId": "sha256:f17644717d9127afa6e205ed9ff4cf2f38dfa587c564386bf55d248cfa132203",
+  "schemaVersion": 1,
+  "updatedAt": 1774868401428
+}

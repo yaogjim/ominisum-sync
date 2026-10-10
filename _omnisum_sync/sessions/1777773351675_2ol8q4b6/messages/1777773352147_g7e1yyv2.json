@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773352147_g7e1yyv2",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Claude Code 的本质：一个被工程化到极致的 Agent 循环\n\n## 核心观点\n\nClaude Code 的底层逻辑并不神秘，本质上是一个简单的 `while` 循环：\n\n> 模型生成响应 → 如果有工具调用就执行 → 工具结果返回给模型 → 模型继续生成下一步 → 不断循环\n\n但真正的价值在于：这个简单循环被工程化成了一个完整产品，背后包含大量工具设计、上下文管理和安全约束。\n\n---\n\n## Claude Code = 模型 + Harness\n\n作者认为，Claude Code 可以拆成两部分：\n\n- **模型**：负责理解、推理、生成代码与决策\n- **Harness**：负责把模型组织成可执行、可控、可靠的 Agent 系统\n\n其中 Harness 又可以理解为：\n\n> Harness = 工具系统 × 上下文工程 × 自主循环\n\n也就是说，Claude Code 的强大不只是模型强，而是围绕模型搭建了一整套执行框架。\n\n---\n\n## 工具系统：让模型“可控地干活”\n\nClaude Code 不鼓励模型直接使用 `find`、`grep`、`cat` 等通用命令，而是要求使用专门设计的工具，例如：\n\n- `GrepTool`\n- `GlobTool`\n- `Edit`\n- `Read`\n- Git 相关工具\n\n这样做的原因是：专用工具可以输出结构化、可审计的日志，让模型行为更透明、更可控。\n\n同时，工具本身也有权限和校验机制：\n\n- `Edit` 前必须先 `Read`，避免覆盖错误\n- Git 高风险操作如 `force push` 会触发提示和警告\n- 不同工具有不同安全边界\n\n本质上，这是在给 AI Agent 加“护栏”，减少误操作和风险扩散。\n\n---\n\n## 上下文工程：让模型只看该看的信息\n\nClaude Code 在上下文管理上投入很大，目标是：\n\n> 让模型在任何时刻只接触当前任务最相关的信息。\n\n它使用了多种机制：\n\n- **MicroCompact**：小粒度压缩上下文\n- **AutoCompact**：自动压缩会话内容\n- **记忆替换与裁剪**：避免无关信息占用窗口\n- **Just-In-Time 文件加载**：文件不提前全部加载，只保留路径，需要时再读取\n- **Sub-Agent 上下文隔离**：不同子任务互不干扰\n\n这些设计降低了主循环的认知负担，让 Agent 更稳定。\n\n---\n\n## 模型也在适配 Agent 化趋势\n\n作者提到，模型本身也在变得更适合 Agent 场景。\n\n例如 Opus 4.7 强调更严格地遵循指令，这对 Agent 非常重要。因为 Agent 的行为边界通常写在 system prompt 里，模型越能遵守指令，系统就越稳定、越可靠。\n\n同时，Claude Code、OpenClaw、Hermes Agent 等产品产生的大量 Agent 调用数据，也会反过来训练模型，让模型更懂如何调用工具、压缩上下文和控制行为边界。\n\n---\n\n## 未来判断：Harness 终将被模型“吃掉”\n\n当前 Claude Code 中大量 Harness 逻辑，包括：\n\n- 工具调用策略\n- 上下文压缩策略\n- 权限约束机制\n- 行为边界控制\n\n未来可能会逐步被模型能力内化。\n\n也就是说，今天需要工程系统显式实现的 Agent 框架，未来可能变成模型自身能力的一部分。\n\n因此，Harness 是一个重要但过渡性的产物。\n\n---\n\n## 一句话总结\n\nClaude Code 的底层只是一个“模型 + 工具调用”的循环，但真正厉害的是它围绕这个循环构建了强大的工具系统、上下文管理和安全护栏；未来这些工程化能力可能会被模型逐步内化。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:63c594f836346cd0a4dcaf627a810e388b47900416fae25963b5e9e2b630bc27",
+  "refs": {
+    "sessionId": "1777773351675_2ol8q4b6"
+  },
+  "revisionId": "sha256:6a12f58d000372894c09dfff7596cd244a0fb5b39b5b3fb294b5a56a45a9b78d",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

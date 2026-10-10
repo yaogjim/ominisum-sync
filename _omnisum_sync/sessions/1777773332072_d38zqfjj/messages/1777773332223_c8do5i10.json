@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773332223_c8do5i10",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Geek Lite / NeverWrite：本地优先的 AI 知识工作台\n\n## 核心定位\n\nNeverWrite 是一个 **本地优先的桌面知识工作台**，面向需要同时管理多个 AI 代理、子代理工作流的用户，重点解决 **知识管理、文件编辑、AI 辅助写作与可审查修改** 的问题。\n\n## 主要能力\n\n### 1. 编辑器 + 知识库一体化\n\n它将代码编辑器与知识库结合在一起，支持编辑和管理多种文件类型，包括：\n\n- Markdown\n- CSV\n- PDF\n- 其他常见文档格式\n\n适合用于构建个人知识库、项目资料库或 AI 工作流资料中心。\n\n### 2. 知识导航功能完善\n\n产品提供类似 Obsidian 的知识管理能力，包括：\n\n- Wikilink 双链\n- 反向链接\n- 标签系统\n- 知识图谱\n\n这些功能可以帮助用户更好地组织、发现和关联信息。\n\n### 3. AI 修改可审查\n\n它的一个核心特点是：**AI 不会直接覆盖原文**。\n\nAI 生成或修改的内容会先出现在：\n\n- 内联审查控件\n- 独立审查标签页\n\n用户可以逐条确认或拒绝修改，降低 AI 自动编辑带来的误改风险。\n\n### 4. 支持网页剪藏\n\nNeverWrite 还提供浏览器剪藏插件，可以将网页内容直接保存到桌面端，方便把外部信息沉淀进本地知识库。\n\n## 技术形态\n\nNeverWrite 是一个基于：\n\n- Electron\n- Rust\n\n开发的桌面应用，强调本地运行与开源可控。\n\n## 产品价值\n\nNeverWrite 的价值在于把 **知识管理、文档编辑、AI 协作和审查机制** 融合到一个本地工具里。\n\n它尤其适合：\n\n- 重度知识工作者\n- 产品经理 / 研究人员 / 开发者\n- 使用多个 AI Agent 的用户\n- 对 AI 输出准确性和可控性要求较高的人群\n\n## 一句话总结\n\nNeverWrite 是一个开源、本地优先的 AI 知识工作台，核心亮点是把知识库、文件编辑和“可审查的 AI 修改流程”整合在一起，让 AI 协作更可控、更安全。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0a8f7ef6241570cb6a645375d89f6c6bfe44accac3ffdbe02b74de56b691f09d",
+  "refs": {
+    "sessionId": "1777773332072_d38zqfjj"
+  },
+  "revisionId": "sha256:2f34ce8f5e0e94a62f89975e4e7597a2045fd895bac66bf5814e67d1ab513755",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

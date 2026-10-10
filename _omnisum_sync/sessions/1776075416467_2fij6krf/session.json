@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776075416467,
+  "entityType": "session",
+  "id": "1776075416467_2fij6krf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如你正在评估代码规范工具，可进一步查阅官方文档或仓库验证规则覆盖、性能和可定制性。",
+      "在真实项目中与现有 ESLint/Biome 配置做一次小范围对比试用，再决定是否采用。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776077951032,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Ultracite零配置Lint工具介绍",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息重复且偏营销，证据薄弱，方法论和可迁移价值低，不值得长期占用信息空间。",
+    "domain": "www.ultracite.ai",
+    "favicon": "",
+    "knowledgePoints": [
+      "Ultracite 支持 ESLint、Biome、Oxlint 的零配置预设集成。",
+      "工具强调对 React、Next.js、VSCode/Cursor/Windsurf 及多种 AI agent 的兼容。"
+    ],
+    "oneHighValuePoint": "其核心价值在于将 lint、formatter、编辑器配置与 AI agent 规则整合为一套零配置工作流。",
+    "oneLineReview": "这是一篇偏营销的工具介绍页，能快速了解产品定位，但不足以支撑深入学习或决策。",
+    "primaryCategory": "开发工具",
+    "rating": "D",
+    "rejectReason": "内容以产品宣传为主，缺少规则设计原理、适用边界、性能对比和真实案例，参考价值有限。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "代码质量",
+      "前端工程化"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章主要介绍 Ultracite 作为面向 ESLint、Biome 和 Oxlint 的零配置预设，强调对 React、Next.js、编辑器和 AI agent 的支持，并展示初始化流程与社区背书。但整体更像产品落地页，缺少深入技术细节与可验证证据。",
+    "tags": [
+      "ESLint",
+      "Biome",
+      "Oxlint",
+      "零配置",
+      "AI编码"
+    ],
+    "title": "Zero-Config Linting for Biome, ESLint, and Oxlint | Ultracite",
+    "totalScore": 32.5,
+    "url": "https://www.ultracite.ai/"
+  },
+  "payloadHash": "sha256:5432ad353e11e341859b49c94d6cf210524e075a51d3e8bc80c72a32a96d1791",
+  "refs": {},
+  "revisionId": "sha256:0dbfeb5a9703379db18095f22128e5fa010a669e505e4fc39b4d3cbdb5abd1a1",
+  "schemaVersion": 1,
+  "updatedAt": 1776077951036
+}

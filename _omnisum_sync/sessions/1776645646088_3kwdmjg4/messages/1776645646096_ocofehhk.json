@@ -1,0 +1,20 @@
+{
+  "createdAt": 1776645406515,
+  "entityType": "message",
+  "id": "1776645646096_ocofehhk",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Claude Code 桌面端重构要点\n\n## 核心信息\nAnthropic 对 Claude Code 桌面应用做了“从底层开始”的重构，重点不是单纯加功能，而是让用户更容易在同一代码仓库里并行处理多个编程任务。\n\n## 这次升级解决了什么\n新版进一步降低了多任务协作门槛。用户可以一键开启多个会话，同时让 Claude 处理不同任务；每个会话都有独立的代码副本，修改彼此隔离，合并前不会互相干扰。\n\n## 已有能力的延续\n在此前版本中，Claude Code 桌面端已经支持：\n- Git worktree 隔离\n- 可视化代码差异审查\n- 应用预览\n- 插件市场\n\n这次重建是在这些能力之上，强化“并行开发”的体验。\n\n## 官方想传达的信号\n负责人 Anthony Morris 表示，重构后的目标是让用户与 Claude 并行工作的效率更高，甚至称自己“已经好几周没打开 IDE 和终端了”。这反映出 Anthropic 希望把 Claude Code 定位成更完整的开发工作台，而不只是代码助手。\n\n## 市场反馈与争议\n评论区反馈两极分化：\n- 有人认为这是开发工作流的重要进化\n- 也有人质疑实际性能和稳定性仍有不少问题\n- 还有观点认为其产品形态与同类工具较为相似\n\n## 一句话总结\n这次 Claude Code 桌面端重构的本质，是把 AI 编程从“单线程辅助”推向“多线程并行协作”，目标是让开发者更少切换工具、更高效地同时推进多个任务。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1776645406515,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:23656b2a37cb1105ce8532d24e9bd823ba2b8d590c990c0587ad6637b7b7c171",
+  "refs": {
+    "sessionId": "1776645646088_3kwdmjg4"
+  },
+  "revisionId": "sha256:0a6628ddfb6c7793dac961f4ab0f8d2bd4e6073012ee8b16796a0b1aa64d49a7",
+  "schemaVersion": 1,
+  "updatedAt": 1776645406515
+}

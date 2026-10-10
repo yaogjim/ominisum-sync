@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773653624132,
+  "entityType": "message",
+  "id": "1773653776459_wjkb9gof",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章主要介绍了一个名为 `agency-agents` 的开源项目：它把 AI 助手做成了“专业分工明确的团队”，覆盖开发、设计、营销、产品、测试等多个领域。核心价值不在于“一个万能提示词”，而在于“很多有角色、有流程、有交付标准的专家型 AI agent”。\n\n- 项目定位与核心理念\n  - `agency-agents` 想做的是“一整家 AI 代理公司”，让用户像组建团队一样调用不同领域的 AI 专家。\n  - 每个 agent 都强调 4 点：专业化、人格化、可交付、可落地。\n  - 作者强调，这不是简单的 prompt 模板集合，而是带有身份设定、工作流程、输出样例、成功指标的完整 agent 系统。\n  - 项目起源于 Reddit 讨论，经过数月迭代，并已在真实生产环境中打磨。\n\n- agent 的组织方式与能力范围\n  - 项目把 agent 按 division（事业部）组织，覆盖面非常广：工程、设计、付费投放、销售、营销、产品、项目管理、测试、支持、XR、游戏开发、学术叙事等。\n  - 例如工程类包括：前端开发、后端架构、移动开发、AI 工程、DevOps、安全、数据库优化、SRE 等。\n  - 设计与增长类包括：UI Designer、UX Researcher、Brand Guardian、Whimsy Injector、Reddit Community Builder、SEO Specialist、Douyin/Kuaishou/Bilibili 等中国平台专家。\n  - 还有很多细分角色，如：`AI Citation Strategist` 专门做 AEO/GEO、提升品牌在 ChatGPT、Claude、Gemini、Perplexity 中的可见性。\n\n- 每个 agent 具体包含什么\n  - 每个 agent 文件通常包含：身份与性格、核心使命、工作流、技术交付物示例、成功指标、沟通风格。\n  - 这意味着它不仅告诉你“该做什么”，还告诉你“怎么做、做到什么算好”。\n  - 文中举的例子很直观：\n    - `Evidence Collector`：默认找出 3–5 个问题，并要求视觉证据；\n    - `Reddit Community Builder`：强调先做社区的有价值成员，而不是硬广营销；\n    - `Whimsy Injector`：强调有趣的设计必须服务功能或情绪目标，甚至提到“庆祝动画可将任务完成焦虑降低 40%”。\n\n- 典型使用场景：像拼团队一样协作\n  - 项目不仅支持单个 agent 使用，还强调多 agent 协同。\n  - 例子 1：做一个产品时，可以同时搭配 `Frontend Developer`、`Backend Architect`、`Growth Hacker`、`Rapid Prototyper`、`Reality Checker`，实现从开发到上线质检的完整链路。\n  - 例子 2：做营销活动时，可以组合 `Content Creator`、`Twitter Engager`、`Instagram Curator`、`Reddit Community Builder`、`Analytics Reporter`，形成多平台联动。\n  - 例子 3：接管广告账户时，可用 `Paid Media Auditor`、`Tracking & Measurement Specialist`、`PPC Campaign Strategist`、`Search Query Analyst` 等，在前 30 天内完成“验证追踪、清理浪费、优化结构、更新创意”。\n  - 文中还给出一个完整案例：`Nexus Spatial Discovery Exercise`，8 个 agent 同时参与，最终在一次会话中产出统一的产品方案。\n\n- 工具集成与安装方式\n  - 项目原生支持 Claude Code，也支持 GitHub Copilot、Gemini CLI、Cursor、Aider、Windsurf、OpenCode、OpenClaw、Qwen Code 等主流 agentic coding 工具。\n  - 使用方式较简单：\n    - Claude Code 可直接复制到 `~/.claude/agents/`\n    - 也可通过 `./scripts/convert.sh` 先生成各工具适配文件，再用 `./scripts/install.sh` 自动安装\n  - 安装脚本支持交互式工具检测，也支持并行安装、CI 非交互安装。\n  - 例如：\n    - `./scripts/install.sh --tool cursor`\n    - `./scripts/install.sh --no-interactive --parallel`\n\n- 项目数据与成熟度\n  - 文中给出的关键数据是：\n    - `144` 个专业 agent，分布在 `12` 个 division\n    - 超过 `10,000` 行人格、流程和代码示例\n    - 来自数月真实使用的迭代\n    - Reddit 发布后前 `12` 小时收到 `50+` 请求\n  - 不过文末致谢部分又写成了 `147 agents across 12 divisions`，说明项目仍在快速更新，数字可能随提交变化。\n\n- 社区、扩展与路线图\n  - 项目欢迎贡献者新增 agent、补充真实案例、增强代码示例、优化指标与流程。\n  - 路线图包括：交互式 agent 选择器、多 agent 工作流示例、视频教程、社区 marketplace、人格匹配测验、每周 agent 展示等。\n  - 还已有中文相关衍生版本，例如：\n    - `agency-agents-zh`：`100` 个翻译 agent + `9` 个中国市场原创 agent\n    - `agent-teams`：带有 Bilibili、微信、小红书本地化适配\n\n- 许可与整体结论\n  - 项目采用 `MIT License`，可自由商用或个人使用。\n  - 它的最大特点是：把 AI 从“单个通用助手”变成“一个可组合、可定制、可跨工具部署的专家团队”。\n  - 如果你希望 AI 在开发、营销、产品、测试等具体工作中“像专业同事一样分工合作”，这个项目很有参考价值。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773653624132,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4ef18aee312410c29a905b453e4936e89201d7ef9f61ac370723bae52d2e102a",
+  "refs": {
+    "sessionId": "1773653776422_su6c3p8t"
+  },
+  "revisionId": "sha256:e8cca51b02bd026dff3ea71918fe509d410b7b9741eebf214d3ebc6652fbb3dc",
+  "schemaVersion": 1,
+  "updatedAt": 1773653624132
+}

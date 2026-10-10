@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780307528619,
+  "entityType": "message",
+  "id": "1780307528618_1oly3on4",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: pi目标跟踪扩展说明\n\n**评级**: B (61分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: 智能体工作流, 开源项目文档\n**标签**: #pi #Codex #goal tracking #AI Agent #TypeScript\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一个实用型开源 README，适合需要在 pi 中复刻 Codex 目标跟踪工作流的人参考。\n**核心高价值点**: 目标状态存储在 pi session custom entries 中，可随会话历史、恢复、分叉、树导航、重载和压缩行为自动延续，无需外部数据库。\n\n### 摘要\n文章介绍 pi-codex-goal 扩展，为 pi 提供 Codex 风格的目标跟踪能力，包括 /goal、/create-goal 命令及 create_goal、get_goal、update_goal 工具，并说明安装、测试、状态流转、token 预算和异常恢复机制。\n\n### 知识要点\n- /create-goal 比手写目标更推荐，可让模型扩展出目标、验证、约束、迭代、审计和阻塞停止要求。\n- create_goal、get_goal、update_goal 构成模型可调用的目标管理工具，其中 update_goal 仅接受 complete 状态。\n- 活跃目标会跟踪 token 使用量、活动时间，并在预算达到、空闲或异常恢复场景下触发隐藏 continuation。\n- 完成后的目标是终态，pause、resume 和自动 continuation 不会重新打开已完成目标。\n\n### 行动项\n- 如正在使用 pi，可按 README 安装 pi-codex-goal 并运行 smoke test 验证功能。\n- 优先使用 /create-goal <task> 创建结构化目标，而不是手写简单目标。\n- 在自动化或 headless 场景中，直接提示模型调用 create_goal、get_goal、update_goal 工具。\n\n### 存档判定\n归档: 是 — 原因: 包含安装方式、命令用法、模型工具契约和 smoke test，可作为使用 pi goal tracking 扩展时的参考文档。\n删除: 否\n留存决策: 短期参考后按需保留",
+    "role": "assistant",
+    "timestamp": 1780307528619,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:f305bd8dea51ec45ea2c9b7ad488e4dcf9c9c268b65383506e658b78ce173a3f",
+  "refs": {
+    "sessionId": "1780307318444_92wwo779"
+  },
+  "revisionId": "sha256:dcd83b3b3b6920ee7a93b8283e5fa7c94e499213d639f192808c768527d625a0",
+  "schemaVersion": 1,
+  "updatedAt": 1780307528619
+}

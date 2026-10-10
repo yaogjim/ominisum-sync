@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773918180328,
+  "entityType": "message",
+  "id": "1773918180327_drgmaxep",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude架构师考试拆解课\n\n**评级**: B (64.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程与智能体开发\n**次类别**: LLM应用架构, Claude生态学习资源\n**标签**: #Claude #Agent SDK #MCP #多智能体 #AI架构 #考试拆解\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 这是篇高密度的Claude架构学习提纲，但更像经验型备考笔记而非严谨教程。\n**核心高价值点**: 最有价值的是明确区分了提示词约束与程序化约束：涉及资金、安全、合规时必须用hooks或前置门控，而不能只靠prompt。\n\n### 摘要\n文章围绕“Claude Certified Architect”考试范围，提炼Claude Code、Agent SDK、API与MCP的核心知识点，尤其强调智能体编排、子代理上下文隔离、工具调用约束和高风险场景下的程序化控制，兼具学习路径与提示词模板价值。\n\n### 知识要点\n- 子代理与协调器不共享上下文，关键信息必须显式传递\n- 智能体循环应依赖`stop_reason`等确定性信号，而非解析自然语言文本\n- 高风险工作流应通过hooks、prerequisite gates等机制进行程序化强制\n- 多智能体研究系统的常见根因在于协调器任务分解失衡而非下游执行失败\n- 并行Task调用与结构化元数据传递可提升速度与可追溯性\n\n### 行动项\n- 按文中域划分建立Claude学习清单，优先补Agent SDK、MCP与hooks机制\n- 将文中高风险场景规则应用到自己的Agent设计中，检查是否仍依赖纯prompt控制\n\n### 存档判定\n归档: 是 — 原因: 内容覆盖Claude Agent SDK、API、MCP和多智能体设计，适合作为后续系统学习入口和检索清单\n不推荐: 论证主要依赖作者个人拆解与口述总结，缺少实测案例、数据支撑和正式文档结构化引用\n删除: 否\n留存决策: 短期参考并归档，适合作为Claude生态学习路线索引",
+    "role": "assistant",
+    "timestamp": 1773918180328,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:b9979092a30cff4a5aafe9cb3e500951614557e8e32641eef163beaf6a4fc220",
+  "refs": {
+    "sessionId": "1773886593488_z10iwxa0"
+  },
+  "revisionId": "sha256:7c3a756b4fd73d7bd0a590a5b3db4f8fede13d2b1f14277a61dd74dbb834f45f",
+  "schemaVersion": 1,
+  "updatedAt": 1773918180328
+}

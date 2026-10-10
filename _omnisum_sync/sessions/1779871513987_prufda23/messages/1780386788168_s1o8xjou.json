@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780386788169,
+  "entityType": "message",
+  "id": "1780386788168_s1o8xjou",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: LLM工程三阶段演进\n\n**评级**: A (75.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI工程\n**次类别**: 大语言模型应用, Agent工程, 软件工程方法论\n**标签**: #Prompt Engineering #Context Engineering #Harness Engineering #AI Agent #反馈循环 #工程边界\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 9 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 9 | 10% |\n\n**一句话点评**: 这是一篇框架清晰、案例较丰富的 LLM Agent 工程方法论文章，适合用于理解下一阶段 AI 应用工程的核心问题。\n**核心高价值点**: Harness Engineering 的核心不是继续替 Agent 编排信息，而是赋予其自主获取反馈的工具，同时用沙箱、权限、测试和流程边界防止失控。\n\n### 摘要\n文章将 LLM 工程演进划分为 Prompt Engineering、Context Engineering 与 Harness Engineering 三阶段，指出瓶颈从提问方式、信息编排转向自主反馈与边界控制，并通过 Stripe、Anthropic、OpenAI 等案例说明 Agent 工程的关键实践。\n\n### 知识要点\n- Prompt Engineering 主要优化静态单次输入，适合短任务，但难以处理动态展开的多步任务。\n- Context Engineering 的核心是用程序化方式管理多步任务中的信息流转，包括检索、压缩、反馈注入和上下文选择。\n- Harness Engineering 强调为 Agent 构建运行环境，让模型自主调用工具、获取反馈并判断下一步行动。\n- 自主 Agent 必须配套能力边界，例如沙箱隔离、CI 次数限制、文件权限、结构化测试和架构约束。\n- Agent 工程的重点正在从模型能力本身转向环境设计、反馈循环、控制系统和评估治理。\n\n### 行动项\n- 梳理现有 LLM 应用中哪些逻辑仍是硬编码 context 编排，评估是否可交给 Agent 自主决策。\n- 为 Agent 工作流设计可快速返回的反馈工具，如 lint、测试、日志、浏览器状态和代码检索。\n- 基于 Agent 实际失败模式倒推边界设计，而不是仅依赖 prompt 约束。\n- 在代码类 Agent 场景中引入沙箱、权限控制、结构化测试和最多重试次数等保险机制。\n- 将 Prompt、Context、Harness 三层能力分开评估，避免把 runtime 能力误认为 Harness 设计。\n\n### 存档判定\n归档: 是 — 原因: 文章提供了从 Prompt 到 Context 再到 Harness 的清晰工程演进框架，并结合多个 Agent 工程案例讨论自主性、反馈与边界设计，具备较高方法论和长期参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1780386788169,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:21b962212f0ed080af69a0b2a9c354719e50e1a840be504e3cff528c55d53f12",
+  "refs": {
+    "sessionId": "1779871513987_prufda23"
+  },
+  "revisionId": "sha256:389c4523d413d457f5f465a32f5dc08e4d08aaca6d1317b3b1fe1fb4285532dc",
+  "schemaVersion": 1,
+  "updatedAt": 1780386788169
+}

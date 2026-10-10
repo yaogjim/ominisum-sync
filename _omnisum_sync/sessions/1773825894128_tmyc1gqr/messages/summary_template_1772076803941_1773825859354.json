@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773825859354,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773825859354",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇文章的核心意思是：`Skills`是 Claude Code 非常实用的扩展方式，关键不在 “能不能做”，而在 “做什么、怎么写、如何推广” 才真正决定效果。作者基于 Anthropic 内部几百个活跃 Skills 的实践，总结了可复用的分类框架和编写方法。\n\n- **一、Skills 是什么：不只是 Markdown**\n  - Skills 不是单一文本，而是一个 “文件夹能力包”，里面可以放脚本、资源、数据、配置，甚至动态钩子。\n  - 真正强的 Skill，往往不是只写说明文档，而是把 “说明 + 脚本 + 示例 + 配置” 组合起来。\n  - 作者观察到：好的 Skill 通常边界清晰，属于某一类；差的 Skill 往往什么都想做，定位模糊。\n\n- **二、Anthropic 内部常见的 9 类 Skills**\n  - `1. 库与 API 参考`：帮助 Claude 正确使用库、CLI、SDK，重点是示例和踩坑点。例子：`billing-lib`、`internal-platform-cli`、`frontend-design`。\n  - `2. 产品验证`：验证代码是否真的可用，常配合 Playwright、tmux。作者建议值得 “让一个工程师花一周” 专门打磨。例子：`signup-flow-driver`、`checkout-verifier`、`tmux-cli-driver`。\n  - `3. 数据获取与分析`：连接数据仓库、监控和仪表盘。例子：`funnel-query`、`cohort-compare`、`grafana`。\n  - `4. 业务流程与团队自动化`：把重复流程压缩成一条命令，并可保存历史日志提升一致性。例子：`standup-post`、`create-<ticket-system>-ticket`、`weekly-recap`。\n  - `5. 代码脚手架与模板`：生成项目样板，适合 “纯代码模板不够、还需要自然语言规则” 的场景。例子：`new-migration`、`create-app`。\n  - `6. 代码质量与审查`：执行团队规范、辅助 Code Review，可结合钩子或 GitHub Action。例子：`adversarial-review`、`code-style`、`testing-practices`。\n  - `7. CI/CD 与部署`：围绕 PR、构建、部署、回滚自动化。例子：`babysit-pr`、`deploy-<service>`、`cherry-pick-prod`。\n  - `8. 运维手册`：输入告警或异常现象，自动串联多工具排查并输出结构化报告。例子：`<service>-debugging`、`oncall-runner`、`log-correlator`。\n  - `9. 基础设施运维`：处理资源清理、依赖审批、成本排查等高风险操作，需要安全护栏。例子：`<resource>-orphans`、`dependency-management`、`cost-investigation`。\n\n- **三、写好 Skill 的关键原则**\n  - `不要写显而易见的内容`：Claude 本来就懂编程，Skill 应该补充 “它容易忽略的经验”。例如`frontend-design`的价值，不是教 UI 基础，而是明确避开 “Inter 字体、紫色渐变” 这类套路。\n  - `一定要有 “踩坑点” 章节`：这是信息密度最高的部分，应根据 Claude 的真实失败案例持续补充。\n  - `利用文件系统做渐进式披露`：不要把所有内容都塞进主文档，可拆到`references/api.md`、`assets/`模板、脚本目录里，让 Claude 按需读取，节省上下文。\n  - `别把指令写死`：Skill 要可复用，给足规则，但保留对具体场景的适配空间。\n\n- **四、配置、记忆和脚本：让 Skill 更 “像工具”**\n  - `考虑初始化配置`：有些 Skill 第一次运行需要用户提供信息，比如站会要发到哪个 Slack 频道；可存到`config.json`，必要时用`AskUserQuestion`做结构化提问。\n  - `description 不是摘要，而是触发条件`：Claude 会扫描所有 Skill 的描述来判断何时调用，所以描述应写 “什么情况下该用”，而不是 “这个 Skill 是什么”。\n  - `给 Skill 加记忆`：例如`standup-post`可以保存`standups.log`，下次生成站会时只报变化。稳定数据应放在`${CLAUDE_PLUGIN_DATA}`，避免升级时丢失。\n  - `把脚本直接放进去`：相比让 Claude 现场重写样板代码，更高效的方法是提供现成函数库和脚本，让它专注于组合和分析。例如数据分析 Skill 可直接内置查询函数，Claude 再临时拼装更复杂分析。\n\n- **五、按需钩子：只在需要时开启强约束**\n  - Skills 可以注册 “按需钩子”，启用后在整个会话中生效，适合高价值但不适合常开的限制。\n  - 例子：\n    - `/careful`：拦截`rm -rf`、`DROP TABLE`、`force-push`、`kubectl delete`等危险操作，适合操作生产环境时开启。\n    - `/freeze`：禁止在指定目录外编辑文件，适合调试时防止 “顺手改坏别处”。\n\n- **六、团队共享与插件市场：从个人工具到组织资产**\n  - 分享方式有两种：\n    - 放进代码仓库的`./.claude/skills`\n    - 做成插件，进入内部插件市场\n  - 小团队、仓库少时，直接提交到仓库就够；但 Skill 越多，会给模型上下文增加负担，所以规模变大后，插件市场更合适。\n  - Anthropic 的做法不是由中心团队统一管理，而是让有价值的 Skill 自然涌现：先在 GitHub 沙盒和 Slack 里试用，关注度足够再提 PR 进入市场。\n  - 但作者强调：低质量和重复 Skill 很容易出现，因此正式发布前一定要有审核机制。\n\n- **七、组合与衡量：让 Skill 持续进化**\n  - Skills 之间可以互相引用，虽然插件市场还不支持正式依赖管理，但只要对方已安装，Claude 就能按名字调用。\n  - Anthropic 用`PreToolUse`钩子统计内部 Skill 使用情况，用来识别哪些 Skill 热门、哪些触发率低于预期。\n  - 作者最后的结论很务实：现在还没有 “标准答案”，最好的方法是先做一个简单版本，比如 “几行说明 + 一个踩坑点”，然后在真实使用中不断迭代。\n\n- **重要数据与结论**\n  - Anthropic 内部 “活跃使用的 Skills 已有几百个”。\n  - `Skills`已经成为 Claude Code “使用最广泛的扩展点之一”。\n  - 对验证类 Skill，作者明确建议：值得安排 “一个工程师花一周” 专门打磨。\n  - 最有效的 Skill 往往不是一开始就完整，而是随着失败案例和边界情况不断补充，逐渐成熟。\n\n如果你愿意，我还可以继续帮你把这篇文章再压缩成一版 “100 字极简摘要” 或 “适合发朋友圈 / 知识卡片” 的版本。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "A结构化",
+    "timestamp": 1773825859354,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2b36d0425e486ccd80b45168b31de0bf77c7a9b2b5ef374b997e398b204d19aa",
+  "refs": {
+    "sessionId": "1773825894128_tmyc1gqr"
+  },
+  "revisionId": "sha256:6eb4ef9a27338f8e7cadfbfa79d3431023bb7b9c6b8ece02698173a0d4d2523a",
+  "schemaVersion": 1,
+  "updatedAt": 1773825859354
+}

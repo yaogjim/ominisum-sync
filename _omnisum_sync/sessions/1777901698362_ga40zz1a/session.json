@@ -1,0 +1,66 @@
+{
+  "createdAt": 1777901698362,
+  "entityType": "session",
+  "id": "1777901698362_ga40zz1a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将文中的Codex审查提示词加入自己的AI编程工作流中试用。",
+      "在下一次AI生成代码后，用独立模型按缺陷、安全、边界条件三个维度进行复核。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777901962390,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用Codex审查Claude代码",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可将不同AI模型分工为代码生成者和独立审查者，以降低单模型盲点。",
+      "代码审查Prompt应明确审查范围：正确性、边缘情况、安全问题、需求符合度。",
+      "限制模型输出范围有助于避免AI review偏离目标，变成泛泛的重构建议。"
+    ],
+    "oneHighValuePoint": "在代码审查提示词中明确禁止重构、重命名、样式修改和注释建议，可让模型更聚焦真实缺陷。",
+    "oneLineReview": "短小但实用的AI代码审查提示词技巧，适合快速借鉴但证据和深度有限。",
+    "primaryCategory": "AI编程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "代码审查",
+      "提示词工程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出一种AI编程工作流：由Claude Opus负责编写代码，再让Codex进行独立代码审查，并给出一段聚焦缺陷、逻辑错误、安全问题的审查提示词，强调避免让Codex偏向重构和样式建议。",
+    "tags": [
+      "Claude",
+      "Codex",
+      "AI代码审查",
+      "Prompt",
+      "工作流"
+    ],
+    "title": "Leo: Claude Opus 写代码，Codex 做 review",
+    "totalScore": 57,
+    "url": "https://x.com/runes_leo/status/2038169147675193771"
+  },
+  "payloadHash": "sha256:adf44e75c2993db1e399c7d3f13ce8ec898888a28ba8d9ba725bc4fcd357f8a9",
+  "refs": {},
+  "revisionId": "sha256:8cd5067261a92f331bde0f49f5351feab2a81c26a92075b8fd033be0fd0f53e3",
+  "schemaVersion": 1,
+  "updatedAt": 1777902120077
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780615848467,
+  "entityType": "message",
+  "id": "1780615848466_qkckim7x",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Deep Agents沙箱使用指南\n\n**评级**: B (68分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent工程\n**次类别**: LangChain文档, 安全隔离, 开发工具\n**标签**: #Deep Agents #Sandbox #LangChain #Agent安全 #代码执行\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇实用但偏产品文档型的Agent沙箱指南，适合开发可执行代码的LangChain Agent时查阅。\n**核心高价值点**: 明确区分“Agent运行在沙箱中”和“沙箱作为工具”两种架构模式，并指出后者更利于密钥隔离、快速迭代和状态分离。\n\n### 摘要\n文章介绍LangChain Deep Agents中沙箱的作用、适用场景、生命周期管理、两种集成模式、文件传输方式及安全注意事项，重点强调隔离执行环境、避免在沙箱中放置密钥，并给出Daytona等提供商的基本使用示例。\n\n### 知识要点\n- 沙箱后端为Agent提供文件系统工具和execute工具，用于在隔离环境中运行命令\n- 沙箱生命周期可按thread或assistant作用域管理，需配置TTL避免资源和成本失控\n- BaseSandbox只要求提供商实现execute方法，其余文件操作可基于execute封装\n- 沙箱不能防止上下文注入和网络外泄，密钥不应放入沙箱环境\n- upload_files和download_files属于应用侧文件传输API，不同于Agent调用的文件系统工具\n\n### 行动项\n- 若构建代码执行Agent，优先采用“sandbox as tool”模式以隔离密钥和执行环境\n- 为每个会话配置独立sandbox并设置TTL或自动清理策略\n- 不要将API Key、数据库凭证等密钥注入沙箱，改用外部认证工具或代理\n- 在不需要联网时禁用沙箱网络访问，并对沙箱输出进行审查和过滤\n\n### 存档判定\n归档: 是 — 原因: 包含LangChain Deep Agents沙箱集成、生命周期管理、安全注意事项和架构模式，可作为实现代码执行Agent时的参考文档\n删除: 否\n留存决策: 短期参考并按需归档，若正在开发可执行代码类Agent则值得保留",
+    "role": "assistant",
+    "timestamp": 1780615848467,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:de8b50899515fa5e94bcf0cc5247ec944e32e73a895dfc39e63f8e94f3251bf1",
+  "refs": {
+    "sessionId": "1778206386158_ox8ysl10"
+  },
+  "revisionId": "sha256:24a1a0c0dde1f2b6ef0e11fa1c8cf42d562a0f7d3aa2730beb9b2b4d265a3918",
+  "schemaVersion": 1,
+  "updatedAt": 1780615848467
+}

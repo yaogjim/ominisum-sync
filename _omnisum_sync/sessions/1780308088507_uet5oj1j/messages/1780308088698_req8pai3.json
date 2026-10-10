@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780308075248,
+  "entityType": "message",
+  "id": "1780308088698_req8pai3",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 1. 总结\n\n作者给 **Codex** 做了两个 skill：\n\n- **codex-retrospective**\n  - 定期回顾过去几周的会话\n  - 更新 `AGENTS.md`\n  - 提炼可复用的小技能  \n  👉 让 Codex **越用越聪明**\n\n- **codex-fluent**\n  - 解决 session 用久后变重、变慢的问题\n  - 先做 handoff，再安全归档旧 session\n  - 不直接删除历史  \n  👉 让 Codex **一直保持流畅**\n\n两者配合：  \n**一个负责长期进化，一个负责运行效率。**\n\n---\n\n## 2. 解读\n\n这其实是在给 AI 做两件很重要的事：\n\n### ① 让 AI 有“经验总结”\n\n`codex-retrospective` 像是让 Codex 定期写复盘：\n\n> 哪些做法有用？哪些经验可以沉淀？哪些规则该更新？\n\n它不是盲目堆历史，而是把有价值的内容整理进 `AGENTS.md` 或 skill 里。\n\n通俗说：  \n**不是让 AI 记住所有事，而是让它记住真正有用的事。**\n\n---\n\n### ② 让 AI 不被历史拖慢\n\nAI session 用久了，会积累大量上下文，导致：\n\n- 启动慢\n- 响应慢\n- 上下文混乱\n- 成本变高\n\n`codex-fluent` 的思路是：\n\n> 旧会话不删，但归档；新会话轻装上阵。\n\n通俗说：  \n**既保留资料，又不背着一大包袱跑。**\n\n---\n\n## 3. 我的意见\n\n这两个 skill 的方向很对。\n\nAI 工具要长期好用，不能只靠模型本身，还需要一套“工作习惯”：\n\n- 定期复盘\n- 提炼经验\n- 控制上下文膨胀\n- 安全归档历史\n\n尤其是对经常用 Codex / Claude / Cursor 做项目的人来说，这类机制很实用。\n\n不过也要注意一点：\n\n> 自动更新 `AGENTS.md` 要谨慎，最好有人工确认。\n\n否则 AI 可能把偶然经验写成长期规则，反而越用越偏。\n\n---\n\n## 结论\n\n这两个 skill 的价值可以概括为一句话：\n\n> **让 AI 既能成长，又不变笨重。**\n\n一个管“记住经验”，一个管“保持轻快”，很适合作为长期使用 AI 编程助手的基础配置。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780308075248,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a08a10062b91ace5e0fbae9a704b696e5ff1655ec3cbe238ce1b9023f14ea85a",
+  "refs": {
+    "sessionId": "1780308088507_uet5oj1j"
+  },
+  "revisionId": "sha256:1602463ed25adfcffbf2e46cee7316294a06b13f98c9be11cb4b8c0aa967946a",
+  "schemaVersion": 1,
+  "updatedAt": 1780308075248
+}

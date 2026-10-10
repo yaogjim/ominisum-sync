@@ -1,0 +1,65 @@
+{
+  "createdAt": 1774227533043,
+  "entityType": "session",
+  "id": "1774227533043_m70yknpg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若业务相关，可进一步查找官方插件文档或可复现教程验证接入方式",
+      "关注该方案的合规性、内容审核和 IP 限制风险后再决定是否投入实践"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1774227544003,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "微信接入OpenClaw实践",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "微信可通过官方 OpenClaw 插件与特定版本客户端实现授权接入",
+      "相关消息通道可能基于 HTTP 长轮询，可用于构建自定义机器人链路"
+    ],
+    "oneHighValuePoint": "指出微信官方插件底层可能是基于 HTTP 长轮询的消息通道，这为自定义 Agent 替换提供了思路。",
+    "oneLineReview": "有一定新鲜度和工具启发，但更像线索披露而非可直接复用的高质量技术内容。",
+    "primaryCategory": "AI工具接入",
+    "rating": "C",
+    "rejectReason": "内容偏消息型和猜测型，方法细节、验证过程与风险说明不足，难以支撑深度学习或复现。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "微信生态",
+      "开发者实践"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍微信通过官方插件接入 OpenClaw 的方式，并提到作者对插件进行了逆向分析，认为其本质是基于 HTTP 长轮询的消息通道，可替换 Agent 实现更灵活的模型接入。但正文更像社交平台动态，细节有限，证据与完整方案不足。",
+    "tags": [
+      "OpenClaw",
+      "微信插件",
+      "Claude Code",
+      "逆向工程",
+      "消息通道"
+    ],
+    "title": "indigo: 微信原生接入 OpenClaw 🦞 你只需要在有 OpenClaw 的设备上安装官方插件（npx -y @tencent-weixin/openclaw-we…",
+    "totalScore": 45.5,
+    "url": "https://x.com/indigox/status/2035606012011454473"
+  },
+  "payloadHash": "sha256:19f2ceef279cfb23ab6657c0650c1c7bd77fee80dfa26ab91b132d5eff3e0919",
+  "refs": {},
+  "revisionId": "sha256:71868a10c4707c68a1bcf8f1cda1d08442ee32f90d6bd7c9a714bcee06d42f7f",
+  "schemaVersion": 1,
+  "updatedAt": 1774236162325
+}

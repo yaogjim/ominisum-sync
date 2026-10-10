@@ -1,0 +1,63 @@
+{
+  "createdAt": 1773917681218,
+  "entityType": "session",
+  "id": "1773917681218_6wzki7gs",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若关注AI Agent或虚拟角色方向，可快速查看其架构图和依赖项目，筛选可复用组件。",
+      "若准备落地类似系统，优先评估其语音链路、记忆模块和游戏代理实现，而非通读全部README。"
+    ],
+    "archiveReason": "可作为AI虚拟角色、语音交互和游戏代理方向的项目索引与技术栈参考。",
+    "classifiedAt": 1773917986379,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 7,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "开源AI虚拟伴侣项目介绍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "AI虚拟角色系统可由语音识别、语音合成、记忆模块、模型推理层和舞台渲染层组合构成。",
+      "Web技术栈可被用于实现跨平台AI伴侣应用，并扩展到Discord、Minecraft、Factorio等外部环境。"
+    ],
+    "oneHighValuePoint": "将浏览器端WebGPU/WebAudio/WebAssembly能力与LLM、语音、游戏代理整合到同一可自托管系统中的产品化思路较有参考价值。",
+    "oneLineReview": "有新意的开源项目展示页，但更像功能清单而非高质量技术分析材料。",
+    "primaryCategory": "AI应用项目",
+    "rating": "C",
+    "rejectReason": "README以项目宣传和功能罗列为主，方法论、证据和可直接复用的实践细节不足。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "虚拟角色系统",
+      "开源工程文档"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份开源项目AIRI的GitHub README，介绍了一个可自托管的AI虚拟伴侣/VTuber系统，支持实时语音聊天、Minecraft和Factorio代理、多端运行及多模型接入。内容覆盖架构模块和开发命令，但偏功能展示，缺少效果评估与系统性方法论。",
+    "tags": [
+      "AI VTuber",
+      "LLM Agent",
+      "语音交互"
+    ],
+    "title": "moeru-ai/airi: 💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecraft, Factorio playing. Web / macOS / Windows supported.",
+    "totalScore": 45.5,
+    "url": "https://github.com/moeru-ai/airi"
+  },
+  "payloadHash": "sha256:9c1e437ddb577560e9d7256f050b3529ba9605b2eb844c5708bd8829dc739946",
+  "refs": {},
+  "revisionId": "sha256:4b9a07f38165393b1f5e84ba3905c4628f7cf4bd30400b7e1f8d512be6d6c081",
+  "schemaVersion": 1,
+  "updatedAt": 1773918650563
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773729162255,
+  "entityType": "session",
+  "id": "1773729162255_dsuwxffz",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若确实需要多Agent协作，可直接查阅 acpx 官方仓库和安装文档",
+      "优先寻找包含完整工作流、成本对比和实际案例的长文再决定是否采用"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773729214788,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "多Agent交叉评审工具推荐",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量过低，证据不足，可替代性强，后续检索官方文档或更完整教程的价值明显更高。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "ACP/acpx 可用于在 agent 之间相互调用",
+      "多模型交叉 review 可作为输出质量校验的一种实践方向"
+    ],
+    "oneHighValuePoint": "指出了通过 ACP/acpx 将多个 agent 串联起来做交叉评审的思路。",
+    "oneLineReview": "有一点工具线索，但远未达到值得留存学习的深度。",
+    "primaryCategory": "AI开发工具",
+    "rating": "D",
+    "rejectReason": "内容主要是社交媒体上的简短工具展示与插件推广，缺少完整案例、操作细节、效果对比和方法论沉淀。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "Agent工作流",
+      "社交媒体工具推荐"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一条关于用 acpx 在不同 AI agent 之间互相调用、让 Codex、Gemini、OpenCode 评审 Claude 输出的短帖，同时附带作者自制 Claude Code 插件的推荐。内容偏展示和推广，缺少深入说明。",
+    "tags": [
+      "Codex",
+      "Gemini",
+      "Claude",
+      "acpx",
+      "多Agent评审"
+    ],
+    "title": "Frad: 让 codex + gemini + opencode 去 review claude 的输出👀 https://t",
+    "totalScore": 34,
+    "url": "https://x.com/FradSer/status/2033455572239192185"
+  },
+  "payloadHash": "sha256:615118ffa16a2034c3d355e6ad780c66792c104cf84023854fed707b3a7042df",
+  "refs": {},
+  "revisionId": "sha256:f8ff071e649f0d8af373d2cdf85cf28bd6f010e7e6bcdbe3a338c7755dc795ea",
+  "schemaVersion": 1,
+  "updatedAt": 1773729214790
+}

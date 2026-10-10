@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773299304039,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1773299304039",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "下面给你一个**具体实例**，并基于该实例提炼出**PicoClaw 的最佳实践**。\n\n---\n\n## 实例：把一台闲置安卓手机变成家庭消息型 AI 助手\n\n### 场景\n你有一台旧安卓手机，希望它：\n- 7×24 小时运行\n- 通过**Telegram**跟你对话\n- 能做基础问答、简单搜索、日程 / 记录类任务\n- 成本尽量低、部署尽量轻\n\n### 方案选择\n基于 PicoClaw 的特点，最佳落地方式是：\n\n- **运行环境**：安卓手机 + Termux\n- **交互通道**：Telegram\n- **模型配置**：主模型用一个稳定的云端 LLM\n- **搜索工具**：先启用 DuckDuckGo，后续再接 Tavily/Brave\n- **部署方式**：先单机直跑，不上 Docker\n\n---\n\n## 精炼最佳实践\n\n### 1. 先选 “最小可用链路”\n对这个实例，最优先组合是：\n\n**Termux + PicoClaw 二进制 + Telegram + DuckDuckGo**\n\n原因：\n- 部署最简单\n- 不依赖复杂网关和容器\n- Telegram 配置成本最低\n- DuckDuckGo 无需 API Key，适合先跑通\n\n---\n\n### 2. 通道优先选 Telegram\n虽然 PicoClaw 支持很多渠道，但在个人助手场景下：\n- **Telegram 最适合做第一入口**\n- 配置简单，只要 bot token\n- `allow_from`可直接限制访问用户\n- 运维成本远低于 LINE / WeCom / WhatsApp webhook 类方案\n\n**建议**：第一阶段不要同时接多个渠道，先把一个渠道打磨稳定。\n\n---\n\n### 3. 模型配置要 “一个主模型 + 清晰别名”\n例如：\n- `model_name: gpt4`\n- 实际指向某个稳定模型，如`openai/gpt-5.2`\n\n这样做的好处：\n- 后续替换底层 provider 时，不影响 agent 默认配置\n- 降低迁移成本\n- 配置更统一\n\n**实践建议**：\n- 默认只保留 1 个主模型\n- 第二个模型作为备用，不要一开始堆很多 provider\n\n---\n\n### 4. 工具能力从 “无密钥可用” 开始\n在这个实例里，搜索工具建议：\n1. **先开 DuckDuckGo**\n2. 稳定后再加 Tavily / Brave\n3. 自建能力（如 SearXNG）放到后期\n\n原因：\n- 先验证 “助手是否真的有用”\n- 避免一开始把问题复杂化到 API、配额、网络和搜索质量上\n\n---\n\n### 5. 严格限制访问权限\n消息型 AI 助手一旦接入 IM，**权限控制是第一优先级**。\n\n在 Telegram 中应配置：\n- `allow_from: [\" 你的用户 ID\"]`\n\n这是最关键的安全最佳实践之一。  \n**不要**在未限制访问者的情况下直接暴露机器人。\n\n---\n\n### 6. 工作目录与配置分离\n建议明确这两部分：\n- `~/.picoclaw/config.json`：配置\n- `~/.picoclaw/workspace`：工作区 / 数据区\n\n这样做的价值：\n- 升级二进制不影响业务数据\n- 容易备份和迁移\n- 出问题时更容易排查\n\n---\n\n### 7. 控制 agent 复杂度，避免旧手机过载\n虽然 PicoClaw 很轻量，但旧手机依然资源有限。建议：\n- `max_tool_iterations`不要设太高，先用默认或更低值\n- 不要同时开过多通道\n- 不要一开始就加大量自动化任务\n\n核心原则：\n> 先把 “稳定响应” 做好，再追求 “复杂能力”。\n\n---\n\n### 8. 优先用 “消息助手” 场景，而不是重型自动化\n在旧手机上，最适合 PicoClaw 的任务是：\n- 问答\n- 搜索总结\n- 备忘记录\n- 轻量计划管理\n\n不建议一开始就做：\n- 大规模爬取\n- 长链路自动化\n- 重度多工具调用\n\n因为这些更依赖网络、模型时延和外部系统稳定性，而不是 PicoClaw 本身。\n\n---\n\n### 9. 采用 “两阶段部署”\n**阶段 1：跑通**\n- 本地启动\n- 命令行验证\n- Telegram 收发正常\n\n**阶段 2：稳定化**\n- 增加开机自启\n- 增加日志检查\n- 增加备用模型或搜索 API\n\n这比 “一次性全配置完” 成功率高很多。\n\n---\n\n## 这个实例下的推荐配置思路\n\n简化理解就是：\n\n- **设备**：旧安卓手机\n- **部署**：Termux 直接运行 PicoClaw\n- **模型**：1 主 1 备\n- **搜索**：DuckDuckGo\n- **通道**：只开 Telegram\n- **安全**：只允许自己访问\n- **目标**：低功耗、稳定在线、轻量可用\n\n---\n\n## 一句话总结\n\n**PicoClaw 的最佳实践不是一开始把功能开满，而是在超轻量设备上先构建一条 “最小、稳定、安全、可维护” 的助手链路。**\n\n如果你愿意，我下一步可以直接基于这个实例，给你输出一份**“旧安卓手机 + Termux + Telegram 的最简配置模板”**。",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1773299304039,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7ec4dde562cc3cc913905c70dc2c2bedbf445ad73082b0222af963bb2a07661f",
+  "refs": {
+    "sessionId": "1773299123655_fku66wi7"
+  },
+  "revisionId": "sha256:3a5d5119550d0eb5f5fb5e65170b2a995111a2b6a47e99eac3b3e7840e6e46e3",
+  "schemaVersion": 1,
+  "updatedAt": 1773299304039
+}

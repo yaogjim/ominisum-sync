@@ -1,0 +1,23 @@
+{
+  "createdAt": 1773651211987,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773651211987",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇内容的主旨是：`sandbox cloud`新增了 “浏览器自动化服务”，让用户能直接在沙箱里自动操作网页、跑端到端测试，并保存登录态等用户状态。配套讨论里，也补充了这类 AI 浏览器自动化在真实使用中的效率提升和落地机会。\n\n- **核心发布**\n  - `sandbox cloud`已正式上线浏览器自动化服务。\n  - 所有新建沙箱都可通过内置的`browser cli`和`skill`来操作网站。\n  - 主要用途包括：网页自动化、`e2e`测试、模拟真人登录。\n\n- **关键能力**\n  - 支持在沙箱中直接执行浏览器操作，不需要用户手动点网页。\n  - 可结合`sandbox snapshot`做快照备份，保存凭证和用户状态。\n  - 这意味着登录后的环境、测试前的环境都可以复用，减少重复配置成本。\n\n- **适用场景**\n  - **自动化测试**：比如运行网站的`e2e`测试，验证页面流程是否正常。\n  - **登录态操作**：比如模拟用户登录后，再执行后续动作。\n  - **状态备份与恢复**：借助快照保存凭证、Cookie、用户态，方便回滚或复现问题。\n\n- **评论区提炼：产品与机会**\n  - 有用户认为作者的经验很值得参考，重点是 “先找到客户，再帮客户解决问题”。\n  - 除了技术实现，营销和技术分享同样重要。\n  - 评论还提到：随着 AI Agent（不只是某一个产品）逐步普及，这类工具还有很多机会。\n\n- **评论区提炼：技术进展**\n  - 有用户提到，已经能用`Chrome 146`最新的 Remote Debugging，让 AI Agent 直接操控 “当前打开的 Chrome”，而不必再像以前那样用`-remote-debugging-port=9222`启动一个新实例。\n  - 给出的操作步骤是：\n    - 打开`chrome://inspect/#remote-debugging`\n    - 安装并启用`Chrome DevTools MCP`\n    - 再把当前浏览器交给 AI Agent 操控\n\n- **评论区提炼：效率数据**\n  - 有用户对比了不同网页抓取方案的成本：\n    - 传统兜底到`Playwright`时，一条推文可能吃掉约`8000 token`，主要是 DOM 噪音太多。\n    - 使用官方 Chrome 扩展（测试阶段）处理类似兜底场景，只需约`700 token`。\n  - 也就是说，成本大约相差`10 倍`。\n  - 对方给出的经验是：不同场景用不同工具，例如 “读推文先用轻量抓取，失败了再切 Chrome”。\n\n- **补充信息**\n  - 热门回复中还夹带了一条`Filecoin`网络数据播报，包括：`Network QualityAdjPower 17.45 EiB`、`24h Block Rewards 65,961 FIL`、`Active Nodes 837`等。\n  - 但这部分与本文主题关联不大，更像是评论区里的独立信息。  \n\n如果你愿意，我也可以把这篇内容进一步压缩成 “极简版 3 条总结”。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1773651211987,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1e0a713595c260f2d3eb2656bc8740acac171eaa8914f592e9fbd256d7a63b3a",
+  "refs": {
+    "sessionId": "1773650783991_0ihhuaj9"
+  },
+  "revisionId": "sha256:05657b9327364d26f0fd14a115f53a788eb8cf3b7f229487abac979df9bd7ba6",
+  "schemaVersion": 1,
+  "updatedAt": 1773651211987
+}

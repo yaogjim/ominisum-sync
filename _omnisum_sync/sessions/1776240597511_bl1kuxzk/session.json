@@ -1,0 +1,67 @@
+{
+  "createdAt": 1776240597511,
+  "entityType": "session",
+  "id": "1776240597511_bl1kuxzk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在一个常用项目上试验“一个项目一个 tmux session”的工作方式，评估切换成本是否明显下降。",
+      "按文中思路实现自己的 `cc` 启动函数，并根据现有终端环境替换 cmux 或 Ghostty 相关部分。"
+    ],
+    "archiveReason": "提供了可直接复用的多项目 AI 编程工作流方案，并包含完整配置与跨设备使用思路。",
+    "classifiedAt": 1776646321627,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "用tmux冻结多项目上下文",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "tmux session 可以作为项目级上下文容器，保留对话、目录状态、shell 历史与 diff 视图。",
+      "多项目并行的核心瓶颈不是 agent 数量，而是切换后重建上下文的认知税。",
+      "通过 shell 函数封装 tmux、Claude Code、broot 和 lazygit，可以形成低摩擦的一键工作区。",
+      "跨设备 attach tmux session 是该方案的重要增益，尤其适合移动场景下续接工作。"
+    ],
+    "oneHighValuePoint": "最有价值的是把“上下文”视为应被冻结的运行态，而不是靠笔记重新压缩与恢复，从而把认知负担转移给终端会话。",
+    "oneLineReview": "这是篇强执行导向的工作流文章，方法实用清晰，但证据更多来自个人经验而非系统验证。",
+    "primaryCategory": "开发效率",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "AI 编程工作流",
+      "终端工具配置"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕并行使用 Claude Code 时的上下文切换成本，提出“不要切换而是冻结 context”的策略，用 tmux session 保存项目终端状态，并结合 cmux、broot、lazygit 构建一键启动的多项目工作流，强调跨设备续接和降低认知负担。",
+    "tags": [
+      "tmux",
+      "Claude Code",
+      "上下文切换",
+      "终端工作流",
+      "开发效率"
+    ],
+    "title": "停止切换，冻结 Context",
+    "totalScore": 74.5,
+    "url": "https://x.com/Jimmy_JingLv/status/2043946966187684297"
+  },
+  "payloadHash": "sha256:0632a670fcaa3d9229248662c230bc320f52cf180b989020d6b13cacbd4ef76e",
+  "refs": {},
+  "revisionId": "sha256:68f276ae774d9aaff742b019031139675e9f1cf2017879b0218a89c556d88ce9",
+  "schemaVersion": 1,
+  "updatedAt": 1776646676930
+}

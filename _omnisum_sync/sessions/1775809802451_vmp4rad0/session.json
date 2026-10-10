@@ -1,0 +1,65 @@
+{
+  "createdAt": 1775809802451,
+  "entityType": "session",
+  "id": "1775809802451_vmp4rad0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估自己当前文献检索流程是否缺少状态化结果集和集合内二次检索能力",
+      "将文中search、grep、map、sql的组合模式整理成可复用的科研Agent检索模板"
+    ],
+    "archiveReason": "介绍了面向Agent的文献检索CLI设计思路、核心命令和典型使用场景，可用于后续工具评估对比",
+    "classifiedAt": 1775820364760,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 5,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "科研文献CLI工具Paperclip介绍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "gxl.ai",
+    "favicon": "",
+    "knowledgePoints": [
+      "Agent做文献探索时，状态化结果集比无状态API更利于逐步缩小范围和发现隐藏线索",
+      "将全文grep、SQL过滤、批量并行抽取和图像问答结合，可显著提升科研文献探索效率"
+    ],
+    "oneHighValuePoint": "最有价值的是把“状态化结果集+集合内grep/筛选/并行抽取”组合成一套可复用的Agent文献探索工作流。",
+    "oneLineReview": "有产品洞察和较强演示性，但本质仍是带营销色彩的工具发布文，证据独立性一般。",
+    "primaryCategory": "AI科研工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后保留，适合作为科研Agent工具选型资料",
+    "secondaryCategories": [
+      "文献检索",
+      "Agent工具链"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章发布了Paperclip，一款面向科研Agent的文献检索CLI，支持search、grep、map、ask-image、sql和状态化结果集操作，主打在大规模论文语料上的快速检索、并行阅读与上下文连续探索。",
+    "tags": [
+      "Paperclip",
+      "科学文献检索",
+      "CLI",
+      "Agent",
+      "生物医药"
+    ],
+    "title": "Paperclip: the command-line interface for scientific literature — GXL Blog",
+    "totalScore": 60.5,
+    "url": "https://gxl.ai/blog/paperclip"
+  },
+  "payloadHash": "sha256:857a394c519ddaee253c24cfe0fdd430cb5825aeaba9ec9338226709ebab1e55",
+  "refs": {},
+  "revisionId": "sha256:210c703471a21115f21f6f15cf32e495657345d9fe0a6e1d87e5273622b486ee",
+  "schemaVersion": 1,
+  "updatedAt": 1775820364763
+}

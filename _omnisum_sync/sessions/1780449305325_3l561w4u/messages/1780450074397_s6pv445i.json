@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780450074398,
+  "entityType": "message",
+  "id": "1780450074397_s6pv445i",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent开发框架选型速览\n\n**评级**: C (44.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI开发\n**次类别**: Agent框架, 技术选型\n**标签**: #Agent #LangGraph #LlamaIndex #Pydantic AI #CrewAI #OpenAI Agents SDK\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 4 | 10% |\n| 新颖性 | 3 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 适合作为 Agent 框架选型的快速提示，但缺少深度分析和可靠证据。\n**核心高价值点**: 按应用场景区分 Agent 框架选择，比单纯比较框架热度更有参考意义。\n\n### 摘要\n文章以一条社交媒体帖形式概括主流 Agent 开发框架的适用场景，如个人 coding 可试 Pi，企业级 Agent 可考虑 OpenAI Agents SDK 与 LangGraph，RAG 场景可用 LlamaIndex，结构化业务 Agent 可用 Pydantic AI。\n\n### 知识要点\n- 企业级 Agent 开发可优先关注 OpenAI Agents SDK 与 LangGraph 的组合。\n- 知识库和 RAG 场景中，LlamaIndex 与 LangGraph 是常见组合。\n- 结构化业务 Agent 可关注 Pydantic AI，快速演示和内容型多 Agent 可关注 CrewAI。\n- 热门回复中提到 Agent 可拆分为定义、持久化和运行时三个部分。\n\n### 行动项\n- 根据自身 Agent 场景建立框架候选清单，而不是盲目追逐热门框架。\n- 如需企业级落地，进一步调研 OpenAI Agents SDK、LangGraph、LlamaIndex 和 Pydantic AI 的文档与案例。\n- 补充阅读 Agent 存算分离、Memory、Workspace、Session 管理等架构资料。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是简短选型建议，缺少对各框架能力、限制、适用边界和实践案例的展开说明，证据支撑较弱。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1780450074398,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:0ca7f281047f959afabe262a5d61c28ab65bb674dd08db3a9722b652235e4b14",
+  "refs": {
+    "sessionId": "1780449305325_3l561w4u"
+  },
+  "revisionId": "sha256:6e7946a6969c0bf2d443cd78b7fcfa34168fcd4f66a5e58007a2b060e0ce9eab",
+  "schemaVersion": 1,
+  "updatedAt": 1780450074398
+}

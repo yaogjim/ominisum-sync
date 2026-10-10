@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773829578453,
+  "entityType": "message",
+  "id": "1773829578452_f9k2spwc",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 统一云沙箱SDK介绍\n\n**评级**: B (64分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 开发工具与基础设施\n**次类别**: AI Agent 工程, 云端沙箱与运行环境\n**标签**: #TypeScript SDK #多云抽象 #Sandbox #AI Agent #Provider Adapter\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 这是一篇完成度较高的产品说明文档，实用性不错，但更偏接口总览而非深度方法论沉淀。\n**核心高价值点**: 最有价值的是将多家云沙箱能力统一到同一 TypeScript 接口，并用运行时能力检测避免伪兼容。\n\n### 摘要\n文章介绍 Sandbank 这一面向 AI Agent 的统一沙箱 SDK，通过抽象 Provider 接口屏蔽 Daytona、Fly.io、Cloudflare 与自托管 BoxLite 的差异，并提供能力矩阵、快速开始、会话编排与设计原则。\n\n### 知识要点\n- 通过 Provider 抽象层统一创建、销毁、执行命令和文件读写等沙箱基础操作\n- 用可选能力检测模式处理 volumes、port expose、snapshot、streaming 等差异化特性\n- 支持多 Agent 会话编排、共享上下文和 Relay 通信中枢\n- 设计原则强调最小接口、显式行为、幂等销毁与 Provider/Session 解耦\n\n### 行动项\n- 如果你的工作涉及 AI Agent 基础设施，可评估其是否能替代现有单一云厂商沙箱接入层\n- 根据文中的能力矩阵，对照自身需求核对目标 Provider 是否支持 volumes、port.expose、snapshot 等能力\n- 先用 README 的快速开始示例跑通一个最小原型，再决定是否深入阅读源码和一致性测试\n\n### 存档判定\n归档: 是 — 原因: 作为产品 README，适合在选型或接入云沙箱时检索参考，信息结构清晰且示例完整\n删除: 否\n留存决策: 短期参考并归档，后续在需要多云沙箱方案时再深入阅读",
+    "role": "assistant",
+    "timestamp": 1773829578453,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:56e5c92a3747a533844ee2e330ffdcf24b48d3fd46356c35e0fe45dabb1782ac",
+  "refs": {
+    "sessionId": "1773650025674_pyak56iq"
+  },
+  "revisionId": "sha256:4fba0cece5b0f97881634ba443d54cf2fe80d007ac276dfbf2c2b139c34be034",
+  "schemaVersion": 1,
+  "updatedAt": 1773829578453
+}

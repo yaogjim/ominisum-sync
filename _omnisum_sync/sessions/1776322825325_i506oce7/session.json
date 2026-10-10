@@ -1,0 +1,66 @@
+{
+  "createdAt": 1776322825325,
+  "entityType": "session",
+  "id": "1776322825325_i506oce7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你对 LLM harness/agent optimization 感兴趣，直接查看 GitHub 仓库与 ONBOARDING.md",
+      "若无明确相关项目需求，可删除该推文，仅在需要时通过仓库地址重新检索"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776325536134,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Meta-Harness代码发布简讯",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "仅提供仓库发布消息和非常粗略的用途说明，信息密度低、证据不足，独立留存价值很弱。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Meta-Harness 项目已开源官方实现",
+      "仓库目标不仅是复现实验，还支持新领域中的 harness 构建",
+      "使用入口强调让代理阅读 ONBOARDING.md 并通过对话完成上手"
+    ],
+    "oneHighValuePoint": "提供了官方 GitHub 仓库入口，便于直接转向一手代码和 ONBOARDING 文档。",
+    "oneLineReview": "有项目追踪价值，但作为单篇内容几乎只有“已发布代码”这一条信息。",
+    "primaryCategory": "AI智能体工具发布",
+    "rating": "D",
+    "rejectReason": "内容主要是发布通知，缺少方法细节、实验结果和可执行说明，评论区也基本无有效补充。",
+    "retentionDecision": "信息过于简略，除非你正跟进该项目，否则建议删除",
+    "secondaryCategories": [
+      "LLM评测与优化",
+      "科研项目动态"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一条关于 Meta-Harness 开源代码发布的推文，核心信息是仓库已上线，可用于复现实验并帮助用户在新领域构建 Meta-Harness。正文没有展开方法机制、适用边界、效果数据或实践示例。",
+    "tags": [
+      "Meta-Harness",
+      "代码发布",
+      "LLM代理",
+      "Stanford",
+      "GitHub仓库"
+    ],
+    "title": "Yoonho Lee: We just released code for Meta-Harness",
+    "totalScore": 32.5,
+    "url": "https://x.com/yoonholeee/status/2044442372864700510"
+  },
+  "payloadHash": "sha256:9d3ed03ee403927d4a286819a7db1ddcbe46c2c4b2734e016c957ee76e26f6d0",
+  "refs": {},
+  "revisionId": "sha256:08094b2ee20469abbc5e05889c00add76755a56fc34660576fcb59c6303a9faa",
+  "schemaVersion": 1,
+  "updatedAt": 1776643741255
+}

@@ -1,0 +1,72 @@
+{
+  "createdAt": 1777005213812,
+  "entityType": "session",
+  "id": "1777005213812_lgb5cyhz",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "重新审视自己的 AI 编码流程，重点补齐 PR 审查、测试失败定位、回滚与 CI/CD 稳定性环节。",
+      "借鉴 Tangle/Tangent 思路，为实验工作流设计可复现、可缓存、可分享的基础设施。",
+      "将“token 使用量”从结果指标降级为过程信号，增加对质量控制与部署效率的衡量。",
+      "关注客户行为模拟、反事实分析和自动研究在业务优化中的潜在应用场景。",
+      "跟进 Liquid AI、状态空间模型及混合架构在低延迟场景中的实际表现。"
+    ],
+    "archiveReason": "包含大型科技公司AI落地的一手实践、组织指标变化与平台化方法，适合反复参考。",
+    "classifiedAt": 1777005509028,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Shopify全面押注AI实录",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "read.readwise.io",
+    "favicon": "https://read.readwise.io/reader-fav.ico",
+    "knowledgePoints": [
+      "企业级 AI 采用会出现由模型质量提升触发的阶段性跃迁，而非线性增长。",
+      "高质量 AI 编码流程的关键不在更多并行代理，而在批评循环、严格评审和部署链路治理。",
+      "Tangle 强调可复现、内容寻址缓存与从实验到生产的一体化数据/ML 工作流。",
+      "Tangent 展示了 Auto Research 在优化搜索、提示压缩和存储等非纯 AI 场景中的通用性。",
+      "SimGym 的核心护城河不只是模型，而是长期真实行为数据、仿真基础设施与成本优化能力。",
+      "Liquid AI 代表了在低延迟、长上下文和蒸馏目标上具竞争力的非 Transformer 路线。"
+    ],
+    "oneHighValuePoint": "文章最有价值的点是指出 AI 编码的真正瓶颈已从“生成代码”转向“评审、测试、部署与系统稳定性”，这比单纯追求 token 消耗更接近真实生产效率。",
+    "oneLineReview": "一手信息很强、方法论价值高，但证据主要来自访谈口述，落地细节需自行提炼验证。",
+    "primaryCategory": "AI工程与组织实践",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "企业AI转型",
+      "机器学习基础设施"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一篇围绕 Shopify CTO 的长篇访谈实录，核心内容包括企业内 AI 工具采用拐点、AI 编码瓶颈从生成转向评审与 CI/CD、以及 Tangle、Tangent、SimGym、Liquid AI 等内部系统的设计思路与应用场景。",
+    "tags": [
+      "Shopify",
+      "AI编码",
+      "自动研究",
+      "ML平台",
+      "客户模拟"
+    ],
+    "title": "Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym — wi… | Readwise",
+    "totalScore": 73,
+    "url": "https://read.readwise.io/new/read/01kpvb1gtge57ke20pwnd4805z"
+  },
+  "payloadHash": "sha256:43caaa215305b72768791f5ff6e4f7ed4b31e0ef53e17e436f62daf7198bfbff",
+  "refs": {},
+  "revisionId": "sha256:b6ec497c5e21fd21b9b6e1ae7dc2835a5bee11b2afa51ad7055c18d3340ad9a4",
+  "schemaVersion": 1,
+  "updatedAt": 1777005910336
+}

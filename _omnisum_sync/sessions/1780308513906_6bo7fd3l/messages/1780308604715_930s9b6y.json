@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780308604716,
+  "entityType": "message",
+  "id": "1780308604715_930s9b6y",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: ECC智能编码工具集指南\n\n**评级**: A (72.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI编程工具\n**次类别**: 开发效率, Agent工作流, Claude Code生态\n**标签**: #ECC #Claude Code #AI Agent #开发工作流 #工具配置\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 信息量大且实操性强，但内容偏README式堆叠和项目宣传，证据质量主要依赖自述。\n**核心高价值点**: 将AI编程工具的Agent、Skills、Rules、Hooks、MCP和Token优化整合成一套可复用的跨工具工作流体系。\n\n### 摘要\n文章是ECC项目的GitHub README，介绍其作为跨AI编程工具的Agent工作流系统，涵盖安装方式、技能与Agent目录、Hooks、规则、MCP配置、安全扫描、Token优化和多工具适配方案。\n\n### 知识要点\n- ECC支持Claude Code、Cursor、Codex、OpenCode、GitHub Copilot等多种AI编程环境，并提供不同程度的配置适配。\n- Skills被定位为主要工作流入口，Commands逐步作为兼容层保留。\n- 安装时不应叠加插件安装和完整手动安装，否则容易产生重复Hooks、重复技能和异常行为。\n- Token优化建议包括默认使用Sonnet、限制thinking tokens、提前compact、减少MCP数量和控制活跃工具数量。\n- AgentShield可用于扫描Claude Code配置中的Secrets、权限、Hook注入、MCP风险和Agent配置问题。\n\n### 行动项\n- 按需查看ECC的Shorthand Guide和Security Guide，而不是一次性阅读完整README。\n- 如果使用Claude Code，可先尝试最小化安装，只复制common和实际使用语言的rules。\n- 检查当前AI编程环境是否存在重复Hooks、重复MCP或过多工具导致的上下文膨胀。\n- 借鉴其Skills/Agents/Rules/Hooks分层思路，整理自己的AI编程工作流模板。\n\n### 存档判定\n归档: 是 — 原因: 包含跨Claude Code、Cursor、Codex、OpenCode等工具的安装、配置、工作流、Token优化、安全扫描和Agent编排信息，适合作为工具选型与实践参考。\n删除: 否\n留存决策: 长期保留，作为AI编码工具链和Agent工作流配置参考",
+    "role": "assistant",
+    "timestamp": 1780308604716,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:7e2d25cf53f1a6d5e149138b63b5eafb872edd8d557e1f4286f4f8d3c83c1eca",
+  "refs": {
+    "sessionId": "1780308513906_6bo7fd3l"
+  },
+  "revisionId": "sha256:63df19891ef0575636fea6d3b471f8bd9dbdcb59cd17db1de77da909b62846e6",
+  "schemaVersion": 1,
+  "updatedAt": 1780308604716
+}

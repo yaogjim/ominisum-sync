@@ -1,0 +1,67 @@
+{
+  "createdAt": 1777901729102,
+  "entityType": "session",
+  "id": "1777901729102_yutcs8ki",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "打开 GitHub 仓库检查项目活跃度、许可证、安装方式和核心功能完整性。",
+      "用 2-3 个真实开发任务对比 Codeany 与 Claude Code 的稳定性、速度和权限控制。",
+      "重点验证 hook、session 管理、permission 配置、MCP 调用等关键能力是否可用。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777901991526,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codeany复刻Claude Code体验",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Codeany 声称基于 Claude Code sourcemap 分析并用 Go 重构核心 CLI/UI 逻辑。",
+      "项目引入 open-agent-sdk-go，并配套 Python、Rust、Go、TypeScript 多语言 SDK。",
+      "作者初步测试了联网搜索、skills、MCP、CLI 自动调用等能力。"
+    ],
+    "oneHighValuePoint": "提供了 Codeany 及 open-agent-sdk 多语言实现的项目入口，可作为替代 Claude Code 的开源工具线索。",
+    "oneLineReview": "适合作为新AI编程工具线索关注，但内容本身信息和证据都较薄。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容主要是个人体验和项目宣传，缺少系统评测、实现细节和可复用方法论，证据质量较弱。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "智能编程助手",
+      "开源项目"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者称使用 Claude Code 分析其 sourcemap，并用 Go 重构 CLI 与 UI 逻辑，生成 Codeany 及多语言 SDK。初步测试认为其可复刻 Claude Code 的联网搜索、skills、MCP、CLI 调用等功能，但尚未完整验证。",
+    "tags": [
+      "Claude Code",
+      "Codeany",
+      "AI Agent",
+      "CLI工具",
+      "open-agent-sdk"
+    ],
+    "title": "idoubi: 昨晚让 claude code 分析 claude code sourcemap，把 cli 和 ui 部分的逻辑抽出来用 go 重构，引入 open-agen…",
+    "totalScore": 40.5,
+    "url": "https://x.com/idoubicc/status/2039537899688100330"
+  },
+  "payloadHash": "sha256:bee653540ec0b83d57a0995bc08caf430eae22b3e3f9f768299b915181aae58e",
+  "refs": {},
+  "revisionId": "sha256:9f4027dbb0d3954385d5cd56f63871abef38bda611e63b05f04c4c7cc97dffc1",
+  "schemaVersion": 1,
+  "updatedAt": 1777902557365
+}

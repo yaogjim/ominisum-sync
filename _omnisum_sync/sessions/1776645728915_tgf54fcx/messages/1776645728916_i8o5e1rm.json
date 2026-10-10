@@ -1,0 +1,20 @@
+{
+  "createdAt": 1776645406515,
+  "entityType": "message",
+  "id": "1776645728916_i8o5e1rm",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Vercel 开源 Open Agents：一个值得关注的 Agent 架构信号\n\n## 核心内容\n\n这条内容主要在讨论 Vercel 新开源的 `Open Agents` 项目。作者基于项目画了一张架构流程图，并注意到一个有意思的细节：项目内部不少引用名称是 `openharness`，让人猜测它可能与港科大的 `OpenHarness` 有关联，或者只是早期立项时出现了重名。\n\n## 关键信号\n\n`Open Agents` 释放出的重要信息，不只是“又一个开源项目”，而是说明大厂正在把 Agent 能力逐步模块化、工程化。  \n从命名和架构看，它背后的重点很可能是：让 Agent 运行框架、工具调用、浏览器控制、任务编排等能力，变成更标准的基础设施。\n\n## 评论区延伸出的行业趋势\n\n评论区讨论进一步放大了一个趋势：**Agent 正在从“会聊天”走向“会执行”**。\n\n一类讨论聚焦在为什么像 Claude Code 这样的工具执行大型任务时不会一次跑完，本质上反映出当前 Agent 在长任务自治、上下文管理和风险控制上仍有限制。  \n另一类讨论提到 `Browser Harness`，强调让 LLM 直接操作真实浏览器的能力，这说明“浏览器作为执行环境”正在成为 Agent 落地的重要方向。\n\n## 更深层的意义\n\n这条内容背后真正值得关注的，不是某个开源仓库本身，而是整个行业正在形成共识：  \n未来 Agent 的竞争，不只是模型能力，更是 **harness（执行载体）+ workflow（工作流）+ tool use（工具调用）+ runtime（运行时）** 的系统能力竞争。\n\n## 一句话总结\n\n`Open Agents` 这次开源，透露出一个明确信号：**Agent 正在进入基础设施化阶段，谁能把执行框架和工程体系搭好，谁就更可能占据下一轮产品制高点。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1776645406515,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:314d3b26ecb8614f5280ca16df9b6bac2f912511f59d8694b59076e1092880f8",
+  "refs": {
+    "sessionId": "1776645728915_tgf54fcx"
+  },
+  "revisionId": "sha256:421c8f96c18fc25dc7a90828418bc3df46c967832876a1f35242117d23eaa4a0",
+  "schemaVersion": 1,
+  "updatedAt": 1776645406515
+}

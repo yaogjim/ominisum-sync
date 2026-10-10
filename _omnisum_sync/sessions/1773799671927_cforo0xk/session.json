@@ -1,0 +1,67 @@
+{
+  "createdAt": 1773799671927,
+  "entityType": "session",
+  "id": "1773799671927_cforo0xk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将Forge与企业AI常见方案（RAG、微调、私有化部署）做一页对比，判断其真实差异点",
+      "继续寻找包含技术细节、评测指标或客户实施案例的二手资料，再决定是否深入跟进"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773827432332,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Mistral企业定制模型平台",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "mistral.ai",
+    "favicon": "",
+    "knowledgePoints": [
+      "企业定制模型可通过预训练、后训练和强化学习三个阶段吸收内部知识并对齐内部规则",
+      "定制模型能提升Agent在工具调用、多步流程和合规约束下的稳定性与可靠性",
+      "平台强调模型控制权、数据主权和在受监管环境中的战略自主性",
+      "Forge支持Dense与MoE架构，并提到多模态与持续评估优化能力"
+    ],
+    "oneHighValuePoint": "最有价值的点是把企业AI竞争力明确锚定为“将机构知识编码进模型本身”，而不只是做外部RAG封装。",
+    "oneLineReview": "这是篇方向判断尚可但信息含量有限的产品发布稿，适合快速了解，不适合投入精读时间。",
+    "primaryCategory": "企业AI基础设施",
+    "rating": "C",
+    "rejectReason": "内容以产品宣传为主，缺少技术细节、指标对比、实施门槛与真实案例拆解，可操作性和证据支撑偏弱",
+    "retentionDecision": "低优先级保留，作为行业产品动态速览材料，短期参考后可删除",
+    "secondaryCategories": [
+      "大模型定制化",
+      "AI Agent平台"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Mistral AI推出的Forge，主打企业基于私有数据训练、对齐和评估定制模型，用于提升Agent在合规、代码、制造等场景中的可靠性与控制权，但整体偏产品宣发，细节不足。",
+    "tags": [
+      "Mistral AI",
+      "Forge",
+      "企业私有数据",
+      "模型训练",
+      "Agent"
+    ],
+    "title": "Introducing Forge | Mistral AI",
+    "totalScore": 47.5,
+    "url": "https://mistral.ai/news/forge"
+  },
+  "payloadHash": "sha256:bb5b8de9d81117c812c6c366e84c21abe76490a913f5ed51d44de4c1ce905570",
+  "refs": {},
+  "revisionId": "sha256:736a7b987499f7d2fbf683e4125c676aa1dc598c2fde0dd16910e19c4f0f8a7f",
+  "schemaVersion": 1,
+  "updatedAt": 1773827432337
+}

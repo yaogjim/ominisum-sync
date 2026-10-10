@@ -1,0 +1,23 @@
+{
+  "createdAt": 1778557719088,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1778557719088",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Multica Autopilot「巡查员」提示词总结\n\n## 核心观点\n\n作者分享了一个用于 Multica 的 Autopilot 自动巡查提示词，目标是让系统定期检查 issue 看板中的异常、堵塞和无人处理状态，减少人工盯看板的成本。\n\n它的价值在于：  \n**当 Agent 做完任务、卡住、等待 review 或 blocker 已解除时，Autopilot 能自动发现并推动流程继续走。**\n\n---\n\n## 使用场景\n\n这个 Autopilot 主要用于巡查以下问题：\n\n- **in_review**：是否缺 reviewer、缺评论、缺 accept /reject/split 决策。\n- **in_progress**：Agent 的 run 已完成、失败或取消，但 issue 状态未更新。\n- **blocked**：阻塞是否已经解除，或需要拆出新的修复 issue。\n- **todo**：是否分配给离线、失效或过期 Agent，或已被后续 issue 替代。\n- **Autopilot 自己创建的巡查 issue**：如果没有实际行动项，需要自动关闭，避免堆积垃圾 issue。\n\n---\n\n## 配置步骤\n\n## 1. 进入 Autopilot\n\n点击 Multica 左侧边栏的**Auto Pilot**。\n\n## 2. 新建 Autopilot\n\n点击右上角**New autopilot**。\n\n## 3. 输入巡查提示词\n\n核心提示词要求 Autopilot 扮演：\n\n> Multica workspace 的 Review Queue Sweep autopilot\n\n它需要定期检查 issue 队列，并输出：\n\n- issue identifier /title/status\n- 问题\n- 证据\n- 建议 owner\n- 建议下一状态\n- 是否已执行 comment /subscribe/assign /status update\n\n最后必须输出：\n\n> Decision Summary：accept /reject/split /follow-up list\n\n## 4. 设置定时触发\n\n在**TRIGGERS**中设置定时运行。  \n作者一般设置为：\n\n> 每 30 分钟运行一次\n\n## 5. 设置为 Run only\n\n这是作者强调的关键点：\n\n> 一定要设置为**Run only**\n\n这样 Autopilot 只会执行巡查，不会在没有任务时乱创建 issue。  \n否则可能导致看板里堆积大量无意义的已完成垃圾 issue。\n\n---\n\n## 提示词的关键规则\n\n## 只做调度，不改业务代码\n\nAutopilot 的权限边界很清晰：\n\n- 可以安全地 comment\n- 可以 subscribe\n- 可以 assign\n- 可以 status update\n\n但不应直接修改业务代码。\n\n## 高风险动作需人工确认\n\n涉及以下行为时，需要请求人工确认：\n\n- 删除\n- 大范围变更\n- 高风险操作\n\n## 注意安全\n\n提示词明确要求：\n\n> 不要打印 secrets /token/key /cookie\n\n避免敏感信息泄露。\n\n---\n\n## 产品价值\n\n这个方案本质上是给 Agent 工作流增加了一个「流程巡检员」。\n\n它解决的不是单点任务执行问题，而是 AI Agent 协作中的流程管理问题：\n\n- 避免任务完成后无人 review\n- 避免 issue 状态静默停滞\n- 避免 blocker 解除后无人推进\n- 避免看板被无效 issue 污染\n- 降低人工持续盯盘成本\n\n---\n\n## 一句话总结\n\n这是一个用 Multica Autopilot 做的「自动看板巡查员」，通过定时扫描 issue 状态，发现堵塞、异常和无人处理的问题，并自动推动 review、分配和状态更新，让 AI Agent 工作流更顺畅。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1778557719088,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:de263a7a35b96ec24296c2b2908f88a5f123498be002a7044c51f75664454636",
+  "refs": {
+    "sessionId": "1778557250449_cvgj9sdd"
+  },
+  "revisionId": "sha256:faa44df87b12cc18789751f74408d540aa4308e80d6aeffde0d724cb7e2a6f53",
+  "schemaVersion": 1,
+  "updatedAt": 1778557719088
+}

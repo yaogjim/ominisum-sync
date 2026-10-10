@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773653809745,
+  "entityType": "session",
+  "id": "1773653809745_32yxpftc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "挑选与你当前场景最接近的 1-2 个示例仓库，评估其输入输出设计是否可复用。",
+      "如需验证平台价值，优先运行最小 cURL 示例而不是通读全部项目列表。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773829428846,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "TinyFish示例仓库概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "TinyFish 试图将真实网站抽象为可编程数据接口，降低浏览器自动化复杂度。",
+      "仓库包含多个可参考的应用样例与 n8n 自动化工作流，适合做需求启发和原型参考。"
+    ],
+    "oneHighValuePoint": "通过大量垂直场景样例，直观展示了“自然语言目标 + 网站 URL => 结构化 JSON 输出”的产品能力边界。",
+    "oneLineReview": "适合快速了解 TinyFish 能做什么，但不适合作为高质量方法论或深度学习材料。",
+    "primaryCategory": "AI智能体开发",
+    "rating": "C",
+    "rejectReason": "内容以项目清单和产品宣传为主，方法论、实现细节与证据支撑不足，深度有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开发资源库",
+      "Web自动化"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份 TinyFish 官方示例仓库说明，汇总了大量基于其 Web Agent API 的演示项目与 n8n 工作流，展示了在竞品分析、价格监控、信息抓取等场景下的应用，但正文偏目录式介绍，缺少深入拆解。",
+    "tags": [
+      "TinyFish",
+      "Web Agent",
+      "示例项目",
+      "自动化",
+      "GitHub仓库"
+    ],
+    "title": "tinyfish-io/tinyfish-cookbook: A collection of sample apps and recipes built with the TinyFish web agent. Open-source examples for you to learn & build!",
+    "totalScore": 48,
+    "url": "https://github.com/tinyfish-io/tinyfish-cookbook"
+  },
+  "payloadHash": "sha256:45617a42a6cee373fb56f48b43bd0eaf5924d5f54697a9229ac7a88598f09e5e",
+  "refs": {},
+  "revisionId": "sha256:5779c745879c6c8d4fc9660de5e3d0eab9c1287b8187cac81fb279ce52532feb",
+  "schemaVersion": 1,
+  "updatedAt": 1773829428851
+}

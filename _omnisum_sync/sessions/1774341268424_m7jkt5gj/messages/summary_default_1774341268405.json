@@ -1,0 +1,23 @@
+{
+  "createdAt": 1774341268405,
+  "entityType": "message",
+  "id": "summary_default_1774341268405",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 《CLAUDE CODE 最佳实践：从 “能用” 到 “真的好用”》精炼大纲\n\n- **核心观点**：Claude Code 不是 “自动写代码工具”，而是需要规则、上下文、权限和工作流配合的高效协作者。\n- **最重要的基础设施**：写好`CLAUDE.md`，明确项目规范、架构决策、常见陷阱和个人偏好，减少重复沟通成本。\n- **高质量输出的前提**：提示词要同时包含**目标、约束、上下文**，并尽量补充文件引用、验证标准和 “不该做什么”。\n- **复杂任务的正确姿势**：优先使用**Plan Mode**，遵循 “探索 → 规划 → 实现 → 验证” 的流程，先想清楚再动手。\n- **提升效率的关键机制**：善用**子 Agent、上下文管理、Memory、Hooks、MCP、IDE 集成**，把搜索、测试、审查、外部连接等任务模块化处理。\n- **安全与可控性保障**：通过**权限规则、Hooks、Git Worktree、频繁 commit**限制高风险操作，确保 Claude 提效而不是制造混乱。\n- **实践底线**：不要把超大任务一次性丢给 Claude，不要在无版本控制环境下使用，也不要让它处理你完全无法审查的内容。\n- **最终结论**：真正决定 Claude Code 上限的，不是模型本身，而是使用者是否建立了清晰、可验证、可回退的工作方式。\n\n**一句话评论**：这篇文章的价值不在于罗列功能，而在于把 Claude Code 从 “会用” 提升到了 “用得稳、用得快、用得可控” 的方法论层面。\n\n**一句话高价值内容**：如果只能记住一条，那就是 —— 先把`CLAUDE.md`、精确提示词和 Plan Mode 用好，这三者决定了你和 Claude Code 协作质量的 80%。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1774341268405,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f60824c1da8b44860109ade92cf792fba316af4977108783dfcbefb013fe07fd",
+  "refs": {
+    "sessionId": "1774341268424_m7jkt5gj"
+  },
+  "revisionId": "sha256:5f11671a7c7b7f46a665e4d5e358bcfd70dec68ff0175b0c003bad3afefa6cd2",
+  "schemaVersion": 1,
+  "updatedAt": 1774341268405
+}

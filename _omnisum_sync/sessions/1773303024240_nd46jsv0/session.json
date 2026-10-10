@@ -1,0 +1,67 @@
+{
+  "createdAt": 1773303024240,
+  "entityType": "session",
+  "id": "1773303024240_nd46jsv0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审查你当前使用或构建的产品是否具备完整 API、CLI 或 MCP 接入能力",
+      "评估关键工作流中哪些环节最适合由长运行智能体替代或增强",
+      "关注 Agent 身份、权限、审计和计费等基础设施是否已成为系统短板"
+    ],
+    "archiveReason": "文章对 Agent-first 软件、API 设计、基础设施与商业模式转变提供了较完整的趋势框架，便于后续做产品判断时回看。",
+    "classifiedAt": 1773830223545,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "面向万亿智能体的软件未来",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "未来软件的核心用户可能从人转向大规模智能体，产品设计需适配机器可调用性",
+      "Agent-first 产品能力包括 API-first、自动注册、身份管理、支付能力、安全审计与持久化环境",
+      "商业模式可能从 seat-based 向 consumption-based 或 volume-based 演化"
+    ],
+    "oneHighValuePoint": "最有价值的观点是“如果一个功能不能被 API/CLI/MCP 调用，在 Agent 时代它几乎等于不存在”。",
+    "oneLineReview": "这是一篇方向判断较强、产品启发明显，但证据和落地细节不足的 Agent 时代宣言式文章。",
+    "primaryCategory": "AI产品与基础设施趋势",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "可中期保留，适合作为判断 Agent 时代产品方向的趋势参考材料",
+    "secondaryCategories": [
+      "Agent 生态",
+      "企业软件战略"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出“软件要从为人设计转向为智能体设计”，核心观点是未来企业将拥有远多于员工数量的 agents，因此 API-first、CLI/MCP 接入、代理身份、预算、治理与安全能力将成为下一代软件竞争关键。",
+    "tags": [
+      "智能体",
+      "API-first",
+      "企业软件",
+      "Agent Infra",
+      "商业模式"
+    ],
+    "title": "Building for trillions of agents",
+    "totalScore": 58.5,
+    "url": "https://x.com/levie/status/2030714592238956960"
+  },
+  "payloadHash": "sha256:975b5f4f9205588cda331404edb05194fb3a7c349cd86bee97e848d8a7562245",
+  "refs": {},
+  "revisionId": "sha256:5ca18c49b1da8448048ac3e00757bf03fabaf39688e4325fec4a6e49d298d9cc",
+  "schemaVersion": 1,
+  "updatedAt": 1773830223548
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780308058186,
+  "entityType": "message",
+  "id": "1780308058185_b1b510i3",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\n宝玉的核心观点：\n\n> **通用 Agent 可能会成为未来的“操作系统”。**\n\n就像今天我们通过 Windows、macOS、iOS 使用电脑和手机，未来我们可能通过一个统一的 **Agent OS** 跟各种服务交互。\n\n未来 App 可能有三种结局：\n\n1. **消亡**  \n   Agent 自己就能完成任务，不再需要 App。\n\n2. **变成工具接口**  \n   App 变成 CLI、API、MCP、Skill，供 Agent 在后台调用。\n\n3. **变成 Agent 插件**  \n   少数复杂场景仍需要 GUI，Agent 临时唤起给用户使用。\n\n对 SaaS 来说，未来可能必须提供：\n\n> **CLI + Skill + Agent 可调用接口**\n\n否则容易被新入口替代。\n\n---\n\n## 二、解读\n\n简单说，以后用户可能不再这样操作：\n\n> 打开 App → 找功能 → 填信息 → 点按钮\n\n而是变成：\n\n> 直接对 Agent 说：“帮我订一张明天去上海的机票，上午出发，预算 1000 内。”\n\n然后 Agent 自动完成：\n\n- 查航班\n- 比价格\n- 填信息\n- 调用支付\n- 给你确认结果\n\n也就是说，**用户入口从 App 变成 Agent**。\n\n这对 App 是巨大冲击。\n\n过去：\n\n> 谁掌握 App，谁掌握用户。\n\n未来可能是：\n\n> 谁掌握 Agent 入口，谁掌握用户。\n\nApp 不一定消失，但会“退到后台”，变成 Agent 可以调用的能力模块。\n\n---\n\n## 三、我的意见\n\n我认同这个方向，但不会一夜之间发生。\n\n### 我认为最可能的趋势是：\n\n> **App 不会全部消亡，但会大量“后台化”。**\n\n简单任务会被 Agent 吃掉，比如：\n\n- 订票\n- 点外卖\n- 查资料\n- 生成报表\n- 安排日程\n\n但复杂任务仍需要 GUI，比如：\n\n- 设计\n- 剪辑\n- 数据分析\n- 编程调试\n- 企业管理审批\n\n所以未来不是“没有 App”，而是：\n\n> **Agent 负责入口，App 负责能力。**\n\n### 真正的关键不只是 Agent 聪不聪明，而是：\n\n- 调用工具是否便宜\n- 是否安全可靠\n- 权限管理是否清晰\n- 用户是否愿意信任它\n- 各家服务是否愿意开放接口\n\n---\n\n## 四、一句话结论\n\n> **未来的竞争，不是 App 和 App 之间的竞争，而是谁能成为 Agent 能调用、用户离不开的基础能力。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780308058186,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9656a69dca239bf017e1eccd1e719c57708340a548d078468e7048cb0433c040",
+  "refs": {
+    "sessionId": "1780307301722_zet2czja"
+  },
+  "revisionId": "sha256:eebbc12aafafdaf13220cfd2fff1f6ce1c9bacfb00eb27931254eec7dbb72b07",
+  "schemaVersion": 1,
+  "updatedAt": 1780308058186
+}

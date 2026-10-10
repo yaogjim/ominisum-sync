@@ -1,0 +1,69 @@
+{
+  "createdAt": 1774867067161,
+  "entityType": "session",
+  "id": "1774867067161_h1ugld7u",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理你当前Agent流程中哪些问题属于Harness层，而不是模型层问题。",
+      "优先为关键任务补上独立评估器、自动化测试和架构约束机制。",
+      "调研并试用一个开源Harness项目，如OpenHands、DeepAgents或DeerFlow。",
+      "为长期运行的Agent设计记忆写入审核与知识验证机制，避免错误经验沉淀。"
+    ],
+    "archiveReason": "内容系统梳理了Harness Engineering的核心框架，并汇总了多家实践与开源项目，便于后续搭建Agent系统时快速回顾。",
+    "classifiedAt": 1774868017024,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent胜负手在Harness",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Harness Engineering的三大核心支柱是评估闭环、架构约束和记忆治理。",
+      "很多Agent性能差异主要来自模型外部系统设计，而非模型本身能力差距。",
+      "约束工具数量、用linter和CI固化架构规则，往往比增加自由度更能提升稳定性。",
+      "记忆系统若缺乏验证机制，会把单个Agent的幻觉扩散成整个系统的污染。"
+    ],
+    "oneHighValuePoint": "最有价值的是把Agent系统抽象为“模型是CPU、Harness是操作系统”，帮助理解竞争优势正从Prompt转向工程化运行框架。",
+    "oneLineReview": "这是一篇方向判断准确、框架清晰，但证据多为二手整理的Agent工程综述。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议中长期保留，适合作为Agent工程化方向的综述型参考材料。",
+    "secondaryCategories": [
+      "系统设计",
+      "LLM应用方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将Agent能力差异归因于模型之外的Harness系统，重点概括评估闭环、架构约束、记忆治理三大支柱，并结合OpenAI、Anthropic、LangChain等案例说明工程化才是长期竞争优势。",
+    "tags": [
+      "Harness Engineering",
+      "Agent",
+      "评估闭环",
+      "架构约束",
+      "记忆治理"
+    ],
+    "title": "别再卷模型了，2026 年 Agent 的胜负手在 Harness！给你的Agent 搭\"操作系统\"吧",
+    "totalScore": 73.5,
+    "url": "https://x.com/servasyy_ai/status/2038213141083947053"
+  },
+  "payloadHash": "sha256:8cf559d123c51db8b720a137086201658ee2ab19424c92956ddc7760ee77a88c",
+  "refs": {},
+  "revisionId": "sha256:26405f75508accdcb4dcf41023fc8426a157fac1cdf97ea2587907b5876a07e1",
+  "schemaVersion": 1,
+  "updatedAt": 1775198827615
+}

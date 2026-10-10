@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777812214394,
+  "entityType": "message",
+  "id": "1777812249204_ity6hzo9",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Joruno：把 Codex 接入 Claude Code，代码审查更省更稳\n\n## 核心观点\n\n作者分享了一种新用法：**在 Claude Code 中接入 OpenAI 官方 Codex 插件，用 Codex 来做代码审查**。  \n体验下来，作者认为这个组合显著提升了开发效率，并降低了成本。\n\n## 配置方式\n\n在 Claude Code 中依次执行以下命令即可：\n\n```bash\n/plugin marketplace add openai/codex-plugin-cc\n/plugin install codex@openai-codex\n/reload-plugins\n/codex:setup\n```\n\n整体配置不复杂，几步就能完成。\n\n## 使用方式\n\n作者的日常流程是：\n\n1. 先在 Claude Code 中完成代码编写；\n2. 写完后交给 Codex 做第一轮代码审查；\n3. 让 Codex 先检查小改动、常规问题和边角漏洞；\n4. 再决定是否需要继续深入排查。\n\n相当于让 Codex 充当一个「低成本初审员」。\n\n## 实际体验\n\n作者认为主要收益有两点：\n\n### 1. Token 成本明显下降\n\nCodex 承担了部分审查工作后，Claude 的使用量减少，整体 token 消耗大约能省一半。\n\n### 2. 代码质量更稳定\n\nCodex 能提前发现不少细节问题，让潜在 bug 更早暴露，减少后续返工。\n\n## 评论区反馈\n\n评论区主要关注三类问题：\n\n- 有人询问插件具体用法；\n- 有人吐槽 Claude 使用成本太高；\n- 有人关心 Claude Code 与 OpenAI 订阅之间如何切换和搭配使用。\n\n## 一句话总结\n\n这篇内容的重点是：**把 Codex 作为 Claude Code 的代码审查助手，可以用更低成本完成第一轮质量把关，让 AI 编程流程更高效、更稳定。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777812214394,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:af768c080fe9b39bbbafdd069cec656ff76c7cb7b152e0f500ce6369bb570d08",
+  "refs": {
+    "sessionId": "1777812249011_9pbxz380"
+  },
+  "revisionId": "sha256:419f4db518968d5bf6dcaeb3acdde39f296efffc0e9ab3b2dc0913331d15b2aa",
+  "schemaVersion": 1,
+  "updatedAt": 1777812214394
+}

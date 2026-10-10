@@ -1,0 +1,69 @@
+{
+  "createdAt": 1774405159467,
+  "entityType": "session",
+  "id": "1774405159467_84dl894v",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "结合技术报告进一步核对数据构成、过滤标准和训练细节，判断其方法是否可复用",
+      "将MolmoWeb与现有网页自动化方案对比，评估是否适合自托管信息采集或流程自动化场景",
+      "重点关注其 benchmark 设置与 VLM judge 评估方式，避免被宣传性指标误导"
+    ],
+    "archiveReason": "文章不仅介绍模型能力，还公开了数据、训练流程、评测基准与安全限制，适合作为研究和工程落地的参考资料。",
+    "classifiedAt": 1774407651811,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "开源网页智能体MolmoWeb解析",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "allenai.org",
+    "favicon": "",
+    "knowledgePoints": [
+      "视觉驱动网页智能体可通过截图理解页面并直接执行点击、输入、滚动等浏览器操作",
+      "MolmoWebMix结合人类演示、基于可访问性树的合成轨迹和GUI感知数据，形成较完整训练数据体系",
+      "多次独立 rollout 并选择最佳结果的 test-time scaling 能显著提升网页任务完成率",
+      "开放网页智能体在登录、支付、隐私和不可逆操作方面仍存在明显安全边界"
+    ],
+    "oneHighValuePoint": "最有价值的是它不仅开源模型权重，还同时开放训练数据、评测工具和数据采集管线，显著提高了网页智能体研究的可复现性。",
+    "oneLineReview": "这是一篇信息量高、工程参考价值强的开源网页智能体发布文，但宣传色彩略强、方法细节仍需结合技术报告验证。",
+    "primaryCategory": "AI智能体",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "多模态模型",
+      "网页自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统介绍了Ai2开源网页智能体MolmoWeb，包括4B/8B模型、MolmoWebMix数据集、训练与评测流程、关键 benchmark 成绩以及安全限制，核心价值在于提供了较完整的开放式网页智能体构建方案。",
+    "tags": [
+      "开源模型",
+      "Web Agent",
+      "多模态",
+      "训练数据集",
+      "基准评测",
+      "自动化"
+    ],
+    "title": "MolmoWeb: An open agent for automating web tasks | Ai2",
+    "totalScore": 76,
+    "url": "https://allenai.org/blog/molmoweb"
+  },
+  "payloadHash": "sha256:587a6dae3b180d2bfa20f95c6df469b7bd682e94558093fa9c531a3b4fbaf5d9",
+  "refs": {},
+  "revisionId": "sha256:e7f93fb97286ec17f7ddb215fe15dd0754b0db2793159e59c7cb202440c4b85c",
+  "schemaVersion": 1,
+  "updatedAt": 1774434603118
+}

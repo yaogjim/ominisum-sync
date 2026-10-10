@@ -1,0 +1,68 @@
+{
+  "createdAt": 1780449179281,
+  "entityType": "session",
+  "id": "1780449179281_0bj31k33",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查现有Agent或sandbox环境中是否直接保存了API Key、OAuth Token等敏感凭证。",
+      "调研工具代理、短期凭证、按请求注入、权限隔离等Agent鉴权架构方案。"
+    ],
+    "archiveReason": "指出了Agent Platform中凭证泄漏风险与两类可能方案，可作为安全设计提醒。",
+    "classifiedAt": 1780449972165,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent平台鉴权注入难题",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent Platform中的Skill、CLI、MCP Server都可能涉及外部服务鉴权。",
+      "将API_KEY或OAuth信息存入文件、环境变量等sandbox内部位置存在泄漏风险。",
+      "提示词攻击可能诱导Agent对凭证进行编码、加密或变形输出，单纯输出过滤并不可靠。",
+      "潜在解决方向包括工具代理和HTTPS中间人式凭证注入。"
+    ],
+    "oneHighValuePoint": "Agent工具凭证不应直接暴露在sandbox内部，否则难以防止被提示词诱导泄漏。",
+    "oneLineReview": "一个有价值的安全风险提醒，但信息量和可执行细节都比较有限。",
+    "primaryCategory": "AI工程",
+    "rating": "B",
+    "rejectReason": "内容过短，仅提出问题和方向，缺少实现细节、案例验证和系统方法论。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent平台",
+      "安全架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出Agent Platform中CLI和MCP Server需要鉴权，若将API Key或OAuth信息放入sandbox，可能被提示词攻击泄漏，解决方向包括工具代理或HTTPS中间人注入。",
+    "tags": [
+      "Agent",
+      "鉴权",
+      "API_KEY",
+      "OAuth",
+      "Sandbox",
+      "提示词攻击"
+    ],
+    "title": "九原客: 做 Agent Platform 最难的是如何解决鉴权注入的问题",
+    "totalScore": 57,
+    "url": "https://x.com/9hills/status/2061735317624037418"
+  },
+  "payloadHash": "sha256:6d9345e2d2bf1a8d6c631dd8e142a0d4e3dea1c4c8abb71d16f29481a0fbccc9",
+  "refs": {},
+  "revisionId": "sha256:4a889809cfdfb8944975220512c380de0e6766c4b98a4bc0408493f99794a7a3",
+  "schemaVersion": 1,
+  "updatedAt": 1780454558066
+}

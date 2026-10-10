@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776132047136,
+  "entityType": "session",
+  "id": "1776132047136_03jfaxmu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "访问 GitHub 仓库，验证安装命令与支持的图表类型是否符合自己的文档工作流",
+      "用一篇现有 Markdown 文档实际测试生成效果，重点检查准确性、可编辑性和稳定性"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776132057799,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Markdown自动生成图表工具",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可通过安装 markdown-viewer/skills 为 Markdown 内容自动补充多种图表示意",
+      "该方案的图表生成链路是 PlantUML 到自动布局再到 drawio 渲染"
+    ],
+    "oneHighValuePoint": "最有价值的信息是披露了技术路径：AI 先生成 PlantUML，再自动布局为 drawio 进行渲染。",
+    "oneLineReview": "是一个有点新意的工具发现帖，但更像安利而不是高质量评测。",
+    "primaryCategory": "AI效率工具",
+    "rating": "C",
+    "rejectReason": "内容偏宣传，信息量有限，缺少效果边界、使用条件和实际案例拆解。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "可视化工具",
+      "Markdown工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章主要介绍一个可通过一句提示词基于 Markdown 自动生成多种图表的 skills 工具，并补充说明其底层并非直接操作 drawio，而是由 AI 生成 PlantUML 再自动布局渲染。内容适合快速了解工具，但缺少深入演示与证据支撑。",
+    "tags": [
+      "Markdown",
+      "PlantUML",
+      "drawio",
+      "图表生成",
+      "AI工具"
+    ],
+    "title": "响马: 它来了它来了",
+    "totalScore": 42.5,
+    "url": "https://x.com/xicilion/status/2042848369450848424"
+  },
+  "payloadHash": "sha256:829ccdd04f6833ffab7f7e6da63a52d16124c2c4e7993f6caef97fdaddca04e5",
+  "refs": {},
+  "revisionId": "sha256:10675182df292e1692838b5d0b83dd6336f9e07767ea74d0adbe9cc9f405f07b",
+  "schemaVersion": 1,
+  "updatedAt": 1776139358710
+}

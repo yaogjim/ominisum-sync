@@ -1,0 +1,74 @@
+{
+  "createdAt": 1780387595932,
+  "entityType": "session",
+  "id": "1780387595932_7ozhzfqy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "绘制现有Agent系统的存算边界，区分哪些是状态、记忆、产物和计算过程",
+      "评估是否将Agent工作目录、用户文件和动态技能迁移到对象存储",
+      "为Agent Loop中的step、plan、cursor等热状态设计Redis checkpoint机制",
+      "在云端Agent方案中引入sandbox隔离工具调用，降低越权和依赖冲突风险",
+      "针对多副本运行场景设计用户会话路由、锁机制和数据一致性策略"
+    ],
+    "archiveReason": "文章提供了Agent从本地运行到云端多副本、再到存算分离的架构演进框架，并列出了不同状态对应的存储方案，具备一定参考价值",
+    "classifiedAt": 1780388656203,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "云端Agent存算分离架构",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent任务生命周期可拆分为读取提示词、工具、记忆，构建上下文，进入LLM与工具调用循环并交付产物",
+      "本地裸机运行简单但安全性差，本地沙盒提升隔离性，云端多副本适合多租户和长任务但成本较高",
+      "云端Agent规模化需要计算层动态扩缩容，存储层按状态类型拆分",
+      "热状态适合用Redis等KV存储，用于低延迟访问和异常恢复",
+      "长期记忆可基于任务记录摘要后存入pgvector或Milvus等向量数据库",
+      "工作产物、用户文件、工具和技能适合放入S3、OSS等对象存储",
+      "分布式多副本场景的关键挑战包括数据一致性、锁机制、负载均衡和IO延迟"
+    ],
+    "oneHighValuePoint": "将Agent运行生命周期中的热状态、任务记录、长期记忆和工作产物分别映射到KV、关系型数据库、向量数据库和对象存储。",
+    "oneLineReview": "一篇信息密度较高的Agent云端架构经验帖，框架清晰但证据和实现细节不足。",
+    "primaryCategory": "AI Agent架构",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为云端Agent架构设计的思路材料",
+    "secondaryCategories": [
+      "云原生架构",
+      "系统设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章梳理了Agent任务生命周期，并对比本地裸机、本地沙盒、云端多副本三类运行模式，提出云端Agent规模化需要通过K8s、Sandbox、KV、数据库、向量库和对象存储实现存算分离。",
+    "tags": [
+      "Agent",
+      "存算分离",
+      "Kubernetes",
+      "Serverless",
+      "Sandbox",
+      "向量数据库"
+    ],
+    "title": "idoubi: 聊一聊 Agent 的存算分离架构设计👇 一个有灵魂，有记忆的 Agent，一次任务的生命周期包括以下步骤 1",
+    "totalScore": 68.5,
+    "url": "https://x.com/idoubicc/status/2061670587043610688"
+  },
+  "payloadHash": "sha256:fbb0ed54c0beca0141a877c32e80ad90eb534187b4e0362fce9aaeccd0eeebf9",
+  "refs": {},
+  "revisionId": "sha256:312fdeebb73ad43807ae3cf15da0ad91471561b2f8d427ead1c39efbb7883282",
+  "schemaVersion": 1,
+  "updatedAt": 1780388886899
+}

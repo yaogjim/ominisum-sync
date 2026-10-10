@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780380989851,
+  "entityType": "message",
+  "id": "1780380989850_zx0zsbx9",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 用Codex沉淀重复工作流\n\n**评级**: B (63.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI编程工作流\n**次类别**: Prompt工程, 开发效率\n**标签**: #Codex #Skills #Subagent #工作流自动化 #AI编程助手\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一条短推型实用技巧，方法简单可用，但缺少案例验证和深入展开。\n**核心高价值点**: 将重复 Prompt 视为未显式抽象的工作流，并让 AI 从真实历史会话中反向提炼可复用能力。\n\n### 摘要\n文章介绍如何让 Codex 回顾历史会话，识别重复任务，并将其沉淀为可复用的 Skills 或 Subagent。核心价值在于提供了可复制 Prompt，并给出 Skill 与 Subagent 的区分标准及生成约束。\n\n### 知识要点\n- Skills 适合多步骤、固定流程、可复用的工作流，偏向“怎么做”。\n- Subagent 适合边界清晰、单一职责、可委派的角色或调查任务，偏向“谁来做”。\n- 基于 recent Codex sessions 进行分析，可减少凭空生成，提高建议与真实工作流的贴合度。\n- 通过限定高频场景和要求“只创建有用的、保持简单”，可以降低 AI 过度生成低价值产物的风险。\n\n### 行动项\n- 将文中的 Prompt 复制到 Codex，让其分析近期会话中的重复任务。\n- 把输出结果按 Skill 和 Subagent 分类筛选，只保留高频、明确、可复用的部分。\n- 优先从 CI failure、PR review、changelog、debugging、test triage 等高频开发任务中沉淀模板。\n\n### 存档判定\n归档: 是 — 原因: 包含可直接复用的 Codex Prompt，以及区分 Skill 与 Subagent 的简单判断框架，适合作为 AI 编程工作流优化参考。\n删除: 否\n留存决策: 短期参考后可归档",
+    "role": "assistant",
+    "timestamp": 1780380989851,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:fad4dd380536b5245f2f9914bf6286606b6983d4f27c53d60c9f69252cb6cfe3",
+  "refs": {
+    "sessionId": "1780380673507_6ojrkes8"
+  },
+  "revisionId": "sha256:2039e1d63c6819e04fdbd877cbeed1785ed16edb8043e4623f1d6e60850a04b7",
+  "schemaVersion": 1,
+  "updatedAt": 1780380989851
+}

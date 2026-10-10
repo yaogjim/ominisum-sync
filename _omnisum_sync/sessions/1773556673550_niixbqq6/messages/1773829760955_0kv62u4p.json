@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773829760956,
+  "entityType": "message",
+  "id": "1773829760955_0kv62u4p",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Codex无头执行实战指南\n\n**评级**: A (77分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI工程化\n**次类别**: 开发工具使用, Agent应用集成\n**标签**: #Codex CLI #headless execution #agentic apps #JSON Schema #CI自动化\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 9 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 一篇偏工程手册型的高实用文章，细节丰富、可直接上手，但原创思想与普适方法论相对一般。\n**核心高价值点**: 最有价值的是把`codex exec`抽象为“输出格式 × 权限级别”的二维状态机，能帮助快速理解其行为边界并正确封装到自动化流程中。\n\n### 摘要\n文章系统梳理了Codex CLI中`codex exec`的无头调用方式，覆盖输入输出模式、JSONL事件流、Schema结构化输出、权限与沙箱控制、会话恢复及CI封装示例，适合做Agent工程化落地参考。\n\n### 知识要点\n- `codex exec`是非交互式单次执行入口，stderr输出过程、stdout仅输出最终结果，适合脚本和CI。\n- 可通过`--json`输出JSONL事件流，再结合`--output-schema`实现结构化抽取与机器可解析结果。\n- 权限控制核心由sandbox和approval组成，`--full-auto`与`--yolo`语义不同，前者并不等于完全放开。\n- 通过`-c`可覆盖大量配置项，包括web search、reasoning summary、工具启停与沙箱细节。\n\n### 行动项\n- 基于文中示例封装一个内部`codex exec`调用脚本，统一处理stdout/stderr、错误码与JSON解析。\n- 为常见任务设计JSON Schema模板，用于代码审查、信息抽取和变更摘要等结构化输出场景。\n\n### 存档判定\n归档: 是 — 原因: 内容高度实操，覆盖Codex exec的输入输出、权限模型、结构化输出与CI集成，适合作为后续搭建自动化代理流程的参考手册。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1773829760956,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:2113c853f0590eadce79a975e7456b33127802ff9b5ad20c835fde8a4d0e5f02",
+  "refs": {
+    "sessionId": "1773556673550_niixbqq6"
+  },
+  "revisionId": "sha256:b0c5d7153e7c8305769007911a0a455777cfba8672f0beb4809a6e568e1e5049",
+  "schemaVersion": 1,
+  "updatedAt": 1773829760956
+}

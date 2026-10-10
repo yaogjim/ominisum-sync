@@ -1,0 +1,19 @@
+{
+  "createdAt": 1774867992217,
+  "entityType": "message",
+  "id": "1774867992216_ji5lvwpz",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 低成本复现Autoresearch\n\n**评级**: B (60.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent实验\n**次类别**: LLM训练自动化, 低成本复现实践\n**标签**: #autoresearch #Karpathy #AI agent #LLM训练 #实验自动化 #HPC-AI\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 有实践入口和成本参考，但更像带推广属性的复现帖，证据与方法细节都不够扎实。\n**核心高价值点**: 把 autoresearch 的核心门槛拆成 GPU、Agent 和 harness 三部分，并给出接近可执行的低成本复现路径。\n\n### 摘要\n文章介绍了如何用约 2 美元在 HPC-AI 平台上复现 Karpathy 的 autoresearch 流程，给出实例成本、环境配置步骤和初步实验结果，并提出“人类设边界、AI做实验”的科研范式设想。\n\n### 知识要点\n- autoresearch 的基本闭环是改代码、短时训练、按验证指标筛选、循环迭代\n- program.md 可作为约束 agent 研究方向的人类控制接口\n- 低成本复现依赖便宜 GPU 实例、可用模型 API 和稳定的执行环境\n- 短周期自动实验中 val_bpb 可作为统一比较指标\n- 不同模型在持续搜索和实验决策上的表现可能差异明显\n\n### 行动项\n- 如果你关心 AI agent 做实验，可按文中步骤先跑 1 次 2 小时的小规模复现验证环境和成本\n- 对比不同模型在 autoresearch 中的成功率、搜索深度和稳定性，建立自己的评估基线\n\n### 存档判定\n归档: 是 — 原因: 提供了低成本复现 autoresearch 的工具链、成本和大致流程，可作为后续实践的入口索引\n删除: 否\n留存决策: 短期参考后可保留归档",
+    "role": "assistant",
+    "timestamp": 1774867992217,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:7c16c25cd625b8a6517711bc09169a2b863277e54611973dc88b2695f18cfb7b",
+  "refs": {
+    "sessionId": "1774867042155_cg8yer2p"
+  },
+  "revisionId": "sha256:6967f2dae35e0771978206d931acc82dcbd20c2ab6344d1b3188dfeca9ab2254",
+  "schemaVersion": 1,
+  "updatedAt": 1774867992217
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773729673735,
+  "entityType": "message",
+  "id": "1773729769100_x3c3uotw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这篇内容是在盘点当前市面上常见的 AI 设计类 skill / 工具，核心意思是：它们大多围绕前端视觉优化、UI 一致性、动效、无障碍、图标和设计知识库展开，各自侧重点不同。作者相当于给出了一份“设计能力工具清单”，方便按需求选型。\n\n- 第一部分：综合型前端设计增强工具\n  - `Impeccable` 被作者定义为“增强版 frontend-design skill”。\n  - 它提供了 `17` 个设计命令，例如 `/polish`、`/audit`、`/distill` 等。\n  - 适合希望直接通过命令式方式，快速做界面打磨、审查和提炼的人。\n\n- 第二部分：拆分更细的 UI 专项 skills\n  - `UI Skills` 包含 `15` 个独立 skills，特点是把设计问题拆得更细。\n  - 其中包括：\n    - `baseline-ui`：强调 Tailwind 场景下的设计一致性；\n    - `fixing-accessibility`：做无障碍审计；\n    - `fixing-metadata`：处理 SEO 元数据；\n    - `fixing-motion-performance`：优化动画性能；\n    - `12-principles-of-animation`：引入迪士尼动画原则。\n  - 简单说，它更像“按问题分类的工具箱”，比如你只想查无障碍或动画性能，就可以单独用对应 skill。\n\n- 第三部分：强调“审美”和成品质感的工具\n  - `Taste Skill` 不是只关注功能完整，而是更强调“页面看起来是否高级”。\n  - 它包含多个子 skill：\n    - `taste-skill`：前端设计；\n    - `redesign-skill`：升级现有项目；\n    - `output-skill`：强制 AI 输出完整代码；\n    - `soft-skill`：让产品“看起来和感觉更贵”。\n  - 作者特别点出 `soft-skill` 的表现方式，包括：高级字体、宽阔留白、层叠卡片、流畅弹簧动画、漂浮导航。\n  - 例子：如果一个后台系统功能齐全但视觉普通，这类 skill 更适合拿来做“整体质感升级”。\n\n- 第四部分：图标能力补强\n  - `Better Icons` 是 `MCP server + skill` 的组合。\n  - 它支持搜索并获取 `20 万+` 图标。\n  - 还支持自动学习常用图标库，并直接同步到项目的 `icons` 文件中。\n  - 这类工具适合图标需求多、希望减少手动查找和搬运成本的项目。\n\n- 第五部分：偏“知识库/规范库”的设计助手\n  - `UI Design Brain` 提供 `60+` 组件最佳实践。\n  - 内容覆盖布局模式、无障碍规则和反模式。\n  - 同时支持 `5` 种设计风格：`SaaS`、极简、企业、创意、数据仪表盘。\n  - 它更像一个“可查询的 UI 设计脑库”，适合在搭建组件和页面结构时参考标准做法。\n\n- 第六部分：付费动效工具包\n  - `AI kit by Motion` 售价 `$299`，且是 `Motion+` 会员专属。\n  - 它包含动画专家 skill、性能审计、CSS spring 生成、过渡可视化和文档搜索工具。\n  - 适合对动效质量要求更高、愿意为专业动画工作流付费的团队或个人。\n\n- 总结\n  - 这份清单基本覆盖了几类核心需求：界面打磨、专项 UI 修复、审美升级、图标管理、设计知识参考、动效制作。\n  - 如果简单分类：\n    - 想要“全局打磨”可看 `Impeccable`；\n    - 想按问题逐项修正可看 `UI Skills`；\n    - 想提升“高级感”可看 `Taste Skill`；\n    - 想补图标资源可看 `Better Icons`；\n    - 想查设计规范可看 `UI Design Brain`；\n    - 想做更专业的动画可看 `Motion AI kit`。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773729673735,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c5f4cea6dbb37dace44e6f903250b9337e6e76eebd9a9cff87b8d1c522c18859",
+  "refs": {
+    "sessionId": "1773729235549_tgn7oiqi"
+  },
+  "revisionId": "sha256:039f5cfb3ed8bb839f8ca46fd6661eecb51bc832f23480a49d54efd20003f050",
+  "schemaVersion": 1,
+  "updatedAt": 1773729673735
+}

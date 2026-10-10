@@ -1,0 +1,68 @@
+{
+  "createdAt": 1776830761256,
+  "entityType": "session",
+  "id": "1776830761256_fpy21dca",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若你的工作涉及 AI 生成设计，可重点提炼并试用文中的品牌资产协议和分阶段 show 的协作流程",
+      "在实际项目中验证其 HTML 到 MP4/PPTX 的导出质量与稳定性，重点检查复杂动画和可编辑性边界"
+    ],
+    "archiveReason": "信息密度高，包含可复用的设计流程、品牌资产协议和多种交付形态说明，适合后续检索参考。",
+    "classifiedAt": 1776830940000,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "终端原生设计技能仓库介绍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "HTML-first 可以同时承担原型、演讲稿、动画和可编辑 PPTX 的统一中间表示层",
+      "品牌资产协议强调先问资源、再搜官方页面、再下载资产并提取色值，最后固化为 spec",
+      "模糊需求下可先用多流派设计方向顾问并行生成 Demo，再进入主流程",
+      "通过 Stage + Sprite 时间轴模型与导出脚本形成从 HTML 到 MP4/GIF/PDF/PPTX 的交付链路"
+    ],
+    "oneHighValuePoint": "最有价值的是“品牌资产协议”五步法，把品牌设计从主观猜测改为基于官方资产抓取、提取、固化的可执行流程。",
+    "oneLineReview": "这是一个包装很强、方法有料但证据支撑一般的 AI 原生设计工作流项目说明。",
+    "primaryCategory": "AI设计工具与工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为 AI 设计工作流与工具选型参考",
+    "secondaryCategories": [
+      "开源项目介绍",
+      "设计方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个面向 Claude Code 等 agent 的 HTML-native 设计 skill，主打用自然语言生成高保真原型、幻灯片、动画和评审结果。内容覆盖能力边界、品牌资产协议、Fallback 设计顾问模式、导出链路与仓库结构，偏产品宣传但也提供了较具体的方法与流程。",
+    "tags": [
+      "Claude Code",
+      "HTML-first",
+      "设计自动化",
+      "原型设计",
+      "演示文稿",
+      "动画生成"
+    ],
+    "title": "alchaincyf/huashu-design: Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic",
+    "totalScore": 67.5,
+    "url": "https://github.com/alchaincyf/huashu-design"
+  },
+  "payloadHash": "sha256:6b901f0f5353e52641c0d1fb1f0df7b01bd6d5ac04597db311050ed5909f6863",
+  "refs": {},
+  "revisionId": "sha256:290003941616e6c314b895edfecfb2f2ffac4091593decbd53ba9ca8740d8320",
+  "schemaVersion": 1,
+  "updatedAt": 1776830940008
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780371102763,
+  "entityType": "session",
+  "id": "1780371102763_q8spn2yt",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将同一任务分别交给不同模型执行，比较输出质量并记录适用场景",
+      "为常用模型建立任务适配表，如写作、UI、代码、规划分别优先使用哪些模型",
+      "在 Claude Code、Cursor 等 Agent 工具中针对不同模型单独调试提示词"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780371746134,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "多模型组合使用AI建议",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "不同大模型在写作、UI设计、系统设计、代码实现等任务上表现差异明显",
+      "使用 AI Agent 时需要根据模型特性重新设计和调优提示词",
+      "复杂任务可先让擅长规划的模型完成 Plan 和系统设计，再交给其他模型实现"
+    ],
+    "oneHighValuePoint": "按任务类型选择模型，并通过多个模型交叉实现与比较结果，而不是依赖单一模型。",
+    "oneLineReview": "观点实用但证据不足，适合作为多模型工作流的轻量参考。",
+    "primaryCategory": "AI工具使用",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "大模型评估",
+      "提示词与工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出不要期待单一模型在所有任务上最强，应根据写作、UI设计、系统设计、代码实现等不同场景组合使用多个模型，并针对模型特性调整 Agent 和提示词。",
+    "tags": [
+      "多模型协作",
+      "Claude",
+      "GPT",
+      "AI工作流",
+      "模型选择"
+    ],
+    "title": "宝玉: 你不能指望一个模型在什么地方都是最强的，要像渣男一样才能用好 AI：去爱很多模型，去发掘他们的优秀点，东食西宿，组合着用 Opus 4",
+    "totalScore": 58,
+    "url": "https://x.com/dotey/status/2061463713941492062"
+  },
+  "payloadHash": "sha256:4c497bfff87685a43b8e2f05d785c49a54d1e9643463341cddb65815e9e29039",
+  "refs": {},
+  "revisionId": "sha256:17b80f4a63ae5aaa95e8b120ca19216317cff6b4f21046eec49f04e543530d93",
+  "schemaVersion": 1,
+  "updatedAt": 1780373717797
+}

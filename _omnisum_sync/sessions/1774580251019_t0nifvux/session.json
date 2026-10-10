@@ -1,0 +1,68 @@
+{
+  "createdAt": 1774580251019,
+  "entityType": "session",
+  "id": "1774580251019_t0nifvux",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果计划部署团队 AI 助手，可先按文中流程创建 Telegram Bot 并完成基础网关配置",
+      "在实际落地时优先启用 Docker 终端后端和配对授权机制，避免直接暴露宿主机权限"
+    ],
+    "archiveReason": "包含较完整的部署步骤、权限配置和运维命令，可作为实操手册备查",
+    "classifiedAt": 1774584815724,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "团队Telegram助手搭建教程",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "hermes-agent.nousresearch.com",
+    "favicon": "https://hermes-agent.nousresearch.com/docs/img/favicon.ico",
+    "knowledgePoints": [
+      "Hermes Agent 可通过 Telegram 网关为多个团队成员提供独立会话式 AI 助手",
+      "团队访问控制支持静态白名单和一次性配对码两种授权方式",
+      "可通过 home channel 和 cron 机制实现日报、健康检查等主动推送",
+      "使用 Docker 作为终端后端能降低机器人执行命令对宿主机的风险"
+    ],
+    "oneHighValuePoint": "最有价值的是将团队机器人接入权限控制、定时任务和 Docker 隔离结合起来，兼顾可用性与安全性。",
+    "oneLineReview": "这是一篇可直接照做的产品部署指南，实用但更多是操作说明而非高价值洞见。",
+    "primaryCategory": "AI工具部署教程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合在实际部署 Hermes Telegram 助手时查阅",
+    "secondaryCategories": [
+      "团队协作",
+      "Telegram机器人",
+      "运维自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章是一篇 Hermes Agent 团队版 Telegram 助手的部署教程，覆盖 Bot 创建、网关配置、用户授权、定时任务、容器隔离和日志排查等内容。实操性强，但偏产品文档，方法论与证据支撑较弱。",
+    "tags": [
+      "Hermes Agent",
+      "Telegram Bot",
+      "团队助手",
+      "自动化部署",
+      "权限控制"
+    ],
+    "title": "Tutorial: Team Telegram Assistant | Hermes Agent",
+    "totalScore": 56.5,
+    "url": "https://hermes-agent.nousresearch.com/docs/guides/team-telegram-assistant/"
+  },
+  "payloadHash": "sha256:dbf961da2e072906e452c5c45e61afafd99e06c0d6774599af44cb3ffef61c1a",
+  "refs": {},
+  "revisionId": "sha256:647a3ccb83d756e952db72170c2dc57df41e4384ec17170294a92cf0be2a909b",
+  "schemaVersion": 1,
+  "updatedAt": 1774584815727
+}

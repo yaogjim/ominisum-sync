@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777902095773,
+  "entityType": "message",
+  "id": "1777902123688_ycqjdvxo",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n这篇帖子整理了一批作者实际安装和使用过的网页/数据抓取工具，覆盖结构化抓取、推文读取、公开网页解析、浏览器自动化、反爬、JS 渲染、文档查询等场景。作者的核心建议是：工具很多、能力重叠，最好写一套路由规则，让 AI 根据任务自动选择合适工具。\n\n## 1. 背景：工具太多，选择成了新问题\n\n作者之前给 Claude Code 安装了 **19 个抓网页工具**，但发现最大问题不是“能不能抓”，而是：\n\n- 拿到一个链接后，不知道该用哪个工具；\n- 很多工具能力重叠，比如 xreach、Jina、Chrome MCP、Playwright、Apify、Scrapling 等；\n- 同一个需求经常有四五个工具都能做；\n- 如果靠记忆手动选择，选错就会多一轮试错成本。\n\n因此，作者把自己装过的工具整理出来，方便大家按需求自选。\n\n## 2. 按用途整理的抓取工具\n\n### 结构化抓取：opencli\n\n- 用途：支持 **50+ 平台结构化抓取**\n- 链接：<http://github.com/jackwener/opencli>\n- 适合场景：需要从多个平台提取结构化数据时使用。\n\n### X / Twitter 数据：xreach\n\n- 用途：读推文、搜索、获取 timeline\n- 链接：<http://github.com/Panniantong/Agent-Reach>\n- 适合场景：抓取或分析 X 平台内容。\n\n### 公开网页读取：Jina Reader\n\n- 用途：读取公开网页内容\n- 链接：<http://github.com/jina-ai/reader>\n- 适合场景：把网页转换成更适合 AI 阅读的文本内容。\n\n### Chrome 直连：web-access\n\n- 用途：通过 CDP 直连 Chrome\n- 链接：<http://github.com/eze-is/web-access>\n- 适合场景：需要直接控制浏览器、访问网页内容时使用。\n\n### 反爬场景：Scrapling\n\n- 用途：应对反爬机制\n- 链接：<http://github.com/D4Vinci/Scrapling>\n- 适合场景：普通抓取工具无法稳定访问的网站。\n\n### JS 渲染网页：Playwright MCP\n\n- 用途：处理需要 JavaScript 渲染的网页\n- 链接：<http://github.com/executeautomation/mcp-playwright>\n- 适合场景：网页内容必须通过浏览器渲染后才能看到。\n\n### Grok 搜索：Grok Bridge\n\n- 用途：调用或桥接 Grok 搜索\n- 链接：<http://github.com/ythx-101/grok-bridge>\n- 适合场景：需要使用 Grok 相关搜索能力时。\n\n### 文档查询：Context7\n\n- 用途：文档查询\n- 链接：<http://github.com/upstash/context7>\n- 适合场景：查询技术文档、库文档等。\n\n### X 数据 + Crypto 新闻：6551 MCP\n\n- 用途：X 数据和加密货币新闻\n- 链接：<http://6551.io/login?code=y5ECeG>\n- 适合场景：关注 X 舆情和 Crypto 新闻信息流。\n\n### 特定平台深度爬取：Apify\n\n- 用途：特定平台的深度爬取\n- 链接：<http://console.apify.com/sign-up?fpr=xgahwh>\n- 适合场景：需要成熟爬虫模板或深度采集特定平台数据。\n\n### 浏览器交互：Chrome MCP\n\n- 用途：浏览器交互\n- 获取方式：Chrome 扩展商店搜索 **Claude in Chrome**\n- 适合场景：让 AI 操作浏览器完成点击、输入、读取页面等任务。\n\n### 终极兜底：XCrawl\n\n- 用途：兜底抓取方案\n- 链接：<http://xcrawl.com>\n- 适合场景：前面工具都不合适或失败时尝试。\n\n## 3. 作者的使用建议\n\n作者提到，这些工具 **全部免费或有免费额度**，因此可以组合使用。\n\n关键建议是：\n\n- 不要完全靠人工记忆选择工具；\n- 可以写一套路由规则；\n- 让 AI 根据任务类型自动判断该用哪个工具。\n\n例如：\n\n- 抓普通公开网页：优先用 Jina Reader；\n- 抓 X 推文：用 xreach；\n- 页面需要 JS 渲染：用 Playwright MCP；\n- 遇到反爬：尝试 Scrapling；\n- 需要真实浏览器操作：用 Chrome MCP 或 web-access；\n- 不确定时：用 XCrawl 兜底。\n\n## 4. 评论区反馈\n\n评论区主要是感谢和使用反馈：\n\n- 有用户表示可以直接把作者整理的内容丢给 Claude Code，让它帮忙“一键配置”；\n- 有人询问 token 花费；\n- 作者回复自己使用的是 **Claude Max 计划**，另外还有 **20 美元的 GPT**；\n- 作者还提到这些工具可能会持续更新几个月；\n- 也有用户称赞帖子质量很高。\n\n## 总结\n\n这篇内容本质上是一份面向 AI 编程/自动化工作流的网页抓取工具清单。它的价值不只是列工具，而是提醒用户：当工具变多后，真正重要的是建立“任务 → 工具”的自动路由机制，让 AI 自己选择最合适的抓取方式。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1777902095773,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6e04be8c5371cd3a8ca8c4ad205fb365ba9a68c2919b371d8c06d0eddac3b944",
+  "refs": {
+    "sessionId": "1777901675354_dnhlu1v7"
+  },
+  "revisionId": "sha256:c7302f25ca7a3e662e69b8f2adfba25fdff8abf6e856f0b0de19d3e9e52a0fff",
+  "schemaVersion": 1,
+  "updatedAt": 1777902095773
+}

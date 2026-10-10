@@ -1,0 +1,69 @@
+{
+  "createdAt": 1780449305325,
+  "entityType": "session",
+  "id": "1780449305325_3l561w4u",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据自身 Agent 场景建立框架候选清单，而不是盲目追逐热门框架。",
+      "如需企业级落地，进一步调研 OpenAI Agents SDK、LangGraph、LlamaIndex 和 Pydantic AI 的文档与案例。",
+      "补充阅读 Agent 存算分离、Memory、Workspace、Session 管理等架构资料。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780450073945,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 3,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent开发框架选型速览",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "企业级 Agent 开发可优先关注 OpenAI Agents SDK 与 LangGraph 的组合。",
+      "知识库和 RAG 场景中，LlamaIndex 与 LangGraph 是常见组合。",
+      "结构化业务 Agent 可关注 Pydantic AI，快速演示和内容型多 Agent 可关注 CrewAI。",
+      "热门回复中提到 Agent 可拆分为定义、持久化和运行时三个部分。"
+    ],
+    "oneHighValuePoint": "按应用场景区分 Agent 框架选择，比单纯比较框架热度更有参考意义。",
+    "oneLineReview": "适合作为 Agent 框架选型的快速提示，但缺少深度分析和可靠证据。",
+    "primaryCategory": "AI开发",
+    "rating": "C",
+    "rejectReason": "内容主要是简短选型建议，缺少对各框架能力、限制、适用边界和实践案例的展开说明，证据支撑较弱。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent框架",
+      "技术选型"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章以一条社交媒体帖形式概括主流 Agent 开发框架的适用场景，如个人 coding 可试 Pi，企业级 Agent 可考虑 OpenAI Agents SDK 与 LangGraph，RAG 场景可用 LlamaIndex，结构化业务 Agent 可用 Pydantic AI。",
+    "tags": [
+      "Agent",
+      "LangGraph",
+      "LlamaIndex",
+      "Pydantic AI",
+      "CrewAI",
+      "OpenAI Agents SDK"
+    ],
+    "title": "烟花老师: 主流 Agent 开发框架对比一图流",
+    "totalScore": 44.5,
+    "url": "https://x.com/teach_fireworks/status/2061805935883141620"
+  },
+  "payloadHash": "sha256:18749ad8d24d89a3d76a958cc569699c4e0e3a73067e08bf1813f0d75fd4eb51",
+  "refs": {},
+  "revisionId": "sha256:79ef14cd073833489df132f875a97e0772ee4915969cba0977d2b485237e1dd9",
+  "schemaVersion": 1,
+  "updatedAt": 1780450074530
+}

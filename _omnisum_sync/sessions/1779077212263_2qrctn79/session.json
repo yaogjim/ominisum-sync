@@ -1,0 +1,109 @@
+{
+  "createdAt": 1779077212263,
+  "entityType": "session",
+  "id": "1779077212263_2qrctn79",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看Presidio官方文档和示例，评估其是否适合当前数据脱敏或隐私合规场景。",
+      "用一批真实或模拟数据测试其PII识别准确率、误报率和漏报率。",
+      "尝试配置自定义识别器和匿名化策略，以适配业务中特定的敏感字段。",
+      "评估其在文本、图片或结构化数据处理流水线中的集成成本。"
+    ],
+    "archiveReason": "提供了一个较成熟的开源PII识别、匿名化和图像脱敏框架入口，适合在隐私合规、数据治理或LLM数据清洗场景中作为备选工具参考。",
+    "classifiedAt": 1780616009926,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Presidio敏感数据脱敏框架",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Presidio demo gif",
+        "caption": "",
+        "height": 480,
+        "id": "img-17",
+        "nearbyText": "Presidio - Data Protection and De-identification SDK Context aware, pluggable and customizable PII de-identification service for text and images. Component Downloads Coverage Presidio Analyzer Presidio Anonymizer Presidio Image-Redactor Pre...",
+        "resolvedUrl": "https://github.com/microsoft/presidio/raw/main/docs/assets/changing_text.gif",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/microsoft/presidio/raw/main/docs/assets/changing_text.gif",
+        "width": 1280
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/c045b7dfa65262ffab48ad33c1960bc829d8f3090fc6b157f3289a10665d9e0e/microsoft/presidio",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/c045b7dfa65262ffab48ad33c1960bc829d8f3090fc6b157f3289a10665d9e0e/microsoft/presidio",
+        "width": 0
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 608,
+        "id": "img-19",
+        "nearbyText": "Presidio - Data Protection and De-identification SDK Context aware, pluggable and customizable PII de-identification service for text and images. Component Downloads Coverage Presidio Analyzer Presidio Anonymizer Presidio Image-Redactor Pre...",
+        "resolvedUrl": "https://camo.githubusercontent.com/b3612f1dd1f0e9c9e81686a3c797db04cdb6d363ca18b3abc7396c5b78a4d31f/68747470733a2f2f636f6e747269622e726f636b732f696d6167653f7265706f3d6d6963726f736f66742f707265736964696f",
+        "role": "article",
+        "score": 63,
+        "src": "https://camo.githubusercontent.com/b3612f1dd1f0e9c9e81686a3c797db04cdb6d363ca18b3abc7396c5b78a4d31f/68747470733a2f2f636f6e747269622e726f636b732f696d6167653f7265706f3d6d6963726f736f66742f707265736964696f",
+        "width": 812
+      }
+    ],
+    "knowledgePoints": [
+      "Presidio包含Analyzer、Anonymizer、Image Redactor、Structured等组件，用于不同类型数据的敏感信息处理。",
+      "PII识别可结合命名实体识别、正则表达式、规则逻辑、校验和以及上下文信息。",
+      "该工具支持Python、PySpark、Docker、Kubernetes等多种使用和部署方式。",
+      "自动化PII检测无法保证完全识别所有敏感信息，仍需配合其他安全和治理机制。"
+    ],
+    "oneHighValuePoint": "Presidio支持可插拔识别器、自定义脱敏流水线，并覆盖文本、图像和结构化数据等多种数据形态。",
+    "oneLineReview": "这是一个有实用价值的PII脱敏工具入口，但正文主要是项目README概览，方法论和案例深度有限。",
+    "primaryCategory": "数据隐私与安全",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留为工具索引",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "开源工具",
+      "PII识别与脱敏"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Microsoft Presidio 开源框架，可用于文本、图像和结构化数据中的敏感信息识别、遮盖、匿名化和脱敏，支持NLP、规则匹配、自定义识别器、Docker/Kubernetes部署等。",
+    "tags": [
+      "Presidio",
+      "PII",
+      "数据脱敏",
+      "隐私保护",
+      "开源框架"
+    ],
+    "title": "microsoft/presidio: An open-source framework for detecting, redacting, masking, and anonymizing sensitive data (PII) across text, images, and structured data. Supports NLP, pattern matching, and customizable pipelines.",
+    "totalScore": 55.5,
+    "url": "https://github.com/microsoft/presidio/"
+  },
+  "payloadHash": "sha256:a9bd961455a985d2e41360d4235f86a2b359a60fa40621bb47e27aba773263af",
+  "refs": {},
+  "revisionId": "sha256:5d9a62a0db26e1c3f10a0ec0101f0db4af19efccf34d0a333f659bdb0fa84097",
+  "schemaVersion": 1,
+  "updatedAt": 1780616010562
+}

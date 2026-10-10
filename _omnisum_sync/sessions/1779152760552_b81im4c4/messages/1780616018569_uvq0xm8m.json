@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780616018570,
+  "entityType": "message",
+  "id": "1780616018569_uvq0xm8m",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Pi迁移与Ring配置指南\n\n**评级**: A (76分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI编程工具与Agent工作流\n**次类别**: 模型评测环境, 开发工具配置, Agent工程方法论\n**标签**: #Pi Coding Agent #Claude Code #Ring-2.6-1T #Agent工作流 #plan-first #skills #模型配置\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 一篇实践导向较强的Pi Agent迁移指南，配置细节和工作流建议有较高参考价值，但证据和实测数据仍偏有限。\n**核心高价值点**: 将Pi定位为更透明、可控、可复现的Agent底座，而不是Claude Code的直接替代品，并强调通过plan-first、skill和review机制释放开源模型能力。\n\n### 摘要\n文章面向Claude Code用户，系统介绍Pi Coding Agent的定位、组件化架构、与Claude Code的能力映射、Ring-2.6-1T接入配置、最小可用插件栈、常见坑以及plan-first与skill驱动的Agent工作流。\n\n### 知识要点\n- Pi采用minimal core设计，核心工具较少，subagent、plan、MCP、web、context prune等能力主要依赖扩展组件实现\n- 接入OpenAI兼容模型时，models.json中的supportsDeveloperRole、thinkingLevelMap、contextWindow和maxTokens配置会显著影响可用性和输出质量\n- Ring-2.6-1T适合在目标明确、上下文充分、流程清晰的工程任务中使用，高频任务用high，复杂规划和最终审查用xhigh\n- Pi的价值在于可控的上下文和工具注入，适合做非Anthropic模型评测和多模型fallback工作流\n- skill的核心价值不是外挂能力，而是将测试规范、调试流程、设计验收和项目SOP固化为可复用工作流\n\n### 行动项\n- 如需测试Pi，先安装少量核心组件，避免一次性引入过多插件污染上下文\n- 配置OpenAI兼容模型时检查developer role、reasoning effort、contextWindow和maxTokens是否与端点能力匹配\n- 复杂工程任务中强制要求Agent先输出计划、风险点、验收标准和测试覆盖范围，再进入执行\n- 为常见任务沉淀skill，例如仓库调试、前端polish、测试规范、财务数据分析和项目SOP\n- 将高成本深推理模型用于复杂规划和最终审查，将快速低成本模型用于样板代码、局部测试和普通review\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的Claude Code到Pi的迁移视角、模型配置示例、组件选择原则和plan-first工作流方法，具备复用价值\n删除: 否\n留存决策: 长期保留，适合作为Pi Agent迁移、开源模型接入和Agent工作流设计的实践参考",
+    "role": "assistant",
+    "timestamp": 1780616018570,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:fcfdba3e336d8fafa0977b9c2a1a8e63440a1cd95cd5fc72951c4fda1e98d963",
+  "refs": {
+    "sessionId": "1779152760552_b81im4c4"
+  },
+  "revisionId": "sha256:c4ab0b56d88bb16ab0bd48035c273c6b209f9102b061c6029dbdf175fe18a6d3",
+  "schemaVersion": 1,
+  "updatedAt": 1780616018570
+}

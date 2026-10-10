@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773740960052,
+  "entityType": "session",
+  "id": "1773740960052_rnxfsc93",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "对照自身项目，评估是否需要独立的 Session 生命周期和任务状态机设计",
+      "借鉴文中的角色分工与 Proposal 审批流，梳理团队的 AI 协作流程",
+      "若在做多 Agent 系统，可重点查看其 MCP 工具权限划分与 checkin 机制实现"
+    ],
+    "archiveReason": "适合作为了解 Agent Harness 架构、角色分工与落地流程的产品型参考资料。",
+    "classifiedAt": 1773918098469,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Chorus智能体编排平台概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Agent Harness 通过会话、状态机、上下文注入和故障恢复提升长任务稳定性",
+      "AI-DLC 工作流将 Proposal、任务 DAG、执行和人工验证串成闭环",
+      "Claude Code 插件通过生命周期 Hook 自动管理 Session 和任务衔接",
+      "系统采用 MCP 工具分权限域设计，支持 PM、Developer、Admin 三类角色"
+    ],
+    "oneHighValuePoint": "最有价值的是将多 Agent 协作问题抽象为 Harness 层能力，而不是寄希望于单个模型本身。",
+    "oneLineReview": "一篇信息很密的产品型 README，适合快速了解多智能体协作基础设施，但证据支撑明显不足。",
+    "primaryCategory": "AI工程化",
+    "rating": "B",
+    "rejectReason": "内容偏产品说明与功能罗列，实证数据和真实案例不足，不足以支撑精读优先级。",
+    "retentionDecision": "短期参考后可归档保留",
+    "secondaryCategories": [
+      "多智能体协作",
+      "开发基础设施"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Chorus 作为 Agent Harness 的定位，强调会话生命周期、任务状态机、上下文连续性、子 Agent 编排、可观测性与故障恢复，并给出 AI-DLC 工作流、技术栈、部署方式及 Claude Code 插件集成方案。",
+    "tags": [
+      "Agent Harness",
+      "AI-DLC",
+      "MCP",
+      "多Agent",
+      "任务编排"
+    ],
+    "title": "Chorus/README.zh.md at main · Chorus-AIDLC/Chorus",
+    "totalScore": 65.5,
+    "url": "https://github.com/Chorus-AIDLC/Chorus/blob/main/README.zh.md"
+  },
+  "payloadHash": "sha256:4fb7dabf753dc33f8723a6e9c147674d27277cdeea84041fea23e1a459b9c594",
+  "refs": {},
+  "revisionId": "sha256:47989a259143d25ac400fb7fa2c5e20e0c3694269fb7760ed01052b46fe1bcd5",
+  "schemaVersion": 1,
+  "updatedAt": 1773918098474
+}

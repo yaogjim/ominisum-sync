@@ -1,0 +1,64 @@
+{
+  "createdAt": 1773653744831,
+  "entityType": "session",
+  "id": "1773653744831_nmf61zxl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果正在使用 notebooklm-py，升级前重点核对 v0.3.0 的弃用字段和迁移说明。",
+      "仅在需要具体命令或排障时查阅对应版本发布说明，无需全文精读。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773829457350,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "notebooklm-py版本更新汇总",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "v0.3.0 引入语言设置、分享 API、统一 kind 属性和重试机制，并标注了后续弃用迁移方向。",
+      "后续版本持续增强 CLI 能力，如保存问答为笔记、下载 PPTX、导出 metadata、视频生成与更稳健的登录和下载处理。"
+    ],
+    "oneHighValuePoint": "最有价值的是清晰列出了各版本新增命令、弃用项和修复点，可直接用于升级兼容性检查。",
+    "oneLineReview": "适合用户在升级前快速对照变更，但作为学习材料价值偏低。",
+    "primaryCategory": "开发工具更新",
+    "rating": "C",
+    "rejectReason": "内容主要是版本变更清单，缺少背景解释、系统化方法和深入案例，通用学习价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Python库",
+      "CLI工具",
+      "版本发布日志"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份 notebooklm-py 的 GitHub Releases 汇总，集中列出多个版本新增的 CLI/API 功能、修复项和兼容性调整。对正在使用该库升级或排查问题的人有直接参考价值，但更像操作性变更记录，不是适合深度学习的方法文章。",
+    "tags": [
+      "NotebookLM",
+      "Python",
+      "Changelog"
+    ],
+    "title": "Releases · teng-lin/notebooklm-py",
+    "totalScore": 42,
+    "url": "https://github.com/teng-lin/notebooklm-py"
+  },
+  "payloadHash": "sha256:779ea1bc2d30248436dd551d4b740d7325041ef3fd5087b74ac583c593b6b9ee",
+  "refs": {},
+  "revisionId": "sha256:85450bedeba288fef92a86933221c87c01d9461c9814e5080e178bad9cdba96f",
+  "schemaVersion": 1,
+  "updatedAt": 1773829457354
+}

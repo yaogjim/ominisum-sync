@@ -1,0 +1,70 @@
+{
+  "createdAt": 1780380687566,
+  "entityType": "session",
+  "id": "1780380687566_npob1ph9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看ngaut/agent-git-service开源项目，评估其与现有GitHub/gh cli工作流的兼容性。",
+      "尝试搭建一个云端Agent开发环境，验证提交、构建、预览和部署链路是否可闭环。",
+      "评估哪些本地开发依赖仍无法迁移，例如iOS模拟器或硬件相关调试。",
+      "记录远程开发中的权限、安全、成本和回滚策略，避免生产环境开发风险。"
+    ],
+    "archiveReason": "提供了AI Agent云端开发环境迁移的实践线索和开源项目入口，可作为后续调研AGS/VAS工作流的参考。",
+    "classifiedAt": 1780381001220,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AGS替代GitHub开发流",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AGS可作为兼容gh cli的Agent Git Service，用于承载Agent开发流程。",
+      "云端开发环境在网络稳定性、计算资源和摆脱本地屏幕依赖方面具有优势。",
+      "开发、构建、预览、stage和发布均可集中在服务器完成，预览通过链接访问。",
+      "VAS设想将虚拟化工作空间和双工语音模型控制入口结合，扩展到音箱或语音人机界面。"
+    ],
+    "oneHighValuePoint": "将Git服务、云端执行环境和Agent驱动开发结合，使服务器成为开发的source of truth，本地仅保留必要模拟器能力。",
+    "oneLineReview": "有启发性的个人实践分享，但细节、证据和可复现步骤不足。",
+    "primaryCategory": "AI开发工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "远程开发",
+      "Agent工程实践"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者分享已用AGS替代GitHub和本地开发环境，将代码开发、提交、构建、stage和发布迁移到云端服务器，并以ChatGPT iOS Codex监控指导开发，同时计划构建VAS以支持语音控制的Agent开发环境。",
+    "tags": [
+      "AGS",
+      "Agent Git Service",
+      "远程开发环境",
+      "AI Agent",
+      "开发工作流",
+      "云端开发"
+    ],
+    "title": "郭宇 guoyu.eth: 最近我已经用 AGS（Agent Git Service） 替代了 GitHub 作为我的主要开发环境，年初我曾经想过彻底放弃本地开发环境，5月底终于做到了，现…",
+    "totalScore": 60.5,
+    "url": "https://x.com/turingou/status/2058478026594365672"
+  },
+  "payloadHash": "sha256:56772b027d28e7c361598ca6d76270c226988660a008fb86c0525eae89911f3b",
+  "refs": {},
+  "revisionId": "sha256:f561ed5f75227bbf482afeb53f5c43187808e701757fc1ca6060ea736402a26d",
+  "schemaVersion": 1,
+  "updatedAt": 1780384797044
+}

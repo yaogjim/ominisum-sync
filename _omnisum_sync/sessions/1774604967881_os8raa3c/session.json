@@ -1,0 +1,78 @@
+{
+  "createdAt": 1774604967881,
+  "entityType": "session",
+  "id": "1774604967881_os8raa3c",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你在评估企业内部 Coding Agent，可提炼文中的五层架构作为选型与设计 checklist",
+      "对照自身团队流程，评估是否需要 Slack/Linear/GitHub 三入口联动及沙箱隔离能力",
+      "优先关注 CUSTOMIZATION.md 中的 sandbox、tools、middleware 三个扩展点，判断二次开发成本",
+      "若准备试用，可按 INSTALLATION.md 搭建最小可运行版本并验证 webhook、PR 与权限链路"
+    ],
+    "archiveReason": "包含较完整的架构拆解、定制点说明和部署步骤，适合作为后续搭建内部编码代理时的参考资料",
+    "classifiedAt": 1774606236540,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "OpenSWE企业编码代理解析",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "企业内部编码代理的核心架构通常依赖隔离云沙箱、受控权限和自动化 PR 流程",
+      "OpenSWE 可通过替换沙箱、模型、工具、触发器和中间件实现组织级定制",
+      "AGENTS.md 可作为仓库级规则文件注入系统提示，统一编码规范与工作流",
+      "Slack、Linear、GitHub 可作为统一任务入口，并通过确定性线程 ID 复用上下文",
+      "中间件机制适合加入 CI 检查、消息注入和 PR 安全网等确定性控制逻辑"
+    ],
+    "oneHighValuePoint": "最有价值的是把企业级编码代理抽象为“隔离沙箱 + 精选工具 + 上下文注入 + 中间件编排 + 多入口触发”的可复用架构模式。",
+    "oneLineReview": "一篇偏工程实现与配置手册式的解读，实操价值不错，但原创洞见和证据支撑一般。",
+    "primaryCategory": "AI工程与编码代理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为企业级编码代理架构与落地清单参考",
+    "secondaryCategories": [
+      "开发工具链",
+      "企业内部自动化",
+      "开源框架解读"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://github.com/langchain-ai/open-swe",
+      "https://github.com/langchain-ai/open-swe/blob/main/CUSTOMIZATION.md#6-middleware",
+      "https://github.com/langchain-ai/open-swe/blob/main/INSTALLATION.md"
+    ],
+    "summaryBrief": "文章系统梳理了 OpenSWE 这一企业内部编码代理开源框架的架构设计、工具集、中间件、触发入口、沙箱机制以及安装与定制方式，适合了解企业级 Coding Agent 的典型实现路径，但证据与效果评估相对有限。",
+    "tags": [
+      "OpenSWE",
+      "Coding Agent",
+      "LangGraph",
+      "企业工程效率",
+      "Slack/Linear集成"
+    ],
+    "title": "OpenSWE企业编码代理解读",
+    "totalScore": 65.5,
+    "url": "omnisun://digest/1774604967881"
+  },
+  "payloadHash": "sha256:5d64f305386e62bf274fe06006dc889e8b91ebb8e4468d17b62d4b52c035cc7c",
+  "refs": {},
+  "revisionId": "sha256:bb5e8d6609d4284c63c96271290d8313a7f6317a25839c0e029ae13d9ac9fb35",
+  "schemaVersion": 1,
+  "updatedAt": 1774606236543
+}

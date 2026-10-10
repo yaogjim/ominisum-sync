@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780308118432,
+  "entityType": "session",
+  "id": "1780308118432_zd8oc5wu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查自己的Agents.md是否包含“用户纠正后提出规则更新建议”的机制。",
+      "为AI编程助手加入“不奉承、不编造、不确定则验证”的全局约束。",
+      "参考高质量Agents.md样例，提取适合自己项目的少量强约束。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780308260874,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agents.md编写参考建议",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agents.md可通过借鉴优秀配置并让AI合并有效规则来快速搭建。",
+      "Agent应在不确定时明确说明或验证，避免编造模型、API、CLI参数等技术细节。",
+      "规则沉淀前应判断作用域，并以diff形式请求用户确认。"
+    ],
+    "oneHighValuePoint": "将用户纠正或任务暴露的问题转化为可确认的规则更新建议，有助于持续改进Agent行为。",
+    "oneLineReview": "适合作为Agents.md配置灵感的简短提示，但信息量和证据支撑有限。",
+    "primaryCategory": "AI工具使用",
+    "rating": "C",
+    "rejectReason": "内容较短，主要是零散经验分享，缺少完整方法论、案例验证和系统展开。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "提示词工程",
+      "Agent开发"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章建议不会写Agents.md时可参考高手配置，并提到两条实用规则：任务后沉淀可复用教训需经确认，以及AI助手应直接表达、不奉承、不编造技术事实。",
+    "tags": [
+      "Agents.md",
+      "Claude Code",
+      "Codex",
+      "提示词",
+      "AI编程助手"
+    ],
+    "title": "向阳乔木: 如果你不会写 Agents",
+    "totalScore": 50.5,
+    "url": "https://x.com/vista8/status/2059809889472684061"
+  },
+  "payloadHash": "sha256:53cfa79b12edb9f653ec4e15d2d4b6225d5ccbc17cef817a84c347d3120caae8",
+  "refs": {},
+  "revisionId": "sha256:9be7e006ffe4371a2e5088849c94be665c0777008e4621f9eb1eaa2023c9ac88",
+  "schemaVersion": 1,
+  "updatedAt": 1780308261653
+}

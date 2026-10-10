@@ -1,0 +1,68 @@
+{
+  "createdAt": 1773276606672,
+  "entityType": "session",
+  "id": "1773276606672_pwcxylfl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用自己的业务场景复现文中的三段式提问：隐含洞察、核心假设、投资人质疑",
+      "为每次AI研究保留输入材料和输出结果，验证其结论是否真的优于传统调研",
+      "将该方法整理成可复用模板，但在关键决策前补充人工访谈与事实核查"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773830507860,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用Claude做市场研究提示法",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "可将竞品页面、财报电话会、客户评价和社区吐槽组合成多源上下文喂给AI",
+      "高价值提示词应聚焦隐含规则、核心假设及其可被推翻的条件",
+      "通过模拟投资人致命问题来检验商业计划的脆弱点",
+      "AI在战略研究中的价值更多来自提问设计而非模型本身"
+    ],
+    "oneHighValuePoint": "最有价值的是把AI研究从“总结信息”升级为“挖掘未被言说的行业假设并反向压力测试”的提问框架。",
+    "oneLineReview": "有启发性的提示工程案例，但更像二手经验包装，方法雏形有用，证据明显不足。",
+    "primaryCategory": "AI提示工程",
+    "rating": "C",
+    "rejectReason": "案例叙述吸引人，但缺少可验证过程、原始输出样例和结果复盘，且存在洗稿争议，可信度偏低。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "市场研究",
+      "创业策略"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章通过转述一位YC创始人使用Claude做市场研究的案例，强调高质量提问比单纯总结更重要，展示了从竞品页面、财报、评价和社区吐槽中提炼隐含洞察、检验核心假设并构建GTM策略的思路。",
+    "tags": [
+      "Claude",
+      "Prompt",
+      "GTM",
+      "竞争分析",
+      "创业研究"
+    ],
+    "title": "实践哥MinLi: 人类能达到的满级 prompt 能力，值得学习",
+    "totalScore": 45.5,
+    "url": "https://x.com/MinLiBuilds/status/2031009714063200646"
+  },
+  "payloadHash": "sha256:92d671c0acd3dcf5a4e1f8d9b6b18c93bf23389c7663111ff39b2a6a13b4982b",
+  "refs": {},
+  "revisionId": "sha256:84514e1ba0d1a00c843a990a898e9fead721d1111b7b1719ac764d5f213a3a66",
+  "schemaVersion": 1,
+  "updatedAt": 1773830507864
+}

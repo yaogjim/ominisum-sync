@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780449296950,
+  "entityType": "session",
+  "id": "1780449296950_d92jiohx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计AI产品价格梯度时，分别测算每档的积分成本、毛利率和极限使用风险。",
+      "跟踪不同价格档用户的留存、使用量和续费率，验证高价用户是否具备更高LTV。",
+      "避免长期用过度补贴验证需求，应尽早确认可持续盈利模型。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780450072836,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI产品定价复盘与促销",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI产品订阅定价需要同时验证PMF、用户支付意愿和毛利结构。",
+      "高额度套餐若按成本价或折扣出售，可能放大使用成本并压低整体毛利。",
+      "多档订阅可以帮助识别不同用户群体的支付意愿和需求强度。"
+    ],
+    "oneHighValuePoint": "高价套餐用户往往留存更长，可能对应更明确的使用场景和更强ROI意识。",
+    "oneLineReview": "有一定AI产品定价参考价值，但更像一条商业化观察加促销推文。",
+    "primaryCategory": "产品商业化",
+    "rating": "C",
+    "rejectReason": "内容主要是个人产品定价复盘和促销信息，案例有限，缺少系统方法论和数据支撑。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "AI产品",
+      "定价策略"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享 YouMind 从两档订阅调整为六档后的定价观察：高价套餐有人购买且留存更长，但低价和高额度积分导致毛利偏低，后续可能调整定价策略。",
+    "tags": [
+      "AI产品定价",
+      "SaaS订阅",
+      "PMF",
+      "毛利",
+      "用户留存"
+    ],
+    "title": "Frank Wang 玉伯: 定价对 AI 产品非常重要，甚至可以说：定价定一切",
+    "totalScore": 46,
+    "url": "https://x.com/lifesinger/status/2061804729664151958"
+  },
+  "payloadHash": "sha256:163dd85fc318b5bd8929d7ea945df4defef282de2864cc359c51c0c21e352093",
+  "refs": {},
+  "revisionId": "sha256:0a43ea8e85204d4765d1c8680682033510121f7a5cc15a133dc42c8f18883c87",
+  "schemaVersion": 1,
+  "updatedAt": 1780450073671
+}

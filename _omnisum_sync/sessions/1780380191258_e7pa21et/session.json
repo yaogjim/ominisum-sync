@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780380191258,
+  "entityType": "session",
+  "id": "1780380191258_e7pa21et",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "打开GitHub仓库查看Skill设计方案和示例报告，判断是否适合自己的工作场景。",
+      "选择一个当前复杂项目，用该Skill或类似提示词尝试识别主要矛盾并调整优先级。",
+      "在使用后记录AI判断是否准确，补充误判复盘和验证指标。"
+    ],
+    "archiveReason": "包含开源地址和可复用的复杂问题诊断思路，适合后续尝试或改造为个人工作流",
+    "classifiedAt": 1780380681691,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "矛盾论AI Skill开源",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "复杂问题处理中，应优先识别阶段性的主要矛盾，而不是平均处理所有表面问题。",
+      "该Skill引入第一性原理、冰山模型、贝叶斯与奥卡姆校验，试图提升AI对问题根因的抽象能力。",
+      "有效的问题诊断报告不仅应给出结论，还应解释主次矛盾、资源重分配方案和重新判断的触发条件。"
+    ],
+    "oneHighValuePoint": "将“主要矛盾识别”转化为AI辅助诊断流程，用于决定复杂任务中的优先级和资源分配。",
+    "oneLineReview": "有一定方法论启发和工具参考价值，但文章本身论证较浅，需结合开源文档进一步验证。",
+    "primaryCategory": "AI工具与方法论",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后视实际使用效果决定是否长期保留",
+    "secondaryCategories": [
+      "复杂问题分析",
+      "个人与团队效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍作者开源的“矛盾论”AI Skill，用于在复杂局面中识别主要矛盾、区分次要矛盾，并给出资源分配和解决方案。内容提供了工具链接和基本设计逻辑，但证据主要来自单个案例。",
+    "tags": [
+      "矛盾论",
+      "AI Skill",
+      "主要矛盾",
+      "问题诊断",
+      "资源分配"
+    ],
+    "title": "姚金刚: 开源一个“矛盾论”Skill 地址见文末（含skill理论原理报告、skill设计方案原始文档及示例报告） 昨天和团队开会，聊到矛盾论，核心是找到每个阶段的主要…",
+    "totalScore": 66,
+    "url": "https://x.com/yaojingang/status/2059587539590328520"
+  },
+  "payloadHash": "sha256:7ce99ec24248b4bfc42f422bb59b6676cd8dcbc80963a7d50eaf69350d7b6d7c",
+  "refs": {},
+  "revisionId": "sha256:82dda0e114c40b4a3f4830e39677f935304c7659ee6b9df5458f57b0fe19e74d",
+  "schemaVersion": 1,
+  "updatedAt": 1780384081878
+}

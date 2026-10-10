@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773917603407,
+  "entityType": "session",
+  "id": "1773917603407_42d40oyl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注OSINT或监控平台，可查看其架构文档与数据源设计，提炼可复用模块。",
+      "对照自身需求评估其地图引擎、缓存分层和本地AI部署方案是否值得借鉴。"
+    ],
+    "archiveReason": "作为开源情报监控类项目样例，适合在需要搭建类似系统时快速回看其功能栈与部署方式。",
+    "classifiedAt": 1773918020094,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "全球情报监控平台概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "可通过单一代码库派生多个站点变体，服务不同主题场景。",
+      "结合globe.gl、deck.gl、MapLibre与本地/远程LLM可构建实时监控与摘要系统。"
+    ],
+    "oneHighValuePoint": "将新闻聚合、地理可视化、多信号风险评分和本地AI推理整合进统一界面，展示了较完整的情报监控产品形态。",
+    "oneLineReview": "功能堆料充足，但更像产品展示页，参考价值主要在架构选型而非深度洞见。",
+    "primaryCategory": "开源情报与监控工具",
+    "rating": "C",
+    "rejectReason": "内容以项目宣传和功能罗列为主，缺少深入设计权衡、效果验证和可复用方法论。",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "GitHub项目介绍",
+      "数据可视化平台"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一款面向全球新闻、地缘政治和基础设施追踪的实时情报仪表盘项目介绍，强调多数据源聚合、地图可视化、本地AI支持与多端部署。文档偏功能清单和技术栈说明，适合快速了解项目能力，但方法论与证据支撑较弱。",
+    "tags": [
+      "OSINT",
+      "新闻聚合",
+      "地缘政治",
+      "实时监控",
+      "开源项目"
+    ],
+    "title": "koala73/worldmonitor: Real-time global intelligence dashboard — AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+    "totalScore": 48,
+    "url": "https://github.com/koala73/worldmonitor"
+  },
+  "payloadHash": "sha256:c3607fddd92d5682d0c67c0cba318be06d17c2599fb09cc14ebb173a6f84ade2",
+  "refs": {},
+  "revisionId": "sha256:73c712902547319a0dde394dce228b6f6d91a13ebab197b714745961bc32542f",
+  "schemaVersion": 1,
+  "updatedAt": 1773918558368
+}

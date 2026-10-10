@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777812214394,
+  "entityType": "message",
+  "id": "1777812240091_7oy52slh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# AI 编程流水线的瓶颈：从“工具跟不上模型”到“模型跟不上工具”\n\n## 核心内容\n\n作者提到，之前用 **Claude Code + Codex** 做了一个自动化开发系统（harness）：  \n只要提交 issue，就会有 AI Agent 自动完成：\n\n- 需求规划（plan）\n- 代码实现（impl）\n- 交叉评审（cross-review）\n- 返工修改（rework）\n- 提交 PR\n\n这个系统效率很高，一天能提交 100 多个 PR。\n\n## 当前问题\n\n最近 Claude Opus 能力下降后，整条自动化链路的成功率跌到 **不到 50%**。\n\n过去大家常说：  \n> harness 跟不上模型能力。\n\n但这次情况反过来了：  \n> 模型能力跟不上 harness 了。\n\n也就是说，自动化工程流水线已经搭好了，但底层模型不稳定或能力退化，会直接导致整个 Agent 工作流失效。\n\n## 评论区观点\n\n### 1. Harness 是模型能力不足时的补丁\n\n有人认为，harness 本质上是因为模型还不够强，所以需要流程、约束和工具来辅助。  \n如果模型真的达到 AGI，可能就不需要复杂流程了。\n\n### 2. Harness 可能才是未来\n\n也有人认为，未来的 AGI 不是单纯神经网络，而是“神经网络 + 程序系统”的结合。  \n因此 harness 这类工程化框架反而非常关键。\n\n### 3. 企业真实痛点\n\n有评论提到，他们公司也做了类似系统，但 Opus 能力下降后，团队同样受到明显影响。\n\n## 总结判断\n\n这条内容反映了一个重要趋势：\n\n> AI Agent 的生产力，不只取决于模型本身，也取决于模型与工程化流程的匹配度。\n\n当模型足够强时，harness 可以放大效率；  \n但当模型波动或退化时，复杂 Agent 流水线会被迅速拖垮。\n\n这说明当前 AI 编程自动化还没有完全稳定，真正可规模化落地，需要同时解决：\n\n- 模型能力稳定性\n- Agent 流程设计\n- 自动评审与纠错机制\n- 人机协同边界\n- 工程系统容错能力",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777812214394,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:dd285e0fb3ef59679fb1067683b2a49e1e853c600090d7e36fad5eb5e29a53fa",
+  "refs": {
+    "sessionId": "1777812239933_0bizvl2y"
+  },
+  "revisionId": "sha256:a1eb665021ac5ebec1d956106709642f2e4447b419c3a65e024619fece8e4078",
+  "schemaVersion": 1,
+  "updatedAt": 1777812214394
+}

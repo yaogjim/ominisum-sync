@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780384039895,
+  "entityType": "message",
+  "id": "1780384275078_krzo6ddb",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n这篇内容介绍了一个提升 Codex 使用效率的方法：让 Codex 回顾你过去的会话，找出反复出现的任务，并把它们沉淀成可复用的 **Skills** 或 **Subagent**。核心思想是：不要每次都重复写类似 prompt，而是把高频工作流抽象出来，提升一致性、减少 token 浪费。\n\n---\n\n## 1. 开发者常见问题：重复提问本质上是未抽象的工作流\n\n很多开发者在使用 AI 编程助手时，会反复提出类似请求，例如：\n\n- “CI 为什么挂了？”\n- “帮我 review 这个 PR”\n- “写一下 changelog”\n- “追踪这个 bug”\n- “清理这个 diff”\n\n这些看似普通的 prompt，其实往往代表着固定的工作流程。  \n如果每次都手动重新描述，不仅浪费 token，也容易导致输出风格和质量不稳定。\n\n---\n\n## 2. 解决思路：把重复任务沉淀成 Skills 或 Subagent\n\n文章建议让 Codex 查看你最近的会话历史，识别那些反复出现的工作模式，并判断它们适合沉淀成哪一类能力：\n\n### Skills：适合“可复用工作流”\n\n适用于多步骤、有固定流程的任务，重点是“怎么做”。\n\n例如：\n\n- CI 故障排查流程\n- PR review 标准流程\n- changelog 生成流程\n- release prep 发布准备流程\n\n### Subagent：适合“边界清晰的角色或调查任务”\n\n适用于单一职责、可委派的任务，重点是“谁来做”。\n\n例如：\n\n- 专门负责调查测试失败原因的 agent\n- 专门做文档更新检查的 agent\n- 专门分析某类 bug 的 agent\n\n简单理解：\n\n> Skill 更像“标准操作流程”；Subagent 更像“专门负责某件事的虚拟同事”。\n\n---\n\n## 3. Prompt 设计的关键细节\n\n文章强调，这个 prompt 并不是让 AI 随便想象，而是有明确工程设计。\n\n### 1）数据源明确\n\n要求 Codex 基于：\n\n> recent Codex sessions\n\n也就是最近的 Codex 会话历史，而不是凭空生成建议。  \n这样可以保证输出更贴近用户真实工作习惯。\n\n### 2）强制二分类\n\nPrompt 要求 Codex 在两类结果中做选择：\n\n1. 如果是可复用工作流，就建议做成 skill  \n2. 如果是有边界的角色或调查任务，就建议做成 custom subagent\n\n这样可以避免 AI 输出模糊、泛泛而谈的建议。\n\n### 3）聚焦高频开发场景\n\n文章列出了几个实用场景，用来收窄 Codex 的搜索范围：\n\n- CI failures：CI 失败\n- PR reviews：PR 审查\n- changelogs：变更日志\n- docs updates：文档更新\n- release prep：发布准备\n- debugging：调试\n- test triage：测试分类与排查\n\n### 4）控制生成质量\n\nPrompt 中加入了限制：\n\n> Create the useful ones only. Keep them simple.\n\n意思是：\n\n> 只创建真正有用的，保持简单。\n\n这样可以防止 AI 过度生成一堆低价值、复杂但没必要的 Skills 或 Subagent。\n\n---\n\n## 4. 可直接复制使用的 Prompt\n\n文章给出了可以直接粘贴到 Codex 中的英文 prompt：\n\n```text\nLook through my recent Codex sessions and identify repeated workflows or repeated asks. For anything I keep doing manually, suggest:\n1. a skill if it is a reusable workflow\n2. a custom subagent if it is a bounded role or investigation task\n\nFocus on practical things like CI failures, PR reviews, changelogs, docs updates, release prep, debugging, and test triage.\n\nCreate the useful ones only. Keep them simple.\n```\n\n对应中文意思是：\n\n```text\n查看我最近的 Codex 会话，识别重复的工作流或重复的请求。\n\n对于我一直手动做的任何事情，请建议：\n1. 如果它是一个可复用的工作流，就做成一个 skill；\n2. 如果它是一个边界清晰的角色或调查任务，就做成一个自定义 subagent。\n\n请专注于实际事务，例如 CI 失败、PR 审查、变更日志、文档更新、发布准备、调试和测试分类处理。\n\n只创建有用的，保持简单。\n```\n\n---\n\n## 5. 热门回复中的补充观点\n\n文章下方还有一些用户讨论，提供了不同角度的补充。\n\n### 关于训练小模型\n\n用户 @yibie 提到：\n\n> 训练小模型可能是 2026 年最被低估的 AI 技能。\n\n他举例称，2026 年 5 月 11 日，CJ Zafir 发了一条关于教普通人 fine-tune 开源模型的推文，获得了：\n\n- 2538 个赞\n- 316 次转发\n- 178,000 次观看\n\n这说明普通人训练和定制模型的需求正在上升。\n\n### 关于手动管理记忆\n\n用户 @LIN WEI 分享自己的体验：\n\n> 手工分话题用 Markdown 管理记忆，实际效果比 RAG、向量数据库和自动记忆更好。\n\n他的观点是：\n\n- RAG 和向量数据库有时效果不稳定；\n- 自动记忆容易漏掉重要信息；\n- 同时又可能记住很多不重要或过时的内容；\n- 手工 Markdown 管理虽然朴素，但更可控。\n\n### 有趣反馈\n\n用户 @卡牌大师崔斯特 调侃说：\n\n> 试了，最后 Codex 总结出来，我最应该被沉淀为 skill 的话是“继续”。\n\n这说明如果历史会话中重复行为太泛，AI 可能会提炼出一些无实际价值的结果，因此 prompt 中“只创建有用的、保持简单”这一限制很重要。\n\n---\n\n## 总结\n\n这篇内容的核心价值在于：把 AI 编程助手从“每次重新听指令”升级为“逐渐理解并沉淀你的工作方式”。通过让 Codex 回顾历史会话，开发者可以发现自己高频重复的任务，并将其整理成 Skills 或 Subagent，从而提升效率、减少重复表达，并让 AI 输出更稳定。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780384039895,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7a3b0199a1b1e2dc6691aa8c07036ac3a8be8fc87eab8c7861e049122b97ae89",
+  "refs": {
+    "sessionId": "1780380673507_6ojrkes8"
+  },
+  "revisionId": "sha256:c78313136d9ef15bfc1385031ccbd1bd82e6fbe91f6d550b5e8dce0e0287d3d5",
+  "schemaVersion": 1,
+  "updatedAt": 1780384039895
+}

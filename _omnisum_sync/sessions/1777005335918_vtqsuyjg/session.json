@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777005335918,
+  "entityType": "session",
+  "id": "1777005335918_vtqsuyjg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若你也在使用多模型协作，可按任务类型记录一周分工占比后再决定是否切换主力工具",
+      "不要仅凭社交媒体口碑迁移，优先用自己的复杂任务样本做小规模对比测试"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777005626318,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编码工具切换体验分享",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息噪声较高，证据薄弱，缺少可操作细节和方法论沉淀，时效性强且很快过期。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "部分高频用户开始将复杂编码任务从 Claude 转向 Codex CLI",
+      "Hermes 被尝试作为多模型统一入口，但成本和使用负担存在疑问"
+    ],
+    "oneHighValuePoint": "作者给出了真实任务分布比例，显示 Codex 在复杂编码与数据基座任务中已接近 Claude 的主力地位。",
+    "oneLineReview": "这是一条有参考气味但缺乏证据与方法沉淀的工具偏好帖。",
+    "primaryCategory": "AI工具使用反馈",
+    "rating": "D",
+    "rejectReason": "内容主要是个人主观使用感受与任务分配，没有系统对比、可复用方法或可靠证据支撑。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "编程效率工具",
+      "社交媒体观点"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "作者分享开通 ChatGPT Pro 后一周内对 Claude、Codex CLI 和 Copilot CLI 的任务分工，认为复杂任务更愿意交给 Codex，Claude 表现有所下降，并尝试用 Hermes 作为统一入口。",
+    "tags": [
+      "Codex CLI",
+      "Claude",
+      "ChatGPT Pro",
+      "Hermes",
+      "工具对比"
+    ],
+    "title": "Leo: 最近看到一堆\"Claude Code 用户悄悄转投 Codex\"的帖子，我也勉强算是其中之一吧",
+    "totalScore": 29.5,
+    "url": "https://x.com/runes_leo/status/2046946624102871101"
+  },
+  "payloadHash": "sha256:53d757c1e47659e50ddcf5db5ca6e78806fe0186097f056d7d0cb650147e9ad5",
+  "refs": {},
+  "revisionId": "sha256:f3d18e93dfca91e7ed9f46a0a7ef42335c01f4599bb000510156daf836160293",
+  "schemaVersion": 1,
+  "updatedAt": 1777005626321
+}

@@ -1,0 +1,76 @@
+{
+  "createdAt": 1773461721883,
+  "entityType": "session",
+  "id": "1773461721883_19gj37rb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将文中的 Agent 设计原则整理成自己的评审清单：工具原子性、上下文可控性、可观测性、完成信号与安全边界。",
+      "结合当前项目尝试做一个最小 coding agent 或 agent-native 原型，验证极简工具集与文件优先状态管理是否足够。"
+    ],
+    "archiveReason": "内容系统梳理了 2025 年 coding agent 与 agent-native 架构的关键分歧、设计原则和代表性实现，兼具方法论与工程启发价值。",
+    "classifiedAt": 1773829937844,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 9,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "2025智能体设计演进综述",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请综合我提供的多个内容，进行跨文档深度总结整理，再深入浅出解读。",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "极简系统提示词与最小工具集在 coding agent 中依然可以取得很强效果，关键在上下文控制与可观测性。",
+      "Agent-native 应用设计强调 parity、granularity、composability、emergent capability 和持续改进。",
+      "RLM 通过 REPL + 递归调用把长上下文处理从“整段输入”转为“按需分解与查询”，可缓解 context rot。",
+      "Slate 提出 thread + episode 架构，试图在 ReAct 的灵活性与子代理/压缩架构的长任务能力之间取得平衡。"
+    ],
+    "oneHighValuePoint": "最有价值的是对“工具应保持原子化、能力要与用户操作保持 parity、复杂特性尽量通过上下文与组合而非硬编码工作流实现”的统一方法论总结。",
+    "oneLineReview": "少有地把 coding agent、上下文管理、工具粒度和产品架构放到同一框架下讲清楚，值得作为 2025 Agent 设计参考材料长期保留。",
+    "primaryCategory": "AI Agent 设计方法论",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "Coding Agent 架构",
+      "长上下文与上下文工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://mariozechner.at/posts/2025-11-30-pi-coding-agent/",
+      "https://mgratzer.com/posts/from-ore-to-iron/",
+      "https://every.to/guides/agent-native",
+      "https://randomlabs.ai/blog/slate",
+      "https://alexzhang13.github.io/blog/2025/rlm/"
+    ],
+    "summaryBrief": "这是一组围绕 2025 年 Agent 设计演进的精选文章，核心主题包括极简工具集、上下文工程、线程/子代理架构、RLM 长上下文推理，以及 agent-native 产品设计原则。既有一线工程经验，也有较强的方法抽象与实验支撑。",
+    "tags": [
+      "Agent-native",
+      "coding agent",
+      "context engineering",
+      "RLM",
+      "agent architecture"
+    ],
+    "title": "极简原语到 Agent-Native5 篇文章看懂 2025 Agent 设计演进",
+    "totalScore": 83.5,
+    "url": "omnisun://digest/1773461721883"
+  },
+  "payloadHash": "sha256:ddd6a298da820aca0b51a171c2fb5ab075838b25ed4d2a4e057aadddfd4a5f53",
+  "refs": {},
+  "revisionId": "sha256:bb571ac3ad019a8c3dface0f337a0d85b3b91e1f8d1cf5f02311305bab61a94f",
+  "schemaVersion": 1,
+  "updatedAt": 1773829937870
+}

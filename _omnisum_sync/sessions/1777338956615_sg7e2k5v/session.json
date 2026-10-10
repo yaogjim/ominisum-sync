@@ -1,0 +1,67 @@
+{
+  "createdAt": 1777338956615,
+  "entityType": "session",
+  "id": "1777338956615_sg7e2k5v",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在评估AI Agent部署平台，可对比Deep Agents deploy与Claude Managed Agents的锁定风险。",
+      "查看Deep Agents文档和GitHub，确认其部署流程、沙箱集成和记忆存储格式是否满足项目需求。"
+    ],
+    "archiveReason": "介绍了Deep Agents deploy的定位、部署要素及与Claude Managed Agents的差异，可作为AI Agent部署方案选型参考。",
+    "classifiedAt": 1777442625625,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Deep Agents部署开放替代",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.langchain.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Deep Agents deploy试图用一个命令完成代理编排、沙箱和交互端点的生产部署。",
+      "其配置核心包括model、AGENTS.md、skills、mcp.json和sandbox。",
+      "文章认为开放代理框架的重要性在于让企业保有代理记忆和客户交互数据。",
+      "Claude Managed Agents被描述为封闭生态，可能在记忆层造成迁移成本。"
+    ],
+    "oneHighValuePoint": "代理框架的长期锁定风险主要来自记忆和上下文资产，而不仅是模型API本身。",
+    "oneLineReview": "一篇偏产品发布和立场宣传的技术博客，有一定选型参考价值，但证据和实操细节不足。",
+    "primaryCategory": "AI智能体开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留",
+    "secondaryCategories": [
+      "LLM应用部署",
+      "开源框架"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章发布Deep Agents deploy测试版，强调其作为开源、模型无关的代理部署方案，可统一部署编排、沙箱、端点和记忆，并主打避免专有托管代理带来的记忆锁定。",
+    "tags": [
+      "Deep Agents",
+      "LangChain",
+      "AI Agent",
+      "模型无关",
+      "记忆管理"
+    ],
+    "title": "Deep Agents Deploy: an open alternative to Claude Managed Agents",
+    "totalScore": 59.5,
+    "url": "https://www.langchain.com/blog/deep-agents-deploy-an-open-alternative-to-claude-managed-agents?utm_source=hs_email&utm_medium=email&_hsenc=p2ANqtz-_fFZ-PtiXfvQ1CIieA4u_xgkA8mh0KQuvYSNBJzWutl7XmGLYovPaw3KJc4LIYWvSAJ5N4"
+  },
+  "payloadHash": "sha256:d47000edc31fc6392993bab3928ab5c64a74eafea735e03cd7f64bd11fb56980",
+  "refs": {},
+  "revisionId": "sha256:83a8bff03b2d9b9c078e523dd5205735ae85ffba1a53a5c26bf41296849e4bfa",
+  "schemaVersion": 1,
+  "updatedAt": 1777442625629
+}

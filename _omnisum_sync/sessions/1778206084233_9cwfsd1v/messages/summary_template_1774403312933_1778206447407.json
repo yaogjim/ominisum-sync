@@ -1,0 +1,23 @@
+{
+  "createdAt": 1778206447407,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1778206447407",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# LangGraph Runtime（Pregel）总结\n\n## 1. 核心定位：LangGraph 的执行引擎\n\nPregel 是 LangGraph 的底层运行时，负责执行 LangGraph 应用。\n\n当你使用：\n\n- `StateGraph.compile ()`\n- `@entrypoint`\n\n最终都会生成一个`Pregel`实例，并通过它来运行应用。\n\n它的名字来源于 Google 的 Pregel 图计算算法，核心思想是：**用图结构组织并行计算**。\n\n---\n\n## 2. 基本模型：Actors + Channels\n\nPregel 将应用抽象为两类核心组件：\n\n### Actors：执行单元\n\nActor 在 LangGraph 中对应`PregelNode`。\n\n它负责：\n\n- 订阅 Channel\n- 从 Channel 读取数据\n- 执行业务逻辑\n- 向 Channel 写入结果\n\n可以把 Actor 理解为图中的 “节点”。\n\n### Channels：通信通道\n\nChannel 用来在 Actor 之间传递数据。\n\n每个 Channel 包含：\n\n- 当前值类型\n- 更新值类型\n- 更新函数\n\n可以用于：\n\n- 节点之间传递数据\n- 节点给未来步骤中的自己传递数据\n- 存储累计状态\n\n---\n\n## 3. 执行机制：分步骤的并行计算\n\nPregel 按照 Bulk Synchronous Parallel 模型运行，每一步分为三个阶段：\n\n### 1）Plan：计划阶段\n\n决定本轮要执行哪些 Actor。\n\n例如：\n\n- 第一步执行订阅输入 Channel 的 Actor\n- 后续步骤执行订阅了 “上一轮被更新 Channel” 的 Actor\n\n### 2）Execution：执行阶段\n\n并行执行所有被选中的 Actor。\n\n特点是：\n\n- Actor 并行运行\n- 任一失败则本轮失败\n- 可设置超时\n- 本轮写入的 Channel 更新，对其他 Actor 不可见\n\n### 3）Update：更新阶段\n\n将本轮 Actor 写入的数据统一更新到 Channel 中。\n\n之后进入下一轮。\n\n当没有 Actor 需要执行，或达到最大步数时，运行结束。\n\n---\n\n## 4. 主要 Channel 类型\n\n## LastValue：保留最后一次写入\n\n默认 Channel 类型。\n\n特点：\n\n- 只保存最后写入的值\n- 新值覆盖旧值\n\n适合：\n\n- 输入值\n- 输出值\n- 单步之间的数据传递\n\n---\n\n## Topic：发布订阅 / 多值累积\n\nTopic 是 PubSub 类型 Channel。\n\n特点：\n\n- 可接收多个值\n- 可配置去重\n- 可跨步骤累计输出\n\n适合：\n\n- 多个 Actor 向同一通道写入\n- 收集多个结果\n- 广播或事件流场景\n\n---\n\n## BinaryOperatorAggregate：持续聚合\n\n该 Channel 会维护一个持久值，并用二元操作符不断聚合新更新。\n\n适合：\n\n- 计数\n- 求和\n- 累计列表\n- 运行中的聚合统计\n\n---\n\n## DeltaChannel：增量存储大状态\n\nDeltaChannel 是 beta 功能，需要`langgraph>=1.2`。\n\n它的核心价值是：**只存储每一步的增量，而不是完整状态**。\n\n适合：\n\n- 长对话消息列表\n- 高频写入的大型状态\n- checkpoint 随线程长度线性增长的场景\n\n例如一个长对话，如果每一步都保存完整消息列表，checkpoint 会越来越大；使用 DeltaChannel 后，每步只保存新增消息。\n\n---\n\n## 5. DeltaChannel 的关键约束\n\n## Reducer 必须是 Bulk Reducer\n\nDeltaChannel 的 reducer 一次接收：\n\n- 当前状态\n- 当前步骤的所有写入\n\n而不是像普通 reducer 那样一次处理一个 update。\n\n因此 reducer 必须具备：\n\n### 结合律 / 批处理不变性\n\n也就是说：\n\n> 分批处理和一次性处理，结果必须一致。\n\n否则 LangGraph 在不同批处理方式下，可能重建出不同状态，导致行为不稳定。\n\n---\n\n## 6. snapshot_frequency：平衡存储与读取性能\n\nDeltaChannel 默认只存储增量。\n\n问题是：如果要读取完整状态，需要回放历史增量，线程越长，读取越慢。\n\n可以通过`snapshot_frequency=K`设置每 K 步保存一次完整快照。\n\n### 权衡关系\n\n- `K`越大：存储更省，但读取更慢\n- `K`越小：读取更快，但 checkpoint 更大\n- `None`：不保存快照，适合短线程或低频读取场景\n\n---\n\n## 7. 高层 API：多数用户不直接使用 Pregel\n\n虽然 Pregel 可以直接使用，但大多数用户会通过高层 API 创建应用：\n\n### StateGraph API\n\n用于定义：\n\n- 节点\n- 边\n- 状态结构\n\n编译后自动生成 Pregel 应用。\n\n### Functional API\n\n通过函数式方式定义 LangGraph 应用，也会生成 Pregel 实例。\n\n---\n\n## 8. 产品视角理解\n\nPregel 是 LangGraph 的 “调度与状态运行时”。\n\n它解决的是复杂 Agent / Workflow 中的几个核心问题：\n\n- 多节点如何并行执行\n- 节点之间如何传递状态\n- 状态更新如何保持一致\n- 长链路任务如何控制 checkpoint 成本\n- 图结构应用如何可恢复、可追踪、可扩展\n\n其中 DeltaChannel 特别适合长生命周期 AI 应用，例如：\n\n- 长对话 Agent\n- 多轮任务执行\n- 需要持久化状态的智能工作流\n\n---\n\n## 一句话总结\n\nPregel 是 LangGraph 的底层图执行引擎，通过 Actor、Channel 和分步并行执行模型，支撑复杂 AI 工作流的状态传递、并行调度与持久化；而 DeltaChannel 则进一步优化了长运行任务中的大状态存储成本。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1778206447407,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b1d9c0fe8d3f8a69a535933e88f451ea2bbfacd48e29760e07510110833b07a1",
+  "refs": {
+    "sessionId": "1778206084233_9cwfsd1v"
+  },
+  "revisionId": "sha256:b8e4cd500ff413e0918e87cb8e110a88f1528dd79f65f004f46f64f5fe234b00",
+  "schemaVersion": 1,
+  "updatedAt": 1778206447407
+}

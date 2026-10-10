@@ -1,0 +1,19 @@
+{
+  "createdAt": 1776078039833,
+  "entityType": "message",
+  "id": "1776078039832_p3zpuvg9",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude Code省Token策略解析\n\n**评级**: A (76分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI编程工具使用策略\n**次类别**: LLM上下文管理, 成本优化\n**标签**: #Claude Code #Token优化 #提示缓存 #上下文窗口 #AI编码 #成本控制\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 9 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一篇实操价值很高的 Claude Code 成本优化指南，但证据主要来自社区经验与官方零散表述，严谨性略弱。\n**核心高价值点**: 最有价值的点是明确了“缓存还热且任务未切换时，继续当前会话通常比开新会话更省 Token”的反直觉原则。\n\n### 摘要\n文章围绕 Claude Code 的提示缓存机制，解释为何频繁开新会话不一定省 Token，并给出继续会话或重开会话的判断条件、1M 上下文的使用边界、模型切换、CLAUDE.md 精简、权限限制等多项实操建议。\n\n### 知识要点\n- 提示缓存只对完全一致的输入前缀生效，且存在时效窗口\n- 是否开新会话应基于任务是否切换、缓存是否过期、上下文是否充满噪音来判断\n- 1M 上下文虽然同价，但缓存失效后的重建成本极高，日常编码应谨慎使用\n- 控制输入比控制输出更重要，长日志和大文件应通过路径引用而非直接粘贴\n- 精简 CLAUDE.md、减少技能与 MCP 工具加载，可以显著降低隐性 Token 消耗\n\n### 行动项\n- 在实际使用 Claude Code 时建立会话规则：任务不变且 1 小时内持续交互时优先继续当前会话\n- 在 `~/.claude/settings.json` 中按需设置 `CLAUDE_CODE_DISABLE_1M_CONTEXT` 或 `CLAUDE_CODE_AUTO_COMPACT_WINDOW`\n- 审查并精简项目中的 `CLAUDE.md`、技能和 MCP 服务，减少每轮请求的固定上下文\n- 为代码库配置 `permissions.deny`，排除 `node_modules`、构建产物和敏感文件以降低搜索浪费\n- 将简单日常任务优先分配给 Sonnet，将复杂架构和高推理任务留给 Opus\n\n### 存档判定\n归档: 是 — 原因: 内容高度实用，包含可直接复用的会话管理原则、配置项和决策规则\n删除: 否\n留存决策: 建议长期保留，适合作为 Claude Code 使用与成本控制的实操参考",
+    "role": "assistant",
+    "timestamp": 1776078039833,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:3cb5173be946e18779d1d1c84c480b4e27cbbaa713be7123ddeb1567eb0d3d32",
+  "refs": {
+    "sessionId": "1776064116355_3rl0wlhj"
+  },
+  "revisionId": "sha256:35172da432914a60da6bfae99f9f2f175972bdd7efd8899a0e7a1bb3ae327505",
+  "schemaVersion": 1,
+  "updatedAt": 1776078039833
+}

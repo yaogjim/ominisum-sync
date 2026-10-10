@@ -1,0 +1,67 @@
+{
+  "createdAt": 1775198913991,
+  "entityType": "session",
+  "id": "1775198913991_81dp6j97",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为自己的Agent系统建立可检索的结构化实验日志与执行轨迹记录",
+      "将现有提示工程或工作流优化问题重构为可评估的代码搜索闭环",
+      "设计同时考虑效果与成本的双目标评估，并维护候选方案的帕累托前沿"
+    ],
+    "archiveReason": "对Meta-Harness的核心概念、优化闭环和实践建议有较完整梳理，适合后续回看",
+    "classifiedAt": 1775199054004,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Meta-Harness框架优化解读",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Harness包含提示构建、工具、记忆、前后处理钩子和外部数据接入等非LLM本体部分",
+      "Meta-Harness通过代理修改Python代码、运行评估、记录日志并沿帕累托前沿持续优化",
+      "丰富的执行级反馈比单一分数更适合做复杂LLM系统的长期信用分配与迭代"
+    ],
+    "oneHighValuePoint": "最有价值的点是把LLM外层系统优化从提示调参提升为基于代码、日志和执行轨迹的长期闭环搜索问题。",
+    "oneLineReview": "一篇有启发的论文导读，方法论价值不错，但证据主要依赖转述，实操细节仍偏概览。",
+    "primaryCategory": "AI工程化与Agent系统",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "中期保留，作为理解LLM框架优化与实验记录设计的参考材料",
+    "secondaryCategories": [
+      "LLM应用优化",
+      "论文解读"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以较通俗方式总结了斯坦福Meta-Harness论文，解释了harness的组成、将其视为代码优化对象的思路，以及基于文件系统日志和执行轨迹进行外循环搜索优化的方法。",
+    "tags": [
+      "Meta-Harness",
+      "LLM Harness",
+      "Agentic Optimization",
+      "Pareto Frontier",
+      "Claude Code"
+    ],
+    "title": "Meta-Harness - 自动化模型框架优化，清晰解释",
+    "totalScore": 69,
+    "url": "https://x.com/neural_avb/status/2039709486538260583"
+  },
+  "payloadHash": "sha256:52f6bf1e26803b21097ebb0b25e9910e90f92de385b6fe9cfacb9ce6baa7d7f3",
+  "refs": {},
+  "revisionId": "sha256:031ea6d8199902c3e25d4d89a58ec63fb0869ce79fa62caddbc85ea33c815456",
+  "schemaVersion": 1,
+  "updatedAt": 1775199211909
+}

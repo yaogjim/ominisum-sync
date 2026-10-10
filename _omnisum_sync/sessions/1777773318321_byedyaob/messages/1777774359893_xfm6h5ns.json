@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777774153769,
+  "entityType": "message",
+  "id": "1777774359893_xfm6h5ns",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\nGeek Lite 介绍了一个名为 **Kandev** 的开源工具：它是运行在服务器上的 **多 AI Agent 编排看板与开发环境**，可以让人类一边审查代码变更，一边并行调度多个 AI Agent 执行开发任务。\n\n---\n\n## 1. Kandev 的核心定位\n\n- **Kandev** 是一个面向开发场景的 AI Agent 编排工具。\n- 它支持把多个 AI 编程助手接入同一个工作流中，统一管理任务、流水线和代码变更。\n- 适合需要同时运行多个 AI Agent、并行处理开发任务的团队或个人。\n\n项目地址：  \n[https://github.com/kdlbs/kandev](https://github.com/kdlbs/kandev)\n\n---\n\n## 2. 支持多个主流 AI Agent\n\nKandev 通过 **ACP 协议**接入多个 AI Agent，目前支持包括：\n\n- Claude Code\n- Codex\n- Copilot\n- Gemini\n- 以及其他共 **7 个 Agent**\n\n关键点是：  \n- 不同任务步骤可以指定不同 Agent 执行。\n- 例如：一个 Agent 负责写代码，另一个 Agent 负责测试或审查。\n\n---\n\n## 3. 任务管理方式：看板 + 流水线\n\nKandev 提供类似项目管理工具的任务组织方式：\n\n- 任务可以放在 **看板** 中管理。\n- 也可以通过 **流水线** 分步骤执行。\n- 任务支持 **并行运行**。\n- 子任务可以从父任务中派生出来。\n\n通俗理解：  \n> 一个大需求可以拆成多个子任务，同时交给不同 AI Agent 处理，提高开发效率。\n\n---\n\n## 4. 内置开发工作区\n\nKandev 不只是任务调度工具，还内置了一套开发环境，包括：\n\n- 终端\n- 编辑器\n- Git 面板\n- 浏览器预览\n\n这意味着用户可以在一个界面里完成：\n\n- 分配任务\n- 查看 AI 修改的代码\n- 运行命令\n- 预览效果\n- 审查 Git 变更\n\n---\n\n## 5. 使用 Git Worktree 隔离代码\n\n为了避免多个 Agent 同时改代码导致冲突，Kandev 使用 **git worktree** 隔离不同 Agent 的工作区。\n\n简单来说：\n\n- 每个 Agent 可以在独立代码副本中工作。\n- 人类开发者可以分别审查它们的修改。\n- 避免多个 AI 同时修改同一份代码造成混乱。\n\n---\n\n## 6. 支持多种执行方式\n\nKandev 的任务执行方式比较灵活，支持：\n\n- 本地进程\n- Docker\n- 远程 sprites.dev\n\n这让它既可以在本地开发环境中使用，也可以部署到更隔离或远程的运行环境中。\n\n---\n\n## 7. 热门回复中提到的其他项目\n\n原文下方还出现了一些热门回复，内容与 Kandev 不完全相关，但提到了几个值得关注的工具或资源：\n\n### Open Design 支持 Kami 设计系统\n\n- Kami 被称为一个非常美观的设计系统。\n- 强调“纸质杂志/书籍排版”风格。\n- 适合文档、简历、作品集、信函等场景。\n\n### 哈佛开源教材《Machine Learning Systems》\n\n- 针对机器学习系统落地问题。\n- 不只讲如何训练模型，也讲如何把 AI 系统部署到生产环境并稳定运行。\n\n### Chronicle + Codex 分析工作习惯\n\n- Chronicle 可记录和分析用户电脑操作轨迹。\n- 可结合 Codex 分析个人操作习惯和任务执行情况，并给出优化建议。\n\n### ERPNext 开源 ERP 系统\n\n- ERPNext 是一个 **100% 开源的一体化 ERP 系统**。\n- 可管理财务、库存、生产、资产、项目等企业模块。\n- 技术栈包括 Python/JS 的 Frappe Framework 和 Vue 的 Frappe UI。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1777774153769,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:673e9209c40e7b596d67d97ead3f0e25ccd71680f2baffb34510b0bc0e1db316",
+  "refs": {
+    "sessionId": "1777773318321_byedyaob"
+  },
+  "revisionId": "sha256:9f048794683b19f75e22d38f5d05a1fdd6fb55502be2564c3aecfc406b79059c",
+  "schemaVersion": 1,
+  "updatedAt": 1777774153769
+}

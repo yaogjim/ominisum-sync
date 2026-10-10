@@ -1,0 +1,65 @@
+{
+  "createdAt": 1775816958144,
+  "entityType": "session",
+  "id": "1775816958144_z71q5dm6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文章顺序优先尝试安装部署、SOUL.md、auxiliary 和 web_search 四项基础配置",
+      "结合自身使用场景评估是否启用外部记忆、Docker 沙箱、Hooks 审计与备份机制"
+    ],
+    "archiveReason": "包含较多 Hermes Agent 的实操配置经验、功能清单与避坑细节，适合作为上手阶段参考索引",
+    "classifiedAt": 1775820296056,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Hermes Agent上手指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Hermes 支持通过 SOUL.md、auxiliary、memory、web_search、hooks 和 sandbox 进行较深度的个性化配置",
+      "Session Search、技能沉淀与多 profile/多 agent 机制构成了 Hermes 在长期使用中的差异化能力"
+    ],
+    "oneHighValuePoint": "最有价值的是把 Hermes 的核心能力拆成可立即尝试的十个实践入口，降低了新用户从安装到形成工作流的上手门槛。",
+    "oneLineReview": "一篇高可操作但偏经验流的 Hermes Agent 入门实战清单，适合快速上手，不适合当作严谨评测。",
+    "primaryCategory": "AI Agent工具实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期重点参考，可在实际部署或评估Agent框架时保留",
+    "secondaryCategories": [
+      "开发效率",
+      "自动化工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于作者亲测经验，梳理了 Hermes Agent 安装、浏览器反爬、SOUL.md、辅助模型、记忆系统、搜索、Hooks、沙箱、多Agent、备份与Skill 等十个上手方向，偏重实操与功能亮点总结，但证据多为个人体验，系统性与客观对比仍有限。",
+    "tags": [
+      "Hermes Agent",
+      "AI代理",
+      "配置实践",
+      "自动化",
+      "记忆系统"
+    ],
+    "title": "上手 Hermes Agent 后建议先尝试的十件事情",
+    "totalScore": 68.5,
+    "url": "https://x.com/LufzzLiz/status/2042237123865297267"
+  },
+  "payloadHash": "sha256:ea4d08dbd2fffa224675aa3d7ff68355f0d35755c48c1f3c1e99405e52dee3c3",
+  "refs": {},
+  "revisionId": "sha256:498083d00a9b4b4d60e50b9d6466b7da0f410f6a7896a82f254b532949bb5d40",
+  "schemaVersion": 1,
+  "updatedAt": 1775820296058
+}

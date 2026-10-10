@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777005975704,
+  "entityType": "message",
+  "id": "1777005975703_1avfkmtc",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: MUX0智能终端功能解析\n\n**评级**: B (64.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 开发工具与AI编程终端\n**次类别**: AI Agent集成, macOS终端工具, 产品技术文档\n**标签**: #MUX0 #终端 #Claude Code #Codex #Ghostty #macOS\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一篇完成度较高的产品与技术文档，适合了解 AI Agent 终端的实现思路，但证据支撑和通用方法论较弱。\n**核心高价值点**: 最有价值的是其通过 Unix domain socket + CLI hooks 将 Claude Code、OpenCode、Codex 的运行状态实时映射到终端 UI，形成“Agent 感知型终端”的清晰实现路径。\n\n### 摘要\n文章系统介绍了 MUX0 这款面向 AI Agent 的 macOS 原生终端，覆盖功能特性、状态钩子机制、设置项、构建流程与许可证说明。信息完整、偏产品文档风格，适合做工具认知和实现参考，但缺少实际使用数据与客观对比。\n\n### 知识要点\n- AI Agent 终端可通过 hooks、OSC 7、Unix socket 等机制实现状态感知与侧边栏联动\n- Workspace→Tab→Split 的项目级组织方式适合多仓库、多任务并行开发场景\n- 基于 libghostty + Metal 的原生渲染可替代 Electron 方案，提升终端性能与体验\n- Codex 等 CLI 的状态接入存在实验性限制，需关注 hooks 配置与兼容性\n\n### 行动项\n- 如果你在做 AI 编程工具或终端相关产品，可提炼其 hooks + socket + UI 状态同步架构做设计参考\n- 如果你是潜在用户，可重点阅读 README 和 agent-hooks 文档，判断是否符合自己的 macOS 开发工作流\n\n### 存档判定\n归档: 是 — 原因: 对AI Agent状态可视化、终端产品设计和实现细节有较强参考价值，后续选型或竞品分析时可复用\n删除: 否\n留存决策: 短期参考后保留，适合作为了解AI原生终端形态与集成机制的资料",
+    "role": "assistant",
+    "timestamp": 1777005975704,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:18d10e848fcdcac9989c61fc382766f249e5d62aede536835f5edf108c0c3862",
+  "refs": {
+    "sessionId": "1777003013860_f9jhpkvp"
+  },
+  "revisionId": "sha256:3badb296483d5e1a28d7f2e72d798a2203ea4d79f5a5dbcfad64aaf1047f7103",
+  "schemaVersion": 1,
+  "updatedAt": 1777005975704
+}

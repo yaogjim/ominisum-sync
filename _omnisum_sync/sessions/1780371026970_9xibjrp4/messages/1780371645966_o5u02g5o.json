@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780371645967,
+  "entityType": "message",
+  "id": "1780371645966_o5u02g5o",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: FastClaw降本迁移案例\n\n**评级**: B (60.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI基础设施\n**次类别**: 云原生架构, 成本优化\n**标签**: #FastClaw #OpenClaw #Kubernetes #Agent框架 #存算分离 #降本\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一个有参考价值但细节不足的AI Agent基础设施降本案例。\n**核心高价值点**: 通过存算分离和Agent按需启动，避免大量Pod常驻，可显著降低托管服务的云资源成本。\n\n### 摘要\n作者分享将OpenClaw托管服务迁移到FastClaw的经历：原先500个Pod、18台服务器月成本近5000美元，迁移后通过存算分离和按需挂载sandbox将服务器降至3台，成本降到约1/6。\n\n### 知识要点\n- 常驻式Agent托管在多租户场景下可能带来较高闲置资源成本。\n- 存算分离与动态挂载sandbox可以将Agent运行从常驻模式改为按需服务模式。\n- FastClaw相比OpenClaw在代码体积、资源占用、启动速度和部署依赖上更轻量。\n\n### 行动项\n- 如正在做Agent托管服务，可评估当前常驻资源是否存在闲置浪费。\n- 查看FastClaw项目，判断其按需sandbox架构是否适合现有服务迁移或借鉴。\n\n### 存档判定\n归档: 是 — 原因: 提供了AI Agent托管服务从常驻Pod迁移到动态挂载sandbox后的成本变化案例，可作为云原生Agent架构降本参考。\n删除: 否\n留存决策: 短期参考后可归档",
+    "role": "assistant",
+    "timestamp": 1780371645967,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:b390bc45576f080c5f8855e6c8815d339389b8891d39b439bc489f05da962321",
+  "refs": {
+    "sessionId": "1780371026970_9xibjrp4"
+  },
+  "revisionId": "sha256:2388b10bafb05dbaa148e0f28d26b787fd5178aa640c362139b685dae70f8b93",
+  "schemaVersion": 1,
+  "updatedAt": 1780371645967
+}

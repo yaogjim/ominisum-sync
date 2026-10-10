@@ -1,0 +1,19 @@
+{
+  "createdAt": 1776078128141,
+  "entityType": "message",
+  "id": "1776078128140_uxysxgm5",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Coding Agent原则实践\n\n**评级**: B (61.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程方法\n**次类别**: Coding Agent实践, 开发流程治理\n**标签**: #AGENTS.md #harness engineering #开发规范 #代码仓库治理 #智能体协作\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一条高相关、强实践导向的经验帖，但证据和案例支撑明显不足。\n**核心高价值点**: 最有价值的是“把品味编码为规则”，即优先用 linter、结构测试和 CI 约束智能体行为，而不是依赖长篇自然语言提示词。\n\n### 摘要\n文章分享了一套用于指挥 coding agent 的轻量原则，核心包括：将知识落到 repo、让 AGENTS 文档只做导航、把品味转成可验证规则、将计划版本化、持续偿还技术债，以及卡住时优先补环境和上下文。\n\n### 知识要点\n- 代码仓库应作为智能体可见知识的唯一记录系统\n- AGENTS.md 更适合做地图式导航而非百科式说明\n- 可机械验证的规则比散文化提示更稳定\n- 执行计划和技术债追踪应作为版本化工件持续维护\n\n### 行动项\n- 在项目的 AGENTS.md 或 CLAUDE.md 中加入 5-6 条高约束力原则，并控制篇幅\n- 将开发规范尽量转化为 linter、测试和 CI 检查，而不是仅写成提示词\n\n### 存档判定\n归档: 是 — 原因: 内容虽短，但包含可直接复用的 agent 协作原则，适合后续配置 AGENTS/CLAUDE.md 时查阅\n删除: 否\n留存决策: 短期参考并归档，适合作为搭建 coding agent 工作流的轻量原则清单",
+    "role": "assistant",
+    "timestamp": 1776078128141,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:7a3b3e9692fec0467ba254d9b3dee3715d6f7c2b9513238a4ade6441a06a5f96",
+  "refs": {
+    "sessionId": "1776061900886_oyhusum5"
+  },
+  "revisionId": "sha256:14e843c6bfcbb419428cc2ffee21ccaa597c7c3aaf59c1d51bd50f8de19f75aa",
+  "schemaVersion": 1,
+  "updatedAt": 1776078128141
+}

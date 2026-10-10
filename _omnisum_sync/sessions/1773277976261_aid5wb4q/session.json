@@ -1,0 +1,70 @@
+{
+  "createdAt": 1773277976261,
+  "entityType": "session",
+  "id": "1773277976261_aid5wb4q",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用本文规范审查你现有的 Agent/Skill 文档，重点压缩冗余说明并优化 description 字段。",
+      "为一个高频任务建立最小可用 Skill，采用 SKILL.md + 引用文件 + 验证循环的结构进行重构。",
+      "补一套 3 个代表性评估场景，对比“无 Skill”和“有 Skill”时的完成质量与稳定性。"
+    ],
+    "archiveReason": "内容系统化总结了技能设计、文件组织、工作流拆解与评估迭代，适合作为构建 Agent 能力库时的长期参考手册。",
+    "classifiedAt": 1773830498244,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Claude技能编写实践指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "platform.claude.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Skill 文档应尽量简洁，把核心入口放在 SKILL.md，其余细节通过同层级引用文件按需加载。",
+      "应根据任务脆弱性设置不同自由度：开放任务给高自由度，易错流程给低自由度和严格护栏。",
+      "复杂任务适合拆成可勾选工作流，并引入“验证器→修复→重复”的闭环来提升输出质量。",
+      "描述字段对技能发现极其关键，需要同时说明功能、触发条件和适用场景。",
+      "技能开发应采用评估驱动方法：先识别缺口、建测试场景、做基线、最小化补充说明、持续迭代。"
+    ],
+    "oneHighValuePoint": "最有价值的是“先做评估、再写文档、再迭代技能”的评估驱动开发思路，避免为了想象中的需求堆砌说明。",
+    "oneLineReview": "一篇偏工程实践的高质量指南，方法清晰、落地性强，但证据主要来自经验总结而非系统实验。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "提示工程",
+      "技术文档设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一篇面向 Claude Skills 编写的最佳实践文档，核心强调简洁、渐进式披露、合适的自由度控制、清晰命名与描述，以及通过评估驱动迭代优化技能。文中给出大量结构模板、目录组织方式与工作流示例，实操价值较高。",
+    "tags": [
+      "Claude API",
+      "Skills",
+      "Agent",
+      "提示设计",
+      "工作流",
+      "评估迭代"
+    ],
+    "title": "Skill authoring best practices - Claude API Docs",
+    "totalScore": 75.5,
+    "url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices"
+  },
+  "payloadHash": "sha256:c2eff60f67b086a865838d3eefba35f416e3d9a7881b642fbe0c71e88d17b90e",
+  "refs": {},
+  "revisionId": "sha256:af3b35b8c80c41adb56182d40945a90a905aae94fac1a980c5b203b6b8d03ad5",
+  "schemaVersion": 1,
+  "updatedAt": 1773830498250
+}

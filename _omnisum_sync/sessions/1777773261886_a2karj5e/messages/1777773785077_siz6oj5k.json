@@ -1,0 +1,19 @@
+{
+  "createdAt": 1777773785078,
+  "entityType": "message",
+  "id": "1777773785077_siz6oj5k",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude Code 连接 Codex 代理工具\n\n**评级**: A (70分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI 编程工具\n**次类别**: API 代理, 协议适配, 开发效率\n**标签**: #Claude Code #OpenAI Codex #Anthropic API #Node.js #SSE #Tool Use\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一篇信息密度较高的工具发布帖，最有价值的是展示了 Claude Code 与 Codex 后端之间的协议桥接细节。\n**核心高价值点**: 将 Codex 的 reasoning.encrypted_content 塞入 Anthropic thinking block 的 signature 字段，以维持多轮工具调用中的推理连续性。\n\n### 摘要\n文章介绍 codexthropic，一个本地 Node 代理，可将 Anthropic Messages API 转译为 OpenAI Codex Responses API，使 Claude Code 连接 GPT-5.5 后端。内容涵盖 SSE 事件映射、Tool Use 转换、多轮 reasoning 状态传递、OAuth 刷新和使用方式。\n\n### 知识要点\n- Anthropic 与 OpenAI Codex 的流式事件模型需要逐事件映射，并维护 block index 状态机。\n- Anthropic tool_use、tool_result 和 tool_choice 可分别映射到 Codex function_call、function_call_output 与 function tool 配置。\n- OAuth 刷新需要处理过期预刷新、single-flight 合并、401 强制刷新、refresh_token 文件变更检测和原子写入。\n- reasoning effort 可通过 thinking.budget_tokens 阈值映射到 low、medium、high、xhigh 等后端参数。\n\n### 行动项\n- 如使用 Claude Code，可尝试运行 npx codexthropic@latest 并配置 ANTHROPIC_BASE_URL 进行验证。\n- 研究其 SSE、Tool Use 和 reasoning 状态映射实现，作为构建 LLM API 代理或协议适配层的参考。\n- 检查项目源码和测试覆盖情况，确认其安全性、认证处理和长期维护可靠性。\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的 AI coding agent 协议桥接实现思路和可直接尝试的工具用法，适合作为 API 代理与工具调用映射参考。\n删除: 否\n留存决策: 短期参考后可保留",
+    "role": "assistant",
+    "timestamp": 1777773785078,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:659fa51ec0deeb27c068c6415d9401a45cc3b3e31ef7d702e2df42e52e2cf24b",
+  "refs": {
+    "sessionId": "1777773261886_a2karj5e"
+  },
+  "revisionId": "sha256:ca4ef6854a1684f144d0ccac170306e4cf6cd214cf717dbbe63beaccebe4afc2",
+  "schemaVersion": 1,
+  "updatedAt": 1777773785078
+}

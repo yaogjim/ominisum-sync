@@ -1,0 +1,66 @@
+{
+  "createdAt": 1780380658304,
+  "entityType": "session",
+  "id": "1780380658304_5nrgmr4j",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在接手大型代码库，可搜索并试用 Understand-Anything 插件验证实际效果。",
+      "重点测试其业务领域视图、语义搜索和 Diff 影响分析是否能提升代码理解效率。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780380968142,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "代码理解图谱插件介绍",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "大型代码库的核心痛点之一是理解业务逻辑和修改影响范围，而不仅是代码结构可视化。",
+      "multi-agent pipeline 可用于拆分代码解析、语义理解、摘要生成和影响分析等复杂任务。",
+      "Tree-sitter 可作为代码结构化解析的底层工具，结合语义层生成可交互知识图谱。"
+    ],
+    "oneHighValuePoint": "将代码结构映射到业务领域视图，用于理解大型代码库的业务逻辑。",
+    "oneLineReview": "这是一个有现实需求指向的工具线索，但目前仅停留在功能介绍层面。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容主要是工具功能简介，缺少实际体验、对比评测、案例验证和实现细节，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "代码理解",
+      "多智能体应用"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个 Claude Code 插件 Understand-Anything，主打通过 multi-agent pipeline、Tree-sitter 和知识图谱帮助理解大型代码库，支持业务视图、Guided Tour、语义搜索和 Diff 影响分析等功能。",
+    "tags": [
+      "Claude Code",
+      "知识图谱",
+      "Tree-sitter",
+      "代码库分析",
+      "Multi-agent"
+    ],
+    "title": "lifcc: 刚看到一个 Claude Code 插件，解决的问题很真实： Understand-Anything 它的 slogan 很直接： Graphs that te…",
+    "totalScore": 48,
+    "url": "https://x.com/mylifcc/status/2058465489190359248"
+  },
+  "payloadHash": "sha256:190653b44ee5e0f9fd5976610ef3ce451040673d35c42b5cb2ffcd266bb94c25",
+  "refs": {},
+  "revisionId": "sha256:0ddad730b78d925a61a32b39c8d0952559fad918ee696513e9ebf30fafc8b81c",
+  "schemaVersion": 1,
+  "updatedAt": 1780380968578
+}

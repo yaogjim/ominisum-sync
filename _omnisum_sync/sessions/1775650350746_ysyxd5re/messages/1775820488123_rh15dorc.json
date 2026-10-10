@@ -1,0 +1,19 @@
+{
+  "createdAt": 1775820488124,
+  "entityType": "message",
+  "id": "1775820488123_rh15dorc",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Hermes网页界面说明\n\n**评级**: B (58分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent工具与部署\n**次类别**: 开源项目文档, WebUI与自托管\n**标签**: #Hermes #WebUI #自托管 #AI Agent #README\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 5 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一篇偏产品说明与部署手册的项目文档，实用性强，但更多是功能罗列而非深层洞见。\n**核心高价值点**: 最大的价值在于提供了从本地启动、Docker、SSH 隧道到 Tailscale 远程访问的一整套可落地接入路径。\n\n### 摘要\n这是一份 Hermes WebUI 的 GitHub README，重点介绍其与 Hermes Agent 的关系、功能特性、安装启动方式、Docker 部署、SSH/Tailscale 访问、安全设置及测试覆盖情况。实操信息充分，但方法论和抽象框架较弱。\n\n### 知识要点\n- Hermes WebUI 旨在与 Hermes CLI 保持近乎 1:1 的功能对齐，复用既有 Agent 与模型配置\n- 项目支持 Docker、环境变量配置、SSH 隧道与 Tailscale 访问，并提供基础密码认证与安全头设置\n\n### 行动项\n- 若正在评估自托管 Agent 工具，可将其与 OpenClaw、Claude Code、Codex CLI 做针对性对比\n- 若计划试用，可优先按 README 的 Quick Start 或 Docker Compose 路径完成本地部署验证\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的功能清单、部署方式、环境变量和安全接入说明，适合后续查阅\n删除: 否\n留存决策: 短期参考后归档，作为自托管Agent界面与部署选型资料保留",
+    "role": "assistant",
+    "timestamp": 1775820488124,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:4403df1732159e1ea02dbd60af5d9b9e2d38ec4e87cf4bfbf8d77bcc99b141f2",
+  "refs": {
+    "sessionId": "1775650350746_ysyxd5re"
+  },
+  "revisionId": "sha256:ba4f17e84b058317b7900f51c7d8fac8ad89c64969fbbe34fbc82566dbf1be50",
+  "schemaVersion": 1,
+  "updatedAt": 1775820488124
+}

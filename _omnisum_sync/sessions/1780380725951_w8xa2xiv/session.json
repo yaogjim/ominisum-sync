@@ -1,0 +1,74 @@
+{
+  "createdAt": 1780380725951,
+  "entityType": "session",
+  "id": "1780380725951_w8xa2xiv",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尝试克隆lanshu-wiki-skill并为一个熟悉的开源项目建立最小版架构Wiki。",
+      "为Wiki仓库建立SCHEMA.md、index.md和log.md，并明确页面格式、标签体系和更新规则。",
+      "在首次生成Wiki时锁定源码commit，要求LLM所有结论附带源码文件行号。",
+      "每批页面生成后执行lint，并随机抽查2-3页对照源码验证准确性。",
+      "为技术Wiki补充guide目录，增加面向非技术读者的白话解释页和FAQ。"
+    ],
+    "archiveReason": "文章提供了可复用的LLM Wiki构建范式、目录结构、操作流程和实操命令，对AI辅助知识管理和开源项目架构理解有较高长期参考价值。",
+    "classifiedAt": 1780381030887,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "开源项目LLM Wiki实战",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "LLM Wiki的核心结构是raw/wiki/schema三层：raw作为不可变事实锚点，wiki作为编译后的知识层，schema作为约束LLM行为的规则层。",
+      "代码仓库Wiki可简化为concepts、entities、changelog三类页面，并通过index.md、log.md和SCHEMA.md维持导航、连续性与规范。",
+      "Ingest、Query、Lint是LLM Wiki的三大核心操作，分别负责导入、综合查询和健康检查。",
+      "可信Wiki区别于AI自由总结的关键是结论必须能追溯到源码行号或原始URL。",
+      "双层导览模式通过技术页和白话页配对，使同一份Wiki同时服务工程师和非技术读者。",
+      "同概念多命名、不读全文就更新、标签语义重叠、缺少审计日志是长期维护Wiki的主要风险。"
+    ],
+    "oneHighValuePoint": "所有Wiki结论必须可追溯到源码文件行号或原文URL，并通过index、log和lint机制维持跨会话一致性与可审计性。",
+    "oneLineReview": "一篇方法论和实操兼具的LLM知识管理工程化教程，尤其适合需要长期理解和维护复杂代码仓库的人。",
+    "primaryCategory": "AI知识管理",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "开发工具",
+      "开源项目文档",
+      "LLM工程实践"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍如何用LLM为开源项目构建可信架构Wiki，提出raw/wiki/schema三层结构、Ingest/Query/Lint三大操作，并以x-algorithm-wiki为例给出从锁定源码、生成页面、校验、双层导览到持续维护的完整流程。",
+    "tags": [
+      "LLM Wiki",
+      "知识管理",
+      "Claude Code",
+      "开源架构",
+      "文档工程",
+      "RAG替代范式"
+    ],
+    "title": "给任何开源项目建一份可信架构 wiki：LLM Wiki 范式实战教程",
+    "totalScore": 75,
+    "url": "https://x.com/LufzzLiz/status/2058542686551028006"
+  },
+  "payloadHash": "sha256:4e9d16698dac4ed256f0e02d4ac4c9797699000668a843fd65c808e29b52f9c3",
+  "refs": {},
+  "revisionId": "sha256:805b459ee24e51909e82e9cb9c4f4aa34fc2052063e1d15673e9f88f365ebcf3",
+  "schemaVersion": 1,
+  "updatedAt": 1780384534213
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780307580191,
+  "entityType": "message",
+  "id": "1780307580190_hesh5hoe",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: CloakBrowser隐身浏览器指南\n\n**评级**: B (64.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 技术/浏览器自动化\n**次类别**: 反检测浏览器, Playwright/Puppeteer工具\n**标签**: #Chromium #Playwright #反指纹 #自动化测试 #爬虫工具\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 高可操作性的工具文档，但证据主要来自项目自述，且应用场景存在明显合规风险。\n**核心高价值点**: 通过源码级 Chromium 补丁而非 JS 注入来降低自动化指纹暴露，并保持 Playwright/Puppeteer 近似原生 API。\n\n### 摘要\n文章是 CloakBrowser 的 GitHub README，介绍其基于源码级 Chromium 指纹补丁的隐身浏览器能力，并提供 Python/JS 安装、Playwright/Puppeteer 替换、代理、geoip、humanize、Docker 和排障配置。\n\n### 知识要点\n- CloakBrowser 可作为 Playwright/Puppeteer 的 drop-in replacement，通过自定义 Chromium 二进制实现反指纹能力。\n- 关键配置包括住宅代理、geoip=True、headless=False、humanize=True、固定 fingerprint seed 和持久化 profile。\n- 文档覆盖 canvas、WebGL、audio、fonts、WebRTC、TLS/CDP 信号、存储配额、Widevine、字体环境等多类检测面。\n- 项目提供 Python、TypeScript、Docker、CDP 远程连接、持久化上下文和多框架集成示例。\n- 测试结果和对比表较丰富，但多数为项目方自证，缺少独立复现数据。\n\n### 行动项\n- 如有合法自动化测试需求，可先在隔离环境用 docker run --rm cloakhq/cloakbrowser cloaktest 验证基础能力。\n- 评估使用场景的法律、平台条款和伦理边界，避免用于未授权爬取、账号滥用或绕过访问控制。\n- 若实际使用，优先记录目标站点的检测失败原因，并按文档逐项验证代理、geoip、headless、humanize、字体和持久化 profile 配置。\n- 不要直接相信 README 中的通过率结论，应建立自己的检测基准和复现实验。\n\n### 存档判定\n归档: 是 — 原因: 包含安装、API调用、Docker部署、指纹配置和排障方法，若涉及浏览器自动化或反检测研究可作为工具文档参考。\n删除: 否\n留存决策: 短期参考后按需保留",
+    "role": "assistant",
+    "timestamp": 1780307580191,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:7c7cd6800bdb6114da09a437709590c8734205efb89703ccb5de7beed6469a12",
+  "refs": {
+    "sessionId": "1780307354962_oy9ffkn2"
+  },
+  "revisionId": "sha256:35a13d5938def0619ce6e71cd7f285bd95e925bc8e18b38b75bfe8c1f12c4683",
+  "schemaVersion": 1,
+  "updatedAt": 1780307580191
+}

@@ -1,0 +1,69 @@
+{
+  "createdAt": 1780386252217,
+  "entityType": "session",
+  "id": "1780386252217_hlip5e4y",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计多Agent系统时优先检查是否能保证只有一个Agent拥有最终写入或决策权。",
+      "将复杂任务拆成流水线、管理者-执行者或生成-验证结构，避免无约束的Agent聊天室式协作。",
+      "为Agent之间的上下文传递设定明确边界，避免传递过多造成注意力稀释或传递过少导致判断失真。",
+      "在多Agent流程中设计错误隔离、审查节点和断路器，降低失败级联风险。"
+    ],
+    "archiveReason": "总结了多Agent系统在生产环境中较可行的三类架构模式，并提炼出单写入、上下文隔离、失败级联等关键设计原则，对AI应用架构设计有持续参考价值。",
+    "classifiedAt": 1780386676815,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "生产可用多Agent模式",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "生产可用的多Agent主要包括Agent-flow流水线、Orchestration编排和Generator-Validator生成验证三种模式。",
+      "对等协作型Agent容易因隐式设计决策冲突、上下文传递失真和错误级联而在生产环境失败。",
+      "验证Agent使用干净上下文进行独立审查，往往比共享编码Agent的完整过程更有效。",
+      "多Agent的主要价值不一定是变得更聪明，而是通过结构化分工实现更便宜、更稳定、更可靠的系统。"
+    ],
+    "oneHighValuePoint": "多Agent系统应尽量保持“写入单线程”，让其他Agent贡献分析、审查或并行子任务结果，而不是共同争夺决策权。",
+    "oneLineReview": "一篇有较强架构启发的多Agent实践综述，虽然证据多为二手材料，但方法论价值较高。",
+    "primaryCategory": "AI Agent系统设计",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "多Agent架构",
+      "软件工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章综合Cognition复盘、Manning作者报告和metaswarm案例，指出生产环境中真正有效的多Agent模式主要是流水线、编排和生成-验证，而对等协作式Agent Swarm大多失败，核心原因在于隐式决策冲突、上下文污染和错误级联。",
+    "tags": [
+      "多Agent",
+      "Agent编排",
+      "生产环境",
+      "生成验证",
+      "系统架构"
+    ],
+    "title": "yibie: 多 Agent 系统炒了一年，生产环境里真正活下来的只有三种模式",
+    "totalScore": 72.5,
+    "url": "https://x.com/yibie/status/2058806911542464892"
+  },
+  "payloadHash": "sha256:2821b1e8fb0cdbaaf4960f271510277f7f9855a7cfcd50ebb5164e421d17fb1f",
+  "refs": {},
+  "revisionId": "sha256:02ef5c586cd0752ebbaf72a438511a833e9f2c1eaaaaedd54b908543906358b5",
+  "schemaVersion": 1,
+  "updatedAt": 1780387242294
+}

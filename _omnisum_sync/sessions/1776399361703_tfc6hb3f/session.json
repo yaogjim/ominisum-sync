@@ -1,0 +1,66 @@
+{
+  "createdAt": 1776399361703,
+  "entityType": "session",
+  "id": "1776399361703_tfc6hb3f",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为当前智能体流程增加 Schema 校验和失败重试机制",
+      "将关键任务进度与中间状态外置到结构化文件而非仅依赖上下文记忆"
+    ],
+    "archiveReason": "内容提炼了智能体稳定性设计的关键原则，便于后续搭建代理系统时快速回看",
+    "classifiedAt": 1776403199739,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI智能体Harness工程概述",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "智能体多步执行失败往往来自状态管理、输出约束和错误恢复机制缺失",
+      "Schema 校验、外部状态文件、独立 Evaluator、局部重试是提升代理稳定性的核心手段",
+      "长上下文会带来注意力衰减与信息污染，需要定期压缩状态并重启干净上下文"
+    ],
+    "oneHighValuePoint": "最有价值的是把“模型能力问题”转化为“系统约束设计问题”，将智能体稳定性提升落到可实现的工程机制上。",
+    "oneLineReview": "有明确工程启发和落地建议，但更像高质量摘要，证据与细节仍偏薄。",
+    "primaryCategory": "AI工程实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档，适合作为智能体工程实践的入门提纲",
+    "secondaryCategories": [
+      "智能体系统设计",
+      "LLM应用方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章转述了一篇关于 Harness Engineering 的博客，核心观点是智能体失败常源于系统约束不足，而非模型本身太笨。内容给出 Schema 校验、状态外置、独立验收、局部重试等实用原则，并指出上下文膨胀与自评失真的常见问题。",
+    "tags": [
+      "Harness Engineering",
+      "AI智能体",
+      "上下文管理",
+      "状态外置",
+      "Schema校验"
+    ],
+    "title": "宝玉: 推荐阅读若石写的这篇博客：模型不是笨，是 Harness 没配好 AI 智能体跑十步就崩，很多人第一反应是模型太蠢，但这篇文章却给出另一个视角：不是马不行，是缰…",
+    "totalScore": 60,
+    "url": "https://x.com/dotey/status/2044660793153655205"
+  },
+  "payloadHash": "sha256:cab35139065038d964a7e945bd552a065e8da68cb637be940ecad366d6381d83",
+  "refs": {},
+  "revisionId": "sha256:0d86a179c81f894f104b62d727ba841a3d4bd7d794381f578b9787bb78aba115",
+  "schemaVersion": 1,
+  "updatedAt": 1776404806811
+}

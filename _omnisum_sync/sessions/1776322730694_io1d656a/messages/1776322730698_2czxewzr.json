@@ -1,0 +1,20 @@
+{
+  "createdAt": 1776322700008,
+  "entityType": "message",
+  "id": "1776322730698_2czxewzr",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Craft Agents 项目简析\n\n## 一句话概括\n**Craft Agents** 是一个面向 AI Agent 的开源工作平台，目标是让用户用更自然的方式调用大模型、连接外部服务、管理任务与会话，而不是依赖复杂配置或命令行。\n\n## 它解决了什么问题\n传统 Agent 工具往往配置繁琐、依赖 CLI、接入 API 和服务成本高。Craft Agents 想解决的是：  \n**让用户直接“告诉 Agent 你想做什么”，剩下的连接、配置、执行都尽量自动完成。**\n\n## 核心能力\n### 1. 让 Agent 真正可工作\n它支持多会话管理、后台任务、状态流转、权限控制、文件变更查看等能力，不只是“聊天”，而是更接近一个完整的 AI 工作台。\n\n### 2. 连接能力很强\n不仅能接 MCP Server，还能接 REST API、本地文件系统、数据库，甚至可以根据 OpenAPI 文档、接口地址、截图等信息自动理解并接入服务。\n\n### 3. 强调“文档式工作流”\n相比传统代码编辑器或纯命令行，它更偏向以文档、会话、上下文为中心的交互体验，适合持续协作和复杂任务管理。\n\n## 产品亮点\n### 无需复杂配置\n用户只需要说一句“接入 Slack / Linear / Gmail”，Agent 就会尝试查找 API、阅读文档、配置凭证并完成连接。\n\n### 高度可定制\n技能（Skills）、来源（Sources）、自动化规则、主题、状态流都可以按工作区自定义，且很多配置都可以直接通过对话完成。\n\n### 多模型兼容\n支持 Anthropic、Google、OpenAI、GitHub Copilot 等多种模型与认证方式，也支持通过 OpenRouter、Vercel AI Gateway、Ollama 等接入更多模型。\n\n## 技术与架构特点\n### 双 Agent 后端\n项目同时结合了 **Claude Agent SDK** 和 **Pi SDK**，取两者所长，兼顾更强的模型接入能力与灵活性。\n\n### 支持桌面端、远程服务端、CLI\n既有桌面 GUI，也支持在远程服务器上运行 headless 模式，桌面端作为薄客户端连接；同时提供 CLI，适合脚本、CI/CD 和自动化场景。\n\n### 本地优先 + 数据持久化\n配置、凭证、工作区、会话、技能、自动化规则等都会保存在本地目录中，凭证采用加密存储。\n\n## 适合谁用\n它更适合这几类人：\n- **重度使用 AI Agent 的产品、研发、运营人员**\n- 需要频繁连接外部工具和数据源的人\n- 想把 Agent 从“聊天工具”升级为“工作系统”的团队\n- 希望基于开源项目做二次开发和定制的人\n\n## 风险与门槛\n### 上手并不完全零成本\n虽然理念是“用自然语言完成配置”，但涉及 OAuth、API Key、Google Cloud、远程服务部署等场景时，仍然需要一定技术基础。\n\n### 生态依赖较多\n项目能力很强，但也建立在 Claude SDK、Pi SDK、MCP、各类第三方 API 和模型供应商之上，长期稳定性会受外部生态影响。\n\n## 总结\nCraft Agents 本质上不是一个普通 AI 聊天工具，而是一个**面向 Agent 时代的工作操作系统雏形**。  \n它的核心价值在于：**把“接模型、接工具、做任务、跑自动化”整合到一个统一界面里，并尽可能用自然语言驱动。**\n\n如果你关注的是 AI Agent 如何真正进入生产工作流，这个项目很值得看。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1776322700008,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:41edcc8ef7459230e2a29fb34c3c3a9e0b3154e1904241372d2fcd74f0dc531b",
+  "refs": {
+    "sessionId": "1776322730694_io1d656a"
+  },
+  "revisionId": "sha256:2bccfb0482a95a0e75e82961aea4b3d66788d9f295dfcd1c00a0ae9c2bd93040",
+  "schemaVersion": 1,
+  "updatedAt": 1776322700008
+}

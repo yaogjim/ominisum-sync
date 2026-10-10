@@ -1,0 +1,20 @@
+{
+  "createdAt": 1773730520873,
+  "entityType": "message",
+  "id": "1773730623422_v2hr3s2a",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "文章主旨：Letta 宣布进入“下一阶段”，把重点从早期的服务端代理架构，转向一个更开放、以记忆为核心、支持真实电脑操作的 agent 运行时——`Letta Code`。它希望让 agent 不依赖某一家模型厂商，而是具备长期记忆、技能复用、子代理协作和持续进化能力。\n\n- 第一部分：行业趋势与 Letta 的判断\n  - 当前各家封闭式基础模型实验室，已经不只是在做模型，而是在做“agent 外壳（harness）”，让模型具备电脑操作、记忆、技能、子代理和故障恢复能力。\n  - 其中一个关键转折点是“computer use（电脑操作）”：agent 不再只会对话，而是能进入真实环境里执行脚本、修改状态，因此能力更通用、更强。\n  - Letta 认为，未来 agent 的核心不只是模型本身，而是“记忆 + 执行环境 + 可组合能力”的整体系统。\n\n- 第二部分：Letta Code 是什么\n  - `Letta Code` 是 Letta 的旗舰产品，本质上是一个“与模型无关的 agent 运行时（model-agnostic agent harness）”，同时具备持久记忆。\n  - 它给底层大模型补上前沿 agent 能力，包括：电脑操作、技能（skills）、子代理（subagents）、透明记忆系统，以及部署能力。\n  - 它不绑定单一厂商，强调三点：\n    - 记忆归用户自己所有；\n    - 模型可自由选择；\n    - 系统运行过程可见，甚至能看到 LLM 的精确输入输出 token。\n  - 文中还列举了行业对标案例：\n    - OpenAI 正在把 computer use 加进 `Responses API`；\n    - Anthropic 有 `Claude Code` 和 `Agent SDK`；\n    - Google 有 `Gemini CLI` 以及多种 agent API / SDK 产品。\n  - Letta 的定位是提供“不同选项”：一个开放、可扩展、跨模型可用的 agent runtime。\n\n- 第三部分：Letta 接下来重点强化什么\n  - Letta 会聚焦那些能让任何人部署“有状态、可长期记忆”的 agent 的底层能力。\n  - 记忆机制升级：\n    - 从过去那种“专门的数据库记忆编辑工具”，转向更通用的电脑操作工具；\n    - 例如直接用 `bash` 操作投射到 Git 文件中的记忆，这套机制被称为 `MemFS`。\n  - “睡眠时计算（sleep-time compute）”更强：\n    - Letta 早就主张 agent 应该能自动反思、整理、改进；\n    - 现在这些流程会迁移到客户端执行，从而能调用同样的电脑、工具和上下文。\n  - 编排方式升级：\n    - 从单纯的服务端消息传递，转向动态子代理和技能系统；\n    - 任务可以被拆分、委派、执行并组合。\n  - `skills` 会成为能力封装和复用的主要方式：\n    - 更容易组合；\n    - 更高效；\n    - 也更符合 agent 随时间学习成长的方式。\n  - `Letta Code SDK` 的作用是把这些能力规模化部署：\n    - 提供 agent 的核心原语；\n    - 让开发者在开放 agent 外壳上构建系统；\n    - 目标是不只追求 coding / computer-use 能力强，还要让 agent 真正“会学习、会成长”，生命周期甚至能超过底层模型本身。\n\n- 第四部分：Letta 要放弃哪些旧设计\n  - Letta 明确表示，很多旧功能是为“电脑操作还不是 agent 主要行动方式”的时代设计的，已经不适合现在更强的 agent 能力。\n  - 因此它将淘汰一批服务端功能，改用更强的客户端或运行时原生方案，主要包括：\n    - `Letta Filesystem`：改为真实文件系统访问、上下文仓库（context repositories）和电脑操作；\n    - 旧的服务端记忆工具（如 `core_memory_replace`）：改为直接操作 Git 支持的上下文仓库文件；\n    - 模板（Templates）：改由版本化的 `Letta Code SDK` 和社区工具如 `lettactl` 替代；\n    - 身份（Identities）：下沉到应用层，用标签（tags）实现；\n    - 服务端 `MCP` 集成：改为客户端 `skills`；\n    - 服务端 sleep-time agents：改为客户端子代理系统；\n    - 硬编码的服务端多代理工具：改为子代理与动态 agent-discovery skills；\n    - `tool rules`（基于硬编码规则限制 agent 行为）被弃用，因为它会妨碍前沿能力发展。\n  - 这部分传递的信息很明确：Letta 要从“预设很多服务端规则和专用工具”，转向“更开放、更通用、更接近真实环境”的 agent 架构。\n\n- 第五部分：迁移安排与时间点\n  - Letta 表示会提供实际过渡支持，包括：\n    - 迁移指南；\n    - 办公时间答疑（office hours）；\n    - Discord 和 Ezra 的直接支持；\n    - 清晰的时间表。\n  - 时间上，部分功能会“立即”弃用，例如：\n    - `tool rules`\n    - 一些 legacy tools\n  - 更大的功能调整会在 `4月底前` 完成弃用，例如：\n    - templates\n    - filesystem\n  - 这说明转型不是停留在方向层面，而是已有明确落地节奏。\n\n- 第六部分：Letta 的长期使命\n  - Letta 的核心使命是“构建会学习的 agent”。\n  - 他们理想中的 agent 要同时具备三件事：\n    - 持久记忆；\n    - 真实电脑访问能力；\n    - 能从自身经历和工作中持续改进的基础设施。\n  - `Letta Code` 就是把这些能力组合起来的运行时：以 Git 支持的记忆、skills、subagents 和跨模型部署为基础，打造真正可成长的 agent。\n\n如果你愿意，我还可以进一步把这篇内容压缩成“100字极简版”或“适合发朋友圈/汇报的3点版”。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1773730520873,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:237bb2b393362bce54905602027e67965a13494d62dfa4ba4d85e97ac3c087b3",
+  "refs": {
+    "sessionId": "1773728710561_fu9yvs1j"
+  },
+  "revisionId": "sha256:cf460d65a022ff192a0fbeaab95b816ff16048820082c39f91b72a919618c884",
+  "schemaVersion": 1,
+  "updatedAt": 1773730520873
+}

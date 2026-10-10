@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780307645685,
+  "entityType": "message",
+  "id": "1780307717187_vu7bruph",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n宝玉认为，**通用 Agent 可能会成为未来的“操作系统”**：就像今天人们通过 Windows/macOS 操作电脑，未来人们会通过 **Agent OS** 与 AI 和各类服务交互。届时，许多传统 App 的形态会发生变化，甚至被 Agent 替代。\n\n## 1. 通用 Agent 可能成为下一代操作系统\n\n原文的核心观点是：未来用户不再频繁打开各种 App，而是通过一个统一入口——类似“贾维斯”的超级助理 Agent——来完成任务。\n\n- 现在：用户通过操作系统打开 App、点击界面完成操作。\n- 未来：用户直接对 Agent 说需求，Agent 负责调用工具、完成流程。\n- 关键变化：**用户入口从 App 转向 Agent**。\n\n例如：  \n用户想订机票，未来可能不会打开订票 App，而是直接告诉 Agent：  \n> “帮我订一张明天去上海的机票，上午出发，价格别太贵。”  \nAgent 负责查询、筛选、下单，用户只需要确认结果。\n\n## 2. App 未来可能有三种结局\n\n宝玉认为，随着 Agent 能力增强，现有 App 大致会走向三类结局：\n\n### 2.1 消亡：被 Agent 直接替代\n\n有些 App 的功能比较简单，Agent 自己就能完成，不再需要独立 App。\n\n- 用户不需要再打开 App。\n- Agent 直接理解需求并完成任务。\n- 这类 App 可能逐渐消失。\n\n### 2.2 变成 CLI 或 MCP：成为 Agent 的后台工具\n\n一些 App 不会直接消失，而是变成 Agent 可调用的工具接口，例如：\n\n- CLI：命令行工具\n- MCP：模型上下文协议/工具调用协议\n- Skill：Agent 可学习和调用的能力模块\n\n用户不再直接操作这些 App，而是由 Agent 在后台调用它们。\n\n例如：  \n一个 SaaS 工具可以提供 CLI + Skill，让 Agent 能够自动完成建表、查询数据、生成报告等操作。\n\n### 2.3 成为 Agent GUI 插件或 Agent App\n\n有些复杂功能仍然需要图形界面配合，无法完全由 Agent OS 自动完成。\n\n这类 App 可能会变成：\n\n- Agent GUI 插件\n- Agent App\n- 临时被 Agent 唤起的操作界面\n\n也就是说，用户平时主要和 Agent 对话，只有在必要时才打开某个 GUI 界面进行手工确认或复杂操作。\n\n## 3. SaaS 的趋势：必须支持 Agent 调用\n\n宝玉指出，未来一段时间，SaaS 产品会出现一个趋势：\n\n> SaaS 都要推出 CLI + Skill，让 Agent 学会使用它。\n\n原因是：\n\n- 用户入口会逐渐从 SaaS App 转向 Agent。\n- 如果 SaaS 不能被 Agent 调用，用户可能就不再使用它。\n- 为了保住客户，SaaS 需要主动适配 Agent 生态。\n\n简单说，未来 SaaS 不仅要服务“人”，也要服务“Agent”。\n\n## 4. 热门回复中的补充观点\n\n评论区也补充了一些关键判断：\n\n- 用户会倾向于使用统一入口，而不是在多个 App 间切换。\n- 通用 Agent 确实有潜力成为下一代操作系统。\n- 技术爆发的前提之一，可能不是 Agent 能力本身，而是**工具调用成本下降**。\n\n其中一条技术观点提到：\n\n> Agent OS 真正爆发的前提，不是 Agent 能力变强，而是工具调用成本降到几分钱一次。\n\n这说明，Agent 要成为基础入口，不仅需要能力强，还需要调用工具足够便宜、稳定、高效。\n\n## 5. 总结\n\n文章认为，未来用户与数字世界交互的核心入口可能从 App 迁移到通用 Agent。传统 App 要么被 Agent 替代，要么转为后台工具接口，要么成为 Agent 生态中的 GUI 插件；而 SaaS 产品则需要尽快支持 CLI、MCP、Skill 等形式，才能在 Agent OS 时代继续保有价值。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780307645685,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c7019832a63f2e5e63064ee2d8c086f6612442c46ab264a7555497fecbafa2b3",
+  "refs": {
+    "sessionId": "1780307301722_zet2czja"
+  },
+  "revisionId": "sha256:59038456a8c9c93a9990a099c00051d37a37561c06a1a835135fbcef9c2fdbbe",
+  "schemaVersion": 1,
+  "updatedAt": 1780307645685
+}

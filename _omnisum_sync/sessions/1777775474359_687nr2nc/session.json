@@ -1,0 +1,72 @@
+{
+  "createdAt": 1777775474359,
+  "entityType": "session",
+  "id": "1777775474359_687nr2nc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "阅读Scout仓库和Context Providers相关文章，评估其架构是否可用于自己的Agent系统。",
+      "本地部署Scout，连接Slack或Google Drive进行小规模测试。",
+      "在现有AI Agent设计中尝试增加工具隔离层，减少主Agent上下文污染。",
+      "对比向量检索与实时导航式检索在企业知识问答中的准确率、时效性和成本。",
+      "梳理自身团队的核心信息源，设计query/update风格的上下文提供器接口。"
+    ],
+    "archiveReason": "文章提出了构建企业AI上下文层的可复用架构思路，并给出开源项目、工具接口和快速启动方式，适合作为AI Agent产品设计与企业知识管理方案参考。",
+    "classifiedAt": 1777775839033,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Scout开源公司大脑方案",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Context Providers将每个信息源封装为query_source和update_source，主Agent无需直接处理底层工具细节。",
+      "“导航优于搜索”强调像代码代理遍历文件系统一样访问实时数据源，而不是依赖过期的向量索引。",
+      "公司大脑可分为数据层和操作系统层：前者组织企业知识，后者负责执行、监控和闭环调整。",
+      "Scout通过CRM、知识维基、跟进表和按需SQL表，将无明确来源归属的信息结构化沉淀。",
+      "该方案的主要代价是每次查询需要更多LLM调用，成本和延迟高于一次性向量检索。"
+    ],
+    "oneHighValuePoint": "用Context Providers作为主Agent与各类工具之间的隔离层，减少上下文污染和工具复杂度，是最有复用价值的架构设计。",
+    "oneLineReview": "一篇兼具架构启发和实践入口的AI Agent企业知识层方案，但案例和实证支撑偏弱。",
+    "primaryCategory": "AI Agent与企业知识管理",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "开源工具",
+      "企业AI基础设施"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍开源上下文代理Scout，主张企业“公司大脑”不应依赖静态向量库，而应通过Context Providers连接Slack、Drive、CRM等实时信息源，以“导航优于搜索”的方式构建可操作上下文，并逐步形成维基、CRM和闭环AI操作系统。",
+    "tags": [
+      "公司大脑",
+      "Context Providers",
+      "导航优于搜索",
+      "AI操作系统",
+      "Scout",
+      "AgentOS"
+    ],
+    "title": "认识 Scout。这家开源公司的大脑",
+    "totalScore": 73,
+    "url": "https://x.com/ashpreetbedi/status/2049180168200106150"
+  },
+  "payloadHash": "sha256:e40e0730cb6900acf7540331a30a0ddcf6e40ec3871ec49e7a40bb716ed35f0f",
+  "refs": {},
+  "revisionId": "sha256:c6e43b6733a9f940d9e7c711522ab47e69511416fae0930596e975442518dc3a",
+  "schemaVersion": 1,
+  "updatedAt": 1777795312488
+}

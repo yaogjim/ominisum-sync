@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776132045290,
+  "entityType": "session",
+  "id": "1776132045290_q3ztxk5f",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的写作流程中加入一次专门的AI review环节，重点检查重复表达和无关内容",
+      "若要比较模型效果，建立统一任务、提示词和评测标准后再做实测"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776132059067,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI写作工具实测对比",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量有限且证据不足，结论高度依赖个人体验，难以复用，也不具备长期留存价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "长文本写作中，模型容易重复已有观点并滥用搜索结果",
+      "AI辅助写作可采用“骨架生成-人工修改-模型复审润色”的工作流"
+    ],
+    "oneHighValuePoint": "指出长文研究写作中“重复论述和无关信息膨胀”是关键痛点，审稿型模型可能比生成型模型更实用。",
+    "oneLineReview": "有一点真实使用反馈，但整体更像随手感想，缺少支撑结论的关键细节。",
+    "primaryCategory": "AI工具评测",
+    "rating": "D",
+    "rejectReason": "内容主要是个人主观使用感受，缺少具体任务、提示词、样例输出和系统性对比，参考价值较低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "大模型应用",
+      "写作工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "作者分享周末使用 GPT、Hermes 和 Mimo 进行研究写作的体验，核心观点是 GPT 容易重复、插入无关内容，而 Mimo 在审稿、精炼表达和长文写作上表现更好，但未提供具体案例或客观评测数据。",
+    "tags": [
+      "GPT",
+      "Mimo",
+      "Hermes",
+      "AI写作",
+      "模型对比"
+    ],
+    "title": "Jiawei: 周末用 @NousResearch Hermes 和 @XiaomiMiMo 做了高强度研究",
+    "totalScore": 32.5,
+    "url": "https://x.com/0xjiawei/status/2043506184750248126"
+  },
+  "payloadHash": "sha256:d9b14a6bc46fe791dedcab1069567c66bb050b66152d07dd4e1eb50f1c945b18",
+  "refs": {},
+  "revisionId": "sha256:01de471e0299c1b2f1983e2aa754a3aaeb7812cc0152b2348177d34e72f4e72b",
+  "schemaVersion": 1,
+  "updatedAt": 1776139431369
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777774510304,
+  "entityType": "message",
+  "id": "1777774733821_5a8mub8n",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Codex++ 项目解读\n\n## 一、内容总结\n\n**Codex++** 是一个针对 **Codex 桌面应用** 的第三方插件 / 微调系统。\n\n它的目标是：\n\n- 给 Codex 桌面版增加自定义功能\n- 修复 UI 问题\n- 添加一个内置的「Tweaks」管理页面\n- 不需要重新编译 Codex 应用本身\n\n简单说，Codex++ 会修改本地的 `Codex.app`，让它启动时加载一个外部运行时，然后这个运行时再加载用户安装的各种小插件。\n\n目前项目状态是：\n\n> **Alpha 阶段**，架构已经设计好，但安装器还需要在不同平台上做更多真实设备测试。\n\n---\n\n## 二、深入浅出解读\n\n### 1. 它到底做了什么？\n\nCodex++ 的核心思路是：\n\n> 给 Codex 桌面应用“打补丁”，让它支持加载外部插件。\n\n它会在本地 Codex 应用中加入一个很小的加载器。之后真正的插件系统、配置文件、插件代码等，都放在用户目录里，而不是放在 Codex 应用包内部。\n\n这样做的好处是：\n\n- 修改插件时不用重新打包 Codex\n- 插件可以热更新或快速调试\n- Codex 更新后，可以重新修复补丁\n\n---\n\n### 2. 安装过程大致做了什么？\n\n安装器会自动执行这些操作：\n\n1. 找到你的 Codex 桌面应用\n2. 备份原始应用文件\n3. 修改 `app.asar`，让 Codex 启动时加载 Codex++ 的 loader\n4. 处理 Electron 的完整性校验\n5. 在 macOS 上重新签名应用\n6. 安装一个后台 watcher，用来检测 Codex 更新并重新打补丁\n7. 默认安装一些官方提供的 tweak 插件\n\n也就是说，它不是普通意义上的“插件安装器”，而是会直接修改 Codex 桌面应用本身。\n\n---\n\n### 3. Tweak 是什么？\n\n这里的 **tweak** 可以理解为“小插件”或“小功能补丁”。\n\n一个 tweak 通常包含：\n\n```text\nmy-tweak/\n├── manifest.json\n└── index.js\n```\n\n`manifest.json` 里面声明插件信息，例如：\n\n```json\n{\n  \"id\": \"com.you.my-tweak\",\n  \"name\": \"My Tweak\",\n  \"version\": \"0.1.0\",\n  \"githubRepo\": \"you/my-tweak\",\n  \"author\": \"you\",\n  \"description\": \"Adds a button.\",\n  \"minRuntime\": \"0.1.0\"\n}\n```\n\n插件可以用于：\n\n- 添加按钮\n- 修改快捷键\n- 改善界面\n- 修复 UI 体验问题\n- 增加自定义设置项\n\n---\n\n### 4. 它支持哪些功能？\n\nCodex++ 提供了一些命令行工具，例如：\n\n```bash\ncodexplusplus status\ncodexplusplus repair\ncodexplusplus update\ncodexplusplus uninstall\n```\n\n常见用途：\n\n| 命令 | 作用 |\n|---|---|\n| `status` | 查看当前安装状态 |\n| `repair` | 修复 Codex++ 补丁 |\n| `update` | 更新 Codex++ |\n| `uninstall` | 卸载并恢复 |\n| `tweaks list` | 查看已安装插件 |\n| `tweaks open` | 打开插件目录 |\n| `update-codex` | 临时恢复官方 Codex，方便官方更新 |\n\n---\n\n### 5. 默认安装哪些插件？\n\n首次安装时，Codex++ 会安装一些默认 tweak，例如：\n\n- 自定义键盘快捷键\n- UI 改进插件\n\n对应仓库包括：\n\n- `b-nnett/codex-plusplus-keyboard-shortcuts`\n- `b-nnett/codex-plusplus-bennett-ui`\n\n---\n\n### 6. 安全性需要注意什么？\n\n这个项目有一定风险，因为它会：\n\n- 修改 Codex 桌面应用\n- 破坏原始代码签名\n- 在 macOS 上需要重新签名\n- 让应用加载第三方 JavaScript 插件\n- 依赖 GitHub Release 检查插件更新\n\n虽然项目会备份原应用，也提供卸载命令，但本质上仍属于“非官方修改”。\n\n官方也明确说明：\n\n> 这是非官方项目，不隶属于 OpenAI，使用风险自负。\n\n---\n\n## 三、我的意见\n\n我认为 Codex++ 是一个很有潜力的项目，尤其适合以下人群：\n\n- 喜欢折腾桌面应用的开发者\n- 想自定义 Codex 使用体验的人\n- 想开发 Codex 插件或 UI 改进的人\n- 能接受 alpha 软件风险的高级用户\n\n但对于普通用户，我建议谨慎使用。\n\n原因是：\n\n1. **它会修改应用本体**  \n   这比普通插件风险更高。\n\n2. **目前还是 alpha 阶段**  \n   安装器在不同系统上的稳定性还没有完全验证。\n\n3. **安全风险不可忽视**  \n   tweak 本质上是可执行代码，安装第三方 tweak 前应仔细检查来源。\n\n4. **可能影响官方更新机制**  \n   Codex 更新时需要用专门命令处理，流程更复杂。\n\n---\n\n## 四、简短结论\n\n**Codex++ 可以理解为 Codex 桌面版的“插件框架”。**\n\n它让用户可以给 Codex 添加自定义功能，但代价是需要修改本地应用，并承担一定稳定性和安全风险。\n\n如果你是开发者、喜欢自定义工具，可以尝试；  \n如果你只是普通用户，建议等项目更成熟后再使用。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1777774510304,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ee841b5a47d47504939183d8aba181ed61773591a87ee8107edbb3d181496ad0",
+  "refs": {
+    "sessionId": "1777773375757_oqztfs8u"
+  },
+  "revisionId": "sha256:9ac1d7c63852d4f36051fae3e20c768ac30bcd5645861c8c235a7039044cba65",
+  "schemaVersion": 1,
+  "updatedAt": 1777774510304
+}

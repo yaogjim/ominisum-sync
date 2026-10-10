@@ -1,0 +1,66 @@
+{
+  "createdAt": 1774320947467,
+  "entityType": "session",
+  "id": "1774320947467_19h2ew2t",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "阅读MoDA原论文，核对实验设置、对比基线和适用边界",
+      "查看开源Triton实现，评估是否值得在现有Transformer训练栈中复现或借鉴"
+    ],
+    "archiveReason": "提供了一个值得跟进的Transformer架构改进方向，并附有论文与代码链接",
+    "classifiedAt": 1774320963292,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "MoDA改进Transformer深度利用",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "深层Transformer中残差累加可能导致早期层信号被逐渐稀释",
+      "MoDA通过在相同位置上跨层访问前几层KV对来增强深度信息复用",
+      "该方法声称在较低FLOPs增量下接近FlashAttention-2效率，并带来一定下游性能提升"
+    ],
+    "oneHighValuePoint": "将注意力从仅沿序列扩展到同时沿网络深度检索前层表示，是对深层Transformer信息保留问题的一个新颖处理思路。",
+    "oneLineReview": "有启发性的论文线索，但更像社交媒体摘要而非可直接依赖的完整分析。",
+    "primaryCategory": "人工智能架构研究",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为论文线索保留",
+    "secondaryCategories": [
+      "Transformer优化",
+      "论文速递"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一条对MoDA论文的转述性推荐，核心观点是通过让注意力跨深度访问前层KV，缓解深层Transformer中早期信息被残差稀释的问题，并给出部分效率与基准提升结果。",
+    "tags": [
+      "MoDA",
+      "Transformer",
+      "残差连接",
+      "深度建模",
+      "Triton"
+    ],
+    "title": "Bo Wang: Sharing another very cool paper from my friend @XinggangWang",
+    "totalScore": 58.15,
+    "url": "https://x.com/BoWang87/status/2036217291151646816"
+  },
+  "payloadHash": "sha256:8f2094de33bc49f7c03e6ebe9461b2cdd3b5c1201af298e93760e1d44121e6bc",
+  "refs": {},
+  "revisionId": "sha256:48752d1c7bc10999f3b65325df7097f9825ac6b25961591a80d1da5ab408ef21",
+  "schemaVersion": 1,
+  "updatedAt": 1774334429831
+}

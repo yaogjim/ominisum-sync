@@ -1,0 +1,65 @@
+{
+  "createdAt": 1775649208475,
+  "entityType": "session",
+  "id": "1775649208475_x36mxfcj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在评估或设计Agent系统时，单独梳理感知、执行、容错、记忆四类Harness能力",
+      "将自己的AI工作流映射到三层记忆结构，检查哪些信息应由上下文、长期记忆或知识检索承载"
+    ],
+    "archiveReason": "对Harness的角色给出形象比喻，适合建立基础概念框架，但缺少技术细节与实证支撑",
+    "classifiedAt": 1775820502559,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Harness作为LLM身体隐喻",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "LLM本身更像推理核心，真正让其完成任务的是外层Harness提供的输入输出、工具调用与执行控制",
+      "记忆系统可分为当前对话短期记忆、跨对话长期记忆和项目级知识装配三层"
+    ],
+    "oneHighValuePoint": "将Harness拆解为感知、执行、容错和三层记忆系统，有助于把AI Agent从“模型能力”转向“系统能力”来理解。",
+    "oneLineReview": "概念比喻清晰、启发性不错，但更像认知框架而非可直接落地的方法文。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "可归档保留，作为理解AI Agent执行层与记忆层设计的概念性材料",
+    "secondaryCategories": [
+      "LLM系统设计",
+      "工具链与执行框架"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章用“缸中之脑”比喻LLM，将Harness定义为赋予模型感知、行动、容错与记忆能力的执行外壳，并提出短期记忆、长期记忆、项目知识三层记忆协同的理解框架。",
+    "tags": [
+      "Harness",
+      "LLM",
+      "Agent",
+      "记忆管理",
+      "容错机制"
+    ],
+    "title": "宝玉: LLM 是一颗超强大脑，但它是个“缸中之脑”——泡在营养液里，没有眼睛、没有耳朵、没有手脚",
+    "totalScore": 55.5,
+    "url": "https://x.com/dotey/status/2041649498531791236"
+  },
+  "payloadHash": "sha256:cc16d71635b4f5c95d7d3713a98d3fed226f6af2d7bd250d9f40f65275a5994c",
+  "refs": {},
+  "revisionId": "sha256:887d26881a1e2d0ecd367c79dbb59d94bca53dc6f76a2e23576226705427f18d",
+  "schemaVersion": 1,
+  "updatedAt": 1775820502563
+}

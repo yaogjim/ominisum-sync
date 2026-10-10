@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777005174647,
+  "entityType": "message",
+  "id": "1777005396851_1glibtx4",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# git worktree 在多 Agent 协作中的局限\n\n## 核心观点\n\n这篇内容的重点是：`git worktree` 适合单人多分支开发，但不适合多 Agent 并行协作。  \n原因在于，每个 worktree 都是独立文件夹，彼此隔离，Agent 无法实时看到其他 Agent 正在修改什么，结果往往是各自埋头开发，冲突在最后合并时才集中爆发。\n\n## 为什么这是问题\n\n在 Agent 时代，多智能体协作的关键不是“各自独立写代码”，而是“能随时感知彼此的改动”。  \n而 `worktree` 的机制天然做不到这一点：它让隔离更强，却让协同更弱。这样会导致：\n\n- 重复修改同一部分代码  \n- 上下游改动彼此不知道  \n- 冲突只能在 merge 时暴露  \n- 并行效率被明显拉低  \n\n简单说，就是“隔离有了，协同没了”。\n\n## 作者隐含的更大判断\n\n作者进一步指出，这不是 `worktree` 本身做得差，而是它的设计目标就不是为多 Agent 协作准备的。  \n`Git` 以及 `worktree` 本质上是为人类开发者、尤其是单人或小团队的分支工作流设计的，不是为大量智能体实时协同编辑而设计的。\n\n## 评论区的两种不同思路\n\n围绕这个观点，评论区出现了两派看法：\n\n### 1. 共享工作区派\n\n这派认为，多 Agent 应该直接在同一个代码库里协作，底层通过 `virtual branches` 一类机制隔离改动。  \n这样每个 Agent 看起来像在自己的分支工作，但实际上没有复制文件，也能实时看到上下文变化，从而减少 merge conflict。  \n这种思路更接近在线文档协作，底层可能依赖类似 `CRDT` 的技术。\n\n### 2. 隔离优先派\n\n另一派认为，`worktree` 的隔离并不是缺点，反而能避免多个 Agent 互相覆盖修改、引发 race condition。  \n在他们看来，多 Agent 协作问题不该在文件系统层解决，而应该放在更上层，比如：\n\n- PR 流程\n- merge queue\n- 自动冲突处理\n- 代码审查机器人\n\n也就是说，底层保持隔离，上层负责协调。\n\n## 一句话结论\n\n这篇内容本质上讨论的是：  \n**在多 Agent 协作时代，代码协作系统到底应该优先“隔离”还是优先“实时协同”。**\n\n作者显然更倾向于后者：  \n`git worktree` 解决了隔离问题，却没有解决 Agent 之间“看见彼此”的问题，因此在 Agent 时代会暴露出明显局限。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777005174647,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9dfbbc3f02f53d84a829648d191e882a19305dbb02399fe5eb059f0ad02840be",
+  "refs": {
+    "sessionId": "1777005396849_ncljx3ga"
+  },
+  "revisionId": "sha256:cedf93dab082266184887f9693d9cbb388161821f6e25ff433b9b6a7ba58867a",
+  "schemaVersion": 1,
+  "updatedAt": 1777005174647
+}

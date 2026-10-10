@@ -1,0 +1,15 @@
+{
+  "createdAt": 1774865407182,
+  "entityType": "session-content",
+  "id": "1774865407182_qasuz0tj",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>九原客</strong></header><div class=\"tw-body\">最近在找几类配合 Coding Agent 的 App，分别是：<br><br>1. Skills 管理，最终选择 xingkongliang/skills-manager<br>2. 多 Agent 管理，最终选择 ShawnPana/smux，使用tmux-bridge 来控制终端，非常优雅。<br>3. 手机控制，出来很多新的App，但是还是选择 happy coder<br>4. 看板，用来拆分需求，创建worktree，驱动不同的 Agent 完成。选 Conductor 或 Cline Kanban。看板app多用于维护现有代码库，比较整洁，但从头写代码我更喜欢 smux。<br>5. Desktop 应用。用来做一些非编码任务，但是这类应用已经井喷，用不完。Codex App 就很好用，如果没有订阅的话，可以看看 Alma 等。<br><br>个人偏好是选择封装而不是替代，底层尽量保持 Claude Code、 Codex或 OpenCode。</div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Eira Hazel</strong> <span class=\"tw-eng\">♥ 9 · 💬 1</span><p>感觉skill管理和agent管理不如用aghub，加mcp包圆了，<br>https://<br>github.com/AkaraChen/aghub，</p></div><div class=\"tw-reply\"><strong>@Bhe hontyu</strong> <span class=\"tw-eng\">♥ 3 · 💬 1</span><p>happy coder 可惜就是稳定性稍微差了点。最近好像更新少了。</p></div><div class=\"tw-reply\"><strong>@Haoqing Wang</strong> <span class=\"tw-eng\">♥ 2 · 💬 1</span><p>Skills 管理这块补充一个：skill-optimizer，不是管理启用/停用，而是诊断每个 skill 的质量 ——<br>哪些该触发没触发、哪些触发后被拒、哪些 workflow 跑到一半就断了。基于真实 session 数据分析。</p></div><div class=\"tw-reply\"><strong>@Vint</strong> <span class=\"tw-eng\">♥ 3 · 💬 0</span><p>Skills 管理，试试 Skill Flow 呢？<br><br>https://<br>github.com/VintLin/skill-<br>flow<br>…</p></div><div class=\"tw-reply\"><strong>@Allen Cao</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>我根据自己开发需求自己Vibe了一个，跟你的诉求基本差不多哈哈，底层封装Claude和Codex，准备最近发出来，后面开源，到时候可以试用下</p></div></div>",
+    "pageContent": "九原客: 最近在找几类配合 Coding Agent 的 App，分别是： 1. Skills 管理，最终选择 xingkongliang/skills-manager\n2. 多 Agent 管理，最终选择 ShawnPana/smux，使用tmux-bridge 来控制终端，非常优雅。\n3. 手机控制，出来很多新的App，但是还是选择 happy coder\n4. 看板，用来拆分需求，创建worktree，驱动不同的 Agent 完成。选 Conductor 或 Cline Kanban。看板app多用于维护现有代码库，比较整洁，但从头写代码我更喜欢 smux。\n5. Desktop 应用。用来做一些非编码任务，但是这类应用已经井喷，用不完。Codex App 就很好用，如果没有订阅的话，可以看看 Alma 等。 个人偏好是选择封装而不是替代，底层尽量保持 Claude Code、 Codex或 OpenCode。\n---\n热门回复 (共 5 条):\n@Eira Hazel (♥ 9 · 💬 1):\n感觉skill管理和agent管理不如用aghub，加mcp包圆了，\nhttps://\ngithub.com/AkaraChen/aghub，\n\n@Bhe hontyu (♥ 3 · 💬 1):\nhappy coder 可惜就是稳定性稍微差了点。最近好像更新少了。\n\n@Haoqing Wang (♥ 2 · 💬 1):\nSkills 管理这块补充一个：skill-optimizer，不是管理启用/停用，而是诊断每个 skill 的质量 ——\n哪些该触发没触发、哪些触发后被拒、哪些 workflow 跑到一半就断了。基于真实 session 数据分析。\n\n@Vint (♥ 3 · 💬 0):\nSkills 管理，试试 Skill Flow 呢？\n\nhttps://\ngithub.com/VintLin/skill-\nflow\n…\n\n@Allen Cao (♥ 1 · 💬 0):\n我根据自己开发需求自己Vibe了一个，跟你的诉求基本差不多哈哈，底层封装Claude和Codex，准备最近发出来，后面开源，到时候可以试用下\n"
+  },
+  "payloadHash": "sha256:b33c7591b00fc1780a8f3e490e2269ab8a909d56d7c359ab9635665463995eaf",
+  "refs": {},
+  "revisionId": "sha256:5323560dce4858e17702fa2fb71ff202b7cc6f0a84972f3a356a2d46f07a3120",
+  "schemaVersion": 1,
+  "updatedAt": 1777902526273
+}

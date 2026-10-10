@@ -1,0 +1,66 @@
+{
+  "createdAt": 1777264003897,
+  "entityType": "session",
+  "id": "1777264003897_owjuiyfb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在评估 Multica，可重点测试本地仓库接入、Skill导入和长时间 loading 问题",
+      "对比 Multica、Slock 与 Claude Code 在实际开发工作流中的稳定性和任务分发体验"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777284827010,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 2,
+      "novelty": 2,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Multica使用体验吐槽",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息时效性强且价值有限，主要记录个别软件故障与使用体验，不适合长期留存。",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "Multica 的工作流设计偏 issue-based agent task dispatch",
+      "部分本地文件夹或 Git repo 接入可能需要在 Agent Instructions 中配置路径",
+      "Skill 的 GitHub 导入存在格式兼容或平台支持限制"
+    ],
+    "oneHighValuePoint": "Multica 更偏向在 Workspace 内通过 issue 分发给不同 agent，而 Slock 更像在 channel 中与多个 agent 交流分配任务。",
+    "oneLineReview": "适合快速了解 Multica 当前体验问题，但不具备长期参考价值。",
+    "primaryCategory": "AI工具体验",
+    "rating": "D",
+    "rejectReason": "内容主要是个人即时使用吐槽和少量回复澄清，缺乏系统评测、可复用方法和充分证据。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开发工具",
+      "Agent产品"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章是用户对 Multica 使用半小时后的负面体验反馈，涉及本地文件夹/GitHub仓库接入、Skill导入、Agent loading 等问题。后续回复说明部分问题可通过重启或配置解决，并对比了 Multica 与 Slock 的任务分发思路。",
+    "tags": [
+      "Multica",
+      "AI Agent",
+      "产品体验",
+      "Bug反馈",
+      "开发工作流"
+    ],
+    "title": "victor-wu.eth: 使用 Multica 已经半小时了，我的耐心快要被这款软件这么殆尽了，包括但不限于： 1",
+    "totalScore": 28.5,
+    "url": "https://x.com/victor_wu/status/2048455026256056390"
+  },
+  "payloadHash": "sha256:c972e2546fe14df56e3b6c21835ea6b3513b74359a044e93267b1cc04fd5302b",
+  "refs": {},
+  "revisionId": "sha256:4db38b0b80d3949f96bc40ea390f6b7764d161de91784a26a1f34a9b05a9bcce",
+  "schemaVersion": 1,
+  "updatedAt": 1777284827013
+}

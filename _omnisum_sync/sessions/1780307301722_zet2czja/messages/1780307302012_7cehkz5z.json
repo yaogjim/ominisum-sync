@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780307233698,
+  "entityType": "message",
+  "id": "1780307302012_7cehkz5z",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\n宝玉认为：**通用 Agent 可能成为未来的“操作系统”**。\n\n以后用户不再频繁打开各种 App，而是通过一个统一的 AI 助理入口完成任务。\n\nApp 可能有三种结局：\n\n1. **消亡**  \n   Agent 自己能完成，就不需要 App。\n\n2. **变成工具接口**  \n   App 退到后台，变成 CLI、MCP、Skill，供 Agent 调用。\n\n3. **变成 Agent 插件**  \n   少数复杂操作仍需要 GUI，由 Agent 临时唤起给用户使用。\n\n未来 SaaS 如果想活下去，可能要提供：  \n**CLI + Skill + Agent 可调用接口**。\n\n---\n\n## 二、解读\n\n可以把未来想象成这样：\n\n现在：\n\n> 人 → 打开 App → 点击操作 → 完成任务\n\n未来：\n\n> 人 → 告诉 Agent → Agent 调用工具 → 完成任务\n\n比如订机票：\n\n现在你要打开携程、航旅纵横、航空公司 App，自己筛选、比较、付款。\n\n未来你只需要说：\n\n> “帮我订下周二去上海的机票，上午出发，价格别太贵。”\n\nAgent 会自动：\n\n- 查航班\n- 比价格\n- 看时间\n- 给你推荐\n- 等你确认\n- 帮你下单\n\n所以，**用户入口变了**。\n\n过去入口是 App。  \n未来入口可能是 Agent。\n\n这就像：\n\n- Windows/Mac 是电脑时代的操作系统\n- iOS/Android 是移动时代的操作系统\n- Agent OS 可能是 AI 时代的操作系统\n\n---\n\n## 三、我的意见\n\n这个判断方向是对的，但不会一夜发生。\n\n我认为未来更可能是：\n\n> **Agent 成为主入口，App 退到后台。**\n\n不是所有 App 都会消失，但很多 App 会从“给人用”，变成“给 Agent 用”。\n\n真正关键有三点：\n\n1. **Agent 要足够可靠**  \n   不能乱订票、乱转账、乱发邮件。\n\n2. **工具调用成本要低**  \n   如果每次调用都很贵，普及不了。\n\n3. **App/SaaS 要开放接口**  \n   谁更容易被 Agent 调用，谁就更容易留下来。\n\n一句话：\n\n> 未来不是没有 App，而是用户不再直接使用大多数 App。  \n> Agent 会成为新的入口，App 会变成它背后的工具。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780307233698,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7ea83eb8c62da94f76fe88a7035aefd9c6b7b5f12d6a4d958d67582a05b5f9d7",
+  "refs": {
+    "sessionId": "1780307301722_zet2czja"
+  },
+  "revisionId": "sha256:d404c8efb19e21e4ca2dca9161f5801d3f67e7d8bb62725e50b99610b4d9f33c",
+  "schemaVersion": 1,
+  "updatedAt": 1780307233698
+}

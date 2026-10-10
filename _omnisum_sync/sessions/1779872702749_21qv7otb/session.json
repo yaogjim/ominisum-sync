@@ -1,0 +1,77 @@
+{
+  "createdAt": 1779872702749,
+  "entityType": "session",
+  "id": "1779872702749_21qv7otb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个现有项目试装compound-engineering-plugin，并跑一轮/ce-brainstorm、/ce-plan、/ce-code-review、/ce-compound流程。",
+      "将/grill-me或/grill-with-docs类需求澄清技能加入日常AI编码前置流程。",
+      "为项目建立CONTEXT.md或ADR文档，让AI代理共享领域语言和历史决策。",
+      "评估是否将TDD、诊断、代码评审和架构改进类技能固化为个人AI开发工作流模板。"
+    ],
+    "archiveReason": "包含多个可直接试用的AI工程技能库与流程框架，可作为搭建个人AI辅助开发工作流的参考清单。",
+    "classifiedAt": 1780616071821,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "AI工程流程技能清单",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "Compound Engineering强调80%规划与评审、20%执行，通过brainstorm、plan、work、review、compound形成闭环。",
+      "Shaping Skills将Shape Up方法迁移到LLM协作中，用framing、kickoff、breadboarding等技能沉淀可执行设计文档。",
+      "Matt Pocock Skills强调真实工程中的对齐、领域语言、TDD反馈环、诊断循环和架构改进，避免AI只做表层vibe coding。",
+      "多个技能库都把AI编程从单次提示词转向可复用、可组合、可审查的流程资产。"
+    ],
+    "oneHighValuePoint": "AI工程的核心价值不只是加速编码，而是通过需求澄清、计划、评审和知识沉淀，让每次工程工作降低下一次工作的成本。",
+    "oneLineReview": "这是一个有实践价值的AI工程技能库索引，但证据和案例深度不足，更适合作为工具清单而非深度方法论文章。",
+    "primaryCategory": "AI工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可选择性保留",
+    "secondaryCategories": [
+      "智能体开发流程",
+      "软件工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/nurijanian/status/2059319662597611914",
+      "https://github.com/EveryInc/compound-engineering-plugin",
+      "https://github.com/rjs/shaping-skills",
+      "https://github.com/mattpocock/skills"
+    ],
+    "summaryBrief": "文章汇总了Compound Engineering、Shaping Skills、Matt Pocock Skills等Claude Code/AI编程技能库，重点围绕规划、需求澄清、TDD、代码审查、知识沉淀和工程流程复利展开，附带安装方式和典型使用场景。",
+    "tags": [
+      "Claude Code",
+      "AI编程",
+      "工程流程",
+      "Agent Skills",
+      "Compound Engineering"
+    ],
+    "title": "AI工程从编码走向流程组织",
+    "totalScore": 67,
+    "url": "omnisun://digest/1779872702748"
+  },
+  "payloadHash": "sha256:744e43198471ce88308d6e2eb9b154e2571648310a9a3da74c0540b3973391a2",
+  "refs": {},
+  "revisionId": "sha256:54adc4c47f6789fc40f4f83cff7f40571194e6407c8c340989906282cc562b20",
+  "schemaVersion": 1,
+  "updatedAt": 1780616072992
+}

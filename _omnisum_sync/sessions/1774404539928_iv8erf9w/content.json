@@ -1,0 +1,15 @@
+{
+  "createdAt": 1774404539928,
+  "entityType": "session-content",
+  "id": "1774404539928_iv8erf9w",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Arvind</strong></header><div class=\"tw-body\">Cloudflare 刚刚推出了 Dynamic Workers，这对 AI 代理来说是一个重大事件。<br><br>问题：AI 代理生成代码。这些代码需要沙箱。容器启动需要 100-500 毫秒，占用 100-500MB 内存。<br><br>动态 Worker 改用 V8 隔离：<br>启动时间: 1-5毫秒（快100倍）<br>内存：几 MB（少 100 倍）<br>无需温暖池<br>无限制的并发<br>运行于与宿主相同的线程<br><br>杀手级特性：TypeScript API 定义替代 OpenAPI 规范。更少的令牌、更简洁的代码，通过 Cap'n Web RPC 在沙箱边界实现类型安全的 RPC。<br><br>Code Mode：LLM 编写 TS 代码 → 在隔离环境中运行 → 调用带类型的 API → 仅将最终结果返回至上下文。相较于顺序工具调用，减少 81% 的词元。<br><br>每个加载的工人每天0.002美元。测试期间免费。<br><br>这就是容器本应具备的无服务器沙箱。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HEL5LffXcAA8TtB?format=png&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Cloudflare</strong> <span class=\"tw-eng\">♥ 2.3K · 💬 95</span><p>我们推出了 Dynamic Workers，它允许你在安全、轻量级的隔离环境中执行 AI 生成的代码。这种方法比传统容器快 100 倍。</p></div><div class=\"tw-reply\"><strong>@Ahrefs</strong> <span class=\"tw-eng\">♥ 223 · 💬 0</span><p>你的新合著者懂 SEO。</p></div><div class=\"tw-reply\"><strong>@Leonardo Maldonado</strong> <span class=\"tw-eng\">♥ 3 · 💬 0</span><p>图片中的那个 URL 返回页面未找到<br><br>should be <br>https://<br>developers.cloudflare.com/dynamic-worker<br>s/<br>… 我猜</p></div><div class=\"tw-reply\"><strong>@Snowlion</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>@grok<br> 提出用例</p></div><div class=\"tw-reply\"><strong>@Uncharted</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>您可能会对...感兴趣</p></div></div>",
+    "pageContent": "Arvind: Cloudflare 刚刚推出了 Dynamic Workers，这对 AI 代理来说是一个重大事件。 问题：AI 代理生成代码。这些代码需要沙箱。容器启动需要 100-500 毫秒，占用 100-500MB 内存。 动态 Worker 改用 V8 隔离：\n启动时间: 1-5毫秒（快100倍）\n内存：几 MB（少 100 倍）\n无需温暖池\n无限制的并发\n运行于与宿主相同的线程 杀手级特性：TypeScript API 定义替代 OpenAPI 规范。更少的令牌、更简洁的代码，通过 Cap'n Web RPC 在沙箱边界实现类型安全的 RPC。 Code Mode：LLM 编写 TS 代码 → 在隔离环境中运行 → 调用带类型的 API → 仅将最终结果返回至上下文。相较于顺序工具调用，减少 81% 的词元。 每个加载的工人每天0.002美元。测试期间免费。 这就是容器本应具备的无服务器沙箱。\n![图片](https://pbs.twimg.com/media/HEL5LffXcAA8TtB?format=png&name=large)\n---\n热门回复 (共 5 条):\n@Cloudflare (♥ 2.3K · 💬 95):\n我们推出了 Dynamic Workers，它允许你在安全、轻量级的隔离环境中执行 AI 生成的代码。这种方法比传统容器快 100 倍。\n\n@Ahrefs (♥ 223 · 💬 0):\n你的新合著者懂 SEO。\n\n@Leonardo Maldonado (♥ 3 · 💬 0):\n图片中的那个 URL 返回页面未找到\n\nshould be \nhttps://\ndevelopers.cloudflare.com/dynamic-worker\ns/\n… 我猜\n\n@Snowlion (♥ 0 · 💬 1):\n@grok\n 提出用例\n\n@Uncharted (♥ 1 · 💬 0):\n您可能会对...感兴趣\n"
+  },
+  "payloadHash": "sha256:f9990b25ea1969dcc8e82901765c6966d320bbcf1b75654f35811eab5aa28246",
+  "refs": {},
+  "revisionId": "sha256:fef415b1f6f90c42cd8888577e468248c8667e625ccc5800fa1eebdeb3b16dfd",
+  "schemaVersion": 1,
+  "updatedAt": 1774433823320
+}

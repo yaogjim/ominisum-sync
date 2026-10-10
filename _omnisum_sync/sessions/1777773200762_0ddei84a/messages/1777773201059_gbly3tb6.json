@@ -1,0 +1,20 @@
+{
+  "createdAt": 1777773066465,
+  "entityType": "message",
+  "id": "1777773201059_gbly3tb6",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Cursor SDK 的关键争议：是 Lock-in，还是平台战略？\n\n## 核心观点\n\n文章认为，围绕 Cursor SDK 的讨论中，最值得关注的不是 Cursor 官方说法，而是一个更本质的问题：\n\n**Cursor SDK 与 Anthropic、OpenAI 的 Agent SDK 不同，它不是简单封装模型能力，而是绑定 Cursor 云服务的 Agent 平台能力。**\n\n## 关键差异\n\n### 1. Anthropic / OpenAI Agent SDK：更像模型封装层\n\nAnthropic 和 OpenAI 的 Agent SDK 本质上更接近 **wrapper**：\n\n- 可以本地运行\n- 可以自己接入模型\n- 云依赖主要来自模型 API\n- 开发者拥有更高控制权\n\n### 2. Cursor SDK：必须依赖 Cursor 云\n\nCursor SDK 的特点是：\n\n- 必须使用 Cursor API Key\n- 必须经过 Cursor 云服务\n- 不能完全本地独立运行\n\n这带来了两种解读：\n\n- 负面看：这是 **平台锁定 / Lock-in**\n- 正面看：这是 **平台战略**\n\n## 背后的战略判断\n\n文章指出，未来两年关键取决于模型层的发展。\n\n如果大模型持续商品化：\n\n- Claude、GPT、Gemini 越来越相似\n- 模型价格持续下降\n- 单纯模型能力越来越难形成差异化\n\n那么真正有价值的竞争层，可能会转向 **Agent Runtime**。\n\n## Agent Runtime 为什么重要？\n\n作者认为，真正复杂的 Agent 能力不是靠 Prompt 就能解决的，而需要系统级工程能力，例如：\n\n- Sandbox 沙箱环境\n- Computer Use 电脑操作能力\n- 状态管理\n- 重试逻辑\n- 可观测性\n- 任务编排与执行控制\n\n这些能力构成了 Agent 真正可落地的基础设施。\n\n## Cursor 的押注\n\nCursor 押注的不是单纯模型，而是：\n\n> 在模型之上构建 Agent Runtime 平台。\n\n因此，Cursor SDK 绑定云服务，既可能是为了建立护城河，也可能是为了掌控完整执行环境。\n\n## 一句话总结\n\nCursor SDK 的争议本质不是“要不要 API Key”，而是 Cursor 正在从 AI 编程工具转向 Agent 平台：如果模型继续商品化，Agent Runtime 可能成为新的竞争核心。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1777773066465,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:df49b00b5629e70fbff8e7cfeeee45a80d67ec6c5a46a37867da5bd4bbb24fc2",
+  "refs": {
+    "sessionId": "1777773200762_0ddei84a"
+  },
+  "revisionId": "sha256:d26bdbce5d3222c5dae98c097e47094bc1fb68479ad1635adc58c383a41cf5d0",
+  "schemaVersion": 1,
+  "updatedAt": 1777773066465
+}

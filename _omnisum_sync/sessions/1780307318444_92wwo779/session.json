@@ -1,0 +1,68 @@
+{
+  "createdAt": 1780307318444,
+  "entityType": "session",
+  "id": "1780307318444_92wwo779",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 pi，可按 README 安装 pi-codex-goal 并运行 smoke test 验证功能。",
+      "优先使用 /create-goal <task> 创建结构化目标，而不是手写简单目标。",
+      "在自动化或 headless 场景中，直接提示模型调用 create_goal、get_goal、update_goal 工具。"
+    ],
+    "archiveReason": "包含安装方式、命令用法、模型工具契约和 smoke test，可作为使用 pi goal tracking 扩展时的参考文档。",
+    "classifiedAt": 1780307528396,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "pi目标跟踪扩展说明",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "/create-goal 比手写目标更推荐，可让模型扩展出目标、验证、约束、迭代、审计和阻塞停止要求。",
+      "create_goal、get_goal、update_goal 构成模型可调用的目标管理工具，其中 update_goal 仅接受 complete 状态。",
+      "活跃目标会跟踪 token 使用量、活动时间，并在预算达到、空闲或异常恢复场景下触发隐藏 continuation。",
+      "完成后的目标是终态，pause、resume 和自动 continuation 不会重新打开已完成目标。"
+    ],
+    "oneHighValuePoint": "目标状态存储在 pi session custom entries 中，可随会话历史、恢复、分叉、树导航、重载和压缩行为自动延续，无需外部数据库。",
+    "oneLineReview": "这是一个实用型开源 README，适合需要在 pi 中复刻 Codex 目标跟踪工作流的人参考。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后按需保留",
+    "secondaryCategories": [
+      "智能体工作流",
+      "开源项目文档"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 pi-codex-goal 扩展，为 pi 提供 Codex 风格的目标跟踪能力，包括 /goal、/create-goal 命令及 create_goal、get_goal、update_goal 工具，并说明安装、测试、状态流转、token 预算和异常恢复机制。",
+    "tags": [
+      "pi",
+      "Codex",
+      "goal tracking",
+      "AI Agent",
+      "TypeScript"
+    ],
+    "title": "fitchmultz/pi-codex-goal: Codex-style goal tracking and continuation for pi.",
+    "totalScore": 61,
+    "url": "https://github.com/fitchmultz/pi-codex-goal"
+  },
+  "payloadHash": "sha256:81ab9ddb83c391e58edddbc032c4adfddb15468a2e88c50aa9df9a381ba28a9e",
+  "refs": {},
+  "revisionId": "sha256:1284711f97934c1337874dc502351bb46b3f5e87088598296d546369e12b2f19",
+  "schemaVersion": 1,
+  "updatedAt": 1780307919487
+}

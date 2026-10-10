@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773730918053,
+  "entityType": "session",
+  "id": "1773730918053_pfg4i5pl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的前端任务中尝试先提供设计稿、现有组件或参考实现，再让AI生成代码",
+      "记录“有基准”和“无基准”两种AI协作方式的返工率与质量差异"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773730929307,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "前端AI协作基准先行法",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI写前端代码时，对照参考物可能提升输出稳定性",
+      "人类先建立约束和比较标准，比完全开放式生成更可靠"
+    ],
+    "oneHighValuePoint": "让AI生成代码前先提供明确参考基准，可降低其随意发挥带来的偏差。",
+    "oneLineReview": "有一点实践启发，但信息量过低，更像经验碎片而非可复用方法。",
+    "primaryCategory": "AI辅助软件开发",
+    "rating": "C",
+    "rejectReason": "内容过短，核心观点只有“先给AI一个可比较的基准再让其生成代码”，缺乏步骤、案例和效果数据支撑。",
+    "retentionDecision": "低优先级保留，若近期在研究AI辅助前端工作流可短期参考，否则可不留存",
+    "secondaryCategories": [
+      "前端工程实践",
+      "人机协作流程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章核心观点是：在前端开发中，不直接让AI随意写代码，而是先提供一个可对照的基准或参考实现，再让其生成或修改代码，据称比完全放手效果更好。但全文缺少具体流程、示例和验证数据。",
+    "tags": [
+      "AI编程",
+      "前端开发",
+      "代码生成",
+      "基准对比",
+      "工作流"
+    ],
+    "title": "0xSero: How Droid &amp; I do all frontend work these days, I don't want the bots to touc…",
+    "totalScore": 45.5,
+    "url": "https://x.com/0xSero/status/2033671294105870616"
+  },
+  "payloadHash": "sha256:01a2d4c2c4dcaa124b5dfabf961ef5fa22ecaa4894031702f0e2942166813289",
+  "refs": {},
+  "revisionId": "sha256:04d9d72ed784d7bc9eff2e80db1369043d9d6b7496b18d4cbc38f54e8ddc3bab",
+  "schemaVersion": 1,
+  "updatedAt": 1773731122918
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780558660286,
+  "entityType": "message",
+  "id": "1780558660285_bqli7hrk",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: OpenSquilla智能体项目概览\n\n**评级**: B (63.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工具与智能体\n**次类别**: 开源项目, LLM工程\n**标签**: #AI Agent #模型路由 #Token优化 #CLI工具 #开源项目\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 作为项目README具备较强实用性，但方法论和证据深度有限，更适合工具选型和快速上手参考。\n**核心高价值点**: 通过本地模型路由将任务分发给不同成本层级模型，以在相近效果下降低Token和调用成本。\n\n### 摘要\n文章介绍了OpenSquilla开源AI Agent项目，重点包括本地模型路由、统一网关、多渠道接入、持久记忆、安全沙箱、安装配置方式及少量基准测试结果。\n\n### 知识要点\n- OpenSquilla采用微内核式Agent架构，CLI、Web UI和聊天渠道共享同一TurnRunner执行循环\n- SquillaRouter使用本地LightGBM、ONNX和语义嵌入对任务复杂度分类，并路由到不同模型层级\n- 项目支持20多个LLM服务商，并提供持久记忆、Web搜索、沙箱、技能、MCP和多渠道集成\n- README提供Windows、macOS、Linux下的便携版、uv安装、源码安装和开发安装路径\n- 基准结果声称在PinchBench上以接近OpenClaw的分数显著降低总成本\n\n### 行动项\n- 如正在选型AI Agent框架，可优先阅读Key Features和Benchmark Results部分\n- 在测试环境中按Quick terminal install路径安装并运行opensquilla onboard和gateway run\n- 重点验证模型路由、成本统计、沙箱、记忆和多渠道集成功能是否符合实际需求\n- 对比其Benchmark设置与自身任务场景，避免直接采信单一项目自述结果\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的安装、配置、架构特性和基准数据，可作为评估开源AI Agent工具的参考材料\n删除: 否\n留存决策: 短期参考后可视使用情况保留",
+    "role": "assistant",
+    "timestamp": 1780558660286,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:1f909d45a265f548ad360bdfb026db8307ca32ff94c45c7d56845a8f69975fe2",
+  "refs": {
+    "sessionId": "1780554170941_z8s1l322"
+  },
+  "revisionId": "sha256:c4c2bfd3d3c869e30ee58ffbfb7a4de43616bc99c22e415bd092c6740f3caade",
+  "schemaVersion": 1,
+  "updatedAt": 1780558660286
+}

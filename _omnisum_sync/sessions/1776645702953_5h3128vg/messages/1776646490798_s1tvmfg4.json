@@ -1,0 +1,19 @@
+{
+  "createdAt": 1776646490799,
+  "entityType": "message",
+  "id": "1776646490798_s1tvmfg4",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 开源Agent服务项目Motus简介\n\n**评级**: B (59分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程化\n**次类别**: Agent框架, 开源基础设施\n**标签**: #Motus #Agent Serving #Python #任务编排 #开源项目\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一份偏产品化的项目说明文档，实操入口清晰，但证据和对比不足，适合快速了解不适合盲目重仓。\n**核心高价值点**: 将普通Python函数通过`@agent_task`直接转为可并行、可重试、可追踪的任务图节点，降低了Agent工作流工程化门槛。\n\n### 摘要\n文章本质上是Motus开源项目的README，介绍其作为Agent Serving基础设施的定位、安装方式、运行时能力与示例代码，强调无框架接入、并行任务图、可观测性、本地服务和云部署等特性。\n\n### 知识要点\n- Motus主打无框架Agent Serving，可兼容OpenAI Agents SDK、Anthropic SDK、Google ADK和Plain Python\n- 通过`@agent_task`和数据流依赖自动推断任务图，支持并行执行、重试、超时与回退策略\n- 提供本地服务、云部署、可观测性、MCP集成、Docker沙箱和多模型提供商支持\n\n### 行动项\n- 若你在做Agent工程化，可本地运行示例验证其任务图和服务暴露能力\n- 与LangGraph、OpenAI Agents SDK等现有方案做一轮功能和运维成本对比后再决定是否采用\n\n### 存档判定\n归档: 是 — 原因: 包含安装方式、核心能力、代码示例与部署路径，可在后续搭建Agent服务时快速参考\n删除: 否\n留存决策: 短期参考后保留，适合作为Agent服务基础设施选型资料",
+    "role": "assistant",
+    "timestamp": 1776646490799,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:f745d96473dc40625459e296639cf5e8a1667086f079fb3d4c8e380ec6efb32e",
+  "refs": {
+    "sessionId": "1776645702953_5h3128vg"
+  },
+  "revisionId": "sha256:0b8fe52010146cd3c60a1718543a675dd73850bbd33a7df28b96f18195a8a675",
+  "schemaVersion": 1,
+  "updatedAt": 1776646490799
+}
