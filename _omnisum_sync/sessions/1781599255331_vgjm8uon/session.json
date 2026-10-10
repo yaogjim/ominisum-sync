@@ -1,0 +1,72 @@
+{
+  "createdAt": 1781599255331,
+  "entityType": "session",
+  "id": "1781599255331_vgjm8uon",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "建立按风险分层的代码审查规则，将低风险变更交给自动化和AI初审，高风险变更保留人工深审。",
+      "在PR模板中要求提交变更目的、测试结果、运行证据和关键设计取舍，降低审查者恢复意图的成本。",
+      "至少引入一个AI代码评审工具；高风险项目可使用两个不同类型的AI评审器交叉检查。",
+      "要求AI生成的PR保持小粒度提交，避免大而不可审的变更。",
+      "审查AI生成代码时优先检查测试修改、CI规则削弱、覆盖率降低和安全边界变化。"
+    ],
+    "archiveReason": "文章提出了AI生成代码时代代码审查的核心矛盾，并给出按风险分层、AI辅助评审、人类保留最终责任等可复用方法，适合长期参考。",
+    "classifiedAt": 1781599607031,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 9,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI时代的代码审查",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI让代码生成变便宜，但理解、验证和建立信任的成本并未同步下降。",
+      "代码审查的核心职能从检查代码本身，扩展为恢复意图、验证风险、分配注意力和承担责任。",
+      "不同AI评审工具擅长发现不同类型的问题，异构评审比寻找单一最佳工具更有效。",
+      "高风险代码路径仍需要人类审查，AI评审应被视为传感器而非最终裁决。",
+      "测试变更比代码变更更需要警惕，因为AI可能修改测试来适配错误行为。"
+    ],
+    "oneHighValuePoint": "代码审查不应再按作者或统一标准分配精力，而应按变更的风险半径和错误成本进行分层。",
+    "oneLineReview": "一篇对AI时代代码审查范式变化有系统判断且具备实操价值的高质量文章。",
+    "primaryCategory": "软件工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "AI辅助开发",
+      "代码审查",
+      "工程管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分析AI编码代理提升代码产出后，软件工程瓶颈从“写代码”转向“验证与信任代码”。作者结合多组数据与实践经验，提出按风险分层审查、使用异构AI评审器、保留人类最终合并责任等策略。",
+    "tags": [
+      "AI编程",
+      "代码审查",
+      "工程效率",
+      "质量保障",
+      "Agentic Engineering"
+    ],
+    "title": "代理式代码审查",
+    "totalScore": 83,
+    "url": "https://x.com/addyosmani/status/2066595308629594363"
+  },
+  "payloadHash": "sha256:5970cbfbfc4961a644360316093642448cd4fbb6ff85e8d6280df4af6144f05c",
+  "refs": {},
+  "revisionId": "sha256:c7e1291cfb4b1fb4378159c4026d9a7039b76ffe6d64abef7376e68dc8702753",
+  "schemaVersion": 1,
+  "updatedAt": 1781600181810
+}

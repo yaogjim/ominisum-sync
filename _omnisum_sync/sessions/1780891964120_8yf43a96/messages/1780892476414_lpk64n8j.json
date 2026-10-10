@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780892476415,
+  "entityType": "message",
+  "id": "1780892476414_lpk64n8j",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AI Native重构工作流\n\n**评级**: B (69分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工作流\n**次类别**: 个人效率, 组织转型\n**标签**: #AI Native #Agent工作流 #AI First #自动化执行 #工作方式重构\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 观点有启发但证据偏弱，适合作为AI工作流升级的思路参考而非严谨方法论。\n**核心高价值点**: 将低质量但方向正确的人类文档视为Agent可继续利用的上下文燃料，而非最终交付物。\n\n### 摘要\n文章通过Obsidian配置案例说明AI Native不是简单用AI辅助，而是让Agent参与执行、验证和纠错，并提出从Search-first到AI-first organization的五级框架。\n\n### 知识要点\n- AI-assisted强调让AI生成内容或辅助人类，而AI Native强调围绕AI重新设计流程并让Agent执行结果。\n- 作者提出Level 0到Level 4的AI使用成熟度模型：搜索优先、AI辅助、AI原生个人、Agent执行工作流、AI优先组织。\n- 在AI Native流程中，人类更侧重目标设定、评估标准、架构判断和最终决策。\n\n### 行动项\n- 梳理当前工作中仍停留在AI-assisted的流程，找出可交给Agent执行和验证的环节。\n- 尝试把调研文档、操作步骤或需求说明作为Agent上下文输入，让AI完成执行、纠错和交付。\n- 为常见任务建立AI执行后的验证机制，如自动化测试、LLM eval、灰度数据或人工最终审核。\n\n### 存档判定\n归档: 是 — 原因: 提供了AI-assisted到AI Native的层级划分和工作流重构视角，可作为思考AI工作方式升级的参考。\n删除: 否\n留存决策: 短期参考后可选择性保留",
+    "role": "assistant",
+    "timestamp": 1780892476415,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:63bb81b1b71cc064ecd311f70e5cce5d399532e24625bbd811491bfeed4fff49",
+  "refs": {
+    "sessionId": "1780891964120_8yf43a96"
+  },
+  "revisionId": "sha256:66596ae073f074a11e336e84aeaa3861da82a7589da7b7bad0395531ce9dd81f",
+  "schemaVersion": 1,
+  "updatedAt": 1780892476415
+}

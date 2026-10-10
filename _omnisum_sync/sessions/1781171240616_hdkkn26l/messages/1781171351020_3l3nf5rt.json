@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781171351021,
+  "entityType": "message",
+  "id": "1781171351020_3l3nf5rt",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude Code动态工作流实践\n\n**评级**: A (77分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI工具与智能体工作流\n**次类别**: Claude Code, Agent编排, 软件工程效率\n**标签**: #Claude Code #dynamic workflow #subagents #AI编程 #工作流编排\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一篇关于Claude Code动态工作流的高价值实践概览，方法论清晰、场景丰富，但证据和实测细节仍偏有限。\n**核心高价值点**: 将复杂任务拆解为多个独立context的subagents，并通过对抗验证、扇出综合、锦标赛等模式降低偷懒、自我偏差和目标漂移。\n\n### 摘要\n文章介绍Claude Code动态工作流能力：通过即时生成JavaScript编排脚本，调度多个独立subagents完成研究、验证、排序、重构、分类等复杂任务，并总结扇出综合、对抗验证、锦标赛、循环至完成等可复用模式。\n\n### 知识要点\n- 动态工作流本质上是Claude Code实时生成的JavaScript harness，用于协调多个subagents并可选择模型、worktree和恢复策略。\n- 默认单context模式在长任务、大规模并行、强结构化或对抗性任务中容易出现偷懒、自我偏好偏差和目标漂移。\n- 常见可复用模式包括分类并执行、扇出并综合、对抗式验证、生成并筛选、锦标赛、循环至完成。\n- 适用场景包括代码迁移与重构、深度研究、事实核查、排序、规则遵循、大规模分类、设计探索、评估和模型路由。\n- workflow会显著增加token消耗，适合复杂高价值任务，不适合普通编码任务滥用。\n\n### 行动项\n- 在Claude Code中尝试为一个复杂研究或代码审查任务创建dynamic workflow，并设置明确token预算。\n- 整理一套常用workflow模板，如对抗验证、扇出综合、锦标赛评审和规则verifier。\n- 将高频可复用workflow保存到~/.claude/workflows或封装进skill中，便于后续调用。\n- 在需要事实核查或技术审查的任务中加入独立verifier agent，减少自我偏差。\n\n### 存档判定\n归档: 是 — 原因: 提供了Claude Code动态工作流的核心原理、适用场景、可复用模式和落地技巧，对AI辅助研发和复杂任务编排有持续参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1781171351021,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:4796a0db16da9fa407c40be74bde6d4f4a5bca02481cbd6479acbe2f0d2d3d47",
+  "refs": {
+    "sessionId": "1781171240616_hdkkn26l"
+  },
+  "revisionId": "sha256:7fd25480a979d2d576687518f74090c334906146d494d2bb0d66a011b58172b8",
+  "schemaVersion": 1,
+  "updatedAt": 1781171351021
+}

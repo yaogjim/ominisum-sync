@@ -1,0 +1,64 @@
+{
+  "createdAt": 1777960628134,
+  "entityType": "session",
+  "id": "1777960628134_di66ncw5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "无需精读，可删除",
+      "如研究AI中转站商业模式，应寻找更完整的成本拆解和真实数据来源"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777960782172,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 2,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI中转站利润取舍自述",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量低、证据不足、长期价值弱，且带有明显推广性质。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI中转站可能涉及模型真实性、汇率计费、数据存储、号池成本和缓存命中率等运营因素",
+      "作者声称良心运营与高利润存在冲突，但未提供可验证数据"
+    ],
+    "oneHighValuePoint": "提到缓存命中率和号池订阅成本可能是中转站成本结构中的关键变量。",
+    "oneLineReview": "更像一条服务广告帖，而非有分析价值的行业内容。",
+    "primaryCategory": "AI服务商业观察",
+    "rating": "E",
+    "rejectReason": "内容主要是个人宣传和立场表达，缺少系统分析、数据证明和可复用方法，参考价值较低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "API中转",
+      "社交媒体推广"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "作者以自身AI中转站为例，声称良心中转站利润不高，强调不掺假模型、不存储对话、官方订阅号池和缓存节省token，并附带服务链接推广。",
+    "tags": [
+      "AI中转站",
+      "OpenAI",
+      "成本",
+      "营销"
+    ],
+    "title": "x.com/zstmfhy/status/2051435958072160763",
+    "totalScore": 21.5,
+    "url": "https://x.com/zstmfhy/status/2051435958072160763"
+  },
+  "payloadHash": "sha256:ed9cf505d8c10fc1cec0d3a6c5ed4405c53a95e84cf2b8e71f6e45869f8241b6",
+  "refs": {},
+  "revisionId": "sha256:cb0a6bcadc2efd1cea5dde0aa44b2a52fc9838872eb19a767dca9943dacd86b6",
+  "schemaVersion": 1,
+  "updatedAt": 1777961068520
+}

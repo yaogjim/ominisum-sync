@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781170144578,
+  "entityType": "message",
+  "id": "1781170187382_pos20b06",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章认为：当前行业严重低估了大模型（LLM）的真实能力上限，因为多数 benchmark 只给了很少的 **test-time compute（测试/推理时计算资源）**。随着模型变强，额外推理计算带来的能力提升会更明显，传统“单个分数”的评测方式正在失效。\n\n---\n\n## 1. 当前 benchmark 低估了模型真实能力\n\n- 作者读完 OpenAI 研究员 Noam Brown 的长帖后指出：  \n  **LLM 的能力天花板远高于现有 benchmark 展示的水平。**\n- 关键原因不是模型本身不够强，而是评测时给模型的推理预算太少。\n- 也就是说，很多评测只看模型在“短时间、少 token、低算力”下的表现，无法反映模型在更长推理、更高计算预算下的真实能力。\n\n---\n\n## 2. GPT-5.5 的例子：单个 benchmark 掩盖了真实差距\n\n- GPT-5.5 发布初期，benchmark 相比 GPT-5.4 只略有提升，因此不少人觉得不够惊艳。\n- 但实际体验中，GPT-5.5 带来了明显的 **step-change（阶段性跃迁）**。\n- 原因在于：评估时没有控制 test-time compute。\n- 如果把 **tokens 数量放在横轴**，观察不同计算预算下的表现，就会发现：\n  - GPT-5.5 在相同计算预算下明显更强；\n  - 单个 benchmark 分数会掩盖这种差异。\n\n---\n\n## 3. 更强模型更能利用额外推理计算\n\n- 文章强调一个更重要的现象：  \n  **模型越强，越能从额外 test-time compute 中获益。**\n- 表现为：\n  - 性能提升曲线更陡；\n  - 能力达到平台期的时间被不断推后；\n  - 甚至可能不存在明确的平台期。\n\n### 具体案例\n\n- **Karpathy 的 autoresearch 实验**：  \n  经过几百次实验后，模型性能仍在继续上升。\n- **AI Security Institute 的网络攻防评测**：  \n  在使用 **1 亿 tokens** 后，顶级模型依然在快速进步。\n\n这些现象说明：大模型的能力上限可能比当前行业想象得远得多。\n\n---\n\n## 4. 对 AI 安全评测的冲击很大\n\n- 目前大多数 AI 安全评测仍然是在较低推理预算下完成的。\n- 但真正危险的能力，往往不是短问答中显现的，而是需要：\n  - 长时间推理；\n  - 多步骤规划；\n  - 长 horizon 任务；\n  - 复杂 agent 行为；\n  - 高 inference budget。\n\n换句话说，一个模型在低预算下看起来安全，不代表它在高预算、长时间运行时仍然安全。\n\n---\n\n## 5. Gemini 3 Deep Think 争议暴露了问题\n\n- 文章提到 Gemini 3 Deep Think 的争议，说明高推理预算和外部 scaffold（脚手架/辅助框架）会显著增强模型能力。\n- 当 scaffold 与高 inference compute 结合时，普通用户也可能接近非常高水平的模型能力。\n- 但问题是，相关 system card 并没有充分反映“算力增加后能力如何变化”的曲线。\n\n---\n\n## 6. 长 horizon 任务越来越难评估\n\n- Noam Brown 指出一个更棘手的问题：  \n  **长 horizon 任务的评估正在变得越来越困难。**\n- 有些能力必须通过长时间真实运行才能验证。\n- 但模型迭代速度可能已经快到：  \n  **一个模型还没来得及完整评估，下一个版本就已经出现。**\n\n这会让 AI 实验室面临两难：\n\n1. 大幅延迟发布，等待完整安全评估；\n2. 在安全评估并不完整的情况下发布模型。\n\n---\n\n## 7. 行业仍停留在旧评测思维中\n\n- 从 o1 出现到现在已经两年多，但行业仍习惯用单个 benchmark 分数描述模型能力。\n- 安全组织也仍会对“多花 100 倍 inference compute 后模型显著变强”感到惊讶。\n- 作者认为，这是 **post-o1 时代最被低估的范式转变**。\n\n---\n\n## 8. 未来竞争重点：理解 intelligence-compute 曲线\n\n- 未来模型之间的真实差距，不只是静态 benchmark 分数高低。\n- 更重要的是：  \n  **谁能更好地理解并利用 intelligence-compute 曲线。**\n- 对以下方向尤其关键：\n  - AI agent；\n  - 长 horizon 推理；\n  - 多步任务规划；\n  - 高风险部署；\n  - AI 安全评测。\n\n---\n\n## 总结\n\n文章的核心观点是：大模型能力不能再只用单个 benchmark 分数衡量，而必须结合 test-time compute 来看。随着模型变强，高推理预算可能释放出远超当前评测所显示的能力，这既意味着更强的应用潜力，也带来了更严峻的 AI 安全挑战。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781170144578,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5940da028fa0405fbe335a3d4ef596e89156659a230c27aeb485ed15afdb7962",
+  "refs": {
+    "sessionId": "1781169966602_n4yzsv3j"
+  },
+  "revisionId": "sha256:d4693b33335a9ae53c466df6c663d704e5a337a5de73997a0fa45d1453fdb5a3",
+  "schemaVersion": 1,
+  "updatedAt": 1781170144578
+}

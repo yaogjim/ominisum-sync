@@ -1,0 +1,66 @@
+{
+  "createdAt": 1781517625185,
+  "entityType": "session",
+  "id": "1781517625185_08bgvi44",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如对该工具感兴趣，可等待正式发布或文档后再评估",
+      "无需当前归档，后续可关注是否有技术实现文章或开源仓库"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781518559314,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "CCOnline在线编程工具预告",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量极低，无法形成可复用知识或行动依据，且缺乏证据与方法论价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "CCOnline 定位为在线 vibe coding 工具",
+      "产品声称内置模型并支持零依赖起手",
+      "终端运行在 sandbox 环境中"
+    ],
+    "oneHighValuePoint": "提到将 cc 终端运行在 sandbox 中，暗示在线 AI 编程环境可通过沙箱提升隔离性。",
+    "oneLineReview": "这是一个简短产品预告，不足以作为知识内容留存。",
+    "primaryCategory": "AI开发工具",
+    "rating": "E",
+    "rejectReason": "内容仅为产品预告式短帖，缺少功能细节、技术实现、使用方法、案例或评测，参考价值很低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "在线编程",
+      "产品预告"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "作者称使用 ShipAny 和 TanStack 做了一个名为 CCOnline 的在线 vibe coding 工具，内置模型、终端运行在 sandbox 中，并询问是否有需求。正文未提供更多技术细节或使用说明。",
+    "tags": [
+      "vibe coding",
+      "TanStack",
+      "ShipAny",
+      "sandbox",
+      "AI编程"
+    ],
+    "title": "idoubi: 用 ShipAny TanStack 写了个 CCOnline，主打在线 vibe coding，内置模型，开箱即用，cc 终端跑在 sandbox，零依赖起手…",
+    "totalScore": 24.5,
+    "url": "https://x.com/idoubicc/status/2066116918587875593"
+  },
+  "payloadHash": "sha256:724f0748abee3a1bbe9cb734ca9a23577f6893660151755204591a64bfeeb3e7",
+  "refs": {},
+  "revisionId": "sha256:18d20269ce41a9314953ca0233090d52094c18fab78c401ec0d13e4dc34c0161",
+  "schemaVersion": 1,
+  "updatedAt": 1781518559550
+}

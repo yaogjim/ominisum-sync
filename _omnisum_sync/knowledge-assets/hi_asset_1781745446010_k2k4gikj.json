@@ -1,0 +1,40 @@
+{
+  "createdAt": 1781745446010,
+  "entityType": "knowledge-asset",
+  "id": "hi_asset_1781745446010_k2k4gikj",
+  "parentRevisionIds": [],
+  "payload": {
+    "assetType": "graph_edge",
+    "clusterId": "ai_agent_engineering",
+    "generator": {
+      "finishReason": "stop",
+      "generatedAt": 1781745446007,
+      "templateId": "value_capture_card"
+    },
+    "payload": {
+      "case": "p0-12-disposable profile 在 preflight 中 status=ok，但 live rerun failure_code=profile_auth_failed，safe_message=Profile list diagnostic failed。",
+      "confidence": "medium",
+      "evidence": "门禁报告显示 passive auth 返回 storage_exists/json_valid/cookies_present/sid_cookie/token_fetch=true，但实际 rerun terminal_status=failed、operation_status=not_started、failure_code=profile_auth_failed。",
+      "method": "区分 passive auth 与可用性诊断；要求 auth check 与 notebook list/list diagnostic 都通过，才允许后续 create/source/ask mutation。",
+      "problem": "passive auth check 通过，但 live harness 的 profile list diagnostic 失败，导致 P0-12 在 profile gate 停止。",
+      "tool": "notebooklm-py CLI、auth check --passive、notebooklm list --json、jq 安全摘要"
+    },
+    "sourceDigestSessionIds": [],
+    "sourceMessageIds": [
+      "1781664368193_zjquzoov",
+      "1781664368564_ywi5kpxf"
+    ],
+    "sourceSessionIds": [
+      "1781664344486_yu57uv3j"
+    ],
+    "sourceTemplateIds": [
+      "value_capture_card"
+    ],
+    "status": "draft"
+  },
+  "payloadHash": "sha256:90f7708811bac9b3101fdacb4e8a0bc53780f49f05ff348b870e45684bf0f856",
+  "refs": {},
+  "revisionId": "sha256:d3cd78145a00c30a3dfc6991007bb54f43cc0fbeebf2b77f3ab3d31bb22976f5",
+  "schemaVersion": 1,
+  "updatedAt": 1781745446010
+}

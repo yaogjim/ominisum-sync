@@ -1,0 +1,64 @@
+{
+  "createdAt": 1781660827972,
+  "entityType": "session",
+  "id": "1781660827972_qkd42cev",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关心 Claude CLI 使用成本，可另找系统性对比资料",
+      "无需保留该短帖，可直接删除"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781660846752,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 3,
+      "transferability": 1
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude工具切换短评",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量极低，缺乏上下文和证据，无法形成有效参考价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "作者曾从 PTY 切回 claude -p",
+      "引用内容涉及 Claude token 消耗体验不佳"
+    ],
+    "oneHighValuePoint": "提示 Claude 不同使用方式可能存在 token 消耗或行为差异，但未提供具体分析。",
+    "oneLineReview": "这是一个碎片化情绪/经验短帖，几乎没有独立保存价值。",
+    "primaryCategory": "AI工具动态",
+    "rating": "E",
+    "rejectReason": "内容过短且语境缺失，仅表达个人工具切换判断，没有展开原因、方法、数据或可复用经验。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "社区短帖",
+      "LLM使用体验"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该短帖提到作者此前从 PTY 切回 claude -p，并认为自己的判断正确；引用推文抱怨 Claude 浪费 token 制定对策。但全文缺少背景、原因、对比和可验证依据。",
+    "tags": [
+      "Claude",
+      "PTY",
+      "claude-p",
+      "token消耗"
+    ],
+    "title": "x.com/yetone/status/2066793940913913937",
+    "totalScore": 17.5,
+    "url": "https://x.com/yetone/status/2066793940913913937"
+  },
+  "payloadHash": "sha256:a92563a5b575164c65ecd0b6e5612716a0453651758ea44b40288162deb8b305",
+  "refs": {},
+  "revisionId": "sha256:8b52f01dc48523479477455290d12b8137088e8a7e8b27439e6bd637f73a6a8e",
+  "schemaVersion": 1,
+  "updatedAt": 1781662793965
+}

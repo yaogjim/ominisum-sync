@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780308344235,
+  "entityType": "message",
+  "id": "1780308344234_vhn1i70g",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: cmux与hitch终端工作流\n\n**评级**: E (24.5分)  |  **深度阅读**: 否  |  **建议操作**: 删除\n\n**主类别**: 开发工具\n**次类别**: 终端工具, 工作流\n**标签**: #cmux #hitch #CLI #终端 #Twitter\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 2 | 10% |\n| 新颖性 | 2 | 10% |\n| 相关性 | 4 | 20% |\n| 可操作性 | 4 | 15% |\n| 方法论价值 | 1 | 15% |\n| 可迁移性 | 2 | 10% |\n| 证据质量 | 1 | 10% |\n| 长期杠杆 | 2 | 10% |\n\n**一句话点评**: 只能作为工具线索，不值得作为知识内容保留。\n**核心高价值点**: hitch 是一个可让代理使用终端的 CLI 工具，可通过 npm install -g hitch-cli 安装。\n\n### 摘要\n该内容是一条关于作者使用 cmux 与 hitch 工作流的简短推文，回复中补充 hitch 可让代理使用终端，并给出 npm 安装方式和 GitHub 链接，但整体缺少详细说明。\n\n### 知识要点\n- hitch-cli 可通过 npm 全局安装\n- hitch 与 cmux 可能用于终端代理工作流\n\n### 行动项\n- 如确有兴趣，可直接查看 hitch 的 GitHub 仓库\n- 无需保存该推文本身\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是一条简短社交媒体动态，缺少具体流程、案例、原理说明和有效论证，回复区大量无关广告，参考价值很低。\n删除: 是\n留存决策: 建议立即删除\n删除原因: 信息量极低，仅提供工具名称和安装提示，无法形成可复用知识或长期参考材料。",
+    "role": "assistant",
+    "timestamp": 1780308344235,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:1bed4e05188ed48a1d0cb31826b1529c52f232658336a2a02a0d5d9f42c07757",
+  "refs": {
+    "sessionId": "1780308187568_fkqjgu7k"
+  },
+  "revisionId": "sha256:7c511becedcad6a451aa1c8d437348d253bd2637240d42ceef03e8e416c38a1b",
+  "schemaVersion": 1,
+  "updatedAt": 1780308344235
+}

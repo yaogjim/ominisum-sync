@@ -1,0 +1,67 @@
+{
+  "createdAt": 1781000866571,
+  "entityType": "session",
+  "id": "1781000866571_ghg9uwu9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计coding agent时列出harness需要承担的边界校验、权限、状态和工具结果处理职责",
+      "检查现有agent是否具备文件状态基线、路径校验、输出裁剪、错误恢复和审计trace机制"
+    ],
+    "archiveReason": "文章提供了较清晰的coding agent harness组件划分和诊断视角，适合作为Agent架构设计参考",
+    "classifiedAt": 1781052391810,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "编码代理Harness方法论",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "coding agent的harness负责真实运行环境、工具执行、权限控制、状态更新和上下文投影",
+      "工具调用应被视为模型proposal与真实副作用之间的contract，而不是普通helper function",
+      "transcript与working state是不同任务，前者记录发生过什么，后者维护当前重要状态",
+      "agent重复、编辑过时代码、上下文恶化、权限失控等问题应优先检查harness机制"
+    ],
+    "oneHighValuePoint": "任何必须可靠的行为都应放在harness中，而不是依赖模型通过prompt自觉遵守。",
+    "oneLineReview": "一篇观点清晰但证据较弱的编码代理架构短文，适合作为harness设计的概念提醒。",
+    "primaryCategory": "AI工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，用于理解编码代理产品架构中的harness职责",
+    "secondaryCategories": [
+      "编码代理",
+      "产品架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章强调编码代理的核心不只是模型，而是模型外层的harness。它负责仓库上下文、工具契约、权限、状态、转录记录、上下文裁剪等关键工程边界，并提出通过harness诊断agent失效问题。",
+    "tags": [
+      "coding agent",
+      "harness",
+      "LLM工具调用",
+      "上下文管理",
+      "Agent架构"
+    ],
+    "title": "Harness 就是产品",
+    "totalScore": 63.5,
+    "url": "https://x.com/dongxi_nlp/status/2064098727867163124"
+  },
+  "payloadHash": "sha256:2714065b21d0e4de99f0ebd49abe89b303bfe2d9e525a25e56c9a7bef6a2c160",
+  "refs": {},
+  "revisionId": "sha256:fa24ec2e731487f2b1aad0997c02cce63cb7e5b776be820423bd4d0df528aec6",
+  "schemaVersion": 1,
+  "updatedAt": 1781170378640
+}

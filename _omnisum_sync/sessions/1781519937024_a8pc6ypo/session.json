@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781519937024,
+  "entityType": "session",
+  "id": "1781519937024_a8pc6ypo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计检索评测集时同时覆盖语义改写、关键词匹配、编号条款、实体精确匹配等题型。",
+      "在生产环境中不要仅凭偏置评测集结果贸然移除 BM25 分支。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781520333931,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 5,
+      "novelty": 3,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "BM25混合检索评测偏差",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "语义改写类问题更有利于向量检索，可能低估 BM25 的价值。",
+      "keyword、条款号、精确匹配类问题不足时，hybrid 检索评测结论可能失真。"
+    ],
+    "oneHighValuePoint": "评估 hybrid 检索时，题集构造会显著影响 BM25 与向量检索的相对表现，不能用单一偏置题型下结论。",
+    "oneLineReview": "有一个关于检索评测集偏差的有效提醒，但信息量和证据都很有限。",
+    "primaryCategory": "AI检索与RAG",
+    "rating": "C",
+    "rejectReason": "内容过短，缺少完整实验数据、指标定义和可复现实验过程，仅有一个评测偏差提醒。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "检索评测",
+      "混合检索"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "该推文指出在刻意使用语义改写构造的题集中，BM25 在 hybrid 检索中可能成为负贡献，但作者也承认该题集偏向 BM25 最坏情况，生产环境仍应保持 hybrid，待补足题型后再判断。",
+    "tags": [
+      "BM25",
+      "Hybrid Search",
+      "向量检索",
+      "评测偏差",
+      "RAG"
+    ],
+    "title": "熊布朗: “BM25腿在这个题集上是负贡献（hybrid反而低于纯向量）一一但要诚实：题集是我刻意全用语义改写造的（BM25 最坏情况）， keyword/条款号类题代表…",
+    "totalScore": 43.5,
+    "url": "https://x.com/Stephen4171127/status/2065170747522216076"
+  },
+  "payloadHash": "sha256:4eba484b8d541d927d4f8ca593aebb50b9604658bf60db26c620a06a83322aee",
+  "refs": {},
+  "revisionId": "sha256:0dc0f17125c63b91389fe992158a0a752d47d7ec084bcbae43164bb2b1187d39",
+  "schemaVersion": 1,
+  "updatedAt": 1781520334230
+}

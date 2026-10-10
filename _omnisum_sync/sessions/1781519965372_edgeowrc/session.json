@@ -1,0 +1,68 @@
+{
+  "createdAt": 1781519965372,
+  "entityType": "session",
+  "id": "1781519965372_edgeowrc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "关闭或审计会改写工具输出的 token 压缩插件和 hook",
+      "对重要结论回查原始 JSONL 日志或真实 tool_result",
+      "避免继续 resume 已经出现严重幻觉或上下文污染的脏 session",
+      "记录模型异常时段并与官方 status、社区 issue 交叉验证"
+    ],
+    "archiveReason": "提供了模型状态、工具链改写、上下文压缩三层排查框架，对AI辅助编程和长对话管理有复用价值",
+    "classifiedAt": 1781520373901,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude变笨的三层复盘",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "节省 token 的工具或 hook 如果改写 stdout，可能让模型基于失真数据做判断",
+      "长对话经过多次自动压缩后，模型可能混淆真实记录与生成内容，产生高可信度幻觉",
+      "排查AI问题时需要同时考虑模型状态、插件工具链、上下文压缩与会话污染"
+    ],
+    "oneHighValuePoint": "AI异常时应回到原始日志核对，而不是仅依据模型总结或被压缩后的上下文判断。",
+    "oneLineReview": "一篇有实际踩坑价值的AI工作流故障复盘，尤其提醒不要盲信被工具链和压缩污染后的模型输出。",
+    "primaryCategory": "AI工具使用与调试",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为AI工作流故障排查案例参考",
+    "secondaryCategories": [
+      "LLM工作流",
+      "AI幻觉排查"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者复盘 Claude 表现异常并非单纯模型变差，而是模型服务波动、RTK hook 改写 stdout、长上下文多次压缩导致记忆污染共同作用。最终采取关闭 hook、恢复默认压缩窗口、脏会话不续用、重要结论核对原始日志等措施。",
+    "tags": [
+      "Claude",
+      "AI幻觉",
+      "上下文压缩",
+      "工具链",
+      "日志核对"
+    ],
+    "title": "Leo｜一个人 + AI: 之前骂 Claude 变笨，当时还没完全搞懂",
+    "totalScore": 71.5,
+    "url": "https://x.com/runes_leo/status/2064958207072907286"
+  },
+  "payloadHash": "sha256:0413700067f9f864de7c470c4f2262df0fb3990c92537c3a614861b42242ca84",
+  "refs": {},
+  "revisionId": "sha256:2e3cdf253a05f7c25659f457572fe8cfcd82796b5c7a455b140eb9f480df4864",
+  "schemaVersion": 1,
+  "updatedAt": 1781520374792
+}

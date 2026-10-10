@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780615511488,
+  "entityType": "message",
+  "id": "1780615511487_dd7pcasg",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude动态工作流解析\n\n**评级**: A (72.5分)  |  **深度阅读**: 可选  |  **建议操作**: 精读\n\n**主类别**: AI工作流\n**次类别**: Agent协作, Claude Code\n**标签**: #动态工作流 #多Agent #Claude Code #任务编排 #自动化验证\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 高密度梳理了Claude动态工作流的核心模式，但证据和实操细节仍偏概览。\n**核心高价值点**: 将复杂长任务拆成规划、执行、验证、合并等结构化流程，并用独立Agent降低懒惰、偏见和目标漂移。\n\n### 摘要\n文章概述Claude Code动态工作流的概念、解决的问题、常见模式、适用场景和使用技巧，重点介绍通过多Agent、隔离上下文、并行执行和对抗验证来提升复杂任务完成质量。\n\n### 知识要点\n- 动态工作流可让Claude Code为当前任务生成专用JS workflow，并协调多个拥有独立上下文的subagents。\n- 常见模式包括classify-and-act、fan-out-and-synthesize、adversarial verification、generate-and-filter、tournament和loop until done。\n- 适合高价值、复杂、长链条、需要并行处理或强验证的任务，如迁移重构、深度研究、事实核查、批量triage和模型路由。\n- 隔离上下文和独立验证可缓解单Agent在长任务中的agentic laziness、self-preferential bias和goal drift。\n- 可通过指定workflow类型、token budget、quick workflow、/goal和/loop等方式提升工作流可控性。\n\n### 行动项\n- 在Claude Code中尝试让模型为一个复杂任务使用fan-out-and-synthesize或adversarial review工作流。\n- 为常见任务整理一组workflow提示词模板，如研究、代码审查、事实核查、批量分类和根因分析。\n- 将高风险验证任务拆成独立执行Agent和独立验证Agent，避免同一上下文自证。\n- 对公开不可信内容处理流程设置quarantine原则，限制读取外部内容的Agent权限。\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的动态工作流模式、适用场景和实用提示，可作为多Agent任务编排方法论索引\n删除: 否\n留存决策: 长期保留，适合作为设计复杂AI Agent工作流和Claude Code实践的参考清单",
+    "role": "assistant",
+    "timestamp": 1780615511488,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:a238c68d99e89304fec45db91f9de0830bbb6dd524ffa78bcd7fd0d8db1e18f9",
+  "refs": {
+    "sessionId": "1780471838816_gxme6t9e"
+  },
+  "revisionId": "sha256:ca5c8975a7bc2546c720fdc23ed9a066c34e2d98652edfdb777628c5e0691eed",
+  "schemaVersion": 1,
+  "updatedAt": 1780615511488
+}

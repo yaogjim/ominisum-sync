@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773394572809,
+  "entityType": "session",
+  "id": "1773394572809_q57hg5qj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需了解相关问题，优先查阅临床指南、权威医学机构资料或系统综述",
+      "将此类无证据社交媒体健康帖直接剔除，避免纳入个人知识库"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773829981818,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 3,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 2,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "血压血糖与脑卒中争议帖",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "证据质量极低，核心论断未经验证且可能传播错误健康认知，长期保留价值接近于零。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "高血压、血糖异常与脑卒中关系复杂，不能用单一因果替代专业医学结论",
+      "社交媒体健康信息若无研究或指南支持，可信度通常较低"
+    ],
+    "oneHighValuePoint": "唯一可取之处是提醒读者关注生活方式、代谢问题与心脑血管风险之间的关系。",
+    "oneLineReview": "这是典型的缺乏证据支撑的健康断言帖，不宜作为学习或决策依据。",
+    "primaryCategory": "健康信息辨析",
+    "rating": "E",
+    "rejectReason": "内容以社交媒体个人断言为主，缺乏可靠医学证据，且将复杂病因过度简化，存在明显误导风险。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "社交媒体观点",
+      "疾病风险认知"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章核心观点声称脑梗和脑溢血本质都源于血管硬化与高血糖，高血压只是表象或诱因。全文无数据、无研究引用，评论区也多为个人经验和非科学解释，信息质量较差且存在医学误导风险。",
+    "tags": [
+      "高血压",
+      "脑梗",
+      "脑溢血",
+      "血糖",
+      "医学 misinformation"
+    ],
+    "title": "普达特: 无论是脑梗还是脑溢血，其实都是血管硬化、变脆导致的，高血压不会导致脑梗，但高血压确实是脑溢血的临门一脚； 血管硬化、变脆不是高血压导致的，高血压只是表象，血管硬…",
+    "totalScore": 17.5,
+    "url": "https://x.com/Predator_fund/status/2031959192240865327"
+  },
+  "payloadHash": "sha256:6ced560817280f9606c3b459928321193ca1834b0ff94ee2ced079f8b2984d6a",
+  "refs": {},
+  "revisionId": "sha256:710c00134b3e2ffa3a36087fd7b5526b732a805a651168547c625644e43d3300",
+  "schemaVersion": 1,
+  "updatedAt": 1773829981819
+}

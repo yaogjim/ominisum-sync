@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776645525832,
+  "entityType": "session",
+  "id": "1776645525832_xxanuhwb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需判断VPN环境变化，改看有样本说明的调研或多源数据",
+      "将此类社交帖子仅作为舆情线索，不作为正式证据引用"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776646282923,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "VPN影响民调短帖",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量极低，证据薄弱且存在幸存者偏差，难以支撑任何稳健判断，长期参考价值接近于零。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "社交媒体自报样本容易出现幸存者偏差",
+      "缺乏样本定义与统计方法的数据不宜用于决策"
+    ],
+    "oneHighValuePoint": "评论区点出了关键缺陷：无法发声的人天然不在样本中，存在明显幸存者偏差。",
+    "oneLineReview": "典型的社交媒体碎片化观察，能提供情绪线索，但不足以作为事实判断依据。",
+    "primaryCategory": "社交媒体观察",
+    "rating": "E",
+    "rejectReason": "内容仅为个人样本观察，缺乏方法说明、样本定义与可靠证据，评论区也指出明显统计偏差。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "网络环境",
+      "舆情样本"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一则关于VPN打击影响的个人观察帖，声称其关注者中约三分之一未受影响、三分之一受强影响、不到三分之一不翻墙，但没有给出样本来源、统计方法或验证依据，参考价值很弱。",
+    "tags": [
+      "VPN",
+      "翻墙",
+      "样本偏差",
+      "社交媒体",
+      "民间观察"
+    ],
+    "title": "Jeff Li: 我的关注者中，1/3未受打击VPN影响，1/3强受影响，不到1/3不翻墙",
+    "totalScore": 23.5,
+    "url": "https://x.com/jefflijun/status/2044164282581909645"
+  },
+  "payloadHash": "sha256:f1c5d5e0ba4e26620c111adaf7c010e4c3ca7fd04d744a92945ca97b48333b83",
+  "refs": {},
+  "revisionId": "sha256:c316959dde3896be8d4ca090aa4631829936452ddd4e4705a106b85b5b92482d",
+  "schemaVersion": 1,
+  "updatedAt": 1776646282924
+}

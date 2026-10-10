@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781173684832,
+  "entityType": "message",
+  "id": "1781173684831_dpx87ius",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章讨论了 Coding Agent 中一种隐蔽但危险的问题：**“旧读陷阱”**。核心观点是：**模型记住的是对话里的旧文本，但真正可靠的事实应来自当前磁盘文件状态；Harness 必须负责记录并校验文件真相。**\n\n---\n\n## 1. 什么是“旧读陷阱”\n\n**旧读陷阱**指的是：Agent 之前读过某个文件，之后用户或外部程序修改了这个文件，但模型仍根据对话记录里的旧内容继续编辑。\n\n关键点：\n\n- Model 记住的是 transcript，也就是历史对话中的文件内容。\n- 但 workspace / 磁盘上的文件可能已经变化。\n- Agent 如果不重新确认文件状态，就可能基于过期内容进行 patch。\n- 这种错误通常不会有明显报错，也不像幻觉那么显眼，而是“看起来正常地改错了”。\n\n一句话总结：\n\n> 转录文本不等于文件真相。\n\n---\n\n## 2. 朴素 Agent 设计的问题\n\n很多小型 Agent 会把工具输出当作普通对话文本处理。\n\n问题在于：\n\n- transcript 只记录“过去发生过什么”；\n- 磁盘文件状态才代表“现在真实是什么”；\n- 如果 Harness 只是不断追加文本，模型可能会在一个已经不存在的文件版本上继续工作。\n\n也就是说，**conversation 是历史，workspace 才是当前事实**。\n\n---\n\n## 3. Harness 应该记录“文件真相”\n\n作者认为，Harness 不能只知道“模型读过文件”，还必须维护独立的 **File State Records**，即文件状态记录。\n\n它需要区分两个问题：\n\n- transcript 回答：对话里发生过什么？\n- file state 回答：模型现在还能相信哪些文件内容？\n\n这意味着，Harness 要持续追踪文件当前状态，而不是完全依赖模型记忆。\n\n---\n\n## 4. read_file 应该是一种“合同”\n\n成熟的 Harness 应该把 `read_file` 看成一份 **contract（合同）**。\n\n含义是：\n\n- Model 可以提出编辑建议；\n- Harness 负责判断这个建议是否基于最新的文件事实；\n- 文件读取不只是方便工具，而是安全机制的一部分。\n\n这样可以避免模型基于旧版本文件进行危险修改。\n\n---\n\n## 5. 部分读取尤其危险\n\n文章特别提醒：**partial reads（部分读取）**也是旧读陷阱的重要来源。\n\n例如：\n\n- Model 只读了第 100-140 行；\n- 却尝试重写整个文件。\n\n这种情况下，Harness 应该提高警惕，因为模型只了解局部内容，却可能在猜测整个文件结构。\n\n一个实用规则是：\n\n> 对已有文件的编辑，应该要求最新的完整文件基线，除非编辑工具有严格的精确上下文约定。\n\n这样可以避免 Agent 只看过局部，却对全局做高风险修改。\n\n---\n\n## 6. Harness 应该追踪哪些信息\n\n当运行 `read_file` 时，Harness 应记录文件状态信息，包括：\n\n- 工作区相对路径；\n- 读取的行范围；\n- 文件总行数；\n- 这次读取是否覆盖完整文件；\n- 修改时间；\n- 文件大小；\n- SHA-256 指纹；\n- 有边界的基线文本；\n- state 的来源。\n\n这些信息可以帮助 Harness 判断：模型当前依据的内容是否仍然可信。\n\n---\n\n## 7. 写入和修改后的状态更新\n\n当 `write_file` 或 `patch_file` 成功后，Harness 应该把修改后的内容记录为新的 known baseline。\n\n下一轮 prompt 构建时，Agent 可以对追踪文件进行 lazy refresh：\n\n- 文件未更改：保持新鲜状态；\n- 只有 timestamp 改变但内容相同：安静刷新；\n- 外部磁盘编辑：展示当前已变更行的代码片段；\n- 文件被删除或变得过大：给出 stale warning；\n- 新的 `read_file`：清除过期或外部变更状态。\n\n这样，Agent 不会继续依赖旧 transcript，而是基于最新文件事实行动。\n\n---\n\n## 8. 这会如何改变 Agent 行为\n\n有了 file state 后，Agent 的实际行为会明显改善：\n\n- 文件没变时，重复读取可压缩成 summary，减少上下文污染；\n- 文件被外部修改时，下一轮 prompt 展示当前 changed lines，而不是旧内容；\n- 文件只被部分读取时，高风险 edit 可被提前拒绝；\n- Agent 自己写入文件后，post-edit content 可成为新的 fresh baseline；\n- session resume 后，Harness 不只恢复文本，还能恢复“哪些内容可信”。\n\n这会直接改善真实产品体验，让 Agent 更可靠、更安全。\n\n---\n\n## 结论\n\n文章的核心收束句是：\n\n> 模型能够记住文本。框架必须记住真理。\n\n也就是说，**模型负责推理和生成，Harness 负责维护当前事实**。如果 Coding Agent 不能区分“对话里的旧内容”和“磁盘上的真实内容”，就很容易掉入旧读陷阱。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781173684832,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:29af30283b3c7b67f1920963cea0020a19a7c2b649b35586f35837156564cc1b",
+  "refs": {
+    "sessionId": "1781152894530_uv7pu4m4"
+  },
+  "revisionId": "sha256:a170742d10387aced51ffc5e354d9ac4a957ee7981273ebd2e4170757d260eda",
+  "schemaVersion": 1,
+  "updatedAt": 1781173684832
+}

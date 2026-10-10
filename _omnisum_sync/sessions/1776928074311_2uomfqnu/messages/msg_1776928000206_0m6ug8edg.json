@@ -1,0 +1,18 @@
+{
+  "createdAt": 1776928000206,
+  "entityType": "message",
+  "id": "msg_1776928000206_0m6ug8edg",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "我该如何构建 一个 curl 命令 来测试 codex-to-cursor 正常可用？类似：“curl -k curl -k http://192.168.8.222:3060/v1/responses \\\n  -H \"Authorization: Bearer sk-ddddd\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"model\": \"gpt-5.4\",\n    \"messages\": [{\"role\": \"user\", \"content\": \"hi\"}],\n    \"stream\": true\n  }'\n”",
+    "role": "user",
+    "timestamp": 1776928000206
+  },
+  "payloadHash": "sha256:da114e05365c8a0e7735e7f3047dd7c5494c43393ec97cd9e7ac791793012974",
+  "refs": {
+    "sessionId": "1776928074311_2uomfqnu"
+  },
+  "revisionId": "sha256:fc9d38939a6a7116d6b8144fc12023c6a8dd13a3a534cc2f8ff8d14a5849d70a",
+  "schemaVersion": 1,
+  "updatedAt": 1776928000206
+}

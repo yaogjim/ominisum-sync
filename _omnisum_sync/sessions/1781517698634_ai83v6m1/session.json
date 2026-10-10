@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781517698634,
+  "entityType": "session",
+  "id": "1781517698634_ai83v6m1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计 Agent Skill 或插件扩展配置时，优先使用 JSON/YAML 而非 Markdown。",
+      "如必须使用 Markdown，应将可程序解析的配置部分独立为结构化区块或外部配置文件。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781518703232,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent配置应采用结构化格式",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Markdown 适合作为上下文说明，但不适合作为需要稳定解析和保存的配置格式。",
+      "JSON/YAML 能兼顾 LLM 阅读、代码解析、格式校验和自动化处理。"
+    ],
+    "oneHighValuePoint": "面向 Agent 的配置文件应同时考虑 LLM 可读性与程序可解析性，JSON/YAML 通常优于自由格式 Markdown。",
+    "oneLineReview": "一个简短但实用的 Agent 配置设计提醒，价值在于明确 Markdown 与结构化配置的边界。",
+    "primaryCategory": "AI工程实践",
+    "rating": "C",
+    "rejectReason": "内容较短，主要是经验性观点，缺少系统论证和具体实现细节。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Coding Agent",
+      "配置管理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出在设计 Agent Skill 扩展配置时，Markdown 虽便于 LLM 阅读，但不利于程序解析和格式一致性维护；更推荐使用 JSON 或 YAML 作为可读且可解析的结构化配置格式。",
+    "tags": [
+      "Agent",
+      "Markdown",
+      "JSON",
+      "YAML",
+      "结构化数据"
+    ],
+    "title": "宝玉: 我在做 baoyu-skills 时，做了一个尝试，就是用了一个 EXTEND",
+    "totalScore": 52.5,
+    "url": "https://x.com/dotey/status/2066314944950268139"
+  },
+  "payloadHash": "sha256:4e0d0ce261e6f87867fd7ed10bc888b545d6a406191cc10516b0c6117119c063",
+  "refs": {},
+  "revisionId": "sha256:a2d28a5b6dd9d5fa4d2f7958e20707e4ca20656cf472581acfd649f78a668e01",
+  "schemaVersion": 1,
+  "updatedAt": 1781518703815
+}

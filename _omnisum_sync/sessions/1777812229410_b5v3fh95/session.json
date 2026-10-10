@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777812229410,
+  "entityType": "session",
+  "id": "1777812229410_b5v3fh95",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "不建议保存该推文，若对X算法感兴趣应寻找原始源码分析或技术报告。",
+      "如关注AI代理代码分析，可另行检索有完整方法和实验结果的案例。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777812417953,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 3,
+      "relevance": 2,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "关于X算法的推文传闻",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "证据不足、正文信息残缺，主要依赖截图和情绪化表述，难以形成可靠知识沉淀。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "社交平台算法相关内容需要源码、实验或数据验证，单纯推文截图可信度很低。",
+      "AI代理可用于代码库分析，但需要清晰流程、提示词、验证方式和复现实验。"
+    ],
+    "oneHighValuePoint": "唯一可关注的是“用AI代理辅助阅读大型代码库”这一方向，但本文没有提供有效方法。",
+    "oneLineReview": "更像社交媒体噱头而非可靠的算法分析内容。",
+    "primaryCategory": "社交媒体传闻",
+    "rating": "E",
+    "rejectReason": "内容主要是转发式推文和图片，缺少完整论证、可验证证据与可执行方法，信息价值很低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "AI代理",
+      "平台算法"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该内容是一条关于有人使用AI代理阅读X算法源代码并声称有惊人发现的转发推文，但正文缺失大量关键信息，主要依赖图片和主观判断，缺少可验证结论与方法细节。",
+    "tags": [
+      "X算法",
+      "推特",
+      "AI代理",
+      "传闻",
+      "低证据"
+    ],
+    "title": "Teortaxes▶️ (DeepSeek 推特🐋铁粉 2023 – ∞): this looks retarded but that's why I'll believe it https://t",
+    "totalScore": 16,
+    "url": "https://x.com/teortaxesTex/status/2048804756412305474"
+  },
+  "payloadHash": "sha256:14bf1fcc640c1420b6407ba73403d5c07480ec474cbb34c7baf02f6727b808e1",
+  "refs": {},
+  "revisionId": "sha256:f0db6f233fe8393e4f7d29873e9730475b97d11ccb96235c6dae5dc7be1a140f",
+  "schemaVersion": 1,
+  "updatedAt": 1777813471116
+}

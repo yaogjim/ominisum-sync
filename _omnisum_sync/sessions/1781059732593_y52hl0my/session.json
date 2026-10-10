@@ -1,0 +1,74 @@
+{
+  "createdAt": 1781059732593,
+  "entityType": "session",
+  "id": "1781059732593_y52hl0my",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注医疗AI，可记录该案例中的工具栈：LiveKit、Cartesia、Rime、AssemblyAI",
+      "若需深入研究，应查找完整案例、ROI数据、通话成功率、合规方案和系统架构"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781173514865,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 1,
+      "novelty": 3,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "医疗语音代理生产案例",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "缺乏深入分析和证据支撑，仅提供少量运营结果与供应商名称，长期保留价值较低。",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "AI语音代理可用于诊所预约、取消预约等高频前台流程",
+      "相关技术栈可能包括实时语音通信、TTS、ASR和语音代理编排工具"
+    ],
+    "oneHighValuePoint": "医疗语音代理已在真实诊所预约与取消场景中产生业务结果，可作为垂直语音AI落地信号。",
+    "oneLineReview": "这是一个有一定行业信号价值但缺乏细节和方法论的碎片化案例。",
+    "primaryCategory": "AI应用案例",
+    "rating": "D",
+    "rejectReason": "内容主要是推文拼接，信息碎片化，缺少实现细节、业务背景、数据口径和可复用方法论。",
+    "retentionDecision": "短期提取工具栈和案例信号后可删除",
+    "secondaryCategories": [
+      "医疗AI",
+      "语音代理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/chasef07/status/2064292996632268835",
+      "https://x.com/livekit",
+      "https://x.com/cartesia",
+      "https://x.com/rimelabs",
+      "https://x.com/AssemblyAI"
+    ],
+    "summaryBrief": "文章汇总了一则医疗 AI 语音代理上线案例：累计14小时通话、预约38个、取消11个预约，并提及 LiveKit、Cartesia、Rime、AssemblyAI 等相关语音技术供应商。",
+    "tags": [
+      "AI语音代理",
+      "医疗预约",
+      "LiveKit",
+      "TTS",
+      "生产案例"
+    ],
+    "title": "AI医疗语音代理落地实战",
+    "totalScore": 34,
+    "url": "omnisun://digest/1781059732593"
+  },
+  "payloadHash": "sha256:a6183f2108d9209963424b7b631eb49460ce11d927897f984f26966d185de5ac",
+  "refs": {},
+  "revisionId": "sha256:cefb18ff67a99c0ac09729442fe9baa5388d572aab57ee368fb3d2e58cdffced",
+  "schemaVersion": 1,
+  "updatedAt": 1781173515617
+}

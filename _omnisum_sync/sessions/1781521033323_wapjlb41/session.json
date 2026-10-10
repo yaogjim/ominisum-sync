@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781521033323,
+  "entityType": "session",
+  "id": "1781521033323_wapjlb41",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在研究 Agent 框架，可打开 storybook.iii.dev 快速判断是否有实际组件文档。",
+      "若链接内容没有代码、架构图或部署说明，则无需继续保留该条推文。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781521633338,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "自建代理框架资源发布",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量低，证据和方法论不足，除链接外几乎没有可复用内容。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "自建代理框架可围绕可复用组件、引擎和工作节点组织。",
+      "代理系统需要考虑生产部署和按需扩展能力。"
+    ],
+    "oneHighValuePoint": "提供了一个可能包含代理框架组件的外部资源链接。",
+    "oneLineReview": "更像一条工具链接宣传，不是高价值技术文章。",
+    "primaryCategory": "AI代理框架",
+    "rating": "D",
+    "rejectReason": "正文主要是资源发布和宣传，缺少具体架构、实现细节、案例或方法论，单独保存价值较低。",
+    "retentionDecision": "提取链接后可删除",
+    "secondaryCategories": [
+      "AI工程",
+      "工具资源"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该内容宣布 storybook.iii.dev 上线，声称包含用于构建自有代理框架的组件、引擎和工作节点，可用于生产部署与按需扩展，但正文没有展开技术细节。",
+    "tags": [
+      "Agent",
+      "框架",
+      "部署",
+      "生产化",
+      "资源发布"
+    ],
+    "title": "x.com/mfpiccolo/status/2065076513670623489",
+    "totalScore": 32.5,
+    "url": "https://x.com/mfpiccolo/status/2065076513670623489"
+  },
+  "payloadHash": "sha256:7530798e10cb76486ac8c1a165bc998ab7e988887781f62df71818029390bf04",
+  "refs": {},
+  "revisionId": "sha256:30bba04d1c566701b4ef09e2f4544ca409d3c69af54de9dbfa76c0a0674cdff4",
+  "schemaVersion": 1,
+  "updatedAt": 1781521635033
+}

@@ -1,0 +1,47 @@
+{
+  "createdAt": 1781745515839,
+  "entityType": "knowledge-asset",
+  "id": "hi_asset_1781745515839_spb86z7w",
+  "parentRevisionIds": [],
+  "payload": {
+    "assetType": "graph_edge",
+    "clusterId": "ai_agent_engineering",
+    "generator": {
+      "finishReason": "stop",
+      "generatedAt": 1781745515838,
+      "templateId": "value_capture_card"
+    },
+    "payload": {
+      "case": "评论区有人建议第一步可换成 Kimi 或 GLM，因为国产模型前端能力较强，从而降低 Claude 用量",
+      "confidence": "medium",
+      "evidence": "原文中说：“现在的问题是：claude 用量太少，成本有点高。”评论区 Yixin 提到：“第一步换成 kimi 或者 glm，claude 的用量就降下来了”。",
+      "method": "重新评估 Claude 在流程中的定位，将其用于高价值环节如 review、架构判断、复杂前端迭代，而非所有环节；同时探索国产模型替代部分前端任务",
+      "problem": "Claude 使用量少但成本仍显得偏高",
+      "tool": "Claude, Kimi, GLM"
+    },
+    "sourceDigestSessionIds": [],
+    "sourceMessageIds": [
+      "msg_1775198883062_prm9jc2xv",
+      "summary_template_1774403312933_1775198883063",
+      "msg_1775198912969_9ctfgbpn4",
+      "summary_template_1773227348442_1775198912969",
+      "msg_1775199909757_4j2hvzph1",
+      "msg_1775199909757_uvfy6l12g",
+      "msg_1775199909758_p0yra7b9e"
+    ],
+    "sourceSessionIds": [
+      "1775198883093_bq6b8uup"
+    ],
+    "sourceTemplateIds": [
+      "value_capture_card",
+      "template_1774403312933",
+      "template_1773227348442"
+    ],
+    "status": "draft"
+  },
+  "payloadHash": "sha256:f640e9c07c12a2375bf9eb9edfe52459e9b55f2b3ab0788ea487e2a82ac2b7c5",
+  "refs": {},
+  "revisionId": "sha256:65ac96f819938b0f36e2bbaebe4f16fda7463dddf0dfdba2d7006ab92a0d391f",
+  "schemaVersion": 1,
+  "updatedAt": 1781745515839
+}

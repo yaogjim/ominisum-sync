@@ -1,0 +1,40 @@
+{
+  "createdAt": 1781745446011,
+  "entityType": "knowledge-asset",
+  "id": "hi_asset_1781745446011_immum7eg",
+  "parentRevisionIds": [],
+  "payload": {
+    "assetType": "graph_edge",
+    "clusterId": "ai_agent_engineering",
+    "generator": {
+      "finishReason": "stop",
+      "generatedAt": 1781745446007,
+      "templateId": "value_capture_card"
+    },
+    "payload": {
+      "case": "门禁侧接受“每次 _run() 都创建新的 MCPStdioAdapter / FastMCP client，不复用已进入的 client”作为当前 blocker 修复方向。",
+      "confidence": "medium",
+      "evidence": "评论指出失败只发生在 harness 先 auth_diagnostic 后复用同一个已进入的 FastMCP client 执行 list_diagnostic；P0-12 是 gate/live validation，不是高吞吐路径，可牺牲启动开销换取稳定。",
+      "method": "修改 SyncP0Adapter._run()，每次 operation 创建新的 MCPStdioAdapter / FastMCP client，执行一次 call 后结束 client 生命周期，以稳定性和隔离优先。",
+      "problem": "P0-12 harness 可能复用已进入的 FastMCP client，并在多次 asyncio.run 调用之间跨 event loop / 生命周期失效。",
+      "tool": "P0-12 harness、SyncP0Adapter._run()、MCPStdioAdapter、FastMCP client"
+    },
+    "sourceDigestSessionIds": [],
+    "sourceMessageIds": [
+      "1781664368193_zjquzoov",
+      "1781664368564_ywi5kpxf"
+    ],
+    "sourceSessionIds": [
+      "1781664344486_yu57uv3j"
+    ],
+    "sourceTemplateIds": [
+      "value_capture_card"
+    ],
+    "status": "draft"
+  },
+  "payloadHash": "sha256:182a7150aded96d7b49df124b7a40b9d886eb81eda6e812abc57058abb2d77e6",
+  "refs": {},
+  "revisionId": "sha256:59431349607112c74468ba5f7649935c73303cb9f2da59ad7642cbf6cd4f3691",
+  "schemaVersion": 1,
+  "updatedAt": 1781745446011
+}

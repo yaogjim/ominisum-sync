@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781519882201,
+  "entityType": "message",
+  "id": "1781520059413_gtkd64ls",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Agent-Native 开发框架应该如何设计\n\n## 核心概念：什么是 Agent-Native\n\nAgent-Native 指的是：产品功能与工作流程从一开始就围绕 Agent 的能力来设计，而不是传统软件后来接入 Agent。\n\n类比来看：\n\n- **Cloud-Native**：业务一开始就跑在云上\n- **AI-Native**：产品流程从设计之初就依赖 AI\n- **Agent-Native**：产品开发、功能执行、工作流推进都依赖 Agent，离开 Agent 就难以正常运转\n\n## 设计原则：让 Agent 真正能开发\n\n作者认为，一个 Agent-Native 开发框架需要满足几个关键条件：\n\n### 1. 功能足够完整\n\n框架应内置常见业务能力，例如：\n\n- 登录 / 注册\n- 支付\n- 存储\n- 多语言\n- SEO\n- 管理后台\n\n这些能力需要覆盖从 MVP 到上线的基础需求。\n\n### 2. 模块化、低耦合\n\n所有功能都应模块化，可按需启用、可插拔，避免 Agent 在复杂耦合系统中难以理解和修改。\n\n### 3. 流程文档化\n\n不仅要有代码模块，还要把开发流程清晰描述出来，包括：\n\n- 初始化项目\n- 创建新模块\n- 设计新页面\n- 生成图片\n- 部署上线\n- 安全扫描\n- 发布前审计\n\n这些流程需要沉淀成 Agent 能理解和执行的 **Skills**。\n\n## ShipAny 的实践：用 Skills 驱动开发\n\nShipAny 新版本将内置功能和开发流程整理成一系列 Skills，让 Agent 读取后快速理解框架结构，并按标准流程完成开发。\n\n核心 Skills 包括：\n\n- **quick-start**：快速初始化项目，完成 MVP\n- **clone-website**：复刻指定网站\n- **new-module**：开发新功能模块\n- **new-page**：开发新页面\n- **deploy-cloudflare**：一键部署到 Cloudflare\n- **generate-image**：生成图片\n- **sync-upstream**：同步上游更新\n- **security-scan**：安全扫描\n- **launch-audit**：发布前审计\n\n这些 Skills 基本覆盖了一个产品从开发到上线的完整生命周期。\n\n## 商业信号：AI 产品开发正在工具化\n\nShipAny 新版本发布不到 2 天已售出 200 单，且老用户复购比例较高。\n\n作者认为，这说明市场正在认可一种新定位：  \n**ShipAny 是 AI 出海产品的“金刚铲”，帮助用户把产品开发交给 Agent，一小时上线 AI 产品。**\n\n## 一句话总结\n\nAgent-Native 开发框架的关键，不只是接入 Agent，而是把功能模块、开发流程和项目知识全部结构化为 Agent 可理解、可执行的 Skills，让 Agent 成为产品开发的核心执行者。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781519882201,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f5d48bcc8c6ec2b9e4c99a252e7958699c9bc3cb2bdfa538ba37504dd85a89f8",
+  "refs": {
+    "sessionId": "1781520058665_7um3zswf"
+  },
+  "revisionId": "sha256:7c6476d93384118d9d3112a19f39135e91443b5d97c2cad6a7aec8b9094d3cf2",
+  "schemaVersion": 1,
+  "updatedAt": 1781519882201
+}

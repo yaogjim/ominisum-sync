@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781521594497,
+  "entityType": "message",
+  "id": "1781521594496_e4zk6mst",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 工具调用应是契约边界\n\n**评级**: B (68.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent工程\n**次类别**: Coding Agent, 工具调用设计\n**标签**: #Tool Contract #Harness #权限控制 #Agent安全 #上下文管理\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇有启发的 Agent 工具边界设计短文，方法论价值较高但证据和实现细节不足。\n**核心高价值点**: 工具调用应被设计为完整生命周期契约，而不是 name 到 handler 的简单函数映射。\n\n### 摘要\n文章主张 Coding Agent 的工具调用不是简单函数调用，而是模型通过生成文本请求改变环境状态的契约。Harness 需要负责 schema、路径、权限、审批、沙箱、输出边界和状态记录等裁决。\n\n### 知识要点\n- Tool call 本质是 generated text 对真实环境状态变更的请求，需要 Harness 裁决后才能执行\n- 工具契约应覆盖 schema 验证、路径安全、权限策略、审批、沙箱、输出裁剪、转录记录和状态更新\n- validation 应发生在 approval 之前，避免让用户审批本就无效或危险的请求\n- Tool output 会进入上下文，因此结果 bounding 是安全性和工作集准确性的一部分\n\n### 行动项\n- 设计 Agent 工具时，为每个 tool 增加 schema、权限、路径范围、审批策略和输出限制说明\n- 在执行工具前加入 parse、validate、policy check、approval、sandbox、execute、bound、record 的生命周期拦截\n- 对文件写入类工具强制检查 fresh baseline、workspace 边界和 diff/preview 审批信息\n- 限制 shell、search、read_file 等工具返回内容规模，避免污染模型上下文\n\n### 存档判定\n归档: 是 — 原因: 文章提出了工具调用不应被视为简单函数映射，而应作为包含验证、权限、审批、沙箱、输出裁剪和状态记录的契约边界，对 Agent 框架设计有参考价值\n不推荐: 缺少具体实现代码、真实案例和数据验证，更多是概念性总结，直接落地性有限\n删除: 否\n留存决策: 短期参考后可归档，适合作为设计 Coding Agent 工具边界时的检查清单",
+    "role": "assistant",
+    "timestamp": 1781521594497,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:5032f694aa77354adf288596fee065d3bce8e137e2eb463a5dfacb32b905b59e",
+  "refs": {
+    "sessionId": "1781521011102_bvs6bhlp"
+  },
+  "revisionId": "sha256:217fb41fe2cd1e129e0c281a418387fe413c100a3e91985d2c0cf47442096f03",
+  "schemaVersion": 1,
+  "updatedAt": 1781521594497
+}

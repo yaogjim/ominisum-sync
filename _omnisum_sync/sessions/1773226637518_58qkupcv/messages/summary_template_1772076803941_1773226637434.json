@@ -1,0 +1,22 @@
+{
+  "createdAt": 1773226637434,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1773226637434",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "**主旨概括：**  \nImpeccable 是一套专门帮助 AI 做出更好前端设计的 “设计语言工具包”。它通过**更细的设计知识、17 个指令和明确的反模式约束**，减少 AI 常见的审美套路和低级设计问题。\n\n---\n\n## 1. 这是什么：一个让 AI 更会做设计的工具\n- 项目名叫**Impeccable**，核心定位是：  \n  **“你原本不知道自己需要的设计词汇表”**。\n- 它主要包含：\n  - **1 个设计 skill**\n  - **17 个命令**\n  - **一套整理好的反模式规则**\n- 目标是提升 AI 在**前端界面设计**上的表现，让生成结果更专业、更有控制力。\n\n---\n\n## 2. 为什么要做：解决 AI 设计输出 “千篇一律” 的问题\n- 文章指出，大模型都学过很多相似的通用模板，所以如果没有额外引导，常会犯类似问题：\n  - 爱用**Inter**字体\n  - 爱用**紫色渐变**\n  - 喜欢**卡片套卡片**\n  - 喜欢在彩色背景上放**灰色文字**\n- Impeccable 的作用就是对抗这种 “默认偏见”，方法包括：\n  - 提供**扩展版设计 skill**\n  - 加入**7 个领域参考文件**\n  - 提供**17 个可操控命令**\n  - 明确告诉 AI **哪些设计不要做**\n\n---\n\n## 3. 核心内容：7 个设计参考模块\nImpeccable 把前端设计拆成 7 个关键领域，帮助 AI 更系统地理解设计：\n\n- **typography（字体排版）**  \n  包括字体系统、字体搭配、比例尺、OpenType。\n- **color-and-contrast（颜色与对比）**  \n  包括 OKLCH、带色中性色、深色模式、可访问性。\n- **spatial-design（空间设计）**  \n  包括间距系统、网格、视觉层级。\n- **motion-design（动效设计）**  \n  包括缓动曲线、错峰动画、减少动态效果。\n- **interaction-design（交互设计）**  \n  包括表单、焦点状态、加载模式。\n- **responsive-design（响应式设计）**  \n  包括移动优先、流式设计、容器查询。\n- **ux-writing（UX 文案）**  \n  包括按钮文案、报错信息、空状态提示。\n\n---\n\n## 4. 17 个命令：让 AI 按需审查、优化和润色\n文章给出了**17 个命令**，可以针对不同设计任务精确操作。重点包括：\n\n- **/teach-impeccable**：一次性初始化，收集设计上下文并保存配置\n- **/audit**：检查技术质量，如无障碍、性能、响应式\n- **/critique**：做 UX 设计评审，看层级、清晰度、情绪表达\n- **/normalize**：统一到设计系统标准\n- **/polish**：上线前最后润色\n- **/distill**：去掉多余复杂性，保留本质\n- **/clarify**：优化不清楚的 UX 文案\n- **/optimize**：提升性能\n- **/harden**：处理错误、国际化和边界情况\n- **/animate**：加入有目的的动效\n- **/colorize**：更策略性地使用颜色\n- **/bolder**：让无聊设计更有冲击力\n- **/quieter**：让太激进的设计更克制\n- **/delight**：增加 “惊喜感”\n- **/extract**：提炼成可复用组件\n- **/adapt**：适配不同设备\n- **/onboard**：设计引导流程\n\n**例子：**\n- `/audit`：查找界面问题\n- `/normalize`：修复不统一样式\n- `/polish`：最终清理细节\n- `/distill`：删掉多余设计元素\n\n部分命令还支持指定范围，比如：\n- `/audit header`\n- `/polish checkout-form`\n\n---\n\n## 5. 反模式规则：明确告诉 AI “不要这样设计”\n这是文章很重要的一部分。Impeccable 不只是教 AI “该怎么做”，还强调 “不要怎么做”：\n\n- 不要使用**过度滥用的字体**，如 Arial、Inter、系统默认字体\n- 不要在**彩色背景上放灰色文字**\n- 不要使用**纯黑或纯灰**，而是建议带一点色调\n- 不要把所有内容都放进卡片，也不要**卡片里再套卡片**\n- 不要使用**bounce /elastic**这类过时的弹跳缓动效果\n\n这类规则很实用，因为很多 AI 设计问题正是来自这些 “常见但俗套” 的选择。\n\n---\n\n## 6. 安装和使用方式：支持多种 AI 工具\nImpeccable 可用于多个 AI 开发工具，文章列出了安装方式，支持：\n\n- **Cursor**\n- **Claude Code**\n- **Gemini CLI**\n- **Codex CLI**\n\n使用方式很直接：安装后，在 AI 环境中输入命令即可，例如：\n- `/audit`\n- `/normalize`\n- `/polish`\n- `/distill`\n\n其中：\n- **Codex CLI**的语法不同，要写成：\n  - `/prompts:audit`\n  - `/prompts:polish`\n\n---\n\n## 7. 项目状态与补充信息\n- 网站：**impeccable.style**\n- 可下载现成 bundle 使用\n- 许可证：**Apache 2.0**\n- 项目基于 Anthropic 的**frontend-design skill**扩展而来\n- 仓库数据显示：\n  - **131 次提交**\n  - **115 个生产部署**\n  - 语言占比：\n    - JavaScript **57.9%**\n    - HTML **23.5%**\n    - CSS **18.6%**\n\n---\n\n## 总结一句话\nImpeccable 本质上是在给 AI 增加一套更专业的前端设计 “操作系统”：**既补充设计知识，又提供可执行命令，还限制常见审美错误**，从而让 AI 生成的界面更稳、更好看、更有设计感。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1773226637434,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ecbcf13367d91db4a81fadd1d854b1c39049d1f708c48a76069792274d016a8d",
+  "refs": {
+    "sessionId": "1773226637518_58qkupcv"
+  },
+  "revisionId": "sha256:bd61fff76201084c3b1585db79dfaa34222beb47384073bb40128e6f9f6a2292",
+  "schemaVersion": 1,
+  "updatedAt": 1773226637434
+}

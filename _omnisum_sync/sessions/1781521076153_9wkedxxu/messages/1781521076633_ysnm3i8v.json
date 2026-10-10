@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781520879438,
+  "entityType": "message",
+  "id": "1781521076633_ysnm3i8v",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Meathill：Claude Code 额度刷新与 Fable 5 1M Max 体验总结\n\n## 核心观点\n\n作者表示自己的 Claude Code（CC）额度每周六凌晨 3 点固定刷新。由于发布 Fable 后额度被主动重置，相当于短时间内获得了接近一周的可用额度，于是开始高强度使用 Fable 5 1M Max。\n\n## 使用体验\n\n### 1. 能力提升不明显，但成功率更高\n\n作者认为模型整体能力的“体感变化”不算特别大，但任务成功率有所提升。  \n不过仍然会出现踩坑情况，并非完全可靠。\n\n### 2. 工程实践决定上限\n\n作者认为自己体验较好的重要原因，是已有较成熟的工程实践和开发流程。  \n模型能直接读取开发笔记、利用已有权限和上下文，减少反复沟通，从而更高效地解决问题。\n\n### 3. 推荐结构化 AI 编程工作流\n\n作者再次推荐自己总结的 AI 编程工作流，认为这是基于 20 年开发和管理经验沉淀出的体系化方法，比很多缺乏逻辑基础的“神学式 Harness”更可靠。\n\n相关链接：\n\n- https://eleduck.com/posts/K7fp0d\n- https://meathill.com/posts/ai/vibe-coding-code-maintenance-skill\n\n## 成本与额度消耗\n\n### 费用变化明显\n\n作者提到新版使用成本大幅变化，原本 5 小时额度墙，现在大约 1 小时就会用完。\n\n### 周额度消耗很快\n\n使用 3 次 5 小时额度后，已经消耗了 43% 的周额度。  \n作者预计接下来需要更频繁地安排使用节奏，例如一天蹬 4 次。\n\n## 延伸讨论\n\n热门回复中主要涉及：\n\n- Anthropic 工程师背景分析：偏基础设施人才、经验丰富、博士比例不高，人才主要来自 Google 和 Meta。\n- 对 Claude Fable 5 未来本地化运行的想象：认为 12-18 个月后类似能力可能会下放到本地模型。\n- 对“AI 编程玄学工具链”的共鸣：认为很多所谓 Harness 缺乏工程逻辑。\n\n## 一句话总结\n\nFable 5 1M Max 在工程化场景中表现更稳、更自信，但真正发挥价值的关键不是模型本身，而是清晰的工程实践、上下文管理和工作流设计；同时，其额度和成本消耗也明显加快。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781520879438,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:09a6a482d201a910944f9d4fb34d800871a7b62e963d589c9f3b2ffdbdb0d673",
+  "refs": {
+    "sessionId": "1781521076153_9wkedxxu"
+  },
+  "revisionId": "sha256:623520dd87318143698e877e5c8c750190006c46515c88b056a84f2b125edeec",
+  "schemaVersion": 1,
+  "updatedAt": 1781520879438
+}

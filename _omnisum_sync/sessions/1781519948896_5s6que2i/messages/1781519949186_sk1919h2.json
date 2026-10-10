@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781519882201,
+  "entityType": "message",
+  "id": "1781519949186_sk1919h2",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# CJ Zafir：通过 Claude + Codex 分工，减少 50% Claude Code 消耗\n\n## 核心观点\n\nCJ Zafir 分享了一套 AI 编程工作流：  \n通过在 Claude Code 中安装 OpenAI Codex 插件，把“规划、执行、审核”拆给不同模型处理，从而让每周 Claude Code 使用额度减少约 50%。\n\n## 推荐工作流\n\n### 1. Claude 负责规划\n\n使用 **Claude Fable 5 High** 做项目规划。  \n适合负责理解需求、拆解任务、制定实现方案。\n\n### 2. Codex 负责执行\n\n使用 **Codex 5.5 xhigh** 进行代码实现。  \n重点是：通过 Codex 计划使用，不走 API。\n\nCJ 表示，如果希望一次执行到位、减少反复调试，推荐使用 **xhigh**；如果要求没那么高，**high** 也可以。\n\n### 3. Claude 负责审核\n\n使用 **Claude Fable 5 Max** 做最终审核。  \n主要用于检查代码质量、逻辑漏洞和整体实现效果。\n\n## 热门讨论\n\n### 成本优化 vs 质量提升\n\n有用户认为，这种方式本质是“Claude 负责思考，Codex 负责执行”，属于智能拆分。  \n但关键问题是：它到底提升了输出质量，还是只是降低了成本？\n\n### 审核模型可能过度配置\n\n也有人认为，对于 90% 的项目来说，用 Claude Fable Max 做代码审核可能有些浪费。  \n更常见的组合是：\n\n- Claude Fable 5 High / Medium：负责规划\n- GPT 5.5、GLM 5.1：负责执行\n- GPT-5.3-Codex：负责代码审查\n\n### 可替代执行模型\n\nCJ 补充，如果执行环节想换其他模型，也可以考虑：\n\n- DeepSeek v4 Pro\n- MiMo v2.5\n- Minimax 3\n- GLM 5.1\n- Qwen 3.6 Max\n\n但他强调，项目中必须有一个强编排器，例如 Claude 或 Codex，来掌控整体方向。\n\n## 产品视角总结\n\n这套方法的本质不是单纯“换模型”，而是把 AI 编程流程产品化：\n\n- **规划**：用强推理模型做任务拆解\n- **执行**：用高性价比代码模型生成代码\n- **审核**：用强模型把关质量\n\n核心价值是：在保证一定质量的同时，降低 Claude Code 的额度消耗，提高整体开发效率。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781519882201,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9630167d1d0a38bc780e0c90e1a6a9623f8cbfe1bb1dce019cb9fe43d85b761d",
+  "refs": {
+    "sessionId": "1781519948896_5s6que2i"
+  },
+  "revisionId": "sha256:01c63090e271781f757f29f519eb43cb07db724b4d0b023e567fe97fef1b3679",
+  "schemaVersion": 1,
+  "updatedAt": 1781519882201
+}

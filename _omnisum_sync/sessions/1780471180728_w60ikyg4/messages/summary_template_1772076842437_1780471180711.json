@@ -1,0 +1,23 @@
+{
+  "createdAt": 1780471180711,
+  "entityType": "message",
+  "id": "summary_template_1772076842437_1780471180711",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 深度总结\n\n## 1. Pi Agent 的定位\n\n**Pi Agent = 可定制的终端 Coding Agent 工作台。**\n\n它不是：\n\n- 不是**LangGraph**那种通用 Agent 编排框架；\n- 不是**OpenAI Agents SDK**那种产品级 Agent SDK；\n- 也不是开箱即用的企业业务自动化平台。\n\n它更像是：\n\n> 一个极简版、可自我改造的 Codex / Claude Code 替代品。  \n> 适合开发者自己装 skill、改 prompt、做上下文工程、管理长期 coding session。\n\n---\n\n## 2. 核心哲学\n\nPi Agent 的设计理念是：\n\n> **核心保持小，复杂能力交给扩展。**\n\n也就是说，它默认不塞很多重功能，比如：\n\n- sub-agent；\n- plan mode；\n- 企业级状态管理；\n- 复杂业务流编排。\n\n而是让开发者通过：\n\n- extensions；\n- skills；\n- prompt templates；\n- AGENTS.md；\n- SYSTEM.md；\n- 自定义 compaction；\n\n来搭建自己的 Agent 工作流。\n\n---\n\n## 3. 最有价值的几个能力\n\n### ① 上下文工程优先\n\nPi 很重视 Agent 运行时 “吃什么上下文”。\n\n它支持：\n\n- `AGENTS.md`：项目规则；\n- `SYSTEM.md`：系统提示；\n- skills：可复用能力；\n- prompt templates：提示词模板；\n- dynamic context injection：动态注入上下文；\n- custom compaction：自定义历史压缩。\n\n这点非常关键。\n\n因为很多 Agent 失败，不是模型不聪明，而是：\n\n- 项目规则没稳定加载；\n- 历史上下文太乱；\n- 长任务压缩失真；\n- 代码库信息入口混乱。\n\nPi 的优势正在于：  \n**它把 “上下文管理” 放在了核心位置。**\n\n---\n\n### ② Session Tree：树状会话历史\n\n普通聊天是线性的：\n\n> A → B → C → D\n\n但代码开发经常是分叉的：\n\n> 方案 A 不行，回到 B，试方案 C。\n\nPi 的 session tree 可以：\n\n- 回到任意历史节点；\n- 从该节点继续分支；\n- 导出 HTML；\n- 分享 session。\n\n这非常适合 coding agent 的试错过程。\n\n---\n\n### ③ 多运行模式\n\nPi 支持四种运行方式：\n\n- interactive：终端交互；\n- print / JSON：命令行输出；\n- RPC：远程过程调用；\n- SDK：作为库集成。\n\n所以它既能自己用，也能被其他系统调用。\n\n---\n\n### ④ 多模型、多 Provider 支持\n\nPi 支持很多模型供应商：\n\n- OpenAI；\n- Anthropic；\n- Google；\n- Azure；\n- Bedrock；\n- Mistral；\n- Groq；\n- Cerebras；\n- xAI；\n- Hugging Face；\n- OpenRouter；\n- Ollama。\n\n并且支持在会话中切换模型。\n\n这意味着它不是绑定某一家模型，而是更像一个开放式 Agent 底座。\n\n---\n\n# 深入浅出解读\n\n## Pi Agent 像什么？\n\n可以把它理解成：\n\n> 一个给程序员用的 “AI 编程脚手架”。\n\n如果 Claude Code / Codex 是 “装修好的房子”，  \nPi Agent 更像是 “毛坯房 + 工具箱”。\n\n它没有那么多默认装修，但你可以自由改：\n\n- 想换模型，可以换；\n- 想加 skill，可以加；\n- 想改提示词，可以改；\n- 想控制上下文压缩，也可以改；\n- 想把它嵌进自己的工具链，也可以。\n\n---\n\n## 它适合谁？\n\n适合：\n\n- 重度写代码的人；\n- 研究开源项目的人；\n- 做 agent harness 的人；\n- 做 RAG /sandbox/coding workflow 的人；\n- 想深度控制上下文的人；\n- 想把 Agent session 当工程资产管理的人。\n\n一句话：\n\n> 如果你不满足于 “直接用 AI 写代码”，而是想 “打造自己的 AI 编程系统”，Pi Agent 很合适。\n\n---\n\n## 它不适合谁？\n\n不适合直接做：\n\n- 审批流；\n- 支付系统；\n- CRM 自动化；\n- 工单系统；\n- 企业级业务 Agent；\n- 高可靠生产系统。\n\n因为这些场景需要：\n\n- 强状态管理；\n- 权限控制；\n- 审计日志；\n- 错误恢复；\n- 可观测性；\n- 业务数据持久化。\n\n这些不是 Pi Agent 的核心强项。\n\n---\n\n# 框架选择建议\n\n| 场景 | 更适合的工具 |\n|---|---|\n| 个人 coding / 研究开源项目 | **Pi Agent** |\n| 企业级 Agent / AI SaaS | **OpenAI Agents SDK + LangGraph** |\n| 知识库 / RAG | **LlamaIndex + LangGraph** |\n| 结构化业务 Agent | **Pydantic AI** |\n| 快速演示 / 内容型 Agent | 轻量框架或现成工具 |\n\n---\n\n# 辩证思考\n\n## Pi Agent 的价值\n\nPi Agent 的核心价值不是 “功能最多”，而是：\n\n> **把 Agent 的控制权还给开发者。**\n\n它适合那些愿意折腾、愿意理解 Agent 内部机制的人。\n\n尤其在 coding agent 里，真正难的不是 “调用模型”，而是：\n\n- 规则如何稳定注入；\n- 上下文如何组织；\n- 历史如何压缩；\n- 失败路径如何回滚；\n- 多模型如何切换；\n- session 如何复用。\n\nPi Agent 在这些问题上很有工程味。\n\n---\n\n## Pi Agent 的局限\n\n但它的自由度也是门槛。\n\n对普通用户来说：\n\n- 默认能力可能不够完整；\n- 需要自己配置；\n- 需要理解上下文工程；\n- 需要自己搭技能和流程。\n\n所以它不是 “傻瓜式 Agent 产品”，而是 “开发者工作台”。\n\n---\n\n## 最终判断\n\nPi Agent 不是要取代 LangGraph、OpenAI Agents SDK 或 LlamaIndex。\n\n它的最佳位置是：\n\n> **个人或小团队的 coding agent harness。**\n\n如果你要做的是：\n\n- 本地代码库改造；\n- 长期开发会话；\n- 项目级 AI 编程助手；\n- 自定义上下文工程；\n- 自己掌控模型与工具链；\n\nPi Agent 值得关注。\n\n但如果你要做的是：\n\n- 企业业务自动化；\n- 高可靠流程系统；\n- 强权限、强审计、强状态的生产 Agent；\n\n那 Pi Agent 不是首选。\n\n---\n\n# 一句话总结\n\n**Pi Agent 是一个极简、可改造、上下文工程优先的 Coding Agent 工作台，适合开发者打造自己的 AI 编程系统，但不适合直接承担企业级业务流程。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "解读",
+    "timestamp": 1780471180711,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0ce09736a77e9cf20bde77b08dd6bc4f6d16b33a0ad6f90aa2d70b2697f9bc30",
+  "refs": {
+    "sessionId": "1780471180728_w60ikyg4"
+  },
+  "revisionId": "sha256:3edf8e55591882cfc34b01947e4e515de8764614a89a86e6e8e124cccba78e60",
+  "schemaVersion": 1,
+  "updatedAt": 1780471180711
+}

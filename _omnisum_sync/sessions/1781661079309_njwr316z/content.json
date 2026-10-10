@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781661079309,
+  "entityType": "session-content",
+  "id": "1781661079309_njwr316z",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>kabikabi</strong></header><div class=\"tw-body\">越来越觉得 Maka 很适合用来学习 Agent。<br><br>比如最近一个maka core dev提了 issue 在讨论 DeepSeek 的缓存优化。<br>全过程透明：1 个 issue + 8 个 PR 一路推上来，从 usage 归一化 → request prefix 稳定化 → archive 压缩历史<br><a dir=\"ltr\" href=\"https://github.com/jackwener/maka-agent/issues/19\" rel=\"noopener noreferrer nofollow\" target=\"_blank\" role=\"link\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1wvb978 r-1loqt21\" style=\"color: rgb(29, 155, 240);\"><span aria-hidden=\"true\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-qlhcfr r-19qo34d r-qvk6io r-orgf3d r-u8s1d\">https://</span>github.com/jackwener/maka<span aria-hidden=\"true\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-qlhcfr r-19qo34d r-qvk6io r-orgf3d r-u8s1d\">-agent/issues/19</span><span aria-hidden=\"true\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-lrvibr\">…</span></a><br><br>听起来像是仅仅是为了省 token fee，但真正做起来之后，才会遇到一堆 Agent runtime真实又核心的问题：prompt prefix 怎么稳定、tool schema 怎么 canonicalize、历史上下文怎么 budget、usage/cost 怎么算对、cache miss 怎么解释。<br>中间有个反直觉的发现：砍历史 != 省钱，实测发现砍掉旧 turn 反而把 cache miss 拉高，总 cost 更贵。我们把滑窗 trim 改回 opt-in。<br><br>这是把 Agent 做成产品时一定会撞上的工程问题, 不仅仅是写一个 Agent loop 这么简单。</div><div class=\"tw-cards\"><a href=\"https://t.co/uAVLiqpRqG\">为 Runtime v2/AiSdkFlow 添加 DeepSeek 成本-运行时策略 · Issue #19 · jackwener/maka-agent</a></div></article>",
+    "pageContent": "kabikabi: 越来越觉得 Maka 很适合用来学习 Agent。 比如最近一个maka core dev提了 issue 在讨论 DeepSeek 的缓存优化。\n全过程透明：1 个 issue + 8 个 PR 一路推上来，从 usage 归一化 → request prefix 稳定化 → archive 压缩历史 https://\ngithub.com/jackwener/maka\n-agent/issues/19\n… 听起来像是仅仅是为了省 token fee，但真正做起来之后，才会遇到一堆 Agent runtime真实又核心的问题：prompt prefix 怎么稳定、tool schema 怎么 canonicalize、历史上下文怎么 budget、usage/cost 怎么算对、cache miss 怎么解释。\n中间有个反直觉的发现：砍历史 != 省钱，实测发现砍掉旧 turn 反而把 cache miss 拉高，总 cost 更贵。我们把滑窗 trim 改回 opt-in。 这是把 Agent 做成产品时一定会撞上的工程问题, 不仅仅是写一个 Agent loop 这么简单。\n[为 Runtime v2/AiSdkFlow 添加 DeepSeek 成本-运行时策略 · Issue #19 · jackwener/maka-agent](https://t.co/uAVLiqpRqG)\n\n链接:\n- https://github.com/jackwener/maka-agent/issues/19\n- https://t.co/uAVLiqpRqG"
+  },
+  "payloadHash": "sha256:0870c37514f8f098fd3f9db6fda1b8eabfd61fb786d7c43cbed3edd1fdea17c6",
+  "refs": {},
+  "revisionId": "sha256:d3c9639c419bc64793c3fae603ec29d6895ccf6b6dc7d2d168f7e3cf9e901341",
+  "schemaVersion": 1,
+  "updatedAt": 1781662408855
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781264305447,
+  "entityType": "message",
+  "id": "msg_1781264305445_fqrwf8prm",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "可以，安装到**Codex CLI**主要有 2 种方式：推荐用`npx impeccable skills install`，或者手动复制`.agents/skills`。\n\n> 说明：我无法实时联网搜索，但以下步骤基于你提供的当前 GitHub 页面内容整理。\n\n---\n\n## 方式一：自动安装，推荐\n\n在你的项目根目录执行：\n\n```bash\nnpx impeccable skills install\n```\n\n它会自动检测你的 AI 工具，并把 Impeccable skill 写入对应目录。\n\n安装后重启 Codex CLI，查看技能是否出现：\n\n```text\n/skills\n```\n\n或直接输入：\n\n```text\n$impeccable\n```\n\n然后初始化：\n\n```text\n/impeccable init\n```\n\n---\n\n## 方式二：手动安装到项目\n\n如果你已经下载或 clone 了 Impeccable 仓库，可以把 Codex 对应构建复制到你的项目：\n\n```bash\ncp -r dist/agents/.agents your-project/\n```\n\n最终项目结构类似：\n\n```text\nyour-project/\n  .agents/\n    skills/\n      impeccable/\n```\n\n然后进入项目并重启 Codex CLI。\n\n---\n\n## 方式三：安装到用户全局\n\n如果希望所有项目都能用：\n\n```bash\nmkdir -p ~/.agents/skills\ncp -r dist/agents/.agents/skills/* ~/.agents/skills/\n```\n\n然后重启 Codex CLI。\n\n---\n\n## Codex 中如何使用\n\n注意：Codex 使用的是**skills**，不是旧式`/prompts`命令。\n\n在 Codex 里可以这样打开：\n\n```text\n/skills\n```\n\n或直接运行：\n\n```text\n$impeccable\n```\n\n常用命令：\n\n```text\n/impeccable init\n/impeccable audit\n/impeccable critique\n/impeccable polish\n/impeccable harden\n/impeccable adapt\n```\n\n例如：\n\n```text\n/impeccable audit the dashboard\n/impeccable polish the checkout form\n/impeccable harden settings page\n```\n\n---\n\n## 推荐首次使用流程\n\n安装后建议按这个顺序：\n\n```text\n/impeccable init\n/impeccable audit\n/impeccable critique\n/impeccable polish\n```\n\n`/impeccable init`会生成或更新项目里的设计上下文，例如：\n\n```text\nPRODUCT.md\nDESIGN.md\n```\n\n后续 Codex 再帮你改 UI 时，会参考这些设计约束。\n\n---\n\n## 如果没有生效，检查这几项\n\n1. 是否重启了 Codex CLI  \n2. 项目里是否有：\n\n```text\n.agents/skills/\n```\n\n3. 全局安装时是否在：\n\n```text\n~/.agents/skills/\n```\n\n4. 在 Codex 中运行：\n\n```text\n/skills\n```\n\n确认是否能看到`impeccable`\n\n---\n\n## 最简命令版\n\n项目内安装：\n\n```bash\ncd your-project\nnpx impeccable skills install\n```\n\n然后 Codex 中运行：\n\n```text\n/skills\n/impeccable init\n```\n\n就可以开始用了。",
+    "finish_reason": "stop",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1781264305447
+  },
+  "payloadHash": "sha256:3026bf441fbb539cca5b13efde9ed899a55370e77e50a3dc61f513fa0c654bb5",
+  "refs": {
+    "sessionId": "1773226637518_58qkupcv"
+  },
+  "revisionId": "sha256:282112efca7e2a802cec1da595f765011bde873e160dd472a01ab4e6110c64bd",
+  "schemaVersion": 1,
+  "updatedAt": 1781264305447
+}

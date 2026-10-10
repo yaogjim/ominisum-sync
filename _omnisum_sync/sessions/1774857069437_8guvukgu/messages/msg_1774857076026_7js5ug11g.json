@@ -1,0 +1,20 @@
+{
+  "createdAt": 1774857076027,
+  "entityType": "message",
+  "id": "msg_1774857076026_7js5ug11g",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "大致可以按这个量级理解：\n\n- `token 消耗`：通常在几万 token 级别，常见可估算为`2 万～8 万 token`\n- `API 请求数`：通常不是 1 次，常见在`3 ~ 10 次请求`左右\n\n如果是 “中型项目” 且 Claude Code 启动时会自动读取目录结构、规则文件、部分代码上下文，那么哪怕你只发一个`hello`，实际消耗也往往主要来自 “加载上下文”，而不是这句问候本身。\n\n更具体一点：\n- 轻一点的中型项目：`约 2 万～4 万 token`，`3 ~ 6 次请求`\n- 上下文收集更积极时：`约 5 万～8 万 + token`，`6 ~ 10 次请求`\n- 如果还读取了`README`、`CLAUDE.md`、若干关键源码、工具调用结果，可能会更高\n\n原因主要是：\n- Claude Code 会先收集项目上下文\n- 可能分多轮进行工具调用、目录扫描、文件摘要\n- 最终才把整理后的上下文和你的`hello`一起送入模型\n\n如果你愿意，我也可以进一步告诉你：\n1. `Claude Code 为什么一次 hello 会这么贵`\n2. `如何把首次消息的 token 降到最低`\n3. `在 ZenMux 这类平台上大概会折算多少成本`",
+    "finish_reason": "stop",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1774857076027
+  },
+  "payloadHash": "sha256:2928b8640376d75f1908d39d2838c0ec04dd6f9ec3732ab1b221eabc1bd339d2",
+  "refs": {
+    "sessionId": "1774857069437_8guvukgu"
+  },
+  "revisionId": "sha256:cc91304bc3ed7fd64a1d699fbf153c591d2da797717f379b0484c97c5f4dc0ca",
+  "schemaVersion": 1,
+  "updatedAt": 1774857076027
+}

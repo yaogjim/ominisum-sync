@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781602536981,
+  "entityType": "session-content",
+  "id": "1781602536981_613x14ll",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Yuu</strong></header><div class=\"tw-body\">多 agent 能奏效的本质是模型路由和上下文隔离<br>模型路由的意思就是，让每种模型去做他自己擅长的事情，opus 天生对前端品味好，那就让它去写前端，gpt 对后端逻辑要求更严谨，那就让他审其他模型写的代码逻辑<br>上下文隔离则是，每个模型负责的范围很小，所以不容易注意力漂移<br>这里我要讲一个例子，在写 skill 的时候，如果你让模型把检索和写作（这里泛指以某种对人类友好的格式输出）分开来做（这两个阶段的上下文都很长），且不隔离上下文，那么模型会因为注意力漂移而忽略一部分检索内容，或者协作时因为过长的检索而忽略一部分写作要求，那么你可能会得到一份不太像人话的文档 / 其他格式的文件<br>但如果你让它把检索和写作结合在一起进行，做多个 loop，例如 search1->writing1->search2->writing2，每个 search->writing 视为一个小阶段，要求 agent 在小阶段结束时就去 edit 最终的产出文件，那么 agent 的表现会很好<br>在这个例子里，我相当于是通过 skill prompt，手动编排了一个循环结构，agent 不需要记住很多东西，只需要记住当前阶段做了什么，然后记下来，这就取消掉了当前阶段和之前阶段的关联，在这个结构中，虽然 agent 持有之前的上下文，但我们只需要确保循环当前阶段的是有效上下文即可，这很 tricky，但我相信未来会有更 generalization 的解法<br><br>所以隔离上下文的本质是防止注意力漂移</div><blockquote class=\"tw-quote\"><strong>@CMhOeNnExY</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\">腾讯 WorkBuddy，还有之前的龙虾多 Agent，已经为Agent使用赛道做了证伪\n\n多 Agent 最容易被误解成组一个 AI 团队，根因还是人类对AI员工存在偏见，用人类的协同方式去安排AI\n\n产品经理 Agent、开发 Agent、测试 Agent、运营 Agent，听起来很牛逼。落地下来，角色扮演最大的价值就是情绪价值</span></p></blockquote></article>",
+    "pageContent": "Yuu: 多 agent 能奏效的本质是模型路由和上下文隔离\n模型路由的意思就是，让每种模型去做他自己擅长的事情，opus 天生对前端品味好，那就让它去写前端，gpt 对后端逻辑要求更严谨，那就让他审其他模型写的代码逻辑\n上下文隔离则是，每个模型负责的范围很小，所以不容易注意力漂移\n这里我要讲一个例子，在写 skill 的时候，如果你让模型把检索和写作（这里泛指以某种对人类友好的格式输出）分开来做（这两个阶段的上下文都很长），且不隔离上下文，那么模型会因为注意力漂移而忽略一部分检索内容，或者协作时因为过长的检索而忽略一部分写作要求，那么你可能会得到一份不太像人话的文档 / 其他格式的文件\n但如果你让它把检索和写作结合在一起进行，做多个 loop，例如 search1->writing1->search2->writing2，每个 search->writing 视为一个小阶段，要求 agent 在小阶段结束时就去 edit 最终的产出文件，那么 agent 的表现会很好\n在这个例子里，我相当于是通过 skill prompt，手动编排了一个循环结构，agent 不需要记住很多东西，只需要记住当前阶段做了什么，然后记下来，这就取消掉了当前阶段和之前阶段的关联，在这个结构中，虽然 agent 持有之前的上下文，但我们只需要确保循环当前阶段的是有效上下文即可，这很 tricky，但我相信未来会有更 generalization 的解法 所以隔离上下文的本质是防止注意力漂移\n引用推文 (@CMhOeNnExY):\n腾讯 WorkBuddy，还有之前的龙虾多 Agent，已经为Agent使用赛道做了证伪 多 Agent 最容易被误解成组一个 AI 团队，根因还是人类对AI员工存在偏见，用人类的协同方式去安排AI 产品经理 Agent、开发 Agent、测试 Agent、运营 Agent，听起来很牛逼。落地下来，角色扮演最大的价值就是情绪价值"
+  },
+  "payloadHash": "sha256:dff41c77dd51b3e09aeec52d0349da0d7874e13d565fd347620c91faf57861b5",
+  "refs": {},
+  "revisionId": "sha256:8bf0298bf86396781eef24f0705b06d4e6aece8c27dac3ac0ae36ef12dd785ee",
+  "schemaVersion": 1,
+  "updatedAt": 1781602976858
+}

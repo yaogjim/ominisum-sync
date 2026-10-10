@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781662899033,
+  "entityType": "message",
+  "id": "1781662899032_g5w31cm6",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Pi Agent定位与适用场景\n\n**评级**: B (66.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent开发\n**次类别**: 开发工具, 上下文工程\n**标签**: #Pi Agent #coding agent #agent harness #上下文工程 #多模型\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇有助于快速理解 Pi Agent 产品定位和适用边界的高质量技术短评，但证据和实测细节不足。\n**核心高价值点**: 将 Pi Agent 与 LangGraph、OpenAI Agents SDK 区分开，明确其核心价值在于可自定义的 coding harness 与上下文工程，而非通用编排或企业级业务自动化。\n\n### 摘要\n文章将 Pi Agent 定位为极简、可定制的 terminal coding agent harness，强调上下文工程、session tree、多运行模式和多模型支持，并指出其适合本地代码库改造与长期 coding session，不适合严肃企业业务流。\n\n### 知识要点\n- Pi Agent 的核心哲学是保持 core 极简，将复杂能力交给 extension、skill、prompt template 和 package。\n- Pi 支持 AGENTS.md、SYSTEM.md、skills、动态 context injection 和自定义 compaction，突出上下文工程能力。\n- session tree 设计适合 coding agent 中频繁回滚、分支探索和 trial-and-error 的工作流。\n- Pi 提供 interactive、print/JSON、RPC、SDK 多种运行模式，便于终端使用和上层系统集成。\n- Pi 适合开发者自建 coding agent 工作台，但不适合直接承担审批、支付、CRM 等强可靠企业业务流。\n\n### 行动项\n- 查看 earendil-works/pi 主仓库，重点阅读 pi-coding-agent、pi-agent-core、pi-ai 的架构与示例。\n- 评估 Pi 的 AGENTS.md、skills、prompt templates 和 compaction 机制是否可复用于自己的 agent harness 或 RAG 项目。\n- 尝试用 Pi 在一个本地代码库中进行长期 coding session，验证 session tree 和多模型切换的实际价值。\n\n### 存档判定\n归档: 是 — 原因: 对理解 Pi Agent 的定位、架构哲学和适用边界有参考价值，适合后续调研 coding agent harness 时查阅\n删除: 否\n留存决策: 短期参考后视实际使用情况决定是否长期保留",
+    "role": "assistant",
+    "timestamp": 1781662899033,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:ee5aabef91d8a403b4c7caebda4d7b22a8fe451da4f38da5ed66bc27a35adedd",
+  "refs": {
+    "sessionId": "1780562437808_jkgbe9xu"
+  },
+  "revisionId": "sha256:116503773041a4b7b51fc7f4a6b523dc5bbf4431dd8c5d835ca8c00c438e6c53",
+  "schemaVersion": 1,
+  "updatedAt": 1781662899033
+}

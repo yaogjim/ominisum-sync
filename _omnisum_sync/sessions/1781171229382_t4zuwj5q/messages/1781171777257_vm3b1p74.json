@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781171746896,
+  "entityType": "message",
+  "id": "1781171777257_vm3b1p74",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n这篇内容介绍了 Zara Zhang 的开源项目 **lark-coding-agent-bridge** 的升级：它不仅能把飞书连接到本机的 Claude Code，现在也支持连接 **Codex**。这样用户可以继续在飞书里指挥 AI 完成抓取、翻译、写文档、画图等任务，并避免即将到来的 Claude 相关独立计费影响。\n\n## 1. 原项目功能：连接飞书与 Claude Code\n\n- 之前推荐的开源项目 **feishu-claude-code-bridge**，可以把 **飞书** 和本机的 **Claude Code** 连接起来。\n- 主要解决两个问题：\n  - 飞书可以保存所有消息历史；\n  - 可以随时把飞书里的信息转发给 Claude 处理。\n- 用户可以直接在飞书中指挥 Claude Code，也可以让 Claude Code 新建或编辑飞书文档。\n\n## 2. 新问题：Claude 相关功能即将独立计费\n\n- 从 **6 月 15 日** 起，Claude 订阅计划中：\n  - `claude -p`\n  - Agent SDK  \n  的使用将开始 **独立计费**，不再消耗原有订阅额度。\n- 这意味着继续依赖 Claude Code 的部分功能，可能会带来额外成本。\n\n## 3. 项目升级：现在支持飞书连接 Codex\n\n- Zara Zhang 最近将项目升级，现在也支持通过飞书连接 **Codex**。\n- 使用条件：\n  - 本机安装了 **codex cli**；\n  - 登录了 ChatGPT 账号，或配置了 API。\n- 这样用户就可以用 Codex 替代部分 Claude Code 的工作，不必担心 `claude -p` 独立收费带来的影响。\n\n## 4. 新能力：可在飞书中指挥 Codex 画图\n\n- 使用 Codex 还有一个额外好处：它可以调用 **GPT Image 2** 进行图片生成。\n- 因此用户可以：\n  - 在飞书中给 Codex 下达画图指令；\n  - Codex 生成图片后，图片会直接返回到飞书；\n  - 用户可以把图片插入飞书文档中。\n\n## 5. 示例工作流：抓取、翻译、画图、生成文档\n\n作者给出了一个常用指令示例：\n\n> 请帮我抓取并翻译 {url}  \n> 然后根据翻译的内容画一张中文手绘教育风信息图  \n> 最后把文章和图片一起创建一份飞书文档\n\n这个例子体现了该工具可以完成一整套自动化流程：\n\n- 抓取网页内容；\n- 翻译文章；\n- 根据内容生成中文手绘教育风信息图；\n- 将文章和图片整合成飞书文档。\n\n## 6. 使用方式：命令行切换到 Codex 配置\n\n- 连接步骤与之前连接 Claude Code 的方法基本一致。\n- 区别在于运行命令改为：\n\n```bash\nlark-channel-bridge run --profile codex\n```\n\n- 项目说明文档提供了中英文版本，介绍较详细。\n- 文档链接：  \n  [https://github.com/zarazhangrui/lark-coding-agent-bridge/blob/main/README.zh.md](https://github.com/zarazhangrui/lark-coding-agent-bridge/blob/main/README.zh.md)\n\n## 7. 总结\n\n这个项目的核心价值是把飞书变成一个 AI 工作入口：用户可以在飞书里保存上下文、发出指令，并让 Claude Code 或 Codex 完成文档、翻译、图片生成等任务。随着 Claude 部分功能即将独立计费，新增的 Codex 支持为用户提供了一个更灵活的替代方案。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781171746896,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0f8a39e176c40f76c605d16ac0ce2669f0f7f78069f2a417ceadb0ed4b4e202a",
+  "refs": {
+    "sessionId": "1781171229382_t4zuwj5q"
+  },
+  "revisionId": "sha256:287b55815ed10a5401effb3ccb89e482fd03a44c116a7ddc85e74c589c7ee257",
+  "schemaVersion": 1,
+  "updatedAt": 1781171746896
+}

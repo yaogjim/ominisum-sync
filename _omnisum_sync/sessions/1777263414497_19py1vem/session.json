@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777263414497,
+  "entityType": "session",
+  "id": "1777263414497_19py1vem",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "不建议基于该内容做决策，如需研究应另找系统性的PLG、ToB销售资料。",
+      "删除该条，仅在需要讨论社交媒体片面商业观点时可作为反例。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777284849824,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 2,
+      "novelty": 2,
+      "relevance": 3,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "人工销售模式批判",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息密度低、证据质量差、缺乏可操作性，仅保留了一句片面观点和零散回复，无长期参考价值。",
+    "domain": "x.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "ToB销售和ToC增长逻辑存在差异，不能简单互换。",
+      "PLG并非普适商业模式，企业销售仍可能需要人工介入。"
+    ],
+    "oneHighValuePoint": "唯一较有价值的点是提醒不能把PLG或增长逻辑机械套用于所有ToB或ToC销售场景。",
+    "oneLineReview": "这是一个未经展开的社交媒体断言，不足以作为商业模式判断依据。",
+    "primaryCategory": "商业模式",
+    "rating": "E",
+    "rejectReason": "内容主要是未经论证的情绪化判断，热门回复大多与原主题无关，缺乏系统分析、案例和可复用方法。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "产品销售",
+      "社交媒体观点"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "原文断言需要人工销售的商业模式是劣质产品叠加的劣质模式，但未提供论证。评论区多数回复与主题无关，仅有一条指出ToB、ToC销售逻辑差异，整体价值较低。",
+    "tags": [
+      "ToB销售",
+      "ToC产品",
+      "PLG",
+      "商业模式",
+      "碎片观点"
+    ],
+    "title": "DinoDeer: 需要人工销售的商业模式，是垃圾产品叠加的垃圾商业模式",
+    "totalScore": 22,
+    "url": "https://x.com/xDinoDeer/status/2045485038737969271"
+  },
+  "payloadHash": "sha256:0cdf5f52a4222dddfe0ac712b4d9a619282e85543e6733bc03a7481dd93521ac",
+  "refs": {},
+  "revisionId": "sha256:693ebe174d6eed6b63f078b9b863598c0c77d542090d7a8c04c61b8229992639",
+  "schemaVersion": 1,
+  "updatedAt": 1777284849827
+}

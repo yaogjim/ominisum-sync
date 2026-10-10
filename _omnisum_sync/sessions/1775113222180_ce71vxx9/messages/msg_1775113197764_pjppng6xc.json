@@ -1,0 +1,20 @@
+{
+  "createdAt": 1775113197769,
+  "entityType": "message",
+  "id": "msg_1775113197764_pjppng6xc",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "你可以把这个项目当成 “把 Compound Engineering 工作流装到不同 AI 编码工具里” 的插件 / 转换器来用，最常见有两种方式：\n\n- 直接安装`compound-engineering`插件到某个工具里，比如 Claude Code、Codex、OpenCode\n- 把你自己的`~/.claude/`技能、命令、MCP 配置同步到其他工具\n\n**怎么用**\n\n- 如果你用 Claude Code：\n  - 添加市场插件：\n    ```bash\n    /plugin marketplace add EveryInc/compound-engineering-plugin\n    /plugin install compound-engineering\n    ```\n- 如果你用 Cursor：\n  - 安装：\n    ```bash\n    /add-plugin compound-engineering\n    ```\n\n- 如果你想装到 Codex：\n  - 用 CLI 转换并安装：\n    ```bash\n    bunx @every-env/compound-plugin install compound-engineering --to codex\n    ```\n  - 安装后内容会进入`~/.codex/prompts`和`~/.codex/skills`\n\n- 如果你想装到 OpenCode：\n  - 执行：\n    ```bash\n    bunx @every-env/compound-plugin install compound-engineering --to opencode\n    ```\n\n- 如果你不确定自己在用哪个工具，也可以自动安装到所有已检测到的目标：\n  ```bash\n  bunx @every-env/compound-plugin install compound-engineering --to all\n  ```\n\n**装完之后怎么在项目里使用**\n\n这个插件的核心不是 “页面组件库”，而是一套工程流程命令。典型使用方式是：\n\n- `/ce:brainstorm`：先梳理需求、方案和边界\n- `/ce:plan`：把想法变成可执行的技术计划\n- `/ce:work`：按计划执行开发任务\n- `/ce:review`：提交前做多代理代码审查\n- `/ce:compound`：把本次经验沉淀下来，方便以后复用\n- `/ce:ideate`：从代码库里主动挖掘高价值改进点\n\n它推崇的流程是：\n\n```text\nBrainstorm -> Plan -> Work -> Review -> Compound -> Repeat\n```\n\n也就是：\n- 先想清楚\n- 再写计划\n- 再实施\n- 再审查\n- 最后沉淀经验\n\n**在你自己的项目里，推荐这样接入**\n\n- 第一步：先安装到你正在使用的 AI 工具\n- 第二步：进入你的项目目录\n- 第三步：先从`/ce:brainstorm`或`/ce:plan`开始，而不是直接让 AI 写代码\n- 第四步：开发完成后跑`/ce:review`\n- 第五步：把可复用经验记录到`/ce:compound`\n\n**如果你本地开发这个仓库本身**\n\n仓库也支持 “本地检出直接测试”，适合你修改插件源码后立刻验证：\n\n- Claude Code 本地加载：\n  ```bash\n  alias cce='claude --plugin-dir ~/code/compound-engineering-plugin/plugins/compound-engineering'\n  ```\n  然后运行：\n  ```bash\n  cce\n  ```\n\n- 安装本地版本到 Codex：\n  ```bash\n  bun run src/index.ts install ./plugins/compound-engineering --to codex\n  ```\n\n- 安装本地版本到 OpenCode：\n  ```bash\n  bun run src/index.ts install ./plugins/compound-engineering --to opencode\n  ```\n\n**如果你想同步自己的 Claude 配置到其他工具**\n\n比如你已经在`~/.claude/skills/`、`~/.claude/commands/`、`~/.claude/settings.json`里积累了自己的能力，可以这样同步：\n\n- 同步到所有已检测工具：\n  ```bash\n  bunx @every-env/compound-plugin sync\n  ```\n- 同步到 Codex：\n  ```bash\n  bunx @every-env/compound-plugin sync --target codex\n  ```\n- 同步到 OpenCode：\n  ```bash\n  bunx @every-env/compound-plugin sync --target opencode\n  ```\n\n**如果你是想 “在某个具体项目开发中怎么实际落地”**\n\n可以直接这样用：\n\n1. 先说 “我要做 XX 功能”，运行`/ce:brainstorm`\n2. 让它帮你梳理需求、风险、边界条件\n3. 再运行`/ce:plan`产出实施计划\n4. 按计划开发，必要时用`/ce:work`\n5. 完成后运行`/ce:review`\n6. 最后用`/ce:compound`记录经验，减少下次重复踩坑\n\n如果你愿意，我可以下一步直接给你一份：\n1. “在 Codex 中使用这个插件的最短上手步骤”\n2. “在具体项目开发里的最佳实践示例”\n3. “针对你当前技术栈的接入命令”",
+    "finish_reason": "stop",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1775113197769
+  },
+  "payloadHash": "sha256:fb6570a105898bc1701d8ac5d03908e5e2c7910e0a6bf42f8ca76590096af7b1",
+  "refs": {
+    "sessionId": "1775113222180_ce71vxx9"
+  },
+  "revisionId": "sha256:880a8cd72e792feaa8de8687db25b2d7d036edfc25b343d1cf8f9fa67c3f89c1",
+  "schemaVersion": 1,
+  "updatedAt": 1775113197769
+}

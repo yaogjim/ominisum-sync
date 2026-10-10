@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781519882201,
+  "entityType": "message",
+  "id": "1781520004098_03ol3kbq",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 为什么还需要 Agent Package？\n\n## 核心问题\n\n文章讨论了一个问题：  \n**既然大模型已经内置了很多工程调用能力，为什么还需要单独的 Agent Package？**\n\n作者认为，Agent Package 的价值不只是“调用工具”，而是把 Agent 变成一种可复用、可组合、可工程化的能力单元。\n\n## 作者理解的典型场景\n\n### 1. 快速开发并分发 Agent\n\nAgent Package 可以让开发者像写一个 npm 包一样，快速封装一个 Agent，并提供给别人使用。  \n目标是做到：**5 分钟开发一个 Agent，别人可以直接调用。**\n\n### 2. 基于 Agent 提供 Web 服务\n\nAgent 不只是本地脚本，也可以被包装成服务。  \n例如通过 API、Web 应用、后台任务等方式，对外提供智能能力。\n\n### 3. 工程化收敛\n\n作者提到类似 `gulpjs` 的调用方式：  \n开发者可以在代码里以标准化方式调用本地 Agent。\n\n这意味着 Agent 不再是散落的 prompt 或脚本，而是可以进入正式工程体系：\n\n- 可安装\n- 可调用\n- 可配置\n- 可复用\n- 可维护\n\n### 4. Agent 抽象与无限递归调用\n\n作者强调，真正关键的是：  \n**Agent 要能够被封装、组合，并支持递归调用。**\n\n也就是说，一个 Agent 可以调用另一个 Agent，多个 Agent 可以层层组合，形成更复杂的智能工作流。\n\n作者认为，如果没有想明白“无限递归”，Agent 在工程上的落地就会受限。\n\n## 背后的判断\n\n## Agent Package 的本质价值\n\nAgent Package 不是简单的“工具调用封装”，而是把 Agent 变成一种类似软件包的基础设施。\n\n它可能解决的问题包括：\n\n- Agent 如何被标准化描述\n- Agent 如何被安装和复用\n- Agent 如何在本地或云端运行\n- Agent 如何彼此调用\n- Agent 如何形成复杂工作流\n- Agent 如何进入现有工程体系\n\n## 热门回复观点\n\n### 本地化 Agentic Workflow 是趋势\n\n有回复认为：  \n**本地化的 agentic workflow + LLM，可能是未来软件的重要方向。**\n\n也就是说，未来软件可能不只是传统代码逻辑，而是由本地模型、本地 Agent、工作流编排共同组成。\n\n### 让 AI 不那么“蠢”\n\n有人提到相关项目，认为通过更好的任务组织、流程设计和 Agent 调度，可以提升 AI 的执行效果，减少低级错误。\n\n## 一句话总结\n\n**Agent Package 的意义，不是替代大模型内置能力，而是让 Agent 像软件包一样被开发、分发、调用、组合和递归编排，从而真正进入工程化落地。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781519882201,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:25c3b7ad219afe40b586806ee7cfe401d2ef13b4f1d7d4d1a66cb96a1a2d494d",
+  "refs": {
+    "sessionId": "1781520003838_ayjh4x9n"
+  },
+  "revisionId": "sha256:db7bf721b7e857818857bbda792f2a7e4ed224c401cb22abdca34cbc9cad56d3",
+  "schemaVersion": 1,
+  "updatedAt": 1781519882201
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781171255992,
+  "entityType": "session",
+  "id": "1781171255992_raenib0m",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "遇到视频审核失败时，可尝试将原视频和字幕交给 Codex，让其生成可能规避违规点的剪辑方案。",
+      "如有视频分析需求，可测试将 yt-dlp、转写工具和抽帧流程封装为 Codex skill。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781171374455,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex辅助视频过审案例",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Codex 可用于多模态视频处理场景，包括字幕分析、剪辑调整和内容合规优化。",
+      "通过给 Codex 配置 yt-dlp 等工具，可扩展其对在线视频的下载、转写、画面分析和素材提取能力。"
+    ],
+    "oneHighValuePoint": "可将视频、字幕和审核失败问题交给 Codex，让其辅助定位并生成更合规的视频版本。",
+    "oneLineReview": "一个有启发但证据薄弱的 AI 视频处理小技巧，适合快速浏览而非深度收藏。",
+    "primaryCategory": "AI工具应用",
+    "rating": "C",
+    "rejectReason": "内容主要是单个社交媒体案例，缺乏详细步骤、稳定性验证和系统方法论，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "内容创作",
+      "视频处理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了用 Codex 根据视频和字幕自动剪出可通过抖音审核版本的案例，评论中补充了用 Codex 结合 yt-dlp 处理视频转写、分析和抽帧的做法。",
+    "tags": [
+      "Codex",
+      "AI剪辑",
+      "内容审核",
+      "视频工作流",
+      "自动化"
+    ],
+    "title": "歸藏(guizang.ai): 又发现一个 Codex 好用的点",
+    "totalScore": 44,
+    "url": "https://x.com/op7418/status/2062403614963126712"
+  },
+  "payloadHash": "sha256:7c69cb39734c500ab6a55727b794420b3a5784a6c549fc06517fcae50c852048",
+  "refs": {},
+  "revisionId": "sha256:ef81c4a03882c20f7a2b3c563654acc99ea35898de0a3568fd1e229507be81d3",
+  "schemaVersion": 1,
+  "updatedAt": 1781171374777
+}

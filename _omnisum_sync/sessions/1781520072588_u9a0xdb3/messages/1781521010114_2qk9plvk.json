@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781520896454,
+  "entityType": "message",
+  "id": "1781521010114_2qk9plvk",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章讨论了 **Mimo Code 和 Obelisk 在 Coding Agent“历史记忆/会话检索”上的探索**：通过轻量级检索方式，让 Agent 能找回过去的决策和上下文，减少重复推理和信息丢失。作者认为，相比“向量数据库 + embedding 模型”，基于 SQLite FTS、BM25 等轻量方案更适合当前 Coding Agent。\n\n---\n\n## 1. Mimo Code 的 session history 检索能力\n\n- **Mimo Code 基于 OpenCode 开发**，实现了较好的 **session history 检索**功能。\n- 它和 Obelisk 类似，采用：\n  - **SQLite FTS**：全文检索能力；\n  - **BM25**：经典相关性排序算法。\n- 这样做的目的，是让 Agent 能“知道自己过去在做什么”，避免遗忘关键决策。\n\n**简单理解：**  \n如果 Agent 之前已经讨论过“为什么选择某个架构方案”，后续再写代码时，它可以检索到这段历史，而不是每次都重新判断。\n\n---\n\n## 2. Obelisk 在检索能力上走得更远\n\n- 作者提到，**Obelisk 不只是简单检索历史记录**，而是提供了一个 **retrieval query runtime**。\n- 这意味着 Agent 可以自己写代码来检索 session，而不是只能被动接受固定检索结果。\n- 这样带来的好处是：\n  - 检索方式更灵活；\n  - Agent 可以根据任务需要主动查找历史信息；\n  - 更适合复杂项目中的长期上下文管理。\n\n---\n\n## 3. 新增 memory 功能：本质是 synthesis cache\n\n- Obelisk 现在加入了 **memory 功能**。\n- 但作者强调，它不同于传统意义上的“记忆”，更像是 **synthesis cache（综合结果缓存）**。\n- 原因是：\n  - 检索历史 session 是有成本的；\n  - 如果某次检索和总结产生了稳定结论；\n  - Agent 应该把这个结论写成文档，下次可以直接复用。\n\n**例子：**  \n如果 Agent 多次检索后确认“项目中统一使用某个状态管理方案”，那就可以把这个结论写入 memory。以后遇到相关问题时，无需再次检索大量历史记录。\n\n---\n\n## 4. memory 必须人工确认，错误记忆危害更大\n\n- 作者特别强调：**memory 的准确性非常重要**。\n- 每条 memory 的：\n  - 写入；\n  - 归档；\n  - 更新；\n  \n  都必须经过人的确认。\n- 原因是他们已经深刻体会到：\n\n> 错误的 memory，比没有 memory 更干扰工作。\n\n**含义：**  \n如果 Agent 记住了一个错误结论，它后续可能会反复基于这个错误前提做决策，导致问题越来越严重。\n\n---\n\n## 5. 后续会推出 Electron 控制面板\n\n- 作者计划后续更新一个基于 **Electron** 的控制面板。\n- 这个面板用于：\n  - 查看 memory；\n  - 追溯 memory 来源；\n  - 归档 memory；\n  - 理解 Agent 正在复用哪些历史结论。\n- 作者说明，这个面板不是必须的，但能让用户更直观地看到 Agent 的记忆使用情况。\n\n---\n\n## 6. 对 Coding Agent 检索层的判断\n\n- 作者认为，对 Coding Agent 来说，**向量数据库 + embedding 模型太重了**，这正在成为一种共识。\n- 他们会继续探索更轻量的检索层方案。\n- 核心目标是：\n\n> bring history back again  \n> 让历史上下文重新回到 Agent 的工作流中。\n\n---\n\n## 7. 相关项目与背景\n\n- Obelisk 仓库地址：  \n  [https://github.com/tommy0103/obelisk](https://github.com/tommy0103/obelisk)\n\n- 文中还引用了小米 MiMo 的消息：\n  - **MiMo Code V0.1 已上线并开源**；\n  - 定位不只是终端中的 AI 编码助手，而是“编码伙伴”；\n  - 包含 **MiMo V2.5**；\n  - MiMo V2.5 是一款限时免费的多模态模型；\n  - 支持 **百万 token 上下文窗口**。\n\n---\n\n## 8. 热门回复中的补充讨论\n\n### memory 是否会变成噪声？\n\n有用户提出担忧：\n\n- 即使 memory 当下经过严格判断是正确的；\n- 随着项目重构、修改、长期维护；\n- 这些 memory 也可能逐渐过时；\n- 过时的高度总结性 memory，可能会影响 Agent 的检索路径；\n- 因此可能需要人工持续做降权、归档和管理。\n\n### 作者对 Agent 检索层形态的进一步看法\n\n作者补充说：\n\n- 单纯的 skill 机制局限较多，偏被动；\n- Obelisk 作为检索层，不应该只是被动工具；\n- 它也应该能主动介入 Agent loop；\n- 理想情况下，harness 需要有跨 runtime 标准；\n- 可以通过类似 **event bus** 的方式，让检索层更主动地参与 Agent 工作流程。\n\n### memory 展示形态\n\n作者还提到：\n\n- 查看 memory 更好的形态可能不是传统 app；\n- 而是 **GenUI**；\n- 但目前模型能力下，GenUI 还不太可用。\n\n---\n\n## 总结\n\n这篇文章的核心观点是：**Coding Agent 需要可靠、轻量、可追溯的历史检索和记忆机制**。Obelisk 的方向是用 SQLite FTS、BM25、retrieval query runtime 和人工确认的 memory，让 Agent 既能找回历史，又避免被错误记忆误导。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781520896454,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f8a41eabeab04044c1cf11f71f08e53a3bc03b292c6f339e741a46cd1cd1fa79",
+  "refs": {
+    "sessionId": "1781520072588_u9a0xdb3"
+  },
+  "revisionId": "sha256:a4eb5ded336ef30ff453a9c25bf186bd7b9b9c7001ddab56eb50abd7cfa2f944",
+  "schemaVersion": 1,
+  "updatedAt": 1781520896454
+}

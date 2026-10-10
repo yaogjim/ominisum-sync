@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781517501332,
+  "entityType": "message",
+  "id": "1781517595332_9343yj18",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章总结：一个查看 AI Coding Harness Prompt 的工具站\n\n## 核心信息\n\nTianyi Cui 分享了一个对 **Harness / Coding Agent 开发者** 很有用的网站：\n\n> **phistory.cc**\n\n该网站收录了多种 AI Coding Harness 的历史版本信息，包括：\n\n- Claude Code\n- OpenCode\n- Codex\n- Pi\n- OpenClaw\n- Hermes\n\n内容主要包括：\n\n- 各版本的 **System Prompt**\n- 各版本的 **Tool Schema**\n\n## 主要价值\n\n对于开发 AI Agent、Coding Agent 或 Harness 的人来说，这个网站可以帮助：\n\n- 研究不同产品的系统提示词设计\n- 对比各版本 Prompt 的演进\n- 理解工具调用 Schema 的设计方式\n- 借鉴成熟 Coding Agent 的架构思路\n- 排查和分析 Agent 行为差异\n\n## 使用提示\n\n作者特别提到：\n\n> 点击右上角的 **“Trace”**，可以切换到一个更舒服的视图。\n\n这说明网站不仅能查看 Prompt，也可能支持更清晰地查看交互链路或执行过程。\n\n## 评论区补充\n\n评论中有人提到类似工具：\n\n- **Claude-Tap**：可查看各类 Coding Agent 的 system prompt 和交互过程，适合排查 Trace。\n- **ccprompt.feitong.phd**：另一位用户自荐的相关项目。\n\n## 一句话总结\n\n这是一个面向 AI Coding Agent / Harness 开发者的 Prompt 历史资料库，可用于研究主流 Coding Agent 的 system prompt、tool schema 和行为设计。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781517501332,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:132d72b88b45377e4e3ed0910d0aa03ef40dc2c29e0347c6eae91c3e85914921",
+  "refs": {
+    "sessionId": "1781517595151_8663rc4v"
+  },
+  "revisionId": "sha256:1663f7dad4c2e42929689e872cb8ae9a0de328916d0d89b9afab255f615f453c",
+  "schemaVersion": 1,
+  "updatedAt": 1781517501332
+}

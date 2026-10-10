@@ -1,0 +1,88 @@
+{
+  "createdAt": 1780471727402,
+  "entityType": "session",
+  "id": "1780471727402_77v1l1d1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需使用，先安装并确认agent-browser在PATH中",
+      "通过pi install npm:pi-agent-browser-native安装Pi扩展",
+      "运行pi-agent-browser-doctor检查环境和版本兼容性",
+      "按需配置~/.pi/config/pi-agent-browser-native/config.json以启用Brave Web Search",
+      "阅读docs/TOOL_CONTRACT.md和docs/COMMAND_REFERENCE.md了解工具参数与返回结构"
+    ],
+    "archiveReason": "包含安装方式、工具能力、配置路径和故障诊断信息，对后续搭建浏览器自动化Agent有参考价值",
+    "classifiedAt": 1780615529860,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Pi原生浏览器自动化扩展",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/3f59c105f09fe9f0a70b247d6d2ef57908a9d94bdb7e3c63c1d824b16b80ad37/fitchmultz/pi-agent-browser-native",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/3f59c105f09fe9f0a70b247d6d2ef57908a9d94bdb7e3c63c1d824b16b80ad37/fitchmultz/pi-agent-browser-native",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "pi-agent-browser-native依赖上游agent-browser，通过Pi扩展暴露agent_browser原生工具",
+      "支持交互式快照、点击、表单填写、截图、下载文件、持久化浏览器会话和Electron应用操作",
+      "提供doctor命令检查agent-browser路径、版本匹配和Pi扩展源冲突",
+      "支持通过Pi作用域配置文件接入Brave Search API作为可选Web搜索工具",
+      "工具重点解决Agent使用CLI时的上下文浪费、引用失效、截图文件丢失和敏感信息泄露问题"
+    ],
+    "oneHighValuePoint": "将浏览器自动化从脆弱的Shell命令封装为Agent可调用的原生工具，并强化截图、会话、错误恢复和敏感信息脱敏。",
+    "oneLineReview": "这是一个信息较全、可直接上手的项目README，但主要价值集中在工具使用而非通用方法论。",
+    "primaryCategory": "AI工具与浏览器自动化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，若实际使用Pi或agent-browser则长期保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "开发工具",
+      "自动化测试",
+      "Agent工具链"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该文介绍pi-agent-browser-native项目，说明其将agent-browser封装为Pi原生工具，支持页面操作、截图、会话管理、密钥脱敏、Web搜索配置及安装诊断流程。",
+    "tags": [
+      "Pi",
+      "agent-browser",
+      "浏览器自动化",
+      "GitHub项目",
+      "AI Agent"
+    ],
+    "title": "fitchmultz/pi-agent-browser-native: pi extension that exposes agent-browser as a native tool for browser automation",
+    "totalScore": 61,
+    "url": "https://github.com/fitchmultz/pi-agent-browser-native"
+  },
+  "payloadHash": "sha256:189d207025834385e1f44205863b8491acf45353b1f06b28b24a4d4dbe283fd3",
+  "refs": {},
+  "revisionId": "sha256:3d89f5d5d68d3e7e5ac65accb14b7ab95e1e59911b935023e88da0792372ef9a",
+  "schemaVersion": 1,
+  "updatedAt": 1781173096072
+}

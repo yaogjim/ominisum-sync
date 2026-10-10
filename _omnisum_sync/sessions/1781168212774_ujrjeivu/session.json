@@ -1,0 +1,72 @@
+{
+  "createdAt": 1781168212774,
+  "entityType": "session",
+  "id": "1781168212774_ujrjeivu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尝试把旧提示词中的细碎步骤改写为目标、约束和验收标准",
+      "设计一个强模型规划、普通模型执行、轻量模型验证的多模型工作流",
+      "在使用高成本模型前先测试中等 effort 设置，记录质量与成本差异",
+      "整理一份业务上下文提示词模板，用于让模型识别本月最高杠杆任务",
+      "对 UI 或产品相关任务优先提供截图，再补充文字说明"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781168573935,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Fable 5首日实践观察",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "对更强的大模型应更多设定目标和约束，而不是提供过细的步骤指令",
+      "高成本模型更适合作为任务编排器，而非承担所有执行工作",
+      "截图输入在 UI 重建、产品分析等任务中可能比文字描述更有效",
+      "模型能力提升后，成本限制、上下文窗口和安全回退机制会成为实际工作流的重要变量",
+      "将业务背景、客户、数据和瓶颈提供给模型，比玩具演示更容易产生实际价值"
+    ],
+    "oneHighValuePoint": "将强模型用于规划和编排，较便宜模型用于执行与验证，可以在能力和成本之间取得更好平衡。",
+    "oneLineReview": "有一些可操作的 AI 工作流启发，但内容明显偏社区拼贴，证据质量和可信度较弱。",
+    "primaryCategory": "AI工具与工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考，提炼可用提示词和工作流后可删除",
+    "secondaryCategories": [
+      "大模型使用技巧",
+      "AI代理实践"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章汇总了所谓 Fable 5 发布首日的社区反馈与使用经验，包括提高任务目标、减少步骤约束、作为编排器使用、控制成本、利用截图输入、结合业务数据生成高杠杆任务等，但证据多为社交媒体轶事。",
+    "tags": [
+      "Claude",
+      "Fable 5",
+      "提示词",
+      "AI Agent",
+      "模型编排",
+      "成本控制"
+    ],
+    "title": "/Last1Day of Fable 5：最佳实践和人们说的最有趣的事情",
+    "totalScore": 58.5,
+    "url": "https://x.com/mvanhorn/status/2064887887578136666"
+  },
+  "payloadHash": "sha256:68d2c830d6b6143a7e269fe976feefd2915a8dd16e9e8859b48b000b8f329235",
+  "refs": {},
+  "revisionId": "sha256:afebcd596688fb734ba6698491d99069b7528e85490e8fe07dd5547e1e3ccce5",
+  "schemaVersion": 1,
+  "updatedAt": 1781168993031
+}

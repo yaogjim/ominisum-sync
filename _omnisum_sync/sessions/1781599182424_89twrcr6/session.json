@@ -1,0 +1,70 @@
+{
+  "createdAt": 1781599182424,
+  "entityType": "session",
+  "id": "1781599182424_89twrcr6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "盘点团队中所有编码代理和LLM客户端的调用入口，评估是否能统一接入网关或代理层。",
+      "按组织、团队、用户和API key设计分层预算，并设置日级和小时级异常使用阈值。",
+      "将LLM成本数据与调用trace、用户身份、模型名称和任务类型关联，便于追踪异常支出来源。",
+      "为高成本或接近限额场景设计提前告警和可审计的额度提升流程。"
+    ],
+    "archiveReason": "提供了企业内部管理编码代理LLM支出的网关化思路，包括预算分层、实时追踪、限额告警与调用归因，具备一定参考价值。",
+    "classifiedAt": 1781599528902,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "编码代理成本可控实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "编码代理可能在单个任务中发起大量模型调用，导致个人每周产生高额不可见成本。",
+      "LLM预算可按组织、工作区、用户、API key 以及月、周、日、小时窗口分层设置。",
+      "集中式LLM网关可以为工程管理层提供实时支出可见性和统一熔断点。",
+      "成本数据与trace、模型调用和评估系统结合后，可用于定位高成本代理行为并优化实现。",
+      "硬性限额需要配套提前告警和预算提升审批流程，否则容易阻碍正常研发。"
+    ],
+    "oneHighValuePoint": "将LLM支出与调用链路、用户、模型、失败模式和预算限额关联起来，使成本控制从月度账单管理转为实时工程治理。",
+    "oneLineReview": "偏产品宣传，但包含较实用的LLM成本治理框架和落地经验。",
+    "primaryCategory": "AI工程管理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留为AI成本治理案例",
+    "secondaryCategories": [
+      "LLM成本治理",
+      "编码代理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 LangChain 通过 LangSmith LLM Gateway 管理编码代理成本：集中接入 Claude Code、Codex 等工具，按组织、工作区、用户和 API key 设置预算，并结合追踪、告警和审批流程降低意外账单风险。",
+    "tags": [
+      "LLM Gateway",
+      "成本控制",
+      "可观测性",
+      "预算管理",
+      "编码代理"
+    ],
+    "title": "我们如何让编码代理的花费可预测",
+    "totalScore": 60,
+    "url": "https://x.com/hwchase17/status/2066552550565007633"
+  },
+  "payloadHash": "sha256:30cd3b08ff87ce076ff006a342569742d3c8348e97e88a666c0c254b41e37b65",
+  "refs": {},
+  "revisionId": "sha256:159e06c3d7f658d8bad36b38b8c4484d73d5d9d59de9ffd97a89eaea1d6c04ab",
+  "schemaVersion": 1,
+  "updatedAt": 1781600266161
+}

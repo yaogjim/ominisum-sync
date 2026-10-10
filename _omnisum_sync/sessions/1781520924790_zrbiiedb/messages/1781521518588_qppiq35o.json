@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781521518589,
+  "entityType": "message",
+  "id": "1781521518588_qppiq35o",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude Agent实践要点速览\n\n**评级**: C (53.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: 人工智能\n**次类别**: AI Agent, 上下文工程\n**标签**: #Claude #Agent #RAG #Context Engineering #多Agent\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 4 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一条有一定线索价值的Agent趋势速览，但深度和证据支撑不足。\n**核心高价值点**: 将Agent可靠性从单纯prompt约束转向外部状态机、测试门禁和文件化真相源，是较有启发的工程思路。\n\n### 摘要\n作者回顾Claude技术博客中关于RAG、上下文工程、Agent脚手架、多Agent信息传递等演进方向，感叹Agent发展迅速，独立实现现代Agent的难度不断提高。\n\n### 知识要点\n- 传统RAG的chunking、embedding和BM25可能存在弱匹配问题，可通过为chunk添加上下文标签改善检索效果。\n- 长上下文并不等于可靠记忆，新增信息、工具过多和远距离依赖都会稀释模型注意力。\n- Agent可通过渐进式披露、JIT查询、外部文件持久化和subagent降低上下文压力。\n- 稳定Agent系统需要外部脚手架，例如状态机、流程约束、测试通过后继续执行和default fail机制。\n- 多Agent之间使用文件作为事实源，可能比纯对话传递信息更可靠。\n\n### 行动项\n- 根据文中提到的关键词回查Claude官方技术博客原文。\n- 整理Agent工程实践清单：contextual retrieval、context engineering、状态机脚手架、文件持久化、subagent。\n- 在自己的Agent项目中评估是否需要引入外部状态机和测试门禁，而不是仅依赖prompt规则。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是个人感想和概念罗列，缺少展开论证、实现细节和原始资料链接，适合作为线索而非系统学习材料。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1781521518589,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:e13f497680dd4c516e4ef73030611c9ada3b14cf8055d4e60376f05b8438f493",
+  "refs": {
+    "sessionId": "1781520924790_zrbiiedb"
+  },
+  "revisionId": "sha256:625597abadfa1de50edb487ae3880225f845890d259c3c55fd80c51e13bd2bc4",
+  "schemaVersion": 1,
+  "updatedAt": 1781521518589
+}

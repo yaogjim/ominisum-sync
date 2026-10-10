@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781518757229,
+  "entityType": "message",
+  "id": "1781518757228_obrhalxq",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: FanBox本地AI编码驾驶舱\n\n**评级**: B (57分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI编程工具\n**次类别**: 开发效率工具, 本地优先软件, GitHub项目\n**标签**: #AI Agent #Claude Code #Electron #本地开发 #文件管理 #终端集成\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 这是一个信息较全但偏营销化的AI编程工具介绍，适合了解产品能力，不太适合作为方法论深读材料。\n**核心高价值点**: 将文件浏览、真实终端、Agent变更可视化、Git diff和会话记忆收进同一窗口，解决AI Agent改了什么、在哪改、如何接手的问题。\n\n### 摘要\n文章是FanBox项目README，介绍一个面向Claude Code、Codex等Coding Agent的本地桌面驾驶舱，集成文件浏览、预览、终端、变更追踪、会话回放、Git diff、AI整理、用量统计等能力，强调本地优先、离线可用和零账号。\n\n### 知识要点\n- FanBox定位为Coding Agent驾驶舱，而非替代Finder或VS Code，核心链路是找回项目、预览文件、轻量编辑、指挥Agent和查看变更。\n- 产品采用Electron、node-pty、xterm.js、Monaco、Milkdown等技术栈，实现本地文件浏览、内嵌终端、代码/Markdown编辑和Git diff。\n- 安全与本地优先设计包括回环地址监听、Host校验、离线资源vendor、HTML沙箱预览、原子写配置、删除进系统废纸篓等。\n- 面向AI编程工作流的特色功能包括Agent写文件高亮、跟随模式、会话回放、变更收件箱、项目记忆、skills透视和用量统计。\n\n### 行动项\n- 如果正在使用Claude Code或Codex，可下载dmg试用，验证是否能减少Finder、终端、浏览器之间的切换成本。\n- 重点查看其变更追踪、Git diff、会话回放和项目记忆功能，评估是否适合作为AI Agent开发过程的可视化工作台。\n- 如从产品设计角度学习，可拆解其本地优先、安全边界、Agent态势感知和多皮肤视觉系统设计。\n\n### 存档判定\n归档: 是 — 原因: 可作为AI Coding Agent本地工作流与产品设计案例参考，尤其适合关注AI编程工具、Electron桌面应用和本地优先设计的人。\n删除: 否\n留存决策: 短期参考后按需保留",
+    "role": "assistant",
+    "timestamp": 1781518757229,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:bcc8ad6b4f4a6bcdafd79b3f397afbc2d6cebb4a1af391550de8b271447b6801",
+  "refs": {
+    "sessionId": "1781515863540_u71pym89"
+  },
+  "revisionId": "sha256:6d271c2e9d927eea6dd59ebde779ff3450a57fcfc2763b5b6714d563f0295d9a",
+  "schemaVersion": 1,
+  "updatedAt": 1781518757229
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780891964120,
+  "entityType": "session",
+  "id": "1780891964120_8yf43a96",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理当前工作中仍停留在AI-assisted的流程，找出可交给Agent执行和验证的环节。",
+      "尝试把调研文档、操作步骤或需求说明作为Agent上下文输入，让AI完成执行、纠错和交付。",
+      "为常见任务建立AI执行后的验证机制，如自动化测试、LLM eval、灰度数据或人工最终审核。"
+    ],
+    "archiveReason": "提供了AI-assisted到AI Native的层级划分和工作流重构视角，可作为思考AI工作方式升级的参考。",
+    "classifiedAt": 1780892474098,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI Native重构工作流",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI-assisted强调让AI生成内容或辅助人类，而AI Native强调围绕AI重新设计流程并让Agent执行结果。",
+      "作者提出Level 0到Level 4的AI使用成熟度模型：搜索优先、AI辅助、AI原生个人、Agent执行工作流、AI优先组织。",
+      "在AI Native流程中，人类更侧重目标设定、评估标准、架构判断和最终决策。"
+    ],
+    "oneHighValuePoint": "将低质量但方向正确的人类文档视为Agent可继续利用的上下文燃料，而非最终交付物。",
+    "oneLineReview": "观点有启发但证据偏弱，适合作为AI工作流升级的思路参考而非严谨方法论。",
+    "primaryCategory": "AI工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可选择性保留",
+    "secondaryCategories": [
+      "个人效率",
+      "组织转型"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章通过Obsidian配置案例说明AI Native不是简单用AI辅助，而是让Agent参与执行、验证和纠错，并提出从Search-first到AI-first organization的五级框架。",
+    "tags": [
+      "AI Native",
+      "Agent工作流",
+      "AI First",
+      "自动化执行",
+      "工作方式重构"
+    ],
+    "title": "AI Native 之后，世界不再奖励只会亲自做事的人",
+    "totalScore": 69,
+    "url": "https://x.com/Pluvio9yte/status/2063518008757432613"
+  },
+  "payloadHash": "sha256:63eda8505daa9b89c64f97f2f73536eddfcb944855dd586006351e713f5932be",
+  "refs": {},
+  "revisionId": "sha256:464c84d2ec385fbc54cf444019f9201638207dedc0fdecb41062b264ab893858",
+  "schemaVersion": 1,
+  "updatedAt": 1781170914035
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1781599287058,
+  "entityType": "session",
+  "id": "1781599287058_muusvdm2",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在重度使用 Claude Code，可打开 GitHub 仓库快速评估安装和使用成本。",
+      "关注其是否补充明确 user case、跨工具支持和检索质量实测。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781599613153,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Obelisk本地检索工具发布",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Obelisk 使用本地 SQLite 存储 session 数据，强调数据归用户所有。",
+      "工具支持查看 agent 记忆来源、归档过时记忆，并通过 recap 生成人周编码体验总结。",
+      "当前主要适配 Claude Code，后续可能支持 Codex、opencode 等工具。"
+    ],
+    "oneHighValuePoint": "将 Claude Code 历史 session 和 agent markdown 记忆统一沉淀为本地可检索资产。",
+    "oneLineReview": "一个有潜力的 AI 编程会话检索与记忆管理工具发布帖，但论证和实用细节不足。",
+    "primaryCategory": "AI编程工具",
+    "rating": "C",
+    "rejectReason": "内容主要是产品发布介绍，缺少完整用例、实测数据和方法论展开，信息价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent记忆管理",
+      "开发者工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Obelisk v0.1.0 发布，可为 Claude Code session 建立本地 SQLite 检索层，查看 agent 记忆、归档过时记忆，并生成每周 coding recap。目前主要支持 Claude Code。",
+    "tags": [
+      "Claude Code",
+      "Obelisk",
+      "本地检索",
+      "Agent Memory",
+      "SQLite"
+    ],
+    "title": "Yuu💖: 正式发布 obelisk v0",
+    "totalScore": 41.5,
+    "url": "https://x.com/QuantumTransf/status/2066362562568946035"
+  },
+  "payloadHash": "sha256:22d3e440d104d3823dfb8702e61407413abc625c15a6a4b43f6c374c4463f387",
+  "refs": {},
+  "revisionId": "sha256:39955f621cfba0aeea094f8f35679982150467c701d12e2c69211ab99bde4ace",
+  "schemaVersion": 1,
+  "updatedAt": 1781599613716
+}

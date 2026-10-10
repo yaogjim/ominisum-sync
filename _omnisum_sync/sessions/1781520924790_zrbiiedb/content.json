@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781520924790,
+  "entityType": "session-content",
+  "id": "1781520924790_zrbiiedb",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>水谷昴</strong></header><div class=\"tw-body\">前几天新模型发布，加上也在敲打自己的agent，也是赶巧挑了一点时间从头到尾翻看了一下Claude的技术博客，其实是有点感触的.<br><br>挑几个典型的说，比如从24年提出传统rag 的chunking再embedding和BM25会弱匹配，于是提出给每段chunking加上contextual的标签.<br><br>又到context engineering面对的困境（比如虽然window是200k，但self attention等原因会导致只要加入新的信息模型就会难以维持远距离信息的关系，太多模糊的工具会稀释模型注意力....），以及提出了渐进式披露，jit查询信息源，利用外部文件做持久化，subagent等等策略<br><br>再到长任务会context anxiety，于是设计可供agent稳定使用的脚手架（我觉得此harness非彼harness），比如在agent外部环境设计状态机，强制用代码规定agent必须按流程执行并达成目标通过测试（default fail），才能继续，而不是只把规则写在prompt里让agent自己监守自盗，以及用文件作为真相在多agent间传递信息而不是对话.........等等等等<br><br>越看其实越感觉agent现在的发展太快太快了，短短两年从初代的swe agent到现在想要自己独立写一个具有各种现代功能的agent已经很难了，特别是看着codex天天发版更是越来越感觉道阻且艰<br><br>不知道怎么说，计算机确实是这样的一个学科，但agent确实是一个很有意思的方向，还是想尽力跟进的</div></article>",
+    "pageContent": "水谷昴: 前几天新模型发布，加上也在敲打自己的agent，也是赶巧挑了一点时间从头到尾翻看了一下Claude的技术博客，其实是有点感触的. 挑几个典型的说，比如从24年提出传统rag 的chunking再embedding和BM25会弱匹配，于是提出给每段chunking加上contextual的标签. 又到context engineering面对的困境（比如虽然window是200k，但self attention等原因会导致只要加入新的信息模型就会难以维持远距离信息的关系，太多模糊的工具会稀释模型注意力....），以及提出了渐进式披露，jit查询信息源，利用外部文件做持久化，subagent等等策略 再到长任务会context anxiety，于是设计可供agent稳定使用的脚手架（我觉得此harness非彼harness），比如在agent外部环境设计状态机，强制用代码规定agent必须按流程执行并达成目标通过测试（default fail），才能继续，而不是只把规则写在prompt里让agent自己监守自盗，以及用文件作为真相在多agent间传递信息而不是对话.........等等等等 越看其实越感觉agent现在的发展太快太快了，短短两年从初代的swe agent到现在想要自己独立写一个具有各种现代功能的agent已经很难了，特别是看着codex天天发版更是越来越感觉道阻且艰 不知道怎么说，计算机确实是这样的一个学科，但agent确实是一个很有意思的方向，还是想尽力跟进的"
+  },
+  "payloadHash": "sha256:a9ccfe75b8670e421d892de001e5beed7f02a9898ff76b73a9e90e0db7377a87",
+  "refs": {},
+  "revisionId": "sha256:dd279a386060ed3ca517ced868bb34970aee0b0956146e1b0487650590a48471",
+  "schemaVersion": 1,
+  "updatedAt": 1781521518815
+}

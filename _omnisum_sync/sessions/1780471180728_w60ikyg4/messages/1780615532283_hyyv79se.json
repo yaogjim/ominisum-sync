@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780615532284,
+  "entityType": "message",
+  "id": "1780615532283_hyyv79se",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Pi Agent定位与适用场景\n\n**评级**: B (68分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent开发工具\n**次类别**: Coding Agent, 开发框架选型\n**标签**: #Pi Agent #coding harness #上下文工程 #Agent框架 #多模型\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一篇有一定参考价值的Pi Agent快速导览，但证据和实测深度不足。\n**核心高价值点**: 将Pi Agent的核心价值归纳为上下文工程优先，而非通用多Agent编排。\n\n### 摘要\n文章将Pi Agent定位为极简、可定制的terminal coding agent harness，强调上下文工程、session tree、多运行模式和多模型支持，并对比其与LangGraph、OpenAI Agents SDK等框架的适用场景。\n\n### 知识要点\n- Pi Agent更适合作为可自定义的本地coding agent harness，而不是企业级业务流程Agent框架\n- 其关键能力包括AGENTS.md、SYSTEM.md、skills、prompt templates、动态context injection和可自定义compaction\n- session tree适合代码任务中的分支探索、回滚和长期session管理\n- Pi支持interactive、print/JSON、RPC、SDK等多种运行模式，便于终端使用和上层集成\n- 企业级AI SaaS或结构化业务Agent仍更适合选择OpenAI Agents SDK、LangGraph或Pydantic AI等工具\n\n### 行动项\n- 查看earendil-works/pi主仓库，验证其核心模块和扩展机制\n- 对比Pi Agent、Claude Code、Codex CLI在本地代码库改造中的上下文管理能力\n- 尝试为一个现有项目配置AGENTS.md、skills和prompt templates\n- 评估session tree和compaction机制是否适合长期coding session管理\n\n### 存档判定\n归档: 是 — 原因: 对Pi Agent的定位、核心能力、适用与不适用场景有较清晰概括，可作为后续调研入口\n删除: 否\n留存决策: 短期参考后可保留，用于Agent框架选型和工具调研",
+    "role": "assistant",
+    "timestamp": 1780615532284,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:91e07763e5664e811a748f131cf6e0df1ecd11a42efc3f344a5e97a9cae4df22",
+  "refs": {
+    "sessionId": "1780471180728_w60ikyg4"
+  },
+  "revisionId": "sha256:9d4d40db5961d7378069619a3efd49a2e4bcbcff7870a7e4fc21e35e04cf708e",
+  "schemaVersion": 1,
+  "updatedAt": 1780615532284
+}

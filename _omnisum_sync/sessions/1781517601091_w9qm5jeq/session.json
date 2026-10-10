@@ -1,0 +1,72 @@
+{
+  "createdAt": 1781517601091,
+  "entityType": "session",
+  "id": "1781517601091_w9qm5jeq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注AI设计生产力，可先按Quick Start安装桌面版或Docker版进行小范围试用。",
+      "用一个真实品牌DESIGN.md和简单落地页需求测试其产物质量、可编辑性和导出效果。",
+      "检查项目Issue、Release和代码活跃度，确认功能是否成熟而非主要停留在宣传层面。",
+      "若团队使用Cursor、Claude Code或Codex，可测试MCP集成是否能融入现有开发流程。"
+    ],
+    "archiveReason": "包含项目定位、安装方式、架构、插件体系和设计系统说明，若关注AI设计工作流或Agent工具集成，可作为工具调研资料归档。",
+    "classifiedAt": 1781518470035,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Open Design项目评估",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Open Design采用本地优先架构，支持macOS、Windows、可选Linux，并通过BYOK或多CLI Agent运行设计生成流程。",
+      "项目提供100+技能、150个设计系统和261个插件，支持HTML、PDF、PPTX、MP4等多种产物导出。",
+      "MCP服务器让Claude Code、Cursor、Codex、Copilot等Agent访问项目文件、设计系统和生成产物。",
+      "DESIGN.md作为品牌契约，定义颜色、字体、间距、组件、动效、语气和反模式等设计规范。",
+      "README包含安装、Docker部署、本地开发、插件开发、贡献流程和架构概览。"
+    ],
+    "oneHighValuePoint": "将设计系统、Agent Skills、插件和MCP结合，让本地编码Agent直接生成和迭代可导出的设计产物。",
+    "oneLineReview": "适合作为AI设计工具调研入口，但需要实际试用验证其稳定性与宣传真实性。",
+    "primaryCategory": "AI设计工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后按需保留",
+    "secondaryCategories": [
+      "开源项目",
+      "Agent工作流",
+      "设计工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章是Open Design项目README，介绍其作为本地优先、开源Claude Design替代品的功能、安装、MCP集成、插件、设计系统、导出能力和架构。信息量较大但宣传成分明显，证据主要来自项目自述。",
+    "tags": [
+      "Open Design",
+      "Claude Design替代",
+      "MCP",
+      "本地优先",
+      "设计系统",
+      "AI Agent"
+    ],
+    "title": "nexu-io/open-design: 🎨 Local-first, open-source Claude Design alternative. 🖥️ Native desktop app. ⚡ 259+ Skills · ✨ 142+ Design Systems 🖼️ Web · desktop · mobile prototypes · slides · images · videos · HyperFrames 📦 Sandboxed preview · HTML/PDF/PPTX/MP4 export 🤖 Claude Code / OpenClaw / Codex / Cursor / OpenCode / Qwen / Copilot / Hermes / Kimi & 17+ CLIs.",
+    "totalScore": 64.5,
+    "url": "https://github.com/nexu-io/open-design"
+  },
+  "payloadHash": "sha256:43381fc8b0df57fbc4ef703801140d69cf14c40591a3ddbf3da9f2df27bb6526",
+  "refs": {},
+  "revisionId": "sha256:5a7570b71520cd2abd281def6e4e7d2166b2c32c83c080608118fd954f0666ef",
+  "schemaVersion": 1,
+  "updatedAt": 1781519584830
+}

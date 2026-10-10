@@ -1,0 +1,66 @@
+{
+  "createdAt": 1781517604421,
+  "entityType": "session",
+  "id": "1781517604421_ej3wd8vl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在 AI 编程提示词中加入“优先使用成熟库或框架，不要从零实现”的约束",
+      "对 LLM 生成的自研实现进行压力测试，尤其测试复杂层级、边界数据和规模扩展场景"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781518495873,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "提示LLM优先使用成熟库",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "LLM 在复杂布局、图形绘制等任务中从零实现容易出现边界问题",
+      "成熟库和框架能显著降低 AI 生成代码的失败率",
+      "AI 编程提示中加入技术选型约束可提升结果质量"
+    ],
+    "oneHighValuePoint": "在提示 LLM 开发功能时，应主动要求其优先调研和使用成熟库，而不是默认从零实现。",
+    "oneLineReview": "一个实用但较浅的 AI 编程提示，价值主要在于提醒避免让模型重复造轮子。",
+    "primaryCategory": "AI编程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "提示词技巧",
+      "软件开发效率"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章通过一个用 Codex 复刻思维导图的案例，指出让 LLM 从零自绘复杂布局容易出错，应明确提示其优先采用成熟第三方库或框架，以提升 AI 编程的效率和成功率。",
+    "tags": [
+      "vibe coding",
+      "LLM",
+      "成熟库",
+      "Codex",
+      "原型开发"
+    ],
+    "title": "LinearUncle: vibe coding 技巧：让 LLM 优先选用成熟库或框架，而不是从零裸写",
+    "totalScore": 55,
+    "url": "https://x.com/LinearUncle/status/2066035590924238915"
+  },
+  "payloadHash": "sha256:62544c2a12b51451908b9c23f09a0f88ae61081e32cc59f53d08eead767c5226",
+  "refs": {},
+  "revisionId": "sha256:d31004d2e18e81e1084e574c7326b94455c99c3f4b4e6336406abb4624d7ff31",
+  "schemaVersion": 1,
+  "updatedAt": 1781519552648
+}

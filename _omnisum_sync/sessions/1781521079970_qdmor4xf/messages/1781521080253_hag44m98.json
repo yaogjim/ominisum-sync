@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781520879438,
+  "entityType": "message",
+  "id": "1781521080253_hag44m98",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章总结：用同一个 Prompt 测试各大 LLM 的前端生成能力\n\n## 核心观点\n\n作者分享了一个自己认为“最强的 LLM 面试官 Prompt”，用于测试不同大模型在 **一次性生成 HTML 页面** 时的能力表现。\n\n测试主题是：**“皇后镇景色特点 tree.js”**。  \n作者将同一个较长 Prompt 分别投喂给不同 LLM，不做追加提示，直接比较它们输出的 HTML 源码与最终效果。\n\n## 测试方法\n\n- 使用统一 Prompt，保证标准一致。\n- 每个模型只调用一次，属于 **one-shot 测试**。\n- 对比内容主要是：\n  - HTML / DOM 结构复杂度\n  - 页面渲染效果\n  - 是否能正常运行\n  - 控制台是否报错\n  - 响应速度与稳定性\n\n## 各模型表现\n\n### Claude 3 Opus\n\n从评论反馈看，Claude 3 Opus 效果较好。  \n有人指出它生成的 DOM 元素数量比其他模型多约 30%，说明内容更丰富、结构更细。\n\n### Grok\n\n作者评价 Grok 初看效果不错，虽然控制台有一个错误，但整体能够运行。\n\n### GPT\n\nGPT 表现相对中规中矩，没有特别突出，也没有明显翻车。\n\n### Fable\n\nFable 生成的元素更多一些，可能在页面细节和结构丰富度上更积极。\n\n### Gemini 3.5 Flash\n\n速度最快，但作者提到结果“搞半天不刷新出来”，说明虽然响应快，但实际渲染或稳定性存在问题。\n\n## 热门评论观点\n\n评论区普遍认可这种测试方式：\n\n- **统一标准，结果说话**，不同模型能力差异会比较直观。\n- 这种复杂前端生成任务可能非常消耗 token。\n- 有人建议作者升级调用的 AI，以获得更好效果。\n\n## 简要结论\n\n这篇内容本质上是在用一个复杂 Prompt 对大模型进行“前端生成能力面试”。\n\n它体现出几个关键信息：\n\n1. **同一个 Prompt 下，不同 LLM 的执行质量差异明显。**\n2. **Claude 3 Opus 在复杂 HTML / DOM 生成上可能更强。**\n3. **速度快不等于效果好，Gemini Flash 就是典型例子。**\n4. **one-shot 前端生成是检验 LLM 综合能力的有效方式**，能同时测试理解、规划、代码生成、视觉表达和运行稳定性。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781520879438,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:766fca0e083497cb43ef216110b0139f8a528268930fffc01624fbf05e9935e5",
+  "refs": {
+    "sessionId": "1781521079970_qdmor4xf"
+  },
+  "revisionId": "sha256:949083fa6ac2aaac443a014d2a0afba1abb81bfc16bce491ad0b7b8cb6520140",
+  "schemaVersion": 1,
+  "updatedAt": 1781520879438
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781521913247,
+  "entityType": "message",
+  "id": "1781521937613_8fyh4w8q",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\nPeter Steinberger 提出一种用 **Codex 自动维护代码库** 的工作流：通过定时循环运行、任务分配和多种“技能”组合，让部分开发与维护工作可以自动化、并行化完成。\n\n## 1. 基本思路：让 Codex 定期维护代码库\n\n- 核心做法是建立一个简单循环：  \n  **每 5 分钟运行一次 Codex**，检查代码库中的任务并进行处理。\n- Codex 会把工作分配到不同的“线程”中，方便同时处理多个任务。\n- 这样可以根据需要快速扩展工作量，实现并行化执行。\n\n## 2. 工作方式：通过协调者分配任务\n\n- 作者使用了“协调者技能”（coordinator skill）。\n- 这个协调者类似一个任务调度员：\n  - 判断有哪些任务需要处理；\n  - 将任务分类；\n  - 分配给合适的处理流程或线程；\n  - 推动多个任务并行进行。\n\n## 3. 自动化能力：分类、审核与计算机操作结合\n\n作者将多个能力组合使用，让 Codex 可以自主完成部分工作：\n\n- **分类筛选**：自动判断 GitHub 项目或 issue 的类型、优先级、归属等。\n- **自动审核**：对某些变更或任务进行初步检查。\n- **计算机使用技能**：让 Codex 能执行更接近真实开发环境中的操作。\n\n这些能力组合后，可以让一些代码库维护工作不再完全依赖人工介入。\n\n## 4. 具体案例与参考链接\n\n- 作者分享了一个 GitHub 技能配置示例：  \n  [github-project-triage/SKILL.md](https://github.com/steipete/agent-scripts/blob/main/skills/github-project-triage/SKILL.md)\n- 该示例展示了如何让 AI 代理对 GitHub 项目进行分类和任务整理。\n\n## 总结\n\n这条内容的重点是：通过 **定时运行 Codex + 任务协调 + 自动分类审核等技能**，可以构建一个持续维护代码库的 AI 工作流，让部分开发管理任务自动化、并行化执行。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781521913247,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4f403fd8102106c03120d43a3713241acb7530dbdc0ec545f45366ef43e1ec99",
+  "refs": {
+    "sessionId": "1781520972315_ci4ntf85"
+  },
+  "revisionId": "sha256:ee34922f75559e43305c7fb9eab9ea41f5da1e8f002869bcd15e4f3b81f43202",
+  "schemaVersion": 1,
+  "updatedAt": 1781521913247
+}

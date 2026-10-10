@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781052380795,
+  "entityType": "message",
+  "id": "1781052380794_ansvqva4",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: DeepAgents模型配置提示\n\n**评级**: C (53分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI开发工具\n**次类别**: LangChain, Agent工程\n**标签**: #DeepAgents #Harness Profile #模型适配 #工具配置 #Codex\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 一个有启发的 Agent 工具适配小技巧，但信息量和论证深度有限。\n**核心高价值点**: 按模型维护不同 Harness Profile，可自动切换提示词和工具命名，减少多模型适配心智负担。\n\n### 摘要\n文章指出 LangChain DeepAgents 的 Harness Profile 可按不同模型自动切换提示词和工具，例如将 GPT-5.5 的文件编辑与执行工具映射为更接近 Codex 的工具形式，降低模型适配成本。\n\n### 知识要点\n- DeepAgents Harness Profile 支持为不同模型配置不同提示词和工具集。\n- 通过将 edit_file 映射为 apply_patch、execute 映射为 shell_command，可让 GPT-5.5 更接近 Codex 的使用方式。\n- pi 环境中可使用 npm:@howaboua/pi-codex-conversion 扩展实现类似 Codex harness。\n\n### 行动项\n- 如果正在使用 LangChain DeepAgents，可调研 Harness Profile 的配置方式。\n- 为常用模型建立独立工具映射配置，测试是否能降低调用错误和适配成本。\n\n### 存档判定\n归档: 否\n不推荐: 内容较短，主要是单点经验分享，缺少完整配置示例、背景说明和效果验证。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1781052380795,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:d81ac926b42ff65f8b60071df2ed740b8022e65a139c4a58f46b0d2d4df02dbd",
+  "refs": {
+    "sessionId": "1781000822881_yvxczvxy"
+  },
+  "revisionId": "sha256:7834fecb5740fe1ba626cd74f17f6d9b80cfd6b64f335bf8ed6ef5f9e0031367",
+  "schemaVersion": 1,
+  "updatedAt": 1781052380795
+}

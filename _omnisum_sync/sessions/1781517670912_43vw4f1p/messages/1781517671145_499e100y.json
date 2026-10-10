@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781517501332,
+  "entityType": "message",
+  "id": "1781517671145_499e100y",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# CCOnline 技术架构要点总结\n\n## 核心定位\n\nCCOnline 是一个类似「在线版 Claude Code」的运行环境，用户可以在浏览器里通过终端交互，让 AI 执行代码生成、项目修改、预览和部署等操作。\n\n它的复杂点不只是“把 Claude Code 搬到网页上”，而是要解决一整套在线开发环境的问题。\n\n## 技术架构核心：存算分离\n\n项目的关键设计是 **存算分离**：\n\n- **存储层**：用户的项目文件、生产资料等放在 Cloudflare R2 这类对象存储中。\n- **计算层**：Cloudflare Sandbox 只作为临时运行容器使用，而不是长期常驻环境。\n\n这样做的好处是：\n\n- 降低长期运行成本\n- 提高资源弹性\n- 用户数据更容易持久化和管理\n- Sandbox 可以按需创建、执行、销毁\n\n## 请求与交互链路\n\n用户在浏览器中通过一个仿真终端操作，通常会使用类似 `xterm.js` 的组件。\n\n大致链路是：\n\n1. 用户在网页终端输入指令\n2. 指令通过 WebSocket 发送到后端或 Sandbox\n3. Sandbox 执行 AI 编程、命令运行、工具调用等任务\n4. 执行日志、错误、进度、结果再通过 WebSocket 实时返回前端\n\n因此，WebSocket 是保证实时交互体验的关键。\n\n## Sandbox 的角色\n\nCloudflare Sandbox 在这里不是一个长期运行的服务器，而是一个临时容器。\n\n它需要内置：\n\n- ShipAny 项目模板\n- 相关开发技能或 skills\n- Claude Code / AI 编程运行所需环境\n- 项目构建、预览、部署相关能力\n\n用户每次操作时，Sandbox 负责临时承载计算任务，完成后数据再回写到持久化存储。\n\n## 主要复杂点\n\n这个项目真正难的地方在于工程化闭环，包括：\n\n### 1. 计费\n\n需要根据用户使用的计算资源、存储、执行时长、调用次数等设计计费模型。\n\n### 2. 预览\n\nAI 修改项目后，用户需要能实时预览运行效果。\n\n### 3. 部署\n\n不仅要能生成代码，还要支持一键部署到线上环境。\n\n### 4. 安全与防注入\n\n因为用户指令会进入执行环境，所以必须防止恶意命令、提示注入、代码注入、越权访问等风险。\n\n## 一句话总结\n\nCCOnline 的本质是一个基于 WebSocket 实时交互、以 Cloudflare Sandbox 承载临时计算、以 R2 存储用户资产的在线 AI 编程环境；核心难点在于存算分离、实时执行、安全隔离、计费、预览和部署的完整工程化闭环。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781517501332,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:adcafcff0bbab7bbdc27d61d35d3eab38a96a8e3093b86c3e91a571cb1513935",
+  "refs": {
+    "sessionId": "1781517670912_43vw4f1p"
+  },
+  "revisionId": "sha256:c16af1de596ba935c8e565f3f41e6e3902e6dc688fc4fdb14e416e3b74bcc607",
+  "schemaVersion": 1,
+  "updatedAt": 1781517501332
+}

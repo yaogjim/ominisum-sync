@@ -1,0 +1,69 @@
+{
+  "createdAt": 1781599401245,
+  "entityType": "session",
+  "id": "1781599401245_6lsoik2p",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "参考 Plan/Subagent/Loop/Goal 四分法，梳理自己当前 AI 编程任务的工作流结构。",
+      "在大型代码审计、迁移或多 bug 排查场景中，小规模试验并行 subagent 工作方式。",
+      "如需深入实践，可查看文中提到的 fireworks-design 仓库，但需自行验证其效果。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781599702696,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "动态工作流多代理协作框架",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Plan 负责定义任务步骤和执行顺序，是多代理协作中的共享契约。",
+      "Subagent 适合隔离上下文并行执行独立任务，主代理主要承担协调职责。",
+      "Loop 用于长任务的阶段性推进，但依赖已有计划，不直接创造任务进展。",
+      "Goal 可作为模型选择和预算控制层，对不同子任务进行成本路由。"
+    ],
+    "oneHighValuePoint": "将 Plan、Subagent、Loop、Goal 分别对应执行蓝图、执行单元、时间推进和成本路由，有助于理解复杂 Agent 工作流的拆分方式。",
+    "oneLineReview": "有一定启发性的多代理工程范式梳理，但证据和实操细节不足，更适合快速浏览。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "C",
+    "rejectReason": "内容偏概念介绍和经验分享，缺少完整实现细节、量化结果和可验证案例，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "多代理协作",
+      "AI辅助编程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍用动态工作流调度大量子代理并行完成复杂编码任务，提出 Plan、Subagent、Loop、Goal 四类组件及其分工，并列举不同规模任务下的协作模式。",
+    "tags": [
+      "Dynamic Workflow",
+      "Subagent",
+      "Plan",
+      "Loop",
+      "Goal",
+      "Claude Code"
+    ],
+    "title": "怎么烧 token 系列？（1）用 Dynamic Workflow让 100+agent 并行工作",
+    "totalScore": 54.5,
+    "url": "https://x.com/teach_fireworks/status/2066507706505277593?s=46&t=bx0WG1AGHlEB9ipAHDEpnw"
+  },
+  "payloadHash": "sha256:a29e3453c8dc7cc543fc046a8cd3f32ec7be6922a26bd6ec49e062e262b8ba22",
+  "refs": {},
+  "revisionId": "sha256:a5189b8c85e8fa708096eb135381bfaae668d19061d6289264bfb1849865c1ff",
+  "schemaVersion": 1,
+  "updatedAt": 1781599704040
+}

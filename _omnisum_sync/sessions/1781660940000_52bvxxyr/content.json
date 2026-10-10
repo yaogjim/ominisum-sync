@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781660940000,
+  "entityType": "session-content",
+  "id": "1781660940000_52bvxxyr",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Impeccable</strong></header><div class=\"tw-body\">Impeccable 3.7 为设计带来了代码检查。<br><br>到目前为止，这一直是一项需要你寻求帮助的技能。现在，它是一个设计系统感知型的反馈循环，在你的代理构建过程中运行，能够在“疏漏”和设计偏差造成影响之前捕捉到它们。<br><br> 🪝 为 Claude、Codex 和 Cursor 设计钩子<br>它们在每次用户界面（UI）编辑后运行，并悄无声息地提醒你的代理修复不规范和偏差问题。输出不是又一堆无用信息：它将新发现与已发现的内容区分开，标记干净的扫描结果，并要求代理运用判断。修复实际问题，保留有意的演示内容，将异常保存到配置中，而不是在你的源代码中随意添加。<br><br>🎨 容差检测现在支持项目感知<br>从 DESIGN.md 中读取您实际的设计系统，包括排版、调色板、圆角比例和设计令牌，并标记与您系统的偏差，而非仅仅是通用的 AI 生成内容。<br>这种字体不在你的设计系统中<br>这个颜色不在您的文档调色板中<br>这个半径与您的圆角比例不匹配<br>同一个引擎驱动着 Hooks 和 CLI，而这正是我们下一步投资的方向。<br><br>🖥️ 实时模式，已准备好用于实际项目<br>Svelte/SvelteKit 现在可以将变体作为带有实时参数的临时框架组件进行预览，然后干净地回收到您的源组件中。手动文本编辑会保留证据/应用/丢弃路由，插入操作会保留其锚点，并且映射列表和 JSX 插槽的清理更加可靠。<br><br>⚡ 更精简的核心，更敏锐的探测器<br>规则级评估在 3 个提供方和 4 个领域中削减了无明显提升的指导，并删除了曾向模型传授不良模式的示例。该检测器现在会跳过隐藏元素和仅屏幕阅读器可见的元素，理解 OKLCH alpha 和类似 Sass 的输入，并加强了对重复强调元素、过大的 H1、溢出截断和填充过紧的检查。<br><br>🛠️ CLI 已追赶上<br>impeccable 的检测功能默认加载 DESIGN.md，运动发现命名确切的 token 或 cubic-bezier，而不仅仅是“bounce”。并且 impeccable 的忽略功能为异常提供真正的 CRUD 操作。Hooks 和 CLI 共享相同的忽略项。没有分裂脑配置。此外，还有一个大幅改进的交互式安装程序，内置钩子设置。<br><br>升级:<br>npx impeccable 安装<br>npm 安装 -g  impeccable</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/amplify_video_thumb/2066821166325702656/img/utWyQIG2-fYeMZv-.jpg\" alt=\"图片\" /></div><div class=\"tw-videos\"><a href=\"https://x.com/impeccable_ai/status/2066890036646449455\"><img src=\"https://pbs.twimg.com/amplify_video_thumb/2066821166325702656/img/utWyQIG2-fYeMZv-.jpg\" alt=\"视频\" /></a></div></article>",
+    "pageContent": "Impeccable: Impeccable 3.7 为设计带来了代码检查。 到目前为止，这一直是一项需要你寻求帮助的技能。现在，它是一个设计系统感知型的反馈循环，在你的代理构建过程中运行，能够在“疏漏”和设计偏差造成影响之前捕捉到它们。 为 Claude、Codex 和 Cursor 设计钩子\n它们在每次用户界面（UI）编辑后运行，并悄无声息地提醒你的代理修复不规范和偏差问题。输出不是又一堆无用信息：它将新发现与已发现的内容区分开，标记干净的扫描结果，并要求代理运用判断。修复实际问题，保留有意的演示内容，将异常保存到配置中，而不是在你的源代码中随意添加。 容差检测现在支持项目感知\n从 DESIGN.md 中读取您实际的设计系统，包括排版、调色板、圆角比例和设计令牌，并标记与您系统的偏差，而非仅仅是通用的 AI 生成内容。\n这种字体不在你的设计系统中\n这个颜色不在您的文档调色板中\n这个半径与您的圆角比例不匹配\n同一个引擎驱动着 Hooks 和 CLI，而这正是我们下一步投资的方向。 实时模式，已准备好用于实际项目\nSvelte/SvelteKit 现在可以将变体作为带有实时参数的临时框架组件进行预览，然后干净地回收到您的源组件中。手动文本编辑会保留证据/应用/丢弃路由，插入操作会保留其锚点，并且映射列表和 JSX 插槽的清理更加可靠。 更精简的核心，更敏锐的探测器\n规则级评估在 3 个提供方和 4 个领域中削减了无明显提升的指导，并删除了曾向模型传授不良模式的示例。该检测器现在会跳过隐藏元素和仅屏幕阅读器可见的元素，理解 OKLCH alpha 和类似 Sass 的输入，并加强了对重复强调元素、过大的 H1、溢出截断和填充过紧的检查。 CLI 已追赶上\nimpeccable 的检测功能默认加载 DESIGN.md，运动发现命名确切的 token 或 cubic-bezier，而不仅仅是“bounce”。并且 impeccable 的忽略功能为异常提供真正的 CRUD 操作。Hooks 和 CLI 共享相同的忽略项。没有分裂脑配置。此外，还有一个大幅改进的交互式安装程序，内置钩子设置。 升级:\nnpx impeccable 安装\nnpm 安装 -g impeccable\n![图片](https://pbs.twimg.com/amplify_video_thumb/2066821166325702656/img/utWyQIG2-fYeMZv-.jpg)\n[![视频](https://pbs.twimg.com/amplify_video_thumb/2066821166325702656/img/utWyQIG2-fYeMZv-.jpg)](https://x.com/impeccable_ai/status/2066890036646449455)"
+  },
+  "payloadHash": "sha256:940bc7da8be4be78aef4a0357e4dc96156a30b6a7c4924c2d95e24f26f7433a6",
+  "refs": {},
+  "revisionId": "sha256:9d4cd8818e86f5e8195ecd5b02cc371b9bd76c3469931c1034faa31aa17e82da",
+  "schemaVersion": 1,
+  "updatedAt": 1781662563671
+}

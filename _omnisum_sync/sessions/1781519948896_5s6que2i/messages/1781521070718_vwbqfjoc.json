@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781520879438,
+  "entityType": "message",
+  "id": "1781521070718_vwbqfjoc",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# CJ Zafir：通过“模型分工”减少 50% Claude Code 消耗\n\n## 核心结论\n\nCJ Zafir 分享了一种使用 Claude Code 的省额度方法：  \n**让 Claude 负责规划与审核，让 Codex 负责具体执行**，从而将每周 Claude Code 使用限制消耗降低约 **50%**。\n\n---\n\n## 具体做法\n\n### 1. 在 Claude Code 中安装 OpenAI Codex 插件\n\n最简单的方法是：  \n**直接让 Claude 安装官方 Codex 插件**。\n\n### 2. 按任务阶段分配模型\n\n他的推荐工作流是：\n\n- **Claude Fable 5 High：用于规划**\n- **Codex 5.5 xhigh：用于执行**\n- **Claude Fable 5 Max：用于审核**\n\n也就是：\n\n> Claude 做高层思考和质量把关，Codex 负责落地写代码。\n\n---\n\n## 背后的思路\n\n### 模型不是全程都要用最贵的\n\n软件开发任务可以拆成三类：\n\n1. **规划：理解需求、设计方案**\n2. **执行：写代码、改文件、跑流程**\n3. **审核：检查质量、发现问题**\n\n其中，规划和审核更依赖强推理与上下文理解；  \n执行阶段则可以交给成本更低或额度更充足的模型完成。\n\n---\n\n## 关键讨论\n\n### 质量是否会下降？\n\n热门回复指出，这种方式本质是：\n\n> Claude 负责思考，Codex 负责执行。\n\n但问题在于：  \n**最终质量是更好，还是只是更便宜？**\n\nCJ 的观点是：如果要高质量结果，必须有一个强大的“编排器”掌控项目，可以是 Claude，也可以是 Codex。\n\n---\n\n## 执行模型的替代选择\n\nCJ 还提到，执行阶段不一定只能用 Codex，也可以尝试其他模型，例如：\n\n- DeepSeek v4 Pro\n- MiMo v2.5\n- MiniMax 3\n- GLM 5.1\n- Qwen 3.6 Max\n\n核心不是绑定某个模型，而是建立一套：\n\n> 强模型规划 / 审核 + 其他模型执行 的手动路由机制。\n\n---\n\n## 产品视角总结\n\n这条分享的价值不在于某个具体插件，而在于一种 AI 使用范式：\n\n### 从“单模型全包”转向“多模型协作”\n\n过去是一个模型从头做到尾；  \n现在更高效的方式是根据任务类型进行模型分工：\n\n- 高价值环节用最强模型\n- 重复执行环节用更经济模型\n- 最后再用强模型做质量控制\n\n这类似产品和工程团队里的分工：  \n**架构师定方案，工程师执行，负责人验收。**\n\n---\n\n## 一句话总结\n\n通过在 Claude Code 中接入 Codex，并让 Claude 负责规划和审核、Codex 负责执行，可以在保持质量控制的同时，显著降低 Claude Code 的额度消耗。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781520879438,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:245ec7cc6bbe0d11bfc031c46789d3116ea733a38ab7c774953855a88063d25c",
+  "refs": {
+    "sessionId": "1781519948896_5s6que2i"
+  },
+  "revisionId": "sha256:d974ceb65caecc4d1dc1ee1ec9ab5cf0738cad6ffb0f2c11e94cf054fc3707b5",
+  "schemaVersion": 1,
+  "updatedAt": 1781520879438
+}

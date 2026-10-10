@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781521009462,
+  "entityType": "session-content",
+  "id": "1781521009462_zqn1avjf",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>kejun</strong></header><div class=\"tw-body\">传统 UI 注定会被「生成式 UI」取代，只不过它不是消息流中的一张「卡片」，这两天做了一个探索（数据都是Mock的）<br><br>1. 交互模式：用户的顺序式操作 / 固定的界面 → Agent 驱动的事件流，界面按需生成 / 销毁<br>2. 状态管理：前端单向状态管理 / 后端仅持久化 → 前端与 Agent 共享状态，双向同步且可冲突调和<br>3. 输出方式：静态页面 + 局部异步刷新 → 动态组件树、流式语音/视频、思考链可视化、可中断提示<br>4. 任务模式：规定流程，用户必须遍历步骤 → AI 自主规划子任务、多步执行与人机中断/回退<br>5. 可观测性：仅记录用户行为→ 全面记录 Agent 思考、规划、工具调用、审批链，支持审计与重放<br>6. 安全模式：基于用户权限的接口调用 → 基于 Agent 能力边界的沙盒渲染与操作指令校验</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/amplify_video_thumb/2065003113233489921/img/ruivmJJl3MvBfVij.jpg\" alt=\"图片\" /></div><div class=\"tw-videos\"><a href=\"https://x.com/kejunz/status/2065005648060797155\"><img src=\"https://pbs.twimg.com/amplify_video_thumb/2065003113233489921/img/ruivmJJl3MvBfVij.jpg\" alt=\"视频\" /></a></div></article>",
+    "pageContent": "kejun: 传统 UI 注定会被「生成式 UI」取代，只不过它不是消息流中的一张「卡片」，这两天做了一个探索（数据都是Mock的） 1. 交互模式：用户的顺序式操作 / 固定的界面 → Agent 驱动的事件流，界面按需生成 / 销毁\n2. 状态管理：前端单向状态管理 / 后端仅持久化 → 前端与 Agent 共享状态，双向同步且可冲突调和\n3. 输出方式：静态页面 + 局部异步刷新 → 动态组件树、流式语音/视频、思考链可视化、可中断提示\n4. 任务模式：规定流程，用户必须遍历步骤 → AI 自主规划子任务、多步执行与人机中断/回退\n5. 可观测性：仅记录用户行为→ 全面记录 Agent 思考、规划、工具调用、审批链，支持审计与重放\n6. 安全模式：基于用户权限的接口调用 → 基于 Agent 能力边界的沙盒渲染与操作指令校验\n![图片](https://pbs.twimg.com/amplify_video_thumb/2065003113233489921/img/ruivmJJl3MvBfVij.jpg)\n[![视频](https://pbs.twimg.com/amplify_video_thumb/2065003113233489921/img/ruivmJJl3MvBfVij.jpg)](https://x.com/kejunz/status/2065005648060797155)"
+  },
+  "payloadHash": "sha256:4e4a1c8bd26d5defa845d47b804277c9f63cc7a9ee419a7a23b2ceb507b23037",
+  "refs": {},
+  "revisionId": "sha256:d68e2cb6da4d7f11e9ce5f3a6257df7da2b9f6e78401e0837b659a0f11d8ac38",
+  "schemaVersion": 1,
+  "updatedAt": 1781521593369
+}

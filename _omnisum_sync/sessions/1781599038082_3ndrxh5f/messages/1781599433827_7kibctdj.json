@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781599433828,
+  "entityType": "message",
+  "id": "1781599433827_7kibctdj",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Postbridge CLI走红\n\n**评级**: D (28分)  |  **深度阅读**: 否  |  **建议操作**: 删除\n\n**主类别**: AI工具\n**次类别**: 社交媒体自动化, CLI工具\n**标签**: #AI Agent #CLI #MCP #社交发布 #SaaS\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 2 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 4 | 20% |\n| 可操作性 | 3 | 15% |\n| 方法论价值 | 1 | 15% |\n| 可迁移性 | 3 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 3 | 10% |\n\n**一句话点评**: 这是一个有趋势信号但缺乏实质内容的产品动态，不值得长期保存。\n**核心高价值点**: AI Agent通过CLI/MCP操作外部工具可能成为面向智能体的软件入口。\n\n### 摘要\n推文提到Postbridge发布公开CLI，可通过OpenClaw、Claude、ChatGPT、技能或MCP向多个社交账号发布内容，并称因此带来大量注册和MRR增长，但缺少具体数据和方法说明。\n\n### 知识要点\n- Postbridge提供npx postbridge-cli用于跨社交平台发布内容\n- CLI和MCP正在成为AI Agent调用SaaS能力的一种接口形式\n\n### 行动项\n- 如关注AI Agent工具生态，可简单了解postbridge-cli的功能边界\n- 无需归档，若有需求可直接访问项目文档而非保存该推文\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是社交媒体动态和产品宣传，缺少完整背景、实现细节、数据验证和可复用方法论。\n删除: 是\n留存决策: 建议立即删除\n删除原因: 信息量很低，仅提供一个CLI产品发布和增长现象，回复区噪音较多，长期参考价值有限。",
+    "role": "assistant",
+    "timestamp": 1781599433828,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:d7d1286cb87601151dbefea93bb67ec956a6238149b1b52442dc083688eb3d6a",
+  "refs": {
+    "sessionId": "1781599038082_3ndrxh5f"
+  },
+  "revisionId": "sha256:66281c8f35f2fed8f4f5ad0154942da9379601052a441f4c7bcd254360b6d58a",
+  "schemaVersion": 1,
+  "updatedAt": 1781599433828
+}

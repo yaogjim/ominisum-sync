@@ -1,0 +1,66 @@
+{
+  "createdAt": 1781000772114,
+  "entityType": "session",
+  "id": "1781000772114_d4wuyw18",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在实现 Agent 时显式设计工具结果回写机制。",
+      "检查现有 Agent 流程中 stop_reason 或等价终止条件是否清晰。",
+      "避免在未理解基础循环前过早依赖复杂框架。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781052364701,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "代理循环核心机制简述",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent Loop 的基本流程是消息输入、模型响应、工具执行、结果回写、循环判断。",
+      "没有工具结果回写，系统更像一次性工具调用，而不是真正的自主代理。",
+      "上下文是否准确反映外部执行结果，会直接影响后续决策质量。"
+    ],
+    "oneHighValuePoint": "工具执行结果必须回写到上下文中，让模型基于真实观察继续决策，这是 Agent Loop 的关键。",
+    "oneLineReview": "概念清晰但较浅，适合作为理解 Agent 基础循环的快速提示。",
+    "primaryCategory": "人工智能",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "AI Agent",
+      "工具调用"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章用极简方式解释 Agent Loop：模型接收消息、决定是否调用工具、执行工具、将结果回写到消息上下文，并循环直到结束。核心强调工具结果回写是智能体区别于普通工具调用的关键。",
+    "tags": [
+      "agent loop",
+      "工具调用",
+      "上下文回写",
+      "LLM应用开发"
+    ],
+    "title": "Daniel San: Let me explain the agent loop, simple It's the core of every agentic system, and…",
+    "totalScore": 56,
+    "url": "https://x.com/dani_avila7/status/2064181646903923159"
+  },
+  "payloadHash": "sha256:bb2b44797d20bb3650603a2118b210f980b7ccee1f436373a992e19651bad4ff",
+  "refs": {},
+  "revisionId": "sha256:eee7c6cbccdb511e396c24f0ae7a0ca0238b89ec15d9b57d7704493d797b230d",
+  "schemaVersion": 1,
+  "updatedAt": 1781170349073
+}

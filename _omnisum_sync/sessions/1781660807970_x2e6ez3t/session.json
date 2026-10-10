@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781660807970,
+  "entityType": "session",
+  "id": "1781660807970_x2e6ez3t",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在涉及图像文字输入的系统中，优先评估专用OCR模型作为入口服务。",
+      "对比PP-OCRv6与VLM在具体OCR场景中的准确率、延迟和成本。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781660827553,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "OCR应作为AI入口服务",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "OCR适合承担文字检测、切行、切框等确定性窄任务。",
+      "大型VLM在读图中文字时可能出现补全、猜测、格式化或解释，存在可靠性风险。"
+    ],
+    "oneHighValuePoint": "将OCR定位为AI系统入口端的专用窄任务服务，而不是默认交给大型多模态模型处理。",
+    "oneLineReview": "有一个清晰的工程判断，但证据和展开不足，只适合快速参考。",
+    "primaryCategory": "人工智能",
+    "rating": "C",
+    "rejectReason": "内容较短，主要是观点表达，缺少完整测试过程、数据和工程细节支撑，参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "OCR",
+      "AI系统架构"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为OCR在AI原生系统中应作为入口端基础服务调用，专注识别文字位置、切行切框等窄任务，而不应由大型VLM承担易猜测、补全和解释的工作。",
+    "tags": [
+      "OCR",
+      "PP-OCRv6",
+      "VLM",
+      "AI服务化",
+      "模型选型"
+    ],
+    "title": "x.com/feltanimalworld/status/2066892359854440622",
+    "totalScore": 44,
+    "url": "https://x.com/feltanimalworld/status/2066892359854440622"
+  },
+  "payloadHash": "sha256:b42029f5ead759cb8a22f7ada9d99b85b14125cb721e14553f87bceed05333d7",
+  "refs": {},
+  "revisionId": "sha256:b975c265b4ae33994b2ba3f388b6fcca14751682a159c7713a23cc081452c4b4",
+  "schemaVersion": 1,
+  "updatedAt": 1781662583075
+}

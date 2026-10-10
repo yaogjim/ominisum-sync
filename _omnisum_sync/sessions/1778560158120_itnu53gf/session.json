@@ -1,0 +1,71 @@
+{
+  "createdAt": 1778560158120,
+  "entityType": "session",
+  "id": "1778560158120_itnu53gf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "对现有 Agent 项目按 12 个 Harness 组件做一次架构盘点，找出缺失环节",
+      "为长任务 Agent 增加上下文压缩、观察掩码或即时检索机制",
+      "为关键工具调用增加参数校验、权限检查、沙箱执行和错误反馈",
+      "在生产 Agent 中设计验证循环，例如测试、代码检查、截图检查或独立评审 Agent",
+      "优先优化单智能体 Harness，再考虑引入多智能体编排"
+    ],
+    "archiveReason": "系统梳理了 Agent Harness 的核心组件、设计取舍和工程实践，具备较高复用价值",
+    "classifiedAt": 1780615988218,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI Agent Harness架构拆解",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "生产级 Agent Harness 包含编排循环、工具、记忆、上下文管理、提示词构建、输出解析、状态管理、错误处理、护栏、验证循环和子智能体编排等组件",
+      "上下文工程的目标是用最小、最高信号密度的 Token 集合提升任务完成概率",
+      "验证循环是区分玩具 Demo 和生产级智能体的关键，可通过规则测试、视觉反馈或 LLM-as-judge 实现",
+      "工具、权限、安全执行和错误恢复应由 Harness 控制，而不是完全交给模型自由决定",
+      "随着模型能力提升，Harness 可能变薄，但仍需要负责状态、执行、验证和上下文管理"
+    ],
+    "oneHighValuePoint": "将 Agent 与 Harness 区分开：Agent 是用户感知到的行为，Harness 才是产生智能体行为的底层工程系统。",
+    "oneLineReview": "一篇较系统的 Agent Harness 架构综述，适合用于建立生产级智能体工程框架认知。",
+    "primaryCategory": "AI工程架构",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为构建生产级 AI Agent 的架构参考",
+    "secondaryCategories": [
+      "AI Agent",
+      "LLM应用开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将 AI Agent 的能力归因于模型外围的 Harness 架构，拆解编排循环、工具、记忆、上下文管理、状态、错误处理、护栏、验证循环和子智能体等组件，并比较 Anthropic、OpenAI、LangGraph 等实践。",
+    "tags": [
+      "Agent Harness",
+      "上下文工程",
+      "工具调用",
+      "记忆系统",
+      "验证循环"
+    ],
+    "title": "深度拆解：AI Agent Harness 的构造【译】",
+    "totalScore": 75.5,
+    "url": "https://x.com/dotey/status/2053601852261110201"
+  },
+  "payloadHash": "sha256:1c27af0ed4c2a59ba5ea490258afe4e796383ea079f5cacf0425f7e73f85f383",
+  "refs": {},
+  "revisionId": "sha256:6e10a73600dc096e11288e860345bc6dad1f6e3248afd420184205bdf0aeb76e",
+  "schemaVersion": 1,
+  "updatedAt": 1781173051234
+}

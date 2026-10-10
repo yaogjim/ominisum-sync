@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777005356608,
+  "entityType": "session",
+  "id": "1777005356608_fwc2jg0r",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "删除该条内容，避免占用后续筛选注意力",
+      "如确需养生信息，改为检索有明确作者、研究证据和方法框架的正式来源"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777005648947,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 2,
+      "transferability": 2
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "社媒转发养生帖评估",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息来源不明，证据质量极低，几乎没有可复用知识或行动指导，保留价值不足。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "社交媒体图片转发内容在脱离图片后常无法保留有效信息",
+      "健康养生类内容若无来源与证据支撑，可信度应默认从严评估"
+    ],
+    "oneHighValuePoint": "几乎没有稳定可提取的高价值信息，唯一可见价值是提示原帖可能来自已关闭论坛的二次传播。",
+    "oneLineReview": "典型的低证据图片转发帖，噱头大于内容，不具备保留价值。",
+    "primaryCategory": "健康养生",
+    "rating": "E",
+    "rejectReason": "正文仅为标题和图片占位，缺少可验证内容、系统论证与方法框架，评论区也基本无有效补充。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "社交媒体内容",
+      "信息转载"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一则社交媒体对所谓“天涯神贴养生精华”的转发，主体内容依赖图片且当前文本中不可读，缺少明确论点、证据、方法和上下文，评论区也未提供有效信息支撑。",
+    "tags": [
+      "养生",
+      "社媒转发",
+      "缺乏证据",
+      "低信息密度",
+      "图片帖"
+    ],
+    "title": "iPaul: 天涯神贴：顶级养生精华",
+    "totalScore": 17.5,
+    "url": "https://x.com/iPaulCanada/status/2046958661612830741"
+  },
+  "payloadHash": "sha256:5e741d9b35463f83e1142b49e8cb279c4ccfae94908c825524112a9fa74cbeae",
+  "refs": {},
+  "revisionId": "sha256:fd0a7e720ac805f1262ee2cb40e4a87670d84b03a5332868466b85f9d668cf05",
+  "schemaVersion": 1,
+  "updatedAt": 1777005648951
+}

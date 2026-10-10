@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781519435412,
+  "entityType": "message",
+  "id": "1781519634387_o2o3jwar",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章解释了为什么 OpenAI 的 Codex 还没有推出类似 **Claude Design** 的产品：关键不在产品外壳，而在底层模型能力。作者认为，目前 **GPT-5.5 还不足以稳定生成高质量、可交互的 App 原型**，而 Claude 的模型在 UI/UX 设计与系统架构能力上更强。\n\n---\n\n## 1. 先区分两层：Agent 产品层 vs 模型层\n\n作者强调，很多人会把 **Codex、Claude Design** 和 **GPT-5.5、Claude Opus 4.8** 混为一谈，但它们其实是两层东西：\n\n- **Codex / Claude Design**：属于产品层，也叫 **Harness**\n  - 包括提示词、工具链、UI 交互流程等工程设计。\n- **GPT-5.5 / Claude Opus 4.8**：属于模型层\n  - 是真正负责理解需求、设计结构、生成结果的“大脑”。\n\n作者用一个比喻说明：\n\n> Harness 像厨房，有锅碗瓢盆和菜谱；模型像厨师。  \n> 同样的厨房，换不同厨师，做出来的菜会完全不同。\n\n---\n\n## 2. Claude Design 的产品外壳并不是核心门槛\n\n作者认为，Claude Design 的 Harness 层并不神秘，技术门槛不高。\n\n- 提示词、工具代码等工程部分可以被逆向出来。\n- 作者已经做了一个项目：`baoyu-design`\n  - GitHub 链接：<https://github.com/JimLiu/baoyu-design>\n  - 可以借助 Skill，让类似 Claude Design 的能力在其他模型上运行。\n\n但作者强调：\n\n> 真正拉开差距的不是 Harness，而是背后的模型能力。\n\n---\n\n## 3. 难点不只是“画界面”，而是生成高精度可交互原型\n\nClaude Design 容易让人误以为只是生成类似 Figma、Photoshop 的静态设计图，但它实际交付的是：\n\n- 既有视觉设计；\n- 又能点击、切换、操作；\n- 类似真实 App 的高精度可交互原型。\n\n这比单纯画 UI 难得多。\n\n### 例子：做一个类似 X / 微博的客户端\n\n如果只是生成一个好看的静态界面，很多模型都能做到。\n\n但如果要让它真正可交互，就需要处理很多逻辑：\n\n- 切换不同 Timeline；\n- 展示不同类型推文：\n  - 文本；\n  - 图片；\n  - 视频；\n- 点赞后按钮变成红心；\n- 删除推文后从列表消失；\n- 从列表点进详情页，再返回列表；\n- 返回后状态仍然保持。\n\n这要求模型在画 UI 之前，先想清楚：\n\n- `tweet` 数据结构长什么样；\n- timeline 有哪些类型；\n- 每个按钮对应什么状态；\n- 状态之间如何联动；\n- 页面跳转后如何保持状态。\n\n作者指出，这其实已经是 **系统架构设计**，而不只是 UI 设计。\n\n---\n\n## 4. Claude Design 强在同时具备设计能力和架构能力\n\n作者认为，Claude Design 对模型有两个核心要求：\n\n1. **优秀的 UI/UX 设计能力**\n2. **清晰的系统架构设计能力**\n\n缺少任何一个，效果都会明显变差。\n\n作者也反对只生成纯 HTML 的“设计稿”，因为那往往只是静态 UI，没有真正融合 UX 交互。\n\n### 测试案例\n\n作者建议用这个提示词测试：\n\n```text\nDesign a X Client for Mac, similar to Tweetbot for Mac from Tapbots\n```\n\n对比结果：\n\n- **Codex**\n  - 能生成一个可看的界面；\n  - 也能做一些简单交互；\n  - 但问题明显：\n    - 列表能滚动；\n    - sidebar 不能点；\n    - 点赞按钮没反应；\n  - 需要多轮迭代，才能达到勉强可用的水平。\n\n- **Claude Design**\n  - 可以从 Timeline 切到通知页；\n  - 可以从列表进入详情页再返回；\n  - 整个流程流畅；\n  - 状态能保持；\n  - 不仔细看会以为是在操作一个完成度很高的 App。\n\n作者认为，这说明 **Claude Opus 4.8 在设计和架构场景上做了大量训练和优化**。\n\n---\n\n## 5. Claude Design 的产出物本质上就是代码\n\nClaude Design 生成的不是 Figma 文件或 PSD，而是代码，例如：\n\n- React；\n- CSS；\n- JSON；\n- `data.jsx` 等。\n\n作者特别提到 `data.jsx` 文件：\n\n- 它会清晰定义整个设计所需的数据结构；\n- 基于这些结构模拟完整数据；\n- 再用 React 在这些数据上构建 UI。\n\n这带来几个好处：\n\n- 开发者能直接看到：\n  - 按钮圆角；\n  - 主色；\n  - 间距；\n  - 组件结构。\n- 可以很容易照着自己的技术栈实现。\n- 后续改设计时，可以通过 `git diff` 直接看到变化。\n- 设计和开发之间的沟通成本大幅降低。\n\n作者进一步补充，现在更准确地说，是：\n\n> 设计 Agent 和开发 Agent 之间的沟通损耗变低了。  \n> 人在指挥 Agent 做设计，也在指挥 Agent 写代码。\n\n---\n\n## 6. 如何更好地使用 Claude Design\n\n作者认为，使用 Claude Design 有点像 **Vibe Coding**：\n\n1. 先有一个大概想法；\n2. 让它先做出一个版本；\n3. 再通过聊天不断指挥它修改；\n4. 多调整几轮后，自己的思路也会越来越清晰。\n\n作者形容这种体验像“言出法随”：\n\n> 你想让它怎么改，它往往就能实现出来。  \n> 反馈速度很快，所以用起来很上瘾。\n\n### 使用技巧\n\n作者建议，不要一开始就把需求写得过于具体。\n\n更好的方式是：\n\n- 告诉它你的目标；\n- 让它自由发挥。\n\n原因是 Claude 模型已经学习过大量公开 UI 设计，往往能给出比用户自己细抠细节更好的方案。\n\n---\n\n## 7. 回到核心问题：为什么 Codex 还没有类似产品？\n\n作者的结论是：\n\n- 不是因为 Codex 做不出类似的产品壳；\n- 而是因为 **GPT-5.5 目前还撑不起这个任务**。\n\n真正困难的地方不是“画一个好看的页面”，而是：\n\n- 在动手之前先设计好数据结构；\n- 想清楚状态管理；\n- 处理完整交互逻辑；\n- 一次性交付一个接近真实 App 的可交互原型。\n\n作者认为，目前只有 Claude 的模型在这方面做得足够好。\n\n至于 Claude 能领先多久，则取决于：\n\n- OpenAI 后续模型进化速度；\n- 其他 AI 公司模型能力的提升速度。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781519435412,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:27f5134af4fb86837f5a45a0c2abbca0f3e40a77cfa5dc32e3230077ced2a3af",
+  "refs": {
+    "sessionId": "1781517722102_1hm0chw2"
+  },
+  "revisionId": "sha256:b7b04d2315d2b17279f9fde8cb1c54764d93e0a499dad79916b9d45a59cd326b",
+  "schemaVersion": 1,
+  "updatedAt": 1781519435412
+}

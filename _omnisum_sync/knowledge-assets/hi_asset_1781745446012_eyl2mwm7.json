@@ -1,0 +1,40 @@
+{
+  "createdAt": 1781745446012,
+  "entityType": "knowledge-asset",
+  "id": "hi_asset_1781745446012_eyl2mwm7",
+  "parentRevisionIds": [],
+  "payload": {
+    "assetType": "graph_edge",
+    "clusterId": "ai_agent_engineering",
+    "generator": {
+      "finishReason": "stop",
+      "generatedAt": 1781745446007,
+      "templateId": "value_capture_card"
+    },
+    "payload": {
+      "case": "YAO-102 done 后，P0-12 rerun 门禁仍然不通过，YAO-101 不应设为 done。",
+      "confidence": "medium",
+      "evidence": "页面多次强调：不允许关闭 P0-12，不允许启动 optional integration planning，不允许宣告 MVP controlled use。",
+      "method": "明确任务边界：YAO-102 materials ready 只解除材料 blocker，不替代 YAO-101 live validation gate；在 YAO-101 pass/conditional pass/fail 前不得推进下一阶段。",
+      "problem": "材料补齐子任务完成后，可能被误认为可以推进后续 integration planning 或关闭父 gate。",
+      "tool": "Multica parent-child issue handoff、Coordinator、gate_checker"
+    },
+    "sourceDigestSessionIds": [],
+    "sourceMessageIds": [
+      "1781664368193_zjquzoov",
+      "1781664368564_ywi5kpxf"
+    ],
+    "sourceSessionIds": [
+      "1781664344486_yu57uv3j"
+    ],
+    "sourceTemplateIds": [
+      "value_capture_card"
+    ],
+    "status": "draft"
+  },
+  "payloadHash": "sha256:45f152c88b0ee0a1bf46a523706c32007254eebf9cc77416b7f4f1e62f11f5a4",
+  "refs": {},
+  "revisionId": "sha256:dab623d69ceda51a54c746ebb156cb607f970c075b752c3d1742485f0546efbe",
+  "schemaVersion": 1,
+  "updatedAt": 1781745446012
+}

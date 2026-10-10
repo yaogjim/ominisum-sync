@@ -1,0 +1,20 @@
+{
+  "createdAt": 1775114870207,
+  "entityType": "message",
+  "id": "msg_1775114870204_487al8goo",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "OMX 的定位是：不替代 Codex，而是在 Codex CLI 外面加一层更强的工作流、角色调用和运行时能力。\n\n你可以把它理解成：\n\n- Codex 负责真正执行任务\n- OMX 负责把常见角色、计划流程、团队协作、状态记录组织得更顺手\n- 项目相关的计划、日志、记忆会放在`.omx/`里\n\n**最推荐的用法**\n\n先装好 Codex CLI 和 OMX，然后直接用 OMX 启动一个更强的 Codex 会话。\n\n1. 安装 Codex CLI\n```bash\nnpm install -g @openai/codex\n```\n\n2. 安装 OMX\n```bash\nnpm install -g oh-my-codex\n```\n\n3. 初始化 OMX\n```bash\nomx setup\n```\n\n4. 用推荐方式启动\n```bash\nomx --madmax --high\n```\n\n启动后，就可以在 Codex 里直接用 OMX 提供的角色和技能。\n\n**最常用的两个入口**\n\n- 分析问题：\n```bash\n$architect \"analyze the authentication flow\"\n```\n\n- 先做规划：\n```bash\n$plan \"ship this feature cleanly\"\n```\n\n如果你更习惯中文，可以直接写中文，例如：\n\n```bash\n$architect \"分析当前登录鉴权流程\"\n$plan \"规划这个功能最稳妥的实现路径\"\n```\n\n**常见能力怎么用**\n\n- `$architect\"...\"`：做分析、边界梳理、权衡方案\n- `$executor\"...\"`：聚焦执行某个实现任务\n- `$plan\"...\"`：在动手前先出计划\n- `$ralph\"...\"`：持续串行推进复杂任务\n- `$team\"...\"`：任务很大时做并行协作\n- `$deep-interview\"...\"`：当需求还很模糊时，先连续追问澄清\n\n适合这样理解：\n\n- 需求不清楚：先用`$deep-interview`\n- 要先想清楚方案：用`$architect`或`$plan`\n- 已经很明确，要直接做：用`$executor`\n- 任务很大、要持续推进：再考虑`$ralph`或`$team`\n\n**一个推荐工作流**\n\n你可以按这个节奏来：\n\n1. 启动 OMX\n```bash\nomx --madmax --high\n```\n\n2. 先分析\n```bash\n$architect \"分析这个仓库的认证流程和潜在风险\"\n```\n\n3. 再规划\n```bash\n$plan \"给出最安全的修改步骤，避免回归\"\n```\n\n4. 然后执行\n```bash\n$executor \"按计划实现并验证修改\"\n```\n\n这也是 OMX 文档里强调的主路径：  \n先 “强启动”，正常在 Codex 里工作，只有任务变复杂时，再让代理决定是否升级到`$team`、`$ralph`等更重的流程。\n\n**团队模式怎么用**\n\n如果你明确需要持久化的 tmux/worktree 协作，可以用 team runtime，但这不是默认起步方式。\n\n例如：\n\n```bash\nomx team 3:executor \"fix the failing tests with verification\"\n```\n\n其他团队命令：\n\n```bash\nomx team status <team-name>\nomx team resume <team-name>\nomx team shutdown <team-name>\n```\n\n这个模式更适合：\n\n- 大任务拆成多人 / 多代理并行\n- 需要长期保留运行状态\n- 需要 tmux 协调多个工作面板\n\n**辅助命令**\n\n这些更偏 “运维 / 辅助”，不是主要工作入口：\n\n- `omx setup`：安装 prompts、skills、配置和 AGENTS 脚手架\n- `omx doctor`：检查安装是否正常\n- `omx hud --watch`：查看监控 / 状态\n- `omx explore --prompt\"...\"`：只读地查仓库\n- `omx sparkshell <command>`：做 shell 检查或有限验证\n\n例如：\n\n```bash\nomx explore --prompt \"find where team state is written\"\nomx sparkshell git status\n```\n\n**使用前要求**\n\n至少需要：\n\n- Node.js 20+\n- 已安装 Codex CLI\n- 已完成 Codex 登录认证\n\n如果你之后要用 team runtime：\n\n- macOS / Linux 需要`tmux`\n- 原生 Windows 需要`psmux`\n- WSL2 可用`tmux`\n\n**一句话建议**\n\n如果你是第一次用 OMX，最简单的开始方式就是：\n\n```bash\nomx setup\nomx --madmax --high\n$architect \"分析我的任务\"\n$plan \"规划实现路径\"\n```\n\n如果你愿意，我也可以下一步直接给你一份 “适合新手的 OMX 中文上手示例”，或者按你的系统（macOS / Windows / Linux）给你写具体安装步骤。",
+    "finish_reason": "stop",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1775114870207
+  },
+  "payloadHash": "sha256:6d4edafe02bd03ddecb6d10b66d360a101f0c017154efe0b1a712f85bbd6379e",
+  "refs": {
+    "sessionId": "1775114899279_0umd9aqn"
+  },
+  "revisionId": "sha256:961e1b479970a9642d3e3c3fc1ca892a0f2685080f5e9bf6d27189712056fe73",
+  "schemaVersion": 1,
+  "updatedAt": 1775114870207
+}

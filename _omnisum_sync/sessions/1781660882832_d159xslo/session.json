@@ -1,0 +1,67 @@
+{
+  "createdAt": 1781660882832,
+  "entityType": "session",
+  "id": "1781660882832_d159xslo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 Hermes，可测试桌面端迁移流程并验证配置是否完整。",
+      "尝试用 orchestrator-worker 结构重构现有深度研究 pipeline，观察是否减少工具跳过问题。",
+      "仅将本文作为功能线索，后续需查阅官方文档或实测案例确认实际效果。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781660904260,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Hermes桌面与嵌套编排更新",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Hermes Desktop 提供类 ChatGPT/Claude 的桌面界面，可集中配置技能、模型、消息应用、定时任务和代理配置。",
+      "嵌套编排器模式可让上层子代理调度多个 leaf agents，以提升复杂研究任务的并行度和输出完整性。",
+      "从 WSL2 迁移到 Hermes Desktop 可通过 hermes backup、安装桌面端、hermes import 完成，但部分钱包和历史数据需手动迁移。"
+    ],
+    "oneHighValuePoint": "嵌套编排器通过 orchestrator 管理多个 worker agents，可并行处理复杂研究任务并汇总交叉信息。",
+    "oneLineReview": "适合快速了解 Hermes 新功能，但更像产品宣传帖，缺少足够证据和操作细节。",
+    "primaryCategory": "AI智能体工具",
+    "rating": "C",
+    "rejectReason": "内容主要是产品更新和个人体验，缺少系统教程、数据验证和可复用细节，深度有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "产品更新",
+      "智能体工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Hermes Analyst 近期更新，包括 Windows/桌面端、Agent profiles、异步子代理、嵌套编排器、Telegram 富文本输出等，并强调嵌套编排器可提升多代理研究任务质量。",
+    "tags": [
+      "Hermes",
+      "AI Agent",
+      "Nested Orchestrator",
+      "桌面客户端",
+      "研究工作流"
+    ],
+    "title": "Hermes 分析师 10 倍更好",
+    "totalScore": 45,
+    "url": "https://x.com/0xJeff/status/2066883577141428563"
+  },
+  "payloadHash": "sha256:91d9eb068da568ff52214dccd68edf6f7796f91d2e02db3c82153cd164a9c578",
+  "refs": {},
+  "revisionId": "sha256:4c83b01e68f8069f0873f079170660b92a43b1f78d29a82acc70d71f9994a1df",
+  "schemaVersion": 1,
+  "updatedAt": 1781662591435
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780891709949,
+  "entityType": "session",
+  "id": "1780891709949_3jm29890",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "阅读原文确认具体工具链和实现细节",
+      "评估当前项目是否存在多环境组合测试成本过高的问题",
+      "尝试将新功能开发流程拆分为规格、编码、浏览器验证、测试和通过五个阶段"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780892281275,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI构建E2E测试流程",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "多框架、多数据库组合会显著放大回归测试复杂度",
+      "Spec → Code → Verify → Test → Green 可作为 AI 辅助开发与验证流程",
+      "agent-browser 可用于辅助前端功能验证"
+    ],
+    "oneHighValuePoint": "将 AI Agent 与 E2E 测试结合，形成新功能开发中的持续验证闭环。",
+    "oneLineReview": "作为文章入口有一定参考价值，但当前正文信息有限，需阅读原文才能判断完整质量。",
+    "primaryCategory": "软件工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "AI辅助开发",
+      "测试工程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者分享其使用 AI 构建 E2E 测试体系的文章，背景是多前端框架、多数据库组合导致人工测试成本高，提出 Spec → Code → Verify → Test → Green 的五阶段流程。",
+    "tags": [
+      "E2E测试",
+      "AI Agent",
+      "前端工程",
+      "自动化测试",
+      "开发流程"
+    ],
+    "title": "Viking: 最近产量起来了，又写了一篇干货新文章：《我是怎样使用 AI 构建 E2E 测试体系的",
+    "totalScore": 56.5,
+    "url": "https://x.com/vikingmute/status/2063588722785051044"
+  },
+  "payloadHash": "sha256:bfbd75d998fd8e4574318cd61424859fd07cc286b8fd7a3148c47a4a189e9afd",
+  "refs": {},
+  "revisionId": "sha256:3da4cf0395c466f677676b1e66706cb634f9961be2e00891f807b593dc0b954c",
+  "schemaVersion": 1,
+  "updatedAt": 1781170812553
+}

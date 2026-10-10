@@ -1,0 +1,70 @@
+{
+  "createdAt": 1781169897791,
+  "entityType": "session",
+  "id": "1781169897791_6ja4hfrc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的智能体任务中设计明确的目标文件或评分标准，让模型根据反馈持续迭代。",
+      "尝试引入独立验证器子代理，而不是只依赖主模型自我评价。",
+      "为长任务或多会话任务建立共享记忆，并要求模型将失败经验提炼为可复用规则。",
+      "选择一个复杂工程任务，对比无循环、单模型自评和验证器子代理三种方案的效果。"
+    ],
+    "archiveReason": "文章提出了智能体自校正循环、独立验证器子代理和跨会话记忆管理等可复用方法，对构建高性能AI工作流有长期参考价值。",
+    "classifiedAt": 1781170042466,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Fable 5智能体循环设计",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "智能体性能可以通过目标、评分标准和环境反馈形成爬山式自校正循环来提升。",
+      "独立验证器子代理优于同一上下文内的自我批判，因为它能降低模型对自身输出的偏见。",
+      "有效的记忆流程包括失败记录、原因调查、事实验证、规则提炼和后续查阅。",
+      "结构性实验变更可能比单纯调参更能释放高级模型在复杂任务中的能力。"
+    ],
+    "oneHighValuePoint": "相比让模型自我批判，使用独立上下文中的验证器子代理进行评分，往往能获得更可靠的反馈循环。",
+    "oneLineReview": "这是一篇较有方法论价值的AI智能体实践笔记，但证据主要来自作者小规模实验，仍需自行验证。",
+    "primaryCategory": "AI智能体方法论",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "大模型工程",
+      "提示工程",
+      "持续学习"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了使用 Fable 5 设计智能体循环的经验，重点包括通过目标和评分标准驱动自我修正、用独立验证器替代自我批判，以及利用跨会话记忆实现持续学习。",
+    "tags": [
+      "Fable 5",
+      "自校正循环",
+      "智能体",
+      "记忆机制",
+      "验证器子代理"
+    ],
+    "title": "用 Fable 5 设计循环",
+    "totalScore": 71,
+    "url": "https://x.com/RLanceMartin/status/2064397389189071163"
+  },
+  "payloadHash": "sha256:e39136f01a4b562c1c29fccff0bac98d93dbcdc4adc02ca7863272eb8878d954",
+  "refs": {},
+  "revisionId": "sha256:8af7b4dcd1a7b6a1551aff8eab1cfb118fda947d291e1e0e01a4c8b5fb9b7e26",
+  "schemaVersion": 1,
+  "updatedAt": 1781170179403
+}

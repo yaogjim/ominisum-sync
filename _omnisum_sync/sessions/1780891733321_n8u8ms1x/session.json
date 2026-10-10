@@ -1,0 +1,77 @@
+{
+  "createdAt": 1780891733321,
+  "entityType": "session",
+  "id": "1780891733321_n8u8ms1x",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尝试在复杂开发任务前强制先写plan.md，明确目标、改动文件、执行步骤和验收标准",
+      "评估安装Compound Engineering插件，并测试/ce: plan与/ce: work工作流",
+      "为AI开发环境配置自动保存、完成提示音和必要的权限策略",
+      "建立个人项目的计划文档库，将历史决策、bug经验和技术方案结构化保存",
+      "在技术选型前使用实时社区调研工具收集近30天讨论，再交给AI生成决策方案",
+      "测试语音输入到Claude Code的工作流，观察是否能提升需求描述和头脑风暴效率",
+      "如有长时间AI任务需求，可考虑用Mac Mini或远程主机构建常驻Agent工作站"
+    ],
+    "archiveReason": "文章提供了较完整的Claude Code高强度使用范式，包含计划优先、并行Agent、上下文积累、远程工作站等可复用思路",
+    "classifiedAt": 1780892299815,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code计划驱动工作流",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "plan.md可作为AI协作中的持久上下文和任务检查点，降低会话上下文丢失带来的中断成本",
+      "Compound Engineering插件通过/ce: plan和/ce: work把调研、规划、执行流程结构化",
+      "语音输入与LLM结合后，输入不再依赖完美转录，而依赖模型对上下文的理解和纠错",
+      "多Claude Code会话并行运行可以让个人同时推进多个研发任务，但需要权限、提醒、自动保存等配置配合",
+      "/last30days等实时调研工具可弥补模型训练数据滞后问题，让技术选型和产品判断更贴近当前社区共识",
+      "结构化保存战略文档、会议记录和历史计划，可以形成上下文复利，提高后续AI输出质量",
+      "Mac Mini、tmux和Telegram集成可构建24小时在线的远程AI工作站",
+      "不同模型可按能力分工，例如Claude负责规划编排，Codex负责代码实现或审查"
+    ],
+    "oneHighValuePoint": "把AI使用从“直接写代码”转为“先生成可持久化计划，再由Agent执行”，显著提升上下文连续性和复杂任务可控性。",
+    "oneLineReview": "这是一篇高价值的AI开发工作流案例总结，方法启发强，但证据主要来自二手叙述和个案经验。",
+    "primaryCategory": "AI开发工作流",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为AI辅助开发工作流设计参考",
+    "secondaryCategories": [
+      "Agent协作",
+      "开发效率",
+      "个人知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结了Matt Van Horn使用Claude Code的深度工作流：以plan.md为中心，结合Compound Engineering、语音输入、多会话并行、实时社区调研、远程Mac Mini和多模型分工，实现从调研、规划到执行的AI协作开发范式。",
+    "tags": [
+      "Claude Code",
+      "AI Agent",
+      "计划驱动开发",
+      "语音输入",
+      "自动化工作流"
+    ],
+    "title": "唐华斑竹🦅: Claude Code 用到这个程度，我算是开眼了 Matt Van Horn 最近写了一篇长文，把他用 Claude Code 的所有技巧和工作流全盘托出了",
+    "totalScore": 73,
+    "url": "https://x.com/uniswap12/status/2063284267296461028"
+  },
+  "payloadHash": "sha256:77b249c693b3e7ac58c510ca4f783fd0157b735689ca94942ee613b60e7865f9",
+  "refs": {},
+  "revisionId": "sha256:219d4338124fef195748ff5897fa1b413cdc33d79c52590b34c1b98dc43215ef",
+  "schemaVersion": 1,
+  "updatedAt": 1781170757884
+}

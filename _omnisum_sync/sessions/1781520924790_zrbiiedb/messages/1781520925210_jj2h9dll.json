@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781520879437,
+  "entityType": "message",
+  "id": "1781520925210_jj2h9dll",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# X\n\n## 核心观点\n\n作者回顾 Claude 技术博客后感受到：**AI Agent 的发展速度极快，已经从早期简单的 SWE Agent，演进到需要复杂架构、流程控制、上下文管理和多 Agent 协作的系统工程。**\n\n## 关键内容\n\n### 1. RAG 从“简单检索”走向“上下文化检索”\n\n传统 RAG 通常是把文档切成 chunk，再做 embedding 或 BM25 检索，但容易出现弱匹配问题。\n\nClaude 的思路是：  \n给每个 chunk 增加 contextual 标签，让检索结果更有语义背景，提升匹配准确性。\n\n### 2. Context Engineering 成为核心难题\n\n即使模型支持 200K 长上下文，也不代表能稳定理解所有内容。\n\n主要问题包括：\n\n- 新信息加入后，模型难以维持远距离信息关系\n- 过多工具会稀释模型注意力\n- 长上下文容易带来信息混乱和注意力分散\n\n对应策略包括：\n\n- 渐进式披露信息\n- JIT 按需查询信息源\n- 用外部文件做持久化记忆\n- 引入 subagent 分工处理任务\n\n### 3. 长任务需要“脚手架”，不能只靠 Prompt\n\n长任务会让 Agent 出现“context anxiety”，即上下文压力和执行不稳定。\n\n作者提到一种更可靠的方式：  \n在 Agent 外部设计状态机和执行流程，用代码强制 Agent 按步骤完成任务，并通过测试后才能继续。\n\n这意味着：\n\n- 规则不能只写在 Prompt 里\n- Agent 不能完全自我监督\n- 应该用外部机制保证流程和结果\n- 默认失败机制比默认信任更可靠\n\n### 4. 多 Agent 协作更适合用文件传递状态\n\n相比让多个 Agent 通过对话同步信息，使用文件作为“事实来源”更稳定。\n\n文件可以作为共享状态和真相来源，减少对话传递中的遗漏、误解和上下文污染。\n\n## 作者感受\n\nAgent 领域发展太快，短短两年已经从简单原型变成复杂系统。\n\n现在如果想独立实现一个具备现代能力的 Agent，难度已经很高。尤其是看到 Codex 等产品持续快速迭代，更能感受到技术追赶的压力。\n\n## 一句话总结\n\n**AI Agent 正在从“会调用模型的工具”变成“由上下文工程、状态机、外部记忆、测试机制和多 Agent 协作组成的复杂软件系统”。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781520879437,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8c12b50c06f0e3240d129b3644b5e97d4c8673c569c5329fe3219209badd11c3",
+  "refs": {
+    "sessionId": "1781520924790_zrbiiedb"
+  },
+  "revisionId": "sha256:bb9fca901e7faab46b057b9e1ccd67aeedc4438dd49a130c2aa2479b268f729e",
+  "schemaVersion": 1,
+  "updatedAt": 1781520879437
+}

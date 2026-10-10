@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781520879438,
+  "entityType": "message",
+  "id": "1781521094629_qzyqhyq9",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Codex + Claude Code 联合开发最佳实践总结\n\n## 核心观点\n\n作者分享了一套 **Codex App + Claude Code / Codex CLI** 的联合开发工作流，本质是把 AI 编程助手、远程开发环境、代码审查和终端操作整合到一个高效工作台中。\n\n## 最佳实践配置\n\n### 1. 本地作为操作中枢\n\n在 MacBook 上打开 **Codex App**，作为主要交互入口，用来和 AI 进行需求拆解、代码生成、问题讨论等操作。\n\n### 2. 连接持续运行的开发主机\n\n连接一台 24x7 在线的开发主机，可以是：\n\n- 本地 Linux 机器\n- 远程服务器\n- Mac mini\n\n开发主机上运行：\n\n- Codex CLI\n- Claude Code\n\n这样可以让 AI 编程环境持续在线，不依赖本地电脑状态。\n\n## 推荐界面布局\n\n作者采用四栏布局，提升开发效率：\n\n### 左侧：项目任务列表\n\n用于管理需求、待办、开发任务，保持目标清晰。\n\n### 中间：Codex 对话区\n\n作为 AI 编程主交互区，用于沟通需求、生成方案和推进开发。\n\n### 右侧：工具切换区\n\n可在多个视图之间切换：\n\n- 文件浏览\n- Claude Code 命令行\n- 浏览器\n- Diff Review 代码审查\n\n方便边写代码、边查看文件、边审查变更。\n\n### 底部：SSH Terminal\n\n连接开发主机，用于执行命令、运行服务、调试环境。\n\n## 热门回复中的延伸观点\n\n### AI 开发交互正在从“多轮聊天”转向“命令式任务驱动”\n\n有用户提到，现在更少和 AI 多轮对话，而是通过固定命令推进工作，例如：\n\n- `/goal`：定义目标，完成即结束\n- `/loop`：定时检查任务\n- `/workflows`：处理需要多 Agent 协作的复杂任务\n\n这说明 AI 编程正在从“聊天助手”演化为“任务执行系统”。\n\n### 多 Agent 不一定需要中央总管\n\n有回复提到，斯坦福论文开始质疑一个常见假设：多 Agent 系统是否必须有一个“总管 Agent”负责协调？\n\n这反映出多 Agent 架构仍在探索阶段，中心化调度未必是最优解。\n\n### 多 Agent 产品落地仍需警惕“角色扮演陷阱”\n\n也有观点认为，把 AI 简单包装成产品经理、开发、测试、运营等角色，更多是情绪价值，未必真正提升效率。\n\n真正有价值的不是模拟人类组织结构，而是重构适合 AI 的协作方式。\n\n## 一句话总结\n\n这套实践的关键，不是单纯使用 Codex 或 Claude Code，而是通过 **本地操作台 + 持久在线开发主机 + 多区域工作区 + 任务驱动 AI 编程流程**，把 AI 编程从聊天式辅助升级为系统化开发工作流。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781520879438,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ef21a10fdadc69c920b0cce4903fce019d4c10faacc7c6affd3fd10677bf70a0",
+  "refs": {
+    "sessionId": "1781521094213_2bowc28c"
+  },
+  "revisionId": "sha256:1fc7e0ee9c25aeeb6f9db039ca612367a1966c67d9e8c921472180d4a50e9138",
+  "schemaVersion": 1,
+  "updatedAt": 1781520879438
+}

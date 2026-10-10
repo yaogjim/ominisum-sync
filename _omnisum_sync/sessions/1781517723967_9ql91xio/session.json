@@ -1,0 +1,70 @@
+{
+  "createdAt": 1781517723967,
+  "entityType": "session",
+  "id": "1781517723967_9ql91xio",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在设计 Agent 应用时，按 Prompt、Context、Harness、Loop 四层检查系统完整性。",
+      "为工具调用增加权限边界、参数校验、日志记录和失败回传机制。",
+      "为长任务 Agent 明确最大重试次数、成本上限、停止条件和人工接管条件。",
+      "评估现有 AI 工作流是否只是 Prompt 调用，还是具备可追踪、可验证、可恢复的运行时控制层。"
+    ],
+    "archiveReason": "文章提供了从 Prompt、Context、Harness 到 Loop 的分层框架，可作为理解 Agent 工程化演进的概念参考。",
+    "classifiedAt": 1781518704772,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI工程从提示走向运行时",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Prompt Engineering 主要解决单次模型调用中的输入表达问题，但不能替代上下文、工具权限和运行控制。",
+      "Context Engineering 的核心不是堆砌资料，而是提供相关、干净、可追溯的工作现场信息。",
+      "Harness Engineering 关注工具权限、参数校验、日志、失败处理和人工确认等执行边界。",
+      "Loop Engineering 解决 Agent 如何持续计划、行动、观察、修复、停止和回滚的问题。",
+      "Agent 系统的风险来自概率模型参与自动化执行，因此必须设计评估、成本限制、退出条件和人工介入机制。"
+    ],
+    "oneHighValuePoint": "将 Prompt、Context、Harness、Loop 分别对应输入、信息、执行边界和持续运行控制，形成了较清晰的 Agent Runtime 分层理解框架。",
+    "oneLineReview": "框架表达清晰，但论证较泛化，适合作为 Agent 工程化的概念导览而非实操指南。",
+    "primaryCategory": "AI工程",
+    "rating": "B",
+    "rejectReason": "内容偏概念化和重复，缺少真实案例、数据验证和具体实现细节，不建议作为高优先级精读材料。",
+    "retentionDecision": "短期参考后可保留为概念框架素材",
+    "secondaryCategories": [
+      "Agent系统设计",
+      "工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出 AI 工程正从单次 Prompt 调用转向 Agent Runtime，核心演进路径包括 Prompt、Context、Harness 和 Loop，强调未来工程重点是设计上下文、工具权限、日志、验证、失败恢复和停止条件。",
+    "tags": [
+      "Agent Runtime",
+      "Prompt Engineering",
+      "Context Engineering",
+      "Loop Engineering",
+      "AI工程化"
+    ],
+    "title": "从 Prompt 到 loop：AI 工程正在走向 Runtime",
+    "totalScore": 63.5,
+    "url": "https://x.com/ZeroZ_JQ/status/2066047734302601598"
+  },
+  "payloadHash": "sha256:475416fc232c6390fc865f56178d183ebbbb740e7ff33f7130d25832d08c1754",
+  "refs": {},
+  "revisionId": "sha256:237d9045365fd75d1945a2ebf0225a9009ed95b1bd1cf4c0229afc6414c6f614",
+  "schemaVersion": 1,
+  "updatedAt": 1781519644778
+}

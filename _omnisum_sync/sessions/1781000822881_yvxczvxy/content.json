@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781000822881,
+  "entityType": "session-content",
+  "id": "1781000822881_yvxczvxy",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>九原客</strong></header><div class=\"tw-body\">Langchain DeepAgents 的 Harness Profile 功能不错，为不同的模型开启不同的提示词、工具，这样你选择不同的模型，就会自动应用不同的 Profile.<br><br>比如对于gpt-5.5，将 edit_file 改成 apply_patch 工具，将execute 工具 改成 shell_command，从而和 codex 保持一致。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HKVbcKAbgAAhIkF?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@九原客</strong> <span class=\"tw-eng\">♥ 42 · 💬 23</span><p>推荐下这个Skill - 格局。<br><br>众所周知，GPT-5.5 厌恶重构，喜欢小修小补。<br><br>这个时候就需要帮他打开格局，让他更大胆一些。</p></div><div class=\"tw-reply\"><strong>@九原客</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>如果是在pi中使用 gpt-5.5的话，使用<br>npm:@howaboua/pi-codex-conversion<br><br>这个扩展就行了，完全使用 codex harness</p></div><div class=\"tw-reply\"><strong>@艾塔</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>不错的思路，我觉得可以在 pi 中做个扩展来做这个事。只是还没想到特别合适的场景，Codex 的 tools 有些丑，所以我只是简单把 apply patch 一个工具加了进来，作为 edit 的补充</p></div><div class=\"tw-reply\"><strong>@安叫兽|Bird  BNB</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>这个按模型切工具名，省了不少适配心智</p></div></div>",
+    "pageContent": "九原客: Langchain DeepAgents 的 Harness Profile 功能不错，为不同的模型开启不同的提示词、工具，这样你选择不同的模型，就会自动应用不同的 Profile. 比如对于gpt-5.5，将 edit_file 改成 apply_patch 工具，将execute 工具 改成 shell_command，从而和 codex 保持一致。\n![图片](https://pbs.twimg.com/media/HKVbcKAbgAAhIkF?format=jpg&name=large)\n---\n热门回复 (共 4 条):\n@九原客 (♥ 42 · 💬 23):\n推荐下这个Skill - 格局。\n\n众所周知，GPT-5.5 厌恶重构，喜欢小修小补。\n\n这个时候就需要帮他打开格局，让他更大胆一些。\n\n@九原客 (♥ 1 · 💬 1):\n如果是在pi中使用 gpt-5.5的话，使用\nnpm:@howaboua/pi-codex-conversion\n\n这个扩展就行了，完全使用 codex harness\n\n@艾塔 (♥ 0 · 💬 1):\n不错的思路，我觉得可以在 pi 中做个扩展来做这个事。只是还没想到特别合适的场景，Codex 的 tools 有些丑，所以我只是简单把 apply patch 一个工具加了进来，作为 edit 的补充\n\n@安叫兽|Bird  BNB (♥ 1 · 💬 0):\n这个按模型切工具名，省了不少适配心智\n"
+  },
+  "payloadHash": "sha256:c0e94c667f179bfa6352126dc14c7a329c1bdcf534443ac09a93e7f9b3fac31e",
+  "refs": {},
+  "revisionId": "sha256:7485269471cd2bee9127c7b8761dd6847985830d74f75a34c99a8547fec9571f",
+  "schemaVersion": 1,
+  "updatedAt": 1781052380932
+}

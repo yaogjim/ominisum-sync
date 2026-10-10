@@ -1,0 +1,67 @@
+{
+  "createdAt": 1781520058665,
+  "entityType": "session",
+  "id": "1781520058665_7um3zswf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查现有项目框架是否能将模块说明、数据表结构、API参数整理成Agent可读文档。",
+      "尝试为常用开发流程定义标准化Skill模板，如new-module、new-page、deploy、security-scan。",
+      "仅保留其Agent-Native框架设计思路，具体产品宣传信息无需长期保存。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781520458510,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent原生框架设计思路",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent-Native强调产品功能和工作流从设计之初就依赖Agent能力，而非事后接入Agent。",
+      "适合Agent协作的开发框架需要模块化、低耦合，并将常见开发流程文档化为可组合Skills。",
+      "核心Skills可覆盖项目初始化、网站复刻、新模块开发、新页面开发、部署、安全扫描和发布审计等环节。"
+    ],
+    "oneHighValuePoint": "将开发框架的功能模块、数据结构、API和流程沉淀为Agent可理解的Skills，是Agent-Native框架设计的关键思路。",
+    "oneLineReview": "有一定框架设计启发，但整体更像产品宣传，技术深度和证据不足。",
+    "primaryCategory": "AI开发框架",
+    "rating": "C",
+    "rejectReason": "内容较短，偏概念阐述和产品推广，缺少具体实现细节、案例拆解和有效证据支撑。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent工程",
+      "产品开发"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出Agent-Native开发框架应围绕Agent能力原生设计，通过模块化功能、低耦合架构和文档化Skills，让Agent理解并执行项目初始化、模块开发、页面生成、部署、安全审计等流程。",
+    "tags": [
+      "Agent-Native",
+      "Skills",
+      "ShipAny",
+      "AI产品开发",
+      "模块化框架"
+    ],
+    "title": "idoubi: 聊聊 Agent-Native 开发框架应该怎么设计👇 在谈 Agent-Native 之前，我们应该很熟悉 Cloud-Native 、AI-Native …",
+    "totalScore": 54.5,
+    "url": "https://x.com/idoubicc/status/2065002485631316400"
+  },
+  "payloadHash": "sha256:cde8b8cd424b932899578e57700248760a60a8f335eecf69137554f227423da9",
+  "refs": {},
+  "revisionId": "sha256:da6ac768688389496988339e68d702aad8f9c97e5d2c55bb5ec388bbd7dcb7cf",
+  "schemaVersion": 1,
+  "updatedAt": 1781520459224
+}

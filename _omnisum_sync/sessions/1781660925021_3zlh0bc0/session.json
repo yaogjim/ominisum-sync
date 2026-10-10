@@ -1,0 +1,63 @@
+{
+  "createdAt": 1781660925021,
+  "entityType": "session",
+  "id": "1781660925021_3zlh0bc0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注该方向，可另行检索本地OCR、端侧多模态模型和私有RAG方案",
+      "不建议单独保存该推文，可用更完整的技术文章或案例替代"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781660943577,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "私有化AI助理趋势短评",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "缺乏实质内容与证据支撑，无法形成可复用知识或行动指导，保留价值有限。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "个人AI助理若要管理财务和健康数据，必须解决隐私数据本地处理问题",
+      "PDF和照片中的信息结构化是私有化AI落地的前置步骤"
+    ],
+    "oneHighValuePoint": "私有化AI助理的关键入口之一是本地化处理发票、账单、体检报告等高隐私文档。",
+    "oneLineReview": "这是一个方向性判断而非完整文章，只有趋势信号，缺少分析深度。",
+    "primaryCategory": "人工智能",
+    "rating": "D",
+    "rejectReason": "内容仅为简短观点和趋势判断，缺少完整论证、案例、数据与可执行方案，且正文疑似截断，信息价值较低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "隐私计算",
+      "本地化AI"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章认为AI原生私有系统会逐渐发展，个人场景关注隐私，公司场景关注成本，本地读取PDF和图片中的敏感数据是私有化AI助理的重要前提。",
+    "tags": [
+      "私有化AI",
+      "本地OCR",
+      "数据隐私"
+    ],
+    "title": "x.com/feltanimalworld/status/2066914483788779650",
+    "totalScore": 30,
+    "url": "https://x.com/feltanimalworld/status/2066914483788779650"
+  },
+  "payloadHash": "sha256:3d910d8f8855ed79a74d94fdc28834406d3dff51f6148a9264e436384e5b032a",
+  "refs": {},
+  "revisionId": "sha256:26d851eff4aebea59fc69b3372b53a5e52edd53894141bb18db1435d71988cf6",
+  "schemaVersion": 1,
+  "updatedAt": 1781662710284
+}

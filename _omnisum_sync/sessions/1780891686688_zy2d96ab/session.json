@@ -1,0 +1,71 @@
+{
+  "createdAt": 1780891686688,
+  "entityType": "session",
+  "id": "1780891686688_zy2d96ab",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在一个非核心项目或历史PR上试运行 /brooks-review，验证诊断质量和误报率",
+      "阅读其六类衰退风险说明，评估是否可纳入团队代码审查清单",
+      "如效果稳定，可尝试用 GitHub Action 接入PR流程并设置 fail-below 阈值",
+      "重点验证其自称的架构审查、技术债排序和测试质量审查是否优于原生AI审查"
+    ],
+    "archiveReason": "包含较完整的代码质量风险分类、安装使用方式、CI集成示例和可复用审查框架，对软件工程实践有参考价值",
+    "classifiedAt": 1780892260330,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Brooks-Lint代码审查框架",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "代码审查可按“症状→根源→后果→对策”的链路输出，提升诊断的一致性和可落地性",
+      "生产代码和测试代码可以分别建立衰退风险模型，用于PR审查、架构审查、技术债评估和测试质量审查",
+      "通过 .brooks-lint.yaml 可配置禁用风险码、严重度覆盖、忽略路径和聚焦风险",
+      "可通过 GitHub Action 将AI代码质量审查接入PR流程，并设置健康分阈值"
+    ],
+    "oneHighValuePoint": "将代码质量问题结构化为认知过载、变更扩散、知识重复、偶发复杂度、依赖失序、领域模型失真等可复用风险维度。",
+    "oneLineReview": "这是一份信息充足、可直接上手的工具README，但基准测试和效果证据偏自述，需实际验证。",
+    "primaryCategory": "软件工程/代码质量",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为AI辅助代码审查和技术债评估工具的参考资料",
+    "secondaryCategories": [
+      "AI代码审查",
+      "架构治理",
+      "技术债管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 brooks-lint，一个基于十二本软件工程经典著作的AI代码审查工具，围绕生产代码和测试代码衰退风险提供结构化诊断、安装方式、命令用法、配置、CI集成和路线图。",
+    "tags": [
+      "代码审查",
+      "软件设计",
+      "技术债",
+      "Claude Code",
+      "架构审查",
+      "测试质量"
+    ],
+    "title": "brooks-lint/README.zh-CN.md at main · hyhmrright/brooks-lint",
+    "totalScore": 75.5,
+    "url": "https://github.com/hyhmrright/brooks-lint/blob/main/README.zh-CN.md"
+  },
+  "payloadHash": "sha256:fc65bfe102901e839eb60ca307b73c9b9bc45fa6dd6e15b9bc713fc6fba1283c",
+  "refs": {},
+  "revisionId": "sha256:7194c9a2d8c2e9c26f6347fe135c14bde6a722b27b0b68020cb9fea073891a97",
+  "schemaVersion": 1,
+  "updatedAt": 1781170752933
+}

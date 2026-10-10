@@ -1,0 +1,70 @@
+{
+  "createdAt": 1781517521640,
+  "entityType": "session",
+  "id": "1781517521640_5gz1hz65",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在设计API、SDK或MCP工具时，将关键约束放入错误消息、CLI输出和工具描述等Agent必经路径",
+      "将大型文档拆分为短小、聚焦、可按需加载的模块化skill文件",
+      "避免只依赖README、注释或非阻塞警告传递关键安全与版本信息",
+      "检查现有开发者工具中哪些提示属于软引导，并改造成阻塞性或任务路径内的硬信号"
+    ],
+    "archiveReason": "文章提炼了Agent使用API时的行为规律，并提出硬引导、必经路径、模块化skill等可复用设计原则",
+    "classifiedAt": 1781518782937,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Stripe Agent硬引导实验",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI Agent通常不会像人类开发者一样主动浏览README、SDK注释或依赖目录中的说明文件",
+      "软引导是指不在Agent当前任务路径上的提示，通常容易被忽略",
+      "硬引导是Agent完成任务必须处理的信息，如明确错误、阻塞性提示或已加载上下文中的指令",
+      "模块化skill文件比单一大文档更适合Agent按需加载，也更利于团队维护",
+      "Agent体验设计需要围绕Agent的信息扫描、上下文加载和决策路径来设计环境"
+    ],
+    "oneHighValuePoint": "对Agent而言，文档质量不等于有效引导，关键信息必须进入其执行路径，最好以错误、CLI输出、工具描述等硬信号呈现。",
+    "oneLineReview": "一篇对Agent产品设计很有启发的高质量实验解读，但证据细节依赖原文且实验透明度有限。",
+    "primaryCategory": "AI Agent设计",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为AI Agent产品与开发者工具设计的参考材料",
+    "secondaryCategories": [
+      "开发者体验",
+      "API设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结Stripe关于AI Agent使用API的12个实验，指出被动提示常被忽略，主动提示有一定效果，阻塞性错误等硬信号最有效。核心观点是Agent不会主动浏览信息，关键指令必须放在任务必经路径上。",
+    "tags": [
+      "AI Agent",
+      "硬引导",
+      "Stripe",
+      "开发者工具",
+      "Agent体验设计"
+    ],
+    "title": "yibie: # 你不能对 AI Agent 小声说话：Stripe 用 12 个实验揭示的 Agent 行为规律 Stripe 的 Minions 系列我们已经翻过两篇了",
+    "totalScore": 73.5,
+    "url": "https://x.com/yibie/status/2066359813240713285"
+  },
+  "payloadHash": "sha256:90de8894f527432d602b92fdce91d4bcc9a70a12ee28509fb16cb0ab2776623d",
+  "refs": {},
+  "revisionId": "sha256:894a90a6451b850b504ac097ac18647d5643d69a607076ff7e5c5a842a1f1515",
+  "schemaVersion": 1,
+  "updatedAt": 1781519992781
+}

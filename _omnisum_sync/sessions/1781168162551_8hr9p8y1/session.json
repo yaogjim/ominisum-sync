@@ -1,0 +1,76 @@
+{
+  "createdAt": 1781168162551,
+  "entityType": "session",
+  "id": "1781168162551_8hr9p8y1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为生产数据库梳理当前 RPO、RTO 目标和备份覆盖情况。",
+      "建立双备份策略：同服务商 PITR 加异地对象存储备份。",
+      "编写 RESTORE.md 或 Agent playbook，明确恢复步骤、授权条件和验证标准。",
+      "实现无需部署即可开启的维护模式，并覆盖 Web 请求、API 写入和后台任务。",
+      "设置定期非破坏性恢复演练，将备份恢复到临时实例并运行 sanity checks。",
+      "检查备份与恢复凭据是否遵循最小权限原则，并在冷启动 Agent 会话中验证可用性。"
+    ],
+    "archiveReason": "包含较完整的数据库灾难恢复框架、双备份策略、操作手册、安全门禁、维护模式和演练流程，具备较高实操价值",
+    "classifiedAt": 1781168550182,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "代理驱动数据库灾备演练",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "数据库灾备应同时具备 PITR 和异地备份，两者覆盖不同故障半径。",
+      "RPO 衡量可接受的数据丢失时间，RTO 衡量可接受的恢复耗时。",
+      "未经恢复验证的备份只是希望，必须定期执行恢复演练。",
+      "破坏性恢复前应先开启维护模式、冻结写入，并保存当前状态快照。",
+      "Agent 执行灾备应设置硬性安全门禁：验证失败则保持维护模式并停止操作。",
+      "逻辑备份 pg_dump 适合中小型数据库，大型或高 RPO 要求系统应考虑 WAL-G、pgBackRest、Barman 等方案。"
+    ],
+    "oneHighValuePoint": "将灾难恢复流程写成代理可执行的操作手册，并区分非破坏性验证模式与需显式授权的灾难恢复模式。",
+    "oneLineReview": "一篇实操性很强的数据库灾备自动化指南，价值主要在流程设计和安全边界，而非具体工具本身。",
+    "primaryCategory": "DevOps与灾难恢复",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为数据库灾备与代理自动化操作手册设计参考",
+    "secondaryCategories": [
+      "数据库运维",
+      "AI Agent自动化",
+      "系统可靠性"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍如何用 AI Agent 执行数据库灾难恢复：结合 PITR 与异地备份，编写可复用 playbook，设置维护模式、验证流程、安全门禁和生产演练机制，强调备份必须经过恢复测试。",
+    "tags": [
+      "灾难恢复",
+      "数据库备份",
+      "PITR",
+      "Runbook",
+      "AI Agent",
+      "Postgres",
+      "演练"
+    ],
+    "title": "如何使用代理实现灾难恢复自动化",
+    "totalScore": 78.5,
+    "url": "https://x.com/ryancarson/status/2064751272834593135"
+  },
+  "payloadHash": "sha256:9a5b9f6ca30d23ebe4f2ca8a4828f4c46498c45914c68e584fe0b5941b724330",
+  "refs": {},
+  "revisionId": "sha256:423e6a1523adb11a9e37edf14ae52974c86b2916bfd00944b626f58759b05ad1",
+  "schemaVersion": 1,
+  "updatedAt": 1781168948550
+}

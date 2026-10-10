@@ -1,0 +1,45 @@
+{
+  "createdAt": 1781671076028,
+  "entityType": "session",
+  "id": "1781671076028_05sgknzh",
+  "parentRevisionIds": [],
+  "payload": {
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1781671121224,
+        "imageId": "img-1",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# Reasonix 技术规格总结：一个配置与插件驱动的 AI Coding Agent\n\n## 1. 核心定位\n\nReasonix 是一个**AI 编程代理（coding agent）**，核心本身很薄，主要负责调度模型、工具、权限和会话循环。\n\n它的设计理念是：\n\n- **配置驱动**：模型、工具、插件都通过配置声明，不在代码里硬编码。\n- **插件驱动**：能力可以通过内置工具或外部 MCP 插件扩展。\n- **接口优先**：核心只认识 Provider、Tool 等接口，不绑定具体厂商。\n- **单二进制分发**：Go 编写，追求跨平台、低依赖、易安装。\n\n一句话概括：  \n**Reasonix 不是 “写死 DeepSeek 的工具”，而是一个可配置、可扩展、面向多模型的 AI Coding Agent 框架。**\n\n---\n\n## 2. 架构设计\n\n### 目录结构清晰\n\n项目主要由以下模块组成：\n\n- `cmd/reasonix`：CLI 入口\n- `internal/provider`：模型供应商接口与注册表\n- `internal/tool`：工具接口与工具注册表\n- `internal/plugin`：MCP 插件客户端\n- `internal/agent`：Agent 会话与执行循环\n- `internal/permission`：权限控制\n- `internal/config`：配置加载\n- `internal/command`：自定义 slash commands\n\n整体依赖方向是单向的，避免循环依赖：\n\n```text\ncli → {agent, plugin, config} → {tool, provider}\n```\n\n这意味着架构较干净，核心模块之间耦合较低。\n\n---\n\n## 3. 模型接入方式\n\n### Provider 是模型供应商抽象\n\nReasonix 通过`Provider`接口接入模型。\n\n目前的`openai`类型表示兼容 OpenAI `/chat/completions` API 的模型供应商。\n\n因此：\n\n- DeepSeek 不是特殊代码\n- MiMo 也不是特殊代码\n- 它们只是`kind =\"openai\"`的不同配置\n\n差异只体现在：\n\n- `base_url`\n- `model`\n- `api_key_env`\n\n这使得新增 OpenAI-compatible 模型时，通常只需改配置，不用改代码。\n\n### 支持多模型配置\n\n一个 provider 可以声明：\n\n- 单个模型：`model =\"...\"`\n- 多个模型：`models = [\"...\",\"...\"]`\n\n模型引用可以通过：\n\n- provider 名称\n- model 名称\n- `provider/model`\n\n来解析。\n\n---\n\n## 4. 工具系统\n\n### Tool 是统一接口\n\n所有工具都实现统一接口：\n\n```go\ntype Tool interface {\n  Name () string\n  Description () string\n  Schema () json.RawMessage\n  Execute (ctx context.Context, args json.RawMessage) (string, error)\n}\n```\n\n工具包括：\n\n- 内置工具\n- 外部 MCP 插件工具\n\n内置工具通过`init ()`自注册，运行时再根据配置启用。\n\n### 常见内置工具\n\n包括：\n\n- 读文件\n- 写文件\n- 编辑文件\n- 移动文件\n- 执行 bash\n- ls\n- glob\n- grep\n\n工具执行失败不会直接终止程序，而是把错误反馈给模型，让模型尝试自我修正。\n\n---\n\n## 5. 插件机制：兼容 MCP\n\nReasonix 支持外部插件，协议采用**JSON-RPC 2.0**，并兼容 MCP。\n\n支持的传输方式：\n\n### stdio\n\n默认方式，本地子进程插件。\n\n特点：\n\n- 通过 stdin/stdout 通信\n- 每行一个 JSON 消息\n- 适合本地工具扩展\n\n### http /streamable-http\n\n远程 MCP Server。\n\n特点：\n\n- 每次请求是 HTTP POST\n- 响应可以是 JSON 或 SSE\n- 支持静态 headers\n- 暂不支持 OAuth\n\n### sse\n\n旧版 HTTP+SSE 方式，已被上游废弃，Reasonix 识别但暂不支持。\n\n### 插件工具命名\n\n远程工具会被命名为：\n\n```text\nmcp__<server>__<tool>\n```\n\n这样可以避免和本地工具冲突，也类似 Claude Code 的命名风格。\n\n---\n\n## 6. Agent 执行循环\n\nReasonix 的核心循环是：\n\n1. 接收用户输入\n2. 构造模型请求，附带可用工具 schema\n3. 调用模型流式输出\n4. 实时打印文本\n5. 收集完整 tool calls\n6. 执行工具\n7. 将工具结果追加到上下文\n8. 继续下一轮，直到无工具调用或达到最大步数\n\n简化理解：\n\n```text\n用户任务 → 模型思考 → 调工具 → 得结果 → 再思考 → 完成\n```\n\n整个流程支持`ctx`取消，例如用户按 Ctrl-C 时中断请求或工具执行。\n\n---\n\n## 7. 双模型协作：Planner + Executor\n\nReasonix 支持两模型模式。\n\n当`planner_model`和执行模型不是同一个 provider 时，会启用`Coordinator`：\n\n### Planner\n\n负责低频规划。\n\n特点：\n\n- 有独立会话\n- 只能访问只读研究工具\n- 不能写文件、执行危险操作\n- 输出简洁计划\n\n### Executor\n\n负责执行计划。\n\n特点：\n\n- 有独立会话\n- 可以调用完整工具集\n- 根据 planner 的计划完成任务\n\n### 为什么要分开会话？\n\n核心原因是**prefix cache 稳定性**。\n\n如果两个模型混在同一个上下文里，会破坏模型前缀缓存，降低缓存命中率。  \nReasonix 通过分离会话，让两个模型的上下文各自稳定增长，提高缓存友好性。\n\n---\n\n## 8. 上下文压缩与长期任务支持\n\n长任务会逐渐填满模型上下文窗口。Reasonix 通过低频压缩解决。\n\n### 触发条件\n\n每个 provider 可以声明`context_window`。\n\n当 prompt tokens 达到上下文窗口的某个比例，例如默认`0.8`时，会触发压缩。\n\n### 压缩策略\n\nReasonix 不会粗暴清空历史，而是：\n\n- 保留正常大小的用户消息原文\n- 保留已有摘要原文\n- 只压缩 assistant/tool 的中间工作内容\n- 最近尾部避免从孤立 tool result 开始\n- 原始被压缩内容归档到本地 JSONL 文件\n\n这是一种偏 “缓存优先” 的设计：  \n平时上下文只追加，不改前缀；只有压缩时才发生一次 “缓存重置”。\n\n---\n\n## 9. 记忆与历史检索\n\nReasonix 设计了两类长期信息能力。\n\n### History Tool\n\n用于检索历史会话。\n\n支持：\n\n- 项目级搜索\n- 全局搜索\n- 检索压缩归档\n- 读取命中附近的上下文窗口\n\n搜索基于 BM25，并会提示模型如何调整查询。\n\n### Memory Tool\n\n用于管理长期记忆。\n\n支持：\n\n- 搜索记忆\n- 列出记忆\n- 读取记忆\n- 保存记忆\n- 删除过期记忆\n\n其中：\n\n- `remember`保存事实\n- `forget`删除事实，但会归档，便于追踪\n- 已归档记忆不参与主动检索\n\n### 人类审批要求\n\nAgent 主动调用`remember`或`forget`时，必须每次获得人工审批。\n\n即使处于自动批准或 YOLO 模式，也不能绕过记忆审批。\n\n---\n\n## 10. 权限系统\n\nReasonix 的权限层用于控制工具调用，尤其是文件修改和 shell 命令。\n\n### 三种决策\n\n每次工具调用都会得到一个决策：\n\n- `Allow`：允许\n- `Ask`：询问用户\n- `Deny`：拒绝\n\n权限判断独立于：\n\n- 模型\n- CLI\n- 工具实现\n\nAgent 在执行工具前统一咨询 Gate。\n\n### 规则优先级\n\n规则优先级是：\n\n```text\ndeny > ask > allow > fallback\n```\n\n例如：\n\n- 可以允许所有 Bash\n- 但单独拒绝`rm -rf*`\n- 或对某些高风险命令强制询问\n\n### Bash 权限粒度\n\n支持类似 Claude Code 的规则：\n\n```text\nBash (npm run build)\nBash (npm run test:*)\nBash (go test:*)\n```\n\n其中`:*`表示命令前缀授权，但会防止用 shell 操作符绕过，例如：\n\n```bash\ngo test ./... && rm -rf tmp\n```\n\n不会被简单的`Bash (go test:*)`覆盖。\n\n---\n\n## 11. Plan Mode 与审批模式\n\nReasonix 区分几个概念：\n\n### Plan Mode\n\n计划模式是更粗粒度的安全门。\n\n在 Plan Mode 下，所有写操作都会被拒绝，无论权限策略如何。\n\n### Tool Approval Posture\n\n工具审批姿态包括：\n\n- `ask`：需要批准\n- `auto`：自动批准\n- `yolo`：跳过大部分工具审批\n\n但注意：\n\n- `auto`不会替用户批准所有 ask 问题\n- `yolo`也不会替用户批准计划\n- 记忆写入与删除仍需要人工审批\n\n这说明 Reasonix 把 “工具权限” 和 “用户决策” 区分得比较明确。\n\n---\n\n## 12. 产品与工程价值\n\n### 对产品的启发\n\nReasonix 的核心价值不是单点模型能力，而是：\n\n- 多模型接入\n- 工具生态扩展\n- 长任务上下文管理\n- 权限与安全控制\n- 面向 coding agent 的可持续会话架构\n\n它更像是一个**AI Coding Agent Runtime**，而不是一个简单 CLI 工具。\n\n### 对工程的启发\n\n它坚持几个工程原则：\n\n- 核心小而稳定\n- 能力通过接口和注册表扩展\n- 配置优先于代码分支\n- 单二进制降低分发复杂度\n- 对模型 prefix cache 做系统级优化\n- 权限、安全、记忆作为一等能力设计\n\n---\n\n# 总结\n\nReasonix 是一个以**配置、插件、权限、缓存稳定性**为核心设计目标的 AI 编程代理框架。\n\n它通过 OpenAI-compatible provider 接入 DeepSeek 等模型，通过 MCP 插件扩展工具，通过 Planner/Executor 双模型协作处理复杂任务，并通过上下文压缩、历史检索和记忆系统支撑长周期开发任务。\n\n从产品视角看，它体现了 AI Coding Agent 的一个重要趋势：  \n**真正的壁垒不只是模型本身，而是模型之上的运行时架构、工具生态、安全边界和长期上下文管理能力。**",
+        "url": "https://repository-images.githubusercontent.com/1216785679/7d891983-5b92-40d4-81e3-7ebc365ce645",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://repository-images.githubusercontent.com/1216785679/7d891983-5b92-40d4-81e3-7ebc365ce645",
+        "role": "hero",
+        "score": 70,
+        "src": "https://repository-images.githubusercontent.com/1216785679/7d891983-5b92-40d4-81e3-7ebc365ce645",
+        "width": 0
+      }
+    ],
+    "rating": null,
+    "schema": [],
+    "schemaTypes": [],
+    "title": "DeepSeek-Reasonix/docs/SPEC.md at main-v2 · esengine/DeepSeek-Reasonix",
+    "url": "https://github.com/esengine/DeepSeek-Reasonix/blob/main-v2/docs/SPEC.md"
+  },
+  "payloadHash": "sha256:e599551dcf2af19ab7f8157f0fdffae9c0eeedbc65ef5521fd7d64293b790d45",
+  "refs": {},
+  "revisionId": "sha256:c44dda673a79420654f02ed6ea8e9feb3b5eb7e217cbc9840bd786ae4ed38139",
+  "schemaVersion": 1,
+  "updatedAt": 1781671122249
+}

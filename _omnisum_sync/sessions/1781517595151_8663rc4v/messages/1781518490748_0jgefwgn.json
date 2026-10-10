@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781518490749,
+  "entityType": "message",
+  "id": "1781518490748_0jgefwgn",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Harness提示词资源推荐\n\n**评级**: C (49分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI开发工具\n**次类别**: Prompt工程, Coding Agent\n**标签**: #Harness #System Prompt #Tool Schema #Claude Code #AI Agent\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 2 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 有一定工具发现价值，但内容本身非常薄，主要价值依赖外部链接。\n**核心高价值点**: phistory.cc 可集中查看多个 Coding Agent/Harness 的 system prompt 与 tool schema。\n\n### 摘要\n该推文推荐了 phistory.cc，一个收集 Claude Code、OpenCode、Codex 等 Harness 各版本 system prompt 与 tool schema 的网站，并提示可使用 Trace 视图获得更好的浏览体验。\n\n### 知识要点\n- phistory.cc 收录多种 Harness 的 system prompt 和 tool schema\n- Trace 视图可能更适合查看 prompt 与工具调用结构\n- 评论中补充了 Claude-Tap、ccprompt 等类似工具资源\n\n### 行动项\n- 打开 phistory.cc 检查是否包含当前关注的 Harness 或 Coding Agent\n- 对比 Claude Code、OpenCode、Codex 等系统提示词和工具 schema 的设计差异\n- 如对调试 Coding Agent 有需求，可顺手评估 Claude-Tap 和 ccprompt\n\n### 存档判定\n归档: 是 — 原因: 提供了一个可能有用的Harness system prompt与tool schema聚合网站，适合作为工具资源临时收藏。\n不推荐: 正文只是资源链接推荐，缺乏深入分析、方法论、案例验证或系统性说明。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1781518490749,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:3a41b4c32515290f25be60ef4915ce65b9078f61e419f868af063301c3f3feb2",
+  "refs": {
+    "sessionId": "1781517595151_8663rc4v"
+  },
+  "revisionId": "sha256:6520ec99f748269f10e140db5d68e4e8a82f9044eaca19806da61982724862aa",
+  "schemaVersion": 1,
+  "updatedAt": 1781518490749
+}

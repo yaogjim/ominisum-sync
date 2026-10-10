@@ -1,0 +1,67 @@
+{
+  "createdAt": 1781661071838,
+  "entityType": "session",
+  "id": "1781661071838_95b1znss",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查本机 WorkBuddy 安装目录，寻找已安装 skill 的存放位置。",
+      "对比 WorkBuddy skill 与 GitHub 上同类 skill 的质量和可复用性。",
+      "如找不到目录，可询问软件内 AI 助手或查看应用配置文件路径。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781661090148,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "WorkBuddy技能库用法",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "WorkBuddy 可被视为面向工作场景的 AI Agent/助手产品。",
+      "桌面端 AI 工具的本地安装目录中可能包含可复用的 skill 或插件资源。",
+      "腾讯精选 skill 可能在质量控制上优于开放平台中随机搜索到的同类资源。"
+    ],
+    "oneHighValuePoint": "将 WorkBuddy 作为高质量 skill 来源，并通过本地安装目录提取或参考其 skill。",
+    "oneLineReview": "有一个具体小技巧，但整体信息碎片化，证据和方法论支撑不足。",
+    "primaryCategory": "AI工具",
+    "rating": "C",
+    "rejectReason": "内容较短且主要是个人经验分享，缺少完整方法、验证数据和可复用框架，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent应用",
+      "效率工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为 WorkBuddy 在工作场景中被低估，可将其视为工作版豆包，并提到一种用法：把 WorkBuddy 当作 skill store，通过本地安装目录寻找腾讯精选 skill，可能比直接在 GitHub 搜索质量更高。",
+    "tags": [
+      "WorkBuddy",
+      "AI Agent",
+      "Skill Store",
+      "工作流",
+      "腾讯"
+    ],
+    "title": "x.com/frxiaobei/status/2066903277242073172",
+    "totalScore": 46.5,
+    "url": "https://x.com/frxiaobei/status/2066903277242073172"
+  },
+  "payloadHash": "sha256:b7e9c03596cac35291551e59f53eacbd5a5af0e0c27384e372aa5770c794e75d",
+  "refs": {},
+  "revisionId": "sha256:cf52e46b79e4b946fb530e1c68794e3de97fd449ba76aaf20df37f34745797a1",
+  "schemaVersion": 1,
+  "updatedAt": 1781662506469
+}

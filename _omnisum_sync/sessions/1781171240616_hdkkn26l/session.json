@@ -1,0 +1,71 @@
+{
+  "createdAt": 1781171240616,
+  "entityType": "session",
+  "id": "1781171240616_hdkkn26l",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在Claude Code中尝试为一个复杂研究或代码审查任务创建dynamic workflow，并设置明确token预算。",
+      "整理一套常用workflow模板，如对抗验证、扇出综合、锦标赛评审和规则verifier。",
+      "将高频可复用workflow保存到~/.claude/workflows或封装进skill中，便于后续调用。",
+      "在需要事实核查或技术审查的任务中加入独立verifier agent，减少自我偏差。"
+    ],
+    "archiveReason": "提供了Claude Code动态工作流的核心原理、适用场景、可复用模式和落地技巧，对AI辅助研发和复杂任务编排有持续参考价值。",
+    "classifiedAt": 1781171350011,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code动态工作流实践",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "动态工作流本质上是Claude Code实时生成的JavaScript harness，用于协调多个subagents并可选择模型、worktree和恢复策略。",
+      "默认单context模式在长任务、大规模并行、强结构化或对抗性任务中容易出现偷懒、自我偏好偏差和目标漂移。",
+      "常见可复用模式包括分类并执行、扇出并综合、对抗式验证、生成并筛选、锦标赛、循环至完成。",
+      "适用场景包括代码迁移与重构、深度研究、事实核查、排序、规则遵循、大规模分类、设计探索、评估和模型路由。",
+      "workflow会显著增加token消耗，适合复杂高价值任务，不适合普通编码任务滥用。"
+    ],
+    "oneHighValuePoint": "将复杂任务拆解为多个独立context的subagents，并通过对抗验证、扇出综合、锦标赛等模式降低偷懒、自我偏差和目标漂移。",
+    "oneLineReview": "这是一篇关于Claude Code动态工作流的高价值实践概览，方法论清晰、场景丰富，但证据和实测细节仍偏有限。",
+    "primaryCategory": "AI工具与智能体工作流",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "Claude Code",
+      "Agent编排",
+      "软件工程效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Claude Code动态工作流能力：通过即时生成JavaScript编排脚本，调度多个独立subagents完成研究、验证、排序、重构、分类等复杂任务，并总结扇出综合、对抗验证、锦标赛、循环至完成等可复用模式。",
+    "tags": [
+      "Claude Code",
+      "dynamic workflow",
+      "subagents",
+      "AI编程",
+      "工作流编排"
+    ],
+    "title": "Claude Code 动态工作流： 每个任务都可以有自己的 Harness【译】",
+    "totalScore": 77,
+    "url": "https://x.com/MinLiBuilds/status/2062068646902689895"
+  },
+  "payloadHash": "sha256:8f82d5aed17c93496bb76ab3e5398a1d9bcfbe64eca166beae6c0abec9d490a3",
+  "refs": {},
+  "revisionId": "sha256:f7d43711d7d20da927dc916ff045c257d161d7238583c7d073cfe6843cccf8c2",
+  "schemaVersion": 1,
+  "updatedAt": 1781171801385
+}

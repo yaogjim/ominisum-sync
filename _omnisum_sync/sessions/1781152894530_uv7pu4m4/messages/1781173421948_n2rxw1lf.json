@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781173421949,
+  "entityType": "message",
+  "id": "1781173421948_n2rxw1lf",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Coding Agent旧读陷阱\n\n**评级**: A (70.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI Agent工程\n**次类别**: Coding Agent, 软件工程安全\n**标签**: #stale read #agent harness #file state #代码编辑安全 #上下文管理\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 一篇短小但抓住Coding Agent工程核心风险的高价值设计笔记。\n**核心高价值点**: 转录文本不等于文件真相，Harness必须独立维护可验证的File State Records。\n\n### 摘要\n文章指出Coding Agent可能基于对话记录中的旧文件内容继续编辑，造成“旧读陷阱”。作者强调Harness必须维护独立的文件真实状态，包括读取范围、完整性、mtime、大小、hash和baseline，并在编辑前验证是否基于最新文件事实。\n\n### 知识要点\n- Coding Agent不能仅依赖conversation transcript判断文件当前状态，workspace才是事实来源\n- read_file应被视为一种安全合同，而不仅是普通工具输出\n- 部分读取不应自动授权高风险的整文件编辑\n- Harness应跟踪路径、行范围、总行数、完整读取标记、mtime、文件大小、SHA-256和baseline文本\n- 外部修改、文件删除、过大文件变化等应触发stale warning或强制重新读取\n\n### 行动项\n- 在Agent Harness中为每次read_file建立File State Record\n- 对patch或write操作增加基线新鲜度校验\n- 对仅局部读取后尝试整文件重写的操作进行拒绝或要求完整读取\n- 在session resume时恢复文件可信状态而不仅恢复对话文本\n\n### 存档判定\n归档: 是 — 原因: 提出了Coding Agent文件状态管理中的关键风险和可复用设计原则，对Agent Harness设计有长期参考价值\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1781173421949,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:7928ce486e0bac2610d6a38d7c9d9b37d8147ccb6fbcc42d5866718922a6e6c7",
+  "refs": {
+    "sessionId": "1781152894530_uv7pu4m4"
+  },
+  "revisionId": "sha256:0b4b6576b55ecbe85bea571baeb5e8a7875cbcdf02b4e42679483a1423eec5bc",
+  "schemaVersion": 1,
+  "updatedAt": 1781173421949
+}

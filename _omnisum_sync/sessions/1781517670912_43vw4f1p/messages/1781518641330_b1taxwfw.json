@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781518641331,
+  "entityType": "message",
+  "id": "1781518641330_b1taxwfw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: CCOnline架构要点简述\n\n**评级**: C (45分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI开发工具\n**次类别**: 云原生架构, 在线编码环境\n**标签**: #Claude Code #Cloudflare Sandbox #存算分离 #WebSocket #R2\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 4 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 适合作为架构线索速览，但不具备深入学习或长期保存价值。\n**核心高价值点**: 将 Cloudflare Sandbox 定位为临时计算容器，并通过 R2 承载用户生产资料，体现了存算分离思路。\n\n### 摘要\n该推文简要讨论 CCOnline 类在线 Claude Code 运行环境的架构，核心包括 WebSocket 终端通信、Cloudflare Sandbox 临时容器、R2 存储用户资料，以及计费、预览、部署和防注入等工程问题。\n\n### 知识要点\n- 在线 Claude Code 环境可通过 WebSocket 连接仿真终端，实现实时输入输出交互。\n- 此类系统的复杂点不仅在运行容器，还包括计费、预览、部署和防注入等配套能力。\n\n### 行动项\n- 如需实现类似系统，可进一步调研 Cloudflare Sandbox、R2 与 WebSocket 终端集成方案。\n- 整理在线代码执行环境的安全风险清单，重点关注注入防护和用户数据隔离。\n\n### 存档判定\n归档: 否\n不推荐: 内容较短，仅提供架构关键词和问题清单，缺少完整方案、实现细节和证据支撑。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1781518641331,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:aa393566f5a01e84c7f78297aef93b374d6acd4ddbae765c742239b0fc8916c2",
+  "refs": {
+    "sessionId": "1781517670912_43vw4f1p"
+  },
+  "revisionId": "sha256:4d3e50d0b636040fa34b2d2a8e43a05b4d6394f96e59e7a2f35531a4a9f836da",
+  "schemaVersion": 1,
+  "updatedAt": 1781518641331
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1781660960575,
+  "entityType": "session",
+  "id": "1781660960575_mb4mdc10",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在选择AI开发基础设施时，关注API稳定性和文档版本管理。",
+      "对频繁破坏性变更的SDK或API，建立明确版本隔离和示例测试机制。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781660978990,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI时代API迭代命名启示",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Sandbox 类产品可能正在成为 AI 云服务平台的重要收入来源。",
+      "AI模型可能内化旧版API和文档，导致调用快速迭代产品时更容易出错。",
+      "产品迭代策略在AI时代需要考虑模型知识滞后问题。"
+    ],
+    "oneHighValuePoint": "在AI辅助编程场景下，频繁修改旧项目API可能被模型旧知识干扰，新命名新项目有助于降低接口混淆。",
+    "oneLineReview": "一个有启发但证据不足的AI开发工具使用观察。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容篇幅很短，主要是个人观察和推测，缺少数据、案例和系统论证，参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "云服务",
+      "产品策略"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者观察到 Sandbox 可能成为 Modal 的核心收入来源，并推测 Cloudflare 相关业务也可能增长。同时分享从 Modal 切换到 E2B 的原因：API和文档变动快导致AI生成旧接口代码，提出新项目新命名可能更适合AI时代。",
+    "tags": [
+      "Sandbox",
+      "Modal",
+      "Cloudflare",
+      "E2B",
+      "API文档"
+    ],
+    "title": "x.com/iamai_omni/status/2066748218898321592",
+    "totalScore": 40.5,
+    "url": "https://x.com/iamai_omni/status/2066748218898321592"
+  },
+  "payloadHash": "sha256:120d4caec86ee84e37b2c33a7471dda2fdea16fa55e06456a6cdfd1d280048ba",
+  "refs": {},
+  "revisionId": "sha256:6aa2047ae75ddb18f0a7b6e24aeb72bf27f340044584078e702676e7ded7cfeb",
+  "schemaVersion": 1,
+  "updatedAt": 1781662536466
+}

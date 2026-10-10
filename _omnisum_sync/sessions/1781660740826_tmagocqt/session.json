@@ -1,0 +1,69 @@
+{
+  "createdAt": 1781660740826,
+  "entityType": "session",
+  "id": "1781660740826_tmagocqt",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在Agent设计中增加上下文投影层，将完整日志、模型上下文和应用状态分离。",
+      "为大日志、测试输出、grep结果等工具返回实现preview机制，并保留完整内容以便追溯。",
+      "设计context pressure监控、warning threshold和hard blocking threshold，在模型调用前触发压缩。",
+      "将已完成的旧片段显式折叠为summary，并保留compact boundary以支持resume和debug。"
+    ],
+    "archiveReason": "提出了将上下文视为投影的框架，并区分durable log、model-visible context与app state，对Agent架构设计有参考价值",
+    "classifiedAt": 1781660765074,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Coding Agent上下文投影",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "成熟的Coding Agent应区分durable log、model-visible context和app state，避免依赖完整transcript维持状态。",
+      "上下文投影应在模型调用前完成，根据当前任务、证据、上下文压力和运行时状态选择模型可见内容。",
+      "大规模tool output不应随机截断，而应保留完整结果在prompt外，同时向模型提供稳定preview和必要metadata。",
+      "auto-compact需要阈值、阻断机制、递归防护以及压缩后状态恢复，不能只是简单触发总结。"
+    ],
+    "oneHighValuePoint": "将上下文管理定义为“从完整历史到模型下一步所需视图的投影”，并明确区分完整日志、模型可见上下文和结构化应用状态。",
+    "oneLineReview": "概念框架清晰，适合启发Agent上下文架构设计，但缺少实现细节、案例和数据支撑。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为设计Coding Agent上下文管理机制的概念性备忘",
+    "secondaryCategories": [
+      "上下文管理",
+      "LLM应用架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章讨论Coding Agent中的上下文管理，指出不能简单追加全部历史，而应将完整日志投影为模型下一步所需的精简视图，并通过预览、摘要、压缩、状态注入等机制控制上下文压力。",
+    "tags": [
+      "Coding Agent",
+      "Context Management",
+      "Harness",
+      "上下文压缩",
+      "多轮循环"
+    ],
+    "title": "上下文是一种投影",
+    "totalScore": 66,
+    "url": "https://x.com/dongxi_nlp/status/2066991890348572950"
+  },
+  "payloadHash": "sha256:564caad679054e4d3f586b1ab1b66d4f354677f528c09d64c1d477a4a5d2add8",
+  "refs": {},
+  "revisionId": "sha256:988b347dd078db086426d81dee6a0fb80410607fa89a15d8d0da470b889322a9",
+  "schemaVersion": 1,
+  "updatedAt": 1781662511915
+}

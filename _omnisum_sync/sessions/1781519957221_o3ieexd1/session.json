@@ -1,0 +1,70 @@
+{
+  "createdAt": 1781519957221,
+  "entityType": "session",
+  "id": "1781519957221_o3ieexd1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在选择开源协议前，先明确目标是生态扩散、企业采用、强制回馈还是防止 SaaS 白嫖。",
+      "为项目建立一张协议选择表：MIT/BSD、Apache、MPL、GPL、AGPL 分别对应不同下游义务。",
+      "涉及商业化或专利风险时，不仅看开源协议宽松程度，还要重点检查专利授权、商标和商业授权条款。"
+    ],
+    "archiveReason": "对常见开源协议误区进行了清晰纠偏，并提供了可复用的协议选择框架，适合作为快速参考材料。",
+    "classifiedAt": 1781520355326,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "开源协议常见误区纠偏",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "GPLv3 允许商用和复制，但要求发布修改或衍生版本时同样以 GPL 开源。",
+      "AGPLv3 允许商用，核心是补上 SaaS 场景下修改代码不回馈源码的漏洞。",
+      "MIT、BSD、Apache 属于宽松协议，其中 Apache 2.0 的重要特点是显式专利授权和专利反诉条款。",
+      "想通过开源代码要求别人付费，通常需要双协议或商业授权，而不是单靠 OSI 开源协议本身。",
+      "DeepSeek 的部分模型权重和代码采用 MIT 协议，体现了降低使用门槛、扩大生态影响力的策略。"
+    ],
+    "oneHighValuePoint": "开源协议管的是“下游必须开源到什么程度”，而不是“能不能赚钱或要不要付钱”。",
+    "oneLineReview": "一篇短小但有用的开源协议误区纠偏，适合快速建立正确认知。",
+    "primaryCategory": "开源与软件许可",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "软件工程",
+      "技术商业化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章纠正了对 GPL、AGPL、BSD、Apache、MIT 等开源协议的常见误解，强调开源协议核心不是限制赚钱或要求付费，而是约束下游开源义务，并以 DeepSeek 采用 MIT 协议作为案例说明其生态扩张策略。",
+    "tags": [
+      "开源协议",
+      "GPL",
+      "AGPL",
+      "MIT",
+      "Apache",
+      "DeepSeek"
+    ],
+    "title": "BadUncle: 我不懂开源，我让opus帮我做了一个评价，并结合deepseek作为案例分析 ------ 总结不太对,有几处是硬伤",
+    "totalScore": 71,
+    "url": "https://x.com/BadUncleX/status/2065203279454412965"
+  },
+  "payloadHash": "sha256:3b1901c020ac8cd0fdf73fec9cbf3278de233fefba07b058baeea2e49fa5eb35",
+  "refs": {},
+  "revisionId": "sha256:9a48f7d1cb8eb8ef742ba140b23df959b4d3b7184a3df2b1ca01a6ff1418af5a",
+  "schemaVersion": 1,
+  "updatedAt": 1781520356069
+}

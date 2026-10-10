@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781599009447,
+  "entityType": "message",
+  "id": "1781599287591_wie2rlgz",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Obelisk v0.1.0 深度总结\n\n## 一句话概括\n\n**Obelisk 是一个给 Claude Code 会话加“记忆层 + 检索层 + 可视化管理界面”的本地工具，让过去的 coding 对话不再沉睡，而是能被 agent 继续利用。**\n\n---\n\n## 核心内容总结\n\n### 1. 解决的问题\n\nClaude Code 产生了大量历史 session，但它们通常只是存在文件夹里，难以复用。\n\nObelisk 想解决的是：\n\n- 过去的对话不能被有效检索\n- agent 容易重复询问、重复推理\n- 用户很难看清 agent 保存了什么记忆\n- coding 过程缺少长期回顾与整理\n\n---\n\n### 2. 主要功能\n\n| 功能 | 作用 |\n|---|---|\n| 历史 session 检索 | agent 可快速追溯旧对话、旧决策、旧代码上下文 |\n| Markdown 记忆管理 | 查看 agent 保存了哪些记忆、来源于哪些消息 |\n| Archive 机制 | 用户可归档过时记忆，避免污染上下文 |\n| Recap 周报 | 用 `/obelisk recap this week` 生成一周 coding 体验总结卡片 |\n| Companion App | 用 Obelisk App 阅读 Claude Code 消息，作为辅助界面 |\n| 本地存储 | session 数据存在本地 SQLite，强调数据属于用户 |\n\n---\n\n### 3. 技术变化\n\n相比初版，作者提到使用了 **skillOpt** 优化 agent 检索表现。\n\n主要提升在两方面：\n\n- **token efficiency**：减少不必要 token 消耗\n- **retrieval quality**：提高检索相关性和准确性\n\n---\n\n### 4. 当前限制\n\n从评论和作者回复看，目前主要问题是：\n\n- 用户需要更清晰的 use case，否则不容易理解痛点\n- 当前主要支持 Claude Code\n- Codex、OpenCode、Piquant 等其他 agent 工具尚未支持\n- Codex 的 jsonl 结构较复杂，所以优先做了 Claude Code 版本\n\n---\n\n# 深入浅出解读\n\n## Obelisk 到底是什么？\n\n可以把它理解成：\n\n> **Claude Code 的“本地记忆管理器 + 搜索引擎 + 对话浏览器”。**\n\nClaude Code 每次帮你写代码、改 bug、解释项目时，都会产生大量上下文。\n\n但这些上下文如果不能被重新调用，就像一本本笔记扔进抽屉里。\n\nObelisk 的作用，就是把这些抽屉里的笔记整理成一个可以搜索、可以回顾、可以管理的知识库。\n\n---\n\n## 它为什么有价值？\n\n对普通用户来说，最大的价值不是“存聊天记录”，而是：\n\n### 1. 避免重复沟通\n\n以前你可能要反复告诉 agent：\n\n- 项目结构是什么\n- 为什么之前这么设计\n- 哪些方案已经试过\n- 哪些坑已经踩过\n\n有了检索层后，agent 可以自己查过去的 session。\n\n---\n\n### 2. 让 AI 记忆可见、可控\n\n很多 AI 工具说自己有 memory，但用户并不知道：\n\n- 它记了什么\n- 什么时候记的\n- 根据哪段对话记的\n- 是否已经过时\n\nObelisk 把这些记忆以 markdown 形式展示出来，并允许用户 archive。\n\n这点很重要：  \n**不是让 AI 随便记，而是让人能审计、管理、修正 AI 的记忆。**\n\n---\n\n### 3. 把 coding 过程变成资产\n\n过去的 coding session 可能只是临时对话。\n\nObelisk 试图把它们变成：\n\n- 可搜索的开发历史\n- 可复用的项目知识\n- 可总结的工作记录\n- 可沉淀的个人工程经验\n\n这比单纯“聊天记录备份”更进一步。\n\n---\n\n# 本质判断\n\nObelisk 做的不是一个简单的聊天记录 App，而是在探索：\n\n> **AI 编程时代的个人开发记忆基础设施。**\n\n当 agent 越来越频繁参与开发，真正稀缺的不是单次回答，而是：\n\n- 长期上下文\n- 项目历史\n- 决策来源\n- 人与 agent 的协作轨迹\n\nObelisk 的方向，就是让这些东西沉淀下来，并重新服务未来的开发。\n\n---\n\n# 辩证思考\n\n## 值得肯定的地方\n\n### 1. 方向很对\n\nAI coding 的核心瓶颈之一就是上下文断裂。\n\n谁能更好管理长期上下文，谁就能提升 agent 的连续工作能力。\n\n---\n\n### 2. 本地优先很重要\n\n数据存本地 SQLite，符合开发者对隐私、代码安全、数据主权的需求。\n\n这比把所有 session 上传云端更容易获得信任。\n\n---\n\n### 3. “记忆可审计”是关键设计\n\nAI memory 如果不可见，就容易变成黑箱。\n\nObelisk 允许用户查看、追溯、归档记忆，这比单纯自动记忆更健康。\n\n---\n\n## 需要警惕的问题\n\n### 1. 痛点表达还不够直观\n\n评论里有人说“需要 user case”，这很准确。\n\n目前功能听起来很强，但用户第一反应可能是：\n\n> 我为什么需要它？它能帮我每天省下什么？\n\n如果没有典型场景，很难破圈。\n\n---\n\n### 2. 检索质量决定生死\n\n历史 session 多了以后，问题不是能不能搜，而是：\n\n- 搜得准不准\n- 会不会引入过时信息\n- 会不会污染当前推理\n- 会不会浪费 token\n\n如果检索层不够好，反而可能降低 agent 表现。\n\n---\n\n### 3. 多 agent 支持会影响天花板\n\n目前主要支持 Claude Code，但用户工作流可能混用：\n\n- Claude Code\n- Codex\n- OpenCode\n- Cursor\n- Devin-like 工具\n- 自建 agent\n\n如果 Obelisk 只绑定单一工具，价值会受限。  \n如果未来能成为跨 agent 的本地记忆层，想象空间会大很多。\n\n---\n\n### 4. 记忆管理本身也可能变成负担\n\n用户虽然可以 archive 记忆，但如果需要频繁手动清理，就会增加心智成本。\n\n理想状态应该是：\n\n- 自动生成\n- 自动分类\n- 自动过期提醒\n- 人只做关键确认\n\n否则“管理 AI 的记忆”可能变成新的杂务。\n\n---\n\n# 最终评价\n\nObelisk v0.1.0 是一个很早期但方向清晰的产品。\n\n它的核心价值在于：\n\n> **把 AI coding 过程中的临时对话，转化为可检索、可管理、可复用的长期记忆。**\n\n短期看，它需要更清楚的使用场景和更广泛的工具支持。  \n长期看，如果检索质量、记忆治理和跨 agent 兼容做好，它有机会成为开发者本地 AI 工作流里的基础组件。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1781599009447,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d64073802014e204ab1ee328d1613f4620c143a7af1ac383c8d2f1f63b5844ee",
+  "refs": {
+    "sessionId": "1781599287058_muusvdm2"
+  },
+  "revisionId": "sha256:f13b0dd645f6fd7683c53885114086a4b202faf12e9ff1eb3f81e8f1a8ecf731",
+  "schemaVersion": 1,
+  "updatedAt": 1781599009447
+}

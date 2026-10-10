@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781520879438,
+  "entityType": "message",
+  "id": "1781521068482_sgj5i4ym",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 用本地 LLM 将自然语言转成 Ideogram BBox 提示\n\n## 核心内容\n\n作者分享了一个工具思路：  \n把用户输入的自然语言描述，自动转换成 **Ideogram 可用的 bbox（边界框）提示词**。\n\n也就是说，用户不需要手动设计每个对象的位置和大小，只要描述画面内容，LLM 就能帮你生成结构化的 bbox 布局提示。\n\n## 解决的问题\n\n过去使用 Ideogram 等图像生成工具时，如果想精准控制画面布局，需要手动创建 bbox，过程繁琐、门槛较高。\n\n这个工具希望做到：\n\n- 用自然语言描述画面\n- 自动生成 bbox 提示\n- 降低构图和布局控制成本\n- 让 AI 帮用户完成空间规划\n\n## 技术实现\n\n作者提到该方案可以 **完全本地运行**，使用：\n\n- `llama.cpp`\n- Qwen 模型\n\n这意味着它不依赖云端 LLM API，适合本地部署，也避免了额度限制问题。\n\n## 示例场景\n\n作者给出的示例是：\n\n> 一个简单示意图，展示三个并排站立的孩子，从左到右身高递增：左边最矮，中间中等，右边最高。\n\nLLM 会根据这类自然语言描述，自动推导出三个孩子在画面中的位置、大小和排列关系。\n\n## 使用方式\n\n作者表示该工具可以通过 **Pinokio 一键使用**，降低了安装和体验门槛。\n\n## 相关讨论\n\n热门回复中还提到了一些相近方向的 AI 工具：\n\n- 开源的 2D 动画代理：可从 Prompt 和图片生成游戏精灵图，并自动合成到 2D 场景中\n- NVIDIA 发布人类 3D 模型 SOMA-X v0.2：可用单一骨架适配不同体型，面向机器人和物理 AI\n\n## 一句话总结\n\n这是一个本地运行的 AI 辅助布局工具，能把自然语言画面描述自动转成 Ideogram bbox 提示，让用户更轻松地控制图像生成中的构图与对象位置。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781520879438,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:464ec4848ac0816cdb3a8840e9361542aee1afeff8e6ca14a5ecdc6accd88907",
+  "refs": {
+    "sessionId": "1781521068078_ocryu75j"
+  },
+  "revisionId": "sha256:b92e656b78cc483ccf265ec0d749093755761c2b0c7acd7652d112cbfb3a689d",
+  "schemaVersion": 1,
+  "updatedAt": 1781520879438
+}

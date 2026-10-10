@@ -1,0 +1,76 @@
+{
+  "createdAt": 1781000905731,
+  "entityType": "session",
+  "id": "1781000905731_ihu8qnf0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为当前项目整理一个 SKILL.md，写入构建命令、测试方式、代码规范和常见坑。",
+      "尝试用 Claude Code 或 Codex 设计一个每日 CI failure triage automation。",
+      "在多 agent 并行任务中引入 git worktree 隔离，避免修改冲突。",
+      "为高风险任务配置独立 reviewer sub-agent，专门检查实现质量、安全性和测试覆盖。",
+      "建立一个 markdown 状态文件或 Linear board，用于记录 loop 已尝试事项、未完成事项和下一步行动。",
+      "限制无人值守 loop 的权限和 token 消耗，先从低风险、可验证的任务开始试验。"
+    ],
+    "archiveReason": "文章提出了较完整的 Loop Engineering 框架，覆盖自动化、worktree、skills、connectors、sub-agents 和 memory，具备方法论复用价值。",
+    "classifiedAt": 1781052403045,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Loop工程与编码代理协作",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Loop Engineering 的核心是设计系统去提示 agent，而不是人工逐轮提示 agent。",
+      "一个有效 loop 通常包含 automations、worktrees、skills、connectors、sub-agents 和持久化 memory。",
+      "git worktree 可为多个并行 agent 提供隔离环境，减少文件冲突。",
+      "skills 用于沉淀项目约定、构建步骤和历史经验，降低每次 session 的冷启动成本。",
+      "connectors 通过 MCP 接入 issue tracker、数据库、Slack、CI 等真实工作环境。",
+      "sub-agent 适合承担探索、实现、审查等不同角色，尤其适合 maker-checker 分离。",
+      "长期运行的 agent 必须依赖外部状态文件或任务板保存进度，因为模型会忘记上下文。",
+      "Loop 提升杠杆，但不能替代工程师的 review、理解和最终责任。"
+    ],
+    "oneHighValuePoint": "将 maker 与 checker 拆分，并让独立 verifier 判断任务是否完成，是降低 AI slop 风险的关键设计。",
+    "oneLineReview": "这是一篇较系统的 AI 编程工作流方法论文章，实用性强，但证据主要来自经验判断而非严谨数据。",
+    "primaryCategory": "AI编程工作流",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为设计 AI 编程自动化工作流的参考框架",
+    "secondaryCategories": [
+      "Agent工程",
+      "软件工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Loop Engineering：从直接提示 coding agent，转向设计可持续运行的自动化循环系统。其核心组件包括自动化、工作树、技能、连接器、子代理和外部记忆，并强调验证、人类理解和判断力仍不可替代。",
+    "tags": [
+      "Loop Engineering",
+      "Coding Agent",
+      "Claude Code",
+      "Codex",
+      "自动化工作流",
+      "Maker-Checker"
+    ],
+    "title": "回路工程",
+    "totalScore": 73.5,
+    "url": "https://x.com/cellinlab/status/2064144608242679822"
+  },
+  "payloadHash": "sha256:1245d1913c6f7b80adb208c65f23086918dd6847b5b126a2b66b4d1eaaa7497d",
+  "refs": {},
+  "revisionId": "sha256:fc5fa6082c2a96dd2cc4aeca628418c6f7a5fecfe35c58598557dcf3d316b365",
+  "schemaVersion": 1,
+  "updatedAt": 1781170336248
+}

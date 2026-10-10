@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781660960218,
+  "entityType": "message",
+  "id": "1781660960217_p5c057kh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Impeccable3.7设计检查\n\n**评级**: C (45.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: 开发工具\n**次类别**: AI编程, UI设计系统\n**标签**: #Impeccable #设计检查 #AI代理 #Design System #CLI\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 3 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 适合了解该工具新功能，但更像发布公告而非高价值技术文章。\n**核心高价值点**: 将设计系统规则接入 AI 编程代理的 UI 编辑流程，在每次 UI 修改后自动检测设计偏差。\n\n### 摘要\n文章介绍 Impeccable 3.7 的更新，包括为 Claude、Codex、Cursor 提供设计检查 Hooks，基于 DESIGN.md 检测设计系统偏差，增强 Svelte/SvelteKit 实时预览、CLI、忽略项管理和规则检测能力。\n\n### 知识要点\n- Impeccable 3.7 支持从 DESIGN.md 读取排版、调色板、圆角和设计令牌进行项目感知检测。\n- Hooks 可集成 Claude、Codex 和 Cursor，在 UI 编辑后提示代理修复设计不一致问题。\n- CLI 与 Hooks 共享检测引擎和忽略项配置，降低配置割裂。\n\n### 行动项\n- 如正在使用 AI 编程代理生成 UI，可尝试安装 npx impeccable 评估其设计检查效果。\n- 检查项目中是否已有清晰的 DESIGN.md 或设计令牌文档，以便支持类似自动化设计审查流程。\n\n### 存档判定\n归档: 否\n不推荐: 内容偏产品发布和功能宣传，缺少案例、数据和方法论展开，长期参考价值有限。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1781660960218,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:96a4c6040e3bc3d48c4c4eae024ae2c63599ccd35b162d6b273c975e13e360c7",
+  "refs": {
+    "sessionId": "1781660940000_52bvxxyr"
+  },
+  "revisionId": "sha256:b5f28fd82cbf8fd9fcf76a0130fd1db513820bf1833c2d4f9be13dd71211c5d0",
+  "schemaVersion": 1,
+  "updatedAt": 1781660960218
+}

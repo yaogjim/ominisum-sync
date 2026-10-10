@@ -1,0 +1,70 @@
+{
+  "createdAt": 1781000900856,
+  "entityType": "session",
+  "id": "1781000900856_w0ifjxhh",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将文中的五步循环整理成自己的Agent工作流检查清单",
+      "在实际Agent任务中先实现is_done、build_prompt、act_and_capture和guardrail四类函数",
+      "为长时间运行的Agent循环加入最大轮次、成本预算和人工审批节点",
+      "识别循环中反复出现的操作，并抽象为可复用工具或技能"
+    ],
+    "archiveReason": "包含较完整的Agent循环基础框架，可作为设计自动化代理工作流时的检查清单",
+    "classifiedAt": 1781052392436,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI代理循环设计框架",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent循环应先用代码定义明确的完成条件，如测试通过、输出符合schema或评分超过阈值",
+      "提示应由当前状态构建，包括目标、文件、错误日志、历史尝试和可用工具",
+      "每轮执行后必须捕获diff、日志、错误、成本和新状态，这些结果会成为下一轮提示的输入",
+      "停止条件是Agent循环的安全护栏，包括最大轮次、预算限制和高风险操作的人类确认",
+      "重复执行的步骤应沉淀为可复用技能，减少模型每轮重新推理带来的成本"
+    ],
+    "oneHighValuePoint": "把提示从一次性指令转为由状态自动生成的上下文，并通过结果反馈驱动下一轮行动。",
+    "oneLineReview": "一篇适合入门的Agent循环设计教程，框架清晰但新意和证据支撑有限。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "B",
+    "rejectReason": "内容较基础，表达重复，案例和证据不足，部分段落有明显AI生成式模板化痕迹",
+    "retentionDecision": "短期参考后可归档，作为Agent循环设计的基础清单保留",
+    "secondaryCategories": [
+      "提示工程",
+      "自动化工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍AI代理循环的五个组成部分：定义完成标准、构建上下文、执行并捕获结果、反馈闭环、设置停止条件，并强调成本控制、人类检查点和可复用技能的重要性。",
+    "tags": [
+      "AI代理",
+      "Agent Loop",
+      "上下文工程",
+      "反馈循环",
+      "停止条件"
+    ],
+    "title": "如何设计一个用来提示你的代理的循环？",
+    "totalScore": 63,
+    "url": "https://x.com/amitiitbhu/status/2063983640535847093"
+  },
+  "payloadHash": "sha256:97a7cd89e20ca6e779b61a40ed5d0b55a7b2b92ff4d182ea3e0bc6845b9c1d5f",
+  "refs": {},
+  "revisionId": "sha256:b3a4b42fa0bfdf2f33804d33df5aaa9093c27289a575ec765ec748eee73a9749",
+  "schemaVersion": 1,
+  "updatedAt": 1781170403404
+}

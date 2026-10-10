@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776322821435,
+  "entityType": "session",
+  "id": "1776322821435_afiu65ph",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若确有TTS选型需求，基于文中提到的模型自行建立价格、音质、克隆效果、延迟四维评测表",
+      "放弃保存该帖，转而搜索系统化的TTS横评、官方文档和真实样例对比"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776325529755,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "TTS性价比求推荐讨论",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息噪声高、证据薄弱、可复用价值极低，后续检索到更系统的TTS评测会显著优于保留该帖。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "阿里百炼平台集成了多个TTS模型可供试用",
+      "IndexTTS 2被个别回复认为更适合生产场景"
+    ],
+    "oneHighValuePoint": "唯一相对有用的信息是回复中给出了可进一步验证的候选方案名单，如CosyVoice、QwenTTS、MiniMax和IndexTTS 2。",
+    "oneLineReview": "有一点线索价值，但整体更像噪声较高的零散评论串，不值得留存。",
+    "primaryCategory": "AI工具选型",
+    "rating": "E",
+    "rejectReason": "主体内容只是泛泛提问，回复数量少且夹杂明显无关广告，缺乏系统比较、价格数据和使用场景拆解。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "语音合成TTS",
+      "社交媒体讨论"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一条关于“高性价比TTS方案”的社交媒体求推荐帖，少量有效回复提到阿里百炼中的CosyVoice、QwenTTS、MiniMax，以及开源方向的IndexTTS 2，但没有给出完整评测维度、价格对比或样本验证。",
+    "tags": [
+      "TTS",
+      "语音合成",
+      "工具推荐",
+      "阿里百炼",
+      "IndexTTS"
+    ],
+    "title": "Mr Panda: 求推荐哪家tts 最具性价比，开源或闭源、付费或免费都可以",
+    "totalScore": 24,
+    "url": "https://x.com/PandaTalk8/status/2044393010893644172"
+  },
+  "payloadHash": "sha256:000fe263486870856dda089d87fb9854b6f7146dd202721ab0ea94c54d1a6d11",
+  "refs": {},
+  "revisionId": "sha256:39a7aac26b14e328317da16a2a1640a8f4212ece9f6075fd9445e400eccf071f",
+  "schemaVersion": 1,
+  "updatedAt": 1776643871994
+}

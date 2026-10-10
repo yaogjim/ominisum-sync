@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781660766039,
+  "entityType": "message",
+  "id": "1781660766038_up1ygjke",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Coding Agent上下文投影\n\n**评级**: B (66分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent工程\n**次类别**: 上下文管理, LLM应用架构\n**标签**: #Coding Agent #Context Management #Harness #上下文压缩 #多轮循环\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 概念框架清晰，适合启发Agent上下文架构设计，但缺少实现细节、案例和数据支撑。\n**核心高价值点**: 将上下文管理定义为“从完整历史到模型下一步所需视图的投影”，并明确区分完整日志、模型可见上下文和结构化应用状态。\n\n### 摘要\n文章讨论Coding Agent中的上下文管理，指出不能简单追加全部历史，而应将完整日志投影为模型下一步所需的精简视图，并通过预览、摘要、压缩、状态注入等机制控制上下文压力。\n\n### 知识要点\n- 成熟的Coding Agent应区分durable log、model-visible context和app state，避免依赖完整transcript维持状态。\n- 上下文投影应在模型调用前完成，根据当前任务、证据、上下文压力和运行时状态选择模型可见内容。\n- 大规模tool output不应随机截断，而应保留完整结果在prompt外，同时向模型提供稳定preview和必要metadata。\n- auto-compact需要阈值、阻断机制、递归防护以及压缩后状态恢复，不能只是简单触发总结。\n\n### 行动项\n- 在Agent设计中增加上下文投影层，将完整日志、模型上下文和应用状态分离。\n- 为大日志、测试输出、grep结果等工具返回实现preview机制，并保留完整内容以便追溯。\n- 设计context pressure监控、warning threshold和hard blocking threshold，在模型调用前触发压缩。\n- 将已完成的旧片段显式折叠为summary，并保留compact boundary以支持resume和debug。\n\n### 存档判定\n归档: 是 — 原因: 提出了将上下文视为投影的框架，并区分durable log、model-visible context与app state，对Agent架构设计有参考价值\n删除: 否\n留存决策: 短期参考后可归档，适合作为设计Coding Agent上下文管理机制的概念性备忘",
+    "role": "assistant",
+    "timestamp": 1781660766039,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:aa75e9a9699abde15a8916b8eb326bfc56932f6411ef4117f4a26db1e3d76da6",
+  "refs": {
+    "sessionId": "1781660740826_tmagocqt"
+  },
+  "revisionId": "sha256:1d0744a0459ad2a845a89853afc633b0d760a033e09d590b4fe37d142cfad8dc",
+  "schemaVersion": 1,
+  "updatedAt": 1781660766039
+}

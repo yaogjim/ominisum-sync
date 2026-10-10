@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781520298430,
+  "entityType": "message",
+  "id": "1781520298429_yb3nrsd2",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 多Agent共享记忆方案\n\n**评级**: B (57分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工具与工作流\n**次类别**: Agent协作, 开发效率\n**标签**: #MemOS #多Agent #长期记忆 #CLI #AI编程\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一个实用但偏推广性质的多Agent记忆共享工具介绍，适合快速了解和试用。\n**核心高价值点**: 将长期记忆从单一AI客户端中抽离，作为多Agent工作流的共享基础设施。\n\n### 摘要\n文章介绍了在多个AI Agent之间切换时上下文和偏好无法继承的问题，并推荐使用 MemOS CLI 作为共享长期记忆层，通过命令行让 Codex、Claude Code、Cursor 等工具复用项目背景和偏好。\n\n### 知识要点\n- 多Agent协作中的核心痛点是上下文、偏好和项目背景无法跨工具继承\n- MemOS CLI 可通过命令行接入不同Agent，并支持 table、markdown、json、agent 等输出形态\n- CLI 形态相比插件或MCP更通用，适合任何能运行命令行的Agent环境\n\n### 行动项\n- 按文中命令安装 MemOS CLI 并接入一个常用Agent进行测试\n- 添加项目技术栈、文档风格、代码规范等记忆，验证跨会话检索效果\n\n### 存档判定\n归档: 是 — 原因: 提供了一个多Agent共享长期记忆的工具思路和基础命令，可作为工作流优化参考\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1781520298430,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:402caeacaf4d0cdab1da061ee2dda2ce0ff5e17b08716754c6df6b437e35ea85",
+  "refs": {
+    "sessionId": "1781519907948_q8wx3uhg"
+  },
+  "revisionId": "sha256:f91553320bf433160b36402afdb07e9f8917499bd4ffee0d2286f82f53a7365d",
+  "schemaVersion": 1,
+  "updatedAt": 1781520298430
+}

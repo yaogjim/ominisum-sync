@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781520879438,
+  "entityType": "message",
+  "id": "1781521056174_5uqhgf55",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 如何构建你自己的代理框架？\n\n## 核心观点\n\n文章认为：**代理框架不应该是一个大而全的单体框架，而应该是一组可替换、可组合、可独立版本化的 Worker。**\n\n每个 Worker 通过统一协议连接到共享引擎，并通过同一个原语交互：\n\n```ts\niii.trigger()\n```\n\n因此，“构建自己的代理框架”不再意味着 fork 一个完整框架，而是：**按需替换、增加或移除某些 Worker。**\n\n---\n\n## 生产级 Agent 需要做什么\n\n一个真正可用的 Agent 框架，通常要承担很多底层能力，例如：\n\n- 接收并持久化用户请求\n- 管理模型供应商凭证\n- 判断模型能力：视觉、工具调用、流式输出、上下文窗口等\n- 驱动每轮对话状态机\n- 加载工具 / 技能说明\n- 组装系统提示词\n- 流式返回模型输出\n- 工具调用前做权限检查\n- 支持人工审批\n- 追踪 LLM 成本和预算\n- 支持日志、脱敏、钩子扩展\n- 持久化会话树，支持恢复和分叉\n- 上下文过长时压缩历史\n- 向 UI 推送事件流\n- 全链路 OpenTelemetry 追踪\n\n传统框架会把这些能力打包成一个整体，短期方便，长期会带来锁定问题：**当你只想替换策略引擎、审批系统或预算模块时，往往不得不改动整个框架。**\n\n---\n\n## iii 的设计：Worker 化的 Agent 框架\n\niii 的思路是：把上述能力拆成多个独立 Worker。\n\n每个 Worker 都是一个独立进程：\n\n- 通过 WebSocket 连接 iii 引擎\n- 注册自己的函数和触发器\n- 通过统一总线被其他 Worker 调用\n- 可以独立安装、替换、升级\n- 可以用任意语言通过 SDK 编写\n\n也就是说，框架本身不是一个固定产品，而是一个 **Worker 栈**。\n\n---\n\n## 一轮 Agent 请求如何运行\n\n一次用户请求大致会经历以下流程：\n\n### 1. 接收请求\n\n前端、CLI 或聊天界面调用：\n\n```ts\nharness::trigger\n```\n\n请求中包含：\n\n- session_id\n- message_id\n- payload\n\n随后进入 `run::start`，并开始建立完整链路追踪。\n\n### 2. 初始化运行环境\n\n配置 Worker 会做几件事：\n\n- 启动 sandbox，用于隔离执行\n- 下载默认技能说明\n- 构建系统提示词\n- 注入 Agent 身份、模式、默认技能索引等信息\n\n### 3. 调用模型供应商\n\n流式 Worker 调用对应的模型 Provider，例如：\n\n```ts\nprovider::<name>::stream\n```\n\nProvider Worker 会：\n\n- 获取认证凭证\n- 调用上游模型 API\n- 将 SSE 流转成 iii 通道事件\n- 向 UI 推送 `message_update`\n\n### 4. 执行工具调用\n\n当模型返回工具调用时，编排器进入工具执行状态。\n\n每个工具调用都会经过统一的检查点：\n\n- 权限检查\n- 策略判断\n- 钩子执行\n- 预算记录\n- 审批流程\n\n### 5. 人工审批\n\n如果工具调用需要人工确认，会进入等待状态。\n\n审批系统只需要调用：\n\n```ts\napproval::resolve\n```\n\n并写入审批结果：\n\n- allow\n- deny\n- aborted\n\n编排器通过统一触发器唤醒对应会话，无需为每个审批单独注册恢复逻辑。\n\n---\n\n## 如何“构建你自己的框架”\n\n文章强调：你不需要重写整个框架，只需要替换对应 Worker。\n\n### 示例 1：替换模型目录\n\n如果不想用静态模型列表，可以写一个 Worker 注册：\n\n```ts\nmodels::list\nmodels::get\nmodels::supports\n```\n\n让它定期从模型供应商 API 拉取能力信息并缓存。\n\n编排器仍然调用同样的函数 ID，不需要感知底层实现变化。\n\n---\n\n### 示例 2：添加新的模型供应商\n\n新增 Provider 只需要实现：\n\n```ts\nprovider::<name>::stream\nprovider::<name>::complete\n```\n\n它负责：\n\n- 调用上游模型 API\n- 处理流式输出\n- 写入 token 使用量和成本\n\n一旦 Worker 连接到引擎，新的 Provider 就自动可用。\n\n---\n\n### 示例 3：替换审批入口\n\n如果不想用控制台审批，可以写一个 Slack Worker：\n\n- 监听 `/approve <id>`\n- 监听 `/deny <id>`\n- 调用 `approval::resolve`\n\n审批网关和编排器都不用改，只是新增了一个审批入口。\n\n---\n\n## 轻框架与重框架不再是二选一\n\n传统框架常常在“薄框架”和“厚框架”之间做选择。\n\n而 iii 的 Worker 模型让它变成一个滑块：\n\n### 轻量版\n\n只安装必要 Worker：\n\n- 编排器\n- 模型 Provider\n- 凭证管理\n- 最小 harness\n\n适合：\n\n- 内部实验\n- 自主研究 Agent\n- 快速原型\n\n### 重量版\n\n安装完整 Worker 栈：\n\n- 策略引擎\n- 审批系统\n- 预算控制\n- 上下文压缩\n- Slack 审批\n- 自定义钩子\n- 完整可观测性\n\n适合：\n\n- 客户工作流\n- 强审计场景\n- 有预算和权限要求的企业 Agent\n\n关键在于：**从轻到重不是重写架构，而是修改配置。**\n\n---\n\n## 对产品和工程团队的启发\n\n如果团队在使用 Agent 框架时遇到以下问题：\n\n- 权限系统不够灵活\n- 审批流程无法对接企业工具\n- 凭证管理无法接入现有密钥系统\n- 成本追踪和财务系统割裂\n- 可观测性不足\n- 框架内部模块难以替换\n\n那么解决方案可能不是重写一个新框架，而是采用一种更底层的组合式架构：**让框架本身由可替换模块组成。**\n\n---\n\n## 最终判断\n\n文章的核心赌注是：\n\n> Agent 框架的基础单元应该是 Worker，而不是单体框架。\n\n每个 Worker 负责一个明确任务，通过统一协议连接到引擎，注册函数和触发器。\n\n这样带来的好处是：\n\n- 模块可替换\n- 能力可裁剪\n- 架构可渐进演进\n- 可观测性统一\n- 业务逻辑与框架能力使用同一套原语\n\n最终，“构建自己的代理框架”变成：\n\n1. 选择需要的 Worker  \n2. 替换不合适的 Worker  \n3. 编写缺失的 Worker  \n4. 组合成适合自己业务的 Agent 栈  \n\n**框架不再是一个固定产品，而是组合本身。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781520879438,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b175acde9a6f94c3dea88719a36089b5c16f29670803a904701e81ca1b29f7c3",
+  "refs": {
+    "sessionId": "1780308157470_sepnf32r"
+  },
+  "revisionId": "sha256:57c2c905955e8a8cdb89d9dedf68f6a223e18d84db8925cd50ed63e813c74224",
+  "schemaVersion": 1,
+  "updatedAt": 1781520879438
+}

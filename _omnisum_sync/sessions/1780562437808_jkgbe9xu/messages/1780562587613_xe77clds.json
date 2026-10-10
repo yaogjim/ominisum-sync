@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780562587614,
+  "entityType": "message",
+  "id": "1780562587613_xe77clds",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\nPi Agent 可以理解为一个**极简、可自定义的终端 coding agent 框架 / 工作台**，更适合开发者自己改造、安装 skills、做上下文工程，而不是开箱即用的企业级 Agent SDK。它的核心价值在于：**小核心 + 强可扩展 + 面向代码任务的上下文与会话管理**。\n\n---\n\n## 1. Pi Agent 的定位：不是通用编排引擎，而是可改造的 coding harness\n\nPi Agent 不像 **LangGraph** 那样偏通用 Agent 编排，也不像 **OpenAI Agents SDK** 那样偏产品级 SDK。\n\n它更像是：\n\n> 给开发者自己定制的 Codex / Claude Code 替代品。\n\n目前 Pi 的主仓库是 **earendil-works/pi**，官方称其为 **AI agent toolkit**，包含多个模块：\n\n- coding agent CLI\n- agent runtime\n- 统一多模型 API\n- TUI\n- Slack bot\n- vLLM pods\n\n核心包包括：\n\n- `pi-coding-agent`\n- `pi-agent-core`\n- `pi-ai`\n\n---\n\n## 2. 产品哲学：核心保持极简，复杂能力交给扩展\n\nPi 的设计理念是：\n\n> core 保持小，复杂能力交给 extension / skill / prompt / package。\n\n官网明确把 Pi 定义为 **minimal terminal coding harness**，可以通过以下方式定制：\n\n- extensions\n- skills\n- prompt templates\n- themes\n\n它默认不内置很多重功能，比如：\n\n- sub-agent\n- plan mode\n\n而是鼓励开发者根据自己的需求自己构建或安装。\n\n---\n\n## 3. 关键能力一：重视上下文工程\n\nPi 最有价值的一点是它把**上下文工程**放在很重要的位置。\n\n它支持：\n\n- `AGENTS.md`\n- `SYSTEM.md`\n- skills\n- prompt templates\n- 动态 context injection\n- 自定义 compaction\n\n作者认为，对于做 **agent harness / RAG / sandbox** 的人来说，这比“多 Agent 聊天”更关键。\n\n原因是很多 Agent 失败并不是模型不够强，而是：\n\n- 上下文入口混乱\n- 长期任务压缩失真\n- 项目规则没有稳定加载\n\n例如，一个代码 Agent 如果没有稳定读取项目里的 `AGENTS.md`，就可能反复违背项目规范；如果长期会话压缩不好，也容易丢失关键设计决策。\n\n---\n\n## 4. 关键能力二：Session Tree 会话树\n\nPi 的历史记录不是普通线性聊天，而是**树状结构**。\n\n它可以：\n\n- 回到任意历史节点\n- 从某个节点继续分支\n- 导出 HTML\n- 分享 session\n\n这对 coding agent 很有用，因为代码开发经常需要尝试不同方案。\n\n例如：\n\n- 先尝试方案 A\n- 发现不合适后回到之前节点\n- 再分支尝试方案 B\n\n普通线性聊天不适合这种 trial-and-error，而 session tree 更适合管理代码任务中的分叉与回滚。\n\n---\n\n## 5. 关键能力三：支持多种运行模式\n\nPi 支持四种运行方式：\n\n- interactive\n- print / JSON\n- RPC\n- SDK\n\n这意味着它既可以作为终端里的 coding agent 使用，也可以被其他系统调用。\n\n适用方式包括：\n\n- 终端交互使用\n- 脚本调用\n- 非 Node 程序集成\n- 上层产品封装调用\n\n---\n\n## 6. 关键能力四：多模型、多 Provider 友好\n\nPi 支持很多模型服务商，并且可以在会话中切换模型。\n\n支持的 provider 包括：\n\n- OpenAI\n- Anthropic\n- Google\n- Azure\n- Bedrock\n- Mistral\n- Groq\n- Cerebras\n- xAI\n- Hugging Face\n- OpenRouter\n- Ollama\n\n这让开发者可以根据任务需要灵活选择模型，而不被单一供应商绑定。\n\n---\n\n## 7. 适合的使用场景\n\nPi 更适合偏开发者、偏代码工程的场景，例如：\n\n- 本地代码库改造\n- 长期 coding session\n- 项目级 `AGENTS.md`\n- 自己开发 skill\n- 自己控制 compaction\n- 把 agent session 当作工程资产管理\n\n简单说，它适合想要深度控制 Agent 行为的开发者。\n\n---\n\n## 8. 不适合的使用场景\n\nPi 不太适合直接用于严肃企业业务流程，例如：\n\n- 审批\n- 支付\n- CRM 自动化\n- 工单系统\n\n因为这些场景需要更强的企业级能力，包括：\n\n- 强状态管理\n- 审计\n- 权限控制\n- 可靠恢复\n- 可观测平台\n- 业务持久化\n\nPi 更偏 coding agent workbench，而不是完整企业业务自动化平台。\n\n---\n\n## 9. 热门回复中的补充观点\n\n### 9.1 关于模型训练方法\n\n有回复提到微软的训练策略：\n\n- 避开合成数据\n- 只用人类数据训练 base 模型\n- 再训练三个不同领域的专家模型\n- 然后自蒸馏，把三种能力蒸回 base 模型\n- 最后通过强化学习让模型学会灵活调用不同能力\n\n评论者总结为：\n\n> 一生三，三蒸一。\n\n---\n\n### 9.2 关于 AI 原生工程组织\n\n有人推荐 Anthropic 的博客：\n\n> Running an AI-native engineering org\n\n即“运营一个 AI 原生工程组织”，并顺便询问更好的翻译模型。\n\n---\n\n### 9.3 关于 AI Engineer 面试与市场感知\n\n有回复分享职场建议：\n\n> 最好每三个月出去面试一次，防止自己和市场脱钩。\n\n该回复还提到自己近期面试 AI Engineer 时，遇到了关于“使用 AI 分等级”的开放题。\n\n---\n\n### 9.4 关于 skills 过多会污染上下文\n\n有回复提到 Harmes Agent 预装了 100 多个 skills，虽然目的是开箱即用，但可能导致：\n\n- skills 注册过多\n- 污染上下文\n- 影响工具调用命中率\n\n即使使用渐进式披露，也仍可能有问题。\n\n相比之下，FastClaw 只预装了 3 个 skills：\n\n1. `camoufox-cli`\n2. `find-skills`\n3. `skill-creator`\n\n这也呼应了 Pi 的理念：核心保持小，能力按需扩展。\n\n---\n\n## 10. 类比总结\n\n最后有评论把 Pi Agent 比作 AI Agent 领域的“自定义键盘”：\n\n> 有些人不想买预设好的 gaming keyboard，而是喜欢自己焊电路、调轴体，因为这样才能获得真正的掌控感。\n\n这个比喻很贴切：Pi Agent 不是给所有人开箱即用的产品，而是给喜欢掌控细节的开发者提供一个可改造的 Agent 工作台。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780562587614,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7f9714348ca7ab3594b26bdfac07b794eb7fa7f9740260652bfd2683c0c31d90",
+  "refs": {
+    "sessionId": "1780562437808_jkgbe9xu"
+  },
+  "revisionId": "sha256:cd63cc97e6c233c92e65f72e41baffba5e7cc02144dfcc2a2d17a0685fc05598",
+  "schemaVersion": 1,
+  "updatedAt": 1780562587614
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1781000822881,
+  "entityType": "session",
+  "id": "1781000822881_yvxczvxy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果正在使用 LangChain DeepAgents，可调研 Harness Profile 的配置方式。",
+      "为常用模型建立独立工具映射配置，测试是否能降低调用错误和适配成本。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781052380598,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "DeepAgents模型配置提示",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "DeepAgents Harness Profile 支持为不同模型配置不同提示词和工具集。",
+      "通过将 edit_file 映射为 apply_patch、execute 映射为 shell_command，可让 GPT-5.5 更接近 Codex 的使用方式。",
+      "pi 环境中可使用 npm:@howaboua/pi-codex-conversion 扩展实现类似 Codex harness。"
+    ],
+    "oneHighValuePoint": "按模型维护不同 Harness Profile，可自动切换提示词和工具命名，减少多模型适配心智负担。",
+    "oneLineReview": "一个有启发的 Agent 工具适配小技巧，但信息量和论证深度有限。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容较短，主要是单点经验分享，缺少完整配置示例、背景说明和效果验证。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "LangChain",
+      "Agent工程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出 LangChain DeepAgents 的 Harness Profile 可按不同模型自动切换提示词和工具，例如将 GPT-5.5 的文件编辑与执行工具映射为更接近 Codex 的工具形式，降低模型适配成本。",
+    "tags": [
+      "DeepAgents",
+      "Harness Profile",
+      "模型适配",
+      "工具配置",
+      "Codex"
+    ],
+    "title": "九原客: Langchain DeepAgents 的 Harness Profile 功能不错，为不同的模型开启不同的提示词、工具，这样你选择不同的模型，就会自动应用不…",
+    "totalScore": 53,
+    "url": "https://x.com/9hills/status/2064156876821192980"
+  },
+  "payloadHash": "sha256:4ab2cec8a7d2e4b541e288fd06df8735b8e3387e31f61ebb712ea01ff3c6210d",
+  "refs": {},
+  "revisionId": "sha256:372b77aff976676d1c319c0ec63791901f396cc1062abb46f8ff771cc20adda3",
+  "schemaVersion": 1,
+  "updatedAt": 1781052380932
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781517501332,
+  "entityType": "message",
+  "id": "1781517699249_uuebuyhm",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 宝玉：Skill 扩展配置不该只用 Markdown\n\n## 核心观点\n\n宝玉在做 **baoyu-skills** 时，曾尝试用 `EXTEND.md` 文件保存用户自定义设置，初衷是让 Agent / LLM 更容易读取和理解。\n\n但实践后发现：**Markdown 适合给 LLM 看，不适合给程序稳定解析。**\n\n## 主要问题\n\n### 1. Markdown 不是严格结构化数据\n\nMarkdown 更像自然语言文档，格式灵活，但缺少强约束。\n\nLLM 可以理解其中含义，但程序很难稳定、准确地解析。\n\n### 2. 格式一致性难以保证\n\n用户或 Agent 修改 Markdown 时，容易出现格式不统一、字段缺失、层级混乱等问题。\n\n这会导致后续自动化处理变得不可靠。\n\n## 更好的设计方向\n\n如果重新设计，宝玉更倾向于使用：\n\n- `JSON`\n- `YAML`\n\n作为 Skill 的扩展配置格式。\n\n这样既能让 LLM 读取理解，也能让程序方便解析、校验、保存。\n\n## 评论区共识\n\n热门回复基本认同这一判断：\n\n- Markdown 适合表达上下文和说明\n- JSON / YAML 更适合配置、结构化数据和自动化流程\n- 结构化输出后，可以用固定脚本处理，稳定性更高，也更省 token\n\n## 一句话总结\n\n**Markdown 适合做人机协作的上下文界面，但涉及配置、状态和自动化处理时，JSON / YAML 才是更可靠的选择。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781517501332,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:09f1497c6d83ee00004026da83073f54cd81a0a722630a9984c266eb745639b8",
+  "refs": {
+    "sessionId": "1781517698634_ai83v6m1"
+  },
+  "revisionId": "sha256:06bc877f8775360878e82ca31cc824e5973614490adbf7462b17cf604f5fdf3c",
+  "schemaVersion": 1,
+  "updatedAt": 1781517501332
+}

@@ -1,0 +1,23 @@
+{
+  "createdAt": 1783401765957,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1783401765957",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# OpenWiki：为 Agent 准备的代码库自维护文档系统\n\n## 一句话总结\n\nLangChain 开源了**OpenWiki**：一个 CLI 工具，可以自动为代码库生成和更新文档，核心目标不是服务人类阅读，而是让**AI coding agent 能持续理解、引用和维护项目知识**。\n\n## 核心内容\n\nOpenWiki 会扫描代码库，生成一套文档到`openwiki/`目录，并自动在`AGENTS.md`、`CLAUDE.md`等文件中追加提示，让各类 coding agent 知道应该参考这些文档。\n\n它解决的是一个现实痛点：  \n**AI 写代码时经常缺少对项目架构、历史约定、模块关系的长期记忆。**\n\n## 使用方式\n\n基本流程很简单：\n\n```bash\nnpm install -g openwiki\nopenwiki --init\nopenwiki\n```\n\n初始化后配置模型和 API Key，随后即可自动生成文档。后续如果文档已存在，则支持增量更新；如果不存在，则从零创建。\n\n## 关键能力\n\nOpenWiki 的几个重要设计包括：\n\n- 支持多种模型：如 GLM 5.2、Kimi K2.6、Sonnet 5 等\n- 支持多种模型服务商：OpenRouter、Fireworks、Baseten、OpenAI、Anthropic\n- 支持 GitHub Action：可每天自动提交 PR 更新文档\n- 支持增量维护：让文档跟随代码演进，而不是一次性生成后失效\n\n## 为什么重要\n\n这不是传统意义上 “给人看的 Wiki”，而是**给 Agent 用的代码库知识库**。\n\n它对应了近期 AI 编程领域的几个趋势：\n\n- Karpathy 提到的**LLM Knowledge Base**\n- Agent OS 的原则：**keep memory in files**\n- Agent 工作流中的**Memory Update Loop**\n\n也就是说，代码库文档正在从 “人类协作资料” 变成 “Agent 的长期记忆系统”。\n\n## 产品启示\n\nOpenWiki 代表了 AI 编程工具的一个新方向：\n\n**未来优秀的代码库，不仅要对人友好，也要对 Agent 友好。**\n\n对产品和工程团队来说，这意味着：\n\n- 文档不再只是交付物，而是 AI 协作基础设施\n- Agent 的效果不只取决于模型能力，也取决于项目是否有结构化记忆\n- 自动维护文档会成为 AI-native 软件工程流程的一部分\n\n## 总体判断\n\nOpenWiki 把 “让 AI 理解你的代码库” 从理念推进到了一个可安装、可运行、可持续维护的工具形态。\n\n它的价值不在于又多了一个文档生成器，而在于：  \n**它把文档变成了 Agent 工作流中的长期记忆层。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1783401765957,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:329738b05ddc07b03baaa7311643253090c744ff7615b4b11efe50d59421c2ae",
+  "refs": {
+    "sessionId": "1783389090499_wx1zvzl5"
+  },
+  "revisionId": "sha256:edb2ca5fda2e39b668992eeb1d24ec4cb1a8087c534a3e8861cfcc9284ceb72f",
+  "schemaVersion": 1,
+  "updatedAt": 1783401765957
+}

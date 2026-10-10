@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781521656099,
+  "entityType": "message",
+  "id": "1781521656098_bo0x8jmh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 自然语言生成Ideogram框选提示\n\n**评级**: C (40.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI生成工具\n**次类别**: 本地大模型应用, 图像生成工作流\n**标签**: #Ideogram #bbox prompt #llama.cpp #Qwen #Pinokio\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 4 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 2 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 3 | 10% |\n\n**一句话点评**: 有一定工具发现价值，但缺少细节支撑，适合速览而非深入保存。\n**核心高价值点**: 用本地 LLM 自动生成 Ideogram bbox prompt，可减少手动创建边界框的工作量。\n\n### 摘要\n一条关于将自然语言提示自动转换为 Ideogram bbox 提示的工具动态，强调可用 llama.cpp 与 Qwen 在本地运行，并可通过 Pinokio 一键使用。正文信息较少，主要提供概念和简单示例。\n\n### 知识要点\n- 自然语言描述可以被转换为图像生成所需的 bbox 布局提示\n- llama.cpp + Qwen 可用于本地化运行此类提示转换工作流\n- Pinokio 可能提供一键部署入口，降低试用门槛\n\n### 行动项\n- 如正在使用 Ideogram 或类似图像生成工具，可搜索该项目或 Pinokio 入口进行试用\n- 用一个多主体构图提示测试其 bbox 生成准确性\n- 评估本地 Qwen 模型生成的 bbox prompt 是否比手写更省时\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是工具动态和简短展示，缺少实现细节、链接说明、效果对比和完整教程，长期参考价值有限。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1781521656099,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:4059ee67ed5e2c2cd99f365dcc32cea91203e31514c6610ff055dbb42e168fb8",
+  "refs": {
+    "sessionId": "1781521068078_ocryu75j"
+  },
+  "revisionId": "sha256:0090f0878f7de47715ecc07447a4e67a1dca6b125b0b509997bbaf9587d9b44e",
+  "schemaVersion": 1,
+  "updatedAt": 1781521656099
+}

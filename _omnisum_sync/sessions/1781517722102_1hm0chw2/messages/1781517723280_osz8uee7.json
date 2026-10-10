@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781517501332,
+  "entityType": "message",
+  "id": "1781517723280_osz8uee7",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 为什么 Codex 还没有推出类似 Claude Design 的产品？\n\n## 核心结论\n\nCodex 之所以还没推出类似 Claude Design 的产品，关键不在产品工程，而在模型能力。\n\nClaude Design 的强大，不只是能“画界面”，而是能一次性生成高完成度、可交互、带状态管理的 App 原型。目前 GPT-5.5 在这类任务上还不够稳定，而 Claude Opus 4.8 更适合。\n\n---\n\n## 1. 先区分：产品层和模型层\n\n作者强调，很多人把 Codex、Claude Design 和 GPT-5.5、Claude Opus 混为一谈，其实它们是两层东西：\n\n- **Codex / Claude Design**：产品层，也叫 Harness  \n  包括提示词、工具链、交互流程、UI 等工程封装。\n- **GPT-5.5 / Claude Opus 4.8**：模型层  \n  是真正负责理解、设计、推理和生成内容的大脑。\n\n类比来说：\n\n> Harness 是厨房，模型是厨师。厨房相似，但厨师水平不同，结果差异很大。\n\n---\n\n## 2. Claude Design 的门槛不在工程\n\nClaude Design 的产品封装并不神秘。\n\n作者认为，它的提示词、工具代码、工作流等 Harness 层都可以逆向和复现，技术门槛并不高。真正形成差距的是背后的模型能力。\n\n也就是说：\n\n> 做一个“类似 Claude Design 的壳”不难，难的是让模型真的做出高质量结果。\n\n---\n\n## 3. 难点不是静态 UI，而是完整交互原型\n\nClaude Design 不是简单生成 Figma 式静态设计稿，而是生成：\n\n- 有视觉设计的界面\n- 可点击、可跳转的交互\n- 有模拟数据\n- 有状态变化\n- 有完整前端结构的代码原型\n\n例如做一个类似 X / 微博的客户端，不只是把界面画出来，还要处理：\n\n- 不同 Timeline 的切换\n- 文本、图片、视频等不同推文类型\n- 点赞状态变化\n- 删除推文后列表更新\n- 列表页和详情页之间跳转\n- 返回后状态保持\n\n这要求模型在写 UI 前，先想清楚：\n\n- 数据结构\n- 状态管理\n- 交互逻辑\n- 页面关系\n- 组件组织\n\n所以这不是单纯的 UI 设计，而是 **UI/UX 设计能力 + 系统架构能力** 的结合。\n\n---\n\n## 4. Claude 的优势：设计和架构能力更强\n\n同样的提示词，让 Codex 和 Claude Design 分别生成一个 Mac 版 X 客户端：\n\n- Codex 可以生成能看的界面，也有一些简单交互\n- 但经常出现 sidebar 不能点、点赞没反应、状态不完整等问题\n- 需要多轮迭代才能勉强可用\n\n而 Claude Design 生成的原型：\n\n- 页面切换自然\n- 列表和详情页跳转流畅\n- 状态保持完整\n- 交互体验接近真实 App\n\n作者判断，Claude Opus 4.8 显然在设计、架构、交互原型这类任务上做了大量优化。\n\n---\n\n## 5. 设计产物本质上就是代码\n\nClaude Design 输出的不是 Figma、PSD，而是代码，例如：\n\n- React\n- CSS\n- JSON / JSX 数据结构\n\n其中 `data.jsx` 会清晰定义数据结构和模拟数据，再基于这些数据构建 UI。\n\n这种方式的优势是：\n\n- 开发者可以直接理解设计细节\n- 圆角、颜色、间距都在代码里\n- 后续修改可以通过 git diff 查看\n- 设计 Agent 和开发 Agent 之间沟通成本更低\n\n未来的协作模式可能变成：\n\n> 人指挥设计 Agent 做原型，再指挥开发 Agent 实现产品。\n\n---\n\n## 6. 如何更好使用 Claude Design\n\n作者建议使用 Claude Design 的方式类似 Vibe Coding：\n\n1. 先给一个大致想法\n2. 让它生成第一版\n3. 再通过对话持续调整\n4. 在迭代中逐渐明确自己的产品思路\n\n一个重要技巧是：\n\n> 不要一开始给太细的要求，而是描述目标，让模型自由发挥。\n\n因为 Claude 可能已经学习过大量公开 UI 设计案例，给它空间，反而更容易得到高质量方案。\n\n---\n\n## 最终判断\n\nCodex 目前不推出类似 Claude Design 的产品，不是因为做不出产品壳，而是因为 GPT-5.5 还难以稳定完成这类高复杂度任务。\n\n真正难的是：\n\n- 先设计数据结构\n- 再规划状态管理\n- 再组织交互逻辑\n- 最后一次性交付完整可交互原型\n\n目前作者认为，在这件事上，Claude 的模型能力明显领先。OpenAI 或其他厂商能否追上，取决于后续模型进化速度。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781517501332,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:20d777c8d52d9b013633f66f77cff87528ae1e99b0426ee677364c9b325a7ccd",
+  "refs": {
+    "sessionId": "1781517722102_1hm0chw2"
+  },
+  "revisionId": "sha256:e83d81706034dc53b2f88f93fe1f13953f07127d800734918c827b8cc83e9eaa",
+  "schemaVersion": 1,
+  "updatedAt": 1781517501332
+}

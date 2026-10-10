@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781520473765,
+  "entityType": "message",
+  "id": "1781520473764_8gjn3hjq",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 编码智能体的轻量记忆检索\n\n**评级**: B (64分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI 编程工具\n**次类别**: 智能体记忆, 信息检索\n**标签**: #coding agent #SQLite FTS #BM25 #memory #session history #Obelisk\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一条有启发但证据和展开不足的 coding agent 记忆机制设计讨论。\n**核心高价值点**: 将 agent memory 视为 synthesis cache，而不是简单长期记忆，并要求人工确认写入与归档，以降低错误记忆带来的干扰。\n\n### 摘要\n文章介绍 Mimo Code 与 Obelisk 在 coding agent 历史会话检索上的设计，强调使用 SQLite FTS 与 BM25 替代较重的向量数据库，并提出 memory 应作为 synthesis cache，由人工确认以避免错误记忆干扰工作。\n\n### 知识要点\n- SQLite FTS + BM25 可作为轻量级 session history 检索方案，用于帮助 coding agent 找回历史决策上下文\n- 错误 memory 可能比没有 memory 更有害，因此记忆写入、追溯和归档机制非常关键\n- 相比向量数据库与 embedding 模型，轻量检索层可能更适合部分 coding agent 场景\n\n### 行动项\n- 查看 Obelisk 仓库，了解其 retrieval query runtime 与 memory 实现方式\n- 在自己的 coding agent 工作流中评估是否可用 SQLite FTS/BM25 管理历史会话\n- 设计 memory 写入前的人审与过期归档机制，避免过时结论污染后续检索\n\n### 存档判定\n归档: 是 — 原因: 包含关于智能体 session 检索、synthesis cache、人审 memory 等有启发性的设计观点，可作为后续调研线索\n删除: 否\n留存决策: 短期参考后可归档，适合跟踪 coding agent 记忆与检索层设计思路",
+    "role": "assistant",
+    "timestamp": 1781520473765,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:5637215054508ea0bce2b091dc1b6e89b43f807239ba5e8b9981321cd18917f0",
+  "refs": {
+    "sessionId": "1781520072588_u9a0xdb3"
+  },
+  "revisionId": "sha256:c32265fa142710ffe53ad9a2b4dcb95a8d6dcf8d4b85e7d242f06d03aaf5ba80",
+  "schemaVersion": 1,
+  "updatedAt": 1781520473765
+}

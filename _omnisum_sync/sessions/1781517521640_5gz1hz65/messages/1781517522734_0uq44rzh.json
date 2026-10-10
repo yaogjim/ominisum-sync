@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781517501332,
+  "entityType": "message",
+  "id": "1781517522734_0uq44rzh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章总结：你不能对 AI Agent 小声说话\n\n## 核心观点\n\nStripe 通过约 12 个实验发现：**AI Agent 并不像会主动查资料的初级工程师，而更像只执行任务描述的合同工。**\n\n它不会主动浏览文档、注释或提示，而是只提取完成当前任务所需的最小信息。因此，想让 Agent 做对事，关键不是“把信息写好”，而是**把信息放到它必经的执行路径上**。\n\n---\n\n## Stripe 的三类实验结论\n\n### 1. 被动提示：基本无效\n\nStripe 尝试把提示放在 SDK 注释、README、依赖目录里的 `AGENTS.md`、API 响应警告字段中。\n\n结果是：**Agent 基本不看。**\n\n原因是 Agent 不会像人类一样浏览环境，它只关注当前任务需要的数据。  \n不在执行路径上的提示，对 Agent 来说几乎等于不存在。\n\n---\n\n### 2. 主动提示：有效但有限\n\n两类方式有明显效果：\n\n- **模块化 skill 文件**：把大文档拆成短小、聚焦的文件，按需加载，Agent 表现提升约 10%，token 消耗下降。\n- **CLI 登录后的安装提示**：在 `stripe login` 后直接展示安装命令，30%-35% 用户会复制执行。\n\n结论是：**信息必须出现在 Agent 的必经路径上。**\n\n---\n\n### 3. 硬信号：最有效\n\n当 Agent 使用旧 API 时，如果只是返回“降级响应 + 警告”，Agent 往往不会修正。\n\n但如果直接返回明确错误，例如：\n\n> 你用了 v1，当前是 v2，请修正。\n\nAgent 就能可靠识别问题并修改请求。\n\n所以，**错误本身就是一种强指令**。  \n对 Agent 来说，阻塞性错误比温和提醒更有效。\n\n---\n\n## 为什么软提示会失败？\n\nStripe 将其总结为：\n\n> Hard steering vs Soft steering  \n> 硬引导 vs 软引导\n\n### 软引导\n\n指不在 Agent 当前任务路径上的信息，例如：\n\n- 文档\n- 注释\n- README\n- 警告字段\n- 邻近上下文\n\n这些信息即使写得再好，Agent 也可能根本不会加载。\n\n### 硬引导\n\n指 Agent 为了完成任务必须处理的信息，例如：\n\n- 明确错误\n- 阻塞提示\n- CLI 输出\n- 已加载进上下文的指令\n- MCP 工具描述\n\n核心问题不是内容质量，而是**分发路径**。\n\n---\n\n## 对产品和开发者工具的启示\n\n### 1. 文档不再足够\n\n过去面向人类开发者时，文档、注释、README 很重要。  \n但面向 AI Agent 时，仅仅“写在文档里”远远不够。\n\n你需要把关键信息放到：\n\n- 错误消息里\n- CLI 输出里\n- 工具调用描述里\n- Agent 必须经过的流程节点里\n\n---\n\n### 2. Agent 体验设计会变重要\n\n未来不仅要做 UX，还要做 **Agent Experience Design**。\n\n也就是理解：\n\n- Agent 如何扫描信息\n- Agent 如何加载上下文\n- Agent 什么时候做决策\n- 哪些信息会被忽略\n- 哪些提示能真正影响行为\n\n重点不是让 Agent 更聪明，而是**让环境更适配 Agent 的认知模式**。\n\n---\n\n### 3. 模块化对人和 Agent 都更好\n\nStripe 发现，模块化 skill 文件不仅让 Agent 更容易使用，也让团队维护更方便。\n\n例如：\n\n- 支付团队维护支付 skill\n- 订阅团队维护订阅 skill\n- 各模块独立更新、独立优化\n\n这是少见的“对人类和 Agent 都更优”的设计方向。\n\n---\n\n## 局限性\n\nStripe 也说明，这不是正式论文，而是观察性实验。\n\n它没有公开：\n\n- 样本量\n- 置信区间\n- 具体模型\n- 具体框架\n\n而且 Agent 能力进步很快，未来模型可能更擅长浏览上下文。\n\n但文章的核心判断依然成立：\n\n> 你不能对 AI Agent 小声说话。\n\n因为 Agent 优化的是“完成任务”，不是“理解整个环境”。  \n因此，关键指令必须明确、强制、出现在执行路径上。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781517501332,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:510e016d84c9e987f33948e80a5daf18189d0d222f32602d990a86171ca416c3",
+  "refs": {
+    "sessionId": "1781517521640_5gz1hz65"
+  },
+  "revisionId": "sha256:032696957232065434c6dc60c3c3460dfa3a50ba7a25cf90a9db35f8fe896fed",
+  "schemaVersion": 1,
+  "updatedAt": 1781517501332
+}

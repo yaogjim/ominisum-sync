@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781517670912,
+  "entityType": "session-content",
+  "id": "1781517670912_43vw4f1p",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>idoubi</strong></header><div class=\"tw-body\">有意思 你把 CCOnline 的技术架构都拆解完了 我还发啥😂<br><br>请求链路大差不差，核心要解决的问题还是存算分离<br><br>把 cf sandbox 作为临时使用的容器，而不是常驻<br><br>用户生产资料上 r2 存储，sandbox 要内置 ShipAny 模板和 skills，还要解决计费、预览、部署、防注入<br><br>这个项目还是蛮复杂的😂</div><blockquote class=\"tw-quote\"><strong>@hoshikihao</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\">用 ShipAny + TanStack 构建的一个在线版 Claude Code 运行环境。 \n核心通信协议：WebSocket 渲染一个仿真终端（通常用 xterm.js），用户输入的“vibe 指令”或键盘操作通过 WebSocket 发送出去，实时接收输出（日志、工具调用结果、错误、进度等）。\n浏览器 </span>↔<span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\"> Sandbox 交互路径（回顾） x.com/idoubicc/statu…</span></p></blockquote></article>",
+    "pageContent": "idoubi: 有意思 你把 CCOnline 的技术架构都拆解完了 我还发啥 请求链路大差不差，核心要解决的问题还是存算分离 把 cf sandbox 作为临时使用的容器，而不是常驻 用户生产资料上 r2 存储，sandbox 要内置 ShipAny 模板和 skills，还要解决计费、预览、部署、防注入 这个项目还是蛮复杂的\n引用推文 (@hoshikihao):\n用 ShipAny + TanStack 构建的一个在线版 Claude Code 运行环境。 核心通信协议：WebSocket 渲染一个仿真终端（通常用 xterm.js），用户输入的“vibe 指令”或键盘操作通过 WebSocket 发送出去，实时接收输出（日志、工具调用结果、错误、进度等）。\n浏览器 Sandbox 交互路径（回顾） x.com/idoubicc/statu…"
+  },
+  "payloadHash": "sha256:eb41e07fe7f4e4d88218d34189c51b114a772b7368f70958c932a0b0ad639b10",
+  "refs": {},
+  "revisionId": "sha256:ae641432f719733d01bbdf846f7b01754a2c789d3f64ae4ffb341b637d8f7297",
+  "schemaVersion": 1,
+  "updatedAt": 1781518641496
+}

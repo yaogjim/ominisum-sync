@@ -1,0 +1,67 @@
+{
+  "createdAt": 1781052426225,
+  "entityType": "session",
+  "id": "1781052426225_ff28993k",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将文中的产品说明文档用例整理成本地可复用的 AI 提示词模板。",
+      "在实际项目中尝试让 AI 基于当前 commit 运行应用、截图并生成用户文档。",
+      "为常见开发任务补充类似的验收标准，例如可访问性检查、组件库抽象和安全审查。"
+    ],
+    "archiveReason": "包含可复用的 /goal 任务设计思路，可作为 AI 编程与产品文档生成的提示词模板参考。",
+    "classifiedAt": 1781052448488,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "/goal 产品文档用例",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "使用 /goal 可将产品文档生成任务拆成运行环境、页面截图、功能梳理、用户化表达和持续更新几个步骤。",
+      "高质量 AI 任务应包含明确验收标准，例如覆盖页面、按钮、状态变化、点击结果和文档复用要求。",
+      "类似方法可迁移到 Design System 抽象、可访问性检查、多端适配和安全代码审查等开发任务。"
+    ],
+    "oneHighValuePoint": "将一次性 AI 任务转化为带验收标准、可持续更新、可沉淀为 Skill 的标准流程。",
+    "oneLineReview": "这是一条实用型提示词参考，方法可复用，但内容较短且缺乏完整案例和效果验证。",
+    "primaryCategory": "AI 编程工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "产品文档",
+      "提示词方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了 Codex /goal 的一个具体用例：基于当前 commit 运行 App、截图检查页面，并生成面向普通用户的产品说明文档，同时要求沉淀为可复用 Skill。回复中还延伸到可访问性、多端适配、Design System 和安全审查等方向。",
+    "tags": [
+      "Codex",
+      "/goal",
+      "产品说明文档",
+      "可复用流程",
+      "AI辅助开发"
+    ],
+    "title": "Hwang: 给大家一些 /goal 的用例，防止 token 用不完 1/ 产品说明文档 基于当前 commit 的产品功能，运行真实 App / 模拟器 / 使用 CDP…",
+    "totalScore": 60,
+    "url": "https://x.com/hwwaanng/status/2063824787743396242"
+  },
+  "payloadHash": "sha256:fe0542e0fae522f62faa5e73eac463ae02275b102b8370a0ea7654d60da520fe",
+  "refs": {},
+  "revisionId": "sha256:8e9b223c222624f6aab6c759cdfaa7002ed9222bdd52921c90118bc05c176aa8",
+  "schemaVersion": 1,
+  "updatedAt": 1781170392782
+}

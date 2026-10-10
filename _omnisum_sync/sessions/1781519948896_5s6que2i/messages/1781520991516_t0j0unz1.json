@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781520896454,
+  "entityType": "message",
+  "id": "1781520991516_t0j0unz1",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\nCJ Zafir 分享了一套在 Claude Code 中结合 OpenAI Codex 使用的工作流，称这样可以让自己每周消耗的 Claude Code 限额减少约 **50%**。核心思路是：**让 Claude 负责规划和审核，让 Codex 负责执行代码任务**，从而降低 Claude 的使用消耗。\n\n## 1. 具体做法：在 Claude Code 中接入 Codex\n\n作者的操作很简单：\n\n- 在 **Claude Code** 中安装 **OpenAI Codex 插件**\n- 然后按不同阶段分配模型任务：\n\n| 阶段 | 使用模型 | 作用 |\n|---|---|---|\n| 规划 | Claude Fable 5 High | 负责思考、拆解任务、制定方案 |\n| 执行 | Codex 5.5 xhigh | 按计划写代码、完成实现 |\n| 审核 | Claude Fable 5 Max | 检查代码质量、发现问题 |\n\n作者强调：**不使用 API，而是使用 Codex 计划**。  \n他表示这套方式“确实有效”。\n\n## 2. 核心逻辑：把“思考”和“执行”拆开\n\n热门回复中有人总结得很准确：\n\n> Claude 负责思考，Codex 负责执行。\n\n也就是说，不再让 Claude 从头到尾包办所有事情，而是：\n\n- Claude 做更擅长的高层规划、架构判断\n- Codex 做更消耗 token 的代码实现\n- Claude 最后再做质量把关\n\n这样可以减少 Claude Code 的额度消耗，同时保持一定的开发质量。\n\n## 3. 关于模型配置：不一定每个项目都要用最高档\n\n有回复指出：\n\n- 对 **90% 的项目** 来说，用 **Fable Max** 做审核可能有点“过度配置”\n- 更常见的组合可以是：\n  - **Fable 5 High 或 Medium** 用于规划\n  - **GPT 5.5 或 GLM 5.1** 用于执行\n  - **GPT-5.3-Codex** 用于代码审查\n\n这说明实际使用时可以根据项目复杂度调整模型，不一定都要使用最高级别。\n\n## 4. 作者补充：高质量项目需要强编排器\n\nCJ Zafir 进一步解释：\n\n如果想要高质量输出，一个强大的“编排器”很重要，例如：\n\n- Codex\n- Claude\n\n它们负责掌控项目方向、拆解任务和协调执行，这一点在复杂项目中非常关键。\n\n但具体执行代码时，可以选择更多模型，例如：\n\n- Deepseek v4 专业版\n- MiMo v2.5\n- 极小极大 3\n- GLM 5.1\n- 通义千问 3.6 Max\n\n也就是说，**规划和管理项目的模型要强，执行模型可以更灵活选择**。\n\n## 5. 执行档位建议：xhigh 更适合一次到位\n\n作者还补充：\n\n- 如果希望一次执行成功，减少反复调试，推荐使用 **xhigh**\n- 如果不追求一次到位，使用 **high** 也可以\n\n这表明 xhigh 更适合复杂或要求较高的任务，但也可能更消耗资源。\n\n## 6. 最简单的上手方式\n\n作者最后给出简化建议：\n\n> 只需要让 Claude 安装官方 Codex 插件即可。\n\n也就是说，对普通用户而言，不必一开始就配置复杂流程，可以先在 Claude Code 中接入 Codex，再逐步尝试“Claude 规划 + Codex 执行 + Claude 审核”的模式。\n\n## 总结\n\n这篇内容的重点是介绍一种节省 Claude Code 使用限额的混合工作流：**Claude 做规划和审核，Codex 做代码执行**。作者称该方法让自己的 Claude Code 周消耗减少了 **50%**，同时通过合理分工尽量保证代码质量。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781520896454,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7257fa1603fb448cf09856686825a9a632763827b5c25dcb4530dea7077444bf",
+  "refs": {
+    "sessionId": "1781519948896_5s6que2i"
+  },
+  "revisionId": "sha256:15523be9b16abf8e896a8b0351408a5d845c4f88866df9c7a114dc7b223b0d9e",
+  "schemaVersion": 1,
+  "updatedAt": 1781520896454
+}

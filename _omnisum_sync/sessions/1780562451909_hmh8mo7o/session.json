@@ -1,0 +1,70 @@
+{
+  "createdAt": 1780562451909,
+  "entityType": "session",
+  "id": "1780562451909_hmh8mo7o",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 Pi 或 Coding Agent，可尝试安装 agent-browser 与 pi-agent-browser-native，并运行 doctor 检查环境。",
+      "先用 open → snapshot -i → click/semanticAction → snapshot -i 的基础流程测试公共网页。",
+      "涉及登录态或真实浏览器 profile 时，优先阅读认证和安全相关章节，避免泄露 cookie、密码或私人页面内容。",
+      "若目标是桌面应用自动化，进一步阅读 docs/ELECTRON.md，而不是只依赖 README 示例。"
+    ],
+    "archiveReason": "包含较完整的安装、配置、调用示例和安全注意事项，可作为使用Pi浏览器自动化工具的参考文档。",
+    "classifiedAt": 1781662921912,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Pi原生浏览器自动化工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "pi-agent-browser-native 通过 native tool 暴露 agent_browser，降低 Agent 调用浏览器自动化的上下文和命令拼接成本。",
+      "工具支持 open、snapshot、click、batch、semanticAction、job、qa、electron、sourceLookup 等多种调用模式。",
+      "项目重点处理快照过大、截图和下载产物丢失、会话漂移、认证信息泄露、stale ref、点击未生效等 Agent 浏览器自动化常见问题。",
+      "使用前需单独安装 upstream agent-browser，并通过 pi install npm:pi-agent-browser-native 安装 Pi 扩展。",
+      "README 提供了大量安全边界说明，例如不要复用导航前的 @e 引用、密码应通过 stdin 传入、真实 profile 内容会暴露给模型。"
+    ],
+    "oneHighValuePoint": "将浏览器自动化封装为原生工具而非脆弱的 shell 命令，并提供结构化结果、artifact管理、会话恢复和安全红action机制。",
+    "oneLineReview": "这是一个详尽但冗长的项目README，适合需要在Pi中使用真实浏览器自动化的开发者参考。",
+    "primaryCategory": "AI Agent工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后按需保留",
+    "secondaryCategories": [
+      "浏览器自动化",
+      "开发工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了 pi-agent-browser-native 项目：为 Pi 提供原生 agent_browser 工具，封装 upstream agent-browser，实现网页浏览、截图、交互快照、会话管理、Electron支持、QA检查、Web搜索配置及安全红action等能力。",
+    "tags": [
+      "Pi",
+      "agent-browser",
+      "浏览器自动化",
+      "GitHub项目",
+      "AI Agent"
+    ],
+    "title": "GitHub - fitchmultz/pi-agent-browser-native: pi extension that exposes agent-browser as a native tool for browser automation · GitHub",
+    "totalScore": 66,
+    "url": "https://github.com/fitchmultz/pi-agent-browser-native"
+  },
+  "payloadHash": "sha256:102e9dba539c6a8151f707845e714aefcb1cbf41decf4153c5d49f6f12f615cf",
+  "refs": {},
+  "revisionId": "sha256:cfbfdaa2d9d4efa76fad87cea062da01f8b70483f4296f8104b86ee0a6bf3b12",
+  "schemaVersion": 1,
+  "updatedAt": 1781662922856
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781517501332,
+  "entityType": "message",
+  "id": "1781517579435_pedt6z3a",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Agent 时代的软件接口：从 API 到 DSL + 编译器\n\n## 核心观点\n\n文章提出：**面向 AI Agent 的软件系统，不能再只依赖传统 API 或让大模型直接写代码，而应设计“Agent 友好”的领域工作流**。\n\n这个工作流可以概括为：\n\n> **Intent 用户意图 → Domain DSL 领域语言 → IR/DAG 编译中间层 → Validation 校验 → Repair Loop 修复循环 → Deterministic Execution 确定性执行**\n\n---\n\n## 1. 问题：让大模型直接控制复杂系统不稳定\n\n作者最初尝试让大模型在 Minecraft 中直接执行建造任务，比如“建一个房子”。\n\n但实践发现，大模型在实时环境中容易卡住，原因包括：\n\n- 三维空间理解困难\n- 坐标推理容易出错\n- 环境反馈复杂\n- 长程状态维护不稳定\n- 动作执行会累积误差\n\n结论是：**让 LLM 直接做底层闭环控制，稳定性很差。**\n\n---\n\n## 2. 关键转变：不要让 AI 操作底层，而是表达高层意图\n\n作者从两个项目中得到同一套方法：\n\n- **MinePilot**：让 AI 生成 Minecraft 建筑方案\n- **策引 MyInvestPilot**：让 AI 生成量化投资策略\n\n共同经验是：\n\n> 不让大模型直接生成底层代码、坐标或复杂 JSON，而是提供一套领域 DSL，让它像搭积木一样表达意图。\n\n例如在 Minecraft 中，AI 不需要输出每个方块坐标，而是描述：\n\n- 创建一个房间壳体\n- 在前墙偏移 3 格处放门\n- 添加人字屋顶\n- 设置屋檐延伸\n\n底层坐标、碰撞、方块填充等由系统引擎完成。\n\n---\n\n## 3. DSL 的本质：给 Agent 搭“语义脚手架”\n\nDSL 的作用不是限制 AI，而是降低它的认知负担。\n\n大模型擅长：\n\n- 理解自然语言\n- 做宏观规划\n- 组合概念\n- 推理结构关系\n\n大模型不擅长：\n\n- 精确坐标计算\n- 底层状态管理\n- 长链路工程细节\n- 严格执行一致性\n\n因此，系统应遵循：\n\n> **Agent is the author. Engine is the compiler.**  \n> Agent 负责创作，系统引擎负责编译和执行。\n\n---\n\n## 4. 像写编译器一样构建业务系统\n\n当 AI 输出 DSL 后，不能直接执行，而要经过编译管线。\n\n以 MinePilot 为例：\n\n1. **BuildIntent**：用户的自然语言意图  \n2. **ComponentPlan DSL**：AI 生成的组件级建筑方案  \n3. **CraftDAG IR**：系统解析为可验证、可排序的 DAG  \n4. **VoxelPlan**：最终生成具体方块坐标和状态  \n\n量化投资系统中也类似：\n\n- AI 组合策略原语\n- 系统转成 DAG\n- 通过拓扑排序计算指标、信号和交易逻辑\n\n这样做的价值是：\n\n- 可静态分析\n- 可验证依赖关系\n- 可确定性执行\n- 可局部重算\n- 可拦截 AI 幻觉\n\n---\n\n## 5. 报错也要面向 Agent 设计\n\n传统软件的错误提示是给人看的，比如“格式错误”。\n\n但 Agent 系统里的报错应该是**机器可读的协作契约**，例如：\n\n```json\n{\n  \"stage\": \"component-validation\",\n  \"code\": \"ASSEMBLY_INSTANCE_OUT_OF_BOUNDS\",\n  \"path\": \"instances[0].anchor\",\n  \"repairHint\": \"Move the instance inward or increase global bounds.\"\n}\n```\n\n这种错误信息会明确告诉大模型：\n\n- 错在哪个阶段\n- 错误类型是什么\n- JSON 路径在哪里\n- 应该如何修复\n\n这样，大模型就能进行稳定的自我修复，而不是盲目重写。\n\n---\n\n## 6. 关键机制：契约 + 校验 + 修复循环\n\n一个可靠的 Agent 系统需要两类约束：\n\n### 事前约束\n\n通过文档、Schema、规则告诉大模型：\n\n- 可以写什么\n- 不能写什么\n- 必须遵守哪些结构\n- 哪些行为绝对禁止\n\n作者强调：  \n**与其告诉模型“应该怎么做”，不如明确告诉它“绝对不能做什么”。**\n\n### 事后校验\n\n系统通过强类型校验、编译器检查、错误反馈，告诉模型哪里错了。\n\n最终形成：\n\n> 生成 → 校验 → 报错 → 修复 → 再校验 → 执行\n\n这就是 **Repair Loop 修复循环**。\n\n它是 Agent 从“玩具”变成“生产力基础设施”的关键。\n\n---\n\n## 7. 架构原则：概率性归 AI，确定性归系统\n\n作者提出一种混合 Agent 架构：\n\n### 本地 Agent\n\n负责处理模糊性：\n\n- 和用户对话\n- 理解意图\n- 澄清需求\n- 组织交互\n\n### 远端 Engine\n\n负责确定性任务：\n\n- 队列调度\n- 状态机\n- DSL 编译\n- DAG 校验\n- 精确计算\n- 结果执行\n\n核心原则是：\n\n> **模糊的事情交给大模型，确定性的事情交给传统代码。**\n\n很多 Agent 系统失败，是因为把概率性推理和确定性执行混在一起。\n\n---\n\n## 8. 适用边界：不是所有 AI 产品都适合\n\n这套范式适合以下领域：\n\n- 有明确领域结构\n- 能抽象出稳定原语\n- 中间状态可以验证\n- 最终结果可以执行或模拟\n- 错误可以定位和修复\n- 人类可以审查和决策\n\n但它不适合所有任务。\n\n如果任务高度开放、创意性强、缺乏验证标准，过早引入 DSL 和 DAG 可能会限制模型能力。\n\n同时，验证不等于真实正确：\n\n- 投资策略回测通过，不代表未来赚钱\n- 建筑蓝图编译成功，不代表审美优秀\n\n人类仍然需要最终判断。\n\n---\n\n## 9. 软件设计顺序正在反转\n\n传统软件设计通常是：\n\n> 先设计 UI → 再设计数据库 → 最后设计 API\n\n但 Agent 时代可能变成：\n\n> 先设计 DSL → 再设计编译器和验证机制 → 再设计修复循环 → 最后设计人类 UI\n\n也就是说，未来软件不仅要 Human-friendly，也要 Agent-friendly。\n\n更理想的形态是：\n\n- 人通过 UI 表达意图、审查结果、做决策\n- Agent 通过 DSL、工具、验证契约操作系统\n\n---\n\n## 总结\n\n文章的核心洞察是：\n\n> Agent 时代的软件接口，不应只是传统 API，而应是面向 Agent 的领域语言、编译器、验证契约和修复循环。\n\n真正可靠的 AI 原生系统，不是让大模型直接控制一切，而是：\n\n- 让 AI 负责高层意图和结构表达\n- 让 DSL 收拢底层复杂性\n- 让编译器负责确定性转换\n- 让校验机制拦截错误\n- 让修复循环持续收敛\n- 让人类保留最终审查权\n\n这是一种新的软件架构范式：\n\n> **Domain-shaped, not Domain-locked.**  \n> 用领域结构塑造 Agent 能力，而不是把它锁死在底层操作里。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781517501332,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ff562045816745ed8d71a3569cd0f12f76154d95c64f2e0679ea91eee17f1911",
+  "refs": {
+    "sessionId": "1781517576884_1q1d4zjj"
+  },
+  "revisionId": "sha256:f186e7c2c0b6e9364d685dae0e009ca461043910c181fdc590afa0947570639e",
+  "schemaVersion": 1,
+  "updatedAt": 1781517501332
+}

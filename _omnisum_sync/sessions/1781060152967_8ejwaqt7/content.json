@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781060152967,
+  "entityType": "session-content",
+  "id": "1781060152967_8ejwaqt7",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Abhijith Neil Abraham</strong></header><div class=\"tw-body\"><br>停止使用 Docker 来沙箱化 AI 代理。<br><br>大多数人正在保护错误的东西。<br><br>Docker 和开发容器去除了很多使代理有用的特性。身份验证必须转发，API 密钥最终出现在环境变量中，更新意味着重新构建镜像，而且所有内容仍然共享同一个内核。<br><br>虚拟机提供更强的隔离性，但每个任务都要从零开始。你会失去机器上的本地上下文，并且每次都要付出冷启动的代价。<br><br>firejail 和 seccomp 提供帮助，直到代理需要安装软件包、运行构建工具，或者执行任何不在精心筛选的系统调用列表中的操作。<br><br>然后还有审批提示。它们适用于单个代理。一旦你有十个代理并行运行，每个人最终都会点击“允许全部”并继续他们的日常工作。<br><br>所有这些方法背后的假设是代理需要沙箱。<br><br>我认为代码需要沙箱。<br><br>代理是你选择、配置、认证并连接到的工具。风险部分是五秒钟前刚生成的模型生成的 Shell 命令。该命令可能包含漏洞、提示注入或某种完全恶意的内容。<br><br>Temenos ( <a style=\"color: rgb(29, 155, 240);\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1wvb978 r-1loqt21\" role=\"link\" rel=\"noopener noreferrer nofollow\" href=\"https://github.com/vitalops/temenos\" dir=\"ltr\"><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-qlhcfr r-19qo34d r-qvk6io r-orgf3d r-u8s1d\" aria-hidden=\"true\">https://</span>github.com/vitalops/temen<span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-qlhcfr r-19qo34d r-qvk6io r-orgf3d r-u8s1d\" aria-hidden=\"true\">os</span><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-lrvibr\" aria-hidden=\"true\">…</span></a> ) 在那个边界处恰好分割系统。<br><br>代理驻留在主机上，能够访问认证、MCP 服务器、更新和模型 API。<br><br>执行在一个无 root 权限的 gVisor 沙箱内进行，该沙箱带有自己的用户空间内核。主机文件系统仅在你显式挂载的位置出现。网络访问可以通过一个标志关闭。<br><br>分离由工具链本身强制实施。<br><br>Claude 启动时不具备 Bash、Read、Write、Edit 或任何其他能直接接触主机的工具。模型可用的执行路径需经过沙箱。<br><br>这意味着扩展到代理集群，而无需陷入审批对话框中。<br><br>```<br>pip 安装 \"temenos[all]\"<br>cd ~/code/my-repo<br>Temenos Claude<br>`` ⁠<br><br>信任代理<br><br>包含它生成的代码<br><br>其他一切都会自然地从中得出。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HKZwXk7boAADr0F?format=jpg&name=large\" alt=\"图片\" /></div></article>",
+    "pageContent": "Abhijith Neil Abraham: 停止使用 Docker 来沙箱化 AI 代理。 大多数人正在保护错误的东西。 Docker 和开发容器去除了很多使代理有用的特性。身份验证必须转发，API 密钥最终出现在环境变量中，更新意味着重新构建镜像，而且所有内容仍然共享同一个内核。 虚拟机提供更强的隔离性，但每个任务都要从零开始。你会失去机器上的本地上下文，并且每次都要付出冷启动的代价。 firejail 和 seccomp 提供帮助，直到代理需要安装软件包、运行构建工具，或者执行任何不在精心筛选的系统调用列表中的操作。 然后还有审批提示。它们适用于单个代理。一旦你有十个代理并行运行，每个人最终都会点击“允许全部”并继续他们的日常工作。 所有这些方法背后的假设是代理需要沙箱。 我认为代码需要沙箱。 代理是你选择、配置、认证并连接到的工具。风险部分是五秒钟前刚生成的模型生成的 Shell 命令。该命令可能包含漏洞、提示注入或某种完全恶意的内容。 Temenos ( https://\ngithub.com/vitalops/temen\nos\n… ) 在那个边界处恰好分割系统。 代理驻留在主机上，能够访问认证、MCP 服务器、更新和模型 API。 执行在一个无 root 权限的 gVisor 沙箱内进行，该沙箱带有自己的用户空间内核。主机文件系统仅在你显式挂载的位置出现。网络访问可以通过一个标志关闭。 分离由工具链本身强制实施。 Claude 启动时不具备 Bash、Read、Write、Edit 或任何其他能直接接触主机的工具。模型可用的执行路径需经过沙箱。 这意味着扩展到代理集群，而无需陷入审批对话框中。 ```\npip 安装 \"temenos[all]\"\ncd ~/code/my-repo\nTemenos Claude\n`` ⁠ 信任代理 包含它生成的代码 其他一切都会自然地从中得出。\n![图片](https://pbs.twimg.com/media/HKZwXk7boAADr0F?format=jpg&name=large)\n\n链接:\n- https://github.com/vitalops/temenos"
+  },
+  "payloadHash": "sha256:69d5a60a70173b8300d0a42354c214399246092e83c5af2fda91afc668155eee",
+  "refs": {},
+  "revisionId": "sha256:38099f89fad63c5ad516b4d7c318af064a616f031b224a2ae96825783ac52254",
+  "schemaVersion": 1,
+  "updatedAt": 1781173662306
+}

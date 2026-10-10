@@ -1,0 +1,67 @@
+{
+  "createdAt": 1781521068078,
+  "entityType": "session",
+  "id": "1781521068078_ocryu75j",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 Ideogram 或类似图像生成工具，可搜索该项目或 Pinokio 入口进行试用",
+      "用一个多主体构图提示测试其 bbox 生成准确性",
+      "评估本地 Qwen 模型生成的 bbox prompt 是否比手写更省时"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781521655507,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "自然语言生成Ideogram框选提示",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "自然语言描述可以被转换为图像生成所需的 bbox 布局提示",
+      "llama.cpp + Qwen 可用于本地化运行此类提示转换工作流",
+      "Pinokio 可能提供一键部署入口，降低试用门槛"
+    ],
+    "oneHighValuePoint": "用本地 LLM 自动生成 Ideogram bbox prompt，可减少手动创建边界框的工作量。",
+    "oneLineReview": "有一定工具发现价值，但缺少细节支撑，适合速览而非深入保存。",
+    "primaryCategory": "AI生成工具",
+    "rating": "C",
+    "rejectReason": "内容主要是工具动态和简短展示，缺少实现细节、链接说明、效果对比和完整教程，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "本地大模型应用",
+      "图像生成工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "一条关于将自然语言提示自动转换为 Ideogram bbox 提示的工具动态，强调可用 llama.cpp 与 Qwen 在本地运行，并可通过 Pinokio 一键使用。正文信息较少，主要提供概念和简单示例。",
+    "tags": [
+      "Ideogram",
+      "bbox prompt",
+      "llama.cpp",
+      "Qwen",
+      "Pinokio"
+    ],
+    "title": "cocktail peanut: Turn natural language prompt to Ideogram bbox prompt",
+    "totalScore": 40.5,
+    "url": "https://x.com/cocktailpeanut/status/2065096111950311552"
+  },
+  "payloadHash": "sha256:4193b95d33f2eb04dc5a5612298ec5ea7508fbd5cd5f1ef2f445557061ad92fe",
+  "refs": {},
+  "revisionId": "sha256:1e551c493437612932d670cc8dc03912f64db645bf4a8c273d744c7dfa8f3680",
+  "schemaVersion": 1,
+  "updatedAt": 1781521656734
+}

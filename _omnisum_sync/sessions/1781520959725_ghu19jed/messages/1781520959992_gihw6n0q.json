@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781520879437,
+  "entityType": "message",
+  "id": "1781520959992_gihw6n0q",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章总结：AI 编程中的“背压”问题\n\n## 核心观点\n\n相比用 **Loop（循环）** 来描述当前 Agent 的工作方式，作者认为 **Backpressure（背压）** 更准确。\n\n在 AI 编程流程中，人类开发者往往提前介入 Agent 的工作循环，不断检查、验证、修正 LLM 的输出。此时，人就变成了 Agent 工作流中的“阻力”。\n\n---\n\n## 什么是 Backpressure？\n\n**Backpressure** 原本来自流体力学，指管道中流体遇到阻力。\n\n在系统工程中，它指的是：\n\n> 下游系统处理不过来时，向上游发出信号，要求其放慢、缓存或丢弃任务。\n\n也就是说，背压本质上是一种 **系统处理能力不足时的反馈机制**。\n\n---\n\n## 对 AI Agent 的启发\n\n当前大多数 AI Agent，尤其是 AI 编程 Agent，仍建立在 **ReAct 框架**之上：\n\n- 推理\n- 行动\n- 观察反馈\n- 再推理\n- 再行动\n\n这本质上是一个循环。\n\n但问题是，很多时候人类提前进入这个循环：\n\n- 检查代码是否正确\n- 手动运行测试\n- 判断是否符合需求\n- 修复 Agent 没发现的问题\n\n于是，人类不再只是使用者，而成为了 Agent 流程中的“背压”。\n\n---\n\n## 真正的目标：把人从循环中解放出来\n\n作者认为，AI 编程的关键方向不是让人持续监督 Agent，而是让 Agent 自己完成更多闭环工作。\n\n具体来说，需要通过 **Harness（测试与约束框架）** 来加固流程，让 Agent 能够：\n\n- 理解用户意图\n- 明确约束条件\n- 自动编写和运行测试\n- 主动发现 issue\n- 主动修复问题\n- 最终交付可直接投入生产的版本\n\n---\n\n## 一句话总结\n\n当前 AI 编程的瓶颈，不只是 Agent 在循环中工作，而是人类成为了这个循环中的“背压”；未来的关键是通过更强的测试、约束和自动验证机制，让 Agent 独立完成从理解到交付的闭环。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781520879437,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8c6197531116b328231e558ca430bc0f6b42669c26d70c6f5343d15096f0b848",
+  "refs": {
+    "sessionId": "1781520959725_ghu19jed"
+  },
+  "revisionId": "sha256:80d416ffaa46e806c62d6a84701c42b92a80ac08df93dc921f5af81aff759091",
+  "schemaVersion": 1,
+  "updatedAt": 1781520879437
+}

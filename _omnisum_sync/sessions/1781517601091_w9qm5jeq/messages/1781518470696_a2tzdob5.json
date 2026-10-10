@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781518470697,
+  "entityType": "message",
+  "id": "1781518470696_a2tzdob5",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Open Design项目评估\n\n**评级**: B (64.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI设计工具\n**次类别**: 开源项目, Agent工作流, 设计工程\n**标签**: #Open Design #Claude Design替代 #MCP #本地优先 #设计系统 #AI Agent\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 适合作为AI设计工具调研入口，但需要实际试用验证其稳定性与宣传真实性。\n**核心高价值点**: 将设计系统、Agent Skills、插件和MCP结合，让本地编码Agent直接生成和迭代可导出的设计产物。\n\n### 摘要\n文章是Open Design项目README，介绍其作为本地优先、开源Claude Design替代品的功能、安装、MCP集成、插件、设计系统、导出能力和架构。信息量较大但宣传成分明显，证据主要来自项目自述。\n\n### 知识要点\n- Open Design采用本地优先架构，支持macOS、Windows、可选Linux，并通过BYOK或多CLI Agent运行设计生成流程。\n- 项目提供100+技能、150个设计系统和261个插件，支持HTML、PDF、PPTX、MP4等多种产物导出。\n- MCP服务器让Claude Code、Cursor、Codex、Copilot等Agent访问项目文件、设计系统和生成产物。\n- DESIGN.md作为品牌契约，定义颜色、字体、间距、组件、动效、语气和反模式等设计规范。\n- README包含安装、Docker部署、本地开发、插件开发、贡献流程和架构概览。\n\n### 行动项\n- 如关注AI设计生产力，可先按Quick Start安装桌面版或Docker版进行小范围试用。\n- 用一个真实品牌DESIGN.md和简单落地页需求测试其产物质量、可编辑性和导出效果。\n- 检查项目Issue、Release和代码活跃度，确认功能是否成熟而非主要停留在宣传层面。\n- 若团队使用Cursor、Claude Code或Codex，可测试MCP集成是否能融入现有开发流程。\n\n### 存档判定\n归档: 是 — 原因: 包含项目定位、安装方式、架构、插件体系和设计系统说明，若关注AI设计工作流或Agent工具集成，可作为工具调研资料归档。\n删除: 否\n留存决策: 短期参考后按需保留",
+    "role": "assistant",
+    "timestamp": 1781518470697,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:c8e084e853e808e0eaa84b2a1f89ba2627eb5593e66a182f7fa2c31a90fd9a50",
+  "refs": {
+    "sessionId": "1781517601091_w9qm5jeq"
+  },
+  "revisionId": "sha256:c7388a0d0ff0fb10deaf002771a93bc43dd8532bad51128d2373ab3df6bb6e48",
+  "schemaVersion": 1,
+  "updatedAt": 1781518470697
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781519936730,
+  "entityType": "session",
+  "id": "1781519936730_qnmm8igw",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需要Windows端Coding Agent编排工具，可访问Helmor官网简单试用。",
+      "若不跟踪该工具生态，可删除该推文，不必归档。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781520331891,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 1
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Helmor支持Windows编码代理",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量有限，主要传达Helmor支持Windows及若干功能点，缺乏可复用方法论和深入证据支撑。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Helmor定位为开源、本地优先的Coding Agent编排GUI工具。",
+      "支持Claude Code、Codex、Cursor、OpenCode并行运行及自定义模型配置。"
+    ],
+    "oneHighValuePoint": "Helmor开始支持Windows，补足多数GUI Coding Agent偏Mac-only的问题。",
+    "oneLineReview": "适合快速获知一个AI编码代理编排工具的产品动态，但不值得长期保存。",
+    "primaryCategory": "AI开发工具",
+    "rating": "D",
+    "rejectReason": "内容主要是产品发布宣传，缺少功能细节、使用方法、对比分析和实证数据，长期参考价值较低。",
+    "retentionDecision": "短期了解后可删除",
+    "secondaryCategories": [
+      "Coding Agent",
+      "开发者工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该推文介绍Helmor已支持Windows，可并行运行Claude Code、Codex、Cursor、OpenCode等Coding Agent，并支持独立worktree、diff、GitHub/GitLab和自定义模型配置，Linux版本即将推出。",
+    "tags": [
+      "Helmor",
+      "Windows",
+      "Coding Agent",
+      "Claude Code",
+      "Cursor"
+    ],
+    "title": "Caspian 東澔: 多数 GUI 的 Coding Agent, 几乎全是 Mac-only，对Windows开发者来说不太友好",
+    "totalScore": 27,
+    "url": "https://x.com/caspian_1016/status/2064983474466087282"
+  },
+  "payloadHash": "sha256:d85d8f63404e0c70b545f381a61633346fe5e0cc138ccafad0957945e85fd0f5",
+  "refs": {},
+  "revisionId": "sha256:3b23ca85bad4d80cac524d527dc63d7905f686bf05c553917e0d5ce2366ad8c1",
+  "schemaVersion": 1,
+  "updatedAt": 1781520332320
+}

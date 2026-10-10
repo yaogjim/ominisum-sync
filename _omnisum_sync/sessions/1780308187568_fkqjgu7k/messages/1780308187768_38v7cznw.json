@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780308075248,
+  "entityType": "message",
+  "id": "1780308187768_38v7cznw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、总结\n\nMax Katz 说：他最喜欢的工作流是 **`cmux` + `hitch`**。\n\n- **`hitch`**：他自己做的工具，让 AI 代理/助手可以使用你的终端  \n- 安装方式：`npm install -g hitch-cli`\n- 有人提到：`cmux CLI` 本身似乎也能读取、交互面板\n- 其他热门回复大多是广告或无关内容\n\n---\n\n## 二、解读\n\n可以简单理解为：\n\n> **`cmux` 负责组织/管理多个终端或面板，`hitch` 负责让 AI 能接入并操作终端。**\n\n也就是说，这套工作流适合：\n\n- 写代码\n- 跑命令\n- 调试项目\n- 让 AI 参与本地开发流程\n\n它的核心价值是：\n\n> 把 AI 从“只会聊天”变成“能实际操作终端的开发助手”。\n\n但评论里也有人质疑：  \n如果 `cmux CLI` 已经能和面板交互，那 `hitch` 是否还有必要，需要看具体体验差异。\n\n---\n\n## 三、我的意见\n\n这类工作流方向是对的：**AI + 终端 = 更接近真实开发助手**。\n\n但要注意三点：\n\n1. **权限风险**：让 AI 操作终端前，最好限制目录和命令权限  \n2. **不要盲信**：AI 执行命令前，关键操作要人工确认  \n3. **工具价值看体验**：如果 `cmux` 原生能力够用，`hitch` 就要靠更顺滑的集成来证明价值\n\n一句话：\n\n> 如果你经常用 AI 辅助编程，`cmux + hitch` 值得试；但别让 AI 无限制控制你的终端。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780308075248,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0fe43ce2f0ae99189e23b52c6abb3472d0291e4d12e3c0c1518e0da5788f924e",
+  "refs": {
+    "sessionId": "1780308187568_fkqjgu7k"
+  },
+  "revisionId": "sha256:7881f0f2b15df867e96271d28f93caf2f36dc490c4f706239f7b665021067a10",
+  "schemaVersion": 1,
+  "updatedAt": 1780308075248
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781170281155,
+  "entityType": "message",
+  "id": "1781170378214_sxlg3w64",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 《Harness 就是产品》精炼总结\n\n文章的核心观点是：**对 coding agent 来说，模型并不是全部，真正决定产品可靠性和体验的是围绕模型运行的 harness（运行时/控制层）**。凡是需要稳定、可控、可追踪的能力，都应该由 harness 负责，而不是交给模型“自由发挥”。\n\n---\n\n## 1. 为什么不能只关注 Model\n\n讨论 coding agent 时，人们常先问：\n\n- 用哪个 model？\n- context 多大？\n- 写代码能力强不强？\n\n这些问题重要，但作者认为更关键的问题是：\n\n> **Harness 到底负责什么？**\n\n基础 LLM 只是预测文本，而 coding agent 不只是生成代码，它需要在真实代码仓库中：\n\n- 查看 repo\n- 调用工具\n- 编辑文件\n- 运行检查\n- 记住历史状态\n- 多轮持续推进任务\n\n这一整套让模型真正“行动起来”的 runtime，就是 **harness**。\n\n---\n\n## 2. 天真的 Mini Agent 很快会失控\n\n一个简单的 coding agent 可能只是“模型 + 工具调用循环”，但很快会遇到大量问题，例如：\n\n- 模型想编辑一个从没读过的文件怎么办？\n- shell 命令访问 workspace 外的文件怎么办？\n- 工具返回了 **50,000 行输出** 怎么处理？\n- 文件在磁盘上已经变化，但 transcript 里还是旧内容怎么办？\n- tool result 和对应的 tool call 对不上怎么办？\n\n这些问题说明：  \n**只有 agent loop 还不够，它还不是可靠的 coding agent。**\n\n---\n\n## 3. Harness 的职责：模型提议，Harness 决策\n\n作者强调：\n\n> **Model 可以提出 proposal，Harness 负责做决定。**\n\n模型可以建议做什么，但真正执行前，harness 需要负责检查、限制、记录和修正。\n\n每一个从模型到工具、从工具到文件系统、从执行结果回到上下文的环节，都是 harness 保护用户的位置，也可能是系统失控的位置。\n\n---\n\n## 4. Coding Agent 工具必须具备的六个核心组件\n\n### 4.1 实时仓库上下文\n\nAgent 不应该从空 prompt 开始。它需要知道：\n\n- 当前 workspace\n- 当前文件\n- 相关项目文档\n- 哪些 repo state 可以安全暴露给模型\n\n也就是说，agent 必须基于真实项目状态工作，而不是凭空猜测。\n\n---\n\n### 4.2 提示形状 Prompt Shape\n\n很多时候，看起来像是 model 能力差，其实是 context 组织得不好。\n\n高质量 prompt 需要包括：\n\n- 稳定的 prefix\n- 清晰的 tool contract\n- 当前用户请求\n- 受控的历史信息\n\n作者指出：  \n**好的提示结构带来的行为改善，可能比换一个更强模型还明显。**\n\n---\n\n### 4.3 结构化工具 Structured Tools\n\n工具不应该只是 helper functions，而是：\n\n> **模型提议与真实副作用之间的 contract。**\n\nHarness 需要负责：\n\n- 解析参数\n- 校验路径\n- 检查权限策略\n- 执行操作\n- 裁剪输出\n- 记录发生了什么\n\n例如，模型想写入文件时，不应该直接执行，而应由 harness 判断是否安全、是否允许。\n\n---\n\n### 4.4 上下文压缩 Context Reduction\n\n如果 harness 盲目把所有历史和工具输出都塞进 prompt，模型最终会看到：\n\n- 太多信息\n- 太少关键信息\n- 错误或过期的信息\n\n作者强调：\n\n> **好的 context 是一种 projection，而不是不断膨胀的 blob。**\n\n也就是说，harness 要选择性地呈现当前最重要的信息。\n\n---\n\n### 4.5 Transcript 与 Memory 要区分\n\n作者区分了两类信息：\n\n- **Transcript**：回答“发生过什么？”\n- **Working state**：回答“现在什么重要？”\n\n两者任务不同，不能混在一起。  \n否则 agent 可能会被无关历史干扰，或者遗漏当前关键状态。\n\n---\n\n### 4.6 Delegation：子代理不是魔法并行\n\nSubagents 不等于简单地并行调用多个模型。\n\n真正有用的 delegation 应该是：\n\n- 有明确边界的 worker\n- 拥有 scoped tools\n- 状态隔离\n- 输出经过提炼\n\n当子代理能充当 **context firewall（上下文防火墙）** 时，它才真正有价值。\n\n---\n\n## 5. 主循环：Model 在 Loop 里，Harness 拥有 Loop\n\nCoding agent 本质上是一个 observe-act loop：\n\n- observe：观察当前状态\n- act：采取行动\n\n但真正有价值的部分发生在两者之间：  \n**如何判断、过滤、验证、授权、记录和更新状态。**\n\n作者总结：\n\n> **Model 在 loop 里面，Harness 拥有 loop。**\n\n这意味着：模型只是循环中的决策建议者，而整个循环的控制权属于 harness。\n\n---\n\n## 6. 具体例子：模型想写入 `src/config.py`\n\n假设模型发出一个 tool call，想编辑：\n\n```text\nsrc/config.py\n```\n\n这只是一个 proposal。Harness 接下来要判断：\n\n- `src/config.py` 是否在 workspace 内？\n- 路径是否可能通过 symlink 逃逸？\n- 这是新文件还是覆盖旧文件？\n- 模型最近是否读过这个文件？\n- 已知的 file baseline 是否已经过期？\n- 这次写入是否需要人工批准？\n- 编辑结果是否要包含 diff summary？\n- 是否应该运行 validation command？\n- 有多少输出应该进入下一轮 prompt？\n- 需要更新哪些 state，避免下一轮读取过期信息？\n\n这些判断都不应该交给模型随机处理。  \nPrompt 可以描述期望行为，但 **边界必须由 harness 落实**。\n\n---\n\n## 7. 产品启示：问题常出在 Harness，而不只是 Model\n\n一旦理解 harness，就能更好诊断 coding agent 的问题：\n\n- Agent 不断重复：检查 loop 和 retry policy\n- 编辑过期代码：检查 file-state baselines\n- 越跑越差：检查 context projection\n- 运行了意外命令：检查 permission policy\n- 无法从 tool errors 恢复：检查 tool result objects\n- 解释不清发生了什么：检查 traces、audit、doctor surfaces\n\n模型当然重要，但它只是其中一层。  \n真正的 agent 体验来自模型周围完整的 harness。\n\n---\n\n## 8. 最终结论\n\n作者的核心工程原则是：\n\n> **Anything that must be reliable belongs in the harness.**  \n> 凡是必须可靠的东西，都应该放进 harness。\n\n所以，“the harness is the product” 不只是口号，而是一条 coding agent 的工程规则：  \n**模型负责生成可能的行动，harness 负责让行动安全、可靠、可控地发生。**",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781170281155,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d91599d58849f6efb052fb1dc568918f951fd3a33175e6f7d505730aafe05550",
+  "refs": {
+    "sessionId": "1781000866571_ghg9uwu9"
+  },
+  "revisionId": "sha256:9f7fcda407216485290f34c4563e66140b06c4cadebd55ccf7c022da359658c1",
+  "schemaVersion": 1,
+  "updatedAt": 1781170281155
+}

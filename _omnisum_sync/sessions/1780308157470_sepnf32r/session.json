@@ -1,0 +1,67 @@
+{
+  "createdAt": 1780308157470,
+  "entityType": "session",
+  "id": "1780308157470_sepnf32r",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "参考文中的15项Agent职责，检查现有Agent系统是否存在缺失模块。",
+      "评估当前框架中最难替换的组件，如策略、审批、模型提供商、预算或凭证管理。",
+      "如需实践，可浏览iii相关仓库和文档，重点验证worker注册、触发器、追踪和替换机制是否成熟。"
+    ],
+    "archiveReason": "提供了将代理框架拆分为可替换worker、统一触发器和总线协议的设计思路，有一定架构参考价值",
+    "classifiedAt": 1781521632457,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "模块化代理框架构建方法",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "生产级Agent通常需要状态机编排、凭证管理、模型能力发现、工具调用、审批、预算、持久化、上下文压缩和事件流等多个基础能力。",
+      "通过共享总线、统一触发器和函数注册机制，可以把厚框架与薄框架的差异转化为worker配置差异，而不是重写架构。",
+      "策略检查、人工审批、工具调用和事件流可以作为独立工作单元接入，从而增强可观测性和可替换性。"
+    ],
+    "oneHighValuePoint": "将代理框架能力拆成独立worker，并通过统一函数ID和触发器协议替换任意层，降低框架锁定风险。",
+    "oneLineReview": "有较好的Agent架构拆解视角，但偏产品推广，缺少实证数据和横向对比。",
+    "primaryCategory": "AI工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为Agent框架模块化设计的架构思路参考",
+    "secondaryCategories": [
+      "Agent框架",
+      "软件架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍iii代理框架的模块化worker设计，将编排、模型、审批、策略、预算、上下文压缩等能力拆为可替换单元，并通过统一触发器、WebSocket总线和OpenTelemetry追踪组合成代理运行栈。",
+    "tags": [
+      "AI Agent",
+      "模块化架构",
+      "worker",
+      "WebSocket",
+      "可观测性"
+    ],
+    "title": "如何构建你自己的代理框架？？？",
+    "totalScore": 64.5,
+    "url": "https://x.com/mfpiccolo/status/2060069083878408689"
+  },
+  "payloadHash": "sha256:255b8dd12c99aab177716aef22e0862dd4d2f374a839bb46bf08bb383ed9e554",
+  "refs": {},
+  "revisionId": "sha256:dadb326d2dace83cdc650b28a166544d8604423b8dc750c85bdf53da39b25fca",
+  "schemaVersion": 1,
+  "updatedAt": 1781521634046
+}

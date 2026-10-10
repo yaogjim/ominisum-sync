@@ -1,0 +1,65 @@
+{
+  "createdAt": 1780891590456,
+  "entityType": "session",
+  "id": "1780891590456_naon1169",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如对该方向感兴趣，可进一步查找作者是否发布完整工作流",
+      "无需长期保存该条动态，可改为搜索更完整的AI视频生成教程"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780892184759,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI一句话生成讲解短视频",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量过低，仅表达AI可用于生成讲解短视频的观点，没有可复用方法论或实操细节，长期保留价值很低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI可辅助生成讲解性短视频",
+      "作者声称可通过一句话生成使用个人声音的短视频",
+      "该流程涉及Claude Opus并可在MacBook Pro上运行"
+    ],
+    "oneHighValuePoint": "AI讲解性短视频生成已经可进入个人内容生产工作流，甚至可在本地MacBook Pro上运行。",
+    "oneLineReview": "一个有趣但过于简略的AI视频制作动态，缺少可执行细节。",
+    "primaryCategory": "AI内容创作",
+    "rating": "E",
+    "rejectReason": "内容仅为个人动态式分享，缺少具体工具链、提示词、参数、流程步骤和效果评估，无法形成稳定参考价值。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "视频生成",
+      "社交媒体动态"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "作者表示近期在使用AI制作讲解性短视频，称当前工作流可用一句话生成带自己声音的短视频，并在MacBook Pro上运行，模型使用Claude Opus，但未展开具体流程。",
+    "tags": [
+      "AI视频",
+      "Claude Opus",
+      "短视频工作流",
+      "语音合成"
+    ],
+    "title": "熊布朗: 最近在密集的录视频，也在用 AI 做视频，其实 AI 做讲解性视频的能力已经蛮强，下面的这个视频就是我当前工作流的一部分，一句话出一个短视频，用自己的声音",
+    "totalScore": 24.5,
+    "url": "https://x.com/Stephen4171127/status/2063738704791839073"
+  },
+  "payloadHash": "sha256:757aec55fab19bd3f6bb75772143b8219b09877062e87c5b0934af4a217b6ddd",
+  "refs": {},
+  "revisionId": "sha256:6c96763b8b3178c0934047531de4888cb1bea8813cccf3b1871488278fd114dd",
+  "schemaVersion": 1,
+  "updatedAt": 1780892184985
+}

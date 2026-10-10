@@ -1,0 +1,23 @@
+{
+  "createdAt": 1780471727258,
+  "entityType": "message",
+  "id": "summary_template_1772076842437_1780471727258",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# pi-agent-browser-native 深度总结\n\n## 1. 它是什么？\n\n**pi-agent-browser-native**是一个给**Pi 编程代理**用的浏览器自动化扩展。\n\n它把上游的**agent-browser CLI**包装成 Pi 里的原生工具：\n\n```text\nagent_browser\n```\n\n让 AI 代理可以像调用`read /write/bash`一样，直接操作真实浏览器。\n\n---\n\n## 2. 它解决什么问题？\n\n传统让代理用浏览器，常见问题是：\n\n| 问题 | 后果 |\n|---|---|\n| 让代理拼 shell 命令 | 容易引号错、参数错 |\n| 网页快照太长 | 浪费上下文 |\n| 截图、下载文件只是路径 | 代理不好追踪 |\n| 登录态、浏览器 profile 难管理 | 容易混乱或泄密 |\n| 页面元素引用失效 | 代理不知道怎么恢复 |\n| 点击 “成功” 但页面没反应 | 自动化结果不可靠 |\n| 密码、cookie、token 输出到模型 | 安全风险高 |\n\n这个项目的核心价值是：\n\n> **不重做浏览器引擎，而是给 agent-browser 加一层适合 AI 代理使用的 Pi 原生包装。**\n\n---\n\n## 3. 核心能力总结\n\n### 3.1 原生浏览器工具\n\n代理可以直接调用：\n\n```json\n{ \"args\": [\"open\", \"https://react.dev\"] }\n```\n\n再获取交互式快照：\n\n```json\n{ \"args\": [\"snapshot\", \"-i\"] }\n```\n\n也可以用语义动作：\n\n```json\n{\n  \"semanticAction\": {\n    \"action\": \"click\",\n    \"locator\": \"text\",\n    \"value\": \"Learn React\"\n  }\n}\n```\n\n也就是说，代理不必总是拼复杂 CLI。\n\n---\n\n### 3.2 低上下文页面快照\n\n它会把网页内容压缩成更适合模型阅读的形式：\n\n- 优先展示主要内容\n- 去掉无关 chrome/sidebar 噪音\n- 给可点击元素生成`@eN`引用\n- 页面太大时写入 spill file，避免塞爆上下文\n\n---\n\n### 3.3 更可靠的点击与交互\n\n它不仅看 CLI 是否返回成功，还会检测：\n\n- 点击是否真的触发 DOM 事件\n- 页面 URL 是否变化\n- 是否被遮罩层挡住\n- 滚动命令是否真的移动\n- 下拉框是否只是聚焦但没展开\n\n如果失败，会给代理明确恢复建议。\n\n---\n\n### 3.4 会话、标签页与 profile 管理\n\n它能管理浏览器会话：\n\n- 复用 session\n- 恢复状态\n- 检测标签页漂移\n- 处理 stale `@eN`引用\n- 区分 sessionless 命令和真实浏览器命令\n\n这对需要登录态、后台、仪表盘、Web App 测试很重要。\n\n---\n\n### 3.5 安全与脱敏\n\n项目特别强调不要把敏感信息暴露给模型：\n\n- 密码支持 stdin 输入\n- 参数、URL、stdout/stderr 脱敏\n- cookies、storage、auth、network 等结构化数据脱敏\n- 失败日志、批处理错误也会 scrub\n\n一句话：\n\n> 它知道浏览器自动化里最危险的是 “代理看见了不该看的东西”。\n\n---\n\n### 3.6 Electron 桌面应用支持\n\n除了普通网页，它还支持 Electron 应用生命周期：\n\n- 发现 Electron host\n- 隔离启动\n- CDP attach\n- status/probe/cleanup\n- 安全清理仅限自己创建的实例\n\n这让代理不仅能测网页，也能测部分桌面应用。\n\n---\n\n### 3.7 可选 Brave 搜索工具\n\n项目还提供可选的：\n\n```text\nagent_browser_web_search\n```\n\n特点：\n\n- 当前只支持 Brave Search\n- 不启动浏览器\n- 用于实时网页搜索\n- 真正需要交互、截图、登录态时再用`agent_browser`\n\n---\n\n## 4. 安装与使用要点\n\n### 前置依赖\n\n必须先安装：\n\n```text\nagent-browser\n```\n\n可选安装：\n\n```bash\nbrew install ffmpeg\n```\n\n用于录屏编码。\n\n### 安装 Pi 扩展\n\n```bash\npi install npm:pi-agent-browser-native\n```\n\n临时试用：\n\n```bash\npi --no-extensions -e npm:pi-agent-browser-native\n```\n\n检查环境：\n\n```bash\npi-agent-browser-doctor\n```\n\n或：\n\n```bash\nnpm exec --package pi-agent-browser-native -- pi-agent-browser-doctor\n```\n\n---\n\n# 深入浅出地解读\n\n## 可以把它理解成什么？\n\n如果说**agent-browser**是 “浏览器发动机”，  \n那么**pi-agent-browser-native**就是 “自动驾驶控制台”。\n\n它不负责重新造浏览器，而是负责让 AI 代理更安全、更稳定、更省上下文地使用浏览器。\n\n---\n\n## 为什么这很重要？\n\nAI 代理做网页任务时，难点不只是 “打开网页、点按钮”。\n\n真正难的是：\n\n1. 页面很复杂，模型看不完  \n2. 点击看似成功，实际没生效  \n3. 登录态、cookie、token 容易泄露  \n4. 元素引用过期后，代理容易乱试  \n5. 多标签页、多会话容易混乱  \n6. 截图、下载文件需要变成可追踪 artifact  \n\n这个项目就是围绕这些 “工程细节” 做增强。\n\n它的价值不在炫技，而在：\n\n> **把浏览器自动化从 “能跑” 提升到 “适合代理长期可靠使用”。**\n\n---\n\n# 辩证思考\n\n## 优点\n\n### 1. 定位清晰\n\n它没有重复实现浏览器自动化，而是薄封装上游 agent-browser。\n\n好处是：\n\n- 维护成本低\n- 能跟随上游能力\n- 专注 Pi 代理体验\n\n---\n\n### 2. 非常重视代理场景\n\n很多设计不是给人用的，而是给 AI 用的：\n\n- compact snapshot\n- resultCategory\n- failureCategory\n- recovery hints\n- artifact metadata\n- structured details\n\n这些都能降低模型误判。\n\n---\n\n### 3. 安全意识强\n\n浏览器里有大量敏感信息。\n\n该项目对密码、cookie、storage、auth、network 等都做脱敏，是成熟代理工具必需的设计。\n\n---\n\n## 局限\n\n### 1. 依赖上游 agent-browser\n\n它的能力上限受 agent-browser 影响。\n\n如果上游行为变化、命令变动、兼容性出问题，这个 wrapper 也会受影响。\n\n---\n\n### 2. 工具体系较复杂\n\n它提供了 raw args、semanticAction、job、qa、electron、web search 等多种入口。\n\n对新用户来说，学习成本不低。\n\n---\n\n### 3. 仍无法完全消除浏览器自动化的不确定性\n\n网页本身充满不稳定因素：\n\n- 动态加载\n- 弹窗遮挡\n- 登录风控\n- A/B 测试\n- 反自动化机制\n- SPA 状态漂移\n\n它能减少问题，但不能保证所有操作都确定成功。\n\n---\n\n## 我的判断\n\n这个项目不是普通 “浏览器自动化插件”，而是一个面向**AI Agent 工作流**的可靠性层。\n\n它最适合：\n\n- 编程代理查文档\n- 自动化 QA\n- 登录态 Web App 操作\n- 截图、下载、页面检查\n- Dashboard / Provider-backed browser 场景\n- Electron 应用辅助测试\n\n但如果只是简单打开网页或一次性搜索，它可能显得偏重。\n\n---\n\n# 一句话总结\n\n**pi-agent-browser-native 的核心价值，是把 agent-browser 变成 Pi 代理真正可用、可靠、省上下文、可恢复且相对安全的原生浏览器工具。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "解读",
+    "timestamp": 1780471727258,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c4896e82539a5cd283b4c2b4d508c2fbf46fdd7bc907db1436a02a016504ac31",
+  "refs": {
+    "sessionId": "1780471727402_77v1l1d1"
+  },
+  "revisionId": "sha256:3f0df8d4a83c7c371425d9e4250d033e3d7289c04a9cc61e550a1a51c20c1b52",
+  "schemaVersion": 1,
+  "updatedAt": 1780471727258
+}

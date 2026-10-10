@@ -1,0 +1,63 @@
+{
+  "createdAt": 1776322800653,
+  "entityType": "session",
+  "id": "1776322800653_0xb5jppf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确实关注该争议，直接查阅 EvoMapAI 与 Hermes 的原始仓库、发布时间线和技术文档",
+      "对类似舆情内容仅做短暂了解，不纳入长期知识库"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776325511423,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 3,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI开源争议推文简评",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "证据薄弱、篇幅短且主要是情绪化舆情摘要，对长期学习和工作参考价值极低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI Agent 开源项目之间的相似性争议容易在社交媒体上被放大",
+      "判断技术抄袭需要原始发布时间、架构细节和可验证证据"
+    ],
+    "oneHighValuePoint": "提醒读者对社交媒体上的“抄袭/复刻”指控保持怀疑，先看时间线与原始证据。",
+    "oneLineReview": "这是一条AI圈八卦型转述帖，热度高但知识含量和留存价值都很低。",
+    "primaryCategory": "AI行业舆情",
+    "rating": "E",
+    "rejectReason": "内容以转述社交媒体争议为主，缺乏技术细节、方法框架和可操作结论，信息增益很低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "开源争议",
+      "社交媒体评论"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章围绕 EvoMapAI 与 Hermes Agent 的“自进化代理架构是否相似”争议进行转述，核心内容来自推文与截图，最后又引用回应称相关指控并不成立。整体更像热点围观，缺少独立分析与可靠证据。",
+    "tags": [
+      "AI八卦",
+      "开源项目",
+      "抄袭争议"
+    ],
+    "title": "huangserva: 昨天 AI 圈爆了个大瓜，我自己比较好奇，花时间扒了一下",
+    "totalScore": 23,
+    "url": "https://x.com/servasyy_ai/status/2044366570194190446"
+  },
+  "payloadHash": "sha256:ef1da9e6e07d1af1a3a426e2bfcd01b48e6a3232b3b03693005aaec0078cf8dc",
+  "refs": {},
+  "revisionId": "sha256:41b220a192c3e962a0fd539e93ade5c6609cf23ee8e6c3958ef2112dbb1b87e4",
+  "schemaVersion": 1,
+  "updatedAt": 1776643844716
+}

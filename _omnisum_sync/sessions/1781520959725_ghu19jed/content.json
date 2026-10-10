@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781520959725,
+  "entityType": "session-content",
+  "id": "1781520959725_ghu19jed",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>nazha</strong></header><div class=\"tw-body\"><a dir=\"ltr\" href=\"/hashtag/分享?src=hashtag_click\" role=\"link\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1loqt21\" style=\"color: rgb(29, 155, 240);\"><span>#分享</span></a> 相比于 Loop， 还有一个词 “backpressure”  所传递的概念更为准确。至今 Agent 的基础都来自 ReAct，其本身隐含 Loop 的概念。<br><br>> backpressure 最初是指流体在管道中流动时遇到的阻力。<br>> 在系统工程中，背压是一种下游组件向上游组件发出信号、表明无法继续接收更多工作的机制，迫使生产者放慢速度、缓冲或丢弃负载。<br><br>这反应的是目前大多数的 AI 编码流程中， 我们自己成为 Agent 的 backpressure ：人提前进入到 ReAct 的反馈循环，对 LLMs 的生成结果执行检查、手动验证，成为 Agent 在“流动”时遇到的阻力。<br><br>把人从这一循环中解脱出来。对于 AI 编程来说，就是用 Harness 来加固这一层：Agent 理清意图、约束、测试、主动 issue 探测和修复，交付给我们一个「直接」投入生产的版本。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HKh9e_AaAAAC9uj?format=jpg&name=large\" alt=\"图片\" /><img src=\"https://pbs.twimg.com/media/HKh9f_9aYAAhRJO?format=jpg&name=large\" alt=\"图片\" /></div></article>",
+    "pageContent": "nazha: #分享 相比于 Loop， 还有一个词 “backpressure” 所传递的概念更为准确。至今 Agent 的基础都来自 ReAct，其本身隐含 Loop 的概念。 > backpressure 最初是指流体在管道中流动时遇到的阻力。\n> 在系统工程中，背压是一种下游组件向上游组件发出信号、表明无法继续接收更多工作的机制，迫使生产者放慢速度、缓冲或丢弃负载。 这反应的是目前大多数的 AI 编码流程中， 我们自己成为 Agent 的 backpressure ：人提前进入到 ReAct 的反馈循环，对 LLMs 的生成结果执行检查、手动验证，成为 Agent 在“流动”时遇到的阻力。 把人从这一循环中解脱出来。对于 AI 编程来说，就是用 Harness 来加固这一层：Agent 理清意图、约束、测试、主动 issue 探测和修复，交付给我们一个「直接」投入生产的版本。\n![图片](https://pbs.twimg.com/media/HKh9e_AaAAAC9uj?format=jpg&name=large)\n![图片](https://pbs.twimg.com/media/HKh9f_9aYAAhRJO?format=jpg&name=large)"
+  },
+  "payloadHash": "sha256:3cbb9714d021f1f3e61f866edf758248dbc02c54c0c514dd51060a25ee546efc",
+  "refs": {},
+  "revisionId": "sha256:075e629e1bbdf41e6c918b5d6a6be583e2995727cd6a74812e068ea66450c954",
+  "schemaVersion": 1,
+  "updatedAt": 1781521927416
+}

@@ -1,0 +1,97 @@
+{
+  "createdAt": 1781152349412,
+  "entityType": "session",
+  "id": "1781152349412_sl4idybd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在 Claude Design 项目中设置默认 Design System，如 Adobe Spectrum",
+      "先用 PRD 和线框图确定布局与交互，再生成高保真原型",
+      "将 Claude Design 导出的文件纳入 Git 管理并跟踪变更",
+      "为项目维护 CLAUDE.md，记录反复需要遵守的设计与生成规则"
+    ],
+    "archiveReason": "包含较具体的 Claude Design 使用技巧和 AI 设计工作流，可作为实践参考",
+    "byline": "宝玉",
+    "classifiedAt": 1781173446405,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Design 使用经验",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1781152672264,
+        "imageId": "img-3",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# 实例：用 Claude Design 设计一个「AI 写作任务管理后台」\n\n假设我们要做一个 Web 产品后台，名字叫**WriteFlow**，用于管理 AI 写作任务。\n\n核心功能包括：\n\n- 查看写作任务列表\n- 创建新的写作任务\n- 查看任务详情和生成进度\n- 管理不同文章状态：草稿中、生成中、待审核、已发布\n- 支持深色 / 浅色主题\n- 后续交付给前端开发实现\n\n下面是基于这个实例，使用 Claude Design 的一套最佳实践。\n\n---\n\n## 一、先确定设计系统，避免 “AI 味”\n\n在开始设计前，不要直接让 Claude Design 自由发挥 UI 风格，而是先指定一个成熟的 Design System。\n\n例如本项目使用：\n\n> Adobe Spectrum 2 Design System\n\n这样做的好处是：\n\n- 组件风格统一\n- 间距、颜色、按钮、表单更规范\n- 避免出现常见的 “AI 生成 UI 味”\n- 后续开发时更容易拆成真实组件\n\n### 推荐操作\n\n在 Claude Design 中创建或设置默认 Design System：\n\n```text\n请使用 Adobe Spectrum 2 Design System 作为默认设计系统。\n\n设计风格要求：\n- 使用 Spectrum 风格的按钮、输入框、表格、卡片和导航\n- 保持专业、克制、清晰的信息层级\n- 不要使用过度渐变、玻璃拟态、夸张阴影\n- 优先保证后台管理系统的可读性和操作效率\n```\n\n---\n\n## 二、不要一开始就做完整高保真版本\n\n不要上来就说：\n\n```text\n帮我设计一个完整的 AI 写作后台系统，包含所有功能。\n```\n\n这样很容易导致：\n\n- 页面太复杂\n- 交互不稳定\n- 信息架构混乱\n- 修改成本变高\n\n更好的方式是先做一个最小版本。\n\n---\n\n## 三、第一轮只做线框图，先确认布局和交互\n\n### 第一版目标\n\n先只做 3 个核心页面：\n\n1. 任务列表页\n2. 创建任务页\n3. 任务详情页\n\n先用线框图，不要急着做高保真。\n\n### 示例 Prompt\n\n```text\n请为一个名为 WriteFlow 的 AI 写作任务管理后台设计线框图原型。\n\n目标用户：\n- 内容运营人员\n- 编辑\n- 市场团队成员\n\n核心页面：\n1. 任务列表页\n   - 显示任务标题、类型、状态、创建时间、负责人、操作按钮\n   - 支持按状态筛选\n   - 支持搜索任务标题\n   - 有 “新建任务” 按钮\n\n2. 新建任务页\n   - 输入文章标题\n   - 选择文章类型：博客、社媒文案、产品介绍、邮件\n   - 输入关键词\n   - 选择语气风格\n   - 提交生成任务\n\n3. 任务详情页\n   - 展示任务基本信息\n   - 展示生成进度\n   - 展示生成结果预览\n   - 支持重新生成、复制内容、提交审核\n\n要求：\n- 先做线框图，不要做高保真视觉设计\n- 重点确认信息架构、布局和交互流程\n- 使用清晰的左侧导航\n- 页面之间可以点击跳转\n```\n\n---\n\n## 四、通过聊天框一点点迭代，而不是一次性改完\n\n第一版出来后，不要要求它重做全部页面，而是局部迭代。\n\n例如发现任务列表页信息太拥挤，可以这样改：\n\n```text\n请只调整任务列表页。\n\n当前问题：\n- 表格信息有点多\n- 状态不够醒目\n- 任务标题和文章类型的层级不明显\n\n调整要求：\n- 将状态改成彩色 Badge\n- 任务标题加粗\n- 文章类型作为标题下方的辅助信息\n- 保留搜索、筛选和新建任务按钮\n- 不要改动其他页面\n```\n\n这样做的优势是：\n\n- 变更可控\n- 不容易破坏已有结构\n- 更接近真实产品设计流程\n\n---\n\n## 五、善用 Markup 做局部修改\n\n当某个页面大体满意，但局部有问题时，不要在聊天框笼统描述。\n\n例如你觉得 “新建任务页” 的表单布局太松散，可以使用 Markup 框选对应区域，然后评论：\n\n```text\n这个表单区域请改成两列布局。\n\n左侧放：\n- 文章标题\n- 文章类型\n- 关键词\n\n右侧放：\n- 语气风格\n- 目标字数\n- 参考资料\n\n底部保留一个主按钮：开始生成。\n```\n\nMarkup 适合处理：\n\n- 某个卡片布局\n- 某个按钮位置\n- 某个表格区域\n- 某个导航区\n- 某段文案或状态展示\n\n不适合处理：\n\n- 全局架构重构\n- 多页面统一调整\n- 需要附图解释的复杂改动\n\n---\n\n## 六、用 Tweaks 快速测试不同状态和风格\n\n后台产品通常不只一种状态，例如：\n\n- 浅色主题\n- 深色主题\n- 空数据状态\n- 加载中状态\n- 错误状态\n- 不同用户角色\n- 不同页面入口\n\n可以通过 Tweaks 添加这些变量。\n\n### 推荐 Tweaks 配置\n\n```text\n请添加以下 Tweaks：\n\n1. theme\n   - light\n   - dark\n\n2. taskStatusView\n   - all\n   - generating\n   - review\n   - published\n   - empty\n\n3. userRole\n   - admin\n   - editor\n   - viewer\n\n4. currentPage\n   - taskList\n   - createTask\n   - taskDetail\n   - settings\n```\n\n这样你可以快速查看：\n\n- 深色模式下表格是否可读\n- 空任务状态是否合理\n- Viewer 用户是否应该隐藏创建按钮\n- 不同页面是否能快速切换\n\n---\n\n## 七、线框图满意后，再生成高保真版本\n\n不要在线框图阶段就纠结颜色、阴影、圆角。\n\n等到布局和交互确认后，再进入高保真设计。\n\n### 示例 Prompt\n\n```text\n基于当前已经确认的线框图，请生成高保真交互原型。\n\n要求：\n- 使用 Adobe Spectrum 2 Design System\n- 保持企业级 SaaS 后台风格\n- 信息层级清晰，避免花哨视觉\n- 使用浅色主题为默认主题\n- 保留深色主题 Tweak\n- 表格、筛选器、状态 Badge、表单控件都应符合 Spectrum 风格\n- 不要新增核心功能，只提升视觉完成度\n```\n\n---\n\n## 八、让 Claude Design 反向生成 PRD\n\n高保真原型出来后，不要只拿设计图去开发。\n\n更好的方式是让 Claude Design 根据当前设计生成一份详细 PRD。\n\n### 示例 Prompt\n\n```text\n请基于当前 WriteFlow 的设计原型，生成一份详细 PRD。\n\nPRD 需要包含：\n1. 产品背景\n2. 目标用户\n3. 核心使用场景\n4. 信息架构\n5. 页面清单\n6. 每个页面的功能说明\n7. 表单字段定义\n8. 表格字段定义\n9. 状态流转规则\n10. 权限规则\n11. 空状态、加载状态、错误状态\n12. 交互说明\n13. 前端数据结构建议\n14. 后续可扩展功能\n\n请使用 Markdown 格式输出。\n```\n\n这样得到的 PRD 可以用于：\n\n- 和团队讨论\n- 交给开发评估\n- 作为需求文档版本管理\n- 作为下一轮 Claude Design 输入材料\n\n---\n\n## 九、PRD 和线框图要配合使用\n\n推荐流程是：\n\n```text\n手写粗略 PRD\n    ↓\n生成线框图原型\n    ↓\n调整布局和交互\n    ↓\n生成高保真原型\n    ↓\n反向生成详细 PRD\n    ↓\n人工修订 PRD\n    ↓\n进入开发\n```\n\n不要只依赖文字 PRD，也不要只依赖原型。\n\n二者的优劣如下：\n\n| 类型 | 优点 | 缺点 |\n|---|---|---|\n| PRD | AI 友好，便于版本管理，适合描述规则 | 不直观 |\n| 线框图 | 直观看到布局和交互 | 不适合管理复杂规则 |\n| 高保真原型 | 接近最终体验 | 太早做容易浪费时间 |\n\n最佳实践是：\n\n> PRD 管规则，原型管体验。\n\n---\n\n## 十、做好上下文管理，不要无限聊天\n\nClaude Design 左侧对话不是无限上下文。\n\n如果一直在同一个会话里反复说：\n\n- 改任务列表\n- 改创建页\n- 改权限\n- 改主题\n- 改数据结构\n- 改移动端\n- 改 PRD\n\n很容易导致上下文混乱。\n\n### 推荐做法\n\n按阶段创建不同会话：\n\n| 会话 | 用途 |\n|---|---|\n| 会话 1 | 线框图探索 |\n| 会话 2 | 高保真视觉设计 |\n| 会话 3 | PRD 生成 |\n| 会话 4 | 细节修复 |\n| 会话 5 | 开发交付整理 |\n\n每个新会话开始时，给它明确上下文：\n\n```text\n这是 WriteFlow 项目的高保真设计阶段。\n\n已有结论：\n- 使用 Adobe Spectrum 2 Design System\n- 页面包括任务列表、新建任务、任务详情\n- 默认浅色主题\n- 支持深色主题\n- 左侧导航结构已确认\n- 当前不要新增功能，只优化视觉细节\n```\n\n---\n\n## 十一、使用 CLAUDE.md 固化长期规则\n\n如果有些要求每次都要重复说，应该写入`CLAUDE.md`。\n\n例如：\n\n```markdown\n# WriteFlow Design Guidelines\n\n## Design System\n\nUse Adobe Spectrum 2 Design System as the default design system.\n\n## Visual Style\n\n- Enterprise SaaS style\n- Clean, professional, restrained\n- Avoid excessive gradients, glassmorphism, heavy shadows\n- Prioritize readability and productivity\n\n## Layout\n\n- Use left sidebar navigation\n- Main content area should be spacious but not sparse\n- Tables should support filtering, search and clear status display\n\n## Components\n\n- Use Spectrum-style buttons, tables, forms, cards, badges and modals\n- Primary action should be visually clear\n- Destructive actions must require confirmation\n\n## Interaction\n\n- Always include loading, empty and error states when relevant\n- Do not introduce new features unless explicitly requested\n- Prefer incremental changes over full redesigns\n\n## Data\n\n- Keep data structures realistic\n- Use mock data that resembles real SaaS usage\n```\n\n这样可以减少反复提示，也能提升输出稳定性。\n\n---\n\n## 十二、用版本管理保存设计结果\n\nClaude Design 交付的是：\n\n- HTML\n- CSS\n- React\n- data.js/data.jsx\n\n这些都是文本文件，非常适合放进 Git。\n\n### 推荐项目结构\n\n```text\nwriteflow/\n├── design/\n│   ├── claude-design/\n│   │   ├── v1-wireframe/\n│   │   ├── v2-high-fidelity/\n│   │   └── v3-dev-handoff/\n│   └── prd/\n│       ├── writeflow-prd-v1.md\n│       └── writeflow-prd-v2.md\n├── src/\n│   ├── components/\n│   ├── pages/\n│   └── data/\n└── README.md\n```\n\n每次从 Claude Design 下载 zip 后：\n\n```bash\ngit checkout -b design/writeflow-v2\nunzip claude-design-export.zip -d design/claude-design/v2-high-fidelity\ngit add .\ngit commit -m \"Add WriteFlow high fidelity Claude Design prototype\"\n```\n\n这样你可以清楚看到：\n\n```bash\ngit diff\n```\n\n哪些地方发生了变化：\n\n- CSS 颜色变化\n- React 组件结构变化\n- 表格字段变化\n- data.js 数据结构变化\n- 页面状态变化\n\n这对 AI 和开发都很友好。\n\n---\n\n## 十三、把 Claude Design 当作唯一设计源\n\n开发过程中，一定会出现临时调整，例如：\n\n- 前端觉得按钮太大\n- 真实数据比设计稿更长\n- 某个状态缺失\n- 表格字段需要新增\n- 权限逻辑需要调整\n\n不要只在代码里改。\n\n正确流程应该是：\n\n```text\n先更新 Claude Design\n    ↓\n再导出设计结果\n    ↓\n提交 Git\n    ↓\n再同步到代码\n```\n\n也就是：\n\n```text\nClaude Design → Code\n```\n\n不要变成：\n\n```text\nClaude Design ↔ Code\n```\n\n否则时间一长会出现：\n\n- 设计稿和代码不一致\n- PRD 和实际实现不一致\n- 团队不知道哪个版本才是准的\n- 后续 AI 也无法准确理解当前产品状态\n\n---\n\n## 十四、需要 “抽卡”，但要有方法地抽\n\nLLM 有随机性，设计也有随机性。\n\n同一个 Prompt，多生成几次结果可能不一样。\n\n但不要盲目抽卡，而是有标准地比较。\n\n### 比较标准\n\n| 维度 | 判断问题 |\n|---|---|\n| 信息架构 | 用户能否快速找到核心功能？ |\n| 操作效率 | 新建任务是否足够顺畅？ |\n| 可读性 | 表格是否清楚？状态是否醒目？ |\n| 一致性 | 是否符合 Spectrum 设计系统？ |\n| 可开发性 | 组件结构是否容易实现？ |\n| 扩展性 | 后续增加团队、模板、审核流是否方便？ |\n\n可以生成 3 个版本：\n\n```text\n请基于当前 PRD，为 WriteFlow 生成 3 个不同的信息架构方案。\n\n方案 A：偏传统后台，左侧导航 + 表格为主\n方案 B：偏工作台，首页突出任务概览和快捷操作\n方案 C：偏内容生产流水线，突出状态流转和看板\n\n每个方案都需要可点击的线框图。\n```\n\n然后选择一个最适合的方向继续深入。\n\n---\n\n## 十五、推荐完整工作流总结\n\n```text\n1. 写一个粗略 PRD\n   ↓\n2. 指定 Design System，例如 Adobe Spectrum 2\n   ↓\n3. 生成低保真线框图\n   ↓\n4. 用聊天框逐步调整整体结构\n   ↓\n5. 用 Markup 局部修改页面细节\n   ↓\n6. 用 Tweaks 测试主题、状态、角色和页面跳转\n   ↓\n7. 布局和交互满意后，再生成高保真原型\n   ↓\n8. 让 Claude Design 根据原型生成详细 PRD\n   ↓\n9. 人工修订 PRD\n   ↓\n10. 下载 HTML / CSS / React /data.js\n   ↓\n11. 提交到 Git 做版本管理\n   ↓\n12. 开发时保持 Claude Design → Code 的单向同步\n```\n\n---\n\n## 最佳实践清单\n\n- [x] 先设置 Design System，避免 AI 味  \n- [x] 不要一次性做完整产品  \n- [x] 先做线框图，再做高保真  \n- [x] 用聊天框做阶段性调整  \n- [x] 用 Markup 做局部修改  \n- [x] 用 Tweaks 测试不同状态、主题和导航  \n- [x] 做好上下文管理，不同阶段开新会话  \n- [x] 用`CLAUDE.md`固化长期规则  \n- [x] 用 PRD 和线框图配合管理需求  \n- [x] 下载设计代码，用 Git 管理版本  \n- [x] 把 Claude Design 作为唯一设计源  \n- [x] 接受随机性，多生成几版，但要有评价标准  \n\n---\n\n## 一句话总结\n\n对于 WriteFlow 这种后台产品，使用 Claude Design 的最佳方式不是 “一句话生成完整设计”，而是：\n\n> 用 Design System 控制风格，用线框图确认结构，用 Markup 和 Tweaks 精修体验，用 PRD 和 Git 管理版本，最后保持 Claude Design 到代码的单向同步。",
+        "url": "https://pbs.twimg.com/media/HKbu-vsWgAA7U-N?format=jpg&name=small",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 467,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HKbu-vsWgAA7U-N?format=jpg&name=small",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HKbu-vsWgAA7U-N?format=jpg&name=small",
+        "width": 680
+      }
+    ],
+    "knowledgePoints": [
+      "使用成熟 Design System 可以减少 AI 生成界面的随机感和不一致性",
+      "PRD 与线框图原型结合，有助于同时兼顾 AI 可读性和交互直观性",
+      "Claude Design 的输出结果适合进入代码仓库做版本管理",
+      "设计同步流程应尽量保持 Claude Design 到代码的单向流动"
+    ],
+    "oneHighValuePoint": "将 Claude Design 输出的 HTML、CSS、React 和 data 文件纳入 Git 版本管理，用文本 diff 跟踪设计变更。",
+    "oneLineReview": "一组实用但偏经验型的 Claude Design 工作流建议，适合正在尝试 AI 辅助产品设计的人参考。",
+    "primaryCategory": "AI产品设计",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI辅助开发",
+      "设计工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结了使用 Claude Design 的若干经验，包括引入 Design System、分步迭代、使用 Markup 和 Tweaks、管理上下文、结合 PRD 与线框图、用 Git 管理设计版本，并将 Claude Design 作为单一设计源。",
+    "tags": [
+      "Claude Design",
+      "Design System",
+      "PRD",
+      "线框图",
+      "版本管理"
+    ],
+    "title": "宝玉: 用好 Claude Design 的一些经验： 1",
+    "totalScore": 67.5,
+    "url": "https://x.com/dotey/status/2064601571397185639"
+  },
+  "payloadHash": "sha256:b83d9f8aaca5f228c97a8ea5482dd2f57612e95f44f3f5f70c81385087ff7487",
+  "refs": {},
+  "revisionId": "sha256:16e65cef6f0cddea59c07baa09fecd1ed2949320a93a6a8862a8168941b1e92e",
+  "schemaVersion": 1,
+  "updatedAt": 1781173679341
+}

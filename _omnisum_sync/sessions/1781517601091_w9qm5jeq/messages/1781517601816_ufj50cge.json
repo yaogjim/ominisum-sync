@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781517501332,
+  "entityType": "message",
+  "id": "1781517601816_ufj50cge",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Open Design：开源、本地优先的 AI 设计工作台\n\n## 一句话总结\n\nOpen Design 是一个开源的「Claude Design 替代品」：它把 AI Agent、设计系统、插件、原型生成、PPT、图片、视频和代码交付整合到一个本地桌面工作台中，面向设计、产品、营销和工程团队。\n\n---\n\n## 核心定位\n\nOpen Design 不是传统画布式设计工具，而是面向 AI Agent 时代的设计工作流平台。\n\n它的核心逻辑是：\n\n> 输入一个需求 brief → 选择技能和设计系统 → AI 生成真实可运行的设计产物 → 在本地预览、编辑、导出或交给代码 Agent 继续开发。\n\n相比 Figma 的「手动画图」，Open Design 更像是一个由本地 AI Agent 驱动的设计生产系统。\n\n---\n\n## 主要能力\n\n### 1. 多类型设计产物生成\n\nOpen Design 可以生成多种实际可用的内容：\n\n- Web / 移动端 / 桌面端原型\n- 单页 HTML 交互页面\n- 数据看板、决策室、KPI 墙\n- Pitch Deck / PPT\n- 品牌图片与视觉资产\n- 动效与短视频\n- HyperFrames：HTML/CSS/GSAP → MP4 视频\n\n这些产物不是静态截图，而是基于真实 HTML、CSS、字体和组件生成，可继续编辑和交付。\n\n---\n\n### 2. 本地优先，保护隐私\n\nOpen Design 强调 Local-first：\n\n- 支持 macOS、Windows 桌面应用\n- 可自托管，也可本地运行\n- 不强制依赖云端\n- 支持 BYOK，即使用自己的模型 API Key\n- 默认本地预览和本地文件读写\n- 代理请求带 SSRF 防护\n\n这对企业内部设计、产品方案、代码仓库等敏感场景更友好。\n\n---\n\n### 3. 模型和 Agent 无锁定\n\nOpen Design 不绑定单一模型或单一 AI 助手。\n\n它可以接入：\n\n- Claude Code\n- Codex\n- Cursor\n- GitHub Copilot\n- OpenCode\n- Gemini CLI\n- Kimi\n- Hermes\n- Qwen\n- 以及其他 20+ CLI / OpenAI-compatible 接口\n\n官方还提供 AMR Model Router，可在 Open Design 内统一使用 GPT、Claude、Gemini、DeepSeek 等模型。\n\n---\n\n## 关键系统设计\n\n### 1. DESIGN.md：品牌设计契约\n\nOpen Design 用 `DESIGN.md` 作为设计系统描述文件，覆盖：\n\n- 色彩\n- 字体\n- 间距\n- 布局\n- 组件\n- 动效\n- 语气\n- 品牌规范\n- 禁用模式\n\n项目内置约 150 个品牌级设计系统，例如 Linear、Stripe、Vercel、Apple、Tesla、Notion、Airbnb 等。\n\n用户也可以把自己公司的品牌规范写成 DESIGN.md，之后所有生成内容都会遵循该品牌风格。\n\n---\n\n### 2. Skills：设计能力模块\n\nOpen Design 内置 100+ Skills，用于不同设计任务，例如：\n\n- Landing Page\n- SaaS 官网\n- Dashboard\n- Mobile App\n- 社交媒体图文\n- 邮件营销\n- PM Spec\n- OKR 看板\n- 财务报告\n- HR onboarding\n- PPT / Deck\n- 视频动效\n\n每个 Skill 都是一个可读写的文件夹，方便团队扩展和版本管理。\n\n---\n\n### 3. Plugins：可组合工作流\n\nOpen Design 内置 261 个官方插件，覆盖：\n\n- 设计场景\n- 图片模板\n- 视频模板\n- 设计系统\n- UI 原子组件\n- 示例作品\n- Figma / Pencil 迁移\n- React / Next.js / Vue 导出\n- 现有代码库品牌刷新\n\n插件既能在桌面 UI 中使用，也能通过 CLI 自动化调用。\n\n---\n\n## 典型使用流程\n\n### 从想法到可交付产物\n\n一个典型流程是：\n\n1. 产品经理输入需求 brief  \n2. 选择插件，例如 landing page、pitch deck、dashboard  \n3. 选择或生成设计系统  \n4. AI Agent 生成第一个 artifact  \n5. 在沙盒 iframe 中实时预览和调整  \n6. 导出 HTML、PDF、PPTX、MP4  \n7. 交给 Cursor、Codex、Claude Code 等继续开发  \n8. 沉淀为团队后续复用的模板和记忆\n\n---\n\n## 与 Claude Design / Figma / v0 的差异\n\n| 维度 | Open Design 的特点 |\n|---|---|\n| 开源 | Apache-2.0 |\n| 本地运行 | 支持桌面和自托管 |\n| 模型自由 | 支持多模型和 BYOK |\n| Agent 原生 | 可接入 20+ coding agent |\n| 品牌一致性 | 基于 DESIGN.md |\n| 插件生态 | 100+ Skills，261 Plugins |\n| 交付格式 | HTML / PDF / PPTX / MP4 |\n| 代码协作 | 可直接交给代码 Agent 继续开发 |\n| 隐私 | 本地优先，默认无云端依赖 |\n\n它的目标不是简单替代 Figma，而是成为「AI Agent 时代的设计生产与交付系统」。\n\n---\n\n## 产品亮点\n\n### 对产品经理\n\n- 可以快速生成产品原型、PRD、PM Spec、OKR、汇报材料\n- 从文字 brief 直接到可视化产物\n- 适合快速验证方向和沟通方案\n\n### 对设计师\n\n- 可沉淀品牌规范\n- 快速生成多风格方案\n- 支持设计系统驱动输出\n- 减少重复性视觉生产\n\n### 对工程师\n\n- 产物是 HTML/CSS/真实组件，不只是图片\n- 可交给 Cursor、Codex、Claude Code 等继续开发\n- 支持对现有代码库进行品牌风格刷新\n\n### 对团队\n\n- 技能、插件、设计系统都是文件，可版本管理\n- 支持本地部署和私有化\n- 更适合企业级协作与知识沉淀\n\n---\n\n## 当前成熟度\n\n项目已经具备较完整的基础设施：\n\n- 桌面应用\n- 本地 daemon\n- MCP Server\n- 多 Agent 适配\n- 技能市场\n- 插件市场\n- 设计系统库\n- 沙盒预览\n- 多格式导出\n- BYOK 代理\n- HyperFrames 视频生成\n\n部分能力仍在推进中，例如更可靠的定点编辑、插件 SDK、Figma 迁移、现有代码库刷新等。\n\n---\n\n## 总结判断\n\nOpen Design 的价值在于：\n\n> 它把「AI 生成设计」从一次性 Demo，升级成可本地运行、可扩展、可交付、可接入工程链路的系统化工作台。\n\n如果说 Figma 是上一代团队协作设计工具，Claude Design 是闭源的 AI 设计尝试，那么 Open Design 更像是一个开放版、工程化、本地优先的 Agentic Design Workspace。\n\n它特别适合需要快速产出原型、汇报材料、品牌化页面、营销内容和代码可交付物的产品、设计和研发团队。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781517501332,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1a29635538ff02f1de3d9a3c4e6b44f3e2ab726bd8aa2c83f3c0ea3e6362fd05",
+  "refs": {
+    "sessionId": "1781517601091_w9qm5jeq"
+  },
+  "revisionId": "sha256:b244e31311a3afed20d678a5fb1bbc04542c9373e24eeb0df568b17a09fa305f",
+  "schemaVersion": 1,
+  "updatedAt": 1781517501332
+}

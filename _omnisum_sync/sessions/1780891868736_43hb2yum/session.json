@@ -1,0 +1,68 @@
+{
+  "createdAt": 1780891868736,
+  "entityType": "session",
+  "id": "1780891868736_43hb2yum",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为代码仓库编写 AGENTS.md 时避免冗长泛化指令，优先保留关键约束、测试命令和项目惯例。",
+      "尝试将上下文文件分层，例如主文件只提供导航，具体任务再引用对应子文件。",
+      "在团队项目中对比有无 AGENTS.md 时编码代理的成功率、耗时和 token 成本，避免凭直觉优化。"
+    ],
+    "archiveReason": "提供了关于代码仓库级上下文文件对编码代理影响的实证研究线索，可作为优化 AI 编程工作流的参考",
+    "classifiedAt": 1780892407812,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 7,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AGENTS.md对编码代理的实际作用",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "LLM 生成的仓库上下文文件在 SWE-bench Lite 和 AGENTBENCH 中未表现出明显收益，甚至可能略微降低成功率。",
+      "开发者编写的上下文文件通常优于 LLM 生成版本，说明领域知识和项目特定经验仍然重要。",
+      "上下文文件可能导致代理运行更多测试、搜索更多文件、读取更多内容，从而增加成本和执行时间。",
+      "更合理的上下文文件设计可能是简短、具体、分层，并按任务需要选择性加载。"
+    ],
+    "oneHighValuePoint": "仓库级上下文文件不一定提升编码代理成功率，过长或过泛的指令反而可能增加成本和复杂度。",
+    "oneLineReview": "一篇有实证线索和实践启发的研究摘要，但内容依赖论文结果转述，深度有限。",
+    "primaryCategory": "AI 编程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "编码代理",
+      "软件工程效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章概述了一篇评估 AGENTS.md 或 CLAUDE.md 等仓库级上下文文件对编码代理影响的论文。研究发现，LLM 生成的上下文文件未显著提升任务成功率，开发者编写版本更好，但上下文文件可能增加成本和探索步骤。",
+    "tags": [
+      "AGENTS.md",
+      "编码代理",
+      "SWE-bench",
+      "上下文工程",
+      "AI开发工具"
+    ],
+    "title": "AGENTS.md 文件真的对编码代理有帮助吗？",
+    "totalScore": 62.5,
+    "url": "https://x.com/rasbt/status/2063649136323252397"
+  },
+  "payloadHash": "sha256:72cf98095785988a36057b950f25efafc9c6fc416449a760f6ce7acc95ec1291",
+  "refs": {},
+  "revisionId": "sha256:638028098d0955ff0fc3e56ce31fb2ef4a2f120ce404614cd501feabf70e50f3",
+  "schemaVersion": 1,
+  "updatedAt": 1781170870182
+}

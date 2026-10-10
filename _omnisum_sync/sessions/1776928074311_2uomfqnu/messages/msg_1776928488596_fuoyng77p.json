@@ -1,0 +1,18 @@
+{
+  "createdAt": 1776928488596,
+  "entityType": "message",
+  "id": "msg_1776928488596_fuoyng77p",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "我认同你说的 odex-to-cursor 部署到一台有公网访问能力的机器上，然后反代成 HTTPS：https://your-domain.com/v1。如果我的服务器上没有 https，能否直接使用 http://ip/v1?",
+    "role": "user",
+    "timestamp": 1776928488596
+  },
+  "payloadHash": "sha256:0fe25319ed5716bfca36ef526374a8adc5ad9dd1f941b1a38b70f50264c37b44",
+  "refs": {
+    "sessionId": "1776928074311_2uomfqnu"
+  },
+  "revisionId": "sha256:bf6ca6b429baa662b6c4d526345e7589dae4187e7c95fb9320324e23d14add9f",
+  "schemaVersion": 1,
+  "updatedAt": 1776928488596
+}

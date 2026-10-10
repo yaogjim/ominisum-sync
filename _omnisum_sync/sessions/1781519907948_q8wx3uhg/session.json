@@ -1,0 +1,66 @@
+{
+  "createdAt": 1781519907948,
+  "entityType": "session",
+  "id": "1781519907948_q8wx3uhg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文中命令安装 MemOS CLI 并接入一个常用Agent进行测试",
+      "添加项目技术栈、文档风格、代码规范等记忆，验证跨会话检索效果"
+    ],
+    "archiveReason": "提供了一个多Agent共享长期记忆的工具思路和基础命令，可作为工作流优化参考",
+    "classifiedAt": 1781520298076,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "多Agent共享记忆方案",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "多Agent协作中的核心痛点是上下文、偏好和项目背景无法跨工具继承",
+      "MemOS CLI 可通过命令行接入不同Agent，并支持 table、markdown、json、agent 等输出形态",
+      "CLI 形态相比插件或MCP更通用，适合任何能运行命令行的Agent环境"
+    ],
+    "oneHighValuePoint": "将长期记忆从单一AI客户端中抽离，作为多Agent工作流的共享基础设施。",
+    "oneLineReview": "一个实用但偏推广性质的多Agent记忆共享工具介绍，适合快速了解和试用。",
+    "primaryCategory": "AI工具与工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent协作",
+      "开发效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了在多个AI Agent之间切换时上下文和偏好无法继承的问题，并推荐使用 MemOS CLI 作为共享长期记忆层，通过命令行让 Codex、Claude Code、Cursor 等工具复用项目背景和偏好。",
+    "tags": [
+      "MemOS",
+      "多Agent",
+      "长期记忆",
+      "CLI",
+      "AI编程"
+    ],
+    "title": "AI奶爸: 最近同时开多个Agent项目，发现一个挺烦的事： Codex里聊了一半的需求，切换到Claude Code继续写，它完全不记得刚才说过啥",
+    "totalScore": 57,
+    "url": "https://x.com/zstmfhy/status/2064999815029965041"
+  },
+  "payloadHash": "sha256:303542d9e5a9db2272e82337b0b5665a9504c6207d99e2b10736812f40175d0b",
+  "refs": {},
+  "revisionId": "sha256:5dced1a19e4f9fb5d18d3370924ec806e9c1ec445f7e2e019e12788aff9ce532",
+  "schemaVersion": 1,
+  "updatedAt": 1781520298607
+}

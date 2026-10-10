@@ -1,0 +1,71 @@
+{
+  "createdAt": 1781001037018,
+  "entityType": "session",
+  "id": "1781001037018_v6xznw94",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为自己的AI开发流程设计一个最小Loop：任务输入、执行、验证、记录和下一步决策。",
+      "在项目中尝试使用git worktree隔离多个Agent并行修改。",
+      "为项目补充SKILL.md或类似知识文件，减少Agent重复推理项目背景。",
+      "建立独立验证环节，避免让生成代码的Agent自己判定完成。",
+      "将Agent执行历史和下一步计划写入持久化文件或任务系统。"
+    ],
+    "archiveReason": "文章提炼了AI Agent循环工程的关键组件和风险边界，可作为设计自动化开发工作流的参考框架。",
+    "classifiedAt": 1781052468568,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Loop工程的六个组件",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Loop Engineering强调构建能自动发现任务、执行、检查、记账并决定下一步的系统，而不是人工逐轮prompt。",
+      "Automations、Worktrees、Skills、Connectors、Sub-agents和Memory构成Agent循环的核心基础设施。",
+      "写代码的Agent不应自行判断任务完成，需要独立检查者或验证机制。",
+      "Memory应落在磁盘、repo或任务系统中，而不是仅存在于上下文窗口里。",
+      "循环越自动化，越需要人类工程师保持验证能力、代码理解和独立判断。"
+    ],
+    "oneHighValuePoint": "将Agent使用从“写prompt”提升为“设计可验证、可记忆、可分工的执行循环”。",
+    "oneLineReview": "一篇高密度的Agent工作流方法论短文，框架清晰，但证据和案例支撑较弱。",
+    "primaryCategory": "AI工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "Agent系统设计",
+      "软件工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了从手动prompt转向构建自主循环系统的Loop Engineering理念，概括了Automations、Worktrees、Skills、Connectors、Sub-agents和Memory六个关键组件，并提醒验证、代码理解和工程师判断仍不可外包。",
+    "tags": [
+      "Loop Engineering",
+      "Claude Code",
+      "AI Agent",
+      "自动化工作流",
+      "软件开发"
+    ],
+    "title": "陈成: Claude Code 负责人 @bcherny 说他已经不 prompt Claude 了",
+    "totalScore": 75.5,
+    "url": "https://x.com/chenchengpro/status/2064221035734646916"
+  },
+  "payloadHash": "sha256:891a5609cabaeb69d69157a68a82138aacdee99aa1915404bfe8005b4e0bd14a",
+  "refs": {},
+  "revisionId": "sha256:96c715f1acb228c343192fe6c32a8afa6fe70336280dd6c7f1eac36e6e4b81c0",
+  "schemaVersion": 1,
+  "updatedAt": 1781170310103
+}

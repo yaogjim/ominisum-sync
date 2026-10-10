@@ -1,0 +1,67 @@
+{
+  "createdAt": 1781521094213,
+  "entityType": "session",
+  "id": "1781521094213_2bowc28c",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 Codex 或 Claude Code，可尝试搭建左中右下四区开发布局。",
+      "评估该布局是否能减少任务切换、Diff Review 和终端操作之间的摩擦。",
+      "若长期使用 AI 编程工具，可进一步整理自己的标准化命令和任务模板。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781521685444,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex与Claude开发布局实践",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Codex App 可作为本地交互入口，连接远程或本地长期在线开发主机。",
+      "AI 编程工作流中可通过多栏布局同时保留任务、对话、代码审查和终端执行环境。",
+      "热门回复提到 /goal、/loop、/workflows 等命令式 AI 协作方式，但正文未展开。"
+    ],
+    "oneHighValuePoint": "将任务列表、AI 对话、代码文件/Diff Review 和远程终端固定在同一工作界面中，降低 AI 辅助开发时的上下文切换成本。",
+    "oneLineReview": "适合作为 AI 编程工作区布局灵感，但方法论和证据支撑较弱。",
+    "primaryCategory": "AI辅助开发",
+    "rating": "C",
+    "rejectReason": "内容主要是个人工作台布局经验，信息较碎片化，缺少完整流程、效果对比和案例验证。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开发工作流",
+      "工具使用"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了一个 Codex App 与 Claude Code 联合开发的桌面布局方案：MacBook 运行 Codex，连接长期在线开发主机，并用四栏分别管理任务、对话、文件/命令行/浏览器/Diff 和 SSH 终端。",
+    "tags": [
+      "Codex",
+      "Claude Code",
+      "AI编程",
+      "开发环境",
+      "多窗口工作流"
+    ],
+    "title": "Tz: 我终于找到 codex + claude code 联合开发的最佳实践了： 1",
+    "totalScore": 50.5,
+    "url": "https://x.com/Tz_2022/status/2065125078073802907"
+  },
+  "payloadHash": "sha256:9363f4ff1fb20bfc312b540d4e7d4ef4a82cff3dd3465a51391a2098b05d9b61",
+  "refs": {},
+  "revisionId": "sha256:4053f2acafee598408a40b98e623f970356008cabc5b01027242d0bb2ac33ae8",
+  "schemaVersion": 1,
+  "updatedAt": 1781521685961
+}

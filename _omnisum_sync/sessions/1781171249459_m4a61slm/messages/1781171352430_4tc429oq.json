@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781171352431,
+  "entityType": "message",
+  "id": "1781171352430_4tc429oq",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: ShipAny Next性能宣传\n\n**评级**: D (25.5分)  |  **深度阅读**: 否  |  **建议操作**: 删除\n\n**主类别**: 开发工具\n**次类别**: Cloudflare部署, 产品推广\n**标签**: #ShipAny #Cloudflare Worker #vinext #Next.js #产品宣传\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 3 | 10% |\n| 新颖性 | 3 | 10% |\n| 相关性 | 5 | 20% |\n| 可操作性 | 2 | 15% |\n| 方法论价值 | 1 | 15% |\n| 可迁移性 | 2 | 10% |\n| 证据质量 | 1 | 10% |\n| 长期杠杆 | 2 | 10% |\n\n**一句话点评**: 有少量工具选型信息，但整体偏营销，缺乏实证和方法论。\n**核心高价值点**: 指出 ShipAny 三代 Cloudflare 部署分别使用 next-on-pages、open-next、vinext，反映了适配器演进方向。\n\n### 摘要\n文章称 ShipAny Next 使用 Cloudflare 官方 vinext 适配器，通过 Vite 构建后在 Cloudflare Worker 上比前两代快十几倍，并预告后续发布与设计思路分享，但当前内容主要是宣传。\n\n### 知识要点\n- vinext 是 Cloudflare 官方较新的部署适配器，使用 Vite 构建\n- 不同 Next.js Cloudflare 部署适配器可能带来明显性能差异\n\n### 行动项\n- 如正在做 Cloudflare Worker 部署，可单独调研 vinext 的官方文档和基准测试\n- 等待作者后续发布设计思路和实践技巧后再判断是否值得深入研究\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是产品宣传，缺少性能测试数据、实现细节和可复用方法论，信息价值较低。\n删除: 是\n留存决策: 建议立即删除，除非正在评估 ShipAny 或 Cloudflare Worker 部署方案\n删除原因: 缺乏证据支撑和实践细节，主要为推广性质，长期参考价值有限。",
+    "role": "assistant",
+    "timestamp": 1781171352431,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:08eb74749cd6c3abd29a884814c1780a58061ef94b550c80ddb75ce895a077d7",
+  "refs": {
+    "sessionId": "1781171249459_m4a61slm"
+  },
+  "revisionId": "sha256:31a738e7df32ef499f38349881d648965cb40be59c37d77ab2d33e6d0f159083",
+  "schemaVersion": 1,
+  "updatedAt": 1781171352431
+}

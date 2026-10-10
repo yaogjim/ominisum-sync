@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781052392375,
+  "entityType": "message",
+  "id": "1781052392374_drzpkcta",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 编码代理Harness方法论\n\n**评级**: B (63.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程\n**次类别**: 编码代理, 产品架构\n**标签**: #coding agent #harness #LLM工具调用 #上下文管理 #Agent架构\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇观点清晰但证据较弱的编码代理架构短文，适合作为harness设计的概念提醒。\n**核心高价值点**: 任何必须可靠的行为都应放在harness中，而不是依赖模型通过prompt自觉遵守。\n\n### 摘要\n文章强调编码代理的核心不只是模型，而是模型外层的harness。它负责仓库上下文、工具契约、权限、状态、转录记录、上下文裁剪等关键工程边界，并提出通过harness诊断agent失效问题。\n\n### 知识要点\n- coding agent的harness负责真实运行环境、工具执行、权限控制、状态更新和上下文投影\n- 工具调用应被视为模型proposal与真实副作用之间的contract，而不是普通helper function\n- transcript与working state是不同任务，前者记录发生过什么，后者维护当前重要状态\n- agent重复、编辑过时代码、上下文恶化、权限失控等问题应优先检查harness机制\n\n### 行动项\n- 设计coding agent时列出harness需要承担的边界校验、权限、状态和工具结果处理职责\n- 检查现有agent是否具备文件状态基线、路径校验、输出裁剪、错误恢复和审计trace机制\n\n### 存档判定\n归档: 是 — 原因: 文章提供了较清晰的coding agent harness组件划分和诊断视角，适合作为Agent架构设计参考\n删除: 否\n留存决策: 短期参考后可归档，用于理解编码代理产品架构中的harness职责",
+    "role": "assistant",
+    "timestamp": 1781052392375,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:b833d0b63c6eab9e14db40878a372a96d0685b452bcf1c1752193de262d303fe",
+  "refs": {
+    "sessionId": "1781000866571_ghg9uwu9"
+  },
+  "revisionId": "sha256:21b8f62f24e306d692e398c77493bbf572ef314b03af55717fbb962cec0a5880",
+  "schemaVersion": 1,
+  "updatedAt": 1781052392375
+}

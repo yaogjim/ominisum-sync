@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781520879438,
+  "entityType": "message",
+  "id": "1781521024247_gp6vgyms",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章总结：一个面向 AI 编程会话的 Session Browser\n\n## 核心观点\n\n作者经过一晚调试后认为，这个工具即使不作为完整的 memory 浏览器，单独作为一个更好的 **session browser（会话浏览器）** 也已经有价值。\n\n## 产品形态\n\n用户可以通过 **CLI 进行 AI 编程交互**，再通过 **App 回顾和浏览会话内容**。  \n也就是说，它把“执行”和“复盘”分开：命令行负责高效操作，应用界面负责结构化查看。\n\n## 对 Memory 浏览的思考\n\n作者原本为了浏览 memory 逻辑设计了单页面界面，但也意识到：  \n在高密度、多轮对话流中，人类其实很难频繁切换注意力去理解不同内容。\n\n这说明产品设计不能只追求信息密度，还要考虑用户的认知负担。\n\n## 后续计划\n\n对 **subagent / workflow 的 sub-session** 支持正在开发中，预计几天内发布。\n\n这意味着未来可以更好地查看子智能体、工作流中的子会话，让复杂 AI 工作过程更可追踪、更易复盘。\n\n## 一句话总结\n\n这是一个用于 AI 编程场景的会话浏览工具，核心价值在于帮助用户更清晰地回顾 CLI 中产生的复杂对话与工作流记录。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781520879438,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:736433c1a2107b4e1dde0d363f66934ad3289401be5e9bf38a8f5e4790aeeaca",
+  "refs": {
+    "sessionId": "1781521024108_cp19tmq9"
+  },
+  "revisionId": "sha256:946b3e7e145ee6b23b429d9d316a73e5ebb468ee2d608c87f51c06b49ffff6a4",
+  "schemaVersion": 1,
+  "updatedAt": 1781520879438
+}

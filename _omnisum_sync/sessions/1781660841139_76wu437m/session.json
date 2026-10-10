@@ -1,0 +1,68 @@
+{
+  "createdAt": 1781660841139,
+  "entityType": "session",
+  "id": "1781660841139_76wu437m",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "精读擒纵机构、无钥上链和自动上链部分，学习复杂机械系统的模块化拆解方式。",
+      "参考文章的讲解结构，用于改进自己对复杂技术系统的可视化表达和教学设计。"
+    ],
+    "archiveReason": "文章以高质量交互可视化系统讲解机械腕表从动力、齿轮、擒纵、摆轮到自动上链的完整机制，具有较强工程认知和解释方法参考价值。",
+    "classifiedAt": 1781660864012,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "机械腕表原理全解析",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "ciechanow.ski",
+    "favicon": "https://ciechanow.ski/favicon.ico",
+    "knowledgePoints": [
+      "机械表通过发条盒储存能量，并借助齿轮组将低速高扭矩运动转换为适合秒针、分针和时针的不同转速。",
+      "擒纵机构与摆轮游丝共同控制能量释放节奏，使齿轮系统以稳定频率推进，从而实现计时。",
+      "宝石轴承、润滑油、齿轮减重、避震机构等细节用于降低摩擦、减少磨损并提升可靠性。",
+      "无钥上链机构通过表冠、柄轴、拉档、离合轮、拨针轮等部件在上链、调日历和调时间模式间切换。",
+      "自动上链机构利用摆陀随手腕运动产生的旋转，并通过单向传动结构将双向摆动转化为单向上链。"
+    ],
+    "oneHighValuePoint": "通过逐层拆解复杂系统，将机械表从能量存储到时间显示的完整因果链条讲清楚，是优秀复杂系统解释范例。",
+    "oneLineReview": "一篇极高完成度的机械工程可视化科普，概念清晰、结构完整，但直接操作性有限。",
+    "primaryCategory": "工程技术科普",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "机械结构",
+      "交互式可视化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统拆解机械腕表机芯工作原理，涵盖发条储能、齿轮传动、擒纵调速、摆轮振荡、日历机构、无钥上链与自动上链等核心结构，并通过交互动画展示各部件协同方式。",
+    "tags": [
+      "机械表",
+      "齿轮传动",
+      "擒纵机构",
+      "工程设计",
+      "可视化解释"
+    ],
+    "title": "Mechanical Watch – Bartosz Ciechanowski",
+    "totalScore": 70.5,
+    "url": "https://ciechanow.ski/mechanical-watch/"
+  },
+  "payloadHash": "sha256:b84ce907eac0d3fab93c211a3c91eb88022a236f23f75890801c2358799d86b5",
+  "refs": {},
+  "revisionId": "sha256:f73cdf292ca55cd8efca86a827253d4ab7fe83a9c3c20447d473687c5e7c457d",
+  "schemaVersion": 1,
+  "updatedAt": 1781662375831
+}

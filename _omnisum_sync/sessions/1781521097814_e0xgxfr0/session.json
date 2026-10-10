@@ -1,0 +1,69 @@
+{
+  "createdAt": 1781521097814,
+  "entityType": "session",
+  "id": "1781521097814_e0xgxfr0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自有AI Agent或编程工具中记录并分类工具调用失败模式",
+      "尝试为高频工具调用错误增加确定性修复层，而不是仅把校验错误原样返回给模型",
+      "评估开源模型时区分模型本体能力与harness工程能力，避免直接用闭源工具框架结论外推",
+      "关注CommandCode或类似开源项目，验证其修复机制是否可迁移到现有工作流"
+    ],
+    "archiveReason": "提出了通过中间件修复工具调用错误、提升开源模型可用性的框架思路，具备一定方法论参考价值",
+    "classifiedAt": 1781521702000,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编程框架修复工具调用",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "开源模型在工具调用中可能出现“工具混淆”，即反复生成格式错误的调用且难以通过原始校验错误自我修正",
+      "一种改进方式是由中间件先确定性修复调用、执行结果，再附带自然语言修复提示返回给模型",
+      "模型能力评估可能强烈依赖外部框架，直接替换endpoint可能掩盖工具调用失败并导致误判",
+      "AI应用价值可能从单纯模型能力转向框架契约、偏好上下文和错误修复机制的积累"
+    ],
+    "oneHighValuePoint": "将模型工具调用失败视为可由harness层确定性修复的工程问题，而不是简单归因于模型能力不足。",
+    "oneLineReview": "有启发性的AI编程工具链观点，但主要基于访谈和宣传性案例，证据仍偏弱。",
+    "primaryCategory": "AI工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合在研究AI编程工具链和模型工具调用可靠性时查阅",
+    "secondaryCategories": [
+      "AI编程工具",
+      "大模型应用框架"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章概述CommandCode创始人观点：开源模型编程表现差未必源于模型能力，而常是工具调用框架缺陷。通过确定性修复错误调用并反馈自然语言提示，可显著改善DeepSeek等模型表现。",
+    "tags": [
+      "工具调用",
+      "开源模型",
+      "AI编程",
+      "Harness",
+      "DeepSeek"
+    ],
+    "title": "Feiteng: 创始人兼 CEO Ahmad Awais(27 年编程、300+ 开源项目) 在 Latent Space 的访谈: 他的核心论断：开源模型在编程上「不行」，多…",
+    "totalScore": 69,
+    "url": "https://x.com/FeitengLi/status/2065091913309368782"
+  },
+  "payloadHash": "sha256:f649afd4289b9aaecd56843049029a1c492ab8128d0a49565ba16d8b9454bba0",
+  "refs": {},
+  "revisionId": "sha256:cd8a0dac53b0e20311b3d169c5dfd27b7c24f5571ab73ab9eed99761d4eb7bb9",
+  "schemaVersion": 1,
+  "updatedAt": 1781521702906
+}

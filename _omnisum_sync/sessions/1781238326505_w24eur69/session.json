@@ -1,0 +1,95 @@
+{
+  "createdAt": 1781238326505,
+  "entityType": "session",
+  "id": "1781238326505_w24eur69",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理自身在Context Engineering、Memory、Tool Use、MCP、Multi-Agent等方向的能力缺口",
+      "关注Agent Harness相关岗位和研究趋势，建立个人能力清单",
+      "如从事Agent开发，可参考其职责拆分评测、真实任务反馈和用户反馈迭代流程"
+    ],
+    "archiveReason": "可作为观察Agent Harness方向、岗位要求和能力栈变化的参考材料",
+    "byline": "宝玉",
+    "classifiedAt": 1781570197344,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "DeepSeek招聘Agent Harness研究员",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1781238418028,
+        "imageId": "img-3",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# 高价值信息提取\n\n## 1. 一句话判断\n\n> 最值得保留的是：**DeepSeek 把 Agent 的竞争重心，从 “模型能力” 正式拆分出一个独立层：Harness—— 即让模型在真实任务中可用、可靠、可迭代的系统工程与研究层。**\n\n价值评级：**A**  \n精炼理由：这不是普通招聘信息，而是一个信号：**Agent 产品的核心壁垒正在从 “更强模型” 转向 “模型 + Harness 的共同进化”。**\n\n---\n\n## 2. 最重要的洞见\n\n### 洞见 1：Agent 不是模型，而是「模型 + Harness」\n\n#### **核心观点：**  \n> DeepSeek 明确提出：**Model + Harness = Agent**。模型只是能力源，Harness 才是把能力转化为真实产品的系统层。\n\n**为什么重要：**  \n过去很多人把 Agent 失败归因于 “模型还不够强”。但这则招聘透露出另一种判断：  \n模型之外的上下文管理、工具调用、长期记忆、错误恢复、多 Agent 协作、评测体系，才决定 Agent 能否在真实任务里稳定工作。\n\n**反常识之处：**  \n常见认知是：  \n> 模型越强，Agent 越强。  \n\n这里的判断是：  \n> 模型强只是前提，**Harness 决定模型能力能否落地。**\n\n**可迁移价值：**  \n任何 AI 产品都不应只问 “底座模型多强”，还要问：  \n- 如何组织上下文？\n- 如何管理工具生命周期？\n- 如何恢复错误？\n- 如何积累长期记忆？\n- 如何用真实任务反馈系统？\n\n**我应该记住什么：**  \n> AI 产品的护城河，可能不在模型参数里，而在 “把模型变成稳定系统” 的那一层。\n\n---\n\n### 洞见 2：Harness 不是工程杂活，而是新型研究对象\n\n#### **核心观点：**  \n> DeepSeek 用 “研究员” 而不是 “工程师” 招聘 Harness 人才，说明它把 Harness 视为可研究、可定义、可评测、可迭代的前沿领域。\n\n**为什么重要：**  \n这意味着 Agent 领域正在形成新的专业分工：  \n- 模型研究：提升基础能力  \n- Harness 研究：让能力在复杂任务中被调度、约束、记忆、组合、反馈  \n\nHarness 不再只是 “写 Prompt”“接 API”“拼工具”，而是系统性研究问题。\n\n**反常识之处：**  \n很多团队把 Agent 工程当成应用层封装；DeepSeek 的岗位描述则暗示：  \n> Harness 是和模型训练同等需要研究品味的领域。\n\n**可迁移价值：**  \n在新技术早期，真正的机会常出现在 “中间层”：  \n- 不是底层技术本身  \n- 也不是表层应用包装  \n- 而是把能力转化为可靠产品的抽象层、协议层、调度层、评测层\n\n**我应该记住什么：**  \n> 当一个 “工程胶水层” 开始被大厂作为研究岗位招聘，它往往正在变成新基础设施。\n\n---\n\n### 洞见 3：真实世界任务，正在取代静态 Benchmark 成为 Agent 的核心反馈源\n\n#### **核心观点：**  \n> 岗位强调 “以真实世界任务作为 Harness 研究的重要反馈源”，说明 Agent 评测不能只靠标准题集，而要靠真实使用场景中的连续表现。\n\n**为什么重要：**  \nAgent 的难点不在单次回答，而在长链路任务：  \n- 中途出错怎么办？\n- 工具调用失败怎么办？\n- 上下文超长怎么办？\n- 用户目标含糊怎么办？\n- 多步骤计划偏航怎么办？\n\n这些问题很难通过传统 Benchmark 完整暴露。\n\n**反常识之处：**  \n常见路径是先构建榜单，再优化分数。  \n这里的路径是：  \n> 真实任务 → 数据与实验设计 → Harness 迭代 → 再反哺评测。\n\n**可迁移价值：**  \n对任何复杂产品，尤其是 AI 产品：  \n> 最有效的评测不是 “实验室表现”，而是 “真实任务闭环中的失败样本”。\n\n**我应该记住什么：**  \n> Agent 的评测核心不是 “答对多少题”，而是 “在真实世界里能走多远”。\n\n---\n\n### 洞见 4：未来稀缺人才不是纯研究员，也不是纯工程师，而是 “研究型全栈 Agent 用户”\n\n#### **核心观点：**  \n> 岗位同时要求科研能力、全栈开发、Agent 重度使用、模型行为品味、快速原型迭代，这是一种新的复合型人才画像。\n\n**为什么重要：**  \nHarness 研究无法只靠论文推演，也无法只靠工程堆叠。它需要人同时具备：  \n- 抽象问题的科研能力  \n- 快速验证的工程能力  \n- 对模型行为的敏感判断  \n- 对真实工具链的高频体验  \n\n**轻描淡写但重要的细节：**  \n“能够在 AI 辅助下，在没有直接经验的领域进行研究目的的编程工作” 非常关键。  \n这暗示未来优秀研究员的能力边界，不再由自己已掌握的语言 / 框架决定，而由其**借助 AI 快速进入陌生技术域的能力**决定。\n\n**可迁移价值：**  \n未来很多岗位的核心竞争力会从 “我会什么” 变成：  \n> 我能否借助 AI 快速进入一个未知问题，并做出可运行原型。\n\n**我应该记住什么：**  \n> AI 时代的高阶人才，不是知识库存最大的人，而是问题定义、工具调用、快速验证能力最强的人。\n\n---\n\n## 3. 底层逻辑\n\n#### **逻辑一：模型能力需要系统承载，才能变成产品能力**\n\n- 表层现象：DeepSeek 招聘 Agent Harness 研究员。  \n- 深层原因：模型本身不能自动解决上下文、记忆、工具、错误恢复、任务拆解、用户反馈等产品级问题。  \n- 推导结论：Agent 的竞争不只是模型竞赛，而是模型与 Harness 的协同进化竞赛。\n\n---\n\n#### **逻辑二：Agent 的真实瓶颈不在 “会不会”，而在 “能否稳定完成长链路任务”**\n\n- 表层现象：岗位强调长期记忆、Subagent、Multi-Agent、自进化、评测、真实任务反馈。  \n- 深层原因：Agent 的失败往往发生在连续执行过程，而不是单点推理能力。  \n- 推导结论：谁能掌握任务过程中的上下文管理、错误恢复和反馈迭代，谁更接近可用 Agent。\n\n---\n\n#### **逻辑三：新技术成熟时，岗位会先暴露产业结构变化**\n\n- 表层现象：“Harness 研究员” 成为正式岗位。  \n- 深层原因：当某类工作从临时工程实践变成专门岗位，说明它已具备独立方法论和商业价值。  \n- 推导结论：观察新岗位命名，往往能比观察产品发布更早发现产业分工变化。\n\n---\n\n## 4. 反常识清单\n\n| 反常识观点 | 常见认知 | 文章的不同判断 | 启发 |\n|---|---|---|---|\n| Agent 不等于模型 | 强模型自然带来强 Agent | Agent = Model + Harness | 评估 AI 产品时，要看系统层能力，而非只看底座模型 |\n| Harness 不是工程胶水 | 接 API、写 Prompt、拼工具属于应用开发 | Harness 是需要研究员定义和推进的前沿领域 | “中间层” 可能孕育新护城河 |\n| 真实任务比静态 Benchmark 更关键 | 先刷榜，再证明能力 | 以真实世界任务作为重要反馈源 | AI 产品评测应围绕真实失败场景构建 |\n| 未来人才要能用 AI 跨越陌生技术栈 | 专家价值来自既有技术经验 | 借助 AI 在无直接经验领域快速原型化也是核心能力 | 学习能力正在从 “掌握知识” 转向 “调用 AI 扩展能力” |",
+        "url": "https://pbs.twimg.com/media/HKgFitJWsAAO9En?format=jpg&name=medium",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 1200,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HKgFitJWsAAO9En?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HKgFitJWsAAO9En?format=jpg&name=medium",
+        "width": 296
+      }
+    ],
+    "knowledgePoints": [
+      "Agent Harness被定义为模型之外将模型能力转化为Agent产品的系统层工作",
+      "关键研究方向包括上下文管理、长期记忆、Subagent、Multi-Agent、自进化Agent和评测体系",
+      "该岗位强调研究能力、全栈开发、Agent重度使用经验和模型行为判断力的结合"
+    ],
+    "oneHighValuePoint": "将模型之外支撑Agent产品化的上下文、记忆、工具、评测、真实任务迭代等统一归入Harness范畴。",
+    "oneLineReview": "信息本身有行业观察价值，但主要是招聘启事，证据和方法论深度有限。",
+    "primaryCategory": "AI Agent",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留为Agent岗位能力模型样本",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "职业机会",
+      "Agent工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章转发DeepSeek招聘Agent Harness研究员的信息，列出团队使命、职责和任职要求，涵盖上下文管理、长期记忆、Multi-Agent、评测构建、模型适配等方向，体现Agent工程岗位能力趋势。",
+    "tags": [
+      "DeepSeek",
+      "Agent Harness",
+      "招聘",
+      "Context Engineering",
+      "Multi-Agent"
+    ],
+    "title": "宝玉: DeepSeek 招 Agent Harness 研究员，能是世界范围内第一次招聘“Harness研究员” https://t",
+    "totalScore": 57,
+    "url": "https://x.com/dotey/status/2064907115223720355"
+  },
+  "payloadHash": "sha256:7e443fc5d140e32e80202a812d002dbc4fb12548cc3f0ac4871fc920afc27182",
+  "refs": {},
+  "revisionId": "sha256:acb7ad0ff037fa92a35ab02ac6ab75fbb8df95d617396bc0eba25c447c04f2ad",
+  "schemaVersion": 1,
+  "updatedAt": 1781570198977
+}

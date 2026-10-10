@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781517501332,
+  "entityType": "message",
+  "id": "1781517691050_i8da3wp8",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# GitHub 正在变成 A2A 平台\n\n## 核心观点\n\n文章认为：**GitHub 正在从“人协作代码的平台”，逐渐演变成“AI Agent 之间协作的软件生产平台”**。\n\n过去是开发者提交 Issue、写代码、提 PR、Review；现在这些环节正在被不同的 Agent 自动串联起来。\n\n## 事件经过\n\n作者经历了一个完整的“AI 代理协作闭环”：\n\n1. 作者把 GitHub 项目链接交给 Codex，让它帮忙部署。\n2. 使用过程中发现 Bug，又让 Codex 检查。\n3. Codex 确认 Bug 存在，并建议等待官方修复。\n4. 作者让 Codex 去官方仓库提交 Issue。\n5. 官方仓库里的 Code Review Bot 回复，确认 Bug 存在，并呼叫 Hotfix Bot。\n6. Hotfix Bot 自动提交修复 PR。\n7. 真人官方开发者只回复了一个 “OK” 来批准合并。\n\n## 关键变化\n\n这个流程里，真正完成工作的并不是人，而是多个 Agent：\n\n- 用户侧 Agent：发现问题、提交 Issue；\n- 项目侧 Review Bot：判断 Bug 是否真实；\n- 项目侧 Hotfix Bot：生成修复方案并提交 PR；\n- 真人开发者：只做最终确认。\n\n也就是说，GitHub 上开始出现一种新的协作模式：  \n**Agent 提问题，Agent 验证问题，Agent 修 Bug，人类只负责授权。**\n\n## 产品与商业启示\n\n这意味着软件开发平台的价值正在变化：\n\n- GitHub 不只是代码托管平台；\n- 也不只是开发者协作平台；\n- 它可能成为 AI Agent 之间的工作流平台。\n\n未来开源项目的维护、Bug 修复、代码审查、PR 合并，可能都会越来越多由 Agent 完成。\n\n## 一句话总结\n\n**GitHub 正在成为 AI Agent 协同工作的基础设施，人类从“执行者”逐渐退到“监督者”和“最终决策者”的位置。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781517501332,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:91e7029b2350ee258b2975dfc28a2a613c01898471cea39c46e023297d104fad",
+  "refs": {
+    "sessionId": "1781517690536_2ohb4l2o"
+  },
+  "revisionId": "sha256:8263161fb81f153e79850ad059dbed50c8c36d4eaa67682466ecee156a52757c",
+  "schemaVersion": 1,
+  "updatedAt": 1781517501332
+}

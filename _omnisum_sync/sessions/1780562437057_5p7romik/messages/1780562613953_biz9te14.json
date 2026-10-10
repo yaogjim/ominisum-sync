@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780562613954,
+  "entityType": "message",
+  "id": "1780562613953_biz9te14",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n作者分享了如何用 **1 张参考图 + GPT Image 2 + LTX Flows**，快速搭建一个完整的「Gucci x Crocs」概念广告 Campaign。核心思路是：先从参考图中提取视觉系统，再迁移到新品牌合作概念中，最终生成品牌板、视觉资产、Brief、Key Visual 等接近可提案的内容。\n\n---\n\n## 1. 背景：一个 AI 概念广告快速走红\n\n作者制作的 **Gucci x Crocs 概念 Campaign** 在 1 天内获得了：\n\n- 数十万浏览量\n- 2,000+ 收藏\n- 数百条关于“怎么做”“提示词在哪”的提问\n\n因此，作者在文章中公开了完整流程、提示词和 LTX 项目文件，帮助读者复现类似的 AI 广告创作流程。\n\n---\n\n## 2. 核心想法：把一张图变成一套创意引擎\n\n作者提出的核心方法叫 **image-to-engine**，即：\n\n> 不是直接复制一张参考图，而是提取它背后的创意系统，再转化成新的品牌 Campaign。\n\n具体逻辑是：\n\n- 找到一张有吸引力的视觉参考图\n- 提取它的风格、构图、色彩、材质、排版等系统\n- 将这个系统迁移到新的品牌合作概念中\n- 生成完整的视觉语言和营销资产\n\n例如，作者把某张视觉参考图的氛围，转化成了一个虚构的 **Gucci x Crocs 奢侈时尚 × 街头潮流** 联名 Campaign。\n\n---\n\n## 3. 需要的 4 个工具\n\n作者认为完成这个流程主要需要 4 类工具：\n\n1. **Pinterest / Behance**  \n   用来寻找视觉灵感和参考图。\n\n2. **ChatGPT / GPT Image 2**  \n   用来分析参考图，并生成品牌板、概念和广告视觉。\n\n3. **LTX Flows**  \n   用来搭建自动化生成流程，并批量扩展 Campaign 资产。\n\n4. **提示词 Prompts**  \n   用来控制输出质量，让 AI 生成更专业、更统一的视觉系统。\n\n---\n\n## 4. 作者的创意总监思路\n\n作者强调，AI 只是工具，真正重要的是创意方向判断。他的 Creative Direction 逻辑是：\n\n- 找到一张“氛围打动人”的图\n- 拆解这张图背后的创意系统\n- 设定新的品牌张力，比如 **奢侈时尚 × 街头感**\n- 用 ChatGPT 建立完整 Campaign 愿景\n- 让产品成为视觉主角\n- 在所有资产中保持统一的视觉语言\n\n作者也提醒：如果懂传统创意总监、品牌营销和广告框架，使用 AI 的效果会大幅提升。\n\n---\n\n## 5. 流程第一步：拆解参考图，生成 Brand Board\n\n第一步是上传参考图，让 AI 不直接复制图片，而是提取其底层设计系统，生成一张 **4:3 的视觉品牌板**。\n\n品牌板需要包含：\n\n- 核心创意和张力\n- 色彩与材质语言\n- 字体方向\n- 图像与构图逻辑\n- 标志性视觉元素\n- 版式和网格系统\n- 可扩展的 Campaign 应用方向\n\n作者强调，这张 Brand Board 应该像专业广告公司提案页一样：\n\n- 视觉化\n- 模块清晰\n- 留白干净\n- 标签少而清楚\n- 可直接作为后续 Campaign 的基础\n\n---\n\n## 6. 第二步：把视觉系统迁移到新品牌概念中\n\n接下来，作者把上一步提取出的视觉系统，应用到新的品牌合作案例中。\n\n原提示词中的变量是：\n\n```text\n[INSERT ANY BRAND HERE]\n```\n\n作者将其替换为：\n\n```text\nGUCCI x CROCS\n```\n\n这一步的目标是：\n\n- 保留参考图的“材质与氛围”\n- 但完全重建成新品牌的视觉风格\n- 注意品牌字体、品牌调性和视觉一致性\n\n也就是说，AI 不是简单换 logo，而是基于新的品牌关系重新设计 Campaign。\n\n---\n\n## 7. 第三步：生成 Campaign 视觉资产 Moodboard\n\n当品牌概念初步确定后，作者继续生成一组实际广告资产的 Moodboard，包括：\n\n- 数字广告 Banner\n- 社交媒体帖子\n- 社交媒体横幅\n- 广告物料\n- 产品细节图\n- 美学视觉素材\n\n作者特别提醒：  \nGPT-v2 有时会把文字叠到模特脸上，视觉效果很差。因此提示词中要明确要求：\n\n- 避免文字覆盖复杂背景\n- 避免文字压在人脸上\n- 图片数量减少约 30%\n- 用更紧凑的 Bento Grid 排版\n\n---\n\n## 8. 第四步：锁定 Campaign 愿景\n\n当视觉方向基本满意后，作者建议生成一页 **Brief Slide**，用于统一自己、AI 和客户的理解。\n\n这页 Brief Slide 主要包括：\n\n- Campaign Brief\n- 核心创意 Idea\n- Campaign Goals\n\n作者认为这一步很重要，因为它可以把视觉方向转化为清晰的策略表达，也方便后续向老板或客户展示。\n\n---\n\n## 9. 第五步：生成 Key Visual 核心视觉\n\n最后一步是生成 Campaign 的 **Key Visual，简称 KV**。\n\nKey Visual 是整个广告活动的主视觉，决定：\n\n- 第一印象\n- 整体氛围\n- 色彩方向\n- 构图方式\n- 品牌表达\n- 销售导向感\n\n作者希望生成的 KV 不是复杂的技术展示页，而是一张可以作为 Campaign 封面的高级视觉，风格类似：\n\n- Forbes 首图\n- Esquire 封面\n- 高级时尚杂志广告页\n\n---\n\n## 10. LTX Studio 的作用：把流程变成可复制的生产线\n\n作者将整个 Campaign 都搭建在一个 LTX 项目里，并开放给读者使用。\n\nLTX Flows 的核心作用是把流程节点化、自动化：\n\n1. 搭建 Flow Pipeline\n2. 复制粘贴流程\n3. 修改一个提示词\n4. 运行整个生成引擎\n5. 一次性扩展出大量视觉资产\n\n作者称，这种方式可以在一个项目中批量生成数百个 Campaign 资产。\n\n---\n\n## 11. 作者提供的额外资源\n\n文章最后提供了几个免费资源：\n\n- **完整 LTX Project**  \n  包含 Gucci x Crocs Campaign 的节点、提示词、逻辑和尺寸调整流程。\n\n- **Elite Font Builder**  \n  包含 10 组经过验证的 Campaign 字体设置。\n\n- **80+ LinkedIn 搜索语句**  \n  用于寻找 AI 领域的合作伙伴和工作机会。\n\n---\n\n## 总结\n\n这篇文章本质上是一套 **AI 广告 Campaign 生产流程教程**。作者展示了如何从一张参考图出发，通过 GPT Image 2 和 LTX Flows，快速完成从视觉拆解、品牌概念、资产 Moodboard、Brief 到 Key Visual 的完整创意流程。\n\n其关键价值在于：AI 不只是生成单张图，而是可以在清晰提示词和创意总监思维的引导下，变成一套接近真实广告提案的 Campaign 系统。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1780562613954,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:57f3a55613703d15736865ee4ae5753ae5ec4efe478e4bb9f6031cf761af45c1",
+  "refs": {
+    "sessionId": "1780562437057_5p7romik"
+  },
+  "revisionId": "sha256:3100ca2c809dde79ab77767fef991d8dd83c64f5eaad2cd92f5be783b52b9307",
+  "schemaVersion": 1,
+  "updatedAt": 1780562613954
+}

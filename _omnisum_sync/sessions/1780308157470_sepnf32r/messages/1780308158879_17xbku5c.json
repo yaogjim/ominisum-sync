@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780308075248,
+  "entityType": "message",
+  "id": "1780308158879_17xbku5c",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 一、总结\n\n这篇文章的核心观点：\n\n> **不要把 Agent 框架做成一个“大一统框架”，而应拆成一组可替换的 worker。**\n\n传统方式：\n\n- 直接用 LangChain、LangGraph、CrewAI 等框架\n- 框架把模型、工具、记忆、审批、预算、策略、追踪等都打包好\n- 问题是：一旦某个模块不适合，替换成本很高\n\niii 的思路：\n\n- 每个能力都是一个独立 worker\n- worker 通过统一协议连接到引擎\n- 通过 `iii.trigger()` 调用彼此\n- 想换哪一层，就写一个注册相同函数 ID 的 worker 替换掉\n\n最终目标：\n\n> **框架不是一个固定产品，而是一组可组合、可替换、可观测的工作单元。**\n\n---\n\n# 二、深入浅出解读\n\n## 1. Agent 框架到底要做什么？\n\n一个生产级 Agent 不只是“调用大模型”。\n\n它还要处理：\n\n- 用户请求\n- 模型调用\n- 工具调用\n- 权限检查\n- 人工审批\n- 成本预算\n- 凭证管理\n- 会话持久化\n- 上下文压缩\n- 日志追踪\n- UI 事件推送\n- 错误处理\n\n也就是说，Agent 框架本质上是一个：\n\n> **让大模型安全、稳定、可控地干活的运行系统。**\n\n---\n\n## 2. 传统框架的问题\n\n传统框架像一个“整装厨房”：\n\n- 灶台、冰箱、水槽、橱柜都给你配好了\n- 用起来快\n- 但如果你只想换水槽，可能要拆半个厨房\n\n对应到 Agent 框架：\n\n- 想换策略引擎，很难\n- 想接自己的审批系统，很麻烦\n- 想换预算系统，可能要绕过框架\n- 想接企业密钥系统，也可能不顺\n\n所以问题不是框架不好，而是：\n\n> **框架太整体化，局部替换太难。**\n\n---\n\n## 3. iii 的设计思路\n\niii 把 Agent 框架拆成很多 worker。\n\n比如：\n\n| 能力 | 对应 worker |\n|---|---|\n| 模型调用 | provider worker |\n| 权限检查 | policy worker |\n| 审批流程 | approval worker |\n| 成本统计 | budget worker |\n| 技能目录 | directory worker |\n| 上下文压缩 | compression worker |\n| 事件推送 | events worker |\n\n每个 worker 都是独立进程。\n\n它们通过统一方式通信：\n\n```ts\niii.trigger(\"某个函数ID\", payload)\n```\n\n这意味着：\n\n> 只要新 worker 注册了同样的函数 ID，旧 worker 就可以被替换。\n\n---\n\n## 4. 举个简单例子\n\n假设默认模型目录是静态的。\n\n但你想要一个动态模型目录：\n\n- 每隔几分钟去供应商 API 拉取模型列表\n- 缓存模型能力\n- 告诉系统哪些模型支持视觉、工具调用、长上下文\n\n你不用改整个框架。\n\n只需要写一个 worker，注册：\n\n```ts\nmodels::list\nmodels::get\nmodels::supports\n```\n\n系统其他部分不用变。\n\n这就是它说的：\n\n> **构建自己的框架，不是 fork 一个框架，而是替换几个 worker。**\n\n---\n\n## 5. “薄框架”和“厚框架”可以自由切换\n\n传统框架通常分两类：\n\n- 薄框架：简单、灵活，但功能少\n- 厚框架：功能全，但复杂、绑定深\n\niii 的想法是：\n\n> 薄和厚不是两种框架，而是同一个系统里 worker 数量的不同。\n\n少装几个 worker，就是轻量版：\n\n- 编排器\n- 模型 provider\n- 凭证管理\n- 基础运行\n\n多装几个 worker，就是企业版：\n\n- 审批\n- 策略\n- 预算\n- 日志\n- 追踪\n- Slack 审批\n- 上下文压缩\n\n区别只是配置，不是重写。\n\n---\n\n# 三、我的意见\n\n我认为这个方向是对的，尤其适合生产级 Agent。\n\n## 优点\n\n- **可替换**：哪个模块不好用，就换哪个\n- **可扩展**：新增 provider、审批、预算系统都更自然\n- **可观测**：统一追踪每次调用，方便排查问题\n- **更适合企业场景**：权限、审批、成本控制都可以单独治理\n- **避免框架锁死**：不会被某个大框架的设计绑架\n\n## 但也有代价\n\n这种架构更像“微服务版 Agent 框架”。\n\n所以会带来：\n\n- 部署更复杂\n- 调试链路更长\n- worker 版本管理更麻烦\n- 对团队工程能力要求更高\n\n简单项目未必需要。\n\n如果只是做 Demo、小工具、内部实验，用 LangChain、OpenAI Agents SDK 这类框架可能更快。\n\n但如果是：\n\n- 企业 Agent\n- 多租户系统\n- 高权限工具调用\n- 成本敏感业务\n- 需要审计和审批的工作流\n\n那么这种 worker 化、可插拔架构会更有价值。\n\n---\n\n# 四、一句话结论\n\n> **这篇文章主张：未来的 Agent 框架不该是一个固定框架，而应是一套可插拔 worker 组合。你不是“选框架”，而是在组装自己的 Agent 运行系统。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1780308075248,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ca6f62f829ca43a4e207566168d19dfe282efd6be9ec7cd3e7a7787337938a9b",
+  "refs": {
+    "sessionId": "1780308157470_sepnf32r"
+  },
+  "revisionId": "sha256:fa60847b89312788d33f55933bc0cf8a69469ea509cde58c74e96a0b7597b523",
+  "schemaVersion": 1,
+  "updatedAt": 1780308075248
+}

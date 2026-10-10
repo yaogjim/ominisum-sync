@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781173426328,
+  "entityType": "message",
+  "id": "1781173426327_n6ic4ph4",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: ChatGPT订阅命令行生图工具\n\n**评级**: B (66分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工具\n**次类别**: 命令行工具, 图像生成\n**标签**: #ChatGPT #CLI #图像生成 #Codex #Python\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 实用性较强的工具型 README，但依赖非公开接口，长期稳定性和合规风险需要谨慎评估。\n**核心高价值点**: 揭示并封装了 Codex CLI 使用 ChatGPT 订阅调用内部 image_generation 工具的路径，可直接用于本地脚本和 AI Agent 工作流。\n\n### 摘要\n该项目提供一个零依赖 Python CLI，通过读取 Codex CLI 登录后的 OAuth token，调用 ChatGPT 内部生图接口，实现无需 OpenAI API Key 的命令行生图，并说明了安装、参数、并发、限制、适用场景和风险。\n\n### 知识要点\n- ChatGPT 订阅生图与 OpenAI 官方图片 API 是两条不同路径，前者使用订阅额度，后者按 API 调用计费。\n- 该工具通过读取 ~/.codex/auth.json 中的 OAuth token，调用 chatgpt.com/backend-api/codex/responses 内部接口并解析 SSE 返回的 base64 图片。\n- 订阅路径不适合生产服务、高并发批量生成、透明背景或显式 high quality 控制等需求。\n\n### 行动项\n- 如已使用 ChatGPT Plus/Pro/Team 和 Codex CLI，可尝试安装该工具并测试本地命令行生图。\n- 仅将其用于个人或内部低频工作流，不要依赖它构建公开服务或长期生产能力。\n- 若需要稳定 API、明确计费、透明背景或高质量控制，应改用 OpenAI 官方图片生成 API。\n\n### 存档判定\n归档: 是 — 原因: 提供了一个可直接使用的 ChatGPT 订阅生图 CLI 工具及其安装、参数、限制和内部调用机制说明，适合在需要本地或 Agent 生图能力时查阅。\n删除: 否\n留存决策: 短期参考后可归档",
+    "role": "assistant",
+    "timestamp": 1781173426328,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:dd3e4a666a1cbe58856cfeb6c43a7ba808c4fdf99ab84fbf4cac369a41adb696",
+  "refs": {
+    "sessionId": "1781152797376_qxr23136"
+  },
+  "revisionId": "sha256:7c024710848c190bec51464d2b43f631c38c89a1f5c4ba944a0fc9b77181dcf6",
+  "schemaVersion": 1,
+  "updatedAt": 1781173426328
+}

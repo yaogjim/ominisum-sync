@@ -1,0 +1,19 @@
+{
+  "createdAt": 1780892409686,
+  "entityType": "message",
+  "id": "1780892409685_rs0ld5vp",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: CopilotKit生成式UI路径\n\n**评级**: B (59分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI应用开发\n**次类别**: 生成式UI, Agentic App, 开源工具\n**标签**: #CopilotKit #Claude Artifacts #Agent UI #React #A2UI\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 适合作为了解 Agentic App 生成式 UI 方案的线索，但不足以作为技术决策依据。\n**核心高价值点**: 将生成式 UI 分为受控、声明式和开放式三种实现路径，便于根据业务风险和灵活性选择方案。\n\n### 摘要\n文章介绍 CopilotKit 将 Claude Artifacts 类生成式 UI 能力开源化，并概括受控、声明式、开放式三种集成路径，以及状态同步、人机协作、持久线程和多端支持等特性。\n\n### 知识要点\n- 受控模式适合核心流程，由开发者预置 React 组件，Agent 负责选择组件和填充数据。\n- 声明式 A2UI 模式通过 Agent 输出 JSON，再由前端映射组件，适合长尾动态场景。\n- 开放式模式让 Agent 直接生成 HTML 或驱动 Excalidraw 等工具，适合一次性可视化和探索性界面。\n- CopilotKit 强调双向状态同步、Human-in-the-Loop、持久 Threads 和 AG-UI 协议集成。\n\n### 行动项\n- 查看 CopilotKit GitHub 仓库和官方文档，确认其 API、协议和框架支持情况。\n- 用一个小型 Agentic App 原型测试受控模式和声明式模式的实际开发成本。\n- 对比 Vercel json-render、Anthropic Artifacts、Google ADK A2UI 等方案的能力边界。\n\n### 存档判定\n归档: 否\n不推荐: 内容偏营销式概述，缺少实测数据、代码示例和与同类方案的系统对比。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1780892409686,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:36643314f194f358f9844ac2ffb2b3d47f5bc0f33f7ed3629ff4d9b814f4d022",
+  "refs": {
+    "sessionId": "1780891862269_dorxukvx"
+  },
+  "revisionId": "sha256:5dd25302f8d35cce7798bb031e07fc233f39049479bdf9fdaa8efd30ef8ca4a4",
+  "schemaVersion": 1,
+  "updatedAt": 1780892409686
+}

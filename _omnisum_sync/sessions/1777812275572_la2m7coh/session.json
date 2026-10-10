@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777812275572,
+  "entityType": "session",
+  "id": "1777812275572_la2m7coh",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需研究该议题，应查阅诉讼文件和 OpenAI 官方结构说明",
+      "避免将单条社交媒体观点作为事实依据引用"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777812505544,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "马斯克与OpenAI争议推文",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "仅为偏向性社交媒体评论，证据质量低、可操作性弱、长期参考价值有限。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "OpenAI 的非营利使命与后续商业化结构存在长期争议",
+      "马斯克与 OpenAI 之间的诉讼被双方赋予不同叙事框架"
+    ],
+    "oneHighValuePoint": "指出 OpenAI 非营利使命与商业化转型之间的争议值得关注。",
+    "oneLineReview": "情绪浓度高于信息价值，不适合作为严肃参考材料。",
+    "primaryCategory": "AI行业舆论",
+    "rating": "E",
+    "rejectReason": "内容主要是情绪化立场表达，缺乏事实链、法律细节和可靠证据，信息增量很低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "OpenAI争议",
+      "社交媒体观点"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章以支持马斯克的立场批评 OpenAI 从非营利转向盈利，称其背叛初心，并强调诉讼收益不会进入马斯克个人口袋。整体缺乏证据与细节。",
+    "tags": [
+      "OpenAI",
+      "马斯克",
+      "诉讼",
+      "AI治理",
+      "低证据观点"
+    ],
+    "title": "X 上的 X Freeze：“Interesting how it works Elon puts up his own money, rounds up the absolute best AI t…",
+    "totalScore": 23,
+    "url": "https://x.com/XFreeze/status/2048784774085435729"
+  },
+  "payloadHash": "sha256:0439f71edf8235e88d62e90f65c74bbd71e7ac3f2bf8c68891113284f5d0544a",
+  "refs": {},
+  "revisionId": "sha256:f431c67086ddace97030417f6c35c757b28cca686c33c10fa2f351a9028e9cf2",
+  "schemaVersion": 1,
+  "updatedAt": 1777813501970
+}

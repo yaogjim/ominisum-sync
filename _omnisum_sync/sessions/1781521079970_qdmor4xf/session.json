@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781521079970,
+  "entityType": "session",
+  "id": "1781521079970_qdmor4xf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需参考，应找到原始gist中的完整Prompt再判断价值",
+      "若要复现评测，应补充统一指标，如可运行性、视觉还原度、代码质量、错误数量和生成耗时"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781521674909,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 3,
+      "novelty": 2,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "LLM面试官Prompt展示",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息不完整且证据不足，无法复现或形成有效方法论，长期留存价值低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "统一Prompt可用于横向观察不同LLM在同一任务上的输出差异",
+      "仅凭截图、DOM数量或主观观感难以构成可靠模型评测"
+    ],
+    "oneHighValuePoint": "用同一Prompt进行one-shot HTML生成测试，可作为粗略比较不同LLM前端生成能力的思路。",
+    "oneLineReview": "有一个统一Prompt横向比较LLM的思路，但内容过于碎片化，缺乏可复用价值。",
+    "primaryCategory": "AI工具评测",
+    "rating": "D",
+    "rejectReason": "内容主要是社交媒体碎片信息，缺少完整Prompt、评测标准、结果细节和可验证证据，参考价值有限。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "Prompt工程",
+      "LLM能力对比"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章是一条关于用同一Prompt测试多个LLM生成HTML效果的推文，提到可通过结果对比模型能力，但正文未提供完整Prompt、系统评测指标或详细输出，仅有零散评论和主观观察。",
+    "tags": [
+      "LLM",
+      "Prompt",
+      "模型评测",
+      "HTML生成",
+      "社交媒体"
+    ],
+    "title": "Jesse Lau 遁一子: 这个prompt是我手中最强LLM面试官了 one shot皇后镇景色特点tree",
+    "totalScore": 29.5,
+    "url": "https://x.com/jesselaunz/status/2065211902515634608"
+  },
+  "payloadHash": "sha256:db7c01ecec2d4722be5b1f1cf35fec1ae09f966d07ddfc1b17cee7b564bb394e",
+  "refs": {},
+  "revisionId": "sha256:463a33f60ee4cb573443892001763dab94a7372620106848a00d676d8231825d",
+  "schemaVersion": 1,
+  "updatedAt": 1781521675302
+}

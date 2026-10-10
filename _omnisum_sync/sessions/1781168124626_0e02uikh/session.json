@@ -1,0 +1,67 @@
+{
+  "createdAt": 1781168124626,
+  "entityType": "session",
+  "id": "1781168124626_0e02uikh",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如有官网重构需求，可尝试按“页面复刻—源码校验—重新设计”的三步流程做一次小范围实验。",
+      "评估 TanStack、Vinext、Next.js 在目标部署平台上的兼容性、性能和生态成熟度。",
+      "在采用纯 Vibe Coding 前，补充性能指标、可维护性检查和人工 review 流程。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781168536870,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "纯Vibe Coding重构官网体验",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "多平台部署需求下，TanStack 可作为替代 Next.js 的轻量化方案之一。",
+      "AI 重构旧站时，可先让 AI 基于线上页面复刻，再用源码校验遗漏，避免直接沿用旧代码结构。",
+      "纯 Vibe Coding 更适合官网、营销页等容错较高的重构场景，复杂业务系统仍需更强审查。"
+    ],
+    "oneHighValuePoint": "将“先复刻线上页面，再对照源码查漏，最后让 AI 重新设计”作为降低 AI 偷懒和结构污染风险的流程。",
+    "oneLineReview": "一个有参考价值的 AI 重构实战小案例，但更偏经验分享和模板推广，严谨性有限。",
+    "primaryCategory": "AI辅助开发",
+    "rating": "B",
+    "rejectReason": "内容以个人体验和工具推荐为主，缺少性能数据、成本对比和失败案例，证据支撑较弱。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "前端工程",
+      "网站重构"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者记录用纯 Vibe Coding 重构 AITDK 官网的过程，比较 Next.js、Vinext、TanStack 后选择 TanStack 模板，并用 Claude Code 完成页面复刻、检查和重新设计，整体耗时约一天。",
+    "tags": [
+      "Vibe Coding",
+      "Claude Code",
+      "TanStack",
+      "Cloudflare Workers",
+      "AI重构"
+    ],
+    "title": "一行代码没写，纯 Vibe Coding 重构 AITDK 官网，体感还不错",
+    "totalScore": 59.5,
+    "url": "https://x.com/blankwebdev/status/2064592992439312531"
+  },
+  "payloadHash": "sha256:25d6cef98bb21dafbe67c288a4c153649adb01466586b77cfbe11f8567bb5390",
+  "refs": {},
+  "revisionId": "sha256:853cff94cbb97258eca17dd74093b85c9ce758748aea79b865522acc9c0ba677",
+  "schemaVersion": 1,
+  "updatedAt": 1781168903959
+}

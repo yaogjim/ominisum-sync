@@ -1,0 +1,63 @@
+{
+  "createdAt": 1780891605216,
+  "entityType": "session",
+  "id": "1780891605216_a0sbllui",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确实对该人物感兴趣，可直接访问原推文中的播客链接",
+      "无兴趣则删除，无需归档"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780892206285,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 1,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 1,
+      "relevance": 1,
+      "transferability": 1
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "绕过付费墙的播客推荐",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息密度极低，主要是个人推荐与推广，无法支撑学习或长期参考。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "推文表达了对某位人物的正面评价",
+      "推荐通过播客获取更多相关信息"
+    ],
+    "oneHighValuePoint": "提供了一个可能绕过付费墙了解相关人物的播客入口。",
+    "oneLineReview": "这是一条低信息量的播客推广推文，几乎没有独立保存价值。",
+    "primaryCategory": "社交媒体推广",
+    "rating": "E",
+    "rejectReason": "内容仅为简短称赞和播客引流，缺乏实质信息、方法论、证据或可迁移价值。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "人物推荐",
+      "播客引流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该推文简短称赞某人善良体贴，并建议如果想了解更多但受付费墙限制，可以收听相关播客节目。整体更像社交推荐或引流内容。",
+    "tags": [
+      "推文",
+      "播客推荐",
+      "低信息密度"
+    ],
+    "title": "x.com/Chesedgirl/status/2063657149914648779",
+    "totalScore": 11.5,
+    "url": "https://x.com/Chesedgirl/status/2063657149914648779"
+  },
+  "payloadHash": "sha256:b2486f2c9e3eb4112d7de1b8fb8ef6070f988268507c35d1d800ce90e63c291d",
+  "refs": {},
+  "revisionId": "sha256:89f0dd655ffbaf550769fa6e28d8978b6c9dae18633f7d5a16eb570628c9357a",
+  "schemaVersion": 1,
+  "updatedAt": 1780892206473
+}

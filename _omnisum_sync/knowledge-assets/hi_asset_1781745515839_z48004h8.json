@@ -1,0 +1,47 @@
+{
+  "createdAt": 1781745515839,
+  "entityType": "knowledge-asset",
+  "id": "hi_asset_1781745515839_z48004h8",
+  "parentRevisionIds": [],
+  "payload": {
+    "assetType": "graph_edge",
+    "clusterId": "ai_agent_engineering",
+    "generator": {
+      "finishReason": "stop",
+      "generatedAt": 1781745515838,
+      "templateId": "value_capture_card"
+    },
+    "payload": {
+      "case": "Codex 写完代码后，Claude 进行 review，Codex 自己运行 Playwright 做端到端测试，作者最后人工验收并关闭 issue",
+      "confidence": "medium",
+      "evidence": "网页原文中明确列出：“claude review”“codex 自己跑 playwright 做 e2e 测试”“我自己验收，关 issue”。",
+      "method": "引入 AI review 与自动化 E2E 测试，再由人做最终验收",
+      "problem": "AI 生成代码需要质量控制，不能直接信任生成结果",
+      "tool": "Claude, Codex, Playwright"
+    },
+    "sourceDigestSessionIds": [],
+    "sourceMessageIds": [
+      "msg_1775198883062_prm9jc2xv",
+      "summary_template_1774403312933_1775198883063",
+      "msg_1775198912969_9ctfgbpn4",
+      "summary_template_1773227348442_1775198912969",
+      "msg_1775199909757_4j2hvzph1",
+      "msg_1775199909757_uvfy6l12g",
+      "msg_1775199909758_p0yra7b9e"
+    ],
+    "sourceSessionIds": [
+      "1775198883093_bq6b8uup"
+    ],
+    "sourceTemplateIds": [
+      "value_capture_card",
+      "template_1774403312933",
+      "template_1773227348442"
+    ],
+    "status": "draft"
+  },
+  "payloadHash": "sha256:6c71b681a27e7d139753c583e2032e245f4911548b2e3712ddd439ebe86f5bec",
+  "refs": {},
+  "revisionId": "sha256:b1dd5945a017e482261587452812ba08c3543942a110c66a61c4b61575b1046d",
+  "schemaVersion": 1,
+  "updatedAt": 1781745515839
+}

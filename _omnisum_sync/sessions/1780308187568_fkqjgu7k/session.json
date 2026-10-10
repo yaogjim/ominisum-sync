@@ -1,0 +1,65 @@
+{
+  "createdAt": 1780308187568,
+  "entityType": "session",
+  "id": "1780308187568_fkqjgu7k",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确有兴趣，可直接查看 hitch 的 GitHub 仓库",
+      "无需保存该推文本身"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780308344087,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "cmux与hitch终端工作流",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量极低，仅提供工具名称和安装提示，无法形成可复用知识或长期参考材料。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "hitch-cli 可通过 npm 全局安装",
+      "hitch 与 cmux 可能用于终端代理工作流"
+    ],
+    "oneHighValuePoint": "hitch 是一个可让代理使用终端的 CLI 工具，可通过 npm install -g hitch-cli 安装。",
+    "oneLineReview": "只能作为工具线索，不值得作为知识内容保留。",
+    "primaryCategory": "开发工具",
+    "rating": "E",
+    "rejectReason": "内容主要是一条简短社交媒体动态，缺少具体流程、案例、原理说明和有效论证，回复区大量无关广告，参考价值很低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "终端工具",
+      "工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该内容是一条关于作者使用 cmux 与 hitch 工作流的简短推文，回复中补充 hitch 可让代理使用终端，并给出 npm 安装方式和 GitHub 链接，但整体缺少详细说明。",
+    "tags": [
+      "cmux",
+      "hitch",
+      "CLI",
+      "终端",
+      "Twitter"
+    ],
+    "title": "Max Katz: nothing beats my `cmux` + `hitch` workflow",
+    "totalScore": 24.5,
+    "url": "https://x.com/maxktz/status/2059989414252597400"
+  },
+  "payloadHash": "sha256:60256898b7198be4f18173e01c4794c119f3d36c2f8e6526a6bbe141c1267b09",
+  "refs": {},
+  "revisionId": "sha256:2961c89ccf46d64c026c5c5bab94e877e2fe2d988d574997c4990683f6e40852",
+  "schemaVersion": 1,
+  "updatedAt": 1780308344332
+}

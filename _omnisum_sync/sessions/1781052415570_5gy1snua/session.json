@@ -1,0 +1,66 @@
+{
+  "createdAt": 1781052415570,
+  "entityType": "session",
+  "id": "1781052415570_5gy1snua",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 Claude Design 或 Cursor Design，可尝试安装 baoyu-design",
+      "查看 GitHub PR #5 了解具体变更"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781052437091,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "baoyu-design导入设计系统",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "仅适合对 baoyu-design 或 Claude Design 正在使用者临时参考，长期知识价值较低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "baoyu-design skill 新增 Design System 导入支持",
+      "可通过 npx skills add JimLiu/baoyu-design 安装使用",
+      "功能保留了 Claude Design 原有导入和编译设计系统的方式"
+    ],
+    "oneHighValuePoint": "baoyu-design 已支持通过 npx skills add 安装，并可导入已有 Design System。",
+    "oneLineReview": "适合关注该工具的人快速了解更新，但不值得长期保存。",
+    "primaryCategory": "AI设计工具",
+    "rating": "D",
+    "rejectReason": "内容主要是功能发布动态，信息量有限，缺少实现细节、方法论和可复用经验。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Design System",
+      "开发工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该推文介绍 baoyu-design skill 新增导入 Design System 功能，并提供 PR 链接和安装命令。内容偏产品动态，包含少量使用入口，但缺乏详细教程、技术实现和案例分析。",
+    "tags": [
+      "baoyu-design",
+      "Claude Design",
+      "Design System",
+      "Cursor",
+      "Skill"
+    ],
+    "title": "宝玉: baoyu-design skill 现在支持导入 Design System，以及在新建项目时添加导入的 Design System 比我想的要麻烦的多：ht…",
+    "totalScore": 36.5,
+    "url": "https://x.com/dotey/status/2064182459718091202"
+  },
+  "payloadHash": "sha256:6776d7bdabff1794bfb4279a5ef7125506a0253df31844aab10553bbf5015ae0",
+  "refs": {},
+  "revisionId": "sha256:2bec52a1418b84df79fd1bddfef692634c7a4153271b308790efc60c6693bde0",
+  "schemaVersion": 1,
+  "updatedAt": 1781052437441
+}

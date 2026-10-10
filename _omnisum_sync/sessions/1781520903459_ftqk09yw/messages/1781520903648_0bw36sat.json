@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781520879437,
+  "entityType": "message",
+  "id": "1781520903648_0bw36sat",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Synara：类 Codex 的编程 GUI 工具\n\n## 核心概述\n\nSynara 是一款编程 GUI 工具，界面和使用体验高度类似 Codex，因此上手门槛很低，适合已经熟悉 AI 编程工具的用户快速迁移使用。\n\n## 主要特点\n\n- **界面类似 Codex**：操作逻辑接近，学习成本低。\n- **支持多种 Coding Agent**：目前支持 8 个常见编程 Agent，例如 Pi、Claude Code、OpenCode 等。\n- **可搭配 Deepseek 使用**：作者用 Pi + Deepseek 进行了测试，体验不错。\n- **新增看板模式**：适合以任务流、项目管理方式组织 AI 编程工作。\n\n## v0.1.9 更新亮点\n\n- 推出 **看板视图 Beta**\n- 增加聊天专用工作区文件夹，用于存放生成文件\n- 工作区编辑器支持仅搜索文件\n- 新增 UI 密度设置，可调整侧边栏和输入区间距\n- 设置页打开更快，流式渲染更少，体验更流畅\n\n## 产品判断\n\nSynara 的定位更像是一个面向开发者的 AI 编程工作台，通过整合多个 Coding Agent 和熟悉的 Codex 式交互，降低用户切换成本。看板模式的加入，也让它不只是聊天式编程工具，而开始向“AI 编程项目管理平台”演进。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781520879437,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:de9155d24bc67edbcd956ac97ef7a9346c9a947aeb3d3114cd1da3e7aeafada8",
+  "refs": {
+    "sessionId": "1781520903459_ftqk09yw"
+  },
+  "revisionId": "sha256:d407119f977c15a5544d1ea17f2e7f9970da8168c05b78ce3a75487ccec91ba8",
+  "schemaVersion": 1,
+  "updatedAt": 1781520879437
+}

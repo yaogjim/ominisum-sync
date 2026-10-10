@@ -1,0 +1,87 @@
+{
+  "createdAt": 1780471180728,
+  "entityType": "session",
+  "id": "1780471180728_w60ikyg4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看earendil-works/pi主仓库，验证其核心模块和扩展机制",
+      "对比Pi Agent、Claude Code、Codex CLI在本地代码库改造中的上下文管理能力",
+      "尝试为一个现有项目配置AGENTS.md、skills和prompt templates",
+      "评估session tree和compaction机制是否适合长期coding session管理"
+    ],
+    "archiveReason": "对Pi Agent的定位、核心能力、适用与不适用场景有较清晰概括，可作为后续调研入口",
+    "byline": "烟花老师",
+    "classifiedAt": 1780615531481,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Pi Agent定位与适用场景",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 600,
+        "id": "img-5",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HJ0BhcVa4AAfgjs?format=jpg&name=900x900",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HJ0BhcVa4AAfgjs?format=jpg&name=900x900",
+        "width": 900
+      }
+    ],
+    "knowledgePoints": [
+      "Pi Agent更适合作为可自定义的本地coding agent harness，而不是企业级业务流程Agent框架",
+      "其关键能力包括AGENTS.md、SYSTEM.md、skills、prompt templates、动态context injection和可自定义compaction",
+      "session tree适合代码任务中的分支探索、回滚和长期session管理",
+      "Pi支持interactive、print/JSON、RPC、SDK等多种运行模式，便于终端使用和上层集成",
+      "企业级AI SaaS或结构化业务Agent仍更适合选择OpenAI Agents SDK、LangGraph或Pydantic AI等工具"
+    ],
+    "oneHighValuePoint": "将Pi Agent的核心价值归纳为上下文工程优先，而非通用多Agent编排。",
+    "oneLineReview": "这是一篇有一定参考价值的Pi Agent快速导览，但证据和实测深度不足。",
+    "primaryCategory": "AI Agent开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，用于Agent框架选型和工具调研",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Coding Agent",
+      "开发框架选型"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将Pi Agent定位为极简、可定制的terminal coding agent harness，强调上下文工程、session tree、多运行模式和多模型支持，并对比其与LangGraph、OpenAI Agents SDK等框架的适用场景。",
+    "tags": [
+      "Pi Agent",
+      "coding harness",
+      "上下文工程",
+      "Agent框架",
+      "多模型"
+    ],
+    "title": "烟花老师: Pi Agent = 可定制 coding harness / agent workbench Pi Agent 可以理解成一个极简、可自我改造的 termin…",
+    "totalScore": 68,
+    "url": "https://x.com/teach_fireworks/status/2061804587833786629"
+  },
+  "payloadHash": "sha256:44e9f7cab9337fc025b6127d093b97c3392e4c99eb4a36c352fca428d5df0677",
+  "refs": {},
+  "revisionId": "sha256:9581af7a156e51a75b30aebefc3fd87742ff14f6721d0807f11d9879bb407cc5",
+  "schemaVersion": 1,
+  "updatedAt": 1781173080213
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1780891844268,
+  "entityType": "session",
+  "id": "1780891844268_mc8wuhp8",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在下次 AI 辅助开发前，先写出目标、验收标准、设计方案和执行计划。",
+      "尝试将调研、测试、探索类任务拆给子 Agent，保留主控 Agent 负责关键判断和集成。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780892396759,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 1,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Vibe Coding流程要点",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "vibe coding 前应先经历脑暴、收敛、目标设定、设计和计划阶段，而不是直接编码。",
+      "任务完成标准可以通过评分或具体评测集来定义。",
+      "Agent 协作中应避免消耗主控 Agent 注意力，将探索性任务分派给 Subagent。"
+    ],
+    "oneHighValuePoint": "编码阶段应区分主控 Agent 与 Subagent 的职责，让主控 Agent 专注关键决策，探索、调研和测试交由子 Agent 执行。",
+    "oneLineReview": "这是一个有参考价值但过于简略的 AI 编程流程清单。",
+    "primaryCategory": "AI开发方法",
+    "rating": "C",
+    "rejectReason": "内容过短，仅提供流程提纲，缺少案例、细节、验证标准和具体操作模板，热门回复与正文关联度较低。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent工作流",
+      "软件工程流程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章概述了使用 vibe coding 的简要流程：先发散脑暴，再收敛目标，设定评价标准，完成架构、技术、视觉和交互设计，制定计划，并在编码阶段让主控 Agent 聚焦重点，调研和测试交给 Subagent。",
+    "tags": [
+      "vibe coding",
+      "AI编程",
+      "Subagent",
+      "任务规划",
+      "开发流程"
+    ],
+    "title": "关木: 现在使用 vibe coding 的流程 1",
+    "totalScore": 53,
+    "url": "https://x.com/ZeroZ_JQ/status/2063474975093526939"
+  },
+  "payloadHash": "sha256:42eb1ca08266aedd05dbd6838b49582b7e0045387c3340a119dcc23571e426be",
+  "refs": {},
+  "revisionId": "sha256:f905b7d2d8660eb197a63e4287aba409e77bcf5c695400b3bff5d74b3341b4fb",
+  "schemaVersion": 1,
+  "updatedAt": 1780892397267
+}

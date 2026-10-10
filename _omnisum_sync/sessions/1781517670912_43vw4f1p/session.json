@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781517670912,
+  "entityType": "session",
+  "id": "1781517670912_43vw4f1p",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需实现类似系统，可进一步调研 Cloudflare Sandbox、R2 与 WebSocket 终端集成方案。",
+      "整理在线代码执行环境的安全风险清单，重点关注注入防护和用户数据隔离。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781518640679,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "CCOnline架构要点简述",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "在线 Claude Code 环境可通过 WebSocket 连接仿真终端，实现实时输入输出交互。",
+      "此类系统的复杂点不仅在运行容器，还包括计费、预览、部署和防注入等配套能力。"
+    ],
+    "oneHighValuePoint": "将 Cloudflare Sandbox 定位为临时计算容器，并通过 R2 承载用户生产资料，体现了存算分离思路。",
+    "oneLineReview": "适合作为架构线索速览，但不具备深入学习或长期保存价值。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容较短，仅提供架构关键词和问题清单，缺少完整方案、实现细节和证据支撑。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "云原生架构",
+      "在线编码环境"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "该推文简要讨论 CCOnline 类在线 Claude Code 运行环境的架构，核心包括 WebSocket 终端通信、Cloudflare Sandbox 临时容器、R2 存储用户资料，以及计费、预览、部署和防注入等工程问题。",
+    "tags": [
+      "Claude Code",
+      "Cloudflare Sandbox",
+      "存算分离",
+      "WebSocket",
+      "R2"
+    ],
+    "title": "idoubi: 有意思 你把 CCOnline 的技术架构都拆解完了 我还发啥😂 请求链路大差不差，核心要解决的问题还是存算分离 把 cf sandbox 作为临时使用的容器…",
+    "totalScore": 45,
+    "url": "https://x.com/idoubicc/status/2066336544710148102"
+  },
+  "payloadHash": "sha256:5f3ecc27643fdd85bee49b3b6ddc9b90edb332377dbbe876d2f5d87319253c00",
+  "refs": {},
+  "revisionId": "sha256:15031221a9eb99d6d7c0bf0f6b1243e90298c6fc64e5fa542464e9bea4090070",
+  "schemaVersion": 1,
+  "updatedAt": 1781518641496
+}

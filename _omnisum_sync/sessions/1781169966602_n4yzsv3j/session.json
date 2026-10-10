@@ -1,0 +1,68 @@
+{
+  "createdAt": 1781169966602,
+  "entityType": "session",
+  "id": "1781169966602_n4yzsv3j",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在评估LLM或Agent时记录并比较不同token预算下的性能曲线",
+      "关注模型system card是否披露高推理预算下的能力变化",
+      "对长程任务、高风险部署场景增加高test-time compute测试"
+    ],
+    "archiveReason": "提出了测试时计算会显著影响LLM真实能力评估的关键视角，对理解后续模型评测和安全评估有参考价值",
+    "classifiedAt": 1781170078086,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "测试时计算重塑LLM评估",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "测试时计算资源会显著影响LLM在复杂任务上的表现",
+      "更强模型可能从额外推理计算中获得更陡峭的性能提升曲线",
+      "长horizon任务和Agent能力可能只在高推理预算下显现",
+      "AI安全评估若只使用低inference budget，可能低估真实风险"
+    ],
+    "oneHighValuePoint": "LLM能力评估不应只看单个benchmark分数，而应观察性能随test-time compute增加的完整曲线。",
+    "oneLineReview": "有价值的行业观察，但主要是二手转述，证据展开不足。",
+    "primaryCategory": "人工智能",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合关注大模型评估、Agent和AI安全的人后续查阅",
+    "secondaryCategories": [
+      "大模型评估",
+      "AI安全"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结Noam Brown关于test-time compute的观点：当前单点benchmark低估了LLM真实能力，更强模型能从更多推理计算中获得更大收益，这会影响长程任务、Agent能力和AI安全评估。",
+    "tags": [
+      "LLM",
+      "test-time compute",
+      "benchmark",
+      "AI安全",
+      "Agent"
+    ],
+    "title": "Phoenix Yin: 认真读完了OpenAI 研究员 Noam Brown 今天的长帖，一个被行业严重低估的现实",
+    "totalScore": 69.5,
+    "url": "https://x.com/Phoenixyin13/status/2064239881199477240"
+  },
+  "payloadHash": "sha256:a32571277da0566d7fd087910a58ccf3c3842660c0e049a4d3f4ec3efcddbf23",
+  "refs": {},
+  "revisionId": "sha256:53e847d8da07870aa797da61b1805fa4683a446bfc7aa553b1b98f532ef5dfa4",
+  "schemaVersion": 1,
+  "updatedAt": 1781170188840
+}

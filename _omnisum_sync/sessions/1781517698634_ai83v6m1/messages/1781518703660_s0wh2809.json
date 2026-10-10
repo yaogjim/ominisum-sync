@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781518703661,
+  "entityType": "message",
+  "id": "1781518703660_s0wh2809",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent配置应采用结构化格式\n\n**评级**: C (52.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI工程实践\n**次类别**: Coding Agent, 配置管理\n**标签**: #Agent #Markdown #JSON #YAML #结构化数据\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 一个简短但实用的 Agent 配置设计提醒，价值在于明确 Markdown 与结构化配置的边界。\n**核心高价值点**: 面向 Agent 的配置文件应同时考虑 LLM 可读性与程序可解析性，JSON/YAML 通常优于自由格式 Markdown。\n\n### 摘要\n文章提出在设计 Agent Skill 扩展配置时，Markdown 虽便于 LLM 阅读，但不利于程序解析和格式一致性维护；更推荐使用 JSON 或 YAML 作为可读且可解析的结构化配置格式。\n\n### 知识要点\n- Markdown 适合作为上下文说明，但不适合作为需要稳定解析和保存的配置格式。\n- JSON/YAML 能兼顾 LLM 阅读、代码解析、格式校验和自动化处理。\n\n### 行动项\n- 设计 Agent Skill 或插件扩展配置时，优先使用 JSON/YAML 而非 Markdown。\n- 如必须使用 Markdown，应将可程序解析的配置部分独立为结构化区块或外部配置文件。\n\n### 存档判定\n归档: 否\n不推荐: 内容较短，主要是经验性观点，缺少系统论证和具体实现细节。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1781518703661,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:22bc9e76ea0a802719f205a2ec619407a50637fc848cac6b8262e0097609850e",
+  "refs": {
+    "sessionId": "1781517698634_ai83v6m1"
+  },
+  "revisionId": "sha256:1e39973128c93bb3ce37de6605ec6143623ce7aa8474f281a548493c666e1b14",
+  "schemaVersion": 1,
+  "updatedAt": 1781518703661
+}

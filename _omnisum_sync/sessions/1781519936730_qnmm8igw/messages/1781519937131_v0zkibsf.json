@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781519882201,
+  "entityType": "message",
+  "id": "1781519937131_v0zkibsf",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Helmor 支持 Windows：面向多平台的 GUI Coding Agent 编排工具\n\n## 核心内容\n\n多数 GUI 形态的 Coding Agent 工具目前偏向 **Mac-only**，对 Windows 开发者不够友好。Helmor 宣布已支持 **Windows**，希望补齐这一缺口。\n\n## Helmor 的主要能力\n\n- 支持多个 Coding Agent 并行运行：如 **Claude Code、Codex、Cursor、OpenCode**\n- 提供 **独立 worktree、diff 管理**\n- 可与 **GitHub / GitLab** 顺滑集成\n- 开源、本地优先，不依赖云端\n- 支持自定义模型配置：包括 **DeepSeek、Qwen、中转 API** 等\n- Linux 版本即将推出\n\n## 产品定位\n\nHelmor 是一个用于“编排编码代理”的图形化界面工具，类似 Conductor 的开源、本地优先替代方案，强调：\n\n- 更精致的 GUI 体验\n- 更快的编码代理协作流程\n- 本地运行，无云依赖\n- 帮助开发者管理多个 AI Coding Agent 和工作区\n\n## 市场信号\n\n作者提到 Helmor 有较好的留存表现，说明其产品设计和用户体验得到了一定验证。社区反馈也较积极，部分开发者关注其多平台支持方式和模型服务集成能力。\n\n## 一句话总结\n\nHelmor 正在把 AI Coding Agent 的 GUI 编排工具从 Mac 生态扩展到 Windows，并通过开源、本地优先、多模型支持，降低更多开发者使用 AI 编程工具的门槛。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781519882201,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:eba3faf1ceb2b244423fab252a30ae92ed8168166a23dad554b5dbe6906c0dd8",
+  "refs": {
+    "sessionId": "1781519936730_qnmm8igw"
+  },
+  "revisionId": "sha256:a6a922f752183d267adc0dd1c466b1da949e1e2d535282702508ac413a0907e6",
+  "schemaVersion": 1,
+  "updatedAt": 1781519882201
+}

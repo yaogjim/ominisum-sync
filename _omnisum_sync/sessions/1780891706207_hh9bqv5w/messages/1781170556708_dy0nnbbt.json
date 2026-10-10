@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781170525691,
+  "entityType": "message",
+  "id": "1781170556708_dy0nnbbt",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n作者研究 Claude Design，是因为他摸索出了一套“AI 辅助设计 + AI 辅助开发”的高效开发流程：先用 Claude Design 生成可读、可版本管理的设计稿，再交给 Coding Agent 实现和迭代。后来为了减少网页与本地切换的麻烦，他进一步研究并复刻了 Claude Design 的本地运行方式，做成了可在 Cursor 中使用的 Skill。\n\n---\n\n## 1. 用 Claude Design 先做 App 的 UI / UX 设计\n\n作者的开发流程第一步，是先用 **Claude Design 设计 App 的 UI 和 UX**，而且第一版要尽量简单。\n\nClaude Design 输出的设计稿包含：\n\n- `HTML`\n- `CSS`\n- `React`\n- `data.js / data.jsx`\n\n这些内容相比 Figma 更适合 AI 理解：\n\n- 通过 **CSS** 可以看清颜色系统、尺寸规范等设计系统；\n- 通过 **React** 可以理解组件结构；\n- 通过 **data.js / data.jsx** 可以了解数据结构，这对开发非常重要；\n- 所有内容都是文本格式，可以提交到 **Git** 做版本管理；\n- 后续修改时，可以通过 **git diff** 让 AI 清楚知道设计稿哪里变了。\n\n作者认为，这种“文本化设计稿”比传统设计工具对 AI 更友好。\n\n---\n\n## 2. 把设计稿交给 Claude Opus 4.8 实现 MVP\n\n第二步，是把 Claude Design 生成的设计稿交给 **Claude Opus 4.8**，让它实现一个 MVP。\n\n作者的做法是：\n\n- 第一版只实现 UI 功能；\n- 明确告诉模型技术栈，例如使用 **AppKit** 而不是 SwiftUI；\n- 通过多个小版本逐步迭代；\n- 一开始不要实现太多功能，让 Agent 更容易聚焦。\n\n作者特别提到：\n\n- **Opus 4.8 在 UI 实现上明显优于 GPT**；\n- 同样的设计稿，GPT 容易出现很多细节问题，也不太能严格遵守设计稿；\n- 非 UI 功能方面，不同模型差别没那么大，所以作者也会用 **Codex** 处理非 UI 工作。\n\n他总结出一个经验：  \n**拆分版本、控制每轮功能范围，也是用好 Coding Agent 的关键能力。**\n\n---\n\n## 3. 每个版本都要能运行，靠即时反馈推动迭代\n\n作者强调，每次生成一个版本，都必须让它可以运行。\n\n原因是：\n\n- 无论是人还是 Agent，都需要即时反馈；\n- 只有运行起来，才能判断方向是否正确；\n- 人在测试时可以发现各种问题。\n\n处理问题时，作者会区分两类情况：\n\n### 代码问题\n\n如果是代码问题，就直接让 Agent 修改。\n\n### UI / 设计问题\n\n如果是 UI 设计有问题，作者不会马上改代码，而是：\n\n1. 回到 Claude Design 修改设计稿；\n2. 下载新的设计稿；\n3. 替换本地设计稿文件；\n4. 让 Agent 通过 `git diff` 分析变更；\n5. 再给 Agent 一张截图，让它根据变化修改实现。\n\n这样 Agent 基本不需要太多额外解释，就能理解应该怎么改。\n\n---\n\n## 4. 版本稳定后，先重构优化，再继续加功能\n\n当某一轮设计功能完成后，作者不会马上进入新功能开发，而是会重新审查代码，做重构和优化。\n\n例如：\n\n- 第一版实现后，作者让 **Opus 4.8** 做性能分析；\n- Opus 发现当前使用 `NSScrollView`，当内容变多时会导致内存暴涨；\n- 它建议改用 `NSTableView`。\n\n作者调侃说，这种问题本来应该一开始就考虑到，但“亡羊补牢也不算晚”。\n\n优化完成后，再进入下一轮：\n\n- 增加新功能；\n- 更新设计稿；\n- 让 Agent 参考新设计稿继续优化实现。\n\n---\n\n## 5. 为什么开始深入研究 Claude Design\n\n在反复使用 Claude Design 的过程中，作者发现一个很烦的问题：\n\n- 需要在本地开发环境和 Claude Design 网页之间来回切换；\n- 每次修改设计稿都要导出、下载、解压、替换本地文件。\n\n于是他开始思考：  \n**能不能把 Claude Design 的能力直接集成到本地 Agent 中？**\n\n经过研究后，他发现 Claude Design 完全可以在本地跑起来，只是存在两个问题：\n\n- 本地 Agent 的工具调用方式和 Claude Design 有差异；\n- 不方便像网页里那样直接在设计稿上标记和编辑。\n\n---\n\n## 6. Codex 和 Cursor 的新功能带来了解法\n\n后来 Codex 发布了直接调试 iOS 的功能，并带有“标记修改”的能力。作者认为，这可以部分替代 Claude Design 的标记编辑能力。\n\n但问题是：\n\n- GPT 5.5 的设计能力不够强；\n- 在 Codex 中做设计，效果并不好。\n\n之后 Cursor 也发布了网页标记功能，这刚好满足作者需求：\n\n- Cursor 里可以使用 **Opus 4.8**；\n- 可以做成 Skill 在本地运行；\n- 可以在 Cursor 内置浏览器中直接标记、评论、修改。\n\n这让作者找到了把 Claude Design 本地化的可行方案。\n\n---\n\n## 7. 作者如何复刻 Claude Design 的本地能力\n\n作者发现，Claude Design 的核心逻辑很多都在浏览器前端中。\n\nClaude Design 在网页上做了一个 **Harness**，这方便了作者分析其运行机制。通过耐心分析，他提取出了：\n\n- 所有 Prompt；\n- 内置 Skills；\n- 初始组件；\n- 工具调用逻辑。\n\n之后，他针对 Cursor 的工具系统做兼容，就让这套能力在本地跑了起来。\n\n作者测试后认为，本地运行效果和 Claude Design 网页版差不多。\n\n---\n\n## 8. 作者的结论与推荐\n\n作者认为，根本原因还是 **Claude Desktop 太弱**：\n\n> Claude Design 本来就应该集成在 Claude Desktop 里，否则也不需要自己这么折腾。\n\n不过，通过这次折腾，他也深入学习了 Claude Design 的优秀设计，并认为它“真的很棒”。后续他计划继续分享相关学习心得。\n\n最后，作者推荐大家尝试他做的本地 Skill：\n\n- GitHub 项目：<https://github.com/jimliu/baoyu-design>\n\n---\n\n## 9. 回复中的补充观点：Claude Design 需要 Design System\n\n作者在回复中补充了一个关键前提：\n\n> Claude Design 很重要的前提是：你要有自己的 Design System。\n\n如果已经有成熟的设计系统，那么：\n\n- UI 规范已经在 Design System 中定义好了；\n- Claude Design 不需要从零设计大量 UI；\n- 使用者可以更多关注 **UX 流程设计**，而不是 UI 细节。\n\n作者认为，这才是使用 Claude Design 更正确的方向。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781170525691,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:528cb2b0532722f352a5d4db09d755e0fd6fbe8fe6d448a376628bd6966a30e1",
+  "refs": {
+    "sessionId": "1780891706207_hh9bqv5w"
+  },
+  "revisionId": "sha256:514614fe06eaa5591db56ae112bf67e74b0497ff0e218799816ad9c32af46405",
+  "schemaVersion": 1,
+  "updatedAt": 1781170525691
+}

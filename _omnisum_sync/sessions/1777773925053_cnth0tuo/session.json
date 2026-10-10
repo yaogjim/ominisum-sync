@@ -1,0 +1,65 @@
+{
+  "createdAt": 1777773925053,
+  "entityType": "session",
+  "id": "1777773925053_cnth0tuo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注乳腺癌筛查，应查阅权威机构指南或咨询乳腺专科医生。",
+      "不要依据该帖自行取消或替代已建议的筛查方案。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1777774084480,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 3,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 3,
+      "transferability": 1
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "乳腺X线筛查争议帖",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "医学论断高度绝对化，未提供具体研究链接、统计口径和适用人群说明，可能误导读者放弃正规乳腺癌筛查。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "医学筛查需要评估获益、假阳性、过度诊断、辐射风险和人群适用性。",
+      "健康医疗建议应优先参考权威指南、系统综述和专业医生意见，而非单条社交媒体内容。"
+    ],
+    "oneHighValuePoint": "提醒读者关注医学筛查中的过度诊断和风险收益权衡，但文章本身未能可靠论证。",
+    "oneLineReview": "这是一个证据薄弱且可能造成医疗误导的社交媒体健康帖，不建议保留。",
+    "primaryCategory": "健康医疗",
+    "rating": "E",
+    "rejectReason": "内容以耸动结论为主，缺少可核验出处和严谨数据解释，存在误导医疗决策的风险。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "医学科普",
+      "公共卫生"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章声称乳房X线筛查会导致健康女性死于乳腺癌，并主张用超声和热成像替代。但全文缺少可靠引用、数据来源和医学适用条件，表达夸张，存在明显健康误导风险。",
+    "tags": [
+      "乳腺癌筛查",
+      "X线摄影",
+      "医疗争议",
+      "低证据内容",
+      "健康谣言风险"
+    ],
+    "title": "墓碑科技: 每做一万次乳房X线筛查，就会有8个原本健康的女性死于乳腺癌",
+    "totalScore": 17,
+    "url": "https://x.com/mubeitech/status/2049265893633327147"
+  },
+  "payloadHash": "sha256:0f741c9353941dd1fae47d54aa9b49105e4a2a89e8d5ddae95804a77a0a2fd67",
+  "refs": {},
+  "revisionId": "sha256:1e36eee911507ab6d6062c3b11e49a6b016906244cb2bf974508685b393e4336",
+  "schemaVersion": 1,
+  "updatedAt": 1777774368729
+}

@@ -1,0 +1,18 @@
+{
+  "createdAt": 1776930540215,
+  "entityType": "message",
+  "id": "msg_1776930540215_b0fz64u02",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "我配置了自己的域名，发送：“curl -k https://yao.xxx.com/v1/responses \\\n  -H \"Authorization: Bearer sk-dddd\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"model\": \"gpt-5.4\",\n    \"input\": \"讲个笑话\"\n  }'”，得到如下内容：“{\"level\":20,\"time\":1776930367761,\"pid\":14827,\"hostname\":\"yaogjimdeMac-mini.local\",\"reqId\":\"req-10\",\"translatedChatRequest\":{\"model\":\"gpt-5.4\",\"messages\":[{\"role\":\"user\",\"content\":\"讲个笑话\"}],\"parallel_tool_calls\":true,\"reasoning_effort\":\"xhigh\",\"store\":false,\"stream\":false},\"msg\":\"translated request to chat completions payload\"}\n{\"level\":20,\"time\":1776930367761,\"pid\":14827,\"hostname\":\"yaogjimdeMac-mini.local\",\"upstreamUrl\":\"https://subtp7eu3nc8.tokenclub.top/v1/chat/completions\",\"hasAuthorization\":true,\"request\":{\"model\":\"gpt-5.4\",\"messages\":[{\"role\":\"user\",\"content\":\"讲个笑话\"}],\"parallel_tool_calls\":true,\"reasoning_effort\":\"xhigh\",\"store\":false,\"stream\":false},\"msg\":\"forwarding translated chat completion request upstream\"}\n{\"level\":40,\"time\":1776930368940,\"pid\":14827,\"hostname\":\"yaogjimdeMac-mini.local\",\"reqId\":\"req-10\",\"upstreamStatus\":503,\"msg\":\"upstream returned non-success status\"}\n{\"level\":40,\"time\":1776930368940,\"pid\":14827,\"hostname\":\"yaogjimdeMac-mini.local\",\"reqId\":\"req-10\",\"upstreamStatus\":503,\"upstreamContentType\":\"application/json; charset=utf-8\",\"upstreamBody\":\"{\\\"error\\\":{\\\"message\\\":\\\"Service temporarily unavailable\\\",\\\"type\\\":\\\"api_error\\\"}}\",\"msg\":\"relaying upstream error response\"}\n{\"level\":30,\"time\":1776930368940,\"pid\":14827,\"hostname\":\"yaogjimdeMac-mini.local\",\"reqId\":\"req-10\",\"requestId\":\"req-10\",\"method\":\"POST\",\"url\":\"/v1/responses\",\"statusCode\":503,\"responseContentType\":\"application/json; charset=utf-8\",\"msg\":\"completed request\"}\n{\"level\":30,\"time\":1776930368940,\"pid\":14827,\"hostname\":\"yaogjimdeMac-mini.local\",\"reqId\":\"req-10\",\"res\":{\"statusCode\":503},\"responseTime\":1179.7624170780182,\"msg\":\"request completed\"}”",
+    "role": "user",
+    "timestamp": 1776930540215
+  },
+  "payloadHash": "sha256:38837f7e1c2c9a28905527d815e82ccdd6cf4424e3c6b4786c19dca60ef4f29d",
+  "refs": {
+    "sessionId": "1776928074311_2uomfqnu"
+  },
+  "revisionId": "sha256:7712ba90a6088faeee05d5d49c76f4349c1a0bf038492c63b619e5bd8210f041",
+  "schemaVersion": 1,
+  "updatedAt": 1776930540215
+}

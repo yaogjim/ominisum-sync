@@ -1,0 +1,18 @@
+{
+  "createdAt": 1776928348081,
+  "entityType": "message",
+  "id": "msg_1776928348081_q5vm1vqy6",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "我在本地启动了 codex-to-curse 服务后，在 cursor 中配置了 本地 服务地址http://192.168.8.222:3060/v1，在 cursor 中执行的时候出现错误：“Request failed with status code 400: {\"error\":{\"type\":\"client\",\"reason\":\"ssrf_blocked\",\"message\":\"connection to private IP is blocked\",\"retryable\":false}}”",
+    "role": "user",
+    "timestamp": 1776928348081
+  },
+  "payloadHash": "sha256:512d1212fe189501edd1da00ffb4c64bf29dc219763aade884dd17cd2e0d2496",
+  "refs": {
+    "sessionId": "1776928074311_2uomfqnu"
+  },
+  "revisionId": "sha256:544d3448a29d006bba8c8e178d586633eb475215648fef7b9f2197ead01f8a38",
+  "schemaVersion": 1,
+  "updatedAt": 1776928348081
+}

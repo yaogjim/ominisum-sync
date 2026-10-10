@@ -1,0 +1,19 @@
+{
+  "createdAt": 1773227148959,
+  "entityType": "message",
+  "id": "msg_1773227148958_w9rlkcmak",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "下面是一份**精炼版 Impeccable 最佳实践**，适合直接照着用。\n\n---\n\n# Impeccable 最佳实践\n\n## 1. 先做一次初始化\n首次在项目里使用时，先执行：\n\n- `/teach-impeccable`\n\n目的：\n- 让 AI 了解你的品牌、产品类型、用户、已有设计风格\n- 避免后续每次都从 “通用模板审美” 开始\n\n**建议提供的信息：**\n- 品牌气质：专业 / 极简 / 年轻 / 高端\n- 目标用户：C 端 / B 端 / 内部系统\n- 参考产品：你喜欢和不喜欢的案例\n- 技术约束：组件库、设计系统、是否要兼容深色模式\n\n---\n\n## 2. 不要一上来就`/polish`\n很多人会直接要求 “美化一下”，这通常效果一般。  \n**更好的顺序是：**\n\n1. `/audit` —— 先找问题  \n2. `/normalize` —— 统一设计系统  \n3. `/distill` —— 去掉冗余  \n4. `/polish` —— 最后润色\n\n这个流程比直接 polish 更稳定。\n\n---\n\n## 3. 用 “小范围命令”，不要总是改全站\n优先聚焦具体模块，而不是整页一起改。\n\n例如：\n- `/audit header`\n- `/polish checkout-form`\n- `/clarify empty-state`\n- `/animate onboarding`\n\n**好处：**\n- 改动更可控\n- 更容易回滚\n- 不会把原本正常的区域一起改坏\n\n---\n\n## 4. 一次只追求一个目标\n不要在一条命令里同时要求：\n- 更高级\n- 更活泼\n- 更极简\n- 更有品牌感\n- 还要提升转化\n\n这样容易让结果冲突。  \n**最佳做法：单轮只解决一个核心问题。**\n\n例如：\n- 先`/distill`，减少复杂度\n- 再`/colorize`，增加品牌识别\n- 最后`/polish`，统一细节\n\n---\n\n## 5. 把它当 “设计评审器”，不只是 “美化器”\nImpeccable 最强的地方，不只是生成样式，而是**指出问题**。\n\n优先多用：\n- `/audit`：查无障碍、性能、响应式问题\n- `/critique`：看层级、清晰度、情绪表达\n- `/clarify`：优化按钮、提示、报错文案\n- `/harden`：补齐异常、边界状态、i18n\n\n这比单纯 “做得更好看” 更有价值。\n\n---\n\n## 6. 先收敛，再增强\n如果当前页面已经很乱，先用：\n\n- `/normalize`\n- `/distill`\n\n等结构、样式、信息层级稳定后，再考虑：\n\n- `/animate`\n- `/colorize`\n- `/delight`\n- `/bolder`\n\n**原则：**  \n先解决秩序，再追求惊艳。\n\n---\n\n## 7. 明确约束，避免 AI 回到俗套设计\nImpeccable 的价值之一是帮助你避开常见 AI 审美套路。  \n在提示里最好主动补充约束，例如：\n\n- 不要卡片套卡片\n- 不要用过度流行的默认字体\n- 不要灰字压在彩色背景上\n- 不要纯黑纯灰\n- 不要过时的弹跳动效\n\n这样能进一步减少 “模板味”。\n\n---\n\n## 8. 动效只在有意义时使用\n使用`/animate`时，不要只说 “加点动画”。  \n最好说明动画的目的：\n\n- 引导注意力\n- 提示状态变化\n- 改善加载体验\n- 让 onboarding 更自然\n\n**原则：**  \n动效应该服务理解，而不是炫技。\n\n---\n\n## 9. 文案问题优先用`/clarify`\n如果问题本质是 “用户看不懂”，优先不要改视觉，先改文案。\n\n适合场景：\n- 按钮不知道点了会发生什么\n- 错误提示太技术化\n- 空状态太冷淡\n- 表单说明不明确\n\n视觉不能替代清晰表达。\n\n---\n\n## 10. 发布前固定跑一遍 “四件套”\n上线前建议固定执行：\n\n- `/audit`\n- `/harden`\n- `/adapt`\n- `/polish`\n\n分别确保：\n- 技术质量没问题\n- 异常和边界情况完善\n- 多设备体验正常\n- 视觉细节收尾完成\n\n---\n\n# 推荐工作流\n\n## 场景一：新页面设计\n1. `/teach-impeccable`\n2. `/critique`\n3. `/normalize`\n4. `/distill`\n5. `/colorize`\n6. `/polish`\n\n## 场景二：老页面改版\n1. `/audit`\n2. `/critique`\n3. `/distill`\n4. `/extract`\n5. `/adapt`\n6. `/polish`\n\n## 场景三：上线前检查\n1. `/audit`\n2. `/harden`\n3. `/clarify`\n4. `/adapt`\n5. `/polish`\n\n---\n\n# 一句话原则\n**先诊断，再收敛，后增强，最后润色。**\n\n如果你愿意，我还可以继续给你整理一份：  \n**“适合日常复制粘贴的 Impeccable 命令模板清单”**。",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1773227148959
+  },
+  "payloadHash": "sha256:6c5c1e5adbae8c63ea40eadd65f0e2dd2a6538bd3f6c88f766d943d536297d5f",
+  "refs": {
+    "sessionId": "1773226637518_58qkupcv"
+  },
+  "revisionId": "sha256:8700c0276aa2087d6103209b90cca63355038ceee61789133eb3da945f02979a",
+  "schemaVersion": 1,
+  "updatedAt": 1773227148959
+}

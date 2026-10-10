@@ -1,0 +1,40 @@
+{
+  "createdAt": 1781745446013,
+  "entityType": "knowledge-asset",
+  "id": "hi_asset_1781745446013_7d7jpl8y",
+  "parentRevisionIds": [],
+  "payload": {
+    "assetType": "graph_edge",
+    "clusterId": "ai_agent_engineering",
+    "generator": {
+      "finishReason": "stop",
+      "generatedAt": 1781745446007,
+      "templateId": "value_capture_card"
+    },
+    "payload": {
+      "case": "P0-11 core artifact 与 P0-5 adapter artifact 仍是 standalone run artifacts，不是统一持久仓库包。",
+      "confidence": "medium",
+      "evidence": "风险项多次记录：前序产物多次标注为 standalone artifact，当前 runtime 或正式产品化前仍有统一包结构/持久仓库落位风险。",
+      "method": "在 release gate 中保留 residual risk，不让 standalone artifact 的临时可运行性掩盖长期落位风险。",
+      "problem": "standalone artifact 与统一持久仓库包结构不一致，可能影响正式产品化和复现性。",
+      "tool": "P0-5 adapter artifact、P0-11 core artifact、runtime smoke、test matrix"
+    },
+    "sourceDigestSessionIds": [],
+    "sourceMessageIds": [
+      "1781664368193_zjquzoov",
+      "1781664368564_ywi5kpxf"
+    ],
+    "sourceSessionIds": [
+      "1781664344486_yu57uv3j"
+    ],
+    "sourceTemplateIds": [
+      "value_capture_card"
+    ],
+    "status": "draft"
+  },
+  "payloadHash": "sha256:eb64ae4aa04dd4886044a1fb61cc817ac5254d0326a1d9dca62eb0857c0e846a",
+  "refs": {},
+  "revisionId": "sha256:94d79c1f7e119361a9a689bfdaad31214ba6c1f73076b0a6a8cf18fc8d108bf7",
+  "schemaVersion": 1,
+  "updatedAt": 1781745446013
+}

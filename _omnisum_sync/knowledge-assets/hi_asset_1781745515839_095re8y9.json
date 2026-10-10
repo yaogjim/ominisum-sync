@@ -1,0 +1,47 @@
+{
+  "createdAt": 1781745515839,
+  "entityType": "knowledge-asset",
+  "id": "hi_asset_1781745515839_095re8y9",
+  "parentRevisionIds": [],
+  "payload": {
+    "assetType": "graph_edge",
+    "clusterId": "ai_agent_engineering",
+    "generator": {
+      "finishReason": "stop",
+      "generatedAt": 1781745515838,
+      "templateId": "value_capture_card"
+    },
+    "payload": {
+      "case": "作者先做前端 + mock 数据，并通过与 AI 一点一点沟通直到前端满意",
+      "confidence": "medium",
+      "evidence": "网页原文中提到：“先前端 + mock 数据（claude + gemini）”。作者回复中说：“我一点一点和 AI 沟通直到对前端满意”。",
+      "method": "采用 mock 数据先行的前端原型流程，通过多轮对话逐步收敛 UI 与交互，再进入代码实现阶段",
+      "problem": "前端满意度难以一次生成，需要持续交互和迭代",
+      "tool": "Claude, Gemini"
+    },
+    "sourceDigestSessionIds": [],
+    "sourceMessageIds": [
+      "msg_1775198883062_prm9jc2xv",
+      "summary_template_1774403312933_1775198883063",
+      "msg_1775198912969_9ctfgbpn4",
+      "summary_template_1773227348442_1775198912969",
+      "msg_1775199909757_4j2hvzph1",
+      "msg_1775199909757_uvfy6l12g",
+      "msg_1775199909758_p0yra7b9e"
+    ],
+    "sourceSessionIds": [
+      "1775198883093_bq6b8uup"
+    ],
+    "sourceTemplateIds": [
+      "value_capture_card",
+      "template_1774403312933",
+      "template_1773227348442"
+    ],
+    "status": "draft"
+  },
+  "payloadHash": "sha256:9437f95449720e67804d6d6a71af9bba4bc286298f3c198a10cfc0688a781552",
+  "refs": {},
+  "revisionId": "sha256:bb51f35e19e7c6401729f286d21bb631f4afa73e11cb6d295b7c938d033d4320",
+  "schemaVersion": 1,
+  "updatedAt": 1781745515839
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1781599222648,
+  "entityType": "session",
+  "id": "1781599222648_v02f9zi6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将该模板改写并加入个人AI辅助开发提示词库",
+      "在下一次AI辅助重构或新功能开发中测试该提示模板",
+      "为自己的项目明确生产级完成标准和端到端测试要求"
+    ],
+    "archiveReason": "包含一个可直接复用的编码代理目标提示模板，对AI辅助开发流程有一定参考价值",
+    "classifiedAt": 1781599564230,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "编码代理目标提示模板",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI编码代理提示词应明确目标、验收标准、测试方式和进度记录要求",
+      "大型重构任务可先创建独立工作树，降低对当前分支的风险",
+      "不要硬编码进度文件路径，应让代理根据项目结构自行选择合适位置"
+    ],
+    "oneHighValuePoint": "将“完成”定义为生产级、真实用户可用，并要求代理在每个有意义步骤后进行端到端测试和记录。",
+    "oneLineReview": "短小但实用的AI编码代理提示词，可操作性较强但证据和系统性不足。",
+    "primaryCategory": "AI辅助开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考，可提炼进个人提示词库后删除原文",
+    "secondaryCategories": [
+      "提示词工程",
+      "软件工程流程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享了一个用于AI编码代理的目标提示模板，强调持续推进到生产级标准、每个关键步骤进行真实场景端到端测试、自动审查并记录进度，并建议大型重构前创建工作树。",
+    "tags": [
+      "AI Agent",
+      "Prompt Template",
+      "端到端测试",
+      "代码重构",
+      "开发流程"
+    ],
+    "title": "Vox: sharing a goal prompt template i use for everything",
+    "totalScore": 58,
+    "url": "https://x.com/Voxyz_ai/status/2066588797543100816"
+  },
+  "payloadHash": "sha256:8f333e483a460b0790ca1a492c4e80518e3c5fc48d8929fa8874a43eef5c9127",
+  "refs": {},
+  "revisionId": "sha256:c40890c4a96c93534f89e7dfa6272c23f003f5012071c65d1e22cd06d911bb00",
+  "schemaVersion": 1,
+  "updatedAt": 1781600310275
+}

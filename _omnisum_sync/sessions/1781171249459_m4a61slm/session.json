@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781171249459,
+  "entityType": "session",
+  "id": "1781171249459_m4a61slm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在做 Cloudflare Worker 部署，可单独调研 vinext 的官方文档和基准测试",
+      "等待作者后续发布设计思路和实践技巧后再判断是否值得深入研究"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781171352317,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "ShipAny Next性能宣传",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "缺乏证据支撑和实践细节，主要为推广性质，长期参考价值有限。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "vinext 是 Cloudflare 官方较新的部署适配器，使用 Vite 构建",
+      "不同 Next.js Cloudflare 部署适配器可能带来明显性能差异"
+    ],
+    "oneHighValuePoint": "指出 ShipAny 三代 Cloudflare 部署分别使用 next-on-pages、open-next、vinext，反映了适配器演进方向。",
+    "oneLineReview": "有少量工具选型信息，但整体偏营销，缺乏实证和方法论。",
+    "primaryCategory": "开发工具",
+    "rating": "D",
+    "rejectReason": "内容主要是产品宣传，缺少性能测试数据、实现细节和可复用方法论，信息价值较低。",
+    "retentionDecision": "建议立即删除，除非正在评估 ShipAny 或 Cloudflare Worker 部署方案",
+    "secondaryCategories": [
+      "Cloudflare部署",
+      "产品推广"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章称 ShipAny Next 使用 Cloudflare 官方 vinext 适配器，通过 Vite 构建后在 Cloudflare Worker 上比前两代快十几倍，并预告后续发布与设计思路分享，但当前内容主要是宣传。",
+    "tags": [
+      "ShipAny",
+      "Cloudflare Worker",
+      "vinext",
+      "Next.js",
+      "产品宣传"
+    ],
+    "title": "x.com/idoubicc/status/2062521838220292276",
+    "totalScore": 25.5,
+    "url": "https://x.com/idoubicc/status/2062521838220292276"
+  },
+  "payloadHash": "sha256:00ed05e2c4851c732301f2481f36f0cae2313840056789564a7021d22f69eae2",
+  "refs": {},
+  "revisionId": "sha256:5bf9afd74a703d1de841dc4dc24d412fb88ffb5433ca16bf572830823688e687",
+  "schemaVersion": 1,
+  "updatedAt": 1781171352545
+}

@@ -1,0 +1,94 @@
+{
+  "createdAt": 1781152797376,
+  "entityType": "session",
+  "id": "1781152797376_qxr23136",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如已使用 ChatGPT Plus/Pro/Team 和 Codex CLI，可尝试安装该工具并测试本地命令行生图。",
+      "仅将其用于个人或内部低频工作流，不要依赖它构建公开服务或长期生产能力。",
+      "若需要稳定 API、明确计费、透明背景或高质量控制，应改用 OpenAI 官方图片生成 API。"
+    ],
+    "archiveReason": "提供了一个可直接使用的 ChatGPT 订阅生图 CLI 工具及其安装、参数、限制和内部调用机制说明，适合在需要本地或 Agent 生图能力时查阅。",
+    "classifiedAt": 1781173425454,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "ChatGPT订阅命令行生图工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1781152839383,
+        "imageId": "img-4",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# 一、深度总结\n\n## 1. 这个项目是什么？\n\n`chatgpt-imagegen`是一个**零依赖 Python 命令行工具**，可以让用户直接用自己的**ChatGPT Plus / Pro / Team 订阅**生成图片。\n\n它的核心卖点是：\n\n> 不需要`OPENAI_API_KEY`，不走官方 Image API，而是复用 Codex CLI 登录后保存在本地的 OAuth token，调用 ChatGPT 内部的生图接口。\n\n一句话：\n\n> 把 ChatGPT 网页 / 桌面端里的 “生图能力”，包装成了一个可脚本调用的 CLI 工具。\n\n---\n\n## 2. 它解决了什么问题？\n\n官方有两条生图路径：\n\n| 路径 | 付费方式 | 使用方式 |\n|---|---|---|\n| OpenAI API | 按量付费 | 需要`OPENAI_API_KEY` |\n| ChatGPT 订阅 | 月费制 | 通常只能在 ChatGPT / Codex CLI 里用 |\n\n这个项目让第二条路径变得更 “可编程”：\n\n```bash\nchatgpt-imagegen \"a watercolor cat sitting on a windowsill\" -o cat.png\n```\n\n也就是说：\n\n> 你已经为 ChatGPT 订阅付费，就可以把这部分生图额度在命令行、脚本、AI Agent 中使用。\n\n---\n\n## 3. 工作原理\n\n它不是破解，也不是代理服务。\n\n它做了两件事：\n\n1. 读取 Codex CLI 登录后保存的认证信息：\n\n```text\n~/.codex/auth.json\n```\n\n2. 调用 ChatGPT 内部接口：\n\n```text\nhttps://chatgpt.com/backend-api/codex/responses\n```\n\n并使用其中的`image_generation`工具。\n\n返回结果是 SSE 流，最终拿到 base64 图片，再保存为本地文件。\n\n流程简化如下：\n\n```text\ncodex login\n   ↓\n本地保存 OAuth token\n   ↓\nchatgpt-imagegen 读取 token\n   ↓\n调用 ChatGPT 内部生图接口\n   ↓\n接收图片数据\n   ↓\n保存 png /jpeg/webp\n```\n\n---\n\n## 4. 主要特性\n\n- 单文件 Python 脚本\n- 无 pip、无虚拟环境、无服务端\n- 支持命令行调用\n- 支持 AI Agent Skill\n- 支持尺寸参数\n- 支持 png /jpeg/webp\n- 支持并发请求\n- 支持进度输出\n- token 过期后可自动刷新\n\n---\n\n## 5. 主要限制\n\n| 限制 | 说明 |\n|---|---|\n| 非官方公开 API | OpenAI 随时可能改接口 |\n| 无稳定质量控制 | `high quality`不一定被尊重 |\n| 不支持透明背景 | 需要官方 API |\n| 不适合生产服务 | 个人订阅不能拿来服务公众用户 |\n| 不适合大批量生成 | 订阅额度和速率有限 |\n| 不适合商业计费 | 没有 API 那种明确按次计费 |\n\n作者也明确提醒：\n\n> 如果要做正式产品、批量任务、透明背景、质量控制、客户计费，应使用官方 OpenAI Image API。\n\n---\n\n# 二、深入浅出解读\n\n## 1. 可以把它理解成什么？\n\n可以把它理解成：\n\n> 一个 “遥控器”，帮你在命令行里按下 ChatGPT 的生图按钮。\n\n你本来可以在 ChatGPT 里输入：\n\n> 画一只水彩猫\n\n现在可以在终端输入：\n\n```bash\nchatgpt-imagegen \"画一只水彩猫\" -o cat.png\n```\n\n区别是：\n\n- 更方便脚本化\n- 更方便接入 AI Agent\n- 更方便批量生成少量素材\n- 不需要额外 API key\n\n---\n\n## 2. 它适合谁？\n\n适合：\n\n- 已经买了 ChatGPT Plus / Pro / Team 的个人用户\n- 想在本地偶尔生成图片的人\n- 想让 Claude Code、Cursor、Codex Agent 等工具自动生图的人\n- 写 README、文章、Demo、图标、封面时需要快速出图的人\n\n不适合：\n\n- 做 SaaS 生图服务\n- 给大量用户提供图片生成\n- 高频批量生图\n- 对质量、透明背景、计费有强需求的正式业务\n\n---\n\n## 3. 它最有价值的地方\n\n它的价值不在 “模型更强”，而在于：\n\n> 把原本封闭在 ChatGPT 产品里的能力，变成了本地自动化工具链的一部分。\n\n比如：\n\n```text\nAI Agent 写文档\n   ↓\n需要封面图\n   ↓\n自动调用 chatgpt-imagegen\n   ↓\n保存到 assets/banner.png\n   ↓\n自动插入 README\n```\n\n这就是它真正的使用场景。\n\n---\n\n# 三、辩证思考\n\n## 1. 技术上：巧妙，但脆弱\n\n这个项目很聪明：\n\n- 没有自己搭服务器\n- 没有逆向复杂协议\n- 复用 Codex CLI 的登录状态\n- 用很少代码打通了生图链路\n\n但它依赖的是**ChatGPT 内部接口**，不是稳定公开 API。\n\n所以它的技术基础是：\n\n> 可用，但不牢靠。\n\nOpenAI 一旦调整认证、字段、接口路径或权限策略，工具就可能失效。\n\n---\n\n## 2. 成本上：省钱，但不适合规模化\n\n对个人来说，它很划算：\n\n> 既然已经买了 ChatGPT 订阅，偶尔生成图片不必再单独走 API 计费。\n\n但对团队或产品来说，这种方式并不合适：\n\n- 额度不透明\n- 限速不稳定\n- 不方便审计\n- 不方便计费\n- 可能违反服务条款\n\n所以它适合 “个人效率工具”，不适合 “商业基础设施”。\n\n---\n\n## 3. 生态上：推动了 Agent 工具化\n\n这个项目反映了一个趋势：\n\n> AI 能力正在从聊天框，走向命令行、脚本、Agent 和自动化流程。\n\n未来的 AI 使用方式不会只是在网页里对话，而是：\n\n```text\n模型理解任务\n   ↓\n调用工具\n   ↓\n生成文件\n   ↓\n修改项目\n   ↓\n提交结果\n```\n\n`chatgpt-imagegen`正是这个方向上的一个小工具。\n\n---\n\n## 4. 合规上：边界必须清楚\n\n这个工具不是明显恶意，但它处在一个灰色边缘：\n\n- 调用的是内部接口\n- 依赖非公开协议\n- 使用订阅额度进行自动化调用\n- 作者也提醒不要用于公众服务\n\n因此正确姿势是：\n\n> 自用、少量、辅助创作可以；商业化、规模化、对外服务不应使用。\n\n---\n\n# 四、最终判断\n\n## 一句话评价\n\n> `chatgpt-imagegen`是一个聪明、轻量、实用的个人效率工具，把 ChatGPT 订阅生图能力带到了命令行和 AI Agent 中，但它不是稳定 API，也不适合生产服务。\n\n## 推荐使用场景\n\n- 本地偶尔生图\n- AI Agent 自动生成配图\n- README 封面图\n- Demo 素材\n- 图标草稿\n- 个人创作辅助\n\n## 不推荐使用场景\n\n- 商业生图平台\n- 大批量任务\n- 多用户服务\n- 对质量参数强依赖\n- 需要透明背景\n- 需要稳定 SLA 的生产系统\n\n## 核心结论\n\n> 个人用，很香；生产用，不稳。  \n> 自动化，很方便；规模化，请走官方 API。",
+        "url": "https://private-user-images.githubusercontent.com/9278645/593793177-b48b0563-58a3-41ff-a207-f01eafbf2ccb.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODExNTMxMDIsIm5iZiI6MTc4MTE1MjgwMiwicGF0aCI6Ii85Mjc4NjQ1LzU5Mzc5MzE3Ny1iNDhiMDU2My01OGEzLTQxZmYtYTIwNy1mMDFlYWZiZjJjY2IucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDYxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA2MTFUMDQ0MDAyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDRhMTI4MGZiYjZmMzUxMmI0N2I1N2NjYjg5ZTkxMjc2Y2QzOGYwYmU4YjRjYzA1MDFjZjEyZGFjYmNiZTI2NSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.L6YR1eTNqw6rvg7nKGi51g_sRZDrLxtF5IcTKphkVlA",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "image",
+        "caption": "",
+        "height": 870,
+        "id": "img-4",
+        "nearbyText": "chatgpt-imagegen Generate images using your ChatGPT subscription — no OPENAI_API_KEY needed. A tiny, zero-dependency Python CLI (and AI-agent skill) that talks directly to ChatGPT's internal image_generation tool. If you already pay for Cha...",
+        "resolvedUrl": "https://private-user-images.githubusercontent.com/9278645/593793177-b48b0563-58a3-41ff-a207-f01eafbf2ccb.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODExNTMxMDIsIm5iZiI6MTc4MTE1MjgwMiwicGF0aCI6Ii85Mjc4NjQ1LzU5Mzc5MzE3Ny1iNDhiMDU2My01OGEzLTQxZmYtYTIwNy1mMDFlYWZiZjJjY2IucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDYxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA2MTFUMDQ0MDAyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDRhMTI4MGZiYjZmMzUxMmI0N2I1N2NjYjg5ZTkxMjc2Y2QzOGYwYmU4YjRjYzA1MDFjZjEyZGFjYmNiZTI2NSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.L6YR1eTNqw6rvg7nKGi51g_sRZDrLxtF5IcTKphkVlA",
+        "role": "article",
+        "score": 73,
+        "src": "https://private-user-images.githubusercontent.com/9278645/593793177-b48b0563-58a3-41ff-a207-f01eafbf2ccb.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODExNTMxMDIsIm5iZiI6MTc4MTE1MjgwMiwicGF0aCI6Ii85Mjc4NjQ1LzU5Mzc5MzE3Ny1iNDhiMDU2My01OGEzLTQxZmYtYTIwNy1mMDFlYWZiZjJjY2IucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI2MDYxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNjA2MTFUMDQ0MDAyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NDRhMTI4MGZiYjZmMzUxMmI0N2I1N2NjYjg5ZTkxMjc2Y2QzOGYwYmU4YjRjYzA1MDFjZjEyZGFjYmNiZTI2NSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmcmVzcG9uc2UtY29udGVudC10eXBlPWltYWdlJTJGcG5nIn0.L6YR1eTNqw6rvg7nKGi51g_sRZDrLxtF5IcTKphkVlA",
+        "width": 1494
+      }
+    ],
+    "knowledgePoints": [
+      "ChatGPT 订阅生图与 OpenAI 官方图片 API 是两条不同路径，前者使用订阅额度，后者按 API 调用计费。",
+      "该工具通过读取 ~/.codex/auth.json 中的 OAuth token，调用 chatgpt.com/backend-api/codex/responses 内部接口并解析 SSE 返回的 base64 图片。",
+      "订阅路径不适合生产服务、高并发批量生成、透明背景或显式 high quality 控制等需求。"
+    ],
+    "oneHighValuePoint": "揭示并封装了 Codex CLI 使用 ChatGPT 订阅调用内部 image_generation 工具的路径，可直接用于本地脚本和 AI Agent 工作流。",
+    "oneLineReview": "实用性较强的工具型 README，但依赖非公开接口，长期稳定性和合规风险需要谨慎评估。",
+    "primaryCategory": "AI工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "命令行工具",
+      "图像生成"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该项目提供一个零依赖 Python CLI，通过读取 Codex CLI 登录后的 OAuth token，调用 ChatGPT 内部生图接口，实现无需 OpenAI API Key 的命令行生图，并说明了安装、参数、并发、限制、适用场景和风险。",
+    "tags": [
+      "ChatGPT",
+      "CLI",
+      "图像生成",
+      "Codex",
+      "Python"
+    ],
+    "title": "leeguooooo/chatgpt-imagegen: Use your ChatGPT subscription to generate images from the command line — no OPENAI_API_KEY, no gateway, no daemon. Zero-dep Python CLI + AI-agent skill.",
+    "totalScore": 66,
+    "url": "https://github.com/leeguooooo/chatgpt-imagegen"
+  },
+  "payloadHash": "sha256:fab4542637734824285454f1ab9cac9d91fa2a2e5ef6a45d988304254924081f",
+  "refs": {},
+  "revisionId": "sha256:7c9b274f8a53af1f566310878875cc68c4918c478f6144846820102eee7beb83",
+  "schemaVersion": 1,
+  "updatedAt": 1781173723968
+}

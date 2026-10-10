@@ -1,0 +1,47 @@
+{
+  "createdAt": 1781745515839,
+  "entityType": "knowledge-asset",
+  "id": "hi_asset_1781745515839_hqsx3v8z",
+  "parentRevisionIds": [],
+  "payload": {
+    "assetType": "graph_edge",
+    "clusterId": "ai_agent_engineering",
+    "generator": {
+      "finishReason": "stop",
+      "generatedAt": 1781745515838,
+      "templateId": "value_capture_card"
+    },
+    "payload": {
+      "case": "热门回复中有人将当年网页端到移动端转型失败类比今天公司可能因 agentic 化太慢而死亡，并提到 OpenCLI 设计彻底拥抱 AI",
+      "confidence": "medium",
+      "evidence": "热门回复中提到：“当年很多公司因为网页端到移动端转型太慢然后死了。今天的公司，会不会因为agentic化太慢然后导致死亡呢？”以及“OpenCLI 设计彻底拥抱 AI”。",
+      "method": "将开发工具链设计为 AI-native，让 CLI、代码生成、review、测试等环节更适合 agent 自动执行",
+      "problem": "AI 编程工具正在从辅助问答转向 agentic 化开发流程，团队如果转型慢可能失去竞争力",
+      "tool": "OpenCLI, AI Coding Agents"
+    },
+    "sourceDigestSessionIds": [],
+    "sourceMessageIds": [
+      "msg_1775198883062_prm9jc2xv",
+      "summary_template_1774403312933_1775198883063",
+      "msg_1775198912969_9ctfgbpn4",
+      "summary_template_1773227348442_1775198912969",
+      "msg_1775199909757_4j2hvzph1",
+      "msg_1775199909757_uvfy6l12g",
+      "msg_1775199909758_p0yra7b9e"
+    ],
+    "sourceSessionIds": [
+      "1775198883093_bq6b8uup"
+    ],
+    "sourceTemplateIds": [
+      "value_capture_card",
+      "template_1774403312933",
+      "template_1773227348442"
+    ],
+    "status": "draft"
+  },
+  "payloadHash": "sha256:8b88084caf3ad8193bdc7928e1bf65a14a2e3be705ff5cf4f63c4469e4274f53",
+  "refs": {},
+  "revisionId": "sha256:f966811ef9a9f5488b0ab705b796388c9859f15ad3343b664cf6f85aaab6a2c8",
+  "schemaVersion": 1,
+  "updatedAt": 1781745515839
+}

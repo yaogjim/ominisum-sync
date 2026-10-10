@@ -1,0 +1,66 @@
+{
+  "createdAt": 1781660940000,
+  "entityType": "session",
+  "id": "1781660940000_52bvxxyr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 AI 编程代理生成 UI，可尝试安装 npx impeccable 评估其设计检查效果。",
+      "检查项目中是否已有清晰的 DESIGN.md 或设计令牌文档，以便支持类似自动化设计审查流程。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781660959808,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Impeccable3.7设计检查",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Impeccable 3.7 支持从 DESIGN.md 读取排版、调色板、圆角和设计令牌进行项目感知检测。",
+      "Hooks 可集成 Claude、Codex 和 Cursor，在 UI 编辑后提示代理修复设计不一致问题。",
+      "CLI 与 Hooks 共享检测引擎和忽略项配置，降低配置割裂。"
+    ],
+    "oneHighValuePoint": "将设计系统规则接入 AI 编程代理的 UI 编辑流程，在每次 UI 修改后自动检测设计偏差。",
+    "oneLineReview": "适合了解该工具新功能，但更像发布公告而非高价值技术文章。",
+    "primaryCategory": "开发工具",
+    "rating": "C",
+    "rejectReason": "内容偏产品发布和功能宣传，缺少案例、数据和方法论展开，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "AI编程",
+      "UI设计系统"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Impeccable 3.7 的更新，包括为 Claude、Codex、Cursor 提供设计检查 Hooks，基于 DESIGN.md 检测设计系统偏差，增强 Svelte/SvelteKit 实时预览、CLI、忽略项管理和规则检测能力。",
+    "tags": [
+      "Impeccable",
+      "设计检查",
+      "AI代理",
+      "Design System",
+      "CLI"
+    ],
+    "title": "x.com/impeccable_ai/status/2066890036646449455",
+    "totalScore": 45.5,
+    "url": "https://x.com/impeccable_ai/status/2066890036646449455"
+  },
+  "payloadHash": "sha256:350f0c01cb4ef428eb7fe5b25e52ece3efe379193b58b45170cdfef8dc1b12b2",
+  "refs": {},
+  "revisionId": "sha256:fe2f38c05a20a9234e539839c49b27735a479c8abc193e8c927f79dfe430a14a",
+  "schemaVersion": 1,
+  "updatedAt": 1781662563671
+}

@@ -1,0 +1,69 @@
+{
+  "createdAt": 1781745515838,
+  "entityType": "knowledge-asset",
+  "id": "hi_asset_1781745515838_4lroqhb6",
+  "parentRevisionIds": [],
+  "payload": {
+    "assetType": "value_capture",
+    "clusterId": "ai_agent_engineering",
+    "generator": {
+      "finishReason": "stop",
+      "generatedAt": 1781745515838,
+      "templateId": "value_capture_card"
+    },
+    "payload": {
+      "summary": "作者分享了当前 AI 编程 flow：先用 Claude + Gemini 做前端和 mock 数据，再用 Codex 写代码，然后用 Claude review，接着让 Codex 跑 Playwright 做 E2E 测试，最后自己验收并关闭 issue。作者认为 Codex 的前端能力不佳，完全交给 AI 一把梭容易失控，因此采用多模型分工。当前痛点是 Claude 用量偏少但成本较高，Gemini CLI 速度很慢。评论区补充了两个有价值方向：一是公司未来可能因 agentic 化太慢而被淘汰，二是可尝试用 Kimi 或 GLM 替代部分前端生成环节以降低 Claude 用量并改善 Gemini 速度问题。",
+      "topicConnections": [
+        "Agentic coding",
+        "AI 编程工作流",
+        "前端原型生成",
+        "Mock 数据驱动开发",
+        "Codex",
+        "Claude Code Review",
+        "Gemini CLI",
+        "Playwright E2E 测试",
+        "AI 代码审查",
+        "多模型协作",
+        "AI 成本优化",
+        "人机协作验收",
+        "从网页端到移动端转型类比 agentic 化转型",
+        "OpenCLI 与 AI-native CLI 工具"
+      ],
+      "transferTargets": [
+        "个人开发者或独立产品开发者的 AI 编程流程设计",
+        "小团队从需求到验收的 AI-assisted development SOP",
+        "AI coding agent 的分工策略：原型、实现、review、测试、验收",
+        "前端原型与 mock 数据驱动开发流程",
+        "使用 Playwright 做 AI 生成代码的自动化验收",
+        "多模型协作下的成本控制与效率优化",
+        "评估 Claude、Gemini、Codex、Kimi、GLM 等模型在不同开发环节的适配度"
+      ],
+      "validationNextStep": "把该 flow 抽象成可复用 SOP：需求说明 → 前端原型 + mock → 后端/业务代码实现 → AI review → Playwright E2E → 人工验收。,对比不同模型在前端生成阶段的效果，例如将 Claude/Gemini 替换或部分替换为 Kimi、GLM，观察前端满意度、迭代轮次、成本变化。,记录每个环节的 token/调用成本和耗时，判断 Claude 用量少但成本高的问题是否来自模型选择、上下文管理或任务拆分方式。,测试 Gemini CLI 慢的问题是否可通过减少上下文、拆分任务、替换 CLI、使用 API 或换模型解决。,为 Codex 生成的代码建立固定检查清单，例如类型检查、lint、单测、E2E、边界条件、可维护性 review。,验证 Codex 自跑 Playwright 的稳定性：是否能自动发现失败、修复失败并重新运行，还是仍需人工介入。",
+      "whyHighValue": "这条内容的价值在于呈现了一个真实的一人/小团队 AI 编程工作流：先用 AI 快速生成前端与 mock 数据，再用 Codex 实现代码，随后用 Claude 做 review，并让 Codex 自行运行 Playwright 做端到端测试，最后由人验收关闭 issue。它不是抽象讨论 AI 编程，而是暴露了当前 agentic coding 的关键实践问题：不同模型/工具在前端、代码实现、代码审查、自动化测试中的能力边界不同，不能简单“一把梭”；同时也暴露了成本、速度、模型调用量分配等工程化问题。"
+    },
+    "sourceDigestSessionIds": [],
+    "sourceMessageIds": [
+      "msg_1775198883062_prm9jc2xv",
+      "summary_template_1774403312933_1775198883063",
+      "msg_1775198912969_9ctfgbpn4",
+      "summary_template_1773227348442_1775198912969",
+      "msg_1775199909757_4j2hvzph1",
+      "msg_1775199909757_uvfy6l12g",
+      "msg_1775199909758_p0yra7b9e"
+    ],
+    "sourceSessionIds": [
+      "1775198883093_bq6b8uup"
+    ],
+    "sourceTemplateIds": [
+      "value_capture_card",
+      "template_1774403312933",
+      "template_1773227348442"
+    ],
+    "status": "draft"
+  },
+  "payloadHash": "sha256:26d9832eff5d31f78dc908bc8b9d05f0da07310c332c05f1d2da37e0f82ade2b",
+  "refs": {},
+  "revisionId": "sha256:0b643ae2e433d18ad062aca5835a043bf643cf4687e6be151803295d2fa7e526",
+  "schemaVersion": 1,
+  "updatedAt": 1781745515838
+}

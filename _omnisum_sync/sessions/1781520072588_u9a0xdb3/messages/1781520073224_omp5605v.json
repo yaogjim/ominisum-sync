@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781519882201,
+  "entityType": "message",
+  "id": "1781520073224_omp5605v",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Mimo Code / Obelisk：让 Coding Agent “记得过去”\n\n## 核心观点\n\n文章讨论了 **AI 编码助手如何检索历史会话、复用关键决策信息**。  \nMimo Code 基于 OpenCode 开发，已经实现了较好的 **session history 检索**；而 Obelisk 在此基础上进一步探索更灵活、更轻量的 Agent 记忆与检索机制。\n\n---\n\n## 1. 轻量级历史检索：SQLite FTS + BM25\n\nMimo Code 和 Obelisk 都采用了：\n\n- **SQLite FTS**：全文检索\n- **BM25**：经典文本相关性排序算法\n\n作用是让 Coding Agent 能检索过去的 session，知道之前做过什么、为什么这么做，避免在长期任务中丢失关键上下文和决策依据。\n\n---\n\n## 2. Obelisk 的增强：Agent 可主动写检索逻辑\n\n相比普通检索，Obelisk 提供了一个 **retrieval query runtime**。\n\n也就是说，Agent 不只是被动搜索历史记录，而是可以：\n\n- 自己编写代码检索 session\n- 根据任务动态组织查询\n- 更灵活地找到相关历史信息\n\n这让 Agent 的历史复用能力更接近“可编程检索层”。\n\n---\n\n## 3. 新增 Memory：本质是“综合结果缓存”\n\nObelisk 新加入的 memory，并不是传统意义上的长期记忆，而更像是 **synthesis cache（综合结论缓存）**。\n\n逻辑是：\n\n- 检索历史成本较高\n- 如果某次检索和总结形成了稳定结论\n- Agent 应该把这个结论写成文档\n- 下次直接复用，减少重复检索和推理成本\n\n---\n\n## 4. Memory 必须人工确认，避免污染上下文\n\n作者强调：**错误的 memory 比没有 memory 更糟糕**。\n\n因此，每条 memory 的：\n\n- 写入\n- 归档\n- 复用\n\n都需要经过人的确认。  \n因为错误或过期的结论会误导 Agent，尤其在代码重构、需求变化、长期维护项目中，memory 很容易变成噪声来源。\n\n---\n\n## 5. 后续计划：Electron 控制面板\n\nObelisk 计划推出一个基于 Electron 的控制面板，用于：\n\n- 查看 memory\n- 追溯 memory 来源\n- 管理和归档历史结论\n- 理解 Agent 正在复用哪些信息\n\n它不是必需功能，但能提升透明度，让用户知道 Agent 的判断依据来自哪里。\n\n---\n\n## 6. 趋势判断：向量数据库可能太重了\n\n作者认为，对 Coding Agent 来说：\n\n> 向量数据库 + Embedding 模型正在显得过于沉重。\n\n相比之下，SQLite FTS、BM25 这类轻量级检索方案，可能更适合本地编码助手场景。\n\n---\n\n## 总结\n\n这篇内容的核心是：  \n**Coding Agent 不只需要更大的上下文窗口，更需要可靠、可追溯、可管理的历史检索与记忆机制。**\n\nObelisk 的方向是：\n\n- 用轻量检索替代重型向量数据库\n- 让 Agent 能主动检索历史\n- 把稳定结论沉淀为 memory\n- 通过人工确认避免错误记忆污染系统\n\n一句话概括：  \n**让 AI 编码助手真正“记得过去”，但不能盲目信任记忆。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781519882201,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:18b8231e32352cfee3a40d262d91fd626fd01ece1d0951304d312e442c21f425",
+  "refs": {
+    "sessionId": "1781520072588_u9a0xdb3"
+  },
+  "revisionId": "sha256:385a531a6a248eecceaae349ce57c904d009607d7b94c268ab5221827c2b8e99",
+  "schemaVersion": 1,
+  "updatedAt": 1781519882201
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1773730815649,
+  "entityType": "session",
+  "id": "1773730815649_vn0qgx77",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果你确实在意终端多会话体验，可单独评估 zellij 或 MidTerm 等替代工具",
+      "不要保留这条内容，若需要学习 tmux 应寻找系统教程或官方文档"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1773730828116,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 3,
+      "transferability": 1
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "tmux易用性争议短帖",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量极低，证据不足，几乎没有可迁移知识或长期参考价值，仅适合即时社交互动。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "tmux 会话可通过 `tmux ls` 和 `tmux a -t <session>` 进行查看与附加",
+      "zellij 被部分用户视为比 tmux 更易上手的替代终端复用工具"
+    ],
+    "oneHighValuePoint": "唯一稍有价值的信息是评论中提到了更易用的替代方案 zellij。",
+    "oneLineReview": "强情绪、弱信息的社交媒体碎片，几乎不具备留存价值。",
+    "primaryCategory": "工具讨论",
+    "rating": "E",
+    "rejectReason": "内容主要是情绪化吐槽，缺乏系统分析、操作指南和可复用方法，讨论深度很低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "终端工具",
+      "社交媒体观点"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一则关于tmux难用的抱怨型推文，附带少量回复。正文仅表达对tmux快捷键和会话切换的不满，评论区也多为立场表态，只有个别回复提到zellij等替代工具，但没有展开说明。",
+    "tags": [
+      "tmux",
+      "终端复用",
+      "可用性吐槽",
+      "zellij",
+      "X推文"
+    ],
+    "title": "@levelsio: I hate tmux It's so incredibly user unfriendly The shortcuts make no sense I wis…",
+    "totalScore": 18.5,
+    "url": "https://x.com/levelsio/status/2033657882160386084"
+  },
+  "payloadHash": "sha256:0f1267c201eb6f4ac381e7d4afd279ce438aaeefc03437feca877337367b183a",
+  "refs": {},
+  "revisionId": "sha256:f18a01ec68df15b49e4c7b9be1136ce372472442c9eeb4aebb10b2af2f724c94",
+  "schemaVersion": 1,
+  "updatedAt": 1773730828121
+}

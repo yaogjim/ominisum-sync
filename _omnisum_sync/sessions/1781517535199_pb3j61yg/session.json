@@ -1,0 +1,69 @@
+{
+  "createdAt": 1781517535199,
+  "entityType": "session",
+  "id": "1781517535199_pb3j61yg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "挑选一个高频AI任务，手动或用工具记录完整执行流程",
+      "尝试安装flowtrace并用一个低风险任务测试trace复用效果",
+      "为常见AI工作流增加检查节点，例如质量评估、来源核验、结果复盘",
+      "定期复盘AI工作流中的失败点并更新流程模板"
+    ],
+    "archiveReason": "包含一个可尝试的AI工作流记录与复用工具，以及将PDCA用于AI协作流程优化的实践思路",
+    "classifiedAt": 1781518432707,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用PDCA优化AI工作流",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "PDCA可用于优化AI辅助工作流：计划、执行、记录检查、改进迭代",
+      "flowtrace试图把AI协作过程转化为可追溯、可复用、可修改的trace",
+      "可视化和文件化的工作流记录有助于发现流程遗漏点",
+      "重复性AI任务适合沉淀为标准流程并持续优化"
+    ],
+    "oneHighValuePoint": "AI协作中最容易断掉的不是分析和改进，而是前置的流程记录；自动化记录可提升后续复用和迭代能力。",
+    "oneLineReview": "观点不算新，但把PDCA与AI工作流记录工具结合，具备一定实践参考价值。",
+    "primaryCategory": "AI效率工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "工作流优化",
+      "个人生产力"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出在AI时代拉开差距的关键不是堆工具，而是持续优化使用工具的流程。作者用PDCA框架解释如何记录、分析、改进AI工作流，并推荐开源工具flowtrace来自动沉淀和复用流程。",
+    "tags": [
+      "AI工作流",
+      "PDCA",
+      "flowtrace",
+      "流程复用",
+      "效率工具"
+    ],
+    "title": "怎么在 AI 时代，超越你身边的大多数人？",
+    "totalScore": 60.5,
+    "url": "https://x.com/lxfater/status/2066355565555761160"
+  },
+  "payloadHash": "sha256:a6c1c3d0e5c554ed9ac964d9d847ee062429a9a11b7e03da2aa8576fb3577682",
+  "refs": {},
+  "revisionId": "sha256:a42faf802e17e79059c6f2d146fbd10af087109737cb4721c12a72f82ef66a8d",
+  "schemaVersion": 1,
+  "updatedAt": 1781519536829
+}

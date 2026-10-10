@@ -1,0 +1,72 @@
+{
+  "createdAt": 1781519915279,
+  "entityType": "session",
+  "id": "1781519915279_wjw5ba4x",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在设计多工具 Agent 时，优先评估是否应拆分为主管加领域专家的多智能体结构。",
+      "为 Agent 系统建立黄金数据集，将路由评估、专家输出评估和对抗输入评估纳入 CI。",
+      "区分持久化图状态与请求级运行时上下文，避免将临时页面、日期、用户附件等信息写入长期检查点。",
+      "对可直接面向用户的专家回复尝试跳过主管二次改写，以优化延迟和输出稳定性。"
+    ],
+    "archiveReason": "包含真实生产环境中的多智能体架构设计、动态工具挂载、检查点、评估分层等实践经验，对构建复杂 LLM Agent 系统有较高参考价值。",
+    "classifiedAt": 1781520283586,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Lumi多智能体架构实践",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "多智能体架构适合工具数量膨胀、任务类型多样且领域边界清晰的场景。",
+      "动态子代理附加可根据功能开关、国家、套餐等条件构建不同图结构，降低提示词噪音并减少工具幻觉。",
+      "扇出/扇入中间件适合并行执行输入护栏、PII 检查、上下文增强和输出验证，以降低额外延迟。",
+      "对子代理最终回复进行直接转发，可以减少主管二次生成带来的延迟、token 成本和信息损失。",
+      "图状态应保存可重放、可检查点化的信息，而运行时上下文应注入请求级临时信息，避免持久化过时上下文。",
+      "复杂 Agent 系统不宜只做端到端黑箱评估，应分别评估主管路由、专家质量和最终输出。"
+    ],
+    "oneHighValuePoint": "将复杂 Agent 系统拆分为主管路由与专业子代理，并对路由、工具调用和专家输出进行分层评估，显著提升可维护性与回归定位能力。",
+    "oneLineReview": "一篇有真实生产背景的 LangGraph 多智能体架构复盘，方法论价值高于代码细节。",
+    "primaryCategory": "AI工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "多智能体架构",
+      "LLM应用生产化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Tiendanube/Nuvemshop 如何基于 LangGraph 与 LangChain 构建面向 18 万商家的电商智能助手 Lumi，重点讲述多智能体架构、动态子代理挂载、扇出扇入中间件、状态与运行时上下文区分、检查点优化和分层评估方法。",
+    "tags": [
+      "LangGraph",
+      "LangChain",
+      "多智能体",
+      "电商助手",
+      "生产实践",
+      "评估体系"
+    ],
+    "title": "我们如何使用 LangChain 赋能 Lumi，我们面向 180,000+ 商家的电商助手",
+    "totalScore": 75.5,
+    "url": "https://x.com/tadeodonegana/status/2065113803398717909"
+  },
+  "payloadHash": "sha256:8973d9f432931001b884a81d5327687cd43893469e43750fee064371dbbd0d8a",
+  "refs": {},
+  "revisionId": "sha256:5965d10fdcfff6151998d603b4040f6f6a74a788b11db9463c063fbc99aab0cb",
+  "schemaVersion": 1,
+  "updatedAt": 1781520285276
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1781661054383,
+  "entityType": "session",
+  "id": "1781661054383_s08iy1q8",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的提示词或SKILL.md中加入少量高质量领域引导词。",
+      "观察智能体执行时是否主动复现这些词，并据此调整提示。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781661071184,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI技能中的引导词技巧",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Leitwort原指文学中反复出现、用于确立主题的关键词或短语。",
+      "在AI技能文件中，引导词可作为行为锚点影响智能体的思维轨迹和输出方向。",
+      "教育、工程等领域都可以用领域术语作为提示中的行为压缩标签。"
+    ],
+    "oneHighValuePoint": "用高语义密度的固定短语反复锚定智能体行为，可让模型在执行中主动复现目标原则。",
+    "oneLineReview": "一个有启发的提示工程小技巧，但论证主要依赖个人观察，证据较弱。",
+    "primaryCategory": "AI提示工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "智能体设计",
+      "学习方法"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出在AI技能或智能体提示中使用反复出现的“引导词”，以简洁短语锚定代理行为方向，例如“最近发展区”“测试接缝”等，从而提高输出一致性。",
+    "tags": [
+      "引导词",
+      "Leitwort",
+      "AI智能体",
+      "提示工程",
+      "技能设计"
+    ],
+    "title": "x.com/mattpocockuk/status/2066922013000671731",
+    "totalScore": 59,
+    "url": "https://x.com/mattpocockuk/status/2066922013000671731"
+  },
+  "payloadHash": "sha256:c86f65587e08eb8e04682e170d20247db8ca2edaac4443ef2a9a320eec679b7f",
+  "refs": {},
+  "revisionId": "sha256:eee1013ab681bfef5b6d9dc3c3e786472867ebec8152bd5ddd187e9bfe59be1a",
+  "schemaVersion": 1,
+  "updatedAt": 1781662429440
+}

@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781052427227,
+  "entityType": "session-content",
+  "id": "1781052427227_la7ebcag",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>烟花老师</strong></header><div class=\"tw-body\">基于本地文件系统+git 仓库进行长时间运行 agent 的一种方式：<br><br>初始化这个 agent 的整体目标，任务列表/功能列表，然后在一个 Harness loop 里反复读取这个外部的任务列表并更新进度：<br>1 每个 session 都重新读取一次全量内容，这样就能够并行工作避免重复执行任务；<br>2 每个上下文窗口先读取 progress 进度git 日志来获取本次需要执行的任务<br>3 进行冒烟测试<br>4 选取一个任务并执行<br>5 进行端到端测试<br>6 把结果保存到外部文件系统和 git 日志中<br>7 持续这个循环知道所有任务完成<br><br>这个机制非常简单实用，架构清晰，最大化利用了现有的文件系统和 git 机制，是个非常聪明且高效的办法</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HKTGejwaIAAYKtN?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@烟花老师</strong> <span class=\"tw-eng\">♥ 20 · 💬 1</span><p>Agent Harness 的五个陷阱<br><br>1. Self-evaluation is a trap. Use an adversarial evaluator.<br><br>自我评估是陷阱。要用对抗式评测器。<br><br>很多团队都会这样做：<br><br>Agent生成答案<br>↓<br>Agent自己打分<br>↓<br>Agent说：95分<br><br>结果上线后翻车。<br>原因很简单：<br>模型和自己存在强烈共识偏见（agreement bias）。<br><br>2.</p></div></div>",
+    "pageContent": "烟花老师: 基于本地文件系统+git 仓库进行长时间运行 agent 的一种方式： 初始化这个 agent 的整体目标，任务列表/功能列表，然后在一个 Harness loop 里反复读取这个外部的任务列表并更新进度：\n1 每个 session 都重新读取一次全量内容，这样就能够并行工作避免重复执行任务；\n2 每个上下文窗口先读取 progress 进度git 日志来获取本次需要执行的任务\n3 进行冒烟测试\n4 选取一个任务并执行\n5 进行端到端测试\n6 把结果保存到外部文件系统和 git 日志中\n7 持续这个循环知道所有任务完成 这个机制非常简单实用，架构清晰，最大化利用了现有的文件系统和 git 机制，是个非常聪明且高效的办法\n![图片](https://pbs.twimg.com/media/HKTGejwaIAAYKtN?format=jpg&name=large)\n---\n热门回复 (共 1 条):\n@烟花老师 (♥ 20 · 💬 1):\nAgent Harness 的五个陷阱\n\n1. Self-evaluation is a trap. Use an adversarial evaluator.\n\n自我评估是陷阱。要用对抗式评测器。\n\n很多团队都会这样做：\n\nAgent生成答案\n↓\nAgent自己打分\n↓\nAgent说：95分\n\n结果上线后翻车。\n原因很简单：\n模型和自己存在强烈共识偏见（agreement bias）。\n\n2.\n"
+  },
+  "payloadHash": "sha256:463ae6c5eca385c4d6059af1016569b0a804c238392fea163b33df07b1a48d8b",
+  "refs": {},
+  "revisionId": "sha256:9075b0203e8fdcd8f09a72095b6e7cc042e0a1487e1db6e08740b14836e1fa26",
+  "schemaVersion": 1,
+  "updatedAt": 1781170399872
+}

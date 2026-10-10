@@ -1,0 +1,98 @@
+{
+  "createdAt": 1780471838816,
+  "entityType": "session",
+  "id": "1780471838816_gxme6t9e",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在Claude Code中尝试让模型为一个复杂任务使用fan-out-and-synthesize或adversarial review工作流。",
+      "为常见任务整理一组workflow提示词模板，如研究、代码审查、事实核查、批量分类和根因分析。",
+      "将高风险验证任务拆成独立执行Agent和独立验证Agent，避免同一上下文自证。",
+      "对公开不可信内容处理流程设置quarantine原则，限制读取外部内容的Agent权限。"
+    ],
+    "archiveReason": "包含较完整的动态工作流模式、适用场景和实用提示，可作为多Agent任务编排方法论索引",
+    "byline": "Kieran Zhang",
+    "classifiedAt": 1780615510457,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude动态工作流解析",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1780471866859,
+        "imageId": "img-1",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# 动态工作流（Dynamic Workflows）精炼解读\n\n## 一、深度总结\n\n**Dynamic workflows**的核心是：  \n> Claude Code 不再只是一个单一 Agent 直接完成任务，而是能根据任务临时 “写一套流程”，再用多个子 Agent 分工协作。\n\n它可以：\n\n- 自动生成专用 workflow 文件\n- 创建多个 subagents\n- 让每个 subagent 拥有独立上下文\n- 为不同子任务选择不同模型\n- 决定是否使用独立 worktree\n- 中断后可继续 resume\n\n它主要解决单 Agent 在复杂任务中的三类问题：\n\n| 问题 | 含义 |\n|---|---|\n| **agentic laziness** | 没做完就说完成 |\n| **self-preferential bias** | 验证自己作品时天然偏袒自己 |\n| **goal drift** | 长上下文后逐渐忘记原始目标 |\n\nDynamic workflows 的方法是：  \n**把任务拆成规划、执行、验证、合并等阶段，用多个隔离 Agent 降低失误。**\n\n---\n\n## 二、深入浅出解读\n\n可以把它理解成：\n\n> 以前是 “一个聪明人从头干到尾”；  \n> 现在是 “一个项目经理临时组建团队，分工、复核、汇总”。\n\n例如做一次代码安全审查：\n\n### 传统单 Agent\n\n一个 Agent 看代码、找问题、写报告。  \n风险是：\n\n- 看漏一部分\n- 自己觉得差不多就结束\n- 报告未经独立验证\n\n### Dynamic workflow\n\n它可能这样组织：\n\n1. **分类 Agent**：判断代码风险区域\n2. **执行 Agent A/B/C**：分别审查不同模块\n3. **验证 Agent**：专门挑错、反驳、复核\n4. **合成 Agent**：整理最终报告\n\n这就像：\n\n> 写论文不只靠作者，还要有审稿人、编辑和事实核查员。\n\n---\n\n## 三、典型模式\n\n| 模式 | 适合场景 |\n|---|---|\n| **Classify-and-act** | 先分类，再分派任务 |\n| **Fan-out-and-synthesize** | 并行拆解大量相似任务，再汇总 |\n| **Adversarial verification** | 专门安排反方 Agent 挑错 |\n| **Generate-and-filter** | 先大量生成方案，再筛选 |\n| **Tournament** | 多个 Agent 竞争，选最佳答案 |\n| **Loop until done** | 不设固定轮数，直到满足停止条件 |\n\n---\n\n## 四、适合什么任务？\n\nDynamic workflows 适合：\n\n- 大规模代码迁移 / 重构\n- 深度研究\n- 事实核查\n- 批量排序 / 分级\n- 根因分析\n- 大规模客服 / Bug triage\n- 设计、命名、创意探索\n- 模型评估\n- 自动模型路由\n\n一句话：\n\n> 越复杂、越长链条、越需要并行和验证，越适合 workflow。\n\n---\n\n## 五、实用技巧\n\n使用时可以明确说：\n\n```text\nUse a workflow.\nUse adversarial review.\nUse fan-out-and-synthesize.\nUse tournament.\nUse a quick workflow.\n```\n\n也可以加限制：\n\n```text\nUse 10k tokens.\nLoop until all errors are fixed.\nVerify every factual claim independently.\n```\n\n核心原则：\n\n> 不要只让 AI “帮我做”，而要让 AI “设计流程后再做”。\n\n---\n\n## 六、辩证思考\n\n### 1. 它不是 “更聪明”，而是 “更有组织”\n\nDynamic workflows 的价值不只是模型能力提升，而是把 AI 从 “个人能力” 推进到 “组织能力”。\n\n真正的变化是：\n\n> 从单点智能，走向流程智能。\n\n这类似公司管理：  \n一个天才员工未必比一个分工明确、互相复核的团队可靠。\n\n---\n\n### 2. 多 Agent 不等于一定更好\n\n它也有成本：\n\n- token 消耗更高\n- 流程设计可能过度复杂\n- 子 Agent 之间可能重复劳动\n- 汇总阶段可能丢失细节\n- 错误也可能被多个 Agent 互相放大\n\n所以它适合高价值任务，不适合所有任务。\n\n简单问题强行 workflow，反而是 “用大炮打蚊子”。\n\n---\n\n### 3. 验证比生成更重要\n\n文章最重要的启示是：\n\n> AI 时代，生成能力已经很强，真正稀缺的是验证能力。\n\n尤其在代码、安全、研究、事实核查中，  \n“能产出” 不够，必须 “能证明产出是对的”。\n\n所以 adversarial verification、tournament、claim verification 这类模式会越来越重要。\n\n---\n\n### 4. 权限隔离会成为关键\n\n文中提到 quarantine 很重要：  \n读取不可信公开内容的 Agent，不应拥有高权限操作。\n\n这说明未来 AI 工作流的核心问题之一是：\n\n> 不只是让 Agent 做事，还要限制它能做什么。\n\n否则 prompt injection、权限误用、自动化误操作都会变成现实风险。\n\n---\n\n## 七、最终结论\n\nDynamic workflows 的本质是：\n\n> 让 AI 不只是执行任务，而是为任务设计一套临时组织结构。\n\n它最适合解决复杂、长链条、高风险任务中的：\n\n- 做不完\n- 看不全\n- 验不严\n- 容易跑偏\n\n但它不是万能钥匙。  \n真正有效的使用方式是：\n\n> 小任务直接做，大任务先设计流程；  \n> 普通任务重效率，高价值任务重验证。",
+        "url": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "动态工作流可让Claude Code为当前任务生成专用JS workflow，并协调多个拥有独立上下文的subagents。",
+      "常见模式包括classify-and-act、fan-out-and-synthesize、adversarial verification、generate-and-filter、tournament和loop until done。",
+      "适合高价值、复杂、长链条、需要并行处理或强验证的任务，如迁移重构、深度研究、事实核查、批量triage和模型路由。",
+      "隔离上下文和独立验证可缓解单Agent在长任务中的agentic laziness、self-preferential bias和goal drift。",
+      "可通过指定workflow类型、token budget、quick workflow、/goal和/loop等方式提升工作流可控性。"
+    ],
+    "oneHighValuePoint": "将复杂长任务拆成规划、执行、验证、合并等结构化流程，并用独立Agent降低懒惰、偏见和目标漂移。",
+    "oneLineReview": "高密度梳理了Claude动态工作流的核心模式，但证据和实操细节仍偏概览。",
+    "primaryCategory": "AI工作流",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为设计复杂AI Agent工作流和Claude Code实践的参考清单",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent协作",
+      "Claude Code"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章概述Claude Code动态工作流的概念、解决的问题、常见模式、适用场景和使用技巧，重点介绍通过多Agent、隔离上下文、并行执行和对抗验证来提升复杂任务完成质量。",
+    "tags": [
+      "动态工作流",
+      "多Agent",
+      "Claude Code",
+      "任务编排",
+      "自动化验证"
+    ],
+    "title": "Kieran Zhang: Thariq 深度解析动态工作流： 1",
+    "totalScore": 72.5,
+    "url": "https://x.com/ninthbit_ai/status/2061933937426039290"
+  },
+  "payloadHash": "sha256:842a851ea40dfddd16e0322dec07d483067f4b379a757fcd4665d8d8f7fd8658",
+  "refs": {},
+  "revisionId": "sha256:353a4f3f7613edd3c9e5c62394a979d3d4c3e8c43e7d2a0a6c6e52cbb0a457d6",
+  "schemaVersion": 1,
+  "updatedAt": 1781173046500
+}

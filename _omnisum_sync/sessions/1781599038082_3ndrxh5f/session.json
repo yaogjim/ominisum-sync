@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781599038082,
+  "entityType": "session",
+  "id": "1781599038082_3ndrxh5f",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注AI Agent工具生态，可简单了解postbridge-cli的功能边界",
+      "无需归档，若有需求可直接访问项目文档而非保存该推文"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781599433551,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 2,
+      "long_term_leverage": 3,
+      "methodology_value": 1,
+      "novelty": 4,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Postbridge CLI走红",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量很低，仅提供一个CLI产品发布和增长现象，回复区噪音较多，长期参考价值有限。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Postbridge提供npx postbridge-cli用于跨社交平台发布内容",
+      "CLI和MCP正在成为AI Agent调用SaaS能力的一种接口形式"
+    ],
+    "oneHighValuePoint": "AI Agent通过CLI/MCP操作外部工具可能成为面向智能体的软件入口。",
+    "oneLineReview": "这是一个有趋势信号但缺乏实质内容的产品动态，不值得长期保存。",
+    "primaryCategory": "AI工具",
+    "rating": "D",
+    "rejectReason": "内容主要是社交媒体动态和产品宣传，缺少完整背景、实现细节、数据验证和可复用方法论。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "社交媒体自动化",
+      "CLI工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "推文提到Postbridge发布公开CLI，可通过OpenClaw、Claude、ChatGPT、技能或MCP向多个社交账号发布内容，并称因此带来大量注册和MRR增长，但缺少具体数据和方法说明。",
+    "tags": [
+      "AI Agent",
+      "CLI",
+      "MCP",
+      "社交发布",
+      "SaaS"
+    ],
+    "title": "jack friks: me watching my monthly recurring revenue double overnight as 1000 new people sig…",
+    "totalScore": 28,
+    "url": "https://x.com/jackfriks/status/2066500511604277346"
+  },
+  "payloadHash": "sha256:95386b281fb4dc70a267edd91300872173b5fe262949bd6a38b4f48a8c7130e0",
+  "refs": {},
+  "revisionId": "sha256:a52772b248f548d8b50becc74d02d26dcc5997ec5592c2798176eb467a0d43cd",
+  "schemaVersion": 1,
+  "updatedAt": 1781599433986
+}

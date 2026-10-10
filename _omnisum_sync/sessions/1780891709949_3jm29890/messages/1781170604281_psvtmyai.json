@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781170525691,
+  "entityType": "message",
+  "id": "1781170604281_psvtmyai",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\nViking 分享了一篇关于“如何用 AI 构建 E2E 测试体系”的文章，总结了自己在复杂前端项目中，用 **AI + E2E 测试**辅助新功能开发与验证的实践流程。核心思路是：通过一套 **Spec → Code → Verify → Test → Green** 的流程，让 AI 不只是写代码，还参与功能验证和测试闭环。\n\n---\n\n## 1. 背景：项目组合复杂，人工测试成本太高\n\nViking 的项目 **TinyShip** 是一个复杂的 monorepo，包含多种技术组合：\n\n- 前端框架有 3 套：\n  - Next.js\n  - Nuxt.js\n  - TanStack Start\n- 数据库支持 2 种：\n  - PostgreSQL\n  - SQLite\n\n这意味着每次修改一个功能，都可能在：\n\n> 3 个前端框架 × 2 个数据库 = 6 种组合\n\n中出现问题。\n\n如果完全依赖人工点击页面、手动验证功能，很容易漏测，也非常耗时。\n\n---\n\n## 2. 核心方法：用 AI 辅助 E2E 驱动开发\n\nViking 总结了一套基于 E2E 的新特性开发流程：\n\n> **Spec → Code → Verify（agent-browser）→ Test → Green**\n\n可以理解为五个阶段：\n\n1. **Spec：先写清楚功能规格**\n   - 明确这个功能要做什么\n   - 预期交互和结果是什么\n\n2. **Code：让 AI 辅助实现代码**\n   - 根据规格生成或修改代码\n   - AI 参与开发实现\n\n3. **Verify：用 agent-browser 做功能验证**\n   - 让 AI 像用户一样操作浏览器\n   - 检查页面功能是否符合预期\n\n4. **Test：补充或运行 E2E 测试**\n   - 将验证过程沉淀为自动化测试\n   - 覆盖关键功能路径\n\n5. **Green：确保测试全部通过**\n   - 所有环境组合都验证通过\n   - 功能才算真正完成\n\n---\n\n## 3. 重点价值：不是简单“AI 写代码”，而是形成开发闭环\n\n这套流程的重点不只是让 AI 生成代码，而是让 AI 参与完整流程：\n\n- 写需求规格\n- 辅助编码\n- 操作浏览器验证\n- 生成或执行 E2E 测试\n- 确保最终测试通过\n\n因此 Viking 将其称为更接近：\n\n> **E2E 驱动的新功能开发**\n\n也就是说，E2E 测试不再只是上线前的检查工具，而是贯穿功能开发全过程。\n\n---\n\n## 4. 适用场景：多框架、多环境项目尤其适合\n\nViking 建议，如果你的项目也存在类似问题，可以尝试这套流程：\n\n- 多前端框架并存\n- 多数据库或多运行环境支持\n- 每次改动都需要反复人工测试\n- 人肉点页面成本过高\n- 容易因为组合复杂而漏测\n\n例如，一个功能在 Next.js + PostgreSQL 下正常，但在 Nuxt.js + SQLite 下可能出错。此时用 AI + E2E 自动化验证，可以显著降低漏测概率。\n\n---\n\n## 5. 相关链接与讨论\n\n原文链接：\n\n- [我是怎样使用 AI 构建 E2E 测试体系的？ | Viking](https://vikingz.me/ai-e2e/)\n\n热门回复中还提到了一些相关 AI 编程实践：\n\n- Viking 推荐了 Matt Pocock 的 skills 合集，认为其中很多内容是“真实工程经验”的总结。\n- 宝玉提到自己写了工具，用于解析 HAR 文件，研究 Claude Design 请求中的 Prompt。\n- 有回复提到 Claude Code 的工作流，核心是通过 `plan.md` 和自然语言驱动开发。\n- 也有人询问：`agent browser` 是否适合用来开发前端页面。\n\n---\n\n## 总结\n\nViking 的实践核心是：在复杂项目中，单靠人工测试已经不现实，需要让 AI 参与从需求、编码到浏览器验证和 E2E 测试的完整闭环。通过这种方式，可以更可靠地支持多框架、多数据库组合下的新功能开发。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781170525691,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:86fb3bd567545d918652aaa21aefa61d6b97812170c5073ff8512463fa1352de",
+  "refs": {
+    "sessionId": "1780891709949_3jm29890"
+  },
+  "revisionId": "sha256:fd05d22389c1a59b1f959d71f37846e4bbfbec08a72ceef2fd3ca6cc93dd30cc",
+  "schemaVersion": 1,
+  "updatedAt": 1781170525691
+}

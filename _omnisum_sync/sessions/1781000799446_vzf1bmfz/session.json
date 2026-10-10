@@ -1,0 +1,70 @@
+{
+  "createdAt": 1781000799446,
+  "entityType": "session",
+  "id": "1781000799446_vzf1bmfz",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "核查 Claude Code 是否真实支持文中所述 dynamic workflows、ultracode、/effort ultracode 等功能。",
+      "将六种模式整理成自己的 AI 编程任务选择表，用于代码审查、迁移、调研和工单分拣。",
+      "在小规模代码审查任务中试验扇出汇总与对抗验证模式，比较结果质量和 Token 成本。",
+      "对涉及外部输入的自动化流程加入读取代理与操作代理隔离设计。"
+    ],
+    "archiveReason": "文章总结了多代理编排的常见模式和适用场景，可作为设计 AI Coding 工作流时的参考清单，但具体功能和案例真实性需自行验证。",
+    "classifiedAt": 1781052357420,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude动态工作流模式指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "单代理在长任务中容易出现惰性、自我偏好和目标漂移，可通过任务拆分和独立上下文缓解。",
+      "对抗性验证通过让独立代理主动反驳发现，降低误报和自我确认偏差。",
+      "不同任务适合不同编排模式：代码审查适合扇出汇总，创意任务适合生成筛选或锦标赛，未知规模问题适合循环到干。",
+      "处理不可信输入时应采用隔离策略，让读取外部内容的代理与执行高权限操作的代理分离。",
+      "Workflow 并非适合所有任务，小任务或需要强上下文连贯性的任务可能不适合并行拆分。"
+    ],
+    "oneHighValuePoint": "将复杂 AI 编程任务拆解为分类执行、扇出汇总、对抗验证、生成筛选、锦标赛和循环到干六种可复用模式。",
+    "oneLineReview": "适合作为多代理工作流设计灵感来源，但不宜直接视为可靠技术文档。",
+    "primaryCategory": "AI编程与智能体工作流",
+    "rating": "B",
+    "rejectReason": "证据质量偏弱，多个关键说法缺少官方链接、实测数据或可验证案例，且文本呈现出较高 AI 生成或包装痕迹。",
+    "retentionDecision": "短期参考后可选择性保留",
+    "secondaryCategories": [
+      "多代理协作",
+      "软件工程自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Claude Code 动态工作流的概念、单代理瓶颈、六种多代理编排模式、十个应用场景，以及触发方式、隔离安全和预算控制。内容方法论较完整，但事实依据和功能真实性需要进一步核查。",
+    "tags": [
+      "Claude Code",
+      "动态工作流",
+      "多代理",
+      "代码审查",
+      "AI编程"
+    ],
+    "title": "为每个任务量身定做：Claude Code 动态工作流完全指南",
+    "totalScore": 66.5,
+    "url": "https://x.com/PandaTalk8/status/2063918562318946740"
+  },
+  "payloadHash": "sha256:2450021ff75a6f9dcd52cd5bd557d203d213ee0b851aad047aa19ea98e0c3645",
+  "refs": {},
+  "revisionId": "sha256:ee12f56a46d112e2501d3d7d196b6996cf4930ca27c1f9c6a03314ff7d067be7",
+  "schemaVersion": 1,
+  "updatedAt": 1781170369606
+}

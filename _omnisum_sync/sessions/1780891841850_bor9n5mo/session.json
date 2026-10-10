@@ -1,0 +1,68 @@
+{
+  "createdAt": 1780891841850,
+  "entityType": "session",
+  "id": "1780891841850_bor9n5mo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为AI coding任务建立固定入口、当前状态、边界约束和下一步记录模板",
+      "在每轮AI协作结束时要求写回证据、决策和未完成事项",
+      "将日常对话线程与具体任务上下文分离，避免上下文混杂膨胀"
+    ],
+    "archiveReason": "提出了AI coding成本核心在于agent接手、上下文恢复和返工控制的观点，对构建个人AI工作流有参考价值",
+    "classifiedAt": 1780892389138,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编程贵在管理循环",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agentic coding工具在企业中可能因使用量失控造成显著预算压力",
+      "AI coding的隐性成本包括上下文重建、边界判断、重复探索和跑偏执行",
+      "固定任务入口、状态记录、证据回写和下一步说明可以降低agent loop成本",
+      "Daily thread适合作为路由层，而不应承载所有任务上下文"
+    ],
+    "oneHighValuePoint": "AI编程的成本优化重点应从减少代码生成转向减少agent接手时的上下文猜测和无效循环。",
+    "oneLineReview": "短文观点清晰，方法提示有价值，但论证和案例深度有限。",
+    "primaryCategory": "AI编程与工程效率",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为AI编程工作流优化的提醒材料",
+    "secondaryCategories": [
+      "AI Agent管理",
+      "个人工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章借Uber限制AI编码工具预算的案例，指出AI coding真正昂贵的不是写代码或token，而是agent循环中的上下文猜测、返工和跑偏。作者提出通过固定入口、任务状态、证据回写和路由线程来降低成本。",
+    "tags": [
+      "AI Coding",
+      "Agent Loop",
+      "成本控制",
+      "上下文管理",
+      "工程效率"
+    ],
+    "title": "Leo｜一个人 + AI: AI coding 现在最贵的， 已经不是写代码了",
+    "totalScore": 65.5,
+    "url": "https://x.com/runes_leo/status/2063788774166020458"
+  },
+  "payloadHash": "sha256:64df0f63c260bf0c9fade883889a8b465aa153797cfba60299b60dda8a53fba5",
+  "refs": {},
+  "revisionId": "sha256:9410d3062fab86387f3451bd066154c5d85dbb7adc336fe40233ead8026570da",
+  "schemaVersion": 1,
+  "updatedAt": 1781170844153
+}

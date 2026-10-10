@@ -1,0 +1,40 @@
+{
+  "createdAt": 1781745446009,
+  "entityType": "knowledge-asset",
+  "id": "hi_asset_1781745446009_1cvgt6nv",
+  "parentRevisionIds": [],
+  "payload": {
+    "assetType": "graph_edge",
+    "clusterId": "ai_agent_engineering",
+    "generator": {
+      "finishReason": "stop",
+      "generatedAt": 1781745446007,
+      "templateId": "value_capture_card"
+    },
+    "payload": {
+      "case": "Coordinator 创建并启动 YAO-102，声明 YAO-101 等待 materials prep done 后再 rerun gated live validation。",
+      "confidence": "medium",
+      "evidence": "评论中明确：当前 blocker 仍是缺少 artifact/profile/source/sink/run-command，直接 rerun 会重复失败；YAO-102 只能准备材料，不能替代 YAO-101 的 live validation gate 结论。",
+      "method": "新增材料准备子任务，先补齐 artifact/profile/source/sink/run-command，再回到 P0-12 执行正式 live validation。",
+      "problem": "缺少可执行 artifact、显式 isolated profile、source/question、sink 目录和 live validation command，导致 gate rerun 只会重复失败。",
+      "tool": "YAO-102 P0-12a、development_executor、Coordinator metadata waiting_on"
+    },
+    "sourceDigestSessionIds": [],
+    "sourceMessageIds": [
+      "1781664368193_zjquzoov",
+      "1781664368564_ywi5kpxf"
+    ],
+    "sourceSessionIds": [
+      "1781664344486_yu57uv3j"
+    ],
+    "sourceTemplateIds": [
+      "value_capture_card"
+    ],
+    "status": "draft"
+  },
+  "payloadHash": "sha256:108d2066168236e8bc24f564552016744e8a19a7eddf82c491b24fedf589d114",
+  "refs": {},
+  "revisionId": "sha256:ae3e18696a3170df820a7f69017e48093183df8df6bc679ac133294258cdb34a",
+  "schemaVersion": 1,
+  "updatedAt": 1781745446009
+}

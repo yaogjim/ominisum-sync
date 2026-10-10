@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781660718022,
+  "entityType": "session",
+  "id": "1781660718022_1xxk1jq8",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注 AI 编程 TUI，可打开 GitHub 仓库快速查看 README 和活跃度。",
+      "等待项目正式发布后再评估其安装体验、模型兼容性和实际性能。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781660741579,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Noumena代码TUI发布简讯",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Noumena code 是一个 AI 代码 TUI 项目，包含 REPL、Markdown 渲染、WebSocket 客户端等组件。",
+      "作者认为原 TS 实现较慢且不可靠，因此用 Rust 重建部分关键模块。"
+    ],
+    "oneHighValuePoint": "该项目将 AI 代码 TUI 的关键性能组件迁移到 Rust，以提升渲染性能和稳定性。",
+    "oneLineReview": "这是一个有一定关注价值的项目发布消息，但信息量和可操作性都很有限。",
+    "primaryCategory": "AI开发工具",
+    "rating": "D",
+    "rejectReason": "内容主要是产品发布动态，缺少技术细节、性能数据、使用教程或可复用方法论，独立保存价值较低。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开源项目",
+      "社交媒体发布"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者宣布将 AI 代码 TUI 的 REPL 引擎改为事件驱动，新增 Rust Markdown 渲染栈、OpenAI 兼容 Rust WebSocket 客户端及部分工具，并表示后续将推出 Noumena 推理引擎和 Kimi K2.7 服务。",
+    "tags": [
+      "AI代码工具",
+      "Rust",
+      "TUI",
+      "Noumena",
+      "Kimi K2.7"
+    ],
+    "title": "xjdr: Ok i did it",
+    "totalScore": 28.5,
+    "url": "https://x.com/_xjdr/status/2067016286237045095"
+  },
+  "payloadHash": "sha256:135c8696555f57af69541a3318cc62c6adbe3cb54ff201bc7e2856947e07e027",
+  "refs": {},
+  "revisionId": "sha256:4c84b12dd979552b711f7ef774d1b643e2fa9d23a425beeb8c44dd1844af2d74",
+  "schemaVersion": 1,
+  "updatedAt": 1781662754207
+}

@@ -1,0 +1,69 @@
+{
+  "createdAt": 1781599372215,
+  "entityType": "session",
+  "id": "1781599372215_i6tfm5rq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的核心任务中建立模型稳定性测试集，记录失败率和复现情况。",
+      "将 AI 任务按短时低风险、代码开发、长时自动化等类别分别选择模型。",
+      "对关键代码和自动化结果保留人工审查或高可靠模型复核环节。",
+      "避免仅凭单次对话体验决定生产环境模型选型。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781599680146,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "国产大模型实用体验与稳定性",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "国产模型在文本处理、摘要、润色等短任务中已具备较强可用性。",
+      "长时 Agent、工具调用和无人值守自动化场景的关键瓶颈是输出稳定性。",
+      "同一 Prompt 在自动执行与手动执行时表现不一致，说明生产级信任仍需验证。",
+      "可采用顶级模型规划与验收、国产模型执行的混合工作流降低风险。"
+    ],
+    "oneHighValuePoint": "将任务按风险分层：短时一次性任务可用国产模型，复杂项目和无人值守自动化仍优先选择稳定性更高的模型。",
+    "oneLineReview": "有一定一线使用参考价值，但证据偏轶事化，不宜作为严肃选型依据。",
+    "primaryCategory": "AI工具评测",
+    "rating": "B",
+    "rejectReason": "内容主要基于个人体验和少量回复，缺少系统测试数据、对照指标和可复现实验，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "大模型应用",
+      "自动化工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于作者两周使用体验，对 DeepSeek、Xiaomi Mimo、Minimax、Kimi 等国产模型在写作、代码和 Agent 自动化场景中的表现进行主观评价，核心结论是国产模型单次任务已可用，但长时自动化和工具调用稳定性仍不足。",
+    "tags": [
+      "国产大模型",
+      "Kimi",
+      "DeepSeek",
+      "Agent",
+      "稳定性"
+    ],
+    "title": "Versun: 国产模型能用了，但我还不敢用 前段时间，我的 GPT 账户意外被封，被迫开始全面试用国产模型 过去两周，我深度使用了 DeepSeek v4 Pro、Xiaom…",
+    "totalScore": 55.5,
+    "url": "https://x.com/VersunPan/status/2066436838823456932"
+  },
+  "payloadHash": "sha256:05306f2a5669eaa546cf4d57a6f03c2ac53fb105c5832aaccd26f767ac8d76cd",
+  "refs": {},
+  "revisionId": "sha256:1f22622900509e43c7c29def10450004eff7d271c8f2b773039e84fc40f82bc2",
+  "schemaVersion": 1,
+  "updatedAt": 1781600349030
+}

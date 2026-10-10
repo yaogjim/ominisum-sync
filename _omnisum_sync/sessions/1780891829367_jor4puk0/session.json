@@ -1,0 +1,65 @@
+{
+  "createdAt": 1780891829367,
+  "entityType": "session",
+  "id": "1780891829367_jor4puk0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需继续关注，应查找SpaceX监管披露原文或可靠媒体报道验证合同真实性。",
+      "对文中GPU单价、租赁周期、市场租金和数据中心成本进行独立核算后再引用。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780892387004,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "SpaceX谷歌算力租赁传闻",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "证据质量低，商业判断高度依赖未证实前提，实用价值和长期参考价值有限。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI算力供需紧张可能使现货GPU集群租赁价格显著高于硬件买断成本。",
+      "科技公司之间的算力交易可能同时影响现金流、估值叙事和战略竞争格局。"
+    ],
+    "oneHighValuePoint": "若大型AI算力集群具备现货交付能力，在算力短缺周期中可能拥有极强的议价权。",
+    "oneLineReview": "一个有戏剧性的商业传闻解读，但证据薄弱，更多是社交媒体式情绪化推演。",
+    "primaryCategory": "AI产业与商业传闻",
+    "rating": "D",
+    "rejectReason": "内容主要基于未经证实的所谓协议，叙述情绪化和推测性较强，缺少原始文件、市场价格对比和可靠信源验证。",
+    "retentionDecision": "建议立即删除，除非需要追踪社交媒体传闻样本",
+    "secondaryCategories": [
+      "云计算",
+      "科技公司估值"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章围绕一份疑似SpaceX向谷歌出租11万块NVIDIA GPU、每月收取9.2亿美元的协议展开推演，认为这是马斯克利用AI算力短缺获取高额现金流、助推SpaceX估值和星舰计划的商业布局。",
+    "tags": [
+      "SpaceX",
+      "Google",
+      "GPU租赁",
+      "AI算力",
+      "商业传闻"
+    ],
+    "title": "Phoenix Yin: 这份流传出来的协议如果是真的，那简直是一场商业史上的顶级阳谋和魔幻大戏",
+    "totalScore": 36.5,
+    "url": "https://x.com/Phoenixyin13/status/2063235273249477011"
+  },
+  "payloadHash": "sha256:a221b896f991cfba2eda45cc98383c6ac80ef12cc605cd8effbb74273c1db8d1",
+  "refs": {},
+  "revisionId": "sha256:4e56be849abd6ebc6467be15563f3ed2353c779010571e56805f225a91dfea52",
+  "schemaVersion": 1,
+  "updatedAt": 1780892387751
+}

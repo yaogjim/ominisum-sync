@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781599067272,
+  "entityType": "session",
+  "id": "1781599067272_w06wfubt",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "进一步查找 LangChain 和 Fireworks 原始发布内容或技术报告",
+      "评估自身产品日志中是否存在用户纠正、重复提问等可用于训练评判器的行为信号"
+    ],
+    "archiveReason": "提供了低成本评判模型、跨应用迁移评估和基于用户行为信号训练评估器的有价值思路",
+    "classifiedAt": 1781599453105,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "低成本迁移评判模型启示",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "微调小型评判模型可显著降低LLM评估成本",
+      "基于对话行为信号的评估器可能比依赖特定工具调用的评估器更具迁移性"
+    ],
+    "oneHighValuePoint": "将用户纠正、重复请求等行为信号作为跨产品可迁移的评估依据。",
+    "oneLineReview": "这是一条信息量较高的AI评估案例线索，但证据和方法细节不足。",
+    "primaryCategory": "人工智能评估",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留为LLM评估案例",
+    "secondaryCategories": [
+      "LLM应用",
+      "AI工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 LangChain 与 Fireworks 推出的微调 Qwen 评判模型，可在生产追踪中识别感知错误，成本显著低于 Opus，并在跨产品迁移场景中取得较好效果。",
+    "tags": [
+      "LangChain",
+      "Fireworks",
+      "Qwen",
+      "LLM评估",
+      "生产追踪"
+    ],
+    "title": "Rohit: langchain and fireworks just shipped the eval move worth stealing: a fine-tuned …",
+    "totalScore": 64.5,
+    "url": "https://x.com/rohit4verse/status/2066591449744093536"
+  },
+  "payloadHash": "sha256:8502463d0609d725a1aeccccc65361c7dea613db76c8855e73fec0d2bc5bffa4",
+  "refs": {},
+  "revisionId": "sha256:6dac9c62674060411d78b7572a6374b7bebdca8a8aa421351502ef03c1982e9c",
+  "schemaVersion": 1,
+  "updatedAt": 1781600199042
+}

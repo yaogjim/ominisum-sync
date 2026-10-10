@@ -1,0 +1,68 @@
+{
+  "createdAt": 1781519993244,
+  "entityType": "session",
+  "id": "1781519993244_mf1umgbd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在 Claude Code 中测试 claude --continue --fork-session 的上下文继承效果。",
+      "将不同 context handoff 方法整理成个人工作流速查表。",
+      "遇到分支探索任务时优先尝试 fork 或旁窗，而不是污染主会话。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781520395702,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude上下文交接五法",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "subagent 可由主 agent 发指令执行任务，但不继承缓存。",
+      "直接使用 /model 切换模型会导致缓存 miss，适合确认后续是长程任务时使用。",
+      "claude --continue --fork-session 可在当前目录复制最近对话上下文并保留缓存。",
+      "旁窗式上下文复制适合在不中断主线对话的情况下探索分支问题。"
+    ],
+    "oneHighValuePoint": "区分了不同 handoff 方式是否继承缓存，尤其指出 fork-session 和旁窗复制上下文可保持 100% 缓存。",
+    "oneLineReview": "适合作为 Claude 上下文管理方式的速查清单，但深度和证据不足。",
+    "primaryCategory": "AI工具使用",
+    "rating": "C",
+    "rejectReason": "内容较短，仅列举几种上下文交接方式，缺少具体操作步骤、适用场景、对比验证和完整方法论。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Claude Code",
+      "上下文管理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章简要列出 Claude Code 或多 Agent 使用中的 5 种 context handoff 方法，包括 subagent、切换模型、导出记录、continue fork-session 以及通过快捷键旁窗复制上下文。",
+    "tags": [
+      "context",
+      "handoff",
+      "Claude Code",
+      "agent",
+      "workflow"
+    ],
+    "title": "实践哥MinLi: context 有5种handoff 方法： 1",
+    "totalScore": 51,
+    "url": "https://x.com/MinLiBuilds/status/2065075995343048866"
+  },
+  "payloadHash": "sha256:d063aa910e7b97f3e0d83f511a15e1736b9856f83d5ab6e9e292024688836710",
+  "refs": {},
+  "revisionId": "sha256:4e8b369f24c78990d20361088b75f893ade657da9301ef2c9cbff0e6f44b8462",
+  "schemaVersion": 1,
+  "updatedAt": 1781520396276
+}

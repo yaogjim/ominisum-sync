@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781520396118,
+  "entityType": "message",
+  "id": "1781520396117_tjkt3ytt",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude上下文交接五法\n\n**评级**: C (51分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI工具使用\n**次类别**: Claude Code, 上下文管理\n**标签**: #context #handoff #Claude Code #agent #workflow\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 适合作为 Claude 上下文管理方式的速查清单，但深度和证据不足。\n**核心高价值点**: 区分了不同 handoff 方式是否继承缓存，尤其指出 fork-session 和旁窗复制上下文可保持 100% 缓存。\n\n### 摘要\n文章简要列出 Claude Code 或多 Agent 使用中的 5 种 context handoff 方法，包括 subagent、切换模型、导出记录、continue fork-session 以及通过快捷键旁窗复制上下文。\n\n### 知识要点\n- subagent 可由主 agent 发指令执行任务，但不继承缓存。\n- 直接使用 /model 切换模型会导致缓存 miss，适合确认后续是长程任务时使用。\n- claude --continue --fork-session 可在当前目录复制最近对话上下文并保留缓存。\n- 旁窗式上下文复制适合在不中断主线对话的情况下探索分支问题。\n\n### 行动项\n- 在 Claude Code 中测试 claude --continue --fork-session 的上下文继承效果。\n- 将不同 context handoff 方法整理成个人工作流速查表。\n- 遇到分支探索任务时优先尝试 fork 或旁窗，而不是污染主会话。\n\n### 存档判定\n归档: 否\n不推荐: 内容较短，仅列举几种上下文交接方式，缺少具体操作步骤、适用场景、对比验证和完整方法论。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1781520396118,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:bd58b9a9964c17ccbef64b84916e9afc069db2515af51ea2e0f934f84b9ea532",
+  "refs": {
+    "sessionId": "1781519993244_mf1umgbd"
+  },
+  "revisionId": "sha256:3821e6c2cf1055333ce9e46ba0f8bcdafd360ac69c35f39b25be6e8efe32cc28",
+  "schemaVersion": 1,
+  "updatedAt": 1781520396118
+}

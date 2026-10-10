@@ -1,0 +1,47 @@
+{
+  "createdAt": 1781745515840,
+  "entityType": "knowledge-asset",
+  "id": "hi_asset_1781745515840_rms6ba4j",
+  "parentRevisionIds": [],
+  "payload": {
+    "assetType": "graph_edge",
+    "clusterId": "ai_agent_engineering",
+    "generator": {
+      "finishReason": "stop",
+      "generatedAt": 1781745515838,
+      "templateId": "value_capture_card"
+    },
+    "payload": {
+      "case": "作者实际使用 Claude + Gemini + Codex + Playwright 的组合；评论区提出 Kimi/GLM 可作为前端阶段替代选项",
+      "confidence": "medium",
+      "evidence": "原文完整 flow 显示多工具组合；评论区建议：“第一步换成 kimi 或者 glm”。",
+      "method": "按任务类型进行模型路由：前端原型用视觉/前端能力强的模型，代码实现用 Codex，审查用 Claude，测试用 Playwright 驱动",
+      "problem": "不同 AI 模型在开发任务中的能力差异明显，单一模型难以覆盖全部环节",
+      "tool": "Claude, Gemini, Codex, Playwright, Kimi, GLM"
+    },
+    "sourceDigestSessionIds": [],
+    "sourceMessageIds": [
+      "msg_1775198883062_prm9jc2xv",
+      "summary_template_1774403312933_1775198883063",
+      "msg_1775198912969_9ctfgbpn4",
+      "summary_template_1773227348442_1775198912969",
+      "msg_1775199909757_4j2hvzph1",
+      "msg_1775199909757_uvfy6l12g",
+      "msg_1775199909758_p0yra7b9e"
+    ],
+    "sourceSessionIds": [
+      "1775198883093_bq6b8uup"
+    ],
+    "sourceTemplateIds": [
+      "value_capture_card",
+      "template_1774403312933",
+      "template_1773227348442"
+    ],
+    "status": "draft"
+  },
+  "payloadHash": "sha256:4d08e75a81c65e9ab21d9b0d74fc779a479e7de0508f03e34c471d5fcc5e187e",
+  "refs": {},
+  "revisionId": "sha256:75b43fd1343caa028f9e7f55fb0b901dc0be5c19e258416a0fa866b96c22da56",
+  "schemaVersion": 1,
+  "updatedAt": 1781745515840
+}

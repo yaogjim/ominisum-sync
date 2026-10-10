@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780562424293,
+  "entityType": "message",
+  "id": "1780562438324_7vb2nqd5",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一句话总结\n\nPi Agent 更像一个给开发者自己改装的「终端 coding agent 工作台」，核心价值不是大而全，而是把上下文、技能、模型和会话控制权交给你。\n\n## 极简精炼内容\n\n### 1. 定位\n- Pi Agent = minimal terminal coding harness / agent workbench  \n- 不是 LangGraph 式通用编排引擎  \n- 不是 OpenAI Agents SDK 式产品级 SDK  \n- 更像可自定义的 Codex / Claude Code 替代品\n\n### 2. 核心哲学\n- core 保持小  \n- 复杂能力交给 extension、skill、prompt、package  \n- 默认不堆 sub-agent、plan mode 等重功能\n\n### 3. 关键能力\n- **上下文工程**：AGENTS.md、SYSTEM.md、skills、prompt templates、动态 context injection、自定义 compaction  \n- **Session tree**：历史记录可分叉、回滚、导出、分享  \n- **多运行模式**：interactive、JSON、RPC、SDK  \n- **多模型支持**：OpenAI、Anthropic、Google、Azure、Bedrock、Ollama、OpenRouter 等\n\n### 4. 适合场景\n- 本地代码库改造  \n- 长期 coding session  \n- 自建 skill / prompt / compaction  \n- 把 agent session 当工程资产管理\n\n### 5. 不适合场景\n- 审批、支付、CRM、工单等严肃企业流程  \n- 因为这些需要强状态、审计、权限、恢复和可观测性\n\n## 辩证评价\n\nPi Agent 的优势在于轻量、可塑性强，适合懂工程、愿意自己搭上下文体系的开发者。  \n但它也因此不适合追求开箱即用、稳定企业流程编排或低代码 agent 平台的用户。\n\n## 高价值 / 反常识总结\n\n很多 coding agent 失败，不是因为模型不够强，而是因为上下文入口混乱、压缩失真、项目规则没有稳定加载。  \n预装太多 skills 反而可能污染上下文、降低工具命中率，真正强的 agent harness 往往不是「功能最多」，而是「可控、可裁剪、可持续演化」。",
+    "prompt_id": "default",
+    "role": "assistant",
+    "timestamp": 1780562424293,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:58f3ecfd0f89a5e746d80c0f41dd72b5f35ed548db24140e19f9a216334e60bf",
+  "refs": {
+    "sessionId": "1780562437808_jkgbe9xu"
+  },
+  "revisionId": "sha256:f66755a53827bcff11e5adc6145acd355b29ca8312a273845c207535f0bc8b46",
+  "schemaVersion": 1,
+  "updatedAt": 1780562424293
+}

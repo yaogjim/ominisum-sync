@@ -1,0 +1,64 @@
+{
+  "createdAt": 1781520900426,
+  "entityType": "session",
+  "id": "1781520900426_nfgwdzck",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如对边缘 AI 代理感兴趣，可直接观看原 YouTube 视频",
+      "若不计划观看视频，应删除该转发内容"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781521469527,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 1,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 1,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "边缘AI代理视频转发",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "E级内容，信息量极低，仅保留外部视频链接，无摘要、论证或可操作内容。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Cloudflare 可能涉及边缘 AI 代理相关实践",
+      "内容来源为 aiDotEngineer 相关视频转发"
+    ],
+    "oneHighValuePoint": "提示了一个潜在主题：在边缘环境中构建 AI 代理，可作为后续检索视频或相关资料的线索。",
+    "oneLineReview": "这只是一个视频入口，不是具备独立价值的文章内容。",
+    "primaryCategory": "AI工程",
+    "rating": "E",
+    "rejectReason": "正文仅为视频转发和链接，几乎没有独立信息、观点、方法论或案例支撑，无法直接形成有效知识沉淀。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "边缘计算",
+      "AI代理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该内容是一条关于 Cloudflare 人员讨论在边缘构建 AI 代理的视频转发，仅包含标题、人物和 YouTube 链接，没有展开观点、技术细节或实践方法。",
+    "tags": [
+      "Cloudflare",
+      "AI Agent",
+      "Edge AI",
+      "视频链接"
+    ],
+    "title": "x.com/JordiMonPMM/status/2064748541440835919",
+    "totalScore": 18,
+    "url": "https://x.com/JordiMonPMM/status/2064748541440835919"
+  },
+  "payloadHash": "sha256:6f0b483d3c5f44502426bcb0fcee4bb0f343d7b723645d00c50457cd9ceaa3e6",
+  "refs": {},
+  "revisionId": "sha256:5500b85469f4e8c98a73a8ff869a5cfe4f2bcab3efea8b78a28e5c4807efae08",
+  "schemaVersion": 1,
+  "updatedAt": 1781521469706
+}

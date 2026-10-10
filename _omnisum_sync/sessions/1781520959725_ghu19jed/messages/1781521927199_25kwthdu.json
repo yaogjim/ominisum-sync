@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781521913247,
+  "entityType": "message",
+  "id": "1781521927199_25kwthdu",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章认为，相比用 “Loop（循环）” 描述 AI Agent 的工作方式，“backpressure（背压）” 更能准确表达当前 AI 编程流程中的核心问题：人类开发者正在成为 Agent 工作流中的阻力和反馈节点。作者提出，应通过更强的自动化验证与约束机制（Harness）把人从这个循环中解放出来。\n\n## 1. Agent 的基础来自 ReAct，天然包含循环机制\n\n- 当前许多 Agent 的基础模式来自 **ReAct**。\n- ReAct 本身隐含一种 **循环流程**：  \n  Agent 思考 → 执行动作 → 观察结果 → 再继续思考和行动。\n- 因此，人们常用 “Loop” 来描述 Agent 的运行方式。\n\n## 2. “backpressure” 比 “Loop” 更准确\n\n- 作者认为，“Loop” 只强调循环过程，但不足以描述 AI 编程中的实际阻塞问题。\n- “backpressure（背压）” 原本指流体在管道中流动时遇到的阻力。\n- 在系统工程中，背压指的是：\n  - 下游组件无法继续接收更多任务；\n  - 于是向上游组件发出信号；\n  - 迫使上游生产者放慢速度、缓存任务，甚至丢弃负载。\n\n## 3. 当前 AI 编程中，人类成了 Agent 的背压\n\n- 在很多 AI 编码流程里，人类开发者会提前进入 Agent 的反馈循环。\n- 开发者需要对 LLM 生成的代码进行：\n  - 检查；\n  - 手动验证；\n  - 判断是否正确；\n  - 发现问题并要求修改。\n- 这意味着，Agent 的“流动”并不顺畅，人类成为了它继续推进时遇到的阻力。\n\n## 4. 解决方向：用 Harness 解放人类\n\n- 作者提出，关键是把人从 ReAct 的反馈循环中解脱出来。\n- 对 AI 编程来说，需要用 **Harness（测试与约束框架）** 加固这一层。\n- Harness 应帮助 Agent 自动完成：\n  - 理清用户意图；\n  - 明确约束条件；\n  - 编写和执行测试；\n  - 主动探测 issue；\n  - 自动修复问题。\n\n## 5. 最终目标：让 Agent 交付可直接上线的结果\n\n- 理想状态下，Agent 不应只是生成一段需要人反复检查的代码。\n- 它应该在完成自我验证和修复后，交付一个可以“直接”投入生产的版本。\n- 也就是说，AI 编程的目标不是让人不断充当审核者，而是让系统自身具备足够的验证、约束和修复能力。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781521913247,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5fa38631123252f2b7a48c7fd9bf4e9f483bc62b4dea62c0ae0b38116eedc59f",
+  "refs": {
+    "sessionId": "1781520959725_ghu19jed"
+  },
+  "revisionId": "sha256:cc24eb126c1c8833a02f19da247c6c3eca20d4d8517c85a458d9f7e6da5b45ae",
+  "schemaVersion": 1,
+  "updatedAt": 1781521913247
+}

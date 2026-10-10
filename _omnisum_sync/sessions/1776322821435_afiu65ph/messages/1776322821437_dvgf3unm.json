@@ -1,0 +1,20 @@
+{
+  "createdAt": 1776322700008,
+  "entityType": "message",
+  "id": "1776322821437_dvgf3unm",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# TTS 性价比推荐速览\n\n## 核心结论\n\n这条讨论里，真正有价值的信息主要集中在两类方案：\n\n- **闭源/平台型方案**：推荐阿里百炼，集成了多个语音模型，适合想快速上手、少折腾的人。\n- **开源方案**：推荐 IndexTTS 2，实测在自动化生产场景下更稳定，更接近“可落地”。\n\n## 具体推荐\n\n### 1. 阿里百炼：综合型选择\n\n有用户明确推荐注册 **阿里百炼**，因为里面可直接使用 3 个语音模型：\n\n- `CosyVoice`\n- `QwenTTS`\n- `MiniMax`\n\n其评价大致是：\n\n- **MiniMax**：效果最好，但也是最贵\n- **MiniMax 的声音克隆**：最接近真人\n- **CosyVoice / QwenTTS**：也值得用，且支持音色设计\n\n适合人群：\n\n- 想要 **省时间、直接调用现成能力**\n- 对 **真实感、声音克隆效果** 有较高要求\n- 接受为更好效果支付一定成本\n\n### 2. IndexTTS 2：开源里更偏“生产可用”\n\n另一位用户给出的结论更明确：\n\n> 在开源模型中，**IndexTTS 2** 是其自动化生产实测里表现最好的。\n\n他对比过的模型包括：\n\n- `CosyVoice`\n- `Qwen3TTS`\n- `SparkTTS`\n- `FishTTS`\n- `MaskGCT`\n- `XTTS`\n\n最终认为：\n\n- **IndexTTS 2 最稳**\n- 更适合 **生产环境落地**\n- 不只是“能跑”，而是“更可用”\n\n适合人群：\n\n- 更看重 **稳定性和可部署性**\n- 希望优先选择 **开源方案**\n- 有一定技术能力，愿意自己部署和调优\n\n## 一句话判断\n\n### 如果你想要“省心+效果好”\n\n优先看 **阿里百炼 + MiniMax**。\n\n### 如果你想要“开源+可生产”\n\n优先看 **IndexTTS 2**。\n\n## 总结\n\n这条讨论传递出的有效信息其实很清晰：\n\n- **闭源性价比路线**：阿里百炼是一个高效入口，`MiniMax` 效果最好，`CosyVoice` 和 `QwenTTS` 也很实用。\n- **开源性价比路线**：`IndexTTS 2` 在实际生产测试中更稳，属于更值得优先尝试的方案。\n\n如果用一句话概括：\n\n> **想要最低决策成本，选阿里百炼；想要开源且真能落地，先试 IndexTTS 2。**",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1776322700008,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a68893ad509ab5075ec705905f8323e4ee7e82b0a2df3b5bcddbbecdd2bbf97a",
+  "refs": {
+    "sessionId": "1776322821435_afiu65ph"
+  },
+  "revisionId": "sha256:56c876ad0d73e563863c3a794979846364cc0cc9067a1097463d0b8b458cc09d",
+  "schemaVersion": 1,
+  "updatedAt": 1776322700008
+}

@@ -1,0 +1,75 @@
+{
+  "createdAt": 1781151369537,
+  "entityType": "session",
+  "id": "1781151369537_02rkubfs",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将文中的prompt改写为适合自己视频素材目录、脚本文件和输出格式的版本。",
+      "尝试建立一个小型工作流：转录视频、生成剪辑决策JSON、用ffmpeg自动拼接输出。",
+      "如果要正式用于生产，补充人工审核环节，尤其检查选片质量、节奏和色彩管理。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781173446138,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用AI自动剪辑发布视频",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "AI可通过转录服务识别多条take中的口误和停顿，并辅助选择最佳片段。",
+      "用JSON记录每个场景采用的clip和时间范围，有助于将创意剪辑流程结构化。",
+      "ffmpeg、Figma MCP、Remotion等工具可被AI统一编排，减少人工进入传统视频编辑器的需求。"
+    ],
+    "oneHighValuePoint": "将视频剪辑任务拆成转录、选片、生成剪辑JSON、ffmpeg渲染和工作流编排，是可复用的自动化思路。",
+    "oneLineReview": "有启发性的AI视频剪辑自动化案例，但内容偏碎片化，证据和方法细节不足。",
+    "primaryCategory": "AI工作流",
+    "rating": "C",
+    "rejectReason": "内容主要是推文摘录和单个prompt，缺少完整流程、参数细节、失败案例与可验证结果，方法论沉淀有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "视频自动化",
+      "Prompt工程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/jesselaunz/status/2064837696523231447",
+      "https://x.com/trq212/status/2064826394589442448",
+      "https://thariqs.github.io/cc-video-editing-deck/",
+      "https://docs.google.com/document/d/1oZSqVtKpocDzbmA4IgWOle_RUvBF0zhAc6XKr_rG5ZU/edit?tab=t.0"
+    ],
+    "summaryBrief": "文章整理了 Thariq 使用 Fable 自动剪辑其发布视频的案例，核心是通过一个 prompt 调用转录服务、筛选最佳片段、生成JSON剪辑清单，并用 ffmpeg 等工具输出最终视频。",
+    "tags": [
+      "AI视频剪辑",
+      "Fable",
+      "Claude",
+      "ffmpeg",
+      "工作流编排"
+    ],
+    "title": "AI接管Fable发布视频剪辑",
+    "totalScore": 54.5,
+    "url": "omnisun://digest/1781151369537"
+  },
+  "payloadHash": "sha256:a0658fc95b321bb64c3b9e27977ebf5c319b70f5ce5f7d4cd6dbc449265c26fb",
+  "refs": {},
+  "revisionId": "sha256:1c6ffc073bb9f4a37b7a74e8c19f16e3ebb17078c71f6752c405a2150ae0ac79",
+  "schemaVersion": 1,
+  "updatedAt": 1781173448237
+}

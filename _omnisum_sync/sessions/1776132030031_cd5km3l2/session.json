@@ -1,0 +1,65 @@
+{
+  "createdAt": 1776132030031,
+  "entityType": "session",
+  "id": "1776132030031_cd5km3l2",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "无需精读或留存，可直接删除",
+      "如关注 Agent 工程落地，改读成熟开源框架的架构文档、对比评测和实战复盘"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1776132047132,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 2,
+      "novelty": 2,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "开源Agent框架反思短帖",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量极低，缺乏可复用经验和证据，保存成本高于参考价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent harness 自研方案可能在与成熟开源框架对比后暴露设计缺陷",
+      "在工程实践中，二次开发成熟框架通常比完全自研更省成本"
+    ],
+    "oneHighValuePoint": "自研 Agent 基础设施前，先系统评估成熟开源框架，往往比从零造轮子更高效。",
+    "oneLineReview": "有方向感但几乎没有展开，属于价值很低的社交媒体感想。",
+    "primaryCategory": "AI工程实践",
+    "rating": "E",
+    "rejectReason": "内容过短且高度碎片化，核心观点仅停留在“自研较累、准备基于优秀框架二开”，缺少具体问题拆解、比较过程、方法框架与实证支撑。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "Agent框架",
+      "个人经验随想"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一条关于作者复盘自建 agent harness 工程的短帖，结论是参考开源 agent 后发现自身方案存在不少问题，下一步考虑基于成熟框架二次开发。整体仅有态度表达，没有展开具体分析与实践细节。",
+    "tags": [
+      "Agent",
+      "开源框架",
+      "Harness",
+      "二次开发",
+      "社交媒体短帖"
+    ],
+    "title": "超级个体｜柿子: 今天结合目前市面上优秀的开源agent进行分析我自己的agent harness工程，果然发现了很多问题 下一步准备基于优秀框架进行二开了，自己造轮子还是很累，…",
+    "totalScore": 24.5,
+    "url": "https://x.com/yaohui12138/status/2043683147691487422"
+  },
+  "payloadHash": "sha256:830dc66165277a61bcf4d1e0ac91248d907d9a55115637d6f44ee84b5214b8dc",
+  "refs": {},
+  "revisionId": "sha256:fb768a5427bd6e90d8874998762fa518d07116410dd631a062cbcc2c3ebcd37f",
+  "schemaVersion": 1,
+  "updatedAt": 1776139457534
+}

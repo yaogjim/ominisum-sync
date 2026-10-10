@@ -1,0 +1,20 @@
+{
+  "createdAt": 1780562424294,
+  "entityType": "message",
+  "id": "1780562452913_uauz21jm",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一句话总结\n\n**pi-agent-browser-native 是一个给 Pi 编程智能体用的浏览器自动化扩展，把原本容易出错的命令行浏览器操作，包装成更安全、稳定、低上下文消耗的原生 `agent_browser` 工具。**\n\n## 极简精炼内容\n\n### 它解决什么问题\n- 让智能体像使用 `read/write/bash` 一样调用真实浏览器。\n- 避免手写 shell 命令带来的转义错误、上下文浪费、截图/下载丢失、会话混乱和敏感信息泄露。\n\n### 核心能力\n- 打开网页、截图、交互式快照、点击、填写表单、下载文件。\n- 支持持久化浏览器配置、认证页面、会话恢复、Electron 桌面应用调试。\n- 提供 `semanticAction`、`job`、`qa` 等高层封装，减少智能体调用步骤。\n- 自动注入 JSON、压缩页面输出、保存大输出为 spill 文件、归档截图/下载为 Pi artifact。\n- 对 stale ref、点击未生效、滚动无效、下拉框异常、tab 漂移等给出恢复建议。\n\n### 安全与可靠性\n- 密码支持 stdin 输入。\n- Cookie、storage、auth、URL、日志等敏感内容会被脱敏。\n- 对危险批处理顺序、过期元素引用、最终提交/购买类操作有防护。\n- 成功点击不等于页面真的响应，建议用快照、URL、文本或截图验证。\n\n### 使用方式\n- 需先安装 upstream `agent-browser`。\n- 再安装：`pi install npm:pi-agent-browser-native`\n- 常见调用：`open → snapshot -i → click/fill → snapshot -i`\n\n## 辩证评价\n\n它的价值在于把“智能体控制浏览器”从脆弱的 CLI 拼接升级为可审计、可恢复、可脱敏的原生工具，特别适合 QA、文档检索、登录态网页和桌面 Electron 应用。  \n但它仍依赖本机已安装且版本匹配的 upstream `agent-browser`，且真实浏览器、登录态、文件产物和桌面可见性都存在环境差异，不能被当成完全托管的浏览器平台。\n\n## 高价值 / 反常识内容\n\n**反常识点：一次点击成功并不代表网页真的处理了点击事件**，该项目专门加入 DOM 事件探测、页面变化摘要和后续验证建议来避免智能体“误以为成功”。  \n**高价值点：它不是重写浏览器自动化引擎，而是薄包装 upstream agent-browser**，重点优化智能体最痛的上下文、会话、artifact、安全脱敏和错误恢复问题。",
+    "prompt_id": "default",
+    "role": "assistant",
+    "timestamp": 1780562424294,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2e35774fdaea2f755993866c58e4da1bb761e588b9bf136e0cab6d5b1bd03322",
+  "refs": {
+    "sessionId": "1780562451909_hmh8mo7o"
+  },
+  "revisionId": "sha256:cba3c0f5da7ac7e1d5ec309dbc5fd45724af46a490820617b191d3a556d5e263",
+  "schemaVersion": 1,
+  "updatedAt": 1780562424294
+}

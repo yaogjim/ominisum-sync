@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781000675542,
+  "entityType": "message",
+  "id": "1781000823125_9gqfmrnr",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 一、深度总结\n\n这条内容核心在讲：**LangChain DeepAgents 的 Harness Profile 功能，可以按不同模型自动切换提示词和工具配置。**\n\n简单说：\n\n> 不同模型适合不同“工具接口”和“行为约束”，Harness Profile 可以让系统根据所选模型，自动套用对应配置。\n\n例子：\n\n- 对 `gpt-5.5`：\n  - 把 `edit_file` 换成 `apply_patch`\n  - 把 `execute` 换成 `shell_command`\n- 这样可以让它的工具使用方式更接近 Codex harness，减少适配成本。\n\n评论区补充了几个点：\n\n1. **模型有性格差异**  \n   有人认为 `GPT-5.5` 偏保守，不爱大规模重构，更喜欢小修小补，所以可以通过 Skill / Prompt 引导它“打开格局”。\n\n2. **已有扩展可用**  \n   如果在 `pi` 中使用 `gpt-5.5`，可以用：\n   ```bash\n   npm:@howaboua/pi-codex-conversion\n   ```\n   让它完全使用 Codex harness。\n\n3. **按模型切工具名很有价值**  \n   因为不同模型熟悉的工具协议不同，统一适配会增加心智负担；自动切换 Profile，可以省掉很多手动调整。\n\n---\n\n## 二、深入浅出解读\n\n可以把大模型 Agent 理解成一个“程序员”。\n\n但不同模型就像不同程序员：\n\n- 有的熟悉 `apply_patch`\n- 有的熟悉 `edit_file`\n- 有的习惯用 `shell_command`\n- 有的习惯用 `execute`\n- 有的大胆重构\n- 有的谨慎修补\n\n如果所有模型都用同一套工具和提示词，就像要求所有程序员都用同一种工作流，结果可能不稳定。\n\n**Harness Profile 的作用，就是给不同模型配不同的“工作环境”。**\n\n例如：\n\n| 模型 | 工具配置 | 行为风格 |\n|---|---|---|\n| GPT-5.5 | Codex 风格工具 | 更容易适配编码任务 |\n| Claude | 适合其习惯的工具 | 更好发挥长上下文能力 |\n| Gemini | 单独提示词和工具 | 减少调用错误 |\n\n它解决的是一个很实际的问题：\n\n> 不是让模型适应工具，而是让工具和提示词适应模型。\n\n这对 Agent 开发很重要，因为 Agent 的效果不只取决于模型能力，还取决于：\n\n- 工具命名\n- 工具描述\n- Prompt 结构\n- 执行环境\n- 模型习惯\n- 错误恢复机制\n\n---\n\n## 三、辩证思考\n\n### 1. 优点：降低适配成本\n\nHarness Profile 最大价值是：**按模型自动适配工具和提示词。**\n\n这样开发者不用每次切模型都重新改配置，尤其适合多模型 Agent 系统。\n\n一句话：\n\n> 模型切换越频繁，Profile 的价值越大。\n\n---\n\n### 2. 优点：释放模型特长\n\n不同模型确实有不同倾向。\n\n有的模型擅长规划，有的擅长代码，有的擅长调用工具。  \n通过 Profile 微调提示词和工具，可以让模型更接近最佳状态。\n\n这不是“玄学调参”，而是工程适配。\n\n---\n\n### 3. 风险：过度定制会增加复杂度\n\n但问题也明显：\n\n如果每个模型都搞一套 Profile，系统会越来越复杂。\n\n可能出现：\n\n- 配置难维护\n- 行为不一致\n- Debug 成本上升\n- 换模型后结果差异过大\n- Profile 本身变成隐性技术债\n\n所以 Profile 很有用，但不能滥用。\n\n---\n\n### 4. 风险：别把模型缺点都交给 Prompt 修\n\n比如评论里说 GPT-5.5 偏保守，可以用 Skill 让它“打开格局”。\n\n这有道理，但也要警惕：\n\n> Prompt 可以引导模型，但不能彻底改变模型本身的能力边界。\n\n如果模型本身不擅长复杂重构，强行鼓励它大胆改，可能带来更高风险。\n\n尤其在代码任务中，“大胆”不一定等于“正确”。\n\n---\n\n## 四、我的结论\n\nHarness Profile 是一个很实用的 Agent 工程机制。\n\n它的本质不是简单换工具名，而是：\n\n> 为不同模型提供最适合它的工作协议。\n\n它适合用于：\n\n- 多模型 Agent\n- 编程 Agent\n- Codex / GPT / Claude 等模型混用\n- 工具调用差异较大的系统\n- 需要稳定切换模型的开发环境\n\n但最佳实践应该是：\n\n1. **先统一核心能力**\n2. **再针对模型做轻量 Profile**\n3. **只适配关键差异**\n4. **避免每个模型一套完全不同系统**\n5. **用评测结果验证 Profile 是否真的有效**\n\n一句话总结：\n\n> Harness Profile 是让 Agent 从“一个配置跑所有模型”，走向“因模型制宜”的关键工程手段。",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1781000675542,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:611f54aae4ac6dd85c36211d6a2d7b98af98b6503893ef31b87ebea801cce003",
+  "refs": {
+    "sessionId": "1781000822881_yvxczvxy"
+  },
+  "revisionId": "sha256:1c3d3bcfc371fcf22da34f42cf5ef0798526b52b7c83c4fa5f13316a2f4eb24f",
+  "schemaVersion": 1,
+  "updatedAt": 1781000675542
+}

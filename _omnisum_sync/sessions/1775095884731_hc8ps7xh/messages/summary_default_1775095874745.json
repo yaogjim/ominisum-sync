@@ -1,0 +1,23 @@
+{
+  "createdAt": 1775095874745,
+  "entityType": "message",
+  "id": "summary_default_1775095874745",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "一句话总结：这是一个把 “做界面靠感觉” 变成 “按行业规则自动生成设计系统和代码建议” 的 AI UI/UX 技能包。\n\n## 核心内容\n- **定位**：面向多平台、多框架的 UI/UX AI 技能，帮助生成设计系统、页面结构、配色、字体、交互与交付检查项。  \n- **能力**：内置多域检索与推理引擎，可按行业匹配落地页模式、UI 风格、色板、字体组合，并输出反模式与可访问性要求。  \n- **覆盖**：支持 Web、移动端与跨端，适配 React、Next.js、Vue、SwiftUI、Flutter、React Native 等 15 类技术栈。  \n- **使用**：既可在 Claude Code、Codex CLI、Cursor 等助手中安装调用，也可直接运行 Python 脚本生成设计系统并持久化为`design-system/`。  \n\n## 辩证评价\n它的强项不是 “直接画得炫”，而是把设计知识库、行业经验和实现约束打包成可复用流程，明显提高一致性与交付速度。  \n但它仍依赖预设规则和模板，若团队品牌调性很强或需求高度实验性，输出可能趋于稳妥而非突破。  \n\n## 高价值 / 反常识\n真正提升 UI 质量的，往往不是多会写 CSS，而是先选对行业模式、避开反模式，再进入实现。  \n反常识的是，这个项目最有价值的资产未必是组件代码，而是那套 “产品类型 → 风格 / 颜色 / 版式 / 禁忌” 的推理规则。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1775095874745,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8f936a4d50388eb2b77070e5e0337987b6de113ed476403a47ba20f30e065fc8",
+  "refs": {
+    "sessionId": "1775095884731_hc8ps7xh"
+  },
+  "revisionId": "sha256:3ccef1f5ead57975177f64bc41ef13f5a7be8bfc480a61b91b4eba43aea36945",
+  "schemaVersion": 1,
+  "updatedAt": 1775095874745
+}

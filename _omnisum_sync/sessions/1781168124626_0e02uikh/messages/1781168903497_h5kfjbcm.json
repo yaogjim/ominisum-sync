@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781168876497,
+  "entityType": "message",
+  "id": "1781168903497_h5kfjbcm",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n作者原本不太信任“纯 Vibe Coding”（完全让 AI 主导写代码），担心失控和产生低质量代码；但这次重构 AITDK 官网时，他尝试几乎不手写代码，主要依靠 Claude Code 完成重构，整体体验不错。新版官网上线后，速度和体验都有改善，作者也因此考虑后续项目继续用 TanStack 重构。\n\n---\n\n## 1. 背景：为什么想重构 AITDK 官网\n\n- 旧版 AITDK 官网是基于 **SaaSBold** 搭建的。\n- 网站功能和 UI 基本都是手工实现，存在几个问题：\n  - **加载速度不理想**\n  - **用户体验一般**\n  - **部署绑定在 Vercel 上**\n- 这次重构的目标是：\n  - 提升网站速度和体验\n  - 避免被单一平台绑定\n  - 尝试一次“纯 Vibe Coding”的开发方式\n\n---\n\n## 2. 作者对 Vibe Coding 的态度变化\n\n- 过去作者比较抗拒 Vibe Coding，原因是：\n  - 担心完全交给 AI 会失去控制\n  - 担心代码质量变差，变成“屎山”\n  - 风险较大\n- 之前更倾向于“人机协作”模式：\n  - **Claude Code 主写**\n  - 作者和 **Codex** 负责 review、辅助修改\n- 这次重构 AITDK 官网，作者想换一种方式，体验完整的纯 AI 编码流程。\n\n---\n\n## 3. 技术选型：最终选择 TanStack\n\n作者的核心诉求是：**一套代码可以顺滑部署到多个平台**，例如：\n\n- Cloudflare Workers\n- Vercel\n- Railway\n- Dokploy\n\n### 对比的几个方案\n\n#### Next.js\n\n- 作者过去一直在用。\n- 即使搭配 **OpenNext** 部署到 Cloudflare Workers，效果也不是特别理想。\n\n#### Vinext\n\n- 这是 Cloudflare 基于 Vite 重新实现 Next.js API 的兼容方案。\n- 优点：\n  - 速度很快\n- 顾虑：\n  - 当时版本还处于 `v0.0.x`\n  - 最近才发布 `v0.1.x`\n  - 公开可参考的生产案例较少，稳定性让作者有些担心\n\n#### TanStack\n\n- 最近很火。\n- 特点：\n  - 支持全平台部署\n  - 很轻量\n  - 速度快\n- 作者还看到 **Lovable** 也切换到了 TanStack，因此对它印象不错。\n\n### 最终选择\n\n综合对比后，作者认为 **TanStack 最符合需求**，于是选择基于 TanStack 开始重构。\n\n---\n\n## 4. 使用的模板：shipany-tanstack\n\n作者使用的是 `@idoubicc` 新上线的 **shipany-tanstack** 模板。\n\n他最看重其中两点：\n\n### 多平台部署支持\n\n支持部署到：\n\n- Cloudflare Workers\n- Vercel\n- Railway\n- Dokploy 等\n\n### 多数据库支持\n\n支持多种数据库：\n\n- PostgreSQL\n- MySQL\n- SQLite\n- D1\n- Turso 等\n\n这正好满足作者“不想被平台绑定”的核心诉求。\n\n---\n\n## 5. 重构流程：基本由 Claude Code 完成\n\n作者总结了这次纯 Vibe Coding 的重构步骤：\n\n### 第一步：逐页复刻线上网站\n\n- 使用 `/clone-website skill` 逐一复刻 `aitdk.com` 生产环境中的各个页面。\n- 这一步没有直接提供旧源码。\n- 原因是作者担心 AI 会“偷懒”，直接沿用旧代码和旧结构。\n\n### 第二步：对照源码检查遗漏\n\n- 让 Claude Code 对照旧源码检查是否有遗漏。\n- 如果发现缺失内容，再进行补齐。\n- 这样既避免 AI 直接复用旧结构，又能保证内容完整。\n\n### 第三步：重新设计页面\n\n- 让 Claude Code 重新设计各个页面。\n- 流程是：\n  - 先设计首页\n  - 首页效果满意后，再继续设计内页\n- 作者会给 AI 一些参考网站，也会让 AI 自由发挥。\n- 有时 AI 自由发挥还能带来一些惊喜。\n\n---\n\n## 6. 重构耗时与结果\n\n- 整个重构大约耗时 **一天**。\n- 其中最花时间的是第三步：页面设计。\n- 作者让 Claude Code 设计了很多个版本，最后从中挑选一个最顺眼的方案。\n\n新版官网已在周一上线，观察两天后，作者认为：\n\n- 整体体验比较满意\n- 网站速度也比较满意\n- 后续计划把长期维护的项目都用 **TanStack** 重构\n\n---\n\n## 7. 相关优惠信息\n\n作者提到，如果需要购买 **shipany-tanstack**，可以使用优惠码：\n\n> `BLANK`\n\n优惠内容：\n\n- 减免 **80 美元**\n- 相当于 **169 美元** 到手多套模板：\n  - shipany-next\n  - shipany-vinext\n  - shipany-tanstack\n\n---\n\n## 8. 热门回复中的补充信息\n\n- 有用户问：第一步逐一复刻时，是否需要提供 `aitdk.com` 的项目代码？\n- 作者回复：\n  - **第一步没有提供源码**\n  - **第二步才提供源码用于对照检查**\n- 也有用户关心 `shipany-tanstack` 模板的完成度和稳定性，因为它刚推出不久，文档也相对简单。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781168876497,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:74bf0dfdf27fac90e85a152cda7c5e580c3eb2b9b09ca81d9a1a3e308947b426",
+  "refs": {
+    "sessionId": "1781168124626_0e02uikh"
+  },
+  "revisionId": "sha256:855a3563e0a8f544aea5f0f5439350d879793bcc4eefd64f607a3bb51fbd1d93",
+  "schemaVersion": 1,
+  "updatedAt": 1781168876497
+}

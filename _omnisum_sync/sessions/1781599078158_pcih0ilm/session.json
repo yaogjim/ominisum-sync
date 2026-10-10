@@ -1,0 +1,73 @@
+{
+  "createdAt": 1781599078158,
+  "entityType": "session",
+  "id": "1781599078158_pcih0ilm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理自身Agent产品中的通用评估信号，如用户纠正、重复请求、拒绝执行、负反馈等。",
+      "抽样多轮真实对话轨迹，构建感知错误或类似指标的数据集。",
+      "设计JSON格式标签与简短理由，先用多模型辅助标注，再对分歧样本人工审核。",
+      "选择强开源模型进行基线提示测试，再尝试LoRA微调评估性能和成本。",
+      "在一个业务域训练后，拿另一个业务域的轨迹做迁移验证，判断评估器是否具备通用性。"
+    ],
+    "archiveReason": "提供了构建低成本专用评估器的完整思路，包括指标定义、数据构造、标注流程、微调设置和跨域验证，对Agent评估体系建设有参考价值。",
+    "classifiedAt": 1781599453558,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "低成本轨迹感知错误评估器",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "感知错误指用户认为助手犯错或需要纠正的情况，不等同于客观正确性或用户满意度。",
+      "可从用户纠正、拒绝代理操作、重复请求、助手承认错误等追踪信号中推断感知错误。",
+      "生产轨迹评估可先用模型辅助标注，再在模型分歧样本上引入二次模型裁决或人工标注。",
+      "LoRA SFT 可将强开源模型提升到接近或超过闭源前沿模型的分类表现。",
+      "专用评估模型在高频Trace分析场景下可能带来10到100倍成本下降。",
+      "跨数据集测试是验证评估器通用性和迁移能力的重要实验设计。"
+    ],
+    "oneHighValuePoint": "将“感知错误”定义为跨应用通用信号，并通过单域训练、异域验证证明专用Judge具备一定迁移能力。",
+    "oneLineReview": "一篇有实际参考价值的Agent轨迹评估案例，亮点在于把通用评估信号转化为低成本专用Judge。",
+    "primaryCategory": "AI应用评估",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "Agent观测与追踪",
+      "模型微调"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 LangChain 与 Fireworks 通过微调 Qwen 模型构建 Trace Judge，用于检测用户交互中的“感知错误”。模型在两个生产追踪数据集上接近或超过前沿模型表现，并显著降低大规模推理成本。",
+    "tags": [
+      "LangChain",
+      "Fireworks",
+      "Trace Judge",
+      "感知错误",
+      "Qwen微调",
+      "Agent评估"
+    ],
+    "title": "用 Fireworks 构建一个便宜 100 倍的跟踪判断器",
+    "totalScore": 70.5,
+    "url": "https://x.com/Vtrivedy10/status/2066571435871551655"
+  },
+  "payloadHash": "sha256:61b9be862d13b2c9ebae469149c75e6a1ce7606084c95163a59d1ef9b6096672",
+  "refs": {},
+  "revisionId": "sha256:3d7f1ab67350aa5c7951529539f8a6ec517759319205759047ea75e0b7ad7301",
+  "schemaVersion": 1,
+  "updatedAt": 1781600112991
+}

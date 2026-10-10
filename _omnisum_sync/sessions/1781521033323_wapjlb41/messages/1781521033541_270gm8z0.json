@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781520879438,
+  "entityType": "message",
+  "id": "1781521033541_270gm8z0",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章总结：如何构建自己的 Agent 框架\n\n## 核心观点\n\nMike Piccolo 强调：**构建自己的 Agent 框架并不是概念讨论，而是可以落地的工程实践**。  \n他发布了一个线上项目：**[storybook.iii.dev](http://storybook.iii.dev)**，展示了他们用于构建自身 Agent Harness 的真实组件。\n\n## 背景：多数团队选择“采用框架”\n\n当前大多数 Agent 团队并不会从零搭建框架，而是直接采用现成方案，例如：\n\n- LangChain / LangGraph\n- OpenAI Agents SDK\n- Anthropic SDK\n- CrewAI\n- AutoGen\n- 各类工具调用、记忆模块、循环与编排机制\n\n这些框架降低了上手门槛，但也可能带来灵活性、可控性和生产化方面的限制。\n\n## 他的方案：开放可复用的核心组件\n\nMike 表示，`storybook.iii.dev` 中包含了他们构建 Agent Harness 所使用的**确切组件**，并且这些组件可以被复用。\n\n重点包括：\n\n- 相同的执行引擎\n- 相同的工作节点\n- 可根据需求替换组件\n- 支持生产环境部署\n- 支持按需扩展\n\n## 产品与技术启示\n\n这篇内容的核心价值在于：  \n**Agent 框架不一定只能“选型”，也可以根据业务需求自建一套可控、可扩展、可生产化的系统。**\n\n对于成熟团队来说，自建框架的意义在于：\n\n- 更强的系统可控性\n- 更适合自身业务流程\n- 避免被单一框架绑定\n- 更方便做生产级部署和扩展\n- 能围绕具体业务构建专属 Agent 基础设施\n\n## 一句话总结\n\nMike Piccolo 发布了一个可复用的 Agent 框架组件示例，强调团队可以不只是采用现成框架，而是构建属于自己的、可替换、可部署、可扩展的生产级 Agent 系统。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1781520879438,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:35d435eda32a766a6f96772f627cf4fe49e2cce9d8e6054e5c45c98399be3819",
+  "refs": {
+    "sessionId": "1781521033323_wapjlb41"
+  },
+  "revisionId": "sha256:361c28cfe3cda3912910707401a283a22d050019e43b3a68d0b63ff7d0668837",
+  "schemaVersion": 1,
+  "updatedAt": 1781520879438
+}

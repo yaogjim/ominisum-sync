@@ -1,0 +1,108 @@
+{
+  "createdAt": 1780890023242,
+  "entityType": "session",
+  "id": "1780890023242_l3bcctyj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "仅速览其核心观点，不必精读全文",
+      "结合真实招聘数据和团队实践验证其判断是否成立",
+      "重新评估个人职业护城河是否过度依赖可被LLM快速补足的知识",
+      "关注AI协作、系统判断、产品理解和跨职能影响力等更难自动化的能力"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1780998931948,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "LLM侵蚀工程师护城河",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "human-in-the-loop.bearblog.dev",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1780890531892,
+        "imageId": "img-2",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# 文章总结：LLM 正在侵蚀我的软件工程职业，我不知道该怎么办\n\n作者是一名有**10 年经验的软件工程师**，长期深耕金融、支付、记账等后端领域。他认为，LLM 正在逐步削弱软件工程师过去赖以区分自己的核心能力：**领域知识、调试能力、架构与代码质量判断**，让资深工程师越来越难通过经验建立竞争壁垒。\n\n---\n\n## 1. 作者的职业背景：曾靠金融支付领域经验建立优势\n\n- 作者最初做 Web 前端，后来转向 Web 后端，并长期工作在**金融、记账、支付处理**等领域。\n- 他积累了大量业务和技术知识，例如：\n  - PCI 合规\n  - 复式记账\n  - 托管账户 /escrow\n  - 对账 /reconciliation\n  - 支付生命周期\n  - 银行转账幂等性\n- 因为这些知识需要多年实践积累，作者原本认为自己可以靠 “金融支付领域专家” 身份，在软件工程市场中保持差异化。\n\n---\n\n## 2. 第一根支柱被侵蚀：领域知识不再稀缺\n\n- 作者加入一家金融公司后，公司全面拥抱 AI，从入职第一天起就提供**ChatGPT 和 Claude Enterprise**，鼓励员工用 AI 做研究、方案设计和编码。\n- 他负责改造一个混乱的旧在线支付系统，公司看重的正是他过去建设支付系统的经验。\n- 起初，他写设计文档时很少使用 AI，认为 LLM 只是 “随机鹦鹉”，无法替代自己的专业知识。\n- 但经理提醒他：代码交付速度不错，设计文档太慢，应该更多使用 AI。\n\n### 作者的震撼\n\n- 使用 AI 后，他发现 LLM 不仅能加速写文档，还能帮助做系统设计决策。\n- 过去需要多年经验才能理解的内容，例如：\n  - 支付系统怎么设计\n  - 如何避免重复扣款\n  - 不同实现方案的取舍\n  - 收单、支付链路、幂等机制  \n  LLM 都能通过提示词串联起来。\n- 作者意识到：自己多年积累的领域知识，正在变得 “可提示化”。\n\n---\n\n## 3. 第二根支柱被侵蚀：调试和分布式系统经验也被 AI 攻破\n\n- 作者原本认为，即使 LLM 会写设计文档和代码，**调试复杂生产问题**仍然是人类工程师的护城河。\n- 他有丰富经验，尤其擅长：\n  - 生产环境问题排查\n  - 竞态条件\n  - 分布式系统故障\n  - 第三方接口问题\n\n### AI 调试能力快速提升\n\n- 起初，LLM 主要用于写单元测试，作者并不完全信任它写完整实现。\n- 后来，随着 Claude Code、Codex 等工具发展，AI 开始承担更多编码任务。\n- 再后来，MCP、Agent 工作流、Claude 4.5 等出现，AI 具备了读取上下文、接入 Sentry 等工具并自动修 bug 的能力。\n\n### 关键数据和案例\n\n- Claude 4.5 在给定堆栈信息和上下文后，大约能解决**60% 的 bug**。\n- 有些过去需要作者**花 1 天全职排查**的问题，被 Claude Code 一次性解决。\n- 后续随着 Claude 4.6、4.7、GPT 5.5、Opus 4.8、DataDog MCP 等工具发展，作者称：\n  - 现在约**90% 的 bug 可以被一次性解决**\n  - 包括复杂竞态条件、边界情况、第三方集成问题、未文档化 API 行为等\n  - 甚至包括作者过去自己也解决不了、需要**2 天全职调试**的分布式系统问题\n\n### 作者的结论\n\n- 他仍然有工作，因为还需要人类审查代码、引导 AI。\n- 但他感觉自己已经从 “有领域壁垒的资深工程师”，变成了 “会操作 LLM 的普通资深工程师”。\n- 过去的金融支付知识、调试直觉、分布式系统经验，现在都可以被提示词调用出来。\n\n---\n\n## 4. 市场变化：人人都被推向 “通用工程师”\n\n- 作者认为，过去行业相信：\n  - 通才有通才的位置\n  - 专才有专才的价值\n- 但 LLM 让专门领域知识变得更容易获取，市场正在把所有工程师都推向 “通用型工程师”。\n\n### 供需问题\n\n- 如果每个人都能借助 LLM 变成 “通才”，那么通才的供给会增加。\n- 如果市场需求没有同步增长，通才的价格和议价能力就会下降。\n- 作者担心，软件工程岗位需求正在减少，因此竞争会更激烈。\n\n---\n\n## 5. 第三根尚未完全倒下的支柱：代码质量与架构判断\n\n- 作者认为自己最后还剩一项优势：**代码质量和软件架构能力**。\n- 他长期重视重构、代码整洁和架构设计，熟悉很多架构理念，例如：\n  - DDD\n  - 六边形架构\n  - Clean Architecture\n  - SOLID 原则\n  - ADR 架构决策记录\n\n### 但行业对 “好代码” 的需求正在下降\n\n- 作者观察到，AI Agent 目前仍然很容易写出糟糕代码，例如：\n  - 循环依赖\n  - 重复代码\n  - 不必要注释\n  - 混合纯函数和副作用\n  - 忽视 SOLID 原则\n- 按理说，这应该让人类工程师继续有价值，因为需要人类保证代码库质量。\n\n### 现实却是：行业开始降低代码质量标准\n\n- 作者认为，“架构能力” 和 “代码质量判断” 正在被简化成一个词：**taste，品味**。\n- 更重要的是，行业似乎不再追求 A 或 B 级代码库。\n- 因为未来代码更多是写给 LLM 读，而不是写给人类长期维护。\n- 只要代码库不是完全不可维护的 F 级，C 或 D 级可能也能被接受。\n\n### 作者的失落\n\n- 他过去花大量时间学习和实践高质量代码：\n  - 读书\n  - 做真实项目练习\n  - 和工程师讨论架构取舍\n  - 写 ADR  \n- 但这些能力的市场价值也在下降。\n\n---\n\n## 6. 作者的困境：未来该往哪里转型？\n\n- 作者目前仍然有工作，也认为短期内还能继续就业。\n- 但他对长期职业前景感到迷茫。\n- 他用了**10 年甚至更久**打磨的能力，正在一个个失去稀缺性。\n\n### 裁员和招聘变化加剧焦虑\n\n- 作者提到，公司约**8 个月前**发生过一次裁员，公司称与 AI 无关。\n- 一些很优秀的前同事被裁后，至今还在找工作。\n- 这些人也面临类似问题：过去的领域经验已经不足以让他们脱颖而出。\n- 公司现在重新招聘时，岗位也发生变化：\n  - 过去会写成：“Software Engineer - 某领域”\n  - 现在只写：“Software Engineer”\n  - 团队分配要等 offer 接受后再决定\n- 这说明领域熟悉度不再是强差异化因素。\n\n---\n\n## 7. 可能的出路：寻找 LLM 不容易替代的新领域，但很难\n\n- 作者认为，长期保持就业能力的办法，可能是转向 LLM 不容易掌握的领域。\n- 他考虑过回大学学习：\n  - 数学\n  - 统计学\n  - 高级机器学习\n  - 争取进入前沿 AI 实验室做研究\n- 但现实限制很多：\n  - 他所在国家没有前沿实验室\n  - 少数实验室申请者爆满\n  - 家庭原因让他难以移居国外\n  - 等他准备好转型时，研究岗位也可能被 AI 进一步冲击\n\n---\n\n## 8. 结尾：甚至考虑把木工爱好变成职业\n\n- 在迷茫中，作者半开玩笑地说，也许应该把自己的木工爱好发展成职业。\n- 文章最后补充：这篇文章在 2026 年 6 月 7 日走红后，作者又写了一篇文章回应社交媒体评论并扩展观点。\n\n---\n\n## 核心观点提炼\n\n- LLM 正在让软件工程师多年积累的经验变得 “可提示化”。\n- 领域知识、调试能力、架构判断这三类传统优势，正在被不同程度削弱。\n- 软件工程师仍然需要审查和引导 AI，但个人差异化优势正在下降。\n- 市场可能越来越倾向招聘 “通用软件工程师”，而不是某个领域的专家。\n- 作者真正焦虑的不是当下失业，而是：**未来软件工程师还能靠什么建立长期职业护城河？**",
+        "url": "https://i.ibb.co/qY17WByt/egor-komarov-6u-I9uw-M3-WJQ-unsplash-1-1.jpg",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "Abstract glitch art with pink and yellow patterns by Egor Komarov on Unsplash",
+        "caption": "",
+        "height": 751,
+        "id": "img-2",
+        "nearbyText": "LLMs are eroding my software engineering career and I don't know what to do 06 Jun, 2026 I'm a software engineer, completing 10 years of professional experience this year. I started my career as a web frontend engineer (it was easier for me...",
+        "resolvedUrl": "https://i.ibb.co/qY17WByt/egor-komarov-6u-I9uw-M3-WJQ-unsplash-1-1.jpg",
+        "role": "article",
+        "score": 73,
+        "src": "https://i.ibb.co/qY17WByt/egor-komarov-6u-I9uw-M3-WJQ-unsplash-1-1.jpg",
+        "width": 1920
+      }
+    ],
+    "knowledgePoints": [
+      "LLM在设计文档、代码生成和调试中的能力提升可能降低传统经验壁垒",
+      "领域知识、分布式系统调试和代码质量曾是软件工程师的重要职业护城河",
+      "当AI降低专业知识获取成本后，工程师可能被推向更同质化的通用岗位竞争",
+      "文章认为代码质量的重要性可能因代码主要面向机器生成和维护而下降"
+    ],
+    "oneHighValuePoint": "文章提出LLM可能同时压缩领域专家、调试专家和架构专家的差异化价值，值得作为职业风险信号参考。",
+    "oneLineReview": "一篇有情绪感染力但证据薄弱的AI时代软件工程职业焦虑随笔。",
+    "primaryCategory": "人工智能与软件工程职业",
+    "rating": "C",
+    "rejectReason": "文章主要是个人职业焦虑与趋势判断，缺少数据、案例对照和可执行建议，方法论价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "schema": [
+      {
+        "@context": "http://schema.org",
+        "@type": "article",
+        "description": "I&#x27;m a software engineer, completing 10 years of professional experience this year. I started my career as a web frontend engineer (it was easier for me to de...",
+        "headline": "LLMs are eroding my software engineering career and I don&#x27;t know what to do",
+        "image": "https://i.ibb.co/SDdRz6RG/pawel-czerwinski-G6ez-Kt1-XOs-unsplash-1.jpg",
+        "name": "LLMs are eroding my software engineering career and I don&#x27;t know what to do",
+        "url": "https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/"
+      }
+    ],
+    "schemaTypes": [
+      "article"
+    ],
+    "secondaryCategories": [
+      "职业发展",
+      "AI影响分析"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者以自身金融支付后端经验为例，认为LLM正在削弱领域知识、调试能力和代码架构等软件工程师护城河，使工程师趋向同质化，并表达对长期职业竞争力的担忧。",
+    "tags": [
+      "LLM",
+      "软件工程",
+      "职业焦虑",
+      "AI编程",
+      "领域知识"
+    ],
+    "title": "LLMs are eroding my software engineering career and I don't know what to do | the human in the loop",
+    "totalScore": 47.5,
+    "url": "https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/"
+  },
+  "payloadHash": "sha256:3d2ead7e83354f5646dc85824137aecc01628ac19a324627bafe67efea07ed85",
+  "refs": {},
+  "revisionId": "sha256:5e1e5b2f530b5093bb348106480875decd9d6a1ad4c38dcd1cae83458cf18bdb",
+  "schemaVersion": 1,
+  "updatedAt": 1780998932425
+}

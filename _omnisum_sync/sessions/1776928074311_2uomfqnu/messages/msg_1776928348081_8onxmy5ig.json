@@ -1,0 +1,20 @@
+{
+  "createdAt": 1776928348082,
+  "entityType": "message",
+  "id": "msg_1776928348081_8onxmy5ig",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这是`Cursor`侧拦截了，不是`codex-to-cursor`本身返回的 400。\n\n- 报错里的`ssrf_blocked`和`connection to private IP is blocked`表示：当前发起请求的那一层，不允许访问内网 / 私网地址\n- `http://192.168.8.222:3060/v1`属于局域网私有 IP，所以被挡住了\n- 这通常发生在 Cursor 某些走 “远端代发” 或云侧校验的 OpenAI 兼容请求链路里；它不是像本机`curl`一样直接从你的电脑访问目标地址\n\n先区分两种情况：\n\n**如果 Cursor 和`codex-to-cursor`在同一台机器上**\n- 不要填`192.168.8.222`\n- 改成`http://127.0.0.1:3060/v1`\n- 或`http://localhost:3060/v1`\n\n可优先试：\n```text\nhttp://127.0.0.1:3060/v1\n```\n\n**如果 Cursor 和服务不在同一台机器上**\n- `192.168.8.222`这种内网地址，大概率会被 Cursor 拒绝\n- 你需要把这个服务暴露成一个 “可公开访问的 HTTPS 域名”，再让 Cursor 连这个公网地址\n- 常见做法：`Nginx/Caddy + 域名 + HTTPS`，或者临时用`Cloudflare Tunnel`、`ngrok`一类隧道\n\n比如最终给 Cursor 配成：\n```text\nhttps://your-proxy.example.com/v1\n```\n\n你可以按这个顺序排查。\n\n**1. 先确认服务本身没问题**\n在运行`codex-to-cursor`的那台机器上执行：\n\n```bash\ncurl -s http://127.0.0.1:3060/healthz\n```\n\n再测接口：\n```bash\ncurl -s http://127.0.0.1:3060/v1/responses \\\n  -H \"Authorization: Bearer 你的 OPENAI_API_KEY\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\n    \"model\": \"gpt-5.4\",\n    \"input\": \"hi\"\n  }'\n```\n\n如果这两条通，说明`codex-to-cursor`正常，问题就在 Cursor 到你地址这段链路。\n\n**2. 如果是本机 Cursor 连本机服务**\n把 Cursor 里的 Base URL 从：\n```text\nhttp://192.168.8.222:3060/v1\n```\n\n改成：\n```text\nhttp://127.0.0.1:3060/v1\n```\n\nAPI Key 填你`.env`里的`OPENAI_API_KEY`。\n\n**3. 如果 127.0.0.1 也不行**\n那说明这个 Cursor 配置入口不是 “本机直连”，而是经过 Cursor 某个受限代理逻辑；这时就别再用任何私网地址了，包括：\n- `127.0.0.1`\n- `localhost`\n- `192.168.x.x`\n- `10.x.x.x`\n- `172.16.x.x`到`172.31.x.x`\n\n需要改成公网 HTTPS 地址。\n\n**4. 最稳妥的方案**\n把`codex-to-cursor`部署到一台有公网访问能力的机器上，然后反代成 HTTPS：\n\n```text\nhttps://your-domain.com/v1\n```\n\nCursor 中填写：\n- Base URL: `https://your-domain.com/v1`\n- API Key: 与服务端`OPENAI_API_KEY`完全一致\n\n**5. 临时验证方案**\n如果你只是想快速确认 Cursor 能不能接通，不想正式上公网，可以用隧道工具把本地 3060 暴露出去，例如得到：\n\n```text\nhttps://abc123.trycloudflare.com/v1\n```\n\n然后把这个地址填进 Cursor。只要 Cursor 能访问公网 HTTPS，一般就不会触发 “private IP blocked”。\n\n**结论**\n- `codex-to-cursor`大概率没坏\n- 根因是 Cursor 不允许访问`192.168.8.222`这样的私网地址\n- 同机部署先试`http://127.0.0.1:3060/v1`\n- 不同机或`127.0.0.1`也被拦时，改用公网`HTTPS`域名\n\n如果你愿意，我可以继续直接给你两套可落地配置：\n1. 本机`127.0.0.1`的 Cursor 填写方式  \n2. 用`Cloudflare Tunnel`把`3060`暴露成公网 HTTPS 的最短步骤",
+    "finish_reason": "stop",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1776928348082
+  },
+  "payloadHash": "sha256:65395c221859135e3ce1fa430951e53960f56b57871bc0591f5080b47eb28f0f",
+  "refs": {
+    "sessionId": "1776928074311_2uomfqnu"
+  },
+  "revisionId": "sha256:d19d15f070efcd3111bdb65a95372356947f5a14958e06cbc8be132a3b3b11ff",
+  "schemaVersion": 1,
+  "updatedAt": 1776928348082
+}

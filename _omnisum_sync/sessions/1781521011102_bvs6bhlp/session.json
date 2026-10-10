@@ -1,0 +1,69 @@
+{
+  "createdAt": 1781521011102,
+  "entityType": "session",
+  "id": "1781521011102_bvs6bhlp",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计 Agent 工具时，为每个 tool 增加 schema、权限、路径范围、审批策略和输出限制说明",
+      "在执行工具前加入 parse、validate、policy check、approval、sandbox、execute、bound、record 的生命周期拦截",
+      "对文件写入类工具强制检查 fresh baseline、workspace 边界和 diff/preview 审批信息",
+      "限制 shell、search、read_file 等工具返回内容规模，避免污染模型上下文"
+    ],
+    "archiveReason": "文章提出了工具调用不应被视为简单函数映射，而应作为包含验证、权限、审批、沙箱、输出裁剪和状态记录的契约边界，对 Agent 框架设计有参考价值",
+    "classifiedAt": 1781521593958,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "工具调用应是契约边界",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Tool call 本质是 generated text 对真实环境状态变更的请求，需要 Harness 裁决后才能执行",
+      "工具契约应覆盖 schema 验证、路径安全、权限策略、审批、沙箱、输出裁剪、转录记录和状态更新",
+      "validation 应发生在 approval 之前，避免让用户审批本就无效或危险的请求",
+      "Tool output 会进入上下文，因此结果 bounding 是安全性和工作集准确性的一部分"
+    ],
+    "oneHighValuePoint": "工具调用应被设计为完整生命周期契约，而不是 name 到 handler 的简单函数映射。",
+    "oneLineReview": "一篇有启发的 Agent 工具边界设计短文，方法论价值较高但证据和实现细节不足。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "B",
+    "rejectReason": "缺少具体实现代码、真实案例和数据验证，更多是概念性总结，直接落地性有限",
+    "retentionDecision": "短期参考后可归档，适合作为设计 Coding Agent 工具边界时的检查清单",
+    "secondaryCategories": [
+      "Coding Agent",
+      "工具调用设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章主张 Coding Agent 的工具调用不是简单函数调用，而是模型通过生成文本请求改变环境状态的契约。Harness 需要负责 schema、路径、权限、审批、沙箱、输出边界和状态记录等裁决。",
+    "tags": [
+      "Tool Contract",
+      "Harness",
+      "权限控制",
+      "Agent安全",
+      "上下文管理"
+    ],
+    "title": "工具是契约，而非功能",
+    "totalScore": 68.5,
+    "url": "https://x.com/dongxi_nlp/status/2065200644802101633"
+  },
+  "payloadHash": "sha256:f2ac949be8f92fe7cf641d0576bce7c1d27528ef0a8481357917da6337b60a31",
+  "refs": {},
+  "revisionId": "sha256:aaab29ddc1f481bf83a82b357cce952cb4e08d71ff9825edc099ceef40bc8d18",
+  "schemaVersion": 1,
+  "updatedAt": 1781521967096
+}

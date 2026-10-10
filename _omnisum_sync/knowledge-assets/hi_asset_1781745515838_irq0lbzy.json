@@ -1,0 +1,47 @@
+{
+  "createdAt": 1781745515838,
+  "entityType": "knowledge-asset",
+  "id": "hi_asset_1781745515838_irq0lbzy",
+  "parentRevisionIds": [],
+  "payload": {
+    "assetType": "graph_edge",
+    "clusterId": "ai_agent_engineering",
+    "generator": {
+      "finishReason": "stop",
+      "generatedAt": 1781745515838,
+      "templateId": "value_capture_card"
+    },
+    "payload": {
+      "case": "作者先用 Claude + Gemini 生成前端与 mock 数据，再让 Codex 写代码，然后用 Claude review，最后让 Codex 自己跑 Playwright 做 E2E 测试",
+      "confidence": "medium",
+      "evidence": "网页原文中提到：“先前端 + mock 数据（claude + gemini）”“然后再 codex 写代码”“claude review”“codex 自己跑 playwright 做 e2e 测试”“我自己验收，关 issue”“主要是 codex 前端真不行，一把梭 AI 太放飞”。",
+      "method": "将开发流程拆分为前端原型、代码实现、代码审查、E2E 测试、人工验收多个阶段，并为不同阶段选择不同 AI 工具",
+      "problem": "一把梭式 AI 编程容易失控，尤其是前端结果不稳定",
+      "tool": "Claude, Gemini, Codex, Playwright"
+    },
+    "sourceDigestSessionIds": [],
+    "sourceMessageIds": [
+      "msg_1775198883062_prm9jc2xv",
+      "summary_template_1774403312933_1775198883063",
+      "msg_1775198912969_9ctfgbpn4",
+      "summary_template_1773227348442_1775198912969",
+      "msg_1775199909757_4j2hvzph1",
+      "msg_1775199909757_uvfy6l12g",
+      "msg_1775199909758_p0yra7b9e"
+    ],
+    "sourceSessionIds": [
+      "1775198883093_bq6b8uup"
+    ],
+    "sourceTemplateIds": [
+      "value_capture_card",
+      "template_1774403312933",
+      "template_1773227348442"
+    ],
+    "status": "draft"
+  },
+  "payloadHash": "sha256:c0638de07a56991aaab0d22caf68f99e910fb5d6a5c409e77546a87168d48436",
+  "refs": {},
+  "revisionId": "sha256:3b490cfeee7d556bc6aee4b424c08d3a2c06302ea22b0edea694d6905e56879e",
+  "schemaVersion": 1,
+  "updatedAt": 1781745515838
+}

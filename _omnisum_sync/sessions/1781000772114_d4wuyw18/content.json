@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781000772114,
+  "entityType": "session-content",
+  "id": "1781000772114_d4wuyw18",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Daniel San</strong></header><div class=\"tw-body\">让我简单解释一下代理循环<br><br>它是每个自主代理系统的核心，也是大多数人过度复杂化的部分<br><br>就是这样：<br>向模型发送消息<br>2. 模型回应，可能调用工具<br>3. 你运行该工具<br>4. 将结果追加回消息<br>5. 重复直到 stop_reason 为 end_turn<br><br>步骤4是整个环节，回写是使其成为代理的关键<br><br>模型必须先观察实际发生的情况，然后才能决定下一步行动<br><br>那就是整个循环... 在你使用框架之前，先理解这个基础</div><div class=\"tw-videos\"><a href=\"https://x.com/dani_avila7/status/2064181646903923159\"><img src=\"https://pbs.twimg.com/amplify_video_thumb/2064179527895433216/img/aXSBRMiY7Q-ZTqW8.jpg\" alt=\"视频\" /></a></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Spencer Baggins</strong> <span class=\"tw-eng\">♥ 18.0K · 💬 280</span><p>一位在巴黎过着平静生活的法国工程师，花了30年时间编写现在整个互联网都在运行的软件，却无人知晓他的名字。<br><br>他编写了能够流式传输每一个 YouTube 视频、每一个 Netflix 节目、每一个 TikTok 短视频的代码。他编写了能够运行虚拟的代码。</p></div><div class=\"tw-reply\"><strong>@Shann³</strong> <span class=\"tw-eng\">♥ 4.6K · 💬 159</span><p>什么是代理循环<br><br>过去两年我们一次向代理发出一个任务的提示。这种情况开始发生变化。<br><br>而不是让代理构建着陆页然后自己亲自跟进每一步，你设置一个循环来处理发现、规划、工作、检查，以及</p></div><div class=\"tw-reply\"><strong>@Matt Pocock</strong> <span class=\"tw-eng\">♥ 2.5K · 💬 67</span><p>我将自己10年的教学经验倾注到一项技能中。<br><br>它叫做/teach，并且它能教你任何东西。<br><br>这是它教我解魔方的方法</p></div><div class=\"tw-reply\"><strong>@Dev Anon</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>Write-back 是整个关键。没有它，就只是一个伪装成代理的工具调用。</p></div><div class=\"tw-reply\"><strong>@Kekko D’Amato</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>步骤4是人们忽略的关键洞察。大多数“智能体”失败并非因为模型做出了错误的决策——而是因为上下文窗口没有准确反映实际发生的情况。输入垃圾，输出垃圾，但对于工具结果来说也是如此。</p></div></div>",
+    "pageContent": "Daniel San: 让我简单解释一下代理循环 它是每个自主代理系统的核心，也是大多数人过度复杂化的部分 就是这样：\n向模型发送消息\n2. 模型回应，可能调用工具\n3. 你运行该工具\n4. 将结果追加回消息\n5. 重复直到 stop_reason 为 end_turn 步骤4是整个环节，回写是使其成为代理的关键 模型必须先观察实际发生的情况，然后才能决定下一步行动 那就是整个循环... 在你使用框架之前，先理解这个基础\n[![视频](https://pbs.twimg.com/amplify_video_thumb/2064179527895433216/img/aXSBRMiY7Q-ZTqW8.jpg)](https://x.com/dani_avila7/status/2064181646903923159)\n---\n热门回复 (共 5 条):\n@Spencer Baggins (♥ 18.0K · 💬 280):\n一位在巴黎过着平静生活的法国工程师，花了30年时间编写现在整个互联网都在运行的软件，却无人知晓他的名字。\n\n他编写了能够流式传输每一个 YouTube 视频、每一个 Netflix 节目、每一个 TikTok 短视频的代码。他编写了能够运行虚拟的代码。\n\n@Shann³ (♥ 4.6K · 💬 159):\n什么是代理循环\n\n过去两年我们一次向代理发出一个任务的提示。这种情况开始发生变化。\n\n而不是让代理构建着陆页然后自己亲自跟进每一步，你设置一个循环来处理发现、规划、工作、检查，以及\n\n@Matt Pocock (♥ 2.5K · 💬 67):\n我将自己10年的教学经验倾注到一项技能中。\n\n它叫做/teach，并且它能教你任何东西。\n\n这是它教我解魔方的方法\n\n@Dev Anon (♥ 0 · 💬 0):\nWrite-back 是整个关键。没有它，就只是一个伪装成代理的工具调用。\n\n@Kekko D’Amato (♥ 0 · 💬 0):\n步骤4是人们忽略的关键洞察。大多数“智能体”失败并非因为模型做出了错误的决策——而是因为上下文窗口没有准确反映实际发生的情况。输入垃圾，输出垃圾，但对于工具结果来说也是如此。\n"
+  },
+  "payloadHash": "sha256:5b5a16e3efe67fec4eb2de36aafea271a65971f2f46e691b138a46bb9d031187",
+  "refs": {},
+  "revisionId": "sha256:4440139b7976124c047e5d432c5402f9237fda1986cffc6ea26c16c62fcc7f68",
+  "schemaVersion": 1,
+  "updatedAt": 1781170349073
+}

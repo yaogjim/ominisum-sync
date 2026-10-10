@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781169909264,
+  "entityType": "session",
+  "id": "1781169909264_62nvntsn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在接收AI生成Demo需求时，明确标注Demo与生产级产品的差异清单。",
+      "建立从Demo到上线的评估模板，覆盖权限、数据迁移、异常处理、安全、性能、运维和维护成本。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781170058661,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI演示降低开发错觉",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI生成Demo容易制造“已完成80%”的视觉错觉，但权限、数据、异常、安全、性能、运维等工程问题仍未解决。",
+      "AI Coding工具正在模糊产品经理、设计和研发之间的职能边界，也会改变需求沟通方式。"
+    ],
+    "oneHighValuePoint": "AI降低的是展示复杂度，而不是产品复杂度，这会放大组织对研发效率的误判。",
+    "oneLineReview": "对AI时代Demo与真实产品落差的观察准确，但深度和证据较有限。",
+    "primaryCategory": "AI与软件研发",
+    "rating": "B",
+    "rejectReason": "主要是个人观察和经验判断，缺少系统方法、数据支撑和完整解决方案，不适合精读。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "产品管理",
+      "组织协作"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出AI Coding工具显著降低了Demo制作门槛，但并未降低真实产品复杂度，反而容易让领导和非研发人员高估研发效率，造成需求、交付和工程质量之间的认知错位。",
+    "tags": [
+      "AI Coding",
+      "Demo陷阱",
+      "需求管理",
+      "研发效率",
+      "产品复杂度"
+    ],
+    "title": "管四: 最近有一个挺有意思，也挺让研发头疼的现象：AI 把做 Demo 的门槛打得太低了",
+    "totalScore": 58.5,
+    "url": "https://x.com/guansi/status/2064224477236601123"
+  },
+  "payloadHash": "sha256:b35c3abd846162f0180c6c635b55952c707e5c0427549cf468b825b53b7372e6",
+  "refs": {},
+  "revisionId": "sha256:5ef724fcb5bf7a954341470e79f19fef2966a51495e1046294c0416bd2e6a170",
+  "schemaVersion": 1,
+  "updatedAt": 1781170163827
+}

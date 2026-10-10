@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781599067272,
+  "entityType": "session-content",
+  "id": "1781599067272_w06wfubt",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Rohit</strong></header><div class=\"tw-body\">LangChain 和 Fireworks 刚刚推出了一个值得借鉴的评估举措：一个微调的 Qwen 评判模型，它能在每一条生产追踪中标记“感知错误”，且运行成本高达 100 倍低于 Opus。<br><br>成本数字受到关注，转账结果更为重要。<br><br>他们在一个应用（他们的文档问答代理）上训练了这个判断系统，然后直接将其指向 Fleet（一个独立的产品），且未进行重新训练。<br><br>它在该领域超越了所有前沿模型。90.8%，对比 Opus 的 90.2%。<br><br>大多数评估人员一旦被转移到新的应用程序就会失效，因为评分标准是针对特定应用的。<br><br>感知到的错误之所以存在，是因为信号是行为性的：用户会纠正你，或者重复请求。这种模式在所有产品中都成立。<br><br>一个设计选择很突出。他们只给评估器提供人类和 AI 的消息，放弃了所有工具调用。他们的赌注是，修正信号存在于对话本身中。<br><br>任何人都可以在你的循环中租用该模型。一个基于你自己的痕迹训练的评判器，其运行成本足够低，能够在所有设备上运行，这就是他们无法购买的护城河。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HK4B79pbEAAn0Db?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@nizima LIVE - Live2D公式VTuberアプリ</strong> <span class=\"tw-eng\">♥ 291 · 💬 33</span><p>/／<br>Become a VTuber Right Now!<br>The Official Live2D Tracking App - nizima LIVE<br>\\＼<br><br>Easy to use motion capture with Live2D models!<br>Start your VTubing journey with little setup! <br><br>Download the free trial now!</p></div><div class=\"tw-reply\"><strong>@Siddharth</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>需要试试 fireworks</p></div></div>",
+    "pageContent": "Rohit: LangChain 和 Fireworks 刚刚推出了一个值得借鉴的评估举措：一个微调的 Qwen 评判模型，它能在每一条生产追踪中标记“感知错误”，且运行成本高达 100 倍低于 Opus。 成本数字受到关注，转账结果更为重要。 他们在一个应用（他们的文档问答代理）上训练了这个判断系统，然后直接将其指向 Fleet（一个独立的产品），且未进行重新训练。 它在该领域超越了所有前沿模型。90.8%，对比 Opus 的 90.2%。 大多数评估人员一旦被转移到新的应用程序就会失效，因为评分标准是针对特定应用的。 感知到的错误之所以存在，是因为信号是行为性的：用户会纠正你，或者重复请求。这种模式在所有产品中都成立。 一个设计选择很突出。他们只给评估器提供人类和 AI 的消息，放弃了所有工具调用。他们的赌注是，修正信号存在于对话本身中。 任何人都可以在你的循环中租用该模型。一个基于你自己的痕迹训练的评判器，其运行成本足够低，能够在所有设备上运行，这就是他们无法购买的护城河。\n![图片](https://pbs.twimg.com/media/HK4B79pbEAAn0Db?format=jpg&name=large)\n---\n热门回复 (共 2 条):\n@nizima LIVE - Live2D公式VTuberアプリ (♥ 291 · 💬 33):\n/／\nBecome a VTuber Right Now!\nThe Official Live2D Tracking App - nizima LIVE\n\\＼\n\nEasy to use motion capture with Live2D models!\nStart your VTubing journey with little setup! \n\nDownload the free trial now!\n\n@Siddharth (♥ 0 · 💬 0):\n需要试试 fireworks\n"
+  },
+  "payloadHash": "sha256:00107dc989c7a24773d524941fad66db35ede060f58b51631c4c2788abd352ab",
+  "refs": {},
+  "revisionId": "sha256:f2297162e1382de855c5f023ce43300220b72df5e41998e2e6f46fe90d19cf4d",
+  "schemaVersion": 1,
+  "updatedAt": 1781600199042
+}

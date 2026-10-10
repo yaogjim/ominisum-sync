@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781599613562,
+  "entityType": "message",
+  "id": "1781599613561_t3br0h92",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Obelisk本地检索工具发布\n\n**评级**: C (41.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI编程工具\n**次类别**: Agent记忆管理, 开发者工具\n**标签**: #Claude Code #Obelisk #本地检索 #Agent Memory #SQLite\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 4 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 2 | 15% |\n| 可迁移性 | 3 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 一个有潜力的 AI 编程会话检索与记忆管理工具发布帖，但论证和实用细节不足。\n**核心高价值点**: 将 Claude Code 历史 session 和 agent markdown 记忆统一沉淀为本地可检索资产。\n\n### 摘要\n文章介绍 Obelisk v0.1.0 发布，可为 Claude Code session 建立本地 SQLite 检索层，查看 agent 记忆、归档过时记忆，并生成每周 coding recap。目前主要支持 Claude Code。\n\n### 知识要点\n- Obelisk 使用本地 SQLite 存储 session 数据，强调数据归用户所有。\n- 工具支持查看 agent 记忆来源、归档过时记忆，并通过 recap 生成人周编码体验总结。\n- 当前主要适配 Claude Code，后续可能支持 Codex、opencode 等工具。\n\n### 行动项\n- 如正在重度使用 Claude Code，可打开 GitHub 仓库快速评估安装和使用成本。\n- 关注其是否补充明确 user case、跨工具支持和检索质量实测。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是产品发布介绍，缺少完整用例、实测数据和方法论展开，信息价值有限。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1781599613562,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:d9734942efbd4d4441f439239894db6d675061a5dd8720d09442bb56e501b9c9",
+  "refs": {
+    "sessionId": "1781599287058_muusvdm2"
+  },
+  "revisionId": "sha256:5ce1e82125befa3f88dc80258bb524154259bdb34a835800963665d736ddf946",
+  "schemaVersion": 1,
+  "updatedAt": 1781599613562
+}
