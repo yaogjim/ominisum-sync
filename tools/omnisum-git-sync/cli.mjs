@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 /**
  * 用法：
- *   node tools/omnisum-git-sync/cli.mjs --repo <clone 目录> [--remote origin] [--branch main] [--json] [--quiet] [--browse]
+ *   node tools/omnisum-git-sync/cli.mjs --repo <clone 目录> [--remote origin] [--branch main] [--json] [--quiet] [--browse] [--no-publish-browse]
  *     --browse：同步成功后在本地生成 browse/（人读 Markdown；失败只报告，不影响同步结果）。
+ *     默认还会把页面发布为 origin 的 `browse` 分支（单提交、仅此分支 --force-with-lease，GitHub 网页可直接阅读）；
+ *     --no-publish-browse 关闭；发布失败只报告，不影响同步结果与退出码。
  *   node tools/omnisum-git-sync/cli.mjs install-launchd --repo <clone 目录> [--interval 300] [--apply]
  *   node tools/omnisum-git-sync/cli.mjs uninstall-launchd --repo <clone 目录>
  *
@@ -15,6 +17,7 @@ import path from 'node:path';
 import process from 'node:process';
 import { fileURLToPath } from 'node:url';
 import { GitSyncError, runGitSync } from './git-sync.mjs';
+import { publishBrowseBranch } from './publish-browse.mjs';
 import { buildPlist, launchdLabel, plistPath } from './launchd.mjs';
 
 function parseArgs(argv) {
@@ -85,8 +88,10 @@ async function main() {
   const repoDir = path.resolve(String(args.repo || process.cwd()));
   const startedAt = Date.now();
   try {
+    const remote = String(args.remote || 'origin');
     const result = await runGitSync({
-      repoDir, remote: String(args.remote || 'origin'), branch: args.branch ? String(args.branch) : null, hostname: os.hostname(),
+      repoDir, remote, branch: args.branch ? String(args.branch) : null, hostname: os.hostname(),
+      publishBrowse: args['no-publish-browse'] ? null : () => publishBrowseBranch({ repoDir, remote, hostname: os.hostname() }),
     });
     const browse = args.browse ? await generateBrowse(repoDir) : undefined;
     await writeStatus(repoDir, { ok: true, at: new Date().toISOString(), durationMs: Date.now() - startedAt, ...result, ...(browse && { browse }) });
@@ -94,6 +99,9 @@ async function main() {
     else if (!args.quiet) {
       console.log(`同步完成：提交=${result.committed} 合并=${result.merged} 推送=${result.pushed} 冲突按整文件解决=${result.resolved.length}`);
       if (browse && !browse.ok) console.error(`browse/ 生成失败（不影响同步）：${browse.message}`);
+      const published = result.browsePublish;
+      if (published?.error) console.error(`browse 分支发布失败（不影响同步）：${published.error}`);
+      else if (published?.published) console.log(`browse 分支已${published.created ? '创建' : '更新'}：${published.files} 页`);
     }
     return 0;
   } catch (error) {

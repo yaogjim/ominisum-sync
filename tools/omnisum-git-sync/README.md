@@ -14,6 +14,7 @@
 ```bash
 node tools/omnisum-git-sync/cli.mjs --repo ~/ominisum-sync          # 同步一次
 node tools/omnisum-git-sync/cli.mjs --repo ~/ominisum-sync --json    # 机器可读输出
+node tools/omnisum-git-sync/cli.mjs --repo ~/ominisum-sync --no-publish-browse  # 不发布 browse 分支
 node tools/omnisum-git-sync/cli.mjs --repo ~/ominisum-sync --browse  # 同步后在本地生成 browse/（人读 Markdown，已被 .gitignore 排除；失败只报告）
 ```
 
@@ -54,3 +55,13 @@ node tools/omnisum-git-sync/cli.mjs uninstall-launchd --repo ~/ominisum-sync
 1. 在 clone 的 `.git/info/attributes` 加一行 `_omnisum_sync/** merge=binary`（整文件合并）；
 2. 冲突时对 `_omnisum_sync/` 下的文件选"接受远端"，不要手工拼接内容；
 3. 不要对该目录使用 `--force` 推送或 rebase。
+
+## browse 分支（GitHub 网页浏览）
+
+每次同步成功后（含"已是最新"），脚本默认把 `browse/` 页面发布为远端的 **`browse` 分支**：无父的单提交，页面位于分支根，`README.md` 即首页；在 `https://github.com/<owner>/<repo>/tree/browse` 即可阅读。
+
+- 不进 `main`：用临时目录和临时索引构造提交，**不碰你的工作区、索引、HEAD 与 main**。
+- 内容没变就不推送；变了就用 `--force-with-lease` 覆盖该分支（仅此分支；`main` 永不强推）。他人抢先改了该分支则失败并报告，不覆盖。
+- 发布失败只提示，不影响同步结果与退出码；`--no-publish-browse` 可关闭，直接在 GitHub 删除 `browse` 分支即可回退。
+- 想要网页站点：在仓库 Settings → Pages 选 `browse` 分支（可选，本工具不会替你开启）。
+- 仓库若是公开的，`browse` 分支与 `main` 的数据同源，不新增暴露，但更易阅读和被检索。

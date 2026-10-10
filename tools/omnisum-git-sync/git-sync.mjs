@@ -38,9 +38,10 @@ export function redact(text) {
   return String(text || '').replace(/(https?:\/\/)[^\s/@]+@/g, '$1***@');
 }
 
-async function defaultGit(cwd, args) {
+/** @param {{ env?: Record<string,string> }} [options] 额外环境变量（如临时 GIT_INDEX_FILE） */
+export async function defaultGit(cwd, args, { env = {} } = {}) {
   try {
-    const { stdout } = await execFileAsync('git', args, { cwd, maxBuffer: 64 * 1024 * 1024, env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } });
+    const { stdout } = await execFileAsync('git', args, { cwd, maxBuffer: 64 * 1024 * 1024, env: { ...process.env, ...env, GIT_TERMINAL_PROMPT: '0' } });
     return stdout;
   } catch (error) {
     const wrapped = new Error(redact(error.stderr || error.message));
@@ -92,11 +93,14 @@ async function busyReason(gitDir) {
  *   repoDir: string, remote?: string, branch?: string|null, maxPushAttempts?: number,
  *   git?: (cwd: string, args: string[]) => Promise<string>, now?: () => number,
  *   hostname?: string, hooks?: { beforePush?: (attempt: number) => Promise<void>|void },
+ *   publishBrowse?: (() => Promise<object>)|null,
  * }} options
+ * `publishBrowse`：同步成功（含"已是最新"）后调用，结果放入 `result.browsePublish`；
+ * 抛错只记录为 `{ published: false, error }`，不影响同步结果。同步失败时不调用。
  */
 export async function runGitSync({
   repoDir, remote = 'origin', branch = null, maxPushAttempts = DEFAULT_MAX_PUSH_ATTEMPTS,
-  git = defaultGit, now = () => Date.now(), hostname = '', hooks = {},
+  git = defaultGit, now = () => Date.now(), hostname = '', hooks = {}, publishBrowse = null,
 }) {
   const run = (args) => git(repoDir, args);
   const gitDir = path.join(repoDir, '.git');
@@ -128,13 +132,13 @@ export async function runGitSync({
         : 1;
       if (!ahead) {
         result.head = (await run(['rev-parse', 'HEAD'])).trim();
-        return result;
+        return await withBrowsePublish(result, publishBrowse);
       }
       try {
         await run(['push', remote, `HEAD:refs/heads/${result.branch}`]);
         result.pushed = true;
         result.head = (await run(['rev-parse', 'HEAD'])).trim();
-        return result;
+        return await withBrowsePublish(result, publishBrowse);
       } catch (error) {
         if (!isPushRejected(error)) throw new GitSyncError('push_failed', redact(error.message), { exitCode: 1 });
         // 远端又前进了：回到循环开头重新拉取并合并
@@ -144,6 +148,17 @@ export async function runGitSync({
   } finally {
     await release();
   }
+}
+
+/** 同步成功后发布 browse 分支；任何失败只记录，不改变同步结果。 */
+async function withBrowsePublish(result, publishBrowse) {
+  if (!publishBrowse) return result;
+  try {
+    result.browsePublish = await publishBrowse();
+  } catch (error) {
+    result.browsePublish = { published: false, error: redact(error?.message || String(error)) };
+  }
+  return result;
 }
 
 const isPushRejected = (error) => /rejected|non-fast-forward|fetch first|failed to push some refs/i.test(`${error.stderr || ''}${error.message || ''}`);

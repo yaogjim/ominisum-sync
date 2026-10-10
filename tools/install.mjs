@@ -61,7 +61,7 @@ node tools/omnisum-agent/cli.mjs show --type session --id <id>   # 单个对象�
 
 ## 人读版
 
-\`node tools/omnisum-browse/cli.mjs\` 在本地生成 \`browse/\`（Markdown 页面，已被 .gitignore 排除，不会提交）。
+\`node tools/omnisum-browse/cli.mjs\` 在本地生成 \`browse/\`（Markdown 页面，已被 .gitignore 排除，不进 main）。\`omnisum-git-sync\` 每次同步成功后还会把页面发布为远端的 \`browse\` 分支（单提交、仅该分支覆盖更新），在 GitHub 网页打开 \`/tree/browse\` 即可阅读；用 \`--no-publish-browse\` 关闭。
 
 ## 保持同步
 
