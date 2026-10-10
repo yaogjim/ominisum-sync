@@ -8,6 +8,7 @@
 import { createHash } from 'node:crypto';
 import { lstat, mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { dirname, isAbsolute, join, relative, resolve, sep } from 'node:path';
+import { htmlToMarkdown, textToMarkdown } from './html-to-markdown.mjs';
 
 export const MANAGED_DIRECTORY = '_omnisum_sync';
 export const PROTOCOL_FILE = 'protocol.json';
@@ -251,10 +252,21 @@ export function fenced(text, info = '') {
 
 const UNSAFE_LINK = /\]\(\s*(?:javascript|vbscript|data|file):/gi;
 const UNSAFE_REFERENCE = /^(\s{0,3}\[[^\]]+\]:\s*)(?:javascript|vbscript|data|file):/i;
+/** 只处理行内代码（成对反引号）之外的片段；代码内容按字面保留。 */
+function mapOutsideCodeSpans(line, transform) {
+  let result = '';
+  let last = 0;
+  for (const match of line.matchAll(/(`+)[^\n]*?\1(?!`)/g)) {
+    result += transform(line.slice(last, match.index)) + match[0];
+    last = match.index + match[0].length;
+  }
+  return result + transform(line.slice(last));
+}
+
 const FENCE_OPEN = /^ {0,3}(`{3,}|~{3,})/;
 
 /** 把 Markdown 正文嵌入页面：围栏代码内原样保留，其余部分转义原始 HTML 并中和危险链接协议；未闭合的围栏会被补齐。 */
-export function sanitizeMarkdown(text) {
+export function sanitizeMarkdown(text, { keepCodeSpans = false } = {}) {
   const output = [];
   let open = null;
   for (const line of String(text ?? '').replace(/\r\n?/g, '\n').split('\n')) {
@@ -269,10 +281,11 @@ export function sanitizeMarkdown(text) {
       output.push(line);
       continue;
     }
-    output.push(line
+    const neutralize = (segment) => segment
       .replace(/<(?=[A-Za-z/!?])/g, '&lt;')
       .replace(UNSAFE_LINK, '](#blocked-scheme:')
-      .replace(UNSAFE_REFERENCE, '$1#blocked-scheme:'));
+      .replace(UNSAFE_REFERENCE, '$1#blocked-scheme:');
+    output.push(keepCodeSpans ? mapOutsideCodeSpans(line, neutralize) : neutralize(line));
   }
   if (open) output.push(open.char.repeat(open.length));
   return output.join('\n');
@@ -323,38 +336,200 @@ function metaLines(payload, skip) {
   return lines;
 }
 
+/** 会话标题是网址式（无空格且含 `/` 或 `.`）或为空时，用 AI 分类标题替代，索引与页面标题更可读。 */
+function displayTitle(object, raw) {
+  if (object.entityType !== 'session') return raw;
+  const better = typeof object.payload.classifyTitle === 'string' ? object.payload.classifyTitle.trim() : '';
+  if (better && (!raw || (!/\s/.test(raw) && /[/.]/.test(raw)))) return better;
+  return raw;
+}
+
 export function titleOf(object) {
   const p = object.payload;
   const raw = object.entityType === 'favorite' ? (p.pageTitle || p.question || '')
     : object.entityType === 'composite-snapshot' ? (p.page?.title || p.page?.name || '')
       : (p.title || '');
-  return String(raw).trim() || `${TYPE_LABEL[object.entityType]} ${object.id.slice(0, 40)}`;
+  return displayTitle(object, String(raw).trim()) || `${TYPE_LABEL[object.entityType]} ${object.id.slice(0, 40)}`;
+}
+
+// ── 单篇页（S6.1：BRW-009 ~ BRW-012） ─────────────────────────────
+
+const ROLE_LABEL = { user: '用户', assistant: '助手', system: '系统' };
+const SCORE_LABEL = {
+  information_density: '信息密度', novelty: '新颖性', relevance: '相关性', actionability: '可操作性',
+  methodology_value: '方法论价值', evidence_quality: '证据质量', transferability: '可迁移性', long_term_leverage: '长期杠杆',
+};
+/** 元信息表里的字段中文名；未列出的字段按原字段名展示。 */
+const META_LABEL = {
+  classifyAction: '建议操作', deepRead: '深度阅读', classifySourceType: '来源类型', shouldArchive: '建议归档', shouldDelete: '建议删除',
+  deleteReason: '删除理由', byline: '作者署名', metaAuthor: '作者', published: '发布时间', siteName: '站点', sourceType: '会话类型',
+  sourceUrls: '来源链接',
+};
+/** 元信息表隐藏：内部/运行态字段，以及已在标题、信息行、摘要卡片、分析要点中展示过的字段。 */
+const META_HIDDEN = new Set([
+  'title', 'url', 'domain', 'favicon', 'classifyTitle', 'rating', 'totalScore', 'primaryCategory', 'secondaryCategories', 'tags',
+  'oneLineReview', 'summaryBrief', 'oneHighValuePoint', 'knowledgePoints', 'actionItems', 'retentionDecision', 'archiveReason', 'rejectReason',
+  'classifiedAt', 'classifyPartial', 'classifyWarnings', 'classifyScores', 'contentRef', 'archiveChecksum', 'digestPrompt',
+]);
+const TAG_LIMIT = 12;
+const TEXT_LIMIT = 2000;
+
+const textOf = (value) => (typeof value === 'string' ? value.trim() : '');
+const listOf = (value) => (Array.isArray(value) ? value.filter((item) => typeof item === 'string' && item.trim()) : []);
+
+/** `<summary>` 内是 HTML 上下文：只做 HTML 转义（Markdown 转义在这里会显示成反斜杠）。 */
+function escapeHtmlText(text, limit = 80) {
+  let value = String(text ?? '').replace(/\s+/g, ' ').trim();
+  if (value.length > limit) value = `${value.slice(0, limit)}…`;
+  return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+/** 内容里的 `</details>`、`</summary>`（含围栏内）一律中和，保证用户内容无法闭合我们生成的折叠块。 */
+const neutralizeStructuralTags = (text) => text.replace(/<\/(details|summary)/gi, '&lt;/$1');
+
+function collapsible(summary, markdown) {
+  return `<details>\n<summary>${summary}</summary>\n\n${markdown}\n\n</details>`;
+}
+
+/** 评级信息行：来源、创建日、评级、类别、标签。 */
+function sessionFacts(session) {
+  const p = session.payload;
+  const lines = [];
+  const first = [];
+  if (p.url) first.push(`来源：${safeLink(p.domain || p.url, p.url)}`);
+  first.push(`创建：${isoDate(session.createdAt)}`);
+  lines.push(first.join(' · '));
+  const second = [];
+  if (textOf(p.rating)) second.push(`评级：**${escapeInline(p.rating, 10)}**${Number.isFinite(Number(p.totalScore)) && p.totalScore !== '' && p.totalScore !== null ? `（${Number(p.totalScore)} 分）` : ''}`);
+  if (textOf(p.primaryCategory)) second.push(`类别：${escapeInline(p.primaryCategory, 60)}${listOf(p.secondaryCategories).length ? ` / ${listOf(p.secondaryCategories).map((c) => escapeInline(c, 40)).join(' / ')}` : ''}`);
+  if (second.length) lines.push(second.join(' · '));
+  const tags = listOf(p.tags).slice(0, TAG_LIMIT).map((tag) => `\`${tag.replace(/[`\s]+/g, ' ').trim().slice(0, 40)}\``);
+  if (tags.length) lines.push(`标签：${tags.join(' ')}`);
+  return lines.join('  \n');
+}
+
+function summaryCard(payload) {
+  const rows = [['一句话点评', payload.oneLineReview], ['摘要', payload.summaryBrief]]
+    .map(([label, value]) => [label, textOf(value)]).filter(([, value]) => value);
+  if (!rows.length) return [];
+  return [rows.map(([label, value]) => `> **${label}**：${escapeInline(value, TEXT_LIMIT)}`).join('\n>\n'), ''];
+}
+
+function analysisSection(payload) {
+  const points = [];
+  if (textOf(payload.oneHighValuePoint)) points.push(`- **核心高价值点**：${escapeInline(payload.oneHighValuePoint, TEXT_LIMIT)}`);
+  if (textOf(payload.retentionDecision)) {
+    const reason = textOf(payload.archiveReason);
+    points.push(`- **留存建议**：${escapeInline(payload.retentionDecision, 400)}${reason ? `（${escapeInline(reason, TEXT_LIMIT)}）` : ''}`);
+  } else if (textOf(payload.archiveReason)) {
+    points.push(`- **留存理由**：${escapeInline(payload.archiveReason, TEXT_LIMIT)}`);
+  }
+  if (textOf(payload.rejectReason)) points.push(`- **不足**：${escapeInline(payload.rejectReason, TEXT_LIMIT)}`);
+  const out = [];
+  if (points.length) out.push(...points, '');
+  for (const [label, items] of [['知识要点', listOf(payload.knowledgePoints)], ['行动项', listOf(payload.actionItems)]]) {
+    if (items.length) out.push(`**${label}**`, '', ...items.map((item) => `- ${escapeInline(item, TEXT_LIMIT)}`), '');
+  }
+  return out.length ? ['## 分析要点', '', ...out] : [];
+}
+
+/** 正文：HTML 白名单转 Markdown；转换结果为空或失败时回退 pageContent 的转义分段文本。 */
+function bodySection(content) {
+  const out = ['## 正文', ''];
+  const payload = content?.payload ?? {};
+  let markdown = '';
+  let note = '';
+  try {
+    markdown = guardRenderedBody(htmlToMarkdown(payload.contentHtml, { headingOffset: 2 }).markdown);
+  } catch {
+    note = '_（正文转换失败，已改用纯文本。）_';
+  }
+  if (!markdown.trim()) markdown = textToMarkdown(payload.pageContent);
+  if (note) out.push(note, '');
+  out.push(markdown.trim() ? markdown : '_（无正文）_', '');
+  return out;
+}
+
+/** 转换结果的纵深防御：围栏代码与行内代码之外不允许出现标签起始或危险链接协议。 */
+function guardRenderedBody(markdown) {
+  return sanitizeMarkdown(markdown, { keepCodeSpans: true });
+}
+
+function messageKind(message, previous) {
+  const m = message.payload;
+  const content = typeof m.content === 'string' ? m.content : '';
+  if (m.role === 'user') {
+    const tag = /^\s*\[([^\]\n]{1,80})\]/.exec(content)?.[1]?.trim();
+    const name = textOf(m.prompt_template_name) || textOf(m.template_name);
+    if (tag) {
+      if (/^Digest\s+Prompt/i.test(tag)) return '摘要提示词';
+      const prompt = /^Prompt\s*:\s*(.*)$/i.exec(tag);
+      if (prompt) return prompt[1].trim() || name || '提示词';
+      return tag;
+    }
+    return name || '对话';
+  }
+  if (m.role === 'assistant') {
+    if (m.type === 'classification') return '自动分类评分结果';
+    if (m.type === 'summary') return '总结';
+    return previous ? '回复' : '回复';
+  }
+  return '消息';
+}
+
+function conversationSection(messages) {
+  const out = [`## 对话（${messages.length}）`, ''];
+  if (!messages.length) return [...out, '_（暂无对话）_', ''];
+  out.push('_每条对话默认折叠，点击展开；时间为 UTC。_', '');
+  let previous = null;
+  for (const message of messages) {
+    const m = message.payload;
+    const role = ROLE_LABEL[m.role] ?? escapeHtmlText(m.role || '消息', 40);
+    const time = isoTime(m.timestamp || message.createdAt);
+    const summary = `${role} · ${escapeHtmlText(messageKind(message, previous), 60)} · ${time}`;
+    const body = typeof m.content === 'string' ? sanitizeMarkdown(m.content) : fenced(JSON.stringify(m.content ?? null, null, 2), 'json');
+    out.push(collapsible(summary, neutralizeStructuralTags(body)), '');
+    previous = message;
+  }
+  return out;
+}
+
+function metaSection(session) {
+  const p = session.payload;
+  const rows = [['会话 ID', session.id], ['创建时间', `${isoTime(session.createdAt)} UTC`], ['更新时间', `${isoTime(session.updatedAt)} UTC`]];
+  if (p.classifyScores && typeof p.classifyScores === 'object' && !Array.isArray(p.classifyScores)) {
+    const scores = Object.entries(p.classifyScores).filter(([, value]) => Number.isFinite(Number(value)))
+      .map(([key, value]) => `${SCORE_LABEL[key] ?? key} ${Number(value)}`);
+    if (scores.length) rows.push(['评分维度', scores.join(' · ')]);
+  }
+  for (const [key, value] of Object.entries(p).sort(([a], [b]) => a.localeCompare(b))) {
+    if (META_HIDDEN.has(key) || value === null || value === undefined || value === '') continue;
+    let shown;
+    if (typeof value === 'boolean') shown = value ? '是' : '否';
+    else if (['string', 'number'].includes(typeof value)) shown = String(value);
+    else if (Array.isArray(value) && value.length && value.every((v) => ['string', 'number'].includes(typeof v))) shown = value.join(', ');
+    else continue;
+    rows.push([META_LABEL[key] ?? key, shown]);
+  }
+  const table = ['| 字段 | 值 |', '|---|---|', ...rows.map(([key, value]) => `| ${escapeInline(key, 60)} | ${escapeInline(value, 200)} |`)];
+  return [collapsible('元信息', table.join('\n')), ''];
 }
 
 function renderSession(session, content, messages, pagePath, linkedFavorites) {
   const p = session.payload;
   const out = [`# ${escapeInline(titleOf(session))}`, ''];
   out.push(`[← 返回总览](${href(pagePath, 'README.md')}) · [按日期浏览](${href(pagePath, 'by-date/index.md')})`, '');
-  const facts = [`创建：${isoTime(session.createdAt)} UTC`, `更新：${isoTime(session.updatedAt)} UTC`];
-  if (p.url) facts.unshift(`来源：${safeLink(p.domain || p.url, p.url)}`);
-  out.push(facts.join(' · '), '');
-  const meta = metaLines(p, new Set(['title', 'url', 'domain', 'favicon']));
-  if (meta.length) out.push('## 元信息', '', ...meta, '');
-  const body = content?.payload.pageContent?.trim() ? content.payload.pageContent : content?.payload.contentHtml;
-  out.push('## 正文', '', body?.trim() ? fenced(body, 'text') : '_（无正文）_', '');
-  out.push(`## 对话（${messages.length}）`, '');
-  if (!messages.length) out.push('_（暂无对话）_', '');
-  for (const message of messages) {
-    const m = message.payload;
-    out.push(`### ${escapeInline(m.role || 'message', 40)} · ${isoTime(m.timestamp || message.createdAt)} UTC`, '');
-    if (typeof m.content === 'string') out.push(sanitizeMarkdown(m.content), '');
-    else out.push(fenced(JSON.stringify(m.content ?? null, null, 2), 'json'), '');
-  }
+  out.push(sessionFacts(session), '');
+  out.push(...summaryCard(p));
+  out.push(...analysisSection(p));
+  out.push(...bodySection(content));
+  out.push(...conversationSection(messages));
   if (linkedFavorites.length) {
     out.push('## 相关收藏', '');
     for (const favorite of linkedFavorites) out.push(`- [${escapeInline(titleOf(favorite))}](${href(pagePath, pageOf(favorite))})`);
     out.push('');
   }
+  out.push(...metaSection(session));
   return out.join('\n');
 }
 
@@ -395,6 +570,80 @@ function renderSnapshot(snapshot, pagePath) {
 
 function byDateDescThenTitle(a, b) {
   return (b.createdAt - a.createdAt) || titleOf(a).localeCompare(titleOf(b)) || a.id.localeCompare(b.id);
+}
+
+// ── 评级页与高频标签页（BRW-014） ─────────────────────────────
+
+export const TAG_PAGE_MIN = 10;
+const ratingOf = (object) => (object.entityType === 'session' ? textOf(object.payload.rating) : '');
+const RATING_ORDER = ['S', 'A', 'B', 'C', 'D', 'E'];
+const UNRATED = '未评级';
+
+function sessionLine(session) {
+  const score = Number(session.payload.totalScore);
+  const parts = [`${isoDate(session.createdAt)} [${escapeInline(titleOf(session))}](../sessions/${segmentOf(session)}.md)`];
+  if (Number.isFinite(score) && session.payload.totalScore !== '' && session.payload.totalScore !== null) parts.push(`${score} 分`);
+  const category = textOf(session.payload.primaryCategory);
+  if (category) parts.push(escapeInline(category, 40));
+  return `- ${parts.join(' · ')}`;
+}
+
+/** 评级页与高频标签页；没有源数据则不生成。返回哪类页面已生成，供总览链接。 */
+function addLookupPages(files, sessionList) {
+  const byScoreThenDate = (a, b) => (Number(b.payload.totalScore) || 0) - (Number(a.payload.totalScore) || 0)
+    || b.createdAt - a.createdAt || a.id.localeCompare(b.id);
+
+  const ratingGroups = new Map();
+  for (const session of sessionList) {
+    const rating = ratingOf(session).toUpperCase();
+    const key = RATING_ORDER.includes(rating) ? rating : UNRATED;
+    if (!ratingGroups.has(key)) ratingGroups.set(key, []);
+    ratingGroups.get(key).push(session);
+  }
+  const ratingKeys = [...RATING_ORDER, UNRATED].filter((key) => ratingGroups.has(key));
+  const ratingFile = (key) => (key === UNRATED ? 'none' : key.toLowerCase());
+  for (const key of ratingKeys) {
+    const list = ratingGroups.get(key).sort(byScoreThenDate);
+    files.set(`by-rating/${ratingFile(key)}.md`, `${[
+      `# 评级：${key}（${list.length}）`, '', '[← 评级索引](index.md) · [总览](../README.md)', '',
+      ...list.map((session) => sessionLine(session)),
+    ].join('\n')}\n`);
+  }
+  if (ratingKeys.length) {
+    files.set('by-rating/index.md', `${[
+      '# 按评级浏览', '', '[← 总览](../README.md)', '',
+      ...ratingKeys.map((key) => `- [${key}](${ratingFile(key)}.md)（${ratingGroups.get(key).length}）`),
+    ].join('\n')}\n`);
+  }
+
+  const tagGroups = new Map();
+  for (const session of sessionList) {
+    for (const tag of new Set(listOf(session.payload.tags).map((t) => t.trim()).filter(Boolean))) {
+      if (!tagGroups.has(tag)) tagGroups.set(tag, []);
+      tagGroups.get(tag).push(session);
+    }
+  }
+  const hotTags = [];
+  for (const [tag, list] of tagGroups) {
+    if (list.length < TAG_PAGE_MIN) continue;
+    let segment;
+    try { segment = encodeSegment(tag); } catch { continue; }
+    hotTags.push({ tag, segment, list });
+  }
+  hotTags.sort((a, b) => b.list.length - a.list.length || a.tag.localeCompare(b.tag));
+  for (const { tag, segment, list } of hotTags) {
+    files.set(`by-tag/${segment}.md`, `${[
+      `# 标签：${escapeInline(tag, 80)}（${list.length}）`, '', '[← 标签索引](index.md) · [总览](../README.md)', '',
+      ...list.sort(byScoreThenDate).map((session) => sessionLine(session)),
+    ].join('\n')}\n`);
+  }
+  if (hotTags.length) {
+    files.set('by-tag/index.md', `${[
+      `# 常用标签（出现 ≥${TAG_PAGE_MIN} 篇）`, '', '[← 总览](../README.md)', '',
+      ...hotTags.map(({ tag, segment, list }) => `- [${escapeInline(tag, 80)}](${segment}.md)（${list.length}）`),
+    ].join('\n')}\n`);
+  }
+  return { rating: ratingKeys.length > 0, tag: hotTags.length > 0 };
 }
 
 /**
@@ -443,39 +692,93 @@ export function renderBrowse(dataset) {
     for (const message of list) touch(isoDate(message.payload.timestamp || message.createdAt), sessions.get(sessionId)).messages += 1;
   }
   const sortedDays = [...days.keys()].sort().reverse();
+  const entryLine = (page, { object, created, messages }, withNotes = true) => {
+    const notes = withNotes ? [created ? '创建' : null, messages ? `新增对话 ${messages} 条` : null].filter(Boolean).join('，') : '';
+    const rating = ratingOf(object);
+    return `- ${TYPE_LABEL[object.entityType]}：[${escapeInline(titleOf(object))}](${href(page, pageOf(object))})${notes ? ` — ${notes}` : ''}${rating ? ` · 评级 ${escapeInline(rating, 10)}` : ''}`;
+  };
+  const sortedEntries = (date) => [...days.get(date).values()]
+    .sort((a, b) => titleOf(a.object).localeCompare(titleOf(b.object)) || a.object.id.localeCompare(b.object.id));
   for (const date of sortedDays) {
     const page = `by-date/${date}.md`;
     const heading = date === 'unknown' ? '日期未知' : date;
     const lines = [`# ${heading}`, '', `[← 日期索引](index.md) · [总览](${href(page, 'README.md')})`, ''];
-    const entries = [...days.get(date).values()].sort((a, b) => titleOf(a.object).localeCompare(titleOf(b.object)) || a.object.id.localeCompare(b.object.id));
-    for (const { object, created, messages } of entries) {
-      const notes = [created ? '创建' : null, messages ? `新增对话 ${messages} 条` : null].filter(Boolean).join('，');
-      lines.push(`- ${TYPE_LABEL[object.entityType]}：[${escapeInline(titleOf(object))}](${href(page, pageOf(object))})${notes ? ` — ${notes}` : ''}`);
-    }
+    for (const entry of sortedEntries(date)) lines.push(entryLine(page, entry));
     files.set(page, `${lines.join('\n')}\n`);
   }
-  files.set('by-date/index.md', `${[
-    '# 按日期浏览（UTC）', '', '[← 总览](../README.md)', '',
-    ...(sortedDays.length ? sortedDays.map((date) => `- [${date === 'unknown' ? '日期未知' : date}](${date}.md)（${days.get(date).size}）`) : ['_（暂无内容）_']),
-  ].join('\n')}\n`);
 
-  // 各类型索引
+  // 年 → 月 → 日：月页按天分段，索引按年、月给出数量
+  const months = new Map();
+  for (const date of sortedDays.filter((d) => d !== 'unknown')) {
+    const month = date.slice(0, 7);
+    if (!months.has(month)) months.set(month, []);
+    months.get(month).push(date);
+  }
+  for (const [month, monthDays] of months) {
+    const page = `by-date/${month}.md`;
+    const lines = [`# ${month}`, '', `[← 日期索引](index.md) · [总览](${href(page, 'README.md')})`, ''];
+    for (const date of monthDays) {
+      lines.push(`## [${date}](${date}.md)（${days.get(date).size}）`, '');
+      for (const entry of sortedEntries(date)) lines.push(entryLine(page, entry));
+      lines.push('');
+    }
+    files.set(page, `${lines.join('\n').replace(/\n+$/, '')}\n`);
+  }
+  const indexLines = ['# 按日期浏览（UTC）', '', '[← 总览](../README.md)', ''];
+  let currentYear = '';
+  for (const [month, monthDays] of months) {
+    if (month.slice(0, 4) !== currentYear) {
+      currentYear = month.slice(0, 4);
+      const yearItems = [...months].filter(([m]) => m.startsWith(currentYear)).reduce((sum, [, ds]) => sum + ds.reduce((n, d) => n + days.get(d).size, 0), 0);
+      indexLines.push(`## ${currentYear}（${yearItems} 项）`, '');
+    }
+    indexLines.push(`- [${month}](${month}.md)（${monthDays.length} 天 · ${monthDays.reduce((n, d) => n + days.get(d).size, 0)} 项）`);
+  }
+  if (days.has('unknown')) indexLines.push('', `## 日期未知`, '', `- [日期未知](unknown.md)（${days.get('unknown').size} 项）`);
+  if (!sortedDays.length) indexLines.push('_（暂无内容）_');
+  files.set('by-date/index.md', `${indexLines.join('\n')}\n`);
+
+  // 各类型索引（文章按"年-月"分组）
   const sections = [['sessions', [...sessions.values()]], ['favorites', favorites], ['knowledge-assets', assets], ['composite-snapshots', snapshots]];
   for (const [directory, list] of sections) {
     const page = `${directory}/index.md`;
-    files.set(page, `${[
-      `# ${SECTION_TITLE[directory]}（${list.length}）`, '', '[← 总览](../README.md)', '',
-      ...(list.length ? list.map((o) => `- ${isoDate(o.createdAt)} [${escapeInline(titleOf(o))}](${segmentOf(o)}.md)`) : ['_（暂无内容）_']),
-    ].join('\n')}\n`);
+    const lines = [`# ${SECTION_TITLE[directory]}（${list.length}）`, '', '[← 总览](../README.md)', ''];
+    if (!list.length) lines.push('_（暂无内容）_');
+    else if (directory === 'sessions') {
+      let group = null;
+      for (const object of list) {
+        const month = isoDate(object.createdAt).slice(0, 7);
+        if (month !== group) {
+          group = month;
+          const count = list.filter((o) => isoDate(o.createdAt).slice(0, 7) === month).length;
+          lines.push('', `## ${month === 'unknown' ? '日期未知' : month}（${count}）`, '');
+        }
+        const rating = ratingOf(object);
+        lines.push(`- ${isoDate(object.createdAt)} [${escapeInline(titleOf(object))}](${segmentOf(object)}.md)${rating ? ` · ${escapeInline(rating, 10)}` : ''}`);
+      }
+    } else {
+      for (const o of list) lines.push(`- ${isoDate(o.createdAt)} [${escapeInline(titleOf(o))}](${segmentOf(o)}.md)`);
+    }
+    files.set(page, `${lines.join('\n').replace(/\n{3,}/g, '\n\n')}\n`);
   }
+
+  const hasLookup = addLookupPages(files, [...sessions.values()]);
 
   const readme = [
     '# OmniSum 数据浏览', '',
     `数据集：\`${dataset.protocol.datasetId.replace(/[^\w.-]/g, '_').slice(0, 80)}\``, '',
     '本目录由 `tools/omnisum-browse` 从 `_omnisum_sync/` 生成，**只读派生产物**，请勿手工编辑；重新生成会覆盖。', '',
     '## 浏览', '',
-    `- [按日期浏览](by-date/index.md)（${sortedDays.length} 天）`,
+    `- [按日期浏览](by-date/index.md)（${months.size} 个月 · ${sortedDays.length} 天）`,
+    ...(hasLookup.rating ? ['- [按评级浏览](by-rating/index.md)'] : []),
+    ...(hasLookup.tag ? [`- [按常用标签浏览](by-tag/index.md)（出现 ≥${TAG_PAGE_MIN} 篇的标签）`] : []),
     ...sections.map(([directory, list]) => `- [${SECTION_TITLE[directory]}](${directory}/index.md)（${list.length}）`),
+    '',
+    '## 如何查找', '',
+    '- **页内查找**：在任意页面按 `Ctrl+F` / `Cmd+F`，对长索引页（文章、日期、评级、标签）最快。',
+    '- **按时间**：[日期索引](by-date/index.md) 按年 → 月 → 日逐级进入。',
+    ...(hasLookup.rating || hasLookup.tag ? [`- **按评级/标签**：${[hasLookup.rating ? '[评级页](by-rating/index.md)' : '', hasLookup.tag ? '[常用标签页](by-tag/index.md)' : ''].filter(Boolean).join('、')}。`] : []),
+    '- **全文检索**：GitHub 的代码搜索可能不索引非默认分支（本分支），请在本地克隆后用 `grep -r 关键词 browse/` 或 `omnisum-agent` 工具检索原始数据。',
     '',
   ];
   const recent = [...sessions.values()].slice(0, 20);
