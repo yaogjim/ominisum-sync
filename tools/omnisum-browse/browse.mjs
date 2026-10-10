@@ -354,7 +354,6 @@ export function titleOf(object) {
 
 // ── 单篇页（S6.1：BRW-009 ~ BRW-012） ─────────────────────────────
 
-const ROLE_LABEL = { user: '用户', assistant: '助手', system: '系统' };
 const SCORE_LABEL = {
   information_density: '信息密度', novelty: '新颖性', relevance: '相关性', actionability: '可操作性',
   methodology_value: '方法论价值', evidence_quality: '证据质量', transferability: '可迁移性', long_term_leverage: '长期杠杆',
@@ -376,13 +375,6 @@ const TEXT_LIMIT = 2000;
 
 const textOf = (value) => (typeof value === 'string' ? value.trim() : '');
 const listOf = (value) => (Array.isArray(value) ? value.filter((item) => typeof item === 'string' && item.trim()) : []);
-
-/** `<summary>` 内是 HTML 上下文：只做 HTML 转义（Markdown 转义在这里会显示成反斜杠）。 */
-function escapeHtmlText(text, limit = 80) {
-  let value = String(text ?? '').replace(/\s+/g, ' ').trim();
-  if (value.length > limit) value = `${value.slice(0, limit)}…`;
-  return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-}
 
 /** 内容里的 `</details>`、`</summary>`（含围栏内）一律中和，保证用户内容无法闭合我们生成的折叠块。 */
 const neutralizeStructuralTags = (text) => text.replace(/<\/(details|summary)/gi, '&lt;/$1');
@@ -434,8 +426,8 @@ function analysisSection(payload) {
 }
 
 /** 正文：HTML 白名单转 Markdown；转换结果为空或失败时回退 pageContent 的转义分段文本。 */
-function bodySection(content) {
-  const out = ['## 正文', ''];
+function bodySection(content, withAnchor) {
+  const out = [...(withAnchor ? ['<a id="tab-body"></a>', ''] : []), '## 正文', ''];
   const payload = content?.payload ?? {};
   let markdown = '';
   let note = '';
@@ -455,41 +447,139 @@ function guardRenderedBody(markdown) {
   return sanitizeMarkdown(markdown, { keepCodeSpans: true });
 }
 
-function messageKind(message, previous) {
-  const m = message.payload;
-  const content = typeof m.content === 'string' ? m.content : '';
-  if (m.role === 'user') {
-    const tag = /^\s*\[([^\]\n]{1,80})\]/.exec(content)?.[1]?.trim();
-    const name = textOf(m.prompt_template_name) || textOf(m.template_name);
-    if (tag) {
-      if (/^Digest\s+Prompt/i.test(tag)) return '摘要提示词';
-      const prompt = /^Prompt\s*:\s*(.*)$/i.exec(tag);
-      if (prompt) return prompt[1].trim() || name || '提示词';
-      return tag;
-    }
-    return name || '对话';
-  }
-  if (m.role === 'assistant') {
-    if (m.type === 'classification') return '自动分类评分结果';
-    if (m.type === 'summary') return '总结';
-    return previous ? '回复' : '回复';
-  }
-  return '消息';
+/** 提示词类消息（提示词模板全文、system、摘要提示词等）：作者的提示词不对外展示，一律不渲染。 */
+function isPromptMessage(m) {
+  return m.is_prompt === true || m.role === 'system' || textOf(m.prompt_type) !== '';
 }
 
-function conversationSection(messages) {
-  const out = [`## 对话（${messages.length}）`, ''];
-  if (!messages.length) return [...out, '_（暂无对话）_', ''];
-  out.push('_每条对话默认折叠，点击展开；时间为 UTC。_', '');
-  let previous = null;
+/** 提示词消息只用来给紧随其后的回答命名类别（如"解读"）；内容本身不输出。 */
+function promptCategory(message) {
+  const m = message.payload;
+  const content = typeof m.content === 'string' ? m.content : '';
+  const tag = /^\s*\[([^\]\n]{1,80})\]/.exec(content)?.[1]?.trim() ?? '';
+  const named = textOf(m.prompt_template_name) || textOf(m.template_name);
+  let name = named;
+  if (/^Digest\s+Prompt/i.test(tag)) name = '摘要';
+  else if (/^Prompt\s*:/i.test(tag)) name = tag.replace(/^Prompt\s*:\s*/i, '').trim() || named || '提示词';
+  else if (tag) name = tag;
+  return { name, classify: name === '自动分类评分' || tag === '自动分类评分' };
+}
+
+const PROMPT_PROBE_LENGTH = 30;
+const PROMPT_MIN_LENGTH = 12;
+const squashText = (value) => String(value ?? '').replace(/\s+/g, ' ').trim();
+
+/**
+ * 已知提示词匹配器：数据集里所有提示词消息与会话 `digestPrompt` 的前 30 个字符作为"指纹"。
+ * 用户有时把同样的提示词直接粘贴到聊天框（没有 `is_prompt` 标记），这类消息按已知提示词处理，不显示。
+ * 仅是启发式：从未保存为模板、也未出现在数据集里的手写提示词无法识别。
+ */
+function buildKnownPromptMatcher(objects) {
+  const probes = new Set();
+  const learn = (text) => {
+    const normalized = squashText(String(text ?? '').replace(/^\s*\[[^\]\n]*\]\s*/, ''));
+    if (normalized.length >= PROMPT_MIN_LENGTH) probes.add(normalized.slice(0, PROMPT_PROBE_LENGTH));
+  };
+  for (const object of objects) {
+    if (object.entityType === 'message' && isPromptMessage(object.payload) && typeof object.payload.content === 'string') learn(object.payload.content);
+    if (object.entityType === 'session') learn(object.payload.digestPrompt);
+  }
+  return (text) => {
+    if (!probes.size || typeof text !== 'string') return false;
+    const normalized = squashText(text);
+    for (const probe of probes) if (normalized.includes(probe)) return true;
+    return false;
+  };
+}
+
+/** 把对话分成：按类别分栏的可读对话（回答、追问）与自动分类评分结果（折叠）。 */
+function groupConversation(messages, isKnownPrompt = () => false) {
+  const categories = new Map();
+  const classification = [];
+  const add = (name, entry) => {
+    if (!categories.has(name)) categories.set(name, []);
+    categories.get(name).push(entry);
+  };
+  let pending = null;
+  let freeQuestion = false;
   for (const message of messages) {
     const m = message.payload;
-    const role = ROLE_LABEL[m.role] ?? escapeHtmlText(m.role || '消息', 40);
-    const time = isoTime(m.timestamp || message.createdAt);
-    const summary = `${role} · ${escapeHtmlText(messageKind(message, previous), 60)} · ${time}`;
-    const body = typeof m.content === 'string' ? sanitizeMarkdown(m.content) : fenced(JSON.stringify(m.content ?? null, null, 2), 'json');
-    out.push(collapsible(summary, neutralizeStructuralTags(body)), '');
-    previous = message;
+    if (isPromptMessage(m)) {
+      if (m.role !== 'system') pending = promptCategory(message);
+      continue;
+    }
+    if (m.role === 'assistant') {
+      if (m.type === 'classification' || pending?.classify) classification.push(message);
+      else add(pending?.name || (freeQuestion ? '追问' : m.type === 'summary' ? '总结' : '追问'), { message, kind: 'answer' });
+      pending = null;
+      freeQuestion = false;
+    } else if (isKnownPrompt(m.content)) {
+      pending = { name: '追问', classify: false };
+    } else {
+      add('追问', { message, kind: 'question' });
+      freeQuestion = true;
+    }
+  }
+  return { categories: [...categories].map(([name, entries]) => ({ name, entries })), classification };
+}
+
+/** 对话正文：转义原始 HTML、中和折叠块结构标签、标题下移到小节标题之下。 */
+function messageBody(message) {
+  const m = message.payload;
+  const body = typeof m.content === 'string' ? sanitizeMarkdown(m.content) : fenced(JSON.stringify(m.content ?? null, null, 2), 'json');
+  return demoteHeadings(neutralizeStructuralTags(body), 3);
+}
+
+/** 围栏代码之外的 ATX 标题整体下移 `by` 级（最深 6 级）。 */
+function demoteHeadings(text, by) {
+  let open = null;
+  return text.split('\n').map((line) => {
+    const fence = FENCE_OPEN.exec(line);
+    if (open) {
+      if (fence && fence[1][0] === open.char && fence[1].length >= open.length && line.trim() === fence[1]) open = null;
+      return line;
+    }
+    if (fence) {
+      open = { char: fence[1][0], length: fence[1].length };
+      return line;
+    }
+    return line.replace(/^( {0,3})(#{1,6})(?=\s|$)/, (_, space, hashes) => `${space}${'#'.repeat(Math.min(6, hashes.length + by))}`);
+  }).join('\n');
+}
+
+const categoryTitle = ({ name, entries }) => {
+  const answers = entries.filter((entry) => entry.kind === 'answer').length;
+  return `${escapeInline(name, 40)}（${answers || entries.length}）`;
+};
+
+/** 顶部切换栏：GitHub 不执行脚本，用锚点链接在同一页内跳转到正文与各类别。 */
+function tabBar(categories) {
+  if (!categories.length) return [];
+  const links = ['[正文](#tab-body)', ...categories.map((category, index) => `[${categoryTitle(category)}](#tab-${index + 1})`)];
+  return [`**切换：** ${links.join(' · ')}`, ''];
+}
+
+function categorySections(categories) {
+  const out = [];
+  categories.forEach((category, index) => {
+    out.push(`<a id="tab-${index + 1}"></a>`, '', `## ${categoryTitle(category)}`, '');
+    for (const entry of category.entries) {
+      const m = entry.message.payload;
+      const time = isoTime(m.timestamp || entry.message.createdAt);
+      let label = '';
+      if (entry.kind === 'question') label = m.role === 'user' ? '提问' : escapeInline(m.role || '消息', 40);
+      else if (category.name === '追问') label = '回答';
+      out.push(`### ${label ? `${label} · ` : ''}${time}`, '', messageBody(entry.message), '');
+    }
+  });
+  return out;
+}
+
+function classificationSection(messages) {
+  const out = [];
+  for (const message of messages) {
+    const time = isoTime(message.payload.timestamp || message.createdAt);
+    out.push(collapsible(`自动分类评分结果 · ${time}`, messageBody(message)), '');
   }
   return out;
 }
@@ -515,15 +605,18 @@ function metaSection(session) {
   return [collapsible('元信息', table.join('\n')), ''];
 }
 
-function renderSession(session, content, messages, pagePath, linkedFavorites) {
+function renderSession(session, content, messages, pagePath, linkedFavorites, isKnownPrompt) {
   const p = session.payload;
+  const { categories, classification } = groupConversation(messages, isKnownPrompt);
   const out = [`# ${escapeInline(titleOf(session))}`, ''];
   out.push(`[← 返回总览](${href(pagePath, 'README.md')}) · [按日期浏览](${href(pagePath, 'by-date/index.md')})`, '');
   out.push(sessionFacts(session), '');
+  out.push(...tabBar(categories));
   out.push(...summaryCard(p));
   out.push(...analysisSection(p));
-  out.push(...bodySection(content));
-  out.push(...conversationSection(messages));
+  out.push(...bodySection(content, categories.length > 0));
+  out.push(...categorySections(categories));
+  out.push(...classificationSection(classification));
   if (linkedFavorites.length) {
     out.push('## 相关收藏', '');
     for (const favorite of linkedFavorites) out.push(`- [${escapeInline(titleOf(favorite))}](${href(pagePath, pageOf(favorite))})`);
@@ -659,6 +752,7 @@ export function renderBrowse(dataset) {
     if (!messagesOf.has(message.refs.sessionId)) messagesOf.set(message.refs.sessionId, []);
     messagesOf.get(message.refs.sessionId).push(message);
   }
+  const isKnownPrompt = buildKnownPromptMatcher(dataset.objects.values());
   const favorites = byType('favorite');
   const assets = byType('knowledge-asset');
   const snapshots = byType('composite-snapshot');
@@ -670,7 +764,7 @@ export function renderBrowse(dataset) {
 
   for (const session of sessions.values()) {
     const page = pageOf(session);
-    files.set(page, renderSession(session, contents.get(session.id), messagesOf.get(session.id) || [], page, favoritesOfSession(session.id)));
+    files.set(page, renderSession(session, contents.get(session.id), messagesOf.get(session.id) || [], page, favoritesOfSession(session.id), isKnownPrompt));
   }
   for (const favorite of favorites) files.set(pageOf(favorite), renderFavorite(favorite, sessions, pageOf(favorite)));
   for (const asset of assets) files.set(pageOf(asset), renderAsset(asset, pageOf(asset)));
