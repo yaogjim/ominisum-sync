@@ -1,0 +1,25 @@
+{
+  "createdAt": 1787889417695,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1787889417695",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Grok Bot 动态工具设计：稳定工具面，按需加载能力\n\n## 一句话总结\n\nCursor 没有把所有工具的完整定义一次性交给模型，而是采用 “**核心工具常驻 + 专用工具按需查询**” 的方式。核心目的不是单纯节省上下文，而是**保持工具前缀稳定、提高 KV Cache 命中率，从而降低 Agent 的运行成本**。\n\n## Grok Bot 如何管理工具\n\nGrok Bot 拥有 30 多个工具，分为两类：\n\n- **静态工具**：约 18 个，如`READ`、`WRITE`、`SHELL`、`GREP`，完整 Schema 每轮都提供。\n- **动态工具**：约 9 个，模型最初只看到人工编写的一行能力提示。\n\n使用动态工具时，模型需要：\n\n1. 调用`GetMcpTools`获取完整 Schema；\n2. 再通过`CallMcpTool`执行工具；\n3. 如果 Schema 超过 12KB，则写入文件，只向模型返回路径。\n\n本质上，`GetMcpTools`和`CallMcpTool`是两个稳定的 “能力入口”。\n\n## 核心原因：KV Cache 经济学\n\n工具定义通常会被序列化到上下文最前端。如果每轮修改`tools`数组，前缀会发生变化，后续 system prompt 和历史对话的缓存也可能一起失效。\n\n这会带来明显成本：\n\n- Agent 的输入 Token 通常远高于输出 Token；\n- 缓存输入价格可能只有非缓存输入的十分之一；\n- 工具定义虽然不长，却决定了后面整段上下文能否命中缓存。\n\n因此，Grok Bot 将核心工具和两个 Meta Tool 固定在`tools`数组中，把其他工具 Schema 按需追加到对话上下文末尾。这样既能保留前缀缓存，又不用长期承担全部 Schema 的 Token 成本。\n\n## 关键分层：知识与能力不是一回事\n\n| 维度 | 知识层 | 能力层 |\n|---|---|---|\n| 解决的问题 | 模型是否知道怎么做 | 模型是否真的能够调用 |\n| 典型载体 | Markdown、Skill、指令、检查单 | Tool Schema、内部接口 |\n| 加载方式 | 检索并写入 Context | 由 Harness 暴露执行入口 |\n| 适用场景 | CLI、Python、HTTP 可完成的任务 | 内部状态、鉴权、远程沙箱等专用功能 |\n\n很多所谓 “新能力” 其实不需要增加新工具。只要 Bash 能完成，Skill 只需告诉模型执行方法。\n\n只有无法通过通用工具表达的能力，例如内部鉴权、应用状态或远程执行，才需要专门的工具机制。\n\n> **Skill 提供知识，Tool 提供权限和执行能力。**\n\n## 一行 Hint 也是产品设计\n\n动态工具的一行提示并非自动截断生成，而是由产品团队逐条手写。\n\n它承担的是 “工具路由” 职责：\n\n- 告诉模型工具能做什么；\n- 说明什么情况下应该选择它；\n- 帮助模型在大量工具中快速定位。\n\n这更像 “雅虎式人工目录”，而不是实时搜索：产品团队提前筛选、组织并压缩工具信息。工具越多，这层提示词的信息密度和准确性越重要。\n\n## 与 Manus 的对照\n\nManus 采用的是**“Mask, Don’t Remove”**：\n\n- 所有工具 Schema 始终常驻；\n- 工具定义保持不变；\n- 在解码阶段，根据当前状态屏蔽不可用工具。\n\n两种方案看似相反，实际遵守同一原则：\n\n> **序列化后的工具面必须稳定，动态性应被转移到其他层。**\n\n| 方案 | 动态性所在位置 | 优点 | 代价 |\n|---|---|---|---|\n| Manus | 解码阶段 | KV Cache 最稳定 | 所有 Schema 长期占用 Token |\n| Grok Bot | Context 层 | Schema 按需加载，常驻成本低 | 多一次查询工具的往返 |\n| Codex | 声明配置与重启 | 实现简单 | 切换工具需要重启 |\n| DSH | 进程内插件 | 灵活性最高 | 运行时基础设施复杂 |\n\n## 何时适合采用 Grok Bot 方案\n\n只有同时满足以下条件，按需加载才更划算：\n\n1. **工具数量较多**；\n2. **单轮只会使用少数工具**；\n3. **模型面对完整工具集时容易选错**；\n4. 获取 Schema 的额外调用成本，低于未使用 Schema 的长期 Token 成本。\n\n工具较少时，几种方案差异有限；工具规模扩大后，缓存稳定性与常驻 Token 成本才会成为决定性因素。\n\n## 对 Agent 产品设计的启示\n\n### 1. 先判断新增的是知识还是能力\n\n- 能用 Bash、CLI 或 HTTP 完成：优先做成 Skill；\n- 必须依赖内部权限、状态或专用执行环境：再做 Tool。\n\n### 2. 不要轻易动态修改`tools`数组\n\n动态修改工具定义可能破坏前缀缓存，影响的不只是工具 Schema，而是后续整段上下文。\n\n### 3. Harness 应尽量薄而稳定\n\nHarness 负责稳定入口、路由和执行；知识与流程尽量沉淀到可按需加载的 Skills 中。\n\n### 4. 动态性的落点决定系统架构\n\n真正需要决策的不是 “要不要动态加载”，而是：\n\n> **动态性应该放在 Context、解码阶段，还是运行时插件层？**\n\n## 最终结论\n\nGrok Bot 的设计重点不是 “隐藏部分工具”，而是通过稳定工具面获得三重收益：\n\n- **保持 KV Cache 命中率；**\n- **减少无用 Schema 的 Token 税；**\n- **降低模型在大量工具中的选择难度。**\n\nCursor 与 Manus 虽然实现路径不同，却独立收敛到同一底层约束：**工具前缀必须稳定，动态性应移到缓存影响更小的层。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1787889417695,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5b97d776d2b66b3d2224f25e90db7dca9ea3d1ad4c73f14f2dce757c12991854",
+  "refs": {
+    "sessionId": "1787889417743_d3bjzb3c"
+  },
+  "revisionId": "sha256:97dea6bd7ae26fb671a1cff5eeaea7e04c4dc3ff6348d83e72d20d6c79a27052",
+  "schemaVersion": 1,
+  "updatedAt": 1787889417695
+}

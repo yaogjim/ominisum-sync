@@ -1,0 +1,70 @@
+{
+  "createdAt": 1783078710691,
+  "entityType": "session",
+  "id": "1783078710691_mocpdnpo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果计划使用 Pi Agent，先评估是否接受非开箱即用、需要自行配置的工作流",
+      "优先阅读官方文档中的 Extension、Prompt Template 和 Package 机制",
+      "安装第三方 Pi Package 前审查源码和权限范围",
+      "可从 context-mode、pi-mcp-adapter、pi-web-access 等插件开始搭建基础 Harness"
+    ],
+    "archiveReason": "包含 Pi Agent 核心抽象、扩展机制、Package 生态与插件推荐，具备一定工具选型和配置参考价值",
+    "classifiedAt": 1783079251958,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Pi Agent 配置入门指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Pi Agent 默认只提供 bash、read、write、edit 四类基础工具，其他能力需通过扩展和包补齐",
+      "Extension 可注册自定义工具、命令、生命周期事件、界面交互和持久化状态",
+      "Pi Package 是 extensions、skills、prompt templates、themes 的组合，可通过 git 或 npm 分享安装",
+      "第三方 Pi Package 拥有完整系统权限，安装前需要审查源码以降低安全风险",
+      "context-mode、pi-subagents、pi-mcp-adapter、pi-web-access 等插件可显著扩展 Pi 的实用能力"
+    ],
+    "oneHighValuePoint": "明确指出 Pi 的价值在于极简内核加可扩展 Harness，而不是开箱即用的 Coding Agent。",
+    "oneLineReview": "一篇实用的 Pi Agent 生态入门帖，但深度、证据和具体配置细节仍偏有限。",
+    "primaryCategory": "AI 编程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为了解 Pi Agent 生态和插件选择的入口资料",
+    "secondaryCategories": [
+      "Agent 框架",
+      "开发者工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Pi Agent 的极简设计、Extension、提示模板和 Package 等核心概念，并推荐若干常用插件，适合想了解或搭建自定义 AI 编程助手的开发者参考。",
+    "tags": [
+      "Pi Agent",
+      "AI Coding Agent",
+      "插件扩展",
+      "Prompt Template",
+      "开发环境配置"
+    ],
+    "title": "Pi Agent 配置指南：打造你的专属 AI 编程助手",
+    "totalScore": 62.5,
+    "url": "https://x.com/ninthbit_ai/status/2060711641378119824"
+  },
+  "payloadHash": "sha256:65d3785d3ae3b0353da3f3f9b5096c18a7ed7006ce8951e3d5a4f46ff4dc8643",
+  "refs": {},
+  "revisionId": "sha256:2aefc779642861bb1930e53fe9db4019b970c35036da79439b35e66b343fd35d",
+  "schemaVersion": 1,
+  "updatedAt": 1789729379091
+}

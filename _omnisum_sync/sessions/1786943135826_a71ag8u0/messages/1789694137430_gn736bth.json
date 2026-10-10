@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694137430,
+  "entityType": "message",
+  "id": "1789694137430_gn736bth",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章介绍“通过 WebSocket 传 HTML”：由服务器生成页面片段并实时推送给浏览器，以较少 JavaScript 构建 SPA；它适合双向实时应用，但并非所有项目都值得采用。\n\n## 关键内容\n\n- 浏览器仍需少量 JavaScript，用于维持 WebSocket、发送事件和插入 HTML；渲染与状态主要留在后端，因此可减少前后端两套渲染逻辑、JSON API 和数据契约。\n- 长连接允许服务器主动推送更新，适合聊天、协作、游戏和实时面板。优势并非 WebSocket“天然更快”，而是连接持续存在，并省去部分重复请求流程。\n- 代价是服务器要维护连接及客户端状态，横向扩容更复杂；高延迟或断网会明显影响体验，也需处理重连。\n- 选型原则：需要低延迟双向通信用 WebSocket；只需服务器推送用更简单的 SSE；普通请求响应用 HTTP/htmx 即可。\n\n## 通俗解读\n\n这不是“完全不用 JavaScript”，而是让前端少负责业务渲染。SEO也只对首次返回的 HTML 较友好，后续推送内容未必被爬虫看到。\n\n**是否值得细读：**如果你在做实时应用或想简化前后端分工，值得；若只是普通内容站，掌握文末选型原则即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694137430,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0cd6734ef9b666f975fa1af591b99d64f6332b94d88a67c87e473d4fbc5e9cd8",
+  "refs": {
+    "sessionId": "1786943135826_a71ag8u0"
+  },
+  "revisionId": "sha256:cc5137187d58eb5d1bc4cfaa3632b3dedf5bd39a83d976f3948d41c9a11f65eb",
+  "schemaVersion": 1,
+  "updatedAt": 1789694137430
+}

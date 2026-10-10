@@ -1,0 +1,150 @@
+{
+  "createdAt": 1787714289171,
+  "entityType": "session",
+  "id": "1787714289171_f715of37",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将实时权限校验、操作前审计、拒绝日志和哈希链验证纳入Agent系统安全评审清单。",
+      "在试用中验证成员权限撤销后，其智能体、令牌和外部MCP调用是否立即失效。",
+      "通过故障注入测试审计写入失败时操作是否真正中止，并验证导出日志的哈希链完整性。"
+    ],
+    "archiveReason": "实时权限校验、操作前审计、拒绝记录和哈希链验证可作为企业智能体治理的复用设计清单。",
+    "byline": "OneMana Solutions (OPC) Private Limited",
+    "classifiedAt": 1789724890488,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "OneCamp自托管AI治理架构",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "onemana.dev",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://onemana.dev/opengraph-image?68fe100b055b2a0d",
+        "role": "hero",
+        "score": 70,
+        "src": "https://onemana.dev/opengraph-image?68fe100b055b2a0d",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "智能体权限不应在创建时静态缓存，而应在每次工具调用时根据授权人的当前权限重新校验。",
+      "审计记录应先于实际操作写入，并同时记录允许与拒绝事件，才能避免出现已执行但不可追溯的行为。",
+      "使用前向哈希链连接审计条目，可检测历史记录的插入、修改或删除，并支持独立导出验证。"
+    ],
+    "metaAuthor": "OneMana Solutions (OPC) Private Limited",
+    "oneHighValuePoint": "智能体的每次调用都重新继承授权人的实时权限，并在执行前写入审计记录；写入失败则中止操作。",
+    "oneLineReview": "智能体治理设计具体且高度相关，但全文属于厂商销售页面，性能、安全和成本主张缺少独立证据。",
+    "primaryCategory": "AI Agent治理与协作平台",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议存档，重点保留智能体权限与审计机制，产品能力需另行验证",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@id": "https://onemana.dev/#organization",
+            "@type": "Organization",
+            "description": "OneCamp is a self-hosted workspace where AI agents are bounded by the live permissions of the person who authorised them, and no agent action runs unless it is recorded first. Tamper-evident audit log, SAML, OIDC, LDAP, SCIM, and MFA included. Chat, docs, tasks, tables, whiteboards, video, and calendar in one Docker deploy. Pay once, unlimited users.",
+            "name": "OneMana Solutions (OPC) Private Limited",
+            "url": "https://onemana.dev"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "applicationCategory": "BusinessApplication",
+            "description": "OneCamp is a self-hosted workspace where AI agents are bounded by the live permissions of the person who authorised them, and no agent action runs unless it is recorded first. Tamper-evident audit log, SAML, OIDC, LDAP, SCIM, and MFA included. Chat, docs, tasks, tables, whiteboards, video, and calendar in one Docker deploy. Pay once, unlimited users.",
+            "name": "OneCamp",
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "Lifetime self-host license (≈ $19)",
+                "price": "2000",
+                "priceCurrency": "INR"
+              },
+              {
+                "@type": "Offer",
+                "name": "OneCamp Cloud - managed hosting, monthly (≈ $99)",
+                "price": "10000",
+                "priceCurrency": "INR"
+              }
+            ],
+            "operatingSystem": "Docker, Linux"
+          }
+        ]
+      },
+      {
+        "@id": "https://onemana.dev/#organization",
+        "@type": "Organization",
+        "description": "OneCamp is a self-hosted workspace where AI agents are bounded by the live permissions of the person who authorised them, and no agent action runs unless it is recorded first. Tamper-evident audit log, SAML, OIDC, LDAP, SCIM, and MFA included. Chat, docs, tasks, tables, whiteboards, video, and calendar in one Docker deploy. Pay once, unlimited users.",
+        "name": "OneMana Solutions (OPC) Private Limited",
+        "url": "https://onemana.dev"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "applicationCategory": "BusinessApplication",
+        "description": "OneCamp is a self-hosted workspace where AI agents are bounded by the live permissions of the person who authorised them, and no agent action runs unless it is recorded first. Tamper-evident audit log, SAML, OIDC, LDAP, SCIM, and MFA included. Chat, docs, tasks, tables, whiteboards, video, and calendar in one Docker deploy. Pay once, unlimited users.",
+        "name": "OneCamp",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Lifetime self-host license (≈ $19)",
+            "price": "2000",
+            "priceCurrency": "INR"
+          },
+          {
+            "@type": "Offer",
+            "name": "OneCamp Cloud - managed hosting, monthly (≈ $99)",
+            "price": "10000",
+            "priceCurrency": "INR"
+          }
+        ],
+        "operatingSystem": "Docker, Linux"
+      }
+    ],
+    "schemaTypes": [
+      "Organization",
+      "SoftwareApplication"
+    ],
+    "secondaryCategories": [
+      "自托管软件",
+      "企业安全与合规"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍OneCamp自托管协作与AI智能体平台，重点说明实时权限继承、操作前审计、拒绝记录、哈希链防篡改、本地模型、SSO/SCIM，以及一体化部署和定价。",
+    "tags": [
+      "智能体权限治理",
+      "操作前审计",
+      "自托管AI",
+      "哈希链日志",
+      "身份生命周期"
+    ],
+    "title": "OneCamp · Governed AI on your own server",
+    "totalScore": 70,
+    "url": "https://onemana.dev/"
+  },
+  "payloadHash": "sha256:42ca29c1ef09d3809bb2e3eebba02d8adcc79dd8901888e55195f9b4531281b5",
+  "refs": {},
+  "revisionId": "sha256:d03e3dc6fdef413d0245ef903baa31c966afc8ccdaf7b44044d2ef035f587524",
+  "schemaVersion": 1,
+  "updatedAt": 1789863639387
+}

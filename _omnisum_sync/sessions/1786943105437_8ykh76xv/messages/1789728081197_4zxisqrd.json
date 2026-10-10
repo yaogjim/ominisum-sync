@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728081196,
+  "entityType": "message",
+  "id": "1789728081197_4zxisqrd",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Grok 4.6 重回前沿，优势集中在智能体能力与成本效率\n\n据 Artificial Analysis 评测，Grok 4.6 的智能指数达到 61，较一个月前的 4.5 提升 5 分，与 GPT-5.6 Sol 相当，仅落后于 Claude Opus 5（63）和 Claude Fable 5（62）。更重要的是，它在价格不变的情况下完成升级，成为当前前沿模型中性价比较高的选择。\n\n## 智能体任务是主要强项\n\nGrok 4.6 的提升更多体现在需要多轮规划、工具调用和实际执行的任务，而非静态推理：\n\n- 真实知识工作 GDPval-AA v2 得分 1753 Elo，仅次于 Claude Opus 5；因置信区间重叠，与 Claude Fable 5、Qwen3.8 Max 的差异未必显著。\n- 银行客服工具调用测试得分 50.7%，位居前二。\n- 终端软件任务得分 88.4%，与领先模型处于同一水平。\n\n这表明它能同时覆盖知识工作、客服和软件操作等多类智能体场景。\n\n## 同级性能下，调用成本明显更低\n\nGrok 4.6 仍按每百万输入/输出 Token 2/6 美元收费，显著低于 Claude Opus 5 的 5/25 美元和 GPT-5.6 Sol 的 5/30 美元。实测单任务成本为 0.84 美元，与 Kimi K3 相同但智能指数略高，因此进入“性能—成本”帕累托前沿。需注意，缓存输入价格从 0.3 美元升至 0.5 美元。\n\n## 长任务效率可进一步放大成本优势\n\n在长周期知识工作基准 AA-Briefcase 中，Grok 4.6 达到 Claude Fable 5 档位，但仍落后于 Opus 5。其优势是执行效率：平均约 53 轮、消耗约 5 亿输入 Token，而 Opus 5 Max 约需 103 轮和 20 亿 Token。对于上下文持续膨胀的智能体任务，这种轮次和 Token 节省可能比标价差异更有商业价值。其上下文窗口维持在 50 万 Token。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728081196,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:445a69cdd9d9a1e38b82c69384cac35f7fa336f9678b21e98bde6651d3c7f802",
+  "refs": {
+    "sessionId": "1786943105437_8ykh76xv"
+  },
+  "revisionId": "sha256:c1365e7597bb6af808d43fb68f36db4c4cbb8c6a9397f3c396071302eca6fa76",
+  "schemaVersion": 1,
+  "updatedAt": 1789728081196
+}

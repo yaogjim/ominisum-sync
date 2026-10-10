@@ -1,0 +1,83 @@
+{
+  "createdAt": 1790219970383,
+  "entityType": "session",
+  "id": "1790219970383_erwjl2me",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需评估车机集成，查阅文中提及的xcertplay和livi项目说明，核对认证方式、平台支持与功能限制。",
+      "复现时分别检查有线视频、无线连接和音频输出，确认作者报告的问题是否在目标设备上出现。"
+    ],
+    "archiveReason": "",
+    "byline": "eastwood.net",
+    "classifiedAt": 1790767919206,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 5,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "CarPlay认证与视频解码机制",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 680,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HS5lTrmakAEYp13?format=jpg&name=small",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HS5lTrmakAEYp13?format=jpg&name=small",
+        "width": 510
+      }
+    ],
+    "knowledgePoints": [
+      "作者描述的处理链路为读取USB芯片证书、等待iOS设备连接，再由软件接收并解码视频流。",
+      "作者报告的Android 9车机测试存在有线视频正常、无线黑屏和音频缺失，表明画面可用不等于功能完整。",
+      "作者提出可向具备视频解码和触控能力的其他系统移植，但未提供跨平台验证或完整兼容条件。"
+    ],
+    "oneHighValuePoint": "按作者描述，该方案将USB设备的认证功能与软件端的视频接收、解码功能分离，为理解硬件角色及评估移植方向提供了线索。",
+    "oneLineReview": "提供了认证与媒体处理分离的技术线索，但原理有所简化、测试仅为个案，更适合快速了解而非直接指导实现。",
+    "primaryCategory": "技术原理解析",
+    "rating": "C",
+    "rejectReason": "与核心关注方向仅有间接联系，缺少实现步骤、协议细节和可核实的测试证据，不宜作为技术依据长期保留。",
+    "retentionDecision": "低优先级速览，有车机集成需求时再查原项目",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "软硬件集成",
+      "开源项目实践"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者将该CarPlay方案概括为USB芯片提供认证、软件接收并解码视频流，并提供开源项目线索。其Android 9车机测试中，有线画面流畅，但无线黑屏、音频缺失；回复进一步提出跨系统移植的可能性。",
+    "tags": [
+      "CarPlay",
+      "MFi认证",
+      "Android车机",
+      "视频流解码",
+      "跨平台移植"
+    ],
+    "title": "eastwood.net: 还是有很多人并不知道这玩意的工作原理，虽然你去看一眼原项目的说明就能明白的事…不过我还是解释一下吧",
+    "totalScore": 47,
+    "url": "https://x.com/eastwoodnet/status/2102915759332892858"
+  },
+  "payloadHash": "sha256:a7d99f7674c4ac3d714f1c0c468cfcfdc978400bda3e47ce5bf45049a7a4904b",
+  "refs": {},
+  "revisionId": "sha256:c0ef8cd570ffe63f609e8882aa05833f0b2bc1f5fab671dadb2a0bfac9506f3e",
+  "schemaVersion": 1,
+  "updatedAt": 1790767919988
+}

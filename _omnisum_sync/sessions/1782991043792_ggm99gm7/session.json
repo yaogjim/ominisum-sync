@@ -1,0 +1,67 @@
+{
+  "createdAt": 1782991043792,
+  "entityType": "session",
+  "id": "1782991043792_ggm99gm7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在现有项目中尝试建立ready-to-spec标签和specs目录结构。",
+      "为复杂需求模板化生成PRODUCT.md与TECH.md，并加入人工审查环节。",
+      "设计规格到测试的映射，避免仅依赖模型判断实现是否符合规格。"
+    ],
+    "archiveReason": "提供了AI编码代理从分诊到规范再到实施的可复用流程，可作为构建自动化开发流水线的参考。",
+    "classifiedAt": 1783039607758,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "云软件工厂规范驱动流程",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "分诊流程可按问题复杂度、歧义度和路线图匹配度决定进入实施、补充信息或规格阶段。",
+      "规范驱动开发可缓解AI代理处理复杂需求时的一次性实现失败问题。",
+      "评论中指出规格验证不应只靠模型判断，应让规格明确对应测试并以测试通过作为验证依据。"
+    ],
+    "oneHighValuePoint": "将复杂需求拆成产品规范PRODUCT.md和技术规范TECH.md，并作为实施代理的输入约束。",
+    "oneLineReview": "流程框架有参考价值，但案例和验证机制较薄，更多是概念性实践笔记。",
+    "primaryCategory": "AI软件工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后按实践价值决定是否长期保留",
+    "secondaryCategories": [
+      "规范驱动开发",
+      "自动化开发流程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍在云软件工厂中加入Spec代理：简单问题直接实施，复杂或模糊但符合路线图的问题先生成PRODUCT.md和TECH.md，再经人工审查后交由实施代理执行。",
+    "tags": [
+      "云软件工厂",
+      "Spec Agent",
+      "GitHub Actions",
+      "编码代理",
+      "SDLC自动化"
+    ],
+    "title": "如何构建云软件工厂 - 规范驱动开发技能",
+    "totalScore": 66,
+    "url": "https://x.com/zachlloydtweets/status/2071670840660533393"
+  },
+  "payloadHash": "sha256:c8f8638e6991ce71758bb10a9ce6e81d3a667f819939db0ad737ba025d58de18",
+  "refs": {},
+  "revisionId": "sha256:1dea15d0dcbe32c59b7e1732fd04aa8304f187203c0347d774673392adf4429d",
+  "schemaVersion": 1,
+  "updatedAt": 1789729472153
+}

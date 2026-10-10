@@ -1,0 +1,23 @@
+{
+  "createdAt": 1782989752850,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1782989752850",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Hermes Agent v0.18.0 总结：从 “能做事” 走向 “会判断”\n\n## 一句话概括\n\nHermes Agent v0.18.0 是一次偏 “工程质量 + 智能判断能力” 的大版本升级：它清空了所有最高优先级问题，并重点强化了多模型协作、自我验证、可控学习、桌面编码工作流和规模化部署能力。\n\n---\n\n## 版本核心亮点\n\n### 1. 清空 P0/P1：工程质量进入稳定期\n\n本次发布最大的信号是：团队在约 12 天内清理了全部 P0/P1 高优先级问题。\n\n关键数据：\n\n- 约 1,720 次 commit\n- 998 个 PR 合并\n- 949 个 issue 关闭\n- 约 700 个最高优先级问题处理完成\n- 当前 P0/P1 数量为 0\n\n这意味着 Hermes Agent 正从快速迭代阶段，进入更注重稳定性、可靠性和生产可用性的阶段。\n\n---\n\n## 智能能力升级\n\n### 2. MoA 成为一等公民：多模型 “专家委员会”\n\nMixture-of-Agents 不再只是一个模式，而是变成了可直接选择的 “虚拟模型”。\n\n用户可以像选择 GPT、Claude、Grok 一样，选择一个 MoA 组合模型。Hermes 会自动把问题分发给多个模型，再由聚合模型生成最终答案。\n\n产品价值：\n\n- 适合复杂问题、决策分析、代码审查等高价值场景\n- 用户可以看到每个模型的独立输出\n- 最终聚合答案支持流式返回，体验更自然\n\n这让 Agent 从 “单模型回答” 变成 “多模型协同判断”。\n\n---\n\n### 3. Agent 会验证结果：从 “我觉得完成了” 到 “有证据证明完成”\n\nHermes 现在可以基于证据判断任务是否完成，而不是仅依赖模型自我声明。\n\n主要能力包括：\n\n- `/goal`支持定义完成标准\n- Agent 可运行项目检查、测试或自定义验证脚本\n- 编码任务会记录验证证据\n- 支持`pre_verify`钩子接入自定义检查\n\n这对产品和工程场景很重要：Agent 不只是执行任务，还能证明任务真的完成。\n\n---\n\n## 自我学习与记忆透明化\n\n### 4. `/learn`：把经验沉淀成技能\n\n用户可以通过`/learn <anything>`，让 Hermes 从目录、URL 或刚刚完成的工作流中提炼可复用技能。\n\n它会自动遵循项目中的`CONTRIBUTING.md`规范，把经验沉淀为标准化技能。\n\n本质上，这是把一次性对话变成可复用能力。\n\n---\n\n### 5. `/journey`：让 Agent 的记忆可见、可编辑\n\n新增`/journey`命令，用于查看 Hermes 过去学习到的记忆和技能。\n\n用户可以：\n\n- 查看学习时间线\n- 编辑错误记忆\n- 删除无用内容\n- 在桌面端通过记忆图谱可视化查看\n\n这解决了 Agent 记忆长期以来的黑盒问题，让用户能管理 “它知道什么”。\n\n---\n\n## 工作流与产品体验升级\n\n### 6. 后台子 Agent 并行：复杂任务可异步推进\n\n`delegate_task`现在支持多个子 Agent 后台并行执行。\n\n例如：\n\n- 同时调研 5 个竞品\n- 并行审查 3 个代码模块\n- 后台执行多个分析任务\n\n用户不用等待，可以继续对话；所有子任务完成后，系统会汇总成一个结果返回。\n\n这是 Agent 从 “单线程助手” 向 “任务调度系统” 演进的重要一步。\n\n---\n\n### 7. 桌面端成为编码工作台\n\nHermes Desktop 新增一等公民级别的 Projects 能力。\n\n包括：\n\n- 项目侧边栏\n- 代码工作区\n- Review 面板\n- Git worktree 管理\n- 多终端面板\n- PR 风格文件 diff\n- 文件预览与编辑\n\n这让桌面端不只是聊天工具，而更像一个面向 Agent 编程的开发驾驶舱。\n\n---\n\n## 基础设施与企业化能力\n\n### 8. Gateway 支持规模化部署\n\nHermes Gateway 新增：\n\n- 空闲时 scale-to-zero\n- 重启、迁移、更新前的 drain coordination\n- 避免中断进行中的对话\n\n这使 Hermes 更适合团队部署、托管服务和中大型生产环境。\n\n---\n\n### 9. 支持 Google Vertex AI\n\nHermes 现在可通过 Google Cloud 的 Vertex AI 使用 Gemini 模型，并自动处理 OAuth2 短期 token 的刷新。\n\n对企业用户的价值是：\n\n- 不需要手动粘贴 token\n- 不会因 token 过期导致会话中断\n- 更适合使用 GCP 体系的组织\n\n---\n\n## 安全与成本优化\n\n### 10. 安全加固：降低凭证泄露风险\n\n本次版本加强了多个安全面：\n\n- 阻止 cron 配置中可能外泄 provider 凭证的路径\n- 加强 MCP 配置持久化安全\n- 增加 Slack token 脱敏\n- 强化云元数据访问限制\n- 提升 aiohttp CVE 安全基线\n\n整体目标是减少 prompt injection 或配置错误导致的凭证泄露。\n\n---\n\n### 11. 自我改进成本更低\n\nHermes 的后台自我学习流程现在会：\n\n- 使用辅助模型处理\n- 压缩上下文，而不是重放完整对话\n- 动态调整学习频率\n\n结果是保留自我改进能力，同时显著降低主模型调用成本。\n\n---\n\n## 产品判断\n\n### 12. 这次发布的真正意义\n\nv0.18.0 不只是功能堆叠，而是体现了 Agent 产品的几个关键趋势：\n\n1. **从生成答案到验证结果**  \n   Agent 必须证明自己完成了任务。\n\n2. **从单模型到多模型协作**  \n   高价值任务需要模型之间互相补充和审议。\n\n3. **从黑盒记忆到用户可控记忆**  \n   长期 Agent 必须让用户管理它的学习内容。\n\n4. **从聊天工具到工作系统**  \n   桌面端、项目、子 Agent、Gateway 都在把 Hermes 推向生产级工作流平台。\n\n---\n\n## 总结\n\nHermes Agent v0.18.0 是一个 “可信 Agent” 方向的关键版本。\n\n它强化的不只是模型能力，而是围绕 Agent 的完整系统能力：  \n**能协作、能验证、能学习、能被管理、能规模化部署。**\n\n对开发者和团队而言，这意味着 Hermes 正从实验型 AI 助手，逐步演进为可用于真实生产场景的 Agent 工作平台。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1782989752850,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bd4febf5377afdaa5c7954edb12dfb4ed306c3f2f84ce6361e07989e03d3bdf2",
+  "refs": {
+    "sessionId": "1782989752960_z44vtcoj"
+  },
+  "revisionId": "sha256:169f7d567187571ff87f5fcc54f42d679abdd4bc6fadde579072d5eb6970af51",
+  "schemaVersion": 1,
+  "updatedAt": 1782989752850
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784101258990,
+  "entityType": "session",
+  "id": "1784101258990_v9klz0ok",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选取一个现有RAG或客服智能体场景，为同一输入生成4至8条轨迹，并用RULER检查相对排序是否符合人工判断。",
+      "将确定性正确性检查与LLM相对评分分别记录并组合，比较纯规则奖励、纯评判器奖励和混合奖励的效果。",
+      "建立一组包含幻觉、遗漏、冗长和边界情况的固定测试集，用于迭代系统提示、评价量表及评判模型。"
+    ],
+    "archiveReason": "提供了将系统提示转化为隐式评价标准，并结合RULER与GRPO训练智能体的可复用流程、代码结构和实践参数。",
+    "classifiedAt": 1784678351812,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "以系统提示驱动智能体强化学习",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "GRPO通过同一提示下多条响应的组内奖励归一化估计相对优势，因此可以省去PPO中的独立价值模型。",
+      "RULER读取系统提示和候选轨迹，由LLM评判器进行组内相对评分，使非确定性任务也能获得自动化训练信号。",
+      "确定性验证器与LLM评判器可以组合：前者衡量客观正确性，后者评价忠实性、完整性、表达质量等多维目标。"
+    ],
+    "oneHighValuePoint": "把系统提示或自然语言量表作为隐式奖励规范，让LLM对同一场景的多条轨迹进行相对评分，可显著减少手写奖励函数的工程成本。",
+    "oneLineReview": "对非可验证智能体任务的奖励设计给出了清晰且可实施的方案，但主要证据来自概念论证和示例，缺少严格基准验证。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，重点保留相对评分流程、适用边界和混合奖励设计",
+    "secondaryCategories": [
+      "强化学习",
+      "大语言模型训练"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章梳理RLHF、RLVR与GRPO的演进，指出非确定性智能体任务的核心瓶颈是奖励信号，并介绍RULER如何让LLM依据系统提示相对评价多条轨迹，再将分数用于GRPO训练。",
+    "tags": [
+      "RULER",
+      "GRPO",
+      "LLM评判器",
+      "系统提示",
+      "奖励函数"
+    ],
+    "title": "2026 年顶级 AI 实验室如何构建强化学习智能体（利用卡帕西的系统提示学习理念）",
+    "totalScore": 80,
+    "url": "https://x.com/_avichawla/status/2049037299334472015"
+  },
+  "payloadHash": "sha256:417f454a582fa4a2d84b556fcd11c8266c0e4c7e35fee206838e8cec9031b7ee",
+  "refs": {},
+  "revisionId": "sha256:fd5590717148f3387a3b68c4734ef73fb9c9d37daaf5160bc79ccf0c2d0249e0",
+  "schemaVersion": 1,
+  "updatedAt": 1789696005740
+}

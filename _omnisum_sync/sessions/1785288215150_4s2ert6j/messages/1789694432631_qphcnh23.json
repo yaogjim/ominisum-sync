@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694432629,
+  "entityType": "message",
+  "id": "1789694432631_qphcnh23",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nGigatoken 是一个面向大模型数据处理的高速 CPU 分词器，项目自测可达每秒数 GB 至 24GB，部分 BPE 分词器比 HuggingFace Tokenizers 快约百倍甚至千倍。\n\n## 关键内容\n\n- 支持 HuggingFace、Tiktoken 兼容接口，也可直接加载模型名；原生 API 能由 Rust 直接读文件，减少 Python 传输开销，速度最高。\n- 在 11.9GB OpenWebText 数据上的自测中，主流 BPE 分词器约为 **3—24GB/s**；提升幅度受 CPU 和分词器影响明显，并非都能达到 1000 倍，部分 SentencePiece 模型仅快约 7—22 倍。\n- 加速主要来自 SIMD 指令、减少分支、缓存重复文本片段，以及降低 Python 与线程通信开销。\n- 当前仍有局限：不支持 WordPiece，SentencePiece 优化不足，Windows 测试较少；兼容模式虽力求输出一致，但会损失部分性能。\n\n## 通俗解读\n\n“1000 倍”是特定硬件和分词器下的项目自测峰值，不应理解为所有场景的固定提升。它主要适合需要给海量训练语料分词的用户；普通推理或小文件处理中，分词往往不是瓶颈。若你正搭建大规模数据预处理流程，值得细读基准条件、兼容性和已知问题；否则了解接口与限制即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694432629,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1574edf06d3fe974b7edb5857f0f90a64d156b463186b62f28f56b8d865c9b33",
+  "refs": {
+    "sessionId": "1785288215150_4s2ert6j"
+  },
+  "revisionId": "sha256:66eba135d299a8341270fcbb5b6f3784f0b3290f9b663cd7ef8a5d2e225e2dd4",
+  "schemaVersion": 1,
+  "updatedAt": 1789694432629
+}

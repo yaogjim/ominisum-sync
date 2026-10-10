@@ -1,0 +1,25 @@
+{
+  "createdAt": 1788921676657,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1788921676657",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Copperhead：把 AI 编程代理带进 PCB 开发\n\n## 一句话概括\n\nCopperhead 是面向 KiCad 的开源 AI 硬件开发代理，可理解为 “电路板领域的 Cursor”：它能从自然语言需求出发，修改真实 PCB 工程，并通过文档约束、ERC/DRC 检查和 Git 回滚控制风险。\n\n## 核心能力\n\n### 从零创建硬件项目\n\n`copperhead create`可将产品简报逐步转化为：\n\n- 产品规格与系统架构\n- 元器件选型与 BOM\n- KiCad 原理图和初步 PCB 布局\n- Gerber 文件\n- 固件框架与开发计划\n- 面向 JLCPCB 等供应商的采购文件\n\n### 修改现有 KiCad 工程\n\n`copperhead do\"< 需求 >\"`类似代码代理，可直接：\n\n- 读写`.kicad_sch`和`.kicad_pcb`\n- 修改电路、器件、引脚和网络\n- 将变更同步到 BOM、设计文档等关联文件\n- 自动运行 ERC/DRC，发现并修复问题\n- 记录设计理由、变更历史和决策过程\n\n## 关键产品机制\n\n### 规格约束输入\n\n没有经过记录的变更提案，代理不能修改 KiCad 文件。每次编辑都必须对应明确的设计意图，避免 AI 随意改板。\n\n### 工具验证输出\n\n文件修改后必须通过 ERC、DRC、规格校验和文档漂移检查，才能报告完成；失败时会回滚到 Git 快照。\n\n其核心原则是：\n\n> 规格把关进入，验证把关输出。\n\n### 文档作为长期记忆\n\n设计决策、BOM、变更记录均保存在仓库内的 Markdown/JSON 文件中，使代理理解完整设计背景，而不是只处理当前局部任务。\n\n## 工程与生态\n\n- 支持 OpenAI、Anthropic、Claude Code、Cursor Agent、Codex CLI，以及兼容 OpenAI 的模型端点。\n- `check`、`doctor`、BOM 导出等确定性功能不调用 LLM，适合放入 CI。\n- 实验性 MCP 接口只暴露完整的受控流程，不提供底层文件编辑工具，防止宿主代理绕过规格和验证门禁。\n- 基于 KiCad、`kicad-cli`和 OpenSpec，采用 Apache-2.0 协议。\n- 产物均保留在用户自己的仓库中，无专有格式和平台锁定。\n\n## 当前边界\n\nCopperhead：\n\n- **不是自动布线器**：只生成通过检查的初稿，精细布局仍需人工或其他工具完成。\n- **不是新编辑器**：KiCad 仍是主要编辑环境。\n- **不是责任工程师**：ERC/DRC 通过不等于具备量产条件，最终仍需人工审核签字。\n\n## 成熟度判断\n\n项目仍处于早期阶段、1.0 之前：\n\n- `init`、`check`、漂移检测和制造导出等确定性能力已有离线测试覆盖。\n- `do`、`sync --resolve`、`create`等 AI 流程已经实现，但尚未充分完成真实模型下的端到端验证。\n- 通过 Git 快照和失败回滚降低文件损坏风险，但官方仍建议在独立分支中使用。\n\n## 产品价值\n\nCopperhead 的核心创新不是 “让 AI 画电路板”，而是把软件工程中的**规格驱动、代码代理、自动测试、版本管理和可追溯决策**引入硬件开发。\n\n它试图解决的关键问题是：让 AI 不仅能提出电路方案，还能在真实工程文件中完成修改，并用工具链证明 “修改至少在规则层面成立”。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1788921676657,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7a6961a570a1c8379dbb0146dda7506f06a2cfd23eee1b260da7413b24faa098",
+  "refs": {
+    "sessionId": "1788921676753_nocrj1me"
+  },
+  "revisionId": "sha256:19c371a849b6ff37ad97ab5c04957c8886bc398af1fc4a8e2222d2aa9d54868a",
+  "schemaVersion": 1,
+  "updatedAt": 1788921676657
+}

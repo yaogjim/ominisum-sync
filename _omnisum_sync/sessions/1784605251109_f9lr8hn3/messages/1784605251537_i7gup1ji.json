@@ -1,0 +1,20 @@
+{
+  "createdAt": 1784604937439,
+  "entityType": "message",
+  "id": "1784605251537_i7gup1ji",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章通过拆解 Matt Pocock 的 Skills 与工作流，总结出一套 **AI Coding 文档上下文的拆分原则**：不同类型的信息应分别存放，避免上下文混乱，并让 AI 能按“领域建模—方案设计—任务执行—测试审查”的流程稳定开发。\n\n## 一、项目知识与 AI 上下文应分开管理\n\n1. **项目知识库**\n   - 包括架构讨论、项目背景、调研材料等。\n   - 建议放在项目代码之外，避免大量背景信息进入 AI 上下文，影响其对当前任务的判断。\n\n2. **`Agents.md`：规则与导航**\n   - 主要记录 AI Agent 必须遵守的规则、开发流程和项目规范。\n   - 同时提供重要的项目导航，帮助 AI 快速找到相关文件和模块。\n\n3. **`Context.md`：统一术语**\n   - 维护术语表（Glossary）和统一语言（Ubiquitous Language）。\n   - 明确业务、技术术语的含义，减少人和 AI 对同一概念的理解偏差。\n\n## 二、架构、设计与决策分别记录\n\n4. **ADR：架构决策记录**\n   - ADR 即 Architecture Decision Records。\n   - 每项关键架构决策单独使用一个 Markdown 文件记录，防止后续开发破坏既定架构。\n   - 例如：明确规定“**A 模块永远不能反向依赖 B 模块**”。\n\n5. **`Architecture.md`：架构文档**\n   - 描述系统整体结构、模块关系、依赖方向和架构边界。\n   - 与 ADR 的区别是：Architecture 说明当前整体架构，ADR 解释某项架构决策及其约束。\n\n6. **`Design.md`：设计文档**\n   - 记录具体功能或系统的设计方案。\n   - 重点说明“准备如何实现”，作为架构与实际开发之间的衔接。\n\n## 三、把方案逐步拆成可执行任务\n\n7. **`Spec`：阶段性实现方案**\n   - 使用文件夹管理不同阶段或功能的规格说明。\n   - 记录实现方案、范围和边界，明确“做什么”以及“不做什么”。\n\n8. **`Tickets`：按完整能力纵向切分**\n   - 每个 Ticket 都应是一个可独立执行、演示和验收的任务。\n   - 不应按前端、后端、测试等职能横向拆分，而应围绕一个完整用户功能进行**垂直切片**。\n   - 一个 Ticket 可同时覆盖：\n     - UI\n     - API\n     - Runtime\n     - Storage\n     - Test\n     - 验收\n   - 如果一个 Ticket 的内容超过 AI 的一个 **Context Window（上下文窗口）**，则应继续拆小。\n\n9. **`Scratch`：本地临时问题管理**\n   - 可作为本地 Issues，记录临时问题、想法和待办事项。\n   - 如果项目已经使用 GitHub Issues，则优先使用 GitHub Issues，避免重复维护。\n\n## 四、推荐的 AI Coding 工作流\n\nMatt Pocock 的工作流可概括为：\n\n```text\nGrill → Domain Modeling → Spec → Tickets → Implement → TDD → Code Review\n```\n\n对应含义如下：\n\n1. **Grill**：通过持续追问澄清需求，找出模糊点和隐含假设。\n2. **Domain Modeling**：建立领域模型，统一业务概念及其关系。\n3. **Spec**：形成明确的实现规格、范围与边界。\n4. **Tickets**：把方案拆成可独立验收的垂直任务。\n5. **Implement**：按 Ticket 实现功能。\n6. **TDD**：通过测试驱动开发保证行为符合预期。\n7. **Code Review**：审查代码质量、架构约束和实现完整性。\n\n## 五、评论区的补充与争议\n\n- **关于知识库是否应放在项目外**\n  - 有评论质疑：如果知识库能随主分支同步更新，就不一定会产生信息不一致；项目背景也有助于 Agent 进行设计。\n  - 争议的核心不是 AI 能否读取知识库，而是：**是否应让大量背景材料默认进入每次任务的上下文**。更稳妥的方式是按需检索，而不是全量加载。\n\n- **关于 Skills 与企业知识沉淀**\n  - 有观点认为，模型公司的 FDE（前线部署工程师）会先帮助企业落地 Agent、沉淀 Skills，再将这些经验转化为模型能力。\n  - 这可能提升企业效率；但如果业务没有同步增长，也可能进一步减少人力需求。\n\n## 核心结论\n\n这套方法的关键不是“多写文档”，而是让不同文档各司其职：**知识库保存背景，`Agents.md` 管规则，`Context.md` 统一术语，ADR 约束架构，Spec 定义方案，Tickets 驱动执行**。最终目标是让 AI 每次只获得完成当前任务所需的最小、准确且结构化的上下文。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1784604937439,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8493ef80ad98a9bde7650d798d3e32ead9dcd2705f12f3754e88a505a0e9e1da",
+  "refs": {
+    "sessionId": "1784605251109_f9lr8hn3"
+  },
+  "revisionId": "sha256:905f36daa747bf62b5f44bffb6ff31689ac8b49c29b57bfdcf8f7a08f3dd0741",
+  "schemaVersion": 1,
+  "updatedAt": 1784604937439
+}

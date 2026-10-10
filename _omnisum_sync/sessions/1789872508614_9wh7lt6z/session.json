@@ -1,0 +1,250 @@
+{
+  "createdAt": 1789872508614,
+  "entityType": "session",
+  "id": "1789872508614_9wh7lt6z",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "classifiedAt": 1790768557578,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 8,
+      "relevance": 2,
+      "transferability": 3
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "前后脑发育来源分离的研究报道",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "med.stanford.edu",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Human brain is two separate organs, Stanford Medicine-led research finds",
+        "caption": "",
+        "height": 1440,
+        "id": "img-2",
+        "nearbyText": "Stanford Medicine researchers have shown that the human brain is two distinct organs, a finding that creates opportunities for studying devastating diseases that affect one of those parts — the brain stem. Tryfonov/Adobe Stock",
+        "resolvedUrl": "https://med.stanford.edu/content/dam/sm-news/images/2026/09/Loh-brain.jpeg/jcr:content/renditions/original",
+        "role": "article",
+        "score": 73,
+        "src": "https://med.stanford.edu/content/dam/sm-news/images/2026/09/Loh-brain.jpeg/jcr:content/renditions/original",
+        "width": 1713
+      }
+    ],
+    "knowledgePoints": [
+      "报道将表达Otx2的前脑、中脑祖细胞与表达Gbx2的后脑祖细胞区分为两条早期发育路径。",
+      "研究通过比较祖细胞的染色质配置，进一步支持不同发育来源及细胞命运限制的解释。",
+      "报道中的人类后脑运动神经元培养成果，为研究相关神经退行性疾病提供了体外模型线索，但不等于已经获得治疗方案。"
+    ],
+    "metaAuthor": "Krista Conger",
+    "oneHighValuePoint": "细胞分化研究可能需要先识别正确的早期祖细胞来源，而不是仅尝试把既有祖细胞诱导成目标终末细胞。",
+    "oneLineReview": "研究线索具体且有新意，但“两个独立器官”的表述强于报道展示的证据，与核心关注方向的联系也较弱。",
+    "primaryCategory": "生命科学研究",
+    "published": "2026-09-18T06:59:43.791-07:00",
+    "rating": "C",
+    "rejectReason": "与核心关注方向关联较弱，缺少可直接执行的实验步骤；报道未提供样本量、原始数据及关键结论的适用边界。",
+    "retentionDecision": "速览研究发现；有神经发育或疾病建模专题需求时，再查阅原始论文。",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@id": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+            "@type": "WebPage",
+            "about": {
+              "@id": "https://med.stanford.edu/news.html#organization"
+            },
+            "datePublished": "2026-09-18T06:59:43.791-07:00",
+            "description": "Stanford Health Care delivers the highest levels of care and compassion. SHC treats cancer, heart disease, brain disorders, primary care issues, and many more.",
+            "image": {
+              "@id": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html#primaryimage"
+            },
+            "inLanguage": "en-US",
+            "isPartOf": {
+              "@id": "https://med.stanford.edu/news.html#website"
+            },
+            "name": "Human brain is two separate organs, Stanford Medicine-led research finds",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html"
+                ]
+              }
+            ],
+            "primaryImageOfPage": {
+              "@id": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html#primaryimage"
+            },
+            "thumbnailUrl": "",
+            "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html"
+          },
+          {
+            "@id": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html#primaryimage",
+            "@type": "ImageObject",
+            "contentUrl": "",
+            "inLanguage": "en-US",
+            "url": ""
+          },
+          {
+            "@id": "https://med.stanford.edu/news.html#website",
+            "@type": "WebSite",
+            "copyrightHolder": {
+              "@id": "https://med.stanford.edu/news.html#organization"
+            },
+            "description": "",
+            "inLanguage": "en-US",
+            "name": "News",
+            "publisher": {
+              "@id": "https://med.stanford.edu/news.html#organization"
+            },
+            "url": "https://med.stanford.edu/news.html"
+          },
+          {
+            "@id": "https://med.stanford.edu/news.html#organization",
+            "@type": [
+              "Organization"
+            ],
+            "description": "",
+            "image": {
+              "@id": "https://med.stanford.edu/news.html#/schema/logo/image/"
+            },
+            "logo": {
+              "@id": "https://med.stanford.edu/news.html#/schema/logo/image/",
+              "@type": "ImageObject",
+              "contentUrl": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains/_jcr_content/cq:featuredimage.coreimg.jpg/1789589861208/lksc.jpg",
+              "inLanguage": "en-US",
+              "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains/_jcr_content/cq:featuredimage.coreimg.jpg/1789589861208/lksc.jpg"
+            },
+            "name": "News",
+            "parentOrganization": {
+              "@type": "Organization",
+              "logo": "http://med.stanford.edu/content/dam/stanford/brand/SM_h_RGB.png",
+              "name": "School Of Medicine",
+              "sameAs": [
+                "https://med.stanford.edu/"
+              ],
+              "url": "https://med.stanford.edu/"
+            },
+            "url": "https://med.stanford.edu/news.html"
+          }
+        ]
+      },
+      {
+        "@id": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
+        "@type": "WebPage",
+        "about": {
+          "@id": "https://med.stanford.edu/news.html#organization"
+        },
+        "datePublished": "2026-09-18T06:59:43.791-07:00",
+        "description": "Stanford Health Care delivers the highest levels of care and compassion. SHC treats cancer, heart disease, brain disorders, primary care issues, and many more.",
+        "image": {
+          "@id": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html#primaryimage"
+        },
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://med.stanford.edu/news.html#website"
+        },
+        "name": "Human brain is two separate organs, Stanford Medicine-led research finds",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html"
+            ]
+          }
+        ],
+        "primaryImageOfPage": {
+          "@id": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html#primaryimage"
+        },
+        "thumbnailUrl": "",
+        "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html"
+      },
+      {
+        "@id": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html#primaryimage",
+        "@type": "ImageObject",
+        "contentUrl": "",
+        "inLanguage": "en-US",
+        "url": ""
+      },
+      {
+        "@id": "https://med.stanford.edu/news.html#website",
+        "@type": "WebSite",
+        "copyrightHolder": {
+          "@id": "https://med.stanford.edu/news.html#organization"
+        },
+        "description": "",
+        "inLanguage": "en-US",
+        "name": "News",
+        "publisher": {
+          "@id": "https://med.stanford.edu/news.html#organization"
+        },
+        "url": "https://med.stanford.edu/news.html"
+      },
+      {
+        "@id": "https://med.stanford.edu/news.html#organization",
+        "@type": [
+          "Organization"
+        ],
+        "description": "",
+        "image": {
+          "@id": "https://med.stanford.edu/news.html#/schema/logo/image/"
+        },
+        "logo": {
+          "@id": "https://med.stanford.edu/news.html#/schema/logo/image/",
+          "@type": "ImageObject",
+          "contentUrl": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains/_jcr_content/cq:featuredimage.coreimg.jpg/1789589861208/lksc.jpg",
+          "inLanguage": "en-US",
+          "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains/_jcr_content/cq:featuredimage.coreimg.jpg/1789589861208/lksc.jpg"
+        },
+        "name": "News",
+        "parentOrganization": {
+          "@type": "Organization",
+          "logo": "http://med.stanford.edu/content/dam/stanford/brand/SM_h_RGB.png",
+          "name": "School Of Medicine",
+          "sameAs": [
+            "https://med.stanford.edu/"
+          ],
+          "url": "https://med.stanford.edu/"
+        },
+        "url": "https://med.stanford.edu/news.html"
+      }
+    ],
+    "schemaTypes": [
+      "WebPage",
+      "ImageObject",
+      "WebSite",
+      "Organization"
+    ],
+    "secondaryCategories": [
+      "神经科学",
+      "干细胞与疾病建模"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章报道前脑、中脑与后脑可能具有不同的早期发育来源，以祖细胞标记、染色质差异和跨物种观察作为线索，并介绍据此培养人类后脑运动神经元的成果及其对SMA、ALS疾病研究的潜在意义。",
+    "tags": [
+      "脑发育",
+      "神经祖细胞",
+      "染色质",
+      "后脑神经元",
+      "干细胞分化"
+    ],
+    "title": "Human brain is two separate organs, Stanford Medicine-led research finds",
+    "totalScore": 44,
+    "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html"
+  },
+  "payloadHash": "sha256:246f6baa257664772c64da1eb84d6d30e755f75050eb9ec49eec278a9a449ebc",
+  "refs": {},
+  "revisionId": "sha256:a9ab51e46986571150fb76f513252112ed61108e5a69cd815539f33f3bab2f80",
+  "schemaVersion": 1,
+  "updatedAt": 1790768558390
+}

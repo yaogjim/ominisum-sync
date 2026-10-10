@@ -1,0 +1,159 @@
+{
+  "createdAt": 1789096100251,
+  "entityType": "session",
+  "id": "1789096100251_1xpvnxy1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个跨多个PR的功能或迁移任务，建立独立Project并先让智能体研究系统、记录共享上下文。",
+      "对迁移任务先逐个严格审查生成的PR，待方案稳定后再逐步降低人工检查频率。",
+      "为持续维护任务配置PR、Slack或定时触发，并保留人工抽查和纠错环节。"
+    ],
+    "archiveReason": "文章明确展示了协调器、共享上下文和订阅触发三项机制，以及功能开发、迁移和持续维护三类可复用场景。",
+    "byline": "Alexi Robbins & Fredrika Lindh",
+    "classifiedAt": 1789642805664,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Cursor Projects多智能体协作",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "cursor.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/og/projects-og-4-eYFsGoC01dE653MUPbfMcWZNX6eR8w.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/og/projects-og-4-eYFsGoC01dE653MUPbfMcWZNX6eR8w.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "协调器本身不直接编码，而是持续拆解任务并调度多个执行智能体，以保持响应性和并行能力。",
+      "项目级共享文件可沉淀代码库知识、测试方法和用户偏好，使后续智能体复用已有经验。",
+      "长期Agent项目可归纳为功能开发、大规模迁移和持续维护三类主要应用模式。"
+    ],
+    "metaAuthor": "Alexi Robbins",
+    "oneHighValuePoint": "将长期软件任务抽象为“协调器调度子智能体、共享项目上下文、订阅外部信号”的持续运行系统，而非一次性编程对话。",
+    "oneLineReview": "这是相关度较高的产品发布介绍，Agent编排思路清晰，但效果数据缺少统计口径，实施细节也较有限。",
+    "primaryCategory": "AI编程工具",
+    "published": "2026-09-10T12:00:00.000Z",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并存档，重点保留长期任务编排的产品机制与应用模式",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@id": "https://cursor.com/#org",
+        "@type": "Organization",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "url": "https://cursor.com/contact-sales"
+        },
+        "description": "Cursor is the best AI coding agent.",
+        "foundingDate": "2023",
+        "logo": {
+          "@type": "ImageObject",
+          "height": 60,
+          "url": "https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/og/opengraph-default.png",
+          "width": 200
+        },
+        "name": "Cursor",
+        "sameAs": [
+          "https://x.com/cursor_ai",
+          "https://www.linkedin.com/company/cursorai",
+          "https://www.youtube.com/@cursor_ai",
+          "https://github.com/cursor"
+        ],
+        "url": "https://cursor.com"
+      },
+      {
+        "@context": "https://schema.org",
+        "@id": "https://cursor.com/#website",
+        "@type": "WebSite",
+        "description": "Cursor is the best AI coding agent.",
+        "name": "Cursor",
+        "publisher": {
+          "@id": "https://cursor.com/#org",
+          "@type": "Organization"
+        },
+        "url": "https://cursor.com"
+      },
+      {
+        "@context": "https://schema.org",
+        "@id": "https://cursor.com/blog/projects",
+        "@type": "BlogPosting",
+        "author": {
+          "@type": "Person",
+          "name": "Alexi Robbins & Fredrika Lindh"
+        },
+        "dateModified": "2026-09-10T12:00:00.000Z",
+        "datePublished": "2026-09-10T12:00:00.000Z",
+        "description": "Projects lets you take on larger bodies of work with a coordinator that maintains context, delegates to subagents, and runs recurring work.",
+        "headline": "Introducing Projects",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "Blog",
+          "name": "Cursor Blog",
+          "url": "https://cursor.com/blog"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://cursor.com/blog/projects",
+          "@type": "WebPage"
+        },
+        "publisher": {
+          "@id": "https://cursor.com/#org",
+          "@type": "Organization"
+        },
+        "url": "https://cursor.com/blog/projects"
+      }
+    ],
+    "schemaAuthor": "Alexi Robbins & Fredrika Lindh",
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "BlogPosting"
+    ],
+    "secondaryCategories": [
+      "Agent开发",
+      "软件工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "siteName": "Cursor Blog",
+    "summaryBrief": "文章发布 Cursor Projects，介绍由协调器调度云端与本地子智能体、持续积累共享上下文并响应定时任务或外部事件的机制，主要用于复杂功能开发、大规模迁移和持续代码维护。",
+    "tags": [
+      "Cursor Projects",
+      "多智能体协作",
+      "长期上下文",
+      "任务编排",
+      "自动化维护"
+    ],
+    "title": "Introducing Projects",
+    "totalScore": 67,
+    "url": "https://cursor.com/blog/projects"
+  },
+  "payloadHash": "sha256:565d2d2bff7bc2a481f24eb565820a605d2e76fbbabf99784018253520c208ed",
+  "refs": {},
+  "revisionId": "sha256:71d041797838214fb2f48ab43b934c5401ea853567e97ed1cfaf699b52e04d8a",
+  "schemaVersion": 1,
+  "updatedAt": 1789642806382
+}

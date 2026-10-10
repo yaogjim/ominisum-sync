@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694175238,
+  "entityType": "message",
+  "id": "1789694175238_3n1crjiv",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nShopify 用 MySQL 取代 Redis 承担库存预留：靠 `SKIP LOCKED` 和限量库存行实现高并发与事务一致性，并发现真正的性能瓶颈不是查询或 CPU，而是数据库连接被其他结账流程长期占用。\n\n## 关键内容\n\n- Redis 预留与 MySQL 库存账本分属两个系统，无法放进同一原子事务，可能出现已付款却未扣库存，或已扣库存仍被占用；MySQL 统一存储可用 ACID 事务避免这类不一致。\n- 新方案把每个可售单位表示为一行，锁冲突时跳过已锁行；每个“商品＋地点”最多保留 1000 行，不足时补充，兼顾突发流量与查询速度。\n- 团队通过 SQL 标签追踪连接占用，发现其他结账代码才是主要消耗者。清理后，主库读取减少 50%、事务减少 33%；高峰时写库 CPU 低于 50%。\n- 上线采用 Redis、MySQL 双写的“影子模式”，逐步切换，并保留快速回滚能力。\n\n## 通俗解读\n\n这并非证明“MySQL 一定比 Redis 好”，而是说明：库存预留需要和最终扣库存保持一致时，同库事务优势很大。文章也提醒，系统排队但 CPU 不高时，应检查谁长期占着连接，而不只是继续优化 SQL。\n\n**是否值得细读：**后端、数据库或高并发系统工程师值得，尤其是锁设计、连接诊断和渐进迁移部分；普通读者看本摘要即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694175238,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5010f1abde6193968d8d440587c1c0dd1f28f30139639cbd422bc501e8b096d8",
+  "refs": {
+    "sessionId": "1786353767551_9dv5tohu"
+  },
+  "revisionId": "sha256:c53036a263929cd7e17bba421e52c938e7065523809dc391f3e80cf8e13ca67c",
+  "schemaVersion": 1,
+  "updatedAt": 1789694175238
+}

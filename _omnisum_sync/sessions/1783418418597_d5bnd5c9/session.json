@@ -1,0 +1,85 @@
+{
+  "createdAt": 1783418418597,
+  "entityType": "session",
+  "id": "1783418418597_d5bnd5c9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "使用 pip install 'markitdown[all]' 安装并用典型PDF、DOCX、PPTX和表格文件测试转换质量",
+      "将MarkItDown接入现有RAG或知识库摄取流程，评估Markdown结构、表格保真度和token效率",
+      "如需扫描件或图片文字抽取，测试markitdown-ocr或Azure Content Understanding方案",
+      "在生产环境使用前补充输入校验、路径限制和远程URL访问控制"
+    ],
+    "archiveReason": "提供了安装、CLI/Python API、插件、Azure集成和安全注意事项，后续搭建文档处理流水线时可复用",
+    "classifiedAt": 1783418527012,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "MarkItDown文件转Markdown工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/303a136d3d3bb97d7f76883415e23f24ec2b9ba5fb9089dd23e2e8bc17d16ddc/microsoft/markitdown",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/303a136d3d3bb97d7f76883415e23f24ec2b9ba5fb9089dd23e2e8bc17d16ddc/microsoft/markitdown",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "MarkItDown支持PDF、Word、Excel、PowerPoint、图片、音频、HTML、CSV、JSON、XML、ZIP、YouTube和EPub等多种输入格式",
+      "可通过pip安装全部或按格式安装可选依赖，并支持CLI、管道输入、Docker和Python API调用",
+      "插件机制可扩展OCR等能力，Azure Content Understanding可提供结构化字段抽取和多模态处理",
+      "在服务端处理不可信输入时应限制路径、URI scheme、网络目标，并优先使用更窄的convert_local、convert_response或convert_stream接口"
+    ],
+    "oneHighValuePoint": "MarkItDown以面向LLM消费的Markdown结构化输出为目标，支持多格式转换、插件扩展和云端文档理解能力。",
+    "oneLineReview": "这是一个实用性很强的工具型 README，适合需要构建LLM文档摄取或文本分析流水线的人收藏。",
+    "primaryCategory": "开发工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为LLM文档摄取和多格式转Markdown工具的参考文档",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "LLM工具链",
+      "文档处理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍微软开源工具 MarkItDown，可将 PDF、Office、图片、音频、HTML、CSV、JSON、ZIP、YouTube 等内容转换为 Markdown，并提供安装、命令行、Python API、插件、Azure 集成和安全使用说明。",
+    "tags": [
+      "Markdown",
+      "文件转换",
+      "Python",
+      "LLM",
+      "OCR"
+    ],
+    "title": "microsoft/markitdown: Python tool for converting files and office documents to Markdown.",
+    "totalScore": 70,
+    "url": "https://github.com/microsoft/markitdown"
+  },
+  "payloadHash": "sha256:397b6b47e85d650f91e807db978ff03c6e95acfb60c76d10f6eaba3ed178e505",
+  "refs": {},
+  "revisionId": "sha256:b16476a64aad1b0ab5456f5778e7b0588d1f8e32d166d3f12f0dfdd27fce4f7a",
+  "schemaVersion": 1,
+  "updatedAt": 1789695811078
+}

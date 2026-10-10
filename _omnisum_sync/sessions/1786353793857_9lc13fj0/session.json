@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786353793857,
+  "entityType": "session",
+  "id": "1786353793857_9lc13fj0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个复杂主题，让LLM先生成基础知识库，再对关键事实进行独立复核。",
+      "使用AI编程工具将知识流程制作成包含暂停、步骤说明和响应式界面的交互模拟。",
+      "加入阶段测验或谜题，并通过GitHub Pages部署后测试学习效果。"
+    ],
+    "archiveReason": "文章提供了可迁移到多类复杂主题的LLM辅助学习流程，并能直接转化为小型开发实验。",
+    "classifiedAt": 1786355452445,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "用LLM构建交互模拟学习复杂主题",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "laurentiugabriel.github.io",
+    "favicon": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%E2%9B%B0</text></svg>",
+    "knowledgePoints": [
+      "复杂主题可以依次经过知识库构建、准确性复核、交互模拟生成和公开部署四个阶段。",
+      "过程型知识适合映射为对象、状态变化和流程动画，以增强对阶段关系的理解。",
+      "在模拟中加入回顾问题和直观谜题，可把被动观看转化为主动检索与练习。"
+    ],
+    "oneHighValuePoint": "将复杂知识转化为可观察、可操控并带测验的交互模拟，比单纯让LLM输出解释更容易形成概念与过程之间的关联。",
+    "oneLineReview": "方法新颖且可执行，但仅有个人案例，所谓完全准确、没有幻觉的结论缺乏可靠验证。",
+    "primaryCategory": "学习方法",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留其可复用的模拟式学习流程，但不采信未经验证的准确性声明",
+    "secondaryCategories": [
+      "AI编程工具",
+      "知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者提出先让LLM建立并复核主题知识库，再生成低多边形交互模拟并部署到GitHub Pages，以芯片制造为例展示效果，同时建议加入三维对象、测验和谜题来增强理解与记忆。",
+    "tags": [
+      "LLM辅助学习",
+      "交互式模拟",
+      "知识可视化",
+      "生成式开发",
+      "主动学习"
+    ],
+    "title": "How I use LLMs to learn complex topics · Laurentiu Raducu",
+    "totalScore": 70,
+    "url": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/"
+  },
+  "payloadHash": "sha256:46bd88b56bdf2125cff9a17e0d41a3e7658f1e5be947d44124def7fc34912fcd",
+  "refs": {},
+  "revisionId": "sha256:c8d253853ccbea74480baa11c0d47e5b69ffd3f272ed164c771f51bffc1b1b96",
+  "schemaVersion": 1,
+  "updatedAt": 1789864277314
+}

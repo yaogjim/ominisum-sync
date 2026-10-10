@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789723476724,
+  "entityType": "session",
+  "id": "1789723476724_xgehpech",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "访谈企业客户时优先梳理现有工作流、成本瓶颈和可量化收益，而非先展示Agent界面。",
+      "设计企业级Agent方案时评估能否嵌入客户现有系统，减少新增工具和操作负担。",
+      "在自动化上线前检查权限边界、错误传播、副作用执行和失败补偿机制。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1789723500985,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "企业级Agent应隐形嵌入工作流",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "ToB Agent的购买动机更偏向确定性、成本收益和流程完成度，而非新鲜感或交互精致度。",
+      "企业工作流自动化需要关注目标漂移、上游污染、执行副作用、权限、错误传播和补偿设计。",
+      "知识工作之外仍存在大量尚未被充分信息化的行业流程，但需要深入具体业务现场才能识别。"
+    ],
+    "oneHighValuePoint": "企业级Agent的核心产品形态可能不是独立软件界面，而是低感知地嵌入现有流程并交付可衡量的自动化结果。",
+    "oneLineReview": "抓住了企业级Agent应以业务结果而非软件把玩体验为中心，但论证仍停留在经验判断层面。",
+    "primaryCategory": "AI Agent商业化",
+    "rating": "B",
+    "rejectReason": "核心判断缺少案例、数据和适用条件，也未给出可执行的产品验证方法",
+    "retentionDecision": "选择性浏览，可作为企业级Agent需求判断的观点参考",
+    "secondaryCategories": [
+      "企业软件产品设计",
+      "工作流自动化"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为，企业客户通常不在意Agent软件的交互细节，而更关注无需额外学习工具即可实现工作流自动化。回复进一步强调确定性、投资回报率及复杂流程治理问题。",
+    "tags": [
+      "企业级Agent",
+      "工作流自动化",
+      "ToB产品",
+      "投资回报率",
+      "客户需求"
+    ],
+    "title": "yetone: 这是我开始做 ToB 的原因",
+    "totalScore": 55,
+    "url": "https://x.com/yetone/status/2086754781578842363"
+  },
+  "payloadHash": "sha256:940c1266e4812e416ce23d3412c1af34d4c55d311e9ecf66ba7fed8d2784ccc5",
+  "refs": {},
+  "revisionId": "sha256:9e3126a60a67dab55adb1af1351a4d85a5d19222a7559aa2e9b599ac8a329f3e",
+  "schemaVersion": 1,
+  "updatedAt": 1789727408359
+}

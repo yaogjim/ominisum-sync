@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785402531897,
+  "entityType": "session",
+  "id": "1785402531897_nhyzvtrr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在CLAUDE.md中定义任务到模型的路由规则、分辨率阶梯和并发上限。",
+      "选择5至10个参考镜头，用视觉模型提取参数并整理成统一的风格合同。",
+      "建立最小实验流程：为每个镜头生成3至4个候选，每轮只修改一个变量，并记录提示词、模型和保留结果。"
+    ],
+    "archiveReason": "包含完整且可复用的AI视频生产框架、命令示例、并发控制原则和迭代记录机制，对Agent工作流设计有长期参考价值。",
+    "classifiedAt": 1785404259387,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI视频工作室六阶段构建法",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "先从参考影片提取并锁定镜头、灯光、色彩、颗粒和构图参数，形成贯穿所有提示词的风格合同。",
+      "先低成本批量生成静帧并锁定角色与场景，再把优胜关键帧转为3至5秒独立镜头，可降低探索成本和身份漂移。",
+      "多代理并行生成必须设置并发上限，并记录每次生成的提示词、模型、结果与取舍，才能把单次制作积累为可复用数据库。"
+    ],
+    "oneHighValuePoint": "将人类负责审美取舍、代理负责提示生成、任务提交、失败重试和结果记录，并用镜头循环、任务队列循环与会话学习循环构成可持续生产系统。",
+    "oneLineReview": "流程完整、操作细节丰富且具有较强迁移价值，但核心效果主要依赖作者经验陈述，赞助背景和缺少对照数据削弱了证据强度。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档六阶段流程、提示词规则和代理编排方法",
+    "secondaryCategories": [
+      "AI视频制作",
+      "自动化工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以Claude Code、Higgsfield CLI和生成模型为核心，给出从风格合同、关键帧锁定、镜头提示、运动生成、子代理并发到FFmpeg剪辑与4K输出的六阶段AI视频流程。",
+    "tags": [
+      "Claude Code",
+      "多代理编排",
+      "AI视频生成",
+      "循环工程",
+      "FFmpeg自动剪辑"
+    ],
+    "title": "如何在 Claude 代码中构建一个 AI 视频工作室",
+    "totalScore": 81,
+    "url": "https://x.com/EXM7777/status/2082107255449919582"
+  },
+  "payloadHash": "sha256:145889f8b6d6421bdaae0c306565da976e95a84acd4ee8237261d8c3e04e64b8",
+  "refs": {},
+  "revisionId": "sha256:b73737e29eebb4a98a0662d45e3f0828c1dfff3cfe1ba92653af560ecd62103b",
+  "schemaVersion": 1,
+  "updatedAt": 1789694329415
+}

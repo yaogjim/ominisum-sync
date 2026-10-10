@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789618582788,
+  "entityType": "message",
+  "id": "summary_default_1789618582788",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者并非反对 AI，而是批评企业把 AI 主要当作裁员和提效工具：它可能用漂亮、完整的输出掩盖平庸与错误，并削弱业务判断、责任意识和人与人的信任。\n\n## 关键内容\n\n- **“会表达” 不等于 “真理解”**：AI 能快速生成结构周全的报告，却可能让员工依赖现成答案，忽视客户异常、错误假设等细微信号，最终产出整齐但缺乏独特洞察。\n- **幻觉进入生产环节会造成真实损失**：作者以亲身工作经历称，AI 曾生成乱码文案，甚至捏造资金审批流程。若缺少人工核验，模型错误可能变成错误赔付、越权承诺或资金风险。\n- **流程完整可能掩盖责任空缺**：当配置来自模型、审批按流程通过、员工照指引执行，出错后各方都能自证 “无责”，AI 反而成为甩锅对象。\n- **知识库不能完全替代老手**：许多经验是对停顿、语气和情境变化的直觉判断，难以全部写进文档；过早裁掉有经验的人，可能付出更高的补课成本。\n\n## 通俗解读\n\n核心不是 “AI 不可靠所以别用”，而是**不能把流畅答案误当成正确判断**。作者主张为观察、核实和质疑保留时间，并反对以裁员人数衡量 AI 价值。文章观点鲜明、案例直观，值得管理者和 AI 落地人员细读；但论证主要来自个人观察，缺少系统数据，不宜当作普遍结论。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1789618582788,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b449e388f1ffebcecaf224a2949762f7515801ccc0bcc0f5dfd0754aea3acef5",
+  "refs": {
+    "sessionId": "1789533285356_9nv1yqc2"
+  },
+  "revisionId": "sha256:e2e17e86706e14120616a6dea6889ca5e0f049d2579d6ee4ad253bda3fef90f1",
+  "schemaVersion": 1,
+  "updatedAt": 1789618582788
+}

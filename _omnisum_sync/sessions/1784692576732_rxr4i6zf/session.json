@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784692576732,
+  "entityType": "session",
+  "id": "1784692576732_rxr4i6zf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按时间、临床意义和未知信息三个维度审查临床AI的上下文架构。",
+      "将系统输出设计为患者当前状态、支持证据和未知项三个部分。",
+      "使用长期病历任务对比语义检索方案与纵向患者状态方案的表现。"
+    ],
+    "archiveReason": "提出时间、临床意义和未知信息三个可复用的患者上下文评估维度。",
+    "classifiedAt": 1784693240370,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "临床AI信任的患者情境框架",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter-pip.3.ico",
+    "knowledgePoints": [
+      "长期临床护理需要纵向患者状态建模，单纯语义相似度检索难以满足需求。",
+      "患者上下文层可从时间处理、临床意义理解和未知信息呈现三个维度评估。",
+      "临床AI的可信度不仅取决于模型能力，还取决于患者情境是否完整且可追溯。"
+    ],
+    "oneHighValuePoint": "临床AI应返回患者当前最有依据的状态、支持证据及未知部分，而不只是语义上相关的信息。",
+    "oneLineReview": "对临床AI信任问题给出了有启发性的三维框架，但缺少案例、数据和实现细节支撑。",
+    "primaryCategory": "临床人工智能",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性存档，保留其患者上下文评估框架",
+    "secondaryCategories": [
+      "AI Agent开发",
+      "医疗产品设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出，向量数据库与语义检索适合多数低成本、快速的代理场景，但不足以支撑长期临床护理。可信患者上下文需同时处理时间、临床意义和未观察信息，市场方案目前多只能覆盖其一。",
+    "tags": [
+      "临床人工智能",
+      "患者上下文",
+      "语义检索",
+      "长期护理",
+      "AI代理架构"
+    ],
+    "title": "(4) Patrick Emedom-Nnamdi: The more time I spend on clinical AI, the more convinced I am that trust is not …",
+    "totalScore": 60,
+    "url": "https://x.com/patemedom/status/2077422275083780146"
+  },
+  "payloadHash": "sha256:144a40ea7df49a01656ffc0f0c7574e668d9026fc42b2e97de66620fae287623",
+  "refs": {},
+  "revisionId": "sha256:c0d1729b2bf2c22541123ecc6c8daa658bf7c4a76b64d2c5360a3682e8f32ba1",
+  "schemaVersion": 1,
+  "updatedAt": 1789728900454
+}

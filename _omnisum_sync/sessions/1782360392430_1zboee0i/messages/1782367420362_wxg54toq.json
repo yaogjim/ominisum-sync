@@ -1,0 +1,20 @@
+{
+  "createdAt": 1782367381397,
+  "entityType": "message",
+  "id": "1782367420362_wxg54toq",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章总结：Omnigent 是什么，为什么要做它\n\n这篇文章介绍了 Databricks 开源的 **Omnigent**：一个位于现有 AI Agent 之上的“**元控制层（meta-harness）**”，用来把不同 Agent 连接起来，统一管理它们，并支持多人实时协作。作者认为，未来与 Agent 的工作方式，不再只是“单独和一个模型对话”，而是通过这一层来组合、控制和共享多个 Agent。\n\n---\n\n## 1. 为什么要做 Omnigent\n\nDatabricks 表示，他们已经在很多场景里大量使用 Agent：  \n- 在 **5000+ 名工程师**的团队中使用编码 Agent；  \n- 为客户构建了 **数千个 Agent**；  \n- 还推出了像 **Genie** 这样的 Agent 产品。\n\n但实际使用 Agent 时体验并不顺畅：  \n- 用户经常同时开 **4-5 个 Agent**，在它们之间以及 Docs、Slack 等工具之间频繁复制粘贴；  \n- 开发者也总是在不同的 harness、SDK、模型之间切换，想把最新能力拼在一起。\n\n作者认为，问题的根源是：**每个 Agent 都被封装在各自的 harness 里，接口不同，难以组合、切换和统一管理**。  \n所以他们提出需要一个“更上一层”的系统，来解决这些跨 Agent、跨工具的问题。\n\n---\n\n## 2. Omnigent 的核心定位：元控制层\n\nOmnigent 的目标是把你已经在用的 Agent（如 **Claude Code、Codex、Pi** 或自定义 Agent）统一到一个更高层的系统里。\n\n它主要解决三类问题：\n\n### 1）组合（Composition）\n- 可以把多个模型、多个 harness、不同技巧组合起来；\n- 不用重写代码，就能在 **Claude Code、Codex、Pi** 等 Agent 之间切换；\n- 只需要很小的改动，比如“一行代码改动”就能替换 Agent。\n\n### 2）控制（Control）\n- 可以在元层面设置更高级的策略；\n- 这些策略会跟踪 Agent 的动态行为，而不是只靠提示词约束；\n- 例如可以设置：\n  - Agent 从 npm 下载新包后，**必须人工批准才能 git push**；\n  - 只能修改它自己创建的文档，不能随意改别人的文档；\n  - 每花费 **$100 LLM 成本**就暂停一次，等待继续确认。\n\n### 3）协作（Collaboration）\n- 可以通过链接共享 Agent 会话；\n- 团队成员能实时查看、评论、甚至直接发送指令；\n- 让 Agent 的工作区本身变成协作空间。\n\n---\n\n## 3. Omnigent 是怎么工作的\n\nOmnigent 在命令行 Agent 和 Agent SDK 之上，增加了一个**统一接口**。\n\n作者的关键判断是：  \n虽然不同 Agent 内部调用 LLM 的方式不一样，但用户真正看到的输入输出形式很像：  \n- 输入：**消息、文件**  \n- 输出：**文本流、工具调用**\n\n基于这个共性，Omnigent 把不同类型的 Agent 都包装起来，形成统一管理能力。\n\n### 当前版本的主要能力\n\n#### 1）实时协作\n- 邀请别人查看 Agent 会话；\n- 可以在工作区文件上评论；\n- 也可以直接发送命令；\n- 让“会话 + 工作目录”成为团队协作中心。\n\n#### 2）多端访问同一个 Agent\n接入 Omnigent Server 后，同一个 Agent 可以通过多种方式访问：  \n- Web  \n- 移动端  \n- Mac 原生应用  \n- API\n\n#### 3）云端执行\n- 可以在自己的机器上运行；\n- 也可以部署到安全沙箱环境，如 **Modal、Daytona**；\n- 适合安全协作和隔离运行。\n\n#### 4）上下文安全策略\n- 不只是简单的“允许/拒绝”；\n- 会根据会话状态动态判断；\n- 比如监控 Agent 当前做了什么，再决定下一步能否执行。\n\n#### 5）成本策略\n- 动态跟踪每个会话的 LLM 花费；\n- 可设置预算阈值，超出后暂停。\n\n#### 6）强 OS 沙箱\n- 来自 Databricks 安全团队；\n- 可限制系统访问；\n- 可拦截并改写网络请求；\n- 例如：**不让 Agent 直接看到 GitHub security token，而是只在已批准请求的出口代理中注入**。\n\n#### 7）多 harness 编排\n- 可以用 YAML 定义自定义 Agent；\n- 也能把不同 harness 的子 Agent 混合在一起使用。\n\n---\n\n## 4. 为什么“元控制层”很重要\n\n文章认为，AI Agent 领域正在发生类似云计算早期的变化：  \n以前工程师要手动管理一个个进程和服务器，后来有了 **Kubernetes、Terraform** 这样的上层抽象，管理方式就升级了。\n\n作者认为 Agent 领域也会经历同样的变化：  \n- 现在每个 harness 都像一个孤岛；  \n- 它们各自有自己的上下文、控制方式和运行方式；  \n- 一旦换工具，很多能力都带不走。\n\n而真正难的问题，往往都不是单个 Agent 能解决的，而是天然跨多个 Agent 的问题，比如：  \n- 多 Agent 协作编排  \n- 安全控制  \n- 会话共享  \n- 权限和成本管理\n\n所以，Omnigent 试图成为那个“**比单个 Agent 更高一层的工作空间**”。\n\n---\n\n## 5. 未来规划与开源情况\n\nOmnigent 目前已经 **以 Apache 2.0 开源**，并且处于 **alpha** 阶段。\n\n作者提到的后续方向包括：  \n- 在元层做自动优化，例如 **GEPA**；  \n- 类似 **MemEx、RLM** 的 Agent 内部代码式自省；  \n- **Omnigent Server MCP**，让 Agent 能跨会话工作；  \n- 支持更多 harness 和更多基础设施。\n\n他们还表示，Omnigent 已尽量适配多种部署环境，包括：  \n- **Fly.io**  \n- **Railway**  \n- **Modal**  \n- **Daytona**  \n以及多种 LLM 提供商。\n\n---\n\n## 6. 总结\n\nOmnigent 想解决的不是“再做一个更强的 Agent”，而是“**在所有 Agent 之上建立统一的操作层**”。  \n它的核心价值是把 **组合、控制、协作** 这三件事从单个 Agent 的限制中解放出来，让不同 Agent 和模型可以像一个系统里的组件一样被统一管理。\n\n文章最后强调：**模型和 harness 会不断变化，但人们工作的这一层不应该一直变来变去。**",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1782367381397,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e8ebb724025d545efc18834c27d64a1877ab6eab801c7aec438951f8fbbc92e2",
+  "refs": {
+    "sessionId": "1782360392430_1zboee0i"
+  },
+  "revisionId": "sha256:5540d0efbf0083b3c9b664c462224ee8046da5bbdf7c30c022d94692ff6c2898",
+  "schemaVersion": 1,
+  "updatedAt": 1782367381397
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696038591,
+  "entityType": "message",
+  "id": "1789696038591_4dmku2zo",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nElysia 是 Weaviate 开源的 Python 智能体平台：它通过“决策树”动态选择工具，可查询、聚合 Weaviate 中的数据，也支持自定义工具和本地部署，但目前仍处于测试阶段。\n\n## 关键内容\n\n- **主要用途**：让大模型根据上下文、历史操作和可选动作，决定下一步调用哪个工具，而非一次性开放全部工具；内置了对 Weaviate 集群的搜索与聚合能力。\n- **使用方式**：可安装 `elysia-ai` 后启动网页应用，也能直接在 Python 中创建 `Tree`、注册工具并发起请求；官方还提供限流演示站。\n- **运行要求**：PyPI 安装要求 Python 3.12；连接自有数据需配置 Weaviate 地址、API Key及模型密钥，并先对数据集合进行预处理。也支持本地 Weaviate 和 Ollama。\n- **成熟度有限**：项目明确标为 Beta，维护标准可能不及生产软件；小型本地模型还可能因上下文较长而超时或无法输出规定格式。\n\n## 通俗解读\n\n这里的“决策树”可理解为预先铺好一张行动路线图，智能体每走一步再判断该查数据、做聚合还是调用其他工具，控制性强于让模型随意挑选所有工具。\n\n**是否值得细读**：如果你正在使用 Weaviate、想搭建可控的工具调用智能体，值得继续看文档和架构；若要直接用于关键生产环境，应先重点评估稳定性、模型兼容性与 Beta 风险。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696038591,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e022cc74a64cf489eef346b89abec7b929746b5ffeacf1085a0d172601932d99",
+  "refs": {
+    "sessionId": "1784161527890_i8dythnu"
+  },
+  "revisionId": "sha256:792fe45e9c4f0f6a6d46cdf3fff1047dfc433d951e30fa0ece0997120daa3299",
+  "schemaVersion": 1,
+  "updatedAt": 1789696038591
+}

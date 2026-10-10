@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789898185511,
+  "entityType": "session",
+  "id": "1789898185511_ai3ukzax",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "启动本地SGLang与Qwen模型，使用/tokenize验证每个候选标签均为单Token。",
+      "通过/v1/score读取候选标签分数并映射回业务选项，替代固定分类任务中的文本生成与解析。",
+      "在标注数据集上评估准确率并设定最高概率、领先幅度和人工审核阈值。"
+    ],
+    "archiveReason": "包含可直接运行的SGLang实现、适用条件、标签设计规则和阈值决策思路，具有较强复用价值。",
+    "classifiedAt": 1789949705798,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "本地大模型固定选项决策引擎",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "固定选项评分直接读取候选标签的下一Token logits，而结构化输出仍需逐Token生成完整对象。",
+      "候选概率仅是在限定选项内归一化的相对偏好，不能直接解释为模型真实正确率，必须用标注数据校准。",
+      "候选项宜映射为经过分词验证的单Token标签；选项不完备时应加入OTHER或ESCALATE逃生通道。"
+    ],
+    "oneHighValuePoint": "当输出集合可预先枚举时，可直接对单Token标签的logit做受限softmax，返回决策分布并跳过不必要的自回归生成。",
+    "oneLineReview": "实现路径清晰且可直接复现，但延迟、准确率和校准效果缺少完整量化结果。",
+    "primaryCategory": "AI工程与推理优化",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并存档，可作为本地分类与路由系统的实现参考",
+    "secondaryCategories": [
+      "本地大模型部署",
+      "LLM应用开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章演示如何用SGLang和开源模型读取候选标签的下一Token分数，在本地实现固定选项决策，并说明其与文本生成、结构化输出的差异及标签、阈值和校准注意事项。",
+    "tags": [
+      "固定选项评分",
+      "SGLang",
+      "本地LLM",
+      "下一Token概率",
+      "决策引擎"
+    ],
+    "title": "构建你自己的 Jev（100% 本地）",
+    "totalScore": 81,
+    "url": "https://x.com/_avichawla/status/2101563610644496464"
+  },
+  "payloadHash": "sha256:e35c80062337496cc21db0dea75d5a93899393305c09f9a776c656ab680acf2d",
+  "refs": {},
+  "revisionId": "sha256:37343dcbdef5e13c6279d566118214cc94e91938e4522beef93c2714c041edb6",
+  "schemaVersion": 1,
+  "updatedAt": 1789949854914
+}

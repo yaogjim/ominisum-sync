@@ -1,0 +1,67 @@
+{
+  "createdAt": 1787306525065,
+  "entityType": "session",
+  "id": "1787306525065_pwsa4rdn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在随机或严格对照证据出现前，不将该手术视为已证实的阿尔茨海默病治疗。",
+      "跟踪后续试验的对照设计、长期随访、客观认知指标和不良事件数据。",
+      "评估类似实验疗法时，将个案视频、短期生物标志物变化与持久临床获益分开判断。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1787307086995,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 8,
+      "relevance": 4,
+      "transferability": 6
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "阿尔茨海默病淋巴分流术争议",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.nature.com",
+    "favicon": "https://www.nature.com/oscar-static/images/favicons/nature/favicon.ico",
+    "knowledgePoints": [
+      "dcLVA通过连接颈部深淋巴管与静脉，试图增强脑脊液及相关废物蛋白的外排。",
+      "现有研究多为中国单中心、小样本且缺乏对照的队列，平均改善较温和，显著逆转主要见于个案。",
+      "症状快速改善与清除阿尔茨海默病核心病理的预期时间尺度并不吻合，且部分患者可能在一年内再次退化。"
+    ],
+    "oneHighValuePoint": "病毒式个案中的快速恢复不能替代对照研究，评估该疗法必须同时检验客观认知变化、机制一致性、长期持久性与手术风险。",
+    "oneLineReview": "这是一篇证据梳理较扎实的争议疗法调查，但现有研究尚不足以证明手术能够逆转阿尔茨海默病。",
+    "primaryCategory": "医学与生命科学",
+    "rating": "B",
+    "rejectReason": "与核心关注方向仅有间接联系，且当前疗效证据尚不确定。",
+    "retentionDecision": "选择性浏览，关注后续对照试验结果时再保留",
+    "secondaryCategories": [
+      "临床研究",
+      "科学证据评估"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章调查颈部深淋巴管－静脉吻合术治疗阿尔茨海默病的兴起，梳理其脑废物清除假说、小规模临床结果、迅速商业化与监管收紧，并指出缺乏对照、疗效持久性不明及手术风险等关键问题。",
+    "tags": [
+      "阿尔茨海默病",
+      "淋巴静脉吻合术",
+      "脑淋巴引流",
+      "临床证据",
+      "实验性治疗"
+    ],
+    "title": "A controversial Alzheimer’s surgery is said to reverse symptoms — here’s what scientists know",
+    "totalScore": 59,
+    "url": "https://www.nature.com/articles/d41586-026-02448-x"
+  },
+  "payloadHash": "sha256:6c667aee0e96e24278602600ada164731ddfc9c8772d04247ece8937da0d8699",
+  "refs": {},
+  "revisionId": "sha256:c08a9a5f1d6476201d364b49e43e58329e8b1f651053d22f6c4dbbb3d52af8e6",
+  "schemaVersion": 1,
+  "updatedAt": 1789727887212
+}

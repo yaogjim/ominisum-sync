@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696242161,
+  "entityType": "message",
+  "id": "1789696242161_j4hesxht",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nHerdr 是面向多编码智能体的持久化终端管理工具：既能并行运行、监控多个 Agent，也能通过命令和脚本分配任务、等待状态并收集结果。\n\n## 关键内容\n\n- Herdr 分三层控制：**布局**负责工作区、标签页和窗格；**Pane**负责普通命令、测试和服务器；**Agent**负责识别编码智能体及其工作、空闲、阻塞等状态。启动 Agent 前必须先有空闲的 Shell 窗格。\n- 自动化命令返回 JSON，应读取返回的窗格 ID，不能自行猜测；窗格移动后 ID 会变化。`agent prompt --wait` 等待的是状态稳定，而非精确追踪某次对话，Agent 已在工作时尤其要注意。\n- 状态主要来自 Agent 的生命周期插件或终端画面识别。`blocked` 表示检测到提问、授权等界面；`unknown` 只代表无法判断，不能当作任务完成。\n- 会话由后台服务器持续运行，客户端退出后任务不停止；既可本地使用，也可经 SSH 在手机或本地终端连接远程机器。\n\n## 通俗解读\n\n可以把 Herdr 理解为“懂 Agent 状态的 tmux”。它的价值不在替代 Claude Code、Codex 等工具，而在统一编排它们。需要留意：全屏 Agent 的旧输出可能因终端备用屏幕而无法读取，此时应缩短回答、滚动查看或让 Agent 将结果写入文件。若准备做多 Agent 自动化，值得细读命令返回值、等待语义和状态识别部分；仅手动运行单个 Agent，则浏览基本工作流即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696242161,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bc42a8e6cbb767f50cd99b862e5f6471b3f421d65e10120a936fd47addf3d181",
+  "refs": {
+    "sessionId": "1784702763029_4sap1syq"
+  },
+  "revisionId": "sha256:40abd8815918ffec205c91595a94109f9fdeb8aea978a19ebafcfcb45bb31f17",
+  "schemaVersion": 1,
+  "updatedAt": 1789696242161
+}

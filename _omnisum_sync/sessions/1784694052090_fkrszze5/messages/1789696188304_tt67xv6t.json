@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696188304,
+  "entityType": "message",
+  "id": "1789696188304_tt67xv6t",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章推荐一种面向 AI Agent 的“mini-app spec”：把文字需求、交互原型和自动检查做成可执行的浏览器小应用，让实现变化时仍能核对并保留最初意图。\n\n## 关键内容\n\n- **Markdown 的局限**：它便于人读写，但需求、约束和边缘情况多藏在自然语言里，Agent 实现后仍要人工逐项比对。\n- **mini-app spec 不只是更漂亮的 HTML**：它同时容纳说明文字、结构化数据、可操作原型、批注和检查，让“想做什么”与“实际做成什么”靠得更近。\n- **自动对账是核心**：可检查约定的模板章节是否缺失、文件是否存在、spec 提到的测试是否存在并通过，以及所需配置或密钥是否正确绑定；但它**不能替代单元测试和集成测试**。\n- 作者设想，人可以直接圈出渲染结果中的问题，让 Agent 定点修复，而非重新理解整份文档。\n\n## 通俗解读\n\n这里的 mini-app 不是手机“小程序”，而是一份能在浏览器运行、还能自检的需求说明书。它的价值主张是把“文档、样品、验收清单”合为一体。不过原文主要是在提出方法和工作流，尚未提供充分的效果数据。\n\n**是否值得细读：**如果你正用 Claude Code、Codex 等 Agent 做前端或产品开发，值得；若只想了解概念，以上内容已覆盖核心。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696188304,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:fbdbce009f761892d74619996b999a00d8880fbc8a4b525b2d5c2d50f1b77dea",
+  "refs": {
+    "sessionId": "1784694052090_fkrszze5"
+  },
+  "revisionId": "sha256:be8ba387d55ae99587e92e3cdc490b9f74754ca66d236cdeec6094cfb5b5aa80",
+  "schemaVersion": 1,
+  "updatedAt": 1789696188304
+}

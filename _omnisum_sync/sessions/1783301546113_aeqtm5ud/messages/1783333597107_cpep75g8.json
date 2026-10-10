@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783333597108,
+  "entityType": "message",
+  "id": "1783333597107_cpep75g8",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AgentsView跨AI会话管理\n\n**评级**: C (43.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI工具\n**次类别**: 开发效率, 知识管理\n**标签**: #AgentsView #AI会话管理 #Claude Code #Cursor #本地工具\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 1 | 15% |\n| 可迁移性 | 3 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 有一定工具发现价值，但只是简短推荐，缺乏评测和可信证据。\n**核心高价值点**: 跨多个AI编程工具统一索引会话历史，便于检索项目上下文与统计使用成本。\n\n### 摘要\n文章推荐开源本地跨AI会话管理器AgentsView，可统一索引Claude Code、Codex、Cursor等历史记录，支持搜索旧对话、查看项目记录及统计token和成本，并提供多平台客户端。\n\n### 知识要点\n- AgentsView定位为本地跨AI工具的session管理器\n- 支持索引Claude Code、Codex、Cursor等工具历史记录\n- 可用于搜索旧对话、查看项目记录、统计token和成本\n- 评论中有人提醒集中存放对话且未加密可能存在安全风险\n\n### 行动项\n- 打开GitHub项目查看是否开源、是否活跃维护以及安装方式\n- 重点检查本地数据存储、加密和隐私权限设计\n- 与已有工具如Recall、AgentGem、Datamoat进行简单对比后再决定是否试用\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是工具推荐，缺少实测、对比、安全说明和使用方法，深读价值有限\n删除: 否\n留存决策: 短期参考后可删除，若试用有效可单独收藏项目地址",
+    "role": "assistant",
+    "timestamp": 1783333597108,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:c20d25142cf03fbfc7a7d93dbea83a984129955847a28c07f3c5a24e928d4c87",
+  "refs": {
+    "sessionId": "1783301546113_aeqtm5ud"
+  },
+  "revisionId": "sha256:b537d66dc98cd2eb325ec20f02d75d40fd36d7247e9670f21c8c5fa17e085892",
+  "schemaVersion": 1,
+  "updatedAt": 1783333597108
+}

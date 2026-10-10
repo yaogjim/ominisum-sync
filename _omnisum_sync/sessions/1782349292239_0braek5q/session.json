@@ -1,0 +1,63 @@
+{
+  "createdAt": 1782349292239,
+  "entityType": "session",
+  "id": "1782349292239_0braek5q",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "关注 clonesite.ai 的实际效果与边界条件",
+      "调研语义重建 + 截图比对在网页生成中的可复用流程"
+    ],
+    "archiveReason": "包含具体工具名、实现思路和产物形态，可作为网页复刻与AI开发工具选型参考。",
+    "classifiedAt": 1782350851630,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "CloneSite网页复刻方案",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "browser-cli 可结合语义重建与截图比对提高网页还原度",
+      "复刻结果直接输出 TanStack/TSX 代码，便于进入工程流程"
+    ],
+    "oneHighValuePoint": "把网页复刻做成输出可用源代码的 coding agent，而不是只生成静态页面。",
+    "oneLineReview": "有产品思路，但更像推广帖，信息密度和证据都偏弱。",
+    "primaryCategory": "AI编程工具",
+    "rating": "C",
+    "rejectReason": "",
+    "retentionDecision": "短期归档，作为网页复刻和coding agent方向的产品信号参考，后续可按需再清理。",
+    "secondaryCategories": [
+      "网页克隆",
+      "全栈开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一条关于 clonesite.ai 的产品推荐帖，介绍其通过 browser-cli、语义重建和截图比对复刻网页，并输出可直接进入工程流程的 TanStack 代码。",
+    "tags": [
+      "coding agent",
+      "网页复刻",
+      "TanStack"
+    ],
+    "title": "idoubi: D 哥 @lumina__team 做了个 https://t",
+    "totalScore": 42,
+    "url": "https://x.com/idoubicc/status/2068521958199984418"
+  },
+  "payloadHash": "sha256:fe09da6a6d330868229259dd1950c0a9d09205e274115a762af839021df5bc3d",
+  "refs": {},
+  "revisionId": "sha256:ed67bb5ea579bf761e7089bd3605a3d08043fe3896edc107b0cdbd8356a6e01a",
+  "schemaVersion": 1,
+  "updatedAt": 1782350852204
+}

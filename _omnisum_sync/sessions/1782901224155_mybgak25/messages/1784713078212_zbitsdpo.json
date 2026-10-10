@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784713078209,
+  "entityType": "message",
+  "id": "1784713078212_zbitsdpo",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 主旨概括\n\n对于拥有十几个微服务、且一个 User Story 经常跨多个服务的团队，把代码统一放进一个 workspace 是合理起点，但关键不只是让 Agent“看到所有代码”，而是同时做好**高质量上下文**与**可自动验证的闭环**。较可靠的组合是：**统一 workspace + 分层文档与契约 + Mock/契约测试**。\n\n## 1. 统一代码视图：Monorepo 或“虚拟 Monorepo”\n\n- **Monorepo 更适合 AI Agent**：Agent 能在同一位置查看数据库 Schema、API 协议及各服务实现，更容易完成跨服务设计。\n- 如果历史原因导致仓库无法合并，可以采用**虚拟 Monorepo**：\n  - 保留各自独立仓库；\n  - 将多个仓库 clone 到同一个本地目录；\n  - 让 Agent 在统一 workspace 中访问它们。\n- 重点不是物理上必须合仓，而是给 Agent 提供一个可导航的**全局系统视图**。\n\n## 2. 分层组织文档，让 Agent 按需加载\n\n建议为 Agent 提供一张“系统地图”，而不是一次性塞入全部资料：\n\n1. **根目录设置总索引**\n   - 放置 `AGENTS.md` 或 `CLAUDE.md`；\n   - 列出全部服务、各自职责，以及修改某项功能时应查看哪些服务文档。\n\n2. **每个微服务维护自己的说明**\n   - 在服务目录内放置独立的 `AGENTS.md`；\n   - 说明职责边界、核心业务概念、上下游依赖；\n   - 本质上对应 DDD 中的 **Bounded Context（限界上下文）**。\n\n3. **让 Agent 分阶段读取**\n   - 先读取根目录索引；\n   - 判断当前任务涉及哪些服务；\n   - 再加载相关服务的详细文档和代码。\n\n这种方式可以减少无关信息进入上下文，避免 Token 消耗过大和上下文污染。\n\n## 3. 文档应尽量机器可读、自动生成\n\n- 微服务接口或协议发生变化时，文档必须同步更新，否则会直接误导 Agent。\n- 能从代码或规格中自动生成的内容，不应依赖手写，因为手写文档很容易与实际实现脱节。\n- 推荐使用 **OpenAPI** 等机器可读规格：\n  - 既可以作为接口文档；\n  - 也能生成客户端、Mock 服务和测试；\n  - 更容易保持文档、代码与验证逻辑一致。\n\n## 4. 协议测试是更可靠的“活文档”\n\n除了普通文档，Agent 还应重点读取服务间的协议测试资产：\n\n- 高质量的 **Contract Test（契约测试）**能精确描述服务之间真实的交互方式。\n- 相比人工文档，契约测试不容易悄悄过时：如果接口不兼容，测试就会失败。\n- 已有的 **OpenAPI Spec**、**Pact 契约文件**等，都是 Agent 理解服务边界和调用关系的重要上下文。\n\n换言之，Agent 能访问所有代码，并不代表它真正理解服务边界；**机器可读、可执行、可验证的契约**通常比纯 Markdown 更可靠。\n\n## 5. 用 Mock 与契约测试建立验证闭环\n\n跨微服务任务最困难的部分是验证：一个 User Story 可能涉及多个服务，不可能让 Agent 每改一处代码，就启动整个系统并执行完整端到端测试。\n\n实用做法是：\n\n- 每个微服务提供 **Mock Server**；\n- 或基于 OpenAPI Spec 自动生成模拟服务；\n- Agent 完成修改后，在本地运行 Contract Test；\n- 检查改动是否破坏与其他服务约定的接口；\n- 不必依赖线上真实 API 或完整集成环境。\n\n由此形成自动闭环：\n\n> 写代码 → 运行测试 → 发现问题 → 自我修正\n\n这样可以减少开发者在 Agent 工作过程中的频繁介入。\n\n## 6. 进一步采用消费者驱动契约测试\n\n可进一步引入 **Consumer-Driven Contract Testing（消费者驱动契约测试）**，常用工具是 **Pact**。\n\n其基本流程是：\n\n1. 接口调用方记录自己实际使用的请求与响应结构；\n2. 生成契约文件；\n3. 接口提供方用该契约验证自己的实现；\n4. 若提供方的变更无法满足调用方需求，测试立即失败。\n\n例如，订单服务依赖用户服务返回 `userId` 和 `status`，那么订单服务可生成对应契约；用户服务修改接口时，必须验证仍能满足这份契约，从而提前发现跨服务兼容性问题。\n\n## 7. 实践中的风险与补充建议\n\n热门回复补充了几个现实问题：\n\n- 微服务全部放进一个 workspace 后，可能出现**上下文窗口膨胀、Token 消耗和无关信息污染**。\n- Agent“看得到所有代码”不等于理解业务，仍需要清晰的领域拆分和可导航的系统地图。\n- 不一定必须使用真正的 Monorepo：将相关服务放在同级目录，并在各服务的 `AGENTS.md` 中写明业务边界和依赖关系，也能取得类似效果。\n- 最重要的是坚持**按需加载**，避免 Agent 随意读取不相关服务。\n- 最终效果也取决于模型能力，以及现有微服务边界是否清晰；如果系统本身存在大量历史债务，应先梳理领域和依赖关系。\n\n## 结论\n\n较稳妥的三层方案是：\n\n1. **统一 workspace**：通过 Monorepo 或虚拟 Monorepo 提供全局视图；\n2. **分层、精准的上下文**：根目录索引、服务级文档、OpenAPI 和契约文件按需加载；\n3. **自动验证闭环**：使用 Mock Server、Contract Test 和 Pact，让 Agent 能自主测试并修正。\n\n这三层搭建完善后，AI Agent 才能更可靠地处理跨微服务的系统设计与编码任务，而不是仅仅“读到很多代码”。\n\n## 参考资料\n\n- [Anthropic：Effective context engineering for AI agents](https://anthropic.com/engineering/effective-context-engineering-for-ai-agents)\n- [Anthropic：Effective harnesses for long-running agents](https://anthropic.com/engineering/effective-harnesses-for-long-running-agents)\n- [Steering AI Agents in Monorepos with AGENTS.md](https://dev.to/datadog-frontend-dev/steering-ai-agents-in-monorepos-with-agentsmd-13g0)\n- 契约测试可进一步检索：`Pact`、`consumer-driven contract testing`",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784713078209,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:64ab5e19b09ff195b2dd03b356d6e9cf74786bd3acd36c3cd2712f8bccaaaba2",
+  "refs": {
+    "sessionId": "1782901224155_mybgak25"
+  },
+  "revisionId": "sha256:1cbc84614a3d30cc1405a962045a16573db0658cd1c456544188b4785b9323c3",
+  "schemaVersion": 1,
+  "updatedAt": 1784713078209
+}

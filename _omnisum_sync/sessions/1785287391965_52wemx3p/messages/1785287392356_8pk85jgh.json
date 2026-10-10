@@ -1,0 +1,24 @@
+{
+  "createdAt": 1785287337346,
+  "entityType": "message",
+  "id": "1785287392356_8pk85jgh",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 使用开放模型，意外地让人感觉很好\n\n## 核心观点\n\n作者首次将 **OpenCode 接入自己控制的模型推理端点**后，产生了一种出乎意料的自由感：不再依赖 Claude 或 ChatGPT 的账号、套餐和封闭服务，数据也只在个人电脑与自己的端点之间传输。\n\n## 使用经历\n\n作者原本想用 Claude 或 ChatGPT 开发一个个人项目，但个人账号的套餐不够用。恰逢其所在公司 Modal 上线了 Kimi K3 托管推理服务，于是他决定尝试开放模型。\n\n整个配置过程只用了约 5 分钟，OpenCode 就成功连接到自己的 Modal 端点并开始运行。\n\n## “自由感”从何而来\n\n这种体验类似于从功能复杂的大型编辑器切换回 Vim：界面简单、没有束缚，也不再被特定厂商牢牢绑定。\n\n关键并不只是模型能力，而是：\n\n- **端点归自己控制**\n- **数据流向清晰可控**\n- **不受消费级订阅套餐限制**\n- **可以自由替换模型和服务商**\n- **工具与底层模型实现解耦**\n\n## 产品启示\n\n开放模型的价值不只是成本或性能，更在于给用户带来一种“自主权”。当接入门槛降低到几分钟后，开放模型便不再只是技术爱好者的选择，也可能成为普通开发者摆脱平台依赖的现实方案。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1785287337346,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f8744fb0e714211a6b9fa16b9d47ab5b1da93407b3f2c3143e7b398ed290e996",
+  "refs": {
+    "sessionId": "1785287391965_52wemx3p"
+  },
+  "revisionId": "sha256:6fae92b1bcbd4bbfbae40a51167c0ea9ebe40965f8b2e30e0acc91e30af9cd2f",
+  "schemaVersion": 1,
+  "updatedAt": 1785287337346
+}

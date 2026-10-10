@@ -1,0 +1,24 @@
+{
+  "createdAt": 1790232155739,
+  "entityType": "message",
+  "id": "1790232204134_u9ei9uev",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Magpie：让不同 AI 编程工具使用同一套模型入口\n\nMagpie 是一个运行在本机的模型网关和配置工具。**它要解决的问题是：Claude Code、Codex 等 AI 编程工具各自使用不同的 API 格式，原本不能方便地调用彼此支持的模型；Magpie 在中间转换请求，让用户为每个工具选择想用的模型。**\n\n## 它怎样让“任意工具用任意模型”\n\n例如，Codex 使用 OpenAI Responses 格式，Claude Code 使用 Anthropic Messages 格式。即使你有某个模型的访问权限，也不能仅靠填入模型名称，就让这些工具直接调用它。\n\nMagpie 在本机运行网关，接收工具发出的请求，再转换成模型服务商能理解的格式；返回结果时也做反向转换。网站称，这种转换包括**流式输出、工具调用和推理相关内容**。因此，用户可以为 Codex、Claude Code、Gemini CLI、OpenCode 等工具分别指定模型，而不必让所有工具用同一家服务商。\n\nMagpie 也提供配置界面：可以查看每个工具正在使用什么模型，点击修改后，它只改动该工具配置中对应的项目；下次启动会话时，新配置生效。切回工具原生模型时，它会恢复之前的配置。用户还可以保存“预算”“专注工作”等配置方案，一次切换多个工具。\n\n## 已有订阅和新加的 API Key，都可以成为模型来源\n\nMagpie 宣称，**登录某个工具后，该登录所能访问的模型也可以出现在其他工具的模型列表里**。例如，用 Claude Code 的登录在 OpenCode 中选择 Claude 模型，或用 Codex 的登录在 Claude Code 中选择 GPT 模型。按网站说法，这不需要用户手动复制凭证，令牌也沿用相应工具的刷新方式。\n\n另一种方式是添加服务商的 API Key。Magpie 提供约 20 种服务商、中转服务和本地服务器的预设；添加后，它会向服务商查询当前提供的模型，并在刷新后更新选择列表。**Key 保存在 Magpie 中，不交给各个编程工具；Magpie 也不会自动读取 shell 环境变量里的 API Key**，只使用用户明确添加的凭证。\n\n除受支持的编程工具外，任何允许设置 API 基础地址的客户端，也可以尝试连接这个网关。\n\n## 日常使用和软件形态\n\nMagpie 会按工具和模型显示经由网关的 token 用量、缓存命中和费用。除了图形界面，它也提供终端界面（TUI）和命令行工具（CLI），可在终端里添加服务商、给工具指定模型、查看配置和切换预设。\n\n网站称它是 MIT 许可的开源原生应用，体积小于 15 MB，使用系统 WebView，不依赖 Electron；更新会在后台下载、重启时安装。页面宣称支持 macOS、Windows 和 Linux，但列出的具体系统要求主要是 macOS 与 Linux，未给出 Windows 的详细要求。\n\n**理解这款产品的关键是：Magpie不是新模型，而是放在现有工具与模型服务之间的“转换层”和配置入口。**它主张减少切换模型时修改多个工具配置、重复填写凭证的麻烦；跨工具调用和订阅复用等能力，则是该产品页面作出的功能宣称。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1790232155739,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e99b2480fc60fcb705667fbdebce692a0c09a54c92949bbb25c8e7e375056e34",
+  "refs": {
+    "sessionId": "1790232203532_zxv8fs2e"
+  },
+  "revisionId": "sha256:3d7ada4721bd59b14c57e98e5b65e2b62ba5dad6a48d604e25843d8c9445c301",
+  "schemaVersion": 1,
+  "updatedAt": 1790232155739
+}

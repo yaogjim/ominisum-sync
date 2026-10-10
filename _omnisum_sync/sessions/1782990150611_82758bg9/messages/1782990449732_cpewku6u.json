@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782990449733,
+  "entityType": "message",
+  "id": "1782990449732_cpewku6u",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Wiki Memory智能体记忆模式\n\n**评级**: B (66.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 人工智能\n**次类别**: Agent记忆, 知识管理\n**标签**: #Wiki Memory #Agent Memory #RAG #知识压缩 #长期记忆\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇有启发性的Agent记忆模式速览，但证据和实现细节不足。\n**核心高价值点**: 将Agent Memory从单纯存储问题重新定义为“知识压缩与持续维护问题”。\n\n### 摘要\n文章概述Harrison Chase提出的Wiki Memory模式，认为Agent记忆的核心不是存更多数据，而是将原始资料压缩为可检查、可编辑、可版本化、可复用的知识结构，并与RAG的临时检索形成对比。\n\n### 知识要点\n- Wiki Memory包含原始资料层、知识压缩层和文件维护层三类结构\n- RAG偏向提问时临时检索原始片段，Wiki Memory偏向提前沉淀稳定知识地图\n- 文件作为记忆载体具备可检查、可编辑、可版本化和易读取的优势\n- Wiki Memory更适合长期领域知识，不适合短期对话状态或高频事件流\n\n### 行动项\n- 阅读Harrison Chase原文，确认Wiki Memory的完整定义和实现边界\n- 在Agent项目中尝试为代码库或研究资料生成可版本管理的知识Wiki\n- 评估Wiki Memory与现有RAG系统如何组合使用，而非简单替代\n\n### 存档判定\n归档: 是 — 原因: 文章提炼了Wiki Memory与RAG的差异，并给出原始资料层、知识压缩层、文件维护层的结构化框架，对AI Agent知识管理有参考价值\n删除: 否\n留存决策: 短期参考后可归档，适合作为Agent记忆设计的概念线索",
+    "role": "assistant",
+    "timestamp": 1782990449733,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:005c0599015df2508c7939c7250f7b6656120279a50d1c28ea96c2aed413fd82",
+  "refs": {
+    "sessionId": "1782990150611_82758bg9"
+  },
+  "revisionId": "sha256:2cacd6a8b7c7799f25dbe06551918d74be948b8b704ddc3b2ccd472ed9ab79f1",
+  "schemaVersion": 1,
+  "updatedAt": 1782990449733
+}

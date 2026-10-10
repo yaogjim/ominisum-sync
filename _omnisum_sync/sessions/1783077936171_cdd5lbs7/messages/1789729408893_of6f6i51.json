@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729408892,
+  "entityType": "message",
+  "id": "1789729408893_of6f6i51",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 用本地 Markdown 为 Claude Code 建立可控的长期记忆\n\n作者将开源记忆框架 EverOS 接入 Claude Code，把跨会话记忆保存为本地 Markdown，并直接纳入 Obsidian 与 Git 管理。核心价值不是让 Agent 记住可从代码核实的事实，而是长期保留用户偏好、项目决策和约束，避免每次新会话都从零交代背景。\n\n## 用 Hook 打通“召回—对话—写回”闭环\n\nEverOS 安装后运行在本机，数据存于 `~/.everos`。由于官方 Claude Code 集成会经过云端，作者自行编写约百行 Hook，连接本地服务：\n\n- 提交提示词时，检索相关记忆并注入上下文；\n- Claude 回答后，将本轮内容抽取、写回本地；\n- 记忆以带 YAML 元数据、摘要和正文的 `.md` 文件保存，可在 Obsidian 中阅读，也能用 grep、Git diff 检索和追踪。\n\n实践中，只注入短摘要会丢失细节；改为注入完整正文后，Claude 才能准确复述测试脚本失效、相关目录被删除等历史结论。\n\n## 记忆开始跨会话影响 Agent 行为\n\n作者在全新窗口和无关目录中测试，Claude 仍能记得“使用中文回复”，并在讨论 reddtrends 时主动遵守“不碰已废弃 trends-pipeline”的既有约束。这说明记忆不只是储存事实，还能持续指导后续行动。\n\n对于可从源码确认的硬事实，Claude 仍会重新读取代码。作者认为这是合理边界：记忆应作为快速先验，而非取代源码这一最终依据。\n\n## “本地”代表资产可控，并非完全离线\n\n作者实测确认了 Markdown 本地可读，以及偏好和决策可跨会话、跨项目召回；但未验证索引重建、手改文件立即生效及自动进化 Skill 等官方能力。此外，记忆文件和索引虽在本机，内容抽取仍调用 LLM、检索仍需 embedding 服务，因此会联网。其关键意义在于：Agent 记忆成为用户可查看、修改、迁移和版本管理的个人资产，而非依附平台账号的黑盒数据。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729408892,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4badc0e3f3e20d2ea18e3ce9e57ae925080bb0dfdec3e4c68f37f2244e54c0fa",
+  "refs": {
+    "sessionId": "1783077936171_cdd5lbs7"
+  },
+  "revisionId": "sha256:94369f80eed06c1225a215763d4fa2f6d34a6bde998d6fb446a418eae8251218",
+  "schemaVersion": 1,
+  "updatedAt": 1789729408892
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728188963,
+  "entityType": "message",
+  "id": "1789728188962_mez0mdmi",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# OpenAI 工程师面试：从“独立写代码”转向“驾驭 AI 交付系统”\n\n据一名候选人在 Reddit 分享的经历，OpenAI 软件工程师面试明显偏重分布式系统、工程落地与技术领导力，而非传统大厂式算法刷题。更值得关注的是，部分候选人会参加仍处于测试阶段的“Agentic Coding”环节，用 AI 编程代理解决复杂代码库中的真实问题。\n\n## 核心考察是可运行系统与设计取舍\n\n流程包括招聘沟通、技术面、限时项目和现场面试：\n\n- 招聘沟通会讨论候选人对 AI 方向的判断，分享者建议提前阅读 OpenAI 公司章程。\n- 两轮技术面分别要求实现带版本管理的键值存储，以及设计具备容错能力的任务调度器。\n- 48 小时居家项目要求交付可运行系统；该候选人的题目是分布式 webhook 投递，需实现重试与死信队列。之后面试官会逐行审查代码，追问每项设计决策。\n- 现场环节覆盖渐进式编程题、Python 生成器/异步/并发等底层能力，以及“设计 ChatGPT”，重点涉及 GPU 分配、自动扩缩容和分布式协调。\n- 行为面强调真实的技术领导案例，包括如何在压力下推动跨团队共识，而非泛泛的软技能表述。\n\n## AI 协作能力正进入招聘标准\n\n测试中的 Agentic Coding Round 会提供现有代码库和难以纯手写完成的问题，要求候选人借助 AI Agent 交付。这说明在 OpenAI 的招聘判断中，拆解复杂任务、约束和验证 AI 输出、推动 Agent 完成工程工作，可能正从加分项变成基本能力。\n\n这是一份个人经历，具体流程可能因岗位和候选人而异；但其信号明确：面向 AI 公司的工程师准备，单靠 LeetCode 已不够，系统设计、工程可靠性与人机协作编程的重要性正在上升。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728188963,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ff91e2df9c35b7326e706b746dd88605525f431f6900c3d0cfbcb6717059fe06",
+  "refs": {
+    "sessionId": "1785470222227_j3dbae6n"
+  },
+  "revisionId": "sha256:9b5fa383ff13ecb3f2e9cef4c6f74e9ea40840d3c88b4dda758a52622c37b79a",
+  "schemaVersion": 1,
+  "updatedAt": 1789728188963
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696190495,
+  "entityType": "message",
+  "id": "1789696190494_6i13xjnb",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者公开了一个由 AI Agent 辅助维护的 AI 公司研究库，希望把零散的公司、人物、融资和市场信号连接成可持续更新的市场地图。\n\n## 关键内容\n\n- **研究方式**：输入一家新公司或融资线索后，Agent 会继续调查产品、创始人、投资机构、技术文档、流量、获客方式、社区反馈及竞品关系，而非只生成一次性报告。\n- **知识沉淀**：作者开发了 Memex，用结构化对象、Markdown 正文和关系图谱保存资料，让人和 Agent 能在后续研究中复用。\n- **流量辅助判断**：库中加入 Similarweb 数据，用于判断产品是否有真实访问规模、增长来自哪些渠道，以及公司之间究竟是直接竞争还是仅受众重合。例如，作者据此认为 Viktor 的增长并非只有融资宣传推动。\n- **目前规模**：已收录 75 家 AI 公司和产品、75 位投资人或机构、111 位关键人物及 227 个跟踪入口，重点覆盖 AI 产品、企业 Agent 和 Browser/Agent 基础设施。\n\n## 通俗解读\n\n它更像一张不断补充证据的“AI 行业关系地图”，不是公司排行榜。Similarweb 只是第三方估算，作者也明确会结合官网、文档、GitHub 和社区信息交叉验证。**如果你正在研究 AI 公司、Agent 或竞品，值得打开资料库细看；若只想了解行业结论，原文主要是项目介绍，信息密度有限。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696190495,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:59b1185197ecd7591adab9806bbc114d8ccffa7106e1762065f1b21eb73ab765",
+  "refs": {
+    "sessionId": "1784694075025_rrvuf6ww"
+  },
+  "revisionId": "sha256:93a4790dbe45bf883393e3f563889deee7a3baf27be45a6a152ec6f4bfb4770f",
+  "schemaVersion": 1,
+  "updatedAt": 1789696190495
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785288273529,
+  "entityType": "session",
+  "id": "1785288273529_ibdaflpn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "建立开放权重模型评测表，对能力、推理成本、许可证、安全性和硬件适配进行统一比较。",
+      "在产品架构中采用可替换的模型与推理接口，降低对单一闭源API供应商的依赖。",
+      "针对自身业务验证开放模型与推理、Agent、评测及可观测性工具组成的端到端技术栈。"
+    ],
+    "archiveReason": "文章提出了可复用的平台生态分析框架，并覆盖模型选型、基础设施、采购和治理等长期相关议题。",
+    "classifiedAt": 1785402878719,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "开放权重AI的生态平台竞赛",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "tobi.knaup.me",
+    "favicon": "https://tobi.knaup.me/apple-touch-icon.png",
+    "knowledgePoints": [
+      "开放权重不等于完整开源：模型参数可下载和修改，但训练数据与完整训练过程通常并未公开。",
+      "开放平台形成中心地位的关键，是底座能力足够、可移植且可扩展，从而吸引互补工具和商业服务持续聚集。",
+      "开放权重AI的生产栈可由模型、推理服务、适配与微调、Agent运行时、沙箱、评测和可观测性共同构成。"
+    ],
+    "oneHighValuePoint": "开放权重模型的战略价值不只在于自托管，而在于成为可移植、可定制的公共底座，使推理、微调、评测、可观测性和运维工具形成复合创新。",
+    "oneLineReview": "平台生态类比清晰且与AI基础设施高度相关，但政策结论主要依赖趋势判断，证据链仍不够完整。",
+    "primaryCategory": "AI产业与开源生态",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，作为判断开放权重AI生态与技术路线的参考框架",
+    "secondaryCategories": [
+      "AI基础设施",
+      "技术政策"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以Kubernetes取代Mesos的经历类比开放权重AI，认为可移植、可定制的模型会吸引推理、微调与工具生态，并主张美国通过开放模型、采购、标准和产业配套竞争，而非全面禁用中国模型。",
+    "tags": [
+      "开放权重模型",
+      "AI基础设施",
+      "开源生态",
+      "模型治理",
+      "技术政策"
+    ],
+    "title": "Open-weight AI is having its Kubernetes moment. Let's not ruin it.",
+    "totalScore": 73,
+    "url": "https://tobi.knaup.me/2026-07-25-open-weight-ai-is-having-its-kubernetes-moment/"
+  },
+  "payloadHash": "sha256:f17f2c6713b5eb48dc48c76153e69edb8b0d7f14887814ab78bfbb5ca8fcd72f",
+  "refs": {},
+  "revisionId": "sha256:bad7339bb32da173eb6d40b13cec0c64b2d4f834f98f7008bef745be3bfe8fac",
+  "schemaVersion": 1,
+  "updatedAt": 1789694420368
+}

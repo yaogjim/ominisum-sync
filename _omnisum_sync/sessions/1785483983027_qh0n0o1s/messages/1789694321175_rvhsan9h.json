@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694321176,
+  "entityType": "message",
+  "id": "1789694321175_rvhsan9h",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n一次受控实验表明：合理重构虽未明显减少代码总量，却能让 AI 编程代理只读取相关模块，使同一改动的输入 Token 消耗下降 83%；但是否经济划算仍需更多实验。\n\n## 关键内容\n\n- 作者的 15 万行应用几乎全由 AI 生成，其中数据访问层膨胀成一个 17,155 行文件，充斥重复代码。\n- 他分阶段重构，并让“全新代理”反复完成同一功能，以避免学习效应。最终最大文件降至 3,695 行，同一任务的输入 Token 从 159,564 降到 27,360；输出 Token 基本没变。\n- 收益并非来自总代码量减少，而是模块边界更清晰，代理能准确找到少量相关文件。随意把大文件切碎，未必有效。\n- 按当时价格，每次改动约省 0.397 美元；实验耗时约 8 小时，重构本身的 Token 成本未准确统计，且 Claude 仍需人工制定和纠正重构方案。\n\n## 通俗解读\n\n这相当于把一本杂乱的大账本整理成分类清楚的小册子：内容没少，但 AI 不必每次翻完整本。文章值得 AI 编程与工程管理从业者细读，尤其是实验方法和重构步骤；不过它只是单人、绿地项目中的一次实验，不能直接推断所有项目都能节省 83%。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694321176,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c0591adc5e9e5c0552f77468af7b1f1fc2c395a132dd71717a0d514a4a0f8dee",
+  "refs": {
+    "sessionId": "1785483983027_qh0n0o1s"
+  },
+  "revisionId": "sha256:2790bcbd5dddb63a913662c399e6faf774ac93fcf3676cd77e811875239d0821",
+  "schemaVersion": 1,
+  "updatedAt": 1789694321176
+}

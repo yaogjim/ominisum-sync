@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728736682,
+  "entityType": "message",
+  "id": "1789728736683_hen4mewl",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 用 10 分钟语音“闲聊”，让 LLM 更懂你的真实意图\n\nAndrej Karpathy 分享了一种与 LLM 协作的方法：当任务需要大量背景、但不想费力整理和打字时，直接切换语音模式，连续讲约 10 分钟。即使内容跳跃、重复、带有识别错误，LLM 也往往能从意识流表达中重构目标、约束与思路，形成比原始叙述更清晰的结果。\n\n## 冗长输入的价值在于补足隐性上下文\n\n相比只告诉模型“要做什么”，自由讲述还能带出“为什么做”、取舍依据和未成形的想法。这些信息有助于模型在后续执行中理解意图，减少反复纠偏。也可以把过程改成多轮访谈，让模型通过提问补齐信息，甚至挑战用户的假设。\n\n## LLM 更像思维整理器，而非替代判断者\n\n这种方式体现了语音交互的优势：降低表达成本，让模型承担信息归纳和结构化工作。但热门回复也提醒了两类风险：\n\n- 自己整理混乱思绪本身就是思考过程，完全外包可能减少反思并损失新的洞见。\n- LLM 可能把糟糕想法包装成连贯、顺耳的总结，却不代表方向正确。\n\n因此，这种方法适合快速建立上下文和生成初稿，但整理后的结论仍需用户主动审视、质疑与修正。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728736682,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:caf24d77e1ffdd3ec62e287332ec72690c7f53d2d62cadb423d55a92533a6c93",
+  "refs": {
+    "sessionId": "1784700310710_7lzzbk16"
+  },
+  "revisionId": "sha256:2c62ade5bd5c2acc25489ea1eadb46c57bc24ed5f275534ccb11d376f05d38ed",
+  "schemaVersion": 1,
+  "updatedAt": 1789728736682
+}

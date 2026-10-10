@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789463830230,
+  "entityType": "session",
+  "id": "1789463830230_dww3vsb9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将 Agent 平台能力拆分为基础层与可选扩展层，并按团队需求决定启用模块。",
+      "在引入 Pi-core 前逐项审查复用边界，避免将其误认为可直接使用的完整运行时。",
+      "单独评估工具调用、MCP 和任务运行时的自研工作量及企业级控制要求。"
+    ],
+    "archiveReason": "提出了 Agent Base 加 Extension 的可扩展结构，并明确区分 Pi-core 可复用部分与需要自行实现的运行时组件。",
+    "byline": "熊布朗",
+    "classifiedAt": 1789642161699,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "企业级智能体执行框架模块化设计",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 800,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HR2-g-9bgAAD7-9?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HR2-g-9bgAAD7-9?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "采用 Agent Base 加 Extension，可将通用能力与团队特定能力解耦。",
+      "Pi-core 的主要复用价值集中在 Agent loop 和上下文压缩业务逻辑，而非完整 Harness Runtime。",
+      "工具调用、MCP 与任务运行时可能是企业级 Harness 中工作量较大的自建模块。"
+    ],
+    "oneHighValuePoint": "复用 Agent 框架不等于直接套用完整运行时，应明确区分可继承的 Agent loop、上下文压缩逻辑与需自主实现的工具调用、MCP 和任务运行时。",
+    "oneLineReview": "提供了与企业级 Agent 架构直接相关的实现边界，但缺少架构细节、案例和验证证据。",
+    "primaryCategory": "AI Agent 开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "保留其模块化设计与组件复用边界，后续设计企业级 Agent 平台时参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "软件架构",
+      "企业级产品开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 J Agent 的企业级 Harness 设计：通过 Agent Base 加 Extension 按团队需求扩展；Pi-core 主要复用 Agent loop 与上下文压缩，工具调用、MCP 和任务运行时则自行实现。",
+    "tags": [
+      "Agent Harness",
+      "模块化架构",
+      "Pi-core",
+      "MCP",
+      "任务运行时"
+    ],
+    "title": "熊布朗: 差不多，J Agent 及时基于 Pi-core 做的，整个 Harness 实施的过程中，下面每个模块的工作量差异巨大",
+    "totalScore": 56,
+    "url": "https://x.com/Stephen4171127/status/2098140784373514688"
+  },
+  "payloadHash": "sha256:8d5ca61e932f321028f5430595f988a601779706c4151b906d50dd5a366cbd9f",
+  "refs": {},
+  "revisionId": "sha256:760d8fc396d769b64eefd80517745723c3f4d6a93b1afe1ea86bae531daff967",
+  "schemaVersion": 1,
+  "updatedAt": 1789727797744
+}

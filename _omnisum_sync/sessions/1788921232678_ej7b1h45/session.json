@@ -1,0 +1,67 @@
+{
+  "createdAt": 1788921232678,
+  "entityType": "session",
+  "id": "1788921232678_ej7b1h45",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如有视频制作需求，测试录制、多源同步和后期独立编辑流程。",
+      "使用代表性素材验证本地对象遮罩的跟踪质量、处理速度和硬件占用。",
+      "对照现有版本实测模糊、锐化、时间线渲染和导出性能，确认官方数据是否适用于自身环境。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1788923836291,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "OpenShot 4.0创作工作流升级",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.openshot.org",
+    "favicon": "https://cdn.openshot.org/images/favicon.png",
+    "knowledgePoints": [
+      "录屏、摄像头、麦克风和系统音频可分别保存为独立媒体与时间线片段，便于后期单独调整。",
+      "调色模块集成色轮、RGB曲线、LUT、波形图、直方图、RGB Parade和矢量示波器。",
+      "本地生成的对象遮罩可复用于模糊、像素化和调色等效果，并支持修改主体或反向处理背景。"
+    ],
+    "oneHighValuePoint": "对象遮罩可通过本地YOLO、EfficientSAM和Cutie等ONNX模型完成主体选择与跟踪，无需上传素材或订阅云服务。",
+    "oneLineReview": "功能信息全面且包含少量性能数据，但整体仍是第一方版本公告，缺少独立验证与可复用方法。",
+    "primaryCategory": "视频编辑软件",
+    "rating": "B",
+    "rejectReason": "内容主要是特定版本的功能公告，方法论和跨项目复用价值有限。",
+    "retentionDecision": "选择性浏览，按视频制作需求查阅具体功能",
+    "secondaryCategories": [
+      "AI工具",
+      "开源软件"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍OpenShot 4.0新增的一体化录制、专业调色、本地AI对象遮罩、音频可视化及原生时间线，并列出效果性能、跨平台兼容性、导入导出与底层库升级。",
+    "tags": [
+      "OpenShot",
+      "视频编辑",
+      "本地AI",
+      "色彩管理",
+      "屏幕录制"
+    ],
+    "title": "OpenShot 4.0: Record, Edit, and Color Like Never Before",
+    "totalScore": 55,
+    "url": "https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before/"
+  },
+  "payloadHash": "sha256:d62d50f4f2f64701ef4eb3103e234e9ddf1666c2b8b2f64ec1fd7e39195ac8b3",
+  "refs": {},
+  "revisionId": "sha256:fe5c4b3d1ecaff46e5231af0dc4914a15891faa07dca31fd90827fca79596d05",
+  "schemaVersion": 1,
+  "updatedAt": 1788927191656
+}

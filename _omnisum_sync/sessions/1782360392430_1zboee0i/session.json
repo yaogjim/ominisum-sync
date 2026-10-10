@@ -1,0 +1,71 @@
+{
+  "createdAt": 1782360392430,
+  "entityType": "session",
+  "id": "1782360392430_1zboee0i",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "浏览Omnigent quickstart和GitHub仓库，评估其API设计和成熟度",
+      "对比现有Claude Code、Codex、OpenAI Agents SDK等工具的集成方式",
+      "提炼meta-harness思想，用于设计自己的多Agent编排和治理架构",
+      "重点研究其安全策略、成本控制和沙箱实现是否可迁移到内部Agent系统"
+    ],
+    "archiveReason": "提出了meta-harness作为Agent工作流上层抽象的思路，涵盖组合、控制、协作、安全和成本治理等关键方向",
+    "classifiedAt": 1782361956472,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Omnigent元代理框架发布",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.databricks.com",
+    "favicon": "https://www.databricks.com/en-blog-assets/favicon-32x32.png?v=c9b9916c3b27dc51866c46b79a6e9b88",
+    "knowledgePoints": [
+      "Meta-harness可作为不同Agent harness、模型和SDK之上的统一抽象层",
+      "Agent系统的关键问题正在从单模型能力转向多代理组合、治理和协作",
+      "动态上下文安全策略比简单allow/deny规则更适合Agent执行环境",
+      "实时共享Agent会话和工作目录可成为团队协作的新界面",
+      "成本预算、OS沙箱和网络请求拦截是企业级Agent落地的重要基础设施"
+    ],
+    "oneHighValuePoint": "将Agent能力从单一harness提升到meta-harness层，统一处理组合、协作、安全策略和成本控制。",
+    "oneLineReview": "这是一篇高相关度的Agent基础设施产品发布文，方法论视角有价值，但案例和实证支撑偏弱。",
+    "primaryCategory": "AI Agent基础设施",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为理解Agent工具抽象层和多代理协作趋势的参考材料",
+    "secondaryCategories": [
+      "多智能体编排",
+      "开发者工具",
+      "AI安全治理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Databricks开源的Omnigent，一个位于各类Agent harness之上的元框架，用统一API组合Claude Code、Codex等工具，并提供实时协作、策略控制、沙箱、安全和成本治理能力。",
+    "tags": [
+      "Omnigent",
+      "Meta-Harness",
+      "Agent Orchestration",
+      "Databricks",
+      "开源工具"
+    ],
+    "title": "Introducing Omnigent: A Meta-Harness to Combine, Control and Share Your Agents | Databricks Blog",
+    "totalScore": 73.5,
+    "url": "https://www.databricks.com/blog/introducing-omnigent-meta-harness-combine-control-and-share-your-agents"
+  },
+  "payloadHash": "sha256:903ffc2c347d417f7b36e65ec4f45076b4c1d5cb47a32bc30bb2c62fcec71c8d",
+  "refs": {},
+  "revisionId": "sha256:d5184744bf7cb9cdc17d77248662cf90be8d23a080f8c29e1a426b2d19175927",
+  "schemaVersion": 1,
+  "updatedAt": 1789692268925
+}

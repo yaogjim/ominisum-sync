@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786092350394,
+  "entityType": "message",
+  "id": "1786092350394_iq78qn8u",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Cloudflare Computer：给智能体一台可编程的“电脑”\n\nCloudflare Computer 是一套面向智能体和 Cloudflare Workers 的虚拟计算环境。它把持久化文件系统和多种执行后端统一起来，让智能体既能长期保存文件，也能运行 Linux 命令、Shell 脚本或 JavaScript 模块。\n\n听完这份介绍，你可以了解它的核心架构、三种运行后端、典型使用场景，以及项目目前的性能特点和开发状态。\n\n## 首先，理解它的核心：一个持久化的虚拟工作区\n\nCloudflare Computer 的基础，是一个位于 Durable Object，也就是“持久化对象”内部的虚拟文件系统。\n\nDurable Object 是 Cloudflare 提供的一种有状态计算单元。简单来说，普通云函数执行结束后，内存状态通常会消失；而 Durable Object 可以长期保存状态。Cloudflare Computer 就利用这一能力，为智能体提供一个不会随着单次任务结束而丢失的工作区。\n\n工作区的权威数据保存在 SQLite 中。SQLite 是一种轻量级数据库，这里承担的是文件系统底层存储的角色。所谓“权威数据”，意思是它是文件状态的最终来源。无论外部使用哪种运行环境，最终都以这里保存的内容为准。\n\n在此基础上，Cloudflare Computer 通过统一的运行接口，把文件系统和不同执行环境连接起来。这样，调用者面对的是同一个 Workspace，也就是工作区，而不用分别管理多套文件数据。\n\n## 接下来，是三种可以替换的执行后端\n\nCloudflare Computer 目前提供三种后端。它们共享同一个持久化工作区，但执行任务的方式不同。\n\n第一种是容器后端。\n\n它会把 SQLite 中保存的状态映射到沙箱容器里，看起来就像一个真实的文件系统。这里使用了 FUSE。FUSE 可以理解为一种让用户态程序实现文件系统的机制。\n\n容器里会运行一个名为 computerd 的后台程序。它负责挂载文件系统，并通过 capnweb RPC 通道把文件变更同步回 Durable Object。RPC，也就是远程过程调用，可以理解为两个独立程序之间互相调用功能和传递数据的方式。\n\n这种后端提供完整的 Linux 用户环境，可以运行真实的二进制程序，也可以访问真实网络。适合需要系统工具、复杂依赖，或者必须执行原生程序的任务。\n\n第二种是隔离式 Shell 后端。\n\n它不启动容器，而是在 Dynamic Worker，也就是按需创建的动态 Worker 中运行 just-bash。just-bash 是一个可执行 Bash 风格命令的环境。\n\n这个后端会通过 Workers RPC 直接访问权威工作区。因此，它不需要维护第二份文件存储，也不需要先把文件同步到另一套系统再执行。它更轻量，适合主要使用 Shell 命令、但不需要完整 Linux 容器的任务。\n\n第三种是隔离式 JavaScript 后端。\n\n它会在一个全新的 Dynamic Worker 中运行 ECMAScript 模块，也就是现代 JavaScript 模块。任务可以接收结构化输入，并返回结构化结果。\n\n这个环境支持持久化的相对路径导入、预先配置的程序库，以及由 Workspace 支持的文件系统接口。它还提供受信任的 Git 和制品模块，用于处理代码仓库与构建产物。\n\n换句话说，如果任务本身适合用 JavaScript 完成，就可以直接在轻量的 Worker 环境中执行，不必启动 Shell 或完整容器。\n\n## 更重要的是，三种后端使用同一个执行入口\n\n一个 Workspace 可以注册多个后端，并为它们分配稳定的标识。执行任务时，统一调用 `workspace.runtime.exec`，再指定要使用哪个后端。\n\n被选中的后端会决定传入内容的含义。选择容器或 Shell 后端时，内容通常是一条 Shell 命令；选择 JavaScript 后端时，内容则是一个 ECMAScript 模块。\n\n这些后端采用延迟连接方式，也就是第一次真正使用时才建立连接。这样可以避免提前启动暂时用不到的运行环境。\n\n此外，Workspace 也可以完全不配置执行后端。此时，调用者仍然能够把它当作一个独立的持久化虚拟文件系统使用。\n\n## 如何使用这套系统\n\n如果要在自己的项目中使用 Cloudflare Computer，可以安装顶层软件包 `@cloudflare/computer`。它提供安装说明、入口映射，以及文件系统和运行接口的完整示例。\n\n如果要参与这个代码仓库本身的开发，则需要按照项目的贡献文档完成环境设置、构建和测试。\n\n这个项目目前是一个小型 monorepo。monorepo 指的是把多个相关软件包放在同一个代码仓库中统一维护。每个软件包都有自己的说明文档，用来介绍具体状态和使用方式。\n\n## 典型案例展示了哪些能力\n\n项目提供了多组可以直接运行的示例，每一组都是一个独立的 Worker 工作区。\n\n首先是容器示例。它在容器中运行 computerd，挂载 Workspace，并通过 capnweb 与 Durable Object 通信。示例提供写文件、读文件和执行命令等 HTTP 接口。\n\n接下来是 Worker Shell 示例。它提供与容器示例相同的 HTTP 功能，但 Shell 运行在 Dynamic Worker 中，不需要容器。这能直观展示两种后端虽然底层不同，却可以暴露相似的使用方式。\n\nJavaScript 示例则进一步把执行环境换成 ECMAScript 模块。它不运行 Shell 命令，而是在 Dynamic Worker 中直接计算 JavaScript 代码。\n\n项目还提供了智能体案例。一个名为 think 的聊天智能体，会把 Workspace 当作自己的工作目录，并且可以从终端访问。另一个对比案例，会让同一个智能体任务分别在容器和 Worker 环境中运行，方便并排观察两种运行方式的差异。\n\n教程案例展示了一条更完整的工作流：智能体先在宿主工作区中生成一份 Markdown 格式的食谱卡片，再进入容器运行 Pandoc，把它转换成 PDF。这个案例说明，持久化文件系统和真实命令行工具可以组合成连续任务。\n\n另外还有两个生成类案例。一个会在工作区中生成 Worker 项目，并发布到 Cloudflare Artifacts，形成可以克隆的代码仓库。另一个会根据提示词调用 Workers AI 生成图片，把图片写入工作区，再返回一个可以分享的链接。\n\n## 仓库中的主要组成部分\n\n这个仓库由几个职责不同的软件包构成。\n\n`@cloudflare/dofs` 提供由 Durable Object 和 SQLite 支持的虚拟文件系统，同时包含同步协议的基础组件，以及面向 Node.js 的虚拟文件系统适配器。\n\n`@cloudflare/computer-rpc` 定义 Durable Object 与 computerd 之间共享的通信类型，并提供服务器端和客户端工具。\n\n`@cloudflare/computerd` 是运行在沙箱容器中的后台程序。它同时负责 FUSE 文件系统挂载，以及 HTTP 和 WebSocket 形式的 RPC 服务。\n\n顶层的 `@cloudflare/computer` 是 Durable Object 使用的主要软件包，也是外部项目最直接接触的入口。不过原文明确说明，这一部分仍在开发中。\n\n此外，项目还提供预编译的 Linux x64 版本 computerd，方便在容器镜像中直接使用。\n\n## 性能表现并不是简单地快或慢\n\n在文件系统性能方面，computerd 的 FUSE 挂载有一个比较鲜明的特点：面对大量文件元数据操作时，它的表现可以超过真实磁盘；但在大文件连续读写，也就是顺序输入输出方面，它会落后于真实磁盘。\n\n元数据操作主要包括查询文件是否存在、读取目录、查看文件属性等。这类操作频繁的开发任务，可能更能发挥它的优势。相反，如果任务需要持续传输大块文件，真实磁盘仍然更有优势。\n\n项目文档提供了完整的文件系统基准测试、与 Cloudflare Sandbox SDK 安装 npm 软件包的对比，以及复现实验的方法。\n\n## 最后，理解项目当前的定位\n\n仓库中的设计文档具有前瞻性，更适合被看作项目计划和设计意图，而不是所有功能都已经完全实现的承诺。\n\n参与贡献时，需要遵循项目对环境设置、代码格式、测试、提交信息和拉取请求的约定。如果是由智能体直接参与仓库开发，项目还专门提供了智能体说明和技能文件。\n\n整个项目采用 MIT 许可证，允许在许可证规定下自由使用、修改和分发。\n\n## 最值得记住的几点\n\n最后回顾五个核心结论。\n\n第一，Cloudflare Computer 的核心不是单纯的远程容器，而是一个由 Durable Object 和 SQLite 支持的持久化虚拟工作区。\n\n第二，它目前提供三种执行后端：完整 Linux 容器、轻量 Shell，以及直接运行 JavaScript 模块的 Dynamic Worker。\n\n第三，所有后端都可以围绕同一个 Workspace 工作，并通过统一的执行入口调用；也可以只使用文件系统，完全不配置执行环境。\n\n第四，它适合智能体处理需要长期保存文件、执行工具、生成代码或产物的多步骤任务。\n\n第五，它在元数据密集型文件操作上表现突出，但大文件连续读写仍弱于真实磁盘，而且顶层软件包目前仍处于开发阶段。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1785716664510",
+    "prompt_template_name": "口播总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786092350394,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ccb7930ec3646000e84ed82c05bf60db706aa4eeb320644c0ee92784d72ae121",
+  "refs": {
+    "sessionId": "1785833948756_o6im7va2"
+  },
+  "revisionId": "sha256:70790858f95f682b15782a6769cb5ac7031b8c2ae3ad2062eeb5791df205c574",
+  "schemaVersion": 1,
+  "updatedAt": 1786092350394
+}

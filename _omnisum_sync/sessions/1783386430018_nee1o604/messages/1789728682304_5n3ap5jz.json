@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728682304,
+  "entityType": "message",
+  "id": "1789728682304_5n3ap5jz",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 用一个本地网关，让 Claude Code 与 Codex 安全切换多家模型\n\nSuperagent Gateway 是一个小型 Rust 兼容层：Claude Code 和 Codex CLI 只需连接同一本地端点，即可使用 GPT、Claude、Kimi、Qwen，以及 OpenAI 兼容的云端或本地模型。它重点解决协议转换、模型路由和故障切换，而非打造通用 LLM 平台。\n\n## 原生适配客户端，统一连接模型供应商\n\n网关对 Claude Code 提供 Anthropic Messages API，对 Codex 提供 OpenAI Responses API，并转换请求体、流式输出、工具调用和推理内容。模型只需在 YAML 中定义一次别名，各客户端即可使用同一名称调用。\n\n配置可按客户端划分流量角色：\n\n- `main`：主要任务，可配置模型回退链；\n- `subagent`：Claude Code 子代理任务；\n- `background`：标题、摘要等后台任务。\n\n系统会识别工具、图片、推理、缓存及流式请求，只选择能力匹配的路由；不兼容模型可被限制为纯文本、降级工具模式或直接阻止。\n\n## 故障切换以“不破坏工具循环”为底线\n\n项目最重要的安全策略是：**仅在响应开始流式输出前重试或切换模型**。默认先对首选路由重试一次，再按备用路由继续；但一旦已经输出文字或发起工具调用，就不会静默换模型并重放请求，而是向客户端返回 SSE 错误。\n\n这避免了编码代理在执行工具过程中因模型切换而重复操作、状态错乱。非重试型上游错误也会原样转发，以保留 Claude Code 依赖的错误语义。\n\n## 小型部署，但保留必要的安全与可观测性\n\n项目提供单一二进制、一个 YAML 配置和约 60 MB Docker 镜像。API Key 默认从环境变量读取；缺失变量会在启动时失败，非本机地址若未配置鉴权令牌也会拒绝启动。\n\n每次调用都会输出结构化 JSON 日志，记录模型、路由、耗时、状态及是否触发回退；默认不记录提示词。项目还用单元和集成测试覆盖协议转换、流状态机、请求分类，以及“输出后禁止回退”等关键行为。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728682304,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0bfde2002bf554fb6983b3a0d96c5ed72d05915873fff22e41ac5e07f4a8a2ed",
+  "refs": {
+    "sessionId": "1783386430018_nee1o604"
+  },
+  "revisionId": "sha256:ffa8315fb1a5bae79ee3e4b41e2c01f41c45cdff874e50eba80921f1851503fd",
+  "schemaVersion": 1,
+  "updatedAt": 1789728682304
+}

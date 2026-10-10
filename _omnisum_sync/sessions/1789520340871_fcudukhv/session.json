@@ -1,0 +1,83 @@
+{
+  "createdAt": 1789520340871,
+  "entityType": "session",
+  "id": "1789520340871_fcudukhv",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在RTX 3090或3090 Ti上按QWEN_AMPERE.md构建SM86版本，并使用文中完整参数启动服务。",
+      "使用相同模型、上下文长度和采样设置，对比该分支、原版llama.cpp及可用的vLLM配置。",
+      "分别测试turbo3、q8_0和q5_1缓存方案，记录显存占用、最大上下文和每秒生成速度。"
+    ],
+    "archiveReason": "提供了面向Ampere显卡的明确推理优化组合、启动参数与性能目标，对单卡长上下文部署具有直接参考价值。",
+    "classifiedAt": 1789533557704,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "RTX 3090长上下文推理优化",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "llama",
+        "caption": "",
+        "height": 2500,
+        "id": "img-4",
+        "nearbyText": "llamAmpere (v0.3): this fork runs Qwen3.8-27B at up to 245K context on one RTX 3090 / 3090 Ti with the model's own MTP head: 99 tok/s on clean agentic and coding fixtures at temperature 1 (1.46x stock llama.cpp, 1.28x v0.2), 93 tok/s at 100...",
+        "resolvedUrl": "https://raw.githubusercontent.com/ggml-org/llama.brand/refs/heads/master/cover/llama-cpp/cover-llama-cpp-dark.svg",
+        "role": "article",
+        "score": 73,
+        "src": "https://raw.githubusercontent.com/ggml-org/llama.brand/refs/heads/master/cover/llama-cpp/cover-llama-cpp-dark.svg",
+        "width": 7500
+      }
+    ],
+    "knowledgePoints": [
+      "缩小MTP草稿词表可降低推测解码开销，并与精确p/q验证结合以保持采样分布正确性。",
+      "KV缓存采用q8_0 K与turbo3 V并配合融合注意力内核，可在显存容量和长上下文解码速度之间取得平衡。",
+      "不同V缓存格式对应不同上下文上限和内核支持条件，选择时需要同时考虑显存、速度与编译选项。"
+    ],
+    "oneHighValuePoint": "将MTP-3推测解码、精确p/q验证、64K草稿词表和量化KV缓存组合起来，在单张RTX 3090上兼顾超长上下文容量与生成速度。",
+    "oneLineReview": "技术方案具体且可复现性较强，但性能数据主要来自项目方自述，且优化高度依赖特定模型与Ampere硬件。",
+    "primaryCategory": "大模型推理优化",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留并结合目标硬件复现实测，重点查阅专项优化文档",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "本地AI部署",
+      "GPU性能工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该仓库是针对RTX 3090系列优化的llama.cpp分支，通过MTP推测解码、64K草稿词表、TurboQuant KV缓存及定制SM86内核，提高Qwen模型的单卡长上下文推理速度，并给出可运行配置。",
+    "tags": [
+      "llama.cpp",
+      "RTX 3090",
+      "推测解码",
+      "KV缓存",
+      "长上下文"
+    ],
+    "title": "JakeATX/llamAmpere: llama.cpp fork for significantly improved performance on Ampere (especially RTX 3090 / 3090 Ti): TurboQuant KV cache, MTP speculative decoding with a 64K draft-vocabulary shortlist, custom SM86 + Qwen kernels. 90 tok/s over a 100K-token generation at temperature 1.",
+    "totalScore": 70,
+    "url": "https://github.com/JakeATX/llamAmpere"
+  },
+  "payloadHash": "sha256:2b69b45d94f24b3a7bd40fadcaa3e07a55ff4ad3cad2ad5d3fa9aab1ef369125",
+  "refs": {},
+  "revisionId": "sha256:2c936ef802d53db6415434d9108b14dae8af54d63bfb1a1c7b9ecfc9d3df7d4d",
+  "schemaVersion": 1,
+  "updatedAt": 1790769296789
+}

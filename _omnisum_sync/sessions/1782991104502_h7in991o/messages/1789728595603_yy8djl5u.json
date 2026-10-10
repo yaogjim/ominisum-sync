@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728595603,
+  "entityType": "message",
+  "id": "1789728595603_yy8djl5u",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Agent Loops 会像提示工程一样，从热点变成默认能力\n\nDavid Pan 预测：如今备受关注的 **Agent Loops（让 AI 代理反复执行、检查并调整任务的循环机制）**，一年后可能不再是讨论焦点。并非它失去价值，而是它会被产品封装成开箱即用的基础能力，用户无需理解其内部机制。\n\n## 技术成熟后，关键能力会变得“不可见”\n\n这类似两年前的提示工程：当时如何编写 Prompt 直接影响 AI 效果，甚至形成专门课程；如今模型与交互方式进步后，多数用户只需像与普通人交流一样提出需求。\n\nAgent Loops 可能经历相同路径：当前需要主动设计循环、工具调用和纠错流程，未来这些机制将由 AI 产品自动完成。Cursor 也正大量投入长期运行的代理，但团队内部对“不断增加技能”是否是正确方向仍有争议，说明具体产品形态尚未定型。\n\n## 真正的优势是快速学习，也能快速放下\n\n作者认为，AI 领域的瓶颈持续迁移：今天掌握某项技术能带来显著收益，随后它很快就会成为标准配置，竞争焦点转向下一环节。\n\n因此，所谓“alpha”并非长期占有某种知识，而是能否快速理解新方法、投入实践并及时迭代；当能力被平台吸收后，也能放下旧经验，转向新的限制因素。对个人和团队而言，适应速度可能比囤积技巧更具持续价值。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728595603,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e0e36b754dff9f70bb198d5eac633cc866ca25260452e7ad2fc8ab73d0479c00",
+  "refs": {
+    "sessionId": "1782991104502_h7in991o"
+  },
+  "revisionId": "sha256:e1b53771ed4ab737666659961e57a0a184503271d80c71977bdf2441676091e3",
+  "schemaVersion": 1,
+  "updatedAt": 1789728595603
+}

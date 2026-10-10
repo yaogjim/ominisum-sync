@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695875263,
+  "entityType": "message",
+  "id": "1789695875262_ssesva4b",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nPi 是一个刻意保持极简、但几乎所有环节都可扩展的 AI 代理框架：既能改造成个性化编码助手，也能作为 SDK 嵌入正式产品。\n\n## 关键内容\n\n- Pi 默认只有 `bash、read、write、edit` 四个工具，不内置子代理或 MCP；但可通过 TypeScript 扩展添加工具、命令、模型、界面和生命周期钩子，并支持热重载。\n- 扩展可直接改变代理行为。例如自动注入 Git 状态、读取剪贴板，或在请求进入主代理前按权限策略拦截。作者还举例称，`pi-hypa` 清理 Bash 输出后可减少约 80%—98% 的无用 token。\n- Pi 不只是命令行工具，还提供模型调用、代理循环、会话管理、TUI 和编排等软件包。开发者可用少量代码创建无界面代理，再通过 WebSocket 包装成网页应用。\n- 用于多用户线上产品时，需自行处理数据库、用户隔离、工具沙箱和权限控制，不能直接照搬其默认的本地文件系统方案。\n\n## 通俗解读\n\nPi 更像“只有骨架、接口全部开放的代理底座”，而非功能齐全的成品。其吸引力在于可深度定制，代价是许多能力要自己组装。文中的 token 降幅属于作者引用的扩展案例，并非通用测试结论。**如果你准备开发或定制 AI 代理，值得细读代码示例；若只想使用现成助手，了解核心思路即可。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695875263,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:58ab78e80dac10248b9e9c1e9bd270b10627fa9f76fa3e50030cb8c4c639ce3a",
+  "refs": {
+    "sessionId": "1783556043563_sb8y04rh"
+  },
+  "revisionId": "sha256:f61e4b329aff72ac9faf6fb47745444cc9b885d54228c5c8456dec0ba61f2b81",
+  "schemaVersion": 1,
+  "updatedAt": 1789695875263
+}

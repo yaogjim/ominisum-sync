@@ -1,0 +1,66 @@
+{
+  "createdAt": 1783080126973,
+  "entityType": "session",
+  "id": "1783080126973_6lpjn30j",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "核验文中提到的 OpenAI 与 Anthropic System Card 原文及相关数据是否真实存在。",
+      "在AI应用中增加第三方校验、权限边界、操作日志和高风险任务人工确认机制。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783080179840,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "大模型运行时安全转向",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "大模型在复杂任务中可能出现越权、虚假完成、隐藏真实意图等运行时风险。",
+      "Runtime Safety 强调在推理、权限、审计和降级环节建立动态防护，而不是仅依赖离线RLHF。",
+      "思维链不一定是可靠审计依据，模型可能学会在可见推理中进行策略性表达。"
+    ],
+    "oneHighValuePoint": "应用开发者不应只依赖模型厂商的训练对齐，而应在自身工作流中加入运行时审查、权限控制和可审计日志。",
+    "oneLineReview": "有一定启发的AI安全趋势判断，但事实可信度和证据质量不足，不宜直接采信。",
+    "primaryCategory": "AI安全",
+    "rating": "C",
+    "rejectReason": "文章主要是二手概述和观点串联，关键报告、模型版本和数据缺乏可核验出处，存在较高AI生成或夸张转述风险。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "大模型工程",
+      "运行时治理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为大模型安全正在从离线对齐转向运行时管理，强调激活分类器、安全网关、第三方审查和不可篡改日志等工程措施，但证据链薄弱，需核验原始报告。",
+    "tags": [
+      "Runtime Safety",
+      "AI对齐",
+      "模型欺骗",
+      "思维链审计",
+      "安全网关"
+    ],
+    "title": "鸭哥: 前沿大模型越来越聪明，但也越来越擅长在无人看管时蒙混过关",
+    "totalScore": 52,
+    "url": "https://x.com/grapeot/status/2071248758101471482"
+  },
+  "payloadHash": "sha256:b4698d8357c154e08774b2f3ae6230e0fd1838b3b50ac07d6a4c0410a836bc3b",
+  "refs": {},
+  "revisionId": "sha256:df917a82ed3e7b2516b9fa84b5f1102f21fe20313f5c5edb06eb9122de603be1",
+  "schemaVersion": 1,
+  "updatedAt": 1784801325519
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782989518515,
+  "entityType": "message",
+  "id": "1782989518514_w2x8xcpi",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: OpenWiki代码文档代理发布\n\n**评级**: B (55.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: 代码文档, 智能体工作流\n**标签**: #OpenWiki #代码仓库文档 #AI Agent #CLI #GitHub Action\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一个值得试用的AI代码文档工具发布信息，但目前更像产品公告而非深度方法论文章。\n**核心高价值点**: 将大型仓库文档外置为可检索 Wiki，并在代理指令文件中只保留引用，避免上下文膨胀。\n\n### 摘要\n文章介绍 OpenWiki，一个用于为代码仓库生成和维护 Wiki 文档的开源代理与 CLI。它可连接 AGENTS.md、CLAUDE.md 等代理指令文件，并支持模型提供商配置、LangSmith 追踪和 GitHub Action 更新。\n\n### 知识要点\n- 代码代理需要稳定、结构化、可更新的仓库上下文才能减少错误修改\n- AGENTS.md 或 CLAUDE.md 更适合作为上下文入口，而不是承载完整文档\n- OpenWiki 可通过 CLI 初始化仓库文档，并支持多种模型提供商\n- 通过 GitHub Action 定期更新文档，可降低文档过时风险\n\n### 行动项\n- 在一个非核心代码仓库中安装并运行 openwiki --init 进行试用\n- 检查生成的 Wiki 是否准确覆盖关键模块、调用关系和开发约定\n- 评估其与现有 AGENTS.md、CLAUDE.md 或编码代理工作流的集成效果\n- 对比人工维护文档、DeepWiki、AutoWiki 等方案的成本和质量\n\n### 存档判定\n归档: 是 — 原因: 提供了一个可尝试的开源代码库文档代理工具，适合后续评估是否纳入AI编码工作流\n不推荐: 内容偏产品发布和功能介绍，缺少实测效果、对比数据和复杂场景案例，证据支撑较弱\n删除: 否\n留存决策: 短期参考后视使用效果决定是否长期保留",
+    "role": "assistant",
+    "timestamp": 1782989518515,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:8a4f9b46b6dfe5e57fc2917596a4213ac62e178e9ab5cdbbfca039caa994dcdc",
+  "refs": {
+    "sessionId": "1782985458032_2xmdao13"
+  },
+  "revisionId": "sha256:d003dfa1c6c6c2543ffe5892f7ef5607ec0a4dda6e1bdd51c962e0fb190b6efd",
+  "schemaVersion": 1,
+  "updatedAt": 1782989518515
+}

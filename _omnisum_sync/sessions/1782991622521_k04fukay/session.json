@@ -1,0 +1,70 @@
+{
+  "createdAt": 1782991622521,
+  "entityType": "session",
+  "id": "1782991622521_k04fukay",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将文中的 Design Doc 结构整理成团队模板",
+      "在超过三个月、跨团队或高风险项目启动前强制进行设计文档评审",
+      "为当前项目补充目标、非目标、SLO、监控告警和开放问题部分",
+      "在文档中区分高代价决策与低代价实现细节，避免无效评审消耗"
+    ],
+    "archiveReason": "包含较完整的 Design Doc 结构框架、适用场景判断标准和评审要点，具备复用价值",
+    "classifiedAt": 1783038652283,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "软件设计文档写作框架",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "复杂、高风险、跨团队、长期运行或需求模糊的项目更值得编写 Design Doc",
+      "Design Doc 应重点记录高代价、难回滚的决策，而非低成本可修改的细节",
+      "标准设计文档可包括目标、背景、非目标、场景、图表、约束、SLO、监控告警、时间线、开放问题和被否定方案",
+      "开放问题应记录问题、可选方案和下一步，并在解决后保留决策历史",
+      "图表是降低设计沟通成本的重要工具，应使用可维护的绘图工具"
+    ],
+    "oneHighValuePoint": "判断某个设计决策是否应写入文档的核心标准是“错误的代价有多高”。",
+    "oneLineReview": "一份实用的 Design Doc 写作清单，虽非原创深度内容，但对工程协作和架构设计很有参考价值。",
+    "primaryCategory": "软件工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，可作为编写软件设计文档前的检查清单使用",
+    "secondaryCategories": [
+      "架构设计",
+      "技术写作"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结了软件设计文档的适用场景、投入尺度、内容边界和标准组成部分，强调通过目标、背景、约束、SLO、开放问题等模块提前澄清关键决策，降低长期开发风险。",
+    "tags": [
+      "DesignDoc",
+      "软件架构",
+      "工程协作",
+      "技术文档",
+      "需求澄清"
+    ],
+    "title": "yibie: 推荐这篇文章，作者在 Google 和 Microsoft 都写过 design doc，他认为好的设计文档可以节省你数年的开发时间",
+    "totalScore": 72,
+    "url": "https://x.com/yibie/status/2071614148686053750"
+  },
+  "payloadHash": "sha256:7c62b16b93c591f90ddcb0324051b418f26651d901c139f32ca53a2316638581",
+  "refs": {},
+  "revisionId": "sha256:4771301b957c3e3359dfbaa2d6b0acaac71535f7e3994286842736b950e147e4",
+  "schemaVersion": 1,
+  "updatedAt": 1789695675768
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694264981,
+  "entityType": "message",
+  "id": "1789694264981_51h4fcu9",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者认为，长周期 Agent（跨时间持续工作）与多 Agent 协作本质上都是**状态交接问题**；可靠协作不能只靠摘要或对话，而要依赖可共同操作、验证的“计算工作区”。\n\n## 关键内容\n\n- 长周期 Agent 可看作多个 Agent 实例前后接力，多 Agent 则是多个实例并行协作；两者都要跨越上下文或 Agent 边界，保持状态连续、一致。\n- `summary.md`、聊天记录等只能传递文字，难以完整保留设计原因、被放弃的方案和不可违反的约束。作者主张以真实工作区为交接对象，如代码仓库、依赖关系、测试结果和部署状态。\n- 工作区不仅要保存数据，还应明确系统现状、规则、优化目标、取舍顺序、停止条件及验证反馈，让后续 Agent 能重新检查现实，而不是照信前一个 Agent 的判断。\n- 因此，多 Agent 的重点不应只是增加角色和消息流，而是建设多个 Agent 可共同修改和验证的“计算世界”。\n\n## 通俗解读\n\n就像换班不能只留一句“项目已优化”，还要留下代码、测试、限制和验收标准，否则接班者很可能误判进度。文章的统一视角清楚、有启发，**值得快速细读其工作区框架**；但它主要是架构观点与概念论证，并未提供实验数据证明这是唯一或最佳方案。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694264981,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f3fbd49cb988a2235f33e6ec3eee68cd4d0e2b302b20d74bae98b91f719ab792",
+  "refs": {
+    "sessionId": "1785839847176_8uwxyot6"
+  },
+  "revisionId": "sha256:e5b9dbe93fa0e4cce50dec666b2054b504c194638cf35256055b202e33f93e1b",
+  "schemaVersion": 1,
+  "updatedAt": 1789694264981
+}

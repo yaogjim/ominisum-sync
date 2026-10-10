@@ -1,0 +1,67 @@
+{
+  "createdAt": 1791593588921,
+  "entityType": "session",
+  "id": "1791593588921_hawtsnzx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "参考案例梳理表单提交后未预约线索的跟进链路，明确自动呼叫与转入律师预约的触发条件。",
+      "针对目标法律服务列出资格筛选问题和预约门槛，避免不合格线索直接占用律师咨询时间。",
+      "在语音代理原型中接入通话记录与CRM，测试语速和脚本版本，并比较不同客户群体的回应。"
+    ],
+    "archiveReason": "包含从表单获客、多级跟进、语音筛选到律师预约和CRM记录的可复用流程，与AI Agent开发和法律服务交付直接相关。",
+    "classifiedAt": 1791594682796,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI语音代理筛选与跟进法律服务线索",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "案例采用表单进入、多级机器人跟进、语音呼叫和律师预约的串联流程，处理未主动预约的线索。",
+      "语音筛选围绕护照所属国家、投资预算和搬迁时间展开，并用预算条件排除不适合进入律师日程的客户。",
+      "案例将通话记录推送至CRM，并对脚本和口音进行A/B测试，使跟进过程可回溯并支持迭代。"
+    ],
+    "oneHighValuePoint": "把未预约线索接入自动跟进与语音资格筛选，再将合格客户安排给律师，将专业人员时间集中于更有价值的咨询。",
+    "oneLineReview": "法律服务线索自动化的流程具有参考价值，但实现细节、完整成本和收益验证不足，更适合作为原型思路而非成熟方案。",
+    "primaryCategory": "AI Agent应用",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性保留业务流程与工具组合，作为原型设计参考，不作为效果或成本依据",
+    "secondaryCategories": [
+      "法律科技",
+      "客户转化自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍一位创始人用Netlify、ElevenLabs、Twilio和Attio搭建语音代理，自动跟进网站线索、询问资格并预约律师，同时记录通话和测试脚本。节省工时与成本的说法缺少可核验证据。",
+    "tags": [
+      "AI语音代理",
+      "线索资格筛选",
+      "CRM集成",
+      "声音克隆",
+      "律师预约"
+    ],
+    "title": "Alex Lieberman: This founder built an AI voice agent that qualifies &amp; calls every new lead i…",
+    "totalScore": 69,
+    "url": "https://x.com/businessbarista/status/2107992545158406521"
+  },
+  "payloadHash": "sha256:f7c59dabaf990ee01be6ca5ceabdca1f6240646e22cfd23dc25e75c874256166",
+  "refs": {},
+  "revisionId": "sha256:9f1e6b79be0c97faad73d35362ef8b9352863f9f6f499b62989a98abae7ee986",
+  "schemaVersion": 1,
+  "updatedAt": 1791594683089
+}

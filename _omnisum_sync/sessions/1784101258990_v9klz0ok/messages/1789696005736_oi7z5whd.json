@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696005736,
+  "entityType": "message",
+  "id": "1789696005736_oi7z5whd",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章认为，训练 AI 智能体的关键瓶颈已从强化学习算法转向“如何评分”；RULER 用大模型依据系统提示比较多个回答，把自然语言规则直接变成训练奖励。\n\n## 关键内容\n\n- 传统 RLHF 需奖励模型、价值模型等多个大模型，训练成本高；DeepSeek R1 使用 **GRPO＋可验证奖励**，通过答案对错和组内比较简化了流程。\n- 数学、代码容易自动验真，但客服、RAG、摘要等任务没有唯一答案；手写奖励函数既费时又脆弱，规则稍有偏差就可能奖励幻觉等错误行为。\n- RULER 同时把同一任务的 4—8 条回答交给“裁判模型”，让它按照系统提示进行相对排名，再由 GRPO 强化高分行为。系统提示变化时，评分标准也可随之调整。\n- 确定性任务仍适合廉价验证器；主观或多维任务可用 RULER，也可把两者组合。\n\n## 通俗解读\n\n它不是让系统提示直接充当数学公式，而是让另一个大模型把提示中的“准确、简洁、不得编造”等要求转成分数。优点是省去大量评分代码；局限是奖励质量取决于裁判模型，不能保证绝对客观。**值得细读**：适合想了解 GRPO、智能体强化学习或 RULER 实现的人；若只关心趋势，读到核心机制即可。OpenAI“通用验证器”的细节尚未公开，文中相关判断主要是作者概括。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696005736,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:562612c1ea7ed81ff3085cd4dcba8aa321ec34d0e9858aa0b4d1611970c99419",
+  "refs": {
+    "sessionId": "1784101258990_v9klz0ok"
+  },
+  "revisionId": "sha256:f987f2c04cb8d3b6767f652bc8226b93e7049046cebcab137cedfba64d871a16",
+  "schemaVersion": 1,
+  "updatedAt": 1789696005736
+}

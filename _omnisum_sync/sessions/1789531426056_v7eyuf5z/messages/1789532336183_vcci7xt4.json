@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789532256648,
+  "entityType": "message",
+  "id": "1789532336183_vcci7xt4",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n苹果提出“Apple Reference Image”：通过传感器签名、安全时间戳和隐私云处理，证明一张照片确由特定型号 iPhone 的真实传感器在某段时间内拍摄，而非后期伪造。\n\n## 关键内容\n\n- 文章称，该功能将在 **iPhone 18 Pro/Pro Max** 主摄上提供，需用户主动开启；传感器拍摄后立即签名原始像素，降低系统被破解或数据被替换的风险。\n- 原始数据随后交由 **Private Cloud Compute（私有云计算）**生成可查看的 JPEG；苹果称处理代码可公开核验，且包括苹果在内的任何人都无法查看图像内容。\n- 系统用前后两个加密时间戳限定拍摄时间，并采用抗量子组合签名；若某个传感器后来被发现遭入侵，可撤销相关照片。\n- 最终图片不公开摄影者或设备身份，也不让外界判断两张照片是否来自同一设备。\n\n## 通俗解读\n\n它证明的是“这些像素确实来自真实传感器，并按公开流程处理”，**不等于证明照片中的事件背景、人物说法或拍摄者解释都真实**。比如它能证明现场确实拍到了烟雾，却不能单凭照片证明烟雾由谁造成。\n\n**是否值得细读：**想了解新闻取证、摄影溯源或安全架构，值得阅读技术部分；普通用户掌握上述结论即可。文中产品与功能均为苹果的自述，所给内容未提供独立验证。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789532256648,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9ecea8e87a241980e09a43f7eab6cc6e971e8cf6f5286e2b3d9ef9d9d69f3ba8",
+  "refs": {
+    "sessionId": "1789531426056_v7eyuf5z"
+  },
+  "revisionId": "sha256:0c34549625a956663a4191dc4ad90e6aef424d0117bc600b43cbe73439d8e0da",
+  "schemaVersion": 1,
+  "updatedAt": 1789532256648
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728037411,
+  "entityType": "message",
+  "id": "1789728037411_eh1p2uv3",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Qwen 3.6 的三项关键变化：长上下文、门控注意力与更快解码\n\n文章回顾了一场 Qwen 3.6 技术研讨会：通过手工追踪单个 token，拆解仍在快速演进的三类机制——位置编码、门控注意力和解码加速。核心目的不是罗列缩写，而是理解模型上下文长度、注意力结构和生成速度究竟由什么技术支撑。\n\n## RoPE 与 YaRN 将上下文扩展到更长范围\n\nRoPE（旋转位置编码）通过按照 token 所在位置旋转 Query 和 Key 向量，让注意力机制感知词序。在此基础上，YaRN 对位置尺度进行扩展，可将模型已经训练好的上下文窗口拉长至 256K，甚至 1M token，而不必重新训练整个模型。研讨会也对比了无位置编码、线性编码和正弦编码等方案。\n\n## 门控注意力让模型学习控制信息流\n\nQwen 在注意力路径中加入可学习的“门”，用于调节注意力输出。讲者通过对比启用和关闭门控后的结果，说明它相较普通 GQA（分组查询注意力）或 MLA（多头潜在注意力）带来的实际变化。重点在于：模型不仅计算注意力，还能学习决定这些结果应以多大程度传递下去。\n\n## 两种方案提升生成速度\n\n- **推测解码**：由较小的草稿模型先提出多个候选 token，再由主模型并行验证，以减少逐个生成的等待。\n- **多 token 预测**：模型一次预测多个 token，而非严格一次只生成一个。\n\n文章认为，理解这些计算过程后，读者便能更准确地判断模型规格中的超长上下文、注意力变体和解码速度分别依赖什么机制。完整录像与 Excel 练习册目前限时免费开放。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728037411,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:51bbd2d191f9b13cf1417427ce9213ef4cdeeda689df87ed2518d545949e1ede",
+  "refs": {
+    "sessionId": "1786943254383_ox23vyro"
+  },
+  "revisionId": "sha256:d972dd31a5bd611b9ba70e1183625ed4417f4382eeb0f95382af95db30e9b6b5",
+  "schemaVersion": 1,
+  "updatedAt": 1789728037411
+}

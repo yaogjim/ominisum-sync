@@ -1,0 +1,23 @@
+{
+  "createdAt": 1783922812672,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1783922812672",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 《视频动效系统》总结\n\n## 1. 核心定位\n\n这是一个开源的视频动效模板系统，项目名为**hyperframes-motion-library**。\n\n它的核心价值是：  \n**把视频动效从 “一次性手工制作”，变成 “可复用、可配置、可自动扩展的模板库”。**\n\n用户可以克隆项目，在本地修改文案、数据、颜色等参数，快速生成视频动效；也可以让 AI Agent 按既定规范继续新增模板。\n\n---\n\n## 2. 适合谁使用\n\n## 视频创作者\n\n适合需要频繁制作信息图、数据展示、短视频包装、动态标题等内容的人。\n\n## 产品 / 运营 / 增长团队\n\n适合把数据、指标、观点包装成更有传播力的视频素材。\n\n## AI Agent 使用者\n\n适合希望让 Agent 自动扩展模板、批量生成视频、建立个人或团队动效资产库的人。\n\n---\n\n## 3. 使用方式\n\n## Agent 自动安装\n\n作者推荐直接把安装指令交给自己的 Agent，让它完成：\n\n1. 克隆 GitHub 仓库  \n2. 安装依赖  \n3. 启动本地服务  \n4. 返回本地访问地址  \n5. 遇到 Node、npm、Chrome、FFmpeg、端口问题时先提示解决方案  \n\n这降低了非技术用户的上手门槛。\n\n## 手动安装\n\n熟悉命令行的用户可以自己执行：\n\n```bash\ngit clone https://github.com/nutllwhy/hyperframes-motion-library.git\ncd hyperframes-motion-library\nnpm install\n```\n\n启动本地服务：\n\n```bash\nnpm run dev\n```\n\n渲染视频示例：\n\n```bash\nnpm run render -- metric-pulse templates/metric-pulse/presets/default.json\n```\n\n---\n\n## 4. 工作流逻辑\n\n## 本地预览与渲染\n\n项目启动后，可以在本地：\n\n- 修改模板参数\n- 预览动效效果\n- 生成最终视频\n\n视频渲染会调用本机的**Chrome / FFmpeg**，因此算力成本由用户自己的电脑承担。\n\n## 模板化生产\n\n每个动效模板都有固定结构，包括：\n\n- `index.html`\n- `design.md`\n- `meta.json`\n- `presets/default.json`\n- `package.json`\n\n通过统一规范，模板可以被复用、检查、展示和渲染。\n\n---\n\n## 5. AI Agent 如何扩展模板\n\n用户可以把整个项目文件夹交给 Agent，让它先阅读：\n\n- `README.md`：理解项目如何运行\n- `SYSTEM.md`：理解模板规范\n- `templates/`：参考已有模板结构\n- `catalog.json`：注册新模板到展示站\n\n新增模板时，Agent 需要：\n\n1. 按目录规范创建模板文件  \n2. 使用`data-composition-variables`暴露可编辑参数  \n3. 保持默认黑色背景 + 橙色强调色  \n4. 先完成静态布局，再加入 GSAP 动画  \n5. 更新`catalog.json`  \n6. 运行`npm run check`做检查  \n7. 不破坏已有模板和预设  \n\n---\n\n## 6. 产品价值\n\n## 从工具到系统\n\n这不是单个动效文件，而是一套可持续生长的**视频动效生产系统**。\n\n它把创作流程拆成：\n\n- 模板设计\n- 参数配置\n- 本地预览\n- 自动渲染\n- Agent 扩展\n\n从而提升视频内容生产效率。\n\n## 从人肉制作到 Agent 协作\n\n项目的亮点在于，它天然适合与 AI Agent 协作。  \n用户不只是 “使用模板”，还可以让 Agent 按规范不断生成新模板，逐步形成自己的专属动效库。\n\n---\n\n## 7. 一句话总结\n\n**这是一个开源的视频动效模板库，支持本地预览和渲染，也支持 AI Agent 按规范持续扩展，适合把视频动效生产流程产品化、自动化和资产化。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1783922812672,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:37d4dbdbf4ad473ac3b37d9768f4a3723008ea468ed56aaef762fcd10d5df21f",
+  "refs": {
+    "sessionId": "1783922812719_nth0zsjc"
+  },
+  "revisionId": "sha256:177365bccc22c484960d3ad392ebaa2851b557260adb601f73ada6502e0889e0",
+  "schemaVersion": 1,
+  "updatedAt": 1783922812672
+}

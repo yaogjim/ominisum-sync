@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693844409,
+  "entityType": "message",
+  "id": "1789693844408_6nu6rh3l",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一个针对 NVIDIA Ampere 显卡、尤其 RTX 3090/3090 Ti 优化的 `llama.cpp` 分支，作者称单卡运行 Qwen3.8-27B 时可兼顾超长上下文与更高生成速度。\n\n## 关键内容\n\n- 作者实测：在特定模型、量化文件和参数下，干净的编程/智能体测试可达 **99 token/s**，约为原版 `llama.cpp` 的 **1.46 倍**；KV 缓存深度达到 100K 时仍约 **93 token/s**。这些是项目方数据，并非独立评测。\n- 单张 24GB 的 3090/3090 Ti 最多可配置约 **245K 上下文**；若改用其他 KV 缓存格式，上下文容量与速度会有所变化。\n- 加速主要来自三项技术：利用模型 MTP 头一次预测多个 token、将草稿候选词表缩小到 65,536 个，以及为 SM86/Qwen 定制计算核心和压缩 KV 缓存。\n- 项目还可加载上游 `llama.cpp` 暂不支持其 MTP 头的 Agnes 3.0 Flash。\n\n## 通俗解读\n\n“推测解码”相当于先快速草拟几个词，再由主模型逐一核验；猜对越多，生成越快，同时其“精确校验”旨在保持与正常采样一致。项目优势高度依赖指定硬件、模型和复杂编译参数：**若你正用 3090 系列单卡部署 Qwen3.8-27B，值得细读配置文档；普通用户或其他显卡用户参考价值有限。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693844409,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:12419952b62daddded6f85e6a47f6f0ca64f3adb2d6ffbc5aab76ab3eedec9e6",
+  "refs": {
+    "sessionId": "1789520340871_fcudukhv"
+  },
+  "revisionId": "sha256:7a43e18ed034349ef41e77c658afb692d6e7119f4576c5b1dc02147615838ae5",
+  "schemaVersion": 1,
+  "updatedAt": 1789693844409
+}

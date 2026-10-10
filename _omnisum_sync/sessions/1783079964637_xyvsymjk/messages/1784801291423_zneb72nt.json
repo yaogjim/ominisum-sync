@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784801291423,
+  "entityType": "message",
+  "id": "1784801291423_zneb72nt",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 主旨概括\n\n作者认为，程序员未来的核心工作将从亲自“做需求”转向构建和使用 **Agent**，把个人能力沉淀为可复用、自动执行任务的系统。对于想开发代码 Agent 或桌面 Agent 的人，他建议直接基于 **Pi** 或 **Craft** 二次开发，而不是从零起步。\n\n## 1. 编程工作正在转向“做 Agent”\n\n- 作者建议尚未体验过 **Pi** 或 **Craft Agent** 的开发者尽快尝试，以直观感受 Agent 带来的开发方式变化。\n- 在他看来，未来程序员不再主要负责逐项实现需求，而是：\n  1. 将需求描述清楚；\n  2. 把自己的经验和能力“蒸馏”进 Agent；\n  3. 让 Agent 自动完成后续工作。\n- 换言之，开发者的价值将更多体现在**业务理解、任务设计和 Agent 定制**上。\n\n## 2. 不同产品应选择不同的开源基座\n\n### 开发代码 Agent：从 Pi 起步\n\n- **Pi** 是开源 Coding Agent，可类比 **Claude Code**。\n- 作者认为它的可扩展性较好，适合接入现有业务。\n- 相比从零开发，基于 Pi 构建能节省大量时间。\n\n### 开发桌面 Agent：从 Craft 起步\n\n- **Craft** 是较完整的开源 Agent，可类比 **Claude Cowork / Codex Desktop** 一类产品。\n- 它基于 **Pi Agent** 和 **Claude Agent**，功能与覆盖面相对完整。\n- 如果目标是开发桌面端智能工作助手，Craft 是更直接的起点。\n\n## 3. 项目太复杂时，可以主动裁剪\n\n- 不必完整保留 Craft 的所有组件，可根据实际业务删除不需要的部分。\n- 例如，作者提到可以精简：\n  - **Claude Agent SDK**\n  - **messaging-gateway**\n- 裁剪之后，可以留下最核心的 Agent 能力，降低集成与维护成本。\n\n## 4. 实践案例：基于 Craft 二次开发 Echo\n\n- 作者已基于上述方案开发了新产品 **Echo**。\n- Echo 接入了**技能市场**，整体使用流程顺滑。\n- 它目前充当作者的“独立开发搭子”，后续的：\n  - 产品开发\n  - 日常运营\n  - 工作流程执行  \n  都计划在 Echo 上完成。\n\n## 5. 作者推荐的技术组合\n\n作者列出了当前实践效果较好的 4 项工具：\n\n1. **Pi**：开源 Coding Agent，可理解为 Claude Code。\n2. **Craft**：开源通用 Agent，可理解为 Claude Cowork。\n3. **Cloudflare**：拥有许多实用但尚未被充分发现的服务。\n4. **TanStack**：作者认为它是比 Next.js 更好、更快的全栈框架。\n\n作者认为，将这几项技术结合起来，可以显著提升独立开发和产品构建效率。\n\n## 6. 评论区的主要讨论\n\n- 有人指出，复杂业务中，**把需求说清楚本身就需要大量精力**。未来开发者仍必须深入理解业务，不同领域会产生不同的定制 Agent，例如编程、教育和医疗 Agent。\n- 也有人认为，基础 Agent 层已有大量大厂投入，普通企业很难正面竞争，更现实的机会可能在 Agent 之上的应用层。\n- 作者回应称，普通企业没有必要与大厂竞争底层模型或通用 Agent，而应：\n  - 基于开源 Agent；\n  - 结合自身业务；\n  - 搭建定制化 Agent；\n  - 利用 AI 提升效率。\n- 另有开发者原本打算用 **Claude Agent SDK + Electron** 自行搭建，看到 Pi 与 Craft 后认为可以少走很多弯路。\n- 关于 Echo 是否开放，作者表示目前仍在边用边开发，未来可能开放，但尚未确定。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784801291423,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e844fa9d6d13dd796b23f0ac992b5d9f6b2e708f211868a230a08ea59a8a6937",
+  "refs": {
+    "sessionId": "1783079964637_xyvsymjk"
+  },
+  "revisionId": "sha256:dd7f29bebd0f26b770427e99181167f5154a8eff30957149d336353d5f2f9d7f",
+  "schemaVersion": 1,
+  "updatedAt": 1784801291423
+}

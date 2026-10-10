@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729497291,
+  "entityType": "message",
+  "id": "1789729497291_3jexv3w1",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Loop Engineering：让 AI 在反馈循环中持续交付\n\n文章将 Loop Engineering 概括为：不再期待 AI 靠一次提示完成任务，而是为其建立“执行—验证—修正”的闭环，让 AI 像工程师一样持续返工，直到结果满足要求。吴恩达进一步指出，AI 编码只是软件开发三层循环中的最内层。\n\n## Spec 与 Eval 让 AI 能自我纠错\n\n在 **Coding Loop（编码循环）** 中，开发者提供需求说明（Spec）和评测标准（Eval），AI Agent 自动完成“写代码—运行测试—发现问题—修改—再测试”。关键变化是：除了说明“要做什么”，还要预先定义“什么算成功”以及“如何自动判断成功”。\n\n## 人负责校准需求，AI 负责快速实现\n\n第二层是 **Developer Feedback Loop（开发者反馈循环）**。初始需求往往并不完整，只有看到并使用成品后，开发者才会发现真正想要什么，进而修改 Spec；若 Agent 反复在某类场景犯错，则把这些问题沉淀为 Eval，防止复发。\n\n吴恩达认为，这一层很难完全自动化。人的优势不只是“品味”，更是掌握模型缺失的上下文，例如用户是谁、真实场景是什么、痛点在哪里。按钮如何实现可交给 AI，但产品应当长什么样仍需人判断。\n\n## 真实世界反馈决定产品方向\n\n最外层循环来自用户反馈、数据和竞品研究，用于判断功能是否必要、痛点是否真实，乃至方向是否错误。新的认知会更新到 Spec，再进入开发与编码循环。\n\n其意义在于：AI 让实现循环大幅提速，但产品竞争力越来越取决于能否建立持续观察、验证、修正并沉淀知识的系统，而非一次性写出“完美 Prompt”。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729497291,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:995b95bfeed35b5d49b6bfe033f88930a0e00ba29492881ac841a220ed1212c0",
+  "refs": {
+    "sessionId": "1782985553335_dq8zmb1f"
+  },
+  "revisionId": "sha256:c8da0b3f783fb10c6bae7c410abdb225a8917513f86406afb533827807b28477",
+  "schemaVersion": 1,
+  "updatedAt": 1789729497291
+}

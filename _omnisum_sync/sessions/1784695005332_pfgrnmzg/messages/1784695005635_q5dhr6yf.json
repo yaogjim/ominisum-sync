@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784694950347,
+  "entityType": "message",
+  "id": "1784695005635_q5dhr6yf",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 文章主旨\n\n单 Agent 更适合简单、上下文紧密的任务；多 Agent 则适合可拆成独立模块的大型任务，但会额外产生上下文传递、重复劳动、结果验证和流程编排等成本。作者为此开发了 **pi-workflow**，用 JSON 将多 Agent 协作标准化为可复用、可验证的工作流。\n\n## 一、什么时候使用单 Agent\n\n适合以下场景：\n\n- 任务简单、规模较小；\n- 工作高度依赖连续、密集的上下文；\n- 一个 Agent 能掌握全部关键信息，并连贯地完成任务。\n\n核心判断标准是：\n\n> 如果一个 Agent 能持有相关上下文并一致地完成任务，通常没有必要拆成多个 Agent。\n\n换言之，拆分本身不是目的；对于上下文耦合度高的任务，多 Agent 反而可能增加沟通和整合成本。\n\n## 二、什么时候使用多 Agent\n\n多 Agent 更适合能明确拆分、彼此相对独立的大型工作，例如：\n\n- 子任务独立于主任务上下文；\n- 需要阅读大量文件；\n- 需要进行广泛探索；\n- 大型研究可以拆成多个互不依赖的部分。\n\n例如，可让不同 Agent 分别研究不同技术方案、阅读不同文件或完成不同模块，最后再统一汇总。\n\n## 三、多 Agent 的四项实际成本\n\n1. **上下文转移**  \n   一个 Agent 不会自动知道另一个 Agent 掌握了什么，关键信息必须显式传递。\n\n2. **重复工作**  \n   如果任务边界不清楚，不同 Agent 可能做相同或相似的事情。\n\n3. **事实验证**  \n   不能直接信任子 Agent 的输出，需要设置审核、测试或交叉验证环节。\n\n4. **流程编排**  \n   必须有人或系统决定：谁负责什么、执行顺序如何、结果怎样合并。\n\n因此，虽然大模型足够聪明，可以让多个子 Agent 产出有用结果，但要解决这些协作问题，仍需要人工介入，或使用成熟的 **harness（执行与编排框架）**。热门回复还补充指出，多 Agent 会增加**分布式决策**带来的复杂性，这也是设计系统时需要考虑的隐性成本。\n\n## 四、pi-workflow：标准化多 Agent 工作流\n\n作者开发了开源工具 [pi-workflow](https://github.com/AgwaB/pi-workflow)，使用声明式 **JSON 工作流规范**描述整个流程，包括：\n\n- 何时拆分任务；\n- 如何分配 Agent 角色；\n- 在哪些环节验证结果；\n- 如何将各部分重新组合。\n\n它把常见的子 Agent 协作模式抽象为不同的阶段类型，再组合成完整流水线，并提供辅助编写工作流的 skill。\n\n主要特点包括：\n\n- **可复用**：同一套流程可以反复执行；\n- **可验证**：能够检查 Agent 实际完成了哪些工作；\n- **可扩展**：需求或流程变化时可以调整；\n- **可视化**：图形界面展示每个阶段及每个 Agent 的状态。\n\n示例流程为：\n\n```text\nplan specs\n→ orchestrate\n→ build\n→ review and fix\n→ review paths\n→ combine\n```\n\n即从制定规格、任务编排和执行构建，到审核修正、检查不同路径，最终合并结果。\n\n## 五、文章的整体结论\n\n这套实践与 Harrison Chase 提出的“让多个 Agent 分别读写、再统一组合”的思路基本一致，但 **pi-workflow 提供了一个可以直接使用的工程实现**。\n\n选择单 Agent 还是多 Agent，关键不在于 Agent 数量，而在于：\n\n- 任务能否自然拆分；\n- 子任务是否相对独立；\n- 多 Agent 带来的收益，是否足以覆盖信息传递、验证和编排成本。\n\n## 六、相关社区资源\n\n热门回复还推荐了几项 Pi 学习资料：\n\n- **Pi-Agent 教程**：共 **10 章**，拆解 Agent Loop、工具系统、消息系统、事件驱动、会话管理和上下文工程；每章从“概念、源码、设计原因”三个层次讲解，并提供 Web、Markdown 和 PDF 三种版本。\n- **《动手学 Pi》**：通过 **15 个 checkpoint**，带读者完整理解 Agent 的运行链路。\n- 有用户分享，借助相关 skill 和成本较低的 DeepSeek Flash 模型，也能较深入地还原 TypeScript Agent 的源码逻辑。\n\n**相关链接：**\n\n- [pi-workflow GitHub](https://github.com/AgwaB/pi-workflow)\n- [Reddit：Multi-Agent vs Single-Agent 讨论](https://reddit.com/r/PiCodingAgent/comments/1uw5b2x/multiagent_vs_singleagent)",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784694950347,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b5045c722dd1845c3f538b4103bb3786aca82998bf9db74ffb13740d20799f98",
+  "refs": {
+    "sessionId": "1784695005332_pfgrnmzg"
+  },
+  "revisionId": "sha256:be6e3f2e622a8b63007cb80908f90556756360869793d1a3ca7bd4d5c7169443",
+  "schemaVersion": 1,
+  "updatedAt": 1784694950347
+}

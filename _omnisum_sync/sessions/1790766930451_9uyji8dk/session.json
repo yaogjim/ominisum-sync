@@ -1,0 +1,67 @@
+{
+  "createdAt": 1790766930451,
+  "entityType": "session",
+  "id": "1790766930451_9uyji8dk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为自身服务定义明确的需求触发信号，例如目标创始人宣布发布相关产品，并保留触发帖作为线索上下文。",
+      "搭建规则过滤、公司信息补全、单问题AI判断、通过后查询决策人邮箱的分阶段流程。",
+      "让Agent基于触发帖子起草外联内容，由人工审核后发送。"
+    ],
+    "archiveReason": "包含可复用的信号发现、规则过滤、信息补全、AI判断与联系人查询流程，适合参考设计获客Agent。",
+    "classifiedAt": 1790766975535,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "使用Treg构建信号驱动外联引擎",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "信号驱动外联不仅判断客户是否匹配，还利用近期事件识别需求时机，并为开场内容提供上下文。",
+      "将规则过滤、信息补全、AI判断和联系人查询分层，能够避免对明显不合格线索进行后续付费处理。",
+      "外联Agent可以负责发现、筛选与起草，而将最终审核和发送保留给人工。"
+    ],
+    "oneHighValuePoint": "将付费联系人查询放在线索筛选之后，并保留触发线索的原始帖子，使外联同时具备时机依据和沟通上下文。",
+    "oneLineReview": "流程对获客Agent设计有参考价值，但低成本与成交效果主要来自未经验证的自述，不宜直接作为投入产出依据。",
+    "primaryCategory": "商业自动化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "保留流程框架，成本与成交数据仅作为待验证的个案参考",
+    "secondaryCategories": [
+      "Agent开发",
+      "客户开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍借助Treg与编程Agent，从社交平台捕捉产品发布信号，经过规则过滤、公司信息补全和AI判断，再查询决策人邮箱并起草外联内容。作者自报以2.87美元获取105条线索并成交一单，但未提供可核验证据或完整成本口径。",
+    "tags": [
+      "Treg",
+      "信号驱动外联",
+      "线索筛选",
+      "决策人识别",
+      "Agent工作流"
+    ],
+    "title": "如何使用 Treg 构建 AI 外联引擎",
+    "totalScore": 67,
+    "url": "https://x.com/knowixbuilds/status/2105042530425602473"
+  },
+  "payloadHash": "sha256:b7eb5ea9995a0389737d16b0d5dd1654b0ed3157cfb2bc4e7e655a4e03c2fd00",
+  "refs": {},
+  "revisionId": "sha256:214b27cf42a7fe0ad557135e7ea6aff66170a10bd4685f8019f061b675184593",
+  "schemaVersion": 1,
+  "updatedAt": 1790768402506
+}

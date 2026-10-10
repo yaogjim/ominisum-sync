@@ -1,0 +1,23 @@
+{
+  "createdAt": 1789958412056,
+  "entityType": "message",
+  "id": "msg_1789958412056_fpx6zy0ji",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "请充分阅读并理解以下内容，用通俗、精炼的中文完成三个层次的分析：\n\n## 核心总结\n用一小段话说清文章主旨与关键结论，保留最重要的依据和前提。\n\n## 通俗解读\n选择最值得解释的 1—3 个要点，讲清它们是什么意思、为什么重要，以及关键的因果或逻辑关系。必要时用简短例子辅助理解，避免重复摘要。\n\n## 辩证思考\n给出你的独立判断：原文哪些观点有说服力，哪些依赖特定条件或存在证据缺口？选择最关键的局限、反例或替代解释展开，说明它如何影响结论。不机械罗列正反观点，不为反对而反对。\n\n要求：\n- 忠实区分原文主张、事实与个人推断；信息不足时明确说明。\n- 使用 Markdown，短段落、少层级，关键判断适度加粗。\n- 字数根据文章内容酌情控制，简单内容更短；删去铺垫、套话与重复，保留关键依据、因果和必要限定。\n- 优先讲透少数重要问题，不凑要点，不强行拔高。\n- 直接输出正文，无需开场白。",
+    "is_prompt": true,
+    "model": "gpt-5.6-sol",
+    "prompt_id": "template_1772076842437",
+    "prompt_template_name": "解读",
+    "prompt_type": "summary_template",
+    "role": "user",
+    "timestamp": 1789958412056
+  },
+  "payloadHash": "sha256:453779f5c4d82cb6e985be2645b1acea11f5e6c7cab6048482ca41838ea9d127",
+  "refs": {
+    "sessionId": "1789958412091_stynp5jn"
+  },
+  "revisionId": "sha256:15f3d4c3a1d5ad582b8ce49bfd9798b5d41b8db67294dc1228ec918fee82c788",
+  "schemaVersion": 1,
+  "updatedAt": 1789958412056
+}

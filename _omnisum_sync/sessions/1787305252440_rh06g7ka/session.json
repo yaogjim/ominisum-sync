@@ -1,0 +1,84 @@
+{
+  "createdAt": 1787305252440,
+  "entityType": "session",
+  "id": "1787305252440_rh06g7ka",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "部署前核算模型权重、KV Cache和推理引擎的总内存需求，并据此选择量化版本、上下文长度和并发数。",
+      "使用官方适配的vLLM分支启动OpenAI兼容服务，并通过curl和基准测试验证可用性、延迟及吞吐。",
+      "将本地接口接入TUI或Agent框架，先以只读工具验证调用链，再逐步增加文件写入、命令执行和业务接口能力。"
+    ],
+    "archiveReason": "提供了从硬件评估、模型部署、接口验证到工具调用和多模型协作的完整路径，命令与配置具有复用价值。",
+    "byline": "Lonely",
+    "classifiedAt": 1787306166118,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "本地大模型部署与Agent工作流",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HP7dH3PbAAA8qfM?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HP7dH3PbAAA8qfM?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "MoE模型虽然每次只激活部分参数，但部署时仍需加载完整权重，并为推理引擎和KV Cache预留内存。",
+      "单请求生成速度与多并发聚合吞吐是不同指标，Continuous Batching可提高整机吞吐，比较性能时必须统一测试口径。",
+      "本地Agent的基本架构是模型通过OpenAI兼容接口提出工具调用，由执行层访问文件、命令或业务接口，再将结果返回模型继续处理。"
+    ],
+    "oneHighValuePoint": "将本地模型落地抽象为可复用链路：资源评估、权重与引擎适配、服务化验证、工具接入，再按任务拆分为多模型协作流程。",
+    "oneLineReview": "实践链路完整且操作细节较多，但工具代码、能力测试结果和部分性能数据口径仍不够充分一致。",
+    "primaryCategory": "AI技术与Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，作为本地模型部署和Agent链路搭建的实践参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "本地大模型部署",
+      "多模型工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以DGX Spark部署Ling-3.0-flash INT4为例，给出权重下载、vLLM安装启动、接口验证与吞吐测试步骤，并延伸到TUI、工具调用、Harness接入及多模型工作流设计。",
+    "tags": [
+      "本地大模型",
+      "vLLM",
+      "Ling-3.0-flash",
+      "工具调用",
+      "多模型工作流"
+    ],
+    "title": "大模型本地部署完整指南：搭建自己的 Agent 工作流，实现Token自由「新手友好」",
+    "totalScore": 78,
+    "url": "https://x.com/Lonely__MH/status/2089350589713178706"
+  },
+  "payloadHash": "sha256:cdb7bdab2706c8fd996341508de75d6996276c5dc390aab90bfb124042ffbafc",
+  "refs": {},
+  "revisionId": "sha256:51ee1a58ebc2f07247838f3be34db63e7d3898cfa3d3d196bef5f772850f9616",
+  "schemaVersion": 1,
+  "updatedAt": 1789694022513
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783301549746,
+  "entityType": "message",
+  "id": "1783301549745_cdyj27f0",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: OKF开放知识格式规范\n\n**评级**: A (73分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: 知识管理\n**次类别**: AI Agent, 数据治理, 技术规范\n**标签**: #OKF #Markdown #YAML Frontmatter #知识表示 #Agent知识库 #元数据管理\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一份简洁实用的知识库格式规范，尤其适合用于AI Agent知识目录、数据资产说明和团队知识沉淀。\n**核心高价值点**: 用“Markdown + YAML frontmatter + Git目录结构”作为最低复杂度的知识交换格式，在可读性、可维护性和Agent可解析性之间取得了较好平衡。\n\n### 摘要\n文章介绍了 Open Knowledge Format v0.1 规范，提出用 Markdown 文件、YAML frontmatter、目录层级、索引、日志、引用和交叉链接来组织可由人和AI Agent共同读取的知识包，强调最小约束、可移植、可版本管理与宽松兼容。\n\n### 知识要点\n- OKF 将知识包定义为由 Markdown 文件组成的目录树，每个普通 Markdown 文件代表一个概念。\n- 每个概念文件必须包含 YAML frontmatter，且至少需要非空的 type 字段。\n- title、description、resource、tags、timestamp 是推荐但非强制字段。\n- index.md 用于目录级内容导航，log.md 用于记录目录范围内的更新时间线。\n- 概念之间通过标准 Markdown 链接建立关系，消费者通常可将其解析为有向无类型边。\n- OKF 强调宽松消费模型，消费者不应因未知字段、缺失可选字段、断链或缺少 index.md 而拒绝整个知识包。\n- 该格式不替代 Avro、Protobuf、OpenAPI 等领域 schema，而是引用和补充它们周围的上下文知识。\n- Git 仓库是推荐的分发方式，可天然支持历史、归因、diff 和协作。\n\n### 行动项\n- 尝试用 OKF 结构整理一个现有项目知识库或数据目录。\n- 为关键数据表、API、指标或Playbook建立独立 Markdown 概念文件。\n- 统一为知识文档添加 type、title、description、resource、tags、timestamp 等 frontmatter。\n- 为知识库根目录和重要子目录生成 index.md，提升人和Agent的浏览效率。\n- 在文档中使用 Markdown 内链显式表达依赖、引用、关联和上下游关系。\n- 为关键事实和外部依据增加 Citations 区块，提升知识可信度。\n\n### 存档判定\n归档: 是 — 原因: 该文档定义了一套简洁、可落地的开放知识表示格式，对构建人类与AI Agent共同可读的知识库、数据目录和元数据体系具有长期参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1783301549746,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:0ed9ffab4001fdb9b56c3fa6bf17314a59974ce8d42140e03bfde26270ce98e2",
+  "refs": {
+    "sessionId": "1783301506230_asx4agmi"
+  },
+  "revisionId": "sha256:01cadaa7915ecf494142b65639b771ae5c156723f5ec9eea869ec41c44ecc221",
+  "schemaVersion": 1,
+  "updatedAt": 1783301549746
+}

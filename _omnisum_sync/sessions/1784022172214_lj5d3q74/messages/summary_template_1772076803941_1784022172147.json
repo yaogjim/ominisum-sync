@@ -1,0 +1,23 @@
+{
+  "createdAt": 1784022172147,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1784022172147",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章主旨\n\n`verifier-setup`是一个**一次性初始化工具**：它不负责直接验证某项开发任务，而是为代码仓库搭建一套可重复使用的验证体系，让后续`/verify`能在代码发布前启动应用、执行操作、收集截图或视频，并将证据附到 PR 中。\n\n## 1. 最终要交付的 3 类成果\n\n完整运行后，仓库应具备：\n\n1. **`/verify`验证技能**\n   - 默认路径：`.claude/skills/verify/SKILL.md`\n   - 定义单次任务的验证流程：\n     1. 启动 verifier 子代理；\n     2. 操作应用；\n     3. 生成截图或视频证据；\n     4. 创建 PR，并在 PR 中嵌入证明材料。\n\n2. **一键启动开发环境**\n   - 脚本：`scripts/dev-local.sh`\n   - 技能文档：`.claude/skills/dev-local/SKILL.md`\n   - `/verify`依赖它可靠地启动完整应用栈。\n\n3. **与应用类型匹配的驱动工具**\n   - Web 应用默认使用`playwright-cli`。\n   - API、CLI 等非 Web 项目则使用具体工具，如`curl`、HTTP 脚本或已构建的命令行程序。\n\n> 核心区别：`verifier-setup`负责**搭建验证能力**，而`/verify`才负责**执行具体验证**。\n\n## 2. 第一步：先盘点仓库，避免重复建设\n\n创建任何文件前，要检查仓库是否已经具备相关能力，重点包括：\n\n- 启动应用的方式，如：\n  - `scripts/dev-local.sh`\n  - Makefile、Procfile\n  - `docker-compose`\n  - `package.json`脚本\n- 已有的验证 SOP 或技能。\n- 浏览器、API、CLI 等操作驱动。\n- 单元测试、端到端测试及其他检查。\n- 隔离沙箱或云环境配置。\n- 验证证据的保存与发布方式，如 GitHub Release、对象存储或 CI Artifacts。\n\n对每项能力只能做三种选择：\n\n- **直接复用**\n- **补充或扩展**\n- **确实缺失时再新建**\n\n原则是：**识别能力，而不是只查固定文件名；绝不能盲目覆盖已有配置和团队手工修改。**\n\n## 3. 第二步：从仓库中确认真实运行信息\n\n生成`/verify`前，需要查清并记录以下事实：\n\n- **应用类型**\n  - Web：有浏览器界面和开发服务器。\n  - API：提供 HTTP 接口，但没有 UI。\n  - CLI：通过终端命令操作。\n  - 桌面或移动应用：使用对应测试工具。\n\n- **启动方式**\n  - 记录实际启动命令、URL 和端口。\n  - 如果没有一键启动方式，再调用`dev-local-setup`创建，不能在这里临时手写。\n\n- **认证方式**\n  - 判断核心流程是否必须登录。\n  - 如果已有 session/auth helper，就记录下来；否则标为`n/a`。\n\n- **回归检查命令**\n  - 从`package.json`、Makefile、`turbo.json`等配置中读取真实命令。\n  - 常见检查包括类型检查、Lint、单元测试和已有 E2E 测试。\n\n- **证据上传方式**\n  - 默认方案：通过`gh release upload`上传到`pr-evidence` GitHub prerelease，生成可审查的视频链接。\n  - 也可沿用仓库已有的存储桶或 CI Artifact 机制。\n\n重点是：**启动命令、端口、认证和测试命令都必须来自仓库实际情况，不能靠惯例猜测。**\n\n## 4. 第三步：补齐启动、驱动和证据目录\n\n### 开发环境\n\n- 如果已有可用的一键启动方式，就直接复用并读取其服务、端口和命令。\n- 只有缺少必要服务时才扩展。\n- 如果完全不存在，则调用`dev-local-setup`生成开发环境，不在本技能中自行拼装。\n\n### 操作驱动\n\n- **Web 项目**\n  - 安装或确认`playwright-cli`技能。\n  - 还要确保实际二进制可调用：\n\n    ```bash\n    npx --yes @playwright/cli --version\n    ```\n\n  - 如果缺失，应安装 CLI 及 Chrome channel，避免 “文档假设已安装、实际运行却找不到工具” 的问题。\n\n- **非 Web 项目**\n  - 确认对应工具存在，例如 API 使用 HTTP 客户端，CLI 项目使用已构建的可执行程序。\n  - 不需要强行安装浏览器工具。\n\n### 证据目录\n\n确保`evidence/`已加入`.gitignore`，避免截图、视频等临时证明文件直接进入 Git 历史。\n\n## 5. 第四步：选择验证运行环境\n\n系统需要向用户提供两种模式，默认推荐本地模式：\n\n### 本地模式（推荐）\n\n- 使用机器上的单套开发环境，例如：\n\n  ```bash\n  scripts/dev-local.sh up\n  ```\n\n- 配置简单，适合一次只验证一个任务。\n\n### Sandbox 模式（crabbox）\n\n- 每个代理拥有独立的云端沙箱。\n- 适合：\n  - 多个验证任务并行运行；\n  - 应用只能使用固定端口；\n  - 应用一次只能运行一个实例。\n\n如果选择 Sandbox 但尚未配置，则通过`crabbox-setup`初始化；之后可在隔离环境中使用`cbx.sh pw`操作应用。\n\n最终选择写入生成技能的默认`RUN_MODE`，另一种模式仍保留为备用说明。\n\n## 6. 第五步：确认驱动并生成`/verify`\n\n需要明确告知用户检测到的驱动，并进行确认：\n\n- Web 项目默认：`playwright-cli`\n- API 项目示例：`curl`或 HTTP 脚本\n- CLI 项目：项目本身构建出的命令行程序\n\n生成规则如下：\n\n- 如果已经存在验证技能或 SOP：\n  - 在原文件上更新仓库相关信息；\n  - 补齐占位符；\n  - 保留团队手工添加的内容，不能覆盖重建。\n\n- 如果不存在：\n  - 将`assets/verify.template.md`复制到仓库技能目录，例如：\n\n    ```text\n    .claude/skills/verify/SKILL.md\n    ```\n\n  - 填写全部占位符：\n\n    - `STACK_UP`\n    - `APP_URL`\n    - `RUN_MODE`、`RUN_MODE_NOTE`\n    - `DRIVER`、`DRIVER_INSTRUCTION`\n    - `AUTH_HELPER`、`AUTH_INSTRUCTION`\n    - `EXERCISE`\n    - `REGRESSION_CMDS`\n    - `EVIDENCE_UPLOAD`\n    - `DATE`\n\n还要删除不适用的内容。例如，CLI 项目应删除浏览器和视频相关步骤，改成执行命令并断言标准输出。\n\n生成的`/verify`应控制在**一屏以内**：它是代理执行的简洁 SOP，不是长篇说明文。\n\n## 7. 第六步：提交并告知用户如何使用\n\n应将以下改动一并提交：\n\n- `/verify`技能\n- 必要的`/dev-local`脚本与技能文档\n- 驱动技能\n- `.gitignore`中关于`evidence/`的修改\n- 其他确实需要的配置\n\n完成后，需要向用户说明：\n\n- **使用时机**：在打开 PR 前，或被要求验证时执行`/verify`。\n- **前提条件**：应在包含目标改动且代码已经提交的分支上运行。\n- **默认运行模式**：本地还是 Sandbox，以及如何切换。\n- **一次性依赖**：例如 Docker、GitHub CLI 的`gh auth`等。\n\n## 8. 核心设计原则\n\n- **先检查，后创建**：已有能力优先复用或扩展。\n- **适配而不覆盖**：保留团队现有配置和手工修改。\n- **先准备依赖，再生成技能**：启动脚本、驱动和证据目录必须先可用，避免`/verify`运行时才发现缺工具。\n- **按项目类型裁剪**：\n  - Web 单体或 Monorepo 可采用浏览器操作、截图和视频流程。\n  - CLI 项目只需执行命令并验证输出，无须套用浏览器方案。\n- **初始化必须可重复执行**：每一步都应具备幂等性；已有且正常的内容不应重复生成。\n- **职责清晰**：`verifier-setup`只搭建验证系统，真正的任务验证由`/verify`完成。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1784022172147,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:741d92a1ee052f0fcf1620efb3c65ed31a838fef332f669174f5baef038ab7b0",
+  "refs": {
+    "sessionId": "1784022172214_lj5d3q74"
+  },
+  "revisionId": "sha256:649cddd93c3cde7da6e57ecead7e32db8aeba63a647503119bd5f49b5826cb8f",
+  "schemaVersion": 1,
+  "updatedAt": 1784022172147
+}

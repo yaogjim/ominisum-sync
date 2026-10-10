@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789533273811,
+  "entityType": "session",
+  "id": "1789533273811_2idll57i",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用“客户是否为非技术买家”和“是否拥有可复用平台”两个问题评估项目是否需要FDE。",
+      "审查客户定制代码能否沉淀为共享组件，避免形成相互独立且难以维护的代码库。",
+      "招聘FDE时同时评估软件工程能力、客户沟通能力以及代表公司现场决策的可信度。"
+    ],
+    "archiveReason": "提供了判断是否采用FDE的明确条件，并清晰区分FDE与软件外包，对AI产品商业化和客户交付具有可复用价值。",
+    "classifiedAt": 1789533296164,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "FDE模式的成立条件与AI时代价值",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "FDE适用于技术复杂、买家缺乏技术能力且产品无法开箱即用的场景。",
+      "FDE与外包的核心差异是基于共享平台组装和定制，而非为每个客户从零开发。",
+      "Agent化提升产品可定制性的同时也增加理解和落地难度，可能扩大现场工程交付需求。"
+    ],
+    "oneHighValuePoint": "FDE能否持续成立，关键不在定制开发能力，而在于是否通过可复用平台为客户交付业务结果。",
+    "oneLineReview": "这是一篇框架清晰、贴近AI产品交付的FDE入门总结，但关键数据和趋势判断仍缺少充分证据。",
+    "primaryCategory": "商业系统构建",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，作为复杂技术产品客户交付模式的判断框架",
+    "secondaryCategories": [
+      "AI产品交付",
+      "产品开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结FDE的角色定位、适用条件及其与外包开发的区别，强调复杂产品面向非技术客户时，应依托可复用平台由工程师交付业务结果，并分析Agent化对该模式的推动。",
+    "tags": [
+      "FDE",
+      "企业软件",
+      "客户交付",
+      "可复用平台",
+      "AI Agent"
+    ],
+    "title": "宝玉: Anthropic 工程师讲了一堂 FDE 入门课 https://t",
+    "totalScore": 74,
+    "url": "https://x.com/dotey/status/2099982947394687156"
+  },
+  "payloadHash": "sha256:630feca91e6fc8d03faf5aa600f949889d43c4345d6185e9b664d84df2548697",
+  "refs": {},
+  "revisionId": "sha256:56cf72db1d01278c4f5c12c85fa68bf5c756a991f62f03a50b5e5d466022e00e",
+  "schemaVersion": 1,
+  "updatedAt": 1790769290227
+}

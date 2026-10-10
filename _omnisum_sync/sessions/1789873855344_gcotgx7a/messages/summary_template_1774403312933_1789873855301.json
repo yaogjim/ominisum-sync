@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789873855301,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1789873855301",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 多 LoRA 让百个微调模型共享一块 GPU\n\n文章的核心方案是：不要把每个 LoRA 微调结果合并成完整模型，而是让多个小型适配器共享同一基础模型和 worker 池。这样既大幅降低显存占用，也减少独立端点带来的冷启动与闲置 GPU。\n\n## 显存从 1.5 TB 降至约 19.3 GB\n\n以 7B 模型的 100 个变体为例：每个合并模型约 15.2 GB，总计可能达到 1.5 TB；若共享一个基础模型，只需 15.2 GB 基础权重加约 4 GB 适配器。单个 rank-8 LoRA 仅约 40 MB，在 80 GB GPU 上还能留下约 60 GB 给 KV 缓存，即推理时保存上下文的空间。\n\nvLLM 会根据请求动态应用对应适配器，因此提取、SQL、路由等任务可共用同一 GPU；新增变体只增加适配器内存，而非复制完整模型。\n\n## worker 复用比省显存更关键\n\n每个变体独立部署，会形成各自的扩缩容池：一个端点的空闲 worker 无法处理另一个端点的请求，后者仍可能触发冷启动。共享端点则按总流量扩容，而不是按模型数量配置容量，能提升 GPU 利用率。\n\n部署可分为四类：合并权重、启动时加载适配器、请求时按需加载，以及由第三方按租户托管。小而稳定的目录适合启动时加载；大型或频繁变化的目录适合按需加载，但首次请求会更慢。\n\n## 实验表明瓶颈主要在启动链路\n\n作者用 Qwen 1.5B 和三个 LoRA 测试：热启动状态下，切换适配器未出现明显延迟；但缩容至零后，冷启动中位数达 245 秒，推理仅约 0.5 秒。延迟主要来自拉取镜像、基础模型和适配器，而非 LoRA 本身。该结果是未优化基线，可通过镜像预置、缓存和 FlashBoot 缩短；生产部署的关键因此不只是模型压缩，更是端点布局与启动链路优化。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1789873855301,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e6b905e7f8ae837ccb50563de3db9dc1267e2bcc90a121e9b2874a5edec48519",
+  "refs": {
+    "sessionId": "1789873855344_gcotgx7a"
+  },
+  "revisionId": "sha256:956685244b72be1a2986f613d15907a0e68aff395ac9e33c5901147949b596c7",
+  "schemaVersion": 1,
+  "updatedAt": 1789873855301
+}

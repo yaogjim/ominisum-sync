@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784853358431,
+  "entityType": "session",
+  "id": "1784853358431_yl5irv7t",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为AI产品建立单位请求Token数、单位Token成本、延迟和用户价值的联合测算表。",
+      "对推理负载分别分析预填充、解码、计算和内存带宽瓶颈，再评估硬件方案。",
+      "核验文中涉及的收入、收购、性能提升和市场规模数据后再用于投资或产品决策。"
+    ],
+    "archiveReason": "包含以单位功耗Token产出衡量推理系统、拆分预填充与解码负载等可复用分析框架。",
+    "classifiedAt": 1784853668701,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "AI推理时代的GPU经济学",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/bc714d1c/img/favicon.ico",
+    "knowledgePoints": [
+      "AI服务不同于传统软件，其边际成本持续受到推理计算、功耗和内存带宽约束。",
+      "将预填充与解码拆分，并进一步区分计算密集和内存带宽密集任务，可为异构硬件调度提供优化空间。",
+      "推理经济性需要同时考察单位Token成本、模型能力、Token消耗量和用户支付意愿，而不能只看算力价格。"
+    ],
+    "oneHighValuePoint": "评估推理基础设施不应只比较单颗芯片性能，而应比较固定电力、机房和资本投入下能够稳定产出的Token数量。",
+    "oneLineReview": "对AI推理工厂和Token经济的分析具有启发性，但大量商业数字与趋势预测缺少可核验依据。",
+    "primaryCategory": "AI基础设施",
+    "rating": "B",
+    "rejectReason": "访谈含较多宣传性判断、重复表达和缺少来源支撑的重大数据，限制了证据强度。",
+    "retentionDecision": "选择性浏览并存档核心技术框架，关键数字与预测需另行核验",
+    "secondaryCategories": [
+      "AI商业模式",
+      "芯片与计算架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章讨论AI从训练转向推理与Agent后，Token需求、算力成本和付费价值如何变化，并以Groq与英伟达的异构架构为例，分析功耗、内存、芯片和模型共同决定的推理经济性。",
+    "tags": [
+      "推理经济学",
+      "GPU",
+      "Token成本",
+      "异构计算",
+      "AI算力"
+    ],
+    "title": "Stanford MS&E435 Economics of the AI Supercycle | Spring 2026 | The GPU Economy - YouTube",
+    "totalScore": 66,
+    "url": "https://www.youtube.com/watch?v=BBl8bNJP6ds"
+  },
+  "payloadHash": "sha256:1d5d6561df18c851921563fa82d945317cee8b0985fb6e1144935b4b953034e2",
+  "refs": {},
+  "revisionId": "sha256:719075b351d24401f1b7d49c555d71ea5ced155d78d4793a050117385077cf21",
+  "schemaVersion": 1,
+  "updatedAt": 1789728506151
+}

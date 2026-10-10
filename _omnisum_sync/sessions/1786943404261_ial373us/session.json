@@ -1,0 +1,66 @@
+{
+  "createdAt": 1786943404261,
+  "entityType": "session",
+  "id": "1786943404261_ial373us",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "进行心血管初级预防风险评估时，同时记录BMI、腰围和腰臀比。",
+      "在采用研究结论制定判断标准前，查阅原始论文中的阈值、统计调整方法和适用人群。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1786943435736,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 7,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 3,
+      "transferability": 5
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "腰腹脂肪指标改善心血管风险判断",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.acc.org",
+    "favicon": "https://www.acc.org/Images/favicon.ico",
+    "knowledgePoints": [
+      "BMI无法反映脂肪分布，腰围和腰臀比可用于识别中心性脂肪堆积并重新划分风险。",
+      "在BMI正常者中，5%腰围偏高、18%腰臀比偏高，说明单独使用BMI可能漏判风险。",
+      "研究未纳入运动、饮食和遗传性肥胖风险，且腰围与腰臀比仅测量一次。"
+    ],
+    "oneHighValuePoint": "BMI正常并不等于心血管风险较低，较高腰围或腰臀比与多数研究结局风险增加15%至50%相关。",
+    "oneLineReview": "研究样本和随访规模较强，但新闻稿信息有限，适合作为健康风险判断线索而非直接临床指南。",
+    "primaryCategory": "健康与医学",
+    "rating": "C",
+    "rejectReason": "与核心关注方向关联较弱，且新闻稿未提供风险阈值、统计模型及完整研究方法。",
+    "retentionDecision": "低优先级速览，如需研究健康风险评估再查阅原始论文",
+    "secondaryCategories": [
+      "心血管研究",
+      "风险评估"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "一项覆盖逾26万人、平均随访20年的队列研究显示，腰围和腰臀比可补充BMI识别心血管风险；正常或超重但腹部脂肪偏高者，多项结局风险高出15%至50%。",
+    "tags": [
+      "腹部脂肪",
+      "腰围",
+      "腰臀比",
+      "BMI",
+      "心血管风险"
+    ],
+    "title": "Abdominal Fat Predicts Heart Disease Risk Better Than BMI - American College of Cardiology",
+    "totalScore": 50,
+    "url": "https://www.acc.org/about-acc/press-releases/2026/08/11/14/59/abdominal-fat-predicts-heart-disease-risk-better-than-bmi"
+  },
+  "payloadHash": "sha256:5f0f2c1d6caf539c87df295ec04d59e140bbf8d0cc01d3a3134330086ba398ea",
+  "refs": {},
+  "revisionId": "sha256:aae82bcd33e84579c5223526be080ca5ba2a5d19c7db89e4c51775d81f65a8dc",
+  "schemaVersion": 1,
+  "updatedAt": 1786944324241
+}

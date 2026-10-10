@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696146939,
+  "entityType": "message",
+  "id": "1789696146939_qx7dm48e",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者认为，昂贵的前沿模型不该包办写代码，而应负责规划和验收，再让便宜、快速的小模型持续执行，以降低成本并提高效率。\n\n## 关键内容\n\n- 推荐“**编排器**”模式：Fable 5 决定做什么、冻结需求并审核结果，Sonnet 5 等较小模型负责实现。文中称 Sonnet 5 价格约为前者的 20%，而 Devin Fusion 通过类似分工可节省约 35% 成本；这些属于作者引用的产品方结论。\n- “大模型偶尔当顾问”反而可能更贵，因为每次都要重读完整对话；执行子代理只接收明确任务，还能利用价格更低的缓存上下文。\n- 子代理应保持为**可继续对话的持久会话**，修改时沿用原有理解，而不是每次重开、重新读文件。Claude Code 的 Agent Teams 已能实现。\n- 跨工具协作可用 tmux 启动、控制并监听 Codex、Gemini CLI 等代理；Orca 则把会话、通知、看板和用量统计做成了现成界面。\n\n## 通俗解读\n\n这类似让“资深架构师”定方案、验收，让“工程师”写代码；真正省钱的关键不仅是模型大小，还在于别让昂贵模型反复读历史、别让执行者重复熟悉项目。\n\n**是否值得细读：**如果你正在使用 Claude Code 或多代理编程，文中的规则模板和 tmux 方案值得细读；若只想了解观点，以上结论已足够。原文缺少独立基准与完整成本数据，不宜把节省比例视为普遍定论。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696146939,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:409559579c0f1035b40671336be1af4a675ad387e71f847786b6353dc183bfb5",
+  "refs": {
+    "sessionId": "1784605362557_foz45l8c"
+  },
+  "revisionId": "sha256:476af7b2bbad27f71aec30e02ecd44bb16a3e1553f6a6029206bd94debf8e85b",
+  "schemaVersion": 1,
+  "updatedAt": 1789696146939
+}

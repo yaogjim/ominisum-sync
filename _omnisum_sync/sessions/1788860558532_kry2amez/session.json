@@ -1,0 +1,83 @@
+{
+  "createdAt": 1788860558532,
+  "entityType": "session",
+  "id": "1788860558532_kry2amez",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "克隆仓库并使用 uv 下载样例音频，运行默认 Q8_0 转写命令验证环境。",
+      "分别测试 Q4_0、Q8_0 与 F16，记录目标设备上的速度、内存占用和转写质量。",
+      "针对真实音频增加本地文本清洗步骤，比较清洗前后的可读性和错误率。"
+    ],
+    "archiveReason": "提供了可直接执行的安装、转写、量化和 ASR/TTS 命令，并展示了无需云服务的本地音频处理流程。",
+    "classifiedAt": 1789642784056,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "本地实时音频转写命令行实践",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/efc2e40802305f7cf4f8aa9a895dc432d290333a94e7ab2d4aeb0e34aed24c67/Liquid4All/cookbook",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/efc2e40802305f7cf4f8aa9a895dc432d290333a94e7ab2d4aeb0e34aed24c67/Liquid4All/cookbook",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "Q4_0、Q8_0 和 F16 模型约占 1.1 GB、1.8 GB 和 3.3 GB，可按体积、速度与准确率需求选择。",
+      "当前 llama.cpp 的音频支持仍处于实验阶段，该示例依赖 Liquid AI 提供的专用构建版本。",
+      "对重叠分块和不完整句子造成的转写瑕疵，可增加小型文本模型形成转写后清洗的两阶段流程。"
+    ],
+    "oneHighValuePoint": "通过专用 llama.cpp 构建和量化模型，可在无云服务依赖的环境中完成本地 ASR 与 TTS。",
+    "oneLineReview": "这是一份可快速复现的本地音频推理教程，但缺少准确率、速度和硬件表现等实测证据。",
+    "primaryCategory": "AI 工程与本地推理",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并存档，作为本地音频模型部署与验证的实践参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "音频处理",
+      "开发工具教程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章演示如何用 LFM2.5-Audio-1.5B 与 llama.cpp 构建完全本地的实时音频转写 CLI，给出安装、运行、量化选项及 ASR/TTS 命令，并提出用小模型二次清洗转写文本。",
+    "tags": [
+      "本地音频转写",
+      "llama.cpp",
+      "LFM2.5-Audio",
+      "模型量化",
+      "边缘推理"
+    ],
+    "title": "cookbook/examples/audio-transcription-cli at main · Liquid4All/cookbook",
+    "totalScore": 74,
+    "url": "https://github.com/Liquid4All/cookbook/tree/main/examples/audio-transcription-cli"
+  },
+  "payloadHash": "sha256:9efdb2799e9fdf693d1f641a5e099806a0b339c4bd9852adfba84ec1e1251cb6",
+  "refs": {},
+  "revisionId": "sha256:b749973c11d21e2e163308f7b4914b001b27a4b9be91ce68df553570294b6790",
+  "schemaVersion": 1,
+  "updatedAt": 1790769525437
+}

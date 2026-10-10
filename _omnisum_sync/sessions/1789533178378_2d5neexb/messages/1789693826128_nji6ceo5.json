@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693826128,
+  "entityType": "message",
+  "id": "1789693826128_nji6ceo5",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者为 Mac Studio 与两台 NVIDIA Spark 自研了 macOS RDMA 驱动，已打通 Metal/CUDA 缓冲区传输，但“异构协同推理更快”目前仍是待验证目标。\n\n## 关键内容\n\n- **基础链路已跑通**：ConnectX-5 可在 macOS 上执行双向 RDMA READ/WRITE，并通过逐字节、越权访问和保护区测试；Metal 与 CUDA 生成的数据也能互传，无需应用层中转复制。\n- **核心设想是按硬件特长分工**：Spark 用张量核心做适合并行计算的预填充，M3 Ultra 借较高内存带宽做解码，再传递 KV cache 等状态。\n- **已有延迟不等于模型收益**：4 KiB RDMA 延迟约 4.1—10.2 微秒，但这是主机内存测试；尚未测 GPU 到 GPU 延迟，也未完成真实模型的端到端基准。\n- 后续将测试请求交接、流水线并行、投机解码，以及让约 400 GB 权重分布在三台机器上。作者会把转换、同步和通信成本全部计入，允许出现“机器越多反而越慢”的结果。\n\n## 通俗解读\n\nRDMA相当于让网卡直接搬运已注册内存，减少 CPU 转手；但数据搬得快，不代表推理一定更快。两端还必须统一模型版本、精度和缓存格式，转换成本可能吃掉收益。\n\n**是否值得细读：**适合关注 macOS 驱动、RDMA 或分布式推理的技术读者；若只想看性能结论，可暂缓，因为目前主要成果是“链路可用”，模型加速尚未证实。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693826128,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a1fa4a7aa748d5e3afa9e58a43a580d46fdd58f53a56b3f65ed93de3483986a6",
+  "refs": {
+    "sessionId": "1789533178378_2d5neexb"
+  },
+  "revisionId": "sha256:ecc12fee44b0408364b56ab185a2d5c5f7265c827d85a699703c55f5b7c444af",
+  "schemaVersion": 1,
+  "updatedAt": 1789693826128
+}

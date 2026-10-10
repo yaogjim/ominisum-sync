@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784101331271,
+  "entityType": "session",
+  "id": "1784101331271_40uspyfz",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在 After Effects 2024或更新版本中安装 FrameFlow，并配置本地保存的LTX API密钥。",
+      "用短时长、低成本设置完成一次图像到视频测试，检查生成结果的位置、时序和稳定性。",
+      "选择文章中的一种镜头运动模板，连续生成2至3次并记录提示遵循度、成本和迭代耗时。"
+    ],
+    "archiveReason": "包含可直接执行的插件配置步骤、API成本信息、图生视频提示原则及多类可复用提示模板。",
+    "classifiedAt": 1784678324699,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "FrameFlow的AI动态设计工作流",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "LTX-2.3提示词宜采用包含动作动词的完整流畅句子，并按动作、摄影、灯光的顺序描述镜头。",
+      "同一提示词应先重复生成2至3次，再判断是否需要改写，以排除模型运行间差异。",
+      "FrameFlow可从AE中选定图像层并生成视频，结果自动放置在原图层上方，同时预估按秒计费的成本。"
+    ],
+    "oneHighValuePoint": "将图生视频生成直接嵌入 After Effects 时间线，能够减少跨工具切换，使生成、评估和调整形成更短的迭代闭环。",
+    "oneLineReview": "这是一篇操作性较强的AI视频工作流教程，但带有赞助推广属性，效率和模型性能主张缺少对照测试。",
+    "primaryCategory": "AI视频与动态设计",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，重点保留安装流程、提示原则和镜头运动模板",
+    "secondaryCategories": [
+      "AI工具集成",
+      "提示词工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍开源插件 FrameFlow，将 LTX 图生视频嵌入 After Effects 时间线，并给出安装、API计费、首次生成步骤、镜头运动提示模板及提示原则，以减少导出、上传和回导造成的迭代摩擦。",
+    "tags": [
+      "FrameFlow",
+      "After Effects",
+      "LTX-2.3",
+      "图生视频",
+      "动态设计工作流"
+    ],
+    "title": "如何将 AI 转化为动态设计（免费插件+指南）",
+    "totalScore": 71,
+    "url": "https://x.com/AmirMushich/status/2077062962657870049"
+  },
+  "payloadHash": "sha256:473b6aefa62adadfca065cf4ef5bba1af2a3eacec69db8d57e9a71d9e63afe6b",
+  "refs": {},
+  "revisionId": "sha256:5f23bb847332a4a865a384c312638e3a9e98ee9d6e5b788c63c0a3a6d1a97dcf",
+  "schemaVersion": 1,
+  "updatedAt": 1789696018830
+}

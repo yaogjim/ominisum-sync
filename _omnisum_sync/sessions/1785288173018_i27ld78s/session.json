@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785288173018,
+  "entityType": "session",
+  "id": "1785288173018_i27ld78s",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "对复杂实现计划启动独立LLM会话，假设方案已经失败并列出原因，以发现规格缺口。",
+      "整理历史代码评审中的高频意见，将其转化为可复用的AGENTS.md规则。",
+      "限制并行AI任务数量，并为关键变更保留人工编码、同事评审和明确验收环节。"
+    ],
+    "archiveReason": "文章提出了人类注意力与工程判断才是AI编程核心瓶颈的框架，并给出预演失败和沉淀评审规则两项可复用实践。",
+    "classifiedAt": 1785403015013,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI编程中的人类监督疲劳",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "pydantic.dev",
+    "favicon": "https://pydantic.dev/favicon/favicon.ico",
+    "knowledgePoints": [
+      "AI辅助编程可能压缩编码中的即时正反馈，却增加持续审查和维持系统意图的认知负担。",
+      "模型在使用者熟悉的领域更容易被有效引导；知识薄弱处的输出往往只是表面合理而非生产可用。",
+      "复杂方案可通过独立会话进行失败预演，历史代码评审意见也可提炼为AGENTS.md等机器可读规则。"
+    ],
+    "oneHighValuePoint": "代码生成能力提升后，真正稀缺的资源转为人类注意力、意图一致性和工程判断，因此工作流应围绕降低审查负担而非单纯提高生成速度设计。",
+    "oneLineReview": "对AI编程监督成本的描述真实且视角鲜明，但主要依赖个人经验，尚未形成完整的验证体系。",
+    "primaryCategory": "AI编程与开发者工作方式",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览，保留监督疲劳框架与两项工作流实践",
+    "secondaryCategories": [
+      "软件工程",
+      "个人能力建设"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章从Pydantic团队实践出发，分析AI编程在提高产出速度的同时带来的监督疲劳、工作强度上升与协作感缺失，并主张以工程判断、架构品味、失败预演和评审规则沉淀来适应工作转型。",
+    "tags": [
+      "AI辅助编程",
+      "人机协作",
+      "监督疲劳",
+      "工程判断",
+      "开发者工作流"
+    ],
+    "title": "The Human-in-the-Loop is Tired",
+    "totalScore": 68,
+    "url": "https://pydantic.dev/articles/the-human-in-the-loop-is-tired"
+  },
+  "payloadHash": "sha256:8490f14c4580d130d53c2626aa0ea840a182cdd027e641006a4918d7c7a5db09",
+  "refs": {},
+  "revisionId": "sha256:52939ff8220c704afefd432c1d004c8ae6007405df5be92349b4fd7e14bfb9c2",
+  "schemaVersion": 1,
+  "updatedAt": 1785403713542
+}

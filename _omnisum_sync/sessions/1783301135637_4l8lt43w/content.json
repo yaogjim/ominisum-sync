@@ -1,0 +1,15 @@
+{
+  "createdAt": 1783301135637,
+  "entityType": "session-content",
+  "id": "1783301135637_4l8lt43w",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Mr Panda</strong></header><div class=\"tw-body\">The Log is the Agent<br>它的核心观点是：不要把日志当成 agent 的副产品，而要把 append-only event log 当成 agent 本身。<br><br>在 ActiveGraph 里，目标、规则、工具调用、LLM 响应、产物和关系都写入同一条事件日志；当前状态只是日志 replay 后投影出来的一张图。<br><br>这样带来三个关键能力：<br>可确定性重放<br>可在任意事件处分叉实验<br>从最终输出追溯到具体模型调用和证据链<br><br>这不是“更聪明的 agent”，而是一个更适合长期运行、可审计、可演化 agent 的底层架构。<br><a dir=\"ltr\" href=\"https://arxiv.org/abs/2605.21997\" rel=\"noopener noreferrer nofollow\" target=\"_blank\" role=\"link\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1wvb978 r-1loqt21\" style=\"color: rgb(29, 155, 240);\"><span aria-hidden=\"true\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-qlhcfr r-19qo34d r-qvk6io r-orgf3d r-u8s1d\">https://</span>arxiv.org/abs/2605.21997</a></div></article>",
+    "pageContent": "Mr Panda: The Log is the Agent\n它的核心观点是：不要把日志当成 agent 的副产品，而要把 append-only event log 当成 agent 本身。 在 ActiveGraph 里，目标、规则、工具调用、LLM 响应、产物和关系都写入同一条事件日志；当前状态只是日志 replay 后投影出来的一张图。 这样带来三个关键能力：\n可确定性重放\n可在任意事件处分叉实验\n从最终输出追溯到具体模型调用和证据链 这不是“更聪明的 agent”，而是一个更适合长期运行、可审计、可演化 agent 的底层架构。 https://\narxiv.org/abs/2605.21997\n\n链接:\n- https://arxiv.org/abs/2605.21997"
+  },
+  "payloadHash": "sha256:e1e7f8819f9e2bdbcb5efa85a6a64ff49a9c143699924e152b9ac05763d886ef",
+  "refs": {},
+  "revisionId": "sha256:eb0ecdbf95053a577ca1d605f579c241248cd7d68a2f3368cbd542a2146a531c",
+  "schemaVersion": 1,
+  "updatedAt": 1789729263996
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728539238,
+  "entityType": "message",
+  "id": "1789728539240_h5gi3994",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Wiki Memory：把原始资料压缩成智能体可持续使用的知识层\n\n智能体记忆尚无统一标准，但一种实用模式正在形成：由代理持续读取代码、文档、日志和对话等原始数据，将其整理为结构化、可检查、可更新的“维基”，作为长期知识层。这比反复检索海量原文更高效，也有助于沉淀个人或组织的隐性知识。\n\n## 与 RAG 的区别是预先提炼，而非临时检索\n\n基础 RAG 通常在收到问题后，从原始资料中检索相关片段；Wiki Memory 则提前识别领域结构，生成更高层次的总结与关联，使后续代理无需每次重新理解上下文。\n\n它并非简单保存所有内容，而是进行“智能压缩”：例如根据研究实验、笔记和行动记录，近似保留研究人员头脑中的经验，降低员工离职造成的知识流失。\n\n## 文件可能是当前最简单的实现载体\n\n典型流程是让代理读取资料，生成一组持久化文件，并随源数据变化持续维护。文件的优势在于可读、可编辑、可审查、可版本控制，也方便人和代理共同使用。\n\n已有产品体现了这一方向：\n\n- Cognition 的 **DeepWiki** 为 GitHub 仓库生成高层代码文档。\n- Factory 的 **AutoWiki** 自动生成并更新可浏览的代码库说明。\n- Karpathy 提出的“LLM Wiki”将这一模式扩展到任意源文件，以 Markdown 维基连接用户与原始资料。\n- LangMem、Letta、Mem0、Zep 面向更广泛的智能体记忆问题，但不一定以文件为核心。\n\n## 适合长期知识，但不是完整的记忆方案\n\nWiki Memory 更适合稳定、可复用的领域知识，不一定适合短期对话状态、用户偏好或高频事件日志。其关键问题仍未解决，包括如何选择源数据、如何压缩、采用何种结构，以及怎样可靠地保持更新。作者认为，尽管技术仍早期，“代理处理、文件承载、代理维护”可能是目前最简单且有用的长期记忆范式。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728539238,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d96e1e60b991b747cea26745b91288c134fe36c722c606e221f3c12a0c861512",
+  "refs": {
+    "sessionId": "1782990147651_6qsdfnex"
+  },
+  "revisionId": "sha256:36b1647060fa9fe3e88917e77337ffc1b5f1e6b41ea90c03c6706e573c1addcf",
+  "schemaVersion": 1,
+  "updatedAt": 1789728539238
+}

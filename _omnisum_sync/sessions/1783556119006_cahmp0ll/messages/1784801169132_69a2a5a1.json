@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784801169132,
+  "entityType": "message",
+  "id": "1784801169132_69a2a5a1",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 主旨概括\n\n作者为 **pi** 开发了一个名为 **pi-cc-subagent** 的插件，目标是尽可能 **1:1 复刻 Claude Code 的 subagent（子智能体）机制**。该插件既提供内置子智能体，也支持自定义配置与独立工作环境。\n\n## 开发目标\n\n- 借助 **Fable** 为 pi 编写 subagent 插件。\n- 尽量还原 Claude Code 的 subagent 使用方式，让不同子智能体分工完成探索、规划和通用任务。\n\n## 核心功能\n\n- 内置 3 类 subagent：\n  - `explorer`：用于探索和检索信息。\n  - `plan`：用于分析任务并制定计划。\n  - `general-purpose`：用于处理通用任务。\n- 支持通过 **Markdown（`.md`）文件**自定义 subagent。\n- 支持 **Git worktree 隔离**：\n  - 每个 subagent 可在独立工作环境中执行任务。\n  - 不同 subagent 之间互不干扰，适合并行协作。\n\n## 安装与卸载\n\n安装：\n\n```bash\npi install git:https://github.com/linearuncle/pi-cc-subagent\n```\n\n卸载：\n\n```bash\npi remove git:https://github.com/linearuncle/pi-cc-subagent\n```\n\n## 项目地址\n\n- [GitHub：linearuncle/pi-cc-subagent](https://github.com/linearuncle/pi-cc-subagent)",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784801169132,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:db9e2d7aa8b4174d4b0f1083746d479511f08867f47d548f1482d8e7c03f76a2",
+  "refs": {
+    "sessionId": "1783556119006_cahmp0ll"
+  },
+  "revisionId": "sha256:3a7bb4b95a74cb320f37151e133ff9ad4a2ae75a21dc4d43659df74fb54e7d9e",
+  "schemaVersion": 1,
+  "updatedAt": 1784801169132
+}

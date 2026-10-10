@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783556381044,
+  "entityType": "message",
+  "id": "1783556381043_0u1std1d",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 精简Claude Code系统负载\n\n**评级**: A (74.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI开发工具优化\n**次类别**: Claude Code使用技巧, 开发成本优化\n**标签**: #Claude Code #系统提示词 #Token优化 #AI编程工具 #上下文管理\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇非常实用的Claude Code瘦身教程，方法清晰、可操作性强，但证据主要来自个人经验。\n**核心高价值点**: 使用裸工具名写入permissions.deny可以从请求负载中移除工具定义，而 scoped rule 只会阻止调用但不会减少payload。\n\n### 摘要\n文章介绍如何通过/context、HTTP代理抓包和Claude Code配置项，识别并移除不常用工具、技能和工作流定义，从而减少每轮请求携带的系统提示和工具schema token，降低成本并改善上下文效率。\n\n### 知识要点\n- /context可以查看Claude Code上下文窗口中系统提示、工具、MCP、记忆文件和消息的token占比\n- 通过设置ANTHROPIC_BASE_URL接入本地代理，可观察Claude Code真实发送给Anthropic API的完整请求内容\n- disableBundledSkills、disableWorkflows等配置项可以批量移除不需要的功能和对应工具定义\n- permissions.deny中的裸工具名可减少请求payload，带作用域的规则仅限制调用权限\n- 优化后应重启Claude Code并再次运行/context验证token削减效果\n\n### 行动项\n- 在Claude Code中运行/context记录当前系统提示和工具token占比\n- 使用本地代理抓取一次实际请求，查看工具schema和系统提示的具体体积\n- 根据自身使用习惯在settings.json中关闭不需要的bundled skills、workflows或单个工具\n- 重启Claude Code后再次运行/context，对比优化前后的token变化\n\n### 存档判定\n归档: 是 — 原因: 文章提供了可直接执行的Claude Code请求负载测量、代理抓包和工具裁剪方法，具有较强实践价值\n删除: 否\n留存决策: 长期保留，适合Claude Code用户在优化成本和上下文负载时参考",
+    "role": "assistant",
+    "timestamp": 1783556381044,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:a7ab1a2ba5121fcbfafb97306e99374bc5cf669f9a159ccdc876f67cca752841",
+  "refs": {
+    "sessionId": "1783471892074_4kiz1ju0"
+  },
+  "revisionId": "sha256:80d0686970b688ab12780f5141fca482baf009f0450d574901e101384cc6b9d7",
+  "schemaVersion": 1,
+  "updatedAt": 1783556381044
+}

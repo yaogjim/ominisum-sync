@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727725532,
+  "entityType": "message",
+  "id": "1789727725538_khqx6ryt",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Vercel Labs：以公开实验筛选开发者与 AI 工具\n\nVercel Labs 是 Vercel 面向开发者的公开实验平台：项目会被提前发布，通过真实使用反馈快速迭代；被长期验证有价值的工具将持续投入，其他项目则可能并入现有产品或停止开发。其核心不是展示概念，而是建立一套“实验—验证—产品化”的筛选机制。\n\n## 三类状态明确项目成熟度\n\n- **Labs 产品**：已证明长期有用、持续维护，可被开发者依赖，但独立于 Vercel 核心产品。\n- **活跃实验**：仍在开发和验证，迭代快，可能存在缺陷或破坏性变更，不宜默认用于稳定生产环境。\n- **历史实验**：不再开发；部分已产品化或并入其他工具，部分则为后续方向提供了经验。\n\n这种分类同时向用户传递维护承诺和采用风险，避免“实验项目”被误解为成熟产品。\n\n## 项目重点转向 AI Agent 的开发基础设施\n\n已形成产品的项目多围绕智能体能力，包括浏览器自动化 CLI `agent-browser`、安全测试工具 `deepsec`、面向 Agent 的 Bash 环境 `just-bash`、生成式 UI 框架 `json-render`，以及开放技能生态 CLI `skills`。其他工具覆盖本地开发、编码 Agent 和跨运行时 WebGPU。\n\n活跃实验继续探索 Agent 编程语言、安全代码执行、API 模拟、原生桌面应用、Web 终端和 UI 性能等方向。历史项目则显示其退出机制：例如部分能力已被 Vercel CLI 或 Next.js 接管，说明 Labs 也承担核心产品的前置研发与能力孵化。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727725532,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d29830ba0a0d4c2a999e126d95aa34d9d1bd696c6effb1ea84b2f7e319777892",
+  "refs": {
+    "sessionId": "1789445327340_ygk1j9pt"
+  },
+  "revisionId": "sha256:87c1ddfd736769bd84097e5a6851df5ba3f80e8463bc8e727ba2e74cab865612",
+  "schemaVersion": 1,
+  "updatedAt": 1789727725532
+}

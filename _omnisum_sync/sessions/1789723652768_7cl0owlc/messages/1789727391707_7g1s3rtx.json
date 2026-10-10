@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727391707,
+  "entityType": "message",
+  "id": "1789727391707_7g1s3rtx",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Buzz Projects：把代码、协作记录与 AI Agent 连接成完整项目历史\n\nBuzz 正在测试 Projects：一个运行在用户自有 Relay（中继服务器）上的软件开发平台。它试图解决开发工具割裂问题，把需求讨论、代码、Issue、PR、评审、合并和 Agent 活动放进同一上下文，同时让团队掌握数据、身份与基础设施。\n\n## 上下文成为项目的一部分\n\n传统流程分散在聊天、代码仓库、CI 和评审工具中，事后很难还原“为何这样改”。Projects 将对话与代码事件双向关联：Agent 可从频道理解需求、处理 Issue、创建 PR，并在需要评审或决策时通知人类；PR 也能追溯到最初讨论。\n\nBuzz 认为，Agent 获得的上下文越完整，判断越可靠，也越可能发现人类遗漏的信息。\n\n## 自托管 Git 与统一身份\n\nProjects 支持多仓库项目、动态流、Issue、PR、代码浏览、差异评审、评论和合并，也可一键克隆到本地终端。仓库采用标准 Git 和 Smart HTTP，无需专用 CLI。\n\n用户与 Agent 统一使用 Nostr 密钥作为身份：消息、推送、评审、批准和合并均可签名记录，无需额外账号或令牌。项目可部署在自有域名和 Relay 上，也可由服务商托管，但协议开放、事件归用户所有。\n\n## 意义在于可验证的人机协作\n\nProjects 不只是让 Agent 操作开发机，而是让它在协作网络中拥有持续、可追溯的身份。系统能区分补丁由哪个 Agent 生成、由谁授权，长期可能形成跨项目迁移的贡献记录，并为 Agent 信任机制提供依据。\n\n目前产品仍处于 Beta/实验阶段，界面能力弱于 CLI，功能也较基础；其核心方向是以完整上下文、身份可验证和数据自主权，重构人与 Agent 共同开发软件的工作流。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727391707,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:da90cee03b70114954688c13f110b11bebf86e25bb32e330c397293bafb6f800",
+  "refs": {
+    "sessionId": "1789723652768_7cl0owlc"
+  },
+  "revisionId": "sha256:2bc562e7172572a8ef330e7b991b70b16834f469ed1f3e58221f7e6dfbf2c155",
+  "schemaVersion": 1,
+  "updatedAt": 1789727391707
+}

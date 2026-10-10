@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727539053,
+  "entityType": "message",
+  "id": "1789727539053_rzjijv2y",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 腾讯开源 TeamAI-CLI：用 Git 管理团队使用 AI 的方法\n\n腾讯开源了内部使用的 TeamAI-CLI。它不试图先建设复杂的知识库，而是把 Agent 所需的规则、Skill 和文档统一放进 Git 仓库，让团队成员与各个 Agent 都基于同一套、可持续更新的“操作手册”工作。\n\n## 把 AI 使用经验当作代码协作\n\n成员探索出更有效的方法后，可以像修改代码一样提交变更，经合并请求评审后纳入团队版本，并在后续对话中同步给其他人。Git 同时提供了几项关键能力：\n\n- 记录规则由谁修改、为何修改；\n- 通过评审控制团队规范；\n- 保留版本历史，支持追溯和回退；\n- 让分散在个人电脑上的实践经验进入团队协作。\n\n## 轻量方案抓住了知识共享的核心\n\n作者认为，团队知识管理的首要问题往往不是分类和后台功能，而是变更、评审、版本与溯源，这些恰好是 Git 已成熟解决的问题。TeamAI-CLI 的意义在于，将 Git 从“管理共同生产的代码”延伸到“管理共同使用 AI 的方法”。\n\n不过，评论也提出两个现实问题：若不同方案都要集体评审，可能增加协作成本；如果团队原本已用 Git 管理相关文件，CLI 能带来多少额外价值，还要看其同步和集成能力。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727539053,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e10518855c3230216a3f90ee70c45cd7e6fd95239cc0a271982a5dcfa8437c42",
+  "refs": {
+    "sessionId": "1789704837814_iwhn8n4q"
+  },
+  "revisionId": "sha256:ab42713bd957098e172d51ac7f18f099b2e28c058fc27ea52b15e8fd86caef7f",
+  "schemaVersion": 1,
+  "updatedAt": 1789727539053
+}

@@ -1,0 +1,82 @@
+{
+  "createdAt": 1789874068608,
+  "entityType": "session",
+  "id": "1789874068608_rpamdzzd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评测浏览器智能体时，分别设置线性操作任务与包含弹窗、验证码或路径失败的长链路任务，观察成功率和回溯行为。",
+      "在依据文中成绩进行选型前，核对原始任务集、执行配置及JEV与Luna承担的角色，确认比较是否适配。"
+    ],
+    "archiveReason": "线性任务速度与复杂任务成功率的区分，以及对推理、回溯和评测适配性的关注，可用于浏览器智能体测试设计。",
+    "byline": "梭哈.AI",
+    "classifiedAt": 1790762376302,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "浏览器智能体的速度与长任务边界",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 992,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSmKVgzWIAAscsw?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSmKVgzWIAAscsw?format=jpg&name=medium",
+        "width": 714
+      }
+    ],
+    "knowledgePoints": [
+      "线性网页操作的速度和成本，与复杂长链路任务的成功率是不同的评测维度。",
+      "文章将浏览器交互视为状态空间搜索，提示应关注智能体在路径失败后的回溯与策略切换行为。",
+      "回复提出模型路由与完全自主执行可能是不同能力，比较成绩前需核对系统定位和评测目标是否一致。"
+    ],
+    "oneHighValuePoint": "不能用单一路径演示的速度替代复杂任务能力评估，应分别考察遇到分支、障碍时的策略调整与回溯能力。",
+    "oneLineReview": "对浏览器智能体评测有启发，但数据缺少可复核细节，“推理能力为零”的结论超出了现有证据。",
+    "primaryCategory": "AI Agent 评测",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性保留评测视角，不将未经核实的模型比较作为选型依据",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "浏览器自动化",
+      "AI 技术选型"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章引用一组未提供完整测试细节的成绩，指出JEV在快速线性网页操作与复杂长任务之间存在能力落差，强调推理和回溯的重要性。回复则质疑其路由模型定位与自主智能体评测是否匹配。",
+    "tags": [
+      "浏览器智能体",
+      "长链路任务",
+      "回溯机制",
+      "评测适配性"
+    ],
+    "title": "梭哈.AI: JEV 的能力边界慢慢开始暴露了 前几天，Browser Use 创始人 @gregpr07 开源的那个爆火 Demo（7 秒订机票、成本 $0",
+    "totalScore": 55,
+    "url": "https://x.com/SUOHA_AI/status/2101367171687280894"
+  },
+  "payloadHash": "sha256:c95587434254d5ffba19e72c5992d0aef028d8f272f88bc4a189b57933c334ff",
+  "refs": {},
+  "revisionId": "sha256:4b53bb7ebbf42b293ed5a81828516a58c5f85a3cbdc687121194500bd8f87366",
+  "schemaVersion": 1,
+  "updatedAt": 1790762377125
+}

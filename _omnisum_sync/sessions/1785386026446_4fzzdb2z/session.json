@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785386026446,
+  "entityType": "session",
+  "id": "1785386026446_4fzzdb2z",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "通过skills CLI或克隆并链接仓库，将video-shotcraft安装到Claude Code或Codex的skills目录。",
+      "先在Gallery选择镜头卡，或直接使用Ink Press模板，以目标产品截图和品牌文案制作一版测试视频。",
+      "发布前替换演示截图并检查数据脱敏、音频授权及Remotion商业许可要求。"
+    ],
+    "archiveReason": "项目提供可直接安装的Agent skill、完整成片模板、镜头配方、参考实现和渲染排障方案，具有较强复用价值。",
+    "classifiedAt": 1785386255857,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Agent产品视频制作技能库",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "镜头配方卡可将用途、能量、时长、参数、实现要点和已知问题封装为可复用的动态设计单元。",
+      "使用已验收的完整模板并替换截图、文案和品牌信息，是比从零编排镜头更快且质量更稳定的出片路径。",
+      "低配置无头Linux渲染需限制并发、使用chrome-headless-shell，并在CDN不可用时显式指定本地浏览器路径。"
+    ],
+    "oneHighValuePoint": "将镜头语言、Remotion实现、声音设计、完整模板和Agent工作流封装为可直接调用的产品视频制作系统。",
+    "oneLineReview": "这是一个资源完整、上手路径清晰且与AI产品开发高度相关的实用工具库，但效果与方法质量仍需通过实际项目验证。",
+    "primaryCategory": "AI Agent开发工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，作为Agent驱动产品视频制作的工具库与流程参考",
+    "secondaryCategories": [
+      "产品视频制作",
+      "Remotion开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍一个面向Claude Code与Codex的产品视频制作skill，内含镜头配方、Remotion动态样例、完整模板、音效素材和制作流程，并给出安装、调用及无头Linux渲染排障方法。",
+    "tags": [
+      "Claude Code",
+      "Codex",
+      "Remotion",
+      "产品宣传片",
+      "镜头配方"
+    ],
+    "title": "video-shotcraft/README_CN.md at main · Vincentwei1021/video-shotcraft",
+    "totalScore": 83,
+    "url": "https://github.com/Vincentwei1021/video-shotcraft/blob/main/README_CN.md"
+  },
+  "payloadHash": "sha256:e09b0cca5e62d885bdcf505b9528fbe2b9994be9c5577514d4ee1d7a2503fbc8",
+  "refs": {},
+  "revisionId": "sha256:2b6f848365cb9cad2e0c9e8d6be41f2268e67240f92494265f4f13c6f8d83e61",
+  "schemaVersion": 1,
+  "updatedAt": 1789694345062
+}

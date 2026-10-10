@@ -1,0 +1,24 @@
+{
+  "createdAt": 1788921156508,
+  "entityType": "message",
+  "id": "1788921233204_un2r1fa0",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# OpenShot 4.0：从剪辑工具升级为一体化视频创作平台\n\n## 一句话总结\n\nOpenShot 4.0 是一次大版本升级：新增多源录制、专业调色、本地 AI 抠像和 10 种特效，同时重构时间线并提升性能，目标是让用户在一款免费、开源的软件中完成“录制—剪辑—特效—调色—导出”的完整流程。\n\n## 核心升级\n\n### 1. 直接录制屏幕、摄像头和声音\n\n新增录制工作区，可同时采集：\n\n- 屏幕或窗口\n- 摄像头\n- 麦克风\n- 系统音频\n\n不同来源会保存为独立素材和轨道，方便分别剪辑、调音、裁切和添加特效。它尤其适合制作课程、演示、旁白、播客、反应视频和画中画内容。\n\n### 2. 引入更专业的调色能力\n\n新增独立的 Color View，提供：\n\n- 曝光、对比度、色温、阴影和高光调整\n- 阴影、中间调、高光色轮\n- RGB 曲线与 `.cube` LUT\n- 波形图、直方图、RGB Parade 和矢量示波器\n- 局部区域分析与肤色参考线\n- 全参数关键帧动画\n\nOpenShot 将基础校色和创意调色整合进同一个效果，同时提供自动对比度、提亮阴影、暖色调等预设，降低专业工具的使用门槛。\n\n### 3. 本地 AI 遮罩与对象追踪\n\n新的 Object Mask 能通过正负提示点选中人物或物体，并自动追踪整个片段。生成的遮罩可用于：\n\n- 背景移除或替换\n- 人脸、车牌等局部模糊\n- 主体单独调色\n- 像素化与视觉合成\n\n相关模型包括 YOLO、EfficientSAM 和 Cutie，均在本地运行，不需要上传素材、注册 AI 账号或支付云服务订阅费。\n\n### 4. 新增 10 种创意特效\n\n重点效果包括：\n\n- **Audio Visualization**：将声音生成波形、频谱、粒子和 VU 表等动态图形\n- **Beat Sync**：根据节拍触发闪光或颜色变化\n- **Film Grain**：模拟 35mm、16mm、Super 8 等胶片质感\n- **Denoise Image**：降低亮度噪点和彩色噪点\n- **Displacement Map**：制作水波、热浪和玻璃折射效果\n- **Glow / Shadow**：为文字、Logo 和主体添加光晕或阴影\n- **Timer**：生成正计时或倒计时\n- **Color Grade / Object Mask**：支持调色和 AI 遮罩工作流\n\n## 编辑体验与性能优化\n\n### 原生时间线重构\n\n旧的网页式时间线组件被原生 Qt 时间线替代，带来更流畅的缩放、更清晰的波形与关键帧，以及更一致的交互体验。\n\n用户现在可以直接编辑时间码，关键帧菜单也更直观；片段变速时，嵌套的调色和曲线关键帧会同步缩放。\n\n### 性能提升\n\n官方基准测试显示，相较 3.5.1：\n\n- Blur 模糊效果快约 **61.8%**\n- Sharpen 锐化效果快约 **12.8%**\n- 时间线渲染提升约 **3.4%**\n- 带变换的时间线测试提升约 **5.1%**\n\n此外，视频示波器、调色、胶片颗粒和音频可视化等功能也减少了不必要的计算。\n\n## 其他改进\n\n- 菜单按 Transform、Look、Audio、Speed、Motion 等编辑任务重新组织\n- 改进字幕预览与动画标题导出\n- 增强 Blender 5.x 动画标题兼容性\n- 优化 FLAC、SVG、EDL 和 Final Cut Pro XML 的处理\n- 新增 TikTok、Instagram、Facebook、Snapchat、LinkedIn 等平台导出预设\n- 扩展 Qt 6 与 PySide6 支持，改善高 DPI、主题和窗口行为\n- 为 Android 和 ARM64 做技术铺垫，但暂未宣布 Android 正式版本\n\n## 产品层面的意义\n\nOpenShot 4.0 的重点不是单纯增加功能，而是补齐视频创作链路。它正在从传统桌面剪辑器，转向集内容采集、专业后期、AI 辅助和平台化导出于一体的创作工具。\n\n其差异化优势主要有三点：\n\n1. **免费且开源**，降低专业视频制作门槛。\n2. **AI 能力本地化**，兼顾隐私、成本和可持续使用。\n3. **覆盖完整工作流**，减少用户在录屏、抠像、调色和剪辑工具之间切换。\n\n整体来看，OpenShot 4.0 更适合教育、播客、社交媒体和轻量专业制作，也进一步缩小了其与商业视频编辑软件之间的功能差距。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1788921156508,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:cd64b56a440c8e5d3fd61b4a5c613756edfc51e636edeaff3d33517b777a08ff",
+  "refs": {
+    "sessionId": "1788921232678_ej7b1h45"
+  },
+  "revisionId": "sha256:da8eb055eb7aff4f7ce3947a8b4450dac17859a09c683282af00938d71ef9620",
+  "schemaVersion": 1,
+  "updatedAt": 1788921156508
+}

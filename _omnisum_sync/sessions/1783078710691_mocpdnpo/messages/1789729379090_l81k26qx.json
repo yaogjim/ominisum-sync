@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729379089,
+  "entityType": "message",
+  "id": "1789729379090_l81k26qx",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Pi Agent：以极简内核换取高度可定制的 AI 编程工作流\n\nPi 是 OpenClaw 背后的编码智能体框架，核心取舍是“少做预设、开放扩展”。默认仅提供 bash、read、write、edit 四种工具，不内置 MCP、子代理、计划模式或权限弹窗。它适合愿意自行搭建工作流的用户；若追求开箱即用，Claude Code 或 Codex 更合适。\n\n## 扩展是 Pi 的核心能力\n\nExtension 是自动加载的 TypeScript 模块，可通过热更新快速生效，主要用于：\n\n- 注册模型可调用的工具和斜杠命令；\n- 拦截或修改工具调用、注入上下文、自定义压缩；\n- 定制问答框、编辑器和状态界面；\n- 持久化 TODO 等跨会话状态。\n\n用户也可直接让 Pi 编写扩展，例如为 `rm -rf`、`sudo` 等危险命令增加确认，或复刻 Claude Code Hooks。\n\n## 模板与 Package 让配置可复用\n\n提示模板是带 front-matter 的 Markdown 文件，类似自定义斜杠命令，支持参数传递。Pi Package 则把扩展、技能、模板和主题打包，可通过 Git 或 npm 安装、分享，并允许多个包共存，相当于可组合的配置单元。\n\n但 Package 拥有完整系统权限：扩展可执行任意代码，技能也可能引导模型运行程序，因此第三方包必须先审查源码。\n\n## 生态正在补齐极简内核的缺口\n\n文章称截至 2026 年 5 月，生态已有 3,328+ 个包。推荐能力包括：压缩上下文、子代理协作、MCP 接入、联网与 PDF/视频解析、LSP 和代码检查、计划评审、持久化任务及费用状态栏。Pi 的价值不在默认功能丰富，而在于用户可像配置 Neovim 一样，组合出自己的 Agent Harness（运行与协作工作流）。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729379089,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:11fe8f629ae12835e3746ae290d706e563c883d127db7a09bd9c901093d5fcc4",
+  "refs": {
+    "sessionId": "1783078710691_mocpdnpo"
+  },
+  "revisionId": "sha256:96c8a339fe69e8772d0c761e27c8935cd0013b04af60c3ea22a83f449d9a4f4c",
+  "schemaVersion": 1,
+  "updatedAt": 1789729379089
+}

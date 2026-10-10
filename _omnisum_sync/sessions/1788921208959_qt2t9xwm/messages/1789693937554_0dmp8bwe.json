@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693937552,
+  "entityType": "message",
+  "id": "1789693937554_0dmp8bwe",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者实测发现：Qwen3.8 27B 压缩到 17GB 的 4-bit 版本，多个基准上几乎不损失能力；降到 2-bit 才有明显退步，而 1-bit 基本失效。\n\n## 关键内容\n\n- **4-bit 性价比最高**：Q4_K_M 在科学问答、指令遵循和智能体编程测试中与 55GB 的 BF16 原版基本持平，可装入 RTX 4090 等 24GB 显卡，并留出一定上下文空间。\n- **2-bit 尚可用**：不到 11GB 的 UD-Q2_K_XL 在简单指令任务中表现稳定，但科学问答和编程能力有所下降，完成相同任务时输出约多四分之一。\n- **1-bit 出现“断崖”**：GPQA 成绩接近随机猜测；高强度推理反而更差，因为模型更容易耗尽 token 后交出空答案。\n- **推理强度影响可能大于量化**：默认的 xhigh 通常更强，但也可能“想太多”，并非所有任务都适合。\n\n## 通俗解读\n\n量化不是按比例让模型变笨：前几档压缩可能几乎无感，越过临界点后才突然崩溃。“保留 72% 的首选 token”也不等于保留 72% 的解题能力，因为关键一步选错就可能让整条推理失败。结论仅基于三个基准；部分量化文件已被替换，且编程测试未实际跑 8-bit。**若在选择本地部署规格，值得细读；只关心结论则选 4-bit 即可。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693937552,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0fcbbfc8386e578d2c9fb584bf026b4f9466aa56dad33156ac78289843c1b301",
+  "refs": {
+    "sessionId": "1788921208959_qt2t9xwm"
+  },
+  "revisionId": "sha256:c84a0186d2bd979fab3d60d75913cdd19ac2cf8c75dc88e17773658d99d5d177",
+  "schemaVersion": 1,
+  "updatedAt": 1789693937552
+}

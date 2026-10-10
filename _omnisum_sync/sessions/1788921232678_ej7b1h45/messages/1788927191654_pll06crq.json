@@ -1,0 +1,24 @@
+{
+  "createdAt": 1788927073902,
+  "entityType": "message",
+  "id": "1788927191654_pll06crq",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# OpenShot 4.0：整合录制、专业调色、本地 AI 蒙版与原生时间线\n\nOpenShot 4.0 将录制、剪辑、调色、动态图形、本地机器学习和导出进一步整合到免费开源编辑器中。作者认为，这次升级的核心价值是减少创作者在不同工具和工作流程之间切换，同时提升编辑效率、控制精度与平台兼容性。\n\n## 专业调色工具集中进入全新 Color View\n\n- **核心观点：** 新增的 Color View 同时面向快速修正和精细调色，用户既可直接套用预设，也可使用色轮、曲线、LUT 和视频示波器。\n- **关键事实或依据：** Color Grade 效果提供曝光、对比度、色温、色调、高光、阴影、饱和度和自然饱和度等控制，并支持全局、阴影、中间调和高光色轮。\n- **重要数据或案例：** 用户可编辑整体及红、绿、蓝通道的四条曲线，导入标准 `.cube` LUT 并调整强度；Luma Waveform、Histogram、RGB Parade 和 Vectorscope 可实时分析画面或指定区域。\n- **本段结论：** 调色参数、曲线、色轮、LUT 强度和整体混合均可设置关键帧，既能处理镜头内光线变化，也能制作动态风格转换。\n\n## 录屏、摄像头、麦克风和系统音频可直接进入项目\n\n- **核心观点：** Recording View 将采集与后期编辑连接起来，减少先用其他软件录制、再导入素材的步骤。\n- **关键事实或依据：** 麦克风、屏幕、摄像头和系统音频可任意组合录制，每个来源都会保存为独立媒体文件和时间线片段，并保持同步。\n- **重要数据或案例：** 用户可分别调整人声音量、裁切摄像头画面、移动画中画或单独添加效果；也可在播放现有项目时录制旁白、评论、课程或演示。\n- **本段结论：** 功能支持 Windows、macOS、Linux X11，以及使用 PipeWire 的 Linux Wayland，但可用的屏幕、窗口、区域、摄像头和系统音频选项取决于平台、硬件与权限。\n\n## 十种新效果扩展声音、影像风格与动态设计\n\n- **核心观点：** 新效果兼顾日常修复和创意制作，包括 Audio Visualization、Beat Sync、Film Grain、Denoise Image、Shadow、Glow、Displacement Map、Timer、Color Grade 与 Object Mask。\n- **关键事实或依据：** Audio Visualization 可生成波形、频谱、柱状图、径向图案、粒子和 VU 表；Beat Sync 可把音频能量转成随节拍和响度变化的颜色层。\n- **重要数据或案例：** 文章称其测试中所有音频可视化模式均高于常见的 24、30 和 60 FPS，最复杂模式超过 170 FPS，Bars、PhaseScope 和 VU Meter 超过 1,000 FPS；这些数字只衡量效果处理，不代表完整播放或导出速度。\n- **本段结论：** 新效果覆盖音乐视频、播客、社交媒体、降噪、电影颗粒、发光阴影、倒计时及画面扭曲等多类工作流。\n\n## 本地机器学习实现主体选择、跟踪与复用蒙版\n\n- **核心观点：** Object Mask 通过正负提示点选择主体并跟踪整个片段，降低逐帧手动画蒙版的工作量。\n- **关键事实或依据：** OpenShot 使用可免费下载并在本机运行的 YOLO、EfficientSAM 和 Cutie ONNX 模型，不要求上传素材，也不需要云端 AI 账户或订阅。\n- **重要数据或案例：** 生成的蒙版可单独显示，也可供 Blur、Pixelate、Color Grade 等效果调用；用户可处理主体、反转后处理背景，或叠加多个效果。Object Detection 还新增 YOLOv5 ONNX 模型、模型验证、分割蒙版及对象显示和变换控制。\n- **本段结论：** 这些 AI 功能的速度取决于电脑性能和所选模型，但功能访问不依赖付费云服务。\n\n## 原生 Qt 时间线改善操作一致性与性能\n\n- **核心观点：** OpenShot 4.0 完成从旧网页时间线组件向原生 Qt 时间线的迁移，使片段、转场、关键帧、轨道和标尺交互更统一。\n- **关键事实或依据：** 新时间线改善了缩放平滑度、缩略图间距、效果图标可见性、关键帧菜单和直接编辑时间码等功能；片段变速时，嵌套关键帧也会同步缩放。\n- **重要数据或案例：** 根据项目方与 3.5.1 的基准测试，Blur 测试负载加快 61.8%，Sharpen 加快 12.8%，时间线渲染提升 3.4%，包含变换时提升 5.1%；实际结果会随硬件、素材、效果和项目复杂度变化。\n- **本段结论：** 作者强调，时间线性能增幅虽小于 Blur，但因其贯穿预览、滚动、缩放、变换和关键帧操作，对整体响应速度影响更广。\n\n## 剪辑菜单、导入导出与跨平台基础同步现代化\n\n- **核心观点：** 4.0 不只增加核心功能，也重新整理了动作、外观、音频、速度和运动菜单，并完善标题、字幕、媒体导入及导出流程。\n- **关键事实或依据：** 更新包括字幕预览、动画标题导出为 MP4、Blender 5.x 兼容、FLAC 处理、SVG 缩略图，以及 EDL 和 Final Cut Pro XML 的兼容性修复；导出预设新增 TikTok、Instagram、Facebook、Snapchat 和 LinkedIn 等平台。\n- **重要数据或案例：** Qt 6 与 PySide6 支持得到扩展，Windows、macOS 和 Linux 的高 DPI、窗口、主题及现代 Linux 桌面门户也得到改进；libopenshot 和 libopenshot-audio 均升至 1.0.0。\n- **本段结论：** 代码已加入部分 Android 文件访问、渲染、Qt 绑定和 ARM64 内存支持，但文章明确说明 Android 并非 OpenShot 4.0 的正式支持平台，也没有发布日期。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1784166291670",
+    "prompt_template_name": "结构化精读",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1788927073902,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1b04cadfd8b55da7e986d67ce05d43d212be462f1676afa0e7cf9fab3a0661b9",
+  "refs": {
+    "sessionId": "1788921232678_ej7b1h45"
+  },
+  "revisionId": "sha256:6b2e11305fcb71dacc2a3a036bc3cb9e8abaf312a4e9396af40e67bf3cbe14a4",
+  "schemaVersion": 1,
+  "updatedAt": 1788927073902
+}

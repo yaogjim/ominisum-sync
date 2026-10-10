@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785483983055,
+  "entityType": "session",
+  "id": "1785483983055_j09ckyev",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "购买前通过Google提供的方式核验设备是否采用官方Android TV系统并具备Play Protect认证。",
+      "优先选择信誉可靠的品牌，并谨慎、最小化安装第三方应用。",
+      "购买随机品牌物联网设备前查询Synthient维护的预装住宅代理及恶意应用设备清单。"
+    ],
+    "archiveReason": "包含较完整的技术调查证据、欺诈链路和设备选购核验建议，具有跨物联网产品的参考价值",
+    "classifiedAt": 1785484299805,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "廉价电视盒子的隐蔽欺诈网络",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "krebsonsecurity.com",
+    "favicon": "https://krebsonsecurity.com/favicon.ico",
+    "knowledgePoints": [
+      "恶意电视盒子可伪装成不同品牌的手机，仅在匹配伪造设备画像时加载并点击欺诈广告。",
+      "Blockly等低代码工具可将浏览、翻页、标签管理和广告点击封装成模块，显著降低大规模欺诈运营门槛。",
+      "廉价物联网设备的风险不仅来自漏洞，还包括出厂预装的住宅代理、后门和未经认证的操作系统。"
+    ],
+    "oneHighValuePoint": "同一电视盒子会依据HDMI使用状态，在住宅代理和资源消耗更高的广告欺诈任务之间自动切换。",
+    "oneLineReview": "这是一篇证据较充分的物联网安全调查，兼具新案例、技术链路和直接的消费决策价值。",
+    "primaryCategory": "物联网安全",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，作为物联网供应链风险和自动化欺诈模式的案例参考",
+    "secondaryCategories": [
+      "广告欺诈",
+      "AI滥用"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章依据Bitsight对H96电视盒子的遥测和应用分析，揭示设备在住宅代理与广告点击欺诈间切换，并通过手机身份伪装、AI生成网站和Blockly模块化任务牟利，同时给出购买与认证核验建议。",
+    "tags": [
+      "电视盒子",
+      "住宅代理",
+      "广告欺诈",
+      "设备供应链",
+      "Android安全"
+    ],
+    "title": "Read This Before You Buy That TV Streaming Stick",
+    "totalScore": 72,
+    "url": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/"
+  },
+  "payloadHash": "sha256:d22b046c66afd84a26a372f1fac74f72d43e3f37c103b92b35d66585139748af",
+  "refs": {},
+  "revisionId": "sha256:9ce600a3734c91d107cf33ab1a228a7c81f6d3c735b039f586970f64211f3fcb",
+  "schemaVersion": 1,
+  "updatedAt": 1789694304958
+}

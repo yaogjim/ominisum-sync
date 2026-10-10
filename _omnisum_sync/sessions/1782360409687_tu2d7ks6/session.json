@@ -1,0 +1,67 @@
+{
+  "createdAt": 1782360409687,
+  "entityType": "session",
+  "id": "1782360409687_tu2d7ks6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若从事 AI Agent 开发，可访问 Omnigent 官网或 Databricks 博客查看完整技术细节。",
+      "关注其是否提供稳定 API、示例项目和与现有 Agent 框架的实际集成能力。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782361931950,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Omnigent多智能体元框架发布",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Omnigent 是用于组合多个 AI Agent 框架的 meta-harness。",
+      "其核心方向包括组合、实时协作和控制策略。",
+      "支持本地运行以及 Docker、Railway、Fly、Modal、Daytona 等部署环境。",
+      "项目试图解决多个 Agent 框架之间难以统一编排的问题。"
+    ],
+    "oneHighValuePoint": "Omnigent 关注在不同 Agent harness 之上的统一组合、协作和控制层，反映了多智能体工程化的发展趋势。",
+    "oneLineReview": "这是一个值得关注的 AI Agent 工具发布线索，但当前信息过于简略，不足以支撑深入学习。",
+    "primaryCategory": "人工智能",
+    "rating": "C",
+    "rejectReason": "内容主要是项目发布公告，缺少技术细节、实证案例和可直接复用的方法论。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "AI Agent",
+      "开发工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "Matei Zaharia 宣布开源 Omnigent，一个面向 AI Agent 的元框架，支持在 Claude Code、Codex、Pi 等工具之上组合多智能体，并提供协作、控制和部署能力。",
+    "tags": [
+      "Omnigent",
+      "多智能体",
+      "AI代理",
+      "开源项目",
+      "Databricks"
+    ],
+    "title": "Matei Zaharia: Really excited to open source a new project: Omnigent, a meta-harness for AI age…",
+    "totalScore": 47.5,
+    "url": "https://x.com/matei_zaharia/status/2065827057624605146"
+  },
+  "payloadHash": "sha256:7575555b38839e84220d5e07973431058c61a7452a8d213934e8b97d79cd36c0",
+  "refs": {},
+  "revisionId": "sha256:27d5ab39a22fa0a86f5fb7f2a0fdb88c64c05f5f6776489b1cc28edc9fb49cb8",
+  "schemaVersion": 1,
+  "updatedAt": 1782361932490
+}

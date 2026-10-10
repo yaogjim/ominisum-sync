@@ -1,0 +1,84 @@
+{
+  "createdAt": 1790217445634,
+  "entityType": "session",
+  "id": "1790217445634_ifecu6l9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查阅所附完整拆解报告，核对部件定价依据、机型差异及毛利估算是否包含制造等成本。",
+      "在硬件方案评审中同步比较部件价格、重量及其释放的传感器和计算能力预算。",
+      "评估硬件供应链时记录电路板交付周期，并检查关键芯片替换涉及的软件适配成本。"
+    ],
+    "archiveReason": "性能重量比、软硬件锁定和供应链迭代速度具有可复用的产品分析价值，但不宜将帖中的成本与毛利估算直接作为决策依据。",
+    "byline": "Pratap Ranade",
+    "classifiedAt": 1790767957411,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "大疆无人机拆解与硬件竞争壁垒",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 980,
+        "id": "img-6",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HS4Z92vaMAAlZcM?format=png&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HS4Z92vaMAAlZcM?format=png&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "帖子以电池选型说明，单个部件成本更高可能换来系统性能提升，部件应结合重量预算和整机能力评估。",
+      "帖子称大疆仍采用u-blox定位芯片，提示软硬件适配形成的迁移成本可能比替代部件是否存在更重要。",
+      "供应链交付周期会影响硬件迭代速度，竞争分析不能只比较物料价格和最终产品参数。"
+    ],
+    "oneHighValuePoint": "硬件设计应关注系统级性能重量比：更轻但更贵的电池可能释放重量预算，使产品容纳更多传感器与计算能力，而非单纯追求最低部件成本。",
+    "oneLineReview": "拆解提供了有参考价值的硬件竞争视角，但帖子未展示定价依据和完整成本口径，对美国厂商竞争能力的结论也较宽泛。",
+    "primaryCategory": "硬件产品与竞争战略",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性保留产品设计与竞争分析要点，关键数据需核验原始报告",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "产品设计",
+      "供应链与制造"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "帖子概述对大疆两代Mini无人机的拆解，讨论物料成本、自研芯片、软件锁定、电池重量与自主性的关系，并将竞争优势归因于深圳供应链的快速迭代；附原报告链接及逆向工程合作讨论。",
+    "tags": [
+      "无人机拆解",
+      "物料成本",
+      "自研芯片",
+      "性能重量比",
+      "硬件迭代"
+    ],
+    "title": "Animesh Chouhan: @PratapRanade @DJIGlobal amazing teardown",
+    "totalScore": 62,
+    "url": "https://x.com/animeshsingh38/status/2102647129261129898"
+  },
+  "payloadHash": "sha256:157852f044a939a6550205c5296cb588b3fcda1c06de536c2bf72efe916a7a50",
+  "refs": {},
+  "revisionId": "sha256:9e56df804987f3382d944f6a9bf2079b375cb6e544f2eca37c93f354d4434198",
+  "schemaVersion": 1,
+  "updatedAt": 1790767958221
+}

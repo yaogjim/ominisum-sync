@@ -1,0 +1,23 @@
+{
+  "createdAt": 1783064355059,
+  "entityType": "message",
+  "id": "summary_template_1772076842437_1783064355059",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Agent / Daemon 文档精炼解读\n\n## 一、深度总结\n\nSummarize 的**Automation Agent**是 Chrome 侧边栏里的可选网页自动化代理。\n\n核心机制：\n\n> **侧边栏负责对话与代理循环，后台负责页面数据和工具执行，守护进程负责模型调用。**\n\n### 1. 启用方式\n\n默认关闭。\n\n- 关闭：普通聊天问答，无工具能力\n- 开启：聊天变成可操作网页的 Agent\n\n产品明确不做：\n\n- 更新检查器\n- 教程 / 欢迎页\n- 代理配置页\n- API Key 弹窗\n\n所有模型调用都走本地 daemon。\n\n---\n\n### 2. 架构分工\n\n| 模块 | 职责 |\n|---|---|\n| Side Panel | 聊天 UI、代理循环 |\n| Background | 标签页数据、页面提取、工具执行 |\n| Content Script | 元素选择、原生输入桥接 |\n| Daemon | `/v1/agent`模型接口，返回助手消息 |\n\n关键原则：\n\n> **Daemon 不执行工具，只决定下一步；工具永远在本地浏览器执行。**\n\n---\n\n### 3. Agent 工作流\n\n流程如下：\n\n1. 用户在侧边栏输入消息\n2. 侧边栏整理历史，发给后台\n3. 后台拼接当前网页内容\n4. 后台请求 daemon `/v1/agent`\n5. daemon 流式返回文本和助手消息\n6. 如果助手要求调用工具，侧边栏本地执行\n7. 工具结果追加进对话\n8. 重复请求 daemon，直到不再需要工具\n\n这就是一个典型的：\n\n> **“模型决策，本地执行，循环反馈” Agent 模式。**\n\n---\n\n### 4. 页面上下文\n\nAgent 会把当前页面信息传给模型，包括：\n\n- 页面摘要\n- 文本 / 转录内容\n- URL、标题\n- 提取方式\n- 字数、截断状态\n- 视频时长、缓存信息等\n\n这让模型不是 “盲聊”，而是基于当前网页理解任务。\n\n---\n\n### 5. 支持的工具\n\n| 工具 | 作用 |\n|---|---|\n| `navigate` | 打开或跳转网页 |\n| `repl` | 在页面环境中执行 JS |\n| `ask_user_which_element` | 让用户点击选择元素 |\n| `skill` | 管理特定网站的自动化技能库 |\n| `debugger` | 用 Chrome 调试协议执行 JS |\n| `summarize` | 对 URL 运行摘要 / 提取流程 |\n\n其中最关键的是：\n\n- `repl`：网页操作核心\n- `ask_user_which_element`：解决模型不确定元素的问题\n- `skill`：沉淀网站自动化经验\n- `debugger`：最后手段，能力强但侵入性更高\n\n---\n\n### 6. 权限与安全\n\n自动化需要用户显式开启。\n\n可选权限包括：\n\n- `debugger`：原生点击、输入、按键需要\n- `userScripts`：用于主世界脚本执行\n\n安全设计包括：\n\n- 工具结果被当作数据，不是指令\n- REPL 禁止直接用`window.location`等方式跳转\n- 导航必须通过`navigate ()`\n- debugger 工具标记为最后手段\n- 用户可通过覆盖层选择元素，也可取消\n\n---\n\n## 二、深入浅出解读\n\n可以把它理解成一个 “会看网页、会动手、但不直接碰系统核心” 的网页助手。\n\n### 它像什么？\n\n像一个坐在你浏览器旁边的助理：\n\n1. 先读懂当前网页\n2. 根据你的要求想下一步\n3. 如果要点按钮、跳页面、填表，就调用工具\n4. 操作完再看结果\n5. 继续判断下一步\n\n但它不是完全放任模型乱操作。\n\n模型只负责 “想”，真正的 “做” 由浏览器本地工具完成。\n\n---\n\n### 为什么要 daemon？\n\nDaemon 是模型调用中枢。\n\n好处：\n\n- API Key 不暴露给前端\n- 模型选择统一管理\n- 可支持 OpenAI、Anthropic、Google、xAI、OpenRouter、本地模型等\n- Chrome 扩展更轻量\n\n简单说：\n\n> Chrome 扩展管浏览器，daemon 管 AI。\n\n---\n\n### 为什么工具不在 daemon 执行？\n\n因为工具操作的是用户浏览器页面。\n\n如果 daemon 直接执行工具，会带来：\n\n- 权限边界混乱\n- 安全风险更高\n- 页面状态同步困难\n- 本地浏览器控制复杂\n\n所以设计成：\n\n> daemon 给建议，浏览器本地执行。\n\n这个边界很重要。\n\n---\n\n### `skill`的意义\n\n`skill`是自动化能力的积累机制。\n\n比如某个网站结构复杂，Agent 可以保存一段专门适配该网站的脚本逻辑。\n\n以后再访问类似页面，就能复用。\n\n这让 Agent 不只是一次性执行任务，而是可以逐渐形成：\n\n> 网站级经验库。\n\n---\n\n## 三、辩证思考\n\n### 优点\n\n1. **架构清晰**\n   - 模型、界面、工具、页面脚本分层明确。\n\n2. **安全边界较好**\n   - daemon 不直接执行工具。\n   - 自动化默认关闭。\n   - debugger 是可选权限。\n\n3. **扩展性强**\n   - 可接多个模型。\n   - 可增加工具。\n   - 可沉淀 skill。\n\n4. **适合真实网页任务**\n   - 能读页面、点元素、输入文本、跳转、总结 URL。\n\n---\n\n### 风险\n\n1. **权限风险**\n   - 一旦启用 debugger，能力很强，也更敏感。\n\n2. **工具调用误判**\n   - 模型可能选错元素、误填表单、误导航。\n\n3. **提示注入风险**\n   - 网页内容可能诱导模型执行错误操作。\n\n4. **复杂度高**\n   - side panel、background、content script、daemon 多方协作，调试成本不低。\n\n5. **用户信任问题**\n   - 自动化代理在浏览器里操作，用户需要知道它 “做了什么”。\n\n---\n\n### 我的判断\n\n这个设计方向是合理的：\n\n> 它不是把 AI 做成一个 “万能黑盒”，而是做成一个有边界、有工具、有反馈循环的浏览器代理。\n\n但真正落地的关键不在 “能不能自动化”，而在：\n\n- 是否足够透明\n- 是否可控\n- 是否能防提示注入\n- 是否能让用户随时中断\n- 是否能清楚展示每一步操作原因\n\n一句话总结：\n\n> 这是一个偏工程化、偏安全边界清晰的网页 Agent 方案；潜力大，但必须把权限、可解释性和用户控制放在第一位。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "解读",
+    "timestamp": 1783064355059,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6ada4d6434d585a680267afcd7dfab9b0a73d942379f00f2da109420cb5f451f",
+  "refs": {
+    "sessionId": "1783064355107_dwjqt4pq"
+  },
+  "revisionId": "sha256:d0d57a2905fd68dd3cb707351e1dafbebb4e608da7f4ee1392e99cb21322f692",
+  "schemaVersion": 1,
+  "updatedAt": 1783064355059
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1790232155739,
+  "entityType": "message",
+  "id": "1790232256566_qnfyjc1d",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Qwen Intelligence：让手机 AI 从回答问题走向完成任务\n\n**这篇帖子关注的是：AI 能否替用户在手机上规划并办完一件事，而不只是提供建议。** Qwen 推出的 Qwen Intelligence 由三个智能体分别负责规划、执行和创作。作者认为，这是手机 AI 深度融入系统的一个重要方向，但其实际可靠性，以及能否完全在手机本地运行，仍是关键问题。\n\n## 三个智能体怎样配合\n\n**Mobile Planner Agent 负责把请求变成可执行的步骤。** 例如，用户提出一个涉及多个应用的目标，它需要先判断要做哪些事、按什么顺序做。Qwen 称，它在 MobilePA-Bench 等规划与记忆测试中排名第一。\n\n**Mobile-Use Agent 负责跨应用执行。** 它优先调用应用提供的接口；没有合适接口时，再通过点击屏幕等方式操作界面。Qwen 报告其端到端成功率为 90%，并给出了 MobileWorld 82.1、MobileWorld-Real 92.2、AndroidDaily 97.2 等测试成绩。这些是官方公布的测试结果，不能直接等同于用户在所有真实手机任务中的成功率。\n\n**Mobile Creative Agent 负责快速生成内容。** Qwen 称，用户输入一句话后，它约 3 秒就能生成可使用的图像，速度约为领先同类产品的两倍。Qwen 还表示将开放覆盖规划、跨应用执行、真机表现和安全性的测试套件。\n\n## 真正的门槛是可靠执行与本地运行\n\n作者认为，Apple Intelligence 和 Gemini 已进入手机，但目前表现只是“还算可以”；下一步更大的变化，是让 AI 深入系统，持续替用户完成任务。不过，**在手机端完全运行 AI，需要足够强的小模型，作者认为目前还没有完全做到。** 帖子也没有证明 Qwen 这套能力已经完全在本地运行。\n\n另一条相关回复指出，90% 的成功率固然亮眼，但用户是否敢托付真实任务，还取决于失败时会怎样：遇到权限弹窗、应用改版或点错位置，智能体能否发现问题并恢复。换言之，**能完成演示任务是一回事，出错后仍能稳妥办事是另一回事。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1790232155739,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:08c710ddff330968b5002c8ae735293b14433560cd751ab118df520ddfb9846a",
+  "refs": {
+    "sessionId": "1790223901379_bhu0ov6l"
+  },
+  "revisionId": "sha256:843ce47211470ac04e1122102c6acc2f389be5c2c1e06f54a01e34d55416a7fe",
+  "schemaVersion": 1,
+  "updatedAt": 1790232155739
+}

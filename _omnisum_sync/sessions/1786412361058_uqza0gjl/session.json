@@ -1,0 +1,70 @@
+{
+  "createdAt": 1786412361058,
+  "entityType": "session",
+  "id": "1786412361058_uqza0gjl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "建立智能体执行环境选型清单，对比容器、microVM 和完整虚拟机在隔离、启动成本、Docker-in-Docker 与长期任务方面的差异。",
+      "将智能体出站网络设为默认拒绝，并把每个凭据限定到明确的目标主机和认证请求头，同时验证沙箱无法直接读取真实密钥。",
+      "对高风险编码任务使用临时副本或独立工作树，先审查 diff，再将确认后的提交应用到真实仓库。"
+    ],
+    "archiveReason": "汇集了智能体沙箱的关键安全机制、实际使用问题和多个替代方案，适合作为选型与威胁建模参考。",
+    "classifiedAt": 1789725114909,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI智能体微虚拟机沙箱实践讨论",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "news.ycombinator.com",
+    "favicon": "",
+    "images": [],
+    "knowledgePoints": [
+      "Docker Sandboxes 据官方说明并非普通容器，而是每个会话拥有独立内核的 microVM，并调用 Hypervisor.framework、WHP 或 KVM。",
+      "真实凭据可保留在宿主机钥匙串中，由网络代理仅在目标主机匹配时注入认证头；沙箱内只保留占位符。",
+      "复制工作树并通过 diff/apply 回放变更，可降低实时挂载仓库时恶意 Git hooks、构建脚本或 IDE 配置被遗留的风险。"
+    ],
+    "oneHighValuePoint": "智能体安全不能只依赖运行隔离，还应组合使用独立内核、默认拒绝的出站网络、限定目标主机的凭据注入，以及可审查的工作区变更流程。",
+    "oneLineReview": "主题高度相关且包含实用架构线索，但讨论分散、自荐内容较多，并缺少独立性能数据与安全审计证据。",
+    "primaryCategory": "AI Agent安全与基础设施",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "归档并重点阅读安全架构、凭据处理和工作区隔离相关讨论",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI编程工具",
+      "虚拟化与沙箱"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "讨论围绕 Docker 的 AI 智能体 microVM 沙箱展开，涵盖跨平台隔离、出站防火墙、按域名注入凭据、工作树隔离及多种开源替代方案，同时指出性能、文档成熟度和授权滥用风险仍缺乏充分验证。",
+    "tags": [
+      "microVM",
+      "智能体沙箱",
+      "出站网络控制",
+      "凭据注入",
+      "工作树隔离"
+    ],
+    "title": "Docker Sandboxes – Disposable, isolated sandboxes for AI agents | Hacker News",
+    "totalScore": 72,
+    "url": "https://news.ycombinator.com/item?id=49239751"
+  },
+  "payloadHash": "sha256:11423ec15a273b320b61244b96a55924ac78d100c8cd17b94759b1d10c422e2e",
+  "refs": {},
+  "revisionId": "sha256:f8a652681ab72e89257c1e58b664d35f25020ca759483f7607ff543afa0e0415",
+  "schemaVersion": 1,
+  "updatedAt": 1789863543962
+}

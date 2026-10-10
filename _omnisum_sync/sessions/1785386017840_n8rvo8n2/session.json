@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785386017840,
+  "entityType": "session",
+  "id": "1785386017840_n8rvo8n2",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "让Claude Code或Codex克隆video-shotcraft仓库，并将其导入技能目录。",
+      "选择一个简单的产品视频需求，调用命名镜头配方卡生成小样。",
+      "核验安装依赖、输出质量、可编辑性和实际制作耗时，再决定是否用于生产。"
+    ],
+    "archiveReason": "提供了可直接测试的开源仓库，并展示了将镜头语言封装为命名配方卡的可复用思路。",
+    "classifiedAt": 1785386279197,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code产品视频工作流",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent技能可以将领域代码、预设和模板打包，使通用编程代理承担特定内容生产任务。",
+      "命名镜头配方卡为Agent提供了明确的镜头调用接口，有助于约束和复用镜头语言。",
+      "动态预览与生产模板可以降低从空白项目开始设计和筛选镜头的成本。"
+    ],
+    "oneHighValuePoint": "将镜头语言封装为可按名称调用的配方卡，可减少Agent临场创造镜头时的不确定性，并提高视频生成的一致性。",
+    "oneLineReview": "这是一个值得快速试验的AI视频技能线索，但帖子偏推广，缺少环境要求、成片对比和效率数据。",
+    "primaryCategory": "AI编程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留仓库链接并选择性浏览，适合作为AI产品视频工作流的试验素材",
+    "secondaryCategories": [
+      "AI视频生成",
+      "产品内容制作"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "帖子介绍video-shotcraft：通过106张命名镜头配方卡、161个动态预览和生产模板，将Claude Code或Codex转化为产品视频生成工作流，并给出让代理安装仓库的简要方法。",
+    "tags": [
+      "Claude Code",
+      "Codex",
+      "视频生成",
+      "镜头配方卡",
+      "Agent技能"
+    ],
+    "title": "Axel Bitblaze 🪓: You can turn claude code into a cinematic video studio with one skill",
+    "totalScore": 63,
+    "url": "https://x.com/Axel_bitblaze69/status/2082487199765844066"
+  },
+  "payloadHash": "sha256:76e5c2075f33ea0cadd7107002041c49cf28b1ea04e8472b37c66473da28d9be",
+  "refs": {},
+  "revisionId": "sha256:11b90f4ee16a848acad740c99727989d0bec5b39f9dae445f44bb8f60dc4bcba",
+  "schemaVersion": 1,
+  "updatedAt": 1789694350236
+}

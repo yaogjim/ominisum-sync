@@ -1,0 +1,84 @@
+{
+  "createdAt": 1786093931242,
+  "entityType": "session",
+  "id": "1786093931242_10xig35s",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为推理项目建立吞吐量、单用户生成速度、延迟和单位token成本指标，联合评估模型结构、调度策略与硬件适配。",
+      "持续跟踪vLLM的GitHub、中文社区和近期路线图，在新模型发布前识别适配需求。",
+      "维护大型开源项目时建立贡献者认证、自动化PR筛选和明确的技术决策机制，以降低低质量代码带来的审查成本。"
+    ],
+    "archiveReason": "与AI基础设施和商业系统构建高度相关，包含可复用的软硬件协同、社区治理及开源商业化判断框架。",
+    "byline": "向阳乔木",
+    "classifiedAt": 1786094068762,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "vLLM开源创业与推理协同",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HO5Bt5ZacAAMGr8?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HO5Bt5ZacAAMGr8?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "PagedAttention借鉴虚拟内存机制管理KV cache，而vLLM的核心价值已从单一算法扩展为兼容多模型、多硬件的推理生态。",
+      "专用硬件时代存在“硬件彩票”：模型运算结构是否匹配芯片能力，会直接限制可实现的吞吐量、延迟和成本。",
+      "文章提出开源项目长期发展的三个条件：解决广泛需求、由相对中立的创业公司持续支撑、创始团队长期参与治理。"
+    ],
+    "oneHighValuePoint": "模型结构决定推理效率上界，专用硬件时代必须把模型、推理引擎与硬件能力协同设计，而不能依赖系统工程事后弥补。",
+    "oneLineReview": "覆盖技术、治理与商业化的高相关度访谈整理，但大量数据和轶事来自二手转述，仍需核验原始来源。",
+    "primaryCategory": "AI基础设施与开源创业",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，重点保留推理协同设计、开源治理和商业化框架",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "大模型推理优化",
+      "开源社区治理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章梳理vLLM从PagedAttention论文成长为开源推理生态及Inferact公司的过程，涵盖DeepSeek推理优化、模型与硬件协同设计、社区治理、融资与商业模式，并总结开源项目持续发展的条件。",
+    "tags": [
+      "vLLM",
+      "大模型推理",
+      "软硬件协同",
+      "开源治理",
+      "AI基础设施创业"
+    ],
+    "title": "vLLM 背后的人：一个开源项目如何长成一家公司",
+    "totalScore": 72,
+    "url": "https://x.com/vista8/status/2084676005583831449"
+  },
+  "payloadHash": "sha256:04afed10f6df2f55f9901cfeb57a63d7b17aea7831e99d6ea1b0f5f027948d1e",
+  "refs": {},
+  "revisionId": "sha256:9677d5e54d138877f48c3f77576c8ef8634f04f45013319ad64d85b9b4ac55fb",
+  "schemaVersion": 1,
+  "updatedAt": 1789864246857
+}

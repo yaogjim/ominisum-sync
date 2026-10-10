@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694062665,
+  "entityType": "message",
+  "id": "1789694062665_1i33vqu3",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n企业做 AI 不应把“重要”等同于“必须自研”：通用技术可采购，真正值得自己掌握的是业务流程、判断标准和责任边界。\n\n## 关键内容\n\n- 作者借“沃德利地图”区分能力的发展阶段：未知领域适合自研以积累经验；已有成熟产品的领域，则应优先比较采购、集成与自研成本。\n- 模型、算力、向量检索、通用 RAG 和 Agent 工具正逐步产品化。某个模型即使暂时领先，也可能很快被替代，因此未必是企业的长期核心资产。\n- 更难外包的是企业对自身业务的理解，例如哪些结果算正确、哪些错误不可接受、何时必须转人工。这套评价体系能持续检验不同模型和技术路线。\n- 自研系统会形成团队、预算和维护惯性。作者建议定期追问：如果今天从零开始，还会选择自己做吗？\n\n## 通俗解读\n\n核心不是“买还是造”，而是**哪些能力只有企业自己最清楚**。就像公司离不开电，却通常不会自建电厂；AI 底层能力也可能逐渐成为标准服务。企业更该投入的是别人难以复制的业务规则与评测标准。\n\n**是否值得细读：值得。**适合正在规划 AI 平台或反思重复建设的管理者；文章提供的是判断框架，并非具体采购或落地方案。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694062665,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5a9349f3a9534fe6bff1949b516fc5c1d7dd48a7c9cc2bea4464372d32cd8ccd",
+  "refs": {
+    "sessionId": "1787281901436_3yij1e0h"
+  },
+  "revisionId": "sha256:bfb7d36cca4f90ddb2bc53da24bc197c03e22572afd79e112c12c1e3822d867c",
+  "schemaVersion": 1,
+  "updatedAt": 1789694062665
+}

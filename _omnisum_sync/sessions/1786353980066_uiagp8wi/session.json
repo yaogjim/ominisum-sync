@@ -1,0 +1,62 @@
+{
+  "createdAt": 1786353980066,
+  "entityType": "session",
+  "id": "1786353980066_uiagp8wi",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "classifiedAt": 1786354209375,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 2,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "AI可穿戴监控的攻防博弈",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.theatlantic.com",
+    "favicon": "https://cdn.theatlantic.com/_next/static/images/favicon-3888b0e329526a975703e3059a02b92d.ico",
+    "knowledgePoints": [
+      "AI眼镜、项链或胸针可将记录、笔记和个人助理功能嵌入日常佩戴设备。",
+      "隐蔽且持续工作的传感器可能改变线下交流中的隐私预期。",
+      "反录音设备可能成为AI可穿戴生态的配套产品类别，但文中未验证其有效性。"
+    ],
+    "oneHighValuePoint": "常开式AI可穿戴设备可能把录音风险从显眼的手机行为转变为难以察觉的环境性监控，并催生专门的反监控产品。",
+    "oneLineReview": "选题具有前瞻性且与AI隐私相关，但目前更像趋势预告，证据、机制和实践指导均较薄弱。",
+    "primaryCategory": "AI与隐私",
+    "rating": "C",
+    "rejectReason": "文章主要提出监控与反监控趋势，未说明设备原理、实际效果、法律边界或验证方法。",
+    "retentionDecision": "速览趋势即可，缺少技术细节和可靠证据，不必长期保留",
+    "secondaryCategories": [
+      "可穿戴设备",
+      "技术治理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章以黑帮防窃听轶事切入，讨论AI录音眼镜、项链和胸针可能推动日常环境持续记录，并介绍声称可阻止他人录制的Spectre I，指出个人隐私与反监控设备或将形成长期攻防。",
+    "tags": [
+      "AI可穿戴设备",
+      "环境录音",
+      "个人隐私",
+      "反监控技术"
+    ],
+    "title": "A Surveillance ‘Cat-and-Mouse’ Game With AI",
+    "totalScore": 43,
+    "url": "https://www.theatlantic.com/technology/2026/05/ai-wearable-surveillance-countermeasures/687203/"
+  },
+  "payloadHash": "sha256:516fe582364573c3a8ec247513d3a4507ab843a27765fe1241ba3e7790920fd3",
+  "refs": {},
+  "revisionId": "sha256:beeb40262ad5bd5c1cc8b67b89524f194e1d12b2cdce4adf23c0d94c6cc337ed",
+  "schemaVersion": 1,
+  "updatedAt": 1786354209567
+}

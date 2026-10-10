@@ -1,0 +1,142 @@
+{
+  "createdAt": 1784161463340,
+  "entityType": "session",
+  "id": "1784161463340_ilnxu2ki",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计RAG系统时，为五个管线阶段分别定义输入、输出和可替换组件接口。",
+      "在问答产品中加入引用片段高亮、完整文档查看、数据上传删除和运行状态页面。",
+      "当前选型不要直接依赖已停止维护的Verba，应另行评估仍在维护的替代方案。"
+    ],
+    "archiveReason": "五阶段RAG模块框架及来源展示、数据管理等产品设计原则具有可复用性。",
+    "byline": "Victoria Slocum, Edward Schmuhl",
+    "classifiedAt": 1784678173011,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Verba模块化RAG架构设计",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "weaviate.io",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1784161609104,
+        "imageId": "img-7",
+        "model": "gpt-5.6-sol",
+        "ocrText": "",
+        "summary": "# 《Verba：构建开源、模块化的 RAG 应用》总结\n\n> **主旨概括：** Verba 是 Weaviate 推出的开源 RAG 应用，目标是让非技术用户也能直接用自己的数据进行智能问答，同时通过模块化架构满足开发者的定制需求。**目前 Verba 已停止积极维护**，官方建议改用 [Weaviate Playground](https://playground.weaviate.io/) 中的 RAG 演示及下一代智能体式 RAG 助手 Elysia。\n\n## 1. 为什么要开发 Verba\n\n- RAG（检索增强生成）会先从用户提供的数据中查找相关内容，再让大语言模型生成自然语言答案。\n- 搭建完整 RAG 应用并不容易，涉及：\n  - 选择合适的 AI 模型；\n  - 整理和导入数据；\n  - 切分文档；\n  - 设计检索与回答流程。\n- LangChain、LlamaIndex 等工具适合开发原型，但当时缺少一款**无需技术背景、开箱即用的开源 RAG 应用**。\n- 因此，Weaviate 推出了 Verba（别名 “Golden RAGtriever”）：\n  - 普通用户可以直接上传数据并提问；\n  - 开发者可以替换和调整 RAG 流程中的各个模块。\n- 项目提供了 [开源 GitHub 仓库](https://github.com/weaviate/verba) 及操作教学视频。\n\n## 2. RAG 是什么，为什么不能只用 ChatGPT\n\n### RAG 的基本原理\n\nRAG 将搜索系统与大语言模型结合起来：\n\n1. 从数据库中检索与问题相关的资料；\n2. 把这些资料作为上下文交给大语言模型；\n3. 由模型总结并生成自然、易懂的回答。\n\nWeaviate 等向量数据库支持向量搜索和混合搜索，可以快速找到相关文档。检索结果是否准确，直接决定最终回答的质量。\n\n### 普通大模型问答的局限\n\n直接使用 ChatGPT 一类通用聊天模型可能出现：\n\n- 不知道答案时编造信息；\n- 提供过时或过于笼统的回答；\n- 无法说明答案来自哪里，甚至可能依赖不可靠来源；\n- 因训练数据范围过大，误解用户所在领域的专业术语。\n\nVerba 则只依据用户导入的数据回答：\n\n- 找不到相关内容时，会明确表示无法从数据中获得答案；\n- 用户可以控制系统 “知道什么”；\n- 回答会展示所依据的原文，便于核实。\n\n## 3. 面向普通用户的交互设计\n\n### 3.1 使用聊天界面提问\n\n- RAG 本质上是问答系统，因此 Verba 采用用户熟悉的聊天界面。\n- 用户只需发送问题并接收回答，不必理解背后的检索、向量化和模型调用过程。\n\n### 3.2 通过自动补全帮助用户提问\n\n- Verba 提供查询自动补全，体验类似 Google 或电商网站的搜索框。\n- 该功能借助 Weaviate 的快速关键词搜索实现。\n- 自动补全既能帮助新用户理解可以问什么，也能降低组织问题的难度。\n\n### 3.3 展示回答来源\n\nVerba 强调回答过程的透明性：\n\n- 显示生成答案时使用的具体文本片段（Chunk）；\n- 高亮实际引用的段落；\n- 支持查看完整文档；\n- 可以进一步追溯到原始资料来源。\n\n这样，用户不仅能验证回答是否可信，还能阅读上下文并查找更多相关信息。\n\n### 3.4 直接通过网页上传数据\n\n- 用户可以在 Web 界面中直接上传文档，无需运行复杂的数据导入脚本。\n- 系统提供合理的默认参数，让非技术用户开箱即用。\n- 同时保留参数调整能力，以适应专业或特殊场景。\n\n这一设计试图在 “简单易用” 与 “充分定制” 之间取得平衡。\n\n### 3.5 完整的数据管理能力\n\nVerba 提供类似 CRUD 的数据管理功能，即创建、读取、更新和删除：\n\n- 查看已经上传的资料；\n- 删除过时或不再相关的文档；\n- 持续维护用于回答问题的上下文。\n\n这对问答系统非常重要，因为只有数据保持正确、完整和最新，系统才可能给出可靠答案。\n\n### 3.6 状态页面\n\nVerba 还设计了统一的状态页，用于查看：\n\n- 应用当前是否正常运行；\n- 哪些功能已经启用；\n- 使用的版本是否最新；\n- 当前配置和更新情况。\n\n其目的在于减少用户对系统运行状态的猜测。\n\n## 4. 模块化 RAG 架构\n\n为了既支持开箱即用，又便于未来接入新的模型、AI 库和检索方法，Verba 将 RAG 流程拆成**5 个可独立定制的步骤**：\n\n| 模块 | 主要作用 |\n|---|---|\n| `ReaderManager` | 读取文件路径、URL 或文本，并转换为统一的 Verba 文档 |\n| `ChunkerManager` | 将每份文档切分为更小的文本块 |\n| `EmbeddingManager` | 将文档和文本块向量化并写入 Weaviate，同时支持后续检索 |\n| `RetrieveManager` | 根据问题检索相关文本块，并应用自定义检索逻辑 |\n| `GenerationManager` | 将用户问题与检索结果交给大模型，生成最终答案 |\n\n每个阶段都由专门组件执行，并由对应的 Manager 统一管理，使系统更容易扩展、替换和维护。\n\n## 5. Reader：读取并统一不同格式的数据\n\n数据导入是整个流程的第一步：\n\n- Verba 可以处理纯文本、PDF、Excel 等不同格式；\n- 各类数据会被转换成统一的文档结构，供后续处理；\n- 每种格式对应一个 Reader 组件，例如 PDF Reader、Excel Reader；\n- 用户可以根据需要增加新的 Reader，以支持更多数据类型。\n\n文章指出，数据工程往往是搭建 RAG 系统中**最耗时的部分之一**。Verba 已封装数据管道，可以减少用户自行处理文件格式和导入逻辑的工作。\n\n## 6. Chunker：将文档切成更小的片段\n\n### 为什么不能直接使用整篇文档\n\n用户通常想找的是某个具体知识点，而不是整份文档。直接把全文交给大模型会带来两个问题：\n\n- 输入的词元（Token）更多，成本和处理压力更高；\n- 一次输入包含太多主题，大模型更难定位真正相关的信息。\n\n将文档切成较小文本块，可以：\n\n- 更精准地找到相关段落；\n- 减少输入模型的 Token 数量；\n- 提高检索结果与问题的匹配程度。\n\n### 重叠切分策略\n\nVerba 默认支持 “重叠切分”：\n\n- 相邻文本块保留一部分重复内容；\n- 避免一句话或一段逻辑恰好被切断；\n- 保留文本块边界处的关联信息；\n- 使相关文本块在向量空间中更加接近，改善检索效果。\n\n用户也可以添加新的 Chunker，采用其他切分策略。\n\n## 7. Embedding：将数据转换为向量\n\n文档切分后，Embedding 组件会将其写入 Weaviate：\n\n- 文档标题和切分后的正文都会转换成向量；\n- 向量不只是改变数据格式，还会表示文本的语义、上下文及相互关系；\n- 系统可以据此快速寻找 “意思相关” 而不仅是 “文字相同” 的内容。\n\nVerba 与 Weaviate 支持多种嵌入模型来源，包括：\n\n- OpenAI；\n- Cohere；\n- Hugging Face；\n- Ollama；\n- 其他模型提供商。\n\n用户可以按照成本、隐私、部署方式和业务需求选择模型。\n\n## 8. Retriever：寻找最相关的上下文\n\nVerba 使用混合搜索，将两种能力结合起来：\n\n- **关键词搜索**：查找与查询中具体词语相符的内容；\n- **向量搜索**：理解问题背后的语义。\n\n例如，用户搜索**“健康的巧克力蛋糕”**：\n\n- 关键词搜索会匹配 “巧克力” 和 “蛋糕”；\n- 向量搜索还能理解 “健康” 的含义，找到 “低糖” 等语义相关的食谱。\n\nWeaviate 还支持关键词搜索、向量搜索、混合搜索和生成式搜索，用户可以针对不同场景选择。\n\n### Autocut 自动裁剪结果\n\nVerba 使用 Weaviate 的`autocut`功能自动决定返回多少条结果：\n\n- 系统比较各结果与问题的相关度；\n- 当相邻结果的相似度明显下降时，自动截断列表；\n- 避免将太多低相关信息交给大语言模型；\n- 帮助模型获得适量且更准确的上下文。\n\n## 9. Generation：生成最终回答\n\n最后，Generation 组件会：\n\n1. 接收用户问题；\n2. 获取 Retriever 找到的相关文本块；\n3. 将问题和上下文交给大语言模型；\n4. 生成自然语言答案并返回给用户。\n\n由于答案建立在检索到的用户数据之上，并能展示具体来源，因此比单纯依赖大模型内部知识更可控、更透明，也更适合企业资料、专业知识库和私有文档问答等场景。\n\n## 10. 核心价值与现状\n\nVerba 的核心价值可以概括为：\n\n- **低门槛**：通过网页完成上传、管理和问答；\n- **可信赖**：展示答案引用的原文和来源；\n- **可控制**：用户自行决定知识库包含哪些内容；\n- **可扩展**：读取、切分、向量化、检索和生成五个环节均可替换；\n- **面向演进**：便于接入新的模型、检索技术和 AI 工具。\n\n不过，**Verba 现已被弃用且不再积极维护**。它仍可作为理解模块化 RAG 架构的参考，但如需体验当前的 RAG 演示和交互案例，官方建议使用 [Weaviate Playground](https://playground.weaviate.io/)。",
+        "url": "https://weaviate.io/assets/images/rag_flow-92d1a49bfaa28a3723004b4cc0fb25a8.gif",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "What is RAG? Animation",
+        "caption": "",
+        "height": 558,
+        "id": "img-7",
+        "nearbyText": "VERBA HAS BEEN DEPRECATED Verba is no longer actively maintained. For RAG demos and interactive examples, visit playground.weaviate.io — including Elysia, our next-generation agentic RAG assistant, and more. Have you ever wished that you co...",
+        "resolvedUrl": "https://weaviate.io/assets/images/rag_flow-92d1a49bfaa28a3723004b4cc0fb25a8.gif",
+        "role": "article",
+        "score": 73,
+        "src": "https://weaviate.io/assets/images/rag_flow-92d1a49bfaa28a3723004b4cc0fb25a8.gif",
+        "width": 964
+      }
+    ],
+    "knowledgePoints": [
+      "模块化RAG可按读取、切块、嵌入、检索和生成五个阶段划分，并为每个阶段设置统一管理层。",
+      "切块可减少送入模型的无关内容和令牌数量，重叠切块则用于降低边界处关联信息丢失的风险。",
+      "RAG界面应展示答案引用的具体片段、完整文档和原始来源，以支持用户独立核验。"
+    ],
+    "metaAuthor": "https://www.linkedin.com/in/victorialslocum/,https://www.linkedin.com/in/edwardschmuhl/",
+    "oneHighValuePoint": "将RAG管线拆分为Reader、Chunker、Embedding、Retriever和Generation五类具有明确输入输出的可替换模块，便于独立演进与适配不同用例。",
+    "oneLineReview": "文章提供了清晰且可迁移的RAG架构拆分，但产品已弃用，且性能主张缺少数据、对照实验和完整验证。",
+    "primaryCategory": "RAG应用架构",
+    "published": "2024-03-07T00:00:00.000Z",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览，保留模块划分和交互设计要点，不将已弃用项目作为当前实施方案",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@id": "https://weaviate.io/blog/verba-open-source-rag-app",
+        "@type": "BlogPosting",
+        "author": [
+          {
+            "@type": "Person",
+            "description": "Machine Learning Engineer",
+            "image": "/img/people/icon/victoria.jpg",
+            "name": "Victoria Slocum",
+            "url": "https://www.linkedin.com/in/victorialslocum/"
+          },
+          {
+            "@type": "Person",
+            "description": "Machine Learning Engineer",
+            "image": "/img/people/icon/edward.jpg",
+            "name": "Edward Schmuhl",
+            "url": "https://www.linkedin.com/in/edwardschmuhl/"
+          }
+        ],
+        "datePublished": "2024-03-07T00:00:00.000Z",
+        "description": "Verba is an open source Retrieval Augmented Generation (RAG) application built using a modular, customizable architecture that makes it easy for anyone to use AI methods to get personalized answers on their own data. ",
+        "headline": "Verba: Building an Open Source, Modular RAG Application",
+        "image": {
+          "@id": "https://weaviate.io/assets/images/hero-fb72243d337eb0a126c8471316f630b0.png",
+          "@type": "ImageObject",
+          "caption": "title image for the blog post: Verba: Building an Open Source, Modular RAG Application",
+          "contentUrl": "https://weaviate.io/assets/images/hero-fb72243d337eb0a126c8471316f630b0.png",
+          "url": "https://weaviate.io/assets/images/hero-fb72243d337eb0a126c8471316f630b0.png"
+        },
+        "isPartOf": {
+          "@id": "https://weaviate.io/blog",
+          "@type": "Blog",
+          "name": "Blog"
+        },
+        "keywords": [],
+        "mainEntityOfPage": "https://weaviate.io/blog/verba-open-source-rag-app",
+        "name": "Verba: Building an Open Source, Modular RAG Application",
+        "url": "https://weaviate.io/blog/verba-open-source-rag-app"
+      }
+    ],
+    "schemaAuthor": "Victoria Slocum",
+    "schemaTypes": [
+      "BlogPosting"
+    ],
+    "secondaryCategories": [
+      "产品设计",
+      "技术实现"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "siteName": "Blog",
+    "summaryBrief": "文章介绍已停止维护的开源应用Verba，说明其面向非技术用户的RAG交互设计，并将系统拆分为读取、切块、嵌入、检索和生成五个可替换模块，同时讨论来源展示、数据管理、混合搜索与自动截断。",
+    "tags": [
+      "模块化RAG",
+      "文档切块",
+      "混合检索",
+      "向量数据库",
+      "来源可追溯"
+    ],
+    "title": "Verba: Building an Open Source, Modular RAG Application",
+    "totalScore": 67,
+    "url": "https://weaviate.io/blog/verba-open-source-rag-app"
+  },
+  "payloadHash": "sha256:54e97dccc6c1688912a21bcc6b87026074dce15f73b162fa4546ab7083842dee",
+  "refs": {},
+  "revisionId": "sha256:cfd74f0f2215716429f037630e3589096d56cd1122deeb4235f1028c19f36244",
+  "schemaVersion": 1,
+  "updatedAt": 1789728705431
+}

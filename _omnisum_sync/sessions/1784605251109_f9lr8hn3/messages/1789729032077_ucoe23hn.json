@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729032076,
+  "entityType": "message",
+  "id": "1789729032077_ucoe23hn",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# AI Coding 文档应分层管理，让 Agent 获得准确、可执行的上下文\n\n文章拆解 Matt Pocock 的 Skills 工作流后提出：不要把所有资料都塞给 AI，而应按用途拆分文档，让规则、术语、架构约束与执行任务各归其位。核心目标是减少无关信息干扰，并把需求转化为 Agent 能独立完成和验收的任务。\n\n## 不同文档承担不同上下文职责\n\n- **项目知识库**：架构讨论、调研和背景材料等放在项目外，避免污染编码上下文；但评论者也质疑，只要能同步更新，背景知识本身可能有助于设计。\n- **Agents.md**：记录协作规则、开发流程和关键项目导航。\n- **Context.md**：维护术语表和统一语言，明确领域概念的含义。\n- **ADR**：一项架构决策对应一个文件，固化不可轻易破坏的约束，例如“A 模块不能反向依赖 B 模块”。\n- **Architecture.md / Design.md**：分别描述整体架构和具体设计。\n- **Spec**：保存阶段性实现方案及实现边界。\n- **Scratch**：记录本地事项；已有 GitHub Issues 时优先使用后者。\n\n## Ticket 要按完整能力切分，而非按职能分工\n\n每个 Ticket 都应是可执行的“垂直切片”，围绕一项完整用户能力，覆盖 UI、API、运行时、存储、测试和验收，而不是分别拆成前端、后端任务。它必须能够独立演示和验收；若内容超过一个上下文窗口，还需继续拆分。\n\n## 工作流从澄清需求走到测试驱动交付\n\n推荐流程是：**Grill（充分追问）→ 领域建模 → Spec → Tickets → 实现 → TDD → Code Review**。其意义在于把长期知识、稳定约束和短期任务分离，使 AI 每次只读取当前决策所需的信息，降低上下文过载与架构逐步劣化的风险。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729032076,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:cc0c600a620e9fb2cdf365d28662db67da26b6256bf26eae516ec3a751e4018e",
+  "refs": {
+    "sessionId": "1784605251109_f9lr8hn3"
+  },
+  "revisionId": "sha256:ae2f6ea3cbe3f1cf6323408c837de7a4dafd48d5fd13201736a388399f09a708",
+  "schemaVersion": 1,
+  "updatedAt": 1789729032076
+}

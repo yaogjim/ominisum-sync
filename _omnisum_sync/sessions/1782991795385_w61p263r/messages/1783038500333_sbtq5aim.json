@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783038500334,
+  "entityType": "message",
+  "id": "1783038500333_sbtq5aim",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: herdr终端工具简评\n\n**评级**: D (34分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: 开发工具\n**次类别**: 终端工具, AI Agent 工具\n**标签**: #herdr #终端 #Rust #PTY #Agent编排\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 3 | 10% |\n| 新颖性 | 3 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 4 | 15% |\n| 方法论价值 | 2 | 15% |\n| 可迁移性 | 2 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 3 | 10% |\n\n**一句话点评**: 适合作为工具发现线索，但不值得作为知识内容长期保存。\n**核心高价值点**: herdr 可能是一个轻量级终端内多 pane 与 AI Agent 编排工具，值得有相关需求时试用。\n\n### 摘要\n作者简短推荐 herdr，认为其可替代 Conductor、Superset、Tmux，特点是 Rust 单二进制、无 GUI、资源占用低、启动快、支持真实 PTY pane 和 Agent 状态感知。\n\n### 知识要点\n- herdr 是单个 Rust 二进制、无 GUI、运行在现有终端中的轻量工具。\n- 它支持真实 PTY pane、Agent 状态感知和 Agent-shaped API，可能适合多 Agent 工作流。\n\n### 行动项\n- 如有终端多 pane 或 AI Agent 编排需求，可访问 herdr.dev 快速试用。\n- 与当前使用的 Tmux、Conductor 或 Superset 做一次简单对比后决定是否保留。\n\n### 存档判定\n归档: 否\n不推荐: 内容仅为简短个人体验推荐，缺少深入评测、使用场景、对比数据和可复用方法论。\n删除: 是\n留存决策: 短期参考后可删除\n删除原因: 信息量较低，除工具链接和少量特性描述外无长期保存价值；如已记录 herdr.dev 链接，可删除原内容。",
+    "role": "assistant",
+    "timestamp": 1783038500334,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:c80959e0bcd829e16ec9444120f225589d930e13d60dfee853ac5c5c78e648e6",
+  "refs": {
+    "sessionId": "1782991795385_w61p263r"
+  },
+  "revisionId": "sha256:10293d4bab843497d1fb2a43b65755183058fc66a9fae26d7a7130d9209c1e0a",
+  "schemaVersion": 1,
+  "updatedAt": 1783038500334
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693954973,
+  "entityType": "message",
+  "id": "1789693954973_js7h7gle",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nLangSmith 的 **Connections** 让托管 Deep Agent 安全连接 GitHub、Notion、Tavily 或 MCP 服务，并按“代理”或“当前用户”解析凭据，免去自行保存令牌和搭建 OAuth 流程。\n\n## 关键内容\n\n- 凭据保存在 LangSmith 工作区，代码只需通过 `connections.get(slug)` 获取；轮换凭据无需重新部署。连接名可跨代理复用，但每个部署需建立自己的代理凭据。\n- 凭据有两类所有者：**代理所有**适合共享服务账号或固定 API Key；**用户所有**则让代理以每位调用者的身份访问其数据。某用户未授权时，运行会中断，不能借用其他用户的凭据。\n- 支持固定密钥、普通 OAuth 和 MCP OAuth。OAuth 的授权、令牌存储及刷新由平台处理；Slack、LangSmith Studio 可自动展示授权流程，自定义前端需处理授权中断并恢复运行。\n- 共享 OAuth 账号应使用专用、最小权限账号，不宜绑定个人账号，否则权限、审计记录及账号变动都会影响代理。\n\n## 通俗解读\n\n它相当于给代理配一个“凭据保险箱”：既能统一管理公司账号，也能让不同用户各刷各的“门禁卡”。目前该功能仍是公开测试版，且仅支持 LangSmith 美国区。**准备实际部署托管 Deep Agent 的开发者值得细读；仅了解概念则以上内容已足够。**原文中的部分命令示例在所给内容中缺失，实施时应查看网页原版。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693954973,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:308175f15b9203a73d36c6d8547517f4b5a08f7258935dd21572b91f5c81a586",
+  "refs": {
+    "sessionId": "1788920724680_tgwovzkt"
+  },
+  "revisionId": "sha256:31ba26486d21187dc5e3b2a7ba786f25390292993513f4424858cf6c52a41a6b",
+  "schemaVersion": 1,
+  "updatedAt": 1789693954973
+}

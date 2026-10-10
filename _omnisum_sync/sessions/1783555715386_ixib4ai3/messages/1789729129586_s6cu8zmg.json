@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729129585,
+  "entityType": "message",
+  "id": "1789729129586_s6cu8zmg",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# OpenAI 用单个 PostgreSQL 主库支撑 8 亿 ChatGPT 用户\n\n视频解读 OpenAI 的技术博客：在用户量一年增长 10 倍后，ChatGPT 核心数据库仍以 **1 个 PostgreSQL 主库和约 50 个只读副本**运行。关键并非复杂架构，而是持续减少无效写入、分散读取压力、隔离风险；同时逐步把适合拆分的业务迁往分片数据库。\n\n## 先优化现有架构，而非过早分库\n\nOpenAI 通过纵向扩容、参数和应用逻辑优化、增加只读副本，支撑以读取为主的负载。为保护主库，还采取了：\n\n- 修复产生冗余写入的程序缺陷，将非实时写入异步化并批量执行；\n- 对写流量严格限速，避免新功能上线时的峰值冲垮数据库；\n- 拆除昂贵的多表联查——曾有查询一次连接 12 张表，部分逻辑改由应用层完成；\n- 审查 ORM 自动生成的 SQL，处理 N+1 查询、索引选择不当等问题。\n\n## 缓存、连接池和隔离共同削峰\n\n系统使用 PgBouncer 复用数据库连接，避免 PostgreSQL 为大量连接创建进程；视频举例称，连接复用可将建连耗时从约 50 毫秒降至 5 毫秒。缓存未命中时采用“缓存锁”，只允许一个请求回源重建缓存，其余请求等待，防止瞬时流量集中打到主库。不同业务还被定向到不同只读副本，降低“噪声邻居”相互拖累的风险。\n\n## 可用性与下一阶段扩展\n\n读取迁往副本后，即使主库故障，系统仍可维持部分只读能力；主库另有同步热备，可快速接管写入。由于 PostgreSQL 的 MVCC 会产生多版本、写放大和清理压力，OpenAI 正将适合分片的负载迁往 Azure Cosmos DB，并让新业务优先按分片设计。针对副本数量上限，多级级联复制仍处于测试阶段，尚未正式上线。核心启示是：超大规模系统未必先靠激进重构，更常见的路径是先吃尽简单架构的优化空间，再有选择地分片。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729129585,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e569ef790f224fc9118a396aaa546fb34f15f2a64ca324b39179f05acd3c3ed9",
+  "refs": {
+    "sessionId": "1783555715386_ixib4ai3"
+  },
+  "revisionId": "sha256:d5485133ec6dc9721240816d2ce65e1fe4fa8eefebb7d06b04e43636626b9b13",
+  "schemaVersion": 1,
+  "updatedAt": 1789729129585
+}

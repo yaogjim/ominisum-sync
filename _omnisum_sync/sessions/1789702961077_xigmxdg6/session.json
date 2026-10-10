@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789702961077,
+  "entityType": "session",
+  "id": "1789702961077_xigmxdg6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "先定义智能体需要覆盖的任务、入口、文件范围和高风险操作，再选择本地设备及集成工具。",
+      "按研究、家庭任务、开发等领域拆分专用机器人，并分别配置记忆、会话和最小必要工具权限。",
+      "为购物、发信、推送代码等后果性操作设置人工确认，并验证后台服务重启和备用入口是否有效。"
+    ],
+    "archiveReason": "提供了可迁移的常驻本地智能体架构，涵盖模型与执行层解耦、多入口接入、专用机器人、持久化状态及受限授权等关键设计。",
+    "classifiedAt": 1789703008666,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Mac mini家庭智能体架构",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "didierrlopes.substack.com",
+    "favicon": "https://substackcdn.com/image/fetch/$s_!HUVa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff28b945f-80ae-4823-a2d5-ec5f1857cc7f%2Ffavicon-32x32.png",
+    "knowledgePoints": [
+      "将模型与智能体执行层解耦，可在更换模型时继续保留本地记忆、技能、文件、权限和会话状态。",
+      "为每个专业机器人维护固定会话并限制工具范围，比在单一通用智能体中堆积全部上下文更清晰、更安全。",
+      "本地工作区负责处理中间产物，云盘负责发布成品；Telegram、WebUI、桌面端和邮件可形成互补且具有冗余的访问渠道。"
+    ],
+    "oneHighValuePoint": "按任务领域拆分拥有独立历史和工具权限的专用机器人，既能减少上下文污染，也能降低无关任务误用高风险工具的概率。",
+    "oneLineReview": "这是一个覆盖面较完整、可迁移性较强的个人智能体案例，但缺少配置细节、安全验证和量化效果证据。",
+    "primaryCategory": "AI Agent系统构建",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，重点保留系统架构、机器人分工与权限边界设计",
+    "secondaryCategories": [
+      "个人生产力",
+      "技术架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章复盘作者在 Mac mini 上部署 Hermes，将远程模型、技能记忆、专用机器人、Telegram、WebUI、邮件、GitHub 与云盘串成常驻家庭智能体，并讨论上下文隔离、权限边界、产物交付和多入口冗余。",
+    "tags": [
+      "Hermes Agent",
+      "Mac mini",
+      "多智能体",
+      "本地优先",
+      "权限隔离"
+    ],
+    "title": "I hired Hermes as my Chief of Staff",
+    "totalScore": 73,
+    "url": "https://didierrlopes.substack.com/p/i-hired-hermes-as-a-member-of-lopes"
+  },
+  "payloadHash": "sha256:1e30223e68a6428704c46261281d646aa0703b9980be18d9b98007cdceb3f888",
+  "refs": {},
+  "revisionId": "sha256:3ccbd3e4a48d58ae86f5a385ad2dbb095e81d958e3817510b58d296baf4d48f1",
+  "schemaVersion": 1,
+  "updatedAt": 1790770034634
+}

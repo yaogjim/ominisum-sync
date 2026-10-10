@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789891558289,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1789891558289",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# jev-seo：面向开发者与 AI 智能体的零成本 SEO/GEO 工具\n\n`jev-seo`是一个用 Rust 编写的开源命令行工具，试图以 DuckDuckGo 数据、本地审计和确定性评分，替代 Semrush、Ahrefs 等付费 SEO 平台。它同时支持传统搜索优化（SEO）和生成式引擎优化（GEO，即提高内容被 Perplexity、SearchGPT、Gemini 等引用的可能性），并可通过 MCP 接入编码智能体。\n\n## 为什么开发这套工具\n\n项目作者认为，现有 SEO 工具主要有三类问题：\n\n- Semrush、Ahrefs 等订阅费可达每月 130 美元以上。\n- 部分开源方案仍依赖 DataForSEO 等付费接口。\n- 许多产品以笨重的网页仪表板和展示性图表为主，不适合开发者和自动化代理。\n\n因此，`jev-seo`采用免费的 DuckDuckGo HTML 页面和搜索建议作为数据来源，不强制依赖付费 API，也不提供云端仪表板。部分语义意图与 GEO 评分需要配置免费的`TYPESAFE_API_KEY`。\n\n## 核心能力：从搜索研究到站内审计\n\n工具覆盖了一套较完整的 SEO/GEO 工作流：\n\n- **关键词与搜索结果分析**：获取关键词联想，分类搜索意图，并抓取实时 SERP（搜索结果页）中的标题、摘要和网址，寻找竞争内容缺口。\n- **批量页面审计**：递归检查 Markdown 和 HTML 文件。作者称可在不到 1 秒内审计数百个文件，发现：\n  - 标题冲突或层级跳跃，如从 H1 直接跳到 H3；\n  - 少于 300 词的单薄内容；\n  - canonical（规范链接）不匹配；\n  - 图片缺少`alt`；\n  - 没有任何内部链接指向的 “孤立页面”；\n  - 多篇文章争夺相同关键词的 “关键词蚕食” 问题。\n- **AI 模板化内容检查**：检测过多破折号，以及`delve`、`leverage`、`seamless`、`robust`等 17 个常见模板化词语。\n- **Schema.org 验证**：检查 JSON-LD 结构化数据中`SoftwareApplication`、`Article`、`Organization`、`Product`等类型的必需属性，并提示已弃用或不再适用于富媒体搜索结果的类型。\n- **站点地图检查**：验证 XML Sitemap 是否使用规范 HTTPS、是否存在参数污染、是否超过 5 万条 URL，并检查`hreflang`国际语言代码，例如识别`en-UK`应为`en-GB`，以及是否配置`x-default`。\n- **AI 爬虫权限审计**：分析`robots.txt`对 GPTBot、ClaudeBot、PerplexityBot、Google-Extended、Bytespider 等机器人的允许或禁止规则。\n- **排名跟踪**：持续记录域名在指定关键词下的排名变化，数据保存在本地 SQLite 文件`.jev-seo.db`中。\n\n## GEO：评估内容是否容易被 AI 引用\n\n`geo`命令会针对指定查询，为页面给出 1—10 分的 AI 引用可能性评分，并检查页面是否包含适合直接回答用户问题的内容段落。\n\n内容简报功能还会综合 DuckDuckGo 上的竞争页面，生成：\n\n- 建议字数；\n- H2 标题大纲；\n- 内容缺口；\n- 一个约 150 词的直接回答区块。项目认为约**134—167 词**的段落更适合作为 GEO 引用单元。\n\n这些分析由 TypeSafe Jev System One 执行。按作者说明，Jev 在此只承担确定性的分类和评分，不负责生成式文本写作，以避免对话式大模型的幻觉。\n\n## 面向智能体：通过 MCP 暴露 8 个工具\n\n运行`jev-seo mcp`后，程序会成为基于标准输入输出和 JSON-RPC 2.0 的 MCP 服务器，可直接接入 Claude Code、Gemini CLI 等智能体环境。\n\n它提供 8 类工具：\n\n1. 关键词发现与意图分类；\n2. 实时搜索结果检查；\n3. 本地页面与目录审计；\n4. GEO 引用评分；\n5. Schema 验证；\n6. AI 爬虫权限检查；\n7. 内容简报生成；\n8. Sitemap 验证。\n\n这使编码代理可以直接调用 SEO 能力，而不必操作网页仪表板。\n\n## 使用方式与技术特点\n\n安装及典型命令如下：\n\n```bash\ncargo install jev-seo\nexport TYPESAFE_API_KEY=your_key_here\n\njev-seo query \"offline expense tracker android\"\njev-seo audit docs/\njev-seo geo README.md --query \"agentic skills framework\"\njev-seo sitemap https://example.com/sitemap.xml\njev-seo robots github.com\njev-seo brief \"agentic skills\" --limit 5\njev-seo rank --domain \"crates.io\" --query \"rust grep\"\njev-seo mcp\n```\n\n项目完全使用 Rust 编写，主要模块分别负责 DuckDuckGo 抓取、页面审计、结构化数据、爬虫规则、内容简报、排名数据库、站点地图和 MCP 服务。作者称其运行内存低于**30MB**，仓库中有**21 项单元与集成测试**通过。\n\n## 明确边界\n\n该项目并不打算提供：\n\n- Electron 或云端 Web 仪表板；\n- 强制付费的第三方数据接口；\n- 生成式 AI 文案创作。\n\n其定位不是复制传统 SEO 平台的所有数据和可视化功能，而是提供一套轻量、本地、可脚本化、适合开发者和 AI 智能体调用的搜索优化工具链。上述性能和效果数据主要来自项目作者的 README 描述。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1789891558289,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4538e855323958d3eb91b62ad50323d8b7c21002f2db3433f8ab2762e424db76",
+  "refs": {
+    "sessionId": "1789890878997_l23vi40d"
+  },
+  "revisionId": "sha256:fe13ec98fa8497bd00c620bf2db157e8ad7a0a2b2a149639ee221675b9509b03",
+  "schemaVersion": 1,
+  "updatedAt": 1789891558289
+}

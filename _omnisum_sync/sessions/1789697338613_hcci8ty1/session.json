@@ -1,0 +1,83 @@
+{
+  "createdAt": 1789697338613,
+  "entityType": "session",
+  "id": "1789697338613_hcci8ty1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审计资产清单及细粒度软件包清单的完整性和更新频率。",
+      "建设自动化操作系统与应用更新机制，并制定更新后重启和验证策略。",
+      "在投入AI漏洞发现工具前，核算其全链路成本以及对修复、部署效率的实际改善。"
+    ],
+    "archiveReason": "文章提出了可迁移的安全瓶颈判断，并给出资产清单、自动更新和攻击面枚举等具体改进方向。",
+    "classifiedAt": 1789724686610,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 5,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI安全狂热与补丁瓶颈",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.netmeister.org",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://www.netmeister.org/blog/images/tired.jpg",
+        "role": "hero",
+        "score": 70,
+        "src": "https://www.netmeister.org/blog/images/tired.jpg",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "漏洞发现能力提升不等于整体安全性提升，修复和部署吞吐量可能才是主要瓶颈。",
+      "大量AI生成的漏洞报告会同步增加验证、分级、修复及跨团队协调成本。",
+      "当AI同时参与代码生成、补丁制作和代码审查时，组织可能逐步丧失对代码库的实际理解。"
+    ],
+    "oneHighValuePoint": "评估AI安全工具时，不应只统计发现了多少漏洞，而应判断它是否改善了从资产识别、验证修复到补丁实际部署的完整链路。",
+    "oneLineReview": "核心的补丁瓶颈判断具有实践价值，但大量情绪化表达和缺乏系统证据限制了论证强度。",
+    "primaryCategory": "AI与软件安全",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性阅读漏洞管理与资源配置部分，并作为反思AI投入的观点材料保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "漏洞管理",
+      "技术组织管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章批判企业在AI智能体和自动化漏洞发现上的追逐，认为真正的安全瓶颈通常不是发现漏洞，而是资产识别、补丁部署和跨团队协作，并警告过度依赖AI会削弱组织对代码与系统的理解。",
+    "tags": [
+      "AI安全",
+      "漏洞管理",
+      "补丁管理",
+      "技术去技能化",
+      "安全资源配置"
+    ],
+    "title": "Everybody's Lost Their Minds",
+    "totalScore": 65,
+    "url": "https://www.netmeister.org/blog/everybodys-lost-their-minds.html"
+  },
+  "payloadHash": "sha256:626a9666ed153cc6c328b246b0bece833b4e3247f3f83c33488dc200df7f7384",
+  "refs": {},
+  "revisionId": "sha256:a6d9843d3a721e6e946640a8b8177cbb744a35e1e40d89686e4840ebe535e701",
+  "schemaVersion": 1,
+  "updatedAt": 1789727379109
+}

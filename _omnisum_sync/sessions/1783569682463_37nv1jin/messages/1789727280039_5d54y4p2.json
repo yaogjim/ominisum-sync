@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727280039,
+  "entityType": "message",
+  "id": "1789727280039_5d54y4p2",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Craft Agents：用一个对话统一操作文件、代码与业务工具\n\nCraft Agents 是一款开源、跨平台的桌面 AI Agent，核心价值是把 GitHub、Linear、日历、文档和本地文件等数据源接入同一对话，减少跨工具复制上下文。它强调权限可控、执行过程透明和本地存储，试图让 Agent 从“聊天助手”变成可审查的工作执行入口。\n\n## 从规划到执行，权限可逐级控制\n\n用户可按任务风险选择三种模式：\n\n- **Explore**：只读取和分析，不能修改内容；\n- **Ask to Edit**：每次执行命令前请求确认；\n- **Execute**：按计划自动完成操作。\n\n演示中，Agent 先扫描下载目录，识别出约 23GB 可清理文件并生成计划；用户批准后，它才删除、移动文件和创建目录。执行过程会展示命令、输出、待办清单及文件改动，用户也可随时中止。接受计划时还能压缩历史上下文，以降低长会话的上下文负担。\n\n## 用自然语言配置外部数据源\n\nCraft Agents 支持 API、MCP 和本地文件夹。用户只需说“连接 Linear”或“连接 GitHub API”，Agent 就会查询文档、询问用途，创建配置、权限文件和使用指南，再引导完成 OAuth 或密钥授权。之后可直接查询 Linear 工单、GitHub Issue 和 PR，并查看实际调用参数，兼顾易用性与审计需求。\n\n## 开放架构降低了采用门槛\n\n产品基于 Claude Agent SDK，也支持 Anthropic API、OpenRouter、Ollama 等提供方，并允许选择模型和推理强度。凭证加密保存在本地，代码以 Apache 2.0 开源，可自行检查或定制。\n\n0.3.1 新增全历史会话搜索、用于快速修改配置的轻量“Mini Agents”，以及原生 Mermaid 图表和缩放查看器。其产品意义在于：把连接配置、权限审批、计划确认和跨源执行整合为统一交互，而不是单纯增加一个聊天界面。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727280039,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:51c72e9aae130adf986410c88bddd2217e8acb65dc56fa3473ba9372bc18a02a",
+  "refs": {
+    "sessionId": "1783569682463_37nv1jin"
+  },
+  "revisionId": "sha256:c833d2221cddfa9ff7460b67d6cccc133e1c6161b4c517d991da7b755c9e42d9",
+  "schemaVersion": 1,
+  "updatedAt": 1789727280039
+}

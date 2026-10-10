@@ -1,0 +1,66 @@
+{
+  "createdAt": 1789722068830,
+  "entityType": "session",
+  "id": "1789722068830_kb8a0u09",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "阅读原论文，核验外生锚点的具体计算方式、参数开销、基线选择和消融实验。",
+      "在存在过度平滑或跨层信息衰减的Transformer任务上复现该机制，并同时比较准确率、困惑度和计算成本。"
+    ],
+    "archiveReason": "可作为Transformer跨层信息保真与外生锚点设计的研究线索，但实现细节和实验结论仍需查阅原论文。",
+    "classifiedAt": 1789722100493,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "ExoFormer外生锚点机制与研究经历",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "深层Transformer可能逐渐冲淡词元初始身份信息，反复复用第一层表示又会造成身份保留与语义计算之间的目标冲突。",
+      "ExoFormer从输入表示生成独立的Q、K、V及门控信号，各层可按学习到的比例混合锚点信息，并在注入前进行均方根归一化。",
+      "文中报告六项下游任务平均准确率由48.80%升至50.27%，验证集困惑度由14.64降至14.09，但未展开实验设置与统计可靠性。"
+    ],
+    "oneHighValuePoint": "将第一层同时承担身份保留与语义计算的问题定义为“第一层张力”，再通过独立外生锚点解耦两类职责。",
+    "oneLineReview": "对论文机制与研究经历的概述较清晰，但实验条件、消融结果和适用边界不足，不能替代原论文。",
+    "primaryCategory": "AI技术",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并存档，后续以原论文核验和复现为准",
+    "secondaryCategories": [
+      "机器学习研究",
+      "AI辅助学习"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章概述一名高中生独立完成的ExoFormer研究：针对深层Transformer的过度平滑和“第一层张力”，引入可动态混合的外生锚点，并列出任务指标、实验投入及AI辅助研究经历。",
+    "tags": [
+      "Transformer",
+      "ExoFormer",
+      "外生锚点",
+      "过度平滑",
+      "AI辅助研究"
+    ],
+    "title": "姚金刚: 张小珺最新的一期节目，访谈了一位17岁的高中生，苏庭灏 这是香港一所国际学校的在读高中生，近期，他以独立研究者身份完成的论文《Attention Project…",
+    "totalScore": 66,
+    "url": "https://x.com/yaojingang/status/2091405566828818799"
+  },
+  "payloadHash": "sha256:b776d57727296e180c3848a620b0142fae25db789794d2b6e6cc5d70dc2f0409",
+  "refs": {},
+  "revisionId": "sha256:ee04745d3a31f1d4bbbf5c29bd0af7290aa572618d9fdcb95834f90eae33e95b",
+  "schemaVersion": 1,
+  "updatedAt": 1789727471870
+}

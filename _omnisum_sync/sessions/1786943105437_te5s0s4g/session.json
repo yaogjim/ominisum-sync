@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943105437,
+  "entityType": "session",
+  "id": "1786943105437_te5s0s4g",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "限制AI生成变更的范围和PR规模，要求提交者能够解释数据流、设计决策及新增抽象。",
+      "对数据库变更、新服务和Kafka等架构引入设置明确的必要性说明、迁移方案与失败处理要求。",
+      "用团队整体吞吐量、返工成本和故障率替代PR数量与代码行数评估AI编程成效。"
+    ],
+    "archiveReason": "可保留其“代码生成提速但理解与验证未同步”的判断框架，以及对PR规模、责任归属和生产力指标的提醒。",
+    "classifiedAt": 1786943135639,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 10,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI正在淘汰软件工程中间层",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "blog.florianherrengt.com",
+    "favicon": "https://blog.florianherrengt.com/favicon.svg",
+    "knowledgePoints": [
+      "AI降低的是实现成本，而系统理解、架构判断、迁移和故障修复仍是高成本活动。",
+      "技术债务的危险不仅在于代码质量，还在于错误决策的生成速度可能超过团队的审查和纠正速度。",
+      "PR数量、代码行数和完成工单数可能把成本转移给审查者，不能直接代表团队生产力。"
+    ],
+    "oneHighValuePoint": "AI生成代码的速度已可能超过团队理解和验证变更的速度，因此局部产出增长可能通过审查、返工和故障处理降低整个团队的吞吐量。",
+    "oneLineReview": "文章准确指出AI编程的理解瓶颈与责任问题，但主要依赖情境叙述和个人判断，缺少数据及系统化治理方案。",
+    "primaryCategory": "AI编程与软件工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性存档，提炼核心判断与工程约束，无需逐段反复阅读",
+    "secondaryCategories": [
+      "工程管理",
+      "职业发展"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为，AI大幅降低代码生成成本，却未同步降低理解、审查和修复复杂系统的成本，因而会放大弱工程文化与技术债务，并使工程师价值从实现速度转向架构判断、系统理解和责任承担。",
+    "tags": [
+      "AI辅助编程",
+      "代码审查",
+      "技术债务",
+      "工程判断力",
+      "软件维护"
+    ],
+    "title": "AI is removing the middle class of software engineering",
+    "totalScore": 68,
+    "url": "https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html"
+  },
+  "payloadHash": "sha256:50a19c3f85ef136122ed2fdfcd67b2869a2ff04f1066ef7a81439a705031bcef",
+  "refs": {},
+  "revisionId": "sha256:6f8d0029fd05c07c7e78c7e930896e2c30556e180d5d8d38a8515346fa3cd778",
+  "schemaVersion": 1,
+  "updatedAt": 1789728081275
+}

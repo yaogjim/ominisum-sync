@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786943866395,
+  "entityType": "message",
+  "id": "1786944149771_recq3ts7",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# LuaCAD 内容精炼总结\n\nLuaCAD 是一款以 **Lua 脚本编写参数化 2D/3D 模型**的 CAD 工具，可直接渲染 PNG，也可导出为 3MF、STL、OBJ、SCAD 等多种格式。它既能在浏览器中通过 WebAssembly 运行，也提供命令行和桌面应用，适合程序化建模及 3D 打印工作流。\n\n## 1. 核心功能与技术架构\n\n- 使用 **Lua 5.4** 编写参数化模型，支持 2D 草图、3D 实体及 CSG（构造实体几何）运算。\n- 可在在线 Playground 中直接运行：\n  - 引擎以 **WebAssembly** 方式在浏览器本地执行；\n  - 无需安装软件；\n  - 模型数据不会上传。\n- 底层采用 **Rust 引擎**，有两种处理方式：\n  1. 通过 **Manifold** 直接计算 CSG 并生成网格；\n  2. 生成 OpenSCAD 代码，再交给外部 OpenSCAD 渲染。\n- 支持直接渲染成 PNG，或导出为多种 CAD、网格和 3D 打印格式。\n\n## 2. 为什么选择 Lua\n\nLuaCAD 认为 Lua 与 OpenSCAD 语法相近，但具有以下优势：\n\n- 表达能力更强，语言规则更一致；\n- 执行速度更快；\n- 容易嵌入其他软件；\n- 支持运算符重载，可自然地表达 CSG 运算：\n  - `a + b`：合并；\n  - `a - b`：差集；\n  - `a * b`：交集。\n- Lua 已被 LibreCAD、Autodesk Netfabb 等 CAD 软件采用。\n\n例如，创建一个尺寸为 `1 × 2 × 3` 的立方体，再与半径为 `2`、沿 X 轴移动 `5` 个单位的球体合并：\n\n```lua\nmy_cube = cube { size = { 1, 2, 3 } }\n\nfunction my_sphere(radius)\n  return sphere({ r = radius }):translate(5, 0, 0)\nend\n\nmodel = my_cube + my_sphere(2)\nrender(model)\n```\n\n相比等价的 OpenSCAD 写法，LuaCAD 可以直接使用函数、变量及 `+` 运算符，代码更接近普通编程语言。\n\n## 3. 安装与构建\n\n可通过 Cargo 安装：\n\n```bash\ncargo install luacad         # 命令行工具\ncargo install luacad-studio  # 带实时 3D 预览的桌面 GUI\n```\n\n也可以从源码安装：\n\n```bash\ngit clone https://github.com/ad-si/LuaCAD.git\ncd LuaCAD\nmake install\n```\n\n构建要求如下：\n\n- 需要安装 Rust、C++ 编译器和 CMake。\n- 项目已内置所需的 C/C++ 依赖，通常不必额外安装系统库。\n- `luacad` 会构建 **Manifold** 和 **Clipper2**。\n- `luacad-studio` 还会构建 **OpenCSG**，因此需要 OpenGL 开发头文件。\n- Debian/Ubuntu 上可能需要：\n\n```bash\nlibgl1-mesa-dev libx11-dev libxcb1-dev libxkbcommon-dev\nlibxrandr-dev libwayland-dev\n```\n\n## 4. 命令行用法\n\nLuaCAD CLI 支持转换、监听、渲染、检查和执行脚本：\n\n```bash\nluacad convert model.lua output.3mf   # 转换为 3MF\nluacad convert model.lua output.stl   # 转换为 STL\nluacad convert model.lua output.scad  # 导出为 OpenSCAD\nluacad watch model.lua output.3mf     # 文件变化时自动重新构建\nluacad render model.lua preview.png   # 渲染为 PNG\nluacad info model.lua                 # 查看三角面数量和包围盒\nluacad lint model.lua                 # 使用 selene 检查代码\nluacad run model.lua                  # 执行脚本，仅处理副作用\n```\n\n补充规则：\n\n- `convert` 和 `watch` 会根据输出文件扩展名自动判断格式。\n- 可通过 `--format <fmt>` 手动指定格式。\n- 使用 `--via-openscad` 时，会调用已安装的 OpenSCAD 导出，而不是由 Manifold 直接生成网格。\n\n## 5. BOSL2 支持\n\nLuaCAD 完整支持 **Belfry OpenSCAD Library v2（BOSL2）**，并在自身内部重新实现，因此：\n\n- 无需安装 OpenSCAD；\n- 无需单独安装 BOSL2；\n- 可以直接预览、渲染并导出网格。\n\n示例：\n\n```lua\nbosl.cuboid { {40, 40, 40}, rounding = 2 }\nbosl.regular_prism { 5, r = 10, h = 25 }\nbosl.spur_gear { circ_pitch = 5, teeth = 20, thickness = 5 }\n```\n\n以上代码分别可创建：\n\n- 尺寸为 `40 × 40 × 40`、圆角半径为 `2` 的立方体；\n- 半径 `10`、高度 `25` 的五棱柱；\n- 圆周节距 `5`、齿数 `20`、厚度 `5` 的直齿轮。\n\n导出为 `.scad` 时，LuaCAD 会保留原始 BOSL2 调用，而不是展开为大量底层几何代码，因此导出文件仍然简短。\n\n## 6. 文本与外部文件导入\n\n### 文本建模\n\n- `text()`：将系统字体轮廓转换为 2D 草图。\n- `text3d()`：一步生成拉伸后的 3D 文本。\n- 文本会成为真实几何体，而不只是 OpenSCAD 输出指令。\n\n示例：\n\n```lua\nrender(\n  text(\"LuaCAD\", {\n    size = 12,\n    halign = \"center\"\n  }):linear_extrude(2)\n)\n```\n\n该示例生成字号为 `12`、水平居中的“LuaCAD”文字，并拉伸 `2` 个单位形成实体。\n\n### 文件导入\n\n- `import()` 可读取 LuaCAD 支持写出的各种网格格式。\n- 导入后的模型会作为实体，可继续移动、缩放、旋转或参与布尔运算。\n- SVG 和 DXF 文件会被导入为 **2D 草图**，之后可进行拉伸生成 3D 模型。\n\n## 7. 支持的导出格式\n\nLuaCAD 支持以下格式：\n\n| 格式 | 用途 |\n|---|---|\n| SCAD | OpenSCAD 脚本格式 |\n| 3MF | 3D Manufacturing Format，适合现代 3D 打印 |\n| STL | 常见的三角网格及 3D 打印格式 |\n| OBJ | Wavefront 3D 对象格式 |\n| PLY | Polygon File Format |\n| OFF | Object File Format |\n| AMF | Additive Manufacturing File Format |\n| PNG | 模型预览图像 |\n\n其中，**3MF 对多对象支持最好**：\n\n- Lua 脚本返回的每个值都会成为独立的 3MF 对象；\n- 切片软件加载后，可分别移动这些部件；\n- 可使用 `:name(…)` 为对象命名，控制其在对象列表中的显示名称。\n\n其他导出格式无法表达多个独立对象，因此会将所有内容合并、展平为一个网格。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786943866395,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2edd2ac4535aac4678b47441d83d0b2f048ccfffd092407a8de543f709f75214",
+  "refs": {
+    "sessionId": "1786943290035_fjlbtpms"
+  },
+  "revisionId": "sha256:010091057b148920a72440e04e37235569343c3a844ed4f05f8d84fb144f7eda",
+  "schemaVersion": 1,
+  "updatedAt": 1786943866395
+}

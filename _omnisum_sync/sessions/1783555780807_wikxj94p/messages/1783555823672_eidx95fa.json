@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783555823673,
+  "entityType": "message",
+  "id": "1783555823672_eidx95fa",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Codex动态工作流工具\n\n**评级**: A (76.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI Agent编排工具\n**次类别**: 开发工具, 工作流自动化, LLM工程\n**标签**: #Claude Code #Codex #动态工作流 #Agent编排 #本地运行\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 高可操作、方法论丰富的AI Agent编排工具文档，但宣传口吻较重，证据主要来自自测与项目示例。\n**核心高价值点**: 将一次性Agent扩展为可保持上下文的sessionful worker，支持steer、race、cancel，可显著提升复杂任务的交互性和成本效率。\n\n### 摘要\n该README介绍一个将Claude Code动态工作流运行在本地Codex后端的工具，支持并行Agent、长会话Worker、竞速取消、人工门控、运行可视化、成本统计和多工作流监督。\n\n### 知识要点\n- 通过/codex-workflows可让Claude Code生成并运行Codex-backed动态工作流。\n- agent.start与session.steer支持长上下文Worker，适合大仓库、多轮追问和持续调查。\n- agent.waitAny加session.cancel可实现多路径并行探索，并在首个有效结果出现后停止无效分支。\n- human() gate可在高风险节点暂停，让用户或监督器做决策，并支持默认超时策略。\n- viewer、map-run、summarize-run、compare-runs构成运行观察、复盘和成本分析工具链。\n- GoalLint、ClaimCheck、root-cause lab等模式具有可复用的Agent工作流方法论价值。\n\n### 行动项\n- 先运行 bundled demo 或 view-run 查看交互式执行图，判断是否适合自己的工作流。\n- 在真实项目中优先用--plan和--sandbox read-only试跑，评估Agent数量、预算与安全边界。\n- 将GoalLint用于昂贵Codex任务之前，把模糊目标改写成可验证、可停止的任务规格。\n- 对研究、文档或Agent输出使用ClaimCheck模式，建立证据账本并标记不确定结论。\n- 若长期使用，定期用summarize-run复盘成本、失败模式和慢Agent，并沉淀为可复用workflow模板。\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的安装命令、运行模式、Agent编排范式、成本控制与安全注意事项，对AI开发工作流有较高参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1783555823673,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:5619519888e000d56acd5cc7950bd3d92ac3b53df48e8dc9a03517172f65ccff",
+  "refs": {
+    "sessionId": "1783555780807_wikxj94p"
+  },
+  "revisionId": "sha256:77e17224a6e2e7990bbde9a28526b3a6f5dbc540fbd000fd3f1b6a3d8b122649",
+  "schemaVersion": 1,
+  "updatedAt": 1783555823673
+}

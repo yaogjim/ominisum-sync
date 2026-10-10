@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695963530,
+  "entityType": "message",
+  "id": "1789695963530_jgepusmv",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n真正可靠的生产错误修复循环，不是让 AI 定时反复跑，而是用明确边界、跨次状态、独立验证和合适触发器，让它只处理可证明、低风险的问题。\n\n## 关键内容\n\n- 作者团队的 **Error Sweep** 每天汇总过去 24 小时的生产错误，按“出现次数 × 受影响用户数”排序，跳过已知噪声，每次只选一个影响最大的新异常。\n- 只有根因明确且改动风险低时，代理才在隔离工作区完成最小修复并提交 PR；高风险或大型修改交给人工，且上一条 PR 未合并时不再新增，避免淹没审核者。\n- 循环通过“状态 + 日志”记住已排除、已修复和待观察的问题；验证器提供截图、视频或测试证据，后续还要观察生产指标，确认错误确实停止。\n- 开源工具 Loopany 负责调度、存储和通知，模型与代码均在自有机器运行；但项目仍处早期，本地守护进程权限较高。\n\n## 通俗解读\n\n关键不是 AI 会不会修 Bug，而是它何时必须停手。就像给维修员授权：小故障可直接处理，涉及主体结构则必须报批；没有这条界线，自动化越强，风险反而越大。\n\n## 是否值得细读\n\n**值得。** 尤其适合准备把编码代理接入生产流程的人；原文提供了合同模板、验证方案和真实边界规则，但实践效果主要来自作者自述，不能视为普遍结论。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695963530,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8b3e741859f1f0d90672bc3811c5205cfc0c5280038bc6ae7b73ddcf5d070ae5",
+  "refs": {
+    "sessionId": "1784023592360_v1negty3"
+  },
+  "revisionId": "sha256:0b07ef4c0a7ec9aa3b07c23bac61bf2385981e10f64723d551fd1c5a04397e0b",
+  "schemaVersion": 1,
+  "updatedAt": 1789695963530
+}

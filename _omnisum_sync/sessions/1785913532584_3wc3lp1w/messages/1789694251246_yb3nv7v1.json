@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694251245,
+  "entityType": "message",
+  "id": "1789694251246_yb3nv7v1",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章认为，AI近期的“自我改进”更可能来自改进模型外围的**运行框架（harness）**，而不是让模型直接重写自身参数。\n\n## 关键内容\n\n- Harness类似AI的“操作系统”：负责规划执行、调用工具、管理上下文与文件、保存状态、检查结果和控制权限。Claude Code、Codex等编程智能体的能力，不只取决于底层模型，也依赖这套外围系统。\n- 长任务通常采用“计划—执行—测试—修正”的循环，并把日志、代码差异和实验结果写入文件，避免全部塞进有限的上下文；还可并行调用子智能体，再汇总结果。\n- 优化对象正从提示词、上下文和人工工作流，逐渐扩展到自动搜索工作流、Harness代码，甚至“优化Harness的程序”。文中列举ACE、MCE、Meta-Harness等研究作为例子。\n- 作者预测：短期内，成熟Harness会帮助AI自动做研究并改进后续系统；模型变强后，一些技巧可能被模型内化，但外部工具、环境和评估接口仍会保留。\n\n## 通俗解读\n\n核心区别是：**模型像大脑，Harness像工作台、记事本和项目管理制度**。同一个模型，如果能保存进度、并行试错、检查证据并从失败记录中调整，实际完成复杂任务的能力会明显不同。\n\n## 是否值得细读\n\n若你关注AI智能体、自动科研或编程Agent，值得细读其案例；若只想把握观点，以上已覆盖主线。**所给原文在ADAS介绍处截断，后续结论并不完整。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694251245,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:02374cb68dbd95ccd268dff2e63c9f67187a87f3306bc3e4dd32808951d80228",
+  "refs": {
+    "sessionId": "1785913532584_3wc3lp1w"
+  },
+  "revisionId": "sha256:da5638f20c55e5104b617c4b927eda32d6a97bcd50e2a003d575b41c92fdd95d",
+  "schemaVersion": 1,
+  "updatedAt": 1789694251245
+}

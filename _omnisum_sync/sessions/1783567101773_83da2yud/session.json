@@ -1,0 +1,66 @@
+{
+  "createdAt": 1783567101773,
+  "entityType": "session",
+  "id": "1783567101773_83da2yud",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确需调研 Agent 框架，可单独查阅 pi、opencode、eino 的官方文档和 GitHub 仓库。",
+      "不要基于该帖直接做技术选型，应寻找系统评测或实际项目案例。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783567123809,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent框架选择简短讨论",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息密度低，回复质量参差且含无关广告内容，无法形成可靠决策依据。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "讨论中提到的 Agent 框架包括 pi、opencode、eino。",
+      "部分用户认为 opencode 因具备桌面端体验更有优势。",
+      "也有用户认为开箱即用方面 CC/Codex 更好，开发参考则偏向 pi。"
+    ],
+    "oneHighValuePoint": "若从开发参考角度看，有用户认为 pi 的代码和设计值得借鉴。",
+    "oneLineReview": "只能提供几个工具名线索，不能作为框架选型依据。",
+    "primaryCategory": "人工智能",
+    "rating": "D",
+    "rejectReason": "内容仅为零散观点和投票式回复，缺少系统比较、使用场景、技术细节和证据支撑。",
+    "retentionDecision": "短期参考价值很低，建议删除",
+    "secondaryCategories": [
+      "Agent框架",
+      "开发工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该内容围绕“当前最好的 Agent 框架”展开简短讨论，提到 pi、opencode、eino，并有少量回复认为开发可参考 pi，opencode 因桌面端更强。但整体缺乏论证和具体案例。",
+    "tags": [
+      "AI Agent",
+      "pi",
+      "opencode",
+      "eino",
+      "工具选择"
+    ],
+    "title": "关木: 现在最好的agent 框架是什么",
+    "totalScore": 25,
+    "url": "https://x.com/ZeroZ_JQ/status/2074778874068795548"
+  },
+  "payloadHash": "sha256:ba3e2128d2e43dd5008edf394a95461122897e2de6a3d30fd719e83581e3bfcf",
+  "refs": {},
+  "revisionId": "sha256:0913d05d8a0959f758171a64e8d149f88e9cc4fac8b2951e186ee07f2403544f",
+  "schemaVersion": 1,
+  "updatedAt": 1783567123853
+}

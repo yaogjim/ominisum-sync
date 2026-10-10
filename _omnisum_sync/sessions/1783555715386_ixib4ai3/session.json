@@ -1,0 +1,69 @@
+{
+  "createdAt": 1783555715386,
+  "entityType": "session",
+  "id": "1783555715386_ixib4ai3",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查现有系统是否存在冗余写入、复杂join、ORM低效查询和N+1问题。",
+      "为PostgreSQL服务评估或引入PgBouncer等连接池方案。",
+      "对高频缓存miss场景设计缓存锁，避免请求同时打到数据库。",
+      "按业务SLO和访问模式将读流量路由到不同副本，降低噪声邻居影响。"
+    ],
+    "archiveReason": "包含PostgreSQL单主多副本、连接池、缓存锁、工作负载隔离、级联复制等可复用架构实践",
+    "classifiedAt": 1783555756037,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "OpenAI单主库扩展实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/63c7ad95/img/favicon.ico",
+    "knowledgePoints": [
+      "PostgreSQL写入压力会受到MVCC、版本膨胀和vacuum影响，写密集场景需谨慎设计。",
+      "读重型系统可通过读副本、缓存、连接池和查询拆分显著降低主库压力。",
+      "复杂多表join、ORM生成的低效查询和N+1问题需要定期审计。",
+      "热备、读副本、工作负载隔离和级联复制可提升可用性与读扩展能力。"
+    ],
+    "oneHighValuePoint": "通过应用层优化、读副本隔离、连接池和缓存锁等低成本手段，延长单主PostgreSQL架构的可用寿命。",
+    "oneLineReview": "内容是较好的数据库扩展案例速览，但主要为二手解读，证据和深度有限。",
+    "primaryCategory": "技术架构",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性归档，作为数据库扩展和系统设计案例参考",
+    "secondaryCategories": [
+      "数据库工程",
+      "系统设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该视频解读OpenAI如何用单个PostgreSQL主库和约50个读副本支撑大规模ChatGPT用户，涵盖读写分离、懒写、限流、查询优化、连接池、缓存锁、高可用和级联复制等工程手段。",
+    "tags": [
+      "PostgreSQL",
+      "数据库扩展",
+      "读写分离",
+      "缓存",
+      "高可用"
+    ],
+    "title": "How OpenAI Handles 800 Million ChatGPT Users on a Single PostgreSQL Primary - YouTube",
+    "totalScore": 69,
+    "url": "https://www.youtube.com/watch?v=ubpUjovBMAM"
+  },
+  "payloadHash": "sha256:757210139dad1c16c1fbde3b45f701cd8d113c931de84e9a42da57e2111ba5b9",
+  "refs": {},
+  "revisionId": "sha256:4f3cb51c341d2a815c9ff16565f206eadfbe789323b47e44f5f6625c764f23a0",
+  "schemaVersion": 1,
+  "updatedAt": 1789729129588
+}

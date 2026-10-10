@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693962800,
+  "entityType": "message",
+  "id": "1789693962800_yiw27evu",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一个用 **LFM2.5-Audio-1.5B + llama.cpp** 在个人设备上实时转写音频的命令行示例，全程本地运行，无需联网或上传数据。\n\n## 关键内容\n\n- 项目提供开箱即用的 Python CLI：克隆仓库、安装 `uv` 后即可转写音频；首次运行会自动下载模型和适配当前平台的 llama.cpp 构建。\n- 可通过量化等级平衡体积、速度和准确率：默认 Q8_0 约 **1.8GB**，Q4_0 约 **1.1GB**，F16 约 **3.3GB**。通常压缩越强，运行越轻快，但准确率可能下降。\n- 音频输入和转写文本都不会发送到服务器，适合手机、智能家居等需要离线运行或重视隐私的场景。底层还支持文字转语音及四种英美男女声。\n- 当前 llama.cpp 的音频支持仍属实验性功能，需使用 Liquid AI 提供的专用版本；分块重叠和不完整句子会导致转写结果不够准确，作者建议再用小型文本模型做清理。\n\n## 通俗解读\n\n它相当于把“语音转文字服务”直接装进自己的电脑：隐私更好，也不依赖云端，但效果尚未达到完全成熟、即装即用的程度。**值得开发者或本地 AI 爱好者细读和试用；若只想找稳定的成品转写工具，则参考价值有限。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693962800,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bd0ccb67029acb1de2790d2b7e3af8d03fc3d43e932f925a4e018deac4d6b154",
+  "refs": {
+    "sessionId": "1788860558532_kry2amez"
+  },
+  "revisionId": "sha256:015869ba49e714d523f4ef4489dec0d6b3006b91310c74c287ba08c1c6214d03",
+  "schemaVersion": 1,
+  "updatedAt": 1789693962800
+}

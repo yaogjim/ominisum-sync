@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786356422655,
+  "entityType": "message",
+  "id": "1786356568882_an4a6wob",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# AI Agent 的真正价值：重构工作流，而非替代人工操作\n\n## 核心观点\n\n企业引入 AI Agent 的重点，不是让它模仿员工操作现有软件，而是围绕 Agent 重新设计业务流程、系统能力与人机分工。\n\n## 1. Agent 应由事件驱动，而非持续运行\n\n高价值 Agent 不需要全天候消耗 Token。更合理的模式是：\n\n- 由业务事件自动触发\n- 根据状态持续推进任务\n- 遇到异常时请求人工介入\n- 无需人工重新启动流程\n\n关键不在“持续运行”，而在“自主完成”。\n\n## 2. 接入现有 SaaS 不等于流程重构\n\n如果 Agent 只是点击 CRM、复制邮件、填写表格，本质上仍在继承旧流程的低效。\n\n真正的 AI-Native 工作流，应将企业系统改造成一套 Agent 可直接理解和调用的体系，包括：\n\n- 业务事件与状态\n- 数据与权限\n- 执行动作\n- 效果评估\n- 异常处理机制\n\n## 3. 应按工作流判断 Agent 落地条件\n\n企业不应笼统讨论“销售、医疗或理赔是否适合 Agent”，而应拆解具体工作流，判断其中哪些环节可以自动化、哪些需要人工审核。\n\n未来，组织会围绕 Agent 重新划分人机职责，并调整跨部门协作和 Human-in-the-loop 节点。\n\n## 4. 最大机会是成为业务执行系统\n\n更有价值的商业机会，不是做一个可对话的 AI 助手，而是成为某类业务的 **Agentic System of Action**，掌握：\n\n- 事件入口\n- 业务状态\n- 权限控制\n- 任务执行\n- 质量评估\n- 异常处理\n\n## 总结\n\nAgent 的长期上限，不是提高现有流程的操作效率，而是改变流程本身。未来企业的大部分 Token 消耗，也将来自真正部署在业务工作流中、持续执行任务的 Agent。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786356422655,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f91b31f307ebb180ca739bb9f5176db4c41fefa9494f0fdd5c44eb8db1067519",
+  "refs": {
+    "sessionId": "1786354552342_sta9mztw"
+  },
+  "revisionId": "sha256:b04ec28b4a125cd9b14230e9a27350448066ff2763ea2a211ac0af74f31ce2b2",
+  "schemaVersion": 1,
+  "updatedAt": 1786356422655
+}

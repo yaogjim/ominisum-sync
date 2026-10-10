@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695618165,
+  "entityType": "message",
+  "id": "1789695618166_ivmbbp87",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nAI 写代码后，开发者不该沦为手动验收的“测试员”，而应搭建一套自动化流程，让 Agent 自己部署、测试、排错和重试，人只审核关键证据。\n\n## 关键内容\n\n- **不要相信 Agent 自报“已完成”**：它可能误解需求，也可能用错误测试验证错误实现。应要求它在真实环境运行集成测试，并展示原始输出；发现 `FAIL` 就继续修复、重跑。\n- **后端要验证完整链路**：除功能测试外，还应自动完成部署、日志查询、压力测试、监控和告警，检查错误率、p99 延迟、内存等指标。\n- **前端必须看实际页面**：通过 Claude in Chrome 或 Playwright 操作浏览器，每一步截图并打开检查，避免“接口正常但页面已坏”的情况。\n- 最后用 **Skill、CI 或 MCP** 把步骤串成固定流程，也就是作者所说的 **harness（自动化验证框架）**。\n\n## 通俗解读\n\n核心不是“少测试”，而是把重复测试交给机器，人从亲自点按钮变成审核测试结果、日志和截图。这是持续交付思路在 AI 编程中的应用。\n\n**是否值得细读：**值得，尤其适合已频繁使用 Coding Agent、却发现验收工作越来越多的开发者；文章偏实践经验，并非严格的效果评测。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695618165,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0282ceaac03a10b0f3fac8b3e94f737e7f907aef46f30d239ad2dc1ebb374a1a",
+  "refs": {
+    "sessionId": "1783301155441_v7s6gqiy"
+  },
+  "revisionId": "sha256:01f33091d0cf5b5fb858c9d68f95821ad00429e19afbd739a19cbca8c99011cf",
+  "schemaVersion": 1,
+  "updatedAt": 1789695618165
+}

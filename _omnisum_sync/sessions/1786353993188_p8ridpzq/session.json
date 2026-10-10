@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786353993188,
+  "entityType": "session",
+  "id": "1786353993188_p8ridpzq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在机械传动原型中评估变传动比结构对起始扭矩和末端速度的影响。",
+      "采用分级载荷测试记录转速、弹丸速度、效率及失效位置。",
+      "对高速轻量构件分别进行屈曲、动平衡和释放时序验证。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1786354817946,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "重力投石机突破音障实验",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.techeblog.com",
+    "favicon": "https://www.techeblog.com/wp-content/uploads/2018/11/cropped-Untitled-1-32x32.png",
+    "knowledgePoints": [
+      "变直径卷筒可在同一动力行程中动态调整扭矩与转速，改善固定传动比的性能限制。",
+      "高速旋转机构需要同时控制构件质量、刚度、动平衡和毫秒级释放时机。",
+      "逐步增加配重并分析失效部位，可以在高能机械测试中降低风险并指导结构迭代。"
+    ],
+    "oneHighValuePoint": "通过改变卷筒有效直径，使系统前段获得较大扭矩、后段提升转速，是突破自由落体末速度限制的关键设计思路。",
+    "oneLineReview": "这是一个有趣且数据较具体的工程原型案例，但报道层面的证据和复现细节仍然有限。",
+    "primaryCategory": "机械工程与原型开发",
+    "rating": "B",
+    "rejectReason": "报道缺少完整设计参数、测量方法和独立验证，难以直接复现或作为可靠技术文档使用",
+    "retentionDecision": "选择性浏览，作为机械原型迭代案例参考",
+    "secondaryCategories": [
+      "产品开发",
+      "工程实验"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Tom Stanton利用锥形滑轮传动、轻量碳纤维臂和精确机械释放机构，经过逐级载荷测试与多轮改型，使重力驱动投石机将4克弹丸加速至约346.4米每秒。",
+    "tags": [
+      "重力投石机",
+      "超音速",
+      "机械传动",
+      "碳纤维",
+      "迭代测试"
+    ],
+    "title": "A Falling Weight Just Broke the Sound Barrier with Tom Stanton's Supersonic Trebuchet",
+    "totalScore": 57,
+    "url": "https://www.techeblog.com/tom-stanton-supersonic-trebuchet/"
+  },
+  "payloadHash": "sha256:a4e75b2b91467d1b98e74556a85880607d569fd2efba860b12df6d10e4acadbd",
+  "refs": {},
+  "revisionId": "sha256:81adaa8157b8619d544b505f3d9a699a66edd49fd25e94d674882fde2bb7ce52",
+  "schemaVersion": 1,
+  "updatedAt": 1789728129038
+}

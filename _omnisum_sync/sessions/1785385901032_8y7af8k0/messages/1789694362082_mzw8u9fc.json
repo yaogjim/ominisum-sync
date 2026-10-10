@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694362082,
+  "entityType": "message",
+  "id": "1789694362082_mzw8u9fc",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nOpenAI称，GPT‑5.6通过同时优化模型、推理系统和智能体框架，在保持高能力的同时显著降低运行成本，并让模型参与了自身基础设施的优化。\n\n## 关键内容\n\n- **产品定位**：旗舰版 Sol 据称在一项编程智能体评测中超过 Claude Fable 5，成本不足其一半；Terra 以半价达到 GPT‑5.5 的基准水平；Luna 则比 Sol 便宜 80%。\n- **推理效率**：团队优化请求分配、GPU 内核、缓存和“推测解码”。其中内核改进使整体服务成本降低 20%，改良后的推测解码让生成效率提升超过 15%。\n- **智能体框架**：Codex 等产品一次任务会反复调用模型和工具，因此系统通过按需加载工具、限制工具输出、保持提示词前缀不变以复用缓存，减少重复计算和上下文膨胀。\n- **模型参与优化**：OpenAI称 Sol 能分析线上流量、改写 GPU 内核并自动开展实验，但文中数据均来自官方，未提供完整测试方法或独立验证。\n\n## 通俗解读\n\n重点不只是“模型本身更省”，而是让请求调度、GPU 执行和工具调用的每个环节都少浪费一点；这些小幅改进在多轮任务中会反复累积。**适合基础设施和智能体工程人员细读；普通用户了解核心结论即可，性能与价格比较仍需结合实际场景验证。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694362082,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:be436d29ee6591c2b1c95e7bee04e95d209d9efbdd20bb3e7218041358958127",
+  "refs": {
+    "sessionId": "1785385901032_8y7af8k0"
+  },
+  "revisionId": "sha256:0104fae3e40952a1e258cf80de8f7253714866da0b91e034e122eaca2404f72c",
+  "schemaVersion": 1,
+  "updatedAt": 1789694362082
+}

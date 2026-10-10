@@ -1,0 +1,65 @@
+{
+  "createdAt": 1783555637301,
+  "entityType": "session",
+  "id": "1783555637301_oikl3ev7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如有本地GPU和VPS，可测试将两者加入同一Tailscale网络并暴露推理服务。",
+      "评估远程AI助理获得SSH和部署权限后的安全边界与权限控制。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783555658289,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用Tailscale调度远程显卡",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter-pip.3.ico",
+    "knowledgePoints": [
+      "Tailscale可用于将VPS和本地设备组成私有网络，降低远程调用资源的复杂度。",
+      "AI助理结合SSH、代理配置和部署权限后，可承担部分远程运维与开发自动化任务。"
+    ],
+    "oneHighValuePoint": "通过Tailscale把VPS与本地GPU机器打通，让云端AI助理调用本地算力。",
+    "oneLineReview": "一个有启发的远程资源调度思路，但停留在社交媒体碎片层面。",
+    "primaryCategory": "AI工具与基础设施",
+    "rating": "C",
+    "rejectReason": "内容主要是一个想法和零散经验，没有完整实现步骤、架构细节或验证结果，参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "远程开发",
+      "网络组网"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出将美西VPS接入Tailscale，让运行在VPS上的AI小助理调用本地电脑显卡生成图片，以节省GPT额度并突破限制。回复中补充了AI助理可自动配置代理、下载、SSH修改和部署项目等使用场景。",
+    "tags": [
+      "Tailscale",
+      "VPS",
+      "远程GPU",
+      "AI助理",
+      "SSH"
+    ],
+    "title": "(3)  jyrnn 胖帅博: 今天有个想法：打算把我美西的 VPS 加入 Tailscale，这样应该可以让跑在那上面的小助理调用我工地的电脑显卡来生成图片，无需占用那本就捉襟见肘的 GPT…",
+    "totalScore": 42.5,
+    "url": "https://x.com/jyrnan/status/2074652033785983197"
+  },
+  "payloadHash": "sha256:4451fbefbb857debfe271fb391cbdecbae76582ce52732926929400acc9c2f63",
+  "refs": {},
+  "revisionId": "sha256:0b41abe328c795342421b1a9daf52fd55b9fe26cf98c356e2b70c09fa467481d",
+  "schemaVersion": 1,
+  "updatedAt": 1784801233527
+}

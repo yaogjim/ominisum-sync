@@ -1,0 +1,65 @@
+{
+  "createdAt": 1790232214258,
+  "entityType": "session",
+  "id": "1790232214258_7a4nb62l",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估类似AI科研公告时，先核对已有基因组挖掘研究，再判断新增发现是什么。",
+      "在功能和运作规则未获验证前，将结果表述为候选系统，而非已证实的新机制。"
+    ],
+    "archiveReason": "提出了区分候选系统识别与机制发现的可复用判断标准。",
+    "classifiedAt": 1790233131842,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI基因组挖掘发现的验证边界",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "基因组邻域与重复序列可用于寻找候选生物系统，但结构相似不等于功能相同。",
+      "评价候选系统时，应区分RNA表达证据、组分功能证据和可编程性证据。"
+    ],
+    "oneHighValuePoint": "识别异常基因簇只是发现候选系统；弄清各组分的功能与运作规则，才是判断机制发现是否成立的关键。",
+    "oneLineReview": "这是一则有助于校准AI科研成果表述的专业评论，但对具体发现的证据主要依赖作者概述。",
+    "primaryCategory": "AI辅助科学发现",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "浏览并保留，供评估AI科研发现的表述时参考",
+    "secondaryCategories": [
+      "基因组挖掘",
+      "科研成果评估"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者认为，Anthropic识别出噬菌体基因组中与重复序列相邻的异常基因，属于已有基因组挖掘方法能够取得的早期线索。尽管重复序列会产生RNA，系统功能、逆转录酶的作用及可编程性仍不明确，因此不宜将其表述为已完成的重大机制发现。",
+    "tags": [
+      "基因组挖掘",
+      "AI辅助科研",
+      "功能验证",
+      "CRISPR类比",
+      "科学传播"
+    ],
+    "title": "Lucas Harrington: As someone who did this kind of genome mining work during my PhD, some thoughts …",
+    "totalScore": 59,
+    "url": "https://x.com/CRISPR_LuCas/status/2102878373160906938"
+  },
+  "payloadHash": "sha256:396782e54ebdf87808a88e025115d3ee28a047fc75fd0b94567c69fef8d98a2e",
+  "refs": {},
+  "revisionId": "sha256:200c74c5a0b8a7099975c267934bc6a613bf4688a15d85d6483be67b1d7ac640",
+  "schemaVersion": 1,
+  "updatedAt": 1790233131899
+}

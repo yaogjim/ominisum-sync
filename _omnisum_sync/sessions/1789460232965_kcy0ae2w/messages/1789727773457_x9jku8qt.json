@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727773456,
+  "entityType": "message",
+  "id": "1789727773457_x9jku8qt",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 2B 小模型可在浏览器内运行完整 Coding Agent\n\nMiniCPM5-2B-WebGPU-Pi 将 Agent 框架和不到 2GB 的量化模型全部放进浏览器运行，无需 Docker、Node 或云端 API。它表明，小模型也可能以低部署成本完成基础工具调用，并适用于内网、离线及利用现有网页状态的自动化场景。\n\n## 从模型推理到工具调用都在浏览器完成\n\n该 Hugging Face Space 使用 Pi 封装 Coding Agent，由 MiniCPM5-2B 的 4-bit ONNX 版本驱动。打开网页即可使用虚拟终端、文件编辑和基础 `tool_call`，无需搭建服务端环境。作者实测在 RTX 3080 Ti 上约为 25 tokens/s，并认为该 2B 模型的工具调用稳定性好于预期。\n\n## 本地运行带来两类特殊用法\n\n- **直接利用浏览器登录态**：Agent 天然能接触当前页面的 Cookie 和登录信息，可用于缺少 MCP、API，或无法访问公网的内网项目与企业 SaaS；模型本地运行，也不需要配置 API Key。\n- **网页现场“自愈”**：让 Agent 监听浏览器 Console 报错，在页面故障时生成并应用热补丁，理论上可不刷新页面直接修复。\n\n## 意义在于重新打开端侧 Agent 的可能性\n\n这并非依赖超大模型的云端 Coding Agent，而是“轻量模型＋浏览器沙箱＋工具调用”的组合。作者提出的应用仍属于探索性设想，但该项目验证了完整 Agent 可以低门槛、本地化地运行，为隐私敏感、网络受限和嵌入式网页自动化提供了新思路。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727773456,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2a9fb5cc0282008468bbda3b67c3357d8a789bb7484735eede8a739ba1056199",
+  "refs": {
+    "sessionId": "1789460232965_kcy0ae2w"
+  },
+  "revisionId": "sha256:189a8b1b7099ecce071788b6bf399e755824ecec893a3ec1dc9bb28f421c3d0d",
+  "schemaVersion": 1,
+  "updatedAt": 1789727773456
+}

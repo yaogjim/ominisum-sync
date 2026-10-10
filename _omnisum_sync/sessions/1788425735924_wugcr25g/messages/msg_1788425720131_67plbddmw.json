@@ -1,0 +1,20 @@
+{
+  "createdAt": 1788425720139,
+  "entityType": "message",
+  "id": "msg_1788425720131_67plbddmw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "这个需求本质上是做一个**跨音乐平台的歌单解析与批量下载工具**，用途包括：\n\n1. 用户粘贴 Spotify、YouTube 或 Apple Music 的**歌单 / 单曲链接**。\n2. 系统解析歌曲名称、歌手、专辑等信息。\n3. 在可用音源中**自动匹配对应歌曲**，解决不同平台链接和曲库不一致的问题。\n4. 按原歌单顺序整理文件，并在文件名中加序号，例如：\n   - `01 - 歌名 - 歌手.mp3`\n   - `02 - 歌名 - 歌手.mp3`\n5. 将全部歌曲打成 ZIP 压缩包，供用户一次性保存。\n\n典型场景是**歌单迁移、离线备份、统一归档或下载自己有权使用的音乐**。不过，如果工具绕过平台限制下载受版权保护的音频，可能违反平台条款或著作权规定；合规实现更适合使用官方 API 获取歌单信息，并只下载用户自有、已授权或开放许可的内容。",
+    "finish_reason": "stop",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1788425720139
+  },
+  "payloadHash": "sha256:fdfb8e0212d883335a6db91c4cfb2694fd8b8bd2348930cc3d10c3b178d22f89",
+  "refs": {
+    "sessionId": "1788425735924_wugcr25g"
+  },
+  "revisionId": "sha256:8e6cecd35a1c68a5cc5defe6240932079c1013f8f2a08a4d9738226c5417a027",
+  "schemaVersion": 1,
+  "updatedAt": 1788425720139
+}

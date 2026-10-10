@@ -1,0 +1,84 @@
+{
+  "createdAt": 1783075797775,
+  "entityType": "session",
+  "id": "1783075797775_j33gud5g",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如遇 Codex 516 截断，可尝试修改 model_instructions_file 指向去除 commentary 段落的提示词文件",
+      "修改后通过询问系统提示词结构来验证本地提示词是否生效",
+      "在真实任务中进行多轮、多样本测试，不要仅依赖糖果问题判断效果"
+    ],
+    "archiveReason": "提供了针对 Codex 516 reasoning token 截断问题的具体排查思路和临时配置方案，对相关用户有实用参考价值",
+    "classifiedAt": 1783076198385,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex 516截断排查",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "0penai.net",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://0penai.net/solution-og-v2.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://0penai.net/solution-og-v2.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "Codex 系统提示词中的 commentary 通道可能影响模型推理过程和 reasoning token 分配",
+      "516 截断可能与模型按约 512 token 分页输出推理内容及特殊 token 机制有关",
+      "去除 commentary 相关提示词可能缓解特定测试场景下的截断问题，但不是根因证明"
+    ],
+    "oneHighValuePoint": "将 516 截断问题与 Codex 系统提示词中的 commentary 中间更新机制关联起来，并提供了可验证的配置修改方法。",
+    "oneLineReview": "一篇有实操价值但证据样本较小的 Codex 降智问题排查记录。",
+    "primaryCategory": "AI工具与模型调试",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除，若正在使用 Codex CLI 可暂时保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "OpenAI Codex",
+      "提示词工程",
+      "LLM推理机制"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于社区实验分析 Codex 出现 516 reasoning token 截断的可能原因，认为 commentary 通道相关系统提示词与截断现象高度相关，并给出去除相关提示词、修改本地配置文件的临时缓解方案。",
+    "tags": [
+      "Codex",
+      "516截断",
+      "系统提示词",
+      "commentary通道",
+      "推理token"
+    ],
+    "title": "GPT 降智解决方案 | 0penAI",
+    "totalScore": 64.5,
+    "url": "https://0penai.net/solution"
+  },
+  "payloadHash": "sha256:f9fb6454bafc317b0c4576843be8db9cb0154b24f69dfa00ce2966a06f67ea20",
+  "refs": {},
+  "revisionId": "sha256:4069b1eb8273de02ae6e4a8840d9b61b0974b8f46b6ddff5e5640278737bf32f",
+  "schemaVersion": 1,
+  "updatedAt": 1789729487217
+}

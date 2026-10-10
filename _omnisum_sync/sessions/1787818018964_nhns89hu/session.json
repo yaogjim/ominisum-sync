@@ -1,0 +1,83 @@
+{
+  "createdAt": 1787818018964,
+  "entityType": "session",
+  "id": "1787818018964_nhns89hu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在非root普通用户下安装控制平面，并分别运行omg computer status与omg doctor验证服务、代理和认证状态。",
+      "连接至少一个已认证的编程代理CLI，并通过设置界面为支持的代理注册omg.dev MCP。",
+      "需要手机远程访问时启用Tailscale Serve，同时保持OMG_HOST为127.0.0.1，避免直接公网暴露。"
+    ],
+    "archiveReason": "包含完整的安装验证流程、代理接入方式、MCP工具目录、远程访问方案及明确的安全边界，具有较强实践和复用价值。",
+    "classifiedAt": 1789724789738,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "omg.dev远程代理控制平面",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "omg.dev web UI",
+        "caption": "",
+        "height": 2048,
+        "id": "img-9",
+        "nearbyText": "omg.dev 在你自己的机器上运行 AI 编程代理——并从手机端操控它们。 开源代理控制平面。可自行托管，或使用 omg.dev 上的托管服务。 快速开始 · 让代理安装 · 加入 Discord · 为什么选择 omg.dev · 代理 · 远程访问 · 安全 在终端中运行一个编程代理没问题。但运行五个就不行了：关闭笔记本电脑时它们就会终止，你无法分辨哪个代理卡在等待权限提示上，而且你必须坐在办公桌前才能回应。 omg.dev 将 Linux 主机或 macOS 工作站转...",
+        "resolvedUrl": "https://raw.githubusercontent.com/BennyKok/omg.dev/main/docs/images/omg-screenshot-1.jpg",
+        "role": "article",
+        "score": 73,
+        "src": "https://raw.githubusercontent.com/BennyKok/omg.dev/main/docs/images/omg-screenshot-1.jpg",
+        "width": 943
+      }
+    ],
+    "knowledgePoints": [
+      "多种AI编程代理可通过统一控制平面管理，同时继续使用本机仓库、既有CLI、订阅和认证凭据。",
+      "长期任务通过tmux会话保持运行，MCP工具负责会话查询、消息发送、工件展示、人工输入及带谱系的子代理委派。",
+      "无认证控制API应仅绑定回环地址，并通过Tailscale等受控私网提供远程访问，不应直接暴露到公共互联网。"
+    ],
+    "oneHighValuePoint": "以本地CLI和既有账户为执行基础，结合tmux持久会话、回环地址绑定与Tailscale私网访问，形成了兼顾代理统一管理、移动控制和凭据私有性的部署架构。",
+    "oneLineReview": "这是一份信息完整且可直接实施的产品文档，但性能与安全效果主要来自项目方自述，缺少独立验证。",
+    "primaryCategory": "AI编程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，作为多代理本地控制、移动访问和安全部署的实施参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent开发",
+      "自托管基础设施"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍自托管AI编程代理控制平面omg.dev，可用统一Web与移动端界面管理多种代理，并详细说明安装、生命周期命令、MCP委派、Tailscale远程访问、安全边界及跨平台发布机制。",
+    "tags": [
+      "AI编程代理",
+      "远程控制",
+      "自托管",
+      "MCP",
+      "Tailscale"
+    ],
+    "title": "BennyKok/omg.dev: omg.dev — Remote control for claude, codex, cursor, opencode, pi, grok, jcocde with mobile client",
+    "totalScore": 83,
+    "url": "https://github.com/BennyKok/omg.dev"
+  },
+  "payloadHash": "sha256:da64c86b26b9d2f04d02be42e2115fab996efe7086cd1f1a8ba5a5f8e01c8c9f",
+  "refs": {},
+  "revisionId": "sha256:b44aa122c046e2ed315ef88c94ac8017916ec2b5d704fbd23e1097f47a39ff3a",
+  "schemaVersion": 1,
+  "updatedAt": 1789863704704
+}

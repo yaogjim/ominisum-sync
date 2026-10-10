@@ -1,0 +1,66 @@
+{
+  "createdAt": 1787827890880,
+  "entityType": "session",
+  "id": "1787827890880_lis1mygn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "classifiedAt": 1789724766861,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 3,
+      "relevance": 4,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "中国经济减速的滞后传导判断",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "文章重复表达经济风险会滞后显现，但主要依赖个人感受和网友个案，没有不可替代的信息价值。",
+    "digestPrompt": "在对内容深度阅读和理解基础上，做深度总结；再深入浅出地解读；最后给出你的辩证思考；要求： 通俗易懂，以 markdown 格式显示。内容务必精炼，再精炼。 --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "宏观经济变化与个人生活体感之间可能存在传导时滞，不能仅凭身边个案判断整体趋势。"
+    ],
+    "oneHighValuePoint": "个人尚无明显体感不能证明宏观风险不存在，产业链冲击可能经过一段时间才传导至就业、收入和消费。",
+    "oneLineReview": "提出了经济冲击存在滞后传导这一合理提醒，但证据薄弱、表达情绪化且缺乏可执行框架。",
+    "primaryCategory": "宏观经济评论",
+    "rating": "D",
+    "rejectReason": "核心观点缺乏数据、传导机制分析和明确行动标准，难以支持可靠决策。",
+    "retentionDecision": "内容以情绪化判断和个案评论为主，缺少独特证据与可复用方法，不建议保留",
+    "secondaryCategories": [
+      "风险判断",
+      "社会认知"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/RickyYu6612/status/2092642605620474030",
+      "https://x.com/RickyYu6612/status/2092635086617530406"
+    ],
+    "summaryBrief": "文章以社交媒体观点和网友个案讨论中国经济减速，主张工厂倒闭等上游变化会经产业链滞后传导至个人，并提醒在趋势显现时提前应对风险，但未提供数据、机制拆解或可验证方案。",
+    "tags": [
+      "中国经济",
+      "经济减速",
+      "滞后传导",
+      "风险感知"
+    ],
+    "title": "中国经济减速的传导与认知误区",
+    "totalScore": 32,
+    "url": "omnisun://digest/1787827890880"
+  },
+  "payloadHash": "sha256:55a3df1d184b16db3fe507174abd24bdfeea97d111271939e3f6d45fd5d0af64",
+  "refs": {},
+  "revisionId": "sha256:848e4b2e871ee2b5834baa53de380c2193211bd9aaeb30e55c1bb3455d1e9880",
+  "schemaVersion": 1,
+  "updatedAt": 1789724768008
+}

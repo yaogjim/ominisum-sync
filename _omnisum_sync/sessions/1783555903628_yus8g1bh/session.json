@@ -1,0 +1,73 @@
+{
+  "createdAt": 1783555903628,
+  "entityType": "session",
+  "id": "1783555903628_yus8g1bh",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在下一个 Codex 项目中创建 GOALS.md，并按里程碑维护目标、证据和阻塞",
+      "将主 Codex 线程限定为协调线程，具体实现任务拆给子线程或 subagent",
+      "在每个里程碑完成后安排独立路线图审计和 /review",
+      "为需要浏览器或本地凭据的验证建立本地测试线程",
+      "为多阶段项目维护 progress-dashboard.html 或类似状态看板"
+    ],
+    "archiveReason": "提供了较完整的长时间运行 AI 编程任务组织方法，包含路线图、里程碑、审查、本地验证和进度汇报机制",
+    "classifiedAt": 1783555940307,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex长任务协作流程",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "用 GOALS.md 记录里程碑、目标、范围、决策、阻塞和完成证据",
+      "一次只保持一个 Goal-mode 目标，避免多目标并行导致上下文漂移",
+      "主线程负责协调和决策，子线程或 subagent 负责具体实现、调查和验证",
+      "每个里程碑结束后独立审计路线图并运行代码审查",
+      "需要本机环境的测试可交给本地线程完成，如浏览器登录、Xcode、权限和模拟器",
+      "通过 What’s done、What’s next、Any blockers 三段式更新降低回看成本"
+    ],
+    "oneHighValuePoint": "将 Codex 主线程限定为协调者，并通过 GOALS.md、里程碑审计和证据要求维持长期任务的项目状态一致性。",
+    "oneLineReview": "这是一篇可直接复用的 Codex 长任务编排指南，实操价值高但证据主要来自个人经验。",
+    "primaryCategory": "AI编程与智能体工作流",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，可作为 Codex 长周期项目协作模板参考",
+    "secondaryCategories": [
+      "项目管理",
+      "开发效率",
+      "AI协作方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍用 Codex 处理长周期开发任务的协作流程：以 GOALS.md 管理里程碑，主线程负责协调，子线程执行任务，阶段后审计与代码审查，并用本地线程和仪表盘完成验证与状态同步。",
+    "tags": [
+      "Codex",
+      "AI编程",
+      "长任务协作",
+      "路线图管理",
+      "多线程工作流"
+    ],
+    "title": "与 Codex 协作处理长时间运行的任务",
+    "totalScore": 74.5,
+    "url": "https://x.com/gabrielchua/status/2074505300766568563"
+  },
+  "payloadHash": "sha256:521bf7e95981d8522625b85bda7e041ddef603ed9babce52406ee4fe273d9707",
+  "refs": {},
+  "revisionId": "sha256:c89776309ccb89a221a0edc56000e5408307e575fa2b15a7a8cb10322c9dd5b8",
+  "schemaVersion": 1,
+  "updatedAt": 1789695876646
+}

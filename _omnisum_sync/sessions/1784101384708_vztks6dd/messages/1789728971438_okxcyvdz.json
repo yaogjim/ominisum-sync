@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728971437,
+  "entityType": "message",
+  "id": "1789728971438_okxcyvdz",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Airtap：用 iMessage 遥控云端手机，让 AI 代操作 App\n\n文章介绍了 Airtap：用户向指定号码发送 iMessage，即可把任务交给 AI；AI 会操作一台云端真手机，访问网页和 App，并将结果通过短信返回。其核心价值是把复杂的跨平台操作压缩成自然语言指令，无需安装新应用或学习操作流程。\n\n## 从刷 Reddit 到提炼产品需求\n\n作者测试让 Airtap 浏览 AI 相关的 Reddit 社区，整理讨论焦点和高赞观点；随后进一步要求分析评论区中被反复抱怨或频繁寻找的产品。几分钟后，AI 返回了总结文档和需求清单。\n\n这类能力不仅降低了访问特定平台和筛选社区的成本，也将“收集信息—阅读帖子—分析评论—归纳需求”串成了一条自动化流程。作者认为，对产品从业者而言，它可用于产品调研、用户痛点挖掘和舆情监控。\n\n## 云端真手机拓宽了 Agent 的执行范围\n\nAirtap 并非只生成答案，而是在云端手机上实际打开网站和应用完成操作，因此可利用云端所在地的网络及应用环境。文章还列举了更多场景：\n\n- 分析 YouTube 热门视频评论，生成选题清单；\n- 检查 Gmail 新邮件、任务或转发验证码；\n- 设置每天定时汇总 Reddit 热帖等自动任务。\n\n## 短信可能成为 AI Agent 的轻量入口\n\n这一形态的特点是零安装、低门槛：发送第一条消息即可建立账号，目前据作者称免费开放。它展示了一种新的 Agent 产品思路——用户只描述目标，AI 负责跨应用执行并返回结果。不过，文章主要基于作者体验，尚未涉及任务可靠性、账号权限及邮件和验证码等敏感信息的安全边界。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728971437,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3d18c5c0a0d3e49b01945a80ba06017e851207004b4a048d264ca6935d964088",
+  "refs": {
+    "sessionId": "1784101384708_vztks6dd"
+  },
+  "revisionId": "sha256:1c6a4fd1908abd1573b8c8551768fd508dcab5a4643c20698fa5739a251b11ee",
+  "schemaVersion": 1,
+  "updatedAt": 1789728971437
+}

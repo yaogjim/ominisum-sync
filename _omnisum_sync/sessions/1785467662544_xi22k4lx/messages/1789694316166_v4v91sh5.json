@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694316165,
+  "entityType": "message",
+  "id": "1789694316166_v4v91sh5",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是 Hugging Face 的开源语音代理框架：把语音检测、语音识别、语言模型和语音合成串成低延迟流水线，各环节均可替换，并可完全在本地运行。\n\n## 关键内容\n\n- 流程为 **VAD → STT → LLM → TTS**：判断何时说话、转成文字、生成回答，再合成为语音；各模块独立运行并通过队列连接。\n- 默认提供兼容 OpenAI Realtime 的 WebSocket 接口，现有兼容客户端可直接接入；也支持本机麦克风、原始 WebSocket 和 TCP 等模式。\n- 默认使用本地 Parakeet TDT 识别、Qwen3-TTS 合成，但语言模型默认调用 OpenAI 兼容接口；若搭配 llama.cpp、vLLM 或本地 Transformers/MLX，才是完整本地方案。\n- 支持多种识别、模型和合成后端及多语言，但实际语言范围、延迟和硬件要求取决于具体组合。该框架已用于数千台 Reachy Mini 机器人。\n\n## 通俗解读\n\n它不是一个单独的“语音大模型”，而是可自由换零件的语音助手组装框架。需要注意：开启 LLM 代理后服务本身没有认证和限流，不宜直接暴露到公网。\n\n## 是否值得细读\n\n适合准备开发本地语音助手、机器人或实时语音应用的人细读；若只想直接使用成品语音聊天工具，阅读快速开始部分即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694316165,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6cce3a3f0cd2539c2aaa7578290c186734c2d4c515a54cbe76978a998189dfe8",
+  "refs": {
+    "sessionId": "1785467662544_xi22k4lx"
+  },
+  "revisionId": "sha256:a3b0e29407a8835c15317e17e4f96e3ea73b1d8ff1b4b077a1e02edc897ca38a",
+  "schemaVersion": 1,
+  "updatedAt": 1789694316165
+}

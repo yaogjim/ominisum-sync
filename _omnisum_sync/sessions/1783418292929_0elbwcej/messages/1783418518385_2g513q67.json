@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783418518386,
+  "entityType": "message",
+  "id": "1783418518385_2g513q67",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Oh My OpenAgent功能概览\n\n**评级**: B (56.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: 开源项目, 编程代理, LLM工程\n**标签**: #OpenCode #Codex CLI #AI编程代理 #多代理协作 #MCP #LSP\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 适合作为了解和试用该 AI 编码代理工具的入口，但宣传成分重、证据不足，长期知识价值有限。\n**核心高价值点**: Hash-Anchored Edit Tool 用行号加内容哈希校验编辑位置，试图降低 AI 修改代码时的 stale-line 和误改问题。\n\n### 摘要\n文章是 oh-my-openagent GitHub README，介绍其面向 OpenCode 和 Codex CLI 的安装方式、功能模块、Team Mode、多代理编排、LSP/MCP/AST-Grep 集成、Hashline 编辑工具、遥测与卸载方式。实用性集中在工具试用和配置层面。\n\n### 知识要点\n- oh-my-openagent 分为 OpenCode Ultimate 版和 Codex CLI Light 版，前者提供完整多代理编排，后者提供较轻量的 Codex 插件组件。\n- 工具集成了 LSP、MCP、AST-Grep、tmux、规则注入、评论检查、ultrawork/ulw-loop 等能力，目标是增强 AI 编码代理在复杂代码库中的执行稳定性。\n- Team Mode 通过 lead agent 和多个成员 agent 并行工作，支持 hyperplan 和 security-research 等协作模式。\n- 项目默认启用匿名遥测，可通过配置或环境变量关闭。\n\n### 行动项\n- 如需要试用 OpenCode 版本，可先阅读安装文档后使用 bunx oh-my-openagent install。\n- 如只需要 Codex CLI Light 版，可使用 npx lazycodex-ai install 并检查 ~/.codex/config.toml 变更。\n- 试用前关注遥测默认开启、权限配置、模型/供应商认证和项目稳定性风险。\n- 重点验证 Hashline 编辑、LSP 集成、Team Mode 是否真实提升现有代码库任务完成率。\n\n### 存档判定\n归档: 否\n不推荐: 内容高度产品宣传化，重复和夸张表述较多，证据主要来自推荐语和未经充分说明的指标，不适合作为长期方法论资料。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1783418518386,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:ac18eeebe0222bcadf0de7718e14547a97d60686ae325434026f76f1b6f8ca35",
+  "refs": {
+    "sessionId": "1783418292929_0elbwcej"
+  },
+  "revisionId": "sha256:2b95908bb9199142c2399015b74b3731b57aa3cc51f9e15bdc5f712c89fe0a7a",
+  "schemaVersion": 1,
+  "updatedAt": 1783418518386
+}

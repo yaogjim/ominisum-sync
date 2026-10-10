@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784801400933,
+  "entityType": "message",
+  "id": "1784801400934_sagvt7ij",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 主旨概括\n\n文章介绍了一种比单纯让 AI 写代码更具长期价值的用法：将 **Claude Code 与 Obsidian** 结合，搭建一个能够持续积累资料、建立关联并支持随时问答的“AI 第二大脑”。\n\n## 1. 核心理念：让 AI 管理个人知识\n\n- 文中引用 Andrej Karpathy 提出的想法，相关内容获得了 **1,600 万次浏览**。\n- 核心不是让 AI 一次性完成任务，而是把文章、转录稿、PDF 等资料持续交给 Claude。\n- Claude 会读取内容、建立知识关联并分类归档，最终形成一个动态个人知识库。\n- 随着输入资料增多，知识库会像“复利”一样不断积累，回答问题时也能利用更多历史背景。\n\n## 2. 搭建方式：Claude Code + Obsidian\n\n整个系统的设置据称只需约 **5 分钟**：\n\n1. 安装 **Obsidian**，创建一个新的知识库（Vault）。\n2. 使用 **Claude Code** 打开该知识库文件夹。\n3. 粘贴 Karpathy 的 Wiki 构建思路，让 Claude 自动搭建结构。\n4. Claude 会创建三个核心部分：\n   - `Raw`：存放文章、PDF、转录稿等原始资料。\n   - `Wiki`：存放 Claude 整理生成的知识页面。\n   - `CLAUDE.md`：记录知识库的运行和处理规则。\n5. 将任何新资料拖入 `Raw` 文件夹，并对 Claude 输入 **“ingest this”**，让它读取、整理和归档。\n\n## 3. 实际价值：避免每次都从零开始\n\n- 用户可以针对知识库中的所有内容持续提问，而不必每次开启新对话后重新提供背景。\n- 它能解决个人信息分散的问题，例如资料散落在：\n  - 笔记应用中；\n  - 浏览器标签页里；\n  - 已经关闭、难以再次查找的 Claude 历史对话中。\n- 相比普通聊天，这套系统能够保留并复用长期积累的知识，让后续研究、写作和工作建立在已有资料之上。\n\n## 4. 文章建议\n\n原文推荐收藏并参考配套的完整分步指南，以便按照教程使用 Claude 和 Obsidian 搭建一个“每天都会变得更智能”的个人 AI 知识库。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784801400933,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0a245266d16e1d96b14f9b7f7f1dd2477708e15525f1202290a9d3a8df2bf07a",
+  "refs": {
+    "sessionId": "1783078099323_b24355yc"
+  },
+  "revisionId": "sha256:e3f6b2f0e6b0266c9c888ba7a382ecef95edb7e589f7be995000c5fb20601da5",
+  "schemaVersion": 1,
+  "updatedAt": 1784801400933
+}

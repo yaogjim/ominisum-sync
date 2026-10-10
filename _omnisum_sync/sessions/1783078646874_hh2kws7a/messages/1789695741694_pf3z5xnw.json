@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695741694,
+  "entityType": "message",
+  "id": "1789695741694_pf3z5xnw",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者用 Codex 连接邮件、聊天、日历、云盘和浏览器，把跨应用的生活杂务交给 AI；核心不在模型本身，而在工具接入、统一数据、操作规则与人工审批。\n\n## 关键内容\n\n- **跨应用完成任务**：代理可从 WhatsApp 获取需求，到 Gmail 找联系人、上网补资料、起草并经批准后发送邮件，省去反复切换应用。\n- **建立清晰的数据源**：作者把重要资料集中到 Google Drive，主要使用 Markdown、CSV 等易搜索和修改的格式，并维护联系人表。\n- **工具与“技能”分工**：API、命令行优先于浏览器和屏幕自动化；“技能”则是文字版操作手册，记录回复习惯、归档规则等，并根据错误持续更新。\n- **审批是安全核心**：读取、起草、发送、删除或付款属于不同风险等级。重要通信必须先展示草稿，避免代理擅自行动。作者也承认连接器、权限和浏览器自动化仍较粗糙。\n\n## 通俗解读\n\n这里的“个人代理”不是完全自主的数字管家，而是能代替人完成资料搜集、复制粘贴和首次处理，再把关键决定交还给用户。文章适合想亲手搭建个人自动化系统的人细读；若期待开箱即用的消费级产品，参考价值有限。文中效果主要来自作者个人案例，并非普遍验证。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695741694,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d23a77adaf1f4091b7bd65578a121e39c6d331685ec39bed99891311b327b3ab",
+  "refs": {
+    "sessionId": "1783078646874_hh2kws7a"
+  },
+  "revisionId": "sha256:c5e167bfb72b99e060b7779b2466941b222da9dc855337544796ecceb764c282",
+  "schemaVersion": 1,
+  "updatedAt": 1789695741694
+}

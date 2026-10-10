@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786354552342,
+  "entityType": "session",
+  "id": "1786354552342_sta9mztw",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "以具体业务工作流为单位，梳理可触发事件、业务状态、执行动作和异常分支。",
+      "区分Agent执行与人工审核节点，明确哪些步骤需要human-in-the-loop。",
+      "评估现有SaaS流程是否只是让Agent模仿人工操作，并识别可被重新设计的环节。"
+    ],
+    "archiveReason": "文章提出了以工作流、事件和业务状态为中心设计Agent系统的可迁移框架，对企业AI产品和流程重构具有参考价值。",
+    "classifiedAt": 1786354582375,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI-Native企业工作流重构",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "高价值企业Agent更适合由业务事件触发，而不必持续运行并消耗Token。",
+      "Agent readiness应以具体工作流为评估单位，而不是按Sales、医疗等职能或行业整体判断。",
+      "Agent系统的核心能力应覆盖事件入口、业务状态、权限、评估、执行和异常处理。"
+    ],
+    "oneHighValuePoint": "Agent落地的关键不是简单接入现有SaaS，而是把企业流程重构为由事件、状态、权限和人工审核节点组成的可执行系统。",
+    "oneLineReview": "观点集中且与企业Agent设计高度相关，但主要停留在概念判断，缺少案例、数据和落地步骤。",
+    "primaryCategory": "AI系统设计",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性保留，作为企业Agent工作流设计的概念参考",
+    "secondaryCategories": [
+      "企业流程重构",
+      "产品与组织设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章结合AI-Native理赔系统，强调Agent应按事件驱动而非持续运行；企业应以工作流而非职能评估Agent readiness，并将流程重构为可消费的事件、状态、权限、评估与执行系统。",
+    "tags": [
+      "AI-Native",
+      "Agent工作流",
+      "事件驱动架构",
+      "企业流程重构",
+      "人机协作"
+    ],
+    "title": "凡人小北: 正好最近在设计 AI-Native 的理赔系统，补充几点： 1",
+    "totalScore": 65,
+    "url": "https://x.com/frxiaobei/status/2086631180020203787"
+  },
+  "payloadHash": "sha256:0bf65d750bdbf1d24817b661d0f5bdf7bfa05b0d37193ac8d673305692401f0f",
+  "refs": {},
+  "revisionId": "sha256:873ad12256d0286bef16708ae53bdb26d7012dff4367b74f304d58c578abc64c",
+  "schemaVersion": 1,
+  "updatedAt": 1786356568883
+}

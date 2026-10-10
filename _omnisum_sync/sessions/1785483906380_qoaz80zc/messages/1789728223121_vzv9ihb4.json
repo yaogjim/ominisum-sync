@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728223121,
+  "entityType": "message",
+  "id": "1789728223121_vzv9ihb4",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Gemini Robotics 2：让机器人从“单项自动化”迈向全身智能\n\nGoogle DeepMind 发布 Gemini Robotics 2，试图把视觉、语言理解、任务规划和运动控制整合为机器人的“智能层”。核心进展是：机器人可控制全身、完成精细操作与多步任务，并在不同硬件间快速迁移，但速度和多指灵巧度仍有限。\n\n## 三类模型分工协作\n\n- **Gemini Robotics 2**：视觉—语言—动作模型（VLA），把指令和视觉信息转为运动，可控制人形机器人的双脚、躯干和双手。\n- **Gemini Robotics ER 2**：具身推理模型，负责理解环境、拆解任务、跟踪进度、自我纠错及协调多台机器人。\n- **On-Device 2**：面向端侧运行，适合低延迟或无网络场景；用少于 200 个示例、数小时数据即可适配形态和传感器差异较大的新型双臂机器人。\n\n## 从移动到精细操作，能力覆盖更完整\n\nApollo 2 人形机器人已能根据自然语言指令行走、弯腰、取放物品，完成整理房间等全身任务。模型还能控制 22 自由度五指手完成打结、封闭密封袋，或用双指夹爪进行紧密装箱。长任务可持续数分钟、涉及数百次决策，不同机器人也能协作完成单机难以处理的流程。\n\n## 泛化与安全决定实际落地空间\n\n同一模型检查点可用于多种机器人形态，降低了为每类硬件单独训练的成本。安全方面，DeepMind 推出 ASIMOV-Agentic 基准，测试机器人拒绝危险动作、判断任务可行性、请求人工介入及在人类靠近时安全停机的能力。\n\n不过，这仍是阶段性成果：全身和夹爪任务成功率达到中高水平，但多指操作仍具挑战，运动速度也需提升。ER 2 已开放至 Google AI Studio，其他模型目前仅向早期合作伙伴提供。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728223121,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8c32727553f3cab54a9ccfe383155f78edc0923356ec2b53d638aed46ae1c142",
+  "refs": {
+    "sessionId": "1785483906380_qoaz80zc"
+  },
+  "revisionId": "sha256:99124a0daa3172cb2950b6ef6b62b72f29d3df1745b6a24b0d0a50df787a135e",
+  "schemaVersion": 1,
+  "updatedAt": 1789728223121
+}

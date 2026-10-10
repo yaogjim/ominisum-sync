@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789725990358,
+  "entityType": "message",
+  "id": "1789725990358_z3pw2yg3",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一个**非官方 Linux 适配项目**：把用户自行取得的 OpenAI macOS 版 ChatGPT/Codex 安装包在本地转换为可运行的 Linux Electron 应用。\n\n## 关键内容\n\n- 支持 Debian/Ubuntu、Fedora/openSUSE、Arch、Nix/NixOS 和 AppImage，并兼容 Wayland、X11；推荐从源码执行 `make bootstrap-native` 自动安装依赖、构建并安装。\n- 构建过程会提取官方 DMG、打 Linux 兼容补丁、重编译原生模块，再生成对应发行版的软件包；项目本身**不分发 OpenAI 安装包**。\n- 原生软件包默认带更新管理器：发现新版 DMG 后在本机重新构建，应用退出后再安装。运行时仍需 Codex CLI，但可在首次启动时安装。\n- 文件管理器集成、浏览器插件等基础能力可用；朗读、全局听写、远程控制等大量 Linux 扩展默认关闭。账号模型与部分功能仍由 OpenAI 服务端决定，重建应用不能解锁。\n\n## 通俗解读\n\n它不是“官方 Linux 客户端”，更像一套自动移植和打包工具，因此安装复杂度、兼容性及信任风险都高于官方软件。MIT 许可也只覆盖适配代码，不覆盖 OpenAI 软件。**Linux 用户准备实际安装时值得细读构建、更新和故障排查文档；只想找开箱即用的官方客户端则不必细读。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789725990358,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:533f398a189f4a4a603209445d752d72059c6ddf6f497309fa33bc33cfaacfd6",
+  "refs": {
+    "sessionId": "1785487610904_ugoodh5o"
+  },
+  "revisionId": "sha256:e02553f6431f161d16539d2b1737bbd195deb81f11225c674b89f55f8a927ec4",
+  "schemaVersion": 1,
+  "updatedAt": 1789725990358
+}

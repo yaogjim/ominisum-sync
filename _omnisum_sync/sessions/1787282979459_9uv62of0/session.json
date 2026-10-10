@@ -1,0 +1,80 @@
+{
+  "createdAt": 1787282979459,
+  "entityType": "session",
+  "id": "1787282979459_9uv62of0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "byline": "杀马特宅主",
+    "classifiedAt": 1789725000492,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "个性化mRNA癌症疫苗与估值争议",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 680,
+        "id": "img-19",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HQJoVA4bgAAtSUs?format=jpg&name=small",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HQJoVA4bgAAtSUs?format=jpg&name=small",
+        "width": 515
+      }
+    ],
+    "knowledgePoints": [
+      "个性化新抗原疫苗需要结合患者肿瘤突变信息与HLA分型进行候选抗原筛选。",
+      "算法筛选、序列合成和mRNA递送共同构成定制化治疗流程。",
+      "治疗产品的定制化并不自动消除临床开发失败风险或传统估值中的不确定性。"
+    ],
+    "oneHighValuePoint": "个性化mRNA癌症疫苗可依据患者HLA和肿瘤突变筛选新抗原，并将多个候选抗原编码进定制序列。",
+    "oneLineReview": "个性化新抗原疫苗流程值得了解，但对临床风险和企业估值的结论过度外推。",
+    "primaryCategory": "AI与生物医药",
+    "rating": "D",
+    "rejectReason": "核心技术流程有一定信息量，但缺少来源、数据和临床证据，且由技术模式直接推导传统研发风险及估值方法失效，论证明显不足。",
+    "retentionDecision": "仅作线索参考，不建议纳入长期知识库",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "个性化医疗",
+      "企业估值"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章将莫德纳的个性化mRNA疫苗描述为一种新治疗模式：通过算法结合患者HLA分型筛选新抗原，再定制合成序列并递送；进而主张传统药物研发风险和估值框架不再适用，但未提供证据支持。",
+    "tags": [
+      "mRNA疫苗",
+      "新抗原预测",
+      "HLA分型",
+      "个性化治疗",
+      "莫德纳"
+    ],
+    "title": "杀马特宅主: 莫德纳的疫苗不能用一般的新药，或者是效果特别好的新药来对标，而是一种整个的新的治疗模式",
+    "totalScore": 38,
+    "url": "https://x.com/Maxwell_SCU/status/2090332256783180215"
+  },
+  "payloadHash": "sha256:20a00d2f669929d1a22938ebb5f1317c1b3df248f00a507e288419b702e355a5",
+  "refs": {},
+  "revisionId": "sha256:83a7b2caa60c2c66b31ea3f9cbd10962bc71abd53a12b63ddcd1c416ec814c00",
+  "schemaVersion": 1,
+  "updatedAt": 1789725009014
+}

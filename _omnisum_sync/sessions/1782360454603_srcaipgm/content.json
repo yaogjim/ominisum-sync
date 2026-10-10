@@ -1,0 +1,15 @@
+{
+  "createdAt": 1782360454603,
+  "entityType": "session-content",
+  "id": "1782360454603_srcaipgm",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Clelia Bertelli (/acc)</strong></header><div class=\"tw-body\"><br>我决定在一个  <a style=\"color: rgb(29, 155, 240);\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1wvb978 r-1loqt21\" role=\"link\" href=\"/Cloudflare\" dir=\"ltr\">@Cloudflare</a> <br>Worker 👀 <br><br>如何？令人惊讶地容易：<br>• 启动一个  <a style=\"color: rgb(29, 155, 240);\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1wvb978 r-1loqt21\" role=\"link\" href=\"/qdrant_engine\" dir=\"ltr\">@qdrant_engine</a> <br> 集群并获取凭证<br>• 在边缘处理传入的文件：使用  <a style=\"color: rgb(29, 155, 240);\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1wvb978 r-1loqt21\" role=\"link\" href=\"/llama_index\" dir=\"ltr\">@llama_index</a> <br> LiteParse 解析，并使用  <a style=\"color: rgb(29, 155, 240);\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1wvb978 r-1loqt21\" role=\"link\" href=\"/ChonkieAI\" dir=\"ltr\">@ChonkieAI</a> <br> 的分块库进行分块，两者均在 WASM 上运行<br>将文件内容存储到一个持久对象中<br>通过其内置推理直接在 Qdrant 中嵌入块（挺不错的，对吧？）<br><br>但 Worker 不仅处理数据输入，还可以从你的知识库中检索信息、从 Durable Object 存储中读取文件，并根据需求对文件进行 grep 搜索。<br><br>我一键部署它，并通过本地 stdio MCP 连接到我的编码代理，运行 npnx -y @cle-does-things/workerbase-mcp。<br><br>现在就部署你自己的（支持免费计划！）→ <a style=\"color: rgb(29, 155, 240);\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1wvb978 r-1loqt21\" role=\"link\" rel=\"noopener noreferrer nofollow\" href=\"http://github.com/AstraBert/workerbase\" dir=\"ltr\"><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-qlhcfr r-19qo34d r-qvk6io r-orgf3d r-u8s1d\" aria-hidden=\"true\">http://</span>github.com/AstraBert/work<span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-qlhcfr r-19qo34d r-qvk6io r-orgf3d r-u8s1d\" aria-hidden=\"true\">erbase</span><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-lrvibr\" aria-hidden=\"true\">…</span></a> </div></article>",
+    "pageContent": "Clelia Bertelli (/acc): 我决定在一个 @Cloudflare Worker 如何？令人惊讶地容易：\n• 启动一个 @qdrant_engine 集群并获取凭证\n• 在边缘处理传入的文件：使用 @llama_index LiteParse 解析，并使用 @ChonkieAI 的分块库进行分块，两者均在 WASM 上运行\n将文件内容存储到一个持久对象中\n通过其内置推理直接在 Qdrant 中嵌入块（挺不错的，对吧？） 但 Worker 不仅处理数据输入，还可以从你的知识库中检索信息、从 Durable Object 存储中读取文件，并根据需求对文件进行 grep 搜索。 我一键部署它，并通过本地 stdio MCP 连接到我的编码代理，运行 npnx -y @cle-does-things/workerbase-mcp。 现在就部署你自己的（支持免费计划！）→ http://github.com/AstraBert/workerbase…\n\n链接:\n- http://github.com/AstraBert/workerbase"
+  },
+  "payloadHash": "sha256:c0c4aeca3f1fe8ed00cea8d18ffd9ba9c6efb3a54634b2c8246a2e3aaebf87a1",
+  "refs": {},
+  "revisionId": "sha256:57f2049787a88cfe94a91e8f81d2352d8e1d61fc5d476d0d28f0c8cceaa89f04",
+  "schemaVersion": 1,
+  "updatedAt": 1782361897353
+}

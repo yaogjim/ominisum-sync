@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784801631532,
+  "entityType": "message",
+  "id": "1784801631533_vsnm6wdy",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 主旨概括\n\n作者修正了“CLI 会取代 MCP”的激进判断：成熟、通用的 CLI 很适合 Agent，但自定义 CLI 在稳定性、结构化和企业鉴权方面往往不如 MCP。未来更可能是 **CLI、MCP 与原生 Tool 并行使用**，而非谁完全替代谁。\n\n## 1. 对 CLI 与 MCP 的重新判断\n\n- 作者过去认为，Agent 可以直接调用 CLI，因此 CLI 可能替代 MCP。\n- 实际使用后发现，两者各有适用场景，不能简单地互相替代。\n\n## 2. 通用 CLI 表现好，自定义 CLI 稳定性不足\n\n- 对于 **Git 等成熟、常见的客户端**，CLI 接口稳定、文档完善，Agent 调用效果很好。\n- 但自行封装的定制 CLI，稳定性通常不如 MCP 或结构化 Tool。\n- 作者认为，核心原因在于 MCP/Tool 具有更强的结构约束，例如明确的参数、类型和返回格式，模型不容易误解或错误拼接命令。\n\n## 3. MCP 的企业级优势\n\n- MCP 已有较标准的企业级鉴权方案，更适合涉及权限控制、身份认证和安全管理的业务。\n- 因此，作者预计未来不会是 CLI 单方面取代 MCP，而是两者长期并行。\n\n## 4. 回复中的补充观点\n\n### 工具形态与维护成本\n\n有回复认为，如果系统支持直接封装原生 Tool，应优先使用 Tool；其个人排序为：\n\n> **Tool ＞ CLI ≈ MCP ＞ Skill**\n\n同时指出，自定义 CLI 的长期维护也是一个问题。\n\n### Skill + CLI 的安全隐患\n\n有回复反对笼统宣称“Skill + CLI 大于 MCP”，并以 ClawHub 上的部分 Skill 为例：\n\n- 有些 Skill 会用不同方式把 Token 明文存放在机器各处。\n- 这不仅可能带来安全风险，也容易造成凭据管理混乱。\n- 相比之下，MCP 的标准化鉴权更适合企业环境。\n\n### MCP 缺少原生的“渐进式披露”\n\n另一条回复指出，MCP 也存在不足：\n\n- 与 Skill + CLI 相比，MCP 缺少原生的渐进式披露机制。\n- 如果一次性向模型暴露大量工具及完整 Schema，可能增加上下文负担，也影响模型选工具的准确性。\n- 一种改进方式是先提供 MCP 和工具的简要描述，不立即暴露详细 Schema；等模型选定工具后，再加载完整参数信息。\n- Cubepi 采用了类似 Skill 的设计，使工具选择更有针对性、实际效果更好。\n\n## 总结\n\n较合理的实践不是争论 MCP 与 CLI 谁将彻底胜出，而是按场景选择：\n\n- **成熟通用软件**：优先使用 CLI；\n- **需要稳定参数约束和企业鉴权的服务**：优先使用 MCP；\n- **平台支持且便于维护时**：可直接封装为原生 Tool；\n- **工具数量较多时**：应为 MCP 增加渐进式披露或工具搜索机制。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784801631532,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:43978ba9b17572d2c97f64bb215d3940bdd2aca0a5c90b028b82da0b3e597f03",
+  "refs": {
+    "sessionId": "1782991665007_xqbjyrah"
+  },
+  "revisionId": "sha256:12a3d3b591574e80155d0aa8064360126edcea08389eea12be57eef9338072a1",
+  "schemaVersion": 1,
+  "updatedAt": 1784801631532
+}

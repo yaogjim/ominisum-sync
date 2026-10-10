@@ -1,0 +1,24 @@
+{
+  "createdAt": 1788927073898,
+  "entityType": "message",
+  "id": "1788927128529_yrq42cqy",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# DaVinci Resolve 21.1发布：接入AI助手，扩展多机位、HDR调色与Fusion图形工具\n\nBlackmagic Design宣布DaVinci Resolve 21.1，重点通过AI助手处理重复任务，同时加强照片与媒体管理、多机位剪辑、HDR交付、Fusion图形设计和协作能力。该版本新增超过25个Krokodove工具，并对超过100项工具和控制功能进行扩展或改进，现已可免费下载。\n\n## AI助手以自然语言执行媒体整理与批量任务\n\n- **核心观点：** 21.1可与Claude、Claude Code和ChatGPT Codex集成，让用户通过日常对话语言操作项目。\n- **关键事实或依据：** AI助手能够分析项目、整理媒体、调整设置、删除不需要的片段，并批量渲染交付文件。\n- **重要数据或案例：** 用户可要求AI从长视频中制作精彩片段剪辑；偏好设置还可规定AI只使用全分辨率媒体，并在其离线时回退到其他可用媒体。\n- **本段结论：** Blackmagic Design认为，这些能力可减少重复操作，使用户把更多时间用于创意决策；原文未提供实际效率测试数据。\n\n## 照片页、媒体管理与项目归档能力扩展\n\n- **核心观点：** 新版本扩大原生相机格式支持，并简化素材查看、元数据录入和项目归档。\n- **关键事实或依据：** 照片页新增对Fujifilm GFX与X系列、Leica SL和Sony A7R V1等格式的支持，用户无需预先转换文件。\n- **重要数据或案例：** 用户可通过检查器和DaVinci Resolve调色面板调整图像；媒体池列表中的可编辑字段可直接修改，并可用Tab和Enter键导航。\n- **本段结论：** 项目归档现在可选择仅包含已用素材、原始文件或代理文件，以及缓存、LUT和画廊静帧；整合项目时还会随渲染素材附带`.drp`文件。\n\n## 多机位剪辑、修剪与时间线操作提速\n\n- **核心观点：** 编辑页围绕大规模多机位项目、精确修剪和重复参数设置进行了优化。\n- **关键事实或依据：** 新增时间线查看器多机位模式按钮，切回时间线时源查看器会自动恢复多机位模式；创建多机位片段时可按时间码间隙拆分。\n- **重要数据或案例：** 快捷键最多可控制25个多机位角度和32条轨道；音频波形可自动适配轨道高度，修剪编辑器支持在查看器中直接拖动并进行逐帧调整。\n- **本段结论：** 检查器预设可保存视频、音频、转场和变换参数，标记列表可导出为PDF，降低跨项目重复设置和对外共享批注的成本。\n\n## HDR独立交付与色彩空间支持增强\n\n- **核心观点：** 调色页允许不同HDR格式分别进行修整、构图和缓存，避免多个交付版本共用一套调整。\n- **关键事实或依据：** Multimaster Trim现支持Dolby Vision、HDR10+和HDR Vivid的独立修整流程，每个版本都可单独覆盖输出尺寸。\n- **重要数据或案例：** 各修整版本拥有独立时间线缓存；在堆叠片段之间切换时，播放头位置会保留。\n- **本段结论：** 新增GoPro Log、Leica L-Log、DJI D-Gamut2与D-Log2、Vivo Wide Gamut与Log等色彩空间，并补充相机转换LUT和ACES Transform选项，减少手动转换需求。\n\n## Fusion新增25余个Krokodove工具并改进宏复用\n\n- **核心观点：** 21.1显著扩展Fusion的3D、形状生成和高级边缘处理能力。\n- **关键事实或依据：** Connect 3D用于连接顶点，Heightfield Create 3D可依据图像映射扭曲平面，Tube Create 3D可生成沿路径延伸的管状形体，3D Region工具组可限定效果作用区域。\n- **重要数据或案例：** sPrimitive Create可快速生成十字形、多边形、矩形和星形；新增Krokodove工具超过25个。\n- **本段结论：** 宏编辑器可从DRFX模板包自动识别并加载宏，也可更新宏而保留控制项和布局；镜头畸变、音频驱动动画及多层文字对齐工具亦获得增强。\n\n## 云端协作、编解码与自动化支持同步升级\n\n- **核心观点：** 更新还覆盖客户审阅、格式性能、硬件兼容与脚本自动化。\n- **关键事实或依据：** Blackmagic Cloud Presentations新增字幕、批注共享和评论回复，服务于审阅与批准流程。\n- **重要数据或案例：** 新版支持通过Kakadu进行GPU加速HTJ2K解码、在Apple Silicon上进行硬件加速HEIC解码，并支持Windows上的NVIDIA RTX Spark系统；另新增20个带内置控制台支持的脚本API。\n- **本段结论：** DaVinci Resolve 21.1已可从Blackmagic Design网站免费下载，并将在IBC 2026的Blackmagic Design 7.C49展位演示。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1784166291670",
+    "prompt_template_name": "结构化精读",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1788927073898,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:cebb63ecc628c403736ed3264a60ffc6d0b7081a9bd9c6746ce33033f6ac9507",
+  "refs": {
+    "sessionId": "1788921419059_274szqku"
+  },
+  "revisionId": "sha256:e5ba87aa1a1ba2e887a345196831e69758179c20e5b0fcc8ddb2c54a94e3aa95",
+  "schemaVersion": 1,
+  "updatedAt": 1788927073898
+}

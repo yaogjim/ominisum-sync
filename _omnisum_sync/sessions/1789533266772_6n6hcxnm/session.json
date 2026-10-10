@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789533266772,
+  "entityType": "session",
+  "id": "1789533266772_6n6hcxnm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "合并AI生成代码前，至少检查关键模块、数据流、异常处理和外部依赖。",
+      "让AI为复杂改动生成架构图、流程图或时序图，并人工核对其与代码是否一致。",
+      "在重要任务中使用第二个模型进行代码复核，同时保留人工验收环节。"
+    ],
+    "archiveReason": "提出了审查AI代码或借助架构图、流程图理解系统的实用原则，可作为AI辅助开发的检查提醒。",
+    "byline": "LinearUncle",
+    "classifiedAt": 1789533285277,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 3,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI生成代码仍需审查与理解",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "AI生成代码会降低开发者对实现细节和系统结构的熟悉程度，从而增加后续调试成本。",
+      "架构图、流程图、时序图和类图可作为不逐行阅读代码时的最低限度理解工具。",
+      "可使用独立模型同步检查主模型生成的代码，但仍需人工验证检查结果。"
+    ],
+    "oneHighValuePoint": "使用AI生成代码时，最低限度也要建立对系统结构和运行流程的理解，而不能只关注代码是否暂时可用。",
+    "oneLineReview": "观点直接且实用，但主要基于个人经验，缺少系统化流程和证据支持。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "篇幅短且论证有限，但包含可长期复用的AI编程风险提醒，适合简要存档",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "软件开发",
+      "个人能力建设"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章建议开发者至少浏览AI生成的代码；若不愿逐行阅读，也应让AI生成架构图、流程图、时序图或类图，以理解系统运行机制，避免因不熟悉代码而增加排查故障的成本。",
+    "tags": [
+      "AI生成代码",
+      "代码审查",
+      "系统理解",
+      "架构图",
+      "调试"
+    ],
+    "title": "LinearUncle: 我知道大家不仅不写代码，也不看代码了，但我还是建议：AI 写的代码，多少看一眼",
+    "totalScore": 57,
+    "url": "https://x.com/LinearUncle/status/2099745872187904377"
+  },
+  "payloadHash": "sha256:2b80ff5f5cb0c680dce8b084ebb94d3d3ef2f150c28b33bee140059729f77099",
+  "refs": {},
+  "revisionId": "sha256:d73da8a3810aae73a10402ae1c2aa032408de16d5e99ae344a0c7f3ddd41034b",
+  "schemaVersion": 1,
+  "updatedAt": 1789727867816
+}

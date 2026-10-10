@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694505950,
+  "entityType": "message",
+  "id": "1789694505952_baa7z884",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nAnthropic 产品负责人 Dianne Penn 认为，前沿 AI 的新能力往往突然出现，连开发者也难以准确预测；因此，产品团队最重要的不是押中未来，而是亲手使用模型、快速实验，并用评测持续验证用户价值。\n\n## 关键内容\n\n- **模型强不等于产品好用**：Claude 的编程突破来自模型能力与 Claude Code 等产品体验相互促进；没有合适的使用入口，用户未必能感受到模型进步。\n- **“评测集是新的 PRD”**：面对“Claude 会胡编”等模糊反馈，团队会还原具体对话，把问题拆成工具调用、搜索或推理错误，再制作可重复测试的案例，推动研究人员改进。传统 PRD 仍适合多人协作和探索新方向。\n- **必须亲自上手**：无论产品经理还是管理者，都要实际使用、测试甚至交付 AI 产品。单纯看报告，很难理解模型快速变化的能力与局限。\n- **人的判断仍重要**：AI 可以写作、执行任务和提出建议，但选择做什么、何时质疑结果、谁对输出负责，仍依赖人的经验、观点和判断。\n\n## 通俗解读\n\n所谓“连造 AI 的人也不知道下一步”，不是完全无法预测进步，而是难以预知某项能力会在哪次训练中突然成熟。Penn 的建议是：少做僵硬的长期规划，多建立“试用—评测—改进”的短循环。文章值得产品经理、AI 团队负责人细读；若只想了解核心观点，以上内容已足够。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694505950,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a2bf226b8df63506f7c25a0fd1674fd91e6626d509ad1373fdf5a47ea8fddf3e",
+  "refs": {
+    "sessionId": "1785202714337_y4g1d72i"
+  },
+  "revisionId": "sha256:a0a1182ff067f751835733ebf0eca4e8220e3bf94ec7626261a228ac3a9de6c5",
+  "schemaVersion": 1,
+  "updatedAt": 1789694505950
+}

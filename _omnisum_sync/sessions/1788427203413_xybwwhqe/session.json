@@ -1,0 +1,84 @@
+{
+  "createdAt": 1788427203413,
+  "entityType": "session",
+  "id": "1788427203413_xybwwhqe",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按发现粒度、正文装载时机、状态归属、推进约束和执行主体五个维度审查现有Agent架构。",
+      "在复杂多阶段工程任务中试验按需加载procedure与会话状态恢复，验证重启后的流程连续性。",
+      "对具有硬性合规要求的流程，将关键阶段条件从提示词下沉为运行时校验或状态机约束。"
+    ],
+    "archiveReason": "提出了可迁移的Agent能力架构谱系、设计权衡轴和场景选择标准，对工作流编排与上下文控制有长期参考价值。",
+    "byline": "Frad",
+    "classifiedAt": 1789642640386,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 10,
+      "transferability": 9
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "可恢复的Agent工作流编排设计",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "SKILL.md主要解决方法论分发，并不天然解决按需加载、流程推进和跨会话状态恢复。",
+      "Agent流程约束可分布在提示词、schema枚举和运行时状态机三层，可靠性增强通常伴随灵活性下降与实现成本上升。",
+      "独立单步能力适合普通skill，多阶段跨会话流程适合持久化编排器，强合规流程则需要确定性状态机。"
+    ],
+    "oneHighValuePoint": "将方法论正文与能力注册解耦，使内容加载时机、作用范围、流程状态和约束强度可以分别设计与优化。",
+    "oneLineReview": "文章以具体开源实现为基础，形成了较清晰且可迁移的Agent工作流架构框架，但缺少性能数据和实际使用验证。",
+    "primaryCategory": "AI Agent架构",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，作为设计多阶段Agent工作流和能力加载机制的参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI编程工具",
+      "软件工程工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍pi-matt-pocock如何将独立skills改造成按需加载、状态持久化且可恢复的工程工作流，并从发现粒度、装载时机、状态归属与约束层级等维度比较多种Agent能力架构。",
+    "tags": [
+      "Agent工作流",
+      "状态持久化",
+      "上下文管理",
+      "按需加载",
+      "能力编排"
+    ],
+    "title": "pi-matt-pocock 介绍，以及一种替代 skills 的 agent 能力设计",
+    "totalScore": 82,
+    "url": "https://x.com/FradSer/status/2095223249705828852"
+  },
+  "payloadHash": "sha256:c20bf1c61699c1cc80b6dfc21005f251dc86e9920e70f0e244fffb436959e912",
+  "refs": {},
+  "revisionId": "sha256:1a57f4b1e955e250d80038b1e4721cb31c7144439740bf3330689155644c3642",
+  "schemaVersion": 1,
+  "updatedAt": 1790769568984
+}

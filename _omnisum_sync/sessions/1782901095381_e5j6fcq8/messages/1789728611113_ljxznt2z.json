@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728611112,
+  "entityType": "message",
+  "id": "1789728611113_ljxznt2z",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# LangChain 补上 Agent 落地的两块可靠性基础设施\n\nLangChain 同时推出统一评估栈和轻量代码执行方案，分别解决复杂 Agent“难以持续评测”和“不受信代码执行成本高”两大问题。核心价值不在提升模型能力，而在让 Agent 更容易被验证、监控并安全扩展执行边界。\n\n## Harbor + LangSmith：评估长运行、有状态的 Agent\n\n传统单元测试难以覆盖会持续运行、保存状态、调用外部工具的 Agent。Harbor 与 LangSmith 的组合提供统一 runner，可挂载隔离环境并接入可观测系统，从而记录执行过程、状态变化和失败原因。\n\n这意味着 Agent 评估可从一次性的结果判断，转向对完整运行轨迹的持续测试与诊断，更适合真实生产环境。\n\n## WASM + QuickJS：以进程内隔离降低执行成本\n\nDeep Agents 需要运行不受信任的代码，但传统独立沙箱通常部署重、运维复杂。新方案使用 WASM 与 QuickJS，在应用进程内建立最小权限的隔离执行环境，并通过 snapshot 支持任务暂停后继续运行。\n\n它并非取消安全隔离，而是不再依赖完整外部沙箱，在控制权限和风险的同时降低基础设施负担。不过，其安全边界和适用场景仍需结合实际部署验证。\n\n## Agent 瓶颈正从模型转向工程可靠性\n\n作者认为，Agent 落地的主要障碍已不只是模型能力，而是能否可靠评估行为，以及能否安全开放代码执行能力。这两套组件分别补足测试观测与执行隔离，有助于 Agent 从演示原型走向可维护的生产系统。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728611112,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3cc10b2de6991705cfe3651b6c89cc127c97f615d77e8258eb23c764fc44799e",
+  "refs": {
+    "sessionId": "1782901095381_e5j6fcq8"
+  },
+  "revisionId": "sha256:4d449921cffddec6ef7def145553fe7155125ffb5c5d247d6ef691c87223acbe",
+  "schemaVersion": 1,
+  "updatedAt": 1789728611112
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1789532997033,
+  "entityType": "message",
+  "id": "1789532997032_i1a07fra",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude Code Web架构逆向\n\n**评级**: S (88分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI基础设施与运行时架构\n**次类别**: 二进制逆向工程, AI原生PaaS\n**标签**: #Claude Code #Firecracker #Go二进制逆向 #AI原生PaaS #Agent运行时\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 9 | 10% |\n| 新颖性 | 9 | 10% |\n| 相关性 | 10 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 9 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 8 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一篇证据较丰富、方法可复用的AI运行时逆向分析，但对Anthropic战略意图和产品走向的判断仍带有推测性。\n**核心高价值点**: 文章展示了如何结合Go符号表、构建元数据、结构体标签和运行时追踪，在无需反编译器的情况下重建一个AI Agent平台的组件边界与通信流程。\n\n### 摘要\n文章利用dmesg、strace、objdump及Go构建元数据逆向Claude Code Web，梳理其Firecracker快照运行时、进程控制协议、Baku应用生成环境、BYOC机制及内部Antspace部署平台。\n\n### 知识要点\n- Firecracker可通过预启动最小initramfs并冻结整机状态，在恢复时热替换根文件系统和工具镜像，实现低延迟、会话隔离的沙箱启动。\n- 未剥离的Go二进制会暴露模块路径、依赖、包结构、方法签名、结构体标签和错误字符串，可据此恢复内部功能与协议。\n- 文中呈现的AI原生PaaS链路将自然语言生成、沙箱构建、数据库配置和应用部署整合进同一平台。\n\n### 行动项\n- 对自有Agent运行时执行dmesg、/proc/1/cmdline和strace检查，确认虚拟化类型、PID 1职责及进程监督机制。\n- 使用go version -m、objdump -t和定向字符串搜索审计自有Go产物是否泄露内部模块、协议或调试符号。\n- 将快照恢复后的时钟修正、随机数重播种、缓存清理、设备重挂载和能力降权纳入沙箱安全检查清单。\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的Firecracker快照恢复架构、进程控制协议、内部部署链路及可复用的Go二进制逆向流程，技术细节和方法论价值均较高。\n删除: 否\n留存决策: 重点精读并长期存档，适合作为AI Agent运行时、沙箱架构和Go二进制分析的参考资料",
+    "role": "assistant",
+    "timestamp": 1789532997033,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:63f77191a22290bce24a9d43269a29b51c596eaad4a9d19fb583698e99863a49",
+  "refs": {
+    "sessionId": "1774865364459_6thkls5g"
+  },
+  "revisionId": "sha256:2cdccaad76deec9f5be689eef2619daf866f3c37c7683cb740d12b8f0dfb0de3",
+  "schemaVersion": 1,
+  "updatedAt": 1789532997033
+}

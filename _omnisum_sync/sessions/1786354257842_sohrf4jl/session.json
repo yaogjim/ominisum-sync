@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786354257842,
+  "entityType": "session",
+  "id": "1786354257842_sohrf4jl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查阅微软原始财报和租赁附注，核验资产年限、资本开支及经营租赁义务的变化。",
+      "比较云厂商时统一租赁与资本开支口径，并计算资本开支占自由现金流的比例。",
+      "持续跟踪算力利用率、客户合同期限、推理收入及每美元算力带来的增量毛利。"
+    ],
+    "archiveReason": "提供了连接会计口径、自由现金流、推理收入和AI战略差异的分析视角，可用于后续评估云厂商的资本效率。",
+    "classifiedAt": 1786354282555,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "微软与Meta的AI资本效率对比",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "资产使用年限和租赁分类变化可能降低报表中的资本开支，但不会消除企业实际承担的付款义务。",
+      "AI基础设施的质量应结合资本开支与自由现金流比例、推理业务收入及客户需求覆盖程度判断。",
+      "微软通过外置记忆、工具和权限来弱化对单一模型的依赖，Meta则以自建前沿模型降低对外部实验室的依赖。"
+    ],
+    "oneHighValuePoint": "评估AI资本效率不能只看披露的资本开支，还应还原经营租赁等口径变化，并同时检查推理收入、自由现金流和算力利用率。",
+    "oneLineReview": "分析视角具体且与AI投资高度相关，但核心数字和会计判断主要转述自单一研报，仍需结合原始财报核验。",
+    "primaryCategory": "AI商业与投资分析",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，重点保留资本开支口径调整与AI基础设施回报的分析框架",
+    "secondaryCategories": [
+      "企业战略",
+      "财务分析"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章借微软与Meta财报对比，分析市场如何评估AI资本开支、自由现金流和基础设施回报，并指出微软调整数据中心使用年限可能降低披露的资本开支，同时讨论其模型中间件与推理业务战略。",
+    "tags": [
+      "AI资本开支",
+      "云计算",
+      "自由现金流",
+      "数据中心折旧",
+      "模型中间件"
+    ],
+    "title": "howie.serious: Ben Thompson 的 Stratechery，跟 ai 投资方面的个人判断密切相关，所以每篇付费研报都会认真阅读（何况150刀订阅费已经花了🤣）",
+    "totalScore": 73,
+    "url": "https://x.com/howie_serious/status/2086435606033535210"
+  },
+  "payloadHash": "sha256:8d31be94584a9d9bf150fcead4851c0c57a70b9ec26a1a97bea1e31aa17e07f9",
+  "refs": {},
+  "revisionId": "sha256:ad583bfeca775f4471c2c1c2e4904e4d5534513e1e99d3e64e05e60c529012f9",
+  "schemaVersion": 1,
+  "updatedAt": 1789864292899
+}

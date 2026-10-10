@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694094422,
+  "entityType": "message",
+  "id": "1789694094424_iiujivtk",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nMole 是一款本地运行的开源深度研究工具，主打**严格控制调用预算、逐条核验引用，以及不向模型泄露本地原始数据**。\n\n## 关键内容\n\n- **预算是硬上限**：每次模型调用前先预留费用、完成后结算；项目称测试中预算超支率为 0%。用户必须设置美元或 Token 上限。\n- **证据可核查**：搜索和阅读网页后，每条论断都要附原文引语；找不到逐字对应内容的论断会被丢弃。项目自测引用准确率为 100%，但重新审查后的论断支持率为 80%。\n- **保护本地数据**：分析 CSV、JSON 等文件时，模型不接触原始行，也不直接写 SQL；仅能获得计数、均值、检验结果等汇总信息，且分组至少包含 5 条记录。\n- **可独立或配合编程助手使用**：支持网页、学术资料和本地数据研究，也可通过 MCP 接入 Claude Code 等工具；需自备搜索服务及模型 API 密钥。\n\n## 通俗解读\n\n它不是简单的“联网聊天”，而是给研究过程加上可审计的费用账本和证据链。所谓“数据不离开本机”并非什么都不外发，而是只允许符合规则的汇总结果离开。**若你准备部署、处理敏感数据或在意成本控制，值得细读配置与安全边界；只想了解产品定位，以上已足够。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694094422,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7114f11102d832c0394e27909770b844eb9802ef7c365fe04862c22133345657",
+  "refs": {
+    "sessionId": "1786943288557_uxydpbz9"
+  },
+  "revisionId": "sha256:156e6702cf7f392def5bc5f39f5ec2b7eacda21b4eab910a12b04eefe2a78e22",
+  "schemaVersion": 1,
+  "updatedAt": 1789694094422
+}

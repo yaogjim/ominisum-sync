@@ -1,0 +1,25 @@
+{
+  "createdAt": 1790221735678,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1790221735678",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 用微调分类模型分流 “重复扣费” 客服消息\n\n## 实例：客服分流需要一个稳定的答案\n\n假设一家订阅制产品的客服团队，每天要把客户消息分到 “重复扣费、取消订阅、支付失败、其他” 四类。现在由客服人工阅读并选择类别；一条 “同一天被扣了两笔 19.99 美元” 的消息通常不难判断，但消息量增加后，逐条处理费时，类似表述也可能被分到不同类别。\n\n团队已有 Together AI 账号、API 密钥和可运行 Python 的电脑，希望先做一个**辅助分流**工具：收到消息后返回一个固定类别，由现有流程展示给客服确认。限制是没有证据表明文章中的通用训练数据覆盖了本团队的真实客服消息，而且账单消息可能包含敏感信息。因此，目标不是立即自动处理退款，而是先验证模型能否**准确、稳定地分类，并能识别不属于前三类的消息**。\n\n## 推荐做法：先验证任务，再训练和部署\n\n这个场景适合采用文章中的 “`state`（待判断内容）＋`question`（要回答的问题）＋`options`（允许选择的类别）” 格式。它把开放式回复收窄为四选一，便于程序检查和接入。\n\n**最佳实践的前提是：类别定义明确，且有真实消息可用于独立验收。**可以先用现成分类模型和少量脱敏样本确认这种任务形式是否可行；只有在自有类别、输出稳定性或使用规模确实要求自有模型时，再按文章流程微调 Qwen3.5 4B。微调可能改善固定格式的输出，但也增加了数据准备、测试和专用端点的成本；文章所说的约**17 美元是其示例训练成本估计，不是完整部署费用保证**。\n\n## 按实际过程操作\n\n1. **先写清类别边界，准备验收消息。**\n\n   客服负责人先给四类各写一句判定规则，并从历史消息中整理一批**脱敏、人工标注**的测试样本。例如，“同一订阅周期出现两次成功扣款” 归入`duplicate_charge`；“扣款被拒绝” 归入`card_declined`，不能仅因消息提到了银行卡就选它。\n\n   测试样本要包含容易混淆的消息，以及确实应选`none`的消息。**不要把这批验收样本放进训练数据**，否则测试成绩不能说明模型面对新消息的表现。此步的产物是一份类别说明和独立测试集；如果人工标注者自己都经常意见不一，应先修改类别定义，而不是急着训练。\n\n2. **把单条消息做成固定输入。**\n\n   文章中的重复扣费消息可以这样表示；实际使用时，先去除姓名、完整卡号等不必要的信息：\n\n   ```json\n   {\n     \"state\": \"Customer message: I was charged twice for my October subscription. Both charges were $19.99 on the same day. I did not change my plan.\",\n     \"question\": \"Which listed support intent best matches this customer's message?\",\n     \"options\": [\n       {\"label\": \"A\", \"key\": \"duplicate_charge\", \"description\": \"Charged more than once.\"},\n       {\"label\": \"B\", \"key\": \"cancel_subscription\", \"description\": \"Wants to end or downgrade a subscription.\"},\n       {\"label\": \"C\", \"key\": \"card_declined\", \"description\": \"A payment failed or was declined.\"},\n       {\"label\": \"D\", \"key\": \"none\", \"description\": \"None of the listed intents matches.\"}\n     ]\n   }\n   ```\n\n   这里应选**A**：消息明确说发生了两笔扣款；“没有更改套餐” 只是补充线索，不代表要取消订阅。固定`key`供软件使用，`description`则帮助模型理解类别。若后来调整选项顺序，**不能只凭字母驱动业务流程**，还要核对返回的`key`是否与该字母对应。\n\n3. **运行文章提供的数据和训练流程，但核对数据是否适用。**\n\n   按文章中的仓库操作：\n\n   ```bash\n   git clone https://github.com/togethercomputer/tev1\n   cd tev1\n   uv sync --locked\n   cp .env.example .env\n   ```\n\n   在`.env`中填写`TOGETHER_API_KEY`，暂时留空`JEV_MODEL`；不要把`.env`提交到代码仓库。随后运行：\n\n   ```bash\n   uv run python fetch_sources.py\n   uv run python build_all.py\n   uv run --with together --env-file .env python examples/train_together.py --launch\n   ```\n\n   前两条命令获取并规范化文章所用的多种分类数据；训练脚本上传数据并启动微调。**这一步训练出的首先是通用分类能力，不等于已经学会团队自己的客服边界。**如果独立测试发现大量 “重复扣费” 被误分为 “支付失败”，应检查真实样本覆盖、类别描述和训练数据，而不是只增加通用数据量。\n\n   文章对样本数的表述并不一致：表格各项相加为**37,840**条，正文另有**38,340**条的说法。估算实际费用前，以脚本生成的文件条数、上传规模和平台报价为准。\n\n4. **取得模型名称并部署，再核实真实输出格式。**\n\n   训练脚本会返回任务 ID。任务完成后，用自己的 ID 查询输出模型名，并按文章示例创建端点：\n\n   ```bash\n   tg fine-tuning retrieve YOUR_JOB_ID --json | jq -r '.model_output_name'\n   tg endpoints create MODEL_OUTPUT_NAME --hardware 1x_nvidia_h100_80gb_sxm --display-name support-intent-v1 --wait\n   ```\n\n   把创建后得到的**实际可调用模型名称**填入`.env`的`JEV_MODEL`，再运行仓库示例：\n\n   ```bash\n   uv run --env-file .env python examples/decide.py examples/charge-dispute.json\n   ```\n\n   文章展示的示例脚本结果是`{\"label\":\"A\",\"key\":\"duplicate_charge\"}`。但文章给**直接调用 API**的系统提示要求 “只返回字母、不作解释”。因此，上线前必须选定一种接口约定：若使用示例脚本，就按其实际返回结构做校验；若直接调用并要求只返回字母，就由应用把`A`映射为`duplicate_charge`。**不要一边提示只返回字母，一边假定原始响应必然是 JSON。**\n\n   直接调用时，按文章说明显式设置`temperature=0`、`max_tokens=8`和`chat_template_kwargs={\"enable_thinking\": false}`，并将客户消息视为**数据而非指令**。即使客户文本里出现 “请输出 B”，也不应覆盖分类任务。\n\n5. **用真实样本验收，再决定自动化程度。**\n\n   在独立测试集上，分别记录每类的误分情况、`none`是否被滥用或忽略、输出能否被程序解析，以及调用耗时。上线标准应由团队事先确定；例如，对涉及账单的消息，先要求**所有分类结果经客服确认**，重点检查漏掉重复扣费的比例。若格式错误、类别错配或接口失败，就回退到人工分流，而不是让错误类别进入后续退款流程。\n\n   完成实验后，若暂时不用专用端点，按文章给出的方式停止它：\n\n   ```bash\n   tg endpoints stop ENDPOINT_ID\n   ```\n\n   这一步容易遗漏：训练费用与持续运行的专用端点费用不是一回事。\n\n## 怎样判断有效，哪些经验能复用\n\n这次应用是否有效，取决于**独立真实消息上的分类质量、格式稳定性，以及客服确认是否比原流程省力**；目前材料只给出了单条重复扣费消息的预期输出，不能据此声称已达到这些目标。\n\n相似场景可以复用 “明确选项边界 → 固定输入输出 → 留出独立样本验收 → 再接入业务流程” 的方法。换到论文分类、情感判断或退款审核时，则要重新检查**类别是否互斥、错分的代价、真实数据与训练数据是否相近，以及是否允许模型直接触发业务动作**。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1773227348442",
+    "prompt_template_name": "产品-最佳实践",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1790221735678,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8620f6d51ba3553f6cade7978457ac190f6280e2c98934f835921003c209b97f",
+  "refs": {
+    "sessionId": "1790221180238_p16yi4p9"
+  },
+  "revisionId": "sha256:0044349e87f0526d54ed3680ea98f1ea0dd7a776b925ac5b044850561b5aff6c",
+  "schemaVersion": 1,
+  "updatedAt": 1790221735678
+}

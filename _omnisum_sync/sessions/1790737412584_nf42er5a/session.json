@@ -1,0 +1,115 @@
+{
+  "createdAt": 1790737412584,
+  "entityType": "session",
+  "id": "1790737412584_nf42er5a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理现有 Agent 进程中的状态、凭证、消息交付和沙箱管理职责，按生命周期与扩展模式确定需要外置的边界。",
+      "为关键状态转换和工具结果建立稳定标识、事务提交及幂等回执，明确提交确认丢失、运行时退出和消息重投时的恢复路径。",
+      "在工具执行前设置独立授权关口，将决策绑定到具体动作与策略；审查失败或决策未成功提交时，不允许推进执行。"
+    ],
+    "archiveReason": "提供运行时边界划分、持久化交付、工具授权及多线程协作的具体设计，可反复用于 Agent 平台架构评审。",
+    "classifiedAt": 1790767059901,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "云端智能体的持久化运行与扩展架构",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "tetral.ai",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://tetral.ai/share/blog/the-next-scaling-problem.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://tetral.ai/share/blog/the-next-scaling-problem.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "按所有者、生命周期和扩展模式划分系统边界：运行时负责线程计算，状态、交付、凭证及沙箱生命周期由外部服务负责。",
+      "持久化交付应以数据库中的 Queue 与 Inbox 状态为依据；通知仅用于唤醒，线程内保持有序，并通过绑定代际与实例身份约束故障后的重新投递。",
+      "凭证隔离不等于动作授权；工具提议应先经过独立策略与审查，决策持久化后再次校验，才能进入可执行边界。"
+    ],
+    "metaAuthor": "Yang Li",
+    "oneHighValuePoint": "将运行时视为可替换计算单元：在派发外部操作前，先持久化具有稳定身份的状态转换及执行义务，使故障恢复依赖已提交事实而非进程内存。",
+    "oneLineReview": "对云端 Agent 的可靠执行和扩展边界有较强参考价值，但主要是作者的架构方案，缺少规模化运行数据与独立验证。",
+    "primaryCategory": "Agent 系统架构",
+    "published": "2026-09-06T00:00:00.000Z",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并保留架构原则与关键协议，具体实现需结合实际负载和故障测试验证",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@id": "https://tetral.ai/blog/the-next-scaling-problem/#article",
+        "@type": "BlogPosting",
+        "author": {
+          "@type": "Person",
+          "name": "Yang Li"
+        },
+        "datePublished": "2026-09-06T00:00:00.000Z",
+        "description": "Scaling cloud agents by pulling the runtime out of the sandbox and rebuilding the system around durable agent work.",
+        "headline": "The Next Scaling Problem",
+        "image": "https://tetral.ai/share/blog/the-next-scaling-problem.png",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+          "@id": "https://tetral.ai/blog/the-next-scaling-problem/",
+          "@type": "WebPage"
+        },
+        "publisher": {
+          "@id": "https://tetral.ai/#organization",
+          "@type": "Organization",
+          "name": "Tetral",
+          "url": "https://tetral.ai/"
+        },
+        "url": "https://tetral.ai/blog/the-next-scaling-problem/"
+      }
+    ],
+    "schemaAuthor": "Yang Li",
+    "schemaTypes": [
+      "BlogPosting"
+    ],
+    "secondaryCategories": [
+      "分布式系统",
+      "AI 安全与授权"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "siteName": "Tetral",
+    "summaryBrief": "文章以 Tetral 的架构演进说明云端智能体应与沙箱解耦，通过外置状态、事务提交、持久化队列和独立授权边界维持执行连续性，并讨论线程与会话并行，以及计算、存储和验证环节的扩展瓶颈。",
+    "tags": [
+      "云端智能体",
+      "持久化执行",
+      "运行时与沙箱解耦",
+      "幂等与故障恢复",
+      "工具调用授权"
+    ],
+    "title": "The Next Scaling Problem — Tetral",
+    "totalScore": 79,
+    "url": "https://tetral.ai/blog/the-next-scaling-problem/"
+  },
+  "payloadHash": "sha256:2ecfc87cb3ee9976cc5fb866ba608319f466cdf8f8a2b852455c2b4e090cb7e8",
+  "refs": {},
+  "revisionId": "sha256:80cfdca6cb523c704eb9df1310cfc265151ee01e2e27740b9519fa80cb57e2e2",
+  "schemaVersion": 1,
+  "updatedAt": 1790768501544
+}

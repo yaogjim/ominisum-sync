@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789461636072,
+  "entityType": "session",
+  "id": "1789461636072_scbykpn5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择熟悉领域，让AI生成一组覆盖核心主题的问题并集中录制回答。",
+      "录制期间固定机位、人物位置、服装、发型和背景，以提高素材可重组性。",
+      "先用少量素材测试AI剪辑方案，并记录单条视频的人工耗时、质量和完播率变化。"
+    ],
+    "archiveReason": "提出了可复用的长素材采集与AI重组思路，并明确指出机位、服装和人物状态一致是跨时段剪辑的关键条件。",
+    "byline": "dontbesilent",
+    "classifiedAt": 1789642189166,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI重组长素材的批量视频实验",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "AI剪辑可按语义识别冗余表达、重排段落，并用更短的同义片段替换较长内容。",
+      "建立覆盖大量问题的长素材库，可以将视频生产从逐条录制转变为素材检索与重组。",
+      "跨日期重组真人视频时，视觉连续性是决定片段能否自然拼接的重要约束。"
+    ],
+    "oneHighValuePoint": "批量重组视频不仅依赖语义剪辑能力，还要求跨时段素材在机位、服装、发型和人物位置上保持视觉连续。",
+    "oneLineReview": "思路具体且具有实验价值，但缺少工具说明、实际产量、质量评估和成本数据支持。",
+    "primaryCategory": "AI内容生产",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性存档，作为AI批量视频生产流程的待验证实验方案",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "视频制作",
+      "工作流设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章设想在固定机位、服装和人物状态下集中录制大量问答素材，再由AI删除废话、调整顺序并替换冗长表达，批量生成主账号和矩阵账号视频。",
+    "tags": [
+      "AI剪辑",
+      "长素材重组",
+      "批量视频生产",
+      "内容矩阵",
+      "录制一致性"
+    ],
+    "title": "dontbesilent: 接下来会尝试一个全新的出视频的方法，一次性录制几个小时～十几个小时的超长素材，然后让 AI 剪辑出 50～100 条视频 起因是之前剪辑 60min 视频的时候…",
+    "totalScore": 64,
+    "url": "https://x.com/dontbesilent/status/2099495356312494354"
+  },
+  "payloadHash": "sha256:b40db25641700cb5902caa440bebcb639005c5f655dd3342528e1b0a41560092",
+  "refs": {},
+  "revisionId": "sha256:884686acf298d552f14787fc85ed1a40001c7fbff57eceb7d0f5f8edf623e043",
+  "schemaVersion": 1,
+  "updatedAt": 1789727794673
+}

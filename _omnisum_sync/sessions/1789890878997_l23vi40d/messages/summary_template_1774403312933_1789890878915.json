@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789890878915,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1789890878915",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# jev-seo：把 SEO/GEO 审计变成零订阅、Agent 原生的本地工具\n\njev-seo 是一个用 Rust 编写的开源 CLI 与 MCP 服务器，试图以 DuckDuckGo 抓取、本地审计和确定性评分，替代 Semrush、Ahrefs 等高价 SEO 平台的部分能力。其核心差异不是功能全面对标，而是免订阅、低资源占用，并可直接被编码 Agent 调用。\n\n## 从关键词研究覆盖到 AI 搜索可见性\n\n工具提供关键词联想、实时 SERP 竞品分析、排名跟踪和内容简报，也支持面向生成式搜索的 GEO 评分，评估内容被 Perplexity、SearchGPT、Gemini Overviews 引用的可能性。作者强调不生成文章，而用 TypeSafe Jev System One 做意图分类和规则化评估，以降低对话式 LLM 的幻觉风险。\n\n## 审计重点从页面扩展到站点与 AI 爬虫\n\n它可批量扫描 Markdown/HTML，检查薄内容、标题冲突、canonical、图片 alt、标题跳级、孤立页面及关键词蚕食；还可验证 JSON-LD、站点地图的 HTTPS、5 万 URL 上限和 hreflang，并检查 GPTBot、ClaudeBot、PerplexityBot 等 AI 爬虫的 robots.txt 权限。项目声称数百文件审计可在 1 秒内完成，运行内存低于 30MB。\n\n## 真正亮点是工作流形态，而非完整替代专业平台\n\n通过 stdio JSON-RPC 2.0，8 个工具可接入 Claude Code、Gemini CLI 等 Agent；历史数据保存在本地 SQLite。它代表 SEO 工具从云端仪表盘转向 “可编排能力模块” 的趋势。但 “替代 Semrush” 主要是作者定位：项目不提供云端看板，数据依赖 DuckDuckGo HTML，语义评分仍需免费的 TypeSafe Key，效果与稳定性尚缺少独立验证。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1789890878915,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:69aacfb20366baffc05c6248b5f287546db2cebc1fcf38b2915bef7736cb71c2",
+  "refs": {
+    "sessionId": "1789890878997_l23vi40d"
+  },
+  "revisionId": "sha256:bb4bea73f4279d0b8c4ddbfe5615497caeaa88b0fe97dd0d64e88916c5350e02",
+  "schemaVersion": 1,
+  "updatedAt": 1789890878915
+}

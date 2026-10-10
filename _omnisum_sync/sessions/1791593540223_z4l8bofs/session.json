@@ -1,0 +1,61 @@
+{
+  "createdAt": 1791593540223,
+  "entityType": "session",
+  "id": "1791593540223_z4l8bofs",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "classifiedAt": 1791594670745,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Underdog邮件退订与模型发布",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "发布方宣称 Saluki 27B 的体积约为全精度版本的七分之一，并保留约96%的基准性能；文中未说明压缩方式、基准组成及测试条件，不能据此确认实际能力。"
+    ],
+    "oneHighValuePoint": "将快速退订不需要的新闻邮件作为具体产品使用场景，比抽象的工具调用性能宣传更能说明用户可能获得的收益，但效果仍仅有个人口述。",
+    "oneLineReview": "提供了相关产品和压缩模型的发现线索，但证据与实践细节不足，不宜作为选型依据或长期知识保存。",
+    "primaryCategory": "AI产品动态",
+    "rating": "D",
+    "rejectReason": "主要是用户体验短评与厂商发布声明，缺少操作流程、模型压缩方法、基准定义和对照测试，无法沉淀为可靠方法或选型依据。",
+    "retentionDecision": "不纳入长期知识库，仅在调研相关产品或模型时回查",
+    "secondaryCategories": [
+      "模型压缩",
+      "产品体验"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "用户称 Underdog 的新手引导出色，能快速退订新闻邮件；引用发布消息称 Saluki 27B 模型体积显著缩小，保留大部分基准性能并改善工具调用，但未提供测试细节或可核验证据。",
+    "tags": [
+      "Underdog",
+      "Saluki 27B",
+      "模型压缩",
+      "工具调用",
+      "邮件退订"
+    ],
+    "title": "Ivan Fioravanti: Just downloaded and activated Underdog",
+    "totalScore": 39,
+    "url": "https://x.com/ivanfioravanti/status/2108109363135312262"
+  },
+  "payloadHash": "sha256:2f5a88f6f9d77728571e791be6fb78c62f4cc8c38d7b89bf6e9360358ad84b0c",
+  "refs": {},
+  "revisionId": "sha256:aad8e89e5ebe4f9ec4f74634cb337f0652cb6133facf4e46371091903666fa76",
+  "schemaVersion": 1,
+  "updatedAt": 1791594670780
+}

@@ -1,0 +1,63 @@
+{
+  "createdAt": 1790766934135,
+  "entityType": "session",
+  "id": "1790766934135_bhzulohr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "试用类似选房任务时，将城市、户型、价格和流动性要求明确提供给Agent。",
+      "在浏览器采集过程中保留人工处理验证码的协作环节。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1790766974935,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "浏览器智能体辅助北京购房筛选",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "该案例串联了浏览器采集、数据整理、按需求筛选和房源输出几个环节。",
+      "验证码是该案例中需要人工接管的环节，评估自动化程度时不能忽略这部分投入。"
+    ],
+    "oneHighValuePoint": "作者持续协助处理验证码，说明该案例中的浏览器任务依赖人工介入，而非完全自主完成。",
+    "oneLineReview": "这是与Agent应用直接相关的场景分享，但证据和实施细节不足，适合速览而非作为选房方法参考。",
+    "primaryCategory": "AI Agent应用",
+    "rating": "C",
+    "rejectReason": "缺少数据来源、筛选标准、操作细节和结果验证，尚不足以形成可复用的实践参考。",
+    "retentionDecision": "速览了解应用场景，不作为购房依据或长期方法资料保留",
+    "secondaryCategories": [
+      "房地产信息筛选"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者称使用NewMax浏览器智能体收集北京房源数据，按三居、价格和流动性要求推荐小区及房源，过程中由本人处理验证码。文章展示了辅助选房场景，但未提供数据来源、具体筛选规则或推荐结果的验证。",
+    "tags": [
+      "浏览器Agent",
+      "NewMax",
+      "房源筛选",
+      "人机协作"
+    ],
+    "title": "Yangyi: 最近想在北京再买套房子 寻思看看房 就让NewMax自己去抓数据分析了 看看哪个小区更适合购入 帮我找到一些流动性还不错 价格也还ok的三居 agent自己开着…",
+    "totalScore": 48,
+    "url": "https://x.com/yangyi/status/2104949022100472033"
+  },
+  "payloadHash": "sha256:9717a1ddebe5db3a88659037d43e54d28107fe047c38fe8c540c3d8f4d51e3e2",
+  "refs": {},
+  "revisionId": "sha256:eb0ba5a731213ea4c1e4b9979e522897773c47705724eff0f6297fc83426ca3e",
+  "schemaVersion": 1,
+  "updatedAt": 1790768394783
+}

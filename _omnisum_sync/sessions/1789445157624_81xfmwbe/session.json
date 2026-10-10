@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789445157624,
+  "entityType": "session",
+  "id": "1789445157624_81xfmwbe",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看链接中的GitHub讨论，核对内核版本、量化配置、并行方式和基准测试条件。",
+      "在双RTX 3090环境中复现64K与262K配置，对比吞吐、显存占用和输出质量。",
+      "增加并发负载测试，并与vLLM或SGLang的常规配置进行对照。"
+    ],
+    "archiveReason": "提供了双RTX 3090运行超长上下文模型的具体性能主张、自定义内核方向及配置讨论入口。",
+    "byline": "noname",
+    "classifiedAt": 1789642530664,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "双RTX 3090长上下文推理方案",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 544,
+        "id": "img-27",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSM_eSZWkAAnq1i?format=png&name=small",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSM_eSZWkAAnq1i?format=png&name=small",
+        "width": 561
+      }
+    ],
+    "knowledgePoints": [
+      "文章称vLLM的FP8 KV缓存能力主要面向数据中心GPU，消费级GPU需要额外的内核适配。",
+      "双RTX 3090结合自定义FlashAttention内核，可能支持27B模型的262K上下文推理。",
+      "长上下文推理方案需要同时评估吞吐、显存占用、输出质量与负载稳定性。"
+    ],
+    "oneHighValuePoint": "消费级RTX 3090可通过自定义FP8 KV缓存内核，将27B模型的上下文从64K扩展至262K，并可能同时提升解码速度。",
+    "oneLineReview": "这是一个高度相关且有新意的工程线索，但目前更接近性能展示，证据和复现细节不足。",
+    "primaryCategory": "AI推理优化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为消费级GPU长上下文推理的实现线索选择性保留，复现前需核验测试条件",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "本地大模型",
+      "GPU性能工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章称两块RTX 3090借助自定义FlashAttention内核与FP8 KV缓存，可让Qwen3.8-27B在262K上下文下达到约220 tok/s，并附配置链接，但缺少完整测试条件与复现数据。",
+    "tags": [
+      "RTX 3090",
+      "Qwen3.8-27B",
+      "FP8 KV缓存",
+      "FlashAttention",
+      "长上下文推理"
+    ],
+    "title": "noname: Two RTX 3090s",
+    "totalScore": 55,
+    "url": "https://x.com/malikwas1f/status/2099499041956712712"
+  },
+  "payloadHash": "sha256:f1793bf358306a3c0cd04cc904d4065686d5318d9d2d668bfa466e8cb2d34a44",
+  "refs": {},
+  "revisionId": "sha256:5828f7be44dd29202d0140a17e6c1d3f8e5ebced7197bba47d8d6d06d84e2b2c",
+  "schemaVersion": 1,
+  "updatedAt": 1789727712588
+}

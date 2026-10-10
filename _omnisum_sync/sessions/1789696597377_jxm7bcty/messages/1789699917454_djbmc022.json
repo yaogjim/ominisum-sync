@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789699805449,
+  "entityType": "message",
+  "id": "1789699917454_djbmc022",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nHotelist 新增“按到地图指定点的距离排序”功能，帮助用户在目的地附近，再结合评分、建成年份和价格筛选酒店。\n\n## 关键内容\n\n- 用户可在地图上选定任意地点，并按酒店与该点的距离排序，适合寻找靠近会场、景点或办事地点的住宿。\n- 排序后还能设置最低评分、建成年份和价格等条件，缩小选择范围。\n- 作者称 Hotelist 可帮助避开“虚假评论或评分”，并指责部分住宿和地图平台会删除负面评论；但帖子没有提供证据或说明 Hotelist 如何保证评分可靠。\n- 回复中有人指出，“直线距离”未必等于方便：河流、道路、安全状况和交通方式都会影响实际通行时间，建议未来改为按步行或乘车时间排序。\n\n## 通俗解读\n\n这项功能解决的是“酒店离我真正要去的地方有多近”，而不只是离市中心多近。不过它目前更像用尺子量地图，近不代表好到达。\n\n**是否值得细读：**帖子信息简单，了解新功能即可，无需细读；若关注产品设计，评论区关于“距离与通行时间”的区别更有参考价值。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789699805449,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:debbd34332badd01d0c289d11e57db97271d42eae58e769015177d4887d4440c",
+  "refs": {
+    "sessionId": "1789696597377_jxm7bcty"
+  },
+  "revisionId": "sha256:aaa7d4f4cecf9bdb0845b7f3a807578e0e04f112995031fae03e84bfe7247304",
+  "schemaVersion": 1,
+  "updatedAt": 1789699805449
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693738583,
+  "entityType": "message",
+  "id": "1789693738585_k14p4lfd",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n据陈成对 Claude Code 团队访谈的整理，该团队约 70%—80% 的工作已从终端转到 Slack 中由 Claude 执行：人主要给目标、做验收和判断架构，工具则随模型能力快速调整。\n\n## 关键内容\n\n- 团队多数任务通过 Slack 里的 Claude Tag 完成，只有精修或需要逐步控制时才打开终端、桌面端；交给 AI 的也从具体步骤变成了目标。\n- 许多 **harness**（约束、调度和检查模型的配套工具）是在弥补当前模型的缺陷。模型变强后应及时删除旧补丁，但任务规模也在扩大，因此仍要开发不同形态的新工具。\n- 代码审查中，格式、小错误等常规检查交给 Claude；人类重点判断 AI 缺少背景的信息，例如 API 设计原因和服务边界。\n- 自动化 workflow 可并行找 bug，再从多个角度验证、过滤误报。团队逐渐接受“不看模型完整思考过程，只检查结果”。\n\n## 通俗解读\n\n重点不是“终端过时了”，而是人的角色正在从亲自操作，转向设定目标、提供业务背景和把关结果。同时，AI 工具的“保质期”可能很短，不能因为投入过精力就拒绝淘汰。\n\n## 是否值得细读\n\n值得 AI 编程工具使用者和研发管理者细读；但本文只是对 22 分钟访谈的二手笔记，部分结论缺少完整上下文，若要准确理解，最好观看原访谈。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693738583,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6a7252a14e4b6e901b477c4a4bdc16943d902e88a6f149e14058e16202ed15fa",
+  "refs": {
+    "sessionId": "1789614485475_5io6erpd"
+  },
+  "revisionId": "sha256:f185708c77feede5089ac9de5681270078add71fe4e2c1ed693aba5f42d28c4e",
+  "schemaVersion": 1,
+  "updatedAt": 1789693738583
+}

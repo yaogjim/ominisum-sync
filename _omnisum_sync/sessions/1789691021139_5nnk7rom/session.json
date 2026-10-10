@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789691021139,
+  "entityType": "session",
+  "id": "1789691021139_5nnk7rom",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查阅DS41RT AFD引擎原始资料，确认硬件拓扑、通信方式、量化精度和基准测试条件。",
+      "针对现有模型分析Attention、KV Cache与MoE专家的显存占用和计算比例，判断是否适合异构拆分。",
+      "用端到端延迟、并发吞吐和跨设备通信开销复测该架构，而非仅比较单项峰值指标。"
+    ],
+    "archiveReason": "提供了按计算特征拆分MoE推理负载的具体案例及性能指标，对本地大模型部署具有参考价值。",
+    "byline": "LotusDecoder",
+    "classifiedAt": 1789698682769,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "异构硬件拆分超大MoE推理",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 675,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSJAybEbsAAvHZc?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSJAybEbsAAvHZc?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "超大MoE推理可按算子特征拆分：注意力、KV缓存和顺序部分放在高算力GPU，路由专家放在大内存设备。",
+      "Prefix Cache可显著降低重复长上下文的重新预填充成本，但文中加速数据仍需独立验证。",
+      "异构部署的关键不是单纯聚合显存，而是让计算吞吐、内存容量和不同阶段的访问模式相匹配。"
+    ],
+    "oneHighValuePoint": "将高算力小显存设备用于顺序计算，将大内存设备用于MoE专家存储与计算，可组合不同硬件的互补优势。",
+    "oneLineReview": "架构思路具体且与大模型部署高度相关，但缺少配置细节、测试方法和可独立核验的证据。",
+    "primaryCategory": "AI推理系统",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性保留，作为超大MoE模型异构部署的架构案例",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "异构计算架构",
+      "大模型性能优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍一种混合推理方案：由RTX 5090承担注意力、KV缓存和顺序计算，四台DGX Spark承载MoE专家权重与计算，并给出百万上下文、预填充、解码及前缀缓存性能数据。",
+    "tags": [
+      "MoE推理",
+      "异构计算",
+      "DGX Spark",
+      "RTX 5090",
+      "Prefix Cache"
+    ],
+    "title": "LotusDecoder: 早上还在构思， 一张小显存高算力显卡，拖大显存低算力一体机， 原来已经有人做出来",
+    "totalScore": 63,
+    "url": "https://x.com/LotusDecoder/status/2100503158732849442"
+  },
+  "payloadHash": "sha256:175bb56e9905434adb899a335902566ecc44b6a23dbbf9096145d1e8a5742c80",
+  "refs": {},
+  "revisionId": "sha256:2046493ef14007567985829d9725bd3e3969c608b44eff712da9555736c6c803",
+  "schemaVersion": 1,
+  "updatedAt": 1789727643492
+}

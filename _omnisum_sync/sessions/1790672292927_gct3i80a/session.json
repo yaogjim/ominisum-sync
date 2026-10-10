@@ -1,0 +1,65 @@
+{
+  "createdAt": 1790672292927,
+  "entityType": "session",
+  "id": "1790672292927_gct3i80a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在现有AI产品中整理评测集、失败案例和线上反馈，检验这些数据能否改善效果。",
+      "评估私有化部署机会时，核算算力成本、服务收入和客户对隐私的实际需求。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1790672315625,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "本地开源模型的价值与反馈数据壁垒",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "评估垂直AI产品的壁垒时，可分别考察基座模型能力与专有反馈数据的积累。",
+      "开源模型部署的商业可行性需要结合算力供给、成本和客户需求判断。"
+    ],
+    "oneHighValuePoint": "区分可获取的开源基座模型与项目自身积累的评测集、失败案例和线上反馈数据。",
+    "oneLineReview": "提出了值得关注的反馈数据视角，但商业结论仍停留在未经验证的推测。",
+    "primaryCategory": "AI商业模式",
+    "rating": "C",
+    "rejectReason": "对模型价格、数据价值和部署业务的判断主要是推测，缺少成本数据、案例及成立条件。",
+    "retentionDecision": "速览观点即可，暂不作为商业判断依据或长期资料保留",
+    "secondaryCategories": [
+      "开源模型部署",
+      "产品数据策略"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章预测模型将更多本地化，认为通用开源模型可能趋于廉价，而能修正模型行为的反馈数据更稀缺。它还列出开源模型部署的几种潜在商业价值，并推测算力供给变化会影响服务商的选择，但未提供数据验证。",
+    "tags": [
+      "本地化部署",
+      "开源模型",
+      "反馈数据",
+      "评测数据",
+      "商业化"
+    ],
+    "title": "Yangyi: 模型的发展肯定是会大部分本地化的 本地化后会解决很多很多当下看起来存在的问题 但如果我们快进到那个时代 就会发现 本地化开源模型 一点儿也不值钱 因为它缺少数据…",
+    "totalScore": 54,
+    "url": "https://x.com/yangyi/status/2104587562715324881"
+  },
+  "payloadHash": "sha256:11d2977b2445ca76d1a7cdc712418375b4a72a6df1262272109a7370a16d5e27",
+  "refs": {},
+  "revisionId": "sha256:f9b280476923fb0e3d38e21373fbb8f65e824c772ff5ffefb99ccc9173762c99",
+  "schemaVersion": 1,
+  "updatedAt": 1790672315657
+}

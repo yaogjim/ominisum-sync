@@ -1,0 +1,67 @@
+{
+  "createdAt": 1783078640370,
+  "entityType": "session",
+  "id": "1783078640370_4q6y7guf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "打开并评估原文链接中的英国公司报税小册子",
+      "如运营英国公司，向专业会计确认AIA和费用报销的适用条件",
+      "删除该推文，仅保留更完整的原始指南或笔记"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783079283818,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "独立开发者英国报税信息差",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "内容信息量低，主要价值在外部链接；推文本身不具备长期保存价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "英国公司年审与申报存在较大服务价格差异",
+      "公司订阅支出最好使用公司卡并保留公司抬头凭证",
+      "AIA可能适用于电脑等设备采购抵扣"
+    ],
+    "oneHighValuePoint": "英国公司购买电脑等设备可能可通过AIA进行税务抵扣。",
+    "oneLineReview": "适合作为发现英国公司税务指南的线索，但不值得单独保存。",
+    "primaryCategory": "税务与公司运营",
+    "rating": "D",
+    "rejectReason": "正文只是转述零散经验和链接推荐，缺少完整解释、适用条件、风险提示和证据支撑。",
+    "retentionDecision": "建议提取原始指南链接后删除该推文内容",
+    "secondaryCategories": [
+      "独立开发",
+      "英国公司合规"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该推文提到独立开发者运营英国公司时，可关注AIA设备抵扣、订阅产品使用公司卡和公司抬头、低成本完成年审与申报等信息差，但正文仅为零散提示。",
+    "tags": [
+      "英国公司",
+      "报税",
+      "AIA",
+      "独立开发者",
+      "信息差"
+    ],
+    "title": "Jason Zhu: 谢谢@ixiaowenz的独立开发者英国公司报税小册子 信息差： 1️⃣ 买电脑等设备还能走AIA，又省下了好多税款 2️⃣ 订阅产品最好都用公司卡，用公司抬头…",
+    "totalScore": 32,
+    "url": "https://x.com/GoSailGlobal/status/2060917236240662544"
+  },
+  "payloadHash": "sha256:a72e770e86750b8c7bd9d9766ec0c40e0acef6a7c2167d1cc4b6365e287ceb83",
+  "refs": {},
+  "revisionId": "sha256:b8f3cc636f4a67c57fb621eb4257059cd83dc7a78c182dedd562eb96ff1d700d",
+  "schemaVersion": 1,
+  "updatedAt": 1783079284017
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1787306527455,
+  "entityType": "session",
+  "id": "1787306527455_9lfogqm4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为OCR基础层定义包含文本、坐标、置信度、版面顺序和原始证据的标准输出结构。",
+      "将账单识别、日历创建和费用归类等逻辑移至独立的上层领域模块。",
+      "检查OCR接口是否依赖特定调用方，并改造成可供新增消费者直接接入的稳定接口。"
+    ],
+    "archiveReason": "提出了清晰且可迁移的底层通用、上层专用架构，可用于设计文档处理和AI信息入口。",
+    "classifiedAt": 1787307097681,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "个人OCR基础设施的分层设计",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "万能OCR会把文字识别、语义理解和业务规则耦合在一起，增加维护与扩展成本。",
+      "通用OCR层应统一输出文本、位置、置信度、版面顺序及原始证据，而不承担业务判断。",
+      "账单、学校通知、收据和标签等领域模块应作为独立消费者调用OCR，而不能反向定义其核心接口。"
+    ],
+    "oneHighValuePoint": "OCR核心层应保持业务无关和调用方无感知，以稳定输出契约支持可替换、可扩展的领域模块。",
+    "oneLineReview": "分层原则清晰且贴近产品实现，但主要基于个人经验，缺少接口示例、性能数据和验证过程。",
+    "primaryCategory": "AI产品架构",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并保留其可复用的OCR分层设计原则",
+    "secondaryCategories": [
+      "个人效率工具",
+      "软件工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以支票、账单和学校通知等纸质输入为例，主张将OCR设计为无业务归属的通用底层，只输出文字、位置、置信度和原始证据，再由财务、日历等上层模块完成领域理解与后续动作。",
+    "tags": [
+      "OCR",
+      "分层架构",
+      "接口设计",
+      "文档处理",
+      "个人信息入口"
+    ],
+    "title": "Susan STEM: 个人效率工具我今年发现最重要的一个基础设施是OCR",
+    "totalScore": 69,
+    "url": "https://x.com/feltanimalworld/status/2087552133671387579"
+  },
+  "payloadHash": "sha256:37d4e2abf1d0e56f27d8e7f346858c853862b4f9cfafdd810b07705de6f23187",
+  "refs": {},
+  "revisionId": "sha256:689187ec8f8b903d278575a8089206f45437cf5cd008bfa6c6c3b0c4ad2e88e1",
+  "schemaVersion": 1,
+  "updatedAt": 1789727875198
+}

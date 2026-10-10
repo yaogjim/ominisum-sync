@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729457858,
+  "entityType": "message",
+  "id": "1789729457858_grd92ar4",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 用 Worktree 把 AI 多任务开发变成可持续工作流\n\n文章认为，AI 编程让功能开发、线上修复和版本验证越来越常并行发生。传统“单目录反复切分支 + git stash”容易打断上下文并造成环境污染；Git Worktree 可让一个仓库同时拥有多个独立工作目录，但要成为日常工具，还需解决环境初始化和清理等“最后一公里”。\n\n## 一个任务对应一个独立工作区\n\n`git worktree add <path> <branch>` 能将不同分支检出到不同目录。开发者可以让主目录停在 main，同时在其他目录开发功能、修复 Bug 或验证历史版本。每个目录拥有独立文件状态、终端和 AI 会话，更适合让 Codex、Claude 等工具并行执行任务。\n\n但原生 Worktree 只负责检出代码：新目录通常还要安装依赖、复制 `.env`、准备生成文件；路径和命名缺少统一规则，删除目录、分支及失效引用也要分别处理。这些重复操作成为其普及的主要阻力。\n\n## cc-launch 将创建、初始化和清理合并为一个入口\n\n作者开发的轻量 CLI `cc-launch`（命令为 `ccl`），在 Git Worktree 之上统一处理：\n\n- 根据任务名自动生成分支名、目录名，并集中存放于 `~/.worktrees/<repo-name>/`\n- 创建后运行项目级 `setup.sh`，自动安装依赖、复制环境变量等\n- 列出并快速进入已有工作区，可继续启动 Codex 或 Claude\n- 统一清理 Worktree 和分支，并标记已合并、未合并及失效项\n\n其核心价值不在于替代 Git，而是让新工作区创建后即可使用。\n\n## 意义在于降低并行开发的固定成本\n\n当每项任务都有隔离的代码、环境和 AI 上下文时，多任务协作更不易互相干扰。对经常并行处理分支、使用多个 AI 会话，或希望团队标准化 Worktree 流程的开发者而言，这种工程化封装能避免流程摩擦抵消 AI 带来的效率提升。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729457858,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:05dd18123cce561ba45c03d23d960a1e80818d51b6177a27aeaa881078e4d776",
+  "refs": {
+    "sessionId": "1783077241895_l4bfynpm"
+  },
+  "revisionId": "sha256:f0c929440c9ecd83a3fe545b0e77ad87661457673f702e9a631e299bdce87e04",
+  "schemaVersion": 1,
+  "updatedAt": 1789729457858
+}

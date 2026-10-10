@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694250161,
+  "entityType": "message",
+  "id": "1789694250165_t4r7duuf",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nGenOffice 是一套面向 macOS 和 Windows 的开源 AI 办公软件，覆盖文档、表格、演示和 PDF，核心卖点是让 AI 直接修改内容，同时尽量不破坏原文件格式。\n\n## 关键内容\n\n- 套件包含 Docs、Sheets、Slides、PDF 四个编辑器及统一入口，提供批注、修订、图表、透视表、签名等常见功能。\n- 项目强调“窄范围修改”：例如编辑 `.docx` 时，只重新生成被改动的段落，未修改部分按原始字节保留，以降低保存后 Word 排版错乱的风险；表格和演示也采用类似思路。\n- AI 不只是聊天框：可针对文档块编辑并查看版本差异，也能通过工具调用操作工作簿、幻灯片和 PDF。模型请求经 Genspark 服务转发，本地不保存模型 API Key。\n- 主体采用 Apache 2.0 许可证，但 `ee/` 企业模块另有许可；项目名称和标识也不在开源授权范围内。\n\n## 通俗解读\n\n“字节保留”可以理解为：改一段文字时，只替换这一段，不把整份文件重新做一遍，因此更可能保住复杂格式。不过这是项目方的技术说明，并非独立兼容性测试结论。若你在评估 AI Office、文件兼容方案或准备参与开发，值得细读；若只想判断日常是否好用，README 信息不够，还需实际试用。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694250161,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b47f325d6d25c84d3c2e13cfe8538dc1fb833a942202753614dd3f9bc11fed48",
+  "refs": {
+    "sessionId": "1785840808176_eq0xwy8c"
+  },
+  "revisionId": "sha256:69df83bff4cb40610edf76db37d35f80556e8cd519f13663e83d3f7f008da6a2",
+  "schemaVersion": 1,
+  "updatedAt": 1789694250161
+}

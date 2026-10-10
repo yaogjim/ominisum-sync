@@ -1,0 +1,84 @@
+{
+  "createdAt": 1790130993338,
+  "entityType": "session",
+  "id": "1790130993338_qv3ytsh7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "制作前准备产品网址、清晰 UI 截图和一至两支参考视频，同时明确受众、时长、情绪与发布平台。",
+      "让智能体分析参考视频并生成分镜提示词，提交生成工具后先检查分镜结构、节奏、音乐与视觉风格，再进入正式渲染。",
+      "对初稿使用明确的对话要求或画面批注逐轮修改，优先处理关键问题，导出前完整检查画面、字幕及声音。"
+    ],
+    "archiveReason": "素材准备、参考视频逆向分析、方案预览和批注迭代构成明确流程，可用于产品发布视频制作；具体工具能力与入口需另行核实。",
+    "byline": "Ding",
+    "classifiedAt": 1790768131588,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "对话式智能体制作产品发布视频",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HS0AqdkasAASQ8w?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HS0AqdkasAASQ8w?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "产品发布视频的输入可分为产品信息、真实界面素材和风格参考，分别支撑内容理解、功能展示与视觉方向。",
+      "参考视频分析、分镜方案审阅、生成和局部批注修改，可以组成分阶段的视频制作流程。",
+      "发布视频应优先展示真实产品界面、突出开头重点并配置字幕；单个镜头聚焦一个信息点，避免动作和信息过载。"
+    ],
+    "oneHighValuePoint": "先让智能体拆解参考视频的分镜与细节，再将分析结果用于生成，并在渲染前审阅方案，比仅用一句模糊要求更有利于明确创作目标。",
+    "oneLineReview": "提供了可执行的视频制作流程，但产品宣传较多，缺少实际提示词、成片对比及成本数据，适合按需参考而非作为效果保证。",
+    "primaryCategory": "AI 应用实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性保留制作流程，有产品发布视频需求时查阅",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "产品营销",
+      "视频制作"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以复古风产品发布视频为例，介绍 Pexo 视频智能体，并说明素材准备、参考视频逆向提示词、方案预览、对话及批注修改、导出发布的流程，补充短视频叙事建议和常见避坑事项。",
+    "tags": [
+      "视频生成智能体",
+      "产品发布视频",
+      "参考视频分析",
+      "分镜规划",
+      "可视化批注"
+    ],
+    "title": "复刻硅谷最流行的复古风 Launch 视频",
+    "totalScore": 69,
+    "url": "https://x.com/dingyi/status/2102341632452411524"
+  },
+  "payloadHash": "sha256:8d689b9d5c0130591b6b9bf485b7b31f70266043832308b19974cd89aad84ec2",
+  "refs": {},
+  "revisionId": "sha256:717abb0b4bb6cd03a1b155abf952650a88f4c6dab0a3148b1a74419ba3850b76",
+  "schemaVersion": 1,
+  "updatedAt": 1790768132434
+}

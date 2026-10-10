@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727712586,
+  "entityType": "message",
+  "id": "1789727712587_x98e3ma6",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 两块 RTX 3090 让 27B 模型以更长上下文高速本地推理\n\n作者展示了一套面向消费级 NVIDIA GPU 的推理优化方案：使用两块 RTX 3090 运行 Qwen3.8-27B，在 **262K 上下文**下实现约 **220 tokens/s 的解码速度**。核心价值是把原本更多面向数据中心 GPU 的长上下文与高吞吐能力，下放到消费级硬件。\n\n## FP8 KV Cache 是性能突破的关键\n\n方案在 FlashAttention 中使用 **FP8 KV Cache**，即以较低精度存储模型处理长上下文时产生的键值缓存，从而显著减少显存占用和带宽压力。vLLM 目前只为数据中心 GPU 提供相关支持，因此社区成员自行开发内核，并完成审查、移植与性能测量。\n\n作者称，新方案把 Qwen3.8-27B 的可用上下文从 **64K 提升至 262K**，同时速度反而更快。Club 3090 提供的配置方法也宣称适用于所有 NVIDIA GPU，但稳定性及高并发负载表现仍待进一步验证。\n\n## 消费级本地 AI 的能力边界继续扩大\n\n热门回复显示，本地推理优化正在覆盖更多平台：DwarfStar 已在 64GB Mac 上通过 Metal 支持 Qwen3.8 Flash Next，解码约 **50～70 tokens/s**，预填充超过 **1400 tokens/s**。这些进展意味着，大模型长上下文推理不再完全依赖昂贵的数据中心显卡；定制内核、低精度缓存和软硬件协同，正成为降低本地部署成本的关键路径。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727712586,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:72d9e1b86e3c94cb9344eb312ccf42f0eef0b775f8dcac17b5f42ada0b2c3c25",
+  "refs": {
+    "sessionId": "1789445157624_81xfmwbe"
+  },
+  "revisionId": "sha256:cb304a4b1d5787f86c462bbcf20dc54bbc4d53878efcb69d6c0ca2fbbbd1924d",
+  "schemaVersion": 1,
+  "updatedAt": 1789727712586
+}

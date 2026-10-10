@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785207232329,
+  "entityType": "session",
+  "id": "1785207232329_qx86ueqn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查GitHub中针对首次贡献者fork PR的测试审批设置，并确认新贡献者能够获得明确反馈。",
+      "在Issue分配前先评论并公开任务归属，避免多个贡献者重复实现同一功能。",
+      "锁定代码检查器版本，在新增规则前对所有开放PR进行兼容性验证，并继续拆分高冲突的大型文件。"
+    ],
+    "archiveReason": "文章提供了来自真实开源项目的具体协作问题、触发条件和修复方式，对AI Agent项目及其他GitHub开源项目具有较强迁移价值。",
+    "classifiedAt": 1785207558491,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Waku Agent开源协作的四个教训",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "外部贡献者的PR可能因GitHub安全流程未获批准而无法自动运行测试，项目维护者需要明确配置相关工作流。",
+      "分配Issue前先在讨论串中评论，并公开说明任务归属，可以减少多人重复实现同一功能。",
+      "共享文件过大时多个PR会集中冲突，拆分模块能够降低合并阻塞和协作耦合。"
+    ],
+    "oneHighValuePoint": "将外部贡献带来的常见协作故障具体化为可检查的GitHub流程、CI规则和代码结构问题，并分别给出可执行的修复动作。",
+    "oneLineReview": "这是一篇基于个人开源实践的高相关经验总结，方法具体但证据主要依赖单一项目和作者自述。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "值得精读并长期保留，尤其适合作为个人开源AI项目协作管理的检查清单",
+    "secondaryCategories": [
+      "开源协作",
+      "软件工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者分享Waku Agent从开源到获得大量关注和外部贡献期间遇到的四个协作问题：PR测试需先批准、未分配Issue导致重复开发、样式规则破坏已有PR，以及大型文件造成合并冲突，并给出相应修复办法。",
+    "tags": [
+      "本地AI Agent",
+      "GitHub开源协作",
+      "PR管理",
+      "持续集成",
+      "代码模块化"
+    ],
+    "title": "Shen Sean Chen: i open sourced waku agent 16 days ago (500+stars), a personal local ai agent har…",
+    "totalScore": 75,
+    "url": "https://x.com/ShenSeanChen/status/2081524138091429973"
+  },
+  "payloadHash": "sha256:d31ad48310b28bde47c8e52cf3975106dad74febd018c2673f2426c9252351d6",
+  "refs": {},
+  "revisionId": "sha256:9b68d39fe90722cfc8592e254cee4409bac49c9961a48a3cfa762980382181d9",
+  "schemaVersion": 1,
+  "updatedAt": 1789694494592
+}

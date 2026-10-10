@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789723390944,
+  "entityType": "session",
+  "id": "1789723390944_nvvguc3g",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评审后训练项目时，明确下游目标、评价指标、指标投机风险及独立验证方式。",
+      "选择一项模型基础设施优化任务，让Agent按明确吞吐目标检查内核与链路，并由工程师复核结果。",
+      "在长期研究项目中预先设定续投条件、时间预算和阶段性证据要求。"
+    ],
+    "archiveReason": "提出了后训练因目标模糊、评估困难和资源不足而形成负向循环的可复用解释框架。",
+    "classifiedAt": 1789723425357,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "国内模型后训练困境与组织文化",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "预训练可围绕损失、训练时间和成本形成较清晰反馈，而后训练的下游目标更难定义，并存在针对指标进行优化而非真实能力提升的风险。",
+      "训练数据清洗和具体训练配方通常不公开，使后训练创新更难被外部识别，也更难获得论文、宣传和资源回报。",
+      "在高不确定性研发中，组织能否持续为长期失败但潜在重要的方向配置人才、算力和时间，可能与技术判断同样关键。"
+    ],
+    "oneHighValuePoint": "后训练的核心障碍可能不只是技术差距，而是目标难定义、效果难验证、成果难展示与资源不足共同构成的负向循环。",
+    "oneLineReview": "与AI研发高度相关且有若干启发性假设，但论述偏访谈随笔，证据和可执行细节明显不足。",
+    "primaryCategory": "AI模型研发",
+    "rating": "B",
+    "rejectReason": "主要依据匿名从业者交流和个人推断，缺少数据、具体案例及可核实来源。",
+    "retentionDecision": "选择性存档，作为模型研发资源配置与组织问题的观察样本",
+    "secondaryCategories": [
+      "组织管理",
+      "AI Agent"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于与匿名后训练研究员的交流，分析国内预训练强、后训练相对混沌的评估与资源原因，并延伸讨论Agent替代研发工作、职能边界变化、模型时间成本及长期RL投入背后的组织文化。",
+    "tags": [
+      "后训练",
+      "预训练",
+      "模型评估",
+      "AI研发组织",
+      "Agent自动化"
+    ],
+    "title": "axisxy: 继续发一则和国内 model researcher 交流的 memo",
+    "totalScore": 59,
+    "url": "https://x.com/Sxy_Cherotich/status/2087092655230734608"
+  },
+  "payloadHash": "sha256:481caf382aa0cd50f425415848d3debc3c1f9803987d74c4271607b940e612ea",
+  "refs": {},
+  "revisionId": "sha256:4cf6a95026bf1b0b9fd5c02009aed18878ad87309b4e839ba7bf09b884164729",
+  "schemaVersion": 1,
+  "updatedAt": 1789727437211
+}

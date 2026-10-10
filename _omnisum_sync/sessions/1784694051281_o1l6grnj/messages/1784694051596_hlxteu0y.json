@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784693941849,
+  "entityType": "message",
+  "id": "1784694051596_hlxteu0y",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 主旨概括\n\nZane Chee 逆向分析了 OpenAI Codex 的计算机操作方式，并开发出 **pi-computer-use**：一款面向 macOS、可适配不同模型的计算机自动化工具。该工具优先使用无障碍接口（AX）进行操作，并在模型支持时通过视觉能力作为备用方案。\n\n## 工具的核心特点\n\n- **与模型无关**：不限定使用某个特定 AI 模型，理论上可接入多种模型。\n- **面向 macOS 用户**：主要为使用 pi 的 macOS 爱好者设计。\n- **AX 优先导航**：优先通过 macOS 的 Accessibility（无障碍）接口识别和操作界面元素。\n- **视觉回退机制**：对于具备视觉能力的模型，当 AX 无法完成操作时，可改用屏幕视觉识别。\n- **提供源代码**：作者表示已在评论区附上源代码，并希望获得用户反馈。\n\n## 社区反馈与实际问题\n\n### 1. 无障碍权限与代码签名较复杂\n\n有开发者指出，macOS 的**无障碍权限和代码签名配置较麻烦**。让用户自行编译，可以减少分发已编译二进制程序时遇到的签名、权限和安全限制问题。\n\n### 2. 前台与后台应用操作需要区分\n\n社区建议为以下场景提供独立工具：\n\n- 操作当前位于前台的应用；\n- 操作处于后台的应用；\n- 或至少增加一个“将指定应用窗口切换到前台”的功能。\n\n作者也认同，前台与后台应用的自动化存在许多此前未预料到的复杂情况。\n\n### 3. 自动化过程可能抢占焦点\n\n有用户反馈，当要求工具在 macOS 的“提醒事项”中创建内容时，应用会**抢走当前操作焦点**。这说明工具在后台执行和窗口焦点管理方面仍需改进。\n\n### 4. Windows 方案可作为参考\n\n另一位开发者分享了 Windows 端的 **WinUI 自动化工具**实现，位于 `piclaw` 项目的 Windows 平台扩展中，可为跨平台适配提供思路。\n\n### 5. 模型兼容性仍待确认\n\n有用户询问能否搭配 **Grok 4.5** 使用。虽然项目定位为“与模型无关”，但原文中没有给出明确答复，因此具体兼容性仍取决于模型接口及其视觉、工具调用能力。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784693941849,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d1dabbf95136dd331b3a82f3a528ec5efeee4bab95b5e27ef793f52cfca4612a",
+  "refs": {
+    "sessionId": "1784694051281_o1l6grnj"
+  },
+  "revisionId": "sha256:c85d3962c28480c98173678ae33530fec7d35fa1168a6009455ce72976da201d",
+  "schemaVersion": 1,
+  "updatedAt": 1784693941849
+}

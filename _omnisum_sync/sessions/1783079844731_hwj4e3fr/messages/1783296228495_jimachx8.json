@@ -1,0 +1,20 @@
+{
+  "createdAt": 1783296137803,
+  "entityType": "message",
+  "id": "1783296228495_jimachx8",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n这篇内容总结了 Ray Wang 观看 Lenny 访谈 Anthropic 的 Fiona Fung 后的感受：在 Claude Code 等 AI 编程工具普及后，软件组织的核心瓶颈正在从“写代码”转向“验证质量、判断优先级和管理 AI 产出”。AI 让产出大幅提升，但也带来了新的管理、招聘、规划和协作方式变化。\n\n---\n\n## 1. 新瓶颈：从“写代码”变成“验证代码”\n\n- 过去工程团队的瓶颈是 **coding（写代码）**，现在 Fiona 认为 **coding is solved**，也就是写代码本身已经不再是最大问题。\n- 新瓶颈变成了 **verification（验证）**：如何确认 AI 和人共同产出的代码是正确、安全、可靠的。\n- 现在不只是工程师在写代码，**设计师、产品经理、法务、财务**等岗位也能借助 AI 生成代码。\n- 结果是产出暴涨，但问题变成：  \n  **如何保证 8 倍代码产出的质量不下降。**\n\n---\n\n## 2. 管理方式被 AI 工作流重塑\n\n- Fiona 自己的管理方式也被 Claude Code 改造了。\n- 她有一个长期运行的 Claude Code session，接入：\n  - 所有代码仓库；\n  - 所有 Slack 频道；\n  - 各类业务和工程指标。\n- 她每个月会和下属一起开 session 复盘：\n  - 最近发布了什么；\n  - 市场反馈如何；\n  - 有没有 bug；\n  - 哪些事情需要调整。\n\n简单说，AI 不只是写代码工具，也开始变成管理者复盘和决策的辅助系统。\n\n---\n\n## 3. 招人标准变了：中间层不再吃香\n\nFiona 提到，现在更需要两类人：\n\n1. **creative builders with product sense**  \n   有产品直觉、能创造新东西的建设者。\n\n2. **deep systems experts for the hard parts**  \n   能解决底层复杂问题、啃硬骨头的系统专家。\n\n- 过去那种能力较平均、位于中间层的人才，吸引力下降。\n- 因为 AI 可以承担很多普通执行工作，组织更需要：\n  - 有判断力的人；\n  - 能定义问题的人；\n  - 能解决高难度问题的人。\n\n---\n\n## 4. AI 使用指标从“烧 token”转向“看 ROI”\n\n- 早期团队可能会比较谁用的 token 多、谁跑的 agent 多。\n- 但这种做法像以前比较“代码行数”一样，容易变成虚荣指标。\n- 现在 Anthropic 更关注的是 **ROI（投入产出比）**：\n  - AI 工具有没有带来实际成果；\n  - 有没有提升效率；\n  - 有没有解决真实问题。\n\n也就是说，重点不再是“用了多少 AI”，而是“AI 带来了什么结果”。\n\n---\n\n## 5. 质量管理框架：“bad vs sad”\n\nFiona 提到一个质量判断框架：**bad vs sad**。\n\n- **bad**：不可恢复的严重错误  \n  例如：\n  - CLI 崩溃；\n  - 用户工作丢失；\n  - 造成严重业务影响。\n\n- **sad**：可恢复但让人不舒服的问题  \n  例如：\n  - 界面闪烁；\n  - 小的交互问题；\n  - 用户体验上的摩擦。\n\n但她也强调：  \n**sad 问题堆积多了，也会变成 bad。**\n\n每个团队需要自己定义什么算 bad、什么算 sad。组织给团队更高自主权，同时也要求更高责任感，即：  \n**high agency 配 high accountability。**\n\n---\n\n## 6. 规划方式：从 6 个月路线图改成月度 JIT 规划\n\n- Fiona 刚加入时曾想做一个 **6 个月 roadmap**。\n- 但 3 个月后发现几乎没人再看，因为变化太快。\n- 现在团队改成 **JIT（just-in-time）月度规划**：\n  - 用一个 Excel 表列出本月优先级；\n  - 每周检查一次；\n  - 根据实际变化快速调整。\n\n这说明在 AI 快速迭代的环境下，长期规划的确定性下降，组织更需要短周期、高频反馈。\n\n---\n\n## 7. AI 协作带来新的孤独感\n\n- 团队发现，现在每个人都在和自己的 agent 单独工作，人与人之间的直接协作变少了。\n- 这让一些人开始感到孤独。\n- 为了缓解这种情况，他们专门组织：\n  - pairwise programming lunch；\n  - hackathon；\n  - 线下共同使用 Claude Code 的活动。\n\n一个有趣发现是：  \n**看别人如何使用 Claude Code，本身就很有价值。**  \n因为每个人使用 AI 工具的方法都不一样，互相观察能带来很多启发。\n\n---\n\n## 8. 热门回复中的补充观点\n\n- 有用户提到，Claude 为了解决问题，甚至会自己去火山引擎提交工单并和工程师交流，让人感到震惊。\n- 有人提到 MIT 经典公开课《How to Speak》，认为表达和沟通能力在 AI 时代依然重要。\n- 也有人认为 Claude Code 仍然低估了用户的“折腾能力”，用户总会找到新的用法和绕法。\n- 还有人建议，想学 AI Agent，可以直接研究 LangChain 团队的 `open-deep-research`。\n- 另有用户认同从 “token-maxing” 转向 “ROI” 的趋势，并提到类似做法已在一些大厂出现。\n\n---\n\n## 总结\n\n这篇内容的核心判断是：**AI 已经让“产出代码”不再稀缺，真正稀缺的是判断力、验证能力、系统设计能力和组织协作能力。**  \n未来团队的挑战不是“能不能做出来”，而是“做出来的东西是否正确、可靠、有价值，以及人如何不被 agent 的海量产出淹没”。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1783296137803,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6d921df042c4ed711619bc3f28f8c8c109690d31e5fb16d8c030651966b175cd",
+  "refs": {
+    "sessionId": "1783079844731_hwj4e3fr"
+  },
+  "revisionId": "sha256:a32d3f21b83d1e66419e1db6244b32d410ee6602cfd5c4445466583b6ce91877",
+  "schemaVersion": 1,
+  "updatedAt": 1783296137803
+}

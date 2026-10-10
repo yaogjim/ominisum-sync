@@ -1,0 +1,67 @@
+{
+  "createdAt": 1787294135252,
+  "entityType": "session",
+  "id": "1787294135252_aqckbu1y",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审查现有AI产品卖点，区分短期模型能力差与长期责任型壁垒。",
+      "选择一个关键业务异常，画出从发现、确认、处理到归档回写的完整闭环。",
+      "梳理产品需要承担的监管、财务、交付和审计责任及其证据要求。"
+    ],
+    "archiveReason": "提出了可迁移的责任闭环视角，可用于判断AI产品能否超越短期模型能力差异并形成长期商业壁垒。",
+    "classifiedAt": 1787294853879,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI产品的责任闭环护城河",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "模型能力持续提升会压缩依赖短期能力差构建的产品优势。",
+      "监管许可、线下交付、组织协作和结果责任比单纯模型能力更难复制。",
+      "企业级AI的价值闭环应覆盖异常发现、事实确认、补救执行、证据归档和业务回写。"
+    ],
+    "oneHighValuePoint": "评估AI产品时，不应只看答案质量或自动化程度，而应看系统能否持续承担结果、处理异常并完成可追溯的业务闭环。",
+    "oneLineReview": "责任闭环是一个有价值且可迁移的AI产品护城河视角，但文章主要依赖案例推演，尚缺数据和系统验证。",
+    "primaryCategory": "AI产品与创业",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，作为评估AI企业产品护城河和业务闭环的参考框架",
+    "secondaryCategories": [
+      "企业交付",
+      "商业系统构建"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章借医疗与定制制造案例指出，模型能力差会快速商品化；AI企业更持久的壁垒在于承接监管、交付、风险与结果责任，并把异常发现、处理、留证和回写做成完整业务闭环。",
+    "tags": [
+      "AI产品护城河",
+      "责任闭环",
+      "企业工作流",
+      "异常处理",
+      "FDE"
+    ],
+    "title": "Bruce Guai: 最近读到 a16z Julie 写的《Be AI-Native and AI-Proof》",
+    "totalScore": 71,
+    "url": "https://x.com/BruceGuai/status/2090307111259689456"
+  },
+  "payloadHash": "sha256:2a935d9e5506934783c440785530c73837173bc2b45412bd25c9d07180ff0a74",
+  "refs": {},
+  "revisionId": "sha256:9f93724930fb39f07b6f367b69c917cbfb9b0775aff128706250b0ac1f96f88f",
+  "schemaVersion": 1,
+  "updatedAt": 1789694051632
+}

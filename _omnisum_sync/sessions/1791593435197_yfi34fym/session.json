@@ -1,0 +1,66 @@
+{
+  "createdAt": 1791593435197,
+  "entityType": "session",
+  "id": "1791593435197_yfi34fym",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查阅官方博客与Hugging Face模型页面，确认权重、使用方式及跨模型查询的实现条件。",
+      "针对实际PDF样本，测试9B索引与0.6B查询组合的检索质量和端侧运行表现。"
+    ],
+    "archiveReason": "大小模型共享嵌入空间、大模型索引与小模型端侧查询的组合，对多模态文档检索具有明确参考价值。",
+    "classifiedAt": 1791594607440,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "共享嵌入空间的多模态检索模型发布",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "据发布说明，两个不同规模的后期交互嵌入模型支持在共享嵌入空间中进行跨模型检索。",
+      "该模型支持文本、图像和页面检索，并宣称可以不依赖OCR搜索PDF页面。",
+      "公布的基准成绩缺少评测设置、对照结果与复现信息，不能据此直接判断目标业务中的检索质量。"
+    ],
+    "oneHighValuePoint": "9B与0.6B模型共享嵌入空间，使数据索引和查询可以分别使用不同规模的模型，为兼顾多模态检索与端侧查询提供了具体方案。",
+    "oneLineReview": "值得作为多模态检索的技术选型线索保留，但发布声明尚不足以证明实际效果或直接指导部署。",
+    "primaryCategory": "AI 技术",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性保留模型线索与检索架构，实际采用前查阅文档并验证性能",
+    "secondaryCategories": [
+      "信息检索",
+      "开源模型"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章宣布开源多模态后期交互嵌入模型，提供9B与0.6B版本，共享嵌入空间，支持大模型索引、小模型端侧查询及免OCR的PDF页面检索，并报告两项基准成绩，但未交代评测条件与实现细节。",
+    "tags": [
+      "多向量嵌入",
+      "多模态检索",
+      "后期交互",
+      "端侧查询",
+      "PDF检索"
+    ],
+    "title": "Aravind Srinivas: We’re open-sourcing pplx-embed-v2-late, multi-vector embeddings for text and ima…",
+    "totalScore": 62,
+    "url": "https://x.com/AravSrinivas/status/2107871834205196784"
+  },
+  "payloadHash": "sha256:ac680e810a3fea4a2fbe7e3bedae43bd38ecb1756d89fa7cb3cb365912b3f5ec",
+  "refs": {},
+  "revisionId": "sha256:93644e329f51aff9e7cc6e2af4daf367cfc47c7ccb626e35059d27613145d6ea",
+  "schemaVersion": 1,
+  "updatedAt": 1791594608254
+}

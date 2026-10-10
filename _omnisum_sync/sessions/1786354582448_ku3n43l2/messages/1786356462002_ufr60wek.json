@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786356422655,
+  "entityType": "message",
+  "id": "1786356462002_ufr60wek",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Agent 将成为软件入口，App 退居“执行与校准层”\n\n## 核心观点\n\n未来用户完成任务时，首先打开的可能不再是某个垂直 App，而是 **AI Agent**。Agent 负责理解意图、规划流程并调用工具；App 则主要承担具体执行、结果确认和人工微调。\n\n## 产品实践：BaoCut 的设计取舍\n\n以视频转录剪辑工具 BaoCut 为例，其能力包括：\n\n- YouTube、X 视频转录、翻译与剪辑\n- GUI 与 CLI 分离，支持 Skill 调用\n- 可由 Agent 直接完成视频转文本、问答等任务\n\n在最新设计中，产品砍掉了内置 Agent Harness，转而：\n\n1. 保留 Prompt，方便用户复制到外部 Agent 执行；\n2. 提供网页界面，可在 Agent 的内置浏览器中打开；\n3. 支持通过对话或网页标记进行二次编辑。\n\n这让 App 更聚焦于专业能力，而不必重复建设 Agent 入口。\n\n## 产品范式的变化\n\n软件设计正在从 **“Human Can Do It”** 转向 **“Agent Can Do It”**：\n\n- 复杂配置可由 Agent 自动完成；\n- 新用户引导和操作教学可交给 Agent；\n- App 不必承载完整交互流程，只需提供稳定、可调用的能力；\n- 人主要负责提出目标、确认结果和处理例外。\n\n本质上，产品正在从“面向人操作的界面”，转变为“面向人机协作的工具”。\n\n## 挑战与兜底\n\n完全依赖外部 Agent，也会提高对可靠性和容错能力的要求。Agent 误操作时，需要通过两种方式兜底：\n\n- **Agent 自修复**：检测异常并重新执行；\n- **人工微调**：由用户确认、修改最终结果。\n\n因此，App 即使退居后台，仍需具备可预览、可撤销、可编辑和结果校验能力。\n\n## 结论\n\n未来工具型 App 的竞争力，可能不再是拥有多复杂的界面，而是能否被 Agent **发现、理解、调用和纠错**。不支持 Agent 操作的产品，除非拥有强垄断或不可替代性，否则可能逐渐失去入口价值。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786356422655,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c2e830a53bba8b06b682450b6fb0ca78489a8a33ba5d9ecaa3a3b87af62ebd4a",
+  "refs": {
+    "sessionId": "1786354582448_ku3n43l2"
+  },
+  "revisionId": "sha256:b9ffa80ebbcc168319091da8c5639b12ad4599c1a4b5ebdd258a106f6dfdf8dc",
+  "schemaVersion": 1,
+  "updatedAt": 1786356422655
+}

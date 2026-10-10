@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729241869,
+  "entityType": "message",
+  "id": "1789729241870_6t2wbhj5",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# PlanWeave：把长期编程 Agent 从“聊天”变成可恢复的工程流程\n\nPlanWeave 是一套本地优先、文件驱动的 Agent 编排系统。它将模糊目标拆成带依赖关系的任务图，让不同编程或评审 Agent 分块执行，并持久记录每次运行。其核心价值是解决长周期 AI 编程中上下文混乱、进度不透明、失败难恢复的问题。\n\n## 任务图成为项目的执行模型\n\nPlanWeave 将文件视为任务节点、文档视为可领取的工作块，而非只在聊天中维护计划。每个 Agent 只获得当前工作块及相关图上下文，从而减少无关信息和 Token 消耗。\n\n系统支持：\n\n- 展示和编辑任务依赖、执行状态与评审回路；\n- 为不同节点指定 Codex、Claude Code、OpenCode、Pi 或本地脚本；\n- 将评审意见结构化回传给实现节点，形成“实现—检查—修复”闭环；\n- 保存提示词、标准输出、错误、报告和元数据，便于追踪与恢复。\n\n## ChatGPT 负责规划，专职 Agent 负责执行\n\n通过本地 MCP 服务，ChatGPT 不仅能查询状态，还能创建画布、拆分任务、配置依赖与评审流程。配套技能进一步区分角色：`plan-maker` 负责制订计划，`plan-coordinator` 调度全流程，`plan-runner` 执行实现，`plan-reviewer` 验收，`plan-recovery` 处理异常。\n\n这种设计把单个“万能 Agent”改造成职责明确的多 Agent 流水线，更适合并行开发、持续评审和跨多轮会话的复杂项目。\n\n## 已可使用，但自动化能力仍属早期\n\nPlanWeave 目前以 CLI 为推荐入口，也提供实验性的 Electron 桌面画布和一键 Auto Run，可自动领取任务、调用执行器并推进反馈循环。不过官方明确提示：自动调度、执行器集成和故障恢复仍可能不稳定；桌面安装包也尚未签名。\n\n项目采用 MIT 许可证，计划继续增强暂停恢复、协作式任务板和跨机器 Agent 调度。它体现的方向是：AI 编程正在从一次性对话工具，转向具备状态、审计、分工与恢复能力的工程基础设施。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729241869,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:db9980d3378931e2e27d62d05ed9910ece00cd21f82eb9d0853b0e980e229293",
+  "refs": {
+    "sessionId": "1783301422076_on9hvvu5"
+  },
+  "revisionId": "sha256:cda56523802ca3d5b982729680cb1c3c18916c7d33c40dd0d387d7fdd727bda0",
+  "schemaVersion": 1,
+  "updatedAt": 1789729241869
+}

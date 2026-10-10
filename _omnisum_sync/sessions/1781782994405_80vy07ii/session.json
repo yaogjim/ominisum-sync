@@ -1,0 +1,68 @@
+{
+  "createdAt": 1781782994405,
+  "entityType": "session",
+  "id": "1781782994405_80vy07ii",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将其六级决策梯提炼进自己的AI编程提示词或AGENTS.md",
+      "在一个小型项目中安装并测试/ponytail-review，验证是否能减少无必要代码",
+      "对比未启用和启用规则时AI生成代码的可维护性、正确性和实际token成本"
+    ],
+    "archiveReason": "包含可直接复用的AI编程规则、安装方式和反过度工程方法论，适合作为AI辅助编码配置参考",
+    "classifiedAt": 1781783247013,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Ponytail极简AI编程规则",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "AI编程Agent容易生成过多代码，需通过规则约束其优先复用现有能力",
+      "Ponytail支持Claude Code、Codex、Copilot、Gemini、OpenCode等多个Agent环境",
+      "项目提供/ponytail-review、/ponytail-audit等命令，用于审查过度工程和技术债",
+      "基准测试声称在部分Claude模型上可减少代码量、成本和延迟，但结果依赖模型和提示词场景"
+    ],
+    "oneHighValuePoint": "其六级决策梯：先判断是否需要存在，再优先使用标准库、原生能力、已有依赖，最后才写最小代码。",
+    "oneLineReview": "这是一个实用的AI编程规则集，核心价值在于把YAGNI和最小实现原则固化进Agent工作流。",
+    "primaryCategory": "AI编程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "短期实践验证后决定是否长期保留",
+    "secondaryCategories": [
+      "提示词工程",
+      "软件工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 GitHub 项目 Ponytail，通过给AI编程助手注入“少写代码、优先复用标准库和平台能力”的规则，减少过度工程，并提供多种AI工具的安装方式、命令和基准测试结果。",
+    "tags": [
+      "AI Agent",
+      "代码简化",
+      "YAGNI",
+      "开发效率",
+      "Claude Code"
+    ],
+    "title": "DietrichGebert/ponytail: Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+    "totalScore": 75,
+    "url": "https://github.com/DietrichGebert/ponytail"
+  },
+  "payloadHash": "sha256:78bb272a0f776080cafa9f3a0dbb1e9adebfb244d410f8360802e487fc443f35",
+  "refs": {},
+  "revisionId": "sha256:343ae7a84325a750c60e8f44e0481c7239c8e0e907312a85ef8a4e3b823637ae",
+  "schemaVersion": 1,
+  "updatedAt": 1789692375986
+}

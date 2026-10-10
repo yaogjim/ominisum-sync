@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789458085871,
+  "entityType": "session",
+  "id": "1789458085871_50qg2rsd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为做市策略建立单边被吃率、补腿成功率、单位奖励库存损失和库存资金挤占四项监控指标。",
+      "分别按外部参考中价和实际盘口中价计算库存盯市损益，进行保守与中性口径对照。",
+      "在扩大资金规模前设置库存数量、资金占用比例及有效计分对下降幅度的停止条件。"
+    ],
+    "archiveReason": "文章用实盘数据揭示奖励、库存亏损和资金占用之间的反馈循环，并提出四项可复用的监控指标。",
+    "byline": "Leo｜LeoLabs.me",
+    "classifiedAt": 1789642393937,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Polymarket做市的库存死亡螺旋",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 675,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSFVXTbaEAAlxpX?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSFVXTbaEAAlxpX?format=jpg&name=medium",
+        "width": 1199
+      }
+    ],
+    "knowledgePoints": [
+      "做市订单被主动成交并非随机事件，可能包含不利价格信息，使做市商承受逆向选择。",
+      "未配平库存不仅产生浮亏，还会锁定资金并减少可参与奖励计算的双边挂单，形成负反馈。",
+      "奖励型做市的真实净收益应同时计入奖励、返佣、已实现损益、库存盯市损益和资金机会成本。"
+    ],
+    "oneHighValuePoint": "评估奖励型做市不能只看APR或毛奖励，还应联动监控单边被吃率、补腿成功率、单位奖励对应的库存损失及库存对后续计分资金的挤占。",
+    "oneLineReview": "这是一个数据具体、诊断框架清晰的实盘案例，但观察期仅一天且数据为作者自述，结论仍需更长周期验证。",
+    "primaryCategory": "预测市场做市与风险管理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "保留其库存风险诊断框架，作为评估补贴型做市策略的案例",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "量化交易",
+      "商业系统构建"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章复盘Polymarket做市首日数据：奖励收入被单边库存浮亏大幅侵蚀，库存占资又压缩后续双边挂单和奖励能力，可能形成库存、资金与奖励相互恶化的死亡螺旋。",
+    "tags": [
+      "Polymarket",
+      "流动性做市",
+      "库存风险",
+      "逆向选择",
+      "资金效率"
+    ],
+    "title": "Leo｜LeoLabs.me: Polymarket 做市第一天，净值大约赚了 $40",
+    "totalScore": 65,
+    "url": "https://x.com/runes_leo/status/2099430202304799124"
+  },
+  "payloadHash": "sha256:7828cc0263e374f8fcd9405790029992a211c880c135b314eaa7fc756446ec46",
+  "refs": {},
+  "revisionId": "sha256:6a1ae4bcefa02a13b1689193ff777fb42eadf083ae610dfc6089074ea36fc546",
+  "schemaVersion": 1,
+  "updatedAt": 1789727750017
+}

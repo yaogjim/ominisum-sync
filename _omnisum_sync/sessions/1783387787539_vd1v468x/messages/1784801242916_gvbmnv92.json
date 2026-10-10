@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784801242915,
+  "entityType": "message",
+  "id": "1784801242916_gvbmnv92",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 内容总结\n\n这篇文章介绍了一个名为 **Claude Video** 的开源项目：它能让 Claude Code 分析 YouTube、Zoom、Loom 等平台的完整视频，并在后台自动提取画面与字幕。项目的亮点是通过场景检测减少无效抽帧，同时可将分析结果沉淀到知识库中。\n\n## 1. 直接提交链接，后台分析完整视频\n\n- 用户只需把 **YouTube、Zoom 会议或 Loom 录像链接**交给 Claude Code，它就能在后台处理视频。\n- 分析过程不会阻碍用户继续写代码或完成其他工作，适合处理会议、教程和演示录像等长视频。\n\n## 2. 用场景检测解决传统抽帧的缺陷\n\n- 过去许多“看视频”的 AI 工具，通常只会从视频中随机抽取上百帧，主要依靠字幕理解内容。\n- 这种方式容易遗漏画面中的关键演示、图表和操作过程，视频理解并不完整。\n- 该项目使用 **FFmpeg 进行场景检测**：只有屏幕内容真正发生变化时才截取画面，从而减少无效处理，并提升关键画面的捕捉准确度。\n\n## 3. 针对不同平台采用不同字幕方案\n\n项目会根据视频来源选择更节省资源的字幕获取方式：\n\n- **YouTube**：直接调用平台提供的免费官方字幕。\n- **Zoom、Loom**：使用 **Whisper** 进行语音转写。\n\n这种按平台适配的做法，可以避免不必要的语音识别成本。\n\n## 4. 分析结果可沉淀到知识库\n\n- 视频分析完成后，工具会询问是否将结果保存到个人知识库。\n- 保存后，未来再询问相关问题时，可以直接调用这些内容，实现从“看视频”到“积累知识”的连续流程。\n- 作者计划把一周内的咨询通话录像全部交给该工具处理，让会议行动项自动整理并进入“第二大脑”。\n\n## 5. 实际效果仍需进一步验证\n\n- 作者目前尚未实测该工具处理**长视频**时的准确度，因此实际效果仍有待验证。\n- 后续计划运行多个案例后，再反馈具体测试结果。\n\n## 项目地址\n\n- GitHub：[bradautomates/claude-video](https://github.com/bradautomates/claude-video?tab=readme-ov-file)",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784801242915,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b3b122ca684f9965bd5d4c3986378329de31851e63209056b34797e12b3f6854",
+  "refs": {
+    "sessionId": "1783387787539_vd1v468x"
+  },
+  "revisionId": "sha256:c3abf7daf20d970b28c398ef28d264598cb99758bd1d704ed7444c136bbc628f",
+  "schemaVersion": 1,
+  "updatedAt": 1784801242915
+}

@@ -1,0 +1,57 @@
+{
+  "createdAt": 1791590362126,
+  "entityType": "session",
+  "id": "1791590362126_835h3ift",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "classifiedAt": 1791590376639,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 3,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Hark用户激增引发服务稳定性问题",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "主要是短期故障通告与零散反馈，没有明确的长期用途或独特案例细节。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [],
+    "oneHighValuePoint": "发布者将基础设施问题归因于用户快速增长，另有用户反馈服务缓慢，但这些信息尚不足以确定具体瓶颈。",
+    "oneLineReview": "可作为Hark短期服务状态的线索，但不足以支撑增长分析、技术判断或长期留存。",
+    "primaryCategory": "产品运营动态",
+    "rating": "D",
+    "rejectReason": "缺少增长数据、故障原因、技术方案和复盘，回复混有无关推广，无法形成可复用知识。",
+    "retentionDecision": "仅具短期服务状态参考价值，无需长期保留",
+    "secondaryCategories": [
+      "服务稳定性"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "Brett Adcock称Hark在过去48小时用户快速增长，导致基础设施问题，团队正在修复，并预计短时间内恢复稳定。回复包含速度抱怨、邀请奖励诉求及无关推广，但未提供增长数据或技术细节。",
+    "tags": [
+      "Hark",
+      "用户增长",
+      "基础设施故障",
+      "服务延迟"
+    ],
+    "title": "Brett Adcock: Hark has exploded over the last 48 hours, and all the user growth caused some in…",
+    "totalScore": 27,
+    "url": "https://x.com/adcock_brett/status/2108298707485786195"
+  },
+  "payloadHash": "sha256:bc0681e6ed74e9e58dfb3e2e8a2e858ea5474d299362fe7e0cfaab0b0dd99164",
+  "refs": {},
+  "revisionId": "sha256:a13dbcfef484dec040c50b0a0f8dd1d362719f7f91aa01ae2aa5d58c207398ea",
+  "schemaVersion": 1,
+  "updatedAt": 1791590376693
+}

@@ -1,0 +1,84 @@
+{
+  "createdAt": 1788426450175,
+  "entityType": "session",
+  "id": "1788426450175_bn4j9hoz",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用短片队列搭建最小原型，测试边播放边生成能否维持连续体验。",
+      "记录单分钟视频的生成成本、等待时间和失败率，评估经济可行性。",
+      "加入追问或测验环节，对比纯视频播放与互动模式的学习效果。"
+    ],
+    "archiveReason": "",
+    "byline": "six",
+    "classifiedAt": 1789642649538,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 4,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "实时生成式视频课堂原型",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-20",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HRNZiL0XwAECF7T?format=png&name=small",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HRNZiL0XwAECF7T?format=png&name=small",
+        "width": 640
+      }
+    ],
+    "knowledgePoints": [
+      "将长课程拆成连续短片，可通过边播放边生成降低用户感知延迟。",
+      "生成式课堂可组合追问、互动测验、语音交互和可选教师角色。",
+      "原型声称生成5秒视频约需3秒，但该性能数据缺少独立验证和成本说明。"
+    ],
+    "oneHighValuePoint": "在用户观看前一段视频时并行生成下一段，以短片队列掩盖生成延迟，是实现近实时生成式视频体验的关键产品思路。",
+    "oneLineReview": "产品形态具有启发性，但当前更像概念演示，技术、经济与教学效果证据均不足。",
+    "primaryCategory": "AI产品原型",
+    "rating": "B",
+    "rejectReason": "目前只有演示和产品设想，缺少实现架构、成本数据、学习效果验证与可复用代码。",
+    "retentionDecision": "适合快速了解产品概念，待开源代码或技术细节发布后再决定是否保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "生成式视频",
+      "教育科技"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者展示了基于 fal H3 Max 的生成式视频课堂：用户提出概念后，系统连续生成动画讲解片段，并支持排队新内容和追问。原型利用观看当前片段的时间生成下一片段，但成本与产品可行性尚未验证。",
+    "tags": [
+      "实时视频生成",
+      "AI课堂",
+      "流式生成",
+      "互动学习",
+      "产品原型"
+    ],
+    "title": "six: I built a generative video classroom with @fal H3 Max Ask about any concept, and…",
+    "totalScore": 57,
+    "url": "https://x.com/internetphysics/status/2094848844987347409"
+  },
+  "payloadHash": "sha256:87ac23f2cc12454f5c21f9bf4a841d3eded663a40b84eedd9aa06dd5e5b036ca",
+  "refs": {},
+  "revisionId": "sha256:11887eec7748c39845914bea549aad0ca7b9e793ab26b617c70709f20c5a7103",
+  "schemaVersion": 1,
+  "updatedAt": 1789642650253
+}

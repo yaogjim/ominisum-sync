@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943423642,
+  "entityType": "session",
+  "id": "1786943423642_ss94yduo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在启动智能体任务前书面定义需求、优先级、约束条件和可验证的验收标准。",
+      "为并行智能体划分清晰职责与交付边界，并对长任务设置阶段性检查点。",
+      "对照项目管理和软件工程经典资料，审查当前智能体流程是否重复采用了已知有缺陷的瀑布式做法。"
+    ],
+    "archiveReason": "文章将需求、优先级、工作分区、验收和阶段检查映射到智能体编排，具有一定复用价值，并提供了后续阅读线索。",
+    "classifiedAt": 1786943447387,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "用项目管理历史理解智能体编排",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "horn.gg",
+    "favicon": "",
+    "knowledgePoints": [
+      "多智能体编排与项目管理共享需求记录、任务排序、工作分区、质量验收和进度检查等核心机制。",
+      "智能体运行时间越长，仅检查最终产物的风险越高，应通过中间产物和定期检查控制偏差。",
+      "忽视既有学科历史会导致团队以新术语重复发明旧方法，同时重犯已经被研究过的错误。"
+    ],
+    "oneHighValuePoint": "智能体编排可直接借鉴项目管理：先明确需求与优先级，再划分工作边界、设置验收标准，并要求长任务定期汇报。",
+    "oneLineReview": "视角与AI Agent开发高度相关且具有启发性，但主要依赖历史类比和书目推荐，缺少实证与完整操作流程。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性精读并保留其智能体编排与项目管理的对应框架",
+    "secondaryCategories": [
+      "项目管理",
+      "软件工程方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为多智能体管理并非全新问题，本质上与项目管理和软件工程过程高度相似。作者以数据科学、加密金融等重复发明历史为例，主张从需求定义、优先级、验收和阶段检查等既有方法中学习。",
+    "tags": [
+      "智能体编排",
+      "项目管理",
+      "需求管理",
+      "软件工程史",
+      "过程控制"
+    ],
+    "title": "Engineers will do anything to avoid learning from history — David Horn",
+    "totalScore": 65,
+    "url": "https://horn.gg/blog/engineers-will-do-anything-to-avoid-learning-from-history/"
+  },
+  "payloadHash": "sha256:40f38326f8fb83c755023bc44eb6ae0ddaf71fef39f762aa8434745c47f116e5",
+  "refs": {},
+  "revisionId": "sha256:ef2cd475233719ac6e2692a2e9708b16226939440bdc196bc7b6a71a9ad58347",
+  "schemaVersion": 1,
+  "updatedAt": 1789727991555
+}

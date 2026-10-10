@@ -1,0 +1,84 @@
+{
+  "createdAt": 1788913968259,
+  "entityType": "session",
+  "id": "1788913968259_8c49ziwf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "待量化权重开源后，在统一评测框架下复现其与BF16版本的精度差异。",
+      "验证Vision Encoder补零方案的数学等价性、推理兼容性及实际显存收益。",
+      "在推进至2.0 bpw时，对比纯数值优化与OPD方案的精度和训练成本。"
+    ],
+    "archiveReason": "包含大模型低比特量化、OPD规模适用性及Vision Encoder补零兼容方案等可复用线索。",
+    "byline": "Feiteng",
+    "classifiedAt": 1789643030473,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Qwen3.8-27B低比特量化实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 800,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HRsgGL_boAA8kzt?format=png&name=4096x4096",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HRsgGL_boAA8kzt?format=png&name=4096x4096",
+        "width": 3552
+      }
+    ],
+    "knowledgePoints": [
+      "文中报告模型由46.55 GiB压缩至9.71 GiB，体积缩小约80%，并保留MTP。",
+      "在小模型上有效的On-Policy Distillation扩展至27B时未奏效，作者转而使用数值优化求解析解。",
+      "Vision Encoder的维度兼容问题可尝试用补零处理，文中称量化前后相似度达到0.999。"
+    ],
+    "oneHighValuePoint": "针对量化工具不支持Vision Encoder维度的问题，可通过补零完成维度适配，并保持数学计算等价且无需修改推理代码。",
+    "oneLineReview": "量化结果和补零方案具有技术参考价值，但目前主要是结果宣称，缺少方法细节、代码与独立验证。",
+    "primaryCategory": "AI模型量化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性存档，待权重与实验细节开源后再验证",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "模型部署",
+      "数值优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章称通过数值优化将Qwen3.8-27B压缩至9.71 GiB并维持多项基准表现，同时报告OPD在27B规模无效，以及用补零解决Vision Encoder维度兼容问题，但未提供完整实验设置和可核验材料。",
+    "tags": [
+      "低比特量化",
+      "Qwen3.8-27B",
+      "数值优化",
+      "Vision Encoder",
+      "On-Policy Distillation"
+    ],
+    "title": "Feiteng: 低比特量化： 通过数值优化，把 Qwen3",
+    "totalScore": 60,
+    "url": "https://x.com/FeitengLi/status/2097305498370654350"
+  },
+  "payloadHash": "sha256:8ef75fff02223c61560e41932e67f4ec7748185c6ead8ede1c6aba7f8bec8a8f",
+  "refs": {},
+  "revisionId": "sha256:775de1992e45105c0962c26f64e9befbfcb55b9560348d6e181ad6258dc10512",
+  "schemaVersion": 1,
+  "updatedAt": 1789727676368
+}

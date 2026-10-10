@@ -1,0 +1,87 @@
+{
+  "createdAt": 1783418292929,
+  "entityType": "session",
+  "id": "1783418292929_0elbwcej",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需要试用 OpenCode 版本，可先阅读安装文档后使用 bunx oh-my-openagent install。",
+      "如只需要 Codex CLI Light 版，可使用 npx lazycodex-ai install 并检查 ~/.codex/config.toml 变更。",
+      "试用前关注遥测默认开启、权限配置、模型/供应商认证和项目稳定性风险。",
+      "重点验证 Hashline 编辑、LSP 集成、Team Mode 是否真实提升现有代码库任务完成率。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783418518265,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Oh My OpenAgent功能概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "images": [
+      {
+        "alt": "Building in Public",
+        "caption": "",
+        "height": 1022,
+        "id": "img-4",
+        "nearbyText": "Tip Building in Public The maintainer builds and maintains oh-my-openagent in real-time with Jobdori, an AI assistant running on a heavily customized fork of OpenClaw. Every feature, every fix, every issue triage — live in our Discord. → Wa...",
+        "resolvedUrl": "https://github.com/code-yeongyu/oh-my-openagent/raw/dev/.github/assets/building-in-public.png",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/code-yeongyu/oh-my-openagent/raw/dev/.github/assets/building-in-public.png",
+        "width": 1596
+      }
+    ],
+    "knowledgePoints": [
+      "oh-my-openagent 分为 OpenCode Ultimate 版和 Codex CLI Light 版，前者提供完整多代理编排，后者提供较轻量的 Codex 插件组件。",
+      "工具集成了 LSP、MCP、AST-Grep、tmux、规则注入、评论检查、ultrawork/ulw-loop 等能力，目标是增强 AI 编码代理在复杂代码库中的执行稳定性。",
+      "Team Mode 通过 lead agent 和多个成员 agent 并行工作，支持 hyperplan 和 security-research 等协作模式。",
+      "项目默认启用匿名遥测，可通过配置或环境变量关闭。"
+    ],
+    "oneHighValuePoint": "Hash-Anchored Edit Tool 用行号加内容哈希校验编辑位置，试图降低 AI 修改代码时的 stale-line 和误改问题。",
+    "oneLineReview": "适合作为了解和试用该 AI 编码代理工具的入口，但宣传成分重、证据不足，长期知识价值有限。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "内容高度产品宣传化，重复和夸张表述较多，证据主要来自推荐语和未经充分说明的指标，不适合作为长期方法论资料。",
+    "retentionDecision": "短期参考后可删除",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "开源项目",
+      "编程代理",
+      "LLM工程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章是 oh-my-openagent GitHub README，介绍其面向 OpenCode 和 Codex CLI 的安装方式、功能模块、Team Mode、多代理编排、LSP/MCP/AST-Grep 集成、Hashline 编辑工具、遥测与卸载方式。实用性集中在工具试用和配置层面。",
+    "tags": [
+      "OpenCode",
+      "Codex CLI",
+      "AI编程代理",
+      "多代理协作",
+      "MCP",
+      "LSP"
+    ],
+    "title": "code-yeongyu/oh-my-openagent: omo/lazycodex: The coding agent for tokenmaxxers;the one and only agent harness for complex codebases. For your Codex, for your OpenCode",
+    "totalScore": 56.5,
+    "url": "https://github.com/code-yeongyu/oh-my-openagent"
+  },
+  "payloadHash": "sha256:b92eb35c321e8046c4ea30e00ba564b27958d61660cd850d515424a758a8fd17",
+  "refs": {},
+  "revisionId": "sha256:509c6cac37830b9b8ada172cc4512f534b3546c3c7878e46d188a91ef6aa69eb",
+  "schemaVersion": 1,
+  "updatedAt": 1784712834010
+}

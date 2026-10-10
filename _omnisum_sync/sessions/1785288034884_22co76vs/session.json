@@ -1,0 +1,59 @@
+{
+  "createdAt": 1785288034884,
+  "entityType": "session",
+  "id": "1785288034884_22co76vs",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "classifiedAt": 1789725239935,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 3,
+      "transferability": 2
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "旅行生活笔记标签展示",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息过于碎片化，几乎没有论证、方法或独特案例，后续调用价值很低",
+    "domain": "www.hubble.md",
+    "favicon": "https://www.hubble.md/favicon.svg",
+    "knowledgePoints": [
+      "生活记录可通过 Note、Tag、Place 三类索引建立简单关联"
+    ],
+    "oneHighValuePoint": "页面呈现了按笔记、标签和地点三个维度组织生活记录的基本思路。",
+    "oneLineReview": "这是一个极简内容索引或界面样例，能够传递的实质信息十分有限。",
+    "primaryCategory": "个人知识管理",
+    "rating": "E",
+    "rejectReason": "页面没有解释功能、设计逻辑或使用方法，无法形成有效认知与实践参考",
+    "retentionDecision": "内容仅为零散样例词条，缺乏可供复用的信息与方法，不建议保留",
+    "secondaryCategories": [
+      "产品界面展示"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "页面以旅行、户外、饮食和阅读等零散笔记为样例，通过 Note、Tag、Place 及地点词展示内容关联，但未说明产品功能、组织方法、使用流程或实际案例。",
+    "tags": [
+      "生活笔记",
+      "标签系统",
+      "地点索引",
+      "内容关联"
+    ],
+    "title": "Hubble.md",
+    "totalScore": 18,
+    "url": "https://www.hubble.md/"
+  },
+  "payloadHash": "sha256:db34ee768d44cbdb0ccb3b92eded1f82138dcbd245cd409918c51ea5cd661d9d",
+  "refs": {},
+  "revisionId": "sha256:e674d4c6384c07276f693f5f13c9307f7b8d43ccdfcdab1538f3d325913cff64",
+  "schemaVersion": 1,
+  "updatedAt": 1789725240712
+}

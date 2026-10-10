@@ -1,0 +1,94 @@
+{
+  "createdAt": 1784017252568,
+  "entityType": "session",
+  "id": "1784017252568_drpmcwh5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个真实开发任务，安装Orca并创建多个隔离worktree进行并行方案对比。",
+      "验证现有Claude Code、Codex或其他CLI智能体与Orca的兼容性及资源占用。",
+      "测试差异行评论、结果合并、远程重连和移动端通知是否能改善当前代码评审流程。"
+    ],
+    "archiveReason": "与AI编程和Agent工作流高度相关，其隔离式并行执行、统一评审和远程控制能力具有明确参考价值。",
+    "classifiedAt": 1784677876065,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Orca多智能体并行编排器",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1784017282657,
+        "imageId": "img-10",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# Orca README 中文总结\n\nOrca 是一款面向高效开发者的**AI 编排器**：可以同时运行多个 CLI 智能体，如 Claude Code、OpenClaude、Codex、OpenCode，并让它们分别在独立的 Git worktree 中工作，方便统一管理、比较和合并结果。\n\n## 1. 产品定位：并行管理多个 AI 编程智能体\n\n- Orca 的核心目标是让开发者在一个界面里同时调度多个 AI 编程工具。\n- 每个智能体都运行在自己的隔离 worktree 中，避免互相干扰。\n- 适合同时尝试多个方案，再选择最佳结果合并。\n\n**例子：**  \n你可以把同一个需求同时发给 5 个智能体，让它们各自实现功能，最后对比代码质量、测试结果和提交差异。\n\n---\n\n## 2. 核心功能\n\n### 并行 Worktree\n\n- 一个提示词可以同时分发给多个智能体。\n- 每个智能体在独立的 Git worktree 中执行任务。\n- 开发者可以比较不同实现，并合并最好的方案。\n\n### 移动端 Companion App\n\n- 可用手机监控和指挥桌面端的智能体。\n- 智能体完成任务时会收到通知。\n- 支持随时发送后续指令。\n- 提供 iOS App Store 和 Android APK。\n\n### 终端分屏\n\n- 内置类似 Ghostty 的高性能终端。\n- 支持 WebGL 渲染、无限分屏。\n- 重启后仍可保留滚动历史。\n\n### 设计模式\n\n- 可在真实 Chromium 窗口中点击 UI 元素。\n- Orca 会把对应的 HTML、CSS 和裁剪截图发送给智能体。\n- 适合让 AI 精准修改页面样式或组件。\n\n### GitHub 工作流集成\n\n- 可在应用内浏览 PR、Issue 和项目看板。\n- 能从任意任务打开对应 worktree。\n- 支持在 diff 行上添加评论，并直接发回给智能体处理。\n- 评审、修改、提交都可以在 Orca 内完成。\n\n### SSH Worktree\n\n- 支持在远程高性能机器上运行智能体。\n- 支持文件编辑、Git、终端操作。\n- 提供自动重连和端口转发能力。\n\n### 文件与编辑器体验\n\n- 内置类似 VS Code 的编辑器，支持自动保存。\n- 可把文件或图片直接拖入智能体提示中。\n- 支持预览 Markdown、图片、PDF 和仓库文档。\n\n### Orca CLI\n\n- Orca 也能被智能体或脚本控制。\n- 提供命令如：\n  - `orca worktree create`\n  - `snapshot`\n  - `click`\n  - `fill`\n- 方便把复杂工作流自动化。\n\n---\n\n## 3. 其他实用能力\n\n- **快速打开**：可搜索 worktree、文件、智能体、命令和仓库上下文。\n- **账号切换与用量追踪**：支持查看 Claude、Codex 的用量和限额重置时间，并可热切换账号。\n- **Computer Use**：当任务需要真实交互时，可让智能体操作桌面应用和可见 UI。\n- **通知与未读状态**：智能体完成或需要关注时会提醒，也可把会话标为未读，稍后处理。\n- 官方表示功能更新很快，真正完整的功能列表以更新日志为准。\n\n---\n\n## 4. 支持的智能体\n\nOrca 支持**任何能在终端运行的 CLI 智能体**。\n\n文中列出的示例包括：\n\n- Claude Code\n- Codex\n- Grok\n- Cursor\n- GitHub Copilot\n- OpenCode\n- OpenClaude\n- Amp\n- Antigravity\n- Goose\n- Cline\n- Continue\n- Kimi\n- Mistral\n- Qwen Code\n- 以及其他 CLI 智能体\n\n---\n\n## 5. 安装方式\n\nOrca 可从官网**onOrca.dev**下载，也提供不同系统的安装包：\n\n- macOS Apple Silicon\n- macOS Intel\n- Windows `.exe`\n- Linux AppImage\n- 全部构建版本\n\n也支持包管理器安装：\n\n```bash\n# macOS Homebrew\nbrew install --cask stablyai/orca/orca\n```\n\n```bash\n# Arch Linux AUR\nyay -S stably-orca-bin\n```\n\n---\n\n## 6. 社区、反馈与隐私\n\n- 社区支持：\n  - Discord\n  - Twitter / X：`@orca_build`\n  - 微信群\n- 用户可以提交功能请求，团队表示发布节奏很快。\n- 提供隐私与遥测文档，说明 Orca 收集哪些匿名使用数据，以及如何退出。\n- 官方鼓励用户给 GitHub 仓库点 Star。\n\n---\n\n## 7. 开发与许可证\n\n- 想贡献代码或本地运行项目，可查看`CONTRIBUTING.md`。\n- Orca 是自由开源软件。\n- 项目采用**MIT 许可证**。",
+        "url": "https://github.com/stablyai/orca/raw/main/docs/assets/readme-hero.jpg",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "Orca 桌面应用在并行 worktree 中运行智能体，角落里是 Orca 移动 companion 应用",
+        "caption": "",
+        "height": 1250,
+        "id": "img-10",
+        "nearbyText": "Orca English · Español · Português · 日本語 · 한국어 面向 100x 构建者的 AI 编排器。 并排运行 Claude Code、OpenClaude、Codex 或 OpenCode — 每个都在自己的 worktree 中运行，并在一个地方统一跟踪。 下载 Orca 特性 移动 Companion 应用 用手机监控并指挥你的智能体 — 智能体完成时收到通知，随时随地发送后续指令。 iOS App Store · Android AP...",
+        "resolvedUrl": "https://github.com/stablyai/orca/raw/main/docs/assets/readme-hero.jpg",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/stablyai/orca/raw/main/docs/assets/readme-hero.jpg",
+        "width": 1998
+      }
+    ],
+    "knowledgePoints": [
+      "独立Git worktree可以隔离多个编程智能体的并行修改，降低文件和分支冲突。",
+      "Orca面向可在终端运行的CLI智能体，通过统一界面管理会话、终端、差异评审和任务上下文。",
+      "远程SSH worktree、移动端通知与CLI自动化可支持长时间运行和跨设备管理智能体任务。"
+    ],
+    "oneHighValuePoint": "将同一任务分发给多个智能体，并用相互隔离的Git worktree保存结果，再统一比较和合并最佳实现。",
+    "oneLineReview": "产品能力覆盖面广且贴合多智能体开发需求，但正文主要是功能清单，缺少实测数据、案例和完整工作流验证。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为多智能体并行开发工具的选型资料存档，需要时再测试",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent开发",
+      "开发工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍开源桌面工具Orca，可在独立Git worktree中并行运行多种CLI编程智能体，并统一管理终端、差异评审、远程机器、项目任务及移动端通知，同时提供安装方式与支持范围。",
+    "tags": [
+      "多智能体编排",
+      "Git Worktree",
+      "并行开发",
+      "远程开发",
+      "代码评审"
+    ],
+    "title": "orca/docs/readme/README.zh-CN.md at main · stablyai/orca",
+    "totalScore": 64,
+    "url": "https://github.com/stablyai/orca/blob/main/docs/readme/README.zh-CN.md"
+  },
+  "payloadHash": "sha256:cab63c0ee2e901c711ae01dbd84a3bc1acb1ceb160b046aedae6af83e64f9f2b",
+  "refs": {},
+  "revisionId": "sha256:f2b29712e4f6c950d1e354b30fd30dccead877ecd1561af8799ec2cd9a8a9228",
+  "schemaVersion": 1,
+  "updatedAt": 1789728693636
+}

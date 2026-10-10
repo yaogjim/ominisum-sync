@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789885281357,
+  "entityType": "session",
+  "id": "1789885281357_oc1o65st",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选一个岗位试行一周：记录每次审批的决定与理由，再检查这些记录能否支持判断质量评价，而非直接全面替换现有考核。",
+      "选一条业务链路，整理动作表与实体表，明确审批事项和结果回访周期，验证有效后再决定是否系统化。",
+      "检查机器人与账号归属、部门密钥权限和数据恢复机制，优先补齐缺口，再扩大自动化范围。"
+    ],
+    "archiveReason": "提供业务动作定义、组织知识整理、决策留痕与回访、权限隔离等可复用方法，对企业AI交付和Agent工作流设计有持续参考价值。",
+    "byline": "司徒K",
+    "classifiedAt": 1790768439659,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "企业AI落地的组织改造与决策沉淀",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSjOhM_bcAA0bgY?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSjOhM_bcAA0bgY?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "业务知识可拆为动作定义与实体定义：动作注明执行条件、影响、结果记录位置和检查责任，实体注明含义与关系，帮助AI理解公司语境。",
+      "决策资产化不只是保存结论，还需要记录取舍理由并回访实际结果；数据不足应单独标记，不能强行归入成功或失败。",
+      "企业Agent的安全基础包括账号与机器人归公司所有、按部门限制密钥权限，以及建立数据备份和恢复能力。"
+    ],
+    "oneHighValuePoint": "把决策沉淀为可回访的记录：AI提案、人审批，批准与拒绝都记录理由，并周期性标记有效、无效或数据不足，使判断过程能够被检查和复用。",
+    "oneLineReview": "组织改造与决策留痕的方法值得精读，但匿名案例和成功率缺乏可核验依据，考核口径及自动化边界仍需补全。",
+    "primaryCategory": "企业AI落地",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留组织改造与决策沉淀框架，先在单条业务链路验证，不直接采信案例成效数据。",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "组织管理",
+      "知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为企业AI落地的瓶颈在组织而非员工技能，提出调整考核、人机分工、决策资产化、岗位重构和安全治理五项改法，并以一家跨境电商公司的自述案例说明，建议先在单个岗位或业务链路试行。",
+    "tags": [
+      "决策记录",
+      "人机分工",
+      "业务知识库",
+      "岗位重构",
+      "权限与备份"
+    ],
+    "title": "老板会用AI了，公司还是老样子，问题出在哪",
+    "totalScore": 71,
+    "url": "https://x.com/isituking/status/2101159921752363130"
+  },
+  "payloadHash": "sha256:82c4bf7c55961e8ca4ac47241904b1b4d371d8ae082647c1e3a3e82407cfbe5d",
+  "refs": {},
+  "revisionId": "sha256:7fb5dd193256e49b5ddef95e4d9e6e7a451c9074b6c55433163b3d9e20e79af8",
+  "schemaVersion": 1,
+  "updatedAt": 1790770617328
+}

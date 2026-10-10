@@ -1,0 +1,69 @@
+{
+  "createdAt": 1783078101125,
+  "entityType": "session",
+  "id": "1783078101125_bfekdh69",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为一个常见工作任务设计闭环流程，明确触发条件、成功标准、验证方式和停止条件",
+      "整理项目级技能文件，包括愿景、架构、规则、构建步骤、测试步骤和禁止事项",
+      "在编码或研究任务中尝试引入独立检查代理，避免生成者自审导致质量偏差",
+      "评估现有AI工作流的token成本、上下文复用方式和是否具备持久记忆"
+    ],
+    "archiveReason": "包含可复用的循环工程框架、构建块和应用场景，虽证据不足但有方法论参考价值",
+    "classifiedAt": 1783078284459,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI循环工程的实践框架",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "循环工程的核心流程包括发现、计划、执行、验证、迭代，目标是减少人类在每一步中的手动介入",
+      "闭环比开环更适合作为起点，因为目标、步骤、评估标准和停止条件更明确，成本和失控风险更低",
+      "高质量Agent循环需要自动化触发、隔离工作树、项目技能文件、外部工具连接器、独立审核子代理和持久记忆",
+      "长期运行的AI循环会快速消耗大量token，因此长上下文、低成本模型和良好的上下文管理是落地关键"
+    ],
+    "oneHighValuePoint": "把AI使用重点从“写好一次提示词”转向“设计可验证、可停止、可迭代的自动反馈循环”。",
+    "oneLineReview": "概念框架清晰、实践启发较强，但论证偏口号化，缺少真实案例和数据支撑。",
+    "primaryCategory": "AI工程实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为AI Agent工作流设计的概念性材料",
+    "secondaryCategories": [
+      "智能体工作流",
+      "自动化方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出从提示工程转向循环工程：设计能自动发现、计划、执行、验证、迭代的AI代理反馈系统。重点介绍单代理与集群循环、开环与闭环，以及自动化、工作树、技能、连接器、子代理、内存六个构建块。",
+    "tags": [
+      "Loop Engineering",
+      "AI Agent",
+      "工作流自动化",
+      "提示工程",
+      "Claude"
+    ],
+    "title": "Loop Engineering：每个建设者在 2026 年都需要的 AI 技能",
+    "totalScore": 64,
+    "url": "https://x.com/0xwhrrari/status/2065539680146182270"
+  },
+  "payloadHash": "sha256:e7265786ae4701ffa98d6d9b010b96006fc72cbc696ff8f587307f37eaaef1df",
+  "refs": {},
+  "revisionId": "sha256:296d54fd6f024b5b6463c12b0dea7c0e8cadb7ad28b309d8eab056f77c60996e",
+  "schemaVersion": 1,
+  "updatedAt": 1789729434816
+}

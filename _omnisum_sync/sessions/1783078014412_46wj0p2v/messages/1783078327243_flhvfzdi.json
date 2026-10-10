@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783078327244,
+  "entityType": "message",
+  "id": "1783078327243_flhvfzdi",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AI Native组织三层系统\n\n**评级**: A (71.5分)  |  **深度阅读**: 可选  |  **建议操作**: 精读\n\n**主类别**: AI组织与工作流\n**次类别**: Agent系统设计, 组织知识管理\n**标签**: #AI Native #Agent #Context Layer #Skill Chain #组织转型\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇框架清晰、方法论价值较高的AI组织转型摘要，但证据主要来自转述和演示，验证强度有限。\n**核心高价值点**: AI Native的核心不是使用AI工具，而是建立由人、Agent和Context Layer协同运转的组织系统。\n\n### 摘要\n文章总结了一场关于AI Native组织的深度对谈，提出人、Agent、上下文三层系统：人聚焦战略与判断，Agent通过目标、技能、工具、上下文实现自治，Context Layer成为组织记忆与护城河。\n\n### 知识要点\n- AI Native组织由人、Agent、上下文三层构成，缺一不可\n- Agent自治需要Clear Goal、Skills、Tools、Context四个要素\n- Skill Chain可将多个技能串成playbook，用QA机制降低幻觉风险\n- Context Layer不是普通资料库，而是可采集、筛选、存储、执行、体验回流的组织记忆系统\n- Experience到Capture的回流环节需要人工治理，否则错误上下文会污染系统\n\n### 行动项\n- 梳理一个高频业务流程，拆解为目标、技能、工具和上下文四部分\n- 为关键Agent工作流建立Eval标准和QA Skill Chain\n- 搭建一个轻量级Context Brain，用Markdown或知识库沉淀决策、客户记录和历史方案\n- 优先选择销售、提案、内容等高频场景验证AI Native工作流闭环\n\n### 存档判定\n归档: 是 — 原因: 文章提炼了AI Native组织的人、Agent、上下文三层系统，并提供可复用的Agent自治与Context Layer建设思路\n删除: 否\n留存决策: 长期保留，适合作为AI组织化落地与Agent工作流设计的框架参考",
+    "role": "assistant",
+    "timestamp": 1783078327244,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:f34be275bdbc809a5bad4731169667f62e15fdb80f501bb3460db7a0362c827e",
+  "refs": {
+    "sessionId": "1783078014412_46wj0p2v"
+  },
+  "revisionId": "sha256:0047ffaad121f6637e758102b0a2122ce4166750df1309d895aba83410ced5ef",
+  "schemaVersion": 1,
+  "updatedAt": 1783078327244
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1791593409628,
+  "entityType": "session",
+  "id": "1791593409628_nlh99u8s",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "参考案例，将订单与CRM核对、发票草稿生成列为自动化候选，并保留人工审核环节。",
+      "盘点合同保险要求提取、NDA归档和员工设备采购等重复任务，筛选与自身业务相符的场景。"
+    ],
+    "archiveReason": "回复提供了订单核对、发票草稿、合同信息提取及员工设备采购等具体场景，可作为企业自动化需求清单的参考。",
+    "classifiedAt": 1791594582641,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI企业后台自动化实践与夸大预期",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "案例将订单核对、发票草稿生成和已发送发票记录更新拆成不同的定时任务，展示了按业务环节拆分自动化的思路。",
+      "合同中的保险要求、邮件中的NDA等非结构化内容，可作为信息提取并写入CRM或客户档案的候选场景。",
+      "作者描述的发票流程保留人工审核，设备采购任务则仍需提醒归档收据，说明其案例尚不能等同于完整的无人值守流程。"
+    ],
+    "oneHighValuePoint": "将已完成订单与CRM记录核对，再生成供人工审核的发票草稿，是文中最清晰、值得进一步验证的企业后台自动化场景。",
+    "oneLineReview": "具体业务任务具有参考价值，但成本降幅与社会变革预测主要依赖个人陈述，不能据此判断实际效果或行业趋势。",
+    "primaryCategory": "AI业务自动化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性保留具体业务场景，不将宏观预测作为决策依据",
+    "secondaryCategories": [
+      "企业运营",
+      "社区讨论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者以高频使用AI的个人经历宣称技术正在急剧加速，并预测广泛就业冲击。面对质疑，他列举订单核对、发票草稿、合同保险要求提取和员工设备采购等自动化任务，声称支持成本下降80%，但未提供验证材料或实现细节。",
+    "tags": [
+      "AI Agent",
+      "CRM自动化",
+      "财务流程",
+      "员工入离职",
+      "人工审核"
+    ],
+    "title": "Sunnyvale: I work in the AI industry",
+    "totalScore": 57,
+    "url": "https://x.com/SunnyvaleSBay/status/2108029569718800526"
+  },
+  "payloadHash": "sha256:f70a2234cc4f45c03c86b7ae22e8dfa6a2725b4684904f5a2733f0b5a26836b5",
+  "refs": {},
+  "revisionId": "sha256:4db0364325a4555d876c967f8ff86bebea8c3db30c95abaca67c4e2d1072ce51",
+  "schemaVersion": 1,
+  "updatedAt": 1791594582691
+}

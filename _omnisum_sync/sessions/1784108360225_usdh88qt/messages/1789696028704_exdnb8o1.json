@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696028704,
+  "entityType": "message",
+  "id": "1789696028704_exdnb8o1",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nPrivateGPT 是一个开源的本地 AI **应用 API 层**：它不负责运行大模型，而是连接 Ollama、vLLM 等推理服务，为开发者提供文档问答、检索引用、工具调用、数据库查询和 MCP 等现成功能。\n\n## 关键内容\n\n- **定位不是聊天软件或模型运行器**：Ollama、llama.cpp 等负责运行模型，PrivateGPT 在其上提供统一后端 API；自带网页界面主要用于测试和演示。\n- **功能较完整**：支持流式对话、文件与 PDF 导入、带引用的 RAG（检索后生成答案）、网页搜索、代码执行、自定义工具、MCP、数据库及 CSV 分析等。\n- **兼容方式需分清**：底层连接实现指定接口的 OpenAI 兼容推理服务器，对外 API 则主要参照 Claude API；视觉能力、结构化输出等仍取决于所用模型。\n- 项目方称其已用于 Zylon 企业平台；但开源版不包含完整的企业部署、权限治理、审计、监控及规模化运维能力。\n\n## 通俗解读\n\n它像是“本地模型与业务应用之间的中间件”：模型相当于发动机，PrivateGPT 提供文档库、工具、数据库连接和标准接口，但不会替你提供发动机，也不是完整成品车。\n\n## 是否值得细读\n\n**适合细读**：准备开发私有化 AI 应用、希望避免从零搭建 RAG 和工具调用后端的开发者。  \n**可略读**：只想直接使用本地聊天工具，或需要开箱即用企业平台的人；后者还需自行补齐部署与治理能力，或考虑其商业产品。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696028704,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:58b42fb2b0bda1d8c6efe8fc38171a136fb04f8ec4e0dfe82be2f81abfecff6c",
+  "refs": {
+    "sessionId": "1784108360225_usdh88qt"
+  },
+  "revisionId": "sha256:83ba731a053ee0cdb1fcc428ca01a81bd1878cf3f2e148faa6eec167f4848ce7",
+  "schemaVersion": 1,
+  "updatedAt": 1789696028704
+}

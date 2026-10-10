@@ -1,0 +1,76 @@
+{
+  "createdAt": 1789893594118,
+  "entityType": "session",
+  "id": "1789893594118_ekmt8nm0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个已有的重复路由或分类节点，建立固定选项评分原型，与现有生成路径比较正确性、延迟和每个完成任务的总成本。",
+      "使用工作流中的标注样本评估概率与错误率，调整自动执行和审核阈值，并测试无匹配、模糊输入及错误路由情况。",
+      "为接入后的Agent增加动态候选更新、操作与支出上限、进度保存、重复处理防护及独立完成检查，将发布等动作保留在审批之后。"
+    ],
+    "archiveReason": "包含决策与生成解耦、本地候选评分、概率校准及对比式数据整理等可复用知识，并提供部署步骤、代码和明确的适用边界。",
+    "classifiedAt": 1790768425930,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 6,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Jev类型化决策与本地实现",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "按输出需求分工：生成模型负责开放式文本，决策模型负责有限选项选择，代码负责执行、权限约束与完成核验；候选动作应随系统状态更新。",
+      "固定选项评分与结构化生成不同：前者直接读取候选标签分数，后者仍逐Token解码；评分需要验证标签分词，并为非穷尽选项加入无匹配或升级审核出口。",
+      "对比式数据整理通过只改变关键事实来翻转标签，并用证据移除检查排除答案泄漏；相关配对与同源样本应留在同一数据划分中。"
+    ],
+    "oneHighValuePoint": "当输出是预先定义的有限选项时，可读取单Token标签的logits并在候选集合内归一化，避免生成和解析答案文本；但所得概率不等于正确率，必须在实际任务数据上验证。",
+    "oneLineReview": "决策解耦与本地评分方法对Agent开发有直接价值，但内容重复较多，宣传数字、有限基准和原型效果不宜直接外推。",
+    "primaryCategory": "AI Agent 开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读技术实现与评估部分，选择性存档；宣传数据仅作为待验证线索",
+    "secondaryCategories": [
+      "模型推理优化",
+      "模型训练与评估"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/0xCodila/status/2100984487802708306",
+      "https://github.com/bespokelabsai/nimble",
+      "https://x.com/_avichawla/status/2101563610644496464",
+      "https://github.com/TheoLeeCJ/SemIf",
+      "https://www.youtube.com/watch?v=Nq_lu5QT-fI"
+    ],
+    "summaryBrief": "文章汇集Jev接入教程、Nimble与SemIf项目文档、本地评分实现及视频案例，介绍将有限选项决策从文本生成中拆出的方法，并讨论任务路由、共享上下文、概率校准、训练数据构造和性能评估边界。",
+    "tags": [
+      "类型化决策",
+      "单Token评分",
+      "Agent任务路由",
+      "概率校准",
+      "对比式数据整理"
+    ],
+    "title": "Jev开启类型化决策模型新范式",
+    "totalScore": 79,
+    "url": "omnisun://digest/1789893594118"
+  },
+  "payloadHash": "sha256:3c716233cb54ce23b78e646a2485632ae9ce7cd38f29dacef7f45e37937b826d",
+  "refs": {},
+  "revisionId": "sha256:17e7cdff179d9f26855bc9ab488b256c58ba7b924b52801e543717cee019aa5f",
+  "schemaVersion": 1,
+  "updatedAt": 1790770647045
+}

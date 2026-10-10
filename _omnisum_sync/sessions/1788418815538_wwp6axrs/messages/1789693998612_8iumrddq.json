@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693998610,
+  "entityType": "message",
+  "id": "1789693998612_8iumrddq",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n随着模型能力增强，AI 编程的重点已从“堆提示词和流程约束”转向“轻量上下文、任务隔离与严格审查”，而真正的瓶颈正从写代码转移到人的方案判断和 Review。\n\n## 关键内容\n\n- **约束应随模型能力调整。** 作者早期用重型流程、TDD 和多角色审查防止 AI 跑偏；如今认为大量指令会稀释注意力。据其引用的案例，同一模型搭配不同 Harness（承载和调度模型的工具框架），质量接近，但成本最多可差约两倍。\n- **复杂任务采用分阶段 SOP。** 先通过追问明确需求，再生成并人工审核 spec；随后把任务拆成可独立交付的 ticket，让多个 Agent 在 Git worktree 中隔离开发，最后经过模型交叉审查和人工代码审查。\n- **小改动可以简化流程，但不能取消纪律。** 边界清楚的局部修改无需走完整链路，不过动手前仍应提交方案、获得授权，完成后必须测试。\n- **人工 Review 成为新瓶颈。** 多个 Agent 可以低成本并行写代码，但人难以同时审查大量结果。作者用不同厂商模型交叉审查来降低遗漏，最终取舍仍需人决定。\n\n## 通俗解读\n\n文章并非主张“少管 AI”，而是反对把过时、冗长的规则一股脑塞给模型：复杂任务需要明确边界和验收关卡，简单任务则应轻装上阵。工具会快速变化，但延迟、成本、一致性、可用性等工程取舍无法交给 AI 自动决定。\n\n**是否值得细读：** 值得 AI 编程实践者参考其工作流和工具组合；但主要是作者经验及转述案例，不应视为普适结论。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693998610,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:baaa3291ea2943f059059c0b1eab83e0e9c6282b907cf4e9df198c8d6f18a8f1",
+  "refs": {
+    "sessionId": "1788418815538_wwp6axrs"
+  },
+  "revisionId": "sha256:9614595508396ebc455c9f12624476257b06aa5514b815e39e7cca42f2804c6c",
+  "schemaVersion": 1,
+  "updatedAt": 1789693998610
+}

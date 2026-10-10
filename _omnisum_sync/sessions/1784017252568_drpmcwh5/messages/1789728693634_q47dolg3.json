@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728693634,
+  "entityType": "message",
+  "id": "1789728693634_q47dolg3",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Orca：把多个编程智能体整合进同一套开发工作流\n\nOrca 是一款面向高效率开发者的开源 AI 编排器。它并非新的编程模型，而是统一管理 Claude Code、Codex、OpenCode 等 CLI 智能体，让多个智能体并行执行任务，并把开发、评审和远程控制集中在一个界面中。\n\n## 用隔离环境并行探索多个方案\n\n同一个提示可同时分发给最多五个智能体，每个智能体运行在独立的 Git worktree 中，避免文件相互干扰。开发者可以比较不同结果、选择最佳实现并合并代码。这种模式把 AI 编程从“单次对话”扩展为多方案并行试验。\n\n## 覆盖从编码到评审的完整链路\n\nOrca 将多种开发工具整合到桌面应用中：\n\n- 支持终端分屏、持久化滚动记录和 VS Code 编辑器；\n- 可直接浏览 PR、Issue 和项目看板，并在任意 diff 行评论后反馈给智能体；\n- “设计模式”能从真实 Chromium 页面提取元素的 HTML、CSS 和截图；\n- 支持远程 SSH worktree、自动重连及端口转发；\n- 可让智能体操作桌面 UI，并通过 CLI 将创建 worktree、截图、点击等流程脚本化。\n\n## 手机端让智能体任务变为异步协作\n\n配套 iOS 与 Android 应用可监控任务状态，在智能体完成或需要处理时发送通知，并允许用户远程追加指令。这意味着长时间运行的 AI 任务不再要求开发者持续守在电脑前。\n\n## 核心价值是兼容和工作流整合\n\nOrca 宣称适配任何能在终端运行的 CLI 智能体，并提供账号切换、Claude/Codex 用量追踪、文件拖拽和仓库内容预览。它已支持 macOS、Windows、Linux，采用 MIT 许可证开源。其产品意义在于降低多智能体协作的管理成本，而非绑定某个模型或重新构建开发工具链。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728693634,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ea1e28647e6806bab55b13f27cfab93c73f20f46c9b58431842dd218a81d35dd",
+  "refs": {
+    "sessionId": "1784017252568_drpmcwh5"
+  },
+  "revisionId": "sha256:c59780251748ff146bcf14a55a866d8982da0434998bb2fc741887b26a2cd37d",
+  "schemaVersion": 1,
+  "updatedAt": 1789728693634
+}

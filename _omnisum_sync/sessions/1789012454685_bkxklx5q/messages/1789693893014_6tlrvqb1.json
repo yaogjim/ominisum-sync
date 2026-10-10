@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693893014,
+  "entityType": "message",
+  "id": "1789693893014_6tlrvqb1",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nCAE Agent Hub 是一个开源工具集合，让 Codex、Cursor、Claude 等 AI 客户端通过 MCP 和工作流指令连接真实工程仿真软件，完成建模、求解、后处理与结果查看，而不只是生成示例代码。\n\n## 关键内容\n\n- **覆盖多种 CAE 工具**：仓库标为 Active 的连接器包括 Abaqus、Fluent、Workbench Mechanical、HFSS、HyperWorks、LAMMPS、OVITO、CalculiX，以及 FreeCAD＋Elmer FEM＋ParaView 工作流。\n- **两类核心能力分工明确**：MCP Server 负责让 AI 实时调用本地仿真软件；Skill 提供可复用的操作流程，如 Abaqus 静力、模态、热分析、接触、疲劳和优化等。\n- **强调真实执行与可验证结果**：AI 可提交任务、监控状态、读取结果并导出轻量数据；配套浏览器 Viewer 可在不打开求解器时查看 `result_mesh.json`。\n- **仓库不提供求解器本身**：商业软件、许可证、私有路径及生成结果均不包含在源码中。使用者仍需自行安装相应 CAE 软件并配置环境；CalculiX 等开源方案例外。\n\n## 通俗解读\n\n它更像“AI 与仿真软件之间的转接器＋操作手册”，不是一套替代 Abaqus、ANSYS 的新求解器。README 主要是项目总览和安装入口，具体可用性仍取决于本地软件、许可证及各模块配置。\n\n**是否值得细读：**如果你想让 AI 自动操作现有 CAE 工具，值得继续查看对应 MCP/Skill 的子目录文档；若只想直接在线完成仿真、且没有本地求解器，这个项目并不能开箱即用。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693893014,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:281c4ff140cfe058afe5dad0cddc0fa669592316bd444643c032939fe8be0306",
+  "refs": {
+    "sessionId": "1789012454685_bkxklx5q"
+  },
+  "revisionId": "sha256:6b7e0de2f5e44ac84d8c73522f33d71a9be432992a1f9994625b6d7534acafb4",
+  "schemaVersion": 1,
+  "updatedAt": 1789693893014
+}

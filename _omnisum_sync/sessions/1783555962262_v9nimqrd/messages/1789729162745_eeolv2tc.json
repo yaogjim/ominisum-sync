@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729162743,
+  "entityType": "message",
+  "id": "1789729162745_eeolv2tc",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 开放工具让家电真正由用户掌控\n\n文章认为，Open Printer 等项目的价值不只在于降低耗材成本，而在于重新定义设备所有权：用户买下家电后，应能维修、更换部件、控制数据，并避免设备因厂商停服、固件或耗材政策而失效。这对搭建家庭私有 AI 和 Homelab 的技术用户尤其重要。\n\n## 家庭智能设备正在成为厂商控制的边缘节点\n\n许多家电表面属于用户，实际却是“黑盒”。以 Ring 摄像头为例，它采集门前的人、车辆和包裹等信息，再连接厂商的账号、云存储、AI 识别、订阅服务及法律请求流程。即使产品支持端到端加密或本地处理，核心问题仍是：家庭信息系统的边界节点，其数据、算法和使用权限在多大程度上由外部公司控制。\n\n## 维修权决定设备是否真正属于消费者\n\n“维修权”关注用户能否完整维护已购买的设备，以及厂商以知识产权或竞争优势为由限制维修，是否损害消费者权益。作者借“忒修斯之船”说明理想状态：设备所有部件都可替换，因此能够长期使用，而不是受制于停服、固件锁定或专用耗材。文中引用了美国 FTC 关于维修限制的报告作为参考。\n\n## 开源家电可能成为新的产品方向\n\nOpen Printer 是一款基于 Raspberry Pi Zero W 和 STM32 的开源紧凑型打印机，使用 HP 302 墨盒，计划通过 Crowd Supply 推广并公开源代码。它未必立刻解决成本问题，但代表了一条值得关注的路线：扫地机器人、摄像头、门锁、路由器乃至农机等设备，未来可能逐步走向可维修、可改造、可本地控制。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729162743,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bff4572864171ac7938f9d7ce13dc0a0fb42a2b6dd69d93e1f8d27c60ca944e6",
+  "refs": {
+    "sessionId": "1783555962262_v9nimqrd"
+  },
+  "revisionId": "sha256:211ba68cb5bdd34f005c3d7913ada3bf2f403eabe5006db7114411680205f892",
+  "schemaVersion": 1,
+  "updatedAt": 1789729162743
+}

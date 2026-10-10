@@ -1,0 +1,66 @@
+{
+  "createdAt": 1782991369154,
+  "entityType": "session",
+  "id": "1782991369154_487gzttg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如研究 IM 架构，可进一步查阅聊天系统本地存储、同步协议和索引设计资料。",
+      "无需精读原文，仅保留“不要低估聊天软件本地存储复杂度”这一结论即可。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783038812999,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "IM存储是否该用数据库",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量有限且回复区噪声较多，核心观点可用一句话提炼，无长期保留必要。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "IM 系统存储涉及文本、媒体、索引、未读状态、撤回和增量同步等多个维度。",
+      "简单文件追加加 grep 在局部场景可行，但难以覆盖复杂状态和查询需求。",
+      "事件日志可能解决部分状态追踪问题，但继续扩展容易接近重新实现数据库能力。"
+    ],
+    "oneHighValuePoint": "聊天系统的存储设计不能只看文本落盘，还必须同时考虑同步、撤回、未读数和索引等状态维护问题。",
+    "oneLineReview": "一个有启发但过于碎片化的 IM 存储设计观点讨论。",
+    "primaryCategory": "软件工程",
+    "rating": "C",
+    "rejectReason": "内容只是社交媒体上的简短观点碰撞，缺少系统论证、数据和完整工程方案。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "系统设计",
+      "数据存储"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章围绕微信聊天记录是否应使用 SQLite 展开争论，指出 IM 存储不只是文本追加和 grep，还涉及未读数、增量同步、撤回、索引和事件日志等复杂工程问题。",
+    "tags": [
+      "IM",
+      "SQLite",
+      "工程架构",
+      "搜索索引",
+      "事件日志"
+    ],
+    "title": "Yifeng \"Evan\" Wang: 简直不像云风老师会说的话…… 没 DB 那未读数哪里维护呢",
+    "totalScore": 41.5,
+    "url": "https://x.com/ewind_dev/status/2071753059747655824"
+  },
+  "payloadHash": "sha256:4dff3042969c6adbe201357567b966bbaf39e4f25a85a1d0fd63cdbaaaf11428",
+  "refs": {},
+  "revisionId": "sha256:888edce71f19c871119ed5d1ffac017b1212528e20b700dd001448e545cfbab4",
+  "schemaVersion": 1,
+  "updatedAt": 1784801595990
+}

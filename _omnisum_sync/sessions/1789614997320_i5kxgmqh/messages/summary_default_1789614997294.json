@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789614997294,
+  "entityType": "message",
+  "id": "summary_default_1789614997294",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者认为，企业 AI 最稀缺、最赚钱的能力可能不是开发系统，而是把企业模糊的焦虑转化为可投资、可交付、可验收的真实需求。\n\n## 关键内容\n\n- 很多企业只有 “别人都做 AI，我也要做” 的冲动，却说不清负责人、业务指标、数据条件和验收标准，因此 Demo 容易，真正上线困难。\n- 随着模型和开发能力普及，瓶颈从 “能不能做” 变成 “该做什么”。咨询、培训和 FDE（深入客户现场的工程师）的价值，在于判断项目收益、风险及组织条件。\n- 作者主张把需求定义做成标准化框架：评估业务价值、数据准备度、错误成本、人工介入点和停止条件。企业一旦采用这套语言，服务商就可能获得持续的 “需求入口”。\n- 好的 AI 服务商应敢于砍掉不值得做的项目，而非追求签约率；作者进一步推测，未来赢家会融合教育、需求评级、技术尽调和交付能力。\n\n## 通俗解读\n\n这不是 “凭空制造需求”，而是把 “想搞 AI” 筛选、整理成值得花钱的项目。比如流程本身混乱、无人负责，即使 Agent 能做出来，也未必能产生价值。文章观点鲜明、框架完整，适合 AI 服务商和企业决策者细读；但它主要是商业判断，缺少数据与完整案例验证。文末热门回复内容被截断。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1789614997294,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bc790ec8cd99eacac89978bb850b6e42ba271f5df86d69a083203abc3f4cb696",
+  "refs": {
+    "sessionId": "1789614997320_i5kxgmqh"
+  },
+  "revisionId": "sha256:48f826958c0c9268bd245259fe244862b351f0c2d9011eb4515595a44df5a0c2",
+  "schemaVersion": 1,
+  "updatedAt": 1789614997294
+}

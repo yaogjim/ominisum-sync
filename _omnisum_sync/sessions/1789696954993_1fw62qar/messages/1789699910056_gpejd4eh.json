@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789699805449,
+  "entityType": "message",
+  "id": "1789699910056_gpejd4eh",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者建议用 TinyFish、ActionBook 等自动化搜索工具，集中收集竞品用户的真实差评，从中确定自家产品该突出什么卖点、优先改进哪些功能。\n\n## 关键内容\n\n- 搜索 Reddit、X、G2 等平台，整理用户对知名竞品的抱怨，例如功能难用、退订原因，以及在哪一步放弃使用。\n- 这些反馈可用于两类决策：一是提炼产品的 **价值主张（value proposition）**，即最该向用户强调的核心优势；二是确定下一步的产品迭代方向。\n- 作者认为，相比反复开内部会议，围绕真实用户痛点做改进更有效。但这只是作者基于陪跑项目得出的经验判断，原文没有提供具体效果数据。\n\n## 通俗解读\n\n重点不是简单抄竞品，而是从竞品“没解决好的问题”中找机会。比如大量用户都因某个流程复杂而退订，自家产品就可以优先简化该流程，并把“更容易上手”作为卖点。\n\n原文较短，未说明具体搜索、筛选和验证方法；所附热门回复大多讨论 Jev，与正文主题关系不大。**适合快速参考，不太值得为正文细读。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789699805449,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9574d8654e26bf7c88b83acdced8bd5698ffac04c642f36b718ef36055db73b4",
+  "refs": {
+    "sessionId": "1789696954993_1fw62qar"
+  },
+  "revisionId": "sha256:bbb83eb65f3f717e334a03d5c01c5fda649aa2c0e7a5fccaaf6dc8524b38f177",
+  "schemaVersion": 1,
+  "updatedAt": 1789699805449
+}

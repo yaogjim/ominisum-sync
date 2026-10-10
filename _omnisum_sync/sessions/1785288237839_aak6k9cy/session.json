@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785288237839,
+  "entityType": "session",
+  "id": "1785288237839_aak6k9cy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为生产慢查询建立EXPLAIN与BUFFERS分析流程，并检查估算行数和实际行数的偏差。",
+      "审计现有迁移，优先采用加法式和expand-contract方案，创建大表索引时使用CONCURRENTLY。",
+      "建立autovacuum、长事务、死元组、连接数和表膨胀监控，并针对高写入表单独调优。"
+    ],
+    "archiveReason": "涵盖查询、索引、迁移、连接池、autovacuum、分区和并发队列等高频生产问题，包含可复用的判断原则、SQL示例与排障工具。",
+    "classifiedAt": 1785402914393,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 9,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 9
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Postgres生产生存指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "hatchet.run",
+    "favicon": "data:image/svg+xml,%3csvg%20width='100'%20height='100'%20viewBox='0%200%20100%20100'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cstyle%3e%20path%20{%20fill:%20%2303071A;%20color:%20%2303071A;%20}%20@media%20(prefers-color-scheme:%20dark)%20{%20path%20{%20fill:%20%23B8D9FF;%20color:%20%23B8D9FF;%20}%20}%20%3c/style%3e%3cpath%20d='M51.5%2045L65%2015L90.8177%2040.8177C94.3818%2044.3818%2096.1639%2046.1639%2096.8316%2048.2188C97.4189%2050.0264%2097.4189%2051.9736%2096.8316%2053.7812C96.1639%2055.8361%2094.3818%2057.6182%2090.8177%2061.1823L65%2087H44L79.255%2049.0331C80.438%2047.7591%2081.0295%2047.1221%2081.0581%2046.5789C81.083%2046.1072%2080.8842%2045.6514%2080.5216%2045.3486C80.1041%2045%2079.2348%2045%2077.4963%2045H51.5Z'%20fill='currentColor'/%3e%3cpath%20d='M48.5%2057L35%2087L9.18233%2061.1823C5.61818%2057.6182%203.83611%2055.8361%203.16841%2053.7812C2.58109%2051.9736%202.58109%2050.0264%203.16841%2048.2188C3.83611%2046.1639%205.61819%2044.3818%209.18234%2040.8177L35%2015H56L20.745%2052.9669C19.562%2054.2409%2018.9705%2054.8779%2018.9419%2055.4211C18.917%2055.8928%2019.1158%2056.3486%2019.4784%2056.6514C19.8959%2057%2020.7652%2057%2022.5037%2057H48.5Z'%20fill='currentColor'%20fill-opacity='0.7'/%3e%3c/svg%3e",
+    "knowledgePoints": [
+      "查询优化应结合复合索引顺序、ORDER BY方向、表统计信息和EXPLAIN ANALYZE，而不是机械地增加索引。",
+      "高写入系统必须监控autovacuum、死元组和长事务，否则可能出现表膨胀、统计信息失真乃至事务ID回卷停机。",
+      "FOR UPDATE SKIP LOCKED可让多个工作实例并发领取不同任务，适合实现数据库任务队列和跨实例租约分配。"
+    ],
+    "oneHighValuePoint": "大型表在线迁移可用触发器同步新增写入，在事务外分批回填历史数据，并以主键唯一约束消除重复，从而避免超长事务阻碍autovacuum。",
+    "oneLineReview": "一份覆盖面广、操作性强的Postgres生产指南，主要不足是部分性能结论依赖作者经验，缺少更系统的数据验证和适用边界。",
+    "primaryCategory": "数据库工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并长期存档，作为Postgres生产运维与扩展的实践手册",
+    "secondaryCategories": [
+      "后端系统开发",
+      "性能优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结两年Postgres生产实践，系统讲解模式设计、索引与查询优化、无阻塞迁移、连接管理、执行计划、批量写入、autovacuum、表膨胀、分区及并发任务队列。",
+    "tags": [
+      "PostgreSQL",
+      "查询优化",
+      "数据库迁移",
+      "自动清理",
+      "并发控制"
+    ],
+    "title": "Hatchet",
+    "totalScore": 84,
+    "url": "https://hatchet.run/blog/postgres-survival-guide"
+  },
+  "payloadHash": "sha256:5ee6b340b958f9670dd65b9d7232409bf792d7fe95879107ab86be2dd382cd57",
+  "refs": {},
+  "revisionId": "sha256:0bbe6fd34d51543c069bf04e104012991d4836b24e0e81c2888ac38e604fd5dd",
+  "schemaVersion": 1,
+  "updatedAt": 1789694422630
+}

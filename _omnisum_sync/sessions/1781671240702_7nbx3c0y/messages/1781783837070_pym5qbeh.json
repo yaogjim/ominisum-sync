@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781783837071,
+  "entityType": "message",
+  "id": "1781783837070_pym5qbeh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Reasonix轻量代理架构规范\n\n**评级**: A (73.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI编程代理架构\n**次类别**: 软件架构, LLM工具系统, 插件化设计\n**标签**: #Coding Agent #MCP #Go #插件架构 #权限控制 #上下文压缩\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 9 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一份工程化程度较高的编程代理架构规范，适合研究轻量 Agent 框架设计，但缺少实证数据与实现细节验证。\n**核心高价值点**: 通过独立 planner/executor session 保持模型前缀缓存稳定，是兼顾双模型协作与 token 成本优化的有价值设计。\n\n### 摘要\n文章是 Reasonix 编程代理的架构规格与中文 README 摘要，系统描述了配置驱动、插件机制、MCP 接入、工具注册、权限沙盒、长上下文压缩、双模型规划执行、命令系统与分发策略。\n\n### 知识要点\n- 核心采用 interface-first 与 registry-based 设计，模型、工具和插件都通过配置或注册表解析，避免硬编码。\n- MCP 插件通过 stdio 或 HTTP JSON-RPC 接入，并适配为统一 Tool 接口，工具命名空间化以避免冲突。\n- 权限层将 allow、ask、deny 与只读工具、写入工具、bash 命令分离，支持细粒度审批与自动化执行。\n- 长会话通过低频 compaction 管理上下文窗口，并保留用户关键 turn、digest 与原始归档以降低信息漂移。\n- 双模型协作将规划器和执行器放在不同 session 中，避免共享上下文导致 prompt cache 失效。\n\n### 行动项\n- 提炼其 registry、plugin、permission、compaction 四个模块作为自研 Agent 架构参考。\n- 重点阅读 SPEC 中工具接口、MCP 适配、权限规则和上下文压缩部分。\n- 如正在构建编程代理，可对照其配置优先级、沙盒策略和命令系统设计检查自身方案。\n- 保留文档链接，后续结合源码验证 SPEC 与实际实现的一致性。\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的轻量编程代理工程规范，涵盖插件、权限、上下文管理、双模型协作、配置驱动等可复用架构设计。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1781783837071,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:9f9ca6ad18215a56b3fafaa3d90f4a8ad9cfbf5bbc7d8c2b8bd590cd1ea9907b",
+  "refs": {
+    "sessionId": "1781671240702_7nbx3c0y"
+  },
+  "revisionId": "sha256:2d8b5560ab3090ddc5a1842c1ac1532b13eb497a2071ae551718b316371fd19e",
+  "schemaVersion": 1,
+  "updatedAt": 1781783837071
+}

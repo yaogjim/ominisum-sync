@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784692687182,
+  "entityType": "session",
+  "id": "1784692687182_y646498r",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个重复性较高的业务流程，尝试将其拆解为代理的技能、上下文和工具需求。",
+      "为代理设置完成任务所需的最小权限、凭证、访问范围和支出限制。",
+      "在协作线程中加入跟进问题与人工审批节点，测试代理执行、修改和继续执行的流程。"
+    ],
+    "archiveReason": "文章虽主要是厂商产品发布说明，但包含代理身份、线程内审批、权限最小化和工作流嵌入等可复用设计要点。",
+    "classifiedAt": 1784693348310,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Slack中的企业代理工作流",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter-pip.3.ico",
+    "knowledgePoints": [
+      "专业代理可以通过持久指令、技能、上下文和权限来编码企业最佳实践。",
+      "为代理配置明确的名称、描述和图标，有助于降低调用门槛并明确其工作角色。",
+      "在线程内进行追问和审批，可以把自动执行与人工判断连接起来。"
+    ],
+    "oneHighValuePoint": "将专用代理作为具名协作者嵌入原有 Slack 线程，并把上下文、审批和结果留在同一工作流中。",
+    "oneLineReview": "文章提供了企业代理嵌入协作工具的产品思路，但主要是厂商发布说明，证据和落地细节有限。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并保留，适合作为企业代理产品设计参考",
+    "secondaryCategories": [
+      "产品设计与开发",
+      "商业系统构建"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Fleet 将企业专用代理直接部署到 Slack，使团队在原有对话线程中调用代理、补充上下文、请求审批并接收结果。重点涉及代理构建、身份、权限控制、凭证与支出限制，以及从通用聊天转向流程化专业代理。",
+    "tags": [
+      "企业代理",
+      "Slack工作流",
+      "权限控制",
+      "人机协作",
+      "Agent产品化"
+    ],
+    "title": "工作的未来将会发生在你已经工作的地方",
+    "totalScore": 67,
+    "url": "https://x.com/caspar_br/status/2077451214300598557"
+  },
+  "payloadHash": "sha256:b24c08ce95b475e55eb026d5a76d8fc53f237655ac868f7a3954d7e1039dba07",
+  "refs": {},
+  "revisionId": "sha256:b0933679cd27f62359a616458619cf7075fc9512ab183e0700d17232424a546b",
+  "schemaVersion": 1,
+  "updatedAt": 1789728868632
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695811075,
+  "entityType": "message",
+  "id": "1789695811075_s6zugq3d",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nMarkItDown 是微软开源的 Python 工具，可把 PDF、Office、图片、音频等内容转成保留标题、列表和表格结构的 Markdown，主要供大模型和文本分析使用，而非追求原样排版。\n\n## 关键内容\n\n- **格式覆盖广**：支持 PDF、Word、Excel、PowerPoint、HTML、CSV/JSON/XML、ZIP、图片、音频、YouTube、EPUB 等；要求 Python 3.10 以上，可通过命令行或 Python API 调用。\n- **按需安装能力**：可只安装 PDF、DOCX 等对应依赖；第三方插件默认关闭。OCR 插件能借助视觉大模型识别文档内图片，但未提供模型客户端时会跳过 OCR。\n- **有本地与云端两条路线**：内置转换器可离线运行；Azure Document Intelligence 或 Content Understanding 对扫描件、复杂表格和音视频处理更强，还可提取发票金额等结构化字段，但每次调用可能收费。\n- **需注意安全**：通用 `convert()` 能读取本地文件和远程地址，不应直接接收不可信输入；服务端最好限制路径、网址和网络目标，或使用权限更窄的转换接口。\n\n## 通俗解读\n\n它更像“给 AI 整理文档内容”，而不是“把 PDF 完美复刻成网页”。如果你要搭建知识库、搜索或大模型问答，值得细读安装方式、格式支持和安全说明；若目标是高保真排版转换，则不太适合。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695811075,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:80f72358b3def39f39bebc7ae92cd7e61e2891c599f3987148514f62c7077ba8",
+  "refs": {
+    "sessionId": "1783418418597_d5bnd5c9"
+  },
+  "revisionId": "sha256:69ce61e0d9b49bba3c7822ce8f70d90caa53c94ad7ad5986fe7970e4cc09a244",
+  "schemaVersion": 1,
+  "updatedAt": 1789695811075
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729303983,
+  "entityType": "message",
+  "id": "1789729303983_86t7rgb7",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Claude Code 的高产关键不是提示词，而是持续验证的工作流\n\nClaude Code 负责人 Boris Cherny 认为，资深工程师效率更高，主要不是因为模型更聪明或掌握“神奇提示词”，而是建立了自动执行、验证和沉淀经验的循环，让代理持续工作到满足明确标准。\n\n## 用停止钩子把“完成”变成可验证条件\n\n可配置停止钩子（stop hook）：每次模型准备结束任务时，自动检查测试和代码规范检查（lint）。若未通过，就让模型继续修复，直到全部达标。相比依赖模型自行判断“做完了”，这种机制以确定性规则控制退出，配置成本仅需几行。\n\n## 用独立子代理交叉审查重大改动\n\n对于重要变更，Cherny 的团队会启动多个子代理，从不同角度检查问题：核对 `claude.md` 规范、梳理 Git 历史、追踪漏洞，并安排多个代理专门排除误报。全新上下文中的批评者不受开发过程影响，更容易发现主代理已经提到、却没有真正解决的问题。\n\n## 把错误写入项目记忆，避免重复踩坑\n\n发现错误后，可以要求 Claude 将经验补充进 `claude.md`。这样修正不会随当前会话结束而消失，而会成为后续任务的长期约束。\n\n帖子将这类方法概括为“四个循环”，但所给内容未完整展开全部类型。其核心意义是：AI 编程的产出差距更多来自工程化流程——明确验收、自动反馈、独立复核和持续记忆——而非单次提示技巧；代价则是更多代理调用可能带来额外额度和成本。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729303983,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4afbc74ad28f28b3667898c970d706fa749aae9b594ffc9760b0a47957adb2f1",
+  "refs": {
+    "sessionId": "1783080030885_zyd2dpgl"
+  },
+  "revisionId": "sha256:3239e85344db1a43df9498702a0a310a209a13d9f41f9a676765e81e95ef5c74",
+  "schemaVersion": 1,
+  "updatedAt": 1789729303983
+}

@@ -1,0 +1,15 @@
+{
+  "createdAt": 1789703697229,
+  "entityType": "session-content",
+  "id": "1789703697229_tmhjs507",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>响马</strong></header><div class=\"tw-body\">e2e 不要用 agent 做啊，用 nodejs+playwright 做，测试稳定，速度快，还不花 token。</div><blockquote class=\"tw-quote\"><strong>@supezen</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3\">我也差不多这么写的，另外还有不要主动 e2e 测试（也是浪费token的大坑）。 x.com/meetqy/status/…</span></p><p><a class=\"tw-quote-link\" href=\"https://x.com/supezen/status/2099052195912298904\">引用推文原文</a></p></blockquote></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@GlowJames 追光🐬</strong> <span class=\"tw-eng\">♥ 144 · 💬 5</span><p>这条帖子说的不是「让 Agent 自己点浏览器做 E2E」，而是反过来：**Agent 只负责写可重复跑的 Node.js + Playwright 脚本，真正执行测试交给 Playwright，不要让 Agent 用浏览器工具/MCP 一轮轮点页面。**<br><br>核心对比很简单：<br><br>- Agent 自己测：看截图 → 思考 → 点一下 → 再看截图，token 贵、慢、不稳定，测完也留不下资产<br>- Playwright 测：写一次脚本，`npx playwright test` 几秒跑完，稳定、可回归、几乎不花 token<br><br>下面是可以落地的做法。<br><br>## 1. 在项目里先把 Playwright 装好<br><br>```bash<br>npm init playwright@latest<br># 或<br>pnpm create playwright<br>```<br><br>常见结构：<br><br>```text<br>tests/<br>  auth.spec.ts<br>  checkout.spec.ts<br>playwright.config.ts<br>```<br><br>`playwright.config.ts` 里让它自己起本地服务，例如：<br><br>```ts<br>i...</p></div></div>",
+    "pageContent": "响马: e2e 不要用 agent 做啊，用 nodejs+playwright 做，测试稳定，速度快，还不花 token。\n引用推文 (@supezen):\n我也差不多这么写的，另外还有不要主动 e2e 测试（也是浪费token的大坑）。 x.com/meetqy/status/…\n[引用推文原文](https://x.com/supezen/status/2099052195912298904)\n---\n热门回复 (共 1 条):\n@GlowJames 追光🐬 (♥ 144 · 💬 5):\n这条帖子说的不是「让 Agent 自己点浏览器做 E2E」，而是反过来：**Agent 只负责写可重复跑的 Node.js + Playwright 脚本，真正执行测试交给 Playwright，不要让 Agent 用浏览器工具/MCP 一轮轮点页面。**\n\n核心对比很简单：\n\n- Agent 自己测：看截图 → 思考 → 点一下 → 再看截图，token 贵、慢、不稳定，测完也留不下资产\n- Playwright 测：写一次脚本，`npx playwright test` 几秒跑完，稳定、可回归、几乎不花 token\n\n下面是可以落地的做法。\n\n## 1. 在项目里先把 Playwright 装好\n\n```bash\nnpm init playwright@latest\n# 或\npnpm create playwright\n```\n\n常见结构：\n\n```text\ntests/\n  auth.spec.ts\n  checkout.spec.ts\nplaywright.config.ts\n```\n\n`playwright.config.ts` 里让它自己起本地服务，例如：\n\n```ts\ni...\n"
+  },
+  "payloadHash": "sha256:7e6f6770ba798d2ed670943e222527257fa490abc126aed5634a79753d934162",
+  "refs": {},
+  "revisionId": "sha256:a4dd32f0602cc3a3d3e9c1ac8bcfd13c2dd0a2eedecf355d73f341c1049bfd29",
+  "schemaVersion": 1,
+  "updatedAt": 1789727579224
+}

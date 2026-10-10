@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727408357,
+  "entityType": "message",
+  "id": "1789727408357_xnh8dht0",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# ToB Agent 的核心不是“好用的软件”，而是无感自动化\n\n作者转向 ToB，是因为企业客户通常不在意 Agent 产品是否精致、交互是否优雅，甚至不希望员工再学习或使用一套新软件。他们真正关心的是：能否直接嵌入现有业务，把工作流自动化，并带来确定的效率提升或成本下降。\n\n## ToC 的精细体验，未必能转化为大众需求\n\n作者认为，许多 ToC Agent 反复打磨界面和使用细节，主要吸引的是热衷尝试、把玩软件的少数爱好者。普通用户是否有持续使用和付费意愿，仍存在疑问。相比之下，企业购买的重点更接近可量化的 ROI，而非新鲜感或陪伴感。\n\n## AI 创业需要深入真实行业流程\n\n引用观点进一步指出，AI 原生创业者应亲自进入各行业的实际工作，而不是简单组合 Git、Notion 等软件工程工具，套用到其他领域。大量非知识工作仍未完成信息化，其中可能存在更大的自动化空间。\n\n## ToB 机会更明确，但落地难度也更高\n\n评论补充了两类风险：一是企业 Agent 涉及目标漂移、上游数据污染、权限控制、错误传播和失败补偿等复杂问题；二是国内 ToB 还可能受政企采购与关系网络影响。换言之，ToB 的价值标准更清晰，但技术与商业交付远比做出一个可演示的 Agent 困难。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727408357,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5b20469469144c20754925f73408e864d6e3d2aefe08de5ab6d555b2c4f0aa30",
+  "refs": {
+    "sessionId": "1789723476724_xgehpech"
+  },
+  "revisionId": "sha256:e338ee616f1d39856aaef360ff6b9dd5d87908a983e68147f8d55109e7007057",
+  "schemaVersion": 1,
+  "updatedAt": 1789727408357
+}

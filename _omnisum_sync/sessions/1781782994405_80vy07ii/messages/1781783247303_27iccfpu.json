@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781783247304,
+  "entityType": "message",
+  "id": "1781783247303_27iccfpu",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Ponytail极简AI编程规则\n\n**评级**: A (75分)  |  **深度阅读**: 可选  |  **建议操作**: 精读\n\n**主类别**: AI编程工具\n**次类别**: 提示词工程, 软件工程方法论\n**标签**: #AI Agent #代码简化 #YAGNI #开发效率 #Claude Code\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 这是一个实用的AI编程规则集，核心价值在于把YAGNI和最小实现原则固化进Agent工作流。\n**核心高价值点**: 其六级决策梯：先判断是否需要存在，再优先使用标准库、原生能力、已有依赖，最后才写最小代码。\n\n### 摘要\n文章介绍 GitHub 项目 Ponytail，通过给AI编程助手注入“少写代码、优先复用标准库和平台能力”的规则，减少过度工程，并提供多种AI工具的安装方式、命令和基准测试结果。\n\n### 知识要点\n- AI编程Agent容易生成过多代码，需通过规则约束其优先复用现有能力\n- Ponytail支持Claude Code、Codex、Copilot、Gemini、OpenCode等多个Agent环境\n- 项目提供/ponytail-review、/ponytail-audit等命令，用于审查过度工程和技术债\n- 基准测试声称在部分Claude模型上可减少代码量、成本和延迟，但结果依赖模型和提示词场景\n\n### 行动项\n- 将其六级决策梯提炼进自己的AI编程提示词或AGENTS.md\n- 在一个小型项目中安装并测试/ponytail-review，验证是否能减少无必要代码\n- 对比未启用和启用规则时AI生成代码的可维护性、正确性和实际token成本\n\n### 存档判定\n归档: 是 — 原因: 包含可直接复用的AI编程规则、安装方式和反过度工程方法论，适合作为AI辅助编码配置参考\n删除: 否\n留存决策: 短期实践验证后决定是否长期保留",
+    "role": "assistant",
+    "timestamp": 1781783247304,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:7215fb78dc0ae802ce741f9a9696e16bb69d02faebf4a5a323dfcba7001fabc9",
+  "refs": {
+    "sessionId": "1781782994405_80vy07ii"
+  },
+  "revisionId": "sha256:f0c315b0f9c1d231a854ac5baad12e150efc8b9989a673d21b3af0e0ce916222",
+  "schemaVersion": 1,
+  "updatedAt": 1781783247304
+}

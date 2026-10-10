@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694371033,
+  "entityType": "message",
+  "id": "1789694371033_7g4dj2cb",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是《The Rust on ESP Book》的前言：它面向想用 Rust 开发 Espressif 芯片的初学者，介绍学习目标、适用人群，以及生态仍在快速变化这一重要风险。\n\n## 关键内容\n\n- 本书将讲解 Espressif 嵌入式 Rust 的软件栈、项目生成工具和基本开发流程，目标是帮助读者入门，而非覆盖全部高级内容。\n- 读者需要具备 Rust 基础，但不要求有嵌入式开发经验；底层概念会在后续逐步引入。\n- 已稳定模块遵循语义化版本控制，通常不会随意出现破坏性变更；但 `esp-hal` 部分组件及某些驱动仍属 unstable，简单执行 `cargo update` 就可能导致项目无法构建。\n- 官方提供迁移指南、补充学习资料，以及 Matrix、GitHub Discussions 和问题跟踪器等求助与反馈渠道。\n\n## 通俗解读\n\n最需注意的是：**“能用”不等于“接口稳定”**。如果项目依赖 unstable 组件，升级前应锁定并检查依赖版本，阅读迁移说明。本文只是全书前言，适合快速浏览以确认学习对象和风险；若已决定上手 ESP Rust，无须细读，直接进入后续实操章节即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694371033,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:26b030ee7ff500555a65d6a53de3b67f136bdc75a29c5458e574589fa9d8775d",
+  "refs": {
+    "sessionId": "1785384721924_1i3l1o75"
+  },
+  "revisionId": "sha256:62f2d4cffa5425519d7b5a72c5af86de1820f61e36d1ba4c6ac242247d19b785",
+  "schemaVersion": 1,
+  "updatedAt": 1789694371033
+}

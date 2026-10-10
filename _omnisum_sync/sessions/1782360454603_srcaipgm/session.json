@@ -1,0 +1,67 @@
+{
+  "createdAt": 1782360454603,
+  "entityType": "session",
+  "id": "1782360454603_srcaipgm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "打开 GitHub 项目查看部署文档和实际代码结构。",
+      "评估该方案是否适合自己的轻量级 RAG 或编码代理知识库场景。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782361896991,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "边缘RAG知识库部署方案",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Cloudflare Workers 可结合 WASM 库在边缘侧完成文件解析与分块处理。",
+      "Qdrant 可用于向量存储，并支持直接进行嵌入生成。",
+      "Durable Object 可作为边缘环境中的文件内容持久化组件。",
+      "通过 MCP stdio 连接可将知识库能力接入编码代理。"
+    ],
+    "oneHighValuePoint": "将文件解析、分块、向量嵌入、持久化和 MCP 接入整合到 Cloudflare Worker 边缘环境中。",
+    "oneLineReview": "适合作为技术方案线索浏览，但不足以作为深入学习资料。",
+    "primaryCategory": "AI应用开发",
+    "rating": "C",
+    "rejectReason": "内容主要是项目宣传和技术栈罗列，缺少实现细节、架构图、性能数据和踩坑经验，方法论价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "边缘计算",
+      "RAG知识库"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个基于 Cloudflare Worker、Qdrant、LlamaIndex LiteParse、ChonkieAI 和 Durable Object 的边缘知识库/MCP方案，可进行文件解析、分块、嵌入、检索和 grep 搜索，并提供 GitHub 项目链接。",
+    "tags": [
+      "Cloudflare Workers",
+      "Qdrant",
+      "MCP",
+      "Durable Object",
+      "WASM"
+    ],
+    "title": "x.com/itsclelia/status/2069874064634839482",
+    "totalScore": 52,
+    "url": "https://x.com/itsclelia/status/2069874064634839482"
+  },
+  "payloadHash": "sha256:d643984666da708e6b9636d5da7d0981bc64aec3fcb37213d47a492628d0fded",
+  "refs": {},
+  "revisionId": "sha256:524ac401bd533d1612902fe16ce17004ccb2e15694f8dbb9b00d8a7e5d690e24",
+  "schemaVersion": 1,
+  "updatedAt": 1782361897353
+}

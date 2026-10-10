@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785483983027,
+  "entityType": "session",
+  "id": "1785483983027_qh0n0o1s",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为现有Agent项目选择一个高频代表性变更，建立输入Token、输出Token、耗时和读取文件数的基线。",
+      "按提取重复逻辑、形成内部语言、划分职责模块的顺序逐步重构，并在每一步用全新Agent重复同一任务。",
+      "后续实验同时记录重构本身的Token成本，并通过多任务、多次运行和更复杂变更检验收益是否可重复。"
+    ],
+    "archiveReason": "提供了可复用的对照实验流程、完整数据和具体重构步骤，对Agent开发成本控制与代码架构治理有直接参考价值。",
+    "classifiedAt": 1785484260763,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "智能体代码重构的经济收益",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "martinfowler.com",
+    "favicon": "https://martinfowler.com/favicon.ico",
+    "knowledgePoints": [
+      "可用固定代表性变更、全新子智能体和逐步重构快照，测量每个重构阶段对Token、耗时和代码规模的影响。",
+      "该实验中，同一变更的输入Token从159564降至27360，下降83%，而输出Token基本未同步下降。",
+      "机械拆分文件未必节省上下文；只有按职责组织代码并提高相关文件的可定位性，才能稳定减少智能体读取量。"
+    ],
+    "oneHighValuePoint": "重构的核心收益并非减少总代码量，而是建立可识别的职责边界，使智能体只需读取完成任务所需的最小文件集合。",
+    "oneLineReview": "这是一个设计清晰且高度相关的探索性实验，证明合理模块边界可能显著降低智能体读取代码的成本，但尚不足以支持普遍化结论。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并长期保留，作为评估智能体代码重构收益的实验范例",
+    "secondaryCategories": [
+      "软件工程",
+      "开发成本优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以智能体生成的Rust应用为对象，逐步重构超大数据访问文件，并让全新子智能体重复同一功能变更。实验显示输入Token下降83%，但结论仍受单一样本、近似计量及未核算重构成本限制。",
+    "tags": [
+      "智能体编程",
+      "代码重构",
+      "Token成本",
+      "模块化设计",
+      "Rust"
+    ],
+    "title": "The Economic Benefit of Refactoring",
+    "totalScore": 83,
+    "url": "https://martinfowler.com/articles/exploring-gen-ai/refactoring-economic-benefit.html"
+  },
+  "payloadHash": "sha256:76b02db8b338d17ab62e1591b6b7b24effed210841aaffea137a35a449333209",
+  "refs": {},
+  "revisionId": "sha256:28d07f95aa9bf7e3b27b30f0b4d29e26dabb227bc5f073e773f65408a90481b9",
+  "schemaVersion": 1,
+  "updatedAt": 1789694321178
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789704888366,
+  "entityType": "session",
+  "id": "1789704888366_4rrq3fig",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "克隆配套仓库，沿 ModelRegistry、SyncClient、TransactionQueue 和 applyDelta 四条主链路阅读代码。",
+      "为现有产品绘制“内存乐观更新—事务持久化—服务器执行—增量确认—本地库更新”的同步时序图。",
+      "用断网、重启、重复提交、增量包缺失和并发改写场景验证事务恢复、幂等性与重放策略。"
+    ],
+    "archiveReason": "提供了罕见且系统的 Linear 同步引擎代码级拆解，涵盖模型元数据、懒加载、离线事务、增量同步、冲突处理和撤销重做，具有较强复用价值。",
+    "classifiedAt": 1789704914145,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 9,
+      "methodology_value": 8,
+      "novelty": 9,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Linear同步引擎逆向解析",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "LSE以递增 sync ID 建立服务器事务的全序，用于检测缺失增量包、判断同步进度并完成待确认事务。",
+      "模型元数据统一描述加载策略、属性、引用和索引，并驱动数据库结构、可观察性、序列化及懒加载。",
+      "部分索引与 sync group 共同支持按权限和引用关系加载局部数据，避免将完整工作区数据载入客户端。"
+    ],
+    "oneHighValuePoint": "以服务器为唯一事实源，客户端先乐观更新内存并持久化待发送事务，待服务器增量包确认后再更新本地模型库，同时通过事务重放处理并发变化。",
+    "oneLineReview": "这是一份证据较充分、技术细节丰富的同步引擎逆向资料，但部分结论依赖混淆代码推断，实施时仍需独立验证。",
+    "primaryCategory": "产品技术与系统架构",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并长期存档，作为本地优先同步引擎设计与实现的高价值参考",
+    "secondaryCategories": [
+      "本地优先软件",
+      "协同数据同步"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章通过逆向 Linear 前端代码，系统拆解其同步引擎的模型注册、IndexedDB 启动与迁移、懒加载、事务队列、增量包、冲突重放及撤销重做机制。",
+    "tags": [
+      "Linear Sync Engine",
+      "本地优先",
+      "增量同步",
+      "IndexedDB",
+      "事务队列"
+    ],
+    "title": "wzhudev/reverse-linear-sync-engine: A reverse engineering of Linear's sync engine.",
+    "totalScore": 83,
+    "url": "https://github.com/wzhudev/reverse-linear-sync-engine"
+  },
+  "payloadHash": "sha256:7370895399de2a275fb1c6fdc9e115b6cd38ae8dfa4025c54cbf15610c0762ae",
+  "refs": {},
+  "revisionId": "sha256:83a0a2644b7baac4b9330a6d11e830da4c072817d239cc99778b71bc5b356667",
+  "schemaVersion": 1,
+  "updatedAt": 1790770105799
+}

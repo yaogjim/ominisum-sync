@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729417277,
+  "entityType": "message",
+  "id": "1789729417279_30q809qr",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Kimi Code + K2.7：大型代码重构更适合“AI 调研、人来决策”\n\n作者在重构约 5 万行 Go Agent Runtime 时发现，AI 擅长批量生成代码，却难以独立完成复杂系统的结构性精简。相比让 Codex、Claude Code 全自动修改，他最终采用半自动流程：AI 系统排查并生成报告，人工审查后再选择问题修复。\n\n## 全自动重构容易误判“本质复杂度”\n\n作者希望压缩代码量，但现有模型的表现并不理想：\n\n- Opus 4.8 反复套用“超过 300 行就是坏设计”的规则，忽略有些超长代码源于无法轻易拆分的本质复杂度。\n- Codex 在精简部分代码后，又补入兼容逻辑，反而抵消了优化效果。\n- 对高耦合运行时而言，机械拆分或压缩可能引入隐性 Bug，代码行数也不能直接代表设计质量。\n\n## 用 AI 做系统调研，再由人工选择修复项\n\n作者先让 Kimi Code 借助 `hai-architecture` 技能，从空值（nil）处理切入，梳理当前代码位置、问题与解决方案，并按类别和优先级整理出 50 个检查点。这样不仅能识别过度防御的 nil 判断，也能追溯其背后的上层设计问题。\n\n随后，他用 `hai-visual-report` 将 Markdown 报告转成可视化问题清单，降低阅读和筛选成本，再由人工决定哪些问题值得修。\n\n## 速度提升的价值在于缩短反馈循环\n\n作者认为 K2.7 极速版在调研阶段的提速感不算突出，但生成可视化报告只用了约两分钟，交互反馈明显更快。其核心价值不是替人完成整个重构，而是快速扩大排查范围、改善信息呈现，让人类把精力集中在架构判断与风险控制上。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729417277,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a7efe85af1e0650364967ebc1b24ee861f27589522fa80503fbe2d2240fb35d2",
+  "refs": {
+    "sessionId": "1783077935313_ogcz7zbi"
+  },
+  "revisionId": "sha256:71456974d8c55412340df349a0282445822524688b6475a8c7ba62c4207d6bd1",
+  "schemaVersion": 1,
+  "updatedAt": 1789729417277
+}

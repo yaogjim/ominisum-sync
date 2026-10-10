@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693992737,
+  "entityType": "message",
+  "id": "1789693992737_mshjqvr6",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n**pi-matt-pocock 把零散的工程 skills 改造成一个按需加载、能记录进度并在重启后恢复的 Pi 工作流编排器，更适合多阶段工程任务。**\n\n## 关键内容\n\n- 它只暴露一个主要编排工具，并提供五类路线，包括完整功能开发、疑难缺陷、需求整理、路径规划和架构改进；简单任务不应启用工作流。\n- 当前步骤的流程文档只在启动、切换或恢复时加载，后续仅保留简短提示，以减少上下文占用和 `tdd`、`research` 等通用 skill 名称冲突。\n- 路线、步骤和阶段会写入 Pi 会话，重启后可恢复，不必让模型从长对话中猜测进度。代价是需要维护上游内容到 Pi 格式的适配层，工具参数也仍有少量枚举成本。\n- 作者进一步指出：skills 主要解决“方法论如何分发”，而多阶段工程还需要运行时决定何时加载、加载多少、如何推进和保存状态。\n\n## 通俗解读\n\n它不是让模型一次看到一整套“操作手册”，而是像项目导航：先选路线，每次只显示当前步骤，并自动保存走到哪里。约束越下沉到运行时，流程越可靠，但灵活性和维护成本也越高。\n\n**是否值得细读：**如果你在设计 Agent 工具、长流程或跨会话状态，值得；若只想安装并使用普通单步 skill，了解核心区别即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693992737,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a66be74e07eac7f5687d6d3264856b5827460ee6c560e2dbb4e2cfd6bd4385e1",
+  "refs": {
+    "sessionId": "1788427203413_xybwwhqe"
+  },
+  "revisionId": "sha256:ed9dc41cef644d0c1d38bee40aa1d7a44a813f6eedb39e14d13754588192c86d",
+  "schemaVersion": 1,
+  "updatedAt": 1789693992737
+}

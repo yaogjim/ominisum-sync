@@ -1,0 +1,66 @@
+{
+  "createdAt": 1790232187845,
+  "entityType": "session",
+  "id": "1790232187845_obvwdwxy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若需验证该项目，先确认Android版本、USB Host或OTG能力及MFi硬件是否满足要求。",
+      "按项目说明构建应用，并在实机上分别验证连接、认证和音频通道表现。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1790233114344,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "安卓车机CarPlay接收器项目",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "项目支持通过CH341 I2C桥、设备原生I2C接口或远程服务接入MFi认证能力。",
+      "远程MFi接口包括证书读取、挑战签名和重置；文中称目前仅测试过BAA认证。",
+      "Android 9不支持所述Wi-Fi P2P 5 GHz模式，项目改用LocalOnlyHotspot。"
+    ],
+    "oneHighValuePoint": "远程MFi认证被拆分为获取证书、签名挑战和重置三个接口，为分离认证硬件与车机提供了具体集成思路。",
+    "oneLineReview": "项目说明提供了具体的集成路径和接口信息，但兼容性与实现效果缺少充分验证。",
+    "primaryCategory": "开源项目",
+    "rating": "B",
+    "rejectReason": "主题与核心关注方向仅有间接联系，且实现高度依赖特定硬件。",
+    "retentionDecision": "选择性浏览；仅在涉及车机或MFi集成时保留",
+    "secondaryCategories": [
+      "Android开发",
+      "车载系统"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一个安卓及Android Automotive车机CarPlay接收器项目的说明，列出有线和无线连接、CH341或原生I2C接入MFi芯片、远程认证接口、使用步骤及构建要求。项目声称已在车机和手机上测试，但CarPlay Ultra协议栈尚未完成。",
+    "tags": [
+      "CarPlay",
+      "Android车机",
+      "MFi认证",
+      "CH341",
+      "远程认证"
+    ],
+    "title": "shilapi/xcertplay: Carplay on Android head unit using onboard mfi chip or via CH341.",
+    "totalScore": 55,
+    "url": "https://github.com/shilapi/xcertplay"
+  },
+  "payloadHash": "sha256:9f7f446c45cef64ac084d93dba7950e9f1d02ca0e3f619a6e867979462a53825",
+  "refs": {},
+  "revisionId": "sha256:76cb3f8e80640ae693640e932d636f053f37dc38a0a74e8130ce3e7492966e17",
+  "schemaVersion": 1,
+  "updatedAt": 1790233114384
+}

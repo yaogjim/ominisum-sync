@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728233491,
+  "entityType": "message",
+  "id": "1789728233492_ihup09ma",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Buzz：以共享上下文为核心的“代理原生 Slack”\n\nBlock 推出的 Buzz 是一款基于开放协议 Nostr 的开源协作应用。它不只是给聊天工具添加 AI 插件，而是把代理视为团队成员，让人、代理、代码和业务数据共享同一套上下文。其真正卖点并非“取代 Slack”，而是模型可替换、数据可掌控、工作流可扩展。\n\n## 更换模型，不必重建上下文\n\n每个代理都可切换底层执行工具（如 Claude Code、Codex、Goose），历史聊天、项目决策和全局安装的技能仍可继续使用。这试图解决频繁换模型带来的迁移成本和平台锁定。Buzz 还支持与代理进行语音讨论，但视频中的现场演示未成功，实际体验仍待验证。\n\n## 从团队讨论直接推进到交付\n\n代理可创建 Git 分支、在并行工作树中开发，并部署完整应用。演示中，Buzz 使用 Wasp 框架生成 CRM，部署至 Railway，并返回链接和截图；另一个案例通过公开 API 每日把推文数据写回频道，再由代理分析高表现内容。其价值在于把“讨论—开发—上线—数据反馈”放入连续上下文，减少手工搬运信息。\n\n## 开放性有潜力，但产品仍很早期\n\nBuzz 可让团队共享一台机器上的本地模型，降低成本并增强数据控制；Nostr 与比特币闪电网络的结合也可能支持代理购买算力或任务支付，但目前只是受访者推测。现阶段工作流不够稳定、响应比直接使用编码代理慢，不适合复杂工程。作者认为，它更适合独立创业者和小团队试用，用来理解“代理多于人类同事”的未来工作方式，而非立即全面替代 Slack。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728233491,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8d214972e9bd1f05957941126b8f786bcff570366998c861d47f6d8fa7540562",
+  "refs": {
+    "sessionId": "1785402291470_19x4nu02"
+  },
+  "revisionId": "sha256:929a9712354f4290233c8acc4d98f1bf916f7658a54765fd87531772e88a3e86",
+  "schemaVersion": 1,
+  "updatedAt": 1789728233491
+}

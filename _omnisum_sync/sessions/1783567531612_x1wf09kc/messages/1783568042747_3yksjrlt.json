@@ -1,0 +1,20 @@
+{
+  "createdAt": 1783567856702,
+  "entityType": "message",
+  "id": "1783568042747_3yksjrlt",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n作者分享了一个把 **Codex 订阅接入 Claude Code** 的方法：让 **Fable 5 负责规划与审查**，让 **Codex/GPT 5.5 负责重代码执行**，从而降低 Fable 5 的代币消耗、提升开发效率。作者称这种方式至少可节省 **60% 的 Fable 5 代币消耗**。\n\n---\n\n## 1. 核心思路：Fable 5 做“指挥官”，Codex 做“执行员”\n\n- 在 Claude Code 中安装 OpenAI Codex 插件后，可以让 Fable 5 调用 Codex。\n- 工作分工是：\n  - **Fable 5**：负责规划、理解代码仓库、架构决策、任务拆解、最终审查。\n  - **Codex / GPT 5.5**：负责具体编码、调试、测试修复、重构、多文件修改等繁重执行任务。\n- 作者称，这样可以让 Fable 5 调用 **GPT 5.5 + 最多 10 个子代理协同工作**，显著提升效率。\n\n---\n\n## 2. 设置步骤：在 Claude Code 中安装 Codex 插件\n\n### 步骤 1：安装 Codex 插件\n\n在 Claude Code 中执行以下命令：\n\n```bash\n/plugin marketplace 添加 openai/codex-plugin-cc\n/plugin 安装 codex@openai-codex\n/reload-plugins\n```\n\n作用是把官方 OpenAI Codex 插件加入 Claude Code 环境。\n\n---\n\n### 步骤 2：让 Fable 5 完成配置\n\n作者建议粘贴一段提示词，让 Fable 5 自动检查和配置 Codex：\n\n- 运行 `/codex:setup`\n- 如果缺少 Codex CLI，就安装它\n- 如果 Codex 未认证，就引导用户用 ChatGPT 账户认证\n- 验证 Codex 是否能在 Claude Code 中正常运行\n- 确认 `codex:codex-rescue` 子代理可用\n- 设置过程中不要修改项目代码\n\n核心目的：**一次性完成 Codex 在 Claude Code 中的可用性配置**。\n\n---\n\n### 步骤 3：完成 ChatGPT/Codex 账户认证\n\n- Fable 5 会触发 Codex 安装流程。\n- 用户只需要用自己的 **ChatGPT / Codex 账户认证一次**。\n- 认证后，Codex 就可以在 Claude Code 内部运行，并使用用户自己的 Codex 订阅额度。\n\n---\n\n## 3. 使用方式：明确告诉 Fable 5 如何委派任务\n\n作者建议给 Fable 5 一段固定工作流提示词，核心规则是：\n\n- Fable 5 是“编排者”。\n- 遇到复杂实现、调试、测试修复、重构、多文件编辑时，调用 Codex。\n- 委派 Codex 时使用：\n\n```bash\n/codex:rescue\n```\n\n- 优先选择 **GPT 5.5（xtra high）** 作为 Codex 模型。\n- 给 Codex 的任务要保持具体、聚焦。\n- Codex 完成后，Fable 5 必须再次检查结果。\n- 不要盲目信任 Codex 输出。\n\n简单理解：  \n**Fable 5 负责想清楚怎么做，Codex 负责把代码写出来，最后 Fable 5 再验收。**\n\n---\n\n## 4. 作者的进阶建议\n\n作者给出几个实用技巧：\n\n1. **把这套流程做成一个 Skill**\n   - 作者将其命名为 `Fable-GPT`。\n   - 每次新会话开始时调用这个 Skill，提高复用效率。\n\n2. **用 Skill + Goal 处理长期任务**\n   - 对于复杂、耗时的开发任务，Goal 更适合长期执行。\n\n3. **Codex 20x Pro 计划可使用多个子代理**\n   - 作者表示自己同时使用 **5–7 个代理**。\n   - 并且从未触发 **5 小时限制**。\n\n4. **注意上下文衰减**\n   - 长对话经过多次压缩后，上下文质量会下降。\n   - 作者建议在 **4 次压缩后清空对话**。\n   - 使用 `/handoff` 指令保留上下文，再开启新会话继续工作。\n\n---\n\n## 5. 作者给出的效果案例\n\n作者在引用推文中称，这种组合是目前在 Claude Code 中“最大的作弊码”：\n\n- **24 小时内消耗 20 亿代币**\n- Fable 使用量达到 **49%**\n- 已消耗 **5 个周限额**\n- Codex 每周限额消耗 **30%**\n- 作者称完成了约 **3 倍工作量**\n- 核心方法仍是：  \n  **Fable 5 做编排器，GPT 5.5 做执行器**\n\n---\n\n## 6. 评论区补充信息\n\n- 有人询问：Fable 5 是否只负责计划，Codex Rescue 负责繁重工作，交接是否顺畅。\n- 作者回复：\n  - 是的，Fable 每次都会调用 Codex 执行代码。\n  - 会话交接确实可能不够流畅。\n  - 因此自定义 `/handoff` 技能很有用，可以在清空会话后继续保留最新上下文。\n\n---\n\n## 总结\n\n这篇内容本质上是在介绍一种 AI 编程协作流：**Claude Code 中用 Fable 5 做高层规划与审查，用 Codex/GPT 5.5 做具体代码执行**。它的优势是节省 Fable 代币、提高并行处理能力，但需要注意任务拆分、结果复查和上下文管理。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1783567856702,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:28f95c6eaff5caff5cb4736cd238fcb1bd2087e1767258dca63ee57fc3be9dcf",
+  "refs": {
+    "sessionId": "1783567531612_x1wf09kc"
+  },
+  "revisionId": "sha256:17826d7dfa454b09bf58ec2b5024e257be2083eb6b104c842994bb1bcadab9b5",
+  "schemaVersion": 1,
+  "updatedAt": 1783567856702
+}

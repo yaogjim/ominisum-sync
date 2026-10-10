@@ -1,0 +1,65 @@
+{
+  "createdAt": 1783077983302,
+  "entityType": "session",
+  "id": "1783077983302_uyklfnu1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注 LLM 输出质量，直接阅读原文《Dummy's Guide to Modern LLM Sampling》",
+      "在实际项目中对比不同 Temperature、Top-P、Min-P 等参数组合的输出效果"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783078365475,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 3,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "LLM采样指南推荐帖",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "内容本身信息量有限，主要价值在外部链接，保留推文本身的长期价值较低",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "LLM 生成流程可概括为 raw logits 经 Sampler 调整后再 Softmax 成概率并采样",
+      "Temperature、Top-P、Min-P、DRY、Mirostat 等采样器会影响输出的多样性、稳定性与重复程度"
+    ],
+    "oneHighValuePoint": "采样策略是控制 LLM 输出“创造力与可靠性”权衡的重要杠杆。",
+    "oneLineReview": "适合作为发现原文指南的入口，但推文本身不值得长期保存。",
+    "primaryCategory": "人工智能",
+    "rating": "C",
+    "rejectReason": "正文主要是对外部文章的推荐和概括，缺少完整方法、案例和证据，热门回复多数与主题无关",
+    "retentionDecision": "短期参考后可删除，建议直接阅读原始采样指南而非保留该推荐帖",
+    "secondaryCategories": [
+      "大语言模型",
+      "文本生成"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该帖推荐《Dummy's Guide to Modern LLM Sampling》，提到 Temperature、Top-P、Min-P、DRY、Mirostat 等采样机制及其对生成质量的影响，但正文仅为简短介绍，缺少展开论证。",
+    "tags": [
+      "LLM采样",
+      "Temperature",
+      "Top-P",
+      "Sampler",
+      "Prompt Engineering"
+    ],
+    "title": "lifcc: 宝藏级 LLM 采样指南来了 标题：《Dummy's Guide to Modern LLM Sampling》 这篇文章把现代 LLM 文本生成里的采样器（S…",
+    "totalScore": 40,
+    "url": "https://x.com/mylifcc/status/2068694257679114431"
+  },
+  "payloadHash": "sha256:eb9ae3f45361f0a2665d6341a3a5d2abc6591cb0f58800a8336988dbed9d06e5",
+  "refs": {},
+  "revisionId": "sha256:0953a77c150690f493c0523726b3fcf73d70407cacafdd31352051d67c47c4f3",
+  "schemaVersion": 1,
+  "updatedAt": 1784801388117
+}

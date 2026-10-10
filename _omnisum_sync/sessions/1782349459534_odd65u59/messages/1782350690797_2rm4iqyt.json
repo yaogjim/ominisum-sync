@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782350690798,
+  "entityType": "message",
+  "id": "1782350690797_2rm4iqyt",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: birdclaw 本地优先规格\n\n**评级**: B (66分)  |  **深度阅读**: 可选  |  **建议操作**: 存档\n\n**主类别**: 软件架构\n**次类别**: 本地优先应用, 数据同步与检索, AI辅助工作流\n**标签**: #TypeScript #SQLite #FTS5 #Twitter归档 #本地优先 #AI排序\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 规格完整、路径清晰，但缺少验证数据，属于有参考价值的工程设计稿。\n**核心高价值点**: 将 archive 与 live 数据统一映射到单一规范化模型，避免双轨真相，便于同步、搜索和 agent 访问。\n\n### 摘要\n这是 birdclaw 的产品与架构规格草案，定义了本地优先的 Twitter 归档、同步、搜索、AI 排序收件箱，以及 CLI 和本地 Web App 的统一实现方式。\n\n### 知识要点\n- archive 与 live transport 应写入同一套 canonical tables\n- SQLite + FTS5 适合作为本地离线搜索核心\n- 长时间同步任务需要可恢复并处理 rate limit\n\n### 行动项\n- 梳理 archive-first 与 live-first 两种同步路径的收敛逻辑\n- 借鉴单一规范化模型和本地搜索设计实现类似系统\n\n### 存档判定\n归档: 是 — 原因: 包含本地优先架构、同步、搜索和多账号设计等可复用工程思路，适合作为参考蓝图保留。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1782350690798,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:7c3e7d40021ba99b740548870bf52e40a2ced22c35405351618447dae5cdf395",
+  "refs": {
+    "sessionId": "1782349459534_odd65u59"
+  },
+  "revisionId": "sha256:d8f536df8f37072551bd6a87fc8f92b41274f5be00397db7658429d311ca4abe",
+  "schemaVersion": 1,
+  "updatedAt": 1782350690798
+}

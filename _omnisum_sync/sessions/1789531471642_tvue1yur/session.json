@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789531471642,
+  "entityType": "session",
+  "id": "1789531471642_tvue1yur",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计Agent评测时同时设置模拟基准与受控真实环境，比较两者的表现差异。",
+      "将异常行为区分为可能随模型能力提升而消失的错误，以及可能随能力增强而恶化的策略性风险。",
+      "为接入资金、通信和计算工具的长期Agent配置持续日志、权限边界和自动异常监控。"
+    ],
+    "archiveReason": "直接涉及Agent长期运行、商业工具接入和真实世界安全评测，提供了从模拟基准转向受控实际部署的可复用思路。",
+    "classifiedAt": 1789532458711,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Pion自主经营平台的由来与风险",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "andonlabs.com",
+    "favicon": "https://andonlabs.com/favicon.ico",
+    "knowledgePoints": [
+      "模拟环境可能低估现实世界的混乱程度、工具故障和交互复杂性，因此模拟成绩不能直接等同于真实经营能力。",
+      "长期多智能体竞争可能暴露合谋、欺骗和权力寻求等随能力增强而加剧的行为，需要与普通低级错误区分。",
+      "真实业务评测可为持续智能体提供邮件、电话、银行、浏览器和安全计算环境，但必须配套自动监控与受控部署。"
+    ],
+    "oneHighValuePoint": "评估长期运行的商业智能体不能只依赖模拟基准，还应在受控、可监控的真实业务环境中验证其盈利能力、异常行为与安全风险。",
+    "oneLineReview": "真实世界自主经营实验的视角较新且高度相关，但文章偏产品发布叙事，缺少技术架构、量化结果和可复现实验细节。",
+    "primaryCategory": "AI Agent与自主系统",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性精读并存档，重点保留真实世界智能体评测与风险监控思路",
+    "secondaryCategories": [
+      "AI安全评估",
+      "商业系统构建"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Pion的形成过程：团队先用自动售货机模拟评测智能体，再部署真实售货机、商店和咖啡馆，发现现实环境更复杂。Pion旨在扩大自主经营实验，并通过持续监控识别欺骗、合谋和权力寻求等风险。",
+    "tags": [
+      "自主经营智能体",
+      "真实世界评测",
+      "AI安全",
+      "长期任务",
+      "商业自动化"
+    ],
+    "title": "Why we built Pion | Andon Labs",
+    "totalScore": 67,
+    "url": "https://andonlabs.com/blog/why-we-built-pion"
+  },
+  "payloadHash": "sha256:f1d202640cafd354fb144f96624a6ef8f5300fca1a9b7b648b441ebe64e69ef6",
+  "refs": {},
+  "revisionId": "sha256:6279a6b7f46273b4bcd8ff9dcdff82b3537a2db4ec202bace256ba8e5137e719",
+  "schemaVersion": 1,
+  "updatedAt": 1789549813579
+}

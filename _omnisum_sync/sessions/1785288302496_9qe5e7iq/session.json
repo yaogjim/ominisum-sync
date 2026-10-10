@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785288302496,
+  "entityType": "session",
+  "id": "1785288302496_9qe5e7iq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在测试分支或CI中升级Ruff，检查新增默认规则产生的诊断和修复差异。",
+      "若暂不接受新默认规则集，在lint配置中显式选择E4、E7、E9和F以恢复旧行为。",
+      "检查解析Ruff JSON输出的脚本，确保能够处理文件名、位置及编辑位置字段为null的情况。"
+    ],
+    "archiveReason": "包含默认规则变更、兼容性风险、迁移配置和新功能用法，可作为升级Ruff时的直接参考。",
+    "classifiedAt": 1785402860125,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Ruff 0.16默认规则与格式化升级",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "astral.sh",
+    "favicon": "https://astral.sh/static/favicon-32x32.png",
+    "knowledgePoints": [
+      "Ruff v0.16 默认启用413项规则，同时移除了18项较具主观性的默认规则。",
+      "Ruff 可格式化 Markdown 和 Quarto 文件中的 Python 围栏代码块，并支持局部或全局禁用格式化。",
+      "JSON 输出中的文件名和位置等字段现在可能为 null，依赖其输出的工具需要调整兼容逻辑。"
+    ],
+    "oneHighValuePoint": "默认启用规则从59项扩大到413项是最重要的行为变化，升级前应在现有项目和CI中验证新增诊断，并可通过配置恢复旧规则集。",
+    "oneLineReview": "一篇信息具体且可直接指导升级的官方发布说明，但内容高度依赖特定版本，方法论与长期价值有限。",
+    "primaryCategory": "Python开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览，使用Ruff或维护Python项目时保留查阅",
+    "secondaryCategories": [
+      "代码质量",
+      "开发者工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Ruff v0.16 的迁移与功能变化：默认规则由59项扩至413项，新增 Markdown 代码块格式化、ruff 抑制注释和修复差异展示，并说明 JSON 输出兼容性变化及稳定化规则。",
+    "tags": [
+      "Ruff",
+      "Python代码检查",
+      "代码格式化",
+      "静态分析",
+      "版本迁移"
+    ],
+    "title": "Ruff v0.16.0",
+    "totalScore": 67,
+    "url": "https://astral.sh/blog/ruff-v0.16.0"
+  },
+  "payloadHash": "sha256:b4a66a633e244633bfdba3d6c88a37f9896cf91def4d19f358d5d2d4950d5dbc",
+  "refs": {},
+  "revisionId": "sha256:2cbd2be558cec14c963152b4e42e9fbc2197efe839c39204fc35d410188187a8",
+  "schemaVersion": 1,
+  "updatedAt": 1785403780033
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1785490536611,
+  "entityType": "message",
+  "id": "1785490536611_lfq5c7hr",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Kimi Code 模型配置总结\n\nKimi Code 目前提供 **Kimi K3** 和 **Kimi K2.7 Code** 两类模型，共对应 4 个模型 ID。用户可以在官方客户端或第三方工具中通过填写模型 ID 来切换模型；不同模型在上下文长度、速度、推理能力、多模态输入和会员等级要求上有所区别。\n\n## 一、模型概览\n\n| 模型 ID | 对应版本 | 主要特点 | 速度 | 上下文窗口 | 多模态输入 | 可用范围 |\n|---|---|---|---|---|---|---|\n| `k3` | Kimi K3 | 旗舰编程模型，约 **2.8T 参数**，支持最长 **1M 上下文** | 标准 | 最高 1M；1M 上下文需更高等级会员 | 图片、视频 | Moderato 及以上；Allegretto 及以上可用 1M |\n| `k3-256k` | Kimi K3 256K 版 | 在 256K 上下文内效果与 K3 基本一致，消耗更低 | 标准 | 固定 256K | 仅图片 | Moderato 及以上 |\n| `kimi-for-coding` | Kimi K2.7 Code | 适合代码补全、日常开发和常规任务 | 标准 | 256K | 图片、视频 | 所有会员 |\n| `kimi-for-coding-highspeed` | K2.7 Code HighSpeed | 与 K2.7 Code 编程能力相同，输出约快 **5～6 倍** | 高速；约 **6 倍速度、3 倍额度消耗** | 256K | 图片、视频 | Allegretto 及以上 |\n\n### 模型选择建议\n\n- **日常问答、代码补全、常规功能开发、单文件或小规模文件修改**：推荐使用 `k3-256k`。\n- **需要处理超长上下文或大型代码项目**：使用 `k3`，最高支持 1M 上下文。\n- **追求更快输出速度**：使用 `kimi-for-coding-highspeed`，但需要注意额度消耗约为普通版本的 3 倍。\n- `k3-256k` **不支持视频输入**。\n\n## 二、K3 与 K3-256K 的切换注意事项\n\n### 从 K3（1M）切换到 K3-256K\n\n如果当前会话上下文已经超过 256K，Kimi Code CLI、Claude Code 等工具可能会自动执行 **compact**，即压缩上下文。\n\n官方建议：\n\n1. 切换前手动执行一次 compact，将上下文压缩到 256K 以内。\n2. 这样可以保留任务关键内容、维持当前会话，并在切换后获得更持久的额度使用效果。\n3. 如果历史记录中包含视频文件，不能直接切换到 `k3-256k`，因为该模型不支持视频输入；应先 compact，再切换。\n\n### 从 K3-256K 切换到 K3（1M）\n\n如果 `k3-256k` 接近 256K 上限，且担心 compact 会丢失信息，可以直接切换到 `k3`。\n\n当前版本从 256K 切换到 1M **不会影响缓存**。\n\n## 三、会员等级与权限\n\n不同会员计划会影响：\n\n- 可使用的模型；\n- 最大上下文长度；\n- 是否支持 HighSpeed；\n- 输出速度和额度消耗。\n\n常见权限限制如下：\n\n- **无法使用 K3**：会员等级低于 Moderato，无法调用 `k3` 和 `k3-256k`。\n- **无法使用 1M 上下文**：Moderato 用户使用 `k3` 时最多只有 256K 上下文；Allegretto 及更高等级才支持最高 1M。\n- **无法使用 HighSpeed**：部分会员计划不包含高速模型，需要升级到 Allegretto 或更高等级。\n- `k3-256k` 始终固定为 256K 上下文，不会因会员等级提高而扩展到 1M。\n\n如果请求的模型能力超出当前计划权限，服务端通常会返回 **401**。\n\n## 四、为什么切换模型后用量会增加？\n\n切换模型后，之前建立的上下文缓存通常无法继续命中，需要重新预填充上下文，因此刚切换时用量看起来会明显上升。\n\n**建议：**\n\n- 使用新模型时直接开启一个新会话；\n- 新会话通常能获得更好的效果，并减少额外消耗。\n\n## 五、HighSpeed 为什么不一定明显更快？\n\n主要有两个原因：\n\n1. **模型 ID 填写错误**  \n   HighSpeed 的正确 ID 是：\n\n   ```text\n   kimi-for-coding-highspeed\n   ```\n\n   如果填写错误，系统可能会静默回退到普通的：\n\n   ```text\n   kimi-for-coding\n   ```\n\n   此时不会报错，但也不会获得加速效果。\n\n2. **工具调用和脚本执行耗时不受影响**  \n   HighSpeed 只会加快模型生成文本的速度，以下操作不会加速：\n\n   - 读取或写入文件；\n   - 执行命令；\n   - 调用外部工具；\n   - 执行脚本。\n\n   如果一次任务的大部分时间都花在这些步骤上，整体速度提升就不会特别明显。\n\n## 六、推理强度切换的影响\n\n切换 `reasoning_effort` 会使已经建立的上下文缓存失效，原本可以直接命中的上下文需要重新预填充，从而增加消耗和延迟。\n\n建议：\n\n- 根据任务难度选择合适的推理强度，并在同一会话中保持一致；\n- 如果确实需要改用另一种推理强度，建议新建会话，而不是在长会话中反复切换。\n\nK3 支持以下推理强度：\n\n```text\nlow / high / max\n```\n\n默认值为：\n\n```text\nhigh\n```\n\n## 七、如何切换模型\n\n### 1. 官方 Kimi Code CLI\n\n在 CLI 中输入：\n\n```text\n/model\n```\n\n然后选择目标模型，无需修改配置。\n\n如果最新模型没有出现在列表中：\n\n1. 输入 `/logout` 退出；\n2. 再输入 `/login` 重新登录。\n\n### 2. Kimi Code for VS Code\n\n在输入栏的模型下拉菜单中选择目标模型。\n\n如果模型列表中没有最新模型，可以：\n\n- 重启 VS Code；\n- 或重新安装 Kimi Code 扩展。\n\n### 3. 第三方工具\n\n在第三方工具中设置目标模型的 **Model ID**，基本步骤如下：\n\n1. 在 Kimi Code Console 创建 API Key；\n2. 在工具中填写 Base URL；\n3. 填写对应的 Model ID。\n\nKimi Code 同时支持 OpenAI 和 Anthropic 两种协议。\n\n| 协议 | Base URL |\n|---|---|\n| OpenAI 兼容协议 | `https://api.kimi.com/coding/v1` |\n| Anthropic 兼容协议 | `https://api.kimi.com/coding/` |\n\n## 八、使用模型 ID 时的注意事项\n\n调用模型时必须填写模型 ID，而不是模型版本名称。\n\n### 正确写法\n\n```text\nk3\nk3-256k\nkimi-for-coding\nkimi-for-coding-highspeed\n```\n\n### 错误写法\n\n```text\nKimi K3\nK2.7 Code\n```\n\n填写版本名称会导致调用失败。\n\n此外，如果使用 K3 或 K2.7 时关闭 Thinking，实际请求会被路由到 **K2.6**。因此，要使用 K3 或 K2.7 Code，应保持 Thinking 开启。\n\n## 九、在第三方工具中使用 K3 的额外配置\n\nK3 与 K2.7 Code 的配置略有不同，使用前需要重点检查两项设置。\n\n### 1. 手动设置上下文窗口\n\n部分第三方工具默认的上下文窗口小于 K3 支持的最大值。若希望使用 K3 的完整 1M 上下文，需要手动设置：\n\n```text\ncontext-window = 1048576\n```\n\n### 2. 配置推理强度映射\n\n第三方工具发送的参数会映射为 K3 的 `low`、`high` 或 `max`：\n\n| 工具发送的值 | K3 实际推理强度 |\n|---|---|\n| `null` / `undefined` | `high`，默认值 |\n| `ultra` / `max` / `xhigh` | `max` |\n| `high` / `medium` | `high`，推荐 |\n| `low` / `minimum` / `light` | `low` |\n| `none` | 关闭 Thinking |\n| 其他未知值 | 返回 HTTP 400 错误 |\n\n总体而言，第三方工具中建议使用 `high`，并确认工具确实将上下文窗口设置为 `1048576`，这样才能充分发挥 K3 的 1M 上下文能力。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1785490536611,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2d75932ff8cebfe0f2197cf6e72e9fa7c380ce602406b0388e3abad6af54ae0b",
+  "refs": {
+    "sessionId": "1785377098289_xwdz0tc1"
+  },
+  "revisionId": "sha256:537310e79835b667e44449047e1f6de342a6bcc8932e62c6bbc48805f6b662b0",
+  "schemaVersion": 1,
+  "updatedAt": 1785490536611
+}

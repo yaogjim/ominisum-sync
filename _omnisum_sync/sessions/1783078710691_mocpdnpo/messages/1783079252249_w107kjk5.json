@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783079252250,
+  "entityType": "message",
+  "id": "1783079252249_w107kjk5",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Pi Agent 配置入门指南\n\n**评级**: B (62.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI 编程工具\n**次类别**: Agent 框架, 开发者工具\n**标签**: #Pi Agent #AI Coding Agent #插件扩展 #Prompt Template #开发环境配置\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一篇实用的 Pi Agent 生态入门帖，但深度、证据和具体配置细节仍偏有限。\n**核心高价值点**: 明确指出 Pi 的价值在于极简内核加可扩展 Harness，而不是开箱即用的 Coding Agent。\n\n### 摘要\n文章介绍 Pi Agent 的极简设计、Extension、提示模板和 Package 等核心概念，并推荐若干常用插件，适合想了解或搭建自定义 AI 编程助手的开发者参考。\n\n### 知识要点\n- Pi Agent 默认只提供 bash、read、write、edit 四类基础工具，其他能力需通过扩展和包补齐\n- Extension 可注册自定义工具、命令、生命周期事件、界面交互和持久化状态\n- Pi Package 是 extensions、skills、prompt templates、themes 的组合，可通过 git 或 npm 分享安装\n- 第三方 Pi Package 拥有完整系统权限，安装前需要审查源码以降低安全风险\n- context-mode、pi-subagents、pi-mcp-adapter、pi-web-access 等插件可显著扩展 Pi 的实用能力\n\n### 行动项\n- 如果计划使用 Pi Agent，先评估是否接受非开箱即用、需要自行配置的工作流\n- 优先阅读官方文档中的 Extension、Prompt Template 和 Package 机制\n- 安装第三方 Pi Package 前审查源码和权限范围\n- 可从 context-mode、pi-mcp-adapter、pi-web-access 等插件开始搭建基础 Harness\n\n### 存档判定\n归档: 是 — 原因: 包含 Pi Agent 核心抽象、扩展机制、Package 生态与插件推荐，具备一定工具选型和配置参考价值\n删除: 否\n留存决策: 短期参考后可归档，适合作为了解 Pi Agent 生态和插件选择的入口资料",
+    "role": "assistant",
+    "timestamp": 1783079252250,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:a12c8afbce95c52e0485babb0e8b407ad74c4c8f5687a18e5d4639602388c8de",
+  "refs": {
+    "sessionId": "1783078710691_mocpdnpo"
+  },
+  "revisionId": "sha256:6269325131ef6a1db4961459b05bb5c1ad862bbd7e9a5b8f216edf7aa699e204",
+  "schemaVersion": 1,
+  "updatedAt": 1783079252250
+}

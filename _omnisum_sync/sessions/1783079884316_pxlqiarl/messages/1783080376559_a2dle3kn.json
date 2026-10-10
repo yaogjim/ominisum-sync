@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783080376560,
+  "entityType": "message",
+  "id": "1783080376559_a2dle3kn",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: RepoPrompt开源与上下文工程\n\n**评级**: B (56分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: 上下文工程, 开源项目动态\n**标签**: #RepoPrompt #MCP #Agent #代码仓库 #上下文工程\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 一条有价值的AI编程工具动态，适合了解RepoPrompt和上下文工程趋势，但深度与证据有限。\n**核心高价值点**: 强调AI编程效果不只依赖模型能力，还依赖对代码仓库上下文的精准选择与任务边界管理。\n\n### 摘要\n文章介绍RepoPrompt社区版开源背景、核心用途及架构变化：从手工选择代码文件拼接prompt，转向由内置MCP server主控、多Agent执行的上下文工程工具，目前主要支持macOS。\n\n### 知识要点\n- RepoPrompt已推出开源社区版，并提供GitHub仓库与Homebrew安装方式\n- 上下文工程的核心是为模型选择真正相关的代码文件，而不是盲目塞入整个代码库\n- 新版RepoPrompt将MCP server作为主控层，Claude Code、Codex、OpenCode、Gemini CLI等作为可替换执行层\n- 多Agent可围绕不同子任务并行处理各自相关文件，减少上下文污染\n\n### 行动项\n- 访问repoprompt-ce仓库，评估是否适合现有AI编程工作流\n- 在macOS环境尝试使用brew install --cask repoprompt-ce安装体验\n- 在处理大型代码仓库时，优先实践文件筛选和任务拆分，而非直接投喂完整代码库\n\n### 存档判定\n归档: 是 — 原因: 包含RepoPrompt开源信息、上下文工程思路和MCP架构变化，对AI编程工具链有一定参考价值\n删除: 否\n留存决策: 短期参考后可删除，若正在研究AI编程工作流可归档",
+    "role": "assistant",
+    "timestamp": 1783080376560,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:1fe9babd5db13916415b830522b1fd68a7c5de3fdedf2bef70d051a9325eaedc",
+  "refs": {
+    "sessionId": "1783079884316_pxlqiarl"
+  },
+  "revisionId": "sha256:5584cfab6c3f53126bb6a9b140b6d80ec0e1578456972f345ddb00d6fdb20e6c",
+  "schemaVersion": 1,
+  "updatedAt": 1783080376560
+}

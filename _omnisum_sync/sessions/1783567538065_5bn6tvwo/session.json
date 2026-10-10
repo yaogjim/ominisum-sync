@@ -1,0 +1,69 @@
+{
+  "createdAt": 1783567538065,
+  "entityType": "session",
+  "id": "1783567538065_5bn6tvwo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将文中的提示改写为通用项目审查模板，适配常用AI编程工具",
+      "在下次重构或接手项目时测试该流程，并记录计划质量与执行效果",
+      "对AI输出的计划增加人工复核环节，尤其检查高影响变更和验证步骤"
+    ],
+    "archiveReason": "包含一个较完整的项目审查与执行计划生成提示，可复用于AI辅助开发流程",
+    "classifiedAt": 1783567568852,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Fable项目审查计划提示",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "项目审查前应先询问项目目的、成功标准和优化目标，避免AI自行假设",
+      "审查维度包括过度构建、脆弱点、缺失部分以及结构与目标的冲突",
+      "执行计划应包含变更内容、原因、涉及文件、实施顺序和验证方法",
+      "不确定事项应前置为开放问题，避免模型在关键假设上盲目推进"
+    ],
+    "oneHighValuePoint": "将高成本模型用于规划和审查，将低成本模型用于执行，是一种较有杠杆的AI开发协作分工。",
+    "oneLineReview": "实用性较强的AI项目审查提示模板，但证据支撑薄弱且带有明显工具推广色彩。",
+    "primaryCategory": "AI工具与工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "可提炼为AI项目审查提示模板后归档，原推文本身无需长期反复阅读",
+    "secondaryCategories": [
+      "AI编程",
+      "项目审查",
+      "提示词工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提供一个使用高能力模型先审查完整项目、生成修复计划，再交给低成本模型执行的工作流提示。核心步骤包括明确目标、阅读项目、从四个角度审查问题，并输出可执行计划。",
+    "tags": [
+      "Fable",
+      "AI代理",
+      "代码审查",
+      "项目规划",
+      "成本优化"
+    ],
+    "title": "Shann³: how to have Fable 5 review your whole project and write the plan to fix it Fable…",
+    "totalScore": 57,
+    "url": "https://x.com/shannholmberg/status/2074817317184397381"
+  },
+  "payloadHash": "sha256:432aa6511545d40b55e8ac6746559f0cb571c1e8663f62f6f079f1be3c41ad46",
+  "refs": {},
+  "revisionId": "sha256:1c0aaa4b5ca7fb3fdfaca4d8727948be076c34128e1bc3746e2002a9a571f79e",
+  "schemaVersion": 1,
+  "updatedAt": 1789729118584
+}

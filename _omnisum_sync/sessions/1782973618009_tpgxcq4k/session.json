@@ -1,0 +1,88 @@
+{
+  "createdAt": 1782973618009,
+  "entityType": "session",
+  "id": "1782973618009_tpgxcq4k",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需集成 Eve 与 OpenUI，可参考 src/eve-chat.ts 和 src/eve-stream.ts 实现会话桥接与事件映射",
+      "运行示例前安装依赖、配置 LLM_API_KEY，并使用 pnpm dev 启动 Next.js 与 Eve 开发服务器",
+      "生产环境暴露前应将 anonymous authentication 替换为经过认证的 Eve channel"
+    ],
+    "archiveReason": "包含具体接入架构、事件映射、会话持久化和运行步骤，对相关项目有参考价值",
+    "classifiedAt": 1783039641797,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Vercel Eve接入OpenUI示例",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.openui.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://www.openui.com/og/docs/openui-lang/examples/harnesses/vercel-eve/image.webp",
+        "role": "hero",
+        "score": 70,
+        "src": "https://www.openui.com/og/docs/openui-lang/examples/harnesses/vercel-eve/image.webp",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "OpenUI 可通过 agUIAdapter 消费由 Eve 事件转换而来的 AG-UI SSE 流",
+      "Eve 的 session ID、continuation token 和 stream cursor 可与 OpenUI thread 绑定，实现多轮上下文和可恢复流式传输",
+      "Eve 的 actions.requested、message.appended、turn.failed 等事件可映射为 OpenUI 所需的工具调用、文本和错误事件",
+      "通过动态 instruction 注入 OpenUI component library prompt，可让模型输出与渲染组件库同步的 OpenUI Lang",
+      "示例使用 localStorage 保存线程元数据、转录记录和 Eve 会话状态"
+    ],
+    "metaAuthor": "OpenUI",
+    "oneHighValuePoint": "保留 Eve 原有会话协议，通过事件适配层转换为 AG-UI，从而让 OpenUI 渲染流式文本、工具调用和生成式组件。",
+    "oneLineReview": "这是一篇偏工程示例型文档，实操价值较高，但适用范围较窄，方法论和长期价值有限。",
+    "primaryCategory": "AI应用开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合在实际集成 OpenUI 与 Eve 时查阅",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Generative UI",
+      "前端集成",
+      "Agent工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍如何将 Vercel Eve agent 接入 OpenUI，通过 Eve HTTP 会话协议和可恢复流式事件，将 Eve 事件转换为 AG-UI SSE，并在 OpenUI FullScreen 聊天界面中渲染文本、工具调用和生成式 UI。",
+    "tags": [
+      "OpenUI",
+      "Vercel Eve",
+      "AG-UI",
+      "Next.js",
+      "流式响应",
+      "工具调用"
+    ],
+    "title": "Vercel Eve | OpenUI - The Open Standard for Generative UI",
+    "totalScore": 62,
+    "url": "https://www.openui.com/docs/openui-lang/examples/harnesses/vercel-eve"
+  },
+  "payloadHash": "sha256:d92c74c175b7d44d765077ce4d1c5fb31c2a0c3904ee1785e20ab9aa0b1392be",
+  "refs": {},
+  "revisionId": "sha256:82e3b8224db88e56482bd3791c14f5b310a79bf2c28f687d60885de8fd0c4450",
+  "schemaVersion": 1,
+  "updatedAt": 1784713120652
+}

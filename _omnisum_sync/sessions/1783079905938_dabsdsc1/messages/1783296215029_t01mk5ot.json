@@ -1,0 +1,20 @@
+{
+  "createdAt": 1783296137811,
+  "entityType": "message",
+  "id": "1783296215029_t01mk5ot",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n作者认为，**不要把 `CLAUDE.md / AGENTS.md` 当成“万能提示词银弹”**。如果 Agent 的运行框架（Agent harness）设计得足够好，`AGENTS.md` 里只需要写项目相关信息、个人偏好和具体职责，而不是塞入大量通用知识或工作方法。\n\n---\n\n## 1. 对 `AGENTS.md` 的核心看法\n\n- `AGENTS.md` 不应该承担所有指导 Agent 的功能。\n- 通用知识、通用工作流程，应该由更完善的 Agent harness 来处理。\n- `AGENTS.md` 更适合记录：\n  - 当前项目的背景和约定；\n  - 使用者的个人偏好；\n  - 该 Agent 的角色、权限和职责。\n\n简单说：**`AGENTS.md` 是“项目说明书”和“职责说明书”，不是“万能操作手册”。**\n\n---\n\n## 2. 作者的全局 `AGENTS.md` 设计\n\n作者在全局路径 `~/.agents/AGENTS.md` 中，只写本地代码仓库和 worktree 的目录约定。\n\n### 代码仓库路径约定\n\n```bash\n~/repos/github.com/org_name/repo_name\n```\n\n### Worktree 路径约定\n\n```bash\n~/worktrees/github.com/org_name/repo_name/branch_name\n```\n\n这样做的好处是：\n\n- 多个 Agent 不会把项目随意 clone 到不同位置；\n- worktree 位置统一，方便管理和清理；\n- Agent 在 clone 前会先检查本地是否已经存在仓库，避免重复下载。\n\n---\n\n## 3. 项目级 `AGENTS.md` 的内容\n\n项目目录下的 `.agents/AGENTS.md` 主要放项目相关信息，例如：\n\n- 项目概览；\n- 文档路径；\n- 特殊开发要求。\n\n作者举例提到，可以在这里写明：**禁止滥用 fallback**。\n\n也就是说，项目级配置重点是告诉 Agent：  \n“这个项目是什么、文档在哪里、有哪些特别规矩。”\n\n---\n\n## 4. AgentHome 中的 `AGENTS.md`\n\n作者还会在 AgentHome 的 `.agents/AGENTS.md` 中写入该 Agent 的角色和职责，比如：\n\n- 是否有合并代码的权限；\n- PR 流程要求；\n- Review 流程要求；\n- CI 要求；\n- Deploy 部署流程要求。\n\n这相当于给不同 Agent 分配不同身份：  \n有的 Agent 可以只负责 Review，有的可以处理 PR，有的可能具备合并或部署权限。\n\n---\n\n## 5. Codex 中的使用方式\n\n如果使用 Codex，作者会：\n\n1. 给每个 Agent 创建一个专用的 AgentHome 目录；\n2. 在该目录下启动 Codex；\n3. 再告诉 Codex 项目目录在哪里。\n\n这样 Codex 会优先加载 AgentHome 下的 `AGENTS.md`，从而知道自己当前的角色、职责和权限范围。\n\n---\n\n## 6. holon 的处理方式\n\n作者提到，在 **holon** 中，这套机制已经被自动内置。\n\n也就是说，holon 会自动处理类似：\n\n- 全局目录约定；\n- 项目信息加载；\n- AgentHome 角色职责；\n- 多 Agent 协作中的路径和权限管理。\n\n---\n\n## 7. 热门回复中的相关讨论\n\n原文下方有几条热门回复，内容较分散，主要包括：\n\n- 有用户提到 Claude 为了解决问题，甚至会自己去火山引擎提交工单并和工程师交流，体现出 Agent 行为越来越主动。\n- 有回复讨论 Maka 的 Harness 工程，称其让 **DeepSeek Flash V4** 在 `terminal-bench sample` 上达到 **0.8 分**，实际效果接近 **0.9**，接近 **GLM 5.2** 的评测水平。\n- 其他热门回复还涉及投资入门知识库、AI 产品工作经历等，与原帖主题关联较弱。\n\n---\n\n## 总结\n\n作者的核心经验是：**真正重要的是 Agent harness 的工程设计，而不是把 `AGENTS.md` 写成复杂万能提示词。**  \n更好的做法是分层管理：全局文件管目录约定，项目文件管项目规则，AgentHome 文件管角色职责。这样 Agent 才能稳定、清晰、可控地工作。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1783296137811,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f7f1f0d847a6fc902a3c9c086d00b3900d23a54fb4f205b27307823802d2e305",
+  "refs": {
+    "sessionId": "1783079905938_dabsdsc1"
+  },
+  "revisionId": "sha256:12c2e546a02240dc64b15b4363caabb1d8cbc7b8920aa4642661e99f13bd50e4",
+  "schemaVersion": 1,
+  "updatedAt": 1783296137811
+}

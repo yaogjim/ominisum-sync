@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694422626,
+  "entityType": "message",
+  "id": "1789694422625_6s0sq85n",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一份基于两年生产实践的 PostgreSQL“生存指南”：性能优化不只是加索引，还要同时管好查询、锁、连接、自动清理和迁移。\n\n## 关键内容\n\n- **先打好基础**：按常见查询方式设计表和索引；多条件筛选与排序可使用复合索引。事务应尽量短，只锁必要行；大表建索引宜用 `CREATE INDEX CONCURRENTLY`，避免阻塞写入。\n- **慢查询要看执行计划**：PostgreSQL 会根据统计信息选择索引扫描或全表扫描，后者不一定是错误。可用 `EXPLAIN ANALYZE` 对比预估与实际，但在生产环境执行需谨慎。\n- **高写入场景重在批量与清理**：作者实践中，批量写入曾把吞吐量提高约 10 倍；同时必须调优并监控 autovacuum，否则“死行”堆积，严重时可能触发事务 ID 回卷并造成停机。\n- **规模扩大后的工具**：`FOR UPDATE SKIP LOCKED` 可实现并发任务队列；分区表便于清理历史数据；超大表搬迁可用触发器同步新写入，再分批回填。\n\n## 通俗解读\n\n索引不是万能加速器：它会增加写入和维护成本，查询命中大量数据时，全表扫描反而可能更便宜。文中的许多规则是作者的经验建议，并非所有业务都应照搬。\n\n**是否值得细读：**如果你负责生产环境 PostgreSQL，尤其遇到慢查询、高写入或大表迁移，值得细读；仅做小型应用可先看基础章节。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694422626,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3657f1975e97f755468aad26fdcf1e94d9b979d11ef53c229ef56bb022b7cde8",
+  "refs": {
+    "sessionId": "1785288237839_aak6k9cy"
+  },
+  "revisionId": "sha256:921c842377a4c959c96c3c4b09061cb6b788a1b560c7c9c714e56b29dd32505a",
+  "schemaVersion": 1,
+  "updatedAt": 1789694422626
+}

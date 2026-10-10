@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784692666433,
+  "entityType": "session",
+  "id": "1784692666433_uc4cgux0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在调试会话中先定位异常时间，再按用户操作、控制台、网络、像素和可访问性树逐层调查。",
+      "评估会话回放工具时，检查其是否支持时间戳跳转、前后状态比较和原始证据回溯。",
+      "如需验证文中的产品主张，可用一组 Sentry 告警试用并核对其能否产出用户影响、复现步骤和已验证修复。"
+    ],
+    "archiveReason": "文章提出了以时间线和多层证据导航替代完整回放的可复用思路，对 Agent 调试和可观测性设计有参考价值",
+    "classifiedAt": 1784693329425,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "代理式会话回顾的地图模型",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter-pip.3.ico",
+    "knowledgePoints": [
+      "会话调试可以先通过时间线定位异常，再围绕特定时间点下钻到不同证据层级。",
+      "提前摘要可能丢失根因细节，逐帧回放又会造成上下文和注意力浪费。",
+      "代理式调查的有效性取决于底层会话捕获是否保存了足够完整、可重现的证据。"
+    ],
+    "oneHighValuePoint": "将会话回放设计为可缩放、可下钻的证据地图，让代理按问题动态选择调查粒度，而不是预先总结或逐帧消费全部内容。",
+    "oneLineReview": "核心的分层调查思路有价值，但文章主要是产品宣传，缺少独立数据和效果验证。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并保留其会话调查框架，产品宣传部分无需重点记忆",
+    "secondaryCategories": [
+      "可观测性",
+      "调试工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以“地图而非电影”比喻代理式会话回顾，主张让代理先定位异常，再按时间戳逐层查看用户操作、控制台、网络请求、像素和可访问性树。文中介绍 Subtext 基于 MCP 工具和 Fullstory 会话数据实现该方案，并以 Sentry 告警处理作为应用示例。",
+    "tags": [
+      "Agent调查",
+      "会话回放",
+      "MCP工具",
+      "可观测性",
+      "根因分析"
+    ],
+    "title": "一张地图，不是电影",
+    "totalScore": 66,
+    "url": "https://x.com/chiplay/status/2077429411897643436"
+  },
+  "payloadHash": "sha256:f2119cdba351fcc86b88e8160106111e9f0084f7c9506b3656b23facc790e856",
+  "refs": {},
+  "revisionId": "sha256:68b48156e0e7e253e880923a3d3a84a83b65d1bfeba750c9da41cda76ee8d62f",
+  "schemaVersion": 1,
+  "updatedAt": 1789728876506
+}

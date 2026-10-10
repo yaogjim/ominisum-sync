@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729089485,
+  "entityType": "message",
+  "id": "1789729089486_b34ysjs7",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Maka：强调本地控制、权限边界与运行恢复的桌面 AI Agent\n\nMaka 是一个仍在活跃开发的开源桌面 AI 工作台。它不只提供聊天界面，而是把模型接入、文件与终端工具、会话管理、记忆、搜索及机器人渠道整合进 Electron 应用，目标是在个人电脑上运行可观察、可控、可恢复的 AI Agent。\n\n## 从模型配置到本地任务执行\n\nMaka 支持 Anthropic、OpenAI、Gemini、DeepSeek、Moonshot、Kimi、Ollama及兼容 OpenAI 的自定义网关。首次启动会根据真实连接状态引导用户配置密钥、测试连接并选择默认模型，尚未打通发送链路的入口不会标记为可用。\n\n核心能力包括：\n\n- 会话创建、搜索、归档、重试、分支及异常恢复；\n- Read、Write、Edit、Bash、Glob、Grep 等本地工具；\n- 本地记忆、Tavily 联网搜索和 Office 文档工作流；\n- Telegram、飞书、企业微信、Discord、钉钉、QQ 等机器人入口；\n- 受 Token 保护的本地 HTTP/SSE 网关。\n\n## 运行内核强调可靠性与权限控制\n\n项目将运行流程拆分为会话管理、单次任务、模型适配、工具执行、追踪与持久化等模块。工具层统一处理参数校验、权限、超时、中止、错误分类和遥测；模型层负责统一不同供应商的流式输出、错误与用量数据。运行记录支持应用重启后的恢复，而追踪写入失败不会影响正常对话。\n\n## “本地优先”不等于密钥已加密\n\n会话、设置和连接信息默认保存在 Electron 本地工作区。文件写入、Shell 和危险操作需经过权限引擎，前端界面也不会直接获取明文密钥。\n\n但 README 明确指出，多数 API Key、机器人 Token 和代理密码目前仍以明文 JSON 保存，只依赖操作系统账户及文件权限保护；部分订阅 OAuth Token 才使用 Electron `safeStorage`。因此其安全边界更接近“数据不主动上云、由本机账户隔离”，而非完整的本地加密方案。\n\n## 产品已具框架，但尚未正式发布\n\n仓库已有设计系统、隐私威胁模型、视觉回归和完整测试计划，显示其重点是构建可长期使用的 Agent 基础设施。不过项目尚无正式 Release 或发布包，能力成熟度仍需结合实际测试判断。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729089485,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f0945a14ea2d2410b3db9f969deec1cc41b7c7710fe920030068801b04dcea97",
+  "refs": {
+    "sessionId": "1783567101773_3a5z8o4c"
+  },
+  "revisionId": "sha256:d11d4029d6b9307a3349a535eef83fe2887e4964796e3045c285ac63fff09393",
+  "schemaVersion": 1,
+  "updatedAt": 1789729089485
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784693822632,
+  "entityType": "message",
+  "id": "1784693942842_vo54r1yo",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 主旨概括\n\nSebastian Raschka 认为，在代理式编码场景中，应根据性能与成本的“帕累托前沿”选择模型：多数情况下，提高 **Luna** 的推理强度比使用低档 **Sol** 更划算；只有追求顶级性能时，才有必要选择 **Terra Ultra**。\n\n## 1. 模型选择建议\n\n- **通常优先选择 Luna + 更高 effort（推理强度）**\n  - 除非确实需要 **Terra Ultra** 的顶级性能，否则 Luna 在提高 effort 后，往往能以更低成本实现相同或更好的效果。\n\n- **不建议使用 Sol High 以下的配置**\n  - 在这一性能区间，改用 Luna 并提高 effort，性价比更高。\n\n- **不建议使用 Sol Extra High**\n  - 作者认为这一档不够划算，若需要更高性能，可以直接考虑 **Terra Ultra**。\n\n- **谨慎选择 Sol Ultra**\n  - 相比 Max，Sol Ultra 增加的成本可能无法带来足够大的收益，因此未必值得。\n\n## 2. 图表标签更正与结论有效性\n\n- 作者随后说明，原始图表存在**标签错位**，并发布了修正版。\n- 正确对应关系包括 **Ultra = Max** 等，但他强调：\n  - 图表中的绝对标签需要修正；\n  - **不同模型之间的相对性能和成本比较仍然成立**。\n- 据作者了解，Ultra 可能主要是通过让 **4 个子代理并行运行 Max** 来提升速度，而不一定代表基础模型能力有本质变化。\n\n## 3. 数据来源与标注方法\n\n- 图表基于 OpenAI 官方发布的图表修改而来。\n- 原图包含 **6 个数据点**，作者将它们与 **6 个工作强度等级**对应，并补充了档位标签。\n- 社区有人追问 Ultra 数据的来源，因为在相关博客中未找到；作者以官方图表作为来源说明。\n\n## 4. Luna 的性能扩展疑问\n\n针对“为什么 Luna 无法继续扩展到更高性能，是否受上下文长度限制”的问题，作者认为：\n\n- Luna 曲线较陡，说明它理论上可能还有进一步提升空间。\n- **上下文长度未必是硬性限制**。\n- 更可能的原因是：模型没有针对更高的 token 预算进行训练，因此即使提供更多预算，也未必会主动使用更多 token。\n- 推理扩展还可能受到 token 使用方式等多种因素影响，不能简单归因于上下文长度。\n\n## 5. 核心结论\n\n实际选择时，可优先遵循以下思路：\n\n1. 中低性能需求：选择 **Luna，并提高 effort**；\n2. 避免性价比较低的 **Sol 低档及 Extra High**；\n3. 只有需要最顶级性能时，才考虑 **Terra Ultra**；\n4. 对 Ultra、Max 等档位的比较需注意图表曾有标签错误，应重点参考其**相对成本与性能关系**。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784693822632,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3e2f0f906a6d228ab1fe19dd0a585be4b5d450ac47ab3e4c79c032ab6908e4b6",
+  "refs": {
+    "sessionId": "1784693942483_4ael6li4"
+  },
+  "revisionId": "sha256:a4b0b2aad8c55bd6dfc86603df1fdacb250cc9bff415920243713c173a88c59c",
+  "schemaVersion": 1,
+  "updatedAt": 1784693822632
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696102906,
+  "entityType": "message",
+  "id": "1789696102907_dcqrumk8",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nGraphify 是一个开源工具，可把代码、文档、数据库结构及多媒体整理成可查询的知识图谱，让 AI 编程助手通过关系路径理解项目，而不只靠搜索文件或向量检索。\n\n## 关键内容\n\n- **代码优先本地处理**：使用 tree-sitter 解析约 40 种语言，过程确定、无需 LLM；文档、PDF、图片等语义提取则可能调用所配置的模型。\n- **结果可追溯**：输出交互式 `graph.html`、摘要报告和完整 `graph.json`；每条关系标为源码明确存在的 `EXTRACTED`、工具推断的 `INFERRED` 或有歧义的 `AMBIGUOUS`。\n- **可直接查询关系**：支持解释概念、回答自然语言问题、寻找两个实体之间的最短路径，并识别核心节点、子系统和跨文件联系。\n- **生态较完整**：支持 Claude Code、Cursor、Codex、Gemini CLI 等多种助手，也提供增量更新、Git Hook、MCP 服务及团队共享；作者还给出了优于部分记忆/RAG 工具的测试成绩，但属于项目方自测。\n\n## 通俗解读\n\n它不是把文件切片后找“语义相似内容”，而是建立“谁调用谁、谁依赖谁”的关系网，更适合回答“认证模块如何连到数据库”这类问题。若你维护大型、多语言代码库，值得细读安装、隐私和基准测试部分；仅需偶尔搜索小项目则可能偏重。另需留意 README 对“查询日志默认是否开启”存在前后不一致，使用前应以当前版本配置为准。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696102906,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7524cbcf782288c7101ed3ac84fc132862e0f5463f7e4202c8e0d1f58aee2a54",
+  "refs": {
+    "sessionId": "1784605016190_kxsais9q"
+  },
+  "revisionId": "sha256:81afbab83f3b50f8e788fc9f667f5b715308dd732dd925f44c3cbb7b925287ca",
+  "schemaVersion": 1,
+  "updatedAt": 1789696102906
+}

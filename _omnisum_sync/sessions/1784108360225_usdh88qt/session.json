@@ -1,0 +1,94 @@
+{
+  "createdAt": 1784108360225,
+  "entityType": "session",
+  "id": "1784108360225_usdh88qt",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "准备Ollama或其他OpenAI兼容推理服务器，并分别配置生成模型与嵌入模型接口。",
+      "安装并启动PrivateGPT，通过内置UI验证消息、文档上传、引用检索和工具调用。",
+      "根据项目需求测试MCP、数据库查询和自定义工具，再决定是否将其作为产品后端。"
+    ],
+    "archiveReason": "项目定位、能力边界、分层架构、兼容条件和快速启动步骤均较清晰，可直接用于私有AI产品原型与技术选型。",
+    "classifiedAt": 1784678172535,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "PrivateGPT本地AI应用开发层",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1784108388075,
+        "imageId": "img-4",
+        "model": "gpt-5.6-sol",
+        "ocrText": "",
+        "summary": "# PrivateGPT：把本地模型变成可用 AI 产品的开源 API 层\n\n## 一句话概括\n\nPrivateGPT 不是模型运行工具，也不是最终聊天产品，而是连接**本地模型与上层 AI 应用**的开源后端：提供 RAG、文档解析、工具调用、MCP、数据库查询等通用能力，帮助开发者快速构建私有化 AI 产品。\n\n## 核心定位\n\n其架构可以理解为：\n\n> 应用、Agent、工作流或 UI → PrivateGPT API → 本地推理服务 → 本地模型\n\nPrivateGPT 自身不运行模型，而是连接 Ollama、llama.cpp、vLLM、LM Studio 等兼容 OpenAI 接口的推理服务。对上层应用则主要参考 Claude API 设计，降低应用集成和迁移成本。\n\n## 主要能力\n\n- **模型交互**：消息、流式输出、异步处理、Token 统计。\n- **知识库与 RAG**：文件上传、PDF / 文档解析、向量检索、引用溯源、Agentic RAG。\n- **工具与 Agent**：网页搜索、网页抓取、代码执行、自定义工具、MCP 连接器。\n- **结构化数据**：数据库查询、Text-to-SQL、CSV 与表格分析。\n- **模型扩展**：Embedding、结构化输出、推理能力及多模态支持。\n- **开发调试**：内置 Workbench UI，可测试模型、文档检索、工具调用和 API 请求。\n\n## 产品边界\n\n| 产品 | 核心作用 |\n|---|---|\n| Ollama、vLLM、llama.cpp | 负责运行和提供模型推理 |\n| PrivateGPT | 提供构建 AI 应用所需的标准化 API 与通用能力 |\n| Open WebUI、Onyx | 面向用户的聊天、搜索等完整应用 |\n| Zylon | 面向企业的部署、治理、运维与合规平台 |\n\n内置 UI 主要用于演示、调试和内部试点，**API 才是核心产品**。开发者通常需要在其上构建自己的应用、Agent 或工作流。\n\n## 集成与适用场景\n\nPrivateGPT 可作为 Claude Desktop、Claude Code、Microsoft 365、n8n、VS Code、Cline 等工具的本地后端，适合：\n\n- 数据不能离开本地或内网的组织；\n- 需要私有知识库和可追溯问答的应用；\n- 希望统一接入多种本地模型的开发团队；\n- 需要构建内部 Agent、数据分析或自动化工作流的企业。\n\n## 成熟度与限制\n\n项目始于 2023 年的离线文档问答原型，GitHub Star 已超过 5 万；当前 1.0 版本已重构为面向生产的 API 层，并被 Zylon 企业平台实际采用。\n\n主要限制包括：\n\n- Skills 能力仍处于基础阶段；\n- 暂不支持 Prompt Caching；\n- 不提供 OAuth、组织体系等平台级能力；\n- 视觉与结构化输出效果依赖底层模型和推理服务；\n- 企业级高可用、权限、审计和运维并非开源版重点。\n\n## 商业模式与选择建议\n\nPrivateGPT 提供开源开发底座；Zylon 则在其上增加 Kubernetes 部署、推理集群、负载均衡、RBAC、LDAP、审计日志、监控、企业连接器及离线运行等能力。\n\n- **选 PrivateGPT**：需要灵活、开源、API-first 的本地 AI 应用底座。\n- **选 Zylon**：需要完整的企业部署、治理、合规、运维与商业支持。\n\n## 核心价值判断\n\nPrivateGPT 解决的不是 “如何在本地运行模型”，而是更接近产品落地的问题：\n\n> **模型已经运行起来后，如何低成本地把它变成真正可用、可集成的私有 AI 应用。**",
+        "url": "https://github.com/zylon-ai/private-gpt/raw/main/fern/docs/assets/privategpt_banner.png",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "Banner image",
+        "caption": "",
+        "height": 396,
+        "id": "img-4",
+        "nearbyText": "PrivateGPT is the open-source API layer that turns local models into production AI applications. Running a model locally is only the first step. To build useful AI applications you need a set of higher-level building blocks. PrivateGPT prov...",
+        "resolvedUrl": "https://github.com/zylon-ai/private-gpt/raw/main/fern/docs/assets/privategpt_banner.png",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/zylon-ai/private-gpt/raw/main/fern/docs/assets/privategpt_banner.png",
+        "width": 1584
+      }
+    ],
+    "knowledgePoints": [
+      "只要推理服务器实现/v1/chat/completions和/v1/models，PrivateGPT即可通过OPENAI_API_BASE接入。",
+      "PrivateGPT采用API优先定位，将消息、文件摄取、引用检索、工具调用、MCP和结构化数据访问统一到本地应用后端。",
+      "本地AI技术栈可拆分为模型推理层、应用API层和面向用户的产品层，各层可独立替换和扩展。"
+    ],
+    "oneHighValuePoint": "明确区分推理层、AI应用API层与最终应用层：PrivateGPT不负责运行模型，而是在OpenAI兼容推理服务之上提供可复用的RAG、工具和Agent后端能力。",
+    "oneLineReview": "这是一份实用且结构清晰的项目文档，开发与选型价值较高，但生产能力主要来自项目方自述，缺少独立测试和性能数据。",
+    "primaryCategory": "AI应用开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "作为本地私有AI应用后端的选型与集成参考长期保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent开发",
+      "私有化部署"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍PrivateGPT作为本地模型之上的开源AI应用API层，支持消息、文档摄取、RAG、工具、MCP和数据库访问，并给出安装启动、接口兼容、集成方式及企业版边界。",
+    "tags": [
+      "PrivateGPT",
+      "本地大模型",
+      "RAG",
+      "MCP",
+      "OpenAI兼容接口"
+    ],
+    "title": "zylon-ai/private-gpt: Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.",
+    "totalScore": 80,
+    "url": "https://github.com/zylon-ai/private-gpt"
+  },
+  "payloadHash": "sha256:bcc712fa3003843591c43d44b59349b7d54827add46a588579a7b2b677c27572",
+  "refs": {},
+  "revisionId": "sha256:ff76154b6618538eb7773d205fdc486c2b655fad44a514a3cfac0b1347aa8e3c",
+  "schemaVersion": 1,
+  "updatedAt": 1789696028707
+}

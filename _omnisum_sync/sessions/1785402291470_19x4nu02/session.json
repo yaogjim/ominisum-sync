@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785402291470,
+  "entityType": "session",
+  "id": "1785402291470_19x4nu02",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用一个低风险内部项目测试 Buzz，验证上下文连续性、执行速度和工作流稳定性。",
+      "按任务成本与复杂度为不同智能体绑定合适模型，并复用全局安装的技能。",
+      "选择一个现有业务数据源接入公开 API，尝试构建自动汇总、分析和团队讨论的闭环。"
+    ],
+    "archiveReason": "包含智能体共享上下文、可替换执行框架、Git并行开发和本地共享算力等可复用思路。",
+    "classifiedAt": 1785404367933,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "Buzz智能体协作与开放架构",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/b747a806/img/favicon.ico",
+    "knowledgePoints": [
+      "智能体可作为团队成员加入共享频道，利用累积的聊天、项目与决策上下文持续工作。",
+      "执行框架与上下文层可以解耦，使 Claude Code、Codex、Goose 等工具切换时保留既有工作记录。",
+      "智能体可通过功能分支和并行工作树开发多个版本，再结合 API 与定时工作流形成数据反馈闭环。"
+    ],
+    "oneHighValuePoint": "将团队聊天作为人类与智能体共享的上下文层，并允许底层模型或执行框架替换而不丢失项目历史，是最具长期价值的设计思路。",
+    "oneLineReview": "这是一次相关度高且有架构启发的产品导览，但证据与操作细节不足，适合选择性吸收而非全面照搬。",
+    "primaryCategory": "AI Agent开发与协作工具",
+    "rating": "B",
+    "rejectReason": "正文口语重复较多，缺少完整安装步骤、性能数据和独立验证，部分未来能力仍属推测。",
+    "retentionDecision": "选择性浏览并存档核心架构与工作流要点",
+    "secondaryCategories": [
+      "产品开发",
+      "开源软件"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章通过演示介绍 Buzz 的智能体原生协作模式：共享聊天上下文、替换不同执行框架、并行操作 Git 工作树、部署应用及接入 API，同时说明其开放协议、本地共享算力和早期预览阶段的局限。",
+    "tags": [
+      "Agent协作",
+      "上下文管理",
+      "可替换模型",
+      "并行开发",
+      "开放协议"
+    ],
+    "title": "Jack Dorsey's Buzz: Clearly Explained (and how to use it) - YouTube",
+    "totalScore": 66,
+    "url": "https://www.youtube.com/watch?v=_jGSgzBkzrY"
+  },
+  "payloadHash": "sha256:dfd4bc948131792607e933ca2fbc003ef5955fd5747203ca0c2a6687d464d288",
+  "refs": {},
+  "revisionId": "sha256:dc9d41a2771d11cc5afd30618772e0a4d9939565f8bd983f3fcec2e4c67220b8",
+  "schemaVersion": 1,
+  "updatedAt": 1789728233495
+}

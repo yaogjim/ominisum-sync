@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784801300990,
+  "entityType": "message",
+  "id": "1784801300990_aykw3hec",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 主旨概括\n\n作者提出了一种 **Skill 连续调度机制**：当用户执行完一个 Skill、不知道下一步该做什么时，只需再次输入 `/dbs`，系统就会根据上一轮对话自动推荐下一个合适的 Skill，让任务自然延续。\n\n## 1. 核心问题：Skill 执行后难以衔接\n\n- 用户调用完一个 Skill 后，常常不知道接下来应该使用哪个 Skill。\n- 如果预先规定固定工作流，流程会过于死板，难以适应不同任务。\n- 如果完全让用户临场判断，用户又可能不了解各个 Skill 的用途，无法做出合适选择。\n\n## 2. 解决方案：用 `/dbs` 自动推荐下一步\n\n- 用户完成当前操作后，可以再次输入 `/dbs`。\n- `/dbs` 会自动解析上一轮对话内容和任务进展。\n- 系统据此推荐下一步最适合调用的 Skill，而不需要用户自行选择。\n\n## 3. 使用效果：形成持续、灵活的任务链\n\n- 用户只需不断调用 `/dbs`，就可以让对话和任务持续推进。\n- 这种方式既避免了固定工作流的僵化，也降低了用户判断下一步操作的门槛。\n- 有用户表示，已经将这一方法加入自己的“总调度 Skill”，并进一步提出：是否可以把所有 Skill 都接入统一调度系统。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784801300990,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7103d2d065b9d2da7bdaa705d2d01c5c4c0c50df51ad8674475fdfde188ef898",
+  "refs": {
+    "sessionId": "1783080037419_ei1nhr3n"
+  },
+  "revisionId": "sha256:f3e8218c823ab262cf80ec1313ff4c32cf44522c4b979dad8440698bdcab2df3",
+  "schemaVersion": 1,
+  "updatedAt": 1784801300990
+}

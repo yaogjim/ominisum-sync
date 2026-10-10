@@ -1,0 +1,70 @@
+{
+  "createdAt": 1783567600109,
+  "entityType": "session",
+  "id": "1783567600109_kkjixb3e",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在引入新技术前列出其必要性、替代方案、运维成本和失败模式",
+      "建立团队级技术选型评审机制，确保新增技术具备组织可见度",
+      "优先用现有成熟工具解决问题，只有在收益显著超过长期成本时才引入新技术",
+      "为已引入的新技术制定迁移、淘汰或收敛计划"
+    ],
+    "archiveReason": "包含经典且可复用的技术选型框架，对工程决策和团队技术治理有长期参考价值",
+    "classifiedAt": 1783567631018,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 9,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "选择无聊技术的选型哲学",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "每家公司可承受的新技术复杂度有限，可类比为有限的“创新 token”",
+      "成熟技术的优势不仅是功能稳定，更是失败模式被充分理解",
+      "技术选型应从公司整体运维、维护和认知成本出发做全局优化",
+      "引入新技术前应先验证现有技术栈是否真的无法解决问题",
+      "新增技术若与旧系统重叠，应明确迁移计划，避免技术栈碎片化"
+    ],
+    "oneHighValuePoint": "新技术不是不能用，但必须意识到它会消耗组织注意力和运维能力，应以全局成本而非局部最优来决策。",
+    "oneLineReview": "一篇关于技术选型克制、工程复杂度控制和组织全局优化的经典文章。",
+    "primaryCategory": "软件工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "技术选型",
+      "工程文化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章主张技术选型应优先选择成熟、失败模式清晰的“无聊技术”，把有限创新额度用于真正关键的问题，并通过组织级可见的流程审慎引入新技术。",
+    "tags": [
+      "无聊技术",
+      "创新token",
+      "技术债",
+      "工程管理",
+      "全局优化"
+    ],
+    "title": "yibie: 推荐这篇，Dan McKinley（前 Etsy 工程师）写的经典工程文化文章",
+    "totalScore": 81.5,
+    "url": "https://x.com/yibie/status/2074710124497981738"
+  },
+  "payloadHash": "sha256:3aa21883730402f7088648a36c4b9aa5d622fbe87c9860d536d3a1a65d8d8da7",
+  "refs": {},
+  "revisionId": "sha256:6b4cc8fa0545e7f1cf80e30bbd5951ce34f4cca9881ed871def28af0d48d8420",
+  "schemaVersion": 1,
+  "updatedAt": 1789695905341
+}

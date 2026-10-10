@@ -1,0 +1,85 @@
+{
+  "createdAt": 1783299452386,
+  "entityType": "session",
+  "id": "1783299452386_16411xu7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如从事逆向或安全分析，可将该文档作为任务入口索引收藏",
+      "遇到具体任务时先按目标类型、意图、工具链三维分类，再选择对应工具或流程",
+      "不要作为系统学习材料精读，应进一步阅读对应SKILL.md或具体案例文档"
+    ],
+    "archiveReason": "包含较完整的逆向、安全、CTF、渗透测试等任务到工具链和模块的映射，可作为任务分流清单参考",
+    "classifiedAt": 1783418937701,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 2,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "逆向安全技能路由索引",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/0be59db8eec130d5e19decf7d0408ba402d0b467c5b1b9c9c34b14d180b077b4/zhaoxuya520/reverse-skill",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/0be59db8eec130d5e19decf7d0408ba402d0b467c5b1b9c9c34b14d180b077b4/zhaoxuya520/reverse-skill",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "逆向任务可按目标类型分为APK、二进制、JS/Web、固件、WASM、iOS、恶意样本等类别",
+      "同一任务需要同时匹配目标类型、用户意图和工具链，避免错误套用分析流程",
+      "用户的非正式表达应先规范化为技术目标，再选择对应分析模块",
+      "复杂任务可跨模块组合，例如Web运行时、API安全、CTF、移动逆向和二进制分析联动"
+    ],
+    "oneHighValuePoint": "提出按目标类型、用户意图、工具链三维匹配后再进入对应技能模块的路由原则。",
+    "oneLineReview": "这是一个覆盖面较广的安全任务路由表，适合查找入口，不适合精读学习。",
+    "primaryCategory": "网络安全与逆向工程",
+    "rating": "B",
+    "rejectReason": "内容主要是索引式路由表，缺少原理解释、案例验证和实操细节，且AI生成痕迹较重",
+    "retentionDecision": "短期参考后可归档，适合作为逆向与安全任务的路由索引，不适合作为深入学习材料",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "知识库路由",
+      "安全工具链",
+      "逆向分析流程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "本文是一个逆向与安全技能路由文档，按目标类型、用户意图和工具链将任务分配到不同模块，如APK逆向、IDA、radare2、JS逆向、LLM安全、渗透测试等，适合作为任务分流索引。",
+    "tags": [
+      "逆向工程",
+      "技能路由",
+      "安全工具",
+      "CTF",
+      "AI生成内容"
+    ],
+    "title": "reverse-skill/skills/routing.md at main · zhaoxuya520/reverse-skill",
+    "totalScore": 60,
+    "url": "https://github.com/zhaoxuya520/reverse-skill/blob/main/skills/routing.md"
+  },
+  "payloadHash": "sha256:49515a28cec89ce3da65896dac1c987912981e864446fb2af89118a7576e95a9",
+  "refs": {},
+  "revisionId": "sha256:fca018e44e527b1f897519e14038b803a67d3068125c0ec3c6dd04d04954bbcb",
+  "schemaVersion": 1,
+  "updatedAt": 1783418938062
+}

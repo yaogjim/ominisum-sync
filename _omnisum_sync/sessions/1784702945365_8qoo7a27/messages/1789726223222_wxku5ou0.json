@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726223222,
+  "entityType": "message",
+  "id": "1789726223222_wxku5ou0",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nHerdr 是一个面向编程智能体的终端编排工具：可在持久化窗格中并行启动测试、审查等任务，并统一发送指令、等待状态和收集结果。\n\n## 关键内容\n\n- **先分清三层对象**：工作区/标签页/窗格负责终端布局；`pane` 命令控制普通终端进程，如测试、服务器；`agent` 命令控制 Herdr 已识别的编程智能体及其状态。启动智能体前必须先创建窗格，`agent start` 不会自动拆分布局。\n- **典型审查流程**：新建或拆分窗格，保存命令返回的 pane ID；在其中启动 Codex、Claude 等智能体；用 `agent prompt --wait` 提交“审查当前改动”，待其进入 `idle`、`done` 或 `blocked` 后读取输出。普通测试则用 `pane run` 和 `pane wait-output`。\n- **状态不等于结论**：`blocked` 表示需要批准或回答，`done` 表示后台任务完成但尚未查看，`unknown` 只表示无法可靠判断，不能视为成功。部分智能体依靠屏幕内容识别状态，可能把陌生提示误判为 `idle`。\n- Herdr 会话在后台持续运行，可本地使用，也可通过 SSH 从电脑或手机重新连接；多个智能体的状态会汇总到侧边栏，方便定位谁在工作、谁需处理、谁已完成。\n\n## 通俗解读\n\nHerdr 更像“带状态看板的 tmux”，而不是替你完成审查的智能体。它负责给不同助手分配终端、派任务并等待结果。全文屏应用的历史输出可能因 alternate screen 丢失；应先缩短回复或扩大窗格，必要时再让智能体把完整结果写入文件。\n\n**是否值得细读：**若要写脚本自动协调多个编码智能体，尤其需可靠处理 ID、超时和状态，值得细读；若只是手动开一个智能体，掌握上述流程即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726223222,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e5beba6e79ecf232d49f139d765ca0a622e944257bcb984851ff9386bc97ba1b",
+  "refs": {
+    "sessionId": "1784702945365_8qoo7a27"
+  },
+  "revisionId": "sha256:a85109b68545f9b5bf424c5d266a1e688da8b426c80e5f5aa20214018887667b",
+  "schemaVersion": 1,
+  "updatedAt": 1789726223222
+}

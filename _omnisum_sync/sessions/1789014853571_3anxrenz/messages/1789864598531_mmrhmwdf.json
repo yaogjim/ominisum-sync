@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789864598530,
+  "entityType": "message",
+  "id": "1789864598531_mmrhmwdf",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "Portless 要解决的，是本地开发中一个看似很小、却经常打断工作的问题：端口号不稳定，也不容易记。它让你不再访问 localhost 冒号三千，而是用类似 myapp 点 localhost 这样的固定名称打开应用。这个地址对开发者更直观，对自动化代理也更可靠。\n\n它的基本原理很简单。启动应用时，Portless 会从四千到四千九百九十九之间分配一个空闲端口，再把应用名称注册到本地反向代理。浏览器访问 myapp 点 localhost，请求会先到代理，再被转发给真正的应用端口。端口仍然存在，但被隐藏在稳定的网址后面。\n\n例如，原本用 next dev 启动项目，可以改为 portless run next dev。之后访问的就是 https 冒号双斜杠 myapp 点 localhost。应用名称可以明确指定，也可以根据 package 点 json 中的包名、Git 仓库根目录名称或当前目录自动推断。直接运行 portless 时，它还会默认执行项目的 dev 脚本。\n\n大多数框架会读取 PORT 环境变量，所以 Next.js、Express 和 Nuxt 等框架通常不需要额外适配。对于 Vite、Astro、Angular、Expo 和 React Native 等可能忽略这个变量的工具，Portless 会识别真正用于启动服务器的命令，并自动补上端口参数，必要时还会补上主机参数。\n\n这里的识别比较谨慎。像 Vite build、Astro check 这类不启动服务器的命令，不会被错误地添加端口参数。复合命令、带环境变量前缀的命令，或者继续委托给另一个脚本的命令，如果无法安全修改，也会保持原样。这种情况下，需要开发者在脚本中自行配置端口。\n\nPortless 默认使用 HTTPS，并支持 HTTP 二。第一次运行时，它会生成一个本地证书颁发机构，也就是本地 CA，并把它加入系统的信任存储。这样浏览器不会弹出证书警告。它默认使用四百四十三端口，因此在 macOS 和 Linux 上，首次绑定端口时可能需要通过 sudo 提权。如果不需要 HTTPS，也可以使用 no tls 选项，改成普通 HTTP。\n\n默认采用 HTTP 二并不只是为了让本地网址看起来像生产环境。传统 HTTP 一点一通常限制每个主机同时使用的连接数。Vite 或 Nuxt 这类开发服务器可能需要加载大量没有打包的文件，容易受到这个限制。HTTP 二可以在一个连接中并行传输多个请求。开发服务器常用的热更新 WebSocket，也能正常经过代理。\n\nPortless 的一个重要价值，是同时运行多个项目时不再需要手工争抢端口。前端可以叫 myapp 点 localhost，接口服务可以叫 api 点 myapp 点 localhost，文档站可以叫 docs 点 myapp 点 localhost。默认情况下，只有明确注册过的名称才能访问。如果启动代理时开启 wildcard，也就是通配符模式，未单独注册的子域名就可以回退到对应的父应用。这适合需要模拟多租户子域名的项目。\n\n这种命名方式对 Git worktree 尤其有用。Git worktree 可以让同一个仓库的不同分支同时存在于多个工作目录。Portless 会自动识别链接的 worktree，并把分支名放到应用名称前面。主工作区仍然使用 myapp 点 localhost，而 fix-ui 分支可以自动获得 fix-ui 点 myapp 点 localhost。这样多个分支可以同时运行，不会发生端口冲突，也不需要反复使用 force 强行接管路由。\n\n在多包仓库里，Portless 可以从 pnpm workspace 配置，或者 package 点 json 的 workspaces 字段发现各个包。从仓库根目录运行时，它会启动所有包含 dev 脚本的工作区包。默认网址通常采用“包名点项目名点 localhost”的形式，也可以通过 portless 点 json 为前端、接口等包分别指定名称。它也能配合 Turborepo 使用，不需要修改 turbo 点 json。\n\n除了默认的点 localhost，Portless 还支持自定义顶级域名。比如使用点 test，代理会自动更新本机的 hosts 配置，让 myapp 点 test 指向本机。官方更推荐点 test，因为这是专门保留用于测试的域名，不容易产生冲突。点 local 应尽量避免，因为它会和 mDNS 或 Bonjour 冲突。点 dev 也要谨慎，因为浏览器会强制它使用 HTTPS。\n\n更进一步，还可以把自己拥有的真实域名用于本地开发，比如 myapp 点 dev 点 example 点 com。这样，本地环境与生产环境可以保持相似的网址结构，对跨子域 Cookie、基于主机名的路由和 OAuth 登录尤其有帮助。Google、Apple 等严格的 OAuth 提供商可能拒绝点 localhost 和点 test 的回调地址，却可以接受真实域名下的 HTTPS 回调地址。\n\n不过，自定义域名默认仍然只在本机可用。普通模式下，代理只监听一二七点零点零点一和 IPv6 回环地址，不接受局域网、虚拟专用网络或其他网络接口的连接。这是一个重要的安全边界。\n\n如果确实需要在手机或同一网络中的其他设备上测试，可以启用 LAN 模式。此时代理会监听局域网接口，并通过 mDNS 提供类似 myapp 点 local 的地址。Portless 能自动检测局域网 IP，并在无线网络或地址变化时跟随更新。但 LAN 模式使用点 local，并会忽略自定义顶级域名，因此目前不能与自定义域名模式结合。Next.js 在这种模式下，还需要把相应的点 local 主机名加入 allowedDevOrigins 配置。\n\n如果需要把开发服务器分享给远程队友，Portless 还能接入 Tailscale。它会同时保留本地地址，并在 Tailscale 私有网络中注册一个 HTTPS 地址。也可以通过 Tailscale Funnel 或 ngrok 暴露到公共互联网。应用退出时，相应的共享注册和隧道会自动清理。不过这些功能依赖外部工具已经安装、登录并完成证书或权限配置。\n\n日常使用中，Portless 会记住最近一次代理的端口、HTTPS、顶级域名和 LAN 设置，自动重启时不会悄悄恢复默认值。它还可以安装成操作系统启动服务，让代理在电脑重启后自动运行。出现问题时，可以用 portless list 查看活动路由，用 portless doctor 检查代理、域名解析和证书信任，用 portless prune 清理崩溃后遗留的开发进程。\n\n最值得记住的是，Portless 并没有消灭端口，而是用稳定、可读的名字管理端口。它的核心收益不仅是少记几个数字，更是让多项目、多分支、多包仓库和自动化工具拥有一致的本地入口。需要注意的是，它尚未发布一点零版本。项目内安装时，不同贡献者可能使用不同版本，状态目录格式也可能变化，因此全局安装通常更稳妥，升级后偶尔可能需要重新执行证书信任操作。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1785716664510",
+    "prompt_template_name": "口播总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789864598530,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:07038023a29ffa35b9f98b9027efbdda757f0bc5d081d0361622f137909b68f0",
+  "refs": {
+    "sessionId": "1789014853571_3anxrenz"
+  },
+  "revisionId": "sha256:6ad9cdc6d3c867a63dde80ddf539d5f54c7215a72369b38edd991049a4ffe64c",
+  "schemaVersion": 1,
+  "updatedAt": 1789864598530
+}

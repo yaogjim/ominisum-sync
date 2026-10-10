@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783567136156,
+  "entityType": "message",
+  "id": "1783567136155_urpvri3k",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 本地优先AI桌面助手Maka\n\n**评级**: B (63分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工具与桌面Agent\n**次类别**: 开源项目, 本地优先应用, Agent运行时架构\n**标签**: #Maka #AI桌面助手 #local-first #Electron #Agent #工具权限\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 适合快速了解一个本地优先AI桌面Agent项目的产品边界和工程结构，但不宜当作高质量技术论文精读。\n**核心高价值点**: 对本地凭据、会话数据、工具权限和运行恢复的边界说明较清晰，可作为设计本地AI Agent安全边界的参考。\n\n### 摘要\n该README介绍Maka本地优先AI桌面助手的功能、模型接入、隐私边界、工具权限、运行时架构、开发命令和测试流程。内容实用性较强，但主要是项目说明，缺少实测数据、案例效果和深入技术论证。\n\n### 知识要点\n- Maka采用Electron桌面应用形态，整合模型连接、会话、工具调用、文件读写、终端执行、搜索和机器人入口。\n- 其运行时架构拆分为SessionManager、AgentRun、AiSdkBackend、ModelAdapter、ToolRuntime、RunTrace等边界。\n- 本地隐私设计强调数据存放在Electron userData工作区，并通过权限引擎控制文件写入和命令执行。\n- 项目支持多类模型来源，包括OpenAI、Anthropic、Gemini、DeepSeek、Moonshot、Ollama和OpenAI兼容网关。\n- 开发流程提供npm workspace命令、测试命令、视觉回归、真实窗口smoke和release检查。\n\n### 行动项\n- 如果关注本地AI Agent，可浏览其docs/runtime-kernel.md和隐私威胁模型文档。\n- 参考其权限引擎、凭据存储和工具调用边界，整理自己的Agent安全设计清单。\n- 如需评估项目成熟度，应进一步查看源码、issue、测试覆盖和实际运行体验，而不是只依据README判断。\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的功能边界、隐私存储说明、运行时架构和开发命令，对理解本地AI Agent桌面应用有参考价值\n删除: 否\n留存决策: 短期参考后可保留，适合作为本地优先AI桌面Agent产品与架构样例",
+    "role": "assistant",
+    "timestamp": 1783567136156,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:7d4e5dd0732c81d3454f69529716fe42a21fca976ba7ad88b2efb401e1296fa0",
+  "refs": {
+    "sessionId": "1783567101773_3a5z8o4c"
+  },
+  "revisionId": "sha256:8044fbbf3c4ccb1efcf69672ba2a61336d35474459077bb901faac2b3856ab61",
+  "schemaVersion": 1,
+  "updatedAt": 1783567136156
+}

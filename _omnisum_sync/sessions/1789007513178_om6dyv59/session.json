@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789007513178,
+  "entityType": "session",
+  "id": "1789007513178_om6dyv59",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "盘点现有产品中高频、重复且边界明确的云端模型调用，筛选可迁移到端侧的任务。",
+      "使用SDK对一个候选任务进行小规模验证，对比质量、延迟、能耗、包体积和云端成本。",
+      "为AI功能设计本地优先的分层路由规则，并明确升级到较大模型或云端的条件。"
+    ],
+    "archiveReason": "提出了可迁移的本地小模型优先、复杂任务再升级至大模型或云端的产品架构，并提供了多个具体任务与指标。",
+    "classifiedAt": 1789008119532,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "端侧专用模型的产品化路径",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "desertant.com",
+    "favicon": "https://desertant.com/favicon.svg",
+    "knowledgePoints": [
+      "清理音频、语言识别、个人信息遮蔽等高频固定任务，通常不必依赖通用前沿模型。",
+      "可采用端侧小模型优先、较大模型补位、必要时上云的分层推理与路由架构。",
+      "端侧模型的产品竞争力来自模型、运行时和硬件加速的协同优化，而不只是压缩模型体积。"
+    ],
+    "oneHighValuePoint": "将高频、边界明确的任务交给端侧专用小模型，仅在复杂任务中调用大模型或云端，可同时降低延迟、成本与隐私风险。",
+    "oneLineReview": "端侧AI产品化思路具体且高度相关，但性能优势主要来自厂商自述，仍需独立基准验证。",
+    "primaryCategory": "端侧AI产品开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读其端侧架构与选型思路后存档，性能数据需独立验证",
+    "secondaryCategories": [
+      "AI模型工程",
+      "产品架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章发布Desert Ant Labs及18款端侧音频、视觉和文本模型，列举速度、体积、隐私与成本指标，并提出“小模型优先、大模型补位、必要时上云”的分层产品架构。",
+    "tags": [
+      "端侧推理",
+      "专用小模型",
+      "本地优先架构",
+      "隐私计算",
+      "模型路由"
+    ],
+    "title": "On-device intelligence for every product",
+    "totalScore": 72,
+    "url": "https://desertant.com/blog/introducing-desert-ant-labs/"
+  },
+  "payloadHash": "sha256:d628ea90724a47eda534e06aaef4b61afe05854f4188c1119f785d8757adf22f",
+  "refs": {},
+  "revisionId": "sha256:cd39b246a10c2dccde34d22be11e8beacf272103560b32e8ff845beed394ed51",
+  "schemaVersion": 1,
+  "updatedAt": 1790770295423
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784694052090,
+  "entityType": "session",
+  "id": "1784694052090_fkrszze5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为一个正在开发的Agent或产品建立最小规格页面，同时记录目标、约束、原型和验收检查项。",
+      "尝试增加模板、文件树、测试存在性与配置绑定检查，观察其能否减少实现漂移。",
+      "为界面原型加入可定位的注解反馈，让人工评审能够针对具体区域驱动Agent进行局部修复。"
+    ],
+    "archiveReason": "文章提出了将规格、原型、结构化约束和自动检查结合的可复用思路，与Agent开发和产品实现高度相关。",
+    "classifiedAt": 1784694307111,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "面向Agent的Mini-App规格",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Mini-app spec尝试同时承载自然语言意图、结构化约束和可交互原型，缩短规格与实现之间的距离。",
+      "规格对账可以覆盖模板结构、文件存在性、测试状态以及配置和密钥绑定关系。",
+      "相较于Markdown loop和HTML loop，Mini-app loop强调将意图建模、原型嵌入和机械化检查纳入同一构建循环。"
+    ],
+    "oneHighValuePoint": "把规格的核心职责定义为持续保住原始意图，并通过模板、文件树、测试和配置检查来验证实现是否与意图对齐。",
+    "oneLineReview": "这是一个对Agent开发流程有启发的规格设计框架，但目前主要停留在概念和案例描述层面，缺少实现细节与验证数据。",
+    "primaryCategory": "AI Agent 工作流",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "值得精读和长期保留，适合作为Agent辅助开发与规格设计的概念参考",
+    "secondaryCategories": [
+      "产品设计",
+      "软件工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍“mini-app spec”概念，主张用浏览器原生的可执行小型制品承载文字意图、结构化数据、原型行为、注解和对账检查，以减少规格与实现之间的偏移，并将Agent开发从人工比对推进到可机械验证的构建循环。",
+    "tags": [
+      "Mini-App Spec",
+      "Agent工作流",
+      "规格对账",
+      "原型驱动开发",
+      "人机协作"
+    ],
+    "title": "yibie: 推荐这个思路",
+    "totalScore": 70,
+    "url": "https://x.com/yibie/status/2076234522555982198"
+  },
+  "payloadHash": "sha256:257e5d9db71893f61b0d17f497ff0f46a4d236db48b88ecf4e699592ef30af21",
+  "refs": {},
+  "revisionId": "sha256:b292c88651c8c4b5f717c33806a144491bcf47e2fe9c25d2b12b67b741d63f4f",
+  "schemaVersion": 1,
+  "updatedAt": 1789696188305
+}

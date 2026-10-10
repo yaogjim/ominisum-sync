@@ -1,0 +1,20 @@
+{
+  "createdAt": 1783079526256,
+  "entityType": "message",
+  "id": "1783079648795_2m1wevrl",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章介绍了一套“4 人 AI 代理流水线”：**规划者 → 编码者 → 测试者 → 评审者**，通过自动交接文件和一个统一命令，让 AI 在夜间独立完成一个功能开发流程。核心观点是：**真正提升效率的不是堆很多代理，而是让代理按顺序交接、各司其职。**\n\n---\n\n## 1. 为什么“流水线”比“一堆代理”更有效\n\n作者认为，很多人虽然用了多个 AI 代理，但仍然是手动调度：今天让一个代理评审，明天让另一个生成测试，彼此不知道上下文，最终人仍然是瓶颈。\n\n更好的方式是建立一个固定流程：\n\n```text\nPlanner → Coder → Tester → Reviewer\n规划者 → 编码者 → 测试者 → 评审者\n```\n\n关键机制是使用共享交接文件夹：\n\n```text\n.pipeline/\n```\n\n每个代理把自己的输出写入文件，下一个代理读取这些文件继续工作。例如：\n\n- 规划者写入：`.pipeline/spec.md`\n- 编码者读取 spec，并写入：`.pipeline/changes.md`\n- 测试者读取 changes，并写入：`.pipeline/test-results.md`\n- 评审者综合所有信息，写入：`.pipeline/review.md`\n\n这样每个代理只处理自己负责的阶段，避免一个代理上下文过长导致质量下降。\n\n---\n\n## 2. 代理 1：规划者 Planner，负责把需求变成规格\n\n规划者使用更强的模型 **Opus**，因为它决定后续工作的质量上限。\n\n它不写代码，只做规划，主要任务是：\n\n- 阅读代码库相关部分，理解现有模式\n- 生成实现规格文档：`.pipeline/spec.md`\n- 明确要创建或修改的文件路径\n- 写清函数接口、边界情况、应参考的现有代码模式\n- 如果需求不明确，在文档顶部标记 `OPEN QUESTION`\n\n文章强调：如果规格模糊，即使编码者很强，也容易产出模糊代码。\n\n---\n\n## 3. 代理 2：编码者 Coder，按规格实现功能\n\n编码者使用 **Sonnet**，因为它适合在清晰规格下完成实现，性价比高。\n\n编码者的职责是：\n\n- 完整读取 `.pipeline/spec.md`\n- 如果发现 `OPEN QUESTIONS`，停止，不自行猜测\n- 严格按照规格实现代码\n- 不额外添加需求之外的功能\n- 不重构无关代码\n- 将改动总结写入：`.pipeline/changes.md`\n\n总结内容包括：\n\n- 改了哪些文件\n- 每个改动做了什么\n- 测试者需要重点关注什么\n\n---\n\n## 4. 代理 3：测试者 Tester，编写并运行测试\n\n测试者同样使用 **Sonnet**。\n\n它会读取：\n\n- `.pipeline/changes.md`\n- `.pipeline/spec.md`\n- 实际修改过的代码文件\n\n然后编写测试，覆盖：\n\n- 正常路径，即 happy path\n- 规格中提到的边界情况\n- 至少一个失败场景\n\n测试者还会运行测试，并将结果写入：\n\n```text\n.pipeline/test-results.md\n```\n\n如果测试失败，它只记录失败信息并停止，不自行修复代码。作者强调：测试者负责验证行为，不应该绕过问题去改代码。\n\n---\n\n## 5. 代理 4：评审者 Reviewer，作为最后关卡\n\n评审者使用 **Opus**，并且是只读角色，不能修改代码。\n\n它会读取：\n\n- `.pipeline/spec.md`\n- `.pipeline/changes.md`\n- `.pipeline/test-results.md`\n- `git diff`\n\n评审重点包括：\n\n- 代码是否符合规格\n- 测试是否真正有效，而不是表面覆盖\n- 是否存在安全、性能、正确性问题\n\n最终输出到：\n\n```text\n.pipeline/review.md\n```\n\n评审结论有三种：\n\n- `SHIP`：可以交付\n- `NEEDS WORK`：需要修改\n- `BLOCK`：阻塞，不能合并\n\n作者特别指出：**测试通过不代表行为一定正确**，如果代码逻辑有问题，即使绿灯也应判定为 `BLOCK`。\n\n---\n\n## 6. 编排器：用一条命令串起四个代理\n\n作者用一个 Claude Code 斜杠命令来运行整条流水线：\n\n```text\n/ship add rate limiting to the login endpoint\n```\n\n示例需求是：给登录接口添加限流。\n\n这个命令会依次执行：\n\n1. 调用 Planner，生成 `.pipeline/spec.md`\n2. 如果有 `OPEN QUESTIONS`，停止并展示问题\n3. 调用 Coder，生成 `.pipeline/changes.md`\n4. 调用 Tester，生成 `.pipeline/test-results.md`\n5. 如果测试失败，停止并展示失败\n6. 调用 Reviewer，生成 `.pipeline/review.md`\n7. 展示最终结论，但不自动合并代码\n\n这样用户可以晚上启动任务，第二天早上查看结果和评审意见。\n\n---\n\n## 7. 作者推荐的托管运行方式：Teamly\n\n文章后半部分介绍作者使用的工具 **Teamly**，它是一个面向 AI 代理团队的云托管服务。\n\n作者认为 Teamly 适合这个流程，因为它已经内置了类似的交接机制：\n\n- 自动协调多个代理\n- 在代理之间传递上下文\n- 维护共享简报\n- 不需要用户自己搭建 `.pipeline` 文件和编排器\n\n它不仅能用于代码开发，也可以用于：\n\n- 营销团队\n- 研究团队\n- 客服支持团队\n\n也就是说，同样的“规划 → 执行 → 检查”交接逻辑，可以应用到不同类型的工作中。\n\n---\n\n## 8. Teamly 的团队定制功能\n\n文章提到 Teamly 新推出了“我的团队”功能，可以通过 **3 个问题**组建团队。\n\n用户还可以控制：\n\n- 语音规则\n- 禁用短语\n- 集成方式\n- 团队风格：严格、随意、创意\n- 团队规模：2–4 个代理\n\nTeamly 会解释为什么选择这些专家，而不是直接给模板化团队。用户也可以一键替换代理或编辑简报。\n\n---\n\n## 9. 试用与成本信息\n\n作者提到 Teamly 提供免费试用：\n\n- 可免费试用 **3 天**\n- 从第 **4 天**开始收费\n\n作者的观点是：如果一个 AI 团队能交付一个已上线功能，那么这个功能带来的价值可能足以覆盖一个月费用。\n\n---\n\n## 10. 结论：关键不是代理数量，而是交接机制\n\n文章最后总结：一堆代理和真正流水线的区别在于 **交接**。\n\n有效配置是：\n\n```text\n四个专家代理 + 共享文件夹 + 一个顺序编排命令\n```\n\n建议从简单版本开始：\n\n1. 先搭建 Planner 和 Coder\n2. 跑通两阶段流程\n3. 稳定后加入 Tester\n4. 最后加入 Reviewer\n\n最终目标是：睡前启动一个功能开发任务，早上喝咖啡时查看代码、测试结果和评审结论。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1783079526256,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:190581fb77246afb8526f997a2945f81e1fe825f4dd624ccb735c5a39d6d077c",
+  "refs": {
+    "sessionId": "1783079106679_ybopm2n8"
+  },
+  "revisionId": "sha256:880d270ea54fdcda1990a768ff283db31841dbca79a46481fcedddeb136400a3",
+  "schemaVersion": 1,
+  "updatedAt": 1783079526256
+}

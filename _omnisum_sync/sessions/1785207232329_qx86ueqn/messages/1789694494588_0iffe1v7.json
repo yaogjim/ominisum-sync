@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694494588,
+  "entityType": "message",
+  "id": "1789694494588_0iffe1v7",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者复盘 Waku Agent 开源 16 天获得 500+ Stars、合并 17 个 PR 的经历：项目开始有人协作后，真正的难题会从“写代码”转向测试权限、任务协调、规则变更和代码冲突。\n\n## 关键内容\n\n- **测试可能被权限卡住**：陌生贡献者从 Fork 提交 PR 后，自动化测试可能要维护者批准才运行，导致贡献者等待、维护者也无法依据测试结果审查。\n- **Issue 必须明确认领**：作者曾让两人重复开发同一个功能，最终只能合并一份；建议先让贡献者留言，再分配任务并公开说明。\n- **工具规则会波及所有 PR**：新增代码风格检查后，别人原本正确、甚至没改过的文件也报错。作者建议锁定检查器版本，并先在所有未合并 PR 上验证新规则。\n- **大文件会制造合并拥堵**：多个 PR 同改一个 1695 行文件，冲突频发；拆分文件后可降低协作阻塞。\n\n## 通俗解读\n\n核心不是 GitHub 有多难用，而是开源一旦有人参与，维护者就需要建立“交通规则”。这是一篇简短、具体的踩坑清单，**适合准备发布或刚开始维护开源项目的人细读**；若只关心 AI Agent 产品本身，信息较少，可快速浏览。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694494588,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7f5694af3d32033c4bb7a081eef095e6d0ba8befeef83d1af0dfabc8ebd92d88",
+  "refs": {
+    "sessionId": "1785207232329_qx86ueqn"
+  },
+  "revisionId": "sha256:c6aad1bd5ea8de1f50e4f46269f4beee4638662e8c2086cf091d621ee9f88d45",
+  "schemaVersion": 1,
+  "updatedAt": 1789694494588
+}

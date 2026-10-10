@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727309605,
+  "entityType": "message",
+  "id": "1789727309606_jgbllisn",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Cursor BYOK 修复工具结果丢失：模型可继续读取搜索与目录内容\n\n该 PR 修复了工具调用结果在后续模型轮次中被过度压缩的问题。此前，成功执行 `grep` 或 `ls` 后，系统只回放“执行成功、文件数量”等元数据，模型却看不到实际匹配内容、文件列表或目录结构，难以基于结果继续分析。\n\n## 保留真正有用的工具输出\n\n修复后，回放结果将包含：\n\n- `grep` 的实际匹配内容、文件列表和匹配数量；\n- `ls` 返回的完整目录树，而非仅保留路径与文件数；\n- 结果是否不完整、是否被截断等状态信息。\n\n这使模型能够在下一轮直接利用搜索与目录信息继续定位代码、理解项目结构，减少重复调用工具或因缺少上下文而做出错误判断。\n\n## 在信息完整性与上下文成本间设限\n\n为避免超大工具结果挤占模型上下文，单次回放载荷被限制在 **64 KiB**。超过限制时，系统会明确标记结果已截断，而不是悄然丢失内容。\n\nPR 同时补充了针对 `grep` 内容、文件列表、计数及 `ls` 目录树摘要的测试，并通过 `go test ./...`；作者称候选版本也已在正式的 18080/18090 运行环境中完成本地构建与验证。其核心意义是提升智能编码代理多轮工具协作的连续性和可靠性。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727309605,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:fd1d3233330780ff6811f3ce6a325e21b40e9dad9bc10f737aff07a3c5eed83c",
+  "refs": {
+    "sessionId": "1785396457827_0lxnkfq0"
+  },
+  "revisionId": "sha256:b1191a00ce0e3bb7aeced501e74a7d7aaba1d6d162262c428b4d983fe63059fa",
+  "schemaVersion": 1,
+  "updatedAt": 1789727309605
+}

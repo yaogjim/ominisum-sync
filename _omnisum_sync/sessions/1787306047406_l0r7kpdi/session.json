@@ -1,0 +1,67 @@
+{
+  "createdAt": 1787306047406,
+  "entityType": "session",
+  "id": "1787306047406_l0r7kpdi",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按风险、步骤确定性和可验收性对现有流程分层，标记DAG执行区与Agent探索区。",
+      "为每个自动化步骤定义独立环境、输入输出、验收条件和失败后的人工接管点。",
+      "盘点现有RAG与领域知识的时效性和局部更新能力，并验证关键程序是否可固化为函数。"
+    ],
+    "archiveReason": "提出了按流程风险和任务不确定性划分确定性工作流与自治Agent边界的可复用判断思路。",
+    "classifiedAt": 1787306189868,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "企业Agent自动化的混合架构选型",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "企业Agent不必在全自治与固定工作流之间二选一，可依据风险和不确定性采用混合架构。",
+      "长流程Agent需要外置状态管理、规划监督、局部知识更新和人工介入机制。",
+      "可由脚本、数据库或固定函数可靠完成的环节，应优先使用确定性技术而非LLM或RAG。"
+    ],
+    "oneHighValuePoint": "根据任务风险与步骤确定性划分技术边界：固定、高风险主流程使用可验收的确定性DAG，探索性和路径不确定任务再交给自治Agent。",
+    "oneLineReview": "场景具体且选型矛盾真实，混合架构思路值得参考，但缺少实施结果、验收指标和证据支持。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性保留，作为企业Agent架构选型与风险控制的讨论材料",
+    "secondaryCategories": [
+      "企业流程自动化",
+      "技术架构选型"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以百人研发部门的AI流程自动化为背景，对比Hermes自治Agent与LangGraph确定性工作流两条路线，并提出高风险固定流程采用DAG、探索性任务交给Agent的混合架构。回复补充了外置状态、人工复核和优先使用传统程序等建议。",
+    "tags": [
+      "LangGraph",
+      "企业Agent",
+      "确定性工作流",
+      "人机协作",
+      "流程自动化"
+    ],
+    "title": "Wei: 最近在帮一个百人以上的研发部门做 AI 流程自动化，卡在技术选型上了",
+    "totalScore": 65,
+    "url": "https://x.com/wei_wang/status/2089536762821448087?sort_replies=likes"
+  },
+  "payloadHash": "sha256:c90a85c9a4f4c8d0d113ba7d221164916331d672dd55aee37b0a66a879984d30",
+  "refs": {},
+  "revisionId": "sha256:a1fb303db18562579289c33cad5ce22c6612b1bbc33160e3ccf17e59607d5c38",
+  "schemaVersion": 1,
+  "updatedAt": 1789727943320
+}

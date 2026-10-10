@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696136404,
+  "entityType": "message",
+  "id": "1789696136405_gja9xyo2",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nOpenChatCut 是一个处于早期开发阶段的开源 AI 视频编辑器，主打让内置 Agent、Codex 或 Claude Code 直接修改真实多轨工程，而不是只生成一段难以继续编辑的视频。\n\n## 关键内容\n\n- **AI 与传统剪辑结合**：自然语言操作会落实为轨道、片段、字幕、转场和特效等具体修改，可预览、手调、撤销并继续交给其他 Agent。\n- **功能较完整**：README 宣称已支持多轨时间线、文字稿删词剪辑、字幕、音频处理、动态图形、WebGL 特效，以及 MP4、SRT、FCPXML 和完整工程导出。\n- **本地优先、按需联网**：工程、聊天和素材主要保存在本机；基础剪辑不依赖云服务，AI 生成、转写和在线素材需自行配置相应服务与密钥。\n- **面向开发者开放**：通过 MCP，Codex、Claude Code 等可调用编辑器内部同一套工具。项目采用 AGPL 许可证，与商业版 ChatCut 无隶属关系。\n\n## 通俗解读\n\n它更像“AI 帮你操作剪辑软件”，而非“输入一句话直接吐出成片”：例如让 Agent 删除口误、加字幕和转场后，你仍能在时间线上检查和修改。需要注意，安装包和工程格式仍在迭代，macOS 包尚未签名；文中能力主要是项目方自述。\n\n**是否值得细读：** 想尝试本地 AI 剪辑、MCP 自动化或参与开发，值得细读；只想找成熟稳定、开箱即用的剪辑工具，可先观望。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696136404,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9225c5a4d3408c25c9ed657e818926eef4250eff8af923055b611f74e2d0a1fc",
+  "refs": {
+    "sessionId": "1784605354175_rv374v9v"
+  },
+  "revisionId": "sha256:9319bfda8fdcab17fb14b16b13ffde6699bebd4ab306155fe3909ecbf3995f39",
+  "schemaVersion": 1,
+  "updatedAt": 1789696136404
+}

@@ -1,0 +1,15 @@
+{
+  "createdAt": 1784179807575,
+  "entityType": "session-content",
+  "id": "1784179807575_8ucwe85p",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>写增长的子木</strong></header><div class=\"tw-body\">我有个关于「AI Agent 应用」的想法，不知道对错？大家看看<br><br>如图，以 Ads 广告业务 Agent 为例子。<br><br>多租户 Agent 应用架构：共享核心 Agent Skill + 租户业务数据 + 独立反馈闭环 = 客户专属 Agent 应用<br><br>1、共享通用 Skill 加租户业务 Wrapper Skill。每个租户的 Wrapper Skill 会结合自身业务 Context、私有数据、配置、记忆和反馈持续自升级<br><br>2、多个租户的共性反馈会反向进入 Evaluation，推动通用 Skill 升级<br><br>3、通用 Skill 升级后，所有依赖它的租户 Agent 都能同步获得新能力</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HNTKw2SaIAAHQsR?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@写增长的子木</strong> <span class=\"tw-eng\">♥ 20 · 💬 3</span><p>下次做外链前，先保存这份「排名 × 转化」决策表。<br><br>1）新站早期<br><br>先把外链预算集中到首页，目标是提升全站权重。<br><br>2）页面有流量、没有注册<br><br>先检查页面意图和 CTA 是否匹配，或者在正文中增加 inline signup。<br><br>这通常不是外链优先级问题。<br><br>3）高转化页在 SERP 第二页<br><br>先补充 5–10 条外链，持续 4</p></div><div class=\"tw-reply\"><strong>@写增长的子木</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>技能可以相互调用，每个租户的 Wrapper Skill 就拥有了毁天灭地的自定义能力：<br><br>租户 A 只需要重写“胶水逻辑”：租户 A 的 Wrapper 可能只有几行代码，它的作用只是重新定义调用顺序：“当【市场分析】结果大于 X 时，先调用【出价优化】，再调用【策略生成】；否则，直接跳过。”<br><br>私有 Skill</p></div></div>",
+    "pageContent": "写增长的子木: 我有个关于「AI Agent 应用」的想法，不知道对错？大家看看 如图，以 Ads 广告业务 Agent 为例子。 多租户 Agent 应用架构：共享核心 Agent Skill + 租户业务数据 + 独立反馈闭环 = 客户专属 Agent 应用 1、共享通用 Skill 加租户业务 Wrapper Skill。每个租户的 Wrapper Skill 会结合自身业务 Context、私有数据、配置、记忆和反馈持续自升级 2、多个租户的共性反馈会反向进入 Evaluation，推动通用 Skill 升级 3、通用 Skill 升级后，所有依赖它的租户 Agent 都能同步获得新能力\n![图片](https://pbs.twimg.com/media/HNTKw2SaIAAHQsR?format=jpg&name=large)\n---\n热门回复 (共 2 条):\n@写增长的子木 (♥ 20 · 💬 3):\n下次做外链前，先保存这份「排名 × 转化」决策表。\n\n1）新站早期\n\n先把外链预算集中到首页，目标是提升全站权重。\n\n2）页面有流量、没有注册\n\n先检查页面意图和 CTA 是否匹配，或者在正文中增加 inline signup。\n\n这通常不是外链优先级问题。\n\n3）高转化页在 SERP 第二页\n\n先补充 5–10 条外链，持续 4\n\n@写增长的子木 (♥ 1 · 💬 0):\n技能可以相互调用，每个租户的 Wrapper Skill 就拥有了毁天灭地的自定义能力：\n\n租户 A 只需要重写“胶水逻辑”：租户 A 的 Wrapper 可能只有几行代码，它的作用只是重新定义调用顺序：“当【市场分析】结果大于 X 时，先调用【出价优化】，再调用【策略生成】；否则，直接跳过。”\n\n私有 Skill\n"
+  },
+  "payloadHash": "sha256:10f14419360eaf9a9a3a64158c1def071d928bc114074aeb8ca649c0d5c75bec",
+  "refs": {},
+  "revisionId": "sha256:94a2e52146c5a08e69d2617686241450117c68ee6c10630749feb26967f9204f",
+  "schemaVersion": 1,
+  "updatedAt": 1789728846669
+}

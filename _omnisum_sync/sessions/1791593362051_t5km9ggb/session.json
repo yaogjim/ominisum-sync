@@ -1,0 +1,63 @@
+{
+  "createdAt": 1791593362051,
+  "entityType": "session",
+  "id": "1791593362051_t5km9ggb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估软件产品护城河时，分别审视代码可复制性、持续维护与客户支持能力，以及代码使用的授权风险。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1791594565344,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI反编译与软件护城河争议",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "反编译代码与开源代码不能等同，代码获取方式和使用许可是不同问题。",
+      "讨论软件护城河时，应区分代码复制能力与持续维护、迭代及客户支持能力。"
+    ],
+    "oneHighValuePoint": "反编译获得代码不等于获得开源许可，技术上的可获取性不能替代合法使用授权。",
+    "oneLineReview": "议题与AI产品和软件商业直接相关，但核心预测缺乏证据，价值主要在于提示代码复制、商业服务与合法授权之间的区别。",
+    "primaryCategory": "软件商业与竞争壁垒",
+    "rating": "C",
+    "rejectReason": "缺少具体工具、反编译案例、效果数据及许可分析，主要由预测和零散反驳组成，尚不足以形成可靠结论或可复用方法。",
+    "retentionDecision": "速览争议要点，不作为技术能力或商业趋势的判断依据",
+    "secondaryCategories": [
+      "AI技术应用",
+      "软件知识产权"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章转引AI逆向工程将使所有软件实质开源的预测。回复从代码并非完整护城河、软件持续维护与企业支持、反编译不等于开源授权等角度反驳，但未提供技术案例或数据，且夹杂无关广告。",
+    "tags": [
+      "AI反编译",
+      "软件护城河",
+      "开源许可",
+      "持续维护"
+    ],
+    "title": "Chamath Palihapitiya: This.",
+    "totalScore": 46,
+    "url": "https://x.com/chamath/status/2107891340168335543"
+  },
+  "payloadHash": "sha256:9ec3c757f8e965b89013b56ca9bcf55cd1fd66db096c60b2ddb2c3ed9b00deb8",
+  "refs": {},
+  "revisionId": "sha256:9f0b881dcbc7067f55e9bd08c1d4ec1ef404adf0b24c4ca2ca4ae6ed30462f98",
+  "schemaVersion": 1,
+  "updatedAt": 1791594565399
+}

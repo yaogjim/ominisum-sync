@@ -1,0 +1,65 @@
+{
+  "createdAt": 1783079910910,
+  "entityType": "session",
+  "id": "1783079910910_7tfzez0w",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注AI硬件供应链，应进一步查证高端MLCC厂商份额、价格和交期数据。",
+      "区分通用被动元件产能与AI服务器高端料号，不要将局部短缺误判为全面缺货。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783080353132,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI服务器MLCC短缺争议",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI服务器使用的高容、高压、低ESL MLCC可能存在交期拉长和价格上涨现象。",
+      "中低端通用电阻电容与高端AI服务器料号并非同一市场，扩产未必能缓解真正紧缺环节。"
+    ],
+    "oneHighValuePoint": "被动元件短缺可能不是总量短缺，而是AI服务器高端MLCC与中低端通用产能之间的结构性错配。",
+    "oneLineReview": "有一个值得注意的供应链判断点，但整体证据薄弱、噪声较高。",
+    "primaryCategory": "科技产业",
+    "rating": "C",
+    "rejectReason": "原帖信息极少且带有夸张表述，主要价值来自回复中的纠偏，但数据缺乏来源验证，整体不适合深度依赖。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "半导体供应链",
+      "AI硬件"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "原帖称国内电阻电容全面缺货并持续扩产，回复指出实际更可能是AI服务器级高端MLCC结构性短缺，而非低端通用料全面短缺，核心矛盾在产品结构和产能错配。",
+    "tags": [
+      "MLCC",
+      "AI服务器",
+      "被动元件",
+      "供应链",
+      "产能错配"
+    ],
+    "title": "✧ 𝕀𝔸𝕄𝔸𝕀 ✧: 据说国内的电子厂老板都已经疯掉了",
+    "totalScore": 43.5,
+    "url": "https://x.com/iamai_omni/status/2070772898625949942"
+  },
+  "payloadHash": "sha256:61bc50edeea1422173c9db59d82f94c24559243ff061b3c43284b3b20b6e90ba",
+  "refs": {},
+  "revisionId": "sha256:1df04cca818675b2757f6af93f7337467ca849198f523116ca25cd94973eab2c",
+  "schemaVersion": 1,
+  "updatedAt": 1784801278802
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1783558115275,
+  "entityType": "message",
+  "id": "1783558393854_aq5ijq4y",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n作者分享了自己长期使用 Codex 后总结出的 **6 条自定义指令**，核心思想是：写代码和修 bug 时要暴露真实问题、追根溯源、增强可观测性，并保持文档与主线稳定。\n\n## 1. 快速失败，不要静默吞错\n\n- **原则：Fail Fast / Errors Never Pass Silently**\n- 不要在代码里加入“兜底逻辑”去吞掉错误或隐藏异常。\n- 如果出问题，就应该让问题直接暴露出来。\n- 否则真实原因会被掩盖，后续更难定位。\n\n> 例子：接口返回异常时，不要简单返回默认值假装正常，而应记录并抛出错误。\n\n## 2. 修根因，不要只补表面\n\n- **原则：Fix the Cause, Not the Symptom / Don't Paper Over Bugs**\n- 出现 bug 时，不要用零散的小补丁、特殊判断去“糊住”问题。\n- 必须定位真实根因，并彻底修复。\n- 表面修复会让系统积累隐藏风险，变成难以发现的“暗病”。\n\n## 3. 增强可观测性，别假装修好了\n\n- **原则：Make It Observable**\n- 如果问题难以定位，不要偷懒做表面修复。\n- 应该增加足够的日志和观测信息，让下次问题复现时能查到原因。\n- 如果当前信息不足，就应该诚实说明“无法确认修复，需要新增日志”，而不是假装已经解决。\n\n## 4. 为调试和追踪而设计\n\n- **原则：Design for Debugging / Traceability**\n- 在关键路径上保留必要日志。\n- 确保每个关键节点都能追溯。\n- 这样当系统出问题时，可以顺着日志快速定位问题发生在哪一步。\n\n## 5. 文档要随代码一起更新\n\n- **原则：Living Documentation / Single Source of Truth**\n- 当项目的关键技术栈或产品方向发生变化时，要同步更新 `agents.md`。\n- 文档必须和代码一起演进。\n- 不能让文档变成过时、误导人的“谎言”。\n\n## 6. 不要破坏主线代码\n\n- **原则：Don't Break Mainline**\n- 进行大规模重构或实验性修改前，必须先切新分支。\n- 避免直接影响主线代码的稳定性。\n- 这样即使实验失败，也不会破坏已有可用版本。\n\n## 总结\n\n这 6 条指令强调的是一种稳健的工程习惯：**问题要暴露、修复要彻底、系统要可观测、文档要同步、主线要稳定**。它们尤其适合用于指导 AI 编程助手，避免生成“看似能跑、实际埋雷”的代码。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1783558115275,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7640de61eea7699ea868f7fb7aabc9b327a9ddce84511e7c105ce849afcb6989",
+  "refs": {
+    "sessionId": "1783556182350_7y8sqjzg"
+  },
+  "revisionId": "sha256:d35fb47029b284575762601c9cddf71f1db15773b393ee8c5320d006ce9a3817",
+  "schemaVersion": 1,
+  "updatedAt": 1783558115275
+}

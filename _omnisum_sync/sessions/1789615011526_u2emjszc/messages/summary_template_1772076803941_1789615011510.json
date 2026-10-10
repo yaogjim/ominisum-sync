@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789615011510,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1789615011510",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# AI Token 算力：供给十倍增长，仍难追上 Agent 需求\n\n作者判断，过去三年 AI 芯片和推理效率快速提升，使可对外提供的 Token 算力每年可能增长近 10 倍；但从 Chat、Coding 到 Agent，单次任务的 Token 消耗也在急剧上升，因此市场已长期处于供需 “紧平衡”。\n\n## 算力供给快速增长\n\n据作者估算，目前市场约有**2000 万张 H100 等效卡**的算力，Token 年消耗量已达到 “几十万亿亿” 级，较上年增长接近一个数量级。\n\n过去三年，AI 芯片算力供给每年约增长**3 倍**。如果再考虑以下因素，实际 Token 产出能力的年增幅可能接近**10 倍**：\n\n- 芯片数量增加；\n- 单卡性能提升；\n- 量化、缓存、推测解码等推理优化，让同一张卡生成更多 Token。\n\n## 产品升级推动需求成倍放大\n\nAI 产品每升级一种形态，完成任务所需的 Token 都会大幅增加：\n\n- **Chat（聊天）**：一次推理通常只需几千 Token；\n- **Coding（编程）**：通过 Agent 完成任务，一次可能消耗几十万至几百万 Token；\n- **Agent（智能体）**：需要读取更长上下文、调用工具，并进行多轮推理和验证，复杂任务可能消耗千万甚至上亿 Token。\n\n因此，作者认为未来 Token 需求大概率仍将呈指数级增长，新增算力很快就会被新应用消耗掉。\n\n## 市场处于紧平衡，靠价格和等待时间调节\n\n作者认为，Token 供不应求不仅可能发生，实际上已经长期存在。当需求突然上升时，市场通常通过三种方式缓解：\n\n- 高价模型涨价；\n- 低价模型排队、延迟增加；\n- 更多算力从训练、强化学习（RL）和实验转向推理服务。\n\n## Token 供给受四个层面制约\n\n1. **电力和数据中心**  \n   这是扩张最慢的环节。大型数据中心从获取电力指标、选址建设到投产，通常需要**两三年**。\n\n2. **芯片产能与性能**  \n   Nvidia、Google、AMD 等厂商持续扩大产能，新一代芯片也在提升单卡性能。\n\n3. **模型和推理效率**  \n   量化、缓存、推测解码等技术能提高单位算力的 Token 产出，仍有进一步优化空间。\n\n4. **现有算力的重新分配**  \n   当前大量算力仍用于训练、强化学习和实验。随着推理需求上升，一部分存量算力可能转向对外提供 Token。\n\n## Token 可能成为类似电力和带宽的基础资源\n\n作者将未来 Token 类比为今天的电力和带宽：供给每扩张一轮，都会迅速催生或满足新的应用需求。Chat 消耗了第一波增量，Coding 消耗了第二波，而 Agent 很可能继续吸收后续新增算力。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1789615011510,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:de68bc772ff67a75f9bb27d18eb48aa31d931d09097bde0d046374ef5b6c7c54",
+  "refs": {
+    "sessionId": "1789615011526_u2emjszc"
+  },
+  "revisionId": "sha256:ceea0d698d5fe90cc1f589c601264d673ed40bb617bf286169ccbc513e2c02f6",
+  "schemaVersion": 1,
+  "updatedAt": 1789615011510
+}

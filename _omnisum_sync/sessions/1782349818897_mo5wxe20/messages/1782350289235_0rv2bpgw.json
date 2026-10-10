@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782350289236,
+  "entityType": "message",
+  "id": "1782350289235_0rv2bpgw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Subagent上下文机制解析\n\n**评级**: B (55.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent工程\n**次类别**: Coding Agent, 上下文管理\n**标签**: #subagent #Harness #上下文工程 #多代理协作 #运行时\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 5 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 对 subagent 运行时和上下文关系有一定启发，但论证和实践细节不足。\n**核心高价值点**: subagent 不是简单的小智能体，而是 parent session 下拥有独立 work context 的托管子运行时。\n\n### 摘要\n文章解释了 subagent 在 coding agent harness 中本质上是一次工具调用，并会打开新的子运行时与工作上下文。重点区分会话、上下文和子代理，并提出 fresh child、forked child、partial fork 三种上下文投射模式。\n\n### 知识要点\n- subagent 的启动可理解为一次 spawn_agent 类型的工具调用，parent 会获得 child handle。\n- 会话是运行时容器，上下文是模型调用可见信息，subagent 是 parent session 下的新 child session。\n- child 可以共享 tools、skills、AGENTS.md、MCP、cwd、沙箱和权限等资源，但不共享完整 transcript。\n- 常见 subagent 模式包括 fresh child、forked child 和 partial fork，区别在于继承多少上下文。\n- 多代理协作会增加 runtime state，必须追踪谁在工作、知道什么、改了什么以及结果如何成为 evidence。\n\n### 行动项\n- 在设计多代理 coding workflow 时，明确每个 subagent 的 role、context slice 和可用 tools。\n- 优先尝试 partial fork 模式，避免完整继承 parent history 带来的噪声。\n- 为 subagent 输出建立 evidence 机制，记录修改、验证结果和完成状态。\n\n### 存档判定\n归档: 否\n不推荐: 内容偏概念性，缺少完整案例、实现细节和证据支撑，不适合作为长期核心资料。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1782350289236,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:223e8b84cbaca383d47a4b8cbfb825e17cc5c7898974a954a50e0f2107da5492",
+  "refs": {
+    "sessionId": "1782349818897_mo5wxe20"
+  },
+  "revisionId": "sha256:abba79acf1d8f014815d5abd99df75a7e27cf6841c00da54fa2f4a513c4d7bcf",
+  "schemaVersion": 1,
+  "updatedAt": 1782350289236
+}

@@ -1,0 +1,75 @@
+{
+  "createdAt": 1784023592360,
+  "entityType": "session",
+  "id": "1784023592360_v1negty3",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个低风险任务，建立包含Goal、Boundaries、SOP、State和Logs的循环契约文件。",
+      "为工程循环配置一键开发环境、隔离工作树、Playwright等操作驱动及可附加到PR的验证证据。",
+      "运行5至10次后复盘日志、失败和成本，收紧边界并将重复步骤改造成门控脚本或可复用技能。"
+    ],
+    "archiveReason": "包含可复用的循环契约、状态日志、验证、触发器、角色拆分和演进机制，并提供多个可直接改造的模板与案例。",
+    "classifiedAt": 1784677795960,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 6,
+      "long_term_leverage": 9,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "可验证智能体循环的设计实践",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请根据我提供的内容，用一个具体的实例，给出在该实例之上的最佳实践，以 markdown 格式显示。    --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "可靠循环的基础结构是目标与边界明确的契约、跨运行的精简状态、只追加日志以及每次运行固定执行的SOP。",
+      "复杂高风险任务可拆为编排器、隔离执行器和独立验证器，验证器应提供截图、视频或指标变化等可审核证据。",
+      "触发器应按任务选择持续、定时、事件或门控工作流模式，并通过周期性演进将重复确定性步骤沉淀为脚本或技能。"
+    ],
+    "oneHighValuePoint": "将自主权明确写成可审计的边界：仅在根因清晰、风险较低且验证证据充分时自动交付，其余情况必须升级给人工。",
+    "oneLineReview": "框架完整且可直接用于Agent系统设计，但成效证据主要来自作者自述，且多来源内容重复明显。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并长期存档，可作为构建生产级智能体循环的设计参考",
+    "secondaryCategories": [
+      "工程自动化",
+      "产品与商业系统"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://github.com/superdesigndev/loopany-platform",
+      "https://github.com/AI-Builder-Club/skills/blob/main/skills/verifier-setup/SKILL.md",
+      "https://x.com/jasonzhou1993/status/2075179471951614381",
+      "https://www.youtube.com/watch?v=JQ_We_ztxrI"
+    ],
+    "summaryBrief": "文章结合开源工具与一个月运行经验，提出生产级智能体循环应包含契约、状态与日志、验证、触发器及演进机制，并以错误修复、文档维护、客服和CRM循环展示具体边界、流程与模板。",
+    "tags": [
+      "智能体循环",
+      "验证机制",
+      "循环契约",
+      "任务编排",
+      "安全边界"
+    ],
+    "title": "生产错误扫描修复循环实践",
+    "totalScore": 83,
+    "url": "omnisun://digest/1784023592360"
+  },
+  "payloadHash": "sha256:9b9385e606915b297924c506cef0a9a19b01fb49caa0b911266ccc0d48d3a8cf",
+  "refs": {},
+  "revisionId": "sha256:c7dd487000e5f0a8e2d9753204696aeb07517df33c0c8db45eef77a1ac6d430e",
+  "schemaVersion": 1,
+  "updatedAt": 1789863994558
+}

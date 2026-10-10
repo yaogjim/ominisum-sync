@@ -1,0 +1,65 @@
+{
+  "createdAt": 1784890892251,
+  "entityType": "session",
+  "id": "1784890892251_r3xyuudd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在长时运行任务或代码审查中试验评审者—执行者工作流。",
+      "为多模型代理增加基于成本与任务能力需求的动态路由实验。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1784891200971,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "动态工作流与多代理编排",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "作者将工作流框架、自动化、循环、路由和图视为可由统一动态接口承载的编排模式。",
+      "动态工作流可组合 LLM 委员会、按成本与能力路由、评审者—执行者等多代理模式。",
+      "多后端编排可能改善成本和速度，但代理协作与通信可靠性仍是待解决问题。"
+    ],
+    "oneHighValuePoint": "将循环、路由、图和多后端代理统一为动态工作流抽象，可按任务需求组合模型能力、成本与协作模式。",
+    "oneLineReview": "概念与 Agent 编排实践高度相关，但当前更像功能预告，尚不足以形成可复用的方法。",
+    "primaryCategory": "AI Agent 开发",
+    "rating": "B",
+    "rejectReason": "目前仅有概念描述和用例枚举，缺少架构、接口、执行步骤及量化验证。",
+    "retentionDecision": "选择性浏览，等待架构实现与实验数据后再决定是否保留",
+    "secondaryCategories": [
+      "AI 编程工具",
+      "工作流编排"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出将循环、路由、自动化和图统一为动态多代理工作流，并跨 Claude、Codex 等后端编排；列举 LLM 委员会、成本路由及评审者—执行者等用例，但未提供实现细节或验证数据。",
+    "tags": [
+      "动态工作流",
+      "多代理编排",
+      "模型路由",
+      "测试时计算"
+    ],
+    "title": "elvis: Dynamic workflows are a generalization of harnesses, automations, loops, routing…",
+    "totalScore": 56,
+    "url": "https://x.com/omarsar0/status/2080323178119786642"
+  },
+  "payloadHash": "sha256:280c5ca5058a67771d4bac1d252cab85883644aed7a7cbf5b3d65b35d4ddc2a4",
+  "refs": {},
+  "revisionId": "sha256:b69bc73a492b8608a1d8f6e886e7b0a590d5c752955ab277a9fdd331764312c0",
+  "schemaVersion": 1,
+  "updatedAt": 1789728464216
+}

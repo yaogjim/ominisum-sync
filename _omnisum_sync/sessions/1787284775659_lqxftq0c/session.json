@@ -1,0 +1,84 @@
+{
+  "createdAt": 1787284775659,
+  "entityType": "session",
+  "id": "1787284775659_lqxftq0c",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "从搜索日志中筛选探索型查询且未转化的用户，建立小规模测试人群。",
+      "使用AI生成比较、榜单或替代品建议，并通过企微、短信或Push进行触达。",
+      "以历史同类活动为基线，跟踪点击率、回访、转化和转发等指标。"
+    ],
+    "archiveReason": "包含可迁移的“意图识别—内容生成—私域触达—效果衡量”闭环，可用于设计增长实验。",
+    "byline": "Yangyi",
+    "classifiedAt": 1789725000517,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI智能体唤回未转化用户",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 1200,
+        "id": "img-34",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HQJOKvEb0AA338-?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HQJOKvEb0AA338-?format=jpg&name=medium",
+        "width": 1085
+      }
+    ],
+    "knowledgePoints": [
+      "探索型关键词叠加无转化行为，可用于识别具有购买意图但尚未完成决策的用户。",
+      "AI智能体可将商品比较、榜单和替代品分析转化为针对用户需求的选购内容。",
+      "有实际信息价值的触达内容除带来回访外，还可能因用户转发形成二次传播。"
+    ],
+    "oneHighValuePoint": "将“探索型搜索但未转化”识别为决策信息缺口，再用AI完成选购研究并主动触达，形成可测试的转化闭环。",
+    "oneLineReview": "案例提供了清晰且可迁移的AI召回思路，但缺少原始报告、技术细节和严谨的对照证据。",
+    "primaryCategory": "AI Agent商业应用",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "保留为AI驱动用户召回的增长实验线索，并进一步追溯原始报告",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "产品增长",
+      "电商运营"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章转述Flipkart的线上实验：从搜索日志筛出有探索意图但未购买的用户，由AI智能体生成选购建议，再通过WhatsApp次日触达，并报告访问、点击率提升及转发传播结果。",
+    "tags": [
+      "AI智能体",
+      "用户召回",
+      "搜索意图",
+      "私域触达",
+      "转化增长"
+    ],
+    "title": "Yangyi: 今天看到一篇关于Flipkart（印度最大电商，沃尔玛旗下）工程团队的真实线上系统报告，把\"搜了一圈但没买\"的用户捞出来，派一组 AI 智能体替用户把选购功课做…",
+    "totalScore": 68,
+    "url": "https://x.com/yangyi/status/2090339271945404429"
+  },
+  "payloadHash": "sha256:1927f19c75ab2fb1b4c14488c0ae6c62860491c0a430c17c2d5292654b21e2cf",
+  "refs": {},
+  "revisionId": "sha256:3ca01d17f5cb6afe58c02040f6d845a80affa97de0ffef9887eefddb40ca6238",
+  "schemaVersion": 1,
+  "updatedAt": 1789727344421
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729221010,
+  "entityType": "message",
+  "id": "1789729221012_6bznf58g",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 用浏览器安全访问 VPS 上的 Claude Code\n\n文章分享了一套轻量方案：将 VPS 终端搬到网页中，使用户只需浏览器和网址，就能使用 Claude Code；同时通过会话持久化、加密隧道和邮箱认证兼顾连续使用与安全性，无需安装客户端或开放 SSH。\n\n## 四个组件各司其职\n\n- **ttyd**：把完整终端转换为网页服务。\n- **tmux**：保持终端会话，断网或更换设备后仍可继续。\n- **Cloudflare Tunnel**：由 VPS 主动建立出站隧道，无需开放公网入站端口。\n- **Cloudflare Access**：在网页入口增加邮箱身份验证。\n\n作者选择保留终端形态，而非另做图形化前端，主要是为了维持 Claude Code 的原生使用体验。\n\n## 仅限制 Cloudflare IP 并不安全\n\n作者特别纠正了一种常见做法：用 Nginx 仅允许 Cloudflare 回源 IP 访问，并不能确保 Access 门禁无法绕过。原因是 Cloudflare 回源 IP 为不同用户共享；如果攻击者知道 VPS 的真实 IP，可能借自己的 Cloudflare 配置直接访问源站。\n\n因此，关键不是单纯设置 IP 白名单，而是让源站**不开放任何入站端口**，所有访问只能经过 Cloudflare Tunnel 和 Access。\n\n## 部署必须遵守最小权限原则\n\n推荐配置包括：ttyd 只监听 `127.0.0.1:7681`，由无 sudo 权限的专用非 root 用户运行；通过 systemd 保持服务常驻，并自动进入固定 tmux 会话；再将子域名经 Tunnel 路由至本地 ttyd，最后配置 Access 邮箱策略。\n\n这套方案的核心价值是以较低搭建成本，把命令行 AI 工具变成跨设备、免安装的网页服务，同时避免为了便利而直接暴露服务器终端。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729221010,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:682567dac29936637e5ee2e21273b4ca992f156c3c9969bd76048ff6a3ae4471",
+  "refs": {
+    "sessionId": "1783556217870_6cc80lon"
+  },
+  "revisionId": "sha256:d8d404e5c75832b2393433ce37c41ca9c01b9db8f273a3c3798facaca9644c68",
+  "schemaVersion": 1,
+  "updatedAt": 1789729221010
+}

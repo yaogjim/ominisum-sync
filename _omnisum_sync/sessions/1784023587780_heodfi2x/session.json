@@ -1,0 +1,94 @@
+{
+  "createdAt": 1784023587780,
+  "entityType": "session",
+  "id": "1784023587780_heodfi2x",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在测试项目中创建工作区和分屏，运行代理与测试命令并验证会话持久化。",
+      "通过SSH或远程附加模式测试手机接入、剪贴板桥接和代理状态查看。",
+      "用wait、pane read等命令搭建一个代理完成后自动读取结果并继续处理的最小流程。"
+    ],
+    "archiveReason": "提供了代理感知终端复用器的明确产品思路、远程接入模式和可直接试验的CLI编排命令。",
+    "classifiedAt": 1785403175695,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Herdr代理终端复用器",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "herdr.dev",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1784023692793,
+        "imageId": "img-36",
+        "model": "gpt-5.6-sol",
+        "ocrText": "",
+        "summary": "# Herdr：用一个终端管理整支 AI Agent “团队”\n\nHerdr 是一款面向 AI 编程 Agent 的终端多路复用器：它保留了 tmux/Zellij 的持久会话与远程连接能力，同时增加 Agent 状态识别、直接接入和自动编排功能。用户可在服务器、Mac Mini 或沙箱虚拟机上运行任务，再从电脑、手机等任意终端连接管理。\n\n## 1. 第三方开发者体验\n\n官网提供了 3 个独立实操视频，帮助用户了解 Herdr 的使用方式：\n\n- **Jilles（6 分 37 秒）**：快速介绍安装、工作区、Agent 状态、会话持久化及 Agent Skill 工作流。\n- **DevOps Toolbox（16 分 40 秒）**：深入展示鼠标操作窗格、远程使用、Agent 支持和 CLI。\n- **Better Stack（7 分 10 秒）**：重点比较 Herdr 与 tmux，介绍 Agent 感知、远程接入及纯终端运行模式。\n\n## 2. Agent 在工作所在的机器运行\n\nHerdr 不要求 Agent 与管理界面位于同一台电脑。Agent 可以运行在：\n\n- 远程服务器\n- Mac Mini\n- 沙箱虚拟机\n- 任何能够通过 SSH 访问的设备\n\n用户则可从任意终端连接，包括手机和平板。相比只能依附于本机 GUI 的桌面 Agent 管理器，Herdr 更适合远程开发和长期任务。\n\n## 3. 三种主要使用方式\n\n### 本机运行\n\n直接在本机启动 Herdr，可拆分窗格、创建标签页，并让 Agent 持续运行。即使关闭终端，任务和会话也不会随之消失。\n\n```bash\nherdr\n```\n\n### 通过 SSH 在远程主机运行\n\n像使用 tmux 一样，先登录服务器，再启动 Herdr：\n\n```bash\nssh you@server\nherdr\n```\n\n断开 SSH 后会话仍然保留，之后可以重新连接，适合用手机临时查看或处理任务。\n\n### 以轻客户端连接远程会话\n\n```bash\nherdr --remote workbox\n```\n\nHerdr 会协助在远程主机安装所需组件，并提供：\n\n- 本地快捷键保留\n- 本地与远程剪贴板互通\n- 支持粘贴图片\n- 从本地终端直接管理远程会话\n\n## 4. 针对手机等窄屏设备优化\n\nHerdr 可通过手机或平板上的 SSH 客户端使用。它依然显示真实终端内容，同时在窄屏下提供更易操作的会话切换界面。\n\n官网案例展示了在手机上通过 SSH 查看 Agent 工作状态、代码输出和运行进度，适合移动场景下快速检查或切换任务。\n\n## 5. 定位：既不是普通 tmux，也不是桌面 Agent 应用\n\nHerdr 试图填补两类工具之间的空白：\n\n- **tmux/Zellij**：擅长持久终端会话和远程连接，但不了解 Agent 当前是在工作、等待还是完成。\n- **桌面 Agent 应用**：能够理解 Agent，但通常受限于安装 GUI 的那台机器。\n- **Herdr**：在真实终端中运行，同时具备持久会话、远程连接和 Agent 感知能力。\n\n它明确不属于以下产品：\n\n- **不是终端模拟器**：Ghostty、Kitty、iTerm、Alacritty 等原有终端可以继续使用。\n- **不是浏览器控制台**：没有网页管理界面，不要求账号，也没有托管控制平面。\n- **不是重做的聊天界面**：Agent 和命令都运行在真实 PTY 进程中。\n\n## 6. 与其他工具的能力对比\n\n| 能力 | tmux/Zellij | 桌面 Agent 应用 | Herdr |\n|---|---|---|---|\n| 在现有终端内运行 | 支持 | 通常不支持 | 支持 |\n| 持久 PTY 会话 | 支持 | 有限 | 支持 |\n| 通过 SSH 远程连接 | 支持 | 有限 | 支持 |\n| 识别 Agent 语义状态 | 不支持 | 部分支持 | 支持 |\n| 直接连接 Agent 会话 | 不支持 | 通常不支持 | 支持 |\n| 允许 Agent 反向编排工具 | 可脚本化 | 部分支持 | 支持 |\n\n核心区别是：Herdr 不只保存终端进程，还能理解并展示 Agent 的运行状态，并通过 API 让 Agent 自己管理工作区和窗格。\n\n## 7. 四项核心能力\n\n### 真实窗格\n\n支持工作区、标签页和可点击窗格，也能用鼠标操作。用户可以继续使用原有的 Shell、字体和快捷键。\n\n### Agent 状态总览\n\n可在整个会话中快速查看 Agent 当前状态，包括：\n\n- **Blocked**：被阻塞或等待输入\n- **Working**：正在工作\n- **Done**：任务完成\n- **Idle**：空闲\n\n### 会话持久化\n\n关闭或断开终端后，Agent 与会话仍然继续运行；重新连接即可恢复现场。\n\n### CLI 与 JSON Socket API\n\nHerdr 通过 CLI 和 JSON Socket API 暴露工作区、窗格、输出读取和等待条件等能力，既方便人工操作，也便于 Agent 自动编排。\n\n例如：\n\n```bash\n# 创建工作区\nherdr workspace create --cwd ~/project --label api\n\n# 创建日志标签页\nherdr tab create --label logs\n\n# 向右拆分窗格并运行测试\nherdr pane split 1-1 --direction right\nherdr pane run 1-2 \"just test\"\n\n# 等待 Agent 完成，再读取另一个窗格的最新输出\nherdr wait agent-status 1-1 --status done\nherdr pane read 1-2 --source recent-unwrapped\n```\n\n这意味着 Agent 可以自己创建布局、启动测试、等待其他 Agent 完成，并读取结果后继续下一步。\n\n## 8. 兼容多种终端 Agent\n\n原则上，任何能在终端中运行的 Agent 都可直接使用；集成后还能获得更准确的状态识别和会话恢复能力。\n\n官网列出的工具包括：\n\n- Claude Code、Codex、Cursor、Copilot\n- Pi、Droid、Amp、OpenCode\n- Grok CLI、Kimi、Kiro、Qoder CLI\n- Hermes、Antigravity、MastraCode 等\n\n## 9. 插件与社区扩展\n\nHerdr 的 CLI 和 Socket API 同时也是插件接口。社区可以像 Agent 一样控制 Herdr，实现通知、布局预设、链接处理和版本检查等功能。\n\n官网示例包括：\n\n- **Agent Telegram Notify**：Agent 完成任务后发送 Telegram 消息。\n- **GitHub Link Preview**：点击 Issue 或 PR 链接时，在侧边窗格中打开预览。\n- **Dev Layout Bootstrap**：围绕当前窗格快速创建一个三窗格开发布局。\n\n开发者也可以使用指定的 GitHub Topic 发布自己的插件。\n\n## 总结\n\nHerdr 的核心价值是把 “持久终端”“远程连接” 和 “AI Agent 编排” 合并到同一套终端工作流中。它尤其适合需要在远程服务器上长期运行多个编程 Agent、跨设备接入，并希望通过 CLI/API 自动协调任务的开发者。",
+        "url": "https://herdr.dev/assets/mobile-agent-session-v2.jpeg",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "Herdr agent session over SSH on a phone",
+        "caption": "agent session over SSH",
+        "height": 2048,
+        "id": "img-36",
+        "nearbyText": "agent session over SSH",
+        "resolvedUrl": "https://herdr.dev/assets/mobile-agent-session-v2.jpeg",
+        "role": "figure",
+        "score": 113,
+        "src": "https://herdr.dev/assets/mobile-agent-session-v2.jpeg",
+        "width": 943
+      }
+    ],
+    "knowledgePoints": [
+      "Herdr试图填补传统tmux缺少代理状态、桌面代理管理器难以跨机器运行的空缺。",
+      "远程使用包括在服务器上直接运行后通过SSH进入，以及用本地客户端附加远程会话两种模式。",
+      "CLI和JSON Socket API可操作工作区、标签页、窗格、输出及状态等待，为自动化Agent编排提供控制面。"
+    ],
+    "oneHighValuePoint": "将持久化终端会话、代理语义状态与可编程控制接口结合，使代理任务能够被远程查看、等待、读取和继续编排。",
+    "oneLineReview": "定位和操作入口较清晰，适合多代理远程工作流探索，但证据主要是产品自述。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "产品功能与对比结论主要来自官方陈述，缺少性能数据、完整案例和可核验的长期使用结果。",
+    "retentionDecision": "选择性浏览，若有多代理或远程开发需求则保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent开发",
+      "远程开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Herdr 如何以终端复用器统一管理编码代理、本地及远程会话，支持持久化PTY、代理状态、SSH接入、插件扩展，并通过CLI和JSON API创建、监控及编排工作区与任务。",
+    "tags": [
+      "终端复用器",
+      "编码代理",
+      "远程会话",
+      "Agent编排",
+      "CLI自动化"
+    ],
+    "title": "Herdr: one terminal for the whole herd",
+    "totalScore": 68,
+    "url": "https://herdr.dev/"
+  },
+  "payloadHash": "sha256:cb61ee60e5a5eff989145e2b8c05272627c644010658b06c307a9c0c7fb1c72a",
+  "refs": {},
+  "revisionId": "sha256:1fffb7a00fefcb111cff5ea1da0f45438dfa3b161684b0f5d0b5d89e90bfc664",
+  "schemaVersion": 1,
+  "updatedAt": 1789728299611
+}

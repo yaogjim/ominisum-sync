@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696016665,
+  "entityType": "message",
+  "id": "1789696016664_91axtcka",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者认为，企业财务 AI 的正确做法不是堆砌通用助手或新软件，而是在现有系统之上部署“定制代理层”，自动完成跨系统流程，只把真正需要判断的异常交给人。\n\n## 关键内容\n\n- 文中援引调查称，企业 AI 部署很多，但产生显著财务回报的很少；通用助手准确率、成本和审计能力不足，专业软件又难适应各公司的特殊流程。\n- 有效方案应先观察员工实际工作，而非只照搬 SOP，再让代理直接操作 NetSuite、SAP 等现有工具，处理对账、发票匹配、催办等“系统之间的胶水工作”。\n- 代理不应全靠大模型：作者称其方案约 **85% 是确定性代码、15% 是模型调用**，并通过权限、测试、置信门槛和人工复核控制幻觉与成本。\n- 作者披露的案例包括：月末结账由 12 天降至 5 天、错误率下降 72%；但这些属于其公司案例和营销主张，原文未提供完整验证材料。\n\n## 通俗解读与是否值得细读\n\n核心不是“让 AI 自己做所有决定”，而是让代码完成查找、比较和提交，AI 只处理模糊信息，不确定时再让人确认。**值得财务负责人细读其实施框架**；若要据此采购或投资，则应进一步核验引用数据、客户案例及 ROI 算法，因为作者本身是相关服务商。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696016665,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f37b10e58e236c7092d0511cdf45d3e25fabe217559f665ec0da305af72dad7e",
+  "refs": {
+    "sessionId": "1784101317932_k9qng00u"
+  },
+  "revisionId": "sha256:b8d5106f870a624f1dfb2d770f2b5848ffe3007cddbad910ff93fe5040c461c6",
+  "schemaVersion": 1,
+  "updatedAt": 1789696016665
+}

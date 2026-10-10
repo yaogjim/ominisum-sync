@@ -1,0 +1,83 @@
+{
+  "createdAt": 1789697360100,
+  "entityType": "session",
+  "id": "1789697360100_6sfccv07",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为类似专用Agent先建立带默认基线、重复测量、噪声校准和持平区间的评估装置。",
+      "先采集高质量教师轨迹进行SFT，再检查有效工具调用率、结构合法率和任务表现后启动RL。",
+      "在RL前用合成奖励组测试优势计算，确认所有劣于基线的rollout不会获得正向强化。"
+    ],
+    "archiveReason": "包含查询优化环境、测量去噪、离策略蒸馏、奖励设计、锚定GRPO和工程部署的完整实验链路，方法可复用于其他可自动验证的垂直任务。",
+    "classifiedAt": 1789698458064,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 9,
+      "methodology_value": 9,
+      "novelty": 9,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "小模型强化学习优化数据库查询计划",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "rohanbansal.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://rohanbansal.com/og/qorl-20260916.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://rohanbansal.com/og/qorl-20260916.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "查询执行时间存在缓存争用与双峰噪声；扩大shared_buffers并交错测量候选与默认计划，可显著降低错误奖励。",
+      "先用强模型轨迹进行SFT，让小模型掌握工具协议和结构化输出，再以真实执行反馈进行RL，能降低环境学习难度。",
+      "可验证任务的RL应以外部基线锚定优势；仅做组内标准化可能对实际低于基线的样本赋予正优势。"
+    ],
+    "oneHighValuePoint": "将候选方案相对默认方案的真实性能作为锚点改造GRPO，避免组内相对优势错误强化所有都劣于基线的行为。",
+    "oneLineReview": "这是一个证据较充分、工程细节完整且方法可迁移的垂直智能体训练案例，但结论仍主要限于单一数据库和基准环境。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "S",
+    "rejectReason": "",
+    "retentionDecision": "重点精读并长期保留，可作为可验证任务上训练专用智能体的完整案例",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "数据库查询优化",
+      "小模型训练"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章训练一个4B开放权重模型，通过SFT与智能体强化学习生成Postgres查询提示；并详细介绍基准隔离、执行噪声控制、奖励设计及分布式训练，最终在113个查询上取得最高1.81倍加速。",
+    "tags": [
+      "PostgreSQL",
+      "查询计划优化",
+      "智能体强化学习",
+      "GRPO",
+      "监督微调"
+    ],
+    "title": "Training a 4B model to produce 81% faster query plans than Postgres",
+    "totalScore": 88,
+    "url": "https://rohanbansal.com/qorl"
+  },
+  "payloadHash": "sha256:f26b5b7880500305a5222ffcc08ea310fb799adc253f5c780444d485f23d8d7a",
+  "refs": {},
+  "revisionId": "sha256:5d4894021129f34cb07292ac971844fd5a0facdec9a1a6e5aad13ccb5cd1230e",
+  "schemaVersion": 1,
+  "updatedAt": 1790769037600
+}

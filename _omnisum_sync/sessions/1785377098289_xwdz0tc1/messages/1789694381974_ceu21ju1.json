@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694381974,
+  "entityType": "message",
+  "id": "1789694381974_ceu21ju1",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nKimi Code 提供 K3 与 K2.7 Code 的四个模型 ID；日常开发优先推荐更省额度的 `k3-256k`，切换模型时则要注意上下文、缓存和会员权限。\n\n## 关键内容\n\n- **K3 有两个版本**：`k3` 最高支持 1M 上下文，`k3-256k` 固定为 256K。文档称在 256K 范围内两者效果相同，但 1M 版约消耗两倍额度；256K 版不支持视频。\n- **K2.7 Code 有标准版和高速版**：`kimi-for-coding-highspeed` 编码能力相同，模型输出约快 5—6 倍，但额度消耗约为 3 倍；工具调用、运行脚本等环节不会加速。\n- **权限取决于会员等级**：K3 至少需要 Moderato，1M 上下文和高速版通常需要 Allegretto 或更高等级。能力超出套餐时，即使模型 ID 正确也可能返回 401。\n- **切换模型会让原有缓存失效**，导致短期用量增加，官方建议开启新会话。若从 1M K3 切到 256K，且当前上下文已超限，应先执行 `compact`；含视频的历史也需先压缩。\n\n## 通俗解读\n\n模型 ID 必须填写表中的英文标识，不能写“Kimi K3”等版本名。关闭 Thinking 时，请求还会转到 K2.6，而非继续使用 K3/K2.7。总体上，这页值得实际配置 Kimi Code 或排查 401、速度及额度问题的用户细读。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694381974,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bc2ecd80f2ba6c2ee4555fc39456829f71b972dadd2718795d7ded1bdbc565e5",
+  "refs": {
+    "sessionId": "1785377098289_xwdz0tc1"
+  },
+  "revisionId": "sha256:922e9126ea376d83297d8a3fb9135d056291f1b17132bf90309d0f4ab4f46661",
+  "schemaVersion": 1,
+  "updatedAt": 1789694381974
+}

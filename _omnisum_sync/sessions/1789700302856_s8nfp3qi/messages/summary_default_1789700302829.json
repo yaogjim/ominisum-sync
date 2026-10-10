@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789700302829,
+  "entityType": "message",
+  "id": "summary_default_1789700302829",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者用给 BaoCut 增加 “远程调用另一台电脑算力转录” 的案例，展示了一套 AI 开发流程：**先验证可行性，再写设计、做原型，最后让 AI 实现，并由人负责体验和验收。**\n\n## 关键内容\n\n- **先判断值不值得做。**作者先从产品价值、定位和技术成本评估需求，让 Claude Code 结合现有项目提出多个方案，再按易用性与 Windows 兼容性选择方案 A，而不是直接写代码。\n- **用文档和原型提前定方向。** AI 生成产品与技术混合设计文档；随后制作高精度交互原型，并由作者多轮调整页面布局、功能入口和状态展示。\n- **方案明确后再交给 Agent 编码。** AI 按文档中的阶段逐步实现，并自行截图验证；作者再手动运行，通过黑盒测试发现问题并要求修改。\n- **这不是严谨的软件工程范本。**作者明确表示自己没有审查代码，只充当 QA，并承认可行性分析也可能误判，因此结果较依赖所用 Agent 的能力。\n\n## 通俗解读\n\n核心不是 “让 AI 一句话生成应用”，而是**人把关需求与体验，AI 承担分析、设计和编码**。这套方法适合想了解 AI Agent 实战协作的人，案例具体，值得细读；若想看远程转录的代码细节、测试规范或安全设计，原文信息不足，且部分过程依赖未展示的配图。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1789700302829,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:635615bcadb9ca4a6a51467c7dafc90c5d79a307639f0ea4b00ce669088983e7",
+  "refs": {
+    "sessionId": "1789700302856_s8nfp3qi"
+  },
+  "revisionId": "sha256:acae10a0035cadb04bd62b6da9d6ce92b6d0665967961c0bef748d8a810e7070",
+  "schemaVersion": 1,
+  "updatedAt": 1789700302829
+}

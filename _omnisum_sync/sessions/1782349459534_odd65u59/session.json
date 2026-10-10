@@ -1,0 +1,68 @@
+{
+  "createdAt": 1782349459534,
+  "entityType": "session",
+  "id": "1782349459534_odd65u59",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理 archive-first 与 live-first 两种同步路径的收敛逻辑",
+      "借鉴单一规范化模型和本地搜索设计实现类似系统"
+    ],
+    "archiveReason": "包含本地优先架构、同步、搜索和多账号设计等可复用工程思路，适合作为参考蓝图保留。",
+    "classifiedAt": 1782350690525,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "birdclaw 本地优先规格",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "birdclaw.sh",
+    "favicon": "https://birdclaw.sh/favicon.ico",
+    "knowledgePoints": [
+      "archive 与 live transport 应写入同一套 canonical tables",
+      "SQLite + FTS5 适合作为本地离线搜索核心",
+      "长时间同步任务需要可恢复并处理 rate limit"
+    ],
+    "oneHighValuePoint": "将 archive 与 live 数据统一映射到单一规范化模型，避免双轨真相，便于同步、搜索和 agent 访问。",
+    "oneLineReview": "规格完整、路径清晰，但缺少验证数据，属于有参考价值的工程设计稿。",
+    "primaryCategory": "软件架构",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "本地优先应用",
+      "数据同步与检索",
+      "AI辅助工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是 birdclaw 的产品与架构规格草案，定义了本地优先的 Twitter 归档、同步、搜索、AI 排序收件箱，以及 CLI 和本地 Web App 的统一实现方式。",
+    "tags": [
+      "TypeScript",
+      "SQLite",
+      "FTS5",
+      "Twitter归档",
+      "本地优先",
+      "AI排序"
+    ],
+    "title": "birdclaw Spec — birdclaw",
+    "totalScore": 66,
+    "url": "https://birdclaw.sh/spec.html"
+  },
+  "payloadHash": "sha256:3225850caf1d2c97bd42a337b7d656b2bb5c838348d58f8d814372d2bdd866c6",
+  "refs": {},
+  "revisionId": "sha256:d755339ace552d9d95b4f2c27f79cb917f96edb55c2f90be3178c91de94deabd",
+  "schemaVersion": 1,
+  "updatedAt": 1782352351456
+}

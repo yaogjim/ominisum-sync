@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789445327277,
+  "entityType": "message",
+  "id": "summary_default_1789445327277",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nVercel Labs 是一个面向开发者的实验项目目录：工具会先公开试用，再根据实际价值继续维护、转为正式产品，或停止开发。\n\n## 关键内容\n\n- 项目分三类：**Labs 产品**已证明有用、会持续维护，但不同于 Vercel 核心产品；**活跃实验**仍在快速迭代，可能粗糙且存在破坏性更新；**历史实验**则已停止开发或并入其他产品。\n- 目前列出 8 个 Labs 产品，重点集中在 AI 编程代理，例如浏览器自动化工具`agent-browser`、安全测试工具`deepsec`、面向代理的 Bash 环境`just-bash`。\n- 另有 11 个活跃实验，涉及 TypeScript 原生编译、网页终端、API 模拟、桌面应用、生成式 UI 和代理编程语言等；4 个旧实验已被替代或整合。\n\n## 通俗解读\n\n这里的 “Labs 产品” 不等于 Vercel 主产品，只表示比实验项目更成熟可靠；“活跃实验” 也不承诺接口稳定。**页面本身只是导航清单，不值得逐字细读；若你在寻找 AI Agent 或开发工具，值得按需求进入对应 GitHub 仓库查看。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1789445327277,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:201a7b364ce300b319c37886c87da670d210e38b27c9bc3578209b9fde31126f",
+  "refs": {
+    "sessionId": "1789445327340_ygk1j9pt"
+  },
+  "revisionId": "sha256:84f234b09c74c71126af10641313bf67cd25e59d4bb086628d9d15ae650576d3",
+  "schemaVersion": 1,
+  "updatedAt": 1789445327277
+}

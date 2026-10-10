@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729176754,
+  "entityType": "message",
+  "id": "1789729176755_rrfgdczw",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Row-Bot：用可控运行时把聊天助手升级为本地 AI 代理\n\nRow-Bot 的核心观点是：真正能完成工作的个人 AI，不能只是“模型回答、偶尔调用工具”的聊天机器人，而需要一套负责状态、权限和执行流程的运行时。其原则是**模型负责推理与提出行动，运行时决定能否执行**；LangGraph 则为复杂流程提供图式编排能力。\n\n## 编排器统一连接模型、记忆与工具\n\n所有来自桌面、Telegram、Slack、语音等渠道的请求，都会进入同一个 Agent Orchestrator。它负责组装对话、文档、任务和记忆，按任务选择本地 Ollama 或 OpenAI、Claude、Gemini 等模型，再将工具调用交给 Tool Router。\n\n记忆与当前上下文被明确分开：前者长期保存用户、项目和偏好，后者只选取本轮所需信息。网页、邮件、Shell 输出及 MCP 外部工具结果均被视为“不可信上下文”，防止其中隐藏的指令劫持代理。\n\n## LangGraph让长期任务可暂停、恢复和追踪\n\n当流程加入审批、重试、定时任务和子代理后，简单循环很快失控。LangGraph 将上下文组装、模型调用、安全检查、工具执行、结果写回等步骤表示为带状态的节点与连线，因此可以暂停等待用户批准、失败后退避重试，或在后台持续监控。\n\n子代理也可作为独立运行或子图，承担研究、审阅、开发、验证等任务，但只获得限定上下文、工具权限和审批额度。\n\n## 关键价值是控制权，而非更大的模型\n\nRow-Bot 默认将记忆、任务和生成文件保存在本地，并通过安全控制层管理破坏性操作、网络访问、敏感数据和审计记录。作者认为，个人 AI 的竞争重点将从单纯提升模型能力，转向**本地数据主权、持久状态、工具权限、后台工作流和可观察的代理协作**。LangGraph只是编排底座，完整产品仍依赖记忆、工具、任务、安全和用户控制共同构成。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729176754,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6e7ebfde9efd7052021bfd1c45601a48bf9e2599151bb6f253604deed24a94d6",
+  "refs": {
+    "sessionId": "1783556083899_unmdp9hk"
+  },
+  "revisionId": "sha256:a2ce38089a478390c16a40125403349a6ca0fb20ee324709c146a056d1a78c05",
+  "schemaVersion": 1,
+  "updatedAt": 1789729176754
+}

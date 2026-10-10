@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786943866395,
+  "entityType": "message",
+  "id": "1786944186063_aqowvu1b",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 《Super Mario Derivations》精炼总结\n\nNix 的惰性求值让“属性路径”不只是查找包的名称，还可以成为一段按需执行的程序。作者借此把《超级马里奥兄弟 3》的每次按键和游戏画面做成独立的 Nix derivation，使 Nix Store 变成可复用、可分支的模拟器存档历史。\n\n## 1. Nix 的惰性求值与无限属性集\n\n- Nix 只会计算实际访问的属性。即使同一属性集中存在会报错的值，只要没有访问它，表达式仍能正常运行：\n\n  ```nix\n  let pkgs = {\n    hello = \"hi\";\n    broken = throw \"never forced\";\n  };\n  in pkgs.hello\n  ```\n\n  结果为 `\"hi\"`，`broken` 不会被求值。\n\n- Nixpkgs 中存在递归属性集，`pkgs` 可以包含自身，因此以下路径最终都指向同一个 `hello-2.12.2` Store 路径：\n\n  ```text\n  pkgs.hello\n  pkgs.pkgs.pkgs.hello\n  pkgs.python3Packages.pkgs.hello\n  ```\n\n- 惰性求值还允许构造理论上无限深的属性树：\n\n  ```nix\n  countdown = n: {\n    value = n;\n    next = countdown (n + 1);\n  };\n  ```\n\n  访问 `(countdown 0).next.next.next.value` 时，只计算所需的三层并返回 `3`，其余无限结构不会被创建。\n\n## 2. 把属性路径变成马里奥按键序列\n\n作者把“沿属性路径逐层访问”的过程映射成《超级马里奥兄弟 3》的操作：\n\n- 树中的每个节点代表一帧游戏状态。\n- 每个子属性代表一次按键。\n- 按键后生成新的游戏状态和画面。\n\n例如：\n\n```bash\nnix build '.#level1.rightb.rightb.rightab.rightb'\n```\n\n其中：\n\n- `level1`：预设按键序列，将游戏带到世界 1-1 的起点。\n- `rightb`：同时按右键和 B，即向右奔跑。\n- `rightab`：同时执行向右、奔跑和跳跃。\n\n最终产物是一张 **256×240 的 PNG 截图**，代表按顺序完成这些操作后看到的游戏画面。\n\n## 3. 每次按键都是独立的 derivation\n\n项目代码位于 `fzakaria/nes-nix`，并不局限于马里奥；ROM 被设计成 Flake 输入，因此也可以替换为其他 NES 游戏。\n\n其核心机制是：\n\n1. 每次按键对应一个独立 derivation。\n2. 当前 derivation 以前一次按键产生的模拟器存档为输入。\n3. 每一步同时输出新的存档和当前画面截图。\n4. 新步骤不需要重新模拟之前的所有帧。\n\n因此，一段操作可以形成可分支的状态树。例如在同一个“向右奔跑”状态之后，可以分别派生出：\n\n- 跳跃；\n- 按 A；\n- 继续向右；\n- 其他任意操作。\n\n## 4. Nix Store 成为模拟器存档历史\n\n由于每个按键状态都会保存到 Nix Store，已有操作前缀可以直接复用：\n\n```bash\n# 首次构建，需要生成 3 个 derivation\nnix build '.#game.start4.wait2.right'\n\n# 复用已有前缀，只需生成 left\nnix build '.#game.start4.wait2.left'\n\n# 再向已有路径末尾追加 right，只需生成新增步骤\nnix build '.#game.start4.wait2.right.right'\n```\n\n实际效果是：\n\n- 从一段上百次按键的中间状态创建分支，只需计算新的那一次按键。\n- 在已有序列末尾继续追加，也只需计算新增按键。\n- 相同状态会共享完全相同的 Store 路径。\n\n反过来，derivation 的依赖图也记录了输入序列。使用 `nix-store --query --tree`，可以从最终画面追溯出产生它的操作，例如：\n\n```text\nboot → start → wait4 → start\n```\n\n## 5. `.play` 只是整理已有帧，不会重新模拟\n\n在任意操作路径后追加 `.play`，可以将整段游戏过程合成为录像：\n\n```bash\nnix build '.#level1.rightb.rightb.rightab.play'\n```\n\n但 `.play` 本身几乎不执行模拟，因为每一帧早已由各自的按键 derivation 生成并存放在 Nix Store 中。\n\n它主要做两件事：\n\n1. 创建一个按时间编号的帧目录；\n2. 用符号链接指向 Store 中已有的 PNG，再交给 `ffmpeg` 处理。\n\n例如：\n\n```text\n0000.png -> /nix/store/...-nes-boot\n0001.png -> /nix/store/...-nes-start\n0002.png -> /nix/store/...-nes-wait4\n0003.png -> /nix/store/...-nes-start\n```\n\n因此，制作录像只是整理和编码已有画面，而不是重新运行整段游戏。\n\n## 6. 属性路径长度与求值性能限制\n\n### Nix 默认递归深度\n\n默认情况下，Nix 大约在 **2,400 次按键**后出现：\n\n```text\nstack overflow; max-call-depth exceeded\n```\n\n原因是：\n\n- `max-call-depth` 默认为 **10,000**；\n- 每次按键求值大约消耗 **4 层嵌套调用**。\n\n这只是防止失控递归的保护机制，并非 Nix 的结构性极限。\n\n将递归深度提高到 **10,000,000** 后，作者成功求值了 **20,000 次按键**：\n\n- 总耗时约 **14 秒**；\n- 平均每次按键约 **0.7 毫秒**；\n- 总成本随按键数量线性增长。\n\n### Linux 命令行参数限制\n\n在作者的机器上，进一步的瓶颈出现在约 **21,845 次按键**：\n\n- 属性路径作为一个单独的命令行参数传递；\n- Linux 单个参数上限 `MAX_ARG_STRLEN` 为 **131,072 字节**；\n- `right.` 每次占约 **6 字节**；\n- 因此最多约能容纳 **21,845 次**按键。\n\n解决方法是把操作序列保存到文件中：\n\n```bash\nnix build --impure --expr \\\n  '(builtins.getFlake (toString ./.))\n   .packages.x86_64-linux.game.sequenceFile\n   ./runs/world1-1.txt'\n```\n\n通过文件输入生成的 derivation 与等价属性路径生成的 derivation **字节完全相同**，所以仍可共享相同的 Store 路径和缓存。\n\n## 7. 构建过程仍然是串行的\n\nNix 通常擅长并行构建，但这里每一步都依赖前一步的存档，因此整个按键序列本质上是串行的，无法并行模拟。\n\n实测构建成本同样随按键数量线性增长：\n\n| 构建方式 | 每次按键约耗时 |\n|---|---:|\n| 启用 substituter／缓存查询 | 1.27 秒 |\n| 禁用 substituter | 0.28 秒 |\n\n启用缓存反而更慢，是因为查询远程缓存的网络往返成本明显高于模拟一帧本身。可以通过 `preferLocalBuild` 或 `allowSubstitutes` 等设置减少这类开销。\n\n## 8. 核心结论\n\n通常人们把 Nix 属性路径看成包目录中的“坐标”，例如通过名称找到某个软件包。但在惰性求值下，属性路径实际上可以是一段程序：求值器沿路径逐步执行，并只生成当前需要的状态。\n\nNixpkgs 只是把这种机制用于描述软件；它同样可以描述任何可复现的状态机。由于 Nix Store 能持久化、缓存和共享每一步状态，这个“包管理器”也可以合理地承担马里奥模拟器的存档与执行系统。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786943866395,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5f8e3c5a3cb69202c15a000170962580a9c24035fce2168748e2eb8a8d05b161",
+  "refs": {
+    "sessionId": "1786943309437_ionwivo2"
+  },
+  "revisionId": "sha256:361631428aeb99adbe945bf1de68d07e8df2447bd6a16449d6ab0f3cdaeb75fa",
+  "schemaVersion": 1,
+  "updatedAt": 1786943866395
+}

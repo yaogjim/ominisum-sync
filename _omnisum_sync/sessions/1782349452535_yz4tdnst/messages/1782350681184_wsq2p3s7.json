@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782350681185,
+  "entityType": "message",
+  "id": "1782350681184_wsq2p3s7",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: X API命令行工具xurl\n\n**评级**: B (57分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 开发工具\n**次类别**: API工具, 命令行工具\n**标签**: #X API #OAuth #CLI #Webhook #媒体上传\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 一份实用但偏工具说明型的README，操作价值高，方法论和长期知识价值有限。\n**核心高价值点**: 详细覆盖了X API OAuth、多应用、多账户、Webhook和媒体上传等常见开发场景的CLI操作方式。\n\n### 摘要\n该文档介绍xurl命令行工具的安装、OAuth 1.0a/OAuth 2.0认证、多应用管理、请求发送、流式接口、Webhook调试、媒体上传和Token存储方式，适合需要直接操作X API的开发者参考。\n\n### 知识要点\n- xurl支持OAuth 1.0a、OAuth 2.0 PKCE和Bearer Token等多种认证方式。\n- 可通过~/.xurl YAML文件管理多个X API应用及其独立Token。\n- 支持直接通过CLI调用X API端点、自定义HTTP方法、请求头和请求体。\n- 提供Webhook本地调试能力，可结合ngrok接收X API事件。\n- 支持媒体文件的分片上传、状态查询和等待处理完成。\n\n### 行动项\n- 如需使用X API，先安装xurl并注册应用凭据。\n- 配置X开发者后台的redirect URI，并执行xurl auth oauth2完成认证。\n- 将常用开发和生产应用分别添加为不同app，避免Token混用。\n- 需要调试Webhook时使用xurl webhook start生成临时公网回调地址。\n- 如涉及图片或视频发布，测试xurl media upload及状态查询流程。\n\n### 存档判定\n归档: 是 — 原因: 如果近期需要调用X API、调试OAuth认证、Webhook或媒体上传流程，可作为实用命令参考文档保留。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1782350681185,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:4931bcd73a273c156343bd195f8846f8638fa7db71ef7efee45c80866a4100d4",
+  "refs": {
+    "sessionId": "1782349452535_yz4tdnst"
+  },
+  "revisionId": "sha256:168975909e939aa7eae11d73380b5c72e4a9023a914751a84bc7d7f2b2061fb1",
+  "schemaVersion": 1,
+  "updatedAt": 1782350681185
+}

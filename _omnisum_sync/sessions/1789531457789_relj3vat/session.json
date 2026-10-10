@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789531457789,
+  "entityType": "session",
+  "id": "1789531457789_relj3vat",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为复杂或高风险项目建立设计文档模板，并按项目情况选择必要章节。",
+      "在评审前逐项检查不可逆决策、SLO、监控、安全、隐私、法律和关键依赖是否已被说明。",
+      "为每个开放问题记录候选方案、成本与立即下一步，并在解决后迁移至已解决问题区。"
+    ],
+    "archiveReason": "提供了完整、可复用的设计文档结构、适用条件和取舍标准，对产品开发、技术实现与跨团队协作具有直接实践价值。",
+    "classifiedAt": 1789532480134,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 9,
+      "methodology_value": 9,
+      "novelty": 6,
+      "relevance": 10,
+      "transferability": 9
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "高效软件设计文档写作指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "refactoringenglish.com",
+    "favicon": "https://refactoringenglish.com/favicon.ico",
+    "knowledgePoints": [
+      "项目涉及多人协作、周期超过三个月、长期运行、跨团队依赖、需求模糊或重大安全与法律风险时，设计文档通常具有较高收益。",
+      "设计文档应围绕目标与非目标、场景、约束、SLO、接口、依赖、安全隐私、监控日志、开放问题和备选方案组织。",
+      "开放问题应明确问题、可选方案和下一步动作；解决后保留原始讨论并记录最终决策，以形成可追溯的决策历史。"
+    ],
+    "oneHighValuePoint": "用“决策错误的代价”判断内容是否应进入设计文档：优先记录昂贵、长期且难以逆转的选择，避免在低成本细节上浪费设计和评审资源。",
+    "oneLineReview": "这是一份覆盖全面且可直接落地的软件设计文档方法指南，但论据主要来自作者经验和示例，实证支持相对有限。",
+    "primaryCategory": "软件工程",
+    "rating": "S",
+    "rejectReason": "",
+    "retentionDecision": "长期存档，可作为软件项目设计文档的模板与评审清单反复使用",
+    "secondaryCategories": [
+      "技术写作",
+      "产品开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统说明何时需要设计文档、投入多少精力以及应记录哪些内容，并以缓存系统为例，覆盖目标、约束、接口、SLO、安全、隐私、日志、开放问题和备选方案等关键部分。",
+    "tags": [
+      "设计文档",
+      "系统设计",
+      "技术评审",
+      "软件架构",
+      "项目协作"
+    ],
+    "title": "How to Write an Effective Software Design Document",
+    "totalScore": 86,
+    "url": "https://refactoringenglish.com/excerpts/write-an-effective-design-doc/"
+  },
+  "payloadHash": "sha256:abfe4bf68c0f5bb4eab79a51f50a6bdf18f02d779700857df72c77b15e59d994",
+  "refs": {},
+  "revisionId": "sha256:4fd18a4fbe7318f25f0fe065f0e3433688a5f567d2072e5d0d9b736bc495faf6",
+  "schemaVersion": 1,
+  "updatedAt": 1790769129067
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784692378102,
+  "entityType": "session",
+  "id": "1784692378102_awkmdphn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为实际代理任务建立评测集，纳入历史缺陷、事故案例和用户反馈，用于比较模型及提示词变更。",
+      "在团队内部先进行持续试用和公开反馈，并以活跃度、留存率及质量标准作为功能发布门槛。",
+      "在受控环境试用长时代理，配置沙箱、最小权限、关键目录人工审批和凭证隔离，再逐步扩大自动化范围。"
+    ],
+    "archiveReason": "文章直接讨论AI编程代理、团队工作流、评测体系、代码审查和安全机制，与核心关注方向高度相关，并包含若干可迁移的实践原则。",
+    "classifiedAt": 1784693074129,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "Claude编程代理与团队协作变革",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/6562a175/img/favicon.ico",
+    "knowledgePoints": [
+      "编程代理降低实现成本后，开发者的相对重点会转向产品判断、业务理解、原型设计和结果审查。",
+      "模型或系统提示词的迭代应依赖持续评测，覆盖任务能力、用户体验行为以及事故复盘中的回归案例。",
+      "长时间运行的代理需要结合沙箱、动态权限、红队测试、代码所有者审批和凭证注入等多层防护。"
+    ],
+    "oneHighValuePoint": "将代理落地的核心从让模型写代码推进到用评测、代码所有者、CI和事故复盘逐步建立自动化审查信任。",
+    "oneLineReview": "文章提供了有用的一手访谈材料和实践线索，但关键成效数据与安全结论仍需独立验证。",
+    "primaryCategory": "AI技术与编程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "值得精读和长期保留，重点沉淀代理评测、团队协作及安全落地方法",
+    "secondaryCategories": [
+      "Agent开发",
+      "软件工程实践"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "访谈围绕Claude Code、Claude Tag与Auto Mode，讨论编程代理如何改变开发流程、产品判断、代码重写、团队协作、评测审查和安全机制，并分享Anthropic的内部试用与若干应用案例。",
+    "tags": [
+      "Claude Code",
+      "编程代理",
+      "Agent评测",
+      "自动化代码审查",
+      "提示词设计"
+    ],
+    "title": "Claude Fable, Claude Tag, and Anthropic's Culture — Cat Wu & Thariq Shihipar ft Simon Willison - YouTube",
+    "totalScore": 75,
+    "url": "https://www.youtube.com/watch?v=uU5Gv2h8-9g&t=1s"
+  },
+  "payloadHash": "sha256:fc941742e1cf7ffee693694090a81a65a7d0f6797bfd15f59f02bc3ca5325b2b",
+  "refs": {},
+  "revisionId": "sha256:f9269b0f8845df7fe3ac4afcb28f4ed2e703ec2aa55a80b776a12e5fdf700291",
+  "schemaVersion": 1,
+  "updatedAt": 1789696159305
+}

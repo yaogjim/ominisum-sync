@@ -1,0 +1,71 @@
+{
+  "createdAt": 1783567101773,
+  "entityType": "session",
+  "id": "1783567101773_3a5z8o4c",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果关注本地AI Agent，可浏览其docs/runtime-kernel.md和隐私威胁模型文档。",
+      "参考其权限引擎、凭据存储和工具调用边界，整理自己的Agent安全设计清单。",
+      "如需评估项目成熟度，应进一步查看源码、issue、测试覆盖和实际运行体验，而不是只依据README判断。"
+    ],
+    "archiveReason": "包含较完整的功能边界、隐私存储说明、运行时架构和开发命令，对理解本地AI Agent桌面应用有参考价值",
+    "classifiedAt": 1783567136086,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "本地优先AI桌面助手Maka",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Maka采用Electron桌面应用形态，整合模型连接、会话、工具调用、文件读写、终端执行、搜索和机器人入口。",
+      "其运行时架构拆分为SessionManager、AgentRun、AiSdkBackend、ModelAdapter、ToolRuntime、RunTrace等边界。",
+      "本地隐私设计强调数据存放在Electron userData工作区，并通过权限引擎控制文件写入和命令执行。",
+      "项目支持多类模型来源，包括OpenAI、Anthropic、Gemini、DeepSeek、Moonshot、Ollama和OpenAI兼容网关。",
+      "开发流程提供npm workspace命令、测试命令、视觉回归、真实窗口smoke和release检查。"
+    ],
+    "oneHighValuePoint": "对本地凭据、会话数据、工具权限和运行恢复的边界说明较清晰，可作为设计本地AI Agent安全边界的参考。",
+    "oneLineReview": "适合快速了解一个本地优先AI桌面Agent项目的产品边界和工程结构，但不宜当作高质量技术论文精读。",
+    "primaryCategory": "AI工具与桌面Agent",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，适合作为本地优先AI桌面Agent产品与架构样例",
+    "secondaryCategories": [
+      "开源项目",
+      "本地优先应用",
+      "Agent运行时架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该README介绍Maka本地优先AI桌面助手的功能、模型接入、隐私边界、工具权限、运行时架构、开发命令和测试流程。内容实用性较强，但主要是项目说明，缺少实测数据、案例效果和深入技术论证。",
+    "tags": [
+      "Maka",
+      "AI桌面助手",
+      "local-first",
+      "Electron",
+      "Agent",
+      "工具权限"
+    ],
+    "title": "maka-agent/maka-agent: Maka — local-first AI desktop assistant",
+    "totalScore": 63,
+    "url": "https://github.com/maka-agent/maka-agent"
+  },
+  "payloadHash": "sha256:5c3f986a488e4308ae635f8ec1a8a9d493c918039684fb34bdd3b4715fb24fe8",
+  "refs": {},
+  "revisionId": "sha256:6cf1d51238133cdd3332cbd3e51c30cf04a30afd262e2490a240fc60ebb59869",
+  "schemaVersion": 1,
+  "updatedAt": 1789729089487
+}

@@ -1,0 +1,61 @@
+{
+  "createdAt": 1790233662001,
+  "entityType": "session",
+  "id": "1790233662001_qrisp2yg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若复现该机构，记录打印材料与间隙，并测试反复运动后是否松动。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1790233686874,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 4,
+      "information_density": 5,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "一体打印轴承驱动旋转圆盘实验",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "该原型通过轴承带动圆盘，将推拉轴的直线运动转换为旋转运动。"
+    ],
+    "oneHighValuePoint": "一体打印轴承可用于尝试将推拉轴的直线运动转换为圆盘旋转，但其长期表现尚未验证。",
+    "oneLineReview": "有具体的机构演示，但不足以作为可复现的设计方法或可靠性依据。",
+    "primaryCategory": "机械设计与3D打印",
+    "rating": "D",
+    "rejectReason": "仅展示一次原型运行，缺少结构尺寸、打印参数和耐久性验证。",
+    "retentionDecision": "不优先阅读或归档；如需设计类似机构，可回查原帖演示。",
+    "secondaryCategories": [
+      "产品原型开发"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者展示了一个3D打印联轴器原型：推拉轴时，轴承带动圆盘旋转，将直线运动转换为旋转运动。引用推文提到螺纹连接和一体打印轴承；回复则提出打印间隙、材料蠕变及耐久性疑问，但正文未给出测试数据。",
+    "tags": [
+      "3D打印",
+      "一体打印轴承",
+      "运动转换",
+      "机械原型"
+    ],
+    "title": "Elvis: Suprisingly the coupler works just as intended, It doesn't require much force to…",
+    "totalScore": 39,
+    "url": "https://x.com/JustSayElvis/status/2102836364266102977"
+  },
+  "payloadHash": "sha256:888d9c125ec0d9b5ea469b8c50ce6c2d096d77a2a57ff5deb4cc4d0dabddd7ec",
+  "refs": {},
+  "revisionId": "sha256:bf8e24b21a25c15f09077046fda66a8a138df5b44582fe3821ae34e4097ee4d2",
+  "schemaVersion": 1,
+  "updatedAt": 1790233817240
+}

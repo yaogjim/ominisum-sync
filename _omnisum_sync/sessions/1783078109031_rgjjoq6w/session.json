@@ -1,0 +1,74 @@
+{
+  "createdAt": 1783078109031,
+  "entityType": "session",
+  "id": "1783078109031_rgjjoq6w",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将文中的RAG检查项整理为系统设计面试答题模板。",
+      "为现有RAG项目补充摄取质量、分块质量、检索召回、引用忠实性和权限过滤检查。",
+      "在智能体设计中采用“模型提出、系统验证、工具执行”的架构原则。",
+      "为敏感工具调用增加幂等性键、审批流、审计日志、重试限制和回滚路径。",
+      "针对嵌入模型迁移制定并行索引、双写、回填、影子流量、分段评估和回滚方案。"
+    ],
+    "archiveReason": "系统梳理了生产级RAG与智能体设计中的关键工程问题、评估维度、安全边界和面试场景，具备较高复用价值。",
+    "classifiedAt": 1783078274342,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "RAG与智能体工程面试指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "RAG质量从数据摄取和解析开始，向量数据库只是后续环节。",
+      "检索评估应与生成评估分离，分别衡量证据是否被找到、是否被忠实使用、回答是否满足问题。",
+      "混合检索适合生产系统，因为稠密检索和稀疏检索具有不同失效模式。",
+      "企业RAG必须在模型接收上下文之前执行权限控制，不能依赖提示词防泄漏。",
+      "智能体并非总是优于流水线，只有任务需要动态决策、恢复和多步规划时才有必要。",
+      "工具设计应窄接口、强校验、权限明确，并配合审计、幂等性和人工审批。",
+      "代理系统需要程序化停止条件、预算限制和循环检测，不能只相信模型自称完成。",
+      "多智能体系统只有在权限、工具、并行、评审或角色分离有明确需求时才合理。"
+    ],
+    "oneHighValuePoint": "将RAG失败拆分为摄取、解析、检索、重排序、生成、引用和评估等独立环节，而不是笼统归因于模型能力不足。",
+    "oneLineReview": "这是一份较完整的RAG与智能体系统工程清单，适合作为面试准备和系统设计复盘材料。",
+    "primaryCategory": "人工智能工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "RAG系统",
+      "智能体架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕生产级RAG和智能体系统展开，覆盖数据摄取、分块、混合检索、重排序、评估、权限控制、多模态检索、嵌入迁移、提示注入、工具设计、停止条件、幂等性和多智能体协作等核心问题。",
+    "tags": [
+      "RAG",
+      "AI Agent",
+      "检索评估",
+      "工具调用",
+      "生产级AI系统"
+    ],
+    "title": "2026年人工智能/机器学习工程师面试指南 - 第二部分",
+    "totalScore": 77,
+    "url": "https://x.com/techNmak/status/2068683947899273295"
+  },
+  "payloadHash": "sha256:7d81cf88431ee6a1d511e0d1198af55b2c7e91387c49ae570e1b2806f0f9ac15",
+  "refs": {},
+  "revisionId": "sha256:d643d99101340a6858cabbf545bbbedc485feb22266ba12b5240235b8f609114",
+  "schemaVersion": 1,
+  "updatedAt": 1789695729771
+}

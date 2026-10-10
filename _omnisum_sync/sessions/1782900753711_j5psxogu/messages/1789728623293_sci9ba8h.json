@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728623293,
+  "entityType": "message",
+  "id": "1789728623293_sci9ba8h",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Kimi Code 招聘透露：AI 编程的瓶颈已从“写代码”转向“完成复杂任务”\n\n作者从月之暗面 Kimi Code 的招聘信息中判断，当前 Coding Agent 已能生成基础代码，但距离独立接管真实软件项目仍很远。核心障碍不是代码生成能力，而是能否在长周期、复杂环境中保持目标并可靠执行。\n\n## Agent 会写代码，却难以持续完成任务\n\n现有 Agent 容易在复杂任务中迷失：重复操作、误解上下文、错误调用工具、失败后无法恢复，或执行过程中丢失最初目标。因此，AI 更多仍被用于代码补全和一次性脚本，尚难独立完成复杂 Epic 或 Issue。\n\n## 竞争焦点转向模型之外的系统工程\n\n招聘信息强调，要让 Agent 进入真实代码仓库、工具链和开发流程。作者据此认为，单靠提示词优化或扩大模型参数已不够，下一阶段的关键包括：\n\n- 稳定的执行与反馈循环\n- 长任务拆解和历史轨迹管理\n- 沙箱、远程执行与失败恢复\n- 基于 MCP 等协议连接工具生态\n\n这本质上是涉及多工具协同与状态管理的复杂系统工程。\n\n## AI 时代更需要判断、架构与纠错能力\n\nJD 所描述的理想工程师，并非离开 AI 就无法编码，而是借助 AI 更快、更大胆地解决问题，同时能识别低质量代码、处理 AI 无法解决的问题，并承担架构设计和纠错责任。作者认为，Coding Agent 远未成熟，能驾驭并完善这套系统的人，可能掌握下一阶段软件工程的重要机会。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728623293,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:da0c0377a257af939eddc4744e9e03e5ccf6bbe5c06b1acba8364c098efeac7b",
+  "refs": {
+    "sessionId": "1782900753711_j5psxogu"
+  },
+  "revisionId": "sha256:dc74f79e6403546a5d057ddd18380c43101d6c065cbc1f6d1f765b6f61cb5b9f",
+  "schemaVersion": 1,
+  "updatedAt": 1789728623293
+}

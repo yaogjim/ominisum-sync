@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728110864,
+  "entityType": "message",
+  "id": "1789728110864_lmi38lqt",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# AI 正在打破“内容换流量”的互联网契约\n\nCloudflare CEO Matthew Prince 认为，生成式 AI 用直接答案取代搜索链接，使互联网长期依赖的“允许抓取内容、换取用户流量和广告收入”模式失效。问题不在于反对 AI，而在于需要建立新的付费与分配机制，否则优质开放内容将失去生存基础。\n\n## 答案引擎切断了内容创作者的回报\n\n过去 Google 抓取并组织网页，同时把用户送回内容网站。如今 AI 答案引擎吸收内容后直接回答，点击大幅减少。据 Prince 提供的 Cloudflare 数据，获得一次回访所需的抓取量，相比 Google 约高出：\n\n- OpenAI：750 倍\n- Anthropic：3 万倍\n- Google 自身也比十年前高 10 倍\n\n若收入无法回流，内容生产可能衰退，或被少数富有机构资助并控制。\n\n## 内容价值取决于稀缺性，而非传统声望\n\nReddit 通过封锁未付费爬虫，迫使 Google 和 OpenAI 签约，2024 年相关收入达 1.2 亿美元。Prince 指出，Reddit 与《纽约时报》存档的 token 规模相近，授权价格却相差约七倍。原因是主流新闻事实较易替代，而 Reddit 的社区讨论不可复制。这意味着本地、独特、难替代的数据可能比高声望内容更有议价权。\n\n## Cloudflare 想做交易基础设施，而非内容裁判\n\nPrince 提议，AI 公司按月活用户每年缴纳约 1 美元进入资金池，再依据内容的声誉与新颖性分配给创作者，总规模可达约 100 亿美元。他主张由各 AI 公司自行设计估值算法，Cloudflare 只充当“做市商”。\n\n落地仍有难点：Google 将 AI 摘要与搜索爬虫绑定，网站难以只退出 AI；部分答案引擎在无法抓取原文时甚至可能依据标题编造内容。Pay-per-crawl 的核心意义，是为 Agent 互联网建立机器访问内容时的产权、定价与收益分配规则。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728110864,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:562ba143507eac630b10045f128a3a28f3e0312065986dcf957c567e45dfab81",
+  "refs": {
+    "sessionId": "1786354282701_rsaapczx"
+  },
+  "revisionId": "sha256:26fe70aaa8a05f247e38950aaa8feabdc2f408030d915125d8c51194bdd69ef5",
+  "schemaVersion": 1,
+  "updatedAt": 1789728110864
+}

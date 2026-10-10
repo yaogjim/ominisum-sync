@@ -1,0 +1,83 @@
+{
+  "createdAt": 1789875877241,
+  "entityType": "session",
+  "id": "1789875877241_v1kpymfb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "开展复现实验时使用文档给出的训练参数：--n_per_source 1500 --epochs 2 --accum 8 --perm_kl 0 --ord_w 0，并记录当前逐轮重做增强导致的非逐位复现差异。",
+      "在自有标注集上测量准确率、ECE和NLL，并测试选项重排、追加无关选项及问题隔离，再判断概率输出是否适合目标任务。",
+      "使用python -m kev.serve --run runs/kev启动本地研究服务，通过POST /v1/systemone验证Choice、Noul和Score接口，不用于影响人员的生产决策。"
+    ],
+    "archiveReason": "提供具体架构、训练配置、复现命令、校准指标及机制测试，可复用于本地决策模型实验和评估清单设计。",
+    "classifiedAt": 1790768500489,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "轻量决策模型架构与校准评估",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/85cdda5018af294938622fdb336369e7bc53eca720f73111266ada3607e50a8d/jaredpalmer/kev",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/85cdda5018af294938622fdb336369e7bc53eca720f73111266ada3607e50a8d/jaredpalmer/kev",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "类型化决策可通过读取<decide>与各选项结束位置的隐藏状态并计算softmax实现，再分别映射为选择结果、是非概率或等级期望，无需生成完整答案文本。",
+      "模型输出的confidence不等于经验证的正确概率；同来源留出集上的校准结果不足以支持陌生任务中的重大决策阈值。",
+      "选项顺序与新增干扰选项应纳入决策模型评估：该检查点报告了7.4%的排列后argmax翻转，且尚未采用当前代码默认的排列一致性与序数损失。"
+    ],
+    "oneHighValuePoint": "共享状态、隔离问题分支的注意力设计支持多问题打包推理；文档报告打包与分开推理的最大概率差为3.7e-6、速度约提升2倍，为兼顾吞吐与问题间隔离提供了具体实现参考。",
+    "oneLineReview": "实现细节和评估框架具有明确参考价值，但结果主要来自作者的小规模同来源测试，不能据此推断陌生任务或高风险场景的可靠性。",
+    "primaryCategory": "AI模型开发与评估",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并存档，作为轻量决策组件实现与评估的参考，不作为生产可靠性的证明",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent决策组件",
+      "模型安全与可靠性"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文档介绍基于Qwen2.5-0.5B的轻量决策模型，说明LoRA训练、分支注意力隔离、选项概率读出及本地服务方式，并报告六类数据来源的评估与机制测试，强调校准、顺序敏感性和生产使用限制。",
+    "tags": [
+      "轻量决策模型",
+      "LoRA微调",
+      "概率校准",
+      "分支注意力隔离",
+      "类型化输出"
+    ],
+    "title": "kev/MODEL_CARD.md at main · jaredpalmer/kev",
+    "totalScore": 79,
+    "url": "https://github.com/jaredpalmer/kev/blob/main/MODEL_CARD.md"
+  },
+  "payloadHash": "sha256:202e5c38c916ac4c8ea768f7b17c00cf762d08b1e867e0b9b69e960ba0a73eab",
+  "refs": {},
+  "revisionId": "sha256:12c8c01c4bc3fd5ed7cec836101fabe3347d0a016864e174c5d7a1a337425e4c",
+  "schemaVersion": 1,
+  "updatedAt": 1790770582862
+}

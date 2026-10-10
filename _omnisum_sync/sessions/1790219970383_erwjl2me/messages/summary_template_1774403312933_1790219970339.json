@@ -1,0 +1,25 @@
+{
+  "createdAt": 1790219970339,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1790219970339",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 两元认证芯片如何让安卓车机显示 CarPlay？关键不在芯片 “运行” CarPlay\n\n这组推文解释了一种让原本不支持 CarPlay 的车机显示 iPhone 界面的方案。**USB 上的 MFi 认证芯片只负责通过连接时的认证；真正接收、解码并显示画面的是车机上的软件。**作者已在一台 Android 9 车机上跑通有线画面，但音频尚未解决，无线连接也仍有问题。\n\n## 芯片负责认证，车机软件负责显示\n\n作者描述的流程是：车机软件启动后，先读取 USB 设备上的 MFi 认证芯片信息；认证通过后等待 iOS 设备连接；连接建立后，软件接收并解码来自手机的视频流，把 CarPlay 画面显示在车机屏幕上。\n\n因此，这枚芯片并不是一台微型 CarPlay 主机，也不负责处理画面。**它解决的是认证这一关，不是替车机完成整个功能。**推文提到芯片只要两元多，说的是这一硬件部件的价格，不能理解为两元就能得到一套完整、可用的 CarPlay 方案。作者称这一思路最早来自 *livi* 项目，并感谢了后续的 [xcertplay 项目](https://github.com/shilapi/xcertplay)。\n\n作者说 “CarPlay 其实就是发送视频流”，重点是在解释画面为什么能由安卓车机上的软件接收和显示；这不等于完整的 CarPlay 体验只需处理视频，音频就是当前尚未打通的一环。\n\n## 演示跑通了画面，还没有跑通完整体验\n\n作者在一台搭载 Android 9 的国产车车机上测试：**有线连接显示流畅、帧率较高；无线连接黑屏；目前获取不到音频通道，所以没有声音。**这说明方案已展示出可用的画面效果，但还不能把这次演示等同于完整可用的 CarPlay。\n\n## 为什么作者认为它不局限于安卓车机\n\n按作者的推断，只要另一套系统能接收并解码视频流、有屏幕和触控能力，相关软件与硬件就有机会移植过去；**这是基于工作原理提出的可能性，不是已经在 “任何车机” 上验证成功。**\n\n作者还补充了两种相近思路：认证可以由远端设备完成，从而省去本地 USB 认证芯片；原始 *livi* 项目也整合了 Android Auto，作者称那一路线不需要这枚 USB MFi 芯片，手机直接通过 USB 连接即可。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1790219970339,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:574158209163c2068cb084e70836d1e398090c9af67b238b5594a6003b47d821",
+  "refs": {
+    "sessionId": "1790219970383_erwjl2me"
+  },
+  "revisionId": "sha256:0344f2ffcb44db8dfbb7fb7dcada01131072c8c50484dab92972388b0eaf9a1a",
+  "schemaVersion": 1,
+  "updatedAt": 1790219970339
+}

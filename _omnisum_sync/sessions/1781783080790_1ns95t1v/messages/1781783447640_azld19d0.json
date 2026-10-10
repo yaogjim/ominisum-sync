@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781783426700,
+  "entityType": "message",
+  "id": "1781783447640_azld19d0",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章解释了 AI Agent 中常说的「loop（循环）」到底如何落地：核心是让 **Skill（技能文件）根据真实反馈持续自我改进**。Warp CEO Zach Lloyd 提出的方案是一个“双层循环”：内循环负责执行任务，外循环负责从反馈中总结规则并更新 Skill。\n\n---\n\n## 1. 背景：Agent 的「loop」需要可落地的解释\n\n最近很多人讨论 Agent 的「loop」，但概念往往比较抽象。  \nZach Lloyd 给了一个更工程化的版本：**通过反馈驱动 Skill 自动进化**，并以 GitHub issue 自动分类为例说明。\n\n---\n\n## 2. 内循环：每个新 issue 自动分类\n\n当 GitHub 仓库中出现一个新的 issue 时：\n\n- GitHub Action 会触发云端 Agent；\n- Agent 运行一个用于 triage 的 Skill；\n- 自动把 issue 分成三类：\n  - `ready-to-implement`：可以直接开发；\n  - `needs-info`：信息不足，需要补充；\n  - `duplicate`：重复问题；\n- 系统会自动打标签；\n- 同时发一条带隐藏标记的评论，例如：`oz-triage v:N`，用于记录当前 Skill 版本。\n\n通俗理解：  \n**内循环就是 Agent 每次接到任务后，按照现有 Skill 去执行。**\n\n---\n\n## 3. 外循环：每天从反馈中学习并改进 Skill\n\n外循环不是处理单个 issue，而是定期总结经验。流程如下：\n\n- 每天由定时 Agent 拉取最近 **14 天** 被分类过的 issue；\n- 收集三类反馈信号：\n  1. 评论中的赞踩；\n  2. 人工纠正的回复；\n  3. 标签变化，例如人把 `ready-to-implement` 改成 `needs-info`。\n\n其中，**标签漂移** 是最强的真实反馈，因为它直接说明 Agent 原来的判断错了。\n\n---\n\n## 4. 关键做法：把具体错误提炼成通用规则\n\n外循环不会只针对某一个 issue 做修补，而是把反馈总结成可复用的规则。\n\n例如：\n\n- 不好的改法：  \n  “这个 issue 应该改成 needs-info。”\n\n- 好的改法：  \n  “如果崩溃报告缺少 OS 版本号，一律归类为 needs-info。”\n\n这样，Skill 会越来越像一份不断完善的操作手册。\n\n---\n\n## 5. Skill 如何更新：本质是改文件\n\n文章强调一个关键点：\n\n> **Skill 就是文件，改进就是对文件做 diff。**\n\n具体流程是：\n\n- Agent 把新总结出的规则写入 Skill 的 `Learned guidelines` 段；\n- Skill 版本号 `+1`；\n- 自动创建 PR；\n- 由人 review 后再合并；\n- 永远不会自动直接修改 `main` 分支。\n\n这保证了系统能自我改进，但仍有人类把关，避免失控。\n\n---\n\n## 6. 优势：几乎零额外标注成本\n\n这种方法的优势在于，反馈本来就存在于日常协作流程里：\n\n- issue 标签；\n- 评论；\n- 人工修改记录；\n- 赞踩反馈。\n\n因此不需要额外组织人工标注，系统就能利用已有信号持续优化。\n\n---\n\n## 7. 适用范围：不只适用于 issue 分类\n\n作者指出，这套“双层循环”不仅能用于 GitHub issue triage，也适合其他场景，例如：\n\n- code review；\n- bug 修复；\n- 事件响应；\n- 开源项目维护。\n\n如果任务目标非常明确，还可以用自动 grader 替代人工反馈。\n\n---\n\n## 8. 实际案例：Warp 已经在使用并开源\n\nWarp 已经用这套机制管理自己的开源仓库，并开源了相关框架：\n\n- 项目名：`oz-for-oss`\n- 核心思想：让 Skill 在真实反馈中不断迭代。\n\n---\n\n## 总结一句话\n\nAgent 的「loop」不是神秘概念，而是一个工程闭环：  \n**Agent 执行任务 → 收集真实反馈 → 总结通用规则 → 更新 Skill 文件 → 人类 review 合并 → 下一轮执行变得更好。**",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781783426700,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8dd7089fe76b2341812756c36d8660a14d1e3114e663a77728fb8744dfee2310",
+  "refs": {
+    "sessionId": "1781783080790_1ns95t1v"
+  },
+  "revisionId": "sha256:63cde8f7e1465251728bd4b4b01cc7ddbfbe34ad05122212280320fb4bba9d95",
+  "schemaVersion": 1,
+  "updatedAt": 1781783426700
+}

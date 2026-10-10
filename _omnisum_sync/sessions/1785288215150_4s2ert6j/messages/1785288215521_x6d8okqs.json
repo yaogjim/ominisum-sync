@@ -1,0 +1,24 @@
+{
+  "createdAt": 1785288025552,
+  "entityType": "message",
+  "id": "1785288215521_x6d8okqs",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Gigatoken：面向大规模语言模型数据处理的超高速分词器\n\n## 一句话总结\n\n**Gigatoken 是一个基于 Rust 的高性能 Tokenizer，兼容 Hugging Face Tokenizers 和 tiktoken，针对现代 CPU 深度优化，分词速度可达到 GB/s，部分场景比现有方案快数百至上千倍。**\n\n## 核心能力\n\n### 1. 兼容主流分词器\n\n- 支持 Hugging Face Tokenizers 和 tiktoken 的兼容模式。\n- 可直接加载 Hugging Face 模型名称，例如 `Qwen/Qwen3-8B`。\n- 覆盖 GPT、Llama、Qwen、DeepSeek、Gemma、Phi、GLM 等大量主流模型分词器。\n- 在兼容模式下，尽量保证输出结果与 Hugging Face 完全一致。\n\n### 2. 支持大文件直接处理\n\nGigatoken 可以直接读取文本文件，并在 Rust 层完成：\n\n- 文档切分\n- 批量分词\n- 多线程并行\n- Token 结果输出\n\n相比将大量 Python 数据传入底层，这种方式可以减少 Python 调用和数据传输开销，更适合处理训练语料库。\n\n## 性能表现\n\n### 典型基准结果\n\n在 11.9 GB 的 OpenWebText 数据集上：\n\n- AMD EPYC 144 核：最高约 **24.5 GB/s**\n- Apple M4 Max 16 核：最高约 **8.8 GB/s**\n- AMD Ryzen 7 9800X3D 16 核：最高约 **6.3 GB/s**\n\n以 GPT-2 为例：\n\n- 相比 Hugging Face Tokenizers：\n  - EPYC 上约 **989 倍**\n  - M4 Max 上约 **1,268 倍**\n  - Ryzen 7 上约 **106 倍**\n- 相比 tiktoken：\n  - EPYC 上约 **681 倍**\n  - M4 Max 上约 **140 倍**\n\n不过，实际速度会因 CPU、Tokenizer 类型、数据规模和 API 使用方式而变化。\n\n## 性能优化原理\n\nGigatoken 的主要优化方向包括：\n\n1. **SIMD 加速**  \n   使用 AVX512、AVX2、NEON 等指令集提升文本预处理效率。\n\n2. **优化预分词阶段**  \n   重点优化通常由正则表达式完成的 pre-tokenization，减少分支和额外开销。\n\n3. **高效缓存**  \n   对重复出现的词或预分词结果进行缓存，避免重复计算。\n\n4. **充分利用多核 CPU**  \n   自动并行处理大型文档，减少线程间通信成本。\n\n5. **减少 Python 交互**  \n   将核心流程放入 Rust，避免 Python 层成为性能瓶颈。\n\n## 使用方式\n\n安装：\n\n```bash\npip install gigatoken\n```\n\n兼容 Hugging Face：\n\n```python\nimport gigatoken as gt\n\ntokenizer = gt.Tokenizer(hf_tokenizer).as_hf()\ntokens = tokenizer.encode_batch([\n    \"This is a test string\",\n    \"And here is another\"\n])\n```\n\n直接处理模型和文件：\n\n```python\nimport gigatoken as gt\n\ntokenizer = gt.Tokenizer(\"Qwen/Qwen3-8B\")\nfile_source = gt.TextFileSource(\n    [\"owt_train.txt\"],\n    separator=b\"<|endoftext|>\"\n)\n\ntokens = tokenizer.encode_files(file_source)\n```\n\n项目还提供命令行工具，可用于测速和验证输出是否与 Hugging Face 一致。\n\n## 适用场景\n\nGigatoken 更适合以下任务：\n\n- 大规模预训练语料 Tokenization\n- Common Crawl 等海量文本处理\n- 训练数据清洗和预处理\n- 批量生成 Token 数据集\n- 需要降低数据准备时间和 CPU 成本的训练基础设施\n\n作者估算，按照其在 AMD EPYC 上的速度，处理约 **130 万亿个 Common Crawl Tokens** 可能只需约 **6.5 小时**，但这是基于基准数据的理论外推。\n\n## 局限与注意事项\n\n- **WordPiece 尚未支持**。\n- **SentencePiece 优化程度较低**，相关模型速度明显慢于主流 BPE 模型。\n- 兼容 Hugging Face API 时，为保证结果一致，会损失部分性能。\n- Python 迭代仍使用 ABI3，未来针对不同 Python 版本优化后，部分场景可能再提升约 2 倍。\n- 文件输出接口尚未实现。\n- Windows 支持和测试较少，暂时更建议使用 WSL。\n- 基准测试主要体现超大批量、文件级处理能力，小规模或交互式调用未必能获得同等收益。\n\n## 产品价值判断\n\nGigatoken 的核心价值不只是“更快的分词算法”，而是将**分词、缓存、文件读取和多核并行**整合到一个面向大规模数据处理的高性能执行路径中。\n\n对于模型训练团队而言，它有潜力显著缩短数据预处理周期、降低 CPU 资源成本，并减少 Tokenization 对训练流水线的阻塞。但在正式替换现有方案前，仍需针对自身模型、Tokenizer 类型、操作系统和数据规模进行兼容性与性能验证。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1785288025552,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1693463d90007eebab1c547fa9257f8036b17d824fb67e7ce7dec83e98a60c28",
+  "refs": {
+    "sessionId": "1785288215150_4s2ert6j"
+  },
+  "revisionId": "sha256:259ba743775f1eaeddfcf6f1ea2b1a9ef111cea077640728eb403cade390a5e5",
+  "schemaVersion": 1,
+  "updatedAt": 1785288025552
+}

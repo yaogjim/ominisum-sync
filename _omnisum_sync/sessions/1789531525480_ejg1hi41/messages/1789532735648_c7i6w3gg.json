@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789532632107,
+  "entityType": "message",
+  "id": "1789532735648_c7i6w3gg",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Fugleramme：用本地 AI“听见”鸟类的电子墨水画框\n\nFugleramme 是一款面向树莓派的开源鸟类展示系统：它通过麦克风实时识别周围鸟鸣，再把对应鸟种以19世纪自然史插画呈现在电子墨水屏上。识别和展示可完全在本地运行，也能通过网页查看和管理。\n\n## 工作原理：从鸟鸣到插画\n\n系统由 BirdNET-Go 和 Fugleramme 两部分配合：\n\n1. **BirdNET-Go** 监听麦克风，用 AI 根据鸟鸣识别鸟种。\n2. **Fugleramme** 定期读取其 API，将鸟种匹配到对应插画。\n3. 系统自动去除插画背景，并将多只鸟排版到带纸张纹理的页面上：\n   - 体型较大的鸟更靠近画面中央；\n   - 插画大小依据鸟类体重调整；\n   - 鸟种发生变化时才刷新电子墨水屏；\n   - 没有识别结果时，画面只显示空栖木。\n\n同一画面还能作为网页看板展示，并提供管理页面，用于配置显示内容和自动更新等功能。如果用户已有 BirdNET-Go，可直接连接同一设备或局域网中的现有实例。\n\n## 插画特色：真实古籍素材，而非 AI 生成\n\n项目收录了 **800 多张手工抠图，覆盖超过 400 个鸟种**。所有图像均来自真实的公共领域自然史图版，由项目人工筛选和整理；插画本身不是 AI 生成，但部分素材使用 AI 做过修复。\n\n目前素材主要来自斯堪的纳维亚、英国和中欧图鉴，因此对以下地区覆盖较好：\n\n- 北欧\n- 不列颠群岛\n- 德国\n\n其他地区覆盖相对不足，项目正在扩展欧洲其他地区及北美鸟种。\n\n## 硬件与展示方式\n\n作者使用的主要硬件包括：\n\n- Raspberry Pi 5\n- Inky Impression 13.3 英寸 Spectra 6 彩色电子墨水屏\n- 麦克风\n- A4 相框\n\n电子墨水屏适合长期静态展示，且系统只在检测到的鸟类发生变化时重绘。项目还提供网页看板；作者的在线实例展示的是其挪威卑尔根住所附近实时听到的鸟类。\n\n## 安装与运行\n\n项目支持多种部署方式：\n\n- **树莓派安装脚本**：自动询问 BirdNET-Go 的位置和端口，下载项目、安装依赖，并注册为 `systemd` 服务；全新系统可能需要重启。\n- **Docker**：可直接运行官方容器，并通过环境变量指定 BirdNET-Go 地址；网页看板默认位于 `:8080`，管理页面位于 `:8080/admin`。\n- **Docker Compose**：在带 USB 麦克风的 Linux 主机上，可同时启动 Fugleramme 和 BirdNET-Go。\n- **开发环境**：项目提供模拟检测器，无须树莓派或真实 BirdNET-Go 也能开发和测试。\n\n## 灵感与项目定位\n\n作者希望把墙上的传统鸟类海报变成一幅“只展示花园里当前真实鸟类”的动态画框。其视觉风格受到 Axel Thorenfeldt 的 WWF 自然海报启发，实时画框概念参考了 AvianVisitors，识别能力则来自 BirdNET-Go。\n\n仓库还列出了若干相似项目，但明确说明 Fugleramme 未与它们共享代码或美术资源。\n\n## 开源贡献与许可\n\n项目欢迎提交错误修复、文档改进和新鸟类插画：\n\n- Bug 可提交问题报告；\n- 使用疑问、创意或成品展示可在阅读 FAQ 后进入 Discussions；\n- 修复、文档和插画可直接提交 PR。\n\n主要许可并不完全一致：\n\n- Fugleramme 代码：**MIT**\n- BirdNET-Go 检测部分：**CC BY-NC-SA 4.0，仅限非商业用途**\n- 鸟类插画：各素材目录分别标注来源和许可\n- 字体、鸟类体重和分类学别名数据：分别采用对应的开放许可\n\n因此，虽然主体代码较宽松，但实际部署或再发布时仍需同时遵守鸟鸣识别模型、插画和数据集各自的授权条件。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789532632107,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bacab27e8e964bfc9e2d7bffc44feaef5e3bff1298ab721e889ea39c9c3280ef",
+  "refs": {
+    "sessionId": "1789531525480_ejg1hi41"
+  },
+  "revisionId": "sha256:97c57f57f957ccd54bddadd4fdb10a7370b781c88d3090a068707e270744dc42",
+  "schemaVersion": 1,
+  "updatedAt": 1789532632107
+}

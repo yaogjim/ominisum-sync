@@ -1,0 +1,71 @@
+{
+  "createdAt": 1782985405772,
+  "entityType": "session",
+  "id": "1782985405772_lhe0lunr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将常用重复任务按目标、成功标准、验证方式、停止条件四部分重新描述。",
+      "先手动跑通一次可靠流程，再沉淀为可复用提示或技能，最后再考虑自动化调度。",
+      "对AI输出任务设置明确验收标准，避免模型仅自我确认导致低质量迭代。",
+      "谨慎评估Mira等工具的隐私、权限和真实稳定性，不直接采纳营销宣称。"
+    ],
+    "archiveReason": "包含AI循环的基本框架、验证机制、停止条件和自检提示模板，可作为轻量级工作流自动化参考。",
+    "classifiedAt": 1782989562275,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI循环与Mira实践指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI循环的核心流程包括发现、计划、执行、验证、迭代，其中验证门和停止条件决定循环是否可靠。",
+      "编码类任务适合循环化，因为测试、类型检查、构建结果能提供客观反馈。",
+      "生产级循环需要自动化触发、可复用技能、子代理分工、连接器和验证器。",
+      "循环成本应关注每次被接受变更的成本，而不仅是token消耗或运行次数。",
+      "在普通LLM中也可通过目标、成功标准和自检协议模拟轻量循环。"
+    ],
+    "oneHighValuePoint": "循环是否值得构建的四项判断：高频重复、可自动拒绝错误输出、代理能端到端完成、完成标准客观。",
+    "oneLineReview": "有实用框架和提示模板，但营销成分较重，证据质量不足。",
+    "primaryCategory": "AI工作流自动化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "智能体设计",
+      "效率工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍AI循环相较单次提示的优势，强调目标、验证、状态和停止条件，并给出编码循环、自检提示和日常自动化示例。后半部分明显转向Mira工具推广，证据和案例支撑较弱。",
+    "tags": [
+      "AI循环",
+      "Agent",
+      "自动化",
+      "Claude",
+      "ChatGPT",
+      "Mira"
+    ],
+    "title": "循环详解：Claude、GPT、Mira 以及实际起作用的内容",
+    "totalScore": 58,
+    "url": "https://x.com/AnatoliKopadze/status/2068328135611822149"
+  },
+  "payloadHash": "sha256:a0f5ecaa51558f546d29f204320052e1537fba9353738d30b22772cab58ef6ba",
+  "refs": {},
+  "revisionId": "sha256:c2b2ae2a31c70c0d811db1f158ed40a0d0309db87e1dffdce76ece732b15a007",
+  "schemaVersion": 1,
+  "updatedAt": 1789729455603
+}

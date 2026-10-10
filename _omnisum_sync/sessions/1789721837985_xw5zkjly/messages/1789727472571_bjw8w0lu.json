@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727472570,
+  "entityType": "message",
+  "id": "1789727472571_bjw8w0lu",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 用公开信号寻找已被验证的产品需求\n\n文章分享了一套“从市场结果反推需求”的选品方法：不只依赖关键词，而是观察竞品收入、榜单热度、开源项目反馈、广告投放和流量增长，从中筛选已有需求且竞争相对较弱的产品机会。\n\n## 从成熟产品和榜单中筛选机会\n\n作者建议直接研究表现较好的对标产品，拆解其外链、界面、功能和内页设计；文中以 Fylia.ai 为例，称其为“10 万美元站”。此外，Product Hunt 提供免费 API，可按日期获取产品列表，便于批量筛选增长潜力较大、竞争相对较弱的方向。\n\n## 用收入、广告和流量验证真实需求\n\n相比口头反馈，付费和持续获客更能说明市场是否成立：\n\n- 通过 Stripe、Creem、LemonSqueezy 等支付服务相关数据，以及 TrustMRR、SEO Web Cafe 等工具，寻找收入或付费表现较好的产品。\n- 查看 Google Ads Transparency 和 Facebook Ads Library，观察哪些产品正在持续投放广告。\n- 使用 Traffic.cv 等工具，关注近期流量快速增长的网站。\n\n这些信号不能单独证明产品一定成功，但能降低仅凭直觉选题的风险。\n\n## 从开源项目缺口寻找产品化空间\n\nGitHub Trending 可以反映近期升温的技术和产品方向。除 Star 增长外，更值得查看 Issues：用户反馈的安装复杂、缺少图形界面、功能不足等问题，往往意味着可以通过降低使用门槛、补齐体验或提供托管服务，将开源能力包装成商业产品。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727472570,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6ca1d61d0bfb771f5b39a3c043a8bb48c147204e9e6ff70f3df420e395580aa8",
+  "refs": {
+    "sessionId": "1789721837985_xw5zkjly"
+  },
+  "revisionId": "sha256:bfc0774951eba0fd4001cca9b6607a268dd2542df06ca4d42918eec978f8ae4f",
+  "schemaVersion": 1,
+  "updatedAt": 1789727472570
+}

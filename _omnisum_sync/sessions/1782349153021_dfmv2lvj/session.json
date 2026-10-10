@@ -1,0 +1,63 @@
+{
+  "createdAt": 1782349153021,
+  "entityType": "session",
+  "id": "1782349153021_dfmv2lvj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如在使用 Oh My Pi，可立即试试 /context 和 /stats 命令",
+      "若不使用该工具，可直接清理该条收藏"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782350961204,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社交媒体",
+    "classifyTitle": "Oh My Pi Token统计功能",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "仅是对工具两个功能的简短分享，缺乏系统性、证据和可复用方法，长期保留价值低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Oh My Pi 支持查看 token 用量分布",
+      "/stats 命令可启动本地 Web 仪表盘"
+    ],
+    "oneHighValuePoint": "可通过 /stats 快速打开本地 Web 仪表盘查看 token 分布。",
+    "oneLineReview": "一个能立刻试用的小技巧，但不足以构成可长期保留的知识。",
+    "primaryCategory": "AI工具/开发效率",
+    "rating": "D",
+    "rejectReason": "内容过短，只有功能提示，没有原理说明、使用场景分析或效果数据，信息增量有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "命令行工具",
+      "本地可视化"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这条帖子提到 Oh My Pi 的 /context 可查看 token 用量分布，/stats 可启动本地 Web 仪表盘，属于一个简短的工具功能提醒。内容实用但非常碎片化，缺少背景、对比和深入说明。",
+    "tags": [
+      "Oh My Pi",
+      "token统计",
+      "本地仪表盘"
+    ],
+    "title": "Geek: 才知道 Oh My Pi /context 可以显示 token 用量分布 /stats 启动本地 Web 仪表盘 https://t",
+    "totalScore": 37,
+    "url": "https://x.com/geekbb/status/2068722359562039362"
+  },
+  "payloadHash": "sha256:63b8cdca5122d5551a418c93e31b00c4ba1af1f9e0c9930d0a7768ada5718040",
+  "refs": {},
+  "revisionId": "sha256:0a5d34442bd609e78ff7c7cd0731131a60207a05574cbe437e47cc8b62a7e341",
+  "schemaVersion": 1,
+  "updatedAt": 1782350961562
+}

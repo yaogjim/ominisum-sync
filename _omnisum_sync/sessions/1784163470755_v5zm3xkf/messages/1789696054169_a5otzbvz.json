@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696054169,
+  "entityType": "message",
+  "id": "1789696054169_a5otzbvz",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n“LLM Wiki”是把代码、邮件、Slack 等分散资料整理成可持续更新、相互链接的知识库，让 AI 代理少走弯路；但真正困难的是保持准确、控制成本并证明它确实有效。\n\n## 关键内容\n\n- 嘉宾将它视为代理的“知识缓存/索引”：保存难以获得或经常复用的信息，避免代理每次重新搜索和推理。\n- Wiki 应优先方便代理读取，如内容简短、信息密集、注明来源并支持逐层查找；同时保留自然语言，便于人类检查和纠错。\n- 最大难题不是首次生成，而是规模扩大后判断什么值得记录、该修改或删除哪里，以及如何保持新鲜度和一致性。长期没人使用、重新计算又便宜的内容，甚至应被清除。\n- 效果可看完成任务所需的 token、工具调用和时间是否减少。Dosu 称其内部测试中，已有 Wiki 条目的任务成本约减半，但这只是嘉宾自述，并非通用结论。\n\n## 通俗解读\n\n它更像给代理准备的“工作笔记”，而非传统百科全书：重点不是保存一切，而是保存下次还会用、重新查找很贵的信息。文章是产品方圆桌讨论，观点和实践启发较多，严谨数据较少；若你正在构建代理记忆或企业知识库，值得细读，否则看总结即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696054169,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:93fa79ab989afbfa8197965591f0b2d8b1de5da93348ba86737d13dd9bfe995a",
+  "refs": {
+    "sessionId": "1784163470755_v5zm3xkf"
+  },
+  "revisionId": "sha256:3f93e2ae55ad9794ccdfa0e1a6377bbeb777bd27e99e6299f91a0707717c9c0e",
+  "schemaVersion": 1,
+  "updatedAt": 1789696054169
+}

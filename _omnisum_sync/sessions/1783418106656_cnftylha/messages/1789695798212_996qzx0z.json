@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695798211,
+  "entityType": "message",
+  "id": "1789695798212_996qzx0z",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nCloudflare 推出 **Workers Cache**：把分层缓存放到 Worker 前面，命中缓存时无需执行 Worker，可降低页面延迟和 CPU 费用，并用标准 HTTP 响应头直接控制。\n\n## 关键内容\n\n- 开启只需一段 Wrangler 配置；Worker 通过 `Cache-Control` 设置有效期，通过 `Cache-Tag` 和 `ctx.cache.purge()` 精确清除缓存，不必配置域名 Zone 或额外缓存规则。\n- 它主要解决服务端渲染的取舍：页面首次访问时动态生成，之后直接返回缓存；配合 `stale-while-revalidate`，缓存过期后仍可先给用户旧内容，再在后台刷新，避免等待。\n- 缓存默认分两级：就近数据中心先查本地缓存，未命中再查全网共享的上层缓存；只有两层都没有时才运行 Worker。\n- 支持标准 `Vary` 头，可按语言、图片格式等保存同一 URL 的不同版本；缓存归属于 Worker，并覆盖自定义域名、`workers.dev`、预览环境及服务绑定等入口。\n\n## 通俗解读\n\n它相当于在“动态网页生成器”前放了一份全球共享的成品库：多数访客直接拿成品，不必每次重新制作。Cloudflare 称这能兼顾静态网站的速度与动态内容的更新能力，但首次访问及完全过期时仍需执行 Worker。\n\n**是否值得细读：** 使用 Cloudflare Workers 做 SSR、内容站或电商站的开发者值得；普通读者看以上要点即可。原文在架构示例处被截断，后续内容不完整。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695798211,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:670b2f001e24f410fc50795e952543706404e46101a3e7f451f5bd8003c0cb37",
+  "refs": {
+    "sessionId": "1783418106656_cnftylha"
+  },
+  "revisionId": "sha256:02b7c77cba9b134912b1ef7570c562799b842925d9c407ec0ebd3c642c6c1e21",
+  "schemaVersion": 1,
+  "updatedAt": 1789695798211
+}

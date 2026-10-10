@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784694051281,
+  "entityType": "session",
+  "id": "1784694051281_o1l6grnj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查项目源码，验证模型适配层、无障碍导航和视觉回退的具体实现。",
+      "重点测试窗口置前、前后台应用操作及创建提醒事项时的焦点抢占问题。",
+      "若计划分发类似工具，提前评估无障碍权限、代码签名与用户本地编译方案。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1784694249087,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "macOS模型无关计算机操作工具",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "macOS计算机操作Agent可优先使用无障碍接口导航，并以视觉识别作为回退机制。",
+      "前台与后台应用自动化具有不同约束，窗口置前和焦点管理需要专门处理。",
+      "无障碍权限与代码签名会增加macOS工具分发难度，让用户本地编译可能减少二进制分发问题。"
+    ],
+    "oneHighValuePoint": "以无障碍接口进行结构化导航，并在模型支持时使用视觉回退，是兼顾效率与兼容性的计算机操作Agent设计思路。",
+    "oneLineReview": "选题与计算机操作Agent高度相关，但目前主要是项目公告，技术细节与验证证据不足。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "C",
+    "rejectReason": "正文仅为项目发布简介，缺少源码解析、实现步骤、性能数据和系统性验证。",
+    "retentionDecision": "作为相关项目线索速览，需结合源码和实测后再决定是否保留",
+    "secondaryCategories": [
+      "macOS自动化",
+      "技术实现"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者发布面向macOS的模型无关计算机操作工具，采用无障碍接口优先、视觉能力回退的方案。讨论补充了前后台应用控制、焦点抢占、代码签名及分发方面的实际难点。",
+    "tags": [
+      "计算机使用Agent",
+      "macOS自动化",
+      "无障碍接口",
+      "视觉回退",
+      "模型无关工具"
+    ],
+    "title": "Zane Chee: i reverse engineered @OpenAI's Codex Computer Use and built pi-computer-use: a m…",
+    "totalScore": 54,
+    "url": "https://x.com/injaneity/status/2046302876453232667"
+  },
+  "payloadHash": "sha256:310a71032594d9b0bd324d9c84fc7873f83abfcde34fe6aabab918f23fcf50f9",
+  "refs": {},
+  "revisionId": "sha256:0e34411499613c48d1dd0cc6b08acb20d7ad8b67e27a07e32d323efd8d59d8d2",
+  "schemaVersion": 1,
+  "updatedAt": 1784694249272
+}

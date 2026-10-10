@@ -1,0 +1,15 @@
+{
+  "createdAt": 1783556346051,
+  "entityType": "session-content",
+  "id": "1783556346051_hs0d7k20",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>歸藏(guizang.ai)</strong></header><div class=\"tw-body\">Claude 官方写了一篇关于 Loop Engineer 的入门文章。<br><br>其实现在我们所说的 Loop Engineer，所有的底层逻辑在提出这个概念以前就已经具备了，甚至这些工作流程也是大家一直在用的，只是被套上了一个新的概念。<br><br>在这篇文章中，他们把 Loop 分成了四种类型：<br><br>回合制循环（Single-turn Loop） <br><br>这是最基本的 Claude Code 工作方式。你发出的每一个提示词（Prompt）都是一个循环，在这个循环中你不需要额外干预。Claude Code 完成这个循环后会给你输出，它的具体步骤是：收集上下文、采取行动、检查工作、重复，直到它认为你的提示词任务已经完成，或者觉得需要你介入时才会停止。<br><br>基于目标的循环（Goal-oriented Loop） <br><br>也就是 GOAL 模式（如 Codex、Claude Code 等工具都支持该模式）。有时候单回合不足以完成复杂任务，系统就会进行多次迭代，直到达成那个更大的目标。<br><br>基于时间的循环（Time-based Loop） <br><br>也就是 Claude Code 中的 loop 命令。你可以设置在指定的时间间隔自动触发某一个提示词，去运行特定任务，比如定期进行 PR 合并等。<br><br>主动循环（Active Loop） <br><br>你只需要设置一个事件，一旦该事件发生就会自动触发循环，完全不需要人工干预。例如，一旦 GitHub 上有了新的 Issue 或 PR，AI 就会自动进行审核和记录。<br><br>此外，官方还针对 Loop 给出了一些优化建议：<br><br>循环的质量取决于系统：你需要保证代码库本身的质量，比如完善的文档、严格的代码审查以及保持代码库的简洁等。<br><br>管理你的 Token 消耗：像 GOAL 这种基于目标的模式，对 Token 的消耗是非常巨大的。因此，你需要给循环设置明确的界限，比如什么时候该用大模型、什么时候该用小模型，以及明确的启动和结束条件。否则，一旦系统自己无限制地跑下去，不仅容易跑偏，还会消耗大量的 Token。<br><br>这些循环模式，本质上都是由我们现在 Agent 常见的各种能力组合而成的，比如前面提到的 GOAL 模式、Loop 模式，以及常见的 Skills 和 Hooks 等。</div><blockquote class=\"tw-quote\"><strong>@ClaudeDevs</strong><p>现在有很多关于“设计循环”而非提示你的编码代理的讨论。如果你花些时间在 X 上试图明确循环到底是什么，你会遇到多个...</p><p><a class=\"tw-quote-link\" href=\"https://x.com/ClaudeDevs/status/2074208949205881033\">引用推文原文</a></p></blockquote></article>",
+    "pageContent": "歸藏(guizang.ai): Claude 官方写了一篇关于 Loop Engineer 的入门文章。 其实现在我们所说的 Loop Engineer，所有的底层逻辑在提出这个概念以前就已经具备了，甚至这些工作流程也是大家一直在用的，只是被套上了一个新的概念。 在这篇文章中，他们把 Loop 分成了四种类型： 回合制循环（Single-turn Loop） 这是最基本的 Claude Code 工作方式。你发出的每一个提示词（Prompt）都是一个循环，在这个循环中你不需要额外干预。Claude Code 完成这个循环后会给你输出，它的具体步骤是：收集上下文、采取行动、检查工作、重复，直到它认为你的提示词任务已经完成，或者觉得需要你介入时才会停止。 基于目标的循环（Goal-oriented Loop） 也就是 GOAL 模式（如 Codex、Claude Code 等工具都支持该模式）。有时候单回合不足以完成复杂任务，系统就会进行多次迭代，直到达成那个更大的目标。 基于时间的循环（Time-based Loop） 也就是 Claude Code 中的 loop 命令。你可以设置在指定的时间间隔自动触发某一个提示词，去运行特定任务，比如定期进行 PR 合并等。 主动循环（Active Loop） 你只需要设置一个事件，一旦该事件发生就会自动触发循环，完全不需要人工干预。例如，一旦 GitHub 上有了新的 Issue 或 PR，AI 就会自动进行审核和记录。 此外，官方还针对 Loop 给出了一些优化建议： 循环的质量取决于系统：你需要保证代码库本身的质量，比如完善的文档、严格的代码审查以及保持代码库的简洁等。 管理你的 Token 消耗：像 GOAL 这种基于目标的模式，对 Token 的消耗是非常巨大的。因此，你需要给循环设置明确的界限，比如什么时候该用大模型、什么时候该用小模型，以及明确的启动和结束条件。否则，一旦系统自己无限制地跑下去，不仅容易跑偏，还会消耗大量的 Token。 这些循环模式，本质上都是由我们现在 Agent 常见的各种能力组合而成的，比如前面提到的 GOAL 模式、Loop 模式，以及常见的 Skills 和 Hooks 等。\n引用推文 (@ClaudeDevs):\n现在有很多关于“设计循环”而非提示你的编码代理的讨论。如果你花些时间在 X 上试图明确循环到底是什么，你会遇到多个...\n[引用推文原文](https://x.com/ClaudeDevs/status/2074208949205881033)"
+  },
+  "payloadHash": "sha256:1af0b3517829f2300e8d4d1a9cb22aaf6b362b78dd9ede7dd846ecdfd0e9ca89",
+  "refs": {},
+  "revisionId": "sha256:5f44308f66db8c0819cce656b807a2dc6a5c5d33b989b95ac33ffdd21bcb8220",
+  "schemaVersion": 1,
+  "updatedAt": 1789729225183
+}

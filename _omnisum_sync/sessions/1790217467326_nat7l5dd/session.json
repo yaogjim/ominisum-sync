@@ -1,0 +1,84 @@
+{
+  "createdAt": 1790217467326,
+  "entityType": "session",
+  "id": "1790217467326_nat7l5dd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在Pi智能体的工具调用前加入门控，将风险判断与双阈值策略分离，使用固定分数测试放行、审批和阻断边界。",
+      "为门控和路由分别设置超时及故障回退，并用代码强制限制文件访问范围，不依赖Jev判断路径权限。",
+      "加入基于实际工具结果的答案验证和有限重试，记录脱敏决策日志，用实际运行结果调整示例阈值。"
+    ],
+    "archiveReason": "提供可复用的模型路由、工具门控、故障降级和答案验证框架，并包含策略函数、日志与确定性安全检查的实现思路。",
+    "byline": "elvis",
+    "classifiedAt": 1790762280047,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "用Pi与Jev构建可控智能体框架",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 331,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HS3VQR-WUAAEiBw?format=jpg&name=900x900",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HS3VQR-WUAAEiBw?format=jpg&name=900x900",
+        "width": 828
+      }
+    ],
+    "knowledgePoints": [
+      "工具门控可用双阈值形成放行、人工审批和阻断三个区间，并将策略抽成纯函数，以便脱离在线模型测试边界行为。",
+      "不同决策环节应采用不同故障策略：安全门控无法判断时拒绝执行，模型路由不可用时回退到预设的强模型继续处理。",
+      "答案验证应结合任务、实际读取的文件与工具结果，同时限制重试次数；决策日志需要记录判断分数并处理敏感信息。"
+    ],
+    "oneHighValuePoint": "将模型输出的判断信号与代码执行策略分离：模型提供分数，独立策略函数决定放行、人工审批或阻断，而可确定的安全边界始终由代码强制执行。",
+    "oneLineReview": "与Agent开发高度相关，架构和策略设计值得复用，但成本、延迟与判断准确性缺少可核实的基准结果，不能直接视为生产方案。",
+    "primaryCategory": "Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并保留架构与策略设计，具体模型版本、价格和阈值使用前重新验证",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI安全与可靠性",
+      "技术实现"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍用Pi SDK构建自定义智能体执行框架，并接入Jev进行模型路由、工具调用门控和答案验证。它给出阈值策略、故障处理、重试限制及决策日志示例，同时强调代码硬约束优先，示例配置尚未经过生产调优。",
+    "tags": [
+      "自定义Harness",
+      "Pi SDK",
+      "Jev",
+      "模型路由",
+      "工具调用门控"
+    ],
+    "title": "使用 Pi 和 Jev 构建自定义 Harness",
+    "totalScore": 78,
+    "url": "https://x.com/omarsar0/status/2102762406204076532"
+  },
+  "payloadHash": "sha256:2fb52f5039558fd88b5e4167fc054a5026c1a77a545ae092c67bbebba924d46c",
+  "refs": {},
+  "revisionId": "sha256:4389592dc5c47145ea7d9bc7347acfc4f7dba3b8cc93880ef251354490fd38be",
+  "schemaVersion": 1,
+  "updatedAt": 1790770850366
+}

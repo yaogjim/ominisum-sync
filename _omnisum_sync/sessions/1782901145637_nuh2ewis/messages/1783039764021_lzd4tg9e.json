@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783039764022,
+  "entityType": "message",
+  "id": "1783039764021_lzd4tg9e",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 自建AI中转站方案设想\n\n**评级**: C (42分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI基础设施\n**次类别**: 自托管服务, 网络代理与风控\n**标签**: #LiteLLM #docker-compose #Tailscale #Caddy #AI中转站\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 3 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 4 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 有一定启发性的自建 AI 网关思路，但信息过于粗略，难以直接落地。\n**核心高价值点**: 通过 LiteLLM 聚合多模型供应商，并用 Tailscale 统一设备出口以降低风控风险。\n\n### 摘要\n文章提出用 docker-compose、LiteLLM、Postgres、Caddy 和 Tailscale 在 VPS 上自建私用 AI 中转站，聚合 OpenAI、Gemini、Ollama Cloud 等服务，以提升稳定性并统一出口降低风控风险。\n\n### 知识要点\n- LiteLLM 可作为多模型 API 聚合与统一入口工具\n- Caddy 可用于自动 HTTPS，简化自托管服务的证书管理\n- Tailscale 可将多设备组网并通过统一出口访问服务\n- 自建私用中转站可减少对第三方 AI 中转站稳定性的依赖\n\n### 行动项\n- 检索 LiteLLM + Postgres + Caddy 的完整部署教程\n- 评估在 VPS 上通过 Tailscale 统一出口的安全性与风控收益\n- 验证 OpenAI、Gemini、Ollama Cloud 是否都能稳定接入 LiteLLM\n\n### 存档判定\n归档: 否\n不推荐: 内容只是一个搭建思路摘要，缺少配置步骤、架构细节、风险分析和实际验证案例，热门回复也大多与主题无关。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1783039764022,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:3063ca7b38011df47283538e4ce0fccbb67488724a86c31f4cc3d57a7038a5fb",
+  "refs": {
+    "sessionId": "1782901145637_nuh2ewis"
+  },
+  "revisionId": "sha256:c558b28da79542cbc9b7f157c832adc0ee8d6af09a7d8a705ca850f840890a41",
+  "schemaVersion": 1,
+  "updatedAt": 1783039764022
+}

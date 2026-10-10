@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943288557,
+  "entityType": "session",
+  "id": "1786943288557_uxydpbz9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "安装并配置Mole，使用小额预算运行一次研究任务，检查trace中的调用成本和预算封顶效果。",
+      "选取已知来源的问题测试引文逐字校验、主张复核和矛盾检测，并人工抽查结果。",
+      "用脱敏CSV测试local_compute与crossings，确认传出内容仅包含允许的聚合结果。"
+    ],
+    "archiveReason": "直接涉及Agent开发，提供可执行命令、系统架构与可迁移的预算控制、引用校验和隐私计算机制。",
+    "classifiedAt": 1786943309307,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Mole可控预算深度研究代理",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "研究代理可通过“规划—检索—提取主张—逐字引文校验—矛盾裁决—引用合成”形成证据处理流水线。",
+      "预算账本采用调用前预留、调用后结算和数据库非负约束，可避免并发任务突破用户设定的费用上限。",
+      "本地数据分析可限制模型只选择统计模板与列名，由程序生成SQL，并仅允许满足最小分组规模的聚合结果离开本机。"
+    ],
+    "oneHighValuePoint": "将每次模型调用先预留预算、执行后结算，并通过数据库非负约束强制封顶，为Agent成本控制提供了可复用的工程机制。",
+    "oneLineReview": "这是一份实践价值较高的Agent项目文档，但性能与准确率主要来自项目自测，仍需独立验证。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并存档，重点参考预算账本、证据验证和本地数据隐私边界的实现",
+    "secondaryCategories": [
+      "深度研究工具",
+      "隐私计算"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍开源深度研究代理Mole，涵盖强制预算账本、逐条引文核验、矛盾检测、本地数据聚合隐私边界、MCP工具包模式，以及安装配置、数据集生成、评测指标和整体执行架构。",
+    "tags": [
+      "深度研究代理",
+      "预算控制",
+      "引用验证",
+      "本地数据隐私",
+      "MCP"
+    ],
+    "title": "lajosdeme/mole: A deep-research agent with an enforced budget, verified quotes, and a privacy boundary for local data.",
+    "totalScore": 84,
+    "url": "https://github.com/lajosdeme/mole"
+  },
+  "payloadHash": "sha256:8e5449ca1d5cfcea3408923415c52d5570c2f700dabbd5f0788338e1b3c319d5",
+  "refs": {},
+  "revisionId": "sha256:7f8cfa1f934e64d71828de94e1644d4b03a08218aac58a2c61659c6229a70332",
+  "schemaVersion": 1,
+  "updatedAt": 1789694094427
+}

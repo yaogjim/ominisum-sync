@@ -1,0 +1,74 @@
+{
+  "createdAt": 1784702945365,
+  "entityType": "session",
+  "id": "1784702945365_8qoo7a27",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "创建独立审查窗格，保存命令返回的pane_id，再启动命名审查Agent并提交代码差异审查任务。",
+      "为Agent等待命令设置明确的目标状态和超时时间，并在blocked状态下读取界面后再决定发送按键。",
+      "用pane命令运行测试或监视进程，用agent命令处理编码智能体，避免把普通终端输出与Agent生命周期混为一谈。"
+    ],
+    "archiveReason": "包含清晰的控制原语、状态模型、命令示例、异常处理和远程工作流程，可直接支持多Agent测试与审查系统的实现。",
+    "classifiedAt": 1784708003919,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "用Herdr编排多智能体测试与审查",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请根据我提供的内容，用一个具体的实例，给出在该实例之上的最佳实践，以 markdown 格式显示。    --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "Herdr将自动化职责拆分为Layout、Pane和Agent三层：布局负责终端拓扑，Pane负责原始终端进程，Agent负责已识别编码智能体及其生命周期。",
+      "Agent状态检测应设置单一权威来源：完整生命周期钩子优先，否则使用前台进程识别与屏幕清单匹配，避免多个状态来源相互冲突。",
+      "全屏Agent的备用屏幕内容可能不进入宿主回滚区；读取失败时可改读可见区域，最终再让Agent将完整结果写入临时文件。"
+    ],
+    "oneHighValuePoint": "将终端布局、普通进程控制和Agent生命周期控制分离，并依据idle、working、blocked、done等明确状态进行等待和协调，可显著降低多Agent自动化中的误操作与无限等待。",
+    "oneLineReview": "这是一份信息密集且可直接执行的多Agent终端编排文档，但多数方法与Herdr的命令和状态模型强绑定。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "作为多编码智能体编排与终端自动化的实操参考长期保留",
+    "secondaryCategories": [
+      "AI编程工具",
+      "开发自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://herdr.dev/docs/agent-automation/",
+      "https://herdr.dev/docs/agents/",
+      "https://herdr.dev/docs/how-to-work/"
+    ],
+    "summaryBrief": "文章系统说明Herdr如何通过工作区、窗格和Agent三类原语编排多个编码智能体，涵盖启动、提示、状态等待、输出读取、检测机制、异常屏幕处理及本地和远程会话工作流。",
+    "tags": [
+      "Herdr",
+      "多智能体编排",
+      "编码Agent",
+      "终端自动化",
+      "生命周期管理"
+    ],
+    "title": "用Herdr协调实现测试与审查",
+    "totalScore": 83,
+    "url": "omnisun://digest/1784702945365"
+  },
+  "payloadHash": "sha256:fc466a30bccfd36a26fe8b9db44ea4aea08cddde95d7f0a9804a4bd1971b0bc1",
+  "refs": {},
+  "revisionId": "sha256:d8377cdfe83a9e64053038a8ba0de37008f1b3954b10e5541f7f9835105d37cc",
+  "schemaVersion": 1,
+  "updatedAt": 1789863962101
+}

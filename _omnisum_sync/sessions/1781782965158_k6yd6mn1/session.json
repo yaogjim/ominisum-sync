@@ -1,0 +1,67 @@
+{
+  "createdAt": 1781782965158,
+  "entityType": "session",
+  "id": "1781782965158_k6yd6mn1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如近期需要快速搭建 Agent SaaS，可打开 cloud.fastclaw.ai 试用验证",
+      "对比 Vercel Eve、Dify、LangGraph 等方案的功能、成本和可控性后再决定是否采用"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781783282369,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 6,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Fastclaw免代码Agent运行时推荐",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量较低，方法论价值弱，证据不足，长期参考价值有限；如无近期试用需求可删除。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Fastclaw 提供免代码 dashboard 创建 Agent 的能力",
+      "配置项包括 models、skills、files、identity、bootstrap 等",
+      "配置后的 Agent 可通过 API 被其他客户端调用",
+      "其定位是 Agent runtime，帮助处理部署和扩容"
+    ],
+    "oneHighValuePoint": "Fastclaw 将 Agent 配置、运行时、Sandbox、API 调用和后端部署封装为一体，可能降低 Agent SaaS 原型开发成本。",
+    "oneLineReview": "这是一个偏推广性质的工具线索，适合快速了解，不值得长期保存。",
+    "primaryCategory": "AI Agent工具",
+    "rating": "D",
+    "rejectReason": "内容主要是工具推广和简单功能介绍，缺少深入分析、使用细节、对比评测和可靠案例支撑。",
+    "retentionDecision": "短期了解后可删除",
+    "secondaryCategories": [
+      "产品推荐",
+      "低代码开发"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章推荐 fastclaw.ai，可通过 dashboard 快速创建和配置 Agent，支持模型、技能、文件、Sandbox 和 API 调用，并声称可作为 Agent SaaS 后端快速上线产品。",
+    "tags": [
+      "AI Agent",
+      "Fastclaw",
+      "Agent Runtime",
+      "低代码",
+      "SaaS后端"
+    ],
+    "title": "x.com/idoubicc/status/2067234269672681682",
+    "totalScore": 37.5,
+    "url": "https://x.com/idoubicc/status/2067234269672681682"
+  },
+  "payloadHash": "sha256:4fdec7e36d9d03cd6f17040e1bc58a7090f6e3f48a813ad5cb1d7df505794641",
+  "refs": {},
+  "revisionId": "sha256:e5185795f5db56a8cd24af11c9baa46f35df44571109c8933e1ab3632eff67e5",
+  "schemaVersion": 1,
+  "updatedAt": 1781783282855
+}

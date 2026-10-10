@@ -1,0 +1,58 @@
+{
+  "createdAt": 1789533153988,
+  "entityType": "session",
+  "id": "1789533153988_6ccyjw6w",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "classifiedAt": 1789533178291,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Omarchy上的Windows虚拟机尝试",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量极少，主要是设备配置与价格变化的个人感慨，没有独特的长期参考价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [],
+    "oneHighValuePoint": "运行 Windows 虚拟机等高负载场景时，主机内存容量可能成为需要提前考虑的配置因素，但文中未提供验证数据。",
+    "oneLineReview": "与虚拟化和硬件配置略有关系，但没有测试结果、方法或证据，实际信息价值很低。",
+    "primaryCategory": "桌面系统与虚拟化",
+    "rating": "E",
+    "rejectReason": "未提供虚拟机配置、安装步骤、性能数据或剪映测试结论。",
+    "retentionDecision": "内容仅为个人尝试记录，缺少测试结果与可复用信息，建议删除",
+    "secondaryCategories": [
+      "硬件配置",
+      "软件体验"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "帖子记录作者在 Omarchy 环境中安装 Windows 虚拟机并准备测试剪映，回复补充了其对笔记本仅配备 32GB 内存的遗憾，以及对近年电脑配置和价格变化的个人感受。",
+    "tags": [
+      "Omarchy",
+      "Windows虚拟机",
+      "剪映",
+      "笔记本内存"
+    ],
+    "title": "卫斯理: Omarchy 终于走到这一步了，哈哈哈 安装个Windows虚拟机，试试剪映效果咋样 https://t",
+    "totalScore": 22,
+    "url": "https://x.com/imwsl90/status/2100041577683169579"
+  },
+  "payloadHash": "sha256:cbf9542f1d6897cbb8b54cc56c3137e309c0d4be3ccb6fddbabc0492e16b11ea",
+  "refs": {},
+  "revisionId": "sha256:987193b4a00effa577f86727726f451263b26e9173723b3c6c0a95f3223f3c53",
+  "schemaVersion": 1,
+  "updatedAt": 1789533178353
+}

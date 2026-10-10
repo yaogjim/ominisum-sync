@@ -1,0 +1,23 @@
+{
+  "createdAt": 1783418106612,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1783418106612",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Cloudflare Workers Cache：让 Worker 拥有自己的前置缓存\n\n## 一句话总结\n\nCloudflare 推出**Workers Cache**：一个直接位于 Worker 前面的分层缓存系统。开启后，可缓存请求会先命中 Cloudflare 缓存；命中时**Worker 不运行、无 CPU 成本、延迟更低**；未命中时才执行 Worker，并把可缓存响应写入缓存。\n\n---\n\n## 核心变化：Worker 从 “缓存前的逻辑层” 变成 “可被缓存的源站”\n\n过去 Workers 常用于站点前置逻辑，比如改 Header、URL 重写、A/B 测试、流量过滤等，架构上是：\n\n> 用户请求 → Worker → Cloudflare Cache / Origin\n\n但现在越来越多框架，如 Next.js、Remix、Astro、SvelteKit、TanStack Start，会把服务端渲染应用直接构建成 Worker。此时：\n\n> Worker 本身就是源站\n\n问题是：没有前置缓存时，每次页面访问都要运行 Worker，即使返回内容完全相同，也会产生延迟和 CPU 成本。\n\nWorkers Cache 将架构变为：\n\n> 用户请求 → Cloudflare Cache → Worker\n\n这让 SSR 应用获得类似静态站点的访问速度，同时保持动态渲染的灵活性。\n\n---\n\n## 使用方式：配置极简，仍然基于 HTTP 标准\n\n开启只需要在 Wrangler 配置中加一段：\n\n```json\n{\n  \"cache\": {\n    \"enabled\": true\n  }\n}\n```\n\n之后通过标准 HTTP Header 控制缓存：\n\n```js\n\"Cache-Control\": \"public, max-age=300, stale-while-revalidate=3600\"\n```\n\n内容更新时，Worker 可以自己清理缓存：\n\n```js\nawait ctx.cache.purge ({ tags: [\"product:123\"] });\n```\n\n特点是：\n\n- 不需要配置 Zone\n- 不需要 Cache Rules / Page Rules\n- 不需要单独购买或管理缓存产品\n- 缓存策略直接写在 Worker 代码和响应 Header 中\n\n---\n\n## 关键能力一：`stale-while-revalidate`让页面 “像静态站一样快”\n\n`stale-while-revalidate`是体验提升的核心。\n\n缓存生命周期分为三段：\n\n1. **Fresh 阶段**  \n   在`max-age`时间内，直接返回缓存，Worker 不运行。\n\n2. **Stale 阶段**  \n   缓存过期但仍在`stale-while-revalidate`窗口内，用户先拿到旧缓存，Worker 在后台刷新。\n\n3. **完全过期阶段**  \n   超出两个窗口后，才需要等待 Worker 重新生成响应。\n\n这意味着大多数用户都不会等待服务端重新渲染，页面体验接近静态站点。\n\n---\n\n## 关键能力二：支持`Vary`，同一个 URL 可缓存多种内容\n\n真实业务中，同一个 URL 可能根据请求 Header 返回不同内容，例如：\n\n- 浏览器支持 WebP 就返回 WebP，否则返回 JPEG\n- 根据`Accept-Language`返回不同语言\n- 根据`Accept`返回 HTML 或 JSON\n\nWorkers Cache 支持标准 HTTP `Vary` Header，会按请求 Header 自动区分缓存版本。\n\n例如：\n\n```js\nVary: \"Accept\"\n```\n\n这样同一个 URL 可以同时缓存 WebP 和 JPEG 两个版本，不会互相污染。\n\n---\n\n## 关键能力三：这是 Worker 自己的缓存，不是 Zone 的缓存\n\n这是一个重要产品设计变化。\n\nWorkers Cache 属于 Worker，而不是某个域名或 Zone。因此：\n\n- Worker 绑定多个域名时，可以共享同一份缓存\n- `workers.dev`也可以使用缓存\n- Preview 环境有独立缓存，不会污染生产环境\n- Workers for Platforms 中，每个租户 Worker 有独立缓存\n- 清缓存只影响当前 Worker entrypoint，不会误删整个站点缓存\n\n这让缓存能力更适合现代多入口、多租户、平台化架构。\n\n---\n\n## 关键能力四：默认分层缓存，提升全球命中率\n\nWorkers Cache 默认是两层结构：\n\n1. **Lower Tier**  \n   靠近用户的数据中心缓存。\n\n2. **Upper Tier**  \n   面向全球聚合的上层缓存。\n\n请求流程是：\n\n> Lower Tier 命中 → 直接返回  \n> Lower Tier 未命中 → 查 Upper Tier  \n> Upper Tier 未命中 → 执行 Worker\n\n好处是：全球任一地区首次生成内容后，可以先进入上层缓存，其他地区后续访问不一定需要再次执行 Worker。\n\n这显著提升全球缓存命中率，尤其适合 SSR、商品页、文档页、内容站等场景。\n\n---\n\n## 产品价值：把 SSR 的成本和体验问题降到最低\n\nWorkers Cache 解决了 SSR 应用长期面临的两难：\n\n### 过去的选择\n\n- **静态生成 SSG**  \n  访问快，但每次内容变化都要重新构建和部署。\n\n- **每次请求 SSR**  \n  内容新鲜，但每次访问都要付出渲染延迟和计算成本。\n\n### 现在的新选择\n\n- 首次请求动态渲染\n- 后续请求直接走缓存\n- 过期后后台刷新\n- 内容更新时按 Tag 或路径主动清理\n\n这相当于用 HTTP 标准实现了类似 Incremental Static Regeneration 的效果，但不绑定特定框架。\n\n---\n\n## 对开发者和平台方的意义\n\n### 对应用开发者\n\n- 页面加载更快\n- Worker CPU 成本更低\n- SSR 应用更容易规模化\n- 缓存策略直接在代码中表达，心智更简单\n\n### 对平台型产品\n\n特别适合 Workers for Platforms、多租户 SaaS、开发者平台：\n\n- 每个租户有独立缓存\n- 缓存不会跨租户污染\n- 可按租户、路径、Tag 精准清理\n- 更容易构建全球化低延迟服务\n\n### 对架构设计\n\nWorkers Cache 也让不同 Worker 之间可以通过缓存形成组合：\n\n- 靠近用户的 Worker 负责响应入口\n- 靠近数据的 Worker 负责数据访问\n- 中间用缓存作为性能边界\n\n这有助于同时兼顾 “代码靠近用户” 和 “代码靠近数据”。\n\n---\n\n## 需要关注的边界\n\n使用 Workers Cache 时，仍需要设计好缓存策略：\n\n- 哪些响应可以缓存，哪些必须私有化\n- TTL 设置过长可能带来内容陈旧\n- `Vary`使用不当可能导致缓存版本爆炸\n- 首次访问新页面仍需要真实渲染\n- 主动 Purge 策略需要和业务更新链路配合\n\n---\n\n## 总结判断\n\nWorkers Cache 是 Cloudflare Workers 从 “边缘函数” 走向 “完整应用运行平台” 的关键补齐能力。\n\n它的核心价值不是单纯增加一个缓存 API，而是让**SSR 应用、平台型架构、多租户应用**可以在 Cloudflare 网络上获得：\n\n- 静态站级别的访问速度\n- 服务端渲染的内容新鲜度\n- 更低的计算成本\n- 更简单的标准化缓存模型\n\n本质上，它把缓存从 “站点级配置能力” 变成了 “Worker 原生应用能力”。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1783418106612,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0ae875645979107a67cf69c7dd29c3714c6bd5a0dc5236f61c891ba419a55b87",
+  "refs": {
+    "sessionId": "1783418106656_cnftylha"
+  },
+  "revisionId": "sha256:e8490831a4cde5410518c1d890e63dfd581b45212ccf555cab3608a335e7f092",
+  "schemaVersion": 1,
+  "updatedAt": 1783418106612
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786353936086,
+  "entityType": "session",
+  "id": "1786353936086_qd9yh4tl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按Agent基础设施、开发者工具和垂直应用三个方向筛选文中项目，建立竞品与灵感清单。",
+      "挑选具备公开代码或演示的项目，验证其MCP接口、人机协同和本地优先实现方式。",
+      "将结构化操作、工具权限、验证反馈循环纳入现有Agent产品的设计检查表。"
+    ],
+    "archiveReason": "集中呈现大量独立产品、Agent工具和技术实现案例，可作为选题、竞品与架构模式的线索库。",
+    "classifiedAt": 1786354859625,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "独立开发者项目与Agent实践汇总",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "news.ycombinator.com",
+    "favicon": "https://news.ycombinator.com/y18.svg",
+    "knowledgePoints": [
+      "Agent原生工具可通过MCP、结构化操作和人机功能对等设计，降低模型调用垂直软件能力的门槛。",
+      "不少产品采用本地优先、离线运行、BYOK和端到端加密，以控制成本、隐私和平台依赖。",
+      "面向复杂工作流的Agent系统普遍引入规划、执行、验证、评审和修复循环，而非仅依赖单次生成。"
+    ],
+    "oneHighValuePoint": "多个案例共同展示了Agent原生产品的可复用设计：以结构化操作和MCP开放能力，同时维持人类可用界面、权限边界与反馈机制。",
+    "oneLineReview": "项目样本丰富且与AI产品开发高度相关，但内容零散、自述居多，适合作为案例索引而非系统方法教程。",
+    "primaryCategory": "AI与软件产品开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并按主题索引，保留其中有参考价值的产品案例",
+    "secondaryCategories": [
+      "独立开发与创业",
+      "Agent开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "Hacker News开发者集中介绍正在构建的项目，涵盖Agent编排、MCP、开发工具、本地优先应用、垂直行业软件及独立SaaS，并穿插早期用户反馈、技术选型和产品定位讨论。",
+    "tags": [
+      "独立开发",
+      "AI Agent",
+      "MCP",
+      "产品原型",
+      "开发者工具"
+    ],
+    "title": "Ask HN: What are you working on? (August 2026) | Hacker News",
+    "totalScore": 64,
+    "url": "https://news.ycombinator.com/item?id=49233423"
+  },
+  "payloadHash": "sha256:8624b3fbdb681033c4348a504f16361cd0c21b7d0ec660cc10c1d98d1964959e",
+  "refs": {},
+  "revisionId": "sha256:6d2b361304f7b3da7c279d1be6494cc390de24bb04c94aff970c1e2b9e7b02db",
+  "schemaVersion": 1,
+  "updatedAt": 1789728127113
+}

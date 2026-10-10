@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789531426056,
+  "entityType": "session",
+  "id": "1789531426056_v7eyuf5z",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计内容溯源产品时，分别绘制采集、传输、处理、签名、验证和撤销环节的信任边界。",
+      "评估现有图像认证方案是否同时抵御操作系统入侵、传感器数据注入和硬件替换。",
+      "将身份不可关联性、内容机密性和匿名撤销能力纳入真实性系统的隐私评审。"
+    ],
+    "archiveReason": "文章给出了从传感器采集、可信时间戳、云端显影到签名验证和撤销的完整架构，具有较强的方法论与长期参考价值。",
+    "classifiedAt": 1789532533029,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 9,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "苹果可验证摄影安全架构",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "security.apple.com",
+    "favicon": "https://security.apple.com/favicon.ico",
+    "knowledgePoints": [
+      "高可信图像溯源可按语义真实性、抗入侵能力和隐私保护三个维度建立需求模型。",
+      "传感器即时签名、安全数字底片和可审计云端处理能够形成贯穿采集与显影过程的信任链。",
+      "长期公开资产除签名验证外，还需要可信时间区间、后量子安全和可追溯撤销机制。"
+    ],
+    "oneHighValuePoint": "将照片真实性拆分为传感器端可信采集与可验证环境中的图像显影，避免只签原始数据或只签最终成片各自存在的信任缺口。",
+    "oneLineReview": "技术架构完整且视角新颖，但核心能力和安全优势主要来自厂商自述，缺少独立验证与实证数据。",
+    "primaryCategory": "数字内容真实性与安全",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，作为可信内容溯源和隐私安全架构的参考案例",
+    "secondaryCategories": [
+      "隐私计算",
+      "产品安全架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出 Apple Reference Image：由传感器即时签名生成安全数字底片，再在私有云中验证和显影，并结合可信时间区间、后量子签名、撤销机制与匿名保护，证明照片源自真实相机采集。",
+    "tags": [
+      "图像溯源",
+      "传感器签名",
+      "私有云计算",
+      "后量子密码",
+      "隐私保护"
+    ],
+    "title": "Apple Reference Image: A New Approach for Verified Photography - Apple Security Research",
+    "totalScore": 74,
+    "url": "https://security.apple.com/blog/apple-reference-image/"
+  },
+  "payloadHash": "sha256:f45db1634c08d9ca14b41557835063bf5b1a1dd5e5ada0b3ac67de7b807cbc60",
+  "refs": {},
+  "revisionId": "sha256:d6e9e129e86c2ea1c93b31719aed6e8b783311cb34297deecc2e90fd9e539476",
+  "schemaVersion": 1,
+  "updatedAt": 1790770401310
+}

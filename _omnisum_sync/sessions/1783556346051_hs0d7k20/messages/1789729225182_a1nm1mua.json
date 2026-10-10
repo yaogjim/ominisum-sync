@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729225182,
+  "entityType": "message",
+  "id": "1789729225182_a1nm1mua",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Loop Engineer：从写提示词转向设计可控的 Agent 循环\n\n文章转述 Claude 官方对“Loop Engineer”的介绍。作者认为，这并非全新的底层能力，而是把 Agent 已有的目标执行、定时任务、事件触发、Skills 和 Hooks 等工作流，统一包装成“循环设计”概念：让 AI 持续获取信息、行动和检查，直至完成任务或需要人工介入。\n\n## 四类循环覆盖不同自动化场景\n\n- **单回合循环**：每个提示词触发一次完整流程，Claude Code 会收集上下文、执行、检查并重复，直到认为任务完成。\n- **目标循环**：复杂任务拆成多轮迭代，持续运行到更大的目标达成，类似 Codex、Claude Code 的 GOAL 模式。\n- **时间循环**：按设定间隔重复执行任务，如定期处理 PR 合并。\n- **主动循环**：由外部事件触发，无需人工启动；例如 GitHub 出现新 Issue 或 PR 后，AI 自动审核并记录。\n\n## 循环效果取决于系统基础，而非模型单打独斗\n\n高质量循环需要清晰文档、严格代码审查和简洁代码库。基础环境混乱时，Agent 即使能反复执行，也可能持续放大错误。\n\n## 自动运行必须设置成本与权限边界\n\n目标循环可能大量消耗 Token，也容易在长期运行中偏离目标。官方建议明确启动、停止和人工介入条件，并按任务难度选择大模型或小模型。其核心意义是：AI 编程的重点正从“写好一次提示词”，转向设计可持续、可观测且成本可控的执行机制。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729225182,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5fcea1c4f1f72179abb2ec149eb655d173115956742b2411dd90db40597cb21b",
+  "refs": {
+    "sessionId": "1783556346051_hs0d7k20"
+  },
+  "revisionId": "sha256:114951ef5e5a86076da30ea2f05e7c0a450bb1794d6ed94258516930092d24aa",
+  "schemaVersion": 1,
+  "updatedAt": 1789729225182
+}

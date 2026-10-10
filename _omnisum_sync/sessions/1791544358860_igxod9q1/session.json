@@ -1,0 +1,67 @@
+{
+  "createdAt": 1791544358860,
+  "entityType": "session",
+  "id": "1791544358860_igxod9q1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "实现缓存复用压缩路径：复制上一轮请求并仅在末尾追加总结指令，测试请求体前缀一致性；工具调用或空响应须在执行前丢弃，再回退到独立摘要请求。",
+      "分别测试热缓存和过期缓存，记录摘要、失败重试及压缩后首轮请求的缓存读写、普通输入和输出成本，比较两条压缩路径。",
+      "为摘要输出预留窗口空间，并建立摘要注入与工具误调用回归测试，验证引用内容不会变成新任务、摘要路径不会实际执行工具。"
+    ],
+    "archiveReason": "包含多种工具的压缩实现对比、明确的缓存复用条件、失败兜底和验收指标，可直接支持 Agent 成本优化与安全测试。",
+    "classifiedAt": 1791590298943,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent上下文压缩的缓存与成本优化",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "前缀缓存的复用依赖请求前缀一致性；改变工具、系统提示词或历史结构可能导致后续缓存失效，具体边界需核对服务商规则。",
+      "复用缓存并非始终更便宜：模型与配置一致性、缓存有效期、窗口容量及缓存写入成本共同决定压缩路径的选择。",
+      "压缩摘要可能保留网页或命令输出中的不可信指令，应明确标注为历史摘要而非新任务，并测试工具调用是否会被误派发。"
+    ],
+    "oneHighValuePoint": "将压缩请求视为上一轮正常请求的分叉，保持原有请求前缀并在末尾追加总结指令，同时根据缓存有效性和预计成本决定是否回退到独立摘要请求。",
+    "oneLineReview": "对 Agent 压缩成本有直接实践价值，但部分案例尚未核实，具体规则与收益需按服务商、版本和缓存状态验证。",
+    "primaryCategory": "AI Agent 开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并保留为上下文压缩设计检查清单，实施前核对所用服务商与版本的缓存规则。",
+    "secondaryCategories": [
+      "推理成本优化",
+      "上下文工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章比较多种编程 Agent 的上下文压缩实现，解释摘要请求改变工具、系统提示词或历史后为何可能失去缓存复用，并给出热缓存复用、冷缓存回退、窗口预留、摘要安全及成本验收建议。",
+    "tags": [
+      "上下文压缩",
+      "提示词缓存",
+      "缓存前缀匹配",
+      "摘要安全",
+      "成本验收"
+    ],
+    "title": "KC: agent 压缩上下文的那一下，经常是整段对话里最贵的一次请求",
+    "totalScore": 84,
+    "url": "https://x.com/ScarletKc/status/2108294527362711695"
+  },
+  "payloadHash": "sha256:8a67fb3e97ce3d2ae76b5981ab771404a77d695fb431afe2544c3067ae990582",
+  "refs": {},
+  "revisionId": "sha256:e139b02224b3a8b86e63d7beeebd45d557e7cedcdd9de28a586f6ff38d020c65",
+  "schemaVersion": 1,
+  "updatedAt": 1791590299037
+}

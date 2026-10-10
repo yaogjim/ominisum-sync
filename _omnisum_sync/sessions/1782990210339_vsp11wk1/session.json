@@ -1,0 +1,119 @@
+{
+  "createdAt": 1782990210339,
+  "entityType": "session",
+  "id": "1782990210339_vsp11wk1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在实验项目中安装langchain-quickjs并尝试CodeInterpreterMiddleware。",
+      "为一个批量代码审查或工单分流任务设计2-3个专用subagent并测试workflow触发效果。",
+      "将文中的六种动态子代理模式整理为可复用Agent编排模板。",
+      "在涉及高风险操作时，为eval工具本身增加审批或安全网关。"
+    ],
+    "archiveReason": "包含LangChain动态子代理的核心机制、适用场景和多种可复用编排模式，对构建复杂Agent工作流有参考价值。",
+    "classifiedAt": 1782990411250,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "LangChain动态子代理指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "docs.langchain.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1782990276853,
+        "imageId": "img-1",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# Dynamic Subagents 深度总结\n\n## 1. 核心是什么？\n\n**Dynamic subagents**是 LangChain Deep Agents 的一种动态编排机制。\n\n它允许主 Agent 在**代码解释器**中写 JavaScript 逻辑，通过`task ()`动态调用多个子 Agent，而不是让模型一次只选择一个工具调用。\n\n一句话：\n\n> 让 Agent 像写程序一样，批量、并行、递归地调度多个子 Agent 完成复杂任务。\n\n---\n\n## 2. 解决了什么问题？\n\n传统 Agent 调用子 Agent 通常是：\n\n```text\n模型判断 → 调一个子 Agent → 等结果 → 再判断 → 再调下一个\n```\n\n问题是：\n\n- 慢\n- 不稳定\n- 难并行\n- 难处理大量独立任务\n- 难做多轮验证和结果合成\n\nDynamic subagents 改成：\n\n```text\n主 Agent 写一段 JS 编排代码\n→ 循环 / 分支 / 并行调用多个子 Agent\n→ 收集结果\n→ 统一汇总\n```\n\n更像一个**自动化工作流引擎**。\n\n---\n\n## 3. 关键机制\n\n需要两样东西：\n\n1. **Subagents**\n   - 可配置不同角色\n   - 例如：bug 分析员、产品分析员、安全审计员、代码评审员\n\n2. **Code Interpreter**\n   - 一个安全轻量的代码运行环境\n   - Deep Agents 使用 QuickJS\n   - 要求：\n     - Python >= 3.11\n     - `langchain-quickjs >= 0.1.0`\n\n核心函数是：\n\n```js\ntask ({\n  description: \"交给子 Agent 的任务\",\n  subagentType: \"子 Agent 名称\",\n  responseSchema: 可选结构化输出\n})\n```\n\n`task ()`会运行一个完整的子 Agent 循环，并返回结果。\n\n---\n\n## 4. 如何触发？\n\n文档强调一个触发词：\n\n> **workflow**\n\n如果你对 Agent 说：\n\n```text\nRun a workflow to review every file in src/for SQL injection.\n```\n\nAgent 更可能进入动态编排模式，写代码批量调度子 Agent。\n\n如果只是普通请求，则可能走普通单次工具调用。\n\n---\n\n## 5. 典型模式\n\n### 5.1 分类后处理\n\n先分类，再交给不同专家处理。\n\n```text\n工单 → 分类\nbug → bug-fixer\nfeature → feature-analyst\nquestion → support-agent\n```\n\n适合：\n\n- 客服工单\n- 用户反馈\n- 错误日志\n- 混合任务批处理\n\n---\n\n### 5.2 扇出并汇总\n\n同一种任务分发给多个子任务并行执行。\n\n```text\n多个文件 → 多个 Worker 并行检查 → 汇总结果\n```\n\n适合：\n\n- 代码审查\n- 文档批量分析\n- 日志扫描\n- 多服务检查\n\n---\n\n### 5.3 对抗式验证\n\n第一批 Agent 找问题，第二批 Agent 验证问题。\n\n```text\n发现问题 → 多个验证 Agent 复核 → 保留高置信结果\n```\n\n适合：\n\n- 安全审计\n- 合规检查\n- 低容忍误报的场景\n\n---\n\n### 5.4 生成并筛选\n\n多个 Agent 生成不同方案，再筛选最好结果。\n\n```text\n多个方案 → 打分 / 排序 / 过滤 → 最佳方案\n```\n\n适合：\n\n- 架构设计\n- 重构方案\n- 文案生成\n- 策略选择\n\n---\n\n### 5.5 锦标赛模式\n\n多个方案两两比较，胜者晋级。\n\n```text\n方案 A vs 方案 B → Judge 选胜者 → 最终冠军\n```\n\n适合：\n\n- 主观质量评估\n- 风格选择\n- 代码可读性比较\n\n---\n\n### 5.6 循环直到完成\n\n不断发现新结果，去重，直到没有新发现。\n\n```text\n搜索 → 发现新项 → 去重 → 继续搜索 → 无新增 → 结束\n```\n\n适合：\n\n- 死代码检测\n- 依赖审计\n- 全量搜索\n- 范围未知的问题排查\n\n---\n\n## 6. 通俗理解\n\n可以把 Dynamic subagents 想成：\n\n> 主 Agent 是项目经理，子 Agent 是专业员工，代码解释器是任务调度表。\n\n以前项目经理只能：\n\n```text\n一个一个叫人干活\n```\n\n现在项目经理可以写一张执行计划：\n\n```text\n这 100 个文件分给 10 个人并行查；\n查完后再让 3 个审计员复核；\n最后把所有结果汇总成报告。\n```\n\n所以它的本质不是 “更聪明的单个 Agent”，而是：\n\n> 让 Agent 具备程序化组织能力。\n\n---\n\n## 7. 重要注意点\n\n### 7.1 仍处于 Beta\n\n文档明确说：\n\n> interpreter runtime 仍是 beta，API 和生命周期可能变化。\n\n所以生产环境要谨慎。\n\n---\n\n### 7.2 审批机制可能绕过\n\n`task ()`是在解释器`eval`内部调度的，不走普通工具调用路径。\n\n因此：\n\n> 父 Agent 上的`interrupt_on`审批不会逐个作用到子 Agent 调度。\n\n如果需要审批，应拦截整个`eval`工具，而不是每个子任务。\n\n---\n\n### 7.3 可关闭动态子 Agent\n\n如果希望子 Agent 只能通过普通 task 工具调用，而不是解释器动态调度，可以关闭该能力。\n\n---\n\n# 辩证思考\n\n## 优点\n\n### 1. 更适合复杂任务\n\n大量文件、工单、日志、方案评估，本质上都是批处理问题。  \nDynamic subagents 把 Agent 从 “聊天式处理” 升级成 “工作流式处理”。\n\n---\n\n### 2. 更可控\n\n用代码表达循环、分支、并行、筛选，比模型自由发挥更稳定。\n\n```text\n模型负责判断\n代码负责流程\n子 Agent 负责专业执行\n```\n\n这是更合理的分工。\n\n---\n\n### 3. 更容易扩展\n\n只要增加不同角色的子 Agent，就能扩展能力边界。\n\n例如：\n\n- 安全专家\n- 测试专家\n- 产品专家\n- 法务专家\n- 文档专家\n\n主 Agent 负责调度即可。\n\n---\n\n## 风险\n\n### 1. 复杂度上升\n\n动态编排虽然强大，但也引入：\n\n- 调试难度\n- 成本控制问题\n- 子 Agent 结果一致性问题\n- 工作流失控风险\n\n---\n\n### 2. 成本可能暴涨\n\n一个`workflow`可能瞬间调度几十甚至上百个子 Agent。\n\n如果没有限制：\n\n```text\n并行越多 ≠ 越好\n```\n\n可能导致 token、时间、API 成本快速上升。\n\n---\n\n### 3. 安全和权限要更谨慎\n\n因为它在解释器里动态执行调度逻辑，审批机制又可能不逐个生效，所以必须设计好边界：\n\n- 哪些任务能自动跑\n- 哪些任务必须人工批准\n- 子 Agent 能访问什么资源\n- 是否限制并发和递归深度\n\n---\n\n# 最精炼结论\n\n**Dynamic subagents = Agent 的程序化多专家调度系统。**\n\n它适合：\n\n- 大批量任务\n- 多角色协作\n- 多方案比较\n- 高置信验证\n- 递归式探索\n\n但要注意：\n\n- 仍是 Beta\n- 成本可能放大\n- 审批要拦截解释器层\n- 不适合简单单次任务\n\n最终价值在于：\n\n> 把 Agent 从 “单人问答助手” 推进到 “可编排的智能工作流系统”。",
+        "url": "https://langchain-5e9cc07a.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DInterpreters%26appearance%3Dsystem%26title%3DDynamic%2Bsubagents%26description%3DUse%2Binterpreters%2Bto%2Bdispatch%2Band%2Borchestrate%2BDeep%2BAgents%2Bsubagents%2Bfrom%2Bcode%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Flangchain-5e9cc07a%252FnQm-sjd_MByLhgeW%252Fimages%252Fbrand%252Flangchain-docs-dark-blue.png%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DnQm-sjd_MByLhgeW%2526q%253D85%2526s%253D5babf1a1962208fd7eed942fa2432ecb%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Flangchain-5e9cc07a%252FnQm-sjd_MByLhgeW%252Fimages%252Fbrand%252Flangchain-docs-light-blue.png%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DnQm-sjd_MByLhgeW%2526q%253D85%2526s%253D0bcd2a1f2599ed228bcedf0f535b45b1%26primaryColor%3D%2523161F34%26lightColor%3D%25237FC8FF%26darkColor%3D%2523006DDD%26backgroundLight%3D%2523FFFFFF%26backgroundDark%3D%2523030710&w=1200&q=100",
+        "visualFacts": []
+      },
+      {
+        "analyzedAt": 1782990276853,
+        "imageId": "img-6",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# Dynamic Subagents 深度总结\n\n## 1. 核心是什么？\n\n**Dynamic subagents**是 LangChain Deep Agents 的一种动态编排机制。\n\n它允许主 Agent 在**代码解释器**中写 JavaScript 逻辑，通过`task ()`动态调用多个子 Agent，而不是让模型一次只选择一个工具调用。\n\n一句话：\n\n> 让 Agent 像写程序一样，批量、并行、递归地调度多个子 Agent 完成复杂任务。\n\n---\n\n## 2. 解决了什么问题？\n\n传统 Agent 调用子 Agent 通常是：\n\n```text\n模型判断 → 调一个子 Agent → 等结果 → 再判断 → 再调下一个\n```\n\n问题是：\n\n- 慢\n- 不稳定\n- 难并行\n- 难处理大量独立任务\n- 难做多轮验证和结果合成\n\nDynamic subagents 改成：\n\n```text\n主 Agent 写一段 JS 编排代码\n→ 循环 / 分支 / 并行调用多个子 Agent\n→ 收集结果\n→ 统一汇总\n```\n\n更像一个**自动化工作流引擎**。\n\n---\n\n## 3. 关键机制\n\n需要两样东西：\n\n1. **Subagents**\n   - 可配置不同角色\n   - 例如：bug 分析员、产品分析员、安全审计员、代码评审员\n\n2. **Code Interpreter**\n   - 一个安全轻量的代码运行环境\n   - Deep Agents 使用 QuickJS\n   - 要求：\n     - Python >= 3.11\n     - `langchain-quickjs >= 0.1.0`\n\n核心函数是：\n\n```js\ntask ({\n  description: \"交给子 Agent 的任务\",\n  subagentType: \"子 Agent 名称\",\n  responseSchema: 可选结构化输出\n})\n```\n\n`task ()`会运行一个完整的子 Agent 循环，并返回结果。\n\n---\n\n## 4. 如何触发？\n\n文档强调一个触发词：\n\n> **workflow**\n\n如果你对 Agent 说：\n\n```text\nRun a workflow to review every file in src/for SQL injection.\n```\n\nAgent 更可能进入动态编排模式，写代码批量调度子 Agent。\n\n如果只是普通请求，则可能走普通单次工具调用。\n\n---\n\n## 5. 典型模式\n\n### 5.1 分类后处理\n\n先分类，再交给不同专家处理。\n\n```text\n工单 → 分类\nbug → bug-fixer\nfeature → feature-analyst\nquestion → support-agent\n```\n\n适合：\n\n- 客服工单\n- 用户反馈\n- 错误日志\n- 混合任务批处理\n\n---\n\n### 5.2 扇出并汇总\n\n同一种任务分发给多个子任务并行执行。\n\n```text\n多个文件 → 多个 Worker 并行检查 → 汇总结果\n```\n\n适合：\n\n- 代码审查\n- 文档批量分析\n- 日志扫描\n- 多服务检查\n\n---\n\n### 5.3 对抗式验证\n\n第一批 Agent 找问题，第二批 Agent 验证问题。\n\n```text\n发现问题 → 多个验证 Agent 复核 → 保留高置信结果\n```\n\n适合：\n\n- 安全审计\n- 合规检查\n- 低容忍误报的场景\n\n---\n\n### 5.4 生成并筛选\n\n多个 Agent 生成不同方案，再筛选最好结果。\n\n```text\n多个方案 → 打分 / 排序 / 过滤 → 最佳方案\n```\n\n适合：\n\n- 架构设计\n- 重构方案\n- 文案生成\n- 策略选择\n\n---\n\n### 5.5 锦标赛模式\n\n多个方案两两比较，胜者晋级。\n\n```text\n方案 A vs 方案 B → Judge 选胜者 → 最终冠军\n```\n\n适合：\n\n- 主观质量评估\n- 风格选择\n- 代码可读性比较\n\n---\n\n### 5.6 循环直到完成\n\n不断发现新结果，去重，直到没有新发现。\n\n```text\n搜索 → 发现新项 → 去重 → 继续搜索 → 无新增 → 结束\n```\n\n适合：\n\n- 死代码检测\n- 依赖审计\n- 全量搜索\n- 范围未知的问题排查\n\n---\n\n## 6. 通俗理解\n\n可以把 Dynamic subagents 想成：\n\n> 主 Agent 是项目经理，子 Agent 是专业员工，代码解释器是任务调度表。\n\n以前项目经理只能：\n\n```text\n一个一个叫人干活\n```\n\n现在项目经理可以写一张执行计划：\n\n```text\n这 100 个文件分给 10 个人并行查；\n查完后再让 3 个审计员复核；\n最后把所有结果汇总成报告。\n```\n\n所以它的本质不是 “更聪明的单个 Agent”，而是：\n\n> 让 Agent 具备程序化组织能力。\n\n---\n\n## 7. 重要注意点\n\n### 7.1 仍处于 Beta\n\n文档明确说：\n\n> interpreter runtime 仍是 beta，API 和生命周期可能变化。\n\n所以生产环境要谨慎。\n\n---\n\n### 7.2 审批机制可能绕过\n\n`task ()`是在解释器`eval`内部调度的，不走普通工具调用路径。\n\n因此：\n\n> 父 Agent 上的`interrupt_on`审批不会逐个作用到子 Agent 调度。\n\n如果需要审批，应拦截整个`eval`工具，而不是每个子任务。\n\n---\n\n### 7.3 可关闭动态子 Agent\n\n如果希望子 Agent 只能通过普通 task 工具调用，而不是解释器动态调度，可以关闭该能力。\n\n---\n\n# 辩证思考\n\n## 优点\n\n### 1. 更适合复杂任务\n\n大量文件、工单、日志、方案评估，本质上都是批处理问题。  \nDynamic subagents 把 Agent 从 “聊天式处理” 升级成 “工作流式处理”。\n\n---\n\n### 2. 更可控\n\n用代码表达循环、分支、并行、筛选，比模型自由发挥更稳定。\n\n```text\n模型负责判断\n代码负责流程\n子 Agent 负责专业执行\n```\n\n这是更合理的分工。\n\n---\n\n### 3. 更容易扩展\n\n只要增加不同角色的子 Agent，就能扩展能力边界。\n\n例如：\n\n- 安全专家\n- 测试专家\n- 产品专家\n- 法务专家\n- 文档专家\n\n主 Agent 负责调度即可。\n\n---\n\n## 风险\n\n### 1. 复杂度上升\n\n动态编排虽然强大，但也引入：\n\n- 调试难度\n- 成本控制问题\n- 子 Agent 结果一致性问题\n- 工作流失控风险\n\n---\n\n### 2. 成本可能暴涨\n\n一个`workflow`可能瞬间调度几十甚至上百个子 Agent。\n\n如果没有限制：\n\n```text\n并行越多 ≠ 越好\n```\n\n可能导致 token、时间、API 成本快速上升。\n\n---\n\n### 3. 安全和权限要更谨慎\n\n因为它在解释器里动态执行调度逻辑，审批机制又可能不逐个生效，所以必须设计好边界：\n\n- 哪些任务能自动跑\n- 哪些任务必须人工批准\n- 子 Agent 能访问什么资源\n- 是否限制并发和递归深度\n\n---\n\n# 最精炼结论\n\n**Dynamic subagents = Agent 的程序化多专家调度系统。**\n\n它适合：\n\n- 大批量任务\n- 多角色协作\n- 多方案比较\n- 高置信验证\n- 递归式探索\n\n但要注意：\n\n- 仍是 Beta\n- 成本可能放大\n- 审批要拦截解释器层\n- 不适合简单单次任务\n\n最终价值在于：\n\n> 把 Agent 从 “单人问答助手” 推进到 “可编排的智能工作流系统”。",
+        "url": "https://mintcdn.com/langchain-5e9cc07a/mcM5dSw40KzBUENf/oss/images/deepagents/dcode-dynamic-subagents-panel.png?w=1650&fit=max&auto=format&n=mcM5dSw40KzBUENf&q=85&s=098a348b432e9b557e8cf4fa318067eb",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://langchain-5e9cc07a.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DInterpreters%26appearance%3Dsystem%26title%3DDynamic%2Bsubagents%26description%3DUse%2Binterpreters%2Bto%2Bdispatch%2Band%2Borchestrate%2BDeep%2BAgents%2Bsubagents%2Bfrom%2Bcode%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Flangchain-5e9cc07a%252FnQm-sjd_MByLhgeW%252Fimages%252Fbrand%252Flangchain-docs-dark-blue.png%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DnQm-sjd_MByLhgeW%2526q%253D85%2526s%253D5babf1a1962208fd7eed942fa2432ecb%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Flangchain-5e9cc07a%252FnQm-sjd_MByLhgeW%252Fimages%252Fbrand%252Flangchain-docs-light-blue.png%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DnQm-sjd_MByLhgeW%2526q%253D85%2526s%253D0bcd2a1f2599ed228bcedf0f535b45b1%26primaryColor%3D%2523161F34%26lightColor%3D%25237FC8FF%26darkColor%3D%2523006DDD%26backgroundLight%3D%2523FFFFFF%26backgroundDark%3D%2523030710&w=1200&q=100",
+        "role": "hero",
+        "score": 70,
+        "src": "https://langchain-5e9cc07a.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DInterpreters%26appearance%3Dsystem%26title%3DDynamic%2Bsubagents%26description%3DUse%2Binterpreters%2Bto%2Bdispatch%2Band%2Borchestrate%2BDeep%2BAgents%2Bsubagents%2Bfrom%2Bcode%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Flangchain-5e9cc07a%252FnQm-sjd_MByLhgeW%252Fimages%252Fbrand%252Flangchain-docs-dark-blue.png%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DnQm-sjd_MByLhgeW%2526q%253D85%2526s%253D5babf1a1962208fd7eed942fa2432ecb%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Flangchain-5e9cc07a%252FnQm-sjd_MByLhgeW%252Fimages%252Fbrand%252Flangchain-docs-light-blue.png%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DnQm-sjd_MByLhgeW%2526q%253D85%2526s%253D0bcd2a1f2599ed228bcedf0f535b45b1%26primaryColor%3D%2523161F34%26lightColor%3D%25237FC8FF%26darkColor%3D%2523006DDD%26backgroundLight%3D%2523FFFFFF%26backgroundDark%3D%2523030710&w=1200&q=100",
+        "width": 0
+      },
+      {
+        "alt": "The dcode dynamic subagents panel showing spawned subagents grouped into phases by dispatch",
+        "caption": "",
+        "height": 411,
+        "id": "img-6",
+        "nearbyText": "",
+        "resolvedUrl": "https://mintcdn.com/langchain-5e9cc07a/mcM5dSw40KzBUENf/oss/images/deepagents/dcode-dynamic-subagents-panel.png?w=1650&fit=max&auto=format&n=mcM5dSw40KzBUENf&q=85&s=098a348b432e9b557e8cf4fa318067eb",
+        "role": "article",
+        "score": 65,
+        "src": "https://mintcdn.com/langchain-5e9cc07a/mcM5dSw40KzBUENf/oss/images/deepagents/dcode-dynamic-subagents-panel.png?w=1650&fit=max&auto=format&n=mcM5dSw40KzBUENf&q=85&s=098a348b432e9b557e8cf4fa318067eb",
+        "width": 704
+      }
+    ],
+    "knowledgePoints": [
+      "Dynamic subagents依赖解释器运行时，通过task()全局函数在代码中调度子代理。",
+      "使用“workflow”作为提示词可触发模型倾向于通过解释器组织任务，而不是逐个普通工具调用。",
+      "适合处理大量独立单元、多视角分析、递归分析和需要结果综合的任务。",
+      "常见模式包括分类后处理、并行扇出汇总、对抗验证、生成过滤、锦标赛评审和循环发现。",
+      "传入responseSchema后，task()返回值可直接作为类型化JavaScript对象使用。",
+      "task()在eval内部调度，不走普通工具调用路径，因此父Agent的逐次审批机制不会自动应用到每个子任务。"
+    ],
+    "oneHighValuePoint": "将子代理调用从单次模型决策转为解释器代码中的循环、分支和并行批处理，可显著提升复杂任务编排的确定性和可控性。",
+    "oneLineReview": "这是一篇面向Agent工程实践的高价值官方文档，方法模式清晰，但案例证据和稳定性仍有限。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "LangChain",
+      "多智能体编排"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍LangChain Deep Agents中的动态子代理机制，说明如何通过代码解释器用task()调度子代理，并展示分类处理、并行扇出、对抗验证、生成过滤、锦标赛和循环发现等工作流模式。",
+    "tags": [
+      "Dynamic Subagents",
+      "Deep Agents",
+      "Code Interpreter",
+      "任务编排",
+      "RLM工作流"
+    ],
+    "title": "Dynamic subagents - Docs by LangChain",
+    "totalScore": 71,
+    "url": "https://docs.langchain.com/oss/python/deepagents/dynamic-subagents"
+  },
+  "payloadHash": "sha256:e5c655cd91121575d50002503d792856628ffe09c47fcbd0095356448cd45143",
+  "refs": {},
+  "revisionId": "sha256:9d44e11384aa7e441542ae5d6ec6485800aa4069502b717fa57df2d73ef2a709",
+  "schemaVersion": 1,
+  "updatedAt": 1789695664595
+}

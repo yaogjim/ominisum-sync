@@ -1,0 +1,66 @@
+{
+  "createdAt": 1784613454071,
+  "entityType": "session",
+  "id": "1784613454071_hc9zzh2a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "使用相同任务分别测试NewMax与WorkBuddy。",
+      "记录两者的执行耗时、结果数量、重复率和实际可行性。",
+      "抽样核验候选方法的原始帖子、真实性和商业可执行性。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1784618771687,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "桌面Agent检索赚钱点子实测",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "文中报告NewMax执行Reddit冷门赚钱方法检索任务时，14分钟生成了20个候选结果。",
+      "开放式信息搜集任务可以作为桌面Agent的现场演示和横向测试场景。"
+    ],
+    "oneHighValuePoint": "可将同一开放式检索任务交给不同桌面Agent运行，以耗时、结果数量和有效性进行横向比较。",
+    "oneLineReview": "选题与Agent实践直接相关，但只有演示结果概述，缺少可复现过程与有效性证据。",
+    "primaryCategory": "AI Agent应用",
+    "rating": "C",
+    "rejectReason": "缺少完整提示词、候选结果、质量标准和实际验证，难以判断Agent的真实能力。",
+    "retentionDecision": "速览演示思路即可，不建议长期存档",
+    "secondaryCategories": [
+      "AI工具评测",
+      "商业机会研究"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章记录一次无PPT的桌面Agent现场演示：让NewMax从Reddit检索冷门赚钱方法，14分钟得到20个结果，并建议用WorkBuddy执行同一任务进行对比，但未展示结果质量或验证结论。",
+    "tags": [
+      "桌面Agent",
+      "NewMax",
+      "WorkBuddy",
+      "Reddit检索",
+      "工具对比"
+    ],
+    "title": "Yangyi: 昨天跟观猹 5个桌面Agent同台分享 我压轴 就给10分钟 还要演示结果No PPT 我想了想 就让NewMax捞Reddit找冷门赚钱方法吧 跑了14分钟，…",
+    "totalScore": 46,
+    "url": "https://x.com/yangyi/status/2079167099000520902"
+  },
+  "payloadHash": "sha256:e2b829cc3cd81c5fefcc500d94d74e99527db812f279f1dd52f9f0d97e7ffdfb",
+  "refs": {},
+  "revisionId": "sha256:a46dc99579dbc0cf5343551a970c502f908508cede882b3dfb55a9b9cc79f87f",
+  "schemaVersion": 1,
+  "updatedAt": 1784677498550
+}

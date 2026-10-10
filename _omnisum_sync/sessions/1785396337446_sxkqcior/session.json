@@ -1,0 +1,94 @@
+{
+  "createdAt": 1785396337446,
+  "entityType": "session",
+  "id": "1785396337446_sxkqcior",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为Agent流式调用绘制完整超时链，核对客户端、代理、工具执行和模型提供商的截止时间。",
+      "检查失败流是否保留错误码、底层异常和重试原因，并将其写入日志及客户端响应。",
+      "使用长命令、慢首包和多标签并发场景进行回归测试，验证断流、锁竞争及连接复用行为。"
+    ],
+    "archiveReason": "包含多层超时、文件锁、上游连接和错误传播的具体故障模式，对AI Agent转发服务调试具有复用价值。",
+    "classifiedAt": 1789725220033,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Cursor转发器超时与报错修复",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1785396359845,
+        "imageId": "img-1",
+        "model": "gpt-5.6-sol",
+        "ocrText": "",
+        "summary": "# Cursor BYOK 稳定性修复：减少误超时与 “未知错误”\n\n## 背景问题\n\nCursor BYOK 在执行长任务、多标签并发或上游模型响应较慢时，容易出现：\n\n- “An unexpected error occurred on our servers”\n- “Network disconnected”\n- `RetriableError`\n- 多次重试后仍只显示`unknown error`\n\n根因并非单一服务故障，而是多个环节的超时、连接复用和锁等待策略不合理，且错误信息被隐藏。\n\n## 核心修复\n\n### 1. 延长 Shell 前台任务超时\n\n默认超时从**30 秒提高到 120 秒**，避免长时间终端命令被过早判定为`foreground_deadline_exceeded`。\n\n### 2. 返回真实错误原因\n\n流式请求失败时，不再统一返回`unknown error`，而是输出：\n\n- 具体错误码，如`foreground_deadline_exceeded`、`provider_error`\n- 可用的底层错误信息\n\n这使用户和 Cursor 上游能够准确识别故障来源。\n\n### 3. 优化代理连接与等待机制\n\n- 移除代理层**60 秒响应头超时**，实际请求仍受调用方上下文控制。\n- 禁用上游 HTTP/2，改用 HTTP/1.1 独立连接，减少多任务并发时的流级连接异常。\n- 会话文件锁等待从**30 秒缩短至 5 秒**，由 “长时间静默阻塞” 改为快速失败、及时重试。\n\n### 4. 为模型提供商请求设置超时\n\nOpenAI 适配器原本没有 HTTP 请求超时，上游卡住时会导致协程无限阻塞。最新提交将超时设为**90 秒**，以便明确报错并触发恢复流程。\n\n## 整体价值\n\n这次 PR 的核心思路是：\n\n> **正常慢任务给予更长时间，异常等待则快速失败，同时让错误透明可见。**\n\n预期效果包括：\n\n- 减少长命令被误判超时\n- 提升多标签、多任务场景稳定性\n- 避免上游请求无限挂起\n- 降低无效重试次数\n- 显著改善错误定位与用户反馈\n\n## 验证情况\n\n- `go vet ./internal/backend/forwarder/...`检查通过\n- 已验证项目可在`darwin/arm64`环境成功构建\n\n## 一句话总结\n\n该 PR 系统性修复了 Cursor BYOK 链路中的超时、并发连接、文件锁和错误透传问题，把模糊的 “服务器异常” 转化为更稳定的执行与可诊断的真实错误。",
+        "url": "https://opengraph.githubassets.com/0ae53408daf595899a962457ddbc370eeabdb36c0a85bcbec24d44d7b9bf7b2e/leookun/cursor-byok/pull/227",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/0ae53408daf595899a962457ddbc370eeabdb36c0a85bcbec24d44d7b9bf7b2e/leookun/cursor-byok/pull/227",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/0ae53408daf595899a962457ddbc370eeabdb36c0a85bcbec24d44d7b9bf7b2e/leookun/cursor-byok/pull/227",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "流式请求的最终报错可能由工具执行超时、代理首包超时、上游提供商阻塞或文件锁竞争共同触发。",
+      "错误终止消息应携带终止码和底层错误文本，避免统一返回“unknown error”而丢失诊断上下文。",
+      "超时配置需要按调用链分层设计，并确保实际请求仍受调用方上下文或截止时间约束。"
+    ],
+    "oneHighValuePoint": "排查“Network disconnected”时应同时检查工具执行、代理首包、上游模型、文件锁和客户端读取等多层超时，而不是只调整单一超时参数。",
+    "oneLineReview": "这是一个与AI代理基础设施高度相关的具体修复案例，但测试证据有限，部分网络层判断仍需压测验证。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性阅读并存档，作为排查AI代理流式请求超时与网络断连的案例",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent开发",
+      "后端系统调试"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该PR针对Cursor BYOK转发器的异常断流，调整Shell前台执行、代理响应和模型请求超时，缩短文件锁等待，改进真实错误传播，并尝试通过HTTP/1.1隔离并发流连接。",
+    "tags": [
+      "Cursor BYOK",
+      "流式请求",
+      "超时治理",
+      "错误传播",
+      "并发连接"
+    ],
+    "title": "fix(forwarder): increase shell foreground timeout and improve error reporting by quangdang46 · Pull Request #227 · leookun/cursor-byok",
+    "totalScore": 69,
+    "url": "https://github.com/leookun/cursor-byok/pull/227"
+  },
+  "payloadHash": "sha256:e4a3643f4250926ab7184a75c34abaf2264607af69cded46b5c4aaf37a7d130f",
+  "refs": {},
+  "revisionId": "sha256:65a19f231652d37ed6833b0518ee01708658c556baf03d5b5c08a2733bd1c0b9",
+  "schemaVersion": 1,
+  "updatedAt": 1789727299036
+}

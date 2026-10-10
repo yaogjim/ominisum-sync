@@ -1,0 +1,20 @@
+{
+  "createdAt": 1782713478584,
+  "entityType": "message",
+  "id": "1782713558186_simrete2",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 深度总结\n\nYihui 预告一门关于 **loop engineering + Codex** 的课程，核心不是教“怎么把 prompt 写长”，而是讨论：\n\n1. **什么是 loop engineering**  \n   即围绕 AI 编程建立一套“循环机制”：  \n   让 AI 生成、执行、反馈、修正、再生成，直到达到目标。\n\n2. **如何写好一个 loop**  \n   重点不只是提示词，而是设计清楚：\n   - 任务目标\n   - 反馈来源\n   - 验收标准\n   - 失败处理\n   - 退出条件\n\n3. **loop engineering 的局限**  \n   作者强调：  \n   **vibe coding 没有银弹。**  \n   也就是说，靠感觉驱动 AI 写代码并不能自动解决所有工程问题，仍然需要人的判断、验收和架构能力。\n\n热门回复中最有价值的问题是：  \n> loop engineering 最关键的不是工具，而是边界：什么时候继续让 AI 尝试，什么时候必须人类介入验收。\n\n---\n\n# 深入浅出解读\n\n可以把 **loop engineering** 理解成：\n\n> 不是让 AI 一次性写对代码，而是设计一个“自动试错系统”。\n\n例如：\n\n```text\n提出需求\n↓\nAI 写代码\n↓\n运行测试\n↓\n发现错误\n↓\nAI 修复\n↓\n再次测试\n↓\n直到通过或人工介入\n```\n\n真正难的地方不是“让 AI 多试几次”，而是：\n\n- AI 试错有没有方向？\n- 错了能不能发现？\n- 测试是否可靠？\n- AI 反复修是否越修越乱？\n- 什么时候该停止？\n\n所以，好的 loop 不是“无限循环”，而是有边界、有反馈、有验收的工程流程。\n\n---\n\n# 关键洞察\n\n## 1. Prompt 不是 loop 的全部\n\n很多人会误以为 loop engineering 就是：\n\n> 写一个更长、更复杂的 prompt。\n\n但真正的 loop 设计更像工程系统设计。  \nPrompt 只是入口，反馈机制和验收标准才是核心。\n\n---\n\n## 2. AI 编程的效率来自“闭环”\n\nAI 写代码真正变强，不是因为它一次就完美，而是因为它可以：\n\n- 快速生成\n- 快速运行\n- 快速报错\n- 快速修复\n\n这套闭环如果设计得好，效率很高；  \n如果设计得差，就会变成“AI 反复制造垃圾”。\n\n---\n\n## 3. 人仍然是最终责任人\n\n作者反复强调“没有银弹”，其实是在提醒：\n\n> AI 可以加速编码，但不能替代工程判断。\n\n尤其在这些问题上，人不能缺席：\n\n- 架构设计\n- 需求澄清\n- 安全风险\n- 代码质量\n- 长期维护\n- 最终验收\n\n---\n\n# 我的辩证思考\n\n## 积极面\n\nloop engineering 是 AI 编程从“玩具”走向“工程”的关键一步。\n\n它把 AI 从一个聊天工具，变成了一个可以嵌入开发流程的协作者。  \n如果配合测试、日志、CI、代码审查，确实能显著提升开发效率。\n\n---\n\n## 风险面\n\n但 loop engineering 也可能带来新问题：\n\n- AI 反复修 bug，掩盖了需求本身不清楚\n- 测试用例不完整，导致“假通过”\n- 上下文越来越乱，代码质量下降\n- 人过度信任 AI，失去审查意识\n- 自动循环越多，错误扩散越快\n\n所以，loop 不是越自动越好，而是越可控越好。\n\n---\n\n## 最核心的问题\n\n真正决定效果的，不是：\n\n> 你用了 Codex、Claude、Cursor，还是其他工具。\n\n而是：\n\n> 你有没有设计清楚“反馈—修正—验收—退出”的机制。\n\n一句话总结：\n\n> **loop engineering 的本质，不是让 AI 一直干活，而是让 AI 在可控边界内高效试错。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1782713478584,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:fb764d059201f168e76e93a7f7ef490b5c02b639f70b8a1c32c3ed9fb166bcdb",
+  "refs": {
+    "sessionId": "1782713557997_tejrwa3p"
+  },
+  "revisionId": "sha256:89c6cb2dc9078133ddd8198d2c6803af31c42b736876852fec32c79681482e78",
+  "schemaVersion": 1,
+  "updatedAt": 1782713478584
+}

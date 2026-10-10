@@ -1,0 +1,88 @@
+{
+  "createdAt": 1783418426163,
+  "entityType": "session",
+  "id": "1783418426163_kvamhzfy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若关注个人知识库或RAG产品，可浏览其README并重点研究项目结构与摄取流程",
+      "参考其Raw Sources到Wiki的持久化模式，评估是否能用于自己的知识管理系统",
+      "如需实际使用，可按Quick Start安装并导入少量文档测试摄取质量和检索效果",
+      "对其声称的召回率提升、图谱洞察和Deep Research功能进行独立验证后再决定深度采用"
+    ],
+    "archiveReason": "包含持久化Wiki、两步摄取、知识图谱、混合检索、MCP/API等可借鉴的系统设计思路",
+    "classifiedAt": 1783418561220,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "LLM Wiki持久知识库工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Overview",
+        "caption": "",
+        "height": 1840,
+        "id": "img-5",
+        "nearbyText": "LLM Wiki A personal knowledge base that builds itself. LLM reads your documents, builds a structured wiki, and keeps it current. What is this? • Features • Tech Stack • Installation • Credits • License English | 中文 | 日本語 | 한국어 Features Two-...",
+        "resolvedUrl": "https://github.com/nashsu/llm_wiki/raw/main/assets/overview.jpg",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/nashsu/llm_wiki/raw/main/assets/overview.jpg",
+        "width": 3128
+      }
+    ],
+    "knowledgePoints": [
+      "三层架构：Raw Sources、Wiki、Schema，并通过index.md、log.md、wikilink和YAML frontmatter维护知识库结构",
+      "两步摄取流程：先由LLM分析来源，再生成Wiki页面、交叉引用、综述和待人工审核项",
+      "混合检索管线结合关键词搜索、可选向量检索、知识图谱扩展和上下文预算控制",
+      "知识图谱使用直接链接、来源重叠、Adamic-Adar和类型亲和度四类信号计算相关性",
+      "通过MCP、本地HTTP API和Chrome Web Clipper扩展知识库与外部工具及Agent的连接能力"
+    ],
+    "oneHighValuePoint": "将传统即时RAG转为“源文件→持久Wiki→图谱/检索/问答”的长期知识编译模式，具备较强方法论参考价值。",
+    "oneLineReview": "内容信息量较高、工程实现完整，但偏营销式功能清单，证据和实测案例不足，疑似AI生成痕迹较重。",
+    "primaryCategory": "人工智能知识管理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为LLM知识库产品设计和个人知识管理工具参考长期保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "LLM应用开发",
+      "个人知识库",
+      "RAG替代方案"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该文是LLM Wiki项目README，介绍其将文档自动构建为持久化互联知识库的功能，包括两步摄取、知识图谱、向量检索、Deep Research、Web Clipper、MCP/API与跨平台实现。",
+    "tags": [
+      "LLM Wiki",
+      "知识管理",
+      "持久化知识库",
+      "知识图谱",
+      "桌面应用",
+      "RAG"
+    ],
+    "title": "nashsu/llm_wiki: LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base — automatically. Instead of traditional RAG (retrieve-and-answer from scratch every time), the LLM incrementally builds and maintains a persistent wiki from your sources。",
+    "totalScore": 69,
+    "url": "https://github.com/nashsu/llm_wiki"
+  },
+  "payloadHash": "sha256:aaa3ee31e6953484dfe4fbd8fd8900e011d3c8a585ba94ea0fc13b534b992080",
+  "refs": {},
+  "revisionId": "sha256:49e78ea6f42a68ec447b90625b48e3b54c58145ebe17e22a67506593ee0e76d2",
+  "schemaVersion": 1,
+  "updatedAt": 1789729239535
+}

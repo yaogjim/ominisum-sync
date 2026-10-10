@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784695089628,
+  "entityType": "session",
+  "id": "1784695089628_w639o00a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看GitHub仓库，核实安装方式、平台依赖和当前功能限制。",
+      "选择一个现有移动应用，测试智能体读取界面、语义点击和文本输入的稳定性。",
+      "将一段探索流程保存为.ad脚本，验证回放能力以及日志、性能数据的可用性。"
+    ],
+    "archiveReason": "工具与Agent开发及移动应用验证直接相关，功能清单具体，并提供了可继续验证的开源仓库。",
+    "classifiedAt": 1784695368886,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 3,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent Device移动自动化概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "agent-device的定位是面向AI智能体的移动应用验证工具，而非传统测试框架的替代品。",
+      "工具可通过accessibility snapshot和语义引用执行点击、输入等操作，并采集截图、录屏、日志和性能信息。",
+      "其适用范围包括原生、Expo和Flutter应用，同时支持真机与模拟器。"
+    ],
+    "oneHighValuePoint": "agent-device可将移动应用探索过程保存为可回放的.ad脚本，为编码智能体建立移动端验证闭环提供了直接工具。",
+    "oneLineReview": "这是一个相关度较高的工具发现，但文章仅提供功能概览，缺少实测、使用步骤和效果证据。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为移动端Agent验证工具线索存档，使用前需查阅仓库补足安装与操作细节",
+    "secondaryCategories": [
+      "移动应用开发",
+      "自动化测试"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章简要介绍Callstack开源的agent-device CLI：它让编码智能体操控真实或模拟的iOS、Android应用，并支持语义交互、截图录屏、日志与性能采集及探索脚本回放。",
+    "tags": [
+      "agent-device",
+      "移动端自动化",
+      "iOS",
+      "Android",
+      "可回放脚本"
+    ],
+    "title": "Kevin Ma: 看了 agent-device 非常不错，它是 Callstack 开源的移动端自动化 CLI",
+    "totalScore": 61,
+    "url": "https://x.com/kevinma_dev_zh/status/2076205450396356967"
+  },
+  "payloadHash": "sha256:c2e5b806eefe1e77f3626d9681653fa25b8e0dfa4a4fc2ed56ee312de8dfa103",
+  "refs": {},
+  "revisionId": "sha256:b41d708a309cf9168276f588b06846f24ab38d2addcb129769102efb7e2fe01c",
+  "schemaVersion": 1,
+  "updatedAt": 1789728748343
+}

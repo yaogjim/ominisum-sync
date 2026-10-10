@@ -1,0 +1,20 @@
+{
+  "createdAt": 1783558115275,
+  "entityType": "message",
+  "id": "1783558354061_0om46a6s",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章介绍了 Claude 官方关于 **Loop Engineer（循环工程）** 的入门观点：所谓 Loop，本质上并不是全新能力，而是把现有 AI Agent 的工作流程重新概念化。核心是让 AI 按一定规则反复执行任务，直到目标完成、时间触发或事件发生。\n\n---\n\n## 1. Loop Engineer 的背景：新概念包装旧流程\n\n作者认为，现在讨论的 **Loop Engineer**，底层逻辑在概念提出前就已经存在。\n\n- 许多开发者早就在使用类似流程；\n- 只是现在被统一命名为“Loop”；\n- 本质是让 AI Agent 在一定条件下自动反复执行：  \n  **收集上下文 → 执行动作 → 检查结果 → 继续迭代**。\n\n---\n\n## 2. 官方将 Loop 分为四种类型\n\n### 2.1 回合制循环：Single-turn Loop\n\n这是 Claude Code 最基础的工作方式。\n\n- 用户每发出一个 Prompt，就相当于启动一次循环；\n- Claude Code 会自动完成任务，不需要用户中途干预；\n- 它会反复执行：\n  - 收集上下文；\n  - 采取行动；\n  - 检查结果；\n  - 必要时继续重复。\n\n**停止条件：**\n\n- Claude 认为任务已经完成；\n- 或者它判断需要用户介入。\n\n---\n\n### 2.2 基于目标的循环：Goal-oriented Loop\n\n这类循环适合处理更复杂的任务，也就是常说的 **GOAL 模式**。\n\n- 代表工具包括：Codex、Claude Code 等；\n- 当单次对话无法完成复杂目标时，系统会多轮迭代；\n- AI 会围绕一个更大的目标持续推进，直到完成。\n\n**例子：**\n\n如果目标是“重构一个模块并通过测试”，AI 可能会多次修改代码、运行测试、修复错误，直到整体目标达成。\n\n---\n\n### 2.3 基于时间的循环：Time-based Loop\n\n这对应 Claude Code 中的 **loop 命令**。\n\n- 用户可以设定固定时间间隔；\n- 到时间后自动触发某个 Prompt；\n- 适合周期性任务。\n\n**例子：**\n\n定期执行 PR 合并、自动检查代码状态、周期性生成报告等。\n\n---\n\n### 2.4 主动循环：Active Loop\n\n主动循环由事件触发，不需要人工干预。\n\n- 用户只需要设置好触发事件；\n- 一旦事件发生，AI 自动启动循环处理任务。\n\n**例子：**\n\n当 GitHub 上出现新的 Issue 或 PR 时，AI 自动进行审核、记录或初步处理。\n\n---\n\n## 3. 官方给出的 Loop 优化建议\n\n### 3.1 循环质量取决于系统基础\n\nLoop 能否高质量运行，不只取决于 AI，还取决于代码库和工程环境。\n\n需要保证：\n\n- 文档完善；\n- 代码审查严格；\n- 代码库保持简洁；\n- 项目结构清晰。\n\n如果基础环境混乱，AI 循环越多，可能越容易跑偏。\n\n---\n\n### 3.2 管理 Token 消耗\n\n文章特别提醒：基于目标的 GOAL 模式会消耗大量 Token。\n\n因此需要设置边界：\n\n- 明确什么时候使用大模型；\n- 明确什么时候使用小模型；\n- 设置清楚启动条件；\n- 设置清楚结束条件；\n- 避免 AI 无限制运行。\n\n否则可能出现两个问题：\n\n1. **任务跑偏**：AI 在长循环中逐渐偏离原目标；  \n2. **Token 浪费**：持续迭代导致成本快速上升。\n\n---\n\n## 4. 总结：Loop 是 Agent 能力的组合\n\n作者最后指出，这些 Loop 模式本质上都是现有 Agent 能力的组合。\n\n包括：\n\n- GOAL 模式；\n- Loop 模式；\n- Skills；\n- Hooks；\n- 自动触发机制等。\n\n也就是说，Loop Engineer 并不是凭空出现的新技术，而是把 AI Agent 已有的自动化、迭代和触发能力，组织成更清晰的工程方法。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1783558115275,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e148a19af70d67f69b70c33fe78a19f76475c2088dc0903e64d4d4b8c8823345",
+  "refs": {
+    "sessionId": "1783556346051_hs0d7k20"
+  },
+  "revisionId": "sha256:258f9bdeff5f04675f7d8c776d3e7db63bad6cd509eb60b3e91d176484149d2d",
+  "schemaVersion": 1,
+  "updatedAt": 1783558115275
+}

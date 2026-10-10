@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727734887,
+  "entityType": "message",
+  "id": "1789727734888_mhuhfgkz",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 大型企业正尝试把 AI 的算力、数据与控制权收回内部\n\n美国大型律师事务所 Latham & Watkins 据称正采购 NVIDIA 硬件，在内部微调开放权重模型。作者认为，这代表一种“企业主权 AI”路径：企业不再完全依赖 OpenAI、Anthropic 等外部模型服务，而是自主掌握算力、模型、专有数据和访问权限。\n\n## 法律行业尤其重视数据控制\n\nLatham & Watkins 是美国第二大律师事务所，上一年营收约 83 亿美元，积累了大量合同、谈判记录、客户背景、法律推理和机构知识。这些数据既高度敏感，也是提升模型专业能力的核心资产。\n\n内部部署可以减少数据外泄或被用于训练外部模型的风险，也能避免长期按 token 付费，并让企业按照自身业务需求微调模型、限制访问范围。\n\n## 企业 AI 的竞争焦点可能从模型转向“完整技术栈”\n\n作者判断，更多大型企业将自行拥有算力、数据和工作流，并根据价格或质量灵活更换底层模型供应商。这会削弱头部 AI 实验室对大客户的锁定能力，也使开放权重模型成为企业议价和自主部署的重要选择。\n\n这种趋势类似从云端部分回归本地服务器，但新增了模型微调和 AI Agent 等能力。至于作者声称 AI 公司试图借监管阻止这种模式，属于其个人推断，原文没有提供相应证据。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727734887,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:163523cd5ac26dd49868ae423b82d9a66378a357e8bf8dbc2c3b3cc69f59dc6c",
+  "refs": {
+    "sessionId": "1789445522197_8p5eoamm"
+  },
+  "revisionId": "sha256:4e3dbce3178cbf02f074294492924038a6caf12a44b9bfd6dc5be570c1ed1bbc",
+  "schemaVersion": 1,
+  "updatedAt": 1789727734887
+}

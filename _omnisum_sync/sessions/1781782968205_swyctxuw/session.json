@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781782968205,
+  "entityType": "session",
+  "id": "1781782968205_swyctxuw",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在设计 Agent 技能系统时，评估是否需要区分可见性与可调用权限。",
+      "检查现有技能规范中是否存在因子技能暴露导致的上下文浪费问题。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781783282109,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "技能调用层级的规范缺口",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "模型可调用技能会将描述纳入上下文，可能造成 token 消耗。",
+      "仅用户可调用的技能对模型不可见，但无法自然作为其他技能的内部依赖。",
+      "技能系统可能需要更细粒度的调用权限与可见性控制。"
+    ],
+    "oneHighValuePoint": "区分用户可调用、技能可调用、模型可调用三类调用权限，有助于降低上下文污染和 token 浪费。",
+    "oneLineReview": "这是一个有启发的 Agent 技能规范设计问题，但目前仅停留在问题描述层面。",
+    "primaryCategory": "AI工具与规范设计",
+    "rating": "C",
+    "rejectReason": "内容较短，仅提出一个规范设计痛点，缺少系统分析、解决方案和案例验证。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent技能系统",
+      "上下文工程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出当前技能规范中缺少“技能可调用”这一中间层级，导致某些只应被其他技能调用的子技能也必须暴露给模型，从而浪费上下文 token。",
+    "tags": [
+      "技能规范",
+      "模型可调用",
+      "Token优化",
+      "Agent设计"
+    ],
+    "title": "x.com/mattpocockuk/status/2067205673792721057",
+    "totalScore": 46.5,
+    "url": "https://x.com/mattpocockuk/status/2067205673792721057"
+  },
+  "payloadHash": "sha256:4e5aec649ee757b8960131dc750f571fdbdebe4901ba08fbdac9fe10fc16c3a5",
+  "refs": {},
+  "revisionId": "sha256:0807267436da4818a671f3ae9cda022eede5418ec2c2a509373b22e3ba74a8ad",
+  "schemaVersion": 1,
+  "updatedAt": 1781783282449
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695860921,
+  "entityType": "message",
+  "id": "1789695860920_pbzl9ufz",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一个非官方工具：让 Claude Code 把复杂任务编排成动态工作流，再交给多个 Codex/GPT 智能体并行执行，同时提供实时可视化、人工审批、预算控制与断点续跑。\n\n## 关键内容\n\n- 支持 Claude Code 插件和独立 CLI 两种用法；用户只需描述任务，Claude 会生成可读、可修改的工作流脚本。\n- 相比原生一次性工作流，它支持“常驻”智能体：保留上下文继续追问、让多个方案竞速并取消落后者，还能根据中间结果调整计划。作者在本仓库测试中称，连续提问比每次重新读取材料约省 3 倍 token、快 16 倍，但这不是独立测评。\n- 每次运行都会记录日志，可查看智能体关系图、成本和耗时，设置 token 上限、暂停等待人工决定，或恢复未完成任务；`--multi` 还能同时监督多套工作流。\n- 默认智能体可读写并执行命令，处理不可信内容时应启用只读沙箱。它是对 Claude 工作流 DSL 的外部复刻，并非 Anthropic/OpenAI 官方产品，也不能完全还原原生体验。\n\n## 通俗解读\n\n“本地 Codex 后端”指本机运行 Codex CLI/App Server，并不等于模型完全离线；离线的是运行结果查看器。若你经常做大型代码审计、迁移或多智能体研究，这份 README 值得细读；只想偶尔问答，则功能偏重，可先看安装、安全与限制部分。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695860921,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b0f83a5564c6d554e9d58d42fe5e441ccefd50d07e9e61ae1790da4cb11f7ba1",
+  "refs": {
+    "sessionId": "1783555780807_wikxj94p"
+  },
+  "revisionId": "sha256:ac513928967266aa35c58c8db5f27e55ded6ca9dec0c8bd933aa1806e5fb9c1e",
+  "schemaVersion": 1,
+  "updatedAt": 1789695860921
+}

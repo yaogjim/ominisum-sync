@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728028422,
+  "entityType": "message",
+  "id": "1789728028422_6wj112zc",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# LuaCAD：用 Lua 编写可参数化、可本地运行的 2D/3D CAD 模型\n\nLuaCAD 是一套脚本化 CAD 工具：用户用 Lua 描述参数化模型，通过布尔运算组合几何体，并直接预览或导出制造、打印所需文件。其突出特点是同时支持浏览器、本地 CLI 和桌面应用，且浏览器版基于 WebAssembly 运行，模型无需上传。\n\n## Lua 负责建模，Rust 引擎完成几何计算\n\nLuaCAD 在 Rust 引擎中嵌入 Lua 5.4，支持用 `a + b`、`a - b`、`a * b` 等运算符自然表达几何体的合并、相减和相交。模型既可通过 Manifold 直接执行 CSG（构造实体几何）运算，也可生成 OpenSCAD 代码交由外部渲染。\n\n项目认为，Lua 与 OpenSCAD 语法接近，但表达能力、一致性、速度和可嵌入性更好；Lua 也已用于 LibreCAD、Autodesk Netfabb 等 CAD 软件。\n\n## 覆盖从编写、预览到导出的完整流程\n\nLuaCAD 提供 CLI 与带实时 3D 预览的桌面 Studio，可监听文件变化自动重建、渲染 PNG、检查模型、输出三角面数量和包围盒。它支持：\n\n- 导出 3MF、STL、OBJ、PLY、OFF、AMF 和 SCAD；\n- 导入上述网格格式，以及可继续拉伸的 SVG、DXF 草图；\n- 将系统字体转为真实几何体；\n- 原生重实现 BOSL2，可生成圆角方块、棱柱、齿轮等复杂模型，无需安装 OpenSCAD 或 BOSL2。\n\n## 3MF 更适合保留零件结构\n\n脚本返回的每个值都会成为独立的 3MF 对象，可命名并在切片软件中分别移动；其他格式无法表达多对象结构，只会合并为单一网格。这使 LuaCAD 不只是代码生成器，也可作为面向参数化设计和 3D 打印的轻量、可嵌入建模引擎。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728028422,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9289e4c46c5d63bf363a4a3f316abf0b2796fcc3e9a68e7b33c78dc766d4bfdf",
+  "refs": {
+    "sessionId": "1786943290035_fjlbtpms"
+  },
+  "revisionId": "sha256:0f89c9c82b14ae0eb317160e172a8a2b9744e7ccfe241f60d68572558ab459e6",
+  "schemaVersion": 1,
+  "updatedAt": 1789728028422
+}

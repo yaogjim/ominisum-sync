@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726061026,
+  "entityType": "message",
+  "id": "1789726061026_8jyal7yn",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nomg.dev 是一个开源、可自托管的 AI 编程代理控制台，让 Claude Code、Codex、Cursor、OpenCode 等工具在自己的电脑上持续运行，并可通过网页或手机远程管理。\n\n## 关键内容\n\n- 它把每个代理放进长期运行的 `tmux` 会话：合上电脑或断开连接后仍可继续，用户能查看输出、回应权限提示、恢复任务及管理多个代理。\n- 项目不提供模型或转售额度，而是调用用户已安装、已登录的代理 CLI，代码、仓库和凭据留在本机。\n- 本地安装无需 omg.dev 账户，默认仅监听 `127.0.0.1:8766`；远程访问推荐使用 Tailscale。另有可选托管版，适合不想维护服务器的人。\n- 它还支持子代理委派、成果展示、定时仓库检查、MCP 工具及故障诊断。\n\n## 通俗解读\n\n它更像“多个编程代理的远程控制面板”，而不是新的 AI 模型。需要特别注意：控制 API 默认没有身份认证，因为设计前提是只在本机或私有网络中使用，**不能直接暴露到公网**。\n\n如果你经常并行使用多个编码代理、需要手机查看进度，值得细读安装和安全章节；只偶尔在终端运行单个代理，则了解核心功能即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726061026,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8e227814ce1bcdcfab29ccfdf2e08be3fd36da1eb45b7f6088ab9cf993f69146",
+  "refs": {
+    "sessionId": "1787818018964_nhns89hu"
+  },
+  "revisionId": "sha256:ed95360b787ed632c1a090930496b61d608a1a2d411e23d1b6c5e99f44f142e9",
+  "schemaVersion": 1,
+  "updatedAt": 1789726061026
+}

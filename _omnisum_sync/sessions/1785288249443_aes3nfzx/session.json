@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785288249443,
+  "entityType": "session",
+  "id": "1785288249443_aes3nfzx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "开始困难任务时设置15分钟计时器，并在计时期间屏蔽网页和手机干扰。",
+      "记录一周内聊天、网页浏览和LLM监督所占时间，识别主要注意力泄漏点。",
+      "优先把可端到端完成且容易验收的任务交给LLM，避免同时启动过多需要持续指导的任务。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1785402923735,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "LLM时代注意力为何更难集中",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "glyphack.com",
+    "favicon": "https://glyphack.com/favicon-32x32.png",
+    "knowledgePoints": [
+      "频繁用即时内容逃避无聊或困难，会降低对延迟反馈任务的耐受度。",
+      "并行启动多个LLM任务可能增加任务切换、进度检查和结果纠错带来的认知负担。",
+      "低刺激且容易停止的替代活动，可能比网页浏览或视频更有利于恢复工作状态。"
+    ],
+    "oneHighValuePoint": "将任务委派给LLM并不必然释放注意力；持续惦记输出、检查进度和纠正结果，可能形成新的监督负担与认知残留。",
+    "oneLineReview": "文章对LLM造成认知残留和多任务负担的观察有启发，但论述重复且证据限于个人经验。",
+    "primaryCategory": "个人能力建设",
+    "rating": "B",
+    "rejectReason": "主要基于个人体验，缺少系统方法、对照实验和外部证据，不必全文长期保存",
+    "retentionDecision": "选择性浏览，提取LLM引发注意力切换的观察即可",
+    "secondaryCategories": [
+      "AI编程工具",
+      "学习方法"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者以个人经历梳理注意力下降的过程：网页浏览、职场聊天和LLM并行委派不断制造切换与等待，降低对困难任务的耐受，并尝试用计时器、监督陪伴、阅读和园艺替代高刺激活动。",
+    "tags": [
+      "注意力管理",
+      "LLM使用",
+      "任务切换",
+      "深度工作",
+      "数字分心"
+    ],
+    "title": "It's getting harder to focus every day",
+    "totalScore": 56,
+    "url": "https://glyphack.com/attention/"
+  },
+  "payloadHash": "sha256:000a6c4a5c51c32aa63f406047277472b95b3be07c0b5f4d60af177c977ecb8e",
+  "refs": {},
+  "revisionId": "sha256:949f8ee1dd9f7cbc5e2b114554887af086ba7b34e3db0984a0515046f5443c02",
+  "schemaVersion": 1,
+  "updatedAt": 1785403755777
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728526078,
+  "entityType": "message",
+  "id": "1789728526078_css3esgd",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# DeepSeek 的核心战略：以“克制”提高做成 AGI 的概率\n\n文章整理了梁文锋在投资人会议上的52条言论，部分表述可能与原话略有出入。其核心是：DeepSeek 不以短期收入、用户规模或超级 App 为目标，而把资源集中在 AGI；开源、低价和少做产品并非放弃商业，而是减少竞争与组织损耗，提高长期成功概率。\n\n## 产品只是通往 AGI 的台阶\n\nDeepSeek 当前最重视 Coding Agent，并将路线概括为：思维链（CoT）之后发展 Agent，再解决持续学习，使 AI 能参与开发更先进的 AI，最终走向具身智能。多模态、幻觉治理对产品重要，但不是“智能本身”；3D、视频生成、世界模型及垂直行业 Agent 暂非主线。\n\n## 不追求利润最大化，成本才是关键壁垒\n\n梁文锋认为，模型竞争最终取决于成本、时间和用户体验，其中成本第一。低成本不仅能降低 API 价格，也意味着在有限算力下可以训练更大模型。DeepSeek 会持续商业化，但只赚“合理利润”，彻底转向商业化仍很遥远，也无意争夺 C 端流量或 To B 收入。\n\n## 开源是一种长期商业策略\n\nDeepSeek 承诺开源模型与自部署版本一致。梁文锋判断，AI 最终可能占全球 GDP 的10%，试图独占利益反而难以持续。开源和低价能扩大使用、增强员工成就感、减少行业敌意；其前提是公司不追求超额利润。中美 AI 的主要差距在算力等资源，而非人才，目标是用更少算力把技术差距缩短到数月。\n\n## 团队稳定比扩张更重要\n\n梁文锋认为最大风险是团队不稳定。组织以愿景驱动，研究者约一半时间完成主线任务，另一半自主探索，并通过少加班、少补非核心产品来保持松弛与聚焦。他将这种“克制”视为战略：舍弃眼前的市场份额和利润，换取组织凝聚力，以及更高的 AGI 成功概率。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728526078,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:668b0d47e001060b74e6ea94cfaf384ca56f1e0ebed1520eaff9b4be26a2d04c",
+  "refs": {
+    "sessionId": "1784786579631_x30v9rsi"
+  },
+  "revisionId": "sha256:c339dd8d42d3d28247043f927bbee754b96cb302c521e51009b017ccac8bca65",
+  "schemaVersion": 1,
+  "updatedAt": 1789728526078
+}

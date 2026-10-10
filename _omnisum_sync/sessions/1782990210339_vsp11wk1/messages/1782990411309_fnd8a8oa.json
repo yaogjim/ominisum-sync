@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782990411310,
+  "entityType": "message",
+  "id": "1782990411309_fnd8a8oa",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: LangChain动态子代理指南\n\n**评级**: A (71分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI Agent开发\n**次类别**: LangChain, 多智能体编排\n**标签**: #Dynamic Subagents #Deep Agents #Code Interpreter #任务编排 #RLM工作流\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 这是一篇面向Agent工程实践的高价值官方文档，方法模式清晰，但案例证据和稳定性仍有限。\n**核心高价值点**: 将子代理调用从单次模型决策转为解释器代码中的循环、分支和并行批处理，可显著提升复杂任务编排的确定性和可控性。\n\n### 摘要\n文章介绍LangChain Deep Agents中的动态子代理机制，说明如何通过代码解释器用task()调度子代理，并展示分类处理、并行扇出、对抗验证、生成过滤、锦标赛和循环发现等工作流模式。\n\n### 知识要点\n- Dynamic subagents依赖解释器运行时，通过task()全局函数在代码中调度子代理。\n- 使用“workflow”作为提示词可触发模型倾向于通过解释器组织任务，而不是逐个普通工具调用。\n- 适合处理大量独立单元、多视角分析、递归分析和需要结果综合的任务。\n- 常见模式包括分类后处理、并行扇出汇总、对抗验证、生成过滤、锦标赛评审和循环发现。\n- 传入responseSchema后，task()返回值可直接作为类型化JavaScript对象使用。\n- task()在eval内部调度，不走普通工具调用路径，因此父Agent的逐次审批机制不会自动应用到每个子任务。\n\n### 行动项\n- 在实验项目中安装langchain-quickjs并尝试CodeInterpreterMiddleware。\n- 为一个批量代码审查或工单分流任务设计2-3个专用subagent并测试workflow触发效果。\n- 将文中的六种动态子代理模式整理为可复用Agent编排模板。\n- 在涉及高风险操作时，为eval工具本身增加审批或安全网关。\n\n### 存档判定\n归档: 是 — 原因: 包含LangChain动态子代理的核心机制、适用场景和多种可复用编排模式，对构建复杂Agent工作流有参考价值。\n删除: 否\n留存决策: 长期保留",
+    "role": "assistant",
+    "timestamp": 1782990411310,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:3c1acd6aab70e75ef71c0bee6eadaba7b5d1374600764842ebc8c5e4515f256c",
+  "refs": {
+    "sessionId": "1782990210339_vsp11wk1"
+  },
+  "revisionId": "sha256:ef34884c7619c463871eb2073cccd133e4745612cd316d3d23e6bcefcda1cb2b",
+  "schemaVersion": 1,
+  "updatedAt": 1782990411310
+}

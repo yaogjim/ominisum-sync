@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694154859,
+  "entityType": "message",
+  "id": "1789694154859_yd9w6onq",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者分享了一套 AI 辅助开发流程：**先修改并确认可运行的 UI 原型，再让 Agent 根据原型及版本差异实现功能**，从而降低试错成本，并让原型始终与产品代码同步。\n\n## 关键内容\n\n- 首版先用 Claude Design 制作、打磨 UI 原型，之后将原型保存在本地，并用 **Baoyu-Design Skill** 持续维护。\n- 开发新功能时不直接写业务代码，而是先改原型；确认设计后，再修改实际功能。\n- 作者把这套规则写入 `Agents.md` 或 `claude.md`，让 Agent 收到功能需求后默认先更新原型，避免原型逐渐失真。\n- Claude Design 的产物包含 React 代码和结构化 JSON，可纳入 Git 管理。Agent 能通过 `git diff` 明确看到改了什么，减少理解和猜测成本。\n\n## 通俗解读\n\n这相当于装修前先改效果图，确认布局后再施工，而不是边施工边决定。这里的原型不只是截图，而是可比较版本变化的结构化代码，因此也能成为 Agent 的实现说明书。\n\n**是否值得细读：**如果你在用 AI Agent 做前端或产品开发，这套流程和开源 Skill 值得进一步查看；若只想了解观点，原推文信息已基本完整。文中效果主要来自作者实践经验，并非通用测试结论。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694154859,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:80aa35b82318a9b506343fce3f6ae523f15eca764621f17506e35fc98f643433",
+  "refs": {
+    "sessionId": "1786354372323_g8013ihn"
+  },
+  "revisionId": "sha256:671fa5330f8f85308f0ce18996db41f0c14ea71defe6f1ce0de4bcde51c4a50a",
+  "schemaVersion": 1,
+  "updatedAt": 1789694154859
+}

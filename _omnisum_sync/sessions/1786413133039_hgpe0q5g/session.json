@@ -1,0 +1,84 @@
+{
+  "createdAt": 1786413133039,
+  "entityType": "session",
+  "id": "1786413133039_hgpe0q5g",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "对需要高权限运行的编码代理启用隔离沙箱，禁止其直接访问关键宿主环境。",
+      "不要执行广告或共享聊天页面提供的未经检查的终端命令，先解码并审计其中的脚本和下载地址。",
+      "如需评估本地智能体模型，使用统一任务集记录速度、显存占用、工具调用成功率和错误恢复表现。"
+    ],
+    "archiveReason": "",
+    "byline": "少数派编辑部",
+    "classifiedAt": 1789725065306,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI智能体与算力动态聚合",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "read.readwise.io",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 1000,
+        "id": "img-3",
+        "nearbyText": "受此启发我去查了一下；Deepseek V4 flash 0731（高）被 luna 完全碾压，甚至不如 gemini flash 3.6 @cognition 我们能测试一下 max 吗！希望不是框架问题 twitter.com/i...",
+        "resolvedUrl": "https://pbs.twimg.com/media/HPZECIfawAA_mkT.jpg?name=orig",
+        "role": "article",
+        "score": 63,
+        "src": "https://pbs.twimg.com/media/HPZECIfawAA_mkT.jpg?name=orig",
+        "width": 2078
+      }
+    ],
+    "knowledgePoints": [
+      "本地智能体模型的发展重点包括消费级硬件适配、工具调用、多步骤规划、错误恢复和长周期运行。",
+      "AI编码代理的安全边界可通过microVM隔离、危险操作拦截和人工升级机制共同建立。",
+      "评估AI算力基础设施的资产价值，需要关注利用率、现金流、设备残值、可迁移性和软件延寿能力。"
+    ],
+    "oneHighValuePoint": "提高编码代理自主权时，应同步采用隔离沙箱、危险操作分类器和命令审查，避免代理或恶意指令直接危害宿主系统。",
+    "oneLineReview": "与AI智能体方向高度相关，但更像未经整理的资讯流，适合筛选线索而不适合整体精读。",
+    "primaryCategory": "AI行业资讯聚合",
+    "rating": "C",
+    "rejectReason": "内容是大量推文、资讯与营销材料的混合聚合，重复严重，缺少统一论证、来源核验和可复用框架。",
+    "retentionDecision": "仅速览其中与本地智能体和代理安全相关的条目，无需整体保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI智能体开发",
+      "AI基础设施"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章聚合多条AI动态，涉及本地智能体模型、编码代理沙箱、模型水印、代理安全、自动化科研及GPU基础设施融资，但正文重复且混杂大量未经核实的推文和宣传材料。",
+    "tags": [
+      "本地智能体",
+      "开源模型",
+      "AI编码代理",
+      "代理安全",
+      "GPU基础设施"
+    ],
+    "title": "AI High Signal Twitter List: August 10, 2026 PM Edition",
+    "totalScore": 45,
+    "url": "https://read.readwise.io/feed/unseen/read/01kzq0vf4ms92fzwhxc41cdxan"
+  },
+  "payloadHash": "sha256:5eeafe09f87d51a8e4e847702add544d75fc964effe9465fc280b43a2a7dc19e",
+  "refs": {},
+  "revisionId": "sha256:d03347c5ee19404edc84b3443a3f5fb432ad447a5ce555a9b8db81efb312ac50",
+  "schemaVersion": 1,
+  "updatedAt": 1789725066077
+}

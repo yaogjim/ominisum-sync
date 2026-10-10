@@ -1,0 +1,15 @@
+{
+  "createdAt": 1789704837814,
+  "entityType": "session-content",
+  "id": "1789704837814_iwhn8n4q",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>凡人小北</strong></header><div class=\"tw-body\">腾讯开源了一个 TeamAI-CLI，做法很简单：把团队使用 Agent 的规则、Skill 和文档，直接放进一个 Git 仓库。<br><br>谁摸索出了一套更好用的方法，就像改代码一样提交；团队评审之后再合并，下一次对话便同步给每个人。哪条规则是谁改的、为什么改、效果不好怎么退回去，也都有记录可查。<br><br>我觉得这个思路挺正。<br><br>现在一提团队知识共享，很多人上来就想搭知识库、设计复杂的分类体系，再做一套管理后台。<br>但真正的问题往往没有那么复杂，大家各自在电脑上踩坑。<br><br>知识一旦进入协作，首先需要解决的其实就是变更、评审、版本和溯源。而这些问题，Git 已经解决得很好了。<br><br>过去我们用 Git 管理团队共同生产的代码，现在开始用它管理团队共同使用 AI 的方法。<br><br>方案看起来很轻，抓住的却是最核心的问题。</div><blockquote class=\"tw-quote\"><strong>@TencentAI_News</strong><p><span class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 immersive-translate-target-translation-theme-background immersive-translate-target-inner\" data-imt-p=\"1\" data-imt-translation-only=\"1\">我们自三月份起在腾讯内部使用 TeamAI-CLI。现已将其开源。\n\n它将团队知识整合到一个 git 仓库中，让每个 agent 都基于同一本手册工作。\n\n它的功能：\n&gt; 基于 git：技能、规则和文档都存放在一个仓库中，变更通过合并请求进行\n&gt;</span></p><p><a class=\"tw-quote-link\" href=\"https://x.com/TencentAI_News/status/2096876836898865165\">引用推文原文</a></p></blockquote></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@InferProof One</strong> <span class=\"tw-eng\">♥ 10 · 💬 0</span><p>Metered inference + usage certificate = @inferproofone</p></div><div class=\"tw-reply\"><strong>@yunyimuhan</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>去年我们就这么干了，一切都是代码才是最好的管理方式</p></div><div class=\"tw-reply\"><strong>@比哥鸡排</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>如果我们之前就是这么用的话，我们还需要这个CLI吗？</p></div><div class=\"tw-reply\"><strong>@赖叔 | LaiShu.ai</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>如果针对某个问题有不同方案<br><br>每次都团队评审那不是很麻烦</p></div><div class=\"tw-reply\"><strong>@风雪漫千山</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>用Git管规则挺聪明。</p></div></div>",
+    "pageContent": "凡人小北: 腾讯开源了一个 TeamAI-CLI，做法很简单：把团队使用 Agent 的规则、Skill 和文档，直接放进一个 Git 仓库。 谁摸索出了一套更好用的方法，就像改代码一样提交；团队评审之后再合并，下一次对话便同步给每个人。哪条规则是谁改的、为什么改、效果不好怎么退回去，也都有记录可查。 我觉得这个思路挺正。 现在一提团队知识共享，很多人上来就想搭知识库、设计复杂的分类体系，再做一套管理后台。\n但真正的问题往往没有那么复杂，大家各自在电脑上踩坑。 知识一旦进入协作，首先需要解决的其实就是变更、评审、版本和溯源。而这些问题，Git 已经解决得很好了。 过去我们用 Git 管理团队共同生产的代码，现在开始用它管理团队共同使用 AI 的方法。 方案看起来很轻，抓住的却是最核心的问题。\n引用推文 (@TencentAI_News):\n我们自三月份起在腾讯内部使用 TeamAI-CLI。现已将其开源。 它将团队知识整合到一个 git 仓库中，让每个 agent 都基于同一本手册工作。 它的功能：\n> 基于 git：技能、规则和文档都存放在一个仓库中，变更通过合并请求进行\n>\n[引用推文原文](https://x.com/TencentAI_News/status/2096876836898865165)\n---\n热门回复 (共 5 条):\n@InferProof One (♥ 10 · 💬 0):\nMetered inference + usage certificate = @inferproofone\n\n@yunyimuhan (♥ 1 · 💬 0):\n去年我们就这么干了，一切都是代码才是最好的管理方式\n\n@比哥鸡排 (♥ 0 · 💬 0):\n如果我们之前就是这么用的话，我们还需要这个CLI吗？\n\n@赖叔 | LaiShu.ai (♥ 0 · 💬 0):\n如果针对某个问题有不同方案\n\n每次都团队评审那不是很麻烦\n\n@风雪漫千山 (♥ 0 · 💬 0):\n用Git管规则挺聪明。\n"
+  },
+  "payloadHash": "sha256:32e4511031b1b7d6c9787180ae529d2e2eca4d46a41c79f228a36119ee9b656c",
+  "refs": {},
+  "revisionId": "sha256:47f60218c53f1c3847a7a8502a952fa6ac2fffd728e39a6bed0839e5ef0be957",
+  "schemaVersion": 1,
+  "updatedAt": 1789727539055
+}

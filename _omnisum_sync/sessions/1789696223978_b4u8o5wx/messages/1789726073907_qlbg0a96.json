@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726073908,
+  "entityType": "message",
+  "id": "1789726073907_qlbg0a96",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者以 LangChain 的付费媒体智能体为例，主张大型智能体的关键不是把所有资料和工具一次塞进提示词，而是按需加载、隔离任务，并复用成熟的运行基础设施。\n\n## 关键内容\n\n- 智能体配有代码沙箱及 pandas、DuckDB 等分析库，可结合实时数据和上传文件，自主计算并生成图表、PDF 等报告。\n- 19 页公司 wiki 和操作手册存放在外部文件中，系统提示词只负责指明索引与规则，需要时再读取相关内容。\n- 200 多个工具的完整说明约占 31.4 万 token；作者仅预载“搜索、读取说明、执行”三个工具，把初始占用降至约 1000 token。\n- 子智能体虽分开对话，仍可能因共享文件或完成状态互相干扰，因此还要隔离权限、输出路径和完成条件；Slack 路由、部署等通用能力则交给托管平台。\n\n## 通俗解读\n\n这类似让员工拥有“目录和资料库”，而不是把整本手册背下来：先查到所需工具，再读取用法并执行，既节省上下文，也减少干扰。对正在搭建复杂智能体的团队有实操参考价值，值得细读；但原文也带有 LangChain 产品推广性质，且声称有 6 点，现有内容缺少第 4 点，并不完整。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726073908,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1f2e921c6fa48bfce1da11e047e5a3c9ee46976d0d16f4754e24b6b1e8a18a88",
+  "refs": {
+    "sessionId": "1789696223978_b4u8o5wx"
+  },
+  "revisionId": "sha256:66f2a3c87b910ea07464eab5336425984b94ae62ade14ad644dad57e486d6f2e",
+  "schemaVersion": 1,
+  "updatedAt": 1789726073908
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1782360429341,
+  "entityType": "session",
+  "id": "1782360429341_4qbmtdub",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在设计AI应用前先梳理现有业务流程中的缺陷与瓶颈",
+      "为每类任务明确选择确定性规则、AI智能体或人工处理的边界"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782361918090,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "企业AI失败源于流程缺陷",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "企业AI失败常源于流程设计不当，而非模型能力不足",
+      "任务应按确定性自动化、智能体处理、人类处理三类进行拆分",
+      "流程工程可能比模型工程更能放大AI应用效果"
+    ],
+    "oneHighValuePoint": "企业AI落地的核心不是单纯构建智能体，而是重新设计人、确定性自动化与智能体之间的分工边界。",
+    "oneLineReview": "观点有启发但过于简短，适合作为流程设计提醒，不值得深读。",
+    "primaryCategory": "AI产品与流程工程",
+    "rating": "C",
+    "rejectReason": "内容过短，缺少案例、数据和展开论证，主要是观点表达而非系统方法。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "企业AI应用",
+      "智能体设计"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为企业AI落地失败并非模型能力不足，而是企业把模型用于有缺陷的流程。关键在于区分哪些任务应确定性自动化、哪些交给智能体、哪些保留给人类，本质是流程工程问题。",
+    "tags": [
+      "企业AI",
+      "流程工程",
+      "AI Agent",
+      "自动化边界",
+      "人机协作"
+    ],
+    "title": "vas: Enterprise AI isn't failing because the models aren't good enough",
+    "totalScore": 54,
+    "url": "https://x.com/vasuman/status/2069841387630252362"
+  },
+  "payloadHash": "sha256:a729d0c391b967bfcbc664ec7080bb176e608d9f064838a0cce87b168dea6a61",
+  "refs": {},
+  "revisionId": "sha256:6908544dfcea02e0443f974375afa04451cdae8a8c6def4a4bbd95ef5dbad8ee",
+  "schemaVersion": 1,
+  "updatedAt": 1782361918618
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1782349781631,
+  "entityType": "session",
+  "id": "1782349781631_wmu3ifdk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如遇 Codex 耗电问题，可先检查 pmset 断言和 Codex 配置项",
+      "在测试环境中验证 LaunchAgent 与 caffeinate 自动启停逻辑",
+      "应用任何配置修改前备份 ~/.codex/config.toml 和相关脚本"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782350290747,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex省电守护方案",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可通过 pmset -g assertions 检查 Mac 当前阻止睡眠的进程和断言",
+      "LaunchAgent 可用于实现本地后台守护进程，按应用活动状态动态控制 caffeinate",
+      "降低 WindowServer/GPU 负载和减少日志写入可能改善桌面 AI 应用的耗电问题"
+    ],
+    "oneHighValuePoint": "仅在 Codex 活跃执行任务时启用 caffeinate，空闲后自动释放系统唤醒断言。",
+    "oneLineReview": "有一定实操参考价值，但证据薄弱且依赖具体环境，不适合作为长期资料保留。",
+    "primaryCategory": "AI开发工具优化",
+    "rating": "C",
+    "rejectReason": "内容来自单条社交媒体，主要是个人经验和提示词片段，缺乏完整代码、测试数据和风险说明。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Mac性能调优",
+      "自动化脚本"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍作者为解决 Codex 桌面应用在 Mac 上耗电严重的问题，设计了一个通过配置、LaunchAgent、caffeinate 和进程监控实现的省电守护方案。",
+    "tags": [
+      "Codex",
+      "Mac电池",
+      "LaunchAgent",
+      "caffeinate",
+      "性能优化"
+    ],
+    "title": "CJ Zafir: Codex desktop app was draining my Macs battery like crazy so i built a power-gua…",
+    "totalScore": 54,
+    "url": "https://x.com/cjzafir/status/2069120883822887109"
+  },
+  "payloadHash": "sha256:e89866b386e1e714b977411b77d0af1fd0a6d1f8188602297bfc88b8796d5e6f",
+  "refs": {},
+  "revisionId": "sha256:84d55217c2633d9a593e59ce56d3c5acb0d079e5e7da3fb97114b955bf2c426e",
+  "schemaVersion": 1,
+  "updatedAt": 1782350291419
+}

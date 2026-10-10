@@ -1,0 +1,84 @@
+{
+  "createdAt": 1790221180238,
+  "entityType": "session",
+  "id": "1790221180238_p16yi4p9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按仓库流程安装依赖、配置API密钥并生成训练数据，核对实际样本数，解决文中37,840与38,340条的差异。",
+      "复现微调与部署流程，修改仓库中的意图、布尔判断或情感示例，检查目标任务的分类结果及输出格式。",
+      "直接调用API时补齐文中指定的推理参数和系统提示，完成测试后停止专用端点。"
+    ],
+    "archiveReason": "提供了从数据准备、微调训练到端点部署和调用的完整操作链，可作为轻量分类服务的实现参考。",
+    "byline": "Hassan",
+    "classifiedAt": 1790762276011,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "低成本微调与部署专用分类模型",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HS63MmAW0AAEnjB?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HS63MmAW0AAEnjB?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "文章采用统一决策输入格式，将自然语言推断、意图识别、情感分析和规则判断等任务组织为多源分类训练数据。",
+      "直接调用模型时需显式设置temperature=0、max_tokens=8及关闭思考，并使用限定单选字母输出的系统提示；示例脚本另行返回结构化结果。",
+      "约17美元指文中声称的训练费用，并非完整服务成本；自行部署使用专用H100端点，结束实验后应停止端点。"
+    ],
+    "oneHighValuePoint": "将多种分类任务统一为“状态、问题、候选选项”的输入协议，使同一个微调模型能够通过统一接口处理不同决策任务。",
+    "oneLineReview": "工程流程具体、适合分类服务原型开发，但数据数量表述不一致，且低成本与分类效果缺少充分验证。",
+    "primaryCategory": "AI模型微调与部署",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留微调部署流程与推理配置，复现前核对数据规模、平台支持和实际费用",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI应用开发",
+      "分类与决策系统"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章演示将Qwen3.5 4B微调为分类模型，涵盖多源数据规范化、Together训练、专用端点部署和结构化调用，声称训练约需17美元与25分钟，但未提供系统评测或完整运行成本。",
+    "tags": [
+      "分类模型",
+      "Qwen微调",
+      "Together AI",
+      "结构化输入输出",
+      "意图识别"
+    ],
+    "title": "如何花 17 美元训练你自己的 Jev",
+    "totalScore": 75,
+    "url": "https://x.com/nutlope/status/2102881280115249597"
+  },
+  "payloadHash": "sha256:da95551b61fae1aaae02c873c0a4e8a526d10a6be15c2ffbc210529163f57070",
+  "refs": {},
+  "revisionId": "sha256:a411498e4081344125a870d7f5c0ff0ce6be57652f0e02174a6b5ef8d0443c4e",
+  "schemaVersion": 1,
+  "updatedAt": 1790770872390
+}

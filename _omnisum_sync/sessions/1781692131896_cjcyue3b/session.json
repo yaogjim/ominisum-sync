@@ -1,0 +1,97 @@
+{
+  "createdAt": 1781692131896,
+  "entityType": "session",
+  "id": "1781692131896_cjcyue3b",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在AI辅助开发中先要求生成低成本丑原型，而不是直接做完整版本",
+      "将每条主观反馈改写为可验证的验收标准",
+      "为Agent任务建立LOOP.md或类似清单文件",
+      "尝试使用独立Agent对开发结果逐项验收"
+    ],
+    "archiveReason": "提出了将模糊品味转化为可检查规则，并用独立Agent验收的实用流程，具有一定复用价值",
+    "byline": "Han1",
+    "classifiedAt": 1781692515609,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "反向驱动的AI开发管线",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1781692159527,
+        "imageId": "img-3",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# 深度总结\n\n这条开发 pipeline 的核心是：\n\n> **不要一开始逼自己 “说清楚想要什么”，而是先做一个粗糙原型，逼出真实反应，再把反应转成规则，让 agent 按规则开发，并由独立 agent 验收。**\n\n作者的关键洞察是：\n\n- 很多人的品味不是 “可提前描述” 的，而是 “看到后才知道对不对”。\n- 传统 AI 开发方式是：  \n  **一句需求 → agent 自行完成 → 最后才发现跑偏**。  \n  问题是：发现错误太晚，修改成本最高。\n- 这条 pipeline 反过来：  \n  **先暴露错误 → 提炼规则 → 再执行开发 → 独立验收**。  \n  把 “发现不对” 的时刻提前到最便宜的阶段。\n\n流程大致是：\n\n```text\nidea\n ↓\n1. idea-to-prototype\n   先做丑原型，让人产生反应\n\n ↓\n2. prototype-to-roadmap\n   根据反馈切成可开发路线图\n\n ↓\n3. roadmap-to-loop\n   写成 LOOP.md：任务、完成标准、验收人\n\n ↓\n4. loop-to-goal\n   agent 自动拆目标、执行、验收、推进\n\n ↓\nshipped\n```\n\n底层还有一个机制：\n\n```text\ntaste-to-rubric\n```\n\n也就是把用户每次说的：\n\n> “不是这个”  \n> “这里不对”  \n> “我想要这种感觉”\n\n沉淀成`RUBRIC.md`，变成以后可复用的判断标准。\n\n---\n\n# 深入浅出解读\n\n这套方法本质上是在解决一个问题：\n\n> **人说不清楚需求，但看得出好坏。**\n\n就像装修房子。\n\n如果你一开始对设计师说：\n\n> “帮我做一个高级、舒服、有质感的客厅。”\n\n设计师可能做出一个很贵、很完整、但你完全不喜欢的方案。\n\n更好的方式是：\n\n1. 先给你几个很粗糙的草图；\n2. 你看到后说：“不要冷色调”“沙发太商务”“灯光要柔一点”；\n3. 设计师把这些反馈整理成规则；\n4. 后面所有设计都按这些规则推进；\n5. 最后再让另一个人检查：是否真的符合规则。\n\n这条 AI 开发 pipeline 也是如此。\n\n它不是让 AI 一口气 “憋大招”，而是让 AI 先拿出一个 “靶子”，让你打：\n\n> 原型不是为了漂亮，  \n> 而是为了让你更快发现：  \n> **我不要什么，以及我真正想要什么。**\n\n---\n\n# 关键价值\n\n## 1. 把模糊品味变成明确规则\n\n人的 taste 很难直接表达，但可以通过反应捕捉。\n\n```text\n反应 → 偏好 → 规则 → 验收标准\n```\n\n这让 “感觉不对” 逐渐变成 “哪里不对”。\n\n---\n\n## 2. 把错误提前暴露\n\n传统方式：\n\n```text\n需求模糊 → 开发很久 → 成品偏离 → 高成本返工\n```\n\n这套方式：\n\n```text\n快速丑原型 → 立刻反馈 → 低成本修正 → 再正式开发\n```\n\n核心是：\n\n> 宁愿早期丑，别到最后错。\n\n---\n\n## 3. 防止 agent 自嗨\n\n作者特别强调：\n\n> 做任务的 agent 不能自己宣布完成。\n\n所以引入独立验收 agent：\n\n```text\n开发 agent：负责做\n验收 agent：负责查\n```\n\n这解决了长期运行 agent 常见的问题：\n\n- 偷懒；\n- 自我合理化；\n- 偏离目标；\n- 做完了但不符合用户真实期待。\n\n---\n\n# 辩证思考\n\n## 好的一面\n\n这套方法很适合：\n\n- 需求模糊的产品开发；\n- 设计、前端、创意工具；\n- 个人开发者 vibe coding；\n- 用户自己也说不清 “我要什么” 的场景。\n\n它真正抓住了 AI 协作的关键：\n\n> AI 不只是执行工具，  \n> 还可以是 “帮你逼出需求” 的工具。\n\n---\n\n## 局限的一面\n\n但它也不是万能。\n\n如果项目本身是：\n\n- 金融系统；\n- 医疗系统；\n- 底层架构；\n- 高安全、高确定性工程；\n\n那就不能只靠 “先做丑原型再反馈”。\n\n因为这类项目的核心不是 taste，而是：\n\n- 正确性；\n- 稳定性；\n- 合规性；\n- 边界条件；\n- 系统约束。\n\n这时需要更强的前置设计，而不只是反应式迭代。\n\n---\n\n## 更深一层看\n\n这条 pipeline 的本质不是 “让 AI 更自动化”，而是：\n\n> **重新设计人与 AI 的分工。**\n\n人不必假装自己一开始就知道答案。\n\n人负责：\n\n- 判断；\n- 品味；\n- 取舍；\n- 最终方向。\n\nAI 负责：\n\n- 快速生成；\n- 提炼规则；\n- 拆解任务；\n- 执行开发；\n- 辅助验收。\n\n最理想的关系不是：\n\n```text\n人下命令，AI 执行\n```\n\n而是：\n\n```text\nAI 提供刺激，人做判断；\n判断沉淀成规则，AI 再规模化执行。\n```\n\n---\n\n# 一句话总结\n\n> 这套 pipeline 的聪明之处在于：  \n> **不要求人先说清楚需求，而是用快速原型逼出真实品味，再把品味变成规则，让 AI 按规则开发并独立验收。**",
+        "url": "https://pbs.twimg.com/media/HLAOPThWgAA4S_Q?format=png&name=medium",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 584,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HLAOPThWgAA4S_Q?format=png&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HLAOPThWgAA4S_Q?format=png&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "对于难以清晰描述的审美或产品需求，可以先用低保真原型逼出反馈",
+      "反复出现的修改意见应沉淀为可检查、可复用的验收规则",
+      "开发Agent与验收Agent分离，可以降低任务漂移和自我放水风险",
+      "长时间运行的Agent需要明确目标、检查清单和外部验证机制"
+    ],
+    "oneHighValuePoint": "将“发现不对”的时刻前移到低成本阶段，并通过独立Agent验收避免自我确认偏差。",
+    "oneLineReview": "短小但有启发，核心价值在于把模糊需求前置暴露并转化为可验证规则。",
+    "primaryCategory": "AI开发工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为AI辅助开发流程的启发材料",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent工程",
+      "产品原型方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出一种AI开发pipeline：先生成粗糙原型触发人的反馈，再把“不对”的反应整理成可检查规则，作为Agent开发验收标准，并由独立Agent进行验收，以降低后期返工成本。",
+    "tags": [
+      "AI Agent",
+      "开发流程",
+      "验收标准",
+      "原型迭代",
+      "Vibe Coding"
+    ],
+    "title": "Han1: 最近做了一条开发 pipeline，想分享一下背后的想法",
+    "totalScore": 69.5,
+    "url": "https://x.com/ThisisHan1_/status/2067169270493012224"
+  },
+  "payloadHash": "sha256:415ca3ae1f1b21474ee8f5626856b775d22261dfb56455989fa73ad95d6e679f",
+  "refs": {},
+  "revisionId": "sha256:aee61e55f009b88c4c086fa6bf2a5be56ebf20c0cc6597a7847c2842851dbd74",
+  "schemaVersion": 1,
+  "updatedAt": 1781692606427
+}

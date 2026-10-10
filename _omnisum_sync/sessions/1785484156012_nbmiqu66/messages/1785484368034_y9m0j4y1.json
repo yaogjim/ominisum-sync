@@ -1,0 +1,19 @@
+{
+  "createdAt": 1785484368035,
+  "entityType": "message",
+  "id": "1785484368034_y9m0j4y1",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 从多智能体到可治理的Agent Team\n\n**评级**: A (74分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI技术与Agent开发\n**次类别**: 产品设计, 协作治理\n**标签**: #Agent Team #Long-running Agent #多智能体协作 #可观测性 #权限治理\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 10 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 这是一篇高度贴合Agent系统设计的产品实践长文，框架完整但重复较多，且证据主要来自单一产品与作者个案。\n**核心高价值点**: 文章最有价值的判断是：多个Agent只有在责任、关系、交接、当前状态和边界从Human脑中外化，并能持续协作、收口和治理时，才真正成为Agent Team。\n\n### 摘要\n文章以CodexLoom为载体，解释Agent如何从一次性Task发展为长期责任主体，再因Scope扩张分化为Domain Agent，最终通过Profile、Message、Topic、Overview和External形成可协作、可收口、可观测并受Human治理的Agent Team。\n\n### 知识要点\n- Task是工作切片，Long-running Agent承载持续责任，Domain用于界定长期职责与停止边界。\n- Message负责Agent间有边界的点对点沟通，Topic由唯一Responsible维护跨Agent工作的当前版本、等待项、证据与最终收口。\n- Overview提供Signal与Evidence入口，治理应遵循发现信号、下钻证据、判断原因、小幅调整、后续验证的循环。\n\n### 行动项\n- 为现有长期Agent记录Identity、Domain和Scope，并明确其职责边界与升级对象。\n- 将跨Agent协作拆分为有明确发送方、接收方、返回义务和结果回流路径的Message或Topic。\n- 用执行、等待、积压和Token等信号定位调查对象，再结合实际产物和业务结果验证是否需要调整Scope、工具、路由或权限。\n\n### 存档判定\n归档: 是 — 原因: 文章系统梳理了从Task Agent、Long-running Agent、Domain Agent到Agent Team的演化路径，并提出Profile、Message、Topic、Overview、Needs You和External等可复用的协作与治理抽象。虽然主要依据作者自身产品实践，外部验证有限，但对Agent系统设计具有较强参考价值。\n删除: 否\n留存决策: 推荐精读并长期保留，适合作为Agent团队架构与治理的概念参考",
+    "role": "assistant",
+    "timestamp": 1785484368035,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:8cb82a6a90bcd8915bd68ca84bf507d886e348a58c8793617a361688bfac58b0",
+  "refs": {
+    "sessionId": "1785484156012_nbmiqu66"
+  },
+  "revisionId": "sha256:e716ed3a08fa9b843d82155901574f7344fe172fa64c9bfcbf75b15e8ab098a3",
+  "schemaVersion": 1,
+  "updatedAt": 1785484368035
+}

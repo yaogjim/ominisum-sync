@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728397407,
+  "entityType": "message",
+  "id": "1789728397407_8usvy14u",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# AI 短视频流水线：把创作判断留给人，把生产交给智能体\n\n作者称，过去一个月投入不到 10 小时，借助 AI 工作流在抖音涨粉约 2000，并获得首个商单。核心并非“一键生成爆款”，而是将选题、策划与视频生产拆开，用 Codex、HyperFrames、HeyGen 和 IndexTTS2 自动完成配音、画面、数字人、字幕、质检与归档。\n\n## Codex 统筹生产，HyperFrames 负责稳定渲染\n\nClaude Code 用于选题、改稿和策划，Codex 接收定稿后执行生产任务，作者只需中途审稿一次。选择 Codex，主要因为视频制作涉及 FFmpeg、Node.js、语音识别等长时间、高 I/O 任务，其调用成本和调度效率更合适。\n\nHyperFrames 用 HTML、CSS、JavaScript 描述画面和时间轴。大模型更擅长生成这类代码，文案、样式和动画也可分别修改；相同代码能逐帧一致地渲染，便于质检、版本管理和 SHA-256 校验。相比 React 技术栈的 Remotion，它更易上手，但作者会按项目混用。\n\n## 数字人减少出镜，本地克隆声音控制成本\n\nHeyGen 根据音频生成作者的 Digital Twin，用于替代日常真人口播。Avatar III 约 1 美元/分钟，2 分钟视频约 2 美元，并可通过命令行接入自动化流程。\n\n配音使用开源、本地运行的 IndexTTS2：以固定 WAV 样本克隆声线，再用 FFmpeg 提速至 1.12 倍。其优势是零按量费用、声音一致、文稿不出本机。\n\n## 增量成本不高，但内容能力仍是瓶颈\n\n主要固定开销是 OpenAI Pro、Anthropic Max 和 HeyGen Creator（月费 49 美元）；火山 ASR 约 0.4 元/小时，作者月支出不足 20 元。HeyGen 是唯一随产量线性增长的成本。\n\n作者强调，这不是开箱即用的 SaaS：AI只能提高生产效率，无法替代选题判断、内容质量和平台感觉；各项 Skill 也需持续调试，才能形成个人风格。相关效果与收益均为作者自述，工作流仍缺中文断句和差异化开场钩子等能力。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728397407,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0bfc26de69d7bec7988f12df50f57de7e549c0d936694b9708235198c99f1407",
+  "refs": {
+    "sessionId": "1785140485763_5g1wtxl2"
+  },
+  "revisionId": "sha256:1203b69582c4fac68c2dbbc63af8ff5168c07b2caff699bd81fccb903ebb0702",
+  "schemaVersion": 1,
+  "updatedAt": 1789728397407
+}

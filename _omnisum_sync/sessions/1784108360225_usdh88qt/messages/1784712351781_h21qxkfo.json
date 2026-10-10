@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784712351781,
+  "entityType": "message",
+  "id": "1784712351781_h21qxkfo",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# PrivateGPT：面向本地模型的开源 AI 应用 API 层\n\nPrivateGPT 是一个经过生产验证的开源 API 层，用于把本地大模型进一步封装成可用的私有 AI 应用。它不负责运行模型，而是连接 Ollama、llama.cpp、vLLM 等推理服务，提供 RAG、文档处理、工具调用、数据库访问、MCP 等上层能力。\n\n## 1. 项目定位：连接本地模型与实际应用\n\n仅在本地运行大模型，并不足以构建完整的 AI 产品。PrivateGPT 提供一套遵循 **Claude API 设计模式**的标准化后端能力，让开发者不必重复开发消息处理、知识检索和工具调用等基础组件，也无需依赖云端 API。\n\n整体架构可理解为：\n\n```text\n应用 / Agent / 工作流 / UI\n          ↓\n     PrivateGPT API\n          ↓\nOpenAI 兼容推理服务\n（Ollama、llama.cpp、vLLM 等）\n```\n\n- PrivateGPT 通过 `OPENAI_API_BASE` 连接推理服务。\n- 只要服务支持 `/v1/chat/completions` 和 `/v1/models`，通常就能接入。\n- 项目已用于 Zylon 的企业本地部署平台，具备实际生产应用基础。\n\n## 2. 核心能力\n\nPrivateGPT 提供构建私有 AI 应用所需的主要模块：\n\n- **消息 API**：支持流式输出、异步处理和 Token 统计。\n- **知识与 RAG**：支持文件、PDF及其他文档导入，提供带引用来源的检索和智能体式 RAG。\n- **工具调用**：\n  - 内置网页搜索、网页抓取和代码执行；\n  - 支持自定义工具；\n  - 支持 MCP 连接器和远程 MCP 服务。\n- **数据分析**：\n  - 结构化查询数据库；\n  - 分析 CSV 和表格数据；\n  - 支持 Text-to-SQL 等场景。\n- **模型能力**：支持结构化输出、扩展思考和视觉模型，但具体效果取决于底层推理模型。\n- **认证能力**：支持基于 Token 的认证。\n\n## 3. 快速开始\n\n### 前置条件\n\n需要先运行一个兼容 OpenAI API 的大模型服务，官方建议初次使用者选择 Ollama。\n\n示例模型：\n\n```bash\nollama pull qwen3.5:35b        # 大语言模型，约 24 GB\nollama pull mxbai-embed-large  # Embedding 模型，约 670 MB\nollama serve\n```\n\n### 安装 PrivateGPT\n\nmacOS：\n\n```bash\nbrew tap zylon-ai/tap\nbrew install private-gpt\n```\n\nLinux 或 Windows 可通过 `uv` 安装 Python 3.11 版本的 `private-gpt[core]`。\n\n### 配置并启动\n\n```bash\nOPENAI_API_BASE=http://localhost:<llm-port>/v1 \\\nOPENAI_EMBEDDING_API_BASE=http://localhost:<embedding-port>/v1 \\\nprivate-gpt serve\n```\n\n启动后：\n\n- API 地址：`http://localhost:8080`\n- 内置 UI：`http://localhost:8080/ui`\n- API 规范主要遵循 Anthropic Claude API。\n\n## 4. 内置 Workbench UI\n\nPrivateGPT 自带一个用于测试和演示的工作台界面，可用于：\n\n- 发送消息；\n- 从 `/v1/models` 中选择模型；\n- 上传文档；\n- 测试带引用的知识检索；\n- 为每次对话启用不同工具；\n- 配置数据库、MCP 连接器、技能和自定义工具；\n- 通过 API Debugger 检查请求与响应。\n\n该 UI 只是演示和调试工具，**API 才是项目的核心产品**。不过，它也足以用于产品演示、内部试点和简单的本地使用。\n\n## 5. 与现有工具的集成\n\nPrivateGPT 可以作为开发者和终端用户工具的本地 AI 后端，例如：\n\n| 集成工具 | 主要用途 |\n|---|---|\n| Claude Code | 用本地模型完成终端中的智能编程 |\n| Claude Desktop / Cowork | 将 Claude 桌面端连接到私有模型 |\n| Microsoft 365 | 在 Word、Excel、Outlook、PowerPoint 中使用私有 AI |\n| OpenCode | 本地终端 AI 编程助手 |\n| n8n | 自动化 AI 工作流 |\n| VS Code、Cline | 本地模型辅助开发 |\n\n原则上，任何能够连接本地 OpenAI 兼容服务的工具，都可以尝试与 PrivateGPT 配合使用。\n\n## 6. 与 Claude API 的能力对比\n\nPrivateGPT 以 Claude API 为现代 AI 应用接口的参考，希望在适合本地开源环境的部分实现尽可能完整的覆盖。\n\n### 已支持\n\n- 模型选择；\n- 消息、流式消息、异步处理和 Token 统计；\n- 文件与 PDF 导入；\n- Embedding、检索和引用；\n- 流式工具调用；\n- 网页搜索与内容抓取；\n- 自定义工具；\n- 数据库查询及 CSV 分析；\n- MCP 与远程 MCP 服务；\n- 结构化输出；\n- 扩展思考；\n- Token 认证。\n\n### 部分支持或依赖底层模型\n\n- **Skills**：目前为基础支持，仍在完善。\n- **视觉能力**：取决于所连接的模型。\n- **结构化输出**：取决于推理服务及模型实现。\n\n### 暂不支持\n\n- Prompt caching；\n- OAuth 和组织级管理。\n\n项目特别欢迎社区对尚未完整支持的能力进行贡献。\n\n## 7. 项目演进\n\nPrivateGPT 最早于 **2023 年**以概念验证项目出现，当时只是一个能让用户完全离线与本地文档对话的脚本，数据无需离开设备。\n\n该版本迅速走红：\n\n- GitHub Star 超过 **5 万**；\n- 成为当年最受关注的 AI 项目之一。\n\n这证明了用户对无云端依赖、可本地运行的私有 AI 有强烈需求。此后的 **PrivateGPT 1.0** 被重新设计为完整的应用 API 层，不再只是“文档聊天工具”。\n\n## 8. 与本地推理服务及自托管应用的区别\n\n### 与 Ollama、vLLM 等的区别\n\nOllama、LM Studio、LocalAI、vLLM 和 llama.cpp 主要回答：\n\n> 如何在本地运行和提供一个模型？\n\nPrivateGPT 回答的是：\n\n> 如何基于这个模型构建真正可用的 AI 应用？\n\n```text\nOllama / vLLM / llama.cpp 等 = 本地推理层\nPrivateGPT                  = 本地 AI 应用 API 层\n```\n\n二者不是替代关系，而是组合使用：先用推理服务运行模型，再让 PrivateGPT 连接该服务。\n\n### 与 Onyx、Open WebUI 的区别\n\n- Onyx、Open WebUI 更偏向面向用户的聊天或企业搜索产品；\n- PrivateGPT 坚持 **API-first**，用于搭建此类自托管应用的后端，而不是最终用户产品。\n\n## 9. PrivateGPT 与 Zylon 的关系\n\nPrivateGPT 由 Zylon 团队维护，两者面向不同需求：\n\n### PrivateGPT\n\n适合需要开源本地 AI API 的开发者，提供：\n\n- 消息与文件导入；\n- RAG、检索和引用；\n- 数据库及表格分析；\n- MCP、Skills 和自定义工具。\n\n### Zylon\n\n是在 PrivateGPT 之上的完整企业级 AI 基础设施，额外包括：\n\n- 基于 NVIDIA Triton 与 vLLM 的推理服务；\n- 并发、批处理和负载均衡；\n- 包含 **20 多个生产服务**的 Kubernetes 部署；\n- 安装、升级及模型配置 CLI；\n- API 网关和治理平台；\n- LDAP/Active Directory 与 RBAC；\n- 可观测性、监控和 SIEM 审计日志；\n- SharePoint、Confluence、FTP、Samba 等连接器；\n- 完全离线、隔离网络环境运行；\n- 集成 n8n Community Edition；\n- 面向非技术用户的工作区应用。\n\n简而言之：\n\n- 需要开源、本地化的 AI 应用 API：选择 **PrivateGPT**。\n- 需要部署、治理、运维、审计和企业支持：选择 **Zylon**。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784712351781,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:549123f9b2e1fd2a56286b55205c1b95a809a44ccc96e1b2fd31350be46f84fc",
+  "refs": {
+    "sessionId": "1784108360225_usdh88qt"
+  },
+  "revisionId": "sha256:5dc404076533fa7d0cddc297c282341078360b668f7325278b0abea0880a8228",
+  "schemaVersion": 1,
+  "updatedAt": 1784712351781
+}

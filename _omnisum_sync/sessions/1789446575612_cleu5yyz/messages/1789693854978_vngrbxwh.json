@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693854978,
+  "entityType": "message",
+  "id": "1789693854978_vngrbxwh",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nAI 自动化的关键不在于堆更多 Agent 和工作流，而在于先判断事情是否值得做，并及时淘汰无效系统，避免自己沦为 AI 的全天候运维。\n\n## 关键内容\n\n- 作者曾把 AI 用于加密研究、链上监控、预测市场、内容生产等，让个人能同时推进大量任务；其中部分系统确实发现了早期机会或带来收益，但这是作者的个人经验。\n- 自动化越多，维护成本也越高：修通知和数据源、清理重复信息、同步状态、检查 Agent 是否遗漏，反而可能让人更忙。\n- 作者把原则从“重复三次就自动化”改为“先判断是否值得存在，再自动化”。工作流至少应做到一项：更接近赚钱、明显省时，或显著改善关键决策。\n- 自动化系统也要定期淘汰；长期没有有效产出、没有节省时间或提升结果质量，就应降级、合并或关闭。\n\n## 通俗解读\n\n自动化不等于免费劳动力，更像雇了一批需要管理的助手：如果任务本身不重要，做得再快也只是高效浪费时间。文章值得 AI 重度用户细读，核心提醒很实用；但没有量化数据或具体淘汰标准，主要是一篇经验反思。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693854978,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:fbb68e30d8a102b5f75ea583075566259e56c63c3c175ea2c4c55b716ed5bd71",
+  "refs": {
+    "sessionId": "1789446575612_cleu5yyz"
+  },
+  "revisionId": "sha256:8f079ffaa3fbcb1319814f6268b8c28026e9aa44155c16644f4ade00e8d7d650",
+  "schemaVersion": 1,
+  "updatedAt": 1789693854978
+}

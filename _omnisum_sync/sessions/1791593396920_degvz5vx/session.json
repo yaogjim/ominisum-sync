@@ -1,0 +1,60 @@
+{
+  "createdAt": 1791593396920,
+  "entityType": "session",
+  "id": "1791593396920_degvz5vx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "classifiedAt": 1791594596217,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "低成本工具支持个人机器人制作",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "文中机械手采用舵机牵引肌腱的驱动方式，Arduino参与控制，实现手指张开与握紧。"
+    ],
+    "oneHighValuePoint": "最值得保留的是机械手的具体实现思路：用Arduino控制舵机，通过牵引肌腱带动3D打印手指运动。",
+    "oneLineReview": "有低成本机器人原型的启发，但缺乏可复现细节和可靠验证，尚不足以作为技术学习或项目决策资料。",
+    "primaryCategory": "机器人创客实践",
+    "rating": "D",
+    "rejectReason": "主要是对个人创客的赞叹，缺少设计文件、控制代码、成本和测试结果；热门回复主题分散，不能补足正文的证据与方法。",
+    "retentionDecision": "不纳入长期知识库，有机器人原型需求时再查看原始演示",
+    "secondaryCategories": [
+      "硬件原型开发"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "帖子赞叹个人创客借助3D打印机、Arduino及每周构建项目的坚持制作机器人，并提到用舵机牵引肌腱的打印机械手。内容以演示链接和鼓励性评价为主，未提供制作流程，附带回复多与主案例缺乏明确联系。",
+    "tags": [
+      "3D打印",
+      "Arduino",
+      "机器人手",
+      "舵机驱动",
+      "个人创客"
+    ],
+    "title": "Praveen Kumar Verma: That is pure maker energy",
+    "totalScore": 35,
+    "url": "https://x.com/Alacritic_Super/status/2107881151558008937"
+  },
+  "payloadHash": "sha256:e5bfd4fe797f0ca3502749e09e4c34a1fc239a3cef2d16460e33073282bfee37",
+  "refs": {},
+  "revisionId": "sha256:d06a58232d5ab9c8cb3466e0404950b8aafa3c831a1a60c8d2fef8bd33df516f",
+  "schemaVersion": 1,
+  "updatedAt": 1791594596252
+}

@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789458098803,
+  "entityType": "session",
+  "id": "1789458098803_2uyrlupn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "采购前核验设备ID、显存厂商、板卡编号及对应解锁项目的兼容记录。",
+      "将候选卡进行显存压力、长时间推理、并发吞吐和冷启动稳定性测试。",
+      "按总拥有成本与有质保的消费级或专业卡比较，避免将未经验证的解锁卡作为生产主力。"
+    ],
+    "archiveReason": "",
+    "byline": "huangserva",
+    "classifiedAt": 1789642349974,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "CMP矿卡解锁大显存的收益与风险",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSI_2_gbUAAMPYN?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSI_2_gbUAAMPYN?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "按文中分析，访存受限的LLM推理可能更能利用HBM2e的大容量和高带宽，而视频生成对FP8等低精度硬件支持更敏感。",
+      "解锁后的可用容量和稳定性可能受显存厂商、设备ID、板卡批次及芯片筛选质量影响，不能只看标称容量。",
+      "非官方解锁硬件的采购价值应同时评估驱动兼容、故障率、维修能力、功耗和替代产品质保，而非只比较显存单价。"
+    ],
+    "oneHighValuePoint": "文章将适用场景限定为访存受限的LLM推理，并明确指出缺少FP8、驱动受限和高故障率可能抵消大显存优势。",
+    "oneLineReview": "技术细节和风险清单具有参考性，但关键解锁、价格与性能结论缺少可核验来源，不宜据此直接采购。",
+    "primaryCategory": "AI硬件与模型部署",
+    "rating": "B",
+    "rejectReason": "核心解锁原理、价格变化和性能数据缺少直接来源与可复核证据，且驱动兼容性和市场价格信息时效性较强。",
+    "retentionDecision": "选择性浏览，核验论文、开源工具和实测来源后再决定是否保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "GPU安全与解锁",
+      "二手硬件采购决策"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章声称可利用安全协处理器漏洞，以纯软件方式解除CMP 170HX的显存、算力和PCIe限制，并结合推理实测、版本差异、价格变化与故障风险，判断其仅适合能承受折腾和报废风险的特定LLM推理场景。",
+    "tags": [
+      "CMP 170HX",
+      "GA100",
+      "HBM2e",
+      "大模型推理",
+      "显存解锁"
+    ],
+    "title": "一张废物矿渣卡，价格涨了几十倍：不用改硬件，8GB 显存解锁到 64GB。挖矿的卡，怎么跑上了大模型？",
+    "totalScore": 64,
+    "url": "https://x.com/servasyy_ai/status/2099650691405094937"
+  },
+  "payloadHash": "sha256:0b4aa24e3f6b91b5d424d77490601ca7119ca55540af8b5b06c9e874d780e238",
+  "refs": {},
+  "revisionId": "sha256:3f16ea8d66f1518b6f8ebbf3592e4ac806e9f5538b20af958c5bd116b267d0f8",
+  "schemaVersion": 1,
+  "updatedAt": 1789727761110
+}

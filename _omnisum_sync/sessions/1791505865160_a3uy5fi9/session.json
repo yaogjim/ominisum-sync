@@ -1,0 +1,52 @@
+{
+  "createdAt": 1791505865160,
+  "entityType": "session",
+  "id": "1791505865160_a3uy5fi9",
+  "parentRevisionIds": [],
+  "payload": {
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/acf82689cddbe3e257f07ea0107096be572f322256d27f0fec69ae8a49d5c95e/router-for-me/EasyCLIProxyAPI/releases/tag/v0.3.27",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/acf82689cddbe3e257f07ea0107096be572f322256d27f0fec69ae8a49d5c95e/router-for-me/EasyCLIProxyAPI/releases/tag/v0.3.27",
+        "width": 0
+      }
+    ],
+    "published": "2026-09-07T10:47:31Z",
+    "rating": null,
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "DiscussionForumPosting",
+        "articleBody": "### Summary\n\nSince v0.2.59 the GUI talks to the core's management API via the configured **Listen IP** instead of always using `127.0.0.1`. When the Listen IP is a concrete non-loopback address (e.g. `192.168.1.10`), the core sees the GUI as a *remote* client and rejects every management call with `403 remote management disabled`. Usage statistics, auth-file listing, OAuth login (Codex, Claude, …) and API-key management all stop working. Only `0.0.0.0` works for LAN access, but nothing in the UI tells the user that.\n\n### Environment\n\n- EasyCLIProxyAPI v0.2.76 (portable build), Windows 11\n- CLIProxyAPI core 7.2.152\n- Worked fine up to v0.2.58\n\n### Steps to reproduce\n\n1. Settings → Network → **Listen IP**: enter the machine's own LAN address (e.g. `192.168.1.10`), keep port `8317`, save. The core restarts and listens on `192.168.1.10:8317`.\n2. Open the **Usage** page, or go to OAuth and click **Start** for Codex/Claude.\n3. Every management request fails with `403 remote management disabled`.\n\nCore log (`main.log`):\n\n```\n[debug] [server.go:302] Starting API server on 192.168.1.10:8317\n[warn ] [gin_logger.go:95] 403 | 192.168.1.10 | GET \"/v0/management/usage-queue?count=500\"\n[warn ] [gin_logger.go:95] 403 | 192.168.1.10 | GET \"/v0/management/auth-files\"\n[warn ] [gin_logger.go:95] 403 | 192.168.1.10 | GET \"/v0/management/codex-auth-url\"\n```\n\n### Expected behaviour\n\nEither the GUI keeps working with a concrete Listen IP, or the UI makes clear that LAN access must be configured via `0.0.0.0` (or automatically writes the required core setting).\n\n### Root cause\n\n**Core side** (`internal/api/handlers/management/handler.go`, unchanged upstream behaviour):\n\n```go\nclientIP := c.ClientIP()\nlocalClient := clientIP == \"127.0.0.1\" || clientIP == \"::1\"\n...\nif !localClient && !allowRemote {\n    return false, http.StatusForbidden, \"remote management disabled\"\n}\n```\n\n`allowRemote` comes from `remote-management.allow-remote` in `config.yaml`, default `false`.\n\n**GUI side** (regression introduced in commit `2b9ceb1`, \"Dev (#164)\", shipped in v0.2.59, together with the new free-text Listen IP field):\n\n- `src-tauri/src/management_api.rs` → `management_endpoint()` used to hard-code `http://127.0.0.1:{port}/v0/management/...`. It now builds the URL with `core_origin(&config.host, …)`.\n- `src-tauri/src/core_config/settings.rs` → `core_connect_host()` only maps `\"\"`/`0.0.0.0` → `127.0.0.1` and `::` → `::1`. A concrete IP is passed through unchanged.\n- The GUI therefore connects to `http://192.168.1.10:8317/...`. A TCP connection to your own LAN IP has that LAN IP as its source address, so the core sees `clientIP == 192.168.1.10`, not loopback → 403.\n- The GUI never writes `remote-management.allow-remote` (it only manages `secret-key`), so the resulting configuration is self-contradictory: the core is only reachable via the LAN IP, but refuses management from exactly that address.\n\nBefore v0.2.59 the only option was the \"Allow LAN\" toggle, which sets `host: 0.0.0.0`. The core then binds all interfaces, the GUI keeps talking to `127.0.0.1`, and remote clients use the LAN IP. That still works today; only a concrete IP breaks.\n\n### Workarounds\n\n- Use `0.0.0.0` as Listen IP instead of a specific address (recommended, no security change).\n- Or, if a specific bind address is required, add manually to `cpa-core/config.yaml`:\n\n```yaml\nremote-management:\n  allow-remote: true\n```\n\nNote: this exposes the management API on the LAN, protected only by the secret key.\n\n### Suggested fixes (pick one)\n\n1. **Document / hint in the UI**: next to the Listen IP field explain that LAN access should use `0.0.0.0`, and that a concrete non-loopback IP requires `remote-management.allow-remote: true`. Show a warning when such an IP is entered.\n2. **Auto-configure**: in `save_network_endpoint_settings` (`src-tauri/src/core_config/commands.rs`), when the host is a concrete non-loopback, non-wildcard IP, write `remote-management.allow-remote: true` (and back to `false` when switching back to loopback), with a confirmation dialog since it changes the security posture.\n3. **Restrict input**: only offer `127.0.0.1` / `0.0.0.0` (and IPv6 equivalents) in the Listen IP field and drop support for concrete IPs.",
+        "author": {
+          "@type": "Person",
+          "name": "OMSKremer",
+          "url": "https://github.com/OMSKremer"
+        },
+        "datePublished": "2026-09-07T10:47:31Z",
+        "headline": "Binding the core to a specific LAN IP breaks all management features with 403 \"remote management disabled\" (regression since v0.2.59)",
+        "url": "https://github.com/router-for-me/EasyCLIProxyAPI/issues/229"
+      }
+    ],
+    "schemaAuthor": "OMSKremer",
+    "schemaTypes": [
+      "DiscussionForumPosting"
+    ],
+    "title": "Binding the core to a specific LAN IP breaks all management features with 403 \"remote management disabled\" (regression since v0.2.59) · Issue #229 · router-for-me/EasyCLIProxyAPI",
+    "url": "https://github.com/router-for-me/EasyCLIProxyAPI/issues/229"
+  },
+  "payloadHash": "sha256:f7492c00ba2947ee34b7260e464d5c58eed6c306292b80468e66c0df253f909f",
+  "refs": {},
+  "revisionId": "sha256:3c3a526881df9b7513f045f6db8f18965beb13604433a5f312a1402ee9f21be1",
+  "schemaVersion": 1,
+  "updatedAt": 1791505936047
+}

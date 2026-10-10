@@ -1,0 +1,20 @@
+{
+  "createdAt": 1783418253744,
+  "entityType": "message",
+  "id": "1783418283872_05trw9rl",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# LazyCodex 项目总结\n\n## 一句话概括\n\nLazyCodex 是一个面向复杂代码库的 Codex Agent 工作流套件，目标是把 Codex 从“聊天式写代码工具”升级为具备项目记忆、规划、执行、审查和验证闭环的 AI 开发团队。\n\n官网：<https://lazycodex.ai>  \nGitHub：<https://github.com/code-yeongyu/lazycodex>\n\n---\n\n## 它解决什么问题？\n\n在大型代码库中，AI 编程常见问题包括：\n\n- 不理解项目结构和上下文\n- 只会局部修改，缺少完整计划\n- 执行过程不可持续，容易半途而废\n- 结果缺少验证，只给“看起来完成”的反馈\n- 多 Agent、多模型、工具链配置复杂\n\nLazyCodex 试图通过一套预设好的 Agent Harness，把这些能力标准化、自动化。\n\n---\n\n## 核心定位\n\nLazyCodex 本质上是 OmO（oh-my-openagent）在 Codex 上的发行版。\n\n可以理解为：\n\n> LazyVim 让 Neovim 更易用，LazyCodex 让 Codex 更适合复杂工程项目。\n\n它不是单一代码生成工具，而是一套围绕 Codex 的 Agent 编排系统，包含：\n\n- 项目记忆\n- 任务规划\n- 多 Agent 协作\n- 自动执行\n- 代码审查\n- 验证完成\n- 模型路由\n- Hooks 生命周期管理\n- 诊断与健康检查\n\n---\n\n## 关键能力\n\n### 1. 项目记忆\n\n通过 `$init-deep` 生成分层的 `AGENTS.md`，为复杂目录建立本地上下文说明。\n\n适合用于：\n\n- 大型仓库初始化\n- 新 Agent 理解项目结构\n- 代码结构发生变化后的上下文更新\n\n---\n\n### 2. 规划与执行分离\n\nLazyCodex 强调先规划、再执行。\n\n常用命令包括：\n\n| 命令 | 作用 |\n|---|---|\n| `$ulw-plan` | 生成实施计划，写入 `plans/<slug>.md`，不直接改代码 |\n| `$start-work` | 按计划执行，直到清单完成 |\n| `$ulw-loop` | 针对开放任务持续推进，直到有证据验证完成 |\n| `$init-deep` | 生成项目级上下文记忆 |\n\n这种设计降低了 AI 直接改代码带来的不确定性。\n\n---\n\n### 3. 多 Agent 协作\n\nLazyCodex 会安装多个可选 Agent 角色，例如：\n\n- explorer：探索代码库\n- librarian：整理信息与上下文\n- plan：制定计划\n- momus / metis：审查、判断与辅助决策\n- codex-ultrawork-reviewer：深度工作审查\n\n这些角色可以通过 Codex 的 `spawn_agent` 工具调用，实现类似“AI 开发团队”的协作模式。\n\n---\n\n### 4. 验证式完成\n\nLazyCodex 的重点不是“AI 说完成”，而是强调：\n\n> 通过证据验证任务是否真的完成。\n\n例如 `$ulw-loop` 会循环执行任务，直到 Oracle 验证完成，而不是仅停留在主观状态汇报。\n\n---\n\n### 5. 多模型路由\n\nOmO 会根据任务类型选择不同模型：\n\n- 简单任务使用更快、更便宜的模型\n- 复杂推理任务使用高推理模型\n- Agentic coding 使用 Codex 优化模型\n\n其目标是提升效率，同时控制高阶模型的消耗。\n\n---\n\n## 安装与使用\n\n### 推荐安装方式\n\n```bash\nnpx lazycodex-ai install\n```\n\n无需全局安装 npm 包。\n\n### 全自动模式\n\n```bash\nnpx lazycodex-ai install --no-tui --codex-autonomous\n```\n\n### 健康检查\n\n```bash\nnpx lazycodex-ai doctor\n```\n\n会检查插件缓存、Hooks、MCP 服务、Agent、配置状态等。\n\n### 卸载\n\n```bash\nnpx lazycodex-ai uninstall\n```\n\n会移除插件缓存、命令链接、Agent 角色和托管配置。\n\n---\n\n## 技术架构\n\nLazyCodex 是一个较薄的发行层，核心能力来自 OmO。\n\n项目结构大致包括：\n\n- `src/`：OmO 子模块\n- `packages/web/`：官网，基于 Next.js 15、Tailwind v4\n- `.github/workflows/`：CI/CD\n- Codex 插件、Hooks、Agent 配置与命令封装\n\n官网部署在 Cloudflare Workers 上。\n\n---\n\n## 产品价值判断\n\nLazyCodex 的核心价值是把 Codex 从“单点代码助手”变成“可编排、可验证、可持续执行”的工程协作系统。\n\n适合人群包括：\n\n- 维护复杂代码库的开发团队\n- 希望用 AI 执行长期任务的工程师\n- 想把 Codex 工作流标准化的技术团队\n- 需要多 Agent 协作、自动审查和任务闭环的 AI 编程用户\n\n---\n\n## 需要注意的点\n\n- 项目依赖 Codex 与 OmO 生态，适合已经使用 Codex 的用户。\n- Marketplace 安装路径仍是实验性方式，官方推荐 `npx` 安装。\n- 自动化和 Hooks 需要用户审批后才会运行。\n- 多 Agent 和多模型路由虽然强大，但也意味着使用成本、权限和行为可控性需要关注。\n\n---\n\n## 总结\n\nLazyCodex 是一个面向复杂软件工程场景的 Codex 增强套件。它通过项目记忆、计划生成、多 Agent 执行、模型路由和验证闭环，让 AI 编程从“临时生成代码”走向“系统化完成任务”。\n\n如果说普通 Codex 更像一个聪明的编码助手，LazyCodex 则试图把它包装成一个能理解项目、制定计划、分工执行并验证结果的 AI 工程团队。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1783418253744,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5bc93edbb283f14baece7e94e3c97a60f49fcd456d3816955cca636c27f47842",
+  "refs": {
+    "sessionId": "1783418283607_6tjmq8i0"
+  },
+  "revisionId": "sha256:0867e5fe605ef4f158bb6c0bddee8f34ed95689f0e6bee386fe0deb99355b170",
+  "schemaVersion": 1,
+  "updatedAt": 1783418253744
+}

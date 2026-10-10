@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789705353696,
+  "entityType": "session",
+  "id": "1789705353696_i1h5oxbn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "针对遗留系统迁移、测试生成或漏洞修复选择一个低风险任务开展编码智能体试点。",
+      "试点时记录交付周期、人工复核时间、缺陷率和总成本，验证实际生产率提升幅度。",
+      "在采用文中数据前核验案例来源、统计口径及人工参与程度。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1789705386156,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "编码智能体加速软件吞噬世界",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "文章提出工程师角色可能从直接编写代码转向设计系统、拆解任务、协调和验收智能体产出。",
+      "文中将遗留系统迁移、测试生成和漏洞修复列为编码智能体较明确的企业级应用场景。",
+      "自动化是否减少工程师需求取决于成本下降后新增的软件需求能否抵消单项任务所需人力的下降。"
+    ],
+    "oneHighValuePoint": "最值得保留的判断是：软件生产成本下降不仅提高现有开发效率，还可能使过去不经济的软件需求变得可行，从而扩大软件市场。",
+    "oneLineReview": "方向判断与AI编程高度相关，但论证偏乐观且证据主要来自利益相关方，不宜直接采信。",
+    "primaryCategory": "AI编程工具",
+    "rating": "C",
+    "rejectReason": "核心论点与案例具有相关性，但文章主要是投资方宣传，缺少独立数据、适用条件、成本分析和可复用实施方法。",
+    "retentionDecision": "低优先级速览，相关案例需经独立核验后再用于决策",
+    "secondaryCategories": [
+      "软件工程",
+      "创业与投资"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章借Devin在代码生成、遗留系统迁移、测试和漏洞修复中的案例，主张编码智能体将大幅降低软件生产成本、放大工程师产能并加速各行业发展，但整体带有明显投资宣传性质。",
+    "tags": [
+      "编码智能体",
+      "Devin",
+      "软件工程自动化",
+      "AI编程",
+      "开发生产力"
+    ],
+    "title": "软件即将以快得多的速度吞噬世界",
+    "totalScore": 54,
+    "url": "https://x.com/pmarca/status/2097762851788398971"
+  },
+  "payloadHash": "sha256:69d75811cdaef783f582f60eaa0f91596232cfa0e1cf6950d986d4bff8cdfc1a",
+  "refs": {},
+  "revisionId": "sha256:414cccf984ef72bd825befebdf44f5bb9c3566bbb2d42846d9aaeef705504371",
+  "schemaVersion": 1,
+  "updatedAt": 1789705386207
+}

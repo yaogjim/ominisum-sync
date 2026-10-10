@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728568153,
+  "entityType": "message",
+  "id": "1789728568153_yyq5cazw",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 福特召回 350 名资深工程师：AI 更适合放大经验，而非直接替代专家\n\n文章以福特的质量改进为例指出：AI 质检并未如预期独立产出高质量结果，公司因此重新聘请 350 名退休、离职或来自供应商的资深工程师，让他们排查设计隐患、培养新人并训练 AI。核心问题不是 AI 无用，而是自动化系统缺少老师傅积累的判断标准和隐性经验。\n\n## 老工程师提前发现 AI 漏掉的问题\n\n福特管理层承认，过去误以为输入设计要求后，AI 就能保证产品质量。资深工程师回归后，能在零件进入产线前识别潜在故障，并告诉 AI 什么是合格零件、哪些设计容易埋雷。\n\n据文章所述，福特随后时隔 16 年重回 JD Power 新车质量榜主流品牌第一，从上年第 10 名升至榜首；F-150、Super Duty 和 Mustang 也取得各自品类第一。CEO Jim Farley 预计，质保与召回成本下降可在当年节省约 10 亿美元。\n\n## 福特没有放弃 AI，而是转向人机协作\n\n福特仍在扩大 AI 测试，并新增约 10 万项评估以覆盖更多路况。变化在于：不再把 AI 当成专家替代品，而是利用专家知识改善数据、规则和判断能力。\n\n文章还列举 Klarna 恢复招聘人工客服、麦当劳撤下部分 AI 点餐系统等案例，说明在复杂服务和物理世界中，全面自动化容易低估质量要求与隐性知识。更现实的路径是先由人类专家校准 AI，再让 AI 承担规模化、重复性的工作。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728568153,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:af943f691b3f48c4b888155c6d559f45e146a0ac9cee1d10de3ffc3fbb781410",
+  "refs": {
+    "sessionId": "1782991018948_2d6kq2mb"
+  },
+  "revisionId": "sha256:b2e8b991881b2fbb776fd7a451d0033860e7c14d19b18185525c717619c41380",
+  "schemaVersion": 1,
+  "updatedAt": 1789728568153
+}

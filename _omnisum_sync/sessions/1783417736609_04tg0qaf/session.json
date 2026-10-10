@@ -1,0 +1,87 @@
+{
+  "createdAt": 1783417736609,
+  "entityType": "session",
+  "id": "1783417736609_04tg0qaf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在项目根目录创建 CLAUDE.md 或 AGENTS.md，写入项目说明、技术栈和 1-3 条关键约束。",
+      "让 AI 扫描代码库并补充常用命令、项目结构、测试方式和代码风格，再人工 review。",
+      "为下一个新功能按目标、约束、边界、验收标准、技术上下文五要素写一页 Spec。",
+      "在使用 Claude Code、Cursor 或 Copilot 前先进行计划审查，确认文档层对齐后再执行代码修改。"
+    ],
+    "archiveReason": "包含可复用的 Spec 五要素框架和可直接落地的 CLAUDE.md/AGENTS.md 起步方法，适合作为 AI 编程协作规范参考。",
+    "byline": "SagaSu",
+    "classifiedAt": 1783418670870,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI编码Spec五要素指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 320,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMhk1RBa0AAoo6h?format=jpg&name=900x900",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HMhk1RBa0AAoo6h?format=jpg&name=900x900",
+        "width": 800
+      }
+    ],
+    "knowledgePoints": [
+      "高质量 Spec 应包含目标、约束、边界、验收标准和技术上下文五个核心要素。",
+      "Spec 不是 PRD、技术设计文档或用户故事，而是面向执行的软件行为约束与验证标准。",
+      "明确“不做什么”可以防止 AI Agent 基于训练数据自行扩展功能范围。",
+      "验收标准应尽量可测试，使 Agent 能通过测试、截图对比或 lint 结果自我验证。",
+      "CLAUDE.md 或 AGENTS.md 可作为项目级长期记忆，承载技术栈、命令、结构和关键约束。"
+    ],
+    "oneHighValuePoint": "把 Spec 定义为 AI Agent 的执行协议，强调约束、边界和验收标准比单纯描述需求更重要。",
+    "oneLineReview": "方法论清晰且可操作性强，但引用和案例的证据强度一般，部分内容有较明显的二次综合或 AI 生成痕迹。",
+    "primaryCategory": "AI辅助软件工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "规范驱动开发",
+      "工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章区分 Spec 与 PRD、技术设计和用户故事，提出目标、约束、边界、验收标准、技术上下文五要素，并给出从三行 CLAUDE.md 开始的实践路径。",
+    "tags": [
+      "Spec",
+      "AI Agent",
+      "Claude Code",
+      "规范驱动开发",
+      "软件工程"
+    ],
+    "title": "#5 写好一份 Spec 的实战手册",
+    "totalScore": 74.5,
+    "url": "https://x.com/sujingshen/status/2074018520988557378"
+  },
+  "payloadHash": "sha256:166e66b21647192baef548a3d5d4e15b72b5869275079be1ff44b34be0be46be",
+  "refs": {},
+  "revisionId": "sha256:75d69c7f595cadc9c881d61ec528bc44459e88b7cd0322a5ad7b8207146d0569",
+  "schemaVersion": 1,
+  "updatedAt": 1789695785698
+}

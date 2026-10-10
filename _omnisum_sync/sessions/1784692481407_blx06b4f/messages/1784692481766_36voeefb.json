@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784692314542,
+  "entityType": "message",
+  "id": "1784692481766_36voeefb",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# BaoCut：面向 Agent 的字幕转录、翻译与辅助剪辑工具\n\nBaoCut 是一款**仅支持 Mac** 的 Agent Skill，通过命令行工具与图形界面配合，让 Codex、Claude Code 等 Agent 完成视频转录、字幕润色与翻译，并支持人工预览和二次编辑。它的定位不是独立的视频编辑 Agent，而是**帮助现有 Agent 进行视频处理的辅助 Skill**。\n\n## 核心功能\n\nBaoCut 可围绕视频字幕完成以下任务：\n\n- **视频转录**：将视频中的语音转换为字幕。\n- **说话人识别**：识别转录内容中的不同 Speaker。\n- **字幕润色**：纠正错别字，并清理口癖、重复表达等。\n- **字幕翻译**：由 Agent 对转录结果进行翻译，质量较好。\n- **简单视频剪辑**：根据转录文本删除口癖、重复片段等内容。\n\n## 主要解决的问题\n\n以往 Agent 完成字幕转录和翻译后，用户往往缺少友好的界面来检查和修改结果。BaoCut 为 Agent 提供 CLI，并通过 Skill 告知其操作方法：\n\n1. Agent 调用 CLI 转录视频；\n2. 获取转录结果后进行润色和翻译；\n3. 将处理进度实时同步到 GUI；\n4. 用户在 GUI 中预览结果并进行人工编辑。\n\n这种方式兼顾了 Agent 自动处理的效率与人工校对的灵活性。\n\n## 使用方式\n\n安装 BaoCut Skill 和 App 后，可在 Codex 或 Claude Code 等 Agent 中触发 Skill，例如：\n\n```text\n/baocut 转录并翻译视频：<视频 URL 或本地路径>\n```\n\nSkill 可以直接从 App 内安装，也可通过 GitHub 获取。\n\n## 当前限制\n\n- **仅支持 Mac。**\n- **翻译速度略慢**，但作者表示翻译质量较好。\n- 存在系统兼容性问题的用户案例：有用户在 **macOS 15.7.3** 上下载 **1.7B Qwen 模型**后，新建转录并上传文件时崩溃。报错显示 `mlx.metallib` 面向 `macOS 26.0.0 / language version 4.0`，当前系统不支持。\n\n## 用户反馈与产品定位\n\n- 有用户分享了类似方案：使用**火山引擎语音识别接口**快速生成字幕，再用 AI 校准，并通过 **Pi 框架**调用 AI；主要用于字幕校准、翻译和烧录。\n- 作者回应称，Pi 虽然好用，但相对小众；BaoCut 的目标也并非打造完整的视频编辑 Agent，而是提供一个**辅助 Agent 编辑视频的 Skill**。\n- 另有用户表示，经常使用作者此前开发的翻译 Skill。\n\n## 下载地址\n\n- 官网：[https://baocut.app](https://baocut.app)\n- GitHub：[https://github.com/jimliu/baocut](https://github.com/jimliu/baocut)",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784692314542,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b281e4814052ed6a0e5e99c950bb9ff7bd368d7897f12343f1522d0196d73d89",
+  "refs": {
+    "sessionId": "1784692481407_blx06b4f"
+  },
+  "revisionId": "sha256:bb5d7b89d2a826d395328d7af22dfa9bf81d48379ebf9be0f1a64b6b32c1c562",
+  "schemaVersion": 1,
+  "updatedAt": 1784692314542
+}

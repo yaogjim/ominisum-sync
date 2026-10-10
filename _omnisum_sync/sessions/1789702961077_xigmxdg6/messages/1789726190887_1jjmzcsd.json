@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726190887,
+  "entityType": "message",
+  "id": "1789726190887_1jjmzcsd",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者把 Mac mini 上常驻的 Hermes 智能体打造成夫妻共享的“生活幕僚”：能记忆上下文、调用大模型和本地工具，通过聊天完成研究、提醒、购物、文件制作等任务。\n\n## 关键内容\n\n- **本地执行、云端思考**：Mac mini 保存文件、记忆、权限和工具，并操作浏览器及 Mac 应用；GPT/Codex 等远程模型负责理解、规划，日后换模型也不影响本地资料。\n- **多个入口，共用一套能力**：夫妻可经 Telegram、iPhone 客户端 Hermex、桌面端或邮件使用；系统能处理语音、文档、提醒，并把成果发送到 Google Drive 等位置。\n- **拆分专用机器人**：作者发现单一智能体容易把不同任务的上下文和权限混在一起，于是按研究、家庭事务、开发等用途拆分，分别保留历史并限制工具权限。\n- **已有实际用途**：包括维护共享待办、检索生物医学预印本、制作演示和音频、修改代码，以及根据语音完成每周购物；下单等关键操作仍需确认。\n\n## 通俗解读\n\nHermes 不是模型本身，更像“管家系统”：负责把记忆、工具、权限和模型串起来，并检查任务是否完成。文章价值主要在于展示一套可落地的个人智能体架构，但效果来自作者的个案体验；其做法涉及较高设备权限和已登录账户，虽有审批、白名单和目录限制，仍需谨慎。**想看具体搭建思路和工具组合，值得细读；只关心结论则看摘要即可。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726190887,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ea8ddea9420e4e7b42f18443e3aad9b996a13d8954406e514a8a400bb5d72473",
+  "refs": {
+    "sessionId": "1789702961077_xigmxdg6"
+  },
+  "revisionId": "sha256:3163808fbf00ed124260d08a1d97244606650887f56f96fe9168bade0d601d65",
+  "schemaVersion": 1,
+  "updatedAt": 1789726190887
+}

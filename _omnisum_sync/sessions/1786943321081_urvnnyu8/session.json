@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943321081,
+  "entityType": "session",
+  "id": "1786943321081_urvnnyu8",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在研究或Agent原型中增加生成前的上下文来源、顺序和token预览。",
+      "用显式边关系控制上下文纳入与排除，并记录每次生成对应的上下文版本。",
+      "选择一个长对话任务试用该工具，对比线性聊天与图式上下文管理的结果差异。"
+    ],
+    "archiveReason": "将节点连线直接定义为模型上下文的设计具有复用价值，可用于研究型对话、Agent工作流和AI产品交互设计。",
+    "classifiedAt": 1786943344221,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "ThoughtDAG可编辑上下文图",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "chenxiachan.github.io",
+    "favicon": "https://chenxiachan.github.io/thoughtdag/assets/favicon.svg",
+    "knowledgePoints": [
+      "LLM对话历史不等于实际发送上下文，界面应显式展示每次生成所使用的内容。",
+      "通过节点和边组织上下文，可以保留无关分支而不让其继续影响后续回答。",
+      "在问题不变时仅调整上下文并重新生成，可用于观察和复现上下文对答案的影响。"
+    ],
+    "oneHighValuePoint": "把图中的连线直接作为上下文选择协议，使模型将读取的来源、顺序和被排除内容在生成前可见、可编辑且可追溯。",
+    "oneLineReview": "上下文图即生成协议的产品视角较有启发，但当前内容偏营销展示，证据与实现细节不足。",
+    "primaryCategory": "AI产品与工具",
+    "rating": "B",
+    "rejectReason": "文章主要是产品介绍，缺少技术架构、评测数据、竞品比较和真实使用案例，难以验证实际效果。",
+    "retentionDecision": "保留其可视化上下文协议的产品思路，具体工具效果需另行验证",
+    "secondaryCategories": [
+      "产品设计",
+      "知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 ThoughtDAG：以可编辑的有向图显式控制大模型上下文，支持摘录溯源、分支排除、思路合并、生成前预览和 token 检查，并提供桌面客户端。",
+    "tags": [
+      "LLM上下文管理",
+      "可视化工作流",
+      "上下文工程",
+      "知识图谱",
+      "人机交互"
+    ],
+    "title": "ThoughtDAG — Make LLM context visible and editable",
+    "totalScore": 66,
+    "url": "https://chenxiachan.github.io/thoughtdag/?lang=zh"
+  },
+  "payloadHash": "sha256:1f6fc97c95121567b2160fdfc4a3bdfabe3ccecbc9b57b810eda2de3ad55aa9b",
+  "refs": {},
+  "revisionId": "sha256:2f1f46d1ad33a80c4457617418d012d1fed9eb25f6041502ace1444ba44bdcba",
+  "schemaVersion": 1,
+  "updatedAt": 1789728025290
+}

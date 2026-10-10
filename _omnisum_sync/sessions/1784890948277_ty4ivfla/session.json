@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784890948277,
+  "entityType": "session",
+  "id": "1784890948277_ty4ivfla",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为角色、场景和关键资产制作统一的视觉规范、多角度参考图及环境板。",
+      "在Maya、Blender或Unreal Engine中用占位几何完成动作、机位、时序和空间关系粗排。",
+      "将运动参考、角色与资产参考、环境板和风格提示共同输入支持多参考的视频模型，并逐帧检查运动与空间一致性。"
+    ],
+    "archiveReason": "提供了从资产设计、3D动作粗排到多参考神经渲染的完整流程，具有较强的方法论与迁移价值。",
+    "classifiedAt": 1784891255611,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "3D控制层驱动AI视频制作",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI视频可拆分为资产规范、3D运动编排和神经渲染三个阶段。",
+      "角色四视图、资产多角度图和环境板能为视频模型提供更一致的视觉约束。",
+      "3D占位视频可同时控制摄像机运动、角色位置、物体时序和空间关系。"
+    ],
+    "oneHighValuePoint": "将3D预演作为确定性的控制层，把机位、动作、时序和空间关系先行锁定，再让视频模型负责视觉合成，可显著减少纯提示词生成的随机性。",
+    "oneLineReview": "流程框架清晰且实践相关度高，但缺少参数、对照实验和结果指标，证据主要来自单一案例。",
+    "primaryCategory": "AI视频制作",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并存档，作为可复用的AI视频控制工作流参考",
+    "secondaryCategories": [
+      "3D动画",
+      "生成式AI工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章展示一套以3D粗排为控制层的AI视频流程：先建立角色、场景和列车参考，再在DCC中锁定动作、机位与时序，最后将多类参考输入Seedance 2.0完成神经渲染。",
+    "tags": [
+      "AI视频",
+      "3D预演",
+      "神经渲染",
+      "多模态参考",
+      "动作控制"
+    ],
+    "title": "用 3D 执导 AI 视频",
+    "totalScore": 76,
+    "url": "https://x.com/andrew_n_carr/status/2080392441711214741"
+  },
+  "payloadHash": "sha256:604beb6d8b3d99214bfe5b736ffebad23917bbcd7c2fe5748ab2645aef1193b5",
+  "refs": {},
+  "revisionId": "sha256:d81e22c1c56c1b38cd4cdd821f98e5ef4c862c65842caadab912824935b2051d",
+  "schemaVersion": 1,
+  "updatedAt": 1789696312912
+}

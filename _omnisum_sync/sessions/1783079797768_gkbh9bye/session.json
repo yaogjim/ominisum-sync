@@ -1,0 +1,71 @@
+{
+  "createdAt": 1783079797768,
+  "entityType": "session",
+  "id": "1783079797768_gkbh9bye",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审视现有系统中依赖工程师记忆、注意力或手动谨慎的高风险环节。",
+      "通过更清晰的命名、边界、测试和回滚机制降低认知负担。",
+      "在设计工具和流程时优先考虑疲惫新人、分心维护者和上下文受限AI助手的使用场景。",
+      "避免把事故简单归因于人为错误，应追问系统为何允许该错误造成严重后果。"
+    ],
+    "archiveReason": "文章提供了将认知限制、人因工程、软件架构与LLM上下文限制联系起来的高价值框架，适合作为工程设计原则参考。",
+    "classifiedAt": 1783080448560,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 8,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "面向有限认知的软件工程",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "shapeofthesystem.com",
+    "favicon": "https://shapeofthesystem.com/assets/favicon.svg",
+    "knowledgePoints": [
+      "人类工作记忆真实容量更接近约四个组块，而非流行说法中的七个。",
+      "注意力盲视与变化盲视说明，单纯依赖警告、谨慎和个人责任并不可靠。",
+      "LLM的上下文窗口与“Lost in the Middle”现象表现出类似有限注意力问题。",
+      "命名、模块边界、测试和可撤销机制本质上是在外部化认知负担。",
+      "为最受约束的用户或操作者设计，往往会提升所有人的使用体验。"
+    ],
+    "oneHighValuePoint": "好的工程不是寻找能理解全部系统的超大心智，而是塑造系统，使有限、疲惫、易分心的人和机器也能安全修改它。",
+    "oneLineReview": "一篇有证据支撑、视角清晰的工程认知边界论，偏理念但长期价值较高。",
+    "primaryCategory": "软件工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "认知科学",
+      "系统设计",
+      "AI辅助编程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章从工作记忆、注意力盲区和短时遗忘出发，说明人类与LLM都受有限认知约束，主张通过命名、边界、测试、可撤销设计等方式，把复杂性从脆弱心智转移到系统结构中。",
+    "tags": [
+      "有限认知",
+      "软件复杂性",
+      "人因工程",
+      "系统设计",
+      "LLM上下文窗口"
+    ],
+    "title": "Engineering for Bounded Cognition",
+    "totalScore": 75,
+    "url": "https://shapeofthesystem.com/posts/2026/02/03/bounded-cognition"
+  },
+  "payloadHash": "sha256:f45a8a705c481bb2b12a08c5e2513e332f7976b71e4ee1b5f7a89de68c098402",
+  "refs": {},
+  "revisionId": "sha256:a3d0dd35004c36812e103f9aedf4b44772ddc92ca1da6edd4d7f577a4fd57092",
+  "schemaVersion": 1,
+  "updatedAt": 1789695756476
+}

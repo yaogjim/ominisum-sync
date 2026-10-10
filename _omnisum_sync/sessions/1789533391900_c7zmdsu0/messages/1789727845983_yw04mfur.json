@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727845983,
+  "entityType": "message",
+  "id": "1789727845983_yw04mfur",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# AI 原生企业系统的三条落地路线\n\n文章将 AI 原生系统归纳为三种形态：替客户完成垂直业务、用 Agent 重构自身经营，以及让 Agent 调用企业已有平台。作者认为，Salesforce 代表的第三条路线迁移成本较低，是目前企业较容易落地的形态。\n\n## Corgi：直接交付完整业务结果\n\n保险理赔公司 Corgi 采用“垂直运营交付”模式，不只是提供软件，而是直接承接一宗理赔从报案到结案的全流程。AI 被嵌入实际运营，客户购买的是最终业务成果，而非单一工具。\n\n## Kavak：用 Agent 重做核心经营流程\n\n拉美二手车平台 Kavak 将 Agent 用于改造自己的获客、转化和服务流程，目标直接对应转化率、NPS、服务客户数和收入。其难点不只是部署模型，还要同步调整数据、流程、岗位分工、效果评测与运营机制，本质上是组织和经营体系的重构。\n\n## Salesforce：把存量业务能力开放给 Agent\n\nSalesforce 的路径不是推翻原有系统，而是让 Agent 在其上工作。其已有的客户数据、权限、规则、工作流和分发入口，可通过“Headless 360”以受控方式供 AI 调用，为 Agent 提供现成的业务底座。\n\n目前测试版“Salesforce in Claude”提供 37 项预置销售技能，用户可在对话中准备客户通话、审查交易、创建销售管道仪表板或生成预测。其意义在于：企业能保留既有系统与治理机制，同时增加自然语言交互和自动执行能力，降低 AI 接入业务的迁移门槛。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727845983,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6a136f55229d25b84ba2a149b1a41ab2fb0bffe9f21aeaec7117af0f95526b55",
+  "refs": {
+    "sessionId": "1789533391900_c7zmdsu0"
+  },
+  "revisionId": "sha256:7054d713cf108812b5b8334196dcdff590ad5d75deb87164e92c78e1d4258229",
+  "schemaVersion": 1,
+  "updatedAt": 1789727845983
+}

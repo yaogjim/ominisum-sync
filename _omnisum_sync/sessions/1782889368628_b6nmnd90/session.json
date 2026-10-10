@@ -1,0 +1,131 @@
+{
+  "createdAt": 1782889368628,
+  "entityType": "session",
+  "id": "1782889368628_b6nmnd90",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确有本地AI工作台需求，可下载试用并验证核心功能是否真实可用",
+      "在采用前查看安全白皮书、数据流向、权限控制和隐私承诺是否可审计"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783040190624,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 3
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "NewMax本地AI工作台介绍",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息可替代性强，缺乏方法论和独立证据，长期留存价值较低。",
+    "domain": "newmax.cc",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://niuma.limyai.com/og.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://niuma.limyai.com/og.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "NewMax 主打本地数据存储、本地文件读写和隐私保护",
+      "支持多模型接入、Skill 扩展、定时任务、浏览器自动化和长期项目管理",
+      "适用场景包括法律、医疗、财务、内容创作、数据分析和企业私有化部署"
+    ],
+    "oneHighValuePoint": "本地优先 AI 工作区将文件、模型、工具调用和自动化任务整合在同一执行环境中，适合处理敏感资料场景。",
+    "oneLineReview": "适合作为工具初步了解，不值得长期保存或精读。",
+    "primaryCategory": "AI工具与生产力",
+    "rating": "D",
+    "rejectReason": "内容主要是产品营销页，功能表述重复较多，缺少实测、技术细节、价格约束和可信证据，AI生成营销文案痕迹较重。",
+    "retentionDecision": "建议立即删除，若对该工具有采购或试用需求，可重新访问官网查看最新信息",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NewMax 采用本地优先架构，文件和任务默认在您的设备上处理，不会把个人资料主动上传到云端。"
+            },
+            "name": "数据真的不会上传吗？"
+          },
+          {
+            "@type": "Question",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "支持 PDF、Excel、PPT、Word、Markdown、TXT 等常见文档格式，以及音视频等多媒体文件。"
+            },
+            "name": "支持哪些文件格式？"
+          },
+          {
+            "@type": "Question",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以在设置中切换主流云端模型、第三方中转 API 或本地模型服务。"
+            },
+            "name": "如何更换 AI 模型？"
+          },
+          {
+            "@type": "Question",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "支持。您可以添加本地部署的模型服务，让敏感任务在本机完成。"
+            },
+            "name": "是否支持本地模型？"
+          },
+          {
+            "@type": "Question",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "个人核心功能保持免费。团队管理、企业部署等能力可按需升级。"
+            },
+            "name": "核心功能免费是真的吗？"
+          }
+        ]
+      }
+    ],
+    "schemaTypes": [
+      "FAQPage"
+    ],
+    "secondaryCategories": [
+      "本地AI工作台",
+      "自动化工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章介绍 NewMax 作为本地优先 AI 工作台，强调隐私保护、文件读写、多模型接入、Skill 自动化、浏览器操作、长期项目和定时任务等能力，但整体偏营销宣传，缺少实测和证据支撑。",
+    "tags": [
+      "本地优先",
+      "AI工作流",
+      "隐私安全",
+      "多模型路由",
+      "产品宣传"
+    ],
+    "title": "NewMax - 让时间，重新属于你。",
+    "totalScore": 36.5,
+    "url": "https://newmax.cc/#capabilities"
+  },
+  "payloadHash": "sha256:d2314688512ad70ff7a26f386ce19534334be1edf23037cbb9b3cd45a39b5493",
+  "refs": {},
+  "revisionId": "sha256:cf593b89057405b8ffae3a01d79a80ba94c16fc48ef23f8fae814b61d0883149",
+  "schemaVersion": 1,
+  "updatedAt": 1783040191044
+}

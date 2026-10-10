@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781783664448,
+  "entityType": "message",
+  "id": "1781783686449_lkp54455",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n作者认为 **Maka 很适合用来学习 Agent 工程实践**，因为它的开发过程透明，能看到一个 Agent 从简单循环走向真实产品时会遇到的核心 runtime 问题。文章重点以 DeepSeek 缓存优化为例，说明 Agent 工程并不只是“省 token”，而是涉及上下文、缓存、成本计算等复杂问题。\n\n---\n\n## 1. Maka 适合学习 Agent 的原因：开发过程透明\n\n- 作者提到，Maka 最近有一个 core dev 提了关于 **DeepSeek 缓存优化** 的 issue。\n- 整个过程非常透明：\n  - **1 个 issue**\n  - **8 个 PR**\n  - 从多个方向逐步推进优化：\n    - usage 归一化\n    - request prefix 稳定化\n    - archive 压缩历史\n\n相关项目链接：  \n[github.com/jackwener/maka-agent/issues/19](https://github.com/jackwener/maka-agent/issues/19)\n\n---\n\n## 2. 表面是省 token，实际暴露 Agent Runtime 核心问题\n\n这个优化一开始看起来像是为了节省 token 费用，但真正做起来后，会遇到很多 Agent 产品化中的关键工程问题：\n\n- **Prompt prefix 如何保持稳定**\n- **Tool schema 如何标准化 / canonicalize**\n- **历史上下文如何做预算管理**\n- **usage 和 cost 如何准确计算**\n- **cache miss 如何解释和定位**\n\n这些问题说明，Agent 的难点不只是写一个简单的 agent loop，而是要处理完整运行时系统中的各种细节。\n\n---\n\n## 3. 反直觉发现：砍历史不一定省钱\n\n作者提到一个实际测试中的反直觉结论：\n\n> 砍掉历史上下文，并不一定能省钱。\n\n具体表现是：\n\n- 原本以为删除旧 turn 可以减少 token，降低成本。\n- 但实测发现，砍掉旧 turn 后反而导致 **cache miss 增加**。\n- cache miss 增多后，总成本反而更贵。\n- 因此团队把 **滑动窗口 trim** 改回了 **opt-in**，即默认不强制开启，需要用户主动选择。\n\n这个案例说明，在 Agent runtime 中，成本优化不能只看 token 数量，还要考虑缓存命中率。\n\n---\n\n## 4. 作者的核心观点：Agent 产品化会遇到真实工程问题\n\n作者强调，这类问题是把 Agent 做成产品时必然会遇到的：\n\n- 成本控制\n- 上下文管理\n- 缓存策略\n- 工具 schema 稳定性\n- prompt 结构一致性\n- runtime 行为可解释性\n\n因此，Maka 的价值在于它展示了 Agent 工程从实验到产品化的真实过程。\n\n---\n\n## 5. 热门回复中的相关观点\n\n### 5.1 Ponytail：减少 Agent 过度写代码\n\n有回复提到 Ponytail 项目，认为它和 Codex 很适合搭配使用。\n\n核心理念是：\n\n> “The best code is the code you never wrote.”  \n> 最好的代码，是你根本不用写的代码。\n\n回复者认为，GPT 经常会在没有明确要求时写大量防御性、兜底代码，导致过度工程化。Ponytail 的思路是强制 Agent 先判断是否真的需要写新代码，从而减少不必要的代码生成。\n\n---\n\n### 5.2 Pi 可能成为 Agent 领域的 Android\n\n另一条热门回复认为：\n\n- 未来大家可能都会使用 **Pi**。\n- Pi 被类比为 **Agent 领域的 Android**。\n\n意思是它可能成为一种通用、开放或基础性的 Agent 平台。\n\n---\n\n### 5.3 Deli AutoResearch SKILL：用协议管理长周期任务\n\n还有回复提到 DeepSeek 资深研究员陈德里开源的个人项目 **Deli AutoResearch SKILL**。\n\n关键信息：\n\n- 项目以单一的 **SKILL.md 协议文件** 形式存在。\n- 本身不包含可执行代码。\n- 主要通过协议来指导 AI 处理长周期任务。\n- 涉及能力包括：\n  - 状态持久化\n  - 防死循环 Anti-Loop\n  - 心跳守护进程 Heartbeat Watchdog\n- 该项目还发布了由智能体完全自主撰写的第四篇综述论文。\n\n---\n\n## 总结\n\n这篇内容通过 Maka 的 DeepSeek 缓存优化案例，展示了 Agent 工程的真实复杂度：**不是简单减少 token 就能降低成本，缓存命中、上下文稳定性、工具 schema 标准化等都直接影响系统表现和费用**。Maka 的透明开发过程让它成为学习 Agent runtime 和产品化工程问题的一个好案例。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781783664448,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e4eac7da783a65e038435d5337d3877cdd6d41e2f31e62d1024320a1fd87f317",
+  "refs": {
+    "sessionId": "1781661079309_njwr316z"
+  },
+  "revisionId": "sha256:62587add4049a6928d190cb0acb831cc5ccb4f1190a91399e7f5be4c5fa2b275",
+  "schemaVersion": 1,
+  "updatedAt": 1781783664448
+}

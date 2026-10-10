@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943447467,
+  "entityType": "session",
+  "id": "1786943447467_ctiov4jl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估购买前检查开源固件仓库、主机USB4兼容性及可重刷条件。",
+      "针对目标模型实测USB4链路下的推理性能和传输瓶颈，不直接采用厂商算力对比结论。",
+      "区分控制与调试通道数据和显卡实际工作负载吞吐，避免误读性能指标。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1786943480581,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "Comma.ai开源固件eGPU坞",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "hwbusters.com",
+    "favicon": "https://hwbusters.com/wp-content/uploads/2022/06/cropped-LOGO-3-32x32.png",
+    "knowledgePoints": [
+      "Chestnut 采用 PCIe Gen4 x4 至 USB4 桥接设计，ASM2464PD 控制器固件已在 tinygrad 组织下开源。",
+      "其 PCIe BAR 控制通道约为写入3.6 MB/s、读取1.8 MB/s，面向调试控制而非图形数据吞吐。",
+      "USB4 下的 Gen4 x4 链路明显窄于桌面显卡常用的 x16 插槽，不能等同于完整桌面显卡性能。"
+    ],
+    "oneHighValuePoint": "Chestnut 开放了 ASM2464PD 桥接芯片的 C 固件，使用户能够审计、修改和重刷以往封闭的 USB4 eGPU 控制层。",
+    "oneLineReview": "这是一则技术细节较充足的开源硬件新品报道，但独立验证、实践步骤和长期方法论价值不足。",
+    "primaryCategory": "AI硬件",
+    "rating": "C",
+    "rejectReason": "以单款新品参数和厂商说法为主，缺少独立实测与可复用方法，长期参考价值有限",
+    "retentionDecision": "速览产品特性与技术边界，无明确采购或研究需求时不必保留",
+    "secondaryCategories": [
+      "开源硬件",
+      "自动驾驶"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 comma.ai 推出的 Chestnut USB4 eGPU 扩展坞：裸坞售价249美元，桥接芯片固件开源，主要用于提高 openpilot 车载模型算力，并说明其控制通道性能、带宽限制与支持边界。",
+    "tags": [
+      "USB4 eGPU",
+      "开源固件",
+      "openpilot",
+      "ASM2464PD",
+      "边缘AI算力"
+    ],
+    "title": "Comma.ai eGPU Dock Runs Open-Source Firmware: $249 Bare, $799 With an RX 9060 - Hardware Busters",
+    "totalScore": 54,
+    "url": "https://hwbusters.com/news/comma-ai-egpu-dock-runs-open-source-firmware-249-bare-799-with-an-rx-9060/"
+  },
+  "payloadHash": "sha256:2411f8b8a5101c6aa0374d02bd0b61b9cee60bbb069fff411a8246f3043fa97d",
+  "refs": {},
+  "revisionId": "sha256:fa0f19e5d8412f45c2f70672519dbcc87f67064bfa969b51a07616d0e4b1fbb2",
+  "schemaVersion": 1,
+  "updatedAt": 1786944370013
+}

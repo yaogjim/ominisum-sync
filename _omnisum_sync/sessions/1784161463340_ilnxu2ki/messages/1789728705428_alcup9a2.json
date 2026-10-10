@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728705427,
+  "entityType": "message",
+  "id": "1789728705428_alcup9a2",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Verba：以模块化架构降低 RAG 应用门槛\n\nVerba 是 Weaviate 推出的开源 RAG 应用，目标是让非技术用户也能基于自有数据获得可追溯的问答，同时允许开发者替换各环节组件。需要注意：**Verba 已停止维护**，官方目前建议使用其 Playground，包括下一代智能体式 RAG 助手 Elysia。\n\n## RAG 用受控数据弥补通用大模型缺陷\n\nRAG 会先从指定数据源检索相关内容，再交给大模型生成自然语言答案。相比直接使用 ChatGPT，它可以减少编造、信息过时和来源不明等问题。Verba 在缺少相关上下文时会明确表示无法作答，并展示支撑答案的具体文本片段、所在段落及原始文档，方便用户核验。\n\n## 产品设计兼顾开箱即用与数据控制\n\nVerba 采用熟悉的聊天界面，并通过问题自动补全降低提问门槛。用户可直接在网页上传文档，无须执行数据导入脚本；还可查看、更新和删除资料，确保问答依赖的上下文保持准确。状态页则集中显示服务是否正常、已启用功能、版本与配置，减少使用中的不确定性。\n\n## 五段式架构让 RAG 流程可替换、可扩展\n\n系统将流程拆成五个模块：\n\n- **读取**：统一处理文本、PDF、Excel、网页等数据。\n- **切分**：把文档拆成较小且可重叠的片段，降低 token 消耗，并避免边界信息丢失。\n- **向量化**：支持 OpenAI、Cohere、Hugging Face、Ollama 等模型，将标题和正文转为语义向量。\n- **检索**：结合关键词与向量搜索，兼顾精确匹配和语义理解；`autocut` 会按相关性落差自动裁剪结果。\n- **生成**：依据查询和召回片段生成最终答案。\n\n其核心意义不只是一个 RAG 演示产品，而是展示了一种可复用思路：用合理默认值服务普通用户，同时通过模块化接口适应模型、检索策略和数据类型的快速变化。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728705427,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bb2e8a3e42e36d97e1b7005bbe20bc4b5e54bb55c13dbab56d2292b42a6d0b83",
+  "refs": {
+    "sessionId": "1784161463340_ilnxu2ki"
+  },
+  "revisionId": "sha256:6e70dec33d90c870509aa9c02a39ef90f4d9bac212583c7f38499157b9775c53",
+  "schemaVersion": 1,
+  "updatedAt": 1789728705427
+}

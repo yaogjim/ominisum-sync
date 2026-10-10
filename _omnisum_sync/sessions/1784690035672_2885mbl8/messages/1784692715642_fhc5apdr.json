@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784692314542,
+  "entityType": "message",
+  "id": "1784692715642_fhc5apdr",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# DroneBridge for ESP32 内容总结\n\nDroneBridge for ESP32 是一款开源固件，可将低成本 ESP32 模块变成安全、双向的无人机遥测通信设备，支持 Wi‑Fi、Wi‑Fi LR、ESP‑NOW 和 BLE。它适用于飞行器、地面车辆及无人机集群，但仅面向遥测和低速数据传输，不支持视频编码或摄像头传输。\n\n## 1. 项目定位与通信能力\n\n- 可在飞控串口与无线网络之间建立双向通信链路，包括：\n  - 串口 ↔ 标准 Wi‑Fi\n  - 串口 ↔ Wi‑Fi Long Range（LR）\n  - 串口 ↔ ESP‑NOW\n  - Bluetooth LE（BLE）\n- 支持 **MAVLink、MSP、LTM**，也可通过透明传输模式承载其他协议。\n- 从 **v2.0** 起，MAVLink 和透明模式不再要求持续产生数据，并支持可变长度数据包。\n- 仅适用于遥测和低数据速率场景；ESP32 本身无法进行视频编码，因此不支持相机视频传输。\n\n## 2. 主要特点\n\n- **成本低**：设备成本约 **7 欧元**。\n- **体积轻**：重量低于 **8 克**。\n- **通信距离**：\n  - 标准 Wi‑Fi 最远约 **150 米**。\n  - ESP‑NOW 或 Wi‑Fi LR 模式可达到约 **1 公里以上**；发送端和接收端都必须是支持并启用 LR 模式的 ESP32。\n- **安全性高**：所有模式均加密，包括 ESP‑NOW 广播，采用 **AES‑GCM 256 位加密**。\n- **可靠且低延迟**：\n  - 可解析 LTM 和 MSPv2，以减少丢包、提高连接可靠性。\n  - 可解析 MAVLink，并注入 Radio Status 数据包，让地面站显示 RSSI 信号强度。\n  - 也提供完全透明的遥测下行模式。\n- **配置简单**：只需连接电源和飞控 UART，即可通过网页界面完成设置。\n- 兼容 **QGroundControl、Mission Planner、mwptools、imploAD** 等地面站或工具。\n\n## 3. 无人机集群与表演应用\n\nDroneBridge 可低成本控制无人机集群：\n\n- 借助 ESP‑NOW LR 和外置接收天线，通信距离可超过 **1 公里**。\n- 可管理的无人机数量主要受无线信道容量和 ESP32 处理能力限制。\n- 集群通信数据同样采用 **AES-256-GCM** 加密。\n\n项目还提供针对 **Skybrush 无人机灯光秀**优化的特别版本，支持：\n\n- 远程电源管理，如休眠与唤醒。\n- 更多安全性和可靠性检查。\n- 用于批量烧录、管理和维护无人机的开源商业支持套件。\n- 基于 **DLSE API** 编写自定义管理工具。\n- ESP32 的 OTA 无线更新。\n- 在受支持芯片上使用 Wi‑Fi 6（OFDMA）和 5GHz，涉及 **ESP32‑C3、ESP32‑C5、ESP32‑C6** 等型号。\n\n## 4. 硬件选择与固件安装\n\n- 官方建议优先使用经过测试和支持的开发板，这些板卡价格低、体积小，并集成了无人机应用所需功能。\n- 用户也可以利用项目提供的 **KiCad PCB 工程及生产文件**自行制作电路板，支持个人和商业用途，并提供更易焊接的版本。\n- 推荐使用官方在线烧录工具安装固件；其他烧录方法可参考项目 Wiki。\n- 当前仓库信息显示项目已更新至基于 **ESP-IDF 5.4.4 的 v2.2.1**。\n\n## 5. 接线注意事项\n\n- 将 ESP32 的 UART 连接到飞控的 **3.3V UART**，并将飞控对应端口设置为所需协议。\n- 不建议使用 ESP32 板上标有 **TX/RX** 的引脚，因为这些引脚通常连接内部串口输出；建议选择其他可映射的 GPIO。\n- 供电前必须查看具体模块或开发板的数据手册：\n  - 并非所有 ESP32 模块都能承受高于 **3.3V** 的电压。\n  - 应严格遵循板卡厂商的供电建议。\n\n## 6. 网页配置流程\n\n1. 连接名为 **DroneBridge ESP32** 的 Wi‑Fi。\n2. 默认密码为 `dronebridge`。\n3. 在浏览器中访问：\n   - `dronebridge.local`\n   - Chrome 可使用 `http://dronebridge.local`\n   - 或直接访问 `192.168.2.1`\n4. 按需求调整参数并保存。\n5. 如果页面无法打开，可能需要关闭手机蜂窝数据，强制浏览器通过 ESP32 的 Wi‑Fi 访问设备。\n\n## 7. 与地面站连接\n\n- ESP32 会通过 UDP 将数据发送给所有已连接设备，默认端口为 **14550**。\n- **QGroundControl** 通常可以通过 UDP 自动连接。\n- 其他地面站可使用：\n  - TCP：端口 **5760**\n  - UDP：端口 **14550**\n- 使用 UDP 时，地面站至少需要先向 ESP32 发送一个数据包，例如 MAVLink 心跳包，以注册为通信端点。\n- 也可以：\n  - 在地面站中将 ESP32 添加为 UDP 目标。\n  - 通过 DroneBridge 网页界面手动添加 UDP 目标。\n\n## 8. 项目支持\n\n项目提供 Wiki、Discord 社区和官方网站，供用户获取最新版本、硬件说明、烧录及配置文档。该项目接受 PayPal 捐赠，以支持后续开发与维护。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784692314542,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d5646be03694c44074a250377ac63f23c159d0d044b11a7d3c8ba7b8d1351151",
+  "refs": {
+    "sessionId": "1784690035672_2885mbl8"
+  },
+  "revisionId": "sha256:38a6dc90b2794c4686690c0bf3e29029dc8491b9dee180366ab7a5349156eaa8",
+  "schemaVersion": 1,
+  "updatedAt": 1784692314542
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728444266,
+  "entityType": "message",
+  "id": "1789728444266_fgwfxww2",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Cerebras 证明“企业大脑”可用，但多数公司更适合买而非自建\n\nCerebras 搭建了一套权限感知的企业知识库，统一检索 Slack、GitHub、Google Docs、Jira、代码库和内部数据库，并直接返回带引用的答案。上线三个月后，员工、自动化系统和 AI 代理每天提问约 1.5 万次；相关介绍在 X 获得 240 万次浏览。作者借此主张：企业大脑的关键不是预先构建知识图谱，而是提问时实时检索最新信息。\n\n## 实时检索比固化知识图谱更务实\n\nCerebras 将知识保留在原系统中，仅在收到问题时抽取相关上下文，因此无需持续复制数据、维护容易过时的“公司知识图谱”。作者认为，对绝大多数企业问答场景，搜索质量、权限控制和信息时效性比复杂的图谱结构更重要；但“适用于 99% 场景”属于作者判断，并非文中验证结论。\n\n## 真正的成本在连接、权限与长期维护\n\n系统看似只是搜索，背后却要处理各数据源的持续同步、定制刷新、排序与重排、认证、访问控制、审计、分析及专用检索。Cerebras 有 700 多名员工，能投入 3—4 人长期建设；作者认为多数团队自行维护并不经济，应直接采购成熟产品。\n\n## Slite 将这套能力产品化，并补上知识维护\n\n文章同时是 Slite 的产品推广。其 Agent 提供跨数据源检索、权限与合规管理，并通过 MCP 向其他 AI 代理开放企业上下文。它还会发现文档与 Slack、代码提交、支持工单之间的冲突，提出带来源和差异对比的修改建议，再由人工批准，避免自动篡改记录。核心意义是：企业 AI 的瓶颈正从“模型能力”转向可信、实时且可治理的内部知识基础设施；至于 Slite 声称产品将超越自建系统，仍是厂商承诺。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728444266,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6018eabb799ca958f08e553dffd4ac736bbef0970e7926a2d51918b5b0aef140",
+  "refs": {
+    "sessionId": "1784891001783_pc9gtueo"
+  },
+  "revisionId": "sha256:df9dfb1699fd917e5807efa0336d2d453c242915539fa1b11bf0a6f6f846302f",
+  "schemaVersion": 1,
+  "updatedAt": 1789728444266
+}

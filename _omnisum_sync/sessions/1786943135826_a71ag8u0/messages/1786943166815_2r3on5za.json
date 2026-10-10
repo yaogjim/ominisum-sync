@@ -1,0 +1,19 @@
+{
+  "createdAt": 1786943166816,
+  "entityType": "message",
+  "id": "1786943166815_2r3on5za",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 服务端HTML驱动的实时SPA架构\n\n**评级**: A (74分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: Web应用架构\n**次类别**: 实时通信, 前后端开发\n**标签**: #HTML over the wire #WebSocket #SSE #SPA #Phoenix LiveView\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 9 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 架构对比清晰且选型价值较高，但缺少实现细节与性能数据，部分安全和延迟优势存在过度概括。\n**核心高价值点**: 根据交互方向选择传输方式：双向低延迟场景用WebSocket，单向服务端推送用SSE，普通请求响应则优先采用HTTP。\n\n### 摘要\n文章介绍由服务端渲染并通过WebSocket下发HTML的实时单页应用架构，对比HTTP、SSE与WebSocket的通信模式，梳理其复杂度、状态管理、扩展性、离线能力及适用场景，并列举多语言框架。\n\n### 知识要点\n- HTML over WebSockets将渲染和主要状态放在服务端，客户端JavaScript主要负责通信、事件监听和DOM更新。\n- WebSocket适合聊天、协作和游戏等高频双向交互；SSE适合通知、实时信息流和AI流式输出等单向推送。\n- 持久连接和服务端会话状态会增加资源占用、水平扩展、重连与故障恢复方面的设计成本。\n\n### 行动项\n- 在实时功能设计阶段，先按请求响应、单向推送和双向交互三类需求选择HTTP、SSE或WebSocket。\n- 采用WebSocket方案时，提前验证并发连接容量、状态共享、断线重连和故障恢复机制。\n- 需要搜索引擎收录时，将关键内容放入首次服务端响应，不依赖后续WebSocket更新。\n\n### 存档判定\n归档: 是 — 原因: 提供了可复用的HTTP、SSE与WebSocket选型规则，并系统梳理服务端HTML架构的收益、成本及框架生态。\n删除: 否\n留存决策: 精读并存档，作为实时Web应用传输方式选型参考",
+    "role": "assistant",
+    "timestamp": 1786943166816,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:3aaac5984bb1c0dbfe75012a01dc4fd57e02aff8179a54330015d79d2d9fb6ae",
+  "refs": {
+    "sessionId": "1786943135826_a71ag8u0"
+  },
+  "revisionId": "sha256:c313664bc38f15603c5bd278aa8c31620631ca5ab21d759081fc4aa17a4ba2f8",
+  "schemaVersion": 1,
+  "updatedAt": 1786943166816
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727299031,
+  "entityType": "message",
+  "id": "1789727299031_bijcdj5m",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Cursor BYOK 修复超时与“未知错误”，提升长任务和并发稳定性\n\n该 PR 针对 Cursor 经 BYOK 转发时频繁出现的“服务器发生意外错误”或“网络断开”，集中修复多处超时、连接与错误上报问题。核心判断是：不少故障并非服务真正宕机，而是长任务被过早终止，随后又被统一包装成无法定位的“unknown error”。\n\n## 长命令不再轻易被提前中断\n\nShell 前台命令默认等待时间从 30 秒提高到 120 秒，避免 Agent 执行耗时终端任务时触发 `foreground_deadline_exceeded`。此前该问题可能引发合成恢复和多达 15 次以上的提供商重试，最终仍以未知错误结束。\n\n流失败时也将返回实际错误码，如 `foreground_deadline_exceeded`、`provider_error`，并在可用时附带底层错误文本，方便用户和 Cursor 判断真实原因。\n\n## 调整代理链路与并发策略\n\nPR 还处理了其他可能导致“网络断开”的环节：\n\n- 移除代理等待后端首个响应头的 60 秒限制；请求仍受调用方上下文或截止时间约束。\n- 关闭上游 HTTP/2，改用 HTTP/1.1 独立连接，规避多标签页、多任务并发时共享连接可能造成的流中断。\n- 会话文件锁等待时间由 30 秒降至 5 秒，遇到竞争时快速失败并让 Cursor 重试，而非无响应地阻塞。\n- 为 OpenAI 适配器增加提供商请求超时；提交记录曾设为 5 分钟，后调整为 90 秒，避免上游卡住后协程无限挂起。\n\n## 价值在于“可恢复、可诊断”\n\n这些修改同时改善可靠性与可观测性：长任务获得更合理的等待窗口，竞争或上游异常能更快暴露，错误也不再被模糊处理。作者称相关代码已通过 `go vet`，并在 darwin/arm64 上成功构建；页面内容本身未表明 PR 已合并。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727299031,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6f9822ce1b0f10f229b275ef49d60ae8d0de5d3adc69182133ebdedbe1f9247f",
+  "refs": {
+    "sessionId": "1785396337446_sxkqcior"
+  },
+  "revisionId": "sha256:d47ad9c238a762a9b2f008cb6d865c1cf525d52570f9f512c9aeb4037181f1e2",
+  "schemaVersion": 1,
+  "updatedAt": 1789727299031
+}

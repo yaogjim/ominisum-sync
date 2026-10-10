@@ -1,0 +1,84 @@
+{
+  "createdAt": 1788418815538,
+  "entityType": "session",
+  "id": "1788418815538_wwp6axrs",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选取一个中等复杂度任务，试行需求澄清、spec、垂直切片、worktree并行和最终人工审查流程。",
+      "为小改动建立轻量规则：修改前提交简短方案等待授权，修改后必须运行测试。",
+      "尝试用不同厂商模型并行审查同一变更，并记录有效问题、重复意见和误报率。"
+    ],
+    "archiveReason": "提供了从需求澄清、规格生成、任务切片到并行实现和交叉审查的完整流程，并明确区分轻重任务的适用条件。",
+    "byline": "LanLance",
+    "classifiedAt": 1789642673118,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编程工具栈与分级开发流程",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HRNxfRhawAAOJjc?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HRNxfRhawAAOJjc?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "模型能力增强后，过长的系统提示和流程护栏可能从稳定器变成注意力噪音，因此应持续压缩上下文。",
+      "复杂任务可按“需求澄清—规格文档—垂直切片—隔离并行—自动审查—人工把关”组织开发。",
+      "代码生成速度提升后，系统瓶颈可能转移到方案判断、代码审查和部署等人工环节。"
+    ],
+    "oneHighValuePoint": "按任务复杂度分级使用流程：复杂任务走规格、垂直切片、隔离并发和多层审查，简单改动则保留方案授权与测试两条底线。",
+    "oneLineReview": "流程具体且高度贴合AI编程实践，但工具效果和成本优势主要依赖个人经验与外部概述，证据强度有限。",
+    "primaryCategory": "AI编程与Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，可作为设计AI辅助开发流程和代码审查机制的参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "软件工程",
+      "开发流程与工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章复盘AI编程实践从增加约束转向精简上下文的变化，介绍需求澄清、规格生成、任务切片、并行实现和多模型审查流程，并指出人工Review正成为开发并发瓶颈。",
+    "tags": [
+      "AI Coding",
+      "Coding Agent",
+      "上下文工程",
+      "分级开发流程",
+      "多模型代码审查"
+    ],
+    "title": "半年后的今天，我怎么用 AI 写代码",
+    "totalScore": 79,
+    "url": "https://x.com/LanLance24/status/2095144419393683791"
+  },
+  "payloadHash": "sha256:3c39435189dfdfe12b22ea76a568e0ea88d3aca021131e9ec0e6af7d8ee8f0a1",
+  "refs": {},
+  "revisionId": "sha256:0f424e6070daa21bbdd59d9ca65f7da6023f4aaf2f15b2679cf7f869b1c77af7",
+  "schemaVersion": 1,
+  "updatedAt": 1790769605563
+}

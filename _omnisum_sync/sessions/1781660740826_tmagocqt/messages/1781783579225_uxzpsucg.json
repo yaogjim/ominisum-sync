@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781783545567,
+  "entityType": "message",
+  "id": "1781783579225_uxzpsucg",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章认为：**上下文管理不是把所有历史都塞给模型，而是把完整历史“投影”为模型下一步真正需要的视图**。成熟的 coding agent Harness 应区分完整日志、模型可见上下文和结构化应用状态，避免 session 越来越长导致信息淹没。\n\n---\n\n## 1. 问题：Coding Agent 的上下文会越来越长\n\n在 coding agent 的运行过程中，模型会不断积累信息：\n\n- 读过文件\n- 跑过命令\n- 搜过日志\n- 改过代码\n- 收到验证输出\n- 回答过旧问题\n\n随着 session 变长，所有这些内容如果都继续放进上下文，会让模型难以判断**当前真正重要的内容**。\n\n核心问题是：**过去发生了很多事，但下一步并不需要全部过去，只需要相关的过去。**\n\n---\n\n## 2. 朴素做法：不断追加 transcript 会造成“上下文洪水”\n\n最直觉的做法是：把所有对话、工具输出和历史记录不断追加到 prompt 中。\n\n这种方式叫做 **Naive Append Loop**，看似简单，但会导致 **context flooding**：\n\n- 旧的 tool output 会和当前证据竞争注意力\n- 巨大的 shell log 会淹没新的 instruction\n- retry message、partial read、旧 plan、过期 summary 混在一起\n- prompt 变成越来越大的 blob，模型反而更难判断重点\n\n一开始模型似乎“更聪明”，因为看到更多；但很快会因为信息过载而变差。\n\n---\n\n## 3. 成熟 Harness 的核心：拆分三类信息\n\n成熟的 Harness 不会把所有内容混在一起，而是区分三件事：\n\n### 1）Durable log：完整持久日志\n\n用于：\n\n- resume：恢复会话\n- audit：审计\n- evals：评估\n- debugging：调试\n\n它应该**完整且简洁**，作为事实来源。\n\n### 2）Model-visible context：模型可见上下文\n\n这是模型下一步行动真正需要看到的内容。\n\n它不是完整历史，而是经过选择后的视图。\n\n### 3）App state：结构化应用状态\n\n例如：\n\n- 当前目标\n- 已修改文件\n- 验证结果\n- 任务状态\n- 新证据\n\n它不能依赖旧 transcript 是否仍然留在 prompt 中，而应以结构化方式保存。\n\n---\n\n## 4. 核心概念：上下文是一种“投影”\n\n文章给出的定义是：\n\n> **投影，就是把完整历史转化为模型下一步所需的精简、相关视图。**\n\n也就是说，Harness 并不是简单地“记住一切”，而是在每次模型调用前决定：\n\n- 哪些历史需要保留原文\n- 哪些内容可以总结\n- 哪些大输出只需要预览\n- 哪些状态必须结构化注入\n- 哪些旧内容可以折叠\n\n因此，**context management 应该发生在 model call 之前**。\n\n---\n\n## 5. Harness 的上下文投影流水线\n\n一个成熟的 Harness 通常会按如下流程生成模型可见上下文：\n\n1. **从完整 session log 开始**  \n   它是 source of truth，保存完整历史。\n\n2. **评估 context pressure**  \n   判断下一轮回答、工具使用、证据展示还需要多少上下文空间。\n\n3. **保留最近几轮原文**  \n   因为最近几轮通常包含当前任务和最新意图。\n\n4. **大输出变成 preview**  \n   完整内容留在 prompt 外，模型只看到稳定摘要或预览。\n\n5. **已完成旧片段生成显式 summary**  \n   让模型知道这些内容被折叠过，而不是完全消失。\n\n6. **注入当前 app state**  \n   包括已更改文件、验证结果、目标、任务、新证据等。\n\n这些步骤共同解决上下文过长、信息过载和状态丢失的问题。\n\n---\n\n## 6. 大结果处理：不要随机截断，而要稳定预览\n\n有些工具结果太大，不适合每轮原样放入上下文，例如：\n\n- 测试日志\n- grep 输出\n- 生成的文件\n- 网页抓取内容\n- 依赖树\n\n弱 Harness 的做法是随机截断；更强的 Harness 会：\n\n- 把完整结果保存到 prompt 外\n- 在模型可见上下文中放一个稳定 preview\n- 保留 metadata，方便之后恢复、检查或重新加载完整结果\n\n这样模型既能获得足够证据继续工作，又不会被巨大日志淹没。\n\n---\n\n## 7. 空闲后的 microcompact：折叠不再重要的旧内容\n\n有些上下文会随着时间流逝而降低重要性。\n\n例如：\n\n- 用户吃完午饭回来\n- session 空闲了一夜\n\n这时仍然重要的是：\n\n- 最新目标\n- 最近几次 edit\n- 当前验证状态\n\n而很久以前的重复 read、旧 command output 可能就没必要继续保留原文。\n\n因此 Harness 可以做 **microcompact**：轻量折叠旧内容，减少上下文压力。\n\n---\n\n## 8. Old-Span 折叠：旧片段可以总结，但必须显式\n\n当一整段消息已经完成使命时，Harness 可以把它折叠成 summary。\n\n但这个 summary 应该是显式存在的，因为：\n\n- 模型知道发生过 collapse\n- 用户可以检查被保留下来的内容\n- resume 时可以围绕 compact boundary 重建对话\n- 不会把 summary 误认为一条新的随机 user message\n\n重点是：**压缩不是删除历史，而是建立清晰边界的摘要。**\n\n---\n\n## 9. 接近上下文极限时：需要自动压缩机制\n\n当 context pressure 很高时，Harness 应该在模型调用失败前进行 compact。\n\n好的实现不能只是简单写一句：\n\n> if too long, summarize\n\n而需要包含：\n\n- **warning thresholds**：提示用户上下文还剩多少百分比\n- **hard blocking thresholds**：超过限制前阻止 model call，要求先 compact\n- **递归防护**：避免压缩本身又触发新的压缩\n- **恢复附件或状态块**：压缩后重新加入附件、文件状态、验证、目标和任务\n\nauto-compact 的目标是：**保护下一轮调用，同时保留继续工作所需的证据。**\n\n---\n\n## 10. 多匝循环：上下文投影是关键阶段\n\n文章提到，比 Naive Append Loop 更成熟的是 **5 phase loop**。\n\n在多匝循环中：\n\n- 下一轮从已提交的 runtime state 开始\n- 第二阶段负责做上下文投影，生成模型可见视图\n- Phase 5 负责提交变化，让下一轮基于真实 runtime state 继续\n\n这说明，context management 不是附属功能，而是 multi-turn coding agent 的核心机制之一。\n\n---\n\n## 总结\n\n文章的核心观点是：**模型不需要完整过去，而需要“正确的过去”、当前状态，以及足够支持下一步行动的证据。**\n\nHarness 的上下文管理，本质上就是在每次模型调用前，把完整历史投影成一个精简、相关、可靠的模型可见视图。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781783545567,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4e90cdd3bed964e30960b196b3a13d1cf40a7ac9e507cc371f21fb16876e8b3c",
+  "refs": {
+    "sessionId": "1781660740826_tmagocqt"
+  },
+  "revisionId": "sha256:71b4b5603ac6563f03c7923ae419d506d2e8bfd4ce01fd1d12f940b2e8ac82e8",
+  "schemaVersion": 1,
+  "updatedAt": 1781783545567
+}

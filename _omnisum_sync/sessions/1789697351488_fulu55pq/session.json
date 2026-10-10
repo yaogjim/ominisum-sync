@@ -1,0 +1,337 @@
+{
+  "createdAt": 1789697351488,
+  "entityType": "session",
+  "id": "1789697351488_fulu55pq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "盘点CI/CD组件持有的代码仓库访问令牌及其权限范围。",
+      "对可能受影响的令牌和凭证立即执行轮换与吊销。",
+      "检查私有仓库历史内容中的密钥、连接器配置及可用于横向移动的信息。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1789724682315,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "CrowdSec私有源码泄露声明",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.crowdsec.net",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://cms.crowdsec.net/wp-content/uploads/2026/09/Blog-images-1575-%C3%97-871px-32-1.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://cms.crowdsec.net/wp-content/uploads/2026/09/Blog-images-1575-×-871px-32-1.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "源代码泄露的影响评估应区分公开仓库、私有业务代码、客户数据与可用于横向移动的凭据。",
+      "第三方组件一旦接触CI/CD令牌，可能借助其仓库读取权限批量提取私有代码。",
+      "源码暴露后的基础处置包括排查敏感信息、轮换令牌与凭证，并持续监控异常活动。"
+    ],
+    "oneHighValuePoint": "泄露可能源于被植入后门的第三方组件提取CI/CD环境中具有私有仓库读取权限的API密钥，体现了软件供应链与令牌权限管理的联动风险。",
+    "oneLineReview": "事件范围和处置结果交代较清楚，但归因、证据链及技术复盘均不充分。",
+    "primaryCategory": "网络安全事件",
+    "published": "2026-09-17T10:27:47",
+    "rating": "C",
+    "rejectReason": "主要是厂商事件声明，缺少攻击细节、可核验证据和完整复盘方法。",
+    "retentionDecision": "作为安全事件简报速览，无需长期保留",
+    "schema": [
+      {
+        "@context": "http://schema.org",
+        "@graph": [
+          {
+            "@id": "https://www.crowdsec.net/#organization",
+            "@type": "Organization",
+            "image": {
+              "@id": "https://www.crowdsec.net/#logo"
+            },
+            "logo": {
+              "@id": "https://www.crowdsec.net/#logo",
+              "@type": "ImageObject",
+              "caption": "CrowdSec",
+              "contentUrl": "https://www.crowdsec.net/images/seo/crowdsec-logo-horizontal-light.png",
+              "height": 450,
+              "inLanguage": "en",
+              "url": "https://www.crowdsec.net/images/seo/crowdsec-logo-horizontal-light.png",
+              "width": 1500
+            },
+            "name": "CrowdSec",
+            "sameAs": [
+              "https://twitter.com/crowd_security",
+              "https://fr.linkedin.com/company/crowdsec",
+              "https://www.youtube.com/channel/UCKhMjrV_Y2ws3gTW-SsxFkA",
+              "https://github.com/crowdsecurity/crowdsec",
+              "https://discourse.crowdsec.net/?_gl=1*f22p4t*_ga*ODYxNjEyMTkuMTcxNTE0NTg2NQ..*_ga_7KP3XV41ZP*MTcyMDI0ODY0Ni45Ny4wLjE3MjAyNDg4NTkuMC4wLjA.*_ga_7GZ46W5WLE*MTcyMDI0ODY0Ni45OS4wLjE3MjAyNDg4NTkuMC4wLjA.*_gcl_au*MjE4MjgyNjY0LjE3MTUxNDU4NzM.",
+              "https://discord.gg/crowdsec"
+            ],
+            "url": "https://www.crowdsec.net"
+          },
+          {
+            "@id": "https://www.crowdsec.net/#website",
+            "@type": "WebSite",
+            "description": "We turn crowd-powered intelligence into tactical intelligence with actionable blocklists to maximize your SOC efficiency and reduce your costs.",
+            "inLanguage": "en",
+            "name": "CrowdSec",
+            "publisher": {
+              "@id": "https://www.crowdsec.net/#organization"
+            },
+            "url": "https://www.crowdsec.net"
+          },
+          {
+            "@id": "https://www.crowdsec.net/#primaryimage",
+            "@type": "ImageObject",
+            "contentUrl": "https://www.crowdsec.net/images/seo/publication-cover.png",
+            "height": 900,
+            "inLanguage": "en",
+            "url": "https://www.crowdsec.net/images/seo/publication-cover.png",
+            "width": 1600
+          },
+          {
+            "@id": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure/#breadcrumb",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "item": "https://www.crowdsec.net/",
+                "name": "Home",
+                "position": 1
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://www.crowdsec.net/blog",
+                "name": "Blog",
+                "position": 2
+              },
+              {
+                "@type": "ListItem",
+                "name": "CrowdSec Statement: Source Code Exposure in May 2026",
+                "position": 3
+              }
+            ]
+          },
+          {
+            "@id": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure/#webpage",
+            "@type": "WebPage",
+            "about": {
+              "@id": "https://www.crowdsec.net/#organization"
+            },
+            "breadcrumb": {
+              "@id": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure/#breadcrumb"
+            },
+            "dateModified": "2026-09-17T11:14:26",
+            "datePublished": "2026-09-17T10:27:47",
+            "description": "CrowdSec update on a source code exposure that occurred in May 2026, including the scope, impact, investigation, and security measures taken.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.crowdsec.net/#website"
+            },
+            "name": "CrowdSec Statement: Source Code Exposure in May 2026",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure"
+                ]
+              }
+            ],
+            "primaryImageOfPage": {
+              "@id": "https://www.crowdsec.net/#primaryimage"
+            },
+            "url": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure"
+          },
+          {
+            "@id": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure/#article",
+            "@type": "Article",
+            "dateModified": "2026-09-17T11:14:26",
+            "datePublished": "2026-09-17T10:27:47",
+            "headline": "CrowdSec Statement: Source Code Exposure in May 2026",
+            "image": {
+              "@id": "https://www.crowdsec.net/#primaryimage"
+            },
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure/#webpage"
+            },
+            "mainEntityOfPage": {
+              "@id": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure/#webpage"
+            },
+            "publisher": {
+              "@id": "https://www.crowdsec.net/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@id": "https://www.crowdsec.net/#organization",
+        "@type": "Organization",
+        "image": {
+          "@id": "https://www.crowdsec.net/#logo"
+        },
+        "logo": {
+          "@id": "https://www.crowdsec.net/#logo",
+          "@type": "ImageObject",
+          "caption": "CrowdSec",
+          "contentUrl": "https://www.crowdsec.net/images/seo/crowdsec-logo-horizontal-light.png",
+          "height": 450,
+          "inLanguage": "en",
+          "url": "https://www.crowdsec.net/images/seo/crowdsec-logo-horizontal-light.png",
+          "width": 1500
+        },
+        "name": "CrowdSec",
+        "sameAs": [
+          "https://twitter.com/crowd_security",
+          "https://fr.linkedin.com/company/crowdsec",
+          "https://www.youtube.com/channel/UCKhMjrV_Y2ws3gTW-SsxFkA",
+          "https://github.com/crowdsecurity/crowdsec",
+          "https://discourse.crowdsec.net/?_gl=1*f22p4t*_ga*ODYxNjEyMTkuMTcxNTE0NTg2NQ..*_ga_7KP3XV41ZP*MTcyMDI0ODY0Ni45Ny4wLjE3MjAyNDg4NTkuMC4wLjA.*_ga_7GZ46W5WLE*MTcyMDI0ODY0Ni45OS4wLjE3MjAyNDg4NTkuMC4wLjA.*_gcl_au*MjE4MjgyNjY0LjE3MTUxNDU4NzM.",
+          "https://discord.gg/crowdsec"
+        ],
+        "url": "https://www.crowdsec.net"
+      },
+      {
+        "@id": "https://www.crowdsec.net/#website",
+        "@type": "WebSite",
+        "description": "We turn crowd-powered intelligence into tactical intelligence with actionable blocklists to maximize your SOC efficiency and reduce your costs.",
+        "inLanguage": "en",
+        "name": "CrowdSec",
+        "publisher": {
+          "@id": "https://www.crowdsec.net/#organization"
+        },
+        "url": "https://www.crowdsec.net"
+      },
+      {
+        "@id": "https://www.crowdsec.net/#primaryimage",
+        "@type": "ImageObject",
+        "contentUrl": "https://www.crowdsec.net/images/seo/publication-cover.png",
+        "height": 900,
+        "inLanguage": "en",
+        "url": "https://www.crowdsec.net/images/seo/publication-cover.png",
+        "width": 1600
+      },
+      {
+        "@id": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure/#breadcrumb",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "item": "https://www.crowdsec.net/",
+            "name": "Home",
+            "position": 1
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://www.crowdsec.net/blog",
+            "name": "Blog",
+            "position": 2
+          },
+          {
+            "@type": "ListItem",
+            "name": "CrowdSec Statement: Source Code Exposure in May 2026",
+            "position": 3
+          }
+        ]
+      },
+      {
+        "@id": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure/#webpage",
+        "@type": "WebPage",
+        "about": {
+          "@id": "https://www.crowdsec.net/#organization"
+        },
+        "breadcrumb": {
+          "@id": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure/#breadcrumb"
+        },
+        "dateModified": "2026-09-17T11:14:26",
+        "datePublished": "2026-09-17T10:27:47",
+        "description": "CrowdSec update on a source code exposure that occurred in May 2026, including the scope, impact, investigation, and security measures taken.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://www.crowdsec.net/#website"
+        },
+        "name": "CrowdSec Statement: Source Code Exposure in May 2026",
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": [
+              "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure"
+            ]
+          }
+        ],
+        "primaryImageOfPage": {
+          "@id": "https://www.crowdsec.net/#primaryimage"
+        },
+        "url": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure"
+      },
+      {
+        "@id": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure/#article",
+        "@type": "Article",
+        "dateModified": "2026-09-17T11:14:26",
+        "datePublished": "2026-09-17T10:27:47",
+        "headline": "CrowdSec Statement: Source Code Exposure in May 2026",
+        "image": {
+          "@id": "https://www.crowdsec.net/#primaryimage"
+        },
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure/#webpage"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure/#webpage"
+        },
+        "publisher": {
+          "@id": "https://www.crowdsec.net/#organization"
+        }
+      }
+    ],
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "ImageObject",
+      "BreadcrumbList",
+      "WebPage",
+      "Article"
+    ],
+    "secondaryCategories": [
+      "软件供应链安全",
+      "SaaS安全"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "CrowdSec确认约300个代码仓库曾遭泄露，其中包括SaaS控制台、AWS例程及自动化脚本等私有代码。公司称未发现客户数据或凭据外泄，怀疑后门组件窃取了具有私库读取权限的API密钥，并已轮换相关令牌与凭证。",
+    "tags": [
+      "源代码泄露",
+      "GitHub仓库",
+      "CI/CD令牌",
+      "供应链攻击",
+      "凭证轮换"
+    ],
+    "title": "CrowdSec Statement: Source Code Exposure in May 2026",
+    "totalScore": 49,
+    "url": "https://www.crowdsec.net/blog/crowdsec-statement-source-code-exposure"
+  },
+  "payloadHash": "sha256:0cd59a63dbc4a915c80766316a0038c053ac231ec1e35c283ee56d0f313eb928",
+  "refs": {},
+  "revisionId": "sha256:0792649ca60b98ec423f65a26049da968f2cef33bc0d79428ec89688d0eefc8d",
+  "schemaVersion": 1,
+  "updatedAt": 1789724683022
+}

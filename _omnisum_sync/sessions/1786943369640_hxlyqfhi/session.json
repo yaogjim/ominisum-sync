@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943369640,
+  "entityType": "session",
+  "id": "1786943369640_hxlyqfhi",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "使用系统认知评估和经裁定的痴呆终点，前瞻性验证蛋白组风险下降是否对应临床获益。",
+      "开展中介分析，区分减重、炎症、血管及潜在中枢机制对风险信号变化的贡献。",
+      "将dSST与p-tau217等阿尔茨海默病特异性标志物联合比较，评估互补价值。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1786943404087,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 3,
+      "transferability": 5
+    },
+    "classifySourceType": "论文",
+    "classifyTitle": "司美格鲁肽减缓蛋白组痴呆风险信号",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "alz-journals.onlinelibrary.wiley.com",
+    "favicon": "https://alz-journals.onlinelibrary.wiley.com/favicon.ico",
+    "knowledgePoints": [
+      "司美格鲁肽组5年和20年预测痴呆风险进展的比值比分别为0.74和0.91，反映的是模型预测变化而非实际痴呆发病率下降。",
+      "dSST由25种涉及炎症、代谢、血管和神经完整性的蛋白构成，可输出5年及20年全因痴呆预测风险。",
+      "调整BMI变化后，20年风险模型中的治疗效应缩小约28%，提示体重下降可能解释部分而非全部蛋白组信号变化。"
+    ],
+    "oneHighValuePoint": "司美格鲁肽在随机对照比较中改变了经外部验证的多蛋白痴呆风险信号，为用蛋白组标志物监测干预的系统性生物效应提供了案例。",
+    "oneLineReview": "随机对照背景和详细方法增强了可信度，但事后设计、替代终点及资助方参与限制了临床结论。",
+    "primaryCategory": "医学与生命科学",
+    "rating": "B",
+    "rejectReason": "研究主题与AI、产品、商业及法律科技等核心方向联系较弱，且结果仅涉及预测性生物标志物，未验证真实认知或痴呆结局。",
+    "retentionDecision": "与核心关注方向关联较弱，选择性浏览研究设计、统计方法与证据边界即可",
+    "secondaryCategories": [
+      "临床试验",
+      "生物标志物"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "该研究对SELECT试验2970名老年参与者进行事后分析，发现司美格鲁肽在104周内减缓25蛋白痴呆风险评分上升，但未评估认知下降或经裁定的痴呆事件。",
+    "tags": [
+      "司美格鲁肽",
+      "痴呆风险",
+      "蛋白质组学",
+      "GLP-1受体激动剂",
+      "SELECT试验"
+    ],
+    "title": "Semaglutide attenuates a proteomics‐based dementia risk signature in older adults with overweight or obesity and cardiovascular disease without diabetes: A post hoc analysis of the SELECT phase 3 trial",
+    "totalScore": 55,
+    "url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/dad2.70432"
+  },
+  "payloadHash": "sha256:c5068948ade3e8ece648deeb6f9ae3f6241e76c345bbd93952056c4e87fa45f6",
+  "refs": {},
+  "revisionId": "sha256:da73bc85d9ab95c451fd18a942dfc1726adf6561652c2571ef8cf73f3f7c7355",
+  "schemaVersion": 1,
+  "updatedAt": 1789728010012
+}

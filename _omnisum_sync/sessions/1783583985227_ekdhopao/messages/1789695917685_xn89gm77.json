@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695917685,
+  "entityType": "message",
+  "id": "1789695917685_xn89gm77",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nOfficeCLI 是一个面向 AI 智能体和自动化流程的开源命令行工具，可在不安装 Microsoft Office 的情况下创建、读取、修改并预览 Word、Excel 和 PowerPoint 文件。\n\n## 关键内容\n\n- 它用统一命令操作 `.docx`、`.xlsx`、`.pptx`，支持结构化 JSON、稳定元素路径、批量处理及原始 XML 兜底，适合 AI 工具、脚本和 CI/CD。\n- 核心卖点是内置 HTML/PNG 渲染：AI 不仅能读取文档结构，还能查看实际排版，再根据溢出、重叠等问题修改，形成“渲染—检查—修正”循环。\n- 功能覆盖公式、图表、透视表、动画、模板占位符替换，以及把现有文档导出为可重复执行的 JSON；还能接入 Claude Code、Cursor、Copilot 等工具。\n- 项目采用 Apache 2.0 许可，提供跨平台单一可执行文件。文中“全球首个、最好”等属于项目方宣传，未提供独立比较或测试证明。\n\n## 通俗解读\n\n它更像“让 AI 操作文档的工具箱”，而不是给普通用户手动排版的 Office 替代品。若你要让 AI 批量生成报告、套模板或在服务器上处理 Office 文件，值得细读命令和兼容范围；仅日常写文档则没必要。所给原文末尾被截断，但核心介绍基本完整。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695917685,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8923b511f68c32af50ae53bded3debb1af9f415c9c7dd61a1b01564d951b0407",
+  "refs": {
+    "sessionId": "1783583985227_ekdhopao"
+  },
+  "revisionId": "sha256:7e1da3dce5c884f56a130005e8121d1ef98798ced999b29e0a1f61ae25ad74bb",
+  "schemaVersion": 1,
+  "updatedAt": 1789695917685
+}

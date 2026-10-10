@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784712859709,
+  "entityType": "message",
+  "id": "1784712859709_qfmu9la8",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 文章总结\n\nKevin Ma 结合自己一年多的 Agent Coding 实践，认为当前软件开发正逐渐进入以 **Skills（技能工作流）** 为核心的阶段。通过让 Fable 5 分析开源 Skills 项目，他发现 **Grilling（持续追问与澄清需求）** 最值得借鉴，可以帮助产品设计者减少思考盲区。\n\n## 1. Kevin Ma 的 Agent Coding 实践\n\n- Kevin Ma 已积累一年多的 Agent Coding 工作流经验，并将相关方法实际应用在自己的工程目录中。\n- 看到多位网友推荐 [Matt Pocock Skills](https://github.com/mattpocock/skills) 后，他让 Fable 5 分析其中哪些内容值得学习。\n- 分析结果显示，最有借鉴价值的是 **Grilling**：\n  - 通过持续、有针对性的提问，帮助开发者澄清需求和设计思路。\n  - Kevin 过去做产品设计时更多依赖个人深度思考，但这种方式难免存在盲区，因此准备尝试 Grilling。\n\n## 2. 软件开发开始进入“Skill 时代”\n\n热门回复认为，现阶段的软件开发已经进入 **Skill 时代**，值得深入研究成熟开发者沉淀下来的工作流，而不是只关注停留在演示或 PPT 层面的 Skills。\n\n推荐项目包括：\n\n- [Matt Pocock Skills](https://github.com/mattpocock/skills)\n- [Superpowers](https://github.com/obra/superpowers)\n- `oh-my-opencode / oh-my-openagent`\n- `gstack`\n- `lazycodex`\n\n核心思路是：学习这些项目背后的开发方法，再根据自己的需求改进并融入个人工作流。\n\n> 该回复获得 **184 个赞、11 条评论**。\n\n## 3. Claude Design System Prompt 案例\n\n另一位网友推荐了 `claude-design-system-prompt` 项目，该项目逆向整理了 Claude Design 的设计系统提示词，主要包括：\n\n- 一套完整的设计哲学；\n- 主 Prompt 多达 **20 个章节**；\n- 配套 **14 个 Skills**；\n- 还提供了面向 Codex 的版本。\n\n这个案例说明，Skills 不只是零散提示词，还可以被组织成完整、系统化的设计与开发规范。\n\n> 该回复获得 **146 个赞、15 条评论**。\n\n## 4. Fable 5 带来的协作方式变化\n\n宝玉转述了 Claude Code 团队成员 Thariq 分享的 Fable 5 使用经验：\n\n- 过去使用模型时，需要把任务拆成小块，并持续检查模型是否正确执行；\n- 还要反复审查输出，防止模型过早停止；\n- 使用 Fable 5 后，人类与模型之间的检查、监督和任务协作方式正在发生变化。\n\n这意味着更强的模型可能减少细粒度监督，让开发者将更多精力放在目标、判断和最终结果上。\n\n> 该回复获得 **109 个赞、17 条评论**。\n\n## 5. Grilling 与 Superpowers 的理念差异\n\n有回复指出，`grill-me` 和 `superpowers` 不只是工具不同，背后的软件开发理念也不同。\n\n使用 Grilling 时，需要：\n\n- 先理解 Matt Pocock 的开发理念；\n- 区分两类问题：\n  - **低保真度问题**：信息不足、方向模糊，需要继续探索；\n  - **高保真度问题**：信息明确，可以直接深入讨论或执行；\n- 不应被动接受模型连续提问，而应主动掌控交流节奏和讨论方向。\n\n换言之，Grilling 的价值不在于“让 AI 多问问题”，而在于通过高质量问答，逐步提高需求和方案的清晰度。\n\n> 该回复获得 **120 个赞、12 条评论**。\n\n## 6. 工程师与非技术人员的适用差异\n\nKevin Ma 最后补充：\n\n- 他分享的 Grilling 类工作流更适合工程师；\n- `Superpowers` 相对更适合非技术人员。\n\n因此，选择 Skill 时不能只看热度，还要考虑使用者的技术背景、开发理念和实际工作场景。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784712859709,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bc0fbc1d1a20e920f0bace6dd9ee762b928f73ee86bac34ab721d58faf2814ab",
+  "refs": {
+    "sessionId": "1783332970891_svac7bdp"
+  },
+  "revisionId": "sha256:34f0868d63acfc819584574e87c8e3cd446d062b4a55e0e23fae292aca6f9184",
+  "schemaVersion": 1,
+  "updatedAt": 1784712859709
+}

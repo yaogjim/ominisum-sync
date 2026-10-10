@@ -1,0 +1,70 @@
+{
+  "createdAt": 1782360313201,
+  "entityType": "session",
+  "id": "1782360313201_gwe8dmh3",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在评估AI Agent工作流，可本地安装Omnigent并运行示例Agent验证体验。",
+      "重点查看policy guide、Agent YAML spec和deploy/README.md，判断其是否适合团队使用。",
+      "对比现有Claude Code、Codex或Cursor工作流，评估统一编排和沙箱治理是否带来实际收益。"
+    ],
+    "archiveReason": "包含安装、部署、策略控制、多智能体编排和自定义Agent YAML配置等实操信息，可作为评估AI Agent框架的参考资料。",
+    "classifiedAt": 1782362062104,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Omnigent多智能体框架",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Omnigent可作为Claude Code、Codex、Cursor、Kimi、Pi等Agent运行时的统一编排层。",
+      "支持本地、浏览器、手机和云沙箱中的会话同步与协作。",
+      "可通过策略系统限制Shell命令、文件写入、工具调用次数和Token花费。",
+      "自定义Agent可用YAML声明prompt、执行harness、工具和子Agent。",
+      "内置Polly、Debby、Scribe等示例展示多Agent分工、辩论和文档生成场景。"
+    ],
+    "oneHighValuePoint": "通过统一编排层抽象不同Agent运行时，并结合策略、沙箱和协作能力，降低多Agent工具链切换与治理成本。",
+    "oneLineReview": "这是一个实用性较强的AI Agent编排框架说明，但证据和方法论深度有限。",
+    "primaryCategory": "AI Agent框架",
+    "rating": "B",
+    "rejectReason": "内容主要是项目README和功能介绍，偏产品说明，缺少深入架构分析、性能数据和真实案例验证。",
+    "retentionDecision": "短期参考后可选择性保留",
+    "secondaryCategories": [
+      "开发工具",
+      "多智能体协作"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍开源AI Agent框架Omnigent，支持编排Claude Code、Codex、Cursor、Kimi、Pi及自定义Agent，可跨设备协作、云沙箱运行、策略治理，并提供安装、部署、凭证配置和YAML自定义Agent示例。",
+    "tags": [
+      "Omnigent",
+      "AI Agent",
+      "Claude Code",
+      "Codex",
+      "沙箱",
+      "多智能体编排"
+    ],
+    "title": "omnigent-ai/omnigent: Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
+    "totalScore": 68,
+    "url": "https://github.com/omnigent-ai/omnigent"
+  },
+  "payloadHash": "sha256:83a8ae510b1df5359eda48195951a841afa8254627eb208136a2bcc486a86b3c",
+  "refs": {},
+  "revisionId": "sha256:e969c651f4caff4320730eb6bca8a334a0c564e1d62b718af514a9a4d55b60e8",
+  "schemaVersion": 1,
+  "updatedAt": 1782362062733
+}

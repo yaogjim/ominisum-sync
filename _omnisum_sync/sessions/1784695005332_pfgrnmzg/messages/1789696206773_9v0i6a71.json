@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696206774,
+  "entityType": "message",
+  "id": "1789696206773_9v0i6a71",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n多 Agent 并非越多越好：只有任务能拆成相对独立的部分时才值得使用，否则协调成本往往高于收益；`pi-workflow` 试图把这套协作流程标准化。\n\n## 关键内容\n\n- **单 Agent 更适合**简单、小型或高度依赖连续上下文的任务。若一个 Agent 能掌握全部信息并连贯完成，就没必要拆分。\n- **多 Agent 更适合**大量文件阅读、广泛探索，或能分成多个独立部分的大型研究任务。\n- 多 Agent 会带来四类实际成本：Agent 之间需要转交上下文，职责不清会重复劳动，输出仍需核验，还必须有人负责分工和汇总。\n- 原帖作者开发了 `pi-workflow`：用 JSON 描述角色分配、验证和结果合并，使工作流可复用、可检查、可调整。\n\n## 通俗解读\n\n多 Agent 更像“组建团队”，不等于自动提效：如果几个人频繁同步、重复做事，反而不如一个人从头做到尾。`pi-workflow` 就像项目流程表，用规则减少协作混乱。\n\n**是否值得细读：**如果你正在设计复杂 Agent 流程或需要可复用的自动化管线，值得查看原帖和项目；若只是处理普通编码或短任务，这份总结已足够。当前内容是转述，具体效果与实现细节仍需看链接原文。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696206774,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c9fbaa3dc3fa0efed4c279d1ca096091ff3610dade6473fbf943c096670f6bbc",
+  "refs": {
+    "sessionId": "1784695005332_pfgrnmzg"
+  },
+  "revisionId": "sha256:fc46cbcf007d4f5164cba7ac7d50a315a517ca11b560d52fe0da78e86016712f",
+  "schemaVersion": 1,
+  "updatedAt": 1789696206774
+}

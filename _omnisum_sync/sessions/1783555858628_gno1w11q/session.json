@@ -1,0 +1,69 @@
+{
+  "createdAt": 1783555858628,
+  "entityType": "session",
+  "id": "1783555858628_gno1w11q",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "提取六阶段框架，改写为更安全的个人日志审计提示词。",
+      "在使用前限定可读取目录，并先人工检查是否包含密钥、隐私或敏感项目。",
+      "要求AI只输出统计摘要和短引用，不复制大段原始日志。",
+      "将识别出的重复任务转化为CLAUDE.md、AGENTS.md或自定义命令中的自动化规则。"
+    ],
+    "archiveReason": "包含较完整的六阶段日志审计流程、采样约束、证据要求和输出产物设计，可作为AI代理自我分析与工作流优化的提示词模板。",
+    "classifiedAt": 1783555903527,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "基于AI日志的自我审计提示",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可通过AI会话日志反向分析个人工作模式、重复请求、放弃项目和高效时段。",
+      "长日志处理应采用采样、grep模式扫描和分批沉淀证据，避免一次性读取全部原文。",
+      "将洞察转化为mirror.md、roadmap.md和AI代理配置变更，比单纯生成建议更有执行价值。",
+      "涉及本地会话记录时必须注意隐私、凭证、第三方信息和模型数据传输风险。"
+    ],
+    "oneHighValuePoint": "要求所有自我分析结论必须基于带日期的日志证据，并设置“3次以上才算模式”的门槛。",
+    "oneLineReview": "一个有启发的AI日志审计提示词模板，但被明显的营销包装和证据不足削弱了可信度。",
+    "primaryCategory": "AI工具与提示工程",
+    "rating": "B",
+    "rejectReason": "营销话术和疑似AI生成痕迹较重，缺少真实案例、效果数据和风险讨论，不宜按“改变生活”的标题预期精读。",
+    "retentionDecision": "短期参考并提取提示词框架后保留，适合改写为个人AI工作流审计模板",
+    "secondaryCategories": [
+      "个人生产力",
+      "AI工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提供一个让AI代理读取本机历史会话日志的六阶段提示词，用于发现个人工作模式、重复劳动、项目放弃点，并生成mirror.md、roadmap.md及配置改进建议。方法可操作，但宣传夸张且证据不足。",
+    "tags": [
+      "Claude Code",
+      "提示词",
+      "自我审计",
+      "AI代理",
+      "工作流优化"
+    ],
+    "title": "这个提示将会改变你的生活",
+    "totalScore": 69,
+    "url": "https://x.com/EXM7777/status/2074501620235465089"
+  },
+  "payloadHash": "sha256:3bab38aee4c00e8e8478f85ae529c9934cf4aac68cd5c40b1f218c6a188602a2",
+  "refs": {},
+  "revisionId": "sha256:19bb04636a7fbdc74b641aefffd960e1fe2172ea0ebfd916b7ac77e018894530",
+  "schemaVersion": 1,
+  "updatedAt": 1789729149132
+}

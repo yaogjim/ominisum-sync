@@ -1,0 +1,24 @@
+{
+  "createdAt": 1785288025552,
+  "entityType": "message",
+  "id": "1785288151000_pyp7l5oh",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Chatto 开源发布：轻量、隐私优先的团队聊天应用\n\n## 一句话总结\n\nChatto 是一款类似 Slack、Microsoft Teams 的群组与团队聊天工具，现已正式开源，支持免费自托管，并计划推出仅提供托管服务的 Chatto Cloud。\n\n## 核心定位\n\nChatto 希望提供一种：\n\n- **轻量、快速、易用**的聊天体验\n- **开源且可免费自托管**\n- **重视数据隐私与安全**\n- **不依赖广告、追踪或第三方分析**的团队沟通工具\n\n最简单的部署方式是运行 Chatto 可执行文件，它会同时提供后端和前端服务。\n\n## 主要功能与特点\n\n### 1. 简单灵活的部署模式\n\n- 一个 Chatto 服务对应一个社区\n- 如需运营多个社区，可启动多个 Chatto 实例\n- 客户端可同时连接多个服务器\n- 不同服务器之间不进行数据联邦\n- 支持 Linux、macOS 和 Windows\n- 提供 x86_64 与 ARM64 版本\n\n### 2. 隐私与数据保护\n\n- 用户数据和聊天数据默认进行静态加密\n- 使用每位用户独立的加密密钥\n- 用户删除账号后，其密钥会被销毁\n- 不包含第三方追踪和分析功能\n- 语音与视频通话支持端到端加密\n\n### 3. 实时沟通能力\n\nChatto 支持：\n\n- 群组聊天\n- 语音通话\n- 视频通话\n- 屏幕共享\n\n通话参与人数主要取决于自有基础设施的承载能力。\n\n## Chatto Cloud：即将开放公测\n\n对于不想自行维护服务器的用户，Chatto 将推出 Chatto Cloud。\n\n其定位非常明确：**只提供 Chatto 服务器托管服务**，不提供广告、复杂的高级订阅或其他附加商业模式。\n\n主要特点包括：\n\n- 欧洲及欧洲企业所有的基础设施\n- 自动扩容\n- 每晚数据备份\n- 零停机版本升级\n- 与自托管版本完全兼容\n- 支持随时迁入或迁出，不形成平台锁定\n- 预计在 2027 年初拓展更多地区\n\n## 当前版本与后续路线\n\n### 当前状态：0.4 版本\n\n作者认为 Chatto 已经足够稳定，可以用于生产环境，但仍可能存在破坏性更新。自托管用户需要关注后续版本并及时升级。\n\n### 0.5 版本重点\n\n- 增加内容举报与审核能力\n- 优化客户端体验\n- 改进多服务器功能\n\n### 1.0 版本计划\n\n作者预计在未来 **6—12 个月**内推出 1.0.0 版本。\n\n## 对用户的意义\n\nChatto 更适合希望拥有以下能力的团队、开源项目和社区：\n\n- 自主掌控聊天数据\n- 避免依赖大型商业平台\n- 以较低资源成本部署服务\n- 获得 Slack、Teams 类似的协作体验\n- 在自托管与第三方托管之间自由切换\n\n## 快速开始\n\n可以通过 Homebrew 安装并运行：\n\n```bash\nbrew install chattocorp/tap/chatto\nchatto init\nchatto run\n```\n\n详细配置可参考 Chatto 的自托管文档和 GitHub 仓库。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1785288025552,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b56ea7ef117c0968e680e8b4e815d0831fdb51c424d8356055d6f4e8049c36f9",
+  "refs": {
+    "sessionId": "1785288149612_e1y5bif1"
+  },
+  "revisionId": "sha256:cff8a8d501da63ef8e03d936aa7a5ce1d975b57fceba175d36f87e7c1f60ce39",
+  "schemaVersion": 1,
+  "updatedAt": 1785288025552
+}

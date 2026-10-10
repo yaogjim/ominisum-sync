@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784692687985,
+  "entityType": "session",
+  "id": "1784692687985_tfs6dpey",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在AI写作提示词中加入少用副词和程度词、优先使用精确动词与可观察细节的要求。",
+      "对同一写作任务分别使用默认提示和限制副词提示，比较信息密度、自然度与具体性。",
+      "改写后逐项检查被删除的修饰信息是否已由动作、感官细节或结果补偿。"
+    ],
+    "archiveReason": "包含可直接复用的AI写作提示词、改写检查标准和多个具体示例。",
+    "classifiedAt": 1784693318585,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "禁用副词改善AI写作的机制",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter-pip.3.ico",
+    "knowledgePoints": [
+      "限制副词可能切断“宽泛动词加抽象修饰语”的低成本生成路径，迫使模型调整选词和句法。",
+      "删除情绪或程度标签后，应通过可观察动作、环境变化或因果结果补回信息。",
+      "禁用副词可能触发简洁、克制、动作导向的整体风格切换，但并不适合所有文体。"
+    ],
+    "oneHighValuePoint": "真正有效的不是机械删除副词，而是要求模型用精确动词、具体行为、感官细节和结果补偿被删除的修饰信息。",
+    "oneLineReview": "提出了实用且可迁移的AI写作约束，但机制解释主要来自模型推断，缺少对照测试和外部证据。",
+    "primaryCategory": "AI写作与提示工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "保留可复用的提示词与改写原则，实际使用前应通过对照实验验证效果",
+    "secondaryCategories": [
+      "写作方法",
+      "大模型生成机制"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分析限制AI使用副词为何可能改善文本，认为强约束会打断高频套话和弱动词路径，促使模型使用精确动词、可观察行为与感官细节；同时指出效果受文体影响，机械删词可能降低信息量。",
+    "tags": [
+      "AI写作",
+      "提示词约束",
+      "精确动词",
+      "可观察细节",
+      "文本改写"
+    ],
+    "title": "(4) Tz: 好奇问了一下 gpt-5",
+    "totalScore": 69,
+    "url": "https://x.com/Tz_2022/status/2077463837968605247"
+  },
+  "payloadHash": "sha256:2fd1f6bb2dafa0849c4b3225a2cac9e0b947f60bfc5dd4158fc2d191c24fb67d",
+  "refs": {},
+  "revisionId": "sha256:a31d039f433813ec5671dd481d32fdb2cb239b7c285077068ee844ba0978c6c3",
+  "schemaVersion": 1,
+  "updatedAt": 1789728881936
+}

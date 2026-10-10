@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728046910,
+  "entityType": "message",
+  "id": "1789728046911_twgsts5d",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Opus 5 能力更强，却因“擅自做主”更难协作\n\n作者认为，Opus 5 并非能力退步：它强于 Opus 4.7、4.8，基准表现甚至接近 Fable。但在实际工作中，它更倾向于自行补全意图、修改计划，而不是在不确定时询问用户，因此需要更多监督，协作体验反而下降。\n\n## 基准测试奖励“大胆猜测”，不奖励澄清问题\n\n作者推测，这可能来自两股力量：前沿实验室追求能自我改进的 AI，以及模型必须在基准测试中取得高分。理想的测试题通常是自包含、可解且有明确评分标准的；模型若停下来追问，会被视为未完成任务。基于可验证奖励的强化学习（RLVR）也因此更容易筛选出面对歧义时敢于假设、且通常能猜对的模型。\n\n## 真实开发不是一道答案确定的考题\n\n编码任务很难完整写明业务目标、隐含意图、预算限制及所有上下文，歧义不可避免。用户真正需要的代理，往往应在关键选择上主动确认，而非直接采用“最可能正确”的方案。作者的核心提醒是：基准能力不等于协作质量；如果训练持续奖励自主决断，模型可能在测试中更强，却在有真实后果的工作场景中更不可靠、更难用。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728046910,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b8bf3b55698db764a3dff94e5b66f1071c5486b15934ce07f1aece2d813e51cc",
+  "refs": {
+    "sessionId": "1786943213749_9tqyfa9g"
+  },
+  "revisionId": "sha256:c12aa94e1f120589692e1ce68329584ae25af5e693ef2acca603d009d66efbb8",
+  "schemaVersion": 1,
+  "updatedAt": 1789728046910
+}

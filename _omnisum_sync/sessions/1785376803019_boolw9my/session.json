@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785376803019,
+  "entityType": "session",
+  "id": "1785376803019_boolw9my",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在隔离的虚假仓库中植入唯一金丝雀标记，抓取当前版本AI编程CLI的模型请求与存储请求并分别验证。",
+      "在确认上传边界前，不要让云端编程工具接触包含真实密钥、客户代码或敏感Git历史的仓库。",
+      "分别测试隐私退出设置是否影响训练、代码传输和持久化存储，不以界面开关名称代替流量验证。"
+    ],
+    "archiveReason": "包含可复现命令、对照实验、网络证据、哈希清单及明确的证据边界，对评估云端AI编程工具的数据传输行为具有长期参考价值。",
+    "classifiedAt": 1785402706142,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 9,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 9,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Grok编程工具代码外传机制实测",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "gist.github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "云端编程代理可能存在模型上下文传输与独立代码库归档两条数据通道，不能仅检查模型请求体。",
+      "训练数据退出选项不必然阻止代码传输或存储，应分别验证上传开关、服务端设置和实际网络流量。",
+      "可信的外传审计可组合使用金丝雀标记、MITM抓包、未读文件对照、上传产物恢复、状态码映射和SHA-256清单。"
+    ],
+    "oneHighValuePoint": "通过从已获HTTP 200的上传Git bundle中恢复被明确要求不要读取的金丝雀文件及完整历史，直接证明了整库上传，而非仅上传模型实际读取的上下文。",
+    "oneLineReview": "这是一份证据链完整、可复现且主动限定结论边界的AI编程工具数据传输审计，但具体发现具有较强版本时效性。",
+    "primaryCategory": "AI编程工具安全",
+    "rating": "S",
+    "rejectReason": "",
+    "retentionDecision": "重点保留，既可作为AI编程工具数据安全案例，也可复用其审计方法",
+    "secondaryCategories": [
+      "隐私与数据治理",
+      "网络流量分析"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以MITM抓包、金丝雀文件、对照实验和Git bundle恢复，证明Grok 0.2.93会上传已读文件及完整受跟踪仓库与历史，并区分传输、存储和训练，注明证据缺口、版本边界及后续服务端停用变化。",
+    "tags": [
+      "Grok Build",
+      "代码库上传",
+      "敏感信息泄露",
+      "流量抓包",
+      "Google Cloud Storage"
+    ],
+    "title": "What xAI Grok Build CLI actually sends to xAI - a wire-level analysis (grok 0.2.93)",
+    "totalScore": 86,
+    "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547"
+  },
+  "payloadHash": "sha256:7c2063a7ca76a313b658e51e5ffcacd41b9a117e65f0d682aac579b592521963",
+  "refs": {},
+  "revisionId": "sha256:dc261b7c902c7c4ac94368cce5692c03376bc433db9d3befdbdb18610c84b9d7",
+  "schemaVersion": 1,
+  "updatedAt": 1789605067973
+}

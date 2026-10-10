@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693755010,
+  "entityType": "message",
+  "id": "1789693755012_zhquu6vj",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nClaude Code 团队已从“逐步指挥 AI 写代码”转向“把完整目标交给云端代理”，人类主要负责提供背景、验证结果和判断大方向。\n\n## 关键内容\n\n- 团队成员称，约 **70%—80%** 的工作通过 Slack 内的 Claude Tag 完成；它能结合产品讨论和团队决策处理复杂目标，终端或桌面端更多用于细调。\n- AI 模型能力变化很快，过去为弥补模型缺陷设计的待办列表、提问工具等功能，可能很快失去必要性。因此团队会主动删除旧“脚手架”，再为更复杂任务补充新工具。\n- Claude 从本地运行逐步转向云端后台运行，由此可以执行跨会话的循环和定时任务，例如每天整理用户反馈，并尝试修复有较高把握的问题。\n- 在代码审查中，Claude 先处理琐碎问题、并行搜索潜在缺陷；人类则把精力放在 API 设计、服务边界等需要业务背景的关键判断上。\n\n## 通俗解读\n\n“给目标而非任务”就是不再逐行安排 AI 做什么，而是说明最终要解决的问题，再检查结果。文章值得 AI 编程工具的重度用户细读，但它主要是团队经验分享，并非可直接照搬的教程。**所给文字在 11:17 处截断，后半段关于 workflows、Slack 验证闭环及团队怀念的旧工作方式无法完整总结。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693755010,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:10d0d6c3f93668d258e8ccf31fc4996e74b35afce2fdd90b8dd42a14ac6e8b88",
+  "refs": {
+    "sessionId": "1789614478726_cev88w82"
+  },
+  "revisionId": "sha256:652047c3db73d6607ff9ef211c7e24a8135a58980829f74919dfd9474ed35646",
+  "schemaVersion": 1,
+  "updatedAt": 1789693755010
+}

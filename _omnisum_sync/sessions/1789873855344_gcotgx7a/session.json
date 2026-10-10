@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789873855344,
+  "entityType": "session",
+  "id": "1789873855344_gcotgx7a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "部署共享端点后，先检查模型列表是否包含全部适配器，再分别发送任务请求验证路由与输出格式，确认测试对象正确。",
+      "在相同基础模型、GPU和流量条件下，对比一个共享端点与三个独立端点，记录请求等待时间、启动工作进程数及GPU使用时间。",
+      "冷启动测试前确认工作进程已缩容至零，重复至少三次并分别记录delayTime与executionTime；出现容量限流时，将该轮排除出纯启动延迟统计。"
+    ],
+    "archiveReason": "提供四种适配器部署方式的适用条件，以及共享端点、适配器路由和冷启动测量的具体实验路径，可复用于多任务或多租户推理服务。",
+    "byline": "Avi Chawla",
+    "classifiedAt": 1790768531893,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "多LoRA共享模型与工作池部署实践",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSPiCm-bIAEJXfj?format=png&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSPiCm-bIAEJXfj?format=png&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "同一基础模型的多个LoRA适配器可以复用基础权重；适配器仍占用显存，具体容量取决于秩、目标模块及服务配置，不能仅凭权重估算实际并发能力。",
+      "小且稳定的适配器目录适合启动时加载；较大或频繁变化的目录适合请求时加载，但需承担首次获取和加载适配器的延迟。",
+      "请求的delayTime包含被工作进程接取前的等待，可能同时涉及启动和GPU容量不足；executionTime则反映接取后的执行时间，二者应分开分析。"
+    ],
+    "oneHighValuePoint": "多LoRA服务的收益不仅是减少权重重复，更是让同一基础模型的不同任务共享工作池，缓解独立端点造成的空闲容量与冷启动割裂。",
+    "oneLineReview": "部署选型与实验设计具有明确实用价值，但代码格式受损、对比实验未完整呈现，百模型容量估算不能视为吞吐性能验证。",
+    "primaryCategory": "AI模型部署与推理服务",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留部署选型框架与实验步骤，实际使用前核对配置并修复代码格式。",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "LoRA微调",
+      "云端资源调度"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章比较合并权重、启动加载、请求时加载及托管四种LoRA部署方式，并给出Runpod与vLLM的训练、部署和冷启动测量步骤，强调共享工作池的收益；但未完成端点对比，也未实测百模型服务。",
+    "tags": [
+      "多LoRA服务",
+      "vLLM",
+      "共享工作池",
+      "冷启动",
+      "Runpod Serverless"
+    ],
+    "title": "如何在单个 GPU 上服务 100 个微调模型，清晰解释",
+    "totalScore": 72,
+    "url": "https://x.com/_avichawla/status/2099772866225148024"
+  },
+  "payloadHash": "sha256:6d7f50708b5e3c82bf82a1227887b59893594bcce63d6c93b0152e7a4c78f16a",
+  "refs": {},
+  "revisionId": "sha256:c57f5fd37f5cb31cdbfa76d86a670637da02cbf630ff9589e5987cf236ce4cfd",
+  "schemaVersion": 1,
+  "updatedAt": 1790770589096
+}

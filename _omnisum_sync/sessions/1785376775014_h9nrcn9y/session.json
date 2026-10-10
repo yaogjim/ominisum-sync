@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785376775014,
+  "entityType": "session",
+  "id": "1785376775014_h9nrcn9y",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "连续记录至少5至7天的入睡和起床时间，同时评估日际波动，而不只统计平均睡眠时长。",
+      "在保证足够睡眠的同时，尝试将每日入睡和起床时间维持在约1小时窗口内。",
+      "设计睡眠追踪或健康管理产品时，将睡眠规律性设置为独立指标，并明确其目前主要是风险标志而非已证实的因果干预靶点。"
+    ],
+    "archiveReason": "提供了可复用的睡眠规律指数、客观测量方法和大样本前瞻性证据，具有长期健康管理参考价值。",
+    "classifiedAt": 1785402807660,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 9,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 4,
+      "transferability": 6
+    },
+    "classifySourceType": "论文",
+    "classifyTitle": "睡眠规律性与死亡风险关系",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "academic.oup.com",
+    "favicon": "https://oup.silverchair-cdn.com/UI/app/img/v-639181367120243529/favicon-32x32.png",
+    "knowledgePoints": [
+      "睡眠规律指数通过比较相隔24小时的睡眠—清醒状态一致性，综合反映入睡与起床时间变化、夜间碎片化和日间小睡。",
+      "与规律性最低的五分位相比，其余五分位在不同调整模型中的全因死亡风险低20%至48%。",
+      "加入睡眠时长后模型拟合未显著改善，说明睡眠时长未提供超出睡眠规律性的显著额外解释力。"
+    ],
+    "oneHighValuePoint": "通过同等模型比较和嵌套模型检验，研究显示睡眠规律性比平均睡眠时长更能解释全因死亡风险。",
+    "oneLineReview": "证据规模和测量方法较强，结论具有实践启发，但不能将预测关系直接解释为因果效应。",
+    "primaryCategory": "睡眠健康",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "与核心工作方向关联有限，但证据扎实，适合作为睡眠健康专题资料存档",
+    "secondaryCategories": [
+      "流行病学",
+      "健康数据分析"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "研究分析英国生物样本库约6.1万人一周加速度计数据及最长7.8年随访，发现睡眠越规律，全因及部分特定死因风险越低，对全因死亡的预测强于睡眠时长；但观察性设计不能证明因果。",
+    "tags": [
+      "睡眠规律性",
+      "死亡风险",
+      "昼夜节律",
+      "睡眠规律指数",
+      "英国生物样本库"
+    ],
+    "title": "Sleep regularity is a stronger predictor of mortality risk than sleep duration: A prospective cohort study",
+    "totalScore": 67,
+    "url": "https://academic.oup.com/sleep/article/47/1/zsad253/7280269?login=false"
+  },
+  "payloadHash": "sha256:ed349fe9cc802eb759c9d8f432c07631d4f7d343f78be635f92de08c6c36196f",
+  "refs": {},
+  "revisionId": "sha256:d12238c7dfb2f0d2376db9bc854d781b2cdd0619dc0054e26db877b817d9f59b",
+  "schemaVersion": 1,
+  "updatedAt": 1785403835984
+}

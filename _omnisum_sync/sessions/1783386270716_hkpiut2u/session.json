@@ -1,0 +1,111 @@
+{
+  "createdAt": 1783386270716,
+  "entityType": "session",
+  "id": "1783386270716_hkpiut2u",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为常用智能体工作流整理一份团队级战略偏好清单",
+      "在给代理分配任务时明确区分结果目标、硬性边界、可协商空间和实现方式约束",
+      "将安全审计、测试、部署等高风险流程写成命令式规则或技能文件",
+      "对重要项目记录代理输出与真实偏好的偏差，用于迭代偏好说明模板"
+    ],
+    "archiveReason": "文章提出了声明式偏好、命令式偏好、战略偏好与战术偏好的分类框架，对设计智能体工作流有一定复用价值",
+    "byline": "sysls",
+    "classifiedAt": 1783418970370,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "代理工程师的偏好管理框架",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 360,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMjVp_7aUAAkrJf?format=jpg&name=900x900",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HMjVp_7aUAAkrJf?format=jpg&name=900x900",
+        "width": 900
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 267,
+        "id": "img-6",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMib8xea4AEb-My?format=png&name=small",
+        "role": "tweet",
+        "score": 70,
+        "src": "https://pbs.twimg.com/media/HMib8xea4AEb-My?format=png&name=small",
+        "width": 386
+      }
+    ],
+    "knowledgePoints": [
+      "高智能代理的输出质量差异，主要来自人类是否能准确表达目标、边界和权衡偏好",
+      "声明式偏好适合描述结果与约束，命令式偏好适合规定关键流程和不可变架构",
+      "战略偏好应沉淀为团队级规则、技能和流程，战术偏好则应随具体项目调整",
+      "代理看似“愚蠢”往往不是能力不足，而是在缺少上下文时替人类做了错误假设"
+    ],
+    "oneHighValuePoint": "将智能体协作问题归因于“偏好与权衡表达不清”，并用声明式与命令式偏好区分不同任务的委托方式。",
+    "oneLineReview": "框架有启发性，但论证偏主观、证据不足，更适合作为思考材料而非实证指南。",
+    "primaryCategory": "AI工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为智能体协作和偏好表达框架的素材保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "智能体工程",
+      "软件工程",
+      "工作流设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章讨论高智能代理时代工程师生产力差异的来源，认为核心瓶颈转向人类能否清晰表达偏好和权衡，并提出声明式/命令式、战略/战术偏好的框架来指导智能体工作流设计。",
+    "tags": [
+      "Agentic Engineering",
+      "偏好管理",
+      "提示工程",
+      "软件架构",
+      "AI协作"
+    ],
+    "title": "在 Fable 与 GPT 5.6 时代，新的百倍效能代理型工程师会是什么样子",
+    "totalScore": 67,
+    "url": "https://x.com/systematicls/status/2074142558595207435"
+  },
+  "payloadHash": "sha256:7ce4cb605a595cb0b1ffaa2cb13efbefad813dfdb05eb484ee917c889d369a03",
+  "refs": {},
+  "revisionId": "sha256:a6299b1d0034065787d7105d4230474bdc077eaab291bd952731139ee7c368d7",
+  "schemaVersion": 1,
+  "updatedAt": 1784712666386
+}

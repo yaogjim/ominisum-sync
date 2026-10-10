@@ -1,0 +1,65 @@
+{
+  "createdAt": 1782991301905,
+  "entityType": "session",
+  "id": "1782991301905_czgxdgzr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在寻找 Claude Design 替代方案，可简单试用 baoyu-design + GLM 5.2",
+      "若已记录相关工具名称，可删除原帖"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783038885710,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex与GLM替代Claude体验",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息碎片化，方法论和长期价值较低，保留价值主要限于记录几个工具名称。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Codex 可用于代码和文档生成工作流",
+      "baoyu-design 结合 GLM 5.2 被作者认为可部分替代 Claude Design"
+    ],
+    "oneHighValuePoint": "可尝试用 baoyu-design + GLM 5.2 作为 Claude Design 的低成本替代方案。",
+    "oneLineReview": "这是一个有轻微信号价值的AI工具推荐帖，但缺乏论证和可复用经验。",
+    "primaryCategory": "AI工具使用",
+    "rating": "D",
+    "rejectReason": "内容只是个人工具使用感受，缺少具体对比、案例、流程和可验证证据，热门回复大多与正文无关。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "大模型应用",
+      "开发工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "作者表示自己较少使用 Claude，认为 Opus 已有较多替代品；代码和文档主要使用 Codex，设计则用 baoyu-design 结合 GLM 5.2，体验约达 Claude Design 的 80%。",
+    "tags": [
+      "Codex",
+      "Claude",
+      "GLM",
+      "AI设计",
+      "工具替代"
+    ],
+    "title": "Panda: 没怎么用 Claude 了，Opus 有太多可替代的模型了，但之前 Claude Design 是无可替代的 现在代码、文档都是 Codex 写，用 @dote…",
+    "totalScore": 27.5,
+    "url": "https://x.com/Jiaxi_Cui/status/2071503920451744170"
+  },
+  "payloadHash": "sha256:93faecb58a2dbaf58857e5eaa3337f77a8a1bb335240062ebebe8cc0fddf995f",
+  "refs": {},
+  "revisionId": "sha256:12872d9b997ecbb9ea196f49774ee7dc04e1b6051592557d6aca11fb036eac61",
+  "schemaVersion": 1,
+  "updatedAt": 1783038885986
+}

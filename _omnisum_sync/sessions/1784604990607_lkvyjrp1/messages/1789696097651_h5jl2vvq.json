@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696097651,
+  "entityType": "message",
+  "id": "1789696097651_h5jl2vvq",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一个面向内容创作者的 Claude Code/Codex 技能库，把知识整理、社媒素材抓取、音视频处理、文章发布及微信数据导出串成一套本地工作流。\n\n## 关键内容\n\n- 仓库包含 13 个技能，覆盖对话转 Obsidian 笔记、Markdown 上传为 X Articles 草稿、抖音/小红书素材抓取、语音转写与剪映精修等环节。\n- 微信相关能力较多：包括 Mac 微信双开、本人微信聊天/朋友圈/收藏夹解析、公众号文章批量导出，以及只读解析企业微信数据库。\n- 它并非安装后全部即用：不同技能需要 Python、Playwright、ffmpeg、已登录的浏览器，以及火山 ASR 等私有配置；具体操作仍须查看各技能文档。\n- 项目强调本地处理和凭据保护，不附带真实 Cookie、Token；部分敏感操作须用户确认。许可证仅允许个人学习及非商业工作流，禁止商用、客户交付和公司内部部署。\n\n## 通俗解读\n\n这里的“技能”可理解为供 AI 编程助手调用的操作说明和脚本，而非独立软件。**如果你使用 Claude Code/Codex 且想搭建个人内容生产流程，值得按需细读对应子目录；若只想找开箱即用的图形化工具，或计划商用，则不太适合。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696097651,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:093df4a80ed808e00a6fb5b96806d0ae1502ec10ec9c5c873cff554b5af09e07",
+  "refs": {
+    "sessionId": "1784604990607_lkvyjrp1"
+  },
+  "revisionId": "sha256:a9884a50f59356c389a708bf893b21eed27e1af6128791c0890963d29c0253ed",
+  "schemaVersion": 1,
+  "updatedAt": 1789696097651
+}

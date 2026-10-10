@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789725979807,
+  "entityType": "message",
+  "id": "1789725979807_jnbekkg1",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nCraft Agents 是 Craft 团队开源的桌面 AI 智能体工作台，主打用自然语言连接外部服务、管理多个任务，并让智能体直接执行文件、API 和自动化操作。\n\n## 关键内容\n\n- 项目基于 Claude Agent SDK 与 Pi SDK，采用 Apache 2.0 许可证；作者称团队甚至用它自身完成开发和定制。\n- 用户可让智能体连接 Slack、Gmail、Linear、数据库、本地文件等数据源；支持 MCP（连接 AI 与外部工具的协议）、REST API，以及导入 Claude Code 的技能配置。\n- 它提供多会话管理、后台任务、文件差异查看和三级权限：只读、修改前询问、自动批准，降低误操作风险。\n- 除 Electron 桌面端外，还支持远程无界面服务器、Docker 和 CLI，可接入 Anthropic、OpenAI、Gemini、GitHub Copilot 等模型；远程部署需配置令牌与 TLS。\n\n## 通俗解读\n\n它不是单纯的聊天软件，更像“能调用各种工具并持续干活的 AI 控制台”：例如直接说“接入 Slack”，智能体会尝试阅读接口文档并引导配置凭据。不过“无需配置”是项目方的产品表述，部分服务仍需自行申请 OAuth 凭据。若你准备部署、自定义或评估权限安全，值得细读；只想了解定位，看功能列表即可。原文末尾被截断，提供商说明并不完整。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789725979807,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d4090372e0eb2968aa8bbf21357886c6f4432b984dfaffcc15df67aa8003b2cf",
+  "refs": {
+    "sessionId": "1783569598226_pmlndfgc"
+  },
+  "revisionId": "sha256:fb873354acbc19a6bef6ea927c7db7da091dc66176da50c7bf837fdac2732163",
+  "schemaVersion": 1,
+  "updatedAt": 1789725979807
+}

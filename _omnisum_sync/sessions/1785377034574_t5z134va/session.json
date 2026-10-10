@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785377034574,
+  "entityType": "session",
+  "id": "1785377034574_t5z134va",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文档目录配置工具链，并使用esp-generate创建初始项目。",
+      "对esp-hal及相关驱动锁定依赖版本，避免无审查地执行依赖更新。",
+      "升级主要crate前查阅对应迁移指南，并在测试环境验证兼容性。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1785377628868,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 5,
+      "information_density": 5,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 3,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "ESP平台Rust嵌入式开发导读",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "docs.espressif.com",
+    "favicon": "https://docs.espressif.com/projects/rust/book/favicon-de23e50b.svg",
+    "knowledgePoints": [
+      "该文档面向具备Rust基础但不一定拥有嵌入式经验的开发者。",
+      "开发工具生态包括esp-generate、espflash、probe-rs和esp-config。",
+      "已稳定模块遵循SemVer，而不稳定组件可能出现破坏性变更，主要crate会提供版本迁移指南。"
+    ],
+    "oneHighValuePoint": "esp-hal及部分驱动仍属不稳定组件，普通cargo更新也可能导致项目破坏，因此应锁定并持续跟踪依赖，升级时查阅迁移指南。",
+    "oneLineReview": "官方定位清晰且覆盖开发全流程，但当前节选仅提供导航和稳定性提示，实践细节不足。",
+    "primaryCategory": "嵌入式开发",
+    "rating": "C",
+    "rejectReason": "当前正文主要是目录和前言，缺少安装、开发与验证流程的具体内容，独立沉淀价值有限。",
+    "retentionDecision": "速览整体目录，实际开发时再查阅对应技术章节",
+    "secondaryCategories": [
+      "Rust开发",
+      "开发工具链"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "这是一份面向Rust开发者的Espressif嵌入式开发官方导读，概述硬件、工具链、项目生成、日志、异步、测试与OTA等章节，并提醒不稳定组件可能不受SemVer保障，需跟踪依赖和迁移指南。",
+    "tags": [
+      "Espressif",
+      "Rust",
+      "嵌入式系统",
+      "ESP工具链",
+      "依赖管理"
+    ],
+    "title": "The Rust on ESP Book",
+    "totalScore": 42,
+    "url": "https://docs.espressif.com/projects/rust/book/"
+  },
+  "payloadHash": "sha256:515d44ca43ffabada0fb820bcb264a036318e77e2dd6df6e858a843568136f4c",
+  "refs": {},
+  "revisionId": "sha256:e726c505f602d49342e698e0b2af3eaae7452b0f1378f0ab2b701c01e5d66e75",
+  "schemaVersion": 1,
+  "updatedAt": 1785377628928
+}

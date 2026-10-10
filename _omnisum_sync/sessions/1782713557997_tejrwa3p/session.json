@@ -1,0 +1,65 @@
+{
+  "createdAt": 1782713557997,
+  "entityType": "session",
+  "id": "1782713557997_tejrwa3p",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如对课程感兴趣，可关注正式课程发布后再评估",
+      "删除该预告，保留对 loop 退出条件问题的关注即可"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782714315407,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 2,
+      "novelty": 2,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Loop工程课程预告",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "内容仅提供课程主题和发布时间线索，没有实质性知识内容，长期留存价值很低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "loop engineering 可能涉及 AI 编程中任务循环的设计与控制",
+      "AI 编程流程需要明确何时继续自动尝试、何时回到人工验收"
+    ],
+    "oneHighValuePoint": "热门回复中提出 loop 的退出条件与人类验收边界可能比工具清单更关键。",
+    "oneLineReview": "更像课程广告而非知识文章，除非关注该课程，否则无需保留。",
+    "primaryCategory": "AI编程",
+    "rating": "D",
+    "rejectReason": "正文主要是课程上线预告，缺少具体方法、案例、定义和可执行步骤，信息密度较低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "课程预告",
+      "Vibe Coding"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章是一条关于 loop engineering 与 Codex 课程即将上线的社交媒体预告，提到课程会讲解 loop 定义、写法和局限性，并强调 vibe coding 没有银弹，但未展开具体内容。",
+    "tags": [
+      "loop engineering",
+      "Codex",
+      "AI编程",
+      "课程推广",
+      "vibe coding"
+    ],
+    "title": "Yihui: 🥳loop engineering + Codex 课程即将上线",
+    "totalScore": 26,
+    "url": "https://x.com/yihui_indie/status/2071127000740401509"
+  },
+  "payloadHash": "sha256:5e9b9245dec071b2bb53404bc730286cf30eddf28b02e1d5f715574f99b16752",
+  "refs": {},
+  "revisionId": "sha256:085033fbd0c7692702890931bd862cd04f892c59543f1001b7f47b8893919d63",
+  "schemaVersion": 1,
+  "updatedAt": 1782714315515
+}

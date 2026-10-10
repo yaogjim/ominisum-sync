@@ -1,0 +1,69 @@
+{
+  "createdAt": 1783556182350,
+  "entityType": "session",
+  "id": "1783556182350_7y8sqjzg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将 Fail Fast、Fix the Cause、Make It Observable 等原则加入 Codex 自定义指令",
+      "检查现有项目是否存在吞错误、假修复或日志不足的问题",
+      "为关键业务路径补充必要日志与追踪信息",
+      "在技术栈或产品方向变化时同步更新 agents.md 或项目说明文档"
+    ],
+    "archiveReason": "内容简短但可直接转化为 Codex 或其他 AI 编程工具的自定义指令，具有一定复用价值",
+    "classifiedAt": 1783556213244,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 2,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Codex调试指令清单",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI 编程指令应强调 Fail Fast，避免用兜底逻辑吞掉真实错误",
+      "修复问题应定位根因，而不是通过局部补丁掩盖症状",
+      "关键路径需要日志、可观测性和可追溯性，便于后续调试",
+      "项目文档应作为单一事实源随代码和技术栈变化同步更新"
+    ],
+    "oneHighValuePoint": "要求 AI 不要假装修复问题，而是在信息不足时明确指出需要增加日志和可观测性。",
+    "oneLineReview": "一份简短实用的 AI 编程调试规范清单，但缺乏案例和证据支撑。",
+    "primaryCategory": "AI编程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可长期保留为AI编程指令模板",
+    "secondaryCategories": [
+      "软件工程",
+      "调试方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结了一组适用于 Codex 的自定义编程指令，强调快速暴露错误、修复根因、增强日志与可观测性、保持关键路径可追溯，并要求文档随代码同步演进。",
+    "tags": [
+      "Codex",
+      "自定义指令",
+      "Fail Fast",
+      "可观测性",
+      "调试"
+    ],
+    "title": "x.com/s1dashu/status/2074496025369481318",
+    "totalScore": 68,
+    "url": "https://x.com/s1dashu/status/2074496025369481318"
+  },
+  "payloadHash": "sha256:dd990e7254561edea08c09f741361a65cc9385d48fbcafbb46b62ce0a16ec024",
+  "refs": {},
+  "revisionId": "sha256:08ea7465c3f2d9423ead0703894604e7eb3cb552a156185d6ee157d73d976f72",
+  "schemaVersion": 1,
+  "updatedAt": 1789729206590
+}

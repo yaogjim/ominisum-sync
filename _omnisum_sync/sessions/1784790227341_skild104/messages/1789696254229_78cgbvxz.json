@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696254230,
+  "entityType": "message",
+  "id": "1789696254229_78cgbvxz",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章认为：当 AI Agent 能大量完成编码后，软件交付的瓶颈会从“写代码速度”转向需求、设计和架构是否清晰，因此团队应把人的判断前置，再让受约束的 Agent 执行。\n\n## 关键内容\n\n- 作者把交付视为一条“富集管道”：模糊想法依次经过业务背景、用户旅程、规格、设计和架构，最终变成可构建、可测试的功能包。上游越清楚，下游返工越少。\n- 其 ETC 方法要求产品、设计、工程和业务人员先“聚集”解决关键问题，再逐步完善功能包；准备充分后团队“散开”，只留构建经理监督 Agent，并在需要人类决策时暂停。\n- 这并非取消流程，而是加强纪律：通过统一上下文、检查关卡、测试、架构约束和发布验证，避免 Agent 高速构建错误产品。\n- 作者称该模式能让管理者按阶段观察耗时和瓶颈，并实现最高 **85% 的功能交付提速**；这是其业务实践中的说法，原文未提供独立数据验证。\n\n## 通俗解读\n\nAI 像一支执行极快的施工队：图纸越含糊，错误建得越快。文章的重点不是“用 AI 少开会”，而是把讨论集中到开工前，让机器执行已明确的方案。\n\n**是否值得细读：**适合正在系统引入 AI 开发、重构交付流程的产品和工程负责人；若只想了解具体编码工具或质量验证细节，本文涉及有限。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696254230,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8599a78bc859b8f3b40e29dde5b3b76f3cfcbf80dc6e7d00fb0fd47c7f6857e4",
+  "refs": {
+    "sessionId": "1784790227341_skild104"
+  },
+  "revisionId": "sha256:ba58cda1a8a1897d22e85417c1dfe936ebedac657803e9e094e1fd2528861228",
+  "schemaVersion": 1,
+  "updatedAt": 1789696254230
+}

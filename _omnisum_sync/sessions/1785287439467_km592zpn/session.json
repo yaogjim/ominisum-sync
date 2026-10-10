@@ -1,0 +1,66 @@
+{
+  "createdAt": 1785287439467,
+  "entityType": "session",
+  "id": "1785287439467_km592zpn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "对照Kimi K3技术报告核验Attention Residuals的性能收益及训练、推理成本数据。",
+      "在模型架构调研表中比较LatentMoE、多头潜在注意力和Kimi Delta Attention与传统组件的效率取舍。"
+    ],
+    "archiveReason": "简明汇总了Kimi K3相对Kimi Linear的架构变化及效率取舍，可用于后续模型架构比较。",
+    "classifiedAt": 1785402345786,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Kimi K3架构与效率设计观察",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "sebastianraschka.com",
+    "favicon": "https://sebastianraschka.com/images/favicons/favicon-32x32.png",
+    "knowledgePoints": [
+      "Kimi K3整体延续并放大Kimi Linear架构，新增的LatentMoE通过降维压缩大型线性层。",
+      "K3的效率优化包括以LatentMoE替代普通MoE，并采用多头潜在注意力和Kimi Delta Attention。",
+      "Attention Residuals通过带注意力权重的跨层残差连接改善性能；K3还在全部层使用NoPE。"
+    ],
+    "oneHighValuePoint": "K3以LatentMoE和多种注意力替代方案提升效率，同时用Attention Residuals改善跨层残差路径，并明确披露约4%训练成本和2%推理成本增量。",
+    "oneLineReview": "这是一份高密度的K3架构速记，但缺少原始数据、技术推导和可直接复现的实现细节。",
+    "primaryCategory": "AI技术",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "浏览后作为Kimi K3架构变更索引存档，关键结论需回查技术报告",
+    "secondaryCategories": [
+      "大模型架构",
+      "推理效率"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将Kimi K3概括为Kimi Linear的大规模生产化版本，梳理LatentMoE、多头潜在注意力、Kimi Delta Attention、跨层注意力残差、全NoPE及原生多模态等设计，并指出其推理效率导向。",
+    "tags": [
+      "Kimi K3",
+      "LatentMoE",
+      "Kimi Delta Attention",
+      "Attention Residuals",
+      "NoPE"
+    ],
+    "title": "Kimi K3 Architecture Notes",
+    "totalScore": 60,
+    "url": "https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html"
+  },
+  "payloadHash": "sha256:c573b025a2521b77e0d2107ee561c11332fb72c25b17946aa26731bf3d55c935",
+  "refs": {},
+  "revisionId": "sha256:b5bc5136122dac381c054973b739580c5a25d7ce6475d8506267c4516a9edc1f",
+  "schemaVersion": 1,
+  "updatedAt": 1785490439567
+}

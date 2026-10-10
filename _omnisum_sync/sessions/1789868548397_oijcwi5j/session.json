@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789868548396,
+  "entityType": "session",
+  "id": "1789868548397_oijcwi5j",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个现有路由或事件升级任务，对比生成式方案与文中判别式复现方案，记录准确率、延迟、成本和概率校准表现。",
+      "在相同模型、任务与预算下，对比read、write、edit、bash精简工具集与当前Harness，检查工具复杂度是否带来实际收益。",
+      "对拟采用的模型回查原始仓库和评估材料，确认数据来源、测试集、硬件及运行条件，不直接使用新闻转述的排名作决策。"
+    ],
+    "archiveReason": "判别式模型承担工作流控制、Harness影响性能成本，以及分层模型选择等思路具有复用价值，适合作为后续实验的选题索引。",
+    "byline": "AINews",
+    "classifiedAt": 1790762433511,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "Jev决策模型复现与智能体动态",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "read.readwise.io",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 377,
+        "id": "img-8",
+        "nearbyText": "我们报道了 Jev 在周三的发布 ，他们彻底占领了时间线，其发布视频在短短两天内获得了 3600 万次观看（相比之下，OpenAI 的 Navier Stokes 成果获得了 7400 万次观看，而 Anthropic 的 Fable 5 获得了 5700 万次观看）。 Vercel @vercel Jev 是 AI Gateway 历史上被采用速度最快的模型。在第一天，@typesafeai 就覆盖了 ~13% 的团队，是 GPT-5.6 系列的 2 倍，是 Fable 5...",
+        "resolvedUrl": "https://substackcdn.com/image/fetch/%24s_!0a7_!,w_550,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHSiGtZba0AEezOP.jpg",
+        "role": "article",
+        "score": 63,
+        "src": "https://substackcdn.com/image/fetch/%24s_!0a7_!,w_550,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fpbs.substack.com%2Fmedia%2FHSiGtZba0AEezOP.jpg",
+        "width": 550
+      }
+    ],
+    "knowledgePoints": [
+      "判别式决策模型可以承担候选项评分、路由和升级判断，与生成式模型形成职责分离，而非替代整个智能体。",
+      "编码智能体的表现不仅取决于基础模型，还受Harness结构、上下文设置、轮次预算和工具可供性影响。",
+      "模型速度、精选基准分数和演示效果不能单独证明实际能力；概率校准、运行条件及可审计记录是重要验证依据。"
+    ],
+    "oneHighValuePoint": "将路由、工具选择和升级判断从生成式模型中拆出，交给专用判别式模型，提供了降低智能体控制层成本与延迟的架构方向，但仍需验证决策质量和概率校准。",
+    "oneLineReview": "与AI和Agent开发高度相关，适合发现实验方向，但重复较多、证据偏弱，不能直接据此采信性能排名或完成选型。",
+    "primaryCategory": "AI技术动态",
+    "rating": "B",
+    "rejectReason": "篇幅较长且多处重复社交媒体观点，发布方性能声明缺少完整测试条件和独立验证，不宜作为技术选型的直接依据。",
+    "retentionDecision": "选择性浏览并保留决策模型、智能体架构与评估相关摘录，不必全文精读",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent开发",
+      "模型评估与部署"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章汇总Jev发布后的六种复现方案及AI社区动态，重点涉及判别式决策模型、智能体工具框架、本地部署和基准评估，并扩展至机器人与安全治理。信息主要来自社交媒体转述，多项性能与能力声明仍待核实。",
+    "tags": [
+      "判别式决策模型",
+      "智能体路由",
+      "编码智能体Harness",
+      "本地小模型",
+      "基准验证"
+    ],
+    "title": "[AINews] Here are 6 Clones of Jev in 2 days",
+    "totalScore": 59,
+    "url": "https://read.readwise.io/new/read/01m2w3fgeq1yjw35mmkqs6nqs2"
+  },
+  "payloadHash": "sha256:89fd8e1fc9d64e9c1b8dfa1fbd8c91fa0a90c7278fc1b31b9aff9f6a0a59db2e",
+  "refs": {},
+  "revisionId": "sha256:90debeea29bb8fb69446a6f59f64c4f090f257436961917072008ef2f5412434",
+  "schemaVersion": 1,
+  "updatedAt": 1790762434346
+}

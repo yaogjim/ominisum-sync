@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693916393,
+  "entityType": "message",
+  "id": "1789693916393_tz3svpop",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nCopperhead 是一个面向 KiCad 的开源 AI 硬件开发代理，目标是像编程助手修改代码一样，根据自然语言创建或修改 PCB 项目，并用文档、ERC/DRC 检查和 Git 回滚约束操作。\n\n## 关键内容\n\n- **能做什么**：`create` 可从产品简报生成规格、架构、元器件选择、原理图、初步布局、Gerber、固件框架和计划；`do` 用于修改现有 KiCad 项目。\n- **如何降低风险**：修改前必须有书面规格，修改后必须通过 ERC（电气规则检查）、DRC（设计规则检查）及文档一致性检查；失败会回滚 Git 快照。\n- **成熟度有限**：无 LLM 的检查、初始化、BOM 导出已通过离线测试；但 AI 修改与完整创建流程虽已实现，尚未完成真实模型的端到端验收，官方预计仍有粗糙之处。\n- **明确边界**：它不是自动布线器，也不替代 KiCad 或责任工程师；“检查通过”不等于设计已经可制造。\n\n## 通俗解读\n\n它更像“带强制审查流程的 PCB 编程代理”，而不是一键生成可靠电路板的黑箱。其亮点是让规格、原理图和物料表同步，并强制验证；但当前仍属早期工具，建议只在分支和可回滚项目中试用。**若你在做 KiCad 自动化、AI 硬件设计或代理安全门控，值得细读；若想直接用于生产设计，目前不宜仅凭 README 的能力描述投入。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693916393,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3a967bf998559a81f8018a017400da95d97f0f3066666d39070eb349dda53c8f",
+  "refs": {
+    "sessionId": "1788921676753_nocrj1me"
+  },
+  "revisionId": "sha256:a6a2ace2980089956fbe14a1bbf74b2930ee3a48bde11212c87270f8d080ecb3",
+  "schemaVersion": 1,
+  "updatedAt": 1789693916393
+}

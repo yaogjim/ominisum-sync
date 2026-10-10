@@ -1,0 +1,83 @@
+{
+  "createdAt": 1789012454685,
+  "entityType": "session",
+  "id": "1789012454685_bkxklx5q",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据目标CAE软件选择对应MCP目录，创建虚拟环境、安装项目并注册到支持MCP的客户端。",
+      "复制所需Skill完整目录到Agent环境，并用示例提示词验证建模、求解和结果提取链路。",
+      "启动viewer并使用示例案例检查result_mesh.json的浏览器渲染流程。"
+    ],
+    "archiveReason": "直接覆盖Agent开发、工具调用和工程软件自动化，包含清晰架构、安装入口、模块职责及可复用工作流。",
+    "classifiedAt": 1789642943067,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "CAE智能体工具与仿真工作流中心",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/c469a255487920bfe370eb3e03c4a368e8e4f5dced66e609d46b7e034e16bf4f/Cai-aa/CAE-Agent-Hub",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/c469a255487920bfe370eb3e03c4a368e8e4f5dced66e609d46b7e034e16bf4f/Cai-aa/CAE-Agent-Hub",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "CAE Agent可按AI客户端、MCP或Skill、真实求解器、结果导出与浏览器检查四层组织。",
+      "MCP负责提供实时软件工具访问，Skill负责封装建模、求解、后处理和验证流程，两者职责不同。",
+      "工程自动化仓库应保留源码、测试、模板和指令，排除许可证、私有路径、凭据及可再生成的求解结果。"
+    ],
+    "oneHighValuePoint": "最值得保留的是将MCP实时工具访问、可复用Skill指令、真实求解器执行和轻量结果查看器分层解耦的整体架构。",
+    "oneLineReview": "这是一个相关度和可操作性较高的CAE Agent项目索引，但对各集成的可靠性、测试覆盖和实际效果仍缺少集中证据。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "作为AI连接真实工程软件的架构与工具索引长期保留，并按目标求解器选择性深入",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "工程仿真",
+      "技术实现"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍一个连接AI客户端与真实CAE软件的工具仓库，汇总多类MCP服务器、仿真Skills、求解器脚本和浏览器结果查看器，并给出模块职责、安装方式、目录规范及扩展路线。",
+    "tags": [
+      "MCP",
+      "CAE自动化",
+      "Agent Skills",
+      "有限元分析",
+      "仿真工作流"
+    ],
+    "title": "CAE-Agent-Hub/README.zh-CN.md at main · Cai-aa/CAE-Agent-Hub",
+    "totalScore": 76,
+    "url": "https://github.com/Cai-aa/CAE-Agent-Hub/blob/main/README.zh-CN.md"
+  },
+  "payloadHash": "sha256:ef581c2ad9dd0a776a2d53bad829d65c6ad9bbffd41e60a8ecafd42538abe5fa",
+  "refs": {},
+  "revisionId": "sha256:9e6a5af013c4f7f7dea9d1de55d7370c2cec652b567ce91ed735f5d88b1fe0fe",
+  "schemaVersion": 1,
+  "updatedAt": 1790769402587
+}

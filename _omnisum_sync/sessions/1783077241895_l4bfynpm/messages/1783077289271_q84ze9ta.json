@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783077289272,
+  "entityType": "message",
+  "id": "1783077289271_q84ze9ta",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Worktree与AI并行开发实践\n\n**评级**: B (66.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 软件开发工具\n**次类别**: Git工作流, AI辅助编程\n**标签**: #git worktree #并行开发 #Claude Code #CLI工具 #开发效率\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 实用性较强的 worktree 工作流推广文，但证据偏弱且带有明显工具宣传属性。\n**核心高价值点**: 将每个开发任务映射为独立 worktree，并通过项目级 setup 脚本自动完成依赖安装和环境变量复制，能显著降低多任务并行开发的摩擦。\n\n### 摘要\n文章介绍在 AI 辅助开发场景下使用 git worktree 支撑多任务并行的价值，并推广 cc-launch 工具，用于统一创建、进入、初始化和清理 worktree，降低路径管理、环境配置和分支清理成本。\n\n### 知识要点\n- git worktree 可以让同一仓库同时拥有多个独立工作目录，每个目录对应不同分支，避免频繁 checkout 和 stash\n- AI 辅助开发中，独立 worktree 有助于为不同任务维护独立上下文、终端和实验环境\n- worktree 的长期使用障碍主要不在 Git 命令本身，而在目录命名、路径管理、依赖安装、环境复制和清理流程\n- 通过统一 CLI 和 setup.sh 脚本，可以把 worktree 创建后的初始化动作标准化、自动化\n\n### 行动项\n- 在当前项目中尝试用 git worktree 为 feature、bugfix、历史版本验证分别建立独立目录\n- 为常用项目编写 setup.sh，自动执行依赖安装、环境变量复制和必要的初始化命令\n- 评估 cc-launch 是否适合自己的 AI 编程工作流，特别是是否需要自动启动 Claude 或 Codex\n- 制定 worktree 目录命名和清理规范，避免分支、目录和 stale worktree 长期堆积\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的 git worktree 使用场景、痛点分析和自动化初始化思路，对改进多分支与 AI 并行开发流程有参考价值\n删除: 否\n留存决策: 短期参考后可归档，若实际采用 worktree 或 cc-launch 可长期保留",
+    "role": "assistant",
+    "timestamp": 1783077289272,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:8777acd9885f1d9bbedb0f9158aaa5d377a0ffcd2671a8a6e57a618f94bbf5ff",
+  "refs": {
+    "sessionId": "1783077241895_l4bfynpm"
+  },
+  "revisionId": "sha256:4fae84c711a51d09b9d1ab60898326be56c20fcc532297c60b34379ee84cd056",
+  "schemaVersion": 1,
+  "updatedAt": 1783077289272
+}

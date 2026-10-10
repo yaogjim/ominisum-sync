@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786354582448,
+  "entityType": "session",
+  "id": "1786354582448_ku3n43l2",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估现有产品功能是否能够拆分为可由Agent调用的CLI或Skill。",
+      "为Agent生成的结果设计网页确认、标记和人工微调流程。",
+      "测试Agent误操作场景，并补充自动修复或人工兜底机制。"
+    ],
+    "archiveReason": "文章提出了较明确的Agent入口、应用确认和人工微调分工，并给出GUI、CLI与Skill分离的产品实例，对AI工具设计具有参考价值。",
+    "classifiedAt": 1786354611424,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent作为应用入口的产品设计",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "GUI与CLI分离并通过Skill提供能力，有利于让同一功能同时服务人工操作和外部Agent调用。",
+      "在Agent-first产品中，应用界面可以从主要操作入口转为结果确认、标记和微调界面。",
+      "外部Agent调用工具时，产品仍需要设计人工干预、结果修复和错误兜底机制。"
+    ],
+    "oneHighValuePoint": "将应用从独立操作界面重新定位为Agent可调用的能力层，同时保留结果确认、人工微调和错误修复入口。",
+    "oneLineReview": "这是一个与Agent产品设计高度相关的实践观点，但目前主要是产品理念和个案描述，证据与方法细节仍有限。",
+    "primaryCategory": "产品设计",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览，作为Agent-first产品设计案例保留",
+    "secondaryCategories": [
+      "AI Agent开发",
+      "人机交互"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍BaoCut将视频转录、翻译和剪辑能力拆分为可由Agent调用的Skill，应用界面主要承担结果确认、网页标记和人工微调，并提出Agent将成为软件主要入口的产品判断。",
+    "tags": [
+      "Agent-first",
+      "工具调用",
+      "GUI与CLI分离",
+      "人工确认",
+      "Skill"
+    ],
+    "title": "宝玉: 我觉得像视频转录剪辑这样的 App 应该是被 Agent 调用的，App 主要是用来确认结果和微调的",
+    "totalScore": 69,
+    "url": "https://x.com/dotey/status/2086482912145211827"
+  },
+  "payloadHash": "sha256:68ef09e4747b2b7c35b177f0194b5de8c94b0c3ada2661c1da55a1b9ba80af28",
+  "refs": {},
+  "revisionId": "sha256:21326f4cc4b2bcb12eada558476052351f7227f12b0cda6f019a03f42370de79",
+  "schemaVersion": 1,
+  "updatedAt": 1786356462002
+}

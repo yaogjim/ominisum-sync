@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784801539940,
+  "entityType": "message",
+  "id": "1784801539940_4sezwp2x",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 文章总结\n\n作者强烈推荐开源 Coding IDE **Orca**，认为它是目前体验最强的 Coding Agent 集成工具之一，整体可媲美、部分功能甚至超过 Codex App。Orca 支持 **macOS、Windows、Linux**，并兼容多种主流 Coding Agent CLI。\n\n## 1. 产品定位与兼容性\n\n- Orca 是一个面向 AI 编程的集成开发环境，官网和源码均已开放。\n- 支持全平台：**Mac / Windows / Linux**。\n- 可接入多种主流 Coding Agent CLI，例如：\n  - Claude Code（CC）\n  - Codex\n  - Pi\n  - OpenCode\n- 作者称其为自己用过“最强大的套壳”，并已卸载其他同类工具，尤其推荐给喜欢 **Pi** 的用户。\n\n## 2. 多任务与自动化能力\n\n- **并行 Worktree**：可在相互隔离的 Git 工作区中同时处理多个开发任务，减少不同分支之间的干扰。\n- **自动化任务**：支持定时执行和循环式工程任务（Loop Engineering），适合持续测试、修复或迭代代码。\n- **Token 使用追踪**：方便查看 AI Agent 的 Token 消耗情况。\n\n## 3. 浏览器与电脑操作能力\n\n- **Computer Use**：AI Agent 可以直接操作电脑，类似 Codex 的电脑使用能力。\n- **登录态浏览器**：能够使用保留账号登录状态的浏览器，类似 Codex 的 `@chrome` 功能。\n- **内嵌真实 Chromium**：可直接在 IDE 中打开网页，并提供 **Design Mode**，方便进行前端设计与调试。\n- 支持 **iOS / Android 手机模拟器**，适合移动端应用开发和测试。\n\n## 4. 远程与移动端功能\n\n- **Orca Mobile**：提供手机端 App，可远程控制电脑上的开发任务。\n- **远程主机控制**：能够连接并操作远程开发环境。\n- **语音输入**：可通过语音向 Coding Agent 下达指令。\n\n## 5. 开发协作集成\n\nOrca 原生集成 **GitHub 和 Linear**，用户可直接从以下位置启动或管理开发任务：\n\n- Pull Request（PR）\n- Issue\n- 项目看板\n\n此外，Orca 还提供独立的 **Orca CLI**，便于偏好命令行工作流的开发者使用。\n\n## 6. 社区反馈与争议\n\n- 有用户认为 Orca 功能较重，内嵌浏览器以及 GitHub、Jira 等集成会增加安装体积并拖慢启动速度。\n- Linux 用户对其跨平台支持表示认可。\n- 也有用户指出，Orca 更接近 **ADE（Agent Development Environment，智能体开发环境）**，而 Codex App 更像是 **Agent 的统一控制中心**，两者产品定位并不完全相同，因此不宜直接横向比较。\n- 原文热门回复共 5 条，其中两条为无关推广内容；较有参考价值的讨论主要集中在产品体积、Linux 支持和产品定位上。\n\n## 相关链接\n\n- [Orca 官网](https://onorca.dev)\n- [Orca GitHub 仓库](https://github.com/stablyai/orca)\n\n> 注：关于 Orca“媲美或部分超越 Codex App”的评价主要来自作者个人使用体验，并非客观性能评测。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784801539940,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0e79baddfe47fab9965f10bd8e499041a96cf15a565f6b80ee200f612bddca1f",
+  "refs": {
+    "sessionId": "1782901042568_0vjz479q"
+  },
+  "revisionId": "sha256:c1d460ba6430ac4d2639903578b41b418d4281920aba54f19769cc1c1f11008c",
+  "schemaVersion": 1,
+  "updatedAt": 1784801539940
+}

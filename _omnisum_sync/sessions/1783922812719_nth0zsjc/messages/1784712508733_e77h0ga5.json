@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784712508733,
+  "entityType": "message",
+  "id": "1784712508733_e77h0ga5",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 视频动效系统：把开源项目扩展成自己的模板库\n\n这是一套由「栗噔噔」制作的开源视频动效系统。用户既可以修改现有模板的文案和数据来生成视频，也可以让 AI Agent 按统一规范持续添加模板，逐步形成自己的动效库。\n\n## 1. 项目用途与特点\n\n- **开源可定制**：克隆项目后，可修改文案、数字、颜色等参数，快速生成视频动效。\n- **支持持续扩展**：可让 Agent 在 `templates/` 目录中新增模板，建立个人模板库。\n- **本地运行与渲染**：预览和视频生成均在本地完成，并调用电脑上的 **Chrome / FFmpeg**，算力成本由本机承担。\n- **开源地址**：[GitHub 项目](https://github.com/nutllwhy/hyperframes-motion-library)\n- 作者「栗噔噔」在小红书、抖音、视频号、公众号、B站、X、YouTube、即刻等平台使用同名账号。\n\n## 2. 推荐方式：让 Agent 自动安装\n\n如果不熟悉命令行，可以将任务直接交给 Agent，要求其完成：\n\n1. 选择合适的本地目录并克隆仓库。\n2. 进入 `hyperframes-motion-library` 目录。\n3. 运行 `npm install` 安装依赖。\n4. 运行 `npm run dev` 启动本地服务。\n5. 启动后返回本地访问地址。\n6. 暂不修改源码或删除模板；若遇到 **Node、npm、Chrome、FFmpeg 或端口占用**问题，先说明原因并给出解决建议。\n\n这种方式适合先体验模板库，后续再让 Agent 基于项目结构增加新动效。\n\n## 3. 手动安装\n\n熟悉命令行的用户可以执行：\n\n```bash\ngit clone https://github.com/nutllwhy/hyperframes-motion-library.git\ncd hyperframes-motion-library\nnpm install\n```\n\n以上操作会下载项目、进入目录并安装所需依赖。\n\n## 4. 本地启动、检查与渲染\n\n安装完成后，可使用以下命令：\n\n```bash\nnpm run dev\nnpm run check\nnpm run render -- metric-pulse templates/metric-pulse/presets/default.json\n```\n\n- `npm run dev`：启动本地服务，用于修改参数和预览动效。\n- `npm run check`：检查项目和模板是否符合规范。\n- `npm run render`：按指定模板及预设生成视频。\n- 示例中使用的是 `metric-pulse` 模板，以及其默认预设文件 `presets/default.json`。\n\n## 5. 让 Agent 新增动效模板\n\n可以把整个项目文件夹交给 Agent，并要求它按照以下顺序工作：\n\n1. 阅读 `README.md`，了解项目运行方式。\n2. 阅读 `SYSTEM.md`，了解模板必须包含的文件和规范。\n3. 参考已有的 `templates/<id>/` 目录结构创建新模板。\n4. 更新 `catalog.json`，让新模板显示在展示站中。\n5. 运行检查，确认模板可正常复用。\n\n## 6. 新模板的具体规范\n\n每个新模板至少应在 `templates/<template-id>/` 下包含：\n\n```text\nindex.html\ndesign.md\nmeta.json\npresets/default.json\npackage.json\n```\n\n同时应满足以下要求：\n\n- 使用 HyperFrames 的 `data-composition-variables`，暴露可编辑的**文案、数字和颜色**。\n- 默认采用**黑色背景 + 橙色强调色**，避免引入蓝绿色系。\n- 先完成动效“最完整时刻”的静态布局，再添加**确定性的 GSAP 动画**。\n- 更新 `catalog.json`，将模板加入展示站。\n- 运行 `npm run check`，并尽量生成 `sample` 预览。\n- 不得破坏已有模板和已有预设。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784712508733,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d405ffbec5f19752eec3b9cc387838f66bb1ff1c1238f541e7916a601dbe247a",
+  "refs": {
+    "sessionId": "1783922812719_nth0zsjc"
+  },
+  "revisionId": "sha256:a9df79696cd96a6de5215c2122631041c5943673595e1d4d9e240a155ac55f39",
+  "schemaVersion": 1,
+  "updatedAt": 1784712508733
+}

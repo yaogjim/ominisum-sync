@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728025289,
+  "entityType": "message",
+  "id": "1789728025289_9cjz0k0h",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# ThoughtDAG：把大模型上下文变成可编辑、可追溯的图\n\nThoughtDAG 是一款将对话上下文可视化为有向图的工具。它试图解决长对话中的核心问题：用户通常看得到聊天记录，却不知道下一次请求究竟会把哪些内容发送给模型。其核心理念是“连线即上下文”——图不只是整理信息的画布，而是直接控制模型输入的协议。\n\n## 用图明确模型会看到什么\n\n用户可以从原文中选取文字或图片，创建保留出处的独立节点，再通过连线决定它们是否进入后续上下文。生成回答前，系统会展示内容来源、排列顺序和 token 用量；随后沿连入节点的边查找上游信息，组合成发送给模型的消息。\n\n因此，用户可以：\n\n- 展开不同思考分支，而不覆盖原有路径；\n- 保留旁支内容，但剪断连线使其退出上下文；\n- 合并证据与推理路径，生成新的回答；\n- 在生成前检查并调整模型实际接收的信息。\n\n## 上下文变化可以复现和验证\n\n页面用“研究讨论中混入晚饭话题”说明问题：即使提问完全相同，无关上下文也可能改变答案。删除对应连线后，该分支不再发送给模型，示例中上下文减少了 47 tokens，再次生成的总结也不再出现晚饭建议。\n\n这使回答差异能被追溯到具体的上下文变更，而不是交给隐藏的系统逻辑。其产品价值尤其适合研究、证据整理和复杂决策等需要控制信息来源的场景。不过页面主要展示的是产品理念与交互案例，并未提供效果评测。\n\n## 已提供桌面版本\n\nThoughtDAG 提供内置本地引擎的独立桌面应用，无需 Node 或终端。当前页面列出 v0.3.18，支持 Windows x64、Linux x64；macOS 版已完成 Apple 签名与公证，历史版本可在 GitHub Releases 获取。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728025289,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2c46eb78b35c993dac3b7c2b583c1e88fb4c6c802e751ff11e415cfb582cd050",
+  "refs": {
+    "sessionId": "1786943321081_urvnnyu8"
+  },
+  "revisionId": "sha256:dd901c0c287774650edb1fb5fb2b05cfb637c28eaa81c666fbb5b86df4a223fc",
+  "schemaVersion": 1,
+  "updatedAt": 1789728025289
+}

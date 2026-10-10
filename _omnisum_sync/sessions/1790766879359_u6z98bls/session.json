@@ -1,0 +1,67 @@
+{
+  "createdAt": 1790766879359,
+  "entityType": "session",
+  "id": "1790766879359_u6z98bls",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "针对实际分类任务建立词袋加逻辑回归基线，再与微调ModernBERT及通用分类服务比较准确率、运行时间和使用成本。",
+      "在独立校准集上拟合温度参数，并在留出数据上比较校准前后的准确率、交叉熵及预期校准误差。",
+      "需要动态候选分类时，原型实现共享单输出评分头与跨候选softmax，测试候选数量变化及未见任务下的表现。"
+    ],
+    "archiveReason": "包含可复用的分类架构、动态候选评分方法和概率校准流程，能支持AI产品与Agent决策模块设计；产品性能及发布时间等说法应另行核实。",
+    "classifiedAt": 1790766933896,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "文本分类技术演进与概率校准",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "magazine.sebastianraschka.com",
+    "favicon": "https://substackcdn.com/image/fetch/$s_!flCl!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F342e39ec-514c-4b4d-8a76-6acf0cbd8248%2Ffavicon-32x32.png",
+    "knowledgePoints": [
+      "词袋加逻辑回归适合作为低成本分类基线；专用微调模型与通用分类服务的选择，应结合任务稳定性、调用规模、延迟和训练维护成本。",
+      "把输入、任务说明与候选描述一起编码，再用共享的单输出评分头逐项打分并跨候选做softmax，可以支持可变数量的候选，但陌生任务表现仍取决于训练数据。",
+      "交叉熵在理想条件下鼓励正确概率估计，但有限数据和过拟合会损害校准；温度缩放或加入Brier损失的收益必须通过留出数据验证。"
+    ],
+    "oneHighValuePoint": "分类准确率高不代表输出概率可靠：可在独立校准集上固定模型权重、学习温度参数，调整概率置信度而不改变最高概率类别，并在留出数据上验证校准效果。",
+    "oneLineReview": "分类架构与概率校准部分有明确实践价值，但篇幅存在重复，Jev性能、跨任务泛化及部分产品信息不宜直接作为选型依据。",
+    "primaryCategory": "AI技术",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "重点精读分类模型选型、共享评分头与概率校准部分，选择性保留产品评测内容",
+    "secondaryCategories": [
+      "技术实现与模型选型",
+      "Agent开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章回顾从词袋模型、RNN、CNN到Transformer的文本分类方法，以Jev讨论通用分类API的效率与适用边界，并介绍共享评分头、温度缩放和校准奖励。基础方法较清晰，但产品表现与部分新模型信息缺乏可核实证据。",
+    "tags": [
+      "文本分类",
+      "分类模型选型",
+      "概率校准",
+      "共享评分头",
+      "Agent决策路由"
+    ],
+    "title": "Language Models for Text Classification: From Bag-of-Words to Jev",
+    "totalScore": 74,
+    "url": "https://magazine.sebastianraschka.com/p/classifier-history-and-jev"
+  },
+  "payloadHash": "sha256:4e054d0fe3d0acdb8e4ca00cb7318d63e32548ccebfaab0f4a9d110a7b07f361",
+  "refs": {},
+  "revisionId": "sha256:8369df296e659bb135ff0c62eab3765a42be1d6f8d579da4ccf7d75324b27797",
+  "schemaVersion": 1,
+  "updatedAt": 1790768327247
+}

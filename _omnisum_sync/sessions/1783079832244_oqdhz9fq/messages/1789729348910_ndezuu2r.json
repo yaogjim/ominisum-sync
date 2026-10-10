@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729348910,
+  "entityType": "message",
+  "id": "1789729348910_ndezuu2r",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Codex Record & Replay：自动化资产正从“点击轨迹”转向“业务判断”\n\nOpenAI 为 Codex 增加的 Record & Replay，可将用户在 Mac 上演示的工作流生成可复用 skill。作者认为，它不只是更智能的录屏或宏工具，而是一个行业信号：RPA（机器人流程自动化）的核心资产，正在从界面操作步骤转向可审阅、复用和验证的业务执行规则。\n\n## 传统 RPA 擅长复现操作，却难以处理判断\n\n传统 RPA 主要记录选择器、键鼠动作、流程图和异常分支，解决“先点哪里、再输入什么”。但真实业务的难点往往是决策，例如：\n\n- 发票号与采购订单不匹配时，是退回还是标记异常；\n- 供应商只提供 PDF 时，是先 OCR 识别还是要求其录入系统；\n- 更新 CRM 时，哪些字段可以自动提交，哪些必须等待人工确认。\n\n这些判断依赖业务语义，而非单纯的操作轨迹。\n\n## Skill 开始描述“何时做、为何做、怎样算完成”\n\nCodex 生成的 skill draft 尝试捕捉启用条件、所需输入、执行步骤和结果验证方式。作者认为，这与 Anthropic computer use 训练中的思路相近：只记录点击位置，模型学到的是模仿；记录动作背后的理由，才可能形成可迁移能力。两者用途不同——前者服务于工作流复用，后者服务于模型训练——但都强调操作理由比轨迹本身更有价值。\n\n## Agent 没有取代 RPA，而是在重新定义它\n\n作者的核心判断是：RPA 不会消失，其界面操作能力会被 agent 吸收为基础工具。更重要的变化，是自动化交付物将从“一串点击”升级为一份明确规定输入、条件、步骤和验收标准的“业务执行合同”。这也意味着，未来产品竞争的重点可能不只是操作是否自动化，而是能否沉淀并可靠复用人的判断过程。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729348910,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5e3fc086509e579406f899a694488d02dafd85291ee469d1f50769a15b77b110",
+  "refs": {
+    "sessionId": "1783079832244_oqdhz9fq"
+  },
+  "revisionId": "sha256:6d80c358ec073fb55f6c1aee7fdf929849c7e0eed63343f7dbc11167a197b898",
+  "schemaVersion": 1,
+  "updatedAt": 1789729348910
+}

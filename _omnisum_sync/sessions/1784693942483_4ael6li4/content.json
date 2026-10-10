@@ -1,0 +1,15 @@
+{
+  "createdAt": 1784693942483,
+  "entityType": "session-content",
+  "id": "1784693942483_4ael6li4",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Sebastian Raschka</strong></header><div class=\"tw-body\">对于代理式编码，可以这样说：<br><br>除非您需要 Terra Ultra perf，否则使用具有更高努力设置的 Luna 模型总是更好的选择（相同或更好的性能但成本更低）。<br><br>忘记 Sol High 以下的所有内容，在这里使用 Luna 并设置更高的努力设置<br><br>不要使用 Sol Extra High，在这里使用 Terra Ultra<br><br>Sol Ultra 的额外成本相比 Max 可能并不值得</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HM3raXqWkAAMqGb?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Sebastian Raschka</strong> <span class=\"tw-eng\">♥ 248 · 💬 15</span><p>抱歉，我之前制作的原始图表中出现了标签错位。更正后的图表如下。即 Ultra = Max 等等。模型之间的相对比较仍然正确。（据我所知，Ultra 主要通过使用 4 个子代理来运行 Max 以实现加速）<br><br>这些数字来自</p></div><div class=\"tw-reply\"><strong>@Sebastian Raschka</strong> <span class=\"tw-eng\">♥ 46 · 💬 1</span><p>这是他们官方的一个修改版本 <br>https://<br>x.com/OpenAI/status/<br>2075271425548795909<br>… 图表<br>我根据 6 个数据点与 6 个工作强度等级的匹配关系，添加了这些标签</p></div><div class=\"tw-reply\"><strong>@Sebastian Raschka</strong> <span class=\"tw-eng\">♥ 37 · 💬 1</span><p>好问题，陡峭的斜率表明它可能还能做得更好一些。我不会说上下文长度是硬性限制，但可能它没有经过更高 token 预算的训练（因此不会使用更多的 token）。<br>这里的推理缩放也可能是很多种情况：更少的 token</p></div><div class=\"tw-reply\"><strong>@Sten Rüdiger</strong> <span class=\"tw-eng\">♥ 20 · 💬 1</span><p>为什么 Luna 无法扩展以实现更高的性能？这是否与上下文长度有关？</p></div><div class=\"tw-reply\"><strong>@Mario Filho</strong> <span class=\"tw-eng\">♥ 11 · 💬 1</span><p>我也在努力弄清楚真正的帕累托前沿<br><br>你在哪里找到的 Ultra numbers？我在 AA 和 OpenAI 的博客文章里找过，但没找到它们</p></div></div>",
+    "pageContent": "Sebastian Raschka: 对于代理式编码，可以这样说： 除非您需要 Terra Ultra perf，否则使用具有更高努力设置的 Luna 模型总是更好的选择（相同或更好的性能但成本更低）。 忘记 Sol High 以下的所有内容，在这里使用 Luna 并设置更高的努力设置 不要使用 Sol Extra High，在这里使用 Terra Ultra Sol Ultra 的额外成本相比 Max 可能并不值得\n![图片](https://pbs.twimg.com/media/HM3raXqWkAAMqGb?format=jpg&name=large)\n---\n热门回复 (共 5 条):\n@Sebastian Raschka (♥ 248 · 💬 15):\n抱歉，我之前制作的原始图表中出现了标签错位。更正后的图表如下。即 Ultra = Max 等等。模型之间的相对比较仍然正确。（据我所知，Ultra 主要通过使用 4 个子代理来运行 Max 以实现加速）\n\n这些数字来自\n\n@Sebastian Raschka (♥ 46 · 💬 1):\n这是他们官方的一个修改版本 \nhttps://\nx.com/OpenAI/status/\n2075271425548795909\n… 图表\n我根据 6 个数据点与 6 个工作强度等级的匹配关系，添加了这些标签\n\n@Sebastian Raschka (♥ 37 · 💬 1):\n好问题，陡峭的斜率表明它可能还能做得更好一些。我不会说上下文长度是硬性限制，但可能它没有经过更高 token 预算的训练（因此不会使用更多的 token）。\n这里的推理缩放也可能是很多种情况：更少的 token\n\n@Sten Rüdiger (♥ 20 · 💬 1):\n为什么 Luna 无法扩展以实现更高的性能？这是否与上下文长度有关？\n\n@Mario Filho (♥ 11 · 💬 1):\n我也在努力弄清楚真正的帕累托前沿\n\n你在哪里找到的 Ultra numbers？我在 AA 和 OpenAI 的博客文章里找过，但没找到它们\n"
+  },
+  "payloadHash": "sha256:f47ce10bce50b123bbdba7f8fb13e737c65ab098bfc736e3c3cfe7e93bbcb75b",
+  "refs": {},
+  "revisionId": "sha256:43e22833bd95c9d211f286becf357336518e058a7763783d489b298cfc2ad12b",
+  "schemaVersion": 1,
+  "updatedAt": 1789728802361
+}

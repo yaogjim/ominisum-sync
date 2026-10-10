@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726087793,
+  "entityType": "message",
+  "id": "1789726087793_zxyu2rz9",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n据逆向源码，Cursor 只常驻核心工具，把少用工具藏在两个统一入口后按需加载，核心目的不是“少给模型看”，而是保持工具列表稳定、提高 KV 缓存命中率，从而降低 Agent 成本。\n\n## 关键内容\n\n- Grok Bot 有 30 多个工具，其中 9 个动态工具平时只显示一行人工编写的提示；需要时，模型先用 `GetMcpTools` 获取完整定义，再通过 `CallMcpTool` 执行。\n- 工具定义位于上下文前部；若每轮修改 API 的 `tools` 数组，后续对话缓存可能一起失效。文中以 Claude Sonnet 为例，缓存输入价格约为未缓存的十分之一。\n- 作者强调要区分两层：**Skill 提供“怎么做”的知识**，通常配合 Bash 等通用工具；**动态工具提供“能调用什么”的能力**，适合需要内部状态、鉴权或专用接口的功能。\n- Manus 选择让全部工具常驻、在解码时屏蔽暂不可用工具；Grok Bot 则保留稳定的通用入口、按需读取工具定义。做法相反，但都遵守“序列化工具面要稳定”。\n\n## 通俗解读\n\n可以把它理解为：菜单目录固定，但冷门菜的详细做法需要时再查，避免每次改菜单都让整份对话缓存作废。作者认为，这种方案只在“工具多、每轮只用少数、模型容易选错”时划算，否则额外查询反而增加往返。\n\n**是否值得细读：**如果你在设计 Agent、工具调用或控制推理成本，值得；若只关心 Cursor 产品功能，本文偏底层实现，读本总结即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726087793,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5a91e86f2a38082638cce38de20d26b0b6a414d98297c5020a90c332a67e5c84",
+  "refs": {
+    "sessionId": "1787889417743_d3bjzb3c"
+  },
+  "revisionId": "sha256:7a656daaa350f37b5284a6d7f7841c43c23c1fc19896f88851d3cd2834c85963",
+  "schemaVersion": 1,
+  "updatedAt": 1789726087793
+}

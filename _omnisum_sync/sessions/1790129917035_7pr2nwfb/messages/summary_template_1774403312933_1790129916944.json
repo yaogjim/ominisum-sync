@@ -1,0 +1,25 @@
+{
+  "createdAt": 1790129916944,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1790129916944",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Jev：Coding Agent 的核心竞争力在上下文编排\n\n文章认为，Coding Agent 本质上只是 “模型＋工具＋循环”，真正的工程杠杆不在循环或更强模型，而在每一轮如何组装上下文。Jev 被设想为模型旁的决策层：根据显式、类型化状态，决定展示哪些信息、调用什么工具、选择哪个模型，以及操作是否安全。\n\n## KV Cache 塑造了六类低效设计\n\n现有 Agent 为复用 KV Cache，普遍采用只追加的对话记录，由此带来路由成本倒挂、工具 schema 挤占窗口、无差别压缩丢信息、子 Agent 难并行、重启时好坏状态一起丢失，以及内置能力越多上下文越臃肿。\n\n例如，将任务从 Opus 路由给 Sonnet 再交回，在文中给定会话结构下，成本为 6.19，高于全程使用 Opus 的 4.15。问题不只是模型价格，而是重复加载和重建上下文。\n\n## 显式状态让上下文按问题动态生成\n\n方案是把文件、搜索结果、工具输出和指令保存为可寻址的状态块，再由 Jev 按当前问题决定隐藏、摘要或完整展示。由此可实现：\n\n- 只向廉价模型或子 Agent 提供小而相关的上下文；\n- 工具采用 “简介 — 详情 — 完整 schema” 分级披露；\n- AGENTS.md 等规则按目录和任务条件加载；\n- 权限结合命令内容、文件敏感度与供应商可信度判断；\n- 多个只读后台任务共享一次检索结果。\n\n## 最大优化空间可能是检索而非生成\n\n文中估算，读取、搜索和命令输出约占处理 token 的三分之二，写代码仅占 4%—10%；微软 fastcontext 数据也显示，读取与搜索占主 Agent token 的 46.5%。因此，更聪明、可复用的检索可能比改进代码生成或 diff 格式更有价值。\n\n这是一份基于 TypeSafe 创始人设计笔记的第三方汇编，并非已验证的产品架构；但它提出了一个重要方向：Agent 平台的差异化，可能来自对状态、上下文、成本与安全策略的系统控制，而非单纯接入更强模型。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1790129916944,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f4863f5ccecc3efba3b252e27cdfade1b349a11ba8b5edc3f47be58af8703635",
+  "refs": {
+    "sessionId": "1790129917035_7pr2nwfb"
+  },
+  "revisionId": "sha256:d6ca6081b3093e4537e8915598fd8571d408416f8d33203a925b99246bb6c6ad",
+  "schemaVersion": 1,
+  "updatedAt": 1790129916944
+}

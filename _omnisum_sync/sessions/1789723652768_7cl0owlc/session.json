@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789723652768,
+  "entityType": "session",
+  "id": "1789723652768_7cl0owlc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择非关键项目试用实验版，验证多仓库、议题、拉取请求和智能体操作的完整性与稳定性。",
+      "检查从需求对话到议题、实现、评审和合并是否能形成可追踪的上下文链。",
+      "评估自托管relay、密钥权限、智能体授权和签名审计机制是否满足团队安全要求。"
+    ],
+    "archiveReason": "提出了将对话、代码活动、智能体身份和签名贡献记录统一建模的产品架构，对Agent开发工具设计有参考价值。",
+    "classifiedAt": 1789723685372,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Buzz智能体原生项目协作",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "engineering.block.xyz",
+    "favicon": "https://engineering.block.xyz/blog/favicon.png",
+    "knowledgePoints": [
+      "智能体软件开发需要的不只是终端权限，还需要覆盖讨论、议题、代码、评审和发布历史的持久项目上下文。",
+      "统一身份系统可让消息、推送、评审和合并由同一密钥签名，为人类与智能体的贡献提供可验证溯源。",
+      "项目层可以聚合多个仓库、频道和活动流，使不同代码资产共享描述、上下文与协作历史。"
+    ],
+    "oneHighValuePoint": "将需求对话、代码变更、评审过程和执行者身份保存在同一可检索、可签名的上下文链中，可降低智能体协作时的上下文丢失与责任归属问题。",
+    "oneLineReview": "产品构想与Agent协作方向高度相关，但内容偏功能宣介，缺少数据、案例和可复现的实施细节。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并存档，保留其智能体原生协作与可验证贡献设计思路",
+    "secondaryCategories": [
+      "软件开发工具",
+      "产品设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Buzz Projects：将代码仓库、议题、拉取请求、对话与智能体活动统一到自托管relay，并以Nostr密钥签名贡献记录，强调上下文连续性、身份归属和项目主权；目前仍处实验阶段。",
+    "tags": [
+      "智能体协作",
+      "上下文管理",
+      "代码托管",
+      "Nostr身份",
+      "贡献溯源"
+    ],
+    "title": "Projects in Buzz",
+    "totalScore": 65,
+    "url": "https://engineering.block.xyz/blog/projects-in-buzz"
+  },
+  "payloadHash": "sha256:38e52a791ce44284addea5aa374017ae16443cf31f002e85ab1366efaac66ee2",
+  "refs": {},
+  "revisionId": "sha256:6e40034842addc6966de9c3f3abbe397e5b5efb8a2a40b0cd91eed4a2d8c0cc8",
+  "schemaVersion": 1,
+  "updatedAt": 1789727391709
+}

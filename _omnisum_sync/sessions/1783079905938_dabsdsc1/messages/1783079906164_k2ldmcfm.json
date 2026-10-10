@@ -1,0 +1,20 @@
+{
+  "createdAt": 1783079737537,
+  "entityType": "message",
+  "id": "1783079906164_k2ldmcfm",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 深度总结\n\n这条内容的核心观点是：\n\n> **CLAUDE.md / AGENTS.md 不是“银弹”，不要把它写成万能说明书。真正关键的是 Agent harness（运行框架/工作流支撑）是否足够完善。**\n\n作者认为，`AGENTS.md` 应该只承载**项目相关、个人偏好、角色职责**这些“上下文信息”，而不应该塞入大量通用知识、通用方法论。\n\n作者给出的实践方案是分层管理：\n\n## 1. 全局 AGENTS.md：只管本地环境约定\n\n例如规定：\n\n```text\n代码仓库路径：\n~/repos/github.com/org_name/repo_name\n\nWorktree 路径：\n~/worktrees/github.com/org_name/repo_name/branch_name\n```\n\n作用是：\n\n- 避免多个 Agent 到处乱 clone 项目\n- 统一目录结构\n- 方便清理和管理\n- clone 前先检查本地是否已有仓库\n\n## 2. 项目 AGENTS.md：写项目上下文\n\n放在项目的 `.agents/AGENTS.md` 中，主要写：\n\n- 项目概览\n- 文档位置\n- 特殊约束\n- 禁止事项\n\n例如：\n\n> 禁止滥用 fallback。\n\n也就是告诉 Agent：这个项目是什么、该看哪里、有哪些坑别踩。\n\n## 3. AgentHome AGENTS.md：写角色和权限\n\n每个 Agent 可以有自己的工作目录，即 AgentHome。\n\n其中的 `.agents/AGENTS.md` 用来定义：\n\n- 这个 Agent 的角色\n- 是否有合并代码权限\n- PR / Review / CI / Deploy 流程要求\n- 它能做什么，不能做什么\n\n如果用 Codex，作者会给每个 Agent 创建专属 AgentHome，并在该目录启动 Codex，让它先加载角色说明，再指定项目目录。\n\n作者提到，自己的 holon 系统已经内置了这套机制。\n\n---\n\n# 深入浅出解读\n\n很多人现在把 `CLAUDE.md` / `AGENTS.md` 当成“魔法咒语”：\n\n> 只要写得足够好，Agent 就会变聪明。\n\n但作者的意思是：\n\n> **不是文档越长越好，而是系统设计要清楚。**\n\n可以类比成公司管理：\n\n- `全局 AGENTS.md`：公司办公制度，比如文件放哪、仓库在哪\n- `项目 AGENTS.md`：某个项目的说明书，比如业务背景、技术文档、特殊禁忌\n- `AgentHome AGENTS.md`：某个员工的岗位职责，比如能不能审批、能不能上线、负责哪块\n\n如果你把所有东西都塞进一个文件里，就像让员工入职时背一本几百页的公司百科：\n\n- 信息太杂\n- 重点不清\n- 容易冲突\n- Agent 反而更容易做错\n\n真正高效的方式是：\n\n> **该系统管的交给系统，该项目说明的写项目，该角色约束的写角色。**\n\n---\n\n# 关键洞察\n\n## 1. 文档不是能力，流程才是能力\n\n`AGENTS.md` 本身只是提示词文件。\n\n它不能替代：\n\n- 目录规范\n- 权限管理\n- 工作流编排\n- 多 Agent 协作机制\n- CI/CD 约束\n- Review 机制\n\n如果底层 harness 不行，文档写得再漂亮，也只是“人工补丁”。\n\n## 2. AGENTS.md 应该越具体越好\n\n好的 `AGENTS.md` 不应该写：\n\n> 你是优秀工程师，请认真分析，写高质量代码。\n\n这种话太通用，价值有限。\n\n更应该写：\n\n> 本项目禁止使用 fallback 掩盖错误。  \n> API 文档在 docs/api.md。  \n> 合并前必须跑 pnpm test。  \n> worktree 必须放在指定路径。\n\n也就是：\n\n> 少写空话，多写约束；少写理念，多写事实。\n\n## 3. Agent 需要“组织结构”，不是只需要提示词\n\n作者强调的其实是 Agent 工程化：\n\n- 文件该放哪\n- 多个 Agent 如何隔离\n- 谁有权限合并\n- 谁负责 review\n- 谁能 deploy\n- 如何避免重复 clone\n- 如何避免污染仓库\n\n这说明 AI 编程正在从“单次对话”走向“长期协作系统”。\n\n---\n\n# 我的辩证思考\n\n## 赞同之处\n\n作者的观点很重要：  \n**不要迷信 CLAUDE.md / AGENTS.md。**\n\n现在很多人把提示词文件当作万能解法，本质上还是“Prompt 崇拜”。\n\n但真实工程里，可靠性来自系统设计：\n\n- 明确边界\n- 明确权限\n- 明确流程\n- 明确上下文\n- 明确失败处理\n\n这比写一堆“请你仔细思考”更有用。\n\n---\n\n## 需要补充的一点\n\n不过，也不能低估 `AGENTS.md` 的价值。\n\n对于个人开发者或小团队来说，一个写得好的 `AGENTS.md` 仍然很有帮助，因为它可以快速沉淀：\n\n- 项目背景\n- 编码规范\n- 常见坑\n- 测试命令\n- 部署流程\n\n问题不在于写不写，而在于：\n\n> **不要把它写成百科全书，也不要指望它解决所有工程问题。**\n\n---\n\n## 更合理的原则\n\n可以用一句话概括：\n\n> **AGENTS.md 负责“告诉 Agent 必须知道什么”，harness 负责“保证 Agent 按规则做事”。**\n\n二者关系应该是：\n\n| 层级 | 作用 |\n|---|---|\n| Harness | 提供流程、权限、环境、自动化 |\n| AGENTS.md | 提供上下文、偏好、职责、约束 |\n| Agent | 在边界内完成任务 |\n\n---\n\n# 最终结论\n\n`CLAUDE.md / AGENTS.md` 不是万能提示词，而是 Agent 工程体系中的一小部分。\n\n真正成熟的做法是：\n\n1. **全局文件管环境约定**\n2. **项目文件管项目上下文**\n3. **AgentHome 文件管角色职责**\n4. **harness 管流程、权限和执行保障**\n\n一句话：\n\n> **不要试图用一个文档解决所有问题；要用分层系统管理 Agent。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1783079737537,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c32435b89851122bd8b68b684cabcf68ec5bb3849b86d4b1e5ed58abff83e607",
+  "refs": {
+    "sessionId": "1783079905938_dabsdsc1"
+  },
+  "revisionId": "sha256:9834a8191fc19faab21f07bdc77a2b0caaa2df60202f9d52ceb5df4db39bc8db",
+  "schemaVersion": 1,
+  "updatedAt": 1783079737537
+}

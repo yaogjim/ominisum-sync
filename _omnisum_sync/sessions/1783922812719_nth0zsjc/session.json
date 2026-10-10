@@ -1,0 +1,71 @@
+{
+  "createdAt": 1783922812719,
+  "entityType": "session",
+  "id": "1783922812719_nth0zsjc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "克隆项目并安装依赖，启动本地服务体验现有模板。",
+      "阅读README.md和SYSTEM.md，确认模板结构与运行规范。",
+      "选择一个现有模板作为参照，新增参数化模板并运行检查和样例渲染。"
+    ],
+    "archiveReason": "提供了完整的安装、运行、渲染和Agent新增模板流程，并明确目录结构、可编辑变量及检查要求，具有较强复用价值。",
+    "byline": "by 栗噔噔 · 小红书 / 抖音 / 视频号 / 公众号 / B站 / X / YouTube / 即刻 同名",
+    "classifiedAt": 1784677697743,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "可由Agent扩展的视频动效系统",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "nutllwhy.github.io",
+    "favicon": "",
+    "images": [],
+    "knowledgePoints": [
+      "每个可复用动效模板需包含页面、设计说明、元数据、默认预设和包配置等标准文件。",
+      "通过data-composition-variables暴露文案、数字和颜色，可将固定动效改造成参数化模板。",
+      "新增模板后应同步更新catalog.json，并运行检查与样例渲染，避免破坏已有模板和预设。"
+    ],
+    "oneHighValuePoint": "将动效模板开发约束为固定目录、可编辑变量、确定性动画、目录登记和自动检查的标准流程，便于Agent持续扩展。",
+    "oneLineReview": "这是一份执行路径清晰的开源动效系统使用指南，但对架构原理、实际效果和稳定性验证介绍有限。",
+    "primaryCategory": "视频动效开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "适合精读并存档，可作为Agent扩展视频动效模板库的实施参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI Agent开发",
+      "开源工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍一套可本地运行的开源视频动效系统，给出安装、预览和渲染命令，并说明如何让Agent依据项目规范新增模板、暴露可编辑参数、更新目录及执行检查。",
+    "tags": [
+      "视频动效模板",
+      "Agent工作流",
+      "HyperFrames",
+      "GSAP",
+      "自动化渲染"
+    ],
+    "title": "视频动效系统",
+    "totalScore": 75,
+    "url": "https://nutllwhy.github.io/hyperframes-motion-library/"
+  },
+  "payloadHash": "sha256:fdb29ba27f38639b01e545613e2258b18beff61328b025116b8991644303dba9",
+  "refs": {},
+  "revisionId": "sha256:228fca61c1c00c2054ab1ba8d23973f5622209c81b3319fcb2b0de97473d49d7",
+  "schemaVersion": 1,
+  "updatedAt": 1789695941462
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784694950347,
+  "entityType": "message",
+  "id": "1784695089944_7kn7jgdg",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 内容总结\n\n这篇内容介绍了 Callstack 开源的移动端自动化 CLI 工具 **agent-device**。它的核心价值是让 Coding Agent 能够直接操作真实的 iOS/Android 应用，并完成探索、验证、记录和回放等任务。\n\n## 1. agent-device 的定位与核心能力\n\n- **agent-device 是 Callstack 开源的移动端自动化 CLI**。\n- 官方定位是：**“Mobile app verification for AI agents”（面向 AI Agent 的移动应用验证）**。\n- 它并不是要完全取代传统测试框架，而是为 AI Agent 提供操作移动应用的能力。\n\nAI Agent 可以通过它完成：\n\n- 打开应用；\n- 读取应用的 **Accessibility Snapshot**；\n- 根据语义化的 `ref` 定位并点击控件；\n- 输入文本；\n- 截图与录屏；\n- 采集应用日志；\n- 抓取性能数据；\n- 将探索过程保存为可重复执行的 `.ad` 脚本。\n\n例如，Agent 可以打开一个购物 App，读取当前页面中的“搜索框”或“加入购物车”按钮，通过语义引用完成点击和输入，再将整个操作流程保存下来，之后重复回放。\n\n## 2. 支持的应用类型与运行环境\n\nagent-device 不仅支持原生移动应用，还支持：\n\n- 使用 **Expo** 构建的应用；\n- 使用 **Flutter** 构建的应用；\n- 在真实 iOS/Android 设备上运行的应用；\n- 在 iOS/Android 模拟器上运行的应用。\n\n这意味着开发者可以让 AI Agent 在接近真实用户使用环境的条件下，对移动应用进行操作和验证。\n\n## 3. 项目地址\n\n- GitHub：<https://github.com/callstack/agent-device>\n\n原文还引用了网友的推荐：“有，可以试试 agent device”，说明该工具已开始在开发者社区中获得关注。\n\n## 4. 热门回复中的相关信息\n\n### 关于 AI Agent 安全性的讨论\n\n一条热门回复提到：\n\n- **7 月 16 日**，Hugging Face 发布文章称，其服务器曾被一个**全自动 AI Agent**攻入；\n- 整个过程中几乎没有人工操作。\n\n这条回复借此强调了开源 AI 模型和 AI Agent 自主行动能力带来的影响与安全问题。不过，这属于评论区对 AI Agent 的延伸讨论，并非 agent-device 项目本身的功能说明。\n\n### 关于 Agent 学习资料\n\n另一条回复推荐了 **Pi-Agent 教程**：\n\n- 共 **10 章**；\n- 系统讲解 Agent Loop、工具系统、消息系统、事件驱动、会话管理和上下文工程；\n- 每章从三个层面展开：\n  1. 概念是什么；\n  2. 源码如何实现；\n  3. 为什么这样设计；\n- 提供 Web、本地 Markdown 和 PDF 三种阅读方式。\n\n项目地址：<https://github.com/buchidonggua/dg-ai-notes>\n\n### 其他工具与模型相关讨论\n\n评论区还提到了：\n\n- DeepSeek v4 系列模型，尤其是低成本的 Flash 版本，适合编写和还原 TypeScript Agent；\n- `sim-use`，有网友表示其移动端模拟操作体验也很好；\n- 有关 AI Agent 产品开发、增长和技能使用的经验分享。\n\n总体来看，评论区主要围绕 **AI Agent 的自主操作能力、开发教程、模型能力以及移动端自动化工具** 展开讨论。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784694950347,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:73ec453b124b6e7841f8764e200913d4d015a479d45feeba262c935c80cb7034",
+  "refs": {
+    "sessionId": "1784695089628_w639o00a"
+  },
+  "revisionId": "sha256:24ed2c89713199f2ff4e0109b62f3440c0f19ab29163f25626175f17f1ed1d78",
+  "schemaVersion": 1,
+  "updatedAt": 1784694950347
+}

@@ -1,0 +1,83 @@
+{
+  "createdAt": 1789890878997,
+  "entityType": "session",
+  "id": "1789890878997_l23vi40d",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文档安装后，在小型内容目录运行jev-seo audit docs/ --json，人工核对标题、链接和内容问题的检测结果。",
+      "使用jev-seo sitemap与jev-seo robots检查自有站点的站点地图及AI爬虫权限。",
+      "启动jev-seo mcp，试验将文档列出的审计工具接入编码Agent工作流。"
+    ],
+    "archiveReason": "提供明确的CLI命令、MCP工具参数和审计项目，可用于内容站点检查与Agent工具集成参考。",
+    "classifiedAt": 1790762380612,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "智能体原生搜索优化工具与审计流程",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/241d396f6318fe93635296813be4a37c972f2b2ebfc1eea63fba12473f9ce6ca/AkashPriyadarshii/jev-seo",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/241d396f6318fe93635296813be4a37c972f2b2ebfc1eea63fba12473f9ce6ca/AkashPriyadarshii/jev-seo",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "文档列出8个MCP工具及其参数，将关键词、SERP、页面审计、GEO、结构化数据、爬虫权限、内容简报和站点地图检查分别封装。",
+      "目录审计覆盖标题冲突、canonical、图片alt、标题层级、孤立页面和关键词蚕食，可作为内容检查清单参考。",
+      "该工具组合使用本地文件审计、SQLite历史存储、DuckDuckGo抓取和需要API密钥的TypeSafe评分；本地存储不代表全部处理均在本地完成。"
+    ],
+    "oneHighValuePoint": "将页面、结构化数据、爬虫权限和站点地图审计同时暴露为CLI命令与MCP工具，为编码Agent接入内容检查提供了具体接口参考。",
+    "oneLineReview": "可作为SEO审计与Agent集成的工具候选，但命令文档的实用性不等于其优化效果和替代能力已获验证。",
+    "primaryCategory": "开发工具",
+    "rating": "B",
+    "rejectReason": "缺少实际输出、独立测试和评分校准证据，不能据此认可商业工具替代能力、引用概率预测或性能承诺。",
+    "retentionDecision": "选择性保留命令参考和MCP工具映射，使用前验证实际功能与评分可靠性",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent开发",
+      "搜索引擎优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Rust工具jev-seo，通过命令行和MCP提供关键词发现、页面审计、站点地图检查、爬虫权限分析及排名跟踪，并列出安装命令、工作流程和模块结构；其性能与GEO效果主要为项目自述。",
+    "tags": [
+      "Rust",
+      "MCP",
+      "SEO审计",
+      "GEO",
+      "SQLite"
+    ],
+    "title": "AkashPriyadarshii/jev-seo: 100% free ₹0 agent-first SEO & GEO CLI suite and MCP server in Rust replacing Semrush and OpenSEO via DuckDuckGo and TypeSafe Jev System One",
+    "totalScore": 65,
+    "url": "https://github.com/AkashPriyadarshii/jev-seo"
+  },
+  "payloadHash": "sha256:b20bfae07b6d5e576c199a6a52dc54484b410e99d75a905e0d2a2c1798dde7f0",
+  "refs": {},
+  "revisionId": "sha256:8a903cfb2692813b5478fc60b5b06e66849a710eeff6133aa86ed7c43e9f6c94",
+  "schemaVersion": 1,
+  "updatedAt": 1790762381417
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1785288313665,
+  "entityType": "session",
+  "id": "1785288313665_j14e7hvq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "使用服务前提前预约并提交准确的返程航班信息。",
+      "预约前核对车辆重量、高度、轴距和轮径是否符合限制。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1785402818828,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "盖特威克机场启用机器人停车",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "aerospaceglobalnews.com",
+    "favicon": "https://aerospaceglobalnews.com/wp-content/uploads/2024/06/cropped-AGN_Icon_Jet-32x32.png",
+    "knowledgePoints": [
+      "用户将车辆停入封闭交付舱后可保留钥匙，机器人从底部托举轮胎并搬运车辆。",
+      "系统根据用户提交的返程航班信息安排车辆取回，使车辆在乘客返回时进入提取舱。",
+      "服务仅接受提前预约，并设有2.6吨重量、2.3米高度、3.3米轴距和21英寸轮径上限。"
+    ],
+    "oneHighValuePoint": "机器人搬运使车辆无需预留人员上下车和开门空间，可通过更紧密的排列增加既有停车场容量。",
+    "oneLineReview": "服务流程和使用限制较为明确，但商业成效与技术可靠性主要停留在企业陈述层面。",
+    "primaryCategory": "智能交通",
+    "rating": "C",
+    "rejectReason": "属于单一服务上线新闻，缺少容量提升数据、价格、可靠性及运营细节，长期复用价值有限。",
+    "retentionDecision": "速览了解机场自动化停车流程，无需长期保留",
+    "secondaryCategories": [
+      "产品设计",
+      "自动化系统"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章报道伦敦盖特威克机场与Stanley Robotics推出英国机场首个机器人停车服务，介绍车辆交付、自动搬运和按航班取车流程，并列出车辆尺寸重量限制及容量优势。",
+    "tags": [
+      "机器人停车",
+      "机场服务",
+      "自动搬运",
+      "停车容量"
+    ],
+    "title": "London Gatwick introduces robotic parking service",
+    "totalScore": 51,
+    "url": "https://aerospaceglobalnews.com/news/gatwick-airport-robotic-parking-stanley-robotics/"
+  },
+  "payloadHash": "sha256:fd16cc2f758e99c0b35737a4c2d24d9c4826126f4457b32feed08c17f6f69c4d",
+  "refs": {},
+  "revisionId": "sha256:d580cb69046c15bfdc1658542c5c2fc908ee559d99a710715a984032abcfdc1b",
+  "schemaVersion": 1,
+  "updatedAt": 1785402818885
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693813672,
+  "entityType": "message",
+  "id": "1789693813673_imvdsv8d",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nFDE（前线部署工程师）的核心，是让可信赖的工程师基于可复用平台深入客户现场，替非技术客户把复杂软件真正落地并交付业务结果。\n\n## 关键内容\n\n- **解决“产品强但客户不会用”**：客户购买的不是软件或咨询，而是货架供给增加、产线效率提升等结果。文中将 Palantir 的高客单价部分归因于这种模式，并引用其平均合同额约 400 万美元的数据，但未提供数据出处。\n- **不同于外包开发**：FDE 应在统一平台上组装、配置和少量定制；若每个项目都从零写代码，就会产生大量孤立系统，维护成本和人员压力难以持续。\n- **是否适合，看两个条件**：产品是否技术复杂、买家是否缺乏技术能力；公司是否已有或愿意建设可复用平台。面向工程师或开箱即用的产品通常不需要 FDE。\n- **AI 可能放大需求**：Kevin 认为，Agent 化让软件更易定制，也更难让客户自行摸清能力，因此更多公司可能需要 FDE。合适人选既要会开发，也要能被信任去直接面对客户。\n\n## 通俗解读\n\nFDE 像“既懂产品、又能到现场施工的工程师”：不是替每户重盖一栋房，而是用标准化材料按需求装修。若你关心复杂 AI 产品如何交付，值得细读或观看原讲座；本文只是二手摘要，相关数据和论证仍需回看视频核实。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693813672,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:26e309ff6709df62998fad7fe6b6dcecf97d15f5cc1e737cfe032f4fe263032b",
+  "refs": {
+    "sessionId": "1789533273811_2idll57i"
+  },
+  "revisionId": "sha256:488dc635b7b8125fe6e4e3a5a4e4b7cd7f75902c1bfaac07338a6f918e47085c",
+  "schemaVersion": 1,
+  "updatedAt": 1789693813672
+}

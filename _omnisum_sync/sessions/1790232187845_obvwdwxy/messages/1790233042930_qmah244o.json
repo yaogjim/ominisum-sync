@@ -1,0 +1,19 @@
+{
+  "createdAt": 1790233042931,
+  "entityType": "message",
+  "id": "1790233042930_qmah244o",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Android 车机 CarPlay 接收端项目\n\n**评级**: B (65分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 软件工程与技术实现\n**次类别**: 产品设计与开发\n**标签**: #Android 车机 #CarPlay #MFi 认证 #CH341 #远程认证接口\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| contribution_value | 7 | - |\n| 证据质量 | 6 | 10% |\n| 相关性 | 6 | 20% |\n| information_efficiency | 7 | - |\n| 信息密度 | 0 | 10% |\n| 新颖性 | 0 | 10% |\n| 可操作性 | 0 | 15% |\n| 方法论价值 | 0 | 15% |\n| 可迁移性 | 0 | 10% |\n| 长期杠杆 | 0 | 10% |\n\n**一句话点评**: 这是一份具体的车机协议集成项目索引，但 README 不足以验证其兼容性或实现质量。\n**核心高价值点**: 列出了远程 MFi 认证的证书获取、挑战签名和重置三个接口，以及本地 MFi 芯片的两种连接方式。\n\n### 摘要\n该 GitHub 项目提供 Android 与 Android Automotive OS 的 CarPlay 接收端，支持通过 CH341、原生 I2C 或远程服务进行 MFi 认证，并列出有线及无线连接、构建要求和远程认证 API。项目称已在车机和手机上测试，同时注明 CarPlay Ultra 协议栈尚不完整。\n\n### 知识要点\n- 项目将共享的 CarPlay 主机界面与 Android、Android Automotive OS 两个目标模块分开。\n- 本地 MFi 芯片可通过 CH341 I2C 桥或设备的原生 I2C 控制器连接；远程认证则通过服务接口调用。\n- 文中仅称 CarPlay Ultra 可触发 iPhone 提示，其协议栈尚未完成充分测试。\n\n### 行动项\n- 若评估该项目用于车机，先核对 Android 版本、USB Host/OTG、MFi 硬件及构建环境要求。\n- 若需要验证兼容性，在目标设备上测试并查看项目指定的日志文件。\n\n### 存档判定\n归档: 是 — 原因: 可作为 Android CarPlay 接收端的模块划分、MFi 接入方式和远程认证接口参考。\n删除: 否\n留存决策: 浏览项目概况并存档；需要研究车机连接或 MFi 集成时再查看代码。",
+    "role": "assistant",
+    "timestamp": 1790233042931,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:6e9f0d9b4ac337b413133d049c71a856854f95887554929956055228b3105af8",
+  "refs": {
+    "sessionId": "1790232187845_obvwdwxy"
+  },
+  "revisionId": "sha256:34e638fd71c208cb9afbc03b1d06a8bb1e2a8d100c4ed28dfa6366522ee515e9",
+  "schemaVersion": 1,
+  "updatedAt": 1790233042931
+}

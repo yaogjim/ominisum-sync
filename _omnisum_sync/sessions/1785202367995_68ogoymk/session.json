@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785202367995,
+  "entityType": "session",
+  "id": "1785202367995_68ogoymk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "面对重要的新技术领域，先列出核心问题，再通过教材、论文和一线专家补齐基础知识，并从第一性原理重建判断。",
+      "评估现有Agent项目的计划文件、记忆、工具调用和输出是否支持局部修改与可验证的增量变化。",
+      "在AI产品规划中绘制完整系统边界，明确输入输出、信息流速率、计算与存储约束以及主要扩展瓶颈。"
+    ],
+    "archiveReason": "包含可迁移的技术判断视角、Agent系统设计问题清单及创业学习方法，与AI开发和产品创业高度相关。",
+    "classifiedAt": 1785204118221,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "黄仁勋的创业韧性与AI系统观",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/fc4325e2/img/favicon.ico",
+    "knowledgePoints": [
+      "英伟达的核心判断不是制造更好的芯片，而是识别值得加速的算法领域，并围绕处理器、中间件、算法和应用重构完整技术栈。",
+      "Agent系统设计应关注工作负载、瓶颈、并发、沙箱、工具协议、工作记忆、长期记忆以及细粒度可控性。",
+      "物理AI的训练与验证可拆分为现实到仿真、基于物理与生成模型的模拟评测，以及通过强化学习完成仿真到现实迁移。"
+    ],
+    "oneHighValuePoint": "Agent不必先达到百分之百准确，关键突破是让人能对计划、记忆和生成结果进行细粒度修改，并由系统稳定传播局部变化。",
+    "oneLineReview": "覆盖AI系统与创业判断的多个关键问题，视角鲜明且可迁移，但部分产业和就业结论缺少可核验来源。",
+    "primaryCategory": "AI战略与技术创业",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并归档，重点提取系统思维、Agent可控性和新领域学习框架",
+    "secondaryCategories": [
+      "Agent开发",
+      "组织与学习方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "黄仁勋结合英伟达早期转向、AlexNet与加速计算经历，讨论第一性原理组织、系统思维、Agent可控性、自有AI、就业变化及物理AI，并强调通过快速学习与逐日韧性应对不确定性。",
+    "tags": [
+      "加速计算",
+      "系统思维",
+      "AI Agent",
+      "第一性原理",
+      "创业韧性"
+    ],
+    "title": "Jensen Huang: The Mindset That Built NVIDIA - YouTube",
+    "totalScore": 75,
+    "url": "https://www.youtube.com/watch?v=I4B37S1dyQQ"
+  },
+  "payloadHash": "sha256:17d133ecd08c6273addb284597dda8bc8dc0002ea894903095910e04fb8a0ba0",
+  "refs": {},
+  "revisionId": "sha256:2a3f61d3852694152affc5d5cb8a6d80619ef9701281263e202345a751b49d35",
+  "schemaVersion": 1,
+  "updatedAt": 1789696323125
+}

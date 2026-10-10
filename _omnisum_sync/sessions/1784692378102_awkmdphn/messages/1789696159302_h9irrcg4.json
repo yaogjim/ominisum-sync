@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696159302,
+  "entityType": "message",
+  "id": "1789696159302_h9irrcg4",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nAnthropic 的 Claude Code 团队认为，编程智能体正把软件开发从“亲手写代码”转向“判断该做什么、指导智能体并验证结果”，团队协作、评测与安全机制因此变得更重要。\n\n## 关键内容\n\n- 随着模型能力提升，开发者可把大量实现工作交给 Claude，更专注于产品判断和快速试错；在测试完善的前提下，过去风险很高的系统重写也更可行。\n- Claude Tag 将智能体放进 Slack：可持续监控错误、起草 PR、保留频道记忆并由多人共同指导。据团队称，它已完成 Anthropic 产品工程团队约 65% 的 PR。\n- 人工审查并未立即取消：核心代码仍由负责人把关，外围改动才逐步交给自动审查；团队通过测试、事故复盘和评测集积累信任。\n- 新模型判断力增强后，Claude Code 的系统提示词最多缩短了 80%，减少死板规则。但设计审美和交互体验仍是明显短板。\n\n## 通俗解读\n\n核心变化不是“工程师不用思考”，而是代码实现变便宜后，瓶颈转向选题、品味和验收。安全方面，Anthropic 推荐 Auto Mode，并称其能降低提示注入和数据泄露风险，但明确不是百分之百安全，相关评测当时仍待公布。**值得细读**：适合关心 AI 编程团队实践、代码审查和智能体安全的人；若只想了解产品功能，以上要点已足够。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696159302,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:932bcf29bb0d88e83dc6bd54a7592cce56dc716c7b53886bc7e4f518b1eaf917",
+  "refs": {
+    "sessionId": "1784692378102_awkmdphn"
+  },
+  "revisionId": "sha256:cd591212ed6e8116875e623b0d147fb94af09459f472ea2fa9c81fbd4ad0416a",
+  "schemaVersion": 1,
+  "updatedAt": 1789696159302
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1781783038563,
+  "entityType": "session",
+  "id": "1781783038563_upjg4ecq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在构建RAG或Agent检索系统时，考虑同时暴露语义搜索与关键词检索工具。",
+      "若需要深入了解，可直接查看相关研讨会或官方文档，而非保留该短推文本身。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781783207383,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 3,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "代理式搜索工具选择",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "仅提供了代理式搜索需结合语义搜索、关键词搜索和文件读取的概念性观点，证据不足且可操作性弱，长期留存价值有限。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "代理式搜索可同时调用关键词检索、正则搜索、语义搜索和文件读取工具。",
+      "单一向量检索可能因top-k片段截断导致答案不完整，需要精确检索工具补充。"
+    ],
+    "oneHighValuePoint": "语义搜索适合快速初筛，grep和文件读取可在top-k截断或需要精确定位时补足。",
+    "oneLineReview": "有一个合理但常见的检索架构观点，整体更像活动宣传而非高价值内容。",
+    "primaryCategory": "AI应用与检索增强生成",
+    "rating": "D",
+    "rejectReason": "内容主要是网络研讨会宣传，信息量较低，缺少展开分析、案例和实操细节。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "Agentic RAG",
+      "信息检索"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章认为代理式搜索正从固定RAG管道转向更灵活的代理框架，应结合BM25、grep、语义搜索和文件读取等工具，并引导读者参加LlamaIndex网络研讨会。",
+    "tags": [
+      "代理式搜索",
+      "RAG",
+      "语义搜索",
+      "BM25",
+      "grep",
+      "LlamaIndex"
+    ],
+    "title": "x.com/jerryjliu0/status/2067348517014946072",
+    "totalScore": 39.5,
+    "url": "https://x.com/jerryjliu0/status/2067348517014946072"
+  },
+  "payloadHash": "sha256:9a15090aa612e9a612cb1c9f98aa5b549f30509d3733b68fbe09c7622a7e2ee5",
+  "refs": {},
+  "revisionId": "sha256:d3ea350d4cce0e374f75feeb17a11bc74f43f3a72808045a941b3e9db21a7e22",
+  "schemaVersion": 1,
+  "updatedAt": 1781783207760
+}

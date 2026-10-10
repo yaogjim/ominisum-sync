@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784605354175,
+  "entityType": "session",
+  "id": "1784605354175_rv374v9v",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文档从源码启动项目，创建测试工程并验证基础时间线、素材导入和本地导出。",
+      "将本地MCP地址接入Codex或Claude Code，测试Agent读取工程、提出编辑方案、应用与撤销的完整链路。",
+      "运行类型检查、测试与生产构建，并检查MCP Token、密钥服务端存储和沙箱边界是否符合预期。"
+    ],
+    "archiveReason": "与Agent开发、产品实现和MCP工具集成高度相关，包含可直接复现的安装配置、架构分层、安全边界与验证命令。",
+    "classifiedAt": 1784606096990,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "OpenChatCut智能剪辑架构",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Agent原生编辑器可将自然语言操作落到轨道、片段、字幕、转场和特效等结构化工程对象，而非只生成不可修改的成片。",
+      "统一命令层可以隔离UI与LLM，让内置Agent、外部MCP Agent和手动编辑共享同一编辑核心。",
+      "Local-first并不等于完全离线：工程和素材可保存在本机，但模型调用、生成、转写及在线素材能力仍取决于所配置的外部服务。"
+    ],
+    "oneHighValuePoint": "内置Agent和外部MCP客户端统一通过EditorCore命令修改真实工程，使AI编辑结果可检查、可撤销，并避免多套工程格式发生漂移。",
+    "oneLineReview": "这是一份信息完整且可直接上手的项目文档，但功能效果与安全性主要来自项目方陈述，仍需实测验证。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，重点保留Agent接入、编辑命令层与本地工程架构。",
+    "secondaryCategories": [
+      "视频编辑产品",
+      "开源软件架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍开源本地优先的AI视频编辑器OpenChatCut，涵盖真实多轨时间线、内置与外部Agent、MCP接入、工程架构、安全模型、安装配置、导出能力及开发验证流程。",
+    "tags": [
+      "Agent原生",
+      "MCP",
+      "本地优先",
+      "视频编辑",
+      "EditorCore"
+    ],
+    "title": "OpenChatCut/README_ZH.md at main · 0xsline/OpenChatCut",
+    "totalScore": 80,
+    "url": "https://github.com/0xsline/OpenChatCut/blob/main/README_ZH.md"
+  },
+  "payloadHash": "sha256:fd6aff670d1a1bd0cf3bdd59844a9262981ab68b6aa9dbea203befc7ac91b1e2",
+  "refs": {},
+  "revisionId": "sha256:e5896457252929b8bf1507c710fd15b7d565b8d74d50b2b4fe3f7e45f6b4a3b2",
+  "schemaVersion": 1,
+  "updatedAt": 1789696136408
+}

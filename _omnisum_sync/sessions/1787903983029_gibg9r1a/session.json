@@ -1,0 +1,84 @@
+{
+  "createdAt": 1787903983029,
+  "entityType": "session",
+  "id": "1787903983029_gibg9r1a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为当前学习主题分别选择一本骨架教材、一本直觉解释材料和一本严格参考材料。",
+      "学习每个新概念时记录一个正例、一个反例和一个边界例。",
+      "每阅读约10页后闭卷重写核心内容，并针对写不出的部分使用教材或AI追问补缺。"
+    ],
+    "archiveReason": "提供了六问框架、三教材系统、正反边界例和闭卷重写等可直接复用的学习方法。",
+    "byline": "Phoenix Yin",
+    "classifiedAt": 1789724540721,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "破解教材反自学的五步方法",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "可将教材分为骨架、直觉解释和严格原始版本三类，分别承担范围定位、理解原因和掌握严谨形式的职责。",
+      "理解新概念时应追问目标问题、旧方法、设计原因、可推导结果及失效条件，而不只记忆定义。",
+      "闭卷重写通过暴露无法自行生成的内容，检验真实理解并减少重复阅读造成的熟悉感错觉。"
+    ],
+    "oneHighValuePoint": "为每个概念同时构造正例、反例和边界例，可帮助学习者识别其适用条件与失效边界。",
+    "oneLineReview": "自学框架清晰且可立即实践，但主要基于经验判断，缺少研究证据和效果验证。",
+    "primaryCategory": "学习方法",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "方法具体且可复用，适合精读并作为长期自学流程存档",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI辅助学习",
+      "知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章针对教材不利于自学的问题，提出概念六问、三教材分工、AI追问、构造正反边界例及闭卷重写等方法，强调主动还原知识形成过程，而非依赖教材章节顺序。",
+    "tags": [
+      "自学方法",
+      "三教材系统",
+      "生成式学习",
+      "概念边界",
+      "AI追问"
+    ],
+    "title": "Phoenix Yin: 如何从根本上解决教材的反自学系统问题",
+    "totalScore": 75,
+    "url": "https://x.com/Phoenixyin13/status/2092989857517756449"
+  },
+  "payloadHash": "sha256:b0359af9753694ff0f143e948c1fb1d6be90f0dd009757861090e132ca032cc7",
+  "refs": {},
+  "revisionId": "sha256:8c92cfb56efc81b1a86273c636159d8746a1803c05bfffbb61ca546585304250",
+  "schemaVersion": 1,
+  "updatedAt": 1789864073861
+}

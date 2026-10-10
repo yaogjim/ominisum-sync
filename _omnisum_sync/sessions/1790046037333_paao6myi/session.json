@@ -1,0 +1,83 @@
+{
+  "createdAt": 1790046037333,
+  "entityType": "session",
+  "id": "1790046037333_paao6myi",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按Quick Start启动Kev-4B本地服务，用示例请求验证choice、noul和score三类输出；服务无认证，保持本地访问，外部开放前添加认证。",
+      "使用Playground的Packed vs separate与Permute功能，在实际业务样例上检查多问题合并的一致性和选项顺序敏感性。",
+      "在目标硬件和业务样例上比较候选模型的延迟、准确率与概率校准表现，避免仅依据参数规模或项目汇总成绩选型。"
+    ],
+    "archiveReason": "提供可运行的部署示例、结构化决策接口、问题隔离机制及校准和硬件性能说明，可复用于分类、路由和评分类AI应用。",
+    "classifiedAt": 1790762330834,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Kev小型决策模型的架构与部署",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Kev playground",
+        "caption": "",
+        "height": 900,
+        "id": "img-11",
+        "nearbyText": "Kev Small Jev-like decision models you can train and run yourself. Kev is a family of small decision models built on Qwen3.5 and based on the architecture described in Jev's Architecture Unmasked. You can use the pretrained weights or train...",
+        "resolvedUrl": "https://github.com/jaredpalmer/kev/raw/main/docs/playground.png",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/jaredpalmer/kev/raw/main/docs/playground.png",
+        "width": 1440
+      }
+    ],
+    "knowledgePoints": [
+      "Kev以LoRA适配器和指针头完成决策，指针头根据选项与决策位置的隐藏状态计算概率，而不是依赖生成文本标签。",
+      "温度校准可以改善概率质量而不改变最高概率选项；接口中的confidence也不等于实测准确率，评估时应区分准确率、Brier分数和校准误差。",
+      "模型选型需要同时考虑泛化与推理后端：文中Qwen3.5版本在Apple Silicon上受DeltaNet参考实现限制，低延迟场景可考虑仍保留的Qwen3版本。"
+    ],
+    "oneHighValuePoint": "多问题隔离需要适配底层架构：纯注意力模型可用注意力掩码，而含循环层的Qwen3.5需让各问题独立成行，再复用状态缓存，不能只靠掩码保证隔离。",
+    "oneLineReview": "对本地分类、路由与评分应用有较强实践价值，但评测主要来自项目自报，不能将其视为独立验证或与Jev的受控比较。",
+    "primaryCategory": "AI技术",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并保留，作为本地决策模型接入、评估与选型的技术参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI应用开发",
+      "模型评估"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍基于Qwen的Kev小型决策模型，提供本地部署与结构化决策API示例，解释问题隔离、指针头和概率校准机制，并报告模型评测及不同硬件的性能取舍；训练章节在所给正文中不完整。",
+    "tags": [
+      "小型决策模型",
+      "Qwen微调",
+      "概率校准",
+      "问题隔离",
+      "本地推理"
+    ],
+    "title": "jaredpalmer/kev: tiny Jev-like family of decision models built on top of Qwen3.5 you can train and run on your own",
+    "totalScore": 81,
+    "url": "https://github.com/jaredpalmer/kev/tree/main"
+  },
+  "payloadHash": "sha256:dcff36c641884adf4a8c0e618fb6fa067f0f81ded8b8c7f528f07677c5a66c1d",
+  "refs": {},
+  "revisionId": "sha256:3b1c30712e093f697ee90821acaa72cc94ceb7668867604d4cc32e42e271ed43",
+  "schemaVersion": 1,
+  "updatedAt": 1790770832425
+}

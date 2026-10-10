@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783039576162,
+  "entityType": "message",
+  "id": "1783039576161_m60i603p",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AI工程技能与Wayfinder流程\n\n**评级**: B (65.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程方法论\n**次类别**: 智能体工作流, 软件工程实践\n**标签**: #Claude Code #Agent Skills #Wayfinder #TDD #领域建模\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 方法论价值较高，但内容抓取噪声和重复较多，证据支撑偏弱。\n**核心高价值点**: 将大型复杂任务拆成持续演进的中心地图，通过提问、原型、研究和票据流转逐步消除不确定性。\n\n### 摘要\n文章汇总了Matt Pocock关于AI工程技能库的推文和GitHub说明，核心是用小型可组合技能改善Claude Code等编码代理的需求澄清、领域语言、TDD、架构改进、代码审查与任务导航流程。\n\n### 知识要点\n- AI编码代理的主要失败模式之一是需求误解，需要通过grilling session提前对齐。\n- 共享领域语言和CONTEXT.md/ADR可以减少代理对项目术语的误读。\n- TDD、调试循环、代码审查和架构改进仍是AI时代提升代码质量的关键反馈机制。\n- wayfinder尝试作为更高层的复杂任务导航器，识别决策前沿和未知区域。\n\n### 行动项\n- 查看mattpocock/skills仓库，评估是否将grill-me、tdd、code-review等技能迁移到自己的Claude工作流。\n- 为当前项目建立CONTEXT.md和ADR记录，沉淀领域术语和关键设计决策。\n- 尝试把复杂任务按wayfinder思路拆成研究、原型、提问和票据四类工作流。\n\n### 存档判定\n归档: 是 — 原因: 包含可复用的AI辅助工程工作流，如grill-me、domain-modeling、tdd、code-review和wayfinder等，适合后续借鉴改造。\n删除: 否\n留存决策: 短期参考后可选择保留核心链接",
+    "role": "assistant",
+    "timestamp": 1783039576162,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:eaab57f8c4aceb5c80b3491e8b7381acfeecf8734b06f33f606b5f86f484f122",
+  "refs": {
+    "sessionId": "1783039275653_tcjdns56"
+  },
+  "revisionId": "sha256:c2de861ecb942ad33331507dc2adf108714115385d940065f6ed2cae06739b2e",
+  "schemaVersion": 1,
+  "updatedAt": 1783039576162
+}

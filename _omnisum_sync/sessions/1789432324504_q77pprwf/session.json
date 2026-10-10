@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789432324504,
+  "entityType": "session",
+  "id": "1789432324504_q77pprwf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个边界明确的垂直任务，用小模型微调后与主流通用模型进行效果、速度和成本对比。",
+      "访谈有本地部署或数据隐私需求的企业，验证其对模型授权和维护服务的付费意愿。",
+      "在形成商业判断前核实文中成本降低95%、速度提升5倍等主张的适用条件。"
+    ],
+    "archiveReason": "",
+    "byline": "CJ Zafir",
+    "classifiedAt": 1789642195270,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "定制小模型的商业化机会",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "小模型可以通过领域数据和LoRA等方式针对特定任务微调，并导出为GGUF或MLX等部署格式。",
+      "垂直小模型的潜在卖点包括本地部署、数据隐私、较低推理成本和更快响应。",
+      "商业模式可从单纯销售软件订阅转向模型微调、部署授权及持续维护服务。"
+    ],
+    "oneHighValuePoint": "针对企业私有数据和垂直任务交付可本地部署的小模型，可能形成区别于通用SaaS的授权与维护收入。",
+    "oneLineReview": "方向与AI产品商业化高度相关，但“软件变现已死”及性能、成本优势均缺少充分证据。",
+    "primaryCategory": "AI商业化",
+    "rating": "B",
+    "rejectReason": "核心判断主要基于作者个人经历，缺少任务基准、成本明细、客户案例和持续收入数据，不足以长期归档。",
+    "retentionDecision": "可作为商业机会线索浏览，但应在验证成本、效果和真实需求后再决定是否保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "小模型微调",
+      "创业与客户交付"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章主张通用软件易被复制，商业机会将转向面向垂直场景微调并授权销售的小语言模型，强调其成本、速度和私有部署优势，并以作者的咨询经历说明企业需求。",
+    "tags": [
+      "小语言模型",
+      "模型微调",
+      "私有部署",
+      "模型授权",
+      "垂直场景"
+    ],
+    "title": "CJ Zafir: Monetization of software is dead now",
+    "totalScore": 55,
+    "url": "https://x.com/cjzafir/status/2099523329296388178?sort_replies=likes"
+  },
+  "payloadHash": "sha256:407ac0a61fb311e6ae215f518bc2dcb7f582148c02c9e07145e0b2a49a343cd4",
+  "refs": {},
+  "revisionId": "sha256:f052d02f0936beef4acede26ce790b9113d82c1b237c4687c01da3d9ded9e6a9",
+  "schemaVersion": 1,
+  "updatedAt": 1789727787125
+}

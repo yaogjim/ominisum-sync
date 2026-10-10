@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783588598883,
+  "entityType": "message",
+  "id": "1783588598882_2tw4t8oc",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: OfficeCLI智能体文档工具\n\n**评级**: A (71分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工具与办公自动化\n**次类别**: 开发工具, 文档自动化\n**标签**: #OfficeCLI #AI智能体 #Office自动化 #CLI工具 #MCP\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 信息量和可操作性很强，但带有明显产品宣传口吻，证据和外部验证不足。\n**核心高价值点**: “渲染 → 看 → 改”的闭环设计让AI智能体可通过HTML/PNG预览检查并修正文档排版问题。\n\n### 摘要\n文章是OfficeCLI中文README，介绍其面向AI智能体的Office文档创建、读取、修改、渲染预览、批处理、MCP集成和模板合并能力，并提供大量命令示例。\n\n### 知识要点\n- OfficeCLI可通过命令行操作Word、Excel、PowerPoint，并支持JSON输出和路径化元素寻址\n- 内置HTML/PNG渲染、watch实时预览、validate和issues检查，适合无头环境与CI流程\n- 支持MCP服务器、技能文件安装、模板merge、dump到batch JSON等AI智能体友好能力\n- 提供L1语义视图、L2 DOM操作、L3原始XML兜底的三层操作架构\n\n### 行动项\n- 如有Office自动化需求，可安装OfficeCLI并测试create、view、add、set、validate命令\n- 评估其在AI智能体生成PPT、批量报告、模板填充和CI文档校验中的适用性\n- 在正式采用前验证其复杂文档渲染还原度、Excel公式兼容性和稳定性\n\n### 存档判定\n归档: 是 — 原因: 包含安装方式、核心命令、AI集成、渲染预览、批处理和模板合并等实用信息，可作为工具选型和使用手册\n删除: 否\n留存决策: 按需长期保留，适合作为Office自动化和AI智能体文档处理工具的参考资料",
+    "role": "assistant",
+    "timestamp": 1783588598883,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:fcaf827cb4b2ab6fc7d313841707822013876b8193727e1e10c0f67fcf5213ba",
+  "refs": {
+    "sessionId": "1783583985227_ekdhopao"
+  },
+  "revisionId": "sha256:c77082c67dfcb42041839a12a89cb90b24ce26f0dd562894e1ded9f9bdbda144",
+  "schemaVersion": 1,
+  "updatedAt": 1783588598883
+}

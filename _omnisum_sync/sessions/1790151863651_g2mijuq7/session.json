@@ -1,0 +1,82 @@
+{
+  "createdAt": 1790151863651,
+  "entityType": "session",
+  "id": "1790151863651_g2mijuq7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "采购前明确主要用途是对外销售API、个人日常使用还是分布式实验，分别列出收益与使用价值。",
+      "核验文中吞吐量和调用价格，补算电费、网络及运维成本，再估算回本周期。"
+    ],
+    "archiveReason": "",
+    "byline": "lifcc",
+    "classifiedAt": 1790768006201,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "自建大模型接口生意的成本与选型",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 1200,
+        "id": "img-11",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HS4bLpkbYAEYM-9?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HS4bLpkbYAEYM-9?format=jpg&name=medium",
+        "width": 900
+      }
+    ],
+    "knowledgePoints": [
+      "对外销售模型调用需要同时考虑硬件投入、调用收入和宽带上行限制，不能仅凭可运行模型判断商业可行性。",
+      "个人自用设备的价值还包括通用计算用途与残值；分布式方案则需要额外评估故障处理和运维负担。"
+    ],
+    "oneHighValuePoint": "硬件选型应区分对外经营与个人自用，并把运维负担、非AI用途和退出残值纳入判断，而非只比较内存与算力参数。",
+    "oneLineReview": "问题与AI部署和商业实践高度相关，但主要提供风险提醒，证据不足以支撑其明确的收益判断与硬件推荐。",
+    "primaryCategory": "AI部署与成本评估",
+    "rating": "C",
+    "rejectReason": "缺少具体模型、推理配置、价格来源和成本明细，正文所称的完整账本未提供，热门回复多数与核心论证无关。",
+    "retentionDecision": "速览选型思路，不将未经验证的收益与性能数字作为采购依据",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "商业可行性分析",
+      "硬件选型"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章比较约八万元预算下的大内存单机与双机集群，认为自建大模型出售API回本困难，个人使用更应重视运维负担、通用用途与残值。相关吞吐、利润及回本数字缺少来源，未展示完整测算。",
+    "tags": [
+      "本地大模型",
+      "API商业化",
+      "投资回收期",
+      "分布式运维",
+      "硬件残值"
+    ],
+    "title": "lifcc: 花 8 万块买两台算力盒子自建大模型卖 API，是我今年见过最浪漫也最亏本的极客幻想",
+    "totalScore": 51,
+    "url": "https://x.com/mylifcc/status/2102624499682484665"
+  },
+  "payloadHash": "sha256:58f68c5d0af8991fd9772b686900f43f786a5a282abcf18752d6bf79aeba7372",
+  "refs": {},
+  "revisionId": "sha256:5b46ca5c5cdab68b749721a807178c9284b087b2aabfe223c28fdad000c011fe",
+  "schemaVersion": 1,
+  "updatedAt": 1790768007291
+}

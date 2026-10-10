@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786354372323,
+  "entityType": "session",
+  "id": "1786354372323_g8013ihn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在项目中建立受Git管理的本地UI原型，并要求每次功能变更先更新原型。",
+      "在Agents.md或claude.md中写入“先修改并确认原型，再修改功能代码”的默认规则。",
+      "选取一个新功能，测试让Agent依据原型Git Diff完成实现，并检查原型与实际功能是否一致。"
+    ],
+    "archiveReason": "提供了可直接迁移到AI编程项目的原型驱动工作流，并明确说明如何通过持久化规则和Git差异降低Agent实现成本。",
+    "classifiedAt": 1786354391431,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用设计原型驱动AI功能开发",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "新功能开发前先更新并确认原型，可用较低成本验证产品逻辑与UI设计。",
+      "将原型优先规则写入Agents.md或claude.md，可使Agent默认遵循稳定的开发流程。",
+      "React代码和结构化JSON形式的原型可由Git追踪，Agent能够参考差异记录完成对应实现。"
+    ],
+    "oneHighValuePoint": "把可执行原型纳入版本控制，并让Agent依据原型的Git Diff实现功能，可同时降低设计验证成本和需求理解偏差。",
+    "oneLineReview": "流程具体且高度相关，具有较强复用价值，但效果主要来自个人经验，缺少数据和完整案例验证。",
+    "primaryCategory": "AI辅助产品开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留其原型先行、版本控制与Agent协作的可复用开发流程",
+    "secondaryCategories": [
+      "产品设计",
+      "Agent工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍一种AI辅助开发流程：先用Claude Design修改并确认本地UI原型，再实现功能；通过Agents.md固化原型优先规则，并利用React原型、结构化JSON及Git Diff保持设计与代码同步。",
+    "tags": [
+      "原型驱动开发",
+      "Claude Design",
+      "Agents.md",
+      "Git Diff",
+      "设计即代码"
+    ],
+    "title": "宝玉: 我在开发项目是，第一版本会先用 Claude Design 设计好 UI 原型/设计，打磨好后放到本地，配合 Baoyu-Design Skill 去维护，每次…",
+    "totalScore": 79,
+    "url": "https://x.com/dotey/status/2086144247388905833"
+  },
+  "payloadHash": "sha256:ea3204ac7e2edcbfafb1a17ca85bc9db718243002f79d3985b1033a00047bd0a",
+  "refs": {},
+  "revisionId": "sha256:3781480f5ff1528f4cee57fbed6a9be1f8951f58b88f96a8d968f17366b0f78e",
+  "schemaVersion": 1,
+  "updatedAt": 1789864299893
+}

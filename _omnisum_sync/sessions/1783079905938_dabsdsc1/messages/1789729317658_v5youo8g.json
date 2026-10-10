@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729317658,
+  "entityType": "message",
+  "id": "1789729317658_v5youo8g",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# AGENTS.md 不是银弹，关键在 Agent Harness\n\n作者认为，`CLAUDE.md`、`AGENTS.md` 不应被写成包含通用知识和工作方法的“万能提示词”。如果 Agent Harness——即承载工具、流程和运行规范的执行框架——足够完善，这些文件只需描述具体项目、个人偏好和 Agent 职责。\n\n## 用三层配置隔离不同范围的信息\n\n作者采用分层方案：\n\n- **全局配置**：规定本地仓库与 worktree 的统一目录，并要求克隆前检查项目是否已存在，避免多个 Agent 随意创建目录，也便于清理。\n- **项目配置**：记录项目概览、文档位置及特殊约束，例如禁止滥用 fallback。\n- **AgentHome 配置**：定义单个 Agent 的角色、权限和工作流，包括是否能合并代码，以及 PR、Review、CI、部署要求。\n\n使用 Codex 时，作者会为每个 Agent 建立独立的 AgentHome，并从该目录启动，使其优先加载对应职责；其 Holon 工具则已内置这套机制。\n\n## 核心是把稳定规则工程化\n\n这套思路的重点不是研究如何写出更复杂的指令文件，而是明确配置边界：通用能力和方法沉淀进 Harness，项目差异与权限职责留在 `AGENTS.md`。这样能减少重复提示和规则冲突，也更适合多 Agent 并行协作。其成立前提是 Harness 已具备足够完整的流程与能力支持。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729317658,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:13c4974ffa3b6d4a4e59e076ff6024168f18a12ba3d4827ef9fe19f2c108f590",
+  "refs": {
+    "sessionId": "1783079905938_dabsdsc1"
+  },
+  "revisionId": "sha256:9e9f0d09296ebe9b8e2014ed5fdd184cf2768efc1a47252b9f6d6ef8b734388b",
+  "schemaVersion": 1,
+  "updatedAt": 1789729317658
+}

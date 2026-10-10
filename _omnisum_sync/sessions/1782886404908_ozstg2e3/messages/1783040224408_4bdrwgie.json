@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783040224409,
+  "entityType": "message",
+  "id": "1783040224408_4bdrwgie",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Rift 快速工作区快照\n\n**评级**: B (56.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 开发工具\n**次类别**: 版本控制, 文件系统工具\n**标签**: #git worktrees #copy-on-write #btrfs #APFS #Rust #CLI\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 一个有潜力的实验性开发工作区快照工具，但当前成熟度和证据支撑仍有限。\n**核心高价值点**: 利用文件系统原生 copy-on-write 能力，可在大目录上近乎瞬时创建隔离工作区，适合多任务并行开发场景。\n\n### 摘要\n文章是 anomalyco/rift 项目的 README，介绍其作为 git worktrees 替代方案，利用 btrfs、APFS clonefile 或 reflink 快速创建节省空间的工作区，并提供 CLI、JavaScript API、安装、平台支持和基准测试说明。\n\n### 知识要点\n- Rift 通过 btrfs snapshots、Linux reflinks 和 macOS APFS clonefile 实现快速工作区复制\n- 默认创建工作区时会过滤 node_modules、target、dist、build 等可再生成的大型目录\n- 工具支持 CLI 和 Bun/Node FFI API，但 Windows 尚未实现工作区创建\n- 项目目前明确标注为 experimental，接口和行为可能随时变化\n\n### 行动项\n- 如当前有多分支并行开发痛点，可在非关键项目上试用 rift create 与 git worktrees 的差异\n- 在使用前确认本机文件系统是否支持 btrfs、APFS clonefile 或 Linux reflink\n- 暂不用于生产关键流程，等待项目稳定性、Windows 支持和更多 benchmark 数据完善\n\n### 存档判定\n归档: 是 — 原因: 介绍了一个利用文件系统写时复制能力快速创建开发工作区的实验性工具，对开发效率工具选型有参考价值\n删除: 否\n留存决策: 短期参考后可保留，适合在需要快速创建隔离工作区时再深入评估",
+    "role": "assistant",
+    "timestamp": 1783040224409,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:d04b67f3bd975db9a852c68301e9a8486a78750d8cba0f158d4aab8418f0d715",
+  "refs": {
+    "sessionId": "1782886404908_ozstg2e3"
+  },
+  "revisionId": "sha256:a0163e96a1762e0f3885f29c9382431c7f695d5dc11af4b4be0531f9a70273fd",
+  "schemaVersion": 1,
+  "updatedAt": 1783040224409
+}

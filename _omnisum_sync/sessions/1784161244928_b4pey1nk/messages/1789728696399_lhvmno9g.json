@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728696399,
+  "entityType": "message",
+  "id": "1789728696399_lhvmno9g",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Weaviate：面向 AI 应用的一体化开源向量数据库\n\nWeaviate 是一款云原生开源向量数据库，同时存储业务对象及其向量表示，将语义检索、关键词与结构化过滤、RAG 和重排序整合进统一查询接口。它既适合快速搭建原型，也提供多租户、复制和权限控制等生产能力，主要用于智能问答、搜索、推荐、聊天机器人和内容分类。\n\n## 从数据向量化到生成式检索的一站式能力\n\n用户可在导入数据时调用 OpenAI、Cohere、HuggingFace 等模型自动生成向量，也可直接写入预计算向量。查询侧支持向量相似度搜索、BM25 关键词搜索、图片搜索、混合检索和高级过滤，并内置 RAG 与结果重排序，减少额外拼装检索组件的需要。\n\n项目称其可在数十亿向量规模下实现毫秒级搜索，但实际表现仍取决于数据规模、索引配置和基础设施。向量量化、多向量编码等压缩能力则用于降低内存及运营成本。\n\n## 覆盖本地开发与生产部署\n\nWeaviate 可通过 Docker、Kubernetes、官方云服务以及 AWS、GCP 部署，并提供 REST、gRPC、GraphQL API，以及 Python、JavaScript/TypeScript、Java、Go、C# 客户端。生产功能包括水平扩展、复制、多租户、细粒度 RBAC 和对象 TTL 自动过期。\n\n## 生态定位是 AI 数据基础设施\n\n项目已接入主流云平台、数据摄取工具、LangChain、LlamaIndex 等智能体框架，以及 RAG 评测和可观测工具；还提供面向 Claude Code、Cursor、GitHub Copilot 等编程智能体的操作技能。其核心价值在于统一“数据存储—检索—生成”链路，但部署复杂度、模型选择和成本仍需结合具体场景评估。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728696399,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8840995d0ece1a5494fc474a0b1ca0468bd68d18ec41f150533b033abb6bf4f1",
+  "refs": {
+    "sessionId": "1784161244928_b4pey1nk"
+  },
+  "revisionId": "sha256:a3a4df40d67652ce31c6ed62b260d16281649cfc65faf198c990cbe75df4375d",
+  "schemaVersion": 1,
+  "updatedAt": 1789728696399
+}

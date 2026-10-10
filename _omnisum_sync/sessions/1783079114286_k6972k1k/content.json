@@ -1,0 +1,15 @@
+{
+  "createdAt": 1783079114286,
+  "entityType": "session-content",
+  "id": "1783079114286_k6972k1k",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>管四</strong></header><div class=\"tw-body\">这几天把本地 Agent 体系又折腾了一轮。<br><br>Hermes 挂了两个 Agent：<br><br>GPT 5.5 干复杂开发，<br>DeepSeek V4 Pro 负责会议纪要、说明文档。<br><br>另外专门让 DeepSeek 给 GPT 5.5 做上下文压缩。<br><br>只用 GPT 5.5 其实挺痛苦，<br>上下文动不动爆掉。<br><br>加了压缩以后，<br>顺畅很多。<br><br>今天又把 Claude Code 接进来了，让 Hermes 直接调用。<br><br>现在还在测更邪门的组合：<br><br>让 DeepSeek Agent 调 Claude Code 改代码，<br>再和 GPT 5.5 直接改做对比。<br><br>最大的感受是：<br><br>开始不太关心模型谁最强了。<br><br>开始关心：<br>任务怎么拆，<br>上下文怎么控，<br>哪个数字员工调哪个外包更划算。</div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@哈哈的风</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>会议纪要你怎么处理的 自动参加会议？<br>还是扔给他文本</p></div><div class=\"tw-reply\"><strong>@管四</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>用飞书妙记录音，生成会议全文，直接把全文扔给 Agent，让它生成纪要。我做的更多一些，我让它生成纪要的时候，会先把整个项目的背景文档先获取一下，然后在基础背景上，再阅读会议原文，再生成纪要。</p></div><div class=\"tw-reply\"><strong>@咕嘎AI实验室</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>多模型分工这个思路很务实。GPT 5.5处理复杂逻辑链、DeepSeek做文档类任务，各取所长。好奇两个Agent之间的上下文是怎么传递的？有没有遇到信息丢失的问题？</p></div><div class=\"tw-reply\"><strong>@Jask</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>我的Hermes就是秘书，干活还是要靠Claude code</p></div><div class=\"tw-reply\"><strong>@王也</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>能不能具体讲讲怎么搞啊大佬 我整体思路和你一样，但是用起来没有那么顺手</p></div></div>",
+    "pageContent": "管四: 这几天把本地 Agent 体系又折腾了一轮。 Hermes 挂了两个 Agent： GPT 5.5 干复杂开发，\nDeepSeek V4 Pro 负责会议纪要、说明文档。 另外专门让 DeepSeek 给 GPT 5.5 做上下文压缩。 只用 GPT 5.5 其实挺痛苦，\n上下文动不动爆掉。 加了压缩以后，\n顺畅很多。 今天又把 Claude Code 接进来了，让 Hermes 直接调用。 现在还在测更邪门的组合： 让 DeepSeek Agent 调 Claude Code 改代码，\n再和 GPT 5.5 直接改做对比。 最大的感受是： 开始不太关心模型谁最强了。 开始关心：\n任务怎么拆，\n上下文怎么控，\n哪个数字员工调哪个外包更划算。\n---\n热门回复 (共 5 条):\n@哈哈的风 (♥ 1 · 💬 1):\n会议纪要你怎么处理的 自动参加会议？\n还是扔给他文本\n\n@管四 (♥ 1 · 💬 1):\n用飞书妙记录音，生成会议全文，直接把全文扔给 Agent，让它生成纪要。我做的更多一些，我让它生成纪要的时候，会先把整个项目的背景文档先获取一下，然后在基础背景上，再阅读会议原文，再生成纪要。\n\n@咕嘎AI实验室 (♥ 1 · 💬 1):\n多模型分工这个思路很务实。GPT 5.5处理复杂逻辑链、DeepSeek做文档类任务，各取所长。好奇两个Agent之间的上下文是怎么传递的？有没有遇到信息丢失的问题？\n\n@Jask (♥ 1 · 💬 1):\n我的Hermes就是秘书，干活还是要靠Claude code\n\n@王也 (♥ 1 · 💬 1):\n能不能具体讲讲怎么搞啊大佬 我整体思路和你一样，但是用起来没有那么顺手\n"
+  },
+  "payloadHash": "sha256:edb2e55b70342e8cfec436b0817205977d2b04238a8199fdc905e6da3e6e242c",
+  "refs": {},
+  "revisionId": "sha256:5fbebbd2b3ddc3992b9e202cedc6963b03afbcb8cd34e43009e51390c1425aac",
+  "schemaVersion": 1,
+  "updatedAt": 1789729363805
+}

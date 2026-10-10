@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729322997,
+  "entityType": "message",
+  "id": "1789729322998_kz8upsfy",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# AI 编程的新瓶颈：从“写得快”转向“验证得对”\n\nRay Wang 总结了 Claude Code 与 Cowork 工程负责人 Fiona Fung 的访谈：在 Anthropic，AI 已显著降低代码生产成本，组织的核心挑战正从“如何产出”转向“如何验证质量、确定优先级，并避免人被 Agent 的产出淹没”。\n\n## 代码不再稀缺，验证与质量成为瓶颈\n\nFung 认为“coding is solved”——至少在其团队场景中，工程师、产品经理、设计师乃至法务和财务都能借助 AI 写代码，产出可提升数倍。随之而来的问题是：如何确保这些代码可靠、有价值。\n\n团队用“bad vs sad”划分质量问题：\n\n- **bad**：崩溃、工作丢失等不可恢复的严重错误；\n- **sad**：界面闪烁等可恢复但影响体验的问题。\n\n大量“sad”也可能累积成“bad”。各团队自行定义边界，同时承担相应结果，体现“高自主、高问责”。\n\n## 管理与规划变得实时、结果导向\n\nFung 保持一个长期运行的 Claude Code 会话，接入代码库、Slack 和业务指标，每月与下属复盘发布内容、市场反馈和缺陷。由于环境变化太快，团队放弃容易过时的半年路线图，改为按月制定优先级、每周检查的即时规划。\n\nAI 使用评价也从比拼 Token 消耗和 Agent 数量，转向关注实际产出与投入回报，类似软件行业从“代码行数”转向业务结果。\n\n## 人才结构两极化，协作需要被重新设计\n\n团队更看重两类人才：具备产品直觉的创造型建设者，以及解决高难度问题的深层系统专家，通用型“中间层”价值受到挤压。\n\n与此同时，人人独自与 Agent 协作也带来孤独和知识隔离。团队通过结对编程午餐、黑客松恢复面对面交流；观察他人如何使用 Claude Code，本身也成为重要的学习方式。核心变化是：执行能力被放大后，判断力、验证能力和协作机制变得更稀缺。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729322997,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0f40be547a57987fdc0b6249c82460569d9cab90a40dd57c6574299cdc2e5c7f",
+  "refs": {
+    "sessionId": "1783079844731_hwj4e3fr"
+  },
+  "revisionId": "sha256:36ec3cda0d5be36310cc94f53eaf0a5ec26be34bd03f01925323815d179b4fe5",
+  "schemaVersion": 1,
+  "updatedAt": 1789729322997
+}

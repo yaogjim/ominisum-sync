@@ -1,0 +1,69 @@
+{
+  "createdAt": 1783332953405,
+  "entityType": "session",
+  "id": "1783332953405_68wclpgn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尝试运行六问提示词，让模型总结个人高频工作流并生成可复用模板",
+      "为一个重复任务设计包含排期、状态文件、检查标准和停止条件的loop",
+      "将常用提示词按目标、交付格式、红线和介入条件重新结构化",
+      "对新旧提示词做小规模A/B测试，记录分歧案例和胜负比例"
+    ],
+    "archiveReason": "包含可直接试用的目标设定、实验循环、状态文件、记忆更新和反向面试等AI工作流模板",
+    "classifiedAt": 1783333700677,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Fable5高效提示词清单",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "高质量Agent任务应明确目标、评价指标和不可触碰边界",
+      "长周期自动化任务需要状态文件记录历史、下一步和停止条件",
+      "提示词迭代可以通过Shadow Prompt方式在真实流量上做A/B测试",
+      "个人工作模式、重复指令和纠错经验可转化为Skills、系统指令和记忆库"
+    ],
+    "oneHighValuePoint": "将任务拆成“目标、指标、边界”，并让模型基于假设持续实验和记录失败路径，是最值得复用的方法。",
+    "oneLineReview": "实操模板较多、启发性不错，但证据主要来自二手案例和经验帖，可信度需要自行验证。",
+    "primaryCategory": "AI工作流与提示词工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "提取其中可复用的提示词模板和工作流框架后短期保留，模型窗口期相关信息后续可清理",
+    "secondaryCategories": [
+      "Agent自动化",
+      "个人知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章整理了Fable5下线前可尝试的多类提示词，包括自动实验、工作模式提炼、subagent分工、loop工作流、自动暂停、记忆系统和反向面试等，强调将AI使用经验沉淀为可复用系统。",
+    "tags": [
+      "Prompt",
+      "Claude",
+      "AI Agent",
+      "工作流自动化",
+      "多Agent协作"
+    ],
+    "title": "分享 8 个 Fable5 下线前必跑的超实用 Prompt",
+    "totalScore": 68.5,
+    "url": "https://x.com/aiwarts/status/2073962247240773984"
+  },
+  "payloadHash": "sha256:6bbce67495cafdbe64bae6d194284cb6d0569f21738eef8bfdafc62aa88c4b7b",
+  "refs": {},
+  "revisionId": "sha256:59ba5c50e75475be771fbda0a5d3b9c29e4fd3a2c0c73b2ee392a907215271a3",
+  "schemaVersion": 1,
+  "updatedAt": 1789728641442
+}

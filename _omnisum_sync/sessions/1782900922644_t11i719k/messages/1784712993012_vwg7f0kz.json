@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784712993011,
+  "entityType": "message",
+  "id": "1784712993012_vwg7f0kz",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# X MCP Servers 精炼总结\n\nX 提供两个 MCP（模型上下文协议）服务器：**X API MCP** 用于搜索、读取及操作 X 数据，**文档 MCP** 用于查询 X API 文档。二者可同时接入 Grok Build、Cursor、Claude Desktop、VS Code 等 MCP 客户端，让 AI 一边查文档、一边调用 API。\n\n## 1. X API MCP：让 AI 直接使用 X API\n\n- 服务地址：`https://api.x.com/mcp`\n- 协议版本：`2025-06-18`\n- Server Info：`xmcp`\n- 主要能力包括：\n  - 搜索 X 的完整历史内容\n  - 查询用户\n  - 获取趋势和新闻\n  - 管理书签\n  - 起草或发布 Articles\n- 实际可用功能取决于当前 X 账号拥有的权限与授权范围。\n\n## 2. 两种接入方式\n\n### 简单模式：App-only Bearer Token\n\n适合只需读取公开数据的场景。\n\n1. 在 X Developer Portal 创建应用。\n2. 从应用的 **Keys and tokens** 页面复制 App-only Bearer Token。\n3. MCP 客户端直接连接 `https://api.x.com/mcp`，并添加请求头：\n\n   `Authorization: Bearer YOUR_APP_ONLY_BEARER_TOKEN`\n\n**优点：**\n\n- 无需本地桥接程序\n- 无需浏览器登录\n- 配置相对简单\n\n**限制：**\n\n- 仅支持只读接口\n- 没有用户身份上下文，不能以你的账号执行操作\n- Token 不会自动刷新\n- 客户端必须支持远程 MCP 和自定义 HTTP 请求头\n\n### 完整模式：`xurl mcp` 本地桥接\n\n适合需要用户身份、写入操作或完整功能的场景。\n\n其调用链路为：\n\n`MCP 客户端 → 本地 xurl mcp → api.x.com/mcp → X OAuth`\n\n本地桥接程序负责：\n\n- 承载 X 开发者应用身份\n- 执行 OAuth 2.0 PKCE 登录\n- 缓存并自动刷新 Token\n- 每次请求注入最新的 Bearer Token\n- 在遇到 `401` 时强制刷新 Token\n\n这种方式可让 AI 按照你的账号授权范围执行操作，是管理书签、发布 Articles 等写入功能的必需方案。\n\n## 3. 为什么需要本地桥接\n\nX OAuth 有以下特点：\n\n- 必须使用用户自己的开发者应用\n- 不支持动态客户端注册\n- `api.x.com/mcp` 不提供原生 MCP OAuth 发现机制\n\n因此，不能仅把 API 地址交给客户端完成全部认证，而需要通过本地 `xurl mcp` 桥接。\n\n桥接程序通过 `npx` 启动，通常不需要单独安装；首次运行时会打开浏览器，要求用户完成一次 OAuth 2.0 登录。此后 Token 会保存在 `~/.xurl` 中并自动刷新。\n\n此外：\n\n- 诊断信息写入 `stderr`\n- `stdout` 始终保持为干净的 JSON-RPC 通道\n- 首次登录期间 MCP 握手会暂停，因此客户端应设置较长的启动超时时间\n\n## 4. 完整模式的准备工作\n\n使用 `xurl` 桥接前需要：\n\n1. 创建并启用 OAuth 2.0 的 X 应用。\n2. 注册回调地址：\n\n   `http://localhost:8080/callback`\n\n3. 如需使用其他地址，可设置 `REDIRECT_URI`，并确保开发者后台登记的地址完全一致。\n4. 获取应用的 `CLIENT_ID` 和 `CLIENT_SECRET`。\n5. 安装 Node.js，以便运行 `npx`。\n\n认证凭据的读取顺序为：\n\n1. 环境变量 `CLIENT_ID`、`CLIENT_SECRET`\n2. `~/.xurl` 中当前激活的应用配置\n\n## 5. 支持的 MCP 客户端\n\nX API MCP 可接入以下工具：\n\n- **Grok Build**：通过命令添加 `xurl` 桥接服务；首次调用工具或运行检查时会打开浏览器登录。\n- **Cursor**：配置全局 `~/.cursor/mcp.json`，或项目级 `.cursor/mcp.json`；设置页面显示绿点代表连接成功。\n- **Claude Desktop**：修改 `claude_desktop_config.json`，重启后可在工具菜单中看到 X 工具。\n- **VS Code**：可通过 `.vscode/mcp.json` 接入 GitHub Copilot 或 Agent 模式。\n- **其他 MCP 客户端**：可通过 stdio 启动 `xurl mcp`，也可在只读场景下直接使用远程 HTTP 地址。\n\n如果已原生安装 `xurl`，可以直接运行：\n\n`xurl mcp https://api.x.com/mcp`\n\n而不必通过 `npx` 启动。\n\n## 6. 无浏览器、多个应用与账号\n\n### 无头或远程环境\n\n如果机器无法打开浏览器，可先通过 `xurl auth oauth2 --headless` 在外部完成认证，再启动 MCP 客户端。\n\n### 多应用与多账号\n\n可以在客户端参数中指定：\n\n- `--app my-app`：选择特定开发者应用\n- `-u alice`：选择特定用户账号\n\n这适合同时管理多个 X 应用或账号的场景。\n\n## 7. 常见问题排查\n\n| 问题 | 原因与解决方法 |\n|---|---|\n| 客户端启动超时 | 桥接程序正在等待浏览器登录；将 `startup_timeout_sec` 提高到 **300 秒以上** |\n| 浏览器未打开 | 可能是无图形界面的远程环境；先运行 `xurl auth oauth2 --headless` |\n| 出现 `401` 或 Token 刷新失败 | 应用凭据错误或 Refresh Token 已撤销；重新运行 OAuth 登录 |\n| 浏览器提示回调地址错误 | 未注册 `http://localhost:8080/callback`，或与 `REDIRECT_URI` 不一致 |\n| 登录后出现 `client-not-enrolled` | 应用不在正确的 X 套餐或环境中；需切换至 **Pay-per-use + Production** |\n| `npx` 拉取旧版本 | 默认使用了私有 npm 镜像；可指定 `--registry=https://registry.npmjs.org/` |\n| 工具输出为空或乱码 | 不要使用 `--verbose` 启动客户端，以免污染 stdout 的 JSON-RPC 数据 |\n\n## 8. 安全与使用建议\n\n- 将 `~/.xurl`、Access Token 等视为敏感信息，不要粘贴到聊天、日志或共享配置中。\n- 优先在项目级 `.mcp.json` 或 `.grok/config.toml` 中引用环境变量，不要直接提交密钥。\n- 建议为 MCP 单独创建开发者应用，只授予必要权限。\n- 写入操作的速率限制比读取操作严格，例如：\n  - 管理书签\n  - `article_publish`\n- 遇到 `429` 时应降低请求频率并进行退避重试。\n- `xurl` 桥接运行在本机；凭据不会离开本机，只有 Bearer Token 会通过 TLS 发送至 `api.x.com`。\n\n## 9. X API 文档 MCP\n\nX 还提供专门查询 API 文档的 MCP 服务器：\n\n`https://docs.x.com/mcp`\n\n它可让 AI 在开发过程中直接查找：\n\n- API 端点说明\n- 身份认证指南\n- 请求与响应格式\n- 代码示例\n\n例如，开发者在 Cursor 中编写 X API 调用代码时，可让 AI 即时查询某个端点需要哪些参数，而不必离开当前工作流打开浏览器。\n\n## 10. 同时使用两个 MCP 服务器\n\nX API MCP 与文档 MCP 可以同时配置：\n\n- **文档 MCP**：负责查阅接口说明、认证方法和示例。\n- **X API MCP**：负责实际搜索数据或执行账号操作。\n\n这种组合可形成完整工作流：AI 先查询接口文档，再按文档要求调用 X API。\n\n## 11. OpenAPI 规范\n\nX 还提供覆盖全部 **X API v2** 端点的机器可读 OpenAPI 规范，可用于：\n\n- 自动生成 API 客户端\n- 导入 Postman\n- 提供给自定义 AI Agent\n- 校验请求和响应的数据结构",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784712993011,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9991124c4d5de76b8bc8b9a46bddf2241ed8cd68d6ced9717fcb50e021fe74b2",
+  "refs": {
+    "sessionId": "1782900922644_t11i719k"
+  },
+  "revisionId": "sha256:0be4146effb968d8b8cac963073d77904156973a4d3d8ef8bb949bb2e4fcf483",
+  "schemaVersion": 1,
+  "updatedAt": 1784712993011
+}

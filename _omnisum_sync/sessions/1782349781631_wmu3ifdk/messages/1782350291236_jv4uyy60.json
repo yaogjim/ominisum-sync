@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782350291237,
+  "entityType": "message",
+  "id": "1782350291236_jv4uyy60",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Codex省电守护方案\n\n**评级**: C (54分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI开发工具优化\n**次类别**: Mac性能调优, 自动化脚本\n**标签**: #Codex #Mac电池 #LaunchAgent #caffeinate #性能优化\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 有一定实操参考价值，但证据薄弱且依赖具体环境，不适合作为长期资料保留。\n**核心高价值点**: 仅在 Codex 活跃执行任务时启用 caffeinate，空闲后自动释放系统唤醒断言。\n\n### 摘要\n文章介绍作者为解决 Codex 桌面应用在 Mac 上耗电严重的问题，设计了一个通过配置、LaunchAgent、caffeinate 和进程监控实现的省电守护方案。\n\n### 知识要点\n- 可通过 pmset -g assertions 检查 Mac 当前阻止睡眠的进程和断言\n- LaunchAgent 可用于实现本地后台守护进程，按应用活动状态动态控制 caffeinate\n- 降低 WindowServer/GPU 负载和减少日志写入可能改善桌面 AI 应用的耗电问题\n\n### 行动项\n- 如遇 Codex 耗电问题，可先检查 pmset 断言和 Codex 配置项\n- 在测试环境中验证 LaunchAgent 与 caffeinate 自动启停逻辑\n- 应用任何配置修改前备份 ~/.codex/config.toml 和相关脚本\n\n### 存档判定\n归档: 否\n不推荐: 内容来自单条社交媒体，主要是个人经验和提示词片段，缺乏完整代码、测试数据和风险说明。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1782350291237,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:290bf477627f67d61902b184232774b74881cc6e19dc96ae7607a55538a2c964",
+  "refs": {
+    "sessionId": "1782349781631_wmu3ifdk"
+  },
+  "revisionId": "sha256:282fe101590a950c19661180ffc87d1caf57138c793d0a46a3e288e5a903c02e",
+  "schemaVersion": 1,
+  "updatedAt": 1782350291237
+}

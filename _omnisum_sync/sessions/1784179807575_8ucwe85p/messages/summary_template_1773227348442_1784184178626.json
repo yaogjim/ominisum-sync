@@ -1,0 +1,22 @@
+{
+  "createdAt": 1784184178626,
+  "entityType": "message",
+  "id": "summary_template_1773227348442_1784184178626",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 多租户广告优化 Agent：以美妆品牌投放为例的最佳实践\n\n## 一、结论\n\n“**共享核心 Skill + 租户 Wrapper Skill + 私有数据 + 独立反馈闭环**”的方向是合理的，但生产环境中需要补充几个关键约束：\n\n1. **共享的是 Skill 代码和能力契约，不是租户数据。**\n2. **通用 Skill 不应直接调用任意租户私有 API**，应由租户侧编排器完成能力解析和授权。\n3. **反馈不能直接修改线上 Prompt、代码或策略**，必须先进入评测和发布流程。\n4. **通用 Skill 升级后不能立即强制所有租户切换**，应支持版本锁定、灰度发布和回滚。\n5. 广告预算调整属于高风险写操作，必须经过**策略校验、审批和审计**。\n\n---\n\n## 二、具体实例：美妆品牌“青禾”的 Google Ads 优化 Agent\n\n假设一个广告 Agent SaaS 同时服务多个客户，其中租户 A 是美妆品牌“青禾”。\n\n### 业务目标\n\n“青禾”希望 Agent 每天自动分析广告，并在满足以下条件时提高预算：\n\n- 目标 ROAS 不低于 `3.2`\n- 单次预算增幅不超过 `10%`\n- 相关商品库存覆盖天数不少于 `21 天`\n- 每日新增预算超过 `800 元`时，需要人工审批\n- 不能修改品牌词广告活动\n- 只能在每天 `09:00—18:00` 执行写操作\n\n其中库存和毛利数据来自“青禾”的私有 ERP，其他租户和平台运营人员均不能访问原始数据。\n\n---\n\n## 三、推荐架构\n\n```mermaid\nflowchart LR\n    T[定时任务/用户请求] --> O[租户侧 Agent 编排器]\n\n    subgraph TenantA[\"租户 A 隔离执行环境\"]\n        O --> W[Wrapper Skill]\n        W --> D[(广告数据与租户记忆)]\n        W --> P[租户策略与权限]\n        W --> S[私有库存 Skill]\n        W --> G[策略校验器]\n    end\n\n    O --> R[共享 Skill Registry]\n    R --> M[市场分析 Skill]\n    R --> B[出价优化 Skill]\n    R --> C[策略生成 Skill]\n\n    G --> A{是否需要审批}\n    A -->|是| H[人工审批]\n    A -->|否| E[广告平台执行器]\n    H --> E\n    E --> F[效果监控与反馈]\n\n    F --> TE[租户级 Evaluation]\n    F --> AF[脱敏聚合反馈]\n    AF --> GE[通用 Evaluation]\n    GE --> R\n```\n\n### 核心设计原则\n\n> **共享代码，隔离执行；共享经验，禁止共享原始数据。**\n\n理想情况下，共享 Skill 作为有版本的代码包部署到租户隔离执行环境中，而不是让所有租户数据都进入同一个长期运行的中心 Agent。\n\n---\n\n## 四、共享 Skill 与租户 Wrapper 的职责划分\n\n| 组件 | 职责 | 是否可以读取租户私有数据 |\n|---|---|---:|\n| 市场分析 Skill | 分析竞争、趋势和流量机会 | 只能接收调用所需的最小输入 |\n| 出价优化 Skill | 生成预算或出价建议 | 只能接收标准化后的特征 |\n| 策略生成 Skill | 解释建议、生成执行计划 | 不应直接获得 ERP 凭证 |\n| 租户 Wrapper | 定义调用顺序、业务条件和降级逻辑 | 可以 |\n| 私有库存 Skill | 查询租户 ERP 库存 | 可以，但仅限当前租户 |\n| 策略校验器 | 校验预算、权限、时间窗口等硬约束 | 可以 |\n| 执行器 | 调用 Google Ads API | 仅持有当前租户的最小权限凭证 |\n\n通用 Skill 不应自行读取整个租户数据库。它只应该接收完成当前任务所需的结构化输入，例如：\n\n```json\n{\n  \"campaign_id\": \"cmp_1024\",\n  \"current_daily_budget\": 10000,\n  \"roas_7d\": 3.4,\n  \"conversion_rate_7d\": 0.062,\n  \"inventory_cover_days\": 26,\n  \"gross_margin_rate\": 0.68,\n  \"constraints\": {\n    \"target_roas\": 3.2,\n    \"max_budget_change_pct\": 10\n  }\n}\n```\n\n---\n\n## 五、租户 Wrapper 配置示例\n\n优先使用可审计的声明式配置，而不是让 Agent 自由生成并执行代码。\n\n```yaml\ntenant_id: qinghe-beauty\n\nskills:\n  market_analysis: \"3.2.1\"\n  bid_optimization: \"5.4.0\"\n  strategy_generation: \"4.1.3\"\n  inventory_query: \"tenant-private:2.0.0\"\n\nbusiness_rules:\n  target_roas: 3.2\n  minimum_inventory_cover_days: 21\n  max_budget_change_pct: 10\n  excluded_campaign_tags:\n    - brand-keyword\n\nrouting:\n  - if: >\n      market.score >= 0.70\n      and inventory.cover_days >= 21\n      and forecast.roas >= 3.20\n    then:\n      - bid_optimization\n      - strategy_generation\n    else:\n      - strategy_generation\n\napproval:\n  required_when:\n    - daily_spend_delta > 800\n    - confidence < 0.80\n\nexecution:\n  allowed_time: \"09:00-18:00\"\n  dry_run_first: true\n  automatic_rollback: true\n```\n\n这里的 Wrapper 只负责“胶水逻辑”，但所有条件都可以被版本管理、测试和审计。\n\n---\n\n## 六、一次完整运行示例\n\n### 1. Agent 获取广告数据\n\n某广告活动当前数据如下：\n\n| 指标 | 数值 |\n|---|---:|\n| 当前每日预算 | 10,000 元 |\n| 最近 7 天 ROAS | 3.4 |\n| 市场机会分数 | 0.82 |\n| 库存覆盖天数 | 26 天 |\n| 毛利率 | 68% |\n| 通用 Skill 建议 | 预算提高 15% |\n| 建议置信度 | 0.87 |\n\n### 2. Wrapper 调用私有库存 Skill\n\n通用 Skill 不直接连接 ERP，而是声明自己需要以下能力：\n\n```json\n{\n  \"required_capability\": \"inventory.cover_days\",\n  \"sku_ids\": [\"SKU-001\", \"SKU-002\"]\n}\n```\n\n租户侧编排器确认权限后，调用“青禾”的私有库存 Skill，再把结果转换成标准化特征：\n\n```json\n{\n  \"inventory_cover_days\": 26\n}\n```\n\n这样可以避免共享 Skill 获得 ERP 地址、访问令牌和原始库存明细。\n\n### 3. 策略校验器修正建议\n\n通用 Skill 建议预算增加 `15%`，但租户规则规定最大增幅为 `10%`，因此最终建议被限制为：\n\n```text\n10,000 元/天 → 11,000 元/天\n```\n\n新增预算为 `1,000 元/天`，超过 `800 元`的审批阈值，因此不能直接执行。\n\n###发生错误: network error",
+    "prompt_id": "template_1773227348442",
+    "role": "assistant",
+    "streaming": true,
+    "template_name": "产品-最佳实践",
+    "timestamp": 1784184178626,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1be15391c9458768efdfbb17d163c3a8f90047e001c5e1414f52896eef5ecfbb",
+  "refs": {
+    "sessionId": "1784179807575_8ucwe85p"
+  },
+  "revisionId": "sha256:8dd8a872fb3c6cad2cfe893cd92df3944f2490c0560cf0aa09cd76fd01662a7b",
+  "schemaVersion": 1,
+  "updatedAt": 1784184178626
+}

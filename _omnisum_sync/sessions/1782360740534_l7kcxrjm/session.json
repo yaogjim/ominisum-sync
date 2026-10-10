@@ -1,0 +1,67 @@
+{
+  "createdAt": 1782360740534,
+  "entityType": "session",
+  "id": "1782360740534_l7kcxrjm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如研究银行零售客户结构，可进一步查阅招商银行原始年报",
+      "如无金融客户分层研究需求，可直接删除"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782361337454,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 6,
+      "information_density": 5,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 3,
+      "relevance": 3,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "招行客户资产分层数据",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息过短且缺乏上下文、分析和应用场景，除非正在研究银行财富客户结构，否则保留价值较低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "招商银行客户总数约2.24亿户",
+      "总资产1000万元以上私人银行客户约19.93万户，占比0.09%",
+      "总资产50万元以上金葵花客户约573.22万户，占比2.56%",
+      "普通客户占比约97.35%"
+    ],
+    "oneHighValuePoint": "招行总资产1000万元以上私人银行客户仅占总客户数约0.09%，体现高净值客户在总体客户中的极低比例。",
+    "oneLineReview": "这是一条有一定事实参考价值但缺乏分析延展的金融数据摘录。",
+    "primaryCategory": "金融数据",
+    "rating": "D",
+    "rejectReason": "内容仅提供单条银行客户分层数据，缺少分析、方法论和可操作结论，长期参考价值有限。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "银行客户结构",
+      "财富分层"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章引用招商银行年报数据，列出招行总客户数、私人银行客户、金葵花客户和普通客户的数量及占比，反映其客户资产分层结构。",
+    "tags": [
+      "招商银行",
+      "私人银行",
+      "金葵花",
+      "客户分层",
+      "财富分布"
+    ],
+    "title": "x.com/williamlong/status/2069692443453448642",
+    "totalScore": 29.5,
+    "url": "https://x.com/williamlong/status/2069692443453448642"
+  },
+  "payloadHash": "sha256:5239fe7dcedb6c66f7e6ae7f07dbb3992255cd1d5afd91ae8ce67ed207750916",
+  "refs": {},
+  "revisionId": "sha256:997364302ed97bdf49f11e22a5e4c0f3fad5463d263e6022502872239cc101e7",
+  "schemaVersion": 1,
+  "updatedAt": 1782361337727
+}

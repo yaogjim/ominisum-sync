@@ -1,0 +1,64 @@
+{
+  "createdAt": 1791593343531,
+  "entityType": "session",
+  "id": "1791593343531_a6q3hlhf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若准备采用该功能，测试长会话切换不同技能后，已加载工具是否仍然可用、是否支持卸载。",
+      "在目标 OpenAI 或 Anthropic 模型上验证技能加载前后的提示缓存表现，不直接将推文宣称视为已验证结论。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1791594555155,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "智能体按技能动态加载工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "文章将技能描述为包含指令、脚本和参考文件的文件夹，用于向智能体提供领域任务知识。",
+      "据文章介绍，DeepAgents 可在技能加载时动态加载配套工具，而非让这些工具始终可用。",
+      "动态加载后工具是否持续可用、能否卸载，以及如何保持提示缓存，文中均未给出机制说明。"
+    ],
+    "oneHighValuePoint": "将技能与所需工具配对，在技能加载时再引入工具，为避免无关工具始终可用提供了具体设计思路。",
+    "oneLineReview": "这是与 Agent 开发直接相关的功能线索，但尚不足以支撑实现选型或缓存兼容性判断。",
+    "primaryCategory": "Agent 开发",
+    "rating": "B",
+    "rejectReason": "缺少接口说明、实现机制和验证数据，暂不适合作为可直接复用的技术资料存档",
+    "retentionDecision": "作为功能线索浏览，待有实现文档或验证结果后再决定保留",
+    "secondaryCategories": [
+      "AI 编程工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章称 DeepAgents 已支持在加载技能时动态加载配套工具，并称使用 OpenAI、Anthropic 模型时不会破坏提示缓存。回复主要追问工具能否卸载、长会话中的可用范围，以及缓存保持的具体机制。",
+    "tags": [
+      "DeepAgents",
+      "技能管理",
+      "工具动态加载",
+      "提示缓存"
+    ],
+    "title": "Harrison Chase: One cool thing deepagents now supports: dynamically loading tools when is a skil…",
+    "totalScore": 57,
+    "url": "https://x.com/hwchase17/status/2107908436965179896"
+  },
+  "payloadHash": "sha256:40b2d14ec7ea2f6efa0727f9d369511bae76f071159168edd33d7f72f2162da1",
+  "refs": {},
+  "revisionId": "sha256:5d366a54e5e0788c4d5868bd3eeab132f8e4f328b7396fb0da14ae3c13864565",
+  "schemaVersion": 1,
+  "updatedAt": 1791594555195
+}

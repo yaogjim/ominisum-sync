@@ -1,0 +1,94 @@
+{
+  "createdAt": 1784161527890,
+  "entityType": "session",
+  "id": "1784161527890_i8dythnu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在Python 3.12虚拟环境中安装elysia-ai，并运行elysia start验证本地应用。",
+      "配置模型API密钥及Weaviate连接信息，再对目标集合执行预处理。",
+      "使用@tool注册一个自定义工具，测试决策树能否根据请求正确选择并调用该工具。"
+    ],
+    "archiveReason": "与Agent开发直接相关，提供了安装、配置、自定义工具、数据预处理、本地部署及系统架构等可操作信息。",
+    "classifiedAt": 1784678151193,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Elysia决策树智能体平台",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1784161549332,
+        "imageId": "img-4",
+        "model": "gpt-5.6-sol",
+        "ocrText": "",
+        "summary": "# Elysia：基于决策树的开源 AI Agent 框架\n\n## 一句话概括\n\nElysia 是 Weaviate 推出的开源 Agent 平台：由决策智能体结合上下文，在预定义的决策树中动态选择工具，尤其适合对 Weaviate 数据进行智能检索、聚合与问答。\n\n## 核心特点\n\n- **动态工具选择**：Agent 会综合当前环境、历史操作和后续路径，判断下一步使用什么工具。\n- **决策树式编排**：工具被组织成预定义节点网络，而不是让模型无约束地调用全部工具，流程更可控。\n- **支持自定义工具**：开发者可通过 Python 装饰器快速添加工具与专属工作流。\n- **深度集成 Weaviate**：内置查询和聚合工具，可自动识别数据集合并执行 Agentic Search。\n- **支持本地运行**：可连接本地 Weaviate 与 Ollama，实现数据和模型的本地化部署。\n\n## 技术架构\n\nElysia 采用现代 Web 应用架构：\n\n- 前端提供实时、响应式交互界面；\n- 后端基于**FastAPI**，同时服务 Web 与 API；\n- 核心逻辑使用纯 Python 编写；\n- 通过**DSPy**管理与大语言模型的交互。\n\n其关键差异在于：不是把所有工具直接暴露给 Agent，而是通过带有全局上下文的决策节点约束和规划工具调用路径。\n\n## 使用方式\n\n### 作为应用运行\n\n```bash\npip install elysia-ai\nelysia start\n```\n\n然后访问`localhost:8000`，配置模型 API Key、Weaviate 集群地址及相关参数。\n\n### 作为 Python 包使用\n\n```python\nfrom elysia import tool, Tree\n\ntree = Tree ()\n\n@tool (tree=tree)\nasync def add (x: int, y: int) -> int:\n    return x + y\n\ntree (\"What is the sum of 9009 and 6006?\")\n```\n\n连接 Weaviate 后，可直接用自然语言查询集合，例如查找电商数据中价格最高的商品。\n\n## 配置与数据要求\n\n- PyPI 安装要求**Python 3.12**；源码开发版本支持 Python 3.10～3.12。\n- 使用 Weaviate 需要配置集群 URL、API Key 或本地连接。\n- 还需配置对应的向量模型与 LLM 密钥，官方推荐使用 OpenRouter 接入多种模型。\n- 自有集合需要先执行预处理；Web 端点击**Analyze**，Python 中调用`preprocess ()`。\n- Elysia 会使用较长上下文，小型本地模型可能速度较慢、超时或无法稳定输出结构化结果。\n\n## 项目定位与局限\n\nElysia 适合构建面向企业数据的智能检索、分析和工具工作流，核心价值是兼顾 Agent 的动态决策能力与流程可控性。\n\n但项目目前仍处于**Beta**阶段，维护标准不等同于成熟生产级软件。官方暂未规划大型新功能，主要依赖社区围绕新工具、用户体验痛点和特定工作流持续贡献。",
+        "url": "https://github.com/weaviate/elysia/raw/main/img/banner.gif",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "Elysia: Decision Tree Agentic Framework",
+        "caption": "",
+        "height": 223,
+        "id": "img-4",
+        "nearbyText": "⚠️ Elysia is in beta! If you encounter any issues, please open an issue on GitHub. Elysia is an agentic platform designed to use tools in a decision tree. A decision agent decides which tools to use dynamically based on its environment and ...",
+        "resolvedUrl": "https://github.com/weaviate/elysia/raw/main/img/banner.gif",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/weaviate/elysia/raw/main/img/banner.gif",
+        "width": 1343
+      }
+    ],
+    "knowledgePoints": [
+      "Elysia使用预定义决策树组织工具节点，由决策代理结合环境、历史动作和可用选项动态选择行动。",
+      "后端采用FastAPI，核心逻辑使用Python实现，并由DSPy处理大语言模型交互。",
+      "平台可连接Weaviate云端或本地实例，并支持通过Ollama使用本地模型，但长上下文可能使较小模型超时或产生结构化输出错误。"
+    ],
+    "oneHighValuePoint": "其核心设计是让具备全局上下文的决策代理在预定义节点网络中选择下一步工具，而非在运行时无约束地访问全部工具。",
+    "oneLineReview": "这是一份实用性较强的项目入口文档，但架构主张缺少基准数据和深入技术论证。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留并按需精读，适合作为决策树智能体与Weaviate集成的实现参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "向量数据库",
+      "开源工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Elysia开源智能体平台：由决策代理在预定义决策树中动态选择工具，支持自定义工具和Weaviate数据检索，并说明安装配置、本地运行、数据预处理、架构及常见问题。",
+    "tags": [
+      "Elysia",
+      "AI Agent",
+      "决策树",
+      "Weaviate",
+      "工具调用"
+    ],
+    "title": "weaviate/elysia: Python package and backend for the Elysia platform app.",
+    "totalScore": 70,
+    "url": "https://github.com/weaviate/elysia"
+  },
+  "payloadHash": "sha256:be9ab0e1aae97056dd1ae992da50c3beb128953e3bfbf5325e9b73c850b19af3",
+  "refs": {},
+  "revisionId": "sha256:c83cc1518c54b84eddf05fe6c053bde0e72329c70fe7ee1698346201b716dc98",
+  "schemaVersion": 1,
+  "updatedAt": 1789696038593
+}

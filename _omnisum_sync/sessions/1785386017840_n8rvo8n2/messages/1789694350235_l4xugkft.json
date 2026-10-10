@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694350235,
+  "entityType": "message",
+  "id": "1789694350235_l4xugkft",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一则工具推荐：安装开源项目 **video-shotcraft** 后，可让 Claude Code 或 Codex 调用预设镜头方案和代码，更快生成电影感产品视频。\n\n## 关键内容\n\n- 项目提供 **106 张“镜头配方卡”**，即按名称调用的运镜、构图等预设；另有 **161 个动态预览**，方便查看效果、切换版本并复制使用。\n- 它包含可直接用于项目的代码与生产模板，而非只能手动调整的固定素材，目的是让 AI 根据文字描述组合并生成视频。\n- 安装方式较简单：把 GitHub 仓库链接交给编程代理，让其克隆并导入技能目录，再描述想要的视频即可。\n- 作者宣称，过去需要剪辑师花一周完成的产品视频，现在可能通过一次提示生成；但这是推广性表述，原帖没有提供质量对比、生成耗时或适用范围等验证信息。\n\n## 通俗解读\n\n“镜头配方卡”类似给 AI 一本标准动作菜单：与其让它临时猜测怎么推镜、转场，不如直接说调用某个已有镜头方案，结果通常更稳定。它并非让 Claude 本身变成传统剪辑软件，而是让 Claude 编写和组合视频生成代码。\n\n**是否值得细读：** 想用 Claude Code/Codex 制作产品演示视频的人，值得点进 GitHub 查看示例与安装说明；若只想了解新闻，原帖信息已基本完整，无需细读。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694350235,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:fff9b967c7a64a7bfa9a2cfc4d10431184302c10b68791f926a75cf818ded665",
+  "refs": {
+    "sessionId": "1785386017840_n8rvo8n2"
+  },
+  "revisionId": "sha256:f8cb7d694b85d1cdddf5895e15b4327236481091189f6d74856630c563d2c8e0",
+  "schemaVersion": 1,
+  "updatedAt": 1789694350235
+}

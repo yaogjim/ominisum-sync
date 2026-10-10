@@ -1,0 +1,19 @@
+{
+  "createdAt": 1784605804307,
+  "entityType": "message",
+  "id": "1784605804306_zz1i4oe9",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Graphify代码知识图谱实践指南\n\n**评级**: A (81分)  |  **深度阅读**: 是  |  **建议操作**: 存档\n\n**主类别**: AI编程工具\n**次类别**: 知识管理, 开发者工具\n**标签**: #代码知识图谱 #tree-sitter #AI编程助手 #MCP #本地解析\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 10 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 工具定位和操作文档较完整，但内容重复较多，基准结果主要为项目方自述，且查询日志的默认行为存在表述不一致。\n**核心高价值点**: 以确定性AST解析构建非向量式代码知识图谱，并用EXTRACTED、INFERRED等标签标明每条关系的来源与推断性质。\n\n### 摘要\n文章系统介绍Graphify：用tree-sitter在本地解析代码，并将文档、数据库模式及媒体统一为可查询知识图谱，同时给出安装、查询、MCP、团队同步、隐私、基准测试与故障排查说明。\n\n### 知识要点\n- 代码通过tree-sitter在本地生成实体及调用、导入、继承等关系，文档和媒体则需要语义模型处理。\n- graphify query、path和explain分别支持自然语言子图检索、实体间最短路径追踪和单节点关系解释。\n- 生成的graph.json、GRAPH_REPORT.md和graph.html可供AI助手、浏览器及MCP服务复用，并支持提交到团队仓库后增量更新。\n\n### 行动项\n- 使用uv tool install graphifyy安装工具，再执行graphify install注册到目标AI编程助手。\n- 在代表性代码库运行graphify .，检查graph.html及graph.json中的跨文件关系和置信标签是否准确。\n- 根据数据敏感性配置.graphifyignore与明确的推理后端，并核查查询日志设置后再用于真实项目。\n\n### 存档判定\n归档: 是 — 原因: 包含完整安装命令、查询方式、团队工作流、隐私边界、故障排查和多平台集成说明，具有较强的直接实践与复用价值。\n删除: 否\n留存决策: 作为代码库知识图谱工具的安装、集成与评估参考长期保留",
+    "role": "assistant",
+    "timestamp": 1784605804307,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:0adc2f4076c6fdc64d7b794dbf7dc62e9ce24f07f10afd3c77ad128dc1ea48ed",
+  "refs": {
+    "sessionId": "1784605016190_kxsais9q"
+  },
+  "revisionId": "sha256:5d558402c123918b5a593d2d0a52e76b8ef1364114c3ef72878db78841fc15a8",
+  "schemaVersion": 1,
+  "updatedAt": 1784605804307
+}

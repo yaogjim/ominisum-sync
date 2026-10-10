@@ -1,0 +1,23 @@
+{
+  "createdAt": 1784023587664,
+  "entityType": "message",
+  "id": "summary_template_1772076842437_1784023587664",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Herdr：一座运行在终端里的 AI Agent 调度台\n\n## 一句话总结\n\n**Herdr = tmux 的持久会话能力 + AI Agent 状态感知 + 可编程调度接口。**\n\n## 深度总结\n\nHerdr 不是终端模拟器，也不是桌面或网页式 Agent 管理器，而是一个运行在现有终端中的**Agent-aware multiplexer（懂 Agent 的终端复用器）**。\n\n其核心能力有四项：\n\n1. **真实终端窗格**：直接运行 Shell、Agent、测试与日志，不重做聊天界面。\n2. **会话持久化**：终端关闭或 SSH 断开后，任务仍继续运行。\n3. **Agent 状态感知**：统一显示`工作中 / 等待输入 / 完成 / 空闲`。\n4. **自动化控制**：通过 CLI 和 JSON Socket API 创建窗格、读取输出、等待状态，让人、脚本甚至 Agent 自己编排工作流。\n\n它支持：\n\n- 本机运行；\n- SSH 到服务器后运行；\n- 本地客户端连接远端会话，并保留快捷键、剪贴板与图片粘贴；\n- 手机和平板远程查看、切换任务；\n- 接入 Claude Code、Codex、Kimi 等终端 Agent；普通 CLI Agent 也能直接运行，专门集成则提供更丰富的状态与恢复能力。\n\n## 通俗解读\n\n可以把 Herdr 想成一个**远程施工现场的总控室**：\n\n- 每个窗格是一张工位；\n- 每个 Agent 是一名工人；\n- Herdr 告诉你谁在干活、谁卡住、谁已完成；\n- 即使你关掉电脑，工人仍在服务器上继续工作；\n- 你可换电脑或用手机重新接管；\n- Agent 还能通过 API 自己开工位、查结果、安排下一步。\n\n它真正解决的不是 “如何和一个 Agent 聊天”，而是：\n\n> **如何同时、持续、跨设备地管理多个 Agent 与真实开发进程。**\n\n## 辩证思考\n\n### 价值\n\n- **定位准确**：填补了 tmux “不懂 Agent” 和桌面 Agent 工具 “不擅长远程持久运行” 之间的空白。\n- **开放且可组合**：真实 PTY、CLI、API 比封闭 GUI 更适合自动化和工程化。\n- **顺应趋势**：当开发从 “亲自操作” 转向 “监督多个 Agent”，状态总览与任务编排会越来越重要。\n\n### 局限\n\n- **门槛仍在**：终端、SSH、会话和窗格概念对普通用户并不友好。\n- **集成深度不一**：任何 Agent 都能运行，不等于都能准确识别状态或无缝恢复。\n- **手机可用不等于好用**：适合查看、切换和应急处理，不适合复杂开发。\n- **安全面扩大**：能控制进程、读取输出的 API，也需要严格管理权限与远程访问。\n- **价值取决于规模**：只用一个本地 Agent 时，它可能比普通终端更复杂；多 Agent、远程服务器、长任务场景下优势才明显。\n\n## 结论\n\nHerdr 的创新不在于 “重新发明终端”，而在于把终端升级为**面向 AI Agent 的持久化控制平面**。\n\n**它不是人人必需，但很可能适合重度终端用户、远程开发者，以及需要并行调度多个编码 Agent 的团队。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "解读",
+    "timestamp": 1784023587664,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2861e63a5f71bdd6bfc29dc30575b3b6666486f2726c78f13c539de17309ca40",
+  "refs": {
+    "sessionId": "1784023587780_heodfi2x"
+  },
+  "revisionId": "sha256:0bece6927e160f059a33b0b4c29817d2485046039191486ffe564af25c30b6f3",
+  "schemaVersion": 1,
+  "updatedAt": 1784023587664
+}

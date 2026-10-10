@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785377114140,
+  "entityType": "session",
+  "id": "1785377114140_xhsxlc6g",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在适用项目中安装claude-code-merge-queue并运行init，检查自动生成的配置、Claude设置和预推送钩子。",
+      "配置integrationBranch、checkCommand、端口和工作树规则，用两个并行代理验证构建锁与FIFO落地流程。",
+      "将land交给代理执行，将promote保留为人工操作，并测量完整检查命令对每小时落地次数的影响。"
+    ],
+    "archiveReason": "提供了可直接部署的工具、完整命令体系、配置示例、流程约束及明确的适用边界。",
+    "classifiedAt": 1785377725503,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "并行Claude代理的本地合并队列",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "并行编码代理可以在独立Git工作树中执行任务，再通过本地FIFO队列串行完成检查、变基和推送。",
+      "预推送钩子可强制代理通过统一落地命令，并以明确分支名的紧急环境变量保留人工逃生通道。",
+      "本地队列只协调单台机器，检查命令耗时会直接形成吞吐瓶颈，且该工具不提供安全边界或人工审查。"
+    ],
+    "oneHighValuePoint": "将代理任务隔离在编号工作树中，并通过机器级构建锁和FIFO落地队列串行化检查、变基与推送，可系统性降低并行代理的推送竞态、重复构建和共享资源测试抖动。",
+    "oneLineReview": "这是一个针对并行Claude Code代理冲突与推送竞态的实用工具文档，实施细节充分，但效果主要由项目自身说明，缺少独立案例和性能数据。",
+    "primaryCategory": "AI编程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，可作为本地并行编码代理协作与安全落地的实施参考",
+    "secondaryCategories": [
+      "Agent开发",
+      "软件工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍用于并行Claude Code代理的本地合并队列：以编号工作树隔离任务，用FIFO串行化构建、检查、变基与推送，并通过钩子保护分支，同时说明配置、命令、故障恢复及单机运行等限制。",
+    "tags": [
+      "Claude Code",
+      "合并队列",
+      "并行代理",
+      "Git工作树",
+      "CI流程"
+    ],
+    "title": "funador/claude-code-merge-queue: The local merge queue for parallel Claude Code agents",
+    "totalScore": 78,
+    "url": "https://github.com/funador/claude-code-merge-queue"
+  },
+  "payloadHash": "sha256:5704cb0776bc2a78570769bcbb67fb44c264076d293168bae7ba1c84abb4dc6b",
+  "refs": {},
+  "revisionId": "sha256:3fcaecb8bf792eb932ebbb0851da270f2b82baa186b81b1660758394a65cdae5",
+  "schemaVersion": 1,
+  "updatedAt": 1789694376642
+}

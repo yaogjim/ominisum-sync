@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727676365,
+  "entityType": "message",
+  "id": "1789727676366_pn7dncdw",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 数值优化将 Qwen3.8-27B 压至 9.71 GiB，关键能力基本保留\n\n作者通过低比特量化，把 Qwen3.8-27B 从 46.55 GiB 压缩到 9.71 GiB，体积减少约 80%，同时保留 MTP（多 Token 预测）能力。其核心价值是让大模型显著降低存储和部署门槛，而数学、科学推理、指令遵循与工具调用等能力仍维持较高水平。\n\n## 低于 10 GiB，主要评测损失有限\n\n量化后模型在 AIME 2026 上保持 100%，GPQA Diamond 为 86.36%，IFEval 为 93.90%，BFCL 为 68%，其中 BFCL 与 BF16 高精度版本持平。按作者对同体积模型的比较，它在低于 10 GiB 的量化版本中，数学成绩并列最高，科学推理和指令遵循成绩最高；这也意味着其他团队所谓“全面超越”的说法，至少从实测结果看并不成立。\n\n## 27B 模型上，数值优化比蒸馏更有效\n\n此前在小模型上有效的 On-Policy Distillation（基于模型自身策略生成数据并蒸馏）迁移到 27B 后没有奏效，且训练迭代耗时较长。团队最终改用更直接的数值优化，并求得解析解，才完成量化方案，但整体进度因此延迟约一周半。作者判断，如果未来继续压到约 2.0 bpw（每个权重平均 2 比特），可能仍需借助蒸馏来弥补精度损失。\n\n## Vision Encoder 也实现量化\n\n团队还量化了视觉编码器，输出相似度达到 0.999。针对量化工具不支持其维度的问题，他们通过补零对齐维度；该处理在数学上等价，也无需修改推理代码。作者表示量化权重将在整理后开源。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727676365,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:564bf676f7f6a9f5c86beb590867ad102233d827224257b6455455e9ed34f1be",
+  "refs": {
+    "sessionId": "1788913968259_8c49ziwf"
+  },
+  "revisionId": "sha256:285ae251f9a1a368247c0065d2b6c1abaeccce2b6eaee5a8cc2130d84093dac0",
+  "schemaVersion": 1,
+  "updatedAt": 1789727676365
+}

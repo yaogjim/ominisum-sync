@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727630388,
+  "entityType": "message",
+  "id": "1789727630388_dh9wpwx9",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Hister：为浏览记录与本地文件建立私人搜索引擎\n\nHister 是一款开源的个人搜索引擎，可为用户访问过的网页和保存的本地文件建立全文索引，帮助重新找到曾经看过的信息。它默认本地运行，不依赖第三方搜索服务，也可通过网页、终端或 AI 助手调用。\n\n## 搜索内容本身，而不只是标题和网址\n\nHister 的核心能力是索引网页和文件的完整内容。安装 Firefox 或 Chrome 扩展后，新访问的页面可自动保存并进入索引；也可以导入既有浏览历史、扫描本地目录或文件，以及抓取指定网站。\n\n搜索支持短语、通配符、否定词、字段过滤、别名和结果优先级。用户可通过 Web 界面、终端 UI、命令行或 MCP 接口检索，后者允许 AI 助手查询个人资料库。共享服务器还支持多用户隔离，分别保存文档与搜索结果。\n\n## 默认强调隐私，语义搜索需自行权衡\n\n项目没有遥测和强制云同步，文档及索引保存在用户指定的 Hister 服务器上，适合本机或自有基础设施部署。浏览器扩展原则上只向该服务器发送页面内容，但会额外下载网站图标。\n\nHister也提供可选的语义搜索，即通过向量嵌入按“含义”匹配文档；其文本会发送到用户配置的嵌入服务，因此启用远程服务前需要评估隐私风险。\n\n## 降低个人知识检索对平台的依赖\n\nHister 的价值不在于搜索整个互联网，而是把分散在浏览历史和文件中的信息变成可持续检索的个人知识库。项目采用 AGPLv3 许可证，可直接下载二进制运行，也支持 Homebrew、Docker 和 Nix；本地个人使用无需额外配置。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727630388,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d890d3335a0d633aee46cd25baae2c9425f6fb992788a562a43712bcee055df8",
+  "refs": {
+    "sessionId": "1789698489450_dbsmam5p"
+  },
+  "revisionId": "sha256:bc6b13dfa0421a212bd3fbd87ace88c4abc7cc1c5c97bd2bf25ea19f2526e080",
+  "schemaVersion": 1,
+  "updatedAt": 1789727630388
+}

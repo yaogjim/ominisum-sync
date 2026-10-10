@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789723594451,
+  "entityType": "session",
+  "id": "1789723594451_z152g4wm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用一周按部门记录高频流程的触发条件、步骤、完成标准、交接点、重复录入和人工耗时。",
+      "审计现有工具并分别标记为吸收、保留或淘汰，同时明确每类核心数据的唯一权威来源。",
+      "选择人工耗时最高的一个部门先行迁移，运行稳定后再部署文档接收代理及其他自动化。"
+    ],
+    "archiveReason": "提供了从流程盘点、工具整合、数据建模到代理与自动化落地的完整顺序，可作为中小企业AI系统建设的项目检查表。",
+    "classifiedAt": 1789723768996,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 10,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI原生业务操作系统构建指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "系统建设可按流程梳理、工具取舍、数据建模、核心整合、AI代理、后台自动化六阶段推进。",
+      "技术栈审计可将工具分为吸收、保留和淘汰三类，以建立单一事实来源并减少重复数据。",
+      "不同任务应采用模型路由：低成本模型处理提取和分类，高能力模型用于推理、起草与决策。"
+    ],
+    "oneHighValuePoint": "先建立统一数据模型和稳定工作流，再引入AI与自动化，避免把尚未修正的低效流程直接自动化。",
+    "oneLineReview": "实施顺序清晰且实践相关度高，但高回报、采用率和成本降幅主要来自作者自述，缺少可核验数据与完整成本分析。",
+    "primaryCategory": "AI系统与业务自动化",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档其六阶段实施框架，但对投资回报率和成本节省主张保持审慎",
+    "secondaryCategories": [
+      "商业系统构建",
+      "产品开发与技术实现"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章面向工具碎片化的中小企业，提出先梳理流程，再整合工具、设计数据模型、分部门迁移核心系统，最后部署AI代理和后台自动化，并以客户项目说明应用场景。",
+    "tags": [
+      "AI原生系统",
+      "业务流程梳理",
+      "数据模型",
+      "AI代理",
+      "流程自动化"
+    ],
+    "title": "构建 AI 原生操作系统的完整指南",
+    "totalScore": 76,
+    "url": "https://x.com/lukepierceops/status/2089327211224400348"
+  },
+  "payloadHash": "sha256:8e2ef8427d4ab0d453defd7a438fb15aa25d4f5a41fb59a1111c30640d4f8b86",
+  "refs": {},
+  "revisionId": "sha256:508aa24aab94f3ab799e4c8f327dc59072e49f88364fa5715928fb6d0a05220d",
+  "schemaVersion": 1,
+  "updatedAt": 1790769860736
+}

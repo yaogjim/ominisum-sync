@@ -1,0 +1,884 @@
+{
+  "createdAt": 1787104339850,
+  "entityType": "session",
+  "id": "1787104339850_0vliroxv",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "近期采购内存前重新查询价格追踪网站，并与历史价格和不同容量档位比较。",
+      "非必要升级可考虑延期，必要采购则评估降低容量或继续使用现有平台。",
+      "制定硬件预算时加入内存价格波动和供应紧张的风险余量。"
+    ],
+    "archiveReason": "",
+    "byline": "Zak Killian",
+    "classifiedAt": 1789724912740,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "内存价格暴涨与AI产能挤压",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.tomshardware.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Corsair DDR4 RAM",
+        "caption": "(Image credit: Future)",
+        "height": 337,
+        "id": "img-34",
+        "nearbyText": "(Image credit: Future)",
+        "resolvedUrl": "https://cdn.mos.cms.futurecdn.net/tpcMxmS65pozfyjCrFmyWZ-1920-80.jpg.webp",
+        "role": "figure",
+        "score": 113,
+        "src": "https://cdn.mos.cms.futurecdn.net/tpcMxmS65pozfyjCrFmyWZ-1920-80.jpg.webp",
+        "width": 600
+      }
+    ],
+    "knowledgePoints": [
+      "文中数据显示，高容量DDR5套装的同比涨幅接近500%，部分产品价格达到历史低位的约十倍。",
+      "DDR5价格上涨可能推动用户转向DDR4平台，从而形成对旧规格内存的次级需求冲击。",
+      "HBM需要堆叠多层DRAM，AI基础设施需求可能减少标准消费级内存的可用产能。"
+    ],
+    "metaAuthor": "https://www.tomshardware.com/author/zak-killian",
+    "oneHighValuePoint": "AI数据中心和HBM生产可能挤占标准DRAM产能，并通过替代需求将价格压力传导至DDR4等旧平台。",
+    "oneLineReview": "数据对理解内存涨价幅度有帮助，但预测偏强、核验线索有限，长期参考价值不高。",
+    "primaryCategory": "硬件市场与供应链",
+    "published": "2026-08-17T13:52:30+00:00",
+    "rating": "C",
+    "rejectReason": "内容以阶段性价格数据和供应紧张预测为主，缺少可复用的采购框架及完整证据链。",
+    "retentionDecision": "速览市场趋势即可，具体价格和预测需在采购前重新核验",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "alternativeHeadline": "Analysis of historical price data trends indicates that the memory crisis has driven RAM prices to never-before-seen heights.",
+        "articleSection": "RAM",
+        "author": {
+          "@type": "Person",
+          "description": "Zak is a freelance contributor to Tom&#039;s Hardware with decades of PC benchmarking experience who has also written for HotHardware and The Tech Report. A modern-day Renaissance man, he may not be an expert on anything, but he knows just a little about nearly everything.",
+          "image": {
+            "@type": "ImageObject",
+            "caption": "Zak Killian",
+            "url": "https://cdn.mos.cms.futurecdn.net/yonJziSpjzVFahKcUonJvi.jpg"
+          },
+          "jobTitle": "Contributor",
+          "name": "Zak Killian",
+          "url": "https://www.tomshardware.com/author/zak-killian"
+        },
+        "creator": {
+          "@type": "Person",
+          "description": "Zak is a freelance contributor to Tom&#039;s Hardware with decades of PC benchmarking experience who has also written for HotHardware and The Tech Report. A modern-day Renaissance man, he may not be an expert on anything, but he knows just a little about nearly everything.",
+          "image": {
+            "@type": "ImageObject",
+            "caption": "Zak Killian",
+            "url": "https://cdn.mos.cms.futurecdn.net/yonJziSpjzVFahKcUonJvi.jpg"
+          },
+          "jobTitle": "Contributor",
+          "name": "Zak Killian",
+          "url": "https://www.tomshardware.com/author/zak-killian"
+        },
+        "dateModified": "2026-08-17T13:52:30+00:00",
+        "datePublished": "2026-08-17T13:52:30+00:00",
+        "headline": "Memory prices climb 500% in 12 months, up to 10x the lowest ever tracked prices &mdash; 128GB of DDR5 now $3,399",
+        "image": [
+          {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "caption": "Corsair DDR4 RAM",
+            "height": 1440,
+            "url": "https://cdn.mos.cms.futurecdn.net/tpcMxmS65pozfyjCrFmyWZ-2560-80.jpg",
+            "width": 2560
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "caption": "Corsair DDR4 RAM",
+            "height": 2560,
+            "url": "https://cdn.mos.cms.futurecdn.net/v2/t:0,l:1313,cw:3374,ch:3374,q:80,w:2560/tpcMxmS65pozfyjCrFmyWZ.jpg",
+            "width": 2560
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "caption": "Corsair DDR4 RAM",
+            "height": 1920,
+            "url": "https://cdn.mos.cms.futurecdn.net/v2/t:0,l:751,cw:4498,ch:3374,q:80,w:2560/tpcMxmS65pozfyjCrFmyWZ.jpg",
+            "width": 2560
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "caption": "Corsair DDR4 RAM",
+            "height": 1440,
+            "url": "https://cdn.mos.cms.futurecdn.net/v2/t:0,l:1,cw:5998,ch:3374,q:80,w:2560/tpcMxmS65pozfyjCrFmyWZ.jpg",
+            "width": 2560
+          }
+        ],
+        "mainEntityOfPage": "https://www.tomshardware.com/pc-components/ram/memory-prices-climb-500-percent-in-12-months-up-to-10x-the-lowest-ever-tracked-prices-128gb-of-ddr5-now-usd3-399",
+        "name": "Memory prices climb 500% in 12 months, up to 10x the lowest ever tracked prices &mdash; 128GB of DDR5 now $3,399",
+        "publisher": {
+          "@type": "Organization",
+          "logo": {
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "caption": "Tom's Hardware logo",
+            "url": "vanilla.futurecdn.net/tomshardware/media/img/brand_logo.svg"
+          },
+          "name": "Tom's Hardware",
+          "url": "https://www.tomshardware.com"
+        },
+        "speakable": {
+          "@context": "https://schema.org",
+          "@type": "SpeakableSpecification",
+          "xpath": [
+            "/html/head/title",
+            "/html/head/meta[@name=\"description\"]/@content"
+          ]
+        },
+        "thumbnail": {
+          "@context": "https://schema.org",
+          "@type": "ImageObject",
+          "caption": "Corsair DDR4 RAM",
+          "height": 1440,
+          "url": "https://cdn.mos.cms.futurecdn.net/tpcMxmS65pozfyjCrFmyWZ-2560-80.jpg",
+          "width": 2560
+        },
+        "thumbnailUrl": "https://cdn.mos.cms.futurecdn.net/tpcMxmS65pozfyjCrFmyWZ-2560-80.jpg",
+        "url": "https://www.tomshardware.com/pc-components/ram/memory-prices-climb-500-percent-in-12-months-up-to-10x-the-lowest-ever-tracked-prices-128gb-of-ddr5-now-usd3-399"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Memory prices climb 500% in 12 months, up to 10x the lowest ever tracked prices &#8212; 128GB of DDR5 now $3,399 | Tom's Hardware",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "caption": "Corsair DDR4 RAM",
+          "url": "https://cdn.mos.cms.futurecdn.net/tpcMxmS65pozfyjCrFmyWZ.jpg"
+        },
+        "url": "https://www.tomshardware.com/pc-components/ram/memory-prices-climb-500-percent-in-12-months-up-to-10x-the-lowest-ever-tracked-prices-128gb-of-ddr5-now-usd3-399"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "item": {
+              "@id": "https://www.tomshardware.com/pc-components",
+              "name": "PC Components"
+            },
+            "position": 1
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "item": {
+              "@id": "https://www.tomshardware.com/pc-components/ram",
+              "name": "RAM"
+            },
+            "position": 2
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ImageObject",
+            "caption": "blank",
+            "description": "Corsair DDR4 RAM",
+            "height": 3374,
+            "url": "https://cdn.mos.cms.futurecdn.net/tpcMxmS65pozfyjCrFmyWZ.jpg",
+            "width": 6000
+          },
+          {
+            "@type": "ImageObject",
+            "caption": "<p>The prices of 64GB DDR5-6000 memory kits over the last 18 months. The darkened area is the range of prices, while the black line is the moving average.</p>",
+            "description": "A chart showing the average price of high-end 64GB memory kits over the last 18 months.",
+            "height": 445,
+            "url": "https://cdn.mos.cms.futurecdn.net/P4RM25eCnpMd5Vyx3NtNZG.png",
+            "width": 1140
+          },
+          {
+            "@type": "ImageObject",
+            "caption": "<p>High Bandwidth Memory (HBM) manufacturing requires many individual layers of DRAM, which means radically fewer standard memory chips are getting made.</p>",
+            "description": "A diagram of how high-bandwidth memory is constructed and connected to processors.",
+            "height": 465,
+            "url": "https://cdn.mos.cms.futurecdn.net/gkqYGfN48d6aHpbGDsYYvG.jpg",
+            "width": 826
+          },
+          {
+            "@type": "ImageObject",
+            "description": "Google Preferred Source",
+            "height": 213,
+            "url": "https://cdn.mos.cms.futurecdn.net/7cUTDmN2PHNRiNBVqbKf56.png",
+            "width": 676
+          }
+        ]
+      },
+      {
+        "@type": "ImageObject",
+        "caption": "blank",
+        "description": "Corsair DDR4 RAM",
+        "height": 3374,
+        "url": "https://cdn.mos.cms.futurecdn.net/tpcMxmS65pozfyjCrFmyWZ.jpg",
+        "width": 6000
+      },
+      {
+        "@type": "ImageObject",
+        "caption": "<p>The prices of 64GB DDR5-6000 memory kits over the last 18 months. The darkened area is the range of prices, while the black line is the moving average.</p>",
+        "description": "A chart showing the average price of high-end 64GB memory kits over the last 18 months.",
+        "height": 445,
+        "url": "https://cdn.mos.cms.futurecdn.net/P4RM25eCnpMd5Vyx3NtNZG.png",
+        "width": 1140
+      },
+      {
+        "@type": "ImageObject",
+        "caption": "<p>High Bandwidth Memory (HBM) manufacturing requires many individual layers of DRAM, which means radically fewer standard memory chips are getting made.</p>",
+        "description": "A diagram of how high-bandwidth memory is constructed and connected to processors.",
+        "height": 465,
+        "url": "https://cdn.mos.cms.futurecdn.net/gkqYGfN48d6aHpbGDsYYvG.jpg",
+        "width": 826
+      },
+      {
+        "@type": "ImageObject",
+        "description": "Google Preferred Source",
+        "height": 213,
+        "url": "https://cdn.mos.cms.futurecdn.net/7cUTDmN2PHNRiNBVqbKf56.png",
+        "width": 676
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@id": "#trending",
+            "@type": "SiteNavigationElement",
+            "name": "Tom's 30th Anniversary",
+            "url": "https://www.tomshardware.com/tag/toms-hardware-30th-anniversary"
+          },
+          {
+            "@id": "#trending",
+            "@type": "SiteNavigationElement",
+            "name": "Bench 2.0",
+            "url": "https://www.tomshardware.com/pc-components/introducing-bench-2-0-a-revamped-benchmark-analyzer-exclusively-for-toms-hardware-premium-subscribers"
+          },
+          {
+            "@id": "#trending",
+            "@type": "SiteNavigationElement",
+            "name": "RAM Shortage",
+            "url": "https://www.tomshardware.com/tag/ram-shortage"
+          },
+          {
+            "@id": "#trending",
+            "@type": "SiteNavigationElement",
+            "name": "AI Data Centers",
+            "url": "https://www.tomshardware.com/tag/data-center"
+          },
+          {
+            "@id": "#trending",
+            "@type": "SiteNavigationElement",
+            "name": "Vera Rubin",
+            "url": "https://www.tomshardware.com/tag/nvidia-vera-rubin"
+          },
+          {
+            "@id": "#trending",
+            "@type": "SiteNavigationElement",
+            "name": "AMD Advancing AI",
+            "url": "https://www.tomshardware.com/tag/amd-advancing-ai-2026"
+          },
+          {
+            "@id": "#trending",
+            "@type": "SiteNavigationElement",
+            "name": "RAM Combo Deals",
+            "url": "https://www.tomshardware.com/desktops/gaming-pcs/best-ram-combo-deals-2026-make-pc-builds-and-upgrades-more-affordable-with-the-best-ram-bundle-deals-available"
+          },
+          {
+            "@id": "#trending",
+            "@type": "SiteNavigationElement",
+            "name": "Nova Lake",
+            "url": "https://www.tomshardware.com/tag/nova-lake"
+          }
+        ]
+      },
+      {
+        "@id": "#trending",
+        "@type": "SiteNavigationElement",
+        "name": "Tom's 30th Anniversary",
+        "url": "https://www.tomshardware.com/tag/toms-hardware-30th-anniversary"
+      },
+      {
+        "@id": "#trending",
+        "@type": "SiteNavigationElement",
+        "name": "Bench 2.0",
+        "url": "https://www.tomshardware.com/pc-components/introducing-bench-2-0-a-revamped-benchmark-analyzer-exclusively-for-toms-hardware-premium-subscribers"
+      },
+      {
+        "@id": "#trending",
+        "@type": "SiteNavigationElement",
+        "name": "RAM Shortage",
+        "url": "https://www.tomshardware.com/tag/ram-shortage"
+      },
+      {
+        "@id": "#trending",
+        "@type": "SiteNavigationElement",
+        "name": "AI Data Centers",
+        "url": "https://www.tomshardware.com/tag/data-center"
+      },
+      {
+        "@id": "#trending",
+        "@type": "SiteNavigationElement",
+        "name": "Vera Rubin",
+        "url": "https://www.tomshardware.com/tag/nvidia-vera-rubin"
+      },
+      {
+        "@id": "#trending",
+        "@type": "SiteNavigationElement",
+        "name": "AMD Advancing AI",
+        "url": "https://www.tomshardware.com/tag/amd-advancing-ai-2026"
+      },
+      {
+        "@id": "#trending",
+        "@type": "SiteNavigationElement",
+        "name": "RAM Combo Deals",
+        "url": "https://www.tomshardware.com/desktops/gaming-pcs/best-ram-combo-deals-2026-make-pc-builds-and-upgrades-more-affordable-with-the-best-ram-bundle-deals-available"
+      },
+      {
+        "@id": "#trending",
+        "@type": "SiteNavigationElement",
+        "name": "Nova Lake",
+        "url": "https://www.tomshardware.com/tag/nova-lake"
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ItemList",
+            "description": "Site navigation",
+            "itemListElement": [
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Best Picks",
+                "position": 1,
+                "url": "https://www.tomshardware.com/best-picks"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "hasPart": [
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Chipmaking",
+                    "position": 1,
+                    "url": "https://www.tomshardware.com/tag/chip"
+                  }
+                ],
+                "name": "CPUs",
+                "position": 2,
+                "url": "https://www.tomshardware.com/pc-components/cpus"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "hasPart": [
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Drivers",
+                    "position": 1,
+                    "url": "https://www.tomshardware.com/pc-components/gpus/gpu-drivers"
+                  }
+                ],
+                "name": "GPUs",
+                "position": 3,
+                "url": "https://www.tomshardware.com/pc-components/gpus"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "hasPart": [
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Storage",
+                    "position": 1,
+                    "url": "https://www.tomshardware.com/pc-components/storage"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Cooling",
+                    "position": 2,
+                    "url": "https://www.tomshardware.com/pc-components/cooling"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Networking",
+                    "position": 3,
+                    "url": "https://www.tomshardware.com/networking"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Motherboards",
+                    "position": 4,
+                    "url": "https://www.tomshardware.com/pc-components/motherboards"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Overclocking",
+                    "position": 5,
+                    "url": "https://www.tomshardware.com/pc-components/overclocking"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "PC Cases",
+                    "position": 6,
+                    "url": "https://www.tomshardware.com/pc-components/pc-cases"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "PC Building",
+                    "position": 7,
+                    "url": "https://www.tomshardware.com/desktops/pc-building"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Power Supplies",
+                    "position": 8,
+                    "url": "https://www.tomshardware.com/pc-components/power-supplies"
+                  }
+                ],
+                "name": "PC Components",
+                "position": 4,
+                "url": "https://www.tomshardware.com/pc-components"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "hasPart": [
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Tech Industry News",
+                    "position": 1,
+                    "url": "https://www.tomshardware.com/tech-industry"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Newsletter",
+                    "position": 2,
+                    "url": "https://www.tomshardware.com/how-to/sign-up-for-newsletter"
+                  }
+                ],
+                "name": "News",
+                "position": 5,
+                "url": "https://www.tomshardware.com/news"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "hasPart": [
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Gaming Laptops",
+                    "position": 1,
+                    "url": "https://www.tomshardware.com/laptops/gaming-laptops"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Ultrabooks",
+                    "position": 2,
+                    "url": "https://www.tomshardware.com/laptops/ultrabooks-ultraportables"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "MacBooks",
+                    "position": 3,
+                    "url": "https://www.tomshardware.com/laptops/macbooks"
+                  }
+                ],
+                "name": "Laptops",
+                "position": 6,
+                "url": "https://www.tomshardware.com/laptops"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "hasPart": [
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "PC Building",
+                    "position": 1,
+                    "url": "https://www.tomshardware.com/desktops/pc-building"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Gaming PCs",
+                    "position": 2,
+                    "url": "https://www.tomshardware.com/desktops/gaming-pcs"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Monitors",
+                    "position": 3,
+                    "url": "https://www.tomshardware.com/monitors"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Peripherals",
+                    "position": 4,
+                    "url": "https://www.tomshardware.com/peripherals"
+                  }
+                ],
+                "name": "Desktops",
+                "position": 7,
+                "url": "https://www.tomshardware.com/desktops"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "hasPart": [
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Artificial Intelligence",
+                    "position": 1,
+                    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "LLMs",
+                    "position": 2,
+                    "url": "https://www.tomshardware.com/tag/llm"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Operating Systems",
+                    "position": 3,
+                    "url": "https://www.tomshardware.com/software/operating-systems"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Software",
+                    "position": 4,
+                    "url": "https://www.tomshardware.com/software"
+                  }
+                ],
+                "name": "Software & AI",
+                "position": 8,
+                "url": "https://www.tomshardware.com/software"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "hasPart": [
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Laptop and PC Coupons",
+                    "position": 1,
+                    "url": "https://www.tomshardware.com/coupons/category/laptops-and-computers"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Hardware Coupons",
+                    "position": 2,
+                    "url": "https://www.tomshardware.com/coupons/category/ssds-motherboards-and-hardware"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Software Coupons",
+                    "position": 3,
+                    "url": "https://www.tomshardware.com/coupons/category/online-software"
+                  },
+                  {
+                    "@type": "SiteNavigationElement",
+                    "name": "Gaming Coupons",
+                    "position": 4,
+                    "url": "https://www.tomshardware.com/coupons/category/video-games"
+                  }
+                ],
+                "name": "Coupons",
+                "position": 9,
+                "url": "https://www.tomshardware.com/coupons"
+              }
+            ],
+            "itemListOrder": "https://schema.org/ItemListOrderAscending",
+            "name": "Main Navigation",
+            "numberOfItems": 9
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "description": "Site navigation",
+        "itemListElement": [
+          {
+            "@type": "SiteNavigationElement",
+            "name": "Best Picks",
+            "position": 1,
+            "url": "https://www.tomshardware.com/best-picks"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "hasPart": [
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Chipmaking",
+                "position": 1,
+                "url": "https://www.tomshardware.com/tag/chip"
+              }
+            ],
+            "name": "CPUs",
+            "position": 2,
+            "url": "https://www.tomshardware.com/pc-components/cpus"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "hasPart": [
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Drivers",
+                "position": 1,
+                "url": "https://www.tomshardware.com/pc-components/gpus/gpu-drivers"
+              }
+            ],
+            "name": "GPUs",
+            "position": 3,
+            "url": "https://www.tomshardware.com/pc-components/gpus"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "hasPart": [
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Storage",
+                "position": 1,
+                "url": "https://www.tomshardware.com/pc-components/storage"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Cooling",
+                "position": 2,
+                "url": "https://www.tomshardware.com/pc-components/cooling"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Networking",
+                "position": 3,
+                "url": "https://www.tomshardware.com/networking"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Motherboards",
+                "position": 4,
+                "url": "https://www.tomshardware.com/pc-components/motherboards"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Overclocking",
+                "position": 5,
+                "url": "https://www.tomshardware.com/pc-components/overclocking"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "PC Cases",
+                "position": 6,
+                "url": "https://www.tomshardware.com/pc-components/pc-cases"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "PC Building",
+                "position": 7,
+                "url": "https://www.tomshardware.com/desktops/pc-building"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Power Supplies",
+                "position": 8,
+                "url": "https://www.tomshardware.com/pc-components/power-supplies"
+              }
+            ],
+            "name": "PC Components",
+            "position": 4,
+            "url": "https://www.tomshardware.com/pc-components"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "hasPart": [
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Tech Industry News",
+                "position": 1,
+                "url": "https://www.tomshardware.com/tech-industry"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Newsletter",
+                "position": 2,
+                "url": "https://www.tomshardware.com/how-to/sign-up-for-newsletter"
+              }
+            ],
+            "name": "News",
+            "position": 5,
+            "url": "https://www.tomshardware.com/news"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "hasPart": [
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Gaming Laptops",
+                "position": 1,
+                "url": "https://www.tomshardware.com/laptops/gaming-laptops"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Ultrabooks",
+                "position": 2,
+                "url": "https://www.tomshardware.com/laptops/ultrabooks-ultraportables"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "MacBooks",
+                "position": 3,
+                "url": "https://www.tomshardware.com/laptops/macbooks"
+              }
+            ],
+            "name": "Laptops",
+            "position": 6,
+            "url": "https://www.tomshardware.com/laptops"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "hasPart": [
+              {
+                "@type": "SiteNavigationElement",
+                "name": "PC Building",
+                "position": 1,
+                "url": "https://www.tomshardware.com/desktops/pc-building"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Gaming PCs",
+                "position": 2,
+                "url": "https://www.tomshardware.com/desktops/gaming-pcs"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Monitors",
+                "position": 3,
+                "url": "https://www.tomshardware.com/monitors"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Peripherals",
+                "position": 4,
+                "url": "https://www.tomshardware.com/peripherals"
+              }
+            ],
+            "name": "Desktops",
+            "position": 7,
+            "url": "https://www.tomshardware.com/desktops"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "hasPart": [
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Artificial Intelligence",
+                "position": 1,
+                "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "LLMs",
+                "position": 2,
+                "url": "https://www.tomshardware.com/tag/llm"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Operating Systems",
+                "position": 3,
+                "url": "https://www.tomshardware.com/software/operating-systems"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Software",
+                "position": 4,
+                "url": "https://www.tomshardware.com/software"
+              }
+            ],
+            "name": "Software & AI",
+            "position": 8,
+            "url": "https://www.tomshardware.com/software"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "hasPart": [
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Laptop and PC Coupons",
+                "position": 1,
+                "url": "https://www.tomshardware.com/coupons/category/laptops-and-computers"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Hardware Coupons",
+                "position": 2,
+                "url": "https://www.tomshardware.com/coupons/category/ssds-motherboards-and-hardware"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Software Coupons",
+                "position": 3,
+                "url": "https://www.tomshardware.com/coupons/category/online-software"
+              },
+              {
+                "@type": "SiteNavigationElement",
+                "name": "Gaming Coupons",
+                "position": 4,
+                "url": "https://www.tomshardware.com/coupons/category/video-games"
+              }
+            ],
+            "name": "Coupons",
+            "position": 9,
+            "url": "https://www.tomshardware.com/coupons"
+          }
+        ],
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "name": "Main Navigation",
+        "numberOfItems": 9
+      }
+    ],
+    "schemaAuthor": "Zak Killian",
+    "schemaTypes": [
+      "NewsArticle",
+      "WebPage",
+      "BreadcrumbList",
+      "ImageObject",
+      "SiteNavigationElement",
+      "ItemList"
+    ],
+    "secondaryCategories": [
+      "AI基础设施",
+      "技术采购"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "siteName": "Tom's Hardware",
+    "summaryBrief": "文章汇总美国与欧洲内存价格数据，称DDR5一年内最高上涨近500%，DDR4也明显涨价，并将其归因于AI数据中心对DRAM及HBM产能的争夺，预计供应紧张可能持续多年。",
+    "tags": [
+      "DDR5",
+      "内存价格",
+      "DRAM产能",
+      "AI数据中心",
+      "硬件采购"
+    ],
+    "title": "Memory prices climb 500% in 12 months, up to 10x the lowest ever tracked prices &mdash; 128GB of DDR5 now $3,399",
+    "totalScore": 49,
+    "url": "https://www.tomshardware.com/pc-components/ram/memory-prices-climb-500-percent-in-12-months-up-to-10x-the-lowest-ever-tracked-prices-128gb-of-ddr5-now-usd3-399"
+  },
+  "payloadHash": "sha256:f5f6154e4bf56521280937d1f4adf3079e09d626609a92db9d3d8179e512d88c",
+  "refs": {},
+  "revisionId": "sha256:fdd5e539f3237baed66aad29ae97893b1c1c4f8dbe22437aed25c202e30ecbdb",
+  "schemaVersion": 1,
+  "updatedAt": 1789724913494
+}

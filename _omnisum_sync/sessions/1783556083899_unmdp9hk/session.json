@@ -1,0 +1,71 @@
+{
+  "createdAt": 1783556083899,
+  "entityType": "session",
+  "id": "1783556083899_unmdp9hk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果正在设计 Agent 系统，可参考其模块划分：编排器、上下文层、记忆层、工具路由、安全层、任务引擎。",
+      "在工具调用链路中加入权限判断、审批门和不可信结果隔离机制。",
+      "评估是否需要用 LangGraph 或类似状态机框架重构复杂 Agent 工作流。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783556118902,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Row-Bot本地代理架构解析",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "本地优先 Agent 需要区分持久记忆与当前上下文，不能简单把所有历史塞进提示词。",
+      "工具输出、网页、邮件、Shell 结果等应被视为不可信上下文，防止提示注入。",
+      "LangGraph 适合表达带审批、重试、后台任务、子代理和持久状态的图式执行流。",
+      "子代理应具备独立目标、上下文边界、工具权限和审批限制，而不应继承全部权限。",
+      "安全控制平面应独立于模型，包括权限、审计、数据最小化、MCP 隔离和危险操作审批。"
+    ],
+    "oneHighValuePoint": "将模型推理与运行时执行控制分离：模型提出动作，编排器、工具路由和安全层决定是否执行。",
+    "oneLineReview": "适合作为个人 AI Agent 架构清单浏览，但不适合作为深入实现指南。",
+    "primaryCategory": "AI智能体架构",
+    "rating": "B",
+    "rejectReason": "内容偏概览和产品架构介绍，AI生成痕迹较重，重复较多，缺少实现细节、代码和真实运行证据。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "本地优先AI",
+      "LangGraph编排",
+      "AI安全"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章概述 Row-Bot 作为本地优先个人 AI Agent 的核心架构，涵盖编排器、模型层、上下文、记忆、工具路由、任务引擎、子代理、安全控制与 LangGraph 的作用。",
+    "tags": [
+      "AI Agent",
+      "LangGraph",
+      "本地优先",
+      "工具调用",
+      "记忆系统",
+      "安全控制"
+    ],
+    "title": "Row-Bot 核心代理架构",
+    "totalScore": 59,
+    "url": "https://x.com/SydSachar/status/2074499930236821550"
+  },
+  "payloadHash": "sha256:11c12d3e4eb4065836a4d76701ee9c526f942b3926de0f471be3e29554e55256",
+  "refs": {},
+  "revisionId": "sha256:bcea4d3f6573776b041e9d425aa5940923ac77b691ec1c13a2681dcf37b21704",
+  "schemaVersion": 1,
+  "updatedAt": 1789729176756
+}

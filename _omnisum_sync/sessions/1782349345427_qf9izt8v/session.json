@@ -1,0 +1,63 @@
+{
+  "createdAt": 1782349345427,
+  "entityType": "session",
+  "id": "1782349345427_qf9izt8v",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查 Hermes Agent 的 reasoning、approval、memory 配置是否仍在使用默认值。",
+      "按任务风险等级设置推理强度和审批模式，并测试是否能降低成本且保持稳定性。"
+    ],
+    "archiveReason": "包含若干可直接调整的代理配置项，适合在实际使用 Hermes Agent 时回查。",
+    "classifiedAt": 1782350803075,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Hermes代理八项常用配置",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "代理的推理强度可以按任务类型动态调整，低强度更省 token，高强度更适合复杂分析。",
+      "子代理模型、审批模式和内存上限等默认值都值得针对具体工作流单独优化。"
+    ],
+    "oneHighValuePoint": "默认推理强度、子代理模型和审批模式这几个配置，往往能直接影响 token 成本、执行速度和任务稳定性。",
+    "oneLineReview": "有一些实用配置提醒，但整体更像推文式经验汇总，证据和深度都有限。",
+    "primaryCategory": "AI代理配置",
+    "rating": "C",
+    "rejectReason": "",
+    "retentionDecision": "短期保留，作为 Hermes Agent 配置调优的参考；后续若不使用该工具可删除。",
+    "secondaryCategories": [
+      "提示工程",
+      "自动化工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这篇内容总结了 Hermes Agent 中常被忽略的若干默认配置，包括推理强度、子代理模型、审批模式、内存限制和快速命令等，目标是降低 token 成本并提升输出稳定性。但内容更偏经验分享，缺少系统验证。",
+    "tags": [
+      "Hermes Agent",
+      "配置优化",
+      "token成本"
+    ],
+    "title": "YanXbt: HERMES AGENT HAS 8 CONFIGS THAT MOST USERS NEVER CHANGE",
+    "totalScore": 47,
+    "url": "https://x.com/IBuzovskyi/status/2068762486484951157"
+  },
+  "payloadHash": "sha256:0cf8a0466e853089771b1cfaea55c8efc4dad034cb5b287a42b0fbc78a04ee40",
+  "refs": {},
+  "revisionId": "sha256:aba33c5f7e220e043bd49fbe522f78d96a6b396259436e6000f1c700b330b564",
+  "schemaVersion": 1,
+  "updatedAt": 1782350804040
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785202466529,
+  "entityType": "session",
+  "id": "1785202466529_xu1gb1kg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在下一次模型升级时复制项目环境，暂时移除系统提示词、工具说明和自定义技能，记录模型行为变化，并仅恢复重复失败所需的约束。",
+      "为关键Agent任务补充可自动执行的验证环节，例如测试、截图对比、静态分析或结果检查，并将失败模式沉淀为评测用例。",
+      "选择一个复杂但边界清晰的工程任务，使用高层目标、护栏和退出标准运行Agent，再比较单Agent、并行工作流和循环Routine的效果与成本。"
+    ],
+    "archiveReason": "文章直接讨论Claude Code的产品架构、提示词消融、模型评测、任务验证和多智能体编排，对AI编程工具和Agent开发具有较强参考价值。",
+    "classifiedAt": 1785204082355,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 7
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "Claude Code智能体产品构建方法",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/fc4325e2/img/favicon.ico",
+    "knowledgePoints": [
+      "提示词和Harness不应被视为永久架构，应通过消融实验判断每条指令、工具或代码的实际贡献。",
+      "Agent任务应采用较高层次的目标、边界条件和退出标准，并提供可持续的验证机制，而不是过度规定执行步骤。",
+      "动态工作流、并行与串行Agent编排，以及循环和定时Routine，可以将测试时计算扩展到复杂任务和持续维护场景。"
+    ],
+    "oneHighValuePoint": "新模型发布后应先删除旧的系统提示词、工具约束和工作流，通过实际运行观察反复出现的失败，再逐项恢复必要指令；评测集比具体Harness更稳定，但也应持续根据模型能力变化更新。",
+    "oneLineReview": "这是一篇高度贴合Agent开发实践的访谈，方法启发较强，但关键能力和效果主要来自厂商个人经验与未经独立验证的案例。",
+    "primaryCategory": "AI工程实践",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "值得精读和长期保留，重点沉淀智能体产品迭代与验证方法",
+    "secondaryCategories": [
+      "Agent开发",
+      "产品设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "访谈介绍Claude Code如何随模型能力变化持续删除和重建系统提示词，并强调通过消融实验、评测、任务验证和经验迭代来释放模型能力。文章还讨论产品过载、多智能体工作流、循环维护任务，以及AI时代程序员应强化的产品和业务能力。",
+    "tags": [
+      "Claude Code",
+      "智能体工程",
+      "提示词消融",
+      "模型评测",
+      "测试时计算"
+    ],
+    "title": "Boris Cherny: Building Claude Code - YouTube",
+    "totalScore": 78,
+    "url": "https://www.youtube.com/watch?v=qyPCVqFUyDo"
+  },
+  "payloadHash": "sha256:1e94b0c7c8fdc937ddd2a9ba51c59c105f947a9a20473e68fd200689cf049640",
+  "refs": {},
+  "revisionId": "sha256:82d501793a393bb89cefd64144353994f1c1781324c52aad68d5455ec85de3b3",
+  "schemaVersion": 1,
+  "updatedAt": 1789696337635
+}

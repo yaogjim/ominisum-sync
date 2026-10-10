@@ -1,0 +1,20 @@
+{
+  "createdAt": 1782352257989,
+  "entityType": "message",
+  "id": "1782352390399_lnvazr7l",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 一个子代理打开一个新的上下文\n\n这篇文章主要讲的是：**Subagent（子代理）本质上不是“另一个独立智能体”，而是一次 tool call 之后，系统为它打开的一个新的工作上下文。**  \n它的关键不在“多了一个 agent”，而在于 **Harness 如何把父上下文的一部分投射给子上下文，并管理它的运行状态**。\n\n---\n\n## 1. Subagent 的启动，本质上是一次 Tool Call\n\n- 当用户提出类似“使用验证器子代理来审计 webhook 重试”这样的需求时，系统可以通过 `/delegate` 这类命令触发 `spawn_agent`。\n- 这一步从外部看是一次 **tool call**，执行完成后，父代理会拿到一个 **child handle**（子代理句柄）。\n- 作者强调：  \n  **“工具调用在外部，运行时在内部。”**\n\n---\n\n## 2. Tool Call 之后，内部发生了什么\n\n- 在 Harness 的视角里，tool call 只是入口。\n- 真正重要的是：**系统会为子代理打开一个新的 work context（工作上下文）**。\n- 也就是说，subagent 不只是“被调用了一下”，而是进入了一个新的运行环境。\n\n---\n\n## 3. Session、Context、Subagent 的区别\n\n这三个概念容易混淆，文章做了区分：\n\n### Session\n- 是 **运行时容器**。\n- 包含：\n  - thread\n  - transcript\n  - tools\n  - permissions\n  - resources\n  - status\n  - artifacts\n\n### Context\n- 是某次 model call 能看到的 **信息投影**。\n- 包括：\n  - instructions\n  - skills\n  - AGENTS.md\n  - recent turns\n  - summaries\n  - tool results\n  - file state\n\n### Subagent\n- 是 parent session 下新开的 **child session**。\n- 它可以继承资源，但拿到的是一段经过筛选的 **context slice**（上下文切片）。\n\n---\n\n## 4. Subagent 更像“受管理的子运行时”\n\n- 文章指出，subagent 这个词容易让人误解成“小一点的智能体”。\n- 但在 Harness 里，它更像一个 **managed child runtime**（受管理的子运行时）。\n- 它可以共享父代理可用的资源，例如：\n  - tools\n  - skills\n  - AGENTS.md\n  - MCP servers\n  - cwd\n  - sandbox\n  - permissions\n- 但重点是：**共享资源，不等于共享对话记录。**\n- 子代理拥有自己的 work context，父代理决定给它多少上下文。\n\n---\n\n## 5. 子代理上下文如何投射：三种常见模式\n\n父代理会根据任务类型，决定给子代理投射多少上下文。常见有三种模式：\n\n### 1）Fresh child（全新子代理）\n适合从头开始做任务。\n通常需要明确给它：\n- 目标（goal）\n- 相关文件（relevant files）\n- 已经尝试过什么（what has been tried）\n- 需要输出的精确结果（exact output）\n- 回答深度要求\n\n### 2）Forked child（继承型子代理）\n适合上下文已经很完整的情况。\n- 子代理直接继承周边上下文。\n- 提示词可以直接给下一步指令。\n\n### 3）Partial fork（部分继承）\n- 这是文章认为**最实用的折中方案**。\n- 它给子代理足够的本地记忆来工作，\n- 同时避免把父代理历史中无关的信息也带进去，造成噪音。\n\n---\n\n## 6. 适合用 Subagent 的场景\n\n文章举了几类典型用途：\n\n### 并行工作\n- 一个子代理查 database migration\n- 一个子代理看 frontend state\n- 一个子代理跑 verification\n\n### 角色分工\n- Explorer\n- Planner\n- Verifier\n- Worker\n- Reviewer\n\n### 后台任务\n- 多个 subagent 协作完成大型重构\n- 长时间测试任务\n- 持续验证类工作流\n\n---\n\n## 7. 多个 Subagent 的工作流管理很重要\n\n- 文章强调：**多个 subagent 的组织方式本身就是挑战。**\n- 最好把下面几件事定义清楚：\n  - 每个子代理的 role 是什么\n  - 给它什么 context\n  - 让它使用什么 tool\n- 只有这些边界清晰，协作才不会混乱。\n\n---\n\n## 8. 更多 Agent 不一定更好\n\n- 文章最后提醒：**更多 agents 不保证更好的结果。**\n- 因为 agent 越多，运行时状态也会越多，系统更复杂。\n- Harness 必须清楚知道：\n  - 谁在工作\n  - 它知道什么\n  - 它改了什么\n  - 什么时候完成\n  - 结果如何转化为 evidence（证据）\n\n---\n\n## 9. 总结\n\n- Subagent 的核心不是“复制一个新智能体”，而是 **为某个任务打开一个新的工作上下文**。\n- 它能继承资源，但不共享完整历史。\n- Harness 的价值在于：**让新世界更有序，而不是更混乱。**\n\n如果你愿意，我也可以把这篇内容再压缩成一版 **“3分钟看懂版”**。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1782352257989,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7937e4a7542002b3243ad791596c89cd0299a1b9a64747019c2ad38e31c941ed",
+  "refs": {
+    "sessionId": "1782349818897_mo5wxe20"
+  },
+  "revisionId": "sha256:8b9f18d1a1e09bf89f14caab4353d44ce00acb1f8d4daeaecf2d83f2bea44ae0",
+  "schemaVersion": 1,
+  "updatedAt": 1782352257989
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693912155,
+  "entityType": "message",
+  "id": "1789693912156_xwkd06oc",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nDesert Ant Labs 推出一套可直接在手机、电脑和浏览器运行的小型专用 AI 模型，主张以更低延迟、无按次推理费和更强隐私，替代许多不必要的云端大模型调用。\n\n## 关键内容\n\n- 首批上线 18 个模型（12 个稳定版、6 个测试版），覆盖语音、视觉和文本，可通过 Swift、Kotlin、JavaScript SDK 接入；每月 10 万活跃设备以内免费。\n- 模型各做一项具体任务：如 Voz 转录、Clear 音频增强、Redact 隐私信息遮盖、Tongue 语言识别。公司称它们体积小、毫秒级响应，部分任务在速度和效果上优于 Whisper、Claude 等方案。\n- 核心路线是“本地优先”：数据不离开设备，功能不依赖云服务；简单高频任务交给小模型，复杂任务才升级到更大模型或云端。\n- 这些结果主要来自公司自测和产品发布材料，并非独立评测。\n\n## 通俗解读\n\n所谓“运行免费”，是指模型部署后没有按 Token 或调用次数收费，并不代表开发、设备和维护没有成本。**如果你是应用开发者，值得细读模型规格、兼容平台和基准测试；若只关心行业新闻，了解上述定位即可。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693912155,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5888d510738088b774bd6e4e4e4eb4257f965b6232014439cf1e988f81b99f72",
+  "refs": {
+    "sessionId": "1789007513178_om6dyv59"
+  },
+  "revisionId": "sha256:f029593b7c6ad73313e0b3d503267004f227abbd0953fd2d15f04fa4f26df994",
+  "schemaVersion": 1,
+  "updatedAt": 1789693912155
+}

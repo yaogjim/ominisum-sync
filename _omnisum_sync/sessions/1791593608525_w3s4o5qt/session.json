@@ -1,0 +1,64 @@
+{
+  "createdAt": 1791593608525,
+  "entityType": "session",
+  "id": "1791593608525_w3s4o5qt",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "有终端或Agent状态展示需求时，查阅引用的原始规范，确认报文格式与实现要求。",
+      "在尝试集成前，核实目标工具和终端的实际支持版本，不仅依据帖子中的支持声明。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1791594703109,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 5,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "OSC7501终端程序状态协议动态",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "引用内容列出的程序状态包括空闲、工作中、等待中、已完成和失败，并可附带原因。",
+      "该协议的基本交互方向是程序向终端报告状态；正文未展示具体报文格式或兼容条件。"
+    ],
+    "oneHighValuePoint": "OSC 7501提出由程序向终端统一报告运行状态及原因，为终端呈现不同工具的执行状态提供共同接口。",
+    "oneLineReview": "与AI编程工具和终端集成有明确关联，但主要是支持动态，技术信息不足，适合作为追踪原始规范的线索。",
+    "primaryCategory": "开发工具动态",
+    "rating": "C",
+    "rejectReason": "缺少协议格式、实现步骤和验证材料，夹杂无关回复，不适合作为技术参考长期保留。",
+    "retentionDecision": "速览了解协议动态；有终端或Agent状态集成需求时，转向原始规范。",
+    "secondaryCategories": [
+      "AI编程工具",
+      "终端协议"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "帖子宣布下一版@pidotdev将支持OSC 7501，并称Rex已有初步支持。引用内容介绍该协议可向终端报告程序状态及原因，回复另称Claude Code已支持，但未提供规范细节或实现示例。",
+    "tags": [
+      "OSC 7501",
+      "程序状态上报",
+      "终端集成",
+      "Claude Code"
+    ],
+    "title": "Mario Zechner: happy to announce that the next release of @pidotdev supports OSC 7501",
+    "totalScore": 54,
+    "url": "https://x.com/badlogicgames/status/2107921299297177833"
+  },
+  "payloadHash": "sha256:d0e769cc81bd9753e56acc6f8b49f82b998f3b73ebd1a4e43e80d78a2d355858",
+  "refs": {},
+  "revisionId": "sha256:5139de3a97af701f33624ec9e5017128cdb236011a27dc2a1bcfb350551d990a",
+  "schemaVersion": 1,
+  "updatedAt": 1791594703180
+}

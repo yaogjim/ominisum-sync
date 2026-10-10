@@ -1,0 +1,80 @@
+{
+  "createdAt": 1790223895485,
+  "entityType": "session",
+  "id": "1790223895485_zfpa6djn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "需要引用这一发现时，查阅Anthropic原始资料并核对后续功能验证结果。"
+    ],
+    "archiveReason": "",
+    "byline": "Chubby♨️",
+    "classifiedAt": 1790233196922,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 4,
+      "information_density": 5,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI辅助发现潜在新型基因编辑机制",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 789,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HS7SFulbQAAyHz6?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HS7SFulbQAAyHz6?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "文中称Claude发现了位于RT基因附近的异常重复DNA序列。",
+      "初步实验显示相关重复序列可产生短RNA，但尚未确定其功能及基因编辑用途。"
+    ],
+    "oneHighValuePoint": "AI可以从大规模生物数据中提出可供实验检验的线索，但序列模式的功能仍须由实验确认。",
+    "oneLineReview": "具体案例值得关注，但目前更适合作为待核实的研究线索，而非成熟方法或确定性突破。",
+    "primaryCategory": "AI辅助科学研究",
+    "rating": "C",
+    "rejectReason": "提供了具体发现线索，但缺少研究细节与足以验证结论的证据。",
+    "retentionDecision": "速览即可；若需研究AI辅助生物学发现，再追溯原始资料",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "生物技术",
+      "智能体应用"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章转述Anthropic称Claude在细菌病毒数据中发现一种位于RT基因附近的重复DNA序列，并提出后续实验方案。初步实验显示该序列可产生短RNA；其功能及基因编辑用途仍不明确。文章据此展望AI辅助生物学发现的前景。",
+    "tags": [
+      "AI科学发现",
+      "多智能体搜索",
+      "重复DNA序列",
+      "基因编辑假说"
+    ],
+    "title": "Chubby♨️: Dario Amodei still believes AI could “cure most diseases in 5-10 years,” and Ant…",
+    "totalScore": 52,
+    "url": "https://x.com/kimmonismus/status/2102849336136909292"
+  },
+  "payloadHash": "sha256:fdb48803f40a24c5ac65df99754106569b75a0ff828ad4fcd9e0e27e923c0013",
+  "refs": {},
+  "revisionId": "sha256:6eee59aa4cf1f02d46faf0b940026cb2cc10e09432fc54779dbdb7dd79546901",
+  "schemaVersion": 1,
+  "updatedAt": 1790233196952
+}

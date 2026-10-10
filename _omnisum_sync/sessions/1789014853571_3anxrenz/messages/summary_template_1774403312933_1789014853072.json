@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789014853072,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1789014853072",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Portless：用稳定域名替代本地开发端口\n\n## 一句话概括\n\n**Portless 是一个本地开发反向代理工具，将`localhost:3000`这类动态端口替换为`https://myapp.localhost`这样的稳定、可读 URL，让开发者和 AI Agent 更容易访问、识别和管理本地服务。**\n\n## 核心工作方式\n\n启动应用时，Portless 会：\n\n1. 为应用分配一个随机内部端口；\n2. 通过`PORT`环境变量或命令参数传给开发服务器；\n3. 根据应用名称注册本地域名；\n4. 由统一代理通过 443 端口将请求转发到对应应用。\n\n```bash\nportless myapp next dev\n# https://myapp.localhost\n```\n\n默认启用 HTTPS 与 HTTP/2，首次使用会生成并信任本地 CA。\n\n## 主要能力\n\n### 1. 稳定、语义化的本地地址\n\n开发者不再需要记忆或协调端口号，可以使用：\n\n```text\nhttps://myapp.localhost\nhttps://api.myapp.localhost\nhttps://docs.myapp.localhost\n```\n\n这对多人协作、自动化测试和 AI Agent 尤其有价值，因为服务地址不再随启动顺序变化。\n\n### 2. 主流框架自动适配\n\nPortless 支持 Next.js、Express、Nuxt、Vite、Astro、Angular、Expo 等框架。\n\n- 优先注入`PORT`环境变量；\n- 对不读取`PORT`的框架，自动追加`--port`、`--host`；\n- 构建、测试等非服务命令不会被错误修改；\n- 复杂脚本无法安全识别时保持原样，需自行配置端口。\n\n### 3. Monorepo 与 Turborepo 支持\n\n在 Monorepo 根目录运行`portless`，可自动发现并启动所有包含`dev`脚本的工作区应用，并为它们生成独立域名。\n\n```text\nweb.myproject.localhost\napi.myproject.localhost\n```\n\n可通过`portless.json`或`package.json`覆盖应用名称、启动脚本和固定端口。\n\n### 4. Git Worktree 自动隔离\n\nPortless 会把 worktree 的分支名加入子域名：\n\n```text\n主工作区：    https://myapp.localhost\nfix-ui 分支： https://fix-ui.myapp.localhost\n```\n\n因此多个分支可以同时运行，无需手动换端口，也不会发生路由冲突。\n\n### 5. 自定义域名与生产环境模拟\n\n除了默认的`.localhost`，还支持：\n\n```text\nmyapp.test\nmyapp.dev.example.com\n```\n\n使用真实域名结构，可让本地环境更接近生产环境，适合验证：\n\n- OAuth 回调地址；\n- 跨子域 Cookie；\n- Host-based 路由；\n- 多租户子域名。\n\n其中，Google、Apple 等严格 OAuth 服务通常不接受`.localhost`或`.test`，但可接受自有真实域名。\n\n### 6. 局域网与外部分享\n\nPortless 提供多种分享方式：\n\n- **LAN 模式**：通过`myapp.local`供同一局域网设备访问；\n- **Tailscale**：在私有 Tailnet 内分享；\n- **Tailscale Funnel**：公开分享；\n- **ngrok**：生成公网访问地址。\n\n适合移动端调试、远程协作、Webhook 和客户演示。\n\n### 7. 完整的本地代理管理\n\n提供路由与环境管理命令：\n\n```bash\nportless list          # 查看路由\nportless doctor        # 检查代理、DNS、证书\nportless alias api 8080 # 为现有服务或 Docker 注册域名\nportless prune         # 清理崩溃后遗留的进程\nportless clean         # 清理状态、证书和 hosts 配置\n```\n\n还可安装为系统启动服务，使 HTTPS 代理在开机后自动运行。\n\n## 配置优先级\n\nPortless 支持三类配置方式：\n\n1. CLI 参数；\n2. `package.json`中的`portless`字段；\n3. `portless.json`。\n\n其中，**CLI 优先级最高，`package.json`高于`portless.json`**。代理端口、TLS、TLD、LAN 等配置会被持久化，后续自动启动时继续复用。\n\n## 使用限制与注意事项\n\n### 稳定性\n\n项目尚未发布 1.0，不同版本的状态目录格式可能变化。团队按项目安装时，成员版本不一致可能需要重新执行：\n\n```bash\nportless trust\n```\n\n### 权限与安全\n\n默认 HTTPS 需要：\n\n- 创建并信任本地 CA；\n- 在 macOS/Linux 上通过提权绑定 443 端口；\n- 修改系统信任存储及必要的`/etc/hosts`记录。\n\n团队引入前应评估本地证书和管理员权限策略。\n\n### 模式限制\n\n- 自定义 TLD 与 LAN 模式目前不能同时使用；\n- LAN 模式依赖系统 mDNS 工具；\n- 复杂 npm 脚本可能无法自动注入端口；\n- `.local`容易与 mDNS 冲突，`.dev`被 HSTS 强制要求 HTTPS，官方更推荐`.test`。\n\n## 产品价值\n\nPortless 的本质不是 “隐藏端口”，而是为本地服务增加一层**稳定的服务发现与命名系统**。它解决了三个典型问题：\n\n- **认知成本**：开发者无需记忆端口；\n- **协作成本**：团队、脚本和文档可以使用统一地址；\n- **自动化成本**：AI Agent、测试工具和浏览器自动化能够可靠定位服务。\n\n对于多应用 Monorepo、多分支并行开发、OAuth 联调和 AI 编程场景，Portless 的价值最明显。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1789014853072,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:215306640399a693e41d368f8f6e32a5e459ca6979269fea16f22396f573eb8d",
+  "refs": {
+    "sessionId": "1789014853571_3anxrenz"
+  },
+  "revisionId": "sha256:00601a9d134760816c14d63a35c4b9294c35b39fad343cdbc8505593994ec43b",
+  "schemaVersion": 1,
+  "updatedAt": 1789014853072
+}

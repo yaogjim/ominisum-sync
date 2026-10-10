@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782362062474,
+  "entityType": "message",
+  "id": "1782362062473_sw48201t",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Omnigent多智能体框架\n\n**评级**: B (68分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent框架\n**次类别**: 开发工具, 多智能体协作\n**标签**: #Omnigent #AI Agent #Claude Code #Codex #沙箱 #多智能体编排\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 这是一个实用性较强的AI Agent编排框架说明，但证据和方法论深度有限。\n**核心高价值点**: 通过统一编排层抽象不同Agent运行时，并结合策略、沙箱和协作能力，降低多Agent工具链切换与治理成本。\n\n### 摘要\n文章介绍开源AI Agent框架Omnigent，支持编排Claude Code、Codex、Cursor、Kimi、Pi及自定义Agent，可跨设备协作、云沙箱运行、策略治理，并提供安装、部署、凭证配置和YAML自定义Agent示例。\n\n### 知识要点\n- Omnigent可作为Claude Code、Codex、Cursor、Kimi、Pi等Agent运行时的统一编排层。\n- 支持本地、浏览器、手机和云沙箱中的会话同步与协作。\n- 可通过策略系统限制Shell命令、文件写入、工具调用次数和Token花费。\n- 自定义Agent可用YAML声明prompt、执行harness、工具和子Agent。\n- 内置Polly、Debby、Scribe等示例展示多Agent分工、辩论和文档生成场景。\n\n### 行动项\n- 如正在评估AI Agent工作流，可本地安装Omnigent并运行示例Agent验证体验。\n- 重点查看policy guide、Agent YAML spec和deploy/README.md，判断其是否适合团队使用。\n- 对比现有Claude Code、Codex或Cursor工作流，评估统一编排和沙箱治理是否带来实际收益。\n\n### 存档判定\n归档: 是 — 原因: 包含安装、部署、策略控制、多智能体编排和自定义Agent YAML配置等实操信息，可作为评估AI Agent框架的参考资料。\n不推荐: 内容主要是项目README和功能介绍，偏产品说明，缺少深入架构分析、性能数据和真实案例验证。\n删除: 否\n留存决策: 短期参考后可选择性保留",
+    "role": "assistant",
+    "timestamp": 1782362062474,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:786e25879ad6350c53a58de4a3a2a92612a2a51279b891fa0adeb91fa80240b3",
+  "refs": {
+    "sessionId": "1782360313201_gwe8dmh3"
+  },
+  "revisionId": "sha256:098704f1298b6d57e897ad0b26fe730f58f5cc4743e0634236469e8902f3ea3e",
+  "schemaVersion": 1,
+  "updatedAt": 1782362062474
+}

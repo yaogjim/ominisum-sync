@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789549590159,
+  "entityType": "message",
+  "id": "1789549635005_2pds3axp",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Fugleramme：用本地 AI“听鸟”的树莓派电子墨水画框\n\nFugleramme 是一个开源鸟类展示画框：它通过麦克风和 BirdNET-Go 在本地识别鸟鸣，再把当前听到的鸟以 19 世纪自然史插画呈现在电子墨水屏上。项目兼顾实体画框与网页展示，不依赖云端识别，并支持管理配置和自动更新。\n\n## 工作原理：从鸟鸣到插画\n\n系统由 BirdNET-Go 和 Fugleramme 两部分配合完成：\n\n1. **BirdNET-Go** 监听麦克风，利用 AI 根据鸟鸣识别物种。\n2. **Fugleramme** 定期读取 BirdNET-Go 的 API，将物种匹配到对应插画。\n3. 系统把多只鸟自动排版在带纸张纹理的页面上：\n   - 体型较大的鸟更靠近中央；\n   - 插画尺寸参考鸟类体重；\n   - 没有检测到鸟时，只显示空栖木。\n4. 只有检测到的鸟发生变化时才刷新电子墨水屏，以适应该类屏幕更新慢、适合静态显示的特点。\n\n同一画面也可作为网页信息亭展示，并提供管理页面，用于设置显示内容等。\n\n## 核心特色：真实历史插画而非 AI 生成图\n\n项目收录了 **800 多个手工抠图素材，覆盖 400 多种鸟类**。所有图片均来自真实的公版自然史图版，没有使用 AI 生成插画，但部分素材经过 AI 辅助修复。\n\n插画主要来自斯堪的纳维亚、英国和中欧资料，因此目前对以下地区覆盖较好：\n\n- 北欧\n- 不列颠群岛\n- 德国\n\n其他地区的鸟种覆盖仍较有限，作者正在扩充欧洲其他地区和北美物种。每张素材均保留来源和许可信息，也提供了手工添加新插画的流程。\n\n## 所需硬件\n\n作者使用的实体版本包括：\n\n- Raspberry Pi 5\n- Inky Impression 13.3 英寸 Spectra 6 彩色电子墨水屏\n- 麦克风\n- A4 画框\n\nBirdNET-Go 可以与 Fugleramme 安装在同一台设备上，也可以运行在局域网内的另一台机器上；已有 BirdNET-Go 服务的用户只需让画框连接其 API。\n\n## 部署与使用方式\n\n项目支持多种运行环境：\n\n- **树莓派直接安装**：安装脚本会询问 BirdNET-Go 的位置和端口，下载项目、安装依赖，并注册为 systemd 系统服务；新系统可能需要重启。\n- **Docker 部署**：可直接使用预构建镜像，通过环境变量指定 BirdNET-Go 地址。\n- **Docker Compose**：在带 USB 麦克风的 Linux 主机上，可同时启动 BirdNET-Go 和 Fugleramme。\n- **普通电脑开发或体验**：项目提供模拟检测器，无须树莓派或真实鸟鸣识别服务也能测试界面。\n\n默认情况下，展示页面位于 `8080` 端口，管理页面位于 `/admin`，持久化数据保存在挂载的 `/data` 目录。\n\n## 灵感与项目定位\n\n画面风格来自作者墙上的一张 Axel Thorenfeldt 为世界自然基金会创作的海报；“实时展示花园访鸟”的想法受 AvianVisitors 启发，识别能力则来自 BirdNET-Go。作者希望做出一幅会随现实鸟类活动变化的自然史海报。\n\n项目列出了多个相似作品，但说明 Fugleramme 没有与它们共享代码或美术素材。作者还公开展示了挪威卑尔根自家花园当前听到的鸟类。\n\n## 开源许可与贡献\n\n项目欢迎提交错误修复、文档和新鸟类插画：\n\n- Fugleramme 代码采用 **MIT 许可证**。\n- BirdNET-Go 及其检测组件单独安装，采用 **CC BY-NC-SA 4.0**，仅限非商业用途。\n- 鸟类插画、字体、体重数据和分类学别名各有独立许可与来源说明。\n- 经典风格插画采用 **CC BY-SA 4.0**。\n\n用户可通过 Issue 报告问题、在 Discussions 中交流想法，或直接提交代码、文档和鸟类抠图。作者也制作少量成品画框，供不想自行组装的人联系购买。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789549590159,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:577d92600335d0cd30a73262247790e1ed1c0d1bc13da935cb4f11de317b0d6c",
+  "refs": {
+    "sessionId": "1789531525480_ejg1hi41"
+  },
+  "revisionId": "sha256:872afddc2d1778108c27de3b9ef377774091d3f051702f981dc755066a9f9a1a",
+  "schemaVersion": 1,
+  "updatedAt": 1789549590159
+}

@@ -1,0 +1,69 @@
+{
+  "createdAt": 1782713651566,
+  "entityType": "session",
+  "id": "1782713651566_s5coztls",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估自己产品是否应提供MCP、CLI或结构化技能接口，而不只是开发聊天式代理。",
+      "将产品文档、操作能力和领域知识抽象成可被外部AI代理调用的统一能力层。",
+      "在内置聊天界面中为高级用户提供“使用自己的代理继续操作”的入口。",
+      "设计内部代理时优先复用可开放给高级用户的API和工具原语。"
+    ],
+    "archiveReason": "提出了产品内置代理与用户自带代理之间的关键矛盾，并给出MCP/API/技能层解耦的产品设计方向，对AI工具生态和开发者产品设计有参考价值。",
+    "classifiedAt": 1782714245210,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "拒绝产品内置代理",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "内置代理的主要局限包括模型成本不可持续、能力受限以及无法访问用户本地上下文。",
+      "高级用户更希望使用自己付费和配置好的强模型，而不是产品方提供的低成本默认代理。",
+      "MCP、API、CLI、技能和文档能力可以成为产品接入外部代理生态的基础设施。",
+      "企业可用同一套底层工具和知识源同时支撑内部代理、Slack机器人和外部高级用户代理。"
+    ],
+    "oneHighValuePoint": "产品应基于同一套原语同时服务内置代理和外部用户代理，避免维护两套知识与工具体系。",
+    "oneLineReview": "一篇短小但高信号的AI产品策略观点，准确指出未来产品应从“内置代理”转向“可被用户代理调用的能力层”。",
+    "primaryCategory": "AI产品设计",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "智能体生态",
+      "开发者工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为企业不应只构建封闭的内置代理，而应将产品知识、API、MCP、CLI和技能开放给用户自己的高级代理。核心矛盾在于模型成本、上下文限制和高级用户工作流不匹配。",
+    "tags": [
+      "AI Agent",
+      "MCP",
+      "API",
+      "产品策略",
+      "高级用户"
+    ],
+    "title": "我不想使用你的代理",
+    "totalScore": 72,
+    "url": "https://x.com/RhysSullivan/status/2070989582850793947"
+  },
+  "payloadHash": "sha256:76eb1c0da01a70f678d1304bf8b725600e4ecee628b62b395126bbab1d5ab1cc",
+  "refs": {},
+  "revisionId": "sha256:f23b01778b225f83def9a4159bddea5ceadeda5728d8e3247bca753242745edb",
+  "schemaVersion": 1,
+  "updatedAt": 1789692220179
+}

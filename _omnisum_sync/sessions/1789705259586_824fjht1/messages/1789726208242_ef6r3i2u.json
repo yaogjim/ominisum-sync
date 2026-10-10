@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726208241,
+  "entityType": "message",
+  "id": "1789726208242_ef6r3i2u",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一份从仿真、机械、电气到强化学习部署的 Microduck 复刻路线图；成败关键不是“把零件装起来”，而是让真机与训练模型在关节、坐标、频率和动力学上严格一致。\n\n## 关键内容\n\n- Microduck 高约 25 cm，共有 15 个 Dynamixel 舵机，其中 14 个由步态策略控制，嘴部单独控制。主控每 20 ms 读取舵机和 IMU，将固定顺序的 61 维状态送入 ONNX 网络，再输出 14 个关节动作。\n- 复刻流程包括：跑通 MuJoCo 仿真、从 MJCF 重建可制造 CAD、搭建电源与总线、实现 IMU 桥接、校准零位、训练并导出 ONNX，最后按十级测试逐步从单舵机推进到自由行走。\n- 最容易出错的是“接口契约”：关节顺序、嘴部占位、正负方向、单位、home pose、动作缩放和观测归一化只要有一项不一致，网络虽能运行，机器人仍可能猛烈撞限位或直接摔倒。\n- 现有资料尚不是可直接照抄的成品方案：STL 不是生产级 CAD；市售 XL330 的 3.7–6.0 V 规格与官方 2S 电压假设存在冲突；第三方 IMU 桥接板也缺少完整实物和固件验证。\n\n## 通俗解读\n\n它不是按预设动作“播放走路”，而是每秒 50 次根据姿态重新决定动作，因此具备闭环平衡能力。但这也意味着机械、电气和软件必须像同一把尺子量出来。\n\n**是否值得细读：**真要复刻或研究仿真到真机，值得作为检查清单细读；若只想了解原理，阅读系统架构、关节映射、61 维观测及电源风险即可。文章信息详尽，但关键硬件方案仍未完成端到端验证，不能直接按文购买和通电。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726208241,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6c50faf9999ac25a626d95fbaee25d10f9b72f2729fe05ddacb705b8a7984f54",
+  "refs": {
+    "sessionId": "1789705259586_824fjht1"
+  },
+  "revisionId": "sha256:40a1c8fb0ae6c2ed1997f7fed6818cc795c356184641aed7f6ae62fa53c5a066",
+  "schemaVersion": 1,
+  "updatedAt": 1789726208241
+}

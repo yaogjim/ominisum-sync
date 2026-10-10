@@ -1,0 +1,63 @@
+{
+  "createdAt": 1791593310196,
+  "entityType": "session",
+  "id": "1791593310196_jkx6e4rf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在熟悉的专业任务中使用 LLM 时，将任务意图和计划表达得更明确，避免仅靠模糊提示反复试错。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1791594544064,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "领域专业知识如何放大大模型价值",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "作者提出，领域专家的简短提示可能承载大量隐含知识，不能仅凭提示长度判断其专业门槛。",
+      "引用讨论指出，缺乏领域知识可能使任务描述和计划不够精确，增加多轮试错；这一判断尚缺少系统证据。"
+    ],
+    "oneHighValuePoint": "提示看起来简单，不代表任务本身简单；高效交互可能依赖使用者已经具备的领域知识和明确意图。",
+    "oneLineReview": "提醒了领域知识对 AI 使用效率的重要性，但主要是经验性观点，适合速览而非作为方法论精读。",
+    "primaryCategory": "AI 使用与人机协作",
+    "rating": "C",
+    "rejectReason": "观点与 AI 实践相关，但缺少具体操作框架、对照案例和可靠证据，独立存档价值有限。",
+    "retentionDecision": "速览核心观点，不作为方法或证据资料长期存档",
+    "secondaryCategories": [
+      "AI 编程",
+      "个人能力建设"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为，领域专业知识能让人与大模型的简短交互更高效，表面简单的提示背后可能是长期经验积累。引用推文以跨领域用户反复试错和高额 token 消耗为例支持这一判断，但未提供可核实数据或系统论证。",
+    "tags": [
+      "领域专业知识",
+      "提示表达",
+      "人机协作",
+      "AI 编程"
+    ],
+    "title": "Matt Stockton: Pre-llm times, there were always folks you’d encounter in your work where you co…",
+    "totalScore": 50,
+    "url": "https://x.com/mstockton/status/2108041329615778225"
+  },
+  "payloadHash": "sha256:325033daf03b6e80ab64dbc4b1895272cfab7e2753a0514b87447e357ae30a6e",
+  "refs": {},
+  "revisionId": "sha256:2b27639c6a123faf86954d4d01feecc8b8cad08919a77ee49145f6c39e3debd4",
+  "schemaVersion": 1,
+  "updatedAt": 1791594544110
+}

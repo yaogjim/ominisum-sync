@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726013221,
+  "entityType": "message",
+  "id": "1789726013222_pumb8u3y",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nAI 用量暴增不等于头部模型厂商收入同步暴增：企业会把多数任务转给更便宜的模型，并持续压低每项 AI 任务的成本。\n\n## 关键内容\n\n- 作者称，法律 AI 公司 Harvey 的 ARR 约 3.5 亿美元，半年内月度 Token 消耗从 1 万亿升至 14.5 万亿；但它正引入 GLM、Kimi 等低价开放权重模型，并自研法律模型。\n- 企业可通过“智能路由”分配任务：少量高难任务交给 GPT、Claude 等前沿模型，大量分类、检索、总结则使用便宜模型。因此，Token 增长 14 倍，OpenAI、Anthropic 的相关收入未必也增长 14 倍。\n- Canva 也曾因 AI 需求超预期而面临推理成本压力，随后通过模型和基础设施优化，据称将单次任务成本降低约 90%。\n- 作者由此判断，未来更值得关注的可能不是谁卖出最多 Token，而是谁能以最低 AI 成本创造最多新增收入和利润。\n\n## 通俗解读\n\n核心是“使用量”和“收入”可能脱钩：就像用电量大增，但企业不断改用更便宜的电源，最贵供应商未必最受益。这是作者基于案例提出的投资判断，并非已被证明的行业定局。若你关注 AI 模型公司的商业前景，值得细读；回复区信息价值不高。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726013221,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6363055a3402ccd21d1d2e9cfda84debf69fe633a20483b87b6f6e7cc5890943",
+  "refs": {
+    "sessionId": "1787285728248_v20juzdk"
+  },
+  "revisionId": "sha256:4a0cff37f8c744e9b98eebbdc6b968e3912ba21e72ddd0f38fd0733e865130d2",
+  "schemaVersion": 1,
+  "updatedAt": 1789726013221
+}

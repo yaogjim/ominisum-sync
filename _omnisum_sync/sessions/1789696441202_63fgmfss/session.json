@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789696441202,
+  "entityType": "session",
+  "id": "1789696441202_63fgmfss",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选取若干大小模型，用代码库中的真实任务记录质量、延迟和成本，而不是仅依据排行榜选择。",
+      "尝试将工作拆为大型模型规划、小型模型逐项实现、大型模型最终评审，并为每个实现任务创建独立会话。",
+      "将当前AI编程环境按模型、供应商或网关、执行框架和工具层梳理，优先消除阻碍模型替换的强耦合配置。"
+    ],
+    "archiveReason": "模型、推理、网关、执行框架与工具的分层结构具有较强复用性，可用于设计可替换、可试验的AI编程系统。",
+    "byline": "Together AI",
+    "classifiedAt": 1789724716039,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "开放模型AI编程技术栈指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HRyfXy7bgAAiuPR?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HRyfXy7bgAAiuPR?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "开放模型Agent栈可分为模型、推理、网关与路由、执行框架、技能与MCP工具五个相对独立的层次。",
+      "模型选择应匹配任务歧义度：大型模型更适合规划和复杂推理，小型模型更适合范围明确、可验证的实现任务。",
+      "长会话会积累无关文件、失败路径和旧假设；完成任务、改变方案或切换模型时开启新会话有助于控制上下文污染。"
+    ],
+    "oneHighValuePoint": "将模型、推理服务、路由网关、执行框架和工具相互解耦，使开发者能按任务替换模型并比较成本、延迟与效果，而不必重建整个工作流。",
+    "oneLineReview": "分层框架和多模型协作流程实用且高度相关，但模型性能、成本及产品选择主要依赖断言，缺少可核验的测试证据。",
+    "primaryCategory": "AI编程与Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档其分层框架和多模型工作流，具体产品与性能数据需另行核实",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "技术架构",
+      "开发工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将开放模型智能体开发拆为模型、推理、网关、执行框架与工具五层，说明大小模型选择、上下文管理及规划—实现—评审工作流，并主张通过组件解耦持续试验模型和供应商。",
+    "tags": [
+      "开放权重模型",
+      "AI编程智能体",
+      "推理网关",
+      "执行框架",
+      "MCP"
+    ],
+    "title": "开源 AI 技术栈",
+    "totalScore": 78,
+    "url": "https://x.com/togethercompute/status/2097736079122067907"
+  },
+  "payloadHash": "sha256:22356587c48da99cdd5b58af34c44013de30b1076a2ac789f1244d3eabbee0bf",
+  "refs": {},
+  "revisionId": "sha256:468daffec259c398f9c1e0dd4daed90df83780004bc13dae8dcdf68d5b8ef0df",
+  "schemaVersion": 1,
+  "updatedAt": 1790769912064
+}

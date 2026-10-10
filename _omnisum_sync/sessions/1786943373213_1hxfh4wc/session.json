@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943373213,
+  "entityType": "session",
+  "id": "1786943373213_1hxfh4wc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在数学评测中对照测试完整上下文、缩短上下文和禁止输出中间步骤三种条件，观察长链任务的性能变化。",
+      "设计Agent时显式记录当前假设、约束、已排除分支和中间结论，并加入代码或形式验证环节。",
+      "按多约束、长计算、案例枚举、历史结果引用和符号记账需求筛选最适合使用长上下文模型的任务。"
+    ],
+    "archiveReason": "提出了可复用的增强型符号工作记忆框架，并给出可检验预测，对AI能力评估、Agent记忆设计和工具使用具有参考价值。",
+    "classifiedAt": 1786943397151,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI数学优势的外部记忆假说",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "davidepiffer.com",
+    "favicon": "https://substackcdn.com/image/fetch/$s_!W-dr!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F98d23165-1278-40f4-8665-2f7c1a28558f%2Ffavicon-32x32.png",
+    "knowledgePoints": [
+      "上下文窗口并不等同于人类工作记忆，更准确的描述是可被模型检索和利用的增强型外部符号工作空间。",
+      "数学因前提明确、符号稳定、中间状态可记录且结果可验证，比因果隐藏、概念含混的开放领域更能放大长上下文优势。",
+      "AI在长链条任务上的表现可能同时来自知识、推理、记忆、搜索和验证，不能仅凭结果将优势全部归因于更强的抽象推理。"
+    ],
+    "oneHighValuePoint": "可按约束数量、推理链长度、符号记账需求和可验证性，判断一个任务能否显著受益于AI的外部符号工作空间。",
+    "oneLineReview": "视角清晰且能生成实验假设，但关于AI数学优势的核心结论主要是间接推论，直接实证仍然不足。",
+    "primaryCategory": "AI认知与数学推理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性精读并存档，作为分析AI推理能力来源与边界的参考框架",
+    "secondaryCategories": [
+      "AI能力评估",
+      "学习与认知科学"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出，当前AI在数学上的部分优势未必来自更深推理，而来自长上下文、外显推理、搜索与验证构成的增强型符号工作记忆，并比较其在形式数学与开放性社会判断中的适用边界。",
+    "tags": [
+      "工作记忆",
+      "上下文窗口",
+      "数学推理",
+      "外部认知",
+      "形式验证"
+    ],
+    "title": "AI Isn’t Outthinking Mathematicians. It’s Out-Remembering Them.",
+    "totalScore": 69,
+    "url": "https://davidepiffer.com/p/ai-isnt-outthinking-mathematicians"
+  },
+  "payloadHash": "sha256:fbb0420272e51b3a5cb119720be075f710a040e48545ecc379ddee86c1f942ff",
+  "refs": {},
+  "revisionId": "sha256:bd01230758d977fb204e5da8ae13200ace22fb31ed892fcce3c41db20a0f33cc",
+  "schemaVersion": 1,
+  "updatedAt": 1789728003592
+}

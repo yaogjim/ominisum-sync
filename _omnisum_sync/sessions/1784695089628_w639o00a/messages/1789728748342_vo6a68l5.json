@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728748342,
+  "entityType": "message",
+  "id": "1789728748342_vo6a68l5",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# agent-device：让 AI Agent 操作并验证真实移动应用\n\nCallstack 开源的 **agent-device** 是一款移动端自动化 CLI，核心能力是让 Coding Agent 像用户一样操作真实的 iOS、Android 应用，并完成验证、记录与复现。官方将其定位为“面向 AI Agent 的移动应用验证工具”，而非传统自动化测试框架的替代品。\n\n## 从界面理解到操作与诊断\n\nagent-device 为 Agent 提供了一套完整的移动端工具能力：\n\n- 打开应用，读取无障碍界面快照（accessibility snapshot）。\n- 根据具有语义的元素引用执行点击和输入，而非只依赖屏幕坐标。\n- 截图、录屏、采集日志，并抓取性能数据。\n- 将探索和操作过程保存为可重复执行的 `.ad` 脚本。\n\n这意味着 Agent 不仅能生成移动端代码，还能进入真实运行环境，自主检查界面、执行交互、收集问题证据，并复现操作路径，形成“开发—运行—验证”的闭环。\n\n## 支持多种技术栈与运行环境\n\n该工具不仅支持原生 iOS、Android 应用，也可操作使用 **Expo** 和 **Flutter** 构建的应用；运行环境覆盖模拟器和真机，适用范围较广。\n\n其产品意义在于：它把 AI 编程能力从代码层延伸到真实 App 的交互与验证层，可用于 Agent 驱动的功能验收、问题排查和探索式检查。但按照官方定位，它更适合作为 AI Agent 的验证工具，而不是直接取代成熟、确定性更强的传统测试体系。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728748342,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:515bb78f0ce4fd826cabc28e98484acfdab5326cf1815f093cbf9671d37916c9",
+  "refs": {
+    "sessionId": "1784695089628_w639o00a"
+  },
+  "revisionId": "sha256:9514219d783261cb71a2f85e77ba5d2f18b5c0e684c82c87339943458076b850",
+  "schemaVersion": 1,
+  "updatedAt": 1789728748342
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728316906,
+  "entityType": "message",
+  "id": "1789728316906_7fwzxqsv",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# ChatGPT Voice 正从语音工具变成“多代理工作调度台”\n\n作者称，ChatGPT Voice 彻底改变了其工作方式：过去每天伏案超过 12 小时，如今最多约 2 小时，其余时间可在户外通过语音安排工作。核心并非让语音模型亲自完成任务，而是把它当作“幕僚长”，将需求拆分并委派给多个更强的代理并行执行。\n\n## 关键用法是委派、并行与持续跟进\n\n作者建议，每条语音指令都要求 Voice 新建线程并交给其他代理处理，使语音助手保持可用，继续接收和分派任务。他通常在早晨散步时一次性说出当天待办，让系统启动 10—15 个线程并行工作。\n\n但代理并不可靠：作者观察到委派任务“静默失败”的频率高于预期，因此需要反复询问进度，要求语音助手持续追踪、催办。外出时，还可让代理把研究或任务结果整理成 HTML 页面，回到电脑后集中审阅。作者补充称，这套流程可直接通过 OpenAI/Codex 完成，无需 OpenClaw。\n\n## 人的角色从执行者转向任务编排者\n\n这一实践展示了语音交互与多代理结合后的价值：用户可以脱离桌面，用自然语言批量输入想法，再集中验收结构化成果。与此同时，任务拆解、状态可见性和失败恢复仍是明显短板。作者声称效率提升“100 倍”、一小时超过以往八小时工作量，但这些属于个人体验和主观判断，并无独立数据验证。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728316906,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3dd1f9ef39a3c741b45e78e55159c9ab53eb20cedad9969905800919e50da293",
+  "refs": {
+    "sessionId": "1785384954222_ruoz25tp"
+  },
+  "revisionId": "sha256:941a6d761f0bad66eeea7debed65b2317924116f1c0d9db140a2e49be63e837f",
+  "schemaVersion": 1,
+  "updatedAt": 1789728316906
+}

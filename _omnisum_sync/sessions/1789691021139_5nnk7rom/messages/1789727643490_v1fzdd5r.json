@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727643490,
+  "entityType": "message",
+  "id": "1789727643490_v1fzdd5r",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 异构硬件拆分推理，让 769B 模型在 5090 与 DGX Spark 上跑满 1M 上下文\n\n文章介绍了一套超大 MoE 模型的异构推理方案：不要求单台设备同时具备高算力和超大显存，而是按计算特征拆分任务，让 RTX 5090 与 4 台 DGX Spark 各取所长。\n\n## 5090 负责高强度计算，Spark 承载专家权重\n\n系统运行的是 769B 参数的 DeepSeek-V4.1-Flash。RTX 5090 负责 Attention、KV Cache、投机解码及其他顺序执行环节；4 台拥有 128GB 统一内存的 DGX Spark，则存放并计算 MoE 的 routed experts，即每个 token 动态调用的部分专家模块。\n\n这种拆分同时利用了 5090 的计算吞吐和 Spark 的大内存，避免让某一种硬件独自承担全部需求。\n\n## 已实现完整 1M 上下文与较高吞吐\n\n推文给出的结果包括：\n\n- 支持 1,048,576 tokens 上下文；\n- 冷 Prefill 约 4,100–5,700 tok/s，单路 Decode 约 74–85 tok/s；\n- 6 路并发总吞吐约 168 tok/s；\n- Prefix Cache 可将已处理的 67.9 万 token 上下文，从约 165 秒缩短至 0.8 秒恢复，约提升 211 倍。\n\n被引用推文另称 Prefill 为 2,000 tok/s，并提到 7.79M token KV 池及 8 个并发 1M 请求，可能对应不同测试口径或配置。\n\n## 核心意义是“算力与容量解耦”\n\n该案例表明，超大模型本地推理不一定只能依赖单一昂贵设备：可以把高算力、小显存 GPU 与低算力、大内存设备组合，按算子和模型结构分工。不过目前信息来自推文测试，尚缺少成本、功耗、网络开销及可复现性等完整数据。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727643490,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:77b94816cf5c2bb1c0a2ac61dcf35102288096f4be5e0817609126accbbd56f8",
+  "refs": {
+    "sessionId": "1789691021139_5nnk7rom"
+  },
+  "revisionId": "sha256:b94b03093f1d1c01aae61990db32adb5d3f312f36d7bd56f031454ef62a14911",
+  "schemaVersion": 1,
+  "updatedAt": 1789727643490
+}

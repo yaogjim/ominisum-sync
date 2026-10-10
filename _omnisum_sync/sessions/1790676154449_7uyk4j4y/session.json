@@ -1,0 +1,66 @@
+{
+  "createdAt": 1790676154449,
+  "entityType": "session",
+  "id": "1790676154449_7uyk4j4y",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "估算智能体服务容量时，分别列出活跃时长、峰均比、CPU占用率、内存用量和推理调用量的假设。",
+      "对每日推理事件数进行敏感性分析，并用实际调用数据校准。"
+    ],
+    "archiveReason": "区分日活、峰值并发、物理资源与推理负载的估算方法可复用。",
+    "classifiedAt": 1790676179100,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "亿级智能体用户的算力需求估算",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "日活用户数需结合每日活跃时长、峰均比和容量余量，才能估算峰值同时运行的沙箱数。",
+      "CPU、内存与模型推理应分别建模：等待中的沙箱可能少用CPU，但仍需保留内存状态。",
+      "推理功率对每用户每日事件数及单次事件能耗敏感，不能仅凭用户数确定。"
+    ],
+    "oneHighValuePoint": "不能把每用户分配的虚拟CPU直接等同于物理CPU需求；应先估算峰值并发，再考虑工作负载的CPU占用与超售。",
+    "oneLineReview": "容量拆解框架有参考价值，但吉瓦级结论受未经验证的关键假设显著影响。",
+    "primaryCategory": "AI基础设施",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "保留其容量估算框架，具体数值仅作情景假设",
+    "secondaryCategories": [
+      "资源容量规划",
+      "智能体系统"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章估算服务一亿智能体日活用户所需的沙箱资源和推理电力：先由使用时长推算峰值并发，再估计物理CPU与内存需求，并按每日推理事件数估算能耗。结论高度依赖活跃时长、调用次数等假设，评论也质疑了这些取值。",
+    "tags": [
+      "智能体沙箱",
+      "推理能耗",
+      "容量估算",
+      "CPU超售",
+      "并发建模"
+    ],
+    "title": "Freda Duan: A humble attempt to est",
+    "totalScore": 68,
+    "url": "https://x.com/FredaDuan/status/2104080496963588563"
+  },
+  "payloadHash": "sha256:c09c3b7dc760b874e9ad80275def436d8d41132417006eed66c63f3c27867854",
+  "refs": {},
+  "revisionId": "sha256:af2eeeff953a83c23a92451f5aa08a7d79a5127221d722e8905ec6cb689f8ce6",
+  "schemaVersion": 1,
+  "updatedAt": 1790676179145
+}

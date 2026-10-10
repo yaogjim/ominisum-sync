@@ -1,0 +1,15 @@
+{
+  "createdAt": 1782360373347,
+  "entityType": "session-content",
+  "id": "1782360373347_wj38szp1",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Leo｜一个人 + AI</strong></header><div class=\"tw-body\">今天排查了一个诡异的问题：最近 Opus 4.8 用起来总觉得\"不对劲\"，回复质量飘忽，偶尔提到一些我没问过的东西。<br><br>查了半天，发现问题出在我自己身上——我写的 17 个 Hook 脚本一直在往模型的对话上下文里灌垃圾。<br><br>Claude Code 的 Hook 有两条输出通道。一条是模型能看到的，一条是只有你终端能看到的。大部分人写 Hook 的时候不会注意到这个区别，默认的输出方式恰好走的是\"模型能看到\"那条。<br><br>结果就是：你每调用一次工具，Hook 就往模型的上下文里塞一条它根本不需要看的提醒。我的情况是单个对话被注入了 280 次，其中有一个计数器 bug 让模型以为\"本 session 已经 21810 次工具调用了\"。<br><br>模型不是变笨了，是在一堆你自己注入的噪音里挣扎。<br><br>修法就一行，把 Hook 里的 `echo \"xxx\"` 改成 `echo \"xxx\" >&2`，从\"模型能看到\"切到\"只有终端看到\"。<br><br>如果你写了自定义 Hook 又觉得模型表现变差了，先查这个。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HLkwkPMXMAAdqzT?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@xiaobeiLin(小北)</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>我没有自己写Hook，但是也出现你说的这种情况……很诡异</p></div><div class=\"tw-reply\"><strong>@Leo｜一个人 + AI</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>还有一个重要原因是 RTK hook 你搞过没</p></div><div class=\"tw-reply\"><strong>@microcn</strong> <span class=\"tw-eng\">♥ 0 · 💬 1</span><p>最近发现小马尾注入的内容也不少</p></div><div class=\"tw-reply\"><strong>@祥仔Leo | 行走的Meta Prompt</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>模型能看到和终端能看到，这个分层非常明确，边界很清晰，学习了</p></div><div class=\"tw-reply\"><strong>@bitmart｜返佣92返利丨Sally 小信箱</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>这就是典型的灯下黑 还是得定期清理缓存</p></div></div>",
+    "pageContent": "Leo｜一个人 + AI: 今天排查了一个诡异的问题：最近 Opus 4.8 用起来总觉得\"不对劲\"，回复质量飘忽，偶尔提到一些我没问过的东西。 查了半天，发现问题出在我自己身上——我写的 17 个 Hook 脚本一直在往模型的对话上下文里灌垃圾。 Claude Code 的 Hook 有两条输出通道。一条是模型能看到的，一条是只有你终端能看到的。大部分人写 Hook 的时候不会注意到这个区别，默认的输出方式恰好走的是\"模型能看到\"那条。 结果就是：你每调用一次工具，Hook 就往模型的上下文里塞一条它根本不需要看的提醒。我的情况是单个对话被注入了 280 次，其中有一个计数器 bug 让模型以为\"本 session 已经 21810 次工具调用了\"。 模型不是变笨了，是在一堆你自己注入的噪音里挣扎。 修法就一行，把 Hook 里的 `echo \"xxx\"` 改成 `echo \"xxx\" >&2`，从\"模型能看到\"切到\"只有终端看到\"。 如果你写了自定义 Hook 又觉得模型表现变差了，先查这个。\n![图片](https://pbs.twimg.com/media/HLkwkPMXMAAdqzT?format=jpg&name=large)\n---\n热门回复 (共 5 条):\n@xiaobeiLin(小北) (♥ 0 · 💬 1):\n我没有自己写Hook，但是也出现你说的这种情况……很诡异\n\n@Leo｜一个人 + AI (♥ 0 · 💬 1):\n还有一个重要原因是 RTK hook 你搞过没\n\n@microcn (♥ 0 · 💬 1):\n最近发现小马尾注入的内容也不少\n\n@祥仔Leo | 行走的Meta Prompt (♥ 0 · 💬 0):\n模型能看到和终端能看到，这个分层非常明确，边界很清晰，学习了\n\n@bitmart｜返佣92返利丨Sally 小信箱 (♥ 0 · 💬 0):\n这就是典型的灯下黑 还是得定期清理缓存\n"
+  },
+  "payloadHash": "sha256:1d9d510332b86852ae147fb1769903e52903e88c555786abec5908849678212c",
+  "refs": {},
+  "revisionId": "sha256:a4b136c8be10ae0137edead0ef8dbe07523a43d7de59cc6e67ed2c5d0a661bd5",
+  "schemaVersion": 1,
+  "updatedAt": 1782367147188
+}

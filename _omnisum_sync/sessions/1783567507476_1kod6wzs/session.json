@@ -1,0 +1,67 @@
+{
+  "createdAt": 1783567507476,
+  "entityType": "session",
+  "id": "1783567507476_1kod6wzs",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据自身环境是否支持KVM，在E2B和OpenSandbox之间做初步技术选型",
+      "进一步查阅两个项目的文档、部署成本、安全边界和实际冷启动性能数据",
+      "为Agent执行平台设计网络出站白名单、资源限制和工作目录隔离策略"
+    ],
+    "archiveReason": "提供了Agent代码执行沙箱选型线索和两个可进一步调研的开源项目链接",
+    "classifiedAt": 1783567537958,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent代码沙箱方案对比",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "E2B基于Firecracker MicroVM，强调较强隔离、较低冷启动和沙箱状态快照能力",
+      "OpenSandbox基于Docker/K8s，适合无法启用KVM或需要私有化部署的Agent执行场景",
+      "Agent代码沙箱需要特别关注依赖安装、产物文件同步、API访问白名单和敏感数据外泄防护"
+    ],
+    "oneHighValuePoint": "Agent代码执行平台的核心评估维度应包括冷启动时间、文件系统同步、资源隔离和出站网络控制。",
+    "oneLineReview": "适合作为Agent沙箱选型入口，但论证偏概述，缺少实测数据和深入案例。",
+    "primaryCategory": "AI基础设施",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可视项目需求保留",
+    "secondaryCategories": [
+      "Agent开发",
+      "代码执行沙箱"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出Agent代码执行区别于通用代码执行，强调低冷启动、文件状态同步和网络访问控制，并推荐E2B与OpenSandbox两类沙箱方案，分别适合生产级隔离和私有化容器环境。",
+    "tags": [
+      "Agent",
+      "沙箱",
+      "E2B",
+      "OpenSandbox",
+      "代码执行安全"
+    ],
+    "title": "Y11: Agent 执行与通用代码执行的最大区别在于：Agent 执行需要极低的冷启动时间（毫秒级响应）、频繁的文件系统状态同步（Agent 需要读写中间代码、产出文件…",
+    "totalScore": 59.5,
+    "url": "https://x.com/seclink/status/2074728156179878294"
+  },
+  "payloadHash": "sha256:48f8f52249746d1678d820fec589ccb46a4f0417822a04f553f84dc7e33fc745",
+  "refs": {},
+  "revisionId": "sha256:f1fc431514af0d480b71ddf4766ccfdcba0fbfa493c39ce45318f1958b98688c",
+  "schemaVersion": 1,
+  "updatedAt": 1789729104123
+}

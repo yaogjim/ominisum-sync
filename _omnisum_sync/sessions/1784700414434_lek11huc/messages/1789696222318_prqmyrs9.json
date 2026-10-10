@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696222318,
+  "entityType": "message",
+  "id": "1789696222318_prqmyrs9",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者认为，Apple Health 的“安静”和 Google Health 的“主动对话”并非单纯的设计风格，而是分别服务于苹果的硬件信任生意与 Google 的数据、AI 生态。\n\n## 关键内容\n\n- **苹果强调少打扰**：健康数据自动汇总，产品更像可靠的“保险箱”，价值在于增强用户对 Apple Watch、iPhone 生态的信任。\n- **Google 强调持续互动**：AI 教练通过提问、赞踩、预设回复甚至“忽略”，收集传感器无法获得的目标、焦虑和偏好，让个性化与模型效果互相强化。\n- **数据来源决定控制权**：第三方数据受接口和权限制约；收购 Fitbit 让 Google 掌握了从手腕传感器开始的自有数据链路。\n- **体验仍有缺口**：Google 很会主动开启对话，却缺少周报、变化提醒等对话后的持续跟进。作者推测，这可能与主动健康建议的误判和信任风险有关。\n\n## 通俗解读\n\n重点不是哪种设计更“高级”，而是每个按钮在为谁创造价值：“忽略”既方便用户，也可能成为训练推荐系统的信号。作者并未将其直接定性为暗黑模式，而是强调用户是否清楚数据会怎样被利用。\n\n**是否值得细读：** 做 AI、健康产品或产品设计的人值得细读，尤其是数据控制权和“小团队别照抄大厂”两部分；普通读者看本摘要即可。文末第二篇报告标题被截断，但不影响正文主旨。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696222318,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:938373949d3543e90bf79d2c35e3e35b16b3ff5fffba71ea8f018d52159b8bfa",
+  "refs": {
+    "sessionId": "1784700414434_lek11huc"
+  },
+  "revisionId": "sha256:88f84b6e582577e03b233a4c26b3bb35b0a889c61891b09707a8a00ce84211f9",
+  "schemaVersion": 1,
+  "updatedAt": 1789696222318
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784604990607,
+  "entityType": "session",
+  "id": "1784604990607_lkvyjrp1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "优先选择与当前工作流直接相关的技能，按文档安装依赖并在隔离环境中逐项验证。",
+      "试运行对话总结、Agent记忆和内容处理链路，检查输入、输出、失败恢复及长期维护成本。",
+      "启用浏览器自动化或微信数据解析前，审查隐私边界、平台条款及非商业许可证限制。"
+    ],
+    "archiveReason": "包含可直接安装的模块化技能、明确依赖和快速上手流程，对Agent工作流、知识管理及内容自动化具有复用价值。",
+    "classifiedAt": 1784605798213,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "内容创作者AI技能工作流仓库",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "每项能力以独立 SKILL.md、脚本和参考资料封装，可按任务选择性安装到Claude Code或Agents技能目录。",
+      "Agent记忆系统以Markdown为事实源，以SQLite/FTS作为快速索引，并可选接入语义检索。",
+      "涉及浏览器登录态和本地通信数据时，凭据、密钥与明文快照应仅保存在本地，并采用只读、授权和显式确认边界。"
+    ],
+    "oneHighValuePoint": "将素材采集、内容分析、转写剪辑、发布草稿和长期记忆组织成可由Agent调用的模块化工作流。",
+    "oneLineReview": "工具覆盖面广且上手说明具体，但部分能力依赖特定平台和本地环境，实际可靠性仍需逐项验证。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，按实际需求选择技能验证",
+    "secondaryCategories": [
+      "内容创作自动化",
+      "知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该 README 介绍面向内容创作者的 Claude Code/Codex 技能仓库，覆盖知识沉淀、社媒抓取、转写剪辑、网页调研及微信数据导出，并列出依赖、安装步骤、快速上手、安全限制和非商用边界。",
+    "tags": [
+      "Claude Code技能",
+      "Agent工作流",
+      "Obsidian知识库",
+      "内容自动化",
+      "微信本地数据"
+    ],
+    "title": "yichen-skills/README.zh.md at main · mcncarl/yichen-skills",
+    "totalScore": 73,
+    "url": "https://github.com/mcncarl/yichen-skills/blob/main/README.zh.md"
+  },
+  "payloadHash": "sha256:fea33278aa13643ff3970d90f0615e8c05956f93bc7aaf65aabe64c822f3a332",
+  "refs": {},
+  "revisionId": "sha256:c9c35ac9ee229dbfc06df01d521433c57966c6f08c398dedef0f125e0abf5209",
+  "schemaVersion": 1,
+  "updatedAt": 1789696097655
+}

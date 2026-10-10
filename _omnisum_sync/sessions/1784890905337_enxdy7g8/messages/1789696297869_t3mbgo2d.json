@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696297868,
+  "entityType": "message",
+  "id": "1789696297869_t3mbgo2d",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nOpenWorker 是一款开源、桌面端优先的 AI 助手，目标不是只陪你聊天，而是调用本地文件、终端及 Slack、Jira 等工具，直接完成文档、报表、日程和消息处理等工作。\n\n## 关键内容\n\n- **面向实际交付**：用户只需描述结果，如“整理客户简报”或“检查发布进度”，它会拆解步骤，并产出可打开、分享的文件或直接回复消息。\n- **本地优先且模型可选**：程序、会话、密钥和连接凭据主要保存在本机；可自带 OpenAI、Anthropic、Gemini 等 API 密钥，也可通过 Ollama 完全本地运行。\n- **工具覆盖较广**：支持 25 种以上的集成，包括 GitHub、Slack、Jira、Notion、Gmail 和日历，也兼容 MCP 工具，并可定时执行日报、周报等任务。\n- **关键操作需确认**：发送消息、修改日历、写入内容或执行命令前会请求批准。项目目前处于公开测试阶段；Windows 版本尚未代码签名，会触发 SmartScreen 警告。\n\n## 通俗解读\n\n“本地优先”不等于数据绝不联网：如果选择云端模型或第三方应用，相关数据仍会发送给你指定的服务；OAuth 授权也会经过一个小型云端中转服务。它的核心价值是把 AI 从“给建议”推进到“实际动手”，同时用人工确认降低误操作风险。\n\n**是否值得细读：**如果你想使用或开发可操作桌面工具的 AI Agent，值得继续看安装、权限和集成说明；若只需要普通聊天机器人，细读价值有限。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696297868,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9225b57edb9b0cc2d276dadfbea5f0e6f247d090313697e4c6f938095888af16",
+  "refs": {
+    "sessionId": "1784890905337_enxdy7g8"
+  },
+  "revisionId": "sha256:9ed7ac36a7269854b05f6619409e93ece17f3b451fe2a5c028e29e667e56ee9f",
+  "schemaVersion": 1,
+  "updatedAt": 1789696297868
+}

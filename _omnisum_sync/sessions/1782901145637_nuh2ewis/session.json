@@ -1,0 +1,68 @@
+{
+  "createdAt": 1782901145637,
+  "entityType": "session",
+  "id": "1782901145637_nuh2ewis",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检索 LiteLLM + Postgres + Caddy 的完整部署教程",
+      "评估在 VPS 上通过 Tailscale 统一出口的安全性与风控收益",
+      "验证 OpenAI、Gemini、Ollama Cloud 是否都能稳定接入 LiteLLM"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783039763645,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "自建AI中转站方案设想",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "LiteLLM 可作为多模型 API 聚合与统一入口工具",
+      "Caddy 可用于自动 HTTPS，简化自托管服务的证书管理",
+      "Tailscale 可将多设备组网并通过统一出口访问服务",
+      "自建私用中转站可减少对第三方 AI 中转站稳定性的依赖"
+    ],
+    "oneHighValuePoint": "通过 LiteLLM 聚合多模型供应商，并用 Tailscale 统一设备出口以降低风控风险。",
+    "oneLineReview": "有一定启发性的自建 AI 网关思路，但信息过于粗略，难以直接落地。",
+    "primaryCategory": "AI基础设施",
+    "rating": "C",
+    "rejectReason": "内容只是一个搭建思路摘要，缺少配置步骤、架构细节、风险分析和实际验证案例，热门回复也大多与主题无关。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "自托管服务",
+      "网络代理与风控"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出用 docker-compose、LiteLLM、Postgres、Caddy 和 Tailscale 在 VPS 上自建私用 AI 中转站，聚合 OpenAI、Gemini、Ollama Cloud 等服务，以提升稳定性并统一出口降低风控风险。",
+    "tags": [
+      "LiteLLM",
+      "docker-compose",
+      "Tailscale",
+      "Caddy",
+      "AI中转站"
+    ],
+    "title": "佐仔: 为了解决这个问题，准备在VPS 上采集“docker-compose + LiteLLM + Postgres + Caddy 自动 HTTPS”搭建一套仅供自…",
+    "totalScore": 42,
+    "url": "https://x.com/huangjinbo/status/2071844088387961240"
+  },
+  "payloadHash": "sha256:04fef3ca74f7392129a519b42ae91b48629ddde8a7f0177ba4a48b8f3f6cc699",
+  "refs": {},
+  "revisionId": "sha256:6688a0e4b81379511e6e2af6f30d48bed16257bc1f777691aab21a6f72918b3d",
+  "schemaVersion": 1,
+  "updatedAt": 1784801561196
+}

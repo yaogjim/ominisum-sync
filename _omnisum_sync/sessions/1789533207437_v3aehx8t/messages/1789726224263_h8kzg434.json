@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726224263,
+  "entityType": "message",
+  "id": "1789726224263_h8kzg434",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者认为，AI Agent 的重要价值不只是自动化省人，而是迫使企业把原本依赖经验、默契和人情运转的模糊规则，变成可执行、可授权、可追责的制度。\n\n## 关键内容\n\n- 销售报价 Agent 看似只需读取客户等级、订单和库存，落地时却卡在折扣权限：销售、财务和区域负责人标准不一，历史订单又存在大量例外。\n- 人能靠经验判断“看情况”，Agent 真正代替人执行时，公司必须明确规则、权限、例外、冲突处理和责任归属。\n- 因此作者认为，许多所谓 AI 难题其实是组织问题，例如部门 KPI 冲突、数据定义不统一，以及想让 AI 自主却没人愿意承担后果。\n- FDE（负责推动 AI 在企业落地的技术人员）的关键能力，也不只是调模型、写代码，而是帮助企业把隐性规则梳理成可执行、可审计的流程。\n\n## 通俗解读\n\n文章并非说 Agent 完全不能理解模糊需求，而是强调：**理解可以模糊，执行和授权不能无限模糊**。例如 AI 可以判断客户值得优惠，但若要自动发出报价，公司仍须规定它最多能优惠多少、何时需要人工审批、出错由谁负责。\n\n**是否值得细读：值得。**案例具体、观点鲜明，适合正在推动企业 AI 落地的人；但它主要是经验性观点，并非严谨研究或完整方法论。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726224263,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ad173b961361244b47db53de2fb22cbab3cd663ab4193bf58ee33e3ddf65d73b",
+  "refs": {
+    "sessionId": "1789533207437_v3aehx8t"
+  },
+  "revisionId": "sha256:19e6b0982aee5c4c52f9a59df86b0aea2f48d0104bc572ed93a4aa71b9c656b9",
+  "schemaVersion": 1,
+  "updatedAt": 1789726224263
+}

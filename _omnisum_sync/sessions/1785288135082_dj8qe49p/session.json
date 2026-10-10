@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785288135082,
+  "entityType": "session",
+  "id": "1785288135082_dj8qe49p",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用三项核心原则审查现有资金系统，逐项检查金额表示、账本、幂等、审计和对账机制。",
+      "为关键资金流程建立持久化状态机、原子幂等屏障、资金预留及超时恢复机制。",
+      "补充属性测试、重复调用测试、逐步骤故障注入和新旧数据格式兼容性测试。"
+    ],
+    "archiveReason": "覆盖资金表示、复式记账、幂等与恢复、外部集成、对账、权限控制和测试，并以三项原则形成可复用的完整工程框架。",
+    "classifiedAt": 1785403065748,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 9,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 9
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "金融科技资金系统工程手册",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "w.pitula.me",
+    "favicon": "https://w.pitula.me/fintech-engineering-handbook/assets/favicon.png",
+    "knowledgePoints": [
+      "资金系统应使用金额与币种绑定的类型，避免浮点数，在边界显式舍入，并记录所有舍入残差。",
+      "复式账本以不可变资金流推导余额，错误通过关联的冲正或调整分录修复，而不是修改历史记录。",
+      "跨系统资金流程应持久化为可恢复状态机，各步骤保持幂等，并通过对账捕获遗漏、重复和数据漂移。"
+    ],
+    "oneHighValuePoint": "将金融系统可靠性统一为“不虚构数据、不丢失数据、不信任任何单一来源”三项原则，并映射到幂等、账本、审计、对账和恢复机制。",
+    "oneLineReview": "这是一份覆盖面广、结构完整且可直接用于金融系统设计评审的工程手册，但外部证据与量化验证相对有限。",
+    "primaryCategory": "金融科技工程",
+    "rating": "S",
+    "rejectReason": "",
+    "retentionDecision": "重点精读并长期存档，作为金融系统架构设计与评审参考",
+    "secondaryCategories": [
+      "分布式系统",
+      "软件架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以“不虚构、不丢失、不轻信数据”为核心原则，系统讲解资金表示、复式账本、幂等与可恢复流程、外部接口、Webhook、对账、审计、权限控制及金融系统测试，并提供端到端案例。",
+    "tags": [
+      "资金账本",
+      "幂等性",
+      "审计追踪",
+      "对账机制",
+      "资金流设计"
+    ],
+    "title": "Fintech Engineering Handbook",
+    "totalScore": 86,
+    "url": "https://w.pitula.me/fintech-engineering-handbook/"
+  },
+  "payloadHash": "sha256:5ad50c562d92e716a41071011a9ee28115794c402ed46706c9889162c7421e61",
+  "refs": {},
+  "revisionId": "sha256:1d2f545964d81228b57a056edc04c2d4618b4dea47164e552eb45934aef7a190",
+  "schemaVersion": 1,
+  "updatedAt": 1789605096965
+}

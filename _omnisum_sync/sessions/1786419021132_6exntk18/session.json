@@ -1,0 +1,83 @@
+{
+  "createdAt": 1786419021132,
+  "entityType": "session",
+  "id": "1786419021132_6exntk18",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在测试环境中将OpenWork远程MCP接入现有Codex、Claude Code或OpenCode客户端。",
+      "验证能力搜索、能力执行以及Google Workspace或Microsoft 365连接的完整流程。",
+      "将其组织权限与能力发布模型同现有Agent平台需求进行对照评估。"
+    ],
+    "archiveReason": "包含明确的MCP接入方式、跨客户端能力复用模型和组织级权限管理设计，适合后续选型或原型验证。",
+    "classifiedAt": 1789725070575,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "OpenWork开源智能体协作平台",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "OpenWork desktop app",
+        "caption": "",
+        "height": 1684,
+        "id": "img-4",
+        "nearbyText": "OpenWork OpenWork is a free, open-source desktop app made for sharing AI workflows. It is an open-source alternative to Claude Cowork and Codex for macOS, Windows, and Linux. Add one OpenWork MCP to Codex, Claude Code, Cursor, or another co...",
+        "resolvedUrl": "https://private-user-images.githubusercontent.com/11430621/620657685-66a8dd9b-5260-488c-957d-e54331e78c1c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODY0MTg2NzYsIm5iZiI6MTc4NjQxODM3NiwicGF0aCI6Ii8xMTQzMDYyMS82MjA2NTc2ODUtNjZhOGRkOWItNTI2MC00ODhjLTk1N2QtZTU0MzMxZTc4YzFjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA4MTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwODExVDAzMTkzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFiMjRmMGI1NTM2ODAyYjNmYTc5OTFiMmQ4MDEyZWNkZjA4MmQyMGY2Mzk4ZDhlZmRlNTc1NTgyZDZhYTFhMjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.Kj2P73LnrIFXSWboB-J25eGHPRDdcY3yWTAkXdRNraI",
+        "role": "article",
+        "score": 73,
+        "src": "https://private-user-images.githubusercontent.com/11430621/620657685-66a8dd9b-5260-488c-957d-e54331e78c1c.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODY0MTg2NzYsIm5iZiI6MTc4NjQxODM3NiwicGF0aCI6Ii8xMTQzMDYyMS82MjA2NTc2ODUtNjZhOGRkOWItNTI2MC00ODhjLTk1N2QtZTU0MzMxZTc4YzFjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA4MTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwODExVDAzMTkzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFiMjRmMGI1NTM2ODAyYjNmYTc5OTFiMmQ4MDEyZWNkZjA4MmQyMGY2Mzk4ZDhlZmRlNTc1NTgyZDZhYTFhMjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.Kj2P73LnrIFXSWboB-J25eGHPRDdcY3yWTAkXdRNraI",
+        "width": 2962
+      }
+    ],
+    "knowledgePoints": [
+      "OpenWork MCP通过能力搜索和能力执行两个工具向兼容智能体暴露已分配的技能、插件及外部服务。",
+      "OpenWork Den作为组织控制平面，可管理模型供应商、成员权限、桌面策略、应用版本和能力分发。",
+      "多Git worktree并行开发可使用隔离配置、动态调试端口和模拟钥匙串，避免实例锁与凭据冲突。"
+    ],
+    "oneHighValuePoint": "用统一MCP将能力发现与执行抽象为search_capabilities和execute_capability，可降低不同智能体客户端之间的集成与迁移成本。",
+    "oneLineReview": "项目定位和接入方式清晰，具有较强实践参考价值，但功能效果主要来自项目自述，缺少独立案例与性能证据。",
+    "primaryCategory": "AI Agent开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为AI智能体能力复用与组织级管理方案的参考资料存档",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "开源软件",
+      "团队能力管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍开源桌面应用OpenWork，支持通过统一MCP在Codex、Claude Code和Cursor等智能体间复用技能、插件与服务，并提供团队权限、模型供应商、版本策略和能力发布管理。",
+    "tags": [
+      "OpenWork",
+      "MCP",
+      "AI Agent",
+      "工作流共享",
+      "权限管理"
+    ],
+    "title": "different-ai/openwork: The open-source alternative to Claude Cowork (powered by opencode)",
+    "totalScore": 69,
+    "url": "https://github.com/different-ai/openwork"
+  },
+  "payloadHash": "sha256:5149198a9aac45edf9a4dcc502992dece7ce2578330f5bc1f99f122acffe2590",
+  "refs": {},
+  "revisionId": "sha256:00b6036cf59da0109878ac07ecd03d899b60dac19e514c6952464efe66b04300",
+  "schemaVersion": 1,
+  "updatedAt": 1789727344716
+}

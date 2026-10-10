@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695758666,
+  "entityType": "message",
+  "id": "1789695758665_imts8f6s",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一个开源的“设计助手”系统提示词与流程库，旨在让 Claude、GPT 等模型少生成套路化页面，更重视审美一致性、可访问性、交互细节和组件化设计。\n\n## 关键内容\n\n- 项目包含一份 **20 章系统提示词**，覆盖内容取舍、视觉层级、字体与颜色、无障碍、交互反馈、设计系统及交付方式等。\n- 配套 **14 个可调用流程**，可用于需求访谈、线框图、原型制作、设计系统提取，以及无障碍、视觉层级和“AI 味”检查；多个流程还能串联使用。\n- 提供 Claude 与 OpenAI Codex 两个版本：前者针对较新的 Anthropic 模型调整了措辞和触发条件，后者改为不依赖子代理的顺序执行。\n- 项目采用 MIT 许可证，可自由修改和商用；但默认面向 HTML 设计环境，用于 Figma、纯代码或聊天场景时需要自行适配。\n\n## 通俗解读\n\n这里的“反 AI 套路”主要是避免渐变滥用、表情符号装饰、千篇一律的圆角卡片和固定字体，并不保证自动产出优秀设计，而是用更具体的规则与检查清单约束模型。项目自称提示词源自对 Claude Design 的逆向整理，并非 Anthropic 官方发布。若你常用大模型生成前端或设计原型，值得细读；若只想偶尔询问设计建议，README 已足够了解其用途。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695758666,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a0a32548dfee6a8e2eadcf77e4a16eb60f96006dc6d2ba11f69c98ba4af57010",
+  "refs": {
+    "sessionId": "1783301387610_2mc4sxpd"
+  },
+  "revisionId": "sha256:ad01351df76de04b0e5251564540c33e669b707e7a8c19d5bc9b2446c9d1593f",
+  "schemaVersion": 1,
+  "updatedAt": 1789695758666
+}

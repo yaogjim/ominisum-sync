@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786943866391,
+  "entityType": "message",
+  "id": "1786943937426_omrwnnso",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# HTML over WebSockets：用极少 JavaScript 构建实时 SPA\n\n**文章主旨：**与其让浏览器接收 JSON 后再用 JavaScript 生成页面，不如由服务器直接渲染 HTML，并通过 WebSocket 持续发送给客户端。这样可以用单一后端语言、单一渲染引擎构建实时 SPA，减少 API、前后端契约和客户端状态管理。\n\n## 1. 核心思路：传 HTML，而不是 JSON\n\n传统 SPA 通常包含三部分：\n\n- JavaScript 框架负责渲染页面；\n- 后端 API 返回 JSON；\n- 前后端维护两套代码，并依赖接口契约保持一致。\n\nHTML over the wire 则把渲染逻辑集中到服务器：服务器生成完整 HTML，浏览器只负责把它放到正确位置。根据传输方式，可分为：\n\n| 传输方式 | 特点 | 代表方案 |\n|---|---|---|\n| HTTP | 一次请求、一次响应 | htmx、Unicorn |\n| SSE | 服务器到客户端的单向持续推送 | Datastar |\n| WebSocket | 永久、双向、实时通信 | Phoenix LiveView、Django LiveView |\n\n文章重点讨论 **HTML over WebSockets**：适合需要低延迟、双向实时交互的应用。\n\n## 2. 起源：Phoenix LiveView\n\n2019 年 ElixirConf 上，Phoenix 作者 Chris McCord 展示了 LiveView，并在 **15 分钟内构建了一个实时 Twitter 克隆**。\n\n这个案例证明：即使不使用 React、Angular、Vue 等前端框架，也能主要依靠后端完成具有实时体验的应用。此后，LiveView 模式被 Ruby、Python、C#、PHP 等生态借鉴。\n\n## 3. 工作原理\n\n### 传统 SPA 流程\n\n1. 浏览器发送 HTTP 请求，例如 `GET /api/article/2/`；\n2. 服务器查询数据库；\n3. 服务器生成并返回 JSON；\n4. 浏览器解析 JSON；\n5. JavaScript 渲染引擎生成 HTML。\n\n### HTML over WebSockets 流程\n\n1. 浏览器建立 WebSocket 连接并完成认证；\n2. 浏览器通过通道发送“我要 `/article/2/`”；\n3. 服务器查询数据库；\n4. 服务器用模板引擎直接生成 HTML；\n5. 服务器返回 `<article>...</article>` 等页面片段；\n6. 浏览器将 HTML 放入对应位置。\n\nWebSocket 连接不会在每次交互后关闭，因此服务器也能在客户端没有主动请求时直接推送更新，例如新聊天消息、仪表盘数据或多人游戏状态。\n\n客户端仍然会使用少量 JavaScript，但职责主要是：\n\n- 建立和维护 WebSocket；\n- 接收并插入 HTML；\n- 监听事件；\n- 处理动画、重连等辅助任务。\n\n真正的页面渲染和大部分状态逻辑都留在后端。\n\n## 4. 主要优势\n\n- **只有一个渲染引擎**：避免服务端与客户端各维护一套渲染逻辑。\n- **不必构建 JSON API**：服务器直接连接数据库并返回 HTML，减少 API、GraphQL 和接口契约。\n- **状态集中在服务器**：通常每个客户端对应一个有状态进程，可以记住用户当前所处的位置和页面状态；这与刻意保持无状态的 htmx 不同。\n- **真正实时**：无需轮询，服务器可以立即向客户端推送变化。\n- **天然支持广播**：可同时通知所有在线用户，适合聊天、实时仪表盘和多人游戏。\n- **减少重复通信开销**：持久连接避免每次交互都重复发送 HTTP 头和重新握手。作者强调，WebSocket 并非“协议本身神奇地更快”，HTTP/2 和 HTTP/3 已缩小差距；其优势主要来自持久连接、减少往返以及直接发送成品 HTML。\n- **极少依赖 JavaScript**：无需 React、Angular、Vue 等大型前端框架，也能构建 SPA。\n- **具备基本 SEO 能力**：首次响应由服务器生成，因此可被搜索引擎索引；但后续经 WebSocket 推送的内容通常不会被爬虫看到，重要内容应放在首屏响应中。\n- **降低 XSS 注入风险**：服务器统一转义用户输入后再生成 HTML，例如恶意 `<script>` 会作为普通文本显示，而不是代码执行。\n\n## 5. 局限与成本\n\n- **服务器资源消耗更高**：需要为每个客户端保持 WebSocket，通常还要在内存中保存会话状态。\n- **横向扩展更复杂**：多服务器部署时必须共享连接和状态。例如 Django 常需搭配 Channels、ASGI 服务器及 Redis channel layer。\n- **大规模并发才会明显暴露压力**：作者的网站曾在接近 **Raspberry Pi 3 性能的硬件**上，与其他服务共同运行，并顺利承受 **600 名同时在线读者**。\n- **受网络物理延迟影响**：用户距离服务器较远时，“即时”体验会下降。\n- **无法离线工作**：连接断开后应用基本停止，需要专门设计自动重连和故障恢复。\n- **学习和运维门槛较高**：运行 WebSocket 服务、管理客户端状态和理解 LiveView 模式，比简单引入一个 `<script>` 更复杂。\n\n## 6. 现有框架生态\n\nHTML over the wire 已覆盖多数主流语言，既有 WebSocket 实现，也有 HTTP、SSE 方案：\n\n| 语言/生态 | 框架 | 传输方式 | 特点 |\n|---|---|---|---|\n| Elixir | Phoenix LiveView | WebSocket | 最成熟的代表；LiveView 1.0 于 **2024 年 12 月**发布 |\n| Ruby | Hotwire（Turbo + Stimulus） | HTTP + WebSocket/SSE | Turbo 8 支持 DOM morphing |\n| Ruby | Live / Lively | WebSocket | 纯 WebSocket、小众方案 |\n| Python / Django | Django LiveView、Reactor、djust | WebSocket | 多个活跃实现；djust 使用 Rust VDOM |\n| Python / Django | django-unicorn | HTTP/AJAX | 无服务器主动推送 |\n| Python / Django | Tetra | AJAX + WebSocket | 基于 Alpine.js，仍较年轻 |\n| C# / .NET | Blazor Interactive Server | SignalR/WebSocket | .NET 9 的服务端交互模式 |\n| PHP / Laravel | Livewire 3 + Reverb | WebSocket | Reverb 是 Laravel 于 **2024 年**推出的官方 WebSocket 服务器 |\n| 通用 JavaScript | htmx | HTTP，另有 WS/SSE 扩展 | 默认偏无状态 |\n| 通用 JavaScript | Datastar | SSE | 以较简单、低成本的单向推送为重点 |\n\n## 7. WebSocket 与 SSE 如何选择\n\nSSE 同样可以传输服务器生成的 HTML，但只提供从服务器到客户端的单向通道。\n\n### SSE 的优点\n\n- 基于普通 HTTP，基础设施更简单；\n- 通常不需要为每个客户端维护复杂的有状态进程；\n- 更容易负载均衡和横向扩展；\n- 浏览器原生 `EventSource` 支持自动重连。\n\n### SSE 的限制\n\n- **只能服务器主动推送**；客户端发送数据时仍要另发 HTTP 请求；\n- **只能传输 UTF-8 文本**，不能像 WebSocket 那样传输二进制数据；\n- 不适合频繁双向通信，例如聊天、协作编辑和多人游戏。\n\n### 快速判断\n\n- **频繁双向、低延迟交互**：选择 WebSocket，如聊天、协同编辑、游戏。\n- **主要由服务器单向推送**：选择 SSE，如通知、实时动态、监控面板、AI 流式输出。\n- **普通请求—响应即可**：选择 HTTP，例如 htmx。\n\n## 8. 结论\n\nHTML over WebSockets 并非适合所有项目，但它提供了一种更简单的 SPA 架构：**由服务器生成 HTML，客户端只负责接收和更新 DOM**，从而减少 API、前后端契约和大量 JavaScript。\n\n最终应根据通信模式选择技术，而不是追逐流行框架：双向实时用 WebSocket，单向推送用 SSE，普通交互用 HTTP。核心原则是让架构服务于实际问题。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786943866391,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7f8ea38e52aea5faa76d1de6f79f9abcd0ecb25e4fc917f4206a986b378dc706",
+  "refs": {
+    "sessionId": "1786943135826_a71ag8u0"
+  },
+  "revisionId": "sha256:81cd009ce0df876322818ccdaac67e2fb4395590743cc631b4f4bdf3012698d7",
+  "schemaVersion": 1,
+  "updatedAt": 1786943866391
+}

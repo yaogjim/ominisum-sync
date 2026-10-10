@@ -1,0 +1,75 @@
+{
+  "createdAt": 1784023083678,
+  "entityType": "session",
+  "id": "1784023083678_nipkzdyb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "先选择文档维护等低风险任务，建立包含目标、边界、SOP、状态和日志的单层循环。",
+      "为工程循环配置一键开发环境、隔离工作树、Playwright驱动及截图或视频证据上传流程。",
+      "为循环增加事件门控或轻量脚本，只在存在真实任务时唤醒代理，并定期根据运行历史执行演进复盘。"
+    ],
+    "archiveReason": "提供了可直接复用的智能体循环框架、契约模板、检查清单及多个工程与商业案例。",
+    "classifiedAt": 1784677825479,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "可靠智能体循环设计与实践",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "循环契约应明确目标、边界与SOP，尤其要精确定义自主交付和人工升级之间的界线。",
+      "状态保存当前假设、待办与跟进项，日志按运行追加；二者结合可避免重复调查并积累长期经验。",
+      "复杂高风险循环可拆为编排器、隔离执行器和独立验证器，并用截图、视频或指标变化形成可审核证据。"
+    ],
+    "oneHighValuePoint": "可靠循环的关键不是定时唤醒代理，而是用明确边界、跨运行状态和独立验证证据，规定代理何时可自主交付、何时必须交由人工。",
+    "oneLineReview": "框架完整且可直接试用，但成效证据主要来自作者自述，且多来源内容存在明显重复。",
+    "primaryCategory": "AI Agent 开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并长期保留，优先沉淀循环契约、验证机制和触发器设计",
+    "secondaryCategories": [
+      "软件工程自动化",
+      "商业流程自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://github.com/superdesigndev/loopany-platform",
+      "https://github.com/AI-Builder-Club/skills/blob/main/skills/verifier-setup/SKILL.md",
+      "https://x.com/jasonzhou1993/status/2075179471951614381",
+      "https://www.youtube.com/watch?v=JQ_We_ztxrI"
+    ],
+    "summaryBrief": "文章结合开源工具、配置技能与一个月实践，提出由循环契约、状态日志、触发器、执行器和验证器组成的可靠智能体循环，并用文档维护、错误扫描、客服及CRM案例说明安全边界、证据验证和持续演进方法。",
+    "tags": [
+      "智能体循环",
+      "验证器",
+      "循环契约",
+      "状态管理",
+      "任务编排"
+    ],
+    "title": "可靠智能体循环的构建与实践",
+    "totalScore": 83,
+    "url": "omnisun://digest/1784023083677"
+  },
+  "payloadHash": "sha256:1b06e39ecf9a361c9674fe5b10474e13a4d594ebfd6c7343a57262004d597447",
+  "refs": {},
+  "revisionId": "sha256:4f71bce723e4cdc497a0a23183767e8f9840ad6effbc4e2549de8a959a3e459f",
+  "schemaVersion": 1,
+  "updatedAt": 1789864041752
+}

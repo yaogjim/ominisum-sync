@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784801346201,
+  "entityType": "message",
+  "id": "1784801346201_rmx0ggd5",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "> **主旨：** 小团队不应从零“手搓”完整的 Agent，而应复用成熟的开源基础设施，集中精力打造适配具体业务的 **Agent Harness（运行与业务编排层）**。未来工程师的核心差异，将体现在把业务需求转化为交互、工具、流程和体验设计的能力上。\n\n## 1. Agent 项目难落地的主要原因\n\n- 很多团队在获得真实业务反馈前，就把大量时间耗在自建 Agent Harness 等基础设施上。\n- Cursor、Claude Code 等产品展示了 AI 编程的能力，但要让 Agent 真正进入业务，仍需要完善其工具调用、任务流程、交互方式和运行环境。\n- 对资源有限的小团队而言，重复开发底层能力通常成本高、验证慢，也容易偏离实际业务价值。\n\n## 2. 更适合小团队的方法：基于开源项目二次开发\n\n- 作者建议直接利用成熟的开源资产，再构建面向特定领域的 Harness，而不是从头实现完整 Agent。\n- 文中以开源项目 **[pi](https://github.com/earendil-works/pi)** 为例：\n  - 架构极简；\n  - Agent 的核心结构较完整；\n  - 便于理解、修改和二次开发；\n  - 适合成为垂直业务 Agent 的底座。\n- 作者正在 pi 之上，结合 Grok Build 进行 Harness 设计，并认为 Grok 的表现有些接近 Claude Opus 的风格。\n\n## 3. 真正拉开差距的是 Harness 设计能力\n\nHarness 的价值不只是“套一个框架”，而是把业务需求转化为 Agent 可以稳定执行的系统，重点包括：\n\n- **交互设计：** 用户如何提出需求，Agent 如何追问、反馈和确认。\n- **工具选择：** Agent 应接入哪些搜索、代码、数据库或业务系统工具。\n- **流程编排：** 任务如何拆解、执行、检查和纠错。\n- **设计品味（Taste）：** 如何取舍功能、复杂度和使用体验。\n- **UI/UX：** 既包括用户看得见的界面，也包括看不见但能感受到的响应方式、稳定性和流畅度。\n\n这些设计都必须贴合具体业务，而不是为了技术完整而堆叠功能。\n\n## 4. 后续实践与社区观点\n\n- 作者随后整理了“如何学习 pi，以及如何让 Agent 接入业务”的完整方法，并开源了配套项目 **`pi-docs-playbook`**。\n- 其使用思路是：把这套材料交给能力较强的 Coding Agent，让它按照正确的项目地图阅读代码、主动询问业务需求，再进行针对性扩展。\n- 热门回复用一个形象比喻概括了这一观点：\n\n> 不要在房间里从零手搓一台电脑，而应购买机壳和成熟零件进行组装。真正决定 Agent 能否落地的是 Harness，底层模型更像是在选择“显卡”。\n\n## 5. 核心结论\n\n小团队最有效的路线是：\n\n1. 选择结构清晰、可扩展的开源 Agent 项目作为底座；\n2. 尽快接入真实业务并获取用户反馈；\n3. 把资源投入到业务流程、工具连接、交互和 UI/UX 上；\n4. 通过领域化 Harness 形成真正的产品壁垒，而不是重复建设通用基础设施。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784801346201,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f77a045c2ba5a23a386c38a8638c13b23f04e72f296fc2eef237e8bb794763ce",
+  "refs": {
+    "sessionId": "1783078677463_ix61op4f"
+  },
+  "revisionId": "sha256:f55abf5ddcaa8b2e36afdf59c3c537740c49e01efb3b48c4994d88df91923c1c",
+  "schemaVersion": 1,
+  "updatedAt": 1784801346201
+}

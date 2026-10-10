@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784692468837,
+  "entityType": "session",
+  "id": "1784692468837_kf6xikvf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "复杂任务开始前先让Agent研究相关代码，将结果压缩为短文档，再在新上下文中进行设计和实施。",
+      "选择可由测试或静态检查验证的小问题，建立每次只修一项、每天生成一个PR的慢循环，并按置信度逐步扩大范围。",
+      "在设计、计划和代码审查阶段保留人工检查点，以长期可维护性和交付价值而非Token利用率衡量自动化效果。"
+    ],
+    "archiveReason": "包含可复用的RPI流程、主动上下文压缩、可验证慢循环及软件工厂自动化边界，并提供无人值守开发失败的实践案例。",
+    "classifiedAt": 1784693099786,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 6,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "AI编程中的上下文与循环工程",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/6562a175/img/favicon.ico",
+    "knowledgePoints": [
+      "上下文工程可将RAG、记忆、工具定义和代理历史统一理解为对模型输入Token的选择、排序与压缩。",
+      "RPI将任务拆为研究、规划和实施，并通过阶段性产物与新会话减少上下文污染；临时研究和计划应以代码为最终事实源。",
+      "可验证的小型慢循环适合自动改进代码，而完全无人审查的软件工厂可能积累测试无法及时暴露的架构与可维护性债务。"
+    ],
+    "oneHighValuePoint": "AI开发的关键不是最大化Token消耗，而是在研究、设计、实施之间主动压缩上下文，并把人类判断放在高杠杆检查点。",
+    "oneLineReview": "方法框架和失败案例具有较强实践价值，但访谈冗长，部分性能判断主要依赖经验与模糊引用。",
+    "primaryCategory": "AI辅助软件开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并长期保留，重点提取上下文压缩、慢循环和人类检查点方法",
+    "secondaryCategories": [
+      "Agent开发",
+      "软件工程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "访谈围绕上下文工程、编码代理循环和软件工厂展开，提出RPI、频繁主动压缩与慢循环，并以关闭无人值守工厂的经历说明自动化仍应保留人类在设计、规划和审查上的关键控制点。",
+    "tags": [
+      "上下文工程",
+      "编码Agent",
+      "循环工程",
+      "软件工厂",
+      "主动压缩"
+    ],
+    "title": "Context engineering with Dex Horthy - YouTube",
+    "totalScore": 80,
+    "url": "https://www.youtube.com/watch?v=Usufn8IQJgw"
+  },
+  "payloadHash": "sha256:6c862240de941c8fb0bb5edf55d186b7b7da131ea2d090222156c2f845befa58",
+  "refs": {},
+  "revisionId": "sha256:768b7f332cf41e31ee1fca052b7523c8d8f85a9c34e274d9de58b18a592adc49",
+  "schemaVersion": 1,
+  "updatedAt": 1789696164243
+}

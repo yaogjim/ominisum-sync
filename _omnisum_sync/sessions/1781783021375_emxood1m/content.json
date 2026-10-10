@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781783021375,
+  "entityType": "session-content",
+  "id": "1781783021375_emxood1m",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Xudong Han</strong></header><div class=\"tw-body\">Claude Code 昨天推了一个低调但很实用的更新，有三个改动值得专门注意。<br><br>第一个是嵌套 sub-agent：现在 sub-agent 可以在运行时自己再派生子 agent。之前需要在外层显式控制 Agent 树的深度，现在可以让 Agent 自己判断什么时候值得再下放，这对「大任务拆多层级、多 Agent 并行」的 Harness 设计很有用。<br><br>第二个是 /cd 命令：现在可以在不重建 prompt cache 的情况下直接切换工作目录。对于在多个项目之间来回切换的工作流，这意味着不需要再启动新会话，省 token，省时间，历史上下文也保留了。/cd 还会把当前会话重定位到新目录的项目存储，--resume 和 --continue 都能正确找到它。<br><br>第三个是 Tool(param:value) 权限语法：可以在权限规则里精确匹配工具的输入参数，比如 Agent(model:opus) 专门拦截调用 Opus 的子 Agent。对需要精细控制权限边界的生产 Agent 系统，这是一个很实用的新能力。<br><br>同时修复了中途连接断开时原始错误暴露、WSL2 下鼠标滚轮失效、sandbox glob 问题等稳定性 bug。<br><br>Claude Code 对复杂 Agent 编排的支持越来越好啦。<br><a dir=\"ltr\" href=\"https://code.claude.com/docs/en/changelog\" rel=\"noopener noreferrer nofollow\" target=\"_blank\" role=\"link\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-1wvb978 r-1loqt21\" style=\"color: rgb(29, 155, 240);\"><span aria-hidden=\"true\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-qlhcfr r-19qo34d r-qvk6io r-orgf3d r-u8s1d\">https://</span>code.claude.com/docs/en/change<span aria-hidden=\"true\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-qlhcfr r-19qo34d r-qvk6io r-orgf3d r-u8s1d\">log</span><span aria-hidden=\"true\" class=\"css-1jxf684 r-bcqeeo r-1ttztb7 r-qvutc0 r-poiln3 r-lrvibr\">…</span></a></div></article>",
+    "pageContent": "Xudong Han: Claude Code 昨天推了一个低调但很实用的更新，有三个改动值得专门注意。 第一个是嵌套 sub-agent：现在 sub-agent 可以在运行时自己再派生子 agent。之前需要在外层显式控制 Agent 树的深度，现在可以让 Agent 自己判断什么时候值得再下放，这对「大任务拆多层级、多 Agent 并行」的 Harness 设计很有用。 第二个是 /cd 命令：现在可以在不重建 prompt cache 的情况下直接切换工作目录。对于在多个项目之间来回切换的工作流，这意味着不需要再启动新会话，省 token，省时间，历史上下文也保留了。/cd 还会把当前会话重定位到新目录的项目存储，--resume 和 --continue 都能正确找到它。 第三个是 Tool(param:value) 权限语法：可以在权限规则里精确匹配工具的输入参数，比如 Agent(model:opus) 专门拦截调用 Opus 的子 Agent。对需要精细控制权限边界的生产 Agent 系统，这是一个很实用的新能力。 同时修复了中途连接断开时原始错误暴露、WSL2 下鼠标滚轮失效、sandbox glob 问题等稳定性 bug。 Claude Code 对复杂 Agent 编排的支持越来越好啦。 https://\ncode.claude.com/docs/en/change\nlog\n…\n\n链接:\n- https://code.claude.com/docs/en/changelog"
+  },
+  "payloadHash": "sha256:3b61e2d71172a37b70e79ae1263d051e085c15a69f4ac23dff9cb8f66b18a214",
+  "refs": {},
+  "revisionId": "sha256:d4c5995a25d54a7b683f3efc07b5f79913fa88c2b75dd3c70017ed08bdba7115",
+  "schemaVersion": 1,
+  "updatedAt": 1781783617478
+}

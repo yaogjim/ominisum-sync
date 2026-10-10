@@ -1,0 +1,62 @@
+{
+  "createdAt": 1790672315688,
+  "entityType": "session",
+  "id": "1790672315688_7elusco0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需购买二手车，可在交易前请专业人员检查车辆可读取的里程数据是否一致。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1790672334059,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 2,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "二手车里程篡改的车载诊断核查",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "文章指出，车辆的里程相关数据可能不只出现在仪表盘，也可能存在于其他控制单元。"
+    ],
+    "oneHighValuePoint": "核对不同控制单元的数据，可作为排查仪表盘里程异常的一项线索，而非单独的可靠结论。",
+    "oneLineReview": "提供了一个购车前的检查方向，但将诊断设备的能力说得过于确定，证据不足。",
+    "primaryCategory": "二手车购买",
+    "rating": "D",
+    "rejectReason": "与核心关注方向关联较弱，且缺少车型适用条件、操作细节和可核验证据。",
+    "retentionDecision": "低优先级处理；有购车需求时可作为待核实的检查提示",
+    "secondaryCategories": [
+      "消费风险防范",
+      "汽车诊断"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章建议购买二手车前使用车载诊断设备，或请专业人员检查不同控制单元记录的里程是否一致，并查看故障信息，以防范里程篡改。文中未提供具体车型案例，也未说明不同设备的读取能力和方法局限。",
+    "tags": [
+      "二手车",
+      "里程篡改",
+      "OBD2",
+      "车载诊断"
+    ],
+    "title": "Mehdi (e/λ): conseil si vous souhaitez acheter une voiture d’occasion sans vous faire avoir p…",
+    "totalScore": 36,
+    "url": "https://x.com/BetterCallMedhi/status/2104638262229000351"
+  },
+  "payloadHash": "sha256:801c5722310d670cacf5933d2c7dcba2eb4639acb590cf9fd0bf1b494b57c926",
+  "refs": {},
+  "revisionId": "sha256:378d1a0c0734e5baa275d12679370ca00c46ac4ac4d028ecc49d193b99631ebe",
+  "schemaVersion": 1,
+  "updatedAt": 1790672334103
+}

@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789636315775,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1789636315775",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# AI 编程的新瓶颈：产出激增，但质量控制跟不上\n\nAI Agent 提高了代码、实验和文档的生成速度，却也制造出大量冗余、重复实现和行为不一致。作者基于近两个月的研究与开发实践认为：长期项目不能只追求生成效率，必须把可复现性、架构约束和人工 Review 纳入流程，否则质量会快速恶化。\n\n## 研究成果必须脱离 AI 上下文\n\n复杂研究任务需要先拆解，关键步骤则应固化为可重复运行的脚本，并记录运行方式和配置。重要结论不能只存在于 AI 对话中，因为上下文会丢失或失效；只有落到代码和配置里，结果才能被复查、复现与持续迭代。\n\n## 生成越快，代码冗余和不一致越严重\n\n在桌面端、CLI、MCP 等多种入口共同参与开发时，AI 容易重复造轮子，甚至为简单逻辑增加无谓抽象，最终造成不同模块行为不一致。对于长期维护的工程，团队需要持续识别死代码、重复代码、偏离架构等 “坏味道”，并通过重构恢复一致性。\n\n## 人的注意力成为真正稀缺资源\n\n引用观点指出，当 Agent 每天生成大量 PR、Issue、实验和 Review 结果时，瓶颈已从 “写不完” 转向 “看不过来”；若仍要求人工逐行检查，AI 的产能最终会被 Review 带宽锁死。\n\n作者目前仍认为人工检验最有效。评论中的可行补充是建立两道防线：先用 CI 自动检测死代码、重复代码和覆盖率，再由人重点审查架构、关键行为与无谓抽象。AI 编程的核心挑战正从代码生成，转向可验证、可治理的交付体系。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1789636315775,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3972ef56c6cc4b008c1826f1db6cee63e70148cb82c9ca3f6bb987cc1e1baf37",
+  "refs": {
+    "sessionId": "1789533397307_nsqo22kd"
+  },
+  "revisionId": "sha256:2d7162d8e1c6014ce94c0cb3dbb56ea10c96d3eb795ce7fbdfebd487c27073c0",
+  "schemaVersion": 1,
+  "updatedAt": 1789636315775
+}

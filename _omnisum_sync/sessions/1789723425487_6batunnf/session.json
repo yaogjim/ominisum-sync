@@ -1,0 +1,66 @@
+{
+  "createdAt": 1789723425487,
+  "entityType": "session",
+  "id": "1789723425487_6batunnf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估最低工资政策时，分别统计在岗者工资、边缘劳动者就业率及后续技能积累。",
+      "将“先前条件—相对工资—就业与技能调整”绘制为因果链，并为每个环节寻找可验证证据。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1789723455254,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 3,
+      "relevance": 4,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "工资下限与财富转移的因果错配",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "论述高度重复且缺乏数据、案例和可靠来源，没有形成独特而可验证的知识资产。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "政策的可见受益者与因价格变化而被排除的人群可能不同，评估时需要同时纳入。",
+      "工资既可以被视为收入结果，也可以被视为传递生产率、稀缺性和机会成本的相对信号。",
+      "短期工资变化不能单独证明长期福利改善，还需考察就业进入、替代效应和人力资本积累。"
+    ],
+    "oneHighValuePoint": "评估工资政策时不应只观察在岗者的即时收益，还应追踪未能进入就业市场者的机会损失与长期技能积累。",
+    "oneLineReview": "提出了区分症状与原因的合理提醒，但论证抽象重复，无法支撑其强烈的政策结论。",
+    "primaryCategory": "经济政策评论",
+    "rating": "D",
+    "rejectReason": "文章以抽象术语反复陈述政策压制价格信号的判断，缺少概念界定、适用条件和实证检验。",
+    "retentionDecision": "核心观点可快速识别，但缺少证据与可复用方法，不建议保留",
+    "secondaryCategories": [
+      "因果推理",
+      "劳动力市场"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章主张最低工资和转移支付把低工资这一结果误当成可直接操纵的原因，进而遮蔽价格信号、阻断就业与技能积累反馈，并扩大弱势劳动者差距；但全文缺少数据、案例及对反方条件的严谨检验。",
+    "tags": [
+      "最低工资",
+      "转移支付",
+      "价格信号",
+      "因果错配",
+      "技能积累"
+    ],
+    "title": "财富转移政策与价格下限中因果关系的错配",
+    "totalScore": 31,
+    "url": "https://x.com/powerpig/status/2087267937153614113"
+  },
+  "payloadHash": "sha256:7f073208c4691e058152997f9638b460e24d3a0952602905f5c011af9f086386",
+  "refs": {},
+  "revisionId": "sha256:77cd664e891eceb63ac65d368e16c9d7ac2064f18732b8286d10a1e8194f0403",
+  "schemaVersion": 1,
+  "updatedAt": 1789723455309
+}

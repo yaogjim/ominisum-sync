@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785376970640,
+  "entityType": "session",
+  "id": "1785376970640_0u5ikewa",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "采集团队分时Token需求、峰值并发、缓存率和任务完成时间，建立真实负载曲线。",
+      "用自身编码任务分别测试候选API与自托管组合，记录成功率、任务时长、吞吐和单位成功任务成本。",
+      "按不同利用率情景核算购买、租赁和API成本，并将电力、维护、隐私及可靠性要求纳入最终决策。"
+    ],
+    "archiveReason": "提供了基于编码任务的多模型、多硬件并发测试，并形成了可复用的自托管评估指标和采购判断思路。",
+    "classifiedAt": 1785377517683,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI编程推理自托管容量与成本",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "aistack.imec-int.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "评估编码Agent推理系统应同时观察任务成功率、端到端任务时间、聚合吞吐和并发水平，不能只看每秒Token数。",
+      "GPU成本模型应按峰值容量、全天利用率和实际任务成本计算；低利用率时租赁或API可能优于购买。",
+      "更大、更高质量的模型可能在更强硬件上反而提供更小的Token池，推理引擎、KV缓存和推测解码也会导致高并发吞吐崩塌。"
+    ],
+    "oneHighValuePoint": "自托管是否划算主要取决于真实工作负载利用率及模型、硬件、推理引擎的匹配，而不是开发者人数或单纯的每Token价格。",
+    "oneLineReview": "实测数据和决策框架较有价值，但具体结论受模型版本、样本规模、推理配置及基准数据污染风险限制。",
+    "primaryCategory": "AI基础设施与Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，重点保留容量测试方法、利用率阈值和成本决策框架",
+    "secondaryCategories": [
+      "AI编程工具",
+      "技术成本与采购决策"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以64项SWE-Bench Pro任务测试多种模型与GPU组合，比较并发容量、任务时长、解决率及购买、租赁和API成本，强调应按实际负载、利用率、质量与隐私需求决定是否自托管。",
+    "tags": [
+      "LLM自托管",
+      "GPU推理",
+      "编码Agent",
+      "并发容量",
+      "成本分析"
+    ],
+    "title": "aistack - How many devs can you fit on a GPU?",
+    "totalScore": 83,
+    "url": "https://aistack.imec-int.com/blog/gpu-self-hosting"
+  },
+  "payloadHash": "sha256:8314785866620a97ece28c7e586833fb3e665e2f043fc96c1b6fb0de6f8f1151",
+  "refs": {},
+  "revisionId": "sha256:fc0bc621f7cefec18eebfca5ac909f19b1781fb7e815a46dc33411024ec6f72f",
+  "schemaVersion": 1,
+  "updatedAt": 1789694398440
+}

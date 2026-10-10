@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783038613774,
+  "entityType": "message",
+  "id": "1783038613773_kq55gjqi",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 编码代理Harness框架七讲\n\n**评级**: B (66分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程\n**次类别**: Coding Agent, 软件架构, 上下文工程\n**标签**: #harness #coding agent #工具契约 #上下文管理 #子代理\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 概念框架完整且有启发，但内容冗长重复、翻译痕迹和AI生成痕迹明显，证据支撑较弱。\n**核心高价值点**: 任何需要可靠性的能力都应放在 harness 中，而不是依赖模型自觉遵守提示词。\n\n### 摘要\n文章以七篇合集形式讨论 coding agent harness，强调模型之外的运行时框架才是产品核心，涵盖陈旧读取、工具契约、斜杠命令、Markdown上下文、上下文投影和子代理等主题。\n\n### 知识要点\n- coding agent 的核心不只是模型，而是包含工具生命周期、权限、文件状态、上下文投影和诊断能力的 harness\n- 转录文本不等于文件真相，harness 需要维护文件基线、哈希、mtime、读取范围和新鲜度状态\n- 工具调用应被视为模型提出的 proposal，必须经过 schema、路径、安全、权限、输出裁剪和状态更新等契约校验\n- 斜杠命令属于用户控制平面，应在模型调用前由输入路由器处理，而不是作为普通 prompt 发送给模型\n- AGENTS.md 和 SKILL.md 都是 Markdown，但应按不同角色和加载时机进入上下文\n- 上下文管理不是无限追加历史，而是把完整日志投影为下一轮模型调用所需的有界工作集\n- 子代理本质上是由工具调用启动的子运行时，需要独立上下文、角色、权限、状态和结果投影\n\n### 行动项\n- 设计 coding agent 时，为工具调用增加 schema 校验、路径安全、权限策略、输出裁剪和状态更新流程\n- 为文件读写实现 file state record，记录读取范围、哈希、mtime、大小和新鲜度，避免基于陈旧内容编辑\n- 将 /status、/reset、/tools、/audit、/doctor 等命令放入本地输入路由器处理，避免进入模型上下文\n- 区分 durable log、model-visible context 和 app state，避免把完整历史直接追加进 prompt\n- 为 AGENTS.md、SKILL.md 设计不同的发现、作用域、加载和提示注入策略\n- 使用子代理前明确其类型是 fresh、forked 还是 partial fork，并限定任务、工具、权限和返回证据格式\n\n### 存档判定\n归档: 是 — 原因: 包含较完整的 coding agent harness 设计框架，包括文件状态、工具契约、输入路由、上下文投影和子代理等可复用概念\n删除: 否\n留存决策: 短期参考后可归档，作为编码代理框架设计的概念清单保留",
+    "role": "assistant",
+    "timestamp": 1783038613774,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:a92ae66e64f213925ecc27b07dda770b2d0ba0b4110b0ed4826e25e6c5bbe37b",
+  "refs": {
+    "sessionId": "1782991679526_u62bfsy2"
+  },
+  "revisionId": "sha256:93a3aec5e1c65df0781309c16a61b5d518c9520f31a923c8a7573ea387557a7d",
+  "schemaVersion": 1,
+  "updatedAt": 1783038613774
+}

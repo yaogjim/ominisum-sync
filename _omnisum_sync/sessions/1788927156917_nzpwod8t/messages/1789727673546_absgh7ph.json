@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727673545,
+  "entityType": "message",
+  "id": "1789727673546_absgh7ph",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# GPT-6 绘制无人机飞控 PCB：MCP 更省算力，结果仍待验证\n\n作者对比了两种让 GPT-6 Astra 自动绘制 FPV 无人机飞控 PCB 的方式：直接操作嘉立创 EDA，或通过 MCP 接入 KiCad。两者都耗时三个多小时，但 KiCad＋MCP 的 Token 消耗更低，且初版未做调整；不过文章未提供电气验证、可制造性检查等结果，尚不能仅凭图片判断哪块板更好。\n\n## 两种方式：操作界面与调用专业工具\n\n- **Computer Use**：GPT-6 通过 Codex 直接打开并操作嘉立创 EDA，未使用 MCP 或 Skill。\n- **MCP＋KiCad**：在 Codex 和 KiCad 中安装对应 MCP，让模型通过标准化工具接口操作 KiCad。\n\n两次任务均使用“高”思考强度，未开启最高档 Ultra。\n\n## 时间接近，MCP 方案消耗更低\n\n两种方案总耗时都在三个多小时，MCP＋KiCad 略快。Token 统计包含缓存输入，由 Codex 提供：\n\n- 嘉立创 Computer Use：初次约 **6594 万 Token**；修复排针干涉约 **578 万**；调整三个接口朝向约 **525 万**，合计约 **7700 万**。\n- KiCad＋MCP：约 **5200 万 Token**，作者未进行后续调整。\n\n## MCP 显示出效率优势，但不能等同于质量更高\n\n直接操作 GUI 时出现排针干涉和接口方向错误，需要返工；MCP 方案没有被作者继续修改，显示结构化工具调用可能比模拟人类点击更稳定、更节省上下文。不过，“未调整”不代表设计已通过规则检查、信号完整性或实际打样验证。现有信息更能说明工作流效率差异，不能充分证明最终 PCB 的工程质量优劣。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727673545,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:55006ed1b8f232eaea6a57ad8d975739bb3e5d3cf07bc26c51049fc8209bd59a",
+  "refs": {
+    "sessionId": "1788927156917_nzpwod8t"
+  },
+  "revisionId": "sha256:b22e7bd3a60c659ee142b1d6c0a77c4db8bb5046b3537f65c1c095148807c94e",
+  "schemaVersion": 1,
+  "updatedAt": 1789727673545
+}

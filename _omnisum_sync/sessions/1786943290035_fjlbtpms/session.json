@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943290035,
+  "entityType": "session",
+  "id": "1786943290035_fjlbtpms",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在在线Playground中编写由立方体、球体和布尔运算组成的最小模型，验证LuaCAD语法。",
+      "通过cargo安装luacad，并使用info、render和convert命令检查模型及导出结果。",
+      "选择一个现有参数化模型，分别导出3MF、STL和SCAD，验证多对象保留及格式转换差异。"
+    ],
+    "archiveReason": "包含具体语法、安装命令、CLI流程、格式差异和运行架构，可作为程序化建模与模型转换的工具参考。",
+    "classifiedAt": 1786943321005,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 5,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "LuaCAD参数化建模与导出",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "luacad.ad-si.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "LuaCAD在Rust引擎中嵌入Lua 5.4，可通过Manifold直接计算CSG，也可生成OpenSCAD代码。",
+      "浏览器版本通过WebAssembly在本地运行，无需安装且不会上传模型数据。",
+      "脚本返回的每个值会成为独立的3MF对象，而不支持多对象的其他导出格式会将其合并为单一网格。"
+    ],
+    "oneHighValuePoint": "LuaCAD可用Lua脚本直接执行CSG建模并导出多种格式，为参数化模型生成和自动化转换提供了可编程管线。",
+    "oneLineReview": "这是一份信息紧凑且可直接试用的工具说明，但主要依据项目自述，通用方法论和外部证据有限。",
+    "primaryCategory": "参数化CAD",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为脚本化CAD工具参考存档，有建模自动化需求时查阅",
+    "secondaryCategories": [
+      "软件开发工具",
+      "3D打印"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍LuaCAD的架构、Lua参数化建模语法、安装方式和CLI用法，并列出浏览器运行、BOSL2支持、文字与模型导入、渲染及多种网格格式导出能力。",
+    "tags": [
+      "Lua",
+      "参数化建模",
+      "CSG",
+      "WebAssembly",
+      "模型格式转换"
+    ],
+    "title": "LuaCAD",
+    "totalScore": 62,
+    "url": "https://luacad.ad-si.com/"
+  },
+  "payloadHash": "sha256:14da98260a1103e276e7d62997c5d65b09832c89be643def0fae226a92bb0114",
+  "refs": {},
+  "revisionId": "sha256:8fac11d818f7e53a69186bbd68d0f3310bcd5550297677794587d69ea689d1b4",
+  "schemaVersion": 1,
+  "updatedAt": 1789728028424
+}

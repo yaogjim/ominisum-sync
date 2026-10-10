@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726043338,
+  "entityType": "message",
+  "id": "1789726043338_gr3va1ul",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nOneCamp 是一套自托管的团队协作平台，主打把聊天、文档、任务、视频和 AI 智能体放在同一服务器上，并用实时权限检查与防篡改审计限制 AI 越权。\n\n## 关键内容\n\n- **AI 权限跟随具体用户**：智能体、API 令牌和外部客户端只能执行授权者本来能做的事；权限在每次调用时重新检查，员工离职或被移出项目后，相关访问会立即失效。\n- **操作前先留痕**：允许和拒绝的调用都会记录责任人及原因；审计写入失败，操作便不执行。日志采用哈希链，事后修改、删除或插入可被发现。\n- **数据与模型可自行控制**：支持 Docker 自托管、Ollama 本地模型和“仅本地”模式，也可连接 OpenAI、Anthropic 等服务并先做个人信息脱敏。\n- **定位是一体化替代品**：整合聊天、文档、任务、表格、白板、视频、日历、SSO 与 SCIM，宣称一次购买、不限用户；但只有前端明确开源，后端以许可证二进制提供。\n\n## 通俗解读\n\n核心不是承诺“AI 会守规矩”，而是从技术上让它**无权限就做不了、做之前必须留记录**。这对需要审计和人员离职管控的团队有吸引力。**值得需求匹配者细读**，但原文是产品销售页，安全性、稳定性、具体价格及“不限用户”等说法仍应通过演示、代码和合同核实。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726043338,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:28160663e86768e0cd8b9f3cae8cbc72bccd8aaedef55b58c240bc93749437ff",
+  "refs": {
+    "sessionId": "1787714289171_f715of37"
+  },
+  "revisionId": "sha256:f9a3f2d155fe79be28aad0ca29686e1418aff6fffd3a6cf1c4bad30d227c8e13",
+  "schemaVersion": 1,
+  "updatedAt": 1789726043338
+}

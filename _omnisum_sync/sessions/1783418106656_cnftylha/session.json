@@ -1,0 +1,89 @@
+{
+  "createdAt": 1783418106656,
+  "entityType": "session",
+  "id": "1783418106656_cnftylha",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在适合缓存的Workers项目中测试加入\"cache\": { \"enabled\": true }并设置Cache-Control响应头",
+      "为SSR页面设计max-age与stale-while-revalidate窗口，区分高频更新和低频更新内容",
+      "对带认证的API评估网关Worker认证、去除Authorization、通过ctx.props传递userId或tenantId的缓存模式",
+      "为可变内容增加Cache-Tag，并在写入路径中调用ctx.cache.purge实现精确失效",
+      "通过Workers Observability观察HIT、MISS、BYPASS、UPDATING比例，排查缓存命中率低的原因"
+    ],
+    "archiveReason": "文章提供了Workers Cache的新能力说明、配置方式、架构模式、缓存失效、计费和框架集成信息，具备较高实践参考价值",
+    "byline": "Dan Lapid Connor Harwood",
+    "classifiedAt": 1783418627069,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Workers Cache发布解析",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "blog.cloudflare.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "BLOG-3262 image1",
+        "caption": "",
+        "height": 454,
+        "id": "img-8",
+        "nearbyText": "",
+        "resolvedUrl": "https://cf-assets.www.cloudflare.com/zkvhlag99gkb/2Xyk1rkPl9p44y48mdoPk/2178d252281c0165e03e7cb9245a4c3a/BLOG-3262_image1.png",
+        "role": "figure",
+        "score": 85,
+        "src": "https://cf-assets.www.cloudflare.com/zkvhlag99gkb/2Xyk1rkPl9p44y48mdoPk/2178d252281c0165e03e7cb9245a4c3a/BLOG-3262_image1.png",
+        "width": 1999
+      }
+    ],
+    "knowledgePoints": [
+      "启用Workers Cache只需在wrangler配置中加入cache.enabled，并通过HTTP Cache-Control、Cache-Tag等响应头控制缓存策略",
+      "stale-while-revalidate可在缓存过期后先返回旧内容，再后台刷新，显著降低SSR页面的尾部延迟",
+      "Vary头允许同一URL按Accept、Accept-Language等请求头缓存多个表示，适合内容协商场景",
+      "ctx.props会成为Worker间调用的缓存键组成部分，可用于多租户或按用户隔离缓存",
+      "缓存可按entrypoint启停，适合将认证、路由、数据读取、昂贵渲染拆成不同阶段并在合适位置缓存",
+      "计费上缓存命中不计CPU时间，但仍按标准Workers请求计费"
+    ],
+    "oneHighValuePoint": "Workers Cache不仅是外部CDN缓存，还能位于Worker entrypoint之间，使应用内部阶段可按入口粒度进行缓存、隔离和失效管理。",
+    "oneLineReview": "一篇信息量高、可直接落地的官方发布文，虽有营销表达但对边缘Serverless缓存架构很有参考价值。",
+    "primaryCategory": "云计算与边缘计算",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为Cloudflare Workers缓存架构和边缘应用设计的参考资料",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Serverless架构",
+      "Web性能优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Cloudflare Workers Cache：在Worker前增加分层缓存，通过Wrangler配置和标准Cache-Control控制缓存，支持SWR、Vary、标签清理、ctx.props多租户隔离、entrypoint级缓存与框架集成，可降低SSR应用延迟和CPU成本。",
+    "tags": [
+      "Cloudflare Workers",
+      "边缘缓存",
+      "Serverless",
+      "HTTP Cache",
+      "stale-while-revalidate"
+    ],
+    "title": "Your Worker can now have its own cache in front of it",
+    "totalScore": 78.5,
+    "url": "https://blog.cloudflare.com/workers-cache/?utm_campaign=cf_blog&utm_content=20260703&utm_medium=organic_social&utm_source=twitter"
+  },
+  "payloadHash": "sha256:a0ee8c3027f8b63daa724c9de8f8eee70c6179f6e7ad4375839783fad5191b83",
+  "refs": {},
+  "revisionId": "sha256:33e0c6be0cdc225b341a3fe6309204a7ffa4431fb400b755ecbdd40e8e72cd9c",
+  "schemaVersion": 1,
+  "updatedAt": 1789695798218
+}

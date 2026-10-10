@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789533103650,
+  "entityType": "session",
+  "id": "1789533103650_osrl1hgg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在选定嵌入式芯片前，尽早运行完整VIO链路并测量前端、后端的内存和实时性，而非只验证特征跟踪。",
+      "为设备建立统一的浏览器刷写、标定、配置和数据记录流程，减少用户对本地开发环境的依赖。",
+      "将逐板标定、质量检查、振动测试和异常数据回收固化为首批量产的标准流程。"
+    ],
+    "archiveReason": "完整覆盖从算法原型、芯片选型和硬件迭代，到标定工具、质量控制及首批交付的全过程，具有较强的工程复用价值。",
+    "classifiedAt": 1789533133086,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "微型SLAM相机的产品化历程",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "嵌入式VIO的瓶颈不仅在特征跟踪，还包括后端估计器的内存占用、实时计算能力以及相机与IMU的标定质量。",
+      "回环检测只能在可靠视觉匹配后修正累计漂移，路径回到起点并不能证明整条轨迹具有真实精度。",
+      "WebAssembly、WebUSB和设备自带网页界面可将刷写、标定、配置及数据采集整合到浏览器，降低硬件交付后的使用门槛。"
+    ],
+    "oneHighValuePoint": "产品化不只是让VIO实时运行，还必须把刷写、标定、状态诊断、数据回收和逐板质检一起设计成可重复流程。",
+    "oneLineReview": "这是一个信息扎实的嵌入式视觉产品化案例，但性能证据主要来自作者演示，缺少标准化精度基准。",
+    "primaryCategory": "产品开发与技术实现",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并长期保留，作为嵌入式算法产品化与小批量硬件交付案例",
+    "secondaryCategories": [
+      "嵌入式视觉",
+      "硬件产品化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章复盘Mighty从ESP32内存受限原型迭代为10克板载VIO相机的过程，涵盖芯片迁移、回环检测、标定与浏览器工具、硬件量产、质检及真实场景限制。",
+    "tags": [
+      "视觉惯性里程计",
+      "嵌入式SLAM",
+      "硬件迭代",
+      "浏览器工具链",
+      "量产测试"
+    ],
+    "title": "二十个月交付一台微型 SLAM 相机",
+    "totalScore": 77,
+    "url": "https://x.com/_asadmemon/status/2099853289907196153"
+  },
+  "payloadHash": "sha256:7ccb2cf030312e90196f75eb437672c04661df8bd49fbf14af8a93689b3ada66",
+  "refs": {},
+  "revisionId": "sha256:0363e49736ae479e9cf9ccdfc146fc631bc21a0b451011ec662e423832b7ac0f",
+  "schemaVersion": 1,
+  "updatedAt": 1789693840874
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784694950347,
+  "entityType": "message",
+  "id": "1784695077551_f8tqt8h4",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 主旨概括\n\nHuntScreens 虽然实时访问量较高，但作者分析后发现，可能 **50% 以上来自 AI 爬虫或 Agent**。面对 AI 改变内容获取和流量分配方式的趋势，作者决定主动拥抱 Agent，同时担忧网站广告收入会因此下降。\n\n## 1. 高访问量背后的 AI 流量\n\n- 作者最初为 HuntScreens 的实时访客数量感到高兴。\n- 深入分析后发现，访问者中可能有 **50% 以上是 AI 爬虫或 Agent**，而非真实用户。\n- 作者认为，内容型网站未来可能普遍遇到类似问题。\n\n## 2. 从抵抗转向主动适配\n\n- 作者认为 AI Agent 获取网站内容是大势所趋，单纯抵抗意义不大。\n- HuntScreens 已支持 **AI Agent 直接提交新产品**，用户以后无需打开网站即可完成提交。\n- 后续还计划支持 Agent 直接读取网站每日更新的内容。\n\n## 3. 最大影响是广告收入下降\n\n- 过去用户需要进入网站浏览内容并产生广告点击。\n- 现在很多信息获取和交互直接发生在 **AI Chat** 中，用户不再访问原网站。\n- 这可能导致网站流量和广告收入减少，但作者认为只能选择适应和拥抱变化。\n\n## 4. x402 协议提供付费读取方案\n\n- Cloudflare 近期支持了 **x402 协议**。\n- 其基本机制是：当 Agent 请求读取网站数据时，网站可以先要求其付费，支付成功后再提供完整数据。\n- 这为内容网站向 AI Agent 收费提供了可能，但作者认为该模式的普及仍有较大难度，只能边走边观察。\n\n## 5. 热门回复中的补充观点\n\n- 有站长表示，自己的访问量中估计 **90% 都是 AI 爬虫**，且大量流量来自新加坡。\n- 有回复指出，如果网站部署在 Cloudflare 上，可以通过详细归因数据区分爬虫和真实用户请求。\n- 对于想做类似产品的人，作者建议不要再做单纯的 **Listing（产品收录）网站**，而应考虑帮助用户提升其产品在 AI 搜索或对话中的曝光。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784694950347,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:475bbbd5060721798a446d620492b1ae9d35705ade9fcbd138be9511b0ae8d9a",
+  "refs": {
+    "sessionId": "1784695077272_xy3fddjv"
+  },
+  "revisionId": "sha256:70504c3ac2c418ce81e2ce52b07ec740222a26452b4ced125034759942a1eff3",
+  "schemaVersion": 1,
+  "updatedAt": 1784694950347
+}

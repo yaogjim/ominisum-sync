@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789704455008,
+  "entityType": "message",
+  "id": "summary_default_1789704455008",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者认为，与其争论 “AI 能不能设计硬件、能否取代工程师”，不如结合项目规模和失败代价，判断 AI 能完成哪些环节、哪里不可靠，以及如何通过测试和迭代发现错误。\n\n## 关键内容\n\n- AI 辅助设计已产生实际成果：一块 PCB 能正常通电，3D 打印外壳也能组装；但外壳的电源开孔位置错误，说明 “能生成” 远不等于 “已完成”。\n- ESP32-S3 飞控板仍未验证：尚未到货，PX4 固件、传感器、振动和飞行性能都没测试，因此不能据此宣称 AI 已能做好飞控硬件。\n- 对 USB 布线的部分批评合理，布局确实可更整洁；但作者实测差分线长度差约 1.6—1.9 毫米，对 12 Mbps 全速 USB 尚不足以证明它无法工作。\n- AI 的现实价值，是帮助个人更快做出第一版；若要批量销售或用于汽车、医疗、航空等高风险场景，仍需专业审查、可靠性测试和失效分析。\n\n## 通俗解读\n\n关键不是作品 “由 AI 做”，而是它用在什么地方、出错后代价多大。个人原型返工一次可能可以接受，量产或安全关键产品则不能只看 “能通电”。**值得细读**：文章没有神化 AI，也没有因局部缺陷全盘否定，适合想了解 AI 辅助硬件实际边界的人。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1789704455008,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bbce35e0072935b98bd0379605977a4180290a02612e3a4ffd0b7d93d5f3109c",
+  "refs": {
+    "sessionId": "1789703285747_5y1vb1c0"
+  },
+  "revisionId": "sha256:e481e0005d911dc332cfbc3b910ff245915396ef791d2ac129ef7979def95d41",
+  "schemaVersion": 1,
+  "updatedAt": 1789704455008
+}

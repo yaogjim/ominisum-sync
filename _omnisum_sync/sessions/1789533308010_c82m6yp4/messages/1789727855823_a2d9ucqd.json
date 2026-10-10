@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727855823,
+  "entityType": "message",
+  "id": "1789727855823_a2d9ucqd",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Spectrum UI：让 AI Agent 直接调用 250+ 动画 React 组件\n\nSpectrum UI 是一个面向 AI 辅助开发的动画 React 组件库，核心价值不只是提供现成 UI，而是通过 MCP 接入 AI 编程工具，让 Agent 能理解、安装并组合组件，降低高质量动效界面的开发门槛。\n\n## 一次配置，AI 即可调用组件\n\n项目提供 Spectrum UI MCP（Model Context Protocol，连接 AI 与外部工具、资源的标准协议）。配置后，开发者可以用自然语言指令，让 AI 在项目中安装和关联 250 多个动画组件，减少手动检索、复制和适配代码的过程。\n\n组件库基于 shadcn/ui、Tailwind CSS、Framer Motion 和 Next.js 构建，与当前主流 React 前端技术栈兼容，适合快速搭建带动效的网页产品。\n\n## 组件命名决定 AI 生成的准确度\n\n热门讨论指出，与 AI 沟通 UI 时，使用准确的组件名称比“弹窗”“闪光加载”等模糊描述更容易一次生成符合预期的结果。Component Gallery 等网站可帮助开发者识别和学习经典 UI 组件名称。\n\n这也说明，AI UI 开发不仅依赖模型能力，还依赖标准化的组件体系、明确的设计语言和可被机器调用的接口。对于非 React 平台，作者表示曾尝试让 AI 将相关动效转换为 SwiftUI 原生实现，效果尚可，但仍需验证具体适配质量。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727855823,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:019d4acd09bf19de746c5788ed9c4b046827c2f7f71f9ad776a6484ef388a8fd",
+  "refs": {
+    "sessionId": "1789533308010_c82m6yp4"
+  },
+  "revisionId": "sha256:e95163bbce7c49ca2e173de6b10046a1df9c6ce1895e23136d17f13323a9fad8",
+  "schemaVersion": 1,
+  "updatedAt": 1789727855823
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696254504,
+  "entityType": "message",
+  "id": "1789696254503_l7osiaz4",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nHerdr 是一个面向多编程智能体的终端协调层：可在持久化窗格中并行启动测试、审查等任务，并通过脚本读取输出、判断状态和处理交互。\n\n## 关键内容\n\n- **分工明确**：workspace/tab/pane 负责终端布局，`pane` 命令运行测试、服务等普通进程，`agent` 命令管理受支持的编程智能体。启动 agent 前必须先有空闲 pane，`agent start` 不会自动创建或拆分窗口。\n- **支持自动编排**：脚本可给 agent 提交任务，等待 `idle`、`done`、`blocked` 等状态，再读取结果；普通测试则用 `pane wait-output` 按文本或正则等待。创建、移动 pane 后应读取命令返回的 JSON ID，不要自行推测。\n- **状态并非绝对可靠**：部分 agent 通过生命周期插件上报状态，部分依赖终端画面识别；`unknown` 不代表成功，少见的授权提示还可能被误判为空闲。全屏程序的旧输出也可能因“备用屏幕”而无法读取。\n- **会话可持续、可远程**：断开客户端后任务继续运行，可重新连接；既可先 SSH 到服务器运行，也可用本地 Herdr 作为远程轻客户端。\n\n## 通俗解读\n\n它像“懂一点 agent 状态的 tmux”：不仅保留多个终端，还能告诉你谁在工作、谁等审批、谁已完成。但涉及审批、完成判定或完整输出时，仍应核对实际界面。\n\n**是否值得细读：**若要搭建多 agent 自动测试/代码审查流程，值得重点阅读命令返回值、等待语义和输出限制；只想手动开几个终端则无需细读。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696254504,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7d91f1d125e63e0ddb72d031b405091aa2bc0e47fe0f87f94b20c516cf9822c6",
+  "refs": {
+    "sessionId": "1784702945365_8qoo7a27"
+  },
+  "revisionId": "sha256:0662a2f233da909d3b82613ad471ba4f6295569b53932c0e0da7c9ba937a2b03",
+  "schemaVersion": 1,
+  "updatedAt": 1789696254504
+}

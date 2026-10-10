@@ -1,0 +1,65 @@
+{
+  "createdAt": 1782349378693,
+  "entityType": "session",
+  "id": "1782349378693_0sf7927u",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如有PDF转换需求，可访问 pdfitdown.app 试用",
+      "如需自托管或二次开发，可查看 GitHub 仓库评估部署成本"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782350752241,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 2,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "PdfItDown开源PDF转换工具发布",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息价值较低，仅适合作为工具发现线索；若无即时PDF转换或自托管需求，不值得长期保留。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "PdfItDown 是一个支持多种格式转 PDF 的开源库和 Web 应用",
+      "其应用技术栈包含 TanStack、Cloudflare Worker、FastAPI、Docker、Railway、Upstash Redis、OpenTelemetry、Axiom 和 LiteParse"
+    ],
+    "oneHighValuePoint": "提供了开源和可自托管的 PDF 转换工具及 GitHub 链接。",
+    "oneLineReview": "适合作为开源PDF转换工具的发现线索，但缺乏深入技术内容和长期参考价值。",
+    "primaryCategory": "工具资讯",
+    "rating": "D",
+    "rejectReason": "内容主要是产品发布和技术栈罗列，缺少实现细节、评测数据和可复用方法论。",
+    "retentionDecision": "短期查看工具链接后可删除",
+    "secondaryCategories": [
+      "开源项目",
+      "Web应用"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该推文介绍 PdfItDown v3 及其全栈 Web 应用，可将多种文件格式转换为 PDF，并列出前端、后端、认证、分析、限流、可观测性等技术栈，项目开源且支持自托管。",
+    "tags": [
+      "PDF转换",
+      "开源工具",
+      "自托管",
+      "FastAPI",
+      "Cloudflare"
+    ],
+    "title": "Clelia Bertelli (🦙/acc): Convert almost anything to PDF with https://t",
+    "totalScore": 32,
+    "url": "https://x.com/itsclelia/status/2068755897711722961"
+  },
+  "payloadHash": "sha256:46f1f9234a01a68403712baa171cf9b02c52d0ea8aa1f4ca868a4b69addc62f7",
+  "refs": {},
+  "revisionId": "sha256:93ef717ed26254a5cee66fc416167f12759f4f624a1ce61f63e9f83dee669d87",
+  "schemaVersion": 1,
+  "updatedAt": 1782350752837
+}

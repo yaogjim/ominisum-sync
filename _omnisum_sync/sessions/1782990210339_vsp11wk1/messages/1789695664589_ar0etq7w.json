@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695664589,
+  "entityType": "message",
+  "id": "1789695664589_ar0etq7w",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nLangChain 的“动态子代理”让主代理在 JavaScript 解释器中通过循环、分支和并行任务批量调度多个子代理，比逐次调用更适合大规模、可拆分或需要多角度验证的工作。\n\n## 关键内容\n\n- 启用时需配置子代理和 `CodeInterpreterMiddleware`，环境要求 Python ≥ 3.11、`langchain-quickjs` ≥ 0.1.0；该能力仍处于 Beta，接口可能变化。\n- 在提示中使用 **“workflow”**，会引导代理编写编排代码，通过 `task()` 调用子代理；普通表述更适合单次委派。\n- 常见模式包括：分类后交给不同专家、并行处理后汇总、二次验证降低误报、多方案生成与筛选、淘汰赛评选，以及循环搜索直到没有新发现。\n- `task()` 在解释器内部直接派发，不经过常规工具调用流程，因此父代理的逐次审批机制不会自动生效；如需人工批准，应限制或审批解释器的 `eval` 工具。\n\n## 通俗解读\n\n它相当于让主代理先写一段“项目调度脚本”，再把几十项工作同时分给不同助手，最后自动整理结果。优势是批处理更稳定、高效；代价是配置与安全控制更复杂。\n\n**是否值得细读：**如果你正用 Deep Agents 处理批量代码审查、工单分类或高置信度审核，值得细读示例；若只需偶尔调用一个子代理，了解概念即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695664589,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:eeb25a2e5dd04f1805aec4608e39ae1e0bc421c5e67f26d004eb316c620ca4df",
+  "refs": {
+    "sessionId": "1782990210339_vsp11wk1"
+  },
+  "revisionId": "sha256:fe87f6f989425f754f461a6a21e510cc03f190bb9c3dafd73225cf70a310d1d6",
+  "schemaVersion": 1,
+  "updatedAt": 1789695664589
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727570803,
+  "entityType": "message",
+  "id": "1789727570803_e5twcwnw",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 阿里开源代码审查工具：规则系统保确定性，智能体负责推理\n\n阿里巴巴开源了 Open Code Review。据其介绍，该工具已在内部服务数万名开发者、发现数百万个缺陷。核心思路不是把代码审查全部交给大模型，而是让传统程序与 AI 分工，以降低成本并提高结果的准确性和可定位性。\n\n## 混合架构避免让大模型包办一切\n\n确定性代码负责文件覆盖、内容打包、规则匹配和评论定位等可由规则稳定处理的任务；智能体则用于理解代码仓库上下文、分析改动影响和判断业务逻辑问题。这种设计旨在把模型能力集中于需要推理的环节，减少 token 消耗与无效评论。\n\n## 精度和成本占优，但漏检更多\n\n阿里在覆盖 50 个开源仓库、包含 200 个 PR 的基准测试中报告：使用相同模型时，Open Code Review 的精度和 F1 均高于 Claude Code，token 消耗约为后者的九分之一。不过其召回率较低，意味着误报可能更少，但也可能漏掉更多问题。相关结论来自项目方测试，仍需更多独立验证。\n\n## 开源带来替代可能，工程成熟度仍待观察\n\n该项目可能成为 CodeRabbit、PR-Agent 等自动审查产品的开源替代方案。但有试用者反馈，它在包含大量文件的大型 PR 中仍存在较多问题，代码仓库内也有未解决的 issue。其方向体现了一个实用原则：规则引擎处理确定任务，大模型处理语义和影响面判断；真正落地时仍需权衡覆盖率、成本、信噪比与大型项目稳定性。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727570803,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:acaf009b70d38cd62bf137de0d413582f159d363c472e306f08d1c45ae8b672c",
+  "refs": {
+    "sessionId": "1789703718905_rfdtgx9q"
+  },
+  "revisionId": "sha256:77a2c113c17ea84be1b1d9b0f304408df476aa674cc71bc8a1362baf17ddd927",
+  "schemaVersion": 1,
+  "updatedAt": 1789727570803
+}

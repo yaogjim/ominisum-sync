@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789725998343,
+  "entityType": "message",
+  "id": "1789725998344_lp4liuh8",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nDocker 推出的 AI 智能体沙箱并非普通容器，而是每个会话独占内核的 microVM，重点解决智能体执行代码时的隔离、联网控制和密钥保护问题，但产品仍处早期。\n\n## 关键内容\n\n- Docker 员工称，沙箱基于 macOS、Windows、Linux 的原生虚拟化能力运行，并使用自研虚拟机监控器；Linux（Ubuntu）也已支持。\n- 密钥保存在宿主机钥匙串中。沙箱只拿到占位符，代理仅在请求目标主机匹配规则时注入认证头，避免真实令牌直接进入虚拟机；还可限制出站网络。\n- 用户肯定其开箱即用和同时运行多个短期沙箱的体验，但也反馈强制登录、文档错误、工作树改为克隆、macOS 文件性能及发行版支持等问题。\n- 讨论者列出大量开源替代品，并争论容器是否足够安全。Docker 表示模板、快照、长期后台任务等能力仍在完善。\n\n## 通俗解读\n\nmicroVM 比容器多一道内核隔离，更适合允许 AI 自主执行命令甚至运行 Docker。不过，“密钥不暴露”不等于“权限不会被滥用”：智能体仍可能借获准访问的服务执行危险操作，因此还需最小权限和网络白名单。本文主要是 HN 用户讨论，适合想选型或研究安全边界的人细读；普通用户看产品介绍即可。原文结尾被截断，部分问题没有完整回应。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789725998343,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e39a9453bebed9adfb130585a970608373481309fcd9fc5d2579c765e10bec51",
+  "refs": {
+    "sessionId": "1786412361058_uqza0gjl"
+  },
+  "revisionId": "sha256:60db3a069a9057779d2ef8188fe342d180386a6391412fe1d903eb42f4da3805",
+  "schemaVersion": 1,
+  "updatedAt": 1789725998343
+}

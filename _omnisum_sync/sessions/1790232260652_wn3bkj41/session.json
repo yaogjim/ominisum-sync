@@ -1,0 +1,66 @@
+{
+  "createdAt": 1790232260652,
+  "entityType": "session",
+  "id": "1790232260652_wn3bkj41",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选取一个现有 AI 工作流，区分可由代码控制的环节与确需模型判断的环节。",
+      "在目标任务评测中加入无关标识符扰动，检查关键输出的稳定性。",
+      "按实际任务同时记录判断质量、调用成本和延迟，而非只参考公开榜单。"
+    ],
+    "archiveReason": "包含可复用的设计与评测思路：由代码控制流程，让模型处理局部判断，并在真实工作流中检验稳定性。",
+    "classifiedAt": 1790233154321,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Jev的程序化模型与工作流评测",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "程序可明确约束的流程和权限应由代码控制，模型负责需要语义理解的局部判断。",
+      "向输入加入无关标识符，观察判断是否明显变化，可作为稳定性测试之一。",
+      "低调用成本只有与可用的判断质量结合，才可能支持更高频的软件内调用。"
+    ],
+    "oneHighValuePoint": "评测模型不能只看公开榜单，还应在目标工作流中检验判断是否可靠，以及无关输入变化是否会扰动结果。",
+    "oneLineReview": "对 AI 能力如何嵌入软件流程有参考价值，但缺少独立数据验证产品效果。",
+    "primaryCategory": "AI产品与模型应用",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览，保留工作流拆分与评测思路",
+    "secondaryCategories": [
+      "Agent开发",
+      "创业与产品战略"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章依据创始人访谈，介绍 Jev 面向程序调用而非聊天的模型定位，主张由代码控制流程、让模型承担局部判断，并在实际工作流中衡量成本、速度和可靠性。技术效果与市场前景主要是受访者的观点。",
+    "tags": [
+      "程序化模型",
+      "工作流评测",
+      "模型可靠性",
+      "AI产品设计"
+    ],
+    "title": "Jev：离开 OpenAI 后，他做了一个不跟人聊天的 AI",
+    "totalScore": 67,
+    "url": "https://x.com/lifesinger/status/2102764610109813192"
+  },
+  "payloadHash": "sha256:08da027e3671c3d33bbd1d7110923ae5c0602adf60191887ae7b7a4807d173ae",
+  "refs": {},
+  "revisionId": "sha256:fbf539ff54f426ef04b47688e9c601473d7915ae260ee0900b3e5b1d806a4fff",
+  "schemaVersion": 1,
+  "updatedAt": 1790233154424
+}

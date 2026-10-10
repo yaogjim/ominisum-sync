@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789705293298,
+  "entityType": "session",
+  "id": "1789705293298_jiq1o08e",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "优先试用pi-web-access和待办扩展，验证其对日常任务的实际增益。",
+      "用相同任务对比启用context-mode前后的Token消耗、速度与结果完整性。",
+      "逐项安装扩展并保留确有使用频率的组件，避免一次性全量堆叠。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1789705313365,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Pi Agent桌面工作扩展推荐",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "pi-web-access可聚合网页搜索、URL抓取、仓库克隆、PDF提取和视频理解能力。",
+      "pi-memory采用长期记忆、每日日志和scratchpad分层，并可配合语义检索。",
+      "pi-subagents支持并行或串行子代理、worktree隔离、工作流脚本与任务预算。"
+    ],
+    "oneHighValuePoint": "context-mode通过MCP接入并压缩工具调用结果与文件读写内容，以减少主上下文占用，是最值得进一步验证的思路。",
+    "oneLineReview": "扩展清单与功能映射较实用，但“更快、省Token、生产力飞起”等结论缺乏测试证据。",
+    "primaryCategory": "AI Agent工具",
+    "rating": "B",
+    "rejectReason": "缺少安装步骤、性能数据和横向测试，且扩展必要性存在明显争议",
+    "retentionDecision": "作为Pi扩展选型线索浏览，实际采用前需逐项验证",
+    "secondaryCategories": [
+      "AI编程工具",
+      "开发者生产力"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章推荐六类Pi Agent扩展，覆盖联网访问、记忆、待办、子代理、MCP接入和上下文压缩；回复则质疑全量安装是否违背Pi的极简理念，并建议按需取舍。",
+    "tags": [
+      "Pi Agent",
+      "桌面Agent",
+      "MCP",
+      "上下文管理",
+      "子代理编排"
+    ],
+    "title": "炎朗 Gavin: Pi agent是真香，hermess什么的都可以抛一边了，就用它作为桌面 work主力，速度快、还省token 推荐几个必装的扩展，装上后性能、生产力飞起: …",
+    "totalScore": 59,
+    "url": "https://x.com/cdexsta/status/2093933626035437929"
+  },
+  "payloadHash": "sha256:227859697ec4ca71a2c8c9fe9cb73b0f9b3ff841823a6a56fcdb2c39ddeff33d",
+  "refs": {},
+  "revisionId": "sha256:7ec776188172e36a449b3098ff75614b93aa87485bc23a0aa7a44ef9733d3cd7",
+  "schemaVersion": 1,
+  "updatedAt": 1789727527902
+}

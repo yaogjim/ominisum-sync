@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789533365020,
+  "entityType": "session",
+  "id": "1789533365020_vrih3j7h",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个边界明确的内部任务，先建立包含分类、工具调用和异常输入的小规模评测集。",
+      "对合成训练数据执行验证、去重和质量抽检，再比较微调模型与通用大模型的准确率、延迟和成本。",
+      "在部署前增加真实用户盲测、未见表达、工具变更及无效调用测试。"
+    ],
+    "archiveReason": "",
+    "byline": "CJ Zafir",
+    "classifiedAt": 1789533397202,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "面向Mac工具调用的SLM微调实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "窄领域任务可将分类与工具调用拆分给不同规模的小模型，以降低推理成本并简化职责。",
+      "缺少公开数据集时，可由强模型规划和审核、其他模型生成样本，再执行验证、去重和质量评估。",
+      "专用模型评测不能只看策划好的测试集，还应覆盖未见措辞、应用版本变化和无效工具调用等分布外情况。"
+    ],
+    "oneHighValuePoint": "较有价值的是将专用SLM项目拆为模型分工、合成数据生成与清洗、LoRA训练、迭代评估和本地部署的完整链路。",
+    "oneLineReview": "提供了可参考的端到端微调路线，但关键效果数据缺乏可复现证据，不宜直接采信其商业结论。",
+    "primaryCategory": "AI模型微调",
+    "rating": "B",
+    "rejectReason": "核心准确率、成本和性能优势均为作者自述，缺少数据集、基线、评测细节及可复现实验。",
+    "retentionDecision": "选择性浏览，待公开模型、数据集或完整评测后再决定是否保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI Agent开发",
+      "本地模型部署"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者自述以两个Qwen小模型、合成数据集、LoRA和云端GPU构建Mac工具调用系统，并称五轮训练后达到98%准确率，进而主张企业可用专用SLM获得成本、速度与隐私优势。",
+    "tags": [
+      "小语言模型",
+      "LoRA微调",
+      "合成数据集",
+      "工具调用",
+      "本地部署"
+    ],
+    "title": "CJ Zafir: Wao, this post blew up, and I triggered some Saastophers",
+    "totalScore": 64,
+    "url": "https://x.com/cjzafir/status/2099887347437560009"
+  },
+  "payloadHash": "sha256:9f633d97d5a8f9a5185607cb61e17b3461c82f3cf39789e5f8a2eb0b80c7729a",
+  "refs": {},
+  "revisionId": "sha256:9abeba7113a2c7984d168b201be593d800111f5e97c31c6b75e7f11fd6252431",
+  "schemaVersion": 1,
+  "updatedAt": 1789727847047
+}

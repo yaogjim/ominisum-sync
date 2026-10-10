@@ -1,0 +1,65 @@
+{
+  "createdAt": 1783079981129,
+  "entityType": "session",
+  "id": "1783079981129_aaxyawuk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "打开原文链接查看完整本地编码代理配置步骤。",
+      "按文中检查清单测试当前可用的本地模型是否适合日常编码任务。"
+    ],
+    "archiveReason": "包含本地编码代理搭建与模型评估检查清单，适合后续查阅原文配置思路。",
+    "classifiedAt": 1783080294695,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "本地开源编码代理指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "本地LLM可连接 Claude Code、Codex 等编码工具形成本地编码代理工作流。",
+      "评估本地模型时需要同时考虑长上下文RAM占用、tokens/s速度、工具调用能力和实际编码任务完成度。"
+    ],
+    "oneHighValuePoint": "用内存占用、预填充/解码速度、工具调用能力和编码测试表现作为本地LLM选型检查清单。",
+    "oneLineReview": "作为本地编码代理入门线索有一定价值，但当前正文只是推文摘要，细节和证据不足。",
+    "primaryCategory": "人工智能工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "本地LLM",
+      "编码代理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍如何用开放权重模型搭建可完全本地运行的编码代理，并提出选择模型时应关注内存占用、推理速度、工具调用能力和编码任务表现等评估指标。",
+    "tags": [
+      "本地模型",
+      "开放权重模型",
+      "Coding Agent",
+      "LLM评估",
+      "开发工具"
+    ],
+    "title": "Sebastian Raschka: I put together a new article on setting up local coding agents with open-weight …",
+    "totalScore": 61,
+    "url": "https://x.com/rasbt/status/2070871630201463137"
+  },
+  "payloadHash": "sha256:5b9529e7860cea4044bb0f32d9d277aa02ac40f8e7084838fe3e08828089e97a",
+  "refs": {},
+  "revisionId": "sha256:c6ba902127bd25727d06a131b608a607f0119268b5e4577382de0aba6ae75e31",
+  "schemaVersion": 1,
+  "updatedAt": 1789729303372
+}

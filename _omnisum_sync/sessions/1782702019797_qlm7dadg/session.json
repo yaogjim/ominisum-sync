@@ -1,0 +1,67 @@
+{
+  "createdAt": 1782702019797,
+  "entityType": "session",
+  "id": "1782702019797_qlm7dadg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如有类似需求，可检查当前网络方案中 Tailscale 与代理工具是否职责混杂。",
+      "记录不同设备的网络开关策略，避免 Mac 与 iOS 方案机械照搬。",
+      "对关键 VPS 节点做地区互备测试，保留稳定节点并删除冗余节点。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782714627474,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "个人AI工作站网络配置演进",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Tailscale 与 Clash/小火箭可按职责拆分：前者管内网互访，后者管公网代理。",
+      "iOS 单 VPN 限制会导致 Tailscale 与小火箭互斥，需要根据场景临时切换。",
+      "多地区 VPS 互备可提升稳定性，但也会增加维护复杂度。"
+    ],
+    "oneHighValuePoint": "将 Tailscale 主要用于内网互联和 SSH，把日常出海流量交给 HY2，Exit Node 仅作救场，是较清晰的职责拆分思路。",
+    "oneLineReview": "适合作为个人网络方案的经验参考，但不是可直接复用的系统教程。",
+    "primaryCategory": "技术运维",
+    "rating": "C",
+    "rejectReason": "内容主要是个人网络折腾经验，缺少完整教程、配置细节和系统性论证，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "网络配置",
+      "个人AI工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享作者从购买代理订阅到 VPS 自建 HY2，再到使用 Tailscale、Exit Node、多地区 VPS 互备的个人网络配置演进，并总结 Mac 与 iOS 设备在代理和 Tailscale 使用上的差异。",
+    "tags": [
+      "Tailscale",
+      "VPS",
+      "HY2",
+      "代理工具",
+      "Exit Node"
+    ],
+    "title": "Leo｜一个人 + AI: 上外网这件事，我大概是这么走过来的： 一开始买订阅",
+    "totalScore": 46.5,
+    "url": "https://x.com/runes_leo/status/2071209150923833774"
+  },
+  "payloadHash": "sha256:a0485de7602fd267a7f4a8158c8fc86bf6f35bce6bb45131cbb4e84be8cc2440",
+  "refs": {},
+  "revisionId": "sha256:adf322097d08c7eb7f1983b299e330da58c7d57958e952936ad81c6e1f3f3c1c",
+  "schemaVersion": 1,
+  "updatedAt": 1782714627630
+}

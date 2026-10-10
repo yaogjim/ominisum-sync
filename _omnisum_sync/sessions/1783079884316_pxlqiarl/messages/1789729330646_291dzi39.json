@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729330644,
+  "entityType": "message",
+  "id": "1789729330646_291dzi39",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# RepoPrompt 开源：从代码上下文工具转向多 Agent 调度平台\n\nRepoPrompt 社区版已在 GitHub 开源。它不再只是帮助开发者挑选代码、拼接提示词，而是以 MCP Server 为调度核心，统一调用 Claude Code、Codex、Gemini CLI 等工具，尝试解决 AI 编程中更关键的“上下文组织与任务协作”问题。\n\n## 开源源于作者加入 OpenAI\n\n据原文，OpenAI 开发者体验负责人 Romain Huet 邀请 RepoPrompt 作者 Provencher 加入团队。作者要求先妥善安排现有付费用户，因此产品先免费开放，随后发布开源社区版；原有版本则以 RepoPrompt Classic 保留。\n\n## 核心价值是让 AI 只看必要代码\n\nRepoPrompt 最初用于从代码仓库中筛选相关文件，组合成高质量提示词，再交给 ChatGPT 或 Claude。其判断是：直接塞入整个代码库不一定更有效，过长上下文——文中特别提到超过 32K token——反而可能降低模型表现。围绕任务选择、组织必要信息，正是如今所称的“上下文工程”。\n\n## MCP 成为主控，多种 Agent 变为可替换执行层\n\n新版反转了原有架构：内置 MCP Server 负责规划和调度，Claude Code、Codex、OpenCode、Gemini CLI 等命令行工具负责执行。开发者可以用一个推理模型拆分任务，再让多个 Agent 并行处理不同子任务，每个 Agent 只接触相关文件。这意味着 AI 编程工具的竞争重点，正从单一模型能力延伸到上下文入口、任务边界和多 Agent 协作机制。\n\n## 目前仅支持 macOS\n\n为适应开源协作，新版删减了部分手工拼接提示词功能，并解除对 Xcode 的构建依赖。项目采用贡献者白名单机制，原付费用户经同意可成为认证贡献者。目前可通过 Homebrew 安装，跨平台版本仍在开发中。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729330644,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5eb49894ae589f84c811d206ea03be137a77d89eb260c00b1b4dc0f3cb73a51d",
+  "refs": {
+    "sessionId": "1783079884316_pxlqiarl"
+  },
+  "revisionId": "sha256:988d5ed00d15fb2b641907b3e5b15f7b87f42d9066a79273a8883e5543028fc0",
+  "schemaVersion": 1,
+  "updatedAt": 1789729330644
+}

@@ -1,0 +1,64 @@
+{
+  "createdAt": 1791593551558,
+  "entityType": "session",
+  "id": "1791593551558_s0ygzla6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "有本地语音合成需求时，访问引用推文所指的 Hugging Face Spaces，试听音质并核对语言、音色及单线程 CPU 性能说明。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1791594658113,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "九兆字节轻量语音模型动态",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "文中介绍的轻量模型限定为单音色、单语言，不能据此推断其具备多语言或多音色能力。",
+      "权重体积与参数量是模型规模信息，文中未提供运行内存、具体 CPU 型号或音质对比，不能直接证明其适用于任意设备。"
+    ],
+    "oneHighValuePoint": "值得验证的核心线索是：从 Kokoro-82M 蒸馏出的约八百万参数语音模型，据称可用九兆字节权重在单线程 CPU 上实现快于实时的合成。",
+    "oneLineReview": "提供了值得验证的轻量语音合成线索，但性能与音质证据不足，适合速览而非精读留存。",
+    "primaryCategory": "AI模型动态",
+    "rating": "C",
+    "rejectReason": "缺少完整模型资料、测试条件、音质评估和部署步骤，混杂回复也未形成统一论证，不适合作为长期技术参考。",
+    "retentionDecision": "作为轻量语音模型线索速览，有部署需求时再查阅原始资料",
+    "secondaryCategories": [
+      "语音合成",
+      "轻量化部署"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "推文介绍 Paradee 将 Kokoro-82M 蒸馏为约八百万参数、九兆字节权重的单音色、单语言语音模型，声称单线程 CPU 可快于实时运行。附带回复涉及编码代理安全等话题，但未提供该语音模型的完整测试资料。",
+    "tags": [
+      "Kokoro",
+      "Paradee",
+      "语音合成",
+      "模型蒸馏",
+      "CPU推理"
+    ],
+    "title": "apolinario (poli): only 9MB (",
+    "totalScore": 49,
+    "url": "https://x.com/multimodalart/status/2107891882525409393"
+  },
+  "payloadHash": "sha256:977939c5a77bcf16cdeab2e8e2d3a56b638685af68b30be9cfd4768cb9041f25",
+  "refs": {},
+  "revisionId": "sha256:84bdd347331a67f34968f9edd9b0c708530d4227088950be990b33c9bffcaa47",
+  "schemaVersion": 1,
+  "updatedAt": 1791594658635
+}

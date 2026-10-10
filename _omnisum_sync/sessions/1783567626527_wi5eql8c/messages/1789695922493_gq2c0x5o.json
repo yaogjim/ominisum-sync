@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695922491,
+  "entityType": "message",
+  "id": "1789695922493_gq2c0x5o",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nAI 智能体要自行写代码、调用算力并反复调试，传统云平台对人类开发者的设计已不够用；Modal 因而把重点从“开发者体验”转向可编程、可观察且有硬性安全边界的“智能体体验”。\n\n## 关键内容\n\n- Modal CTO 认为，Kubernetes 更适合稳定运行的 Web 服务，不擅长 AI 推理、强化学习等需要 GPU 瞬时扩缩的任务；Modal 则提供无服务器推理、训练、批处理和沙箱。\n- 对智能体而言，基础设施配置应与代码放在一起，尽量减少复杂 YAML；日志、指标和操作能力也要进入 CLI，让智能体能发现错误并快速重试。\n- Modal 通过 GPU 快照、弹性扩缩、跨 17 家云调度，以及联网沙箱、持久化存储和多节点训练等能力，服务自定义模型与后台代理。文中称，部分强化学习任务可能瞬间需要多达 10 万个沙箱。\n- 生产级代理不能只靠模型“判断权限”，仍需网络隔离、访问控制等硬护栏；托管代理适合起步，复杂应用则需要更可控的专用沙箱。\n\n## 通俗解读\n\n“智能体体验”不是把界面做得更漂亮，而是把云平台改造成机器也容易操作和排错的工具：像给机器人准备标注明确的按钮、仪表和护栏，而不是让它阅读几百份说明书。\n\n**是否值得细读：**适合 AI 基础设施、推理或代理工程从业者；若只想了解核心趋势，以上已足够。全文较长且带有 Modal 的产品立场，性能与需求规模多为公司经验或判断。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695922491,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:268e679a97fcc60fa84ea53616924a3696fe0427c7c192762c184ac085b514ca",
+  "refs": {
+    "sessionId": "1783567626527_wi5eql8c"
+  },
+  "revisionId": "sha256:e4a72c216268e114db8fcee06a040567193b3f9120983127af72ccdb9f5316ea",
+  "schemaVersion": 1,
+  "updatedAt": 1789695922491
+}

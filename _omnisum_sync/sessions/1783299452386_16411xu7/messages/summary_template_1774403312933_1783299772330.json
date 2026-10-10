@@ -1,0 +1,23 @@
+{
+  "createdAt": 1783299772330,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1783299772330",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 《reverse-skill/skills/routing.md》文章总结\n\n## 1. 核心定位：一个 “任务路由规则表”\n\n这篇文档本质上是`reverse-skill`项目的**任务分发指南**，用于在执行安全分析、逆向工程、渗透测试、AI 安全等任务前，先判断应该调用哪个专业技能模块。\n\n它强调一个原则：\n\n> **必须先路由，再执行。不能先做事，再补选模块。**\n\n路由判断需要同时匹配三类信息：\n\n- **目标类型**：APK、二进制、JS、固件、AI 应用、API 等\n- **用户意图**：逆向、Hook、解密、绕过检测、写报告、自动化等\n- **工具链**：IDA、radare2、Frida、Burp、Nmap、Playwright 等\n\n如果没有合适模块，应该提出新增技能，而不是强行套用已有模块。\n\n---\n\n## 2. 主要能力版图：覆盖逆向、安全、AI 与自动化\n\n文档把大量安全与逆向任务拆成不同入口模块，典型包括：\n\n### 逆向工程类\n\n- **APK / Android**：`apk-reverse`\n- **二进制 exe/dll/so/elf**：`ida-reverse`、`radare2`\n- **JS / Web 前端逆向**：`js-reverse`\n- **DSL VM / 自定义虚拟机**：`dsl-vm-reverse`\n- **固件 / IoT**：`reverse-engineering/platforms`\n- **iOS /macOS**：`mobile-reverse`\n- **游戏 / Unity / IL2CPP**：`reverse-engineering`\n\n### 安全测试类\n\n- **API / REST / GraphQL 安全**：`api-security`\n- **渗透测试工具链**：`pentest-tools`\n- **供应链 / SBOM / CI-CD**：`supply-chain-security`\n- **云 / 容器 / K8s 安全**：CTF Orchestrator 下的 cloud 模块\n- **攻击链 / 红队路径规划**：`attack-chain`\n\n### AI 安全类\n\n- **LLM / Agent 安全**：`llm-security`\n- **Prompt Injection**：`competition-prompt-injection`\n- **Agent 行为约束与服从性问题**：相关 agent obedience 文档\n\n---\n\n## 3. 路由方式：按 “用户说法” 转成技术目标\n\n文档特别考虑了用户可能使用非专业、口语化表达的情况。\n\n例如：\n\n| 用户说法 | 技术目标 | 推荐模块 |\n|---|---|---|\n| “绕过检测” | 定位检测逻辑，分析控制流，提出 patch 或输入策略 | `reverse-engineering` |\n| “去除校验 / 解锁功能” | 找到校验函数并分析修改点 | APK 或逆向模块 |\n| “让我通过验证” | 还原验证逻辑，推导正确输入 | `reverse-engineering` |\n| “拿 flag /crackme” | 按 CTF / 本地挑战处理 | `patterns-ctf` |\n| “Frida hook” | 动态注入与运行时分析 | `tools-dynamic` |\n\n这体现了一个重要产品设计思路：\n\n> 不要求用户使用专业术语，而是系统自动把自然语言归一化为技术任务。\n\n---\n\n## 4. 工具链映射：根据工具选择执行模块\n\n文档也提供了按工具链分发的规则。\n\n典型映射如下：\n\n- **IDA Pro** → `ida-reverse`\n- **radare2** → `radare2`\n- **jadx /apktool** → `apk-reverse`\n- **Frida** → `tools-dynamic`\n- **GDB /pwndbg/rr** → `tools`\n- **Ghidra** → `tools` + Ghidra MCP\n- **angr / Unicorn / Qiling** → `tools-dynamic`\n- **BurpSuite** → `pentest-tools`\n- **Nmap / Masscan** → `pentest-tools`\n- **Playwright / Browser automation** → `browser-automation`\n- **anything-analyzer MCP /jshookmcp** → Web / JS 逆向增强链路\n\n这让任务可以从 “我正在用什么工具” 直接推导到 “应该进入哪个技能模块”。\n\n---\n\n## 5. 复杂任务：允许跨模块组合\n\n文档指出，如果任务横跨多个领域，不应该只选一个模块，而是组合多个模块。\n\n例如：\n\n- APK 中核心逻辑在`.so`  \n  → 先`apk-reverse`，再进入`ida-reverse`或`radare2`\n\n- Web 前端存在加密参数  \n  → `js-reverse` + HTTP 捕获工具 + 浏览器 Hook\n\n- OLLVM 混淆二进制  \n  → `ollvm-deobfuscation` + IDA 插件 /angr/ D-810 等\n\n- CTF 全栈题目  \n  → 先进入 CTF Orchestrator，再按证据分发到 Web、Pwn、Forensics、Cloud、Mobile 等子模块\n\n---\n\n## 6. 文档背后的设计思想\n\n这份 routing 文档不是技术教程，而是一个**技能调度系统的决策层**。\n\n它解决的问题是：\n\n- 用户任务表达模糊，如何标准化？\n- 安全与逆向任务类型繁杂，如何快速选对路径？\n- 多工具、多场景、多模块之间如何协同？\n- 如何避免 AI 助手 “凭感觉乱做”？\n\n从产品视角看，它相当于一个**AI Agent 的任务路由中枢**，通过规则表降低执行偏差，提高专业任务的稳定性和可复用性。\n\n---\n\n## 7. 一句话总结\n\n这篇文档定义了一套面向逆向、安全、AI、渗透测试和自动化任务的**技能路由规则**：先识别目标类型、用户意图和工具链，再选择最合适的专业模块执行，复杂任务则组合多个模块协同完成。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1783299772330,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b5c593bf6e5ff11689f12dc9000ac7a3e2b83298aef6eac0f03f01e5b7fae070",
+  "refs": {
+    "sessionId": "1783299452386_16411xu7"
+  },
+  "revisionId": "sha256:89e7c85d5db93484e9d06afc21934840ba001f5282139fe087e5cef6e020052f",
+  "schemaVersion": 1,
+  "updatedAt": 1783299772330
+}

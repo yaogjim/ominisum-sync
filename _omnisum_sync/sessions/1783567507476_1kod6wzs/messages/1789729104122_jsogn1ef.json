@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729104121,
+  "entityType": "message",
+  "id": "1789729104122_jsogn1ef",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Agent 代码沙箱的两条路线：E2B 强隔离，OpenSandbox 易私有化\n\nAgent 执行不同于普通代码执行：它要求毫秒级冷启动、频繁同步中间代码与结果文件，还需精细控制 API 和网络访问。作者据此推荐两种开源方案：面向商用、高安全需求优先 E2B；面向国内私有化或无 KVM 环境优先 OpenSandbox。\n\n## E2B：以 MicroVM 支撑高并发商用平台\n\nE2B 基于 Firecracker MicroVM，每次执行运行在独立微虚拟机中，通过 KVM 实现内核级隔离。作者称其冷启动可控制在 150ms 内，并支持按任务限制 vCPU、内存，降低单租户资源溢出对宿主机的影响。\n\n它还支持：\n\n- 默认关闭公网，仅放行指定 API 域名，降低数据外泄风险；\n- 通过 Memfs、Overlayfs 快照保存依赖和运行状态，生成可复用模板；\n- 提供宿主机与沙箱之间的双向文件同步接口。\n\n作者将其视为生产级首选，适合允许用户生成并运行任意 Python、JavaScript 代码的商业 Agent 平台。\n\n## OpenSandbox：适配 Docker、K8s 与内网部署\n\n阿里开源的 OpenSandbox 基于 Docker 或 Kubernetes，也可搭配 gVisor 增强隔离，适合无法启用 KVM或希望复用现有容器集群的场景。\n\n它通过 Cgroups 限制 CPU、内存和磁盘 IOPS，防止死循环拖垮宿主机；通过 NetworkPolicy 控制出入站流量；将 Agent 文件读写限制在 `/workspace`，并拦截读取环境变量、敏感命令和端口扫描等常见攻击行为。\n\n## 选型关键是隔离强度与基础设施条件\n\nE2B 的优势是更强的硬件级隔离、低延迟启动和状态复用；OpenSandbox 的优势是部署门槛低、容易接入现有容器体系。对 Agent 平台而言，沙箱不只是“能运行代码”，冷启动、文件状态同步和网络出站控制同样决定安全性与交互体验。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729104121,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:16960c24baad0c9ea53ff1c61455933245a840fc8f5e2cb3789da21f20d9d8eb",
+  "refs": {
+    "sessionId": "1783567507476_1kod6wzs"
+  },
+  "revisionId": "sha256:7ce6beea4bb539bd186fed96d022c5db4053416408e8c472a3508ba69c387b37",
+  "schemaVersion": 1,
+  "updatedAt": 1789729104121
+}

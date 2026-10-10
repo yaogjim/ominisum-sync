@@ -1,0 +1,19 @@
+{
+  "createdAt": 1789725141233,
+  "entityType": "message",
+  "id": "1789725141232_gsl59cu3",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: ChatGPT桌面版Linux本地构建指南\n\n**评级**: A (79分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI工具与开发环境\n**次类别**: Linux软件打包, 开源项目文档\n**标签**: #ChatGPT桌面版 #Codex #Linux #Electron #本地构建\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 9 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 这是一份覆盖面完整、可直接执行的Linux移植与部署文档，但其长期有效性依赖上游应用结构和项目持续维护。\n**核心高价值点**: 通过统一构建流程完成DMG提取、Linux兼容补丁、原生模块重建、运行时装配和多发行版打包，同时不直接分发OpenAI应用二进制。\n\n### 摘要\n该仓库将官方macOS Codex DMG在本地转换为可运行的Linux Electron应用，支持主流发行版、AppImage与Nix，并提供更新管理、可选功能、卸载及故障排查方案。\n\n### 知识要点\n- 项目以官方Codex DMG为输入，通过兼容性补丁和原生模块重建生成Linux版Electron应用。\n- 原生软件包可附带用户级更新服务，检测新DMG后在本地重新构建并于应用退出后安装。\n- Linux专属能力采用默认关闭的独立功能框架，可通过配置启用并注入补丁、资源或运行时钩子。\n\n### 行动项\n- 按发行版选择make bootstrap-native、nix run或AppImage本地构建路径。\n- 首次运行时安装Codex CLI；如需固定版本或解决PATH问题，设置CODEX_CLI_PATH。\n- 遇到白屏、Wayland或GPU问题时，先检查launcher.log并按故障表调整渲染参数。\n\n### 存档判定\n归档: 是 — 原因: 提供多发行版安装、构建、更新、卸载和故障排查命令，并说明功能扩展架构，具有直接实践价值。\n删除: 否\n留存决策: 作为Linux部署ChatGPT与Codex桌面环境的实施文档长期保留",
+    "role": "assistant",
+    "timestamp": 1789725141233,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:4e3f585a66fac0e80aaf53a129ab788a2201f976d2ffc99fe1e53780ea7e06dd",
+  "refs": {
+    "sessionId": "1785487610904_ugoodh5o"
+  },
+  "revisionId": "sha256:f5f3e137e566a33a715dbd040cc053f8a097f9894425e1914b3cd196367cceae",
+  "schemaVersion": 1,
+  "updatedAt": 1789725141233
+}

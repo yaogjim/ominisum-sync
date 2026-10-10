@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784605251109,
+  "entityType": "session",
+  "id": "1784605251109_f9lr8hn3",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为现有AI编程项目盘点并建立Agents.md、Context.md、ADR、Architecture.md、Design.md和Spec目录。",
+      "将下一项功能改写为跨前端、后端、存储、测试和验收的垂直Ticket，并确保可独立演示。",
+      "当单个Ticket预计超出一个上下文窗口时继续拆分，并验证拆分后的任务边界与验收条件。"
+    ],
+    "archiveReason": "提供了可复用的文档分类、工作流与垂直任务切片框架，适合在AI编程项目初始化和上下文治理时参考。",
+    "classifiedAt": 1784606033907,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编程文档上下文拆分框架",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "用Agents.md承载规则、流程和项目导航，用Context.md维护术语及统一语言，用ADR逐条记录关键架构约束。",
+      "架构、设计、阶段性实现方案和任务票据应分层管理，避免不同生命周期与用途的信息混杂。",
+      "建议工作流为Grill、Domain Modeling、Spec、Tickets、Implement、TDD、Code Review。"
+    ],
+    "oneHighValuePoint": "Ticket应围绕可独立演示和验收的完整能力进行垂直切分，跨越UI、API、运行时、存储和测试，而不是按职能层横向分工。",
+    "oneLineReview": "框架简洁且贴近AI编程实践，但缺少拆分依据、适用条件、案例和验证结果。",
+    "primaryCategory": "AI编程与Agent开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性存档，作为AI编程项目文档结构与任务切片的检查清单",
+    "secondaryCategories": [
+      "知识管理",
+      "软件架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将AI Coding项目上下文拆分为项目外知识库、Agents.md、术语表、ADR、架构与设计文档、Spec、Tickets和Scratch，并给出从领域建模到TDD、代码审查的流程，强调按完整能力垂直切分任务。",
+    "tags": [
+      "上下文工程",
+      "项目文档",
+      "架构决策记录",
+      "垂直任务切片",
+      "AI编程工作流"
+    ],
+    "title": "MateMatt: 深度拆解了 mattpocock skills 后，总结了 AI Coding 文档上下文如何拆的几条铁律： 1、项目知识库(架构讨论，背景，调研材料等)，置于…",
+    "totalScore": 69,
+    "url": "https://x.com/mate_mattt/status/2079043829047632349"
+  },
+  "payloadHash": "sha256:c168376b920196ef76d9f671a305f505970a65a9b76f25fed7f44d4feb5509d8",
+  "refs": {},
+  "revisionId": "sha256:ffb0c7356a8d8ff5cc9fb8b9f3ec6011e4c5a9d9c58661e5a143dfa5ea45267b",
+  "schemaVersion": 1,
+  "updatedAt": 1789729032078
+}

@@ -1,0 +1,76 @@
+{
+  "createdAt": 1789864753884,
+  "entityType": "session",
+  "id": "1789864753884_n2c6rvx6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "byline": "奶昔🥤",
+    "classifiedAt": 1790768593987,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 2,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "跨境专线包装与路由固件风险质疑",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "缺少可复用的方法和可靠证据，附图仅有链接，现有文本不足以支撑固件风险及服务质量判断，长期保留价值较低。",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 900,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSlmFbobwAE1K-j?format=jpg&name=900x900",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSlmFbobwAE1K-j?format=jpg&name=900x900",
+        "width": 386
+      }
+    ],
+    "knowledgePoints": [],
+    "oneHighValuePoint": "最值得关注的线索是：标为“跨境专线SD-WAN”的服务可能采用VPN与OpenWrt方案，但本文未证实这一说法的适用范围。",
+    "oneLineReview": "提供了跨境网络服务包装与固件风险的讨论线索，但证据不足，不能据此判断供应商可靠性或固件安全性。",
+    "primaryCategory": "网络服务与固件风险",
+    "rating": "D",
+    "rejectReason": "主要为社交平台上的个案评论，未提供可核验的技术分析、服务对比标准或完整论证，与核心关注方向仅有边缘联系。",
+    "retentionDecision": "仅作为未经核实的风险线索，不建议纳入长期知识库",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "技术交付",
+      "社区讨论"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "作者质疑Kwrt固件存在不明后台活动，并比较部分跨境网络服务商的硬件、部署和售后配置；引用推文称有人将VPN与OpenWrt方案包装成SD-WAN专线销售，但未提供可核验的技术证据。",
+    "tags": [
+      "OpenWrt",
+      "Kwrt固件",
+      "跨境专线",
+      "SD-WAN",
+      "路由器安全"
+    ],
+    "title": "奶昔🥤: 这个Kwrt固件可在线编译，但不知道为啥会偷偷后台跑p，比起其他OpenWrt固件似乎这些“跨境专线”都爱用这套方案 比起深圳那家用硬路由刷OP的，这家不仅用I…",
+    "totalScore": 28,
+    "url": "https://x.com/realNyarime/status/2101322987249275249"
+  },
+  "payloadHash": "sha256:4254a78004bfed1cb1ba4f3b9e1e729922fe48a72bc7ba0078d7e4a84106a9e1",
+  "refs": {},
+  "revisionId": "sha256:883f1bebdee1458651125a1c6923ed8f7ab136f3640c87d5632cd0d1d8390987",
+  "schemaVersion": 1,
+  "updatedAt": 1790768594828
+}

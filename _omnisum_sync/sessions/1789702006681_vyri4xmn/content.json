@@ -1,0 +1,15 @@
+{
+  "createdAt": 1789702006680,
+  "entityType": "session-content",
+  "id": "1789702006681_vyri4xmn",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Jerry Y</strong></header><div class=\"tw-body\">PocketPi 又有新活了😬<br><br>在重构了 Apps 和底层架构之后，终于可以 connect the dots，实现一个很早就设想的feature：Pi agent 可以在 esp32-s3/p4 上对 App 进行完整更新迭代了！<br><br>就像 demo 里展示的这样，即使在这台性能极其受限的 s3 上，只需要 prompt 出你的需求，agent 就可以去更新 app 的 uiux 以及底层数据 schema，让你的嵌入式设备变得真正的 personal</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/amplify_video_thumb/2091873979086901248/img/0nhq-bCzzSRTFXos?format=jpg&name=large\" alt=\"Embedded video\" /><img src=\"https://pbs.twimg.com/media/HQfUVpVbkAAlCeI?format=jpg&name=large\" alt=\"图片\" /><img src=\"https://pbs.twimg.com/media/HQfUWWEaMAA9DW4?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@temp.md</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>这个点很强：agent 不是只改屏幕上的样子，还能把 app schema 一起带过去。对小设备来说，prompt -> 更新 -> 可运行 app 这条链路比“远程控制”更像真正的个人设备。</p></div></div>",
+    "pageContent": "Jerry Y: PocketPi 又有新活了😬 在重构了 Apps 和底层架构之后，终于可以 connect the dots，实现一个很早就设想的feature：Pi agent 可以在 esp32-s3/p4 上对 App 进行完整更新迭代了！ 就像 demo 里展示的这样，即使在这台性能极其受限的 s3 上，只需要 prompt 出你的需求，agent 就可以去更新 app 的 uiux 以及底层数据 schema，让你的嵌入式设备变得真正的 personal\n![Embedded video](https://pbs.twimg.com/amplify_video_thumb/2091873979086901248/img/0nhq-bCzzSRTFXos?format=jpg&name=large)\n![图片](https://pbs.twimg.com/media/HQfUVpVbkAAlCeI?format=jpg&name=large)\n![图片](https://pbs.twimg.com/media/HQfUWWEaMAA9DW4?format=jpg&name=large)\n---\n热门回复 (共 1 条):\n@temp.md (♥ 0 · 💬 0):\n这个点很强：agent 不是只改屏幕上的样子，还能把 app schema 一起带过去。对小设备来说，prompt -> 更新 -> 可运行 app 这条链路比“远程控制”更像真正的个人设备。\n"
+  },
+  "payloadHash": "sha256:9071666443deb9b0aea7d37af0322c6a9dc0eb97c1a39ca56eb6c02c941e054e",
+  "refs": {},
+  "revisionId": "sha256:3e7d5517dca39d43eba294b6b1f7f8a742e5a6d6234649bc8ff176afbc03ad98",
+  "schemaVersion": 1,
+  "updatedAt": 1789702218464
+}

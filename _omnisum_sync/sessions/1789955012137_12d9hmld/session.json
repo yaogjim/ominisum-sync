@@ -1,0 +1,82 @@
+{
+  "createdAt": 1789955012137,
+  "entityType": "session",
+  "id": "1789955012137_12d9hmld",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用GPT辅助编写脚本，批量提取英文页面的meta title和description，并生成对应的候选版本。",
+      "将原版与候选版分别按A+B和B+A顺序交给评审模型评分，筛选两次判断一致的候选。",
+      "对筛选出的候选进行人工审核，检查是否确实优于原版。"
+    ],
+    "archiveReason": "提供了抓取、生成、双向评分、一致性筛选和人工审核的可复用流程，适合作为批量内容优化的参考。",
+    "byline": "Jesse Lau 遁一子",
+    "classifiedAt": 1790762327260,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用双向模型评分筛选SEO元信息",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 718,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSsZFQUaoAAn_Tc?format=png&name=900x900",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSsZFQUaoAAn_Tc?format=png&name=900x900",
+        "width": 501
+      }
+    ],
+    "knowledgePoints": [
+      "交换候选输入顺序并检查评审一致性，可辅助识别模型判断中的顺序敏感性，但不能保证消除偏差。",
+      "模型预测和人工主观审核可以用于候选筛选，但不能替代真实点击率数据来证明SEO优化效果。"
+    ],
+    "oneHighValuePoint": "将同一对候选分别按A+B和B+A顺序评分，再筛选结果一致者，为识别顺序敏感的模型判断提供了低成本办法。",
+    "oneLineReview": "这是一个可复用的批量优化流程，但评分规则和实测数据缺失，价值主要在评审设计而非效果证明。",
+    "primaryCategory": "AI辅助SEO优化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "保留双向评分与人工复核的流程思路，不将模型预测视为实际CTR提升证据",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "大模型评估",
+      "自动化工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者分享批量优化英文页面SEO元信息的做法：用GPT辅助编写抓取脚本并生成候选版本，再让JEV交换版本顺序评分，以一致性筛选胜者。作者人工审核了选出的87页，主观认为有所改善，但未提供实际CTR验证。",
+    "tags": [
+      "SEO元信息",
+      "大模型评审",
+      "顺序偏差",
+      "人工审核"
+    ],
+    "title": "Jesse Lau 遁一子: 关于用JEV来跑SEO",
+    "totalScore": 67,
+    "url": "https://x.com/jesselaunz/status/2101801410212069652"
+  },
+  "payloadHash": "sha256:b220c5d88dda2f4555d75f0d297f96452379fd49b986aa15f0364570fcaefddb",
+  "refs": {},
+  "revisionId": "sha256:441f8e2faf100cb234d0c13a79190e1bf83a0b3fa39d7dee8c65be956de601fe",
+  "schemaVersion": 1,
+  "updatedAt": 1790762328070
+}

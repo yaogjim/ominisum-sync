@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789697355961,
+  "entityType": "message",
+  "id": "summary_default_1789697355961",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n智谱称，GLM-5.3 驱动的 Infra Agent 已能在工程师监督下优化自身推理基础设施，但这只是 “递归自我改进” 的早期迹象，并非 AI 已可自主升级自己。\n\n## 关键内容\n\n- 团队在超**10 万块国产 AI 加速器**上部署 GLM-5.3-Flash；据文中数据，Agent 承担了大部分适配与优化工作，不到两周实现生产上线，并将端到端吞吐量提高约**3 倍**。\n- 成功关键不只是模型会写代码，而是建立 “**密集反馈**”：把正确性测试、执行轨迹、微基准和线上指标组织成可重复流程，让 Agent 能判断问题出在哪一层，而非只知道 “性能变差了”。\n- 文中举例称，Agent 据此发现了长上下文计算的精度问题、Python GIL 导致的 KV 传输并发瓶颈，并优化关键内核；其中传输额外开销由超过 20% 降至 1% 以下。\n- 人类仍负责设定目标、边界和风险审查，Agent 负责提出假设、修改代码并实验验证。\n\n## 通俗解读\n\n所谓 “自我改进”，目前更像 AI 在完善 “运行自己的机器和软件”，而不是自主设计下一代模型。文章数据均为厂商自述。**做 AI 基础设施或 Agent 工程者值得细读案例；只关心结论，读本摘要即可。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1789697355961,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bdf7d2a728901b736a3478913e82d8e24ee76b98eba6d0d619566c9c0a5ced69",
+  "refs": {
+    "sessionId": "1789697356010_zn1l5znp"
+  },
+  "revisionId": "sha256:db30891997eba0c279e1995997ee43c904297968ec1e2543298b30d212d75efa",
+  "schemaVersion": 1,
+  "updatedAt": 1789697355961
+}

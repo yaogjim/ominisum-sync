@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789445522150,
+  "entityType": "message",
+  "id": "summary_default_1789445522150",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者借美国大型律所自建 AI 基础设施的案例主张：掌握本地算力、开放模型和私有数据的大企业，可以减少对 OpenAI、Anthropic 等闭源服务商的依赖。\n\n## 关键内容\n\n- 推文称，美国第二大律所 Latham & Watkins 正购买 NVIDIA 硬件，在内部微调 “开放权重” 模型，即可自行部署和调整参数的模型。\n- 律所拥有大量敏感的合同、谈判记录和法律知识；本地部署可加强数据控制，并避免持续按 token 付费或承担数据外泄、被用于训练的潜在风险。\n- 作者进一步判断，大企业未来可能自行掌握算力、数据和工作流程，并在价格或质量变化时更换模型供应商，因此头部 AI 实验室的客户黏性未必牢固。\n- 至于 “Dario 和 Sam Altman 想用监管禁止这种做法”，这是作者的强烈推测，文中没有提供证据。\n\n## 通俗解读\n\n所谓 “企业主权 AI”，类似公司把关键文件和处理系统放在自家机房，而非全部交给外部云服务。不过，原文只是观点鲜明的短推文，引用的事实缺少规模、成本和具体部署细节。**适合快速了解一种立场，不值得仅就此细读；若要判断案例真假和可行性，应追溯其引用的原始报道。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1789445522150,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9fbfc7ee84f2091c9cc29e0c0e85e1e561e7b99c034bbbd5e9395a57bf94bae9",
+  "refs": {
+    "sessionId": "1789445522197_8p5eoamm"
+  },
+  "revisionId": "sha256:72d954162b1f4b9a16e8e5e58cbcb128e8d17be770e4bcf1ec31bc3957608db3",
+  "schemaVersion": 1,
+  "updatedAt": 1789445522150
+}

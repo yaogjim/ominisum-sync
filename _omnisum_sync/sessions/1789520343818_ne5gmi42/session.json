@@ -1,0 +1,83 @@
+{
+  "createdAt": 1789520343818,
+  "entityType": "session",
+  "id": "1789520343818_ne5gmi42",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "使用Docker单卡启动默认配置，先设置API密钥，再运行verify.sh确认补丁、量化模型、注意力后端和KV池状态。",
+      "依据负载选择模式：单用户或共享文档使用SPEC=dflash2与PREFIX_CACHE=1，多用户独立请求使用SPEC=mtp或batch模式。",
+      "在目标机器上运行统一基准、并发阶梯、质量测试和残差扫描，并固定250W功耗与KV_MEM后再比较配置。"
+    ],
+    "archiveReason": "提供完整代码、补丁、部署脚本、可复现基准、质量测试和大量故障边界，并形成了按并发量、上下文长度及共享模式选择配置的实用方法。",
+    "classifiedAt": 1789533554923,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 10,
+      "evidence_quality": 9,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 9,
+      "relevance": 10,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "单卡3090部署Qwen3.8优化指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Stock vLLM against this repo, same card, same prompts",
+        "caption": "",
+        "height": 540,
+        "id": "img-4",
+        "nearbyText": "Qwen3.8-27B on one RTX 3090 Serving setup for Qwen3.8-27B on a single 24 GB consumer GPU with vLLM — 150k token context and an OpenAI-compatible API with key auth, in two ready-made modes. Quick start The image is prebuilt and pushed to ghc...",
+        "resolvedUrl": "https://github.com/syv-ai/qwen38-27b-rtx3090/raw/main/docs/media/demo.gif",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/syv-ai/qwen38-27b-rtx3090/raw/main/docs/media/demo.gif",
+        "width": 960
+      }
+    ],
+    "knowledgePoints": [
+      "推测解码的收益取决于并发度和工作负载：DFlash2提高单流速度，但更大的循环状态页会降低可驻留请求数，MTP在较高并发下更稳定。",
+      "共享前缀与前缀缓存可同时复用注意力KV和循环状态，能显著降低长文档多轮请求的首词延迟；独立长提示则主要受预填充吞吐限制。",
+      "可靠性能比较需要固定功耗、采样方式、提示与输出长度、KV池大小、缓存状态和运行轮次，并分别报告解码速率、端到端吞吐、TTFT与质量指标。"
+    ],
+    "oneHighValuePoint": "文章用实测明确了配置选择原则：单用户或共享长前缀优先DFlash2与前缀缓存，多并发独立请求则优先MTP或批处理模式，而不是只追求最高单流速度。",
+    "oneLineReview": "这是一份证据充分且高度可执行的推理优化工程文档，但部分结论强依赖指定模型、vLLM版本和24GB显卡环境。",
+    "primaryCategory": "大模型推理部署",
+    "rating": "S",
+    "rejectReason": "",
+    "retentionDecision": "重点精读并长期存档，作为消费级显卡大模型部署、调优与验证的参考实现",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "性能优化",
+      "基准测试"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该仓库给出单张RTX 3090上以vLLM部署Qwen3.8-27B的完整方案，涵盖量化、推测解码、长上下文、并发模式、Docker安装、质量验证、基准脚本及显存与WSL2限制。",
+    "tags": [
+      "Qwen3.8-27B",
+      "vLLM",
+      "RTX 3090",
+      "推测解码",
+      "模型量化"
+    ],
+    "title": "syv-ai/qwen38-27b-rtx3090: Qwen3.8-27B on a single RTX 3090 with vLLM: ~1,000 tok/s at 64 concurrent (int8 tensor-core GEMMs, fp16 DeltaNet state), ~114 tok/s single-user at default sampling / ~124 greedy (MTP drafts, own-output draft vocab, calibrated int4 lm_head, split-KV verify attention), 150k-262k context; patches, requant scripts, benchmarks",
+    "totalScore": 90,
+    "url": "https://github.com/syv-ai/qwen38-27b-rtx3090"
+  },
+  "payloadHash": "sha256:eaf9001bfde57b908772e69b430e8ebd77af0dedf4cbb6464213b2deda91124e",
+  "refs": {},
+  "revisionId": "sha256:ec4ea6750d798f6b2e6e4ba3b4730ed2869e6db50865f1517c85a4ff0835efb0",
+  "schemaVersion": 1,
+  "updatedAt": 1790769047939
+}

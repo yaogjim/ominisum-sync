@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726153080,
+  "entityType": "message",
+  "id": "1789726153080_hngagkez",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章主张：别靠灵感猜需求，应先用付费、流量、销量和传播数据找出真实痛点，再用落地页、预售或人工交付低成本验证，最后才开发产品。\n\n## 关键内容\n\n- **找付费信号**：观察进入 Stripe 收银台的流量、持续投放的广告、应用下载与收入、淘宝闲鱼销量、大厂高级会员功能，以及“分享多于点赞”的内容，判断需求强度和传播潜力。\n- **先验证再写代码**：先做产品演示页，按钮写“立即购买”而非“预约”；有人付款后甚至可先人工交付，以真实付费取代口头意愿。\n- **自动挖关键词**：每天抓取 Product Hunt 新产品，再结合 AITDK、Similarweb、SEMrush 等筛选新站、流量和非品牌搜索词；若新站也能获得搜索流量，说明该赛道可能仍有机会。\n- **别低估简单需求**：大模型能完成某项任务，不等于普通用户会用；老需求经过更便捷的包装，仍可能有人付费。\n\n## 通俗解读\n\n这些指标只是**需求线索，不是盈利证明**：进入付款页不等于付款，第三方收入数据是估算，持续投广告也不能严格证明 ROI 大于 1。文章真正值得借鉴的是“数据找方向—购买测试—人工交付—再开发”的流程，而非其中的营收推算。\n\n**是否值得细读：值得**，尤其适合独立开发者；但页面仅完整展示前三名答案，其他回答内容并不完整。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726153080,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d2620dce2df008da5b6a5f35585d4217060eb5aabc398c37b8cf398c488b24ab",
+  "refs": {
+    "sessionId": "1789721837984_4q687s3i"
+  },
+  "revisionId": "sha256:e7d17f9aaddaed7e5f266277a1d2a626392b0a94349661e5cd6988b903ef0cb8",
+  "schemaVersion": 1,
+  "updatedAt": 1789726153080
+}

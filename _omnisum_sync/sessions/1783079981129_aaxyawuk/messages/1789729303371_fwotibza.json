@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729303370,
+  "entityType": "message",
+  "id": "1789729303371_fwotibza",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 本地开放权重模型正成为可用的编码代理方案\n\nSebastian Raschka 分享了一套将开放权重 LLM 接入本地编码工具的方法，模型推理与代理流程可 100% 在本机运行。其核心判断是：随着模型能力和工具链成熟，本地模型已不仅适合实验，也开始具备承担严肃开发任务的潜力。\n\n## 接入熟悉的编码工具，保留模型切换自由\n\n这套方案可将本地 LLM 连接到 Claude Code、Codex 等编码代理框架，让开发者沿用熟悉的工作流。重点不是追求单一工具的极限性能，而是建立一套灵活配置：新模型发布后可以快速替换；若本地模型无法完成特定任务，也能在同一框架中切换到云端模型。\n\n## 选模型不能只看榜单，要检查实际工作能力\n\n作者给出四项评估清单：\n\n- 在长上下文任务中检查内存占用，判断硬件能否承载；\n- 测量预填充与解码速度，即模型读取上下文和逐字生成的效率；\n- 确认模型具备可靠的工具调用能力；\n- 放入真实编码测试框架，验证能否解决较难任务。\n\n这些指标共同决定模型是否“能跑、够快、会用工具、真能完成工作”，比单纯比较参数量或基准分数更有实际意义。\n\n## 易用性可能比微小性能差异更重要\n\n针对 Ollama 与 llama.cpp 的选择，Raschka 表示近期未观察到明显速度差距，并偏好 Ollama 提供的量化模型资源和便捷切换能力。他强调这是一套兼顾本地控制、实际可用性与云端兜底的入门工具包，而非性能最优化的唯一答案。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729303370,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ee17c59d7d6af86ec662aab69a423a786c0db778e4fc371062ca723d71b6902b",
+  "refs": {
+    "sessionId": "1783079981129_aaxyawuk"
+  },
+  "revisionId": "sha256:0a11b8f07f57c0bf301f131a7f4040945590211ae674aecfa536097956474b47",
+  "schemaVersion": 1,
+  "updatedAt": 1789729303370
+}

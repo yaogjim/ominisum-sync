@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785287420143,
+  "entityType": "session",
+  "id": "1785287420143_u7cwcl2c",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "购买益生菌产品前核对具体菌株、每份CFU含量及对应临床试验所用剂量。",
+      "评估健康宣称时分别验证加工后存活、通过胃肠道以及产生临床获益三个环节。",
+      "在具备合规实验条件时，采用空白对照、菌落计数和物种级确认来检验含菌产品。"
+    ],
+    "archiveReason": "包含较完整的对照培养、菌落计数、PCR鉴定和临床剂量比较案例，可作为验证商业健康宣称的方法参考。",
+    "classifiedAt": 1785402389931,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 7,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 5,
+      "transferability": 6
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "益生菌茶如何熬过沸水",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "taxa.substack.com",
+    "favicon": "https://substackcdn.com/image/fetch/$s_!HoCU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1cb2cb54-f7b6-4a71-a174-dc1dc61aebce%2Ffavicon-32x32.png",
+    "knowledgePoints": [
+      "BC30属于可形成芽孢的凝结芽孢杆菌，芽孢能耐受沸水、干燥及巴氏杀菌，并在适宜环境中重新萌发。",
+      "实验中沸水冲泡后的茶仍培养出BC30，菌种身份通过两个不同基因区域的PCR结果得到支持。",
+      "单杯茶估算约含3万CFU，仅相当于相关临床试验每日10亿CFU剂量的约0.003%，存活不等于具有临床效益。"
+    ],
+    "oneHighValuePoint": "判断益生菌产品不能止于确认菌株是否存活，还应继续比较实际摄入剂量、胃肠道存活率与临床有效剂量。",
+    "oneLineReview": "原创实验和论证链较扎实，但单次实验规模有限，且对益生菌临床效果仍只能得出审慎结论。",
+    "primaryCategory": "科学实验与健康产品评估",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并存档，重点保留其验证产品宣传的实验思路",
+    "secondaryCategories": [
+      "微生物学",
+      "消费者健康"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者从益生菌茶遇沸水是否失活出发，设计冷泡与沸水浸泡实验，以培养计数和双引物PCR确认BC30仍可存活，并进一步质疑产品实际剂量与临床试验剂量的巨大差距及益生效果证据。",
+    "tags": [
+      "益生菌",
+      "芽孢耐热性",
+      "BC30",
+      "实验验证",
+      "临床剂量"
+    ],
+    "title": "How to survive boiling water",
+    "totalScore": 64,
+    "url": "https://taxa.substack.com/p/how-to-survive-boiling-water"
+  },
+  "payloadHash": "sha256:da3fa366f9d40f67a595574c74441a3d30493422af97f7039e0a0886eec76a32",
+  "refs": {},
+  "revisionId": "sha256:2f9356a865bfa80dc6c725eedc73984103e557b3c07e697da134c5923b01ca3a",
+  "schemaVersion": 1,
+  "updatedAt": 1785402809571
+}

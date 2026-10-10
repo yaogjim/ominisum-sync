@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783080378286,
+  "entityType": "message",
+  "id": "1783080378285_7p57crsy",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AGENTS配置分层实践\n\n**评级**: B (60.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent 工程\n**次类别**: 开发工作流, 工具配置\n**标签**: #AGENTS.md #Claude #Codex #Agent Harness #工作流规范\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 一条简短但有实践价值的 AI Agent 配置经验，方法清晰但缺少系统论证。\n**核心高价值点**: 将 AGENTS.md 分为全局、项目、AgentHome 三层，分别管理目录约定、项目要求和角色职责。\n\n### 摘要\n文章指出不应把 CLAUDE.md/AGENTS.md 当银弹，通用知识和方法应由 Agent harness 承担，AGENTS.md 更适合记录项目偏好、目录约定、职责权限和工作流要求。\n\n### 知识要点\n- AGENTS.md 不宜承载过多通用知识或通用工作方法，应聚焦项目和个人偏好\n- 全局配置可统一仓库与 worktree 路径，减少多 Agent 并行时的目录混乱\n- 项目级 AGENTS.md 可记录项目概览、文档入口和特殊约束\n- AgentHome 可用于定义不同 Agent 的角色、权限和 PR/Review/CI/Deploy 工作流\n\n### 行动项\n- 检查自己的 CLAUDE.md/AGENTS.md 是否混入过多通用知识，进行精简\n- 尝试建立全局、项目、AgentHome 三层 Agent 配置结构\n- 为多 Agent 工作流统一 repo 与 worktree 的本地目录规范\n\n### 存档判定\n归档: 是 — 原因: 提供了 AGENTS.md 分层配置、目录约定和 AgentHome 职责划分的具体实践，可作为工作流配置参考\n删除: 否\n留存决策: 短期参考后可保留，用于优化个人 AI Agent 配置实践",
+    "role": "assistant",
+    "timestamp": 1783080378286,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:e0463b9d7123577e12b78c17c3b0473111ba465e46605a4d02068de93c4fe482",
+  "refs": {
+    "sessionId": "1783079905938_dabsdsc1"
+  },
+  "revisionId": "sha256:c2a5fa70dd0e1c62f9151babd7c4f3f160901c5086f76291fef522292de0d604",
+  "schemaVersion": 1,
+  "updatedAt": 1783080378286
+}

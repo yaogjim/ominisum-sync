@@ -1,0 +1,109 @@
+{
+  "createdAt": 1783064129340,
+  "entityType": "session",
+  "id": "1783064129340_ttqzh8na",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估现有招聘或协作流程中哪些状态变化适合用Git仓库记录证据链",
+      "拆解业务流程中的主数据层、协作层、Agent操作层和通知执行层",
+      "尝试设计一个候选人或任务对象的workflow.json与状态流转目录结构"
+    ],
+    "archiveReason": "提供了将招聘流程拆分为业务主系统、GitHub证据链、本地Agent和飞书执行层的架构思路，有一定复用价值",
+    "byline": "姚金刚",
+    "classifiedAt": 1783076323230,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI面试管家四端协同架构",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 800,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMNYuEiawAEUIpI?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HMNYuEiawAEUIpI?format=jpg&name=medium",
+        "width": 1200
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      },
+      {
+        "alt": "James Yao",
+        "caption": "",
+        "height": 96,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/profile_images/474112824034086912/YbGtCn5y_x96.jpeg",
+        "role": "article",
+        "score": 55,
+        "src": "https://pbs.twimg.com/profile_images/474112824034086912/YbGtCn5y_x96.jpeg",
+        "width": 96
+      }
+    ],
+    "knowledgePoints": [
+      "数据库保存业务主数据，GitHub保存协作过程和证据链，可提升流程可追踪性",
+      "本地Agent作为智能操作层，可以在自动化协作和安全边界之间取得平衡",
+      "飞书日历、通知、提醒等执行任务异步化，有助于故障隔离和状态回写",
+      "AI负责事实抽取和建议，人类保留最终结论、理由和责任判断"
+    ],
+    "oneHighValuePoint": "将招聘流程GitOps化，用GitHub保存候选人流转、反馈和状态变化，形成可追踪的版本化证据链。",
+    "oneLineReview": "有启发性的AI招聘流程自动化案例，但缺少实现细节、数据验证和可复用模板。",
+    "primaryCategory": "AI工作流自动化",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为AI流程自动化与GitOps化业务系统的案例素材",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "招聘系统",
+      "组织协作"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个AI面试管家系统的升级方案，通过AI面试系统、GitHub、飞书和Codex协同，实现候选人资料流转、AI首面、反馈记录、排期提醒和证据链追踪。",
+    "tags": [
+      "AI面试",
+      "GitOps",
+      "飞书自动化",
+      "Agent协作",
+      "流程证据链"
+    ],
+    "title": "姚金刚: 团队每天的招聘与面试量越来越大 于是这两天，给团队的「AI面试管家」系统进行了一次大的升级 核心是实现更自动化、更智能的四端协同：AI面试系统+GitHub+飞…",
+    "totalScore": 61,
+    "url": "https://x.com/yaojingang/status/2072598021234409486"
+  },
+  "payloadHash": "sha256:bf06ce6e7a8aad25eed55169c9e2bf1573fa27c6f39a4fa1e7a5085dddf99b8d",
+  "refs": {},
+  "revisionId": "sha256:703dcd7a9a72f9eef9d6d29d42295d33fed9359b63612d7283a5eb8290deeebd",
+  "schemaVersion": 1,
+  "updatedAt": 1789728635210
+}

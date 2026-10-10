@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693983011,
+  "entityType": "message",
+  "id": "1789693983013_6i8edrt9",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者分享了一套“课堂录音 → 本地转写 → 人工筛选 → GPT 整理讲义”的复习流程，重点是让孩子补回课堂遗漏，而不是用 AI 替代听课。\n\n## 关键内容\n\n- 经老师同意后录音，并用本地 Whisper 转成带时间戳和置信度的 JSON，尽量避免课堂内容上传公网。\n- 根据无语音概率、压缩率等指标标记疑似噪声、重复或误识别片段；但这些指标只能提示风险，仍需人工对照录音。\n- 人工保留老师讲解、板书和答题方法，再让 GPT 改写成核心复习卡、分主题方法、必背内容、复习顺序和订正题。\n- 成品还要检查是否编造、是否残留姓名，并清除 Word 文件属性。作者强调讲义只是复习工具，不能替代课堂。\n\n## 通俗解读\n\n这不是“把录音扔给 ChatGPT 就完成”，而是一条半自动流程：Whisper 负责听写，人负责筛选和核验，GPT 负责重新组织。最关键的仍是人工把关，否则可能把识别错误包装成看似正确的知识点。\n\n## 是否值得细读\n\n有课堂录音整理需求、重视隐私且愿意动手配置的人，值得细读操作步骤；只想了解思路，看流程和自检清单即可。需要注意：标题称“一个月提高 30 分”，正文没有提供成绩对比、测试条件或因果证据，因此不能据此认定提分效果。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693983011,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0c4694059a4b5acef0f9be30a89afab51fd9bd46d9a053772c57611dc9c59071",
+  "refs": {
+    "sessionId": "1788428447459_j8ksfxj5"
+  },
+  "revisionId": "sha256:8f20f9664c9111ede0ebca5e8d163f59cc9868a0ba68f1c713674433c628599b",
+  "schemaVersion": 1,
+  "updatedAt": 1789693983011
+}

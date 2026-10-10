@@ -1,0 +1,15 @@
+{
+  "createdAt": 1789703336947,
+  "entityType": "session-content",
+  "id": "1789703336947_51o25dcg",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>andrew chen</strong></header><div class=\"tw-body\">当前用于本地 AI 实验的 homelab 配置：<br><br>- hermes box 托管在 Framework Desktop Mainboard AI Max+ 395 上<br>- 5090 eGPU 运行 Qwen 3.8 27B，用于快速 tok/s 的 LLM 使用——有时可达 150+ tok/s<br>- 2x DGX Spark：运行 Deepseek v4 Flash 0731——模型更好但速度更慢<br>- 用于监控的 pi 5<br>- 作为开发机的 Mac mini——根据使用场景使用 Herdr 和 ohmypi/codex/claude<br>- （大部分）装在 10 英寸 DeskPi 迷你机架中<br><br>Hermes 默认使用本地 AI，但通过一个自研的路由插件调用一个小型低 TTFT 模型（Arch-Router）来决定是走本地还是升级到云端/前沿模型。目标是随着时间推移达到 100% 本地，但目前大概更像是 60-70%<br><br>Sparks 用于批处理后台运行（所有 cron 作业、较长的开发构建等）<br><br>你需要所有这些吗？绝对不需要哈哈。我从 Mac mini 开始，然后忍不住随着时间不断添加！<br><br>另外我后悔买了 eGPU，所以我不推荐任何人买那个</div></article>",
+    "pageContent": "andrew chen: 当前用于本地 AI 实验的 homelab 配置： - hermes box 托管在 Framework Desktop Mainboard AI Max+ 395 上\n- 5090 eGPU 运行 Qwen 3.8 27B，用于快速 tok/s 的 LLM 使用——有时可达 150+ tok/s\n- 2x DGX Spark：运行 Deepseek v4 Flash 0731——模型更好但速度更慢\n- 用于监控的 pi 5\n- 作为开发机的 Mac mini——根据使用场景使用 Herdr 和 ohmypi/codex/claude\n- （大部分）装在 10 英寸 DeskPi 迷你机架中 Hermes 默认使用本地 AI，但通过一个自研的路由插件调用一个小型低 TTFT 模型（Arch-Router）来决定是走本地还是升级到云端/前沿模型。目标是随着时间推移达到 100% 本地，但目前大概更像是 60-70% Sparks 用于批处理后台运行（所有 cron 作业、较长的开发构建等） 你需要所有这些吗？绝对不需要哈哈。我从 Mac mini 开始，然后忍不住随着时间不断添加！ 另外我后悔买了 eGPU，所以我不推荐任何人买那个"
+  },
+  "payloadHash": "sha256:26d896fdac74c05c64c894df0f137a1d34dc7d2b65115ef22c7e1ac5634928bf",
+  "refs": {},
+  "revisionId": "sha256:8c4237c7f0dfbab48bd122deb466c4e9761fc9dc8bd0b33ce2edf4f5a5dae263",
+  "schemaVersion": 1,
+  "updatedAt": 1789727583382
+}

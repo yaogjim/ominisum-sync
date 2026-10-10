@@ -1,0 +1,24 @@
+{
+  "createdAt": 1785376741768,
+  "entityType": "message",
+  "id": "1785376803582_lku2x99s",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Grok Build CLI 到底向 xAI 发送了什么？\n\n## 一句话结论\n\n针对 **Grok Build CLI 0.2.93** 的网络抓包显示：它不仅会把模型读取的文件内容发送给 xAI，还会默认上传**整个 Git 仓库及提交历史**；其中包括未被模型读取的文件。相关数据经 `/v1/storage` 被服务器接受并存入名为 `grok-code-session-traces` 的 Google Cloud Storage。\n\n> 作者后续更新称，xAI 已通过服务端配置关闭代码库上传，但历史数据是否已全部删除仍未得到确认。\n\n## 两条独立的数据通道\n\n### 1. 模型上下文：发送被读取的文件\n\n模型读取的文件会通过 `POST /v1/responses` 发送给 xAI：\n\n- 文件内容以明文进入模型请求。\n- 测试中的 `.env`、API Key 和数据库密码均未被脱敏。\n- 同样的内容还被打包进 `session_state`，通过 `/v1/storage` 上传。\n\n这属于云端 AI 完成任务所需的上下文传输，但风险在于：**敏感信息没有被有效识别或过滤。**\n\n### 2. 代码库快照：上传整个仓库\n\nCLI 还会通过 `/v1/storage` 上传独立的代码库快照：\n\n- 包含所有 Git 跟踪文件，而非仅模型读取过的文件。\n- 包含完整 Git 历史。\n- 即使明确要求“不要读取任何文件”，仓库仍会被上传。\n- 抓取到的 Git Bundle 可直接克隆，并恢复从未被模型打开的测试文件。\n\n因此，“模型没有读取文件”并不意味着“文件没有离开本地”。\n\n## 关键证据\n\n### 未读文件也被上传\n\n作者在两个独立仓库中放入唯一标记，并要求 Grok 不读取文件。随后从网络上传的 Git Bundle 中完整恢复了：\n\n- 未读取文件及其内容；\n- 唯一测试标记；\n- 仓库完整提交历史。\n\n相关上传请求均返回 HTTP 200，证明数据不仅离开了设备，也被服务端成功接收。\n\n### 上传规模与模型读取无关\n\n在一个约 12 GB、主要由随机文件组成的仓库中：\n\n- `/v1/responses` 模型请求总量仅约 **192 KB**；\n- `/v1/storage` 已上传约 **5.10 GiB**；\n- 两者相差约 **27,800 倍**；\n- 抓包在上传仍持续时被主动终止。\n\n这证明大规模传输来自整个代码库快照，而非模型实际读取的上下文。\n\n## 数据存储与开关问题\n\n### 数据去向\n\n二进制字符串、元数据和网络行为共同指向：\n\n- 存储服务：Google Cloud Storage；\n- Bucket：`grok-code-session-traces`；\n- 并非 AWS S3。\n\n### “Improve the model”无法阻止上传\n\n关闭“Improve the model”后：\n\n- 整个仓库仍被上传；\n- `/v1/settings` 仍返回 `trace_upload_enabled: true` 和 `upload_enabled: true`。\n\n因此，该开关主要控制**是否用于模型训练**，而不是控制代码是否上传或存储。\n\n## 作者没有证明什么\n\n该研究证明的是：\n\n- 数据被传输；\n- 上传请求被服务器接受；\n- 数据进入存储流程。\n\n但它**没有证明**：\n\n- xAI 使用这些代码训练模型；\n- 所有账户、版本和配置都具有完全相同的行为；\n- 被 `.gitignore` 忽略的文件一定会被整库上传；\n- 所有格式的真实密钥都不会被脱敏；\n- 12 GB 仓库最终能够完整上传——抓包只证明至少 5.10 GiB 已成功上传。\n\n## 后续变化\n\n根据文章顶部更新：\n\n- xAI 后续通过 `disable_codebase_upload: true` 在服务端关闭了代码库上传；\n- 新增的 `/privacy` 选项被作者测试为**数据保留设置**，而非阻止发送；\n- Elon Musk 公开承诺删除此前上传的数据，但文章发布时尚未确认删除完成。\n\n因此，以上结论主要适用于 **Grok 0.2.93 的历史行为**，不能直接等同于当前版本现状。\n\n## 产品与安全启示\n\n1. **训练退出不等于传输退出**：隐私开关必须明确区分“上传、存储、训练和保留”。\n2. **云端编程工具应默认最小化数据范围**：模型所需上下文与整库备份不应混为一谈。\n3. **敏感文件需要本地拦截**：`.env`、密钥和凭证应在发送前自动识别、脱敏或阻断。\n4. **后台上传必须透明可控**：应提供清晰提示、细粒度授权、上传清单和彻底关闭选项。\n5. **还存在本地可靠性风险**：上传队列可能产生数 GB 至数十 GB 临时文件，甚至耗尽磁盘。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1785376741768,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:55776879f7a14f30f443b8054a2379016f0ebfd8d06cc88c40c7a53099d21489",
+  "refs": {
+    "sessionId": "1785376803019_boolw9my"
+  },
+  "revisionId": "sha256:dcf8824f6c932987b7738af2ed47c89b34fe8689b51d3a6c2f604eb1f059f900",
+  "schemaVersion": 1,
+  "updatedAt": 1785376741768
+}

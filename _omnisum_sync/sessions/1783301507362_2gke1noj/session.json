@@ -1,0 +1,65 @@
+{
+  "createdAt": 1783301507362,
+  "entityType": "session",
+  "id": "1783301507362_2gke1noj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据团队风险、代码重要性和 AI 参与程度，定义不同级别的 PR 审查策略。",
+      "检查自己当前处于代码阅读量表的哪个位置，并判断是否需要调整审查深度。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783301545919,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 1,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "代码阅读不是二元选择",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "核心观点简单，可直接吸收为一句方法提示，无需长期保存原文。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "代码阅读和 PR 审查可以按投入深度分层，而非简单二选一。",
+      "在 AI 参与开发的场景中，审查重点可能从逐行代码转向 PR 意图、抽查机制和代理行为痕迹。"
+    ],
+    "oneHighValuePoint": "把代码阅读从“读或不读”转化为一个可调节的程度量表。",
+    "oneLineReview": "一个有启发但非常简略的代码评审视角提示，适合速览不值得归档。",
+    "primaryCategory": "软件工程",
+    "rating": "C",
+    "rejectReason": "内容较短，仅提出一个代码阅读程度量表，缺乏展开论证、案例和具体实践建议。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "代码评审",
+      "工程管理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章认为“是否应该阅读代码”不是二元问题，而是从逐行阅读 diff 到完全交由模型处理的连续谱。重点在于根据场景选择合适的代码阅读深度。",
+    "tags": [
+      "代码阅读",
+      "Pull Request",
+      "代码评审",
+      "AI代理",
+      "工程实践"
+    ],
+    "title": "x.com/mattpocockuk/status/2073711736838918436",
+    "totalScore": 49.5,
+    "url": "https://x.com/mattpocockuk/status/2073711736838918436"
+  },
+  "payloadHash": "sha256:407b91c9830b6d84566bea109af6e13d69cc09784c1b55c1a626f7169931e81f",
+  "refs": {},
+  "revisionId": "sha256:545914fcb49cff17f9d031f3174cab530d40512e27fccf79b2ce927426b356e6",
+  "schemaVersion": 1,
+  "updatedAt": 1783309311246
+}

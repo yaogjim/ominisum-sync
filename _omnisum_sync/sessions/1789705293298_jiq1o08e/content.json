@@ -1,0 +1,15 @@
+{
+  "createdAt": 1789705293298,
+  "entityType": "session-content",
+  "id": "1789705293298_jiq1o08e",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>炎朗 Gavin</strong></header><div class=\"tw-body\">Pi agent是真香，hermess什么的都可以抛一边了，就用它作为桌面 work主力，速度快、还省token<br><br>推荐几个必装的扩展，装上后性能、生产力飞起:<br><br>-  pi-web-access <br>网络访问全家桶：网页搜索、URL 抓取、GitHub 仓库克隆、PDF 提取、YouTube/本地视频理解。支持 OpenAI、 Brave、Tavily、Kagi、Exa、Perplexity 等众多搜索后端<br><br>- pi-memory  <br> 记忆系统：长时记忆（MEMORY.md）、每日日志、scratchpad，支持 qmd 语义检索（memory_search 等）<br><br>- juicesharp/rpiv-todo<br> 模型可用的待办清单（todo 工具），以实时 overlay 形式渲染，跨 /reload 和上下文压缩存活<br><br>- pi-subagents  <br>子代理编排：可派生并行/串行子 agent 处理多步任务，带 worktree 隔离、工作流脚本、任务预算等能力 <br><br>-  pi-mcp-adapter <br> MCP 适配器：让 Pi 接入 Model Context Protocol 服务器（mcp / mcpScript 工具即来自这里），而且是动态判断接入MCP Server，不会塞爆上下文<br><br>- context-mode<br>本质上是通过MCP Server方式接入，将tool calling result 和文件读写内容进行执行压缩，区分出主context，有效节省ctx空间</div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Michael Anti</strong> <span class=\"tw-eng\">♥ 24 · 💬 1</span><p>最核心的就是pi-web-access ，我觉得pi官方应该收入这个插件。</p></div><div class=\"tw-reply\"><strong>@ZEN</strong> <span class=\"tw-eng\">♥ 8 · 💬 1</span><p>确实很喜欢 Pi 的极简，<br>https://<br>todos.dev 也是基于 Pi 内核打造。</p></div><div class=\"tw-reply\"><strong>@funny_mud_pee</strong> <span class=\"tw-eng\">♥ 6 · 💬 1</span><p>里面有一半个人认为没啥用. context-mode/pi-memory/pi-mcp-adapter <br>这里面6个我目前仅保留一个todo, 其他要么没用去掉, 要么替换了</p></div><div class=\"tw-reply\"><strong>@Zane</strong> <span class=\"tw-eng\">♥ 5 · 💬 1</span><p>你装这么多东西，不就跟pi 作者的设计哲学直接背道而驰了吗</p></div><div class=\"tw-reply\"><strong>@青青草原我为王</strong> <span class=\"tw-eng\">♥ 3 · 💬 1</span><p>说白了抛掉 Hermes 装六个扩展拼回来，功能一个没多，退了精装房去住帐篷</p></div></div>",
+    "pageContent": "炎朗 Gavin: Pi agent是真香，hermess什么的都可以抛一边了，就用它作为桌面 work主力，速度快、还省token 推荐几个必装的扩展，装上后性能、生产力飞起: - pi-web-access 网络访问全家桶：网页搜索、URL 抓取、GitHub 仓库克隆、PDF 提取、YouTube/本地视频理解。支持 OpenAI、 Brave、Tavily、Kagi、Exa、Perplexity 等众多搜索后端 - pi-memory 记忆系统：长时记忆（MEMORY.md）、每日日志、scratchpad，支持 qmd 语义检索（memory_search 等） - juicesharp/rpiv-todo 模型可用的待办清单（todo 工具），以实时 overlay 形式渲染，跨 /reload 和上下文压缩存活 - pi-subagents 子代理编排：可派生并行/串行子 agent 处理多步任务，带 worktree 隔离、工作流脚本、任务预算等能力 - pi-mcp-adapter MCP 适配器：让 Pi 接入 Model Context Protocol 服务器（mcp / mcpScript 工具即来自这里），而且是动态判断接入MCP Server，不会塞爆上下文 - context-mode\n本质上是通过MCP Server方式接入，将tool calling result 和文件读写内容进行执行压缩，区分出主context，有效节省ctx空间\n---\n热门回复 (共 5 条):\n@Michael Anti (♥ 24 · 💬 1):\n最核心的就是pi-web-access ，我觉得pi官方应该收入这个插件。\n\n@ZEN (♥ 8 · 💬 1):\n确实很喜欢 Pi 的极简，\nhttps://\ntodos.dev 也是基于 Pi 内核打造。\n\n@funny_mud_pee (♥ 6 · 💬 1):\n里面有一半个人认为没啥用. context-mode/pi-memory/pi-mcp-adapter \n这里面6个我目前仅保留一个todo, 其他要么没用去掉, 要么替换了\n\n@Zane (♥ 5 · 💬 1):\n你装这么多东西，不就跟pi 作者的设计哲学直接背道而驰了吗\n\n@青青草原我为王 (♥ 3 · 💬 1):\n说白了抛掉 Hermes 装六个扩展拼回来，功能一个没多，退了精装房去住帐篷\n"
+  },
+  "payloadHash": "sha256:547b982850eb53c669d52253f9614c8f7a51c7fe4f2d38b4077a3bce282f8648",
+  "refs": {},
+  "revisionId": "sha256:b271ebdefb8a674f6a8d3b152aa27bdea4bc375142d78805e25d173aecf50272",
+  "schemaVersion": 1,
+  "updatedAt": 1789727527902
+}

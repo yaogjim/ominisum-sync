@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784692464880,
+  "entityType": "session",
+  "id": "1784692464880_mh82zw1c",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在合规、脱敏的前提下，统计提示词或产品日志中炒股、算命等场景的真实占比",
+      "分别比较Chatbot与Agent在相关场景中的使用频率、任务类型和留存表现",
+      "为“炒股”和“算命”假设设置反证标准，避免被个别案例或社交媒体回音影响判断"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1784693126788,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "大模型用户场景中的炒股与算命",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter-pip.3.ico",
+    "knowledgePoints": [
+      "用户场景占比判断必须明确数据来源、样本范围和统计口径",
+      "高风险决策与情绪价值可能是大模型使用需求的重要观察方向",
+      "未经验证的行业传闻只能作为研究假设，不能直接作为市场规模结论"
+    ],
+    "oneHighValuePoint": "将炒股和算命提出为大模型用户需求的待验证假设，提示产品研究应关注高风险决策与情绪价值场景。",
+    "oneLineReview": "这是一个有启发性的用户场景传闻，但证据不足，不宜据此判断大模型真实需求结构。",
+    "primaryCategory": "AI应用观察",
+    "rating": "C",
+    "rejectReason": "核心结论来自匿名传闻，缺少样本、数据口径、时间范围和独立验证",
+    "retentionDecision": "速览即可，不建议作为事实依据；可作为待验证的用户场景线索",
+    "secondaryCategories": [
+      "用户研究",
+      "产品需求分析"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章转述一则未经数据支持的传闻，称国内大模型用户使用量最高的场景可能是炒股和算命，并借“钱和命”概括需求动机；作者明确承认未取得具体数据，邀请读者验证或反驳。",
+    "tags": [
+      "大模型应用",
+      "用户场景",
+      "提示词分析",
+      "炒股",
+      "算命"
+    ],
+    "title": "(4) Frank Wang 玉伯: 听大模型公司的朋友说，分析国内各大模型的用户提示词，发现用量最高的前三场景是： 1、炒股",
+    "totalScore": 44,
+    "url": "https://x.com/lifesinger/status/2077551271188590846"
+  },
+  "payloadHash": "sha256:bae8dbde93a60cbc4c1af1a8169568b3a49d981ac4255c71c7c5fa1cbb73ca7a",
+  "refs": {},
+  "revisionId": "sha256:8dbc2002ca54fac4ae47c1ffb6d6a9f14f72a5b22896a17339d42343df1253fd",
+  "schemaVersion": 1,
+  "updatedAt": 1784693126966
+}

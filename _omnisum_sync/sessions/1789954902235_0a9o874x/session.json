@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789954902235,
+  "entityType": "session",
+  "id": "1789954902235_0a9o874x",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "先在现有操作系统上用Hermes完成一个真实任务，判断助手本身是否值得持续使用。",
+      "阅读Omarchy官方迁移与AI说明，仅在可以承受重置的备用机器上测试，并确认必需软件的兼容性。",
+      "先验证默认助手、一个快捷键和实际任务，再添加状态栏组件；系统修改前要求展示方案并保留回滚能力。"
+    ],
+    "archiveReason": "具有可复用的工具迁移判断和低风险试用顺序，适合规划智能体工作环境时参考。",
+    "byline": "Hermes Agent Super-Intel",
+    "classifiedAt": 1790768400848,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Omarchy与Hermes的集成取舍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HQ8tf-AaAAAj4g1?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HQ8tf-AaAAAj4g1?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "助手能力与桌面集成是两个层次；文章明确指出，使用Hermes并不要求安装Omarchy。",
+      "是否迁移工作环境，应同时考虑智能体使用频率、键盘操作偏好、必需软件兼容性和主力机器的稳定性要求。",
+      "允许智能体修改系统设置时，应先审查方案，并保留快照或撤销路径。"
+    ],
+    "oneHighValuePoint": "把“是否需要这个助手”和“是否需要更换操作系统”拆成两个决策：先在现有系统验证Hermes的实际用途，再用备用机器测试Omarchy。",
+    "oneLineReview": "适合作为智能体桌面环境的入门选型参考，但内容重复较多，关键功能与兼容性主张仍需核实。",
+    "primaryCategory": "AI工具与工作环境",
+    "rating": "B",
+    "rejectReason": "比喻和优缺点多次重复；系统集成、平台支持及本地数据等说法缺少版本、来源和验证，不能直接作为技术实施依据。",
+    "retentionDecision": "选择性保留选型标准与渐进试用清单，不作为安装或兼容性依据",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Linux桌面",
+      "工具选型"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Hermes与Omarchy的定位，比较其与Windows、macOS组合在桌面集成、软件兼容和学习成本上的取舍，并建议先试用助手，再在备用机器上逐步测试Linux环境，保留系统修改的撤销能力。",
+    "tags": [
+      "Omarchy",
+      "Hermes",
+      "桌面智能体集成",
+      "Linux迁移",
+      "试用与回滚"
+    ],
+    "title": "Omarchy 与 Hermes：简明指南",
+    "totalScore": 61,
+    "url": "https://x.com/BkashJosi/status/2093946160792899956"
+  },
+  "payloadHash": "sha256:8ca998a7038ae05f9714cba24b46128d19874b6bf9fc1f6ab97bd03fd8d3db93",
+  "refs": {},
+  "revisionId": "sha256:7f39356785ea6cdcbc30f41f2c9ad75dfcc301cee4519151305a55d88f2bf21f",
+  "schemaVersion": 1,
+  "updatedAt": 1790768402466
+}

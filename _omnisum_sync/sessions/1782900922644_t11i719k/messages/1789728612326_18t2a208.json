@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728612326,
+  "entityType": "message",
+  "id": "1789728612326_18t2a208",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# X 推出两类 MCP Server，让 AI 工具直接调用 API 与查询文档\n\nX 提供两类 MCP（模型上下文协议）服务：一类连接 X API，让 Cursor、Claude、VS Code、Grok Build 等 AI 工具搜索历史内容、查询用户和趋势，并在授权后管理书签、起草或发布文章；另一类用于检索 X API 文档。两者可同时接入，使 AI 既能查文档，也能实际执行 API 操作。\n\n## 两种 API 接入方式对应不同能力\n\nX API MCP 的托管地址为 `https://api.x.com/mcp`，接入分为两条路径：\n\n- **App-only Bearer**：客户端携带应用令牌直接访问，无需本地桥接或浏览器登录；配置简单，但仅支持只读接口，不能以用户身份操作。\n- **xurl 本地桥接**：通过 OAuth 2.0 PKCE 完成一次浏览器登录，之后自动缓存、刷新令牌。模型可在账号授权范围内执行写入操作，是完整功能的推荐方案。\n\n由于 X 不支持动态客户端注册，开发者仍需自行创建 X 应用、启用 OAuth，并配置本地回调地址。`xurl` 负责在 MCP 客户端与 X 服务之间注入最新 Bearer Token。\n\n## 可嵌入主流 AI 开发工作流\n\n`xurl` 可通过 `npx` 启动，无需单独安装，并支持 Grok Build、Cursor、Claude Desktop、VS Code 及其他兼容 MCP 的客户端。首次调用时会等待用户完成登录，因此客户端可能需要将启动超时调至 300 秒以上；无浏览器的远程环境可提前以无头模式授权。\n\n## 文档服务补齐“查询—执行”闭环\n\n位于 `https://docs.x.com/mcp` 的文档 MCP 可查询接口说明、认证指南和代码示例。结合 API MCP，AI 助手能够边确认接口规范边发起调用，减少开发中切换文档与工具的成本。X 还提供 OpenAPI 规范，可用于生成客户端、导入 Postman或校验请求结构。\n\n## 权限、密钥与限流仍需谨慎管理\n\nX 建议为 MCP 单独创建最小权限应用，通过环境变量保存凭证，避免将令牌写入聊天、日志或共享配置。写操作受更严格的速率限制，可能出现 `429`，调用方需要退避重试。桥接程序在本地运行，凭证不会离开设备，只有 Bearer Token 会通过 TLS 发往 X API。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728612326,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:25ca05ec3add0a856dc52e8b6f37c3ee9c56011692c94fd4b6e5688c0f24f94e",
+  "refs": {
+    "sessionId": "1782900922644_t11i719k"
+  },
+  "revisionId": "sha256:b2a0b18cfbde976c78d2ee96ef783f219de752ed8baca2666b28452ba7d2ca73",
+  "schemaVersion": 1,
+  "updatedAt": 1789728612326
+}

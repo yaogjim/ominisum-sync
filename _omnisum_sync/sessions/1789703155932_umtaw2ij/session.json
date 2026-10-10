@@ -1,0 +1,65 @@
+{
+  "createdAt": 1789703155932,
+  "entityType": "session",
+  "id": "1789703155932_umtaw2ij",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "访问项目仓库，核对支持的操作系统、手机平台和连接方式。",
+      "在测试设备上验证投屏延迟、控制稳定性及安装成本。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1789703176925,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用Escrcpy在电脑控制手机",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Escrcpy 是一个面向电脑端控制手机场景的开源项目。",
+      "该项目被用于将长时间的手机内容浏览迁移到 Windows 或 macOS 桌面端。"
+    ],
+    "oneHighValuePoint": "Escrcpy 可作为在桌面端镜像和控制手机的开源方案候选。",
+    "oneLineReview": "提供了一个可能实用的跨设备控制工具线索，但信息和证据不足，适合按需速览。",
+    "primaryCategory": "开发与效率工具",
+    "rating": "C",
+    "rejectReason": "内容仅为简短工具推荐，缺少安装步骤、功能边界、兼容性说明和对比测试。",
+    "retentionDecision": "速览工具仓库，有明确的手机桌面控制需求时再保留",
+    "secondaryCategories": [
+      "开源软件",
+      "跨设备工作流"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章推荐开源项目 Escrcpy，称其可在 Windows 或 macOS 电脑上镜像并控制手机，用于减少长时间盯着手机浏览小红书等内容的不适，但未提供配置方法和实测细节。",
+    "tags": [
+      "Escrcpy",
+      "手机投屏",
+      "电脑控制手机",
+      "Android",
+      "开源工具"
+    ],
+    "title": "黄赟: 嗯， 这个 escrcpy 开源库要吹下的，它完美地解决从电脑控制手机操作的难题 我经常扒拉小红书爆款，常用手机盯着看 1-2小时，真干眼",
+    "totalScore": 45,
+    "url": "https://x.com/huangyun_122/status/2096891624966291528"
+  },
+  "payloadHash": "sha256:93855971093d1864500d761ab9b80c191d035922c45f7bcbdf41fdc7609a6686",
+  "refs": {},
+  "revisionId": "sha256:8a72d7dc44a5dbffa22210a3a0235e8547c4050e8047ad15e577839e5e1a0e2b",
+  "schemaVersion": 1,
+  "updatedAt": 1789704249700
+}

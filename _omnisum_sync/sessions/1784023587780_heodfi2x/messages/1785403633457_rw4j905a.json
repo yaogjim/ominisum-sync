@@ -1,0 +1,24 @@
+{
+  "createdAt": 1785403287293,
+  "entityType": "message",
+  "id": "1785403633457_rw4j905a",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Herdr：用一个终端管理整群 AI 编程代理\n\nHerdr 是一款面向 AI 编程代理的终端多路复用器：既保留 tmux/Zellij 的持久会话和远程连接能力，又能识别代理状态，并通过 CLI、API 和插件实现自动化编排。代理可运行在本机、服务器或虚拟机上，用户则能从电脑、手机等任意终端接入。\n\n## 1. 开发者实测与上手体验\n\n文章提供了 3 个独立演示，帮助用户了解 Herdr 在真实开发流程中的表现：\n\n- **Jilles（6 分 37 秒）**：快速介绍安装、工作区、代理状态、会话持久化和 Agent Skill 工作流。\n- **DevOps Toolbox（16 分 40 秒）**：深入体验鼠标操作窗格、远程使用、代理支持及 CLI。\n- **Better Stack（7 分 10 秒）**：对比 Herdr 与 tmux，重点展示代理感知、远程连接及纯终端运行方式。\n\n## 2. 代理在哪里运行，就在哪里管理\n\nHerdr 不依赖桌面 GUI，代理可以运行在服务器、Mac Mini、沙箱虚拟机等任何支持 SSH 的环境中，用户可从任意终端连接，甚至使用手机操作。\n\n主要有 3 种使用方式：\n\n- **本机运行**：拆分窗格、创建标签页；即使关闭终端，代理和会话仍可继续运行。\n- **SSH 远程运行**：像 tmux 一样登录服务器后启动 Herdr，断开 SSH 后会话不会结束。\n  ```bash\n  ssh you@server\n  herdr\n  ```\n- **原生远程连接**：本地客户端直接连接远端会话，Herdr 可自动安装到主机，并保留本地快捷键和剪贴板能力，包括图片粘贴。\n  ```bash\n  herdr --remote workbox\n  ```\n\n在手机或平板等窄屏设备上，Herdr 仍保留真实终端视图，同时提供更适合触控选择的切换界面。\n\n## 3. 产品定位：终端复用器，而非桌面代理应用\n\nHerdr 试图填补两类工具之间的空白：\n\n- **tmux/Zellij**：擅长管理持久终端会话，但不了解 AI 代理的工作状态。\n- **桌面代理管理器**：能识别代理，但通常被限制在安装 GUI 的单台机器上。\n- **Herdr**：在终端内同时提供会话持久化、远程接入和代理状态感知。\n\n它明确不属于以下产品：\n\n- **不是终端模拟器**：可继续使用 Ghostty、Kitty、iTerm、Alacritty 等现有终端。\n- **不是浏览器控制台**：没有 Web 管理页、账号系统或托管控制平面。\n- **不只是“给代理用的 tmux”**：除持久会话外，还提供可点击窗格、代理状态和 API。\n\n与常见工具相比，Herdr 重点支持：\n\n| 能力 | tmux/Zellij | 桌面代理应用 | Herdr |\n|---|---|---|---|\n| 在现有终端中运行 | 支持 | 通常不支持 | 支持 |\n| 持久 PTY 会话 | 支持 | 有限 | 支持 |\n| SSH 远程连接 | 支持 | 有限 | 支持 |\n| 语义化代理状态 | 不支持 | 部分支持 | 支持 |\n| 直接连接代理会话 | 不支持 | 通常不支持 | 支持 |\n| 由代理自动编排 | 可脚本化 | 部分支持 | 支持 |\n\n## 4. 插件生态与个性化能力\n\nHerdr 已有 **391 个社区插件**。任何带有 `herdr-plugin` GitHub Topic 的公开仓库都能被自动发现和安装：\n\n```bash\nherdr plugin install <owner>/<repo>\n```\n\n代表性插件包括：\n\n- **herdr-file-viewer**：Git 感知文件树、差异比较及 Markdown 渲染；**271 Stars**。\n- **herdr-reviewr**：审查代理生成的 diff、按行评论，并将意见发送回代理提示词；**264 Stars**。\n- **vim-herdr-navigation**：通过 `Ctrl+h/j/k/l` 在 Herdr 窗格与 Vim 分屏间无缝移动；**58 Stars**。\n- **herdr-spreader**：用一份 YAML 文件定义整个工作区、标签页、窗格和命令；**52 Stars**。\n- **collie**：通过 Tailscale 在手机 PWA 中管理代理，并在代理需要人工处理时推送通知；**146 Stars**。\n- **herdr-flock**：把代理显示成农场里的像素羊，已结束的会话进入“墓地”；**9 Stars**。\n\n这些插件覆盖代码审查、移动审批、Vim 导航、布局自动化和趣味可视化等场景。\n\n## 5. 核心能力：真实终端、代理状态和可编程接口\n\nHerdr 不会重建一套聊天界面，而是让程序运行在真实的 **PTY（伪终端）** 中，并提供以下能力：\n\n- **真实窗格**：支持鼠标操作、标签页和工作区，同时保留原有 Shell、字体和快捷键。\n- **代理状态**：可统一查看代理处于 `blocked`（受阻）、`working`（工作中）、`done`（完成）或 `idle`（空闲）状态。\n- **持久化**：关闭终端或断开连接后，会话与代理仍继续运行，可稍后重新接入。\n- **控制接口**：通过 CLI 和 JSON Socket API 管理工作区、窗格、输出内容及等待条件。\n\n例如，可以自动创建工作区、拆分窗格、运行测试，并等待代理完成：\n\n```bash\n# 创建工作区与标签页\nherdr workspace create --cwd ~/project --label api\nherdr tab create --label logs\n\n# 拆分窗格并运行测试\nherdr pane split 1-1 --direction right\nherdr pane run 1-2 \"just test\"\n\n# 等待代理完成并读取输出\nherdr wait agent-status 1-1 --status done\nherdr pane read 1-2 --source recent-unwrapped\n```\n\n这意味着不仅用户可以操作 Herdr，AI 代理也能通过其控制接口自行创建窗格、执行命令、读取结果并继续下一步任务。\n\n## 6. 广泛兼容终端代理\n\n任何终端型 AI 代理原则上都能直接在 Herdr 中运行；专门集成则可提供更丰富的状态识别和会话恢复能力。\n\n文章列出的兼容工具包括：\n\n- Claude Code\n- Codex\n- Pi\n- Droid\n- Amp\n- OpenCode\n- Grok CLI\n- Hermes\n- Cursor\n- Kimi\n- Kiro\n- Copilot\n- Qoder CLI\n- MastraCode\n- Antigravity 等\n\n总体而言，Herdr 的核心价值是：**在不离开终端的前提下，把本地与远程 AI 代理、持久会话、状态监控和自动化编排集中到一个统一界面中。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1785403287293,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f15234c32641ce7426940e1af9a956efd62b35a31876da018d7c19932d54b327",
+  "refs": {
+    "sessionId": "1784023587780_heodfi2x"
+  },
+  "revisionId": "sha256:fcb96e4793da49ffb5035fdf0670f8ab241f6cf27a24c6ca45ccb6e0ae8ce216",
+  "schemaVersion": 1,
+  "updatedAt": 1785403287293
+}

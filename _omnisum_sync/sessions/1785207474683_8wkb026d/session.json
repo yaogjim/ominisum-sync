@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785207474683,
+  "entityType": "session",
+  "id": "1785207474683_8wkb026d",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估代币化产品时，逐项绘制发行、托管、交易、赎回和法律确权的完整链路。",
+      "开发基础设施产品时，区分核心技术瓶颈与用户可在短期内自行解决的接入障碍，并优先验证前者。",
+      "审查创业公司的资金托管集中风险，为运营资金设置银行账户、短期国债等低风险分散方案。"
+    ],
+    "archiveReason": "包含创始人对Solana技术设计、金融结算链条及早期创业过程的一手解释，部分框架可复用于金融科技产品和基础设施创业。",
+    "classifiedAt": 1785207682921,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "Solana重构金融基础设施之路",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/fc4325e2/img/favicon.ico",
+    "knowledgePoints": [
+      "资产代币化不能自动建立真实所有权，必须核查发行主体、法律请求权、托管关系以及链上资产与现实资产的兑换路径。",
+      "Solana通过可验证时间序列减少共识参与者之间的往返协调，目标是把执行与结算延迟压缩到适合交易的水平。",
+      "早期产品可优先解决需要多年研发和多人协作的核心瓶颈，将优秀用户能自行克服的短期接入问题延后处理。"
+    ],
+    "oneHighValuePoint": "代币本身只是公共数据库中的记录，其金融价值取决于发行方、法律权利、赎回机制和最终结算能否可靠连接到真实资产。",
+    "oneLineReview": "技术和创业的一手经验较有价值，但篇幅冗长、话题发散，部分数据与宏观判断缺少可靠证据支持。",
+    "primaryCategory": "区块链与金融科技",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览，提取代币化、底层系统设计和创业执行经验后存档",
+    "secondaryCategories": [
+      "分布式系统",
+      "创业与产品开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "访谈从Solana创始人视角解释资产代币化、传统金融多层结算、Proof of History与Alpenglow，并回顾融资、冷启动和FTX危机，同时讨论稳定币及AI生产率。",
+    "tags": [
+      "Solana",
+      "资产代币化",
+      "区块链金融",
+      "高性能系统",
+      "创业融资"
+    ],
+    "title": "Inside Solana's Plan to Replace Wall Street - YouTube",
+    "totalScore": 64,
+    "url": "https://www.youtube.com/watch?v=xQ6KQWpPKTA"
+  },
+  "payloadHash": "sha256:ae8822cd2b289dae661dad3ceba4d1f9e00b7bb0c444e926afae1b412115e1ec",
+  "refs": {},
+  "revisionId": "sha256:841bcc78bd8b7b65987dabf79809db1608ee15f58a450e1a96030359dc1fd312",
+  "schemaVersion": 1,
+  "updatedAt": 1789728343202
+}

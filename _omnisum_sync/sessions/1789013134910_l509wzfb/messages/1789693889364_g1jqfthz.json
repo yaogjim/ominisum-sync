@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693889363,
+  "entityType": "message",
+  "id": "1789693889364_g1jqfthz",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\npstack 不是更会写代码的模型，而是一套让 Coding Agent 能自行开发、操作真实产品、验证结果并提交证据的工程流程；核心原则是先让单个 Agent 可靠，再扩大并行规模。\n\n## 关键内容\n\n- **验证比生成更重要**：测试通过不等于功能可用。Agent 应启动真实应用、走完整用户路径，检查页面、日志和数据；失败后继续返工，并提供截图、视频或性能数据。\n- **把经验固化成工具**：与其反复写长提示词，不如封装启动、登录、截图、清理等稳定命令，并用 Feature Map 记录功能入口、前置条件和验收方式。\n- **可靠后再多 Agent 并行**：每个 Agent 在独立环境中开发和验证，协调 Agent 负责任务拆分与跟进，人类保留关键审查和决策。\n- Lauren 声称借此每月交付约 **2,000 个 PR**，但 PR 规模、合并率、人工成本和故障率未完整披露，不能视为普遍生产力指标。\n\n## 通俗解读\n\npstack 的变化相当于不只让 AI“交作业”，还要求它亲自运行产品、按验收标准检查并附上证据。不过自我验证仍可能继承同一误解，不能替代独立 Review、CI、权限控制和回滚机制。\n\n**是否值得细读：值得。** 尤其适合已在团队中使用 Coding Agent、但人工验收和返工成本很高的人；若只想了解核心理念，以上内容已基本覆盖。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693889363,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:95a3f3146fbbd800fcb0c13e5ebc8be8c254d857afc4301a54154dd43a767d5c",
+  "refs": {
+    "sessionId": "1789013134910_l509wzfb"
+  },
+  "revisionId": "sha256:9e9497f7388d52e044d6452062682c1aa2638675c418f118545e2a35f42d88ad",
+  "schemaVersion": 1,
+  "updatedAt": 1789693889363
+}

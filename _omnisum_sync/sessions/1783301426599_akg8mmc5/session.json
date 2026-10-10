@@ -1,0 +1,66 @@
+{
+  "createdAt": 1783301426599,
+  "entityType": "session",
+  "id": "1783301426599_akg8mmc5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在构建 Agent 文件处理能力，可快速查看 LiteParse 仓库是否满足需求",
+      "若评估使用，应进一步查找 LiteParse 的基准测试、支持格式和实际解析质量"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783301464362,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "LiteParse代理文件解析推广",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "正文价值主要集中在两个 GitHub 链接，本身缺乏深度分析和证据支撑，长期保留价值低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent loop 中处理文件附件正在成为高频需求",
+      "传统 pypdf、pdftotext 等轻量解析可能造成上下文质量问题",
+      "LiteParse 提供与 Eve agent 框架集成的模板"
+    ],
+    "oneHighValuePoint": "Agent 应用中的文件附件解析需求正在增长，简单文本抽取可能导致上下文幻觉和检索质量下降。",
+    "oneLineReview": "适合顺手看一下项目链接，不值得作为知识内容长期保存。",
+    "primaryCategory": "AI工程",
+    "rating": "D",
+    "rejectReason": "内容主要是产品推广，缺少技术细节、基准数据和可复用方法论，信息量较低。",
+    "retentionDecision": "短期查看项目链接后可删除",
+    "secondaryCategories": [
+      "Agent工具链",
+      "文档解析"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "推文介绍 LiteParse 可用于 Agent 循环中的文件解析，并支持 Vercel Eve、Claude SDK 等框架，强调其在成本、准确率、速度和语义解析上的目标，但未提供具体评测或实现细节。",
+    "tags": [
+      "LiteParse",
+      "Eve",
+      "Agent",
+      "文件解析",
+      "LlamaIndex"
+    ],
+    "title": "x.com/jerryjliu0/status/2073863285137342494",
+    "totalScore": 36,
+    "url": "https://x.com/jerryjliu0/status/2073863285137342494"
+  },
+  "payloadHash": "sha256:b24e2a504df83365233fb6c0293fcabda88db2ca5682c05dc374e997fe1b9284",
+  "refs": {},
+  "revisionId": "sha256:da0e048bc9a27457a2114db43546b6fbabdab1e7563adb06966bcef5a8f0af01",
+  "schemaVersion": 1,
+  "updatedAt": 1783301464537
+}

@@ -1,0 +1,68 @@
+{
+  "createdAt": 1783079884316,
+  "entityType": "session",
+  "id": "1783079884316_pxlqiarl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "访问repoprompt-ce仓库，评估是否适合现有AI编程工作流",
+      "在macOS环境尝试使用brew install --cask repoprompt-ce安装体验",
+      "在处理大型代码仓库时，优先实践文件筛选和任务拆分，而非直接投喂完整代码库"
+    ],
+    "archiveReason": "包含RepoPrompt开源信息、上下文工程思路和MCP架构变化，对AI编程工具链有一定参考价值",
+    "classifiedAt": 1783080376465,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "RepoPrompt开源与上下文工程",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "RepoPrompt已推出开源社区版，并提供GitHub仓库与Homebrew安装方式",
+      "上下文工程的核心是为模型选择真正相关的代码文件，而不是盲目塞入整个代码库",
+      "新版RepoPrompt将MCP server作为主控层，Claude Code、Codex、OpenCode、Gemini CLI等作为可替换执行层",
+      "多Agent可围绕不同子任务并行处理各自相关文件，减少上下文污染"
+    ],
+    "oneHighValuePoint": "强调AI编程效果不只依赖模型能力，还依赖对代码仓库上下文的精准选择与任务边界管理。",
+    "oneLineReview": "一条有价值的AI编程工具动态，适合了解RepoPrompt和上下文工程趋势，但深度与证据有限。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除，若正在研究AI编程工作流可归档",
+    "secondaryCategories": [
+      "上下文工程",
+      "开源项目动态"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍RepoPrompt社区版开源背景、核心用途及架构变化：从手工选择代码文件拼接prompt，转向由内置MCP server主控、多Agent执行的上下文工程工具，目前主要支持macOS。",
+    "tags": [
+      "RepoPrompt",
+      "MCP",
+      "Agent",
+      "代码仓库",
+      "上下文工程"
+    ],
+    "title": "宝玉: RepoPrompt 已经开源了，社区版（Community Edition）已上线 GitHub",
+    "totalScore": 56,
+    "url": "https://x.com/dotey/status/2071348102263378085"
+  },
+  "payloadHash": "sha256:ac575708685f256f0e96dabe4dcc2b16b558e48daaa31c7efe63c3f728c35f9b",
+  "refs": {},
+  "revisionId": "sha256:9939a0416c403ee44d7194604d5a67b69b67efd9950e82c4008287cd4db46537",
+  "schemaVersion": 1,
+  "updatedAt": 1789729330647
+}

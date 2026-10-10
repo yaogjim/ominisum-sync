@@ -1,0 +1,24 @@
+{
+  "createdAt": 1785402233560,
+  "entityType": "message",
+  "id": "1785402439025_ow66nuey",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# camelAI：将编码代理迁移到持久化对象，并移除 VM 与 Bash\n\ncamelAI 经过三次架构重构，将编码代理从“每位用户一台持续运行的虚拟机”，迁移为完全运行在 **Cloudflare Durable Objects** 上的无服务器系统。新架构以 SQLite、R2 和 Artifacts 持久化数据，并让代理通过 JavaScript 和明确的方法执行任务，从而显著降低成本、延迟和扩展难度。\n\n## 0. 虚拟机时代：成本高，难以规模化\n\ncamelAI 最初基于需要完整 Linux 环境的 Claude 编码框架运行，因此必须为每位用户提供一台虚拟机或容器。\n\n- 团队尝试过多家 VM 服务商，但都无法同时满足持久化和性能需求，最后自行搭建了容器服务。\n- 这种方式虽然可用，但非常笨重：\n  - 每位用户都需要一台持续在线的 VM；\n  - 用户文件需要放在高速挂载磁盘上；\n  - 扩容意味着增加真实服务器和真实磁盘。\n- 当用户规模增长时，成本会变得难以承受，因此团队决定重新设计一个**完全不依赖虚拟机**的方案。\n\n## 1. 将“代理大脑”移出虚拟机\n\n第一步是把代理本身迁移到 **Cloudflare Durable Object**，但暂时保留 VM 用来执行命令。\n\n- Durable Object 是运行在 Cloudflare 边缘节点的小型有状态计算实例。\n- 每个聊天线程拥有独立的 Durable Object，因此请求无须统一发送到中心化的 VM 主机，延迟更低。\n- 代理需要执行 Bash 命令时，再远程调用 VM，形成“**大脑与手分离**”的架构。\n\n这种拆分带来了几个好处：\n\n1. 代理无需等待 VM 启动，就可以先开始回复。\n2. 代理工作期间，VM 可以休眠；若本轮对话不需要执行命令，VM 甚至无需唤醒。\n3. 一个代理可以同时控制多台 VM。\n\n团队将这种工作单元称为“项目”。每个项目包括一台执行命令的 VM，以及通过 **Cloudflare Artifacts** 管理的 Git 兼容存储。\n\n不过，这一阶段只改善了启动延迟，并没有解决核心问题：**仍然需要为每位用户维护一台 VM，成本和扩展压力依旧存在。**\n\n## 2. 删除 VM：用 SQLite 和 R2 构建文件系统\n\n第二次重构彻底移除了项目背后的虚拟机，将每个项目的文件系统放入 Durable Object。\n\n该方案大量复用了 Cloudflare 代理团队开发的实验性项目 **Shell**，底层存储规则如下：\n\n- Durable Object 的存储本质上是一个容量上限为 **10 GB** 的 SQLite 数据库。\n- 小文件直接保存在 SQLite 数据行中。\n- 超过约 **1.5 MB** 的大文件存入 **R2**，SQLite 中只保留对应指针。\n- 对代理而言，它仍像在操作普通文件系统；但平台实际持久化的是数据，而不是一台必须持续运行的机器。\n\n项目版本历史继续由 **Artifacts** 管理，因此每个项目仍保留完整的 Git 历史，同时团队不需要自行托管 Git 服务器。\n\n## 3. 删除 Bash：改用 JavaScript 和明确方法\n\n移除 VM 后，团队进一步删除了 Bash。原因不仅是成本，也包括安全与权限管理：\n\n- 编码代理通常被训练成依赖 Bash，这也是很多团队必须提供完整 Linux 环境的原因。\n- 但一旦代理拥有 Bash 和网络访问能力，执行有用任务时就需要各种凭证。\n- 团队尝试过认证代理 URL，但实现复杂且难以可靠控制。\n\n新方案让代理改为编写 **JavaScript**：\n\n- 代码通过 Code Mode 和 Cloudflare 的动态 Worker 加载器执行。\n- 每次执行都会启动一个全新的 **V8 隔离实例**。\n- 实例可在**毫秒级**启动，只占用**几 MB 内存**。\n- 沙箱预加载用户的数据连接和平台能力，但凭证永远不会进入沙箱。\n- 代理只调用平台提供的方法，真正的认证过程由 camelAI 后端完成。\n\n## 4. 用原生工具和专用方法替代 Bash\n\n团队发现，代理使用 Bash 的大部分场景其实只是文件操作，因此没有必要保留完整 Shell。\n\n按照“二八法则”，平台提供以下原生能力即可覆盖大多数需求：\n\n- 读取文件；\n- 写入文件；\n- 编辑文件；\n- `grep` 搜索；\n- `glob` 文件匹配。\n\n剩余的特定命令则被改造成平台明确控制的方法。例如：\n\n- 原本通过 `wrangler` 完成的部署，改为 `deploy_project` 方法。\n  - 平台现在能够准确知道部署何时发生；\n  - 可以自动挂钩流程并打开实时预览；\n  - 过去则需要分析代理的 `wrangler` 流量，猜测是哪个线程触发了部署。\n- 构建用户应用和运行 Python Notebook 也被封装为专用方法。\n  - 这些任务仍可借助短期容器执行；\n  - 但不再需要为每位用户维持长期运行的 VM。\n\n## 5. 限制反而改善了产品与模型表现\n\n移除 Bash 的明显缺点是：团队必须提前预判代理需要哪些能力。\n\n- 在 Bash 环境中，代理可以临时想办法解决问题。\n- 在新架构中，如果缺少某项能力，团队必须为其新增明确的方法。\n\n但这种限制也带来两项收益：\n\n1. **产品路径更清晰**  \n   团队被迫理解用户真正要完成的任务，并为高频场景设计稳定、可控的一流流程，而不是让代理自由拼凑命令。\n\n2. **低成本模型表现更好**  \n   Bash 是高度开放的环境，便宜的小模型往往难以稳定应对。工具数量减少、方法更加明确后，这些模型反而表现更好，有助于维持 camelAI 的低成本运行。\n\n## 6. 最终技术栈与实际效果\n\n目前 camelAI 的核心技术栈包括：\n\n| 组件 | 用途 |\n|---|---|\n| Durable Objects | 运行代理并承载项目文件系统 |\n| SQLite | 存储小文件和文件元数据 |\n| R2 | 存储超过约 1.5 MB 的大文件 |\n| Artifacts | 保存 Git 历史记录 |\n| Pi | 代理运行框架／Harness |\n| Code Mode + Dynamic Workers | 执行代理生成的 JavaScript |\n\n最终效果是：\n\n- 无需维护外部容器服务；\n- 整套系统可以像普通 Cloudflare 应用一样部署；\n- Dynamic Workers 按**执行次数**而非按运行时长计费；\n- **数千次执行**的成本，大约只相当于此前评估的容器服务运行**几分钟**；\n- 服务运行在靠近用户的边缘节点，延迟较低；\n- 基础设施扩容由 Cloudflare 负责，而非 camelAI 团队。\n\n对用户而言，产品体验基本没有变化：代理依旧可以读取、写入、搜索、构建和部署代码，用户仍能将全栈应用发布到线上 URL。\n\n## 社区讨论与补充\n\n- 有人质疑，用 JavaScript 代替 Bash 是否会大幅增加 Token 消耗。\n- camelAI CTO Miguel Salinas 表示，结果恰恰相反：由于常见操作被封装为预制函数，Token 使用量反而略有下降。\n- 团队也正在基于自己的 Harness 训练模型，希望重新获得一部分模型在 Bash 环境中的能力和性能。\n\n## 开源地址\n\n项目代码已开源：  \n[github.com/qaml-ai/camelAI](https://github.com/qaml-ai/camelAI)",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1785402233560,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:16f8a7329c73349edc244e6b27b778b46cd5e3a91ce66431fedc98dda2590720",
+  "refs": {
+    "sessionId": "1785402438617_la0zedm6"
+  },
+  "revisionId": "sha256:beb96acda24ef09009ce8cd5eaf62614d01be308a9d91f53dcb085ff937bbdfa",
+  "schemaVersion": 1,
+  "updatedAt": 1785402233560
+}

@@ -1,0 +1,25 @@
+{
+  "createdAt": 1788418880287,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1788418880287",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 《半年后的今天，我怎么用 AI 写代码》精炼总结\n\n文章回顾了作者半年内 AI Coding 方法的变化：从依赖重型流程 “给 AI 加约束”，逐步转向轻量工具与更少上下文。作者认为，当前较稳定的实践是：**先把需求讲清楚，再让多个 Agent 并行实现和审查，最后由人负责关键判断。**\n\n## 一、从 “加约束” 到 “减约束”\n\n### 1. 早期：用重型流程防止 AI 跑偏\n\n面对架构升级、复杂需求和大量边界情况时，AI 容易在细节上悄悄走错方向，因此作者最初采用：\n\n- **Superpowers**：提供流程纪律和 TDD 执行策略。\n- **gstack**：通过多个角色进行 Review。\n- 在 brainstorming 阶段追问并发写入等边界问题。\n- 通过`/review`发现竞态条件等测试阶段不易暴露的问题。\n\n这套 SOP 当时效果不错，但成本很高：\n\n- Superpowers 会注入大量上下文。\n- 一天可能消耗**几亿 Token**。\n- 随着模型能力增强，过去用于 “扶稳模型” 的大段护栏，反而变成干扰注意力的噪音。\n\n### 2. 后来：切换到更轻量的 Harness\n\n作者在八月将 Claude Code 换成 Pi，核心原因是降低上下文和成本。\n\nDatabricks 曾在**数百万行代码库**上测试不同 Coding Harness：\n\n- 使用同一个模型、同样的 thinking 档位；\n- 最终产物质量基本持平；\n- 但任务成本最多可相差**2 倍以上**；\n- Pi 每轮提供给模型的上下文，约为其他 Harness 的**三分之一**。\n\n> **结论：**模型越强，越不需要复杂提示词和重型工作流；Harness 应尽量轻量，只提供必要信息。\n\n---\n\n## 二、当前开发工具栈：轻量化优先\n\n作者提到，Anthropic 为 Claude 5 代模型删掉了 Claude Code **超过 80% 的 system prompt**。这说明旧有的大段指令可能稀释模型注意力。\n\n因此 Claude Code、Codex、Pi 都可以使用，关键不是品牌，而是是否顺手、上下文是否精简。\n\n### 1. Matt Skills：从需求澄清到代码实现\n\n作者日常使用以下 5 个 Skill：\n\n| Skill | 作用 |\n|---|---|\n| `grill-me` | 用苏格拉底式追问，把模糊想法问清楚 |\n| `grill-with-docs` | 一边逐项对齐需求，一边沉淀 ADR 和术语表 |\n| `to-spec` | 将讨论结果整理为正式 Spec 文档 |\n| `to-tickets` | 把 Spec 拆成可独立交付的垂直任务，并标明依赖 DAG |\n| `implement` | 由 Subagent 拉取 Ticket 实现，内部执行 TDD 和 Code Review，持续修复直到过审 |\n\n### 2. Ponytail（“马尾辫”）：清理 AI Slop\n\nLLM 经常生成看似合理、实际没有价值的冗余代码，例如：\n\n- 没必要的防御性空值检查；\n- 永远不会有第二个实现的 interface；\n- 给常量再包一层 private 常量；\n- 注释中堆满过程性说明；\n- 重复实现代码库或标准库已有能力。\n\nPonytail 会要求 AI 在新增代码前回答：\n\n1. 这段逻辑真的需要存在吗？\n2. 代码库中是否已有现成实现？\n3. 标准库能不能完成？\n4. 能否用一行代码解决？\n\n只有这些方案都不可行，才允许增加新代码。使用后，代码 Diff 会明显缩短，而**短 Diff 是高质量 Review 的前提**。\n\n### 3. Subagent + Git Worktree：并行且互不干扰\n\n并发处理多个任务时：\n\n- 每个任务分配一个 Subagent；\n- 使用 Git Worktree 隔离代码修改；\n- 各任务独立开发，减少相互冲突。\n\nClaude Code 和 Codex 原生支持 Subagent。Pi 则遵循 “Less is More”，不原生提供这一能力，而是建议使用 tmux 等基础工具实现并发。\n\n作者日常使用 “赫尔德”，可理解为 AI 时代的 tmux：\n\n- 比原生 Subagent 更轻；\n- 能隔离不同任务的上下文；\n- 还可以让 Pi 操作 Claude Code、Codex 等进程。\n\n---\n\n## 三、日常 AI Coding SOP\n\n作者当前的完整流程如下：\n\n```text\n需求讨论\n→ 生成 Spec\n→ 人工审核 Spec\n→ 拆分 Tickets\n→ 多个 Subagent 并行实现\n→ TDD + Code Review\n→ PR 级 Review\n→ 人工最终把关\n```\n\n### 具体步骤\n\n1. **对齐需求**\n   - 使用`grill-me`或`grill-with-docs`；\n   - 与 AI 多轮讨论需求边界、限制条件和潜在风险。\n\n2. **生成 Spec**\n   - 使用`to-spec`产出设计文档；\n   - 人工 Review，这是第一道人工门控。\n\n3. **拆分任务**\n   - 使用`to-tickets`做垂直切片；\n   - 每个 Ticket 都能独立实现和交付，并标明依赖关系。\n\n4. **并行开发**\n   - 一个 Ticket 分配一个 Subagent；\n   - 每个 Subagent 使用独立 Worktree；\n   - 实现过程中执行 TDD 和代码审查，并自行修复问题。\n\n5. **最终审查**\n   - 所有任务完成后进行 PR 级 Review；\n   - 最后由人完成 Code Review 和决策。\n\n### 小改动可以简化，但不能放弃纪律\n\n如果只是边界清楚、验证成本低的单文件修改，可以直接让 Main Agent 快速完成，不必走完整链路。\n\n但仍有两条底线：\n\n- **修改前必须先给出简单方案，并等待人工授权；**\n- **修改完成后必须运行测试。**\n\n> 流程可以分级，但工程纪律不能分级。\n\n---\n\n## 四、人工 Review 成为新的开发瓶颈\n\n随着 AI 生成代码的速度大幅提高，软件开发的瓶颈开始从 “写代码” 转移到两侧：\n\n- 前期方案设计；\n- 代码 Review；\n- 部署与上线；\n- 最终风险判断。\n\nAgent、Session 和 Worktree 几乎可以低成本扩展，但人的注意力无法同步扩展：\n\n- 一个人同时处理**4 个 Session**已经比较勉强；\n- 同时处理**8 个 Session**几乎必然出现遗漏。\n\n因此，作者认为未来 Coding Harness 的竞争重点，将从 “谁生成代码更快” 转向 “谁能降低人工 Review 成本”。\n\n### Ensemble Review：让不同模型交叉审查\n\n作者使用多模型对抗审查同一段代码：\n\n- GPT\n- GLM\n- DeepSeek\n- Kimi\n\n四个模型分别启动独立 Subagent：\n\n- 使用干净、互不污染的上下文；\n- 执行同一个 Review Skill；\n- 互相补充系统性盲区。\n\n例如，GPT 没发现的问题，DeepSeek 可能很快识别出来。单一模型自审则类似 “让考生自己改卷子”，可靠性有限。\n\n不过，无论模型给出多少审查意见，最终仍需要人来判断：\n\n- 哪条意见是真问题；\n- 哪条只是噪音；\n- 是否值得修改；\n- 修改会不会引入新的权衡和风险。\n\n---\n\n## 五、AI 时代，软件工程思维反而更重要\n\n不懂软件基础的人也可以通过 Vibe Coding 做出可运行的软件，但风险在于：Agent 可能已经做出许多糟糕的技术取舍，而使用者甚至不知道这些取舍发生过。\n\nAI 无法消除以下工程权衡：\n\n- 接口延迟与系统成本；\n- 可用性与一致性；\n- 简单设计与未来扩展能力；\n- 开发速度与长期维护成本。\n\n作者认为，有两类能力不会因 AI 进步而过时：\n\n### 1. 对系统的理解\n\n大模型可以列出选项，却无法替你确定唯一最优答案。例如：\n\n- 应优先降低延迟，还是降低成本？\n- 应保持简单，还是预留扩展能力？\n- 应优先保证一致性，还是可用性？\n\n这些选择必须结合真实业务和系统目标，由人负责。\n\n### 2. 工程直觉\n\n有经验的工程师能快速判断：\n\n- 哪段代码看起来可疑；\n- 哪个需求可能埋坑；\n- 哪条 Review 意见值得采纳；\n- 哪条只是模型生成的噪音。\n\n这类判断能力仍是 AI 难以替代的核心价值。\n\n---\n\n## 六、补充：让人工反馈持续沉淀\n\n作者还引用了 Warp 的自进化 Agent 实践：传统 Agent Session 结束后，人的纠正往往也随之消失，导致同类错误反复出现。\n\nWarp 的思路是：\n\n- 把人工纠正沉淀进 Skill；\n- 让反馈跨 Session 保留下来；\n- 持续改进 Agent 在重复任务中的表现。\n\n其背景是，Agent 的第一版 Prompt 往往只能完成约**80%**，剩余部分会持续产生噪音。真正有效的改进，不只是当场修正，而是让修正结果进入长期工作流。\n\n---\n\n## 核心结论\n\n- **模型变强后，应减少无意义的提示词和流程约束。**\n- **复杂任务先澄清需求、产出 Spec，再拆成可独立交付的 Ticket。**\n- **通过 Subagent + Worktree 实现安全并行。**\n- **用 Ponytail 等机制减少冗余代码，保持短 Diff。**\n- **让多个模型交叉 Review，但最终决策仍由人完成。**\n- **AI 提高了编码速度，却让需求判断、Review 和系统权衡成为新的核心瓶颈。**\n- **工具和工作流可能很快过时，但系统理解、工程纪律与判断力不会过时。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1788418880287,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5587c7ffa483a2f3dc26f6edea8ed118394c117325e5cd122fe2807007d50aa8",
+  "refs": {
+    "sessionId": "1788418815538_wwp6axrs"
+  },
+  "revisionId": "sha256:6a8d219dc0516c8b1b9541937136fb9409f7346ba134752689ca3829c424fef3",
+  "schemaVersion": 1,
+  "updatedAt": 1788418880287
+}

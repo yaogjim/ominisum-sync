@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785385956277,
+  "entityType": "session",
+  "id": "1785385956277_xos72a0w",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个存在并发、状态转换或高代价缺陷的子系统，明确不变量后用TLA+或Alloy建立小型验证模型。",
+      "在常规单元测试之外引入属性测试，先定义应始终成立的性质，再利用随机生成与失败样例缩减发现边界问题。",
+      "使用LLM辅助形式化工作时，将其限定于语法修正、精确自然语言到规格的转换及错误轨迹解释，并由人工负责性质定义和结果审查。"
+    ],
+    "archiveReason": "包含TLA+、Alloy和属性测试的具体演示，明确比较了适用场景、成本与局限，并对AI辅助形式化验证给出可复用的实践判断。",
+    "classifiedAt": 1785386193053,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 7,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "形式化方法与AI代码验证",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/b747a806/img/favicon.ico",
+    "knowledgePoints": [
+      "形式化方法先把系统应满足的隐性知识写成明确规格，再通过证明或模型检查验证实现或抽象模型；其成本主要来自真实业务上下文和规格定义。",
+      "TLA+适合分析并发分布式系统的状态迁移，Alloy擅长借助SAT求解器检查静态结构与数据模型，属性测试则是覆盖面与实施成本之间的轻量级中间方案。",
+      "形式化工具更适合高风险、技术性强、错误必须避免且需要前置规划的系统；若系统可低成本迭代且缺陷后果有限，常规测试通常更经济。"
+    ],
+    "oneHighValuePoint": "最有价值的判断是：AI可加速语法修正、样板生成和错误轨迹解释，但不擅长自主发现有意义的系统性质，因此核心规格仍需领域专家定义和审查。",
+    "oneLineReview": "内容覆盖面广且方法边界清晰，虽有访谈冗余和部分经验性判断，仍是理解形式化方法及AI代码验证的高价值入门材料。",
+    "primaryCategory": "软件工程与形式化方法",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并长期存档，重点保留工具适用边界及AI辅助验证的判断框架",
+    "secondaryCategories": [
+      "AI编程",
+      "分布式系统"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "访谈以案例和演示介绍形式化规格、TLA+、Alloy及属性测试，分析分布式系统的并发缺陷、工具适用边界，以及AI生成规格、性质和验证代码时的能力与局限。",
+    "tags": [
+      "形式化验证",
+      "TLA+",
+      "属性测试",
+      "分布式系统",
+      "AI代码验证"
+    ],
+    "title": "Formal methods with Hillel Wayne - YouTube",
+    "totalScore": 78,
+    "url": "https://www.youtube.com/watch?v=KSkcgIYQy0U"
+  },
+  "payloadHash": "sha256:a36f9f453dcb2ea37a32d65e2515dd2d115b493e509538b3901d1f7d5267ff0e",
+  "refs": {},
+  "revisionId": "sha256:c83f783155998e7328b82a931248ad80c38db9518c9d2c64fdc961f84c468e5f",
+  "schemaVersion": 1,
+  "updatedAt": 1789694363315
+}

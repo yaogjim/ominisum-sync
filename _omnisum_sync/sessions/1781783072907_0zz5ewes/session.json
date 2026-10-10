@@ -1,0 +1,65 @@
+{
+  "createdAt": 1781783072907,
+  "entityType": "session",
+  "id": "1781783072907_0zz5ewes",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确有 Agent 平台选型需求，可单独访问官网快速验证功能真实性。",
+      "无需归档该帖，若需要研究应查找官方文档、教程或实际案例。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781783178695,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 2,
+      "novelty": 2,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent基础设施宣传短帖",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "仅提供模糊的产品定位和入口链接，缺乏实质知识价值与长期参考价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "FastClaw 被定位为 Agent 底层基础设施，ShipAny 被定位为上层应用交付层。",
+      "该工具声称支持通过 dashboard 配置 models、skills、files，并通过 API 在其他客户端调用。"
+    ],
+    "oneHighValuePoint": "提出了将底层 Agent Infra 与上层产品交付分层的思路。",
+    "oneLineReview": "更像一句产品广告语，而不是有学习或研究价值的内容。",
+    "primaryCategory": "AI工具与基础设施",
+    "rating": "E",
+    "rejectReason": "内容主要是产品宣传和类比表达，缺少架构细节、使用方法、案例数据和可复用方法论，信息量很低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "Agent平台",
+      "产品宣传"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该短帖用汉堡店类比介绍 FastClaw 与 ShipAny 的 Agent Infra 定位，强调通过 dashboard 快速创建 Agent、配置模型和技能，降低 Agent 构建门槛，但缺少具体技术细节和案例。",
+    "tags": [
+      "Agent",
+      "FastClaw",
+      "ShipAny",
+      "低代码",
+      "产品推广"
+    ],
+    "title": "x.com/idoubicc/status/2067241857164448133",
+    "totalScore": 24,
+    "url": "https://x.com/idoubicc/status/2067241857164448133"
+  },
+  "payloadHash": "sha256:9c0930a6f3207ec88d6ac2d4d5356f0ca1466bd842c9a86157e3bac9ac4da3cd",
+  "refs": {},
+  "revisionId": "sha256:e4339494b86095b7c214270c07da8237262c70e0f8bf46116753a3f98b8597b4",
+  "schemaVersion": 1,
+  "updatedAt": 1781783179029
+}

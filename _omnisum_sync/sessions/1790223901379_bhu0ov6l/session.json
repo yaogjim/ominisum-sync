@@ -1,0 +1,82 @@
+{
+  "createdAt": 1790223901379,
+  "entityType": "session",
+  "id": "1790223901379_bhu0ov6l",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计跨应用任务流程时，先检查可用接口，再考虑屏幕操作兜底。",
+      "待所述基准测试套件开放后，核对测试条件和性能数据。"
+    ],
+    "archiveReason": "",
+    "byline": "Chubby♨️",
+    "classifiedAt": 1790233152386,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "千问手机智能体的架构与性能宣称",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 720,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HS6QPkTaoAEzqwB?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HS6QPkTaoAEzqwB?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "文中描述的任务链分为规划拆解与跨应用执行两个环节。",
+      "API 优先、GUI 兜底是一种兼顾接口可用性与操作覆盖面的执行策略。"
+    ],
+    "oneHighValuePoint": "跨应用任务采用 API 优先、GUI 兜底的执行思路，可作为设计手机智能体时的架构参考。",
+    "oneLineReview": "提供了值得关注的手机智能体产品方向，但更接近发布信息转述，难以据此判断实际效果。",
+    "primaryCategory": "AI Agent",
+    "rating": "C",
+    "rejectReason": "性能数据主要来自厂商宣称，缺少测试条件、独立验证和实现细节。",
+    "retentionDecision": "速览产品方向即可，暂不单独存档",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "移动端应用",
+      "产品技术"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Qwen Intelligence 的三个手机智能体：负责拆解任务的规划智能体、以 API 优先且 GUI 兜底方式跨应用执行的智能体，以及图像生成智能体。文中转述了成功率和速度指标，并认为端侧小模型能力仍是深度集成的限制；相关指标尚缺独立验证。",
+    "tags": [
+      "Qwen Intelligence",
+      "手机智能体",
+      "跨应用任务",
+      "API优先",
+      "GUI兜底"
+    ],
+    "title": "Chubby♨️: This is an interesting take from Qwen",
+    "totalScore": 51,
+    "url": "https://x.com/kimmonismus/status/2102817773504336321"
+  },
+  "payloadHash": "sha256:5d8d6dd160130cc0cdec7217f720a724a658d63a129ee4223ac1fcbd1a6b7c2e",
+  "refs": {},
+  "revisionId": "sha256:36ec623b2798348b629ab841a488d6da86e1f89a51a7208f19c479e91d3c3962",
+  "schemaVersion": 1,
+  "updatedAt": 1790233152404
+}

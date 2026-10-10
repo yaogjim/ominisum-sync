@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782361961194,
+  "entityType": "message",
+  "id": "1782361961193_rkohmohp",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude Code Hook污染上下文\n\n**评级**: B (68分)  |  **深度阅读**: 否  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: Claude Code, 调试经验\n**标签**: #Claude Code #Hook #上下文污染 #stderr #AI编程\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 短小但实用的 Claude Code Hook 踩坑记录，价值集中在一个明确的调试点。\n**核心高价值点**: Claude Code Hook 的 stdout 可能进入模型上下文，日志类输出应改走 stderr。\n\n### 摘要\n作者排查 Claude Code 中 Opus 回复异常的问题，发现自定义 Hook 默认输出进入模型可见上下文，导致大量无关信息污染对话。解决方法是将 echo 输出改为 stderr，即使用 `>&2`。\n\n### 知识要点\n- Claude Code Hook 存在模型可见输出和终端可见输出两类通道。\n- Hook 中默认 echo 输出可能污染模型上下文，影响回复质量。\n- 使用 `echo \"xxx\" >&2` 可将输出切换到仅终端可见。\n\n### 行动项\n- 检查自定义 Claude Code Hook 中是否存在普通 echo 或 stdout 日志输出。\n- 将不需要模型读取的 Hook 日志统一改为 stderr 输出。\n- 当模型表现异常时，将上下文污染纳入排查清单。\n\n### 存档判定\n归档: 是 — 原因: 提供了一个具体且容易忽视的 Claude Code Hook 调试经验，可作为排查模型表现异常的 checklist 项。\n删除: 否\n留存决策: 短期参考后可归档",
+    "role": "assistant",
+    "timestamp": 1782361961194,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:08a0c7241b0ef5d7a03f2a94afb2568c59bfe7aa84543c2a5a687354110f285d",
+  "refs": {
+    "sessionId": "1782360373347_wj38szp1"
+  },
+  "revisionId": "sha256:785b97bb41ff7a48402e5e097ffbb0798915cc282970bd673b9a1d5f3feaf833",
+  "schemaVersion": 1,
+  "updatedAt": 1782361961194
+}

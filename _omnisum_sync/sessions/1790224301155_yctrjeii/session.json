@@ -1,0 +1,83 @@
+{
+  "createdAt": 1790224301155,
+  "entityType": "session",
+  "id": "1790224301155_yctrjeii",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "有相关应用需求时，先按文档运行图像或视频演示，分别记录检测与回归延迟。",
+      "在目标硬件上运行仓库基准测试，比较不同检测间隔的速度与结果质量。",
+      "使用其训练数据流程时，执行转换器的校验选项并核查数据及模型许可证。"
+    ],
+    "archiveReason": "提供模型输入输出、安装与训练流程、数据校验方式，以及可复现的推理性能调优方案。",
+    "classifiedAt": 1790233132046,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "InstantHMR三维人体姿态估计与部署",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/2b3592babc9cd827faddaa961bddcc3640a883497b34518cbd46639e063a024b/mohamdev/InstantHMR",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/2b3592babc9cd827faddaa961bddcc3640a883497b34518cbd46639e063a024b/mohamdev/InstantHMR",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "单独测量检测器、人体回归器和总延迟，避免只用模型推理速度代表端到端速度。",
+      "固定并预热 ONNX 输入批处理形状，可减少人数变化引发的首次运行停顿。",
+      "训练数据转换后可用三维关节重投影误差校验图像、相机参数与二维标注是否一致。"
+    ],
+    "oneHighValuePoint": "将检测与人体回归分别计时，并通过降低检测频率、固定 ONNX 批处理形状来针对实际瓶颈优化端到端延迟。",
+    "oneLineReview": "工程细节和操作路径较完整，但性能结论主要基于仓库提供的有限测试环境。",
+    "primaryCategory": "AI计算机视觉",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "存档；有三维人体姿态估计或实时推理需求时精读",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "三维人体重建",
+      "模型部署"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文档介绍轻量级三维人体姿态估计模型 InstantHMR 的架构、输出与 ONNX 部署方式，并给出检测器配合使用、网格渲染、训练数据转换和性能调优步骤。性能数据来自指定硬件环境，下游使用还需核查模型及依赖许可证。",
+    "tags": [
+      "人体姿态估计",
+      "MHR人体模型",
+      "ONNX部署",
+      "推理性能优化",
+      "训练数据处理"
+    ],
+    "title": "mohamdev/InstantHMR",
+    "totalScore": 75,
+    "url": "https://github.com/mohamdev/InstantHMR"
+  },
+  "payloadHash": "sha256:56e202bb3904cab8a079c009e2698e0bf4305759797a983a181e5de425f2185c",
+  "refs": {},
+  "revisionId": "sha256:0f48ec659b95f9a03de36337089269b3c71fe9a7e070d7094c772fdeabf93b04",
+  "schemaVersion": 1,
+  "updatedAt": 1790770997497
+}

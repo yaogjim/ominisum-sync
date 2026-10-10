@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786353954955,
+  "entityType": "message",
+  "id": "1786353969441_1kkm3ae8",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 主旨概括\n\n作者承认自己借助 Claude 开发并发布的网页项目 **Dark Hours**，与他人的开源项目 **DarkHours.app** 高度相似，甚至复现了对方曾修复的 Bug。为此，他决定停止项目、将域名跳转至原作者的网站，并反思和限制今后使用 AI 开发软件的方式。\n\n## 1. 项目发布与相似性争议\n\n- 作者上周发布了 **Dark Hours**，用于展示用户当晚可以观测到的天空景象。\n- 昨天，另一位开发者在 Bluesky 上联系作者，指出该项目与自己的 **DarkHours.app** 非常相似，连名称也接近。\n- 作者最初承诺：\n  - 大幅调整项目功能；\n  - 更换名称；\n  - 撰写博客介绍并推广对方的项目。\n\n## 2. 确认问题后停止项目\n\n- 大约一小时后，作者进一步确认：自己使用 Claude 生成的网页应用与对方的开源项目高度雷同。\n- 更严重的是，新项目甚至复现了原项目中一个后来已经修复的 Bug，这表明两者的相似程度并非一般巧合。\n- 因此，作者决定：\n  - 将自己的项目域名直接重定向至 **DarkHours.app**；\n  - 终止该网页项目；\n  - 取消原本推出相关 iOS 应用的计划。\n\n## 3. 为原作者正名并推荐正版项目\n\n- 作者明确表示，**DarkHours.app** 是一个优秀的开源应用，原创开发者应得到应有的认可。\n- 如果用户喜欢他发布版本中的功能，应改用真正的原项目；作者本人也会这样做。\n\n## 4. 承担责任并反思 AI 使用方式\n\n- 作者称，在被提醒之前，他确实从未见过 **DarkHours.app**。\n- 但他承认，自己过度依赖 AI 生成项目，却没有主动调查是否与现有作品高度相似，这是不负责任的做法。\n- 无论内容由 AI 生成与否，发布者仍应为最终发布的产品负责，因此作者表示责任完全在自己。\n\n## 5. 今后的调整\n\n- 作者承诺，不会再以这种方式使用 AI 创建网页项目。\n- 在 iOS 开发中，他不会让 Claude 直接生成完整应用，只会将 AI 用于：\n  - 回答技术问题；\n  - 调试程序问题；\n  - 提供有限的开发辅助。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786353954955,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:eee339bc16f2b6cf98f9193142b501164681bde8dcc59100d05477bcf4b8973d",
+  "refs": {
+    "sessionId": "1786353968998_ymq05jr9"
+  },
+  "revisionId": "sha256:004a39ef65fefedc228229b0c827733e1a8486498479970ded992c4be4da2297",
+  "schemaVersion": 1,
+  "updatedAt": 1786353954955
+}

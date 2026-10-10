@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789445157592,
+  "entityType": "message",
+  "id": "summary_default_1789445157592",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者称通过自定义内核和**FP8 KV 缓存**优化，两块 RTX 3090 可让 Qwen3.8-27B 在**262K 超长上下文**下达到约**220 token / 秒**的解码速度。\n\n## 关键内容\n\n- 方案利用 FlashAttention 与 FP8 KV 缓存，降低模型保存上下文时的显存占用和数据传输压力；相关功能原本在 vLLM 中主要面向数据中心 GPU。\n- 社区成员开发内核，Club 3090 团队完成审查、移植和测试，并给出从 64K 扩展到 262K 上下文的不同配置档位。\n- 作者表示配置思路适用于所有 NVIDIA GPU，但**220 token / 秒是特定双 3090 配置下的测试结果**，不代表任意显卡都能达到。\n- 回复中有人误写成 26K；原帖明确是**262K**。其他回复多为相关项目宣传或测试请求，不能算结果验证。\n\n## 通俗解读\n\nKV 缓存可理解为模型阅读长文本时保存的 “临时笔记”；改用 FP8，相当于用更紧凑的格式记笔记，从而塞下更多内容并可能运行更快。不过原帖只是性能展示，稳定性、负载表现及测试细节仍需看 GitHub。**若想复现消费级 GPU 的长上下文推理，值得细读；只关心结论，原帖已足够。**所附 GitHub 页面正文未完整抓取，无法核对全部参数。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1789445157592,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:98a94e761124881a98a0940e7d4c157a74ae5c23c3325c1518a83263762d7399",
+  "refs": {
+    "sessionId": "1789445157624_81xfmwbe"
+  },
+  "revisionId": "sha256:60b8e6fd5bd774b97a8786d6ab26a77d37cb51d41aa12b54606f27b53d756a33",
+  "schemaVersion": 1,
+  "updatedAt": 1789445157592
+}

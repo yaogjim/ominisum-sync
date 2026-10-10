@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728568647,
+  "entityType": "message",
+  "id": "1789728568647_hqc1wv6b",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 用 4300 行代码拆解 Claude Code 的核心机制\n\n这篇文章推荐开源项目 **Claude Code From Scratch**：它以电子书加可运行代码的形式，用约 4300 行代码复现 Claude Code 的关键架构，让开发者无需阅读约 50 万行真实源码，也能通过动手实现理解 coding agent（编程智能体）的工作原理。\n\n## 用简化实现对照真实架构\n\n项目分别提供 TypeScript 和 Python 版本，覆盖 Claude Code 的多项核心能力：\n\n- Agent Loop：模型规划、调用工具、获取结果并继续执行的循环；\n- 13 种工具，以及并行执行和流式早期启动；\n- 四层上下文压缩，用于在有限上下文窗口中保留关键信息；\n- 语义记忆召回、技能系统和多 Agent 协作；\n- MCP 集成，即通过标准协议连接外部工具与数据。\n\n其重点不是完整复制产品，而是逐项说明 Claude Code 的真实做法，再展示教学版本如何简化，帮助读者抓住设计逻辑。\n\n## 以实践降低理解门槛\n\n全书共 13 章，每章都是分步教程。读者可跟随教程写出数千行代码，逐步搭建一个简化的 coding agent。作者快速浏览后认为仍有新收获，并推荐给希望理解 Claude Code 或智能体工程的人。项目提供中英文版本，价值主要在于把复杂商业产品转化为可阅读、可运行、可修改的学习材料。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728568647,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:170647d8ffcb3dcedfe92c424cd895f9636113a72d177393bdf7031fb7bd8aac",
+  "refs": {
+    "sessionId": "1782991756658_z2zojkje"
+  },
+  "revisionId": "sha256:ffee077043f2e316314030be04c1b2e3012b6f41a081eaa7aab8b4d5259e2c41",
+  "schemaVersion": 1,
+  "updatedAt": 1789728568647
+}

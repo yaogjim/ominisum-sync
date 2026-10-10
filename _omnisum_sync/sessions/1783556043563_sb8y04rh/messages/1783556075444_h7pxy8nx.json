@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783556075445,
+  "entityType": "message",
+  "id": "1783556075444_h7pxy8nx",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Pi代理扩展入门与SDK实践\n\n**评级**: B (65.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工程/智能体开发\n**次类别**: Agent框架, 开发工具扩展, TypeScript开发\n**标签**: #Pi #AI Agent #扩展机制 #SDK #工具调用 #Hook\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 内容对Pi生态和Agent扩展实践有启发，但整体偏宣传和碎片化，证据支撑不足。\n**核心高价值点**: Pi通过Hook、工具注册和ResourceLoader将本地CLI代理能力拆解为可嵌入产品的SDK组件。\n\n### 摘要\n文章介绍Pi Agent的扩展体系、Hook生命周期、工具注册、TUI定制、上下文注入、权限门和SDK嵌入方式，并展示如何将Pi用于构建无UI代理或多租户Web代理。\n\n### 知识要点\n- Pi扩展通过pi.registerTool、pi.on事件和ctx会话对象暴露工具、生命周期和运行时上下文。\n- before_agent_start可用于注入系统上下文，input Hook可在请求进入Agent前实现权限拦截。\n- Pi SDK可用createAgentSession和SessionManager构建无UI代理，并将事件流接入自定义前端。\n- 多租户Web部署需要隔离工作目录、禁用环境扩展、使用自定义ResourceLoader和数据库同步会话状态。\n\n### 行动项\n- 如果计划评估Pi，优先验证扩展API、Hook生命周期和SDK示例是否能在本地正常运行。\n- 尝试实现一个最小扩展：注册自定义工具、注入Git上下文或添加输入权限拦截。\n- 如用于产品化场景，重点调研SessionManager、沙箱隔离、权限控制和工具执行安全边界。\n\n### 存档判定\n归档: 是 — 原因: 包含Pi扩展API、Hook机制、工具注册、上下文注入、权限控制和SDK嵌入应用的示例，对Agent工程实践有参考价值\n删除: 否\n留存决策: 可作为Pi Agent扩展与SDK使用的短期技术参考，若后续实际使用Pi可长期保留",
+    "role": "assistant",
+    "timestamp": 1783556075445,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:192926ccd44f60cd8f89a91552fdbc48ccc4cbcf59eea297e850ad67e2dc5533",
+  "refs": {
+    "sessionId": "1783556043563_sb8y04rh"
+  },
+  "revisionId": "sha256:28f685de6e76cc5e28103194e9f6f1311590794aa4260eafd405567d7d26dc6a",
+  "schemaVersion": 1,
+  "updatedAt": 1783556075445
+}

@@ -1,0 +1,25 @@
+{
+  "createdAt": 1790217050968,
+  "entityType": "message",
+  "id": "summary_default_1790217050968",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章通过拆解两代大疆 Mini，认为美国公司能造出性能出色的无人机，但眼下很难同时做到大疆的**低价、轻量和快速迭代**；标题提出的 “美国能否造出一个大疆”，本文尚未给出最终答案。\n\n## 关键内容\n\n- 美国以国家安全风险为由，将外国制造的无人机列入限制名单，阻止新型号在美销售；但禁令不会自动带来有竞争力的美国替代品。\n- 作者估算，大疆通过自研芯片、采用中国供应商，降低部分成本并把更多功能装进不到 250 克的机身。例如，Mini 4 Pro 的电池比旧款贵约 2 美元，却更轻、储能更多，为新增传感器腾出了重量。\n- 美国厂商 Skydio 曾在自主飞行和目标跟踪上领先，但消费级产品更贵，据报道每卖一台还会亏钱，后来退出该市场。作者认为，远离深圳零部件供应链，拖慢了它的产品修改和测试。\n\n## 通俗解读\n\n**“能造出来” 不等于 “能以相近价格大量卖出去”。**文中的成本和利润率是依据拆机所做的估算，不等于经审计的实际利润。若想了解两代无人机具体换了哪些零件、这些判断如何得出，值得细读；若想看美国制造的完整解决方案，本文还没有。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1790217050968,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:81d4cbf2a37a2a4550bf8be1b4b832a7a67a956a700ff519d0cee81d3bec13a4",
+  "refs": {
+    "sessionId": "1790216849057_gkrmqb2j"
+  },
+  "revisionId": "sha256:ef526ef1a4bc62e38fa6343c4eb53ffedf9e53d96e8e7df8563801584e2a8a2c",
+  "schemaVersion": 1,
+  "updatedAt": 1790217050968
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1783079114286,
+  "entityType": "session",
+  "id": "1783079114286_k6972k1k",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "梳理自己的AI任务类型，尝试按开发、文档、总结、压缩等类别分配不同模型",
+      "为长上下文任务增加独立的上下文压缩步骤，测试是否能改善稳定性和成本",
+      "在会议纪要流程中加入项目背景文档输入，提高纪要的准确性和可用性"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783079170619,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "本地多Agent分工实践",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "复杂开发、文档处理、上下文压缩可以分别交给不同模型或Agent处理",
+      "会议纪要生成可先读取项目背景文档，再结合会议全文生成更贴合上下文的纪要",
+      "本地Agent体系的关键不只是模型能力，而是任务拆解、上下文传递和工具调用编排"
+    ],
+    "oneHighValuePoint": "从追求单一最强模型转向按任务拆分、上下文管理和成本效率来组织多模型协作。",
+    "oneLineReview": "有启发性的多Agent实践片段，但缺少完整方法和实证细节。",
+    "primaryCategory": "AI工作流",
+    "rating": "B",
+    "rejectReason": "内容偏碎片化，缺少具体配置、流程细节和可验证效果，只适合作为思路参考。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "多Agent系统",
+      "个人效率工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者分享了本地Agent体系的折腾经验：用不同模型分别处理复杂开发、文档纪要和上下文压缩，并接入Claude Code进行代码修改对比。核心观点是多模型协作中更重要的是任务拆分、上下文控制和成本效率。",
+    "tags": [
+      "本地Agent",
+      "模型分工",
+      "上下文压缩",
+      "Claude Code",
+      "会议纪要"
+    ],
+    "title": "管四: 这几天把本地 Agent 体系又折腾了一轮",
+    "totalScore": 56.5,
+    "url": "https://x.com/guansi/status/2060716603214368825"
+  },
+  "payloadHash": "sha256:7b187b639f835363215aa0a07de580d9f08ef57586021c18c9ecfa813e23dadf",
+  "refs": {},
+  "revisionId": "sha256:b2ad31427552781f98938c934f0523e8c6cd574d60dd7af886d2321d312c3cbf",
+  "schemaVersion": 1,
+  "updatedAt": 1789729363805
+}

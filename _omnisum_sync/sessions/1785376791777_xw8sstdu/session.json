@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785376791777,
+  "entityType": "session",
+  "id": "1785376791777_xw8sstdu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个非关键的遗留应用，试点让编码智能体迁移到受支持的现代技术栈。",
+      "对拖拽越界等交互边界进行人工测试，并与旧版本行为逐项比较。",
+      "将新生成的辅助工具标记为测试版本，收集用户反馈后再持续修正。"
+    ],
+    "archiveReason": "提供了编码智能体迁移旧应用、快速构建可视化工具及按任务风险决定使用边界的具体案例。",
+    "classifiedAt": 1785402747216,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "编码智能体重建新旧数学应用",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "terrytao.wordpress.com",
+    "favicon": "https://secure.gravatar.com/blavatar/bd4bda4207561b6998f10dec44b570f04ff4072b20f89162d525b186dfca3e49?s=32",
+    "knowledgePoints": [
+      "编码智能体可以显著降低旧Java交互应用迁移到现代Web技术栈的时间成本。",
+      "生成式编码不仅可能引入新缺陷，也可能在迁移过程中暴露原始代码中的既有问题。",
+      "数学论文或教学内容的交互式可视化适合作为低风险的AI辅助开发场景，但不能替代核心论证。"
+    ],
+    "oneHighValuePoint": "将LLM生成代码优先用于非任务关键、错误后果较低的辅助工具，并配合人工试玩和反馈，是兼顾开发效率与风险的实用边界。",
+    "oneLineReview": "案例具体且与AI编程实践高度相关，但主要依赖个人体验，缺少完整流程、量化比较和系统验证。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并存档，作为低风险AI编程与遗留应用迁移案例参考",
+    "secondaryCategories": [
+      "软件开发",
+      "数学可视化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章记录作者用编码智能体将二十余个旧Java数学应用迁移至JavaScript，并快速开发相对论和Gilbreath猜想可视化工具，同时强调生成代码仍需测试，适合优先用于非关键辅助应用。",
+    "tags": [
+      "编码智能体",
+      "遗留代码迁移",
+      "JavaScript",
+      "数学可视化",
+      "风险控制"
+    ],
+    "title": "Old and new apps, via modern coding agents",
+    "totalScore": 63,
+    "url": "https://terrytao.wordpress.com/2026/07/11/old-and-new-apps-via-modern-coding-agents/"
+  },
+  "payloadHash": "sha256:dd0e1004be505bc89156d1132f036fe1241d877613dd235045193a2f46bc31b5",
+  "refs": {},
+  "revisionId": "sha256:a4f5e8c0aead66b576130641ff6116f3158ad600b0b010979484fb6fc2e5ca99",
+  "schemaVersion": 1,
+  "updatedAt": 1785403802796
+}

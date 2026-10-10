@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789703718905,
+  "entityType": "session",
+  "id": "1789703718905_rfdtgx9q",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在同一批真实PR上对比Open Code Review、Claude Code或现有审查工具的精度、召回率和Token成本。",
+      "优先使用包含大量文件的大型PR进行压力测试，并检查开源仓库中的未解决问题。",
+      "评估现有代码审查流程中哪些环节可固定为规则引擎，哪些环节确实需要模型推理。"
+    ],
+    "archiveReason": "包含可迁移的人机分工架构，并提供可进一步验证的开源仓库。",
+    "classifiedAt": 1789703746973,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "阿里开源混合式代码审查工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "混合式代码审查可由确定性程序负责文件覆盖、打包、规则匹配和评论定位，由智能体负责仓库上下文与语义推理。",
+      "官方200个PR基准显示，该工具以较低召回率为代价，换取更高精度、F1和约九分之一的Token消耗。",
+      "大型、多文件PR可能暴露稳定性与缺陷问题，基准结果不能直接替代真实项目验证。"
+    ],
+    "oneHighValuePoint": "将规则明确、要求稳定的代码审查环节交给确定性程序，只让智能体处理上下文推理与业务歧义，可降低成本并改善信噪比。",
+    "oneLineReview": "架构思路具体且与AI编程高度相关，但性能结论主要来自官方小规模基准，仍需独立验证。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "浏览核心架构与仓库实现，作为AI代码审查工具选型资料保留",
+    "secondaryCategories": [
+      "Agent开发",
+      "软件工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍阿里开源的Open Code Review：确定性程序处理文件覆盖、规则匹配和评论定位，智能体负责推理与仓库上下文。官方基准称其精度和成本表现较好，但召回率偏低，大型PR的稳定性也受到用户质疑。",
+    "tags": [
+      "代码审查",
+      "智能体",
+      "规则引擎",
+      "Token成本",
+      "开源工具"
+    ],
+    "title": "Sandhya: Alibaba open-sourced the code reviewer it says has served tens of thousands of d…",
+    "totalScore": 67,
+    "url": "https://x.com/agenticgirl/status/2099087022900367845"
+  },
+  "payloadHash": "sha256:287fa9d13287059b6c98cc72f603c6d8ad8fd061ac0bc5462d29e9c5cf98c63f",
+  "refs": {},
+  "revisionId": "sha256:353b54848bada9d1153d07f86cb1400e1150648493304af6fbc07bf028f5fe6b",
+  "schemaVersion": 1,
+  "updatedAt": 1789727570804
+}

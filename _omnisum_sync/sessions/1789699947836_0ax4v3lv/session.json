@@ -1,0 +1,200 @@
+{
+  "createdAt": 1789699947836,
+  "entityType": "session",
+  "id": "1789699947836_0ax4v3lv",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为现有Agent绘制核心边界和扩展点清单，检查请求发送前、工具执行前后及结果验证阶段是否可插入逻辑。",
+      "在退款等高风险工具中加入参数约束、执行前授权检查、执行后状态验证和失败反馈。",
+      "用小型实验验证插件式替换Agent Loop或上下文处理器时的会话连续性、依赖重绑定与回滚能力。"
+    ],
+    "archiveReason": "文章建立了可复用的Agent Harness分析框架，并用多个开发方案和代码示例解释扩展点、运行时替换与自进化之间的关系。",
+    "byline": "Zhenjia",
+    "classifiedAt": 1789724650840,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "DSH插件架构与智能体自进化",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "zhenjia.dev",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Agent Harness 五要素",
+        "caption": "图片来自李博杰《AI Agents in Depth》",
+        "height": 450,
+        "id": "img-1",
+        "nearbyText": "图片来自李博杰《AI Agents in Depth》",
+        "resolvedUrl": "https://img.zhenjia.dev/agent-harness-components.png",
+        "role": "figure",
+        "score": 113,
+        "src": "https://img.zhenjia.dev/agent-harness-components.png",
+        "width": 900
+      }
+    ],
+    "knowledgePoints": [
+      "生产级Agent Harness除上下文管理和工具接口外，还应包含约束、结果验证与失败纠正机制。",
+      "Agent开发方案可通过插件形态与组装方式两个维度分析，而实际能力上限取决于框架开放了哪些扩展点。",
+      "时空可组合性通过稳定接口标识与可替换实现解耦依赖，使运行中的Agent具备替换Harness组件的可能。"
+    ],
+    "metaAuthor": "Zhenjia",
+    "oneHighValuePoint": "最有价值的是将Agent框架差异归结为“不可触碰核心的边界与扩展点覆盖范围”，并进一步说明全插件化为何能为运行时自我修改提供基础。",
+    "oneLineReview": "对Agent Harness架构边界和自进化路径的分析较有启发，但未来版本、性能判断及部分技术主张缺少可核验的完整证据链。",
+    "primaryCategory": "AI Agent开发",
+    "published": "2026-08-20T12:00:00.000Z",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，重点保留Harness边界分析、插件架构及自进化分级框架",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@id": "https://zhenjia.dev/#person",
+            "@type": "Person",
+            "email": "zhenjiazhou0127@outlook.com",
+            "jobTitle": "Software engineer",
+            "name": "Zhenjia",
+            "sameAs": [
+              "https://github.com/lifeodyssey",
+              "https://www.linkedin.com/in/zhenjia-zhou/"
+            ],
+            "url": "https://zhenjia.dev/about"
+          },
+          {
+            "@id": "https://zhenjia.dev/#website",
+            "@type": "WebSite",
+            "description": "关于生活、技术与思考的个人博客。",
+            "inLanguage": [
+              "zh",
+              "en",
+              "ja"
+            ],
+            "name": "Life Odyssey",
+            "publisher": {
+              "@id": "https://zhenjia.dev/#person"
+            },
+            "url": "https://zhenjia.dev/"
+          },
+          {
+            "@id": "https://zhenjia.dev/posts/the-deepseek-of-deepseek-harness#article",
+            "@type": "BlogPosting",
+            "author": {
+              "@id": "https://zhenjia.dev/#person"
+            },
+            "datePublished": "2026-08-20T12:00:00.000Z",
+            "description": "对 DeepSeek Harness 的一次 deepseek：过度工程，还是为自进化而建？",
+            "headline": "The deepseek of DeepSeek Harness: Overengineering or built for self-evolution?",
+            "image": "https://zhenjia.dev/og/the-deepseek-of-deepseek-harness.png",
+            "inLanguage": "zh",
+            "isPartOf": {
+              "@id": "https://zhenjia.dev/#website"
+            },
+            "keywords": [
+              "AI Agent",
+              "DeepSeek",
+              "Harness"
+            ],
+            "mainEntityOfPage": {
+              "@id": "https://zhenjia.dev/posts/the-deepseek-of-deepseek-harness",
+              "@type": "WebPage"
+            },
+            "url": "https://zhenjia.dev/posts/the-deepseek-of-deepseek-harness"
+          }
+        ]
+      },
+      {
+        "@id": "https://zhenjia.dev/#person",
+        "@type": "Person",
+        "email": "zhenjiazhou0127@outlook.com",
+        "jobTitle": "Software engineer",
+        "name": "Zhenjia",
+        "sameAs": [
+          "https://github.com/lifeodyssey",
+          "https://www.linkedin.com/in/zhenjia-zhou/"
+        ],
+        "url": "https://zhenjia.dev/about"
+      },
+      {
+        "@id": "https://zhenjia.dev/#website",
+        "@type": "WebSite",
+        "description": "关于生活、技术与思考的个人博客。",
+        "inLanguage": [
+          "zh",
+          "en",
+          "ja"
+        ],
+        "name": "Life Odyssey",
+        "publisher": {
+          "@id": "https://zhenjia.dev/#person"
+        },
+        "url": "https://zhenjia.dev/"
+      },
+      {
+        "@id": "https://zhenjia.dev/posts/the-deepseek-of-deepseek-harness#article",
+        "@type": "BlogPosting",
+        "author": {
+          "@id": "https://zhenjia.dev/#person"
+        },
+        "datePublished": "2026-08-20T12:00:00.000Z",
+        "description": "对 DeepSeek Harness 的一次 deepseek：过度工程，还是为自进化而建？",
+        "headline": "The deepseek of DeepSeek Harness: Overengineering or built for self-evolution?",
+        "image": "https://zhenjia.dev/og/the-deepseek-of-deepseek-harness.png",
+        "inLanguage": "zh",
+        "isPartOf": {
+          "@id": "https://zhenjia.dev/#website"
+        },
+        "keywords": [
+          "AI Agent",
+          "DeepSeek",
+          "Harness"
+        ],
+        "mainEntityOfPage": {
+          "@id": "https://zhenjia.dev/posts/the-deepseek-of-deepseek-harness",
+          "@type": "WebPage"
+        },
+        "url": "https://zhenjia.dev/posts/the-deepseek-of-deepseek-harness"
+      }
+    ],
+    "schemaTypes": [
+      "Person",
+      "WebSite",
+      "BlogPosting"
+    ],
+    "secondaryCategories": [
+      "软件架构",
+      "AI编程工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章从Agent基本组成和三类开发模式出发，对比Pydantic AI、Claude Agent SDK与Eve，分析DeepSeek Harness的一切皆插件架构，并以时空可组合性解释其设计如何支持运行时组件替换及Harness层自我改进。",
+    "tags": [
+      "DeepSeek Harness",
+      "Agent Harness",
+      "插件化架构",
+      "时空可组合性",
+      "智能体自进化"
+    ],
+    "title": "The deepseek of DeepSeek Harness: Overengineering or built for self-evolution? | Life Odyssey",
+    "totalScore": 79,
+    "url": "https://zhenjia.dev/posts/the-deepseek-of-deepseek-harness"
+  },
+  "payloadHash": "sha256:0b6663507b3056eec54d66b3999f050695d22ceb17c8a9f4cd0593d86b8cf5e4",
+  "refs": {},
+  "revisionId": "sha256:887f4fdda77b2ca1441cdf66aa1691988d20126ad37b1b957bc79152e22a376d",
+  "schemaVersion": 1,
+  "updatedAt": 1790770167744
+}

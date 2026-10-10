@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726146396,
+  "entityType": "message",
+  "id": "1789726146396_gp2mdhyk",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n前 NVIDIA 工程师、Sail Research 联合创始人认为，AI 的下一阶段将是可在后台连续工作数小时乃至更久的智能体，而普及关键是把生成“token”的成本大幅压低，而非一味追求即时回复速度。\n\n## 关键内容\n\n- Sail 把自己定位为“token 工厂”：提供开源大模型 API 和长期运行的云端环境，目标是通过软硬件、数据中心与电力等环节降低推理成本。  \n- 嘉宾判断，未来多数 AI 工作会转向后台运行：用户交付一个目标，智能体自主研究和调用工具，完成后再汇报；因此速度可以稍慢，但必须足够便宜、持久。  \n- 适合的任务包括遍历海量资料的深度研究，以及用不同模型反复检查、攻击并修补软件的网络安全测试。  \n- 更低成本还可能催生主动型个人助手：持续整理邮件和消息、预测下一步需求。但这依赖模型可靠性、隐私保护及用户信任。\n\n## 通俗解读\n\n核心区别是：现在的 AI 像“按次咨询的专家”，文中设想的 AI 更像“整夜工作的同事”。成本足够低后，它可以大量试错，而不必保证每次计算都有回报。**值得关注其产品思路和应用案例，但“1000 倍更便宜”在现有节选中尚无具体测算支撑。**本文内容不完整，后半段关于芯片、电力、数据中心及开放模型的讨论未提供，若想判断其降本方案是否可信，值得查看原视频对应部分。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726146396,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d990c579c5d4695bfff39eb0c1613c74e91e9aa79a2adabe30612f63c6c50e27",
+  "refs": {
+    "sessionId": "1789721841339_ao6a3xcd"
+  },
+  "revisionId": "sha256:ba6ba01bb5b9ae28a7507677aa4b72e6d3bcc0f5a5f25683a7563a00cf10b7e5",
+  "schemaVersion": 1,
+  "updatedAt": 1789726146396
+}

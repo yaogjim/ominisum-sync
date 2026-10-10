@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789722039697,
+  "entityType": "session",
+  "id": "1789722039697_hr5n69pw",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "购车比较时分别核查同车龄、同使用场景下的事故率、伤亡率与逃生时间数据。",
+      "实车确认断电后的机械开门方式、门把手位置及紧急逃生装置。",
+      "对文中自燃率和新国标相关说法查找原始统计口径与正式标准后再作判断。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1789722068771,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "燃油车与电动车的尾部风险争论",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "总体事故率可能掩盖高速碰撞、车辆老化和充电方式等条件下的风险差异。",
+      "风险决策应综合事件概率与损失严重度，不能只用平均概率代表个人情境。",
+      "机械或电子系统的安全性应通过故障隔离、手动备份和逃生路径等具体冗余设计评价。"
+    ],
+    "oneHighValuePoint": "评估低概率高损失风险时，应同时考察发生概率、条件后果、系统冗余和失败后的逃生能力，而不能只比较总体事故率。",
+    "oneLineReview": "区分风险概率与后果严重度具有启发性，但证据薄弱且多处从抽象理论直接跳到具体车型结论。",
+    "primaryCategory": "风险决策",
+    "rating": "C",
+    "rejectReason": "核心框架有一定启发，但关键统计缺少来源，对燃油车与电动车事故后果的描述过度概括，未形成可靠比较。",
+    "retentionDecision": "可速览其风险决策视角，但不宜作为汽车安全结论或购车依据保留",
+    "secondaryCategories": [
+      "汽车安全",
+      "概率思维"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章借用塔勒布的尾部风险、冗余和林迪效应，主张选车不能只看起火概率，还应比较事故后果与逃生能力，并据此认为成熟燃油车更适合极端风险厌恶者。",
+    "tags": [
+      "尾部风险",
+      "条件概率",
+      "系统冗余",
+      "林迪效应",
+      "汽车安全"
+    ],
+    "title": "王海滨的财经闲谈: 选择的代价： 概率是数字，后果是生命 在汽车圈，有一场争论从未平息：到底是买燃油车更安全，还是买电动车更安全",
+    "totalScore": 46,
+    "url": "https://x.com/wangwatchworld/status/2091505497446965722"
+  },
+  "payloadHash": "sha256:4edf39f926fe0cf7e917d58afb977ecd6b0b7f77d508d4f2d154c5e990db263a",
+  "refs": {},
+  "revisionId": "sha256:79b20549309db40ba3ea9997cb4ca69203ad6d04bafda9d2771c62787dd477f2",
+  "schemaVersion": 1,
+  "updatedAt": 1789722068805
+}

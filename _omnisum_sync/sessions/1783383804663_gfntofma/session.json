@@ -1,0 +1,110 @@
+{
+  "createdAt": 1783383804663,
+  "entityType": "session",
+  "id": "1783383804663_gfntofma",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "进一步阅读 EdgeBench 论文，核查任务构成、评分方式、模型选择和统计方法。",
+      "将 log-sigmoid 曲线拟合到已有智能体评测日志，验证是否存在类似的环境学习规律。",
+      "在自有智能体实验中记录 best-so-far 曲线、关键转折点和失败分解过程，用于评估长期交互改进能力。"
+    ],
+    "archiveReason": "提出了环境学习能力的评测框架与经验缩放规律，对理解智能体长期交互能力和设计评测体系有参考价值。",
+    "classifiedAt": 1783419012646,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "智能体环境学习缩放定律",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "edge-bench.org",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 320,
+        "id": "img-1",
+        "nearbyText": "Gravitational-wave detection",
+        "resolvedUrl": "https://edge-bench.org/assets/taxonomy/ligo-gw.png",
+        "role": "figure",
+        "score": 73,
+        "src": "https://edge-bench.org/assets/taxonomy/ligo-gw.png",
+        "width": 320
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 320,
+        "id": "img-2",
+        "nearbyText": "3-D gravity inversion",
+        "resolvedUrl": "https://edge-bench.org/assets/taxonomy/gravity-inversion.png",
+        "role": "figure",
+        "score": 73,
+        "src": "https://edge-bench.org/assets/taxonomy/gravity-inversion.png",
+        "width": 320
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 320,
+        "id": "img-3",
+        "nearbyText": "Groundwater plume modeling",
+        "resolvedUrl": "https://edge-bench.org/assets/taxonomy/groundwater.png",
+        "role": "figure",
+        "score": 73,
+        "src": "https://edge-bench.org/assets/taxonomy/groundwater.png",
+        "width": 320
+      }
+    ],
+    "knowledgePoints": [
+      "智能体真实部署能力不仅取决于预训练知识，还取决于能否在环境中尝试、观察、吸收反馈并改进。",
+      "EdgeBench 将多任务学习曲线平均后发现近似 log-sigmoid 形态，声称平均拟合 R2 达到 0.998。",
+      "文章用“已解锁节点向未解锁邻居扩散”的前沿模型解释学习速度与 x(1-x) 成正比。",
+      "单次任务学习往往呈现平台期与跃迁，群体平均后才显现平滑规律。",
+      "案例显示高质量智能体改进并非简单调参，而是经历问题可测量化、失败分解、瓶颈定位与局部修复循环。"
+    ],
+    "oneHighValuePoint": "将智能体在环境中的持续改进建模为基于对数时间的 log-sigmoid 学习曲线，为评估长程交互能力提供了可量化框架。",
+    "oneLineReview": "这是一篇有启发性的智能体评测报告，但网页呈现偏宣传，证据细节仍需结合论文验证。",
+    "primaryCategory": "人工智能/智能体评测",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI基准测试",
+      "Scaling Laws",
+      "环境交互学习"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 EdgeBench 对智能体环境学习能力的评测，提出学习曲线近似服从 log-sigmoid 规律，并用多任务曲线、案例轨迹和学习速度趋势说明模型如何通过环境反馈持续改进。",
+    "tags": [
+      "EdgeBench",
+      "智能体",
+      "环境学习",
+      "缩放定律",
+      "基准评测"
+    ],
+    "title": "EdgeBench | Scaling Laws of Environment Learning",
+    "totalScore": 71,
+    "url": "https://edge-bench.org/"
+  },
+  "payloadHash": "sha256:1d7944f9e914f13eca57707b5af03c4078e794e16c85b288db9356aa865323c6",
+  "refs": {},
+  "revisionId": "sha256:65411752c086eaeed51600cf5698351aaa5c2214642dd05f2aa5ef7f10c2ab99",
+  "schemaVersion": 1,
+  "updatedAt": 1789695772969
+}

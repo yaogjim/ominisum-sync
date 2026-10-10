@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695716052,
+  "entityType": "message",
+  "id": "1789695716052_dfvmj008",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n真正的“AI 原生组织”不只是使用 ChatGPT，而是把**人、Agent（智能体）和组织上下文**组成一套可持续执行、检查和学习的工作系统。\n\n## 关键内容\n\n- **人转向管理两端**：AI 承担大量中间执行，人负责前端的战略、判断与品味，以及后端的评审、沟通和信任；使用 Agent 应像管理下属一样，先给清目标和条件。\n- **Agent 自治有前提**：需要明确目标、技能、工具和上下文。多个技能要串成固定流程，并用质量标准和反复核验来减少幻觉，而非指望单次提示词。\n- **上下文是系统核心**：组织应持续采集、筛选、存储并回写资料，包括决策过程和被否决方案。但新经验进入资料库前必须由人把关，否则错误会被后续 Agent 反复利用。\n- 文中两个演示分别在数分钟内生成个性化提案网站、完成“需求—原型—测试—迭代”。作者借此强调：速度的价值在于更快获得真实反馈，而非单纯产出更多。\n\n## 通俗解读\n\n这里的“上下文”不是把文件堆进知识库，而是让 Agent 知道**该看什么、按什么标准做、如何检查、哪些结果能留下**。文章据一场对谈整理，案例收入及效果属于对谈中的陈述，正文未提供独立验证；若想复现具体流程，值得继续细看原视频。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695716052,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7a2d8825b613ca2b39d2d0c9b8f93089dec8357ece38ce8ccdba39bcfb5db8e8",
+  "refs": {
+    "sessionId": "1783078014412_46wj0p2v"
+  },
+  "revisionId": "sha256:480d1d64b3429d3eb3a518fe80df618b04954a819ff9717d13ac764dd4dc9bb9",
+  "schemaVersion": 1,
+  "updatedAt": 1789695716052
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782361932304,
+  "entityType": "message",
+  "id": "1782361932303_anrqi7bh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Omnigent多智能体元框架发布\n\n**评级**: C (47.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: 人工智能\n**次类别**: AI Agent, 开发工具\n**标签**: #Omnigent #多智能体 #AI代理 #开源项目 #Databricks\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 4 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 3 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 这是一个值得关注的 AI Agent 工具发布线索，但当前信息过于简略，不足以支撑深入学习。\n**核心高价值点**: Omnigent 关注在不同 Agent harness 之上的统一组合、协作和控制层，反映了多智能体工程化的发展趋势。\n\n### 摘要\nMatei Zaharia 宣布开源 Omnigent，一个面向 AI Agent 的元框架，支持在 Claude Code、Codex、Pi 等工具之上组合多智能体，并提供协作、控制和部署能力。\n\n### 知识要点\n- Omnigent 是用于组合多个 AI Agent 框架的 meta-harness。\n- 其核心方向包括组合、实时协作和控制策略。\n- 支持本地运行以及 Docker、Railway、Fly、Modal、Daytona 等部署环境。\n- 项目试图解决多个 Agent 框架之间难以统一编排的问题。\n\n### 行动项\n- 若从事 AI Agent 开发，可访问 Omnigent 官网或 Databricks 博客查看完整技术细节。\n- 关注其是否提供稳定 API、示例项目和与现有 Agent 框架的实际集成能力。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是项目发布公告，缺少技术细节、实证案例和可直接复用的方法论。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1782361932304,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:0c1524cf23fac68b7e28721bdb80e48771e2616e2ea8d7ce04b703d7702dfe50",
+  "refs": {
+    "sessionId": "1782360409687_tu2d7ks6"
+  },
+  "revisionId": "sha256:1a9a5875b75ad9eff0b0612081bf4ec1ea30ccaaf7292e258833cf14075729bf",
+  "schemaVersion": 1,
+  "updatedAt": 1782361932304
+}

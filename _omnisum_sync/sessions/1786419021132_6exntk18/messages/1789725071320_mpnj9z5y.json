@@ -1,0 +1,19 @@
+{
+  "createdAt": 1789725071321,
+  "entityType": "message",
+  "id": "1789725071320_mpnj9z5y",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: OpenWork开源智能体协作平台\n\n**评级**: B (69分)  |  **深度阅读**: 可选  |  **建议操作**: 存档\n\n**主类别**: AI Agent开发工具\n**次类别**: 开源软件, 团队能力管理\n**标签**: #OpenWork #MCP #AI Agent #工作流共享 #权限管理\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 9 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 项目定位和接入方式清晰，具有较强实践参考价值，但功能效果主要来自项目自述，缺少独立案例与性能证据。\n**核心高价值点**: 用统一MCP将能力发现与执行抽象为search_capabilities和execute_capability，可降低不同智能体客户端之间的集成与迁移成本。\n\n### 摘要\n文章介绍开源桌面应用OpenWork，支持通过统一MCP在Codex、Claude Code和Cursor等智能体间复用技能、插件与服务，并提供团队权限、模型供应商、版本策略和能力发布管理。\n\n### 知识要点\n- OpenWork MCP通过能力搜索和能力执行两个工具向兼容智能体暴露已分配的技能、插件及外部服务。\n- OpenWork Den作为组织控制平面，可管理模型供应商、成员权限、桌面策略、应用版本和能力分发。\n- 多Git worktree并行开发可使用隔离配置、动态调试端口和模拟钥匙串，避免实例锁与凭据冲突。\n\n### 行动项\n- 在测试环境中将OpenWork远程MCP接入现有Codex、Claude Code或OpenCode客户端。\n- 验证能力搜索、能力执行以及Google Workspace或Microsoft 365连接的完整流程。\n- 将其组织权限与能力发布模型同现有Agent平台需求进行对照评估。\n\n### 存档判定\n归档: 是 — 原因: 包含明确的MCP接入方式、跨客户端能力复用模型和组织级权限管理设计，适合后续选型或原型验证。\n删除: 否\n留存决策: 作为AI智能体能力复用与组织级管理方案的参考资料存档",
+    "role": "assistant",
+    "timestamp": 1789725071321,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:b840473deb3480cf3f05a09acb6276436978871d0994ee05621b52a07cf46471",
+  "refs": {
+    "sessionId": "1786419021132_6exntk18"
+  },
+  "revisionId": "sha256:6ece3ad851b7a7e1d92e19d061d9df771fca418b3716b5947a78239e6b870763",
+  "schemaVersion": 1,
+  "updatedAt": 1789725071321
+}

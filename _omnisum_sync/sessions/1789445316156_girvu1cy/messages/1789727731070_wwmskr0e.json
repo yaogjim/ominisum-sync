@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727731070,
+  "entityType": "message",
+  "id": "1789727731070_wwmskr0e",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Atria Dawn：从“生成答案”转向交付可验证成果\n\n上海人工智能实验室发布 Atria Dawn Preview，一款面向科研、开发及专业知识工作的长周期智能体模型。其核心特点不是单纯追求回答质量，而是确认任务是否真正完成，最终产出可执行、可验证、可复现的结果。\n\n## 用外部验证判断任务是否完成\n\n模型可围绕开放问题自主检索资料、编写并运行代码、处理数据、执行实验和调试，再通过外部验证与质量筛选确认结果。系统还会保留有效经验，并分析失败原因，以改进后续任务执行和环境配置。\n\n## 初步案例显示其兼顾速度与严谨性\n\n作者将模型接入 NewMax 分析股票，主观感受是响应速度很快；模型会对市占率等数据进行交叉比对，再给出相对保守的结论。另一则用户案例中，它用真实分词器和自建验证器审查 AGENTS.md，将 token 用量降低 22%，同时证明“降低 50%”不可实现，而非迎合目标。\n\n## 潜力明确，但仍需更多独立验证\n\n这类“以可运行成果为终点”的设计，可能提高科研分析、软件开发和复杂知识任务的可靠性。但目前主要证据来自官方介绍和早期用户体验，尚缺少独立基准来验证其准确率、稳定性与泛化能力。据热门回复，96 名核心成员中有 65 名在校学生。项目已发布 GitHub，并开放 API 申请。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727731070,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:755c23a05ee799545a05bc073b0056f3d883582a92db27ccd4e2647c7bcb2d7c",
+  "refs": {
+    "sessionId": "1789445316156_girvu1cy"
+  },
+  "revisionId": "sha256:c83a7799be77db637d1392799089a29c7905c19933cabb885ba3d3c1fb52afd2",
+  "schemaVersion": 1,
+  "updatedAt": 1789727731070
+}

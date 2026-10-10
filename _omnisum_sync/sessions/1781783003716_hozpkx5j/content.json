@@ -1,0 +1,15 @@
+{
+  "createdAt": 1781783003716,
+  "entityType": "session-content",
+  "id": "1781783003716_hozpkx5j",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Saito</strong></header><div class=\"tw-body\">十年前百度美研一群人就预判：不能把 AI 算力全押在英伟达身上。结果他们真的投了一家「晶圆级」芯片公司 —Cerebras。<br><br>2016 年，周楠从投行跳去百度美国人工智能研究院。那时候吴恩达带队，预算充足，GPU 随便买。Dario（Anthropic 创始人）和 Greg Diamond 都在那里。团队已经隐约摸到 scaling law 的雏形：模型越大、数据越多、算力越强，效果就越好。DeepSpeech2 那篇论文就是最早的信号之一。<br><br>周楠做的第一个项目就是 Cerebras。当时他满世界找「不是英伟达」的训练芯片，看了 Graphcore、Wave Computing，最后选了 Cerebras。因为这家公司最激进——要做 wafer-scale engine，把一整片晶圆做成一个巨大的 AI 计算引擎，让计算单元和内存靠得极近，大幅降低通信成本。<br><br>投的时候 Cerebras 连流片都没有，只有 signature。百度美研的研究员直接上手验证，在当时全球最大的语言模型上跑，信号还不错。投决会几乎零阻力，Robin、陆奇、李彦宏快速通过。估值当时已经 7 亿多刀，在 2017 年算贵，但周楠赌的是「非共识」。<br><br>真正难的不是 idea，而是把 wafer-scale 做出来。良率、散热、电源、编译器，每一个都是硬骨头。2017-2019 年几乎是至暗时刻，流片一延再延。但 Benchmark、Foundation、Eclipse 等早期投资人一直陪，给了足够耐心。芯片真的要十年才能看到结果。<br><br>现在 Cerebras 的机会在推理，而不是训练。OpenAI 签下至少 200 亿刀大单，就是看中它低延迟、高吞吐。英伟达的 CUDA 生态太强，训练阶段迁移成本极高，但推理场景下，Cerebras 的架构优势开始显现。Sam Altman 其实 2016 年就个人投了 Cerebras，比百度还早。<br><br>周楠感慨，百度美研其实是硅谷的「黄埔军校」。后来出去创业的人太多：Inflection、Adept、Anthropic、Cohere……可惜因为地缘政治，百度后来想单独募一个专注 AI 的基金没成，OpenAI、Databricks 当时都在 list 上，最终都没投成。<br><br>十年前大家就担心不能只依赖英伟达，结果英伟达还是成了事实垄断。但现在推理需求爆发，反而给了异构芯片新窗口。Cerebras 只是开始，后面可能还会有更多新架构的推理芯片出现。<br><br>周楠现在看 AI 投资：共识来得太快，早期窗口越来越短。他反而更关注还没形成共识的方向，比如 Physical AI（机器人）和新的推理芯片架构。这期节目最打动人的，是把十年前 scaling law 刚冒头、百度美研那批人「神仙打架」的氛围还原了出来。很多事情早早被看到，但真正落地要等十年。Cerebras 的故事，只是其中一个缩影。</div></article>",
+    "pageContent": "Saito: 十年前百度美研一群人就预判：不能把 AI 算力全押在英伟达身上。结果他们真的投了一家「晶圆级」芯片公司 —Cerebras。 2016 年，周楠从投行跳去百度美国人工智能研究院。那时候吴恩达带队，预算充足，GPU 随便买。Dario（Anthropic 创始人）和 Greg Diamond 都在那里。团队已经隐约摸到 scaling law 的雏形：模型越大、数据越多、算力越强，效果就越好。DeepSpeech2 那篇论文就是最早的信号之一。 周楠做的第一个项目就是 Cerebras。当时他满世界找「不是英伟达」的训练芯片，看了 Graphcore、Wave Computing，最后选了 Cerebras。因为这家公司最激进——要做 wafer-scale engine，把一整片晶圆做成一个巨大的 AI 计算引擎，让计算单元和内存靠得极近，大幅降低通信成本。 投的时候 Cerebras 连流片都没有，只有 signature。百度美研的研究员直接上手验证，在当时全球最大的语言模型上跑，信号还不错。投决会几乎零阻力，Robin、陆奇、李彦宏快速通过。估值当时已经 7 亿多刀，在 2017 年算贵，但周楠赌的是「非共识」。 真正难的不是 idea，而是把 wafer-scale 做出来。良率、散热、电源、编译器，每一个都是硬骨头。2017-2019 年几乎是至暗时刻，流片一延再延。但 Benchmark、Foundation、Eclipse 等早期投资人一直陪，给了足够耐心。芯片真的要十年才能看到结果。 现在 Cerebras 的机会在推理，而不是训练。OpenAI 签下至少 200 亿刀大单，就是看中它低延迟、高吞吐。英伟达的 CUDA 生态太强，训练阶段迁移成本极高，但推理场景下，Cerebras 的架构优势开始显现。Sam Altman 其实 2016 年就个人投了 Cerebras，比百度还早。 周楠感慨，百度美研其实是硅谷的「黄埔军校」。后来出去创业的人太多：Inflection、Adept、Anthropic、Cohere……可惜因为地缘政治，百度后来想单独募一个专注 AI 的基金没成，OpenAI、Databricks 当时都在 list 上，最终都没投成。 十年前大家就担心不能只依赖英伟达，结果英伟达还是成了事实垄断。但现在推理需求爆发，反而给了异构芯片新窗口。Cerebras 只是开始，后面可能还会有更多新架构的推理芯片出现。 周楠现在看 AI 投资：共识来得太快，早期窗口越来越短。他反而更关注还没形成共识的方向，比如 Physical AI（机器人）和新的推理芯片架构。这期节目最打动人的，是把十年前 scaling law 刚冒头、百度美研那批人「神仙打架」的氛围还原了出来。很多事情早早被看到，但真正落地要等十年。Cerebras 的故事，只是其中一个缩影。"
+  },
+  "payloadHash": "sha256:ccf850912b17cf01aea06d8b4e3bc29244ad0bcab2c260a827b2bd63723a5f9f",
+  "refs": {},
+  "revisionId": "sha256:ff38fc1559dc50864c4e06b7d13c7443ea144be7973ebb9dc2f60c01d26a7dce",
+  "schemaVersion": 1,
+  "updatedAt": 1781783645017
+}

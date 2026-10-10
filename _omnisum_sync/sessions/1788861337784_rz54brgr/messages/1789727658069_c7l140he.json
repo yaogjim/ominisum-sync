@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727658069,
+  "entityType": "message",
+  "id": "1789727658069_c7l140he",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Hyperspace：用分布式智能体把自然语言目标变成自动研究\n\nHyperspace v3 将 Karpathy 的“自动研究循环”扩展为一个 P2P 智能体网络：用户只需用自然语言描述优化目标，系统便自动生成实验代码，组织多台机器反复试验、共享结果并积累知识，试图让不同领域的研究能力相互复用。\n\n## 三项核心能力形成闭环\n\n- **Autoswarms**：LLM 生成沙盒实验代码并在本地验证；参与节点随后在 WASM 沙盒中执行“变异—评估—共享”，让高分策略扩散，并由模型提炼其有效原理。\n- **研究 DAG**：将观察、实验和结论组织为知识图谱。机器学习、搜索、金融等领域的发现可转化为其他领域的新假设，AutoThinker 再据此持续提出实验。\n- **Warps**：用声明式配置改变智能体行为，例如开启全资源模式、自动研究、隐私运行、推理优化或 GPU 保护；也可由自然语言生成配置，经用户审核后启用。\n\n## 作者称已完成近 1.5 万次实验\n\n据项目方数据，237 个智能体在五个领域完成 14,832 次实验：机器学习验证损失降低 75%；搜索 NDCG 提升至 0.40；金融回测夏普比率达 1.32；部分 JavaScript 技能任务正确率达到 100%；基础设施还进行了 6,584 轮自我优化。\n\n## 价值在于共享实验网络，而非已实现 AGI\n\n其产品意义是降低自动实验门槛，并让闲置设备、实验结果和策略形成可复用的网络效应。但这些指标来自项目方披露，任务基线、成本、泛化能力及金融回测可靠性尚缺少独立验证；“通用智能网络”目前更接近愿景和早期实验，而非已被证明的 AGI。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727658069,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ebf31832feab8c3aa0e6802f4e5d7b88f02b5ba05516b0197a7e1d543147136b",
+  "refs": {
+    "sessionId": "1788861337784_rz54brgr"
+  },
+  "revisionId": "sha256:42968a4a35c835ecc6a1c8495ddd422d1dee9f4b34ff647f0fe61d615bd2b8e1",
+  "schemaVersion": 1,
+  "updatedAt": 1789727658069
+}

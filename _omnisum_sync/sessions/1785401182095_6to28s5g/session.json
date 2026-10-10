@@ -1,0 +1,93 @@
+{
+  "createdAt": 1785401182095,
+  "entityType": "session",
+  "id": "1785401182095_6to28s5g",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用PostHog，可启用AI对项目的访问权限并测试自然语言数据查询。",
+      "选取创建仪表盘、编写SQL或总结会话回放等任务，验证其输出准确性和操作权限。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1789725162829,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 3
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "PostHog AI能力与使用概览",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "posthog.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1785401198607,
+        "imageId": "img-7",
+        "model": "gpt-5.6-sol",
+        "ocrText": "",
+        "summary": "# PostHog AI：内置于产品数据平台的 AI 分析助手\n\n## 核心定位\n\nPostHog AI 是运行在 PostHog 内部的 AI Agent，可视为常驻项目中的 “产品分析师与操作助手”。用户通过自然语言提问或下达任务，它既能分析数据，也能直接在平台中完成操作。\n\n## 核心差异\n\n与通用 AI 助手相比，PostHog AI 的关键优势是与企业的**产品数据、事件模型和 PostHog 工具链深度连接**。因此，它不仅能提供建议，还能基于真实用户行为得出结论，并执行创建报表、修改筛选条件等任务。\n\n## 主要能力\n\n- **产品研究与数据查询**：回答产品表现及客户行为相关问题。\n- **分析资产创建**：生成 Insight、编辑筛选条件、搭建 Dashboard。\n- **开发与数据工具**：编写、修复和校验 SQL，创建功能开关与问卷。\n- **内容总结与诊断**：分析 Session Replay、实验结果、错误及其他洞察。\n- **知识辅助**：解释 PostHog 功能并检索官方文档。\n\n## 覆盖场景\n\n| PostHog 模块 | AI 能力 |\n|---|---|\n| 产品分析 | 创建洞察与仪表盘 |\n| 会话回放 | 查找并总结用户会话 |\n| Feature Flags | 快速创建功能开关 |\n| 数据仓库 | 编写、修复与验证 SQL |\n| 错误追踪 | 定位影响最大的错误和问题 |\n\n## 交互方式\n\n主要入口是 PostHog 应用内的 AI 对话侧边栏。同时，AI 能力也嵌入筛选器、SQL 编辑器、会话回放等具体工作流中。不同入口共享同一套 PostHog AI 核心能力。\n\n## 产品价值\n\nPostHog AI 将 “理解需求 — 查询数据 — 形成洞察 — 执行配置” 整合进一个自然语言工作流，降低产品分析和平台操作门槛，缩短从问题到行动的路径。用户可先开启项目访问权限，再直接通过应用内对话开始使用。",
+        "url": "https://res.cloudinary.com/dmukukwp6/image/upload/demo_light_2008b30494.png",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "caption": "Demo",
+        "height": 86,
+        "id": "img-7",
+        "nearbyText": "Demo",
+        "resolvedUrl": "https://res.cloudinary.com/dmukukwp6/image/upload/demo_light_2008b30494.png",
+        "role": "figure",
+        "score": 93,
+        "src": "https://res.cloudinary.com/dmukukwp6/image/upload/demo_light_2008b30494.png",
+        "width": 124
+      }
+    ],
+    "knowledgePoints": [
+      "嵌入式产品分析Agent可同时承担数据问答、界面导航和平台操作。",
+      "PostHog AI的多个产品内入口共享同一AI核心，并连接项目数据与事件结构。",
+      "其覆盖产品分析、会话回放、数据仓库、功能开关和错误追踪等场景。"
+    ],
+    "oneHighValuePoint": "PostHog AI直接连接产品事件模型和真实使用数据，并能在同一代理核心下跨分析、回放、SQL及功能开关执行操作。",
+    "oneLineReview": "与AI Agent和产品分析高度相关，但仅是功能导航式概览，方法与证据不足。",
+    "primaryCategory": "AI产品与Agent",
+    "rating": "C",
+    "rejectReason": "内容主要是功能介绍，缺少操作步骤、案例、技术原理和效果证据，独立沉淀价值有限",
+    "retentionDecision": "作为产品能力概览速览即可，需要使用PostHog时再查阅具体文档",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "产品分析",
+      "开发者工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章概述PostHog平台内置AI代理的能力，包括查询产品数据、创建洞察与仪表盘、分析会话回放、编写SQL、配置功能开关、调查问卷及检索文档，并给出启用和继续了解功能的入口。",
+    "tags": [
+      "PostHog AI",
+      "产品分析",
+      "数据查询",
+      "应用内Agent",
+      "自然语言交互"
+    ],
+    "title": "PostHog AI - Docs - PostHog",
+    "totalScore": 48,
+    "url": "https://posthog.com/docs/posthog-ai"
+  },
+  "payloadHash": "sha256:1822d543754a51b84aa2279b9d6d9c9d0b4d7192a6bd952bf14948229cdd30b6",
+  "refs": {},
+  "revisionId": "sha256:1838c0aab84deecaa90407de126b5dd5643c5339d170143e5660e003ad2f9b7e",
+  "schemaVersion": 1,
+  "updatedAt": 1789725163651
+}

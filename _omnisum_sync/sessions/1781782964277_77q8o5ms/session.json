@@ -1,0 +1,67 @@
+{
+  "createdAt": 1781782964277,
+  "entityType": "session",
+  "id": "1781782964277_77q8o5ms",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "打开GitHub项目查看README、示例报告和实际可运行性。",
+      "选择一个已有Skill进行测试，评估生成报告的准确性和实用性。",
+      "提炼其分析维度，作为自建Agent Skill评估清单的参考。"
+    ],
+    "archiveReason": "包含一个可尝试的Agent Skill分析工具及GitHub链接，对研究Skill生态和工具评估有一定参考价值。",
+    "classifiedAt": 1781783327544,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent Skill解读工具开源",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent Skill可以通过结构盘点、元数据解析、内容解剖、依赖分析、风险扫描等步骤进行质量评估。",
+      "该工具可部署到Codex或Claude Code等AI终端，并通过输入目标Skill链接生成分析报告。",
+      "Skill生态中存在对优秀Skill进行学习、理解、评估和迭代优化的需求。"
+    ],
+    "oneHighValuePoint": "提出用“静态解析优先、证据链贯穿、报告层解释”的方式系统化评估Agent Skill质量。",
+    "oneLineReview": "这是一个有实用潜力的工具发布帖，但正文信息偏概述，证据和方法细节不足。",
+    "primaryCategory": "AI Agent工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent Skills",
+      "开源项目"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了一个开源的“解读Skill的Skill”，用于对Agent Skills进行结构化分析、风险扫描、评分计算并生成双语HTML报告，强调静态解析优先、证据链贯穿和报告层解释的设计思路。",
+    "tags": [
+      "Skill分析",
+      "AI Agent",
+      "Claude Code",
+      "Codex",
+      "开源工具"
+    ],
+    "title": "姚金刚: 写了一个解读Skill的Skill，已开源到GitHub 解读skill的原始设计方案也同步做了上传 这是一个面向 Agent Skills 生态的质量解读、学…",
+    "totalScore": 55.5,
+    "url": "https://x.com/yaojingang/status/2067201121157066862"
+  },
+  "payloadHash": "sha256:11fd1542c0030635c0cdc209e44b119b4da14fdde9693b9a0a0748913fd90feb",
+  "refs": {},
+  "revisionId": "sha256:58b827a110c01a83ac28d186d9485c5709ed7194d0c4cd01a1e8543d6cff1864",
+  "schemaVersion": 1,
+  "updatedAt": 1781783649762
+}

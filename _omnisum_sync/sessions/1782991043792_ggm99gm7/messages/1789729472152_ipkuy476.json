@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729472152,
+  "entityType": "message",
+  "id": "1789729472152_ipkuy476",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 用“规范代理”让云软件工厂处理复杂需求\n\n文章提出在“分诊→实施”的自动化流程中加入 Spec（规范）代理：简单问题由实施代理直接完成；复杂或存在多种实现路径的问题，先生成产品与技术规范，经人工校准后再开发。这样既扩大了编码代理可处理的任务范围，也保留了关键决策中的人工控制。\n\n## 分诊决定需求进入哪条路径\n\n分诊代理结合项目的 `roadmap.md` 和 `vision.md` 判断需求是否符合产品方向，并按情况打标签：\n\n- 范围明确、可一次完成：标记为可实施，直接启动实施代理。\n- 符合路线图且复杂或模糊：标记为 `ready-to-spec`，启动规范代理。\n- 信息不足：标记为 `needs-info`，要求补充信息。\n- 不符合当前计划：暂缓实现。\n\n文中将“模糊”定义为存在差异显著的多种产品或技术方案，需要人做取舍；“复杂”通常指实现规模超过几百行代码。\n\n## 两份规范分别约束产品行为与技术实现\n\nSpec 代理通过 GitHub Actions 触发，并生成与 Issue 编号关联的两份文件：\n\n- `PRODUCT.md`：明确功能行为和产品预期。\n- `TECH.md`：定义技术架构、代码结构与实现方式。\n\n实施代理也被更新为主动查找并遵循这些规范，从而避免面对复杂需求时直接猜测设计意图。\n\n## 自动生成规范，但关键判断仍需人工校准\n\n作者强调，代理生成的只是初稿。团队最好将规范拉到本地，通过交互式问答工具持续完善，确认预期一致后，再把 Issue 标记为可实施并启动编码。\n\n该流程复用了已有基础设施，包括包含代码与工具链的 Docker 镜像、云端执行环境和 GitHub Actions。其意义在于把复杂开发任务拆成“分诊—定规范—人工确认—实施”的可控链路；下一步还需增加审核与验证代理，保障最终实现质量。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729472152,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8388485e951f035c5cefa69120e02d60c1a2dd65179020f32516ee87d7b09172",
+  "refs": {
+    "sessionId": "1782991043792_ggm99gm7"
+  },
+  "revisionId": "sha256:dfe980bb9347b95f673e51ed46ee4dd50fda40299d40ae93b14403af33555f4f",
+  "schemaVersion": 1,
+  "updatedAt": 1789729472152
+}

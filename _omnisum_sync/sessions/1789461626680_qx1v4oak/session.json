@@ -1,0 +1,83 @@
+{
+  "createdAt": 1789461626680,
+  "entityType": "session",
+  "id": "1789461626680_qx1v4oak",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在KiCanvas中检查现有PCB布局及各页原理图。",
+      "在保持接口和功能不变的前提下优化板形、器件布局与布线。",
+      "完成可制造性和装配验证后，提交KiCad项目压缩包及装配STEP文件。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1789642220564,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 3
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "PCBGolf紧凑电路板设计挑战",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "PCBgolf — A little board goes a long way. $1,000 prize.",
+        "caption": "",
+        "height": 941,
+        "id": "img-4",
+        "nearbyText": "PCBGolf Challenge How small can you make this PCBA? Leaderboard · comma.ai/jobs · Discord · X The Board The schematic is loosely based on our panda jungle v2, a development and debugging board for comma devices and pandas. This version incl...",
+        "resolvedUrl": "https://github.com/commaai/PCBGolf/raw/master/assets/pcbgolf.png",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/commaai/PCBGolf/raw/master/assets/pcbgolf.png",
+        "width": 1672
+      }
+    ],
+    "knowledgePoints": [
+      "PCB紧凑化不能只追求面积，还要保留接口、功能、装配可行性与实际可用性。",
+      "参赛设计的裸板必须可由JLCPCB制造，并能完成真实PCBA装配。",
+      "最终交付物包括完整KiCad项目压缩包和成品装配STEP文件。"
+    ],
+    "oneHighValuePoint": "优化板级尺寸和效率的同时，必须同时满足可制造、可装配、可工作以及连接器机械和电气兼容等约束。",
+    "oneLineReview": "竞赛目标和提交要求较明确，但缺少评分机制与设计方法，独立知识价值有限。",
+    "primaryCategory": "硬件产品开发",
+    "rating": "C",
+    "rejectReason": "内容主要是竞赛说明，缺少评分细则、设计方法、案例和可复用的工程经验。",
+    "retentionDecision": "作为硬件设计挑战公告速览，计划参赛时再按需查阅",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "PCB设计",
+      "工程竞赛"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍一项基于KiCad项目的PCB紧凑化挑战，列出开发板功能、制造与兼容性约束、奖金和截止日期，并要求参赛者提交完整项目压缩包及装配STEP文件。",
+    "tags": [
+      "KiCad",
+      "PCB布局",
+      "可制造性",
+      "硬件优化",
+      "JLCPCB"
+    ],
+    "title": "commaai/PCBGolf: Are you better than an autorouter?",
+    "totalScore": 45,
+    "url": "https://github.com/commaai/PCBGolf"
+  },
+  "payloadHash": "sha256:fe112c589103af78bdf1473da75303816f8941568950c3a067156a0d1b987aab",
+  "refs": {},
+  "revisionId": "sha256:299ecaa991fa94bc3ef99b4d6de07a236abd3c76a4b7e1b5e0d8ec1ab6e82718",
+  "schemaVersion": 1,
+  "updatedAt": 1789642223624
+}

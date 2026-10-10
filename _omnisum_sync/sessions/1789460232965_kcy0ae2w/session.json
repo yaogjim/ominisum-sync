@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789460232965,
+  "entityType": "session",
+  "id": "1789460232965_kcy0ae2w",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在目标设备上测试该Space的模型加载时间、推理速度、工具调用成功率和离线可用性。",
+      "制作一个监听浏览器控制台错误并生成受控补丁的最小原型。",
+      "验证登录态、Cookie、同源策略及工具权限限制，明确浏览器端Agent可访问的实际边界。"
+    ],
+    "archiveReason": "提供了将模型、推理框架和工具调用全部部署在浏览器端的具体案例，并提出内网自动化与网页自修复两个可继续验证的应用方向。",
+    "byline": "karminski-牙医",
+    "classifiedAt": 1789642298642,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 4,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "浏览器端小模型编码智能体实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 900,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSNlIhxaUAAoHE0?format=jpg&name=900x900",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSNlIhxaUAAoHE0?format=jpg&name=900x900",
+        "width": 675
+      }
+    ],
+    "knowledgePoints": [
+      "四比特ONNX封装可将2B模型压缩至不足2GB，并通过浏览器端推理驱动基础工具调用。",
+      "浏览器内模拟Shell、文件编辑和虚拟终端，可构成最小化的Coding Agent运行环境。",
+      "浏览器端Agent可探索内网系统自动化和基于控制台报错的页面热修复，但文章未验证其权限与安全边界。"
+    ],
+    "oneHighValuePoint": "小型量化模型与Agent框架可整体运行在浏览器中，为无API密钥、数据本地化和受限网络环境下的自动化提供了可验证的技术路径。",
+    "oneLineReview": "这是一个高相关且有启发性的端侧Agent案例，但应用设想仍偏概念，缺少复现步骤、安全边界和系统测试。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "保留浏览器端Agent的架构思路，后续开展端侧智能体项目时复查",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "端侧AI",
+      "产品技术实现"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍一个将Pi编码智能体、MiniCPM5-2B四比特ONNX模型、虚拟终端与工具调用全部放入浏览器运行的Space，并提出内网自动化和网页故障热修复两种设想，附单机推理速度体验。",
+    "tags": [
+      "浏览器端Agent",
+      "WebGPU",
+      "MiniCPM5-2B",
+      "ONNX",
+      "Coding Agent"
+    ],
+    "title": "karminski-牙医: 看到个神奇的 huggingface Space项目, 思路很值得借鉴跟大家说下",
+    "totalScore": 64,
+    "url": "https://x.com/karminski3/status/2099633181934907654"
+  },
+  "payloadHash": "sha256:a49aebd08498a455a6422aa2b898888c696c286343d884a54b32af69cf832950",
+  "refs": {},
+  "revisionId": "sha256:a79fc974b4fcefcb8bc5e3e197a9dbc51e74194d8e8e1168a593256196658e54",
+  "schemaVersion": 1,
+  "updatedAt": 1789727773459
+}

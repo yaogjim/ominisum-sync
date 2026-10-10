@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784801575896,
+  "entityType": "message",
+  "id": "1784801575896_d0wsy397",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# OpenCode 协调器插件模式解析\n\nOpenCode 正尝试用“协调器 + 从节点”模式降低高性能模型的使用成本和等待时间：让昂贵、较慢的 Fable 担任主代理负责规划和分配任务，再由 GLM 等模型作为后台子代理并行执行。\n\n## 1. 核心架构：主代理负责协调，从代理负责执行\n\n- **Fable 作为主代理（协调器）**：统一拆分任务、分配工作并跟踪进度。\n- **GLM 等模型作为从代理**：在后台执行主代理分配的具体任务。\n- 用户可以继续处理当前工作，不必等待所有子任务完成；协调器会帮助维持任务组织和执行秩序。\n- 这种模式的主要目的，是减少对昂贵、响应较慢模型的直接调用，同时利用多个低成本模型提高并行效率。\n\n## 2. OpenCode 中的实现方式\n\n- OpenCode v2 通过一个协调器插件实现该模式，相关文件为：\n  `opencode/.opencode/plugins/orchestrator.ts`\n- 相关提交为 `2f4a688`，提交说明包括：\n  - 建立协调器插件；\n  - 隐藏或弱化提示词状态标签。\n- 官方表示，这一功能并非 v2 独有：在 **v1 中也可以仅通过配置实现**，让 OpenCode 将协调器思路迁移到现有配置即可。\n\n## 3. 实际使用场景\n\n例如，一个复杂开发任务可以按以下方式执行：\n\n1. Fable 分析总体需求并拆分任务；\n2. 将代码编写、测试、资料检索等任务分配给多个 GLM 子代理；\n3. 子代理在后台并行处理；\n4. Fable 汇总结果、维护任务结构，并继续安排后续工作；\n5. 用户同时可以推进手头事务，而不必逐个等待模型完成。\n\n## 4. 社区反馈\n\n- Dax 对实现方式的补充获得了 **45 个赞、6 条评论**，说明社区对该架构关注度较高。\n- 有用户表示，自己已经使用了一段时间的自制版本，而这一功能会促使其正式下载 OpenCode。\n- 原帖共有 **5 条热门回复**，其中部分内容与协调器模式无直接关系；有用户另外询问 OpenCode Zen 是否能可靠使用 Claude Code，但原文没有给出答案。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784801575896,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9d3de97ac0ce6c7fb0c5f5359ef1de8f6f3d93ba7285cbd62ab68ede36232686",
+  "refs": {
+    "sessionId": "1782989494929_eqlcfgqy"
+  },
+  "revisionId": "sha256:2bde988f20b3b58b41c5e36768127b54a3f77b9fc84b198a0fd39fb205e14d11",
+  "schemaVersion": 1,
+  "updatedAt": 1784801575896
+}

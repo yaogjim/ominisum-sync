@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694105107,
+  "entityType": "message",
+  "id": "1789694105107_u4vi73vz",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nPi 的“压缩（compaction）”会在对话接近上下文上限时，用 LLM 把较早内容总结成精简交接记录，同时保留近期消息，让编码会话得以继续。\n\n## 关键内容\n\n- LLM 能读取的上下文有限，而系统提示、工具定义、历史消息及工具结果会不断累积；超限后，请求将直接报错。\n- Pi 通常在一轮结束后自动检查是否需要压缩，也可用 `/compact` 手动触发；若一轮尚未结束就溢出，也会立即压缩。\n- 压缩时，Pi 默认原样保留约 2 万 token 的近期内容（约 5—20 轮），再通过一次独立的 LLM 请求，将更早记录整理为包含目标、进展和关键决定的结构化摘要。\n- 摘要以纯文本存入会话，方便切换模型；代价是原有提示缓存因前缀改变而失效，压缩后的首次请求需要重新计算，之后才会再次积累缓存。\n\n## 通俗解读\n\n它类似“换班交接”：不是简单删除旧对话，而是把仍有用的信息写成交接单。不过摘要可能丢失细节，也会暂时增加调用成本。文章适合想了解 Pi 上下文管理、缓存机制或准备自定义压缩插件的用户细读；普通使用者掌握上述机制即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694105107,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6902ef04ecaf14da9206d8c62859b5abde3a20d8f87ad782346f60179bcb3f9a",
+  "refs": {
+    "sessionId": "1786943184366_xy0oe6fu"
+  },
+  "revisionId": "sha256:4ace686f8346f6c2ceb9f1cd27b6f77af45c6d655ac03d38a56574e278dabd81",
+  "schemaVersion": 1,
+  "updatedAt": 1789694105107
+}

@@ -1,0 +1,83 @@
+{
+  "createdAt": 1789696756121,
+  "entityType": "session",
+  "id": "1789696756121_a948eicr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个分类、路由、评分或抽取工作流，预先定义有限输出类型和概率字段。",
+      "申请早期访问后，用同一工作流对比Jev与现有LLM的准确率、校准度、延迟和成本。",
+      "为低置信度结果设置复核或回退路径，并验证概率阈值对最终业务指标的影响。"
+    ],
+    "archiveReason": "提出了面向软件自动化的类型安全概率决策接口，并给出可迁移到分类、路由、评分和验证工作流的设计思路。",
+    "classifiedAt": 1789698473664,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Jev结构化决策模型与自动化",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "typesafe.ai",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://framerusercontent.com/images/RtIGTDwO43jR4ZDilesXiR5znc.jpg",
+        "role": "hero",
+        "score": 70,
+        "src": "https://framerusercontent.com/images/RtIGTDwO43jR4ZDilesXiR5znc.jpg",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "System One模型的核心接口是“非结构化状态输入、带概率的类型化决策输出”，适合替代软件中的模糊判断规则。",
+      "可靠工作流可将复杂任务分解为多个独立判断，再利用概率阈值和领域逻辑形成最终分支。",
+      "类型安全能够保证输出符合模式，但不能单独证明业务判断正确；准确率、概率校准和独立评测仍不可缺少。"
+    ],
+    "oneHighValuePoint": "将模型限制为预定义类型的概率决策，而非自由文本生成，可使AI更容易嵌入普通代码并组成可约束、可测试的自动化工作流。",
+    "oneLineReview": "结构化概率决策接口具有明显工程价值，但核心架构、训练方法和性能优势仍主要依赖厂商自述。",
+    "primaryCategory": "AI技术与Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档其结构化概率决策框架，但性能与成本结论需等待独立验证",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "软件自动化",
+      "产品技术实现"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章发布面向软件自动化的System One模型Jev：并行输出类型安全、带校准概率的结构化决策，并宣称比前沿LLM更快、更便宜。文中介绍了工作流评测、应用演示、适用场景及评测偏差。",
+    "tags": [
+      "结构化输出",
+      "概率校准",
+      "类型安全",
+      "AI工作流",
+      "非自回归模型"
+    ],
+    "title": "Introducing System One Models & Jev - TypeSafe AI Blog",
+    "totalScore": 73,
+    "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev"
+  },
+  "payloadHash": "sha256:903eac714dd798edaa519cc916ba4d171aa17833e71400e195a5a79aa67cad8a",
+  "refs": {},
+  "revisionId": "sha256:d4a062327c110aa5d20655111d122a891807a17215887279e57228bf6440d733",
+  "schemaVersion": 1,
+  "updatedAt": 1790769616542
+}

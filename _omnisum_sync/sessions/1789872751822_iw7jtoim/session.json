@@ -1,0 +1,109 @@
+{
+  "createdAt": 1789872751822,
+  "entityType": "session",
+  "id": "1789872751822_iw7jtoim",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评测实时Agent时，同时记录推理耗时、指令批次数、行动频率、任务结果和单次成本，检查是否出现长时间思考而不行动。",
+      "采用多智能体分工时，明确共享的兵力集结目标与行动时机，避免控制模块将新单位逐个派出。",
+      "参考文中的循环对战方式比较不同推理强度，并保存环境状态、事件、结果与Agent日志，用于分析失败原因。"
+    ],
+    "archiveReason": "对局案例揭示了推理耗时、行动频率和子智能体协调对任务结果的影响，可作为实时Agent设计与评测的参考。",
+    "byline": "Ben Swerdlow",
+    "classifiedAt": 1790768549206,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "星际争霸智能体基准与实时控制局限",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "bw.swerdlow.dev",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://bw.swerdlow.dev/social/report-v2.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://bw.swerdlow.dev/social/report-v2.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "实时任务中的Agent能力不仅取决于策略质量，还取决于能否持续维持观察—决策—行动闭环；文中部分模型出现大量推理但极少下达指令的情况。",
+      "将经济、生产和战斗拆给不同子智能体并不自动产生有效协作；缺少共享计划与进攻时机协调，可能导致新增单位逐个投入战斗。",
+      "该评测的时间序列均值会剔除已结束对局，并合并不同推理强度；曲线反映的是当时仍有记录的对局，不能直接视为全部对局的完整发展轨迹。"
+    ],
+    "metaAuthor": "Ben Swerdlow",
+    "oneHighValuePoint": "在持续变化的实时环境中，推理本身存在机会成本：长时间思考却不及时观察和行动，可能比策略不够精细更致命。",
+    "oneLineReview": "实时Agent的失败案例有启发性，但实验配置与复现细节不足，排行榜不宜直接作为通用模型能力排名。",
+    "primaryCategory": "AI Agent评测",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性阅读并存档，重点保留实时行动与多智能体协调的失败案例",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "author": {
+          "@type": "Person",
+          "name": "Ben Swerdlow",
+          "url": "https://twitter.com/benswerd"
+        },
+        "description": "Which model wins at Brood War? Results, recordings, costs, and game-by-game analysis of Codex, Claude, and Grok across 171 matches.",
+        "headline": "Brood War Bench",
+        "image": {
+          "@type": "ImageObject",
+          "height": 630,
+          "url": "https://bw.swerdlow.dev/social/report-v2.png",
+          "width": 1200
+        },
+        "inLanguage": "en",
+        "mainEntityOfPage": "https://bw.swerdlow.dev/report",
+        "url": "https://bw.swerdlow.dev/report"
+      }
+    ],
+    "schemaAuthor": "Ben Swerdlow",
+    "schemaTypes": [
+      "Article"
+    ],
+    "secondaryCategories": [
+      "实时控制系统",
+      "多智能体协作"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章通过《星际争霸》循环对战比较不同模型及推理强度，报告胜率、行动频率与成本。案例显示，过长思考和子智能体协作不足会破坏实时控制；领先模型仍未超过初学者水平，并介绍了评测架构与统计口径。",
+    "tags": [
+      "星际争霸基准",
+      "推理延迟",
+      "观察行动闭环",
+      "多智能体协调",
+      "成本效能评估"
+    ],
+    "title": "Brood War Bench",
+    "totalScore": 69,
+    "url": "https://bw.swerdlow.dev/report"
+  },
+  "payloadHash": "sha256:2c82804362a41f5f58d52928ef2709284d2360efb8406fa29de64aceae7162e4",
+  "refs": {},
+  "revisionId": "sha256:aac19cdf399b032c3baad2ed97e747f670df347166b30f8c401c5a51b0065dad",
+  "schemaVersion": 1,
+  "updatedAt": 1790768550032
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784613497062,
+  "entityType": "session",
+  "id": "1784613497062_v53r3rw8",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查找原始论文或开源项目，核实约20 FPS、超过10000帧稳定运行等性能声明及测试硬件。",
+      "使用代表性长视频测试重建速度、累计漂移、几何精度和显存占用。",
+      "在考虑无人机或工业部署前，分别评估定位可靠性、材质质量和复杂环境鲁棒性。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1784618811112,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "单目实时三维重建与轨迹记忆",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "该方案所称的Trajectory Memory包含Camera Pose、Geometry Embedding和Motion State三类信息。",
+      "文章声称普通摄像头可在移动过程中同步完成场景建模与定位，无需激光雷达。",
+      "评论指出演示级重建与工业应用之间仍存在精度、材质拟真和计算性能等差距。"
+    ],
+    "oneHighValuePoint": "Trajectory Memory同时保存相机位姿、几何嵌入和运动状态，试图借助历史轨迹信息降低长序列单目重建中的漂移。",
+    "oneLineReview": "技术方向值得关注，但文章主要转述演示效果，缺乏验证其速度、精度与实际部署价值的证据。",
+    "primaryCategory": "AI技术",
+    "rating": "C",
+    "rejectReason": "缺少原始论文、项目链接、测试条件和精度数据，军事及工业应用推论明显超出已有证据",
+    "retentionDecision": "低优先级速览，实际评估单目建图方案时再查找原始项目",
+    "secondaryCategories": [
+      "计算机视觉",
+      "无人机应用"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍一种采用Trajectory Memory的单目实时三维重建方案，称其保存相机位姿、几何嵌入和运动状态以抑制漂移，可用于移动建图与无人机，但性能、精度和工业可用性仅有推文及视频佐证。",
+    "tags": [
+      "单目三维重建",
+      "轨迹记忆",
+      "相机位姿",
+      "实时建图",
+      "无人机"
+    ],
+    "title": "Rainier: 这个有点牛逼啊，而且有很强的实用价值",
+    "totalScore": 43,
+    "url": "https://x.com/mtrainier2020/status/2079124768423596130"
+  },
+  "payloadHash": "sha256:5c212c80ae70b470f583ca925a1bcfaf87c59aa1339170c07e1e8826dce563d1",
+  "refs": {},
+  "revisionId": "sha256:e94f0454eeb19e062c672fad270e7d27ebe5a50218f0ab592642fe0b8bcb2d59",
+  "schemaVersion": 1,
+  "updatedAt": 1784677531516
+}

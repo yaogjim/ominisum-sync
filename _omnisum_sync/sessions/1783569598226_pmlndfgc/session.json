@@ -1,0 +1,83 @@
+{
+  "createdAt": 1783569598226,
+  "entityType": "session",
+  "id": "1783569598226_pmlndfgc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在隔离环境中按文档安装项目，并使用内置服务器验证命令检查基本功能。",
+      "选取一个真实工作流，接入一个MCP服务和一个REST API，测试凭据配置、权限审批与会话持久化。",
+      "部署启用TLS和令牌认证的远程服务端，再分别用桌面端与CLI验证长任务和跨设备访问。"
+    ],
+    "archiveReason": "包含可直接复用的安装部署步骤、权限模式、会话管理机制、数据源抽象、CLI接口及项目架构，对Agent产品开发具有较强参考价值。",
+    "classifiedAt": 1789725262119,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Craft Agents智能体工作台",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "image",
+        "caption": "",
+        "height": 894,
+        "id": "img-8",
+        "nearbyText": "Craft Agents How it Works (Video) To understand what Craft Agents does and how it works watch this video. Click Here (or on the image above) to watch the video on YouTube → Why Craft Agents was built Craft Agents is a tool we built so that ...",
+        "resolvedUrl": "https://private-user-images.githubusercontent.com/26127942/537642084-3f1f2fe8-7cf6-4487-99ff-76f6c8c0a3fb.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODM1Njk4NzgsIm5iZiI6MTc4MzU2OTU3OCwicGF0aCI6Ii8yNjEyNzk0Mi81Mzc2NDIwODQtM2YxZjJmZTgtN2NmNi00NDg3LTk5ZmYtNzZmNmM4YzBhM2ZiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzA5VDAzNTkzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM5ZDljZTZmYjBiMzE2OWRkMGQzYTk1N2VjMGZlYTVlMDBkMjI2Zjk2YjAxNjI5OTJhZDQ3NzM5NmUxMTUyMzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.XIhWkLo13pH7BWGA_vYiok-dziHueejNkU5DnPuEGuQ",
+        "role": "article",
+        "score": 73,
+        "src": "https://private-user-images.githubusercontent.com/26127942/537642084-3f1f2fe8-7cf6-4487-99ff-76f6c8c0a3fb.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODM1Njk4NzgsIm5iZiI6MTc4MzU2OTU3OCwicGF0aCI6Ii8yNjEyNzk0Mi81Mzc2NDIwODQtM2YxZjJmZTgtN2NmNi00NDg3LTk5ZmYtNzZmNmM4YzBhM2ZiLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA3MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNzA5VDAzNTkzOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM5ZDljZTZmYjBiMzE2OWRkMGQzYTk1N2VjMGZlYTVlMDBkMjI2Zjk2YjAxNjI5OTJhZDQ3NzM5NmUxMTUyMzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.XIhWkLo13pH7BWGA_vYiok-dziHueejNkU5DnPuEGuQ",
+        "width": 1578
+      }
+    ],
+    "knowledgePoints": [
+      "通过Sources统一接入MCP服务器、REST API和本地文件系统，并以Skills保存工作区级专用指令。",
+      "采用Explore、Ask to Edit、Auto三级权限模式，在只读、人工审批和自动执行之间切换。",
+      "服务端通过WebSocket承载会话、工具执行和模型调用，桌面端可作为薄客户端连接，CLI则用于脚本、CI/CD和集成测试。"
+    ],
+    "oneHighValuePoint": "将桌面端设计为可连接远程无头服务的薄客户端，使会话、工具执行和模型调用能够持续运行，并可被桌面端、CLI及自动化流程共同使用。",
+    "oneLineReview": "这是一份实践价值较高的Agent工作台项目文档，但产品优势和稳定性主张仍缺少独立数据与完整案例验证。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，作为智能体工作台设计、工具接入和远程部署的实现参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI编程工具",
+      "开源软件架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该文档介绍开源智能体工作台Craft Agents，涵盖多模型连接、MCP与REST API接入、会话和权限管理、自动化、远程服务端、CLI、项目架构及OAuth和TLS部署配置。",
+    "tags": [
+      "Agent工作台",
+      "MCP集成",
+      "多模型支持",
+      "权限控制",
+      "远程智能体"
+    ],
+    "title": "craft-ai-agents/craft-agents-oss",
+    "totalScore": 81,
+    "url": "https://github.com/craft-ai-agents/craft-agents-oss"
+  },
+  "payloadHash": "sha256:bcc400acc613fd9319d041e9e79dc9e260048ca9ce03fb542591382e993fb59b",
+  "refs": {},
+  "revisionId": "sha256:124631457c31235472e370ae7137cde707107b36a4ec6e06687dd331d6df54a3",
+  "schemaVersion": 1,
+  "updatedAt": 1789863503507
+}

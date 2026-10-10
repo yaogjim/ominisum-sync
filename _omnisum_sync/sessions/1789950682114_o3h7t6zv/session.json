@@ -1,0 +1,80 @@
+{
+  "createdAt": 1789950682114,
+  "entityType": "session",
+  "id": "1789950682114_o3h7t6zv",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审视当前开发工作的目标，明确正在解决的问题及所需系统，将AI编码工具定位为实现方案的辅助工具。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1790768259842,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "贝索斯谈人工智能生产力与就业前景",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://i.ytimg.com/vi/BxG_ysI3xr4/maxresdefault.jpg",
+        "role": "hero",
+        "score": 70,
+        "src": "https://i.ytimg.com/vi/BxG_ysI3xr4/maxresdefault.jpg",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "软件工程可以区分为问题识别、方案构建与代码执行，文章主张AI将强化前两者的重要性。",
+      "文章提出“生产力提升—生活成本下降—部分家庭成员退出职场—劳动力短缺”的假设链条，但未证明各环节成立。"
+    ],
+    "oneHighValuePoint": "软件工程师的核心价值是识别问题并构建解决方案，代码只是执行环节，AI工具的进步不应被直接等同于这一角色的消失。",
+    "oneLineReview": "工程师应从写代码转向定义和解决问题的提醒值得关注，但就业与通缩预测主要依赖未经验证的推断。",
+    "primaryCategory": "AI与就业",
+    "rating": "C",
+    "rejectReason": "宏观预测缺少数据和案例支撑，未充分回应裁员与转型成本，也未形成可复用的方法或实施流程。",
+    "retentionDecision": "速览并提取工程师角色转变的观点，无需全文长期保存",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "软件工程能力",
+      "宏观经济"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "贝索斯认为，AI提升生产力可能降低生活成本，使部分双收入家庭成员退出职场，进而造成劳动力短缺。他强调软件工程师应聚焦发现和解决问题，并设想用AI加速建筑许可审批，但未提供实证支持。",
+    "tags": [
+      "AI生产力",
+      "劳动力供给",
+      "通货紧缩",
+      "问题定义",
+      "软件工程"
+    ],
+    "title": "Jeff Bezos: AI productivity gains could lead to labor shortages and deflation - YouTube",
+    "totalScore": 53,
+    "url": "https://www.youtube.com/watch?v=BxG_ysI3xr4&t=3s"
+  },
+  "payloadHash": "sha256:28324c647a58f95ddbfef0be585f57f081b5635e8fcad545df73aa27fdeb19e6",
+  "refs": {},
+  "revisionId": "sha256:8bb82ea94630fa577d15438eeefb38f3f922df4c8345c2f7457174f523fb2448",
+  "schemaVersion": 1,
+  "updatedAt": 1790768260660
+}

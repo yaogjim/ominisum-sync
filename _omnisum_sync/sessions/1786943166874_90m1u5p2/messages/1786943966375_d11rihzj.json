@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786943866391,
+  "entityType": "message",
+  "id": "1786943966375_d11rihzj",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# SparrowMap 内容总结\n\nSparrowMap 是一个由公众摄像头共同参与的政府巡逻车辆地图项目。其核心原则是：**保留政府车辆的照片和车牌作为公共记录，同时在数据离开设备前销毁普通车辆的照片与车牌信息，以降低隐私风险。**\n\n## 1. 政府车辆与普通车辆的处理方式\n\n- **政府车辆**：保留车辆照片和车牌，并将其作为公共记录，理由是这些车辆由公共资金购买并行驶在公共道路上。\n- **其他普通车辆**：车牌信息会直接在摄像设备上被销毁，数据离开设备前照片也不再保留。\n- 服务器最终收到的只是一个**匿名位置点**，不包含可识别的照片或车牌。\n\n## 2. 用旧设备运行摄像头\n\n- 无需安装软件、注册账号或通过应用商店下载 App。\n- 可直接在浏览器标签页中运行，适合使用闲置手机并将其固定在窗边。\n- 也支持：\n  - 旧手机\n  - 笔记本电脑摄像头\n  - USB 摄像头\n- 车辆识别在本地设备上完成，**不会把视频上传到服务器分析**，因此不存在可被截取的实时视频流。\n\n同时，平台不会公开摄像头的精确位置，只显示其观察的街道；用户可以随时关闭设备并退出网络。\n\n## 3. 接入已有的店铺或住宅摄像头\n\n如果商店、工作室或住宅已有面向街道的摄像头，可以直接接入 SparrowMap：\n\n- 无需购买新设备，也不必改变摄像头原有工作方式。\n- 视频始终留在用户自己的网络中。\n- 对外仅发送车辆局部截图，而且会缩小到**无法读取车牌**的尺寸。\n\n设置时，用户需要输入地址、在地图上放置位置标记，并调整视角范围指向道路，系统随后会生成摄像头 ID。\n\n## 4. IP 摄像头接入方案\n\n平台提供两种运行方式：\n\n- Windows IP 摄像头应用，大小约 **76 MB**。\n- 在支持 Python 的设备上运行 `relay.py`，需要安装：\n  - `opencv-python`\n  - `onnxruntime`\n  - `numpy`\n\n该方案支持 RTSP／ONVIF 摄像头，包括 Hikvision（海康威视）、Dahua（大华）、Reolink、Axis、UniFi 等多数品牌。\n\n本地设备只需完成较轻量的车辆发现任务，判断车辆是否为巡逻车的工作由 SparrowMap 的硬件处理，因此**不需要显卡**。\n\n## 5. 始终在线的完整本地识别方案\n\n如果希望摄像头持续运行，可以使用一台闲置电脑搭配摄像头，在本地运行完整检测器：\n\n- 在电脑上区分巡逻车与普通车辆。\n- 在本地读取车牌，不依赖服务器等待处理。\n- 视频不会离开本机，只有检测结果会上传。\n\n安装方式包括：\n\n```powershell\n# Windows PowerShell\nirm https://sparrowmap.com/install-node-windows.ps1 | iex\n```\n\n也可以下载 `SparrowMapCameraSetup.exe`，并核对其 SHA-256 校验值。\n\n```bash\n# Linux（测试版本）\ncurl -fsSL https://sparrowmap.com/install-node-linux.sh | bash\n```\n\n该方案负担较重：\n\n- 模型安装包约 **2.5 GB**。\n- 需要一台长期保持开机的电脑。\n- 最好配备 NVIDIA 显卡。\n- 如果已有 IP 摄像头，前述 IP 摄像头方案会更轻量、更适合日常使用。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786943866391,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b6f79e09612d9a0d1c632e586a13d6f6e999649b46415cfe64bcd8df64d82085",
+  "refs": {
+    "sessionId": "1786943166874_90m1u5p2"
+  },
+  "revisionId": "sha256:9438810ac0456f03170b962a58bc9dbb06c932b3e6d2b6120ef4250a479c233d",
+  "schemaVersion": 1,
+  "updatedAt": 1786943866391
+}

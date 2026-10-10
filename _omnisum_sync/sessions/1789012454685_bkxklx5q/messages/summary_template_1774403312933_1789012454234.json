@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789012454234,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1789012454234",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# CAE Agent Hub：让 AI 真正操作工程仿真软件\n\n## 一句话概括\n\nCAE Agent Hub 是一个面向计算机辅助工程（CAE）的开源集成平台，通过**MCP Server、Agent Skills、自动化脚本和浏览器 Viewer**，让 Codex、Cursor、Claude Code 等 AI 客户端直接连接并操作真实仿真软件，而不只是生成示例代码。\n\n## 核心架构\n\n整体工作流为：\n\n> AI 客户端 → MCP / Skill → CAE 软件或求解器 → 原生计算结果 → 轻量结果数据 → 浏览器查看或报告\n\n各模块职责明确：\n\n- **MCP Server**：为 AI 提供实时软件操作能力。\n- **Agent Skill**：沉淀建模、求解、后处理和验证流程。\n- **CAE 软件 / 求解器**：执行真实工程计算。\n- **Viewer**：无需安装或打开求解器，即可查看导出的仿真结果。\n\n## 已支持的仿真生态\n\n平台已覆盖多类商业与开源工具：\n\n- **结构与有限元**：Abaqus、ANSYS Mechanical、CalculiX、Elmer FEM\n- **流体仿真**：ANSYS Fluent\n- **电磁仿真**：Ansys AEDT / HFSS\n- **前后处理与多物理场**：HyperWorks、FreeCAD、ParaView\n- **原子与分子尺度**：LAMMPS、OVITO\n\n典型能力包括模型检查、参数设置、任务提交、运行监控、结果读取、截图、结果导出和优化计算。\n\n## Skills 工作流体系\n\nSkills 不是求解器，而是供 AI 使用的标准化操作说明与流程模块。\n\nAbaqus Skills 最为完整，覆盖：\n\n- 几何、材料、网格、接触、载荷与边界条件\n- 静力、动力、模态、热分析及热 — 结构耦合\n- Job 提交、ODB 读取和结果导出\n- 疲劳、形状优化、拓扑优化和尺寸优化\n\n此外还提供 CalculiX、FEniCS、LAMMPS、OVITO、AEDT、Mechanical、COMSOL 电机 NVH 等专用工作流。\n\n## 特色能力\n\n### 真实软件闭环\n\nAI 不仅生成脚本，还能连接正在运行的 CAE 软件，完成建模、求解、监控和结果读取。\n\n### 证据优先\n\n多个工作流强调日志、结果文件、物理门禁和验证记录，降低 “AI 声称已完成、实际未执行” 的风险。\n\n### 自动优化\n\nCalculiX 支持基于**拉丁超立方采样（LHS）+ 坐标下降**的两阶段尺寸优化，可在应力、位移和固有频率约束下实现减重与避共振。\n\n### 轻量结果查看\n\n仿真结果可导出为`result_mesh.json`，通过浏览器 Viewer 查看应力、位移、振型等结果，无需本地安装求解器。\n\n## 使用方式\n\n基本使用流程为：\n\n1. 克隆仓库。\n2. 在目标 MCP 目录中创建 Python 虚拟环境并安装服务。\n3. 将 MCP 注册到支持该协议的 AI 客户端。\n4. 将完整 Skill 目录复制到 Agent 的 Skills 目录。\n5. 通过自然语言要求 AI 执行建模、求解和结果分析。\n6. 使用 Viewer 检查导出的结果。\n\n需要注意：**MCP 和 Skills 只负责连接与编排，商业 CAE 软件、许可证及运行环境仍需用户自行准备。**\n\n## 工程管理原则\n\n仓库只保存可复用的：\n\n- 源码、文档和测试\n- 示例、模板与 Skills\n- 自动化及验证脚本\n\n明确不保存：\n\n- CAE 软件二进制文件和许可证\n- 私有路径、账号与凭据\n- 虚拟环境和依赖缓存\n- ODB、日志、截图及大型求解结果\n- 可重新生成的工程数据\n\n## 产品价值与发展方向\n\nCAE Agent Hub 的本质，是为工程仿真构建一层统一的**AI 操作与工作流协议层**，将分散的软件 API、脚本和专业流程封装为可复用能力。\n\n后续规划包括：\n\n- 接入更多主流 CAE 求解器\n- 扩展产品化 Skill Pack\n- 建立统一的结果导出格式\n- 完善安装、验证与报告生成流程\n\n其长期价值在于推动 CAE 从 “人工操作专业软件”，逐步转向 “AI 编排、软件求解、证据验证” 的自动化工程模式。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1789012454234,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3057b9760ed055887bdc5752224bf190de1a882d812c612d0a5411a88fbedc43",
+  "refs": {
+    "sessionId": "1789012454685_bkxklx5q"
+  },
+  "revisionId": "sha256:41955b9e7811a776a29ad8b2ff9c3888e8c952d5124e5249bbd0c493f0cbf8e8",
+  "schemaVersion": 1,
+  "updatedAt": 1789012454234
+}

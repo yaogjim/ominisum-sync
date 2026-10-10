@@ -1,0 +1,65 @@
+{
+  "createdAt": 1783567371763,
+  "entityType": "session",
+  "id": "1783567371763_2paqk76i",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 llm_wiki，可查看 GitHub 仓库确认 v0.6 API 和兼容性变化。",
+      "如对本地 LLM Wiki Agent 感兴趣，可简单试用新版功能后决定是否继续跟踪。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783567401765,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "llm_wiki 0.6更新概览",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "若不正在使用或跟踪 llm_wiki，该内容仅具备即时动态价值，后续可直接查看 GitHub Release 或项目文档替代。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "llm_wiki v0.6 的核心变化是 Agent 底座重构与 Rust 化。",
+      "新增 Skill 扫描、启用、选择和按需读取能力，并支持多种检索和执行工具。"
+    ],
+    "oneHighValuePoint": "llm_wiki 将 Chat Agent 核心逻辑从 TypeScript 重构到 Rust，并引入工具调度与 Skill 机制。",
+    "oneLineReview": "适合作为项目动态速览，但不值得长期保存。",
+    "primaryCategory": "AI工具动态",
+    "rating": "D",
+    "rejectReason": "内容主要是一次开源项目版本更新公告，信息较碎片化，缺乏详细实现说明、案例和方法论沉淀，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "LLM应用",
+      "开源项目更新"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该推文介绍 llm_wiki v0.6 更新：聊天 Agent 底座迁移至 Rust，新增工具与 Skill 能力，支持多类检索、文件生成、shell 执行和表单交互，并改进搜索 Provider、Mermaid 渲染与错误展示。",
+    "tags": [
+      "llm_wiki",
+      "Agent",
+      "Rust",
+      "Skill",
+      "开源工具"
+    ],
+    "title": "nash_su - e/acc: llm_wiki 重磅更新 v0",
+    "totalScore": 37,
+    "url": "https://x.com/nash_su/status/2074794245794431111"
+  },
+  "payloadHash": "sha256:3fcddd73e6662102e449770c2651b61b90c815896c710fcf2e88a52746c47e46",
+  "refs": {},
+  "revisionId": "sha256:d3c14d2105de608083bef587dcea9242c55229a3f1b52db5af1c956de7b2f12f",
+  "schemaVersion": 1,
+  "updatedAt": 1783571706798
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1782348715465,
+  "entityType": "session",
+  "id": "1782348715465_ouj2b9ir",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审查现有AI技能或提示词，标记泛泛而谈的要求，如“详细”“全面”“易读”等。",
+      "逐条移除可疑语句并对比输出质量，保留能显著改变行为的指令，删除无变化内容。"
+    ],
+    "archiveReason": "提供了一个实用的AI技能/提示词精简原则，可作为后续优化提示词和Agent技能时的检查清单之一。",
+    "classifiedAt": 1782348857258,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "识别技能提示中的空操作",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AI技能或提示词中可能存在大量上下文相关的no-op语句，即看似合理但不改变模型行为的内容。",
+      "删除no-op可以降低token消耗，并提升提示词或技能文件的可评估性与可维护性。",
+      "no-op不是固定短语列表，而应结合具体任务、模型和上下文通过测试判断。"
+    ],
+    "oneHighValuePoint": "判断提示词内容是否有效的核心标准是：移除该句后输出是否发生可观察变化。",
+    "oneLineReview": "一个简短但实用的提示词精简原则，价值在方法意识而非证据充分性。",
+    "primaryCategory": "AI提示工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "AI Agent",
+      "技能设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出AI Agent技能描述中常存在不会改变模型行为的空操作语句，如泛泛要求详细、全面、易读。建议通过移除、测试和对比输出，识别并删除这些无效内容，以提升技能可评估性、可维护性并节省token。",
+    "tags": [
+      "prompt优化",
+      "no-ops",
+      "AI技能",
+      "token节省",
+      "可维护性"
+    ],
+    "title": "Matt Pocock: Take a look at your favourite skill",
+    "totalScore": 64.5,
+    "url": "https://x.com/mattpocockuk/status/2069784839474032896"
+  },
+  "payloadHash": "sha256:a91f6122b0e1f1da6816cb98fddc1a58b92ae1a66d1ec7db30976407a4249d68",
+  "refs": {},
+  "revisionId": "sha256:9554e8c72ee9803ec9da297684e01793744472755e2b10637ed47c65c42125cb",
+  "schemaVersion": 1,
+  "updatedAt": 1782353632776
+}

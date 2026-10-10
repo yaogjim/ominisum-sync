@@ -1,0 +1,20 @@
+{
+  "createdAt": 1783558115275,
+  "entityType": "message",
+  "id": "1783558379147_ksnf2tgk",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章精炼总结\n\n作者分享了如何在**只用浏览器、不装软件、不开 SSH**的情况下，访问 VPS 上的 Claude Code 终端。核心方案是用 **ttyd + tmux + Cloudflare Tunnel + Cloudflare Access** 搭建一个安全的网页终端。\n\n## 1. 搭建目标：把 VPS 终端搬到浏览器里\n\n作者想实现一种体验：  \n打开一个网页，就能直接使用 VPS 的完整终端，从而在浏览器中运行 Claude Code。\n\n原本作者想做成类似 Pi 那样的网页界面，但因为需要使用 `claude -p`，最终选择保留终端形式，更接近原生体验。\n\n## 2. 工具链：四个组件各司其职\n\n作者使用的核心工具如下：\n\n- **ttyd**：把 Linux 终端变成网页终端，在浏览器里操作 VPS。\n- **tmux**：保持会话不断，即使断网、换设备，也能回来继续操作。\n- **Cloudflare Tunnel**：让 VPS 主动连到 Cloudflare，不需要开放公网端口。\n- **Cloudflare Access**：通过邮箱验证做访问门禁，防止未经授权访问。\n\n简单理解：  \n`ttyd` 负责“网页终端”，`tmux` 负责“不中断”，`Cloudflare Tunnel` 负责“安全暴露服务”，`Cloudflare Access` 负责“登录验证”。\n\n## 3. 安全重点：不要只靠 Nginx 放行 Cloudflare IP\n\n作者特别强调了一个安全误区：\n\n> 只用 Nginx 放行 Cloudflare IP，并不能真正保护源站。\n\n原因是：\n\n- Cloudflare 的回源 IP 是所有用户共享的。\n- 如果别人知道你的 VPS 真实 IP，就可能用自己的 Cloudflare 账号绕过你的 Access，直接访问你的源站。\n- 作者称这是 Cloudflare 官方也承认的问题，评级为 **High**。\n\n因此，作者认为真正安全的方式是：\n\n- 使用 **Cloudflare Tunnel**\n- VPS 不开放任何公网入站端口\n- ttyd 只监听本机地址 `127.0.0.1`\n\n## 4. 推荐复刻方案：浏览器终端 + Claude Code\n\n作者提供了一段可以发给 AI 的搭建提示词，核心要求是：\n\n### 架构\n\n```text\nttyd + tmux + Cloudflare Tunnel + Cloudflare Access\n```\n\n### 使用场景\n\n- 只用浏览器\n- 打开一个网址即可访问 VPS 终端\n- 不安装本地软件\n- 不开启 SSH\n- 域名托管在 Cloudflare\n\n## 5. 安全铁律：四条不可违反\n\n作者列出关键安全规则：\n\n1. **ttyd 只能监听 `127.0.0.1`**  \n   不能绑定 `0.0.0.0`，避免直接暴露到公网。\n\n2. **创建专用非 root 用户运行 ttyd**  \n   并且不给这个用户 `sudo` 权限，降低被攻破后的风险。\n\n3. **必须使用 Cloudflare Tunnel 暴露服务**  \n   源站不开放任何入站端口，避免绕过 Cloudflare Access。\n\n4. **使用 Cloudflare Access 配置邮箱门禁**  \n   只有通过邮箱验证的人才能访问网页终端。\n\n## 6. 具体搭建步骤概要\n\n作者建议按步骤执行，并且“每一步验证通过再继续”，不要一次性跑完。\n\n主要流程是：\n\n1. 安装：\n   - `ttyd`\n   - `tmux`\n   - `cloudflared`\n\n2. 创建专用非 root 用户。\n\n3. 使用 `systemd` 让 ttyd 常驻运行。\n\n4. ttyd 推荐参数：\n\n```bash\n-O -W -i 127.0.0.1 -p 7681\n```\n\n并运行：\n\n```bash\ntmux new -A -s web\n```\n\n含义是进入或创建一个名为 `web` 的 tmux 会话。\n\n5. 用 `cloudflared` 创建 Tunnel。\n\n6. 将 Cloudflare 子域名路由到：\n\n```text\nhttp://127.0.0.1:7681\n```\n\n7. 在 Cloudflare 面板配置 Access 邮箱访问策略。\n\n## 7. 搭建前需要确认的信息\n\n作者建议 AI 在正式开始搭建前，先询问用户两个问题：\n\n- 域名是什么？\n- 想使用哪个子域名？\n\n例如：\n\n```text\n域名：example.com\n子域名：terminal.example.com\n```\n\n这样就可以通过浏览器访问该子域名，进入 VPS 上的网页终端。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1783558115275,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:619eeb7dadd90c14c28ee4ab3cc9e83c95c2ef7767418d2c2a2bc8ca57bcbcd9",
+  "refs": {
+    "sessionId": "1783556217870_6cc80lon"
+  },
+  "revisionId": "sha256:624b86957f6d60cae2942d9970dbc1d4655228004d9c7b81fd2f2312bb239fc8",
+  "schemaVersion": 1,
+  "updatedAt": 1783558115275
+}

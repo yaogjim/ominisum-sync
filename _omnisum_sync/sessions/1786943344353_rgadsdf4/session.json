@@ -1,0 +1,66 @@
+{
+  "createdAt": 1786943344353,
+  "entityType": "session",
+  "id": "1786943344353_rgadsdf4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "向AI布置任务时同时写明背景、目标、边界和判断要求。",
+      "为重复任务建立包含示例与约束的可复用指令。",
+      "根据输出偏差提供具体纠正，而不是只重复或轻微改写原始提示。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1786943369522,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "与AI协作更像领导而非编码",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "allen.bargi.org",
+    "favicon": "https://allen.bargi.org/favicon.svg",
+    "knowledgePoints": [
+      "生成式AI输出具有非确定性，不适合完全按照传统编译器式交互来预期。",
+      "高质量AI协作需要说明任务背景、预期结果、约束条件以及需要判断的部分。",
+      "示例、纠正和可复用指令可以减少误解，并逐步形成稳定的协作上下文。"
+    ],
+    "oneHighValuePoint": "提升AI协作效果的关键不只是优化单次提示，而是持续提供背景、目标、边界、示例和纠正，以更准确地传达意图。",
+    "oneLineReview": "比喻准确且与AI实践相关，但核心观点较常见，证据和方法细节有限。",
+    "primaryCategory": "AI协作与提示设计",
+    "rating": "B",
+    "rejectReason": "论述主要基于个人体验，缺少具体案例、数据、验证方式和完整流程，方法尚未体系化。",
+    "retentionDecision": "浏览并提炼核心要点，无需长期存档",
+    "secondaryCategories": [
+      "领导力",
+      "软件开发"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出，与生成式AI协作不应沿用编译器式的确定性预期，而应借鉴领导方法：提供背景、目标、边界、示例与反馈，通过持续校正表达意图，同时避免将AI人格化。",
+    "tags": [
+      "人机协作",
+      "意图表达",
+      "上下文管理",
+      "提示设计"
+    ],
+    "title": "Working With AI Feels More Like Leadership Than Coding — Allen Bargi",
+    "totalScore": 58,
+    "url": "https://allen.bargi.org/notes/working-with-ai-feels-like-leadership/"
+  },
+  "payloadHash": "sha256:cde72e5217d58871f668ccea9b3f328f840e6e9bebbcf6070fec1adc84d9bb43",
+  "refs": {},
+  "revisionId": "sha256:cb43c525f0fff998064212525bc24dbea63be7eed3ae8892ab9e632230b762b0",
+  "schemaVersion": 1,
+  "updatedAt": 1789728015365
+}

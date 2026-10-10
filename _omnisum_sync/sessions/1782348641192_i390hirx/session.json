@@ -1,0 +1,67 @@
+{
+  "createdAt": 1782348641192,
+  "entityType": "session",
+  "id": "1782348641192_i390hirx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在公司名义下发布开源项目前，确认开源审批、品牌使用和代码托管权限。",
+      "关注 Google Workspace CLI 与 MCP 集成方式，判断其是否可用于个人或团队自动化工作流。",
+      "将该事件作为企业内部创新与合规冲突的案例进行简要记录。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782348903170,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 6,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Workspace CLI解雇风波",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Google Workspace CLI 支持通过命令行操作 Gmail、Drive、Calendar 等服务，并内置 MCP 服务器供 AI Agent 调用。",
+      "大型公司中开源项目发布通常涉及品牌、法务、审批和组织利益等多重约束。",
+      "AI Agent 工具可能对传统 SaaS 产品入口和管理层既有规划形成冲击。"
+    ],
+    "oneHighValuePoint": "企业内部创新即使获得用户验证，也可能因品牌、法务和开源发布流程不清晰而产生重大职业风险。",
+    "oneLineReview": "一个有讨论价值的技术组织案例，但更像资讯转述而非深度分析。",
+    "primaryCategory": "技术行业观察",
+    "rating": "B",
+    "rejectReason": "内容主要是事件转述和观点汇总，缺少系统分析与一手证据，方法论沉淀有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开源治理",
+      "AI Agent工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章概述 Google Workspace CLI 作者 Justin Poehnelt 因项目走红后被 Google 解雇的事件，涉及开源发布流程、品牌合规、企业官僚主义与 AI Agent 对 Workspace 产品形态的潜在冲击。",
+    "tags": [
+      "Google Workspace",
+      "CLI",
+      "开源合规",
+      "企业创新",
+      "AI Agent"
+    ],
+    "title": "宝玉: Google Workspace CLI 这项目当时我还转发过，没想到几个月过去，作者 Justin Poehnelt 因为这个项目被开除了",
+    "totalScore": 55.5,
+    "url": "https://x.com/dotey/status/2069537208378302874"
+  },
+  "payloadHash": "sha256:63e5084514168f8a846548340f323fd8aacfe2fea066f4438a27374dc48556a3",
+  "refs": {},
+  "revisionId": "sha256:40b2c8844e9a0fb872f9d6d07d95044e4a95e292e79866866e6a91a16a27a84e",
+  "schemaVersion": 1,
+  "updatedAt": 1782353580438
+}

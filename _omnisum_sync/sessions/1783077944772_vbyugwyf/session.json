@@ -1,0 +1,68 @@
+{
+  "createdAt": 1783077944772,
+  "entityType": "session",
+  "id": "1783077944772_vbyugwyf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在使用AI处理复杂任务前，先判断模型适合执行层、策略层还是愿景层目标。",
+      "对当前模型能力不足的任务，补充明确约束、评估标准、边界条件和反馈循环。",
+      "将AI任务拆分为目标定义、方案生成、对抗审查、回测验证和迭代修正几个阶段。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783078375037,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI使用与管理颗粒度",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Prompt Engineering更像给新人拆解任务清单，适合低自主性执行。",
+      "Harness Engineering更像给目标和约束，让AI在规则内自主完成任务。",
+      "复杂任务失败可能不是模型完全不行，而是目标层级与模型能力层级错配。",
+      "AI能力提升会迫使人类从执行层思考转向选择问题、价值判断和问题定义。"
+    ],
+    "oneHighValuePoint": "使用AI时应根据模型能力动态调整管理颗粒度：低能力给步骤，中能力给目标和约束，高能力给愿景和策略空间。",
+    "oneLineReview": "有启发性的AI管理类比文章，但案例和证据不足，适合浏览吸收框架。",
+    "primaryCategory": "AI应用与管理方法",
+    "rating": "B",
+    "rejectReason": "文章主要基于个人体验和类比推演，论证较散，缺少可验证数据和系统方法，部分内容重复较多。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent协作",
+      "组织管理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章从作者使用Agent重构资讯聚簇算法的经历出发，提出AI使用效果与管理能力相似：不同能力模型需要不同颗粒度的目标、约束和反馈。进一步延伸到AI时代人的价值在于判断什么问题值得思考。",
+    "tags": [
+      "AI管理",
+      "Agent",
+      "提示工程",
+      "管理颗粒度",
+      "战略思考"
+    ],
+    "title": "AI用得好不好，跟你会不会管人，我觉得越来越是同一件事。",
+    "totalScore": 57.5,
+    "url": "https://x.com/Khazix0918/status/2068927263035506977"
+  },
+  "payloadHash": "sha256:330ac805bcd5bee506a302451a24be658a87167e4f589e688cfb5e0c3a20e5e5",
+  "refs": {},
+  "revisionId": "sha256:ef1971f4dc7d29e0819fa13e7fd120f750173f47103d6a3b8190245a3b2f052e",
+  "schemaVersion": 1,
+  "updatedAt": 1789729440717
+}

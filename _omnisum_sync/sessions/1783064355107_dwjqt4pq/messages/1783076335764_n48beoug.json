@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783076335765,
+  "entityType": "message",
+  "id": "1783076335764_n48beoug",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Summarize自动化代理文档\n\n**评级**: B (58分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent工程文档\n**次类别**: Chrome扩展自动化, 本地守护进程API\n**标签**: #Agent #Chrome Extension #Daemon #SSE #网页自动化\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 高密度项目文档，适合维护或接入该工具，但通用方法论和长期价值有限。\n**核心高价值点**: 清晰描述了侧边栏代理循环、本地守护进程和浏览器工具执行之间的职责边界：守护进程只返回助手消息，工具调用由面板本地执行。\n\n### 摘要\n文章介绍 Summarize Chrome 侧边栏自动化代理与本地守护进程的架构、数据流、权限配置、Daemon API、模型解析、页面内容构建及多种自动化工具调用方式。\n\n### 知识要点\n- Summarize 的自动化代理由侧边栏、Background、内容脚本和本地守护进程组成。\n- /v1/agent 使用 SSE 返回 chunk、assistant、done、error 等事件。\n- 工具包括 navigate、repl、ask_user_which_element、skill、debugger 和 summarize。\n- 自动化能力默认关闭，需要在选项中启用，并可能请求 debugger、userScripts 等权限。\n- 工具结果被视为数据而非指令，代理循环会在工具调用完成后继续请求守护进程。\n\n### 行动项\n- 如需使用该项目，优先阅读 /v1/agent 请求体、SSE 响应格式和工具参数定义。\n- 检查 Chrome 扩展中 automationEnabled、debugger 权限和 userScripts 权限是否正确配置。\n- 参考文中的文件路径定位 sidepanel、background、daemon 和 automation tools 的具体实现。\n- 在调试代理行为时关注工具结果、页面内容 payload 和模型解析逻辑。\n\n### 存档判定\n归档: 是 — 原因: 包含具体架构、接口、工具调用和文件位置，适合作为实现或排查该项目自动化代理功能的技术参考\n删除: 否\n留存决策: 短期参考后可归档，若不使用该项目可删除",
+    "role": "assistant",
+    "timestamp": 1783076335765,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:c8ce1ad4e5a1993b756c8924e42c6dd0ddd661a35c6a097d1d3b182e7ca58b1f",
+  "refs": {
+    "sessionId": "1783064355107_dwjqt4pq"
+  },
+  "revisionId": "sha256:3a65f6616410e5601dde1cef1e18a4068b035795d6b7696750e1b1248d0cf996",
+  "schemaVersion": 1,
+  "updatedAt": 1783076335765
+}

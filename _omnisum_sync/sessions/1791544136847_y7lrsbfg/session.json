@@ -1,0 +1,61 @@
+{
+  "createdAt": 1791544136847,
+  "entityType": "session",
+  "id": "1791544136847_y7lrsbfg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "有技能调用优化需求时，访问所附 GitHub 仓库，查看该工具的实现与使用说明。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1791590332611,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude技能调用预测工具开源",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Jev Skill Typeahead 面向 Claude Code，宣称在请求发送前展示已安装技能的预计调用概率。"
+    ],
+    "oneHighValuePoint": "将技能调用预测前移到提示词输入阶段，是值得关注的交互设计思路，但文中未验证其预测准确性。",
+    "oneLineReview": "与AI编程实践明确相关，但主要价值是发现工具入口，尚不足以判断预测能力及实际收益。",
+    "primaryCategory": "AI编程工具",
+    "rating": "C",
+    "rejectReason": "正文仅提供功能介绍与仓库入口，缺少实现原理、使用步骤和效果验证，不适合作为长期知识材料保留。",
+    "retentionDecision": "速览工具功能，有技能调用优化需求时再访问代码仓库",
+    "secondaryCategories": [
+      "开源项目"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "帖子宣布面向 Claude Code 的 Jev Skill Typeahead 完全开源，并提供代码仓库链接。该工具宣称能在输入提示词时预测已安装技能的调用概率，帮助理解和优化技能使用，但未说明预测机制或准确性。",
+    "tags": [
+      "Claude Code",
+      "Jev Skill Typeahead",
+      "技能调用预测",
+      "开源工具"
+    ],
+    "title": "Daniel San: Jev Skill Typeahead is fully open source Feel free to explore the code, contribu…",
+    "totalScore": 49,
+    "url": "https://x.com/dani_avila7/status/2108354971531973028"
+  },
+  "payloadHash": "sha256:45ca7f692fb500e24ef538d42a0a8f914f53a8794781b03a56ab133b01939d54",
+  "refs": {},
+  "revisionId": "sha256:33c0c1ec19cc68f6c360b0e75b47fa03de172ce94677d8798270cfa9c00f4069",
+  "schemaVersion": 1,
+  "updatedAt": 1791590332998
+}

@@ -1,0 +1,71 @@
+{
+  "createdAt": 1782349452535,
+  "entityType": "session",
+  "id": "1782349452535_yz4tdnst",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需使用X API，先安装xurl并注册应用凭据。",
+      "配置X开发者后台的redirect URI，并执行xurl auth oauth2完成认证。",
+      "将常用开发和生产应用分别添加为不同app，避免Token混用。",
+      "需要调试Webhook时使用xurl webhook start生成临时公网回调地址。",
+      "如涉及图片或视频发布，测试xurl media upload及状态查询流程。"
+    ],
+    "archiveReason": "如果近期需要调用X API、调试OAuth认证、Webhook或媒体上传流程，可作为实用命令参考文档保留。",
+    "classifiedAt": 1782350680892,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "X API命令行工具xurl",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "xurl支持OAuth 1.0a、OAuth 2.0 PKCE和Bearer Token等多种认证方式。",
+      "可通过~/.xurl YAML文件管理多个X API应用及其独立Token。",
+      "支持直接通过CLI调用X API端点、自定义HTTP方法、请求头和请求体。",
+      "提供Webhook本地调试能力，可结合ngrok接收X API事件。",
+      "支持媒体文件的分片上传、状态查询和等待处理完成。"
+    ],
+    "oneHighValuePoint": "详细覆盖了X API OAuth、多应用、多账户、Webhook和媒体上传等常见开发场景的CLI操作方式。",
+    "oneLineReview": "一份实用但偏工具说明型的README，操作价值高，方法论和长期知识价值有限。",
+    "primaryCategory": "开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "API工具",
+      "命令行工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该文档介绍xurl命令行工具的安装、OAuth 1.0a/OAuth 2.0认证、多应用管理、请求发送、流式接口、Webhook调试、媒体上传和Token存储方式，适合需要直接操作X API的开发者参考。",
+    "tags": [
+      "X API",
+      "OAuth",
+      "CLI",
+      "Webhook",
+      "媒体上传"
+    ],
+    "title": "xdevplatform/xurl: The official CLI for the X API",
+    "totalScore": 57,
+    "url": "https://github.com/xdevplatform/xurl"
+  },
+  "payloadHash": "sha256:5b81f4915cf55ff801995a87da1cdf4767b621636e3b7c1a61f12e4b0ace7951",
+  "refs": {},
+  "revisionId": "sha256:8ab7472d2acfabefb186c472422d6ddc3db626a5e8491b8d3240917995f971e0",
+  "schemaVersion": 1,
+  "updatedAt": 1782350681555
+}

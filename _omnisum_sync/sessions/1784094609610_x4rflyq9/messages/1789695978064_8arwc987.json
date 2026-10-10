@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695978064,
+  "entityType": "message",
+  "id": "1789695978064_8arwc987",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nGraphiti 是面向 AI 智能体的开源“时序上下文图”框架，能持续把对话和业务数据整理成带时间与来源的知识图谱，让智能体知道事实现在是否成立、过去如何变化。\n\n## 关键内容\n\n- **保留事实变化历史**：每条关系都有生效和失效时间；新信息出现时，旧事实不会删除，而是标记为已被取代，因此可查询“现在是什么”或“某时是什么”。\n- **可追溯且实时更新**：实体和关系都能追溯到原始数据（Episode）；新增数据可增量写入，无须重新构建整张图。\n- **检索方式更丰富**：结合语义搜索、关键词 BM25 和图关系遍历，适合持续变化的智能体上下文，而非主要处理静态文档的传统 RAG。\n- **定位偏底层、自建成本较高**：支持 Neo4j、FalkorDB、Amazon Neptune 等后端及多种模型服务，但用户需自行搭建管理、监控与性能体系；Zep 则是其商业化托管方案。\n\n## 通俗解读\n\n它不只是记住“某人喜欢某品牌”，还会记录这句话何时成立、后来是否改变，以及依据哪次对话得出，类似一份可追溯的动态档案。项目声称可实现低延迟和较强扩展性，但实际表现取决于部署配置。\n\n**是否值得细读：**若你在开发长期记忆、实时知识更新类 AI 智能体，值得阅读；若只做普通文档问答，可能过于复杂。原文末尾在 Gemini 安装说明处截断，内容不完整。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695978064,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1baf93504e0da054150a3c6ff81cefc4af9f618e58feb57edaa626819c27d657",
+  "refs": {
+    "sessionId": "1784094609610_x4rflyq9"
+  },
+  "revisionId": "sha256:4ac31b6c5f6105e4e404cb3228c95f7e99a8a68f0a733d75868d1a85850b0a31",
+  "schemaVersion": 1,
+  "updatedAt": 1789695978064
+}

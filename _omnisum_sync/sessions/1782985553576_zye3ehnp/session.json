@@ -1,0 +1,66 @@
+{
+  "createdAt": 1782985553576,
+  "entityType": "session",
+  "id": "1782985553576_zye3ehnp",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确有跨境访问需求，可自行调研不同 VPS 线路的延迟、带宽和稳定性",
+      "不要仅凭返佣推广链接下单，应查阅第三方测评和替代方案"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782989438251,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude访问线路推荐",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量低且以推广链接为主，没有系统方法、证据支撑或长期留存价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Claude 在中文写作直出可读性方面被作者认为有优势",
+      "GIA CN2 线路可能对回国访问速度和稳定性有帮助",
+      "Claude Code 可以部署在 VPS 上并通过 SSH 远程使用"
+    ],
+    "oneHighValuePoint": "可考虑通过稳定 VPS 线路远程运行 Claude Code，以改善访问和使用体验。",
+    "oneLineReview": "这是一条带有推广性质的工具线路推荐，缺少足够细节和证据，不值得留存。",
+    "primaryCategory": "AI工具使用",
+    "rating": "E",
+    "rejectReason": "内容主要是个人经验和返佣推广，缺少配置细节、性能对比、稳定性数据或可验证案例，参考价值很低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "VPS服务",
+      "网络访问"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章称 Claude 在写作直出可读性方面表现较好，作者为其配置了月费20美元的 GIA CN2 VPS 线路，并建议可将 Claude Code 安装在 VPS 上通过 SSH 使用，同时附带返佣链接。",
+    "tags": [
+      "Claude",
+      "VPS",
+      "GIA CN2",
+      "Claude Code",
+      "推广链接"
+    ],
+    "title": "黄赟: Claude 在写作直出的可读性方面，还是有很大优势，几乎是南波王的，所以我为它专门铺设了一条 VPS 路线，20美刀一个月，3年来从未出事 挑 GIA CN2…",
+    "totalScore": 24.5,
+    "url": "https://x.com/huangyun_122/status/2072206105661620341"
+  },
+  "payloadHash": "sha256:7bf59f063f1337fb99bb4066621996f3ecfc7aa7c5eb5d377b160077a4cb94ff",
+  "refs": {},
+  "revisionId": "sha256:d32200bb84301e127d3ece0ef96cb22889f20d3fd9af1e35985f99fd0a091dce",
+  "schemaVersion": 1,
+  "updatedAt": 1782989438594
+}

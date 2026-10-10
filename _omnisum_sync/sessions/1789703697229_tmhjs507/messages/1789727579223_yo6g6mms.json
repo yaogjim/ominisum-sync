@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727579222,
+  "entityType": "message",
+  "id": "1789727579223_yo6g6mms",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# E2E 测试应由 Playwright 执行，Agent 只负责生成脚本\n\n文章的核心主张是：不要让 AI Agent 通过浏览器工具或 MCP 亲自逐步操作页面完成端到端（E2E）测试，而应让它编写可重复执行的 Node.js + Playwright 测试脚本，再由 Playwright 自动运行。\n\n## Agent 直接操作浏览器成本高且不稳定\n\nAgent 测试通常需要反复“查看截图—理解页面—点击操作—再次观察”，不仅执行速度慢、持续消耗 token，还容易受页面状态和视觉判断影响。更重要的是，这种一次性的操作过程难以沉淀为后续可复用的测试资产。\n\n## 脚本化测试更适合持续回归\n\nPlaywright 脚本写好后，可通过 `npx playwright test` 快速、稳定地重复执行，几乎不再消耗 Agent token，也便于持续回归。项目可直接使用 `npm init playwright@latest` 或 `pnpm create playwright` 初始化，并按登录、结账等业务流程拆分测试文件。\n\n## Agent 的价值在“写测试”，而非“充当测试执行器”\n\n这并不是否定 Agent 参与 E2E，而是重新划分职责：Agent负责理解需求、生成和维护自动化脚本；确定性的测试框架负责执行。其意义在于把 AI 的一次性推理转化为可复用、可追踪的工程资产，同时提高测试效率、稳定性和成本可控性。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727579222,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:91dd009ba59776b0244e8a81e14aec109f8f20db31577b36efaca1088c473355",
+  "refs": {
+    "sessionId": "1789703697229_tmhjs507"
+  },
+  "revisionId": "sha256:73de1bb2cb6a546727c72a3a6dab837f7cc398d98d59b00c9907d05ff797e79b",
+  "schemaVersion": 1,
+  "updatedAt": 1789727579222
+}

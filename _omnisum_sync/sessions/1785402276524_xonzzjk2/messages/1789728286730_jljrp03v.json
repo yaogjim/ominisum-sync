@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728286730,
+  "entityType": "message",
+  "id": "1789728286730_jljrp03v",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 通用 Agent 或由少数巨头主导，创业机会转向插件与服务\n\n作者判断，Agent 市场不仅会由通用产品挤压垂直产品，通用 Agent 自身也可能形成少数赢家通吃。Codex、Claude Code/Cowork、Workbuddy 等将成为主要入口，通过 Skill 和 MCP（连接外部工具、数据与服务的协议）覆盖大量专业任务，小团队单做通用或垂直 Agent 的空间正快速缩小。\n\n## 模型能力与成本才是长期护城河\n\nAgent 的交互和功能容易模仿，体验最终会趋同；真正拉开差距的是底层模型的智能水平、使用成本与订阅性价比。用户体验过更强模型后，通常不愿退回较弱模型。Cursor 虽支持多种模型，但 Codex、Claude Code 仍更受关注，也与其模型能力和订阅价格有关。\n\n## 开放性的关键在插件生态\n\n作者认为，Agent 是否开放，不主要取决于开源或能否更换模型，而在于是否拥有丰富的插件生态。Skill 与 MCP 能让 Agent 调用外部能力、完成真实任务，这也是当前 Agent 普及的重要推动力。\n\n## 早期产品的价值是教育用户\n\n现阶段品牌忠诚度有限，领先产品可能被更强模型迅速抢走用户。即使“小龙虾”、Workbuddy 等未必长期领先，也让更多人接触并使用 Agent，完成市场教育。作者建议普通用户尽早用 Agent 替代电脑上的重复工作，并在承受范围内选择更聪明的模型。\n\n## 小团队更适合做 Agent 的能力层\n\n单纯制作 Skill 门槛低、容易泛滥，但以 Skill 为入口，连接传统软件、行业数据和后端服务仍有窗口。评论也提出保留意见：若垂直产品掌握专有数据、权限体系、结果验收、审批及责任链，就不只是“套壳”，仍可能成为通用 Agent 难以替代的基础设施。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728286730,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2dc8de518edf13a09a0e2c10d0c6d0596eba6abe908cf16b839f21586dd16f41",
+  "refs": {
+    "sessionId": "1785402276524_xonzzjk2"
+  },
+  "revisionId": "sha256:a0e08919de5a7e41b7c0b4d21121831cec6b80ebc3a3ccf235e0860b44889e6d",
+  "schemaVersion": 1,
+  "updatedAt": 1789728286730
+}

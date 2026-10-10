@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789699947797,
+  "entityType": "message",
+  "id": "summary_default_1789699947797",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者认为，DeepSeek Harness（DSH）把模型调用、工具、存储乃至 Agent 循环都做成插件，虽然明显复杂，却是为了让 Agent 在运行中替换组件、修改自身 Harness，为 “自进化” 预留空间。\n\n## 关键内容\n\n- Agent 不只是模型，还包括负责上下文、工具、权限、验证与纠错的**Harness（运行框架）**；其核心通常是让模型反复 “思考 — 调用工具 — 读取结果” 的 ReAct 循环。\n- Pydantic AI、Claude Agent SDK、Eve 的主要差别，是框架替开发者包办多少，以及开放哪些扩展点：越省事，通常越难改到底层流程。\n- DSH 主张 “一切皆插件”：工具、会话存储、消息压缩，甚至 Agent Loop 都能通过配置更换，兼具平台式组装和库级开放度。\n- 作者认为这种设计服务于 “时空可组合性”：程序运行时也能替换组件，并通过固定接口找到新实现；这使 Agent 修改 Harness 比修改模型权重更现实。\n\n## 通俗解读\n\n可以把 DSH 想成一台所有零件都可热插拔的机器：平时显得笨重，但若目标是让机器边运行边改造自己，这种复杂度就有意义。**值得细读**：适合关注 Agent 框架、插件架构或自我改进的人；只想快速搭建普通 Agent，则前半部分的框架对比更实用。需注意：原文基于作者所称的 DSH 0.1.0，且所提供内容结尾被截断，最终结论并不完整。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1789699947797,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7f31da10f74312e270eb431abc1a8311855e166d814911a66ec414b120c82e36",
+  "refs": {
+    "sessionId": "1789699947836_0ax4v3lv"
+  },
+  "revisionId": "sha256:94bce13cd4ea9ad9b14d4363839f0c707958f42f81fd416bf667a80baaff3172",
+  "schemaVersion": 1,
+  "updatedAt": 1789699947797
+}

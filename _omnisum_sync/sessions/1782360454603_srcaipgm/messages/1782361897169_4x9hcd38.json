@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782361897170,
+  "entityType": "message",
+  "id": "1782361897169_4x9hcd38",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 边缘RAG知识库部署方案\n\n**评级**: C (52分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI应用开发\n**次类别**: 边缘计算, RAG知识库\n**标签**: #Cloudflare Workers #Qdrant #MCP #Durable Object #WASM\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 适合作为技术方案线索浏览，但不足以作为深入学习资料。\n**核心高价值点**: 将文件解析、分块、向量嵌入、持久化和 MCP 接入整合到 Cloudflare Worker 边缘环境中。\n\n### 摘要\n文章介绍了一个基于 Cloudflare Worker、Qdrant、LlamaIndex LiteParse、ChonkieAI 和 Durable Object 的边缘知识库/MCP方案，可进行文件解析、分块、嵌入、检索和 grep 搜索，并提供 GitHub 项目链接。\n\n### 知识要点\n- Cloudflare Workers 可结合 WASM 库在边缘侧完成文件解析与分块处理。\n- Qdrant 可用于向量存储，并支持直接进行嵌入生成。\n- Durable Object 可作为边缘环境中的文件内容持久化组件。\n- 通过 MCP stdio 连接可将知识库能力接入编码代理。\n\n### 行动项\n- 打开 GitHub 项目查看部署文档和实际代码结构。\n- 评估该方案是否适合自己的轻量级 RAG 或编码代理知识库场景。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是项目宣传和技术栈罗列，缺少实现细节、架构图、性能数据和踩坑经验，方法论价值有限。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1782361897170,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:76ceb66db361545e0446dc38a84e3afa4141ced9ee7b7b174df5a225c8be5485",
+  "refs": {
+    "sessionId": "1782360454603_srcaipgm"
+  },
+  "revisionId": "sha256:69672e861713add8a0598d5edd16a3a79d6e972da63849f16a1645cc329fd5a3",
+  "schemaVersion": 1,
+  "updatedAt": 1782361897170
+}

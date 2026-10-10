@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789014398116,
+  "entityType": "session",
+  "id": "1789014398116_rc0bmh6x",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估现有AI产品是否能在每次使用中获得合法、可用且可反馈到Agent Loop的数据。",
+      "为关键任务建立从结果质量、失败案例到迭代改进的闭环指标。",
+      "按最后一公里的重要性与容错率，判断项目应优先建设数据壁垒还是分发能力。"
+    ],
+    "archiveReason": "提出了可复用的AI产品壁垒判断：产品能否通过真实交互持续积累垂直数据，并将其转化为Agent效果提升。",
+    "byline": "Yangyi",
+    "classifiedAt": 1789642891505,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "垂直数据与AI软件护城河",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "AI功能从基础可用走向高质量交付，可能更依赖真实世界交互形成的经验数据，而非单纯模型调用。",
+      "越强调最后一公里且容错率越低的任务，专有垂直数据的潜在价值越高。",
+      "若产品使用过程不能持续产生数据并改善结果，先发优势可能难以沉淀为长期壁垒。"
+    ],
+    "oneHighValuePoint": "评估AI软件护城河时，应重点检查产品是否能把先发时间转化为独有数据，并进一步转化为可验证的Agent效果提升。",
+    "oneLineReview": "核心判断与AI产品建设高度相关，但目前更像值得验证的战略假设，而非有证据支撑的完整方法论。",
+    "primaryCategory": "AI产品与商业战略",
+    "rating": "B",
+    "rejectReason": "质量提升所需时间及数据护城河结论均缺少案例、数据和适用条件，不能视为充分论证。",
+    "retentionDecision": "保留核心判断，作为评估AI产品长期壁垒的简要框架",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent开发",
+      "数据资产建设"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为AI能快速实现及格功能，但高质量交付依赖长期积累的垂直经验数据。产品若不能通过用户交互形成数据飞轮并改善Agent结果，长期壁垒将较弱；高容错场景则更依赖分发。",
+    "tags": [
+      "AI软件护城河",
+      "垂直领域数据",
+      "Agent Loop",
+      "数据飞轮",
+      "先发优势"
+    ],
+    "title": "Yangyi: AI软件的护城河基本上都是依赖垂直领域数据 靠先发优势积攒优质数据 将数据转化成Agent Loop的优质结果 AI可以很快做一个60分的功能 但如果你希望它交…",
+    "totalScore": 61,
+    "url": "https://x.com/yangyi/status/2097139863082664196"
+  },
+  "payloadHash": "sha256:111166650409309fc45bb3a33760f3c01862ef8032cafc5ea34fd7d2f0fead59",
+  "refs": {},
+  "revisionId": "sha256:de1181bce84ba235f315ebb74847b0d55585d35486ad6e309b74f1831b1f3bc6",
+  "schemaVersion": 1,
+  "updatedAt": 1789727693740
+}

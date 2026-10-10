@@ -1,0 +1,83 @@
+{
+  "createdAt": 1789445327340,
+  "entityType": "session",
+  "id": "1789445327340_ygk1j9pt",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据稳定性需求优先筛选 Labs products，避免将活跃实验直接用于关键生产依赖。",
+      "针对 Agent 开发需求进一步查看 agent-browser、deepsec、just-bash、run 和 skills 的项目仓库。",
+      "使用历史实验前确认其替代产品或已并入的现有功能。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1789642500598,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Vercel Labs项目实验目录",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "vercel.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://lishhsx6kmthaacj.public.blob.vercel-storage.com/og-images/labs-og-d945cbf4.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://lishhsx6kmthaacj.public.blob.vercel-storage.com/og-images/labs-og-d945cbf4.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "Vercel Labs 将项目分为已验证并持续维护的产品、快速迭代的活跃实验和停止开发的历史实验。",
+      "其项目覆盖 Agent 浏览器自动化、安全执行环境、命令行工具、生成式界面和本地 API 模拟等方向。",
+      "历史实验可能被产品化、并入现有工具，或作为后续产品方向的验证依据。"
+    ],
+    "oneHighValuePoint": "通过成熟产品、活跃实验和历史实验三种状态区分项目可靠性，便于判断哪些工具适合依赖、试用或仅作参考。",
+    "oneLineReview": "这是一个相关度高且简洁的工具发现目录，但缺少项目细节、使用方法和效果证据。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "浏览并按需访问相关项目仓库，无需长期保存易过时的目录快照",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "开发者工具",
+      "产品实验管理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章汇总 Vercel Labs 的开发者工具与实验，按成熟产品、活跃实验和历史实验标注维护状态，并列出面向 AI Agent、浏览器自动化、安全执行、编译器、终端及生成式界面等项目。",
+    "tags": [
+      "Vercel Labs",
+      "AI Agent",
+      "开发者工具",
+      "浏览器自动化",
+      "实验项目"
+    ],
+    "title": "Vercel Labs",
+    "totalScore": 60,
+    "url": "https://vercel.com/labs?experiment-in-public"
+  },
+  "payloadHash": "sha256:688861e4861c7edb94733717317b5519691e36bbb430f27098043dcc8a28fac1",
+  "refs": {},
+  "revisionId": "sha256:f6b472b294853fa14daad12f49a3dfcad12a73ed73ef79b9b7fb392ac755582c",
+  "schemaVersion": 1,
+  "updatedAt": 1789727725539
+}

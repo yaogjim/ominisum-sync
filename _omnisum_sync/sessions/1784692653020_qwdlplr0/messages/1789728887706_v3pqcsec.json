@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728887706,
+  "entityType": "message",
+  "id": "1789728887706_v3pqcsec",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Subtext：把“会话重放”升级为 AI 驱动的会话回顾\n\nFullstory 推出 Subtext，试图将传统上由人工观看的网站会话重放，转变为由 AI 代理大规模分析的“智能代理型会话回顾”（ASR）。核心变化是：AI 不必像人一样观看视频，而是直接查询用户行为的结构化记录，理解发生了什么、操作顺序、涉及哪些页面元素及当时状态。\n\n## 十年行为数据成为 AI 的推理材料\n\nFullstory 过去十年持续捕获和结构化真实用户行为，用于定位糟糕体验、复盘问题和辅助修复。创始人认为，这套经过数十亿次会话优化的数据结构，比单纯依赖录屏更适合模型推理：AI 可反复审查大量会话，不会疲劳，也能识别狂怒点击等异常行为。\n\n作者进一步预测，未来六个月内，AI 代理审查的会话数量将超过所有人工观看量；这是其个人判断，并非已验证趋势。人工重放也不会消失，因为理解和共情用户仍需要人参与。\n\n## 产品设计从“给人看”转向“给 AI 用”\n\nSubtext 由独立团队开发，并假设 AI 是主要用户，因此采取不同设计原则：\n\n- 通过命令行快速安装，不以可视化界面为核心；\n- 工具强调 Token 效率和注意力管理，而非视觉呈现；\n- 隐私控制尽可能自动化；\n- 降低全量采集成本，因为能规模化处理信息的模型不再需要抽样。\n\n这意味着会话分析可能从少量人工排查，转向持续、全量的自动审查。Subtext 目前可通过 `npx @subtextdev/subtext-wizard` 或官网免费开始使用。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728887706,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1390a14a0f89d2555ca5a9ddc88b55629fd532b7d7965e270695fc8ceb83b6d9",
+  "refs": {
+    "sessionId": "1784692653020_qwdlplr0"
+  },
+  "revisionId": "sha256:5dc1bff125eb1dfa1894335c79f05cfd390c4dc44456ce9600e92f7dda9497bd",
+  "schemaVersion": 1,
+  "updatedAt": 1789728887706
+}

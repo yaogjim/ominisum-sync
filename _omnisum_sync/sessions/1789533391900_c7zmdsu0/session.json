@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789533391900,
+  "entityType": "session",
+  "id": "1789533391900_c7zmdsu0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将现有企业Agent项目归入三种路线之一，明确其价值来源和交付边界。",
+      "评估现有系统的数据、权限、规则和工作流是否能够以受控接口开放给Agent。",
+      "若采用经营重构路线，为转化率、NPS、服务容量和收入建立对应评测指标。"
+    ],
+    "archiveReason": "提出了可复用的企业AI落地分类，能够辅助区分运营交付、内部经营改造和存量平台开放三种系统形态。",
+    "classifiedAt": 1789533412730,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI原生企业系统的三种落地路线",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "垂直运营交付模式由AI系统直接承接从业务受理到完成交付的完整流程。",
+      "Agent重构主营业务需要同步调整数据、流程、岗位、评测和运营，而非仅增加对话入口。",
+      "存量平台可将数据、权限、业务逻辑和工作流封装为受控能力，供Agent调用并降低迁移成本。"
+    ],
+    "oneHighValuePoint": "企业Agent不只有工具增强一种形态，还可按“代客户交付业务、重构自身经营、开放存量系统能力”划分为三种不同落地路线。",
+    "oneLineReview": "三路线分类具有较强的架构启发性，但缺少案例数据、适用条件和实施细节支撑。",
+    "primaryCategory": "AI Agent系统构建",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "保留三类落地路线框架，作为企业Agent方案设计与模式选择的参考",
+    "secondaryCategories": [
+      "企业软件架构",
+      "商业系统构建"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以Corgi、Kavak和Salesforce为例，将AI原生企业系统归纳为垂直运营交付、用Agent重构自身经营、向Agent开放存量平台三条路线，并指出数据、权限、流程和工作流是落地基础。",
+    "tags": [
+      "AI原生系统",
+      "企业Agent",
+      "垂直运营",
+      "业务流程改造",
+      "Headless 360"
+    ],
+    "title": "凡人小北: 最近在看 AI native 的系统构建，Salesforce 是其中一个经典的落地路线，还有其他两个形态：corgi 和 kavak",
+    "totalScore": 68,
+    "url": "https://x.com/frxiaobei/status/2099883397535703220"
+  },
+  "payloadHash": "sha256:9b2a6103064041372e14014cb0583adf80faa8663e5ec6130e5ff3cc5f296961",
+  "refs": {},
+  "revisionId": "sha256:f2a418c7f026380dda7dfe1ac82c314d81392c17a7a9637ae432e4363f5dcfc0",
+  "schemaVersion": 1,
+  "updatedAt": 1789727845985
+}

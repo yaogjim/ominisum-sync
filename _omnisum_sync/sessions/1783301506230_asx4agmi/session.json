@@ -1,0 +1,77 @@
+{
+  "createdAt": 1783301506230,
+  "entityType": "session",
+  "id": "1783301506230_asx4agmi",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尝试用 OKF 结构整理一个现有项目知识库或数据目录。",
+      "为关键数据表、API、指标或Playbook建立独立 Markdown 概念文件。",
+      "统一为知识文档添加 type、title、description、resource、tags、timestamp 等 frontmatter。",
+      "为知识库根目录和重要子目录生成 index.md，提升人和Agent的浏览效率。",
+      "在文档中使用 Markdown 内链显式表达依赖、引用、关联和上下游关系。",
+      "为关键事实和外部依据增加 Citations 区块，提升知识可信度。"
+    ],
+    "archiveReason": "该文档定义了一套简洁、可落地的开放知识表示格式，对构建人类与AI Agent共同可读的知识库、数据目录和元数据体系具有长期参考价值。",
+    "classifiedAt": 1783301549654,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "OKF开放知识格式规范",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "OKF 将知识包定义为由 Markdown 文件组成的目录树，每个普通 Markdown 文件代表一个概念。",
+      "每个概念文件必须包含 YAML frontmatter，且至少需要非空的 type 字段。",
+      "title、description、resource、tags、timestamp 是推荐但非强制字段。",
+      "index.md 用于目录级内容导航，log.md 用于记录目录范围内的更新时间线。",
+      "概念之间通过标准 Markdown 链接建立关系，消费者通常可将其解析为有向无类型边。",
+      "OKF 强调宽松消费模型，消费者不应因未知字段、缺失可选字段、断链或缺少 index.md 而拒绝整个知识包。",
+      "该格式不替代 Avro、Protobuf、OpenAPI 等领域 schema，而是引用和补充它们周围的上下文知识。",
+      "Git 仓库是推荐的分发方式，可天然支持历史、归因、diff 和协作。"
+    ],
+    "oneHighValuePoint": "用“Markdown + YAML frontmatter + Git目录结构”作为最低复杂度的知识交换格式，在可读性、可维护性和Agent可解析性之间取得了较好平衡。",
+    "oneLineReview": "一份简洁实用的知识库格式规范，尤其适合用于AI Agent知识目录、数据资产说明和团队知识沉淀。",
+    "primaryCategory": "知识管理",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "AI Agent",
+      "数据治理",
+      "技术规范"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍了 Open Knowledge Format v0.1 规范，提出用 Markdown 文件、YAML frontmatter、目录层级、索引、日志、引用和交叉链接来组织可由人和AI Agent共同读取的知识包，强调最小约束、可移植、可版本管理与宽松兼容。",
+    "tags": [
+      "OKF",
+      "Markdown",
+      "YAML Frontmatter",
+      "知识表示",
+      "Agent知识库",
+      "元数据管理"
+    ],
+    "title": "knowledge-catalog/okf/SPEC.md at main · GoogleCloudPlatform/knowledge-catalog",
+    "totalScore": 73,
+    "url": "https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md"
+  },
+  "payloadHash": "sha256:d02059c872f5c33dc3200e5bd22ce90bd512f6835736fd0c212055adecf560f0",
+  "refs": {},
+  "revisionId": "sha256:568fd9ffcf1288ebec0d909130f79d7ffaa4fc2c7ddf516e9475ee146ed9b4d2",
+  "schemaVersion": 1,
+  "updatedAt": 1789695770093
+}

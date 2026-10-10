@@ -1,0 +1,68 @@
+{
+  "createdAt": 1782985608648,
+  "entityType": "session",
+  "id": "1782985608648_h1xdu5fo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需开发查票MCP，可优先调研Amadeus API的覆盖范围、价格和限制。",
+      "单独评估里程票查询体系，不要直接沿用普通机票价格查询方案。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782989404240,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "机票票价来源与查询方案",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "主流机票价格通常通过ATPCO发布的运价和规则解析得到。",
+      "OTA或航司私有运价需要通过特定渠道或meta search方式获取，Amadeus无法完全覆盖。",
+      "Amadeus API适合做专业级查票能力封装，小规模查询可能免费，商用需谈价。",
+      "里程票规划与现金票价查询属于不同体系，不能简单等同处理。"
+    ],
+    "oneHighValuePoint": "区分ATPCO公开运价解析与OTA/航司私有运价，是理解机票查询系统的关键前提。",
+    "oneLineReview": "适合作为了解机票查询数据源的入门线索，但证据和方法深度不足。",
+    "primaryCategory": "航空票务与出行技术",
+    "rating": "C",
+    "rejectReason": "内容较短且以经验判断为主，缺少数据、案例和完整实现路径，热门回复大量无关信息降低整体价值。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "API集成",
+      "价格数据源",
+      "MCP应用"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章简要说明机票价格主要来自ATPCO公开运价规则解析，以及航司或OTA私有运价；查询可考虑Amadeus API、Duffel、Skyscanner等方案，并指出里程票与普通票价是不同问题。",
+    "tags": [
+      "机票查询",
+      "ATPCO",
+      "Amadeus API",
+      "私有运价",
+      "OTA"
+    ],
+    "title": "Rainier: 首先要清楚票价怎么来的",
+    "totalScore": 42.5,
+    "url": "https://x.com/mtrainier2020/status/2072386928717238414"
+  },
+  "payloadHash": "sha256:d2a587327b0ea33c89f132f498c17b345460caa4be5317d4fa0bdc88db754b2e",
+  "refs": {},
+  "revisionId": "sha256:d61932468e3159d3707dd649e3b9d68363b4f5f0957000e85c88e329c6f8516c",
+  "schemaVersion": 1,
+  "updatedAt": 1784801653604
+}

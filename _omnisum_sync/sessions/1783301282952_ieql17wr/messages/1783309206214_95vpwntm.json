@@ -1,0 +1,20 @@
+{
+  "createdAt": 1783308950461,
+  "entityType": "message",
+  "id": "1783309206214_95vpwntm",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n郭宇表示，已为 **shipcast** 增加了对 **小红书的云端支持**。他认为未来各种开发与创作工作空间都会逐步走向云端，包括 Codex 这类工具本身。\n\n## 1. 为 shipcast 增加小红书云端支持\n\n- 作者提到，顺手给 **shipcast** 做了小红书平台的云端支持。\n- 这意味着用户可以通过云端方式，把内容自动发布到小红书等平台。\n\n## 2. 可组合多种 Agent 自动完成工作流\n\n- 通过这种云端支持，可以把不同的 **agent** 组合起来完成自动化任务。\n- 例如：\n  - 使用 **HeyGen** 自动生成宣传视频；\n  - 再通过相关 agent 自动发布到 **小红书**；\n  - 从而形成“生成内容 → 发布内容”的自动流程。\n\n## 3. 支持开发者自定义本地 Agent\n\n- 作者提到，开发者也可以使用自己的 agent。\n- 例如使用 **Codex** 在本地进行组合与调度，完成开发者自定义的工作流。\n\n## 4. 全云端 Agent 将在 wanman 正式版中支持\n\n- 如果用户需要完全运行在云端的 agent，可以等待下一个 **wanman 正式版本**。\n- 这说明 wanman 后续会提供更完整的云端 agent 能力。\n\n## 5. 作者对未来趋势的判断\n\n- 作者认为，未来所有 **workspace（工作空间）** 最终都会迁移到云端。\n- 他甚至认为，包括 **Codex 自己** 这样的工具，最终也会走向云端化。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1783308950461,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ec8e4e3a040e95b1f6cc6985b27edbbe4506bba12d032b33e12b79c8c672f038",
+  "refs": {
+    "sessionId": "1783301282952_ieql17wr"
+  },
+  "revisionId": "sha256:36751a8c69f4e6218b14a90a7a84f21708f53e5e60b6da7b66e1763f2a4319b6",
+  "schemaVersion": 1,
+  "updatedAt": 1783308950461
+}

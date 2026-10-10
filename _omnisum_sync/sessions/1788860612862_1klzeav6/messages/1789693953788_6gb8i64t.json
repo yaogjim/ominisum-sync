@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693953786,
+  "entityType": "message",
+  "id": "1789693953788_6gb8i64t",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是 Liquid AI 的 LFM 开源模型与 LEAP SDK 示例库，集中展示如何在电脑、浏览器和手机上本地运行、微调并部署文本、视觉、语音模型。\n\n## 关键内容\n\n- **覆盖多端本地应用**：示例包括发票识别、语音转写、航班助手、浏览器视频字幕，以及 Android/iOS 聊天、语音和视觉助手；不少项目可完全在设备端运行，无须调用云端模型。\n- **提供完整微调路线**：包含文本、视觉、音频和文档分类教程，涉及 SFT、DPO、GRPO、LoRA 等方法。仓库作者建议针对具体用途微调 LFM2.5，以获得更好效果。\n- **不只是基础 Demo**：还收录本地文档问答、照片整理、离线翻译、会议分析、卫星图像检测等社区项目，并列出第三方产品与技术课程。\n- **页面本质是资源目录**：正文只给出项目简介和链接，具体安装要求、效果与代码质量需进入各子项目确认。\n\n## 通俗解读\n\n它更像一张“LFM 开发地图”，不是介绍模型原理的文章。若你准备做隐私敏感、离线或低延迟的端侧 AI，值得按目标细读对应示例；若只想了解 Liquid AI 的技术观点，浏览目录即可，不必逐项阅读。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693953786,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6076bd0e5c531ca64828799eee51e5625575266446eaad8031a88da615dee0c4",
+  "refs": {
+    "sessionId": "1788860612862_1klzeav6"
+  },
+  "revisionId": "sha256:07a6a9b348691632b74c3bddc1dd63ffb4053e4a095b80bc14d75033fae2ce58",
+  "schemaVersion": 1,
+  "updatedAt": 1789693953786
+}

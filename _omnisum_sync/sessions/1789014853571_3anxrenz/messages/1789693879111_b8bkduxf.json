@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693879112,
+  "entityType": "message",
+  "id": "1789693879111_b8bkduxf",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nPortless 是一款本地开发工具，用稳定、易记的 HTTPS 域名（如 `https://myapp.localhost`）替代 `localhost:3000`，并自动处理端口分配和反向代理。\n\n## 关键内容\n\n- 执行 `portless myapp next dev` 后，工具会为应用分配空闲端口，再将命名网址转发过去；支持 Next.js、Vite、Nuxt、Astro 等常见框架。\n- 默认启用 HTTP/2 和 HTTPS，首次使用会生成并信任本地 CA；也可改用 HTTP、自定义域名或证书。\n- 支持 monorepo、Turborepo、Git worktree 和子域名：不同包、服务或分支可拥有独立网址，减少端口冲突。\n- 还能通过 LAN、Tailscale 或 ngrok 分享开发服务，但部分模式依赖额外工具和配置。项目尚未发布 1.0，不同版本的状态数据可能不兼容。\n\n## 通俗解读\n\n它相当于给每个本地服务配置固定“门牌号”，开发者和 AI 代理不必记忆频繁变化的端口。若你常同时运行多个项目、使用 worktree 或需要 OAuth 回调，**值得细读**；单项目且端口固定时收益有限。文中末尾环境变量列表被截断，但不影响理解核心功能。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693879112,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:80c9fc4e74f5e39fd698317e49fecc00f7ebf8fe2ce756a360a4c74cbd7e5adf",
+  "refs": {
+    "sessionId": "1789014853571_3anxrenz"
+  },
+  "revisionId": "sha256:a79623eec4ceb9f54152593a6b5ecf82b17bf258614d8a3d67eb495ad1d6e171",
+  "schemaVersion": 1,
+  "updatedAt": 1789693879112
+}

@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789009352646,
+  "entityType": "session",
+  "id": "1789009352646_44x5ciqi",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "从Meta广告库筛选持续投放的故事广告，并按销售主线模板逐条拆解。",
+      "先完成散文脚本和配乐短语时间映射，再建立角色、产品与环境参考表。",
+      "将每个视频序列封装为包含参考素材、音频窗口和局部镜头时间线的生成简报，并把成果沉淀到可供智能体读取的知识库。"
+    ],
+    "archiveReason": "提供了可复用的广告研究、销售主线提取、参考素材锁定、分段生成、剪辑与知识库沉淀流程。",
+    "byline": "Machina",
+    "classifiedAt": 1789643000332,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "智能体批量制作长篇故事广告",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HRyKfl7aUAAeJAR?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HRyKfl7aUAAeJAR?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "研究竞品广告时应记录钩子、触发点、问题升级、发现、机制、产品展示、回报与行动号召，而不能仅凭投放时长判断效果。",
+      "产品必须承担故事中的因果角色；若删除产品后情节仍成立，就说明产品植入不够必要。",
+      "角色一致性依赖固定的角色表、产品表和环境表，长视频应按配乐时间窗口拆分为短序列生成后再统一剪辑。"
+    ],
+    "oneHighValuePoint": "先提取可验证的销售主线，再用角色、产品、场景和分段音频作为稳定参考，将复杂视频生成拆成可控阶段。",
+    "oneLineReview": "流程具体且具有较强复用价值，但模型参数、广告效果和案例成果缺少独立数据验证，并带有赞助推广属性。",
+    "primaryCategory": "AI内容生产",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留其端到端工作流与检查清单，具体模型能力和营销效果需另行验证",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent开发",
+      "广告创意与投放"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍用智能体将Meta广告研究转化为长篇AI故事广告的流程，覆盖销售主线提取、脚本与配乐、角色和场景设定、分段视频生成、最终剪辑及Obsidian知识库复用。",
+    "tags": [
+      "长篇故事广告",
+      "Meta广告库",
+      "多模态生成",
+      "角色一致性",
+      "Obsidian知识库"
+    ],
+    "title": "如何使用 GPT-6 Astra 在自动驾驶模式下创建长篇广告",
+    "totalScore": 74,
+    "url": "https://x.com/EXM7777/status/2097704032571883990"
+  },
+  "payloadHash": "sha256:ca6faf9a04c73db823e109a803c7f7b3b991c15ccd82091563e69bd1bc67d5a5",
+  "refs": {},
+  "revisionId": "sha256:e102f031143e0383071590054b247f2391c5ae8f8bbc2cde1bcffb49988fc5ee",
+  "schemaVersion": 1,
+  "updatedAt": 1790769385185
+}

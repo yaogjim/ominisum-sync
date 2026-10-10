@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694345061,
+  "entityType": "message",
+  "id": "1789694345061_smfq5yt8",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一个供 Claude Code、Codex 等编程 Agent 使用的视频制作技能库，借助 Remotion、镜头配方和成片模板，把产品截图制作成电影感宣传片。\n\n## 关键内容\n\n- 项目提供 **104 张镜头配方卡、161 种样式及动态样片**，并附有经过调校的 TSX 实现、缓动参数、音效与制作流程。\n- 内置一套作者称“已验收”的 **36.2 秒 Ink Press 成片模板**；替换截图、文案和品牌信息即可复用，是最快且相对稳妥的制作方式。\n- 可直接让 Agent 从仓库安装并按需求制作，也能先在 Gallery 挑选镜头。当前主要适合 Web、桌面软件的宣传片和功能演示。\n- 使用前需留意：Remotion 对部分公司可能收费；演示截图应替换并脱敏；低配置 Linux 服务器渲染还要处理并发、浏览器及网络下载问题。\n\n## 通俗解读\n\n它不是输入一句话就自动出片的在线工具，而是给编程 Agent 使用的“镜头教材＋代码组件＋模板素材库”。Agent 仍需采集产品页面、改代码并渲染，但可以少走很多分镜和动效试错。\n\n**是否值得细读：**如果你正在用 Claude Code/Codex 制作产品视频，值得重点看 Gallery、模板和安装说明；若只想找无需代码的一键视频工具，则参考价值有限。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694345061,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ccbc1d6842c6a0758c7fcc72d75848ac75345f9b76657ee256c9de54528eb337",
+  "refs": {
+    "sessionId": "1785386026446_4fzzdb2z"
+  },
+  "revisionId": "sha256:884b4b7909a2ede128f3daffee30b5a8181f494dbb945ef57e34b89980a1eec3",
+  "schemaVersion": 1,
+  "updatedAt": 1789694345061
+}

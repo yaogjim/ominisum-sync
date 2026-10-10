@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695987387,
+  "entityType": "message",
+  "id": "1789695987386_t7fucds8",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nCognee 是一个开源的 AI 智能体“长期记忆层”，把文档、对话和操作记录整理成可自托管的知识图谱，让智能体跨会话记住信息并按语义与关系检索。\n\n## 关键内容\n\n- 核心 API 是 **remember、recall、forget、improve**：分别用于写入、查询、删除和改进记忆；既支持快速的会话记忆，也能同步为长期知识。\n- 它结合向量检索与图关系推理，可接入多种数据格式，适合客服历史查询、复用专家 SQL 等场景，也提供 Python、TypeScript、Rust 客户端及 Claude Code 插件。\n- 部署可选云服务或自托管。官方推荐用一个 PostgreSQL 同时承载关系、向量、会话与元数据，减少 Neo4j、向量库和 Redis 等多套服务；仍可按需更换后端。\n- 项目方称其在 BEAM 长对话记忆测试中达到或超过此前最佳结果，并称 PostgreSQL 方案快约 10%；这些是项目自身测试，文中也提醒只能作为方向性参考。\n\n## 通俗解读\n\n它并非给模型永久“训练新知识”，而是建立一个外部记忆库：需要时先找回相关历史，再交给模型回答。**如果你正在开发需跨会话记忆的智能体，值得细读安装、数据隔离和后端配置；若只想了解概念，README 的功能与基准结论已足够。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695987387,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ec5085186c52fcb5c96a18bc05beeb5d3ee57ce4a659d3fe7390eb8e427ec5dc",
+  "refs": {
+    "sessionId": "1784094614387_5xski5m7"
+  },
+  "revisionId": "sha256:45e36a1e119d330dc8f94bb265f364360cb89d70a3bb47ddb733ae85fce7d9e6",
+  "schemaVersion": 1,
+  "updatedAt": 1789695987387
+}

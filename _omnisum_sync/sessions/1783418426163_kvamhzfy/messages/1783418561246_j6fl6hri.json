@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783418561247,
+  "entityType": "message",
+  "id": "1783418561246_j6fl6hri",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: LLM Wiki持久知识库工具\n\n**评级**: B (69分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: 人工智能知识管理\n**次类别**: LLM应用开发, 个人知识库, RAG替代方案\n**标签**: #LLM Wiki #知识管理 #持久化知识库 #知识图谱 #桌面应用 #RAG\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 4 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 内容信息量较高、工程实现完整，但偏营销式功能清单，证据和实测案例不足，疑似AI生成痕迹较重。\n**核心高价值点**: 将传统即时RAG转为“源文件→持久Wiki→图谱/检索/问答”的长期知识编译模式，具备较强方法论参考价值。\n\n### 摘要\n该文是LLM Wiki项目README，介绍其将文档自动构建为持久化互联知识库的功能，包括两步摄取、知识图谱、向量检索、Deep Research、Web Clipper、MCP/API与跨平台实现。\n\n### 知识要点\n- 三层架构：Raw Sources、Wiki、Schema，并通过index.md、log.md、wikilink和YAML frontmatter维护知识库结构\n- 两步摄取流程：先由LLM分析来源，再生成Wiki页面、交叉引用、综述和待人工审核项\n- 混合检索管线结合关键词搜索、可选向量检索、知识图谱扩展和上下文预算控制\n- 知识图谱使用直接链接、来源重叠、Adamic-Adar和类型亲和度四类信号计算相关性\n- 通过MCP、本地HTTP API和Chrome Web Clipper扩展知识库与外部工具及Agent的连接能力\n\n### 行动项\n- 若关注个人知识库或RAG产品，可浏览其README并重点研究项目结构与摄取流程\n- 参考其Raw Sources到Wiki的持久化模式，评估是否能用于自己的知识管理系统\n- 如需实际使用，可按Quick Start安装并导入少量文档测试摄取质量和检索效果\n- 对其声称的召回率提升、图谱洞察和Deep Research功能进行独立验证后再决定深度采用\n\n### 存档判定\n归档: 是 — 原因: 包含持久化Wiki、两步摄取、知识图谱、混合检索、MCP/API等可借鉴的系统设计思路\n删除: 否\n留存决策: 作为LLM知识库产品设计和个人知识管理工具参考长期保留",
+    "role": "assistant",
+    "timestamp": 1783418561247,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:59e2cd769cb2aa2a415055157015868d2c01e8a0c1d0f5b0a901fc80dcf0022a",
+  "refs": {
+    "sessionId": "1783418426163_kvamhzfy"
+  },
+  "revisionId": "sha256:8df925b141ee8d8d0818e264136de47dfa7d67cece834c38aa3a558e86ed8527",
+  "schemaVersion": 1,
+  "updatedAt": 1783418561247
+}

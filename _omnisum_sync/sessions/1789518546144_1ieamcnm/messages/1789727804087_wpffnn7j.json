@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727804085,
+  "entityType": "message",
+  "id": "1789727804087_wpffnn7j",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# AI 编程的新瓶颈：人的注意力与审核带宽\n\n文章认为，随着 Agent 能批量生成代码、PR、分析、Issue、实验和 Review 结果，软件开发的限制正从“写不完”转向“看不过来”。如果人类仍坚持逐行理解和审核所有代码，Agent 的生产能力最终仍会被人工 Review 的速度锁死。\n\n## “不亲自 Review”可能成为必然选择\n\n作者引用一位开发者的经历：2023 年还把人工审核视为 AI 编程的最后防线；三年后，在两个复杂项目中，大部分代码以及测试、故障分析和修复都已交给 Agent。软件复杂度继续上升，但人类工程劳动并未同比增加，这迫使开发者减少对实现细节的直接介入。\n\n## 人的职责从检查代码转向验证结果\n\n热门回复代表了一种更激进但直观的态度：只要系统能正常运行、不产生 Bug，就不再关心代码具体如何编写。这意味着工程控制方式可能从逐行审查，转向对最终效果、测试结果、系统行为和故障风险的验证。\n\n不过，原文提出的是趋势判断，而非已被证明安全的工程范式。减少人工 Review 能释放 Agent 产能，也会让测试覆盖、自动化验证和异常追责变得更关键。真正稀缺的资源不再只是开发能力，而是人类理解、判断和承担责任的注意力。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727804085,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:72df1830643f3d4650430ef3d59072538498db9784812dc960c1765220af3375",
+  "refs": {
+    "sessionId": "1789518546144_1ieamcnm"
+  },
+  "revisionId": "sha256:09f12b8f572752d6025f14310424adcfa5a29a129cf5d2f4708481f18fdfd00c",
+  "schemaVersion": 1,
+  "updatedAt": 1789727804085
+}

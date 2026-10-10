@@ -1,0 +1,94 @@
+{
+  "createdAt": 1784690035672,
+  "entityType": "session",
+  "id": "1784690035672_2885mbl8",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "使用官方支持的ESP32板卡，按文档将飞控3.3V UART连接到合适的ESP32引脚。",
+      "刷写固件后连接DroneBridge WiFi，通过dronebridge.local或192.168.2.1完成网页配置。",
+      "使用QGroundControl或其他地面站测试UDP 14550或TCP 5760链路，并验证遥测收发。"
+    ],
+    "archiveReason": "包含通信模式、加密方式、硬件连接、网络端口和配置流程等可复用的工程信息。",
+    "classifiedAt": 1784693350270,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "ESP32无人机加密遥测链路",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1784690066771,
+        "imageId": "img-9",
+        "model": "gpt-5.6-sol",
+        "ocrText": "",
+        "summary": "# DroneBridge for ESP32：深度总结\n\n## 一、核心总结\n\nDroneBridge 把廉价的**ESP32 变成无人机遥测通信模块**：\n\n> 飞控通过 UART 连接 ESP32，ESP32 再用 Wi‑Fi、ESP‑NOW 或 BLE，将数据双向传给地面站。\n\n### 核心价值\n\n- **低成本、轻量**：约 7 欧元、低于 8 克。\n- **协议兼容**：支持 MAVLink、MSP、LTM；透明模式可传输其他串口协议。\n- **双向通信**：可回传状态，也可下发指令。\n- **多种链路**：\n  - 普通 Wi‑Fi：约 150 米；\n  - ESP‑NOW / Wi‑Fi LR：理想条件下可超过 1 公里；\n  - BLE：适合近距离连接。\n- **安全传输**：所有模式采用 AES‑256‑GCM 加密，包括 ESP‑NOW 广播。\n- **地面站兼容**：可连接 QGroundControl、Mission Planner 等，支持 UDP/TCP。\n- **易部署**：网页配置、OTA、官方在线刷写工具，并提供紧凑型开源硬件方案。\n- **可扩展**：支持多机通信，并有面向无人机编队表演的 Skybrush 特殊版本和商业管理工具。\n\n### 明确边界\n\n它是**遥测与低速数据链**，不是高清视频链路；ESP32 不负责视频编码，也不适合高带宽数据传输。\n\n---\n\n## 二、深入浅出地解读\n\n可以把它理解成无人机的一个 “**无线串口翻译器**”：\n\n```text\n飞控 ←UART→ ESP32 ←无线网络→ 手机 / 电脑地面站\n```\n\nESP32 通常不改变业务数据，只负责：\n\n1. 从飞控串口读取数据；\n2. 加密、分包并无线发送；\n3. 将地面站指令送回飞控。\n\n其中：\n\n- **透明模式**像快递员：不管包裹内容，只负责可靠转运；\n- **协议解析模式**像懂业务的快递员：识别 MAVLink、MSP、LTM，可优化分包、降低丢包，并向地面站提供信号强度等信息。\n\n因此，它最适合：\n\n- 低成本无人机遥测；\n- 调试飞控、查看姿态和位置；\n- 下发航点或低速控制命令；\n- 教学、DIY 与低成本多机系统。\n\n---\n\n## 三、辩证思考\n\n### 优势\n\n它用成熟、便宜、易获得的 ESP32，显著降低了无人机数据链门槛；开源、协议开放、软硬件可定制，尤其适合实验和规模化部署。\n\n### 局限\n\n- “超过 1 公里” 取决于天线、遮挡、干扰和法规，不能视为稳定承诺。\n- 加密算法强，不等于系统绝对安全；密钥管理、固件更新和配置同样关键。\n- Wi‑Fi/ESP‑NOW 使用共享频谱，复杂环境中的确定性通常弱于专业数传电台。\n- 多机数量并非无限，最终受信道容量、数据频率与 ESP32 算力约束。\n- 低成本链路不应成为关键飞行任务中唯一的安全保障。\n\n## 结论\n\n**DroneBridge 的本质不是替代专业数传，而是以极低成本提供 “足够好、可加密、可扩展” 的无人机遥测链路。**  \n它非常适合 DIY、教学、测试和低速多机应用；若用于远距离或高安全等级任务，则必须经过实测，并准备失联保护和备用链路。",
+        "url": "https://github.com/DroneBridge/ESP32/raw/master/wiki/db_ESP32_setup.png",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "DroneBridge for ESP32 concept",
+        "caption": "",
+        "height": 686,
+        "id": "img-9",
+        "nearbyText": "DroneBridge for ESP32 A firmware for the popular ESP32 modules from Espressif Systems. Probably the cheapest way to communicate with your drone, UAV, UAS, ground-based vehicle or whatever you may call them. It also allows for a fully transp...",
+        "resolvedUrl": "https://github.com/DroneBridge/ESP32/raw/master/wiki/db_ESP32_setup.png",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/DroneBridge/ESP32/raw/master/wiki/db_ESP32_setup.png",
+        "width": 2380
+      }
+    ],
+    "knowledgePoints": [
+      "ESP32可通过UART连接飞控，并以WiFi或ESP-NOW向地面站转发MAVLink等遥测协议。",
+      "项目支持透明传输模式，也支持对MAVLink、MSP和LTM进行解析，以增强遥测可靠性和状态展示。",
+      "文档明确了典型接入方式，包括网页配置、UDP 14550、TCP 5760以及地面站端点注册要求。"
+    ],
+    "oneHighValuePoint": "将ESP32、ESP-NOW长距离通信、AES-GCM加密与透明串口转发结合，提供了低成本无人机遥测链路的可落地实现路径。",
+    "oneLineReview": "这是一份信息较完整、可直接上手的项目说明，但性能范围和关键指标主要依赖项目自述，论证深度有限。",
+    "primaryCategory": "嵌入式通信与无人机遥测",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并保留，适合作为无人机低速遥测链路的工程参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "ESP32开发",
+      "开源硬件项目"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍基于ESP32的DroneBridge开源固件，用于无人机与地面站之间的低速加密遥测通信，支持WiFi、ESP-NOW、蓝牙低功耗及透明串口转发，并说明协议兼容性、硬件连接、刷写、网页配置和地面站接入方式。",
+    "tags": [
+      "ESP32",
+      "ESP-NOW",
+      "MAVLink",
+      "AES-GCM",
+      "UART"
+    ],
+    "title": "DroneBridge/ESP32: DroneBridge for ESP32. A secure & transparent telemetry link with support for WiFi and ESP-NOW. Supporting MAVLink, MSP, LTM or any other protocol",
+    "totalScore": 65,
+    "url": "https://github.com/DroneBridge/ESP32"
+  },
+  "payloadHash": "sha256:7a2f16488e4521d311a6a3e583769d54cb6acb76e6045944fd1feaa9344a83d9",
+  "refs": {},
+  "revisionId": "sha256:b2c7dd563b76cf3db144af5ec159d3d4c7e50b60282a16cc2c6e0e561546f4ed",
+  "schemaVersion": 1,
+  "updatedAt": 1789728861694
+}

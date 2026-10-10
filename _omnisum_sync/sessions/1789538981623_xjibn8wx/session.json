@@ -1,0 +1,83 @@
+{
+  "createdAt": 1789538981623,
+  "entityType": "session",
+  "id": "1789538981623_xjibn8wx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据用户技术能力，在托管、自托管和纯本地部署方案之间进行选择。",
+      "阅读安装、迁移和 Starting Fresh 文档，评估实际启用成本。",
+      "检查 loot-core 与同步相关代码，分析其本地优先架构和跨设备同步实现。"
+    ],
+    "archiveReason": "仓库提供可直接考察的开源代码、部署选择和基础模块划分，适合作为本地优先应用的案例索引。",
+    "classifiedAt": 1789642118222,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Actual本地优先财务工具概览",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Actualbudget",
+        "caption": "",
+        "height": 665,
+        "id": "img-4",
+        "nearbyText": "Getting Started Actual is a local-first personal finance tool. It is 100% free and open-source, written in NodeJS, it has a synchronization element so that all your changes can move between devices without any heavy lifting. If you are inte...",
+        "resolvedUrl": "https://github.com/actualbudget/actual/raw/master/demo.png",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/actualbudget/actual/raw/master/demo.png",
+        "width": 1229
+      }
+    ],
+    "knowledgePoints": [
+      "Actual 是基于 Node.js 的免费开源本地优先个人财务工具，并包含跨设备同步能力。",
+      "项目支持 PikaPods、Fly.io、Docker 自托管以及 Windows、macOS、Linux 本地应用等部署方式。",
+      "代码主要拆分为跨平台核心 loot-core、桌面界面 desktop-client 和 Electron 应用 desktop-electron。"
+    ],
+    "oneHighValuePoint": "项目同时提供托管、自托管和纯本地运行路径，可作为本地优先产品部署策略的实际案例。",
+    "oneLineReview": "这是一个相关度较高的开源项目入口，但正文偏概览，需进一步阅读代码和文档才能获得深入价值。",
+    "primaryCategory": "产品开发与技术实现",
+    "rating": "C",
+    "rejectReason": "页面以仓库文件列表和项目入口为主，缺少同步机制、架构取舍及产品方法的深入说明。",
+    "retentionDecision": "作为本地优先产品及开源财务应用的实现案例按需保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "开源软件",
+      "个人财务管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该仓库介绍开源本地优先个人财务工具 Actual：基于 Node.js，支持设备间同步，并列出托管、自托管与本地桌面部署方式、核心包结构、文档及社区贡献入口。",
+    "tags": [
+      "本地优先",
+      "个人财务",
+      "开源项目",
+      "自托管",
+      "Node.js"
+    ],
+    "title": "actualbudget/actual: A local-first personal finance app",
+    "totalScore": 54,
+    "url": "https://github.com/actualbudget/actual"
+  },
+  "payloadHash": "sha256:76c4aaac20d85f1154144fc2be73ef5d54a905d260369bce38a64bb7e7ddd698",
+  "refs": {},
+  "revisionId": "sha256:c26f307c7f1a61f76e2b0c691bb62d48fb36b2c1488aeea7da5c43243afcfff9",
+  "schemaVersion": 1,
+  "updatedAt": 1789642123309
+}

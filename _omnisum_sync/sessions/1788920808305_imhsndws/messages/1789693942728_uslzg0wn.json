@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693942729,
+  "entityType": "message",
+  "id": "1789693942728_uslzg0wn",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nLangChain Deep Agents 把长期记忆做成可持久化的文件：智能体可按需读取、更新，并通过存储命名空间控制记忆属于某个智能体、用户或组织。\n\n## 关键内容\n\n- **记忆的使用方式**：创建智能体时指定记忆文件和存储后端；内容可在启动时载入，也可在任务需要时再读取，以减少上下文占用。内置工具可把新信息写回文件，供后续对话使用。\n- **作用范围可隔离**：智能体级记忆由所有用户共享；用户级记忆按 `user_id` 隔离，避免偏好串到他人会话；组织级记忆用于共享政策或知识。\n- **不只保存事实**：文件适合保存事实、偏好和技能；检查点线程还能保留过去对话及处理过程，支持搜索此前的解决经验。\n- **安全与一致性最重要**：共享记忆建议只读，防止用户把恶意指令写入后影响他人；并发修改同一文件可能“后写覆盖前写”，可通过后台汇总或拆分文件缓解。\n\n## 通俗解读\n\n这不是模型自动拥有“永久大脑”，而是让它读写一组受权限控制的文件。多数应用直接在对话中更新即可；对延迟、记忆质量或并发要求较高时，再定时运行汇总智能体。**准备实际接入 Deep Agents 时值得细读**，尤其是权限、命名空间和并发部分；仅想了解概念，以上内容已足够。原文中的具体代码示例未包含在所给内容中。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693942729,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f403320aa6bec0a1d878ae926d56ab96e615b6f5e71089e91017f74adc3ed6f1",
+  "refs": {
+    "sessionId": "1788920808305_imhsndws"
+  },
+  "revisionId": "sha256:8a8fc28948025de4b99c7096cf9b259966e04f1980dbdcf7347b2dd75fdc1ea9",
+  "schemaVersion": 1,
+  "updatedAt": 1789693942729
+}

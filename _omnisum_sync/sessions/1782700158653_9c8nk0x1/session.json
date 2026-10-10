@@ -1,0 +1,75 @@
+{
+  "createdAt": 1782700158653,
+  "entityType": "session",
+  "id": "1782700158653_9c8nk0x1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 Claude Code、Codex 或 OpenCode，可在测试 VPS 上按 README 试装并验证多代理工作流。",
+      "部署前检查 SECURITY.md，确保不将未鉴权控制 API 直接暴露到公网。",
+      "评估该项目是否能替代本地笔记本运行编码代理，尤其关注权限控制、日志、稳定性和成本。"
+    ],
+    "archiveReason": "提供了一个自托管多编码代理控制台的实现思路、安装方式和安全部署要点，可作为AI编码工作流基础设施参考。",
+    "classifiedAt": 1783040269098,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "技术博客/开源项目文档",
+    "classifyTitle": "自托管AI编码代理控制台",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "lfg 使用 tmux 管理长期运行的编码代理会话，并支持从网页/PWA查看输出、响应权限提示和恢复任务。",
+      "项目默认建议绑定 loopback，并通过 Tailscale Serve 暴露访问，避免直接暴露到公网。",
+      "安装流程支持 Ubuntu/Debian VPS、macOS、本地开发以及部分云平台部署，但生产使用更推荐有代码仓库和认证 CLI 的 VPS 或本机。"
+    ],
+    "oneHighValuePoint": "将多个AI编码代理隔离在长期 tmux 会话中，并通过私有 tailnet 的 Web UI 统一调度，是较实用的远程开发代理架构。",
+    "oneLineReview": "这是一个有实际试用价值的AI编码代理控制台项目说明，但更多是产品文档，方法论和证据深度有限。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后按实际试用价值决定是否长期保留",
+    "secondaryCategories": [
+      "自托管工具",
+      "编码代理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://lfg.omgs.app/#features",
+      "https://github.com/BennyKok/lfg",
+      "https://x.com/BennyKokMusic/status/2071183915243753949"
+    ],
+    "summaryBrief": "文章介绍开源项目 lfg：在 VPS 或本机通过 tmux 运行 Claude Code、Codex、OpenCode 等多个编码代理，并用 PWA 和 Tailscale 远程控制，包含安装、配置、安全注意事项和部署方式。",
+    "tags": [
+      "AI Coding Agent",
+      "Claude Code",
+      "tmux",
+      "Tailscale",
+      "PWA",
+      "VPS"
+    ],
+    "title": "自托管智能编码代理控制台",
+    "totalScore": 62,
+    "url": "omnisun://digest/1782700158652"
+  },
+  "payloadHash": "sha256:aa7d9a2d9110c75a114c52baebdad44eeef230a33777b44f2538ff5d084a3f04",
+  "refs": {},
+  "revisionId": "sha256:e528ac1b82e28391320203e47ad6a459395f52297b948206a24d350211b4c354",
+  "schemaVersion": 1,
+  "updatedAt": 1783040269507
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693976057,
+  "entityType": "message",
+  "id": "1789693976058_jlkzup4i",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一套重度 AI 编程用户的个人工作流：用统一界面管理多个智能体，把任务放到自建云服务器并行运行，再用技能、审查、隔离和权限护栏控制效率与风险。\n\n## 关键内容\n\n- **统一管理**：作者主推 bb、Herdr、Corral 等工具，集中使用不同模型，并跟踪任务状态和优先级，避免在多个应用间切换。\n- **自建云端环境**：用 VPS、SSH 和 Herdr 获得持续运行的智能体会话，作者认为这比本地运行更易扩展，也比厂商云服务更少锁定。\n- **把流程标准化**：重复操作做成文本模板，多步骤流程做成“技能”；重要改动先问清决策、再开发，并交给不同模型复审。\n- **并行但要设护栏**：大型项目用 Git 工作树隔离智能体，同时限制危险命令、生产数据库只给只读权限，并记录架构决策。\n\n## 通俗解读\n\n核心不是“选出最强模型”，而是把多个 AI 当成一支工程团队来管理：分工、排队、隔离、复核并限制权限。文中的模型评价、订阅性价比和“云端智能体占比接近 60%”均属作者经验或主张；原图缺失，无法核验。跳过权限、YOLO 模式及 root 权限风险较高，不宜直接照搬。\n\n**是否值得细读：**适合已经高频并行使用编程智能体的人；普通用户可重点看自建 VPS、工作树和安全护栏，具体工具与价格很可能迅速过时。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693976057,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8cab151aed14f7015d084b1385d3a8538c56ad2e3957354fc7abc5da04c3c303",
+  "refs": {
+    "sessionId": "1788428520749_tkejsc5h"
+  },
+  "revisionId": "sha256:ee2facad0a0365fbfcfaeed5c0f3775d0f1fe08e287fb17c53399e12c166bdcf",
+  "schemaVersion": 1,
+  "updatedAt": 1789693976057
+}

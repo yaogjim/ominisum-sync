@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782990528911,
+  "entityType": "message",
+  "id": "1782990528910_mabyst05",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Dagu本地优先工作流引擎\n\n**评级**: B (64.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: DevOps与工作流编排\n**次类别**: 自动化工具, 开源项目文档\n**标签**: #DAG #Workflow #DevOps #YAML #自托管 #任务调度\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一份信息量较高的工具 README，适合用于快速判断 Dagu 是否适合作为 Airflow/Cron 的轻量替代品。\n**核心高价值点**: Dagu 以单二进制和文件存储实现工作流调度、Web UI、日志、重试和分布式执行，显著降低小团队部署和运维复杂度。\n\n### 摘要\n文章介绍 Dagu，一个轻量级、本地优先、无需外部数据库的工作流编排引擎，支持 YAML 定义 DAG、Web UI、CLI、分布式 Worker、MCP、Docker/Kubernetes/SSH 等执行方式，并提供安装、架构、认证、监控和配置说明。\n\n### 知识要点\n- Dagu 可通过声明式 YAML 定义 DAG，支持依赖、重试、调度、审批、参数、子 DAG 和生命周期钩子。\n- 其架构支持单机 standalone、coordinator/worker 分布式模式和 headless 模式，适配本地、边缘和小团队自动化场景。\n- 内置 Actions 覆盖 shell、Docker、Kubernetes、SSH、HTTP、SQL、S3、文件操作、LLM、邮件、Git 等常见自动化任务。\n- 生产部署需要关注认证、TLS、网络暴露、Docker socket 权限、终端功能和分布式通信安全。\n- 提供 Prometheus 指标、结构化日志、Artifacts、Web UI 和审计能力，便于任务运行可观测性建设。\n\n### 行动项\n- 如正在寻找 Airflow/Cron 的轻量替代方案，可本地安装 Dagu 并用一个现有脚本改写为 YAML DAG 进行验证。\n- 重点评估文件存储、权限控制、分布式 Worker、日志保留和生产安全配置是否满足团队需求。\n- 对比 Airflow、Temporal、Prefect、Argo Workflows 等工具，明确 Dagu 在小规模自动化和自托管场景中的适用边界。\n\n### 存档判定\n归档: 是 — 原因: 内容包含安装方式、架构模式、配置项、使用场景和示例，可作为轻量级工作流编排工具选型参考。\n不推荐: 整体偏项目README和功能介绍，营销性较强，缺少独立评测、真实生产案例和性能基准数据。\n删除: 否\n留存决策: 短期参考后可保留为工具选型资料",
+    "role": "assistant",
+    "timestamp": 1782990528911,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:f158371ffcb3053946521ecf558853e4d972a109115f6c78b56d26c413c6ce25",
+  "refs": {
+    "sessionId": "1782989553771_q0bv382c"
+  },
+  "revisionId": "sha256:5565683abc0d5d3d212033257a43f53b2aa9faac19935a843a31ee4d4d21cd0f",
+  "schemaVersion": 1,
+  "updatedAt": 1782990528911
+}

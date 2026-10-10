@@ -1,0 +1,83 @@
+{
+  "createdAt": 1785487610904,
+  "entityType": "session",
+  "id": "1785487610904_ugoodh5o",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按发行版选择make bootstrap-native、nix run或AppImage本地构建路径。",
+      "首次运行时安装Codex CLI；如需固定版本或解决PATH问题，设置CODEX_CLI_PATH。",
+      "遇到白屏、Wayland或GPU问题时，先检查launcher.log并按故障表调整渲染参数。"
+    ],
+    "archiveReason": "提供多发行版安装、构建、更新、卸载和故障排查命令，并说明功能扩展架构，具有直接实践价值。",
+    "classifiedAt": 1789725140488,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "ChatGPT桌面版Linux本地构建指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/0d67a8b9b201363781a89467d01635c0306fcfcf31853e05a445dbee3f8e59a3/ilysenko/codex-desktop-linux",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/0d67a8b9b201363781a89467d01635c0306fcfcf31853e05a445dbee3f8e59a3/ilysenko/codex-desktop-linux",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "项目以官方Codex DMG为输入，通过兼容性补丁和原生模块重建生成Linux版Electron应用。",
+      "原生软件包可附带用户级更新服务，检测新DMG后在本地重新构建并于应用退出后安装。",
+      "Linux专属能力采用默认关闭的独立功能框架，可通过配置启用并注入补丁、资源或运行时钩子。"
+    ],
+    "oneHighValuePoint": "通过统一构建流程完成DMG提取、Linux兼容补丁、原生模块重建、运行时装配和多发行版打包，同时不直接分发OpenAI应用二进制。",
+    "oneLineReview": "这是一份覆盖面完整、可直接执行的Linux移植与部署文档，但其长期有效性依赖上游应用结构和项目持续维护。",
+    "primaryCategory": "AI工具与开发环境",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "作为Linux部署ChatGPT与Codex桌面环境的实施文档长期保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Linux软件打包",
+      "开源项目文档"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该仓库将官方macOS Codex DMG在本地转换为可运行的Linux Electron应用，支持主流发行版、AppImage与Nix，并提供更新管理、可选功能、卸载及故障排查方案。",
+    "tags": [
+      "ChatGPT桌面版",
+      "Codex",
+      "Linux",
+      "Electron",
+      "本地构建"
+    ],
+    "title": "ilysenko/codex-desktop-linux: Unofficial ChatGPT desktop app for Linux (formerly the Codex app), built locally from OpenAI’s official macOS app. Includes Chat, Work, and Codex. Packages for Debian/Ubuntu (.deb), Fedora/openSUSE (.rpm), Arch (pacman), Nix/NixOS, and AppImage, with Wayland and X11 support.",
+    "totalScore": 79,
+    "url": "https://github.com/ilysenko/codex-desktop-linux"
+  },
+  "payloadHash": "sha256:c7d7f9c5895a50c0b29ca71ec709558e4e5c2d15df93c3b1e2f6968f4abb63aa",
+  "refs": {},
+  "revisionId": "sha256:364acaea1f4b50871a37b86815f4fef9393d7d62faf9cb8988868817074e8495",
+  "schemaVersion": 1,
+  "updatedAt": 1789863539344
+}

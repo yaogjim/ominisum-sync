@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696018825,
+  "entityType": "message",
+  "id": "1789696018826_he0nedzd",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一篇由 LTX 赞助的实操推广文：免费开源插件 **FrameFlow** 把 AI 图生视频直接接入 After Effects，省去反复导出、上传和导入，但生成视频仍需按秒付费。\n\n## 关键内容\n\n- **解决流程割裂**：在 AE 时间线上选中图片、输入运动提示词并设置时长等参数，生成的视频会自动放回原合成，作者称可省去每轮最多 12—15 分钟的切换操作。\n- **使用门槛与费用**：需要 After Effects 2024+、LTX 账户及 API 密钥。插件、安装程序和提示词库免费；1080p 约 **0.06—0.08 美元/秒**，4K Pro 为 **0.32 美元/秒**。\n- **重点仍是后期设计**：AI 只负责生成原始镜头，最终是否达到可交付水准，仍取决于动态设计、剪辑和多次迭代。\n- **提示词建议**：用完整句子描述动作，先写主体或相机运动，再写摄影与灯光；同一提示可先运行 2—3 次，因为结果存在随机差异。\n\n## 通俗解读\n\n它不是“一键做完视频”，而是把 AI 素材生成搬进 AE，减少来回搬文件的麻烦。对经常用 **AE + AI 图生视频** 的创作者，安装和提示词部分值得细读；不使用 AE，或只想了解 AI 视频趋势，则浏览概要即可。文中“模型表现最佳”等说法属于作者宣传性评价。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696018825,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d694c84e34e60f622c7351419d31b4d419e3e4170b186693493da8396d356e82",
+  "refs": {
+    "sessionId": "1784101331271_40uspyfz"
+  },
+  "revisionId": "sha256:80a13b3b686249dcf9de4774382673256e47bd8d3944cc2d2e82cad15741ee99",
+  "schemaVersion": 1,
+  "updatedAt": 1789696018825
+}

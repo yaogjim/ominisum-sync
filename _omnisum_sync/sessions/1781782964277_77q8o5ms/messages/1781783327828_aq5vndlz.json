@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781783327829,
+  "entityType": "message",
+  "id": "1781783327828_aq5vndlz",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent Skill解读工具开源\n\n**评级**: B (55.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI Agent工具\n**次类别**: Agent Skills, 开源项目\n**标签**: #Skill分析 #AI Agent #Claude Code #Codex #开源工具\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 这是一个有实用潜力的工具发布帖，但正文信息偏概述，证据和方法细节不足。\n**核心高价值点**: 提出用“静态解析优先、证据链贯穿、报告层解释”的方式系统化评估Agent Skill质量。\n\n### 摘要\n文章介绍了一个开源的“解读Skill的Skill”，用于对Agent Skills进行结构化分析、风险扫描、评分计算并生成双语HTML报告，强调静态解析优先、证据链贯穿和报告层解释的设计思路。\n\n### 知识要点\n- Agent Skill可以通过结构盘点、元数据解析、内容解剖、依赖分析、风险扫描等步骤进行质量评估。\n- 该工具可部署到Codex或Claude Code等AI终端，并通过输入目标Skill链接生成分析报告。\n- Skill生态中存在对优秀Skill进行学习、理解、评估和迭代优化的需求。\n\n### 行动项\n- 打开GitHub项目查看README、示例报告和实际可运行性。\n- 选择一个已有Skill进行测试，评估生成报告的准确性和实用性。\n- 提炼其分析维度，作为自建Agent Skill评估清单的参考。\n\n### 存档判定\n归档: 是 — 原因: 包含一个可尝试的Agent Skill分析工具及GitHub链接，对研究Skill生态和工具评估有一定参考价值。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1781783327829,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:1ebd24f5e93f5c204fa87c8f12190ceda48984e6734f16447f39d8037239ca25",
+  "refs": {
+    "sessionId": "1781782964277_77q8o5ms"
+  },
+  "revisionId": "sha256:537688e20a709030c23ef1348d76596bc6b638dcbf719e3fb01aa305aea4d60f",
+  "schemaVersion": 1,
+  "updatedAt": 1781783327829
+}

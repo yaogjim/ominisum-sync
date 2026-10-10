@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695977241,
+  "entityType": "message",
+  "id": "1789695977241_ejiu3pe7",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nLoopAny 是一个开源的“定时 AI 代理任务”平台：服务器只负责调度、记录和通知，实际任务由你自己机器上的编码代理执行，以兼顾持续运行、团队协作和数据控制。\n\n## 关键内容\n\n- 可创建每日检查、每周摘要、持续监控或“跟进到解决”为止的循环任务；后者达到可验证目标后会自动结束。\n- 相比直接用 cron 定时调用代理，它强调跨次运行的状态、日志、证据验证和退出条件，减少重复工作或代理误判完成。\n- 采用 BYOA（自带代理）模式：守护进程在本机使用你的代理、凭证和工具，服务器不运行模型或代码；但你主动同步的结果与文件会上传保存。\n- 支持团队面板、Telegram/飞书通知、自托管和 Docker。不过项目仍处早期，本机守护进程权限较高；公开部署必须配置认证，且同一数据库只能运行一个服务器进程，否则任务可能重复触发。\n\n## 通俗解读\n\n它不是新的 AI 模型，而是给现有编码代理加上“闹钟、任务档案、验收规则和团队看板”。所谓“自我改进”，是根据已审核的运行记录优化任务说明和流程，并不等于代理能力会自动无限提升。\n\n**是否值得细读：** 若你正搭建本地代理自动化或需要自托管调度，值得阅读部署与安全部分；只想偶尔手动运行 AI，则价值有限。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695977241,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ef369490f72caf61f0b99ffcebacf6827e035120ac7263925e046a311fe71dca",
+  "refs": {
+    "sessionId": "1784023383166_bhvwcvyo"
+  },
+  "revisionId": "sha256:ae8ecc2bbc6d6a06ae78c3b8ee2d23eac1744af2899d46ead7334162afcf95d6",
+  "schemaVersion": 1,
+  "updatedAt": 1789695977241
+}

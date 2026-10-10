@@ -1,0 +1,24 @@
+{
+  "createdAt": 1785385861994,
+  "entityType": "message",
+  "id": "1785386026814_l6vk007d",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 文章总结\n\n`video-shotcraft` 是一个面向 Claude Code、Codex 等 AI Agent 的视频制作 Skill，可利用 Remotion 自动完成分镜、动画、运镜和声音设计，将 Web 或桌面产品制作成电影感宣传片、发布视频或功能演示。项目提供 **104 张镜头配方卡、161 种样式及对应动态样片、完整成片模板和 149 个分类音效**。\n\n## 1. 项目效果与 Gallery\n\n- Agent 可以根据产品截图和需求完成：\n  - 真实页面展示；\n  - 2.5D 运镜；\n  - 动画与转场；\n  - BGM 节奏卡点；\n  - 电影感音效设计。\n- 官方展示的 **38 秒 Gallery 介绍片**，从分镜、镜头实现到声音设计，均由 Agent 按项目方法论完成。\n- 在线 Gallery 收录 **161 条动态样片**，支持：\n  - 搜索和筛选；\n  - 切换样式；\n  - 多选并复制镜头卡名称。\n- 镜头卡不仅适合产品宣传片，也可独立用于功能演示、品牌短片、发布视频和其他动态设计项目。\n\n## 2. 安装与使用方式\n\n最简单的方式是把 GitHub 仓库链接交给 Agent，让其自动克隆并链接到 Skill 目录：\n\n```text\n帮我安装这个 skill：\nhttps://github.com/Vincentwei1021/video-shotcraft\n```\n\n也可以通过 CLI 或手动安装：\n\n```bash\nnpx skills add Vincentwei1021/video-shotcraft\n```\n\n安装后可直接用自然语言提出制作要求，例如：\n\n```text\n用 video-shotcraft 给我的桌面产品做一支宣传片。\n```\n\n也可以指定具体镜头卡：\n\n```text\n用 deck-deal-flyin 和 row-embed 两张镜头卡展示这个功能。\n参考 spotlight-hero-card，为这个页面设计一个产品特写镜头。\n```\n\n如果用户没有指定镜头卡，Skill 会先介绍现有成片模板，并询问是否采用；也可以提前在 Gallery 中挑选镜头。\n\n## 3. 内置完整模板：Ink Press\n\n项目内置已验收的 **Ink Press（墨压）** 产品宣传片模板，参数如下：\n\n- 时长：**36.2 秒**\n- 分辨率：**1920×1080**\n- 帧率：**30 fps**\n- 镜头数量：**10 个**\n- 风格：纸墨琥珀风\n- 内容：2.5D 真实页面运镜、字卡、转场和电影感 SFX\n\n使用时只需告诉 Agent：\n\n```text\n用 video-shotcraft 的 Ink Press 模板给我的产品做一支宣传片。\n```\n\nAgent 会替换产品截图、文案和品牌信息，在保留模板质感的基础上快速生成成片。原文认为，这是目前**速度最快、质量最稳定**的制作路径，后续还会增加更多模板。\n\n## 4. Linux 无显示器环境的渲染问题\n\n在无显示器 Linux 服务器上渲染时，实测环境为 **2 核、Node 22**，主要有三个问题：\n\n1. **低核机器并发受限**\n   - Remotion 可能提示：`Maximum for --concurrency is 2`\n   - 解决：添加参数：\n\n   ```bash\n   --concurrency=1\n   ```\n\n2. **新版 Chromium 移除了旧 Headless 模式**\n   - 如果 Remotion 直接使用系统完整版 Chrome/Chromium，可能启动失败。\n   - 解决：改用 `chrome-headless-shell` 二进制。\n\n3. **CDN 无法访问**\n   - 如果 `remotion.media` 无法访问，Headless Shell 自动下载会失败。\n   - 解决：手动指定本地浏览器路径：\n\n   ```bash\n   --browser-executable=<本地 chrome-headless-shell 路径>\n   ```\n\n同时配置以上参数后，内置模板即可在低配置服务器上正常渲染。\n\n## 5. 项目提供的核心资源\n\n| 内容 | 说明 |\n|---|---|\n| **104 张镜头配方卡** | 记录镜头用途、能量、建议时长、参数、实现要点和已知问题 |\n| **161 条动态样片** | 覆盖 161 种样式，可在 Gallery 中预览、搜索和筛选 |\n| **Remotion 参考实现** | 每张镜头卡均有调校过的 TSX Demo，包含真实缓动和时序参数 |\n| **完整成片模板** | 36.2 秒、1080p、30fps、10 镜头的 Ink Press 宣传片 |\n| **组件与素材** | 包括 2.5D 页面相机、字幕、闪切、数字滚动、音效及素材采集脚本 |\n| **完整制作方法论** | 涵盖素材采集、视觉风格、分镜、声音设计、节奏卡点和最终验收 |\n\n## 6. 项目结构与制作流程\n\n项目主要目录包括：\n\n```text\nvideo-shotcraft/\n├── SKILL.md              # Agent 入口与核心制作规则\n├── references/\n│   ├── pipeline.md       # 完整制作流水线\n│   ├── shots/            # 104 张镜头配方卡\n│   ├── sequences/        # 可复用的影片结构与桥段模板\n│   ├── aesthetic-rules.md\n│   ├── music-beat-sync.md\n│   └── sound-design.md\n├── demos/                # 镜头卡的 Remotion 实现\n├── gallery/              # 在线样片画廊\n├── template/             # 可直接运行的成片模板\n└── assets/\n    ├── lib/              # 可复用 Remotion 组件\n    ├── scripts/          # 页面素材采集脚本\n    └── audio/\n        ├── bgm/          # 5 首 BGM\n        └── sfx/          # 149 个音效，分为 16 类\n```\n\n完整制作流程和验收要求集中在：\n\n- `SKILL.md`\n- `pipeline.md`\n- `aesthetic-rules.md`\n- `music-beat-sync.md`\n- `sound-design.md`\n\n这些文档共同规定了从采集素材、确定风格、设计分镜，到音乐卡点、音效配置和最终验收的完整流程。\n\n## 7. 音频、授权与素材安全\n\n- 项目提供 **5 首备选 BGM** 和 **149 个音效**。\n- 音效按照场景或材质分为 **16 类**，包括：\n  - transition、impact、riser；\n  - camera、ui、text；\n  - paper、film、light；\n  - data、scifi、mech；\n  - glass、fluid、crowd、counter。\n- 推荐先确定音效类别，再选择具体音色；详细索引见 `sound-design.md`。\n- 音效来源及许可信息记录在 `ATTRIBUTION.md`，使用时需遵守各自授权条件。\n- 模板内的产品截图仅用于演示。正式发布前应：\n  - 替换为目标产品截图；\n  - 检查数据、客户信息及个人信息；\n  - 对敏感内容进行脱敏。\n\n## 8. 近期更新\n\n原文列出的主要更新包括：\n\n- **2026-07-27**\n  - 音频库重构为 `bgm/` 与 `sfx/<类别>/` 两层；\n  - 音效扩充至 **149 个**，新增纸张、印刷、打字机、书写、胶片、计数器、墨水流体和玻璃碎裂等质感音效；\n  - 对全库进行 MD5 去重；\n  - 补回 7 个音效的原始授权链接。\n- **2026-07-27**\n  - Gallery 卡片支持多类别标签；\n  - “All”视图改为平铺并按字母排序；\n  - 补回 `GridWaveFlip` 和 `WireframeDrawOn` 源码。\n- **2026-07-26**\n  - Gallery 自动部署到 GitHub Pages；\n  - MP4 样片移出 Git，改存于 Release，以缩小仓库体积。\n\n## 9. 技术来源与许可提醒\n\n- 镜头方法参考了 ClickUp、Perplexity、Slack、Notion、Figma、Framer、Bear、Raycast、Pitch、Miro、Superhuman、Loom 等产品的宣传片语言。\n- 项目只记录从零实现的动画技法，如时序、缓动和镜头编排，**不包含上述品牌影片的原始素材、画面或品牌资产**。\n- 全部 Demo 与模板由 **Remotion** 驱动。Remotion 有独立许可协议：\n  - 个人和小团队通常可免费使用；\n  - 公司使用时可能需要付费许可。\n- SFX 和音乐主要来自 **Mixkit**，按其免费商用授权使用。\n- 项目也借鉴了游戏手感、Screenshake 和经典动画时序原则。\n- 仓库自身的构建、迭代和验收由 Claude Code 等 AI Coding Agent 按该 Skill 的工作流完成。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1785385861994,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0913e7120f527f5ceedc037eb9358f04e2190a47400f0ecfc3730d9f620c1ed7",
+  "refs": {
+    "sessionId": "1785386026446_4fzzdb2z"
+  },
+  "revisionId": "sha256:e4e5fc9cd42391e1536d09cf97c4fc7353c3bb8664d1c6eb75027a85c628e331",
+  "schemaVersion": 1,
+  "updatedAt": 1785385861994
+}

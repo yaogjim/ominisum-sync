@@ -1,0 +1,72 @@
+{
+  "createdAt": 1787889417743,
+  "entityType": "session",
+  "id": "1787889417743_d3bjzb3c",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "盘点现有Agent能力，将内容划分为知识型Skill、通用执行工具和必须使用结构化接口的专用能力。",
+      "保持核心tools数组稳定，并评估用固定元工具入口加手写提示词按需获取专用schema。",
+      "通过缓存命中率、输入Token成本、工具误选率和额外往返延迟，对全量常驻与按需加载方案进行对照测试。"
+    ],
+    "archiveReason": "文章形成了知识层与能力层分离、稳定工具前缀及选择动态性承载位置的可复用框架，对Agent harness设计有长期参考价值。",
+    "byline": "鸭哥",
+    "classifiedAt": 1789724598810,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Grok Bot动态工具设计解析",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "yage.ai",
+    "favicon": "",
+    "images": [],
+    "knowledgePoints": [
+      "改变API的tools数组可能使后续前缀缓存失效，因此动态schema的位置会显著影响长对话成本。",
+      "Skill主要承载操作知识，可由通用工具执行；动态tool schema承载无法通过现有通用工具表达的新能力。",
+      "元工具按需加载适合工具规模大、单轮调用稀疏且模型选工具能力有限的场景，其代价是增加一次查询往返。"
+    ],
+    "metaAuthor": "鸭哥",
+    "oneHighValuePoint": "设计Agent工具系统时，应先区分“模型需要知道什么”和“模型能够调用什么”，再根据KV缓存稳定性决定动态加载发生在上下文、工具面还是解码层。",
+    "oneLineReview": "架构洞见清晰且可迁移，但关键源码、实验与成本数据缺少文内可直接核验的完整证据链。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，作为Agent工具编排与上下文成本优化的架构参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI编程工具",
+      "技术架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于逆向重建的Grok Bot源码，分析Cursor以稳定核心工具和元工具入口、按需加载动态schema的设计，并对比Manus方案，提出应分离知识层与能力层，并依据缓存成本决定动态性位置。",
+    "tags": [
+      "动态工具加载",
+      "KV缓存",
+      "Agent Harness",
+      "工具调用",
+      "上下文工程"
+    ],
+    "title": "Grok Bot 泄露：Cursor 为什么只给模型一部分工具的完整定义",
+    "totalScore": 80,
+    "url": "https://yage.ai/share/grok-bot-dynamic-tools-20260827.html?utm_source=twitter&utm_medium=thread&utm_campaign=grok-bot-dynamic-tools-20260827"
+  },
+  "payloadHash": "sha256:7ae5b1f2dea1407f960ce13642b937ebaa5eecf7bb1024783db5036a7bdff71c",
+  "refs": {},
+  "revisionId": "sha256:8e14b78edf9d00778015da6bf4134cc37a18d0621328dfb026579e0cc4bd46ff",
+  "schemaVersion": 1,
+  "updatedAt": 1789863504416
+}

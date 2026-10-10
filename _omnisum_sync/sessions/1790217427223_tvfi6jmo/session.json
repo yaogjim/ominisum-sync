@@ -1,0 +1,183 @@
+{
+  "createdAt": 1790217427223,
+  "entityType": "session",
+  "id": "1790217427223_tvfi6jmo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "byline": "Packy McCormick",
+    "classifiedAt": 1790767960329,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "电磁基础模型的技术愿景与瓶颈",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.notboring.co",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "Datacolor",
+        "height": 367,
+        "id": "img-6",
+        "nearbyText": "",
+        "resolvedUrl": "https://substackcdn.com/image/fetch/$s_!b8Se!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb9608bec-1f46-47b9-92bc-d52fac568194_908x458.png",
+        "role": "figure",
+        "score": 95,
+        "src": "https://substackcdn.com/image/fetch/$s_!b8Se!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb9608bec-1f46-47b9-92bc-d52fac568194_908x458.png",
+        "width": 728
+      }
+    ],
+    "knowledgePoints": [
+      "电磁波的频率、波长与单个光子的能量相关：频率越高，波长越短，单个光子的能量越高。",
+      "射频系统具有波动性和分布式场效应，不能仅依靠简单电路直觉理解其行为，设计需要考虑结构对电磁场的影响。"
+    ],
+    "metaAuthor": "Packy McCormick",
+    "oneHighValuePoint": "值得关注的假设是：电磁硬件设计中的专家直觉瓶颈，可能成为专用物理模型的应用切入点，但本文尚未证明模型能够有效替代这种直觉。",
+    "oneLineReview": "提供了物理AI应用于电磁设计的观察视角，但技术细节和验证证据不足，更适合作为方向性介绍而非实践依据。",
+    "primaryCategory": "AI技术",
+    "published": "2026-03-24T20:57:34+08:00",
+    "rating": "C",
+    "rejectReason": "所提供正文在论述中途截断，主要包含科普铺垫与企业愿景，缺少模型架构、训练方法、评测结果和具体交付案例；部分数字与历史表述也缺乏充分支撑。",
+    "retentionDecision": "速览技术方向即可，当前文本不足以作为技术方案或长期知识资料保留",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "author": [
+          {
+            "@type": "Person",
+            "description": "Author of Not Boring",
+            "identifier": "user:2417812",
+            "image": {
+              "@type": "ImageObject",
+              "contentUrl": "https://substackcdn.com/image/fetch/$s_!cVa-!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3c6a6231-021b-4b82-9c92-6f16691b6652_400x400.jpeg",
+              "thumbnailUrl": "https://substackcdn.com/image/fetch/$s_!cVa-!,w_128,h_128,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3c6a6231-021b-4b82-9c92-6f16691b6652_400x400.jpeg"
+            },
+            "name": "Packy McCormick",
+            "sameAs": [
+              "https://twitter.com/packyM"
+            ],
+            "url": "https://substack.com/@notboring"
+          }
+        ],
+        "dateModified": "2026-03-24T20:57:34+08:00",
+        "datePublished": "2026-03-24T20:57:34+08:00",
+        "description": "A Co-Written Essay with Arena Physica CEO Pratap Ranade",
+        "headline": "Electromagnetism Secretly Runs the World",
+        "image": [
+          {
+            "@type": "ImageObject",
+            "url": "https://substackcdn.com/image/fetch/$s_!0OgS!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff740bc32-c78b-42e5-903d-118bbcf2aa84_2400x1260.png"
+          }
+        ],
+        "interactionStatistic": [
+          {
+            "@type": "InteractionCounter",
+            "interactionType": "https://schema.org/LikeAction",
+            "userInteractionCount": 241
+          },
+          {
+            "@type": "InteractionCounter",
+            "interactionType": "https://schema.org/ShareAction",
+            "userInteractionCount": 17
+          },
+          {
+            "@type": "InteractionCounter",
+            "interactionType": "https://schema.org/CommentAction",
+            "userInteractionCount": 3
+          }
+        ],
+        "isAccessibleForFree": true,
+        "mainEntityOfPage": "https://www.notboring.co/p/electromagnetism-secretly-runs-the",
+        "publisher": {
+          "@type": "Organization",
+          "description": "Tech strategy, analysis, and philosophy, but not boring.",
+          "identifier": "pub:10025",
+          "image": {
+            "@type": "ImageObject",
+            "contentUrl": "https://substackcdn.com/image/fetch/$s_!5wlY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F62784289-29bb-4fdf-9ada-642905c5a28b_400x400.png",
+            "thumbnailUrl": "https://substackcdn.com/image/fetch/$s_!5wlY!,w_128,h_128,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F62784289-29bb-4fdf-9ada-642905c5a28b_400x400.png",
+            "url": "https://substackcdn.com/image/fetch/$s_!5wlY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F62784289-29bb-4fdf-9ada-642905c5a28b_400x400.png"
+          },
+          "interactionStatistic": {
+            "@type": "InteractionCounter",
+            "interactionType": "https://schema.org/SubscribeAction",
+            "name": "Subscribers",
+            "userInteractionCount": 100000
+          },
+          "logo": {
+            "@type": "ImageObject",
+            "contentUrl": "https://substackcdn.com/image/fetch/$s_!5wlY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F62784289-29bb-4fdf-9ada-642905c5a28b_400x400.png",
+            "thumbnailUrl": "https://substackcdn.com/image/fetch/$s_!5wlY!,w_128,h_128,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F62784289-29bb-4fdf-9ada-642905c5a28b_400x400.png",
+            "url": "https://substackcdn.com/image/fetch/$s_!5wlY!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F62784289-29bb-4fdf-9ada-642905c5a28b_400x400.png"
+          },
+          "name": "Not Boring by Packy McCormick",
+          "sameAs": [
+            "https://twitter.com/packyM"
+          ],
+          "url": "https://www.notboring.co"
+        },
+        "url": "https://www.notboring.co/p/electromagnetism-secretly-runs-the"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "item": "https://www.notboring.co",
+            "name": "Not Boring by Packy McCormick",
+            "position": 1
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://www.notboring.co/p/electromagnetism-secretly-runs-the",
+            "name": "Electromagnetism Secretly Runs the World",
+            "position": 2
+          }
+        ]
+      }
+    ],
+    "schemaAuthor": "Packy McCormick",
+    "schemaTypes": [
+      "NewsArticle",
+      "BreadcrumbList"
+    ],
+    "secondaryCategories": [
+      "电磁工程",
+      "科技创业"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "siteName": "Not Boring by Packy McCormick",
+    "summaryBrief": "文章从电磁系统在通信、计算和电气化设备中的作用出发，认为稀缺的工程直觉限制了硬件研发，并介绍Arena Physica构建电磁基础模型的愿景。所提供正文以物理科普和商业叙事为主，尚未展示模型实现与验证结果。",
+    "tags": [
+      "电磁基础模型",
+      "物理AI",
+      "射频工程",
+      "硬件设计"
+    ],
+    "title": "Electromagnetism Secretly Runs the World",
+    "totalScore": 46,
+    "url": "https://www.notboring.co/p/electromagnetism-secretly-runs-the"
+  },
+  "payloadHash": "sha256:ed2f66011323e121d2d6d264801aa7bf2b7a9d728055d66fd7017822ba7b1723",
+  "refs": {},
+  "revisionId": "sha256:cc926d13fa04e7fa58ea2eb8dae3dad053f5e6e034a1adea870fa848bc7a24d1",
+  "schemaVersion": 1,
+  "updatedAt": 1790767961172
+}

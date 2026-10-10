@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727404439,
+  "entityType": "message",
+  "id": "1789727404439_aof6jyy4",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# AI 竞争正从“拼算力”转向组织效率与模型自进化\n\nEvolvent AI 联创、前 Kimi 成员孟繁青认为，AI 创业机会目前更多集中在后训练和垂直应用；长期竞争的关键不只是算力，而是组织能否快速协同、持续迭代。下一阶段的重要方向将是 Auto Research，也就是让模型在反馈中自我改进。\n\n## 创业更适合从后训练切入\n\n预训练需要海量算力，创业公司很难承担，因此相关人才出来创业较少。后训练更接近落地，围绕数据、评测基准、Agent 平台等方向，不需要数千张 GPU，进入门槛相对更低。\n\n国内模型的特色反而体现在预训练：Kimi 的线性注意力、DeepSeek 的 MLA 等架构创新，部分源于算力约为海外头部团队十分之一的约束，迫使团队提升计算效率。\n\n## 长期差距取决于组织能否跑得更快\n\n孟繁青不完全认同“大模型最终只拼算力”。技术会在公司之间流动，真正拉开差距的可能是组织架构，例如多模态是否独立成团队。混元的进步被用作案例：组织方式调整正确后，研发速度可能显著提升。\n\n## 模型将走向持续自我进化\n\n他把下一个行业共识称为 Auto Research、RSI 或 Self-evolving：给模型设定环境和目标，让其持续行动、获取反馈并调整策略，从而突破原有能力上限。\n\n模型厂还可能把模型与自家 harness（工具及工作流执行层）联合训练。在编程等通用领域，第三方 harness 的空间会被压缩；但垂直行业仍有机会，以较弱的开源模型搭配简单工作流，提供更便宜、更快、且满足隐私要求的方案。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727404439,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0f1e9819f632403936652936c43414db7aa140d072e6de3b82df2a17c43644b4",
+  "refs": {
+    "sessionId": "1789723616942_ivqrc86f"
+  },
+  "revisionId": "sha256:ad1d5941438d7f46156b17745b7067d941f09d2206788f7147dfe44cd40a5f80",
+  "schemaVersion": 1,
+  "updatedAt": 1789727404439
+}

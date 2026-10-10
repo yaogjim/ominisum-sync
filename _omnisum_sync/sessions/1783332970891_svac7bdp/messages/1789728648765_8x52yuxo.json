@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728648765,
+  "entityType": "message",
+  "id": "1789728648765_8x52yuxo",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Agent Coding 正进入“Skill 工作流”阶段\n\nKevin Ma 复盘了一年多的 Agent Coding 实践后，认为高价值经验应沉淀为工程目录中的可复用 Skill，而不只是零散提示词。他让 Fable 5 分析 Matt Pocock 的开源 Skills 库，认为其中最值得借鉴的是 **Grilling**：通过持续、针对性的追问，在开发前澄清需求与设计盲区。\n\n## Grilling 用追问补足产品设计盲区\n\nKevin 过去做产品设计更多依赖个人深度思考，但这仍可能遗漏关键问题。Grilling 的价值，是让 AI 扮演质询者，对方案进行系统“拷问”，暴露隐含假设和模糊需求。\n\n回复者补充，Grilling 并非简单地“让 AI 多提问”，而是 Matt Pocock 开发理念的工具化实现：需要区分低保真度问题与高保真度问题，并由使用者主动掌控讨论进程，否则容易陷入无效追问。\n\n## Skill 的核心是封装方法论，而非堆提示词\n\n讨论认为，软件开发正在进入“Skill 时代”：开发者把成熟的分析、设计和编码方法封装成可复用流程，再按自身需求改造。除 Matt Pocock Skills 外，回复中还推荐了 Superpowers、oh-my-openagent 等项目，以及逆向整理出的 Claude Design System Prompt。\n\n这些项目的价值不只在提示词本身，而在其背后的工作方法。Kevin 也指出，不同 Skill 面向人群不同：他分享的方案更适合工程师，而 Superpowers 相对更适合非技术用户。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728648765,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:89b912fbcd334ebfbfb132b7b827e7c394d6ca2fa3958a7ee30421c4e6c7d3b6",
+  "refs": {
+    "sessionId": "1783332970891_svac7bdp"
+  },
+  "revisionId": "sha256:c03ee2fa95557f465c1c27201bfd4949b7c8f05d630f597c12fb4445db877f57",
+  "schemaVersion": 1,
+  "updatedAt": 1789728648765
+}

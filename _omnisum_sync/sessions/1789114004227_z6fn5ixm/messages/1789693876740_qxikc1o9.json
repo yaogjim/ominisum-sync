@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693876741,
+  "entityType": "message",
+  "id": "1789693876740_qxikc1o9",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nzg 是一款开源、本地优先的检索工具：在保留 ripgrep（rg）精确搜索的基础上，加入语义、BM25 和混合检索，帮助人和 AI Agent 从代码及文档中找到“意思相关但用词不同”的内容。\n\n## 关键内容\n\n- **解决关键词搜不到的问题**：当提问是“恢复主题偏好”，代码却写成 `hydratePreferences` 时，zg 可先按语义发现线索，再用 rg 精确验证，并对结果排序、提供来源位置。\n- **开箱与覆盖范围较广**：支持 macOS、Linux、Windows，可通过 CLI 或 MCP 接入 Codex、Claude Code、Cursor 等；目前能索引多种代码、Markdown、JSON、YAML 等文本内容，并支持增量更新。\n- **默认数据不出设备**：内容提取、Embedding、索引和搜索均可在本地完成；远程模型只有显式授权后才会传输文本。\n- **官方评测称可降低成本**：在两项代码与研究问答测试中，工具调用、输入 Token 和耗时明显下降，任务质量持平或略升。但这是团队自测，且未计入首次建索引成本。\n\n## 通俗解读\n\nzg 不是要替代 rg，而是补上“我知道想找什么，却不知道原文怎么写”的环节。它目前更适合经常让 Agent 阅读大型代码库或本地知识库的人。**值得目标用户细读并实测**；若只做明确关键词搜索，rg 通常已足够。PDF、Office、多模态和图检索仍属于后续规划。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693876741,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a6521d4f1704a1bfb420df434dec9233c7ad135dda943084efd2799e3f304523",
+  "refs": {
+    "sessionId": "1789114004227_z6fn5ixm"
+  },
+  "revisionId": "sha256:0c9d00a7f9368fca907050c29430804908192b9690de2b756ffe5813583e1363",
+  "schemaVersion": 1,
+  "updatedAt": 1789693876741
+}

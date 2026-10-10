@@ -1,0 +1,23 @@
+{
+  "createdAt": 1782989553614,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1782989553614",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Dagu：面向小团队的轻量级工作流引擎\n\n## 一句话总结\n\nDagu 是一个本地优先、单文件部署、无需数据库的工作流编排工具，可理解为**轻量版 Airflow + 可视化 Cron + AI Agent 工作流管理能力**，适合小团队、内部自动化、边缘计算和轻量数据任务。\n\n---\n\n## 核心定位\n\nDagu 主要解决的是：  \n**把零散脚本、定时任务、数据处理、运维命令、AI Agent 调用等，统一编排成可观测、可重试、可审批的 DAG 工作流。**\n\n它强调：\n\n- 单二进制文件安装\n- YAML 声明式定义工作流\n- 自带 Web UI\n- 不依赖 PostgreSQL、Redis、RabbitMQ 等外部组件\n- 支持本地、分布式 worker、托管服务等多种部署方式\n\n---\n\n## 与 Airflow / Cron 的区别\n\n### 相比 Airflow\n\nAirflow 通常需要 Web Server、Scheduler、Worker、PostgreSQL、Redis/RabbitMQ、Python Runtime 等多个组件，部署和维护成本较高。\n\nDagu 则更轻：\n\n- 一个`dagu start-all`即可启动\n- 状态、日志、队列都基于本地文件\n- 更适合小团队和内部自动化场景\n- 不要求写 Python DAG 代码\n\n### 相比 Cron\n\nCron 适合简单定时任务，但缺少依赖编排、日志、重试、审批、可视化和权限控制。\n\nDagu 可以把复杂 Cron 脚本升级为：\n\n- 有依赖关系的 DAG\n- 有运行状态和日志\n- 支持失败重试\n- 支持通知和人工审批\n- 可通过 Web UI 管理\n\n---\n\n## 主要能力\n\n### 1. 声明式工作流\n\n使用 YAML 定义 DAG，例如：\n\n```yaml\nsteps:\n  - id: hello\n    run: echo \"hello from Dagu\"\n```\n\n支持步骤依赖、并行执行、参数输入、失败重试、超时、定时调度、补偿处理等能力。\n\n---\n\n### 2. Web UI 可视化管理\n\nDagu 提供可视化界面，用于：\n\n- 查看 DAG 结构\n- 查看运行状态\n- 查看步骤日志\n- 重试失败任务\n- 浏览运行产物 artifacts\n- 管理队列、远程节点、审计日志等\n\n这让非工程团队也能更安全地运行内部自动化任务。\n\n---\n\n### 3. 多类型任务执行\n\nDagu 不绑定某种语言或框架，支持多种执行方式：\n\n- Shell / PowerShell 脚本\n- Docker 容器\n- Kubernetes Job\n- SSH 远程命令\n- HTTP 请求\n- SQL 查询\n- Redis 操作\n- Python 脚本\n- LLM Chat Completion\n- 外部 AI 编码 Agent CLI\n\n---\n\n### 4. AI Agent 集成\n\nDagu 内置 MCP Server，可让 Claude Code、Codex、Gemini CLI 等 AI Agent：\n\n- 读取工作流状态\n- 修改或预览 DAG 配置\n- 启动、排队、重试、停止任务\n\n同时支持通过`harness.run`调用外部 AI 编码工具，把 AI 审查、生成、修复等动作纳入自动化流程。\n\n---\n\n### 5. 本地优先与无数据库架构\n\nDagu 将状态、日志、队列存储在本地文件中，不强依赖外部 DBMS。\n\n优势是：\n\n- 部署简单\n- 运维成本低\n- 适合边缘设备、私有环境、小团队\n- 更容易自托管\n\n但性能上也取决于机器配置、磁盘、并发设置和工作流复杂度。\n\n---\n\n## 典型使用场景\n\n### 数据与 ETL\n\n把数据抽取脚本、SQL 查询、dbt 命令、数据处理任务编排成可观测流水线。\n\n### Cron 替代\n\n将复杂的定时脚本升级为可维护、可重试、可监控的工作流。\n\n### 运维自动化\n\n通过 SSH 在远程服务器执行部署、诊断、重启、备份等任务。\n\n### 容器与 Kubernetes 任务\n\n直接在工作流中运行 Docker 容器或 Kubernetes Job。\n\n### 客服和内部工具\n\n让非工程团队通过受控 Web UI 执行诊断、查询、修复等标准化操作。\n\n### IoT 与边缘计算\n\n在靠近数据源的位置执行传感器采集、本地推理、预处理、健康检查等任务。\n\n---\n\n## 部署模式\n\n### 单机模式\n\n一个进程同时运行 Web UI、调度器和执行器。  \n适合开发、小规模任务、边缘节点。\n\n### 分布式 Worker 模式\n\n调度器负责排队，多个 Worker 通过 gRPC 拉取任务并执行。  \n适合更高并发或需要任务路由的团队。\n\n### Headless 模式\n\n不启动 Web UI，仅通过 CLI 或 API 使用。  \n适合 CI/CD 或自动化集成环境。\n\n### 托管与混合模式\n\nDagu 也提供托管服务，支持私有 Worker 通过 mTLS 接入企业内部基础设施。\n\n---\n\n## 商业与权限能力\n\n社区自托管版本不需要 license。  \n商业能力包括：\n\n- SSO\n- RBAC\n- 审计日志\n- 事件集成\n- 托管实例\n- 混合部署支持\n\n这说明 Dagu 的商业化路径主要面向有权限、安全、审计和托管需求的团队。\n\n---\n\n## 产品价值判断\n\nDagu 的核心价值不是取代大型数据平台，而是填补**Cron 太弱、Airflow 太重**之间的空白。\n\n它适合：\n\n- 小团队\n- 内部平台\n- 私有化部署\n- 运维和数据自动化\n- AI Agent 工作流落地\n- 边缘和本地优先场景\n\n如果团队已有大量脚本、定时任务和人工 runbook，Dagu 可以用较低成本把它们产品化、可视化和可治理化。\n\n---\n\n## 关键信息总结\n\n- **定位**：轻量级 Airflow / Cron 替代品\n- **配置方式**：YAML 声明式 DAG\n- **部署方式**：单二进制、Docker、Helm、托管服务\n- **存储方式**：本地文件，无需数据库\n- **核心能力**：调度、依赖、重试、日志、审批、权限、AI Agent 集成\n- **适合人群**：小团队、平台工程、数据工程、运维团队、AI 自动化团队\n- **最大亮点**：简单、自包含、AI 原生、适合内部自动化场景",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1782989553614,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:02619a4c1bfb953174ab284c01c4b2c810e093ec8e9180819993dcfda9a94bb9",
+  "refs": {
+    "sessionId": "1782989553771_q0bv382c"
+  },
+  "revisionId": "sha256:9965c7a63ff97d483148fc6388c94591f4fb6789855357cd8f532eff5b414c83",
+  "schemaVersion": 1,
+  "updatedAt": 1782989553614
+}

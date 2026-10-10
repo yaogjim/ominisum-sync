@@ -1,0 +1,65 @@
+{
+  "createdAt": 1783075948012,
+  "entityType": "session",
+  "id": "1783075948012_5iao395i",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 LangChain，可直接去官方仓库或博客查找 OpenWiki 和 DeepAgents 详情",
+      "若无近期相关项目需求，可跳过并删除该条内容"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783076163647,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 3,
+      "relevance": 6,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "LangChain一周发布汇总",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "低信息密度、低证据质量、缺乏可操作细节，且主要是短期产品动态，不具备长期留存价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "OpenWiki 可用于自动生成 GitHub 仓库 Wiki",
+      "LangChain 近期发布了语音代理、Harbor 集成和 DeepAgents 子代理相关教程"
+    ],
+    "oneHighValuePoint": "LangChain 正在围绕自动文档生成、语音代理、有状态评估和子代理能力进行集中更新。",
+    "oneLineReview": "适合快速知道 LangChain 有新动态，但不值得保存。",
+    "primaryCategory": "AI工具动态",
+    "rating": "D",
+    "rejectReason": "内容只是简短发布列表，缺少链接细节、实现说明、案例和方法论；热门回复与主题高度不相关，信息噪声较大。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "LangChain",
+      "智能体开发"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章为 Harrison Chase 关于 LangChain 近期多个发布的简短推文，提到 OpenWiki、语音代理教程、Harbor 集成和 DeepAgents 子代理等内容，但没有展开说明或提供可复用方法。",
+    "tags": [
+      "LangChain",
+      "OpenWiki",
+      "语音代理",
+      "DeepAgents",
+      "产品发布"
+    ],
+    "title": "Harrison Chase: big week at langchain, with a lot of launches: 1/ OpenWiki - auto generate a wik…",
+    "totalScore": 27.5,
+    "url": "https://x.com/hwchase17/status/2072694781285986625"
+  },
+  "payloadHash": "sha256:3e9600131b5efb4db25320f124bca2171a59cc8df4661087d6f438c886549896",
+  "refs": {},
+  "revisionId": "sha256:0d2670eb4bda86f34934bdde8820f2882aca54755ae1823fcf00b19f12a8dc1c",
+  "schemaVersion": 1,
+  "updatedAt": 1783076163779
+}

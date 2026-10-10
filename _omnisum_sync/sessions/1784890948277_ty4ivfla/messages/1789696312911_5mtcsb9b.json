@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696312911,
+  "entityType": "message",
+  "id": "1789696312911_5mtcsb9b",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章展示了一套“用 3D 先导演、再让 AI 精修”的视频流程，核心是用明确的镜头、动作和素材约束替代反复抽卡式生成。\n\n## 关键内容\n\n- **先统一设计**：人工确定角色、环境和火车的视觉规范，并制作多角度参考图，避免 AI 在不同镜头或角度中随意改变细节。\n- **再用 3D 编排动作**：在 Maya 等软件中用简模预演，提前锁定摄像机运动、人物表演、火车时机及空间关系，让视频模型逐帧跟随。\n- **最后进行“神经渲染”**：把 3D 动态参考、角色与火车参考图、环境图和风格提示一起输入 Seedance 2.0，由模型合成为最终画面。\n- 作者据此主张：AI 越强，越需要可控的制作流程；人的角色不是碰运气写提示词，而是像导演一样逐阶段决策。\n\n## 通俗解读\n\n这里的“神经渲染”不是让 AI 凭一句话从零拍片，而像先用简陋模型把戏排好，再让 AI 完成角色外观、材质和风格。这样能提高可控性，但仍是作者展示的单个案例，原文没有提供成功率、成本或对照测试。**适合想了解可控 AI 视频工作流的人细读；若想判断工具实际效率，信息还不够。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696312911,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b5155a805fa13013ea0bcc6ad88039c4675fd64e655773c1abc904b14d571500",
+  "refs": {
+    "sessionId": "1784890948277_ty4ivfla"
+  },
+  "revisionId": "sha256:81c9ff0a4a091b5f6366341d00e38803009cb7f6881a1964514aec21f0a83a61",
+  "schemaVersion": 1,
+  "updatedAt": 1789696312911
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784801355146,
+  "entityType": "message",
+  "id": "1784801355149_m2py3ff9",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 《Howaboua：Pi 的人们》精炼总结\n\n作者发布并更新了一组 **Pi 扩展工具**：利用 Pi 子代理进行独立代码审查，并强化多语言项目中的代理操作安全。核心改进是让“审查 → 修复 → 再审查”的循环更加高效，不必每次重新回顾整个会话。\n\n## 1. Pi 子代理审查工具\n\n作者推出了 `pi-subagent-review`，让 Pi 子代理独立审核当前工作的代码与变更。\n\n```bash\npi install npm:@howaboua/pi-subagent-review\n```\n\n- 仓库：[pi-subagent-review](https://github.com/IgorWarzocha/howaboua-pi-stuff/tree/main/packages/pi-subagent-review)\n- 作者笑称这是在构建一个“扩展宇宙”，并从自己的项目中借鉴代码。\n\n## 2. 新增增量审查机制\n\n新命令 `/review loop` 会在会话树中设置一个“评审标记”。此后执行普通的 `/review` 时，会自动：\n\n1. 总结自上次评审标记以来完成的工作；\n2. 将评审标记移动到最新位置；\n3. 发起下一轮独立审查。\n\n这尤其适合反复进行：\n\n> **Review（审查）→ Fix（修复）→ Review（再审查）**\n\n例如，修复上一轮指出的问题后，下一次审查只需检查新增改动，无须重新梳理整个会话。\n\n## 3. 代理安全加固工具\n\n作者还发布了 `pi-skill-agent-native-hardening`，主要更新包括：\n\n- 更准确地检测仓库是否处于干净状态；\n- 扩展代理安全加固指南；\n- 覆盖 **JavaScript/TypeScript、Python、Rust 和 Go** 四类语言生态。\n\n```bash\npi install npm:@howaboua/pi-skill-agent-native-hardening\n```\n\n- 仓库：[pi-skill-agent-native-hardening](https://github.com/IgorWarzocha/howaboua-pi-stuff/tree/main/packages/pi-skill-agent-native-hardening)\n\n## 4. 一键安装完整工具包\n\n如果需要一次性获取上述相关工具，可以安装整合包：\n\n```bash\npi install npm:@howaboua/pi-stuff\n```\n\n- 完整仓库：[howaboua-pi-stuff](https://github.com/IgorWarzocha/howaboua-pi-stuff)\n- 问题与建议反馈：[GitHub Issues](https://github.com/IgorWarzocha/howaboua-pi-stuff/issues)\n\n作者欢迎社区补充功能、提出修正或提交问题。\n\n## 5. 社区反馈\n\n该帖共有 **4 条热门回复**，整体反应积极：\n\n- 有用户表示会把增量审查机制加入自己的工作流；\n- 有人调侃“从自己的项目里偷代码”很真实；\n- 也有用户表示此前没想到这种做法，准备实际尝试；\n- 作者用“**克隆 → 分叉**”幽默回应了代码复用的说法。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784801355146,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f3472eb5466b03b3321a988eefa9b7dc2f9b93a952b9d267220226e79d098fda",
+  "refs": {
+    "sessionId": "1783079053747_ss3x0hbw"
+  },
+  "revisionId": "sha256:b2d264dbcb57008ea43fb98408e11a43da54bb18a3a1240f5d07de8bbbbe6760",
+  "schemaVersion": 1,
+  "updatedAt": 1784801355146
+}

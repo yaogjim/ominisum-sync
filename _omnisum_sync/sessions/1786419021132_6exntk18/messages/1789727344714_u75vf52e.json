@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727344715,
+  "entityType": "message",
+  "id": "1789727344714_u75vf52e",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# OpenWork：把 AI 技能与服务变成可跨工具复用的开放能力层\n\nOpenWork 是一款免费、开源的 AI 工作流平台，定位为 Claude Cowork 和 Codex 的替代方案。其核心并非绑定某个 AI 客户端，而是让用户创建一次技能和连接配置，即可在不同工具、团队与设备间复用。\n\n## 一个 MCP 接入多种 AI 工具\n\nOpenWork 支持 macOS、Windows 和 Linux，桌面应用提供独立工作空间，但并非必需。用户可通过 MCP（模型上下文协议）将其接入 Codex、Claude Code、Cursor、OpenCode 等兼容智能体。\n\n接入后，OpenWork MCP 只暴露两个统一工具：\n\n- `search_capabilities`：查找可用能力；\n- `execute_capability`：执行所选能力。\n\n这些能力包括技能、插件、其他 MCP 服务，以及 Google Workspace、Microsoft 365 等连接。用户登录并选择所属组织后，便能在原有 AI 工具中调用，无需重复配置。\n\n## 面向组织的能力分发与治理\n\nOpenWork Den 是团队控制平面，管理员可以集中：\n\n- 管理成员、团队和模型供应商权限；\n- 发布技能与插件，并按组织、团队或个人分配；\n- 配置共享或个人服务连接；\n- 限制本地模型、桌面策略及可用应用版本；\n- 导入兼容 Anthropic 的插件和远程 MCP。\n\n其价值在于把分散在不同 AI 客户端中的工具配置，抽象为可共享、可授权、可治理的组织资产。不过，文章主要是项目说明，尚未提供实际采用规模、性能或企业落地效果数据。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727344715,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c7c1f5f9dc0f24e9e8c470b6f2b8e06312ab4a2c35f73972040ed7730930c596",
+  "refs": {
+    "sessionId": "1786419021132_6exntk18"
+  },
+  "revisionId": "sha256:0909d643f6eab722b575ea0b2be5a846dceadf5235622855721dbedcc6ad8457",
+  "schemaVersion": 1,
+  "updatedAt": 1789727344715
+}

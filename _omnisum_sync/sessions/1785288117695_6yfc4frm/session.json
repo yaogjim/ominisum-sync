@@ -1,0 +1,66 @@
+{
+  "createdAt": 1785288117695,
+  "entityType": "session",
+  "id": "1785288117695_6yfc4frm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "访问官方GitLab核对完整设计文件、最新物料清单和组装视频。",
+      "制作前确认指定电子墨水屏、ESP32开发板及结构件的兼容性与供货情况。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1785403092112,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "Valve开源主机墨水屏方案",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.gamingonlinux.com",
+    "favicon": "https://www.gamingonlinux.com//templates/default/images/favicons/favicon.ico",
+    "knowledgePoints": [
+      "Inkterface方案使用带2MB PSRAM的Adafruit ESP32 Feather驱动5.83英寸单色电子墨水屏。",
+      "Valve以MIT许可证开放该项目，允许个人和厂商复用、修改及开发衍生产品。",
+      "原型除电子元件外还需要指定规格的螺丝和阶梯磁铁进行结构安装。"
+    ],
+    "oneHighValuePoint": "官方仓库以MIT许可证提供设计资料、物料需求和组装视频，降低了自行制作Steam主机墨水屏配件的门槛。",
+    "oneLineReview": "这是一则包含明确项目入口和基础物料清单的硬件资讯，但技术深度与长期参考价值有限。",
+    "primaryCategory": "开源硬件",
+    "rating": "C",
+    "rejectReason": "文章仅简要转述开源消息和物料清单，缺少制作过程、测试结果及深入技术分析",
+    "retentionDecision": "作为开源硬件动态速览，需要制作相关设备时再查阅官方仓库",
+    "secondaryCategories": [
+      "游戏硬件",
+      "产品开发"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "Valve以MIT许可证开放名为Inkterface的Steam主机电子墨水屏方案，文章列出ESP32开发板、墨水屏及磁铁等主要物料，并指向官方GitLab组装视频，同时提及第三方厂商可能推出成品配件。",
+    "tags": [
+      "Steam Machine",
+      "电子墨水屏",
+      "ESP32",
+      "MIT许可证",
+      "硬件原型"
+    ],
+    "title": "Valve open source the Steam Machine e-ink screen so you can make your own",
+    "totalScore": 50,
+    "url": "https://www.gamingonlinux.com/2026/07/valve-open-source-the-steam-machine-e-ink-screen-so-you-can-make-your-own/"
+  },
+  "payloadHash": "sha256:da3964bbfdd5d9d47189707aa2dc98d4a6857696d6096a5b9bdae87dd26d6fff",
+  "refs": {},
+  "revisionId": "sha256:835b165220da1a3627dc72a60c8429b0ab18b6c3af83eff1141fb300035024f9",
+  "schemaVersion": 1,
+  "updatedAt": 1785403092160
+}

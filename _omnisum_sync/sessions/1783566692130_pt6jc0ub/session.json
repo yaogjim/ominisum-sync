@@ -1,0 +1,539 @@
+{
+  "createdAt": 1783566692130,
+  "entityType": "session",
+  "id": "1783566692130_pt6jc0ub",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "使用免费版选择一个高频重复流程，验证其能否从观察中形成可用自动化。",
+      "测试后台执行时是否确实不抢占光标、窗口焦点及应用状态。",
+      "在接入敏感工作流前，核查隐私保护说明、数据外发条件和第三方模型调用范围。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1789725291428,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Yansu主动式桌面AI代理",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "yansu.app",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1783566718668,
+        "imageId": "img-1",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# Yansu 深度总结与解读\n\n## 一句话总结\n\n**Yansu 想做的不是 “等你提问的 AI 助手”，而是一个会观察你工作、沉淀流程知识，并自动替你执行杂事的 “主动型 AI 同事”。**\n\n---\n\n## 1. 深度总结\n\n### 核心定位\n\nYansu 主打**Proactive AI**：  \n它通过观察用户真实工作方式，自动形成知识、交接任务和自动化流程。\n\n它的逻辑是：\n\n> **观察你怎么做 → 总结成可复用知识 → 自动替你做**\n\n---\n\n### 主要能力\n\n| 模块 | 含义 |\n|---|---|\n| **Listen** | 通过桌面截图、消息应用等观察你的工作习惯 |\n| **Crystallize** | 把重复模式整理成结构化知识和流程 |\n| **Solve** | 主动代办任务、生成交接、运行自动化 |\n\n---\n\n### 关键卖点\n\n- **无需提示词**：不强调 “你问我答”，而是主动发现任务。\n- **后台操作电脑**：使用虚拟光标，不抢你的鼠标、键盘和窗口焦点。\n- **本地优先**：数据、记忆、知识和自动化尽量存储在本机。\n- **隐私防护**：敏感信息本地遮蔽，未经允许不上传。\n- **多模型调度**：自动调用 Claude、GPT、Gemini 等不同模型完成不同任务。\n- **跨平台**：支持 macOS、Windows、Linux。\n- **协作场景**：企业版支持团队知识库、共享自动化和权限管理。\n\n---\n\n### 典型用途\n\n- 整理 Jira / Notion / Sheets 更新，生成日报。\n- 从会议中提取行动项并草拟工单。\n- 监控 AI 服务花费。\n- 学习团队重复流程，形成交接文档。\n- 自动处理表单、工单、消息、系统更新等琐事。\n\n---\n\n## 2. 深入浅出解读\n\n传统 AI 像一个**聪明客服**：\n\n> 你问，它答。  \n> 你不问，它不动。\n\nYansu 想变成一个**观察型助理**：\n\n> 你平时怎么干活，它先看懂；  \n> 哪些事情重复、麻烦、可交接，它帮你记住；  \n> 下次遇到类似任务，它自己去做。\n\n可以把它理解成：\n\n> **“会偷师的自动化工具 + 会总结的知识库 + 会执行的 AI 助手”**\n\n它和普通自动化工具也不同：\n\n- 传统自动化：你先设计流程。\n- Yansu：它先观察流程，再尝试自动化。\n\n这也是它最有吸引力的地方：  \n**降低自动化门槛，让不会写代码的人也能把日常工作自动化。**\n\n---\n\n## 3. 辩证思考\n\n### 价值\n\nYansu 抓住了 AI 办公的一个关键趋势：\n\n> AI 不应只是聊天框，而应进入真实工作流。\n\n如果它能真正稳定运行，会带来三类价值：\n\n1. **减少重复劳动**\n2. **沉淀隐性经验**\n3. **降低交接成本**\n\n尤其适合运营、客服、项目管理、销售支持、研发协作等大量流程性岗位。\n\n---\n\n### 隐忧\n\n但它的挑战也很明显：\n\n| 问题 | 风险 |\n|---|---|\n| 观察屏幕 | 隐私和信任门槛极高 |\n| 自动操作电脑 | 一旦误操作，后果可能严重 |\n| 主动执行 | 用户可能失去过程控制感 |\n| 学习工作模式 | 需要长期观察，冷启动成本高 |\n| 企业落地 | 权限、合规、审计要求复杂 |\n\n---\n\n### 关键判断\n\nYansu 的成败不只取决于 “AI 有多聪明”，更取决于：\n\n- 是否足够安全；\n- 是否足够可控；\n- 是否足够透明；\n- 是否真的能稳定完成任务；\n- 是否能让用户放心把工作交出去。\n\n---\n\n## 结论\n\nYansu 的方向很前沿：  \n**从 “人指挥 AI” 走向 “AI 理解工作并主动执行”。**\n\n但越主动，越需要边界。  \n它真正要解决的不是 “能不能做”，而是：\n\n> **用户敢不敢让它做。**",
+        "url": "https://yansu.app/assets/og-image.png",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://yansu.app/assets/og-image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://yansu.app/assets/og-image.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "Yansu将工作流程划分为观察、知识结晶和主动执行三个阶段。",
+      "其后台计算机操作采用独立虚拟光标，目标是避免抢占用户光标、窗口焦点和键盘输入。",
+      "产品主张本地保存活动记录、记忆和自动化，同时按任务在Claude、GPT、Gemini等模型之间选择。"
+    ],
+    "oneHighValuePoint": "将主动代理概括为“观察工作—沉淀结构化知识—自动执行任务”的闭环，可作为工作流代理产品的基础设计框架。",
+    "oneLineReview": "主动式桌面代理的定位和隐私卖点较清楚，但缺少实测、技术细节与可核验的效果证据。",
+    "primaryCategory": "AI代理与工作流自动化",
+    "published": "2024-01-01",
+    "rating": "C",
+    "rejectReason": "内容以产品营销和功能声明为主，缺少技术架构、实际案例、效果数据及限制说明。",
+    "retentionDecision": "速览产品定位与功能边界，无明确评测需求时不必保留",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@id": "https://yansu.app/#organization",
+            "@type": "Organization",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer service",
+              "email": "bo@isoform.ai"
+            },
+            "description": "Isoform builds Yansu, a proactive AI that observes how you work, learns your patterns, and turns how you work into knowledge, handoffs, and automations before you ask.",
+            "logo": {
+              "@type": "ImageObject",
+              "height": 200,
+              "url": "https://yansu.app/assets/logo.png",
+              "width": 200
+            },
+            "name": "Isoform Inc.",
+            "sameAs": [
+              "https://discord.gg/6XaU6hGKda",
+              "https://x.com/isoformai",
+              "https://github.com/Isoform",
+              "https://www.linkedin.com/company/isoform-ai"
+            ],
+            "url": "https://isoform.ai"
+          },
+          {
+            "@id": "https://yansu.app/#website",
+            "@type": "WebSite",
+            "description": "Yansu observes how you work, learns your patterns, and turns how you work into knowledge, handoffs, and automations before you ask. Proactive AI by Isoform.",
+            "inLanguage": "en",
+            "name": "Yansu",
+            "publisher": {
+              "@id": "https://yansu.app/#organization"
+            },
+            "url": "https://yansu.app/"
+          },
+          {
+            "@id": "https://yansu.app/#webpage",
+            "@type": "WebPage",
+            "about": {
+              "@id": "https://yansu.app/#software"
+            },
+            "dateModified": "2026-06-08",
+            "datePublished": "2024-01-01",
+            "description": "Yansu observes how you work, learns your patterns, and turns how you work into knowledge, handoffs, and automations before you ask.",
+            "inLanguage": "en",
+            "isPartOf": {
+              "@id": "https://yansu.app/#website"
+            },
+            "name": "Yansu — The proactive AI that turns how you work into knowledge, handoffs, and automations",
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://yansu.app/assets/og-image.png"
+            },
+            "publisher": {
+              "@id": "https://yansu.app/#organization"
+            },
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": [
+                "#faq",
+                "#hero-welcome"
+              ]
+            },
+            "url": "https://yansu.app/"
+          },
+          {
+            "@id": "https://yansu.app/#software",
+            "@type": "SoftwareApplication",
+            "applicationCategory": "BusinessApplication",
+            "datePublished": "2024-01-01",
+            "description": "Proactive AI that observes how you work, learns your patterns, and turns how you work into knowledge, handoffs, and automations before you ask.",
+            "downloadUrl": "https://release.yansu.app/latest/Yansu-darwin-arm64.dmg",
+            "featureList": "Proactive knowledge and memory, Task handoffs, Background automations, Persistent memory across sessions, Activity observation and learning, Slack and Teams integrations, Voice input",
+            "name": "Yansu",
+            "offers": [
+              {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "description": "Free tier with about 2 handoffs, 2 automations, and 2 memories or knowledge items per month.",
+                "name": "Free",
+                "price": "0",
+                "priceCurrency": "USD",
+                "url": "https://yansu.app/#pricing"
+              },
+              {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "description": "About 5 handoffs, 5 automations, and 50 memories or knowledge items per month.",
+                "name": "Pro",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "billingDuration": "P1M",
+                  "price": "20.00",
+                  "priceCurrency": "USD",
+                  "unitText": "MONTH"
+                },
+                "url": "https://buy.stripe.com/eVqbITcB888P6dt47h6EU00"
+              },
+              {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "description": "Recommended tier with about 25 handoffs, 25 automations, and 250 memories or knowledge items per month.",
+                "name": "Studio",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "billingDuration": "P1M",
+                  "price": "100.00",
+                  "priceCurrency": "USD",
+                  "unitText": "MONTH"
+                },
+                "url": "https://yansu.app/#download"
+              },
+              {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "description": "Highest usage tier with about 50 handoffs, 50 automations, and 500 memories or knowledge items per month.",
+                "name": "Max",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "billingDuration": "P1M",
+                  "price": "200.00",
+                  "priceCurrency": "USD",
+                  "unitText": "MONTH"
+                },
+                "url": "https://buy.stripe.com/00wfZ99oWfBhcBR47h6EU01"
+              },
+              {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "description": "Custom pricing for teams with shared memory, knowledge management, unlimited members, SSO, SAML, SOC 2 Type II and ISO 27001 compliance, and dedicated account manager.",
+                "name": "Enterprise",
+                "url": "mailto:bo@isoform.ai"
+              }
+            ],
+            "operatingSystem": "macOS 13+, Windows 10+, Ubuntu 20.04+",
+            "publisher": {
+              "@id": "https://yansu.app/#organization"
+            },
+            "screenshot": {
+              "@type": "ImageObject",
+              "caption": "Yansu proactive AI desktop application",
+              "height": 630,
+              "url": "https://yansu.app/assets/og-image.png",
+              "width": 1200
+            }
+          },
+          {
+            "@id": "https://yansu.app/#faq",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yansu is a proactive AI by Isoform that observes how you work, learns your patterns, and acts before you ask — building a memory of how you work, handing off the tasks you'd rather skip, and running automations in the background. Unlike traditional no-code tools or AI assistants that require prompting, Yansu acts autonomously. Learn more about Isoform."
+                },
+                "name": "What is Yansu?"
+              },
+              {
+                "@type": "Question",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yansu automatically selects the best model for each task — including Claude by Anthropic, GPT by OpenAI, Gemini by Google, and more. The multi-model approach means each step of its analysis and execution uses whichever model performs best for that specific operation."
+                },
+                "name": "Which AI models does Yansu use?"
+              },
+              {
+                "@type": "Question",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yansu is available for macOS (Apple Silicon & Intel), Windows 10+, and Linux (Ubuntu 20.04+). It integrates with Slack, Microsoft Teams, Feishu, Discord, Telegram, WhatsApp, and WeChat."
+                },
+                "name": "What platforms does Yansu support?"
+              },
+              {
+                "@type": "Question",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. The Enterprise plan includes team knowledge and memory management, shared knowledge and automation libraries, and admin controls. Yansu can observe team-wide patterns and act in ways that benefit everyone."
+                },
+                "name": "Can I use Yansu with my team?"
+              },
+              {
+                "@type": "Question",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Unlike ChatGPT or Copilot, Yansu is proactive -- it observes your work patterns and acts on them without being prompted, handing off tasks and running automations. It does not require you to describe what you need; it figures that out by watching how you work."
+                },
+                "name": "How is Yansu different from ChatGPT or Copilot?"
+              },
+              {
+                "@type": "Question",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yansu builds a living memory of how you work, hands off tasks you'd rather not do, and runs automations tailored to your patterns. Examples: consolidating Jira/Notion/Sheets updates into a daily digest, monitoring AI spend across providers, and extracting meeting action items into drafted tickets."
+                },
+                "name": "What can Yansu do for you?"
+              },
+              {
+                "@type": "Question",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Your data stays on your device and is never used for AI model training. Yansu is local-first -- nothing leaves your machine without your explicit permission. Isoform is SOC 2 Type II and ISO 27001 certified."
+                },
+                "name": "Is my data used to train AI models?"
+              },
+              {
+                "@type": "Question",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. Yansu is a no-code platform that requires no programming or technical knowledge. It observes your existing workflows and acts automatically -- handling everything from observation to execution. You just keep working as usual."
+                },
+                "name": "Do I need to be a developer to use Yansu?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@id": "https://yansu.app/#organization",
+        "@type": "Organization",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "bo@isoform.ai"
+        },
+        "description": "Isoform builds Yansu, a proactive AI that observes how you work, learns your patterns, and turns how you work into knowledge, handoffs, and automations before you ask.",
+        "logo": {
+          "@type": "ImageObject",
+          "height": 200,
+          "url": "https://yansu.app/assets/logo.png",
+          "width": 200
+        },
+        "name": "Isoform Inc.",
+        "sameAs": [
+          "https://discord.gg/6XaU6hGKda",
+          "https://x.com/isoformai",
+          "https://github.com/Isoform",
+          "https://www.linkedin.com/company/isoform-ai"
+        ],
+        "url": "https://isoform.ai"
+      },
+      {
+        "@id": "https://yansu.app/#website",
+        "@type": "WebSite",
+        "description": "Yansu observes how you work, learns your patterns, and turns how you work into knowledge, handoffs, and automations before you ask. Proactive AI by Isoform.",
+        "inLanguage": "en",
+        "name": "Yansu",
+        "publisher": {
+          "@id": "https://yansu.app/#organization"
+        },
+        "url": "https://yansu.app/"
+      },
+      {
+        "@id": "https://yansu.app/#webpage",
+        "@type": "WebPage",
+        "about": {
+          "@id": "https://yansu.app/#software"
+        },
+        "dateModified": "2026-06-08",
+        "datePublished": "2024-01-01",
+        "description": "Yansu observes how you work, learns your patterns, and turns how you work into knowledge, handoffs, and automations before you ask.",
+        "inLanguage": "en",
+        "isPartOf": {
+          "@id": "https://yansu.app/#website"
+        },
+        "name": "Yansu — The proactive AI that turns how you work into knowledge, handoffs, and automations",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://yansu.app/assets/og-image.png"
+        },
+        "publisher": {
+          "@id": "https://yansu.app/#organization"
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [
+            "#faq",
+            "#hero-welcome"
+          ]
+        },
+        "url": "https://yansu.app/"
+      },
+      {
+        "@id": "https://yansu.app/#software",
+        "@type": "SoftwareApplication",
+        "applicationCategory": "BusinessApplication",
+        "datePublished": "2024-01-01",
+        "description": "Proactive AI that observes how you work, learns your patterns, and turns how you work into knowledge, handoffs, and automations before you ask.",
+        "downloadUrl": "https://release.yansu.app/latest/Yansu-darwin-arm64.dmg",
+        "featureList": "Proactive knowledge and memory, Task handoffs, Background automations, Persistent memory across sessions, Activity observation and learning, Slack and Teams integrations, Voice input",
+        "name": "Yansu",
+        "offers": [
+          {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "description": "Free tier with about 2 handoffs, 2 automations, and 2 memories or knowledge items per month.",
+            "name": "Free",
+            "price": "0",
+            "priceCurrency": "USD",
+            "url": "https://yansu.app/#pricing"
+          },
+          {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "description": "About 5 handoffs, 5 automations, and 50 memories or knowledge items per month.",
+            "name": "Pro",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "billingDuration": "P1M",
+              "price": "20.00",
+              "priceCurrency": "USD",
+              "unitText": "MONTH"
+            },
+            "url": "https://buy.stripe.com/eVqbITcB888P6dt47h6EU00"
+          },
+          {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "description": "Recommended tier with about 25 handoffs, 25 automations, and 250 memories or knowledge items per month.",
+            "name": "Studio",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "billingDuration": "P1M",
+              "price": "100.00",
+              "priceCurrency": "USD",
+              "unitText": "MONTH"
+            },
+            "url": "https://yansu.app/#download"
+          },
+          {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "description": "Highest usage tier with about 50 handoffs, 50 automations, and 500 memories or knowledge items per month.",
+            "name": "Max",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "billingDuration": "P1M",
+              "price": "200.00",
+              "priceCurrency": "USD",
+              "unitText": "MONTH"
+            },
+            "url": "https://buy.stripe.com/00wfZ99oWfBhcBR47h6EU01"
+          },
+          {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "description": "Custom pricing for teams with shared memory, knowledge management, unlimited members, SSO, SAML, SOC 2 Type II and ISO 27001 compliance, and dedicated account manager.",
+            "name": "Enterprise",
+            "url": "mailto:bo@isoform.ai"
+          }
+        ],
+        "operatingSystem": "macOS 13+, Windows 10+, Ubuntu 20.04+",
+        "publisher": {
+          "@id": "https://yansu.app/#organization"
+        },
+        "screenshot": {
+          "@type": "ImageObject",
+          "caption": "Yansu proactive AI desktop application",
+          "height": 630,
+          "url": "https://yansu.app/assets/og-image.png",
+          "width": 1200
+        }
+      },
+      {
+        "@id": "https://yansu.app/#faq",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yansu is a proactive AI by Isoform that observes how you work, learns your patterns, and acts before you ask — building a memory of how you work, handing off the tasks you'd rather skip, and running automations in the background. Unlike traditional no-code tools or AI assistants that require prompting, Yansu acts autonomously. Learn more about Isoform."
+            },
+            "name": "What is Yansu?"
+          },
+          {
+            "@type": "Question",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yansu automatically selects the best model for each task — including Claude by Anthropic, GPT by OpenAI, Gemini by Google, and more. The multi-model approach means each step of its analysis and execution uses whichever model performs best for that specific operation."
+            },
+            "name": "Which AI models does Yansu use?"
+          },
+          {
+            "@type": "Question",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yansu is available for macOS (Apple Silicon & Intel), Windows 10+, and Linux (Ubuntu 20.04+). It integrates with Slack, Microsoft Teams, Feishu, Discord, Telegram, WhatsApp, and WeChat."
+            },
+            "name": "What platforms does Yansu support?"
+          },
+          {
+            "@type": "Question",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The Enterprise plan includes team knowledge and memory management, shared knowledge and automation libraries, and admin controls. Yansu can observe team-wide patterns and act in ways that benefit everyone."
+            },
+            "name": "Can I use Yansu with my team?"
+          },
+          {
+            "@type": "Question",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Unlike ChatGPT or Copilot, Yansu is proactive -- it observes your work patterns and acts on them without being prompted, handing off tasks and running automations. It does not require you to describe what you need; it figures that out by watching how you work."
+            },
+            "name": "How is Yansu different from ChatGPT or Copilot?"
+          },
+          {
+            "@type": "Question",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yansu builds a living memory of how you work, hands off tasks you'd rather not do, and runs automations tailored to your patterns. Examples: consolidating Jira/Notion/Sheets updates into a daily digest, monitoring AI spend across providers, and extracting meeting action items into drafted tickets."
+            },
+            "name": "What can Yansu do for you?"
+          },
+          {
+            "@type": "Question",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Your data stays on your device and is never used for AI model training. Yansu is local-first -- nothing leaves your machine without your explicit permission. Isoform is SOC 2 Type II and ISO 27001 certified."
+            },
+            "name": "Is my data used to train AI models?"
+          },
+          {
+            "@type": "Question",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Yansu is a no-code platform that requires no programming or technical knowledge. It observes your existing workflows and acts automatically -- handling everything from observation to execution. You just keep working as usual."
+            },
+            "name": "Do I need to be a developer to use Yansu?"
+          }
+        ]
+      }
+    ],
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "SoftwareApplication",
+      "FAQPage"
+    ],
+    "secondaryCategories": [
+      "AI产品设计",
+      "知识管理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章是Yansu的产品介绍页，宣称其通过桌面截图和消息应用观察工作模式，将其沉淀为本地知识、任务交接与后台自动化，并强调独立虚拟光标、本地存储、多模型选择及企业安全认证。",
+    "tags": [
+      "主动式AI",
+      "桌面自动化",
+      "本地优先",
+      "工作流观察",
+      "多模型编排"
+    ],
+    "title": "Yansu — The proactive AI that turns how you work into knowledge, handoffs, and automations",
+    "totalScore": 52,
+    "url": "https://yansu.app/"
+  },
+  "payloadHash": "sha256:8f46b368afa45ebc7bab1fb5c9fba6a1b1185e46d53a7bcc31f6049ff70f806b",
+  "refs": {},
+  "revisionId": "sha256:d127b99cf3bb70f17d7ab900a9fcd08a7136fdd1ea4c993095e929dd68e56b2a",
+  "schemaVersion": 1,
+  "updatedAt": 1789725292156
+}

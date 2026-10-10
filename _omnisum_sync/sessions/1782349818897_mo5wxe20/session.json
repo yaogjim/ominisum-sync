@@ -1,0 +1,69 @@
+{
+  "createdAt": 1782349818897,
+  "entityType": "session",
+  "id": "1782349818897_mo5wxe20",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在设计多代理 coding workflow 时，明确每个 subagent 的 role、context slice 和可用 tools。",
+      "优先尝试 partial fork 模式，避免完整继承 parent history 带来的噪声。",
+      "为 subagent 输出建立 evidence 机制，记录修改、验证结果和完成状态。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782350288609,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Subagent上下文机制解析",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "subagent 的启动可理解为一次 spawn_agent 类型的工具调用，parent 会获得 child handle。",
+      "会话是运行时容器，上下文是模型调用可见信息，subagent 是 parent session 下的新 child session。",
+      "child 可以共享 tools、skills、AGENTS.md、MCP、cwd、沙箱和权限等资源，但不共享完整 transcript。",
+      "常见 subagent 模式包括 fresh child、forked child 和 partial fork，区别在于继承多少上下文。",
+      "多代理协作会增加 runtime state，必须追踪谁在工作、知道什么、改了什么以及结果如何成为 evidence。"
+    ],
+    "oneHighValuePoint": "subagent 不是简单的小智能体，而是 parent session 下拥有独立 work context 的托管子运行时。",
+    "oneLineReview": "对 subagent 运行时和上下文关系有一定启发，但论证和实践细节不足。",
+    "primaryCategory": "AI Agent工程",
+    "rating": "B",
+    "rejectReason": "内容偏概念性，缺少完整案例、实现细节和证据支撑，不适合作为长期核心资料。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Coding Agent",
+      "上下文管理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章解释了 subagent 在 coding agent harness 中本质上是一次工具调用，并会打开新的子运行时与工作上下文。重点区分会话、上下文和子代理，并提出 fresh child、forked child、partial fork 三种上下文投射模式。",
+    "tags": [
+      "subagent",
+      "Harness",
+      "上下文工程",
+      "多代理协作",
+      "运行时"
+    ],
+    "title": "一个子代理打开一个新的上下文",
+    "totalScore": 55.5,
+    "url": "https://x.com/dongxi_nlp/status/2068922428516892998"
+  },
+  "payloadHash": "sha256:b89eb0c0ebe4f6710aafa080020995636db611a18dacce6c647fe3233a1b4efe",
+  "refs": {},
+  "revisionId": "sha256:589382d8f222cb24e35842dc3072144a837ae8df8f481173608530f357cd296a",
+  "schemaVersion": 1,
+  "updatedAt": 1782352390791
+}

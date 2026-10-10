@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789705259586,
+  "entityType": "session",
+  "id": "1789705259586_824fjht1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "固定四个相关仓库的版本，先完成CPU测试、64环境5轮训练冒烟测试和ONNX CPU复演。",
+      "先以限流电源、单舵机和IMU台架验证供电范围、1 Mbps半双工总线、设备ID及50 Hz连续通信。",
+      "严格按照单舵机、一条腿、完整总线、IMU、home pose、离地策略、扶持站立和短距离行走的顺序推进真机测试。"
+    ],
+    "archiveReason": "包含完整的软硬件架构、部署契约、仿真训练流程、校准方法、分级调试步骤及验收清单，具备较强复用价值。",
+    "classifiedAt": 1789705293164,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "Microduck全栈复刻与调试指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Microduck 以50 Hz闭环读取舵机与IMU状态，ONNX策略接收61维观测并输出14维动作，嘴部舵机不参与步态策略。",
+      "MJCF不仅包含外形网格，还保存装配层级、关节轴线、限位、质量和惯量；从STL恢复制造模型时必须同步重建这些工程基准。",
+      "仿真到现实迁移依赖质量、质心、执行器、电压、摩擦、延迟、IMU坐标和控制频率的一致性，硬件显著变化后应更新模型并重新训练。"
+    ],
+    "oneHighValuePoint": "将训练端与真机端之间的关节顺序、61维观测、14维动作、单位、零位、缩放和归一化明确为不可破坏的部署契约。",
+    "oneLineReview": "这是一份工程细节丰富、风险边界清晰的复刻指南，但关键电源与IMU方案尚未完成端到端实物验证。",
+    "primaryCategory": "机器人与具身智能开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议长期存档，作为双足机器人复刻、策略部署和分级调试的工程参考",
+    "secondaryCategories": [
+      "强化学习与仿真迁移",
+      "硬件系统工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章系统拆解 Microduck 的机械、电源、总线、IMU、强化学习训练和 ONNX 部署流程，并给出从仿真、CAD 重建到分级真机调试的操作步骤、风险说明与验收标准。",
+    "tags": [
+      "Microduck",
+      "双足机器人",
+      "强化学习控制",
+      "仿真到现实",
+      "ONNX部署"
+    ],
+    "title": "如何从零 DIY 复刻一只可爱的 Microduck",
+    "totalScore": 83,
+    "url": "https://x.com/tspy/status/2094963381220622638"
+  },
+  "payloadHash": "sha256:0db7ee85faaf9f6477da21384b309c64ce940403ce5f6aeeab3cdf942804cd99",
+  "refs": {},
+  "revisionId": "sha256:85169f8dc5c92eed60662a35325e9a096faac4606e38be4822be88a1b1e079a3",
+  "schemaVersion": 1,
+  "updatedAt": 1790769771826
+}

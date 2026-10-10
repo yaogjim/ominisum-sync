@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789699805449,
+  "entityType": "message",
+  "id": "1789699867168_8b5fbtqk",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nMatt Pocock 认为，AI 已能承担大量“战术性编码”，但要产出可靠软件，人仍需负责需求取舍、系统设计和质量控制，而经典软件工程原则反而更重要。\n\n## 关键内容\n\n- **先对齐，再让 AI 动手**：他的“Grill Me”技能会像资深工程师一样连续追问范围、认证、限流等问题，迫使使用者明确关键决策，避免 AI 自行脑补。\n- **拆分上下文与任务**：上下文越长，模型越容易出错。应把大型工作整理成规格，再拆成可由单次会话完成的任务；更复杂的规划可用“Wayfinder”记录已定事项、待决问题和推进路径。\n- **经典原则仍有效**：诸如“示踪弹”（先打通一条端到端路径）、垂直切片、领域语言和快速反馈，都能用简短“引导词”唤起模型已有知识，改善其行为。\n- **AI 也会加速技术债**：代理能快速生成代码，但不擅长长期战略判断。测试、独立代码审查和持续改善代码库仍不可少；TDD 的主要价值是给代理反馈与可验证证据，而非机械遵守流程。\n\n## 通俗解读\n\nAI 更像执行力很强、但每次上班都会“失忆”的工程师：任务边界、术语和验收标准越清楚，结果越可靠。本文适合正在使用编码代理、想建立稳定工作流的人细读；若只关心人物经历，可跳过前半段。**所给 transcript 在“技术教育如何变化”处中断，后续内容并不完整。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789699805449,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1c5b9cbcedfecb064c2f54ae7104bd4bb8edbd43e2e94960094e842c2a570f64",
+  "refs": {
+    "sessionId": "1789697267838_jikbc4ce"
+  },
+  "revisionId": "sha256:d33c352b11f35dcb6cc49d73966f487b7609061ebce867cccef26b9bdda8ca19",
+  "schemaVersion": 1,
+  "updatedAt": 1789699805449
+}

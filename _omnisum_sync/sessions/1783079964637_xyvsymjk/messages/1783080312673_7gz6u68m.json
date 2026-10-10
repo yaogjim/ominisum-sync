@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783080312674,
+  "entityType": "message",
+  "id": "1783080312673_7gz6u68m",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Pi与Craft Agent体验建议\n\n**评级**: C (47.5分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI开发工具\n**次类别**: Agent开发, 独立开发\n**标签**: #Pi Agent #Craft Agent #Coding Agent #开源Agent #AI编程\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 4 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 3 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 有一定工具发现价值，但更像社交媒体上的方向性推荐，证据和方法细节不足。\n**核心高价值点**: 如果要研究 code agent 或类 Codex Desktop 产品，可优先从 Pi Agent 和 Craft Agent 这类开源基座入手，而不是从零构建。\n\n### 摘要\n作者建议体验 Pi 与 Craft Agent，认为未来程序员更多是在构建和定制 agent，并推荐以 Pi/Craft 作为 code agent 或桌面 agent 产品的起点，同时提到自己基于其二开了 Echo。\n\n### 知识要点\n- Pi Agent 被作者定位为适合二次开发的开源 coding agent 基座。\n- Craft Agent 基于 Pi Agent 和 Claude Agent，适合参考类桌面 agent 产品的设计。\n- 普通企业可以基于开源 agent 结合自身业务搭建定制化 agent，而不必直接竞争通用 agent 层。\n\n### 行动项\n- 快速体验 Pi Agent，评估其可扩展性和与现有业务集成的成本。\n- 浏览 Craft Agent 的功能结构，判断是否适合作为桌面 agent 或内部工具的参考基座。\n- 记录可裁剪模块，如 Claude Agent SDK、messaging-gateway，并识别核心能力边界。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是个人体验和工具推荐，缺少具体实现细节、对比分析和充分案例支撑，方法论价值有限。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1783080312674,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:692f7e1c63b6d7cc137724a73d966f2dacb853bc5b054ab64be4502c0cb2bb23",
+  "refs": {
+    "sessionId": "1783079964637_xyvsymjk"
+  },
+  "revisionId": "sha256:25c4c162061a61f36bc76a1861182f5f70592f819629c01b41f8e1db939bfc26",
+  "schemaVersion": 1,
+  "updatedAt": 1783080312674
+}

@@ -1,0 +1,64 @@
+{
+  "createdAt": 1790233636754,
+  "entityType": "session",
+  "id": "1790233636754_b8y7575t",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "核查正在使用的B2B产品是否对代理API单独收费或计划弃用接口。",
+      "针对受影响的产品，比较继续使用与迁出数据的成本。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1790233661823,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "B2B软件代理访问涨价的风险",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "评估SaaS代理访问定价时，应同时考虑API收入与客户使用量、粘性的潜在变化。",
+      "接口加价或弃用可能促使客户评估数据迁移，但实际影响取决于迁移成本和替代方案。"
+    ],
+    "oneHighValuePoint": "代理访问收费不仅影响短期收入，也可能改变客户将数据和自动化流程留在平台上的意愿。",
+    "oneLineReview": "提出了值得关注的代理定价风险，但尚未证明其会形成所谓的“死亡螺旋”。",
+    "primaryCategory": "商业系统与SaaS定价",
+    "rating": "B",
+    "rejectReason": "主要依据作者的使用经历，缺少涨价幅度、迁移成本及客户行为数据。",
+    "retentionDecision": "浏览即可；观点值得留意，但证据不足，暂不存档",
+    "secondaryCategories": [
+      "AI Agent开发",
+      "产品策略"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者称，多款传统B2B软件开始对代理访问API加价或弃用相关接口。他担心用户会因此迁出数据、减少代理对原平台的使用，最终削弱供应商的使用量、客户粘性和竞争壁垒。这一后果目前仍是推测。",
+    "tags": [
+      "代理访问定价",
+      "SaaS API",
+      "数据迁移",
+      "客户留存"
+    ],
+    "title": "Jason ✨👾SaaStr.Ai✨ Lemkin: So almost every pre-AI B2B product we use has told us they are raising prices fo…",
+    "totalScore": 56,
+    "url": "https://x.com/jasonlk/status/2102909376923046020"
+  },
+  "payloadHash": "sha256:716475718ff1bf801025737b443a2ecb30d2140a17d7447d1f0e3b1acf230420",
+  "refs": {},
+  "revisionId": "sha256:1d055d00c4dc8514ab88931db65a77ba042cdf1ad91995742c5e0e66fa42f973",
+  "schemaVersion": 1,
+  "updatedAt": 1790233857099
+}

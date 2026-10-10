@@ -1,0 +1,64 @@
+{
+  "createdAt": 1782349698558,
+  "entityType": "session",
+  "id": "1782349698558_nkqwyn43",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估是否先用预算上限或配额控制模型调用",
+      "在代理系统中测试模型切换对缓存和体验的影响"
+    ],
+    "archiveReason": "包含对模型路由、模型委员会和预算控制的实用区分，适合作为系统设计讨论的背景材料",
+    "classifiedAt": 1782350424119,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "模型路由与模型委员会的思考",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "模型路由和模型委员会是两类不同的模型使用策略",
+      "成本控制可先于复杂路由机制实施",
+      "提示缓存与模型切换频率会影响路由可行性"
+    ],
+    "oneHighValuePoint": "模型路由主要服务成本优化，而更简单的预算/配额控制可能比复杂路由更易落地。",
+    "oneLineReview": "观点清晰但偏经验判断，缺少数据验证，适合作为LLM成本与路由讨论的引子。",
+    "primaryCategory": "AI应用/LLM系统设计",
+    "rating": "C",
+    "rejectReason": "",
+    "retentionDecision": "短期归档，适合在做LLM成本策略和模型选择设计时参考",
+    "secondaryCategories": [
+      "成本控制",
+      "推理优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者区分了模型路由与模型委员会：前者偏成本控制，后者偏性能增强，并认为在很多场景下，预算上限等更简单的调节手段可能比复杂路由更现实。",
+    "tags": [
+      "模型路由",
+      "模型委员会",
+      "成本管理"
+    ],
+    "title": "Harrison Chase: have been thinking a bunch about model routing and related things current though…",
+    "totalScore": 47.5,
+    "url": "https://x.com/hwchase17/status/2069148652459761912"
+  },
+  "payloadHash": "sha256:2f8b5b2749fcf9a88ea1270e2c44dda6f5216569d87e3e5d90fa462898b692ee",
+  "refs": {},
+  "revisionId": "sha256:9e6fa7d05f1dc49bb11a664edcc2a0160870b53c3d16c8ddeecbfbaa78f7beb0",
+  "schemaVersion": 1,
+  "updatedAt": 1782350425095
+}

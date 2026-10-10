@@ -1,0 +1,65 @@
+{
+  "createdAt": 1782900928489,
+  "entityType": "session",
+  "id": "1782900928489_e7aeadkg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需稳定使用AI工具，优先选择官方支持地区和合规订阅方式。",
+      "不要基于未经验证的社交媒体信息采取高风险账号规避操作。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783039942082,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 3,
+      "novelty": 3,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude订阅风控规避建议",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息密度低、证据不足、热门回复大量无关噪音，并且核心建议偏向规避服务条款和风控机制，保留价值有限。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "平台账号风控可能基于时区、IP、付款地区等多因素交叉验证用户身份一致性。",
+      "社交媒体爆料类内容需要谨慎看待，尤其是缺少官方说明、代码证据或可复现实验时。"
+    ],
+    "oneHighValuePoint": "账号风控可能会综合系统时区、付款方式地区和IP区域等多维用户指纹进行判断。",
+    "oneLineReview": "一条关于Claude订阅风控规避的碎片化推文，实用性有限且合规风险较高。",
+    "primaryCategory": "AI工具使用",
+    "rating": "D",
+    "rejectReason": "内容主要是社交媒体碎片信息，缺乏完整背景、证据链和可验证案例，且涉及规避平台风控与订阅限制，长期参考价值较低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "账号风控",
+      "社交媒体信息"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章称Claude Code可能通过时区、付款地区、IP区域等用户指纹识别异常订阅，并提到通过欧洲物理机器或保持指纹一致来降低封号风险，但缺乏系统论证和可靠证据。",
+    "tags": [
+      "Claude",
+      "Claude Code",
+      "订阅",
+      "风控",
+      "用户指纹"
+    ],
+    "title": "WquGuru: 不得不说Claude这次想出来的算法太损了，几乎不会误杀，而且是精准的超大规模打击",
+    "totalScore": 31.5,
+    "url": "https://x.com/wquguru/status/2071993500003143835"
+  },
+  "payloadHash": "sha256:3acc2fe0f8b39766d3f8aa1d616d0b6910bd280ecdb6b38aaf0962227b282e3b",
+  "refs": {},
+  "revisionId": "sha256:2f12ecaf893e2488e04d795689c0cbc2ce5d0bd20f389dee600984e81bc31d8c",
+  "schemaVersion": 1,
+  "updatedAt": 1783039942496
+}

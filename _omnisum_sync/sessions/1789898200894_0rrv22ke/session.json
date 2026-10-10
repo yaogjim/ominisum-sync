@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789898200894,
+  "entityType": "session",
+  "id": "1789898200894_0rrv22ke",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选取一个Agent路由或策略判断任务，将输出改写为扁平枚举与布尔Schema，并加入“无匹配”候选项。",
+      "基于业务规则制作最小事实变化的对比样本对，执行证据移除、规则一致性和标签翻转检查。",
+      "在自有人工标注数据上同时测试准确率、概率校准和延迟，再决定是否使用概率阈值进入生产流程。"
+    ],
+    "archiveReason": "提供了可运行代码、数据整理流程、训练配方、评估结果与适用边界，对Agent路由、策略判断和本地分类系统具有直接复用价值。",
+    "classifiedAt": 1789949702977,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 8,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Nimble本地类型化决策模型",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "可将扁平枚举或布尔Schema中的每个候选答案映射为单token代码，直接读取Logits并经Softmax生成类型化结果，避免解析生成式JSON。",
+      "对比式数据整理应构造最小事实差异的样本对，并通过逐句移除证据检查答案泄漏，再由代码根据已验证事实生成标签。",
+      "训练集与评估集应按来源家族整体划分，避免高度相似的对比样本跨集合泄漏；概率阈值还必须在业务自有数据上校准验证。"
+    ],
+    "oneHighValuePoint": "对比式数据整理通过仅改变一个会翻转标签的焦点事实，并执行证据移除与规则一致性检查，使模型学习真正影响决策的证据而非表面线索。",
+    "oneLineReview": "这是一个实现与方法均较完整的类型化决策模型项目，但其性能证据主要来自范围较窄的合成留出集。",
+    "primaryCategory": "AI模型开发",
+    "rating": "S",
+    "rejectReason": "",
+    "retentionDecision": "精读并长期保留，适合作为结构化决策模型、数据整理和评估流程的实现参考",
+    "secondaryCategories": [
+      "训练数据构建",
+      "模型评估"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "介绍Nimble本地类型化决策模型：通过候选答案单token的Logits输出枚举或布尔结果及概率，并公开对比式数据整理、LoRA训练、本地部署和评估流程，同时明确文本、模式及泛化限制。",
+    "tags": [
+      "类型化决策",
+      "对比式数据整理",
+      "候选Logits",
+      "本地推理",
+      "LoRA微调"
+    ],
+    "title": "bespokelabsai/nimble: Local typed decisions, contrastive data curation, and model evaluation.",
+    "totalScore": 86,
+    "url": "https://github.com/bespokelabsai/nimble"
+  },
+  "payloadHash": "sha256:471926090832f4c123f238c40491662bfa38152fbad0467382fb70b3ae6790b2",
+  "refs": {},
+  "revisionId": "sha256:778e0eaa49ede685ff4df790d2cb58408406cbf15cc2848978c3f52031cd7b6d",
+  "schemaVersion": 1,
+  "updatedAt": 1789949862054
+}

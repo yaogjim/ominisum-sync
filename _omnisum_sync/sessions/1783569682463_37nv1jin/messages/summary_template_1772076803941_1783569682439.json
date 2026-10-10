@@ -1,0 +1,23 @@
+{
+  "createdAt": 1783569682439,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1783569682439",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "Craft Agents 0.3.1 是一个开源、跨平台的桌面 AI Agent 应用，核心目标是把 GitHub、Linear、日历、Slack、文档、本地文件等工具连接到同一个对话里，减少来回切换和复制上下文。它强调 “可控的自动化”：既能让 AI 执行任务，也能通过权限模式、计划阶段和本地加密存储来降低风险。\n\n## 1. 产品背景与定位\n\n- Craft Agents 由 Craft 团队内部开发，最初用于提升公司内部工作流，开发周期约**1.5 个月**。\n- 后来团队认为体验不错，因此将其**开源**，方便更多人使用和二次开发。\n- 支持多平台：\n  - macOS Apple Silicon\n  - macOS Intel\n  - Windows\n  - Linux\n- 相关地址：\n  - 下载：`https://agents.craft.do`\n  - 源码：`https://github.com/lukilabs/craft-agents-oss`\n- 项目采用开源方式发布，文中提到为**Apache 2.0**，用户可以查看代码、修改或构建自己的版本。\n\n## 2. 连接 AI 提供商\n\n- 首次使用时，需要选择 AI 连接方式。\n- 官方推荐使用**Claude Pro / Claude Max**订阅，以获得较好体验。\n- 也支持多种第三方或自定义方式：\n  - Anthropic API Key\n  - OpenRouter\n  - Vercel AI Gateway\n  - Ollama\n  - 自定义第三方提供商\n- 示例中，作者使用 Claude 订阅，通过浏览器完成认证，再把授权码粘贴回应用即可开始聊天。\n- 底层使用了**Claude Agent SDK**，体验类似 Claude Code。\n\n## 3. 界面结构与工作区\n\n- 应用左侧栏提供常用组织功能：\n  - 所有聊天\n  - Flag 标记\n  - Status 状态\n  - Label 标签\n  - Sources 数据源\n  - Skills 技能\n- 设置里可以自定义：\n  - 主题样式\n  - 发送消息方式，例如 Enter 或 Command + Enter\n  - 模型选择\n  - 权限模式\n- Craft Agents 鼓励用户按**Workspace 工作区**管理任务：\n  - 不同工作区可以配置不同模型\n  - 可以设置不同权限策略\n  - 适合把个人任务、代码任务、项目管理任务分开管理\n\n## 4. 权限模式、Explore Mode 与计划阶段\n\n这一部分是视频重点：Craft Agents 不会默认让 AI 直接操作你的电脑，而是通过权限模式逐步放权。\n\n### Explore Mode：只读探索模式\n\n- 在 Explore Mode 下，AI 可以查看信息，但不能真正执行修改命令。\n- 示例：作者让 AI 整理 Downloads 文件夹，并找出可以删除的文件。\n- AI 扫描后发现：\n  - 有一批高优先级可删除文件\n  - 预计可释放**23GB**空间\n  - 一些安装包可以删除\n  - 一些敏感文件应保留\n- 当作者要求 AI 删除文件时，命令被阻止，因为当前仍处于只读探索模式。\n\n### Planning：执行前先出计划\n\n- 当 AI 无法直接操作时，它会先生成计划。\n- 用户可以查看计划，再决定是否批准。\n- 有两个接受方式：\n  - **Accept**：接受计划并继续保留当前上下文\n  - **Accept and Compact**：接受计划，同时压缩上下文，把前面的讨论总结后继续执行\n- 接受后，应用会切换到执行模式，AI 才能真正删除、移动、创建文件。\n\n### Ask-to-edit：每步都要确认\n\n- 如果用户不完全信任 AI，可以使用 Ask-to-edit 模式。\n- AI 每次执行命令前都会弹出确认，例如：\n  - 创建文件夹\n  - 移动文件\n  - 删除文件\n- 用户可以选择：\n  - Allow：允许这一次\n  - Always allow：以后类似操作都允许\n  - Deny：拒绝\n- 如果确认次数太多，用户也可以切换到 Execute 模式，让 AI 自动执行。\n\n## 5. Sources：连接外部工具和本地资源\n\n- Craft Agents 的核心功能之一是**Sources 数据源连接**。\n- Sources 可以是：\n  - API\n  - MCP Server\n  - 本地文件夹\n- 用户不需要理解 API 或 MCP 的技术细节，可以直接用自然语言告诉 Agent：\n  - “连接 Linear”\n  - “连接 GitHub API”\n  - “添加某个本地文件夹”\n- 应用会自动查文档、生成配置，并引导用户完成授权。\n\n## 6. 连接 Linear：MCP 示例\n\n视频中用 Linear 展示了如何通过 MCP 连接项目管理工具。\n\n- 用户在 Sources 里输入：`connect to linear`\n- AI 会：\n  - 查找 Craft Agents 的文档\n  - 搜索 Linear 官方 MCP Server 的连接方式\n  - 询问用户使用目的、团队、项目范围等\n- 示例中，作者选择给 Linear **full access**。\n- AI 自动完成配置：\n  - 修改`config.json`\n  - 添加**18 行配置**\n  - 生成约**100 行使用指南**\n  - 生成 Linear MCP 的自定义权限配置\n- 应用提供清晰的变更视图：\n  - 显示新增多少行\n  - 删除多少行\n  - 修改了哪些内容\n- 配置完成后，通过浏览器 OAuth 登录 Linear。\n- 连接成功后，可以直接问：\n  - 当前有哪些进行中的 ticket？\n  - 某个项目有哪些 issue？\n- 用户还能展开查看 AI 调用 Linear 工具时发送了什么请求，方便审计。\n\n## 7. 连接 GitHub：API 示例\n\n另一个示例是连接 GitHub API。\n\n- 用户输入：`connect to GitHub API`\n- 作者希望 AI 能：\n  - 列出 GitHub issues\n  - 检查 Pull Requests\n  - 帮助整理相关任务\n- 连接时可以选择不同模型，例如：\n  - Sonnet 4.5\n  - Opus\n- 也可以设置**max thinking**，用于控制推理强度和 token 使用。\n- 因为当时处于 Explore Mode，AI 没有直接写入配置，而是先给出计划：\n  - 创建 source 文件夹\n  - 创建配置文件\n  - 生成使用指南\n  - 设置权限\n  - 运行测试\n  - 请求用户提供 access token\n- 用户确认计划后，再提供 GitHub API Key，继续完成连接。\n\n## 8. 新版本 0.3.1 的重点功能\n\nCraft Agents 0.3.1 增加了几个实用功能：\n\n### Session Search\n\n- 支持用**Cmd + F**搜索整个历史会话。\n- 可以快速找到过去讨论过的任务、配置、错误或决策。\n\n### Mini Agents\n\n- 提供轻量级内联 Agent。\n- 适合快速做配置调整，不必开启完整复杂流程。\n\n### 更好的 Mermaid 图表\n\n- Mermaid 图表可以原生渲染。\n- 支持更好的缩放和拖动画布体验。\n- 相关项目：`https://github.com/lukilabs/beautiful-mermaid`\n\n## 9. 组织、技能与多源工作流\n\n- 应用支持通过 Status、Label、Flag 等方式管理不同会话和任务。\n- Skills 功能用于封装可复用能力，用户可以查看文档学习如何创建。\n- 视频后半部分还展示了多源工作流：\n  - 在一个对话里同时使用 GitHub、Linear、本地文件等来源\n  - AI 可以跨工具理解上下文并执行任务\n- 这也是 Craft Agents 的主要价值：把分散在不同工具里的信息整合进同一个 Agent 工作流。\n\n## 10. 总结\n\n- Craft Agents 适合经常在 GitHub、文档、项目管理工具、本地文件之间切换的人。\n- 它的优势不是单纯聊天，而是让 AI 能 “连接工具、理解上下文、按权限执行任务”。\n- 关键亮点包括：\n  - 跨平台桌面应用\n  - 开源\n  - 支持 API、MCP、本地文件夹\n  - 本地存储与加密凭据\n  - 权限分级：只读、确认后执行、全自动\n  - 支持会话搜索、Mini Agents、Mermaid 图表等新功能。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1783569682439,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:daca71e072d0f31af72862719a5526581252e67b014587156e8e1139a9084ae8",
+  "refs": {
+    "sessionId": "1783569682463_37nv1jin"
+  },
+  "revisionId": "sha256:b14ff204cb28419520de0e6c6714b9a0e7cf51ea3e2b75d1f42248a566c99fa8",
+  "schemaVersion": 1,
+  "updatedAt": 1783569682439
+}

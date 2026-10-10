@@ -1,0 +1,63 @@
+{
+  "createdAt": 1783556297121,
+  "entityType": "session",
+  "id": "1783556297121_vnqj0y59",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 shadcn/ui，可关注后续 Base UI 迁移影响",
+      "无需归档，若需要只记录该技术趋势即可"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783556327520,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 1,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Shadcn转向Base UI",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "仅包含一条组件库默认选择变化的简短消息，长期参考价值有限，不值得单独保留。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "shadcn/ui 最初基于 Radix UI 构建",
+      "Base UI 正在获得更多前端生态项目采用"
+    ],
+    "oneHighValuePoint": "shadcn/ui 已开始将 Base UI 作为默认底层组件库，可能影响后续前端组件选型。",
+    "oneLineReview": "适合快速扫一眼了解前端组件库趋势，但不具备独立收藏价值。",
+    "primaryCategory": "前端开发",
+    "rating": "D",
+    "rejectReason": "内容只是社交媒体动态摘录，信息量很低，缺乏技术细节、迁移建议和论证支撑。",
+    "retentionDecision": "短期了解动态后可删除",
+    "secondaryCategories": [
+      "UI组件库",
+      "技术动态"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "内容主要是 X 上关于 shadcn/ui 将 Base UI 设为默认底层组件库的动态转述，并提到 TanStarter 也选择 Base UI，缺乏展开分析。",
+    "tags": [
+      "shadcn/ui",
+      "Base UI",
+      "Radix UI"
+    ],
+    "title": "Indie Fox (@indie_maker_fox) / X",
+    "totalScore": 30,
+    "url": "https://x.com/indie_maker_fox"
+  },
+  "payloadHash": "sha256:2e7134f86959287c2a0789def1e442eaf96cfe1ed28e3787aded9dadf611ed13",
+  "refs": {},
+  "revisionId": "sha256:8b47af79dfefc15224e9477ec1ff4647a15669c991903d1bf7561e1f83f026f9",
+  "schemaVersion": 1,
+  "updatedAt": 1783556327563
+}

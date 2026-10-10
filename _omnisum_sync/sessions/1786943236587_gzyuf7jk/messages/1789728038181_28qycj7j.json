@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728038181,
+  "entityType": "message",
+  "id": "1789728038181_28qycj7j",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 把 RSS 变成电子墨水“报纸”，减少手机阅读\n\n作者喜欢通过个人博客获取软件工程资讯，但长期用手机阅读容易眼疲劳。于是，他将 RSS 未读文章自动制作成 EPUB，导入小型电子墨水阅读器，打造了一份便携、无干扰的个人报纸。\n\n## 小众硬件与开源固件降低了使用门槛\n\n作者选择了 4.3 英寸的 Xteink X4：无触摸屏、无背光，也没有预装书店，看似功能落后，却适合专注阅读。社区为它开发了开源固件 Crosspoint，安装仅需几次点击，并可直接读取无 DRM 的电子书。Crosspoint 也支持其他基于 ESP32-C3 的设备。\n\n## 自动化流程把 RSS 转成 EPUB\n\n作者使用 Feedbin 的 API 获取全部未读文章，将其标记为已读，再生成 EPUB 并传入 X4。同时过滤不适合电子墨水阅读的来源，例如 YouTube 订阅、依赖大量 JavaScript 的博客，以及只提供链接的 Newsletter。\n\n他将工具命名为 **feedpaper**，代码已在 GitHub 开源，并可通过 Homebrew 在 macOS 上安装；其他系统暂未正式支持。\n\n## 意义在于重新设计内容消费方式\n\n这不是复杂的技术创新，而是一次针对个人需求的轻量组合：RSS 负责聚合，API 与 AI 辅助开发完成内容处理，EPUB 和电子墨水设备提供低干扰阅读体验。它说明，小众硬件、开放固件与简单自动化可以共同构成高度个性化的内容产品，让用户摆脱手机这一默认入口。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728038181,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b503719f8d99c7b110ccc107066be43f79ce25c58651c78f001319056bd35ff7",
+  "refs": {
+    "sessionId": "1786943236587_gzyuf7jk"
+  },
+  "revisionId": "sha256:a1b14b76e8126a0d60ab3dd3eca3d98cd784280e7bbfcd9f484d05e8352c1cbb",
+  "schemaVersion": 1,
+  "updatedAt": 1789728038181
+}

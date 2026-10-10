@@ -1,0 +1,24 @@
+{
+  "createdAt": 1785288025552,
+  "entityType": "message",
+  "id": "1785288189754_ly0evkgq",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Free Ink：构建开放式电子书阅读器生态\n\n## 一句话总结\n\nFree Ink 是一个开源电子书阅读器项目，覆盖**阅读软件、固件 SDK、硬件设计**的完整技术栈。用户和开发者可以自由使用、修改、维修和扩展，而不被 DRM、订阅或封闭生态限制。\n\n## 1. 软件：CrossPoint Reader\n\nCrossPoint Reader 是面向低成本墨水屏设备的开源阅读固件，核心能力包括：\n\n- 支持 EPUB 2、EPUB 3 及嵌入式 CSS\n- 自定义字体、字号、行距、页边距、对齐方式和连字符\n- 通过 Wi-Fi 上传电子书，也支持 Calibre 传书\n- 支持 KOReader 同步阅读进度\n- 可对任意段落添加书签，并记录页码和阅读进度\n- 支持“Focus Reading”，通过加粗单词前部帮助用户集中注意力\n- 支持暖光、冷光、触控、OTA 更新和多语言界面\n- 支持从 SD 卡读取字体和存储完整书库\n\n## 2. SDK：FreeInk One\n\nFreeInk One 是与具体硬件解耦的电子纸固件 SDK。\n\n它将显示控制器、刷新波形、GPIO、触控、前光、音频等硬件差异封装起来，使同一套固件能够运行在多种设备上。新增硬件时，通常只需增加设备配置和驱动，而不必重写整套系统。\n\n### 主要特点\n\n- 统一的显示、电池、输入和 SD 卡 API\n- 按设备能力组合构建固件，避免功能冗余\n- 支持多种 ESP32、电子纸控制器和触控芯片\n- 内置 TLS 1.3 网络能力，可支持 KOReader 同步等服务\n- 已适配 Xteink、M5Stack、LilyGo、Sticky、Murphy 等多款设备\n\n## 3. 硬件：de-link 开放主板\n\nde-link 是 Free Ink 的开放硬件核心，一块可以自行组装和维修的 ESP32-S3 电子纸主板。\n\n### 主要配置\n\n- ESP32-S3 双核处理器，支持 Wi-Fi 和蓝牙\n- 16 MB Flash，可选 PSRAM\n- 兼容多种 GoodDisplay 电子纸面板\n- 支持 microSD，适合离线存储整套书库\n- USB-C 充电\n- 支持 LiPo 电池，并具备过充、过放保护\n- 可选暖光/冷光前光\n- 提供 GPIO 扩展接口\n- 使用可手工焊接的元件和公开 BOM\n- 预计自制成本约为 60 美元\n\n## 4. 核心理念：从软件到硬件全部开放\n\nFree Ink 希望打造一个不依赖单一厂商的阅读器基础设施：\n\n- **开放格式**：书籍以普通文件形式存储，用户拥有文件控制权\n- **开放代码**：软件、固件和硬件设计均公开，并采用宽松许可证\n- **可维修**：支持手工焊接、公开元件清单和可更换电池\n- **无订阅和账号绑定**：设备和软件真正归用户所有\n- **可扩展**：开发者可以修改固件、移植新硬件或设计新外壳\n\n## 5. 项目价值\n\nFree Ink 的本质不是单独推出一款电子书阅读器，而是建立一套**可复用、可维护、可持续扩展的开放阅读器平台**。\n\n它为不同参与者提供了基础：\n\n- 用户：获得更强的控制权和可维修性\n- 开发者：可以开发阅读功能和适配新设备\n- 硬件爱好者：可以自行制作和改造阅读器\n- 厂商与社区：可以基于开放方案生产和发行设备\n\n## 6. 项目现状与参与方式\n\n项目目前已形成从阅读应用、通用固件 SDK 到开放硬件主板的完整雏形，并持续支持更多电子纸设备。\n\n社区欢迎参与：\n\n- 编写固件和驱动\n- 设计 PCB 和硬件\n- 翻译界面\n- 设计主题\n- 测试 nightly 版本\n- 适配新设备或开发定制功能\n\n**总体来看，Free Ink 试图用开源方式重构电子书阅读器生态，让电子书设备从“厂商封闭产品”变成可自由构建和持续演进的公共基础设施。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1785288025552,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:cd5645d493db8d89f73996a4376a9632ac2b0d56a973f8efa84f1439d0e4409b",
+  "refs": {
+    "sessionId": "1785288189414_p70nxi7m"
+  },
+  "revisionId": "sha256:d24b0977f2d2cd78cfbf02f889b87049d5e519ee8d61968fde3c1f57daddcfd0",
+  "schemaVersion": 1,
+  "updatedAt": 1785288025552
+}

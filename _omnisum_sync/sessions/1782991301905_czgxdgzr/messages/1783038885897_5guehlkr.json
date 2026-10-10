@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783038885898,
+  "entityType": "message",
+  "id": "1783038885897_5guehlkr",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Codex与GLM替代Claude体验\n\n**评级**: D (27.5分)  |  **深度阅读**: 否  |  **建议操作**: 删除\n\n**主类别**: AI工具使用\n**次类别**: 大模型应用, 开发工具\n**标签**: #Codex #Claude #GLM #AI设计 #工具替代\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 2 | 10% |\n| 新颖性 | 3 | 10% |\n| 相关性 | 5 | 20% |\n| 可操作性 | 3 | 15% |\n| 方法论价值 | 2 | 15% |\n| 可迁移性 | 2 | 10% |\n| 证据质量 | 1 | 10% |\n| 长期杠杆 | 2 | 10% |\n\n**一句话点评**: 这是一个有轻微信号价值的AI工具推荐帖，但缺乏论证和可复用经验。\n**核心高价值点**: 可尝试用 baoyu-design + GLM 5.2 作为 Claude Design 的低成本替代方案。\n\n### 摘要\n作者表示自己较少使用 Claude，认为 Opus 已有较多替代品；代码和文档主要使用 Codex，设计则用 baoyu-design 结合 GLM 5.2，体验约达 Claude Design 的 80%。\n\n### 知识要点\n- Codex 可用于代码和文档生成工作流\n- baoyu-design 结合 GLM 5.2 被作者认为可部分替代 Claude Design\n\n### 行动项\n- 如正在寻找 Claude Design 替代方案，可简单试用 baoyu-design + GLM 5.2\n- 若已记录相关工具名称，可删除原帖\n\n### 存档判定\n归档: 否\n不推荐: 内容只是个人工具使用感受，缺少具体对比、案例、流程和可验证证据，热门回复大多与正文无关。\n删除: 是\n留存决策: 短期参考后可删除\n删除原因: 信息碎片化，方法论和长期价值较低，保留价值主要限于记录几个工具名称。",
+    "role": "assistant",
+    "timestamp": 1783038885898,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:74d9ab0ceaccd60215caae349fab6b0fc7193ce3d7607820ef6b08ba93283ca7",
+  "refs": {
+    "sessionId": "1782991301905_czgxdgzr"
+  },
+  "revisionId": "sha256:a26f028fe3171b61b9513743fa374d1125f5a236a2b5c0b1aca6816ab92f20cd",
+  "schemaVersion": 1,
+  "updatedAt": 1783038885898
+}

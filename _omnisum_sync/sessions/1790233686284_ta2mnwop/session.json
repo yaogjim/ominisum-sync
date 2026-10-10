@@ -1,0 +1,63 @@
+{
+  "createdAt": 1790233686284,
+  "entityType": "session",
+  "id": "1790233686284_ta2mnwop",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如已使用动态血糖仪，可在相近餐食条件下比较餐后散步与不散步时的个人血糖曲线。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1790233708764,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 3,
+      "relevance": 4,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "动态血糖监测下的饮食与活动观察",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "文章记录了作者在不同饮食和餐后活动状态下观察到的血糖曲线差异。",
+      "回复中有人报告了与作者汉堡观察相反的结果，提示个体观察不宜直接推广。"
+    ],
+    "oneHighValuePoint": "餐后活动与血糖曲线的关系值得结合个人监测数据观察，但文中结论尚未得到充分验证。",
+    "oneLineReview": "有可供个人观察参考的现象，但不足以据此形成普遍的饮食判断。",
+    "primaryCategory": "健康与生活方式",
+    "rating": "D",
+    "rejectReason": "与核心关注方向关联较弱；文章未交代样本、测量条件和具体数据，汉堡相关结论也受到回复质疑。",
+    "retentionDecision": "无需专门留存；如关注个人血糖监测，可速览其中的观察",
+    "secondaryCategories": [
+      "个人健康监测",
+      "饮食与运动"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者根据一段时间的动态血糖监测，描述含糖饮料、水果和主食后的血糖变化，认为餐后散步有助于平缓部分餐食后的曲线，并提到汉堡及美国HSA报销。全文以个人观察为主，缺少可核查的数据和控制条件。",
+    "tags": [
+      "动态血糖监测",
+      "餐后血糖",
+      "饮食",
+      "餐后散步"
+    ],
+    "title": "OldPanda: 最近用了一阵子动态血糖仪，观察统计了不同状态下的血糖变化，直接上结论吧， 1",
+    "totalScore": 38,
+    "url": "https://x.com/OldPanda/status/2102809177366335843"
+  },
+  "payloadHash": "sha256:4a2e381068d0191750db4c0c59e0f06bda4873c447f7ce057a06bb7940fb1ac8",
+  "refs": {},
+  "revisionId": "sha256:3a23316ad8223026ffcf369b30d27253ffc0fa35f246da3407bb81c89febaf65",
+  "schemaVersion": 1,
+  "updatedAt": 1790233820466
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728251380,
+  "entityType": "message",
+  "id": "1789728251380_e8rtwpiz",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 用 Claude Code 串联多模型，搭建自动化 AI 视频工作室\n\n帖文声称 Netflix 以 5.87 亿美元现金收购 Ben Affleck 的 AI 初创公司，但未提供交易来源或细节；正文重点并非收购，而是作者如何用 Claude Code 从零搭建一套 AI 影视制作流水线，把视频、图像、音乐模型统一交给智能体调度。\n\n## 核心不是“接模型”，而是建立稳定的风格与制作规范\n\n系统先从成熟电影中提取“风格契约”，用视觉模型识别镜头类型、灯光、配色和颗粒感；再用参考表固定角色与场景，降低不同镜头间人物外观和空间设定漂移的问题。\n\n每个镜头都由代理按照固定模板编写提示词，依次规定人物调度、摄影机运动、灯光和音频。关键帧先由 Higgsfield 生成，再交给 Seedance 2.0 制作成独立的 3—5 秒动态镜头；每段只安排一个明确事件和一种摄影机运动，避免画面只是人物静止不动。\n\n## 多代理并行生成，剪辑也被纳入自动化\n\n多个子代理可并行执行生成任务，并根据接口速率限制自动节流，同时记录每次尝试，便于追踪和重试。后期则先生成配乐，再将与弦乐冲突的片段原声静音，最后统一进行 4K 放大。\n\n这套方案展示了 AI 视频生产的关键正在从单模型能力转向“工作流编排”：风格约束、镜头模板、一致性管理和质量评估，比简单连接多个模型更决定成片质量。不过，帖文主要是个人实践展示，其效果、成本与可复用性仍缺少系统验证。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728251380,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:dd6e7a96c57fcf353d5a8f6b65dd124a59f979a15738eb123bbb8f06e9834fa3",
+  "refs": {
+    "sessionId": "1785402512053_uq8no639"
+  },
+  "revisionId": "sha256:ea1935da4c1c09876e0c75f74ac9fec53443b4308501a781a2847f90e24c4529",
+  "schemaVersion": 1,
+  "updatedAt": 1789728251380
+}

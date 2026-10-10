@@ -1,0 +1,109 @@
+{
+  "createdAt": 1788921462250,
+  "entityType": "session",
+  "id": "1788921462250_qdk152z4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看公开构建案例与代码仓库，核对八阶段产物和门禁是否真实完整。",
+      "在独立分支中安装CLI，并用现有KiCad项目测试初始化、变更提案和检查流程。",
+      "重点验证脏Git树拒绝执行、预算约束拦截、器件数据手册依据及ERC/DRC结果。"
+    ],
+    "archiveReason": "提供了可复用的八阶段硬件设计流程，并明确了各阶段产物、检查门槛及本地运行条件。",
+    "classifiedAt": 1789643081059,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Copperhead电路板智能体工作流",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "copperhead.sh",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "A copperhead-designed board: the Open Telegraph key, with ESP32-S3, USB-C and the copper switch, rendered from its KiCad files.",
+        "caption": "Proven on real copper. Open Telegraph: pocket-size ESP32-S3 Morse key, built end to end with this workflow. Every decision, every check, every file is public. Read the build story Browse the repo",
+        "height": 615,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://copperhead.sh/_astro/pcb.CaISZw8z_2oKDw0.webp",
+        "role": "figure",
+        "score": 105,
+        "src": "https://copperhead.sh/_astro/pcb.CaISZw8z_2oKDw0.webp",
+        "width": 840
+      }
+    ],
+    "knowledgePoints": [
+      "Agent工程流程可通过“阶段产物落盘后才能继续”的规则增强可审计性和失败可定位性。",
+      "PCB设计门禁可组合规格预算、数据手册选件依据、KiCad ERC/DRC、制造文件及测试计划。",
+      "对KiCad源文件实施局部修改并保持小型可审查差异，比整体重写更适合工程协作。"
+    ],
+    "oneHighValuePoint": "把PCB开发拆成八个必须产生磁盘产物的Agent阶段，并在每次交接时设置自动门禁，失败即停止，能够降低设计文件、BOM与文档之间的漂移。",
+    "oneLineReview": "流程设计清晰且具有实践参考价值，但核心能力与降本效果主要来自产品自述，仍需通过代码和真实项目验证。",
+    "primaryCategory": "AI工程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留其分阶段产物与质量门禁设计，结合公开案例和代码进一步验证实际能力",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "applicationCategory": "DeveloperApplication",
+        "author": {
+          "@type": "Organization",
+          "name": "copperhead",
+          "sameAs": "https://chouhan.ai",
+          "url": "https://copperhead.sh"
+        },
+        "codeRepository": "https://github.com/copperheadhq/copperhead",
+        "description": "An open-source AI agent that designs, documents and validates real PCBs from a prompt.",
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "name": "copperhead",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "operatingSystem": "macOS, Linux, Windows",
+        "url": "https://copperhead.sh"
+      }
+    ],
+    "schemaAuthor": "copperhead",
+    "schemaTypes": [
+      "SoftwareApplication"
+    ],
+    "secondaryCategories": [
+      "硬件产品开发",
+      "Agent工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍开源PCB设计智能体Copperhead：它按规格、架构、选件、原理图、布局、制造输出、固件和测试计划八阶段执行，并以文件产物、Git状态及KiCad ERC/DRC作为质量门禁。",
+    "tags": [
+      "PCB设计",
+      "KiCad",
+      "AI Agent",
+      "质量门禁",
+      "工程文档同步"
+    ],
+    "title": "copperhead. Cursor for circuit boards.",
+    "totalScore": 72,
+    "url": "https://copperhead.sh/"
+  },
+  "payloadHash": "sha256:248e4e4bfb1fe564e4983f45539b83df8beba4d8f9f4c81e341f036c567a3414",
+  "refs": {},
+  "revisionId": "sha256:97e55a561f237f3631fc133d63eb8a8ee85812c519774cf95212c408086d05e8",
+  "schemaVersion": 1,
+  "updatedAt": 1790769439764
+}

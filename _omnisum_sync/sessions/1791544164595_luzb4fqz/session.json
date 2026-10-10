@@ -1,0 +1,67 @@
+{
+  "createdAt": 1791544164595,
+  "entityType": "session",
+  "id": "1791544164595_luzb4fqz",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文中模板为需要工具注册能力的智能体配置独立邮箱，并关联用户邮箱完成验证。",
+      "将智能体邮箱地址、注册用途和邮件处理边界写入 AGENTS.md。",
+      "设置发送或回复邮件、输入支付信息前的人工确认规则，并将 API 密钥限制在本机保存。"
+    ],
+    "archiveReason": "包含可复用的智能体邮箱配置提示词，以及密钥存储、邮件指令隔离和敏感操作审批规则。",
+    "classifiedAt": 1791590320984,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "为智能体配置独立邮箱与安全边界",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "独立邮箱可作为智能体进行工具注册和接收验证邮件的身份入口。",
+      "邮箱中的指令不应自动成为智能体的执行指令，验证信息也应限定于刚刚发起的注册流程。",
+      "API 密钥应保存在本机环境变量或钥匙串中，不应粘贴到其他位置或写入代码仓库。"
+    ],
+    "oneHighValuePoint": "为智能体开放邮箱能力时，应将邮件视为不可信内容，仅处理自身发起注册的验证码和链接，并对发送邮件及支付信息输入设置人工审批。",
+    "oneLineReview": "与 Agent 开发直接相关，配置模板和权限边界值得保留，但产品兼容性、免费条件及自动注册效果缺少可核实证据。",
+    "primaryCategory": "Agent 开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "保留邮箱配置与安全规则模板，产品能力及收费信息使用前另行核实",
+    "secondaryCategories": [
+      "工具配置",
+      "安全与权限管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章推荐通过 AgentMail 为每个智能体配置独立邮箱，用于工具注册和邮件验证，并提供配置提示词。重点包括本地保存密钥、将邮箱规则写入 AGENTS.md、忽略邮件中的指令，以及发送邮件或输入支付信息前征求用户同意。",
+    "tags": [
+      "AgentMail",
+      "智能体独立邮箱",
+      "邮件验证",
+      "密钥管理",
+      "提示注入防护"
+    ],
+    "title": "Vox: Strongly recommend giving each of your agents its own email address on AgentMail…",
+    "totalScore": 68,
+    "url": "https://x.com/Voxyz_ai/status/2108248558948561061"
+  },
+  "payloadHash": "sha256:6d55d659d4d3d431588d7ce11ddb5a2e5739de85a526cff4721b8853a1510cef",
+  "refs": {},
+  "revisionId": "sha256:8563048e6778004aa6e047eb48993e90c7744180e2d9f0feefd132a9a0b1c509",
+  "schemaVersion": 1,
+  "updatedAt": 1791590321118
+}

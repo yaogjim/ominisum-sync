@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694077176,
+  "entityType": "message",
+  "id": "1789694077177_6rqos7wn",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nQwen 3.8 27B 是一款能力全面、可在高配个人电脑本地运行的开放权重模型，但默认的“超高推理”会严重过度思考，拖慢速度并偏离简单需求。\n\n## 关键内容\n\n- 模型采用 Apache 2 许可，27B 参数，量化后约 17GB；支持长上下文、视觉识别、工具调用和代码生成。官方基准很亮眼，但仍待独立测试验证。\n- 默认 `xhigh` 推理档不实用：画一个骑车鹈鹕的 SVG 花了 21 分钟、消耗约 2.2 万推理 token；连“画个圆”也会自行添加动画和复杂设计。作者建议先用低推理或关闭推理。\n- 推理并非毫无价值：开启后，它能准确框选照片中的鹈鹕、一次生成可用的标注工具，并驱动编程代理读取项目、调用工具和编写脚本；关闭后，复杂任务更容易出错。\n- 最大短板是速度。作者实测约每秒 15—30 token；启用多 token 预测（MTP）后提升约 72%，但仍不及部分云端模型。\n\n## 通俗解读\n\n它像一位能力很强、但默认把小事都当大项目做的助手：复杂任务需要其认真推理，简单任务则应调低档位。**值得细读**，尤其适合关注本地模型、视觉或编程代理的人；若只想知道结论，记住“能力强、能本地跑，但默认推理过头且偏慢”即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694077176,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5620fd49d5abdbfe39a6e7af2f348d5c5cfa414d9ca1c5f75a6de219d805f52e",
+  "refs": {
+    "sessionId": "1786943502854_nkr9i95k"
+  },
+  "revisionId": "sha256:c8ae1fc568cc77b5839d8a47b928c5450c5cb4d759ea209cf2013eb317d68476",
+  "schemaVersion": 1,
+  "updatedAt": 1789694077176
+}

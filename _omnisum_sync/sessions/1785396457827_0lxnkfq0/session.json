@@ -1,0 +1,94 @@
+{
+  "createdAt": 1785396457827,
+  "entityType": "session",
+  "id": "1785396457827_0lxnkfq0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查 Agent 工具结果序列化与重放流程，确认实际内容没有被降级为纯元数据。",
+      "为重放载荷设置明确上限，并在超限时返回可识别的截断或不完整状态。",
+      "分别为检索内容、文件列表、计数和目录树补充回归测试，并运行完整测试集验证。"
+    ],
+    "archiveReason": "提出了保留工具结果语义、限制重放载荷并显式报告截断状态的可复用设计方案。",
+    "classifiedAt": 1789725196288,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "保留工具重放中的检索结果",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1785396472256,
+        "imageId": "img-1",
+        "model": "gpt-5.6-sol",
+        "ocrText": "",
+        "summary": "# PR #211：保留`grep`与`ls`的真实工具结果\n\n## 核心问题\n\n此前，成功执行的`grep`和`ls`结果在回传给模型时，会被压缩成只有路径、文件数量等元数据的摘要。模型只能知道 “工具调用成功”，却看不到具体匹配内容、文件列表或目录结构，导致后续任务难以继续。\n\n## 主要改动\n\n- **完整保留`grep`信息**：包括匹配内容、文件列表、匹配数量及截断状态。\n- **保留`ls`目录树**：不再只返回路径和文件数，而是回传实际目录结构。\n- **限制消息体积**：单次回放结果上限为**64 KiB**。\n- **明确标记不完整结果**：内容超限时，清晰提示结果已截断或不完整。\n- **补充测试覆盖**：覆盖`grep`内容、文件列表、计数及`ls`目录树等场景。\n\n## 实际价值\n\n该修复让模型在下一轮推理中能够真正使用搜索和目录查询结果，减少重复调用、上下文丢失和任务中断；同时通过 64 KiB 限制控制上下文体积，在**信息完整性与资源消耗**之间取得平衡。\n\n## 验证情况\n\n- 已通过`go test ./...`\n- 生产候选版本已在本地`18080/18090`正式运行环境完成构建与验证。",
+        "url": "https://opengraph.githubassets.com/356fc7efef710a6458676aaf660060d6ab9674f7cbca80137cccbbb46f0df368/leookun/cursor-byok/pull/211",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/356fc7efef710a6458676aaf660060d6ab9674f7cbca80137cccbbb46f0df368/leookun/cursor-byok/pull/211",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/356fc7efef710a6458676aaf660060d6ab9674f7cbca80137cccbbb46f0df368/leookun/cursor-byok/pull/211",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "grep 结果重放应保留实际匹配内容、文件列表、计数以及截断元数据。",
+      "ls 结果重放应保留原始目录树，而不是仅转换为路径和文件数量。",
+      "工具结果可通过固定载荷上限控制上下文规模，同时显式报告结果不完整或已截断。"
+    ],
+    "oneHighValuePoint": "工具调用结果重放不能只保留成功状态和统计元数据，还应保留模型继续执行任务所需的实际内容，并对超限和截断情况进行明确标记。",
+    "oneLineReview": "篇幅虽短，但准确指出工具结果过度摘要会破坏 Agent 连续推理，并给出兼顾信息保留与载荷控制的修复方案。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "浏览后存档，作为工具结果重放与上下文管理的实现参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "工具调用",
+      "软件工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该 PR 修复 grep 与 ls 成功结果在重放时仅剩元数据的问题，改为保留匹配内容、文件列表、计数、目录树及截断状态，并以 64 KiB 限制载荷，补充相关测试与本地运行验证。",
+    "tags": [
+      "工具结果重放",
+      "上下文保留",
+      "载荷限制",
+      "截断处理",
+      "回归测试"
+    ],
+    "title": "fix: preserve grep and ls tool results by lawyer112 · Pull Request #211 · leookun/cursor-byok",
+    "totalScore": 69,
+    "url": "https://github.com/leookun/cursor-byok/pull/211"
+  },
+  "payloadHash": "sha256:b0d7758a95423252449ce48b8c7992536dec129281f80dbae5747f8a2f8c6786",
+  "refs": {},
+  "revisionId": "sha256:9b936c89778fd0daa1782a7f0c7658b8fced36cdde75022c5736c9aeaffa427b",
+  "schemaVersion": 1,
+  "updatedAt": 1789727309607
+}

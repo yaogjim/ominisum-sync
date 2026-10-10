@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785207203896,
+  "entityType": "session",
+  "id": "1785207203896_p5xmx1t9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审计所有生产工作流的单次成本、异常路径和最坏情况支出，并设置调用与计费上限。",
+      "将信用单位重构为客户能够直接理解和验证的交付成果，仅在成功交付时扣费。",
+      "制定价格迁移方案，分别明确存量客户权益、新客户价格及调整后的整体盈亏影响。"
+    ],
+    "archiveReason": "包含AI产品计费失控的具体案例，并提炼出按交付结果收费、设置最坏情况限制和保护存量客户等可复用原则。",
+    "classifiedAt": 1785207535627,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI创业公司信用定价重构复盘",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "面向普通客户的计费单位应对应可理解的业务成果，而不是底层模型调用、富集步骤或尝试次数。",
+      "基于使用量的定价会把计量、成本分摊、异常防护和买家解释成本一并引入产品系统。",
+      "调整价格时，可通过保持存量客户价格、增加容量并向新客户执行新价格来降低迁移阻力。"
+    ],
+    "oneHighValuePoint": "AI使用量定价不能只设计价格表，还必须逐路径计量成本并设置最坏情况的调用与计费上限。",
+    "oneLineReview": "这是一个具体且可迁移的AI产品定价复盘，但结论主要来自单一公司经历，尚缺系统数据验证。",
+    "primaryCategory": "创业与商业系统",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议保留，作为AI产品使用量定价、成本防护与客户迁移的实践案例",
+    "secondaryCategories": [
+      "AI产品设计",
+      "定价与计费"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者复盘AI创业公司从照搬竞品信用定价，到因成本路径复杂和异常调用产生损失，再重构为按实际交付的记者联系人收费，并通过存量客户不涨价、增加容量的方式完成价格迁移。",
+    "tags": [
+      "使用量定价",
+      "信用计费",
+      "成本控制",
+      "价值计量",
+      "客户迁移"
+    ],
+    "title": "Elvis: I spent 2 weeks fixing my AI startup's pricing",
+    "totalScore": 73,
+    "url": "https://x.com/elvissun/status/2081826044907278727"
+  },
+  "payloadHash": "sha256:e548dc284e70d4ef601b7991095c4478d30075955a7f4c8b854c2ba8b70b918b",
+  "refs": {},
+  "revisionId": "sha256:9ec43ca47b4c48ff27ca3125a65c5f9c5757171031a4ac487bd77de3a65f5183",
+  "schemaVersion": 1,
+  "updatedAt": 1789694491167
+}

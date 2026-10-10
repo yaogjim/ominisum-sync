@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727974546,
+  "entityType": "message",
+  "id": "1789727974546_du2ft4tf",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# DeepSeek Harness让作者决定放弃两年自研客户端\n\n文章核心观点是：DeepSeek Harness并非简单的国产 Codex，而是一套开源的 AI 原生应用底座。它把 Agent、界面、工具调用、权限、记忆和存储等能力统一插件化，可能让团队不再重复建设通用客户端基础设施。基于这一判断，作者决定停止已有客户端开发，论证全面迁移。\n\n## Harness让模型从“会回答”变成“能干活”\n\n“Harness”原指马具，在 AI 领域指承载和驱动智能体的运行框架：通过工具调用、Agent 循环、权限与沙箱、记忆及持久化，让模型能够操作软件、访问数据并完成任务。\n\nDeepSeek Harness最受作者重视的是“一切皆插件”：不仅工具和能力可扩展，连 UI 也可插件化。预览版开源后，已有不少开发者贡献插件，但社区对其评价分化，成熟度仍待验证。\n\n## 它可能替代大量重复的应用基建\n\n作者团队的“即我”产品沉淀了笔记、聊天、录音、通话等个人数据，并自研待办提取、事件订阅、目标追踪等模块。但团队逐渐发现，官方无法穷举每个用户的需求；更合理的方式可能是开放数据与接口，让用户通过 Agent 生成自己的功能和界面。\n\n作者判断，只需在 Harness 中加入登录、数据接口和核心 UI 插件，就可能替代开发两年、拥有数百万行代码且刚完成两个月重构的客户端，并持续获得开源生态的新能力。\n\n## 软件团队的价值或将转向数据与场景\n\n同样思路也可用于行业 SaaS：平台提供数据接口和基础外壳，商户用自然语言生成页面与功能。作者因此将 Harness 类比为应用时代的“安卓底座”，认为普通团队应减少重复造轮子，把资源转向专有数据、业务流程和用户场景。不过，这目前主要是作者亲测后的判断，实际迁移成本、稳定性与商业适配仍需进一步论证。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727974546,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:064db2ef0cccf43a7ea60cd418eeebc51b4694428b1003d635fc52ee3549111d",
+  "refs": {
+    "sessionId": "1787282046413_2mq7v240"
+  },
+  "revisionId": "sha256:d8d44032e6343ff3d4e7b01de9b257954da2bed3008711e54345d0790c67f6ad",
+  "schemaVersion": 1,
+  "updatedAt": 1789727974546
+}

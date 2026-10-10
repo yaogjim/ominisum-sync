@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785288185928,
+  "entityType": "session",
+  "id": "1785288185928_t6di2081",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "打开演示并进入编辑模式，验证单文件编辑、保存和跨环境打开能力。",
+      "评估单文件架构在离线演示、客户交付或可携带原型中的适用性与限制。",
+      "检查自动更新、签名清单和原文件重写机制对安全性及浏览器兼容性的影响。"
+    ],
+    "archiveReason": "展示了将文档、运行时和编辑器封装进同一HTML文件的独特产品形态，可作为便携式工具与本地优先产品的设计参考。",
+    "classifiedAt": 1785402987165,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 6,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "单文件自包含幻灯片系统展示",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "bento.page",
+    "favicon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='28' height='28' rx='6' fill='%2316273E'/%3E%3Crect x='6' y='6' width='6' height='20' rx='2' fill='%235E7699'/%3E%3Crect x='14' y='6' width='12' height='9' rx='2' fill='%23FF9E8A'/%3E%3Crect x='14' y='17' width='12' height='9' rx='2' fill='%23F0EBE0'/%3E%3C/svg%3E",
+    "knowledgePoints": [
+      "单个HTML文件可以同时承载文档数据、展示运行时、演讲者模式和编辑界面。",
+      "通过资源内嵌与原文件重写，可构建无需安装、账户或服务器的便携式应用。",
+      "同一图表元素可在柱状图、饼图和散点图等状态间原位变形，用于连续的数据叙事。"
+    ],
+    "oneHighValuePoint": "将数据、编辑器、查看器和资源全部封装在一个可读、可保存、可独立运行的HTML文件中，体现了“文件即软件”的产品架构。",
+    "oneLineReview": "产品形态具有启发性且演示直观，但缺少实现细节、适用限制和可复现的开发方法。",
+    "primaryCategory": "产品设计与技术实现",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并保留其单文件软件设计案例",
+    "secondaryCategories": [
+      "浏览器应用",
+      "演示文稿工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以交互式幻灯片展示Bento Slides：单个HTML文件同时包含演示内容、查看器、演讲者模式和编辑器，并支持原文件保存、资源内嵌、图表变形、交互状态、路径编辑及Markdown输入。",
+    "tags": [
+      "单文件应用",
+      "自包含HTML",
+      "幻灯片编辑器",
+      "交互式图表",
+      "本地优先"
+    ],
+    "title": "Bento Slides Showcase — bento/slides",
+    "totalScore": 59,
+    "url": "https://bento.page/slides/"
+  },
+  "payloadHash": "sha256:b1c079f13100db7e95bbe25915f264ede2cce6d33515df936c8d86950c81596c",
+  "refs": {},
+  "revisionId": "sha256:188f753cf874449ad725b59556d7083fe60344be7e86d9ab1e68a0af7e8ce0c0",
+  "schemaVersion": 1,
+  "updatedAt": 1785403703274
+}

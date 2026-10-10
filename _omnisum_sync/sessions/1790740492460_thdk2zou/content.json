@@ -1,0 +1,15 @@
+{
+  "createdAt": 1790740492460,
+  "entityType": "session-content",
+  "id": "1790740492460_thdk2zou",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Harrison Chase</strong></header><div class=\"tw-body\">公司 OS（组织 harness）与个人 agent 的异同：<br><br>差异：<br>- 多个委托人（用户），一个执行者（agent）：需要支持多用户，处理多个用户（有时甚至在同一线程中），因此需要正确处理认证/记忆<br>- 治理：可观测性、可审计性、管理控制平面重要得多<br>- 交互模式：更加事件驱动和异步<br><br>相似之处：<br>- 应该能够编写/执行代码<br>- 浏览器使用可能非常重要！（与编码工具的关键区别）<br>- 技能/MCP 作为标准<br>- 核心代理循环/逻辑<br><br>我遗漏了什么？</div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Embraer</strong> <span class=\"tw-eng\">♥ 121 · 💬 1</span><p>Over the last two decades, the E-Jet family has become one of the three most successful commercial jet programs in the world. This achievement was built on absolute reliability and the continuous trust of our partners!</p></div><div class=\"tw-reply\"><strong>@EKOS _ AGI 🦊</strong> <span class=\"tw-eng\">♥ 5 · 💬 1</span><p>我会把组织记忆作为一个单独的层加入。公司智能体需要区分个人上下文、团队上下文和持久的组织知识——并且每一层都要附带权限和来源信息。否则，系统虽然可以在用户之间共享上下文，但无法真正积累组织从以往执行中所学到的东西。</p></div><div class=\"tw-reply\"><strong>@Valtteri Karesto</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>同样值得一问的是：每个用户是拥有自己的代理实例（和会话），还是共享？代理是代表用户行事，还是作为独立实体行事？</p></div><div class=\"tw-reply\"><strong>@Kyle Johnson</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>不同的记忆结构。对于企业，您必须管理集体上下文和记忆以及个人记忆。疯狂的安全风险</p></div><div class=\"tw-reply\"><strong>@Harrison Chase</strong> <span class=\"tw-eng\">♥ 1 · 💬 1</span><p>说得好！绝对还没解决</p></div></div>",
+    "pageContent": "Harrison Chase: 公司 OS（组织 harness）与个人 agent 的异同： 差异：\n- 多个委托人（用户），一个执行者（agent）：需要支持多用户，处理多个用户（有时甚至在同一线程中），因此需要正确处理认证/记忆\n- 治理：可观测性、可审计性、管理控制平面重要得多\n- 交互模式：更加事件驱动和异步 相似之处：\n- 应该能够编写/执行代码\n- 浏览器使用可能非常重要！（与编码工具的关键区别）\n- 技能/MCP 作为标准\n- 核心代理循环/逻辑 我遗漏了什么？\n---\n热门回复 (共 5 条):\n@Embraer (♥ 121 · 💬 1):\nOver the last two decades, the E-Jet family has become one of the three most successful commercial jet programs in the world. This achievement was built on absolute reliability and the continuous trust of our partners!\n\n@EKOS _ AGI 🦊 (♥ 5 · 💬 1):\n我会把组织记忆作为一个单独的层加入。公司智能体需要区分个人上下文、团队上下文和持久的组织知识——并且每一层都要附带权限和来源信息。否则，系统虽然可以在用户之间共享上下文，但无法真正积累组织从以往执行中所学到的东西。\n\n@Valtteri Karesto (♥ 1 · 💬 1):\n同样值得一问的是：每个用户是拥有自己的代理实例（和会话），还是共享？代理是代表用户行事，还是作为独立实体行事？\n\n@Kyle Johnson (♥ 1 · 💬 1):\n不同的记忆结构。对于企业，您必须管理集体上下文和记忆以及个人记忆。疯狂的安全风险\n\n@Harrison Chase (♥ 1 · 💬 1):\n说得好！绝对还没解决\n"
+  },
+  "payloadHash": "sha256:02cc17f605fcbc1ffadf1b2f76d2b36cfc30310275759142e3ba44064c74247c",
+  "refs": {},
+  "revisionId": "sha256:45f4cac22a822993191b35370f58149dc281ae68e53f1e33a1af8f445c1c4868",
+  "schemaVersion": 1,
+  "updatedAt": 1790768036991
+}

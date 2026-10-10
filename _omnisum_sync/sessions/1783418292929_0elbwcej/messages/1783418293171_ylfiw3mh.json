@@ -1,0 +1,20 @@
+{
+  "createdAt": 1783418253744,
+  "entityType": "message",
+  "id": "1783418293171_ylfiw3mh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# oh-my-openagent 总结：面向复杂代码库的 AI 编程编排器\n\n## 一句话概括\n\n**oh-my-openagent** 是一个开源 AI 编程 Agent 编排工具，核心目标是：  \n让开发者不再纠结用 Claude、Codex、Kimi、GPT、Gemini 等哪个模型，而是通过一个统一框架，把多个模型、多个 Agent、代码工具和工作流组织起来，自动完成复杂开发任务。\n\n它的理念是：**未来不是押注单一模型，而是编排所有模型。**\n\n---\n\n## 它解决什么问题\n\n当前 AI 编程工具存在几个痛点：\n\n- **模型割裂**：Claude Code、Codex、Cursor、OpenCode 等各自封闭，切换成本高。\n- **配置复杂**：Agent、模型、MCP、规则、权限、工作流都需要手动调。\n- **复杂代码库表现不稳定**：AI 容易改错行、丢上下文、任务做到一半停下。\n- **单 Agent 能力有限**：复杂任务需要规划、搜索、实现、审查、调试等多角色协作。\n\noh-my-openagent 试图成为一层“AI 编程操作系统”，把这些能力统一封装。\n\n---\n\n## 产品形态：两个版本\n\n### 1. Ultimate Edition：面向 OpenCode\n\n这是完整版本，功能最全。\n\n主要包含：\n\n- 11 个专业 Agent\n- 54+ 生命周期 Hook\n- 内置 MCP 工具\n- Team Mode 多 Agent 协作\n- ultrawork / ulw 自动工作模式\n- Hashline 精准代码编辑\n- LSP、AST-Grep、Tmux 等深度集成\n\n安装方式：\n\n```bash\nbunx oh-my-openagent install\n```\n\n---\n\n### 2. Light Edition：面向 Codex CLI\n\n这是轻量版本，适配 OpenAI Codex CLI 插件体系。\n\n主要包含：\n\n- 规则注入\n- Comment Checker\n- Git Bash\n- LSP\n- ultrawork\n- ulw-loop\n- 任务续跑\n- 遥测\n- 部分 MCP 能力\n\n但不包含完整 Agent 编排和 Team Mode。\n\n安装方式：\n\n```bash\nnpx lazycodex-ai install\n```\n\n---\n\n## 核心功能亮点\n\n### ultrawork：一条命令启动完整工作流\n\n用户只需要输入：\n\n```bash\nultrawork\n```\n\n或：\n\n```bash\nulw\n```\n\n系统会自动调用相关 Agent、工具和模型，持续推进任务，直到完成。\n\n这是项目最强调的核心体验：**少配置、少干预、自动干活。**\n\n---\n\n### 多 Agent 编排：像组建 AI 开发团队\n\nUltimate 版本中包含多个角色化 Agent：\n\n- **Sisyphus**：主调度者，负责规划、分派任务、推进完成。\n- **Hephaestus**：深度执行者，负责复杂实现。\n- **Prometheus**：战略规划者，会先访谈用户，再制定方案。\n- **Oracle / Librarian / Explore**：分别负责架构、文档搜索、代码搜索等任务。\n\n用户不需要手动选择模型，系统会根据任务类型自动路由到合适模型。\n\n---\n\n### Team Mode：真正的多 Agent 并行协作\n\nTeam Mode 支持一个 Lead Agent 带多个成员 Agent 并行工作。\n\n典型场景包括：\n\n- **hyperplan**：让多个“挑刺型 Agent”从不同角度审查方案。\n- **security-research**：多个安全 Agent 并行审计代码和构造 PoC。\n\n它更像是一个 AI 开发小队，而不是单个聊天机器人。\n\n---\n\n### Hashline：减少 AI 改错代码的问题\n\n传统 AI 修改代码时，常依赖行号或文本匹配，容易因为文件变化导致改错位置。\n\nHashline 给每一行代码加上内容哈希，例如：\n\n```text\n11#VK| function hello() {\n22#XJ| return \"world\";\n33#MB| }\n```\n\nAgent 修改时必须引用这些带哈希的行。  \n如果文件内容已经变化，修改会被拒绝，避免污染代码。\n\n这是该项目非常重要的工程化能力。\n\n---\n\n### LSP / AST-Grep / MCP：让 Agent 更像 IDE 工程师\n\n项目集成了多种开发工具能力：\n\n- **LSP**：代码诊断、跳转定义、查找引用、重命名。\n- **AST-Grep**：基于语法树的代码搜索和批量改写。\n- **MCP**：网页搜索、官方文档搜索、GitHub 代码搜索。\n- **Tmux**：支持交互式终端、调试器、REPL、TUI。\n\n这些能力让 Agent 不只是“生成代码”，而是能更准确理解和操作真实代码库。\n\n---\n\n## 差异化定位\n\noh-my-openagent 的核心差异不是“又一个 AI 编程助手”，而是：\n\n> 它把模型、Agent、上下文、工具、编辑器能力、任务循环和团队协作整合成一个统一的 Agent Harness。\n\n简单说：\n\n- Cursor 更像 AI IDE；\n- Claude Code 更像单模型编程助手；\n- oh-my-openagent 更像 **多模型、多 Agent 的编程编排层**。\n\n---\n\n## 隐私与遥测\n\n项目默认开启匿名遥测，用于统计 DAU / WAU / MAU。\n\n特点：\n\n- 每台机器每天最多发送一次事件。\n- 使用 SHA256 哈希安装 ID。\n- 不上传原始主机名。\n- 不创建 PostHog 用户画像。\n\n用户可以通过配置或环境变量关闭遥测。\n\n---\n\n## 路线图\n\n项目正在从“OpenCode 插件”演进为支持多个 Agent Harness 的通用框架。\n\n未来重点包括：\n\n- 支持 OpenCode、Codex、Pi、Claude Code 等更多平台。\n- 拆分 TypeScript 核心逻辑、MCP 服务、技能、适配层。\n- 让同一套能力可以复用到不同 AI 编程环境中。\n\n---\n\n## 产品经理视角解读\n\n这是一个典型的 **AI Coding Workflow Infrastructure** 项目。\n\n它抓住了一个关键趋势：\n\n> 单个模型的能力差距会越来越小，真正的竞争点会转向 Agent 编排、上下文管理、工具调用、代码编辑可靠性和任务闭环能力。\n\n如果说大模型是“发动机”，oh-my-openagent 想做的是“赛车底盘 + 自动驾驶系统”。\n\n它的价值不在于替代某个模型，而在于把多个模型组织成一个可持续工作的开发系统。\n\n---\n\n## 总结\n\noh-my-openagent 是一个面向高级开发者和复杂代码库的开源 AI 编程编排工具。\n\n它的核心卖点是：\n\n- 多模型协同，而非绑定单一供应商；\n- 多 Agent 并行，而非单助手对话；\n- 深度工程化工具链，而非简单代码生成；\n- 自动任务推进，而非频繁人工提示；\n- 面向复杂代码库，而非只做 Demo 级开发。\n\n适合重度 AI 编程用户、开源工具爱好者、复杂项目维护者，以及希望搭建 AI 开发工作流的团队尝试。",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "timestamp": 1783418253744,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f0d36707984bbbdd9e96ac5b5ab57025ca306418280aa24533925354dfc1a6b7",
+  "refs": {
+    "sessionId": "1783418292929_0elbwcej"
+  },
+  "revisionId": "sha256:8a5283dd3d67239ca3b506af241e36d0a24f0d7a675d84b82a9cb8ddbcef141d",
+  "schemaVersion": 1,
+  "updatedAt": 1783418253744
+}

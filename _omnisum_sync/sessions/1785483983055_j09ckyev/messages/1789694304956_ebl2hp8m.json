@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694304956,
+  "entityType": "message",
+  "id": "1789694304956_ebl2hp8m",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n安全公司 Bitsight 发现，部分廉价 H96 电视盒子会在用户不知情时冒充手机刷广告，并把家庭网络出租给陌生人牟利，因此购买电视棒应优先选择正规品牌和通过官方认证的设备。\n\n## 关键内容\n\n- 研究人员接管一个过期域名后，观测到约 **3.8 万台 H96 设备**回传数据；这些电视盒子对外伪装成三星、华为、小米等品牌的手机。\n- Bitsight 认为，盒子内的两款预装应用与中国公司 Fengwo Group 有关：它们会访问机器生成的网站、自动识别并点击广告。相关网站只对符合伪装特征的设备显示广告，以隐藏欺诈活动。\n- 设备在电视开启时通常充当“住宅代理”，把用户的家庭 IP 出租给第三方；电视关闭后则执行更耗资源的广告刷量任务。第三方可能包括数据抓取者、黄牛乃至网络犯罪者。\n- Bitsight 估算该广告欺诈网络每天收入接近 **5 万美元**，但这是基于单个旧域名流量的保守推算，并非已核实的财务数据；涉事公司未回应采访。\n\n## 通俗解读\n\n“住宅代理”相当于陌生人借你家的网络地址上网，外界看起来行为来自你家，可能带来隐私、安全及法律风险。文章建议避开宣称“一次付费、无限看”的杂牌盒子，选择正规厂商、官方 Android TV 与 Play Protect 认证产品，并谨慎安装应用。\n\n**是否值得细读：**如果正准备购买廉价电视盒子，值得细读；否则掌握上述风险与选购建议即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694304956,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f9dd34359b610604c0bdb0167e9be660e698fd12b6cd109abd842531955eade2",
+  "refs": {
+    "sessionId": "1785483983055_j09ckyev"
+  },
+  "revisionId": "sha256:226b4da062be3b780ad87b1f1dfc31be7184f63f2125b07985b52fa2f3f7dc19",
+  "schemaVersion": 1,
+  "updatedAt": 1789694304956
+}

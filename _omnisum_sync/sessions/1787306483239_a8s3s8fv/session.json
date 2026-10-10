@@ -1,0 +1,67 @@
+{
+  "createdAt": 1787306483239,
+  "entityType": "session",
+  "id": "1787306483239_a8s3s8fv",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在注册或转化流程中加入“如何得知我们”，并同时记录LLM推荐流量、转化和引用份额。",
+      "按目标客户与问题场景建立提示词和社区清单，发布有实际价值的细分比较内容，并跟踪30至45天后的引用变化。",
+      "为不同答案引擎分别建立基准测试，定期复测引用来源、排名和消失时间，估算各类内容的引用半衰期。"
+    ],
+    "archiveReason": "包含可复用的AEO归因思路、渠道测试框架和引用生命周期概念，与AI产品增长和Agent分发直接相关。",
+    "classifiedAt": 1787307025626,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "Gamma的AEO增长实战方法",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/b012e6f1/img/favicon.ico",
+    "knowledgePoints": [
+      "不同答案引擎的内容来源和分发机制可能明显不同，应按ChatGPT、Google AI Overview、Perplexity和Claude分别设计与验证策略。",
+      "AEO可拆为实时检索与模型记忆两类机制：网站和第三方文章更利于引用与跳转，社区内容可能更多影响品牌认知和训练数据。",
+      "LLM引用可能存在半衰期，因此AEO更接近持续运行、定期复测和更新内容的增长系统，而非一次性发布。"
+    ],
+    "oneHighValuePoint": "AEO在执行上类似搜索优化，但归因更像社交广告的浏览归因，应结合推荐流量、用户自报来源和引用份额共同测量。",
+    "oneLineReview": "实践视角鲜明且可启发AEO实验，但多数平台规律仍属经验性假设，不宜直接当作稳定结论。",
+    "primaryCategory": "AI营销与增长",
+    "rating": "B",
+    "rejectReason": "大量结论来自个人观察与黑箱推测，缺少公开数据、对照实验和可核实证据。",
+    "retentionDecision": "选择性精读并保留核心框架，具体渠道结论需通过实验验证",
+    "secondaryCategories": [
+      "内容分发",
+      "Agent生态"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "访谈以Gamma增长实践为例，讨论AEO的渠道优先级、Reddit内容策略、归因测量、引用半衰期，以及检索与模型记忆的差异，并延伸到MCP和面向Agent的产品分发。",
+    "tags": [
+      "AEO",
+      "Reddit营销",
+      "LLM引用",
+      "增长归因",
+      "Agent分发"
+    ],
+    "title": "The Head of Growth at a $100M Company Explains AEO - YouTube",
+    "totalScore": 69,
+    "url": "https://www.youtube.com/watch?v=pS7vgNxusaM"
+  },
+  "payloadHash": "sha256:242ebf63f54f89acc19db0ef3d84f52d91da5cf0cdd5d7fdcf920de622404e93",
+  "refs": {},
+  "revisionId": "sha256:82328fa1e74f934d23f139ef057a25470d0c6a7594d9d8be881caa7ac9340632",
+  "schemaVersion": 1,
+  "updatedAt": 1789727916221
+}

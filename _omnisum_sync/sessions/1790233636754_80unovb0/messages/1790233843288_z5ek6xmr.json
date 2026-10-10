@@ -1,0 +1,24 @@
+{
+  "createdAt": 1790233796241,
+  "entityType": "message",
+  "id": "1790233843288_z5ek6xmr",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 18.3.0 的主要变化：减少上下文开销，补充模型与权限支持\n\n这则更新介绍了 18.3.0 的几项改动。**最值得关注的是基础 token 占用从约 3 万降至 1 万**：模型开始处理任务前，需要读入的内容更少了；对在本地运行模型的人，这可能明显改善等待模型读入内容的体验。\n\n## 为什么 token 占用下降值得关注\n\n这里的 token 可以理解为模型处理文本时使用的计量单位。模型在回答前，通常要先读入已有对话、工具说明等内容，这一步叫“预填充”。基础占用减少约 2 万 token，意味着模型需要先处理的内容变少；**本地模型如果原本读入速度较慢，感受可能尤其明显**。\n\n这次缩减与两项调整有关：原来分散的多个工具被合并到 `read`、`write`、`bash` 中，减少了向模型说明工具时的额外开销；技能描述现在也默认以压缩形式显示，不再一开始就占用那么多上下文。原帖没有分别量化这两项各节省了多少 token。\n\n## 权限和模型支持有哪些变化\n\n- **Codex 网络访问权限检测更明确。** 即使使用的不是 daybreak 模型，系统也会显式请求网络访问权限。作者认为，**对符合授权条件的用户**，这应能减少因权限问题遭到拒绝的情况；并不是说所有请求都能获得网络访问。\n- **新增 Apple 基础模型支持，但目前能力受限。** 作者指出其上下文窗口只有 8K，因此现阶段更适合作为“微型模型”使用。他在回复中还提到，名为“Apple AFM 3 Core Advanced”的模型生成速度约为每秒 5 个 token。\n- **新增 TypeSafe Jev 1.13 的离线 token 计数。** 也就是增加了不依赖在线调用来统计该模型 token 数量的支持。\n- **认证网关支持扩展**到 `systemone`、`image-gen`、`video-gen`、`transcription` 等服务。原帖只列出支持范围，没有进一步说明各服务的具体使用方式。\n\n作者还在回复中补充：**已支持 Anthropic 最新的按需压缩功能**，即在需要时压缩上下文内容，而不是始终保留全部原始内容。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1790233796241,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7b386aef8a10cf82a0760910b914a04a2830ba048563ad27264449460d390e42",
+  "refs": {
+    "sessionId": "1790233636754_80unovb0"
+  },
+  "revisionId": "sha256:936d6b489d1a1f8d499fc950fd9437b867ae0a972288c8ca0fa851b11a89b20d",
+  "schemaVersion": 1,
+  "updatedAt": 1790233796241
+}

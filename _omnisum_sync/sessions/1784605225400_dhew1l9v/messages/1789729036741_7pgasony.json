@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729036741,
+  "entityType": "message",
+  "id": "1789729036741_7pgasony",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 强化学习之父创业：用“持续学习智能体”挑战大模型路线\n\n文章称，《苦涩的教训》作者、强化学习先驱 Richard Sutton 在 68 岁时与学生离开卡马克的 Keen Technologies，成立 Oak Lab。他认为，当前大模型虽然依靠规模化取得突破，却没有真正落实其核心思想：智能应更多来自通用学习方法和自主经验，而非对人类知识的人工灌输。\n\n## 大模型的问题：依赖文本，训练后基本停滞\n\nSutton 批评现有深度学习“弱且低效”。大模型主要从人类生成的文本中学习，预训练完成后参数通常被冻结或更新缓慢，难以在与环境和用户的持续互动中形成新知识。这与他强调的“从自身经验中学习”存在根本差异。\n\n## 目标是低功耗、实时成长的智能体\n\nOak Lab 想构建一种不同的系统：拥有万亿级参数，能够实时学习、实时规划，并将功耗控制在约 20 瓦，接近人脑水平。其方向是让 AI 从静态工具转向可终身学习、持续适应环境的智能体。\n\n## 愿景明确，但关键难题尚未解决\n\nSutton 也承认，该路线仍面临“灾难性遗忘”和“可塑性丧失”：系统学习新知识时可能破坏旧能力，长期训练后也可能越来越难吸收新信息。目前团队尚无大规模成果，因此这更像一次对主流大模型范式的前沿押注，而非已经得到验证的替代方案。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729036741,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d1dee50ba18e9d3c86bf74c8ecf1e3b81898cbcd9b92e4558de8973a5248a26b",
+  "refs": {
+    "sessionId": "1784605225400_dhew1l9v"
+  },
+  "revisionId": "sha256:868d7158915cac9e91e90a8340e8f7a8aa21f3e17540e9cf1d999826daa5954e",
+  "schemaVersion": 1,
+  "updatedAt": 1789729036741
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783333638345,
+  "entityType": "message",
+  "id": "1783333638344_x6b8hpo7",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent Coding技能库推荐\n\n**评级**: B (58.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI编程工作流\n**次类别**: Agent Coding, 提示词工程\n**标签**: #Agent Coding #Skills #Grilling #Claude #产品设计\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 有一定资源发现价值，但主体是碎片化社区讨论，缺少系统展开和实证支撑。\n**核心高价值点**: 将 Grilling 作为产品设计和 Agent Coding 中主动暴露盲区的工作流工具来尝试。\n\n### 摘要\n文章围绕 Agent Coding 工作流和 skills 生态展开，提到 Matt Pocock skills、superpowers、Claude Design System Prompt 等资源，并指出 Grilling 对产品设计和减少思考盲区可能有帮助。\n\n### 知识要点\n- Agent Coding 正在出现以 skills、superpowers、prompt system 为核心的可复用工作流生态\n- Grilling 类方法可用于让 AI 主动追问、挑战设计思路，从而发现产品设计盲区\n- 不同 skills 工具可能面向不同用户群体，例如工程师与非技术人员适用场景不同\n\n### 行动项\n- 浏览 mattpocock/skills 仓库，重点查看 Grilling 相关内容\n- 对比 superpowers、oh-my-openagent、Claude Design System Prompt，筛选可落地到个人工程目录的 skills\n- 在下一次产品设计或技术方案评审中尝试使用 Grilling 方式让 AI 提问和挑战方案\n\n### 存档判定\n归档: 是 — 原因: 包含多个值得进一步探索的 Agent Coding skills 仓库与 Grilling 工作流线索\n删除: 否\n留存决策: 短期参考后可选择性归档相关资源链接",
+    "role": "assistant",
+    "timestamp": 1783333638345,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:8480a56dc0efec0ff1c390d89b356e69ad393cfab431d244ad55f975b01d1898",
+  "refs": {
+    "sessionId": "1783332970891_svac7bdp"
+  },
+  "revisionId": "sha256:cb9ac5d61d8314e715c3a74c33428ee53e8fc2b60239a8f5ebd57445fd6a4d6c",
+  "schemaVersion": 1,
+  "updatedAt": 1783333638345
+}

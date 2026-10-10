@@ -1,0 +1,72 @@
+{
+  "createdAt": 1785140496607,
+  "entityType": "session",
+  "id": "1785140496607_bgrnha6k",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用小批量任务测试NewMax的找人、筛选和建联链路，记录成本、耗时与人工干预量。",
+      "在扩大外联前验证达人名单的品类匹配度、有效联系方式、回复率和转化回报。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1785140582919,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "NewMax自动化达人营销案例",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "达人营销流程可拆分为达人发现、条件筛选和外联建联三个自动化环节。",
+      "文中个案声称NewMax能以约10元和15分钟生成140名达人名单，但该数据缺少独立验证。",
+      "名单生成速度不能代表营销效果，仍需考察匹配准确率、回复率和最终转化回报。"
+    ],
+    "oneHighValuePoint": "达人营销可以按找人、筛选、建联三个环节拆分，并尝试通过Agent连接社媒数据实现批量自动化。",
+    "oneLineReview": "案例与AI营销自动化方向直接相关，但宣传性强、证据薄弱，尚不足以证明实际商业价值。",
+    "primaryCategory": "AI营销自动化",
+    "rating": "C",
+    "rejectReason": "内容以产品宣传和单次效率数据为主，缺少操作流程、质量指标、转化结果及可核验证据。",
+    "retentionDecision": "低优先级速览，如需评估达人营销工具可临时参考",
+    "secondaryCategories": [
+      "Agent应用",
+      "达人营销"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/yangyi/status/2081505153270870384",
+      "https://x.com/yangyi/status/2081512429188730953"
+    ],
+    "summaryBrief": "文章通过社交媒体帖文宣传NewMax：连接社媒数据后，可由Agent批量完成达人发现、筛选和建联，并声称15分钟、约10元获取140名达人，但未展示配置流程、名单质量、回复率或转化结果。",
+    "tags": [
+      "NewMax",
+      "达人营销",
+      "KOL与KOC筛选",
+      "营销自动化",
+      "Agent连接器"
+    ],
+    "title": "一、综合总结",
+    "totalScore": 41,
+    "url": "omnisun://digest/1785140496607"
+  },
+  "payloadHash": "sha256:099d06e0c63cb5ece99ed00879dbd988331590dfbc3612e76360839d190edee3",
+  "refs": {},
+  "revisionId": "sha256:08400d0c12ff8e8ac17974817508226b123edc8e864bda3be03850369c235329",
+  "schemaVersion": 1,
+  "updatedAt": 1785140583429
+}

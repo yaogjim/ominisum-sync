@@ -1,0 +1,85 @@
+{
+  "createdAt": 1783418190108,
+  "entityType": "session",
+  "id": "1783418190108_988la2sx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "盘点公司现有文档、聊天记录、会议纪要和表格数据，判断是否具备统一检索条件。",
+      "尝试用Markdown知识库加SQLite建立一个最小可用的团队AI知识库原型。",
+      "为智能体任务设计人类审核和结果回写流程，避免知识库快速过时。"
+    ],
+    "archiveReason": "",
+    "byline": "Shann³",
+    "classifiedAt": 1783418588050,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "企业AI就绪的三层架构",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 720,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMjmNuMbEAI-yDf?format=png&name=900x900",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HMjmNuMbEAI-yDf?format=png&name=900x900",
+        "width": 773
+      }
+    ],
+    "knowledgePoints": [
+      "企业AI就绪可拆成来源与文档、结构化数据、Wiki知识层、智能体操作层等模块。",
+      "早期可用Markdown文件夹、SQLite数据库和语义搜索构建轻量级公司知识脑。",
+      "智能体工作流应包含任务编排、专业代理执行、人类审核和结果回写机制。"
+    ],
+    "oneHighValuePoint": "智能体能力取决于其可读取、可检索、可更新的组织知识底座，而不是单纯依赖模型本身。",
+    "oneLineReview": "适合作为企业AI知识架构的启发性速览，但证据和落地深度不足。",
+    "primaryCategory": "AI应用与企业知识管理",
+    "rating": "C",
+    "rejectReason": "内容偏概念化，缺少具体实施细节、案例验证和技术取舍说明，较像通用AI架构建议。",
+    "retentionDecision": "短期参考后可删除",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "智能体架构",
+      "知识库建设"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出企业AI就绪的三层结构：公司大脑、数据仓库和操作系统。核心做法是将文档、聊天、数据整理成可检索Wiki，由智能体读取并执行任务，结果再回写知识库。",
+    "tags": [
+      "AI-ready",
+      "Agent",
+      "企业知识库",
+      "RAG",
+      "SQLite",
+      "语义搜索"
+    ],
+    "title": "Shann³: how to make your company AI-ready your agents are only as good as what they can …",
+    "totalScore": 50.5,
+    "url": "https://x.com/shannholmberg/status/2074160754719334722"
+  },
+  "payloadHash": "sha256:8d8d9ce5b680631026ad4cdfb701fe16d644a79c0eddb7a88c9cf2093f141799",
+  "refs": {},
+  "revisionId": "sha256:d2ce793668b76170cb065de5907613bab3c0037015fd3a604eedbf5d5551163b",
+  "schemaVersion": 1,
+  "updatedAt": 1784801256211
+}

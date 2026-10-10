@@ -1,0 +1,24 @@
+{
+  "createdAt": 1790232155739,
+  "entityType": "message",
+  "id": "1790232188503_jw3sih6o",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# xcertplay：让 Android 车机接收 CarPlay，关键在 MFi 认证\n\nxcertplay 是一个开源的 Android 车机 CarPlay 接收端，支持有线和无线连接，也提供普通 Android 与 Android Automotive OS 两种应用版本。**它的一个重点是提供多种 MFi 认证接入方式：通过 CH341 转接芯片、车机自带的 I²C 接口，或远程认证服务。**项目已能在车机和手机上运行，但部分功能仍在开发或尚未充分测试。\n\n## 它能做什么\n\n项目负责让 iPhone 将 CarPlay 内容连接到 Android 设备，并针对车机场景做了几项适配：\n\n- **音频分通道输出**：将语音、导航和音乐分别映射到相应的 Android 音频通道；Android Automotive OS 版本提供更进一步的音频通道映射。\n- **适应屏幕尺寸变化**：应用界面尺寸改变后，会按新分辨率重新与 iPhone 握手，而不是一直沿用旧画面尺寸。\n- **向 iPhone 报告车机位置**，供车机上的导航场景使用。\n\n项目还可以让 iPhone 弹出 **CarPlay Ultra** 提示，但作者明确说明：相关协议栈尚未完成、也未经测试。**能触发提示，不等于已经支持使用 CarPlay Ultra。**\n\n## MFi 芯片如何接入\n\nMFi 是苹果配件认证机制。这个项目需要完成相应认证，才能建立 CarPlay 连接；它提供三条路径：\n\n1. **CH341 转接**：通过 CH341 这类 USB 转 I²C 桥接器连接 MFi 芯片。\n2. **车机自带 I²C 接口**：通过系统中的 `/dev/i2c-N` 设备直接连接芯片。\n3. **远程认证**：应用向远程服务获取证书、提交待签名数据并取得签名，不必在当前 Android 设备上连接本地 MFi 芯片。项目也提到可使用 BAA 认证。\n\n远程服务接口包括获取证书、签名和重置三个操作，并可选择使用 Bearer Token 验证身份。不过，**作者注明目前仅测试过 BAA 认证**；不能据此认为所有远程 MFi 接口方案都已验证。\n\n## 如何使用，以及目前的边界\n\n使用流程是：先通过蓝牙将 iPhone 与车机配对；在应用内用三指下滑打开设置，配置所需选项，选择 **Save & Reconnect**；再按所选方式接入 MFi 芯片并等待连接。项目要求 Android 9 或更新版本。在 Android 9 上，Wi-Fi P2P 的 5 GHz 模式不可用，应用会改用 LocalOnlyHotspot。\n\n作者称项目已在车机和手机上测试，当前“可以工作”。但待办事项仍包括蓝牙活动弹窗、更多设置手势、调试日志导致卡住的问题，以及麦克风透传问题。如果遇到不兼容的车机，作者希望用户提交设备日志排查。\n\n对开发者而言，构建需要 JDK 17 或更新版本、Android SDK Platform 37 和指定版本的 Android NDK；进行硬件验证还需要支持 USB Host/OTG 的实体 Android 设备及 MFi 硬件。项目采用 **GPL v3.0** 许可证。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1790232155739,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1ce1cfc2f3ae3cd1dd80f6051f4a992995b39ff0fb25f49b065a56b62b056bd6",
+  "refs": {
+    "sessionId": "1790232187845_obvwdwxy"
+  },
+  "revisionId": "sha256:10fe7f0aa36901f8706dccd86206f2cacc3c28f6d72507d9ba7cef1263f51df9",
+  "schemaVersion": 1,
+  "updatedAt": 1790232155739
+}

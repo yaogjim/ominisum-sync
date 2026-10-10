@@ -1,0 +1,94 @@
+{
+  "createdAt": 1784161244928,
+  "entityType": "session",
+  "id": "1784161244928_b4pey1nk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "使用文中的Docker Compose配置启动本地Weaviate与Model2Vec嵌入服务。",
+      "运行Python示例，验证集合创建、批量导入和near_text语义查询链路。",
+      "在技术选型时针对混合检索、资源消耗、多租户与故障恢复开展独立基准测试。"
+    ],
+    "archiveReason": "包含可直接运行的本地部署、数据导入与语义查询示例，并集中列出了混合检索、多租户、复制和RBAC等能力。",
+    "classifiedAt": 1784678137270,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 4,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Weaviate向量数据库快速入门",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1784161266627,
+        "imageId": "img-1",
+        "model": "gpt-5.6-sol",
+        "ocrText": "",
+        "summary": "# Weaviate：面向 AI 应用的开源向量数据库\n\n## 一句话概括\n\nWeaviate 是一款**开源、云原生的向量数据库**，同时存储业务对象与向量数据，将语义搜索、关键词检索、结构化过滤、RAG 和结果重排整合在统一接口中。\n\n## 核心能力\n\n- **混合检索**：结合向量相似度搜索、BM25 关键词检索及结构化过滤。\n- **灵活向量化**：可在数据导入时调用 OpenAI、Cohere、Hugging Face、Google 等模型生成向量，也支持导入预计算向量。\n- **RAG 与重排**：内置生成式检索和 reranking，减少外部工具拼装成本。\n- **多模态搜索**：支持文本、图片及混合搜索场景。\n- **高性能与低成本**：支持十亿级向量检索，并通过向量压缩和量化降低内存消耗。\n- **数据生命周期管理**：支持按集合配置 TTL，自动清理过期数据。\n\n## 生产级特性\n\nWeaviate 不只是检索组件，也具备数据库级工程能力：\n\n- 水平扩展与数据复制\n- 多租户隔离\n- 细粒度 RBAC 权限控制\n- 容错与高可用\n- 云原生部署和运维\n\n因此，它可以从快速原型平滑扩展到企业级生产环境。\n\n## 典型应用场景\n\n- 企业知识库与 RAG 问答\n- AI 聊天机器人和智能体\n- 语义搜索与图片搜索\n- 推荐系统\n- 内容分类与相似内容发现\n- 商品、电影、健康产品等垂直搜索\n\n## 接入与部署\n\n支持**Docker、Kubernetes、Weaviate Cloud、AWS 和 GCP**等部署方式；提供 Python、JavaScript/TypeScript、Java、Go、C#/.NET 客户端，并开放 REST、gRPC 和 GraphQL API。\n\n开发者可通过 Docker 同时启动数据库和轻量级嵌入模型，快速完成数据写入、自动向量化及语义查询。\n\n## 生态与定位\n\nWeaviate 已接入 LangChain、LlamaIndex、CrewAI、DSPy、Airbyte、Databricks 等数据与 AI 工具，并提供面向 Claude Code、Cursor、GitHub Copilot 等编码智能体的 Agent Skills。\n\n其产品定位可以概括为：\n\n> **以向量数据库为底座，将数据存储、检索、生成与企业级治理整合为一体的 AI 应用基础设施。**\n\n## 产品价值判断\n\nWeaviate 的主要价值不是单纯 “存向量”，而是降低 AI 应用的数据工程与系统集成复杂度。它适合希望统一处理**向量检索、结构化数据过滤、RAG 和规模化部署**的团队；但对于搜索逻辑简单、数据规模较小的项目，完整数据库能力可能偏重。",
+        "url": "https://repository-images.githubusercontent.com/55072677/0587c1bd-0185-4890-80ba-2198466ba58d",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://repository-images.githubusercontent.com/55072677/0587c1bd-0185-4890-80ba-2198466ba58d",
+        "role": "hero",
+        "score": 70,
+        "src": "https://repository-images.githubusercontent.com/55072677/0587c1bd-0185-4890-80ba-2198466ba58d",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "Weaviate可同时保存对象与向量，并在同一查询接口中组合向量相似度、BM25关键词检索和结构化过滤。",
+      "向量既可在导入时由集成模型自动生成，也可由应用直接写入预先计算的嵌入。",
+      "面向生产部署的相关能力包括水平扩展、多租户、复制、RBAC、向量压缩和对象TTL。"
+    ],
+    "oneHighValuePoint": "提供了从Docker启动数据库和嵌入服务，到创建集合、自动生成向量、批量写入并执行近文本查询的最小闭环。",
+    "oneLineReview": "这是一份实用的产品入口文档，快速上手价值较高，但功能优势多为官方陈述，缺少独立评测和严谨对比。",
+    "primaryCategory": "AI基础设施与向量数据库",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并保留，适合作为向量检索原型搭建和技术选型参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "RAG应用开发",
+      "开源工具文档"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Weaviate的定位、部署方式与主要能力，并给出通过Docker、本地嵌入模型和Python客户端创建集合、导入对象及执行语义搜索的完整示例，同时列出混合检索、RAG、多租户、复制和RBAC等生产特性。",
+    "tags": [
+      "Weaviate",
+      "向量数据库",
+      "语义搜索",
+      "混合检索",
+      "RAG"
+    ],
+    "title": "weaviate/weaviate: Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and scalability of a cloud-native database​.",
+    "totalScore": 69,
+    "url": "https://github.com/weaviate/weaviate"
+  },
+  "payloadHash": "sha256:4011d1210dff10fb5f92ac6c9bc5ce870efe12dce8f7a78095ae19e1e337f70b",
+  "refs": {},
+  "revisionId": "sha256:92293e7780da640375135d6ccd25d99b964f61cc54bc2a1f958d89d8defa7122",
+  "schemaVersion": 1,
+  "updatedAt": 1789728696402
+}

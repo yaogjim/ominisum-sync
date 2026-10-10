@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728769763,
+  "entityType": "message",
+  "id": "1789728769763_jbn8r5l6",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# ChatGPT 通过 MCP 直连 Fusion，已能生成可编辑的复杂 3D 模型\n\n作者演示了 ChatGPT 5.6 sol 通过 MCP（模型上下文协议）直接操作 Autodesk Fusion，无需第三方 Skill 或其他工具，即可根据自然语言创建火箭和 V8 发动机模型。结果尚不能用于工程生产，但已展现出从资料理解、建模到零部件装配的初步自动化能力。\n\n## 两次建模都在数分钟内完成\n\n- **火箭模型**：先让 ChatGPT 收集公开资料，再据此生成较复杂的建模提示词。首次生成的整流罩呈阶梯状，未达到参考图中的平滑曲线；调整一次后，Codex 用 **7 分 22 秒**完成了外观较合理的模型。\n- **V8 发动机**：仅输入“在 Fusion 中创建一个 V8 发动机”，Codex 用 **5 分 27 秒**完成建模。\n\n## 不只是生成外形，还能处理部件关系\n\n作者认为更值得关注的是，两个模型都包含细分结构，各部分可以独立修改；系统还能识别零部件之间的空间位置关系，并将其装配为完整模型。这意味着 AI 操作 CAD 已不止于生成单一外壳，而开始涉及结构拆分、可编辑性与装配流程。\n\n## 价值在快速原型，距离工程应用仍远\n\n这一演示表明，自然语言 Agent 有望降低 CAD 的操作门槛，加快概念设计和演示模型制作。但作者明确指出，当前成果只是“看起来像那么回事”的示例，距离满足尺寸精度、材料、受力、制造约束等真实工程生产要求仍很远。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728769763,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5048c40e3d58e82c6e6f08edfaf8117ba10a5289e011a06e1ff080de28aa0806",
+  "refs": {
+    "sessionId": "1784695060816_fkb3pflz"
+  },
+  "revisionId": "sha256:06c1c55dbfb81884f18282615fd132125432f46029e4149d6a17c0c0fad05ec5",
+  "schemaVersion": 1,
+  "updatedAt": 1789728769763
+}

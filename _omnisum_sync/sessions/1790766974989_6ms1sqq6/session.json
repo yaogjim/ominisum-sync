@@ -1,0 +1,67 @@
+{
+  "createdAt": 1790766974989,
+  "entityType": "session",
+  "id": "1790766974989_6ms1sqq6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需试用，先准备JDK21和Gradle，下载空数据库模板并按指定路径放置，再启动应用。",
+      "在网页端设置地区、岗位和筛选条件，配置模型接口与Boss招呼语，先验证当前版本能否正常完成投递。",
+      "升级前备份已有数据库；若拟将项目用于商业产品或客户交付，先联系作者确认商业授权。"
+    ],
+    "archiveReason": "包含明确的环境要求、数据库初始化、模型接口配置及平台使用限制，可作为AI辅助浏览器自动化项目的实践参考。",
+    "classifiedAt": 1790767025632,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "AI辅助简历投递工具部署与限制",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "项目不会自动建表，新用户需下载数据库模板并放入db/getjobs.db；升级时覆盖已有数据库会丢失配置与登录态。",
+      "AI功能通过BASE_URL、API_KEY和MODEL配置兼容OpenAI格式的接口，文档将岗位匹配与个性化招呼语功能限定于Boss直聘。",
+      "项目采用PolyForm Noncommercial 1.0.0许可；文档当前只确认Boss可投递，其他平台未测试，并明确不支持服务器部署。"
+    ],
+    "oneHighValuePoint": "将岗位筛选、AI匹配和个性化招呼语生成接入浏览器投递流程，提供了一个具体的AI辅助自动化应用样例。",
+    "oneLineReview": "部署说明具有实用价值，但宣传与无关内容较多，平台效果、成本和稳定性缺少充分验证。",
+    "primaryCategory": "AI应用开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性保留部署步骤与AI集成配置，使用前复核平台兼容性和许可限制",
+    "secondaryCategories": [
+      "浏览器自动化",
+      "工具部署"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "介绍一个结合浏览器自动化与AI岗位匹配的简历投递项目，提供环境准备、数据库初始化、接口配置和运行步骤。文档说明当前仅Boss可投递、其他平台尚未测试，并明确非商业许可及服务器部署限制。",
+    "tags": [
+      "简历自动投递",
+      "岗位匹配",
+      "浏览器自动化",
+      "OpenAI兼容接口",
+      "非商业许可"
+    ],
+    "title": "loks666/get_jobs: 💼【AI找工作助手】全平台自动投简历脚本：(boss、前程无忧、猎聘、智联招聘)",
+    "totalScore": 63,
+    "url": "https://github.com/loks666/get_jobs"
+  },
+  "payloadHash": "sha256:e4d9be168728a10dbec5bc877dbf4ab7371ecdb29e84ae93dfde84ccccf9cef1",
+  "refs": {},
+  "revisionId": "sha256:9dee251f3a1de1a5f5e05578d4604f9a1ad8ae48708095ba21214011b5e83387",
+  "schemaVersion": 1,
+  "updatedAt": 1790768465292
+}

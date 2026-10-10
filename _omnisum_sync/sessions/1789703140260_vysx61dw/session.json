@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789703140260,
+  "entityType": "session",
+  "id": "1789703140260_vysx61dw",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "准备一个最好已配置CI的GitHub测试仓库。",
+      "创建范围明确且带ai-ready标签的Issue，观察完整自动交付流程。",
+      "记录失败节点、错误截图、人工介入次数及PR质量，用于判断工具可靠性。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1789703173467,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Orbi无人值守代码交付实测",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Orbi以带ai-ready标签的GitHub Issue作为自动执行入口。",
+      "文中描述的目标流程覆盖编码、提交PR、独立评审和合并。",
+      "作者称三个公开仓库一天合并81个PR，人工投入集中在写任务和查看评审结论。"
+    ],
+    "oneHighValuePoint": "展示了从GitHub Issue到编码、PR、评审和合并的无人值守交付闭环，可作为评估自主编程Agent成熟度的实验场景。",
+    "oneLineReview": "场景与AI编程Agent高度相关且试用门槛低，但主要是产品招募信息，方法细节和证据链均较薄弱。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "B",
+    "rejectReason": "内容以限时试用招募和产品宣传为主，缺少配置细节、适用边界及完整验证材料。",
+    "retentionDecision": "适合短期浏览和试用验证，无需作为长期资料保留",
+    "secondaryCategories": [
+      "AI编程工具",
+      "软件交付自动化"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章招募用户试用Orbi：在GitHub创建带ai-ready标签的Issue后，由Agent自动编码、提交PR、评审并合并。作者声称已在生产环境零人工跑通，并报告一天合并81个PR，但未提供直接验证链接。",
+    "tags": [
+      "Orbi",
+      "GitHub Issue",
+      "自主编程Agent",
+      "自动化PR",
+      "无人值守交付"
+    ],
+    "title": "Larry & Leo & Lucky 🍀: 明天找一个人跟我一起在生产上配一个仓库，用 Orbi 跑通你自己的第一个 Issue",
+    "totalScore": 55,
+    "url": "https://x.com/xqliu/status/2099175325859193068"
+  },
+  "payloadHash": "sha256:2c663f19695e44e74d25b840b8961230adc06ef4a6855bce620a7db17058421d",
+  "refs": {},
+  "revisionId": "sha256:0d5478f05da7aeb63bfbc5dac3fd264fc952166e3dc81224a45f48266a379df8",
+  "schemaVersion": 1,
+  "updatedAt": 1789727597038
+}

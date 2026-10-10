@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694204332,
+  "entityType": "message",
+  "id": "1789694204333_vwvg3lts",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nAnthropic 将 Claude Code 的“自动模式”设为 Pro、Max 和 Team 方案的默认权限模式，用分类器代替频繁的人工批准；官方测试称其更安全且效率更高，但仍不能消除风险。\n\n## 关键内容\n\n- **默认设置变化**：从 8 月 14 日起，新会话默认使用自动模式；已固定其他模式的用户不受影响。Enterprise、API 和云平台暂时仍需主动开启，之后也计划改为默认。\n- **工作方式**：每次调用工具前，分类器会拦截不可逆、破坏性或向外部发送数据的操作。Claude 可改走安全路径或请求确认；连续拦截 3 次、单次会话累计 20 次后，会退回人工审批。\n- **官方安全数据**：Anthropic 称，1,053 人的受控实验中，用户只识别出 13.6% 的危险命令，自动模式拦截了 89%；在被安全系统标记的真实会话中，严重且非用户明确要求的伤害比例为人工模式 6.3%、自动模式 2.4%。这些是官方及受委托测试结果，实验环境和样本范围有限。\n- **效率与限制**：采用该模式的团队据称多提交约 25% 的 PR；但分类器仍可能误判或漏判，生产基础设施等高风险操作仍应人工复核。\n\n## 通俗解读\n\n它不是“Claude 可不受限制地执行命令”，而是把“用户反复点允许”改成“安全分类器逐次把关”。这主要针对用户因提示过多而习惯性放行的问题。\n\n**是否值得细读**：普通用户了解上述变化即可；企业管理员、安全人员或需要配置硬性禁令和权限规则的人，值得细读原文。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694204332,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c555e9a4e1c327638e2671ed8cf72dcd6fcadcc0069338de652b7539371ceec2",
+  "refs": {
+    "sessionId": "1786353640328_f6yvcvgp"
+  },
+  "revisionId": "sha256:efde7747a72e1e2d2e1ba3c2583aed0822c5e12fcd0e296e39568cea531bc7e7",
+  "schemaVersion": 1,
+  "updatedAt": 1789694204332
+}

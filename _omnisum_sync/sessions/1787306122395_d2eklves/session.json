@@ -1,0 +1,67 @@
+{
+  "createdAt": 1787306122395,
+  "entityType": "session",
+  "id": "1787306122395_d2eklves",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为目标业务收集真实端到端工作流，按可复现性、商业价值和结果可判定性筛选评测任务。",
+      "评测Agent时检查邮箱、文件、日历或业务系统的最终状态，而不只评价推理过程或文字回答。",
+      "对同一任务独立运行多次，同时记录平均得分和连续全部成功率。"
+    ],
+    "archiveReason": "汇总了多个真实工作任务评测集，并提供了端到端结果检查、全量通过判定和重复运行稳定性等可复用评测视角。",
+    "classifiedAt": 1787306237147,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 6,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "真实工作场景中的Agent成功率",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "真实工作任务往往包含跨工具操作、杂乱数据整合、条件变更和多项交付物，单项能力强不等于端到端完成率高。",
+      "RealReplicaBench采用最终状态检查，并要求同一任务的多组检查项全部通过才计分，体现商业任务中局部错误可能导致整体失败。",
+      "平均运行得分与连续多次全部成功是不同指标，后者更能反映Agent在实际部署中的稳定性。"
+    ],
+    "oneHighValuePoint": "评估Agent不能只看单项能力或一次成功，而应以真实工作流的最终系统状态、完整交付结果和多次重复成功率作为核心标准。",
+    "oneLineReview": "文章高度相关且案例具体，但篇幅重复、榜单数据时效性强，尚未形成可直接复现的完整评测方法。",
+    "primaryCategory": "AI Agent评测",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并存档评测框架，具体模型成绩需另行核验",
+    "secondaryCategories": [
+      "电商自动化",
+      "产品与技术实现"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以RealReplicaBench为主，并结合E-Bench、VibeLifeBench，说明Agent在电商、应用操作和生活任务中的端到端成功率与稳定性仍偏低，强调真实工作评测应检查最终系统状态、完整交付和重复成功率。",
+    "tags": [
+      "Agent评测",
+      "真实工作流",
+      "端到端任务",
+      "任务可靠性",
+      "电商自动化"
+    ],
+    "title": "说一个反常识的真相，Agent如今在真实工作场景的成功率依然很低。",
+    "totalScore": 67,
+    "url": "https://x.com/Khazix0918/status/2089157023594430952"
+  },
+  "payloadHash": "sha256:7c4d56122b71c1bd72415c39e1ea2441ea13caf00fb26d1abe50addd500a0422",
+  "refs": {},
+  "revisionId": "sha256:6846587d06fb99860f62ff65b296a9f2216a8dfa0eedbdc43b80d9be24a92e2c",
+  "schemaVersion": 1,
+  "updatedAt": 1789727931280
+}

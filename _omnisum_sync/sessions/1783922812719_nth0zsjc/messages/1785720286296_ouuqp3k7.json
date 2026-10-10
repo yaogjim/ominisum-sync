@@ -1,0 +1,24 @@
+{
+  "createdAt": 1785720286296,
+  "entityType": "message",
+  "id": "1785720286296_ouuqp3k7",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 视频动效系统：把开源工具变成自己的模板库\n\n这是一套名为 HyperFrames 的开源视频动效系统，由栗噔噔制作。听完你可以了解：怎样安装和运行它，怎样修改文案、数字和颜色来生成视频，以及怎样让自己的 Agent，也就是智能编程助手，继续帮你扩展模板库。\n\n## 首先，理解这套系统能做什么\n\n核心结论是：它不只是一个固定的视频模板，而是一个可以持续扩展的动效系统。\n\n通俗来说，你可以先把项目复制到自己的电脑上。然后修改模板里的文字和数据，预览动效，并生成视频。之后，还可以把整个项目交给自己的 Agent，让它按照现有规范，继续往模板目录里添加新的动效。\n\n这样一来，项目会从一套现成模板，逐渐成长为属于你自己的视频动效库。\n\n这套项目在多个平台都有同名账号，包括小红书、抖音、视频号、公众号、B站、X、YouTube 和即刻，账号名称都是“栗噔噔”。\n\n## 接下来，安装项目有两种方式\n\n核心结论是：不熟悉命令行，可以让 Agent 自动安装；熟悉命令行，也可以手动完成。\n\n第一种方式，是把安装任务直接复制给自己的 Agent。你可以告诉它：请在本地安装并启动这个开源视频动效系统。\n\n任务内容包括六步。\n\n第一，选择一个合适的本地目录，克隆 GitHub 上的 `hyperframes-motion-library` 仓库。\n\n第二，进入这个项目目录。\n\n第三，运行 `npm install`。这里的 npm，可以理解成 JavaScript 项目的依赖安装工具。这个命令会把项目运行所需要的组件安装到电脑上。\n\n第四，运行 `npm run dev`，启动本地服务。\n\n第五，启动成功后，让 Agent 把本地访问地址发给你。\n\n第六，先不要修改源码，也不要删除模板。如果遇到 Node、npm、Chrome、FFmpeg 或端口占用问题，先让 Agent 解释原因，并给出解决建议。\n\n这里的 Node 是运行这类项目的基础环境。Chrome 和 FFmpeg，则会在后续预览或渲染视频时发挥作用。端口占用，指的是本地服务需要使用的网络端口，已经被其他程序占用。\n\n第二种方式，是手动安装。\n\n你需要先用 `git clone` 命令，把 GitHub 仓库克隆到电脑上。然后进入 `hyperframes-motion-library` 目录，再运行 `npm install` 安装依赖。\n\n这两种方式的结果相同。区别只是，第一种更适合希望由 Agent 协助操作的人，第二种更适合熟悉命令行的人。\n\n## 然后，本地预览和生成视频\n\n核心结论是：项目启动后，可以修改参数、查看预览，并把模板渲染成视频。\n\n启动本地服务，使用的命令是 `npm run dev`。服务启动后，就可以在浏览器里打开本地地址，查看模板效果。\n\n如果要检查项目是否正常，可以运行 `npm run check`。这个命令用于确认项目和模板是否符合要求。\n\n如果要真正生成视频，可以运行渲染命令。原文给出的示例，是使用 `metric-pulse` 这个模板，并调用它的默认预设文件。命令是：\n\n`npm run render -- metric-pulse templates/metric-pulse/presets/default.json`\n\n这里的“预设”，可以理解成一组已经写好的参数，比如默认文字、数字、颜色和布局设置。渲染时，系统会读取这些参数，并生成对应的视频效果。\n\n需要特别注意的是，渲染会调用你电脑本机的 Chrome 和 FFmpeg。因此，渲染所需要的算力由自己的电脑承担，而不是由远程服务器承担。电脑性能不同，渲染速度也可能不同。\n\n## 更重要的是，让 Agent 继续添加新模板\n\n核心结论是：新增模板之前，要先让 Agent 读懂项目规范，再按照现有结构开发。\n\n通俗来说，不要一上来就让 Agent 随意创建文件。应该先让它阅读项目里的 `README.md`，了解系统如何运行；再阅读 `SYSTEM.md`，了解一个合格模板必须包含哪些内容。\n\n接着，让它检查 `catalog.json` 和现有的 `templates` 目录。\n\n`catalog.json` 可以理解成模板目录清单。新模板如果没有登记到这里，就可能不会出现在展示站里。\n\n在已有模板的基础上，Agent 可以新增一个自己的模板目录。每个模板都应该放在 `templates` 下面，并按照统一结构组织。\n\n## 一个新模板必须包含哪些内容\n\n核心结论是：每个新模板，都需要具备完整的文件结构和可编辑参数。\n\n具体来说，在 `templates/<template-id>/` 目录下，需要创建以下文件和目录：\n\n第一，`index.html`，负责模板的页面结构。\n\n第二，`design.md`，记录设计说明。\n\n第三，`meta.json`，保存模板的基本信息。\n\n第四，`presets/default.json`，提供默认预设参数。\n\n第五，`package.json`，记录这个模板相关的项目配置。\n\n模板还必须使用 HyperFrames 的 `data-composition-variables`。它可以理解成一套参数接口，用来把文案、数字和颜色暴露出来，让使用者可以直接编辑这些内容，而不必修改整个模板的底层代码。\n\n在视觉风格上，默认配色要延续黑色背景加橙色强调。不要随意加入蓝色或绿色调。\n\n在制作顺序上，应该先完成最完整时刻的静态布局。也就是说，先把画面在最完整状态下的结构、文字和元素摆放好。确认静态画面没有问题之后，再加入确定性的 GSAP 动画。\n\nGSAP 是一个常用的网页动画工具。这里强调“确定性”，意思是动画应该按照明确的规则运行，便于重复预览、检查和渲染，而不是每次表现都不稳定。\n\n完成模板后，还要更新 `catalog.json`，让新模板出现在展示站里。然后运行 `npm run check`，确认模板可以正常复用，并尽量生成 sample 预览。\n\n整个过程中，有一条重要原则：不能破坏已有模板，也不能破坏已有预设。\n\n## 可以直接交给 Agent 的任务流程\n\n如果你想让 Agent 直接执行，可以把任务概括成下面这样：\n\n先阅读项目的 `README.md` 和 `SYSTEM.md`，再检查 `catalog.json` 与 `templates` 目录。\n\n然后，基于现有结构，新增一个可复用的视频动效模板。\n\n新模板需要放在 `templates/<template-id>/` 下，并包含 `index.html`、`design.md`、`meta.json`、`presets/default.json` 和 `package.json`。\n\n动效要使用 HyperFrames 的 `data-composition-variables`，暴露可以编辑的文案、数字和颜色。\n\n默认视觉继续使用黑色背景和橙色强调，不要引入蓝绿色系。\n\n开发时，先完成最完整时刻的静态布局，再加入确定性的 GSAP 动画。\n\n完成后，更新 `catalog.json`，运行 `npm run check`，并尽量生成 sample 预览。\n\n最后，确保已有模板和已有预设都没有被破坏。\n\n## 最后，记住这几个重点\n\n第一，这套 HyperFrames 是一个可以持续扩展的开源视频动效系统，不只是单个固定模板。\n\n第二，你可以通过克隆项目、安装依赖、启动本地服务，直接在自己的电脑上预览和生成视频。\n\n第三，渲染会使用本机的 Chrome 和 FFmpeg，算力成本由自己的电脑承担。\n\n第四，新增模板时，要先阅读 `README.md` 和 `SYSTEM.md`，再按照现有目录结构开发，并更新 `catalog.json`。\n\n第五，新模板要暴露可编辑的文案、数字和颜色，保持黑底橙色的默认风格，同时不能破坏已有模板和预设。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1785716664510",
+    "prompt_template_name": "口播总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1785720286296,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:677aaa7e21b49749460de30129a6b52863a686fcf3edd6556bd036101842b0f8",
+  "refs": {
+    "sessionId": "1783922812719_nth0zsjc"
+  },
+  "revisionId": "sha256:a8c0ae153c1064e70fe1b089176184cb32f0239109a0de4a5d7a37239f90bea2",
+  "schemaVersion": 1,
+  "updatedAt": 1785720286296
+}

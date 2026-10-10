@@ -1,0 +1,64 @@
+{
+  "createdAt": 1782349591653,
+  "entityType": "session",
+  "id": "1782349591653_x14vr7gi",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若研究AI偏见，可单独截图留作负面样本",
+      "否则无需归档，直接删除"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782350559334,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 1,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 1,
+      "transferability": 1
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "中日韩工作刻板印象图",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "属于低质量社交媒体噱头内容，几乎不含可验证信息或可复用知识，且带有明显刻板印象，不值得保留。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "生成式AI会放大提示中的刻板印象",
+      "社交媒体内容通常缺乏可验证信息"
+    ],
+    "oneHighValuePoint": "可作为观察生成模型刻板印象输出偏差的负面样本。",
+    "oneLineReview": "典型的低信息量AI娱乐帖，更多是偏见展示而非知识内容。",
+    "primaryCategory": "AI生成内容",
+    "rating": "E",
+    "rejectReason": "内容仅为社交媒体上的刻板印象式AI绘图提示，信息密度极低，缺乏证据与方法价值，且主要是娱乐性和偏见展示，没有长期参考意义。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "文化刻板印象",
+      "社交媒体"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一条X上的AI绘图提示，要求模型按刻板印象生成中、韩、日工作及下班场景，并引发了少量关于科技化和姿态的调侃回复。整体偏娱乐化，缺乏知识价值。",
+    "tags": [
+      "AI绘图",
+      "刻板印象",
+      "中日韩",
+      "社交媒体"
+    ],
+    "title": "StarKnight: Prompt： 根据你的刻板印象，绘制一张并排三列的图片，分别展示中国人的工作场景，韩国人的工作场景，日本人的工作场景",
+    "totalScore": 11,
+    "url": "https://x.com/StarKnight/status/2069063267335688381"
+  },
+  "payloadHash": "sha256:53bbb43eff5871e961f3bfdcd21b692bb7185d40b1c057face5930d2a439b043",
+  "refs": {},
+  "revisionId": "sha256:0a1ce9817661e9b454f706c12c1236920ab0233ed2f320d634a69917c81b13cf",
+  "schemaVersion": 1,
+  "updatedAt": 1782350559829
+}

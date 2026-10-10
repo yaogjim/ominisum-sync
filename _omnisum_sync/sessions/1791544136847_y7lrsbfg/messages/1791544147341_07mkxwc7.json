@@ -1,0 +1,24 @@
+{
+  "createdAt": 1791543989853,
+  "entityType": "message",
+  "id": "1791544147341_07mkxwc7",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Jev Skill Typeahead 开源：在发送提示词前，预测 Claude Code 可能调用的技能\n\nDaniel San 宣布，适用于 Claude Code 的 **Jev Skill Typeahead 已完全开源**。这个工具会在用户输入提示词时，预测 Claude 最可能调用哪些已安装的技能，并显示各项技能的预估概率。它的主要价值是：**让用户在提交请求之前，就能看到提示词可能如何影响技能选择。**\n\n## 它做什么：提前显示可能被调用的技能\n\n这里的“技能”（Skill），可以理解为供 Claude Code 使用、面向特定任务的能力或操作指引。Jev Skill Typeahead 预测的是**用户已经安装的技能**，而不是替用户寻找或安装新技能。\n\n按照作者的介绍，使用过程是：\n\n1. 用户在 Claude Code 中输入提示词。\n2. Jev 分析正在输入的内容，预测 Claude 最可能调用哪些技能。\n3. **在用户发送请求之前，显示每项技能的预估概率。**\n\n因此，它提供的是“提交前的预测”，而不是“执行后的调用记录”。显示某项技能概率较高，意味着工具判断它更可能被调用，**不代表 Claude 最终一定会选择它**。\n\n## 为什么有用：帮助理解提示词与技能选择的关系\n\n作者认为，这个工具对“理解和优化”技能调用很有帮助。其直接意义在于：用户不必等请求执行完，才能观察自己的表达可能指向哪项技能。\n\n例如，假设用户安装了“代码审查”和“编写测试”两项技能，输入“检查这段代码有什么问题”时，工具可能预测前者更容易被调用；如果改成“为这段代码补充测试”，预测结果可能转向后者。**这是用于解释用途的假设例子，并非原帖展示的实际结果。**\n\n这种提前反馈可以帮助用户检查：自己希望完成的任务，与工具预测的技能是否一致；修改提示词后，预测是否更接近预期。不过，原帖没有说明工具能否直接控制或强制指定技能调用，因此不能把“帮助优化”理解为“保证调用正确”。\n\n## 开源意味着什么：可以查看代码，也可以参与改进\n\n作者表示，项目已完全开源，欢迎开发者探索代码、贡献改进，目标是让技能预测更准确。\n\n代码位于 `claude-code-templates` 仓库中的对应目录：\n\n[GitHub：Jev Skill Typeahead](https://github.com/davila7/claude-code-templates/tree/main/cli-tool/components/mods/productivity/jev-skill-typeahead)\n\n对想进一步了解工具的人，开源提供了查看具体实现、研究预测方式和参与修改的入口。**但开源本身不等于预测已经准确**；作者邀请社区改善准确性，也说明预测质量仍有优化空间。\n\n## 这条消息没有回答哪些关键问题？\n\n原帖是一则简短的功能与开源公告，没有提供预测算法、准确率测试，也没有说明显示的概率是否经过校准——例如，“80%”是否真的对应大量类似请求中约八成的实际调用。\n\n因此，最稳妥的理解是：**Jev Skill Typeahead 是一个帮助观察技能选择倾向的辅助工具，而不是 Claude 实际调用行为的确定预告。**它是否足够准确、能在多大程度上改善使用体验，还需要结合代码和实际使用验证。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1791543989853,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8466691fe4abd7fdde72c6b89abd1ddb35177a4d705e1da231d63845f3cd03ed",
+  "refs": {
+    "sessionId": "1791544136847_y7lrsbfg"
+  },
+  "revisionId": "sha256:81ba9c502f69938a0b1d712e8ecc8464cac7dc82013a6f6935bac0e09817c5ba",
+  "schemaVersion": 1,
+  "updatedAt": 1791543989853
+}

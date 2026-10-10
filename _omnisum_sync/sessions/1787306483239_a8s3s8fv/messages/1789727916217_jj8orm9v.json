@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727916215,
+  "entityType": "message",
+  "id": "1789727916217_jj8orm9v",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Gamma 的 AEO 增长方法：让产品进入 AI 的答案\n\nGamma 在盈利状态下做到 1 亿用户、1 亿美元 ARR，AEO（面向 AI 答案引擎的内容优化）已成为其增长最快、不可忽视的获客渠道之一。核心变化是：用户正从搜索网页转向直接询问 ChatGPT，品牌竞争目标也从“获得点击”变为“被 AI 推荐和引用”。\n\n## AEO 像 SEO 执行，却要像品牌广告衡量\n\nGamma 发现，来自 ChatGPT 的直接引荐流量一度增长 8 倍，但占比仍低于 1%；与此同时，用户自报“从 ChatGPT/Perplexity 了解到 Gamma”的比例持续上升。因此 AEO 存在大量无法通过点击归因的“浏览后转化”，应结合注册问卷等方式衡量，而不能只看网站流量。\n\n## 不同模型需要不同打法\n\n据 Gamma 的实践观察，各平台策略仅约 30%—40% 重合：\n\n- **ChatGPT**：Reddit 影响最大；Gamma 的 AI 新客中，ChatGPT 占比超过 90%。\n- **Google AI Overviews**：更接近传统 SEO。\n- **Perplexity**：偏好第三方网站和较新的内容。\n- **Claude**：引用较少，更适合通过 MCP 接入生态，强化使用与留存，而非直接获客。\n\n## Reddit 的关键是比较、场景与持续运营\n\n有效内容不是单纯夸产品，而是在真实问题中进行比较，如“Gamma 与 PowerPoint 的差异”，并进一步切入“适合医疗销售的 CRM”等长尾场景。新内容可能需 30—45 天才被 ChatGPT 引用，且引用存在尚不明确的“半衰期”，因此 AEO 是持续运营而非一次性投放。负面评价也可能长期进入模型答案，需要重视口碑风险。\n\n## 下一阶段是让产品可被智能体使用\n\nGamma 会为部分 AEO 内容采用“80% 服务爬虫、20% 保证人类可读”的设计，但强调 AI 生成不等于垃圾内容，深度与真实性仍是基础。更长期的机会是“agent-first”：让智能体能发现、安装并调用产品。AEO可被视为“向智能体营销”的早期形态，但具体规则仍是快速变化的黑箱。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727916215,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c14a127942a1f2099868b47a2df479e15a0a8d913a07f35c08d4a5293a456380",
+  "refs": {
+    "sessionId": "1787306483239_a8s3s8fv"
+  },
+  "revisionId": "sha256:63d974856e5ca986de0e3b22c94bcb252a4f3477447a9f2b186c87ee19ec7482",
+  "schemaVersion": 1,
+  "updatedAt": 1789727916215
+}

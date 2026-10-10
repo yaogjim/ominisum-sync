@@ -1,0 +1,242 @@
+{
+  "createdAt": 1789875895682,
+  "entityType": "session",
+  "id": "1789875895682_qyge2zsc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "测试多问题API时，将同一证据分别置于共享状态、兄弟问题和移除条件中，重复比较目标问题的概率输出，检验行为层面的信息隔离。",
+      "分别改变状态长度、问题数量和选项数量，记录服务延迟与计费字段，避免将计费token数直接解释为模型生成量。",
+      "将分类概率与业务执行策略分离；在概率可靠且误报、漏报成本适用时，按成本推导决策阈值，而非统一使用最高概率答案。"
+    ],
+    "archiveReason": "对直接概率输出、共享上下文计算和问题隔离提供了可复用解释，并展示了通过受控干预分析黑盒API行为的方法。",
+    "byline": "Archer Hume",
+    "classifiedAt": 1790762379640,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Jev决策模型架构与黑盒验证",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "archerhume.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://archerhume.com/og-image/jevs-architecture-unmasked.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://archerhume.com/og-image/jevs-architecture-unmasked.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "直接读出的预测概率与模型生成的置信度文本不是同一机制，但两者都可能失准，不能仅凭输出形式认定可靠。",
+      "共享状态表示可减少多问题请求中重复的状态编码；问题分支仍需读取状态，因此并未消除全部计算成本。",
+      "API的output_tokens可能只是响应序列化后的计费统计，不能直接用于推算神经网络解码步数或生成速度。"
+    ],
+    "metaAuthor": "Archer Hume",
+    "oneHighValuePoint": "将同一条证据分别放入共享状态和兄弟问题，通过目标问题输出的变化检验信息可见性，比仅凭延迟或计费字段猜测架构更有解释力。",
+    "oneLineReview": "对AI决策系统设计和黑盒验证具有明确参考价值，但现有探测只能支持部分架构假设，不能替代实现披露与可靠性评估。",
+    "primaryCategory": "AI技术与模型架构",
+    "published": "2026-09-17T00:00:00.000Z",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留架构分析与实验方法，具体实现推断须待进一步验证",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@id": "https://archerhume.com/posts/jevs-architecture-unmasked#article",
+            "@type": "BlogPosting",
+            "articleSection": "Essay",
+            "author": {
+              "@id": "https://archerhume.com/#person"
+            },
+            "creator": {
+              "@id": "https://archerhume.com/#person"
+            },
+            "dateModified": "2026-09-17T00:00:00.000Z",
+            "datePublished": "2026-09-17T00:00:00.000Z",
+            "description": "I probed Jev with 10,000 API calls to work out roughly how it’s built, and why most of the grifter takes on X are completely wrong.",
+            "headline": "Jev’s Architecture Unmasked",
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://archerhume.com/og-image/jevs-architecture-unmasked.png"
+            },
+            "inLanguage": "en-AU",
+            "isPartOf": {
+              "@id": "https://archerhume.com/posts#blog"
+            },
+            "keywords": "ai, research, transformers, calibration, reverse-engineering",
+            "mainEntityOfPage": {
+              "@id": "https://archerhume.com/posts/jevs-architecture-unmasked#webpage",
+              "@type": "WebPage"
+            },
+            "publisher": {
+              "@id": "https://archerhume.com/#person"
+            },
+            "url": "https://archerhume.com/posts/jevs-architecture-unmasked"
+          },
+          {
+            "@id": "https://archerhume.com/posts/jevs-architecture-unmasked#webpage",
+            "@type": "WebPage",
+            "about": {
+              "@id": "https://archerhume.com/posts/jevs-architecture-unmasked#article"
+            },
+            "description": "I probed Jev with 10,000 API calls to work out roughly how it’s built, and why most of the grifter takes on X are completely wrong.",
+            "inLanguage": "en-AU",
+            "isPartOf": {
+              "@id": "https://archerhume.com/#website"
+            },
+            "name": "Jev’s Architecture Unmasked",
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://archerhume.com/og-image/jevs-architecture-unmasked.png"
+            },
+            "url": "https://archerhume.com/posts/jevs-architecture-unmasked"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "item": "https://archerhume.com/",
+                "name": "Home",
+                "position": 1
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://archerhume.com/posts",
+                "name": "Posts",
+                "position": 2
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://archerhume.com/posts/jevs-architecture-unmasked",
+                "name": "Jev’s Architecture Unmasked",
+                "position": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "@id": "https://archerhume.com/posts/jevs-architecture-unmasked#article",
+        "@type": "BlogPosting",
+        "articleSection": "Essay",
+        "author": {
+          "@id": "https://archerhume.com/#person"
+        },
+        "creator": {
+          "@id": "https://archerhume.com/#person"
+        },
+        "dateModified": "2026-09-17T00:00:00.000Z",
+        "datePublished": "2026-09-17T00:00:00.000Z",
+        "description": "I probed Jev with 10,000 API calls to work out roughly how it’s built, and why most of the grifter takes on X are completely wrong.",
+        "headline": "Jev’s Architecture Unmasked",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://archerhume.com/og-image/jevs-architecture-unmasked.png"
+        },
+        "inLanguage": "en-AU",
+        "isPartOf": {
+          "@id": "https://archerhume.com/posts#blog"
+        },
+        "keywords": "ai, research, transformers, calibration, reverse-engineering",
+        "mainEntityOfPage": {
+          "@id": "https://archerhume.com/posts/jevs-architecture-unmasked#webpage",
+          "@type": "WebPage"
+        },
+        "publisher": {
+          "@id": "https://archerhume.com/#person"
+        },
+        "url": "https://archerhume.com/posts/jevs-architecture-unmasked"
+      },
+      {
+        "@id": "https://archerhume.com/posts/jevs-architecture-unmasked#webpage",
+        "@type": "WebPage",
+        "about": {
+          "@id": "https://archerhume.com/posts/jevs-architecture-unmasked#article"
+        },
+        "description": "I probed Jev with 10,000 API calls to work out roughly how it’s built, and why most of the grifter takes on X are completely wrong.",
+        "inLanguage": "en-AU",
+        "isPartOf": {
+          "@id": "https://archerhume.com/#website"
+        },
+        "name": "Jev’s Architecture Unmasked",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://archerhume.com/og-image/jevs-architecture-unmasked.png"
+        },
+        "url": "https://archerhume.com/posts/jevs-architecture-unmasked"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "item": "https://archerhume.com/",
+            "name": "Home",
+            "position": 1
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://archerhume.com/posts",
+            "name": "Posts",
+            "position": 2
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://archerhume.com/posts/jevs-architecture-unmasked",
+            "name": "Jev’s Architecture Unmasked",
+            "position": 3
+          }
+        ]
+      }
+    ],
+    "schemaTypes": [
+      "BlogPosting",
+      "WebPage",
+      "BreadcrumbList"
+    ],
+    "secondaryCategories": [
+      "技术实现与性能评估",
+      "产品决策系统"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章结合官方描述、API探测与延迟测量，推测Jev通过共享状态、隔离问题分支和直接概率读出完成并行决策；解释其计算收益与业务阈值应用，并强调实际架构尚未证实，概率仍需校准。",
+    "tags": [
+      "概率读出",
+      "共享上下文",
+      "问题分支隔离",
+      "黑盒API测试",
+      "概率校准"
+    ],
+    "title": "Jev’s Architecture Unmasked — archerhume",
+    "totalScore": 77,
+    "url": "https://archerhume.com/posts/jevs-architecture-unmasked/"
+  },
+  "payloadHash": "sha256:fdf13cd9fa3752cc1fd8a4b17c9d7ce59134c85dbff3078bdc862d1ba5315526",
+  "refs": {},
+  "revisionId": "sha256:ed29328a332e5d250d9bbcce0670754406c240fba6a16daeabb7a1e094419e4d",
+  "schemaVersion": 1,
+  "updatedAt": 1790770760788
+}

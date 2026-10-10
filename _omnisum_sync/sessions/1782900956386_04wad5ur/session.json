@@ -1,0 +1,65 @@
+{
+  "createdAt": 1782900956386,
+  "entityType": "session",
+  "id": "1782900956386_04wad5ur",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如对 Eve 或 OpenUI 感兴趣，可直接查找官方文档或演示视频",
+      "删除该摘录，避免低价值社交媒体内容占用知识库空间"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783039933942,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 3,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Eve生成式UI推文简讯",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量过低，无法形成有效知识沉淀；回复内容噪声较多，长期参考价值很低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Eve 可能在探索由 OpenUI 驱动的生成式 UI 能力",
+      "作者认为基于简单文件系统的代理抽象是一个有潜力的方向"
+    ],
+    "oneHighValuePoint": "简单文件系统驱动的代理式 UI 生成方向可能值得关注。",
+    "oneLineReview": "这是一条低信息密度的产品动态推文，不适合作为知识资料保留。",
+    "primaryCategory": "AI产品动态",
+    "rating": "E",
+    "rejectReason": "内容仅为简短推文摘录，缺少背景、技术细节、案例、方法论和可执行信息，热门回复也高度混杂且与主题相关性弱。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "生成式UI",
+      "社交媒体摘录"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章是一条关于 Eve 使用 OpenUI 实现生成式 UI 的推文摘录，仅表达了作者对产品方向的认可，并附带若干热门回复。正文缺乏技术细节、实现过程、案例分析或可操作步骤。",
+    "tags": [
+      "Eve",
+      "OpenUI",
+      "生成式UI",
+      "Vercel",
+      "推文"
+    ],
+    "title": "Rabi Shanker Guha: Introducing Generative UI for Eve powered by OpenUI Building this was a real joy",
+    "totalScore": 21,
+    "url": "https://x.com/rabi_guha/status/2071989758931406883"
+  },
+  "payloadHash": "sha256:d75c6d2c774983061b000442d11979a4cd88a609cdfbd00dac19495b8c314908",
+  "refs": {},
+  "revisionId": "sha256:ef13eaddf82352196aa6ad5d4fed5abc8eba79ff349937b846167e8e9e04a11c",
+  "schemaVersion": 1,
+  "updatedAt": 1783039934341
+}

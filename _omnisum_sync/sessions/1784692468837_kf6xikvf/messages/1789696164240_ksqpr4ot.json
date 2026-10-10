@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696164241,
+  "entityType": "message",
+  "id": "1789696164240_ksqpr4ot",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nAI 编程的关键不是“塞更多上下文、跑更多代理”，而是精心控制模型看到的信息，并在人类最有判断价值的设计环节介入。\n\n## 关键内容\n\n- **上下文工程**：RAG、记忆、历史记录等，本质上都是向模型输入 token。上下文越长不一定越好；信息过多、指令冲突或错误轨迹都会降低输出质量。\n- 嘉宾建议**主动压缩上下文**：先让模型研究代码并生成摘要，再在新会话中完成设计、规划和实现，尽量让每一步处于模型表现较好的较短上下文中。\n- 自动循环适合测试、代码规范修复等**结果容易验证**的任务，但不宜完全取代人工审查。嘉宾团队曾让代理持续写代码、无人阅读，约四个月后因代码越来越难维护而关闭该系统。\n- 更稳妥的做法是让人类提前参与架构和实现路径设计，以少量规划换取更高质量的代码，而非一味追求消耗更多 token。\n\n## 通俗解读\n\n这不是反对 AI 自动化，而是强调：AI 很会完成眼前任务，却未必能判断代码几个月后是否容易修改。文章适合正在使用编码代理、设计自动化开发流程的人细读；若只想了解概念，以上已覆盖核心。**所给转录末尾被截断，部分结论可能不完整。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696164241,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:705bb3965f0f41fd6fc15441440754b31fd7eb2dc6f4d8f1ab668cc78ab01b05",
+  "refs": {
+    "sessionId": "1784692468837_kf6xikvf"
+  },
+  "revisionId": "sha256:ada0113630094b3400b76dba8e9b4c93e5b078680d32aeb36f75ba96b50e35c8",
+  "schemaVersion": 1,
+  "updatedAt": 1789696164241
+}

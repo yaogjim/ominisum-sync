@@ -1,0 +1,86 @@
+{
+  "createdAt": 1783064355106,
+  "entityType": "session",
+  "id": "1783064355107_dwjqt4pq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需使用该项目，优先阅读 /v1/agent 请求体、SSE 响应格式和工具参数定义。",
+      "检查 Chrome 扩展中 automationEnabled、debugger 权限和 userScripts 权限是否正确配置。",
+      "参考文中的文件路径定位 sidepanel、background、daemon 和 automation tools 的具体实现。",
+      "在调试代理行为时关注工具结果、页面内容 payload 和模型解析逻辑。"
+    ],
+    "archiveReason": "包含具体架构、接口、工具调用和文件位置，适合作为实现或排查该项目自动化代理功能的技术参考",
+    "classifiedAt": 1783076335723,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Summarize自动化代理文档",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "summarize.sh",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://summarize.sh/social-card.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://summarize.sh/social-card.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "Summarize 的自动化代理由侧边栏、Background、内容脚本和本地守护进程组成。",
+      "/v1/agent 使用 SSE 返回 chunk、assistant、done、error 等事件。",
+      "工具包括 navigate、repl、ask_user_which_element、skill、debugger 和 summarize。",
+      "自动化能力默认关闭，需要在选项中启用，并可能请求 debugger、userScripts 等权限。",
+      "工具结果被视为数据而非指令，代理循环会在工具调用完成后继续请求守护进程。"
+    ],
+    "oneHighValuePoint": "清晰描述了侧边栏代理循环、本地守护进程和浏览器工具执行之间的职责边界：守护进程只返回助手消息，工具调用由面板本地执行。",
+    "oneLineReview": "高密度项目文档，适合维护或接入该工具，但通用方法论和长期价值有限。",
+    "primaryCategory": "AI Agent工程文档",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，若不使用该项目可删除",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Chrome扩展自动化",
+      "本地守护进程API"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Summarize Chrome 侧边栏自动化代理与本地守护进程的架构、数据流、权限配置、Daemon API、模型解析、页面内容构建及多种自动化工具调用方式。",
+    "tags": [
+      "Agent",
+      "Chrome Extension",
+      "Daemon",
+      "SSE",
+      "网页自动化"
+    ],
+    "title": "Agent / daemon — summarize",
+    "totalScore": 58,
+    "url": "https://summarize.sh/docs/agent.html"
+  },
+  "payloadHash": "sha256:7ec3329ea81eedd6138b926b443f111e693af30c036ffc16a6c7515716d11043",
+  "refs": {},
+  "revisionId": "sha256:b70e66de82e3c9661b991d68b91c60eab5385b343f0516dee1dec725b503754b",
+  "schemaVersion": 1,
+  "updatedAt": 1789695686905
+}

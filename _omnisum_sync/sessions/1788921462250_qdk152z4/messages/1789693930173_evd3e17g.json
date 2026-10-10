@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693930170,
+  "entityType": "message",
+  "id": "1789693930173_evd3e17g",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nCopperhead 是一款面向 KiCad 的开源 AI 助手，按固定流程修改电路板设计、同步文档并运行规则检查，重点解决原理图、物料表和设计约束彼此不一致的问题。\n\n## 关键内容\n\n- 流程分为规格、架构、选型、原理图、PCB 布局、生产文件、固件和测试计划 8 个阶段；每阶段必须生成实际文件并通过检查，否则停止，不会只给文字建议。\n- 它主要用于已有 KiCad 项目的迭代：修改前要求 Git 工作区干净、变更方案已验证；采用小范围编辑，便于审查，也声称不会编造缺少数据手册依据的料号。\n- 免费 CLI 在本地运行，需自备 Node、KiCad 和 Claude/GPT-5 API 密钥。云端版与团队版均为每人每月 49 美元，增加托管运行、网页查看、CI、权限管理等；企业版支持私有部署和 Altium。\n- 网站提供一个 ESP32-S3 摩尔斯电码键项目作为公开案例，但降低返工成本等效果主要是厂商自身主张。\n\n## 通俗解读\n\n它更像“会直接改工程文件的硬件协作代理”，而非自动画板聊天工具。KiCad 的 ERC/DRC 通过，只表示电气连接和布局规则未发现违规，不等于实物一定能正常工作。若你使用 KiCad、Git，并关心设计与文档同步，值得细读公开案例和仓库；否则首页信息已足够判断用途。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693930170,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3dc6ea51e37556e1f42b718a221837c05116a76b5afccd498cdbc55f41d92d71",
+  "refs": {
+    "sessionId": "1788921462250_qdk152z4"
+  },
+  "revisionId": "sha256:4199834f7d7092300d16819d56164ead07eec9b3146a2e0fdb25fa7f307e20bd",
+  "schemaVersion": 1,
+  "updatedAt": 1789693930170
+}

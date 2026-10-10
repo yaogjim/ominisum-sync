@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727597035,
+  "entityType": "message",
+  "id": "1789727597036_kcm0asr3",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Orbi 尝试让 AI 独立完成从 Issue 到代码合并\n\n作者正在招募用户共同测试 Orbi：开发者只需在 GitHub 创建 Issue，并添加 `ai-ready` 标签，系统便会自动写代码、提交 PR、独立评审并完成合并，目标是实现全程无人值守。作者称，自己已于 9 月 12 日在生产环境跑通一次零人工介入的完整流程。\n\n## 测试门槛低，重点是暴露真实问题\n\n参与者只需准备一个 GitHub 仓库，空仓库也可以，最好已配置 CI。测试无需付费、绑定银行卡或提供模型 API Key，所需额度由作者承担；遇到阻塞可直接反馈截图。前 10 名“共建者”可永久免单，并获得作者承担的每月 3 亿 DeepSeek Token，交换条件是持续反馈实际使用中的问题。\n\n## 作者宣称已获得较高开发吞吐量\n\n作者在回复中称，Orbi 一天内为三个公开仓库合并了 81 个 PR，其中核心项目 27 个、云端项目 43 个、官网 11 个；核心项目发布 7 个版本，云端发布 11 个版本。其本人没有直接写代码，只花约 3 小时编写任务和查看评审结论。\n\n这些数据来自作者自述，虽称可在公开 GitHub 仓库核验，但原文未提供代码质量、返工率和任务复杂度等指标。Orbi 的真正价值仍取决于它能否在真实项目中稳定理解需求、通过 CI，并控制错误合并风险。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727597035,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:562a7545e38583f02e2577c06a4876414c1ed0473e4fc66bc4d153cd78bb784e",
+  "refs": {
+    "sessionId": "1789703140260_vysx61dw"
+  },
+  "revisionId": "sha256:1a46ddd98ac18b5f64860aa79b07ee7d540a28793b4ee2f4345ed7786c8df1bb",
+  "schemaVersion": 1,
+  "updatedAt": 1789727597035
+}

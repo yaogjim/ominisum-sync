@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789013134910,
+  "entityType": "session",
+  "id": "1789013134910_l509wzfb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为下一个AI开发任务预先定义入口、操作路径、预期状态、数据变化、失败表现和证据要求。",
+      "封装项目的环境检查、启动、测试数据准备、登录、截图和清理等最小控制命令。",
+      "在扩大Agent并发前，持续记录一次完成率、平均返工次数、人工审查时间、冲突率和上线故障率。"
+    ],
+    "archiveReason": "包含可复用的Agent验证闭环、项目工具化、功能地图和并行扩展原则，对AI编程系统建设具有长期参考价值。",
+    "byline": "蓝哥AI",
+    "classifiedAt": 1789642933708,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 9,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "pstack构建AI开发验证闭环",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HRxHT0oaAAAOj_8?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HRxHT0oaAAAOj_8?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "Coding Agent的完成标准应从“代码和测试已生成”升级为真实用户路径通过，并附带截图、日志、视频或性能数据。",
+      "应将高频操作封装为可测试、可重复调用的项目控制工具，而不是反复依赖长Prompt临时指导Agent。",
+      "Feature Map可将代码库压缩为面向用户任务的产品地图，但必须随产品变化持续维护，避免形成过期记忆。"
+    ],
+    "oneHighValuePoint": "扩展Agent数量之前，应先让单个Agent能够依据明确验收标准运行真实产品、发现失败、自动返工并提交可复查证据。",
+    "oneLineReview": "方法框架清晰且高度相关，但生产力数据主要来自作者自述，实际效果仍需独立验证。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，可提炼为编码代理的验证、交付与并行扩展清单",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI编程工具",
+      "软件工程方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章拆解pstack如何通过验收标准、真实产品操作、证据提交、项目控制工具和Feature Map构建Coding Agent自验证闭环，并主张先提高单Agent可靠性，再扩展多Agent并行。",
+    "tags": [
+      "pstack",
+      "Coding Agent",
+      "自验证闭环",
+      "多Agent编排",
+      "验收标准"
+    ],
+    "title": "Cursor + Grok Bot + pstack，真正的 AI 软件工厂开始出现了",
+    "totalScore": 81,
+    "url": "https://x.com/0xlangeai/status/2097839261039153381"
+  },
+  "payloadHash": "sha256:6207c59520db0cd546e2238bae7dff83eec64c6a0697173ce796b0fbd80297f9",
+  "refs": {},
+  "revisionId": "sha256:ab9b57a1902685d0afdce215ee6c9d7a41b8a53b002b3528d7c5291b3dcc516a",
+  "schemaVersion": 1,
+  "updatedAt": 1790769372074
+}

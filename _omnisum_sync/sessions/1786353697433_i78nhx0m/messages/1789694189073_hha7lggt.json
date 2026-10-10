@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694189073,
+  "entityType": "message",
+  "id": "1789694189073_hha7lggt",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者把一台闲置的安卓手机改造成可替代 VPS 的个人服务器：保留 Android 管硬件，用 Termux、root 后的 Debian chroot 和自动化部署运行多个服务，成本低且可随网络移动。\n\n## 关键内容\n\n- 作者最初尝试刷入 postmarketOS，但 Wi‑Fi、硬件加速等驱动不可用，险些“变砖”；最终发现保留原厂 Android，反而能直接利用成熟的电源、网络和硬件支持。\n- Termux 负责 SSH、服务管理和网络入口；普通 Linux 应用运行在 Debian 环境中。PRoot 虽无需 root，但系统调用转换拖慢 Chrome，改用真正的 chroot 后性能明显改善。\n- Tailscale 用于远程管理，Cloudflare Tunnel 将网站暴露到公网，无需固定 IP 或路由器端口；手机换网络后服务也能自动恢复。\n- 全部配置由 Ansible 和 Git 管理，支持校验、健康检查与回滚。但各服务共享 Android 内核，不能视为安全隔离；重要数据仍需异机备份。\n\n## 通俗解读\n\n这不是把手机彻底变成传统 Linux 服务器，而是让 Android 当“硬件管家”，Linux 环境负责跑应用。闲置、可 root 的 ARM64 手机因此具备低功耗、静音和自带电池备援等优势，但稳定性、安全边界和性能仍不及正规服务器。\n\n**是否值得细读：**若你想亲手搭建低成本个人服务，文章的踩坑与架构细节很有价值；若只关心结论，知道“可行但需要 root、自动化运维和备份”即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694189073,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:42461e3c823d6ec68aff43f579c675e239468a8d12fe515cfc165113e40777a3",
+  "refs": {
+    "sessionId": "1786353697433_i78nhx0m"
+  },
+  "revisionId": "sha256:427cecf5b7b45cc5d3c540199078d3e645aa64fb6fcaac878e09b19e4abd23fc",
+  "schemaVersion": 1,
+  "updatedAt": 1789694189073
+}

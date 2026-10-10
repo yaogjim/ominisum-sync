@@ -1,0 +1,72 @@
+{
+  "createdAt": 1782900922644,
+  "entityType": "session",
+  "id": "1782900922644_t11i719k",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果需要接入 X API MCP，先在 X Developer Portal 创建启用 OAuth 2.0 的应用并配置 redirect URI",
+      "根据使用场景选择 app-only Bearer 或 xurl bridge，写操作优先使用 xurl bridge",
+      "在 Cursor、Claude、VS Code 或其他 MCP 客户端中添加对应 MCP 配置",
+      "将 CLIENT_ID、CLIENT_SECRET、token 等敏感信息放入环境变量或本地安全配置，避免提交到仓库",
+      "实际接入前测试首次 OAuth 登录、token 刷新和工具列表是否正常加载"
+    ],
+    "archiveReason": "官方文档提供了 X MCP 服务器、OAuth 桥接、客户端配置和故障排查信息，对实际集成有参考价值",
+    "classifiedAt": 1783039979454,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "X MCP服务器接入指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "docs.x.com",
+    "favicon": "https://docs.x.com/mintlify-assets/_mintlify/favicons/x-preview/FsnFMtl8dbNRWPu8/_generated/favicon/favicon.ico",
+    "knowledgePoints": [
+      "X API MCP 可让兼容 MCP 的 AI 工具搜索 X 全量归档、查询用户、管理书签、获取趋势并草拟文章",
+      "app-only Bearer 方式适合只读场景，但缺少用户上下文和自动刷新能力",
+      "xurl mcp bridge 可在本地处理 OAuth2 登录、缓存和刷新 token，适合需要用户权限或写操作的场景",
+      "可同时连接 X API MCP 与 X Docs MCP，使 AI 助手既能查文档又能调用 API",
+      "配置中需要注意 redirect URI、startup_timeout、token 安全和 stdout JSON-RPC 通道干净性"
+    ],
+    "oneHighValuePoint": "说明了 X MCP 不直接支持动态 OAuth 发现，需要通过 xurl 本地桥接处理 OAuth2 PKCE 登录和 token 刷新。",
+    "oneLineReview": "作为官方接入文档具备实用性，但内容偏配置说明，方法论和通用知识价值有限。",
+    "primaryCategory": "AI工具集成",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，适合在实际接入 X MCP 或配置 AI 工具时查阅",
+    "secondaryCategories": [
+      "MCP",
+      "X API",
+      "开发者文档"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 X 提供的两个 MCP Server：X API MCP 与文档 MCP，并说明通过 app-only Bearer 或 xurl 本地桥接方式接入 Cursor、Claude、VS Code 等客户端，以及认证、配置和排错要点。",
+    "tags": [
+      "MCP",
+      "X API",
+      "OAuth",
+      "AI Agent",
+      "工具配置"
+    ],
+    "title": "MCP Servers - X",
+    "totalScore": 55,
+    "url": "https://docs.x.com/tools/mcp"
+  },
+  "payloadHash": "sha256:5f1b35821cf375a9a2aa4d60782f6f87ee8daa239d697737065d7d6ab297e0f0",
+  "refs": {},
+  "revisionId": "sha256:56eeb97f792a93d14764cbff19c2d9406a2205c5dab0bf788a41b8bb619415fe",
+  "schemaVersion": 1,
+  "updatedAt": 1789728612330
+}

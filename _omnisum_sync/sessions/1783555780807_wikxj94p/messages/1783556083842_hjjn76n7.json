@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783556083843,
+  "entityType": "message",
+  "id": "1783556083842_hjjn76n7",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Claude工作流Codex后端\n\n**评级**: A (74分)  |  **深度阅读**: 可选  |  **建议操作**: 精读\n\n**主类别**: AI工程工具\n**次类别**: Agent工作流, 开发效率工具\n**标签**: #Claude Code #Codex #动态工作流 #多智能体 #工作流可视化\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 工程可操作性强、方法论价值较高，但 README 营销化和疑似 AI 生成痕迹较重，证据主要来自自述与示例。\n**核心高价值点**: 最有价值的是将一次性 agent 调用扩展为可保持上下文、可 steer、可竞速并取消失败路径的 sessionful worker 模式。\n\n### 摘要\n该仓库提供一个 Claude Code 技能和独立 runner/viewer，可将动态工作流运行在本地 Codex/GPT 后端，支持多智能体并行、会话保持、竞速取消、人机门控、运行可视化和成本总结。\n\n### 知识要点\n- 通过 /codex-workflows 可让 Claude Code 根据粗略任务自动生成并运行 Codex-backed 动态工作流\n- agent.start、session.steer、agent.waitAny、session.cancel 组合支持长生命周期 worker、热上下文追问和竞速取消\n- viewer、ASCII map、fleet dashboard、summarize-run 提供运行监控、成本分析和可靠性复盘能力\n- GoalLint、ClaimCheck、root-cause lab、hedged race 等模式可作为可复用的多智能体工作流模板\n- 支持 read-only 与 workspace-write 沙箱、人机 gate、resume、budget、plan dry-run 等工程控制手段\n\n### 行动项\n- 先运行 bundled demo，观察 viewer、sessionful worker 和 human gate 的实际交互体验\n- 用 --plan 和 read-only 模式在一个低风险代码审计任务上试跑\n- 重点阅读 runner、references 和 examples/harness-zoo 中的 GoalLint、ClaimCheck 模板\n- 验证其对当前 Codex CLI 版本、模型可用性、resume 机制和成本统计的兼容性\n- 如长期使用，可将高频任务沉淀为自有 harness-zoo 工作流模板\n\n### 存档判定\n归档: 是 — 原因: 包含安装方式、使用示例、工作流模式、会话式worker、竞速取消、人机门控和成本监控等较完整的工程实践信息\n删除: 否\n留存决策: 长期保留，适合在需要构建或评估多智能体编排、Codex后端工作流、运行可视化工具时参考",
+    "role": "assistant",
+    "timestamp": 1783556083843,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:f429022e21ba550b62ecaca26ef1b026a36c18b579a2a35d3b80b5ed508c78c1",
+  "refs": {
+    "sessionId": "1783555780807_wikxj94p"
+  },
+  "revisionId": "sha256:685c932b590cd18fe056721e587866ce8870e3464992db57398f159831bbd34f",
+  "schemaVersion": 1,
+  "updatedAt": 1783556083843
+}

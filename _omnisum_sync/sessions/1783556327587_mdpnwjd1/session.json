@@ -1,0 +1,63 @@
+{
+  "createdAt": 1783556327587,
+  "entityType": "session",
+  "id": "1783556327587_mdpnwjd1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确有兴趣，可另行查找完整演讲原文",
+      "若无法获取全文，直接删除该条记录"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783556345991,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 1,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 1,
+      "relevance": 2,
+      "transferability": 1
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "高善文演讲转发线索",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "内容缺失，信息量极低，无法评估或复用，保留价值不足。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "该链接可能指向高善文一次公开演讲全文",
+      "当前提供文本未包含任何可验证观点或方法论"
+    ],
+    "oneHighValuePoint": "可作为查找高善文最后一次公开演讲全文的线索。",
+    "oneLineReview": "只有标题线索，没有实质内容，不值得保留。",
+    "primaryCategory": "信息线索",
+    "rating": "E",
+    "rejectReason": "正文仅包含转发式标题和链接提示，未提供演讲全文或核心观点，无法形成有效知识沉淀。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "财经评论",
+      "社交媒体"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该内容仅为一条社交媒体链接线索，正文提到“高善文生前最后一次公开演讲（全文）”，但未提供实际演讲内容、观点摘要、数据或分析。",
+    "tags": [
+      "高善文",
+      "公开演讲",
+      "宏观经济"
+    ],
+    "title": "x.com/baoshu88/status/2074539335571947695",
+    "totalScore": 12,
+    "url": "https://x.com/baoshu88/status/2074539335571947695"
+  },
+  "payloadHash": "sha256:49faf73eaa6510fcf8aa710e16c26f73cbd4f06c999bd91bfded376850731a8b",
+  "refs": {},
+  "revisionId": "sha256:ff8f603b62a04a4017802ef8e71c51af4c8e9350125fd11028a3945cb4b9f78a",
+  "schemaVersion": 1,
+  "updatedAt": 1783556346026
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695785684,
+  "entityType": "message",
+  "id": "1789695785687_1l843ef1",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n一份好的 AI 编程 Spec 不是传统 PRD，而是明确目标、约束、边界、验收标准和技术上下文的“执行协议”，让 Agent 知道该做什么、不能做什么，以及怎样才算完成。\n\n## 关键内容\n\n- **先分清 Spec 的定位**：PRD 讲用户需求，技术设计讲架构方案，用户故事只表达意图；Spec 重点定义软件的外部行为和执行规则，如输入输出、异常处理及安全限制。\n- **核心是五要素**：目标提供方向；约束规定底线；边界明确本期不做什么；验收标准让 Agent 能通过测试自行验证；技术上下文帮助它找到代码、命令和项目规范。\n- **不必一次写完**：可先在 `CLAUDE.md` 或 `AGENTS.md` 写项目简介、技术栈和关键约束，再让 Agent 扫描代码库补充细节，由人审核纠错。\n- **Spec 应随项目更新**：先在计划阶段对齐理解，再写代码；需求或代码变化时同步修改，而不是写完后长期搁置。\n\n## 通俗解读\n\nAgent 会用训练数据中的“常见做法”补齐空白，因此一句“做注册页面”可能引发越界开发或安全问题。Spec 的作用不是把文档写长，而是提前堵住关键误解，并给出可验证的完成条件。\n\n**是否值得细读：值得。** 尤其适合正在使用 Claude Code、Cursor 等工具的人；但文章案例较多、观点有重复，掌握“五要素＋三行起步法”后即可快速实践。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695785684,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0b46f1fedbc2d9f81946a5b58a6bd83efbc8adf6052327a978d979d9aee44659",
+  "refs": {
+    "sessionId": "1783417736609_04tg0qaf"
+  },
+  "revisionId": "sha256:19cba65e3ffcbb1379f35941419dead552cf884554f2f119c06a7b0b58822651",
+  "schemaVersion": 1,
+  "updatedAt": 1789695785684
+}

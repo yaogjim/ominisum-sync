@@ -1,0 +1,70 @@
+{
+  "createdAt": 1783301466952,
+  "entityType": "session",
+  "id": "1783301466952_wah9ylvw",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确有测试需求，先核查当地法律法规和 Cloudflare 服务条款。",
+      "仅在隔离测试环境中按 README 配置 ADMIN、KV 和自定义域名。",
+      "部署后验证访问控制、日志开关和密钥安全，避免公开泄露。",
+      "测试完成后删除相关部署和敏感环境变量。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783301507155,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 4
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Edgetunnel部署说明评估",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "edgetunnel 支持 VLESS、Trojan、Shadowsocks 等协议，并可运行在 Cloudflare Workers/Pages 上。",
+      "部署核心配置包括 ADMIN、KV、UUID、PROXYIP、SOCKS5、HTTP 代理等环境变量。",
+      "可通过 URL Path 动态指定 PROXYIP、SOCKS5 或 HTTP 代理方案。",
+      "项目提供订阅生成、客户端适配和后台管理面板等功能。"
+    ],
+    "oneHighValuePoint": "提供了 Cloudflare Workers 和 Pages 两种部署路径及关键环境变量配置说明。",
+    "oneLineReview": "适合作为临时部署参考，但不值得长期精读或归档。",
+    "primaryCategory": "网络工具",
+    "rating": "C",
+    "rejectReason": "内容主要是项目 README 和部署步骤，缺少原理分析、性能数据、安全评估和长期方法论价值。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Cloudflare Workers",
+      "代理隧道"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 edgetunnel 项目的功能特性、Cloudflare Workers/Pages 部署方式、环境变量配置、代理切换路径、客户端适配及免责声明。实操步骤较完整，但主要是工具说明，缺少深入原理和证据支撑。",
+    "tags": [
+      "edgetunnel",
+      "Cloudflare",
+      "VLESS",
+      "Trojan",
+      "Shadowsocks",
+      "部署教程"
+    ],
+    "title": "cmliu/edgetunnel: edgetunnel2 VLESS/Trojan/SS 多功能面板",
+    "totalScore": 48.5,
+    "url": "https://github.com/cmliu/edgetunnel"
+  },
+  "payloadHash": "sha256:570ddc75663a9fc21db2abe04ceb1ba32c57b65dd875a6ab63fb61360f0e5720",
+  "refs": {},
+  "revisionId": "sha256:342c92632fe6d699956a785d5f848ce52b3f6047cbb0935f5dcc79c0009d39b5",
+  "schemaVersion": 1,
+  "updatedAt": 1783309305468
+}

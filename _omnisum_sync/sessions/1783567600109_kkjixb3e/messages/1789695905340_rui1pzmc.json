@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695905340,
+  "entityType": "message",
+  "id": "1789695905340_rui1pzmc",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n技术选型应优先采用成熟、团队熟悉的“无聊技术”，把有限的创新能力留给真正决定业务成败的问题，而不是盲目追逐新框架。\n\n## 关键内容\n\n- 作者用“创新 token”作比喻：每引入一种陌生技术，都会增加学习、维护、排障和协作成本；一家公司能同时承受的此类风险有限。\n- 成熟技术的优势不只是功能清楚，更在于故障模式、运维方法和社区经验相对明确；新技术则有更多无法预料的“未知未知”。\n- 选型不能只看某项任务的局部最优，而要考虑全公司的长期成本。通常，少量“足够好”的通用工具，比大量各自最优的工具更容易保持系统可靠。\n- 作者并非反对创新。引入新技术前，应先确认现有工具为何不够用；若替换旧系统，还要制定迁移计划，并让决策在公司层面可见。\n\n## 通俗解读\n\n“token”不是具体额度，而是在提醒团队：新技术会持续消耗组织注意力。文中 Node.js、MongoDB 等例子来自 **2015 年的技术环境**，不应理解为它们今天必然“不成熟”。文章篇幅不长、原则清晰，对负责技术选型或容易追新的团队值得细读。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695905340,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:bfba214328a21730200ae95dc102f3ec51704b0629dce5c21c852c92331d9690",
+  "refs": {
+    "sessionId": "1783567600109_kkjixb3e"
+  },
+  "revisionId": "sha256:987d74ee6972094fa4bdc9879b944bc36cb4660ec035b21cca5e9fde095f7aee",
+  "schemaVersion": 1,
+  "updatedAt": 1789695905340
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784713250902,
+  "entityType": "message",
+  "id": "1784713250902_r2j7o0a7",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 主旨概括\n\n“Claude Code From Scratch”是一个结合电子书与配套代码的开源学习项目，以约 **4,300 行代码**简化复现 Claude Code 的核心架构，帮助开发者不必直接阅读约 **50 万行源码**，也能理解 Coding Agent 的工作原理。\n\n## 项目特点\n\n- 提供 **TypeScript 和 Python** 两种实现版本。\n- 采用“真实源码如何实现 → 教学版本如何简化”的方式逐步讲解。\n- 不只是介绍概念，还可以跟随教程亲手编写数千行代码，在实践中掌握 Claude Code 的设计精髓。\n\n## 覆盖的核心能力\n\n项目复现并讲解了 Claude Code 的多项关键机制，包括：\n\n- **Agent Loop**：让智能体持续完成“思考、调用工具、读取结果、继续执行”的循环。\n- **13 个工具**：支持工具调用、并行执行，以及流式输出过程中的提前启动。\n- **4 层上下文压缩**：在对话和任务内容不断增加时，压缩信息以控制上下文长度。\n- **语义记忆召回**：根据语义检索与当前任务相关的历史信息。\n- **技能系统**：将不同任务能力封装为可复用技能。\n- **多 Agent 协作**：让多个智能体分工处理复杂任务。\n- **MCP 集成**：通过标准协议连接外部工具与数据源。\n\n## 学习方式与价值\n\n- 全书共 **13 章**，每章都是可跟随操作的分步教程。\n- 适合希望快速理解 Claude Code、Coding Agent 架构及实现方法的开发者。\n- 作者快速浏览后也表示有所收获，认为该项目值得相关学习者参考。\n\n## 语言与链接\n\n项目提供**中文和英文版本**：\n\n- [Claude Code From Scratch](https://diwang.info/claude-code-from-scratch/#/)\n\n> 原文热门回复中还提到姊妹篇“Claude Code 工作原理”；其余部分回复与项目主题无直接关系。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784713250902,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:64e084ec60e9b5f9429c6e6ccefb1785225f887431311316a921a32cb904f540",
+  "refs": {
+    "sessionId": "1782991756658_z2zojkje"
+  },
+  "revisionId": "sha256:dc8a328f38654eea89ff6108c446e37e9eaddb2c1b52efa698bda27df931a78c",
+  "schemaVersion": 1,
+  "updatedAt": 1784713250902
+}

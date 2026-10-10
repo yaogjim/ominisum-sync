@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784693942483,
+  "entityType": "session",
+  "id": "1784693942483_4ael6li4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "针对自己的代理式编码任务，记录不同模型与推理强度组合的成功率、延迟和成本。",
+      "将高强度 Luna 作为默认候选，仅在其性能不足时测试 Terra Ultra 等更高性能方案。",
+      "决策前核对更正后的原始图表、模型标签及最新价格，避免直接采用错误映射。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1784694194767,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "代理式编码模型与推理强度选型",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "除非追求 Terra Ultra 级别的最高性能，较高推理强度的 Luna 可能以更低成本达到相同或更好的表现。",
+      "Sol 的低强度配置可能被 Luna 的高强度配置支配，而 Sol Extra High 可能不如直接选择 Terra Ultra。",
+      "图表标签曾发生错位，且部分强度等级是根据有限数据点推断的，解读时需要保留不确定性。"
+    ],
+    "oneHighValuePoint": "模型选型应同时比较模型、推理强度、性能与成本的组合，并优先选择帕累托前沿方案，而非默认使用最强模型。",
+    "oneLineReview": "提供了直接的模型性价比选择建议，但证据链和适用条件不足，适合作为测试假设而非最终结论。",
+    "primaryCategory": "AI 编程工具",
+    "rating": "B",
+    "rejectReason": "结论依赖特定模型和时点，图表曾出现标签错位，且部分强度标签由作者推断，长期参考价值有限",
+    "retentionDecision": "选择性浏览，实际选型前需核对更正后的原始图表与成本数据",
+    "secondaryCategories": [
+      "模型评测",
+      "成本优化"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于官方图表的改版，比较代理式编码中 Luna、Sol 与 Terra 在不同推理强度下的性能和成本，并提出选型建议；但原图曾有标签错位，部分强度标签来自作者推断。",
+    "tags": [
+      "代理式编码",
+      "模型选型",
+      "推理强度",
+      "帕累托前沿",
+      "成本性能"
+    ],
+    "title": "Sebastian Raschka: For agentic coding, one can say: - Unless you need Terra Ultra perf, it's always…",
+    "totalScore": 60,
+    "url": "https://x.com/rasbt/status/2075573860796436626"
+  },
+  "payloadHash": "sha256:a0ac17addddc55791776d1480f324c9a8d2cdc02faf14c49e92d24d8d1534981",
+  "refs": {},
+  "revisionId": "sha256:ee13a6f76b07d1a4b995136d957ae87b7a9b64959611b35eb2be5fb6045083e9",
+  "schemaVersion": 1,
+  "updatedAt": 1789728802361
+}

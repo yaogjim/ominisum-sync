@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784891001783,
+  "entityType": "session",
+  "id": "1784891001783_pc9gtueo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "盘点目标知识库需要连接的数据源、权限模型、刷新频率和审计要求。",
+      "用带引用和权限校验的真实问答集测试运行时检索方案，而非仅比较演示效果。",
+      "比较自建所需的长期工程人力与采购成本，再决定采用自建、采购或混合方案。"
+    ],
+    "archiveReason": "包含可复用的运行时检索架构、权限感知要求及自建成本清单，可用于企业知识库和Agent上下文系统选型。",
+    "classifiedAt": 1784891277695,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "企业知识库的检索优先与购建决策",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "运行时从原始系统检索最新上下文，可避免集中式知识模型频繁重建和快速过时的问题。",
+      "权限感知的企业检索需要持续摄取、源级刷新、认证、访问控制、排序、审计及专用检索等配套能力。",
+      "检索质量不能替代知识维护；源文档过时或矛盾时，更快的检索只会更快返回错误信息。"
+    ],
+    "oneHighValuePoint": "企业知识库不仅要解决检索，还要持续处理数据源同步、权限、审计和知识过期问题，这些长期维护成本应纳入自建与采购决策。",
+    "oneLineReview": "与企业Agent知识基础设施高度相关，但本质偏产品营销，关键数据和架构判断缺少独立证据支持。",
+    "primaryCategory": "企业AI知识库",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性保留其企业知识库架构与购建决策要点，不必精读产品宣传部分",
+    "secondaryCategories": [
+      "Agent开发",
+      "产品购建决策"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章借Cerebras内部知识库案例，主张知识保留在源系统中，通过运行时检索、权限控制和引用回答服务员工与AI代理，并以集成、同步和维护成本论证多数团队应购买Slite而非自建。",
+    "tags": [
+      "企业搜索",
+      "运行时检索",
+      "权限控制",
+      "知识维护",
+      "Build vs Buy"
+    ],
+    "title": "本周如何部署一个 Cerebras 风格的知识库",
+    "totalScore": 60,
+    "url": "https://x.com/Christophepas/status/2080018833784352826"
+  },
+  "payloadHash": "sha256:9391432aa15ee8cd9fee8553adfc057b94ec329c064e2cad53eda19bd707e3e5",
+  "refs": {},
+  "revisionId": "sha256:e6bd1e05e54663abfb592918a5316ed43fed45dc5fb2eef45ab763127761de72",
+  "schemaVersion": 1,
+  "updatedAt": 1789728444267
+}

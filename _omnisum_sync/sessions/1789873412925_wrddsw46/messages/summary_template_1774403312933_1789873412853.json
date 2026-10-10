@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789873412853,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1789873412853",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# TypeSafe AI 推出 Jev：从 “聊天模型” 转向可编程决策引擎\n\nTypeSafe AI 发布首个公开的 “System One Model”——Jev。其核心主张是：面向自动化的 AI 不应主要生成自然语言，而应像代码一样输出结构化、带置信度的决策，让软件可以直接执行，并在不确定时转交人工。\n\n## RLHF 擅长取悦用户，却不适合自主执行\n\n公司认为，经人类反馈强化学习（RLHF）优化的 LLM 擅长理解指令和对话，但存在模式遗漏、过度自信和结果不稳定等问题，因此通常需要人工监督。Jev 采用新架构、采样器及 “校准决策强化学习”（RLCD），目标不是生成字符串，而是提高机器决策的可靠性。\n\n## 类型化输出与置信度支持可控自动化\n\nJev 接收结构化问题，返回类型明确的结果、概率和置信度。开发者可以设置阈值：高置信度时自动执行，低置信度时请求审核，并通过代码组合多个决策形成工作流。这种设计更接近传统软件接口，有利于控制 AI 在业务流程中的权限和风险。\n\n## 性能与 “零幻觉” 仍属厂商主张\n\nTypeSafe AI 宣称，在特定 System One 工作流中，Jev 可快**193.6 倍**、便宜**444.6 倍**；输入价格为每十亿 Token **42 美元**，较其对标模型低**238 倍**。不过测试方法和适用任务披露有限，尚不能泛化比较。官网所谓 “零幻觉” 主要依赖置信度与升级机制，并不代表模型不会出错。其真正意义在于探索一种机器原生 AI：用可验证、可编排的决策接口替代通用聊天输出。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1789873412853,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:5ff30496136955900ee8505c1cba7622cdc64609eddb7410fb6497ef2b70ba9d",
+  "refs": {
+    "sessionId": "1789873412925_wrddsw46"
+  },
+  "revisionId": "sha256:9bef83256025c4a276470bad09155263a3f868c91bf94cf50a0e74667267540f",
+  "schemaVersion": 1,
+  "updatedAt": 1789873412853
+}

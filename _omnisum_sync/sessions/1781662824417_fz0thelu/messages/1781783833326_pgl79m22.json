@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781783833327,
+  "entityType": "message",
+  "id": "1781783833326_pgl79m22",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Reasonix工具快速介绍\n\n**评级**: B (56.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI开发工具\n**次类别**: 开源项目, 命令行工具\n**标签**: #DeepSeek #Reasonix #AI Agent #Go #MCP\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 适合作为了解和试用 Reasonix 的入口文档，但方法论和长期参考价值有限。\n**核心高价值点**: Reasonix 通过配置驱动、插件子进程和单二进制分发降低 AI Agent 工具的部署与集成成本。\n\n### 摘要\n文章介绍 DeepSeek-Reasonix 的定位、特性、安装方式、配置示例和相关文档入口。其核心是一个配置与插件驱动的轻量 Go 单二进制 AI Agent harness，支持 DeepSeek、OpenAI兼容端点、MCP插件和双模型协同。\n\n### 知识要点\n- Reasonix 使用 reasonix.toml 声明 provider、agent、工具和插件，内核不硬编码模型。\n- 外部工具通过 stdio JSON-RPC 作为子进程运行，并兼容 MCP。\n- 支持 DeepSeek、MiMo 以及任意 OpenAI 兼容端点，可进行双模型协同。\n- 密钥优先通过环境变量或系统凭据存储管理，避免直接写入配置文件。\n- 提供 checkpoints 与 rewind 机制作为代码编辑安全网。\n\n### 行动项\n- 如需试用，可执行 npm i -g reasonix 或 brew install 安装工具。\n- 使用 reasonix setup 生成 reasonix.toml 并配置 DEEPSEEK_API_KEY。\n- 在真实项目中运行 reasonix run 测试代码修改、单元测试生成和成本表现。\n\n### 存档判定\n归档: 否\n不推荐: 内容主要是项目README，偏安装与功能说明，缺少深入原理、真实案例和效果数据。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1781783833327,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:8ea51d1552a6fc52ba9ff54406e3797bed0eea37ced39c449a5ea91c7e1ec24d",
+  "refs": {
+    "sessionId": "1781662824417_fz0thelu"
+  },
+  "revisionId": "sha256:1fd3d842f64d7ffe00cbd07e88910c5cc4fd08d0f644d1a4ecc99b70393aea13",
+  "schemaVersion": 1,
+  "updatedAt": 1781783833327
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728550386,
+  "entityType": "message",
+  "id": "1789728550386_eulpth3z",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Wiki Memory：Agent 记忆的核心不是多存，而是持续压缩与维护\n\n文章认为，Agent Memory 正在形成一种“Wiki Memory”模式：将分散的原始资料提炼成可维护、可检查、可复用的知识地图，让 Agent 不必每次都从海量上下文中重新理解领域。\n\n## 从原始资料到长期知识\n\n日志、代码、文档、会议转录和讨论记录虽然信息丰富，但通常零散、冗长、噪声大。Wiki Memory 让 Agent 先读取这些材料，再归纳领域结构、关键事实和相对稳定的结论，形成一层压缩后的知识综合。\n\n它与 RAG（检索增强生成）的侧重点不同：RAG 是提问时临时检索原始片段，再现场理解；Wiki Memory 则提前整理“知识地图”，并随项目演进持续更新。两者并非替代关系，而是分别服务即时检索与长期沉淀。\n\n## 文件是更自然的记忆载体\n\nHarrison Chase 认为，知识层可以直接用文件承载，因为文件：\n\n- 人可检查，能看到 Agent 记住了什么；\n- 可直接编辑，方便纠错；\n- 可进行版本管理、评审和回滚；\n- Agent 无需复杂接口即可读写。\n\nDeepWiki、Factory AutoWiki、LLM Wiki 等实践，本质上都在为代码库、项目或研究资料生成持续更新的知识地图。\n\n## 价值与边界在于“可维护”\n\nWiki Memory 更适合长期领域知识，不一定适合短期对话状态、用户偏好或高频事件流。其关键挑战也不是存储容量，而是原始资料变化后，如何及时发现并更新压缩层，避免知识过期。文章由此把 Agent Memory 从“存多少”重新定义为“如何压缩、校验和长期维护”。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728550386,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9cd26df1580b81d1e1de14f9bdd00e6886963e54ac7a1c3cfbc483a183afb8ec",
+  "refs": {
+    "sessionId": "1782990150611_82758bg9"
+  },
+  "revisionId": "sha256:8888bda196a71e2e8d6e2349d612de6949d015caaa80476a79a412a8866140bb",
+  "schemaVersion": 1,
+  "updatedAt": 1789728550386
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784712671964,
+  "entityType": "message",
+  "id": "1784712671965_14mpr6xq",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# OpenWiki：面向编程智能体的开源代码库文档工具\n\nOpenWiki 是 LangChain 推出的开源智能体与 CLI 工具，可自动为代码库生成、维护文档，并让编程智能体在修改代码时获得更完整的技术背景和业务上下文。它基于 DeepAgents 构建，支持通过 GitHub Action 定期更新文档，也可选用 LangSmith 追踪运行过程。\n\n## 1. 安装与初始化\n\n- OpenWiki 可通过 NPM 安装，安装后在代码仓库中运行：\n\n  ```bash\n  openwiki init\n  ```\n\n- 初始化时会进入配置流程：\n  1. 选择模型服务商，支持开源与闭源模型提供商。\n  2. 填写对应的 API Key。\n  3. 选择预设模型，或输入自定义模型 ID。\n- 演示中选择了 **OpenRouter** 和 **GLM 5.2**。\n- 如果希望官方预设中增加新的模型或服务商，可向开源项目提交 PR。\n\n## 2. 可选的 LangSmith 运行追踪\n\n- OpenWiki 基于 **DeepAgents** 和 **LangSmith** 构建。\n- 用户可以选择填写 LangSmith API Key，将 OpenWiki 的每个操作和运行步骤记录到追踪项目中，方便查看其内部执行过程。\n- 此配置不是必需的，可以直接跳过。\n- 完成 `init` 配置后，OpenWiki 会立即开始为当前仓库生成初始文档。\n\n## 3. 生成的文档结构\n\nOpenWiki 会在仓库中创建专门的文档目录，其中包括：\n\n- `quickstart.md`\n  - 作为整个文档系统的首页和索引。\n  - 概述代码库是什么、解决什么问题，以及哪些文件较为重要。\n  - 链接到其他专题文档和实际代码文件。\n  - 编程智能体需要了解仓库时，通常会先读取该文件。\n\n- 专题子目录与文档\n  - 按代码库的不同部分组织内容。\n  - 以 OpenWiki 自身仓库为例，文档涵盖智能体实现、系统架构、CLI、CLI 操作以及文档更新记录等。\n\n这些文档不仅解释代码“如何工作”，还会记录“为什么这样实现”。\n\n## 4. 补充代码之外的业务背景\n\n- 编程智能体仅阅读代码，通常可以理解具体实现，却未必知道设计决策和业务原因。\n- OpenWiki 会结合以下信息生成文档：\n  - Git 提交历史；\n  - 代码变更；\n  - PR 描述；\n  - 评论和相关说明。\n- 例如，某段代码采用特殊架构可能不是技术限制，而是由历史需求或业务决策造成。OpenWiki 会尽可能将这类背景写入文档，帮助智能体避免做出脱离原始意图的修改。\n\n## 5. 通过 GitHub Action 自动保持更新\n\n初次生成文档后，无需人工持续维护。OpenWiki 提供可复制的 GitHub Action，默认可设置为**每天运行一次**：\n\n```bash\nopenwiki update\n```\n\n其更新流程为：\n\n1. 记录上一次更新文档时检查到的 Git commit hash。\n2. 查找该提交之后合并的所有新 commit。\n3. 分析代码变更、PR 描述和评论等信息。\n4. 判断哪些文档需要修改。\n5. 自动创建一个更新文档的 Pull Request。\n\n运行频率可按仓库活跃程度调整：\n\n- 更新较少的仓库：可改为**每周一次**。\n- 每天有数百或数千个提交的仓库：可改为**每 4 小时或 6 小时一次**。\n\nOpenWiki 不依赖固定执行周期，只需读取两个时间点之间的 Git 历史，就能更新文档。\n\n## 6. 直接与 OpenWiki 智能体聊天\n\n除了初始化和更新命令，还可以直接运行：\n\n```bash\nopenwiki\n```\n\n这会启动交互式聊天界面，用户可以：\n\n- 更换模型服务商；\n- 更新或清空文档；\n- 查询代码库和现有文档；\n- 搜索 OpenWiki 生成的内容；\n- 要求智能体对某部分文档进行定向修改；\n- 询问类似“你能做什么？”等问题。\n\n因此，OpenWiki 不只是文档生成器，也可以充当代码库文档问答助手。\n\n## 7. 编程智能体如何自动使用文档\n\n- OpenWiki 会自动创建或修改以下文件：\n  - 通用编程智能体使用的 `AGENTS.md`；\n  - Claude Code 使用的 `CLAUDE.md`。\n- 它会在文件中加入 OpenWiki 文档的引用，并说明智能体应在何时、何处以及如何查阅这些文档。\n- 当编程智能体需要代码库上下文时，会先读取上述入口文件，进而找到 `quickstart.md` 和相关专题文档。\n\n完整工作流程是：\n\n1. 运行 `openwiki init`，生成首批文档。\n2. 添加 GitHub Action，定期执行 `openwiki update`。\n3. 审核并合并 OpenWiki 自动创建的文档更新 PR。\n4. 编程智能体读取 `AGENTS.md` 或 `CLAUDE.md`，自动获取 OpenWiki 文档。\n\n这样，开发者无需在每次使用编程智能体时重复提供仓库背景或额外提示。\n\n## 8. 当前定位与后续计划\n\n- OpenWiki 目前主要面向编程智能体，功能仍较为基础。\n- LangChain 计划继续扩展这一“代码库 Wiki”思路。\n- 用户可以通过 GitHub 仓库提交：\n  - 功能建议；\n  - Issue；\n  - 代码 PR；\n  - 新模型或服务商适配。\n\n**相关资源：**\n\n- [OpenWiki GitHub 仓库](https://github.com/langchain-ai/openwiki)\n- [OpenWiki NPM 包](https://www.npmjs.com/package/openwiki)",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784712671964,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:55bec029b969ccb968e6b9414bc1dce5e969a9b957031903acdfde06b7cfda2a",
+  "refs": {
+    "sessionId": "1783049095459_fzzu5f9y"
+  },
+  "revisionId": "sha256:8da9814cc8194c128432ee7ceb3db7901ac4967037c3f2a17d1fbb5a1cb17391",
+  "schemaVersion": 1,
+  "updatedAt": 1784712671964
+}

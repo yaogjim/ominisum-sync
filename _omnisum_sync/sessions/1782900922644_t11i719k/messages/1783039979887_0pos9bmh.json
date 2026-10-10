@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783039979888,
+  "entityType": "message",
+  "id": "1783039979887_0pos9bmh",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: X MCP服务器接入指南\n\n**评级**: B (55分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI工具集成\n**次类别**: MCP, X API, 开发者文档\n**标签**: #MCP #X API #OAuth #AI Agent #工具配置\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 6 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 7 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 3 | 15% |\n| 可迁移性 | 4 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 作为官方接入文档具备实用性，但内容偏配置说明，方法论和通用知识价值有限。\n**核心高价值点**: 说明了 X MCP 不直接支持动态 OAuth 发现，需要通过 xurl 本地桥接处理 OAuth2 PKCE 登录和 token 刷新。\n\n### 摘要\n文章介绍 X 提供的两个 MCP Server：X API MCP 与文档 MCP，并说明通过 app-only Bearer 或 xurl 本地桥接方式接入 Cursor、Claude、VS Code 等客户端，以及认证、配置和排错要点。\n\n### 知识要点\n- X API MCP 可让兼容 MCP 的 AI 工具搜索 X 全量归档、查询用户、管理书签、获取趋势并草拟文章\n- app-only Bearer 方式适合只读场景，但缺少用户上下文和自动刷新能力\n- xurl mcp bridge 可在本地处理 OAuth2 登录、缓存和刷新 token，适合需要用户权限或写操作的场景\n- 可同时连接 X API MCP 与 X Docs MCP，使 AI 助手既能查文档又能调用 API\n- 配置中需要注意 redirect URI、startup_timeout、token 安全和 stdout JSON-RPC 通道干净性\n\n### 行动项\n- 如果需要接入 X API MCP，先在 X Developer Portal 创建启用 OAuth 2.0 的应用并配置 redirect URI\n- 根据使用场景选择 app-only Bearer 或 xurl bridge，写操作优先使用 xurl bridge\n- 在 Cursor、Claude、VS Code 或其他 MCP 客户端中添加对应 MCP 配置\n- 将 CLIENT_ID、CLIENT_SECRET、token 等敏感信息放入环境变量或本地安全配置，避免提交到仓库\n- 实际接入前测试首次 OAuth 登录、token 刷新和工具列表是否正常加载\n\n### 存档判定\n归档: 是 — 原因: 官方文档提供了 X MCP 服务器、OAuth 桥接、客户端配置和故障排查信息，对实际集成有参考价值\n删除: 否\n留存决策: 短期参考后可保留，适合在实际接入 X MCP 或配置 AI 工具时查阅",
+    "role": "assistant",
+    "timestamp": 1783039979888,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:a74beaafe6290306a4c2a40a7249cbb46d6d2eead2f2664d17b88c9cdbf6f9a4",
+  "refs": {
+    "sessionId": "1782900922644_t11i719k"
+  },
+  "revisionId": "sha256:86e69f765e38aa2ea77467ae5c99f7967acc71a6a749a808363b23a479c84d10",
+  "schemaVersion": 1,
+  "updatedAt": 1783039979888
+}

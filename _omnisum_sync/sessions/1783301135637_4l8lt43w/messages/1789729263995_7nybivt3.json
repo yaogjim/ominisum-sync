@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729263994,
+  "entityType": "message",
+  "id": "1789729263995_7nybivt3",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 把事件日志变成 Agent 本身，而非运行副产品\n\n文章介绍 ActiveGraph 的核心架构：不再把日志视为 Agent 执行后留下的记录，而是将一条只追加、不修改的事件日志作为 Agent 的真实本体。目标、规则、工具调用、LLM 响应、产物及其关系都写入同一日志；用户看到的当前状态，则是重放日志后生成的图结构视图。\n\n## 事件日志带来可重放、可分叉、可追溯\n\n这种设计提供三项关键能力：\n\n- **确定性重放**：依据历史事件重建 Agent 在特定时刻的状态，便于复现和排查问题。\n- **任意节点分叉**：可从某个历史事件创建新分支，替换模型、提示词或工具进行对照实验，而不破坏原始过程。\n- **完整证据链**：能从最终输出反向追踪到具体模型调用、工具结果和依据，提升审计与解释能力。\n\n## 重点不是更聪明，而是更可靠的基础设施\n\n作者强调，这套方案并未直接提升模型智能，而是借鉴事件溯源思想，为长期运行的 Agent 提供更稳固的底层架构。其价值在于让系统状态和决策过程不再是难以复现的“黑箱”，更适合需要持续演化、严格审计和复杂实验的 Agent 产品。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729263994,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2ba419f60db45cd2a0b4768f6638fbab0c7650301f59dff768406b1f50c0375c",
+  "refs": {
+    "sessionId": "1783301135637_4l8lt43w"
+  },
+  "revisionId": "sha256:30a1841dd14eea282448fa1c1bfb93d548929b3df62c8c080c593ed4e13685b5",
+  "schemaVersion": 1,
+  "updatedAt": 1789729263994
+}

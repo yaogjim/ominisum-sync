@@ -1,0 +1,19 @@
+{
+  "createdAt": 1781783186011,
+  "entityType": "message",
+  "id": "1781783186010_ze3tewt7",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agentic Coding技能流程概览\n\n**评级**: B (67.5分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI辅助编程\n**次类别**: 开发工作流, Agentic Coding, 软件工程方法\n**标签**: #AI编程 #skills #开发流程 #PRD #TDD #代码优化\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 一篇实用的AI编程技能包流程导览，方法清晰但证据和深度有限。\n**核心高价值点**: 将AI辅助开发抽象为“想法 → 打磨 → 固化 → 构建 → 维护”的闭环流程，并对应到具体技能调用。\n\n### 摘要\n文章介绍 mattpocock/skills v1 的 agentic coding 使用主线：从想法、设计拷问、PRD与issue拆解，到实现、TDD、诊断和持续优化，并说明 ask-matt、grilling、handoff 等技能的适用场景。\n\n### 知识要点\n- ask-matt 可作为技能路由入口，不确定用哪个技能时先询问\n- grilling 系列用于在编码前反向拷问设计，降低盲目实现风险\n- to-prd 与 to-issues 可将设计沉淀为需求文档和可分发任务\n- implement、tdd、diagnosing-bugs 分别对应实现、测试驱动开发和根因诊断\n- codebase-design 与 domain-modeling 作为底层概念和术语的统一来源\n\n### 行动项\n- 安装或查看 mattpocock/skills v1，并先尝试 ask-matt 理解技能路由\n- 在下一个AI辅助开发任务中按“想法→打磨→固化→构建→维护”流程实践一次\n- 对已有项目尝试使用 grill-with-docs 或 improve-codebase-architecture 做一次设计审查\n\n### 存档判定\n归档: 是 — 原因: 提供了一套较清晰的agentic coding技能调用流程，可作为后续实践时的快捷参考\n删除: 否\n留存决策: 短期参考后可保留为AI编程工作流索引",
+    "role": "assistant",
+    "timestamp": 1781783186011,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:af90d66246f761b2537a68057574aa8955232524a1cd9f4e2147896009d5f74e",
+  "refs": {
+    "sessionId": "1781783064500_oeffizf2"
+  },
+  "revisionId": "sha256:8a1f3fb9723b4d4de94695bbb7a0868adc6cab1906d9ac0a96e9267eb8d2f641",
+  "schemaVersion": 1,
+  "updatedAt": 1781783186011
+}

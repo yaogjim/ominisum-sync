@@ -1,0 +1,84 @@
+{
+  "createdAt": 1790740492460,
+  "entityType": "session",
+  "id": "1790740492460_thdk2zou",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评审组织智能体方案时，逐项检查多用户认证与记忆边界、可观测性、审计、管理控制和异步交互。",
+      "将记忆需求拆分为个人、团队和组织三个层次，明确各层的访问权限与来源信息。",
+      "明确每个用户使用独立还是共享的代理实例与会话，以及代理执行操作时代表的身份。"
+    ],
+    "archiveReason": "组织智能体的多用户授权、治理、交互模式及记忆分层问题具有可复用的设计参考价值。",
+    "byline": "Harrison Chase",
+    "classifiedAt": 1790768036152,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "个人与组织智能体的架构差异",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "组织智能体面对多个用户，其认证、授权和记忆边界比个人智能体更复杂。",
+      "组织场景更强调可观测性、可审计性和管理控制平面，交互也更偏向事件驱动与异步。",
+      "代理实例是否共享、代表用户还是以独立身份行动，是组织智能体设计中需要明确的问题。"
+    ],
+    "oneHighValuePoint": "组织记忆应区分个人上下文、团队上下文和持久组织知识，并为每层附带权限与来源信息，而不是简单共享用户上下文。",
+    "oneLineReview": "与组织智能体开发高度相关，适合作为架构问题清单，但尚不足以充当经过验证的设计方法。",
+    "primaryCategory": "AI Agent 开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性保留架构比较与记忆分层要点，作为组织智能体设计的初步检查清单",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "企业系统设计",
+      "知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "讨论组织智能体与个人智能体的架构差异，强调多用户认证与记忆、治理以及事件驱动交互，并列出代码执行、浏览器和工具标准等共同能力。回复补充了组织记忆分层、权限来源及代理身份问题，但未提供实现方案或验证证据。",
+    "tags": [
+      "组织智能体",
+      "多用户权限",
+      "分层记忆",
+      "智能体治理",
+      "异步交互"
+    ],
+    "title": "Harrison Chase: company OS (org harness) vs personal agent, similarities and differences: differ…",
+    "totalScore": 66,
+    "url": "https://x.com/hwchase17/status/2104940633018577400"
+  },
+  "payloadHash": "sha256:6cf8d1eae9ad3772190286d918160ec067a76637c9b74efbfd509716a7dd46d8",
+  "refs": {},
+  "revisionId": "sha256:94554213ea5e473027209aefcd8dea4fa0056da6b0f4b1ba7f9d3d524efa8864",
+  "schemaVersion": 1,
+  "updatedAt": 1790768036991
+}

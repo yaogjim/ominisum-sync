@@ -1,0 +1,15 @@
+{
+  "createdAt": 1782991665007,
+  "entityType": "session-content",
+  "id": "1782991665007_xqbjyrah",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>九原客</strong></header><div class=\"tw-body\">关于Agent 中的 mcp vs cli，以前激进的看法是认为cli会替换掉mcp。<br><br>但是实际感触下来，对于常见的客户端（比如git），CLI 表现完美。<br><br>但是封装的自定义CLI，表现的稳定性不如mcp/结构化工具，我觉得原因主要是后者的强结构性导致的。<br><br>而且mcp 有比较标准的企业级鉴权解决方案，后续估计还是并行。</div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@FOX Sports</strong> <span class=\"tw-eng\">♥ 3.1K · 💬 23</span><p>It was ruled offside, but a truly incredible effort on this goal line clearance by Edson Álvarez</p></div><div class=\"tw-reply\"><strong>@FOX Soccer</strong> <span class=\"tw-eng\">♥ 909 · 💬 16</span><p>Yasin Ayari was looking to score his 3rd goal of the 2026 FIFA World Cup for Sweden</p></div><div class=\"tw-reply\"><strong>@Kyaver</strong> <span class=\"tw-eng\">♥ 4 · 💬 3</span><p>都用pi了，直接封成tool吧，说实话mcp现在基本不用了，c 至于li，维护是个问题.个人觉得，tool＞ cli≈mcp＞skill</p></div><div class=\"tw-reply\"><strong>@吊顶高松灯</strong> <span class=\"tw-eng\">♥ 4 · 💬 1</span><p>> 而且mcp 有比较标准的企业级鉴权解决方案<br><br>所以听到有人鼓吹 skill+CLI 大于 MCP 的时候我真的想笑。<br><br>clawhub 上各种神奇 skill 用各种方式把 token 明文塞到机器的各个犄角旮旯，安全不安全暂且不论，不觉得脏乱差吗</p></div><div class=\"tw-reply\"><strong>@chris</strong> <span class=\"tw-eng\">♥ 3 · 💬 0</span><p>mcp 的问题是不像skill+cli，没有原生的渐进式披露机制，需要自己设计一下，简单点搞一个tool_search_tool，但调用这个的时机需要好好设计prompt，我们在cubepi 里设计的是类似skill 的方式，把MCPs 的描述和工具，不包括更细的schema 先暴漏给模型，这样更具有针对性，效果也更好。</p></div></div>",
+    "pageContent": "九原客: 关于Agent 中的 mcp vs cli，以前激进的看法是认为cli会替换掉mcp。 但是实际感触下来，对于常见的客户端（比如git），CLI 表现完美。 但是封装的自定义CLI，表现的稳定性不如mcp/结构化工具，我觉得原因主要是后者的强结构性导致的。 而且mcp 有比较标准的企业级鉴权解决方案，后续估计还是并行。\n---\n热门回复 (共 5 条):\n@FOX Sports (♥ 3.1K · 💬 23):\nIt was ruled offside, but a truly incredible effort on this goal line clearance by Edson Álvarez\n\n@FOX Soccer (♥ 909 · 💬 16):\nYasin Ayari was looking to score his 3rd goal of the 2026 FIFA World Cup for Sweden\n\n@Kyaver (♥ 4 · 💬 3):\n都用pi了，直接封成tool吧，说实话mcp现在基本不用了，c 至于li，维护是个问题.个人觉得，tool＞ cli≈mcp＞skill\n\n@吊顶高松灯 (♥ 4 · 💬 1):\n> 而且mcp 有比较标准的企业级鉴权解决方案\n\n所以听到有人鼓吹 skill+CLI 大于 MCP 的时候我真的想笑。\n\nclawhub 上各种神奇 skill 用各种方式把 token 明文塞到机器的各个犄角旮旯，安全不安全暂且不论，不觉得脏乱差吗\n\n@chris (♥ 3 · 💬 0):\nmcp 的问题是不像skill+cli，没有原生的渐进式披露机制，需要自己设计一下，简单点搞一个tool_search_tool，但调用这个的时机需要好好设计prompt，我们在cubepi 里设计的是类似skill 的方式，把MCPs 的描述和工具，不包括更细的schema 先暴漏给模型，这样更具有针对性，效果也更好。\n"
+  },
+  "payloadHash": "sha256:b737a53f34bfb64b4f06f38bf0574bf5a378a4746e9cbf9bb1b7d7be69576c52",
+  "refs": {},
+  "revisionId": "sha256:4c011fe8151d27e5436259364c522ac8a90a2d23d9bbf1be6982f14cb0c5e474",
+  "schemaVersion": 1,
+  "updatedAt": 1784801631535
+}

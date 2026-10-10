@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784693941849,
+  "entityType": "message",
+  "id": "1784694035586_8p5wj1u5",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 无法直接获取文章内容\n\n我目前无法打开你提供的网页链接，因此不能在缺少原文的情况下准确总结《风暴前夜：光绪——光绪 一摺一斷，借力者終受其累 V0.80》。\n\n请将文章正文粘贴过来，或上传文章截图/文本文件。我会按照以下结构整理：\n\n1. **主旨概括**：用1—2句话说明文章核心观点  \n2. **分段梳理**：按照原文逻辑提炼各部分内容  \n3. **关键内容**：保留重要数据、人物关系、事件与案例  \n4. **语言风格**：使用通俗、简洁的中文，并以 Markdown 格式呈现",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784693941849,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:dffbd90eab7733b93edf1ce0ba565add09481e5ba34ed421bdd9b675fbc5bd66",
+  "refs": {
+    "sessionId": "1784694035306_65qpo8b9"
+  },
+  "revisionId": "sha256:39eb8ff50b925e4db7035c493463e6cce69d21e13830a7a4aa2892654822b63a",
+  "schemaVersion": 1,
+  "updatedAt": 1784693941849
+}

@@ -1,0 +1,71 @@
+{
+  "createdAt": 1783555780807,
+  "entityType": "session",
+  "id": "1783555780807_wikxj94p",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "先运行 bundled demo，观察 viewer、sessionful worker 和 human gate 的实际交互体验",
+      "用 --plan 和 read-only 模式在一个低风险代码审计任务上试跑",
+      "重点阅读 runner、references 和 examples/harness-zoo 中的 GoalLint、ClaimCheck 模板",
+      "验证其对当前 Codex CLI 版本、模型可用性、resume 机制和成本统计的兼容性",
+      "如长期使用，可将高频任务沉淀为自有 harness-zoo 工作流模板"
+    ],
+    "archiveReason": "包含安装方式、使用示例、工作流模式、会话式worker、竞速取消、人机门控和成本监控等较完整的工程实践信息",
+    "classifiedAt": 1783556083737,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Claude工作流Codex后端",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "通过 /codex-workflows 可让 Claude Code 根据粗略任务自动生成并运行 Codex-backed 动态工作流",
+      "agent.start、session.steer、agent.waitAny、session.cancel 组合支持长生命周期 worker、热上下文追问和竞速取消",
+      "viewer、ASCII map、fleet dashboard、summarize-run 提供运行监控、成本分析和可靠性复盘能力",
+      "GoalLint、ClaimCheck、root-cause lab、hedged race 等模式可作为可复用的多智能体工作流模板",
+      "支持 read-only 与 workspace-write 沙箱、人机 gate、resume、budget、plan dry-run 等工程控制手段"
+    ],
+    "oneHighValuePoint": "最有价值的是将一次性 agent 调用扩展为可保持上下文、可 steer、可竞速并取消失败路径的 sessionful worker 模式。",
+    "oneLineReview": "工程可操作性强、方法论价值较高，但 README 营销化和疑似 AI 生成痕迹较重，证据主要来自自述与示例。",
+    "primaryCategory": "AI工程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合在需要构建或评估多智能体编排、Codex后端工作流、运行可视化工具时参考",
+    "secondaryCategories": [
+      "Agent工作流",
+      "开发效率工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该仓库提供一个 Claude Code 技能和独立 runner/viewer，可将动态工作流运行在本地 Codex/GPT 后端，支持多智能体并行、会话保持、竞速取消、人机门控、运行可视化和成本总结。",
+    "tags": [
+      "Claude Code",
+      "Codex",
+      "动态工作流",
+      "多智能体",
+      "工作流可视化"
+    ],
+    "title": "scasella/claude-dynamic-workflows-codex: Run Claude Code dynamic workflows on a local Codex (GPT) backend, plus an interactive run viewer",
+    "totalScore": 74,
+    "url": "https://github.com/scasella/claude-dynamic-workflows-codex"
+  },
+  "payloadHash": "sha256:b931a7ef11ce452efd1e987abdc043c9dc805d3a61d64312f03fc7a1c3778319",
+  "refs": {},
+  "revisionId": "sha256:c0cbd343608ff194452804132a47b137fdff83145cfed27615553a6cfcbae7e2",
+  "schemaVersion": 1,
+  "updatedAt": 1789695860920
+}

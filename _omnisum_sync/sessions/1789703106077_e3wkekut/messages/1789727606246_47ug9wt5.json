@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727606246,
+  "entityType": "message",
+  "id": "1789727606246_47ug9wt5",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Lieflat Charts：让 AI Agent 自动生成统一风格的可视化图表\n\nLieflat Charts 是一套开源的数据可视化与报告生成 Skill，可接入 Moxt、Claude Code、Codex 等 AI Agent。用户只需提供数据或主题，Agent 就能选择图表类型并生成成品；作者称项目目前已在 GitHub 获得约 2,000 个 Star。\n\n## 用统一视觉语法覆盖 60 多种图表\n\n该项目通过一致的字体、留白、线条和动效控制整体风格，包含柱状图、折线图、面积图、直方图等基础图表，也支持热力图、小提琴图、环形关系图、桑基图等复杂形式，部分图表可交互。\n\n配色以黑、白、灰为基础，另提供青瓷蓝、椰林绿和编辑红三套色系，强调克制、统一的视觉表达。\n\n## 基于 HTML，方便动效展示与报告制作\n\nLieflat Charts 使用 HTML 生成图表，因此更容易实现丰富动效，也能直接嵌入 HTML 制作的演示文稿。若需要传统 PPT，可让 Agent 将动态图转换后插入；报告模式还可一键生成带数据可视化的完整报告。\n\n## 价值在于降低“选图与排版”门槛\n\n它把图表选择、视觉规范和报告输出封装成 Agent 可调用的能力，适合快速制作汇报与分析材料。其核心卖点不是新的分析方法，而是提高可视化生产效率并保持风格一致；“顶级审美”属于作者定位，原文未提供与其他图表工具的系统比较。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727606246,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:21f5fff67d29b49cb952c99466d01d87ff5b1e5c76373517922c59a71f7e2fa2",
+  "refs": {
+    "sessionId": "1789703106077_e3wkekut"
+  },
+  "revisionId": "sha256:a9e065ff2e10fef265746f0892249094c2c6fc0b5ed44c7557f00ed8e3228bab",
+  "schemaVersion": 1,
+  "updatedAt": 1789727606246
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1785288261122,
+  "entityType": "session",
+  "id": "1785288261122_eznkz3wj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "继续核实印度主管部门的正式回应、GitHub处理结果及通知所引法律条款的适用依据。",
+      "评估去中心化通信产品时，将身份机制、日志留存、执法协助和地区下架风险纳入合规清单。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1785402885262,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "印度要求下架蓝牙聊天应用",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.thehindu.com",
+    "favicon": "https://www.thehindu.com/favicon.ico",
+    "knowledgePoints": [
+      "蓝牙Mesh应用可在移动网络、互联网和中心服务器不可用时，通过附近设备建立点对点通信。",
+      "匿名注册、无集中日志和无中心服务提供者，是监管机构评估通信应用执法风险的关键因素。",
+      "代码托管平台可能因所托管应用被指用于违法活动而收到政府下架要求。"
+    ],
+    "oneHighValuePoint": "去中心化蓝牙通信因缺少注册、集中日志和服务提供者，会显著提高执法归因与调查难度，并由此产生平台合规风险。",
+    "oneLineReview": "这是一个与去中心化通信监管相关的具体案例，但报道证据单一、论证重复且缺少后续核实。",
+    "primaryCategory": "法律科技与平台监管",
+    "rating": "C",
+    "rejectReason": "报道主要转述单份通知，内容重复，缺少政府回应、GitHub处理结果及法律条款的具体解释。",
+    "retentionDecision": "作为去中心化通信监管案例速览，待官方回应和平台处理结果明确后再决定是否保留",
+    "secondaryCategories": [
+      "网络安全",
+      "去中心化通信"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "报道称，印度网络犯罪协调中心要求GitHub下架蓝牙聊天应用Bitchat，理由是其无需互联网、身份验证或中心服务器，可能绕过网络限制和执法监控；报道尚无政府正式回应。",
+    "tags": [
+      "蓝牙Mesh",
+      "去中心化通信",
+      "平台下架",
+      "执法监管",
+      "印度网络治理"
+    ],
+    "title": "Government orders GitHub to remove Bluetooth-based chat app Bitchat over security concerns: Jack Dorsey",
+    "totalScore": 46,
+    "url": "https://www.thehindu.com/news/national/government-orders-github-to-remove-bluetooth-based-chat-app-bitchat-over-security-concerns-jack-dorsey/article71262049.ece"
+  },
+  "payloadHash": "sha256:8e6232f1c2b2461682bdd6bc813ca2ac97422efa1969ce7a15957ce858c9b9d3",
+  "refs": {},
+  "revisionId": "sha256:1bbb1cd85a939b7c0932377290f5d06509bad218d48afd3b1f2e80f8d39831ad",
+  "schemaVersion": 1,
+  "updatedAt": 1785402885308
+}

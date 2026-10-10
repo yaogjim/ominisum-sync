@@ -1,0 +1,83 @@
+{
+  "createdAt": 1784016668837,
+  "entityType": "session",
+  "id": "1784016668837_xs3z7vzl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为一个现有Agent任务建立README，写入目标、边界、SOP、精简状态和追加式运行日志。",
+      "根据反馈速度与紧急程度选择连续、定时、事件或组合触发器，并用脚本预检是否存在真实任务。",
+      "为生产代码或客户消息增加独立验证环节，并每运行5至10次复盘和优化循环配置。"
+    ],
+    "archiveReason": "提供了可复用的循环契约、状态日志、触发器、执行验证及周期性优化框架，并配有工程和客户运营案例。",
+    "classifiedAt": 1784677883190,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "可持续运行的智能体循环设计",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://yt3.googleusercontent.com/86g-eIpeFGtk4pcng5YfuVcOv72Ot3x3cOuSN44ty2cJ8rqBiOHDzmP34SMpRXRQiqQOuGpJkA=s900-c-k-c0x00ffffff-no-rj",
+        "role": "hero",
+        "score": 70,
+        "src": "https://yt3.googleusercontent.com/86g-eIpeFGtk4pcng5YfuVcOv72Ot3x3cOuSN44ty2cJ8rqBiOHDzmP34SMpRXRQiqQOuGpJkA=s900-c-k-c0x00ffffff-no-rj",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "循环契约应明确目标、完成条件、自治边界、人工升级条件和标准操作流程。",
+      "状态用于保存当前假设、待办和后续事项，追加式日志用于记录每次运行，避免智能体重复探索和浪费令牌。",
+      "高风险任务宜拆分为编排者、隔离执行者和验证者，并要求验证者生成便于人工审查的测试证据。"
+    ],
+    "oneHighValuePoint": "将长期运行的智能体循环拆成契约、状态日志、触发器、执行验证和演化机制，并为每一层明确安全边界与职责。",
+    "oneLineReview": "框架完整且贴近Agent工程实践，但成效主要来自作者自述，缺少成本、故障率和准确率等量化证据。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，可作为设计长期运行智能体循环的框架参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "自动化工作流",
+      "软件工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于一个月的内部实践，提出智能体循环由契约、状态与日志、触发器、执行与验证组成，并比较连续、定时、事件和组合触发方式，强调风险边界、证据审查及周期性自我优化。",
+    "tags": [
+      "智能体循环",
+      "触发器设计",
+      "状态管理",
+      "验证机制",
+      "自动化工作流"
+    ],
+    "title": "How to design loops that actually works - YouTube",
+    "totalScore": 79,
+    "url": "https://www.youtube.com/watch?v=JQ_We_ztxrI"
+  },
+  "payloadHash": "sha256:2eabd0e48797332fec31a955659e08638c50c8764458e3938d4102e314d8d579",
+  "refs": {},
+  "revisionId": "sha256:5f6a83840bb605c0eec15e2ea38dda461a67437e41935119a579d39321c6b8c4",
+  "schemaVersion": 1,
+  "updatedAt": 1789695933873
+}

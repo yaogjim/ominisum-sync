@@ -1,0 +1,20 @@
+{
+  "createdAt": 1783308870745,
+  "entityType": "message",
+  "id": "1783308898529_jekprake",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\n文章提出一个核心观点：**日志不应只是 Agent 运行后的记录，而应成为 Agent 本身**。通过把所有行为写入同一条“只追加事件日志”（append-only event log），Agent 可以更可靠地长期运行、审计和演化。\n\n## 1. 核心观点：The Log is the Agent\n\n传统理解中，日志只是 Agent 执行任务时产生的副产品，用来事后查看发生了什么。\n\n但文章认为，在 **ActiveGraph** 这类架构中，应该反过来理解：\n\n- **事件日志就是 Agent 的主体**\n- Agent 的当前状态，只是基于日志重放后生成的结果\n- 换句话说，Agent 不是某个固定状态，而是一串可追溯、可重放的事件历史\n\n## 2. ActiveGraph 的做法：所有内容写入同一条事件日志\n\n在 ActiveGraph 中，以下内容都会被记录到同一条 append-only event log 中：\n\n- 目标\n- 规则\n- 工具调用\n- LLM 响应\n- 中间产物\n- 各类关系与依赖\n\n当前看到的“状态”，并不是直接存储的最终结果，而是：\n\n> 通过 replay 整条日志后，投影出来的一张图。\n\n这意味着系统的状态可以从日志中重新构建，而不是依赖某个不可解释的即时快照。\n\n## 3. 这种架构带来的三个关键能力\n\n### ① 可确定性重放\n\n因为所有事件都被完整记录，系统可以按原顺序重放日志，复现 Agent 的执行过程。\n\n例如：\n\n- 某次回答为什么生成？\n- 哪个工具被调用了？\n- 模型在哪一步给出了什么响应？\n\n这些都可以通过日志重放还原。\n\n### ② 可在任意事件处分叉实验\n\n由于日志是事件序列，系统可以在任意一个事件节点“分叉”，尝试不同路径。\n\n例如：\n\n- 在某次 LLM 响应之后，换一个模型继续执行\n- 在某个工具调用前，改用另一种工具\n- 在某个规则加入前后，对比 Agent 行为变化\n\n这让 Agent 的调试、实验和版本演化更容易。\n\n### ③ 可追溯最终输出的证据链\n\n最终产物可以追溯到具体的：\n\n- 模型调用\n- 工具结果\n- 中间推理过程\n- 相关证据来源\n\n这对于需要审计和可靠性的长期 Agent 非常重要。\n\n## 4. 文章的结论：不是更聪明，而是更可靠的底层架构\n\n文章强调，这种设计的重点不是让 Agent “更聪明”，而是让 Agent 更适合：\n\n- 长期运行\n- 可审计\n- 可追踪\n- 可实验\n- 可持续演化\n\n因此，**“The Log is the Agent”** 更像是一种 Agent 底层架构理念，而不是单纯提升模型能力的方法。\n\n相关论文：  \n[https://arxiv.org/abs/2605.21997](https://arxiv.org/abs/2605.21997)",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1783308870745,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:42e2ea00455587b6d38732ca9882c6103409cfac399a0d233e72ca99b2af0fda",
+  "refs": {
+    "sessionId": "1783301135637_4l8lt43w"
+  },
+  "revisionId": "sha256:afaa5828c58d6e34b209ffced7cf245142e55b675fe3ef54b9917c6af663b50e",
+  "schemaVersion": 1,
+  "updatedAt": 1783308870745
+}

@@ -1,0 +1,83 @@
+{
+  "createdAt": 1789956443201,
+  "entityType": "session",
+  "id": "1789956443201_vwem1tlg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用目标业务样本分别评测基础检查点和适配检查点，检查准确率、校准误差与业务基线，避免将领域微调结果当成通用零样本能力。",
+      "部署混合语言服务时预加载实际需要的检查点，或设置合适的常驻数量，并测量语言切换时的延迟及显存占用。",
+      "依赖置信度自动执行前，在留出数据上拟合温度并验证阈值；超过50个选项时，测试扩大选项预算或两阶段层级分类。"
+    ],
+    "archiveReason": "包含可执行的调用与部署示例，并明确揭示语言失配、概率校准、选项预算和领域微调等关键限制，具有可复用的工程参考价值。",
+    "classifiedAt": 1790768206552,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Laya多语言类型化决策引擎",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Laya versus TypeSafe Jev: accuracy on shared public datasets, every application workflow, all 51 languages, speed, calibration, and the cost of not preloading",
+        "caption": "",
+        "height": 2490,
+        "id": "img-14",
+        "nearbyText": "Multilingual, non-autoregressive System 1 decision engine. Typed decisions over 100+ languages in a single forward pass — 33 ms — trained with reinforcement learning against strictly proper scoring rules (RLCD), with a router that picks the...",
+        "resolvedUrl": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/laya_vs_jev_full.png",
+        "role": "article",
+        "score": 73,
+        "src": "https://raw.githubusercontent.com/NandhaKishorM/laya/main/assets/laya_vs_jev_full.png",
+        "width": 2916
+      }
+    ],
+    "knowledgePoints": [
+      "严格适当评分规则训练不等于开箱即用的概率校准；文中模型仍存在过度自信，需要使用留出数据按问题类型和选项数量拟合温度。",
+      "多语言服务的延迟不仅取决于前向推理：默认只保留一个热模型时，语言切换会触发秒级重载，预加载或增加常驻模型数量可避免这一开销。",
+      "高选项数分类受到选项提示令牌预算约束；增加选项预算会挤占状态文本空间，也可采用先粗分类、再细分类的层级决策。"
+    ],
+    "oneHighValuePoint": "语言失配可能让模型在完全错误时仍高度自信，因此不能仅靠置信度阈值兜底，应在推理前识别语言并路由到适配模型。",
+    "oneLineReview": "对Agent决策模块选型有明确工程价值，但性能主要来自项目自报，跨产品比较条件不一致，概率可靠性也不能仅由训练目标保证。",
+    "primaryCategory": "AI技术与工程实践",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留为低延迟决策模块的选型、评测与部署参考，采用前需在目标业务数据上验证。",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent开发",
+      "模型评估与部署"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍Laya非自回归类型化决策引擎，展示多语言路由、分类与评分接口、模型预加载和基准结果，并说明基础模型零样本能力有限、概率需要校准及高选项数受令牌预算限制等部署边界。",
+    "tags": [
+      "类型化决策",
+      "非自回归模型",
+      "多语言路由",
+      "概率校准",
+      "推理部署"
+    ],
+    "title": "NandhaKishorM/laya",
+    "totalScore": 77,
+    "url": "https://github.com/NandhaKishorM/laya"
+  },
+  "payloadHash": "sha256:1e14ce109cdc789d68889946af2030d9168c47c7ae2a26434a043ba71a4565f0",
+  "refs": {},
+  "revisionId": "sha256:6db0ffd1d3bb99372475bb0cc452c6eff540f739fe21e4804b920e4ad57f6f7d",
+  "schemaVersion": 1,
+  "updatedAt": 1790770675491
+}

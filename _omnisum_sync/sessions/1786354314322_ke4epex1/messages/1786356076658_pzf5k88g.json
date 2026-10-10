@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786356063358,
+  "entityType": "message",
+  "id": "1786356076658_pzf5k88g",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Codex 的能力上限，取决于上下文管理\n\n## 核心观点\n\n很多人感觉 Codex 在长任务中越来越混乱，并非模型能力不足，而是把**规划、执行、讨论、试错、审查和历史信息**全部塞进了同一个任务，导致上下文持续被污染。\n\n更有效的原则是：\n\n> **主任务只保留当前目标和最终决策，其他过程尽量拆分到独立上下文。**\n\n## 推荐的 8 个功能与用法\n\n1. **Luna Max / Sol**  \n   Luna Max 用于复杂重构、排错和架构调整；Sol 更适合前期规划与关键判断。\n\n2. **Quick Chat**  \n   单独处理临时小问题，避免打断主任务。\n\n3. **Side Chat**  \n   用于架构比较和方案争论，只把最终结论同步回主任务。\n\n4. **Review**  \n   代码完成后独立审查，先集中发现问题，不急于让模型立即修改。\n\n5. **Subagent**  \n   将“修改单个文件、定位特定报错、补充测试”等边界清晰的任务拆出去执行。\n\n6. **引用旧任务**  \n   复用历史背景，减少重复说明；但最新事实应以代码、Git 和运行结果为准。\n\n7. **HANDOFF.md**  \n   记录任务进度、遗留问题和下一步，让新会话能够无缝接手。\n\n8. **错题本**  \n   沉淀模型被纠正过的错误，尤其是未来可能重复出现的问题。\n\n## 最值得优先启用的组合\n\n如果只选两个功能，作者推荐：\n\n- **Luna Max**：提升复杂问题的推理深度。\n- **Side Chat**：隔离讨论和试错，保持主任务上下文干净。\n\n## 结论\n\nCodex 的实际效果不只取决于模型本身，更取决于工作流设计。对于跨文件修改、连续开发和长周期任务，**拆分职责、隔离噪声、沉淀状态**，往往比不断追加提示词更能提升稳定性。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786356063358,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:77080a34f61cdd22bf80be6d22e7e00b2758d9b6c0c4de61a0e770ee0ccaa45c",
+  "refs": {
+    "sessionId": "1786354314322_ke4epex1"
+  },
+  "revisionId": "sha256:d5cbe1e73b6225d057915009fbbdc1a836171e27e8f6ac0bb8a5a2ffbe94b0a3",
+  "schemaVersion": 1,
+  "updatedAt": 1786356063358
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789699805449,
+  "entityType": "message",
+  "id": "1789699878149_xdmhy3nx",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nClaude Code 的 **Projects** 是一个长期任务协调器：你只需持续交代工作，Claude 会把任务拆成多个云端线程并行执行、共享项目背景，并集中汇报结果。\n\n## 关键内容\n\n- **适合持续且可拆分的工作**：如跨多个仓库升级配置、长期处理某服务的缺陷、完成大型迁移，或反复分析合同与工单；多个线程可在你离线后继续运行。\n- **统一上下文与管理**：每个新线程会获得项目仓库、文件、指令和记忆，并可独立修改分支、创建 PR、处理 CI 或评审意见；Overview 页面集中显示完成、阻塞和待确认事项。\n- **并非所有场景都适用**：单次小任务直接开云端会话即可；依赖本地数据库、VPN、模拟器等资源时应使用本地会话；纯定时任务可单独创建 Routine。\n- **有使用门槛和成本**：目前面向 Pro/Max，代码项目需配置 GitHub App；并行线程都是完整会话，会更快消耗套餐额度。项目仅归个人，不能共享，且线程无法使用只安装在本机的工具。\n\n## 通俗解读\n\n它不是普通的“项目文件夹”，更像一名云端项目经理带着多个执行者：你向经理说明目标，经理分派任务并追踪进度。若你有长期、多任务工作流，本文值得细读，尤其是 GitHub 权限、环境配置与额度章节；若只想修一个小问题，了解概念即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789699805449,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:27600706b6c3459c589c54ea8d8452a403f5abab9c2728064f6117e7ad42365e",
+  "refs": {
+    "sessionId": "1789697254638_13iy1vho"
+  },
+  "revisionId": "sha256:0807b3c12dd9322fe60c960403f5b7bcd7aa63315a261eb4c843e6658e7fe79d",
+  "schemaVersion": 1,
+  "updatedAt": 1789699805449
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728836594,
+  "entityType": "message",
+  "id": "1789728836594_j1y9z1sf",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 效果类 AI：从“提升效率”转向“为业务结果收费”\n\n玉伯将 AI 应用分为效率类与效果类：前者改善流程，后者能直接、可衡量地帮客户赚钱或省钱。他认为，效率类产品虽多，但容易被模型厂商和传统大厂吸收；真正稀缺且更有创业机会的，是敢对最终业务结果负责的产品。\n\n## 多数 AI Agent 仍只提供过程价值\n\n大量 GTM（市场进入与获客）Agent 宣称帮助企业获客，实际主要用于提供建议、寻找达人或优化广告投放。这些能力提升了执行效率，却很难证明最终收入增长由 Agent 直接带来。作者表示，目前尚未看到能稳定为 AI 创业公司创造正向收益的案例。\n\n## 效果付费可能改写 SaaS 商业模式\n\n作者接触到少数客服 Agent，采用“不省钱、不收费”的模式，再从节省或新增的收益中抽成。若这种模式跑通，软件将从按席位、按月订阅，转向按效果分成，可能冲击传统 SaaS 订阅制。\n\n## 最大难点是归因、责任与成本\n\n效果收费要求把收益对应到具体服务行为，但获客、成交和退款通常受多重因素影响，因果链很长，容易引发核算争议；AI 本身也不是可承担法律责任的主体。因此，效果类 Agent 更可能先出现在客服等结果较易衡量的环节，或作为完整解决方案的一部分。\n\n此外，当前 Agent 的模型调用成本仍高。即使基于 Claude、GPT 等产品已有收入，扣除 Token API 费用后利润可能很薄；国产模型虽提供替代选择，但价格与稳定性尚未形成明显优势。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728836594,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:dd5a03d399819bf788416e72e68113a1eabe2a71f646c2c64e708d57704fe624",
+  "refs": {
+    "sessionId": "1784693900196_xuufpeou"
+  },
+  "revisionId": "sha256:48bbf95d577e0462b0e97ceed8bae02e2229a67065f090f9fa22da97fcee364e",
+  "schemaVersion": 1,
+  "updatedAt": 1789728836594
+}

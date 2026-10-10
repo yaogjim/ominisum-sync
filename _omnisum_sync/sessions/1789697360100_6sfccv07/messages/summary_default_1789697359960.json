@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789697359960,
+  "entityType": "message",
+  "id": "summary_default_1789697359960",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者用监督微调和强化学习训练一个 4B 小模型，让它为 Postgres 反复执行的复杂连接查询挑选更优执行计划；在 113 条基准查询上，延迟较默认方案降低**44.7%**，即吞吐速度约提升**81%**。\n\n## 关键内容\n\n- Postgres 要在连接顺序、连接算法和扫描方式的巨大组合中选方案；它依赖统计估算，若数据分布假设不准，早期误差会层层放大。\n- 模型不直接改写 Postgres，而是借助`pg_hint_plan`生成提示，强制指定连接顺序、哈希连接或索引扫描等，并实际执行候选计划来比较耗时。\n- 该方法针对**重复运行的分析查询**：训练时可多次试错，成本再由后续大量执行分摊；不适合追求一次性查询的即时优化。\n- 作者特别处理了测量噪声：交错测试候选与默认计划，并把`shared_buffers`提高到 2GB，使 “明明一样却被判成更快” 的错误率约下降四倍。\n\n## 通俗解读\n\n“快 81%” 与 “延迟降 44.7%” 并不矛盾：若原来需 100 秒，现在约 55 秒，执行速度约为原来的 1.81 倍。文章的价值不仅在模型成绩，也在详细展示如何避免缓存波动误导强化学习。**数据库、查询优化或智能体训练从业者值得细读；只关心结论可看摘要。**不过所给正文在指标说明处截断，最终训练过程和完整结果并未包含。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1789697359960,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:599c18a1c8149917a7c9999003a367d54751788935df04c3476412422113eaaa",
+  "refs": {
+    "sessionId": "1789697360100_6sfccv07"
+  },
+  "revisionId": "sha256:43a1917400f36128f162807872e69f910d1cba769b19cb499ff6337bdcad17fe",
+  "schemaVersion": 1,
+  "updatedAt": 1789697359960
+}

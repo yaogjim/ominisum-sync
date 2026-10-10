@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693840873,
+  "entityType": "message",
+  "id": "1789693840873_xhnqj0n2",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者用 20 个月把一块因内存不足而失败的 ESP32 原型，迭代成 10 克、可独立输出位姿的 Mighty 相机，并完成首批量产。\n\n## 关键内容\n\n- **核心目标**：让相机自己运行视觉惯性里程计（VIO），机器人无需额外电脑；成品结合全局快门相机和 IMU，以 20Hz 通过 USB/UART 输出位置与朝向。\n- **技术迭代**：ESP32 能追踪图像特征，却跑不动完整估算器；改用约 4 美元的 Rockchip Linux 芯片后，借助 NEON、OpenCV 等优化，才实现实时运行。\n- **不只是算法**：作者还经历多次 PCB 错误、传感器标定、振动测试和量产质检，并制作网页工具，让用户直接在浏览器中刷固件、校准和查看数据。\n- **能力有限定**：位置只相对于每次启动时建立的局部坐标，不是 GPS，也不会跨重启记住地图；暗处、白墙、模糊和强振动可能导致跟踪中断。回环检测可在重访地点时纠正漂移，但仍是默认关闭的测试功能，且不保证每次成功。\n\n## 通俗解读\n\n它更像给机器人装了一个“自带计算的大脑式运动传感器”：能判断自己从起点移动了多远、朝向如何，但并不知道全球位置。文中的回到起点演示也不是严格精度测试。\n\n**是否值得细读：**想了解嵌入式视觉、硬件创业或从原型到量产的工程过程，值得；若只关心产品性能，读限制与规格部分即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693840873,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2216b0dd060f6ef444ec562eccf0d0af073e5dd5e2cce558eb5fb65e9b14c950",
+  "refs": {
+    "sessionId": "1789533103650_osrl1hgg"
+  },
+  "revisionId": "sha256:dea3d94e27acc1f44b6003042a2d2c98c774fe809870f89081777eb7169a19e4",
+  "schemaVersion": 1,
+  "updatedAt": 1789693840873
+}

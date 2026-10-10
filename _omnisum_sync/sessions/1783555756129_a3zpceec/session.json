@@ -1,0 +1,71 @@
+{
+  "createdAt": 1783555756129,
+  "entityType": "session",
+  "id": "1783555756129_a3zpceec",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在复杂任务前让模型执行一次blind spot pass，列出未知未知和潜在风险",
+      "用模型访谈澄清需求，优先回答会影响架构或关键决策的问题",
+      "为AI提供参考实现、HTML mockup或相似代码作为任务地图",
+      "要求模型在实现过程中记录遇到的未知、偏离点和决策原因",
+      "完成任务后让模型反向测验自己，确认对PR或实现细节有充分理解"
+    ],
+    "archiveReason": "包含可复用的AI编程协作框架、提示策略和Claude Code实践经验",
+    "classifiedAt": 1783555797126,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "Fable模型协作实战指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/63c7ad95/img/favicon.ico",
+    "knowledgePoints": [
+      "能力悬垂指模型已有潜在能力，但需要合适工具和工作流才能释放",
+      "更强模型可能需要更短的系统提示词，过多示例反而会限制发挥",
+      "AI编程中的关键瓶颈从写代码转向发现未知、表达意图和验证结果",
+      "盲点扫描、模型访谈、参考实现、实现日志和结果测验可提升人机协作质量",
+      "构建变得更容易后，真正的难点仍然是找到并创造实际价值"
+    ],
+    "oneHighValuePoint": "用“已知/未知”矩阵主动让模型发现盲点，并通过访谈、原型和参考实现缩小意图与真实环境的差距。",
+    "oneLineReview": "方法论价值较高，但证据主要来自厂商演讲和个人案例。",
+    "primaryCategory": "AI工程与智能体协作",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为AI编程和智能体协作方法的参考材料",
+    "secondaryCategories": [
+      "Claude Code",
+      "AI编程方法论"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "Anthropic工程师介绍Fable与Claude Code的协作方法：减少约束、借助工具释放模型能力，用盲点扫描、访谈、参考实现和实现日志管理未知，推动更高效率的软件构建。",
+    "tags": [
+      "Fable",
+      "Claude Code",
+      "AI Agent",
+      "提示词工程",
+      "软件开发效率"
+    ],
+    "title": "Field Guide to Fable — Thariq Shihipar, Anthropic - YouTube",
+    "totalScore": 73,
+    "url": "https://www.youtube.com/watch?v=9fubhllmsBU"
+  },
+  "payloadHash": "sha256:c8d71fffb50b449e3fbdc5d9d79a398e648c74d178fcbb45602abd25c114d20f",
+  "refs": {},
+  "revisionId": "sha256:edaf8036c1994c72408304fb2b1af5fd1cbaaf21ae017ada00692bc77401075a",
+  "schemaVersion": 1,
+  "updatedAt": 1789695860706
+}

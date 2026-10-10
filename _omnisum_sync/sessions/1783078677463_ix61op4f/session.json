@@ -1,0 +1,65 @@
+{
+  "createdAt": 1783078677463,
+  "entityType": "session",
+  "id": "1783078677463_ix61op4f",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "快速浏览Pi仓库，判断其架构是否适合当前业务Agent原型。",
+      "如需落地Agent项目，优先定义业务harness需求而非从零搭建框架。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783079247699,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "小团队基于开源构建Agent Harness",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Agent项目落地的瓶颈常在基础设施和harness设计，而非模型本身。",
+      "基于成熟开源框架进行二次开发可降低小团队试错成本。"
+    ],
+    "oneHighValuePoint": "小团队应把精力放在业务化harness设计，而不是重复造Agent基础设施。",
+    "oneLineReview": "观点方向正确，但只是短帖级提示，缺少完整方法和证据支撑。",
+    "primaryCategory": "AI工程实践",
+    "rating": "C",
+    "rejectReason": "内容主要是观点型短帖，缺少系统展开、实操步骤和案例验证，信息量有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Agent开发",
+      "开源工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出小团队做Agent项目不应从零手搓基础设施，而应基于开源项目如Pi构建面向具体业务领域的harness，并强调业务需求转化、交互设计、工具选择和UIUX的重要性。",
+    "tags": [
+      "Agent",
+      "Harness",
+      "小团队",
+      "Pi",
+      "开源复用"
+    ],
+    "title": "Sunny: 所以小团队最好的方法不是自己全部手搓一个agent出来而是基于现有的开源大神们的资产去构建专属于某一领域的harness 比如说pi，极简架构但是agent架构…",
+    "totalScore": 47.5,
+    "url": "https://x.com/0xenderzcx/status/2060712386781409660"
+  },
+  "payloadHash": "sha256:ffba3dcb5d85db7ea60ddbe9d8396c0412095a6845cdf349041bb428d690133a",
+  "refs": {},
+  "revisionId": "sha256:10e1431a10ae6d183e74b34167dc90b441e0a59bdef81e8c54cabc943b11ed67",
+  "schemaVersion": 1,
+  "updatedAt": 1784801346202
+}

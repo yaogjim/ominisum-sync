@@ -1,0 +1,19 @@
+{
+  "createdAt": 1789642845513,
+  "entityType": "message",
+  "id": "1789642845512_fu059z32",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Portless命名式本地开发网址\n\n**评级**: A (80分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: 开发工具\n**次类别**: 本地开发基础设施, 工程效率\n**标签**: #Portless #本地开发 #反向代理 #HTTPS #Monorepo\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 9 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一份覆盖面广且可直接执行的开发工具文档，但项目尚未发布 1.0，配置兼容性仍可能变化。\n**核心高价值点**: 将动态端口与访问地址解耦，并为 Git worktree 自动生成分支子域名，可显著降低多项目、多代理并行开发时的端口冲突和地址管理成本。\n\n### 摘要\n文章系统介绍 Portless：以稳定的命名式本地域名取代端口号，通过 HTTPS 反向代理适配多种框架、Monorepo 与 Git worktree，并支持自定义 TLD、局域网及远程分享。\n\n### 知识要点\n- Portless 为应用分配随机内部端口，再通过稳定的命名域名和本地反向代理提供访问入口。\n- Git worktree 可自动使用分支名作为子域名前缀，使不同工作树拥有互不冲突的固定 URL。\n- 自定义真实域名形式的 TLD 可让本地环境更接近生产环境，并适配严格限制回调域名的 OAuth 提供商。\n\n### 行动项\n- 全局安装 Portless，并选择一个现有项目用 portless run 启动，验证命名 URL、HTTPS 和热更新。\n- 在 Monorepo 中创建 portless.json，为前端、API 等工作区配置稳定名称并测试统一启动。\n- 使用 portless doctor 检查代理、DNS 和本地 CA 信任状态，再根据需要启用 LAN、Tailscale 或 ngrok 分享。\n\n### 存档判定\n归档: 是 — 原因: 提供了完整的安装、配置、路由、HTTPS、工作树及远程分享方案，命令和边界条件明确，具有较强复用价值。\n删除: 否\n留存决策: 建议精读并存档，作为多应用本地开发环境配置参考",
+    "role": "assistant",
+    "timestamp": 1789642845513,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:e207764fcc695f045d66aa81343326e79eaabec62a60e0062cda908bac4fa90a",
+  "refs": {
+    "sessionId": "1789014853571_3anxrenz"
+  },
+  "revisionId": "sha256:e66a2b19a5b7576abfcb9d8371901e1307961a0daa70189056f081b3f6f8835b",
+  "schemaVersion": 1,
+  "updatedAt": 1789642845513
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785287396108,
+  "entityType": "session",
+  "id": "1785287396108_pupmmwdp",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "排查免费VPN、免费游戏及智能电视应用是否包含带宽转售或代理功能。",
+      "互联网服务商可检测住宅用户IP的异常代理流量，并向受影响客户发送安全告警。",
+      "发现异常出口流量后，扫描电脑、路由器和智能电视等联网设备。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1785402386845,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 4,
+      "transferability": 5
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "住宅代理网络的国家安全风险",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "jacob.gold",
+    "favicon": "https://jacob.gold/images/profile.jpg",
+    "knowledgePoints": [
+      "住宅代理可能由免费VPN、嵌入应用的代理SDK或被感染的电脑、路由器和智能电视产生。",
+      "住宅IP同时承载正常用户与恶意流量，使基于国家、机构或网络类型的批量封禁策略失效。",
+      "住宅代理可为影响行动、垃圾信息、网络入侵及拒绝服务攻击提供基础设施。"
+    ],
+    "oneHighValuePoint": "住宅代理最难治理之处在于恶意流量与真实家庭用户共用住宅IP，平台无法像封禁托管服务商网段那样整体拦截。",
+    "oneLineReview": "文章简明揭示了住宅代理的识别困境与安全风险，但证据链和可执行治理方法明显不足。",
+    "primaryCategory": "网络安全",
+    "rating": "C",
+    "rejectReason": "核心判断主要依赖作者陈述，缺少可核实来源、规模数据、具体案例及完整治理方案。",
+    "retentionDecision": "低优先级速览，了解风险机制即可，无需长期存档",
+    "secondaryCategories": [
+      "互联网治理",
+      "恶意流量与反滥用"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章解释住宅代理如何借助免费VPN、游戏SDK或恶意软件占用家庭网络，并指出其因与真实用户共享住宅IP而难以封禁，可被用于舆论操纵、入侵和拒绝服务攻击，建议运营商检测异常流量并警告用户。",
+    "tags": [
+      "住宅代理",
+      "僵尸网络",
+      "恶意软件",
+      "IP滥用",
+      "网络治理"
+    ],
+    "title": "Residential Proxies Are a National Security Threat",
+    "totalScore": 44,
+    "url": "https://jacob.gold/posts/residential-proxies-are-a-national-security-threat/"
+  },
+  "payloadHash": "sha256:8461e139f3d7a71fd8e3faa798388a0e414d712ae11adc4c6e398e96e9931296",
+  "refs": {},
+  "revisionId": "sha256:6f9bd4cf72f30f06d0887463e6eb91d4a0b6b779d86b17e3e65c18e8786e0623",
+  "schemaVersion": 1,
+  "updatedAt": 1785402386898
+}

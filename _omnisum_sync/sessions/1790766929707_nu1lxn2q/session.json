@@ -1,0 +1,64 @@
+{
+  "createdAt": 1790766929707,
+  "entityType": "session",
+  "id": "1790766929707_nu1lxn2q",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若开展类似仿真评估，可先录制校准视频，记录不同操纵杆位置对应的动作速度。",
+      "从多个方向拍摄棋盘格校准目标，作为场景重建的校准素材。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1790766969083,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "机器人策略仿真评估与场景校准",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "本案例将仿真用于策略评估，而没有将其用于数据收集，两种用途应分别理解。",
+      "作者的校准素材包括动作速度与操纵杆位置对应关系的视频，以及多方向拍摄的棋盘格目标照片。"
+    ],
+    "oneHighValuePoint": "场景重建前的校准采集同时覆盖动作速度与操纵杆位置的关系，以及多方向棋盘格图像，提供了较具体的准备工作线索。",
+    "oneLineReview": "提供了具体的校准线索，但缺少实现细节与效果验证，更适合作为仿真评估的思路提示。",
+    "primaryCategory": "机器人与具身智能",
+    "rating": "C",
+    "rejectReason": "仅提供简短实践描述，缺少仿真实现、评估指标及结果，尚不足以作为可复用方法材料。",
+    "retentionDecision": "速览校准思路，暂不归档；有机器人仿真需求时再查阅原帖",
+    "secondaryCategories": [
+      "仿真评估"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者分享一次机器人项目中的仿真尝试：没有用仿真收集数据，而是用于策略评估；通过几分钟校准视频记录动作速度与操纵杆位置的关系，并从多个方向拍摄棋盘格目标辅助场景重建。回复主要是活动交流。",
+    "tags": [
+      "Sim2Real",
+      "策略评估",
+      "场景重建",
+      "运动校准",
+      "棋盘格标定"
+    ],
+    "title": "simon: Over the weekend, I put an unreleased checkpoint of π0",
+    "totalScore": 48,
+    "url": "https://x.com/nautsimon_/status/2104966849318510862"
+  },
+  "payloadHash": "sha256:443e7f7080478161b562aad3ed8015efef19be8514e1ef1087877ff14caf1906",
+  "refs": {},
+  "revisionId": "sha256:e9522a893a2f1bee33ebd3a42a8e00f1c10ee78b295ad8ead4618b40fb14362a",
+  "schemaVersion": 1,
+  "updatedAt": 1790768348602
+}

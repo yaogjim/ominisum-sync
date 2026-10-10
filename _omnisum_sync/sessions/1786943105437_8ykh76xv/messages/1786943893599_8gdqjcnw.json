@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786943866391,
+  "entityType": "message",
+  "id": "1786943893599_8gdqjcnw",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Grok 4.6 基准测试与分析总结\n\nGrok 4.6 在 Artificial Analysis 智能指数中获得 **61 分**，让 SpaceXAI 重返顶级模型阵营，仅落后于 Anthropic 的领先模型。其突出优势是：以较低价格实现前沿级智能，并在知识工作、客服和软件终端等智能体任务中表现强劲。\n\n## 1. 智能水平重返前沿\n\n- Grok 4.6 的智能指数为 **61 分**：\n  - 与 **GPT-5.6 Sol（max）**持平；\n  - 低于 **Claude Opus 5（max，63 分）**和 **Claude Fable 5（max with fallback，62 分）**；\n  - 略高于 **Kimi K3**。\n- 相比一个多月前发布的 Grok 4.5，提升了 **5 分**；相比 Grok 4.3，提升了 **23 分**。\n- 这意味着 SpaceXAI 已回到智能模型第一梯队，目前整体仅落后于 Anthropic。\n\n## 2. 智能体任务表现尤其突出\n\nGrok 4.6 的主要优势并非静态推理，而是需要多轮操作、工具调用和自主完成工作的智能体任务。\n\n- **GDPval-AA v2：1753 Elo**\n  - 该测试衡量现实世界中的智能体知识工作能力；\n  - Grok 4.6 仅落后于 Claude Opus 5；\n  - 由于置信区间重叠，其表现与 Claude Fable 5、Qwen3.8 Max 在统计上没有明显差异。\n- **𝜏³-Banking：50.7%**\n  - 测试多轮银行客服和工具使用能力；\n  - 位列前二，仅略低于 Qwen3.8 Max 的 **51.3%**。\n- **Terminal-Bench v2.1：88.4%**\n  - 衡量终端环境中的软件任务处理能力；\n  - 表现与领先模型处于同一水平。\n\n很少有模型能同时在知识工作、客户服务和终端软件任务中保持竞争力。结合价格因素，Grok 4.6 在智能指数涵盖的每项智能体评测中，都位于“**成本—性能帕累托前沿**”，即难以找到同时比它更便宜、表现又更好的模型。\n\n## 3. 前沿智能，但价格明显更低\n\n- 定价与 Grok 4.5 相同：\n  - 输入：**2 美元/百万 tokens**\n  - 输出：**6 美元/百万 tokens**\n- 相比之下：\n  - Claude Opus 5：**5/25 美元**\n  - GPT-5.6 Sol：**5/30 美元**\n- Grok 4.6 的价格比上述模型低 **60%以上**，尤其是输出 token 价格优势明显；而在推理密集型任务中，输出成本通常占主导。\n- Artificial Analysis 实测其平均每项任务成本为 **0.84 美元**：\n  - 与 Kimi K3 相同；\n  - 但智能指数略高于 Kimi K3；\n  - 因此进入“智能水平—单任务成本”的帕累托前沿。\n\n在前沿模型中，性能提升通常伴随涨价。Grok 4.6 则在价格不变的情况下，将智能指数提高了 **5 分**，是其性价比优势的核心。\n\n## 4. 长周期知识工作：达到 Claude Fable 5 档次\n\n在私有长周期智能体知识工作基准 **AA-Briefcase** 中，Grok 4.6 首次参测即获得 **1577 Elo**：\n\n- 整体达到 **Claude Fable 5** 档次；\n- 仍落后于 Claude Opus 5 系列；\n- 在评分标准完成度、展示质量和分析质量上均较稳定，而不是依靠某一项突出表现弥补其他短板。\n\n其执行效率尤其值得关注：\n\n| 模型 | 平均任务轮数 | 平均输入 tokens |\n|---|---:|---:|\n| Grok 4.6 | 约 **53 轮** | 约 **0.5B** |\n| Claude Opus 5（max） | 约 **103 轮** | 约 **2.0B** |\n\nGrok 4.6 大约只用 Claude Opus 5 一半的交互轮数、四分之一的输入 tokens，就能完成相近级别的任务。由于长周期任务会快速累积上下文，这种效率带来的实际成本优势，远大于单纯比较每 token 定价所得出的差距。\n\n## 5. 其他模型信息\n\n- 上下文窗口：**50 万 tokens**，与 Grok 4.5 相同。\n- 标准价格：\n  - 输入：**2 美元/百万 tokens**\n  - 输出：**6 美元/百万 tokens**\n- 缓存命中价格：**0.5 美元/百万 tokens**\n  - 高于 Grok 4.5 的 **0.3 美元/百万 tokens**。\n\n## 总结\n\nGrok 4.6 以 **61 分智能指数、0.84 美元平均单任务成本**和优秀的智能体表现，成为当前最具成本效率的前沿模型之一。它尚未全面超越 Claude Opus 5，但在接近 GPT-5.6 Sol 和 Claude Fable 5 的智能水平下，提供了更低的价格、更少的任务轮数和更高的 token 使用效率。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786943866391,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e809ece8fec83b66c0fae903d7c82abebcd6e6ebba96092d8d5d99c4463e3e01",
+  "refs": {
+    "sessionId": "1786943105437_8ykh76xv"
+  },
+  "revisionId": "sha256:3087996f8aeadfec9088b6289712198c97056b43049ab82774ba972e69e95e8f",
+  "schemaVersion": 1,
+  "updatedAt": 1786943866391
+}

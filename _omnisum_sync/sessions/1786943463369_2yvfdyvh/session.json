@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943463369,
+  "entityType": "session",
+  "id": "1786943463369_2yvfdyvh",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "采购折扣推理额度前，核验额度来源、转让权限及模型服务商条款。",
+      "使用代理转发服务前，评估请求日志、数据处理、密钥池和服务可用性风险。",
+      "将异常低折扣和大额日供应量列入AI基础设施采购的欺诈与合规审查清单。"
+    ],
+    "archiveReason": "提供了多个公开市场名称、主动接触记录和额度交付方式观察，具有较稀缺的行业案例价值。",
+    "classifiedAt": 1786943502738,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI推理额度经纪市场调查",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "vectoral.com",
+    "favicon": "https://vectoral.com/favicon.ico",
+    "knowledgePoints": [
+      "Token经纪人会收购初创公司的闲置云服务或模型额度，再通过直接推销、交易平台和论坛进行转售。",
+      "部分转售服务不直接交付提供商密钥，而是使用代理从密钥池中选择凭证并转发请求。",
+      "文章观察到30%至80%的折扣宣传及每日十万美元供应报价，但数千万额度的市场规模仅为粗略估计。"
+    ],
+    "oneHighValuePoint": "超低价推理服务可能并非来自正规批量采购，而是经纪人汇集多来源额度后通过代理池转发，采购方应将其视为供应链和数据合规风险。",
+    "oneLineReview": "这是一篇具有新鲜一手线索的市场调查，但市场规模和额度来源仍缺乏充分验证。",
+    "primaryCategory": "AI安全与推理基础设施",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并作为AI推理额度灰色市场案例保留",
+    "secondaryCategories": [
+      "商业市场研究",
+      "云资源采购风险"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章通过创始人转发邮件、主动联系经纪人、试挂售额度及浏览网站和论坛，描绘AI推理额度的场外转售生态，并指出代理转发、超低折扣、来源不明与潜在整治风险。",
+    "tags": [
+      "推理额度",
+      "Token经纪",
+      "API代理",
+      "场外交易",
+      "供应链风险"
+    ],
+    "title": "Who Are the Token Brokers? | Vectoral",
+    "totalScore": 65,
+    "url": "https://vectoral.com/blog/who-are-the-token-brokers"
+  },
+  "payloadHash": "sha256:8bdfd0075c475027a5e4f0a63c715c9ec28b02146cccc7c67a726ba4f83a8710",
+  "refs": {},
+  "revisionId": "sha256:8000c55554ed5d763d3856d22fb5741a5b1358c7556db32d74e91c17f2ee3150",
+  "schemaVersion": 1,
+  "updatedAt": 1789727975759
+}

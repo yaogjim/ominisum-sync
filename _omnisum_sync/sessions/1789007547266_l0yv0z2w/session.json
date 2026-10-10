@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789007547266,
+  "entityType": "session",
+  "id": "1789007547266_l0yv0z2w",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为关键技术栈建立组件清单，识别许可限制、单一供应商和停产风险。",
+      "将核心组件沉淀为开放规格、可验证协议和标准化物料，以提高互操作性。",
+      "比较用户自行制造与集中供应的时间、成本和可靠性，确定哪些基础组件适合产品化交付。"
+    ],
+    "archiveReason": "文章提供了从开放协议、关键材料补链到标准化试剂制造的完整案例，对深科技产品化和基础设施建设具有迁移价值。",
+    "classifiedAt": 1789008159330,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "从开放PURE系统到合成细胞工厂",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "bnext.bio",
+    "favicon": "https://cdn.prod.website-files.com/69da8eb54029f1798eb88d32/6a4e33c427f127d4e307d75d_b-next-webclip.jpg",
+    "knowledgePoints": [
+      "PURE是由36种蛋白质、31种小分子、43种tRNA混合物及核糖体组成的定义型转录翻译系统。",
+      "科研平台的可复现性不仅取决于协议开放，还受质粒完整性、材料许可、单一供应商和生产复杂度制约。",
+      "开放规范、可自行复现的协议与预制标准化产品可以并存，分别提供技术自主性和使用效率。"
+    ],
+    "oneHighValuePoint": "开放协议只能保障技术可获得性，若关键材料供应脆弱且实验室自制成本过高，还必须建设与开放规范绑定的实体制造和交付体系。",
+    "oneLineReview": "这是一个信息具体、具有迁移启发的深科技基础设施产品化案例，但主要证据来自团队自述，执行细节仍有限。",
+    "primaryCategory": "生物技术产品开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为科研基础设施产品化与供应链建设案例选择性保留",
+    "secondaryCategories": [
+      "商业系统构建",
+      "开放技术基础设施"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章回顾团队为解决合成细胞研究的互操作与供应链问题，从重建开放PURE系统、补齐tRNA等关键组分，逐步发展出开放规范的Cytosol试剂盒及专用制造工厂的过程。",
+    "tags": [
+      "合成细胞",
+      "PURE系统",
+      "开放规范",
+      "生物制造",
+      "供应链"
+    ],
+    "title": "We accidentally built a synthetic cell factory",
+    "totalScore": 65,
+    "url": "https://bnext.bio/post/we-accidentally-built-a-synthetic-cell-factory"
+  },
+  "payloadHash": "sha256:ae7d124c69bb00b3d9392b0f1e35f928aaa68a9cd1263358bc3a1b4725181a6d",
+  "refs": {},
+  "revisionId": "sha256:cb41445f6c2b6e67a74cb4e839ce9e25afd0a7c280c9c9cb8a9ba44db1c13177",
+  "schemaVersion": 1,
+  "updatedAt": 1789014013872
+}

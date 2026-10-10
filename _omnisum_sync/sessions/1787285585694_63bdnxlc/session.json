@@ -1,0 +1,83 @@
+{
+  "createdAt": 1787285585694,
+  "entityType": "session",
+  "id": "1787285585694_63bdnxlc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用四层结构检查现有Agent项目是否具备系统提示、工具、循环控制和模型适配能力。",
+      "在同一运行框架中测试不同模型，比较任务结果、成本和稳定性。",
+      "根据具体工作流调整系统提示和工具集合，避免无目的地堆叠能力。"
+    ],
+    "archiveReason": "对智能体框架进行了系统提示、工具、智能体循环和模型适配层的清晰拆分，可用于理解或评估其他Agent产品。",
+    "classifiedAt": 1789724978851,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI智能体运行框架的四层结构",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "earendil.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Royal Robbins on El Capitan, his harness racked with the tools of the ascent.",
+        "caption": "Royal Robbins on El Capitan, his harness racked with the tools of the ascent. Photo by Tom Frost.",
+        "height": 2182,
+        "id": "img-2",
+        "nearbyText": "Royal Robbins on El Capitan, his harness racked with the tools of the ascent. Photo by Tom Frost.",
+        "resolvedUrl": "https://earendil.com/static/posts/what-is-a-harness/royal-robbins-el-capitan-climbing-05.png",
+        "role": "figure",
+        "score": 113,
+        "src": "https://earendil.com/static/posts/what-is-a-harness/royal-robbins-el-capitan-climbing-05.png",
+        "width": 1440
+      }
+    ],
+    "knowledgePoints": [
+      "智能体运行框架为模型提供指令、工具和执行环境，而不只是模型外部的交互界面。",
+      "智能体循环让模型能够根据中间结果反复调用工具、检查产物并自主决定何时结束任务。",
+      "模型适配层可将同一工作流连接到不同供应商或开源模型，支持成本、效果和数据控制的统一比较。"
+    ],
+    "oneHighValuePoint": "可将Agent Harness拆分为系统提示、工具、智能体循环和模型适配层，以此分析智能体的能力边界与用户控制权。",
+    "oneLineReview": "概念拆分清晰且高度相关，适合作为Agent入门框架，但缺少实现细节、对比数据和外部证据。",
+    "primaryCategory": "AI Agent技术",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览，保留其智能体运行框架的四层分析模型",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI编程工具",
+      "开源软件"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以攀岩安全带作类比，解释智能体运行框架如何通过系统提示、工具、智能体循环和模型适配层组织模型执行任务，并强调开源、本地运行与模型中立对用户控制权的价值。",
+    "tags": [
+      "智能体框架",
+      "系统提示",
+      "工具调用",
+      "智能体循环",
+      "模型适配"
+    ],
+    "title": "What is a Harness? | EARENDIL",
+    "totalScore": 69,
+    "url": "https://earendil.com/posts/what-is-a-harness/"
+  },
+  "payloadHash": "sha256:669b90bc5da233e0471cf51ebf79602b21a2e61dea441f66a346164e443556b7",
+  "refs": {},
+  "revisionId": "sha256:eef953f457473f5d14707cf2b3487f08e5d608ed3dbe9aa10003f975a3efc048",
+  "schemaVersion": 1,
+  "updatedAt": 1789724979606
+}

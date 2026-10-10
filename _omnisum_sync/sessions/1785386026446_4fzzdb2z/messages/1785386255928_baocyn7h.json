@@ -1,0 +1,19 @@
+{
+  "createdAt": 1785386255929,
+  "entityType": "message",
+  "id": "1785386255928_baocyn7h",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Agent产品视频制作技能库\n\n**评级**: A (83分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI Agent开发工具\n**次类别**: 产品视频制作, Remotion开发\n**标签**: #Claude Code #Codex #Remotion #产品宣传片 #镜头配方\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 10 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一个资源完整、上手路径清晰且与AI产品开发高度相关的实用工具库，但效果与方法质量仍需通过实际项目验证。\n**核心高价值点**: 将镜头语言、Remotion实现、声音设计、完整模板和Agent工作流封装为可直接调用的产品视频制作系统。\n\n### 摘要\n文章介绍一个面向Claude Code与Codex的产品视频制作skill，内含镜头配方、Remotion动态样例、完整模板、音效素材和制作流程，并给出安装、调用及无头Linux渲染排障方法。\n\n### 知识要点\n- 镜头配方卡可将用途、能量、时长、参数、实现要点和已知问题封装为可复用的动态设计单元。\n- 使用已验收的完整模板并替换截图、文案和品牌信息，是比从零编排镜头更快且质量更稳定的出片路径。\n- 低配置无头Linux渲染需限制并发、使用chrome-headless-shell，并在CDN不可用时显式指定本地浏览器路径。\n\n### 行动项\n- 通过skills CLI或克隆并链接仓库，将video-shotcraft安装到Claude Code或Codex的skills目录。\n- 先在Gallery选择镜头卡，或直接使用Ink Press模板，以目标产品截图和品牌文案制作一版测试视频。\n- 发布前替换演示截图并检查数据脱敏、音频授权及Remotion商业许可要求。\n\n### 存档判定\n归档: 是 — 原因: 项目提供可直接安装的Agent skill、完整成片模板、镜头配方、参考实现和渲染排障方案，具有较强复用价值。\n删除: 否\n留存决策: 建议精读并存档，作为Agent驱动产品视频制作的工具库与流程参考",
+    "role": "assistant",
+    "timestamp": 1785386255929,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:4df4fbada260b6cdb33d4a4dca1f42b7b395ce35f4017082142e52eac5ea351f",
+  "refs": {
+    "sessionId": "1785386026446_4fzzdb2z"
+  },
+  "revisionId": "sha256:57966750aa6e7a30efb4795336271433fb4c47929c25432cf00fb4f6e121404f",
+  "schemaVersion": 1,
+  "updatedAt": 1785386255929
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695890401,
+  "entityType": "message",
+  "id": "1789695890401_rxmatryh",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章提出尚未落地的 **Agent Mode**：让浏览器主动告知网站“当前由 AI 代理操作”，并允许网站在用户授权后把任务直接交给代理，减少截图、点击和复制粘贴。\n\n## 关键内容\n\n- **现有交互很低效**：Codex、Claude Code、Cursor 等代理访问网页时，看起来与普通用户无异，只能识别像素、模拟点击；页面也无法直接把元素、参数或反馈传给代理。\n- **第一层是身份与能力发现**：浏览器发送 `Agent-Mode` 请求头，向页面暴露 `navigator.agentMode`；网站则通过统一 JSON 文件提供 CLI、MCP 服务、技能或更适合代理的页面入口。\n- **第二层是双向任务通道**：页面可向代理发送结构化请求，例如“根据邮件线程起草回复”，代理完成后把结果返回页面。它与 WebMCP 的“代理调用网页工具”方向相反但互补。\n- **安全问题尚未解决**：作者要求必须经过“用户开启模式、按网站授权、代理逐次审批”三道门，但承认这只能约束提示词注入风险，尚未经过实战验证。\n\n## 通俗解读\n\n这不是已经发布的标准，而是一份供讨论的“稻草人提案”。它想把现在各工具私建的桥梁，变成类似摄像头权限那样的浏览器公共接口。\n\n## 是否值得细读\n\n**值得相关从业者细读**：尤其是浏览器、AI 代理、MCP 或开发工具开发者；普通读者了解上述两层设计和安全争议即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695890401,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3288d2427110d2565c2c9274e324fee42c5e0d8c83fbe03e348cfed24e1c289b",
+  "refs": {
+    "sessionId": "1783567365093_ym7qy0jj"
+  },
+  "revisionId": "sha256:d59926f35fb220254d8b8dfe3c2983647535e7a38d8b7d7c40fd1458584c5170",
+  "schemaVersion": 1,
+  "updatedAt": 1789695890401
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728635207,
+  "entityType": "message",
+  "id": "1789728635209_i3dyv8sa",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 用 GitOps 重构招聘：AI 自动流转，人保留最终责任\n\n作者升级了团队的“AI 面试管家”，将 AI 面试系统、GitHub、Codex 与飞书打通，把候选人建模为可跨系统流转、版本化和回写的状态对象。目标不只是提高面试效率，更是完整保留招聘决策过程，明确 AI 与人的责任边界。\n\n## 四端协同，各自承担不同角色\n\n- **AI 面试系统**是业务中枢，管理简历、文字与语音首面、报告、排期、反馈及数据分析。\n- **GitHub**是协作资料仓：每位候选人拥有独立目录，阶段、反馈和状态通过文件及 Git 提交记录，形成可追溯的证据链。\n- **Codex**是面试官的主要操作界面，可拉取资料、辅助生成评估、写入反馈并提交排期等任务。\n- **飞书**负责日历、私信、催填和周报；后台 worker 异步执行、失败重试并回写状态，降低不同任务相互影响。\n\n## 招聘流程成为可自动流转的状态机\n\n简历上传后，系统异步解析结构化信息；候选人完成 AI 首面后，问答、关键词和评分被保存，并生成 HR 版与候选人版报告。面试官提交反馈后，结果为 pass 会自动推进到下一阶段目录，reject 或 hold 则仅更新记录。排期确认后，飞书自动建日历，并在面试结束后 1 小时、3 小时催填反馈。\n\n## 真正价值在于可追责，而非单纯自动化\n\n作者认为，这套架构把招聘流程“GitOps 化”：数据库保存业务主数据，GitHub保存组织过程记忆，本地 Agent兼顾智能协作与安全边界。AI负责事实抽取和建议，人负责结论、理由与责任判断。其潜在价值是减少口头反馈散失，让“谁在何时做了什么判断”可审计；但原文未提供效率提升或准确率等量化结果。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728635207,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:47ce0239f6f3b61caa58a176b42df952dc88556e456a97cd175b4fd6e139fdfa",
+  "refs": {
+    "sessionId": "1783064129340_ttqzh8na"
+  },
+  "revisionId": "sha256:0167c0de3a1bc40e40028f6bf9a1dee37e51bd8e50bda40829b04850757538f9",
+  "schemaVersion": 1,
+  "updatedAt": 1789728635207
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782350852025,
+  "entityType": "message",
+  "id": "1782350852024_mclw66pw",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: CloneSite网页复刻方案\n\n**评级**: C (42分)  |  **深度阅读**: 否  |  **建议操作**: 浏览\n\n**主类别**: AI编程工具\n**次类别**: 网页克隆, 全栈开发\n**标签**: #coding agent #网页复刻 #TanStack\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 4 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 5 | 20% |\n| 可操作性 | 4 | 15% |\n| 方法论价值 | 4 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 有产品思路，但更像推广帖，信息密度和证据都偏弱。\n**核心高价值点**: 把网页复刻做成输出可用源代码的 coding agent，而不是只生成静态页面。\n\n### 摘要\n这是一条关于 clonesite.ai 的产品推荐帖，介绍其通过 browser-cli、语义重建和截图比对复刻网页，并输出可直接进入工程流程的 TanStack 代码。\n\n### 知识要点\n- browser-cli 可结合语义重建与截图比对提高网页还原度\n- 复刻结果直接输出 TanStack/TSX 代码，便于进入工程流程\n\n### 行动项\n- 关注 clonesite.ai 的实际效果与边界条件\n- 调研语义重建 + 截图比对在网页生成中的可复用流程\n\n### 存档判定\n归档: 是 — 原因: 包含具体工具名、实现思路和产物形态，可作为网页复刻与AI开发工具选型参考。\n删除: 否\n留存决策: 短期归档，作为网页复刻和coding agent方向的产品信号参考，后续可按需再清理。",
+    "role": "assistant",
+    "timestamp": 1782350852025,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:ac9818a21837287d4cf3317852de0a09e231355730106fbdd883df63aa412f5f",
+  "refs": {
+    "sessionId": "1782349292239_0braek5q"
+  },
+  "revisionId": "sha256:e73dda74d3ad60505e6df4cc3a1518df8a7d0eac5fa1b22f05d5f1b31ec74614",
+  "schemaVersion": 1,
+  "updatedAt": 1782350852025
+}

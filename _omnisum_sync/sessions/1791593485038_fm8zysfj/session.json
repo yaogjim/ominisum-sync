@@ -1,0 +1,67 @@
+{
+  "createdAt": 1791593485038,
+  "entityType": "session",
+  "id": "1791593485038_fm8zysfj",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个邮件分流或资料筛选任务，逐步标注哪些属于判断、推理和代码执行。",
+      "用少量真实样本测试原子化判断问题，保留不确定选项，并检查置信度分流结果是否符合预期。",
+      "将判断问题和阈值放入统一配置，记录决策日志；邮件回复先生成草稿，经人工批准后再发送。"
+    ],
+    "archiveReason": "包含可复用的判断、推理与执行分层框架，以及置信度分流、集中配置、决策日志和小规模测试方法。",
+    "classifiedAt": 1791594615984,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "Jev与Opus分层工作流搭建",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "分类、排序和过滤可与复杂推理分开处理，再由代码执行动作；这是可复用的多模型工作流设计思路。",
+      "判断问题应尽量原子化，并提供任务相关上下文；不确定结果应进入进一步推理或人工复核路径。",
+      "将判断问题与阈值集中配置、记录决策及置信度，并先做小规模测试，有助于后续排查和调整工作流。"
+    ],
+    "oneHighValuePoint": "先将工作流拆成判断、推理和执行三类步骤，再按置信度分流，并集中管理问题、阈值和决策日志，便于定位错误与迭代。",
+    "oneLineReview": "任务分层与测试框架具有参考价值，但工具能力、安装流程及“提升10倍”等效果主张缺少验证。",
+    "primaryCategory": "AI工作流与Agent开发",
+    "rating": "B",
+    "rejectReason": "缺少真实运行结果、成本与准确率对比；模型和工具能力未经文内证据验证，输出类型描述也存在不一致，不宜直接采信效果宣传。",
+    "retentionDecision": "选择性保留任务分层、配置管理与测试框架，具体工具和安装步骤核实后再使用",
+    "secondaryCategories": [
+      "AI编程工具",
+      "知识管理与效率自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍让Jev负责分类评分、Opus负责复杂推理、代码负责执行的分层工作流，提供安装连接步骤及邮件分流、研究筛选、内容评分模板，并建议按置信度分流、集中配置和小规模测试，但未提供效果验证数据。",
+    "tags": [
+      "多模型路由",
+      "置信度分流",
+      "Claude Code",
+      "工作流自动化",
+      "人工审核"
+    ],
+    "title": "Opus 5.5 + Jev：完整设置（让产出提升 10 倍）",
+    "totalScore": 68,
+    "url": "https://x.com/aiedge_/status/2107835983735787568"
+  },
+  "payloadHash": "sha256:50a93db9fb4c2171c647a34e503ca1fcc6ca24010a8a7d668e34c9131b93bb12",
+  "refs": {},
+  "revisionId": "sha256:5b2c865a571e3c783de3596188677fe7e4edd7d76d2597f31e93e6d96f00fd60",
+  "schemaVersion": 1,
+  "updatedAt": 1791594616049
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1785288025552,
+  "entityType": "message",
+  "id": "1785288302860_iv2os7nn",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Ruff v0.16.0：默认规则扩展，Markdown 格式化与诊断能力增强\n\n## 版本概览\n\nRuff v0.16.0 正式发布。Ruff 是使用 Rust 编写的高性能 Python Linter 和 Formatter，可替代 Black、Flake8、isort、pyupgrade、pydocstyle 等多种工具，执行速度通常快几十到数百倍。\n\n可通过以下方式安装：\n\n```bash\nuv tool install ruff@latest\n```\n\n## 一、默认检查规则大幅增加\n\n### 默认启用规则从 59 条增至 413 条\n\nRuff 当前总规则数已从 708 条增长至 968 条。v0.16.0 将更多此前未默认启用、但可能发现严重问题的规则加入默认规则集，例如：\n\n- `flake8-bugbear` 规则\n- `pyupgrade` 规则\n- Ruff 自有的 `RUF` 规则\n- 语法错误和潜在运行时错误检查\n\n这意味着很多项目无需额外配置，就能发现更多问题。\n\n### 部分规则被移出默认集合\n\n为了减少过于主观或风格化的检查，18 条 `pycodestyle` 和 `pyflakes` 规则不再默认启用，包括部分：\n\n- 不必要的分号或语句拆分检查\n- 布尔值比较检查\n- 通配符导入检查\n- 变量命名相关检查\n\n如果希望恢复旧版默认规则集，可配置：\n\n```toml\n[lint]\nselect = [\"E4\", \"E7\", \"E9\", \"F\"]\n```\n\n> 对大多数用户而言，升级不会带来大量代码或配置改动，但 CI 中可能出现更多新的诊断结果，建议升级后重新检查项目。\n\n## 二、Markdown 代码块格式化\n\nRuff 现在可以格式化 Markdown 文件中的 Python 代码块，支持以下标记：\n\n- `python`\n- `py`\n- `python3`\n- `py3`\n- `pyi`\n- `pycon`\n\n不同类型会采用对应格式：\n\n- `pyi`：按 Python 类型存根文件格式化\n- `pycon`：按 Python REPL 会话格式化\n- 其他标记：按普通 Python 文件格式化\n\n这也支持 Quarto Notebook，例如：\n\n````markdown\n```{python}\nimport ruff\n```\n````\n\n如需关闭格式化，可以使用：\n\n```python\n# fmt: off\n...\n# fmt: on\n```\n\n或在 Markdown 中使用：\n\n```html\n<!-- fmt: off -->\n...\n<!-- fmt: on -->\n```\n\n也可以通过 `extend-exclude` 排除所有 Markdown 文件。\n\n## 三、新增更灵活的忽略注释\n\nRuff v0.16 增加了专属的诊断抑制注释：\n\n### 1. 忽略一段代码\n\n```python\n# ruff: disable[N803]\ndef foo(legacy_arg):\n    ...\n# ruff: enable[N803]\n```\n\n### 2. 忽略当前行或下一条逻辑语句\n\n```python\nimport math  # ruff: ignore[F401]\n```\n\n也可以忽略下一条逻辑语句：\n\n```python\n# ruff: ignore[N803]\ndef foo(legacy_arg):\n    ...\n```\n\n### 3. 忽略整个文件\n\n```python\n# ruff: file-ignore[F401] 允许本文件存在未使用导入\n```\n\n### 4. 自动生成忽略注释\n\n新增 CLI 参数：\n\n```bash\nruff check --preview --add-ignore try.py\n```\n\n在 Preview 模式下，这些注释还可以使用规则名称，而不仅是规则编号：\n\n```python\nimport math  # ruff: ignore[unused-import]\n```\n\n## 四、修复结果直接显示在诊断输出中\n\n以前需要显式使用 `--diff` 才能查看 Ruff 的修复内容。现在：\n\n- `ruff check` 默认输出中会展示可用修复\n- `ruff format --check` 也会显示格式修复差异\n- `format --check` 支持与 Linter 相同的多种输出格式\n- 支持 JSON、GitHub、GitLab 等适合 CI 的输出格式\n\n### JSON 输出存在兼容性变化\n\nv0.16.0 中，以下 JSON 字段可能返回 `null`，不再默认返回空字符串或第 1 行第 1 列：\n\n- `filename`\n- `location`\n- `end_location`\n- `fix.edits[].location`\n- `fix.edits[].end_location`\n\n依赖 Ruff JSON 输出的工具需要确认是否能正确处理 `null`。\n\n## 五、更多规则正式稳定\n\n以下规则不再处于 Preview 状态，正式成为稳定规则，覆盖：\n\n- Airflow 函数签名兼容性\n- 版权声明缺失\n- 不必要的浮点转换\n- `min`/`max` 排序问题\n- 集合字面量中的隐式字符串拼接\n- 异常日志记录位置\n- 布尔返回类型\n- 位置参数过多\n- `StopIteration` 返回问题\n- Union 类型定义问题\n- 类字典中的类型注解\n- `__all__` 重复项\n\n此外，多个既有规则的行为也完成稳定化，例如：\n\n- 更准确地识别异常日志记录\n- 扩展 PEP 585 类型检查范围\n- 改进 gettext 调用识别\n- 减少 URL 检查误报\n- 支持新版 PySNMP API\n- 更好识别 `typing_extensions.Text`\n\n## 总结\n\nRuff v0.16.0 的核心变化可以概括为：\n\n1. **默认检查更严格**：默认规则从 59 条增加到 413 条，能发现更多潜在问题。\n2. **文档工程能力增强**：支持格式化 Markdown 和 Quarto 中的 Python 代码。\n3. **忽略机制更完善**：支持按行、按逻辑语句、按代码范围或按文件忽略问题。\n4. **修复反馈更直观**：诊断输出直接展示自动修复内容，并增强 CI 输出支持。\n5. **升级需关注兼容性**：主要风险是新增默认规则带来的新告警，以及 JSON 输出中的 `null` 字段变化。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1785288025552,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:057bc6c9b6ec1188db76408bc2ac283e3fe6592a72d778496219d50ff3770435",
+  "refs": {
+    "sessionId": "1785288302496_9qe5e7iq"
+  },
+  "revisionId": "sha256:312ad2a3dbadf341fbadb1859a842dbfcba6203520e7aed3397aa26058e289a1",
+  "schemaVersion": 1,
+  "updatedAt": 1785288025552
+}

@@ -1,0 +1,20 @@
+{
+  "createdAt": 1783296137811,
+  "entityType": "message",
+  "id": "1783296214306_8tb7aiu7",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 主旨概括\n\nRepoPrompt 已正式开源，社区版（Community Edition）已上线 GitHub。它从一个“帮开发者挑选代码文件、生成高质量 Prompt”的工具，升级为围绕 MCP Server 和多 Agent 协作的新架构工具。\n\n---\n\n## 1. 开源背景：作者加入 OpenAI，先安置付费用户\n\n- RepoPrompt 作者 Provencher 几个月前受到 OpenAI 开发者体验负责人 Romain Huet 邀请，加入 OpenAI 团队。\n- Provencher 接受邀请前提出条件：必须先妥善安排现有付费用户。\n- 因此 RepoPrompt 先对用户免费开放，现在进一步彻底开源。\n- 之前的付费用户还会获得 Codex Credits 作为补偿。\n\n---\n\n## 2. RepoPrompt 最初解决的问题：帮 AI 看“该看的代码”\n\n- RepoPrompt 最初的核心功能很简单：  \n  **从代码仓库中挑选相关文件，拼成高质量 Prompt，再复制到 ChatGPT 或 Claude 中使用。**\n- 它解决的是开发者使用 AI 写代码时的真实痛点：\n  - 直接把整个代码库丢给 AI，效果往往不好；\n  - 超过 **32K token** 的 Prompt，甚至可能让模型表现变差；\n  - 更好的做法是：只给模型看当前任务真正需要的代码。\n- 这种方法现在被称为 **上下文工程（Context Engineering）**。\n\n**例子：**  \n如果你想让 AI 修改一个登录功能，不应该把整个项目都发给它，而是只选登录组件、认证逻辑、路由和相关测试文件，让 AI 聚焦处理。\n\n---\n\n## 3. 开源版架构变化：从手工 Prompt 工具转向 Agent 调度体系\n\n- 开源版本做了较大架构调整。\n- 过去是应用本身负责组织 Prompt 和调用 Agent。\n- 现在改为：  \n  **内置 MCP Server 成为主控，底层命令行工具变成可替换的执行层。**\n- 可接入的执行工具包括：\n  - Claude Code\n  - Codex\n  - OpenCode\n  - Gemini CLI\n\n这意味着开发者可以：\n\n- 用一个推理模型做任务规划和拆解；\n- 把不同子任务分发给多个 Agent 并行执行；\n- 每个 Agent 只读取自己负责的那部分文件，避免上下文过大和干扰。\n\n---\n\n## 4. 为开源协作做出的调整\n\n- 为了更适合开源社区协作，旧版中很多手工拼 Prompt 的功能被移除。\n- 项目结构也从 Xcode 依赖中解耦：\n  - 过去可能需要安装 Xcode 才能编译；\n  - 现在不再强制依赖 Xcode。\n- 贡献者管理借鉴了 libgdx 作者 Mario Zechner 的做法：\n  - 维护一个贡献者白名单；\n  - 之前的付费用户只要同意，就会自动成为认证贡献者。\n\n---\n\n## 5. 当前状态与安装方式\n\n- 目前 RepoPrompt 社区版只支持 **macOS**。\n- 跨平台版本仍在开发中。\n- macOS 用户可通过 Homebrew 安装：\n\n```bash\nbrew install --cask repoprompt-ce\n```\n\n相关 GitHub 仓库：\n\n- 社区版 RepoPrompt CE：  \n  https://github.com/repoprompt/repoprompt-ce\n- 老版本 RepoPrompt Classic：  \n  https://github.com/repoprompt/repoprompt-classic\n\n---\n\n## 6. 社区反馈：上下文入口可能比模型本身更关键\n\n热门回复中有人指出，RepoPrompt 开源释放了一个信号：\n\n- Agent 不只是缺更强的模型；\n- 更缺稳定、清晰的“上下文入口”；\n- 如果能整理好仓库结构、文件关系和任务边界，Claude Code、Codex 这类工具才更像工程协作者，而不是单纯等待提示词的聊天框。\n\n也有人提到实际使用场景：  \n例如想把某个开源项目中的功能迁移到自己的项目中，可以让 AI 先理解目标仓库，再根据需求做移植；如果项目不大，效果已经不错。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1783296137811,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9bd0664ac75eda108935f6b616cf1cfe0c30bdd25dab79d1d765d560645b23e5",
+  "refs": {
+    "sessionId": "1783079884316_pxlqiarl"
+  },
+  "revisionId": "sha256:f40b082ebcdac09906b77834282a14140df545cde0e408421e2c82e14101dfc9",
+  "schemaVersion": 1,
+  "updatedAt": 1783296137811
+}

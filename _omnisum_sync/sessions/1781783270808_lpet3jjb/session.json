@@ -1,0 +1,64 @@
+{
+  "createdAt": 1781783270808,
+  "entityType": "session",
+  "id": "1781783270808_lpet3jjb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注 Claude CLI 使用，可另行查找 claude -p 与 PTY 的正式对比资料",
+      "删除该碎片内容，不作为知识库条目保留"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781783305394,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 1,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 1,
+      "relevance": 2,
+      "transferability": 1
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude调用方式短评",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "仅为社交媒体碎片表达，没有说明具体问题、方案、对比依据或操作步骤，长期保留价值很低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "提到 Claude 的 PTY 与 claude -p 两种使用方式",
+      "暗示某些 Claude 使用方式可能影响 token 消耗"
+    ],
+    "oneHighValuePoint": "唯一可注意的是作者暗示 claude -p 可能在某些场景下优于 PTY 方案，但缺乏解释。",
+    "oneLineReview": "信息量过低的情绪化碎片，不具备独立参考价值。",
+    "primaryCategory": "AI工具使用",
+    "rating": "E",
+    "rejectReason": "内容极短且缺乏上下文、论证和可复用信息，无法形成有效知识沉淀。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "社交媒体碎片",
+      "Claude"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该内容只是作者表示自己曾从 PTY 回退到 claude -p，并认为这一选择赌赢了；引用推文提到 Claude 消耗 token 制定对策，但没有展开背景、原因或证据。",
+    "tags": [
+      "Claude",
+      "PTY",
+      "token",
+      "碎片信息"
+    ],
+    "title": "X",
+    "totalScore": 13,
+    "url": "https://x.com/yetone/status/2066793940913913937"
+  },
+  "payloadHash": "sha256:b6b541e6fcb5f2073f69ecb9393f60ab79aaeb0b00d883bec2adbb800d74698b",
+  "refs": {},
+  "revisionId": "sha256:a18d2951c9e0d855f2c1898b6c3eb52ff6d1959e9a88750286ef3652bc2e7240",
+  "schemaVersion": 1,
+  "updatedAt": 1781783305579
+}

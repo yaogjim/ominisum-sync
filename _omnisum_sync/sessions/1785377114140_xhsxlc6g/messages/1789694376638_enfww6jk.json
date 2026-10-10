@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694376638,
+  "entityType": "message",
+  "id": "1789694376638_enfww6jk",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一个给并行 Claude Code 智能体使用的本地合并队列：把构建、测试和推送依次执行，避免多个智能体同时操作造成冲突、重复构建或测试不稳定。\n\n## 关键内容\n\n- 工具运行在开发者自己的机器上，不要求创建 PR，也不消耗 GitHub Actions 分钟；各智能体在独立 worktree“车道”工作，完成后通过 FIFO（先到先执行）队列变基并推送到集成分支。\n- 它可统一分配端口、串行构建、同步主目录、预览未提交改动，并用 pre-push 钩子阻止绕过队列的直接推送；正式发布命令被设计为仅由人工执行。\n- 合并是否放行只取决于配置的 `checkCommand`。工具**不包含人工审查**，也无法判断测试是否充分；紧急环境变量、`--no-verify` 等方式仍可绕过限制。\n- 主要局限是仅协调单机：多台机器并发时仍靠 Git 拒绝非快进推送；检查期间会一直占用队列，测试越慢，合并吞吐量越低；变基冲突会中止，交给智能体处理。\n\n## 通俗解读\n\n它更像“单机交通指挥”，不是安全系统：能减少多个智能体抢着推代码的操作事故，却不能保证代码质量或阻止主动绕过规则。若你正在一台机器上并行运行多个 Claude Code 智能体，值得细读配置与限制；普通单智能体或必须人工审查的团队，实用价值较小。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694376638,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d30f49ea063ebc99a7db36ece8e7c86e58dacc301b4685c9272a57a04cea7298",
+  "refs": {
+    "sessionId": "1785377114140_xhsxlc6g"
+  },
+  "revisionId": "sha256:74efd7f886c5edefa38ec07b7537aa14e238272ef029a991b11aa700efb54382",
+  "schemaVersion": 1,
+  "updatedAt": 1789694376638
+}

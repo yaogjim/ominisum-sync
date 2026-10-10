@@ -1,0 +1,242 @@
+{
+  "createdAt": 1788920724680,
+  "entityType": "session",
+  "id": "1788920724680_tgwovzkt",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为每个连接明确选择代理所有或用户所有模式，并为生产代理创建最小权限的专用服务账户。",
+      "在自定义前端实现授权中断识别、HTTPS连接链接展示、认证状态轮询及stream.respond恢复流程。",
+      "为本地开发配置对应的MDA_DEV_<SLUG>环境变量，并验证连接轮换无需重新部署即可生效。"
+    ],
+    "archiveReason": "系统说明了连接所有权、认证模式、运行时解析、授权中断和前端恢复流程，具有直接开发与排障价值。",
+    "byline": "​授权代理拥有的 OAuth 账户",
+    "classifiedAt": 1789643132866,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 10,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "托管深度代理连接与凭证管理",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "docs.langchain.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://langchain-5e9cc07a.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DAgent%2Bdefinition%26title%3DManage%2Bconnections%26description%3DStore%2BAPI%2Bkeys%2Band%2BOAuth%2Bgrants%2Bso%2BManaged%2BDeep%2BAgents%2Bcan%2Bauthenticate%2Bwith%2Bexternal%2Bservices%2Bat%2Bruntime.%26theme%3Dbf3bf8de8061f170aa09f116&w=1200&q=100",
+        "role": "hero",
+        "score": 70,
+        "src": "https://langchain-5e9cc07a.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DAgent%2Bdefinition%26title%3DManage%2Bconnections%26description%3DStore%2BAPI%2Bkeys%2Band%2BOAuth%2Bgrants%2Bso%2BManaged%2BDeep%2BAgents%2Bcan%2Bauthenticate%2Bwith%2Bexternal%2Bservices%2Bat%2Bruntime.%26theme%3Dbf3bf8de8061f170aa09f116&w=1200&q=100",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "代理拥有的凭证适合共享服务账户，用户拥有的OAuth凭证则按运行调用者身份解析，缺少授权时会触发credential_authorization_required中断。",
+      "托管深度代理可承担OAuth回调、令牌存储、刷新和同意流程，应用前端只需处理连接链接、状态轮询与运行恢复。",
+      "MCP连接可通过服务器元数据发现并动态注册OAuth客户端；无法自动注册时需改用目录OAuth或手动配置端点。"
+    ],
+    "oneHighValuePoint": "连接容器归工作区所有，而具体凭证具有代理或用户所有者；运行时按调用者身份解析凭证，从而支持多用户隔离授权而无需在业务代码中传递用户ID。",
+    "oneLineReview": "这是一份覆盖连接全生命周期的实用官方文档，但部分命令与代码在当前正文中缺失，且公开测试阶段限制了长期稳定性。",
+    "primaryCategory": "AI Agent开发",
+    "published": "2026-09-08T20:10:11.413Z",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "作为托管代理连接、用户授权与凭证治理的实施参考长期保留",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@id": "https://docs.langchain.com/#organization",
+            "@type": "Organization",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://mintcdn.com/langchain-5e9cc07a/nQm-sjd_MByLhgeW/images/brand/langchain-docs-dark-blue.png?fit=max&auto=format&n=nQm-sjd_MByLhgeW&q=85&s=5babf1a1962208fd7eed942fa2432ecb"
+            },
+            "name": "Docs by LangChain",
+            "url": "https://docs.langchain.com"
+          },
+          {
+            "@id": "https://docs.langchain.com#website",
+            "@type": "WebSite",
+            "name": "Docs by LangChain",
+            "publisher": {
+              "@id": "https://docs.langchain.com/#organization"
+            },
+            "url": "https://docs.langchain.com"
+          },
+          {
+            "@id": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections#webpage",
+            "@type": "WebPage",
+            "breadcrumb": {
+              "@id": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections#breadcrumb"
+            },
+            "dateModified": "2026-09-08T20:10:11.413Z",
+            "description": "Store API keys and OAuth grants so Managed Deep Agents can authenticate with external services at runtime.",
+            "isPartOf": {
+              "@id": "https://docs.langchain.com#website"
+            },
+            "name": "Manage connections",
+            "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections"
+          },
+          {
+            "@id": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections#breadcrumb",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "item": "https://docs.langchain.com/langsmith/python/managed-deep-agents-agent-definition",
+                "name": "Agent definition",
+                "position": 1
+              },
+              {
+                "@type": "ListItem",
+                "item": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections",
+                "name": "Manage connections",
+                "position": 2
+              }
+            ]
+          },
+          {
+            "@id": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections#article",
+            "@type": [
+              "Article",
+              "TechArticle"
+            ],
+            "dateModified": "2026-09-08T20:10:11.413Z",
+            "description": "Store API keys and OAuth grants so Managed Deep Agents can authenticate with external services at runtime.",
+            "headline": "Manage connections",
+            "isPartOf": {
+              "@id": "https://docs.langchain.com#website"
+            },
+            "mainEntityOfPage": {
+              "@id": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections#webpage"
+            },
+            "name": "Manage connections",
+            "publisher": {
+              "@id": "https://docs.langchain.com/#organization"
+            },
+            "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections"
+          }
+        ]
+      },
+      {
+        "@id": "https://docs.langchain.com/#organization",
+        "@type": "Organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mintcdn.com/langchain-5e9cc07a/nQm-sjd_MByLhgeW/images/brand/langchain-docs-dark-blue.png?fit=max&auto=format&n=nQm-sjd_MByLhgeW&q=85&s=5babf1a1962208fd7eed942fa2432ecb"
+        },
+        "name": "Docs by LangChain",
+        "url": "https://docs.langchain.com"
+      },
+      {
+        "@id": "https://docs.langchain.com#website",
+        "@type": "WebSite",
+        "name": "Docs by LangChain",
+        "publisher": {
+          "@id": "https://docs.langchain.com/#organization"
+        },
+        "url": "https://docs.langchain.com"
+      },
+      {
+        "@id": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections#webpage",
+        "@type": "WebPage",
+        "breadcrumb": {
+          "@id": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections#breadcrumb"
+        },
+        "dateModified": "2026-09-08T20:10:11.413Z",
+        "description": "Store API keys and OAuth grants so Managed Deep Agents can authenticate with external services at runtime.",
+        "isPartOf": {
+          "@id": "https://docs.langchain.com#website"
+        },
+        "name": "Manage connections",
+        "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections"
+      },
+      {
+        "@id": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections#breadcrumb",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "item": "https://docs.langchain.com/langsmith/python/managed-deep-agents-agent-definition",
+            "name": "Agent definition",
+            "position": 1
+          },
+          {
+            "@type": "ListItem",
+            "item": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections",
+            "name": "Manage connections",
+            "position": 2
+          }
+        ]
+      },
+      {
+        "@id": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections#article",
+        "@type": [
+          "Article",
+          "TechArticle"
+        ],
+        "dateModified": "2026-09-08T20:10:11.413Z",
+        "description": "Store API keys and OAuth grants so Managed Deep Agents can authenticate with external services at runtime.",
+        "headline": "Manage connections",
+        "isPartOf": {
+          "@id": "https://docs.langchain.com#website"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections#webpage"
+        },
+        "name": "Manage connections",
+        "publisher": {
+          "@id": "https://docs.langchain.com/#organization"
+        },
+        "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections"
+      }
+    ],
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Article",
+      "TechArticle"
+    ],
+    "secondaryCategories": [
+      "凭证与身份管理",
+      "OAuth集成"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文档介绍如何为LangSmith托管深度代理创建和使用外部服务连接，涵盖代理或用户拥有的凭证、不透明密钥、通用OAuth、MCP自动注册、授权中断、前端恢复及本地开发限制。",
+    "tags": [
+      "LangSmith",
+      "托管深度代理",
+      "连接管理",
+      "OAuth",
+      "MCP"
+    ],
+    "title": "Manage connections - Docs by LangChain",
+    "totalScore": 79,
+    "url": "https://docs.langchain.com/langsmith/python/managed-deep-agents-connections"
+  },
+  "payloadHash": "sha256:f9755bf2dba3c52dda11f791b14e381fe64b060686a8bfd53a6defc86fc4d154",
+  "refs": {},
+  "revisionId": "sha256:4c714307cc0df7c9fd846e8f9eeb3083d1d90f86b650594aba305e02bb5d9999",
+  "schemaVersion": 1,
+  "updatedAt": 1790769529339
+}

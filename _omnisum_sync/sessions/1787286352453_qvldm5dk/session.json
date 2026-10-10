@@ -1,0 +1,84 @@
+{
+  "createdAt": 1787286352453,
+  "entityType": "session",
+  "id": "1787286352453_qvldm5dk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "建立缺陷术语映射表，逐项记录定义、边界、严重程度、适用产品、客户条件和处理方式。",
+      "针对目标工厂重建测试集，并按漏检、过检和错误成本设计分项评测指标。",
+      "上线前增加标识符规范化测试，采用影子模式、明确回滚责任，并按产线、产品系列和班次逐步放量。"
+    ],
+    "archiveReason": "包含可复用的标签体系对齐、测试集重建、分项评测、数据规范化、影子运行、回滚和渐进放量方法。",
+    "byline": "DataDan｜AI Consultant + Builder",
+    "classifiedAt": 1789724949287,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "跨境AI质检的规则与责任对齐",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 680,
+        "id": "img-14",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HQJoVA4bgAAtSUs?format=jpg&name=small",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HQJoVA4bgAAtSUs?format=jpg&name=small",
+        "width": 515
+      }
+    ],
+    "knowledgePoints": [
+      "相同缺陷在不同工厂、客户、产品版本和加工阶段可能对应不同严重程度与处置方式，不能只做语言翻译。",
+      "生产评测不应只看总准确率，还应分别衡量漏检、过检及不同错误造成的业务损失。",
+      "编号的全角半角、前导零和产品版本等数据规范问题，可能导致系统调用错误规则或阈值。"
+    ],
+    "oneHighValuePoint": "跨区域部署AI前，应先把隐性业务经验转化为双方认可、可编码、可测试且责任明确的判定规则。",
+    "oneLineReview": "案例具体且方法可迁移，揭示了AI生产落地中规则、责任与发布流程往往比模型指标更关键，但证据主要来自单一个案。",
+    "primaryCategory": "AI产品落地",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并归档，作为跨区域AI系统生产落地的案例与检查清单参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "工业AI",
+      "跨境项目交付"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以中日工厂迁移AI视觉质检为例，说明模型复制失败的核心并非参数，而是缺陷定义、责任边界和数据规范未对齐，并给出本地测试集、分项指标、影子运行、回滚及渐进放量等做法。",
+    "tags": [
+      "AI视觉质检",
+      "规则对齐",
+      "影子模式",
+      "渐进式发布",
+      "人机协作"
+    ],
+    "title": "DataDan｜AI Consultant + Builder: 之前做中日跨境项目，踩过一个很小、也很贵的坑： 一个零件编号里的全角字符，差点让日本工厂把一批正常产品全判成不良",
+    "totalScore": 78,
+    "url": "https://x.com/ba_niu80557/status/2090372439339655473"
+  },
+  "payloadHash": "sha256:cc884cb4375fa8a9d7fdcab781dfb852c28ff626e2bca5fad6ff67ea2ec16d28",
+  "refs": {},
+  "revisionId": "sha256:930f7949b6a2614623b3caf2640366b5eefed3cb8c451792a65e2d9f637a590f",
+  "schemaVersion": 1,
+  "updatedAt": 1789863605181
+}

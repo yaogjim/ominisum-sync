@@ -1,0 +1,15 @@
+{
+  "createdAt": 1783078597816,
+  "entityType": "session-content",
+  "id": "1783078597816_908d6n6r",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>恒星</strong></header><div class=\"tw-body\">原来 LLM 还能自己写工作脚本，把任务拆给一群子代理并行干。<br>单个助手顺序思考，遇到代码库审计、大型重构这种活，要么慢，要么思路串。<br>pi-dynamic-workflows 让模型直接生成一段 JS 脚本，用 agent()、parallel() 做任务编排，沙箱里跑完再汇总——进度还实时显示。<br>本质是把“一个人干活”变成“一个人写调度脚本，小弟们并行执行”。</div><div class=\"tw-cards\"><a href=\"https://t.co/SUNaQWhLh8\">GitHub - Michaelliv/pi-动态工作流</a></div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/card_img/2072812959001448448/dd8Yso7T?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@安叫兽|Bird  BNB</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>感觉像给模型装了个项目经理</p></div><div class=\"tw-reply\"><strong>@chou</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>並行子代理最難的不是拆任務，是共享工作記憶——後到的 agent 常蓋掉前一個的判斷。我們的解法：per-turn 隔離加 append-only ledger，每個 agent 只追加不覆寫，主迴圈再收斂。拆任務是入門，狀態一致性才是天花板。</p></div></div>",
+    "pageContent": "恒星: 原来 LLM 还能自己写工作脚本，把任务拆给一群子代理并行干。\n单个助手顺序思考，遇到代码库审计、大型重构这种活，要么慢，要么思路串。\npi-dynamic-workflows 让模型直接生成一段 JS 脚本，用 agent()、parallel() 做任务编排，沙箱里跑完再汇总——进度还实时显示。\n本质是把“一个人干活”变成“一个人写调度脚本，小弟们并行执行”。\n[GitHub - Michaelliv/pi-动态工作流](https://t.co/SUNaQWhLh8)\n![图片](https://pbs.twimg.com/card_img/2072812959001448448/dd8Yso7T?format=jpg&name=large)\n\n链接:\n- https://t.co/SUNaQWhLh8\n---\n热门回复 (共 2 条):\n@安叫兽|Bird  BNB (♥ 1 · 💬 0):\n感觉像给模型装了个项目经理\n\n@chou (♥ 0 · 💬 0):\n並行子代理最難的不是拆任務，是共享工作記憶——後到的 agent 常蓋掉前一個的判斷。我們的解法：per-turn 隔離加 append-only ledger，每個 agent 只追加不覆寫，主迴圈再收斂。拆任務是入門，狀態一致性才是天花板。\n"
+  },
+  "payloadHash": "sha256:31070c3807203b82d3d010e8120a36d3b63090c640b9f56b84da2ac469063ed3",
+  "refs": {},
+  "revisionId": "sha256:1e0032713fb0dbae96062f8413538a6363d7fc120bc518b13fa0c0453f5cc474",
+  "schemaVersion": 1,
+  "updatedAt": 1784801338521
+}

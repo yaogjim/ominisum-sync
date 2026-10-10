@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726394962,
+  "entityType": "message",
+  "id": "1789726394962_eto9leys",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Herdr 的价值不在“多智能体”，而在把不可控终端变成可协调系统\n\nHerdr 最值得关注的，并不是能同时启动多个编程 Agent，而是它把原本散落在终端里的进程、交互界面和等待状态，抽象成了一套可供脚本调用的控制面。其核心区分很清楚：**Layout 管空间，Pane 管终端，Agent 管可识别的智能体及其生命周期。**测试、服务器和 CI watcher 仍按普通进程控制；只有需要理解“工作中、完成、等待审批”等语义时，才使用 Agent 接口。\n\n这看似是 API 设计细节，实际决定了自动化是否可靠。很多所谓多 Agent 工具把“创建窗口、启动模型、派发任务、判断完成”混成一个动作，一旦中间状态异常，就很难恢复。Herdr 则要求先创建 Pane、保存返回的 ID，再启动 Agent；移动 Pane 后还要使用新的 ID。它没有假装终端位置、进程身份和任务身份是同一件事。\n\n## 真正的瓶颈是状态可信度，而不是并行数量\n\nHerdr 可以等待 Agent 进入 `idle`、`done`、`blocked` 或 `unknown`，并把状态汇总到 Pane、Tab 和 Workspace。这让一种实用工作流成为可能：主 Agent 修改代码，审查 Agent 检查 diff，普通 Pane 跑测试；操作者只处理被阻塞或已完成的任务。**当 Agent 数量增加，稀缺资源会从执行能力转向人的注意力，状态汇总本质上是在做注意力路由。**\n\n但文档也坦率展示了边界：部分 Agent 有完整生命周期 Hook，另一些只能根据终端底部画面识别状态；陌生的授权提示甚至可能被误判为 idle。`unknown` 也不代表成功完成。全屏程序使用 alternate screen 时，历史输出还可能根本没有进入 scrollback。因而这些状态适合通知和导航，却不应直接授权删除、发布或合并等破坏性操作。\n\n还有一个容易踩坑的语义：`agent prompt --wait` 等待的是状态稳定，而不是严格绑定某一轮请求；如果 Agent 已经在工作，当前任务结束就可能满足等待条件。需要强一致性的流水线，仍应让 Agent 产出可核验的文件、提交或测试报告，而不能只看到 `done` 就认为目标已经达成。\n\n## 它是协调底座，不是完整的多 Agent 产品\n\nHerdr 没有提供任务依赖图、共享记忆、结果评测、冲突解决或权限策略，因此更准确的定位是**终端原生的 Agent 编排层**，而非会自行分工协作的“智能团队”。这反而是它的可迁移价值：保留 Claude Code、Codex 等现有工具的真实终端和会话，只统一启动、寻址、观察与介入方式。\n\n对测试与审查场景，较稳妥的设计不是让 Agent 互相自由对话，而是让它们围绕明确工件协作：实现者生成 diff，审查者输出问题清单，测试进程提供确定性结果，人只在审批、冲突和异常状态出现时介入。**多 Agent 自动化能否成立，最终取决于状态信号和交付物是否可验证，而不是同时打开了多少个 Agent。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1789445030567",
+    "prompt_template_name": "深度解读",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726394962,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:64fe01dcad18b6005f42df6bcfb8600e0b048d374d48d07bd62261e34abc5409",
+  "refs": {
+    "sessionId": "1784702945365_8qoo7a27"
+  },
+  "revisionId": "sha256:602d8b06ffd5f419b45290e8b5d6bd84af5e758274ec0ad2137e0eaf3821e3bd",
+  "schemaVersion": 1,
+  "updatedAt": 1789726394962
+}

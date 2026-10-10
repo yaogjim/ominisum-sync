@@ -1,0 +1,19 @@
+{
+  "createdAt": 1784606034024,
+  "entityType": "message",
+  "id": "1784606034023_xmv2acxk",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: AI编程文档上下文拆分框架\n\n**评级**: B (69分)  |  **深度阅读**: 可选  |  **建议操作**: 存档\n\n**主类别**: AI编程与Agent开发\n**次类别**: 知识管理, 软件架构\n**标签**: #上下文工程 #项目文档 #架构决策记录 #垂直任务切片 #AI编程工作流\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 9 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 7 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 3 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 框架简洁且贴近AI编程实践，但缺少拆分依据、适用条件、案例和验证结果。\n**核心高价值点**: Ticket应围绕可独立演示和验收的完整能力进行垂直切分，跨越UI、API、运行时、存储和测试，而不是按职能层横向分工。\n\n### 摘要\n文章将AI Coding项目上下文拆分为项目外知识库、Agents.md、术语表、ADR、架构与设计文档、Spec、Tickets和Scratch，并给出从领域建模到TDD、代码审查的流程，强调按完整能力垂直切分任务。\n\n### 知识要点\n- 用Agents.md承载规则、流程和项目导航，用Context.md维护术语及统一语言，用ADR逐条记录关键架构约束。\n- 架构、设计、阶段性实现方案和任务票据应分层管理，避免不同生命周期与用途的信息混杂。\n- 建议工作流为Grill、Domain Modeling、Spec、Tickets、Implement、TDD、Code Review。\n\n### 行动项\n- 为现有AI编程项目盘点并建立Agents.md、Context.md、ADR、Architecture.md、Design.md和Spec目录。\n- 将下一项功能改写为跨前端、后端、存储、测试和验收的垂直Ticket，并确保可独立演示。\n- 当单个Ticket预计超出一个上下文窗口时继续拆分，并验证拆分后的任务边界与验收条件。\n\n### 存档判定\n归档: 是 — 原因: 提供了可复用的文档分类、工作流与垂直任务切片框架，适合在AI编程项目初始化和上下文治理时参考。\n删除: 否\n留存决策: 选择性存档，作为AI编程项目文档结构与任务切片的检查清单",
+    "role": "assistant",
+    "timestamp": 1784606034024,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:cb52b2dd8a866119b8e50bd44091cbb3dd7bf931f04a762a195191a959ed2bd2",
+  "refs": {
+    "sessionId": "1784605251109_f9lr8hn3"
+  },
+  "revisionId": "sha256:a1658ce9789534b10f6751193e32d02cc0efd9fa4fdafbbf90ace5f40965d3a3",
+  "schemaVersion": 1,
+  "updatedAt": 1784606034024
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1782361956706,
+  "entityType": "message",
+  "id": "1782361956705_rft8yafi",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Omnigent元代理框架发布\n\n**评级**: A (73.5分)  |  **深度阅读**: 可选  |  **建议操作**: 精读\n\n**主类别**: AI Agent基础设施\n**次类别**: 多智能体编排, 开发者工具, AI安全治理\n**标签**: #Omnigent #Meta-Harness #Agent Orchestration #Databricks #开源工具\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 7 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一篇高相关度的Agent基础设施产品发布文，方法论视角有价值，但案例和实证支撑偏弱。\n**核心高价值点**: 将Agent能力从单一harness提升到meta-harness层，统一处理组合、协作、安全策略和成本控制。\n\n### 摘要\n文章介绍Databricks开源的Omnigent，一个位于各类Agent harness之上的元框架，用统一API组合Claude Code、Codex等工具，并提供实时协作、策略控制、沙箱、安全和成本治理能力。\n\n### 知识要点\n- Meta-harness可作为不同Agent harness、模型和SDK之上的统一抽象层\n- Agent系统的关键问题正在从单模型能力转向多代理组合、治理和协作\n- 动态上下文安全策略比简单allow/deny规则更适合Agent执行环境\n- 实时共享Agent会话和工作目录可成为团队协作的新界面\n- 成本预算、OS沙箱和网络请求拦截是企业级Agent落地的重要基础设施\n\n### 行动项\n- 浏览Omnigent quickstart和GitHub仓库，评估其API设计和成熟度\n- 对比现有Claude Code、Codex、OpenAI Agents SDK等工具的集成方式\n- 提炼meta-harness思想，用于设计自己的多Agent编排和治理架构\n- 重点研究其安全策略、成本控制和沙箱实现是否可迁移到内部Agent系统\n\n### 存档判定\n归档: 是 — 原因: 提出了meta-harness作为Agent工作流上层抽象的思路，涵盖组合、控制、协作、安全和成本治理等关键方向\n删除: 否\n留存决策: 长期保留，适合作为理解Agent工具抽象层和多代理协作趋势的参考材料",
+    "role": "assistant",
+    "timestamp": 1782361956706,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:520deeacf55b58d6ae8f6685a69c3729d6634a31b84d814c779c7845ff44b476",
+  "refs": {
+    "sessionId": "1782360392430_1zboee0i"
+  },
+  "revisionId": "sha256:b7d51a77acd2d666616cb9c717e7af672694bcf3c57336d1dda1d13a73744811",
+  "schemaVersion": 1,
+  "updatedAt": 1782361956706
+}

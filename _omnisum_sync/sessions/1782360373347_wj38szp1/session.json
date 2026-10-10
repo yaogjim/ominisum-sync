@@ -1,0 +1,67 @@
+{
+  "createdAt": 1782360373347,
+  "entityType": "session",
+  "id": "1782360373347_wj38szp1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查自定义 Claude Code Hook 中是否存在普通 echo 或 stdout 日志输出。",
+      "将不需要模型读取的 Hook 日志统一改为 stderr 输出。",
+      "当模型表现异常时，将上下文污染纳入排查清单。"
+    ],
+    "archiveReason": "提供了一个具体且容易忽视的 Claude Code Hook 调试经验，可作为排查模型表现异常的 checklist 项。",
+    "classifiedAt": 1782361960793,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code Hook污染上下文",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Claude Code Hook 存在模型可见输出和终端可见输出两类通道。",
+      "Hook 中默认 echo 输出可能污染模型上下文，影响回复质量。",
+      "使用 `echo \"xxx\" >&2` 可将输出切换到仅终端可见。"
+    ],
+    "oneHighValuePoint": "Claude Code Hook 的 stdout 可能进入模型上下文，日志类输出应改走 stderr。",
+    "oneLineReview": "短小但实用的 Claude Code Hook 踩坑记录，价值集中在一个明确的调试点。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档",
+    "secondaryCategories": [
+      "Claude Code",
+      "调试经验"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者排查 Claude Code 中 Opus 回复异常的问题，发现自定义 Hook 默认输出进入模型可见上下文，导致大量无关信息污染对话。解决方法是将 echo 输出改为 stderr，即使用 `>&2`。",
+    "tags": [
+      "Claude Code",
+      "Hook",
+      "上下文污染",
+      "stderr",
+      "AI编程"
+    ],
+    "title": "Leo｜一个人 + AI: 今天排查了一个诡异的问题：最近 Opus 4",
+    "totalScore": 68,
+    "url": "https://x.com/runes_leo/status/2069738925011156994"
+  },
+  "payloadHash": "sha256:09f146fb17d86c3066e0a2bd04b97c59570b553042ade7dd751a285b47b21f17",
+  "refs": {},
+  "revisionId": "sha256:aa8498f496cac8558a1a156f5dec15f4b5389ccf8fe8b95e2e529815723d724b",
+  "schemaVersion": 1,
+  "updatedAt": 1782367147188
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785288075497,
+  "entityType": "session",
+  "id": "1785288075497_2i0yie82",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "分别搭建-L、-R和-D最小实验，用curl验证监听位置、目标地址解析位置和实际流量方向。",
+      "将常用隧道命令整理为SSH配置或脚本，并按需加入-f与-N以后台运行纯转发会话。",
+      "启用远程公开绑定前检查GatewayPorts、防火墙和访问控制，避免将内部服务或SOCKS代理意外暴露到公网。"
+    ],
+    "archiveReason": "覆盖本地、远程及动态端口转发，提供可验证命令、实验场景和记忆方法，可长期复用于开发与运维任务。",
+    "classifiedAt": 1785403121572,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 10,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 9,
+      "methodology_value": 9,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 9
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "SSH隧道与端口转发实战指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "labs.iximiuz.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "ssh -L在客户端监听端口，由SSH服务端访问目标地址；结合-J可穿过跳板机访问最终主机的回环端口。",
+      "ssh -R在SSH服务端监听端口，由客户端访问目标地址；对外绑定通常需要服务端启用GatewayPorts。",
+      "ssh -D与不带固定目标的ssh -R分别创建本地和远程SOCKS代理，可通过单一隧道访问一组可达目标。"
+    ],
+    "oneHighValuePoint": "用“左侧负责监听开新端口”的统一模型解释-L与-R，并明确目标地址分别从SSH服务端或客户端视角解析。",
+    "oneLineReview": "这是一篇体系完整、可直接实验且适合长期查阅的SSH隧道实战教程，但核心技术本身并不新颖。",
+    "primaryCategory": "网络与系统工程",
+    "rating": "S",
+    "rejectReason": "",
+    "retentionDecision": "长期存档，作为远程开发、私网访问和网络调试的实用参考",
+    "secondaryCategories": [
+      "开发工具",
+      "远程开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章通过七个网络实验系统讲解SSH本地、远程和动态端口转发，并覆盖跳板机、私网服务、回环端口、SOCKS代理、GatewayPorts配置及命令记忆方法。",
+    "tags": [
+      "SSH隧道",
+      "端口转发",
+      "跳板机",
+      "SOCKS代理",
+      "远程访问"
+    ],
+    "title": "A Practical Guide to SSH Tunnels: Local and Remote Port Forwarding",
+    "totalScore": 85,
+    "url": "https://labs.iximiuz.com/tutorials/ssh-tunnels"
+  },
+  "payloadHash": "sha256:a15b88541fc6d65f1402c0c8d14e46cbf40994552e426f91f46960fefdf011d0",
+  "refs": {},
+  "revisionId": "sha256:c325455bfc9d8eb959c6fe90068874e63a7b0619fec81b01fd7c057360e4c168",
+  "schemaVersion": 1,
+  "updatedAt": 1789605062411
+}

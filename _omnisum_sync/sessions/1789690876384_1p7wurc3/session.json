@@ -1,0 +1,83 @@
+{
+  "createdAt": 1789690876384,
+  "entityType": "session",
+  "id": "1789690876384_1p7wurc3",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "先核对GPU、主机内存、模型分片、镜像版本、RDMA设备和各节点可用内存是否满足前置条件。",
+      "在实际启动前依次运行本机构建、就绪探测和带JSON输出的只读预检，并先使用默认干运行检查Docker命令。",
+      "根据预填充吞吐或KV容量目标选择运行点，并补跑同提示、同基准的TP4 vLLM对照测试。"
+    ],
+    "archiveReason": "包含完整的构建、探测、预检、启动和回滚路径，并记录了AOT硬件适配门槛、资源约束及实测运行点。",
+    "classifiedAt": 1789724752107,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "RTX5090部署DS41RT实战",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/7231dd47bf3d5309d99ad31e54099d4a8bd481d814d5b554f471c94cc062b8d5/hughmadden/ds41rt-rtx5090",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/7231dd47bf3d5309d99ad31e54099d4a8bd481d814d5b554f471c94cc062b8d5/hughmadden/ds41rt-rtx5090",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "AOT生成的GPU内核可能固化SM数量；硬件更换后，设备校验、启动网格和集群限制必须一起重新生成。",
+      "同一部署可通过容量参数在预填充吞吐与KV池规模之间取舍，而文中两个运行点的解码速度基本相近。",
+      "分布式推理上线可按构建、离线就绪探测、跨节点只读预检、工作节点优先启动、协调器启动和验证回滚的顺序执行。"
+    ],
+    "oneHighValuePoint": "定位出预构建协调器失败源于AOT导出时固化的SM数量，并指出不能简单移除检查，而应在RTX 5090上重新构建以同步生成启动网格和集群限制。",
+    "oneLineReview": "这是一份高度可执行的特定硬件部署资料，但单次测试、缺少同条件基线以及版本依赖限制了证据强度和通用性。",
+    "primaryCategory": "AI模型部署与推理工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，作为异构GPU推理部署、硬件适配和上线前检查的专项参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "GPU集群运维",
+      "性能测试"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该仓库提供在32GB RTX 5090上运行DS41RT协调器、配合四台DGX Spark专家节点的构建、探测、预检、启动与回滚脚本，并说明AOT SM计数门槛、显存规划及两个实测运行点。",
+    "tags": [
+      "DS41RT",
+      "RTX5090",
+      "DGX Spark",
+      "分布式推理",
+      "显存规划"
+    ],
+    "title": "hughmadden/ds41rt-rtx5090: DS41RT coordinator for DeepSeek-V4.1-Flash on an RTX 5090 (32 GB) + four DGX Spark expert ranks: build, launch and preflight scripts, settings, measured envelope",
+    "totalScore": 80,
+    "url": "https://github.com/hughmadden/ds41rt-rtx5090"
+  },
+  "payloadHash": "sha256:513a988e77a48c5b5ea503f2f9c7c662ff7c43bca151c5b7ca1ef762afd2cc75",
+  "refs": {},
+  "revisionId": "sha256:d091bc4776f017c4c3f7f2f82cd097238364a67e78e7c2cef6da0e085f3ebc2f",
+  "schemaVersion": 1,
+  "updatedAt": 1790769939114
+}

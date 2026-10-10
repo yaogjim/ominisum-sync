@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784712403183,
+  "entityType": "message",
+  "id": "1784712403183_4y4nrakt",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Orca 项目简介\n\nOrca 是一款面向高效开发者的开源 AI 编排工具，可让 Claude Code、Codex、OpenCode 等多个 CLI 智能体在独立 Git Worktree 中并行工作，并在同一界面统一管理、比较和评审结果。它还整合了终端、代码编辑、浏览器交互、远程开发和移动端监控等能力。\n\n## 核心功能\n\n### 1. 多智能体并行开发\n\n- 可将同一个提示同时发送给 **5 个智能体**。\n- 每个智能体运行在隔离的 Git Worktree 中，互不干扰。\n- 用户可以比较不同智能体的实现结果，再选择并合并最佳方案。\n- 支持 Claude Code、OpenClaude、Codex、OpenCode 等，也兼容任何能在终端运行的 CLI 智能体。\n\n### 2. 移动端监控与指挥\n\n- 可通过手机查看智能体的运行状态。\n- 智能体完成任务时会发送通知。\n- 用户可以随时从移动端发送后续指令。\n- 支持 **iOS App Store** 和 **Android APK**，需与桌面应用配对使用。\n\n### 3. 集成终端与代码编辑\n\n- 提供类似 Ghostty 的高性能终端，支持：\n  - WebGL 渲染\n  - 无限分屏\n  - 应用重启后保留滚动历史\n- 内置类似 VS Code 的编辑器，支持自动保存。\n- 可直接把文件或图片拖入智能体提示中，方便提供上下文。\n\n### 4. 可视化设计与浏览器交互\n\n- 在真实 Chromium 窗口中点击任意 UI 元素，即可将其：\n  - HTML\n  - CSS\n  - 裁剪后的截图  \n  直接加入智能体提示。\n- 支持 **Computer Use**，让智能体操作桌面应用和可见 UI，适合需要真实交互的工作流。\n\n### 5. GitHub 工作流与代码评审\n\n- 可在 Orca 内浏览 PR、Issue 和项目看板。\n- 能从任意任务直接打开对应 Worktree，减少工具和上下文切换。\n- 可在 Diff 的任意代码行添加评论并发回智能体。\n- 从评审、修改到提交，整个流程都可以在 Orca 内完成。\n\n### 6. SSH 远程开发\n\n- 支持在高性能远程机器上运行智能体。\n- 远程环境中仍可使用文件编辑、Git 和终端。\n- 提供自动重连与端口转发功能。\n\n### 7. Orca CLI 与自动化\n\n智能体也可以通过 Orca CLI 控制 Orca，将工作流脚本化。主要命令包括：\n\n```bash\norca worktree create\norca snapshot\norca click\norca fill\n```\n\n这些命令可用于创建 Worktree、生成快照以及执行点击、输入等自动化操作。\n\n## 其他实用能力\n\n- **快速打开**：跨 Worktree、文件、智能体、命令和仓库上下文搜索。\n- **账号切换与用量追踪**：查看 Claude、Codex 的使用量和限额重置时间，并可免重新登录切换账号。\n- **仓库内容预览**：直接预览 Markdown、图片、PDF 和项目文档。\n- **通知与未读状态**：及时获知智能体完成任务或需要处理的情况，也可将会话标记为未读。\n- 项目保持高频更新，完整的新功能应以官方**更新日志**为准。\n\n## 支持的智能体\n\nOrca 原则上兼容**任何可在终端运行的 CLI 智能体**，已列出的工具包括：\n\n- Claude Code、Codex、OpenCode、OpenClaude\n- Grok、Cursor、GitHub Copilot、Amp\n- Antigravity、Pi、oh-my-pi、Hermes Agent\n- Goose、Auggie、Autohand、Cline\n- Continue、Kimi、Qwen Code、Mistral Vibe\n- Codebuff、Kilocode、Rovo Dev 等\n\n## 安装方式\n\n可从 **onOrca.dev** 下载，官方提供：\n\n- macOS Apple Silicon\n- macOS Intel\n- Windows `.exe`\n- Linux AppImage\n\n也可以使用包管理器安装：\n\n```bash\n# macOS（Homebrew）\nbrew install --cask stablyai/orca/orca\n\n# Arch Linux（AUR）\nyay -S stably-orca-bin\n```\n\n如需从源码构建，Arch Linux 用户还可选择 `stably-orca-git`。\n\n## 社区、隐私与贡献\n\n- 可通过 Discord、Twitter/X（`@orca_build`）和微信群加入社区。\n- 缺少功能时，可以向项目提交功能请求。\n- 官方提供隐私与遥测文档，说明收集的匿名使用数据及退出方式。\n- 开发者可参考 `CONTRIBUTING.md`，参与贡献或在本地运行项目。\n- Orca 是自由开源软件，采用 **MIT 许可证**。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784712403183,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3d45d6d66a8708f0ede1d97e9ca68c5c7a9e33a42e20d99ecd1c052b8eb10405",
+  "refs": {
+    "sessionId": "1784017252568_drpmcwh5"
+  },
+  "revisionId": "sha256:867a8fb243a3dd0603efdecf9d64cd521ec0b603c44c33f50fb3940559e2b294",
+  "schemaVersion": 1,
+  "updatedAt": 1784712403183
+}

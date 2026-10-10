@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786354550561,
+  "entityType": "session",
+  "id": "1786354550561_kwot0u13",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "盘点现有业务流程，优先识别能够连续处理、产出数字信息且较少依赖人工反馈的任务。",
+      "为法律、销售或研究流程设计后台代理场景，例如合同预处理、客户记录信号识别和资料批量阅读。",
+      "在部署代理前检查数据质量、系统连接和流程依赖，制定相应的数据清理与工作流重构计划。"
+    ],
+    "archiveReason": "文章提出了区分代理适用场景的重要标准，并指出企业代理落地的关键不只是模型能力，还包括数据清理、流程连接、工作流重构和变更管理。",
+    "classifiedAt": 1786355181409,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "企业代理工作流的重构逻辑",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "代理式编程容易快速增长，是因为其产出直接对应数字信息，任务可以在单次会话中持续扩大。",
+      "销售、法律和医疗等工作包含客户或患者反馈循环，默认不适合完全 автономous 的连续代理执行。",
+      "企业代理落地通常需要后台运行机制、数据清理、系统连接、流程重构和变更管理共同配合。"
+    ],
+    "oneHighValuePoint": "代理规模化的关键不只是模型能力，而是工作流程是否适合连续、可扩展的数字化执行；不适配的领域需要先进行面向AI的流程重构。",
+    "oneLineReview": "文章提供了有价值的代理适用性判断框架，但主要是概念性论述，缺少数据、案例和具体实施步骤。",
+    "primaryCategory": "AI代理与工作流设计",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "值得精读和长期保留，适合作为设计企业代理系统的概念框架",
+    "secondaryCategories": [
+      "商业系统构建",
+      "法律科技"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分析了企业代理采用率不均衡的原因，指出代理式编程因任务高度数字化、可连续扩大而更易规模化。销售、法律和医疗等领域则依赖人与客户、患者的反馈循环，需要通过后台代理、数据连接、流程重构和变更管理来重新设计工作方式。",
+    "tags": [
+      "AI代理",
+      "工作流重构",
+      "代理式编程",
+      "企业自动化",
+      "变更管理"
+    ],
+    "title": "x.com/levie/status/2086559201053294909",
+    "totalScore": 74,
+    "url": "https://x.com/levie/status/2086559201053294909"
+  },
+  "payloadHash": "sha256:d12aa2f83b18b5f14f333320d194355272ae647b0c248aaee6e164a9397ef02a",
+  "refs": {},
+  "revisionId": "sha256:c0883f3e729354cd814568a815c64f216b960a34fc7bc0aa622abdd3143832a5",
+  "schemaVersion": 1,
+  "updatedAt": 1789864322404
+}

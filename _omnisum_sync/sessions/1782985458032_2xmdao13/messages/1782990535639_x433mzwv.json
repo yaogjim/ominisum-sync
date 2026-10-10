@@ -1,0 +1,20 @@
+{
+  "createdAt": 1782990387151,
+  "entityType": "message",
+  "id": "1782990535639_x433mzwv",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# OpenWiki：为代码仓库自动生成和维护文档的开源代理\n\nOpenWiki 是一个开源代理和 CLI 工具，用来为代码仓库自动生成 Wiki 文档，并在代码变化时持续更新。它的核心目标是让编码代理更好理解代码库上下文，从而写出更准确、少出错的代码。\n\n## 1. 为什么需要 OpenWiki\n\n- 编码代理要写好代码，必须理解代码库：\n  - 关键逻辑在哪里；\n  - 文件之间如何关联；\n  - 项目遵循哪些编码模式和约定。\n- 良好的文档能为代理提供这些上下文，帮助它更聪明地修改代码。\n- 但现实问题是：\n  - 初始文档编写耗时；\n  - 代码频繁变更后，文档很容易过时；\n  - 在大型代码库和频繁 PR 的项目中，维护文档尤其困难。\n- OpenWiki 的作用就是自动完成这些工作：为仓库创建 Wiki，并随着代码变化保持更新。\n\n## 2. 为什么采用 Wiki 形式\n\n- OpenWiki 借鉴了 DeepWiki、AutoWiki，以及 Karpathy 提出的 LLM Wiki 概念。\n- Wiki 的优势是：用结构化方式组织代码库知识，而不是把所有内容塞进一个超大的文件。\n- 许多编码代理会读取 `AGENTS.md` 或 `CLAUDE.md` 这类指令文件，但这些文件不适合存放几百页的仓库文档。\n- 更合理的方式是：\n  - 在指令文件中告诉代理 Wiki 在哪里；\n  - 代理需要上下文时，再去检索对应文档。\n- OpenWiki 正是这样做的：生成仓库 Wiki，并在代理指令文件中加入对 Wiki 的引用。\n\n## 3. 如何开始使用\n\nOpenWiki 设计为可以直接通过命令行使用。\n\n安装命令：\n\n```bash\nnpm install -g openwiki\n```\n\n初始化命令：\n\n```bash\nopenwiki --init\n```\n\n运行 `init` 后，工具会要求用户提供：\n\n- 模型提供商；\n- API 密钥。\n\n然后它会自动为当前仓库生成文档。\n\nOpenWiki 支持多种开放和闭源模型提供商，包括：\n\n- OpenRouter；\n- Fireworks；\n- Baseten；\n- OpenAI；\n- Anthropic。\n\n默认情况下，OpenWiki 使用 OpenRouter 搭配开放模型，但用户可以根据自己的需求进行配置。\n\n## 4. 支持追踪和调试\n\n- OpenWiki 基于 DeepAgents 构建。\n- 如果用户提供 LangSmith API 密钥，OpenWiki 可以把运行过程追踪到 LangSmith 项目中。\n- 这样用户可以查看代理在生成或更新文档时具体做了什么，方便调试和理解代理行为。\n\n## 5. OpenWiki 如何连接编码代理\n\n- 生成 Wiki 后，OpenWiki 会自动更新仓库中的代理指令文件。\n- 支持的文件包括：\n  - `AGENTS.md`\n  - `CLAUDE.md`\n- 如果仓库中存在这些文件，OpenWiki 会添加对生成 Wiki 的引用，并说明代理在什么情况下应该使用它。\n- 这种方式避免了把整个 Wiki 塞进指令文件中。\n- 对大型代码库来说，Wiki 可能包含数百个文件，如果每次代理运行都加载全部内容，会浪费上下文，也难以维护。\n- 因此，OpenWiki 只在指令文件中加入简短引用，让代理在需要时自行查找相关文档。\n\n## 6. 如何保持 Wiki 最新\n\n- OpenWiki 不只是一次性生成文档，更重要的是可以持续更新文档。\n- 它支持通过 GitHub Action 按计划运行。\n- 这意味着：\n  - 工作流可以在后台自动执行；\n  - 代码库变化后，OpenWiki 会更新对应文档；\n  - 编码代理仍然通过原有指令文件获取最新 Wiki 内容。\n- 这样开发者无需手动维护大量文档，代理也能持续获得较新的代码库上下文。\n\n## 7. 当前重点与未来方向\n\n- OpenWiki 首次发布主要聚焦于代码库 Wiki。\n- 目标是让代理更容易理解正在处理的代码仓库，而不需要开发者手动编写和维护详细文档。\n- 作者认为，这种模式未来也可以扩展到编码之外的更多工作流。\n- 因为代理在许多任务中都需要持久上下文，而代码库文档只是第一个应用场景。\n\n## 8. 如何试用\n\nOpenWiki 已经开源并可用。\n\n用户可以通过以下步骤快速体验：\n\n```bash\nnpm install -g openwiki\nopenwiki --init\n```\n\n几分钟内即可为自己的仓库生成一个 Wiki。\n\n相关链接：\n\n- GitHub 仓库：<https://github.com/langchain-ai/openwiki>\n- 演示视频：<https://youtu.be/nIVu3zfYprI>",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1782990387151,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:dd9eb30ed4d521707201379d8bb81ae7b4f65e9387e8ff3bd9c284b4fe20538a",
+  "refs": {
+    "sessionId": "1782985458032_2xmdao13"
+  },
+  "revisionId": "sha256:9e5f90304a417e94905367f012f216173385bb0a8d18af823a2047d2e4cd60c1",
+  "schemaVersion": 1,
+  "updatedAt": 1782990387151
+}

@@ -1,0 +1,19 @@
+{
+  "createdAt": 1790768189695,
+  "entityType": "message",
+  "id": "1790768189694_20seyzxj",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Python边缘运行时正式发布\n\n**评级**: A (75分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: 技术实现\n**次类别**: AI应用开发, 云计算\n**标签**: #Python Workers #Pyodide #ASGI/WSGI #Hyperdrive #AI Agent\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 9 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 7 | 10% |\n\n**一句话点评**: 与Python及Agent部署直接相关，机制解释和代码示例具有实用价值，但缺少性能数据、运行限制及完整生产验证。\n**核心高价值点**: 通过ASGI/WSGI连接器和底层socket桥接，现有Python应用与数据库驱动可以接入Workers运行时，而不必自行处理大部分跨语言适配。\n\n### 摘要\n文章介绍Python Workers正式发布后的原生绑定、Web框架适配、数据库连接及AI库支持，解释其WebAssembly网络桥接与包生态建设，并提供代码和应用示例；原生扩展包仍需兼容构建。\n\n### 知识要点\n- Workers平台承担Web服务器职责，workers.asgi与workers.wsgi负责转换请求和响应，因此框架接入不需要在Worker内部运行Uvicorn或Gunicorn。\n- Python数据库驱动依赖的socket操作可在系统调用层映射到Workers connect API，使驱动能够通过Hyperdrive连接数据库。\n- Python Workers基于Pyodide运行，含C/C++/Rust原生扩展的包需要编译为兼容的WebAssembly产物，不能将GA等同于所有Python包均可直接使用。\n\n### 行动项\n- 使用workers.asgi.entrypoint将一个最小FastAPI应用接入Python Workers，验证路由及Cloudflare绑定访问。\n- 按示例配置Hyperdrive绑定，使用受支持的数据库驱动执行一次查询，并核对项目依赖的兼容性。\n- 从文中提及的示例仓库选择MCP或RAG示例，验证所需AI库与Cloudflare服务的集成方式。\n\n### 存档判定\n归档: 是 — 原因: 包含框架接入、数据库连接和AI库调用的具体示例，并解释WebAssembly环境中的关键适配机制，具有可复用的实现参考价值。\n删除: 否\n留存决策: 精读并存档，作为Python边缘应用与Agent部署的技术参考，采用前核对包兼容性及运行限制",
+    "role": "assistant",
+    "timestamp": 1790768189695,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:0fe8e6a274c7b833e1b4a9b21b5730c2cf472412ae9cb499f03ae102c84661fa",
+  "refs": {
+    "sessionId": "1790045992003_64nbe4vz"
+  },
+  "revisionId": "sha256:04a0adea436cdde14a446ec52a35a7edf8ff2aca5783ee9e12b00759314f5aec",
+  "schemaVersion": 1,
+  "updatedAt": 1790768189695
+}

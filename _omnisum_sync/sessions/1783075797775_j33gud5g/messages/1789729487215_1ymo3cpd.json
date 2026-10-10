@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729487215,
+  "entityType": "message",
+  "id": "1789729487215_1ymo3cpd",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Codex“516 Token 降智”可能与中间进度提示有关\n\n文章通过有限实验指出：Codex 回答质量下降、推理 Token 精确停在 516，并不一定是 OpenAI 专门限制第三方客户端，更可能与 Codex 系统提示词要求模型频繁输出中间进度有关。但目前证据仅来自“糖果问题”等单轮测试，结论仍属相关性推测。\n\n## 客户端或账号不是唯一变量\n\n作者发现，官方 API 接入 Codex CLI 后同样会出现 516 截断并答错；免费账号直接接入 Cherry Studio 时，测试可 5/5 答对，但加入 Codex 系统提示词后几乎总是出错。更换 User-Agent 不影响结果，说明问题可能不在第三方客户端身份，而在提示词及推理机制。\n\n## commentary 指令与截断高度相关\n\nCodex 要求模型通过 `commentary` 通道定期汇报“正在运行 X、查看 Y”等进度。作者删除相关提示词后，5 次测试均未出现 516 截断；将修改后的提示词用于 Codex 也能缓解问题，但代价是看不到中间过程。\n\n后续讨论提出一种解释：模型可能以每页 512 个推理 Token 分段，续页还需附带 6 个特殊 Token，因此形成“516”这一特征值。真正决定是否继续下一页的机制尚不明确，commentary 指令可能只是影响因素，而非根因。\n\n## 临时方案有效性仍有限\n\n用户可通过 `model_instructions_file` 加载删除 commentary 要求的自定义系统提示词，并检查是否生效。不过部分中转服务可能覆盖本地提示词。该方案尚未覆盖复杂任务、多轮对话及其他推理额度异常，因此更适合作为排查手段，不能视为通用修复。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729487215,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:89d59280c07d050feb6ff0641a83151f326bceb41db416802eaacd85e0464f3d",
+  "refs": {
+    "sessionId": "1783075797775_j33gud5g"
+  },
+  "revisionId": "sha256:92875850482b39d39a7dffa48960d04409fabb5d8f8bc193ce2c0135f7a329ba",
+  "schemaVersion": 1,
+  "updatedAt": 1789729487215
+}

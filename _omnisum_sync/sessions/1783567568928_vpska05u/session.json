@@ -1,0 +1,71 @@
+{
+  "createdAt": 1783567568928,
+  "entityType": "session",
+  "id": "1783567568928_vpska05u",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为现有Agent任务建立有技能与无技能的对照评测集",
+      "优先把内部流程、行业规范和模型薄弱环节沉淀为短小技能文件",
+      "为不同运行框架分别测试并调整技能版本",
+      "避免一次性加载大量技能，设计技能选择或路由机制"
+    ],
+    "archiveReason": "文章总结了AI技能构建的实证原则，并提供了可操作的评估闭环，适合后续复用",
+    "classifiedAt": 1783567599997,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI技能构建的实证规则",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "模型自生成技能通常不可靠，专家编写的聚焦技能效果更好",
+      "技能内容应短小且针对模型常犯错误，而不是百科全书式穷尽说明",
+      "加载过多技能会分散模型注意力，需要路由或选择机制",
+      "同一技能在不同模型和执行框架中的行为差异很大，必须分别测试",
+      "技能最适合补足模型预训练不足的专业领域、内部流程和受监管场景"
+    ],
+    "oneHighValuePoint": "技能是否有效不能凭感觉判断，必须通过“加载技能”和“不加载技能”的对照任务集进行可重复评估。",
+    "oneLineReview": "这是少见的用实验结果反推AI技能设计原则的高价值实践总结，但翻译和来源完整性略有瑕疵。",
+    "primaryCategory": "AI工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，可作为AI Agent技能设计与评估的参考框架",
+    "secondaryCategories": [
+      "AI Agent",
+      "提示工程与评估",
+      "知识工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章基于三篇技能评估相关论文，总结AI Agent技能设计的五条原则：人工编写、保持短小、避免过量加载、按框架测试、聚焦模型薄弱领域，并强调用有无技能对照实验验证效果。",
+    "tags": [
+      "AI技能",
+      "Agent开发",
+      "技能评估",
+      "提示工程",
+      "可复用方法论"
+    ],
+    "title": "你如何培养一项好技能？现在有实际数据了。",
+    "totalScore": 76,
+    "url": "https://x.com/aparnadhinak/status/2074569427346174039"
+  },
+  "payloadHash": "sha256:fff75ad7c3b951804075afeb079ccef768d885632977d6cc79977967b66e39b1",
+  "refs": {},
+  "revisionId": "sha256:f0d13d65239bb0190b2a848cc730260230d073b536fa7a169d76fa3a85b2e9ca",
+  "schemaVersion": 1,
+  "updatedAt": 1789695905439
+}

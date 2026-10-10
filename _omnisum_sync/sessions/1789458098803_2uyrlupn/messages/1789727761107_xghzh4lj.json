@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727761106,
+  "entityType": "message",
+  "id": "1789727761107_xghzh4lj",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 软件解锁让废弃矿卡变身 64GB AI 加速卡，但高风险且已失去性价比\n\nCMP 170HX 原是英伟达专为挖矿设计的显卡，矿难后一度只值数百元。文章称，研究者通过软件漏洞解除其显存、算力和 PCIe 限制，使部分 8GB 卡释放出 64GB HBM2e 显存；大模型带来的显存需求又将其价格推至约 1.4 万元。\n\n## 同一颗 GA100，被人为限制用途\n\nCMP 170HX 与 A100 使用同款 GA100 芯片，但英伟达通过固件和寄存器限制显存容量、计算吞吐及 PCIe 带宽，同时屏蔽图形和 CUDA 能力。研究者利用 GPU 安全协处理器 Falcon 的校验漏洞，以约 63KB 的 ROP 代码取得执行权，并将方法封装为开源工具 CMPUnlocker，无需改硬件，但要求 Linux、root、补丁驱动、关闭 Secure Boot 和冷启动。\n\n## 64GB 高带宽显存适合大模型推理\n\n解锁后实测显存读写约 1.7TB/s，FP16 算力约 220TFLOPS。其优势主要体现在访存受限的 LLM 推理：Qwen 27B 单流达到 151 tok/s，解码速度可超过 4090。8GB 海力士版解锁至 64GB 相对稳定；10GB 三星版虽理论可达 80GB，通常只建议开到 40GB。\n\n## 稀缺显存推动涨价，但更像高价“抽卡”\n\n文章认为，MiniMax H3 等大模型开源后，本地运行遭遇显存瓶颈，“低价 64GB”需求迅速放大，促使卡价从数百元涨至万元以上。但这些芯片可能本就未通过 A100 筛选，存在坏显存、崩溃、掉卡和输出异常风险；同时缺少 FP8、NVLink，驱动和 CUDA 生态受限，且无法维修、没有质保。\n\n它只适合能承担报废风险、专注大模型推理和高并发的玩家，不适合作为视频生成或生产环境主力。核心启示是：硬件能力会因产品分层被软件封锁，也会因新场景出现而被重新定价，但套利窗口往往在大众关注前就已关闭。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727761106,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e551877e0a3c2d936b2b0b857565f4613efc49fdf29b9f455bf163186b80c6c5",
+  "refs": {
+    "sessionId": "1789458098803_2uyrlupn"
+  },
+  "revisionId": "sha256:b44125358de4666614d3be5b3c999c73e604d17d44b350a98e2a10e2912acb3a",
+  "schemaVersion": 1,
+  "updatedAt": 1789727761106
+}

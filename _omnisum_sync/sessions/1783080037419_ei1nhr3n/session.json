@@ -1,0 +1,66 @@
+{
+  "createdAt": 1783080037419,
+  "entityType": "session",
+  "id": "1783080037419_ei1nhr3n",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "可在自己的 Agent 或技能系统中增加一个总调度入口，根据上下文推荐下一步操作。",
+      "如需保留，应进一步查找该方案的实现细节、提示词设计或真实使用案例。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783080249866,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "技能调用后的自动调度思路",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "多 skill 系统中，下一步选择是影响连续使用体验的关键问题。",
+      "相比固定工作流，基于上下文的动态 skill 推荐更灵活。",
+      "通过统一入口命令反复触发调度，可以简化用户操作路径。"
+    ],
+    "oneHighValuePoint": "通过读取上一轮对话状态来动态推荐下一步 skill，可降低用户在多 skill 系统中的决策负担。",
+    "oneLineReview": "这是一个有启发但信息量较低的 Agent 调度交互小思路。",
+    "primaryCategory": "AI工具与Agent工作流",
+    "rating": "C",
+    "rejectReason": "内容只是一个简短产品思路或功能更新，缺少实现细节、案例验证和系统方法论，参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "技能调度",
+      "人机交互"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出在调用一个 skill 后，通过再次输入 /dbs 自动解析上一轮对话并推荐下一个 skill，以避免固定工作流过死或用户无法判断下一步的问题。",
+    "tags": [
+      "AI Agent",
+      "Skill调度",
+      "工作流",
+      "上下文解析",
+      "自动推荐"
+    ],
+    "title": "dontbesilent: 解决一个大问题，调用完一个 skill 之后，不知道接下来该怎么办了 如果按照固定工作流调用太死板，如果让使用者自己临场判断，使用者又判断不了 现在直接再次 /…",
+    "totalScore": 44.5,
+    "url": "https://x.com/dontbesilent/status/2071111941356204262"
+  },
+  "payloadHash": "sha256:33565fbf59cca65e79adcbb75fc525aa19a61bae7771edbf1025b5cd543327f9",
+  "refs": {},
+  "revisionId": "sha256:328b6cf5331d9fee03a69b13d9fd868750e13c42cefa1022f5d8a1d93ddf0c12",
+  "schemaVersion": 1,
+  "updatedAt": 1784801300992
+}

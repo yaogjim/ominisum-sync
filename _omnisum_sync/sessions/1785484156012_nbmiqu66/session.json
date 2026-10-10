@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785484156012,
+  "entityType": "session",
+  "id": "1785484156012_nbmiqu66",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为现有长期Agent记录Identity、Domain和Scope，并明确其职责边界与升级对象。",
+      "将跨Agent协作拆分为有明确发送方、接收方、返回义务和结果回流路径的Message或Topic。",
+      "用执行、等待、积压和Token等信号定位调查对象，再结合实际产物和业务结果验证是否需要调整Scope、工具、路由或权限。"
+    ],
+    "archiveReason": "文章系统梳理了从Task Agent、Long-running Agent、Domain Agent到Agent Team的演化路径，并提出Profile、Message、Topic、Overview、Needs You和External等可复用的协作与治理抽象。虽然主要依据作者自身产品实践，外部验证有限，但对Agent系统设计具有较强参考价值。",
+    "classifiedAt": 1785484367864,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "从多智能体到可治理的Agent Team",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "mp.weixin.qq.com",
+    "favicon": "https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico",
+    "knowledgePoints": [
+      "Task是工作切片，Long-running Agent承载持续责任，Domain用于界定长期职责与停止边界。",
+      "Message负责Agent间有边界的点对点沟通，Topic由唯一Responsible维护跨Agent工作的当前版本、等待项、证据与最终收口。",
+      "Overview提供Signal与Evidence入口，治理应遵循发现信号、下钻证据、判断原因、小幅调整、后续验证的循环。"
+    ],
+    "oneHighValuePoint": "文章最有价值的判断是：多个Agent只有在责任、关系、交接、当前状态和边界从Human脑中外化，并能持续协作、收口和治理时，才真正成为Agent Team。",
+    "oneLineReview": "这是一篇高度贴合Agent系统设计的产品实践长文，框架完整但重复较多，且证据主要来自单一产品与作者个案。",
+    "primaryCategory": "AI技术与Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "推荐精读并长期保留，适合作为Agent团队架构与治理的概念参考",
+    "secondaryCategories": [
+      "产品设计",
+      "协作治理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以CodexLoom为载体，解释Agent如何从一次性Task发展为长期责任主体，再因Scope扩张分化为Domain Agent，最终通过Profile、Message、Topic、Overview和External形成可协作、可收口、可观测并受Human治理的Agent Team。",
+    "tags": [
+      "Agent Team",
+      "Long-running Agent",
+      "多智能体协作",
+      "可观测性",
+      "权限治理"
+    ],
+    "title": "最佳实践：从Multi-Agent到Agent Team",
+    "totalScore": 74,
+    "url": "https://mp.weixin.qq.com/s/ZloR4kbXacxpcEkIEv3oUQ"
+  },
+  "payloadHash": "sha256:6dddb3ac381df5983422c1672ee11452bc32ff273c9eb15c8a195696af3ebb34",
+  "refs": {},
+  "revisionId": "sha256:1a83211cf510094f9c353eee2e00d179b2f353190acf23ba8d7dffaefcb2bc14",
+  "schemaVersion": 1,
+  "updatedAt": 1789694290904
+}

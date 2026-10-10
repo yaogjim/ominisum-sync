@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784693822632,
+  "entityType": "message",
+  "id": "1784694052638_cuu8geih",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 主旨概括\n\n“Mini-app spec”主张用**可执行的浏览器小应用**替代纯文本 Markdown 规格说明，将文字、结构化数据、交互原型、注解和自动检查整合在一起。它的核心目标是：**当实现不断变化时，仍能保留并验证最初的产品意图。**\n\n## 1. Markdown Spec 的局限\n\n当前常见的 Agent 开发流程是：\n\n1. 人类编写 Markdown spec；\n2. Agent 根据 spec 构建产品；\n3. 人工检查结果是否符合原始需求。\n\nMarkdown 干净、便携、易编辑，适合人类阅读，但并不是约束 Agent 的最强“合约”。其主要问题是：\n\n- 需求、约束和边界情况大多藏在自然语言中；\n- 结构往往是隐含的，Agent 容易漏掉或误解；\n- 实现发生变化后，只能依赖人工反复对照。\n\nHTML 虽然提高了信息密度和可视化效果，但仍未解决最关键的**意图与实现如何自动对账**的问题。\n\n## 2. 什么是 Mini-app Spec\n\nMini-app spec 是一个**浏览器原生、可执行的小型制品**，将以下内容放在同一个载体中：\n\n- 文字需求（prose）\n- 结构化数据\n- 可交互的原型行为\n- 人工注解\n- 自动对账检查\n\n传统方式中，原型负责展示“产品应该是什么感觉”，spec 负责记录“产品需要实现什么”，两者通常彼此分离。Mini-app spec 则把原型和规格说明合并，使**产品意图尽可能贴近实际实现**。\n\n## 3. Mini-app Spec 的四类对账检查\n\nMini-app spec 不只是把 Markdown 做得更美观，而是引入可自动执行的检查机制。\n\n### 模板对账\n\n将模板定义为 React 组件的 props，确保实现不会偏离约定格式：\n\n- 检查是否缺少章节；\n- 防止模板退回旧版本；\n- 更新后自动同步给下游使用者。\n\n### 文件树对账\n\n核对 spec 中声明的代码结构与真实项目是否一致：\n\n- 指定的包和文件是否存在；\n- 是否缺少必要文件；\n- 是否出现未声明的多余文件。\n\n### 测试对账\n\nMini-app spec 不替代单元测试或集成测试，而是检查更高层的问题：\n\n- spec 中要求的测试是否真实存在；\n- 这些测试当前是否通过；\n- 是否能够按需直接运行。\n\n### 配置与密钥对账\n\nspec 可以声明应用需要哪些配置项，但不保存密钥值，并自动检查它们是否正确绑定。\n\n例如：如果 Service A 需要 `OPENAI_API_KEY`，mini-app spec 可以报告：\n\n- 该密钥是否已经配置；\n- 是否绑定到了正确的服务或位置。\n\n## 4. Agent 工作流的三个层级\n\n| 层级 | 工作方式 | 特点 |\n|---|---|---|\n| Markdown loop | 编写 spec → 构建实现 → 人工比对 | 当前最普遍，但主要依赖人工检查 |\n| HTML loop | 编写更丰富的 spec → 构建实现 → 可视化比对 | 信息密度更高，能看到产品应有的样子 |\n| Mini-app loop | 建模意图 → 嵌入原型 → 构建实现 → 自动对账 | 不仅能看，还能机械化验证意图是否实现 |\n\nMini-app loop 的提升不只是“展示得更好”，而是让 spec 本身参与构建和验收流程。\n\n## 5. 下一步：用精确注解闭环修改\n\n未来可以让 mini-app spec 进一步参与 Agent 的修复过程。人类能够直接在具体渲染区域上圈选或指出：\n\n> “这个地方不对。”\n\nAgent 随后只修复对应的组件或渲染子树，而不是重新理解和修改整个项目，从而减少误改并提高迭代效率。\n\n## 6. 社区反馈与相关实践\n\n- `@Dash` 表示，团队计划在当周周末开源一个同时支持 **Claude Code** 和 **Codex** 的桌面版本；该回复获得 **246 个赞、94 条评论**。\n- `@Michael Guo` 提到正在使用 `lavish`，其思路同样是将 Agent 的文字输出可视化，并通过 annotation 进行评阅。\n- 其他讨论认为，类似方法已经被部分开发者用于模型分析和实际产品开发，说明这一思路并不局限于学术研究，也具有较强的工程实践价值。\n\n## 核心结论\n\nMini-app spec 的价值在于把 spec 从一份“供人阅读的静态文档”，升级为一个**可展示、可交互、可检查、可参与构建的执行载体**。它不是要取代测试，而是帮助人类和 Agent 持续确认：**最终实现有没有偏离最初意图。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784693822632,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:26504fa9b1f5113cb9ddd54b645a9899337104f9df8c10a0b76fdcb40a16fb45",
+  "refs": {
+    "sessionId": "1784694052090_fkrszze5"
+  },
+  "revisionId": "sha256:11ceceef266f98f6b588802ecc2ab248b37bb866951c69cbf3bef9524e5e964e",
+  "schemaVersion": 1,
+  "updatedAt": 1784693822632
+}

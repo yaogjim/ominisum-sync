@@ -1,0 +1,15 @@
+{
+  "createdAt": 1790766879360,
+  "entityType": "session-content",
+  "id": "1790766879360_9m9upg03",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Muratcan Koylan</strong></header><div class=\"tw-body\">我们给 Jev 打了 2,029 通真实电话。<br><br>没有转录文本或音频；它一个字都没听到。我们 AI 接待员的通话被简化为纯结构，也就是对话轮次、工具调用、工作流阶段和时序。<br><br>在通话过程中，Jev 做出了 38,012 次轮次级预测 ，延迟中位数为 118 毫秒 ，用五个固定问题审查了每一通电话，并在 26 秒内生成了 10,145 个答案 ，同时有 256 个请求在处理中。<br><br>该实验为零样本，没有微调，也没有使用我们数据中的示例。我们将 Jev 的预测与 EHR 中实际发生的情况进行了比较。<br><br>到中途时，Jev 已经能够有意义地区分会预订和不会预订的通话（AUC 0.78），而在接近尾声时，它正确排序这些通话的准确率达到了 94%。<br><br>尽管 Jev 过度关注了我们代理通常能克服的可见错误，但它能在几秒钟内以仅 3 美元的成本分析数千个真实通话，这仍然相当令人难以置信。</div><div class=\"tw-videos\"><a href=\"https://x.com/muratcan/status/2104959648482701686\"><img src=\"https://pbs.twimg.com/amplify_video_thumb/2104955362977693696/img/pCmKFyeFbhl1Rm3R.jpg\" alt=\"视频\" /></a></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Muratcan Koylan</strong> <span class=\"tw-eng\">♥ 16 · 💬 2</span><p>每一通 AI 接待员的通话都会留下痕迹，比如“身份验证失败”、“搜索了可用时段”、“来电者沉默了”，并带有时间戳。<br><br>我们只把这些日志喂给了 Jev，没有文字。<br><br>在每一轮代理交互之后，我们都会问它“这通电话最终会以预约结束吗？”，然后将其猜测与病历系统中实际发生的情况进行对比。</p></div><div class=\"tw-reply\"><strong>@Tom Goodwin</strong> <span class=\"tw-eng\">♥ 9 · 💬 1</span><p>你能再解释一下吗？这挺有意思的，但我也不清楚你在说什么</p></div><div class=\"tw-reply\"><strong>@Michael Thiessen</strong> <span class=\"tw-eng\">♥ 5 · 💬 1</span><p>我认为决策模型将在这类在线监控中被大量使用。<br><br>就像元认知一样，在流程中途引导智能体，或者在它偏离轨道太远时直接终止它。</p></div><div class=\"tw-reply\"><strong>@Muratcan Koylan</strong> <span class=\"tw-eng\">♥ 6 · 💬 0</span><p>当前沿实验室消灭了来自较小实验室的竞争和创新时，没有什么值得庆祝的。</p></div><div class=\"tw-reply\"><strong>@Muratcan Koylan</strong> <span class=\"tw-eng\">♥ 2 · 💬 1</span><p>@dotpem<br> <br>@CompleteSkeptic<br> 真的绝了</p></div></div>",
+    "pageContent": "Muratcan Koylan: 我们给 Jev 打了 2,029 通真实电话。 没有转录文本或音频；它一个字都没听到。我们 AI 接待员的通话被简化为纯结构，也就是对话轮次、工具调用、工作流阶段和时序。 在通话过程中，Jev 做出了 38,012 次轮次级预测 ，延迟中位数为 118 毫秒 ，用五个固定问题审查了每一通电话，并在 26 秒内生成了 10,145 个答案 ，同时有 256 个请求在处理中。 该实验为零样本，没有微调，也没有使用我们数据中的示例。我们将 Jev 的预测与 EHR 中实际发生的情况进行了比较。 到中途时，Jev 已经能够有意义地区分会预订和不会预订的通话（AUC 0.78），而在接近尾声时，它正确排序这些通话的准确率达到了 94%。 尽管 Jev 过度关注了我们代理通常能克服的可见错误，但它能在几秒钟内以仅 3 美元的成本分析数千个真实通话，这仍然相当令人难以置信。\n[![视频](https://pbs.twimg.com/amplify_video_thumb/2104955362977693696/img/pCmKFyeFbhl1Rm3R.jpg)](https://x.com/muratcan/status/2104959648482701686)\n---\n热门回复 (共 5 条):\n@Muratcan Koylan (♥ 16 · 💬 2):\n每一通 AI 接待员的通话都会留下痕迹，比如“身份验证失败”、“搜索了可用时段”、“来电者沉默了”，并带有时间戳。\n\n我们只把这些日志喂给了 Jev，没有文字。\n\n在每一轮代理交互之后，我们都会问它“这通电话最终会以预约结束吗？”，然后将其猜测与病历系统中实际发生的情况进行对比。\n\n@Tom Goodwin (♥ 9 · 💬 1):\n你能再解释一下吗？这挺有意思的，但我也不清楚你在说什么\n\n@Michael Thiessen (♥ 5 · 💬 1):\n我认为决策模型将在这类在线监控中被大量使用。\n\n就像元认知一样，在流程中途引导智能体，或者在它偏离轨道太远时直接终止它。\n\n@Muratcan Koylan (♥ 6 · 💬 0):\n当前沿实验室消灭了来自较小实验室的竞争和创新时，没有什么值得庆祝的。\n\n@Muratcan Koylan (♥ 2 · 💬 1):\n@dotpem\n \n@CompleteSkeptic\n 真的绝了\n"
+  },
+  "payloadHash": "sha256:5863b1e208e53867703355b7772ad70a410984d3123bc18366e2d3ba6cc9249e",
+  "refs": {},
+  "revisionId": "sha256:1e5ee85cefb0d185c2f4c3ddd4ce387252132f060eacfe551963fba58d2094d9",
+  "schemaVersion": 1,
+  "updatedAt": 1790768315453
+}

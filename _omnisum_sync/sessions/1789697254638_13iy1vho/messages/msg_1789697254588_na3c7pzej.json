@@ -1,0 +1,23 @@
+{
+  "createdAt": 1789697254588,
+  "entityType": "message",
+  "id": "msg_1789697254588_na3c7pzej",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "请用中文对以下文章做结构清晰、通俗易懂的精炼总结，让我快速理解文章主旨、关键内容及其逻辑关系。\n\n## 内容组织\n- 拟一个准确、简洁的标题。\n- 开头用 1—2 句话概括主旨，直接说明核心信息或观点。\n- 沿原文的主要逻辑组织正文，合并重复内容，不逐段缩写。\n- 每部分用一个传达关键点的小标题，配简短段落；并列信息可用列表。\n- 保留支撑核心观点的重要数据、案例、因果关系及必要前提，不罗列次要细节。\n\n## 表达要求\n- 使用日常语言，必要术语简短解释，避免空话和冗长铺垫。\n- 难点可用一个具体例子说明，优先采用原文案例；自行补充时注明“举例”。\n- 忠实于原文，区分作者观点与事实，不把推测写成定论，不添加原文没有的结论。\n- 字数按内容复杂度适度调整；删去重复，保留理解所必需的信息。\n- 使用 Markdown，层级不宜过多。直接输出总结，无需开场白或过程说明。",
+    "is_prompt": true,
+    "model": "gpt-5.6-sol",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "prompt_type": "summary_template",
+    "role": "user",
+    "timestamp": 1789697254588
+  },
+  "payloadHash": "sha256:0f2c7dcbd6603d3ad055cad40220b815d6d5c51814b7e6f2dd01c722239b5ff1",
+  "refs": {
+    "sessionId": "1789697254638_13iy1vho"
+  },
+  "revisionId": "sha256:204a553f5799d31cda87ab85daa5852eae6a4a150aec6fccce8992cc5a94b4fc",
+  "schemaVersion": 1,
+  "updatedAt": 1789697254588
+}

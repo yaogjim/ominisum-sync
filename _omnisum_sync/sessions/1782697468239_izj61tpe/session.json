@@ -1,0 +1,96 @@
+{
+  "createdAt": 1782697468239,
+  "entityType": "session",
+  "id": "1782697468239_izj61tpe",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如有个人项目，可小规模测试在VPS上配置Claude Code远程开发环境。",
+      "搭建前先配置SSH安全、Tailscale或Cloudflare Tunnel、防火墙和备份机制。",
+      "避免在重要生产环境直接让AI代理修改代码，至少增加测试环境或灰度流程。"
+    ],
+    "archiveReason": "",
+    "byline": "@levelsio",
+    "classifiedAt": 1783040361075,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "VPS上运行AI编程代理",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1782697505463,
+        "imageId": "img-3",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# AI 编程的新范式：把 Coding Agent 放到云端服务器\n\n## 核心观点\n\n作者认为：未来 AI 编程代理不会主要运行在开发者笔记本上，而会逐步迁移到云端 / VPS 上运行。  \n他自己已经近一年几乎完全在 VPS 上使用 Claude Code 编程，体验非常好，甚至直接在生产服务器上实时修改代码。\n\n## 他的实际工作流\n\n过去的流程是：\n\n1. 本地笔记本写代码  \n2. 本地测试  \n3. 推送到 GitHub  \n4. 自动部署到生产环境  \n\n后来他逐渐简化为：\n\n1. 直接 SSH 到 VPS  \n2. 在服务器上用 Claude Code 编程  \n3. 直接修改、测试、上线  \n\n因为代码本来就在服务器上，所以从开发到部署几乎是秒级完成。\n\n## 主要优势\n\n### 1. 设备解耦\n\n不再依赖笔记本电脑：\n\n- 不需要一直开着电脑\n- 不耗笔记本电池\n- 可以随时用手机、平板或其他设备接入继续工作\n\n### 2. AI 可以持续运行\n\nClaude Code 可以在服务器上长时间执行任务，甚至在人睡觉时继续跑。  \n尤其适合使用`/goal`这类长期目标型任务。\n\n### 3. 部署速度极快\n\n因为开发环境和生产环境都在服务器上，项目可以从零开始快速上线。  \n作者认为这比传统 “本地开发 → GitHub → CI/CD → 生产” 的流程更快。\n\n### 4. 更接近未来形态\n\n作者认同 Theo 的判断：大多数开发者会把代码代理从本地电脑迁到云端。  \n随着 Claude、Slack 等工具云端化，AI Agent 和 AI 编程很可能优先在服务器 / 云端运行。\n\n## 风险与边界\n\n### 直接改生产环境有风险\n\n作者承认，直接在生产服务器上实时编辑代码听起来很危险。  \n但他过去一年只出现过两次问题，每次网站大约 10 秒不可用，对他个人项目来说可以接受。\n\n### 团队 / 公司不应直接照搬\n\n如果是在大公司或多人协作环境，他建议增加测试服务器或预发布环境，避免直接影响生产。  \n原因包括：\n\n- 安全风险\n- 合规要求\n- 多人协作冲突\n- 生产稳定性要求更高\n\n## 安全建议\n\n作者特别强调备份和网络安全：\n\n- 使用 3-2-1 备份策略\n- 本地和异地多份备份\n- VPS 配合 Tailscale、Cloudflare Tunnel\n- 防火墙阻断不必要的入站流量\n\n即使不使用 AI 编程，也应该做好备份。\n\n## 产品与行业启示\n\n### 1. 开发环境正在从 “本地 IDE” 转向 “云端工作台”\n\nAI Agent 不只是辅助写代码，而是在改变开发基础设施。  \n未来开发者可能只需要一个终端入口，真正的计算、执行、部署都在云端完成。\n\n### 2. AI 编程产品会更偏 Agent + DevOps\n\n下一代 AI 编程工具不只是补全代码，而是要能：\n\n- 访问服务器\n- 修改配置\n- 执行命令\n- 部署服务\n- 监控结果\n- 自动修复问题\n\n这会让 AI 编程工具与云服务器、CI/CD、安全、监控系统深度融合。\n\n### 3. 独立开发者会率先采用激进流程\n\n个人开发者对稳定性和流程规范的要求较低，更看重速度。  \n因此 “AI + VPS + 直接部署” 的模式会先在独立开发者、小团队中流行，再逐步被企业以更规范的方式吸收。\n\n## 一句话总结\n\n这篇内容本质上是在说：AI 编程的主战场正在从本地电脑迁移到云端服务器，开发、运行、部署将越来越一体化，而 AI Agent 会成为云端开发流程的核心执行者。",
+        "url": "https://pbs.twimg.com/media/HL469fOWAAA3t74?format=jpg&name=medium",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 1043,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HL469fOWAAA3t74?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HL469fOWAAA3t74?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "在VPS上运行Claude Code可实现跨设备持续开发，并减少本地环境维护成本。",
+      "直接在服务器上开发可显著缩短部署链路，但会带来生产环境风险。",
+      "个人项目可采用较激进的生产直改流程，团队或企业环境应增加测试服务器和安全隔离。",
+      "远程AI编程环境应配合Tailscale、Cloudflare Tunnel、防火墙和3-2-1备份策略。"
+    ],
+    "oneHighValuePoint": "AI编程代理从本地笔记本迁移到云端/VPS，可能成为未来开发工作流的重要方向。",
+    "oneLineReview": "有一定趋势参考价值，但更像一条经验型推文，方法细节和证据不足。",
+    "primaryCategory": "AI编程工作流",
+    "rating": "C",
+    "rejectReason": "内容主要是个人经验分享，缺乏完整配置步骤、风险控制方案和系统性方法论，证据支撑较弱。",
+    "retentionDecision": "短期参考后可删除",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "远程开发",
+      "云端开发环境"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者分享自己近一年几乎完全在VPS上使用Claude Code编程的经验，认为云端AI编程可减少本地依赖、加快部署，并预测代码代理会逐步迁移到服务器端运行，同时提醒做好备份和安全配置。",
+    "tags": [
+      "Claude Code",
+      "VPS",
+      "AI Agent",
+      "远程开发",
+      "生产环境"
+    ],
+    "title": "@levelsio: ✨ I think I've been coding almost solely on my VPS with Claude Code for almost a…",
+    "totalScore": 52.5,
+    "url": "https://x.com/levelsio/status/2071162399864889705"
+  },
+  "payloadHash": "sha256:9e3fedd5d1d35910bc6b0e99d4dbef4e32a299047aad2b47d9ea59febe3ba782",
+  "refs": {},
+  "revisionId": "sha256:cd3d40b8e278e8b443eca77b79f83a66b8900157ba9a60b6eb4cf327f76bc5cb",
+  "schemaVersion": 1,
+  "updatedAt": 1783040361483
+}

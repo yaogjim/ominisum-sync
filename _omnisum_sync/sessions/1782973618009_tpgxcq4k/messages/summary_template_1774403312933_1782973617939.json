@@ -1,0 +1,23 @@
+{
+  "createdAt": 1782973617939,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1782973617939",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Vercel Eve + OpenUI：把 Agent 输出渲染成实时生成式 UI\n\n## 一句话总结\n\n这篇文章介绍了如何将**Vercel Eve Agent**接入**OpenUI**，在不替换 Eve 原有会话协议的前提下，把 Agent 的流式回复和工具调用转换为**AG-UI 协议**，并实时渲染成卡片、表格、图表、表单等生成式 UI。\n\n---\n\n## 核心价值\n\n### 1. 保留 Eve 原生会话能力\n\nOpenUI 不直接替代 Eve 的 session 协议，而是通过 Eve 内置的 HTTP Channel 进行通信，继续使用 Eve 的：\n\n- 会话创建与续接\n- 流式输出\n- 可恢复传输\n- continuation token\n- stream cursor\n\n这意味着多轮对话、断点续传、上下文保持都由 Eve 原生能力支撑。\n\n### 2. OpenUI 负责渲染生成式界面\n\nEve 的输出会被转换成 OpenUI 可理解的**AG-UI SSE 流**，然后由 OpenUI 的`<FullScreen>`聊天组件渲染。\n\n最终用户看到的不是纯文本，而是可交互的 UI：\n\n- 卡片\n- 表格\n- 图表\n- 表单\n- 工具调用状态\n- 结构化对话内容\n\n---\n\n## 整体架构\n\n### 关键模块分工\n\n| 模块 | 文件 | 作用 |\n|---|---|---|\n| OpenUI Chat | `src/app/page.tsx` | 渲染`<FullScreen>`聊天界面 |\n| Session Bridge | `src/eve-chat.ts` | 通过 Eve HTTP API 发送消息、管理会话和流 |\n| Event Adapter | `src/eve-stream.ts` | 将 Eve 事件转换为 AG-UI 事件 |\n| Agent Instructions | `agent/instructions/openui.ts` | 在 Eve 会话开始时注入 OpenUI Lang 系统提示词 |\n| Thread Store | `src/thread-store.ts` | 在 localStorage 中保存线程和对话记录 |\n\n---\n\n## 连接方式\n\n### OpenUI 页面接入 Eve\n\n页面中通过`createEveChatProps ()`创建 Eve 后端驱动的聊天回调，并传给 OpenUI 的`<FullScreen>`组件。\n\n同时使用：\n\n- `agUIAdapter ()`：消费 AG-UI SSE 流\n- `openuiChatLibrary`：提供 OpenUI 内置组件库\n- `componentLibrary`：让模型输出能被渲染成对应 UI 组件\n\n这使得 Eve 的 Agent 回复可以直接显示为 OpenUI 的实时生成式界面。\n\n---\n\n## 让 Eve 学会 OpenUI Lang\n\n### 动态注入组件库 Prompt\n\n当 Eve session 启动时，系统会动态注入 OpenUI 组件库生成的 prompt。\n\n这样做的好处是：\n\n- Agent 知道当前可用的 UI 组件\n- 模型输出与实际渲染器保持一致\n- 组件库更新后，指令也能同步更新\n- 避免模型生成无法渲染的 UI 格式\n\n本质上，这是在告诉 Agent：你不只是输出文本，而是要用 OpenUI Lang 生成可渲染界面。\n\n---\n\n## 会话与流式传输机制\n\n### Eve 使用的接口\n\n示例中浏览器直接访问同源 Eve endpoint：\n\n```text\nPOST /eve/v1/session\nPOST /eve/v1/session/:id\nGET  /eve/v1/session/:id/stream?startIndex=N\n```\n\n### 会话恢复逻辑\n\n- 首轮对话创建新 session\n- 后续对话携带 continuation token\n- 流式读取从保存的 stream index 继续\n- 已完成会话清空 cursor\n- 等待中或失败的会话仍可恢复\n\n这套机制保证了对话线程可以稳定续接。\n\n---\n\n## Eve 事件如何变成 OpenUI UI\n\n### 事件转换关系\n\nEve 会产生 typed session events，适配器将其转换为 OpenUI 需要的 AG-UI 事件：\n\n| Eve 事件 | AG-UI 事件 |\n|---|---|\n| `actions.requested` | `TOOL_CALL_START / TOOL_CALL_ARGS / TOOL_CALL_END` |\n| `message.appended` | `TEXT_MESSAGE_CONTENT` |\n| `message.completed` | `TEXT_MESSAGE_CONTENT`，作为非流式兜底 |\n| `turn.failed` | `RUN_ERROR` |\n| `session.failed` | `RUN_ERROR` |\n\n### 工具调用展示\n\n工具调用和文本会共享同一个 assistant message ID。\n\nOpenUI 会把工具执行过程展示在 “幕后活动” 区域，把最终的 OpenUI Lang 响应展示在对话区。\n\n示例里包含一个简单工具：\n\n```text\nget_current_time\n```\n\n后续新增 Eve 工具也会自动通过同样的 AG-UI 工具调用映射展示出来。\n\n---\n\n## 线程持久化\n\n### localStorage 保存两类信息\n\n`thread-store.ts`保存 OpenUI 层的数据：\n\n- 线程元信息\n- 对话 transcript\n\n`eve-chat.ts`保存 Eve 层的数据：\n\n- Eve session ID\n- continuation token\n- stream index\n\n二者使用同一个 thread ID 关联。\n\n因此，用户重新打开某个线程时，可以同时恢复：\n\n- 前端可见聊天记录\n- 服务端 Eve 对话上下文\n- 流式续传位置\n\n---\n\n## 安全与认证\n\n示例默认使用匿名认证，主要面向本地开发。\n\n如果要对外发布，需要将：\n\n```text\nagent/channels/eve.ts\n```\n\n中的`none ()`替换为带认证能力的 Eve channel，避免未授权访问 Agent 会话接口。\n\n---\n\n## 运行方式\n\n### 环境要求\n\nEve 0.11 要求：\n\n```text\nNode.js 24\n```\n\n### 启动步骤\n\n```bash\npnpm install\ncd examples/harnesses/vercel-eve\ncp .env.example .env\n# 编辑 .env，设置 LLM_API_KEY\npnpm dev\n```\n\n然后打开：\n\n```text\nhttp://localhost:3000\n```\n\n即可开始对话。\n\n也支持 OpenAI 风格变量：\n\n```text\nOPENAI_API_KEY\nOPENAI_MODEL\nOPENAI_BASE_URL\n```\n\n---\n\n## 产品视角总结\n\n### 这套方案解决了什么问题\n\n它解决的是**Agent 原生协议与生成式 UI 渲染之间的适配问题**。\n\nEve 负责：\n\n- Agent 会话\n- 多轮上下文\n- 工具调用\n- 流式响应\n- 恢复机制\n\nOpenUI 负责：\n\n- UI 渲染\n- 组件库约束\n- 生成式界面表达\n- 聊天体验\n\n中间通过 AG-UI 做事件协议转换。\n\n### 本质价值\n\n这是一个典型的**Agent Runtime 与 Generative UI Renderer 解耦架构**：\n\n- Agent 不需要重写\n- UI 不绑定特定模型\n- 工具调用可视化\n- 对话可恢复\n- 多端 UI 渲染有标准协议承接\n\n对于构建 AI 应用来说，它提供了一种更工程化、更可扩展的 Agent UI 集成范式。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1782973617939,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6c427dc0cddf747bfd46ffbb359394d8fb5bb3838e5c800e1a1cb4fb3c5c6e8a",
+  "refs": {
+    "sessionId": "1782973618009_tpgxcq4k"
+  },
+  "revisionId": "sha256:50c726d1827cd342c9eabdcf0ac2a3bc81ca50383a3245f6dfd7993e2bf793a3",
+  "schemaVersion": 1,
+  "updatedAt": 1782973617939
+}

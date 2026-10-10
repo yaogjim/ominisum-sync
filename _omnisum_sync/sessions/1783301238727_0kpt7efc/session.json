@@ -1,0 +1,63 @@
+{
+  "createdAt": 1783301238727,
+  "entityType": "session",
+  "id": "1783301238727_0kpt7efc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确有兴趣，先查找图片中的书名再判断是否值得阅读",
+      "若无法获取书名或书评细节，可直接删除该条记录"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783301274800,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 1,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 1,
+      "relevance": 2,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "一条缺少信息的书籍推荐",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量极低，没有可复用知识点或可执行行动，长期保留价值不足。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "三十岁、四十岁以上人群可能是该书目标读者",
+      "作者认为该书与个人实践感悟有共鸣"
+    ],
+    "oneHighValuePoint": "提示某本书可能与中年阶段的实践感悟有关，但缺少具体书名和内容支撑。",
+    "oneLineReview": "只有情绪化推荐，没有实质信息，几乎不具备留存价值。",
+    "primaryCategory": "书籍推荐",
+    "rating": "E",
+    "rejectReason": "内容仅表达推荐和个人共鸣，缺少书名、核心观点、适读理由、案例或方法论，无法形成有效参考。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "个人感想",
+      "社交媒体动态"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该内容是一条社交媒体书籍推荐，仅表示作者认为三十岁、四十岁以上人群可以阅读，并称书中内容与个人实践感悟产生共鸣，但未提供书名、观点、依据或具体价值。",
+    "tags": [
+      "书籍推荐",
+      "低信息量",
+      "个人共鸣"
+    ],
+    "title": "x.com/HappyQQ_AI/status/2073592267236098151/photo/1",
+    "totalScore": 13,
+    "url": "https://x.com/HappyQQ_AI/status/2073592267236098151/photo/1"
+  },
+  "payloadHash": "sha256:c5935480e2c2aa1048e5c1d158fedf59727df9c7cad65c2dd6e9895ce1153e79",
+  "refs": {},
+  "revisionId": "sha256:9eb8c023fa07879d1844794e85f604eca77bf1a925ee9e0daf26785519918664",
+  "schemaVersion": 1,
+  "updatedAt": 1783301274943
+}

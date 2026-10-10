@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783556327564,
+  "entityType": "message",
+  "id": "1783556327563_b9actfpb",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Shadcn转向Base UI\n\n**评级**: D (30分)  |  **深度阅读**: 否  |  **建议操作**: 删除\n\n**主类别**: 前端开发\n**次类别**: UI组件库, 技术动态\n**标签**: #shadcn/ui #Base UI #Radix UI\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 3 | 10% |\n| 新颖性 | 4 | 10% |\n| 相关性 | 5 | 20% |\n| 可操作性 | 3 | 15% |\n| 方法论价值 | 1 | 15% |\n| 可迁移性 | 2 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 3 | 10% |\n\n**一句话点评**: 适合快速扫一眼了解前端组件库趋势，但不具备独立收藏价值。\n**核心高价值点**: shadcn/ui 已开始将 Base UI 作为默认底层组件库，可能影响后续前端组件选型。\n\n### 摘要\n内容主要是 X 上关于 shadcn/ui 将 Base UI 设为默认底层组件库的动态转述，并提到 TanStarter 也选择 Base UI，缺乏展开分析。\n\n### 知识要点\n- shadcn/ui 最初基于 Radix UI 构建\n- Base UI 正在获得更多前端生态项目采用\n\n### 行动项\n- 如正在使用 shadcn/ui，可关注后续 Base UI 迁移影响\n- 无需归档，若需要只记录该技术趋势即可\n\n### 存档判定\n归档: 否\n不推荐: 内容只是社交媒体动态摘录，信息量很低，缺乏技术细节、迁移建议和论证支撑。\n删除: 是\n留存决策: 短期了解动态后可删除\n删除原因: 仅包含一条组件库默认选择变化的简短消息，长期参考价值有限，不值得单独保留。",
+    "role": "assistant",
+    "timestamp": 1783556327564,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:57ede5bd95ec4848ead5c1415eaf741f1c598f1168a5636e8d485ed9cc8571e4",
+  "refs": {
+    "sessionId": "1783556297121_vnqj0y59"
+  },
+  "revisionId": "sha256:14b3834e35b416b810bf5663ce0e41329c52adb730a080c899f830c2d2862ae8",
+  "schemaVersion": 1,
+  "updatedAt": 1783556327564
+}

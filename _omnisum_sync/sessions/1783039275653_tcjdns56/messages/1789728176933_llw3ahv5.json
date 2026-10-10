@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728176931,
+  "entityType": "message",
+  "id": "1789728176933_llw3ahv5",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Wayfinder：用“动态决策地图”组织 AI 完成超大复杂任务\n\nMatt Pocock 正在开发 `/wayfinder`：它不是让 AI 一次性生成完整方案，而是把大型任务拆成持续的提问、研究和原型验证，并将结果汇入一张动态更新的中心地图。其目标是让人类在保持控制权的同时，协调多个 AI 会话逐步消除不确定性。\n\n## 地图随认知扩张，也随问题解决而收缩\n\nWayfinder 会识别当前的“决策前沿”和信息盲区，再根据问题类型建议下一步行动：\n\n- 需求或取舍不清：通过追问澄清；\n- 缺少外部事实：启动资料研究；\n- 设计可行性未知：制作一次性原型验证。\n\n新发现会让地图扩展，已解决的问题则从地图中收敛。Pocock 用它连续四天规划一门课程，组织了近 100 次独立的讨论、原型和研究会话；中心地图可放在 GitHub、Linear 或本地文件等任务系统中。\n\n## 从单次问答升级为完整工程流程\n\n它被定位为 `/grill-me` 的下一代形态，并可能取代 `/grill-with-docs` 的上层编排角色。规划中的工作流是：\n\n`/wayfinder → /to-spec → /to-tickets → /implement → /code-review`\n\n配套的后台代理与 handoff 机制，还可把当前上下文压缩为摘要，交给新会话继续执行，避免重复已记录在规格、ADR、工单和代码中的内容。\n\n## 核心价值是可控编排，而非更强的“一键生成”\n\nPocock 的技能体系强调模块化、可组合和模型无关，反对由单一框架接管全过程。Wayfinder 体现的方向是：复杂 AI 工作的瓶颈不只是生成能力，更在于如何保存上下文、显式管理未知问题，并用快速反馈持续校准。该工具仍处于开发阶段，其效果目前主要来自作者自己的实践，尚缺少更广泛验证。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728176931,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2cf15bc1d7334cd8b8403c73f0093f6a99e31c20d9c799b8a15d8ab0b40805fc",
+  "refs": {
+    "sessionId": "1783039275653_tcjdns56"
+  },
+  "revisionId": "sha256:6902fb3bc32eeada6bbf93e71b788541bc9369cba232a186664388e688b569d4",
+  "schemaVersion": 1,
+  "updatedAt": 1789728176931
+}

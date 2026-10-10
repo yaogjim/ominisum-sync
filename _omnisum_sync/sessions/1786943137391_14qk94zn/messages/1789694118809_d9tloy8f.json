@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694118808,
+  "entityType": "message",
+  "id": "1789694118809_d9tloy8f",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nDeepSeek 发布并开源了 Harness 开发者预览版：它把模型、工具、记忆、沙箱、调度和 UI 等 Agent 能力全部做成可替换插件，让开发者通过配置自由组合智能体。\n\n## 关键内容\n\n- **插件化架构**：Cordis 内核只管理插件加载、卸载和依赖关系，具体能力由插件提供，开发者通常无需修改 Harness 源码。\n- **运行过程可追踪**：系统会以仅追加日志记录提示词、模型推理信息、工具调用、子 Agent 调度及上下文注入，并支持恢复、分叉、检索和回放。\n- **提供四种模式**：标准模式功能完整；PTC 模式用 TypeScript 代码组合多步工具调用；极简模式用于基准测试；创造模式用于制作自定义 Agent 配置。\n- **目前仍是预览版**：可通过 `npx @deepseek-ai/dsh web` 体验或从 GitHub 安装，但核心插件和 API 还会继续变化。\n\n## 通俗解读\n\n它更像“Agent 的乐高底座”，而不是一个新模型：模型负责思考，Harness 负责接工具、保存过程并让任务持续运行。**Agent 基础设施或插件开发者值得继续看文档和源码**；普通用户浏览此页即可，因为原文主要是产品概览，没有提供 API 细节、性能测试或稳定性说明。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694118808,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4d679da285e96174ae14373ad50828414d879fb7649dd80a7a626e727bd7775c",
+  "refs": {
+    "sessionId": "1786943137391_14qk94zn"
+  },
+  "revisionId": "sha256:f925ede11d2cb9abfb5b0bc542f5925565bf2b2fd30cde0cf6065dbf83d9951b",
+  "schemaVersion": 1,
+  "updatedAt": 1789694118808
+}

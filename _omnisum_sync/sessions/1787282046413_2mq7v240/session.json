@@ -1,0 +1,85 @@
+{
+  "createdAt": 1787282046413,
+  "entityType": "session",
+  "id": "1787282046413_2mq7v240",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用登录逻辑、一个核心UI和一个数据接口构建最小迁移原型。",
+      "对比现有客户端与Harness方案在权限、记忆、存储、插件兼容性和维护成本上的表现。",
+      "在停止原有开发前验证生产稳定性、安全边界、迁移成本和对上游项目的依赖风险。"
+    ],
+    "archiveReason": "",
+    "byline": "Tison",
+    "classifiedAt": 1787294892049,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "DeepSeek Harness迁移决策",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "note.mowen.cn",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://priv-sdn-001.mowen.cn/mo/file/meta/78/80/52/2089531928347394049.png?Expires=1787877982&OSSAccessKeyId=LTAI5tE16jzdfWCPVBmyB5Nn&Signature=IB598wzhoWq%2FIoZeDhlPt5fhDFI%3D&response-expires=Fri%2C%2028%20Aug%202026%2000%3A46%3A22%20GMT&x-oss-process=image%2Fresize%2Cw_1200",
+        "role": "hero",
+        "score": 70,
+        "src": "https://priv-sdn-001.mowen.cn/mo/file/meta/78/80/52/2089531928347394049.png?Expires=1787877982&OSSAccessKeyId=LTAI5tE16jzdfWCPVBmyB5Nn&Signature=IB598wzhoWq%2FIoZeDhlPt5fhDFI%3D&response-expires=Fri%2C%2028%20Aug%202026%2000%3A46%3A22%20GMT&x-oss-process=image%2Fresize%2Cw_1200",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "Harness可被理解为组合Agent循环、工具调用、权限控制、记忆与持久化能力的智能体运行时。",
+      "将UI和业务能力插件化，可以让用户或生态开发者基于既有数据接口扩展应用。",
+      "产品团队可保留自身数据、身份和业务接口，把通用Agent基础设施交给开源底座承担。"
+    ],
+    "metaAuthor": "Tison",
+    "oneHighValuePoint": "最值得保留的视角是：不应只把Harness视为AI编程工具，而应将其评估为可替代大量AI应用基础设施的插件化运行时。",
+    "oneLineReview": "与AI Agent产品架构高度相关，核心判断有启发，但结论远强于证据，适合作为迁移假设而非决策依据。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "B",
+    "rejectReason": "结论主要来自个人短期试用和架构想象，缺少基准测试、迁移成本、安全风险及生产环境验证。",
+    "retentionDecision": "选择性浏览，将核心判断作为架构假设验证，无需长期存档",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "产品开发",
+      "技术架构决策"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章将Harness解释为承载智能体的运行时底座，强调其把UI、Agent、工具、权限、记忆和存储插件化。作者据个人试用判断应停止自研客户端并迁移，但未提供测试数据、迁移成本或风险验证。",
+    "tags": [
+      "DeepSeek Harness",
+      "Agent运行时",
+      "插件化架构",
+      "客户端迁移",
+      "自研替代"
+    ],
+    "title": "体验完DeepSeek Harness，我打算放弃开发了两年 · 墨问",
+    "totalScore": 55,
+    "url": "https://note.mowen.cn/detail/hfGUw-FydUOU2kaG2Dxm_"
+  },
+  "payloadHash": "sha256:eea852b184ef1af9dd618b91d230b1b1c96b07d9ab6801870ff51c47de6c9fe5",
+  "refs": {},
+  "revisionId": "sha256:866d5d8792ed39be5de92c6b5d40d5af5175cc975b9c21a57e7e14fcc81ab405",
+  "schemaVersion": 1,
+  "updatedAt": 1789727974548
+}

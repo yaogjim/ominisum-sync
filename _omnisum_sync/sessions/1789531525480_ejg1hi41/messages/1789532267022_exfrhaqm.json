@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789532256647,
+  "entityType": "message",
+  "id": "1789532267022_exfrhaqm",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nFugleramme 是一个开源“电子鸟类画框”：用麦克风和 BirdNET-Go 在本地识别附近鸟鸣，再把当前听到的鸟以 19 世纪自然史插画呈现在树莓派墨水屏上。\n\n## 关键内容\n\n- 系统会轮询 BirdNET-Go 的识别结果，将鸟种匹配到插画，并按鸟的体重调整大小、自动排版；只有鸟种变化时才刷新墨水屏，也可通过网页展示和管理。\n- 项目收录 **800 多个手工抠图、覆盖 400 多种鸟**。原画来自公版资料，并非 AI 生成，但部分经过 AI 修饰。\n- 推荐硬件为 Raspberry Pi 5、13.3 英寸 Inky Impression 彩色墨水屏、麦克风和 A4 画框；也支持 Docker、普通 Linux 设备，或连接网络中已有的 BirdNET-Go。\n- 插画目前对北欧、英国及德国鸟种覆盖较好，其他地区较弱。代码采用 MIT 许可，但单独安装的 BirdNET-Go 检测组件为非商业许可。\n\n## 通俗解读\n\n它不是摄像头拍鸟，而是“听声认鸟”后显示对应古典插画；所谓“完全本地 AI”，是指识别无需把录音上传云端。适合喜欢观鸟、电子制作和复古插画的人细读安装文档；若只想买来即用，搭建成本和区域鸟种覆盖需要先考虑。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789532256647,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:1ba97c1c32fc134c574b7e7014dcec82e3466f8a5b97656baa78e1a6011b48ce",
+  "refs": {
+    "sessionId": "1789531525480_ejg1hi41"
+  },
+  "revisionId": "sha256:47eba921b8ad6e400d141a2e4bb06a39601acc5126d6ea5c8bbc57a61819414f",
+  "schemaVersion": 1,
+  "updatedAt": 1789532256647
+}

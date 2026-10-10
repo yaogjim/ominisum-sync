@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785376756156,
+  "entityType": "session",
+  "id": "1785376756156_gyainzfy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "核对当前账号套餐是否具备云端代码执行功能的访问资格。",
+      "功能开放后，用包含结构化数据的资料测试其代码执行、来源引用和分析准确性。",
+      "评估Gemini应用与独立笔记本之间的同步是否适合现有研究工作流。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1785402776693,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 6,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 3
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "Gemini Notebook更名与能力升级",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "blog.google",
+    "favicon": "https://blog.google/favicon.ico",
+    "knowledgePoints": [
+      "NotebookLM更名为Gemini Notebook，但仍作为独立研究工具运行。",
+      "笔记本可通过云计算环境原生执行代码，并基于导入来源开展数据分析。",
+      "笔记本已支持与Gemini应用同步，后续还计划接入搜索的AI Mode。"
+    ],
+    "oneHighValuePoint": "每个笔记本将获得可原生编写和执行代码的云计算环境，使基于资料来源的数据分析成为产品内置能力。",
+    "oneLineReview": "与AI研究和知识管理高度相关，但目前只是简短产品公告，长期方法论价值有限。",
+    "primaryCategory": "AI产品更新",
+    "rating": "C",
+    "rejectReason": "内容主要是更名及功能发布信息，缺少技术细节、使用案例和可复用方法。",
+    "retentionDecision": "速览产品变更与可用范围，待功能正式普及时再评估",
+    "secondaryCategories": [
+      "知识管理",
+      "AI研究工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "谷歌宣布将NotebookLM更名为Gemini Notebook，产品仍独立运行，并扩展至Gemini与搜索生态；同时加入可执行代码的安全云计算环境，支持基于用户来源的复杂数据分析。",
+    "tags": [
+      "Gemini Notebook",
+      "知识管理",
+      "代码执行",
+      "数据分析",
+      "Google生态"
+    ],
+    "title": "NotebookLM is now Gemini Notebook",
+    "totalScore": 52,
+    "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"
+  },
+  "payloadHash": "sha256:388e6568ead9545dd602ace2e20d7a2c199884764c2a81b9e619b2139b598b11",
+  "refs": {},
+  "revisionId": "sha256:af1baf2e6f05ca80c4055025404257775fe6beb3afef2569c14cdc2e8533c7b0",
+  "schemaVersion": 1,
+  "updatedAt": 1785402776822
+}

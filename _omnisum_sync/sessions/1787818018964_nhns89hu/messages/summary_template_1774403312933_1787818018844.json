@@ -1,0 +1,25 @@
+{
+  "createdAt": 1787818018844,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1787818018844",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# omg.dev：用手机统一操控本地 AI 编程代理\n\n## 一句话总结\n\n**omg.dev 是一个开源、可自托管的 AI 编程代理控制平面**：让 Claude Code、Codex、Cursor、OpenCode、Grok、Copilot、Pi 等代理在自己的电脑或服务器上持续运行，并通过 Web/PWA 在手机端统一查看、回复和管理。\n\n## 它解决什么问题\n\n单个代理可以直接在终端运行，但多代理并行时会出现：\n\n- 关闭电脑或断开 SSH 后，会话容易中断。\n- 难以判断哪个代理正在运行、卡住或等待授权。\n- 必须守在电脑前响应提示。\n- 不同代理的会话、模型和任务缺少统一入口。\n\nomg.dev 用**tmux 持久化会话 + Web 控制台**，把本地机器变成一个私人 AI Agent 工作站。\n\n## 核心能力\n\n### 统一管理多种代理\n\n支持 Claude Code、Codex、OpenCode、Jcode、Cursor、Grok、fx、GitHub Copilot 和 Pi，可在同一界面中：\n\n- 创建、恢复和关闭会话。\n- 切换代理与模型。\n- 查看实时输出并响应权限请求。\n- 按项目管理并行任务。\n\n### 会话持续运行\n\n代理运行在长期存活的 tmux 会话中。即使浏览器关闭、SSH 断开或笔记本合盖，会话仍可继续执行，重新连接后能恢复现场。\n\n### 手机远程控制\n\nWeb UI 可安装为 PWA，用户能够在手机上：\n\n- 查看代理进度。\n- 回复问题和授权提示。\n- 管理项目与会话。\n- 查看图片、视频、HTML 仪表盘及最终交付成果。\n\n### 多代理协作与自动化\n\n通过 MCP 工具，主代理可以创建可追踪的子代理，并：\n\n- 继承父任务和用户上下文。\n- 实时汇报进度和最终状态。\n- 支持最多四层嵌套委派。\n- 执行定时仓库、GitHub、模型和安全检查。\n\n## 产品与技术定位\n\n### 本地优先，自带账号\n\nomg.dev 不提供模型，也不转售 Token，而是调用用户已经安装、认证或付费订阅的代理 CLI。代码、仓库、凭据和执行环境都留在用户自己的机器上。\n\n### 开源自托管，也提供云版本\n\n- **本地版**：适合直接操作现有代码仓库和已登录的 CLI，永久免费且不需要 omg.dev 账号。\n- **托管版**：无需配置服务器，可快速启动云端工作区，但需要重新配置代理账号和仓库。\n\n### 轻量安装\n\n安装包按操作系统和 CPU 架构预构建，体积从过去约**2GB 降至约 43MB**，避免在用户机器上重新解析和编译依赖。\n\n```bash\nbun install --global @omg-dev/cli\nomg computer setup\n```\n\n默认访问地址：\n\n```text\nhttp://localhost:8766\n```\n\n## 安全模型\n\nomg.dev 默认只绑定本机回环地址，控制 API **没有内置认证**。这是基于 “仅本机或可信私有网络访问” 的设计，而不是面向公网的 SaaS 安全模型。\n\n推荐使用**Tailscale**在自己的设备间建立 HTTPS 私有访问：\n\n```bash\nOMG_TAILSCALE_SERVE=1 omg setup\n```\n\n> 不能在没有额外认证和安全防护的情况下，将服务直接暴露到公共互联网。由于代理拥有 Shell 权限，一旦控制面泄露，风险等同于主机被远程控制。\n\n## 产品价值判断\n\nomg.dev 的核心价值不是 “又一个 AI 编程代理”，而是成为不同代理之上的**统一运行与调度层**：\n\n- 向下兼容多种现有 CLI 和用户订阅。\n- 向上提供会话管理、移动控制、任务委派和成果展示。\n- 避免代码迁移到远程沙箱，降低环境同步成本。\n- 适合同时运行多个代理的高级开发者、小型团队和自托管用户。\n\n## 主要局限\n\n- 需要自行维护 Linux/macOS 主机及相关 CLI。\n- OAuth 类代理通常仍需完成一次终端或浏览器登录。\n- 本地服务没有认证，远程访问必须正确配置可信网络。\n- 它解决的是代理的运行与控制问题，不负责提供模型能力和调用额度。\n- 对普通用户而言，安装、网络与权限配置仍有一定门槛。\n\n## 总结\n\nomg.dev 可以理解为**“AI 编程代理版的本地任务控制中心”**。它以本地执行、会话持久化、多代理统一管理和手机远程操控为核心，尤其适合已经深度使用 Claude Code、Codex 等工具，并希望让多个代理长期并行工作的用户。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1787818018844,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c14e00edb149a8dcc9ba4e2626b3081228df846be906629e1f4d024641f14ba9",
+  "refs": {
+    "sessionId": "1787818018964_nhns89hu"
+  },
+  "revisionId": "sha256:8a42a34eda8953563312c1b02753cbdc744404c9b07852d81bc59b16a6e0b27c",
+  "schemaVersion": 1,
+  "updatedAt": 1787818018844
+}

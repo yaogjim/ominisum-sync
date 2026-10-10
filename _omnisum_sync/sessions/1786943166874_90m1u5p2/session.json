@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943166874,
+  "entityType": "session",
+  "id": "1786943166874_90m1u5p2",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在配置页设置摄像头地址、位置与道路朝向，并取得摄像头ID。",
+      "根据现有硬件选择旧手机、IP摄像头轻量接入或桌面全本地检测方案。",
+      "采用桌面方案前核验安装包SHA-256，并确认常开电脑、存储空间及可选GPU条件。"
+    ],
+    "archiveReason": "选择性数据保留、本地推理和多层硬件接入方案对隐私型视觉产品设计具有复用价值。",
+    "classifiedAt": 1786943209139,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "SparrowMap隐私车辆监测网络",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "sparrowmap.com",
+    "favicon": "https://sparrowmap.com/favicon.ico",
+    "knowledgePoints": [
+      "将车辆检测放在手机或本地电脑执行，可避免把连续原始视频上传到服务器。",
+      "系统按对象实施差异化留存：政府车辆照片和车牌被保存，其他车辆的可识别车牌信息在设备端销毁。",
+      "部署方案按资源分层：旧手机浏览器、RTSP或ONVIF摄像头轻量接入，以及约2.5GB模型的桌面全本地检测。"
+    ],
+    "oneHighValuePoint": "最值得保留的是在采集端销毁无关敏感信息、仅传输必要检测结果的隐私最小化架构。",
+    "oneLineReview": "架构和部署路径较具体，但隐私、安全及识别效果主要停留在项目方陈述，缺少数据、威胁模型、法律分析与独立审计。",
+    "primaryCategory": "隐私保护计算机视觉",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性存档，重点保留其边缘处理与分级部署思路",
+    "secondaryCategories": [
+      "边缘计算",
+      "产品技术架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍SparrowMap众包车辆监测网络，通过设备端处理和选择性留存保护普通车辆信息，并提供旧手机、现有IP摄像头及常开电脑三种接入方案。",
+    "tags": [
+      "边缘计算",
+      "车辆识别",
+      "隐私保护",
+      "众包地图",
+      "本地推理"
+    ],
+    "title": "SparrowMap",
+    "totalScore": 67,
+    "url": "https://sparrowmap.com/"
+  },
+  "payloadHash": "sha256:1c1c8eb40adae9f0b48203ab7492c17f674433d6c7b3fda457610837706e863c",
+  "refs": {},
+  "revisionId": "sha256:01a5c514092f060310ea86bb9291569a72b9d3000b3520ae80ee34be767b5bfb",
+  "schemaVersion": 1,
+  "updatedAt": 1789728056841
+}

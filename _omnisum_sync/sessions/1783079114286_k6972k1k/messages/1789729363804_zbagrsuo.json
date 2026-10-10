@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729363804,
+  "entityType": "message",
+  "id": "1789729363804_zbagrsuo",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 本地 Agent 的重点正从“最强模型”转向“任务编排”\n\n作者搭建了一套由 Hermes 统一调度的本地多 Agent 系统：不同模型承担其擅长的任务，并通过上下文压缩和工具调用协同工作。实践后的核心感受是，模型能力固然重要，但真正影响效率和成本的，已变成任务如何拆分、上下文如何管理，以及不同“数字员工”和外部工具如何组合。\n\n## 多模型按能力分工\n\n- GPT 5.5 负责复杂开发任务。\n- DeepSeek V4 Pro 处理会议纪要、说明文档等文本工作。\n- Claude Code 作为代码工具接入 Hermes，可被其他 Agent 直接调用。\n\n作者还在对比两种开发方式：让 DeepSeek Agent 调用 Claude Code 修改代码，或由 GPT 5.5 直接完成，以观察不同组合的实际效果。\n\n## 上下文压缩缓解长任务瓶颈\n\n单独使用 GPT 5.5 时，上下文很容易超限，导致工作流不顺。作者因此让 DeepSeek 专门为 GPT 5.5 压缩上下文，明显改善了连续处理复杂任务的体验。这说明 Agent 系统的瓶颈不只是模型推理能力，还包括信息筛选、传递和保留。\n\n## 会议纪要依赖项目背景，而非只做转写摘要\n\n会议流程是先用飞书妙记录音并生成全文，再交给 Agent。生成纪要前，Agent 会先读取整个项目的背景文档，然后结合会议原文输出结果。相比直接总结录音文本，这种做法能让纪要更贴近项目语境。\n\n整体上，这套系统仍处于测试阶段，但已体现出一个趋势：AI 应用的竞争焦点正从单模型排名，转向多模型协作的质量、稳定性与成本效率。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729363804,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:37d723a398ca9a9189dbf7297654738947332140f2dace47ef9510e75ab1809e",
+  "refs": {
+    "sessionId": "1783079114286_k6972k1k"
+  },
+  "revisionId": "sha256:19be082aa9b3d5c6883035e2705d1316c014121ace48a6eafbc305849b532045",
+  "schemaVersion": 1,
+  "updatedAt": 1789729363804
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694290896,
+  "entityType": "message",
+  "id": "1789694290897_kpvsd9nj",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章认为，多个 Agent 只有在具备长期分工、直接协作、统一收口和人工治理后，才算真正的“Agent Team”；CodexLoom 是作者为此设计的一套协作工具。\n\n## 关键内容\n\n- **演化原因**：一次性任务反复出现，会催生长期 Agent；职责不断扩张又会造成上下文混乱和过载，因此需要按 Domain（长期责任领域）拆分。\n- **协作不能只靠人中转**：每个 Agent 应有明确的身份、职责和停止边界，并能查询其他 Agent、通过 Message 直接交接工作，否则人仍是唯一的路由器和瓶颈。\n- **跨 Agent 工作需要收口**：Message 负责点对点沟通，Topic 则由唯一 Responsible 维护当前进度、等待事项、证据和最终结果；Human 只在事实、选择、审核或授权处介入。\n- **团队必须可治理**：Overview 用活动、等待、积压等信号帮助人发现问题，但信号不等于诊断；Agent 对外沟通时，还需分别管理身份、场景角色、权限与发送记录。\n\n## 通俗解读\n\n这不是“多开几个 AI 窗口”，而是把原本记在人脑中的“谁负责、交给谁、进展如何、谁来拍板”写成团队可使用的结构。人的角色由逐步传话，转为定方向、审关键结果和管权限。作者也反复强调：消息送达不代表结果正确，Topic 完结不代表现实任务完成，外发回执更不代表对方接受。\n\n**是否值得细读：**正在同时维护多个长期 Agent、已被反复搬运上下文拖累的人值得读；只使用单个 Agent 完成临时任务者，先读第 1、7 节即可。文章实践性强，但也带有明显的 CodexLoom 产品介绍属性。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694290896,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0f6b1b8740a4eebabb4d751fd034a5e6e205b4371061da94cd678afc7477af7c",
+  "refs": {
+    "sessionId": "1785484156012_nbmiqu66"
+  },
+  "revisionId": "sha256:1c350fe39bd0a05b39ec1282854b8ab6fe5b29afe521be8086f26be3f5a2d4dc",
+  "schemaVersion": 1,
+  "updatedAt": 1789694290896
+}

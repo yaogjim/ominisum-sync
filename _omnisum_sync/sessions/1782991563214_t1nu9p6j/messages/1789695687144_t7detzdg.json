@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695687144,
+  "entityType": "message",
+  "id": "1789695687144_t7detzdg",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章介绍 Deep Agents 的“动态子代理”：主代理不再逐个调用子代理，而是编写短代码，批量、并行或按条件调度它们，从而更可靠地处理大规模复杂任务。\n\n## 关键内容\n\n- 普通调用适合少量任务；面对数百个文件、页面或多阶段流程时，模型可能漏项，且大量中间结果会挤占主上下文。\n- 动态子代理通过 JavaScript 循环、分支、`Promise.all` 等结构调用 `task()`。例如给300页文档逐页分配摘要任务，代码能结构性保证每页都被处理。\n- 它支持分类分流、扇出后汇总、独立复核、生成后筛选、淘汰赛和循环扫描等模式，可用于代码审查、文档分析、安全审计等。\n- Deep Agents 可通过代码解释器启用；终端工具 dcode 已内置支持。作者认为，这比靠模型连续发起工具调用更稳定，但文中主要是方案介绍与案例展示，未提供系统性性能数据。\n\n## 通俗解读\n\n核心变化是把“怎么分派工作”交给代码，把“需要判断的工作”交给模型。就像主管不再口头逐一安排300个人，而是先写好排班规则，由系统确保每项任务都被分配。\n\n**是否值得细读：**如果你在开发多代理、代码审查或批量分析流程，值得细读实现方式和六种编排模式；若只想了解概念，掌握“用代码调度子代理，提高覆盖与流程可靠性”即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695687144,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:aacf2495d1aaecc3e2eb40fa15d399cfe2aff139f7b9120247be9be8a519c611",
+  "refs": {
+    "sessionId": "1782991563214_t1nu9p6j"
+  },
+  "revisionId": "sha256:db86bde00bead58879e8698bd983976dd364c68f185c0db5342e01aa67c6c153",
+  "schemaVersion": 1,
+  "updatedAt": 1789695687144
+}

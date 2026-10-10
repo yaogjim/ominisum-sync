@@ -1,0 +1,24 @@
+{
+  "createdAt": 1788921156508,
+  "entityType": "message",
+  "id": "1788921419575_4g52xssb",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# DaVinci Resolve 21.1：AI 助手深度进入专业视频工作流\n\n## 核心概述\n\nBlackmagic Design 发布 DaVinci Resolve 21.1，重点是接入 Claude、Claude Code 和 ChatGPT Codex，让用户通过自然语言完成素材整理、项目分析、批量渲染和精彩片段剪辑等重复工作。\n\n同时，新版本增强了相机格式兼容、多机位剪辑、HDR 调色、Fusion 图形制作及云端协作能力，并新增或优化了 100 多项功能。\n\n## 主要更新\n\n### 1. AI 助手：从建议工具变成执行工具\n\n用户可以直接让 AI：\n\n- 分析项目、整理素材与调整设置\n- 从长视频中自动制作精彩集锦\n- 删除不需要的片段\n- 批量渲染和输出成片\n\n其核心价值是减少机械操作，让创作者把时间集中在内容与创意决策上。\n\n### 2. 剪辑与多机位工作流升级\n\n- 最多支持 **25 个多机位角度**的快捷切换\n- 轨道快捷操作扩展至 **32 条轨道**\n- 可按时间码间隙拆分多机位素材，加快同步\n- 音频波形可自动适配轨道高度\n- 检视器支持预设，减少跨项目重复配置\n- 标记列表可导出为 PDF，方便与客户和团队共享\n\n### 3. 照片、相机与调色能力扩展\n\n照片页面新增对 Fujifilm GFX/X、Leica SL、Sony A7R V1 等相机格式的原生支持，并可通过 DaVinci Resolve 调色面板直接调整图片。\n\n色彩方面新增或增强：\n\n- GoPro Log、Leica L-Log、DJI D-Gamut2/D-Log2 等色彩空间\n- Dolby Vision、HDR10+、HDR Vivid 的独立调色版本\n- 不同交付版本可分别设置画幅、缓存和 HDR 参数\n- 静态图片的天空替换能力\n\n### 4. Fusion 图形与特效增强\n\n新增超过 **25 个 Krokodove 工具**，主要覆盖：\n\n- 3D 顶点连接、管线路径和高度场变形\n- 3D 区域化特效\n- 多边形、矩形、星形等基础图形生成\n- 更高级的边缘控制和图形设计\n\nFusion 宏编辑器也支持直接读取 DRFX 模板、分类保存、缩略图管理及同步更新。\n\n### 5. 协作、性能与自动化\n\n- Blackmagic Cloud Presentations 新增字幕、批注共享和评论回复\n- Apple Silicon 支持硬件加速 HEIC 解码\n- HTJ2K 支持 GPU 加速解码\n- Windows 支持 NVIDIA RTX Spark 系统\n- 新增 20 个脚本 API，进一步提升流程自动化能力\n\n## 产品价值\n\nDaVinci Resolve 21.1 的方向十分明确：**以 AI 降低专业创作工具的操作成本，同时继续强化从素材管理、剪辑、调色、特效到协作交付的一体化能力。**\n\n这不是单纯增加 AI 功能，而是将 AI 嵌入真实生产流程，使其能够直接执行任务，进一步提高 DaVinci Resolve 在专业内容生产平台中的竞争力。\n\n## 发布信息\n\nDaVinci Resolve 21.1 已在 Blackmagic Design 官网提供免费下载。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1788921156508,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:77433d0011fffd18eae54f1eb6511c5c3435dd9bbcd9ef0365bf4900457f24fd",
+  "refs": {
+    "sessionId": "1788921419059_274szqku"
+  },
+  "revisionId": "sha256:f0b96062c5aec8bedaa7a4b3e408ff32fdc0e5da88fcbb8c273da8a3d2caaf69",
+  "schemaVersion": 1,
+  "updatedAt": 1788921156508
+}

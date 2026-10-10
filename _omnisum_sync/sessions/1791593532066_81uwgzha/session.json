@@ -1,0 +1,62 @@
+{
+  "createdAt": 1791593532066,
+  "entityType": "session",
+  "id": "1791593532066_81uwgzha",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看Unsloth Desktop或开源仓库中对应的决策模型微调说明，确认支持模型、显存配置及基准评测细节后，再决定是否试用。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1791594652726,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "低显存本地决策模型微调方案",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "文中将Clef head微调描述为把Qwen、Gemma、Llama等语言模型转换为决策模型的途径，但未解释具体机制。",
+      "引用推文报告Qwen3.5 0.8B在三个未具名决策基准上的总体准确率由20.7%升至74.3%，使用4GB显存；该结果缺少可复核的评测条件。"
+    ],
+    "oneHighValuePoint": "提供了通过Unsloth与Clef head探索低显存决策模型微调的具体工具线索，但其资源要求和效果仍需核实。",
+    "oneLineReview": "与本地AI开发直接相关，但目前主要是产品宣传和性能声明，适合作为待验证线索而非方法资料。",
+    "primaryCategory": "AI模型微调",
+    "rating": "C",
+    "rejectReason": "缺少决策任务定义、训练步骤、基准名称和评测条件，暂不足以作为实践指南或可靠性能依据。",
+    "retentionDecision": "作为技术线索速览，核实官方实现与评测后再决定是否保留",
+    "secondaryCategories": [
+      "本地AI部署"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章宣称通过Clef head与Unsloth，可在低显存设备上将语言模型微调为决策模型，并报告准确率提升。正文提到3GB显存，引用示例使用4GB，但未提供训练配置、基准细节或可复核结果。",
+    "tags": [
+      "Unsloth",
+      "低显存微调",
+      "决策模型",
+      "Clef head"
+    ],
+    "title": "Daniel Han: We made it possible to train your own Decision model locally on just 3GB VRAM",
+    "totalScore": 50,
+    "url": "https://x.com/danielhanchen/status/2107873310327648461"
+  },
+  "payloadHash": "sha256:ca812a6b2deca38f2f3d0fddaf455fef7cdab10b042bf0f8c90c8adab4b00970",
+  "refs": {},
+  "revisionId": "sha256:f24aeddc72b0c2a6b4efd2ef7a90d21f93d6986808e23505b2fbdb35b267d096",
+  "schemaVersion": 1,
+  "updatedAt": 1791594652770
+}

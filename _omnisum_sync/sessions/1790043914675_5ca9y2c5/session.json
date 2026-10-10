@@ -1,0 +1,84 @@
+{
+  "createdAt": 1790043914675,
+  "entityType": "session",
+  "id": "1790043914675_5ca9y2c5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按文中流程复现八变量示例：将各行条件概率表转写为问题，生成概率后导入GTSAM，测试逐步加入证据时的后验变化。",
+      "在模型不熟悉的网络上评估结构恢复和概率校准，并检验参数误差对最终推理结果的影响。",
+      "复现结构搜索时预先确定边惩罚的选择规则，避免依据参考图调参后再将恢复结果当作泛化证据。"
+    ],
+    "archiveReason": "提供了模型生成局部概率、图模型复用推理的明确流程，以及结构生成方法和评估注意事项，具有可复用的技术设计价值。",
+    "byline": "Frank Dellaert",
+    "classifiedAt": 1790762342494,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Jev与图模型结合的不确定性推理",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSsxRNhWUAA2mG9?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSsxRNhWUAA2mG9?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "贝叶斯网络利用条件依赖结构分解联合分布；文中的八个二元变量对应256种联合赋值，却只需18行条件概率表进行表示。",
+      "可将每个父节点赋值组合转写为一个概率问题，批量生成条件概率表，再交由传统图模型引擎计算后验，实现知识获取与推理计算的分工。",
+      "结构生成可先询问变量对之间的两个方向及无直接边的概率，再结合无环约束和稀疏惩罚选择图；熟悉基准和事后选择惩罚参数会限制评估结论。"
+    ],
+    "oneHighValuePoint": "将模型输出的局部条件概率固化为显式图模型，可以在不追加模型调用的情况下处理多种新证据与查询，但推理可信度仍取决于图结构和概率参数的质量。",
+    "oneLineReview": "值得保留的是语言模型提供局部知识、传统引擎负责推理的实现路径，而非尚未得到充分验证的“范式转变”判断。",
+    "primaryCategory": "AI技术",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留建模流程与实验限制，作为概率推理系统的原型设计参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "概率建模",
+      "技术实现"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以八变量贝叶斯网络为例，展示用Jev生成条件概率表和候选依赖结构，再由GTSAM进行证据更新与推理。作者报告了结构恢复结果，同时承认熟悉基准、惩罚参数选择及概率校准尚未充分验证。",
+    "tags": [
+      "Jev",
+      "贝叶斯网络",
+      "条件概率表",
+      "GTSAM",
+      "概率校准"
+    ],
+    "title": "Jev + 图形模型：一次范式转变？",
+    "totalScore": 76,
+    "url": "https://x.com/fdellaert/status/2101828698756325825"
+  },
+  "payloadHash": "sha256:8ea925731d92ed8c12f8a3c45003630036cb8ec6bfcb142377fc6b1bd22d0bca",
+  "refs": {},
+  "revisionId": "sha256:899fa907c36f8d93015c9c29ed1cd902863084e91190c5ba1201c767442674b1",
+  "schemaVersion": 1,
+  "updatedAt": 1790770783723
+}

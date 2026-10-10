@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786943866391,
+  "entityType": "message",
+  "id": "1786944056681_oyxvd023",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Qwen 3.6 研讨会内容总结\n\n本文回顾了 **Qwen 3.6 前沿 AI 研讨会（2026 年 5 月 21 日）**：通过手工追踪一个 token 的处理过程，直观讲解位置编码、门控注意力和加速解码三项仍在演进的 Transformer 技术。\n\n## 1. 从成熟架构转向前沿技术\n\n- 此前的 **Gemma 4 研讨会（2026 年 5 月 7 日）**主要介绍现代 Transformer 中已经趋于稳定、广泛采用的技术。\n- 本次则聚焦仍在快速变化的部分，并沿着单个 token 的处理流程，分析三项核心技术：\n  1. **RoPE 与 YaRN 位置编码**\n  2. **门控注意力（Gated Attention）**\n  3. **推测解码与多 token 预测**\n\n## 2. 位置编码：RoPE 与 YaRN\n\n研讨会先梳理了位置编码的发展与不同实现：\n\n- 无位置编码\n- 线性位置编码\n- 正弦位置编码\n- 在输入端加入位置，或在 Query/Key 上编码位置\n- **RoPE（旋转位置编码）**\n- **YaRN（RoPE 的扩展方案）**\n\n### RoPE：用旋转表示 token 位置\n\nRoPE 会根据 token 所在位置，对注意力中的 **Query 和 Key 向量进行旋转**，使模型能够感知不同 token 之间的位置与相对距离。\n\n研讨会通过手工计算向量旋转，让这一过程从抽象公式变成可直接理解的操作。\n\n### YaRN：扩展上下文窗口\n\nYaRN 在 RoPE 基础上对位置范围进行拉伸，可将模型已经训练好的上下文窗口扩展到：\n\n- **256K token**\n- 甚至 **100 万（1M）token**\n\n其关键价值是：**无需重新训练整个模型，也能支持更长的上下文。**\n\n## 3. 门控注意力：控制注意力信息的通过量\n\nQwen 在注意力路径中加入了一个**可学习的门（gate）**：\n\n- 普通注意力机制会直接输出计算结果。\n- 门控注意力则利用模型学到的门值，决定注意力结果中有多少信息应被保留或抑制。\n\n研讨会对比了**开启门控与不使用门控时的同一注意力输出**，以展示它相对于普通 **GQA（分组查询注意力）**或 **MLA（多头潜在注意力）**的实际作用。\n\n简单来说，门控机制就像一个可学习的“流量阀门”，让模型更精细地控制注意力信息。\n\n## 4. 加速解码：减少逐 token 生成的等待\n\n传统自回归模型通常一次只生成一个 token，后面的 token 必须等待前面的结果，因此推理速度受限。本次研讨会介绍了两种加速方法。\n\n### 推测解码（Speculative Decoding）\n\n- 先由一个较小、速度更快的草稿模型提出多个候选 token。\n- 再由主模型并行验证这些候选结果。\n- 被接受的 token 可一次性加入输出，从而减少主模型逐个生成的次数。\n\n可以把它理解为：**小模型先写草稿，大模型批量审稿。**\n\n### 多 token 预测（Multi-Token Prediction）\n\n- 普通解码每一步只预测一个 token。\n- 多 token 预测尝试在一步中同时产生多个 token。\n- 目标是减少生成步骤，提高整体解码速度。\n\n两者都在解决同一问题：**突破传统自回归生成“一步一个 token”的速度瓶颈。**\n\n## 5. 核心结论\n\n本次研讨会希望参与者通过亲手完成以下过程，真正理解模型架构中的缩写与参数：\n\n- 旋转 Query/Key 向量，理解 **RoPE**\n- 拉伸位置范围，理解 **YaRN**\n- 对注意力输出加门，理解 **Gated Attention**\n- 草拟并验证 token，理解 **Speculative Decoding**\n- 一次预测多个 token，理解 **Multi-Token Prediction**\n\n掌握这些机制后，再阅读模型规格表时，就能更准确地判断：\n\n- 上下文长度是如何扩展的；\n- 注意力变体实际改变了什么；\n- 解码速度为何能够提升；\n- 哪些技术真正推动了模型能力与效率。\n\n## 6. 配套资源\n\n文章提供了本次研讨会的：\n\n- 完整录像\n- Excel 练习手册（Workbook）\n\n两项资源目前**限时免费开放**。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786943866391,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:21b72eae5481098e34a073113d2a04bbf09f5eba80151b38e400ca61298387da",
+  "refs": {
+    "sessionId": "1786943254383_ox23vyro"
+  },
+  "revisionId": "sha256:4f7ed54efb8fee445f0984e490aabc3f1b878ae07d182e4ab27cbe69748d3588",
+  "schemaVersion": 1,
+  "updatedAt": 1786943866391
+}

@@ -1,0 +1,68 @@
+{
+  "createdAt": 1782348687872,
+  "entityType": "session",
+  "id": "1782348687872_dz23vaah",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尝试在编码任务前增加一轮多模型方案评审流程。",
+      "为 AI Agent 工作流划定可自动化任务和必须人工审核任务的边界。",
+      "不要仅凭该文配置工具，需另找具体教程或文档验证实际可行性。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782348862501,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 1,
+      "information_density": 3,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "三代理框架协同使用心得",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "多代理协作前应先完成深入规划，而不是直接让代理执行。",
+      "代码、自动化、高级工作流更适合交给代理长循环执行。",
+      "文案、策略、商业判断等依赖品味和语境的任务不宜完全自动化。",
+      "可用多个模型先起草、争论和拆解方案，再由人类确定最终版本。"
+    ],
+    "oneHighValuePoint": "将 AI Agent 用于代码和自动化任务，而对营销、策略、审美类工作保持人工主导，是较实用的边界判断。",
+    "oneLineReview": "有一点人机协作判断价值，但整体更像工具使用感想，缺乏可复现细节。",
+    "primaryCategory": "AI工具与工作流",
+    "rating": "C",
+    "rejectReason": "内容主要是个人体验和观点表达，缺少具体配置细节、操作步骤、案例数据和可验证证据，热门回复相关性较低。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "智能体协作",
+      "编程自动化"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享作者同时使用 Claude Code、Codex、omp 等多个代理框架的经验，强调前期规划、模型委员会评审方案，以及区分代码自动化与营销策略等需人工品味把控的任务。",
+    "tags": [
+      "AI Agent",
+      "Claude Code",
+      "Codex",
+      "工作流自动化",
+      "人机协作"
+    ],
+    "title": "Machina: here's the exact setup i'm running to manage 3 agent harnesses at once and ship …",
+    "totalScore": 43.5,
+    "url": "https://x.com/EXM7777/status/2069416164565103076"
+  },
+  "payloadHash": "sha256:8804550b37fd6f8218b3650b4d42a0e4a6b1a12c896e4e2d76affac0ba79b859",
+  "refs": {},
+  "revisionId": "sha256:864680123af0dadf1dc35f7e3411e182ceb702fde6c33c235b191eacd93ead3a",
+  "schemaVersion": 1,
+  "updatedAt": 1782348863419
+}

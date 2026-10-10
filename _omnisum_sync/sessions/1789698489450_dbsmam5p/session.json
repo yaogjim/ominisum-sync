@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789698489450,
+  "entityType": "session",
+  "id": "1789698489450_dbsmam5p",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "下载并启动Hister服务，打开本地Web界面安装浏览器扩展。",
+      "访问测试页面后搜索其中短语，验证页面采集和全文检索链路。",
+      "需要连接AI助手时评估并配置MCP客户端，同时审查语义搜索端点的隐私风险。"
+    ],
+    "archiveReason": "提供了可直接部署的本地全文搜索工具，并支持通过MCP将个人资料索引接入AI助手。",
+    "classifiedAt": 1789698517265,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Hister本地个人全文搜索引擎",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "Hister索引网页和本地文件的实际内容，而不只是标题与URL。",
+      "系统可通过浏览器扩展自动收集页面，并从网页、终端、命令行或MCP客户端检索。",
+      "默认无遥测和强制云同步，但启用远程嵌入服务时会将文档文本发送到所配置的端点。"
+    ],
+    "oneHighValuePoint": "可通过MCP让AI助手检索由用户自行托管的网页与文件全文索引，在增强个人知识调用能力的同时保留数据控制权。",
+    "oneLineReview": "这是一个与个人知识管理和AI检索直接相关的实用工具说明，但缺少性能数据、使用案例及同类方案比较。",
+    "primaryCategory": "知识管理与个人搜索",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为个人知识检索和AI助手接入方案选择性保留",
+    "secondaryCategories": [
+      "AI工具与MCP",
+      "开源软件"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "介绍开源个人搜索引擎Hister，可在自有服务器索引访问过的网页和本地文件，支持全文及可选语义搜索，并提供网页、终端和MCP客户端及简明部署步骤。",
+    "tags": [
+      "个人搜索引擎",
+      "全文索引",
+      "本地部署",
+      "MCP",
+      "语义搜索"
+    ],
+    "title": "asciimoo/hister: Your own search engine",
+    "totalScore": 66,
+    "url": "https://github.com/asciimoo/hister"
+  },
+  "payloadHash": "sha256:03d6bf9613278219dc1c23fc5bbf97b25579455e2b38194a64602aa6938738d2",
+  "refs": {},
+  "revisionId": "sha256:f46d25cd408bdbdcb3c2f1a568967426e45a57b068395e000957148012e410b8",
+  "schemaVersion": 1,
+  "updatedAt": 1789727630392
+}

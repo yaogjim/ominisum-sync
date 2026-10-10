@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727847044,
+  "entityType": "message",
+  "id": "1789727847045_gucxoccn",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 微调小模型可在垂直场景中比通用大模型更快、更省、更可控\n\n作者以 Mac 助手 Mac-1 为例主张：在任务边界清晰、数据充足的企业环境中，微调后的 SLM（小型语言模型）可能胜过通用 LLM，同时显著降低成本，并支持本地部署。不过，其 98% 准确率仍主要来自作者自述，实际泛化能力有待验证。\n\n## 用大模型编排，小模型负责执行\n\n作者用 Codex GPT 5.5 规划训练方案并审核数据，以 DeepSeek 生成合成样本。由于没有可用的 macOS 工具数据集，团队在两天内完成了约 3 万条样本的生成、去重、验证和评估。\n\n最终采用两个 Qwen 3.5 模型：2B 模型负责分类，4B 模型负责工具调用与回复；通过 Unsloth Studio、LoRA 和 Colab Pro 的 H200 GPU 完成训练，耗时约 8 小时，总成本据称不到 200 美元。\n\n## 五轮训练将准确率从 78% 提升至 98%\n\nMac-1 的目标是控制 487 个 Mac 原生应用。首次训练后，它在 45 个类别、400 多种原生工具上的准确率达到 78%；两周内经过五轮训练提升至 98%。作者原计划发布，但因 Apple 推出后端采用 Gemini 的新版 Siri 而暂缓，现考虑重新发布或开源。\n\n## 真正机会在封闭、重复的企业任务\n\n作者认为，客服、金融、保险、销售、库存和数据录入等场景，以及文档分析、提取、翻译、合规、摘要和分类任务，都适合专用 SLM。其优势据称包括速度快 10 倍、成本低 95%，并可在企业服务器运行，避免数据外泄。\n\n需要注意的是，精心设计的测试集可能高估效果。评论者建议重点验证未见表达、软件版本变化、无效工具调用等“分布外”情况；作者回应称已进行盲测、异常调用测试，并用 Claude 模拟真实用户。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727847044,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:32390542b054cd379d3e371038910d3783e4e2599554a67f856fc8e1a0b62d49",
+  "refs": {
+    "sessionId": "1789533365020_vrih3j7h"
+  },
+  "revisionId": "sha256:b5df34a96d013bae733c746a65298dc2ecd43decb227686e4982a2cdba9aa70e",
+  "schemaVersion": 1,
+  "updatedAt": 1789727847044
+}

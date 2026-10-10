@@ -1,0 +1,68 @@
+{
+  "createdAt": 1781783003716,
+  "entityType": "session",
+  "id": "1781783003716_hozpkx5j",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注AI投资，可进一步查阅Cerebras、Groq、Tenstorrent等推理芯片公司的技术路线对比。",
+      "验证文中关键事实，如OpenAI订单、百度投资时间线、Cerebras性能指标和商业化进展。",
+      "将“非共识但长期趋势明确”的判断框架用于筛选机器人、推理芯片等早期方向。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781783241322,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Cerebras早期投资复盘",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Cerebras采用wafer-scale engine路线，试图通过晶圆级集成降低计算与内存通信成本。",
+      "训练阶段受CUDA生态和迁移成本限制，异构芯片更可能先在推理场景获得突破。",
+      "AI芯片从技术构想到商业验证可能需要接近十年的周期。",
+      "百度美研曾聚集大量AI人才，并在早期接触到scaling law、AI芯片和大模型相关机会。"
+    ],
+    "oneHighValuePoint": "AI基础设施投资中，真正的非共识机会往往需要在共识形成前下注，并承受长周期技术落地的不确定性。",
+    "oneLineReview": "有一定行业观察价值，但更像投资故事复述，证据和可操作性不足。",
+    "primaryCategory": "AI产业与投资",
+    "rating": "B",
+    "rejectReason": "内容主要是社交媒体转述和行业叙事，缺少一手数据、引用来源和系统分析，方法论沉淀有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "AI芯片",
+      "科技创业"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章回顾百度美研早期投资Cerebras的背景，强调十年前对英伟达算力依赖的担忧、晶圆级芯片的技术难点，以及推理需求爆发给异构AI芯片带来的新机会。",
+    "tags": [
+      "Cerebras",
+      "AI算力",
+      "推理芯片",
+      "百度美研",
+      "非共识投资"
+    ],
+    "title": "x.com/SaitoWu/status/2067247677101036003",
+    "totalScore": 56.5,
+    "url": "https://x.com/SaitoWu/status/2067247677101036003"
+  },
+  "payloadHash": "sha256:5f5c81cbb3141af1df9a339a4a93caea2eee921b92c1d5bb357d7c8a29fd0ad6",
+  "refs": {},
+  "revisionId": "sha256:36d29f3ab725238748c1d536fdd29a8f892b6e21ca8372ed1db35a9881447a03",
+  "schemaVersion": 1,
+  "updatedAt": 1781783645017
+}

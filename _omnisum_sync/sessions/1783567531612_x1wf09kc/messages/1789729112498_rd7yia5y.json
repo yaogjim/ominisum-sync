@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729112497,
+  "entityType": "message",
+  "id": "1789729112498_rd7yia5y",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 在 Claude Code 中接入 Codex：让 Fable 5 规划、GPT 5.5 执行\n\n作者提出一种多模型协作方式：在 Claude Code 中安装 OpenAI Codex 插件，并使用 ChatGPT/Codex 订阅完成高消耗的编码任务；Fable 5 则负责规划、架构判断和验收。其核心是把昂贵模型当“编排器”，把 Codex 当“执行器”，以降低 Fable 5 的代币消耗。\n\n## 一次配置即可调用 Codex\n\n安装 `openai/codex-plugin-cc` 后，运行 `/codex:setup`，按提示安装 Codex CLI，并用 ChatGPT 账户认证。验证 `codex:codex-rescue` 子代理可用后，Claude Code 就能通过 `/codex:rescue` 委派任务；设置期间无需修改项目代码。\n\n## 按任务类型分工，而非盲目切换模型\n\n推荐工作流是：\n\n- Fable 5：理解代码库、制订计划、拆解任务、做架构决策和最终审查。\n- Codex：承担实现、调试、测试修复、重构和多文件编辑等重活。\n- 委派任务应具体、聚焦；Codex 完成后仍由 Fable 5 检查，不能直接采信结果。\n\n作者建议将流程封装成技能，在会话开始时调用；长期任务可结合多个子代理并行执行。\n\n## 收益来自订阅额度复用，但效果仅属作者经验\n\n作者声称该方法可节省至少 60% 的 Fable 5 代币，并称自己同时使用 5—7 个代理仍未触及 5 小时限制；另一次任务中，以约一半 Fable 配额和三成 Codex 周额度完成了约三倍工作量。这些数字是个人实践记录，并非通用测评。\n\n主要问题是长会话中的上下文衰减与交接不顺。作者建议约四次上下文压缩后清空会话，并用自定义 `/handoff` 保存必要信息，在新会话继续工作。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729112497,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7a6f440977b4a70661692fffc7031920396c6d12b44b058778f859a8b6fb3b2e",
+  "refs": {
+    "sessionId": "1783567531612_x1wf09kc"
+  },
+  "revisionId": "sha256:1451e12b029f1785cdece1d644d69f50be813f9c3e1592a4973492d348ee448a",
+  "schemaVersion": 1,
+  "updatedAt": 1789729112497
+}

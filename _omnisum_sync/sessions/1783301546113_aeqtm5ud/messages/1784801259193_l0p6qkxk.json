@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784801259192,
+  "entityType": "message",
+  "id": "1784801259193_l0p6qkxk",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 主旨概括\n\n作者推荐开源的本地跨 AI 会话管理工具 **AgentsView**，它能统一整理 Claude Code、Codex、Cursor 等工具的历史记录，并提供搜索、项目追踪及成本统计等功能。评论区同时讨论了类似产品、是否需要网页端，以及集中存储对话可能带来的安全风险。\n\n## AgentsView 的主要功能\n\n- **统一管理会话**：将 Claude Code、Codex、Cursor 等不同 AI 工具的历史记录集中索引。\n- **快速检索旧对话**：方便查找过去与 AI 的交流内容。\n- **查看项目记录**：按项目回顾相关会话和工作过程。\n- **统计使用情况**：支持统计 Token 消耗及对应成本。\n- **多平台支持**：提供全平台客户端，并支持 **Web 端和 CLI**。\n- **开源项目地址**：\n  - 官网：[agentsview.io](https://agentsview.io)\n  - GitHub：[github.com/kenn-io/agentsview](https://github.com/kenn-io/agentsview)\n\n## 评论区的补充讨论\n\n- **同类需求已经存在**：有用户表示自己的工具 **Recall** 也在解决类似问题，但质疑这类本地会话管理工具是否真的需要网页端。\n- **AgentGem 的差异化方向**：另一位开发者推荐了开源项目 [AgentGem.ai](http://AgentGem.ai)，除了管理本地不同 Agent，还强调：\n  - 从历史任务中提炼经验与教训；\n  - 沉淀并分享用户的 AI 判断力和执行经验。\n- **隐私与安全争议**：有评论认为，将所有 AI 对话集中存放且不加密可能存在较大风险，并将其与 **DataMoat** 对比。使用这类工具时，应重点确认：\n  - 数据是否完全保存在本地；\n  - 会话文件是否加密；\n  - Web 服务是否会上传或暴露数据；\n  - 是否具备访问控制和敏感信息清理机制。\n\n## 总结\n\nAgentsView 的核心价值是打通多个 AI 编程工具的会话记录，让用户更方便地搜索、回顾和统计使用情况。不过，集中管理也会放大隐私泄露风险，实际使用前应先核查其数据存储与加密方案。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784801259192,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a6d7c1070bdb2b6d4d36803002684269da7290babdb17f0edfcc904ed91c8b9b",
+  "refs": {
+    "sessionId": "1783301546113_aeqtm5ud"
+  },
+  "revisionId": "sha256:e4062629cc28c19b97614847fab1d48a8816968b172ecf3259ff0062046ff744",
+  "schemaVersion": 1,
+  "updatedAt": 1784801259192
+}

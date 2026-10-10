@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784694950347,
+  "entityType": "message",
+  "id": "1784695038266_rtj7ey61",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 文章主旨\n\nOpenAI 从 Vercel 招募了 AI SDK 核心成员 Nico Albanese，让他参与 Codex App 的开发。Nico 的经历一直围绕“如何把模型能力转化为开发者真正可用的产品”，与 Codex 正在面对的 Agent 应用层问题高度匹配。\n\n## 一、Nico 加入 OpenAI，参与 Codex App\n\n- Nico Albanese 是 Vercel AI SDK 的核心成员，近期宣布加入 OpenAI。\n- 他将参与 Codex App 的开发。\n- 他并非传统的模型研究员，也不只是负责开发者关系，而是长期专注于：\n  - 将底层模型接入实际产品；\n  - 设计开发者工具和 Agent 应用；\n  - 解决模型在真实工作流中的使用问题。\n\n## 二、从投资人到产品开发者\n\n- Nico 本科就读于 USC、香港科技大学和博科尼大学联合开设的 **World Bachelor in Business** 项目。\n- 毕业后，他曾在伦敦早期投资基金 **Ascension** 负责 Pre-seed 项目投资。\n- 随后，他转向亲自开发产品，并创建了 **Kirimase**。\n\n### Kirimase 项目\n\n- Kirimase 是一套面向 Next.js 开发者的命令行工具，定位类似 Ruby on Rails 的脚手架。\n- 开发者可以通过命令快速配置：\n  - 数据库；\n  - 用户身份验证；\n  - Stripe 支付；\n  - 邮件服务；\n  - 完整 CRUD 代码。\n- 项目获得了约 **2800 个 GitHub Star**，后来被迁移到 Vercel 官方 GitHub 组织下。\n\n## 三、在 Vercel 参与打造 AI SDK\n\n- 2024 年前后，Nico 加入 Vercel，进入 AI SDK 核心团队。\n- 过去两年，他参与了 AI SDK 从 **3.3 版本到 6.0 版本**的多次重要升级。\n- 相关能力包括：\n  - 模型中间件；\n  - 多步骤工具调用；\n  - 结构化输出；\n  - 类型安全的 Chat；\n  - Agent 循环；\n  - MCP；\n  - 工具执行审批；\n  - Agent 调试工具 DevTools。\n\n### AI SDK 的影响\n\n- 截至 **2025 年 7 月**，Vercel AI SDK 周下载量已超过 **200 万**。\n- 这套 SDK 在很大程度上影响了 Web 开发者构建 AI 应用的方式，例如：\n  - 接入不同模型；\n  - 流式返回模型结果；\n  - 展示工具调用过程；\n  - 保存 Agent 状态；\n  - 执行多步骤任务；\n  - 调试 Agent 每一步的行为。\n\n## 四、开源 Open Agents，进一步积累 Agent 经验\n\n- Nico 最近开发并开源了 **Open Agents**。\n- 这是一个运行在云端的 Coding Agent 系统，支持：\n  - GitHub 集成；\n  - 持久化沙箱；\n  - 可恢复的长时间工作流。\n- Nico 表示，这个 Agent 后来编写了他发布的每一行代码，甚至包括 Open Agents 自身。\n- 项目开源后获得了超过 **5000 个 GitHub Star**。\n\n## 五、Nico 与 Codex App 的匹配度很高\n\nCodex 面临的重点问题，已经不只是“模型能否写出代码”，还包括如何让 Agent 长时间、可靠地完成复杂任务：\n\n- 管理持续几十分钟甚至数小时的任务状态；\n- 操作和隔离文件系统；\n- 处理权限审批；\n- 与 GitHub 协作；\n- 从失败中恢复；\n- 支持多个 Agent 并行运行；\n- 让用户查看、干预和接管 Agent 的工作。\n\n这些问题正是 Nico 在 Vercel AI SDK 和 Open Agents 中持续实践的方向，因此他的经验与 Codex App 的产品建设高度契合。\n\n## 六、从 Codex 重度用户变成建设者\n\n- Nico 表示，过去几个月他几乎每天全天使用 Codex。\n- 他发布的所有代码，以及绝大部分其他工作，基本都在 Codex 中完成。\n- 因此，他完成了从 **Codex 重度用户** 到 **Codex App 建设者** 的转变。\n- 这也意味着他能够以真实用户的视角，参与改进 Codex 的功能和使用体验。\n\n## 七、评论区反映的讨论方向\n\n- 有评论认为，OpenAI 正持续从 Vercel 招募人才，Codex 团队正在快速壮大。\n- 其他热门回复还讨论了：\n  - AI 自主攻击与安全事件；\n  - Agent Loop、工具系统、消息系统和上下文工程教程；\n  - 其他 AI 产品的实际使用体验。\n- 这些内容与本文主线关联较弱，核心仍是 Nico 加入 OpenAI 以及其对 Codex 应用层建设的价值。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784694950347,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:70de0c79aba86641637a9c4f249372cf899cf9ed744e13d0ceb66fda0f668735",
+  "refs": {
+    "sessionId": "1784695037742_ymvte4bv"
+  },
+  "revisionId": "sha256:3bef70f31e808e6dc12438ceb1412f5a09604087b5074a8310ad040cba788137",
+  "schemaVersion": 1,
+  "updatedAt": 1784694950347
+}

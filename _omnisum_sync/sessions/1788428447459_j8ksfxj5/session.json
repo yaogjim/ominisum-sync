@@ -1,0 +1,84 @@
+{
+  "createdAt": 1788428447459,
+  "entityType": "session",
+  "id": "1788428447459_j8ksfxj5",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在获得教师许可后，选取一节课录音，用本地 Whisper 导出 JSON，并抽查低置信度和高重复片段。",
+      "建立固定讲义模板，包括核心复习卡、分主题方法、必背内容、限时顺序和订正题。",
+      "交付前对照原始转写抽查内容，清除姓名及文档元数据，并将文档渲染为 PDF 或图片检查排版。"
+    ],
+    "archiveReason": "提供了较完整且可迁移的课堂录音处理工作流，包含输入、筛查标准、输出模板、自检清单和隐私控制。",
+    "byline": "伯岩",
+    "classifiedAt": 1789642601075,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "本地AI整理课堂录音为复习讲义",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HRDSMZ3asAANW9j?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HRDSMZ3asAANW9j?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "语音转写应保留带时间戳、置信度和无语音概率等信息的 JSON，而不只保存纯文本，以便定位和复核低可信片段。",
+      "课堂材料整理可分为本地转写、可靠性筛查、教师内容提取、结构化重写、隐私清理和终稿 QA 六个阶段。",
+      "AI 适合承担定位、重组和排版，人应负责授权确认、内容筛选、事实抽查以及姓名等隐私信息的最终检查。"
+    ],
+    "oneHighValuePoint": "最值得保留的是将原始音频、带时间戳和置信度的 JSON、人工筛选、GPT 重写及终稿 QA 串成可追溯的人机协作流程。",
+    "oneLineReview": "工作流具体且实用，但“提高30分”的效果缺少数据和对照支撑，部分工具命令与阈值也需实际核验。",
+    "primaryCategory": "AI辅助学习",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留其本地转写、质量筛查、讲义生成和隐私检查流程，实施前核验工具与接口细节",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "语音转写工作流",
+      "知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以英语课堂为例，展示将获准录制的音频用本地 Whisper 转写，依据置信度筛查并人工提取教师讲解，再由 GPT 生成复习卡、订正题和 Word 讲义的流程，同时强调隐私清理与人工核验。",
+    "tags": [
+      "Whisper转写",
+      "课堂录音",
+      "复习讲义",
+      "隐私保护",
+      "人工核验"
+    ],
+    "title": "别天天想着vibe coding，分享我用AI帮助孩子学习，一个月提高30分",
+    "totalScore": 79,
+    "url": "https://x.com/yvchengshanren/status/2094406827869982926"
+  },
+  "payloadHash": "sha256:ed5e902cc6438b029fd69f08b521db5068d78ba4789d784a6b7dc6bc70bc489f",
+  "refs": {},
+  "revisionId": "sha256:9fc8f273fb3f87544d61379cf5ffd8c8d5fd5ebdb426262cb57aef8081ace103",
+  "schemaVersion": 1,
+  "updatedAt": 1790769539345
+}

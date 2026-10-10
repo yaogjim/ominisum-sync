@@ -1,0 +1,66 @@
+{
+  "createdAt": 1782991665007,
+  "entityType": "session",
+  "id": "1782991665007_xqbjyrah",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在Agent工具选型时区分成熟CLI、自定义CLI和MCP工具，分别评估稳定性、维护成本和安全性。",
+      "如使用MCP，关注工具描述、schema暴露粒度和鉴权方案设计，避免一次性暴露过多工具细节。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783038610883,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 3,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent中MCP与CLI取舍",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "成熟通用CLI如git在Agent场景中表现较稳定，但自定义CLI维护和稳定性可能存在问题。",
+      "MCP的强结构化接口和企业级鉴权方案，使其在工具集成和安全治理上具有优势。",
+      "MCP缺少类似skill+CLI的原生渐进式披露机制，可能需要通过工具搜索或分层描述设计来优化模型调用。"
+    ],
+    "oneHighValuePoint": "自定义CLI在Agent调用中的稳定性可能弱于MCP等强结构化工具，企业鉴权也是MCP的重要优势。",
+    "oneLineReview": "提供了一个有参考价值的MCP与CLI实践判断，但信息量和证据支撑都较有限。",
+    "primaryCategory": "AI Agent工具生态",
+    "rating": "C",
+    "rejectReason": "内容较短，主要是观点表达和零散讨论，缺少系统论证、案例数据和可直接复用的方法。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "MCP",
+      "CLI工具调用"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章讨论Agent场景下MCP与CLI的取舍，认为常见成熟CLI表现良好，但自定义CLI稳定性不如MCP或结构化工具；MCP在结构化约束和企业级鉴权方面有优势，未来可能与CLI并行存在。",
+    "tags": [
+      "Agent",
+      "MCP",
+      "CLI",
+      "结构化工具",
+      "企业鉴权"
+    ],
+    "title": "九原客: 关于Agent 中的 mcp vs cli，以前激进的看法是认为cli会替换掉mcp",
+    "totalScore": 44.5,
+    "url": "https://x.com/9hills/status/2071767612401594395"
+  },
+  "payloadHash": "sha256:4833a959f0e9ac9cfff488b83cf9fd6f0b3f1002b805c2eb831dcb7641eddff7",
+  "refs": {},
+  "revisionId": "sha256:a15c956320e097c3872fd09d99746690c98704d4b793f955e6a20b2029c5914b",
+  "schemaVersion": 1,
+  "updatedAt": 1784801631535
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695819325,
+  "entityType": "message",
+  "id": "1789695819325_2tdcn0sa",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章建议先测量 Claude Code 每次请求附带的工具定义、技能和系统指令，再关闭不用的功能，以减少每轮数万 Token 的额外消耗。\n\n## 关键内容\n\n- 先运行 `/context`，查看系统提示、工具、记忆和消息分别占用多少 Token；若要定位具体哪个工具最“重”，可用 HTTP 代理记录完整请求并按大小排序。\n- 可在 `~/.claude/settings.json` 或项目配置中，用 `disableBundledSkills`、`disableWorkflows` 等开关一次关闭整组功能。\n- 单独删除工具时，应在 `permissions.deny` 中填写裸工具名，如 `NotebookEdit`。带范围的规则如 `Bash(rm *)` 只禁止特定调用，工具定义仍会随请求发送，不能节省这部分 Token。\n- 修改后需重启并再次运行 `/context` 对比。作者强调不要照抄配置：多代理、后台任务、Plan 模式或 Notebook 等功能若确实在用，就应保留。\n\n## 通俗解读\n\n这相当于每次提问都附带一本“功能说明书”；删掉不用的章节，既可能降低费用，也减少模型要阅读的内容。**值得 Claude Code 重度用户细读并实测**，普通用户了解方法即可。原文提到的 `proxy.mjs` 文件及完整配置未包含在所给内容中，不能直接照文复现全部步骤。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695819325,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d756bd2722d7e2680ab3835ebd6b21fe9a4d63cde02b500d6a8d3bab6418cde1",
+  "refs": {
+    "sessionId": "1783471892074_4kiz1ju0"
+  },
+  "revisionId": "sha256:dd4a008bfaa27e2c7d76ae3dc3ad00cf7837416e2d925de39c4fbabc37f96016",
+  "schemaVersion": 1,
+  "updatedAt": 1789695819325
+}

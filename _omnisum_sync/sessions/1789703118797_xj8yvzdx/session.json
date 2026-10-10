@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789703118797,
+  "entityType": "session",
+  "id": "1789703118797_xj8yvzdx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据自身是否已有产品或企业选择一条管道，并将对应提示词整理成可独立运行的技能文件。",
+      "先运行小批量试验，人工检查渲染、联系方式和边界样本，并为真实触达和广告支出设置审批节点。",
+      "持续记录广告单次销售成本或外联响应数据，用首批结果修正筛选条件、提示词和渠道选择。"
+    ],
+    "archiveReason": "包含三套较完整的代理获客流程、可直接改写的提示词，以及工具输入输出、人工审批和异常处理规则，具有较强复用价值。",
+    "classifiedAt": 1789703155716,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "教程",
+    "classifyTitle": "AI代理自动化获客三管道指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可将复杂代理任务封装为独立技能文件，统一记录运行规则、执行顺序、工具权限、输入输出、步骤交接和不确定项。",
+      "数字产品获客可先抓取目标买家近三个月的真实表达，再按高频抱怨或需求形成广告角度和创意钩子。",
+      "本地服务获客可通过公开数据识别可见需求信号，为具体物业生成修复效果图，再通过个性化页面和多渠道触达捕获线索。"
+    ],
+    "oneHighValuePoint": "最值得保留的是技能文件设计规范：明确每一步使用的工具、读取与写入内容、交接产物，并在联系真人或花费资金前强制停止审批。",
+    "oneLineReview": "流程设计具体且可复用，但商业效果、平台优势和渠道转化等关键主张缺少数据与可靠来源支持。",
+    "primaryCategory": "商业系统构建",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并存档，优先保留流程设计和技能文件框架，具体平台效果需另行验证",
+    "secondaryCategories": [
+      "AI Agent开发",
+      "营销获客"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出三条由AI代理运行的自动化获客管道：数字产品广告、本地商家线索生成及线索转售，并给出技能文件、数据抓取、画像、创意、渲染、触达、交付和人工审批流程。",
+    "tags": [
+      "AI代理",
+      "自动化获客",
+      "技能文件",
+      "本地商业",
+      "广告投放"
+    ],
+    "title": "如何自动化生成导语（完整指南）",
+    "totalScore": 74,
+    "url": "https://x.com/everestchris6/status/2099161324555309092"
+  },
+  "payloadHash": "sha256:6de37464a0dbb32f6925c27a0a3e12794bcfcae95374adaa86c9ef5859155a6e",
+  "refs": {},
+  "revisionId": "sha256:453b6305de044f9df31228a1b136ccc953d2f9421f640494ddd7f6a66497ff8b",
+  "schemaVersion": 1,
+  "updatedAt": 1790770077220
+}

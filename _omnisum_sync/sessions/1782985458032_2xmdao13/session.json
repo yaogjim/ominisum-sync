@@ -1,0 +1,139 @@
+{
+  "createdAt": 1782985458032,
+  "entityType": "session",
+  "id": "1782985458032_2xmdao13",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在一个非核心代码仓库中安装并运行 openwiki --init 进行试用",
+      "检查生成的 Wiki 是否准确覆盖关键模块、调用关系和开发约定",
+      "评估其与现有 AGENTS.md、CLAUDE.md 或编码代理工作流的集成效果",
+      "对比人工维护文档、DeepWiki、AutoWiki 等方案的成本和质量"
+    ],
+    "archiveReason": "提供了一个可尝试的开源代码库文档代理工具，适合后续评估是否纳入AI编码工作流",
+    "byline": "Brace",
+    "classifiedAt": 1782989518377,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "OpenWiki代码文档代理发布",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1783049352832,
+        "imageId": "img-4",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# OpenWiki：面向代码仓库文档的开源 AI 代理\n\n## 一句话总结\n\nOpenWiki 是 LangChain 推出的开源 CLI/Agent 工具，用来自动为代码仓库生成、维护 Wiki 文档，并让编码代理通过这些文档更好地理解项目上下文。\n\n## 核心问题：代码代理缺少稳定上下文\n\nAI 编程代理要写好代码，必须理解：\n\n- 关键逻辑在哪里\n- 文件之间如何关联\n- 项目采用什么架构和编码模式\n- 修改代码时应遵循哪些约定\n\n但现实中，代码文档很难持续维护。尤其在大型仓库和高频 PR 场景下，文档很快会过时，甚至误导代理。\n\n## OpenWiki 的解决方案\n\nOpenWiki 自动完成三件事：\n\n1. **生成仓库 Wiki**  \n   为代码库创建结构化文档，而不是把所有信息塞进一个巨大的说明文件。\n\n2. **连接编码代理**  \n   自动更新`AGENTS.md`、`CLAUDE.md`等代理指令文件，加入 Wiki 引用，让代理知道去哪里找上下文。\n\n3. **持续更新文档**  \n   可通过 GitHub Actions 定时运行，让文档随代码变化自动更新。\n\n## 为什么是 Wiki，而不是一个大文档\n\nOpenWiki 借鉴了 DeepWiki、AutoWiki 和 Karpathy 的 LLM Wiki 概念。\n\n核心思路是：  \n**代理不需要 “漂亮文档”，而需要最新、结构化、可检索的仓库原生上下文。**\n\n相比把所有内容放进`AGENTS.md`或`CLAUDE.md`：\n\n- Wiki 更适合承载大量项目知识\n- 指令文件只保留简短入口\n- 代理按需读取相关文档，避免上下文浪费\n- 大型代码库更容易维护和扩展\n\n## 使用方式\n\n安装：\n\n```bash\nnpm install -g openwiki\n```\n\n初始化：\n\n```bash\nopenwiki --init\n```\n\n初始化时会配置：\n\n- 模型服务商\n- API Key\n- 默认模型\n- 可选 LangSmith tracing\n\n支持的模型提供商包括：\n\n- OpenRouter\n- Fireworks\n- Baseten\n- OpenAI\n- Anthropic\n\n默认使用 OpenRouter 和开放模型。\n\n## 与开发工作流的结合\n\nOpenWiki 不要求开发者改变原有流程。\n\n它会自动把 Wiki 入口写入代理指令文件。当编码代理需要理解仓库时，可以通过已有指令发现并使用 Wiki。\n\n同时，OpenWiki 支持通过 GitHub Actions 定时执行，让文档在后台持续更新。\n\n## 产品价值\n\n对开发者来说：\n\n- 减少手写和维护文档成本\n- 降低 AI 代理误改代码的概率\n- 让新成员或新代理更快理解仓库\n\n对 AI 编程代理来说：\n\n- 获得更稳定的长期上下文\n- 不依赖一次性超长 prompt\n- 能基于最新项目结构做更准确的代码修改\n\n## 关键洞察\n\nOpenWiki 的本质不是 “文档生成工具”，而是为 AI 代理构建一层可持续更新的代码知识层。\n\n未来这个模式可能不只用于代码仓库，也可以扩展到更多需要长期上下文的工作流中，例如产品文档、业务流程、团队知识库等。\n\n## 项目信息\n\n- GitHub：<https://github.com/langchain-ai/openwiki>\n- 演示视频：<https://youtu.be/nIVu3zfYprI>",
+        "url": "https://pbs.twimg.com/media/HMKNwxAbUAEMrOF?format=jpg&name=medium",
+        "visualFacts": []
+      },
+      {
+        "analyzedAt": 1783049352832,
+        "imageId": "img-6",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# OpenWiki：面向代码仓库文档的开源 AI 代理\n\n## 一句话总结\n\nOpenWiki 是 LangChain 推出的开源 CLI/Agent 工具，用来自动为代码仓库生成、维护 Wiki 文档，并让编码代理通过这些文档更好地理解项目上下文。\n\n## 核心问题：代码代理缺少稳定上下文\n\nAI 编程代理要写好代码，必须理解：\n\n- 关键逻辑在哪里\n- 文件之间如何关联\n- 项目采用什么架构和编码模式\n- 修改代码时应遵循哪些约定\n\n但现实中，代码文档很难持续维护。尤其在大型仓库和高频 PR 场景下，文档很快会过时，甚至误导代理。\n\n## OpenWiki 的解决方案\n\nOpenWiki 自动完成三件事：\n\n1. **生成仓库 Wiki**  \n   为代码库创建结构化文档，而不是把所有信息塞进一个巨大的说明文件。\n\n2. **连接编码代理**  \n   自动更新`AGENTS.md`、`CLAUDE.md`等代理指令文件，加入 Wiki 引用，让代理知道去哪里找上下文。\n\n3. **持续更新文档**  \n   可通过 GitHub Actions 定时运行，让文档随代码变化自动更新。\n\n## 为什么是 Wiki，而不是一个大文档\n\nOpenWiki 借鉴了 DeepWiki、AutoWiki 和 Karpathy 的 LLM Wiki 概念。\n\n核心思路是：  \n**代理不需要 “漂亮文档”，而需要最新、结构化、可检索的仓库原生上下文。**\n\n相比把所有内容放进`AGENTS.md`或`CLAUDE.md`：\n\n- Wiki 更适合承载大量项目知识\n- 指令文件只保留简短入口\n- 代理按需读取相关文档，避免上下文浪费\n- 大型代码库更容易维护和扩展\n\n## 使用方式\n\n安装：\n\n```bash\nnpm install -g openwiki\n```\n\n初始化：\n\n```bash\nopenwiki --init\n```\n\n初始化时会配置：\n\n- 模型服务商\n- API Key\n- 默认模型\n- 可选 LangSmith tracing\n\n支持的模型提供商包括：\n\n- OpenRouter\n- Fireworks\n- Baseten\n- OpenAI\n- Anthropic\n\n默认使用 OpenRouter 和开放模型。\n\n## 与开发工作流的结合\n\nOpenWiki 不要求开发者改变原有流程。\n\n它会自动把 Wiki 入口写入代理指令文件。当编码代理需要理解仓库时，可以通过已有指令发现并使用 Wiki。\n\n同时，OpenWiki 支持通过 GitHub Actions 定时执行，让文档在后台持续更新。\n\n## 产品价值\n\n对开发者来说：\n\n- 减少手写和维护文档成本\n- 降低 AI 代理误改代码的概率\n- 让新成员或新代理更快理解仓库\n\n对 AI 编程代理来说：\n\n- 获得更稳定的长期上下文\n- 不依赖一次性超长 prompt\n- 能基于最新项目结构做更准确的代码修改\n\n## 关键洞察\n\nOpenWiki 的本质不是 “文档生成工具”，而是为 AI 代理构建一层可持续更新的代码知识层。\n\n未来这个模式可能不只用于代码仓库，也可以扩展到更多需要长期上下文的工作流中，例如产品文档、业务流程、团队知识库等。\n\n## 项目信息\n\n- GitHub：<https://github.com/langchain-ai/openwiki>\n- 演示视频：<https://youtu.be/nIVu3zfYprI>",
+        "url": "https://pbs.twimg.com/media/HMKNQeJbMAA9ljZ?format=jpg&name=medium",
+        "visualFacts": []
+      },
+      {
+        "analyzedAt": 1783049352832,
+        "imageId": "img-12",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# OpenWiki：面向代码仓库文档的开源 AI 代理\n\n## 一句话总结\n\nOpenWiki 是 LangChain 推出的开源 CLI/Agent 工具，用来自动为代码仓库生成、维护 Wiki 文档，并让编码代理通过这些文档更好地理解项目上下文。\n\n## 核心问题：代码代理缺少稳定上下文\n\nAI 编程代理要写好代码，必须理解：\n\n- 关键逻辑在哪里\n- 文件之间如何关联\n- 项目采用什么架构和编码模式\n- 修改代码时应遵循哪些约定\n\n但现实中，代码文档很难持续维护。尤其在大型仓库和高频 PR 场景下，文档很快会过时，甚至误导代理。\n\n## OpenWiki 的解决方案\n\nOpenWiki 自动完成三件事：\n\n1. **生成仓库 Wiki**  \n   为代码库创建结构化文档，而不是把所有信息塞进一个巨大的说明文件。\n\n2. **连接编码代理**  \n   自动更新`AGENTS.md`、`CLAUDE.md`等代理指令文件，加入 Wiki 引用，让代理知道去哪里找上下文。\n\n3. **持续更新文档**  \n   可通过 GitHub Actions 定时运行，让文档随代码变化自动更新。\n\n## 为什么是 Wiki，而不是一个大文档\n\nOpenWiki 借鉴了 DeepWiki、AutoWiki 和 Karpathy 的 LLM Wiki 概念。\n\n核心思路是：  \n**代理不需要 “漂亮文档”，而需要最新、结构化、可检索的仓库原生上下文。**\n\n相比把所有内容放进`AGENTS.md`或`CLAUDE.md`：\n\n- Wiki 更适合承载大量项目知识\n- 指令文件只保留简短入口\n- 代理按需读取相关文档，避免上下文浪费\n- 大型代码库更容易维护和扩展\n\n## 使用方式\n\n安装：\n\n```bash\nnpm install -g openwiki\n```\n\n初始化：\n\n```bash\nopenwiki --init\n```\n\n初始化时会配置：\n\n- 模型服务商\n- API Key\n- 默认模型\n- 可选 LangSmith tracing\n\n支持的模型提供商包括：\n\n- OpenRouter\n- Fireworks\n- Baseten\n- OpenAI\n- Anthropic\n\n默认使用 OpenRouter 和开放模型。\n\n## 与开发工作流的结合\n\nOpenWiki 不要求开发者改变原有流程。\n\n它会自动把 Wiki 入口写入代理指令文件。当编码代理需要理解仓库时，可以通过已有指令发现并使用 Wiki。\n\n同时，OpenWiki 支持通过 GitHub Actions 定时执行，让文档在后台持续更新。\n\n## 产品价值\n\n对开发者来说：\n\n- 减少手写和维护文档成本\n- 降低 AI 代理误改代码的概率\n- 让新成员或新代理更快理解仓库\n\n对 AI 编程代理来说：\n\n- 获得更稳定的长期上下文\n- 不依赖一次性超长 prompt\n- 能基于最新项目结构做更准确的代码修改\n\n## 关键洞察\n\nOpenWiki 的本质不是 “文档生成工具”，而是为 AI 代理构建一层可持续更新的代码知识层。\n\n未来这个模式可能不只用于代码仓库，也可以扩展到更多需要长期上下文的工作流中，例如产品文档、业务流程、团队知识库等。\n\n## 项目信息\n\n- GitHub：<https://github.com/langchain-ai/openwiki>\n- 演示视频：<https://youtu.be/nIVu3zfYprI>",
+        "url": "https://pbs.twimg.com/media/HMLF4HkXcAAth1G?format=jpg&name=medium",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMKNwxAbUAEMrOF?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HMKNwxAbUAEMrOF?format=jpg&name=medium",
+        "width": 1200
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 718,
+        "id": "img-6",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMKNQeJbMAA9ljZ?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HMKNQeJbMAA9ljZ?format=jpg&name=medium",
+        "width": 1200
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 665,
+        "id": "img-12",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMLF4HkXcAAth1G?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HMLF4HkXcAAth1G?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "代码代理需要稳定、结构化、可更新的仓库上下文才能减少错误修改",
+      "AGENTS.md 或 CLAUDE.md 更适合作为上下文入口，而不是承载完整文档",
+      "OpenWiki 可通过 CLI 初始化仓库文档，并支持多种模型提供商",
+      "通过 GitHub Action 定期更新文档，可降低文档过时风险"
+    ],
+    "oneHighValuePoint": "将大型仓库文档外置为可检索 Wiki，并在代理指令文件中只保留引用，避免上下文膨胀。",
+    "oneLineReview": "这是一个值得试用的AI代码文档工具发布信息，但目前更像产品公告而非深度方法论文章。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "内容偏产品发布和功能介绍，缺少实测效果、对比数据和复杂场景案例，证据支撑较弱",
+    "retentionDecision": "短期参考后视使用效果决定是否长期保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "代码文档",
+      "智能体工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 OpenWiki，一个用于为代码仓库生成和维护 Wiki 文档的开源代理与 CLI。它可连接 AGENTS.md、CLAUDE.md 等代理指令文件，并支持模型提供商配置、LangSmith 追踪和 GitHub Action 更新。",
+    "tags": [
+      "OpenWiki",
+      "代码仓库文档",
+      "AI Agent",
+      "CLI",
+      "GitHub Action"
+    ],
+    "title": "介绍 OpenWiki，一个用于代码仓库文档的开源代理",
+    "totalScore": 55.5,
+    "url": "https://x.com/BraceSproul/status/2072375136368660515"
+  },
+  "payloadHash": "sha256:41f695a8c7aea8dade376b731ada6d52dadd43214a2604db69c2ddf7cb91bfab",
+  "refs": {},
+  "revisionId": "sha256:872a3eaf9165c38e8e8326faf0c180b830ef6e0ad9f89f5d9575bd3d9261b824",
+  "schemaVersion": 1,
+  "updatedAt": 1789729487926
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727527899,
+  "entityType": "message",
+  "id": "1789727527900_6jp91204",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Pi Agent：以极简内核配扩展，打造高效桌面工作流\n\n作者认为，Pi Agent 速度快、Token 消耗低，可替代 Hermes 成为桌面工作主力；其价值在于按需安装扩展，补齐联网、记忆、任务管理和多代理协作能力。但评论区也指出，扩展过多可能背离 Pi 的极简设计，实际收益取决于个人工作流。\n\n## 六类扩展补齐核心能力\n\n- **pi-web-access**：提供搜索、网页抓取、GitHub 仓库克隆、PDF 提取及视频理解，兼容 Brave、Tavily、Kagi、Exa、Perplexity 等后端。热门回复普遍认为它最实用，甚至值得官方内置。\n- **pi-memory**：通过长期记忆、每日日志和 scratchpad 保存信息，并支持语义检索。\n- **rpiv-todo**：把待办事项直接提供给模型，以实时浮层展示，且能跨重载和上下文压缩保留。\n- **pi-subagents**：支持并行或串行派生子代理，提供工作区隔离、流程脚本和任务预算，适合复杂多步任务。\n- **pi-mcp-adapter**：按需连接 MCP 服务器，避免一次性加载大量工具信息、挤占上下文。\n- **context-mode**：压缩工具调用结果和文件读写内容，把关键信息留在主上下文中，进一步节省上下文空间。\n\n## 模块化灵活，但存在“重新拼装”争议\n\n作者推崇的是“轻量内核＋按需扩展”的组合：用户可控制功能与上下文成本。反对者则认为，六个扩展中部分价值有限，安装过多既增加复杂度，也可能只是把 Hermes 的现成功能重新拼装一遍。因此，Pi 的优势更适合通过最小化配置验证，而非默认全装。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727527899,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7be85c7c29c71b4c1ec20a4b64b185e1321235890ad39f36d443b6b768cdcb02",
+  "refs": {
+    "sessionId": "1789705293298_jiq1o08e"
+  },
+  "revisionId": "sha256:bfac87ed5382f18e6277feb55beb18ae2c9a820fb1bbc0b4aa98dc3395983cd4",
+  "schemaVersion": 1,
+  "updatedAt": 1789727527899
+}

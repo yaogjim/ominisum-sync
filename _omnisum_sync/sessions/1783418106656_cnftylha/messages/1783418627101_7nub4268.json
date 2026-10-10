@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783418627102,
+  "entityType": "message",
+  "id": "1783418627101_7nub4268",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Workers Cache发布解析\n\n**评级**: A (78.5分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: 云计算与边缘计算\n**次类别**: Serverless架构, Web性能优化\n**标签**: #Cloudflare Workers #边缘缓存 #Serverless #HTTP Cache #stale-while-revalidate\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 8 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 7 | 10% |\n| 证据质量 | 6 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 一篇信息量高、可直接落地的官方发布文，虽有营销表达但对边缘Serverless缓存架构很有参考价值。\n**核心高价值点**: Workers Cache不仅是外部CDN缓存，还能位于Worker entrypoint之间，使应用内部阶段可按入口粒度进行缓存、隔离和失效管理。\n\n### 摘要\n文章介绍Cloudflare Workers Cache：在Worker前增加分层缓存，通过Wrangler配置和标准Cache-Control控制缓存，支持SWR、Vary、标签清理、ctx.props多租户隔离、entrypoint级缓存与框架集成，可降低SSR应用延迟和CPU成本。\n\n### 知识要点\n- 启用Workers Cache只需在wrangler配置中加入cache.enabled，并通过HTTP Cache-Control、Cache-Tag等响应头控制缓存策略\n- stale-while-revalidate可在缓存过期后先返回旧内容，再后台刷新，显著降低SSR页面的尾部延迟\n- Vary头允许同一URL按Accept、Accept-Language等请求头缓存多个表示，适合内容协商场景\n- ctx.props会成为Worker间调用的缓存键组成部分，可用于多租户或按用户隔离缓存\n- 缓存可按entrypoint启停，适合将认证、路由、数据读取、昂贵渲染拆成不同阶段并在合适位置缓存\n- 计费上缓存命中不计CPU时间，但仍按标准Workers请求计费\n\n### 行动项\n- 在适合缓存的Workers项目中测试加入\"cache\": { \"enabled\": true }并设置Cache-Control响应头\n- 为SSR页面设计max-age与stale-while-revalidate窗口，区分高频更新和低频更新内容\n- 对带认证的API评估网关Worker认证、去除Authorization、通过ctx.props传递userId或tenantId的缓存模式\n- 为可变内容增加Cache-Tag，并在写入路径中调用ctx.cache.purge实现精确失效\n- 通过Workers Observability观察HIT、MISS、BYPASS、UPDATING比例，排查缓存命中率低的原因\n\n### 存档判定\n归档: 是 — 原因: 文章提供了Workers Cache的新能力说明、配置方式、架构模式、缓存失效、计费和框架集成信息，具备较高实践参考价值\n删除: 否\n留存决策: 长期保留，适合作为Cloudflare Workers缓存架构和边缘应用设计的参考资料",
+    "role": "assistant",
+    "timestamp": 1783418627102,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:6349d9b46f65f4df2f856404627234b6b22a06f2cca17c16a8677cd5db571237",
+  "refs": {
+    "sessionId": "1783418106656_cnftylha"
+  },
+  "revisionId": "sha256:83b4599c5fbf3f27ef4afadfd3042b7dfba5efdf79f78493b6a428a2c7fc761e",
+  "schemaVersion": 1,
+  "updatedAt": 1783418627102
+}

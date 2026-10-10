@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694022511,
+  "entityType": "message",
+  "id": "1789694022511_iqp1wb3u",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章以 124B 参数的 Ling-3.0-flash 为例，演示如何把开源大模型部署到本地，再接入聊天界面、系统工具和多模型工作流，实现数据自主与免 API Token 计费。\n\n## 关键内容\n\n- **部署门槛不低**：作者使用配备 121.6GB 统一内存的 DGX Spark，加载约 71.75GB 的 INT4 权重，并通过官方适配的 vLLM 分支启动服务；普通电脑更适合从 8B 低精度模型开始。\n- **性能优势需按测试口径理解**：作者实测 Ling 单路约 35 tok/s，8 并发总吞吐约 141 tok/s，高于同机测试的 Qwen 27B；但结果受量化精度、上下文、并发和 HTTP/离线测试方式影响，不能直接与其他跑分横比。\n- **本地模型可从聊天升级为 Agent**：先用终端聊天界面调用本地 API，再把读取文件、执行命令等能力封装成工具，也可接入 DeepSeek Harness 获得 Web UI、权限控制和任务规划。\n- **多模型协作更实用，但更吃资源**：可让 Ling 写脚本、多模态模型检查素材、视频模型负责生成；内存不足时需切换加载、使用量化版或分散到多台设备。\n\n## 通俗解读\n\n“Token 自由”不是零成本，而是把按调用付费换成硬件、电力和维护成本，同时获得更强的数据控制权。文章适合想照着搭建本地 Agent 的读者细读，尤其有高内存设备者；若只想普通聊天，硬件门槛明显偏高。文中提到逻辑、安全和长文本测试，但未展示完整结果，因此不足以据此判断模型能力优劣。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694022511,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2f51d7c0701e02f96442ca9dfd0f94911de2c4bec314a32e877c0f3ceb631867",
+  "refs": {
+    "sessionId": "1787305252440_rh06g7ka"
+  },
+  "revisionId": "sha256:96e7f0a9ddd071489628aff18d616f1a00907685b5855ac1e994448483a9956e",
+  "schemaVersion": 1,
+  "updatedAt": 1789694022511
+}

@@ -1,0 +1,25 @@
+{
+  "createdAt": 1785838372009,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1785838372009",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Cloudflare Computer：给 AI Agent 一台 “云端电脑”\n\n## 一句话总结\n\nCloudflare Computer 为 AI Agent 提供一个**可持久化的虚拟文件系统与可插拔执行环境**，让 Agent 能像使用真实电脑一样读写文件、运行 Shell 或 JavaScript，并在不同运行时之间切换。\n\n## 核心架构\n\n系统以**Durable Object**作为 Workspace：\n\n- 文件状态持久化在 Durable Object 的**SQLite**中，作为唯一权威数据源。\n- 通过统一接口`workspace.runtime.exec (source, { backend })`执行任务。\n- 执行后端按需连接，可为同一 Workspace 注册多个后端。\n- 也可以不配置执行后端，只把它当作独立的持久化文件系统使用。\n\n## 三种执行后端\n\n| 后端 | 执行方式 | 主要特点 |\n|---|---|---|\n| **Container** | 在容器内执行 Shell 和原生程序 | 通过 FUSE 挂载文件系统，具备完整 Linux 环境、真实二进制与网络能力 |\n| **Isolate Shell** | 在 Dynamic Worker 中运行`just-bash` | 无需容器，直接通过 Workers RPC 访问 Workspace，没有额外数据副本 |\n| **Isolate JavaScript** | 在全新 Dynamic Worker 中执行 ES Module | 支持结构化输入输出、持久化相对导入、`node:fs/promises`、Git 与 Artifacts 模块 |\n\n三者共享同一套 Workspace 数据，但在**能力、启动成本和隔离方式**上有所不同。\n\n## 典型应用场景\n\n项目已提供多个可运行示例：\n\n- AI Agent 将 Workspace 作为长期工作目录。\n- 对比同一 Agent 任务在容器与 Worker 运行时中的效果。\n- Agent 生成 Markdown，再调用`pandoc`转换为 PDF。\n- 自动生成 Worker 项目并发布为可克隆仓库。\n- 调用 Workers AI 生成图片、写入 Workspace 并返回分享链接。\n- 通过 HTTP 提供文件读写与代码执行能力。\n\n## 技术与产品价值\n\nCloudflare Computer 的关键价值，是把 Agent 所需的两类能力统一起来：\n\n1. **持久化状态**：任务文件不会随着单次执行结束而消失。\n2. **可切换执行环境**：轻量任务用 Worker，依赖完整 Linux 的任务用容器。\n3. **统一开发接口**：上层 Agent 无需直接适配不同运行时。\n4. **边缘平台集成**：可直接结合 Workers AI、Artifacts、Durable Objects 等 Cloudflare 服务。\n\n它本质上是一层面向 Agent 的 “**云端电脑抽象**”，而不仅是一个代码沙箱。\n\n## 性能与成熟度\n\n- FUSE 文件系统在**元数据密集型操作**中可能快于真实磁盘。\n- 在**大文件顺序读写**中则落后于真实磁盘。\n- 顶层`@cloudflare/computer`包仍标记为**Work in Progress**。\n- `docs/`中部分内容属于前瞻性设计，应视为目标而非全部已稳定实现。\n\n## 项目定位\n\n该项目适合构建需要长期文件状态、工具调用和代码执行能力的 Agent，例如编程助手、研究代理、内容生产流水线和自动化开发平台。当前更像是 Cloudflare 面向 Agent 基础设施的一套早期能力框架，而非完全成熟的通用桌面环境。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1785838372009,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:65ec7d8693cedf182f421473e4736b99b5edae15c449043a3f6273de7a40616b",
+  "refs": {
+    "sessionId": "1785833948756_o6im7va2"
+  },
+  "revisionId": "sha256:945fffa31d10403c98f204fb30dea8eed13f0d8f1cb9ca80c933c8824d0455b3",
+  "schemaVersion": 1,
+  "updatedAt": 1785838372009
+}

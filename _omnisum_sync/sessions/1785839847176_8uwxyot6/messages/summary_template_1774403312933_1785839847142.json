@@ -1,0 +1,25 @@
+{
+  "createdAt": 1785839847142,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1785839847142",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# LHA 与 Multi-Agent 的本质：跨边界保持智能连续\n\n## 核心观点\n\n长周期智能体（Long Horizon Agent，LHA）与多智能体系统（Multi-Agent）看似不同，实际解决的是同一个问题：\n\n> **如何在不同 Agent 实例之间准确传递状态，让智能跨越执行边界保持连续。**\n\n- **LHA**：智能在时间维度上的连续，是多个 Agent 实例的串行交接。\n- **Multi-Agent**：智能在空间维度上的协作，是多个 Agent 实例的并行交接。\n\n因此，可以将二者理解为：\n\n- LHA = **Sequential Agents**\n- Multi-Agent = **Parallel Agents**\n\n## 真正难点：状态交接，而非模型能力\n\n即使使用相同的模型、Prompt 和工具，不同时间或不同角色的 Agent 也不是天然连续的。\n\n简单的任务摘要无法完整传递：\n\n- 系统当前的真实状态\n- 关键设计背后的原因\n- 已放弃的方案及原因\n- 不可违反的约束\n- 已完成与待验证的工作\n\n所以，无论是上下文窗口中断，还是不同 Agent 之间协作，本质都是**Agent State Handoff**问题。\n\n## Handoff 不是一份说明文档\n\n`handoff.md`、`memory.md`或`summary.md`只能记录前一个 Agent 的描述和判断，不能代表真实状态。\n\n更可靠的交接对象应是整个**计算工作区（Computational Workspace）**。它是 Agent 对现实世界的可计算映射，可以包括：\n\n- 系统与产物状态\n- 规则和约束\n- 优化目标\n- 权衡策略\n- 验证结果\n- 停止条件\n\n新 Agent 不应只是相信前一个 Agent 的总结，而应基于工作区重新计算和验证当前事实。\n\n## Workspace 是共享的世界模型\n\n多 Agent 协作不应依赖彼此用自然语言交换 “观点”，而应让所有 Agent 操作同一个可验证的世界状态。\n\n例如，在软件开发中：\n\n- **弱交接**：一句 “用户系统优化已完成”\n- **强交接**：代码仓库、架构图、依赖关系、测试结果、部署状态、性能指标和已知问题\n\n类似的工作区还可以是 Git 仓库、CAD 模型、数字孪生、知识图谱或仿真环境。它不只是存储空间，而是 Agent 共同工作的**计算世界**。\n\n## 完整的 Agent State 包含什么\n\n长期、可靠的 Agent 系统至少需要保存五类状态：\n\n1. **系统状态**：版本、数据库结构、硬件和运行环境  \n2. **规则检查器**：安全、编译、制造、合规等不可违反的规则  \n3. **优化目标**：在成本、延迟等约束下优化明确指标  \n4. **权衡规则**：稳定性、性能、成本、速度等目标的优先级  \n5. **停止条件**：测试、性能、安全审查等明确完成标准  \n\n这意味着 Agent Memory 不能只保存对话、偏好和文档，还要保存完整的**决策环境**。\n\n## 对 Agent 架构的启示\n\nMulti-Agent 的未来不在于堆叠更多 Agent 或构建更复杂的消息总线，而在于打造统一的计算工作区：\n\n> **Representation + State + Rules + Verification + Objectives + Feedback**\n\n多个 Agent 可以在其中共同操作、验证并演化同一个现实模型，从而同时支撑串行的长周期任务和并行的多智能体协作。\n\n## 结论\n\nLHA 与 Multi-Agent 不是两个独立方向，而是同一类基础设施问题：\n\n- LHA 解决时间维度上的状态连续\n- Multi-Agent 解决空间维度上的状态一致\n- 二者都依赖可计算、可验证的 Workspace\n\n未来可靠的 Agent 系统，不是让更多智能体互相聊天，而是让它们共同生活在一个**状态明确、规则可执行、结果可验证的计算世界**中。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1785839847142,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9899246b9faf7e1f67b862f247f1239bf78314cde4bfe1d2770bdf52b98e61ed",
+  "refs": {
+    "sessionId": "1785839847176_8uwxyot6"
+  },
+  "revisionId": "sha256:caa477070c899bdcfb2dd5f9929524772e9a50dfc10c76b88b5856bebcc27cb5",
+  "schemaVersion": 1,
+  "updatedAt": 1785839847142
+}

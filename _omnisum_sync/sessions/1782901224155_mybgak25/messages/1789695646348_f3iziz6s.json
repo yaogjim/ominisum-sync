@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695646347,
+  "entityType": "message",
+  "id": "1789695646348_f3iziz6s",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n让 AI Agent 处理跨微服务开发，重点不只是把代码放到同一工作区，而是提供**可按需获取的准确上下文**，并建立**能自动测试、自我修正的验证闭环**。\n\n## 关键内容\n\n- 作者建议采用 monorepo；若无法合仓，也可把多个仓库克隆到同一本地目录，形成“虚拟 monorepo”，让 Agent 能统一查看接口、数据结构和实现。\n- 文档应分层：根目录的 `AGENTS.md` 充当服务地图，各服务目录再说明职责边界、业务概念和依赖关系；Agent 先定位相关服务，再加载细节，避免上下文污染。\n- 相比容易过期的手写文档，OpenAPI、Pact 契约和协议测试更可靠，既能描述真实接口，也能生成 mock 和测试。\n- 每个服务提供 mock server 与 contract test，使 Agent 完成“写代码→测试→修正”，不必频繁启动完整系统做端到端验证。\n\n## 通俗解读\n\n“放在一个 workspace”只是让 Agent **找得到材料**，不等于它能正确理解系统；真正关键的是服务地图、明确边界和可执行契约。以上属于作者的实践建议，并非效果保证，前提是文档和协议持续更新、测试基础设施可用。**值得细读**，尤其适合正在搭建跨微服务 Agent 工作流的团队。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695646347,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:693214c9370d245292ff3fb520833ee00175f018c236a768972ffc122dc99365",
+  "refs": {
+    "sessionId": "1782901224155_mybgak25"
+  },
+  "revisionId": "sha256:ab574dcc57a205544d3a9c84c6d4afd0b6d1d57c0d82d57f31a5c9ffe692cf19",
+  "schemaVersion": 1,
+  "updatedAt": 1789695646347
+}

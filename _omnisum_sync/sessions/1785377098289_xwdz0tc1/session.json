@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785377098289,
+  "entityType": "session",
+  "id": "1785377098289_xwdz0tc1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据任务规模选择模型：常规开发优先使用k3-256k，需要超长上下文时再使用k3。",
+      "切换模型ID或推理强度时优先新建会话；从1M切到256K前先执行一次上下文压缩。",
+      "接入第三方工具时核对Base URL、模型ID、会员权限及context-window配置，并保持Thinking开启。"
+    ],
+    "archiveReason": "包含明确的模型规格、权限条件、切换步骤、API地址及缓存和配额优化建议，具有直接配置与排障价值。",
+    "classifiedAt": 1785377684752,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Kimi Code模型配置与切换指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.kimi.com",
+    "favicon": "https://www.kimi.com/favicon.ico",
+    "knowledgePoints": [
+      "K3提供1M与256K上下文版本，k3-256k结果能力相近但配额消耗更低，且不支持视频输入。",
+      "模型切换和推理强度切换都会使上下文缓存失效，频繁切换会增加重新预填充产生的用量。",
+      "第三方工具可通过OpenAI或Anthropic兼容协议接入；调用时必须填写模型ID，并按需手动设置上下文窗口和推理强度。"
+    ],
+    "oneHighValuePoint": "切换模型或推理强度会使已有上下文缓存失效；新建会话，或在从1M切换至256K前先压缩上下文，可减少重复预填充与额外配额消耗。",
+    "oneLineReview": "这是一份信息集中、操作明确的官方配置文档，但内容高度依赖当前产品版本，长期通用性有限。",
+    "primaryCategory": "AI编程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "作为Kimi Code模型选型、客户端配置和故障排查的官方参考文档保留",
+    "secondaryCategories": [
+      "模型配置",
+      "API集成"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文档列出Kimi K3与K2.7 Code的模型ID、上下文、速度、配额和权限，并说明在官方及第三方客户端切换模型、配置协议，以及处理缓存失效、401错误和上下文压缩的方法。",
+    "tags": [
+      "Kimi Code",
+      "模型切换",
+      "上下文窗口",
+      "缓存管理",
+      "推理强度"
+    ],
+    "title": "Model Configuration | Kimi Code Docs",
+    "totalScore": 74,
+    "url": "https://www.kimi.com/code/docs/en/kimi-code/models"
+  },
+  "payloadHash": "sha256:ecf5da6b65f230ad66b4355d2c80485bb02ca4acc0fd31749876c61b2e68e829",
+  "refs": {},
+  "revisionId": "sha256:eebd6a29001b5597f0c438cbfc91dfc0b73804613893663985bcf1b87733cda5",
+  "schemaVersion": 1,
+  "updatedAt": 1789694381975
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728802359,
+  "entityType": "message",
+  "id": "1789728802360_skq3uwse",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 代理式编码选型：多数场景优先提高 Luna 的推理强度\n\nSebastian Raschka 根据成本与编码性能数据判断：除非必须达到 Terra Ultra 的顶级表现，否则使用更高“努力等级”（即投入更多推理计算）的 Luna，通常能以更低成本取得相同或更好的效果。核心不是默认选择更大的模型，而是在模型、推理强度和成本之间寻找帕累托最优点。\n\n## Luna 覆盖大部分性价比区间\n\n作者给出的选型建议是：\n\n- 在 Sol High 以下的性能区间，不必考虑 Sol，改用更高努力等级的 Luna。\n- Sol Extra High 缺乏性价比，追求这一档性能时可直接考虑 Terra Ultra。\n- Sol Ultra 相比 Max 的额外成本，可能不足以换来值得的收益。\n- 只有确实需要最高性能时，Terra Ultra 才是必要选择。\n\n## 图表结论有参考价值，但标签曾被更正\n\n相关数字来自 OpenAI 官方图表的修改版，作者依据六个数据点匹配了六档工作强度。其最初图表存在标签错位，之后说明 Ultra、Max 等等级需要重新对应，但认为模型间的相对比较仍然成立。据其理解，Ultra 主要通过四个子代理并行运行 Max 来提速。\n\n对于 Luna 为何无法继续扩展到更高性能，作者未给出确定结论：可能并非上下文长度的硬限制，而是模型未针对更高 token 预算训练，或通过减少 token、并行采样等方式实现了不同的推理扩展。整体结论适合作为成本选型参考，而非已被完整验证的固定规则。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728802359,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:807adfefa01b435cf3e307d9b4669042d2dec76765da4592cd5118b3757cbbcd",
+  "refs": {
+    "sessionId": "1784693942483_4ael6li4"
+  },
+  "revisionId": "sha256:25311f615352bd1c7a9565671e92b30017fa18a8bf6eb031f179df541bf4b6b6",
+  "schemaVersion": 1,
+  "updatedAt": 1789728802359
+}

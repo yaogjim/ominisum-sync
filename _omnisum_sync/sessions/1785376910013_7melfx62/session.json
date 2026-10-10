@@ -1,0 +1,57 @@
+{
+  "createdAt": 1785376910013,
+  "entityType": "session",
+  "id": "1785376910013_7melfx62",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "classifiedAt": 1785377441131,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 1,
+      "relevance": 3,
+      "transferability": 1
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "KOReader 官网资源导航",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "仅包含若干导航入口名称，后续需要时可直接访问官网",
+    "domain": "koreader.rocks",
+    "favicon": "https://koreader.rocks/koreader.png",
+    "knowledgePoints": [],
+    "oneHighValuePoint": "唯一可用信息是该官网集中提供用户指南、下载、社区支持和开发文档入口。",
+    "oneLineReview": "这是资源入口列表而非实质文章，信息价值和独立留存价值都很低。",
+    "primaryCategory": "阅读工具",
+    "rating": "E",
+    "rejectReason": "缺少产品介绍、使用方法、技术细节及实质性论证",
+    "retentionDecision": "正文仅为官网栏目导航，没有独立阅读和长期保留价值",
+    "secondaryCategories": [
+      "开源软件",
+      "知识管理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "页面仅列出 KOReader 的用户指南、下载、Wiki、论坛、缺陷报告、开发文档和图库等入口，未提供功能介绍、使用步骤、技术细节或论证内容。",
+    "tags": [
+      "KOReader",
+      "电子阅读器",
+      "资源导航"
+    ],
+    "title": "KOReader",
+    "totalScore": 18,
+    "url": "https://koreader.rocks/"
+  },
+  "payloadHash": "sha256:ea6da64e2dc1d70ec391a9701213104cf038c8fb9772baffa74e235a796d2f72",
+  "refs": {},
+  "revisionId": "sha256:ae5b71e10d68a2553d9d4bf41e9f7895811b87a1340b24ad0f5045c0a54b1bfa",
+  "schemaVersion": 1,
+  "updatedAt": 1785384386655
+}

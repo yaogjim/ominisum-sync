@@ -1,0 +1,83 @@
+{
+  "createdAt": 1788860612862,
+  "entityType": "session",
+  "id": "1788860612862_1klzeav6",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "根据目标平台选择一个官方端到端案例，复现其本地推理与部署流程。",
+      "用真实业务数据测试基础模型，并根据效果选择SFT、DPO、GRPO或继续预训练方案。",
+      "对候选案例补充延迟、内存占用、准确率和设备兼容性测试，再决定产品化路线。"
+    ],
+    "archiveReason": "覆盖桌面、浏览器、移动端和边缘设备，提供大量代码、演示及微调笔记本，适合作为LFM开发入口和方案参考库。",
+    "classifiedAt": 1789642754794,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Liquid LFM端侧开发案例库",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Liquid AI",
+        "caption": "",
+        "height": 600,
+        "id": "img-4",
+        "nearbyText": "Try LFM • Documentation • LEAP",
+        "resolvedUrl": "https://private-user-images.githubusercontent.com/81252890/544347771-e0f42ac6-822f-4b7b-a0ae-07b2a619258d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg4NjA4OTYsIm5iZiI6MTc4ODg2MDU5NiwicGF0aCI6Ii84MTI1Mjg5MC81NDQzNDc3NzEtZTBmNDJhYzYtODIyZi00YjdiLWEwYWUtMDdiMmE2MTkyNThkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA5MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwOTA4VDA5NDMxNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJjNWMzZWMyMjNlMDg0ODY3M2VjZWUzZTRhNzM5ZDA0YTNjOWRkNWRkOTk2NTFlY2VlNDY3NzFkODQ3NDc2YTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.PP5669pvR6r2lCEKQInGUp7prLUiu-886iQLskhWe2g",
+        "role": "article",
+        "score": 73,
+        "src": "https://private-user-images.githubusercontent.com/81252890/544347771-e0f42ac6-822f-4b7b-a0ae-07b2a619258d.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODg4NjA4OTYsIm5iZiI6MTc4ODg2MDU5NiwicGF0aCI6Ii84MTI1Mjg5MC81NDQzNDc3NzEtZTBmNDJhYzYtODIyZi00YjdiLWEwYWUtMDdiMmE2MTkyNThkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA5MDglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwOTA4VDA5NDMxNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWJjNWMzZWMyMjNlMDg0ODY3M2VjZWUzZTRhNzM5ZDA0YTNjOWRkNWRkOTk2NTFlY2VlNDY3NzFkODQ3NDc2YTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.PP5669pvR6r2lCEKQInGUp7prLUiu-886iQLskhWe2g",
+        "width": 1974
+      }
+    ],
+    "knowledgePoints": [
+      "LFM可通过WebGPU、ONNX Runtime、WebAssembly、llama.cpp及LEAP SDK部署到浏览器、桌面和移动设备。",
+      "仓库覆盖CPT、SFT、DPO和GRPO等微调路径，并提供基于LoRA、TRL和Unsloth的示例。",
+      "小型本地模型可组合工具调用、RAG、视觉和语音能力，构建隐私优先的端侧Agent。"
+    ],
+    "oneHighValuePoint": "最值得保留的是从模型微调到浏览器、移动端和边缘设备本地部署的完整案例覆盖，可直接作为端侧AI产品原型的选型入口。",
+    "oneLineReview": "这是相关性和实践价值很高的端侧AI案例库，但整体偏资源目录，缺少统一方法论、性能数据和系统性论证。",
+    "primaryCategory": "AI开发与Agent工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "作为端侧AI开发与模型微调的案例索引长期保留，并按具体项目选择性精读",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "端侧模型部署",
+      "模型微调"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该仓库汇总Liquid LFM与LEAP SDK的端到端案例，覆盖桌面、浏览器、移动端和边缘部署，并提供文本、视觉、音频模型的微调教程、Agent应用及社区项目索引。",
+    "tags": [
+      "Liquid LFM",
+      "LEAP SDK",
+      "端侧AI",
+      "模型微调",
+      "Agent开发"
+    ],
+    "title": "Liquid4All/cookbook: Examples, end-2-end tutorials and apps built using Liquid AI Foundational Models (LFM) and the LEAP SDK",
+    "totalScore": 79,
+    "url": "https://github.com/Liquid4All/cookbook/tree/main"
+  },
+  "payloadHash": "sha256:e9b9efa41d786f08e4fa96e46ed51320f84cd069109d3bbcee5e6c6d9c1865be",
+  "refs": {},
+  "revisionId": "sha256:b4e912938205e55e346c49f70c92c3ad457651828bd6c12dbd3aac076c35a4f9",
+  "schemaVersion": 1,
+  "updatedAt": 1790769490065
+}

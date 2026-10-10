@@ -1,0 +1,23 @@
+{
+  "createdAt": 1789618582787,
+  "entityType": "message",
+  "id": "msg_1789618582787_gijrbrpg7",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "请阅读网页内容，为我做一份通俗、精炼的总结与解读，让我快速读懂原文，并判断是否值得细读。\n\n## 一句话看懂\n用一句话说清：这篇文章主要讲什么，最核心的信息或观点是什么。\n\n## 关键内容\n提炼 2—4 个最重要的要点，保留支撑核心观点的关键事实、理由或例子，讲清它们之间的关系，不按段落流水账式缩写。\n\n## 通俗解读\n解释原文最关键或最容易误解的地方：它到底是什么意思，为什么值得关注？必要时用一个简短的日常例子说明；没有理解障碍时可省略。\n\n要求：\n- 忠实于原文，区分作者观点与事实；保留影响理解的前提和限定，不把可能性写成定论。\n- 优先讲清文章本身，不延伸分析长期趋势、底层机制或商业机会。\n- 使用日常语言，必要术语随文解释，不用抽象概念替代说明。\n- 使用 Markdown，默认 200—400 字，简单内容更短；不重复、不凑要点，不为精简丢失关键信息。\n- 如果内容不完整，明确说明，不自行补全。",
+    "is_prompt": true,
+    "model": "gpt-5.6-sol",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "prompt_type": "summary_template",
+    "role": "user",
+    "timestamp": 1789618582787
+  },
+  "payloadHash": "sha256:115fe47aa38c84a248328f76a4efee03682a6ec40a6f8eb47d3ad3eb271a2148",
+  "refs": {
+    "sessionId": "1789533285356_9nv1yqc2"
+  },
+  "revisionId": "sha256:a912a4296685a0f8680ddf11bf229a466355eabbe77ff49d3d0cbc8e85255819",
+  "schemaVersion": 1,
+  "updatedAt": 1789618582787
+}

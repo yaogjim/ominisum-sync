@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789729487924,
+  "entityType": "message",
+  "id": "1789729487925_fdlg71bm",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# OpenWiki：自动生成并持续维护代码仓库文档\n\nOpenWiki 是一个开源代理与命令行工具，用于为代码仓库生成 Wiki，并随代码变化自动更新。它的核心目标是给编码代理提供准确、可检索的仓库上下文，使其理解关键逻辑、文件关系和开发规范，从而减少因信息缺失造成的错误。\n\n## 用结构化 Wiki 替代“超长提示词”\n\nAGENTS.md、CLAUDE.md 等文件适合放代理指令，却不适合承载数百页文档。OpenWiki 借鉴 DeepWiki、AutoWiki 等思路，将详细知识拆分到结构化 Wiki 中，只在代理指令文件里加入引用和使用说明。\n\n这样，编码代理可按需检索相关文档，而不必在每次运行时加载整个仓库知识，既节省上下文窗口，也更易维护，且无需改变开发者现有工作流。\n\n## 从生成文档到自动保持同步\n\n安装后运行 `openwiki --init`，配置模型服务商和 API Key，即可在数分钟内生成仓库 Wiki。它支持 OpenRouter、Fireworks、Baseten、OpenAI、Anthropic 等开放或闭源模型；基于 DeepAgents 构建，并可接入 LangSmith，追踪文档生成和更新过程。\n\n更关键的是，OpenWiki 可通过定时 GitHub Action 在后台更新文档，解决大型仓库因 PR 频繁而导致文档迅速过时的问题。\n\n## 意义在于为代理建立持久上下文\n\n作者认为，代码质量不仅取决于模型能力，也取决于代理能否持续获得最新、结构化的项目知识。OpenWiki 首先聚焦代码仓库，但其“外部知识库＋按需检索＋自动更新”模式，未来也可能用于其他需要长期上下文的代理工作流。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789729487924,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b3b5ad5f3879b0f960999618f75024af8bd4c7e2e59d3e909ace718df61a7be0",
+  "refs": {
+    "sessionId": "1782985458032_2xmdao13"
+  },
+  "revisionId": "sha256:34cd9327f85f8b9a8487f59709e9c2d31aa92c9156db1f36eb46998756642188",
+  "schemaVersion": 1,
+  "updatedAt": 1789729487924
+}

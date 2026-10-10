@@ -1,0 +1,67 @@
+{
+  "createdAt": 1783301387610,
+  "entityType": "session",
+  "id": "1783301387610_2mc4sxpd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "阅读system-prompt.md和14个skills文件，提取可复用的设计审查清单",
+      "将accessibility-audit、ai-slop-check、polish-pass等流程改造成自己的AI工作流模板",
+      "用真实设计任务测试该提示词，并记录其在视觉多样性、可访问性和交互细节上的改进效果"
+    ],
+    "archiveReason": "包含较完整的设计协作型系统提示词框架、技能拆分方式和可复用的设计审查流程",
+    "classifiedAt": 1783301426353,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Claude设计提示库",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "优秀设计助手提示词应覆盖内容纪律、视觉层级、可访问性、交互状态和系统化组件思维",
+      "通过明确技能触发条件和分阶段流程，可以减少模型输出泛化、模板化和AI味设计",
+      "针对不同模型能力需要调整提示词强度，较新的模型更适合条件式指令而非强制配额式指令"
+    ],
+    "oneHighValuePoint": "将设计助手能力拆成生产、系统抽取和审查三类可调用技能，便于构建可复用的AI设计工作流。",
+    "oneLineReview": "这是一个实用性较强的AI设计提示词框架，但缺少真实效果对比和案例验证。",
+    "primaryCategory": "AI提示词工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，可作为AI设计助手提示词和审查流程的参考模板",
+    "secondaryCategories": [
+      "设计系统",
+      "前端体验设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该仓库介绍了一个逆向整理的Claude设计系统提示词与14个技能流程，强调避免AI模板化审美、提升可访问性、视觉层级、交互状态和设计系统化输出，适合用于构建AI设计协作助手。",
+    "tags": [
+      "Claude",
+      "system prompt",
+      "design system",
+      "accessibility",
+      "AI设计协作"
+    ],
+    "title": "Trystan-SA/claude-design-system-prompt: Reverse-engineered system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator.",
+    "totalScore": 71,
+    "url": "https://github.com/Trystan-SA/claude-design-system-prompt"
+  },
+  "payloadHash": "sha256:f8d03d089bb4a5a8c3967ee923def66be1342d6e3579d7af9055cc65d11ea32b",
+  "refs": {},
+  "revisionId": "sha256:bc2d20350f4f4805220b19f291e7070fac39a70cf38716cc26c1366be234f8fa",
+  "schemaVersion": 1,
+  "updatedAt": 1789695758666
+}

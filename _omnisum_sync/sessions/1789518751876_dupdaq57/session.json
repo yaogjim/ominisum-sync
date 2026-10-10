@@ -1,0 +1,124 @@
+{
+  "createdAt": 1789518751876,
+  "entityType": "session",
+  "id": "1789518751876_dupdaq57",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "建立“实现Agent—独立评审Agent—测试与真实环境验证—自动修复”的闭环，并为合并设置明确阻断条件。",
+      "为成本增长、权限扩张、架构失控、产品方向变化和关键用户体验设置强制人工检查点。",
+      "记录Agent失败、生产事故和修复过程，用于沉淀风险清单并补充团队的工程经验培养机制。"
+    ],
+    "archiveReason": "基于两个长期复杂项目总结了Agent接管实现、评审与故障调查后的工程变化，并提出注意力瓶颈、风险控制和人才培养等可长期复用的判断框架。",
+    "byline": "马大伟",
+    "classifiedAt": 1789533585709,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 7,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Agent时代的软件工程角色重构",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.bmpi.dev",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://og.bmpi.dev/%E7%BD%AE%E8%BA%AB%20Agent%20%E6%97%B6%E4%BB%A3%EF%BC%9A%E5%BD%93%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%A7%8B%E4%B8%8D%E5%86%8D%E9%9C%80%E8%A6%81%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E5%B8%88.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://og.bmpi.dev/置身 Agent 时代：当软件开始不再需要软件工程师.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "Agent化开发的主要瓶颈可能从工程时间转向人类注意力，应按产品方向、成本、权限、架构和用户体验等后果等级分配人工介入。",
+      "软件工程经验不会立即失效，但其作用会从亲自实现转向判断何时不能相信Agent，以及哪些风险必须由人承担。",
+      "当前工作流依赖资深人员的判断，却可能减少初级工程师通过编码、评审和事故处理积累经验的机会。"
+    ],
+    "metaAuthor": "马大伟",
+    "oneHighValuePoint": "当Agent能够承担实现、评审和调查后，人类工程经验的核心价值会从直接生产代码转向识别高后果风险、设置边界并分配有限注意力。",
+    "oneLineReview": "案例具体、视角前沿且论证克制，虽不是完整操作手册，但对理解Agent时代的软件生产模式具有较高参考价值。",
+    "primaryCategory": "AI Agent开发",
+    "published": "2026-09-15T00:00:00Z",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并存档，作为Agent开发流程和人类风险控制角色的长期案例参考",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+          "@type": "Person",
+          "name": "马大伟"
+        },
+        "dateModified": "2026-09-15T16:09:30+08:00",
+        "datePublished": "2026-09-15T00:00:00Z",
+        "description": "从 Free4Chat 和策引两个长期项目出发，记录当 Coding Agent 开始接管实现、Review、测试、故障分析与部分运维后，软件工程师的角色、经验价值和培养路径正在发生什么变化。",
+        "headline": "置身 Agent 时代：当软件开始不再需要软件工程师",
+        "image": "https://www.bmpi.dev/images/logo.png",
+        "keywords": [
+          "AI Agent",
+          "Software Engineering",
+          "Coding Agent",
+          "Agentic Coding",
+          "Code Review",
+          "Human-Agent Collaboration"
+        ],
+        "mainEntityOfPage": {
+          "@id": "https://www.bmpi.dev/dev/agent-era-software-engineering/",
+          "@type": "WebPage"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bmpi.dev/images/logo.png"
+          },
+          "name": "BMPI.dev"
+        }
+      }
+    ],
+    "schemaAuthor": "马大伟",
+    "schemaTypes": [
+      "BlogPosting"
+    ],
+    "secondaryCategories": [
+      "软件工程",
+      "产品开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "siteName": "BMPI.dev",
+    "summaryBrief": "文章以Free4Chat和策引两个长期项目为样本，描述Agent接管实现、评审、测试与故障调查后的开发模式，并分析人类角色向产品方向、成本、体验和风险责任集中，以及人才培养面临的新问题。",
+    "tags": [
+      "Agent开发",
+      "AI编程",
+      "软件工程",
+      "人类注意力",
+      "风险控制"
+    ],
+    "title": "置身 Agent 时代：当软件开始不再需要软件工程师",
+    "totalScore": 79,
+    "url": "https://www.bmpi.dev/dev/agent-era-software-engineering/"
+  },
+  "payloadHash": "sha256:f66b449cd121bf55cd79c7e414c36dfecaf207a627827946d40b231f7a9b7f61",
+  "refs": {},
+  "revisionId": "sha256:c18e39942168559ad954382e8e39693ea4d0ea49415cd6217eb0da4b3e8999ca",
+  "schemaVersion": 1,
+  "updatedAt": 1790770200497
+}

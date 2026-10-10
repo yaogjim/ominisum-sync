@@ -1,0 +1,25 @@
+{
+  "createdAt": 1785840808103,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1785840808103",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# GenOffice：把 AI 深度嵌入 Office 编辑流程的开源办公套件\n\n## 一句话概括\n\nGenOffice 是一套面向 macOS 和 Windows 的**AI 原生桌面办公套件**，覆盖文档、表格、演示文稿和 PDF。它的核心特色不是增加一个 AI 聊天框，而是让 AI 直接理解并修改文件内容，同时尽可能保持原始格式不变。\n\n## 产品组成\n\nGenOffice 由 4 个编辑器和 1 个统一入口组成：\n\n- **Docs**：编辑`.docx`，支持分页、样式、批注、修订、公式和手写内容。\n- **Sheets**：编辑`.xlsx`，支持图表、数据透视表、切片器、条件格式和公式追踪。\n- **Slides**：编辑`.pptx`，支持母版、图表、裁剪、手写和精细文本排版。\n- **PDF**：支持阅读、批注、表单、盖章、签名及页面操作。\n- **Shell**：统一首页、多标签页管理和自动更新。\n\n## 核心差异化：局部修改，不破坏原文件\n\nGenOffice 将原始文件视为 “唯一事实来源”，只替换用户或 AI 真正修改过的部分。\n\n以 Word 为例：\n\n1. 打开文件后，完整保存原始文件。\n2. 将文档解析成带原始位置索引的内容块。\n3. 用户或 AI 编辑时，只标记发生变化的段落。\n4. 保存时，仅重新生成这些段落。\n5. 其余内容按原始字节保留。\n\n这可以显著降低 Office 文件经过第三方编辑器保存后出现的**排版错乱、样式丢失或兼容性问题**。表格和演示文稿也采用类似的 “窄范围补丁” 思路。\n\n## AI 能力：从问答助手升级为操作代理\n\n每个应用都内置同一套 AI 面板：\n\n- Docs 支持按内容块进行 AI 编辑、版本快照和差异对比。\n- Sheets、Slides 和 PDF 中，AI 可通过工具调用直接读取和操作文件状态。\n- 底层共享统一的 Agent 循环、技能组合、流式输出和模型提供商抽象。\n\n模型请求通过 Genspark 服务端转发，本地不保存模型 API Key；但这也意味着 AI 功能依赖 Genspark 账号及其云服务。\n\n## 技术架构\n\n项目采用**Electron + TypeScript**构建，五个应用共享一套引擎层：\n\n- 文档、演示文稿和文件解析拥有独立引擎。\n- 表格 UI 基于开源 Univer，并通过 Rust 组件处理`.xlsx`导入与导出。\n- PDF 基于 pdf.js 和 pdf-lib。\n- AI、搜索、国际化、UI、文件管理等能力沉淀为共享包。\n- 支持单元测试、类型检查、端到端测试及 macOS/Windows 打包。\n\n整体架构强调：**编辑器 UI 与底层文件引擎解耦，多应用复用统一 AI 基础设施。**\n\n## 安全与开源策略\n\n- 提供渲染器沙箱、IPC 校验、外部链接限制及 AI 内容威胁模型。\n- 主体代码采用**Apache License 2.0**。\n- `ee/`目录保留给未来企业版模块，使用单独的企业许可证。\n- 品牌名称和 Logo 不随开源许可证授权，分叉项目需要更换品牌。\n\n## 产品判断\n\nGenOffice 的真正价值不在于 “又一个 Office 替代品”，而在于两个设计选择：\n\n1. **AI 是编辑流程的一部分**，能够直接执行结构化修改，而不只是生成文本建议。\n2. **以文件兼容性为底线**，通过局部补丁减少对复杂 Office 文件的破坏。\n\n从当前版本号、贡献者规模及桌面端技术路线看，项目仍偏早期。其后续竞争力主要取决于三点：复杂文件的兼容稳定性、AI 操作的准确与可控性，以及对微软 Office 核心工作流的替代程度。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1785840808103,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:208b0d87242e2a5e960fc6c10d1af8af26e66281e21273129acca549d9408585",
+  "refs": {
+    "sessionId": "1785840808176_eq0xwy8c"
+  },
+  "revisionId": "sha256:0a161e5876ef1bc243e9c21e9fde78907f9f8a3dd8e4767660d49df0eaf27a64",
+  "schemaVersion": 1,
+  "updatedAt": 1785840808103
+}

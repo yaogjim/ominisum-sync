@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786353697433,
+  "entityType": "session",
+  "id": "1786353697433_i78nhx0m",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "先检查闲置手机是否为可root的ARM64设备，并验证Termux、Tailscale及后台常驻能力，避免在硬件支持不完整时替换Android。",
+      "将服务版本、路由、电源设置、密钥渲染和健康检查纳入Ansible，以固定摘要和原子软链接建立可重复部署及回滚流程。",
+      "为有状态数据配置自动异地备份并测试恢复，同时不要把共享Android内核的chroot当作恶意工作负载隔离边界。"
+    ],
+    "archiveReason": "提供了从运行环境、进程监督、声明式部署到内网穿透、监控和备份的完整实践链，并明确说明了适用条件与安全边界。",
+    "classifiedAt": 1786354921799,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "用安卓手机替代个人VPS",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "seg6.space",
+    "favicon": "https://seg6.space/img/favicon.ico",
+    "knowledgePoints": [
+      "在手机上保留原生Android可继续利用成熟的驱动、电源管理、调制解调器和GPU支持，Termux适合作为轻量宿主控制层。",
+      "PRoot适合无root的应用兼容，但其用户态系统调用转换会影响浏览器等高频文件与进程操作负载；root chroot可减少这类开销，但不提供安全隔离。",
+      "可靠恢复链可设计为Android启动、Tailscale常驻、Termux:Boot启动runit、服务拉起、内外网健康检查，并通过固定摘要、原子软链接和独立数据目录支持回滚。"
+    ],
+    "oneHighValuePoint": "最值得保留的是双层架构：让Android与Termux负责硬件、网络和监督，以受版本控制的chroot文件系统承载Linux应用，从而兼顾驱动兼容性与部署可复现性。",
+    "oneLineReview": "这是一个技术细节充分、边界条件清晰的手机自托管案例，但性能证据主要来自作者的单机实践。",
+    "primaryCategory": "个人基础设施与服务器运维",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并存档，作为低成本自托管、移动网络接入和可复现部署的实践参考",
+    "secondaryCategories": [
+      "Android与Linux兼容",
+      "自动化部署"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者将闲置安卓手机改造成个人服务器：以Termux管理宿主，用root chroot运行ARM64应用，并结合runit、Ansible、Tailscale和Cloudflare Tunnel，实现自动恢复、声明式部署、远程访问、监控与异地备份。",
+    "tags": [
+      "Termux",
+      "ARM64服务器",
+      "Ansible",
+      "Tailscale",
+      "Cloudflare Tunnel"
+    ],
+    "title": "my server is a phone now",
+    "totalScore": 77,
+    "url": "https://seg6.space/posts/phone-server/"
+  },
+  "payloadHash": "sha256:07d5f21f33bb896dcba07b041fa4a6d628b1f984a17dd2eb35d78725b31e3c92",
+  "refs": {},
+  "revisionId": "sha256:fbf4de13e6d79d0957ee495ecabac77a51931ed9867613a7dda2e62434e4ffe1",
+  "schemaVersion": 1,
+  "updatedAt": 1789694189075
+}

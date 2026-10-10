@@ -1,0 +1,67 @@
+{
+  "createdAt": 1790672319077,
+  "entityType": "session",
+  "id": "1790672319077_8bna3kqx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在Unsloth设置中启用Decision API并下载Laya模型。",
+      "使用文中的请求示例测试分类结果及返回的概率字段。",
+      "如需迁移Jev集成，修改SDK环境变量，并用实际样本重新设定概率阈值。"
+    ],
+    "archiveReason": "包含本地部署入口、可复现的请求示例，以及迁移时需要重新设定阈值的关键说明。",
+    "classifiedAt": 1790672342790,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "用Unsloth本地部署Laya决策模型",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "unsloth.ai",
+    "favicon": "https://unsloth.ai/docs/~gitbook/image?url=https%3A%2F%2F2815821428-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Forganizations%252FHpyELzcNe0topgVLGCZY%252Fsites%252Fsite_mXXTe%252Ficon%252FUdYqQdRpLXMz6O8ejTLD%252Funsloth%2520sticker.png%3Falt%3Dmedia%26token%3D2a5ba961-51cb-4094-8545-6eb20ad1e06e&width=48&height=48&sign=b709942c962da64a60984fd0aa47638b&sv=3",
+    "knowledgePoints": [
+      "Decision API可在一次请求中对同一输入提出选择、是非和评分问题。",
+      "choice和score返回的confidence不等同于某个选项的概率；按选项触发动作应查看probabilities。",
+      "Jev兼容迁移可通过设置SDK的服务地址和密钥完成，但原有置信度阈值不能直接沿用。"
+    ],
+    "oneHighValuePoint": "从Jev迁移时，应依据各选项的probabilities重新设定行动阈值，而不是复用confidence阈值。",
+    "oneLineReview": "这是一份可直接用于集成的技术文档，但性能与概率校准效果仍需自行验证。",
+    "primaryCategory": "AI模型部署与集成",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并存档，供本地决策模型集成和Jev迁移时查阅",
+    "secondaryCategories": [
+      "结构化决策API",
+      "本地推理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍如何通过Unsloth在本地运行Laya，并以兼容Jev的API提供文本分类、是非判断和评分服务。它给出请求与响应示例、SDK迁移配置，并提醒迁移时不要沿用原有置信度阈值，选项描述过多还可能被截断。",
+    "tags": [
+      "Unsloth",
+      "Laya",
+      "决策模型",
+      "Jev迁移",
+      "概率阈值"
+    ],
+    "title": "Run and Serve Decision Models Locally with Unsloth: Laya + Jev API | Unsloth Documentation",
+    "totalScore": 73,
+    "url": "https://unsloth.ai/docs/models/decision-laya"
+  },
+  "payloadHash": "sha256:99215063f5654e61c40982b98961ee52a82cd0b40c77e82b17f2cc6e33798ec7",
+  "refs": {},
+  "revisionId": "sha256:d3df769ca7b318f6e8cae193a022391f004351c7a6a5eaeeedd6255d8f9474f0",
+  "schemaVersion": 1,
+  "updatedAt": 1790770924892
+}

@@ -1,0 +1,104 @@
+{
+  "createdAt": 1789958082337,
+  "entityType": "session",
+  "id": "1789958082337_w3rr9zmi",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在类似身份推理游戏中尝试私下共享查验信息时，先确认接收者可信，不要直接向邻座无差别透露。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1790768304827,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 4,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 3,
+      "novelty": 2,
+      "relevance": 2,
+      "transferability": 3
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "科技领袖参与黑手党游戏实录",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://i.ytimg.com/vi/oWdtSmpwFXY/maxresdefault.jpg",
+        "role": "hero",
+        "score": 70,
+        "src": "https://i.ytimg.com/vi/oWdtSmpwFXY/maxresdefault.jpg",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "私下共享身份信息的策略依赖接收者已被确认可信，否则可能向对手泄露关键角色。",
+      "片段中的身份判断多依赖表情、发言量和前局表现，这些线索并未形成可靠的验证链。"
+    ],
+    "oneHighValuePoint": "讨论提出，掌握查验信息的角色可向已确认可信的玩家私下共享信息，以兼顾身份隐藏与信息留存；其效果在所提供片段中未得到验证。",
+    "oneLineReview": "这是带有少量推理策略讨论的娱乐实录，不能因参与者的科技行业身份而视为高价值技术或商业内容。",
+    "primaryCategory": "娱乐与游戏",
+    "published": "2026-06-18T10:00:16-07:00",
+    "rating": "D",
+    "rejectReason": "主体为游戏对话、猜测和玩笑，与核心关注方向联系很弱；零散策略缺少验证，且所提供转录未覆盖最终结果。",
+    "retentionDecision": "不纳入知识库，仅有娱乐或观察游戏互动的用途",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@id": "https://www.youtube.com/watch?v=oWdtSmpwFXY",
+        "@type": "VideoObject",
+        "comment": [
+          {
+            "@type": "https://schema.org/Comment",
+            "author": {
+              "@type": "https://schema.org/Person",
+              "alternateName": "Mike Solana",
+              "name": "@micsolana",
+              "url": "https://www.youtube.com/@micsolana"
+            },
+            "dateCreated": "2026-06-18T10:41:16-07:00",
+            "text": "thanks for watching, everyone. this has been a total blast to produce. we're thinking through a full season now. let me know what rules you'd switch up, and who you'd love to see at the table.",
+            "upvoteCount": 1665
+          }
+        ],
+        "name": "Can Tech's AI Titan Take the Title? (Mafia Episode 3)",
+        "thumbnailUrl": "https://i.ytimg.com/vi/oWdtSmpwFXY/maxresdefault.jpg",
+        "uploadDate": "2026-06-18T10:00:16-07:00"
+      }
+    ],
+    "schemaTypes": [
+      "VideoObject"
+    ],
+    "secondaryCategories": [
+      "群体互动"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "视频记录多位科技行业人士参与黑手党身份推理游戏，围绕夜间行动、身份声明、行为表现和投票展开讨论。片段涉及可信玩家间的信息共享及角色暴露时机，但以娱乐互动为主，所提供转录未包含最终胜负。",
+    "tags": [
+      "黑手党游戏",
+      "社交推理",
+      "隐藏身份",
+      "信息共享"
+    ],
+    "title": "Can Tech's AI Titan Take the Title? (Mafia Episode 3) - YouTube",
+    "totalScore": 27,
+    "url": "https://www.youtube.com/watch?v=oWdtSmpwFXY"
+  },
+  "payloadHash": "sha256:71ebb074cc5eb155f3f721a1b9f2530da1e04fddcbd2f91ed28f1b83dbedc182",
+  "refs": {},
+  "revisionId": "sha256:a510265f1a6ec145a1080011941a9804d8796ce6a450b4b771bc77672f409f9f",
+  "schemaVersion": 1,
+  "updatedAt": 1790768306421
+}

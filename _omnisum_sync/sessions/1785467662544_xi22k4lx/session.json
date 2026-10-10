@@ -1,0 +1,94 @@
+{
+  "createdAt": 1785467662544,
+  "entityType": "session",
+  "id": "1785467662544_xi22k4lx",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "按照文档搭建一个本地语音 Agent 原型，并分别测试 realtime、local、websocket 和 socket 运行模式。",
+      "针对目标硬件比较 Parakeet、Whisper、Qwen3-TTS、Kokoro 或 Pocket TTS 等后端的延迟、资源占用与语言支持。",
+      "使用 OpenAI Realtime 兼容客户端接入系统，验证实时转写、打断、音频流式输出和工具调用事件。"
+    ],
+    "archiveReason": "文章提供了模块化语音 Agent 架构、可替换组件、运行模式、兼容 API、后端选择和部署配置，具有较强的实践与复用价值。",
+    "classifiedAt": 1785484353915,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "本地语音智能体流水线指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1785467709084,
+        "imageId": "img-8",
+        "model": "gpt-5.6-sol",
+        "ocrText": "",
+        "summary": "# Hugging Face Speech-to-Speech：用开源模型搭建本地语音智能体\n\n## 一句话概括\n\n这是一个**低延迟、模块化的语音智能体框架**：将语音检测、语音识别、大模型和语音合成串联起来，并通过兼容 OpenAI Realtime API 的接口对外提供服务。\n\n它既可以接入云端大模型，也可以完全运行在本地硬件上。\n\n## 核心架构\n\n系统采用经典的级联链路，各模块独立运行并通过队列连接：\n\n> **VAD 语音检测 → STT 语音转文字 → LLM 生成回答 → TTS 文字转语音**\n\n- **VAD**：识别用户何时开始、停止说话，支持打断。\n- **STT**：实时转写用户语音，可输出中间结果。\n- **LLM**：流式生成文本，并支持工具调用。\n- **TTS**：将回答合成为语音并流式返回。\n\n它并非端到端语音大模型，而是强调**模块可替换、易调试、可组合**的工程方案。\n\n## 主要能力\n\n### 1. 兼容 OpenAI Realtime API\n\n服务通过 WebSocket 暴露`/v1/realtime`，现有 OpenAI Realtime 客户端只需切换服务地址，即可连接自建语音后端。\n\n支持实时转写、语音流式输出、用户打断、工具调用和取消回答等核心事件。\n\n### 2. 支持云端与本地混合部署\n\nLLM 可以连接：\n\n- OpenAI、HF Inference Providers、OpenRouter 等云服务；\n- 自建的 vLLM、llama.cpp 服务；\n- Transformers、MLX-LM 等本地推理后端。\n\n因此可以灵活组合：\n\n- 本地 STT + 云端 LLM + 本地 TTS；\n- 或 STT、LLM、TTS 全部本地运行。\n\n### 3. 全链路组件可替换\n\n项目支持多种模型后端：\n\n| 环节 | 主要选择 |\n|---|---|\n| STT | Parakeet TDT、Whisper、Faster Whisper、Paraformer |\n| LLM | OpenAI 兼容 API、Transformers、MLX-LM |\n| TTS | Qwen3-TTS、Kokoro、Pocket TTS、ChatTTS、MMS |\n| VAD | Silero VAD v5 |\n\n默认组合为**Parakeet TDT + OpenAI 兼容 LLM + Qwen3-TTS**。\n\n## 运行与部署方式\n\n项目提供四种运行模式：\n\n- **Realtime**：完整的 OpenAI Realtime 兼容服务，适合应用和硬件接入。\n- **Local**：直接使用本机麦克风和扬声器。\n- **WebSocket**：传输原始 PCM 音频，适合轻量自定义客户端。\n- **TCP Socket**：适合远程部署，但不支持完整的打断、转写和工具事件。\n\n同时支持 Docker、Linux CUDA/CPU 和 Apple Silicon；macOS 提供基于 MPS、MLX 的优化配置。\n\n## 多语言能力\n\n语言覆盖由 STT 和 TTS 模型决定：\n\n- Parakeet TDT 支持约 25 种欧洲语言；\n- Whisper 提供更广泛的多语言识别；\n- Paraformer 更适合中文场景；\n- Qwen3-TTS 支持多语言自动识别；\n- ChatTTS 主要支持中文和英文。\n\n系统既支持固定语言，也支持自动检测用户每轮使用的语言。\n\n## 扩展能力：LLM Proxy\n\n开启代理后，语音服务器还能额外暴露标准 OpenAI 接口，用于并行执行：\n\n- 对话总结；\n- 标题生成；\n- 后台 Agent；\n- 工具调用任务。\n\n这些任务不会被新的语音输入打断。但该代理默认**没有鉴权和限流**，只能用于可信网络，或部署在带访问控制的网关之后。\n\n## 产品与工程价值\n\n### 核心优势\n\n- **降低迁移成本**：兼容 OpenAI Realtime API，客户端改造较小。\n- **避免供应商锁定**：每个环节都可以替换模型或服务商。\n- **兼顾隐私与成本**：支持完全本地化部署。\n- **适合快速迭代**：级联架构便于分别优化识别、推理和声音效果。\n- **具备生产验证**：已作为数千台 Reachy Mini 机器人的对话后端。\n\n### 主要取舍\n\n- 级联架构比端到端语音模型更灵活，但链路更长，误差和延迟可能逐级累积。\n- LLM 通常是算力消耗和响应延迟的主要瓶颈。\n- 不同后端存在 CUDA、NumPy 和平台依赖冲突，生产部署仍需较强工程能力。\n- 多语言效果取决于 STT、LLM、TTS 三者是否同时支持目标语言。\n\n## 总结\n\n该项目本质上是一个**面向开发者的开源语音 Agent 基础设施层**：用标准 API 屏蔽底层模型差异，同时保留本地部署和自由替换组件的能力。\n\n它尤其适合智能硬件、机器人、客服、陪伴式产品，以及对**实时交互、数据隐私和模型自主权**有较高要求的团队。",
+        "url": "https://github.com/huggingface/speech-to-speech/raw/main/docs/assets/endpoint-swap-light.gif",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "Switching an OpenAI Realtime client endpoint from hosted OpenAI to a self-hosted speech-to-speech server",
+        "caption": "",
+        "height": 340,
+        "id": "img-8",
+        "nearbyText": "Speech To Speech: Build voice agents with open-source models A low-latency, fully modular voice-agent pipeline: VAD -> STT -> LLM -> TTS, exposed through an OpenAI Realtime-compatible WebSocket API. Every component is swappable. The LLM slo...",
+        "resolvedUrl": "https://github.com/huggingface/speech-to-speech/raw/main/docs/assets/endpoint-swap-light.gif",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/huggingface/speech-to-speech/raw/main/docs/assets/endpoint-swap-light.gif",
+        "width": 640
+      }
+    ],
+    "knowledgePoints": [
+      "语音 Agent 可拆分为 VAD、STT、LLM、TTS 四个独立阶段，并通过线程与队列实现流式流水线。",
+      "OpenAI 兼容的 Responses API、Chat Completions 和 Realtime API 可以统一连接托管模型、本地 vLLM 或 llama.cpp 服务。",
+      "本地语音系统的多语言能力取决于 STT 与 TTS 后端的语言覆盖，不能仅由流水线框架本身保证。"
+    ],
+    "oneHighValuePoint": "将 VAD、STT、LLM 和 TTS 解耦为可替换后端，并通过 OpenAI Realtime 兼容 WebSocket API 对外提供统一接口，降低了本地语音 Agent 与客户端、模型服务之间的集成成本。",
+    "oneLineReview": "这是一份信息密集且可直接落地的本地语音 Agent 工程文档，但部分性能和生产规模描述仍缺少独立验证。",
+    "primaryCategory": "AI Agent 开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "值得精读并长期保留，适合作为本地语音 Agent 架构与部署参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "语音技术",
+      "本地部署"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 Hugging Face 开源语音智能体项目，采用 VAD、STT、LLM、TTS 四阶段流水线，并通过队列实现低延迟流式处理。文档覆盖本地安装、可替换模型、OpenAI Realtime 兼容接口、多种运行模式、LLM 后端、多语言支持、Docker 与 CLI 配置。",
+    "tags": [
+      "语音智能体",
+      "VAD/STT/LLM/TTS",
+      "OpenAI Realtime API",
+      "本地推理",
+      "开源模型"
+    ],
+    "title": "huggingface/speech-to-speech: Build local voice agents with open-source models",
+    "totalScore": 84,
+    "url": "https://github.com/huggingface/speech-to-speech"
+  },
+  "payloadHash": "sha256:45e6c26dde334aedafbc43f92df2f4bc594cce595931fb23fbb7e349b7f4948d",
+  "refs": {},
+  "revisionId": "sha256:b8af2058862a6498c5424ff59730d63f7f2677be072363ef71cb2bcaf47857f6",
+  "schemaVersion": 1,
+  "updatedAt": 1789694316170
+}

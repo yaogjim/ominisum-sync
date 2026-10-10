@@ -1,0 +1,84 @@
+{
+  "createdAt": 1787285728248,
+  "entityType": "session",
+  "id": "1787285728248_v20juzdk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为AI产品建立按任务类型、质量要求和成本约束划分的模型路由方案。",
+      "持续跟踪每类任务的完成成本、成功率和人工替代价值，而非只统计Token消耗量。",
+      "评估AI项目时计算AI成本对应的增量收入或利润，并据此决定模型选择与功能扩展。"
+    ],
+    "archiveReason": "核心判断可用于AI产品架构、成本优化和投资分析，但文中关键数据及案例缺少可核实来源。",
+    "byline": "Alpha哥AI投资日记",
+    "classifiedAt": 1789724965612,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI用量增长与模型收入脱钩",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 1024,
+        "id": "img-5",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HQJYqWNa0AATCnh?format=png&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HQJYqWNa0AATCnh?format=png&name=medium",
+        "width": 757
+      }
+    ],
+    "knowledgePoints": [
+      "企业可按任务难度和质量要求，将少量高价值任务交给前沿模型，将分类、检索、总结等任务路由至低成本模型。",
+      "Token使用量与模型厂商收入可能脱钩，因为模型降价、开放权重模型替代和智能路由会持续压低单位Token收益。",
+      "AI价值链的利润可能从算力和模型提供商，部分转移至最能以低成本创造增量收入的应用企业。"
+    ],
+    "oneHighValuePoint": "评估AI商业价值时，不应只看Token或工作负载增长，而应比较单位任务成本与其创造的增量收入和利润。",
+    "oneLineReview": "文章提出了有价值的AI利润迁移视角，但关键经营数据和案例缺少来源，结论仍需进一步验证。",
+    "primaryCategory": "AI商业与投资分析",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留其关于模型路由、单位任务成本和AI价值链利润迁移的分析框架",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "法律科技",
+      "AI产品与基础设施"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以Harvey引入开放权重模型和Canva压低推理成本为例，提出Token用量增长未必同步转化为前沿模型厂商收入，企业竞争将转向任务路由、单位任务成本与AI投入带来的增量利润。",
+    "tags": [
+      "模型路由",
+      "推理成本",
+      "开放权重模型",
+      "单位任务成本",
+      "AI商业模式"
+    ],
+    "title": "Alpha哥AI投资日记 🌴 📈: Harvey 是现在最成功的 Legal AI 公司之一，ARR 已经大约 3",
+    "totalScore": 70,
+    "url": "https://x.com/AlphaguyTrading/status/2090330678043062411"
+  },
+  "payloadHash": "sha256:f95005432a6121dd125eb456aacb06f4e617fafb86c243e799bab75c2aef7f9e",
+  "refs": {},
+  "revisionId": "sha256:72f76b0110b1f973587af58f0c69e3c430b9c44a0ca80f53f07e4bd3380cb035",
+  "schemaVersion": 1,
+  "updatedAt": 1789863569923
+}

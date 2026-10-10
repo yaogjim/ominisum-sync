@@ -1,0 +1,65 @@
+{
+  "createdAt": 1782900997147,
+  "entityType": "session",
+  "id": "1782900997147_s4e1a4z4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注智能体记忆，可单独检索 Harrison Chase 原文《Wiki Memory》。",
+      "调研 DeepWiki、AutoWiki、LLM Wiki 的具体实现差异，而非保存该推文片段。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783039894760,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 2,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "智能体维基记忆模式初现",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量过低，仅提出“维基记忆”概念和少量案例名称，缺乏方法、证据和深入分析，长期保留价值有限。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "智能体记忆领域尚未形成统一标准，不同团队对 memory 的定义差异较大。",
+      "Wiki Memory 可能代表一种将信息结构化为可持续更新知识库的智能体记忆方向。"
+    ],
+    "oneHighValuePoint": "将智能体记忆抽象为“Wiki Memory”这一正在出现的共同模式。",
+    "oneLineReview": "有趋势提示价值，但内容过于碎片化，不值得长期保存。",
+    "primaryCategory": "AI智能体",
+    "rating": "D",
+    "rejectReason": "内容主要是推文片段和示例罗列，缺少完整论证、实现细节和可操作方法，热门回复也与主题关联较弱。",
+    "retentionDecision": "建议立即删除，最多记录关键词后丢弃",
+    "secondaryCategories": [
+      "智能体记忆",
+      "社交媒体观点"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章摘录了一条关于智能体记忆的推文，指出“维基记忆”可能是当前智能体记忆的一种常见模式，并列举 DeepWiki、AutoWiki、LLM Wiki 等例子，但缺少具体解释和技术细节。",
+    "tags": [
+      "Wiki Memory",
+      "Agent Memory",
+      "LLM",
+      "DeepWiki",
+      "AutoWiki"
+    ],
+    "title": "Harrison Chase: a common pattern for (a part of) memory that we see: Wiki Memory Examples: - Dee…",
+    "totalScore": 35.5,
+    "url": "https://x.com/hwchase17/status/2071963841009942671"
+  },
+  "payloadHash": "sha256:8c162c8e2548417d5e7122deebe093fbf1cf6e0766ee8705112259098949b5f7",
+  "refs": {},
+  "revisionId": "sha256:fe3cede5203fe1fe26c3f3b5d35c7b95ce04d47d7e62d28967093a70763049a6",
+  "schemaVersion": 1,
+  "updatedAt": 1783039895222
+}

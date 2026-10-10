@@ -1,0 +1,84 @@
+{
+  "createdAt": 1786613701467,
+  "entityType": "session",
+  "id": "1786613701467_0jh6hors",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在隔离项目中安装Ante，验证其对CLAUDE.md、AGENTS.md及现有Skills配置的兼容情况。",
+      "用/term分别启动实现与测试Agent，检验会话持久化、权限审批和人工接管流程。",
+      "使用自己的典型任务复测内存、CPU、磁盘读写、完成时间和任务质量，再决定是否替换现有CLI。"
+    ],
+    "archiveReason": "直接涉及AI编程Agent选型，包含跨Agent调度、本地模型管理、配置复用及资源测试数据，具有明确实践价值。",
+    "byline": "劳伦斯",
+    "classifiedAt": 1789725041650,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Ante CLI能力与性能实测",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HPf8O5CaAAAvFYc?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HPf8O5CaAAAvFYc?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "Ante通过tmux持久会话调度Claude Code与Codex，可让实现、测试等角色并行工作，并允许用户观察和接管终端。",
+      "Ante可兼容AGENTS.md与CLAUDE.md，并通过profile限定工具集合和系统提示词，从而复用既有配置或构造极简Agent。",
+      "资源效率与任务速度需要联合评估；低内存和低CPU并不必然意味着更快，应同时记录峰值内存、CPU、磁盘读写和墙钟时间。"
+    ],
+    "oneHighValuePoint": "在同一组20任务并发测试中，Ante显著降低内存、CPU和磁盘读取量，同时明确暴露相对Claude Code慢约50%的代价，为低配设备上的Agent选型提供了具体权衡依据。",
+    "oneLineReview": "这是一篇操作信息充足、选型价值较高的Agent CLI评测，但官方评测依赖和复现实验细节不足限制了证据强度。",
+    "primaryCategory": "AI编程工具与Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读关键操作与测试口径，存档供低配环境和多Agent方案选型参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "多Agent协作",
+      "开发工具评测"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章实测Ante CLI的安装、配置兼容、跨Agent调度、本地模型管理与配置定制，并用公开榜单和20任务并发数据对比同类工具，强调其低资源占用优势及约五成速度代价。",
+    "tags": [
+      "Ante CLI",
+      "多Agent协作",
+      "本地模型",
+      "资源占用",
+      "终端编程Agent"
+    ],
+    "title": "牛逼！又一个黑马级别 Agent CLI 出现 — Ante CLI 评测：麻雀虽小，五脏俱全",
+    "totalScore": 74,
+    "url": "https://x.com/LawrenceW_Zen/status/2087464432330768579"
+  },
+  "payloadHash": "sha256:956dedfe65f66e1ce48eff70b544805c32ffc1b38413286d8e43c72e7cab8f42",
+  "refs": {},
+  "revisionId": "sha256:529294c735bb0adddf9fbbbf10a09caccdfe0e97afbb3cde3cb0e6de909f8bfe",
+  "schemaVersion": 1,
+  "updatedAt": 1789863585322
+}

@@ -1,0 +1,68 @@
+{
+  "createdAt": 1786353767551,
+  "entityType": "session",
+  "id": "1786353767551_9dv5tohu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "针对类似高竞争场景制作最小数据库原型，使用InnoDB状态和负载测试直接观察锁数量、间隙锁、死锁及吞吐变化。",
+      "在SQL中加入业务流程标签，并在数据库代理层聚合各调用方的连接持有时间，以定位连接池耗尽的来源。",
+      "迁移关键状态系统时采用影子双写、业务结果对账、分批放量和可立即启用的回滚开关。"
+    ],
+    "archiveReason": "包含可复用的并发控制设计、InnoDB锁优化、连接归因方法及影子双写迁移流程，并提供生产指标验证。",
+    "classifiedAt": 1786354860718,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 9,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Shopify的MySQL库存预留重构",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "shopify.engineering",
+    "favicon": "https://shopify.engineering/favicon.ico",
+    "knowledgePoints": [
+      "将每个可售单位建为独立行并使用SKIP LOCKED可绕开热点数量行竞争，但必须通过按商品与地点设置上限的有界池及补充机制控制表规模。",
+      "复合主键、READ COMMITTED隔离级别和一致的跨表加锁顺序，可分别减少二级索引锁、规避间隙锁阻塞并降低死锁风险。",
+      "低CPU与高排队并存时，应从查询延迟扩展到连接持有时间和业务调用方归因，检查整个请求链路而非只优化表面热点。",
+      "影子双写、真实流量对比、渐进式切换和保留回滚开关，可降低关键状态系统迁移的正确性与上线风险。"
+    ],
+    "oneHighValuePoint": "最有价值的是将SQL业务标签与ProxySQL连接占用统计结合，按业务流程归因连接持有时间，从而发现真正瓶颈并不在库存查询，而在其他结账事务长期占用连接。",
+    "oneLineReview": "这是一篇证据较充分、技术细节扎实且可迁移性强的高并发数据库重构案例。",
+    "primaryCategory": "高并发系统架构",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并长期存档，作为高并发库存、数据库锁竞争和安全迁移的工程案例",
+    "secondaryCategories": [
+      "数据库性能优化",
+      "工程迁移与可观测性"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章复盘Shopify将库存预留从Redis迁至MySQL：以单位行、SKIP LOCKED和有界池降低竞争，用连接标签定位真实瓶颈，并通过影子双写、渐进切换和回滚开关完成上线。",
+    "tags": [
+      "MySQL",
+      "Redis迁移",
+      "SKIP LOCKED",
+      "库存预留",
+      "数据库连接池"
+    ],
+    "title": "We replaced Redis with MySQL for inventory reservations—and it scaled (2026) - Shopify",
+    "totalScore": 83,
+    "url": "https://shopify.engineering/scaling-inventory-reservations"
+  },
+  "payloadHash": "sha256:6287be9ac8fab0b8bb3c7ed8c6ad3ba32a9621be700657ca90826a051d1b351c",
+  "refs": {},
+  "revisionId": "sha256:f823944068d44abfae68a6321c12612928db68654ad114bdb1dc215d7011fc19",
+  "schemaVersion": 1,
+  "updatedAt": 1789694175240
+}

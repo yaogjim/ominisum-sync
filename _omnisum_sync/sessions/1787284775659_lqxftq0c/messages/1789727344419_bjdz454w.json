@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727344418,
+  "entityType": "message",
+  "id": "1789727344419_bjdz454w",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Flipkart 用 AI 智能体召回“搜索未购买”用户，点击率提升约 285%\n\n文章介绍了 Flipkart 的一项线上实践：识别有明确购物兴趣、但搜索后未下单的用户，让 AI 智能体完成商品调研和比较，再于次日通过 WhatsApp 主动推送有价值的选购建议。核心不是简单催单，而是补上用户从“产生意向”到“做出决定”之间的信息缺口。\n\n## 从搜索意图出发，AI 代用户完成选购功课\n\n系统先从搜索日志中筛选“探索型关键词且无转化”的用户，例如搜索“2026 年最好的智能手机”。这类用户通常已有潜在购买意图，却可能因比较成本高、信息不足而放弃。\n\n随后，AI 根据用户需求生成包含推荐、对比或替代方案的内容，再通过 WhatsApp 触达。热门回复补充称其使用了 Google Gemini 2.5 Flash，但原报告披露的技术细节有限。\n\n## 23 天带来 3.7 万次访问，并出现主动传播\n\n该项目在 23 天内发送了 15,061 条消息，带来 37,258 次访问；点击率较历史同品类 WhatsApp 活动高约 285%。多个日期的访问量甚至超过当日发送量，说明部分内容被用户主动转发，产生了二次传播。\n\n## 价值在于把内容营销变成个性化决策服务\n\n作者认为，这套逻辑也适用于企微、短信或 Push 等渠道。相比传统再营销，它通过提供真实有用的信息建立信任，而非只靠优惠刺激成交。\n\n尤其对“A 对比 B”“Top 5 榜单”“A 的替代品”等传统 SEO 内容，可追加 AI Agent，将通用文章转化为面向具体用户的个性化建议。不过现有信息主要证明了访问和点击提升，尚未披露最终成交率、成本与长期留存效果。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727344418,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:862b1b2308749f8d69ce1eb51921bdd73172cf8d44582c72b15b8eb6fb69c367",
+  "refs": {
+    "sessionId": "1787284775659_lqxftq0c"
+  },
+  "revisionId": "sha256:27a2f8b3cc42eee6a84d7f009b8bce522bbd133fb89251a3ff2e46d15c22e404",
+  "schemaVersion": 1,
+  "updatedAt": 1789727344418
+}

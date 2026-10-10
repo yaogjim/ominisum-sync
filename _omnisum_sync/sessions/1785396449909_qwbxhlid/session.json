@@ -1,0 +1,94 @@
+{
+  "createdAt": 1785396449909,
+  "entityType": "session",
+  "id": "1785396449909_qwbxhlid",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查现有Agent历史回放是否遗漏客户端解析后的命令内容。",
+      "为命令顺序、空命令和名称转义添加回归测试。",
+      "运行提示词模块及后端全量Go测试验证修复。"
+    ],
+    "archiveReason": "对AI编程工具和Agent历史消息构造具有直接参考价值，并给出了明确的边界处理与测试范围。",
+    "classifiedAt": 1789725167075,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Cursor命令回放修复方案",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1785396465063,
+        "imageId": "img-1",
+        "model": "gpt-5.6-sol",
+        "ocrText": "",
+        "summary": "# Cursor BYOK 修复：让 AI 正确理解并重放斜杠命令\n\n## 核心问题\n\n此前，用户在 Cursor 中使用`/init`等斜杠命令时，历史消息可能只保留命令名称，没有把客户端解析后的实际指令内容提供给模型，导致 AI 在后续对话中无法准确理解或延续这些命令。\n\n## 修复方案\n\nPR #222 调整了 Prompt 构建逻辑：\n\n- 将`selected_context.cursor_commands`中已解析的命令内容写入模型可见的用户历史。\n- 按用户选择的原始顺序重放命令。\n- 自动跳过内容为空的命令。\n- 安全转义命令名称，避免格式或注入问题。\n\n## 实际价值\n\n修复后，`/init`等 Cursor 命令的真实指令能够进入模型上下文，而不只是显示一个命令标签，从而提升：\n\n- 多轮对话的上下文完整性。\n- 斜杠命令执行的一致性。\n- AI 对历史操作和用户意图的理解准确度。\n\n## 测试与范围\n\n该 PR：\n\n- 增加了斜杠命令的回归测试。\n- 通过 Prompt 模块及后端整体 Go 测试。\n- 修改 2 个文件，关联并关闭 Issue #120。\n\n**一句话总结：**这是一次 Prompt 上下文修复，确保 Cursor 斜杠命令的实际内容能被 AI 看见并在历史中正确重放。",
+        "url": "https://opengraph.githubassets.com/d1251707ebfb3304c6c8511668f89380b2d671b9f324e7fa2b5c25305c180edf/leookun/cursor-byok/pull/222",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/d1251707ebfb3304c6c8511668f89380b2d671b9f324e7fa2b5c25305c180edf/leookun/cursor-byok/pull/222",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/d1251707ebfb3304c6c8511668f89380b2d671b9f324e7fa2b5c25305c180edf/leookun/cursor-byok/pull/222",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "Agent历史消息需要包含客户端解析后的命令正文，才能完整恢复命令语义。",
+      "多条命令回放应保持原始顺序，并跳过空命令。",
+      "将命令名称写入模型可见内容前需要进行安全转义。"
+    ],
+    "oneHighValuePoint": "回放用户历史时应使用客户端已解析的命令内容，而非仅保留命令名称，以确保模型获得斜杠命令的真实指令。",
+    "oneLineReview": "这是一个范围明确且可操作的提示词回放修复案例，但缺少代码差异、测试结果和更完整的设计论证。",
+    "primaryCategory": "AI编程工具开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "篇幅虽短，但包含可复用的命令回放处理规则，适合作为相关实现的参考案例保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "Agent提示词工程",
+      "软件缺陷修复"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该拉取请求修复模型可见用户历史中的Cursor斜杠命令回放：写入客户端解析后的命令内容，保持顺序、跳过空命令并安全转义名称，同时补充回归测试。",
+    "tags": [
+      "Cursor",
+      "斜杠命令",
+      "提示词回放",
+      "上下文管理",
+      "回归测试"
+    ],
+    "title": "fix(prompt): replay selected Cursor commands by DedSecer · Pull Request #222 · leookun/cursor-byok",
+    "totalScore": 62,
+    "url": "https://github.com/leookun/cursor-byok/pull/222"
+  },
+  "payloadHash": "sha256:a75a43f83128aef95c177899a766c4fb692f7de3af7d4e2fec9b3a5830e5e01a",
+  "refs": {},
+  "revisionId": "sha256:b6cc4fe129c8d70af98560df9154433ea37ad7ce44ecf3700404120034980ae6",
+  "schemaVersion": 1,
+  "updatedAt": 1789727319067
+}

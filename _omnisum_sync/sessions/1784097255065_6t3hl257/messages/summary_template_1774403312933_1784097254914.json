@@ -1,0 +1,23 @@
+{
+  "createdAt": 1784097254914,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1784097254914",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# QMD：面向个人知识库与 AI Agent 的本地搜索引擎\n\n## 一句话概括\n\nQMD 是一个运行在本地的轻量级搜索工具，可索引 Markdown 笔记、会议记录、项目文档和知识库，并通过**关键词检索、语义搜索和 LLM 重排序**，帮助用户或 AI Agent 找到更准确的上下文。\n\n## 核心价值\n\nQMD 解决的是 “资料都在本地，但很难快速找准” 的问题：\n\n- **本地运行**：文档、索引和模型默认不依赖云端，兼顾隐私与可控性。\n- **统一搜索**：跨笔记、会议、文档等多个目录检索。\n- **自然语言查询**：不必记住原文关键词，也能按语义找到内容。\n- **Agent 友好**：支持结构化结果、文件批量获取与 MCP，可直接作为 AI Agent 的长期记忆检索层。\n\n## 搜索能力\n\nQMD 提供三种主要搜索方式：\n\n| 模式 | 原理 | 适用场景 |\n|---|---|---|\n| `search` | BM25 关键词检索 | 查术语、文件名、API 等精确内容 |\n| `vsearch` | 向量语义检索 | 查询表达与原文措辞不一致 |\n| `query` | 混合检索 + LLM 重排序 | 追求综合准确率，适合 Agent |\n\n完整流程是：**查询扩展 → BM25 与向量并行召回 → RRF 融合 → 本地 LLM 重排序**。系统会保护高置信度的精确匹配，同时让 LLM 更多优化排名靠后的模糊结果。\n\n## 差异化设计：上下文树\n\nQMD 允许为知识库、目录或子目录添加说明，例如：\n\n- `notes`：个人想法与灵感\n- `meetings`：会议纪要\n- `docs/api`：API 参考文档\n\n这些上下文会随搜索结果返回，帮助 AI 理解 “文档属于什么业务、目录和用途”，而不只是看到一段孤立文本。这是它提升 Agent 选文准确率的重要设计。\n\n## 使用与集成\n\nQMD 提供三种产品形态：\n\n1. **CLI**：适合个人检索、脚本和自动化流程。\n2. **MCP Server**：可接入 Claude Desktop、Claude Code 等 MCP 客户端，提供查询、单文档获取、批量获取和索引状态能力。\n3. **Node.js/ Bun SDK**：可嵌入应用，自主管理知识集合、上下文、索引、Embedding 和搜索流程。\n\nMCP 还支持常驻 HTTP 服务，使模型持续驻留显存，避免每个客户端重复加载。\n\n## 典型使用流程\n\n```bash\n# 安装\nnpm install -g @tobilu/qmd\n\n# 添加知识目录\nqmd collection add ~/notes --name notes\n\n# 补充目录语义\nqmd context add qmd://notes \"个人笔记和创意\"\n\n# 生成向量索引\nqmd embed\n\n# 执行高质量混合搜索\nqmd query \"季度规划流程\"\n```\n\n## 产品判断\n\nQMD 本质上不是一个笔记应用，而是一个**本地知识检索基础设施**。它适合：\n\n- 个人第二大脑与本地知识库\n- 企业内部文档搜索\n- 编程 Agent 的代码与文档检索\n- AI 助手的长期记忆和 RAG 层\n\n其优势是**本地化、轻量、搜索质量高、Agent 集成完整**；代价是需要自行维护索引与本地模型，对设备性能和初次配置有一定要求。运行环境要求 Node.js 22+ 或 Bun，macOS 还需要支持扩展的 SQLite。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1784097254914,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b9e3d7b2b0ffee9d0a3d36226b4695e88d4cac179d8b098ddc256ba22d15cf54",
+  "refs": {
+    "sessionId": "1784097255065_6t3hl257"
+  },
+  "revisionId": "sha256:889203379c9bf1dca94dc8fdda0d3914385dfe310280d7fc851f119371c94640",
+  "schemaVersion": 1,
+  "updatedAt": 1784097254914
+}

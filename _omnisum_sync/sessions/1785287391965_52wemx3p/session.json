@@ -1,0 +1,66 @@
+{
+  "createdAt": 1785287391965,
+  "entityType": "session",
+  "id": "1785287391965_52wemx3p",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在升级闭源AI订阅前，用小型项目测试 opencode 加开放模型端点的可用性。",
+      "验证自有端点的数据流向、模型效果、延迟和成本，而非只依据主观自由感做选择。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1785402426740,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 4
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "自托管开放模型带来的自由感",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "matthewsaltz.com",
+    "favicon": "",
+    "knowledgePoints": [
+      "opencode 可以连接用户控制的模型推理端点，而不必绑定 Claude 或 ChatGPT 套餐。",
+      "托管开放模型端点能够降低自行部署的启动门槛，但文中仅有约五分钟完成配置的单一个案。",
+      "数据路径的可控性和供应商独立性本身可能成为AI开发工具的重要体验价值。"
+    ],
+    "oneHighValuePoint": "自有推理端点不仅改变数据控制方式，也可能显著改善开发者对工具所有权和供应商依赖的主观感受。",
+    "oneLineReview": "与开放模型和AI编程工具直接相关，但本质上是一则缺少技术细节与客观比较的体验随笔。",
+    "primaryCategory": "AI编程工具",
+    "rating": "C",
+    "rejectReason": "主要是个人主观感受，缺少配置步骤、模型效果、成本和隐私机制的具体分析。",
+    "retentionDecision": "速览其用户体验观点即可，无需长期保留",
+    "secondaryCategories": [
+      "开放模型",
+      "自托管推理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者将 opencode 接入自有的 Modal 托管 Kimi K3 端点，约五分钟完成配置，并描述数据仅在本机与自有端点间流动、减少闭源供应商依赖所带来的自由感。",
+    "tags": [
+      "opencode",
+      "Kimi K3",
+      "Modal",
+      "自托管推理",
+      "数据控制"
+    ],
+    "title": "Using an open model feels surprisingly good",
+    "totalScore": 43,
+    "url": "https://matthewsaltz.com/blog/using-an-open-model-feels-surprisingly-good/"
+  },
+  "payloadHash": "sha256:301468c5d76e1bfac4372879184b3d9c554533cba39e5cd9ea7ee0c725d07cb9",
+  "refs": {},
+  "revisionId": "sha256:e4d165d9f4b8510b0774966e16fc399a29e2b1a3d423c42b619cc1edfa7b378f",
+  "schemaVersion": 1,
+  "updatedAt": 1785402426783
+}

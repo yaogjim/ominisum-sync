@@ -1,0 +1,105 @@
+{
+  "createdAt": 1783384821955,
+  "entityType": "session",
+  "id": "1783384821955_fy4haumd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注该话题，应查找原始评测报告或完整实验设置",
+      "删除该条碎片内容，避免占用知识库空间"
+    ],
+    "archiveReason": "",
+    "byline": "Aditya",
+    "classifiedAt": 1783419015153,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 1,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 2,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "评测Harness影响提示",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量极低，核心论点无法脱离图片与上下文独立理解，且无可操作步骤或长期知识价值。",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 366,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMjdZtkasAAmz0s?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HMjdZtkasAAmz0s?format=jpg&name=medium",
+        "width": 908
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 1200,
+        "id": "img-24",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HLrqa2pW8AAtOOJ?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HLrqa2pW8AAtOOJ?format=jpg&name=medium",
+        "width": 800
+      },
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 720,
+        "id": "img-32",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMk3hKbbgAAO-Ta?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HMk3hKbbgAAO-Ta?format=jpg&name=medium",
+        "width": 1125
+      }
+    ],
+    "knowledgePoints": [
+      "评测harness可能影响AI工具表现",
+      "社交媒体截图类内容若无原始数据和说明，证据质量很弱"
+    ],
+    "oneHighValuePoint": "AI模型或工具评测结果可能受到评测harness和集成方式影响，不能只看模型名称。",
+    "oneLineReview": "这是一个缺少上下文和证据的社交媒体碎片，不值得保存。",
+    "primaryCategory": "AI模型评测",
+    "rating": "E",
+    "rejectReason": "内容仅为一句简短观点，缺少上下文、数据、方法说明和可验证证据，回复区多数为广告，参考价值很低。",
+    "retentionDecision": "建议立即删除",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "社交媒体碎片",
+      "开发工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该推文仅表示评测或运行harness确实重要，并附一张图片；回复区多数为广告，仅有一条提到Codex集成可能影响评测结果，整体缺乏有效信息。",
+    "tags": [
+      "AI评测",
+      "Harness",
+      "Codex",
+      "碎片信息"
+    ],
+    "title": "(1) Aditya: harness does play an important role after all https://t",
+    "totalScore": 14,
+    "url": "https://x.com/adityab29_/status/2074152371857641901"
+  },
+  "payloadHash": "sha256:7a8b2972821d1d8ac683c47765f0dc6aa4371d194059087a9f8c84b65ecea918",
+  "refs": {},
+  "revisionId": "sha256:79b5c3488139e448b83c6c8a8037ff92954144414f52281fd1580a202a94f972",
+  "schemaVersion": 1,
+  "updatedAt": 1783419015506
+}

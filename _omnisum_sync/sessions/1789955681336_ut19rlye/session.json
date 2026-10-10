@@ -1,0 +1,82 @@
+{
+  "createdAt": 1789955681336,
+  "entityType": "session",
+  "id": "1789955681336_ut19rlye",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "分析相关出口品类时，并列查看出口额、出口量、同比变化及其占总出口的比例。",
+      "沿文章引用的海关数据和SEMI资料核对统计年份、品类口径及产能预测，再评估其风险结论。"
+    ],
+    "archiveReason": "",
+    "byline": "Alex_感知",
+    "classifiedAt": 1790768393036,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 5,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "八月外贸增长的量价结构与隐忧",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 796,
+        "id": "img-5",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSqLRSBa8AATwwL?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSqLRSBa8AATwwL?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "出口总额增长可能掩盖品类之间的分化，需要进一步拆分主要产品的贡献与变化。",
+      "出口额上升与出口量下降可以同时发生，但这种背离本身不足以证明未来产能过剩或产品缺乏竞争优势。"
+    ],
+    "oneHighValuePoint": "判断出口增长质量时，应同时查看出口额、出口量和品类占比，而不能把名义金额增长直接等同于销量增长或竞争力提升。",
+    "oneLineReview": "量价拆分具有参考价值，但关键数据可核查性不足，且多处因果推断超出了现有证据。",
+    "primaryCategory": "宏观经济",
+    "rating": "C",
+    "rejectReason": "数据年份及原始出处不清，引用图表未提供；从出口量价变化推断芯片竞争力、未来产能过剩，以及从黄金进口推断官方风险判断，均缺少充分证据。",
+    "retentionDecision": "低优先级速览，可提取量价拆分思路，不作为产业判断或投资决策依据",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "国际贸易",
+      "半导体产业"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章拆解八月中国外贸增长，重点讨论机电、芯片及电脑零部件出口额与出口量的背离，并据此提出价格红利难以持续的担忧。另涉及对美贸易转移、电池与汽车出口及黄金进口，但多项因果判断缺乏充分验证。",
+    "tags": [
+      "出口结构",
+      "量价分析",
+      "集成电路",
+      "机电产品",
+      "贸易转移"
+    ],
+    "title": "8月外贸——隐忧显化！机电产品还能猛多久？",
+    "totalScore": 47,
+    "url": "https://x.com/Alex_perception/status/2101647135246844014"
+  },
+  "payloadHash": "sha256:22415bfc1cc1bec4fde0b87fcda2a69b65cdb613807f82b654a0e68d8ce880ff",
+  "refs": {},
+  "revisionId": "sha256:f727b4505c4a79f6440e095b5215380894f56e41722e2ea48ba47aa57cfd8bb2",
+  "schemaVersion": 1,
+  "updatedAt": 1790768393873
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727583381,
+  "entityType": "message",
+  "id": "1789727583381_c9kj66v6",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Andrew Chen 的本地 AI 实验室：本地优先，必要时调用云端\n\nAndrew Chen 搭建了一套多设备本地 AI 系统，通过自研路由器在本地模型与云端前沿模型之间动态选择。目前约 60%—70% 的任务可在本地完成，长期目标是实现 100% 本地运行。\n\n## 不同硬件承担不同任务\n\n- **Framework Desktop AI Max+ 395**：承载 Hermes 系统。\n- **RTX 5090 eGPU**：运行 Qwen 3.8 27B，重点追求生成速度，有时超过 150 token/s。\n- **两台 DGX Spark**：运行 Deepseek v4 Flash 0731，模型效果更好但速度较慢，主要处理定时任务、长时间开发构建等后台批处理。\n- **树莓派 5**：负责监控。\n- **Mac mini**：作为开发机，按场景使用 Herdr、ohmypi、Codex 和 Claude。\n- 多数设备集中安装在 10 英寸 DeskPi 迷你机架内。\n\n## 小模型路由决定本地还是上云\n\nHermes 默认优先使用本地 AI，再由低首字延迟（TTFT）的轻量模型 Arch-Router 判断：当前请求可否本地处理，还是需要升级至云端或更强的前沿模型。这种架构兼顾隐私、成本与能力，也反映出当前本地模型仍无法覆盖全部任务。\n\n## 这是一套实验配置，不是必要投入\n\n作者强调，普通用户完全不需要购置整套设备：他最初只有一台 Mac mini，之后才逐步扩展。尤其是 5090 eGPU，他明确表示购买后感到后悔，不建议他人照搬。核心价值不在堆硬件，而在“本地优先、智能分流、后台异步处理”的系统设计。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727583381,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:744f8e39f9bf7196ce2bef5e867bf02996d2490368e04a8d904c7fde63ef330d",
+  "refs": {
+    "sessionId": "1789703336947_51o25dcg"
+  },
+  "revisionId": "sha256:148018fa029d45fd3f716c83aa6b65277a5e466e056c6220ea8d087851e0c9f6",
+  "schemaVersion": 1,
+  "updatedAt": 1789727583381
+}

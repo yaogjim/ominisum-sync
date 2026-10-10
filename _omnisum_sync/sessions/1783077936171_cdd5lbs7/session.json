@@ -1,0 +1,70 @@
+{
+  "createdAt": 1783077936171,
+  "entityType": "session",
+  "id": "1783077936171_cdd5lbs7",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如有长期使用Claude Code的需求，可试装EverOS并检查其本地Markdown结构是否适合自己的知识库。",
+      "研究Claude Code hook机制，尝试实现本地记忆召回与写入的最小可用版本。",
+      "将Agent记忆分为偏好、决策、约束和事实四类，避免让记忆替代源码或文档中的可验证事实。",
+      "若涉及隐私项目，先确认LLM抽取和embedding调用链路中的数据外发范围。"
+    ],
+    "archiveReason": "提供了将Claude Code会话记忆落地为本地Markdown并接入Obsidian的实际思路，对Agent记忆设计和个人知识库整合有参考价值。",
+    "classifiedAt": 1783078398993,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code记忆接入Obsidian",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "EverOS可将Agent记忆存储为本地Markdown文件，并可被Obsidian、grep、git diff等工具直接管理。",
+      "通过Claude Code hook可以在提交prompt时召回本地记忆，并在回答后写回记忆，实现跨session上下文延续。",
+      "Agent记忆更适合保存用户偏好、历史决策和约束，而代码中的硬事实仍应由Agent重新核实源码。",
+      "所谓本地记忆并不等于全程离线，记忆抽取和embedding检索仍可能调用联网模型服务。"
+    ],
+    "oneHighValuePoint": "把Agent记忆作为可读、可版本管理的Markdown资产，而不是封闭向量库或云端黑盒。",
+    "oneLineReview": "有真实实践细节和边界说明，但缺少完整代码、配置步骤和系统性验证。",
+    "primaryCategory": "AI Agent实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "可作为AI Agent长期记忆与本地知识库结合的实践案例归档，后续需要搭建类似工作流时参考。",
+    "secondaryCategories": [
+      "个人知识管理",
+      "开发工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍作者将EverOS本地记忆框架与Claude Code hook结合，把Agent对话记忆存为本地Markdown，并在Obsidian中管理，实现跨session记住偏好、项目决策和约束的实践体验。",
+    "tags": [
+      "Claude Code",
+      "Obsidian",
+      "EverOS",
+      "Agent记忆",
+      "Markdown",
+      "本地优先"
+    ],
+    "title": "把 Claude Code 的记忆，搬进了我的 Obsidian",
+    "totalScore": 67,
+    "url": "https://x.com/yanhua1010/status/2068903967132991771"
+  },
+  "payloadHash": "sha256:d7834b9faf34aebe3b6fb483d4e56234a6857655f56667645f7d753fef721f13",
+  "refs": {},
+  "revisionId": "sha256:57f542b1dc01cfc4ea49576220009fcc229de4c1e19ef0b458c1b4fd48ee2f93",
+  "schemaVersion": 1,
+  "updatedAt": 1789729408894
+}

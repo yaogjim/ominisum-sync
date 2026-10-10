@@ -1,0 +1,69 @@
+{
+  "createdAt": 1783077241895,
+  "entityType": "session",
+  "id": "1783077241895_l4bfynpm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在当前项目中尝试用 git worktree 为 feature、bugfix、历史版本验证分别建立独立目录",
+      "为常用项目编写 setup.sh，自动执行依赖安装、环境变量复制和必要的初始化命令",
+      "评估 cc-launch 是否适合自己的 AI 编程工作流，特别是是否需要自动启动 Claude 或 Codex",
+      "制定 worktree 目录命名和清理规范，避免分支、目录和 stale worktree 长期堆积"
+    ],
+    "archiveReason": "包含较完整的 git worktree 使用场景、痛点分析和自动化初始化思路，对改进多分支与 AI 并行开发流程有参考价值",
+    "classifiedAt": 1783077289169,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Worktree与AI并行开发实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "git worktree 可以让同一仓库同时拥有多个独立工作目录，每个目录对应不同分支，避免频繁 checkout 和 stash",
+      "AI 辅助开发中，独立 worktree 有助于为不同任务维护独立上下文、终端和实验环境",
+      "worktree 的长期使用障碍主要不在 Git 命令本身，而在目录命名、路径管理、依赖安装、环境复制和清理流程",
+      "通过统一 CLI 和 setup.sh 脚本，可以把 worktree 创建后的初始化动作标准化、自动化"
+    ],
+    "oneHighValuePoint": "将每个开发任务映射为独立 worktree，并通过项目级 setup 脚本自动完成依赖安装和环境变量复制，能显著降低多任务并行开发的摩擦。",
+    "oneLineReview": "实用性较强的 worktree 工作流推广文，但证据偏弱且带有明显工具宣传属性。",
+    "primaryCategory": "软件开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，若实际采用 worktree 或 cc-launch 可长期保留",
+    "secondaryCategories": [
+      "Git工作流",
+      "AI辅助编程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍在 AI 辅助开发场景下使用 git worktree 支撑多任务并行的价值，并推广 cc-launch 工具，用于统一创建、进入、初始化和清理 worktree，降低路径管理、环境配置和分支清理成本。",
+    "tags": [
+      "git worktree",
+      "并行开发",
+      "Claude Code",
+      "CLI工具",
+      "开发效率"
+    ],
+    "title": "高效使用 Worktree，成为十倍程序员",
+    "totalScore": 66.5,
+    "url": "https://x.com/mogician301/status/2071841989751112147"
+  },
+  "payloadHash": "sha256:7fc15ce850993246431827d65869b230c825c3bcfee6462930d88d2336d3a9bf",
+  "refs": {},
+  "revisionId": "sha256:aa11aa1086756fecd984945599effe6f18759a816935be930ddd7fa7cf523155",
+  "schemaVersion": 1,
+  "updatedAt": 1789729457860
+}

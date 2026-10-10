@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789518751848,
+  "entityType": "message",
+  "id": "summary_default_1789518751848",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者通过两个复杂业余项目发现：Agent 已能包办编码、审查、测试和故障排查，人类正退出具体实现，转而负责产品方向、成本、体验与最终风险，但这不等于软件工程师已无必要。\n\n## 关键内容\n\n- 作者的工作流已从 “AI 写、人审查” 变为 “Agent 实现、另一模型审查、自动测试并修复”，本人有时甚至不了解 PR 改了哪些函数。\n- Agent 并非足够可靠：测试全绿后仍可能出现页面失效、音视频异常、金融指标算错等问题。变化不是风险消失，而是人只在权限、成本、架构和用户体验等高后果环节介入。\n- 开发瓶颈正从 “工程时间” 转向 “人的注意力”；工程经验也从亲自生产代码，转为识别何时不能相信 Agent。\n- 作者明确限定：这只是两个由个人掌控的项目，不能证明企业或受监管行业也能大幅减员；同时，若新人不再亲历编码与事故，未来 Senior 如何形成经验仍无答案。\n\n## 通俗解读\n\n标题并非说 “软件完全不需要人”，而是质疑复杂度与工程师人数是否仍必须同步增长。**值得细读**：尤其适合关注 AI 编程工作流和工程师角色变化的人；文章价值主要在真实案例与风险边界，而非已被普遍验证的行业结论。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1789518751848,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:999d1d90b25f76f6325ee4e3fd28b06f29a90d382de78f4558a21a192f16c7c1",
+  "refs": {
+    "sessionId": "1789518751876_dupdaq57"
+  },
+  "revisionId": "sha256:e423cbf597e5c72848cd3c1a43423be8965f8a75b6ed2ac433c98e0a08ad3f29",
+  "schemaVersion": 1,
+  "updatedAt": 1789518751848
+}

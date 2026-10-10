@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943254383,
+  "entityType": "session",
+  "id": "1786943254383_ox23vyro",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "使用配套工作簿手算一个Token经过RoPE与YaRN处理的过程。",
+      "对同一注意力输出分别应用和不应用门控，比较结果差异。",
+      "分别绘制推测解码与多Token预测的生成流程，明确候选、验证和输出步骤。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1786943289894,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "Qwen 3.6核心机制研讨概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.byhand.ai",
+    "favicon": "https://substackcdn.com/image/fetch/$s_!xJuJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6baca240-cde8-49ce-a7e5-a6d38ea32a7e%2Ffavicon-32x32.png",
+    "knowledgePoints": [
+      "RoPE通过按位置旋转查询与键向量编码位置信息，YaRN用于扩展已训练模型的上下文窗口。",
+      "门控注意力在注意力输出路径加入可学习门，适合通过开启与关闭门控进行对照理解。",
+      "推测解码由小模型先提出候选Token并由主模型并行验证，多Token预测则尝试单步输出多个Token。"
+    ],
+    "oneHighValuePoint": "以单个Token为主线串联位置编码、注意力控制和解码加速，是理解模型规格与底层机制的有效学习框架。",
+    "oneLineReview": "选题与AI模型开发高度相关，教学主线清晰，但正文只是提纲，真正价值依赖外部录像和工作簿。",
+    "primaryCategory": "AI模型架构",
+    "rating": "B",
+    "rejectReason": "正文主要是研讨会概览与资源导流，缺少公式推导、实验数据和完整技术论证。",
+    "retentionDecision": "选择性浏览，需结合录像和练习册才能获得完整价值",
+    "secondaryCategories": [
+      "AI推理优化",
+      "AI学习方法"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章概述一场Qwen 3.6研讨会：沿单个Token依次讲解RoPE与YaRN、门控注意力、推测解码和多Token预测，并提供限时开放的录像与Excel练习册。",
+    "tags": [
+      "Qwen 3.6",
+      "RoPE",
+      "门控注意力",
+      "推测解码",
+      "多Token预测"
+    ],
+    "title": "Qwen 3.6 ~ Recording",
+    "totalScore": 56,
+    "url": "https://www.byhand.ai/p/qwen-3-6-seminar-recording"
+  },
+  "payloadHash": "sha256:b41075bbd01e62a718bcd2480b54dce865f24cb8359589f509976842bec90aeb",
+  "refs": {},
+  "revisionId": "sha256:6b26d04369c094da3efa18f1de0cb7dfbe96857127d867d7c08799816487e584",
+  "schemaVersion": 1,
+  "updatedAt": 1789728037413
+}

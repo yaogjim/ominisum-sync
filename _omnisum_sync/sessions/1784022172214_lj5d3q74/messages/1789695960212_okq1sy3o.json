@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695960212,
+  "entityType": "message",
+  "id": "1789695960212_okq1sy3o",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一份用于仓库初始化的 AI 技能说明：`verifier-setup` 不直接测试功能，而是搭建一套可重复执行的 `/verify` 流程，让工程改动在提交前能用实际操作、截图或视频证明“确实可用”。\n\n## 关键内容\n\n- **先盘点、后创建**：检查仓库已有的启动方式、测试流程、操作工具、沙箱及证据发布机制；能复用就复用，缺失才补建，避免覆盖团队现有配置。\n- **补齐三项能力**：生成或更新仓库专用的 `/verify` 操作规范；确保存在一键启动开发环境的 `/dev-local`；安装合适的验证工具——Web 项目默认使用 `playwright-cli`，API、CLI 等项目则采用对应客户端。\n- **按真实仓库定制**：从项目中确认启动命令、端口、登录方式、回归检查和证据上传渠道，不依赖惯例猜测；无关步骤会从模板中删除。\n- **支持两种运行模式**：默认推荐本地验证，简单且适合单任务；需要并发或环境隔离时，可改用 crabbox 云端沙箱。\n\n## 通俗解读\n\n它搭建的是“验收流水线”，不是本次验收本身。配置完成后，开发者应在改动已提交的分支上运行 `/verify`，由验证代理启动应用、实际操作并留下可供 PR 审阅的证据。\n\n**是否值得细读：**如果你要给代码仓库接入 AI 驱动的标准化验收流程，值得细读并逐步执行；若只是想了解某项功能是否通过测试，这篇文档本身不会提供测试结果。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695960212,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0268a81a8931747830e404814753b0fecbe8aaffd66a8eeb1fe50c476397d2f9",
+  "refs": {
+    "sessionId": "1784022172214_lj5d3q74"
+  },
+  "revisionId": "sha256:5b38c702c485c32b5671cacc375be33b07c06cb4944e857297dec91855b8c8c3",
+  "schemaVersion": 1,
+  "updatedAt": 1789695960212
+}

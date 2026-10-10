@@ -1,0 +1,71 @@
+{
+  "createdAt": 1783556217870,
+  "entityType": "session",
+  "id": "1783556217870_6cc80lon",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需复刻，先确认域名、子域名和 Cloudflare 托管状态",
+      "按 ttyd、tmux、cloudflared、systemd、Access 策略的顺序逐步搭建并逐步验证",
+      "检查 VPS 防火墙和服务监听地址，确保 ttyd 不绑定 0.0.0.0",
+      "避免使用仅放行 Cloudflare 回源 IP 的 nginx 方案作为唯一安全边界"
+    ],
+    "archiveReason": "提供了较清晰的浏览器访问VPS终端架构、关键安全约束和可直接复用的搭建提示词",
+    "classifiedAt": 1783556250305,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "浏览器终端接入Claude Code",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "ttyd 可将终端 Web 化，tmux 可保证会话在断线或换设备后继续存在",
+      "Cloudflare Tunnel 可让 VPS 主动建立隧道，避免开放公网入站端口",
+      "Cloudflare Access 应作为邮箱门禁使用，但前提是源站不能被绕过直连",
+      "ttyd 应仅监听 127.0.0.1，并使用无 sudo 权限的专用非 root 用户运行"
+    ],
+    "oneHighValuePoint": "指出仅用 nginx 放行 Cloudflare IP 并不能可靠保护源站，真正应通过 Cloudflare Tunnel 暴露本地监听服务。",
+    "oneLineReview": "实操价值较高的轻量搭建笔记，但证据和细节命令不足，适合作为方案提示而非完整教程。",
+    "primaryCategory": "技术实践",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考并归档为搭建备忘，若后续已有完整教程可替换删除",
+    "secondaryCategories": [
+      "DevOps",
+      "AI开发工具",
+      "网络安全"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享用 ttyd、tmux、Cloudflare Tunnel 和 Access 在浏览器中访问 VPS 终端，从而使用 Claude Code 的方案，并强调不要仅靠放行 Cloudflare IP，应使用 Tunnel 避免 Access 被绕过。",
+    "tags": [
+      "Claude Code",
+      "ttyd",
+      "tmux",
+      "Cloudflare Tunnel",
+      "Cloudflare Access",
+      "VPS"
+    ],
+    "title": "x.com/YuLin807/status/2074533659416342699",
+    "totalScore": 65,
+    "url": "https://x.com/YuLin807/status/2074533659416342699"
+  },
+  "payloadHash": "sha256:1a5c7d57451b126f08adabd7e188eefd73c5983cb8b49ae9fd367f57fdfe304c",
+  "refs": {},
+  "revisionId": "sha256:d3a5a0d9907781daeec8a3be6bd0248042cdbcbd1327820cc17a597b9c55c055",
+  "schemaVersion": 1,
+  "updatedAt": 1789729221012
+}

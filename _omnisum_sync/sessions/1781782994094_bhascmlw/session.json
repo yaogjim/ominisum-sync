@@ -1,0 +1,69 @@
+{
+  "createdAt": 1781782994094,
+  "entityType": "session",
+  "id": "1781782994094_bhascmlw",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为AI生成代码建立按风险分级的审查规则",
+      "增强测试、CI、影子模式和沙箱验证能力",
+      "为代码模块设计数据库、网络、PII等权限隔离机制",
+      "区分哪些PR适合逐行审查，哪些适合经验验证"
+    ],
+    "archiveReason": "包含关于AI生成代码、风险分级审查、经验验证和工程迭代机制的可复用思路",
+    "classifiedAt": 1781783251169,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI编码时代的代码审查",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "高风险代码如认证、数据访问、资金流动仍应控制小diff并严格审查",
+      "低风险且可实证验证的代码可以接受更大diff，通过测试、CI、影子模式和沙箱验证降低风险",
+      "软件发布速度的瓶颈不再是生成PR，而是大规模审查、合并和风险控制能力",
+      "逐行逻辑验证成本会越来越高，应保留给真正关键的代码区域"
+    ],
+    "oneHighValuePoint": "AI生成代码时代，代码审查应从关注diff大小转向关注风险等级和验证方式。",
+    "oneLineReview": "观点有启发性，适合思考AI编码时代的软件工程流程，但缺少实证案例支撑。",
+    "primaryCategory": "软件工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为AI辅助开发流程设计的思路材料",
+    "secondaryCategories": [
+      "AI辅助编程",
+      "代码审查"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出应将新一代代码模型视为“英语到代码解释器”，软件交付瓶颈将从写代码转向风险管理、审查、测试、CI和影子验证，并建议按风险区分逐行审查与经验验证。",
+    "tags": [
+      "AI编程",
+      "代码审查",
+      "风险管理",
+      "经验验证",
+      "CI测试"
+    ],
+    "title": "x.com/rahulgs/status/2067257255825686880",
+    "totalScore": 68,
+    "url": "https://x.com/rahulgs/status/2067257255825686880"
+  },
+  "payloadHash": "sha256:c63e388eec103aea81f84a4b20239922048c08075cb41cf96b253cbf9ac613ca",
+  "refs": {},
+  "revisionId": "sha256:16fe186e137c07e013b894e75aefb4f12c8f402aeb1d98e3abf73db95a092ece",
+  "schemaVersion": 1,
+  "updatedAt": 1781783675900
+}

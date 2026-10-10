@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789445320893,
+  "entityType": "message",
+  "id": "summary_default_1789445320893",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n借助 DFlash2 推测解码和新版 FP8-KV 插件，Qwen3.8-27B 在两张 RTX 3090 上可兼顾 262K 上下文与高速度，代码生成最高约 220 token/s，但质量验证尚不完整。\n\n## 关键内容\n\n- 产品分两类权重：INT4 “速度版” 和 FP8 “保真版”；各有基础、super、ultra 三档。super 使用 FlashInfer，ultra 使用更快的 FlashAttention。\n- 新插件让 3090（Ampere）上的 FlashAttention 2 能读取 FP8 KV 缓存，消除了 ultra 原先 “速度更快但上下文更短” 的取舍。\n- 双卡实测：INT4 ultrafast 为叙事 / 代码**123/220 token/s**，基础 fast 为**73/100**；FP8 ultramax 为**94/170**，基础 max 为**69/87**。\n- 这些配置仍标为实验性：尚无完整质量分数，部分数据仅单次启动；4/8 卡结论多为显存推算，且存在已知 vLLM 推测解码问题。\n\n## 通俗解读\n\n这主要是**生成速度优化，不代表回答更好**：类似让模型先由 “小助手” 批量起草，再统一核对。若你正用 2×3090 部署该模型，测速、配置和风险说明值得细读；否则了解上述结论即可。原文末尾被截断，单卡测试部分不完整。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1789445320893,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9ba13f9dc2bdb557efa0ff18435f16b9f645596f25f7712bc531c1fd24168403",
+  "refs": {
+    "sessionId": "1789445321037_7v96nr89"
+  },
+  "revisionId": "sha256:4b9cbb34f3c3eebda94d3197418f094c3de88e2d511ca788bd94b5eb020aaff4",
+  "schemaVersion": 1,
+  "updatedAt": 1789445320893
+}

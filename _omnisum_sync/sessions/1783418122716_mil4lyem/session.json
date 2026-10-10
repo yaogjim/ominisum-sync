@@ -1,0 +1,89 @@
+{
+  "createdAt": 1783418122716,
+  "entityType": "session",
+  "id": "1783418122716_mil4lyem",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在自己的AI代理项目中尝试建立父编排器加子执行器的职责分离模式。",
+      "为大型迁移任务先创建审计清单，并规定未知项必须升级而非猜测。",
+      "将任务按风险分波，并在每波之间设置自动化回归测试和备份检查。",
+      "为并行代理任务明确指定不重叠的文件范围和完成标准。",
+      "把项目中的范围裁定、异常处理和文档更新沉淀为可复用模板。"
+    ],
+    "archiveReason": "包含可复用的大型AI代理工程编排模式、风险分阶段方法和成本数据，适合作为后续项目设计参考。",
+    "byline": "Ryan Carson",
+    "classifiedAt": 1783418593474,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Fable多代理项目编排实践",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMib_yOWsAANy18?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HMib_yOWsAANy18?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "大型AI代理项目应先并行审计，并将范围、波次和未知项固化到单一清单中。",
+      "按风险而非便利性安排执行顺序，把不可逆的生产数据和数据库模式变更放在充分验证之后。",
+      "并行子代理必须拥有明确且不重叠的文件边界，以降低冲突和协调成本。",
+      "每个阶段之间应设置回归测试、备份检查、Git标签等安全门。",
+      "不可逆决策由人类批准，代理负责提出建议和执行已批准任务。"
+    ],
+    "oneHighValuePoint": "父代理只做计划、分派、审查和升级，不写代码，以避免长项目中的上下文坍塌。",
+    "oneLineReview": "一篇高价值的AI多代理工程编排案例，方法论清晰，但证据主要来自单方自述。",
+    "primaryCategory": "AI工程管理",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "多代理编排",
+      "软件项目迁移"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章复盘了使用一个父编排器和约40个子代理完成大型工程迁移的实践，重点介绍审计清单、风险分波、文件边界、安全门、人类审批和升级协议等方法。",
+    "tags": [
+      "Fable",
+      "DevinAI",
+      "多代理协作",
+      "风险控制",
+      "工程迁移",
+      "回归测试"
+    ],
+    "title": "如何使用 Fable 编排一个拥有 40 个子代理的大型项目",
+    "totalScore": 78.5,
+    "url": "https://x.com/ryancarson/status/2074093250399330418"
+  },
+  "payloadHash": "sha256:99929d8a34b390c666cb589db455aed14644831ae2bc2b15ba6609b159006b86",
+  "refs": {},
+  "revisionId": "sha256:43d8f8276129aca37cdf838f37beb22391e0f8d7e25ce3343eaf63c0f594507a",
+  "schemaVersion": 1,
+  "updatedAt": 1789695805123
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1782360657789,
+  "entityType": "session",
+  "id": "1782360657789_sfnoscvl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果项目依赖 @vercel/ncc，检查相关 bug、issue 和替代方案。",
+      "在引入 Vercel 或其他公司开源工具前，查看最近提交、issue 响应时间和 PR 处理情况。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782361519241,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 4,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Vercel开源维护弃坑质疑",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "@vercel/ncc 可能存在维护不及时的问题，使用前需关注 issue 和 PR 状态。",
+      "公司开源项目可能因缺乏直接盈利贡献而出现发布后维护不足的风险。",
+      "开源工具选型应纳入维护可持续性评估，而不仅是功能和流行度。"
+    ],
+    "oneHighValuePoint": "评估开源工具时不能只看热度和背后公司，还要关注维护活跃度、issue 响应和 PR 合并情况。",
+    "oneLineReview": "有一定提醒价值，但主要停留在个案观察和主观判断层面。",
+    "primaryCategory": "软件工程",
+    "rating": "C",
+    "rejectReason": "内容主要是单条社区观点和个案吐槽，信息量有限，缺少系统证据和深入分析。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开源生态",
+      "前端工具链"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者以 @vercel/ncc 的 issue 和 PR 长期无人维护为例，质疑 Vercel 开源项目存在重开坑、轻维护的问题，并将其归因于企业文化中发布新项目比长期维护更受激励。",
+    "tags": [
+      "Vercel",
+      "ncc",
+      "GitHub Actions",
+      "开源维护",
+      "技术债"
+    ],
+    "title": "x.com/CatChen/status/2069874390947475716",
+    "totalScore": 44,
+    "url": "https://x.com/CatChen/status/2069874390947475716"
+  },
+  "payloadHash": "sha256:dc10dc02dd439106335313389c9ef2e138e94cd429024c4399fc8d1761b43eeb",
+  "refs": {},
+  "revisionId": "sha256:c55d2a918bb52f012dd162baac40483b203963f90ea4e795f3991c305005072d",
+  "schemaVersion": 1,
+  "updatedAt": 1782361519808
+}

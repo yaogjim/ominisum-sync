@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784166724527,
+  "entityType": "session",
+  "id": "1784166724527_2ayhlvkd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在测试项目中创建.pi/extensions目录，实现一个启动前注入Git摘要的TypeScript扩展并重新加载验证。",
+      "用自定义钩子原型化权限门，在请求进入主Agent前依据明确策略执行允许或拒绝判断。",
+      "评估托管部署方案，将会话持久化、上下文压缩和文件及命令工具的沙箱代理列为独立改造项。"
+    ],
+    "archiveReason": "直接涉及Agent运行时定制与产品构建，包含可复用的扩展、权限控制、会话持久化及沙箱代理思路。",
+    "classifiedAt": 1784678025755,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "Pi Agent的扩展架构与产品构建",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/0715bbf9/img/favicon.ico",
+    "knowledgePoints": [
+      "Pi Agent以读、写、编辑和执行命令等最小工具集为核心，通过扩展添加工具、模型提供方、钩子、命令和界面能力。",
+      "扩展可在Agent启动、用户消息或工具调用等事件上介入，用于注入Git上下文、裁剪工具输出或执行权限检查。",
+      "构建Web托管Agent时，需要将本地会话管理替换为数据库持久化，并代理文件和命令工具，使其在用户独立沙箱中运行。"
+    ],
+    "oneHighValuePoint": "Pi Agent将运行时的工具、上下文、钩子、会话和界面开放为可修改扩展，使开发者能围绕具体产品需求重塑Agent框架。",
+    "oneLineReview": "内容与Agent开发高度相关且示例具体，但性能数据和产品能力主要来自作者演示，证据强度有限。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，重点保留扩展机制、SDK分层和托管部署改造要点",
+    "secondaryCategories": [
+      "AI编程工具",
+      "产品技术实现"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章拆解Pi Agent的极简核心、扩展钩子与SDK结构，并通过Git上下文、剪贴板工具、权限门和托管式Agent案例，说明如何定制编码代理及构建本地或Web端AI产品。",
+    "tags": [
+      "Pi Agent",
+      "Agent扩展机制",
+      "编码代理",
+      "Agent SDK",
+      "沙箱隔离"
+    ],
+    "title": "Why I switched to Pi... - YouTube",
+    "totalScore": 78,
+    "url": "https://www.youtube.com/watch?v=MsPhMhfvgD4"
+  },
+  "payloadHash": "sha256:c4cb986b0cff7c94e74b3dc10dad4d4bee9e9e1c08144cf649c8dad18407a8d1",
+  "refs": {},
+  "revisionId": "sha256:1ccc4b2f684dbf871c9e882dc8433370e7dc083a7f70a558f2f48b60d1890dc7",
+  "schemaVersion": 1,
+  "updatedAt": 1789696086592
+}

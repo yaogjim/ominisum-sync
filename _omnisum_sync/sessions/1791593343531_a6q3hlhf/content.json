@@ -1,0 +1,15 @@
+{
+  "createdAt": 1791593343531,
+  "entityType": "session-content",
+  "id": "1791593343531_a6q3hlhf",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Harrison Chase</strong></header><div class=\"tw-body\">deepagents 现在支持一个很酷的功能：当加载某个技能时，可以动态加载工具<br><br>有些技能需要特定的工具，而你可能并不希望这些工具始终可用。现在，这让你可以将它们配对起来<br><br>使用 OpenAI/Anthropic 模型时，可以做到这一点，同时不会破坏提示缓存！</div><blockquote class=\"tw-quote\"><strong>@sydneyrunkle</strong><p>Revamping Skills in Deep Agents 技能是为智能体提供领域知识的最佳方式之一。技能是一个包含指令、脚本和参考文件的文件夹，用于教会智能体如何完成各种任务，例如为……做准备</p><p><a class=\"tw-quote-link\" href=\"https://x.com/sydneyrunkle/status/2107906347199336864\">引用推文原文</a></p></blockquote><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HUC8Y9rbYAAtt89?format=jpg&name=large\" alt=\"引用图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Josh Rosen</strong> <span class=\"tw-eng\">♥ 7 · 💬 1</span><p>Deepagents 每天都在变得更具可组合性。</p></div><div class=\"tw-reply\"><strong>@Haris Siddiqui | AI Systems</strong> <span class=\"tw-eng\">♥ 0 · 💬 0</span><p>当智能体不再使用该技能后，这些工具会怎样？它们会在本次运行的剩余时间里保持可用，还是可以被卸载？我想测试一个在互不相关任务之间切换的长会话，而不只是第一次技能加载。</p></div><div class=\"tw-reply\"><strong>@Amy · fireply.ai</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>多少个工具之后会变得混乱</p></div><div class=\"tw-reply\"><strong>@Logan</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>一个撰写电子邮件的智能体真的不需要40个数据库工具</p></div><div class=\"tw-reply\"><strong>@Kyle Tse</strong> <span class=\"tw-eng\">♥ 1 · 💬 0</span><p>提示缓存这部分让我很在意。工具定义位于提示词顶部，所以在运行中途添加一个工具通常会丢弃整个缓存。这是使用他们那边的工具搜索/延迟加载机制，还是把新 schema 追加到更靠后的位置？</p></div></div>",
+    "pageContent": "Harrison Chase: deepagents 现在支持一个很酷的功能：当加载某个技能时，可以动态加载工具 有些技能需要特定的工具，而你可能并不希望这些工具始终可用。现在，这让你可以将它们配对起来 使用 OpenAI/Anthropic 模型时，可以做到这一点，同时不会破坏提示缓存！\n引用推文 (@sydneyrunkle):\nRevamping Skills in Deep Agents 技能是为智能体提供领域知识的最佳方式之一。技能是一个包含指令、脚本和参考文件的文件夹，用于教会智能体如何完成各种任务，例如为……做准备\n[引用推文原文](https://x.com/sydneyrunkle/status/2107906347199336864)\n![引用图片](https://pbs.twimg.com/media/HUC8Y9rbYAAtt89?format=jpg&name=large)\n---\n热门回复 (共 5 条):\n@Josh Rosen (♥ 7 · 💬 1):\nDeepagents 每天都在变得更具可组合性。\n\n@Haris Siddiqui | AI Systems (♥ 0 · 💬 0):\n当智能体不再使用该技能后，这些工具会怎样？它们会在本次运行的剩余时间里保持可用，还是可以被卸载？我想测试一个在互不相关任务之间切换的长会话，而不只是第一次技能加载。\n\n@Amy · fireply.ai (♥ 1 · 💬 0):\n多少个工具之后会变得混乱\n\n@Logan (♥ 1 · 💬 0):\n一个撰写电子邮件的智能体真的不需要40个数据库工具\n\n@Kyle Tse (♥ 1 · 💬 0):\n提示缓存这部分让我很在意。工具定义位于提示词顶部，所以在运行中途添加一个工具通常会丢弃整个缓存。这是使用他们那边的工具搜索/延迟加载机制，还是把新 schema 追加到更靠后的位置？\n"
+  },
+  "payloadHash": "sha256:a64e267b57a0396f36a1170de7af01608798da4836ce9fe9dc58488a937d0a96",
+  "refs": {},
+  "revisionId": "sha256:c850c47e3a339eb49731dc86bd83fca495ba2384c6848d6dbea0e428ece2a90c",
+  "schemaVersion": 1,
+  "updatedAt": 1791594555195
+}

@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789691021114,
+  "entityType": "message",
+  "id": "summary_default_1789691021114",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这条推文展示了一种 “算力与内存分工” 的方案：用 RTX 5090 搭配 4 台大内存 DGX Spark，运行拥有 7690 亿参数、支持百万 token 上下文的 DeepSeek-V4.1-Flash。\n\n## 关键内容\n\n- 系统按计算特点拆分 MoE（混合专家）模型：5090 负责 Attention、KV Cache 和投机解码等计算密集部分，DGX Spark 负责存放并计算体量庞大的专家参数。\n- 作者称该组合可支持约 104.9 万 token 上下文，单路生成约 74–85 tok/s，6 路并发总吞吐约 168 tok/s。\n- 借助 Prefix Cache（复用已处理内容），约 67.9 万 token 的上下文再次进入推理可由约 165 秒缩至 0.8 秒，约快 211 倍。\n- 数据口径并不完全一致：主帖称冷预填充约 4100–5700 tok/s，引用原帖则写 2000 tok/s，原文未解释测试条件差异。\n\n## 通俗解读\n\n相当于让 “速度快但装不下太多” 的显卡负责重计算，让 “容量大” 的设备充当模型仓库。亮点是消费级显卡与大内存设备协作跑超大模型，但推文缺少成本、功耗和完整测试方法。**对本地大模型推理或硬件架构感兴趣者值得细读引用与项目资料；普通读者看摘要即可。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "默认总结",
+    "timestamp": 1789691021114,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:09f7ed7416e525ccf857090f0d5661c94b38129ad2230e6a54c8982ceb70cf65",
+  "refs": {
+    "sessionId": "1789691021139_5nnk7rom"
+  },
+  "revisionId": "sha256:d3fd3081e52fe6263ecd48fc3ec343bb604e101effcac6ea81b4663055b4ab8d",
+  "schemaVersion": 1,
+  "updatedAt": 1789691021114
+}

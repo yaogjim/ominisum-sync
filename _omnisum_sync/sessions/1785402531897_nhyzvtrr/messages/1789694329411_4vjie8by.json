@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694329411,
+  "entityType": "message",
+  "id": "1789694329411_4vjie8by",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n文章介绍一套用 Claude Code、Higgsfield 和 Seedance 2.0 搭建“AI 视频工作室”的六阶段流程：人负责审美与取舍，代理负责批量生成、重试、记录和剪辑。\n\n## 关键内容\n\n- **先定风格，再做画面**：从真实电影镜头中提取灯光、镜头、色调、颗粒等参数，形成固定的“风格合同”，避免只写含糊的“电影感”。\n- **先静帧、后动画**：低成本批量测试构图，锁定角色、服装和场景参考图，再把关键帧做成 3—5 秒的独立镜头，以减少人物漂移。\n- **代理承担规模化工作**：子代理按统一模板写提示词，并行提交任务；每个镜头生成多个候选，每轮只改一个变量，同时记录提示词、模型和结果。\n- **剪辑也自动化**：先生成配乐，再用文本文件和 ffmpeg 拼接镜头，探索用低分辨率，最终成片才统一放大到 4K。\n\n## 通俗解读\n\n所谓“循环工程”，就是让代理反复执行“生成—查看—微调—重试”，而不是让 AI 一次产出整部电影。作者明确承认，目前仍离不开人的审美判断；生成成本下降，并不等于好作品更容易做，真正的瓶颈转向了选什么、留什么。\n\n## 是否值得细读\n\n适合想搭建自动化 AI 视频流程的人细读，尤其是提示词、并发和剪辑部分；若只想了解工具概况，看摘要即可。注意本文由 Higgsfield 赞助，平台能力和成本说法应自行验证。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694329411,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:db8c86dc2ac4e742db479523f88852a51b3ec16faaedb0e4659a8b9727f88f83",
+  "refs": {
+    "sessionId": "1785402531897_nhyzvtrr"
+  },
+  "revisionId": "sha256:f8debf1ff96c572e3effab8fddd33d80b62da1a2eaef9404348904d1d22226e9",
+  "schemaVersion": 1,
+  "updatedAt": 1789694329411
+}

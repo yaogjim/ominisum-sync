@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789007600249,
+  "entityType": "session",
+  "id": "1789007600249_vvnkmetn",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "分析支付产品时，分别绘制参与者关系、交易消息流、资金流和责任分配图。",
+      "评估支付方案时，将授权、清算、结算和争议处理拆开检查，避免把不同环节混为一体。",
+      "设计平台型商业系统时，参考其通信、结算、激励和治理四层框架识别缺失能力。"
+    ],
+    "archiveReason": "文章以通信、结算、激励和治理四项职责构建了可复用的卡网络分析框架，基础机制具有长期参考价值。",
+    "classifiedAt": 1789008280755,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Visa与万事达卡网络运作机制",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "tautology.town",
+    "favicon": "https://tautology.town/assets/favicon.svg",
+    "knowledgePoints": [
+      "卡交易通常分为授权、清算和结算：授权决定是否放行并产生资金预留，清算确认最终金额，结算完成参与机构间的资金转移。",
+      "商户支付的手续费由收单或处理机构、发卡行和卡网络分配，其中发卡行通常通过交换费获得最大份额并承担欺诈及信用风险。",
+      "卡网络通过费率、合规规则、拒付流程和仲裁机制协调双边市场，同时利用每日净额结算降低跨机构资金移动成本。"
+    ],
+    "oneHighValuePoint": "将卡网络概括为交易消息路由、资金结算、参与者激励和规则治理四类职责，清楚揭示其并非单纯的支付处理商。",
+    "oneLineReview": "结构清晰、资料较扎实的卡网络入门文章，但主要价值在系统化解释而非原创研究或实施指南。",
+    "primaryCategory": "金融科技",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并存档，适合作为理解卡支付基础设施的入门资料",
+    "secondaryCategories": [
+      "商业系统",
+      "产品与技术实现"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章从通信路由、银行结算、费率激励和规则争议四方面，解释Visa与万事达卡如何连接持卡人、发卡行、商户和收单方，并梳理授权、清算、结算及拒付流程。",
+    "tags": [
+      "银行卡网络",
+      "支付清算",
+      "双边市场",
+      "费率激励",
+      "争议处理"
+    ],
+    "title": "What do Visa and Mastercard do? An intro to card networks @ tautology.town",
+    "totalScore": 68,
+    "url": "https://tautology.town/2026/06/01/card-networks.html"
+  },
+  "payloadHash": "sha256:a28e1eec66fe348fe22e244b48e302cdcb40f193d58fc6fe84473a9c0b0cda72",
+  "refs": {},
+  "revisionId": "sha256:f25ffca3d3534a1b2e3e43cbaa8a23f6c1faa35025af74e2744163c0a2fae2d8",
+  "schemaVersion": 1,
+  "updatedAt": 1789014069366
+}

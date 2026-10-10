@@ -1,0 +1,75 @@
+{
+  "createdAt": 1782900845720,
+  "entityType": "session",
+  "id": "1782900845720_53g8vx82",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计编码代理时，将工具生命周期拆分为解析、schema 验证、路径校验、权限策略、执行、结果裁剪、记录和状态更新",
+      "为文件读写建立基线机制，记录读取范围、mtime、size、hash 和完整性状态，编辑前强制检查是否陈旧",
+      "实现输入路由，将 /status、/reset、/audit、/goal 等控制命令在本地处理，不直接交给模型",
+      "将会话日志、模型可见上下文和应用状态分离，建立上下文投影与压缩策略",
+      "为 Markdown 规则文件区分角色：仓库级指令稳定加载，技能类文档按需渐进披露",
+      "在引入子代理前明确其角色、上下文切片、工具权限、结果格式和父子记录谱系"
+    ],
+    "archiveReason": "文章系统梳理了编码代理 harness、工具契约、上下文投影、陈旧读取、slash 命令、Markdown 上下文和子代理等关键设计问题，具备较高方法论价值",
+    "classifiedAt": 1783040039916,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "编码代理框架核心职责",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "编码代理的产品体验主要由 harness 决定，包括输入路由、提示构建、工具验证、权限策略、执行、结果裁剪和状态更新",
+      "转录记录不等于文件真相，框架必须维护文件基线、哈希、读取范围和陈旧状态，避免模型基于旧内容编辑代码",
+      "工具调用应被视为模型提出的权限请求，而不是普通函数调用，需要解析、验证、审批、执行、限流和审计",
+      "上下文不是完整历史，而是从持久日志、应用状态和当前任务中投影出的有界工作视图",
+      "AGENTS.md 和 SKILL.md 的价值来自 harness 对其角色、作用域和加载时机的正确处理",
+      "子代理本质是父代理通过工具调用启动的受管理子运行时，应隔离上下文、权限和结果汇总"
+    ],
+    "oneHighValuePoint": "任何需要可靠性的能力都应放在 harness 中，而不是依赖模型即兴遵守提示词。",
+    "oneLineReview": "这是一篇偏架构方法论的编码代理设计指南，证据不足但框架完整、长期参考价值较高。",
+    "primaryCategory": "AI工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为设计编码代理或评估智能体框架时的架构参考",
+    "secondaryCategories": [
+      "智能体架构",
+      "编码代理",
+      "产品工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章强调编码代理的核心不只是模型，而是围绕模型的 harness：包括仓库上下文、工具契约、权限验证、文件状态、上下文投影、slash 控制面、Markdown 规则加载和子代理运行时等，提供了一套产品级编码代理设计框架。",
+    "tags": [
+      "coding agent",
+      "harness",
+      "工具调用",
+      "上下文管理",
+      "子代理",
+      "文件状态"
+    ],
+    "title": "编码代理框架",
+    "totalScore": 71.5,
+    "url": "https://x.com/dongxi_nlp/status/2072054107335205091"
+  },
+  "payloadHash": "sha256:6edce2d1bd2f893d7c72e6c8fe59ec0637f89b958ef5080202f2ae50e6c5dc73",
+  "refs": {},
+  "revisionId": "sha256:cd07999712680ec9f65032104f1880f74550d9bdc3499092f7f1b989e1282cd8",
+  "schemaVersion": 1,
+  "updatedAt": 1789693742689
+}

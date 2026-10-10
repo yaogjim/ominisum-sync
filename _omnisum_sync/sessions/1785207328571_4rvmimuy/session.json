@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785207328571,
+  "entityType": "session",
+  "id": "1785207328571_4rvmimuy",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "封装一个可由主 Agent 调用的视觉工具，将图片或视频提交给低成本多模态模型并返回文本。",
+      "使用自有视频样本核验输入输出成本、格式兼容性、识别准确率和上下文节省幅度。",
+      "设置关键帧升级条件，在低成本模型置信不足或内容影响最终判断时调用更强模型复核。"
+    ],
+    "archiveReason": "视觉观察与复杂推理解耦的架构可复用于多种 Agent 工作流，并提供了基本接入方式与任务升级策略。",
+    "classifiedAt": 1785207621825,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "低成本视觉代理的模型分工方案",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "将视觉感知和复杂推理拆分给不同模型，可以避免高成本图像输入在多轮上下文中反复累积。",
+      "视觉观察提示应明确要求时间戳、屏幕文字、剪辑、构图和开场钩子，而不是笼统要求描述视频。",
+      "廉价模型负责批量观察，遇到决定性单帧或细微内容时再升级到更强模型，可形成分层处理机制。"
+    ],
+    "oneHighValuePoint": "让廉价多模态模型充当“观察者”，仅向高成本推理模型传递结构化文本，并在关键帧上按需升级，可以显著压缩视觉内容在长对话中的重复成本。",
+    "oneLineReview": "模型分工思路实用且可迁移，但价格计算、接口能力和节省幅度缺少可靠来源与实测验证。",
+    "primaryCategory": "AI Agent 开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读其模型分工思路，核验价格、接口兼容性和实际识别效果后存档",
+    "secondaryCategories": [
+      "AI 编程工具",
+      "推理成本优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出将视觉感知与高成本推理解耦：用 Gemini 2.5 Flash-Lite 读取图片和视频并返回结构化文本，再由 Claude 等模型判断，同时给出成本估算、接口示例和关键帧升级策略。",
+    "tags": [
+      "多模型路由",
+      "视觉理解",
+      "Agent工具调用",
+      "推理成本优化",
+      "Gemini Flash-Lite"
+    ],
+    "title": "如何让 Fable 观看视频只需几美分",
+    "totalScore": 70,
+    "url": "https://x.com/WiFiMoneyGuy/status/2081849012815343669"
+  },
+  "payloadHash": "sha256:614dfca8c3963821350441e1c423fc90190ce799b48570e1a273718b9e992db9",
+  "refs": {},
+  "revisionId": "sha256:cb4ede41683a0faab8163eb4260c016fe5a4e4555919b9175e5e3dcbaefebc37",
+  "schemaVersion": 1,
+  "updatedAt": 1789694479384
+}

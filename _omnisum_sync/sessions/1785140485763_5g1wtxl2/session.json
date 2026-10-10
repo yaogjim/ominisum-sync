@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785140485763,
+  "entityType": "session",
+  "id": "1785140485763_5g1wtxl2",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "先用一条短视频验证 Codex、HyperFrames、HeyGen 和 IndexTTS2 的端到端流程，再根据实际质量和成本决定是否扩展。",
+      "把选题、脚本、配音、渲染、字幕、质检和归档拆成明确环节，并尝试通过待制作队列衔接创作侧与生产侧。",
+      "围绕中文断句、语句组织、视频钩子和自身审美偏好持续调试 Skill，形成适合自己内容类型的版本。"
+    ],
+    "archiveReason": "文章提供了较具体的工具组合、角色分工、成本结构和自动化思路，具有一定复用价值。",
+    "classifiedAt": 1785140780463,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI自媒体视频自动化工作流",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "可将 Claude Code 等工具用于选题和脚本创作，将 Codex 用于配音、渲染、字幕、质检和归档，以降低不同任务之间的协作成本。",
+      "基于 HTML、CSS 和 JavaScript 的视频渲染方式便于模型生成、局部修改、版本管理和确定性渲染。",
+      "本地声音克隆可以降低持续配音成本，并在声音一致性和文稿隐私方面优于完全依赖云端服务。"
+    ],
+    "oneHighValuePoint": "将创作侧与生产侧拆分，并通过待制作队列、自动化工具和质检归档降低人工参与度，这一流程设计比单个工具推荐更值得借鉴。",
+    "oneLineReview": "这是一个有参考价值的个人工作流案例，但证据和可复现细节不足，不能直接视为已验证的变现方案。",
+    "primaryCategory": "AI工具与自动化工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并保留，适合作为AI视频生产流水线的案例参考",
+    "secondaryCategories": [
+      "自媒体运营",
+      "视频生产"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章分享作者以 Codex 统筹、HyperFrames 渲染、HeyGen 数字人和 IndexTTS2 本地配音搭建短视频生产线，并说明分工、成本、自动化流程与使用前提；但涨粉、商单和工具效果主要是个人陈述，缺少可核验数据。",
+    "tags": [
+      "Codex",
+      "HyperFrames",
+      "HeyGen",
+      "IndexTTS2",
+      "视频自动化"
+    ],
+    "title": "Codex + Hyperframes + HeyGen +声音克隆：全部开源如何零基础开始自媒体变现",
+    "totalScore": 69,
+    "url": "https://x.com/Pluvio9yte/status/2081580929492131947"
+  },
+  "payloadHash": "sha256:8d18d4f50abd840949d9b80aa16c4193b96ae8144b7c14b8ba9b456980cd99c0",
+  "refs": {},
+  "revisionId": "sha256:b14137db4e5ac0111116025b5e1d245a4569d96aabd6ce17d245d10c913fcfea",
+  "schemaVersion": 1,
+  "updatedAt": 1789728397409
+}

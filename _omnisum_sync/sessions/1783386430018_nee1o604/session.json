@@ -1,0 +1,97 @@
+{
+  "createdAt": 1783386430018,
+  "entityType": "session",
+  "id": "1783386430018_nee1o604",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 Claude Code 或 Codex CLI，可尝试本地搭建 gateway 测试多模型路由。",
+      "参考其 fallback 策略设计自己的LLM调用网关，避免工具调用中途静默切换模型。",
+      "检查项目配置中是否将 API Key 放入环境变量或 .env.local，避免写入 YAML 配置文件。",
+      "评估其对常用模型提供商、工具调用、thinking、vision 等能力的兼容性是否满足当前工作流。"
+    ],
+    "archiveReason": "包含具体配置、部署方式、协议转换和安全回退策略，可作为AI编码代理网关选型与实践参考",
+    "classifiedAt": 1783418990444,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Rust编码代理网关工具",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1783386464172,
+        "imageId": "img-1",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# Superagent Gateway：面向 Coding Agent 的轻量模型网关\n\n## 一句话总结\n\n**Superagent Gateway 是一个用 Rust 写的本地轻量网关**，让 Claude Code、Codex CLI 等 Coding Agent 通过一个统一端点，安全地调用不同模型提供商，如 OpenAI、Anthropic、OpenRouter、Kimi、Qwen、Ollama、vLLM 等。\n\n## 它解决什么问题\n\n### 多 Agent、多模型接入复杂\n\nClaude Code 使用 Anthropic Messages API，Codex 使用 OpenAI Responses API，不同工具、模型、厂商协议不一致。  \nGateway 负责做协议转换，让客户端保持原生体验，后端模型可以灵活切换。\n\n### 模型切换需要更安全\n\nCoding Agent 经常涉及工具调用、流式输出、代码执行上下文。  \nGateway 的核心设计是：**只在响应开始前重试或切换模型**，一旦模型已经开始输出文本或调用工具，就不会悄悄替换，避免上下文错乱和工具链风险。\n\n## 核心能力\n\n### 统一模型路由\n\n通过一个`gateway.yaml`配置文件定义模型别名和路由规则，例如：\n\n- `main`：主任务模型\n- `subagent`：子任务模型\n- `background`：标题、摘要等后台任务模型\n\n用户只需要记住模型别名，例如`kimi`、`gpt-55`，即可在 Claude Code 或 Codex 中使用。\n\n### 协议适配\n\nGateway 会在客户端和模型提供商之间转换：\n\n- 请求体格式\n- 流式输出\n- 工具调用\n- Reasoning / Thinking 字段\n- Token 统计\n- 模型列表接口\n\n对 Claude Code 暴露 Anthropic 协议，对 Codex 暴露 OpenAI Responses 协议。\n\n### 多 Provider 支持\n\n内置支持常见模型服务：\n\n- OpenRouter\n- OpenAI\n- Anthropic\n- Moonshot / Kimi\n- Fireworks\n- Together\n- Groq\n- DeepInfra\n- DeepSeek\n- Mistral\n- xAI\n- Cerebras\n- Ollama\n- Azure AI\n- 任意 OpenAI-compatible 服务，如 vLLM\n\n## 安全与可靠性设计\n\n### 密钥不写入配置文件\n\nAPI Key 默认从环境变量读取，例如：\n\n- `OPENAI_API_KEY`\n- `ANTHROPIC_API_KEY`\n- `OPENROUTER_API_KEY`\n\n也支持`${VAR}`语法引用环境变量，避免泄露密钥。\n\n### 强制认证\n\n非 localhost 绑定时必须配置 Token。  \n支持：\n\n- `Authorization: Bearer <token>`\n- `x-api-key: <token>`\n\n适合本地开发，也能用于容器或云环境部署。\n\n### Tool-loop-safe Fallback\n\nFallback 机制比较克制：\n\n1. 连接错误或 429 等可重试错误时，先重试当前路由\n2. 再尝试 fallback 链路中的其他模型\n3. 但仅限于模型还没开始输出前\n4. 一旦已经流式输出或发起工具调用，错误会直接暴露给客户端\n\n这对 Coding Agent 很重要，因为中途换模型可能破坏工具调用状态。\n\n## 部署与运维\n\n### 轻量化部署\n\n它定位为 “小而稳定” 的兼容层：\n\n- 单个 Rust 二进制\n- 一个 YAML 配置文件\n- Docker 镜像约 60MB\n- 支持`GET /health`健康检查\n\n### 可观测性\n\n每次请求尝试都会输出结构化 JSON 日志，包括：\n\n- request_id\n- client\n- model_alias\n- route_id\n- attempt\n- status\n- duration_ms\n- 是否使用 fallback\n\n默认不记录 Prompt，除非显式开启，降低隐私和安全风险。\n\n## 产品定位与边界\n\n### 适合的场景\n\n适合以下用户或团队：\n\n- 同时使用 Claude Code、Codex CLI 等多个 Coding Agent\n- 想在 Kimi、GPT、Claude、Qwen、本地模型之间灵活切换\n- 需要统一模型别名、统一鉴权、统一日志\n- 需要安全的 fallback，而不是简单粗暴地代理请求\n\n### 不适合的场景\n\n它不是一个完整的 LLM 平台，不提供：\n\n- Prompt 管理\n- 用户管理\n- 计费系统\n- 多租户治理\n- 复杂工作流编排\n- 模型评测平台\n\n它更像是**Coding Agent 的协议兼容层和安全路由器**。\n\n## PM 视角判断\n\nSuperagent Gateway 的价值在于把「模型多样性」和「Coding Agent 原生体验」连接起来。  \n它不是追求大而全，而是围绕开发者真实痛点做一个窄而深的基础设施组件：\n\n> 让不同 Coding Agent 用同一个入口安全调用不同模型，同时避免工具调用过程中的危险模型切换。\n\n对于需要频繁试用新模型、接入本地模型或做模型供应商冗余的 AI 开发团队，它是一个很实用的轻量工具。",
+        "url": "https://opengraph.githubassets.com/813ed1c000fc6b8edc763c1b430e62c4af669895e285d4b271ae6a19f98358ee/superagent-ai/gateway",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://opengraph.githubassets.com/813ed1c000fc6b8edc763c1b430e62c4af669895e285d4b271ae6a19f98358ee/superagent-ai/gateway",
+        "role": "hero",
+        "score": 70,
+        "src": "https://opengraph.githubassets.com/813ed1c000fc6b8edc763c1b430e62c4af669895e285d4b271ae6a19f98358ee/superagent-ai/gateway",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "通过本地网关可将 Claude Code 的 Anthropic Messages API 与 Codex 的 OpenAI Responses API 统一转发到多个模型提供商。",
+      "配置采用 provider、models、clients、server 分层，通过模型别名和 main/subagent/background 角色实现路由。",
+      "安全回退策略限制在流式输出开始前，避免工具调用过程中模型被静默替换导致状态不一致。",
+      "支持环境变量注入密钥、Docker部署、健康检查、结构化JSON日志和路由能力匹配。"
+    ],
+    "oneHighValuePoint": "其“仅在响应开始前进行重试和故障转移，输出或工具调用开始后不静默切换模型”的设计，对编码代理安全性很有参考价值。",
+    "oneLineReview": "这是一份信息密度较高、可直接用于部署参考的AI编码代理网关README，但方法论和证据支撑有限。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，若实际搭建多模型编码代理环境则值得保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "编码代理",
+      "模型网关"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "该文档介绍 superagent-ai/gateway，一个用 Rust 编写的本地模型网关，可将 Claude Code、Codex CLI 等编码代理统一接入不同模型提供商，并支持协议转换、模型别名、角色路由、安全回退、Docker部署和结构化日志。",
+    "tags": [
+      "Rust",
+      "LLM Gateway",
+      "Claude Code",
+      "Codex CLI",
+      "OpenAI兼容",
+      "模型路由"
+    ],
+    "title": "superagent-ai/gateway: A tiny Rust gateway for running coding agents across model providers safely.",
+    "totalScore": 66.5,
+    "url": "https://github.com/superagent-ai/gateway"
+  },
+  "payloadHash": "sha256:2a73881b05c1a80bb290673e98587292720e24eb420818407b0def395a6e4aad",
+  "refs": {},
+  "revisionId": "sha256:11a63baa7c0b3d7ad233766839c229b4c938cb24a8b00dcd4aed04930059af32",
+  "schemaVersion": 1,
+  "updatedAt": 1789728682326
+}

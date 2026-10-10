@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789614485475,
+  "entityType": "session",
+  "id": "1789614485475_5io6erpd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "盘点现有Agent harness功能，标注其对应的模型失败模式，并定期验证哪些补丁已可删除。",
+      "试行目标驱动的异步代理流程，仅将需要精修或强控制的任务保留在终端中。",
+      "为代码审查搭建“并行找错—多角度复核—过滤误报”的自动化工作流。"
+    ],
+    "archiveReason": "包含目标驱动代理、动态删改harness、自动化代码审查及工作流编排等可迁移经验，与Agent开发和软件工程实践高度相关。",
+    "byline": "陈成",
+    "classifiedAt": 1789641997468,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude Code团队的代理化工作转型",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "随着代理能力增强，交互方式可从逐项布置任务转向给定目标，仅在精修或需要微观控制时进入终端。",
+      "代码审查可由代理承担格式、细节和常规缺陷检查，人类重点判断业务背景、API设计原因和服务边界。",
+      "可靠工作流可通过并行发现缺陷、对每个缺陷进行多角度对抗验证，再过滤误报来构建。"
+    ],
+    "oneHighValuePoint": "Agent harness应被视为针对当前模型失败模式的临时适配层：模型能力变化时及时删除旧补丁，同时为更大任务尺度设计新工具。",
+    "oneLineReview": "信息浓缩且贴近Agent工程实践，但属于访谈二手摘要，具体效果、适用条件和证据仍需回看原始内容。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议存档，并结合原始访谈选择性精读",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "软件工程",
+      "产品开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提炼Claude Code团队访谈：工作逐渐从终端转向Slack代理，任务下达由步骤转为目标；harness随模型失败模式动态增删；代码审查则由代理处理细节，人类聚焦架构背景与服务边界。",
+    "tags": [
+      "Claude Code",
+      "Agent工作流",
+      "代码审查",
+      "模型能力演进",
+      "Harness设计"
+    ],
+    "title": "陈成: Claude Code 团队自己，已经有 70~80% 的工作不在终端里做了",
+    "totalScore": 72,
+    "url": "https://x.com/chenchengpro/status/2100190714537885938"
+  },
+  "payloadHash": "sha256:dc71aba1aa29d12935a9978bb9d21e5ced239653feaa569f1eb6178c106f3610",
+  "refs": {},
+  "revisionId": "sha256:8e627183de491a37f4e080e419a3df76c4c22be3a4619939d900702362cee74c",
+  "schemaVersion": 1,
+  "updatedAt": 1790769211208
+}

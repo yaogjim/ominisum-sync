@@ -1,0 +1,64 @@
+{
+  "createdAt": 1782360525223,
+  "entityType": "session",
+  "id": "1782360525223_ivaz85md",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注 AI 政策，可查阅 WIRED 原文核实完整背景",
+      "无需保存该推文，可等待更完整报道或分析"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782361742165,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 3,
+      "information_density": 2,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 3,
+      "relevance": 4,
+      "transferability": 1
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Anthropic谈判代表传闻",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息密度和方法论价值很低，缺乏可操作性，仅适合作为即时舆情片段，不具备长期保留价值。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "有传闻称 Tom Brown 取代 Amodei 成为 Anthropic 与特朗普政府沟通的主要代表",
+      "事件涉及 Fable 5 模型解禁与美国商务部国家安全审查背景"
+    ],
+    "oneHighValuePoint": "提示 Anthropic 与美国政府沟通代表可能发生变化，可作为后续核查线索。",
+    "oneLineReview": "更像一条即时情绪化评论，而非值得保存的行业分析。",
+    "primaryCategory": "AI行业动态",
+    "rating": "E",
+    "rejectReason": "内容极短，主要为转述与主观揣测，缺乏完整背景、数据和可验证信息，难以形成有效知识沉淀。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "科技政策",
+      "社交媒体评论"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该内容转述一则关于 Anthropic 与特朗普政府围绕模型解禁谈判的传闻，并附带作者对动机的猜测。整体信息不完整，缺乏上下文和可靠证据支撑。",
+    "tags": [
+      "Anthropic",
+      "AI政策",
+      "美国政府",
+      "传闻"
+    ],
+    "title": "x.com/Datou/status/2069906197751509222",
+    "totalScore": 22,
+    "url": "https://x.com/Datou/status/2069906197751509222"
+  },
+  "payloadHash": "sha256:36ce7833d7b2337a354fa7c560743303d8acde450900900137305e18157be697",
+  "refs": {},
+  "revisionId": "sha256:f2b0e2d012e95833caa412b12acbaadde7a7d0dbe672253feaec67fd3bf0e8b1",
+  "schemaVersion": 1,
+  "updatedAt": 1782361743383
+}

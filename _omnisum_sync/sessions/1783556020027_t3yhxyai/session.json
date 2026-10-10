@@ -1,0 +1,67 @@
+{
+  "createdAt": 1783556020027,
+  "entityType": "session",
+  "id": "1783556020027_t3yhxyai",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "尽快导出常用云端智能体的对话历史、角色设定和关键记忆",
+      "将智能体资料整理为 Markdown 文件并保存到本地可备份目录",
+      "如确有需求，可测试 WorkBuddy 或其他本地 AI 助手方案验证迁移效果"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783556049632,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "国产Agent数据本地迁移指南",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "中心化平台上的智能体角色、记忆和对话历史存在下线或不可控删除风险",
+      "可将角色设定、系统提示词、对话历史和长期记忆导出为 txt 或 Markdown 作为备份",
+      "本地智能体可通过 SOUL.md、IDENTITY.md、USER.md、MEMORY.md 等文件重建角色状态"
+    ],
+    "oneHighValuePoint": "将智能体的人设、用户信息、长期记忆和对话历史拆分为本地 Markdown 文件进行可迁移保存。",
+    "oneLineReview": "有一定操作参考价值，但带明显工具推广性质，关键事实和产品能力缺乏证据支撑。",
+    "primaryCategory": "AI工具与数据迁移",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "本地化智能体",
+      "数据主权"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章借国产智能体功能下线事件，提醒用户导出云端智能体的人设、记忆和对话历史，并介绍通过 WorkBuddy 使用 Markdown 文件在本地重建智能体的三步迁移流程。",
+    "tags": [
+      "AI Agent",
+      "本地运行",
+      "数据备份",
+      "Markdown",
+      "WorkBuddy"
+    ],
+    "title": "x.com/sukie234/status/2074635180560785820",
+    "totalScore": 56,
+    "url": "https://x.com/sukie234/status/2074635180560785820"
+  },
+  "payloadHash": "sha256:f95ad7e044c8ec813d6f2379e487501e683e6e7a963c52e4a4b6fdb5f0f263ee",
+  "refs": {},
+  "revisionId": "sha256:7aab5aeed59d352a4637140d5bba06ff2c616052b9f5b3e7b7ab00e72722b8f8",
+  "schemaVersion": 1,
+  "updatedAt": 1789729163055
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728763917,
+  "entityType": "message",
+  "id": "1789728763917_vggmi3i0",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# OpenAI引入 Vercel AI SDK核心成员，补强Codex应用层\n\nOpenAI招募Vercel AI SDK核心成员Nico Albanese参与Codex App开发。相比模型研究，他更擅长把底层AI能力封装成开发者可直接使用的产品。这次加盟表明，Codex的竞争重点正从“能否生成代码”转向“能否可靠完成长时间、复杂的软件工程任务”。\n\n## 从开发工具走向Agent基础设施\n\nNico早期开发了Next.js脚手架Kirimase，可一键配置数据库、认证、支付和邮件服务，并生成CRUD代码，获得约2800个GitHub Star，后迁入Vercel官方组织。\n\n加入Vercel后，他参与AI SDK 3.3至6.0的多次升级，覆盖模型中间件、多步工具调用、结构化输出、Agent循环、MCP、执行审批和调试工具等。文中称，截至2025年7月，该SDK周下载量已超过200万，已成为大量Web开发者构建AI应用的重要工具层。\n\n## 经验与Codex当前难题高度匹配\n\nNico还开源了云端编程Agent系统Open Agents，支持GitHub集成、持久化沙箱和可恢复的长任务，获得超过5000个GitHub Star。他称该Agent后来完成了自己发布的全部代码，包括项目自身。\n\n当Agent连续运行数十分钟甚至数小时后，产品必须处理任务状态、文件系统、权限审批、失败恢复、多人协作、并行Agent及人工接管。Nico过去两年的工作恰好集中于这些问题。他也已是Codex重度用户，此次从用户转为建设者，意味着OpenAI正在加速补齐Codex的工程化与产品化能力。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728763917,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:10ba08186b3527246864bec244fa093ae9d39c738d9ecad5e631438a756d8311",
+  "refs": {
+    "sessionId": "1784695037742_ymvte4bv"
+  },
+  "revisionId": "sha256:107fe6d867f4f2e3011a11fdd191712c35484582bbbee78a98523b05259be465",
+  "schemaVersion": 1,
+  "updatedAt": 1789728763917
+}

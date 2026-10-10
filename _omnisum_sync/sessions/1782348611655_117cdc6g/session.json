@@ -1,0 +1,64 @@
+{
+  "createdAt": 1782348611655,
+  "entityType": "session",
+  "id": "1782348611655_117cdc6g",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注该议题，应查阅国家统计局原始数据和完整口径说明",
+      "寻找更系统的就业市场分析报告替代该社交媒体短帖"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782348936501,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 3,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "青年失业率下降争议",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "E级内容，除单一官方失业率数据和毕业生规模外缺少深入论证，证据质量弱，长期参考价值低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "16至24岁青年失业率统计口径不包含在校生",
+      "高校毕业生规模增加可能加剧就业竞争与社会焦虑"
+    ],
+    "oneHighValuePoint": "提到了青年失业率统计口径中“不包含在校生”这一关键限定。",
+    "oneLineReview": "有话题价值但缺少实质分析，不能作为可靠研究材料。",
+    "primaryCategory": "社会经济",
+    "rating": "E",
+    "rejectReason": "内容主要是社交媒体短帖，信息量有限，缺乏系统分析、数据来源说明和可复用方法论，热门回复也有大量无关内容。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "就业形势",
+      "公共数据"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章引用国家统计局公布的青年失业率数据，指出16至24岁不含在校生失业率为15.6%，同时提到高校毕业生规模创新高及网络就业焦虑，但缺乏进一步分析。",
+    "tags": [
+      "青年失业率",
+      "高校毕业生",
+      "统计数据",
+      "就业焦虑"
+    ],
+    "title": "李老师不是你老师: 青年失业率真的下降了吗",
+    "totalScore": 23,
+    "url": "https://x.com/whyyoutouzhele/status/2069435317955035599"
+  },
+  "payloadHash": "sha256:64541c2184f2358ebfbbc8b274ee3759f63d5ffb0b5d0f9a3505565e10f35f9d",
+  "refs": {},
+  "revisionId": "sha256:1b3b0f9e9ecdad45f5a4ed21e3ec6a81b42e0e5ca2df3a331474ccd535bfd102",
+  "schemaVersion": 1,
+  "updatedAt": 1782348937147
+}

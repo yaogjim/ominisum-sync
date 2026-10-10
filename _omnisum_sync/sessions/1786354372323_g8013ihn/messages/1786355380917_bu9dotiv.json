@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786355237046,
+  "entityType": "message",
+  "id": "1786355380917_bu9dotiv",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 主旨概括\n\n作者分享了一套 **“原型先行、代码随后”** 的 AI 开发流程：先用 Claude Design 完成并确认 UI 原型，再让 Agent 根据原型及版本差异实现功能，从而降低设计验证成本，并让原型与实际产品长期保持一致。\n\n## 1. 第一版：先设计和打磨原型\n\n- 项目初版先使用 **Claude Design** 生成 UI 原型与设计。\n- 原型打磨完成后保存到本地，并通过 **Baoyu-Design Skill** 持续维护。\n- 开发新功能时，不直接修改业务代码，而是遵循以下顺序：\n  1. 修改本地原型；\n  2. 确认产品逻辑和 UI 设计；\n  3. 再实现对应功能。\n\n## 2. 将流程写入 Agent 规则\n\n- 后来，作者把这套工作方式写进 `Agents.md` 或 `claude.md`。\n- 此后只要提出“修改或增加某个功能”，Agent 默认会先更新原型，再处理代码实现。\n- 通过这一规则，项目至今能够保持 **原型与实际功能一致**，避免原型逐渐过时。\n\n## 3. 原型先行的主要价值\n\n### 低成本验证设计\n\n- 在正式编码前，可先通过原型验证：\n  - 产品流程是否合理；\n  - UI 设计是否合适；\n  - 新功能是否符合预期。\n- 相比直接修改完整功能，调整原型的成本更低、反馈更快。\n\n### 降低 Agent 的实现难度\n\n- Claude Design 的产出包括：\n  - **React 代码**；\n  - **结构化 JSON 数据**。\n- 将原型纳入 Git 版本控制后，可以通过 `git diff` 清楚查看每次设计和功能的变化。\n- 功能确认后，Agent 可直接参考原型的 Diff 实现代码，减少理解需求和猜测设计意图的成本。\n\n## 4. 实践建议与社区反馈\n\n- 作者建议使用 **Opus 模型**，其设计质量通常更好。\n- 最好同时接入项目的 **设计系统**，以保证组件、样式和交互的一致性。\n- 有用户认为，把原型和代码放入同一套版本控制中非常有效：Agent 能直接根据代码 Diff 工作，可显著减少猜测成本。\n- 另有用户询问可接入 Codex 官方插件的 OpenDesign，但原文未给出具体评价。\n\n## 5. 相关工具\n\n- **Baoyu-Design Skill**：用于在本地维护和迭代 Claude Design 生成的设计原型。\n- GitHub：<https://github.com/JimLiu/baoyu-design>",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786355237046,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:70bfe0c93e87e1dba68667835a656748a183f40849a5854e4c237b54c56ab063",
+  "refs": {
+    "sessionId": "1786354372323_g8013ihn"
+  },
+  "revisionId": "sha256:01c8da37cdb1ef9d932c396474e054c975668ed498e395e36237504621f2f460",
+  "schemaVersion": 1,
+  "updatedAt": 1786355237046
+}

@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789956109629,
+  "entityType": "session",
+  "id": "1789956109629_u4ymzkr0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看项目代码、模型卡与评估材料，核对任务定义、数据划分、指标及部署条件，再判断是否适合自己的决策任务。",
+      "以Kev-4B作为初始候选，在实际任务数据上测试准确率与延迟；涉及知识问答或日精度日期运算时，单独评估其短板。",
+      "微调时对比2e-4与5e-5学习率，并同时评估分布内、分布外表现及基础能力保留情况。"
+    ],
+    "archiveReason": "提供开源项目入口、部署与训练成本线索，以及学习率、模型规模和数据结构影响泛化的实验观察，具有后续验证价值。",
+    "byline": "Jared Palmer",
+    "classifiedAt": 1790768363646,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Kev开源决策模型发布与微调经验",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 675,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSrJjHrXIAA0TFD?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSrJjHrXIAA0TFD?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "Kev基于Qwen3，采用LoRA加小型指针头，并提供TypeSafe System One兼容API，可作为自训练、自部署决策模型的候选。",
+      "作者报告，从小模型扩展至4B的收益明显大于从4B扩展至8B；这一结果仅代表文中实验，但提供了优先评估4B规格的线索。",
+      "作者观察到，增加训练数据可能提高分布内准确率却降低分布外准确率，降低微调学习率则有助于恢复部分基础能力；相关结论仍需结合具体任务复现。"
+    ],
+    "oneHighValuePoint": "作者报告，将微调学习率从2e-4降至5e-5后，部分基础能力得以恢复；这提示微调不能只看分布内准确率，还应检查既有能力与分布外泛化是否退化。",
+    "oneLineReview": "信息集中且贴近模型开发实践，但性能与调参结论主要来自作者自报，适合作为实验线索而非直接采用的选型依据。",
+    "primaryCategory": "AI模型开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性保留，作为小型决策模型选型与微调实验的线索",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "模型微调",
+      "AI工程部署"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "介绍基于Qwen3的Kev开源决策模型系列，采用LoRA与小型指针头，提供兼容API。作者报告了性能、推理延迟和训练成本，并分享模型规模、学习率及合成数据对效果的影响，同时指出知识与日期运算短板。",
+    "tags": [
+      "Kev决策模型",
+      "Qwen3",
+      "LoRA微调",
+      "分布外泛化",
+      "KV缓存"
+    ],
+    "title": "Jared Palmer: UPDATE: Kev-0",
+    "totalScore": 68,
+    "url": "https://x.com/jaredpalmer/status/2101715352258232539"
+  },
+  "payloadHash": "sha256:c656abb77ef637262b2c603205367c1248c71c3ead4554ffd04a42b9517b86e2",
+  "refs": {},
+  "revisionId": "sha256:77808d37a969f25ee4f878c6f96ba557d8e613b49c17b5df04ed572c3ad1fc1f",
+  "schemaVersion": 1,
+  "updatedAt": 1790768364433
+}

@@ -1,0 +1,65 @@
+{
+  "createdAt": 1790232203532,
+  "entityType": "session",
+  "id": "1790232203532_zxv8fs2e",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如需跨代理使用模型，先核对目标代理、模型服务商和接口格式是否在其支持范围内。",
+      "试用前检查安装脚本、密钥存储方式，以及登录凭据跨代理使用的限制。",
+      "在非关键项目中测试流式输出、工具调用和配置恢复是否符合页面描述。"
+    ],
+    "archiveReason": "列出了具体的代理适配方式、配置能力和命令示例，对比较或试用同类工具有参考价值。",
+    "classifiedAt": 1790233132571,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 6,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 5
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Magpie多代理模型网关与配置管理",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "usemagpie.ai",
+    "favicon": "https://usemagpie.ai/favicon.png",
+    "knowledgePoints": [
+      "不同 AI 编程代理可能依赖不同的模型 API 格式，跨模型使用需要处理接口转换。",
+      "文章称 Magpie 可分别管理代理模型配置，也可通过配置方案批量切换。"
+    ],
+    "oneHighValuePoint": "通过本地网关适配不同代理所需的 API，并集中管理各代理的模型配置，可减少逐一修改配置的工作。",
+    "oneLineReview": "与 AI 编程工具实践高度相关，功能描述具体，但缺少独立验证，适合作为试用线索而非可靠结论。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为多代理模型配置工具的候选方案存档，使用前核验兼容性与安全性。",
+    "secondaryCategories": [
+      "模型网关",
+      "开发工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "这是一页 Magpie 产品介绍，称其通过本地网关转换不同代理与模型厂商的接口，支持按代理切换模型、保存配置方案，并提供用量统计、图形界面及命令行操作。页面给出了部分命令示例，但功能和兼容性主要是产品方自述。",
+    "tags": [
+      "Magpie",
+      "AI代理",
+      "模型网关",
+      "配置管理"
+    ],
+    "title": "magpie",
+    "totalScore": 62,
+    "url": "https://usemagpie.ai/"
+  },
+  "payloadHash": "sha256:fdcf2eff37d83fe213bfd2f1fa7fdd90aeafd8dfc1abd55d08cd9b740347ecf0",
+  "refs": {},
+  "revisionId": "sha256:8245aae302a2020490e45a926e7d3c840145a9f32b1171099074212e824c007a",
+  "schemaVersion": 1,
+  "updatedAt": 1790233132620
+}

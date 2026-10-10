@@ -1,0 +1,60 @@
+{
+  "createdAt": 1789702988680,
+  "entityType": "session",
+  "id": "1789702988680_ko1z2ts1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "classifiedAt": 1789703032493,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 4,
+      "information_density": 5,
+      "long_term_leverage": 2,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "双MCIO转接硬件到货进展",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息时效短且高度依赖特定构建项目，后续复用价值很低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "作者确认相关 PCIe 与 MCIO 转接器件为无源器件"
+    ],
+    "oneHighValuePoint": "作者补充说明相关 MCIO 转接器件采用无源设计。",
+    "oneLineReview": "这是简短的硬件采购进度通报，具备少量具体信息，但没有形成可复用的技术内容。",
+    "primaryCategory": "硬件构建",
+    "rating": "D",
+    "rejectReason": "仅陈述配件到货和延期情况，缺少技术细节、测试结果及可复用方法。",
+    "retentionDecision": "属于一次性项目进度更新，无需长期保留",
+    "secondaryCategories": [
+      "采购进度",
+      "接口扩展"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章仅更新一项硬件构建的采购进度：PCIe x16 转双 MCIO 8I 适配器及线缆已到货，MCIO 转 PCIe x16 插槽适配器仍需等待数周，并补充相关器件为无源设计。",
+    "tags": [
+      "PCIe",
+      "MCIO",
+      "转接器",
+      "无源器件"
+    ],
+    "title": "Zach Mueller: Good news: the PCI Express x16 to Two MCIO 8I Adapter and MCIO cables have arriv…",
+    "totalScore": 28,
+    "url": "https://x.com/TheZachMueller/status/2099266773669290051"
+  },
+  "payloadHash": "sha256:65fa14564100de619bce7cbd0b9c27bc543c83b602c675b318caec349d8659ef",
+  "refs": {},
+  "revisionId": "sha256:b7517be7b32244ba5c5b309a79c508c9bb89ef0db360a6727868b0fa9db75a65",
+  "schemaVersion": 1,
+  "updatedAt": 1789704025995
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943184366,
+  "entityType": "session",
+  "id": "1786943184366_xy0oe6fu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在长时间Pi编码会话中使用/compact，检查压缩摘要是否保留目标、进展、关键决策和未解决事项。",
+      "通过Pi扩展创建自定义压缩提示词，并与默认压缩结果进行对比。",
+      "设计Agent压缩策略时同时评估保留消息的令牌预算与提示缓存重建成本。"
+    ],
+    "archiveReason": "清晰拆解了Pi的压缩触发、历史裁剪、摘要写回及提示缓存失效机制，对编码代理和长上下文系统设计具有复用价值。",
+    "classifiedAt": 1786943213655,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 6,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Pi编程代理的上下文压缩机制",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "earendil.com",
+    "favicon": "https://earendil.com/static/favicon/favicon.ico",
+    "knowledgePoints": [
+      "Pi通常在回合结束后检查自动压缩，也可通过/compact手动触发；发生上下文溢出时还可能在回合中压缩。",
+      "压缩会按令牌预算保留近期消息，并通过独立LLM请求将较早历史总结为目标、进展和关键决策等结构化内容。",
+      "压缩改变了提示前缀，因此会使原有提示缓存失效；压缩后的后续请求可重新建立缓存。"
+    ],
+    "oneHighValuePoint": "压缩并非简单删减历史，而是保留近期原始消息、将较早内容结构化总结后写回会话，并以牺牲既有提示缓存为代价换取新的上下文空间。",
+    "oneLineReview": "机制说明清晰且具有较强迁移价值，但缺少代码、实验数据和压缩质量验证方法。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并存档，作为设计Agent上下文压缩与缓存策略的参考",
+    "secondaryCategories": [
+      "AI编程工具",
+      "上下文工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章拆解Pi在长对话接近上下文上限时的压缩流程：保留近期消息，用独立LLM请求结构化总结旧历史，再将摘要写回会话；同时说明自动与手动触发、令牌预算、模型切换及提示缓存失效的成本。",
+    "tags": [
+      "Pi",
+      "上下文压缩",
+      "对话摘要",
+      "提示缓存",
+      "编码代理"
+    ],
+    "title": "How Compaction Works in Pi | EARENDIL",
+    "totalScore": 75,
+    "url": "https://earendil.com/posts/compaction-in-pi/"
+  },
+  "payloadHash": "sha256:0d9672e1a27a1e274187388efc7245b460fc600845e695ff3d09c817d07e4406",
+  "refs": {},
+  "revisionId": "sha256:07949aa5c31786804f55ebf1a92cddefb1c9d25ba5c61767c0866f2a6f59f2aa",
+  "schemaVersion": 1,
+  "updatedAt": 1789694105109
+}

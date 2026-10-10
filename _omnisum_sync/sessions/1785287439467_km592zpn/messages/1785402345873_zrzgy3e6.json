@@ -1,0 +1,19 @@
+{
+  "createdAt": 1785402345874,
+  "entityType": "message",
+  "id": "1785402345873_zrzgy3e6",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Kimi K3架构与效率设计观察\n\n**评级**: B (60分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI技术\n**次类别**: 大模型架构, 推理效率\n**标签**: #Kimi K3 #LatentMoE #Kimi Delta Attention #Attention Residuals #NoPE\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 6 | 10% |\n| 相关性 | 8 | 20% |\n| 可操作性 | 4 | 15% |\n| 方法论价值 | 5 | 15% |\n| 可迁移性 | 6 | 10% |\n| 证据质量 | 5 | 10% |\n| 长期杠杆 | 6 | 10% |\n\n**一句话点评**: 这是一份高密度的K3架构速记，但缺少原始数据、技术推导和可直接复现的实现细节。\n**核心高价值点**: K3以LatentMoE和多种注意力替代方案提升效率，同时用Attention Residuals改善跨层残差路径，并明确披露约4%训练成本和2%推理成本增量。\n\n### 摘要\n文章将Kimi K3概括为Kimi Linear的大规模生产化版本，梳理LatentMoE、多头潜在注意力、Kimi Delta Attention、跨层注意力残差、全NoPE及原生多模态等设计，并指出其推理效率导向。\n\n### 知识要点\n- Kimi K3整体延续并放大Kimi Linear架构，新增的LatentMoE通过降维压缩大型线性层。\n- K3的效率优化包括以LatentMoE替代普通MoE，并采用多头潜在注意力和Kimi Delta Attention。\n- Attention Residuals通过带注意力权重的跨层残差连接改善性能；K3还在全部层使用NoPE。\n\n### 行动项\n- 对照Kimi K3技术报告核验Attention Residuals的性能收益及训练、推理成本数据。\n- 在模型架构调研表中比较LatentMoE、多头潜在注意力和Kimi Delta Attention与传统组件的效率取舍。\n\n### 存档判定\n归档: 是 — 原因: 简明汇总了Kimi K3相对Kimi Linear的架构变化及效率取舍，可用于后续模型架构比较。\n删除: 否\n留存决策: 浏览后作为Kimi K3架构变更索引存档，关键结论需回查技术报告",
+    "role": "assistant",
+    "timestamp": 1785402345874,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:6246094c640efe3565e735033ce326cdc49f25363cdc909d5e18a8092ce04f7f",
+  "refs": {
+    "sessionId": "1785287439467_km592zpn"
+  },
+  "revisionId": "sha256:672863c0ba75e2687d7a87ebda2e8b027edaffd48fd9e26791fa1ae4d4943b72",
+  "schemaVersion": 1,
+  "updatedAt": 1785402345874
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727943317,
+  "entityType": "message",
+  "id": "1789727943318_ywx890x9",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 企业 AI 自动化更适合“确定性流程 + Agent”的混合架构\n\n文章讨论一个百人以上研发部门的 AI 流程自动化选型：Agent 已能完成局部任务，但端到端流程仍需人工接力。核心矛盾是，企业生产环境既需要 Agent 的灵活推理，也要求流程可控、可验证，因此作者倾向采用混合架构，而非追求完全自治。\n\n## 两条路线分别解决灵活性与可控性\n\n团队已有行业知识、Skill 和 RAG，并要求使用开源模型，暂按 DeepSeek V4 Flash 设计。最终希望项目管理软件中的 issue 能自动触发 Agent，调用内部工具与数据，完成判断、统计、代码追踪，并将结果写回。\n\n两种候选方案是：\n\n- **Hermes Agent + Goal/Cron**：补齐 Skill、代码库和 MCP，让 Agent 自主规划并执行完整流程，适合步骤不确定、探索性强的任务。\n- **LangGraph + OpenCode**：以确定性 DAG 固定流程，每一步在独立环境中执行和验收，适合固定、高风险的核心链路。\n\n作者的初步判断是：主流程采用 LangGraph，开放任务交给 Hermes。\n\n## 真正难点是验证、状态与行业知识\n\n热门回复普遍强调，不应把所有环节都 Agent 化：能用脚本、数据库或固定函数解决的，就避免使用 LLM 和 RAG，以提高可验收性。生产化还需关注知识时效性、局部更新、人机协作、双轨 RAG，以及长流程中的外置状态管理、规划和监督。\n\n另一个现实障碍是行业沟通：如果实施方缺乏领域知识，需求理解和知识转移成本可能很高。整体来看，企业 Agent 的关键不是“自治程度最高”，而是把不确定性限制在可监督、可回退、可验证的边界内。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727943317,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:93c6e111b085b9ccb9dbcc730600a3c3f413882d0700130795513e23479aca9c",
+  "refs": {
+    "sessionId": "1787306047406_l0r7kpdi"
+  },
+  "revisionId": "sha256:95d974d68976e5b0d311572a577adfbde760aa2e42802ba3b16c69dbab756f37",
+  "schemaVersion": 1,
+  "updatedAt": 1789727943317
+}

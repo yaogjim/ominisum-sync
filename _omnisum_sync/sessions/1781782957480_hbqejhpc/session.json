@@ -1,0 +1,63 @@
+{
+  "createdAt": 1781782957480,
+  "entityType": "session",
+  "id": "1781782957480_hbqejhpc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确有需要，重新打开原始GitHub链接查看完整目录",
+      "若无后续用途，直接删除该条记录"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781783283799,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 1,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 1,
+      "relevance": 2,
+      "transferability": 1
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "GitHub技能目录空页面",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "内容缺失，无法判断其方法论、证据、可操作性或长期价值，保留意义很低。",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "页面内容抓取不完整，缺少正文信息",
+      "仅提供了GitHub仓库目录位置，无法评估具体资源质量"
+    ],
+    "oneHighValuePoint": "仅能看出其可能指向一个名为skills的GitHub资源目录。",
+    "oneLineReview": "这是一个内容抓取不完整的GitHub页面，基本无保留价值。",
+    "primaryCategory": "无有效内容",
+    "rating": "E",
+    "rejectReason": "正文几乎没有有效信息，仅包含GitHub页面导航文本，无法提供学习或工作参考价值。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "GitHub页面",
+      "资源索引"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该页面仅显示GitHub仓库目录链接及导航残留文本，没有实际文章内容、代码说明或方法论信息，无法形成有效知识沉淀。",
+    "tags": [
+      "GitHub",
+      "skills",
+      "内容缺失"
+    ],
+    "title": "skills/skills at main · mattpocock/skills",
+    "totalScore": 13,
+    "url": "https://github.com/mattpocock/skills/tree/main/skills"
+  },
+  "payloadHash": "sha256:bb8c915400383ee70ae499f83434b0ae5eecc9d2924aa01ff0ec4f7f1188c896",
+  "refs": {},
+  "revisionId": "sha256:c09436deff965afec6fe943a0d90f583c86cc9294041209508c00f6a7e4dd1fa",
+  "schemaVersion": 1,
+  "updatedAt": 1781783283969
+}

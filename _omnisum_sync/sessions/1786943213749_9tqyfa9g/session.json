@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943213749,
+  "entityType": "session",
+  "id": "1786943213749_9tqyfa9g",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在编程代理评测中加入意图不明、约束冲突和信息缺失的任务，记录其主动澄清率。",
+      "将未经确认的假设、擅自修改计划和高风险猜测纳入代理质量评价指标。",
+      "对重要开发任务设置确认节点，要求代理在影响业务、预算或架构的选择前询问用户。"
+    ],
+    "archiveReason": "提出了能力指标与实际协作体验可能背离的可复用判断视角。",
+    "classifiedAt": 1786943236465,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "为何Opus 5协作体验变差",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "mun-logadan.github.io",
+    "favicon": "https://mun-logadan.github.io/favicon.svg",
+    "knowledgePoints": [
+      "模型能力更强并不必然带来更好的协作体验，主动澄清和避免越权假设是独立的产品质量维度。",
+      "自包含的基准任务可能奖励模型在歧义下大胆作答，却无法充分衡量现实开发中的沟通与风险控制能力。",
+      "真实编码任务包含业务意图、预算和上下文等难以完整表达的约束，代理对不确定性的处理方式会直接影响可靠性。"
+    ],
+    "oneHighValuePoint": "评估编程代理不能只看任务完成率，还应考察它能否识别真实场景中的歧义，并在高风险决策前主动请求澄清。",
+    "oneLineReview": "文章提出了有价值的代理协作评价视角，但因缺少数据、对照实验和训练机制证据，核心因果解释仍属推测。",
+    "primaryCategory": "AI编程代理",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并存档其关于代理协作质量的判断视角",
+    "secondaryCategories": [
+      "模型评测",
+      "AI产品设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为Opus 5虽然能力和基准表现更强，但更倾向在意图不明时自行假设和修改计划，导致编程协作体验下降；作者推测这与基准及强化学习偏好直接作答有关。",
+    "tags": [
+      "Opus 5",
+      "编程代理",
+      "澄清机制",
+      "基准测试",
+      "协作体验"
+    ],
+    "title": "Why does Opus 5 feel worse to work with?",
+    "totalScore": 60,
+    "url": "https://mun-logadan.github.io/why-does-opus-5-feel-worse/"
+  },
+  "payloadHash": "sha256:a0b6a0c28a7050b7d76ba5233ecbe2aade5cae5f7c108b6fc376400e6ac776b9",
+  "refs": {},
+  "revisionId": "sha256:86d0c26d28ac2a785f69826facf58fc9198f04d5137db93f230ef062dde11c61",
+  "schemaVersion": 1,
+  "updatedAt": 1789728046912
+}

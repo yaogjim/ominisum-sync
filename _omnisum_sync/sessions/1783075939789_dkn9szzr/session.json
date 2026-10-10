@@ -1,0 +1,68 @@
+{
+  "createdAt": 1783075939789,
+  "entityType": "session",
+  "id": "1783075939789_dkn9szzr",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "可借鉴文中的电脑自检提示语，在自己的桌面 Agent 或自动化工具中测试一次。",
+      "如关注桌面 Agent，可将 Marvis 与 Codex、WorkBuddy 等按远程控制、文件管理、交付能力分别对比。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783076163148,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Marvis桌面Agent实测",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "桌面 Agent 可通过手机远程接管电脑，实现跨设备文件查找和操作。",
+      "Marvis 的核心卖点在于读取本地文件、应用和系统状态，并围绕电脑管理展开任务。",
+      "文章提供了一个较完整的电脑自检提示语，可用于磁盘、性能、电池和使用习惯检查。",
+      "跨 App 资料收集、表格整理、PPT生成和本地创作项目重启是桌面 Agent 的典型应用场景。"
+    ],
+    "oneHighValuePoint": "将 Marvis 与 WorkBuddy 区分为“电脑入口/管家”和“办公交付同事”两类定位，有助于理解不同 Agent 产品的使用边界。",
+    "oneLineReview": "有一定场景启发，但更像带推广色彩的工具体验贴，证据质量不足。",
+    "primaryCategory": "AI工具评测",
+    "rating": "C",
+    "rejectReason": "内容偏产品体验和推广口吻，案例多为个人主观实测，缺少可验证数据、对比指标和失败场景分析，不适合长期沉淀。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "桌面Agent",
+      "效率工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章以个人实测形式介绍腾讯 Marvis 的桌面 Agent 能力，重点展示手机远程控制多台电脑、Mac 体检、跨应用资料整理、PPT生成和本地内容续写等场景，并将其定位为偏电脑入口和管家的工具。",
+    "tags": [
+      "Marvis",
+      "腾讯",
+      "AI Agent",
+      "远程控制",
+      "文件管理",
+      "办公自动化"
+    ],
+    "title": "腾讯做的 Agent 在打通手机和电脑同步干活这方面把 codex 拉爆了",
+    "totalScore": 54.5,
+    "url": "https://x.com/aiwarts/status/2072692255182221500"
+  },
+  "payloadHash": "sha256:71baed3da3b39681dea004311f256d8faac669118172f1b54a752b683795e0d0",
+  "refs": {},
+  "revisionId": "sha256:538601e8cc130d5ea9855d7a2b90082ca7044a42182ca3872eeba586deea173d",
+  "schemaVersion": 1,
+  "updatedAt": 1784801455979
+}

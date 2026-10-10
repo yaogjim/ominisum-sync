@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727975756,
+  "entityType": "message",
+  "id": "1789727975757_pgq320ec",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# AI 推理额度正形成灰色二级市场，“Token 经纪人”开始规模化运作\n\nAI 公司发放给初创企业的云服务或模型推理额度，正被“Token 经纪人”低价收购并转售。原本零散的创业公司间额度交换，已发展为包含经纪人、交易平台和代理路由服务的商业化市场，同时带来合规、数据安全与平台滥用风险。\n\n## 经纪人通过代理转发，隐藏额度来源\n\n作者调查发现，不少创业者会收到场外买卖推理额度的邮件，价格通常比官方低约 40%—50%。一名卖家甚至声称每天可提供 10 万美元的调用量。\n\n交易一般不会直接交付云厂商或模型商的密钥，而是由中间服务充当代理，从一组密钥中选择可用额度并转发请求。这种模式既方便聚合供应，也让买家难以确认额度来源及数据流向。\n\n## 市场已形成多种销售渠道\n\n目前主要渠道包括：\n\n- AI Credits、AICreditMart 等交易平台，挂牌折扣约为 30%—80%，卖家可选择交付方式；\n- CheapCredits、Tokvana、Neokens 等服务，自称依靠批量采购提供低价；\n- Telegram、Reddit及封闭创业者社群中的零散交易。\n\n部分服务统一提供约六折价格，并配有 GDPR 数据处理协议。作者认为，除非是供应商的顶级客户，否则长期获得 40% 折扣并不现实，因此怀疑其额度还有其他来源，但这只是推测。\n\n## 额度成为“准货币”，平台整治可能临近\n\n作者粗略估计，各类网站、论坛和经销商公开出售的额度价值达数千万美元。随着额度具备流动性，它已类似可转手的“准货币”，也为违规套利、来源不明的调用和数据合规问题创造空间。随着企业更重视 AI 成本、供应商加强风控，这类二级市场很可能面临更严格的审查与封禁。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727975756,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d300cedd8172215033c0bcdbb185ac2feba47a4863b53eefbf8fafec5acffe19",
+  "refs": {
+    "sessionId": "1786943463369_2yvfdyvh"
+  },
+  "revisionId": "sha256:71391e11501125df59ed5fabaa4218cd91ff0ca9d0bbdac184c14cfc5cd2cd6b",
+  "schemaVersion": 1,
+  "updatedAt": 1789727975756
+}

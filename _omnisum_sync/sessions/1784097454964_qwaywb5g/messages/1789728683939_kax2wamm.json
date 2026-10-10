@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728683939,
+  "entityType": "message",
+  "id": "1789728683939_kax2wamm",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Herdr + Pi + Claude Code：把多个编码 Agent 组织成可控工作流\n\n文章推荐将 Herdr、Pi 与 Claude Code 组合使用：Herdr 负责管理和监控多个 Agent，Pi 提供轻量、可扩展的执行框架，Claude Code 承担复杂推理与编码。核心价值不是单纯“多开几个 AI”，而是让规划、实现、审查等环节可编排、可观察，并减少并行开发失控。\n\n## 三个工具各自解决不同问题\n\n- **Herdr**：类似专为 AI Agent 设计的 tmux，可在持久窗格中运行多个代理，显示 idle、working、blocked、done 等状态，并通过 CLI 或 Socket API 调度任务。\n- **Pi**：轻量开源编码 Agent，支持 15 种以上模型提供商、模型切换、分支会话和自定义扩展，适合搭建专用流程。\n- **Claude Code**：提供较强的推理与编码能力，适合处理核心实现和复杂问题。\n\n其中 Pi 可通过生命周期钩子向 Herdr 精确上报状态；Claude Code 主要依赖界面检测和会话恢复，集成方式相对间接。\n\n## 高质量的关键是流程结构化\n\n文章建议把开发拆成明确技能，例如 `create-plan`、`implement-plan`、代码审查和子代理编排，并在项目根目录用 `AGENTS.md` 或 `CLAUDE.md` 统一记录编码规范与禁止事项。\n\n典型分工是：主 Agent 负责规划和核心实现，其他窗格并行开发模块、运行测试、审查代码或补充文档。主 Agent还能通过 Herdr 创建窗格、发送任务并等待结果，形成接近“AI 小团队”的协作模式。\n\n## 隔离、审查与上下文管理决定可靠性\n\n每个功能或 Issue 应使用独立 Git worktree 和分支，避免 Agent 污染主代码；再结合交叉审查、Git hooks 或 CI 设置质量关卡。Pi 的会话树和上下文压缩可降低上下文膨胀，Herdr 的持久会话则便于远程开发和中断后恢复。\n\n这套组合的意义在于补上多 Agent 编程的工程化管理层。不过文章给出的主要是推荐实践，实际效果仍取决于任务拆分、规范质量及人工介入，适合先从小项目逐步迭代。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728683939,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a7f48608c7d0c834e0116495d188f0bc20d6c776824426c5c51be9b26f0a5ee2",
+  "refs": {
+    "sessionId": "1784097454964_qwaywb5g"
+  },
+  "revisionId": "sha256:b0e6483767edd8dff8343096413f9c2dd3df496a46c245d4ecc3ee45ca0c63e3",
+  "schemaVersion": 1,
+  "updatedAt": 1789728683939
+}

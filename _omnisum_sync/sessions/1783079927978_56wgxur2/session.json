@@ -1,0 +1,64 @@
+{
+  "createdAt": 1783079927978,
+  "entityType": "session",
+  "id": "1783079927978_56wgxur2",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如确有需求，可直接搜索 Vercel Skills CLI 官方文档验证功能",
+      "若无法找到完整教程或可复现示例，则无需继续跟进"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783080334330,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 2,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Claude自动匹配技能技巧",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量过低，仅提示存在某个技巧和工具，未提供可复现流程、配置方式或验证结果，保留价值有限。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Claude Code 可能支持通过提示或工具自动查找可用技能",
+      "Vercel Skills CLI 被描述为可连接 Claude、Codex、Cursor 和 Gemini 等工具"
+    ],
+    "oneHighValuePoint": "Vercel Skills CLI 可能可用于在多个 AI 编程工具之间自动匹配目标与合适技能。",
+    "oneLineReview": "这是一个可能有趣但信息严重不足的工具线索，不值得单独保留。",
+    "primaryCategory": "AI工具",
+    "rating": "D",
+    "rejectReason": "内容仅为社交媒体简短转述，缺少具体步骤、原理说明和有效案例，信息不足以支撑后续学习或实践。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "开发工具",
+      "提示技巧"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "文章提到一名日本开发者发现可让 Claude Code 自动查找技能，并通过 Vercel Skills CLI 在 Claude、Codex、Cursor、Gemini 等工具间匹配目标与工具，但缺少具体操作细节。",
+    "tags": [
+      "Claude Code",
+      "Vercel Skills CLI",
+      "AI编程工具",
+      "工具匹配"
+    ],
+    "title": "x.com/rohanpaul_ai/status/2070995419728081401",
+    "totalScore": 31.5,
+    "url": "https://x.com/rohanpaul_ai/status/2070995419728081401"
+  },
+  "payloadHash": "sha256:9809129a0e7d03c8d6c35e6c3ff96a9b5b72c68e0f174fd8b6a9e8efb4efa56a",
+  "refs": {},
+  "revisionId": "sha256:70a48f804d591320e07d4a1701bd153c41faaceba4bf94a0626a999bef6d768c",
+  "schemaVersion": 1,
+  "updatedAt": 1783080334469
+}

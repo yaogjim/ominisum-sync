@@ -1,0 +1,23 @@
+{
+  "createdAt": 1783471892034,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1783471892034",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Claude Code 系统提示 “瘦身” 指南总结\n\n## 一句话概括\n\nClaude Code 每次请求都会携带大量你看不见的系统提示、工具定义和技能说明，这些内容会占用上下文、增加 token 成本。文章教你先量化、再裁剪不使用的工具和功能，从而降低每轮请求的 token 消耗。\n\n---\n\n## 核心问题：隐藏的 Token 成本\n\nClaude Code 不只是发送你的 prompt，还会附带：\n\n- 系统提示词\n- 工具定义\n- 内置 skills 目录\n- Workflow、多 Agent、Notebook、远程控制等功能说明\n- MCP 工具与历史消息\n\n这些内容每轮请求都会发送给模型，并计入 token 费用。很多功能你可能根本没用，但仍然在持续消耗上下文窗口和成本。\n\n---\n\n## 方法一：用`/context`先量化上下文\n\n在 Claude Code 中输入：\n\n```bash\n/context\n```\n\n它会展示上下文窗口的组成，包括：\n\n- system prompt\n- system tools\n- MCP tools\n- memory files\n- messages\n\n这一步的作用是建立 baseline，方便后续对比优化效果。\n\n---\n\n## 方法二：用代理查看完整请求内容\n\n`/context`只能看到大类 token 数，无法知道哪个具体工具最占空间。\n\n文章建议使用一个本地 HTTP proxy：\n\n```bash\nANTHROPIC_BASE_URL=http://localhost:8787 claude\n```\n\n它会拦截 Claude Code 发给 Anthropic API 的请求，并记录：\n\n- 每个工具的完整 schema\n- 系统提示\n- 消息历史\n- 工具体积排名\n\n这样你可以精确识别 “最肥” 的工具，而不是凭感觉删除。\n\n---\n\n## 方法三：关闭整组不用的功能\n\n在配置文件中修改：\n\n- 全局配置：`~/.claude/settings.json`\n- 项目配置：`.claude/settings.json`\n\n常见可关闭项包括：\n\n```json\n{\n  \"disableBundledSkills\": true,\n  \"disableWorkflows\": true,\n  \"disableRemoteControl\": true,\n  \"disableClaudeAiConnectors\": true\n}\n```\n\n含义：\n\n- `disableBundledSkills`：关闭 Anthropic 内置 skills，如 dataviz、review、init 等\n- `disableWorkflows`：关闭多 Agent Workflow 工具，通常体积很大\n- `disableRemoteControl`：关闭远程控制相关能力\n- `disableClaudeAiConnectors`：关闭 Claude AI 连接器相关能力\n\n这些适合 “一整类功能都不用” 的场景。\n\n---\n\n## 方法四：用`permissions.deny`删除单个工具\n\n如果只想删除个别工具，可以用：\n\n```json\n{\n  \"permissions\": {\n    \"deny\": [\"NotebookEdit\", \"CronCreate\"]\n  }\n}\n```\n\n关键细节：\n\n- `\"NotebookEdit\"`：会从请求 payload 中移除该工具定义\n- `\"Bash (rm *)\"`：只是禁止匹配调用，但工具定义仍会发送\n\n所以，如果目标是减少 token，要使用 “裸工具名”。\n\n---\n\n## 方法五：精细管理 Skills\n\n`disableBundledSkills`是全关。如果只想关闭部分 skill，可以用`skillOverrides`：\n\n- `\"off\"`：彻底移除，不进入 payload\n- `\"user-invocable-only\"`：用户仍可手动调用，但 Claude 默认看不到\n\n适合保留少数高频 skill，同时移除大部分低频 skill。\n\n---\n\n## 方法六：重启并重新测量\n\n修改配置后，需要重启 Claude Code，然后再次运行：\n\n```bash\n/context\n```\n\n对比前后 token 数变化。\n\n节省下来的 token，就是过去每轮请求都在无形浪费的上下文和费用。\n\n---\n\n## 产品视角解读\n\n这本质上是在做 AI 工具的 “上下文成本治理”。\n\n对 Claude Code 这类 Agent 产品来说，默认开启大量能力能提升开箱即用体验，但也带来：\n\n- 更高 token 成本\n- 更长上下文\n- 更高延迟\n- 模型注意力被无关工具干扰\n- 对用户不可见的 “系统负担”\n\n所以，对高频使用者来说，按需裁剪工具链是一种非常现实的降本增效手段。\n\n---\n\n## 适用与风险\n\n### 适合关闭的情况\n\n- 不使用 Workflow / 多 Agent\n- 不写 Notebook\n- 不用内置 dataviz /review skills\n- 不依赖远程控制或 Claude 连接器\n- 追求更低成本、更干净上下文\n\n### 不建议关闭的情况\n\n- 依赖 plan mode\n- 使用后台任务\n- 使用多 Agent Workflow\n- 使用 worktree 工具\n- 经常操作 Notebook\n- 依赖某些内置 skill 工作流\n\n---\n\n## 总结\n\n文章的核心方法是：\n\n1. 用`/context`量化上下文\n2. 用 proxy 看清真实请求 payload\n3. 关闭整组不用的功能\n4. 删除单个低频工具\n5. 精细管理 skills\n6. 重测 token 变化\n\n核心原则不是盲目 “瘦身”，而是：**先观测，再决策；只删除自己不用的能力。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1783471892034,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f43f334572c273d4875fee8746db0d858a70c8344718b3eece8f9c37dd8fda8b",
+  "refs": {
+    "sessionId": "1783471892074_4kiz1ju0"
+  },
+  "revisionId": "sha256:e5b840abaa1a4360d476333446cf3cd506f05dc6f4515fb8ccb8217dc2dae4c7",
+  "schemaVersion": 1,
+  "updatedAt": 1783471892034
+}

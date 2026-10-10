@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728206150,
+  "entityType": "message",
+  "id": "1789728206150_qrnlea3g",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# GPT‑5.6降价并提速，推动企业按任务灵活分配模型\n\nOpenAI将GPT‑5.6 Luna和Terra分别降价80%和20%，同时为高性能Sol推出最高提速2.5倍的Fast模式。核心思路是：企业不必让所有环节都使用最强模型，而可按质量、时效和成本要求组合模型，让规模化AI应用更经济。\n\n## Luna主攻低成本规模化，Sol服务关键任务\n\nOpenAI称，Luna以约6%的单任务成本、近9倍速度，达到一年前前沿模型的水平；在Agents’ Last Exam专业任务测试中，其表现超过Fable 5，估算单任务成本低近99%。它支持工具调用和多步骤流程，适合文档分析、客户交互分类、常规编码等高频工作。\n\n复杂任务则可由Sol处理不确定性和制定方案，再交给Luna执行明确修改、测试与评估。企业可通过评测判断哪些环节值得投入更强智能。\n\n## 效率提升来自模型、推理和智能体系统协同\n\n降价背后包括更优的任务路由、推理软件、上下文管理和工具连接。OpenAI称，Sol还在人工主导下自主优化生产内核、运行数百次实验并监控训练，使端到端服务成本降低20%，令Token生成效率提升超过15%，形成“模型帮助优化下一代模型”的反馈循环。\n\n## 新价格与Fast模式\n\n自7月30日起，API每百万输入/输出Token价格为：\n\n- **Terra：**2美元 / 12美元  \n- **Luna：**0.20美元 / 1.20美元  \n\nSol价格不变；Fast模式以标准处理两倍价格提供最高2.5倍速度，且不降低智能水平，并自动兼容原有Priority请求。ChatGPT与Codex订阅价格、额度预算不变，但使用Terra和Luna将消耗更少额度。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728206150,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:7781a9936f5b9f6a301dc7ef3eab0321e978c0c2dda35d6b6cd779f75a5bc8f3",
+  "refs": {
+    "sessionId": "1785484015402_8vzl2i25"
+  },
+  "revisionId": "sha256:70894dca73ec57b001b91bf41cfbe901c40e3a59ffa971a76e9bdefc9da74a7d",
+  "schemaVersion": 1,
+  "updatedAt": 1789728206150
+}

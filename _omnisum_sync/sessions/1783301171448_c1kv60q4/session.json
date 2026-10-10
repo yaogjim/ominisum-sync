@@ -1,0 +1,104 @@
+{
+  "createdAt": 1783301171448,
+  "entityType": "session",
+  "id": "1783301171448_c1kv60q4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注X变现，应查找原完整文章而非保存该片段",
+      "记录曝光、互动、收益等指标时需区分流量与收入转化"
+    ],
+    "archiveReason": "",
+    "byline": "动物园园长",
+    "classifiedAt": 1783301195617,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 2,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 2,
+      "relevance": 3,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "X收益算法推文片段",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量极低，仅包含曝光和收益数字片段，没有完整文章内容、算法分析或可执行结论，长期保留价值很低。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 1199,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMeXtNeXUAAB7oQ?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HMeXtNeXUAAB7oQ?format=jpg&name=medium",
+        "width": 554
+      },
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "role": "hero",
+        "score": 70,
+        "src": "https://abs.twimg.com/rweb/ssr/default/v2/og/image.png",
+        "width": 0
+      },
+      {
+        "alt": "Article cover image",
+        "caption": "",
+        "height": 480,
+        "id": "img-5",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMe_g9EaAAAvmkE?format=jpg&name=medium",
+        "role": "article",
+        "score": 65,
+        "src": "https://pbs.twimg.com/media/HMe_g9EaAAAvmkE?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "X创作者收益可能出现大幅波动",
+      "单纯曝光量不能直接代表变现效率"
+    ],
+    "oneHighValuePoint": "提示X平台创作者收益可能与曝光量并非简单线性关系。",
+    "oneLineReview": "只有现象和数字，没有真正的算法拆解或可复用经验。",
+    "primaryCategory": "社交媒体运营",
+    "rating": "E",
+    "rejectReason": "正文仅为转述和数据片段，缺少完整论证、方法拆解和可验证信息，无法形成有效参考。",
+    "retentionDecision": "建议立即删除",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "创作者经济",
+      "平台收益"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "该内容是关于X平台创作者收益下降的推文片段，提到5000万曝光仅获得222美元，以及降低发帖量后曝光提升，但未呈现完整分析和方法。",
+    "tags": [
+      "X平台",
+      "曝光收益",
+      "创作者变现"
+    ],
+    "title": "动物园园长: 自从我把日均发帖数降到30左右后，上一期我的日均曝光达到了500万，看看这个数据能保持多久",
+    "totalScore": 19.5,
+    "url": "https://x.com/weiyux2021/status/2073792970680066142"
+  },
+  "payloadHash": "sha256:bf4975d2f28ed2edd4ea23270413df4c53a04682005e44b852ab703d1fe0e37c",
+  "refs": {},
+  "revisionId": "sha256:d490486beeba18cf3b6ec693b4fc885e0ee49acc1d4de337fc75da6fbbbe3d2e",
+  "schemaVersion": 1,
+  "updatedAt": 1783321277033
+}

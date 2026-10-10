@@ -1,0 +1,179 @@
+{
+  "createdAt": 1783471892074,
+  "entityType": "session",
+  "id": "1783471892074_4kiz1ju0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在Claude Code中运行/context记录当前系统提示和工具token占比",
+      "使用本地代理抓取一次实际请求，查看工具schema和系统提示的具体体积",
+      "根据自身使用习惯在settings.json中关闭不需要的bundled skills、workflows或单个工具",
+      "重启Claude Code后再次运行/context，对比优化前后的token变化"
+    ],
+    "archiveReason": "文章提供了可直接执行的Claude Code请求负载测量、代理抓包和工具裁剪方法，具有较强实践价值",
+    "byline": "Matt Pocock",
+    "classifiedAt": 1783556381026,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "精简Claude Code系统负载",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.aihero.dev",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1783472840954,
+        "imageId": "img-1",
+        "model": "gpt-5.5",
+        "ocrText": "",
+        "summary": "# 文章精炼总结：如何减少 Claude Code 系统提示词中的 “臃肿” 内容\n\nClaude Code 每次请求都会自动附带大量你看不见的内容，比如工具定义、技能目录、系统指令等，这些都会占用 token 并产生费用。作者介绍了一套方法：先测量请求内容，再用 Claude Code 自带配置关闭不需要的功能，从而每轮减少数万 token。\n\n---\n\n## 1. 先用`/context`查看上下文占用\n\n在 Claude Code 会话中输入：\n\n```bash\n/context\n```\n\n它会按类别展示当前上下文窗口的 token 占用，例如：\n\n- system prompt：系统提示词\n- system tools：系统工具\n- MCP tools：MCP 工具\n- memory files：记忆文件\n- messages：对话消息\n\n**关键点：**\n\n- 修改配置前，先记录当前 token 数，方便后面对比。\n- `/context`只能显示 “工具总量”，不能告诉你哪个具体工具最占 token。\n\n---\n\n## 2. 用代理查看每次请求的真实内容\n\nClaude Code 通过 HTTP 调用 Anthropic API，所以可以在中间放一个代理，记录真实请求内容。\n\n作者使用了一个无依赖的 Node.js 文件`proxy.mjs`，运行后再启动 Claude Code：\n\n```bash\nANTHROPIC_BASE_URL=http://localhost:8787 claude\n```\n\n代理会把每次请求保存到`./logs/`，并在终端打印工具大小排名。\n\n示例数据：\n\n```text\n[agent-proxy] 69 tools・154,946 tool bytes・65,538 real input tokens\nWorkflow 21229 B ~5307 tok\nDesignSync 8978 B ~2245 tok\n```\n\n**关键点：**\n\n- 可以看到完整的系统提示词、工具 schema、消息历史。\n- 通过排名表能知道哪些工具最占空间，比如`Workflow`单个工具约占**5307 tokens**。\n- 这样可以精准删除不用的工具，而不是盲猜。\n\n---\n\n## 3. 用配置关闭整组功能\n\n相关配置文件位置：\n\n- 全局配置：`~/.claude/settings.json`\n- 单项目配置：`.claude/settings.json`\n\n有些功能会附带一整组工具和系统指令，可以用开关一次关闭。\n\n常见配置包括：\n\n```json\n{\n  \"disableBundledSkills\": true,\n  \"disableWorkflows\": true\n}\n```\n\n含义：\n\n- `disableBundledSkills`：关闭 Anthropic 内置技能，如 dataviz、review、init 等。\n- `disableWorkflows`：关闭多智能体 Workflow 工具，这是作者表格中最大的单项工具。\n\n**关键点：**\n\n- 如果某个功能你完全不用，就适合用这种 “总开关” 关闭。\n- slash command 仍然可以输入，但相关工具定义不会再发送给模型。\n\n---\n\n## 4. 用`permissions.deny`删除单个工具\n\n如果只想移除某些具体工具，可以在配置中使用`permissions.deny`。\n\n例如：\n\n```json\n{\n  \"permissions\": {\n    \"deny\": [\"NotebookEdit\", \"CronCreate\"]\n  }\n}\n```\n\n**关键点：**\n\n- 使用裸工具名，例如`\"NotebookEdit\"`，会把该工具定义从请求中移除，Claude 看不到它。\n- 使用带范围的规则，例如`\"Bash (rm *)\"`或`\"Skill (dataviz)\"`，只是阻止调用，但工具定义仍然会发送，不会减少 token。\n- 如果目标是缩小请求体，必须使用裸工具名。\n\n---\n\n## 5. 对内置技能做更细粒度控制\n\n`disableBundledSkills`是全关，如果只想关闭部分技能，可以用`skillOverrides`。\n\n可选状态包括：\n\n- `\"off\"`：完全从请求中移除。\n- `\"user-invocable-only\"`：用户仍可手动调用，但 Claude 默认看不到它。\n\n作者最终使用的一组配置示例：\n\n```json\n{\n  \"disableBundledSkills\": true,\n  \"disableWorkflows\": true,\n  \"disableRemoteControl\": true,\n  \"disableClaudeAiConnectors\": true\n}\n```\n\n**关键点：**\n\n- 作者强调这不是固定处方，而是 “菜单”。\n- 应该先查看自己的请求内容，再决定删什么。\n- 如果你常用 plan mode、notebook 或多智能体工作流，就不要关闭对应功能。\n\n---\n\n## 6. 注意不要误删后台任务依赖的工具\n\n有些看起来像 “臃肿” 的内容，其实是某些功能运行所必需的。\n\n例如：\n\n- task tools：后台任务工具\n- Workflow：多智能体工作流\n- worktree tools：工作区相关工具\n\n**关键点：**\n\n- 如果你依赖后台任务、多 agent 执行、工作区分支等能力，就应该保留这些工具。\n- 精简的原则是：删掉不用的，而不是追求最小化。\n\n---\n\n## 7. 最后重新用`/context`测量效果\n\n修改配置后，重启 Claude Code，让配置生效，再运行：\n\n```bash\n/context\n```\n\n对比修改前后的结果：\n\n- tools 数量应减少\n- token 总数应下降\n\n**作者的结果：**\n\n- 每轮请求减少了数万 tokens。\n- 这意味着请求更便宜，模型也不用先读大量无关工具定义，能更快进入你的真实问题。\n\n---\n\n## 总结\n\n这篇文章的核心方法是：**先看清 Claude Code 每次请求到底发送了什么，再有针对性地关闭不用的工具和技能**。通过`/context`、代理日志和 settings 配置，可以显著减少隐藏 token 开销，让 Claude Code 更省钱、更轻量。",
+        "url": "https://www.aihero.dev/api/og?resource=how-to-kill-the-bloat-in-claude-codes-system-prompt&updatedAt=2026-07-07T11:51:13.696Z",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://www.aihero.dev/api/og?resource=how-to-kill-the-bloat-in-claude-codes-system-prompt&updatedAt=2026-07-07T11:51:13.696Z",
+        "role": "hero",
+        "score": 70,
+        "src": "https://www.aihero.dev/api/og?resource=how-to-kill-the-bloat-in-claude-codes-system-prompt&updatedAt=2026-07-07T11:51:13.696Z",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "/context可以查看Claude Code上下文窗口中系统提示、工具、MCP、记忆文件和消息的token占比",
+      "通过设置ANTHROPIC_BASE_URL接入本地代理，可观察Claude Code真实发送给Anthropic API的完整请求内容",
+      "disableBundledSkills、disableWorkflows等配置项可以批量移除不需要的功能和对应工具定义",
+      "permissions.deny中的裸工具名可减少请求payload，带作用域的规则仅限制调用权限",
+      "优化后应重启Claude Code并再次运行/context验证token削减效果"
+    ],
+    "oneHighValuePoint": "使用裸工具名写入permissions.deny可以从请求负载中移除工具定义，而 scoped rule 只会阻止调用但不会减少payload。",
+    "oneLineReview": "一篇非常实用的Claude Code瘦身教程，方法清晰、可操作性强，但证据主要来自个人经验。",
+    "primaryCategory": "AI开发工具优化",
+    "published": "2026-07-07T11:51:13.696Z",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合Claude Code用户在优化成本和上下文负载时参考",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "description": "AI Engineering for Curious Professional Developers",
+        "email": "team@aihero.dev",
+        "founder": {
+          "@type": "Person",
+          "name": "Matt Pocock",
+          "sameAs": [
+            "https://twitter.com/mattpocockuk"
+          ]
+        },
+        "logo": "https://www.aihero.dev/apple-touch-icon.png",
+        "name": "AI Hero",
+        "sameAs": [
+          "https://twitter.com/mattpocockuk"
+        ],
+        "url": "https://www.aihero.dev"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "creator": {
+          "@type": "Person",
+          "name": "Matt Pocock",
+          "sameAs": [
+            "https://twitter.com/mattpocockuk"
+          ]
+        },
+        "description": "AI Engineering for Curious Professional Developers",
+        "inLanguage": "en-US",
+        "name": "AI Hero",
+        "publisher": {
+          "@type": "Organization",
+          "email": "team@aihero.dev",
+          "name": "AI Hero",
+          "sameAs": [
+            "https://twitter.com/mattpocockuk"
+          ],
+          "url": "https://www.aihero.dev"
+        },
+        "url": "https://www.aihero.dev"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+          "@type": "Person",
+          "name": "Matt Pocock",
+          "sameAs": [
+            "https://twitter.com/mattpocockuk"
+          ]
+        },
+        "dateModified": "2026-07-07T11:51:13.696Z",
+        "datePublished": "2026-07-07T11:51:13.696Z",
+        "headline": "How To Kill The Bloat In Claude Code's System Prompt",
+        "image": "https://www.aihero.dev/api/og?resource=how-to-kill-the-bloat-in-claude-codes-system-prompt&updatedAt=2026-07-07T11:51:13.696Z",
+        "isAccessibleForFree": true,
+        "mainEntityOfPage": {
+          "@id": "https://www.aihero.dev/how-to-kill-the-bloat-in-claude-codes-system-prompt",
+          "@type": "WebPage"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "email": "team@aihero.dev",
+          "name": "AI Hero",
+          "sameAs": [
+            "https://twitter.com/mattpocockuk"
+          ],
+          "url": "https://www.aihero.dev"
+        },
+        "url": "https://www.aihero.dev/how-to-kill-the-bloat-in-claude-codes-system-prompt"
+      }
+    ],
+    "schemaAuthor": "Matt Pocock",
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "BlogPosting"
+    ],
+    "secondaryCategories": [
+      "Claude Code使用技巧",
+      "开发成本优化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "siteName": "AI Hero",
+    "summaryBrief": "文章介绍如何通过/context、HTTP代理抓包和Claude Code配置项，识别并移除不常用工具、技能和工作流定义，从而减少每轮请求携带的系统提示和工具schema token，降低成本并改善上下文效率。",
+    "tags": [
+      "Claude Code",
+      "系统提示词",
+      "Token优化",
+      "AI编程工具",
+      "上下文管理"
+    ],
+    "title": "How To Kill The Bloat In Claude Code's System Prompt",
+    "totalScore": 74.5,
+    "url": "https://www.aihero.dev/how-to-kill-the-bloat-in-claude-codes-system-prompt"
+  },
+  "payloadHash": "sha256:4b49f0a86da9a3e4ef0ed616ccd16a84e40a8fdb2b25cf1e33c522720209d5ec",
+  "refs": {},
+  "revisionId": "sha256:8e5a05cf7ce03ca1bc6a652a628e09598bde8145f1f6b674914c3105b87f225b",
+  "schemaVersion": 1,
+  "updatedAt": 1789695819326
+}

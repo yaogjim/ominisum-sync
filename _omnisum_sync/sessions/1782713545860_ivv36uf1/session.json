@@ -1,0 +1,70 @@
+{
+  "createdAt": 1782713545860,
+  "entityType": "session",
+  "id": "1782713545860_ivv36uf1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估现有Agent或AI应用中的文件与元数据是否存在一致性、检索和权限治理问题",
+      "调研对象存储加数据库、数据库内置对象管理、向量检索与元数据统一管理等架构方案的取舍",
+      "关注 drive9 或类似 Agent 文件系统产品后续是否公开技术细节、性能数据和 git workspace 优化方案"
+    ],
+    "archiveReason": "提出了Agent时代文件系统与数据库融合的产品和架构判断，对AI基础设施设计有参考价值",
+    "classifiedAt": 1782714357032,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent云盘的数据库化实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "传统文件放对象存储、元数据放数据库的架构在一致性、缓存、长尾延迟和治理上会增加应用复杂度",
+      "AI Agent 场景下文件会成为上下文、记忆、证据、任务状态和工具输入输出，因此需要数据库级能力",
+      "TiDB Cloud 被定位为对象存储之上的 SQL cache layer，用于统一文件数据、元数据和查询治理",
+      "Agent 云盘相比人类网盘更强调可编程、可查询、租户隔离、权限控制、snapshot、恢复、fork、审计和计费"
+    ],
+    "oneHighValuePoint": "Agent 文件系统的核心不再是存储 blob，而是将文件、元数据、权限、检索、审计和计费统一成可查询的数据层。",
+    "oneLineReview": "有较强架构洞察和趋势判断，但偏产品叙事，缺少实测数据与可复现细节。",
+    "primaryCategory": "AI基础设施",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，适合作为AI Agent存储架构方向的案例材料",
+    "secondaryCategories": [
+      "数据库",
+      "云存储",
+      "Agent工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章解释了 drive9.ai 基于 TiDB Cloud 构建 Agent 云盘的动机：传统对象存储与数据库分离带来一致性、延迟、治理和查询问题，而 Agent 场景需要可查询、可恢复、可审计、可治理的持久工作空间。",
+    "tags": [
+      "AI Agent",
+      "TiDB Cloud",
+      "文件系统",
+      "对象存储",
+      "SQL查询",
+      "元数据治理"
+    ],
+    "title": "为什么我们在 TiDB Cloud 上做了一个 Agent 云盘",
+    "totalScore": 64,
+    "url": "https://x.com/siddontang/status/2071072311990538340"
+  },
+  "payloadHash": "sha256:e7a6279ca7c6a5bfbfd38583023eaf81f86b2cdbfa00f0645088385b343084ed",
+  "refs": {},
+  "revisionId": "sha256:488e33e42241e16bb299641924ddcd526167026cb3d422791bbdfb4aa838d86c",
+  "schemaVersion": 1,
+  "updatedAt": 1782714357239
+}

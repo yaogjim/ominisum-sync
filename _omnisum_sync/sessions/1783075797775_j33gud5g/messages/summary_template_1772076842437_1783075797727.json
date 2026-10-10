@@ -1,0 +1,23 @@
+{
+  "createdAt": 1783075797727,
+  "entityType": "message",
+  "id": "summary_template_1772076842437_1783075797727",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# GPT“降智 / 516 截断” 问题：精炼解读\n\n## 一、深度总结\n\n文章核心观点：\n\n> Codex 中出现的 “516 reasoning token 截断”，可能与其系统提示词中要求模型定期输出`commentary`中间状态有关，但这不是唯一原因。\n\n### 关键发现\n\n- 所谓 “516 截断”：\n  - 模型推理 token 经常精确停在**516**\n  - 推理不足，导致回答质量下降，表现为 “降智”\n\n- 实验现象：\n  - 官方 API 接入 Codex CLI 后，仍可能出现 516 截断\n  - 免费账号直接接入 Cherry Studio，不加 Codex 提示词时，糖果问题可稳定答对\n  - 一旦加入 Codex 系统提示词，错误率明显上升\n  - UA 是否伪装成 Codex，影响不明显\n\n- 进一步定位：\n  - Codex 系统提示词要求模型：\n    - 使用`analysis /commentary/final`通道\n    - 每约 30 秒向`commentary`输出简短进展\n  - 删除这部分`commentary`相关提示后：\n    - 测试中 516 截断明显减少或消失\n    - 但模型不再输出中间过程\n\n### 后续补充模型\n\n作者进一步提出一种推测：\n\n- 模型内部推理可能按**512 token 一页**切分\n- 每页附带若干特殊 token\n- 第一页结构特殊，因此可能表现为**516 token**\n- 是否进入下一页推理，由某种独立机制决定\n- `commentary`提示词可能影响这个机制，但不是根因\n\n---\n\n## 二、深入浅出解读\n\n可以把模型推理想象成 “草稿纸”。\n\n正常情况下，模型会写完一页草稿，不够再翻页继续想。\n\n但 Codex 的提示词要求它边干活边汇报：\n\n> “我正在查看文件……”  \n> “我准备修改代码……”  \n> “我接下来运行测试……”\n\n这就像一个人做题时，被要求每隔一会儿抬头汇报进度。\n\n结果可能是：\n\n- 注意力被打断\n- 推理节奏被改变\n- 模型误以为 “已经可以结束”\n- 草稿只写了第一页就停了\n\n于是出现：\n\n> 推理刚到 516 token 左右就停止，答案质量下降。\n\n所以，文章给出的临时方案是：\n\n> 去掉 Codex 提示词中关于`commentary`中间汇报的部分。\n\n代价是：\n\n> 模型不再主动显示 “我正在做什么” 的中间过程。\n\n---\n\n## 三、可操作结论\n\n如果使用 Codex 时频繁遇到 “降智”，可以尝试：\n\n1. 使用修改后的系统提示词文件\n2. 删除或弱化`commentary`中间更新规则\n3. 在`config.toml`中指定：\n\n```toml\nmodel_instructions_file = '/path/to/gpt-5.5-base-instructions.md'\n```\n\nWindows 示例：\n\n```toml\nmodel_instructions_file = 'C:/Users/xxx/Downloads/gpt-5.5-base-instructions.md'\n```\n\n验证方式：\n\n> 询问模型系统提示词中`# Working with the user`后面是否直接接`## Formatting rules`\n\n若回答是，说明修改生效。\n\n---\n\n## 四、辩证思考\n\n### 1. 这不是 “官方故意降智” 的铁证\n\n文章更像是一次社区逆向观察。\n\n它说明：\n\n- Codex 提示词可能影响推理质量\n- 516 截断与通道机制高度相关\n\n但不能直接证明：\n\n- OpenAI 故意针对第三方客户端降智\n- 516 截断只有这一个原因\n- 所有任务都会受同样影响\n\n目前证据主要来自 “糖果问题” 这类单轮测试，外推需谨慎。\n\n---\n\n### 2. 提示词不是越复杂越好\n\n系统提示词本来是为了提升体验：\n\n- 让模型更像工程助手\n- 能汇报进度\n- 能分通道输出\n- 更适合 CLI 工作流\n\n但副作用可能是：\n\n- 过度干预推理结构\n- 占用模型注意力\n- 改变内部停止机制\n- 降低复杂问题表现\n\n这说明：\n\n> 提示词工程不是单纯 “加规则”，而是 “加约束也会加负担”。\n\n---\n\n### 3. “透明过程” 和 “深度思考” 可能存在冲突\n\nCodex 要求模型频繁给用户更新，看起来更透明。\n\n但如果频繁汇报影响深度推理，就会形成矛盾：\n\n| 目标 | 好处 | 风险 |\n|---|---|---|\n| 中间过程可见 | 用户安心 | 打断推理 |\n| 深度连续思考 | 答案更稳 | 用户等待不确定 |\n| 多通道输出 | 结构清晰 | 机制更复杂 |\n\n所以工程上需要权衡：\n\n> 是要 “看起来一直在工作”，还是要 “安静但想得更深”？\n\n---\n\n## 五、一句话结论\n\n**Codex 的 516 降智问题，很可能不是模型本身突然变笨，而是系统提示词、通道机制、推理分页和停止策略共同作用的结果；删除`commentary`中间汇报规则可作为临时缓解方案，但不是根治。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "解读",
+    "timestamp": 1783075797727,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:52fbf1226efcfaa2fb3972f8863a96afb91d5ef3c6850fb89d7f809f8b1f39b1",
+  "refs": {
+    "sessionId": "1783075797775_j33gud5g"
+  },
+  "revisionId": "sha256:9617b52458c43d7bd52419e06c6d5ba56b26973d77df261556051f6804883968",
+  "schemaVersion": 1,
+  "updatedAt": 1783075797727
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784712378653,
+  "entityType": "message",
+  "id": "1784712378654_dor36cdu",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Elysia 项目精炼总结\n\nElysia 是 Weaviate 推出的开源智能体平台，通过“决策树”动态选择合适的工具执行任务，尤其适合搜索、分析和检索 Weaviate 集群中的数据。项目目前处于 **Beta 阶段**，既可作为网页应用运行，也可作为 Python 包集成。\n\n## 1. 核心能力\n\n- Elysia 将多个工具组织成决策树，由“决策智能体”根据以下信息选择下一步行动：\n  - 当前环境与上下文；\n  - 可用工具；\n  - 已执行的操作；\n  - 未来可能采取的操作。\n- 支持两类工具：\n  - 用户自定义工具；\n  - 用于查询和聚合 Weaviate 数据的内置开源工具。\n- 与普通智能体平台一次性开放全部工具不同，Elysia 预先定义了由节点和动作构成的网络，以更有策略地选择工具。\n\n## 2. 快速使用\n\n### 运行网页应用\n\n安装并启动：\n\n```bash\npip install elysia-ai\nelysia start\n```\n\n随后访问：\n\n```text\nhttp://localhost:8000\n```\n\n在设置页面中填写：\n\n- 模型及其 API Key；\n- Weaviate 云集群地址与密钥；\n- 所需模型配置。\n\n也可通过 `--port` 指定服务端口。官方还提供了一个**限流且数据集固定**的演示版本：\n\n<https://elysia.weaviate.io/>\n\n### 在 Python 中创建自定义工具\n\n```python\nfrom elysia import tool, Tree\n\ntree = Tree()\n\n@tool(tree=tree)\nasync def add(x: int, y: int) -> int:\n    return x + y\n\ntree(\"What is the sum of 9009 and 6006?\")\n```\n\n该示例让 Elysia 调用自定义加法工具，计算 `9009 + 6006 = 15015`。\n\n### 查询 Weaviate 数据\n\n```python\nimport elysia\n\ntree = elysia.Tree()\n\nresponse, objects = tree(\n    \"What are the 10 most expensive items in the Ecommerce collection?\",\n    collection_names=[\"Ecommerce\"]\n)\n```\n\nElysia 会自动选择内置的查询或聚合工具，从 `Ecommerce` 集合中找出价格最高的 10 件商品。\n\n## 3. 安装方式\n\n### 通过 PyPI 安装（推荐）\n\nPyPI 版本要求 **Python 3.12**。建议先创建虚拟环境：\n\n```bash\npython3.12 -m venv .venv\nsource .venv/bin/activate\npip install elysia-ai\n```\n\n### 从 GitHub 安装开发版\n\n开发版支持文中标注的 **Python 3.10～3.12**：\n\n```bash\ngit clone https://github.com/weaviate/elysia\ncd elysia\n\npython3.12 -m venv .venv\nsource .venv/bin/activate\n\npip install -e .\n```\n\n这种方式适合获取最新代码、参与开发或调试项目。\n\n## 4. Weaviate 与模型配置\n\n若要使用智能搜索和数据检索，需要连接以下任一种环境：\n\n- 本地运行的 Weaviate；\n- Weaviate Cloud 云集群。\n\n可在应用界面中配置，也可通过 `.env` 文件设置：\n\n```env\nWCD_URL=...\nWCD_API_KEY=...\nWEAVIATE_IS_LOCAL=True  # 或 False\n```\n\n本地运行时，Elysia 会自动检测这些配置，并将其作为应用用户的默认 Weaviate 集群；同时也支持按用户单独配置。\n\n此外，还需根据所使用的向量模型和大语言模型设置对应密钥，例如：\n\n```env\nOPENAI_API_KEY=...\n```\n\n该密钥既可用于 Weaviate 集合的 OpenAI 向量化，也可用于 GPT-4o 等模型。Elysia 推荐使用 OpenRouter，以便访问多种模型：\n\n```env\nOPENROUTER_API_KEY=...\n```\n\n相关密钥会自动加入 Weaviate 客户端请求头。\n\n## 5. 系统架构\n\nElysia 采用现代 Web 应用架构：\n\n- **前端**：提供响应式、实时交互界面；\n- **后端**：基于 FastAPI，同时服务网页和 API；\n- **核心逻辑**：使用纯 Python 编写；\n- **LLM 交互**：由 DSPy 处理。\n\n其关键设计是预定义的决策树网络：每个节点对应一种动作，并由具备全局上下文的决策智能体进行调度，从而综合判断应该使用哪个工具。\n\n## 6. 使用自有数据\n\nElysia 可以连接用户自己的 Weaviate 云集群，并自动识别其中已有的集合。不过，集合在使用前需要经过预处理。\n\n- 在网页应用中：进入 **Data** 页面，点击 **Analyze**。\n- 在 Python 中：\n\n```python\nfrom elysia.preprocessing.collection import preprocess\n\npreprocess(collection_names=[\"YourCollectionName\"])\n```\n\n## 7. 本地部署与模型限制\n\nElysia 支持完全本地运行：\n\n- 使用 Docker 启动本地 Weaviate；\n- 使用 Ollama 运行本地语言模型。\n\n但 Elysia 通常需要处理较长上下文，因此较小的本地模型可能出现：\n\n- 响应时间过长；\n- 请求超时；\n- 无法输出正确的结构化结果；\n- 直接报错。\n\n因此，本地部署时应选择上下文能力和结构化输出能力较强的模型。\n\n## 8. 数据清理\n\nElysia 未保存在本地的数据通常会存放在 Weaviate 集群中。要重置 Elysia 数据，可删除名称以 `ELYSIA_` 开头的集合：\n\n```python\nfrom elysia.util.client import ClientManager\n\nwith ClientManager().connect_to_client() as client:\n    for collection_name in client.collections.list_all():\n        if collection_name.startswith(\"ELYSIA_\"):\n            client.collections.delete(collection_name)\n```\n\n执行前应确认集合内容，避免误删需要保留的数据。\n\n## 9. 开源协作\n\nElysia 完全开源，社区可通过以下流程贡献代码：\n\n```bash\ngit clone https://github.com/weaviate/elysia\ngit checkout -b <branch_name>\n```\n\n完成修改后，将分支推送到 GitHub 并提交 Pull Request。当前项目暂时没有规划大型新功能，推荐的贡献方向包括：\n\n- 开发新的工具；\n- 组合多个工具形成定制工作流；\n- 找出实际使用过程中的痛点；\n- 修复问题或设计替代方案。\n\n官方强调，该项目目前是 Beta 版，维护强度可能不及正式生产软件，因此鼓励社区协助修复问题和完善功能。\n\n## 10. 项目概况\n\n- GitHub 页面显示约 **572 次提交**；\n- 已列出 **8 + 7 个 Releases**；\n- 暂无独立 GitHub Packages；\n- 代码语言构成：\n  - **Python：95.8%**\n  - **HTML：4.2%**\n- 前端代码另有独立的 GitHub 仓库。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784712378653,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:c2c51d5c51d1256a102ddcbd338d0fb2ab519fe470941a7b5cca805c8c32c79a",
+  "refs": {
+    "sessionId": "1784161527890_i8dythnu"
+  },
+  "revisionId": "sha256:8907212e2122aee8b600ffd14b92de57911d62d76a047ef426b7817a6f589e36",
+  "schemaVersion": 1,
+  "updatedAt": 1784712378653
+}

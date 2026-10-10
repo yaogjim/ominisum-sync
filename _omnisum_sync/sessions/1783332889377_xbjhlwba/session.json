@@ -1,0 +1,69 @@
+{
+  "createdAt": 1783332889376,
+  "entityType": "session",
+  "id": "1783332889377_xbjhlwba",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在使用 AI Agent 开发前加入“盲区扫描”和“反向采访”步骤",
+      "建立个人 AI 协作规则文档，把每次不满意的输出转化为明确规则",
+      "让 AI 在实现过程中记录关键决策和偏离计划的原因",
+      "在合并代码前要求 AI 生成测试问题或检查清单进行自检"
+    ],
+    "archiveReason": "包含若干可直接用于AI协作的实践方法，如盲区扫描、反向提问、记录偏离决策和沉淀规则文档",
+    "classifiedAt": 1783333762888,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI协作中的未知盲区",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "开工前可让 AI 先进行盲区扫描，识别需求、架构和偏好中未显式说明的问题",
+      "让 AI 一次只问一个高影响问题，优先澄清会改变架构或实现路线的关键信息",
+      "隐性偏好需要通过规则文档或 skill 沉淀，否则 Agent 只能依靠猜测",
+      "实现过程中记录偏离原计划的决策，有助于复盘和控制上下文漂移"
+    ],
+    "oneHighValuePoint": "把每次不满意的 AI 输出反向提炼成明确规则，持续减少隐性偏好和未知盲区。",
+    "oneLineReview": "观点不算全新，但对使用 AI Agent 编程和沉淀个人规则库有较强启发。",
+    "primaryCategory": "AI协作",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可归档，适合作为AI Agent协作检查清单的素材",
+    "secondaryCategories": [
+      "提示工程",
+      "AI编程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章围绕与 Claude/Fable 协作时的 unknowns 问题，提出让模型扫描盲区、反向采访、参考源码、记录决策、合并前测试等做法，强调瓶颈从模型能力转向人是否清楚表达需求。",
+    "tags": [
+      "Claude",
+      "AI Agent",
+      "Prompt",
+      "未知盲区",
+      "工作流"
+    ],
+    "title": "Leo｜一个人 + AI: 今天刷到 Claude Code 团队 Thariq 的一篇长文，看完直接进收藏夹：用 Fable 干活，瓶颈已经不是模型能力，是你自己的 unknowns",
+    "totalScore": 65,
+    "url": "https://x.com/runes_leo/status/2074001170545381764"
+  },
+  "payloadHash": "sha256:a76bdd2c9fcb59edcf00dc8e6016b32369cdf0c6b7736c3a8289d2f69fbe1823",
+  "refs": {},
+  "revisionId": "sha256:5cb932a7b449f2f2cddfbbdd12baeca4f7ea0b478dc65bfbfb0e5324e2977946",
+  "schemaVersion": 1,
+  "updatedAt": 1789728654181
+}

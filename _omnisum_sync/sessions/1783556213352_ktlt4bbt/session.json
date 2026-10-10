@@ -1,0 +1,69 @@
+{
+  "createdAt": 1783556213352,
+  "entityType": "session",
+  "id": "1783556213352_ktlt4bbt",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为模糊需求建立固定模板：原话引用、触发事件、目标指标、范围内、范围外、TBD、最多五个问题。",
+      "下次收到“更简单”“现代化”等描述时，先记录原话，再追问触发该判断的具体事件。",
+      "遇到直接指定功能的需求时，先反推其业务结果，再比较更低成本的替代实现方案。"
+    ],
+    "archiveReason": "包含可复用的模糊需求解码框架，可用于产品简报、需求澄清和跨团队对齐。",
+    "classifiedAt": 1783556245336,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "模糊需求转化问题框架",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "模糊形容词通常是事件后的浓缩反应，需要追溯触发点而非直接执行表面指令。",
+      "像“聊天机器人”这样的具体功能可能是伪装成需求的解决方案，应还原为目标结果和最低成本方案。",
+      "高质量简报应包含可衡量的问题陈述、范围内事项、范围外事项和不超过五个关键澄清问题。",
+      "TBD 比伪造指标更健康，未确认数据应显式标记并推动与数据所有者对齐。"
+    ],
+    "oneHighValuePoint": "面对模糊需求时，不先问“你想要什么”，而是问“在你提出这个请求之前发生了什么”，用触发事件反推出真实问题。",
+    "oneLineReview": "方法框架实用、可直接套用，但证据主要依赖经验叙述，后半段带明显产品营销成分。",
+    "primaryCategory": "产品管理",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "需求分析",
+      "利益相关者沟通",
+      "AI工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章提出将“更简单”“现代化”“做聊天机器人”等模糊或伪装成方案的需求，转化为触发事件、可衡量问题、范围边界和少量关键问题的方法，并附带示例说明如何降低无效建设成本。",
+    "tags": [
+      "需求澄清",
+      "问题定义",
+      "产品经理",
+      "利益相关者",
+      "范围管理"
+    ],
+    "title": "/brief-to-problem: 模糊的利益相关者反馈转化为制胜方向",
+    "totalScore": 73,
+    "url": "https://x.com/nurijanian/status/2074449306145493321"
+  },
+  "payloadHash": "sha256:7d9c1e35232076ff3df8c37f8a84afcd72395ba24ec103604b66546c5f9deb02",
+  "refs": {},
+  "revisionId": "sha256:8da65b967135379e89088dad65754ee2e6c1c20671a6b6f7cadfb17107594eae",
+  "schemaVersion": 1,
+  "updatedAt": 1789695891902
+}

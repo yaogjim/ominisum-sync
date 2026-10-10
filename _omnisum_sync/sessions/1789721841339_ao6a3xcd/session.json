@@ -1,0 +1,109 @@
+{
+  "createdAt": 1789721841339,
+  "entityType": "session",
+  "id": "1789721841339_ao6a3xcd",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "获取完整字幕，核验“成本下降1000倍”的时间范围、基准和测算方法。",
+      "评估AI基础设施时，分别记录软件、芯片、数据中心和电力四层的单位Token成本。",
+      "比较不同芯片方案的价格、可靠性与实际Token吞吐量，而非仅比较峰值性能。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1789722138174,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 4
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "AI推理成本千倍下降论",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/95e3a3fe/img/favicon.ico",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://i.ytimg.com/vi/uyzqxIoiobU/maxresdefault.jpg",
+        "role": "hero",
+        "score": 70,
+        "src": "https://i.ytimg.com/vi/uyzqxIoiobU/maxresdefault.jpg",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "下一阶段AI应用可能由持续数小时、数天甚至数周运行的后台智能体驱动。",
+      "“Token工厂”思路强调跨软件、芯片、数据中心和电力的全栈成本优化。",
+      "芯片采购可侧重价格与实际产出效率，而非只追求单一芯片的峰值性能。"
+    ],
+    "oneHighValuePoint": "将智能成本拆分到软件、芯片、数据中心和电力四个层级进行系统优化，是简介中最值得进一步核验的框架。",
+    "oneLineReview": "主题与AI基础设施和Agent高度相关，但现有材料不足以验证千倍降本主张及其方法可行性。",
+    "primaryCategory": "AI基础设施",
+    "published": "2026-08-25T05:00:09-07:00",
+    "rating": "A",
+    "rejectReason": "现有正文仅含视频简介，缺少完整论证、数据、成本模型和实施细节，无法确认“千倍降本”等核心主张。",
+    "retentionDecision": "先速览完整视频或字幕，核验核心论据后再决定是否保留",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@id": "https://www.youtube.com/watch?v=uyzqxIoiobU",
+        "@type": "VideoObject",
+        "comment": [
+          {
+            "@type": "https://schema.org/Comment",
+            "author": {
+              "@type": "https://schema.org/Person",
+              "alternateName": "Andrew Hibbs",
+              "name": "@rhibbs6",
+              "url": "https://www.youtube.com/@rhibbs6"
+            },
+            "dateCreated": "2026-08-25T06:35:46-07:00",
+            "text": "great speaker, but also \"token salesman says buy more tokens\" is showing up again",
+            "upvoteCount": 309
+          }
+        ],
+        "name": "Ex-NVIDIA Engineer: Why AI Is About to Get 1000x Cheaper",
+        "thumbnailUrl": "https://i.ytimg.com/vi/uyzqxIoiobU/maxresdefault.jpg",
+        "uploadDate": "2026-08-25T05:00:09-07:00"
+      }
+    ],
+    "schemaTypes": [
+      "VideoObject"
+    ],
+    "secondaryCategories": [
+      "AI Agent开发",
+      "计算成本优化"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "视频简介称，Sail Research 联合创始人 Neil Movva 探讨可长期自主运行的后台智能体，并从软件、芯片、数据中心和电力层面说明其“Token工厂”降本策略。",
+    "tags": [
+      "AI推理成本",
+      "后台智能体",
+      "异构芯片",
+      "数据中心",
+      "Token工厂"
+    ],
+    "title": "Ex-NVIDIA Engineer: Why AI Is About to Get 1000x Cheaper - YouTube",
+    "totalScore": 44,
+    "url": "https://www.youtube.com/watch?v=uyzqxIoiobU"
+  },
+  "payloadHash": "sha256:f1b69019d8659acf2e8e5f1799f813bcac6b48a07cdbe918b4ec6580b99a5de0",
+  "refs": {},
+  "revisionId": "sha256:e435ef4f8e0a8687c4cb1cf5bb44a57e68173496ea382257aa0ade3398f72774",
+  "schemaVersion": 1,
+  "updatedAt": 1790770003594
+}

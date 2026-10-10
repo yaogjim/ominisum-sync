@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728509925,
+  "entityType": "message",
+  "id": "1789728509925_fuwjkc1d",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Rift：用写时复制快速创建完整开发工作区\n\nRift 是一个实验性的 Git worktree 替代方案，利用文件系统“写时复制”（CoW）克隆整个项目目录：新工作区初始共享源文件的数据块，仅在修改时额外占用空间。项目宣称，即使是 10GB 目录，创建也可低于 0.1 秒，适合快速生成隔离且保留现场的开发环境，但目前接口和实现仍可能随时变化。\n\n## 克隆的不只是 Git 分支，而是完整工作状态\n\n执行 `rift init` 注册项目后，可用 `rift create` 创建子工作区。若源目录是 Git 仓库，新副本会处于 detached HEAD，同时保留索引和工作区状态，包括尚未提交的修改。\n\n默认会排除 `node_modules`、`target`、虚拟环境、构建产物和缓存等可再生的大文件，但保留清单及锁文件；`--copy-all` 可创建完整副本。项目还可配置 `postcreate` 钩子，在创建后自动安装依赖或生成代码，失败时工作区仍会保留并登记。\n\n## 性能依赖底层文件系统能力\n\nRift 会按平台选择不同机制：\n\n- Linux btrfs：使用可写子卷快照；首次初始化普通目录时会转换为子卷。\n- 其他 Linux 文件系统：要求支持原生 reflink，如具备 `FICLONE` 能力的 XFS。\n- macOS：使用 APFS `clonefile`。\n- Windows：虽然已发布包，但尚不能创建工作区。\n\n因此，“瞬时、节省空间”并非普通文件复制优化，而是建立在文件系统原生克隆能力之上。\n\n## 从命令行扩展到自动化工作流\n\nRift 提供创建、列举、追溯父工作区、移除和垃圾回收等命令，并用 `.rift` 标记与 SQLite 记录父子关系。删除时先移入相邻的 `.trash`，之后再由 `gc` 清理。\n\n它也可通过 Bun 或 Node 的 FFI 作为 JavaScript 库调用，便于集成到开发工具和自动化流程；不过 Node 端要求 26.1 及以上版本并开启实验性 FFI。整体价值在于快速复制包含未提交状态的完整开发现场，但现阶段更适合试验，不宜直接用于关键生产流程。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728509925,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:3d14cf99f01e6f488208058386201ebbcad88b3993c8dd615590556152e21e70",
+  "refs": {
+    "sessionId": "1782886404908_ozstg2e3"
+  },
+  "revisionId": "sha256:79755e98fda7a90fd1c900cc12f94775b62331848ffb0825f27dad022323d9c0",
+  "schemaVersion": 1,
+  "updatedAt": 1789728509925
+}

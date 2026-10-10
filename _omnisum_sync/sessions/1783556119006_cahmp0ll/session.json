@@ -1,0 +1,67 @@
+{
+  "createdAt": 1783556119006,
+  "entityType": "session",
+  "id": "1783556119006_cahmp0ll",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 pi，可打开 GitHub 仓库查看 README 和实际可用性",
+      "测试安装 pi-cc-subagent，验证 subagent 与 worktree 隔离是否符合自己的开发流程"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783556147741,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 5,
+      "relevance": 5,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "pi复刻Claude子代理插件",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "pi-cc-subagent 试图在 pi 中复刻 Claude Code 的 subagent 机制",
+      "支持 explorer、plan、general-purpose 等内置 subagent",
+      "可通过 Markdown 文件自定义 subagent",
+      "支持 worktree 隔离不同 subagent 的工作环境"
+    ],
+    "oneHighValuePoint": "插件支持通过 worktree 为每个 subagent 提供独立工作环境，减少相互干扰。",
+    "oneLineReview": "适合使用 pi 或关注 Claude Code 子代理机制的人快速了解，但不值得深读。",
+    "primaryCategory": "AI开发工具",
+    "rating": "C",
+    "rejectReason": "内容只是插件发布通知，信息量有限，缺少实现原理、使用案例、效果评测和方法论沉淀。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "编程工具",
+      "Agent工程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "该推文介绍 pi-cc-subagent 插件，目标是在 pi 中复刻 Claude Code 的 subagent 机制，支持内置代理、Markdown 自定义代理和 worktree 隔离，并提供安装与卸载链接。",
+    "tags": [
+      "pi",
+      "Claude Code",
+      "subagent",
+      "worktree",
+      "插件"
+    ],
+    "title": "x.com/LinearUncle/status/2074479205048619040",
+    "totalScore": 41,
+    "url": "https://x.com/LinearUncle/status/2074479205048619040"
+  },
+  "payloadHash": "sha256:8f9fe025bd0897428101c1533432641c276f5686e9760670999205d29f75c486",
+  "refs": {},
+  "revisionId": "sha256:62c01bc0e756340ad367c108e0415bf3bd4dc181a2cda326827a3eef73950880",
+  "schemaVersion": 1,
+  "updatedAt": 1784801169133
+}

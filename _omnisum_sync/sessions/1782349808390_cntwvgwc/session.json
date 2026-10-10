@@ -1,0 +1,66 @@
+{
+  "createdAt": 1782349808390,
+  "entityType": "session",
+  "id": "1782349808390_cntwvgwc",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如有 PDF 解析需求，可打开 demo 测试自己的文档",
+      "查看 GitHub 仓库确认安装方式、许可证和实际 benchmark 细节"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782350295842,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 4,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "LiteParse PDF解析器速览",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "LiteParse 是 LlamaIndex 相关的开源 PDF 到 Markdown 解析工具",
+      "作者声称其在 olmOCR0-bench、opendataloader-bench、ParseBench 等基准上表现较好",
+      "可作为更重型 VLM 文档处理前的初步解析工具"
+    ],
+    "oneHighValuePoint": "提供了 LiteParse 的在线 demo 和 GitHub 仓库，可用于快速验证 PDF 解析效果。",
+    "oneLineReview": "适合作为发现 LiteParse 的入口，但不值得深读或长期保存。",
+    "primaryCategory": "AI工具",
+    "rating": "C",
+    "rejectReason": "内容主要是社交媒体宣传和工具链接，缺少详细测试数据、实现原理和使用经验，长期参考价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "文档解析",
+      "开源项目"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "该内容介绍 LiteParse 是一个开源 PDF 到 Markdown 解析器，声称速度快且在多个基准测试中优于其他无模型解析工具，并附带 demo 和 GitHub 链接。整体更像工具推广信息。",
+    "tags": [
+      "LiteParse",
+      "PDF解析",
+      "Markdown",
+      "LlamaIndex",
+      "开源工具"
+    ],
+    "title": "Afiz ⚡️: @jerryjliu0 I also built a fullstack PDF parser using LiteParse, which is super …",
+    "totalScore": 46,
+    "url": "https://x.com/itsafiz/status/2069097489177948378"
+  },
+  "payloadHash": "sha256:d8e8b581b7220ba48d09d9ab28ffbca7ff1b9ebb022f6f32ea3757287ab92c4d",
+  "refs": {},
+  "revisionId": "sha256:590df4816b83d7f9ec1a63efcdabe7b4784524f1aeda8fd0dcf6699c26137f34",
+  "schemaVersion": 1,
+  "updatedAt": 1782350296191
+}

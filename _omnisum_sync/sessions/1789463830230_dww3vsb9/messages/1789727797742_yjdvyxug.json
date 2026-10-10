@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727797741,
+  "entityType": "message",
+  "id": "1789727797742_yjdvyxug",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# J Agent：复用 Pi-core 核心逻辑，但企业级 Harness 仍需大量自研\n\nJ Agent 采用“Agent Base + Extension”的模块化架构：以通用 Agent 能力为底座，再按团队需求扩展设计工作台、企业知识库等功能。其目标是解决企业场景中的权限管理、Skill 复用与安全可控问题，同时避免所有团队被迫使用同一套完整能力。\n\n## 基于 Pi-core，不等于直接套用\n\n作者特别澄清，Harness Runtime 并非把 Pi-core 原样拿来即可运行。实际主要借鉴或复用了两部分：\n\n- Agent Loop，即智能体循环执行任务的核心逻辑；\n- 上下文压缩相关的业务逻辑，并可根据自身架构调整。\n\n工具调用、MCP 接入和任务运行时等关键模块，则由团队自行开发。因此，Harness 各模块的实施工作量差异很大，不能把整体建设简单理解为“基于开源底座快速封装”。\n\n## 扩展式架构适配不同企业需求\n\n“Agent Base + Extension”的价值在于按需组合：有的团队需要 Design Studio，有的需要企业知识库，也有团队两者都不需要。将这些能力设计成扩展模块，有助于降低不必要的系统复杂度，并支持不同业务团队独立演进。\n\n这也说明，企业级 Agent 平台的难点通常不只在模型或 Agent Loop，而在权限、安全、工具体系、任务调度及组织级复用等工程能力。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727797741,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:50aa728dff6f714384225f6e9fe1ec7aed21b68748b316a95dac50eabfc5a4b4",
+  "refs": {
+    "sessionId": "1789463830230_dww3vsb9"
+  },
+  "revisionId": "sha256:7a03c2417949b56aadd1b2733536761e260bf7f76fa3fdf47023f17c6c6ff847",
+  "schemaVersion": 1,
+  "updatedAt": 1789727797741
+}

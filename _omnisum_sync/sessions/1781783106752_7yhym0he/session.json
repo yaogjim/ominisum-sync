@@ -1,0 +1,66 @@
+{
+  "createdAt": 1781783106752,
+  "entityType": "session",
+  "id": "1781783106752_7yhym0he",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注具身智能，可进一步查阅黄碧薇关于因果发现和因果世界模型的原始访谈或论文。",
+      "跟踪 Aether AI 的技术发布，验证其是否有可复现实验、基准测试或产品落地案例。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781783159910,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "具身智能因果路线判断",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "LLM/VLA 更擅长学习统计相关性，面对光照、背景、物体组合变化时可能出现泛化失败。",
+      "文中提出 AI 范式四阶段：小模型+相关性、小模型+因果、大模型+相关性、大模型+因果。",
+      "“结构化压缩即智能”强调从数据中抽取因果结构，而非单纯依靠规模化数据压缩相关性。"
+    ],
+    "oneHighValuePoint": "将具身智能当前瓶颈概括为“相关性学习不足以泛化到物理世界，下一步需要大模型+因果机制”。",
+    "oneLineReview": "观点方向有启发，但更像概念性行业评论，证据和落地方法不足。",
+    "primaryCategory": "人工智能",
+    "rating": "C",
+    "rejectReason": "内容主要是社交媒体观点转述和融资信息，论证较简略，缺少数据、实验或案例支撑，可操作性有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "具身智能",
+      "因果推断"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章借 Aether AI 融资和黄碧薇访谈，提出具身智能不能只依赖大模型相关性学习，而需要面向物理机制的因果世界模型，并用“四代AI范式”概括未来方向。",
+    "tags": [
+      "具身智能",
+      "因果AI",
+      "世界模型",
+      "VLA",
+      "Aether AI"
+    ],
+    "title": "x.com/cellinlab/status/2067413696717209940",
+    "totalScore": 53.5,
+    "url": "https://x.com/cellinlab/status/2067413696717209940"
+  },
+  "payloadHash": "sha256:f14f688fdcd559df35eafc35c7a2f575c9b940e73160b6c85fabfc94dd323267",
+  "refs": {},
+  "revisionId": "sha256:8f141128768cda4a24fbb2b4d9205e008697c1acb0e8e939bb85f9ad8722afac",
+  "schemaVersion": 1,
+  "updatedAt": 1781783160429
+}

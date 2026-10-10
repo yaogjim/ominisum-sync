@@ -1,0 +1,79 @@
+{
+  "createdAt": 1789867954055,
+  "entityType": "session",
+  "id": "1789867954055_t1ycke2q",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若有fNIRS硬件开发需求，先访问openfNIRS.org检索相关开放资源。",
+      "若评估复用该项目，进一步查阅设计文档、对应论文、硬件文件及许可证，不能仅凭本页判断技术可用性或安全性。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1790768589239,
+    "classifyAction": "跳过",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 3,
+      "transferability": 3
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "开放近红外光谱硬件项目资源导航",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "www.opennirs.org",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 292,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "http://www.opennirs.org/wp-content/uploads/2022/12/openfnirs.png",
+        "role": "figure",
+        "score": 75,
+        "src": "http://www.opennirs.org/wp-content/uploads/2022/12/openfnirs.png",
+        "width": 768
+      }
+    ],
+    "knowledgePoints": [
+      "openNIRS 2015硬件项目被定位为开放fNIRS社区资源之一，页面提示新的资源入口为openfNIRS.org。",
+      "项目声明采用电池供电和LED光源以降低风险，但不提供功能、安全性或完整性保证。"
+    ],
+    "oneHighValuePoint": "页面给出了从零设计fNIRS硬件所需资源的查找路径，涵盖设计文档、原理图、布局、程序代码和机械文件。",
+    "oneLineReview": "这是具有特定科研硬件检索用途的导航页，而非值得精读的技术文章。",
+    "primaryCategory": "开源科研硬件",
+    "rating": "D",
+    "rejectReason": "正文主要是项目介绍、资源入口和免责声明，没有展开技术设计、实验结果或可复用方法，与核心关注方向联系较弱。",
+    "retentionDecision": "不作为知识文章存档；有近红外光谱硬件开发需求时，可作为资源入口查找。",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "技术资源导航"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "页面介绍2015年的开放近红外光谱硬件项目，指向设计文档、论文、原理图、代码及机械文件，并提示资源入口迁往openfNIRS.org。正文未展示具体技术内容，强调材料无功能或安全保证。",
+    "tags": [
+      "近红外光谱",
+      "功能性近红外光谱",
+      "开源硬件",
+      "生物信号采集"
+    ],
+    "title": "OpenNIRS.org – Modular open hardware for Near InfraRed Spectroscopy – Eine andere WordPress-Site.",
+    "totalScore": 32,
+    "url": "http://www.opennirs.org/"
+  },
+  "payloadHash": "sha256:4f746b1218fcfdbb7cbe26ffdfd73dbc266025bd9400b5ea0c5413c0665fca2c",
+  "refs": {},
+  "revisionId": "sha256:0f1f9bd458d745aeb9ae46395674ade244eec58d804c59d29d25664dcbd49861",
+  "schemaVersion": 1,
+  "updatedAt": 1790768590042
+}

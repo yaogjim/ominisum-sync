@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727620883,
+  "entityType": "message",
+  "id": "1789727620884_qfnxdn5c",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 用全网用户差评，反推产品定位与迭代方向\n\n## 把竞品吐槽变成结构化调研\n\n作者建议利用 TinyFish、ActionBook 等工具的 API，批量检索 Reddit、X、G2 及各类社区中用户对知名竞品的真实反馈，重点收集：\n\n- 哪些功能难用或无法满足需求；\n- 用户为什么退订；\n- 用户在哪个流程节点受阻并放弃。\n\n将这些零散信息整理成文档，可以形成一份基于真实使用场景的“竞品问题清单”。\n\n## 差评能同时回答两个关键问题\n\n这份材料主要帮助团队判断两件事：\n\n1. **价值主张应该突出什么**：从竞品反复被抱怨的问题中，找到自家产品最值得强调的差异化优势。\n2. **下一步应该迭代什么**：识别影响购买、使用和留存的关键障碍，作为产品优化的优先线索。\n\n作者认为，相比反复召开内部讨论会，持续围绕真实用户抱怨推进产品改进更有效。其核心意义是：借助自动化搜索降低用户研究成本，让定位和路线图更多建立在外部需求证据上。不过，这属于作者基于项目实践给出的经验，用户吐槽仍需进一步归类、验证，不能直接等同于市场整体需求。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727620883,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f797ac8f601cdd2e771c258c1770826a2c264fec83ccdd7a92119893b1d27d83",
+  "refs": {
+    "sessionId": "1789696954993_1fw62qar"
+  },
+  "revisionId": "sha256:a79b87ebca9aa25c8e2626589c0c0f45c954ad23223ab64d501fb0a38eb2ae7d",
+  "schemaVersion": 1,
+  "updatedAt": 1789727620883
+}

@@ -1,0 +1,25 @@
+{
+  "createdAt": 1785384721872,
+  "entityType": "message",
+  "id": "summary_template_1772076803941_1785384721872",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 《The Rust on ESP Book》内容总结\n\n本书是面向**Espressif 产品的嵌入式 Rust 开发入门指南**，帮助读者理解软件栈、掌握项目生成与基础开发流程，并为进一步学习高级内容打下基础。\n\n## 1. 本书目标与内容\n\n- 介绍 Espressif 嵌入式 Rust **软件栈的整体结构**。\n- 逐步讲解项目生成、工具使用等基本工作流程。\n- 帮助读者熟悉相关工具和生态系统。\n- 完成本书后，读者可借助参考文档和外部培训资源继续探索高级主题。\n\n## 2. 适合哪些读者\n\n- 主要面向对嵌入式开发感兴趣的**Rust 开发者**。\n- 即使没有嵌入式系统经验，也可以从本书开始学习。\n- 具备底层编程基础会更容易理解，但并非硬性要求；关键概念会在学习过程中逐步介绍。\n\n## 3. 稳定性与版本变更说明\n\n- 项目会持续改进 API、优化性能并增加新功能，因此相关内容和依赖可能定期变化。\n- 根据语义化版本控制（**SemVer**），已经稳定的模块不会随意引入破坏性变更。\n- 部分功能仍属于**unstable**，例如：\n  - `esp-hal`的部分组件；\n  - 某些仍在开发中的驱动程序。\n- 这些不稳定组件不受 SemVer 兼容性保证，执行一次简单的`cargo update`就可能导致项目无法构建，情况类似于使用 Rust 的 nightly 编译器。\n- 建议开发者：\n  - 做好应对频繁变化的准备；\n  - 密切关注依赖版本；\n  - 升级主要 crate 时参考官方提供的版本迁移指南。\n\n## 4. 推荐学习资源\n\n| 资源 | 主要用途 |\n|---|---|\n| **The Rust Programming Language** | 学习 Rust 语言基础，建议在深入嵌入式开发前阅读 |\n| **The Embedded Rust Book** | 获取 Rust 嵌入式工作组整理的学习资料 |\n| **在 Espressif 上嵌入 Rust（`no_std`）** | 学习在`no_std`环境下使用 Espressif SoC |\n| **Awesome ESP Rust** | 查找面向 Espressif 产品的 Rust 开发资源 |\n| **Awesome Embedded Rust** | 查找 Rust 嵌入式与底层编程资源及实用 crate |\n\n## 5. 参与文档建设\n\n- 本书内容通过公开代码仓库协作维护。\n- 如果说明难以理解、存在错误或内容不清楚，可以在问题跟踪器中反馈。\n- 社区欢迎通过 Pull Request：\n  - 修正拼写错误；\n  - 改进教程说明；\n  - 完善文档内容。\n\n## 6. 获取帮助与加入社区\n\n遇到问题或希望讨论`esp-rs`相关主题时，可以通过以下渠道联系社区：\n\n- **Matrix**：加入实时社区聊天；\n- **GitHub Discussions**：提问并与其他开发者交流。\n\n## 7. 最终愿景\n\n本书希望帮助开发者获得足够的知识和信心，使用 Rust 在 Espressif 产品上构建**健壮、高效且安全的嵌入式应用程序**。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "结构化",
+    "timestamp": 1785384721872,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a97a9fd63c4834ea9f470091fc8c1c17e8f737b806a98179ce11178ed74faeb4",
+  "refs": {
+    "sessionId": "1785384721924_1i3l1o75"
+  },
+  "revisionId": "sha256:57fb5f66da3b74eebbe34a7a3aebce248942f28369ebed767ac4dd130a3e8b1a",
+  "schemaVersion": 1,
+  "updatedAt": 1785384721872
+}

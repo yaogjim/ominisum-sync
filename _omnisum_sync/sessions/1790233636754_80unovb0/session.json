@@ -1,0 +1,62 @@
+{
+  "createdAt": 1790233636754,
+  "entityType": "session",
+  "id": "1790233636754_80unovb0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "若正在使用对应工具的18.3.0版本，比较更新前后的基础Token占用和本地模型预填充耗时。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1790233663766,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "十八点三版本模型与工具更新速览",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "该版本据称将多个工具合并到read、write和bash，以减少工具开销。"
+    ],
+    "oneHighValuePoint": "基础Token用量据称显著下降，值得本地模型用户核对实际预填充表现。",
+    "oneLineReview": "与AI编程工具使用直接相关，但主要是未经验证的版本变更速讯。",
+    "primaryCategory": "AI编程工具",
+    "rating": "C",
+    "rejectReason": "属于单一版本的简短变更消息，缺少验证数据、适用条件和可复用方法。",
+    "retentionDecision": "速览即可；若正在使用对应版本，再核对实际变化",
+    "secondaryCategories": [
+      "本地模型",
+      "产品版本更新"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章列出某工具18.3.0版本的变化：基础Token用量据称从约3万降至1万，部分工具合并，技能描述默认压缩，并增加网络权限检测、Apple基础模型及若干计数和认证支持。回复补充了按需压缩支持，但未提供测试数据。",
+    "tags": [
+      "18.3.0版本",
+      "基础Token用量",
+      "工具合并",
+      "Codex网络权限"
+    ],
+    "title": "Can Bölük: Few interesting changes in 18",
+    "totalScore": 47,
+    "url": "https://x.com/_can1357/status/2102926186296787151"
+  },
+  "payloadHash": "sha256:f8683810b58264f9bc1ed21b2ef012b2d8ce478d5a91fa601bd229c3ea24acfc",
+  "refs": {},
+  "revisionId": "sha256:7be8fb741ad8cf16d720130c2dac6eee85073466f405164f81c3162ec8b516ac",
+  "schemaVersion": 1,
+  "updatedAt": 1790233843289
+}

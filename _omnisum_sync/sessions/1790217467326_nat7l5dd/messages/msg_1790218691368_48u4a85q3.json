@@ -1,0 +1,20 @@
+{
+  "createdAt": 1790218691370,
+  "entityType": "message",
+  "id": "msg_1790218691368_48u4a85q3",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "{\n  \"title\": \"用 Pi 和 Jev 构建 Agent 执行框架\",\n  \"value_type\": \"方法与实践\",\n  \"rating\": \"A\",\n  \"total_score\": 79,\n  \"assessment_confidence\": \"高\",\n  \"uncertainties\": [\n    \"文中给出的响应时间、示例评分和成本效果未附完整测试过程，生产环境中的表现仍需验证。\"\n  ],\n  \"scores\": {\n    \"contribution_value\": 8,\n    \"evidence_quality\": 6,\n    \"relevance\": 10,\n    \"information_efficiency\": 7\n  },\n  \"score_reasons\": {\n    \"contribution_value\": \"围绕模型路由、工具门控和答案验证给出明确的 Harness 设计方法，并说明阈值策略、故障降级及日志如何落地。\",\n    \"evidence_quality\": \"代码片段和误拦截示例支持方法说明，但未展示完整实现、系统测试结果或成本与质量的基准比较。\",\n    \"relevance\": \"直接涉及 AI Agent 开发、模型选择、工具权限控制和答案评估，与明确关注的 AI 技术及技术实现高度相关。\",\n    \"information_efficiency\": \"结构循序渐进，示例有助于理解；部分概念和价值说明重复，且完整实现需前往外部教程查看。\"\n  },\n  \"primary_category\": \"AI 编程与 Agent\",\n  \"secondary_categories\": [\n    \"AI 技术\",\n    \"软件工程与技术实现\"\n  ],\n  \"tags\": [\n    \"Agent Harness\",\n    \"Pi SDK\",\n    \"Jev\",\n    \"工具调用门控\",\n    \"模型路由\"\n  ],\n  \"source_type\": \"个人或机构文章\",\n  \"deep_read\": \"是\",\n  \"action\": \"精读\",\n  \"should_archive\": true,\n  \"should_delete\": false,\n  \"retention_decision\": \"建议精读策略与故障处理部分，并作为设计自定义 Agent 执行框架的参考资料保留。\",\n  \"archive_reason\": \"可复用其中路由、三级工具门控、答案验证、故障降级和决策日志的设计清单。\",\n  \"reject_reason\": \"\",\n  \"delete_reason\": \"\",\n  \"summary_brief\": \"文章介绍如何用 Pi SDK 运行 Agent 循环，并在请求开始、工具调用前和答案返回前接入 Jev，分别完成模型路由、风险门控和答案验证。它还讨论了阈值策略、人工审批、服务故障时的降级、代码强制的文件路径限制及决策日志。\",\n  \"one_line_review\": \"这是一篇具体的 Agent Harness 设计教程，方法值得借鉴，但示例阈值和效果尚不能直接作为生产依据。\",\n  \"one_high_value_point\": \"将 Jev 的概率判断与代码中的可测试策略分开：模型提供风险信号，Harness 决定允许、人工审批或阻止。\",\n  \"knowledge_points\": [\n    \"在请求开始时选择模型并尽量保持不变，可避免中途切换带来的提示缓存损失。\",\n    \"工具门控采用允许、人工审批、阻止三级判决，比单一阈值更能处理不确定操作。\",\n    \"确定性的权限边界应由代码强制执行；模型判断不能代替路径校验等硬约束。\"\n  ],\n  \"action_items\": [\n    \"如需构建自定义 Agent，先定义路由、工具门控和答案验证三个决策点及各自的降级行为。\",\n    \"将门控阈值写入独立策略函数，用模拟评分测试允许、审批和阻止的边界。\",\n    \"在实际使用前，用本领域的工具调用样本检验误拦截和漏拦截情况，再调整示例阈值。\"\n  ]\n}",
+    "finish_reason": "stop",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1790218691370
+  },
+  "payloadHash": "sha256:1d3792726433f2fef4c35fb2e5c5fe988662fbe204764a8f9b622318e95e9ebe",
+  "refs": {
+    "sessionId": "1790217467326_nat7l5dd"
+  },
+  "revisionId": "sha256:f9b5b53a0de948eb00ef9d6468d03ff59d1241cd6ededd45f60a0ef1fb60e614",
+  "schemaVersion": 1,
+  "updatedAt": 1790218691370
+}

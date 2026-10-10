@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789096100214,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1789096100214",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Cursor Projects：从 “使用 AI 编程” 升级为 “管理 AI 工程团队”\n\n## 核心概念\n\nCursor 推出**Projects**，用于处理跨多轮对话、多个 PR，甚至持续数月的大型开发任务，如功能开发、技术迁移和长期代码治理。\n\n其核心变化是：开发者不再逐个管理 AI Agent，而是向一个**协调 Agent**描述目标，由它拆解任务、调度大量子 Agent，并持续跟进结果。\n\n## 三项关键能力\n\n### 1. 云端执行，本地协同\n\n项目默认运行在独立云端环境中，即使关闭电脑也会继续工作，并可并行运行大量子 Agent；需要本地测试时，再调用本地 Agent 执行。\n\n### 2. 项目级共享上下文\n\nProjects 会长期保存并同步代码库知识、研究结果、测试方法和用户偏好。一个 Agent 学到的经验，可以被后续所有 Agent 复用，使项目越运行越了解系统。\n\n### 3. 自动订阅与持续响应\n\n协调 Agent 可以监听 Slack、跟踪 PR、定时执行任务，并自动修复 CI 或响应 Bug，无需用户每次主动发起指令。\n\n## 三类典型场景\n\n### 功能开发\n\n多个 Agent 并行完成调研、方案设计、开发和测试；功能上线后，同一 Project 还能继续监控日志和处理问题，保留完整决策背景。\n\n### 大规模迁移\n\n适合框架升级、样式系统替换等涉及数百个 PR 的工作。前期由工程师密集审核，随着方案稳定，逐步转为协调 Agent 自主推进。\n\n### 持续治理\n\n可长期维护代码质量、设计系统和回归问题。例如自动检查新 PR、提取公共组件，并针对重复错误补充 lint 规则。\n\n## 实际效果\n\nCursor 称其内部已使用 Projects 数月，包括数百个 PR 的迁移、设计系统维护，以及 Projects 自身开发：\n\n- 新用户使用后，合并 PR 数量提升约**30%**\n- 主要使用 Projects 的用户，合并 PR 数量达到约**6 倍**\n\n这些属于 Cursor 的内部使用数据，更能说明潜在效率上限，尚不能等同于普遍适用的生产力提升。\n\n## 产品意义\n\nProjects 标志着 AI 编程工具从 “对话式助手” 迈向 “持续运行的工程执行系统”：\n\n- 交互对象从单个任务变为长期目标\n- 人的角色从亲自执行转向制定方向、验收和纠偏\n- AI 的价值从生成代码扩展到项目记忆、任务调度与持续维护\n\n## 当前状态\n\nProjects 已进入 Beta，并开始向所有用户逐步开放。它最适合那些**无法在一次对话内完成、需要多个 PR，或需要无人值守持续运行**的开发工作。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1789096100214,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:2b02782a3acd29f03094dd9dfd809af55940ac3e2f4a6e5a9a72e02260ce71ea",
+  "refs": {
+    "sessionId": "1789096100251_1xpvnxy1"
+  },
+  "revisionId": "sha256:7db42f58bf9b679ef3421516f792cbfdbd9ca3cd492844bd8b7a1a41c88f3245",
+  "schemaVersion": 1,
+  "updatedAt": 1789096100214
+}

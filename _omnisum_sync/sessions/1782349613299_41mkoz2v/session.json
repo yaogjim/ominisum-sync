@@ -1,0 +1,64 @@
+{
+  "createdAt": 1782349613299,
+  "entityType": "session",
+  "id": "1782349613299_41mkoz2v",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "无需精读，直接删除即可",
+      "若关注作者后续开源成果，可仅在正式发布时再关注"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782352049292,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 2,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 1,
+      "relevance": 4,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "项目开源进度更新",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "属于低信息密度的社交媒体状态更新，缺乏具体技术内容、证据支撑和可操作方法，不适合长期留存。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "开源计划常受个人事务和外部会议安排影响",
+      "项目推进中需要在开发、测试和发布节奏之间做取舍"
+    ],
+    "oneHighValuePoint": "透露作者近期确实有多个项目计划开源，但没有给出任何项目细节或方法论。",
+    "oneLineReview": "典型的低价值动态，只有行程信息，没有知识增量。",
+    "primaryCategory": "个人动态",
+    "rating": "E",
+    "rejectReason": "内容仅是作者个人近况与本周安排，没有可复用方法、数据、结论或实质技术信息，信息价值极低。",
+    "retentionDecision": "建议立即删除",
+    "secondaryCategories": [
+      "开源项目",
+      "AI/模型测试"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "这是一则个人状态更新，作者提到手头有几个在开发中的项目，计划本周开源，但本周还要处理模型测试、会议和孩子升学填报等事务，因此需要放缓节奏。内容几乎没有实质信息。",
+    "tags": [
+      "开源",
+      "项目进度",
+      "模型测试",
+      "个人状态"
+    ],
+    "title": "向阳乔木: 手头还有几个正在开发，计划本周开源的项目",
+    "totalScore": 24,
+    "url": "https://x.com/vista8/status/2069061221865734235"
+  },
+  "payloadHash": "sha256:0707f8fb1290d591e06bd57effb4dfc502f00e5eb6a649118d70889b07e09f78",
+  "refs": {},
+  "revisionId": "sha256:afc59521caab8fa9fdc6e1c3c44b2d967de0d537a4d7366e45cfa0457f415f30",
+  "schemaVersion": 1,
+  "updatedAt": 1782352050106
+}

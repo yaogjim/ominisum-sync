@@ -1,0 +1,25 @@
+{
+  "createdAt": 1788927156889,
+  "entityType": "message",
+  "id": "summary_template_1772076842437_1788927156889",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 一句话结论\n\n**从现有数据看，MCP＋KiCad 的执行效率和一次成型表现更好；但仅凭截图、耗时和 Token，无法证明它设计出的 PCB 工程质量更高。**\n\n## 深度总结\n\n| 方案 | 操作方式 | 耗时 | Token（含缓存） | 返工 |\n|---|---|---:|---:|---|\n| Computer Use＋嘉立创 EDA | AI 模拟人点击界面 | 3 小时以上 | 约 7700 万 | 修复接口干涉、朝向错误 |\n| MCP＋KiCad | AI 通过结构化工具接口操作 | 略少于前者 | 约 5200 万 | 作者称无需调整 |\n\n核心信息：\n\n- 两种方式都能在数小时内生成复杂飞控板。\n- MCP 方案少用约**32% Token**，且返工更少。\n- 这说明结构化接口通常比 “看屏幕、点鼠标” 更稳定、高效。\n- 但帖子没有提供 DRC/ERC、信号完整性、热设计、EMI、可制造性及实板测试结果。\n\n## 通俗解读\n\n- **Computer Use**：像让 AI 隔着屏幕替人操作软件，灵活，但容易点错、看错。\n- **MCP**：像给 AI 一套规范化的专业工具和数据接口，操作更直接，也更容易检查。\n\n因此，MCP 的优势不是让 AI “更聪明”，而是让它**少走弯路、少做误操作**。\n\n## 辩证思考\n\n### 能肯定的\n\nMCP＋KiCad 在本次展示中，**流程效率、可控性和自动化潜力更强**，更适合重复、复杂的工程任务。\n\n### 不能据此肯定的\n\n“没有人工修改” 不等于 “没有设计问题”；板子看起来整齐，也不等于能稳定飞行。FPV 飞控还必须验证：\n\n- 电源完整性与散热\n- 陀螺仪抗振、低噪声设计\n- 高速与敏感信号布局\n- EMI、接口防护和机械干涉\n- DRC/ERC、Gerber 与实际打样测试\n\n此外，Token **包含缓存输入**，只能粗略反映工作量，不能直接等同于成本或设计质量。\n\n## 最终判断\n\n> **选工作流：MCP＋KiCad 暂时胜出。**  \n> **选更好的 PCB：证据不足，必须以规则检查、工程评审和实板飞测为准。**\n\n这项展示真正说明的不是 “AI 已替代硬件工程师”，而是：**AI 正从操作软件，走向调用工程工具；人类的价值则进一步转向约束定义、验证和责任把关。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076842437",
+    "prompt_template_name": "解读",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "解读",
+    "timestamp": 1788927156889,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6de60d144a348e6a9a7f8d7f8b95dcd952dea045d7887af1a922125ef04b60a2",
+  "refs": {
+    "sessionId": "1788927156917_nzpwod8t"
+  },
+  "revisionId": "sha256:c8802e5f2f15cf8efce927b4757cd5f003a48d1a999dae0f6157fe057c9daeed",
+  "schemaVersion": 1,
+  "updatedAt": 1788927156889
+}

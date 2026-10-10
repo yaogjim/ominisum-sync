@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786943236587,
+  "entityType": "session",
+  "id": "1786943236587_gzyuf7jk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查自己的RSS服务是否提供获取未读内容和更新阅读状态的API。",
+      "建立不适合离线阅读的订阅源过滤规则。",
+      "试用feedpaper或自行实现RSS到EPUB的生成与传输流程。"
+    ],
+    "archiveReason": "包含从RSS抓取、内容过滤、阅读状态同步到EPUB生成的可复用工具思路，并提供了开源项目入口。",
+    "classifiedAt": 1786943254228,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 5,
+      "novelty": 7,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "将RSS订阅制成墨水屏报纸",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "heyjonny.dev",
+    "favicon": "https://heyjonny.dev/favicon.svg",
+    "knowledgePoints": [
+      "Feedbin API可用于获取未读文章并同步更新已读状态。",
+      "YouTube订阅、依赖JavaScript渲染的博客和仅含链接的通讯不适合直接转换为电子墨水屏读物。",
+      "将筛选后的RSS正文汇编为EPUB，可形成适配无浏览器设备的个人报纸。"
+    ],
+    "oneHighValuePoint": "把RSS收集、内容过滤、已读状态更新和EPUB生成串成自动化流程，可将分散的网页阅读转化为低干扰的离线阅读体验。",
+    "oneLineReview": "这是一个目标明确、可复现的个人阅读工具案例，但实现细节、效果验证和适用条件论证较为有限。",
+    "primaryCategory": "个人信息工具开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并存档，可作为低干扰RSS阅读工作流的实现参考",
+    "secondaryCategories": [
+      "知识管理",
+      "数字阅读"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者为减少手机阅读带来的疲劳，将Feedbin中的未读RSS文章抓取、过滤并生成EPUB，再传入小型电子墨水阅读器，形成低干扰的个人报纸，并将工具feedpaper开源。",
+    "tags": [
+      "RSS",
+      "电子墨水屏",
+      "EPUB",
+      "Feedbin API",
+      "信息消费"
+    ],
+    "title": "I turned my RSS feeds into an e-ink newspaper to stop reading on my phone",
+    "totalScore": 62,
+    "url": "https://heyjonny.dev/posts/rss-to-eink-newspaper/"
+  },
+  "payloadHash": "sha256:93763df2e63d50fd8a9ad9ee47c7428dca73a0104fe741c3cc4e05bd29684790",
+  "refs": {},
+  "revisionId": "sha256:4eccadc8596ab366b082522886016c53694d0205778f782a08dd475b56c03144",
+  "schemaVersion": 1,
+  "updatedAt": 1789728038183
+}

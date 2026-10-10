@@ -1,0 +1,68 @@
+{
+  "createdAt": 1783079905938,
+  "entityType": "session",
+  "id": "1783079905938_dabsdsc1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查自己的 CLAUDE.md/AGENTS.md 是否混入过多通用知识，进行精简",
+      "尝试建立全局、项目、AgentHome 三层 Agent 配置结构",
+      "为多 Agent 工作流统一 repo 与 worktree 的本地目录规范"
+    ],
+    "archiveReason": "提供了 AGENTS.md 分层配置、目录约定和 AgentHome 职责划分的具体实践，可作为工作流配置参考",
+    "classifiedAt": 1783080378201,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AGENTS配置分层实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "AGENTS.md 不宜承载过多通用知识或通用工作方法，应聚焦项目和个人偏好",
+      "全局配置可统一仓库与 worktree 路径，减少多 Agent 并行时的目录混乱",
+      "项目级 AGENTS.md 可记录项目概览、文档入口和特殊约束",
+      "AgentHome 可用于定义不同 Agent 的角色、权限和 PR/Review/CI/Deploy 工作流"
+    ],
+    "oneHighValuePoint": "将 AGENTS.md 分为全局、项目、AgentHome 三层，分别管理目录约定、项目要求和角色职责。",
+    "oneLineReview": "一条简短但有实践价值的 AI Agent 配置经验，方法清晰但缺少系统论证。",
+    "primaryCategory": "AI Agent 工程",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可保留，用于优化个人 AI Agent 配置实践",
+    "secondaryCategories": [
+      "开发工作流",
+      "工具配置"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章指出不应把 CLAUDE.md/AGENTS.md 当银弹，通用知识和方法应由 Agent harness 承担，AGENTS.md 更适合记录项目偏好、目录约定、职责权限和工作流要求。",
+    "tags": [
+      "AGENTS.md",
+      "Claude",
+      "Codex",
+      "Agent Harness",
+      "工作流规范"
+    ],
+    "title": "jolestar: 看到还有人把 CLAUDE",
+    "totalScore": 60.5,
+    "url": "https://x.com/jolestar/status/2071250261834895406"
+  },
+  "payloadHash": "sha256:5f769764f3deb035c9dc88cc338b6387f526fe0abc731c0566a9d09463969a1a",
+  "refs": {},
+  "revisionId": "sha256:50f738af7f4f401fb74151f641873586f697e382d5807aba28dfa185632fbc85",
+  "schemaVersion": 1,
+  "updatedAt": 1789729317659
+}

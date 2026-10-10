@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728861688,
+  "entityType": "message",
+  "id": "1789728861689_4p7ybs4d",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# DroneBridge：用 ESP32 搭建低成本、加密的无人机遥测链路\n\nDroneBridge 是一套开源 ESP32 固件，可在飞控串口与地面站之间建立双向无线连接。它主打约 7 欧元、低于 8 克的低成本方案，适用于无人机、地面车辆及集群控制，但仅面向遥测和低速数据，不支持视频传输。\n\n## 多种无线方式与协议，最长可达公里级\n\n固件支持标准 Wi‑Fi、Wi‑Fi 长距离模式、ESP‑NOW 和蓝牙 LE：\n\n- 标准 Wi‑Fi 距离约 150 米；\n- ESP‑NOW 或 Wi‑Fi LR 可超过 1 公里，但收发两端都需使用开启 LR 模式的 ESP32；\n- 支持 MAVLink、MSP、LTM，也可通过透明模式承载其他串口协议；\n- 项目称所有模式均采用 AES‑256‑GCM 加密，包括 ESP‑NOW 广播。\n\n它还能解析 MAVLink、MSPv2 和 LTM，以降低丢包，并向地面站注入无线状态数据，从而显示 RSSI 信号强度。\n\n## 部署门槛低，但需注意硬件与网络配置\n\nESP32 通过 3.3V UART 接入飞控，用户连接其热点后即可在网页中配置。数据默认通过 UDP 14550 或 TCP 5760 与 QGroundControl、Mission Planner 等地面站通信，并支持 OTA 升级。部分 ESP32‑C3、C5、C6 芯片还支持 Wi‑Fi 6 或 5GHz。\n\n## 价值在于廉价扩展，而非替代专业数传\n\n该方案可用于低成本无人机集群，规模受无线信道容量和 ESP32 算力限制；项目还提供面向 Skybrush 无人机表演的版本，支持远程休眠、唤醒和集中维护。其优势是开放、轻量、协议兼容性强，但距离指标依赖天线和环境，也不能承担高清视频等高带宽任务。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728861688,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:34f44ea44fac4529a745f1b096a646863563b5a6f95fe847a79cd59496fd120e",
+  "refs": {
+    "sessionId": "1784690035672_2885mbl8"
+  },
+  "revisionId": "sha256:803c24cb2a6baa18f8ca3e4b8a579a55b34fa3a9719f53c88a3917e431d6da34",
+  "schemaVersion": 1,
+  "updatedAt": 1789728861688
+}

@@ -1,0 +1,84 @@
+{
+  "createdAt": 1783418130169,
+  "entityType": "session",
+  "id": "1783418130169_73sw6p7p",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "阅读 Anthropic 原始论文，核验 J-space、Jacobian Lens 的定义与实验结论",
+      "避免依据该推文进行技术路线、投资或职业判断",
+      "如需保留信息，只保存原论文链接和可信解读，而不是该推文"
+    ],
+    "archiveReason": "",
+    "byline": "Max For AI",
+    "classifiedAt": 1783418618811,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 6,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Anthropic J-space炒作解读",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "主要价值只是指向 Anthropic 相关研究，但推文本身存在过度解读和炒作倾向，长期保留价值低。",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 680,
+        "id": "img-4",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMkOkDGasAAsIOC?format=jpg&name=small",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HMkOkDGasAAsIOC?format=jpg&name=small",
+        "width": 587
+      }
+    ],
+    "knowledgePoints": [
+      "J-space 被描述为模型中间层中可被下游模块读取的关键中间想法空间",
+      "该推文将可解释性发现与模型长程推理能力提升强关联，但缺乏充分证明",
+      "社交媒体上的 AGI 判断和人才流动归因往往需要独立核查"
+    ],
+    "oneHighValuePoint": "提示了 Anthropic 关于语言模型内部“全球工作空间”与 Jacobian Lens 的研究，值得转向原论文核验。",
+    "oneLineReview": "一个有潜在线索价值但明显过度营销化、证据不足的 AI 圈推文。",
+    "primaryCategory": "人工智能/大模型",
+    "rating": "D",
+    "rejectReason": "内容以未经验证的推测和情绪化判断为主，证据链薄弱，AI味较重，未提供论文细节、实验数据或可复用方法。",
+    "retentionDecision": "建议删除，若关注该方向应直接保存并阅读 Anthropic 原论文，而非保留此推文",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "AI可解释性",
+      "社交媒体观点"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "推文称 Anthropic 在 Claude 中发现类似“全局工作空间”的 J-space，并推测其解释了多步推理提升和顶级人才流向 Anthropic。但内容主要是猜测，缺少论文细节和可靠证据。",
+    "tags": [
+      "Anthropic",
+      "J-space",
+      "Claude",
+      "AI可解释性",
+      "推理能力"
+    ],
+    "title": "Max For AI: 我现在大概知道 @karpathy 、一堆 Gemini/OpenAI 出身的核心人员（比如Gemini的技术负责人 @NoamShazeer ）要加入 Ant…",
+    "totalScore": 33,
+    "url": "https://x.com/MaxForAI/status/2074205124088721855"
+  },
+  "payloadHash": "sha256:f555f7f68fcdc4d9af38a3685ac61cfb1ff088c8abbc097f0cb4831fb7d0e675",
+  "refs": {},
+  "revisionId": "sha256:43ea27be112b72e89a7254f764386ef40b046d4125dad95130ed8801fc0242d2",
+  "schemaVersion": 1,
+  "updatedAt": 1783418618840
+}

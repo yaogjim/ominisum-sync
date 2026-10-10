@@ -1,0 +1,73 @@
+{
+  "createdAt": 1788927341347,
+  "entityType": "session",
+  "id": "1788927341347_g7wz5efa",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [],
+    "archiveReason": "",
+    "byline": "袁莉2026年9月8日",
+    "classifiedAt": 1789643019649,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 1,
+      "evidence_quality": 1,
+      "information_density": 1,
+      "long_term_leverage": 1,
+      "methodology_value": 1,
+      "novelty": 1,
+      "relevance": 2,
+      "transferability": 1
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "中国社交媒体负能量叙事",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "现有内容无法支持主题判断、知识提取或后续实践，且没有独特证据可供保留。",
+    "domain": "cn.nytimes.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "一段赞扬共产党的视频吸引了4.1万条内容几乎完全相同的评论，评论中排满了哭脸表情符号。",
+        "caption": "一段赞扬共产党的视频吸引了4.1万条内容几乎完全相同的评论，评论中排满了哭脸表情符号。 VIA X",
+        "height": 970,
+        "id": "img-2",
+        "nearbyText": "",
+        "resolvedUrl": "https://static01.nyt.com/images/2026/09/04/business/Biz-Newworld-Shame/Biz-Newworld-Shame-jumbo.jpg",
+        "role": "figure",
+        "score": 105,
+        "src": "https://static01.nyt.com/images/2026/09/04/business/Biz-Newworld-Shame/Biz-Newworld-Shame-jumbo.jpg",
+        "width": 748
+      }
+    ],
+    "knowledgePoints": [],
+    "oneHighValuePoint": "没有明显高价值内容，仅能从标题识别其关注中国社交媒体中的负面情绪表达。",
+    "oneLineReview": "文章主体缺失，除主题线索外几乎没有可评估的信息价值。",
+    "primaryCategory": "社会文化观察",
+    "rating": "E",
+    "rejectReason": "仅有标题、作者及相关报道列表，缺少文章主体、案例和论证。",
+    "retentionDecision": "正文内容缺失，无法形成有效阅读与留存价值",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "中国互联网"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "现有正文仅列出作者名及四篇相关报道的标题与日期，未提供关于中国社交媒体悲观、沮丧或黑色幽默现象的主体内容、案例、数据与论证。",
+    "tags": [
+      "中国社交媒体",
+      "负面情绪",
+      "黑色幽默"
+    ],
+    "title": "悲观、沮丧与黑色幽默：中国社交媒体上的“负能量”",
+    "totalScore": 13,
+    "url": "https://cn.nytimes.com/china/20260908/china-social-media-pessimism/?utm_source=tw-nytimeschinese&utm_medium=social&utm_campaign=cur"
+  },
+  "payloadHash": "sha256:8350b42839639ce004d12838135bbf87ebf8e7fe47b996d840e990d78effd51d",
+  "refs": {},
+  "revisionId": "sha256:700b104621e06f86fd556f96888258383bc64d3514290c0bb3bbd6f5648757bf",
+  "schemaVersion": 1,
+  "updatedAt": 1789643020373
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726004267,
+  "entityType": "message",
+  "id": "1789726004268_eluz1m17",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nAnte 是一款仍处预览阶段的轻量级 Agent 命令行工具，主打低资源占用、兼容现有配置、多模型与本地模型支持，以及统一调度 Claude Code、Codex 等其他 Agent。\n\n## 关键内容\n\n- **上手成本低**：约 15MB 的 Rust 单文件程序，无需 Node/npm；可读取 `AGENTS.md`、`CLAUDE.md` 等已有配置，并能在会话中切换不同模型提供商。\n- **功能差异明显**：通过 `/term` 和 tmux 调度 Claude Code、Codex，任务可后台持续运行；`/offline-mode` 会按硬件推荐、下载和管理本地模型，适合断网或低配设备。\n- **资源占用很低，但并非更快**：作者测试 20 个并行任务时，Ante 峰值内存约 2GB，Claude Code 接近 14GB；平均 CPU 也更低。不过 Ante 耗时 940 秒，较 Claude Code 的 627 秒慢约 50%。\n- **任务质量有榜单支撑但需谨慎看待**：文章引用 Ante 官方 Terminal-Bench 数据，称其在相同模型下表现领先；这说明它可能更能发挥部分模型，而不能直接证明全面强于 Claude Code。\n\n## 通俗解读\n\nAnte 更像一个轻量的“Agent 总控台”：既能自己干活，也能叫其他 CLI Agent 分工。它的优势主要是省资源和整合方便，而非绝对速度或成熟度。\n\n**是否值得细读：**如果你需要多 Agent 协作、本地离线模型或在 VPS 上运行，值得细读操作部分；普通 Claude Code 用户可先观望，尤其考虑其仍处 Preview 阶段，且性能数据主要来自作者实测与官方评测。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726004267,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4250075d93af2ed50936d6d1fed59ee29b7bcc3de06449c8fdd4dd08dcbb736c",
+  "refs": {
+    "sessionId": "1786613701467_0jh6hors"
+  },
+  "revisionId": "sha256:e193db699f4ea1ecad78f2ed560225f854a55f3bc7c55123188097cacb399612",
+  "schemaVersion": 1,
+  "updatedAt": 1789726004267
+}

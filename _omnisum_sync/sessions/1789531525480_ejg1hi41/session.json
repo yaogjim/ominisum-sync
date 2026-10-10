@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789531525480,
+  "entityType": "session",
+  "id": "1789531525480_ejg1hi41",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "先用内置假检测器和开发服务验证网页端展示及物种匹配流程。",
+      "已有BirdNET-Go时，将Fugleramme配置为访问其API并测试局域网部署。",
+      "准备树莓派、麦克风和兼容电子墨水屏后，按安装指南完成端到端原型。"
+    ],
+    "archiveReason": "项目提供可运行代码、清晰架构、部署命令、硬件方案及素材许可说明，适合参考边缘AI产品的端到端实现。",
+    "classifiedAt": 1789532388442,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 7,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "本地鸟鸣识别电子墨水画框",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "系统将鸟鸣分类与展示解耦：BirdNET-Go负责检测，Fugleramme轮询API、匹配插画并在物种变化时刷新。",
+      "电子墨水展示通过仅在检测结果变化时重绘来适应低刷新率设备，并按鸟类体重调整尺寸和版面位置。",
+      "项目同时支持树莓派systemd服务、独立Docker容器及与BirdNET-Go组合的Docker Compose部署。"
+    ],
+    "oneHighValuePoint": "展示了将现成音频分类服务、本地API、视觉排版、电子墨水屏和管理后台组合成完整实体AI产品的可复用架构。",
+    "oneLineReview": "这是一个完成度较高、可直接复现的边缘AI实体产品案例，但缺少识别准确率、性能与长期运行数据。",
+    "primaryCategory": "AI产品开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "作为本地AI与实体展示设备集成的完整项目案例保留",
+    "secondaryCategories": [
+      "边缘AI应用",
+      "软硬件集成"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "项目使用 Raspberry Pi 和 BirdNET-Go 在本地实时识别鸟鸣，将检测到的物种匹配到十九世纪鸟类插画，并在电子墨水屏及网页终端展示，同时提供安装、容器部署和素材授权说明。",
+    "tags": [
+      "Raspberry Pi",
+      "BirdNET-Go",
+      "本地AI",
+      "电子墨水屏",
+      "鸟鸣识别"
+    ],
+    "title": "arnegiacomo/fugleramme: E-ink bird frame for Raspberry Pi - real-time bird detection by audio, fully local AI, rendered as real, hand-cut 1800s bird illustrations.",
+    "totalScore": 77,
+    "url": "https://github.com/arnegiacomo/fugleramme"
+  },
+  "payloadHash": "sha256:43ba30d0f0dedbccc91304c3161a3ea601e2713deee48d773361111ad35438e0",
+  "refs": {},
+  "revisionId": "sha256:d65f891f64fee8ebf8ce0249187d71dc0513f954900ff18527b59a8ca3438e8d",
+  "schemaVersion": 1,
+  "updatedAt": 1790770469766
+}

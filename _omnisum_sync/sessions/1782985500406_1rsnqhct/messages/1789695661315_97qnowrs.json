@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695661316,
+  "entityType": "message",
+  "id": "1789695661315_97qnowrs",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者主张用 **Codex 把流程代码化、Remotion 按模板生成视频**，让知识类短视频从“每天重新剪辑”变成“维护模板、每天替换内容数据”。\n\n## 关键内容\n\n- 作者称自己两个月获得抖音 8,000 多、小红书 2,000 粉丝，但这是个人实践结果，不能直接证明涨粉由工具带来。\n- 这套方法适合知识讲解、工具教程、新闻解读、金句卡片等**内容不同但结构相似**的视频；依赖实拍、情绪和现场感的内容，剪映等传统工具更直接。\n- Codex 负责搭建和修改代码项目、把脚本转成 JSON、检查字幕与批量导出；Remotion 则用 React 组件将文字、图片、音频和动画渲染成视频。\n- 最小流程是：写主题 → Codex 生成结构化脚本 → 单帧检查排版 → 渲染视频 → 根据问题持续改进模板。字幕、封面、品牌色等规则应沉淀进项目，而非每天重复提示。\n\n## 通俗解读\n\n核心不是“让 AI 自动创作”，而是像做表格模板：先把格式、动画和检查规则固定，之后每天只填新内容。文章提供了目录、JSON 和工作流示例，**适合有一定代码基础、准备长期做模板化视频的人细读**；若主要做实拍内容或偶尔发片，投入搭建这套系统未必划算。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695661316,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:69f52229693c91aa8b027c3c5447503e5a768be4584c1e99a7c6d13f0d7f9f10",
+  "refs": {
+    "sessionId": "1782985500406_1rsnqhct"
+  },
+  "revisionId": "sha256:1d561b42aaeb0f179c1d946cad9b7520ba4cf70098097da2963c3b785051b30c",
+  "schemaVersion": 1,
+  "updatedAt": 1789695661316
+}

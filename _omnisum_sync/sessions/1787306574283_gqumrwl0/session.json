@@ -1,0 +1,67 @@
+{
+  "createdAt": 1787306574283,
+  "entityType": "session",
+  "id": "1787306574283_gqumrwl0",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "用当前最强通用模型测试候选业务任务，记录成功率，并优先分析接近1%的重要任务为何失败。",
+      "为Agent流程补齐明确目标、工具权限、验证器、失败恢复机制和持续反馈闭环。",
+      "将需求改写为包含输入输出、验收标准、测试用例和行为约束的可执行规格。"
+    ],
+    "archiveReason": "与AI Agent开发和创业选题高度相关，包含可复用的任务筛选、系统编排、可执行规格和验证闭环框架。",
+    "classifiedAt": 1787307121057,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI时代的1%创业法则",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "复杂Agent的能力不仅取决于模型，还取决于上下文、工具、技能、评估器和编排机制。",
+      "长时间运行的Agent需要形成“目标—执行—观察—验证—修正—再执行”的稳定闭环，而非简单增加Agent数量。",
+      "可执行规格通过既有行为、测试和输入输出约束，为Agent实现与验证软件提供机器可检查的目标。"
+    ],
+    "oneHighValuePoint": "筛选AI创业问题时，不只判断模型当前能否完成任务，更应诊断其失败是否可由私有数据、领域知识、工具、验证器和业务流程构成的系统壁垒补足。",
+    "oneLineReview": "文章对AI原生工程与创业机会形成了有用框架，但大量结论来自转述和个人推演，证据与适用边界仍显不足。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并保留其中的选题判断、规格设计与反馈闭环框架",
+    "secondaryCategories": [
+      "AI创业",
+      "软件工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章借Jeff Dean对谈提出“1%法则”：优先寻找通用模型几乎无法独立完成、但可由领域数据、工具、评估器与工作流补足的任务，并将AI开发重心概括为可执行规格、反馈闭环和系统编排。",
+    "tags": [
+      "1%法则",
+      "Agent系统",
+      "可执行规格",
+      "反馈闭环",
+      "上下文工程"
+    ],
+    "title": "Jeff Dean 的「1% 法则」：AI 时代，真正稀缺的已经不是写代码",
+    "totalScore": 74,
+    "url": "https://x.com/blackanger/status/2085774496485839147"
+  },
+  "payloadHash": "sha256:ad62057c87af60f5a75be5de33810b5e6bf9dab13b12b59f0e57222d4c9432f1",
+  "refs": {},
+  "revisionId": "sha256:e5ae8363f4776bb65e988b5152de4a301f38c6b87516ca6841da36cdf51c676b",
+  "schemaVersion": 1,
+  "updatedAt": 1789694022273
+}

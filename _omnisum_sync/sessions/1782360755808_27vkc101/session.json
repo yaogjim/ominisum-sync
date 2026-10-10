@@ -1,0 +1,67 @@
+{
+  "createdAt": 1782360755808,
+  "entityType": "session",
+  "id": "1782360755808_27vkc101",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "整理长播客或访谈时，同时生成 2-3 个版本",
+      "选取结构和表达最好的版本作为底稿",
+      "对比其他版本，补充遗漏的故事、细节和观点"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782361321915,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 5,
+      "relevance": 7,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI整理播客的多稿合并法",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "长音频或长文本交给 AI 总结时容易出现细节遗漏",
+      "多版本生成可以缓解单次生成质量波动",
+      "选择最佳稿作为底稿再合并其他版本，有助于提升完整性"
+    ],
+    "oneHighValuePoint": "通过多次独立生成并合并结果，比单纯追问补充细节更能降低遗漏和抽卡失败风险。",
+    "oneLineReview": "一个简单但实用的 AI 内容整理小技巧，适合作为工作流优化参考。",
+    "primaryCategory": "AI工作流",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "内容生产",
+      "提示词实践"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章讨论用 AI 整理长播客时容易遗漏细节的问题，提出同时生成 2-3 份稿件，选择最佳版本作为底稿，再合并其他版本内容，以降低遗漏和单次生成质量不佳的风险。",
+    "tags": [
+      "AI总结",
+      "播客整理",
+      "多版本生成",
+      "内容合并",
+      "质量控制"
+    ],
+    "title": "x.com/dotey/status/2069917507046031719",
+    "totalScore": 56,
+    "url": "https://x.com/dotey/status/2069917507046031719"
+  },
+  "payloadHash": "sha256:63dd95cee8c3a8806f52b410dea9a5658f4c21c20a5283916f1e2ae21c2a6350",
+  "refs": {},
+  "revisionId": "sha256:c116313e410d0b9f2a7ce3f2a412aba4b592948c525946c98fd1aa3e53ae73cf",
+  "schemaVersion": 1,
+  "updatedAt": 1782367492442
+}

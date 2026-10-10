@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786353968998,
+  "entityType": "session",
+  "id": "1786353968998_ymq05jr9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "发布AI生成项目之前，检索同名、同功能产品及相关开源仓库。",
+      "对生成项目进行功能、界面和异常行为的相似性检查。",
+      "发现疑似复现既有项目时，暂停发布并联系原作者确认和处理。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1786354210105,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "AI生成应用撞车开源项目的反思",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "blog.terrygodier.com",
+    "favicon": "https://micro.blog/crunchy/favicon.png",
+    "knowledgePoints": [
+      "AI生成结果可能复现既有项目的功能结构，甚至包含其历史缺陷。",
+      "不了解生成内容的潜在来源，不能免除产品发布者的责任。",
+      "发现高度相似后，停止发布、联系原作者并为原项目导流是一种纠错方式。"
+    ],
+    "oneHighValuePoint": "AI生成的应用即使并非开发者主动抄袭，也可能与既有开源项目高度相似，因此发布者仍需承担核查和处置责任。",
+    "oneLineReview": "这是一个与AI编程风险高度相关的坦诚个案，但证据和方法论不足，只适合快速了解。",
+    "primaryCategory": "AI编程与产品开发",
+    "rating": "C",
+    "rejectReason": "文章仅提供个人经历和事后处置，缺少代码对比、成因调查及可复用的审查流程。",
+    "retentionDecision": "作为AI生成项目发布风险的个案速览，无需长期保留",
+    "secondaryCategories": [
+      "开源合规",
+      "开发者责任"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者使用Claude开发夜空观测网站后，发现其名称、功能乃至已修复缺陷均与现有开源项目高度相似，遂关闭项目并重定向域名，同时承认未核查相似项目是自身责任。",
+    "tags": [
+      "AI生成代码",
+      "项目相似性",
+      "开源项目",
+      "发布审查",
+      "开发者责任"
+    ],
+    "title": "Mea Culpa - Dark Hours",
+    "totalScore": 54,
+    "url": "https://blog.terrygodier.com/2026/08/09/mea-culpa-dark-hours.html"
+  },
+  "payloadHash": "sha256:a0a3ee0dd5253a409ce9a53cb942f605ee5c782a95bdd25c0950e0fc05669c57",
+  "refs": {},
+  "revisionId": "sha256:33809b36e40fd8a47ed0f66f21d65b37e1bc8995262048c115ee25cbc6e3e5eb",
+  "schemaVersion": 1,
+  "updatedAt": 1786354210288
+}

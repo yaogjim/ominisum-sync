@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784695005332,
+  "entityType": "session",
+  "id": "1784695005332_pfgrnmzg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在设计Agent任务前，先评估任务的上下文密度、子任务独立性、文件规模和探索范围，再决定采用单Agent还是多Agent。",
+      "采用多Agent时，明确角色边界、交接信息、验证节点和最终合并方式，避免重复劳动和未经检查的结果汇总。",
+      "研究或试用pi-workflow一类的声明式编排工具，将稳定的Agent流程固化为可重复运行和可审查的工作流。"
+    ],
+    "archiveReason": "文章直接讨论单Agent与多Agent的适用边界，并总结上下文转移、重复工作、结果验证和编排等关键成本，同时提供了可复用的声明式工作流实现思路。",
+    "classifiedAt": 1784695286106,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "单Agent与多Agent工作流的实战取舍",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "单Agent更适合任务简单或需要持续掌握密集上下文的工作，多Agent更适合可独立拆分、需要大量阅读或广泛探索的任务。",
+      "多Agent系统的主要额外成本包括上下文交接、边界不清导致的重复工作、输出事实验证以及任务编排。",
+      "使用JSON工作流规范可以显式定义拆分、角色分配、验证、构建和合并阶段，提高流程的可复用性与可检查性。"
+    ],
+    "oneHighValuePoint": "将多Agent的收益与上下文转移、重复劳动、结果验证和编排四类成本同时纳入决策，而不是把并行化视为默认升级。",
+    "oneLineReview": "文章给出实用的单多Agent取舍原则，并以工具补充编排实现，但证据主要来自个体经验，缺少量化比较。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并长期保留，适合作为Agent架构选型和工作流设计的参考",
+    "secondaryCategories": [
+      "工作流编排",
+      "上下文工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章总结Pi社区对单Agent与多Agent的实战判断：简单且依赖密集上下文的任务适合单Agent，独立、庞大或需广泛探索的任务可拆分，但必须承担上下文转移、重复劳动、验证和编排成本，并介绍以JSON规范化流程的pi-workflow。",
+    "tags": [
+      "单Agent",
+      "多Agent",
+      "工作流编排",
+      "上下文转移",
+      "Pi"
+    ],
+    "title": "yibie: 推荐这个 Pi 社区的实战总结",
+    "totalScore": 72,
+    "url": "https://x.com/yibie/status/2077021396547551634"
+  },
+  "payloadHash": "sha256:f6a8d45d177dcb88df441a6ac25f51455678b37d0447c4e03f18d78eea53fb4c",
+  "refs": {},
+  "revisionId": "sha256:7487da366ea0f9a05c362d3a2727fb36aa8abd56d4439e348e59a1582b3ea4f9",
+  "schemaVersion": 1,
+  "updatedAt": 1789696206774
+}

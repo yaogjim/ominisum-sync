@@ -1,0 +1,25 @@
+{
+  "createdAt": 1789518546108,
+  "entityType": "message",
+  "id": "summary_template_1789518538683_1789518546108",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "“我根本看不过来” 大概会成为 Agent 编程最真实的瓶颈。机器一天提交几十个修改，人若还逐行读完，新增的生产力很快又被 Review 卡住。可只看 “能不能跑” 也不够，很多问题要到权限失控、数据出错或后续维护时才暴露。\n\n我更愿意把这理解为 Review 对象在变化：少盯每一行代码，多审验收条件、测试覆盖、权限边界、监控和回滚方案，再把注意力集中到高风险改动上。以后工程师稀缺的能力，也许是提前说清楚什么算正确、出了什么情况必须停，以及该相信哪些证据。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1789518538683",
+    "prompt_template_name": "xcom",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "xcom",
+    "timestamp": 1789518546108,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:dbce93e039771a476590a903f7ac4b876eacfd950820953b5a3bd2dc44cd3b39",
+  "refs": {
+    "sessionId": "1789518546144_1ieamcnm"
+  },
+  "revisionId": "sha256:0305067d99b3896931474b0eac26057e42b4b2b2dfa84c9381afa93b032a5192",
+  "schemaVersion": 1,
+  "updatedAt": 1789518546108
+}

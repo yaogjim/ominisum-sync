@@ -1,0 +1,67 @@
+{
+  "createdAt": 1782349353715,
+  "entityType": "session",
+  "id": "1782349353715_0j9spygl",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如果使用 Hermes 多 Profiles，可优先测试命令行调用另一个Agent完成单次任务。",
+      "当需要人工监督多Agent协作过程时，再考虑建立群聊或任务板机制。",
+      "区分一次性Agent调用和持续协作流程，避免为简单任务引入过重工作流。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782350822074,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 4,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "多Agent协作通信方式",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "命令行调用适合快速获取另一个Agent的专业判断，但属于一次性调用，不构成持续对话。",
+      "飞书群适合人类旁观和介入多个Agent协作，但会增加沟通链路和配置成本。",
+      "Kanban任务板更适合长期、多轮、需要留痕的异步协作流程。"
+    ],
+    "oneHighValuePoint": "清晰区分了单次子调用、可旁观群聊协作和异步任务板协作三种不同Agent沟通模式。",
+    "oneLineReview": "对多Agent协作模式有一定启发，但更像零散经验分享，方法论和证据支撑较弱。",
+    "primaryCategory": "AI Agent协作",
+    "rating": "C",
+    "rejectReason": "内容较短，主要是个人场景下的工具使用建议，缺少系统性论证、案例数据和可复用细节。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "工作流设计",
+      "多智能体系统"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章讨论 Hermes 多个 Profiles 或 Agents 之间的三种协作方式：命令行单次调用、飞书群三方可见沟通、Kanban 异步任务板，并建议日常优先使用命令行调用。",
+    "tags": [
+      "Hermes",
+      "多Agent",
+      "异步协作",
+      "命令行调用",
+      "Kanban"
+    ],
+    "title": "熊布朗: Hermes 不同的 Profiles 之间有不同的几种“沟通”方式，我想问各位大佬，你们都是怎么协调多个 Agents 的 —— 以下是 Alex 告诉我的（…",
+    "totalScore": 50.5,
+    "url": "https://x.com/Stephen4171127/status/2068728767686537517"
+  },
+  "payloadHash": "sha256:dc394be8829b49e4f658b5ea4bf9ae46d185c24b4b4e782e7a03f29b3aa90134",
+  "refs": {},
+  "revisionId": "sha256:a51ccec7cf2b8a35b78ad7c2877a6bad3eeceac3b78fc08533425887d017aaa4",
+  "schemaVersion": 1,
+  "updatedAt": 1782350822688
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789703336947,
+  "entityType": "session",
+  "id": "1789703336947_51o25dcg",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为本地AI工作流记录任务类型、推理速度和云端升级比例，验证本地优先策略的实际收益。",
+      "实现一个轻量路由层，根据任务难度、延迟和质量要求选择本地或云端模型。",
+      "购买额外推理硬件前先用现有开发机验证负载，并单独评估eGPU的性能、兼容性和成本。"
+    ],
+    "archiveReason": "默认本地推理、按任务升级云端模型的架构具有复用价值，也提供了硬件扩展和任务分配的实践参考。",
+    "classifiedAt": 1789703364559,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "本地AI实验室的混合路由架构",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "本地AI系统可按任务类型拆分：低延迟交互、高质量推理和长时间后台批处理分别使用不同算力。",
+      "使用低首字延迟的小型路由模型，可以在本地模型和云端模型之间进行请求分流。",
+      "实验环境适合从单台开发机起步，再依据实际瓶颈逐步增加设备，避免一次性堆叠硬件。"
+    ],
+    "oneHighValuePoint": "采用“本地优先、小模型路由、必要时升级云端”的混合推理机制，可在成本、延迟和模型能力之间动态权衡。",
+    "oneLineReview": "架构思路具体且高度相关，但性能数据和硬件结论仅来自单一个案，缺少配置细节与系统验证。",
+    "primaryCategory": "AI基础设施",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并存档混合路由思路，具体硬件清单仅作个案参考",
+    "secondaryCategories": [
+      "本地模型部署",
+      "Agent开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍一套逐步扩展的本地AI实验环境：不同硬件分别承担快速推理、较强模型和后台批处理，并通过低首字延迟的小模型路由器，在本地模型与云端前沿模型之间动态选择。",
+    "tags": [
+      "本地AI",
+      "混合模型路由",
+      "推理硬件",
+      "云端降级",
+      "批处理任务"
+    ],
+    "title": "x.com/andrewchen/status/2099247007454142644",
+    "totalScore": 66,
+    "url": "https://x.com/andrewchen/status/2099247007454142644"
+  },
+  "payloadHash": "sha256:225c03a8d3c198295893f4ee1577ae0b9e0efc3156c05622d8c6f4002e1c0611",
+  "refs": {},
+  "revisionId": "sha256:b49673d1507d3cacebd70658cff97f74cc5163c6461b3cd7c2b69d33e58d2612",
+  "schemaVersion": 1,
+  "updatedAt": 1789727583382
+}

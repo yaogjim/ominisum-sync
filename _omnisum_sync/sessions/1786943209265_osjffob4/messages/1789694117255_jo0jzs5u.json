@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694117254,
+  "entityType": "message",
+  "id": "1789694117255_jo0jzs5u",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n智谱称 GLM-5.3 沿用 GLM-5.2 的基础模型，仅扩大后训练，就显著增强了复杂编程、长期自主执行和漏洞利用能力，但部分结论来自官方或内部评测。\n\n## 关键内容\n\n- **编程能力提升**：官方内部 Code Bench 成绩较 5.2 提高约 50%，且输出 token 更少；Terminal-Bench 3.0 从 4.6 升至 28.3，DeepSWE 从 46.2 升至 66.9。不过它在部分测试中仍落后于领先闭源模型。\n- **训练重点更接近真实工作**：任务不再只是写一段代码，而是让模型操作代码库、计算集群和实验环境，连续完成诊断、修改、测试与验证。团队还用智能体批量生成并检查这些训练环境。\n- **网络安全能力增长明显**：CyberGym 得分由 77.2% 升至 84.5%；ExploitBench 从 24.4% 升至 54.4%。合作安全团队经审核后，在 269 个项目中发现了 2436 个漏洞，但这项成果始于 GLM-5.2 阶段，并非全由 5.3 单独完成。\n- **开放安排**：模型权重计划在发布两周后、完成安全评估与加固再公开；API 必须开启思考模式，可选 low、high、max。\n\n## 通俗解读\n\n“只扩大后训练”意味着没有重做底层模型，而是让同一个模型在更多可验证的真实任务中反复练习。最值得关注的是漏洞能力随训练快速增强，因此开放权重前需要额外安全审查。**如果你关注代码智能体、强化学习训练或 AI 安全，值得细读；若只想判断升级价值，看基准与 API 变更即可。**文中多为厂商自报结果，尤其私有基准仍需独立验证。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694117254,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:071b813157cdbe3d627ffd6db1ed4a964dd86b0557dfc59d85023fc555582b08",
+  "refs": {
+    "sessionId": "1786943209265_osjffob4"
+  },
+  "revisionId": "sha256:028d3461f99428cca63a3cfe057641725449cc087b75b774934f5b47932e2363",
+  "schemaVersion": 1,
+  "updatedAt": 1789694117254
+}

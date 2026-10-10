@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789444912605,
+  "entityType": "session",
+  "id": "1789444912605_vyql2skh",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "下单前复核单板成本，并与同类已组装开发板的市场价格比较。",
+      "为待出售的九块板设计基础测试夹具和验收项目。",
+      "在生产前检查PCB布线并明确组装、测试和销售产生的额外成本。"
+    ],
+    "archiveReason": "",
+    "byline": "Will",
+    "classifiedAt": 1789642536654,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 3,
+      "methodology_value": 3,
+      "novelty": 3,
+      "relevance": 7,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "ESP32-C6开发板小批量试产",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 699,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HSM_F1aXoAIRsYm?format=png&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HSM_F1aXoAIRsYm?format=png&name=medium",
+        "width": 968
+      }
+    ],
+    "knowledgePoints": [
+      "十块板的PCB、钢网与元件合计约111.90加元，组装前平均成本约11.20加元。",
+      "自制开发板还需与市场上低价成品板比较，物料成本并不等同于可行售价。",
+      "批量测试可考虑使用小型测试夹具，减少逐板手工探测的重复劳动。"
+    ],
+    "oneHighValuePoint": "小批量出售自组装开发板时，应提前设计测试夹具和一致性验收流程，而不能只核算物料成本。",
+    "oneLineReview": "成本数据具体但案例尚未完成，缺少质量控制、定价和销售验证，参考价值有限。",
+    "primaryCategory": "硬件产品开发",
+    "rating": "C",
+    "rejectReason": "仅提供一次小批量采购的粗略成本和零散讨论，缺少设计、组装、测试及销售验证过程。",
+    "retentionDecision": "速览成本与测试建议，无明确项目用途时不必保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "嵌入式开发",
+      "小批量生产"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者计划采购十块ESP32-C6开发板，自留一块并出售其余产品，列出PCB、钢网和元件共111.90加元的成本。回复讨论了成品板价格竞争、布线质量以及用测试夹具批量验板的问题。",
+    "tags": [
+      "ESP32-C6",
+      "开发板",
+      "硬件成本",
+      "小批量试产",
+      "测试夹具"
+    ],
+    "title": "Will: I'm going to order ten ESP32-C6 boards",
+    "totalScore": 45,
+    "url": "https://x.com/realwillreil/status/2099598140017906136"
+  },
+  "payloadHash": "sha256:00eb7227ae706067f09f5c06907c8657f156b980e151c7fc7ad3de027a37b73f",
+  "refs": {},
+  "revisionId": "sha256:332a2531a52ea660c83fb9d43c496cdee2f8861fa9f57aa7989f8138eb0e231f",
+  "schemaVersion": 1,
+  "updatedAt": 1789642541723
+}

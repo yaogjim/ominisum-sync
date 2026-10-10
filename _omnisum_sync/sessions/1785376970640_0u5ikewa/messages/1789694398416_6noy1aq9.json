@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694398411,
+  "entityType": "message",
+  "id": "1789694398416_6noy1aq9",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n自建 GPU 并没有固定能服务多少开发者：容量取决于模型、硬件、并发和实际利用率；只有负载稳定且较高，才可能比按 Token 付费更划算。\n\n## 关键内容\n\n- 基于 64 个 SWE-Bench Pro 编程任务，DGX Spark 基本只能供 1 人使用；单张 H200 跑 Qwen3.6、4×H200 跑 DeepSeek-V4-Flash，可较舒适支持约 32 个并发会话；8×B200 跑质量更高的 GLM-5.2，约 8 个并发后就明显变慢。\n- 评估不能只看每秒生成多少 Token，更应看“任务是否完成、完成要多久”。大模型质量可能更好，却因生成慢而只能支持较少并发。\n- 自建成本的关键是利用率而非员工数：4×H200 要长期保持约 89% 使用率，购买才优于 DeepSeek API；8×B200 对比前沿模型 API，盈亏点约为 15%。不同模型结论甚至相反，租 GPU 不一定比 API 便宜。\n- 更新测试中，Kimi K3 在 8×B300 上质量最高，任务解决率为 86.4%，但速度较慢，且测试题可能进入过训练数据，结果需谨慎看待。\n\n## 通俗解读\n\n自建 GPU 像包下一辆全天计费的班车：白天高峰坐满才划算，夜间空跑就浪费。因此应先测真实任务量、峰值和质量要求，再决定买、租还是继续用 API。\n\n**是否值得细读：**若你正评估企业级 AI 编程基础设施，值得细读其图表和成本方法；若只关心个人使用，结论看摘要即可。结果基于特定模型与配置，且未计电力、维护费用，不能直接照搬。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694398411,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:76e391036db6c97ecba54dd540e920039fb07a7b941a225f9cf54ec9448634d6",
+  "refs": {
+    "sessionId": "1785376970640_0u5ikewa"
+  },
+  "revisionId": "sha256:3eb1dc0347d5652d744a4870a11b72dd6e2b7fcbfe8f56ab45cc659afb913a3e",
+  "schemaVersion": 1,
+  "updatedAt": 1789694398411
+}

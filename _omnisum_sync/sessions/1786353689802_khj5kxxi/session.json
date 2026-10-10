@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786353689802,
+  "entityType": "session",
+  "id": "1786353689802_khj5kxxi",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "实现两遍误差扩散：第一遍固定数据模块并向周围八个像素分配误差，第二遍对完整图像进行常规二值化。",
+      "分别在屏幕、打印件、弱光、倾斜角度和不同档次手机上测试扫码成功率。",
+      "输出二维码时保留正确颜色的静区，并在网页放大时关闭图像平滑以避免模块边缘模糊。"
+    ],
+    "archiveReason": "提出了可复用的双阶段误差扩散方法，并明确说明美观、纠错能力和实际扫描可靠性之间的取舍。",
+    "classifiedAt": 1786354946880,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 7,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "误差扩散抖动二维码生成方法",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.andrewt.net",
+    "favicon": "https://www.andrewt.net/favicon.ico",
+    "knowledgePoints": [
+      "二维码功能图案负责定位，必须保持清晰；数据模块在纠错允许范围内具有更大的视觉调整空间。",
+      "双阶段误差扩散可先处理被二维码数据强制确定的像素，再对整幅图像执行常规抖动，以降低盐胡椒噪声。",
+      "艺术化二维码必须在美观与可扫描性之间取舍，实际部署还需考虑留白、打印损伤、低端设备、光照和浏览器缩放模糊。"
+    ],
+    "oneHighValuePoint": "先固定二维码数据模块，再将这些强制像素产生的亮度误差扩散到周围八个像素，可显著减弱随机数据模块对嵌入图像的视觉干扰。",
+    "oneLineReview": "文章提出了具体且有启发性的二维码视觉融合方法，但扫描可靠性结论主要基于原理分析和经验，缺少系统测试数据。",
+    "primaryCategory": "图像处理技术",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留其双阶段误差扩散方法及二维码可靠性约束，供视觉编码产品设计参考",
+    "secondaryCategories": [
+      "二维码生成",
+      "产品技术实现"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍如何将图片嵌入二维码：缩小数据模块并使用误差扩散生成一位图像，再预先固定二维码数据像素、把其亮度误差扩散到邻域，从而减少噪声，同时说明打印、留白、缩放和纠错对扫描可靠性的影响。",
+    "tags": [
+      "二维码",
+      "误差扩散",
+      "图像抖动",
+      "纠错编码",
+      "可扫描性"
+    ],
+    "title": "Dithered QR code generator",
+    "totalScore": 72,
+    "url": "https://www.andrewt.net/dithered-qr-codes/wtf/"
+  },
+  "payloadHash": "sha256:3191373878e0cdb3d7ffacacdaf2c6c0536ae9a48e872406ba13d33606b22506",
+  "refs": {},
+  "revisionId": "sha256:1c37bb222cacb4b1db4a5236922ea20d74227dc37c7a63cce9db3cc55723bbcc",
+  "schemaVersion": 1,
+  "updatedAt": 1789694193316
+}

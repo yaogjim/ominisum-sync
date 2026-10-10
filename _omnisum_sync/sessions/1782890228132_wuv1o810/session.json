@@ -1,0 +1,75 @@
+{
+  "createdAt": 1782890228132,
+  "entityType": "session",
+  "id": "1782890228132_wuv1o810",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在评估 AI 自动化工具，可试用其浏览器 Workflow 功能验证稳定性和成功率。",
+      "挑选一个固定网页流程，如数据查询或内容发布，测试 Profile 隔离与录制复用效果。",
+      "不要仅依据宣传页判断安全性，需进一步查看白皮书、权限模型和实际网络请求行为。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783040148726,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "NewMax浏览器自动化概览",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "NewMax 浏览器模块支持通过自然语言驱动真实 Chrome 执行点击、填写、查询和发布等任务。",
+      "Profile 机制可隔离不同账号的 Cookie 和登录态，适合多账号运营场景。",
+      "教学录制可把人工操作步骤转为带变量的 Workflow，便于后续一键复用。",
+      "本地优先架构强调文件、对话和工作区数据默认留在本机，以降低隐私和合规风险。"
+    ],
+    "oneHighValuePoint": "将一次成功的浏览器操作录制并沉淀为可复用 Workflow，是较有实际价值的自动化思路。",
+    "oneLineReview": "适合作为了解 NewMax 功能边界的产品资料，但独立证据和方法论深度不足。",
+    "primaryCategory": "AI工具与自动化",
+    "rating": "C",
+    "rejectReason": "内容主要是产品宣传和功能说明，重复信息较多，缺少第三方评测、真实数据和深入方法论。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "浏览器自动化",
+      "本地优先AI工作台"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/yangyi/status/2071972782918050050",
+      "https://mp.weixin.qq.com/s/hwrYrTPr79ocdSmDMWditg",
+      "https://newmax.cc/#capabilities"
+    ],
+    "summaryBrief": "文章介绍 NewMax 从本地 AI 工作台扩展到浏览器自动化、多 Profile、多账号隔离、教学录制与 Workflow 复用等功能，并强调本地优先、隐私保护、多模型路由和 Skill 工作流能力。",
+    "tags": [
+      "NewMax",
+      "AI Agent",
+      "浏览器自动化",
+      "工作流",
+      "本地优先"
+    ],
+    "title": "NewMax进化为AI操作系统",
+    "totalScore": 53,
+    "url": "omnisun://digest/1782890228132"
+  },
+  "payloadHash": "sha256:db296223dcef674c6d7c2219eda350709dd7920e6ebf9402d0d7c710156b6756",
+  "refs": {},
+  "revisionId": "sha256:2c5978d176c479a6bb2657c0674a8b9dc2868bbb19d59a97214347e23178dc57",
+  "schemaVersion": 1,
+  "updatedAt": 1784801507893
+}

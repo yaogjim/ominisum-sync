@@ -1,0 +1,66 @@
+{
+  "createdAt": 1783301097252,
+  "entityType": "session",
+  "id": "1783301097252_s7o7x47u",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如使用 Claude Code，可检查 CLAUDE.md 是否过长，并精简为项目说明、命令和已知错误三部分。",
+      "在代理工作流中加入独立验证步骤，要求每个完成声明附带测试输出、截图或日志证据。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783301141277,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Fable5代理编排课程评估",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "复杂AI任务可采用“领导者模型 + 工作者代理 + 独立验证者”的结构。",
+      "长期自动化任务应设置明确完成条件、可见证据和停止上限，避免空转和高额成本。",
+      "项目级上下文文件应保持精简，只保留项目说明、常用命令和常见错误。"
+    ],
+    "oneHighValuePoint": "将最强模型用于计划、调度和验收，而把执行任务委派给更便宜的子代理，可降低成本并提升复杂任务稳定性。",
+    "oneLineReview": "有一些可借鉴的代理编排思路，但可信度和原创性不足，不值得精读。",
+    "primaryCategory": "AI工具与代理工作流",
+    "rating": "C",
+    "rejectReason": "内容营销色彩强，存在大量夸张表述和未经验证的性能断言，证据质量较低，疑似高比例AI生成或拼接式宣传文案。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "AI编程",
+      "提示词工程"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍所谓 Fable 5 的使用方法，核心是让强模型担任规划与评审者，子代理负责执行，并配合轻量 CLAUDE.md、目标、循环和验证机制完成长期任务。但整体偏宣传，缺少可靠证据。",
+    "tags": [
+      "Claude Code",
+      "AI Agent",
+      "工作流编排",
+      "自动化",
+      "课程营销"
+    ],
+    "title": "如何精通 Fable 5（完整课程）",
+    "totalScore": 51,
+    "url": "https://x.com/EXM7777/status/2072694856795955630"
+  },
+  "payloadHash": "sha256:b788088bf521090ca1e23038f0552e339ea9cbfd24795aea3f51c7d55120e1de",
+  "refs": {},
+  "revisionId": "sha256:d6e8ba3425f6ecc3244446d612f5dd696c20dc5252845dd07d1ab1bb6cb8b73d",
+  "schemaVersion": 1,
+  "updatedAt": 1783308989068
+}

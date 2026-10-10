@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789721837984,
+  "entityType": "session",
+  "id": "1789721837984_4q687s3i",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选取一个产品方向，收集付费流量、广告投放、搜索词和平台销量等至少两类信号进行交叉验证。",
+      "制作带“立即购买”入口的演示页面，记录曝光、点击、付款尝试和人工交付转化情况。",
+      "搭建每日任务，抓取新产品榜单并按注册时间、月访问量、搜索流量占比及非品牌词进行筛选。"
+    ],
+    "archiveReason": "包含可复用的需求信号来源、量化筛选条件和先验证后开发的方法，适合用于AI工具及小型产品选题。",
+    "classifiedAt": 1789722165253,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "用市场数据挖掘并验证产品需求",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "new.web.cafe",
+    "favicon": "https://new.web.cafe/favicon.ico",
+    "knowledgePoints": [
+      "需求可通过付费页访问、持续广告投放、应用收入、交易平台销量和高分享率内容等外部行为信号交叉判断。",
+      "新站获得稳定的非品牌搜索流量，通常意味着对应需求词尚未完全被老站垄断，但仍需检查搜索结果竞争强度。",
+      "Product Hunt产品列表、站点流量及关键词数据可组成自动化筛选管线，并按域名年龄、访问量和流量结构过滤候选需求。"
+    ],
+    "oneHighValuePoint": "在正式开发前，用可购买的演示页面测试获客和付款意愿，再以人工方式完成首批交付，可同时验证需求、渠道与支付意愿。",
+    "oneLineReview": "方法具体且贴近产品实践，但部分指标只是需求代理变量，收入推算和成功率假设缺少可靠证据。",
+    "primaryCategory": "创业与需求验证",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "提炼数据筛选和付费验证流程后长期保留",
+    "secondaryCategories": [
+      "产品开发",
+      "AI自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章汇总多种产品需求挖掘方法，包括分析付费页流量、广告投放、应用收入、二手平台销量和社交分享数据，并提出用假门测试、人工交付及自动化关键词筛选验证需求。",
+    "tags": [
+      "需求挖掘",
+      "付费验证",
+      "流量分析",
+      "关键词筛选",
+      "最小化交付"
+    ],
+    "title": "你有哪些私藏的挖掘需求的好方法 - 悬赏专区 | Web.Cafe",
+    "totalScore": 75,
+    "url": "https://new.web.cafe/ask/bounty/fd0wrgx7fh"
+  },
+  "payloadHash": "sha256:ec51ded2943fc4f0b25348f0a1f0cc42b7f8765ecb6d94aefc007db731c2a1df",
+  "refs": {},
+  "revisionId": "sha256:4329f40827b980dfef7d6e8b5dc72edfbafab5df793587e1ff2634edb035f115",
+  "schemaVersion": 1,
+  "updatedAt": 1790769765505
+}

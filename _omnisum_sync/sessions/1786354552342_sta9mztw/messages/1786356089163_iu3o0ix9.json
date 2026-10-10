@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786356063358,
+  "entityType": "message",
+  "id": "1786356089163_iu3o0ix9",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# AI-Native 企业的核心：重构工作流，而非叠加 Agent\n\n## 核心观点\n\nAgent 的真正价值，不是代替员工操作现有软件，而是推动企业重构底层工作流。未来企业将围绕 Agent 重新设计数据、流程、权限及人机分工。\n\n## 三个关键判断\n\n### 1. Agent 应由事件驱动，而非持续运行\n\n高价值 Agent 不需要全天候消耗 Token。关键在于它能被业务事件自动触发、持续推进任务，并在异常或关键节点请求人工介入，无需人工反复启动。\n\n### 2. 流程重构不等于自动操作 SaaS\n\n让 Agent 点击 CRM、复制邮件、填写表格，只是自动化旧流程，也会继承原有低效。\n\n真正的 AI-Native 流程，应将企业改造成一套 Agent 可以直接理解和操作的**事件与状态系统**，并重新定义数据供给、跨部门协作和人工审核节点。\n\n### 3. 应按工作流评估 Agent 成熟度\n\nAgent 是否适用，不能笼统地按销售、医疗、理赔等职能或行业判断，而应拆解到具体工作流，分析其中哪些任务适合 Agent、哪些需要人工决策。\n\n未来 Agent 的扩散不会简单复制“智能编程”，而会伴随组织结构、业务流程及人机边界的系统性调整。\n\n## 商业机会\n\n最大的技术与产品机会，是成为垂直业务中的 **Agentic System of Action（智能行动系统）**，掌握完整的任务执行闭环：\n\n- 事件入口与任务触发\n- 业务状态与上下文\n- 数据及权限管理\n- Agent 执行与效果评估\n- 人工审核与异常处理\n\n## 结论\n\n企业级 Agent 的长期增量，不在“多一个可对话的 AI”，而在让 Agent 真正被部署到工作流中执行任务。谁能掌控业务事件、状态和执行闭环，谁就更有机会成为下一代企业软件的核心平台。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786356063358,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d1b181ea6aec1eb1a94468816aaced3d81b802a57b613d000b6feb817c192cab",
+  "refs": {
+    "sessionId": "1786354552342_sta9mztw"
+  },
+  "revisionId": "sha256:c2b296c0ed7c79552a2cd8a778d9497de73728c13ad20dcd7f032c99da57ad24",
+  "schemaVersion": 1,
+  "updatedAt": 1786356063358
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727319064,
+  "entityType": "message",
+  "id": "1789727319065_4n1ibd93",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# 修复 Cursor 命令回放：让模型保留斜杠命令的真实指令\n\n## 问题：历史记录只保留命令名，可能丢失实际内容\n\n该 PR 修复了 Cursor BYOK 的提示词构建逻辑。此前，用户调用 `/init` 等斜杠命令后，客户端已经解析出的具体指令内容，未被完整写入模型可见的用户历史记录，可能导致模型在后续对话中无法理解该命令实际执行了什么。\n\n## 方案：将解析后的命令内容纳入上下文\n\n修复后，系统会在回放用户历史消息时，将 `selected_context.cursor_commands` 中由客户端解析的命令内容一并提供给模型，并：\n\n- 保持多个命令的原始顺序；\n- 跳过内容为空的命令；\n- 安全转义命令名称，避免格式或解析问题。\n\n这意味着 `/init` 等命令不再只是一个名称，而会以其真实指令参与后续上下文，使模型行为更连贯、可复现。\n\n## 验证与影响\n\nPR 增加了斜杠命令的回归测试，并通过提示词模块及后端相关 Go 测试。该修复关闭 Issue #120，核心价值是提升命令型交互的上下文完整性，减少多轮对话中因指令丢失造成的行为偏差。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727319064,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:702955c71e87c11ac6c97d9eea428d06a6babb91243e3ec6f8ab1c69f079280d",
+  "refs": {
+    "sessionId": "1785396449909_qwbxhlid"
+  },
+  "revisionId": "sha256:7d1fe326a9575ea4de93e567efba2e2214191f48162bf6131b8482bfca90e62c",
+  "schemaVersion": 1,
+  "updatedAt": 1789727319064
+}

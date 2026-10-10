@@ -1,0 +1,24 @@
+{
+  "createdAt": 1785288025552,
+  "entityType": "message",
+  "id": "1785288186296_s2m58zlp",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Bento/Slides：把演示文稿与编辑器装进一个 HTML 文件\n\n## 一句话概括\n\nBento/Slides 是一款“文件即软件”的演示工具：一个 HTML 文件同时包含幻灯片、播放器、演讲者视图和编辑器，无需安装、注册或依赖服务器。\n\n## 核心特点\n\n- **单文件交付**：内容、编辑器、图片、字体和交互能力全部嵌入一个 HTML 文件。\n- **随处打开**：浏览器就是运行环境，文件可直接发送、保存和长期持有。\n- **原地编辑与保存**：按 `Esc` 进入编辑器，按 `⌘S` 将修改写回当前文件。\n- **数据透明**：演示内容以 JSON 形式存储，可通过查看源代码直接读取。\n- **可选自动更新**：启动时可检查签名更新清单，也可以关闭该功能。\n\n## 演示与交互能力\n\n- 支持柱状图、饼图、散点图等动态图表，并能在同一图表元素中平滑变形。\n- 图表支持悬停提示、滚动或捏合缩放。\n- 可制作路径动画，引导观众视觉注意力。\n- 支持将普通幻灯片连接成多个交互场景，形成可点击的故事流程。\n- 内置演讲者视图，适合现场展示。\n\n## 编辑体验\n\n支持 Markdown 式输入，可快速生成：\n\n- 加粗、斜体\n- 项目符号\n- 行内代码\n- 删除线\n\n## 产品理念\n\nBento/Slides 的核心价值是减少软件依赖：**没有安装包、账号和服务器，一个文件即可完整承载内容、工具与交互，并真正归用户永久所有。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1785288025552,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4387246b57a54e6f1ec0b7dbc9d7f295f49b7cde0c0710bc65195b08863b9883",
+  "refs": {
+    "sessionId": "1785288185928_t6di2081"
+  },
+  "revisionId": "sha256:0a84dd1d351ece8887645142748946ada13fd225e2dcf5e905dea9352d065c79",
+  "schemaVersion": 1,
+  "updatedAt": 1785288025552
+}

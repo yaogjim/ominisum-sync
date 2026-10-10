@@ -1,0 +1,19 @@
+{
+  "createdAt": 1785484353943,
+  "entityType": "message",
+  "id": "1785484353942_ni94rbps",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: 本地语音智能体流水线指南\n\n**评级**: A (84分)  |  **深度阅读**: 是  |  **建议操作**: 精读\n\n**主类别**: AI Agent 开发\n**次类别**: 语音技术, 本地部署\n**标签**: #语音智能体 #VAD/STT/LLM/TTS #OpenAI Realtime API #本地推理 #开源模型\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 8 | 10% |\n| 新颖性 | 7 | 10% |\n| 相关性 | 10 | 20% |\n| 可操作性 | 9 | 15% |\n| 方法论价值 | 8 | 15% |\n| 可迁移性 | 8 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 8 | 10% |\n\n**一句话点评**: 这是一份信息密集且可直接落地的本地语音 Agent 工程文档，但部分性能和生产规模描述仍缺少独立验证。\n**核心高价值点**: 将 VAD、STT、LLM 和 TTS 解耦为可替换后端，并通过 OpenAI Realtime 兼容 WebSocket API 对外提供统一接口，降低了本地语音 Agent 与客户端、模型服务之间的集成成本。\n\n### 摘要\n文章介绍 Hugging Face 开源语音智能体项目，采用 VAD、STT、LLM、TTS 四阶段流水线，并通过队列实现低延迟流式处理。文档覆盖本地安装、可替换模型、OpenAI Realtime 兼容接口、多种运行模式、LLM 后端、多语言支持、Docker 与 CLI 配置。\n\n### 知识要点\n- 语音 Agent 可拆分为 VAD、STT、LLM、TTS 四个独立阶段，并通过线程与队列实现流式流水线。\n- OpenAI 兼容的 Responses API、Chat Completions 和 Realtime API 可以统一连接托管模型、本地 vLLM 或 llama.cpp 服务。\n- 本地语音系统的多语言能力取决于 STT 与 TTS 后端的语言覆盖，不能仅由流水线框架本身保证。\n\n### 行动项\n- 按照文档搭建一个本地语音 Agent 原型，并分别测试 realtime、local、websocket 和 socket 运行模式。\n- 针对目标硬件比较 Parakeet、Whisper、Qwen3-TTS、Kokoro 或 Pocket TTS 等后端的延迟、资源占用与语言支持。\n- 使用 OpenAI Realtime 兼容客户端接入系统，验证实时转写、打断、音频流式输出和工具调用事件。\n\n### 存档判定\n归档: 是 — 原因: 文章提供了模块化语音 Agent 架构、可替换组件、运行模式、兼容 API、后端选择和部署配置，具有较强的实践与复用价值。\n删除: 否\n留存决策: 值得精读并长期保留，适合作为本地语音 Agent 架构与部署参考",
+    "role": "assistant",
+    "timestamp": 1785484353943,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:c5c259def25602851140cd76310a97f0815ff829ab98bfe97905a8d63f95dbcd",
+  "refs": {
+    "sessionId": "1785467662544_xi22k4lx"
+  },
+  "revisionId": "sha256:a0aa21ff3a600dc012493415524a76892a4202b601b251e0b2f87d9f7d26ed2c",
+  "schemaVersion": 1,
+  "updatedAt": 1785484353943
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696236492,
+  "entityType": "message",
+  "id": "1789696236492_bv3rpq9h",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nBuzz 是 Block 开源的自托管协作平台，试图把聊天、AI 代理、代码、CI、审批和项目记录统一到一套可签名、可搜索、可审计的事件日志中。\n\n## 关键内容\n\n- **人与 AI 代理使用同一套协作方式**：代理可加入频道、查历史、提交补丁、审查代码、运行工作流，并拥有独立身份、密钥和审计记录，而不只是外围聊天机器人。\n- **以 Nostr relay 为核心**：消息、反应、Git 事件和审批都保存为签名事件，因此能在同一处搜索并追溯“谁在何时做了什么、依据是什么”。\n- **强调自托管与社区隔离**：默认一个 relay 对应一个社区；多租户部署即使共享数据库等基础设施，各社区的数据边界仍独立。\n- 项目已有桌面端、移动端、频道、搜索、审计、工作流和代理 CLI 等能力，但 Git 托管、跨 relay 信誉等仍在开发或构想中，并非全部可用。\n\n## 通俗解读\n\n它想把“群聊、GitHub、CI 面板和 AI 助手”变成一个工作空间。例如一个功能分支可对应一个频道，补丁、测试、审查和合并理由都留在其中。**如果你在评估自托管 AI 协作或事件驱动开发工具，值得细读架构与状态文档；若只想找成熟的一站式替代品，应注意它仍未完成。**",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696236492,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e6e08d6d43a0806780417449761172f7d6f6da4d2b22934d7c5e94116d4ad08d",
+  "refs": {
+    "sessionId": "1784700992435_4kiidu52"
+  },
+  "revisionId": "sha256:75ff00cd387311c8d1b5ca32577a50c38df5e010df46819ff183342e95f6a484",
+  "schemaVersion": 1,
+  "updatedAt": 1789696236492
+}

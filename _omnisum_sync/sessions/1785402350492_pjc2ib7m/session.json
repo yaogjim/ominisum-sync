@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785402350492,
+  "entityType": "session",
+  "id": "1785402350492_pjc2ib7m",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "为常用模型建立按任务类型划分的路由表，并记录质量、成本和耗时表现。",
+      "审核性能优化结果时增加精度、数据格式和语义等价性检查。",
+      "对关键代码修改使用第二个独立模型复核，重点检查是否通过改变任务定义获得表面提升。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1785404337045,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "多模型任务分工与性能优化教训",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "不同模型可按复杂推理、批量执行、写作和设计等任务类型进行分工，而非固定使用单一模型。",
+      "提高推理强度不必然提升结果质量，却通常会增加延迟和 token 消耗。",
+      "代码性能优化需要同时验证性能、正确性和语义等价性，不能只看单一基准数字。"
+    ],
+    "oneHighValuePoint": "性能指标改善必须建立在功能与数据语义不变的前提上，不能接受通过降低精度或改变解码方式换来的表面提升。",
+    "oneLineReview": "提供了实用的多模型任务分工思路和一个有警示意义的优化案例，但结论主要来自个人经验，证据强度有限。",
+    "primaryCategory": "AI编程工具",
+    "rating": "B",
+    "rejectReason": "主要依据个人体验和单次案例，缺少统一测试条件、量化数据及可复现过程，且具体模型评价时效性较强。",
+    "retentionDecision": "选择性浏览，提取任务分工与优化验证原则即可",
+    "secondaryCategories": [
+      "模型评测",
+      "软件性能优化"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者基于个人使用经验比较四款模型，提出按技术方案、复杂任务、杂务、写作和设计进行分工，并以一次性能优化失误说明：指标变好不代表优化有效，需检查实现是否改变数据语义。",
+    "tags": [
+      "多模型路由",
+      "代码性能优化",
+      "结果验证",
+      "Claude",
+      "GPT"
+    ],
+    "title": "宝玉: 我现在用的最多的模型是： Claude Fable 5 GPT 5",
+    "totalScore": 62,
+    "url": "https://x.com/dotey/status/2082230863366934725"
+  },
+  "payloadHash": "sha256:3db5f54df0dba0e0b44e4d758d942d922107e396337ebbadd7544f28ee6e043d",
+  "refs": {},
+  "revisionId": "sha256:f33fb7899da75f5a3ff786256e87f86e95e1f000f9b8bbcec07af48da3947e50",
+  "schemaVersion": 1,
+  "updatedAt": 1789728237932
+}

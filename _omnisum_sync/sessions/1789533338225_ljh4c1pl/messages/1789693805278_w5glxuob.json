@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789693805275,
+  "entityType": "message",
+  "id": "1789693805278_w5glxuob",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者以 Mac 工具 Omia 的实际接入经历说明：大陆开发者可通过 MoR 平台 Waffo Pancake，在不开香港公司、不办境外银行卡的情况下向海外用户收款。\n\n## 关键内容\n\n- **MoR 代替 Stripe 路线**：平台以“记录商户”身份处理交易及相关税务合规，开发者作为供应商收款。作者称其费率为 **3.9% + 0.50 美元/单**，可结算至大陆银行卡或支付宝。\n- **开店与提款是两条独立流程**：店铺业务审核（KYB）决定能否销售，通常需 1—3 个工作日；身份认证和提款账户可同时设置，不必等 KYB 完成。\n- **审核重点是业务是否真实可信**：网站须已上线，产品、价格、隐私政策、服务条款和客服邮箱清晰可查，且不能有虚假宣传或商标冲突。\n- 作者还提醒避免虚构“原价”、如实描述试用功能，并记录了主体选择、中文姓名、DNS 验证等实际踩坑。\n\n## 通俗解读\n\nMoR 相当于让平台站到收银台前，负责向全球用户收费及处理复杂合规，开发者付手续费后拿到货款；但文中的费率、提款限制和审核规则来自作者当时的个人经历，接入前仍应以平台最新条款为准。\n\n**是否值得细读：**如果你是准备出海收款的大陆独立开发者，值得细读，尤其是审核清单和避坑部分；若只想了解原理，知道“可用 MoR 替代香港公司 + Stripe”即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789693805275,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:ea5e3e16ae5a69e23f46d94ce1cfccf3b806d23114d8a35c2191810fbbf2867a",
+  "refs": {
+    "sessionId": "1789533338225_ljh4c1pl"
+  },
+  "revisionId": "sha256:e4213df833fe5d33866abac56157fe4e2c1c08995288f65eeb9bdabb2d830694",
+  "schemaVersion": 1,
+  "updatedAt": 1789693805275
+}

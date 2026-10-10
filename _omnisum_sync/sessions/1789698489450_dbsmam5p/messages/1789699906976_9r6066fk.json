@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789699805449,
+  "entityType": "message",
+  "id": "1789699906976_9r6066fk",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nHister 是一款可自行部署的私人搜索引擎，能全文索引你访问过的网页和本地文件，方便通过网页、终端或 AI 助手重新找到看过的信息。\n\n## 关键内容\n\n- **强调隐私与自主控制**：默认无遥测、无强制云同步，网页内容和索引保存在你指定的 Hister 服务器上。\n- **搜索的不只是标题**：它会保存并检索网页、文件的正文，支持短语、字段筛选、通配符、排除条件和结果优先级。\n- **收集方式较丰富**：可用 Chrome/Firefox 扩展自动记录新访问的网页，也能导入浏览历史、抓取网站或索引本地目录。\n- **多种使用入口**：提供 Web、终端界面、命令行及 MCP 接口，可让兼容的 AI 助手查询个人资料；还支持多人数据隔离。\n\n## 通俗解读\n\n它更像“只搜索自己资料的私人 Google”，适合找回曾看过却忘记出处的内容。需要注意：本地使用不等于所有功能都不外传；若启用语义搜索，文档文本会发送到你配置的向量服务，需自行审查其隐私政策。\n\n**是否值得细读：**若你重视隐私、自托管和个人知识检索，值得继续阅读安装及隐私文档；只想开箱即用、无需维护服务器，则吸引力有限。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789699805449,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:474f9d262a54fe754b8baecec2e22e4132b7cb8c5e74325a45899ef751b33bd4",
+  "refs": {
+    "sessionId": "1789698489450_dbsmam5p"
+  },
+  "revisionId": "sha256:d56cf25541637d17ca0371f31724d6cb2e211dc6e430e0ce26e39482bd2682ff",
+  "schemaVersion": 1,
+  "updatedAt": 1789699805449
+}

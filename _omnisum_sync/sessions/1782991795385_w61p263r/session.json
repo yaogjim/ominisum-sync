@@ -1,0 +1,65 @@
+{
+  "createdAt": 1782991795385,
+  "entityType": "session",
+  "id": "1782991795385_w61p263r",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如有终端多 pane 或 AI Agent 编排需求，可访问 herdr.dev 快速试用。",
+      "与当前使用的 Tmux、Conductor 或 Superset 做一次简单对比后决定是否保留。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783038500253,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 6,
+      "transferability": 2
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "herdr终端工具简评",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息量较低，除工具链接和少量特性描述外无长期保存价值；如已记录 herdr.dev 链接，可删除原内容。",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "herdr 是单个 Rust 二进制、无 GUI、运行在现有终端中的轻量工具。",
+      "它支持真实 PTY pane、Agent 状态感知和 Agent-shaped API，可能适合多 Agent 工作流。"
+    ],
+    "oneHighValuePoint": "herdr 可能是一个轻量级终端内多 pane 与 AI Agent 编排工具，值得有相关需求时试用。",
+    "oneLineReview": "适合作为工具发现线索，但不值得作为知识内容长期保存。",
+    "primaryCategory": "开发工具",
+    "rating": "D",
+    "rejectReason": "内容仅为简短个人体验推荐，缺少深入评测、使用场景、对比数据和可复用方法论。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "终端工具",
+      "AI Agent 工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "作者简短推荐 herdr，认为其可替代 Conductor、Superset、Tmux，特点是 Rust 单二进制、无 GUI、资源占用低、启动快、支持真实 PTY pane 和 Agent 状态感知。",
+    "tags": [
+      "herdr",
+      "终端",
+      "Rust",
+      "PTY",
+      "Agent编排"
+    ],
+    "title": "Viking: 用了 herdr 一段时间， https://t",
+    "totalScore": 34,
+    "url": "https://x.com/vikingmute/status/2071773909813444760"
+  },
+  "payloadHash": "sha256:84e7c573e739bcdaf9bc7e48d2519618352d35827d1dcac067a6b371cbb05db3",
+  "refs": {},
+  "revisionId": "sha256:fa7d9533ec14e0cab1dbca0da32b41930ff7d887ae9902b266cc5e1cde9bc7ff",
+  "schemaVersion": 1,
+  "updatedAt": 1783038500415
+}

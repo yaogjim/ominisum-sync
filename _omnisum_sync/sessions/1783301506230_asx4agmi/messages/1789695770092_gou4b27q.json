@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695770091,
+  "entityType": "message",
+  "id": "1789695770092_gou4b27q",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nOKF v0.1（草案）提出一种极简、开放的知识交换格式：用“Markdown 文件＋YAML 元数据＋目录和链接”，让人和 AI 都能直接读写、版本管理并跨系统传递知识。\n\n## 关键内容\n\n- 一个“知识包”就是目录树，每个普通 `.md` 文件代表一个概念，如数据表、API、指标或操作手册；文件路径即概念 ID。\n- 每个概念必须有 YAML 头部，且只强制要求 `type`；标题、简介、资源地址、标签、更新时间等均可选，也允许自定义字段。\n- 概念间通过普通 Markdown 链接关联；`index.md` 用于列出目录内容，`log.md` 记录更新，正文可自由组织，并建议附示例、结构说明和引用来源。\n- 规范刻意宽松：未知类型、额外字段、断链或缺少索引都不应导致拒绝读取。它不定义统一分类，也不替代 OpenAPI、Protobuf 等领域模型。\n\n## 通俗解读\n\n它不是新的知识数据库，而是一套“文件怎么摆、最少写什么”的约定，类似把企业知识做成可用 Git 管理的维基。若你在建设 AI 可读取的知识库、数据目录或跨组织知识交换，值得细读；否则了解上述规则即可。由于目前仅为 **v0.1 草案**，不宜视为成熟标准。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695770091,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:4f8bcfc499d4e091848b3b55c836188feb26d0f7c79dadfb31727db33f750754",
+  "refs": {
+    "sessionId": "1783301506230_asx4agmi"
+  },
+  "revisionId": "sha256:2238a3f07ff70d6d9775f248e020d3e80818d31f963f1675d8058b17474818bb",
+  "schemaVersion": 1,
+  "updatedAt": 1789695770091
+}

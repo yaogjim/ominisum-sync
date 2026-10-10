@@ -1,0 +1,24 @@
+{
+  "createdAt": 1786943866391,
+  "entityType": "message",
+  "id": "1786943945745_lrva3nx7",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# DeepSeek Harness 开发者预览版总结\n\nDeepSeek Harness 是一套面向全球开发者开放测试并同步开源的 Agent 开发框架。其核心理念是 **“一切皆插件”**：模型、工具、会话、沙箱、存储、调度和 UI 等能力都能自由替换、扩展与组合。\n\n## 1. 核心定位：让模型成为可持续工作的 Agent\n\n- DeepSeek 将 Agent 概括为：**Agent = Model + Harness**。\n- 模型是 Agent 的“灵魂”，Harness 则负责让模型：\n  - 理解运行环境；\n  - 调用各种工具；\n  - 管理会话与任务；\n  - 在真实场景中持续工作。\n\n## 2. 架构设计：所有能力都由插件提供\n\n### Cordis 内核\n\n- DeepSeek Harness 基于 **Cordis 插件系统**构建。\n- Cordis 内核只处理：\n  - 插件加载与卸载；\n  - 插件之间的依赖关系。\n- 内核本身不直接承载具体的 Agent 能力，因此整体架构更轻量、灵活。\n\n### 能力插件化\n\n以下 Agent 能力均由插件提供：\n\n- 模型\n- 工具\n- 技能（Skills）\n- 会话\n- 沙箱\n- 存储\n- 循环\n- 调度\n- UI\n\n这些插件通过 Cordis 的服务与事件机制协同工作。开发者无需修改 Harness 源码，只需调整配置，就能选择、替换或扩展任意能力。\n\n## 3. 运行可追踪：每次执行都有完整记录\n\n- 模型在运行中看到和使用的信息，会写入采用**仅追加设计**的会话日志，包括：\n  - 系统提示词；\n  - 模型推理相关记录；\n  - 工具调用及结果；\n  - 子 Agent 调度；\n  - 每次上下文注入。\n- 开发者可在 **Trajectory 视图**中按来源查看这些信息。\n- 会话恢复、分叉、检索和回放共用同一份事件流，便于调试、分析与复现 Agent 的运行过程。\n\n## 4. 四种运行模式\n\n### 标准模式\n\n面向完整编码任务，支持：\n\n- 文件编辑与 Shell；\n- 文件和网页检索；\n- Skills；\n- 计划与目标管理；\n- 子 Agent；\n- 工作流。\n\n### PTC 模式\n\n- 具备标准模式的全部能力。\n- 通过 **Code Mode SDK**向模型提供工具。\n- 模型可以生成一段 TypeScript 程序，把多轮工具调用组合成一次多步骤操作。\n\n### 极简模式\n\n- 仅保留两个工具：\n  - 持久化 `bash`；\n  - `str_replace_editor` 文件编辑工具。\n- 适合在最小化环境中进行模型基准测试。\n\n### 创造模式\n\n- 用于创建自定义 Agent preset（预设）。\n- 除标准模式能力外，还支持：\n  - 检查当前运行时；\n  - 在内存中实验 Cordis 插件；\n  - 根据需求组合插件；\n  - 获得 preset 创作指导。\n\n例如，开发者可以直接描述想构建的 Agent，再利用运行时检查和插件实验能力设计新的运行模式。\n\n## 5. 快速开始与源码安装\n\n### 快速体验\n\n安装 Node.js 后，可通过以下命令启动 Web UI：\n\n```bash\nnpx @deepseek-ai/dsh web\n```\n\n### 从源码安装\n\n可克隆完整项目，并按照仓库文档安装：\n\n```bash\ngit clone https://github.com/deepseek-ai/deepseek-harness\n```\n\n## 6. 当前阶段与生态方向\n\n- DeepSeek Harness 目前仍是面向 Harness 开发者的**开发者预览版**。\n- 核心插件和基础 API 仍会持续迭代，现阶段可能存在接口变化。\n- 项目希望与全球开发者共同建设一个具备以下特点的 Agent 基础设施：\n  - 开源；\n  - 开放；\n  - 可复用；\n  - 可组合。\n- 开发者可通过 GitHub 和官方开发者文档进一步了解项目，并参与 DSH 插件生态建设。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1786943866391,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:de57b0ff3e3c4190277eda711cfed15df91dbbc47bed23a353a1372e26742e43",
+  "refs": {
+    "sessionId": "1786943137391_14qk94zn"
+  },
+  "revisionId": "sha256:9978f5f7006f52463b7dfc759ac8b361303d4c8efeb0778efd4b7c044bffd0a6",
+  "schemaVersion": 1,
+  "updatedAt": 1786943866391
+}

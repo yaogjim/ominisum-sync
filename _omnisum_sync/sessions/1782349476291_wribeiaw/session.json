@@ -1,0 +1,65 @@
+{
+  "createdAt": 1782349476291,
+  "entityType": "session",
+  "id": "1782349476291_wribeiaw",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "参考文章结构，整理自己的 DESIGN.md：颜色、间距、字体、文案、动效、无障碍六部分",
+      "为 AI 生成界面定义语义 Token 和状态映射，减少每次输出风格漂移"
+    ],
+    "archiveReason": "包含较系统的设计规范拆解，尤其适合参考颜色、间距、字体、文案和动效的约束写法。",
+    "classifiedAt": 1782350630273,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Vercel设计规范拆解",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "颜色 Token 应映射到交互状态，而不只是色值列表",
+      "字体、间距和文案都应角色化、规则化以降低生成不一致性"
+    ],
+    "oneHighValuePoint": "把设计从“选颜色/字号”提升为“定义状态、角色和规则”，让 AI 按语义而不是按像素自由发挥。",
+    "oneLineReview": "适合做 AI 产品设计规范入门参考，但更多是经验总结，缺少一手证据与可验证细节。",
+    "primaryCategory": "AI设计规范",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "短期归档后可保留，适合作为AI产品设计规范的参考样例",
+    "secondaryCategories": [
+      "设计系统",
+      "产品设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章拆解了 Vercel 的 DESIGN.md 设计规范，强调用语义化 Token、固定间距、角色化字体、文案规则、克制动效和无障碍约束，来减少 AI 生成界面的随机性。",
+    "tags": [
+      "DESIGN.md",
+      "Vercel",
+      "语义化Token",
+      "无障碍设计",
+      "AI界面生成"
+    ],
+    "title": "简直就是教科书级别的 AI 设计规范。",
+    "totalScore": 63,
+    "url": "https://x.com/xiaogaifun/status/2069014055579509117"
+  },
+  "payloadHash": "sha256:f4a770af1b6b1cb4a453689fb147501d79fd36b8d450d6797aa3850ee41d8f41",
+  "refs": {},
+  "revisionId": "sha256:bc0b5e6a5ad99568e4fbb92371310d42a0b28b9c43e4417e19fd6db8c8e3c17f",
+  "schemaVersion": 1,
+  "updatedAt": 1782352384068
+}

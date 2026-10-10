@@ -1,0 +1,67 @@
+{
+  "createdAt": 1785288060822,
+  "entityType": "session",
+  "id": "1785288060822_rclstky1",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在采取立场前核对AB 2047最新文本及相关修正条款。",
+      "如属于加州利益相关方，可联系州参议员表达对法案的意见。",
+      "3D打印机开发者和企业可评估法案推进后可能产生的开源兼容、隐私及知识产权泄露风险。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1785403175768,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "加州3D打印监控法案修正争议",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.eff.org",
+    "favicon": "https://www.eff.org/sites/all/themes/frontier/favicon.ico",
+    "knowledgePoints": [
+      "修正版法案不再将个人转售既有3D打印机作为刑事违法行为。",
+      "开源工具豁免以集成合规的内容拦截软件为条件，仍会给开发者和用户带来合规负担。",
+      "法案引入第三方标准并要求制造商和经销商自我监督，同时为部分娱乐业商业用户设置豁免。"
+    ],
+    "oneHighValuePoint": "法案将算法标准从有效阻止技术熟练者规避，降为实质降低可预见规避的可能性，显示监管目标在保留全面监控的同时降低了效果要求。",
+    "oneLineReview": "修正条款梳理较具体，但技术不可行与风险判断主要依赖倡议立场，缺少数据和完整论证。",
+    "primaryCategory": "科技政策",
+    "rating": "B",
+    "rejectReason": "内容高度依赖法案当前进程，且技术不可行性等核心判断缺少数据与完整证据链，长期复用价值有限",
+    "retentionDecision": "选择性浏览，关注加州科技监管或3D打印业务时短期参考",
+    "secondaryCategories": [
+      "数字隐私",
+      "开源软件治理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章梳理加州AB 2047修正内容：移除私人转售刑责、为娱乐业设置豁免，却仍要求打印监控和内容拦截，并弱化算法有效性标准。EFF认为其损害隐私、开源开发及小型创作者，呼吁州参议员否决。",
+    "tags": [
+      "AB 2047",
+      "3D打印监管",
+      "设备端监控",
+      "开源软件",
+      "数字权利"
+    ],
+    "title": "We Can Still Stop California’s 3D Printer Surveillance Scheme",
+    "totalScore": 56,
+    "url": "https://www.eff.org/deeplinks/2026/06/we-can-still-stop-californias-3d-printer-surveillance-scheme"
+  },
+  "payloadHash": "sha256:d1d2320ca508c15885ee9e2e0ad1a9a96a7b5d33c1e0b66084e6e26a65f19020",
+  "refs": {},
+  "revisionId": "sha256:ddfe8605de78fd3d08a88284d0e69a1fa4f9c75d3a3a008621aadbbb28b99aa7",
+  "schemaVersion": 1,
+  "updatedAt": 1785403624238
+}

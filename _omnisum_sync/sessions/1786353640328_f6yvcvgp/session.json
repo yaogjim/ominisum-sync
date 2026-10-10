@@ -1,0 +1,67 @@
+{
+  "createdAt": 1786353640328,
+  "entityType": "session",
+  "id": "1786353640328_f6yvcvgp",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在非高风险开发环境试用自动模式，并记录拦截率、误拦截率、任务完成时间和人工介入次数。",
+      "组织管理员可通过managed settings设置defaultMode，或使用disableAutoMode关闭自动模式。",
+      "对生产基础设施等高风险变更继续保留人工复核，并配置组织级硬拒绝规则限制数据外传和高危操作。"
+    ],
+    "archiveReason": "包含权限疲劳、自动分类拦截、提示注入防御及生产部署的量化数据，对AI编程Agent的安全机制设计具有持续参考价值。",
+    "classifiedAt": 1786354970547,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 8,
+      "relevance": 10,
+      "transferability": 7
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude Code自动模式安全与默认化",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "claude.com",
+    "favicon": "https://cdn.prod.website-files.com/6889473510b50328dbb70ae6/6a74d3f8662b198856f05f49_favicon.ico",
+    "knowledgePoints": [
+      "高频权限提示会造成审批疲劳：用户批准了97%的Claude Code权限请求，人工识别危险命令的能力还会随会话延长而下降。",
+      "自动模式在每次工具调用前使用分类器，重点拦截不可逆、破坏性、越出环境或偏离用户意图的操作，并在连续受阻时回退到人工审批。",
+      "Agent安全可采用纵深防御：硬拒绝规则、数据访问与共享规则、破坏性操作前读取环境状态，以及对外部内容进行提示注入筛查。"
+    ],
+    "oneHighValuePoint": "受控实验显示人工仅识别13.6%的危险命令，而自动模式拦截89%，揭示高频人工审批可能因习惯化而失去安全作用。",
+    "oneLineReview": "这是一篇证据较充分且实践相关度高的产品安全说明，但结论仍主要来自厂商自身数据与特定测试环境。",
+    "primaryCategory": "AI编程工具",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并存档，作为Agent权限设计与安全评估的案例参考",
+    "secondaryCategories": [
+      "AI Agent安全",
+      "产品更新"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章宣布Claude Code将自动模式设为默认，并以受控实验、生产会话分析和第三方红队数据论证：逐次权限确认易产生审批疲劳，而分类器可拦截破坏性、越权及提示注入行为，同时提升长任务连续性与PR产出。",
+    "tags": [
+      "Claude Code",
+      "自动模式",
+      "Agent安全",
+      "权限管理",
+      "提示注入"
+    ],
+    "title": "Auto mode is now the default in Claude Code for Pro, Max, and Team plans",
+    "totalScore": 80,
+    "url": "https://claude.com/blog/auto-mode-default-in-claude-code"
+  },
+  "payloadHash": "sha256:089ccf8dbd8f4a248a7bc1c431c0b3f0b2de5e9bbb2c8ba026101b1f654178d6",
+  "refs": {},
+  "revisionId": "sha256:ff89d10ca536d3fb2764e8515fdec8f75553ec2462c6f7b95c480655fe70459f",
+  "schemaVersion": 1,
+  "updatedAt": 1789864247515
+}

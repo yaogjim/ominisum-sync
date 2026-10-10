@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694284848,
+  "entityType": "message",
+  "id": "1789694284849_zlxq10yw",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\nCloudflare Computer 是一个面向 AI Agent 的持久化虚拟工作区：文件存于 Durable Object 的 SQLite 中，并可统一调用容器、轻量 Shell 或 JavaScript 三种执行环境。\n\n## 关键内容\n\n- **一份文件状态，多种执行后端**：Workspace 是唯一可信的数据源，通过 `workspace.runtime.exec()` 选择后端执行命令或代码；也可只使用文件系统，不配置执行环境。\n- **三种后端各有侧重**：容器提供完整 Linux、真实二进制和网络；Isolate Shell 用 `just-bash` 轻量执行；Isolate JavaScript 在新的 Dynamic Worker 中运行 ES 模块，并支持持久化导入及文件、Git、产物模块。\n- **项目提供完整示例**：涵盖读写与执行接口、聊天 Agent、不同运行时对比、生成 PDF、发布代码仓库和 AI 图片等。实际使用应安装 `@cloudflare/computer`，仓库内的顶层包仍标为开发中。\n- **性能并非全面胜过磁盘**：项目基准显示，FUSE 文件系统在大量元数据操作中更快，但大文件连续读写较慢；设计文档也偏前瞻，应视为目标而非全部已实现能力。\n\n## 通俗解读\n\n这里的“Computer”不是一台可远程操作的桌面电脑，而是给 Agent 使用的“持久文件夹＋可切换执行器”。Agent 写下的文件长期保留，需要完整 Linux 工具时进容器，只跑脚本时则可用更轻量的 Worker。\n\n## 是否值得细读\n\n若你正在 Cloudflare Workers 上开发需要文件持久化、执行代码或调用 Linux 工具的 Agent，值得继续看各包 README 和示例；若只想了解普通云电脑，这个项目相关性不高。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694284848,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:6cdfae4bd2416fb0c533e03137a93f918f0666cc0ebe469501779bba94ac8b68",
+  "refs": {
+    "sessionId": "1785833948756_o6im7va2"
+  },
+  "revisionId": "sha256:10b62fbf69dd564876a5bae46273b4e324fadc2ebba6d93ea853094008cfb26e",
+  "schemaVersion": 1,
+  "updatedAt": 1789694284848
+}

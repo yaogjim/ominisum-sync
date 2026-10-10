@@ -1,0 +1,15 @@
+{
+  "createdAt": 1789703173563,
+  "entityType": "session-content",
+  "id": "1789703173563_fej32n2e",
+  "parentRevisionIds": [],
+  "payload": {
+    "contentHtml": "<article class=\"tw-status\"><header><strong>Peter Steinberger 🦞</strong></header><div class=\"tw-body\">修复了许多对单个用户来说无关紧要的小性能问题……在我们为团队优化之前。<br><br>OC 现在在这里有 ~80 个会话，毫不费力。</div><div class=\"tw-images\"><img src=\"https://pbs.twimg.com/media/HSHXgRsbAAA_K16?format=jpg&name=large\" alt=\"图片\" /></div></article><hr/><h3>热门回复</h3><div class=\"tw-replies\"><div class=\"tw-reply\"><strong>@Tiny Owl Kit</strong> <span class=\"tw-eng\">♥ 11 · 💬 3</span><p>Unrelated logs are a tax on debugging.  <br><br>Tiny Owl SDK adds observability without extra agents: autoTraceId: true<br><br>Same instance → same trace ID. <br><br>Need one request only?  withContext().  <br><br>Click the chip. See Request received → Processing started → Downstream timeout.<br>That’s</p></div><div class=\"tw-reply\"><strong>@Peter Steinberger 🦞</strong> <span class=\"tw-eng\">♥ 10 · 💬 2</span><p>是的，我们最近在团队里招了个人专门做这个！显然我不太擅长做教程 :)</p></div><div class=\"tw-reply\"><strong>@Dawg</strong> <span class=\"tw-eng\">♥ 10 · 💬 1</span><p>我已经重新开始使用 openclaw 三天了，我很喜欢它，向你和你的团队致敬，这是一次精彩的回归</p></div><div class=\"tw-reply\"><strong>@Matias Woloski</strong> <span class=\"tw-eng\">♥ 7 · 💬 3</span><p>我从第一个版本开始就在多人模式下使用 OC<br>@portalbosque_<br>（即每个员工都在 Telegram 上使用多个代理）。感谢你创造了它！<br><br>在我的环境中使用控制 UI 很困难。侧边栏被随机的会话弄得乱七八糟。而且我还时不时遇到很多“网关不可达”的情况（使用 cf access 和 trusted-proxy）<br><br>你有什么建议吗？</p></div><div class=\"tw-reply\"><strong>@Peter Steinberger 🦞</strong> <span class=\"tw-eng\">♥ 7 · 💬 0</span><p>感谢你再次尝试！🙏</p></div></div>",
+    "pageContent": "Peter Steinberger 🦞: 修复了许多对单个用户来说无关紧要的小性能问题……在我们为团队优化之前。 OC 现在在这里有 ~80 个会话，毫不费力。\n![图片](https://pbs.twimg.com/media/HSHXgRsbAAA_K16?format=jpg&name=large)\n---\n热门回复 (共 5 条):\n@Tiny Owl Kit (♥ 11 · 💬 3):\nUnrelated logs are a tax on debugging.  \n\nTiny Owl SDK adds observability without extra agents: autoTraceId: true\n\nSame instance → same trace ID. \n\nNeed one request only?  withContext().  \n\nClick the chip. See Request received → Processing started → Downstream timeout.\nThat’s\n\n@Peter Steinberger 🦞 (♥ 10 · 💬 2):\n是的，我们最近在团队里招了个人专门做这个！显然我不太擅长做教程 :)\n\n@Dawg (♥ 10 · 💬 1):\n我已经重新开始使用 openclaw 三天了，我很喜欢它，向你和你的团队致敬，这是一次精彩的回归\n\n@Matias Woloski (♥ 7 · 💬 3):\n我从第一个版本开始就在多人模式下使用 OC\n@portalbosque_\n（即每个员工都在 Telegram 上使用多个代理）。感谢你创造了它！\n\n在我的环境中使用控制 UI 很困难。侧边栏被随机的会话弄得乱七八糟。而且我还时不时遇到很多“网关不可达”的情况（使用 cf access 和 trusted-proxy）\n\n你有什么建议吗？\n\n@Peter Steinberger 🦞 (♥ 7 · 💬 0):\n感谢你再次尝试！🙏\n"
+  },
+  "payloadHash": "sha256:2610f919ea1acafed6f26c2941d3e8ed9a9edaf978d46ecfb3ebf9a94468a9f0",
+  "refs": {},
+  "revisionId": "sha256:5d7cd7dcc1bfaab944837da9297b66d9562292b8fd12dbc39748fdf2b057c061",
+  "schemaVersion": 1,
+  "updatedAt": 1789703927006
+}

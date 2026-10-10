@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789696086591,
+  "entityType": "message",
+  "id": "1789696086590_ssyat311",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者转用 Pi Agent，并非因为它“更聪明”，而是因为它提供了高度开放的扩展机制，几乎可以修改代理的工具、上下文、工作流、界面和会话管理，适合搭建定制化 AI 代理产品。\n\n## 关键内容\n\n- Pi 默认只有读写文件、编辑和运行命令等基础能力，但可通过 TypeScript 扩展加入 MCP、子代理、浏览器操作、计划模式等功能。\n- 相比 Claude Code、Codex 主要依赖有限的钩子，Pi 允许更深入地改造代理运行框架。例如过滤命令输出，只把相关内容交给模型；作者引用的测试称可减少约 80%—96% 的相关 token 消耗。\n- 扩展也能由 Pi 自己编写并即时重载。视频演示了 Git 状态注入、剪贴板读取，以及在用户请求进入主代理前先做权限检查。\n- Pi 还提供模型调用、代理循环、编码代理 SDK 和终端界面等组件，可用于本地或网页代理产品；但网页部署仍需自行处理用户沙箱、数据库会话及工具隔离。\n\n## 通俗解读\n\nPi 更像一套“可拆装的代理底盘”，而不是功能齐全的成品。它的优势是自由度，不代表开箱即用体验或模型能力一定胜过竞品。\n\n**是否值得细读：**想开发或深度定制 AI Agent，值得看示例与代码；只想挑一款日常编程助手，则了解核心差异即可。视频含课程和社群推广，性能数据也主要来自作者及扩展项目的演示。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789696086591,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:fb19f894b53bfdc3711cff1895491485b76e21a5a99b3ad2207c769129d7c99c",
+  "refs": {
+    "sessionId": "1784166724527_2ayhlvkd"
+  },
+  "revisionId": "sha256:4ac21f1e8693a260e387d1ae98d937a568c843639fa898563c346a2a04daed97",
+  "schemaVersion": 1,
+  "updatedAt": 1789696086591
+}

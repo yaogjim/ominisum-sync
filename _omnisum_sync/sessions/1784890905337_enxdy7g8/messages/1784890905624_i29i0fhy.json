@@ -1,0 +1,24 @@
+{
+  "createdAt": 1784890871724,
+  "entityType": "message",
+  "id": "1784890905624_i29i0fhy",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# OpenWorker 项目总结\n\nOpenWorker 是一款**开源、桌面端、本地优先的 AI 助手**，目标不是陪用户聊天，而是直接完成实际工作并交付文档、表格、报告、消息回复等成果。它支持多种云端或本地大模型，并在发送消息、修改日历、执行命令等关键操作前征求用户批准。\n\n## 1. 项目定位与使用方式\n\n- OpenWorker 当前处于**公开测试版（Open Beta）**，已可正常使用并支持自动更新。\n- 用户只需描述期望结果，例如：\n  - “准备一份客户简报”\n  - “整理我的日历”\n  - “起草一份报告”\n  - “检查 Jira 和 GitHub 上的版本发布进度”\n- 它会自行拆解任务，并调用桌面应用、文件、终端及第三方服务完成工作。\n- 最终交付的是**可直接使用的成果**，而不是任务清单或操作建议。\n\n## 2. 下载与运行环境\n\n- **macOS**：支持 Apple Silicon、macOS 12 及以上；安装包已签名和公证，并支持自动更新。\n- **Windows**：支持 Windows 10/11 x64；当前安装包尚未完成代码签名，可能触发 SmartScreen 警告。\n\n启动后，用户可以添加 OpenAI、Anthropic、Google 等模型的 API Key，也可以连接 Ollama，在本机运行模型。\n\n## 3. 核心架构\n\nOpenWorker 主要由三层组成：\n\n1. **桌面应用**：原生外壳与图形界面。\n2. **本地 Agent 服务**：使用 Python 编写，包含任务引擎、工具和连接器，并基于 `aisuite` 构建。\n3. **本地资源与外部能力**：\n   - 本地文件和终端\n   - **25+ 个应用连接器**\n   - 用户自行选择的大模型服务商或本地模型\n\nAgent、连接器凭据和模型密钥主要保存在用户机器上，使用的是用户自己的账号和密钥。\n\n## 4. 主要功能\n\n### 交付真实成果\n\nOpenWorker 可以生成并保存可打开、分享的文件，例如：\n\n- 文档\n- 电子表格\n- 报告\n- 网页\n\n### 从 Slack 发起任务\n\n用户可以在 Slack 频道中提及 `@OpenWorker`：\n\n- 桌面端会开启一个任务会话；\n- OpenWorker 使用本地工具完成工作；\n- 最终结果会以 Slack 线程回复的形式返回。\n\n### 集成常用工具\n\n项目提供 **25+ 个连接器**，包括：\n\n- GitHub、Slack、Jira\n- Notion、Linear、HubSpot、monday.com\n- Outlook、Gmail、Google Calendar\n- 本地文件和终端\n\n此外，任何可通过 **MCP** 接入的工具也可以连接，并可针对不同工具设置权限。\n\n### 定时自动化\n\n可设置周期性任务，例如：\n\n- 每日晨报\n- 每周报告\n- 持续监控某个频道\n\n每次运行的结果和完整执行记录都会保存在应用内。\n\n### 操作前审批\n\n以下高影响操作默认需要用户批准：\n\n- 写入或修改内容\n- 发送消息\n- 执行 Shell 命令\n- 修改日历等外部数据\n\n无人值守任务遇到此类操作时，不会擅自执行，而是将审批请求放入收件箱等待处理。\n\n## 5. 模型支持\n\nOpenWorker 不绑定单一模型厂商，用户可以随时切换服务商。默认支持：\n\n- OpenAI\n- Anthropic\n- Google Gemini\n- Inkling\n- GLM\n- DeepSeek\n- Kimi\n- Qwen\n- MiniMax\n- Mistral\n- Grok\n\n同时支持：\n\n- 通过 Together、Fireworks 使用开放权重模型\n- 通过 Ollama 完全本地运行模型\n\n项目提供经过验证、适合工具调用的模型列表；也允许用户填写其他模型名称，但兼容性需自行承担。\n\n## 6. 隐私设计\n\nOpenWorker 采用**本地优先**架构，以下内容保存在用户设备中：\n\n- Agent 执行循环\n- 对话记录\n- 连接器令牌\n- 模型 API Key\n\n数据仅会发送给用户主动选择的模型服务和第三方集成。唯一的小型云端服务用于协助连接器完成 OAuth 授权；用户也可以不登录 OpenWorker，改用手动创建的凭据或 API Key 连接服务。\n\n## 7. 本地开发与测试\n\n### 环境要求\n\n- Python 3.10+\n- Node.js 20+\n- Rust 工具链（桌面端需要，通过 `rustup` 安装）\n\n### 基本开发流程\n\n```bash\ngit clone https://github.com/andrewyng/openworker\ncd openworker\n\n# 初始化开发环境，创建 .venv\nbash packaging/setup_dev_env.sh\n\n# 启动本地 Agent 服务\n.venv/bin/openworker-server --cwd ~/some/project --port 8765\n\n# 另开终端启动浏览器界面\ncd surfaces/gui\nnpm install\nnpm run dev\n```\n\nWindows 用户需要通过 Git Bash 或 WSL 执行初始化脚本；服务端程序路径为：\n\n```bash\n.venv\\Scripts\\openworker-server.exe\n```\n\n若要运行完整桌面应用，可在 `surfaces/gui/` 下执行：\n\n```bash\nnpm run tauri dev\n```\n\n### 测试与构建\n\n- 后端测试：`.venv/bin/pytest`\n- GUI 单元测试：`npm test`\n- GUI 端到端测试：`npm run e2e`\n- macOS 打包：`packaging/build_dmg.sh`\n- Windows 打包：`packaging/build_windows.ps1`\n\n## 8. 仓库结构\n\n| 目录 | 作用 |\n|---|---|\n| `coworker/` | Python 后端，包括 Agent 引擎、模型适配、连接器、MCP、记忆和自动化 |\n| `surfaces/gui/` | React 界面与 Tauri 桌面外壳 |\n| `stt/` | 用于语音输入的 Rust 语音转文字组件 |\n| `packaging/` | macOS、Windows 安装包、自动更新及开发环境脚本 |\n| `docs/` | 设计规范和决策记录 |\n| `tests/` | 后端测试套件 |\n\n## 9. 与 aisuite 的关系\n\nOpenWorker 的核心引擎建立在 `aisuite` 之上。`aisuite` 是一个轻量级 Python 库，提供：\n\n- 跨大模型厂商的统一聊天补全 API\n- Agent 层\n- 工具与工具包\n- MCP 支持\n\nOpenWorker 最初在 `aisuite` 仓库中开发，后来迁移为独立项目；该仓库也可作为使用 `aisuite` 构建完整 AI Agent 的参考实现。\n\n## 10. 贡献与许可证\n\n- 欢迎提交 Issue、Bug 报告和 Pull Request。\n- PR 应附上问题发生时和修复后的截图。\n- 项目仍按内部规划快速开发，因此可能不会接受与既定方向冲突、或重复开发中功能的 PR。\n- 项目采用 **MIT 许可证**。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1772076803941",
+    "prompt_template_name": "结构化",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1784890871724,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b4bb50de8fd3fe579df2972771ccfa058399da68db3ef96858a9008d7887794b",
+  "refs": {
+    "sessionId": "1784890905337_enxdy7g8"
+  },
+  "revisionId": "sha256:7ccf005cc220f9cfa233a4c96aab04da42179acdcee8320d2e5a208b5914bd72",
+  "schemaVersion": 1,
+  "updatedAt": 1784890871724
+}

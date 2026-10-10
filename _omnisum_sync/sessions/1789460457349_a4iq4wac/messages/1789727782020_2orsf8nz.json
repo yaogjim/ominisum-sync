@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789727782018,
+  "entityType": "message",
+  "id": "1789727782020_2orsf8nz",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# ChatGPT 原号代充，本质是“账号身份＋第三方支付资源”的履约链\n\n文章认为，ChatGPT 原号代充并不存在神秘的官方激活码或“Plus API”，而是一套灰色订阅供应链：零售商收款并获取用户 Session，上游卡台调用银行卡或 Apple 支付资源完成真实订阅，最终由 OpenAI 将权益记到目标账号。Web 链路已有公开项目佐证，iOS 链路的关键衔接方式仍未被完全验证。\n\n## CDK、USDT只是外围交易工具\n\n整条链可拆为零售、收款、任务调度、上游卡台、真实支付和 OpenAI 权益六层：\n\n- **CDK**是商家内部的订单或提货凭证，并非 OpenAI 官方兑换码。\n- **人民币、USDT**只用于用户与商家结算，不会直接进入 OpenAI 或 Apple。\n- **卡台**真正出售的是订阅履约能力，核心资源包括银行卡、Apple 账户、礼品卡余额、设备及更上游供应商。\n\n因此，“付款成功”和“会员到账”是两个独立状态。\n\n## Session决定“给谁充”，支付资源解决“谁付钱”\n\nSession 是具有账号身份意义的认证信息，用于让 OpenAI 识别目标用户；银行卡或 Apple 交易则证明订阅已经付款。Web 代充通常以 Session 创建 Stripe 结账，再从卡池选择支付资源。公开项目 KC-PAY-GPT 已展示了 CDK、任务队列、卡池、浏览器自动化和上游 API 等完整结构。\n\n## iOS模式合理但关键适配层仍是黑盒\n\n文章推测，iOS 卡台会把用户的 ChatGPT 身份与自己控制的 Apple 支付身份、StoreKit 执行环境结合，为每个账号完成一笔真实 App Store 购买。Apple 签名交易经 OpenAI 验证后，权益写入 ChatGPT 账号，因此可跨设备使用。\n\n官方资料支持“订阅同时关联 Apple ID 与购买时的 ChatGPT 账号”，但尚无公开源码证明卡台如何把 Web Session 接入 iOS 购买和绑定流程。设备农场、Apple 账号池等规模化方式也只是合理推断。\n\n## 最大风险是交出账号身份\n\n对用户而言，风险最大的不是 CDK，而是 Session：它不是普通订单号，而是账号凭证，且共享凭据违反 OpenAI 条款。即使权益到账，账单、续费和售后控制权也可能掌握在卡台的 Apple 账号手中；支付资源或上游失效，还可能导致订阅中断。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789727782018,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:d7ea95f7b62d30b5735e6b31073a8804852b3328f33978e87054534dd047a87c",
+  "refs": {
+    "sessionId": "1789460457349_a4iq4wac"
+  },
+  "revisionId": "sha256:e0154f873916857025a13a4168b28afa48c3cf5040e69b6e5644fc2439beb5da",
+  "schemaVersion": 1,
+  "updatedAt": 1789727782018
+}

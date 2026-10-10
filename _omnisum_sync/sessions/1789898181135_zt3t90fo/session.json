@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789898181135,
+  "entityType": "session",
+  "id": "1789898181135_zt3t90fo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在本地选取一个路由或证据判断任务，按文档运行 direct 模式并记录准确率、延迟和校准表现。",
+      "对共享长上下文的批量条件测试 direct、串行前缀复用和并行后缀三种模式，并检查 argmax 是否发生漂移。",
+      "用自身业务数据建立冻结测试集，将直接 logits 与生成式 JSON 和重排序器基线进行对照。"
+    ],
+    "archiveReason": "包含可运行代码、固定模型版本、基准数据、复现命令和已知限制，方法可迁移至路由、审核与证据判断等Agent场景。",
+    "classifiedAt": 1789949789578,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "开放模型语义决策与直接评分",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "https://github.githubassets.com/favicons/favicon.svg",
+    "knowledgePoints": [
+      "小型Agent决策可建模为状态、运行时标准和类型化选项，并直接从选项 logits 得到条件概率。",
+      "当多项判断共享同一长状态时，可通过前缀预填充复用和并行后缀评分提升吞吐量，但需验证数值误差导致的决策漂移。",
+      "语义决策评测应同时保存模型修订、提示哈希、逐行预测、原始计时和已知失败，以保证审计与复现。"
+    ],
+    "oneHighValuePoint": "对固定选项直接读取模型 logits，可避免生成答案和解析 JSON 的循环，并在相同 4B 模型测试中显著降低批量决策耗时。",
+    "oneLineReview": "这是一个实现完整且评测较透明的语义决策方案，但质量结论仍主要建立在有限的自有工作负载和公开子集上。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，适合作为Agent轻量决策组件和模型评测的实现参考",
+    "secondaryCategories": [
+      "AI技术",
+      "技术实现"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 SemIf：直接读取开放模型对类型化选项的 logits，将小型语义判断转化为概率决策，并提供 CUDA、MLX 和浏览器实现，以及速度、质量、扰动与复现基准。",
+    "tags": [
+      "语义决策",
+      "选项概率",
+      "开放模型",
+      "推理加速",
+      "可复现评测"
+    ],
+    "title": "TheoLeeCJ/SemIf: Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe.",
+    "totalScore": 84,
+    "url": "https://github.com/TheoLeeCJ/SemIf"
+  },
+  "payloadHash": "sha256:5ffab8fb62018a616256c0ea88d7cca9527b748d6499bb57fcf73f537fc6ce24",
+  "refs": {},
+  "revisionId": "sha256:7f084feefc505a58d9fe068621312aa4d8be5892827712e2e3c4739ec6121816",
+  "schemaVersion": 1,
+  "updatedAt": 1789949850499
+}

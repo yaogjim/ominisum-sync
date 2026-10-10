@@ -1,0 +1,67 @@
+{
+  "createdAt": 1789705289810,
+  "entityType": "session",
+  "id": "1789705289810_ex4u03as",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查microduck与microduck_rl官方仓库的文档、依赖和硬件清单。",
+      "在购买硬件前先复现官方仿真及基础强化学习任务。",
+      "对比整机、DIY方案和Reachy Mini等替代品的成本、开放程度与部署难度。"
+    ],
+    "archiveReason": "汇总了官方仓库、DIY复刻资料、替代硬件及较清晰的学习顺序，适合后续开展具身智能实验时调用。",
+    "classifiedAt": 1789705323410,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Microduck具身智能入门路线",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "Microduck试图以低成本开源硬件整合传感器、舵机、仿真、强化学习和真机部署。",
+      "其潜在平台价值不仅取决于硬件价格，还取决于文档、开源设计、复刻教程和社区生态。",
+      "具身智能入门可按产品理解、前身研究、仿真验证、硬件选择、结构修改与策略重训的顺序推进。"
+    ],
+    "oneHighValuePoint": "先跑通仿真和Sim2Real流程，再决定购买整机或DIY，最后才修改结构与重训策略，可显著降低机器人学习的试错成本。",
+    "oneLineReview": "这是有实用索引价值的具身智能入门资料集，但核心判断主要依赖类比和社区热度，论证深度有限。",
+    "primaryCategory": "具身智能与机器人开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为Microduck及低成本具身智能实践的入口资料选择性保留",
+    "secondaryCategories": [
+      "开源硬件",
+      "学习方法"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章将Microduck类比为具身智能时代的树莓派，汇总其来源、DIY复刻、Sim2Real、替代硬件与官方仓库，并给出从理解产品、运行仿真到真机改造和重训策略的学习顺序。",
+    "tags": [
+      "Microduck",
+      "具身智能",
+      "Sim2Real",
+      "强化学习",
+      "开源机器人"
+    ],
+    "title": "WquGuru: Microduck 是新时代的树莓派吗",
+    "totalScore": 66,
+    "url": "https://x.com/wquguru/status/2097556581160456511"
+  },
+  "payloadHash": "sha256:b084692233d43d501a44373646d6f18f4d59a6ed01a0a7de162a39475095f237",
+  "refs": {},
+  "revisionId": "sha256:ddb283425311d1702ee80c19c3022fd4894d0bebb0d66710c1a679eee25b6567",
+  "schemaVersion": 1,
+  "updatedAt": 1789727512660
+}

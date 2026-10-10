@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695996504,
+  "entityType": "message",
+  "id": "1789695996504_e5nsvlna",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一个让 Codex 调度多个模型分工完成“规划—审查—执行”的插件，但最终决策、测试与交付仍由 Codex 负责。\n\n## 关键内容\n\n- 工作流包含 **Planner（制定并修改计划）**、**Advisor（找漏洞并批准计划）**、**Executor（执行）**；前两者可省略，Executor 必须配置。审查最多五轮，仍未获批就停止执行并列出遗留问题。\n- 可给不同角色指定不同模型，也可并行执行适合拆分的任务。项目称这可能提速约 2 倍、减少约 40% 高级模型用量，但明确表示只是目标，并非保证。\n- 外部模型必须已有兼容的服务、账号和认证；插件不会创建凭据或绕过权限。安装要求 Python 3.11+，可靠分配 Planner 建议使用 0.5.1 以上版本并新建任务。\n\n## 通俗解读\n\n它不是让多个模型自行开会，而是由 Codex 当“项目经理”：分别把任务交给规划者、审稿者和执行者，再检查结果。Advisor 批准计划只代表“方案看起来可执行”，不保证代码一定成功。\n\n## 是否值得细读\n\n如果你正在使用 Codex、需要跨模型协作或复杂任务审查，值得细读安装、权限和版本限制；若只是想了解概念，以上流程已涵盖核心。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695996504,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:db609268202f697426cefdf78199d9e0b195e21aa58637299b05328f413167ca",
+  "refs": {
+    "sessionId": "1784098305893_u3c6l51z"
+  },
+  "revisionId": "sha256:8f2f24d12dee80eb42d6fb634afb9f72ab32d8f8b4cee842e479b3a1428f11ea",
+  "schemaVersion": 1,
+  "updatedAt": 1789695996504
+}

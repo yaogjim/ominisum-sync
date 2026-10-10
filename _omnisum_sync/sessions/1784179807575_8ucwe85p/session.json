@@ -1,0 +1,95 @@
+{
+  "createdAt": 1784179807575,
+  "entityType": "session",
+  "id": "1784179807575_8ucwe85p",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个具体Agent场景，将能力拆分为共享Skill与租户Wrapper两层。",
+      "为每个租户定义私有数据、配置、记忆和反馈的边界。",
+      "建立汇总共性反馈的Evaluation流程，并验证通用Skill升级对各租户的影响。"
+    ],
+    "archiveReason": "提出了可复用的共享能力、租户适配层与反馈升级机制，适合留作架构讨论素材。",
+    "byline": "写增长的子木",
+    "classifiedAt": 1784693380650,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 6,
+      "novelty": 5,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "多租户AI Agent分层架构设想",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "imageAnalysis": [
+      {
+        "analyzedAt": 1784182089804,
+        "imageId": "img-3",
+        "model": "gpt-5.6-sol",
+        "ocrText": "",
+        "summary": "{\n  \"value_capture\": {\n    \"whyHighValue\": [\n      \"提出了多租户 Agent 应用的一种可复用架构：共享通用能力，同时保留租户级业务差异、私有数据和独立反馈闭环。\",\n      \"把个性化能力拆成租户 Wrapper Skill、业务 Context、私有数据、配置、记忆和反馈学习，避免为每个客户完全从零构建 Agent。\",\n      \"形成了跨租户的能力飞轮：共性反馈进入 Evaluation，推动共享 Skill 升级，再将新版本能力同步给所有依赖租户。\",\n      \"通过技能调用和动态路由，允许租户将私有 API 或私有 Skill 插入调用链，兼顾通用能力复用与业务数据隔离。\",\n      \"图片补充了较完整的工程化闭环，包括历史任务集测试、多租户数据集评估、效果指标评估、人工抽检、灰度 A/B 测试、关键指标对比和稳定性监控。\"\n    ],\n    \"transferTargets\": [\n      {\n        \"target\": \"广告投放与营销自动化\",\n        \"application\": \"将市场分析、关键词与受众洞察、广告策略生成、投放计划、出价预算优化、效果预测和报告生成拆分为共享 Skill，再由客户业务数据和投放反馈完成个性化。\"\n      },\n      {\n        \"target\": \"客服与销售 Agent\",\n        \"application\": \"共享意图识别、知识检索和话术生成能力，租户通过 Wrapper Skill 接入自身产品目录、客户分层、价格政策、CRM 数据和人工转接规则。\"\n      },\n      {\n        \"target\": \"供应链与采购决策\",\n        \"application\": \"共享需求预测、库存分析和采购建议能力，租户通过私有 Skill 接入供应商、成本、交期和库存数据，并通过动态路由生成企业专属策略。\"\n      },\n      {\n        \"target\": \"数据分析与企业运营\",\n        \"application\": \"共享指标解释、异常检测和报告生成能力，租户 Wrapper 负责指标口径、审批流程、数据权限和业务动作编排。\"\n      },\n      {\n        \"target\": \"软件平台与垂直行业 SaaS\",\n        \"application\": \"将共享核心 Agent 作为平台能力，按租户隔离业务数据、记忆、配置和反馈，同时允许租户扩展私有 Skill。\"\n      }\n    ],\n    \"validationNextStep\": [\n      \"先选择一个高频、可量化且风险可控的广告场景，例如预算分配或出价建议，构建两个租户的最小可行版本。\",\n      \"明确共享层与租户层边界：共享 Skill 只处理通用任务，Wrapper Skill 负责调用顺序、租户规则、权限和私有数据适配。\",\n      \"建立离线 Evaluation 数据集，分别覆盖历史任务、多个租户数据、关键效果指标和边界失败案例，并与人工抽检结果对照。\",\n      \"对共享 Skill 的新版本进行小流量 A/B 测试，观察 ROAS、CPA、转化率、预算消耗、建议采纳率、错误率和延迟等指标。\",\n      \"验证数据隔离和权限控制：确认共享 Skill 无法直接读取其他租户数据，动态路由只能调用当前租户授权的私有 Skill。\",\n      \"比较三种方案的单位客户交付成本、效果提升和维护成本：完全定制 Agent、共享 Skill 加租户 Wrapper、纯通用 Agent。\",\n      \"制定共享 Skill 的版本治理机制，包括兼容性检查、租户回归测试、灰度发布、回滚和租户级版本锁定。\"\n    ],\n    \"topicConnections\": [\n      \"多租户 SaaS 架构\",\n      \"模块化 Agent 与 Skill 编排\",\n      \"领域驱动设计与业务规则封装\",\n      \"检索增强生成与企业私有数据接入\",\n      \"强化反馈或基于结果的持续优化\",\n      \"离线评测、在线实验与模型版本治理\",\n      \"数据隔离、权限控制与企业安全\",\n      \"平台化产品与客户定制化之间的平衡\",\n      \"广告投放优化与转化数据闭环\",\n      \"动态路由、插件系统和可组合软件架构\"\n    ],\n    \"summary\": \"该网页提出一种多租户 Ads Agent 架构：以共享通用 Agent Skill 作为平台能力，以租户 Wrapper Skill、业务 Context、私有数据、配置、记忆和独立反馈形成客户专属 Agent。多个租户的共性反馈进入 Evaluation，经过离线评测和线上灰度验证后升级共享 Skill，并向所有租户推送新能力。其核心价值在于通过模块化和反馈闭环降低定制成本，但落地时必须重点验证数据隔离、技能权限、跨租户反馈是否存在偏差，以及共享版本升级对不同租户的兼容性。\"\n  },\n  \"graph_edges\": [\n    {\n      \"problem\": \"多个客户需要不同的广告业务流程、数据口径和策略规则，完全独立开发 Agent 会造成重复建设和高维护成本。\",\n      \"method\": \"采用共享通用 Skill 加租户 Wrapper Skill 的分层架构；共享层提供通用能力，租户层通过 Wrapper 重定义调用顺序和业务规则。\",\n      \"tool\": \"共享 Core Agent Skill、租户 Wrapper Skill、Skill 调用链、动态路由。\",\n      \"case\": \"广告业务 Agent；租户 A 根据市场分析结果是否超过阈值决定先调用出价优化再调用策略生成，或直接跳过部分步骤。\",\n      \"evidence\": \"网页原文明确提出 “共享核心 Agent Skill + 租户业务数据 + 独立反馈闭环 = 客户专属 Agent 应用”，并举例说明租户 A 的 Wrapper 可通过几行代码重写调用顺序。\",\n      \"confidence\": 0.99\n    },\n    {\n      \"problem\": \"通用 Agent 缺少租户特定的产品、受众、历史投放、预算和配置等业务上下文，导致建议难以适配客户实际业务。\",\n      \"method\": \"在共享能力之外，为每个租户绑定业务 Context、私有数据、配置、记忆和历史，并通过租户业务 Skill 持续调整行为。\",\n      \"tool\": \"租户业务 Context、私有数据、配置、记忆、租户业务 Skill。\",\n      \"case\": \"租户 A 或租户 B 的 Ads Agent 根据各自产品、目标受众、历史投放数据、素材、账户结构、预算目标和配置规则生成独立策略。\",\n      \"evidence\": \"图片公式列出 “共享通用 Skill + 租户对应业务 Skill + 租户业务 Context + 私有数据 + 配置”，租户实例区域也展示了产品、受众、历史投放数据、素材、账户结构和预算目标等信息。\",\n      \"confidence\": 0.98\n    },\n    {\n      \"problem\": \"租户拥有未公开的专有数据或内部系统，通用 Agent 需要使用这些数据，但直接共享数据会产生泄露风险。\",\n      \"method\": \"将租户内部 API 封装为私有 Skill，通过运行时动态路由从通用 Skill 反向调用；共享的是能力接口而不是原始数据。\",\n      \"tool\": \"私有 Skill、私有供应链数据 API、动态路由、租户级权限控制。\",\n      \"case\": \"租户 B 将私有供应链数据 API 封装成私有 Skill，通用出价优化 Skill 在运行时调用该私有 Skill 计算保密的出价策略。\",\n      \"evidence\": \"网页回复明确描述租户 B 可将私有供应链数据 API 封装成私有 Skill，通用出价优化 Skill 可通过动态路由调用，并声称数据不会泄露。\",\n      \"confidence\": 0.96\n    },\n    {\n      \"problem\": \"单个租户的反馈难以覆盖通用能力的各种失败模式，平台无法持续识别哪些问题具有跨租户普遍性。\",\n      \"method\": \"收集多个租户的共性反馈，将其纳入 Evaluation，用历史任务集、多租户数据集、效果指标和人工抽检推动共享 Skill 迭代。\",\n      \"tool\": \"反馈闭环、Evaluation、历史任务集、多租户数据集、效果指标评估、人工抽检。\",\n      \"case\": \"多个 Ads Agent 租户分别产生曝光、点击、转化、成本、ROAS/CPA、转化价值、创意表现、搜索词表现和人工反馈，平台汇总后评估共享能力。\",\n      \"evidence\": \"正文提出 “多个租户的共性反馈会反向进入 Evaluation”，图片中的通用 Skill 升级流程列出了历史任务集测试、多租户数据集评估、效果指标评估和人工抽检。\",\n      \"confidence\": 0.98\n    },\n    {\n      \"problem\": \"共享 Skill 更新可能损害部分租户的既有表现，直接全量发布会带来线上业务风险。\",\n      \"method\": \"先进行候选版本离线评测，再通过小流量 A/B 测试、关键指标对比和稳定性监控进行灰度验证，验证通过后发布新版本，否则回退或继续迭代。\",\n      \"tool\": \"版本候选、离线 Evaluation、A/B 测试、关键指标对比、稳定性监控、灰度发布和回滚。\",\n      \"case\": \"共享 Ads Skill 从 v1.2.0 升级到 v1.3.0，先经过离线评测，再进行线上灰度验证，判断是否通过后向所有租户推送。\",\n      \"evidence\": \"图片右侧展示了从当前版本到新版本候选、离线 Evaluation、线上灰度验证、是否通过、发布新版本的流程，并列出小流量 A/B 测试、关键指标对比和稳定性监控。\",\n      \"confidence\": 0.99\n    },\n    {\n      \"problem\": \"不同租户的反馈数据、业务目标和流量结构可能不同，直接汇总反馈可能导致共享 Skill 偏向大客户或某类业务。\",\n      \"method\": \"在跨租户 Evaluation 中按租户、业务类型、数据规模和目标指标分层评估，并同时保留租户级回归测试和人工抽检。\",\n      \"tool\": \"分层评测集、租户级回归测试、指标加权、人工抽检、版本兼容性检查。\",\n      \"case\": \"广告客户可能分别关注 ROAS、CPA、转化率或预算消耗，平台需要避免用单一客户或单一指标决定共享 Skill 的升级方向。\",\n      \"evidence\": \"网页只明确提出多租户数据集评估和效果指标评估，没有进一步说明如何处理租户权重和指标冲突；因此该方法属于对原架构的必要验证与补充。\",\n      \"confidence\": 0.79\n    },\n    {\n      \"problem\": \"动态调用租户私有 Skill 可能引入未授权访问、数据越权、提示注入或不可审计的策略链路。\",\n      \"method\": \"为每次 Skill 调用实施租户边界、最小权限、输入输出 schema 校验、调用审计、敏感数据脱敏和失败降级，并对私有 Skill 建立安全评测。\",\n      \"tool\": \"租户级权限、访问控制、调用审计、Schema 校验、数据脱敏、沙箱和安全 Evaluation。\",\n      \"case\": \"通用出价优化 Skill 调用租户 B 的私有供应链 Skill 时，只允许访问租户 B 授权的数据和接口，并记录调用过程。\",\n      \"evidence\": \"网页强调私有供应链数据不会泄露，但没有提供权限、审计和隔离机制的具体实现；这些控制项是验证 “数据不仅没泄露” 这一设计目标所需的工程条件。\",\n      \"confidence\": 0.9\n    },\n    {\n      \"problem\": \"跨租户共享能力升级可能与租户已有 Wrapper、私有 Skill 或业务规则不兼容。\",\n      \"method\": \"将共享 Skill 设计为稳定接口，采用能力版本、契约测试、租户回归测试、兼容性检查和租户级版本锁定，逐步迁移 Wrapper。\",\n      \"tool\": \"Skill API、版本管理、契约测试、回归测试、灰度发布、回滚和版本锁定。\",\n      \"case\": \"共享出价优化 Skill 升级后，租户 A 的调用顺序和租户 B 的私有供应链 Skill 仍需保持可用，不能因平台版本变化而破坏客户流程。\",\n      \"evidence\": \"图片体现了共享 Skill 的版本升级和向所有租户推送，但正文未明确说明接口兼容和租户版本锁定机制，因此需要在实施中补充。\",\n      \"confidence\": 0.87\n    },\n    {\n      \"problem\": \"广告 Agent 的价值最终需要通过业务结果而不是文本质量来判断。\",\n      \"method\": \"把曝光、点击、转化、成本、ROAS/CPA、转化价值、创意表现、搜索词表现和人工反馈纳入反馈闭环，并使用线上实验验证。\",\n      \"tool\": \"广告投放数据、转化数据、ROAS、CPA、A/B 测试、人工反馈和效果监控。\",\n      \"case\": \"通过比较不同策略或版本在投放效果、预算效率和转化结果上的变化，判断 Ads Agent 是否真正提升业务表现。\",\n      \"evidence\": \"图片反馈层列出曝光、点击、转化、成本、ROAS/CPA、转化价值、创意表现、搜索词表现和人工反馈；右侧流程列出线上 A/B 测试和关键指标对比。\",\n      \"confidence\": 0.97\n    },\n    {\n      \"problem\": \"广告增长资源有限时，泛流量可能带来较低转化和较差 ROI，Agent 的优化目标需要贴近高意图用户和高转化页面。\",\n      \"method\": \"从转化数据倒推投放和外链节奏，将预算优先投入接近搜索结果 Top5 且转化率较高的页面，并以高意图用户质量而非单纯流量规模作为判断标准。\",\n      \"tool\": \"转化数据、SEO 外链策略、页面排名、转化率、ROI 分析。\",\n      \"case\": \"网页热门回复提出 SEO 外链建设应从转化数据倒推，强调 1000 个高意图用户可能优于 10000 个泛流量用户，并优先支持接近 Top5 且转化率高的页面。\",\n      \"evidence\": \"网页原文的热门回复直接给出 “1000 个高意图用户，远胜 10000 个泛流量用户” 以及外链预算优先投向接近 Top5、转化率最高页面的观点。\",\n      \"confidence\": 0.93\n    }\n  ]\n}",
+        "url": "https://pbs.twimg.com/media/HNTKw2SaIAAHQsR?format=jpg&name=medium",
+        "visualFacts": []
+      }
+    ],
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 800,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HNTKw2SaIAAHQsR?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HNTKw2SaIAAHQsR?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "通用Skill承载跨租户共享能力，租户Wrapper负责业务上下文、私有数据、配置、记忆与调用编排。",
+      "多个租户的共性反馈可进入统一Evaluation，作为通用Skill迭代的输入。",
+      "通用Skill升级后可向依赖它的租户Agent分发能力增益，降低重复开发成本。"
+    ],
+    "oneHighValuePoint": "将共享通用Skill与租户Wrapper及独立反馈闭环分层，可同时兼顾能力复用和客户定制。",
+    "oneLineReview": "框架与Agent开发高度相关且便于讨论，但仍是缺少案例、指标和实现细节验证的架构设想。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览，可作为多租户Agent架构设计的初步参考",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "多租户架构",
+      "产品开发"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以广告业务为例，提出多租户Agent架构：共享通用Skill，叠加租户Wrapper、私有数据与独立反馈；共性反馈进入评测并升级通用能力，再同步惠及各租户。",
+    "tags": [
+      "多租户Agent",
+      "Agent Skill",
+      "Wrapper Skill",
+      "反馈闭环",
+      "能力复用"
+    ],
+    "title": "写增长的子木: 我有个关于「AI Agent 应用」的想法，不知道对错",
+    "totalScore": 59,
+    "url": "https://x.com/CoderJeffLee/status/2077508283062178135"
+  },
+  "payloadHash": "sha256:4cfe31767222d2149dd88ba11d1c8267836bc1041438fab8bf70a2d9397d277b",
+  "refs": {},
+  "revisionId": "sha256:beb5fd9c5fdc6d4bf8c737fe80b2c228f002171ad4c37c5c00b75868ddae6a9a",
+  "schemaVersion": 1,
+  "updatedAt": 1789728846669
+}

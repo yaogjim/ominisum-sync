@@ -1,0 +1,82 @@
+{
+  "createdAt": 1783413207809,
+  "entityType": "session",
+  "id": "1783413207809_3iinhrnq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如有本地部署需求，单独验证 Qwen 27B 在 RTX 4090 上的显存占用、量化方式和推理速度。",
+      "对比 RTX 4090、3090、Pro 6000 等硬件在成本、稳定性和并发能力上的差异。"
+    ],
+    "archiveReason": "",
+    "byline": "nash_su - e/acc",
+    "classifiedAt": 1783419050871,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 3,
+      "relevance": 6,
+      "transferability": 3
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Qwen27B本地部署甜点",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "证据质量较低，仅提供个人经验判断；可替代性强，不值得长期保存原文。",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 900,
+        "id": "img-9",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HMllMkOboAAN4Yv?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HMllMkOboAAN4Yv?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "Qwen 27B 被认为可在单卡 RTX 4090 上运行，适合预算有限的本地部署场景。",
+      "传统企业在垂直领域自研 Agent 时，可能优先考虑 27B 级别模型而非更昂贵专业卡方案。"
+    ],
+    "oneHighValuePoint": "Qwen 27B 可能是企业本地部署垂直领域 Agent 的成本与能力折中点。",
+    "oneLineReview": "有一个实用选型线索，但缺乏证据和展开，不值得深读。",
+    "primaryCategory": "AI基础设施",
+    "rating": "D",
+    "rejectReason": "内容只是社媒短帖，信息量有限，缺少部署参数、成本测算、性能数据和具体案例支撑。",
+    "retentionDecision": "摘录关键结论后可删除",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "大模型本地部署",
+      "硬件选型"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "summaryBrief": "短帖认为 Qwen 27B 是传统企业本地部署大模型的甜点选择，单卡 RTX 4090 即可运行，成本低于 Pro 6000 等更昂贵硬件，但未提供技术细节或实测数据。",
+    "tags": [
+      "Qwen",
+      "27B模型",
+      "RTX4090",
+      "企业本地部署",
+      "Agent"
+    ],
+    "title": "nash_su - e/acc: Qwen 27B 确实是非常甜点模型，单卡 4090 就能跑，我给几个企业客户都用的是这个 主要是 Pro 6000 已经买不起了，太超预算了",
+    "totalScore": 36,
+    "url": "https://x.com/nash_su/status/2074302375939236240"
+  },
+  "payloadHash": "sha256:d75c58f18b6418b90411e0409d725c689aa41a21f623a7a04fa991163596deee",
+  "refs": {},
+  "revisionId": "sha256:ece9e5796486a790d491487a39dbe8887cea8964bab750b01fbb3d1bc3457473",
+  "schemaVersion": 1,
+  "updatedAt": 1783419051227
+}

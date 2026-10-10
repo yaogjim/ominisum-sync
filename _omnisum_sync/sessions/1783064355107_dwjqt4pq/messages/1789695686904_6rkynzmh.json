@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695686904,
+  "entityType": "message",
+  "id": "1789695686904_6rkynzmh",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一份 **Summarize Chrome 扩展自动化代理的技术文档**：用户可选择开启代理，让它在侧边栏调用导航、网页脚本、元素选择等工具操作当前页面，而模型请求统一由本地守护进程处理。\n\n## 关键内容\n\n- **功能默认关闭**：未启用时只是普通问答；开启后，侧边栏会维护“模型回复—调用工具—返回结果—继续回复”的循环。\n- **职责明确分离**：守护进程负责选择模型并生成下一条消息，但**不会亲自执行工具**；实际网页操作由扩展后台、内容脚本和侧边栏完成。\n- **工具覆盖主要自动化场景**：包括打开网页、执行沙箱 JavaScript、让用户点选元素、管理特定网站的“技能”、摘要指定 URL，以及在授权后通过 Chrome 调试器模拟原生点击和输入。\n- **权限与安全有限制**：调试器权限需要用户额外授予；REPL 禁止直接修改页面地址，必须使用专门的导航接口；工具结果按数据而非指令处理。\n\n## 通俗解读\n\n它并不是一个在后台自行控制浏览器的“全能机器人”，而是模型提出操作、扩展代为执行，再把结果交还模型继续判断。文档还详细列出接口参数、模型回退、页面内容构成和源码位置。\n\n**是否值得细读：**如果你要开发、调试或审查该自动化代理，值得细读；若只是普通用户，了解“默认关闭、需授权、可操作网页”即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695686904,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:41c07c059cf5d0af5c29198db0f468154edf5d114e133e04fb2b3f18b4613a89",
+  "refs": {
+    "sessionId": "1783064355107_dwjqt4pq"
+  },
+  "revisionId": "sha256:85ef7fae4684b8a01ef5e21da46aec2db8b8c19cc68a25bd08394f2dde6bbe4b",
+  "schemaVersion": 1,
+  "updatedAt": 1789695686904
+}

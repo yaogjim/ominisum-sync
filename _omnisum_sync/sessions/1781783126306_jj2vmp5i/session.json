@@ -1,0 +1,72 @@
+{
+  "createdAt": 1781783126306,
+  "entityType": "session",
+  "id": "1781783126306_jj2vmp5i",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "阅读 SAG 论文和 GitHub 仓库，确认 event/entity 抽取格式、SQL schema 和检索流程。",
+      "用自己的企业文档或公开多跳数据集小规模复现 Benchmark，重点验证 Recall、延迟、写入成本和增量更新表现。",
+      "对比现有向量 RAG、GraphRAG、HippoRAG 2 与 SAG 在同一数据集上的检索质量和维护成本。",
+      "评估本地 LLM 对事件和实体抽取的稳定性，避免抽取质量成为检索链路瓶颈。",
+      "若业务存在跨文档多跳问答需求，可将 PostgreSQL + pgvector + 全文检索作为 SAG PoC 的基础设施方案。"
+    ],
+    "archiveReason": "文章系统比较了 SAG、GraphRAG、HippoRAG 2 的架构取舍，并提供了企业级 RAG 在成本、增量、私有化和规模化方面的选型参考。",
+    "classifiedAt": 1781783164654,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "SAG轻量化RAG方案解析",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "GraphRAG 在企业场景中的主要问题包括全局建图成本高、增量维护困难、私有化部署压力大，以及离线图结构与在线召回逻辑脱节。",
+      "SAG 将每个 chunk 抽取为 event 和 entities，通过 SQL 表连接在查询时动态构造局部多跳链路，而非预先维护完整知识图谱。",
+      "SAG 使用 SQL 负责确定性过滤和连接，向量检索负责语义扩展，LLM 只在压缩后的候选集上做精排，从而降低 token 成本。",
+      "文章引用的实验显示 SAG 在 MuSiQue 多跳问答上 Recall@5 从 HippoRAG 2 的 65.13% 提升到 80.04%，但证据主要来自项目方材料，仍需独立复现。",
+      "SAG 更适合跨文档、多实体、长链条问答场景，不适合简单 FAQ、单跳检索或抽取模型质量不足的环境。"
+    ],
+    "oneHighValuePoint": "SAG 的核心价值在于把结构化能力从离线全局建图转移到在线检索执行阶段，用 SQL 按需生成多跳证据链，降低维护和增量成本。",
+    "oneLineReview": "这是一篇偏宣传但信息量较高的企业级 RAG 架构分析，值得关注其“轻结构、查询时建链”的设计思路。",
+    "primaryCategory": "人工智能",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "RAG系统",
+      "企业知识库",
+      "检索架构"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 SAG 通过事件-实体轻量索引、SQL 连接和查询时动态扩展来替代重型 GraphRAG 全局建图，强调其在多跳问答、增量更新、私有化部署和大规模检索上的工程优势，并列出适用边界。",
+    "tags": [
+      "SAG",
+      "GraphRAG",
+      "多跳问答",
+      "SQL检索",
+      "企业AI"
+    ],
+    "title": "刚开源就 SOTA，这个项目有点东西：SAG 凭什么跑赢 GraphRAG，省钱，还扛得住海量企业数据？",
+    "totalScore": 71,
+    "url": "https://x.com/teach_fireworks/status/2067243590447952212"
+  },
+  "payloadHash": "sha256:4eb73cde5306a257de0a8a41fa5a445b72121fcc8863af14848c0bc0bb7d3f76",
+  "refs": {},
+  "revisionId": "sha256:c62b352224e8a8ea1005f099f77865ef9e69fc7be8ddafa8a9fe257d012bf065",
+  "schemaVersion": 1,
+  "updatedAt": 1789692342899
+}

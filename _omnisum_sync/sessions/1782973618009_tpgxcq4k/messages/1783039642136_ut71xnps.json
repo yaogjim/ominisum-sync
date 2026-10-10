@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783039642136,
+  "entityType": "message",
+  "id": "1783039642136_ut71xnps",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: Vercel Eve接入OpenUI示例\n\n**评级**: B (62分)  |  **深度阅读**: 可选  |  **建议操作**: 浏览\n\n**主类别**: AI应用开发\n**次类别**: Generative UI, 前端集成, Agent工程\n**标签**: #OpenUI #Vercel Eve #AG-UI #Next.js #流式响应 #工具调用\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 7 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 6 | 20% |\n| 可操作性 | 8 | 15% |\n| 方法论价值 | 6 | 15% |\n| 可迁移性 | 5 | 10% |\n| 证据质量 | 7 | 10% |\n| 长期杠杆 | 5 | 10% |\n\n**一句话点评**: 这是一篇偏工程示例型文档，实操价值较高，但适用范围较窄，方法论和长期价值有限。\n**核心高价值点**: 保留 Eve 原有会话协议，通过事件适配层转换为 AG-UI，从而让 OpenUI 渲染流式文本、工具调用和生成式组件。\n\n### 摘要\n文章介绍如何将 Vercel Eve agent 接入 OpenUI，通过 Eve HTTP 会话协议和可恢复流式事件，将 Eve 事件转换为 AG-UI SSE，并在 OpenUI FullScreen 聊天界面中渲染文本、工具调用和生成式 UI。\n\n### 知识要点\n- OpenUI 可通过 agUIAdapter 消费由 Eve 事件转换而来的 AG-UI SSE 流\n- Eve 的 session ID、continuation token 和 stream cursor 可与 OpenUI thread 绑定，实现多轮上下文和可恢复流式传输\n- Eve 的 actions.requested、message.appended、turn.failed 等事件可映射为 OpenUI 所需的工具调用、文本和错误事件\n- 通过动态 instruction 注入 OpenUI component library prompt，可让模型输出与渲染组件库同步的 OpenUI Lang\n- 示例使用 localStorage 保存线程元数据、转录记录和 Eve 会话状态\n\n### 行动项\n- 如需集成 Eve 与 OpenUI，可参考 src/eve-chat.ts 和 src/eve-stream.ts 实现会话桥接与事件映射\n- 运行示例前安装依赖、配置 LLM_API_KEY，并使用 pnpm dev 启动 Next.js 与 Eve 开发服务器\n- 生产环境暴露前应将 anonymous authentication 替换为经过认证的 Eve channel\n\n### 存档判定\n归档: 是 — 原因: 包含具体接入架构、事件映射、会话持久化和运行步骤，对相关项目有参考价值\n删除: 否\n留存决策: 短期参考后可归档，适合在实际集成 OpenUI 与 Eve 时查阅",
+    "role": "assistant",
+    "timestamp": 1783039642136,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:cbd55c49ab89fd1af9da7c01e1d7cb0f850d14186136ee3d15e3af07052e8477",
+  "refs": {
+    "sessionId": "1782973618009_tpgxcq4k"
+  },
+  "revisionId": "sha256:db0f93a5444bf87c7ad4fc238e15ca91256d990be77e2e71a132224661d3b7cb",
+  "schemaVersion": 1,
+  "updatedAt": 1783039642136
+}

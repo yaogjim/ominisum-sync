@@ -1,0 +1,23 @@
+{
+  "createdAt": 1783570393478,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1783570393477",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# Craft Agents OSS 总结：面向 Agent-Native 工作流的开源桌面工作台\n\n## 一句话概括\n\n**Craft Agents 是 craft.do 开源的 AI Agent 工作台**：它把 Claude、OpenAI、Google、GitHub Copilot 等大模型，以及 Slack、Gmail、Linear、数据库、本地文件、MCP Server 等外部工具连接在一起，让用户通过自然语言配置、调用和管理 Agent，而不是写配置文件或依赖 CLI。\n\n---\n\n## 核心定位\n\n### 不是代码编辑器，而是 Agent 工作流中心\n\nCraft Agents 的目标是提供一种更适合 Agent 的工作方式：\n\n- 多会话并行处理任务\n- 以文档和上下文为中心，而不只是代码\n- 通过自然语言连接 API、MCP、本地工具\n- 支持长期运行任务、状态流转和团队协作式会话管理\n- 提供漂亮、流畅的桌面 UI，而非纯命令行体验\n\n它强调的是**Agent-Native Software**：用户描述目标，Agent 自己理解、配置、执行。\n\n---\n\n## 主要能力\n\n### 1. 多会话 Inbox\n\n类似任务收件箱，支持：\n\n- 创建多个 Agent 会话\n- 会话状态流转：Todo、In Progress、Needs Review、Done\n- 标记重要会话\n- 保存完整上下文和历史记录\n- AI 自动生成会话标题\n\n适合把 Agent 当成 “可并行工作的任务执行者” 来管理。\n\n---\n\n### 2. 连接任意外部数据源和工具\n\nCraft Agents 支持连接：\n\n- **MCP Server**：Craft、Linear、GitHub、Notion、自定义 MCP\n- **REST API**：Google Gmail / Calendar / Drive、Slack、Microsoft 等\n- **本地资源**：文件系统、Obsidian、Git 仓库\n- **数据库 / 自定义 API**：如 Postgres、OpenAPI 规范、接口文档截图等\n\n重点是连接方式非常自然：  \n用户可以直接说**“添加 Linear 作为 source”**，Agent 会自动查找文档、配置凭证、完成连接。\n\n---\n\n### 3. Skills：可复用的 Agent 能力\n\n用户可以通过自然语言创建或导入技能：\n\n- 从 Claude Code 导入已有 skills 和 MCP\n- 描述一个 skill 的用途，Agent 自动生成配置\n- 新增或修改后无需重启\n- 会话中可通过`@`直接引用 source 或 skill\n\n这让 Agent 能力从 “一次性对话” 变成 “可沉淀、可复用的工作模块”。\n\n---\n\n### 4. 多模型与多供应商支持\n\n支持多种 LLM 连接方式：\n\n- Anthropic API Key / Claude Max / Claude Pro\n- Google AI Studio / Gemini\n- ChatGPT Plus / Pro Codex OAuth\n- GitHub Copilot OAuth\n- OpenAI API\n- OpenRouter 等自定义 endpoint\n\n用户可以按 workspace 设置默认模型，也可以在不同场景切换模型。\n\n---\n\n### 5. 权限与安全控制\n\n内置三档权限模式：\n\n| 模式 | 含义 |\n|---|---|\n| Explore | 只读，不允许写操作 |\n| Ask to Edit | 写操作前请求确认，默认模式 |\n| Auto | 自动批准命令 |\n\n同时支持：\n\n- OAuth 凭证加密存储\n- TLS 加密远程连接\n- 本地 MCP 以子进程运行\n- 自定义规则控制 Agent 行为\n\n这对 Agent 产品很关键，因为它平衡了自动化效率与执行风险。\n\n---\n\n## 技术与架构\n\n### 桌面端 + 远程 Headless Server\n\nCraft Agents 主要是 Electron 桌面应用，也支持远程服务器模式：\n\n- 桌面端只负责 UI\n- 会话逻辑、工具调用、LLM 请求在远程服务器执行\n- 支持长任务不中断\n- 可从多台设备访问同一 Agent 工作区\n- 适合部署在 VPS 或高性能服务器上\n\n---\n\n### CLI 支持自动化场景\n\n除了 GUI，还提供 CLI：\n\n- 检查服务连通性\n- 创建 / 删除 / 查询 session\n- 发送 prompt 并流式返回结果\n- 用于脚本、CI/CD、服务验证\n- 支持自启动 headless server 后执行任务\n\n这让它既适合个人桌面使用，也适合工程化自动化。\n\n---\n\n### 开源与可定制\n\n项目使用**Apache 2.0 License**开源。  \n官方强调他们自己也在用 Craft Agents 构建 Craft Agents，几乎不依赖传统代码编辑器。\n\n这传递了一个重要信号：  \n**未来软件的可定制性，可能会从 “改代码” 转向 “对 Agent 下指令”。**\n\n---\n\n## 产品价值判断\n\n### 对用户的价值\n\nCraft Agents 解决的是当前 Agent 使用中的几个痛点：\n\n- CLI 门槛高\n- 工具配置复杂\n- 多会话管理弱\n- Agent 与外部系统连接成本高\n- 技能沉淀和复用困难\n- 长任务和远程执行体验不完整\n\n它把这些能力整合成一个 “Agent 操作系统式” 的工作台。\n\n---\n\n### 对产品形态的启发\n\nCraft Agents 代表一种新趋势：\n\n> AI 产品不只是聊天框，而是围绕 Agent 的任务、工具、权限、上下文和状态管理重新设计软件。\n\n它的核心不是模型本身，而是：\n\n- Agent 如何接入业务系统\n- Agent 如何被管理\n- Agent 如何执行复杂任务\n- Agent 如何沉淀能力\n- Agent 如何安全地自动化\n\n---\n\n## 适合场景\n\nCraft Agents 特别适合：\n\n- 产品经理 / 创始人管理多个 AI 任务流\n- 工程团队用 Agent 处理代码、Issue、PR、文档\n- 运营团队连接 Slack、Gmail、Calendar 等系统自动化工作\n- 个人知识管理：连接本地文件、Obsidian、Craft 文档\n- 企业内部搭建 Agent 工作台原型\n- AI Agent 产品研究与二次开发\n\n---\n\n## 需要注意的问题\n\n### 仍偏早期和开发者友好\n\n虽然它试图降低 CLI 和配置门槛，但整体仍包含：\n\n- Bun / Electron / MCP / OAuth 配置\n- 远程服务器部署\n- API Key 与权限管理\n- 自定义 source 和 skill\n\n因此更适合技术型用户、AI Builder、产品技术团队，而不是完全小白用户。\n\n---\n\n## 总结\n\nCraft Agents 是一个开源的**Agent-Native 工作台**，核心价值是把模型、工具、数据源、会话、权限和自动化整合在一起，让 Agent 真正进入复杂工作流。\n\n从产品视角看，它不是 “又一个 AI Chat App”，而是在探索下一代 AI 软件形态：  \n**用户用自然语言定义目标，Agent 自动连接工具、理解上下文、执行任务，并在可控权限下持续工作。**",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1783570393478,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:e1970a7ab2bee4a2de9c34d453e92f9d638192b2ee0d30b18fe17e8a3d984528",
+  "refs": {
+    "sessionId": "1783569598226_pmlndfgc"
+  },
+  "revisionId": "sha256:1b7ba0635a5dd390618adca585e02983ab776a567faf2b5f8fd3dda5a1693566",
+  "schemaVersion": 1,
+  "updatedAt": 1783570393478
+}

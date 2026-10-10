@@ -1,0 +1,80 @@
+{
+  "createdAt": 1790219253769,
+  "entityType": "session",
+  "id": "1790219253769_n4xterbo",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "有车机适配需求时，查看xcertplay仓库，核对接入条件及音频、麦克风和无线连接问题的当前状态。"
+    ],
+    "archiveReason": "",
+    "byline": "eastwood.net",
+    "classifiedAt": 1790767916502,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 4,
+      "methodology_value": 2,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "安卓车机接入CarPlay的测试与限制",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 680,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HS5lTrmakAEYp13?format=jpg&name=small",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HS5lTrmakAEYp13?format=jpg&name=small",
+        "width": 510
+      }
+    ],
+    "knowledgePoints": [
+      "文中单个Android 9车机案例呈现有线画面流畅、无线黑屏、音频无声的不同状态，不能据此推断其他车机的兼容性。",
+      "xcertplay是文中测试所使用的开源项目线索；回复称音频通道与麦克风问题计划一起修复，但没有提供完成时间或结果。"
+    ],
+    "oneHighValuePoint": "该Android 9车机的测试显示，有线画面可用并不代表CarPlay完整可用，音频和无线连接仍存在独立障碍。",
+    "oneLineReview": "提供了有用的开源项目入口和初步适配反馈，但不足以支持“任何车机都能使用”的结论。",
+    "primaryCategory": "车载技术",
+    "rating": "C",
+    "rejectReason": "缺少硬件配置、安装步骤和兼容性验证，芯片价格及普遍适用性也缺乏证据，不宜作为技术方案长期保留。",
+    "retentionDecision": "作为开源项目线索速览，有车机适配需求时再查阅项目文档",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "开源项目",
+      "技术实现"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "作者分享基于xcertplay项目在Android 9国产车机上接入CarPlay的测试：有线画面流畅，无线黑屏且音频无声，并称认证芯片仅需两元多。项目作者回复计划一并修复音频与麦克风问题。",
+    "tags": [
+      "CarPlay",
+      "安卓车机",
+      "MFi认证芯片",
+      "xcertplay"
+    ],
+    "title": "eastwood.net: 得益于中国强大的产业链，MFI认证芯片只需要2块多钱，高大上的 #carplay 就可以在任何车机上使用了",
+    "totalScore": 44,
+    "url": "https://x.com/eastwoodnet/status/2102729476778099002/photo/2"
+  },
+  "payloadHash": "sha256:5e69354a39381285bf87da52fc900bab3cd59cdbd1d6bde337d996b5193345b1",
+  "refs": {},
+  "revisionId": "sha256:a06bb372fbb4176fe18254861e886415e976de2e0662f4574979eb2ea8e39044",
+  "schemaVersion": 1,
+  "updatedAt": 1790767918073
+}

@@ -1,0 +1,66 @@
+{
+  "createdAt": 1785288231212,
+  "entityType": "session",
+  "id": "1785288231212_ickbp0kq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查阅《日经亚洲》原始调查及相关公司的财报附注，核实1.65万亿美元的定义与构成。",
+      "分析AI基础设施企业时，对比表内债务、特殊目的实体义务和长期数据中心承诺。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1785402950274,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 4,
+      "information_density": 5,
+      "long_term_leverage": 3,
+      "methodology_value": 2,
+      "novelty": 6,
+      "relevance": 7,
+      "transferability": 3
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "AI巨头表外债务与数据中心风险",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "futurism.com",
+    "favicon": "https://futurism.com/wp-content/uploads/2025/09/favicon.png?quality=85&w=32",
+    "knowledgePoints": [
+      "文章称五家科技巨头的表外债务合计约1.65万亿美元，但未解释具体统计口径。",
+      "特殊目的实体可将部分融资或项目义务置于独立法律主体中，降低其在主公司资产负债表上的可见度。",
+      "大规模数据中心建设可能同时带来长期资本承诺、融资压力和股权稀释风险。"
+    ],
+    "oneHighValuePoint": "评估AI基础设施投资风险时，不能只看资产负债表内债务，还应核查特殊目的实体、长期采购承诺及其他表外义务。",
+    "oneLineReview": "提供了值得警惕的具体数字，但二手转述、口径缺失和煽动性类比显著限制了结论可信度。",
+    "primaryCategory": "AI产业与商业",
+    "rating": "C",
+    "rejectReason": "主要依赖二手调查和评论，缺少债务测算口径、公司文件及表外安排的具体合同信息。",
+    "retentionDecision": "速览了解风险线索，核实原始调查后再决定是否保留",
+    "secondaryCategories": [
+      "企业财务",
+      "数据中心基础设施"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章援引《日经亚洲》调查，称五家美国科技巨头通过特殊目的实体等表外安排承担约1.65万亿美元债务，并讨论AI数据中心投资、股权稀释与泡沫风险，但未呈现测算口径或原始财务证据。",
+    "tags": [
+      "表外债务",
+      "特殊目的实体",
+      "AI数据中心",
+      "科技巨头",
+      "AI泡沫"
+    ],
+    "title": "AI Companies Are Trying to Hide a Staggering Amount of Debt",
+    "totalScore": 43,
+    "url": "https://futurism.com/artificial-intelligence/ai-companies-hide-debt-off-balance-sheet"
+  },
+  "payloadHash": "sha256:cc1235977b6ae53b8dc33db05e5648c6930fb9a266ceba3d92dd8ed687a7f4b6",
+  "refs": {},
+  "revisionId": "sha256:192f163437e970d32fe75a91199b0111599137426faa5c485c0ce081c938eea7",
+  "schemaVersion": 1,
+  "updatedAt": 1785402950313
+}

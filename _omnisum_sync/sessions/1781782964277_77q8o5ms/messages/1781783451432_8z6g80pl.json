@@ -1,0 +1,20 @@
+{
+  "createdAt": 1781783426700,
+  "entityType": "message",
+  "id": "1781783451432_8z6g80pl",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 文章主旨概括\n\n姚金刚开源了一个“解读 Skill 的 Skill”，用于分析、评估和学习 Agent Skills 生态中的各类 Skill。该工具可以把目标 Skill 转换为结构化分析数据，并生成双语 HTML 解读报告，帮助用户更好理解、使用和改进 Skill。\n\n## 1. 项目发布：一个专门“解读 Skill”的 Skill\n\n- 作者开发并开源了一个面向 **Agent Skills 生态** 的分析工具。\n- 这个工具本身也是一个 Skill，功能是对其他 Skill 进行质量解读、学习分析和使用指导。\n- 项目已上传到 GitHub，同时也公开了该 Skill 的原始设计方案。\n\n相关链接包括：\n\n- GitHub 项目：`https://github.com/yaojingang/yao-meta-skill`\n- 作者补充链接：\n  - GitHub 地址：`https://ai.laoyao.cn/interpreter`\n  - Skill 原始设计方案：`https://doc.laoyao.cn/cg6s21`\n  - 解读报告真实示例：`https://doc.laoyao.cn/82dpkl`\n\n## 2. 核心作用：帮助理解、评估和改进 Skill\n\n该 Skill 的主要价值包括：\n\n- **学习优秀 Skill**：通过结构化分析，理解市面上优秀 Skill 的设计方式。\n- **评估 Skill 质量**：从结构、内容、依赖、风险等角度进行判断。\n- **指导 Skill 使用**：生成报告后，用户可以更清楚知道该 Skill 适合什么场景、如何使用。\n- **辅助迭代改进**：开发者可以根据分析结果优化自己的 Skill。\n\n简单来说，它像是一个“Skill 评测员 + 教练”，帮用户看懂一个 Skill 是否设计合理、是否安全、是否值得借鉴。\n\n## 3. 技术设计：静态解析优先，强调证据链\n\n作者提到，该工具的核心架构采用：\n\n> “静态解析优先、证据链贯穿、报告层解释”\n\n可以理解为：\n\n- **静态解析优先**：先不直接运行目标 Skill，而是优先读取和分析其文件结构、配置、脚本等内容。\n- **证据链贯穿**：每个判断都尽量基于可追溯的内容和数据，而不是空泛评价。\n- **报告层解释**：最终把复杂分析结果转化成用户容易理解的报告。\n\n这种设计有助于提升分析的安全性、可解释性和可靠性。\n\n## 4. 分析流程：从安全预处理到报告生成\n\n目标 Skill 进入分析器后，会经过一套完整流程：\n\n1. **安全预处理**  \n   先对目标 Skill 做基础安全处理，降低风险。\n\n2. **结构盘点**  \n   分析 Skill 的文件结构和组成方式。\n\n3. **元数据解析**  \n   读取 Skill 的名称、说明、版本、作者等基础信息。\n\n4. **内容解剖**  \n   拆解 Skill 的核心内容，理解其功能设计。\n\n5. **脚本与依赖分析**  \n   检查其中是否包含脚本、外部依赖，以及这些依赖可能带来的影响。\n\n6. **风险扫描**  \n   识别潜在安全风险或不合理设计。\n\n7. **评分计算**  \n   根据分析维度对 Skill 进行质量评分。\n\n8. **报告渲染**  \n   最终生成结构化数据和双语 HTML 报告。\n\n## 5. 使用方式：可部署到 Codex 或 Claude Code 等 AI 终端\n\n作者表示，该 Skill 可以下载并部署到类似以下 AI 编程/终端环境中：\n\n- Codex\n- Claude Code\n- 其他支持 Skill 调用的 AI 终端\n\n使用时可以输入类似指令：\n\n```text\n解读Skill：\nhttps://github.com/yaojingang/yao-meta-skill\n```\n\n执行后，用户会收到完整的 Skill 解读结果，以及对应的 Skill 解读报告。原文中还附带了示例截图展示报告效果。\n\n## 6. 评论区补充：相关资源和讨论\n\n热门回复中，有用户补充了一些与 Codex、Agent 使用相关的内容：\n\n- 宝玉提到 Codex 操控电脑的三种方式，并重点介绍了 **Computer Use**：  \n  它可以像人一样看屏幕、点鼠标、敲键盘，操作 Spotify、Xcode、系统设置、iOS 模拟器等图形界面应用，但速度较慢。\n\n- 极客杰尼分享了 Codex 实战案例库，称其中有大量实战案例，并且关键步骤配有截图。  \n  相关链接包括：\n  - `https://codexguide.ai/recipes/`\n  - `https://github.com/freestylefly/CodexGuide`\n\n- 作者本人在评论区再次补充了“解读 Skill 的 Skill”的相关入口，包括 GitHub 地址、原始设计方案和真实解读报告示例。\n\n## 总结\n\n这个项目的核心意义在于：用一个专门的 Skill 去分析其他 Skill，让 Skill 的学习、评估、使用和改进变得更标准化、可视化。对于正在构建或研究 Agent Skills 的开发者来说，它可以作为一个实用的质量分析工具和学习参考。",
+    "prompt_id": "template_1772076803941",
+    "role": "assistant",
+    "timestamp": 1781783426700,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:b8b1ee65d2065cdde868dfbb9bd314b7806ab046155b5fa5842a1fb51c5b7c66",
+  "refs": {
+    "sessionId": "1781782964277_77q8o5ms"
+  },
+  "revisionId": "sha256:68927c5200389f2b987b189faeab9c66910f9a0c9b759ef44d657569d19e1e1b",
+  "schemaVersion": 1,
+  "updatedAt": 1781783426700
+}

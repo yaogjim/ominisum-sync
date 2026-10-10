@@ -1,0 +1,68 @@
+{
+  "createdAt": 1783080071527,
+  "entityType": "session",
+  "id": "1783080071527_6b18uzvk",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "将常用AI任务改写为包含目标、检查标准、纠错规则和停止条件的Loop模板。",
+      "为高频任务建立状态表，记录进度、污染项、新增规则和下一轮重点。",
+      "在涉及公开发布、客户沟通、金融法律等高风险场景保留人工确认节点。"
+    ],
+    "archiveReason": "包含可复用的Loop任务模板、检查标准和多个内容/工作场景示例，适合作为AI工作流设计参考。",
+    "classifiedAt": 1783080220736,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Loop Engineering 实操框架",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "一个最小Loop应包含目标、执行、检查、纠错、状态、沉淀和停止条件七个要素。",
+      "反馈可分为Hard Gate、Soft Rubric和Observation，避免规则过松或过死。",
+      "复杂任务应让AI每轮输出回合报告，记录新增结果、剔除原因、反馈更新和当前状态。",
+      "KOL筛选、文章写作、短视频生产和周报整理都可以抽象为循环式AI工作流。"
+    ],
+    "oneHighValuePoint": "把AI任务中的“检查标准、纠错反馈、状态记录、停止条件”前置设计，可显著降低人工盯场和反复返工成本。",
+    "oneLineReview": "实操模板有参考价值，但整体偏提示词经验总结，证据和原创深度一般。",
+    "primaryCategory": "AI工作流与提示工程",
+    "rating": "B",
+    "rejectReason": "文章较长且存在一定重复，概念新颖度有限，证据主要来自经验总结和泛化引用，缺少数据或完整实测结果支撑。",
+    "retentionDecision": "短期参考后可选择性归档",
+    "secondaryCategories": [
+      "内容生产",
+      "智能体协作"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍如何用Loop Engineering设计AI任务循环，通过目标、执行、检查、纠错、状态、沉淀和停止条件，减少AI跑偏与返工，并给出KOL筛选、写文章、短视频和周报等场景模板。",
+    "tags": [
+      "Loop Engineering",
+      "AI Agent",
+      "提示词模板",
+      "内容工作流",
+      "自动化检查"
+    ],
+    "title": "Loop Engineering 实操指南：告别 AI 返工",
+    "totalScore": 68.5,
+    "url": "https://x.com/369Serena/status/2071163041597489411"
+  },
+  "payloadHash": "sha256:ca0dd50e51ca77e09faa315a4a889071db2765eb4d8eb9dd165a1b11f5da12a7",
+  "refs": {},
+  "revisionId": "sha256:4c94ae7bd3cc4716993970f28e4cbb98bc55f28b8d4fdc0577578bb03381d4fb",
+  "schemaVersion": 1,
+  "updatedAt": 1789729273275
+}

@@ -1,0 +1,84 @@
+{
+  "createdAt": 1790128815413,
+  "entityType": "session",
+  "id": "1790128815413_6mxae1bw",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "批量部署前，用样本直接接触终端采购决策团队，确认传感器、任务、原始信号、输出格式及持续交付规模要求。",
+      "评估每有效小时数据的经济性时，纳入采集者报酬、硬件物料、损耗更换、海关、组装、质量审核及不合格录制的成本。",
+      "规划从第三方数据采集向硬件、仿真或模型能力延伸的路径，将客户自建采集能力导致的需求下降纳入业务风险评估。"
+    ],
+    "archiveReason": "包含具体采集规模、销售报价、交付障碍和开源资源，可复用于硬件型数据业务的前期评估；行业预测需与个案事实分开保存。",
+    "byline": "Sam Padilla",
+    "classifiedAt": 1790768155048,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 6,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 7,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "机器人数据创业的商业困境与教训",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HS1h-jea8AAQrcG?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HS1h-jea8AAQrcG?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "数据业务的规模要求可能体现为持续交付能力而非库存总量：作者称约五个月采集了三千小时数据，而接触的实验室需求接近每月三千小时，并希望按周交付。",
+      "数据规格差异会放大前期投入风险：传感器、任务和输出格式并不统一；未采集或保留的原始信号，不能靠后处理补回。",
+      "硬件部署存在较高的变更成本，软件创业中先推出简单产品、再快速迭代的策略，不能直接套用到已批量发货的数据采集设备上。"
+    ],
+    "oneHighValuePoint": "技术瓶颈不等于可盈利市场：客户需要持续、符合特定规格的数据管道，而供应商可能必须先承担硬件部署和采集成本，再验证客户是否愿意购买。",
+    "oneLineReview": "这是一份有具体经营细节的创业失败复盘，能帮助识别数据业务的结构性风险，但不足以证明整个行业都是糟糕的生意。",
+    "primaryCategory": "创业与商业模式",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留为机器人数据创业及硬件交付的风险案例，选择性精读商业约束部分",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "具身智能",
+      "数据工程"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "作者复盘机器人数据创业项目关闭的原因，讨论硬件物流、买方渠道、规模门槛、需求差异和单位经济性，并反思软件式快速迭代在硬件部署中的局限，最后提供开源资源及创业建议。",
+    "tags": [
+      "机器人数据采集",
+      "硬件部署",
+      "单位经济模型",
+      "客户需求验证",
+      "创业复盘"
+    ],
+    "title": "机器人数据是一门糟糕的生意",
+    "totalScore": 72,
+    "url": "https://x.com/theSamPadilla/status/2102533979291443495"
+  },
+  "payloadHash": "sha256:bddc7e409acd43884934015c1e197a5dca5eba41e24d5b97103a311ddac172a9",
+  "refs": {},
+  "revisionId": "sha256:cac9ca4bdfc5236317eb71b268e6cb1ee0900069d230190cb7035dfb6dc08a84",
+  "schemaVersion": 1,
+  "updatedAt": 1790768155866
+}

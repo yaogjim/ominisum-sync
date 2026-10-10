@@ -1,0 +1,83 @@
+{
+  "createdAt": 1790129917035,
+  "entityType": "session",
+  "id": "1790129917035_7pr2nwfb",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "比较纯前沿模型与混合路由时，分别记录上下文载入、输出生成、新增读取及回程重处理成本，验证路由是否真正节省费用。",
+      "实现最小上下文块原型，按查询选择隐藏、摘要或完整展示，并与追加式记录及通用压缩比较成本和信息遗漏。",
+      "将工具与项目指令改为条件化加载：先披露简短能力描述，按需加载完整 schema，并在适用条件成立时保留必要规则。"
+    ],
+    "archiveReason": "提供了围绕显式状态组织上下文、工具、路由与后台任务的可复用设计框架，并给出路由成本算式，直接服务于 Agent 开发。",
+    "classifiedAt": 1790762283384,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "面向编程智能体的显式状态架构",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "github.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "图 1：Jev harness",
+        "caption": "",
+        "height": 1325,
+        "id": "img-4",
+        "nearbyText": "Jev 工程学：为 coding agent 而作 2026 年 Jev 工程实践工作笔记 副标题：TypeSafe 创始人的 Jev 构建蓝图 A Synthesis for Study · Based on design notes by Diogo Almeida (TypeSafe) 独立汇编，2026 年 9 月。与 TypeSafe 无隶属关系，亦未获其背书。 本文是 原文 PDF 的完整中文翻译，保留原有结构与全部七张插图。 本仓库现在有两份文档 本页（根目录）...",
+        "resolvedUrl": "https://github.com/yibie/jev-engineering-zh/raw/main/figures/fig1.png",
+        "role": "article",
+        "score": 73,
+        "src": "https://github.com/yibie/jev-engineering-zh/raw/main/figures/fig1.png",
+        "width": 1791
+      }
+    ],
+    "knowledgePoints": [
+      "在文中的简化成本假设下，纯前沿模型成本为 25Y+5Z，混合路由为 3X+20Y+8Z；上下文规模与新增读取量可能抵消便宜模型的价格优势。",
+      "将状态保存为可寻址、带类型的块，再按当前查询选择隐藏、摘要或完整展示，可把长期状态保存与单轮上下文呈现分离。",
+      "显式区分读写操作，为只读后台任务共享检索结果、写任务处理锁与冲突提供架构基础。"
+    ],
+    "oneHighValuePoint": "模型路由应核算子模型载入上下文和返回主模型时的重新处理成本，而不能仅比较模型的单 token 价格。",
+    "oneLineReview": "与 Agent 开发高度相关，架构框架值得精读，但示意性数据和未经验证的因果判断不足以证明其实际收益。",
+    "primaryCategory": "Agent 工程",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "作为 Agent 架构设计参考保留，成本与性能结论需经实验验证",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "上下文工程",
+      "模型路由"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章汇编并翻译了 Jev 编程智能体设计笔记，围绕 KV 缓存对架构的影响，提出显式类型化状态、查询感知上下文、工具分级披露、条件指令、安全路由及共享检索。包含成本演算，但多数收益仍属设计假设。",
+    "tags": [
+      "编程智能体",
+      "显式状态管理",
+      "KV缓存",
+      "查询感知上下文",
+      "模型路由成本"
+    ],
+    "title": "yibie/jev-engineering-zh: 《Jev 工程学：为 coding agent 而作》完整中文翻译 — 保留原结构与 7 张插图",
+    "totalScore": 77,
+    "url": "https://github.com/yibie/jev-engineering-zh"
+  },
+  "payloadHash": "sha256:3ea1a41f250f7aad67fb4078044a14b1cd2c31b052e7093e3d3f8e1b4b039cd2",
+  "refs": {},
+  "revisionId": "sha256:bb06b0bc07bd2e96b60afa3bb7356c6277ba16d1a7ce137a192bbd046b8f87b4",
+  "schemaVersion": 1,
+  "updatedAt": 1790770838452
+}

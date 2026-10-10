@@ -1,0 +1,84 @@
+{
+  "createdAt": 1789700302856,
+  "entityType": "session",
+  "id": "1789700302856_s8nfp3qi",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "收到新功能需求后，先让Agent结合现有代码库输出可行性分析和候选技术方案。",
+      "编码前形成包含需求、架构、界面和实施里程碑的设计文档，并由人工确认方向。",
+      "先迭代高保真原型，再让Agent按里程碑实现，最后由人工执行多轮黑盒测试并反馈修正。"
+    ],
+    "archiveReason": "提供了从需求判断、方案设计、原型验证到实现测试的完整流程，具有较强的复用和实践价值。",
+    "byline": "宝玉",
+    "classifiedAt": 1789702075036,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI辅助功能开发五步流程",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "Image",
+        "caption": "",
+        "height": 480,
+        "id": "img-3",
+        "nearbyText": "",
+        "resolvedUrl": "https://pbs.twimg.com/media/HQhT70VXYAAFD1T?format=jpg&name=medium",
+        "role": "tweet",
+        "score": 80,
+        "src": "https://pbs.twimg.com/media/HQhT70VXYAAFD1T?format=jpg&name=medium",
+        "width": 1200
+      }
+    ],
+    "knowledgePoints": [
+      "功能开发前应分别验证产品价值、产品定位匹配度、技术可行性与成本可控性。",
+      "产品与技术混合设计文档可作为Agent实施上下文、人工方向确认依据及后续维护参考。",
+      "高保真原型能够在编码前低成本明确界面、交互和场景划分，并通过多轮反馈快速收敛。"
+    ],
+    "oneHighValuePoint": "在让Agent编码前，先用可行性分析、设计文档和高保真原型依次消除产品、技术与交互层面的不确定性。",
+    "oneLineReview": "流程完整且可复用，但主要依赖单一个案和个人经验，缺少代码审查、测试指标及更充分的效果证据。",
+    "primaryCategory": "AI辅助软件开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议存档，作为AI辅助功能开发流程的实践模板",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "产品设计",
+      "Agent工作流"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以BaoCut远程转录功能为案例，展示先做产品与技术可行性分析，再编写设计文档、制作高保真原型、交由Agent按里程碑实现，最后通过人工黑盒测试迭代的AI开发流程。",
+    "tags": [
+      "Claude Code",
+      "可行性分析",
+      "设计文档",
+      "原型验证",
+      "黑盒测试"
+    ],
+    "title": "我的 AI 开发流程",
+    "totalScore": 78,
+    "url": "https://x.com/dotey/status/2092014354946257338"
+  },
+  "payloadHash": "sha256:e6a136c5d7356cab0d077f46534d02fce00ba339c2fb57017dbbdf6c5ed06ca5",
+  "refs": {},
+  "revisionId": "sha256:abd5bb127d0b774fbe1bccf67f53a12a9652414a7885865d3060b9d079e4b7df",
+  "schemaVersion": 1,
+  "updatedAt": 1790770247731
+}

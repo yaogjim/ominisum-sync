@@ -1,0 +1,68 @@
+{
+  "createdAt": 1782349534751,
+  "entityType": "session",
+  "id": "1782349534751_ihpor2cu",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选取一个正在研究的主题，按文中4个Prompt完整跑一遍并保存结果",
+      "在使用输出前补充真实资料检索和来源核验，避免AI幻觉",
+      "将多视角、矛盾地图、综合简报、同行评审封装为个人常用研究模板"
+    ],
+    "archiveReason": "包含可直接复用的研究型Prompt工作流，适合用于写作、决策、学习和信息分析场景",
+    "classifiedAt": 1782350594351,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 7,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "STORM多视角研究Prompt工作流",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "STORM强调通过多视角提问和检索综合来构建更完整的主题理解",
+      "单一Prompt容易得到主流共识答案，多角色视角有助于发现盲区和冲突",
+      "矛盾地图可以用于识别不同立场之间的关键分歧和共同事实",
+      "自我同行评审环节可用于检查置信度、偏见、薄弱证据和遗漏视角"
+    ],
+    "oneHighValuePoint": "把研究任务拆成多视角分析、冲突识别、综合输出和自我审查四步，能显著提升AI辅助研究的结构性。",
+    "oneLineReview": "有实用Prompt模板和方法框架，但需要警惕“5分钟顶博士”式夸大宣传。",
+    "primaryCategory": "AI研究方法",
+    "rating": "B",
+    "rejectReason": "标题和正文营销化较重，存在明显夸大表述，证据引用较粗略，对STORM与Claude Prompt链的等价性论证不足",
+    "retentionDecision": "短期参考后可归档，重点保留4个Prompt模板和多视角研究流程",
+    "secondaryCategories": [
+      "Prompt工程",
+      "知识管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍将Stanford STORM研究思路改写为Claude中的4步Prompt流程：多视角扫描、矛盾地图、综合简报和自我同行评审。内容可操作性较强，但宣传口吻夸张，证据支撑有限。",
+    "tags": [
+      "STORM",
+      "Claude",
+      "多视角分析",
+      "研究工作流",
+      "Prompt模板"
+    ],
+    "title": "Stanford 偷偷开源了一套研究方法，4 个 Prompt 让 Claude 顶博士",
+    "totalScore": 68.5,
+    "url": "https://x.com/Stephen4171127/status/2068955415778369751"
+  },
+  "payloadHash": "sha256:c1d8b5c21a03668a93e1ef8aa9729121af16135fd0b7df16f844cb0b7b9f9b68",
+  "refs": {},
+  "revisionId": "sha256:4515d08b48cffb68f79fb79373cedb8ef1c166848cd84ac97533476b178397af",
+  "schemaVersion": 1,
+  "updatedAt": 1782350596424
+}

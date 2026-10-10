@@ -1,0 +1,69 @@
+{
+  "createdAt": 1782360706222,
+  "entityType": "session",
+  "id": "1782360706222_179qvg68",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在设计AI Agent权限系统时，将资源URL或对象引用作为能力授予入口。",
+      "避免让智能体默认访问用户的全部文档、数据库或工具。",
+      "为每次代理操作记录“代表谁执行”，而不仅记录代理名称。",
+      "评估现有Agent产品是否支持最小权限、能力继承和凭证隔离。"
+    ],
+    "archiveReason": "提出了面向AI智能体权限设计的关键原则，尤其是基于能力的安全、最小权限和人类身份问责，对智能体产品和系统架构有长期参考价值。",
+    "classifiedAt": 1782361414715,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 4,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 8,
+      "relevance": 8,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI智能体的能力授权模型",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "基于能力的安全可以降低细粒度智能体权限管理的配置负担。",
+      "AI代理的操作需要绑定到具体人类身份，以便实现责任归属。",
+      "团队级代理不应共享他人凭证，而应自动用使用者自身凭证重建等价能力集。",
+      "默认全权限的智能体模式会放大安全风险，不利于AI安全。"
+    ],
+    "oneHighValuePoint": "智能体不应默认拥有广泛权限，而应通过任务上下文中的具体资源引用获得最小必要能力。",
+    "oneLineReview": "一篇短但有启发的AI智能体权限架构观点文，方法论价值高但案例和证据支撑有限。",
+    "primaryCategory": "AI安全与权限架构",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留",
+    "secondaryCategories": [
+      "智能体系统设计",
+      "身份与访问管理"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章反对为每个AI代理手动配置权限，主张采用基于能力的安全模型：任务创建时自然授予所需资源权限，且所有权限应源自具体人类身份，以实现最小权限和可追责。",
+    "tags": [
+      "AI Agent",
+      "能力安全",
+      "权限最小化",
+      "访问控制",
+      "问责机制"
+    ],
+    "title": "x.com/KentonVarda/status/2069765917018382568",
+    "totalScore": 72,
+    "url": "https://x.com/KentonVarda/status/2069765917018382568"
+  },
+  "payloadHash": "sha256:8f0841ffaf7b65f65a1ac8f2f7767af9263e06563f29fa6cd349545bd4cf514c",
+  "refs": {},
+  "revisionId": "sha256:63939f062e786f39cef4e52f909221c1b0ab7df173330819d1c53a1e3b974de6",
+  "schemaVersion": 1,
+  "updatedAt": 1789692251073
+}

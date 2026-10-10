@@ -1,0 +1,20 @@
+{
+  "createdAt": 1782990971330,
+  "entityType": "message",
+  "id": "1782991665293_k8iz6qmb",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# 深度总结\n\n作者原先认为：**在 Agent 中，CLI 可能会替代 MCP**。  \n但实践后观点变得更谨慎：\n\n- **标准化、成熟的 CLI**，如 `git`，对 Agent 很友好，效果稳定。\n- **自定义封装的 CLI**，稳定性往往不如 MCP / 结构化工具。\n- 核心原因：  \n  **MCP 和结构化工具有更强的结构约束**，参数、返回值、权限边界更清晰，模型更不容易误用。\n- 另外，MCP 在企业场景中有更标准的**鉴权、安全、权限管理方案**。\n- 因此未来更可能是：  \n  **CLI 与 MCP 并行，而不是谁完全取代谁。**\n\n热门回复里也补充了几点：\n\n- 有人认为：`tool > CLI ≈ MCP > skill`\n- 有人强调：**skill + CLI 的 token 管理容易脏乱差**，安全隐患更大。\n- 也有人指出：MCP 缺少类似 skill 的“渐进式披露”机制，即模型不应一次性看到所有工具细节，而应按需发现工具。\n\n---\n\n# 深入浅出解读\n\n可以把 Agent 调工具理解成“让 AI 操作外部世界”。\n\n## CLI 像命令行遥控器\n\n例如：\n\n```bash\ngit commit -m \"fix bug\"\n```\n\n优点是：\n\n- 简单直接\n- 生态成熟\n- 人类开发者已经很熟悉\n- 对 `git`、`docker`、`kubectl` 这类成熟工具尤其好用\n\n但问题是：\n\n- 参数格式可能复杂\n- 输出不稳定，常是自然语言或文本\n- 自定义 CLI 质量参差不齐\n- 出错后 Agent 不一定知道怎么修正\n\n所以，**成熟 CLI 很强，自制 CLI 容易翻车**。\n\n---\n\n## MCP 像标准化接口\n\nMCP 更像给 Agent 提供一套清晰的工具说明：\n\n```json\n{\n  \"tool\": \"create_issue\",\n  \"params\": {\n    \"title\": \"Bug report\",\n    \"priority\": \"high\"\n  }\n}\n```\n\n优点是：\n\n- 参数结构清楚\n- 返回结果可解析\n- 权限和鉴权更规范\n- 适合企业内部系统接入\n- 更容易做审计、限权、治理\n\n缺点是：\n\n- 接入成本更高\n- 不如 CLI 灵活\n- 工具太多时，模型可能不知道该用哪个\n- 需要设计工具发现和调用策略\n\n所以，**MCP 更适合严肃、稳定、企业级场景**。\n\n---\n\n# 核心判断\n\n一句话概括：\n\n> **CLI 适合成熟通用工具，MCP 适合结构化、可治理、企业级工具。**\n\n更具体地说：\n\n| 场景 | 更适合 |\n|---|---|\n| Git、Docker、Linux 命令 | CLI |\n| 企业系统、数据库、权限敏感操作 | MCP |\n| 快速原型、个人脚本 | CLI |\n| 多人协作、审计、安全合规 | MCP |\n| 高确定性工具调用 | MCP / 结构化 Tool |\n| 灵活探索式任务 | CLI |\n\n---\n\n# 辩证思考\n\n## 1. CLI 不会消失\n\nCLI 是软件世界最基础、最普遍的接口之一。  \n大量成熟工具天然就是 CLI-first。\n\n让 Agent 学会用 CLI，本质上是让 AI 继承人类程序员已有的工具链。\n\n所以说 **CLI 会被 MCP 完全替代**，不现实。\n\n---\n\n## 2. MCP 也不是银弹\n\nMCP 的优势是“规范”，但规范也带来成本。\n\n如果只是一个简单脚本，硬封成 MCP，可能反而复杂化。  \n而且 MCP 工具过多时，也会出现：\n\n- 工具选择困难\n- schema 暴露过多\n- 调用成本上升\n- prompt 设计复杂\n\n所以 MCP 不是越多越好，而是要做**工具治理**。\n\n---\n\n## 3. 真正关键不是 CLI vs MCP，而是“可控性”\n\nAgent 调工具最怕三件事：\n\n1. 调错工具  \n2. 传错参数  \n3. 权限失控  \n\nCLI、MCP、tool、skill 都只是形式。  \n最终比拼的是：\n\n- 是否结构清晰\n- 是否安全可控\n- 是否便于审计\n- 是否易于维护\n- 是否能让模型稳定使用\n\n---\n\n# 最精炼结论\n\n> **成熟 CLI 仍然很强，自定义 CLI 容易不稳；MCP 胜在结构化、安全和企业治理。未来不是替代关系，而是分工并存。**\n\n更准确地说：\n\n> **个人和通用工具偏 CLI，企业和关键系统偏 MCP；Agent 工具生态的核心不是形式之争，而是稳定性、安全性和可治理性。**",
+    "prompt_id": "template_1772076842437",
+    "role": "assistant",
+    "timestamp": 1782990971330,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:f4275cbfef5abd257650d11fa6791e1da96330ea90d084333f89ee68ce428dc7",
+  "refs": {
+    "sessionId": "1782991665007_xqbjyrah"
+  },
+  "revisionId": "sha256:0ee25a399e8e478a84d7d3961d750ac3942173d5309df4b1169c4f0e55143e72",
+  "schemaVersion": 1,
+  "updatedAt": 1782990971330
+}

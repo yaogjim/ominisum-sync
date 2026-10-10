@@ -1,0 +1,19 @@
+{
+  "createdAt": 1783556147783,
+  "entityType": "message",
+  "id": "1783556147782_ozlltnmu",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "## 自动分类评分结果\n\n**标题**: pi复刻Claude子代理插件\n\n**评级**: C (41分)  |  **深度阅读**: 否  |  **建议操作**: 速览\n\n**主类别**: AI开发工具\n**次类别**: 编程工具, Agent工程\n**标签**: #pi #Claude Code #subagent #worktree #插件\n\n### 评分明细\n| 维度 | 分数 | 权重 |\n|------|------|------|\n| 信息密度 | 5 | 10% |\n| 新颖性 | 5 | 10% |\n| 相关性 | 5 | 20% |\n| 可操作性 | 6 | 15% |\n| 方法论价值 | 2 | 15% |\n| 可迁移性 | 3 | 10% |\n| 证据质量 | 2 | 10% |\n| 长期杠杆 | 4 | 10% |\n\n**一句话点评**: 适合使用 pi 或关注 Claude Code 子代理机制的人快速了解，但不值得深读。\n**核心高价值点**: 插件支持通过 worktree 为每个 subagent 提供独立工作环境，减少相互干扰。\n\n### 摘要\n该推文介绍 pi-cc-subagent 插件，目标是在 pi 中复刻 Claude Code 的 subagent 机制，支持内置代理、Markdown 自定义代理和 worktree 隔离，并提供安装与卸载链接。\n\n### 知识要点\n- pi-cc-subagent 试图在 pi 中复刻 Claude Code 的 subagent 机制\n- 支持 explorer、plan、general-purpose 等内置 subagent\n- 可通过 Markdown 文件自定义 subagent\n- 支持 worktree 隔离不同 subagent 的工作环境\n\n### 行动项\n- 如正在使用 pi，可打开 GitHub 仓库查看 README 和实际可用性\n- 测试安装 pi-cc-subagent，验证 subagent 与 worktree 隔离是否符合自己的开发流程\n\n### 存档判定\n归档: 否\n不推荐: 内容只是插件发布通知，信息量有限，缺少实现原理、使用案例、效果评测和方法论沉淀。\n删除: 否\n留存决策: 短期参考后可删除",
+    "role": "assistant",
+    "timestamp": 1783556147783,
+    "type": "classification"
+  },
+  "payloadHash": "sha256:661ccfe8e14627108c920f36685df6febfd0762d6bf8b63142a467bc37dc58ba",
+  "refs": {
+    "sessionId": "1783556119006_cahmp0ll"
+  },
+  "revisionId": "sha256:aa3f4af84116e383aa19575ba8d72b8fec7e6751da76571d56273d5f3a875438",
+  "schemaVersion": 1,
+  "updatedAt": 1783556147783
+}

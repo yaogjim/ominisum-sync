@@ -1,0 +1,108 @@
+{
+  "createdAt": 1789959378436,
+  "entityType": "session",
+  "id": "1789959378436_dwgsmqhh",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "审视当前AI产品究竟定位为有人监督的辅助工具，还是无人持续介入的自动化系统，明确预期的人类参与方式。",
+      "分别评估用户偏好与实际任务结果，检查是否存在回答令人满意但任务未正确完成的情况。"
+    ],
+    "archiveReason": "以优化目标区分辅助型产品与自主自动化，对Agent定位和验收标准设计具有可复用的参考价值。",
+    "classifiedAt": 1790762326087,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "从人类偏好优化到自主自动化",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://i.ytimg.com/vi/cJ0EOzey--o/maxresdefault.jpg",
+        "role": "hero",
+        "score": 70,
+        "src": "https://i.ytimg.com/vi/cJ0EOzey--o/maxresdefault.jpg",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "有人参与纠错的辅助场景，与期望无人持续介入的自动化场景，对系统可靠性和结果验证的要求不同。",
+      "优化人类偏好并不等同于优化客观任务结果；文章据此提出偏好与结果可能发生偏离，但未充分证明其普遍性。",
+      "生成软件的效率提升与软件自身自动完成业务任务的能力提升，是两个不同层面的价值。"
+    ],
+    "oneHighValuePoint": "辅助型AI的用户满意度与自主系统的任务成功率不是同一目标，产品定位和评估标准应明确区分二者。",
+    "oneLineReview": "区分用户满意与任务成功的视角值得保留，但将自动化瓶颈主要归因于RLHF的论证不足，不能直接作为技术选型依据。",
+    "primaryCategory": "AI技术与Agent开发",
+    "published": "2026-07-31T16:30:06-07:00",
+    "rating": "B",
+    "rejectReason": "论证重复较多，关键结论依赖演讲者判断和单一个案；所给转录截断，缺少RLVR方案、实验结果及实现细节。",
+    "retentionDecision": "选择性保留辅助与自动化的区分框架，技术因果结论需进一步核验",
+    "schema": [
+      {
+        "@context": "https://schema.org",
+        "@id": "https://www.youtube.com/watch?v=cJ0EOzey--o",
+        "@type": "VideoObject",
+        "comment": [
+          {
+            "@type": "https://schema.org/Comment",
+            "author": {
+              "@type": "https://schema.org/Person",
+              "alternateName": "Ravi Annaswamy",
+              "name": "@RaviAnnaswamy",
+              "url": "https://www.youtube.com/@RaviAnnaswamy"
+            },
+            "dateCreated": "2026-09-17T10:02:05-07:00",
+            "text": "Here before it goes viral! \nIlya cut original transformer architecture into half and kept the decoder and built a chatbot.\nDiogo cuts the decoding, so we get a primitive discrimnator - like boosting stump, which we can wire into workflows\n\nInteresting that breakthroughs have to come from pioneers who were present at the fork when chatbot fork was taken.",
+            "upvoteCount": 74
+          }
+        ],
+        "name": "Jev CEO: I made ChatGPT, now I'm building What's Next",
+        "thumbnailUrl": "https://i.ytimg.com/vi/cJ0EOzey--o/maxresdefault.jpg",
+        "uploadDate": "2026-07-31T16:30:06-07:00"
+      }
+    ],
+    "schemaTypes": [
+      "VideoObject"
+    ],
+    "secondaryCategories": [
+      "产品设计与技术实现",
+      "商业系统构建"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "演讲以辅助与自主自动化的区别解释AI能力与实际部署之间的落差，认为人类偏好优化可能偏离真实任务成功，并提出可验证奖励的方向。所给正文主要展开问题诊断，缺少后续方案细节与充分证据。",
+    "tags": [
+      "RLHF",
+      "RLVR",
+      "自主Agent",
+      "优化目标",
+      "任务验证"
+    ],
+    "title": "Jev CEO: I made ChatGPT, now I'm building What's Next - YouTube",
+    "totalScore": 61,
+    "url": "https://www.youtube.com/watch?v=cJ0EOzey--o"
+  },
+  "payloadHash": "sha256:94fc07c509401691c46ee18e6810ca9094ffac9ccd8684399d21b48f564d8393",
+  "refs": {},
+  "revisionId": "sha256:dd8136d6b7daed144f7308b1e11d0b08f353e2a462b68c156a70cf4d9e46e086",
+  "schemaVersion": 1,
+  "updatedAt": 1790762326908
+}

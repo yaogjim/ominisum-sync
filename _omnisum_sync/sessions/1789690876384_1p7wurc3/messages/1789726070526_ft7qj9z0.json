@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789726070525,
+  "entityType": "message",
+  "id": "1789726070526_ft7qj9z0",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一个研究型部署仓库，说明如何用 **32GB RTX 5090 充当协调器、4 台 DGX Spark 运行专家节点**来部署 DS41RT，并提供构建、检查、启动脚本及实测参数。\n\n## 关键内容\n\n- 官方协调器镜像不能直接用于 RTX 5090：其 AOT 编译结果绑定了 RTX PRO 6000 的 **188 个 SM**，而 5090 只有 170 个；仓库选择在 5090 上重新构建，而非简单绕过检查。\n- 硬件门槛很高：协调器还需至少 128GB 内存、约 510GB 完整模型和 RDMA 网络；4 台 Spark 各需约 100GiB 可用统一内存，并都能读取完整检查点。\n- 提供预检、显存规划、专家节点与整套集群启动脚本，但默认只打印命令，需显式加 `--apply` 才执行；它不是现成镜像或一键安装器。\n- 作者报告两种配置：容量 1024 时预填充约 **5377 token/s**；容量 256 时约 **2000 token/s**，但 KV 池更大。解码均约 74 token/s。数据为单次测试，且尚未完成同硬件 vLLM 对照。\n\n## 通俗解读\n\n关键不是“5090 显存够不够”，而是程序编译时写死了 GPU 规模，必须针对 5090 重编译。若你确有这套硬件并准备复现实验，文档和脚本值得细读；普通用户或只关心性能结论者，看公开测试报告即可。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789726070525,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9d078b161b33e41b2af2953092a2e902a159fc96c5f83a88175601ab969dacdd",
+  "refs": {
+    "sessionId": "1789690876384_1p7wurc3"
+  },
+  "revisionId": "sha256:af57e0d6741fcb1f219b03ddfdecd63cc889dd95b2b7f67441036f742ef89c40",
+  "schemaVersion": 1,
+  "updatedAt": 1789726070525
+}

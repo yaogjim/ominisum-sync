@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694388975,
+  "entityType": "message",
+  "id": "1789694388977_mrfx6kgj",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者用不到 15 美元的 ESP32、步进电机和简陋支架，机械转动老式空调旋钮，在不改线路、不破坏租房设备的前提下接入智能家居。\n\n## 关键内容\n\n- 空调没有遥控器，内部又涉及市电；智能继电器需要拆机接线，智能插座也不适配，因此作者改为让电机直接“拧旋钮”。\n- 他将空调固定在低速制冷模式，用步进电机把温度旋钮推到最冷或最热，间接实现开关控制。ESP32 通过 MQTT 接入 Home Assistant，再结合房间温度传感器自动启停。\n- 两版装置成本约 14—16 美元，且无需打孔：支架、文件夹夹子和纸板负责固定，固件则主要借助 Claude、Gemini 生成。\n- 实测约“80%可用”：长期使用后电机会下垂、摩擦并卡住，需要手动复位。作者仍认为它比频繁手调方便，并称节省了电费，但未提供具体数据。\n\n## 通俗解读\n\n这不是把空调真正改造成智能设备，而是给旋钮装了一只联网的“机械手”。方案便宜、可拆卸，但可靠性一般。若你想看租房友好的 DIY 思路、Home Assistant/MQTT 接入细节，值得细读；若想找成熟、安全且免维护的成品方案，参考价值有限。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694388975,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:18627e132819e1fa79b52763752ebb839d9ba8911a2395ef36b095a89a519a39",
+  "refs": {
+    "sessionId": "1785377069663_l666dfvd"
+  },
+  "revisionId": "sha256:15d837b71798928c6d97b9957c85bc8f212b32652f9835a752f6ab308b7a1d7d",
+  "schemaVersion": 1,
+  "updatedAt": 1789694388975
+}

@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728064092,
+  "entityType": "message",
+  "id": "1789728064092_xc9g4brl",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Cerebras 与 OpenAI 推出 GPT‑5.6 Sol 超高速推理模式\n\nCerebras 宣布为 OpenAI API 提供 **Ultrafast Mode**，通过专用芯片加速 GPT‑5.6 Sol，最高输出速度达每秒 750 个 token。其核心价值是让高能力模型进入故障处理、网络安全和实时智能体等对延迟高度敏感的任务。目前服务仅向少量客户预览，后续将随算力扩充开放。\n\n## 在保持模型能力的同时大幅缩短等待\n\n据 Cerebras 自测，Ultrafast 的输出速度是 Fable 5 的 11 倍、Opus 4.8 Fast 模式的 5 倍。在包含 2,500 道高难度问题的 Humanity’s Last Exam 中，它用 11 小时 11 分钟完成全部任务；Claude Fable 5 耗时 78 小时 27 分钟，前者在准确率相近的情况下快近 7 倍。\n\n在衡量高经济价值知识工作的 GDP‑Val 基准中，Ultrafast 获得 5.6 倍端到端提速，Cerebras 称未出现质量下降。上述结果均来自厂商测试，具体表现仍取决于推理配置和实际工作负载。\n\n## 速度让智能体进入关键业务链路\n\n更低延迟意味着 AI 不再只是后台并行工具，而可直接参与生产事故定位、攻击检测与响应、法律文书、财务模型及工程报告等关键流程。任务若能在用户切换注意力前完成，也可能改变多智能体协作方式，减少等待和上下文切换。\n\n## 晶圆级芯片减少模型权重搬运\n\n传统 GPU 推理常受内存带宽限制，需要反复在片内存储与外部内存之间搬运模型权重。Cerebras 的晶圆级引擎在单颗芯片上集成 44GB SRAM，使权重尽量驻留片上，并让 token 流经跨晶圆流水线，以降低数据移动开销；公司认为该架构可随模型规模扩展，延续其推理速度优势。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728064092,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:a70820e733a8f01ae9fcede53a6fc417032d9c50b46a51c18e130b991d09d20a",
+  "refs": {
+    "sessionId": "1786943160317_9uwmhcw6"
+  },
+  "revisionId": "sha256:14660498e6571d86c8ed3ab842817776e6ac645721ae6e571cc2ea52d1c23e20",
+  "schemaVersion": 1,
+  "updatedAt": 1789728064092
+}

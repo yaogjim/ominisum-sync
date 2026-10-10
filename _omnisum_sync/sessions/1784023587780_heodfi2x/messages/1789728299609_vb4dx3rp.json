@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789728299609,
+  "entityType": "message",
+  "id": "1789728299609_vb4dx3rp",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "# Herdr：面向 AI 编程代理的终端多路复用器\n\nHerdr 试图填补 tmux/Zellij 与桌面代理管理器之间的空白：它在原生终端中提供持久会话、分屏和远程连接，同时识别并管理多个 AI 编程代理的状态。核心价值是让代理在代码所在的机器上持续运行，用户可从电脑甚至手机随时接管。\n\n## 代理留在工作环境，终端断开也不中止\n\nHerdr 可运行在本机、服务器、Mac Mini 或沙箱虚拟机中。关闭终端后，进程和 PTY（伪终端）会继续存活，之后可重新连接。远程使用有两种方式：\n\n- 像 tmux 一样 SSH 到服务器后运行 Herdr；\n- 通过 `herdr --remote` 从本地直接连接远端会话，并保留本地快捷键、剪贴板及图片粘贴能力。\n\n它也针对手机窄屏提供切换界面，适合在移动端查看进度或批准操作。\n\n## 比 tmux 更懂代理，但不重建聊天界面\n\nHerdr 不是终端模拟器、网页控制台或托管服务，也不要求账号。它直接管理真实终端进程，并在分屏、标签页和工作区之外，展示代理的工作中、阻塞、完成和空闲状态。\n\n任何终端型代理原则上都能运行，包括 Claude Code、Codex、Cursor 等；专门集成则可提供更准确的状态识别和会话恢复。\n\n## CLI、API和插件让代理也能编排工作流\n\nHerdr 提供 CLI 与 JSON Socket API，可创建工作区、拆分面板、执行命令、读取输出，并等待代理达到特定状态。这意味着代理不仅被人管理，也能自行组织面板、测试和后续任务。\n\n官网称社区已有 391 个自动从 GitHub 发现的插件，覆盖文件与差异查看、代码审查、Vim 导航、YAML 布局和手机通知。其意义在于把多代理协作从单机 GUI 应用转为可远程、可脚本化、可扩展的终端基础设施；但具体体验与成熟度仍需结合第三方实测判断。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "prompt_template_name": "通俗精炼",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789728299609,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:9c8289ad2310f69c4092ca1f59a026a5f7a27716751addc22ff2da3a47cfc5f6",
+  "refs": {
+    "sessionId": "1784023587780_heodfi2x"
+  },
+  "revisionId": "sha256:ca9d0144aafb50d40529a4557d055a16da55613f5d903e05f94b40f95d98c588",
+  "schemaVersion": 1,
+  "updatedAt": 1789728299609
+}

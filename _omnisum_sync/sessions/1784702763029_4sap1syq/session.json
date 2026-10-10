@@ -1,0 +1,74 @@
+{
+  "createdAt": 1784702763029,
+  "entityType": "session",
+  "id": "1784702763029_4sap1syq",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "自动化脚本中始终从创建命令的JSON响应提取Pane ID，移动Pane后改用返回的新ID，避免预测或复用失效标识。",
+      "普通命令、测试和服务使用pane命令，编码Agent交互使用agent命令，并为所有等待操作设置超时和明确的until状态。",
+      "先用单个工作区验证启动、提示、阻塞检测和结果读取流程，再扩展为多个Agent并行执行与集中审阅。"
+    ],
+    "archiveReason": "包含清晰的控制原语、命令示例、状态语义、异常处理和远程工作流程，可直接用于搭建编码Agent自动化。",
+    "classifiedAt": 1784707991821,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 9,
+      "evidence_quality": 8,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Herdr多智能体终端自动化指南",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "Herdr将自动化拆分为布局、Pane和Agent三层：布局负责终端拓扑，Pane负责原始进程与输入输出，Agent负责可识别编码Agent的身份和生命周期。",
+      "Agent的idle、working、blocked、done和unknown具有不同语义；自动化等待应指定精确状态，不能把unknown或屏幕文本匹配视为任务成功。",
+      "全屏Agent可能使用终端备用屏幕，导致历史输出无法从宿主回滚区读取；可改读visible视图，必要时再让Agent将完整结果写入文件。"
+    ],
+    "oneHighValuePoint": "最有价值的是明确区分Pane原始终端控制与Agent生命周期控制，并给出按任务选择控制原语、状态和等待条件的规则。",
+    "oneLineReview": "这是一份信息密集且可直接执行的官方操作文档，但部分机制高度依赖Herdr，跨工具迁移价值有限。",
+    "primaryCategory": "AI Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "建议精读并存档，作为Herdr多智能体编排、状态检测和终端自动化的操作参考",
+    "secondaryCategories": [
+      "AI编程工具",
+      "开发者工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://herdr.dev/docs/agent-automation/",
+      "https://herdr.dev/docs/agents/",
+      "https://herdr.dev/docs/how-to-work/"
+    ],
+    "summaryBrief": "文章汇总Herdr的多智能体终端管理与自动化机制，区分布局、Pane和Agent三类控制原语，并说明Agent启动、状态检测、等待交互、输出读取、远程连接及异常处理方法。",
+    "tags": [
+      "Herdr",
+      "多智能体编排",
+      "终端自动化",
+      "Agent生命周期",
+      "远程开发"
+    ],
+    "title": "Herdr多智能体终端与自动化全解",
+    "totalScore": 80,
+    "url": "omnisun://digest/1784702763029"
+  },
+  "payloadHash": "sha256:e0d619e48e1fbe5ba67bdb3de7f5b430edb9e67bcf657b6494a509ee31eb23ee",
+  "refs": {},
+  "revisionId": "sha256:19a98ddc62846b4a5c4786e50175cd597ec257a8a2c8af94b72c9c03b6b162ab",
+  "schemaVersion": 1,
+  "updatedAt": 1789864012947
+}

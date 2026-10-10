@@ -1,0 +1,67 @@
+{
+  "createdAt": 1781783055344,
+  "entityType": "session",
+  "id": "1781783055344_jpv6g7lf",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如正在使用 Hermes 或类似代理工具，可观看原视频重点查看 01:30、08:40、13:51、17:20 等章节。",
+      "尝试将一个高频任务拆成触发条件、子任务、执行循环和结果看板四个部分。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781783199293,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 6,
+      "transferability": 6
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "Hermes代理工作流避坑",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "不要把 AI 代理当作更智能的搜索框，应设计可重复执行的工作流。",
+      "复杂任务应拆分为不同工作区或子代理，避免所有内容堆在一个杂乱聊天中。",
+      "Cron、Webhooks 和任务控制仪表盘可以提升代理自动化程度。"
+    ],
+    "oneHighValuePoint": "将提示转化为可重复工作流，并通过 Cron、Webhooks、子代理和任务仪表盘来管理代理系统，而不是停留在聊天式使用。",
+    "oneLineReview": "适合作为判断是否观看原视频的目录索引，但不适合作为独立知识资料长期保留。",
+    "primaryCategory": "AI代理与自动化",
+    "rating": "C",
+    "rejectReason": "当前内容主要是视频时间轴摘要，缺少具体操作细节、案例证据和完整方法展开，单独保存价值有限。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "工作流管理",
+      "生产力工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "内容是一个关于使用 Hermes 代理 100 天经验的视频目录，涵盖常见错误、工作区划分、子代理、Cron、Webhooks、任务仪表盘及从零搭建顺序等主题，但正文仅提供提纲，缺少详细论证。",
+    "tags": [
+      "Hermes",
+      "AI代理",
+      "工作流",
+      "自动化",
+      "Cron",
+      "Webhooks"
+    ],
+    "title": "x.com/sharbel/status/2067257256215789785",
+    "totalScore": 48,
+    "url": "https://x.com/sharbel/status/2067257256215789785"
+  },
+  "payloadHash": "sha256:c5e9c56bd36d8a47af730cc1c8b3e026a7016c1f86e466690d4990b5483be95e",
+  "refs": {},
+  "revisionId": "sha256:bd36a67008ecb080bffeef1ac9ddb39aab6cbc5c75a415cf381dc23d01b6d6da",
+  "schemaVersion": 1,
+  "updatedAt": 1781783199653
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1790672263253,
+  "entityType": "session",
+  "id": "1790672263253_bp21bu69",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "分析目标业务的收入中，用户停留与底层服务交付分别贡献多少。",
+      "针对代理入口开展小范围A/B实验，同时观察用户体验、交易量与收入变化。",
+      "设计高权限智能体时，明确数据授权和撤销机制，并对输入与执行动作分别设置安全检查。"
+    ],
+    "archiveReason": "包含评估代理入口对现有业务影响的判断角度，以及渐进实验和独立安全监控等可复用思路。",
+    "classifiedAt": 1790672283288,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 3,
+      "information_density": 5,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "个人智能体的产品设计与商业路径",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/385d253e/img/favicon.ico",
+    "knowledgePoints": [
+      "个人智能体的产品体验不仅取决于能力，还取决于用户能否理解并预期其行为。",
+      "具有账户和支付权限的智能体，可将输入内容拦截、行动前监控与用户授权控制设计为相互独立的防线。",
+      "主动式智能体包含大量后台任务，不同任务的时延要求会影响推理部署方式与成本。"
+    ],
+    "oneHighValuePoint": "评估企业受智能体入口影响的风险时，可区分收入依赖用户停留与依赖底层服务交付的程度，再用小规模实验检验实际变化。",
+    "oneLineReview": "提供了有参考价值的个人智能体产品思路，但篇幅冗长，关键业绩与安全效果缺少独立证据。",
+    "primaryCategory": "AI Agent产品",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览，保留产品设计与商业风险分析框架",
+    "secondaryCategories": [
+      "产品设计",
+      "商业模式"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "访谈围绕个人智能体Instinct的使用场景、交互设计、信任与隐私、交易抽成模式，以及主动服务带来的算力需求展开。创始人还讨论了传统业务如何通过小规模实验适应代理入口；增长和交易数据主要来自其本人陈述。",
+    "tags": [
+      "个人智能体",
+      "代理式交互",
+      "用户信任",
+      "商业模式",
+      "推理成本"
+    ],
+    "title": "Inside the Personal AI Assistant Growing 10% a Day | Instinct Founder - YouTube",
+    "totalScore": 64,
+    "url": "https://www.youtube.com/watch?v=Am7IWP8IpEc"
+  },
+  "payloadHash": "sha256:5272ac5af4d3e9fa93f48b51a2eff8ee9935b24407bf2360f3b55d713a9471a9",
+  "refs": {},
+  "revisionId": "sha256:2b2294bba218715fe82a77f5af71e80c02e5c715043a05dafdc84743ba276497",
+  "schemaVersion": 1,
+  "updatedAt": 1790672292013
+}

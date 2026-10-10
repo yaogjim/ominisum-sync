@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789695941462,
+  "entityType": "message",
+  "id": "1789695941461_psm887mv",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n这是一个开源视频动效模板系统：用户可在本地修改文案、数据和颜色生成视频，也能让 AI Agent 按统一规范持续添加新模板。\n\n## 关键内容\n\n- **两种安装方式**：可让 Agent 自动克隆 GitHub 项目、安装依赖并启动服务，也可手动运行 `git clone`、`npm install` 和 `npm run dev`。\n- **本地预览与渲染**：启动后可调整参数、查看效果并输出视频；渲染依赖本机的 Chrome、FFmpeg，因此计算资源由用户电脑承担。\n- **模板可持续扩展**：Agent 阅读 `README.md` 和 `SYSTEM.md` 后，可参照现有目录创建模板，并通过 `data-composition-variables` 暴露可编辑的文字、数字和颜色。\n- **有明确开发约束**：新增模板需更新 `catalog.json`、运行检查，最好生成预览，同时不能破坏已有模板和预设。\n\n## 通俗解读\n\n它不是一个直接在线套用的剪辑网站，而更像一套“可编程的视频动效积木”：先下载安装到电脑，再修改模板或让 Agent 帮你开发。若你只想快速做普通视频，细读价值有限；若你会基础命令行、希望批量生成统一风格动效，或想用 AI 扩建自己的模板库，值得进一步阅读项目文档。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789695941462,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:8a267758a4871a2598bd4d3e4636bfc769ec03f4f5807d331ee3e3f193dcc6bf",
+  "refs": {
+    "sessionId": "1783922812719_nth0zsjc"
+  },
+  "revisionId": "sha256:f353b72e5eddeef5cfe6ea66ed75edfdf0e92d84661a6346545bfa3da27ce80e",
+  "schemaVersion": 1,
+  "updatedAt": 1789695941462
+}

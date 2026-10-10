@@ -1,0 +1,82 @@
+{
+  "createdAt": 1789873412925,
+  "entityType": "session",
+  "id": "1789873412925_wrddsw46",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在适合结构化决策的自动化环节，明确输出类型及其对应的业务动作。",
+      "为带置信度的决策设计自动执行与人工复核分支，暂不采用页面未验证的性能和可靠性承诺。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1790762424122,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 4,
+      "long_term_leverage": 5,
+      "methodology_value": 4,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "其他",
+    "classifyTitle": "Jev类型化决策模型与自动化定位",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "typesafe.ai",
+    "favicon": "",
+    "images": [
+      {
+        "alt": "",
+        "caption": "",
+        "height": 0,
+        "id": "img-1",
+        "nearbyText": "",
+        "resolvedUrl": "https://framerusercontent.com/images/RtIGTDwO43jR4ZDilesXiR5znc.jpg",
+        "role": "hero",
+        "score": 70,
+        "src": "https://framerusercontent.com/images/RtIGTDwO43jR4ZDilesXiR5znc.jpg",
+        "width": 0
+      }
+    ],
+    "knowledgePoints": [
+      "文章提出以类型化决策而非自由文本作为模型输出，让软件直接组合这些决策构建工作流。",
+      "文章提出根据决策置信度设置自动执行和人工复核阈值，但没有展示置信度校准效果。",
+      "提供置信度不等于消除错误；页面的“零幻觉”主张不能由置信度输出本身推出。"
+    ],
+    "oneHighValuePoint": "将类型化决策与置信度一起交给软件，由业务阈值决定自动执行还是人工复核，是比单纯获取聊天文本更贴近自动化需求的接口思路。",
+    "oneLineReview": "面向自动化的决策接口思路有参考价值，但性能与可靠性主张缺少可核查依据，适合了解定位而非据此选型。",
+    "primaryCategory": "AI产品介绍",
+    "rating": "C",
+    "rejectReason": "主要是产品宣传，缺少训练细节、校准评估、完整基准测试和接入说明，暂不值得精读或长期存档。",
+    "retentionDecision": "速览产品定位，暂不作为技术依据或长期资料保留",
+    "schema": [],
+    "schemaTypes": [],
+    "secondaryCategories": [
+      "自动化系统设计",
+      "AI模型训练"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "TypeSafe介绍面向软件自动化的Jev与System One模型，主张通过RLCD输出带概率和置信度的类型化决策，并以阈值控制自主执行与人工复核。页面宣传速度、成本及可靠性优势，但未提供充分技术细节或评测依据。",
+    "tags": [
+      "Jev",
+      "类型化决策",
+      "置信度校准",
+      "RLCD",
+      "人机协同"
+    ],
+    "title": "Home - TypeSafe AI",
+    "totalScore": 52,
+    "url": "https://typesafe.ai/"
+  },
+  "payloadHash": "sha256:d828e409cff5b3a109793be763a645df707f2124dc22b9e3df51b548d72dca45",
+  "refs": {},
+  "revisionId": "sha256:51163d15c441c6758aa44148915a4437ed7c5bc557e70063f1c44e52b66187dd",
+  "schemaVersion": 1,
+  "updatedAt": 1790762424951
+}

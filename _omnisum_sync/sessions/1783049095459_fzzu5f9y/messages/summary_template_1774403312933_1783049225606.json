@@ -1,0 +1,23 @@
+{
+  "createdAt": 1783049225606,
+  "entityType": "message",
+  "id": "summary_template_1774403312933_1783049225606",
+  "parentRevisionIds": [],
+  "payload": {
+    "content": "# OpenWiki：面向 Coding Agent 的开源代码库文档代理\n\n## 一句话总结\n\nLangChain 推出**OpenWiki**：一个开源 CLI/Agent，可自动为代码库生成、维护文档，并让 Coding Agent 自动读取这些文档，从而在改代码时获得更完整的上下文。\n\n## 核心价值\n\nOpenWiki 解决的是**AI 编程时代的上下文问题**。\n\n传统文档容易过期，而 Coding Agent 需要理解的不只是 “代码怎么写”，还包括：\n\n- 项目整体结构\n- 核心模块职责\n- 架构设计逻辑\n- 历史变更原因\n- PR、Commit、评论中的业务背景\n\nOpenWiki 会把这些信息整理成 repo wiki，让 AI Agent 在开发时自动参考。\n\n## 使用方式\n\n安装和初始化非常简单：\n\n```bash\nnpm install -g openwiki\nopenwiki init\n```\n\n初始化过程中可以选择模型提供商，例如 OpenRouter，也支持自定义模型 ID。  \n如果配置 LangSmith API Key，还可以追踪 OpenWiki 的每一步运行过程，便于调试和观察 Agent 行为。\n\n## 文档生成结果\n\nOpenWiki 会在代码库中生成一个`openwiki`目录，其中包含：\n\n- `quickstart.md`：文档入口和项目总览\n- 架构说明\n- CLI 说明\n- Agent 逻辑说明\n- 各模块业务逻辑与实现背景\n- 文档更新记录\n\n这些文档既包含技术说明，也包含业务决策背景，帮助 Coding Agent 理解 “为什么这样设计”。\n\n## 自动保持文档更新\n\nOpenWiki 支持通过 GitHub Action 定时更新文档。\n\n它会基于 Git 历史工作：\n\n1. 记录上次文档更新时的 commit hash\n2. 扫描之后合并的所有 commit\n3. 分析代码变更、PR 描述、评论等信息\n4. 自动更新文档\n5. 提交 Pull Request\n\n更新频率可按项目节奏调整，例如每天一次、每周一次，或高频项目每几小时一次。\n\n## 与 Coding Agent 的集成\n\nOpenWiki 会自动创建或更新：\n\n- `AGENTS.md`\n- 或 Claude Code 使用的`claude.md`\n\n其中会写入 OpenWiki 文档的位置和使用规则。  \n因此，当 Coding Agent 进入代码库时，会自动知道该去读取 OpenWiki 文档，而不需要开发者每次手动提示。\n\n## 额外能力：直接聊天\n\n除了生成和更新文档，OpenWiki 也可以作为聊天代理使用：\n\n```bash\nopenwiki\n```\n\n用户可以直接询问：\n\n- 当前代码库结构\n- 某个模块如何工作\n- 文档中有哪些内容\n- 如何更新或清理文档\n\n它既是文档生成器，也是 repo 知识问答入口。\n\n## 产品视角解读\n\nOpenWiki 的关键意义在于：它把 “代码库文档” 从面向人的静态资产，升级为面向 Agent 的动态上下文基础设施。\n\n这类工具未来可能成为 AI 编程工作流的标配，因为：\n\n- Agent 越强，越依赖高质量上下文\n- 上下文不能只靠代码本身，还要包含历史和业务逻辑\n- 文档维护不能依赖人工，否则一定会过期\n- 自动化文档 + 自动注入 Agent 工作流，是更可持续的方案\n\n## 总结\n\nOpenWiki 是 LangChain 面向 AI 编程场景推出的开源文档代理。  \n它通过自动生成、持续更新、集成`AGENTS.md`，让 Coding Agent 始终拥有最新、完整的代码库上下文，从而提升代码修改质量与协作效率。",
+    "finish_reason": "stop",
+    "prompt_id": "template_1774403312933",
+    "role": "assistant",
+    "streaming": false,
+    "template_name": "通俗精炼",
+    "timestamp": 1783049225606,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:fc6325d7f4bec8ba92450d7e6a42161bac6bc1010d5f0f31ada1807c22c878ce",
+  "refs": {
+    "sessionId": "1783049095459_fzzu5f9y"
+  },
+  "revisionId": "sha256:0978de6e76daa05d87316d6b4590ae56f44e12f02b77a07340d5bb70f839919a",
+  "schemaVersion": 1,
+  "updatedAt": 1783049225606
+}

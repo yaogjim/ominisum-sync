@@ -1,0 +1,69 @@
+{
+  "createdAt": 1782360632646,
+  "entityType": "session",
+  "id": "1782360632646_qbte4zbm",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "检查并移除不认识或不再使用的X第三方授权应用",
+      "排查Mac上可疑进程、启动项和异常端口占用",
+      "清理长期不用或年久失修的本地工具",
+      "如账号异常，立即退出所有会话并更换密码"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1782361516882,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 3,
+      "relevance": 6,
+      "transferability": 4
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Mac账号被盗风险提醒",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "两步验证无法完全防止Cookie会话被盗后的账号滥用",
+      "应定期检查X等平台的第三方应用授权",
+      "本地开发工具可能长期占用端口或产生潜在安全风险",
+      "老旧软件和未维护工具可能带来存储、性能或安全隐患"
+    ],
+    "oneHighValuePoint": "账号异常不一定来自密码泄露，也可能来自Cookie盗用或第三方应用授权滥用。",
+    "oneLineReview": "有一定安全提醒价值，但信息零散且证据不足，适合快速浏览。",
+    "primaryCategory": "信息安全",
+    "rating": "C",
+    "rejectReason": "内容较短，主要是个人经历和提醒，缺少系统分析、证据链和完整排查方法。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "Mac安全",
+      "账号安全"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章提醒近期有Mac用户疑似因Cookie被盗或第三方应用授权导致X账号被盗发帖，即使开启两步验证也可能失效。建议检查本机可疑进程、端口、老旧工具及X第三方授权。",
+    "tags": [
+      "Cookie盗用",
+      "两步验证",
+      "第三方授权",
+      "Mac安全",
+      "X账号"
+    ],
+    "title": "向阳乔木: 最近好几个朋友Mac电脑中招，Cookie被盗用 X 发帖，哪怕开了两步验证",
+    "totalScore": 40,
+    "url": "https://x.com/vista8/status/2069818381050728710"
+  },
+  "payloadHash": "sha256:790a2908221bffb8de5f550ae64280e5c95785a8ffb00d894a1fe6a5c4462a77",
+  "refs": {},
+  "revisionId": "sha256:b51a40ea924c6944b503680ddd28ab2940ea77950f1e697338b4d779c872ffc8",
+  "schemaVersion": 1,
+  "updatedAt": 1782361517588
+}

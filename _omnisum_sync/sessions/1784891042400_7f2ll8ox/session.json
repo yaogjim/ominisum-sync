@@ -1,0 +1,67 @@
+{
+  "createdAt": 1784891042400,
+  "entityType": "session",
+  "id": "1784891042400_7f2ll8ox",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "在飞书多维表格中建立客户讲义表，并定义诊断、方案和阶段行动等字段。",
+      "配置排版打印模板，将模板位置与客户记录字段逐一映射。",
+      "先用一条真实记录测试文档生成、格式和客户访问效果，再决定是否批量迁移。"
+    ],
+    "archiveReason": "“结构化数据—模板生成—文档交付”的流程可复用于咨询、陪跑及其他标准化客户服务。",
+    "classifiedAt": 1784891334793,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 6,
+      "long_term_leverage": 6,
+      "methodology_value": 7,
+      "novelty": 4,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "飞书自动化咨询交付流程",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "咨询交付内容可拆分为客户信息、现状诊断、解决方案、阶段行动和反思问题等结构化字段。",
+      "排版模板与数据库字段绑定后，可按客户记录自动生成格式统一的交付文档。",
+      "把数据管理、文档生成和链接交付放在同一工具生态中，可以减少复制粘贴与格式错乱。"
+    ],
+    "oneHighValuePoint": "将客户资料结构化后，通过字段映射自动生成标准交付文档，可显著减少重复排版和跨工具搬运。",
+    "oneLineReview": "流程清晰且容易复用，但效率数据仅来自作者个案，文末也带有明显导流性质。",
+    "primaryCategory": "商业系统构建",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性存档，保留可复用的三步式客户交付流程",
+    "secondaryCategories": [
+      "客户交付",
+      "办公自动化"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以个人咨询交付为例，介绍用飞书多维表格建立客户数据库，再借助排版打印插件套用模板生成飞书文档并交付，声称可将单份文档制作时间从20分钟缩短至10秒。",
+    "tags": [
+      "飞书多维表格",
+      "咨询交付",
+      "文档自动生成",
+      "客户数据库",
+      "个体创业"
+    ],
+    "title": "叫我阿杭: 卧槽了，飞书果真是最懂OPC办公场景的，我再也不用被人说不专业了 我这两月基本上一个月会接3-5个一对一咨询和一些AI短视频陪跑，一单是在1000左右 以前交付…",
+    "totalScore": 68,
+    "url": "https://x.com/Astronaut_1216/status/2080281449240945098"
+  },
+  "payloadHash": "sha256:1c86b2b3ec4aa738b9d912484dd530c90bba934f76da2a650823d378a240c965",
+  "refs": {},
+  "revisionId": "sha256:9592b5795ee6b74c65ddd0f89b06bc48af2ea5c0eb43e9d9d5165b1b9a5a8971",
+  "schemaVersion": 1,
+  "updatedAt": 1789728426791
+}

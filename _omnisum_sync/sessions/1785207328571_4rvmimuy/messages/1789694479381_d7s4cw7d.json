@@ -1,0 +1,24 @@
+{
+  "createdAt": 1789694479378,
+  "entityType": "message",
+  "id": "1789694479381_d7s4cw7d",
+  "parentRevisionIds": [],
+  "payload": {
+    "analysis_status": "completed",
+    "content": "## 一句话看懂\n\n作者主张把“看图/看视频”和“分析判断”拆开：让廉价的 Gemini 2.5 Flash-Lite 充当“眼睛”，先把视觉内容转成文字，再交给 Fable 或 Claude 推理，可大幅降低成本。\n\n## 关键内容\n\n- Claude/Fable 不能直接处理视频；高分辨率图片又会占用大量 token，若图片随对话历史反复发送，长会话成本可能不断累积。\n- 作者选择 OpenRouter 上的 Gemini 2.5 Flash-Lite：按其估算，单张图片约 258 token，60 秒视频约花 0.2 美分，远低于直接让高价模型看图。\n- 接入方式是封装一个简单工具：Claude 遇到视觉内容时调用 Flash-Lite，获取带时间戳、字幕、剪辑和画面描述的文本，再据此推理。\n- Flash-Lite 可能遗漏细节；真正关键的单帧，仍应交给更强模型复核。\n\n## 通俗解读\n\n这相当于让便宜的“观察员”看素材、写报告，让昂贵的“专家”只负责判断。重点不是 Flash-Lite 与强模型同样聪明，而是多数场景只需要它准确转述画面。文中的价格是作者基于特定采样率和 API 单价的估算，实际费用会受分辨率、缓存和输出长度影响。\n\n**是否值得细读：**若你在搭建需要批量分析图片或短视频的 AI 工作流，值得；若只偶尔看几张图，核心方法读到这里已足够。",
+    "finish_reason": "stop",
+    "prompt_id": "default",
+    "prompt_template_name": "默认总结",
+    "role": "assistant",
+    "streaming": false,
+    "timestamp": 1789694479378,
+    "type": "summary"
+  },
+  "payloadHash": "sha256:0915fdcbcaef88962a24a3c33d009e53d28c9fd504ef2e3306822fd753391bf1",
+  "refs": {
+    "sessionId": "1785207328571_4rvmimuy"
+  },
+  "revisionId": "sha256:5b2dd9469e5e9fdaed9bde5b833da95ceb0332aad481687ddd63927fd5d88717",
+  "schemaVersion": 1,
+  "updatedAt": 1789694479378
+}

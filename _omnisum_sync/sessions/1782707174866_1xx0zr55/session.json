@@ -1,0 +1,73 @@
+{
+  "createdAt": 1782707174866,
+  "entityType": "session",
+  "id": "1782707174866_1xx0zr55",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "如关注 AI Agent 产品战略，可记录“产品代理 vs 用户代理”这一问题作为后续研究主题。",
+      "无需精读原内容，可寻找更系统的文章或案例分析替代。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1783040236242,
+    "classifyAction": "删除",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 2,
+      "evidence_quality": 2,
+      "information_density": 3,
+      "long_term_leverage": 4,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 6,
+      "transferability": 5
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "产品代理与个人代理之争",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "信息密度低，证据不足，主要是观点片段和无关回复，不适合长期保存。",
+    "digestPrompt": "请对我提供的多个内容，先综合在一起进行总结，再深入浅出解读。    以 markdown 格式显示。   --reasoning_effort high",
+    "domain": "digest",
+    "favicon": "",
+    "knowledgePoints": [
+      "AI Agent 生态存在产品内置代理与用户自有代理之间的入口之争。",
+      "为外部代理开放 MCP 能力可能与软件厂商维护品牌、信任和用户关系的利益相冲突。",
+      "未来代理可能以低成本形式嵌入各类软件，而非完全由用户自行维护。"
+    ],
+    "oneHighValuePoint": "软件厂商可能更倾向于内置几乎免费的代理，以维护产品体验、信任关系和品牌入口。",
+    "oneLineReview": "有一个值得注意的行业判断，但整体只是碎片化观点，保存价值较低。",
+    "primaryCategory": "人工智能",
+    "rating": "D",
+    "rejectReason": "内容主要由零散推文和热门回复组成，噪音较多，缺乏系统论证、案例和可执行方法。",
+    "retentionDecision": "短期了解观点后可删除",
+    "secondaryCategories": [
+      "智能代理",
+      "产品设计"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": true,
+    "sourceType": "digest",
+    "sourceUrls": [
+      "https://x.com/thdxr/status/2070980991821464046",
+      "https://x.com/dillon_mulroy/status/2070983687785914822",
+      "https://x.com/turingou/status/2071365336293593475"
+    ],
+    "summaryBrief": "文章汇集了几条关于智能代理归属的推文，核心争议是用户是否需要产品内置代理，还是希望自己的代理能高效使用各类产品，并涉及 MCP 与软件厂商利益的冲突。",
+    "tags": [
+      "AI Agent",
+      "MCP",
+      "软件产品",
+      "用户代理",
+      "平台生态"
+    ],
+    "title": "智能代理归属之争",
+    "totalScore": 38.5,
+    "url": "omnisun://digest/1782707174866"
+  },
+  "payloadHash": "sha256:d74f01b45c2999e69393f14b29db3858827d917b2e004e37eb253c968e0d91fa",
+  "refs": {},
+  "revisionId": "sha256:24ab61ac6d9ced34240941231533e711afed9606e90fd64812da259560237e52",
+  "schemaVersion": 1,
+  "updatedAt": 1783040236656
+}
