@@ -1,0 +1,515 @@
+# 评级：A（511）
+
+[← 评级索引](index.md) · [总览](../README.md)
+
+- 2026-10-09 [KC: agent 压缩上下文的那一下，经常是整段对话里最贵的一次请求](../sessions/1791544358860_igxod9q1.md) · 84 分 · AI Agent 开发
+- 2026-09-20 [TheoLeeCJ/SemIf: Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe.](../sessions/1789898181135_zt3t90fo.md) · 84 分 · AI Agent开发
+- 2026-09-18 [How We Built LangChain’s Paid Media Agent](../sessions/1789696392624_9mhnoed6.md) · 84 分 · AI Agent开发
+- 2026-08-17 [lajosdeme/mole: A deep-research agent with an enforced budget, verified quotes, and a privacy boundary for local data.](../sessions/1786943288557_uxydpbz9.md) · 84 分 · AI Agent开发
+- 2026-07-31 [huggingface/speech-to-speech: Build local voice agents with open-source models](../sessions/1785467662544_xi22k4lx.md) · 84 分 · AI Agent 开发
+- 2026-07-29 [Hatchet](../sessions/1785288237839_aak6k9cy.md) · 84 分 · 数据库工程
+- 2026-07-15 [getzep/graphiti: Build Real-Time Knowledge Graphs for AI Agents](../sessions/1784094609610_x4rflyq9.md) · 84 分 · AI Agent开发
+- 2026-07-08 [Harness Engineering for Self-Improvement](../sessions/1783495752281_7hv8kr3v.md) · 84 分 · 人工智能/智能体工程
+- 2026-06-15 [Agent 时代的软件接口 · BMPI](../sessions/1781517576884_1q1d4zjj.md) · 83.5 分 · AI Agent系统架构
+- 2026-06-02 [当我们谈论 FDE 时，我们在谈论什么？](../sessions/1780380589193_nvzjyo98.md) · 83.5 分 · AI产品与组织方法论
+- 2026-05-04 [深度解析：Codex Pet Skill](../sessions/1777855838051_7r8imuzt.md) · 83.5 分 · AI Agent工程
+- 2026-05-03 [智能体记忆工程](../sessions/1777773392415_h2mg49cm.md) · 83.5 分 · AI Agent工程
+- 2026-03-14 [极简原语到 Agent-Native5 篇文章看懂 2025 Agent 设计演进](../sessions/1773461721883_19gj37rb.md) · 83.5 分 · AI Agent 设计方法论
+- 2026-09-18 [如何从零 DIY 复刻一只可爱的 Microduck](../sessions/1789705259586_824fjht1.md) · 83 分 · 机器人与具身智能开发
+- 2026-09-18 [wzhudev/reverse-linear-sync-engine: A reverse engineering of Linear's sync engine.](../sessions/1789704888366_4rrq3fig.md) · 83 分 · 产品技术与系统架构
+- 2026-09-18 [Amal Irgashev: Our paid media agent at @LangChain has 200+ tools, a 19-page company wiki and it…](../sessions/1789696223978_b4u8o5wx.md) · 83 分 · AI Agent开发
+- 2026-08-27 [BennyKok/omg.dev: omg.dev — Remote control for claude, codex, cursor, opencode, pi, grok, jcocde with mobile client](../sessions/1787818018964_nhns89hu.md) · 83 分 · AI编程工具
+- 2026-08-10 [We replaced Redis with MySQL for inventory reservations—and it scaled \(2026\) - Shopify](../sessions/1786353767551_9dv5tohu.md) · 83 分 · 高并发系统架构
+- 2026-07-31 [The Economic Benefit of Refactoring](../sessions/1785483983027_qh0n0o1s.md) · 83 分 · AI Agent工程
+- 2026-07-30 [video-shotcraft/README\_CN.md at main · Vincentwei1021/video-shotcraft](../sessions/1785386026446_4fzzdb2z.md) · 83 分 · AI Agent开发工具
+- 2026-07-30 [aistack - How many devs can you fit on a GPU?](../sessions/1785376970640_0u5ikewa.md) · 83 分 · AI基础设施与Agent开发
+- 2026-07-22 [用Herdr协调实现测试与审查](../sessions/1784702945365_8qoo7a27.md) · 83 分 · AI Agent开发
+- 2026-07-14 [生产错误扫描修复循环实践](../sessions/1784023592360_v1negty3.md) · 83 分 · AI Agent开发
+- 2026-07-14 [可靠智能体循环的构建与实践](../sessions/1784023083678_nipkzdyb.md) · 83 分 · AI Agent 开发
+- 2026-07-14 [skills/skills/verifier-setup/SKILL.md at main · AI-Builder-Club/skills](../sessions/1784022172214_lj5d3q74.md) · 83 分 · AI Agent开发
+- 2026-06-16 [代理式代码审查](../sessions/1781599255331_vgjm8uon.md) · 83 分 · 软件工程
+- 2026-03-20 [Agent落地的系统工程本质](../sessions/1774003687901_7p1985cs.md) · 83 分 · AI Agent 工程实践
+- 2026-06-15 [yibie: \# Stripe Minions 第二部分：底层是怎么搭建的 本文是 Stripe 编码 Agent 系列的第二篇](../sessions/1781517728122_p7xzj6rk.md) · 82.5 分 · AI工程化
+- 2026-06-09 [Tony Fadell: How to build real taste \(and why AI makes it matter more\) - YouTube](../sessions/1781001130376_e8ooa488.md) · 82.5 分 · 产品管理
+- 2026-03-20 [智能体工程系统核心解读](../sessions/1774002733306_mo5cyplr.md) · 82.5 分 · AI智能体工程
+- 2026-09-20 [Jev 工程：从零开始搭建并使用 AI 新大脑的完整 10 步路线图](../sessions/1789898194313_ve82s91v.md) · 82 分 · AI Agent开发
+- 2026-09-17 [人工智能硬件开发的能力边界与可靠路径](../sessions/1789612585463_qoatxbzh.md) · 82 分 · AI辅助硬件开发
+- 2026-09-16 [Simon: 翻译一下这篇异构推理的好文章： 我的桌上有一台 256 GB 的 M3 Ultra Mac Studio，和两台 NVIDIA GB10 Spark 级系统，我…](../sessions/1789533178378_2d5neexb.md) · 82 分 · AI基础设施与分布式推理
+- 2026-09-03 [pi-matt-pocock 介绍，以及一种替代 skills 的 agent 能力设计](../sessions/1788427203413_xybwwhqe.md) · 82 分 · AI Agent架构
+- 2026-07-30 [我们重写了我们的代理，使其完全运行在一个持久化对象中，并使用了 Pi、代理 SDK 和代码模式](../sessions/1785402438617_la0zedm6.md) · 82 分 · AI Agent开发
+- 2026-06-02 [我最近两个月的探索和实践分享：长任务 Agent 的最小工程闭环](../sessions/1780386383599_0oxo4ltr.md) · 82 分 · AI Agent工程化
+- 2026-07-09 [yibie: 推荐这篇，Dan McKinley（前 Etsy 工程师）写的经典工程文化文章](../sessions/1783567600109_kkjixb3e.md) · 81.5 分 · 软件工程
+- 2026-06-04 [深度拆解：AI Agent Harness 的构造【译】](../sessions/1780562449767_fw1hvccl.md) · 81.5 分 · AI智能体工程
+- 2026-04-07 [GBrain个人知识库方案](../sessions/1775558975665_ad77jhu1.md) · 81.5 分 · 知识管理系统设计
+- 2026-09-22 [jaredpalmer/kev: tiny Jev-like family of decision models built on top of Qwen3.5 you can train and run on your own](../sessions/1790046037333_paao6myi.md) · 81 分 · AI技术
+- 2026-09-20 [构建你自己的 Jev（100% 本地）](../sessions/1789898185511_ai3ukzax.md) · 81 分 · AI工程与推理优化
+- 2026-09-18 [Let Claude coordinate ongoing work with Projects - Claude Code Docs](../sessions/1789697254638_13iy1vho.md) · 81 分 · AI编程工具
+- 2026-09-17 [使用 Codex 和 KiCad 设计 PCB：从实际需求到经过测试的电路板](../sessions/1789614125472_lp3ijf8a.md) · 81 分 · AI辅助硬件开发
+- 2026-09-16 [Making Startups Powerful](../sessions/1789531439820_vdtvfiil.md) · 81 分 · 商业系统构建与创业
+- 2026-09-15 [⚡ Qwen3.8-27B part 3 — the DFlash2 tier hierarchy: super, ultra, across speed and fidelity · noonghunna/club-3090 · Discussion \#1076](../sessions/1789445321037_7v96nr89.md) · 81 分 · AI模型推理部署
+- 2026-09-10 [Cursor + Grok Bot + pstack，真正的 AI 软件工厂开始出现了](../sessions/1789013134910_l509wzfb.md) · 81 分 · AI Agent开发
+- 2026-08-17 [Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things](../sessions/1786943502854_nkr9i95k.md) · 81 分 · 本地大模型评测
+- 2026-08-05 [Harness Engineering for Self-Improvement](../sessions/1785913532584_3wc3lp1w.md) · 81 分 · AI Agent开发
+- 2026-08-04 [从故事到估值：AI是价值创造还是价值毁灭](../sessions/1785838625667_s7gvmxab.md) · 81 分 · AI商业与估值
+- 2026-07-30 [如何在 Claude 代码中构建一个 AI 视频工作室](../sessions/1785402531897_nhyzvtrr.md) · 81 分 · AI Agent开发
+- 2026-07-21 [Graphify-Labs/graphify: Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local dete…](../sessions/1784605016190_kxsais9q.md) · 81 分 · AI编程工具
+- 2026-07-15 [topoteretes/cognee: Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.](../sessions/1784094614387_5xski5m7.md) · 81 分 · AI Agent开发
+- 2026-07-09 [Craft Agents智能体工作台](../sessions/1783569598226_pmlndfgc.md) · 81 分 · AI Agent开发
+- 2026-07-09 [Pi agent 101 - 如何扩展和构建你自己的框架](../sessions/1783556043563_sb8y04rh.md) · 81 分 · AI Agent开发
+- 2026-03-20 [你不知道的 Agent：原理、架构与工程实践](../sessions/1773986086007_e95d0lr3.md) · 81 分 · AI Agent工程实践
+- 2026-09-18 [AI Skills with Matt Pocock - YouTube](../sessions/1789697267838_jikbc4ce.md) · 80 分 · AI编程与Agent开发
+- 2026-09-18 [hughmadden/ds41rt-rtx5090: DS41RT coordinator for DeepSeek-V4.1-Flash on an RTX 5090 \(32 GB\) + four DGX Spark expert ranks: build, launch and preflight scripts, settings, measured envelope](../sessions/1789690876384_1p7wurc3.md) · 80 分 · AI模型部署与推理工程
+- 2026-09-11 [zg 正式开源：本地检索，不止于关键词](../sessions/1789114004227_z6fn5ixm.md) · 80 分 · AI编程工具
+- 2026-09-10 [vercel-labs/portless: Replace port numbers with stable, named local URLs. For humans and agents.](../sessions/1789014853571_3anxrenz.md) · 80 分 · 开发工具
+- 2026-08-28 [Grok Bot 泄露：Cursor 为什么只给模型一部分工具的完整定义](../sessions/1787889417743_d3bjzb3c.md) · 80 分 · AI Agent开发
+- 2026-08-26 [构建以代码仓库为中心的模块化智能体技术栈](../sessions/1787714858276_pvxjr5f6.md) · 80 分 · Agent系统架构
+- 2026-08-10 [Auto mode is now the default in Claude Code for Pro, Max, and Team plans](../sessions/1786353640328_f6yvcvgp.md) · 80 分 · AI编程工具
+- 2026-07-30 [How GPT-5.6 fuses frontier intelligence with frontier efficiency](../sessions/1785385901032_8y7af8k0.md) · 80 分 · AI推理基础设施
+- 2026-07-29 [marcelroed/gigatoken: Language model tokenization at GB/s](../sessions/1785288215150_4s2ert6j.md) · 80 分 · AI基础设施与性能优化
+- 2026-07-29 [The Rise of Intelligence Ownership](../sessions/1785287377173_kurme66f.md) · 80 分 · 企业AI系统构建
+- 2026-07-27 [The Trillion Dollar Gap \| Aswath Damodaran on SpaceX, AI and the Big Market Delusion - YouTube](../sessions/1785140420967_9e14yj8u.md) · 80 分 · 商业与投资
+- 2026-07-23 [yibie: 推荐这篇文章，作者 Jason Vertrees 是 Heavy Chain Engineering 的创始人，帮助中低端市场的垂直 SaaS 公司和 PE 机…](../sessions/1784790227341_skild104.md) · 80 分 · AI原生软件工程
+- 2026-07-22 [Herdr多智能体终端与自动化全解](../sessions/1784702763029_4sap1syq.md) · 80 分 · AI Agent开发
+- 2026-07-22 [Context engineering with Dex Horthy - YouTube](../sessions/1784692468837_kf6xikvf.md) · 80 分 · AI辅助软件开发
+- 2026-07-21 [OpenChatCut/README\_ZH.md at main · 0xsline/OpenChatCut](../sessions/1784605354175_rv374v9v.md) · 80 分 · AI Agent开发
+- 2026-07-15 [zylon-ai/private-gpt: Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.](../sessions/1784108360225_usdh88qt.md) · 80 分 · AI应用开发
+- 2026-07-15 [2026 年顶级 AI 实验室如何构建强化学习智能体（利用卡帕西的系统提示学习理念）](../sessions/1784101258990_v9klz0ok.md) · 80 分 · AI Agent开发
+- 2026-05-08 [2026年个人Agent自建实战：我用Vibe Coding + 借开源轮子，15天搭出每天都在用的工作系统（方法篇）](../sessions/1778220356117_p0pcmhf6.md) · 80 分 · AI Agent开发
+- 2026-03-26 [AI产品从能力调用到流程编排](../sessions/1774511150488_pd91pxwd.md) · 79.5 分 · AI工程与Agent架构
+- 2026-03-14 [Performance: 53% faster parse+render, 61% fewer allocations by tobi · Pull Request \#2056 · Shopify/liquid](../sessions/1773465790142_afk2c9ua.md) · 79.5 分 · 性能优化
+- 2026-03-12 [CLI is All Agents Need — \*nix Agent 设计宝典](../sessions/1773303079557_kkm0v22p.md) · 79.5 分 · AI Agent系统设计
+- 2026-10-12 [Stanford CS146S: How always-on agents work - YouTube](../sessions/1791793494114_r99fmril.md) · 79 分 · Agent开发
+- 2026-10-12 [mrm8488/embeddinggemma-2-ft-typed-decision · Hugging Face](../sessions/1791793363175_l29g5lc8.md) · 79 分 · AI模型与技术实现
+- 2026-09-30 [The Next Scaling Problem — Tetral](../sessions/1790737412584_nf42er5a.md) · 79 分 · Agent 系统架构
+- 2026-09-20 [Jev开启类型化决策模型新范式](../sessions/1789893594118_ekmt8nm0.md) · 79 分 · AI Agent 开发
+- 2026-09-20 [kev/MODEL\_CARD.md at main · jaredpalmer/kev](../sessions/1789875877241_v1kpymfb.md) · 79 分 · AI模型开发与评估
+- 2026-09-18 [The deepseek of DeepSeek Harness: Overengineering or built for self-evolution? \| Life Odyssey](../sessions/1789699947836_0ax4v3lv.md) · 79 分 · AI Agent开发
+- 2026-09-16 [如何不出境、不开香港公司，给自己的产品接上全球收款](../sessions/1789533338225_ljh4c1pl.md) · 79 分 · 商业系统构建
+- 2026-09-16 [置身 Agent 时代：当软件开始不再需要软件工程师](../sessions/1789518751876_dupdaq57.md) · 79 分 · AI Agent开发
+- 2026-09-09 [Memory - Docs by LangChain](../sessions/1788920808305_imhsndws.md) · 79 分 · AI Agent开发
+- 2026-09-09 [Manage connections - Docs by LangChain](../sessions/1788920724680_tgwovzkt.md) · 79 分 · AI Agent开发
+- 2026-09-08 [Liquid4All/cookbook: Examples, end-2-end tutorials and apps built using Liquid AI Foundational Models \(LFM\) and the LEAP SDK](../sessions/1788860612862_1klzeav6.md) · 79 分 · AI开发与Agent工程
+- 2026-09-03 [别天天想着vibe coding，分享我用AI帮助孩子学习，一个月提高30分](../sessions/1788428447459_j8ksfxj5.md) · 79 分 · AI辅助学习
+- 2026-09-03 [半年后的今天，我怎么用 AI 写代码](../sessions/1788418815538_wwp6axrs.md) · 79 分 · AI编程与Agent开发
+- 2026-08-21 [时雨堂：一家 5 个人的日本软件公司，把经营手册全部公开了](../sessions/1787294225997_sl8fn2wx.md) · 79 分 · 商业系统构建
+- 2026-08-10 [宝玉: 我在开发项目是，第一版本会先用 Claude Design 设计好 UI 原型/设计，打磨好后放到本地，配合 Baoyu-Design Skill 去维护，每次…](../sessions/1786354372323_g8013ihn.md) · 79 分 · AI辅助产品开发
+- 2026-07-31 [ilysenko/codex-desktop-linux: Unofficial ChatGPT desktop app for Linux \(formerly the Codex app\), built locally from OpenAI’s official macOS app. Includes Chat, Work, and Codex. Packages for Debian/Ubu…](../sessions/1785487610904_ugoodh5o.md) · 79 分 · AI工具与开发环境
+- 2026-07-31 [GPT 5.6 Sol Ran a Real Business—and Lost $447](../sessions/1785484036549_csz0alot.md) · 79 分 · AI Agent评测
+- 2026-07-28 [Why the people building AI can’t tell you what’s next \| Dianne Penn \(Anthropic\) - YouTube](../sessions/1785202714337_y4g1d72i.md) · 79 分 · AI产品开发
+- 2026-07-15 [Cjbuilds/Codex-Orchestration: Bring any model to Codex, assign them any role, use them in /goal or any workflow.](../sessions/1784098305893_u3c6l51z.md) · 79 分 · AI Agent开发
+- 2026-07-14 [How to design loops that actually works - YouTube](../sessions/1784016668837_xs3z7vzl.md) · 79 分 · AI Agent开发
+- 2026-04-03 [驾驭 Claude 的智能 \| 构建应用的 3 个关键模式【译】](../sessions/1775198880818_99nkc7iq.md) · 79 分 · AI应用开发
+- 2026-07-07 [如何使用 Fable 编排一个拥有 40 个子代理的大型项目](../sessions/1783418122716_mil4lyem.md) · 78.5 分 · AI工程管理
+- 2026-07-07 [Your Worker can now have its own cache in front of it](../sessions/1783418106656_cnftylha.md) · 78.5 分 · 云计算与边缘计算
+- 2026-06-11 [如何使用代理实现灾难恢复自动化](../sessions/1781168162551_8hr9p8y1.md) · 78.5 分 · DevOps与灾难恢复
+- 2026-06-03 [37signals 内部沟通指南](../sessions/1780449089453_x0i0embj.md) · 78.5 分 · 组织管理
+- 2026-04-07 [Harness工程重塑软件开发范式](../sessions/1775547729613_8kqhz462.md) · 78.5 分 · AI工程方法论
+- 2026-03-27 [Cog认知架构与长期记忆系统解析](../sessions/1774576316328_bxzk4bge.md) · 78.5 分 · AI智能体记忆架构
+- 2026-03-16 [不要建一千个 Agent：Ramp 如何用一个 Agent 搞定金融自动化](../sessions/1773655871183_nxnevu8k.md) · 78.5 分 · AI 产品工程实践
+- 2026-03-16 [Everything is Context: Agentic File System Abstraction for Context Engineering](../sessions/1773655102641_b0z5h6b7.md) · 78.5 分 · AI系统架构
+- 2026-09-24 [使用 Pi 和 Jev 构建自定义 Harness](../sessions/1790217467326_nat7l5dd.md) · 78 分 · Agent开发
+- 2026-09-18 [我的 AI 开发流程](../sessions/1789700302856_s8nfp3qi.md) · 78 分 · AI辅助软件开发
+- 2026-09-18 [开源 AI 技术栈](../sessions/1789696441202_63fgmfss.md) · 78 分 · AI编程与Agent开发
+- 2026-09-16 [eternity4719/HowToLiveBetter: 按性价比排序的循证生活指南：长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、怀孕育儿、创业与做平台合规、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。](../sessions/1789533359640_sixdj7y4.md) · 78 分 · 循证生活决策
+- 2026-09-03 [智能体工程配置（经过2000+小时实践）](../sessions/1788428520749_tkejsc5h.md) · 78 分 · AI Agent工程
+- 2026-08-21 [大模型本地部署完整指南：搭建自己的 Agent 工作流，实现Token自由「新手友好」](../sessions/1787305252440_rh06g7ka.md) · 78 分 · AI技术与Agent开发
+- 2026-08-21 [DataDan｜AI Consultant + Builder: 之前做中日跨境项目，踩过一个很小、也很贵的坑： 一个零件编号里的全角字符，差点让日本工厂把一批正常产品全判成不良](../sessions/1787286352453_qvldm5dk.md) · 78 分 · AI产品落地
+- 2026-07-30 [Formal methods with Hillel Wayne - YouTube](../sessions/1785385956277_xos72a0w.md) · 78 分 · 软件工程与形式化方法
+- 2026-07-30 [funador/claude-code-merge-queue: The local merge queue for parallel Claude Code agents](../sessions/1785377114140_xhsxlc6g.md) · 78 分 · AI编程工具
+- 2026-07-28 [“拥有自己的智力”是什么意思？](../sessions/1785207346255_vzq6ru59.md) · 78 分 · AI Agent 开发
+- 2026-07-28 [Boris Cherny: Building Claude Code - YouTube](../sessions/1785202466529_xu1gb1kg.md) · 78 分 · AI工程实践
+- 2026-07-24 [本地优先桌面AI协作代理](../sessions/1784890905337_enxdy7g8.md) · 78 分 · AI Agent开发
+- 2026-07-22 [block/buzz: A hive mind communication platform](../sessions/1784700992435_4kiidu52.md) · 78 分 · AI Agent开发
+- 2026-07-21 [我之前用 Fable 用错了...](../sessions/1784605362557_foz45l8c.md) · 78 分 · AI Agent 开发
+- 2026-07-16 [Why I switched to Pi... - YouTube](../sessions/1784166724527_2ayhlvkd.md) · 78 分 · AI Agent开发
+- 2026-07-15 [企业金融 AI 及正确实施方法](../sessions/1784101317932_k9qng00u.md) · 78 分 · AI Agent开发与实施
+- 2026-04-13 [Anthropic 官方博文：多智能体协作指南：五种主流模式怎么选、怎么用？【译】](../sessions/1776074582808_x8aa2wm6.md) · 78 分 · AI系统设计
+- 2026-04-09 [Anthropic 今天发了一个新产品，可能会让一批做 AI 智能体基础设施的团队失业](../sessions/1775701643706_nd6s143i.md) · 78 分 · AI智能体基础设施
+- 2026-03-25 [Harness design for long-running application development \\ Anthropic](../sessions/1774407476808_o85nn1jy.md) · 78 分 · AI工程与智能体系统
+- 2026-03-25 [HKUDS/OpenSpace: "OpenSpace: Make Your Agents: Smarter, Low-Cost, Self-Evolving" -- Community: https://open-space.cloud/](../sessions/1774404537058_mm1l1k1h.md) · 78 分 · AI智能体框架
+- 2026-03-12 [Services: The New Software](../sessions/1773295550827_c5vdwomj.md) · 78 分 · AI商业战略
+- 2026-06-25 [简单沙箱，智能主机](../sessions/1782349245772_2kv9l1vk.md) · 77.5 分 · AI Agent架构
+- 2026-06-02 [如何构建多智能体工作流（完整指南）](../sessions/1780371112249_3n4k1f9q.md) · 77.5 分 · AI工程与智能体系统
+- 2026-06-01 [pi生态复刻Claude动态能力](../sessions/1780307891754_49n8cva0.md) · 77.5 分 · AI工程与智能体开发
+- 2026-05-03 [How AI Actually Remembers \(Full Guide\)](../sessions/1777775384836_zlrsunig.md) · 77.5 分 · 人工智能
+- 2026-04-13 [lich-skills/skills/debug-hypothesis/SKILL.md at main · LichAmnesia/lich-skills](../sessions/1776076109081_so469b23.md) · 77.5 分 · 软件调试方法论
+- 2026-04-10 [系统工程：构建有效的智能体软件](../sessions/1775819217068_7l2v7taf.md) · 77.5 分 · AI工程方法论
+- 2026-04-07 [智能体时代的产品系统设计](../sessions/1775547855052_8yr8r9h8.md) · 77.5 分 · AI工程方法论
+- 2026-04-03 [Andrej Karpathy: LLM Knowledge Bases Something I'm finding very useful recently: using LLMs to bu…](../sessions/1775198805320_suoz25si.md) · 77.5 分 · AI知识管理
+- 2026-04-03 [Harnessing Claude's Intelligence \| 3 Key Patterns for Building Apps \| Claude](../sessions/1775198157683_y35uhq6r.md) · 77.5 分 · AI应用架构
+- 2026-03-24 [你智能体栈中缺失的层](../sessions/1774317077440_j9cjivza.md) · 77.5 分 · AI工程基础设施
+- 2026-03-18 [构建 Claude Code 的经验：我们如何使用 Skills【译】](../sessions/1773825894128_tmyc1gqr.md) · 77.5 分 · AI工程与开发效率
+- 2026-03-17 [The Anatomy of an Agent Harness](../sessions/1773734223009_av3z4dm1.md) · 77.5 分 · AI工程
+- 2026-03-13 [文件不是知识真相底座](../sessions/1773362464233_gz2a8haa.md) · 77.5 分 · 知识管理与AI系统设计
+- 2026-03-12 [steipete/birdclaw: Stores all your tweets nicely claw-able for agents.](../sessions/1773285122653_33cqgxcy.md) · 77.5 分 · 开发工具
+- 2026-09-30 [Introducing cf: the agentic CLI for the entire Cloudflare API \| Cloudflare Blog](../sessions/1790761171333_4l64bys6.md) · 77 分 · AI编程工具
+- 2026-09-23 [yibie/jev-engineering-zh: 《Jev 工程学：为 coding agent 而作》完整中文翻译 — 保留原结构与 7 张插图](../sessions/1790129917035_7pr2nwfb.md) · 77 分 · Agent 工程
+- 2026-09-21 [Laya多语言类型化决策引擎](../sessions/1789956443201_vwem1tlg.md) · 77 分 · AI技术与工程实践
+- 2026-09-20 [Jev’s Architecture Unmasked — archerhume](../sessions/1789875895682_qyge2zsc.md) · 77 分 · AI技术与模型架构
+- 2026-09-17 [How the Claude Code team uses Claude Code - YouTube](../sessions/1789614478726_cev88w82.md) · 77 分 · AI编程与Agent开发
+- 2026-09-16 [二十个月交付一台微型 SLAM 相机](../sessions/1789533103650_osrl1hgg.md) · 77 分 · 产品开发与技术实现
+- 2026-09-16 [arnegiacomo/fugleramme: E-ink bird frame for Raspberry Pi - real-time bird detection by audio, fully local AI, rendered as real, hand-cut 1800s bird illustrations.](../sessions/1789531525480_ejg1hi41.md) · 77 分 · AI产品开发
+- 2026-09-14 [Zeng Ming: The Brutal Truth, Companies That Will Disappear, Why “Excellent” ≠ “Great” - YouTube](../sessions/1789347281328_1gc0thy8.md) · 77 分 · AI商业战略
+- 2026-09-09 [copperheadhq/copperhead: Hardware as fast as software.](../sessions/1788921676753_nocrj1me.md) · 77 分 · AI Agent开发
+- 2026-09-09 [Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses](../sessions/1788921208959_qt2t9xwm.md) · 77 分 · AI技术与模型部署
+- 2026-08-17 [GLM-5.3: Frontier Coding with Emergent Cyber Capabilities](../sessions/1786943209265_osjffob4.md) · 77 分 · AI技术与模型训练
+- 2026-08-10 [my server is a phone now](../sessions/1786353697433_i78nhx0m.md) · 77 分 · 个人基础设施与服务器运维
+- 2026-07-23 [The Agent Development Lifecycle 101 by Harrison Chase - YouTube](../sessions/1784790877763_v5a9wodu.md) · 77 分 · AI Agent开发
+- 2026-07-03 [2026年人工智能/机器学习工程师面试指南 - 第二部分](../sessions/1783078109031_rgjjoq6w.md) · 77 分 · 人工智能工程
+- 2026-06-15 [/目标 + 损失函数：如何在30小时内用一个提示词提炼产品 \[完整指南\]](../sessions/1781519942501_g54n84z9.md) · 77 分 · AI工程方法论
+- 2026-06-11 [Claude Code 动态工作流： 每个任务都可以有自己的 Harness【译】](../sessions/1781171240616_hdkkn26l.md) · 77 分 · AI工具与智能体工作流
+- 2026-06-03 [GitHub's plan for Agents — Kyle Daigle, GitHub \| Readwise](../sessions/1780448974107_3m2dorkm.md) · 77 分 · AI工程与开发者平台
+- 2026-06-03 [字节出来做AI创业一年，她把每一个弯路都说清楚了](../sessions/1780448867016_dxfhage0.md) · 77 分 · AI创业与产品方法论
+- 2026-06-01 [rohitg00/agentmemory: \#1 Persistent memory for AI coding agents based on real-world benchmarks](../sessions/1780307372186_cyswffhm.md) · 77 分 · AI开发工具
+- 2026-05-19 [为什么我不“凭感觉编程”](../sessions/1779153063281_lz9whcg5.md) · 77 分 · 软件工程
+- 2026-05-03 [宝玉: 转译：深度拆解 Hermes Agent 的记忆系统：它如何修正 OpenClaw 的误区 如果你读过我之前关于 ChatGPT、Claude 以及 Clawd…](../sessions/1777773112899_zcbfu6ja.md) · 77 分 · AI Agent架构
+- 2026-04-28 [Running AI agents to automate outreach at scale](../sessions/1777356464766_hvzudkxm.md) · 77 分 · AI工程与自动化
+- 2026-04-20 [Hermes Agent 从中级到高级进阶指南](../sessions/1776645596238_bz3558jj.md) · 77 分 · AI Agent 工程实践
+- 2026-03-15 [headless maxxing](../sessions/1773556673550_niixbqq6.md) · 77 分 · AI工程化
+- 2026-03-12 [samuelfaj/distill: Distill large CLI outputs into small answers for LLMs and save tokens\!](../sessions/1773285053039_jxfjnohn.md) · 77 分 · AI开发工具
+- 2026-05-12 [车间学习](../sessions/1778557308431_mvgmm6t6.md) · 76.5 分 · AI协作与组织学习
+- 2026-05-03 [OpenAI开源Symphony：给每一个任务配一个永不下班的 AI员工](../sessions/1777773180168_8h242azp.md) · 76.5 分 · AI Agent工程化
+- 2026-04-27 [DESIGN.md \| AI 匹配你的用户界面所需的那个文件](../sessions/1777277112489_fw91n7kl.md) · 76.5 分 · AI产品管理
+- 2026-04-20 [bstnxbt/dflash-mlx: Lossless DFlash speculative decoding for MLX on Apple Silicon](../sessions/1776645436958_tchx2irz.md) · 76.5 分 · 大模型推理加速
+- 2026-04-14 [为什么你的“AI 优先”策略可能是错误的](../sessions/1776131949923_ybm7bxpa.md) · 76.5 分 · AI工程组织与流程重构
+- 2026-04-13 [How I run multiple $10K MRR companies on a $20/month tech stack \| Steve Hanov's Blog](../sessions/1776061731193_j7tdkcnw.md) · 76.5 分 · 创业技术架构
+- 2026-04-10 [OpenAI/Cursor/Anthropic 同时发了 Harness Engineering，我用半年踩坑验证了他们说的每一条](../sessions/1775809813658_rc36xbbt.md) · 76.5 分 · AI工程实践
+- 2026-04-09 [LLMWiki重塑知识管理方式](../sessions/1775700564895_vstcay6y.md) · 76.5 分 · AI辅助知识管理
+- 2026-03-30 [I Compared gstack, Superpowers, and Compound Engineering. They Solve Three Completely Different Prob 我比较了 gstack、Superpowers 和 Compound Engineering。它们解决了三个完全不同的问题。](../sessions/1774867761411_4n8288gh.md) · 76.5 分 · AI工程工具评测
+- 2026-03-25 [Context engineering in Deep Agents - Docs by LangChain](../sessions/1774403331200_s9op6nzr.md) · 76.5 分 · AI工程
+- 2026-03-12 [Andrej Karpathy: Three days ago I left autoresearch tuning nanochat for \~2 days on depth=12 model](../sessions/1773297515050_hi2aocp5.md) · 76.5 分 · AI工程与自动化研究
+- 2026-03-11 [宝玉: 转译：Harness 工程就是控制论 读 OpenAI 那篇 Harness 工程的文章\[1\]时，我一直有种说不上来的感觉](../sessions/1773229023264_gltayuap.md) · 76.5 分 · AI工程方法论
+- 2026-10-12 [一条命令，落地 Matt 工作流](../sessions/1791794903103_h0frpcmd.md) · 76 分 · Agent 软件工程
+- 2026-09-29 [Where’s the “intelligence explosion”?](../sessions/1790672314862_oeey6bgy.md) · 76 分 · AI技术趋势
+- 2026-09-23 [Transformers now runs llama.cpp quants](../sessions/1790132051959_rvg2swz6.md) · 76 分 · AI技术与模型推理
+- 2026-09-22 [Jev + 图形模型：一次范式转变？](../sessions/1790043914675_5ca9y2c5.md) · 76 分 · AI技术
+- 2026-09-21 [guitarpedal · BoardRepo](../sessions/1789956827392_qlllde8a.md) · 76 分 · 嵌入式产品开发
+- 2026-09-18 [构建 AI 原生操作系统的完整指南](../sessions/1789723594451_z152g4wm.md) · 76 分 · AI系统与业务自动化
+- 2026-09-10 [CAE-Agent-Hub/README.zh-CN.md at main · Cai-aa/CAE-Agent-Hub](../sessions/1789012454685_bkxklx5q.md) · 76 分 · AI Agent开发
+- 2026-07-24 [用 3D 执导 AI 视频](../sessions/1784890948277_ty4ivfla.md) · 76 分 · AI视频制作
+- 2026-07-22 [我戴了三周 Fitbit，终于看懂了 Apple 和 Google 的健康生意](../sessions/1784700414434_lek11huc.md) · 76 分 · 产品设计与商业模式
+- 2026-07-21 [小盖: Lenny 这期播客非常精彩，推荐在做 Vibe Coding 或者创业的朋友听一听](../sessions/1784605192158_fgyy3bnr.md) · 76 分 · 产品设计与开发
+- 2026-07-09 [你如何培养一项好技能？现在有实际数据了。](../sessions/1783567568928_vpska05u.md) · 76 分 · AI工程
+- 2026-07-03 [我的个人生活自动化代理栈](../sessions/1783078646874_hh2kws7a.md) · 76 分 · AI个人自动化
+- 2026-06-12 [第一次做出海 SEO，我用一个练手小游戏 30 天跑到 100 万 UV，290 万 PV](../sessions/1781262983529_bzh0vvbl.md) · 76 分 · 出海SEO
+- 2026-06-11 [Lessons from building Claude Code: How we use skills \| Claude](../sessions/1781171230801_3o3yanay.md) · 76 分 · AI工程与智能体开发
+- 2026-06-09 [置身钉内 14.34.50.pdf - Google 云端硬盘](../sessions/1780998854370_syqqyqgv.md) · 76 分 · AI产品复盘
+- 2026-06-02 [LLM 的推理引擎及本地 AI 硬件（2026 年版）](../sessions/1780380642888_jn4ed2pj.md) · 76 分 · AI基础设施
+- 2026-06-02 [yibie: 训练小模型：2026 年最被低估的 AI 技能 2026 年 5 月 11 日，一个叫 CJ Zafir 的人发了一条推文](../sessions/1780371081794_me54qcps.md) · 76 分 · AI工程
+- 2026-05-19 [Pi Coding Agent 最全面指南（完美支持/goal）](../sessions/1779152760552_b81im4c4.md) · 76 分 · AI编程工具与Agent工作流
+- 2026-04-13 [Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对](../sessions/1776064116355_3rl0wlhj.md) · 76 分 · AI编程工具使用策略
+- 2026-04-09 [hermes-agent/skills/research/llm-wiki/SKILL.md at main · NousResearch/hermes-agent](../sessions/1775700712137_ivmm9586.md) · 76 分 · AI知识管理
+- 2026-04-07 [从知识检索到个人知识大脑](../sessions/1775558687984_a1q2zkas.md) · 76 分 · 个人知识管理
+- 2026-04-07 [llm-wiki](../sessions/1775546898572_44k8a4xu.md) · 76 分 · AI知识管理
+- 2026-03-26 [长时间运行的应用开发中的编排框架设计\[译\]](../sessions/1774498746670_zhxl8kss.md) · 76 分 · AI工程与智能体系统
+- 2026-03-25 [MolmoWeb: An open agent for automating web tasks \| Ai2](../sessions/1774405159467_84dl894v.md) · 76 分 · AI智能体
+- 2026-07-09 [Agent Mode: The Agent-Native Web](../sessions/1783567365093_ym7qy0jj.md) · 75.5 分 · AI Agent与Web标准
+- 2026-07-03 [Why OpenAI is merging Codex and ChatGPT and the future of knowledge work \| Andrew Ambrosino - YouTube](../sessions/1783075642163_fgzdyy5m.md) · 75.5 分 · AI与产品管理
+- 2026-07-03 [The best AI agents are cheaper than you think - YouTube](../sessions/1783075635330_dd8mbfpk.md) · 75.5 分 · AI智能体工程
+- 2026-06-16 [How to Earn a Billion Dollars](../sessions/1781599119335_mca8iepy.md) · 75.5 分 · 创业与商业思维
+- 2026-06-15 [我们如何使用 LangChain 赋能 Lumi，我们面向 180,000+ 商家的电商助手](../sessions/1781519915279_wjw5ba4x.md) · 75.5 分 · AI工程
+- 2026-06-09 [陈成: Claude Code 负责人 @bcherny 说他已经不 prompt Claude 了](../sessions/1781001037018_v6xznw94.md) · 75.5 分 · AI工程
+- 2026-06-08 [brooks-lint/README.zh-CN.md at main · hyhmrright/brooks-lint](../sessions/1780891686688_zy2d96ab.md) · 75.5 分 · 软件工程/代码质量
+- 2026-06-02 [搞懂缓存机制，从Gemma4到Claude Code省80%Token](../sessions/1780386275728_835nkurl.md) · 75.5 分 · AI工程与大模型使用优化
+- 2026-06-01 [写好 CLAUDE.md 的 8 条经验：让 Claude Code 更懂你的项目](../sessions/1780308140446_p209cs9r.md) · 75.5 分 · AI编程实践
+- 2026-05-27 [从 Prompt 到 Harness：如何理解大语言模型工程](../sessions/1779871513987_prufda23.md) · 75.5 分 · AI工程
+- 2026-05-12 [深度拆解：AI Agent Harness 的构造【译】](../sessions/1778560158120_itnu53gf.md) · 75.5 分 · AI工程架构
+- 2026-04-14 [Shopify 把后台全开放给 AI 了：从生成内核的视角看这件事为什么重要](../sessions/1776132070835_drkx3gn6.md) · 75.5 分 · AI原生软件架构
+- 2026-03-23 [Lossy self-improvement - by Nathan Lambert](../sessions/1774246967328_g7hinhmc.md) · 75.5 分 · 人工智能趋势分析
+- 2026-03-18 [The Harness Is Everything: What Cursor, Claude Code, and Perplexity Actually Built 驾驭一切：Cursor、Claude 代码和 Perplexity 究竟打造了什么](../sessions/1773827388366_5bf5pbaa.md) · 75.5 分 · AI工程
+- 2026-03-16 [A thousand ways to sandbox an agent](../sessions/1773653216094_4hd9zi00.md) · 75.5 分 · AI工程基础设施
+- 2026-03-12 [Skill authoring best practices - Claude API Docs](../sessions/1773277976261_aid5wb4q.md) · 75.5 分 · AI Agent开发
+- 2026-03-11 [Using skills to accelerate OSS maintenance](../sessions/1773228905001_dxr12z15.md) · 75.5 分 · AI辅助软件工程
+- 2026-09-24 [InstantHMR三维人体姿态估计与部署](../sessions/1790224301155_yctrjeii.md) · 75 分 · AI计算机视觉
+- 2026-09-24 [如何花 17 美元训练你自己的 Jev](../sessions/1790221180238_p16yi4p9.md) · 75 分 · AI模型微调与部署
+- 2026-09-23 [写在严肃阅读之后：我是如何“严肃听播客”，真正吸收一档自己喜欢的播客的？](../sessions/1790133529710_d3mzae8c.md) · 75 分 · 学习方法
+- 2026-09-22 [Python Workers are now generally available \| Cloudflare Blog](../sessions/1790045992003_64nbe4vz.md) · 75 分 · 技术实现
+- 2026-09-18 [Everyone Is Still Undersizing the AI Market \| Eric Vishria - YouTube](../sessions/1789723571308_37f7z487.md) · 75 分 · AI商业与产品战略
+- 2026-09-18 [宝玉: 转译自 Lenny Rachitsky 我从 Cursor 人才主管 Adam Ward \(@wardadamp\) 那里学到的最大收获： 1](../sessions/1789723439204_7sw25swn.md) · 75 分 · 招聘与团队建设
+- 2026-09-18 [你有哪些私藏的挖掘需求的好方法 - 悬赏专区 \| Web.Cafe](../sessions/1789721837984_4q687s3i.md) · 75 分 · 创业与需求验证
+- 2026-08-28 [Phoenix Yin: 如何从根本上解决教材的反自学系统问题](../sessions/1787903983029_gibg9r1a.md) · 75 分 · 学习方法
+- 2026-08-28 [我如何用 AI 进行设计。](../sessions/1787885607513_xveosoiz.md) · 75 分 · 产品设计
+- 2026-08-21 [multiagent 协作问题的初步整理](../sessions/1787305464328_qm6vvuj9.md) · 75 分 · AI Agent开发
+- 2026-08-21 [我做了 200+ 次用户访谈，只有这 5 个问题是真正有用的](../sessions/1787297188533_wviz0ni1.md) · 75 分 · 用户研究与产品开发
+- 2026-08-17 [How Compaction Works in Pi \| EARENDIL](../sessions/1786943184366_xy0oe6fu.md) · 75 分 · AI Agent开发
+- 2026-07-29 [What is really happening to jobs? Separating AI hype from reality](../sessions/1785288303611_yd7ztkh0.md) · 75 分 · AI与劳动力市场
+- 2026-07-28 [Shen Sean Chen: i open sourced waku agent 16 days ago \(500+stars\), a personal local ai agent har…](../sessions/1785207232329_qx86ueqn.md) · 75 分 · AI Agent开发
+- 2026-07-28 [Jensen Huang: The Mindset That Built NVIDIA - YouTube](../sessions/1785202367995_68ogoymk.md) · 75 分 · AI战略与技术创业
+- 2026-07-22 [Claude Fable, Claude Tag, and Anthropic's Culture — Cat Wu &amp; Thariq Shihipar ft Simon Willison - YouTube](../sessions/1784692378102_awkmdphn.md) · 75 分 · AI技术与编程工具
+- 2026-07-21 [用AI写网站赚美金，重要的不是AI编程，很多人一开始就错的离谱](../sessions/1784605161579_lh7ew86b.md) · 75 分 · 独立开发与出海创业
+- 2026-07-21 [Why Netflix is betting on systems thinkers—not specialists—in the AI era \| Elizabeth Stone \(CPTO\) - YouTube](../sessions/1784605072999_t7tbtlgr.md) · 75 分 · AI时代的产品与组织管理
+- 2026-07-16 [LLM Wikis and how to give your agents memory - YouTube](../sessions/1784163470755_v5zm3xkf.md) · 75 分 · AI Agent开发
+- 2026-07-16 [Peter Thiel on How to Build a Creative Monopoly - YouTube](../sessions/1784163393781_z4h17usi.md) · 75 分 · 创业与商业系统
+- 2026-07-14 [superdesigndev/loopany-platform: Run your company in loops, Loop Anything](../sessions/1784023383166_bhvwcvyo.md) · 75 分 · AI Agent开发
+- 2026-07-13 [视频动效系统](../sessions/1783922812719_nth0zsjc.md) · 75 分 · 视频动效开发
+- 2026-07-08 [How tech workers are feeling in 2026: a workforce splitting in two](../sessions/1783503897024_tm59go1z.md) · 75 分 · AI与科技职场
+- 2026-07-03 [Engineering for Bounded Cognition](../sessions/1783079797768_gkbh9bye.md) · 75 分 · 软件工程
+- 2026-06-18 [DietrichGebert/ponytail: Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.](../sessions/1781782994405_80vy07ii.md) · 75 分 · AI编程工具
+- 2026-06-11 [How Cursor Trained Composer on Fireworks: Distributed Infrastructure for High-Performance RL - YouTube](../sessions/1781171285673_eurxtu7m.md) · 75 分 · AI模型训练与基础设施
+- 2026-06-02 [给任何开源项目建一份可信架构 wiki：LLM Wiki 范式实战教程](../sessions/1780380725951_w8xa2xiv.md) · 75 分 · AI知识管理
+- 2026-06-01 [Opus 4.8的200页安全报告详细解读：Claude最新模型开始藏心思](../sessions/1780308180589_okqf0sje.md) · 75 分 · 人工智能安全
+- 2026-05-04 [AI 会把软件带到过去够不到的地方吗？FDE 模式真正重要的地方](../sessions/1777855758351_c3z3696y.md) · 75 分 · AI商业化与企业软件
+- 2026-04-27 [当 agent 足够强之后，我们该如何把它们组织起来](../sessions/1777276959728_ld22smdu.md) · 75 分 · AI Agent基础设施
+- 2026-04-10 [Smart Parsing Meets Sharp Retrieval: Combining LiteParse and LanceDB](../sessions/1775819880370_gql5jrhn.md) · 75 分 · AI文档问答系统
+- 2026-03-26 [生成式界面重构AI产品范式](../sessions/1774517252936_8gxhp5lr.md) · 75 分 · AI产品/生成式UI
+- 2026-07-09 [与 Codex 协作处理长时间运行的任务](../sessions/1783555903628_yus8g1bh.md) · 74.5 分 · AI编程与智能体工作流
+- 2026-07-08 [How To Kill The Bloat In Claude Code's System Prompt](../sessions/1783471892074_4kiz1ju0.md) · 74.5 分 · AI开发工具优化
+- 2026-07-07 [\#5 写好一份 Spec 的实战手册](../sessions/1783417736609_04tg0qaf.md) · 74.5 分 · AI辅助软件工程
+- 2026-06-18 [Agent技能自进化双层循环](../sessions/1781783080790_1ns95t1v.md) · 74.5 分 · AI Agent方法论
+- 2026-06-03 [适用于所有任务的框架：Claude Code 中的动态工作流](../sessions/1780449164148_92pbpstu.md) · 74.5 分 · AI工具与智能体工作流
+- 2026-04-28 [Agentic Engineering: How Swarms of AI Agents Are Redefining Software Engineering](../sessions/1777338981403_hcaql4nu.md) · 74.5 分 · AI工程与软件工程
+- 2026-04-23 [How to really stop your agents from making the same mistakes 如何真正阻止你的员工犯同样的错误](../sessions/1776924116517_v2fvz1t1.md) · 74.5 分 · AI Agent工程方法论
+- 2026-04-15 [停止切换，冻结 Context](../sessions/1776240597511_bl1kuxzk.md) · 74.5 分 · 开发效率
+- 2026-04-09 [LLM知识库如何变成第二大脑](../sessions/1775700471316_iijjsv5j.md) · 74.5 分 · AI知识管理
+- 2026-03-27 [Claude Code auto mode: a safer way to skip permissions \\ Anthropic](../sessions/1774583175889_dk15ah6t.md) · 74.5 分 · AI工程与安全
+- 2026-03-27 [marciopuga/cog: Cognitive architecture for Claude Code — persistent memory, self-reflection, and foresight](../sessions/1774576551888_3povncqp.md) · 74.5 分 · AI智能体记忆架构
+- 2026-03-24 [我们如何使 Ramp Sheets 自维护](../sessions/1774326746539_bxlz3s38.md) · 74.5 分 · AI工程实践
+- 2026-03-17 [Harness Engineering 深度解读：AI Agent 时代的工程范式革命](../sessions/1773734115410_8tfcigbt.md) · 74.5 分 · AI工程方法论
+- 2026-03-17 [From Entropy to Epiplexity: Rethinking Information for Computationally Bounded Intelligence](../sessions/1773729408408_t8u90d9o.md) · 74.5 分 · 机器学习理论
+- 2026-03-12 [Three sub-agent patterns you need for your agentic system](../sessions/1773302511052_89k80r74.md) · 74.5 分 · AI Agent系统设计
+- 2026-10-12 [Avi Chawla: Jev for Agent Memory, clearly explained: An agent-memory system often passes con…](../sessions/1791793676744_h1d3yeik.md) · 74 分 · Agent开发
+- 2026-09-30 [Language Models for Text Classification: From Bag-of-Words to Jev](../sessions/1790766879359_u6z98bls.md) · 74 分 · AI技术
+- 2026-09-18 [如何自动化生成导语（完整指南）](../sessions/1789703118797_xj8yvzdx.md) · 74 分 · 商业系统构建
+- 2026-09-17 [GREG ISENBERG: I think we'll see 5x the number of people become hardware and robotics founders …](../sessions/1789612929042_9f3xz02c.md) · 74 分 · 硬件与机器人创业
+- 2026-09-16 [宝玉: Anthropic 工程师讲了一堂 FDE 入门课 https://t](../sessions/1789533273811_2idll57i.md) · 74 分 · 商业系统构建
+- 2026-09-16 [Apple Reference Image: A New Approach for Verified Photography - Apple Security Research](../sessions/1789531426056_v7eyuf5z.md) · 74 分 · 数字内容真实性与安全
+- 2026-09-10 [如何使用 GPT-6 Astra 在自动驾驶模式下创建长篇广告](../sessions/1789009352646_44x5ciqi.md) · 74 分 · AI内容生产
+- 2026-09-08 [cookbook/examples/audio-transcription-cli at main · Liquid4All/cookbook](../sessions/1788860558532_kry2amez.md) · 74 分 · AI 工程与本地推理
+- 2026-08-21 [Jeff Dean 的「1% 法则」：AI 时代，真正稀缺的已经不是写代码](../sessions/1787306574283_gqumrwl0.md) · 74 分 · AI Agent开发
+- 2026-08-17 [HTML over WebSockets: real-time SPAs with barely any JavaScript \| Andros Fenollosa](../sessions/1786943135826_a71ag8u0.md) · 74 分 · Web应用架构
+- 2026-08-13 [牛逼！又一个黑马级别 Agent CLI 出现 — Ante CLI 评测：麻雀虽小，五脏俱全](../sessions/1786613701467_0jh6hors.md) · 74 分 · AI编程工具与Agent开发
+- 2026-08-10 [企业代理工作流的重构逻辑](../sessions/1786354550561_kwot0u13.md) · 74 分 · AI代理与工作流设计
+- 2026-08-04 [genspark-ai/genoffice: An AI-native office suite for macOS and Windows: word processor, spreadsheet, presentations, and PDF.](../sessions/1785840808176_eq0xwy8c.md) · 74 分 · AI产品与工程
+- 2026-08-04 [cloudflare/computer: Give your agent a computer 👾](../sessions/1785833948756_o6im7va2.md) · 74 分 · AI Agent 开发
+- 2026-07-31 [最佳实践：从Multi-Agent到Agent Team](../sessions/1785484156012_nbmiqu66.md) · 74 分 · AI技术与Agent开发
+- 2026-07-30 [Model Configuration \| Kimi Code Docs](../sessions/1785377098289_xwdz0tc1.md) · 74 分 · AI编程工具
+- 2026-07-24 [Why Netflix is betting on systems thinkers—not specialists—in the AI era \| Elizabeth Stone \(CPTO\) - YouTube](../sessions/1784853144539_nefae47i.md) · 74 分 · AI组织与人才管理
+- 2026-07-22 [用 Agent 构建 AI 公司研究库](../sessions/1784694075025_rrvuf6ww.md) · 74 分 · AI研究方法
+- 2026-07-22 [反向信息悖论](../sessions/1784693995202_rkgawnca.md) · 74 分 · 企业AI治理
+- 2026-07-09 [scasella/claude-dynamic-workflows-codex: Run Claude Code dynamic workflows on a local Codex \(GPT\) backend, plus an interactive run viewer](../sessions/1783555780807_wikxj94p.md) · 74 分 · AI工程工具
+- 2026-07-01 [关于怎么把产品卖出去，最贵的 160 条判断](../sessions/1782901242888_xztwcnu5.md) · 74 分 · 产品增长
+- 2026-07-01 [宝玉: Q：我们公司有十几个微服务，现在想让开发用 AI Agent 来做系统设计和编码](../sessions/1782901224155_mybgak25.md) · 74 分 · AI工程实践
+- 2026-06-08 [宝玉: 之所以研究 Claude Design，是因为最近摸索出一套不错的开发模式： 1](../sessions/1780891706207_hh9bqv5w.md) · 74 分 · AI开发工作流
+- 2026-06-04 [Kubernetes and retiring at the top with Kelsey Hightower - YouTube](../sessions/1780558134891_k59n80mn.md) · 74 分 · 技术职业发展
+- 2026-06-02 [yibie: Search as Code：搜索架构的下一次范式转移 Perplexity 刚刚发布了一个新架构，叫 Search as Code（SaC）](../sessions/1780387606537_eeqapupv.md) · 74 分 · AI基础设施
+- 2026-06-02 [腾讯开源 TencentDB Agent Memory：给 OpenClaw 和 Hermes Agent 接上 4 层本地长期记忆，PersonaMem 准确率 48% → 76%](../sessions/1780386309699_nhthlold.md) · 74 分 · AI Agent工程
+- 2026-06-02 [Using AI to write better code more slowly \| Read the Tea Leaves](../sessions/1780380128022_z6uhtrso.md) · 74 分 · 软件工程
+- 2026-05-22 [来自 Codex 官方团队的分享：如何把 Codex 用到极致](../sessions/1779441080895_3xzfy9sp.md) · 74 分 · AI工具与工作流
+- 2026-04-27 [硅谷AI狂飙背后的速度困局](../sessions/1777261707640_z5oiny1l.md) · 74 分 · AI产业观察
+- 2026-04-13 [Designing delightful frontends with GPT-5.4 \| OpenAI Developers](../sessions/1776075074611_cr3m1s7d.md) · 74 分 · AI辅助前端开发
+- 2026-03-25 [陈成: 每个做 AI 编码工具的团队都该认真看这个——https://t](../sessions/1774404443995_xonu4zc2.md) · 74 分 · AI工程与智能体系统
+- 2026-03-17 [Chorus-AIDLC/Chorus: The Agent Harness for AI-Human Collaboration, inspired by the AI-DLC \(AI-Driven Development Lifecycle\)](../sessions/1773734142253_30z10l1b.md) · 74 分 · AI工程化
+- 2026-03-16 [Reverse-engineering Claude's sandbox, then building my own](../sessions/1773653173380_jpqhu4j6.md) · 74 分 · AI智能体基础设施
+- 2026-07-02 [在深度代理中介绍动态子代理](../sessions/1782991563214_t1nu9p6j.md) · 73.5 分 · AI Agent工程
+- 2026-07-01 [对话OpenAI Codex负责人：产品迭代被高估了](../sessions/1782901111182_iwu0lok6.md) · 73.5 分 · AI产品与组织方法论
+- 2026-06-25 [Introducing Omnigent: A Meta-Harness to Combine, Control and Share Your Agents \| Databricks Blog](../sessions/1782360392430_1zboee0i.md) · 73.5 分 · AI Agent基础设施
+- 2026-06-25 [\(1\) Gokul Rajaram: What better interview to summarize today, other than @kunalb11's classic intervi…](../sessions/1782348772573_tyegraow.md) · 73.5 分 · 创业与商业策略
+- 2026-06-17 [轻量编程代理架构解读](../sessions/1781671240702_7nbx3c0y.md) · 73.5 分 · AI编程代理架构
+- 2026-06-15 [yibie: \# 你不能对 AI Agent 小声说话：Stripe 用 12 个实验揭示的 Agent 行为规律 Stripe 的 Minions 系列我们已经翻过两篇了](../sessions/1781517521640_5gz1hz65.md) · 73.5 分 · AI Agent设计
+- 2026-06-09 [回路工程](../sessions/1781000905731_ihu8qnf0.md) · 73.5 分 · AI编程工作流
+- 2026-06-01 [编排税](../sessions/1780307288986_w733q016.md) · 73.5 分 · AI工程效率
+- 2026-05-08 [LangGraph runtime - Docs by LangChain](../sessions/1778206084233_9cwfsd1v.md) · 73.5 分 · AI工程与智能体框架
+- 2026-05-03 [YouMind 创业路上的非共识选择](../sessions/1777775318922_ne9095re.md) · 73.5 分 · AI产品与创业
+- 2026-04-24 [Agent Vault：开源凭证代理和代理保管库](../sessions/1777005422004_86abvjhb.md) · 73.5 分 · AI安全与基础设施
+- 2026-04-24 [多智能体：实际有效的是什么](../sessions/1777005233486_vig5s5nw.md) · 73.5 分 · AI工程实践
+- 2026-03-30 [别再卷模型了，2026 年 Agent 的胜负手在 Harness！给你的Agent 搭"操作系统"吧](../sessions/1774867067161_h1ugld7u.md) · 73.5 分 · AI Agent工程
+- 2026-03-30 [如何解决长时间运行的自主代理工程工作流问题](../sessions/1774867061920_dlg5qvr1.md) · 73.5 分 · AI代理工程
+- 2026-03-26 [生成式界面技术全景解读](../sessions/1774516114718_kbsyg37p.md) · 73.5 分 · AI工程与生成式UI
+- 2026-03-25 [How Moda Builds Production-Grade AI Design Agents with Deep Agents](../sessions/1774404386738_dthr2yiq.md) · 73.5 分 · AI智能体工程
+- 2026-03-20 [我读了 Hermes Agent 的记忆系统，它修正了 OpenClaw 出错的地方](../sessions/1774006426797_1urcrc72.md) · 73.5 分 · AI Agent系统设计
+- 2026-03-18 [sondera-ai/sondera-coding-agent-hooks: Hooking implementations and supporting tools for various coding agents \(Claude, Cursor, Gemini, etc\)](../sessions/1773807360908_nirgxw2l.md) · 73.5 分 · AI Agent安全与工程基础设施
+- 2026-09-29 [Run and Serve Decision Models Locally with Unsloth: Laya + Jev API \| Unsloth Documentation](../sessions/1790672319077_8bna3kqx.md) · 73 分 · AI模型部署与集成
+- 2026-09-18 [Lenny Rachitsky: My biggest takeaways from @wardadamp \(Head of Talent at Cursor\): 1](../sessions/1789723645302_s4komcjr.md) · 73 分 · 人才招聘与组织建设
+- 2026-09-18 [I hired Hermes as my Chief of Staff](../sessions/1789702961077_xigmxdg6.md) · 73 分 · AI Agent系统构建
+- 2026-09-18 [Introducing System One Models &amp; Jev - TypeSafe AI Blog](../sessions/1789696756121_a948eicr.md) · 73 分 · AI技术与Agent开发
+- 2026-09-18 [卡颂: 如果你在用 Grill-Me 对齐需求，给你推荐一种更高效的方式 本质来说，Grill-Me 是人与 Agent 就一棵需求树进行 BFS 遍历对齐，之所以要遍…](../sessions/1789690975191_tyxwplx1.md) · 73 分 · AI Agent开发
+- 2026-08-17 [DeepSeek Harness 开发者预览版：一切皆插件](../sessions/1786943137391_14qk94zn.md) · 73 分 · AI Agent开发
+- 2026-08-10 [GREG ISENBERG: 23 ways I'd use AI agents to grow my startup to $1M ARR or PMF \(my running list\)…](../sessions/1786354471324_8jy0bpvv.md) · 73 分 · AI代理与增长自动化
+- 2026-08-10 [howie.serious: Ben Thompson 的 Stratechery，跟 ai 投资方面的个人判断密切相关，所以每篇付费研报都会认真阅读（何况150刀订阅费已经花了🤣）](../sessions/1786354257842_sohrf4jl.md) · 73 分 · AI商业与投资分析
+- 2026-08-04 [IndenScale: LHA 和 Multi Agent 是同一个问题 从 Sequential Agent 到 Parallel Agent 人工智能正在进入 Agent 时代](../sessions/1785839847176_8uwxyot6.md) · 73 分 · AI Agent 架构
+- 2026-07-29 [Open-weight AI is having its Kubernetes moment. Let's not ruin it.](../sessions/1785288273529_ibdaflpn.md) · 73 分 · AI产业与开源生态
+- 2026-07-28 [Building a Software Powerhouse with No VC Money \| DHH, 37signals - YouTube](../sessions/1785207235837_jxa0ekmo.md) · 73 分 · 创业与商业系统
+- 2026-07-28 [Elvis: I spent 2 weeks fixing my AI startup's pricing](../sessions/1785207203896_p5xmx1t9.md) · 73 分 · 创业与商业系统
+- 2026-07-23 [$4.6B CEO: Excellence Is the Capacity to Take Pain - YouTube](../sessions/1784790960504_qzc5jkc2.md) · 73 分 · 企业转型与组织管理
+- 2026-07-22 [关于人工智能咨询的真相（服务87位客户与4年之后）](../sessions/1784692633474_29bq2jdt.md) · 73 分 · 创业与客户交付
+- 2026-07-21 [yichen-skills/README.zh.md at main · mcncarl/yichen-skills](../sessions/1784604990607_lkvyjrp1.md) · 73 分 · AI Agent开发
+- 2026-07-09 [/brief-to-problem: 模糊的利益相关者反馈转化为制胜方向](../sessions/1783556213352_ktlt4bbt.md) · 73 分 · 产品管理
+- 2026-07-09 [Field Guide to Fable — Thariq Shihipar, Anthropic - YouTube](../sessions/1783555756129_a3zpceec.md) · 73 分 · AI工程与智能体协作
+- 2026-07-06 [knowledge-catalog/okf/SPEC.md at main · GoogleCloudPlatform/knowledge-catalog](../sessions/1783301506230_asx4agmi.md) · 73 分 · 知识管理
+- 2026-07-06 [AI 开发时代，别让自己困在「测试员」的角色里](../sessions/1783301155441_v7s6gqiy.md) · 73 分 · 软件工程
+- 2026-07-03 [yibie: HN 吵了 300 楼才达成共识：你还需要一个领域，只是不再是写代码 最近 Brent Horsting 的一篇文章在 HN 引发了激烈讨论](../sessions/1783078759058_4ri4at3x.md) · 73 分 · AI与软件工程
+- 2026-06-08 [唐华斑竹🦅: Claude Code 用到这个程度，我算是开眼了 Matt Van Horn 最近写了一篇长文，把他用 Claude Code 的所有技巧和工作流全盘托出了](../sessions/1780891733321_n8u8ms1x.md) · 73 分 · AI开发工作流
+- 2026-06-01 [Pydantic 修复了我的代理的记忆](../sessions/1780307340920_wl384y4m.md) · 73 分 · AI智能体
+- 2026-05-03 [认识 Scout。这家开源公司的大脑](../sessions/1777775474359_687nr2nc.md) · 73 分 · AI Agent与企业知识管理
+- 2026-05-03 [Claude Code 的 32 个使用技巧 - 入门，进阶，高阶](../sessions/1777773891761_qxx3riar.md) · 73 分 · AI编程工具
+- 2026-04-28 [宝玉: 《Cursor 3 反馈整理：用户真正想要的不仅是“更炫的 IDE”，还想它是一个可靠的 AI 开发工作台》 整理自 Eric Zakariasson 征集 C…](../sessions/1777356469261_o2w5ja5c.md) · 73 分 · AI开发工具
+- 2026-04-24 [Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym — wi… \| Readwise](../sessions/1777005213812_lgb5cyhz.md) · 73 分 · AI工程与组织实践
+- 2026-04-22 [actionbook/ascent-research: research cli for agent](../sessions/1776826940689_0goxvfj8.md) · 73 分 · AI Agent 工具与工作流
+- 2026-06-04 [你的 token spend 是一个 AI 架构问题，而不仅仅是模型问题](../sessions/1780558079965_li3jqtu9.md) · 72.5 分 · AI系统架构
+- 2026-06-03 [Kieran Zhang: Thariq 深度解析动态工作流： 1](../sessions/1780471838816_gxme6t9e.md) · 72.5 分 · AI工作流
+- 2026-06-02 [yibie: 多 Agent 系统炒了一年，生产环境里真正活下来的只有三种模式](../sessions/1780386252217_hlip5e4y.md) · 72.5 分 · AI Agent系统设计
+- 2026-06-02 [规范驱动开发是人工智能编码的新默认做法](../sessions/1780380596738_802mjz09.md) · 72.5 分 · AI辅助软件工程
+- 2026-06-02 [如何像专家一样使用Codex](../sessions/1780366314011_fc2kn22b.md) · 72.5 分 · AI编程工具
+- 2026-06-01 [affaan-m/ECC: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.](../sessions/1780308513906_6bo7fd3l.md) · 72.5 分 · AI编程工具
+- 2026-04-28 [The Runtime Behind Production Deep Agents](../sessions/1777338976973_n31zm4kk.md) · 72.5 分 · AI Agent工程化
+- 2026-03-27 [宝玉: 林俊旸（Junyang Lin）新的文章：大模型的下一个阶段，不是让模型“想得更久”，而是让模型“为了行动而思考”](../sessions/1774583145726_oyhtdpye.md) · 72.5 分 · 人工智能/大模型
+- 2026-03-27 [How I Built Vue Lynx with AI in Two Weeks 我如何在两周内使用 AI 构建 Vue Lynx](../sessions/1774582903598_4rr7k8mm.md) · 72.5 分 · AI辅助软件工程
+- 2026-03-26 [Reverse-engineering Claude's generative UI - then building it for the terminal](../sessions/1774517388321_0z5jq2c5.md) · 72.5 分 · AI产品工程
+- 2026-03-20 [构建 Claude 代码的经验：像智能体一样观察](../sessions/1774001263136_oebs522n.md) · 72.5 分 · AI Agent 设计
+- 2026-03-17 [AI Field Report 4: Context Is Not Memory](../sessions/1773729208979_mpkb5n79.md) · 72.5 分 · AI Agent 记忆系统
+- 2026-10-12 [目前用 AI 制作产品动画的 12 种最佳方法](../sessions/1791793642194_19cvsig4.md) · 72 分 · AI产品视频制作
+- 2026-09-23 [机器人数据是一门糟糕的生意](../sessions/1790128815413_6mxae1bw.md) · 72 分 · 创业与商业模式
+- 2026-09-20 [如何在单个 GPU 上服务 100 个微调模型，清晰解释](../sessions/1789873855344_gcotgx7a.md) · 72 分 · AI模型部署与推理服务
+- 2026-09-18 [How Claude Shannon Invented The Future - YouTube](../sessions/1789723571308_wj26jx6b.md) · 72 分 · 创新思维与问题解决
+- 2026-09-17 [陈成: Claude Code 团队自己，已经有 70\~80% 的工作不在终端里做了](../sessions/1789614485475_5io6erpd.md) · 72 分 · AI Agent开发
+- 2026-09-16 [Why you should work on AI for AI Research — Richard Socher of Recursive](../sessions/1789533442296_kfv9e5oz.md) · 72 分 · AI研究自动化
+- 2026-09-10 [On-device intelligence for every product](../sessions/1789007513178_om6dyv59.md) · 72 分 · 端侧AI产品开发
+- 2026-09-09 [copperhead. Cursor for circuit boards.](../sessions/1788921462250_qdk152z4.md) · 72 分 · AI工程工具
+- 2026-08-21 [创业2年半后，想跟你分享关于AI组织的这7点心得。](../sessions/1787301094634_obr0tfzd.md) · 72 分 · AI组织与管理
+- 2026-08-21 [企业做 AI，为什么总是忍不住自己造轮子？](../sessions/1787281901436_3yij1e0h.md) · 72 分 · 企业AI战略
+- 2026-08-11 [Docker Sandboxes – Disposable, isolated sandboxes for AI agents \| Hacker News](../sessions/1786412361058_uqza0gjl.md) · 72 分 · AI Agent安全与基础设施
+- 2026-08-10 [Dithered QR code generator](../sessions/1786353689802_khj5kxxi.md) · 72 分 · 图像处理技术
+- 2026-08-07 [vLLM 背后的人：一个开源项目如何长成一家公司](../sessions/1786093931242_10xig35s.md) · 72 分 · AI基础设施与开源创业
+- 2026-07-31 [Read This Before You Buy That TV Streaming Stick](../sessions/1785483983055_j09ckyev.md) · 72 分 · 物联网安全
+- 2026-07-29 [Free Ink · An open ecosystem for e-readers](../sessions/1785288189414_p70nxi7m.md) · 72 分 · 开源硬件
+- 2026-07-24 [Peter Thiel on How to Build a Creative Monopoly - YouTube](../sessions/1784853166379_8es2udaw.md) · 72 分 · 创业与商业战略
+- 2026-07-23 [梁文锋投资者交流会（完整版全文）](../sessions/1784798945639_8ohr1xy3.md) · 72 分 · AI战略与商业模式
+- 2026-07-22 [yibie: 推荐这个 Pi 社区的实战总结](../sessions/1784695005332_pfgrnmzg.md) · 72 分 · AI Agent开发
+- 2026-07-16 [Science &amp; Tools of Learning &amp; Memory \| Dr. David Eagleman - YouTube](../sessions/1784166697696_5wh84uu0.md) · 72 分 · 学习方法与个人能力建设
+- 2026-07-16 [AI时代“超级高中生” 、大学外的第三种可能与中国创新教育｜探访北京探月学校 - YouTube](../sessions/1784166437481_yqkf36xy.md) · 72 分 · 教育创新
+- 2026-07-06 [Fable 野外指南：发现你的未知](../sessions/1783332901754_3o50r09s.md) · 72 分 · AI协作与提示工程
+- 2026-07-02 [yibie: 推荐这篇文章，作者在 Google 和 Microsoft 都写过 design doc，他认为好的设计文档可以节省你数年的开发时间](../sessions/1782991622521_k04fukay.md) · 72 分 · 软件工程
+- 2026-06-29 [我不想使用你的代理](../sessions/1782713651566_s5coztls.md) · 72 分 · AI产品设计
+- 2026-06-25 [AI智能体的能力授权模型](../sessions/1782360706222_179qvg68.md) · 72 分 · AI安全与权限架构
+- 2026-06-17 [DeepSeek-Reasonix/docs/SPEC.md at main-v2 · esengine/DeepSeek-Reasonix](../sessions/1781671076028_05sgknzh.md) · 72 分 · AI编程代理架构
+- 2026-06-16 [Mitchell Hashimoto: My heuristic is that any diff an agent generates over \~1500 lines is too big and…](../sessions/1781599399539_8v95bjig.md) · 72 分 · AI辅助编程
+- 2026-06-15 [与钉钉新 CEO 陈宇森的两次访谈：未来的软件和 Agent 推演](../sessions/1781521103389_98nee8vi.md) · 72 分 · 人工智能
+- 2026-06-11 [Satya Nadella on AI: @NoPriorsPodcast x Latent Space Crossover Special at Microsoft Build 2026 - YouTube](../sessions/1781168224355_hw2uqk7v.md) · 72 分 · AI战略与平台生态
+- 2026-06-04 [生成式 UI 是新的前端](../sessions/1780558081156_89hgw3uu.md) · 72 分 · AI应用开发
+- 2026-06-03 [我所知道的每一个智能体工程技巧（2026年6月）](../sessions/1780449182122_zhdg3zgd.md) · 72 分 · AI工程
+- 2026-06-02 [QingYue: 这是一条非常宝贵的被官方认证过的codex self improve prompt： 推荐使用： “回顾我过去 30 天的最近工作（如果历史更短，则回顾所有可用…](../sessions/1780386353264_yrlzgx6v.md) · 72 分 · AI工作流优化
+- 2026-06-02 [人工智能编程重质不重速](../sessions/1780379628561_24u5k8et.md) · 72 分 · AI编程
+- 2026-04-27 [The West Forgot How to Build. Now It's Forgetting Code](../sessions/1777260326185_cbv5vjl6.md) · 72 分 · 软件工程与AI
+- 2026-03-20 [构建 Claude 代码的经验：我们如何运用技能](../sessions/1774001285541_yfrwtbrk.md) · 72 分 · AI工程与开发效率
+- 2026-03-15 [teng-lin/agent-fetch: Full-content web fetcher for AI agents — Chrome TLS fingerprinting, browser impersonation, and multi-strategy article extraction](../sessions/1773557068427_6km4ml5k.md) · 72 分 · AI工具与内容抓取
+- 2026-07-03 [meng shao: 60 分钟，成为 AI Native 组织：人、Agent 与上下文三层系统 来自 @gregisenberg 和 @TheoTabah 60 分钟的深度对谈，…](../sessions/1783078014412_46wj0p2v.md) · 71.5 分 · AI组织与工作流
+- 2026-07-01 [编码代理框架](../sessions/1782900845720_53g8vx82.md) · 71.5 分 · AI工程
+- 2026-06-15 [Leo｜一个人 + AI: 之前骂 Claude 变笨，当时还没完全搞懂](../sessions/1781519965372_edgeowrc.md) · 71.5 分 · AI工具使用与调试
+- 2026-06-02 [How OpenAI uses Codex \| OpenAI](../sessions/1780380768626_xr1vsrp8.md) · 71.5 分 · AI编程工具
+- 2026-05-03 [AI investor + engineer discuss the current state of AI - YouTube](../sessions/1777812334278_32vy8ko0.md) · 71.5 分 · 人工智能
+- 2026-04-27 [How To Build A Company With AI From The Ground Up - YouTube](../sessions/1777264051754_8h3syq7i.md) · 71.5 分 · AI与创业组织管理
+- 2026-03-27 [building a digital doorman - george larson](../sessions/1774581608826_nua2g4mr.md) · 71.5 分 · AI代理系统设计
+- 2026-03-26 [生成式UI四条演进主线](../sessions/1774516500816_skrgm2gb.md) · 71.5 分 · AI应用开发
+- 2026-03-19 [AprilNEA: 在 Claude Code 的虚拟机里，我们发现了什么 起点 我们对 Claude Code 运行环境做了一次完整的逆向工程](../sessions/1773884986470_s2iisrzj.md) · 71.5 分 · AI基础设施与产品战略
+- 2026-03-18 [Can LLMs Be Computers? \| Percepta](../sessions/1773828447308_rznd146s.md) · 71.5 分 · 人工智能
+- 2026-03-14 [How Karpathy's Autoresearch Works And What You Can Learn From It](../sessions/1773484130017_b50up1ru.md) · 71.5 分 · AI Agent系统设计
+- 2026-03-12 [ZhangHanDong/agent-spec: \`agent-spec\` is an AI-native BDD/spec verification tool for task execution.](../sessions/1773285139099_ucafjp6v.md) · 71.5 分 · AI辅助开发
+- 2026-09-29 [宝玉: Ben Thompson 的这期播客内容相当不错，不只是讲 OpenAI 和 Dropbox 的观点比较独特，其他内容也值得一看](../sessions/1790676169094_lg5yah8o.md) · 71 分 · AI产业与商业战略
+- 2026-09-29 [Tobi Lütke: The Skills AI Makes More Valuable - YouTube](../sessions/1790676123541_jnds97qj.md) · 71 分 · AI Agent与组织协作
+- 2026-09-20 [老板会用AI了，公司还是老样子，问题出在哪](../sessions/1789885281357_oc1o65st.md) · 71 分 · 企业AI落地
+- 2026-09-18 [用 AI 画了几天 PCB 之后，我发现大家争论的根本不是一回事](../sessions/1789703251192_9ts0xz4i.md) · 71 分 · AI辅助硬件开发
+- 2026-09-17 [王二鹅 ERE: Lenny 在新一期的邮件中，整理了一篇 60 多个增长的玩法，本来以为又是 referral、SEO、influencer 这些传统的东西（不是说传统的东西没…](../sessions/1789616063367_dhpwdafv.md) · 71 分 · 商业增长
+- 2026-09-15 [Leo｜LeoLabs.me: 最近看到程序员鱼皮分享自己每个月烧很多 Tokens，用 AI 做了十几套工作流](../sessions/1789446575612_cleu5yyz.md) · 71 分 · AI工作流与自动化
+- 2026-08-26 [Andy Konwinski: Introducing Headlong, an open source microharness for persistent agents: self-gu…](../sessions/1787738777473_lssldrbl.md) · 71 分 · AI Agent开发
+- 2026-08-21 [Bruce Guai: 最近读到 a16z Julie 写的《Be AI-Native and AI-Proof》](../sessions/1787294135252_aqckbu1y.md) · 71 分 · AI产品与创业
+- 2026-08-21 [DataDan｜AI Consultant + Builder: 聊聊我从国内裁员潮里走出来,落地大阪做独立 AI 工程师的心路和落地过程](../sessions/1787294128790_wiw2u3e5.md) · 71 分 · 职业转型与独立创业
+- 2026-08-17 [Super Mario Derivations](../sessions/1786943309437_ionwivo2.md) · 71 分 · 软件工程与构建系统
+- 2026-07-30 [Turning a Dumb AC Unit Smart \(Without Losing my Security Deposit\)](../sessions/1785377069663_l666dfvd.md) · 71 分 · 物联网与智能家居
+- 2026-07-16 [一红16年，干啥啥赚钱？｜屠龙博士创业的秘密！ - YouTube](../sessions/1784166567751_6s1ta9n3.md) · 71 分 · 创业与商业系统
+- 2026-07-15 [如何将 AI 转化为动态设计（免费插件+指南）](../sessions/1784101331271_40uspyfz.md) · 71 分 · AI视频与动态设计
+- 2026-07-09 [OfficeCLI/README\_zh.md at main · iOfficeAI/OfficeCLI](../sessions/1783583985227_ekdhopao.md) · 71 分 · AI工具与办公自动化
+- 2026-07-07 [EdgeBench \| Scaling Laws of Environment Learning](../sessions/1783383804663_gfntofma.md) · 71 分 · 人工智能/智能体评测
+- 2026-07-06 [Trystan-SA/claude-design-system-prompt: Reverse-engineered system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator.](../sessions/1783301387610_2mc4sxpd.md) · 71 分 · AI提示词工程
+- 2026-07-03 [英特尔 CEO 陈立武访谈全解读：半导体供应链上的投资机会在哪里](../sessions/1783078116261_s3l1blev.md) · 71 分 · 半导体产业分析
+- 2026-07-02 [Dynamic subagents - Docs by LangChain](../sessions/1782990210339_vsp11wk1.md) · 71 分 · AI Agent开发
+- 2026-06-25 [Lenny Rachitsky: My biggest takeaways from Claude Code/Cowork lead @Nerdi\_Yogi: 1](../sessions/1782349506807_tfyipwr1.md) · 71 分 · AI产品与工程管理
+- 2026-06-18 [刚开源就 SOTA，这个项目有点东西：SAG 凭什么跑赢 GraphRAG，省钱，还扛得住海量企业数据？](../sessions/1781783126306_jj2vmp5i.md) · 71 分 · 人工智能
+- 2026-06-15 [BadUncle: 我不懂开源，我让opus帮我做了一个评价，并结合deepseek作为案例分析 ------ 总结不太对,有几处是硬伤](../sessions/1781519957221_o3ieexd1.md) · 71 分 · 开源与软件许可
+- 2026-06-15 [宝玉: 微软 CEO Satya Nadella 发了一篇长文，提出了一个新概念：Token 资本](../sessions/1781517692792_gnn87cqo.md) · 71 分 · AI战略与企业数字化
+- 2026-06-11 [用 Fable 5 设计循环](../sessions/1781169897791_6ja4hfrc.md) · 71 分 · AI智能体方法论
+- 2026-06-02 [multica-ai/andrej-karpathy-skills: A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.](../sessions/1780380785964_g9sdp0b2.md) · 71 分 · AI编程
+- 2026-06-01 [我怎么用 AI 编程 2026.06](../sessions/1780307253457_spkd2eft.md) · 71 分 · AI编程
+- 2026-05-08 [Codex指令保姆级教程](../sessions/1778224738704_0gmodyrx.md) · 71 分 · AI编程工具
+- 2026-04-27 [Luo Fuli: OpenClaw, Agent Frameworks — The AI Paradigm Has Already Changed Dramatically\! - YouTube](../sessions/1777277817501_fcgkva00.md) · 71 分 · 人工智能
+- 2026-04-27 [全员 token-maxxing，一场没人敢停的军备竞赛](../sessions/1777261610989_0dmip5gx.md) · 71 分 · 人工智能产业观察
+- 2026-04-24 [CI/CD Breaks at AI Speed: Tangle, Graphite Stacks, Pro-Model PR Review — Mikhail Parakhin, Shopify - YouTube](../sessions/1777005302755_6jkqu5wr.md) · 71 分 · AI工程与研发效能
+- 2026-04-14 [An AI state of the union: We’ve passed the inflection point &amp; dark factories are coming - YouTube](../sessions/1776145521557_kl30tfyq.md) · 71 分 · AI软件工程
+- 2026-04-03 [我们如何构建深度智能体的评估](../sessions/1775196988671_t029ss0m.md) · 71 分 · AI智能体评估
+- 2026-03-25 [Agent Skills 复利工程：你的烂笔记比代码值钱](../sessions/1774404497491_ya2as50b.md) · 71 分 · AI工程方法论
+- 2026-07-08 [Michael Pettis: Noah Smith gets much right in his argument as to how China managed the huge prop…](../sessions/1783500864254_1m0f07v1.md) · 70.5 分 · 宏观经济
+- 2026-06-17 [Mechanical Watch – Bartosz Ciechanowski](../sessions/1781660841139_76wu437m.md) · 70.5 分 · 工程技术科普
+- 2026-06-17 [循环工程的艺术](../sessions/1781660764928_nqjnuf37.md) · 70.5 分 · AI智能体工程
+- 2026-06-16 [用 Fireworks 构建一个便宜 100 倍的跟踪判断器](../sessions/1781599078158_pcih0ilm.md) · 70.5 分 · AI应用评估
+- 2026-06-11 [旧读陷阱](../sessions/1781152894530_uv7pu4m4.md) · 70.5 分 · AI Agent工程
+- 2026-06-04 [这应该是目前最接近正解的 Agent 记忆方案](../sessions/1780558047506_45nwnwpy.md) · 70.5 分 · AI Agent
+- 2026-06-03 [网络并非为浏览器代理而构建，以下是我们如何搭建一个工具使其正常工作的方法。](../sessions/1780448935074_iycbb4sc.md) · 70.5 分 · AI Agent工程
+- 2026-06-02 [Agentic Design Patterns：一本让我重新理解"Agent 到底是什么"的书](../sessions/1780386266119_ngoo1o2h.md) · 70.5 分 · AI工程
+- 2026-06-02 [金融宏观研究代理架构实践](../sessions/1780368173957_s74ulw1d.md) · 70.5 分 · AI Agent 工程
+- 2026-05-27 [在中国，FDE 最危险的结局，是变成驻场外包](../sessions/1779874367783_hhpycj7c.md) · 70.5 分 · AI产品与企业交付
+- 2026-05-12 [代理开发生命周期](../sessions/1778560129342_9mkqynwr.md) · 70.5 分 · AI工程与智能体开发
+- 2026-04-28 [Lenny Rachitsky: My biggest takeaways from @evanspiegel: 1](../sessions/1777361684588_6feea94l.md) · 70.5 分 · 产品与增长
+- 2026-03-27 [AI 存储系统的现状：基准测试、架构及实际有效的方法](../sessions/1774583148763_6vz5beje.md) · 70.5 分 · AI系统架构
+- 2026-03-27 [智能体产品的行为系统竞争力](../sessions/1774581081343_8q1gmue5.md) · 70.5 分 · AI工程
+- 2026-03-16 [智能体工程的 8 个等级【译】](../sessions/1773655921420_fhdcllba.md) · 70.5 分 · AI工程方法论
+- 2026-09-18 [中国经济，好还是差](../sessions/1789704889662_jy9cm0h7.md) · 70 分 · 宏观经济分析
+- 2026-09-16 [DataDan｜AI Consultant + Builder: 我现在越来越觉得，AI Agent 最有价值的地方，可能根本不是替公司省多少人，而是它有一种很尴尬的能力：把一家公司平时努力维持的那些“大家都懂，但最好别说破”…](../sessions/1789533207437_v3aehx8t.md) · 70 分 · AI Agent开发与组织治理
+- 2026-09-16 [JakeATX/llamAmpere: llama.cpp fork for significantly improved performance on Ampere \(especially RTX 3090 / 3090 Ti\): TurboQuant KV cache, MTP speculative decoding with a 64K draft-vocabulary shortlist…](../sessions/1789520340871_fcudukhv.md) · 70 分 · 大模型推理优化
+- 2026-08-26 [OneCamp · Governed AI on your own server](../sessions/1787714289171_f715of37.md) · 70 分 · AI Agent治理与协作平台
+- 2026-08-21 [Alpha哥AI投资日记 🌴 📈: Harvey 是现在最成功的 Legal AI 公司之一，ARR 已经大约 3](../sessions/1787285728248_v20juzdk.md) · 70 分 · AI商业与投资分析
+- 2026-08-17 [Cultivating a state of mind where new ideas are born](../sessions/1786943397267_vjczlodw.md) · 70 分 · 个人能力建设
+- 2026-08-10 [How I use LLMs to learn complex topics · Laurentiu Raducu](../sessions/1786353793857_9lc13fj0.md) · 70 分 · 学习方法
+- 2026-08-07 [Mantra Wang: @Ariston\_Macro @grok 原文地址，或者书籍下载地址](../sessions/1786073572430_ur2x8fqp.md) · 70 分 · 决策科学与市场机制
+- 2026-07-28 [如何让 Fable 观看视频只需几美分](../sessions/1785207328571_4rvmimuy.md) · 70 分 · AI Agent 开发
+- 2026-07-28 [The crucial emotional skill most adults were never taught \| Becky Kennedy - YouTube](../sessions/1785202579746_nujy1kar.md) · 70 分 · 个人能力建设
+- 2026-07-22 [赵纯想: laper 方法： 1、离大厂三条街](../sessions/1784699754145_uiycc661.md) · 70 分 · AI应用创业策略
+- 2026-07-22 [yibie: 推荐这个思路](../sessions/1784694052090_fkrszze5.md) · 70 分 · AI Agent 工作流
+- 2026-07-21 [做好介绍，建立强大联盟，赢。](../sessions/1784616860630_qu2mdher.md) · 70 分 · 商业关系与人脉网络
+- 2026-07-21 [Shann³: what's the difference between a loop and a graph](../sessions/1784605242023_rxop2bw6.md) · 70 分 · AI Agent开发
+- 2026-07-16 [AI's impact on the tech workforce \| Annual AI sentiment survey \(Noam Segal\) - YouTube](../sessions/1784166790774_z0lerwjq.md) · 70 分 · AI与科技职场
+- 2026-07-16 [weaviate/elysia: Python package and backend for the Elysia platform app.](../sessions/1784161527890_i8dythnu.md) · 70 分 · AI Agent开发
+- 2026-07-09 [Why AI Infrastructure must evolve for Agent Experience — Akshat Bubna, Modal CTO](../sessions/1783567626527_wi5eql8c.md) · 70 分 · AI基础设施
+- 2026-07-07 [microsoft/markitdown: Python tool for converting files and office documents to Markdown.](../sessions/1783418418597_d5bnd5c9.md) · 70 分 · 开发工具
+- 2026-07-03 [构建一个针对任何流程的 Claude 代码代理团队 - 在 1 个提示中](../sessions/1783078011267_pkpmzy49.md) · 70 分 · AI智能体编排
+- 2026-06-29 [LOOP 基础使用方法](../sessions/1782707499737_a0im4z7d.md) · 70 分 · AI工作流
+- 2026-05-19 [How Claude Code works in large codebases: Best practices and where to start \| Claude](../sessions/1779153058220_uiyvgvgi.md) · 70 分 · AI辅助编程
+- 2026-05-05 [browser-trace by browserbase/skills](../sessions/1777954750119_5wy1h8zv.md) · 70 分 · 浏览器自动化调试
+- 2026-05-03 [陈成: 写了个小工具 codexthropic，一个本地 Node 代理，把 Anthropic Messages API 翻译成 OpenAI Codex Respo…](../sessions/1777773261886_a2karj5e.md) · 70 分 · AI 编程工具
+- 2026-05-01 [陈成: 发现一个工程水准极高的项目：Codex++，给 OpenAI Codex 桌面应用做的插件系统](../sessions/1777627739404_mdbwbu8e.md) · 70 分 · 软件工程
+- 2026-04-27 [How Anthropic’s product team moves faster than anyone else \| Cat Wu \(Head of Product, Claude Code\) - YouTube](../sessions/1777278168486_lsnu40np.md) · 70 分 · AI产品管理
+- 2026-03-20 [构建 Claude Code 的经验：提示词缓存就是一切](../sessions/1774001263136_rcirxhuy.md) · 70 分 · AI工程
+- 2026-07-02 [用 Codex + Remotion 实现无痛自媒体视频日更，涨粉过万：把剪视频变成维护一条生产线](../sessions/1782985500406_1rsnqhct.md) · 68 分 · AI内容生产
+- 2026-09-15 [weiguo zhang: 曾鸣最新访谈：2026，像极了1995年 这是我读完访谈后很共鸣的感受](../sessions/1789466161423_8h45dk1r.md) · 67 分 · AI创业与商业战略
+- 2026-09-08 [Paul Graham On Startups, Ambition, and Great Founders - YouTube](../sessions/1788861794415_hacpzmht.md) · 64 分 · 创业与商业
+- 2026-08-28 [做一个能赚钱的自媒体运营（自媒体执行手册2）](../sessions/1787903987404_uvt9aw77.md) · 64 分 · 自媒体运营
+- 2026-09-15 [编号456: 从参与百万项目到泥坑打滚，分享我的创业经历⬇ 01｜19岁的时候，大家都说我是公司里最有未来的人 19岁身处国内头部广告公司，每天参与小米、华为、奢侈品的百万级…](../sessions/1789466151440_xst114jq.md) · 63 分 · 创业与商业
+- 2026-07-30 [Axel Bitblaze 🪓: You can turn claude code into a cinematic video studio with one skill](../sessions/1785386017840_n8rvo8n2.md) · 63 分 · AI编程工具
+- 2026-04-07 [我的 Vibe Coding 项目](../sessions/1775543950147_nze6v8w1.md) · 61.5 分 · AI开发实践
+- 2026-09-15 [程序员鱼皮: 每月烧上万块的 Tokens，我都拿 AI 做了些什么](../sessions/1789457533559_1ifmea2b.md) · 61 分 · AI工作流与效率工具
+- 2026-03-24 [CLAUDE + OPENART WORLDS. The Virtual Production Pipeline](../sessions/1774321004641_qy4zwfkk.md) · 60.5 分 · AI设计工作流
+- 2026-09-15 [如何躺着赚钱。从20岁到现在的躺赚体系。（经验，思考，以及案例）](../sessions/1789465016503_limnkp98.md) · 60 分 · 商业系统构建
+- 2026-09-15 [dontbesilent: 1/ 如何在 24h 内拥有自己的生意，并开始盈利](../sessions/1789465764653_080h3hhl.md) · 59 分 · 创业与商业
+- 2026-07-03 [Agent / daemon — summarize](../sessions/1783064355107_dwjqt4pq.md) · 58 分 · AI Agent工程文档
+- 2026-03-26 [truefoundry/tfy-voice-analyser-agent: Voice call analyzer using DeepAgents + TFY AI Gateway + Linear MCP](../sessions/1774498708789_bcjzn526.md) · 57.5 分 · AI应用工程
+- 2026-07-02 [Mengke Wang: 今天是7月1号，2026年刚好过了一半，分享我每半年都会问自己的8个问题](../sessions/1782985592817_v5n101u0.md) · 55.5 分 · 个人成长
+- 2026-09-20 [县太爷的真实人生：从杜凤治370万字日记，看清代基层官员的权与苦、贪与怕](../sessions/1789863235039_pypuv883.md) · 55 分 · 历史与制度分析
+- 2026-09-18 [在悉尼和稀泥: 说一下我今年聊到的这些老板吧](../sessions/1789700410003_3vhck9rq.md) · 55 分 · 创业与商业经营
+- 2026-09-18 [单条视频 一亿播放的拍摄教程，自媒体执行手册（1）](../sessions/1789702006681_vrwqw9c4.md) · 53 分 · 内容创作
+- 2026-08-07 [海明Dev: 我做 App 已经两年了，前几天统计了一下，收入刚好超过 50 万 虽然这个数字并不多，但是我觉得这样的生活是非常轻松的，因为我的工作时间很少，大部分收入都是被…](../sessions/1786091456952_3gp017wn.md) · 50 分 · 创业与商业
+- 2026-09-18 [Xiaowen: 和管理的底层规律如出一辙](../sessions/1789700858298_kxxbdyf0.md) · 49 分 · 个人能力建设
+- 2026-08-07 [Mr Panda: 受过良好教育的人， 并且在大城市里生活的](../sessions/1786093854470_fqfjhl99.md) · 49 分 · 职业发展与个人能力建设
+- 2026-08-07 [Eminent\_minds: STRANGE FATHERHOOD ADVICE I GOT FROM AN OLDER DAD THAT ACTUALLY WORKS: 1](../sessions/1786073682129_8jlzf0jx.md) · 45 分 · 家庭教育
+- 2026-09-18 [Ex-NVIDIA Engineer: Why AI Is About to Get 1000x Cheaper - YouTube](../sessions/1789721841339_ao6a3xcd.md) · 44 分 · AI基础设施
+- 2026-07-09 [卖火柴的阿甘: 这几天在跟国内谈出货的事快把我给整抑郁了，都做差不多的产品，我们在美国规规矩矩的投入开发硬件软件赚辛苦钱做所谓能长久的行业客户，而在香港靠着深圳恐怖的加工能力和…](../sessions/1783590003149_ii4f6wz1.md) · 41 分 · 商业观察
+- 2026-09-23 [文档串起智能编程规划实施与验收](../sessions/1790135371874_a2ylq65s.md)
+- 2026-08-26 [DataDan｜AI Consultant + Builder: 在京阪神跑项目，最怕客户一上来就说：“我们资料很多，能不能一个月做个中日双语的AI助手](../sessions/1787717780310_osyr78xv.md)
+- 2026-07-30 [The Rust on ESP Book](../sessions/1785384721924_1i3l1o75.md)
+- 2026-06-12 [面向智能体的企业基建重构](../sessions/1781238936690_np9fqe76.md)
+- 2026-04-03 [还是来正本清源一下 Engineering Harness 到底应该怎么做吧，过去几个月大家甚嚣尘上不需要工程师了，2 小时随手 Vibe 一下复刻一个应用的新闻很多。 \| Readwise](../sessions/1775199197786_oqtpu9ar.md)
+- 2026-04-03 [宝玉: 没必要worktree，可以 clone 几份放在固定的目录，轮着用就够了，每次pull最新然后checkout一个新的branch，完成后提PR合并到main](../sessions/1775198989419_ckmyjct0.md)
+- 2026-04-03 [𝙋𝙖𝙨𝙨𝙡𝙪𝙤: 我现在的 flow 是： 1️⃣ 先前端 + mock 数据（claude + gemini） 2️⃣ 然后再 codex 写代码 3️⃣ claude rev…](../sessions/1775198883093_bq6b8uup.md)
+- 2026-03-31 [Muratcan Koylan on X: "Hiring + Some news - I joined @sullyai 3 months ago as a Context Engineer. Going forward, I'll be working as a Member of Technical Staff on the Research Team. We’re building a H…](../sessions/1774927228926_0o097b0r.md)
+- 2026-03-31 [卡颂: 照当前 Harness Engineering 的发展趋势看，「应用开发」这个领域今年就能通关了](../sessions/1774922066770_qp1ip9st.md)
+- 2026-03-31 [卡颂: 很多程序员的 Skill 数量已经失控了](../sessions/1774920261828_c7bmsgzx.md)
+- 2026-03-24 [U哥: 去年学游泳的时候让我看到预设灾难有多么可笑](../sessions/1774324883945_7u66am8x.md)
+- 2026-03-24 [AI自动画像的机会与风险](../sessions/1774315780930_qu39cftq.md)
+- 2026-03-11 [How To Get 40 Hours of Work Done In 10 \(Using AI Agents\)](../sessions/1773228585869_6nyywh1l.md)

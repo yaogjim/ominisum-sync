@@ -1,0 +1,43 @@
+# 标签：人机协作（39）
+
+[← 标签索引](index.md) · [总览](../README.md)
+
+- 2026-09-17 [使用 Codex 和 KiCad 设计 PCB：从实际需求到经过测试的电路板](../sessions/1789614125472_lp3ijf8a.md) · 81 分 · AI辅助硬件开发
+- 2026-07-28 [Why the people building AI can’t tell you what’s next \| Dianne Penn \(Anthropic\) - YouTube](../sessions/1785202714337_y4g1d72i.md) · 79 分 · AI产品开发
+- 2026-08-21 [DataDan｜AI Consultant + Builder: 之前做中日跨境项目，踩过一个很小、也很贵的坑： 一个零件编号里的全角字符，差点让日本工厂把一批正常产品全判成不良](../sessions/1787286352453_qvldm5dk.md) · 78 分 · AI产品落地
+- 2026-07-22 [block/buzz: A hive mind communication platform](../sessions/1784700992435_4kiidu52.md) · 78 分 · AI Agent开发
+- 2026-07-09 [Agent Mode: The Agent-Native Web](../sessions/1783567365093_ym7qy0jj.md) · 75.5 分 · AI Agent与Web标准
+- 2026-05-22 [来自 Codex 官方团队的分享：如何把 Codex 用到极致](../sessions/1779441080895_3xzfy9sp.md) · 74 分 · AI工具与工作流
+- 2026-07-03 [yibie: HN 吵了 300 楼才达成共识：你还需要一个领域，只是不再是写代码 最近 Brent Horsting 的一篇文章在 HN 引发了激烈讨论](../sessions/1783078759058_4ri4at3x.md) · 73 分 · AI与软件工程
+- 2026-09-16 [DataDan｜AI Consultant + Builder: 我现在越来越觉得，AI Agent 最有价值的地方，可能根本不是替公司省多少人，而是它有一种很尴尬的能力：把一家公司平时努力维持的那些“大家都懂，但最好别说破”…](../sessions/1789533207437_v3aehx8t.md) · 70 分 · AI Agent开发与组织治理
+- 2026-07-22 [yibie: 推荐这个思路](../sessions/1784694052090_fkrszze5.md) · 70 分 · AI Agent 工作流
+- 2026-07-01 [Andrew Ng: “Loop engineering” is a hot buzzphrase after mentions of it by Boris Cherny \(Cla…](../sessions/1782901162345_ms9m6p8v.md) · 69 分 · AI产品开发
+- 2026-07-29 [The Human-in-the-Loop is Tired](../sessions/1785288173018_i27ld78s.md) · 68 分 · AI编程与开发者工作方式
+- 2026-09-18 [AI使用能力五层进阶框架](../sessions/1789721934994_f64oggt4.md) · 67 分 · AI能力与人机协作
+- 2026-07-22 [工作的未来将会发生在你已经工作的地方](../sessions/1784692687182_y646498r.md) · 67 分 · AI Agent开发
+- 2026-07-22 [\(4\) 宝玉: 字幕转录翻译剪辑 Skill —— BaoCut（仅支持 Mac） 借助 Agent Skill，可以转录视频、对转录结果识别 Speaker、润色（纠正错别字…](../sessions/1784692481407_blx06b4f.md) · 66 分 · AI Agent开发
+- 2026-10-12 [宝玉: 再贡献一个 REA 用法，在不需要你去反编译 Codex 代码的情况下搞懂它一些运行逻辑](../sessions/1791793625212_tz4mfg6i.md) · 65 分 · AI编程工具
+- 2026-08-21 [Wei: 最近在帮一个百人以上的研发部门做 AI 流程自动化，卡在技术选型上了](../sessions/1787306047406_l0r7kpdi.md) · 65 分 · AI Agent开发
+- 2026-08-10 [凡人小北: 正好最近在设计 AI-Native 的理赔系统，补充几点： 1](../sessions/1786354552342_sta9mztw.md) · 65 分 · AI系统设计
+- 2026-07-30 [Are we offloading too much of our thinking to AI?](../sessions/1785376775625_2z1ocmud.md) · 65 分 · AI与个人能力建设
+- 2026-06-02 [如何构建 AI 操作系统与自主工作流](../sessions/1780380603624_e9lzl38e.md) · 64.5 分 · AI工作流与智能体架构
+- 2026-10-09 [WquGuru: 我在 Teamily AI 里拉了个群：3 个 agent、我，再加一位合作伙伴，把 Claude 订阅注册避坑教程做成了一个网站：https://t](../sessions/1791544199909_x1vs52mc.md) · 64 分 · Agent 开发与协作
+- 2026-06-02 [宝玉: Agent 产品的设计，要看定位是以 Agent 为主还是以人为主 Agent 为辅](../sessions/1780380126163_vq0gc6hq.md) · 63.5 分 · AI产品设计
+- 2026-04-16 [indigo: 判断力不是分析能力的产物，而是分析能力的前提](../sessions/1776322814987_srwb2r35.md) · 62.5 分 · AI认知与人机协作
+- 2026-04-27 [Haipo Yang: 我用AI辅助写文章主要有四种方式](../sessions/1777263433323_xzycipo4.md) · 61 分 · AI写作
+- 2026-04-14 [Balaji Srinivasan on The Future of AI \| The a16z Show - YouTube](../sessions/1776146030019_g5970244.md) · 59.5 分 · AI产业与技术趋势
+- 2026-08-17 [Working With AI Feels More Like Leadership Than Coding — Allen Bargi](../sessions/1786943344353_rgadsdf4.md) · 58 分 · AI协作与提示设计
+- 2026-07-02 [宝玉: Ford 重新雇了 350 名老工程师回来，因为 AI 质检系统没能达到预期](../sessions/1782991018948_2d6kq2mb.md) · 58 分 · 人工智能应用评估
+- 2026-09-16 [LotusDecoder: “于是新的瓶颈出现了：我根本看不过来](../sessions/1789518546144_1ieamcnm.md) · 57 分 · AI编程与Agent开发
+- 2026-06-15 [nazha: \#分享 相比于 Loop， 还有一个词 “backpressure” 所传递的概念更为准确](../sessions/1781520959725_ghu19jed.md) · 56.5 分 · AI编程
+- 2026-06-25 [vas: Enterprise AI isn't failing because the models aren't good enough](../sessions/1782360429341_4qbmtdub.md) · 54 分 · AI产品与流程工程
+- 2026-06-01 [Leo｜一个人 + AI: 每个人都会面临的「编排税」—— 开AI助手便宜，审查和合并才贵](../sessions/1780307273638_7xvrey2y.md) · 53.5 分 · AI效率与工作流
+- 2026-08-10 [GREG ISENBERG: The new org chart probably looks something like this: A small layer of humans on…](../sessions/1786354440489_jmugr56j.md) · 52 分 · AI与组织设计
+- 2026-10-12 [松原隆彦（不明なエラー［4000］でアップデートできません）: 当初はAIと人間が共同すると良い結果になる時期があるが、その後人間が介在すると悪い方向へ進み人間の支援を受けないAIの方がより良くなる、という興味深い事例がある](../sessions/1791793103925_4xhq87d8.md) · 50 分 · AI与人机协作
+- 2026-10-10 [Matt Stockton: Pre-llm times, there were always folks you’d encounter in your work where you co…](../sessions/1791593310196_jkx6e4rf.md) · 50 分 · AI 使用与人机协作
+- 2026-07-22 [Tz: 越来越觉得人类应该多用像 Fable 这种顶尖大模型，问题越低级，越要拿去问](../sessions/1784699831208_tmguh4wh.md) · 50 分 · AI工具使用
+- 2026-09-30 [Yangyi: 最近想在北京再买套房子 寻思看看房 就让NewMax自己去抓数据分析了 看看哪个小区更适合购入 帮我找到一些流动性还不错 价格也还ok的三居 agent自己开着…](../sessions/1790766934135_bhzulohr.md) · 48 分 · AI Agent应用
+- 2026-07-24 [GREG ISENBERG: 16 things that will be normal in 3 years and sound insane today 1](../sessions/1784891026115_512avx0b.md) · 47 分 · AI与社会趋势
+- 2026-06-25 [Machina: here's the exact setup i'm running to manage 3 agent harnesses at once and ship …](../sessions/1782348687872_dz23vaah.md) · 43.5 分 · AI工具与工作流
+- 2026-06-15 [Phoenix Yin: 现在的趋势，就是 Agent Swarm](../sessions/1781517672553_8bq0zkyl.md) · 41.5 分 · 人工智能
+- 2026-06-11 [生成式UI前端趋势短评](../sessions/1781171209135_xjygtoky.md) · 29 分 · AI产品与交互

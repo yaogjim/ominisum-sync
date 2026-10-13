@@ -1,0 +1,3099 @@
+# 文章（3072）
+
+[← 总览](../README.md)
+
+## 2026-10（68）
+
+- 2026-10-12 [一条命令，落地 Matt 工作流](1791794903103_h0frpcmd.md) · A
+- 2026-10-12 [WquGuru: 关于全 AI 自动化构建软件该不该存在的问题，最近终于爆发了](1791793713546_phw15fg3.md) · C
+- 2026-10-12 [Avi Chawla: Jev for Agent Memory, clearly explained: An agent-memory system often passes con…](1791793676744_h1d3yeik.md) · A
+- 2026-10-12 [目前用 AI 制作产品动画的 12 种最佳方法](1791793642194_19cvsig4.md) · A
+- 2026-10-12 [宝玉: 再贡献一个 REA 用法，在不需要你去反编译 Codex 代码的情况下搞懂它一些运行逻辑](1791793625212_tz4mfg6i.md) · B
+- 2026-10-12 [宝玉: REA：让 AI 智能体帮你逆向没有源码的软件 开源项目 REA（Reverse Engineer Anything）把逆向分析工具接到了 Claude Cod…](1791793606402_wq8ajazp.md) · B
+- 2026-10-12 [宝玉: 丰田的老规矩：改善省出的人手，不能拿去裁 日本博主“黔騎士”发了一条推文 https://t](1791793567267_67fi3tub.md) · B
+- 2026-10-12 [Leo｜LeoLabs.me: Boris 这三条总结得太到位了：给目标、给衡量办法、告诉它要多拼](1791793523836_5vyadnwp.md)
+- 2026-10-12 [Stanford CS146S: How always-on agents work - YouTube](1791793494114_r99fmril.md) · A
+- 2026-10-12 [Dmitry Lyalin: Include your children in the life you live, they will be better off for it](1791793473784_z1h0fnto.md) · D
+- 2026-10-12 [Rational Aussie: I haven't heard a single person that runs a business say 'AI is great because no…](1791793439590_bmbq815l.md) · C
+- 2026-10-12 [Patrick C Toulme: Every chipmaker will have to grow by multiple times to support this inference de…](1791793421300_9cnlh7ok.md) · D
+- 2026-10-12 [Kun Chen: very interesting discussions under this AI vs human poll it makes me think our t…](1791793377173_d9tik95d.md) · B
+- 2026-10-12 [mrm8488/embeddinggemma-2-ft-typed-decision · Hugging Face](1791793363175_l29g5lc8.md) · A
+- 2026-10-12 [Yash Patil: Open models and post-training will be a big part of how this plays out](1791793300343_7f6qcvs3.md) · C
+- 2026-10-12 [宝玉: 录屏是个好办法👍 继续贡献一个 REA 案例，除了录屏还可以用 Computer Use，我想学习一下 CapCut 的动态字幕格式，我也不知道格式存在哪里怎…](1791793293202_c3sikbds.md) · B
+- 2026-10-12 [@levelsio: A big % of tech people don't get it Normies won't ask "build me software" They w…](1791793235999_53utob2j.md) · C
+- 2026-10-12 [Nicolas Bustamante: One of my more controversial bets: the AI feed will be the form factor of 2027](1791793229391_zjwjx2qm.md) · B
+- 2026-10-12 [yan5xu: code review 之争，可能会是今年最有价值的骂战 在研发pipeline，code&amp;amp;review 这两个节点的速率现在倒挂，逼着大家重建开发流程…](1791793188979_0sdtkue9.md) · C
+- 2026-10-12 [Open Minis: iCTRL is now open source](1791793168448_w9p0g0i9.md) · B
+- 2026-10-12 [backyarD\_D: これ言ったら「エンジニア」な方々の怒りを買うかもしれませんが、「このご時世どんな環境もテスト自動化とかデプロイまでの工程自動化はやってて当然」って方は、なんとな…](1791793161766_1g0kgpox.md) · C
+- 2026-10-12 [Liquid AI vs Jev: When Decision Models Can See and Hear - YouTube](1791793126625_ih5dvu0a.md) · B
+- 2026-10-12 [松原隆彦（不明なエラー［4000］でアップデートできません）: 当初はAIと人間が共同すると良い結果になる時期があるが、その後人間が介在すると悪い方向へ進み人間の支援を受けないAIの方がより良くなる、という興味深い事例がある](1791793103925_4xhq87d8.md) · C
+- 2026-10-12 [lifcc: 如果 AI 开始自己改自己的代码，人类算什么](1791793100921_ossmpnuk.md) · C
+- 2026-10-12 [KonghaYao/peri-fuse: A local first, langfuse compatible, agent trace system.](1791789967027_grn1gfhp.md)
+- 2026-10-10 [\(2\) 海明Dev: 技术出身的人老喜欢讨论护城河、实现难度 做 LLM 的公司有护城河吗](1791633049167_wt608d4k.md) · C
+- 2026-10-10 [dex: Yeah the % of tasks that are one shottable without strict process has gone up, a…](1791633036389_b53kj0ar.md) · B
+- 2026-10-10 [dex: we dont do a good job of talking about it but @0xblacklight built a dope effectT…](1791593624639_k0tht2ck.md) · C
+- 2026-10-10 [Mario Zechner: happy to announce that the next release of @pidotdev supports OSC 7501](1791593608525_w3s4o5qt.md) · C
+- 2026-10-10 [我自己写了一个 pi 子代理管理器，原因如下](1791593603422_of16ol9z.md) · B
+- 2026-10-10 [Alex Lieberman: This founder built an AI voice agent that qualifies &amp;amp; calls every new lead i…](1791593588921_hawtsnzx.md) · B
+- 2026-10-10 [David Senra: Jeff Bezos’ advice to Ari Emanuel: “When you’re on the field, be on the field](1791593579554_x4ahkgsx.md) · D
+- 2026-10-10 [apolinario \(poli\): only 9MB \(](1791593551558_s0ygzla6.md) · C
+- 2026-10-10 [Ivan Fioravanti: Just downloaded and activated Underdog](1791593540223_z4l8bofs.md) · D
+- 2026-10-10 [Daniel Han: We made it possible to train your own Decision model locally on just 3GB VRAM](1791593532066_81uwgzha.md) · C
+- 2026-10-10 [Maxime Labonne: Tiny decision models you can run everywhere: &amp;gt; d1-3B has impeccable performan…](1791593515301_09a5pj4h.md) · C
+- 2026-10-10 [Amjad Masad: That’s because Replit is not a consumer app](1791593509227_vtrln5bh.md) · C
+- 2026-10-10 [Miles Deutscher: Opus 5](1791593492265_t1v7feui.md) · D
+- 2026-10-10 [Opus 5.5 + Jev：完整设置（让产出提升 10 倍）](1791593485038_fm8zysfj.md) · B
+- 2026-10-10 [David Senra: .@elonmusk was telling me about where AI was going back in 2007. He told me the …](1791593476532_jmmswg92.md) · D
+- 2026-10-10 [Matt Stockton: These tools are absolute rocket fuel for curious folks](1791593450506_xaeixfwc.md) · D
+- 2026-10-10 [Aravind Srinivas: We’re open-sourcing pplx-embed-v2-late, multi-vector embeddings for text and ima…](1791593435197_yfi34fym.md) · B
+- 2026-10-10 [Lance Martin: Haiku 5](1791593418843_x041sew2.md) · C
+- 2026-10-10 [Sunnyvale: I work in the AI industry](1791593409628_nlh99u8s.md) · B
+- 2026-10-10 [Praveen Kumar Verma: That is pure maker energy](1791593396920_degvz5vx.md) · D
+- 2026-10-10 [Gergely Orosz: When does it still make sense to use microservices, what are mental models to ke…](1791593390631_6e2szhi7.md) · C
+- 2026-10-10 [Chamath Palihapitiya: This.](1791593362051_t5km9ggb.md) · C
+- 2026-10-10 [Paul Graham: Talking to Amjad yesterday, I realized Replit is more important than I'd previou…](1791593352517_9qy6m68z.md) · C
+- 2026-10-10 [Harrison Chase: One cool thing deepagents now supports: dynamically loading tools when is a skil…](1791593343531_a6q3hlhf.md) · B
+- 2026-10-10 [Dwarkesh Patel: I still haven't heard a good answer to this question, on or off the podcast](1791593315710_r03h4zlr.md) · C
+- 2026-10-10 [Matt Stockton: Pre-llm times, there were always folks you’d encounter in your work where you co…](1791593310196_jkx6e4rf.md) · C
+- 2026-10-10 [Matt Pocock: Starting to realise that to make agents strategic, they really just need a clear…](1791593304957_r28fvgb3.md) · C
+- 2026-10-09 [Brett Adcock: Hark has exploded over the last 48 hours, and all the user growth caused some in…](1791590362126_835h3ift.md) · D
+- 2026-10-09 [宝玉: 最近用了一次 Claude Code 送的重置，加上现在 Fable 也比较耐用，所以我用 Fable 就多了一些，我的用法是这样的： 把任务发给 Fable …](1791590357054_rxnwalgu.md) · B
+- 2026-10-09 [KC: agent 压缩上下文的那一下，经常是整段对话里最贵的一次请求](1791544358860_igxod9q1.md) · A
+- 2026-10-09 [花叔: 一个有趣的事实：无论是在X、B站还是公众号、小红书](1791544298466_1ol63vel.md) · C
+- 2026-10-09 [Harrison Chase: Sam on where decision models fit in a harness and how to use Jev with LangChain …](1791544217619_cnf44eun.md) · C
+- 2026-10-09 [WquGuru: 我在 Teamily AI 里拉了个群：3 个 agent、我，再加一位合作伙伴，把 Claude 订阅注册避坑教程做成了一个网站：https://t](1791544199909_x1vs52mc.md) · B
+- 2026-10-09 [Vox: Strongly recommend giving each of your agents its own email address on AgentMail…](1791544164595_luzb4fqz.md) · B
+- 2026-10-09 [Jim Prosser: If AI labs want personal assistants to take off at scale, they need to stop mark…](1791544160219_njt2gsek.md) · B
+- 2026-10-09 [Daniel San: Jev Skill Typeahead is fully open source Feel free to explore the code, contribu…](1791544136847_y7lrsbfg.md) · C
+- 2026-10-09 [Ivan Burazin: The way we're currently growing, we'd hit a triple-digit run rate by the end of …](1791544112590_owqhjcoo.md) · D
+- 2026-10-09 [Zongwei Zhou: At its center is BodyMaps: an open medical imaging library, built at @JohnsHopki…](1791544102456_3ul8t4fs.md) · C
+- 2026-10-09 [dax: if you as the founder can't do this, you will never be able to hire for it you c…](1791544101407_26afqocf.md) · C
+- 2026-10-09 [Jules Mossler: Several people have sent me this so here’s a different take, as I built an advis…](1791544066896_gq899mf5.md) · B
+- 2026-10-09 [Jacob Gold: volume does matter look, i get it](1791544061204_f3v3tjbe.md) · C
+- 2026-10-09 [Rainier: 我们还做了一些讨论： 1](1791544045613_0uq3p3pm.md) · C
+- 2026-10-09 [Binding the core to a specific LAN IP breaks all management features with 403 "remote management disabled" \(regression since v0.2.59\) · Issue \#229 · router-for-me/EasyCLIProxyAPI](1791505865160_a3uy5fi9.md)
+
+## 2026-09（381）
+
+- 2026-09-30 [关于Boss防检测的讨论 · loks666/get\_jobs · Discussion \#250](1790766975612_4fiaa95d.md) · B
+- 2026-09-30 [loks666/get\_jobs: 💼【AI找工作助手】全平台自动投简历脚本：\(boss、前程无忧、猎聘、智联招聘\)](1790766974989_6ms1sqq6.md) · B
+- 2026-09-30 [You Are No Longer Invited to Dinner](1790766969139_fjbyfu4f.md) · C
+- 2026-09-30 [metr0x: Two weeks ago, at 4 am, I gave Astra \(my GPT agent\) a ridiculously simple prompt…](1790766968044_koitfgw0.md) · B
+- 2026-09-30 [Yangyi: 最近想在北京再买套房子 寻思看看房 就让NewMax自己去抓数据分析了 看看哪个小区更适合购入 帮我找到一些流动性还不错 价格也还ok的三居 agent自己开着…](1790766934135_bhzulohr.md) · C
+- 2026-09-30 [如何使用 Treg 构建 AI 外联引擎](1790766930451_9uyji8dk.md) · B
+- 2026-09-30 [simon: Over the weekend, I put an unreleased checkpoint of π0](1790766929707_nu1lxn2q.md) · C
+- 2026-09-30 [在悉尼和稀泥: 今天又听了一个大佬的创业历程，我作为旁观者总结了一下，有一些和我之前也是这么想的，算得到印证了](1790766925975_gjzwibic.md) · C
+- 2026-09-30 [Bill Ackman: People are Going to Lose a Lot of Money - YouTube](1790766879360_m6tc37nh.md) · B
+- 2026-09-30 [Muratcan Koylan: We gave Jev 2,029 real phone calls](1790766879360_9m9upg03.md) · B
+- 2026-09-30 [Language Models for Text Classification: From Bag-of-Words to Jev](1790766879359_u6z98bls.md) · A
+- 2026-09-30 [Introducing cf: the agentic CLI for the entire Cloudflare API \| Cloudflare Blog](1790761171333_4l64bys6.md) · A
+- 2026-09-30 [Harrison Chase: company OS \(org harness\) vs personal agent, similarities and differences: differ…](1790740492460_thdk2zou.md) · B
+- 2026-09-30 [The Next Scaling Problem — Tetral](1790737412584_nf42er5a.md) · A
+- 2026-09-30 [阑夕: 我有个朋友在做一件很取巧的事情，他开了一家AI短剧公司，经营得还可以，今年开始，他委托第三方找了很多曾经火过的「山寨明星」，也就是撞脸明星的普通素人，用很低的价…](1790735844169_u4nimakr.md) · C
+- 2026-09-30 [Rainier: 无意中刷到朋友公司在申请破产 aka 预重整](1790735533190_kcx9l0cb.md) · C
+- 2026-09-29 [Yangyi: 基于Agent的周边infra设施会很值钱 钱包支付就不用说了 单一个RBAC系统 只要聚合的足够多 也是相当值钱的呢 从前企业里管理人类的Human Reso…](1790676601507_vy704i7x.md) · C
+- 2026-09-29 [What Happens When the AI Boom Runs Out of Money - YouTube](1790676445445_mywmzzcv.md) · B
+- 2026-09-29 [宝玉: Ben Thompson 的这期播客内容相当不错，不只是讲 OpenAI 和 Dropbox 的观点比较独特，其他内容也值得一看](1790676169094_lg5yah8o.md) · A
+- 2026-09-29 [Freda Duan: A humble attempt to est](1790676154449_7uyk4j4y.md) · B
+- 2026-09-29 [@levelsio: I've now fully integrated my new site Hotelist into Hoodmaps So now it lets you …](1790676140428_19y2z9rf.md) · B
+- 2026-09-29 [Tobi Lütke: The Skills AI Makes More Valuable - YouTube](1790676123541_jnds97qj.md) · A
+- 2026-09-29 [Run and Serve Decision Models Locally with Unsloth: Laya + Jev API \| Unsloth Documentation](1790672319077_8bna3kqx.md) · A
+- 2026-09-29 [Mehdi \(e/λ\): conseil si vous souhaitez acheter une voiture d’occasion sans vous faire avoir p…](1790672315688_7elusco0.md) · D
+- 2026-09-29 [Where’s the “intelligence explosion”?](1790672314862_oeey6bgy.md) · A
+- 2026-09-29 [arian ghashghai: &amp;gt; first question on the call is revenue we live in the most consensus era in …](1790672314104_9qp231l6.md) · C
+- 2026-09-29 [Charles Miller: Today is my 3 yr anniversary of purchasing a construction company as sole owner](1790672292927_dtltjl6r.md) · B
+- 2026-09-29 [Klee Kawaii: 我观点比较激进： 我认为事实上不存在“基础知识”😄 所谓“打基础”在理想中更多是一种理解哲学和思想的状态，比如我熟悉 C++ 的许多概念，都可以将他们迁移到不…](1790672292927_5g41nnp1.md) · B
+- 2026-09-29 [Yangyi: 模型的发展肯定是会大部分本地化的 本地化后会解决很多很多当下看起来存在的问题 但如果我们快进到那个时代 就会发现 本地化开源模型 一点儿也不值钱 因为它缺少数据…](1790672292927_gct3i80a.md) · C
+- 2026-09-29 [Juan: after working with dozens of companies on distribution, the ones that actually g…](1790672263254_6urb9e9r.md) · B
+- 2026-09-29 [Lenny Rachitsky: My biggest takeaways from @molly\_g: 1](1790672263254_jwf51hrp.md) · B
+- 2026-09-29 [Yangyi: 不论大家怎么说企业AI转型 不论你做的产品是Agent Desktop，还是Agent IM，抑或是Agent OS 不论你的产品是云还是本地 你只要是做企业A…](1790672263254_xwaok0rq.md) · C
+- 2026-09-29 [Inside the Personal AI Assistant Growing 10% a Day \| Instinct Founder - YouTube](1790672263253_bp21bu69.md) · B
+- 2026-09-29 [阑夕: 经济学家一直在担心「恩格斯停顿」重新出现，潜台词在于，技术革命当然是好事儿，但是对于普通人来说，成长于技术革命的起飞阶段，可能是个坏消息](1790654558105_dry1zcas.md) · C
+- 2026-09-29 [家庭健身房的便利与社交代价](1790653645732_uzhwimlq.md) · D
+- 2026-09-29 [用金钱减少摩擦也要保留社交连接](1790653576689_bt28ofss.md) · C
+- 2026-09-29 [Slava Akhmechet: What made Stripe great, c](1790651625988_4lmymciu.md) · B
+- 2026-09-28 [王川: 让刺破 AI 泡沫的加息风暴来得更猛烈些吧](1790587003372_2vduog2d.md) · C
+- 2026-09-24 [OldPanda: 最近用了一阵子动态血糖仪，观察统计了不同状态下的血糖变化，直接上结论吧， 1](1790233686284_ta2mnwop.md) · D
+- 2026-09-24 [DiLink车机投屏方案与实现概览](1790233678989_kderqmvi.md) · B
+- 2026-09-24 [Stocko 🦾: this is AgentCam a vibe coded app with an MCP server on the side that lets your …](1790233668291_i1y6713u.md) · C
+- 2026-09-24 [Tykra: Day 22 building the Figma and Amazon for hardware until somebody invests in it](1790233664882_cl2ma2p3.md) · C
+- 2026-09-24 [Elvis: Suprisingly the coupler works just as intended, It doesn't require much force to…](1790233662001_qrisp2yg.md) · D
+- 2026-09-24 [ciphrd: Hey everyone, I've been meaning to share some updates about fxhash with you for …](1790233660903_s0i7p4j3.md) · C
+- 2026-09-24 [aizk ✡️: I have successfully reverse engineered and decompiled Snood for the GBA \(2001\), …](1790233636754_okqmgbz4.md) · B
+- 2026-09-24 [Can Bölük: Few interesting changes in 18](1790233636754_80unovb0.md) · C
+- 2026-09-24 [Jason ✨👾SaaStr.Ai✨ Lemkin: So almost every pre-AI B2B product we use has told us they are raising prices fo…](1790233636754_b8y7575t.md) · B
+- 2026-09-24 [Jaya Gupta: If the markets took DeepSeek seriously as a threat to frontier labs, they should…](1790233636754_8xpt6era.md) · B
+- 2026-09-24 [Simon Smith: Just went for a long walk while using ChatGPT Voice with plugins on my phone, an…](1790232281557_e13zsxiz.md) · B
+- 2026-09-24 [Jev：离开 OpenAI 后，他做了一个不跟人聊天的 AI](1790232260652_wn3bkj41.md) · B
+- 2026-09-24 [Lucas Harrington: As someone who did this kind of genome mining work during my PhD, some thoughts …](1790232214258_7a4nb62l.md) · B
+- 2026-09-24 [magpie](1790232203532_zxv8fs2e.md) · B
+- 2026-09-24 [Tz: 我了个大槽。。。😨 所有不露脸的知识视频博主现在可以就地掩埋了。。。 这其实是我自己一直想搞清楚的一个问题： 之前我们用的密码 password 和现在用的通…](1790232194214_dnke6f4e.md) · C
+- 2026-09-24 [shilapi/xcertplay: Carplay on Android head unit using onboard mfi chip or via CH341.](1790232187845_obvwdwxy.md) · B
+- 2026-09-24 [InstantHMR三维人体姿态估计与部署](1790224301155_yctrjeii.md) · A
+- 2026-09-24 [tae kim: Jensen recommends three books on NYTimes podcast: "Well, I’ve read a lot of book…](1790224016189_ez5r8jz8.md) · C
+- 2026-09-24 [Chubby♨️: This is an interesting take from Qwen](1790223901379_bhu0ov6l.md) · C
+- 2026-09-24 [Chubby♨️: Dario Amodei still believes AI could “cure most diseases in 5-10 years,” and Ant…](1790223895485_zfpa6djn.md) · C
+- 2026-09-24 [AmirMušić: GPT-6 Astra + LTX-2](1790223890618_oxwkwenl.md) · B
+- 2026-09-24 [Opinion \| Jensen Huang Thinks A.I. Alarmism Has Gone Too Far](1790223796122_98ulupgy.md) · B
+- 2026-09-24 [Gergely Orosz: In the obsession with AI, too many founders, leaders, managers seem to have forg…](1790222194241_7bjgjxbj.md) · C
+- 2026-09-24 [Huimin Xie: When I first saw JEV, as a former TikTok MLE, I knew modern recommendation and s…](1790221984427_mqb2fs6w.md) · B
+- 2026-09-24 [Flo Chauvin: Développer un produit en France : - mettre 5 000 euros de côté - appeler un bure…](1790221295377_9hjk4q90.md) · B
+- 2026-09-24 [如何花 17 美元训练你自己的 Jev](1790221180238_p16yi4p9.md) · A
+- 2026-09-24 [eastwood.net: 还是有很多人并不知道这玩意的工作原理，虽然你去看一眼原项目的说明就能明白的事…不过我还是解释一下吧](1790219970383_erwjl2me.md) · C
+- 2026-09-24 [eastwood.net: 得益于中国强大的产业链，MFI认证芯片只需要2块多钱，高大上的 \#carplay 就可以在任何车机上使用了](1790219253769_n4xterbo.md) · C
+- 2026-09-24 [使用 Pi 和 Jev 构建自定义 Harness](1790217467326_nat7l5dd.md) · A
+- 2026-09-24 [Animesh Chouhan: @PratapRanade @DJIGlobal amazing teardown](1790217445634_ifecu6l9.md) · B
+- 2026-09-24 [Electromagnetism Secretly Runs the World](1790217427223_tvfi6jmo.md) · C
+- 2026-09-24 [Can the US build a DJI? \| Arena Physica](1790216849057_gkrmqb2j.md)
+- 2026-09-24 [刘江/LIU Jiang: 来自Epoch创始人的预测： 6 个月内：AI使用计算机将迎来重大时刻，办公室工作者开始大规模采用AI智能体 12 个月内：数千个自治智能体组成的社区出现，通过…](1790216036921_g0yoq6p0.md) · D
+- 2026-09-24 [Dovey "Rug The CNY" Wan🪐: Tony Wu小哥哥7000万美金买下Hillsborough挂牌很久的超级大mansion 后在给了半岛和SF地产界一剂巨大的春药](1790215134015_2ymcfdol.md) · C
+- 2026-09-24 [窥斑见豹 ——从一个县读懂中国经济](1790210090960_icajxfon.md) · D
+- 2026-09-23 [Dilip Kumar: I think founders need at least one obsession that has absolutely nothing to do w…](1790155922880_403g2ooj.md) · C
+- 2026-09-23 [lifcc: 花 8 万块买两台算力盒子自建大模型卖 API，是我今年见过最浪漫也最亏本的极客幻想](1790151863651_g2mijuq7.md) · C
+- 2026-09-23 [宝玉: Claude Design 做设计，一般不需要参考代码，功能描述清楚就好，不管是不是 PoC 代码，最多截图辅助描述功能](1790136683497_iplpr0d8.md) · B
+- 2026-09-23 [文档串起智能编程规划实施与验收](1790135371874_a2ylq65s.md) · A
+- 2026-09-23 [写在严肃阅读之后：我是如何“严肃听播客”，真正吸收一档自己喜欢的播客的？](1790133529710_d3mzae8c.md) · A
+- 2026-09-23 [Transformers now runs llama.cpp quants](1790132051959_rvg2swz6.md) · A
+- 2026-09-23 [复刻硅谷最流行的复古风 Launch 视频](1790130993338_qv3ytsh7.md) · B
+- 2026-09-23 [yibie/jev-engineering-zh: 《Jev 工程学：为 coding agent 而作》完整中文翻译 — 保留原结构与 7 张插图](1790129917035_7pr2nwfb.md) · A
+- 2026-09-23 [机器人数据是一门糟糕的生意](1790128815413_6mxae1bw.md) · A
+- 2026-09-23 [一夜之间！Opus5.5、GPT-6 sol、GPT-6 luna全特么来了！！](1790128061170_mtaa57zt.md) · B
+- 2026-09-23 [新版4万亿重返——26万亿的六张网能否再次带活经济？](1790127901446_6qio0rai.md) · C
+- 2026-09-22 [jaredpalmer/kev: tiny Jev-like family of decision models built on top of Qwen3.5 you can train and run on your own](1790046037333_paao6myi.md) · A
+- 2026-09-22 [Python Workers are now generally available \| Cloudflare Blog](1790045992003_64nbe4vz.md) · A
+- 2026-09-22 [Jev + 图形模型：一次范式转变？](1790043914675_5ca9y2c5.md) · A
+- 2026-09-21 [写在 MusicBridge 之后：我为什么没做图书同步工具，而是整理了一套严肃阅读工作流](1789962543342_6n9avjwj.md) · B
+- 2026-09-21 [共鸣，在掌控之外](1789962124789_ldlf2twb.md) · B
+- 2026-09-21 [Grok Conversation / X](1789961784360_tg3ifnyl.md) · B
+- 2026-09-21 [Former Sequoia Chairman Michael Moritz on Steve Jobs, Elon Musk, and the Price of Greatness - YouTube](1789959450816_k6j36gu0.md) · D
+- 2026-09-21 [Jev CEO: I made ChatGPT, now I'm building What's Next - YouTube](1789959378436_dwgsmqhh.md) · B
+- 2026-09-21 [Building One of the Fastest Growing CPG Companies in History \| Peter Rahal of David Protein &amp; RXBAR - YouTube](1789959373004_81spo3ye.md) · B
+- 2026-09-21 [EP 175: Reinventing School Is Accelerating Austin's Talent Flywheel \| Joe Liemandt, Alpha School - YouTube](1789958934069_50rigyox.md) · B
+- 2026-09-21 [AI Powered Private School \| Alpha School](1789958683377_quksl69z.md)
+- 2026-09-21 [Loktar 🇺🇸: Random thoughts here just wanted to share](1789958412091_stynp5jn.md) · C
+- 2026-09-21 [Can Tech's AI Titan Take the Title? \(Mafia Episode 3\) - YouTube](1789958082337_w3rr9zmi.md) · D
+- 2026-09-21 [the senior engineer death spiral](1789957815248_4kmrnpvw.md) · B
+- 2026-09-21 [guitarpedal · BoardRepo](1789956827392_qlllde8a.md) · A
+- 2026-09-21 [I Built Non-Autoregressive Decision Models a Year Ago. Then a Frontier Lab Called It a "Breakthrough".](1789956739909_sl9xa4mq.md) · B
+- 2026-09-21 [CJ Zafir: I'm thinking of fine-tuning a model, &amp;gt; on my 10,000+ written tweets, &amp;gt; 780…](1789956586673_ibau1oz8.md) · C
+- 2026-09-21 [Laya多语言类型化决策引擎](1789956443201_vwem1tlg.md) · A
+- 2026-09-21 [Jared Palmer: UPDATE: Kev-0](1789956109629_u4ymzkr0.md) · B
+- 2026-09-21 [8月外贸——隐忧显化！机电产品还能猛多久？](1789955681336_ut19rlye.md) · C
+- 2026-09-21 [卖火柴的阿甘: 回国这次见了几个海龟创业团队，几个团队都很谦虚的跟我取经让我指导教导🤣我很不谦虚的跟他们说了一样的话：真的指不了，首先我的成绩微不足道，就算是今天有成绩的大佬…](1789955671223_doncg3og.md) · C
+- 2026-09-21 [Jesse Lau 遁一子: 关于用JEV来跑SEO](1789955012137_12d9hmld.md) · B
+- 2026-09-21 [Omarchy 与 Hermes：简明指南](1789954902235_0a9o874x.md) · B
+- 2026-09-21 [Ryan Petersen: Proposal for American high schools: Replace geometry and trigonometry with econo…](1789954532617_iv1a98mo.md) · D
+- 2026-09-21 [Jeff Bezos: AI productivity gains could lead to labor shortages and deflation - YouTube](1789950682114_o3h7t6zv.md) · C
+- 2026-09-20 [bespokelabsai/nimble: Local typed decisions, contrastive data curation, and model evaluation.](1789898200894_0rrv22ke.md) · S
+- 2026-09-20 [Jev 工程：从零开始搭建并使用 AI 新大脑的完整 10 步路线图](1789898194313_ve82s91v.md) · A
+- 2026-09-20 [构建你自己的 Jev（100% 本地）](1789898185511_ai3ukzax.md) · A
+- 2026-09-20 [TheoLeeCJ/SemIf: Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe.](1789898181135_zt3t90fo.md) · A
+- 2026-09-20 [Jev开启类型化决策模型新范式](1789893594118_ekmt8nm0.md) · A
+- 2026-09-20 [Jev: The New AI Model That's Breaking The Internet \(Full Tutorial\) - YouTube](1789893114740_ehvo9uka.md) · B
+- 2026-09-20 [AkashPriyadarshii/jev-seo: 100% free ₹0 agent-first SEO &amp; GEO CLI suite and MCP server in Rust replacing Semrush and OpenSEO via DuckDuckGo and TypeSafe Jev System One](1789890878997_l23vi40d.md) · B
+- 2026-09-20 [Releases · insin/control-panel-for-twitter](1789888960694_s30cc79l.md)
+- 2026-09-20 [老板会用AI了，公司还是老样子，问题出在哪](1789885281357_oc1o65st.md) · A
+- 2026-09-20 [Yifan Xu: 非常同意国宝老师的观点](1789884234820_69wa7eqt.md) · C
+- 2026-09-20 [tinygs/tinyGS: 📡 Open Ground Station Network 🛰](1789884031264_z10qusrf.md) · B
+- 2026-09-20 [sitin: 不少同学来问我，做副业项目比较推荐的是啥，我简单说几句最近的情况 一种就是跟 AI 算力相关的，不管是 gpt 账号，Claude 账号，还是各种 xxx AI…](1789883830696_4j987qap.md) · C
+- 2026-09-20 [雅思六点五分备考方法与误区](1789877896628_hblj64bo.md) · B
+- 2026-09-20 [Jev’s Architecture Unmasked — archerhume](1789875895682_qyge2zsc.md) · A
+- 2026-09-20 [kev/MODEL\_CARD.md at main · jaredpalmer/kev](1789875877241_v1kpymfb.md) · A
+- 2026-09-20 [梭哈.AI: JEV 的能力边界慢慢开始暴露了 前几天，Browser Use 创始人 @gregpr07 开源的那个爆火 Demo（7 秒订机票、成本 $0](1789874068608_rpamdzzd.md) · B
+- 2026-09-20 [karminski-牙医: 看到了个Fable5](1789874001793_xk5ylksm.md) · C
+- 2026-09-20 [如何在单个 GPU 上服务 100 个微调模型，清晰解释](1789873855344_gcotgx7a.md) · A
+- 2026-09-20 [当其他一切都沦为平庸时，如何凭品味致富](1789873723071_jnpoxhej.md) · B
+- 2026-09-20 [Home - TypeSafe AI](1789873412925_wrddsw46.md) · C
+- 2026-09-20 [Musolsol.𝟎𝐱𝐔: 强烈建议大家都亲自看看 Jev 玩《毁灭战士》， 颠覆了我对“实时决策”的理解](1789873377710_b0xbpm5p.md) · C
+- 2026-09-20 [Brood War Bench](1789872751822_iw7jtoim.md) · B
+- 2026-09-20 [Human brain is two separate organs, Stanford Medicine-led research finds](1789872508614_9wh7lt6z.md) · C
+- 2026-09-20 [\[AINews\] Here are 6 Clones of Jev in 2 days](1789868548397_oijcwi5j.md) · B
+- 2026-09-20 [EEG-fNIRS Cookbook \| Brain Products GmbH](1789867964279_jswabblk.md) · B
+- 2026-09-20 [OpenNIRS.org – Modular open hardware for Near InfraRed Spectroscopy – Eine andere WordPress-Site.](1789867954055_t1ycke2q.md) · D
+- 2026-09-20 [A low-cost, wearable, do-it-yourself functional near-infrared spectroscopy \(DIY-fNIRS\) headband](1789867949335_e6y031yf.md) · B
+- 2026-09-20 [奶昔🥤: 这个Kwrt固件可在线编译，但不知道为啥会偷偷后台跑p，比起其他OpenWrt固件似乎这些“跨境专线”都爱用这套方案 比起深圳那家用硬路由刷OP的，这家不仅用I…](1789864753884_n2c6rvx6.md) · D
+- 2026-09-20 [县太爷的真实人生：从杜凤治370万字日记，看清代基层官员的权与苦、贪与怕](1789863235039_pypuv883.md) · A
+- 2026-09-18 [Projects in Buzz](1789723652768_7cl0owlc.md) · B
+- 2026-09-18 [Lenny Rachitsky: My biggest takeaways from @wardadamp \(Head of Talent at Cursor\): 1](1789723645302_s4komcjr.md) · A
+- 2026-09-18 [lifcc: 这期42章经请的是 Evolvent AI 的联创孟繁青](1789723616942_ivqrc86f.md) · B
+- 2026-09-18 [Trevin Chow: With this improvement in Codex, a new pattern I've been using successfully combi…](1789723597195_j4lftqov.md) · B
+- 2026-09-18 [构建 AI 原生操作系统的完整指南](1789723594451_z152g4wm.md) · A
+- 2026-09-18 [Everyone Is Still Undersizing the AI Market \| Eric Vishria - YouTube](1789723571308_37f7z487.md) · A
+- 2026-09-18 [How Claude Shannon Invented The Future - YouTube](1789723571308_wj26jx6b.md) · A
+- 2026-09-18 [雨夜漫步大祭司: 来自日推，推特算法知道我对厉害我国经济状况的第一手资料有兴趣，直接给我翻译成了中文推送到我时间线上](1789723501145_s1pis6en.md) · C
+- 2026-09-18 [Robinson · 鲁棒逊: 我不入地狱，谁入地狱 @白衣山猫 老师 网络上看到一个视频，高铁上广播在找医生](1789723482989_ugkguyv8.md) · D
+- 2026-09-18 [yetone: 这是我开始做 ToB 的原因](1789723476724_xgehpech.md) · B
+- 2026-09-18 [Tony出海: Marc 给出的两个做产品的原则 一个产品、一个网站，基本上 10 分钟就能 AI复刻出来，但是背后的网络影响力、关系、营销方法、路径这些是无法复制的](1789723461745_1bv3kkdi.md) · B
+- 2026-09-18 [Yangyi: AI应用层创业的6个优先 - 硬件优先软件 - 国外市场优先国内市场 - 情绪价值优先效率价值 - B端场景优先C端场景 - 领域垂直优先通用智能 - 赚VC的…](1789723455336_12y9for4.md) · C
+- 2026-09-18 [宝玉: 转译自 Lenny Rachitsky 我从 Cursor 人才主管 Adam Ward \(@wardadamp\) 那里学到的最大收获： 1](1789723439204_7sw25swn.md) · A
+- 2026-09-18 [财富转移政策与价格下限中因果关系的错配](1789723425487_6batunnf.md) · D
+- 2026-09-18 [程序员如何获取财富](1789723415093_n07qs6bi.md) · B
+- 2026-09-18 [axisxy: 继续发一则和国内 model researcher 交流的 memo](1789723390944_nvvguc3g.md) · B
+- 2026-09-18 [sunil pai: a quick note on startups \(didn't feel qualified enough to make this a blog post,…](1789723390346_50vydqb8.md) · B
+- 2026-09-18 [目前对创始人来说在𝕏上表现最好的6种内容格式](1789723365726_o5bxqy7e.md) · B
+- 2026-09-18 [Alex Lieberman: After 10 years of building businesses, I've noticed that most ppl suffer from tw…](1789723365725_2w7lt2q0.md) · B
+- 2026-09-18 [姚金刚: 张小珺最新的一期节目，访谈了一位17岁的高中生，苏庭灏 这是香港一所国际学校的在读高中生，近期，他以独立研究者身份完成的论文《Attention Project…](1789722068830_kb8a0u09.md) · B
+- 2026-09-18 [Susan STEM: 老王这个帖子很多人认同](1789722068257_i3ys4djr.md) · C
+- 2026-09-18 [小陆师傅: 最近看了好多反贼写的有关中国财政的文章，就又到了我不吐不快的时间了](1789722042992_vuft9ffp.md) · C
+- 2026-09-18 [王海滨的财经闲谈: 选择的代价： 概率是数字，后果是生命 在汽车圈，有一场争论从未平息：到底是买燃油车更安全，还是买电动车更安全](1789722039697_hr5n69pw.md) · C
+- 2026-09-18 [Robinson · 鲁棒逊: 不要做餐饮 之前看到国内餐饮业 三年倒闭率高达70% ，平时也会想到 餐饮业的地狱难度 基于观察，写几点感受： 1](1789722014698_45b1t0gx.md) · C
+- 2026-09-18 [Mustafa.: one of the best investments you can make in your 20s is building a hardware home…](1789722011473_u38vja1c.md) · B
+- 2026-09-18 [叶隐: 程老师中国经济奇迹归结为“极权政体垄断经济、攫取财富的能力”，这或许是一个政治学角度，但很难解释一个不需要经济学知识的直观问题：1978年改开前，国家对土地、金…](1789721984644_fdl5avt0.md) · C
+- 2026-09-18 [Mehdi \(e/λ\): If you want to build the future of physical technology, you need to immerse your…](1789721983503_m79kj9f3.md) · B
+- 2026-09-18 [Phoenix Yin: 永远不允许自己彻底失控，Never Zero](1789721959743_kypyfz08.md) · B
+- 2026-09-18 [AI初创增长的品牌与口碑路径](1789721957006_erflnb5a.md) · C
+- 2026-09-18 [AI使用能力五层进阶框架](1789721934994_f64oggt4.md) · B
+- 2026-09-18 [天猫家装商家由盛转衰个案](1789721902968_en89905j.md) · C
+- 2026-09-18 [Ex-NVIDIA Engineer: Why AI Is About to Get 1000x Cheaper - YouTube](1789721841339_ao6a3xcd.md) · A
+- 2026-09-18 [独立产品需求挖掘渠道清单](1789721837985_xw5zkjly.md) · B
+- 2026-09-18 [你有哪些私藏的挖掘需求的好方法 - 悬赏专区 \| Web.Cafe](1789721837984_4q687s3i.md) · A
+- 2026-09-18 [Peter: Fed GPT-6 Astra my PCB models](1789705371612_1h1gkkjc.md) · C
+- 2026-09-18 [软件即将以快得多的速度吞噬世界](1789705353696_i1h5oxbn.md) · C
+- 2026-09-18 [更快速学习的原则。](1789705340778_fwq94bf6.md) · B
+- 2026-09-18 [Phoenix Yin: 一个人感兴趣并且不断能获得反馈的知识系统或信息领域，同时能给人类带来工具化甚至是哲学性的助益，而且还在时代的潮流之中，那Ta简直不要太幸运](1789705323487_4723rlso.md) · B
+- 2026-09-18 [在悉尼和稀泥: 为什么你还没赚到钱，也应该考虑资金利用率](1789705313434_4jq8tdfg.md) · B
+- 2026-09-18 [炎朗 Gavin: Pi agent是真香，hermess什么的都可以抛一边了，就用它作为桌面 work主力，速度快、还省token 推荐几个必装的扩展，装上后性能、生产力飞起: …](1789705293298_jiq1o08e.md) · B
+- 2026-09-18 [WquGuru: Microduck 是新时代的树莓派吗](1789705289810_ex4u03as.md) · B
+- 2026-09-18 [Jesse Lau 遁一子: Anthropic 出了个研究报告《Scenarios for our Economic Future》基于其经济学团队构建的模型，探讨了未来几年 AI 对美国…](1789705259586_9wteuh6q.md) · B
+- 2026-09-18 [如何从零 DIY 复刻一只可爱的 Microduck](1789705259586_824fjht1.md) · A
+- 2026-09-18 [中国经济，好还是差](1789704889662_jy9cm0h7.md) · A
+- 2026-09-18 [wzhudev/reverse-linear-sync-engine: A reverse engineering of Linear's sync engine.](1789704888366_4rrq3fig.md) · A
+- 2026-09-18 [丰裕时代的退场：从“性萧条”到“浪漫坍塌”的八年微观史](1789704866153_l36lkpid.md) · C
+- 2026-09-18 [硅谷王川 Chuan: 当一个公司开始用债务来支持增长时，就可能陷入类似运动员用兴奋剂提高成绩的危险境地](1789704860561_3y72glsk.md) · C
+- 2026-09-18 [海明Dev: 来自 reddit 的一条讨论贴，作者分享了自己 MRR 缓慢下跌的过程，下面是一些开发者之间的经验讨论，我在这里总结一下 1️⃣ 外部环境确实会杀死增长 细分…](1789704839731_h2a8d1aw.md) · B
+- 2026-09-18 [凡人小北: 腾讯开源了一个 TeamAI-CLI，做法很简单：把团队使用 Agent 的规则、Skill 和文档，直接放进一个 Git 仓库](1789704837814_iwhn8n4q.md) · B
+- 2026-09-18 [alibaba/open-code-review: Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-lang…](1789704815412_b8j66xg8.md) · S
+- 2026-09-18 [为什么底层穷人完不成原始资本积累？](1789704815412_izk0t65d.md) · B
+- 2026-09-18 [Sandhya: Alibaba open-sourced the code reviewer it says has served tens of thousands of d…](1789703718905_rfdtgx9q.md) · B
+- 2026-09-18 [Viking: 假如是工程师的想快速提升一下的话 可以看 tailwind](1789703718905_qw6hs6kn.md) · C
+- 2026-09-18 [GlowJames 追光🐬: @xicilion 这条帖子说的不是「让 Agent 自己点浏览器做 E2E」，而是反过来：\*\*Agent 只负责写可重复跑的 Node](1789703697229_tmhjs507.md) · B
+- 2026-09-18 [Managing nerves, anxiety, and burnout \| Jonny Miller \(Nervous Systems Mastery\) - YouTube](1789703651458_r0kgbrir.md) · D
+- 2026-09-18 [本地AI实验室的混合路由架构](1789703336947_51o25dcg.md) · B
+- 2026-09-18 [shi3z: 書いた 1万字超えた/ DeepSeek v4](1789703332849_7fmcspxw.md) · C
+- 2026-09-18 [用 AI 设计 PCB 几天后，我觉得我们争论的方向错了](1789703285747_5y1vb1c0.md) · B
+- 2026-09-18 [LimboAI: 李沐大神最近在小红书开答疑，600 多条提问，71 条他本人的回复，我全翻完了](1789703281704_705153uw.md) · B
+- 2026-09-18 [用 AI 画了几天 PCB 之后，我发现大家争论的根本不是一回事](1789703251192_9ts0xz4i.md) · A
+- 2026-09-18 [@levelsio: I just saw this @ycombinator's batch literally only has harness startups or hard…](1789703236601_z6uyou3n.md) · C
+- 2026-09-18 [Tz: 翻译： 1. 解决衰老问题。 2. 找到癌症、阿尔茨海默病、心脏病的治愈方法。 3. 发现室温超导体。 4. 解决量子引力问题。 5. 开发全沉浸式VR。 6.…](1789703227356_0dzw4vsf.md) · E
+- 2026-09-18 [nym: My favorite part of @lennysan &amp;amp; friends was twofold](1789703206124_xtkfqw2o.md) · C
+- 2026-09-18 [Lenny Rachitsky: Jonny Miller \(@jonnym1ller\) has helped hundreds of founders and tech leaders cul…](1789703202102_1z4p96ip.md) · D
+- 2026-09-18 [AmirMušić: GPT-6 Astra is a design beast No 3D models used in this demo website I connected…](1789703177083_tgd2uqso.md) · C
+- 2026-09-18 [Peter Steinberger 🦞: Fixed so many little perf issues that didn't matter much for single users](1789703173563_fej32n2e.md) · D
+- 2026-09-18 [黄赟: 嗯， 这个 escrcpy 开源库要吹下的，它完美地解决从电脑控制手机操作的难题 我经常扒拉小红书爆款，常用手机盯着看 1-2小时，真干眼](1789703155932_umtaw2ij.md) · C
+- 2026-09-18 [Larry &amp; Leo &amp; Lucky 🍀: 明天找一个人跟我一起在生产上配一个仓库，用 Orbi 跑通你自己的第一个 Issue](1789703140260_vysx61dw.md) · B
+- 2026-09-18 [如何自动化生成导语（完整指南）](1789703118797_xj8yvzdx.md) · A
+- 2026-09-18 [躺在废墟里 Lieflat: 一个 skill，让你做出顶级审美的图表](1789703106077_e3wkekut.md) · B
+- 2026-09-18 [V: 死ぬほど勉強がはかどってしまい、これ学生の時欲しかったなぁ](1789703095727_btioh3np.md) · C
+- 2026-09-18 [Meathill: 今天有位香客来拜拜 https://t](1789703085023_jdoeqa9k.md) · D
+- 2026-09-18 [Teortaxes▶️ \(DeepSeek 推特🐋铁粉 2023 – ∞\): Upon reflection, I am not at all surprised by Dario's hawkishness](1789703062044_a0nbzl2i.md) · C
+- 2026-09-18 [iPaul: 最近两场比赛，一个在上海，一个在北京，简直把中国大型商业赛事的管理水平扒了个底朝天](1789703058961_cmg57rjz.md) · C
+- 2026-09-18 [Alex\_感知: 对于一些财政自给率不高的地方，指望他们能化债是很不现实的](1789703035670_oo14p475.md) · C
+- 2026-09-18 [Robinson · 鲁棒逊: 用随机梯度下降来优化人生 by 李沐大神 这篇文章，我反复诵读，时有收获 要有目标](1789703032572_ev8xwi5u.md) · C
+- 2026-09-18 [Jeff Li: 蛤，手搓了一个ERP吗](1789703010634_7p6tsnjv.md) · D
+- 2026-09-18 [Zach Mueller: Good news: the PCI Express x16 to Two MCIO 8I Adapter and MCIO cables have arriv…](1789702988680_ko1z2ts1.md) · D
+- 2026-09-18 [Pedro A. Ortega: How to think about AI risks](1789702961078_8yrlcinv.md) · B
+- 2026-09-18 [I hired Hermes as my Chief of Staff](1789702961077_xigmxdg6.md) · A
+- 2026-09-18 [单条视频 一亿播放的拍摄教程，自媒体执行手册（1）](1789702006681_vrwqw9c4.md) · A
+- 2026-09-18 [Jerry Y: PocketPi 又有新活了😬 在重构了 Apps 和底层架构之后，终于可以 connect the dots，实现一个很早就设想的feature：Pi ag…](1789702006681_vyri4xmn.md) · C
+- 2026-09-18 [Xiaowen: 和管理的底层规律如出一辙](1789700858298_kxxbdyf0.md) · A
+- 2026-09-18 [Xiaowen: 有效的时间管理，管理的是注意力的流向，而注意力，才是你身上最贵、也最稀缺的资源](1789700453949_xagwrd64.md) · C
+- 2026-09-18 [在悉尼和稀泥: 说一下我今年聊到的这些老板吧](1789700410003_3vhck9rq.md) · A
+- 2026-09-18 [我的 AI 开发流程](1789700302856_s8nfp3qi.md) · A
+- 2026-09-18 [物欲如尘土](1789700137389_j3awv7lo.md) · D
+- 2026-09-18 [The deepseek of DeepSeek Harness: Overengineering or built for self-evolution? \| Life Odyssey](1789699947836_0ax4v3lv.md) · A
+- 2026-09-18 [asciimoo/hister: Your own search engine](1789698489450_dbsmam5p.md) · B
+- 2026-09-18 [mysetup.ai · What’s the craic with your AI setup?](1789697731855_ejb1ej9a.md) · D
+- 2026-09-18 [Training a 4B model to produce 81% faster query plans than Postgres](1789697360100_6sfccv07.md) · S
+- 2026-09-18 [Toward Recursive Self-Improvement: How GLM Built Its Own Inference Infrastructure](1789697356010_zn1l5znp.md) · S
+- 2026-09-18 [CrowdSec Statement: Source Code Exposure in May 2026](1789697351488_fulu55pq.md) · C
+- 2026-09-18 [Everybody's Lost Their Minds](1789697338613_hcci8ty1.md) · B
+- 2026-09-18 [Sex, AI, and the Apocalypse](1789697333250_4zn3sb1c.md) · B
+- 2026-09-18 [AI Skills with Matt Pocock - YouTube](1789697267838_jikbc4ce.md) · A
+- 2026-09-18 [Let Claude coordinate ongoing work with Projects - Claude Code Docs](1789697254638_13iy1vho.md) · A
+- 2026-09-18 [生姜Iris: 最近陪跑一个项目，我让项目方的运营干了一件我觉得特别值的事： 把自家产品的几个知名竞品，用 tinyfish / actionbook 的 API key 全网…](1789696954993_1fw62qar.md) · B
+- 2026-09-18 [Chenxi: 今天和百万粉 AI 短剧 IP《老头们的快乐生活》合伙人 @sonofmagic95 聊了聊，请教了他们从0开始到单条商单好几万的秘诀](1789696899874_60ia9cf8.md) · C
+- 2026-09-18 [我赚钱一直靠抄。谁不抄谁啥比](1789696827057_2ztxgavz.md) · C
+- 2026-09-18 [Introducing System One Models &amp; Jev - TypeSafe AI Blog](1789696756121_a948eicr.md) · A
+- 2026-09-18 [@levelsio: ✨ New mini feature requested by @shmichael\_eth on my ideas and bugs board 📍 Sor…](1789696597377_jxm7bcty.md) · C
+- 2026-09-18 [开源 AI 技术栈](1789696441202_63fgmfss.md) · A
+- 2026-09-18 [Bobby Ivanov: Yesterday I attended, what for me was, the best AI event I have been to: "Open b…](1789696422448_58xijo3y.md) · C
+- 2026-09-18 [How We Built LangChain’s Paid Media Agent](1789696392624_9mhnoed6.md) · A
+- 2026-09-18 [Amal Irgashev: Our paid media agent at @LangChain has 200+ tools, a 19-page company wiki and it…](1789696223978_b4u8o5wx.md) · A
+- 2026-09-18 [多智能体协作与递归自我改进](1789696196061_kjby5qhq.md) · B
+- 2026-09-18 [LotusDecoder: 早上还在构思， 一张小显存高算力显卡，拖大显存低算力一体机， 原来已经有人做出来](1789691021139_5nnk7rom.md) · B
+- 2026-09-18 [卡颂: 如果你在用 Grill-Me 对齐需求，给你推荐一种更高效的方式 本质来说，Grill-Me 是人与 Agent 就一棵需求树进行 BFS 遍历对齐，之所以要遍…](1789690975191_tyxwplx1.md) · A
+- 2026-09-18 [hughmadden/ds41rt-rtx5090: DS41RT coordinator for DeepSeek-V4.1-Flash on an RTX 5090 \(32 GB\) + four DGX Spark expert ranks: build, launch and preflight scripts, settings, measured envelope](1789690876384_1p7wurc3.md) · A
+- 2026-09-17 [王二鹅 ERE: Lenny 在新一期的邮件中，整理了一篇 60 多个增长的玩法，本来以为又是 referral、SEO、influencer 这些传统的东西（不是说传统的东西没…](1789616063367_dhpwdafv.md) · A
+- 2026-09-17 [独立开发的渠道复利与产品组合](1789615847789_5z0qlfgt.md) · C
+- 2026-09-17 [Barret李靖: 研究了一下过去几年芯片和算力的供给情况](1789615011526_u2emjszc.md) · B
+- 2026-09-17 [企业 AI 最大的生意，可能是制造需求，而不是满足需求](1789614997320_i5kxgmqh.md) · B
+- 2026-09-17 [@levelsio: 🎒After a decade, I have made https://t](1789614701042_gk5nej2m.md) · B
+- 2026-09-17 [陈成: Claude Code 团队自己，已经有 70\~80% 的工作不在终端里做了](1789614485475_5io6erpd.md) · A
+- 2026-09-17 [How the Claude Code team uses Claude Code - YouTube](1789614478726_cev88w82.md) · A
+- 2026-09-17 [使用 Codex 和 KiCad 设计 PCB：从实际需求到经过测试的电路板](1789614125472_lp3ijf8a.md) · A
+- 2026-09-17 [GREG ISENBERG: I think we'll see 5x the number of people become hardware and robotics founders …](1789612929042_9f3xz02c.md) · A
+- 2026-09-17 [哥飞: 2023年，我在一家小公司担任技术负责人，每个月到手三万多一点工资，带着几个人的技术团队，公司业务不是我感兴趣的](1789612593419_kcrk6v3l.md) · C
+- 2026-09-17 [人工智能硬件开发的能力边界与可靠路径](1789612585463_qoatxbzh.md) · A
+- 2026-09-16 [actualbudget/actual: A local-first personal finance app](1789538981623_xjibn8wx.md) · C
+- 2026-09-16 [a16z: a16z's Anish Acharya says companies like Cursor and Decagon prove moats don't ne…](1789533501492_q796kowg.md) · B
+- 2026-09-16 [Barret李靖: Team 的运转离不开三类人](1789533499983_67cm81a0.md) · C
+- 2026-09-16 [Andrew D. Huberman, Ph.D.: The new Huberman Lab episode is out: The Art of True Happiness \| Dr](1789533475859_77to4658.md) · C
+- 2026-09-16 [李老师不是你老师: 9月15日，浙江宁波海曙区白云街道沁水丽庭3幢顶层发生火灾，救援画面拍到一名女性在长梯旁从楼体外坠落](1789533467489_5ohbwijp.md) · E
+- 2026-09-16 [Why you should work on AI for AI Research — Richard Socher of Recursive](1789533442296_kfv9e5oz.md) · A
+- 2026-09-16 [Phoenix Yin: 一个长期躺着和坐着的人，他的骨骼和肌肉习惯了处于卸力状态](1789533415191_1dctweve.md) · C
+- 2026-09-16 [CNX Software: Ultra-compact Edge AI camera board with onboard 1](1789533412855_bp45g6bx.md) · C
+- 2026-09-16 [Feiteng: 我最近两个月做研究和开发，都碰到了 AI 生成代码带来的大量“冗余” 不得不增加“人工 review” 来防止质量崩塌 1](1789533397307_nsqo22kd.md) · B
+- 2026-09-16 [凡人小北: 最近在看 AI native 的系统构建，Salesforce 是其中一个经典的落地路线，还有其他两个形态：corgi 和 kavak](1789533391900_c7zmdsu0.md) · B
+- 2026-09-16 [CJ Zafir: Wao, this post blew up, and I triggered some Saastophers](1789533365020_vrih3j7h.md) · B
+- 2026-09-16 [eternity4719/HowToLiveBetter: 按性价比排序的循证生活指南：长寿防病、急救、省钱理财、法律红线、失业与工伤、医保社保、恋爱婚育、怀孕育儿、创业与做平台合规、出国与技能。每条写明成本、收益、证据等级和原始出处，只引期刊论文与官方文件。](1789533359640_sixdj7y4.md) · A
+- 2026-09-16 [如何不出境、不开香港公司，给自己的产品接上全球收款](1789533338225_ljh4c1pl.md) · A
+- 2026-09-16 [8月金融数据——居民、企业一起坍塌](1789533319508_6k9jn9bv.md) · C
+- 2026-09-16 [Ding: 这个不错，一个面向 AI Agent 的高质量动画 React 组件库](1789533308010_c82m6yp4.md) · B
+- 2026-09-16 [当平庸获得了雄辩：组织AI化中的悖论与荒诞](1789533285356_9nv1yqc2.md) · B
+- 2026-09-16 [宝玉: Anthropic 工程师讲了一堂 FDE 入门课 https://t](1789533273811_2idll57i.md) · A
+- 2026-09-16 [LinearUncle: 我知道大家不仅不写代码，也不看代码了，但我还是建议：AI 写的代码，多少看一眼](1789533266772_6n6hcxnm.md) · B
+- 2026-09-16 [DataDan｜AI Consultant + Builder: 我现在越来越觉得，AI Agent 最有价值的地方，可能根本不是替公司省多少人，而是它有一种很尴尬的能力：把一家公司平时努力维持的那些“大家都懂，但最好别说破”…](1789533207437_v3aehx8t.md) · A
+- 2026-09-16 [Simon: 翻译一下这篇异构推理的好文章： 我的桌上有一台 256 GB 的 M3 Ultra Mac Studio，和两台 NVIDIA GB10 Spark 级系统，我…](1789533178378_2d5neexb.md) · A
+- 2026-09-16 [Jeremy Frisch: Speed Demons is LIVE](1789533157355_0hrldl3s.md) · D
+- 2026-09-16 [卫斯理: Omarchy 终于走到这一步了，哈哈哈 安装个Windows虚拟机，试试剪映效果咋样 https://t](1789533153988_6ccyjw6w.md) · E
+- 2026-09-16 [Mustafa.: learn chinese move to shenzhen build hardware](1789533133540_yqdpah6e.md) · D
+- 2026-09-16 [Viking: 不仅仅是学生吧 现在找工作的也好难的 不仅仅是机会少了 面试准备感觉更难了 五六年前只有有一个还行的工作背景 疯狂刷点leetcode 弄个前端面试题库背一背 …](1789533103651_z8tavpk3.md) · D
+- 2026-09-16 [二十个月交付一台微型 SLAM 相机](1789533103650_osrl1hgg.md) · A
+- 2026-09-16 [arnegiacomo/fugleramme: E-ink bird frame for Raspberry Pi - real-time bird detection by audio, fully local AI, rendered as real, hand-cut 1800s bird illustrations.](1789531525480_ejg1hi41.md) · A
+- 2026-09-16 [Why we built Pion \| Andon Labs](1789531471642_tvue1yur.md) · B
+- 2026-09-16 [Ask HN: What are you working on? \(September 2026\) \| Hacker News](1789531461814_47tvfq58.md) · B
+- 2026-09-16 [How to Write an Effective Software Design Document](1789531457789_relj3vat.md) · S
+- 2026-09-16 [Making Startups Powerful](1789531439820_vdtvfiil.md) · A
+- 2026-09-16 [Apple Reference Image: A New Approach for Verified Photography - Apple Security Research](1789531426056_v7eyuf5z.md) · A
+- 2026-09-16 [syv-ai/qwen38-27b-rtx3090: Qwen3.8-27B on a single RTX 3090 with vLLM: \~1,000 tok/s at 64 concurrent \(int8 tensor-core GEMMs, fp16 DeltaNet state\), \~114 tok/s single-user at default sampling / \~124 gr…](1789520343818_ne5gmi42.md) · S
+- 2026-09-16 [JakeATX/llamAmpere: llama.cpp fork for significantly improved performance on Ampere \(especially RTX 3090 / 3090 Ti\): TurboQuant KV cache, MTP speculative decoding with a 64K draft-vocabulary shortlist…](1789520340871_fcudukhv.md) · A
+- 2026-09-16 [范凯说AI: 今天下午和一位师弟聊天，他 2009 年创业到现在](1789519068448_h06d9uvc.md) · C
+- 2026-09-16 [置身 Agent 时代：当软件开始不再需要软件工程师](1789518751876_dupdaq57.md) · A
+- 2026-09-16 [LotusDecoder: “于是新的瓶颈出现了：我根本看不过来](1789518546144_1ieamcnm.md) · B
+- 2026-09-15 [weiguo zhang: 曾鸣最新访谈：2026，像极了1995年 这是我读完访谈后很共鸣的感受](1789466161423_8h45dk1r.md) · A
+- 2026-09-15 [编号456: 从参与百万项目到泥坑打滚，分享我的创业经历⬇ 01｜19岁的时候，大家都说我是公司里最有未来的人 19岁身处国内头部广告公司，每天参与小米、华为、奢侈品的百万级…](1789466151440_xst114jq.md) · A
+- 2026-09-15 [dontbesilent: 1/ 如何在 24h 内拥有自己的生意，并开始盈利](1789465764653_080h3hhl.md) · A
+- 2026-09-15 [如何躺着赚钱。从20岁到现在的躺赚体系。（经验，思考，以及案例）](1789465016503_limnkp98.md) · A
+- 2026-09-15 [万字长文｜Web出海第一步，从选需求到关键词研究，教你选出第一个赚美刀的方向](1789465000779_xn4j4v49.md) · S
+- 2026-09-15 [用 AI 搞点小钱跟呼吸一样简单](1789463861426_m7eudbtc.md) · S
+- 2026-09-15 [熊布朗: 差不多，J Agent 及时基于 Pi-core 做的，整个 Harness 实施的过程中，下面每个模块的工作量差异巨大](1789463830230_dww3vsb9.md) · B
+- 2026-09-15 [dontbesilent: 接下来会尝试一个全新的出视频的方法，一次性录制几个小时～十几个小时的超长素材，然后让 AI 剪辑出 50～100 条视频 起因是之前剪辑 60min 视频的时候…](1789461636072_scbykpn5.md) · B
+- 2026-09-15 [commaai/PCBGolf: Are you better than an autorouter?](1789461626680_qx1v4oak.md) · C
+- 2026-09-15 [沐阳: 不管是做自媒体做内容，还是做产品，一定要分析受众，分类施策](1789460471837_ful8494n.md) · B
+- 2026-09-15 [暗流之下：ChatGPT 代充全链路](1789460457349_a4iq4wac.md) · B
+- 2026-09-15 [karminski-牙医: 看到个神奇的 huggingface Space项目, 思路很值得借鉴跟大家说下](1789460232965_kcy0ae2w.md) · B
+- 2026-09-15 [Teortaxes▶️ \(DeepSeek 推特🐋铁粉 2023 – ∞\): Full text \(translated by Astra-xhigh, I'm out of everything else\): I Have No Cho…](1789460212085_y34h0oh7.md) · C
+- 2026-09-15 [一张废物矿渣卡，价格涨了几十倍：不用改硬件，8GB 显存解锁到 64GB。挖矿的卡，怎么跑上了大模型？](1789458098803_2uyrlupn.md) · B
+- 2026-09-15 [Miles Ma: 前几天认识一个做跨境电商的老板](1789458092131_szlpblpk.md) · B
+- 2026-09-15 [Leo｜LeoLabs.me: Polymarket 做市第一天，净值大约赚了 $40](1789458085871_50qg2rsd.md) · B
+- 2026-09-15 [程序员鱼皮: 每月烧上万块的 Tokens，我都拿 AI 做了些什么](1789457533559_1ifmea2b.md) · A
+- 2026-09-15 [Leo｜LeoLabs.me: 最近看到程序员鱼皮分享自己每个月烧很多 Tokens，用 AI 做了十几套工作流](1789446575612_cleu5yyz.md) · A
+- 2026-09-15 [文雍: 🎺🎺🎺慢聊历史细读书——文雍漫谈 🗣️ 🗣️🗣️周末了，和大家一起分享一本书，章怡和老师的《最后的贵族》 这本书最有意思的地方，恰恰不是“贵族”两个…](1789446406959_vjr9v06u.md) · D
+- 2026-09-15 [Ayush 🙏: this is Dario and sama's worst nightmare - A law firm buying Nvidia servers](1789445522197_8p5eoamm.md) · B
+- 2026-09-15 [Vercel Labs](1789445327340_ygk1j9pt.md) · B
+- 2026-09-15 [⚡ Qwen3.8-27B part 3 — the DFlash2 tier hierarchy: super, ultra, across speed and fidelity · noonghunna/club-3090 · Discussion \#1076](1789445321037_7v96nr89.md) · A
+- 2026-09-15 [Yangyi: 上海人工智能实验室发布了一个专门面向科研工作者、开发者和专业知识工作者的智能体模型 Atria Dawn Preview，团队是一支各大高校研究生与博士生广泛参…](1789445316156_girvu1cy.md) · B
+- 2026-09-15 [noname: Two RTX 3090s](1789445157624_81xfmwbe.md) · B
+- 2026-09-15 [Will: I'm going to order ten ESP32-C6 boards](1789444912605_vyql2skh.md) · C
+- 2026-09-15 [Morse Micro Wi-Fi HaLow USB adapters add 802.11ah connectivity to PCs and routers - CNX Software](1789434803030_6ra2vpp7.md) · C
+- 2026-09-15 [Teortaxes▶️ \(DeepSeek 推特🐋铁粉 2023 – ∞\): Full text \(translated by Astra-xhigh, I'm out of everything else\): I Have No Cho…](1789434561062_qzdpyhj7.md) · B
+- 2026-09-15 [CJ Zafir: Monetization of software is dead now](1789432324504_q77pprwf.md) · B
+- 2026-09-14 [Zeng Ming: The Brutal Truth, Companies That Will Disappear, Why “Excellent” ≠ “Great” - YouTube](1789347281328_1gc0thy8.md) · A
+- 2026-09-11 [zg 正式开源：本地检索，不止于关键词](1789114004227_z6fn5ixm.md) · A
+- 2026-09-11 [AmirMušić: Heard about a guy on pocket fm makes tens of thousands a month off a single audi…](1789107393014_3iubeiv8.md) · B
+- 2026-09-11 [Rohan Nayak: We grew from \~0 to $500M ARR, adding $250M last year alone while being EBITDA pr…](1789107388689_n0ntu6ky.md) · S
+- 2026-09-11 [Introducing Projects](1789096100251_1xpvnxy1.md) · B
+- 2026-09-10 [Phoenix Yin: 最近越来越强烈地感觉到，人类正在经历一场 Stimulus Inflation，刺激通胀](1789023439681_yl0zc7h9.md) · B
+- 2026-09-10 [Xiaowen: 其实所有领域都是这个情况](1789022598186_8xhhtva5.md) · C
+- 2026-09-10 [黄赟: 嗯，我发现深挖抖音，是有大才的 这哥们拆解 200万商业粉的超级巨佬，清华陈晶](1789014975568_ohyjox5w.md) · B
+- 2026-09-10 [vercel-labs/portless: Replace port numbers with stable, named local URLs. For humans and agents.](1789014853571_3anxrenz.md) · A
+- 2026-09-10 [朱峰: 我越来越觉得，下一代的创业，不能再只是做一个纯线上的产品，更不能只是重新搭一个平台、再造一个流量入口](1789014805804_jli08qzi.md) · B
+- 2026-09-10 [Yangyi: AI软件的护城河基本上都是依赖垂直领域数据 靠先发优势积攒优质数据 将数据转化成Agent Loop的优质结果 AI可以很快做一个60分的功能 但如果你希望它交…](1789014398116_rc0bmh6x.md) · B
+- 2026-09-10 [Cursor + Grok Bot + pstack，真正的 AI 软件工厂开始出现了](1789013134910_l509wzfb.md) · A
+- 2026-09-10 [Peter: People said my last AI PCBs were too simple](1789012512585_jyzjb52r.md) · C
+- 2026-09-10 [CAE-Agent-Hub/README.zh-CN.md at main · Cai-aa/CAE-Agent-Hub](1789012454685_bkxklx5q.md) · A
+- 2026-09-10 [X平台个人自媒体增长指南](1789012139014_vw8t5718.md) · B
+- 2026-09-10 [AA on X: "i trained a computer vision model to train me at tennis it tracks ball speed, forehand vs backhand strokes, shot placement, body position when i strike the ball how this works: - input video…](1789011190326_o9gkrjz9.md)
+- 2026-09-10 [Rainier: 我觉得软件工程师机会还是有的](1789010511643_9yfjtjuo.md) · B
+- 2026-09-10 [如何使用 GPT-6 Astra 在自动驾驶模式下创建长篇广告](1789009352646_44x5ciqi.md) · A
+- 2026-09-10 [What do Visa and Mastercard do? An intro to card networks @ tautology.town](1789007600249_vvnkmetn.md) · B
+- 2026-09-10 [We accidentally built a synthetic cell factory](1789007547266_l0yv0z2w.md) · B
+- 2026-09-10 [On-device intelligence for every product](1789007513178_om6dyv59.md) · A
+- 2026-09-10 [Claude, change the “Add to Cart” button to blue \| Hacker News](1789007277723_b896p37w.md) · B
+- 2026-09-09 [悲观、沮丧与黑色幽默：中国社交媒体上的“负能量”](1788927341347_g7wz5efa.md) · E
+- 2026-09-09 [GoFly: GPT-6 Astra画FPV无人机飞控PCB板方式对比 1、图一和图二是GPT-6直接使用Codex的Computer Use功能直接自己打开嘉立创EDA在里…](1788927156917_nzpwod8t.md) · B
+- 2026-09-09 [copperheadhq/copperhead: Hardware as fast as software.](1788921676753_nocrj1me.md) · A
+- 2026-09-09 [copperhead. Cursor for circuit boards.](1788921462250_qdk152z4.md) · A
+- 2026-09-09 [Media \| Blackmagic Design](1788921419059_274szqku.md) · B
+- 2026-09-09 [De-Brainrot Vacations](1788921382352_frw5ugmu.md) · C
+- 2026-09-09 [Ask HN: Would you read a statistics textbook? \| Hacker News](1788921370964_epidkpzg.md) · B
+- 2026-09-09 [On solving the Jane Street Reverse Engineering Challenge](1788921283646_v704l1hg.md) · B
+- 2026-09-09 [OpenShot 4.0: Record, Edit, and Color Like Never Before](1788921232678_ej7b1h45.md) · B
+- 2026-09-09 [Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses](1788921208959_qt2t9xwm.md) · A
+- 2026-09-09 [Memory - Docs by LangChain](1788920808305_imhsndws.md) · A
+- 2026-09-09 [如何用 Grok Bot + Kimi K3 搭建 24/7 仓库运维台（完整指南）](1788920802752_6ux6iye6.md) · B
+- 2026-09-09 [Manage connections - Docs by LangChain](1788920724680_tgwovzkt.md) · A
+- 2026-09-09 [Will Nelson: Here's how I made $12,000,000 in the last year cash collected while trolling the…](1788920519671_1qbjo33h.md) · C
+- 2026-09-09 [a16z: a16z's Anish Acharya on why consumer AI is where the iPhone was in 2010, and the…](1788917934342_82qq7lxq.md) · B
+- 2026-09-09 [Why AI doom is a myth \| Anish Acharya \(a16z\) - YouTube](1788917753629_nfvubvuu.md) · B
+- 2026-09-09 [Feiteng: 低比特量化： 通过数值优化，把 Qwen3](1788913968259_8c49ziwf.md) · B
+- 2026-09-08 [Paul Graham On Startups, Ambition, and Great Founders - YouTube](1788861794415_hacpzmht.md) · A
+- 2026-09-08 [Varun: Agentic General Intelligence \| v3](1788861337784_rz54brgr.md) · B
+- 2026-09-08 [观察员\_Alex: 当年天涯上有一篇帖子流传甚广，视角现实得近乎冷酷](1788861315605_aq0jg1yt.md) · C
+- 2026-09-08 [莎士比💊: 为什么很多傻逼大人都喜欢贬低自己的孩子](1788860653221_dhv2tvbf.md) · C
+- 2026-09-08 [Liquid4All/cookbook: Examples, end-2-end tutorials and apps built using Liquid AI Foundational Models \(LFM\) and the LEAP SDK](1788860612862_1klzeav6.md) · A
+- 2026-09-08 [cookbook/examples/audio-transcription-cli at main · Liquid4All/cookbook](1788860558532_kry2amez.md) · A
+- 2026-09-03 [周小鸟开窍: 2/365 老板是唯一的业务员](1788432279134_v1r49xyc.md) · B
+- 2026-09-03 [智能体工程配置（经过2000+小时实践）](1788428520749_tkejsc5h.md) · A
+- 2026-09-03 [王局志安: 中国这种模式的挑战主要来自于人口减少，当公共投资——资产价格上涨——收入增长](1788428493311_r7gpxrcx.md) · D
+- 2026-09-03 [别天天想着vibe coding，分享我用AI帮助孩子学习，一个月提高30分](1788428447459_j8ksfxj5.md) · A
+- 2026-09-03 [AI 工具导航站流量变现闭环分享](1788428439656_16efq9cb.md) · B
+- 2026-09-03 [LinearUncle: 我有个强烈感觉，如果你们现在还想学习一门编程语言，那么一定是 rust](1788427965708_71s3eesr.md) · C
+- 2026-09-03 [pi-matt-pocock 介绍，以及一种替代 skills 的 agent 能力设计](1788427203413_xybwwhqe.md) · A
+- 2026-09-03 [six: I built a generative video classroom with @fal H3 Max Ask about any concept, and…](1788426450175_bn4j9hoz.md) · B
+- 2026-09-03 [He Qinglian: 有件事情是个天大的误区，我早就想说了](1788426011186_r4hlr3k2.md) · D
+- 2026-09-03 [黄赟 on X: "群里有个水友发了一个小单子，预算 500，能接的兄弟来 需求：一站式spotify, youtube, apple music音乐，输入歌单链接或者歌曲链接，自动匹配，歌单下载后的压缩包，里面歌曲按顺序标明。 https://t.co/DP9cXxNAy1" / X](1788425735924_wugcr25g.md)
+- 2026-09-03 [半年后的今天，我怎么用 AI 写代码](1788418815538_wwp6axrs.md) · A
+- 2026-09-03 [陈着冷静: @szslg 当时应当注册个咨询公司，签咨询合同，开发票，既可以走对公账户，收入也合理了](1788418714187_tgpfo8lf.md) · E
+- 2026-09-01 [yarr\! \(22503\)](1788229385627_tgau28b6.md) · C
+
+## 2026-08（142）
+
+- 2026-08-28 [郭宇：用AI經營一人公司（全） - YouTube](1787904896634_mglw64is.md) · B
+- 2026-08-28 [做一个能赚钱的自媒体运营（自媒体执行手册2）](1787903987404_uvt9aw77.md) · A
+- 2026-08-28 [Phoenix Yin: 如何从根本上解决教材的反自学系统问题](1787903983029_gibg9r1a.md) · A
+- 2026-08-28 [我如何管理多组 Grok Bot 团队](1787903608484_z2n97b7h.md) · B
+- 2026-08-28 [Jiacheng is building in public: 忙里偷闲，仅花费1天时间帮 @xiangyuli 蹬出了一套稳定可用的LTE网关方案，仅花费59元物料成本和650M token，实现手机卡插家里的小电脑上，出…](1787889803902_mkmx83u1.md) · C
+- 2026-08-28 [Grok Bot 泄露：Cursor 为什么只给模型一部分工具的完整定义](1787889417743_d3bjzb3c.md) · A
+- 2026-08-28 [我如何用 AI 进行设计。](1787885607513_xveosoiz.md) · A
+- 2026-08-28 [Fenng: 慢性乙肝功能性治愈迎来重要突破 8 月 24 日，葛兰素史克宣布，日本厚生劳动省已批准其研发的反义寡核苷酸（ASO）药物 Bepirovirsen \(贝普若韦生…](1787880152926_91n114tf.md) · D
+- 2026-08-27 [中国经济减速的传导与认知误区](1787827890880_lis1mygn.md) · D
+- 2026-08-27 [退出自救与体制韧性的世界观](1787824959474_1z1cyend.md) · S
+- 2026-08-27 [王海滨的财经闲谈: 这个年轻人很有意思，明明刚毕业不久，对中国社会的洞察和经济结构的理解，是很罕见的](1787822779309_vl5vvqm9.md) · D
+- 2026-08-27 [BennyKok/omg.dev: omg.dev — Remote control for claude, codex, cursor, opencode, pi, grok, jcocde with mobile client](1787818018964_nhns89hu.md) · A
+- 2026-08-26 [Alex\_感知: 近期发表在《柳叶刀-区域健康（西太平洋）》（The Lancet Regional Health- Western Pacific）的一篇研究《中国卫生筹资公平…](1787739136368_x3v5bc0c.md) · C
+- 2026-08-26 [Andy Konwinski: Introducing Headlong, an open source microharness for persistent agents: self-gu…](1787738777473_lssldrbl.md) · A
+- 2026-08-26 [用组件资源提升智能体界面设计质量](1787718109246_0gu6d3r5.md) · S
+- 2026-08-26 [DataDan｜AI Consultant + Builder: 在京阪神跑项目，最怕客户一上来就说：“我们资料很多，能不能一个月做个中日双语的AI助手](1787717780310_osyr78xv.md) · A
+- 2026-08-26 [✧ 𝕀𝔸𝕄𝔸𝕀 ✧: 感觉可以用蓝眼睛岛的模型理解，蓝眼睛岛讲的是共同知识如何让一个静态事实突然触发行动，政治斗争里，失宠、清洗、政变、倒戈很多时候也遵循同一种机制： 斯大林是否信任…](1787716600973_sk45kq7u.md) · B
+- 2026-08-26 [构建以代码仓库为中心的模块化智能体技术栈](1787714858276_pvxjr5f6.md) · A
+- 2026-08-26 [OneCamp · Governed AI on your own server](1787714289171_f715of37.md) · A
+- 2026-08-21 [Jeff Dean 的「1% 法则」：AI 时代，真正稀缺的已经不是写代码](1787306574283_gqumrwl0.md) · A
+- 2026-08-21 [Susan STEM: 个人效率工具我今年发现最重要的一个基础设施是OCR](1787306527455_9lfogqm4.md) · B
+- 2026-08-21 [A controversial Alzheimer’s surgery is said to reverse symptoms — here’s what scientists know](1787306525065_pwsa4rdn.md) · B
+- 2026-08-21 [dontbesilent: 99% 的商业问题都是心理问题，现在这个心理问题在由知识付费行业吞掉，但是知识付费又没解决这个问题 具体而言，一个商业问题，是比较容易被市场解决的，因为帮你解决…](1787306504405_3sm6s89o.md) · C
+- 2026-08-21 [姚金刚: 今日资本徐新，在一期视频播客里提到：以后很多组织，真的是可能没有中层了，更多的会是这样一种形态，一个很厉害的人，可以指挥Agent干活，效率会高很多 这跟我和向…](1787306484852_8u0wh8iy.md) · B
+- 2026-08-21 [The Head of Growth at a $100M Company Explains AEO - YouTube](1787306483239_a8s3s8fv.md) · B
+- 2026-08-21 [Yangyi: 我建议大家不要再做短视频了 尽量去做那些5分钟以上的长视频 长篇幅（3-6分钟） ↓ 相当于一封"娱乐化的视频销售信" ↓ 观众看完 = 已经完成教育 + 建立…](1787306468867_dixgdu7b.md) · B
+- 2026-08-21 [阑夕: 「财新」发的新稿「中年塌陷样本：独一代的父母照护困境」看得着实有点沉重，也充分说明了为什么苦难是文学创作的温床](1787306442140_19trzuy7.md) · C
+- 2026-08-21 [说一个反常识的真相，Agent如今在真实工作场景的成功率依然很低。](1787306122395_d2eklves.md) · B
+- 2026-08-21 [Yangyi: 其实做海外短视频营销的话 比较好的方式是 x/linkedin 做文字测试 然后在tiktok做a/b测试 最后再搬去ins 找到pattern再靠KOC放大 …](1787306104876_6ptzvo8w.md) · B
+- 2026-08-21 [mal: i spent some time reverse engineering how cal went from unknown to the \#1 chatgp…](1787306088027_2bxebqd5.md) · B
+- 2026-08-21 [空空道人: 两千年前，李斯就把穷的根子看穿了](1787306077037_yp35a80i.md) · C
+- 2026-08-21 [Wei: 最近在帮一个百人以上的研发部门做 AI 流程自动化，卡在技术选型上了](1787306047406_l0r7kpdi.md) · B
+- 2026-08-21 [Blake Emal: Messaging at 0 customers vs 10 customers: \(what changes\) At 0 customers, everyth…](1787306022152_pwshmmdx.md) · B
+- 2026-08-21 [multiagent 协作问题的初步整理](1787305464328_qm6vvuj9.md) · A
+- 2026-08-21 [How ABC Legal turned every employee into a builder with Claude Managed Agents](1787305419817_lav6dm99.md) · S
+- 2026-08-21 [大模型本地部署完整指南：搭建自己的 Agent 工作流，实现Token自由「新手友好」](1787305252440_rh06g7ka.md) · A
+- 2026-08-21 [创业2年半后，想跟你分享关于AI组织的这7点心得。](1787301094634_obr0tfzd.md) · A
+- 2026-08-21 [给我20分钟，我就能让你变得无法被操纵](1787301074827_749e2p74.md) · B
+- 2026-08-21 [宝玉: Jason Wei 这条推文倒是没聊 AI，聊的是运动和职业思维的关系：你选的运动，可能在悄悄塑造你的职业大脑 推文提出了一个挺有意思的概念：“认知奖励形状”（…](1787301024429_y9ax44ji.md) · C
+- 2026-08-21 [运动回报结构如何塑造职业思维](1787301021976_wc9k1brj.md) · B
+- 2026-08-21 [我做了 200+ 次用户访谈，只有这 5 个问题是真正有用的](1787297188533_wviz0ni1.md) · A
+- 2026-08-21 [时雨堂：一家 5 个人的日本软件公司，把经营手册全部公开了](1787294225997_sl8fn2wx.md) · A
+- 2026-08-21 [Bruce Guai: 最近读到 a16z Julie 写的《Be AI-Native and AI-Proof》](1787294135252_aqckbu1y.md) · A
+- 2026-08-21 [DataDan｜AI Consultant + Builder: 聊聊我从国内裁员潮里走出来,落地大阪做独立 AI 工程师的心路和落地过程](1787294128790_wiw2u3e5.md) · A
+- 2026-08-21 [妮妮要翻倍: 人生真正的关键抉择，其实只有三次](1787294101748_s24wwfd2.md) · C
+- 2026-08-21 [Yannick Buccella MD: The newer generation cancer vaccines aren't like the HPV shot \(that prevents a v…](1787286653656_5xye11b8.md) · C
+- 2026-08-21 [DataDan｜AI Consultant + Builder: 之前做中日跨境项目，踩过一个很小、也很贵的坑： 一个零件编号里的全角字符，差点让日本工厂把一批正常产品全判成不良](1787286352453_qvldm5dk.md) · A
+- 2026-08-21 [Alpha哥AI投资日记 🌴 📈: Harvey 是现在最成功的 Legal AI 公司之一，ARR 已经大约 3](1787285728248_v20juzdk.md) · A
+- 2026-08-21 [What is a Harness? \| EARENDIL](1787285585694_63bdnxlc.md) · B
+- 2026-08-21 [Yangyi: 今天看到一篇关于Flipkart（印度最大电商，沃尔玛旗下）工程团队的真实线上系统报告，把"搜了一圈但没买"的用户捞出来，派一组 AI 智能体替用户把选购功课做…](1787284775659_lqxftq0c.md) · B
+- 2026-08-21 [杀马特宅主: 莫德纳的疫苗不能用一般的新药，或者是效果特别好的新药来对标，而是一种整个的新的治疗模式](1787282979459_9uv62of0.md) · D
+- 2026-08-21 [体验完DeepSeek Harness，我打算放弃开发了两年 · 墨问](1787282046413_2mq7v240.md) · B
+- 2026-08-21 [企业做 AI，为什么总是忍不住自己造轮子？](1787281901436_3yij1e0h.md) · A
+- 2026-08-19 [Memory prices climb 500% in 12 months, up to 10x the lowest ever tracked prices &amp;mdash; 128GB of DDR5 now $3,399](1787104339850_0vliroxv.md) · C
+- 2026-08-19 [Being ambitious and being a dad \| Nicholas Charriere](1787104028016_jewmygr9.md) · C
+- 2026-08-17 [Qwen 3.8 27B is excellent, but it defaults to wildly overthinking things](1786943502854_nkr9i95k.md) · A
+- 2026-08-17 [Winning and Losing at the Great Game of Intimacy - Common Reader](1786943480662_qtrysc7x.md) · C
+- 2026-08-17 [Who Are the Token Brokers? \| Vectoral](1786943463369_2yvfdyvh.md) · B
+- 2026-08-17 [Comma.ai eGPU Dock Runs Open-Source Firmware: $249 Bare, $799 With an RX 9060 - Hardware Busters](1786943447467_ctiov4jl.md) · C
+- 2026-08-17 [A fortuitous decade as an indie software developer](1786943435830_otbwr0gt.md) · B
+- 2026-08-17 [Engineers will do anything to avoid learning from history — David Horn](1786943423642_ss94yduo.md) · B
+- 2026-08-17 [Abdominal Fat Predicts Heart Disease Risk Better Than BMI - American College of Cardiology](1786943404261_ial373us.md) · C
+- 2026-08-17 [Cultivating a state of mind where new ideas are born](1786943397267_vjczlodw.md) · A
+- 2026-08-17 [AI Isn’t Outthinking Mathematicians. It’s Out-Remembering Them.](1786943373213_1hxfh4wc.md) · B
+- 2026-08-17 [Semaglutide attenuates a proteomics‐based dementia risk signature in older adults with overweight or obesity and cardiovascular disease without diabetes: A post hoc analysis of the SELECT phase 3 tria…](1786943369640_hxlyqfhi.md) · B
+- 2026-08-17 [Auto-research with codex: How I achieved a 232x Faster Kernel over baseline with Codex in GPU Mode's qr\_v2 problem](1786943345161_rhugd1p9.md) · S
+- 2026-08-17 [Working With AI Feels More Like Leadership Than Coding — Allen Bargi](1786943344353_rgadsdf4.md) · B
+- 2026-08-17 [ThoughtDAG — Make LLM context visible and editable](1786943321081_urvnnyu8.md) · B
+- 2026-08-17 [Super Mario Derivations](1786943309437_ionwivo2.md) · A
+- 2026-08-17 [LuaCAD](1786943290035_fjlbtpms.md) · B
+- 2026-08-17 [lajosdeme/mole: A deep-research agent with an enforced budget, verified quotes, and a privacy boundary for local data.](1786943288557_uxydpbz9.md) · A
+- 2026-08-17 [Maximizing the value of your Claude Code sessions](1786943266423_s4n6lnjp.md) · S
+- 2026-08-17 [Qwen 3.6 \~ Recording](1786943254383_ox23vyro.md) · B
+- 2026-08-17 [Seven books I keep close because I love them](1786943243023_dvs9ktl4.md) · C
+- 2026-08-17 [I turned my RSS feeds into an e-ink newspaper to stop reading on my phone](1786943236587_gzyuf7jk.md) · B
+- 2026-08-17 [Why does Opus 5 feel worse to work with?](1786943213749_9tqyfa9g.md) · B
+- 2026-08-17 [GLM-5.3: Frontier Coding with Emergent Cyber Capabilities](1786943209265_osjffob4.md) · A
+- 2026-08-17 [How Compaction Works in Pi \| EARENDIL](1786943184366_xy0oe6fu.md) · A
+- 2026-08-17 [SparrowMap](1786943166874_90m1u5p2.md) · B
+- 2026-08-17 [Accelerating GPT-5.6 Sol Ultrafast with OpenAI](1786943160317_9uwmhcw6.md) · B
+- 2026-08-17 [DeepSeek Harness 开发者预览版：一切皆插件](1786943137391_14qk94zn.md) · A
+- 2026-08-17 [HTML over WebSockets: real-time SPAs with barely any JavaScript \| Andros Fenollosa](1786943135826_a71ag8u0.md) · A
+- 2026-08-17 [AI is removing the middle class of software engineering](1786943105437_te5s0s4g.md) · B
+- 2026-08-17 [Grok 4.6 returns SpaceXAI to the intelligence frontier and leads on cost efficiency](1786943105437_8ykh76xv.md) · B
+- 2026-08-13 [牛逼！又一个黑马级别 Agent CLI 出现 — Ante CLI 评测：麻雀虽小，五脏俱全](1786613701467_0jh6hors.md) · A
+- 2026-08-12 [商铺投资精要](1786528785136_peufqztl.md) · C
+- 2026-08-11 [different-ai/openwork: The open-source alternative to Claude Cowork \(powered by opencode\)](1786419021132_6exntk18.md) · B
+- 2026-08-11 [AI High Signal Twitter List: August 10, 2026 AM Edition \| Readwise](1786414165835_cydzq331.md)
+- 2026-08-11 [AI Twitter List: August 10, 2026 PM Edition \| Readwise](1786414098236_c2duw8ol.md)
+- 2026-08-11 [AI High Signal Twitter List: August 10, 2026 PM Edition](1786413133039_hgpe0q5g.md) · C
+- 2026-08-11 [\[AINews\] Zawinski's Law of MultiAgents](1786412721553_lgm7f6fi.md) · B
+- 2026-08-11 [Docker Sandboxes – Disposable, isolated sandboxes for AI agents \| Hacker News](1786412361058_uqza0gjl.md) · A
+- 2026-08-10 [阑夕: The Information又在给川普的机器人禁令拆台了，说华强北挤满了采购中国机器人的美国企业家，有投资人来中国出差也被委托了一张长长的购物清单，而他甚至要…](1786354637674_39588mgs.md) · B
+- 2026-08-10 [Marc Lou: I only build 2 types of startups now: 1\) AI-proof in 10 years](1786354612947_t7czvcz1.md) · B
+- 2026-08-10 [Damon Chen: At yesterday's meetup I asked Marc why he's never shipped an AI wrapper 😅 His t…](1786354611508_1sc6anm9.md) · B
+- 2026-08-10 [宝玉: 我觉得像视频转录剪辑这样的 App 应该是被 Agent 调用的，App 主要是用来确认结果和微调的](1786354582448_ku3n43l2.md) · B
+- 2026-08-10 [凡人小北: 正好最近在设计 AI-Native 的理赔系统，补充几点： 1](1786354552342_sta9mztw.md) · B
+- 2026-08-10 [企业代理工作流的重构逻辑](1786354550561_kwot0u13.md) · A
+- 2026-08-10 [WeZZard: Manus 从产品形态看基本就是朝着「终局」去的： 1](1786354523400_r4laz68a.md) · C
+- 2026-08-10 [DAN KOE: A core sign of low intelligence is not being able to hold two contradictory idea…](1786354504178_lyt3kxdq.md) · D
+- 2026-08-10 [GREG ISENBERG: 23 ways I'd use AI agents to grow my startup to $1M ARR or PMF \(my running list\)…](1786354471324_8jy0bpvv.md) · A
+- 2026-08-10 [GREG ISENBERG: The new org chart probably looks something like this: A small layer of humans on…](1786354440489_jmugr56j.md) · C
+- 2026-08-10 [海明Dev: 今天想和大家分享一下，我通过自媒体赚到 10 万块的过程](1786354417243_7tghluqc.md) · B
+- 2026-08-10 [战略思维的艺术（如何取得巨大成功）](1786354391501_knb2ii5s.md) · B
+- 2026-08-10 [宝玉: 我在开发项目是，第一版本会先用 Claude Design 设计好 UI 原型/设计，打磨好后放到本地，配合 Baoyu-Design Skill 去维护，每次…](1786354372323_g8013ihn.md) · A
+- 2026-08-10 [sitin: 很多人用 Codex，可能一直在用“残血版”](1786354314322_ke4epex1.md) · B
+- 2026-08-10 [howie.serious: stratechery 对 cloudflare ceo 的1小时访谈，长文版](1786354282701_rsaapczx.md) · B
+- 2026-08-10 [howie.serious: Ben Thompson 的 Stratechery，跟 ai 投资方面的个人判断密切相关，所以每篇付费研报都会认真阅读（何况150刀订阅费已经花了🤣）](1786354257842_sohrf4jl.md) · A
+- 2026-08-10 [阑夕: The Information发了一篇万字长文，深扒了Anthropic创始人达里奥·阿莫代伊是怎么以强烈的个人意志——甚至可以说是被神格化了——凌驾于所有AI…](1786354257842_44rb9o57.md) · B
+- 2026-08-10 [A Falling Weight Just Broke the Sound Barrier with Tom Stanton's Supersonic Trebuchet](1786353993188_p8ridpzq.md) · B
+- 2026-08-10 [A Surveillance ‘Cat-and-Mouse’ Game With AI](1786353980066_uiagp8wi.md) · C
+- 2026-08-10 [Mea Culpa - Dark Hours](1786353968998_ymq05jr9.md) · C
+- 2026-08-10 [Ask HN: What are you working on? \(August 2026\) \| Hacker News](1786353936086_qd9yh4tl.md) · B
+- 2026-08-10 [How I use LLMs to learn complex topics · Laurentiu Raducu](1786353793857_9lc13fj0.md) · A
+- 2026-08-10 [We replaced Redis with MySQL for inventory reservations—and it scaled \(2026\) - Shopify](1786353767551_9dv5tohu.md) · A
+- 2026-08-10 [OpenChamber — Agentic Development Environment for AI Coding](1786353766575_5515am0h.md) · C
+- 2026-08-10 [Taxi drivers rarely die of Alzheimer’s – how complex mental maps and spatial reasoning protect your brain](1786353745217_ub25687y.md) · B
+- 2026-08-10 [my server is a phone now](1786353697433_i78nhx0m.md) · A
+- 2026-08-10 [Dithered QR code generator](1786353689802_khj5kxxi.md) · A
+- 2026-08-10 ["Code was never the hard part" is an insult to all programmers](1786353653616_vo9fzt44.md) · B
+- 2026-08-10 [Auto mode is now the default in Claude Code for Pro, Max, and Team plans](1786353640328_f6yvcvgp.md) · A
+- 2026-08-10 [dontbesilent: 你不想过度展示的，基本上都是你缺乏的，而不是你拥有的 比如有些人不想在视频中展示的自己过于高情商，实际情况是只有我们这种低情商的人才会这么想，高情商的人是没有这…](1786333556398_gcquagf8.md) · C
+- 2026-08-07 [✧ 𝕀𝔸𝕄𝔸𝕀 ✧: 最近读 @indigox 的《吾辈如神》，让我产生了一个关于人类文明发展的思考](1786093939303_4jp8k4jg.md) · C
+- 2026-08-07 [vLLM 背后的人：一个开源项目如何长成一家公司](1786093931242_10xig35s.md) · A
+- 2026-08-07 [Mr Panda: 受过良好教育的人， 并且在大城市里生活的](1786093854470_fqfjhl99.md) · A
+- 2026-08-07 [海明Dev: 我做 App 已经两年了，前几天统计了一下，收入刚好超过 50 万 虽然这个数字并不多，但是我觉得这样的生活是非常轻松的，因为我的工作时间很少，大部分收入都是被…](1786091456952_3gp017wn.md) · A
+- 2026-08-07 [Eminent\_minds: STRANGE FATHERHOOD ADVICE I GOT FROM AN OLDER DAD THAT ACTUALLY WORKS: 1](1786073682129_8jlzf0jx.md) · A
+- 2026-08-07 [Mantra Wang: @Ariston\_Macro @grok 原文地址，或者书籍下载地址](1786073572430_ur2x8fqp.md) · A
+- 2026-08-07 [徹言: 最近比较闲，一边学日语，一边重新研究以前感兴趣的开源项目](1786072789951_a0vh8ri9.md) · B
+- 2026-08-07 [冰河: @huangyun\_122 拉出跟“钱”有关的项目](1786072777642_vvwfsqz7.md) · B
+- 2026-08-05 [How Raymond Plank Made a Fortune in Big Oil's Scraps - YouTube](1785916742104_1vsynutb.md) · B
+- 2026-08-05 [In Memory of My Wife, Elise Cawley \(1961–2026\), with Thanks for 36 Wonderful Years](1785913580163_ehj2kp6e.md) · D
+- 2026-08-05 [Harness Engineering for Self-Improvement](1785913532584_3wc3lp1w.md) · A
+- 2026-08-04 [genspark-ai/genoffice: An AI-native office suite for macOS and Windows: word processor, spreadsheet, presentations, and PDF.](1785840808176_eq0xwy8c.md) · A
+- 2026-08-04 [✧ 𝕀𝔸𝕄𝔸𝕀 ✧: 过去社会阶层差异更多体现在“外部物质信号”，比如吃穿用度，而现代社会阶层差异越来越体现在“内部认知系统”](1785840684258_d36inqdw.md) · D
+- 2026-08-04 [IndenScale: LHA 和 Multi Agent 是同一个问题 从 Sequential Agent 到 Parallel Agent 人工智能正在进入 Agent 时代](1785839847176_8uwxyot6.md) · A
+- 2026-08-04 [Patrick Collison: Someone asked me recently why I’ve become interested in aesthetics after having …](1785838998611_mu084ky9.md) · B
+- 2026-08-04 [Dan Go: 4 numbers I track with every high performance client: 1](1785838886135_bg0p40jm.md) · C
+- 2026-08-04 [从故事到估值：AI是价值创造还是价值毁灭](1785838625667_s7gvmxab.md) · A
+- 2026-08-04 [小陆师傅: 在过去的发展中国家，顶着10%、15%的贷款利率还是能把工厂建起来的，毕竟消费是真的不足，而只要生产线开始转起来，就有发财出头之日](1785838519848_cmrxo2ax.md) · C
+- 2026-08-04 [小陆师傅: 为什么这篇文章有问题，因为我简单的用美国已处于AI技术暴露范围内的6](1785838511935_cp5o9ost.md) · B
+- 2026-08-04 [cloudflare/computer: Give your agent a computer 👾](1785833948756_o6im7va2.md) · A
+
+## 2026-07（586）
+
+- 2026-07-31 [ilysenko/codex-desktop-linux: Unofficial ChatGPT desktop app for Linux \(formerly the Codex app\), built locally from OpenAI’s official macOS app. Includes Chat, Work, and Codex. Packages for Debian/Ubu…](1785487610904_ugoodh5o.md) · A
+- 2026-07-31 [最佳实践：从Multi-Agent到Agent Team](1785484156012_nbmiqu66.md) · A
+- 2026-07-31 [2x, not 10x: coding with LLMs in 2026](1785484049716_f0amwn1c.md) · B
+- 2026-07-31 [GPT 5.6 Sol Ran a Real Business—and Lost $447](1785484036549_csz0alot.md) · A
+- 2026-07-31 [Advancing the price-performance frontier with GPT-5.6](1785484015402_8vzl2i25.md) · B
+- 2026-07-31 [Read This Before You Buy That TV Streaming Stick](1785483983055_j09ckyev.md) · A
+- 2026-07-31 [The Economic Benefit of Refactoring](1785483983027_qh0n0o1s.md) · A
+- 2026-07-31 [How to Mount a Balcony Awning](1785483941723_o30g10qr.md) · B
+- 2026-07-31 [Gemini Robotics 2 brings whole body intelligence to robots — Google DeepMind](1785483906380_qoaz80zc.md) · B
+- 2026-07-31 [OpenAI 软件工程师面试经历：综合总结与解读](1785470222227_j3dbae6n.md) · B
+- 2026-07-31 [huggingface/speech-to-speech: Build local voice agents with open-source models](1785467662544_xi22k4lx.md) · A
+- 2026-07-30 [《华尔街日报》的斯图·吴为什么会跟随我到新加坡？](1785402721650_6dn8q5cf.md) · B
+- 2026-07-30 [Luke Pierce: You don’t need 50 clients to build a great AI services business](1785402687397_ivtuy2tp.md) · B
+- 2026-07-30 [对立原则](1785402631335_roma3tx7.md) · B
+- 2026-07-30 [如何在 Claude 代码中构建一个 AI 视频工作室](1785402531897_nhyzvtrr.md) · A
+- 2026-07-30 [Machina: Netflix paid $587 million in cash for Ben Affleck's AI startup](1785402512053_uq8no639.md) · B
+- 2026-07-30 [我们重写了我们的代理，使其完全运行在一个持久化对象中，并使用了 Pi、代理 SDK 和代码模式](1785402438617_la0zedm6.md) · A
+- 2026-07-30 [Eno Reyes: Some thoughts on this as a CTO of a growth-stage startup: 1](1785402410339_d43gv96y.md) · B
+- 2026-07-30 [Gergely Orosz: Interesting trend: CTO/ Head of Eng / VPE folks at startups and mid-sized compan…](1785402372423_3kdgkpwt.md) · C
+- 2026-07-30 [宝玉: 我现在用的最多的模型是： Claude Fable 5 GPT 5](1785402350492_pjc2ib7m.md) · B
+- 2026-07-30 [Jack Dorsey's Buzz: Clearly Explained \(and how to use it\) - YouTube](1785402291470_19x4nu02.md) · B
+- 2026-07-30 [宝玉: 【少数通用 Agent 通吃】 不只是通用的吃掉垂直的，通用 Agent 本身也是少数赢家通吃，小的通用 Agent 也没有生存空间](1785402276524_xonzzjk2.md) · B
+- 2026-07-30 [PostHog AI - Docs - PostHog](1785401182095_6to28s5g.md) · C
+- 2026-07-30 [gabriel: AI closed 90% of your support tickets](1785400926846_yrc2g9l9.md) · B
+- 2026-07-30 [fix: preserve grep and ls tool results by lawyer112 · Pull Request \#211 · leookun/cursor-byok](1785396457827_0lxnkfq0.md) · B
+- 2026-07-30 [feat: comprehensive enhancements across thinking-chain, AOS, proxy, and UX by guyu233 · Pull Request \#216 · leookun/cursor-byok](1785396454726_0mbvjnfn.md) · B
+- 2026-07-30 [fix\(prompt\): replay selected Cursor commands by DedSecer · Pull Request \#222 · leookun/cursor-byok](1785396449909_qwbxhlid.md) · B
+- 2026-07-30 [fix\(forwarder\): increase shell foreground timeout and improve error reporting by quangdang46 · Pull Request \#227 · leookun/cursor-byok](1785396337446_sxkqcior.md) · B
+- 2026-07-30 [Kieran Drew: When I started writing, I suffered from these terrible depressive slumps called …](1785386046057_ebmzk6jr.md) · B
+- 2026-07-30 [动物园园长: 做自媒体，无论流量多差，都要持续输出](1785386030901_ykycygkk.md) · B
+- 2026-07-30 [video-shotcraft/README\_CN.md at main · Vincentwei1021/video-shotcraft](1785386026446_4fzzdb2z.md) · A
+- 2026-07-30 [Axel Bitblaze 🪓: You can turn claude code into a cinematic video studio with one skill](1785386017840_n8rvo8n2.md) · A
+- 2026-07-30 [中国的风险投资生态系统如何运作](1785386005047_cfgv6376.md) · B
+- 2026-07-30 [Bryan Johnson: Becoming a pilot nearly killed me, twice](1785385984373_h7ho2qhu.md) · B
+- 2026-07-30 [Formal methods with Hillel Wayne - YouTube](1785385956277_xos72a0w.md) · A
+- 2026-07-30 [How GPT-5.6 fuses frontier intelligence with frontier efficiency](1785385901032_8y7af8k0.md) · A
+- 2026-07-30 [Alex Finn: ChatGPT Voice has 100% transformed how I work Instead of spending 12+ hours a da…](1785384954222_ruoz25tp.md) · B
+- 2026-07-30 [Nous Research: Hermes Agent now runs Buzz](1785384950388_vzciwl39.md) · C
+- 2026-07-30 [The Rust on ESP Book](1785384721924_1i3l1o75.md) · A
+- 2026-07-30 [funador/claude-code-merge-queue: The local merge queue for parallel Claude Code agents](1785377114140_xhsxlc6g.md) · A
+- 2026-07-30 [Model Configuration \| Kimi Code Docs](1785377098289_xwdz0tc1.md) · A
+- 2026-07-30 [Turning a Dumb AC Unit Smart \(Without Losing my Security Deposit\)](1785377069663_l666dfvd.md) · A
+- 2026-07-30 [The Rust on ESP Book](1785377034574_t5z134va.md) · C
+- 2026-07-30 [aistack - How many devs can you fit on a GPU?](1785376970640_0u5ikewa.md) · A
+- 2026-07-30 [darktable](1785376918998_peqi6gv3.md) · D
+- 2026-07-30 [KOReader](1785376910013_7melfx62.md) · E
+- 2026-07-30 [LearnVector — A new AI company from Andrew Ng](1785376885371_zred65gp.md) · C
+- 2026-07-30 [LARP — Revenue infrastructure for serious founders](1785376816638_hocwbvtm.md) · B
+- 2026-07-30 [What xAI Grok Build CLI actually sends to xAI - a wire-level analysis \(grok 0.2.93\)](1785376803019_boolw9my.md) · S
+- 2026-07-30 [Old and new apps, via modern coding agents](1785376791777_xw8sstdu.md) · B
+- 2026-07-30 [Are we offloading too much of our thinking to AI?](1785376775625_2z1ocmud.md) · B
+- 2026-07-30 [Sleep regularity is a stronger predictor of mortality risk than sleep duration: A prospective cohort study](1785376775014_h9nrcn9y.md) · B
+- 2026-07-30 [NotebookLM is now Gemini Notebook](1785376756156_gyainzfy.md) · C
+- 2026-07-29 [London Gatwick introduces robotic parking service](1785288313665_j14e7hvq.md) · C
+- 2026-07-29 [What is really happening to jobs? Separating AI hype from reality](1785288303611_yd7ztkh0.md) · A
+- 2026-07-29 [Ruff v0.16.0](1785288302496_9qe5e7iq.md) · B
+- 2026-07-29 [Open-weight AI is having its Kubernetes moment. Let's not ruin it.](1785288273529_ibdaflpn.md) · A
+- 2026-07-29 [Government orders GitHub to remove Bluetooth-based chat app Bitchat over security concerns: Jack Dorsey](1785288261122_eznkz3wj.md) · C
+- 2026-07-29 [It's getting harder to focus every day](1785288249443_aes3nfzx.md) · B
+- 2026-07-29 [Hatchet](1785288237839_aak6k9cy.md) · A
+- 2026-07-29 [AI Companies Are Trying to Hide a Staggering Amount of Debt](1785288231212_ickbp0kq.md) · C
+- 2026-07-29 [marcelroed/gigatoken: Language model tokenization at GB/s](1785288215150_4s2ert6j.md) · A
+- 2026-07-29 [Free Ink · An open ecosystem for e-readers](1785288189414_p70nxi7m.md) · A
+- 2026-07-29 [Bento Slides Showcase — bento/slides](1785288185928_t6di2081.md) · B
+- 2026-07-29 [The Human-in-the-Loop is Tired](1785288173018_i27ld78s.md) · B
+- 2026-07-29 [How to read more books](1785288166291_rzvlx4ep.md) · B
+- 2026-07-29 [Chatto is now Open Source\!](1785288149612_e1y5bif1.md) · C
+- 2026-07-29 [Fintech Engineering Handbook](1785288135082_dj8qe49p.md) · S
+- 2026-07-29 [Maybe you should learn something](1785288131074_awye2df0.md) · B
+- 2026-07-29 [Valve open source the Steam Machine e-ink screen so you can make your own](1785288117695_6yfc4frm.md) · C
+- 2026-07-29 [For the First Time, a Cell Built From Scratch Grows and Divides \| Quanta Magazine](1785288097177_ckcm3fog.md) · C
+- 2026-07-29 [A Practical Guide to SSH Tunnels: Local and Remote Port Forwarding](1785288075497_2i0yie82.md) · S
+- 2026-07-29 [We Can Still Stop California’s 3D Printer Surveillance Scheme](1785288060822_rclstky1.md) · B
+- 2026-07-29 [旅行生活笔记标签展示](1785288034884_22co76vs.md) · E
+- 2026-07-29 [Kimi K3 Architecture Notes](1785287439467_km592zpn.md) · B
+- 2026-07-29 [I’m 38 and I Can’t Support Myself Anymore](1785287431826_tq32q5pp.md) · C
+- 2026-07-29 [How to survive boiling water](1785287420143_u7cwcl2c.md) · B
+- 2026-07-29 [Residential Proxies Are a National Security Threat](1785287396108_pupmmwdp.md) · C
+- 2026-07-29 [Using an open model feels surprisingly good](1785287391965_52wemx3p.md) · C
+- 2026-07-29 [The Rise of Intelligence Ownership](1785287377173_kurme66f.md) · A
+- 2026-07-28 [Inside Solana's Plan to Replace Wall Street - YouTube](1785207474683_8wkb026d.md) · B
+- 2026-07-28 [Wall Street's Top AI Bull Reveals the Real Bottleneck \(It's Not Chips\) - YouTube](1785207451209_6opm4dzj.md) · B
+- 2026-07-28 [在格伦德斯洛普](1785207392304_w0m2sl2h.md) · B
+- 2026-07-28 [“拥有自己的智力”是什么意思？](1785207346255_vzq6ru59.md) · A
+- 2026-07-28 [如何让 Fable 观看视频只需几美分](1785207328571_4rvmimuy.md) · A
+- 2026-07-28 [Dr. Matthew Walker, All Things Sleep Continued — The Hidden Dangers of Melatonin, Tools for Insomnia, Enhancing Learning and Sleep Spindles, The Upsides of Sleep Divorce, How Sleep Impacts Sex \(and Vi…](1785207302145_5ndlqlnr.md) · C
+- 2026-07-28 [贪污学概论：写给外系学生的一份导览](1785207296313_b8cmsviu.md) · C
+- 2026-07-28 [Building a Software Powerhouse with No VC Money \| DHH, 37signals - YouTube](1785207235837_jxa0ekmo.md) · A
+- 2026-07-28 [Shen Sean Chen: i open sourced waku agent 16 days ago \(500+stars\), a personal local ai agent har…](1785207232329_qx86ueqn.md) · A
+- 2026-07-28 [Elvis: I spent 2 weeks fixing my AI startup's pricing](1785207203896_p5xmx1t9.md) · A
+- 2026-07-28 [Dr. Nicole LePera: The soft life is a life that protects your body from constant cortisol and adren…](1785207175216_x6k9q7sm.md) · C
+- 2026-07-28 [Yangyi: 经过我使用pinapex矩阵工具来大量测试Pinterest这个渠道后 我发现这个渠道里能转化的品类 绝大部分是和设计师有关的 我帮我的好朋友做了一阵子宠物PO…](1785207156625_tllbc69v.md) · B
+- 2026-07-28 [Jason Fried: A bespoke software revolution](1785206433517_srdyeedp.md) · B
+- 2026-07-28 [Why the people building AI can’t tell you what’s next \| Dianne Penn \(Anthropic\) - YouTube](1785202714337_y4g1d72i.md) · A
+- 2026-07-28 [How Obsession Built Christopher Nolan - YouTube](1785202689489_srv6qe9g.md) · B
+- 2026-07-28 [The crucial emotional skill most adults were never taught \| Becky Kennedy - YouTube](1785202579746_nujy1kar.md) · A
+- 2026-07-28 [期权行权前解雇员工遭反噬，小红书上市前暴雷？｜小红书｜陈浩｜违规解约｜汰换｜暴雷｜王局拍案20260716 - YouTube](1785202525152_qdpspa5o.md) · C
+- 2026-07-28 [The Wealth Secrets No One Teaches You \| Morgan Housel - YouTube](1785202470236_qcr9nnoj.md) · C
+- 2026-07-28 [Boris Cherny: Building Claude Code - YouTube](1785202466529_xu1gb1kg.md) · A
+- 2026-07-28 [No.1 Performance Psychologist: The Secret to High Performance and Excellence - YouTube](1785202385800_qp6y061o.md) · B
+- 2026-07-28 [Jensen Huang: The Mindset That Built NVIDIA - YouTube](1785202367995_68ogoymk.md) · A
+- 2026-07-27 [泊舟: 从几百播放，到稳定几千，再到跑出多条 10 万+](1785140499994_ke5n04k3.md) · D
+- 2026-07-27 [一、综合总结](1785140496607_bgrnha6k.md) · C
+- 2026-07-27 [Codex + Hyperframes + HeyGen +声音克隆：全部开源如何零基础开始自媒体变现](1785140485763_5g1wtxl2.md) · B
+- 2026-07-27 [The Trillion Dollar Gap \| Aswath Damodaran on SpaceX, AI and the Big Market Delusion - YouTube](1785140420967_9e14yj8u.md) · A
+- 2026-07-27 [Rohan Paul: dot-com bubble vs](1785140355153_gco4q5wo.md) · B
+- 2026-07-27 [U哥: 谢胜子每周日 7 点直播，通常 4 个小时，直播到 11 点左右，而这 4 小时的直播，直接出一周的内容](1785140335362_7c3x2012.md) · B
+- 2026-07-27 [GREG ISENBERG: There's panic right now that AI is eating indie software](1785140315617_cr74b69e.md) · B
+- 2026-07-27 [Rainier: 这个大背景是，利益分配](1785140310796_tglyhbg7.md) · C
+- 2026-07-24 [叫我阿杭: 卧槽了，飞书果真是最懂OPC办公场景的，我再也不用被人说不专业了 我这两月基本上一个月会接3-5个一对一咨询和一些AI短视频陪跑，一单是在1000左右 以前交付…](1784891042400_7f2ll8ox.md) · B
+- 2026-07-24 [Jielin Dong 董洁林: 黄仁勋先生把AI体系分成5层，认为美国必须在每一层都成功才能让美国AI整体成功](1784891041962_8znk4tvb.md) · C
+- 2026-07-24 [GREG ISENBERG: 16 things that will be normal in 3 years and sound insane today 1](1784891026115_512avx0b.md) · C
+- 2026-07-24 [创办第一家企业时应遵循的简单规则](1784891020824_0i00s1nh.md) · B
+- 2026-07-24 [本周如何部署一个 Cerebras 风格的知识库](1784891001783_pc9gtueo.md) · B
+- 2026-07-24 [阑夕: Reddit问答版：你读过的最牛逼的句子有哪些](1784890982144_v5tylm63.md) · D
+- 2026-07-24 [dontbesilent: 现在渐渐发现大家都是相似的“创业”路径 做生意第一天想找个对标，从哪开始找呢](1784890978059_yp4c58f4.md) · B
+- 2026-07-24 [用 3D 执导 AI 视频](1784890948277_ty4ivfla.md) · A
+- 2026-07-24 ["Just Follow Great Managers" Can Be Harmful Advice - YouTube](1784890940288_812x478x.md) · B
+- 2026-07-24 [Will Ahmed: A few principles I’ve come to believe about competition: 1\) You’re more likely t…](1784890923732_hd3pogxh.md) · B
+- 2026-07-24 [本地优先桌面AI协作代理](1784890905337_enxdy7g8.md) · A
+- 2026-07-24 [elvis: Dynamic workflows are a generalization of harnesses, automations, loops, routing…](1784890892251_r3xyuudd.md) · B
+- 2026-07-24 [🍙fan on X: "视频使用 Cap 录屏搭配 ChatCut 制作" / X](1784854697007_nmnnhr58.md)
+- 2026-07-24 [Elite Performance Coach: The Secret to True Mental Toughness - YouTube](1784853387431_cdl85rha.md) · B
+- 2026-07-24 [Stanford MS&amp;E435 Economics of the AI Supercycle \| Spring 2026 \| The GPU Economy - YouTube](1784853358431_yl5irv7t.md) · B
+- 2026-07-24 [\#1 Gut Expert: How to Repair and Nourish Your Gut Microbiome - YouTube](1784853257529_2944g9i9.md) · C
+- 2026-07-24 [Mental Models That Change How You Think \| Bill Gurley - YouTube](1784853232999_slhrbarv.md) · B
+- 2026-07-24 [Peter Thiel on How to Build a Creative Monopoly - YouTube](1784853166379_8es2udaw.md) · A
+- 2026-07-24 [Why Netflix is betting on systems thinkers—not specialists—in the AI era \| Elizabeth Stone \(CPTO\) - YouTube](1784853144539_nefae47i.md) · A
+- 2026-07-23 [David Friedberg on the Economic Crisis Nobody Wants to Fix - YouTube](1784800530929_ppuougjr.md) · C
+- 2026-07-23 [梁文锋投资者交流会（完整版全文）](1784798945639_8ohr1xy3.md) · A
+- 2026-07-23 [$4.6B CEO: Excellence Is the Capacity to Take Pain - YouTube](1784790960504_qzc5jkc2.md) · A
+- 2026-07-23 [What David Senra Learned Studying 400+ Founders - YouTube](1784790918250_5qi9gd12.md) · B
+- 2026-07-23 [The Agent Development Lifecycle 101 by Harrison Chase - YouTube](1784790877763_v5a9wodu.md) · A
+- 2026-07-23 [yibie: 推荐这篇文章，作者 Jason Vertrees 是 Heavy Chain Engineering 的创始人，帮助中低端市场的垂直 SaaS 公司和 PE 机…](1784790227341_skild104.md) · A
+- 2026-07-23 [梁文锋四小时投资人会议实录](1784786579631_x30v9rsi.md) · B
+- 2026-07-23 [硅谷王川 Chuan: "被看见，被理解‘’的感觉，在心理层面上给人以找到属于自己的群体的感觉，这在远古时代对于生存至关重要](1784786576512_87v8mi90.md) · C
+- 2026-07-23 [我们为什么这么热闹](1784784230556_9fx4uxvl.md) · B
+- 2026-07-23 [K总: Seedance2](1784784071550_hawpw7gk.md) · D
+- 2026-07-23 [Naval: When software was expensive - thin, horizontal, best-of-breed software stacks ex…](1784778858139_5cpf8gda.md) · C
+- 2026-07-22 [用Herdr协调实现测试与审查](1784702945365_8qoo7a27.md) · A
+- 2026-07-22 [Herdr多智能体终端与自动化全解](1784702763029_4sap1syq.md) · A
+- 2026-07-22 [Angela Duckworth on Why Grit Is Not Enough - YouTube](1784701665814_97mo9wyj.md) · B
+- 2026-07-22 [I'm 59. If You're In Your 20s or 30s, Watch This \(Seriously\) - YouTube](1784701622255_aeq0y70g.md) · B
+- 2026-07-22 [Morris: 我的X群里，有人讨论在中国养老的商业模式](1784701189132_2iypceb1.md) · C
+- 2026-07-22 [姚金刚: 昨晚和几位AI圈自媒体大神晚餐，聊到自媒体这个话题，一些观点记录： 1](1784701183054_wc2i1hn1.md) · C
+- 2026-07-22 [block/buzz: A hive mind communication platform](1784700992435_4kiidu52.md) · A
+- 2026-07-22 [打造十亿智能机器](1784700427784_n9qag05g.md) · B
+- 2026-07-22 [我戴了三周 Fitbit，终于看懂了 Apple 和 Google 的健康生意](1784700414434_lek11huc.md) · A
+- 2026-07-22 [硅谷王川 Chuan: 换个角度看，能够稍微花点功夫，读懂一个人的 context 和 vulnerability ，是卸下其心理防御，降低彼此沟通合作成本的最有效方式](1784700381055_onoxtlxu.md) · C
+- 2026-07-22 [Andrej Karpathy: One pattern I find useful for working with LLMs is a nice long ramble session](1784700310710_7lzzbk16.md) · B
+- 2026-07-22 [硅谷王川 Chuan: 为什么你会觉得有些人特别有魅力，但又无法解释原因](1784700305731_7qhm1a5s.md) · C
+- 2026-07-22 [Tz: 越来越觉得人类应该多用像 Fable 这种顶尖大模型，问题越低级，越要拿去问](1784699831208_tmguh4wh.md) · C
+- 2026-07-22 [赵纯想: laper 方法： 1、离大厂三条街](1784699754145_uiycc661.md) · A
+- 2026-07-22 [QingYue: 在 Review 旧推文的时候，发现一条 6 月份的推文，提及了一些对未来的思考](1784695108626_o5wnyd6a.md) · B
+- 2026-07-22 [未来三年的Agent转型判断](1784695099975_iiyjss2o.md) · B
+- 2026-07-22 [Kevin Ma: 看了 agent-device 非常不错，它是 Callstack 开源的移动端自动化 CLI](1784695089628_w639o00a.md) · B
+- 2026-07-22 [代码家: 今天看 HuntScreens 的实时访客数量还挺高兴](1784695077272_xy3fddjv.md) · C
+- 2026-07-22 [叫我阿杭: 很客观的说，我正常一个口播稿会压缩在5分钟左右 那我的视频素材可能就有8分钟 ChatCut @chatcutapp 的一次剪辑时长是2-3小时完成 我觉得有点…](1784695070842_e7rcbz9q.md) · B
+- 2026-07-22 [GoFly: ChatGPT 5](1784695060816_fkb3pflz.md) · B
+- 2026-07-22 [Xiaowen: 我们用一个自研的只有一个 tool 的干净 agent，实现了 27b 就可以推动深度循环探索的数据洞察智能体](1784695052580_q8uxjsgs.md) · C
+- 2026-07-22 [Susan STEM: 按照我现在的想法，我认为AI真正开始落地的标准不是生成式视频，而是真正做到两个方面： 这个博主的前几个帖子说的是工业界的落地，就是他能切实改变物理生产流程，我举…](1784695038012_lj5okc68.md) · B
+- 2026-07-22 [Max For AI: OpenAI又从 @vercel 挖来了一名Agent应用层核心成员](1784695037742_ymvte4bv.md) · B
+- 2026-07-22 [对话腾讯WorkBuddy首位产品经理：火爆增长背后的AI哲学](1784695013175_mwu5ppy5.md) · B
+- 2026-07-22 [yibie: 推荐这个 Pi 社区的实战总结](1784695005332_pfgrnmzg.md) · A
+- 2026-07-22 [Ryo Lu: when the dream becomes the job i used to think the dream was to make my hobby my…](1784694979640_xncx7k1r.md) · C
+- 2026-07-22 [跨学科视角下的估值原理](1784694102469_w46v3tes.md) · C
+- 2026-07-22 [有史以来第一部“促消费五年规划”，意味着什么？](1784694095963_u28nf92h.md) · C
+- 2026-07-22 [用 Agent 构建 AI 公司研究库](1784694075025_rrvuf6ww.md) · A
+- 2026-07-22 [Clo: 深潮老师这篇写得非常非常好，我全程点头，因为两边我都实际生活过](1784694060824_5z7jg1j0.md) · C
+- 2026-07-22 [Ashpreet Bedi: The market is finally catching up to the fact that every company will need to bu…](1784694052374_589euwgs.md) · B
+- 2026-07-22 [yibie: 推荐这个思路](1784694052090_fkrszze5.md) · A
+- 2026-07-22 [Zane Chee: i reverse engineered @OpenAI's Codex Computer Use and built pi-computer-use: a m…](1784694051281_o1l6grnj.md) · C
+- 2026-07-22 [Zara Zhang: The 3 levels of AI adoption for organizations Most companies are at level 2 http…](1784694037256_x5s8vi5d.md) · C
+- 2026-07-22 [风暴前夜：光绪](1784694035306_65qpo8b9.md) · E
+- 2026-07-22 [为什么“数学黑手党”做得好](1784694029746_uc71p8sz.md) · C
+- 2026-07-22 [Yangyi: 金融如果长期看投资 是正和博弈 如果短期投机 是零和的甚至负和的 在这种情况下 绝大部分都是在骗接盘 尤其是什么抖音直播间 搞进来流量 分32个群ab分组 推荐…](1784694027954_xaga76n5.md) · C
+- 2026-07-22 [RobinSeun\_维京黑船: 越来越多的工厂自动化、机器人，和越来越高的失业率，最后会演进出一个什么社会](1784694023293_w5yz4fmy.md) · C
+- 2026-07-22 [李老师不是你老师: “还是想问一句谁把医保掏空了” 近日，一网友发文《了解了医疗行业的变革后对未来很悲观》： 以前不了解，这次生病关注了好多近年医保改革的信息，再联系日本医疗最黑暗…](1784694011981_ossoet4m.md) · D
+- 2026-07-22 [Xiaowen: 最近三个月，都在和真正意义上的创业团队，而且不是技术行业的团队协作，有非常多有意思的感触](1784694010639_g91k5odb.md) · C
+- 2026-07-22 [反向信息悖论](1784693995202_rkgawnca.md) · A
+- 2026-07-22 [Luyu Zhang: 如果你是一名程序员，每天需要持续写代码，那么你通常不会只使用一个单文件编辑器](1784693990998_c5n0jjrc.md) · B
+- 2026-07-22 [Rainier: 也是很荒谬的事情，给人干活的，卖人材料赚点辛苦钱的，都被拖破产了](1784693989200_67nrbqfv.md) · C
+- 2026-07-22 [硅谷王川 Chuan: 人们常因为坏习惯没有迅速得到负面反馈的惩罚，就继续放纵下去](1784693972088_el4qmi7w.md) · C
+- 2026-07-22 [Ariston: 1）Ken Griffin 将 Citadel 在疫情后极早恢复每周五天到岗视为过去七年最重要的管理决策之一](1784693965107_8khvdggp.md) · B
+- 2026-07-22 [哲学家: 商业的底层是两件事： 1](1784693961117_2fbylqv6.md) · C
+- 2026-07-22 [Barret李靖: 强烈需要一款 Agent 产品和技术领域的热点 Timeline](1784693958743_b2ei8nqu.md) · C
+- 2026-07-22 [Sebastian Raschka: For agentic coding, one can say: - Unless you need Terra Ultra perf, it's always…](1784693942483_4ael6li4.md) · B
+- 2026-07-22 [小陆师傅: 最近看了一些国内大佬说的所谓AI泡沫破灭的推演和预测的文章和视频，看完真的是如鲠在喉，不吐不快](1784693922966_89w5ey68.md) · B
+- 2026-07-22 [Frank Wang 玉伯: 效果类 AI 产品指的是：能真实帮助一个企业或客户取得金钱上的收益](1784693900196_xuufpeou.md) · B
+- 2026-07-22 [Ken Griffin：领导力与宏观展望 \| Google AI Studio](1784693873358_uy2g2xmw.md) · B
+- 2026-07-22 [\(4\) Tz: 好奇问了一下 gpt-5](1784692687985_tfs6dpey.md) · B
+- 2026-07-22 [工作的未来将会发生在你已经工作的地方](1784692687182_y646498r.md) · B
+- 2026-07-22 [一张地图，不是电影](1784692666433_uc4cgux0.md) · B
+- 2026-07-22 [介绍 Subtext：会话重放 \~&gt; 智能会话回顾](1784692653020_qwdlplr0.md) · B
+- 2026-07-22 [\(4\) T: My low status normie midwit take when it comes to understanding the world is Occ…](1784692640127_9yvcj67y.md) · C
+- 2026-07-22 [关于人工智能咨询的真相（服务87位客户与4年之后）](1784692633474_29bq2jdt.md) · A
+- 2026-07-22 [如何找到值得传播的故事在𝕏上分享（即使你“觉得”自己没什么可分享的）](1784692617208_baykz8nm.md) · B
+- 2026-07-22 [Shreyas Doshi: A few things that are different about the Product Sense course: - not just for P…](1784692591970_3xj9mvgy.md) · E
+- 2026-07-22 [Raptitude.com – Getting Better at Being Human](1784692582909_yrkemz6k.md) · C
+- 2026-07-22 [\(4\) Patrick Emedom-Nnamdi: The more time I spend on clinical AI, the more convinced I am that trust is not …](1784692576732_rxr4i6zf.md) · B
+- 2026-07-22 [\(4\) The Peel: David founder @peterrahal on why athlete sponsorships are massively overpriced: …](1784692555678_wgvptq6z.md) · C
+- 2026-07-22 [\(4\) Chubby♨️: Demis Hassabis has written a piece about AGI, and rarely has he sounded so optim…](1784692537361_45648aot.md) · C
+- 2026-07-22 [\(4\) GREG ISENBERG: My friend Corey makes $1,000/hour doing the simplest AI business I've seen all y…](1784692528103_dkd0vag3.md) · B
+- 2026-07-22 [\(4\) eugyppius: One of the things Covid taught me, is that there's not really any difference bet…](1784692511587_4w4ms8fj.md) · C
+- 2026-07-22 [\(4\) 泊舟: 我又去调研了一篇关于AI培训市场的报告，因为我想做一下AI培训这一块，让他帮我调研一下，看看有什么好的方向](1784692508364_368hposj.md) · B
+- 2026-07-22 [\(4\) Shann³: claude/codex/hermes for marketing one folder per marketing vertical, find, adapt…](1784692493990_q21pqzr5.md) · B
+- 2026-07-22 [\(4\) 宝玉: 字幕转录翻译剪辑 Skill —— BaoCut（仅支持 Mac） 借助 Agent Skill，可以转录视频、对转录结果识别 Speaker、润色（纠正错别字…](1784692481407_blx06b4f.md) · B
+- 2026-07-22 [Context engineering with Dex Horthy - YouTube](1784692468837_kf6xikvf.md) · A
+- 2026-07-22 [\(4\) Frank Wang 玉伯: 听大模型公司的朋友说，分析国内各大模型的用户提示词，发现用量最高的前三场景是： 1、炒股](1784692464880_mh82zw1c.md) · C
+- 2026-07-22 [\(4\) 也无风雨也雾晴: 专升本前端毕业 1 年，从初创到大厂，我的开源项目上了 github trending，顺利聊聊做开源的收获 6 月 30 日，我做的开源项目 Archify …](1784692450028_6inurq1k.md) · B
+- 2026-07-22 [Best-Selling Author Teaches Writing \(David Baldacci Interview\) - YouTube](1784692405877_mlxzvug7.md) · B
+- 2026-07-22 [Claude Fable, Claude Tag, and Anthropic's Culture — Cat Wu &amp; Thariq Shihipar ft Simon Willison - YouTube](1784692378102_awkmdphn.md) · A
+- 2026-07-22 [DroneBridge/ESP32: DroneBridge for ESP32. A secure &amp; transparent telemetry link with support for WiFi and ESP-NOW. Supporting MAVLink, MSP, LTM or any other protocol](1784690035672_2885mbl8.md) · B
+- 2026-07-21 [做好介绍，建立强大联盟，赢。](1784616860630_qu2mdher.md) · A
+- 2026-07-21 [Reddit 冷门赚钱方法与信息差实录：20+ 个别人不爱说的路子](1784613540049_gcpezemc.md) · B
+- 2026-07-21 [Xiaowen: 我倒觉得副业是这样的，如果副业的单位时薪可以高于主业，那么一定程度上你就用更优的商业模式买回了自己的时间](1784613515153_uwz686es.md) · C
+- 2026-07-21 [Rainier: 这个有点牛逼啊，而且有很强的实用价值](1784613497062_v53r3rw8.md) · C
+- 2026-07-21 [卡颂: 有人说：最容易的网赚方式是 卖课](1784613484484_1p84s3ol.md) · B
+- 2026-07-21 [Yangyi: 昨天跟观猹 5个桌面Agent同台分享 我压轴 就给10分钟 还要演示结果No PPT 我想了想 就让NewMax捞Reddit找冷门赚钱方法吧 跑了14分钟，…](1784613454071_hc9zzh2a.md) · C
+- 2026-07-21 [卖火柴的阿甘: 我自己到了一个年龄后对以前的“大佬们”都祛魅了，反而觉得要跟年轻人多学习多接触，他们才是未来的基础，他们玩的接触的才是我要学习的，并且可以让自己保持年轻的状态�…](1784613444927_e5192229.md) · C
+- 2026-07-21 [从参数化设计到家庭微型工厂](1784605856544_8pe76ls2.md) · B
+- 2026-07-21 [𝙆𝙞𝙡𝙤 🔮📼: @feltanimalworld 桌面 PCB 印刷，人人都可以在家里 vibe 硬件，创作空间可太大了](1784605722290_gkd68gqa.md) · C
+- 2026-07-21 [我之前用 Fable 用错了...](1784605362557_foz45l8c.md) · A
+- 2026-07-21 [OpenChatCut/README\_ZH.md at main · 0xsline/OpenChatCut](1784605354175_rv374v9v.md) · A
+- 2026-07-21 [Cell 细胞: @oops073111 只能说，早早开源 找模式 ， 不能指望靠一点代码卖钱了 https://t](1784605303913_qc8khf5j.md) · C
+- 2026-07-21 [sukie: 我的经验之谈： 当一个行业正在享受注意力红利，比如元宇宙，web3，AI，WAIC，你会看到大量社交打卡式活动，与技术创新和商业订单无关，就是纯粹的打卡宣传，以…](1784605300188_p0dbp4vt.md) · C
+- 2026-07-21 [LotusDecoder: 科幻： 未来的世界生产力关系，可能会回到神权部落制](1784605284595_i7bd0wxp.md) · D
+- 2026-07-21 [Lenny Rachitsky: My biggest takeaways from @Netflix's Chief Product and Technology Officer Elizab…](1784605276695_8mz90yxl.md) · B
+- 2026-07-21 [Alex\_感知: 刚刚看到一条关于社保的新闻，之前我也给大家分享过最近有关部门要求企业夯实社保缴费基数的新闻](1784605269434_il5czdfm.md) · C
+- 2026-07-21 [MateMatt: 深度拆解了 mattpocock skills 后，总结了 AI Coding 文档上下文如何拆的几条铁律： 1、项目知识库\(架构讨论，背景，调研材料等\)，置于…](1784605251109_f9lr8hn3.md) · B
+- 2026-07-21 [Shann³: what's the difference between a loop and a graph](1784605242023_rxop2bw6.md) · A
+- 2026-07-21 [KK.aWSB: 写出《苦涩的教训》、被无数人拿去论证"大模型规模化"的那个人，68岁了，出来创业，反手向大模型开战](1784605225400_dhew1l9v.md) · B
+- 2026-07-21 [消失的人下人](1784605207592_jtsgas58.md) · C
+- 2026-07-21 [小盖: Lenny 这期播客非常精彩，推荐在做 Vibe Coding 或者创业的朋友听一听](1784605192158_fgyy3bnr.md) · A
+- 2026-07-21 [码良: 上一个暴论讨论的是：大多数人已经很难看清前沿模型之间的真实差异](1784605167965_klhdx13f.md) · B
+- 2026-07-21 [用AI写网站赚美金，重要的不是AI编程，很多人一开始就错的离谱](1784605161579_lh7ew86b.md) · A
+- 2026-07-21 [siuser小伟: 现金流 300w = 每个月稳定流出去 300w，暂时还没研究明白怎么流回来 已经拿到百万级种子轮融资 = 姐妹先转了 5w，剩下 95w 属于“表现好再议” …](1784605151149_0dvfwdfp.md) · C
+- 2026-07-21 [阑夕: 13、「AI六小虎」里来了五个，除了智谱以外——不知道是不是专心搞市值管理去了——都悉数到场，起码从观感上讲，它们已经活成了完全不同的样子； 14、Minima…](1784605127292_6dyajl6v.md) · B
+- 2026-07-21 [Brian Roemmele: 🚨 Hugging Face just disclosed something that marks a real shift and proved why …](1784605100615_pmp66s6p.md) · B
+- 2026-07-21 [居然sir: 跨境电商的老板们，包括每天口口声声要转型做品牌但就是做不起来的老板们的通病是「只会算账」](1784605094784_7ify2jqr.md) · B
+- 2026-07-21 [Why Netflix is betting on systems thinkers—not specialists—in the AI era \| Elizabeth Stone \(CPTO\) - YouTube](1784605072999_t7tbtlgr.md) · A
+- 2026-07-21 [Rainier: 是的。华人装修队。 我朋友推荐的那个人，在我这边一直装他自己是老板。 我当时也是因为是朋友推荐的，所以也没有严格去查COI，查license，查公司的背景。 我…](1784605065589_pkxchnpm.md) · B
+- 2026-07-21 [姚金刚: 昨晚听了WaytoAGI未来硅世界直播，12位分享者，分享了10个AI Coding 作品 + 2个FDE案例分享，很多有意思的作品，也很有启发 1、小耳 FM…](1784605048434_4g5170bf.md) · B
+- 2026-07-21 [Graphify-Labs/graphify: Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local dete…](1784605016190_kxsais9q.md) · A
+- 2026-07-21 [yichen-skills/README.zh.md at main · mcncarl/yichen-skills](1784604990607_lkvyjrp1.md) · A
+- 2026-07-21 [Susan STEM: 我太同意了！就是CNC+3D打印机这个组合。但是台面CNC现在还需要稍微再稳定几代。还有一个我认为下一步可以并入homelab系统的，就是桌面PCB印刷。虽然J…](1784604528127_cefh7kle.md) · D
+- 2026-07-16 [写增长的子木: 我有个关于「AI Agent 应用」的想法，不知道对错](1784179807575_8ucwe85p.md) · B
+- 2026-07-16 [AI's impact on the tech workforce \| Annual AI sentiment survey \(Noam Segal\) - YouTube](1784166790774_z0lerwjq.md) · A
+- 2026-07-16 [Why I switched to Pi... - YouTube](1784166724527_2ayhlvkd.md) · A
+- 2026-07-16 [Science &amp; Tools of Learning &amp; Memory \| Dr. David Eagleman - YouTube](1784166697696_5wh84uu0.md) · A
+- 2026-07-16 [一红16年，干啥啥赚钱？｜屠龙博士创业的秘密！ - YouTube](1784166567751_6s1ta9n3.md) · A
+- 2026-07-16 [AI时代“超级高中生” 、大学外的第三种可能与中国创新教育｜探访北京探月学校 - YouTube](1784166437481_yqkf36xy.md) · A
+- 2026-07-16 [Learn This Skill If You Want To Win In The Next 2-3 Years - YouTube](1784164445324_814q1d9k.md) · B
+- 2026-07-16 [How to Create Your Calling - YouTube](1784164354732_gfz8p7g0.md) · B
+- 2026-07-16 [New Skills\! v1.1 brings /wayfinder, /research, /implement, /to-spec, /to-tickets - YouTube](1784163996188_yzr81mxw.md) · C
+- 2026-07-16 [陈吉宁：下一站，总理 - YouTube](1784163721476_sv6vq8ph.md) · D
+- 2026-07-16 [LLM Wikis and how to give your agents memory - YouTube](1784163470755_v5zm3xkf.md) · A
+- 2026-07-16 [Riding AGI, AI Anxiety, Who Funded COVID, Defending Taiwan, and California Empire - YouTube](1784163405637_rh0avr6q.md) · B
+- 2026-07-16 [Peter Thiel on How to Build a Creative Monopoly - YouTube](1784163393781_z4h17usi.md) · A
+- 2026-07-16 [Kay Ke: Inside Physical Intelligence's Open-Source Robot Models and the Robotics Landscape - YouTube](1784162648221_pquk8jty.md) · E
+- 2026-07-16 [No.1 Performance Psychologist: The Secret to High Performance and Excellence - YouTube](1784162427701_5b0p8ge4.md) · B
+- 2026-07-16 [weaviate/elysia: Python package and backend for the Elysia platform app.](1784161527890_i8dythnu.md) · A
+- 2026-07-16 [Verba: Building an Open Source, Modular RAG Application](1784161463340_ilnxu2ki.md) · B
+- 2026-07-16 [weaviate/weaviate: Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and…](1784161244928_b4pey1nk.md) · B
+- 2026-07-15 [zylon-ai/private-gpt: Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql, and more. Works with any OpenAI-compatible inference server.](1784108360225_usdh88qt.md) · A
+- 2026-07-15 [Harry Stebbings: The SaaS bloodbath has been beyond brutal](1784101435892_ng474kb4.md) · B
+- 2026-07-15 [前沿 AI 框架与新时代的曙光](1784101430298_w1m9drdb.md) · B
+- 2026-07-15 [Mr Panda: 受到微软CEO 萨提亚的最近文章启发， 想这个事很反常识](1784101386062_x9lv5t8r.md) · B
+- 2026-07-15 [余温: 建议大家都把这个号码存进通讯录：+1-650-213-7322 它是一个活在 iMessage 里的 AI，你发短信派活，它能操纵一台云端手机](1784101384708_vztks6dd.md) · B
+- 2026-07-15 [Teortaxes▶️ \(DeepSeek 推特🐋铁粉 2023 – ∞\): mechanosynthesis is tantalizingly close to MVP a few billions of investment coul…](1784101364697_2t4m3r73.md) · D
+- 2026-07-15 [Nod: 设计师一年怎么赚1000万 我有一个设计师朋友，也算是国内有影响力的设计师](1784101356960_m7zngv3x.md) · C
+- 2026-07-15 [4nzn: building a market means building an entire economic system underneath first](1784101345439_eo71f2pf.md) · E
+- 2026-07-15 [如何将 AI 转化为动态设计（免费插件+指南）](1784101331271_40uspyfz.md) · A
+- 2026-07-15 [企业金融 AI 及正确实施方法](1784101317932_k9qng00u.md) · A
+- 2026-07-15 [2026 年顶级 AI 实验室如何构建强化学习智能体（利用卡帕西的系统提示学习理念）](1784101258990_v9klz0ok.md) · A
+- 2026-07-15 [Sulfur: how to CRACK the tiktok algorithm in 2026](1784101219633_lyhoqzhr.md) · B
+- 2026-07-15 [Cjbuilds/Codex-Orchestration: Bring any model to Codex, assign them any role, use them in /goal or any workflow.](1784098305893_u3c6l51z.md) · A
+- 2026-07-15 [Grok / X](1784097454964_qwaywb5g.md) · B
+- 2026-07-15 [tobi/qmd: mini cli search engine for your docs, knowledge bases, meeting notes, whatever. Tracking current sota approaches while being all local](1784097255065_6t3hl257.md) · S
+- 2026-07-15 [topoteretes/cognee: Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.](1784094614387_5xski5m7.md) · A
+- 2026-07-15 [getzep/graphiti: Build Real-Time Knowledge Graphs for AI Agents](1784094609610_x4rflyq9.md) · A
+- 2026-07-14 [Yangyi: 我今天看到了一个架构大佬做了一整套app自动化的生产流程，从appstore数据采集做分析生成想法，到app生产自动化上架发布，甚至拒审理由都在系统里展示出来了…](1784024480085_k1apn8gw.md) · C
+- 2026-07-14 [LotusDecoder: 同感， 真的别去折腾古老企业的AI转型了， 上一次互联网技术还好， 单点技术上的工艺上流程上的改善， AI是字面意义上的吃人， 把传统的岗位弄没， 这相当于改革…](1784024419920_dd765nym.md) · C
+- 2026-07-14 [RobinSeun\_维京黑船: 娃10岁，身边朋友的孩子都年龄相仿，10年从小看到大，不同的教育塑造出来完全不同的孩子](1784023842407_kprdvhau.md) · D
+- 2026-07-14 [生产错误扫描修复循环实践](1784023592360_v1negty3.md) · A
+- 2026-07-14 [Herdr: one terminal for the whole herd](1784023587780_heodfi2x.md) · B
+- 2026-07-14 [superdesigndev/loopany-platform: Run your company in loops, Loop Anything](1784023383166_bhvwcvyo.md) · A
+- 2026-07-14 [可靠智能体循环的构建与实践](1784023083678_nipkzdyb.md) · A
+- 2026-07-14 [在运行循环一个月之后我学到了什么？？？](1784022186734_ur5hd2py.md) · S
+- 2026-07-14 [skills/skills/verifier-setup/SKILL.md at main · AI-Builder-Club/skills](1784022172214_lj5d3q74.md) · A
+- 2026-07-14 [orca/docs/readme/README.zh-CN.md at main · stablyai/orca](1784017252568_drpmcwh5.md) · B
+- 2026-07-14 [How to design loops that actually works - YouTube](1784016668837_xs3z7vzl.md) · A
+- 2026-07-13 [Ken Griffin on the State of the U.S. Economy \| WSJ - YouTube](1783923319260_lxwcrgcv.md) · C
+- 2026-07-13 [Citadel's Ken Griffin on AI, US-China Tensions, and US Data Centers - YouTube](1783923054587_8pfh1tvy.md) · C
+- 2026-07-13 [视频动效系统](1783922812719_nth0zsjc.md) · A
+- 2026-07-09 [卖火柴的阿甘: 这几天在跟国内谈出货的事快把我给整抑郁了，都做差不多的产品，我们在美国规规矩矩的投入开发硬件软件赚辛苦钱做所谓能长久的行业客户，而在香港靠着深圳恐怖的加工能力和…](1783590003149_ii4f6wz1.md) · A
+- 2026-07-09 [OfficeCLI/README\_zh.md at main · iOfficeAI/OfficeCLI](1783583985227_ekdhopao.md) · A
+- 2026-07-09 [Craft Agents - The way working with AI Agents should feel - YouTube](1783569682463_37nv1jin.md) · B
+- 2026-07-09 [Craft Agents智能体工作台](1783569598226_pmlndfgc.md) · A
+- 2026-07-09 [Why AI Infrastructure must evolve for Agent Experience — Akshat Bubna, Modal CTO](1783567626527_wi5eql8c.md) · A
+- 2026-07-09 [yibie: 推荐这篇，Dan McKinley（前 Etsy 工程师）写的经典工程文化文章](1783567600109_kkjixb3e.md) · A
+- 2026-07-09 [AI Agent 国内企业落地手册](1783567592447_v41nzfwo.md) · B
+- 2026-07-09 [你如何培养一项好技能？现在有实际数据了。](1783567568928_vpska05u.md) · A
+- 2026-07-09 [Shann³: how to have Fable 5 review your whole project and write the plan to fix it Fable…](1783567538065_5bn6tvwo.md) · B
+- 2026-07-09 [CJ Zafir: If you dont know, you can use your Codex subscription inside Claude Code](1783567531612_x1wf09kc.md) · B
+- 2026-07-09 [Y11: Agent 执行与通用代码执行的最大区别在于：Agent 执行需要极低的冷启动时间（毫秒级响应）、频繁的文件系统状态同步（Agent 需要读写中间代码、产出文件…](1783567507476_1kod6wzs.md) · B
+- 2026-07-09 [朱峰: 35 岁之前能尽量多经历几个产品的完整生命周期，我觉得是挺重要的](1783567483036_2odw3gxs.md) · S
+- 2026-07-09 [nash\_su - e/acc: llm\_wiki 重磅更新 v0](1783567371763_2paqk76i.md) · D
+- 2026-07-09 [Agent Mode: The Agent-Native Web](1783567365093_ym7qy0jj.md) · A
+- 2026-07-09 [Alex\_感知: 7月6日，国家医保局披露《1998年-2025年全国经济人口卫生医保相关数据》](1783567341209_609lxgxk.md) · C
+- 2026-07-09 [RobinSeun\_维京黑船: 我看了一下我原来的帖子，说的乱七八糟不清不楚的，这个朋友说的是对的](1783567242711_juact9vx.md) · D
+- 2026-07-09 [nash\_su - e/acc: 带时间维度的知识图谱可视化方式](1783567171858_nxakhrle.md) · D
+- 2026-07-09 [Frey轰轰: 在深圳用我19块钱240G 流量的广电卡，搭配中兴redcap随身WiFi太爽了，小巧轻便，一块电池续航7-8个小时，网速稳定80-90兆，深圳的redcap信…](1783567163946_nlegre2u.md) · E
+- 2026-07-09 [酱紫表: 🤡又让 Claude 帮我刷机了，这次刷大疆 4G 模块，教程链接直接甩给 AI 开干](1783567152698_9scz6awi.md) · E
+- 2026-07-09 [王海滨的财经闲谈: 是在北京没有确定病因，在香港确定了，但治疗方式没有准入，只能回国治疗，未果](1783567136213_gmx5l3ul.md) · E
+- 2026-07-09 [itewqq: Had a lot fun with this](1783567123880_t8krlwcv.md) · E
+- 2026-07-09 [maka-agent/maka-agent: Maka — local-first AI desktop assistant](1783567101773_3a5z8o4c.md) · B
+- 2026-07-09 [关木: 现在最好的agent 框架是什么](1783567101773_83da2yud.md) · D
+- 2026-07-09 [Yansu — The proactive AI that turns how you work into knowledge, handoffs, and automations](1783566692130_pt6jc0ub.md) · C
+- 2026-07-09 [Claude循环工程四类模式](1783556346051_hs0d7k20.md) · B
+- 2026-07-09 [高善文演讲转发线索](1783556327587_mdpnwjd1.md) · E
+- 2026-07-09 [LLM Wikis and how to give your agents memory](1783556321750_hrwni7db.md) · D
+- 2026-07-09 [Indie Fox \(@indie\_maker\_fox\) / X](1783556297121_vnqj0y59.md) · D
+- 2026-07-09 [AI自我提升线束工程](1783556292068_5t4a87bf.md) · C
+- 2026-07-09 [传统媒体GEO价值与PPT技巧](1783556267098_heizk1zm.md) · C
+- 2026-07-09 [普通人如何成功？](1783556250380_rrpa04o9.md) · C
+- 2026-07-09 [浏览器终端接入Claude Code](1783556217870_6cc80lon.md) · B
+- 2026-07-09 [/brief-to-problem: 模糊的利益相关者反馈转化为制胜方向](1783556213352_ktlt4bbt.md) · A
+- 2026-07-09 [前 Stripe COO 押注的新模式：一家 200 人公司把 15% 的员工变成创始人](1783556189032_9xbawr0a.md) · B
+- 2026-07-09 [Codex调试指令清单](1783556182350_7y8sqjzg.md) · B
+- 2026-07-09 [强模型时代产品新瓶颈](1783556152307_5rmx284o.md) · B
+- 2026-07-09 [【存档】高善文：30岁以下的年轻人可以洗洗睡了](1783556147816_akdiv7r5.md) · B
+- 2026-07-09 [要学习任何东西，首先要先摒弃学校（的影响）](1783556131404_smyp1trk.md) · B
+- 2026-07-09 [pi复刻Claude子代理插件](1783556119006_cahmp0ll.md) · C
+- 2026-07-09 [AI中转站的产品门槛](1783556095131_uyru0h0f.md) · C
+- 2026-07-09 [Row-Bot 核心代理架构](1783556083899_unmdp9hk.md) · B
+- 2026-07-09 [AI时代的四项关键能力](1783556075481_gswyetz4.md) · C
+- 2026-07-09 [Pi agent 101 - 如何扩展和构建你自己的框架](1783556043563_sb8y04rh.md) · A
+- 2026-07-09 [国产Agent数据本地迁移指南](1783556020027_t3yhxyai.md) · B
+- 2026-07-09 [量化概率论课程推广帖](1783555999146_s3hda1mv.md) · D
+- 2026-07-09 [开放工具与家庭边缘节点](1783555962262_v9nimqrd.md) · B
+- 2026-07-09 [与 Codex 协作处理长时间运行的任务](1783555903628_yus8g1bh.md) · A
+- 2026-07-09 [这个提示将会改变你的生活](1783555858628_gno1w11q.md) · B
+- 2026-07-09 [20个将定义你人生的悖论（阅读本文）](1783555855677_blstitfi.md) · C
+- 2026-07-09 [Jay Yang: I’m increasingly convinced there is no better use of resources than to invest in…](1783555838918_rfu2yex3.md) · D
+- 2026-07-09 [现在是杰文斯时间](1783555797210_usglw453.md) · B
+- 2026-07-09 [scasella/claude-dynamic-workflows-codex: Run Claude Code dynamic workflows on a local Codex \(GPT\) backend, plus an interactive run viewer](1783555780807_wikxj94p.md) · A
+- 2026-07-09 [Field Guide to Fable — Thariq Shihipar, Anthropic - YouTube](1783555756129_a3zpceec.md) · A
+- 2026-07-09 [How OpenAI Handles 800 Million ChatGPT Users on a Single PostgreSQL Primary - YouTube](1783555715386_ixib4ai3.md) · B
+- 2026-07-09 [\(3\)  jyrnn 胖帅博: 今天有个想法：打算把我美西的 VPS 加入 Tailscale，这样应该可以让跑在那上面的小助理调用我工地的电脑显卡来生成图片，无需占用那本就捉襟见肘的 GPT…](1783555637301_oikl3ev7.md) · C
+- 2026-07-09 [Kieran Drew: I first heard of copywriting two months into my journey](1783555637301_bwikd76s.md) · C
+- 2026-07-08 [How tech workers are feeling in 2026: a workforce splitting in two](1783503897024_tm59go1z.md) · A
+- 2026-07-08 [Employee influencers are the future of the creator economy \| Workshop](1783501278236_vet7xom4.md) · B
+- 2026-07-08 [Kieran Drew: The art of accomplishment by @FU\_joehudson is one of the highest signal pods i h…](1783501025752_eveom2qh.md) · D
+- 2026-07-08 [Michael Pettis: Noah Smith gets much right in his argument as to how China managed the huge prop…](1783500864254_1m0f07v1.md) · A
+- 2026-07-08 [Claude meets Government Oversight 🫡🇺🇸 : r/ClaudeAI](1783500305741_v9h91vsr.md) · C
+- 2026-07-08 [Harness Engineering for Self-Improvement](1783495752281_7hv8kr3v.md) · A
+- 2026-07-08 [Yangyi: 我之前问NewMax的用户 NewMax和Workbuddy相比 有什么竞争优势 用户说 长任务workbuddy干的慢且总报错 经常阻断 NewMax这方面好…](1783472364973_1kzux41q.md) · C
+- 2026-07-08 [How To Kill The Bloat In Claude Code's System Prompt](1783471892074_4kiz1ju0.md) · A
+- 2026-07-08 [Rainier: 毫无利益相关，从路人甲角度说一下： 这个回复有点避重就轻了](1783471872320_ezhs0lo0.md) · C
+- 2026-07-07 [nashsu/llm\_wiki: LLM Wiki is a cross-platform desktop application that turns your documents into an organized, interlinked knowledge base — automatically. Instead of traditional RAG \(retrieve-and-answ…](1783418426163_kvamhzfy.md) · B
+- 2026-07-07 [microsoft/markitdown: Python tool for converting files and office documents to Markdown.](1783418418597_d5bnd5c9.md) · A
+- 2026-07-07 [code-yeongyu/oh-my-openagent: omo/lazycodex: The coding agent for tokenmaxxers;the one and only agent harness for complex codebases. For your Codex, for your OpenCode](1783418292929_0elbwcej.md) · B
+- 2026-07-07 [code-yeongyu/lazycodex: The one and only agent harness for complex codebases. Project memory, planning, execution, and verified completion inside Codex.](1783418283607_6tjmq8i0.md) · B
+- 2026-07-07 [Shann³: how to make your company AI-ready your agents are only as good as what they can …](1783418190108_988la2sx.md) · C
+- 2026-07-07 [Max For AI: 我现在大概知道 @karpathy 、一堆 Gemini/OpenAI 出身的核心人员（比如Gemini的技术负责人 @NoamShazeer ）要加入 Ant…](1783418130169_73sw6p7p.md) · D
+- 2026-07-07 [如何使用 Fable 编排一个拥有 40 个子代理的大型项目](1783418122716_mil4lyem.md) · A
+- 2026-07-07 [Your Worker can now have its own cache in front of it](1783418106656_cnftylha.md) · A
+- 2026-07-07 [21 世纪最赚钱的技能（非 AI）](1783418092577_hc4yty5y.md) · B
+- 2026-07-07 [\#5 写好一份 Spec 的实战手册](1783417736609_04tg0qaf.md) · A
+- 2026-07-07 [nash\_su - e/acc: Qwen 27B 确实是非常甜点模型，单卡 4090 就能跑，我给几个企业客户都用的是这个 主要是 Pro 6000 已经买不起了，太超预算了](1783413207809_3iinhrnq.md) · D
+- 2026-07-07 [Ashlyn He: 最近看到Dan Koe 的这篇文章在讨论 AI 时代最重要的能力是什么，核心观点是：AI 会让工具越来越便宜，但人性不会改变，所以真正值钱的仍然是理解人性](1783389268767_icuma7o5.md)
+- 2026-07-07 [yibie: LangChain 开源了 OpenWiki——一个专门给 agent 用的 CLI，自动为你的代码库写文档并持续维护](1783389090499_wx1zvzl5.md)
+- 2026-07-07 [AYi: 这个开源项目的作者真是个天才， Claude Code 居然能直接看完整的视频了， 什么 YouTube、Zoom 会议、Loom 录像，你直接甩个链接过去，它…](1783387787539_vd1v468x.md) · C
+- 2026-07-07 [Ashlyn He: 最近看到Dan Koe 的这篇文章在讨论 AI 时代最重要的能力是什么，核心观点是：AI 会让工具越来越便宜，但人性不会改变，所以真正值钱的仍然是理解人性](1783387277270_tzxqu9m2.md) · B
+- 2026-07-07 [superagent-ai/gateway: A tiny Rust gateway for running coding agents across model providers safely.](1783386430018_nee1o604.md) · B
+- 2026-07-07 [在 Fable 与 GPT 5.6 时代，新的百倍效能代理型工程师会是什么样子](1783386270716_hkpiut2u.md) · B
+- 2026-07-07 [\(1\) Aditya: harness does play an important role after all https://t](1783384821955_fy4haumd.md) · E
+- 2026-07-07 [EdgeBench \| Scaling Laws of Environment Learning](1783383804663_gfntofma.md) · A
+- 2026-07-06 [iOS定位伪装实践片段](1783333019136_zd4i6brx.md) · E
+- 2026-07-06 [郭宇 guoyu.eth: 挺自洽的，当然每个人都可以选择自己生活的方式，只要是自己真正想追求的东西就好，不过我觉得很多人潜在的话语是，Bryan](1783332995054_9kbf437c.md) · D
+- 2026-07-06 [Kevin Ma: 我觉得我自己一年多下来积累的 Agent Coding 工作流实践还是不错的，都落地在自己的工程目录中](1783332970891_svac7bdp.md) · B
+- 2026-07-06 [分享 8 个 Fable5 下线前必跑的超实用 Prompt](1783332953405_68wclpgn.md) · B
+- 2026-07-06 [Fable 野外指南：发现你的未知](1783332901754_3o50r09s.md) · A
+- 2026-07-06 [Leo｜一个人 + AI: 今天刷到 Claude Code 团队 Thariq 的一篇长文，看完直接进收藏夹：用 Fable 干活，瓶颈已经不是模型能力，是你自己的 unknowns](1783332889377_xbjhlwba.md) · B
+- 2026-07-06 [烂尾楼与剩余价值争辩](1783301590181_od6v5otr.md) · D
+- 2026-07-06 [Codex插件授权跨设备同步](1783301581001_y1k64zh4.md) · C
+- 2026-07-06 [劳工财富创造争议](1783301549914_1v9vvr0m.md) · D
+- 2026-07-06 [AgentsView跨AI会话管理](1783301546113_aeqtm5ud.md) · C
+- 2026-07-06 [代码阅读不是二元选择](1783301507362_2gke1noj.md) · C
+- 2026-07-06 [knowledge-catalog/okf/SPEC.md at main · GoogleCloudPlatform/knowledge-catalog](1783301506230_asx4agmi.md) · A
+- 2026-07-06 [cmliu/edgetunnel: edgetunnel2 VLESS/Trojan/SS 多功能面板](1783301466952_wah9ylvw.md) · C
+- 2026-07-06 [一纸公告引发车市税收变革——看来国家又要加税了！](1783301464570_358w3am2.md) · C
+- 2026-07-06 [LiteParse代理文件解析推广](1783301426599_akg8mmc5.md) · D
+- 2026-07-06 [GaosCode/PlanWeave: PlanWeave is a file-backed loop engineering system for long-running coding agents. It turns fuzzy plans into claimable tasks, routes them through implementation and review agents, …](1783301422076_on9hvvu5.md) · B
+- 2026-07-06 [Trystan-SA/claude-design-system-prompt: Reverse-engineered system prompt and skill library that turns an LLM into an opinionated, accessibility-aware, AI-slop-resistant design collaborator.](1783301387610_2mc4sxpd.md) · A
+- 2026-07-06 [产品从零到一先卖再优化](1783301386910_rf9xzolq.md) · C
+- 2026-07-06 [AI投入ROI的流程重构视角](1783301353619_yx51dgd1.md) · C
+- 2026-07-06 [Codex插件化产品随想](1783301347368_sr96yas8.md) · D
+- 2026-07-06 [年轻暴富与风险押注](1783301322155_3nruapoe.md) · D
+- 2026-07-06 [医院场景中的AI医疗反思](1783301307235_7jchsclg.md) · D
+- 2026-07-06 [Shipcast小红书云端支持](1783301282952_ieql17wr.md) · C
+- 2026-07-06 [体制就业与个体户困境](1783301274975_43vkt6ui.md) · D
+- 2026-07-06 [便携路由与AI助理折腾记录](1783301247699_t4mq04v9.md) · D
+- 2026-07-06 [一条缺少信息的书籍推荐](1783301238727_0kpt7efc.md) · E
+- 2026-07-06 [成功来自能力认知与时间](1783301214825_pudco7nb.md) · D
+- 2026-07-06 [Codex + Hyperframes：拆解抖音爆款 - 吃上自媒体这碗饭！](1783301196114_i1xzd2v4.md) · C
+- 2026-07-06 [前端代理缺乏可视反馈](1783301171861_fdqyh12n.md) · D
+- 2026-07-06 [动物园园长: 自从我把日均发帖数降到30左右后，上一期我的日均曝光达到了500万，看看这个数据能保持多久](1783301171448_c1kv60q4.md) · E
+- 2026-07-06 [AI 开发时代，别让自己困在「测试员」的角色里](1783301155441_v7s6gqiy.md) · A
+- 2026-07-06 [Leo｜一个人 + AI: 这几天泡在 Fable 5 里，把积了半年的 agent 工作流翻修了一遍：7 路 agent 并行审计，挖出 24 个问题——三份配置各说各话，记忆服务死了两…](1783301155441_mg8quygd.md) · C
+- 2026-07-06 [Huberman运动觉察访谈提纲](1783301142134_mny03i7f.md) · D
+- 2026-07-06 [事件日志即智能体架构](1783301135637_4l8lt43w.md) · B
+- 2026-07-06 [产品负责人角色错配问题](1783301135074_m2fl3leo.md) · B
+- 2026-07-06 [不会编程？这10 种 AI 赚钱路径，学会一种月入 2万，美刀](1783301130504_uywz06pl.md) · B
+- 2026-07-06 [AI抽象分层过度简评](1783301097252_i0jxbc8t.md) · D
+- 2026-07-06 [Tony Dang: Every forward-thinking company, startup or not, should be investing time into bu…](1783301097252_asqu2lxd.md) · C
+- 2026-07-06 [Uncle J: 今天刷到 Codex 自动剪辑、白板视频引擎、内容运营 Skill，我越来越觉得“AI 做内容”这个说法太粗](1783301097252_e7n72j93.md) · C
+- 2026-07-06 [如何精通 Fable 5（完整课程）](1783301097252_s7o7x47u.md) · C
+- 2026-07-06 [reverse-skill/skills/routing.md at main · zhaoxuya520/reverse-skill](1783299452386_16411xu7.md) · B
+- 2026-07-03 [Yangyi: 我认为做一款好产品大致可以分三个阶段 第一个阶段是洞察到需求 第二个阶段是做好解决方案 第三个阶段是匹配对应渠道完成商业化 大部分认会从第二个阶段开始 然后走向…](1783080132939_r3an9m8e.md) · C
+- 2026-07-03 [鸭哥: 前沿大模型越来越聪明，但也越来越擅长在无人看管时蒙混过关](1783080126973_6lpjn30j.md) · C
+- 2026-07-03 [王海滨的财经闲谈: 电影业是这样玩的，初创者和团队在电影拍摄时先卖一圈投资份额，上映前再卖一圈投资者，然后上映](1783080116811_0cafveqe.md) · E
+- 2026-07-03 [Journeyman: 刷到一个主播分享的新疆光伏相关细节，觉得挺有意思的](1783080105879_ek2yftkj.md) · D
+- 2026-07-03 [Paul Graham: Students need to learn how to use AI, but they also need to learn how to think f…](1783080103378_9npg9lqz.md) · B
+- 2026-07-03 [Gokul Rajaram: TIME TO RETIRE THE CLASSIC PRD The PRD is a relic](1783080082819_jojvi9np.md) · B
+- 2026-07-03 [Loop Engineering 实操指南：告别 AI 返工](1783080071527_6b18uzvk.md) · B
+- 2026-07-03 [徒步的骑手·刘宗坤: 很多人幻想AI能缩小人跟人之间的心智差距](1783080066988_hvzjdvbb.md) · C
+- 2026-07-03 [少个分号: 能做到 "混迹到各种展会" 就已经很不容易了](1783080064824_u0adiwz6.md) · D
+- 2026-07-03 [dontbesilent: 解决一个大问题，调用完一个 skill 之后，不知道接下来该怎么办了 如果按照固定工作流调用太死板，如果让使用者自己临场判断，使用者又判断不了 现在直接再次 /…](1783080037419_ei1nhr3n.md) · C
+- 2026-07-03 [Voltex: Boris Cherny, Head of Claude Code, Anthropic: "you can define a stop hook that's…](1783080030885_zyd2dpgl.md) · B
+- 2026-07-03 [LinearUncle: 牛逼，全球最知名的个人独立开发者evelsio 是 Cursor 早期投资人，B 轮投了 10 万美金](1783080018473_qrokllus.md) · E
+- 2026-07-03 [Zara Zhang: For every hour you spend on building the product, spend two hours on explaining …](1783080000957_xmwb4w6g.md) · C
+- 2026-07-03 [生姜Iris: 很多人告诉我——海外中小企业付费能力弱，不值得做](1783079984963_4fmb10pe.md) · B
+- 2026-07-03 [Sebastian Raschka: I put together a new article on setting up local coding agents with open-weight …](1783079981129_aaxyawuk.md) · B
+- 2026-07-03 [罗格 Roge \| Web3 Security &amp; Arb: 我发现许多技术人，甚至是市场运营的工作三年内的人，自由市场的意识很弱](1783079980663_0lpjv8ga.md) · D
+- 2026-07-03 [Indie Fox: 还没体验过 Pi 或 Craft agent 的朋友，建议现在就去试一次](1783079964637_xyvsymjk.md) · C
+- 2026-07-03 [郭宇 guoyu.eth: 爱的本质就是真实陪伴的时间，如果一个人不愿意为你付出时间，那么就是不爱你](1783079944597_jbiw8v3n.md) · D
+- 2026-07-03 [Pangyu 胖鱼 🐠: 字节这家公司最牛的一点，是它榨出了穷人身上唯一还值钱的东西——时间](1783079929669_n9t8l1le.md) · D
+- 2026-07-03 [Claude自动匹配技能技巧](1783079927978_56wgxur2.md) · D
+- 2026-07-03 [✧ 𝕀𝔸𝕄𝔸𝕀 ✧: 据说国内的电子厂老板都已经疯掉了](1783079910910_7tfzez0w.md) · C
+- 2026-07-03 [jolestar: 看到还有人把 CLAUDE](1783079905938_dabsdsc1.md) · B
+- 2026-07-03 [少个分号: \#\# 总结了程序员可变现的商业模式清单 \#\#\# 流量类 - 自媒体平台流量分成 - 知识付费（卖课） - 付费社群（卖陪伴） - 打赏/直播 \#\#\# 服务类 -…](1783079895085_0x0o8okw.md) · C
+- 2026-07-03 [宝玉: RepoPrompt 已经开源了，社区版（Community Edition）已上线 GitHub](1783079884316_pxlqiarl.md) · B
+- 2026-07-03 [Robinson · 鲁棒逊: 忽然想到一个有趣的事](1783079859958_vfr7cy1y.md) · D
+- 2026-07-03 [Ray Wang: 晚上刚看完 Lenny 这期访谈 Fiona Fung，现 Claude Code 和 Cowork 工程负责人，感受颇深，很多最新的组织变化只有在 Anthr…](1783079844731_hwj4e3fr.md) · B
+- 2026-07-03 [Luyu Zhang: 一个 Startup 的创始人过完 35 岁生日后会突然发现这么一个离奇的现实——自己从小到大路上的所有人，并没有多少人，或者说找不到人从事这样一份职业](1783079835116_mxl0tnb7.md) · D
+- 2026-07-03 [鸭哥: OpenAI 给 Codex 新加的 Record &amp;amp; Replay，表面看是一个更聪明的录屏功能：你在 Mac 上演示一遍 workflow，它帮你生…](1783079832244_oqdhz9fq.md) · B
+- 2026-07-03 [DAN KOE: Skills that have nothing to do with money but are worth dedicating an immense am…](1783079825696_qnipap79.md) · D
+- 2026-07-03 [Engineering for Bounded Cognition](1783079797768_gkbh9bye.md) · A
+- 2026-07-03 [Boris Cherny: As engineering, product, design, DS, etc](1783079783201_kgscld99.md) · B
+- 2026-07-03 [Gergely Orosz: I talked with a few folks inside Anthropic and I am starting to understand what …](1783079781508_6od3n0ti.md) · B
+- 2026-07-03 [包叔: GDP增速可能位于目标区间的中下部，官方报告已有预期](1783079778206_tlwmn8w2.md) · D
+- 2026-07-03 [管四: 这几天把本地 Agent 体系又折腾了一轮](1783079114286_k6972k1k.md) · B
+- 2026-07-03 [如何构建一个4人代理团队，在你睡觉时交付功能（内部确切设置）](1783079106679_ybopm2n8.md) · B
+- 2026-07-03 [plusxiaxia: 面试不到10分钟，我就不想继续问传统项目了](1783079094576_drlkhkxb.md) · C
+- 2026-07-03 [Tz: 我现在有一个极其明显的感觉就是： 随着 AI 能力增长，泛用性增强，特别是无人监督就能独自完成任务时长的指数级增加，这种包月制方案，越来越接近雇佣一个真实人类的…](1783079067572_w44iyeg2.md) · D
+- 2026-07-03 [HuangMing: 做政务AI项目，我总结出一个规律](1783079063885_6v33gyxq.md) · B
+- 2026-07-03 [Howaboua: People of Pi](1783079053747_ss3x0hbw.md) · C
+- 2026-07-03 [马东锡 NLP: Coding Agent + LangSmith MCP 这个组合太厉害了 Coding Agent 写代码 -&amp;gt; LangSmith MCP 拿到tra…](1783079045911_2m1b2jnb.md) · D
+- 2026-07-03 [yibie: HN 吵了 300 楼才达成共识：你还需要一个领域，只是不再是写代码 最近 Brent Horsting 的一篇文章在 HN 引发了激烈讨论](1783078759058_4ri4at3x.md) · A
+- 2026-07-03 [生姜Iris: 我做竞品调研有一个固定的框架](1783078721439_k2jqmaa6.md) · B
+- 2026-07-03 [Pi Agent 配置指南：打造你的专属 AI 编程助手](1783078710691_mocpdnpo.md) · B
+- 2026-07-03 [Sunny: 所以小团队最好的方法不是自己全部手搓一个agent出来而是基于现有的开源大神们的资产去构建专属于某一领域的harness 比如说pi，极简架构但是agent架构…](1783078677463_ix61op4f.md) · C
+- 2026-07-03 [我的个人生活自动化代理栈](1783078646874_hh2kws7a.md) · A
+- 2026-07-03 [Jason Zhu: 谢谢@ixiaowenz的独立开发者英国公司报税小册子 信息差： 1️⃣ 买电脑等设备还能走AIA，又省下了好多税款 2️⃣ 订阅产品最好都用公司卡，用公司抬头…](1783078640370_4q6y7guf.md) · D
+- 2026-07-03 [Bear Liu: Lee 做 career coach 的时候观察到一件事：企业全职工作的安全感，越来越只是一种幻觉](1783078630430_btl3oa2z.md) · D
+- 2026-07-03 [恒星: 原来 LLM 还能自己写工作脚本，把任务拆给一群子代理并行干](1783078597816_908d6n6r.md) · C
+- 2026-07-03 [DeepakNess: Still lots to learn about the Pi agent from Dillion's approach](1783078593927_p2cur1zi.md) · D
+- 2026-07-03 [在悉尼和稀泥: 我今年尝试做 2b 业务，发现凡事认真做 2b 业务的，都会需要给 2b 卖课，不管国内国外](1783078590774_i9as4fwm.md) · D
+- 2026-07-03 [Colin Wu: 听老人们聊 90 年代的下岗潮，像城市一样大小的厂子们，突然开始几千人几千人的裁员](1783078132856_izdo4yu0.md) · E
+- 2026-07-03 [英特尔 CEO 陈立武访谈全解读：半导体供应链上的投资机会在哪里](1783078116261_s3l1blev.md) · A
+- 2026-07-03 [2026年人工智能/机器学习工程师面试指南 - 第二部分](1783078109031_rgjjoq6w.md) · A
+- 2026-07-03 [Loop Engineering：每个建设者在 2026 年都需要的 AI 技能](1783078101125_bfekdh69.md) · B
+- 2026-07-03 [X](1783078099323_b24355yc.md) · C
+- 2026-07-03 [RobinSeun\_维京黑船: 我这个爱研究的性格真是，不去干个特务、私家侦探都屈才了](1783078052767_q0gxgblw.md) · D
+- 2026-07-03 [Mengke Wang: 好消息，Vercel 把他们的设计系统直接开源了，两个地址： https://t](1783078025617_tj7g8kwo.md) · B
+- 2026-07-03 [meng shao: 60 分钟，成为 AI Native 组织：人、Agent 与上下文三层系统 来自 @gregisenberg 和 @TheoTabah 60 分钟的深度对谈，…](1783078014412_46wj0p2v.md) · A
+- 2026-07-03 [构建一个针对任何流程的 Claude 代码代理团队 - 在 1 个提示中](1783078011267_pkpmzy49.md) · A
+- 2026-07-03 [Nagi Yan: 《稀缺的能力：识别并定义痛点》 很多人以为，最稀缺的能力是编程能力、表达能力、管理能力，或者执行力](1783077997072_56sxj5oo.md) · B
+- 2026-07-03 [lifcc: 宝藏级 LLM 采样指南来了 标题：《Dummy's Guide to Modern LLM Sampling》 这篇文章把现代 LLM 文本生成里的采样器（S…](1783077983302_uyklfnu1.md) · C
+- 2026-07-03 [AI用得好不好，跟你会不会管人，我觉得越来越是同一件事。](1783077944772_vbyugwyf.md) · B
+- 2026-07-03 [把 Claude Code 的记忆，搬进了我的 Obsidian](1783077936171_cdd5lbs7.md) · B
+- 2026-07-03 [海拉鲁编程客: 最近使用 Kimi Code + K2](1783077935313_ogcz7zbi.md) · B
+- 2026-07-03 [我把微信里的一切都自动同步进了 Obsidian](1783077932756_uj67bykp.md) · C
+- 2026-07-03 [IndenScale: 我越来越觉得，Hardware Engineering，也就是建筑、机械、汽车、半导体、消费电子、工业设备这类广义硬件工程，可能不只是 AI 的一个应用方向，而…](1783077244536_8e0ccw6l.md) · B
+- 2026-07-03 [高效使用 Worktree，成为十倍程序员](1783077241895_l4bfynpm.md) · B
+- 2026-07-03 [Pangyu 胖鱼 🐠: 现在越来越理解中产父母了，也越来越理解，一个中产家庭能给孩子带来多大的助力](1783077014477_dso7uk5z.md) · D
+- 2026-07-03 [九原客: AI for Work 在很多企业内部很微妙](1783076198500_18f9xqb3.md) · C
+- 2026-07-03 [能帮你做 Live Photo 了！藏师傅社交卡片 Skill 重磅更新](1783076007251_c8rakqhp.md) · S
+- 2026-07-03 [Leto Bao: 对于普通人怎样投资，我认为分几种情况： 1](1783075988613_oznnusgw.md) · D
+- 2026-07-03 [Harrison Chase: big week at langchain, with a lot of launches: 1/ OpenWiki - auto generate a wik…](1783075948012_5iao395i.md) · D
+- 2026-07-03 [腾讯做的 Agent 在打通手机和电脑同步干活这方面把 codex 拉爆了](1783075939789_dkn9szzr.md) · C
+- 2026-07-03 [✧ 𝕀𝔸𝕄𝔸𝕀 ✧: 今天看到两句话：“财不露白，富不露相”](1783075918039_383peaky.md) · C
+- 2026-07-03 [GPT 降智解决方案 \| 0penAI](1783075797775_j33gud5g.md) · B
+- 2026-07-03 [Why OpenAI is merging Codex and ChatGPT and the future of knowledge work \| Andrew Ambrosino - YouTube](1783075642163_fgzdyy5m.md) · A
+- 2026-07-03 [The best AI agents are cheaper than you think - YouTube](1783075635330_dd8mbfpk.md) · A
+- 2026-07-03 [MinSir • 敏: 财政史上最顶级的阳谋是什么](1783073745316_5kqhd3k7.md) · C
+- 2026-07-03 [硅谷王川 Chuan: 要区分同质化产品因为暂时稀缺带来的利润，和真正有结构性优势带来的利润](1783064656182_1933clrq.md) · B
+- 2026-07-03 [Agent / daemon — summarize](1783064355107_dwjqt4pq.md) · A
+- 2026-07-03 [姚金刚: 团队每天的招聘与面试量越来越大 于是这两天，给团队的「AI面试管家」系统进行了一次大的升级 核心是实现更自动化、更智能的四端协同：AI面试系统+GitHub+飞…](1783064129340_ttqzh8na.md) · B
+- 2026-07-03 [Introducing OpenWiki, an open source agent for repo documentation - YouTube](1783049095459_fzzu5f9y.md) · B
+- 2026-07-03 [人工智能工程复杂任务导航](1783039275653_tcjdns56.md) · B
+- 2026-07-02 [Viking: 用了 herdr 一段时间， https://t](1782991795385_w61p263r.md) · D
+- 2026-07-02 [Yangyi: 做质量远比数量有效 但没数量的时候又很难获得质量 做加法是很容易的 因为顺人性 但真正开始做减法逆人性的时候 才会获得内核 很多甲方以为做reddit只要多发帖…](1782991788956_iytofwic.md) · C
+- 2026-07-02 [宝玉: 开源项目推荐：Claude Code From Scratch 这是一本学习 Claude Code 的开源电子书，严格来说不仅仅是电子书，还有代码，不需要你去…](1782991756658_z2zojkje.md) · B
+- 2026-07-02 [yan5xu: 上周和觐开（Linkloud）、Patrick（Clink）约了顿饭](1782991755973_op8dtj1e.md) · D
+- 2026-07-02 [Zara Zhang: "The market value of writing has gone way up" \(per a PM at Anthropic\) Good writi…](1782991713465_n4ccknx8.md) · D
+- 2026-07-02 [Frank Wang 玉伯: AI native 组织的特点是： 有研究员，有设计师，有产品经理，有前后端工程师，有增长运营，有质量工程师，有 FDE，等等](1782991704396_h2tylvyj.md) · D
+- 2026-07-02 [编码代理框架](1782991679526_u62bfsy2.md) · B
+- 2026-07-02 [九原客: 关于Agent 中的 mcp vs cli，以前激进的看法是认为cli会替换掉mcp](1782991665007_xqbjyrah.md) · C
+- 2026-07-02 [yibie: 推荐这篇文章，作者在 Google 和 Microsoft 都写过 design doc，他认为好的设计文档可以节省你数年的开发时间](1782991622521_k04fukay.md) · A
+- 2026-07-02 [在深度代理中介绍动态子代理](1782991563214_t1nu9p6j.md) · A
+- 2026-07-02 [熊布朗: 最近我也在关注飞书会不会侵犯到微信IM 领域这个事情，就看到了 Max 大的这个新闻，我认为飞书已经侵犯到了，而且还在逐步、有策略地扩张](1782991562448_oual05et.md) · C
+- 2026-07-02 [Yangyi: 我发现了一个恐怖的事情 从前人们跟着太阳作息 寅时起床申时入睡 有了火之后 作息被拉长了一些 可以到戌时 有了电之后 作息更长了 可以通宵 只是晚上效率很低 但…](1782991516369_bbcsrbnm.md) · C
+- 2026-07-02 [环境 PM 代理](1782991482400_sd5luyya.md) · B
+- 2026-07-02 [解药三分毒: 经济危机的根本原因：生产者被榨干了](1782991467170_davwf7x7.md) · D
+- 2026-07-02 [Leo｜一个人 + AI: 做量化，过去的门槛是会写代码](1782991417622_o8fcmxjf.md) · D
+- 2026-07-02 [黄赟: 品行好的老实人，在职场怕是最容易被拿捏的](1782991406377_0s9clo7z.md) · D
+- 2026-07-02 [✧ 𝕀𝔸𝕄𝔸𝕀 ✧: 存储厂商之前不愿意拉高 Capex 去扩产，因为可以通过调高 ASP 获得更多自由现金流，但现在存储缺成民生问题，别说苹果，可能英伟达都有点顶不住，那扩产就不再…](1782991376254_4e8s4xzt.md) · D
+- 2026-07-02 [Yifeng "Evan" Wang: 简直不像云风老师会说的话…… 没 DB 那未读数哪里维护呢](1782991369154_487gzttg.md) · C
+- 2026-07-02 [失业观察日报: 35岁现象，为什么在中国特别突出](1782991344220_agoop0l5.md) · E
+- 2026-07-02 [Yangyi: ai时代的产品机会 和过往的经验是非常挂钩的 就比如你看到了很多机会 但因为缺少行业专家经验 导致你无法做出很好的体验 所以我觉得ai时代更是拼营销包装 而非产…](1782991324473_ru9ce2hn.md) · D
+- 2026-07-02 [Panda: 没怎么用 Claude 了，Opus 有太多可替代的模型了，但之前 Claude Design 是无可替代的 现在代码、文档都是 Codex 写，用 @dote…](1782991301905_czgxdgzr.md) · D
+- 2026-07-02 [Azure \| 数据分析万物: Cursor团队的判断是一年后没人会再谈论loop engineering 就像两年前大家对prompt非常重视，很多人编写了相关课程，也有很多人去上课 但是现…](1782991278701_hajgxlfn.md) · D
+- 2026-07-02 [Rainier: 可以看看行业龙头的数据， 比如新经典2025年的年报](1782991272148_pvd4tlcn.md) · D
+- 2026-07-02 [Jilles Soeters: If you're running multiple coding agents \(Codex, Claude Code, Pi\) at once, you'r…](1782991237825_og16f3uc.md) · D
+- 2026-07-02 [领哥LingGe🙏: Codex + 官方Product Design插件](1782991226969_ezbkctxi.md) · C
+- 2026-07-02 [Matt Pocock: Doing my first ever experiments with a personal, entirely agent-managed Karpathy…](1782991207648_t4u1qbql.md) · C
+- 2026-07-02 [Rainier: 这个背后的大背景是，中国国内图书市场的崩盘](1782991186292_7luo6hyh.md) · E
+- 2026-07-02 [Lenny Rachitsky: My biggest takeaways from OpenAI's Codex lead @ajambrosino: 1](1782991168428_dme4esy3.md) · B
+- 2026-07-02 [Daniel San: New component just landed in the Claude Code docs](1782991137476_bwknzox5.md) · D
+- 2026-07-02 [David Pan: Everyone is writing about agent loops right now](1782991104502_h7in991o.md) · B
+- 2026-07-02 [LotusDecoder: 我认为未来肯定会出 AI私人教练 这个新行业的， 初步想到两点刚需， 一是，首次接触某个型号大模型，教练指导下刚好命中自己的甜点区，解决了自身刚需，对这个模型留…](1782991103009_uh1uxizm.md) · C
+- 2026-07-02 [Boris Cherny: In the next version of Claude Code: subagents run in the background by default, …](1782991074798_q0gfrkld.md) · D
+- 2026-07-02 [Yangyi: 你教vibe coding 不如教别人如何SEO建站搞广告流量赚钱 你教vibe coding 不如教别人如何搞独立站做跨境电商赚钱 你教vibe coding…](1782991056491_ewnw7o7z.md) · D
+- 2026-07-02 [如何构建云软件工厂 - 规范驱动开发技能](1782991043792_ggm99gm7.md) · B
+- 2026-07-02 [宝玉: Ford 重新雇了 350 名老工程师回来，因为 AI 质检系统没能达到预期](1782991018948_2d6kq2mb.md) · B
+- 2026-07-02 [Dynamic subagents - Docs by LangChain](1782990210339_vsp11wk1.md) · A
+- 2026-07-02 [李韭二: Harrison Chase 把 Agent Memory 里一个正在收敛的模式讲清楚了：Wiki Memory](1782990150611_82758bg9.md) · B
+- 2026-07-02 [维基记忆](1782990147651_6qsdfnex.md) · B
+- 2026-07-02 [AlexZ 🦀: 用 robrix + octos 来自动化开发了，一个房间绑定一个项目，octos 是 deepseek，coordinator 是claude code，还有…](1782989879175_e7ebipfq.md) · D
+- 2026-07-02 [Release Hermes Agent v0.18.0 \(2026.7.1\) — The Judgment Release · NousResearch/hermes-agent](1782989752960_z44vtcoj.md) · B
+- 2026-07-02 [dagucloud/dagu: Local-first workflow engine with a Web UI for small teams. Define DAGs in a declarative YAML format. Self-contained and no DBMS required. Use any AI agent to manage your DAGs.](1782989553771_q0bv382c.md) · B
+- 2026-07-02 [OpenCode协调器插件模式解析](1782989494929_eqlcfgqy.md) · C
+- 2026-07-02 [Xiaoyin Qu: I’m bullish on OpenAI’s $1 trillion valuation \(not anthropic\) despite free Chine…](1782985640290_ltxsw5go.md) · C
+- 2026-07-02 [Rainier: 首先要清楚票价怎么来的](1782985608648_h1xdu5fo.md) · C
+- 2026-07-02 [Mengke Wang: 今天是7月1号，2026年刚好过了一半，分享我每半年都会问自己的8个问题](1782985592817_v5n101u0.md) · A
+- 2026-07-02 [黄赟: Claude 在写作直出的可读性方面，还是有很大优势，几乎是南波王的，所以我为它专门铺设了一条 VPS 路线，20美刀一个月，3年来从未出事 挑 GIA CN2…](1782985553576_zye3ehnp.md) · E
+- 2026-07-02 [小盖: 吴恩达三言两语，就把 Loop Engineering 说清楚了](1782985553335_dq8zmb1f.md) · B
+- 2026-07-02 [Tz: 第一次直观感受到 Codex 长时目标任务 /goal 的强大](1782985517930_hhdzhi6c.md) · C
+- 2026-07-02 [用 Codex + Remotion 实现无痛自媒体视频日更，涨粉过万：把剪视频变成维护一条生产线](1782985500406_1rsnqhct.md) · A
+- 2026-07-02 [介绍 OpenWiki，一个用于代码仓库文档的开源代理](1782985458032_2xmdao13.md) · B
+- 2026-07-02 [如何构建一个前沿代理操作系统](1782985433884_6byw7ow9.md) · B
+- 2026-07-02 [循环详解：Claude、GPT、Mira 以及实际起作用的内容](1782985405772_lhe0lunr.md) · B
+- 2026-07-02 [姚金刚: 关于To B类的公司，一个很重要的销售策略：打造标杆案例还不够，要倾尽所有核心资源，优先打造标杆神级案例 在国内，案例对销售的重要性，可能被低估了 尤其是对于一…](1782985371020_hre6f8dd.md) · B
+- 2026-07-02 [Vercel Eve \| OpenUI - The Open Standard for Generative UI](1782973618009_tpgxcq4k.md) · B
+- 2026-07-02 [郭宇 guoyu.eth: 换句话说，对于闭源信息，有没有足够好用的本地虚拟机 + computer use 的工具可以做本地 mcp 链接到第一层 harness（codex/cc）感觉…](1782972602163_piwnui26.md) · D
+- 2026-07-02 [AI时代小产品三大策略](1782972356781_795wjo0k.md) · C
+- 2026-07-01 [关于怎么把产品卖出去，最贵的 160 条判断](1782901242888_xztwcnu5.md) · A
+- 2026-07-01 [宝玉: Q：我们公司有十几个微服务，现在想让开发用 AI Agent 来做系统设计和编码](1782901224155_mybgak25.md) · A
+- 2026-07-01 [Andrew Ng: “Loop engineering” is a hot buzzphrase after mentions of it by Boris Cherny \(Cla…](1782901162345_ms9m6p8v.md) · B
+- 2026-07-01 [佐仔: 为了解决这个问题，准备在VPS 上采集“docker-compose + LiteLLM + Postgres + Caddy 自动 HTTPS”搭建一套仅供自…](1782901145637_nuh2ewis.md) · C
+- 2026-07-01 [对话OpenAI Codex负责人：产品迭代被高估了](1782901111182_iwu0lok6.md) · A
+- 2026-07-01 [Kimberly: LangChain 今天连发两记，直接把 agent reliability 往前推了一步：一套统一评估栈，一个不用完整沙箱的代码执行方案](1782901095381_e5j6fcq8.md) · B
+- 2026-07-01 [Rainier: 其实美国也是人情社会](1782901051387_wvhnq4ow.md) · C
+- 2026-07-01 [LinearUncle: 个人强烈推荐一个开源的媲美甚至部分超越codex app 的coding IDE：Orca https://t](1782901042568_0vjz479q.md) · C
+- 2026-07-01 [Xudong Han: 分享一下智谱创始人唐杰老师 @jietang 昨天刚在WB上发的文章吧 AI 时代：认知 &amp;gt; 格局 &amp;gt; 技术 &amp;gt; 管理 https://t](1782901005727_rnvmhse7.md) · D
+- 2026-07-01 [Harrison Chase: a common pattern for \(a part of\) memory that we see: Wiki Memory Examples: - Dee…](1782900997147_s4e1a4z4.md) · D
+- 2026-07-01 [sitin: 做产品设计、UI设计或者需要画原型图的朋友，这个开源工具可以了解一下：Penpot](1782900957917_5e2aq7h3.md) · C
+- 2026-07-01 [Rabi Shanker Guha: Introducing Generative UI for Eve powered by OpenUI Building this was a real joy](1782900956386_04wad5ur.md) · E
+- 2026-07-01 [WquGuru: 不得不说Claude这次想出来的算法太损了，几乎不会误杀，而且是精准的超大规模打击](1782900928489_e7aeadkg.md) · D
+- 2026-07-01 [MCP Servers - X](1782900922644_t11i719k.md) · B
+- 2026-07-01 [Dovey "Rug The CNY" Wan🪐: 一个越来越强烈的感觉是： 资本市场已经不完全是人在给未来定价， 更像是硅基生命在借人类社会给自己配资源 消费 零售 医药这些是“碳基消费” GPU 存储 光模 …](1782900882987_jdxqpuko.md) · C
+- 2026-07-01 [Rainier: 相比之下，真正有技术门槛，确实能解决难题的，真正AI有用武之地的公司，Proto Labs Inc 这个公司是为客户提供3D打印， CNC加工，金属机加工，等等…](1782900861858_einp0j1o.md) · C
+- 2026-07-01 [编码代理框架](1782900845720_53g8vx82.md) · A
+- 2026-07-01 [Andrew Wilkinson: Codex has transformed how I run my companies](1782900812326_u4gtsqi4.md) · D
+- 2026-07-01 [Yangyi: @xDinoDeer 本地化隐私安全：支持完全离线及断网运行，数据端到端加密存储，杜绝云端泄露风险](1782900766819_6bv882y0.md) · D
+- 2026-07-01 [Phoenix Yin: 读完 Kimi Code 的最新招聘，我才知道现在的 AI 编程到底卡在哪儿](1782900753711_j5psxogu.md) · B
+- 2026-07-01 [Isaac: Most AI helps you write, design, code, and ship faster at work](1782900717226_hhmh06ao.md) · D
+- 2026-07-01 [鸭哥: 我觉得这确实是一个非常真实而且有用的需求](1782900709127_s0an6oub.md) · C
+- 2026-07-01 [NewMax进化为AI操作系统](1782890228132_wuv1o810.md) · C
+- 2026-07-01 [Yangyi: 如果你想用中转站变现 又不知道用户有什么场景 不妨让他们用codex国内版平替 在https://t](1782889678019_juij29x2.md) · D
+- 2026-07-01 [NewMax - 让时间，重新属于你。](1782889368628_b6nmnd90.md) · D
+- 2026-07-01 [AI产品进入业务执行时代](1782888305506_t2g3q2qc.md) · D
+- 2026-07-01 [Rift 快速工作区快照](1782886404908_ozstg2e3.md) · B
+
+## 2026-06（753）
+
+- 2026-06-29 [Robinson · 鲁棒逊: 一个观察： 一个工厂怎么对待工人，产品就会怎么对待消费者 之前在抖音上看到一位老哥的分享，至今印象很深](1782713846807_yjoojrdn.md) · C
+- 2026-06-29 [Peter Yang: "We give \[agents\] tasks overnight and then we wake up and the backlog is resolve…](1782713798266_33e9ynzg.md) · D
+- 2026-06-29 [NadeshikoManju@ゆるキャン△ SEASON４ 2027 放送予定: 昨天深夜和 CTO 随便有一搭没一搭闲聊的时候，我给他聊了聊最近我学 MLSys 的进度（我说我过段时间准备自己从头写个小模型的推理服务）](1782713787308_zw7qgcoo.md) · D
+- 2026-06-29 [产品经理的 Hermes 代理](1782713745005_3c7yj3hn.md) · B
+- 2026-06-29 [熊布朗: 我用在飞书里的智能体之 Peter —— 背后接的是 Hermes Peter 负责 公众号的素材收集、撰写和发布 —— 以下视频是从 一个选题 到 成品的过程…](1782713724320_izistjm3.md) · D
+- 2026-06-29 [Mr Panda: 这几天我既没有发太多的推文、也没有用太多的AI](1782713690920_bc4tgbfd.md) · C
+- 2026-06-29 [我不想使用你的代理](1782713651566_s5coztls.md) · A
+- 2026-06-29 [Jerry Liu: Agreed with this](1782713650397_mi7a4j6g.md) · C
+- 2026-06-29 [Bear Liu: 最近的思考：执行性交付很累，而且规模化很难](1782713601313_cn652t8o.md) · C
+- 2026-06-29 [Yihui: 🥳loop engineering + Codex 课程即将上线](1782713557997_tejrwa3p.md) · D
+- 2026-06-29 [为什么我们在 TiDB Cloud 上做了一个 Agent 云盘](1782713545860_ivv36uf1.md) · B
+- 2026-06-29 [Codex 中的两种计划工作](1782713521258_ybuflnzi.md) · B
+- 2026-06-29 [Dmytro Dzhulgakov: DSpark from @deepseek\_ai ingeniously integrates many speculative decoding ideas …](1782712909825_afx2du93.md) · B
+- 2026-06-29 [Yangyi: 其实录制浏览器这个东西，23年Tango就做了 只是AI来了之后 这东西变的更容易做了 NewMax的录制比Codex强的一点是 它不仅仅只学习，它还沉淀 最终…](1782707566133_7mcqko92.md) · D
+- 2026-06-29 [向阳乔木: Agent基建越来越好，利好中小企业](1782707516452_9r99z1m3.md) · C
+- 2026-06-29 [LOOP 基础使用方法](1782707499737_a0im4z7d.md) · A
+- 2026-06-29 [七仔: Tz的分析非常细致，清晰呈现了当前Agent记忆系统在工程实践中的真实边界与权衡](1782707467690_9xa9tar1.md) · C
+- 2026-06-29 [Rainier: 而且，这个思路扩展一下可以搞分布式，分时，雷达系统](1782707194667_33vtcvt0.md) · D
+- 2026-06-29 [智能代理归属之争](1782707174866_1xx0zr55.md) · D
+- 2026-06-29 [姚金刚: 这是今晚直播的相关资料、资源及系统，分享给大家 相关资料： 1、《GEO内容工程操作手册与评估标准》https://t](1782702118800_mluimy0x.md) · B
+- 2026-06-29 [Harrison Chase: Harness: ✅ \(DeepAgents\) Sandboxes: ✅ \(LangSmith Sandboxes\) Eval: ✅ \(LangSmith Sa…](1782702117734_wbonzj9t.md) · D
+- 2026-06-29 [Journeyman: 节选两条来自《菜根谭》的智慧， 管理者尤其应该学习 1](1782702068391_90skebxg.md) · C
+- 2026-06-29 [plusxiaxia: 一周前面了一个资深游戏开发工程师](1782702057755_9t5sde6i.md) · B
+- 2026-06-29 [Leo｜一个人 + AI: 上外网这件事，我大概是这么走过来的： 一开始买订阅](1782702019797_qlm7dadg.md) · C
+- 2026-06-29 [Mr Panda: Loop Engineering 的文章我看了很多了， 但是这些文章普遍的问题就是看的快， 忘得也快](1782702011581_whz86q92.md) · C
+- 2026-06-29 [自托管智能编码代理控制台](1782700158653_9c8nk0x1.md) · B
+- 2026-06-29 [BennyKok: Haven’t been using macbook for a month with this](1782699956753_lxtoe8bc.md) · C
+- 2026-06-29 [宝玉: Anthropic 上周发布了 Claude Tag，目前以 beta 形式面向 Claude Team 和 Enterprise 用户开放](1782699449310_25n982hu.md) · B
+- 2026-06-29 [Robinson · 鲁棒逊: 恰恰相反，泰坦尼克号最能说明“换房间有意义”](1782698909797_a5p2xe0c.md) · C
+- 2026-06-29 [海拉鲁编程客: 新视频真全干工程师了 esp32 硬件 + 前端 + 后端 + voice agent + 剪辑 + AI 编曲 🤣 ai时代太狂野了](1782697724805_mkd3hkjr.md) · E
+- 2026-06-29 [@levelsio: ✨ I think I've been coding almost solely on my VPS with Claude Code for almost a…](1782697468239_izj61tpe.md) · C
+- 2026-06-29 [Kai: 他们卖你八折，自己吃五五折](1782697198074_tdtowaq6.md) · D
+- 2026-06-29 [Guillermo Rauch: Learn to ship](1782696354404_myrxkg66.md) · C
+- 2026-06-25 [AI时代产品变现与收费逻辑](1782361021658_sfv0pohk.md) · C
+- 2026-06-25 [Claude组合付费体验感受](1782361001219_hrr6e0lk.md) · D
+- 2026-06-25 [Berryxia.AI: 今天飞机上听了一下Anthropic “人精”们的演讲分享，觉得不错分享给大家](1782360999998_oqi7fk0d.md) · C
+- 2026-06-25 [产品增长的三层表达](1782360778476_wxp1m1za.md) · C
+- 2026-06-25 [电影业老登退潮与转型](1782360776945_j4wc90lp.md) · C
+- 2026-06-25 [未剪辑的设计评审录音](1782360759487_3sfq49so.md) · E
+- 2026-06-25 [AI整理播客的多稿合并法](1782360755808_27vkc101.md) · B
+- 2026-06-25 [招行客户资产分层数据](1782360740534_l7kcxrjm.md) · D
+- 2026-06-25 [庄子无用之用寓言](1782360739525_jkhh8rv3.md) · D
+- 2026-06-25 [尽早使用LLM避免溢价](1782360722426_hkv0zye9.md) · C
+- 2026-06-25 [中国低欲望社会论断](1782360721242_ocb1lrns.md) · D
+- 2026-06-25 [AI智能体的能力授权模型](1782360706222_179qvg68.md) · A
+- 2026-06-25 [开源律师案件管理系统](1782360693923_jjaps7ok.md) · D
+- 2026-06-25 [Agent使用与风控原则](1782360684115_t85xwuft.md) · C
+- 2026-06-25 [化妆前后反差展示短帖](1782360671993_jg4w0753.md) · E
+- 2026-06-25 [Vercel开源维护弃坑质疑](1782360657789_sfnoscvl.md) · C
+- 2026-06-25 [向阳乔木: 最近好几个朋友Mac电脑中招，Cookie被盗用 X 发帖，哪怕开了两步验证](1782360632646_qbte4zbm.md) · C
+- 2026-06-25 [一则缺乏信息的吐槽推文](1782360629448_2znoycbi.md) · E
+- 2026-06-25 [相信好事仍在前方](1782360611101_v9i93uxp.md) · E
+- 2026-06-25 [AIF获奖短片推荐推文](1782360610187_icjpltid.md) · E
+- 2026-06-25 [热爱当下工作的十年目标](1782360593982_re5aytcd.md) · E
+- 2026-06-25 [关于经济增长蛋糕论推文](1782360593080_w94mul9i.md) · E
+- 2026-06-25 [产品是发现而非发明](1782360578345_jxcz4mf1.md) · D
+- 2026-06-25 [投资者质量与创始人态度](1782360575483_6yod0vzs.md) · D
+- 2026-06-25 [高薪职业毁掉潜力论断](1782360561678_tu8qpeos.md) · E
+- 2026-06-25 [Ansaur内容工具推广](1782360559021_f55rodyn.md) · D
+- 2026-06-25 [为什么在 Twitter 上开发就像 2012 年购买比特币](1782360542944_bd16kpmj.md) · C
+- 2026-06-25 [Anthropic谈判代表传闻](1782360525223_ivaz85md.md) · E
+- 2026-06-25 [Milly Barker: Day 9 building @tenant\_register Had to go check an IRL property issue today](1782360519103_uf52whkj.md) · E
+- 2026-06-25 [敌人的经济学](1782360504417_rga3fzwt.md) · B
+- 2026-06-25 [销售叙事中的敌人塑造](1782360498745_nleu8kym.md) · D
+- 2026-06-25 [LangSmith代理记忆更新流程](1782360487007_0qwhsrex.md) · C
+- 2026-06-25 [\[AINews\] It's Meta-Harness Summer - Latent.Space](1782360474097_2iegrx48.md) · B
+- 2026-06-25 [智能体记忆文章推荐](1782360471620_4s8sosny.md) · D
+- 2026-06-25 [边缘RAG知识库部署方案](1782360454603_srcaipgm.md) · C
+- 2026-06-25 [vas: Enterprise AI isn't failing because the models aren't good enough](1782360429341_4qbmtdub.md) · C
+- 2026-06-25 [Matei Zaharia: Really excited to open source a new project: Omnigent, a meta-harness for AI age…](1782360409687_tu2d7ks6.md) · C
+- 2026-06-25 [Introducing Omnigent: A Meta-Harness to Combine, Control and Share Your Agents \| Databricks Blog](1782360392430_1zboee0i.md) · A
+- 2026-06-25 [Leo｜一个人 + AI: 今天排查了一个诡异的问题：最近 Opus 4](1782360373347_wj38szp1.md) · B
+- 2026-06-25 [Nullable: 再聊聊这波下跌的触发点: 从年初小龙虾这种个人 agent 开始引领的 tokenmaxxing 故事线的冷却吧](1782360366645_jsrm8eqs.md) · C
+- 2026-06-25 [AI 抬高了地板，然后呢](1782360354488_ekb4dtwa.md) · B
+- 2026-06-25 [David Perell: Andrew Stanton is the director of Toy Story 5](1782360319527_v7b56cmu.md) · D
+- 2026-06-25 [omnigent-ai/omnigent: Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies…](1782360313201_gwe8dmh3.md) · B
+- 2026-06-25 [\[AINews\] It's Meta-Harness Summer \| Readwise](1782356565905_eblgzna3.md)
+- 2026-06-25 [Nicolas Finet on X: "How to Build an AI GTM Brain on GLM-5.2: A Signal-Based Outbound System You Run Yourself" / X](1782350249897_pj3d44gv.md) · B
+- 2026-06-25 [Nicolas Finet on X: "How to Build an AI GTM Brain on GLM-5.2: A Signal-Based Outbound System You Run Yourself" / X](1782350249897_wib70h0w.md)
+- 2026-06-25 [一个子代理打开一个新的上下文](1782349818897_mo5wxe20.md) · B
+- 2026-06-25 [Afiz ⚡️: @jerryjliu0 I also built a fullstack PDF parser using LiteParse, which is super …](1782349808390_cntwvgwc.md) · C
+- 2026-06-25 [CJ Zafir: Codex desktop app was draining my Macs battery like crazy so i built a power-gua…](1782349781631_wmu3ifdk.md) · C
+- 2026-06-25 [✧ 𝕀𝔸𝕄𝔸𝕀 ✧: 大模型公司开始找存储厂商要饭了， $MU 深度介入一线大模型的开发工作，资本的闭环可能先于模型递归实现，然后它们像一台巨大的绞肉机，通过侵蚀劳动力市场虹吸全球的…](1782349770828_kxvmhwo5.md) · D
+- 2026-06-25 [Tom: 号外：\#Alma 已经支持了无限画布的功能，挺好用的](1782349757886_retzf6cx.md) · E
+- 2026-06-25 [Jesse Lau 遁一子: codex的goal配合gemini脚本还是很爽的 我改用gemini 3](1782349748739_hgug12cb.md) · D
+- 2026-06-25 [Tz: AI 狂欢里的 1929 回声：这一次，技术革命会拯救我们吗](1782349744185_ndkg908r.md) · E
+- 2026-06-25 [Lenny Rachitsky: Fiona Fung \(@Nerdi\_Yogi\) leads the teams behind Claude Code and Cowork at @Anthr…](1782349719730_fz3xxybw.md) · D
+- 2026-06-25 [Jakub Krehel: It’s incredible that /make-interfaces-feel-better has already been installed mor…](1782349718034_uki0bxix.md) · D
+- 2026-06-25 [Shane Parrish: My conversation with @markpinc, founder of Zynga creator of Farmville, Words wit…](1782349712537_nweryynj.md) · D
+- 2026-06-25 [Harrison Chase: have been thinking a bunch about model routing and related things current though…](1782349698558_nkqwyn43.md) · C
+- 2026-06-25 [eigenrobot: another way to look at elite shifts is that all elites in the west are now trans…](1782349694389_8zau95n3.md) · E
+- 2026-06-25 [Shann³: how Gbrain works \(made with Hermes Agent manim skill\) put together a quick walkt…](1782349679417_px575veb.md) · C
+- 2026-06-25 [Patrick Collison: Very early experiment but I think this will be cool](1782349675236_dt369jyq.md) · E
+- 2026-06-25 [Sahil Bloom: The older I get, the more I realize you can reinvent yourself as many times as y…](1782349665392_84oynnae.md) · E
+- 2026-06-25 [Paul Graham: AI apps are the new browsers](1782349658098_fdkbirtx.md)
+- 2026-06-25 [Tony Holler: We’ve been sold this myth our entire lives](1782349646326_ci6xyagm.md) · C
+- 2026-06-25 [RobinSeun\_维京黑船: 我总是直陈其事，搞得一大批朋友说我觉悟不高，那我今儿来好好夸夸一个政策： 《实施就业优先战略“十五五”规划》 这个政策在具体的举措之外有几点特别出挑的地方，国发…](1782349640121_n635twbl.md) · C
+- 2026-06-25 [向阳乔木: 手头还有几个正在开发，计划本周开源的项目](1782349613299_41mkoz2v.md) · E
+- 2026-06-25 [5月社零历史性转负——消费跪了！高层急了！](1782349610410_e25s17e0.md) · D
+- 2026-06-25 [从 OpenClaw 到 FastClaw：如何设计优秀的多 Agent 架构](1782349596968_k9obosfp.md)
+- 2026-06-25 [StarKnight: Prompt： 根据你的刻板印象，绘制一张并排三列的图片，分别展示中国人的工作场景，韩国人的工作场景，日本人的工作场景](1782349591653_x14vr7gi.md) · E
+- 2026-06-25 [牵Sofia走🇮🇹: 🤣这个妈妈不错](1782349569140_kkejwxc2.md) · E
+- 2026-06-25 [九原客: 上次介绍了在 ChatGPT web里控制本机的方法，还有一种是在 Agent 里调用 ChatGPT web](1782349551282_w0yz35cs.md) · C
+- 2026-06-25 [Stanford 偷偷开源了一套研究方法，4 个 Prompt 让 Claude 顶博士](1782349534751_ihpor2cu.md) · B
+- 2026-06-25 [LinearUncle: Codex 疯狂写磁盘的问题已经修复了 ✅ 但 Codex App 暂时还没更新，需要手动更新 Codex CLI 到 0](1782349532301_3f112lrc.md) · C
+- 2026-06-25 [如何在 AI 大规模替代中生存并逃离工资奴隶制](1782349508782_apzce6a2.md) · B
+- 2026-06-25 [Lenny Rachitsky: My biggest takeaways from Claude Code/Cowork lead @Nerdi\_Yogi: 1](1782349506807_tfyipwr1.md) · A
+- 2026-06-25 [简直就是教科书级别的 AI 设计规范。](1782349476291_wribeiaw.md) · B
+- 2026-06-25 [姚金刚: 研究了一下基于GitHub开源项目的盈利模式，让GTP Pro做了深度调研，整理了13种常见的盈利模式，同时也做了一版盈利指数的分析参考（详见图片） 1、云租赁…](1782349473318_y7j12wdn.md) · C
+- 2026-06-25 [Cell 细胞: 准备，国庆后 出来全职 OPC 了， 万推有什么好的建议或者人生经验吗 感觉到 Q3 国内 Coding 和 生图生视频 模型 都会到一个 可用、能用、大碗 的…](1782349469736_1z4n5exe.md) · E
+- 2026-06-25 [birdclaw Spec — birdclaw](1782349459534_odd65u59.md) · B
+- 2026-06-25 [xdevplatform/xurl: The official CLI for the X API](1782349452535_yz4tdnst.md) · B
+- 2026-06-25 [Mr Panda: Marc Lou 是独立开发者圈子里很有代表性的一个人物：一个人做产品、一个人写代码、一个人做营销、一个人卖软件](1782349426188_ghxoqgxt.md) · C
+- 2026-06-25 [现代浏览器如何工作](1782349397074_fbirhw26.md) · B
+- 2026-06-25 [Harry Zhang: A gift to the Chinese developer community for anyone building agents on @LangCha…](1782349389686_5punhfy7.md) · C
+- 2026-06-25 [Clelia Bertelli \(🦙/acc\): Convert almost anything to PDF with https://t](1782349378693_0sf7927u.md) · D
+- 2026-06-25 [熊布朗: Hermes 不同的 Profiles 之间有不同的几种“沟通”方式，我想问各位大佬，你们都是怎么协调多个 Agents 的 —— 以下是 Alex 告诉我的（…](1782349353715_0j9spygl.md) · C
+- 2026-06-25 [YanXbt: HERMES AGENT HAS 8 CONFIGS THAT MOST USERS NEVER CHANGE](1782349345427_qf9izt8v.md) · C
+- 2026-06-25 [烟花老师: 最近两周最值得看的高质量 AI 领域的视频](1782349304198_sn3vc7jo.md) · C
+- 2026-06-25 [idoubi: D 哥 @lumina\_\_team 做了个 https://t](1782349292239_0braek5q.md) · C
+- 2026-06-25 [房策: 新能源汽车下乡预示着新能源车的发展空间到顶了，后续，只会更加衰落，叠加房屋建筑统一代码制度，预示着房产税要提前了](1782349253825_fu3mx4cc.md) · E
+- 2026-06-25 [Aniket Pawar: Introducing agentcn 🤖 by @shadcnlabs &amp;gt; Built on Eve by @vercel and @flueai &amp;…](1782349250851_0u5v90dx.md) · D
+- 2026-06-25 [简单沙箱，智能主机](1782349245772_2kv9l1vk.md) · A
+- 2026-06-25 [Yanhua: 目前看到关于 “Agentic Engineering Workflow”的最完整的介绍👇 花了一个小时完整看完了，完全可以做成一个付费教程](1782349221211_8fosx1n4.md)
+- 2026-06-25 [Robinson · 鲁棒逊: 一个比喻： 户口是个单向膜 （门） 它透过了劳动力自由流动的全部红利： 劳动、税收、消费、创新、青春，都可以进入城市](1782349211450_231xvylb.md) · D
+- 2026-06-25 [LIN WEI: 应届生嘛，总喜欢些虚头八脑的东西，例如：高耸入云的写字楼，宽敞明亮的办公室，友善的同事和无间的协作，哪家公司具备这些要素再自带个健身房，主题食堂之类的，对应届生…](1782349186629_1zuro0yu.md) · D
+- 2026-06-25 [Charles在路上: 今天在家阴暗的爬行了大概 30 米，爬完之后肩膀完全松解了，是一种很难描述的感觉，就是某块一直在后台悄悄绷着力的东西，突然不绷了，整个放下来了](1782349182710_p85rzz03.md) · D
+- 2026-06-25 [Matt Pocock: GLM-5.2 is a monster thinker Trying it with pi and my /teach skill, learning to …](1782349174943_ws9tupr5.md) · D
+- 2026-06-25 [Geek: 才知道 Oh My Pi /context 可以显示 token 用量分布 /stats 启动本地 Web 仪表盘 https://t](1782349153021_dfmv2lvj.md) · D
+- 2026-06-25 [Daniel San: Claude Code subagents can nest 5 levels deep now @bcherny announced it, and toda…](1782349141428_3rx0y1i8.md) · C
+- 2026-06-25 [Mr Panda: 研究了几个比较成功的独立开发者，没有融资，全靠自己的开发的项目获得收入，全靠市场的反馈给结果](1782349140742_idv8vlkv.md) · C
+- 2026-06-25 [Barret李靖: LLM 每一轮迭代，都会让一批创业者丢掉生意](1782349122593_eqznbowh.md) · C
+- 2026-06-25 [Movez: Andrew Ng: "100% of my tasks are now done by AI agents - hype has exceeded my ex…](1782349107494_jfpt4pfp.md) · D
+- 2026-06-25 [钟二信: Cowart：Codex + 无限画布工具插件开源，大家可以来试试啦，这个插件先取名叫 Cowart，别问为什么叫这个，我只能说 Code with Art 这…](1782349100967_noxku5sc.md) · C
+- 2026-06-25 [\(1\) Gokul Rajaram: What better interview to summarize today, other than @kunalb11's classic intervi…](1782348772573_tyegraow.md) · A
+- 2026-06-25 [\(1\) David Perell: Highlights from the Michael Pollan interview: 1\) The real thrill of writing isn'…](1782348767003_ck3srtkl.md) · B
+- 2026-06-25 [\(1\) Mario Gabriele: "A modelless company is sitting on shifting sand](1782348757687_sjhln5rf.md) · D
+- 2026-06-25 [世界构建之门再次敞开。](1782348741706_4yrmc5cm.md) · C
+- 2026-06-25 [Nityesh: Dynamic workflows might be the most underrated thing Anthropic shipped this year](1782348736562_lxjulw1j.md) · B
+- 2026-06-25 [Matt Pocock: Take a look at your favourite skill](1782348715465_ouj2b9ir.md) · B
+- 2026-06-25 [Harrison Chase: One thing we’ve seen pretty consistently: shipping the first version is only a s…](1782348706041_fhac9es4.md) · B
+- 2026-06-25 [Harrison Chase: 🧠Self-Harness: Harnesses that improve themselves New paper on agents shaping th…](1782348696328_gkon9asw.md) · B
+- 2026-06-25 [Machina: here's the exact setup i'm running to manage 3 agent harnesses at once and ship …](1782348687872_dz23vaah.md) · C
+- 2026-06-25 [Lenny Rachitsky: The biggest upheaval to work in our lifetime is here](1782348686292_1hdkan11.md) · D
+- 2026-06-25 [Robinson · 鲁棒逊: 我有一个类似下图的，3D立体中国地形图 第一次看到时，几乎在一瞬间， 我脑海中关于这几千年历史走向的许多疑问， 在无声中就有了答案](1782348682132_4zu00f4f.md) · D
+- 2026-06-25 [Sydney Runkle: self-harness: harnesses that improve themselves spoiler alert, it's all loop eng…](1782348669754_45pbui3e.md) · C
+- 2026-06-25 [Chris: this Hermes agent finds business owners asking for help on Facebook and builds e…](1782348656530_a9nfyn1y.md) · D
+- 2026-06-25 [宝玉: Google Workspace CLI 这项目当时我还转发过，没想到几个月过去，作者 Justin Poehnelt 因为这个项目被开除了](1782348641192_i390hirx.md) · B
+- 2026-06-25 [自媒体创作的本质是经营一家内容创作公司](1782348634532_7z5bom0y.md) · C
+- 2026-06-25 [corbin: really is just building systems](1782348628672_ialzjepl.md) · D
+- 2026-06-25 [Tim Ferriss: Since nearly all the rules are made up anyway, during my podcast sabbatical I as…](1782348614144_tfoujlzp.md) · C
+- 2026-06-25 [李老师不是你老师: 青年失业率真的下降了吗](1782348611655_117cdc6g.md) · E
+- 2026-06-25 [动物园园长: 不怕各位笑话，我快四十岁了，才知道什么是纳指、定投这些东西](1782348603171_apltf8eo.md) · E
+- 2026-06-25 [Robinson · 鲁棒逊: 不要用贪婪去对抗概率 赌博最常见的认知错误, 是把它理解成 一个我可能赢可能输的随机游戏](1782348592089_4hf8bq68.md) · D
+- 2026-06-25 [Rainier: 我觉得中美可能会慢慢回过神来： 中美赛跑，韩台吃饱](1782348571874_h0akuhci.md) · C
+- 2026-06-25 [RobinSeun\_维京黑船: 嚯这个回答也震惊到我了，真的，如果中国有一半人能意识到这个问题，那很多事情都会朝着好的方向挪一挪的](1782348567875_cie4pb1g.md) · C
+- 2026-06-25 [Teortaxes▶️ \(DeepSeek 推特🐋铁粉 2023 – ∞\): &amp;gt; this would be very easy for architectural experiments; one could just copy …](1782348566987_io4jxijo.md) · E
+- 2026-06-25 [失业养猫中: 呃，这个回答震惊到我了： 更早的都不提了，就只说中国加入WTO即“入世”之后，“拿下”多少产业链了](1782348561522_x270gr04.md) · C
+- 2026-06-25 [Joey-me: @wildwall1984 不论是墙内外，很少有人说中美之间的矛盾，是根本性的，而非简单的民主自由](1782348559874_irk82esq.md) · D
+- 2026-06-18 [Susan STEM: 1981年南方的很多工厂厂长就已经听到“信息”了，陆续有派人去香港考察](1781783280472_3xv9des1.md) · D
+- 2026-06-18 [X](1781783270808_lpet3jjb.md) · E
+- 2026-06-18 [X](1781783264687_jhtl72sn.md) · D
+- 2026-06-18 [X](1781783263419_3ery2w37.md) · E
+- 2026-06-18 [Matt Pocock: Folks say that the stuff you learn from the /teach skill doesn't stick](1781783255593_apjz9wxq.md) · D
+- 2026-06-18 [刚开源就 SOTA，这个项目有点东西：SAG 凭什么跑赢 GraphRAG，省钱，还扛得住海量企业数据？](1781783126306_jj2vmp5i.md) · A
+- 2026-06-18 [具身智能因果路线判断](1781783106752_7yhym0he.md) · C
+- 2026-06-18 [中文播客简短推荐清单](1781783103140_bknk257i.md) · E
+- 2026-06-18 [WisMe知识图谱功能更新](1781783102018_kqrbfsm5.md) · D
+- 2026-06-18 [AI端到端开发验收案例](1781783090943_b8k4dm0o.md) · D
+- 2026-06-18 [yibie/awesome-autoresearch: awesome autoresearch list](1781783088111_7xl1m4m4.md) · B
+- 2026-06-18 [自我改进循环：Kimi K2.6 上的 300 智能体群体，经 Opus 4.8 验证](1781783083258_rmx91wb0.md) · B
+- 2026-06-18 [Agent技能自进化双层循环](1781783080790_1ns95t1v.md) · A
+- 2026-06-18 [Agent基础设施宣传短帖](1781783072907_0zz5ewes.md) · E
+- 2026-06-18 [Agentic Coding技能流程概览](1781783064500_oeffizf2.md) · B
+- 2026-06-18 [Tokei工具版本更新公告](1781783056945_5ak49m62.md) · D
+- 2026-06-18 [Hermes代理工作流避坑](1781783055344_jpv6g7lf.md) · C
+- 2026-06-18 [AI写作玩具化的个人感受](1781783047387_g6knzksf.md) · D
+- 2026-06-18 [山姆中国管理层更迭争议](1781783043217_yh2qk0bw.md) · D
+- 2026-06-18 [代理式搜索工具选择](1781783038563_upjg4ecq.md) · D
+- 2026-06-18 [五月宏观数据疲弱解读](1781783037191_ygcv5dk2.md) · C
+- 2026-06-18 [中阿贫困标准差异辨析](1781783026578_6c8emt5b.md) · D
+- 2026-06-18 [Claude Code实用更新速览](1781783021375_emxood1m.md) · B
+- 2026-06-18 [四大审计衰落原因简述](1781783015362_au2ool79.md) · E
+- 2026-06-18 [AI时代知识转影响力](1781783013188_hshvgzrh.md) · C
+- 2026-06-18 [外卖骑手就业出口争议](1781783012538_u1k2ryvu.md) · E
+- 2026-06-18 [Cerebras早期投资复盘](1781783003716_hozpkx5j.md) · B
+- 2026-06-18 [你选择什么样的基础架构，最终就会成长为什么样的公司](1781782995784_y9cryarp.md) · C
+- 2026-06-18 [DietrichGebert/ponytail: Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.](1781782994405_80vy07ii.md) · A
+- 2026-06-18 [AI编码时代的代码审查](1781782994094_bhascmlw.md) · B
+- 2026-06-18 [知识付费破千万的消费化路径](1781782987122_pus7mnu3.md) · C
+- 2026-06-18 [技能调用层级的规范缺口](1781782968205_swyctxuw.md) · C
+- 2026-06-18 [Fastclaw免代码Agent运行时推荐](1781782965158_k6yd6mn1.md) · D
+- 2026-06-18 [姚金刚: 写了一个解读Skill的Skill，已开源到GitHub 解读skill的原始设计方案也同步做了上传 这是一个面向 Agent Skills 生态的质量解读、学…](1781782964277_77q8o5ms.md) · B
+- 2026-06-18 [草根烧鸭UP主的创作天赋](1781782963179_f3hjjs9f.md) · D
+- 2026-06-18 [skills/skills at main · mattpocock/skills](1781782957480_hbqejhpc.md) · E
+- 2026-06-17 [钱没消失，是不动了——社零三年多来首次负增长，和一个普通人的钝刀子观察](1781692135074_ltte68y4.md) · C
+- 2026-06-17 [Han1: 最近做了一条开发 pipeline，想分享一下背后的想法](1781692131896_cjcyue3b.md) · B
+- 2026-06-17 [9YearFish: 前几天跟同学一起吃个饭，都在吐槽，现在很难做了， 一个同学是程序员，他说不知道哪天就被裁了](1781692128770_uzn3pj7p.md) · B
+- 2026-06-17 [王海滨的财经闲谈: 我提醒一下国内的各位老板，尤其是那些大佬们](1781692124839_s1m4cye7.md) · D
+- 2026-06-17 [jerrymice on X: "我老娘去抚仙湖玩了三天，住包吃包住的农家乐。农家乐里有个苏州来的老太太，已经住了三个月，不想回去，打算住到十月以后再回去。农家乐一天八十，包吃包住，算下来比养老院划算，还待在风景区。这么看确实很爽。" / X](1781691058112_nqu25c0k.md)
+- 2026-06-17 [Robinson · 鲁棒逊: 为什么推荐在经济发达的地方生活](1781690953066_s0pwxp8k.md) · D
+- 2026-06-17 [Impeccable：给 AI 编码工具补上的设计技能](1781685226952_5s3ctyfi.md)
+- 2026-06-17 [轻量编程代理架构解读](1781671240702_7nbx3c0y.md) · A
+- 2026-06-17 [DeepSeek-Reasonix/docs/SPEC.md at main-v2 · esengine/DeepSeek-Reasonix](1781671076028_05sgknzh.md) · A
+- 2026-06-17 [Agent接管GitHub协作](1781664344484_b2kajpxw.md) · D
+- 2026-06-17 [DeepSeek-Reasonix/README.zh-CN.md at main-v2 · esengine/DeepSeek-Reasonix](1781662824417_fz0thelu.md) · B
+- 2026-06-17 [Codex三种电脑操控方式](1781661100396_purkkfts.md) · B
+- 2026-06-17 [可视化AI编码计划技能](1781661090656_5kxym90r.md) · B
+- 2026-06-17 [Maka学习Agent运行时工程](1781661079309_njwr316z.md) · B
+- 2026-06-17 [WorkBuddy技能库用法](1781661071838_95b1znss.md) · C
+- 2026-06-17 [惠州退休生活价值判断](1781661060290_155o1t1d.md) · D
+- 2026-06-17 [AI技能中的引导词技巧](1781661054383_s08iy1q8.md) · B
+- 2026-06-17 [微信多角色Agent产品分享](1781661041363_uqk91bv8.md) · D
+- 2026-06-17 [财富心态与自由目标反思](1781661034668_0k7zz9nq.md) · D
+- 2026-06-17 [生育压力的经济根源观察](1781661021072_b92pg2rx.md) · D
+- 2026-06-17 [隐形赛道的创业机会](1781661018265_553ez333.md) · D
+- 2026-06-17 [微软Copilot转向用量计费](1781661000979_zdivqyvs.md) · D
+- 2026-06-17 [豆包收入与交易额传闻](1781661000083_w2cqylui.md) · D
+- 2026-06-17 [用户未必在意AI垃圾感](1781660984614_d7u4g1kc.md) · E
+- 2026-06-17 [RobinSeun\_维京黑船: 记得有一次在中关村吃饭，有个搞投资的朋友拉了大楼物业来一起吃](1781660979387_7hd1x4br.md) · C
+- 2026-06-17 [Seedance盈利结构解析](1781660961909_w4bg5oah.md) · B
+- 2026-06-17 [AI时代API迭代命名启示](1781660960575_mb4mdc10.md) · C
+- 2026-06-17 [AI私信销售代理简介](1781660943988_zlp03boh.md) · D
+- 2026-06-17 [Impeccable3.7设计检查](1781660940000_52bvxxyr.md) · C
+- 2026-06-17 [私有化AI助理趋势短评](1781660925021_3zlh0bc0.md) · D
+- 2026-06-17 [AI教学魔方的短证据](1781660924986_gyoscvj9.md) · E
+- 2026-06-17 [ENPIRE自动机器人实验系统](1781660904894_bezxwu4t.md) · B
+- 2026-06-17 [Factory AI访谈要点速览](1781660903735_pfpx8r9w.md) · C
+- 2026-06-17 [用脚本与Agent提升编码效率](1781660886140_gk3lnmk5.md) · B
+- 2026-06-17 [Hermes 分析师 10 倍更好](1781660882832_d159xslo.md) · C
+- 2026-06-17 [Moshi移动多窗格快捷导航](1781660870789_r818jtin.md) · E
+- 2026-06-17 [AI经济后果听单推荐](1781660865028_34vlcrrp.md) · D
+- 2026-06-17 [如何在2026年赢得分销](1781660846985_sr3g5lvr.md) · B
+- 2026-06-17 [Mechanical Watch – Bartosz Ciechanowski](1781660841139_76wu437m.md) · A
+- 2026-06-17 [Claude工具切换短评](1781660827972_qkd42cev.md) · E
+- 2026-06-17 [电影超脱的一句话观感](1781660821671_24gbjy2h.md) · E
+- 2026-06-17 [OCR应作为AI入口服务](1781660807970_x2e6ez3t.md) · C
+- 2026-06-17 [如何为你的技能构建一个自我提升循环](1781660799417_agyddcja.md) · B
+- 2026-06-17 [八十年代工厂现代化冲击](1781660788860_n42638z4.md) · E
+- 2026-06-17 [中国出口依赖与移民劝告](1781660782949_110m9qp2.md) · D
+- 2026-06-17 [玉伯推特涨粉四万心得](1781660766487_18vbtimv.md) · D
+- 2026-06-17 [循环工程的艺术](1781660764928_nqjnuf37.md) · A
+- 2026-06-17 [全栈AI工程学习路线图](1781660742185_tjq8g3c6.md) · C
+- 2026-06-17 [上下文是一种投影](1781660740826_tmagocqt.md) · B
+- 2026-06-17 [原型从步骤变成设计媒介](1781660718026_651uwvtf.md) · D
+- 2026-06-17 [xjdr: Ok i did it](1781660718022_1xxk1jq8.md) · D
+- 2026-06-16 [Feiteng: 最近推特上反复刷屏的 loop / loop engineering，出处就是 5 月 4 日这场访谈——Anthropic 的 Claude Code 创造者…](1781602579756_x8fntwt7.md) · B
+- 2026-06-16 [王海滨的财经闲谈: 坐车约到过几个司机都是断供的，说银行都是电话来好声好气的商量](1781602571139_31j5iqtf.md) · E
+- 2026-06-16 [中国政经事实ChinaFacts: 5月经济数据延续外需支撑经济、内需拖累经济的趋势](1781602549398_8ld3ubb8.md) · D
+- 2026-06-16 [Yuu💖 on X: "多 agent 能奏效的本质是模型路由和上下文隔离 模型路由的意思就是，让每种模型去做他自己擅长的事情，opus 天生对前端品味好，那就让它去写前端，gpt 对后端逻辑要求更严谨，那就让他审其他模型写的代码逻辑 上下文隔离则是，每个模型负责的范围很小，所以不容易注意力漂移 这里我要讲一个例子，在写" / X](1781602536981_613x14ll.md) · B
+- 2026-06-16 [Yuu💖 on X: "多 agent 能奏效的本质是模型路由和上下文隔离 模型路由的意思就是，让每种模型去做他自己擅长的事情，opus 天生对前端品味好，那就让它去写前端，gpt 对后端逻辑要求更严谨，那就让他审其他模型写的代码逻辑 上下文隔离则是，每个模型负责的范围很小，所以不容易注意力漂移 这里我要讲一个例子，在写" / X](1781602536980_fenakksd.md)
+- 2026-06-16 [怎么烧 token 系列？（1）用 Dynamic Workflow让 100+agent 并行工作](1781599401245_6lsoik2p.md) · C
+- 2026-06-16 [Mitchell Hashimoto: My heuristic is that any diff an agent generates over \~1500 lines is too big and…](1781599399539_8v95bjig.md) · A
+- 2026-06-16 [Versun: 国产模型能用了，但我还不敢用 前段时间，我的 GPT 账户意外被封，被迫开始全面试用国产模型 过去两周，我深度使用了 DeepSeek v4 Pro、Xiaom…](1781599372215_i6tfm5rq.md) · B
+- 2026-06-16 [凡人小北: 未来已经发生了： 一条 GitHub issue，从发现 bug 到修复 merge，全程是 Agent 在对接](1781599365416_vbqq7t07.md) · D
+- 2026-06-16 [姚金刚: 看了下OpenAI的广告后台，非常简单 但感觉要做好这个投放，难度也不小 研究了下官方文档，几点感触： 1、ChatGPT Ads的本质不是“买关键词”，广告很…](1781599339006_pe28erqn.md) · C
+- 2026-06-16 [AI软件工厂愿景宣言](1781599339004_yw2qb2q8.md) · C
+- 2026-06-16 [Matt Pocock: Initial thoughts here is that you often need to plan in multiple phases, often i…](1781599309932_foara8f5.md) · C
+- 2026-06-16 [LinearUncle: 分享一个我每天使用codex app + codex自带的@chrome插件全自动阅读X（推特）内容，自动帮我总结，我设置成了codex的1小时定时任务](1781599301549_d47em4vz.md) · B
+- 2026-06-16 [Yuu💖: 正式发布 obelisk v0](1781599287058_muusvdm2.md) · C
+- 2026-06-16 [代理式代码审查](1781599255331_vgjm8uon.md) · A
+- 2026-06-16 [Vox: sharing a goal prompt template i use for everything](1781599222648_v02f9zi6.md) · B
+- 2026-06-16 [程序员和软件还有前途吗？从 NocoBase 收入再翻倍谈起](1781599218828_fvobeh3g.md) · B
+- 2026-06-16 [Xiaowen: 很有感触，作为 NocoBase 的小客户，也作为在 AI，技术，商业前线思考的个体，很有感触](1781599196736_72asbfml.md) · C
+- 2026-06-16 [我们如何让编码代理的花费可预测](1781599182424_89twrcr6.md) · B
+- 2026-06-16 [seekinganythingbutalpha: 我觉得大部分经常跟AI打交道的人，对这两个问题都有基本的共识： 1](1781599172496_mryect04.md) · C
+- 2026-06-16 [失业养猫中: @yangshuibao 乐，这条深有同感](1781599145550_8en4j3o8.md) · C
+- 2026-06-16 [Reddit 从 0 到 1 小白完整教程](1781599134667_ogfsu8qt.md) · B
+- 2026-06-16 [How to Earn a Billion Dollars](1781599119335_mca8iepy.md) · A
+- 2026-06-16 [最高效提升英语词汇量的方法](1781599097318_k0m1s778.md) · B
+- 2026-06-16 [用 Fireworks 构建一个便宜 100 倍的跟踪判断器](1781599078158_pcih0ilm.md) · A
+- 2026-06-16 [Rohit: langchain and fireworks just shipped the eval move worth stealing: a fine-tuned …](1781599067272_w06wfubt.md) · B
+- 2026-06-16 [@levelsio: You don't realize how scary not having any economic growth is until you realize …](1781599040742_tcepbbyx.md) · D
+- 2026-06-16 [jack friks: me watching my monthly recurring revenue double overnight as 1000 new people sig…](1781599038082_3ndrxh5f.md) · D
+- 2026-06-15 [费孝通生育制度观点摘录](1781521385882_jk4zmd1e.md) · D
+- 2026-06-15 [Leva: 毛与黄炎培有个“窑洞对”，讨论了周期律 其兴也勃焉，其亡也忽焉 中国这次大通缩+人口萎缩，人口结构逐渐恶化，就不是“忽焉”了，而是“凌迟”，几十年内慢慢消耗中国…](1781521111753_3lk99xjh.md) · D
+- 2026-06-15 [与钉钉新 CEO 陈宇森的两次访谈：未来的软件和 Agent 推演](1781521103389_98nee8vi.md) · A
+- 2026-06-15 [Feiteng: 创始人兼 CEO Ahmad Awais\(27 年编程、300+ 开源项目\) 在 Latent Space 的访谈: 他的核心论断：开源模型在编程上「不行」，多…](1781521097814_e0xgxfr0.md) · B
+- 2026-06-15 [Tz: 我终于找到 codex + claude code 联合开发的最佳实践了： 1](1781521094213_2bowc28c.md) · C
+- 2026-06-15 [Jesse Lau 遁一子: 这个prompt是我手中最强LLM面试官了 one shot皇后镇景色特点tree](1781521079970_qdmor4xf.md) · D
+- 2026-06-15 [Meathill: 我的 CC 每周六 3am 固定刷新额度](1781521076153_9wkedxxu.md) · D
+- 2026-06-15 [cocktail peanut: Turn natural language prompt to Ideogram bbox prompt](1781521068078_ocryu75j.md) · C
+- 2026-06-15 [Alex\_感知: 今天看到财新有一篇对话携程总裁梁建章的文章，讨论人口规模的重要性](1781521057195_xl84ent9.md) · D
+- 2026-06-15 [yetone: 「每天早例会 9 点开始，要打开 AI 听记录音，员工要聚在各自业务的进度表大白板前拍照，AI 数人头、按声纹判断几人参会](1781521044737_voq43soj.md) · E
+- 2026-06-15 [AI个性化编程教学体验](1781521035056_ebfz23z9.md) · B
+- 2026-06-15 [自建代理框架资源发布](1781521033323_wapjlb41.md) · D
+- 2026-06-15 [AI会话浏览器开发进展](1781521024108_cp19tmq9.md) · E
+- 2026-06-15 [AI原生小团队趋势判断](1781521023045_asb26dka.md) · C
+- 2026-06-15 [失效推文页面无有效内容](1781521016449_ti4frp37.md) · E
+- 2026-06-15 [工具是契约，而非功能](1781521011102_bvs6bhlp.md) · B
+- 2026-06-15 [生成式UI演进六维对比](1781521009462_zqn1avjf.md) · C
+- 2026-06-15 [Claude订阅套利与成本杠杆](1781520986092_0g4r1k1w.md) · C
+- 2026-06-15 [九原客: GPT 5.5 还是那么热爱偷懒 注：以下文字由 Typeless 整理。 背景是这样的：我有一个本地 50B 预训练和 SFT 数据处理的任务，其中最关键的有…](1781520973306_q16agk7e.md) · C
+- 2026-06-15 [Codex循环维护代码库](1781520972315_ci4ntf85.md) · B
+- 2026-06-15 [nazha: \#分享 相比于 Loop， 还有一个词 “backpressure” 所传递的概念更为准确](1781520959725_ghu19jed.md) · B
+- 2026-06-15 [射箭类比交易系统纪律](1781520958998_f3zvt6nq.md) · C
+- 2026-06-15 [郭宇 guoyu.eth: 这相当于用 Airpods 之间配对组成对讲机](1781520951221_tdq3quvh.md) · D
+- 2026-06-15 [Headroom压缩工具走红](1781520948501_ncudj15c.md) · D
+- 2026-06-15 [Vox: steipete open sourced his two codex loop skills: → maintainer-orchestrator: wake…](1781520941216_101is048.md) · C
+- 2026-06-15 [X](1781520939243_cs7tmhfu.md) · E
+- 2026-06-15 [X](1781520924790_zrbiiedb.md) · C
+- 2026-06-15 [徒步的骑手: 《悲剧世界》是本人生教科书，但雨果对马吕斯还是笔下留情了](1781520922030_94kat3i6.md) · D
+- 2026-06-15 [sukie: 太抽象了 但以我对湾区性压抑的了解 感觉这篇文章yy的程度比较高 90%的人都在aa房租 因为交完一个月房租paycheck就没了 没有aa饭钱已经是大方男人了…](1781520912653_qckp8pw1.md) · E
+- 2026-06-15 [qiyan \| Crypto: 还在手动画架构图](1781520910436_dr4nypei.md) · C
+- 2026-06-15 [Synara编程GUI简短介绍](1781520903459_ftqk09yw.md) · D
+- 2026-06-15 [赵纯想: laper是2026最新财富密码——我实测的结果，数据说话：这两条视频，仅仅是我开发期间试水的作业](1781520902562_f3b0yswe.md) · E
+- 2026-06-15 [边缘AI代理视频转发](1781520900426_nfgwdzck.md) · E
+- 2026-06-15 [徒步的骑手: 前几年，美国大使馆的微博贴过一篇有关明恩溥的文章](1781520895898_1ulpw4ud.md) · E
+- 2026-06-15 [X](1781520891407_hpiww0pg.md) · E
+- 2026-06-15 [STRRL.gpt: 这也是我最近准备离职不做 SRE 而是去更小的公司去做全干工程师的原因之一 我需要紧贴现在的实践, 如果把自己的 title 仅仅放到一个具体的岗位, 比如说“…](1781520356287_eal0mhwj.md) · D
+- 2026-06-15 [徒步的骑手: 随年纪增长，越来越觉得年轻时混迹中国基层社会的二十多年是人生的宝贵财富](1781520354280_mgkpypnd.md) · C
+- 2026-06-15 [Baibanbao 白板报: 对终极真实的渴求 那天跟杭州来的一位老朋友聊起为什么越来越喜欢去看古建筑、去看有交响乐团伴奏的芭蕾舞](1781520090725_1vqychuc.md) · C
+- 2026-06-15 [Rainier: 其实并不矛盾](1781520074198_zn9vudgp.md) · D
+- 2026-06-15 [Yuu💖: Mimo Code 基于 OpenCode 开发，实现了不错的 session history 检索 和 Obelisk 一样，它采用 SQLite 的 FTS…](1781520072588_u9a0xdb3.md) · B
+- 2026-06-15 [Jerry Liu: Up until yesterday, our entire MTS team has operated under the philosophy of tok…](1781520070241_k3epxf0l.md) · C
+- 2026-06-15 [姚金刚: 这个总结质量好高，推荐反复看👍 PPT里的一些核心洞察： 1、前一万follows达成的关键，准备一份超预期的干货，优质内容会被KOL转发，坚持高质量分享，主…](1781520063180_oyawwe9y.md) · C
+- 2026-06-15 [idoubi: 聊聊 Agent-Native 开发框架应该怎么设计👇 在谈 Agent-Native 之前，我们应该很熟悉 Cloud-Native 、AI-Native …](1781520058665_7um3zswf.md) · C
+- 2026-06-15 [阑夕: 昨天阿里关于钉钉管理文化的锐评通稿刚发出来，群里一些老阿里人就闻到味儿了，断言这是不准备保无招了](1781520056726_smlugpc1.md) · C
+- 2026-06-15 [范凯说 AI \| Kai on AI: 一个做旅游的老板，以前完全没碰过量化交易](1781520047660_q6ajmo9r.md) · D
+- 2026-06-15 [宝玉: 这段视频展示了一个极其前沿且硬核的视频制作方式：视频完全没有使用传统的非编软件（如 Premiere 或 Final Cut），而是由 Claude Code …](1781520039054_m56akic6.md) · B
+- 2026-06-15 [包叔: token新一轮价格战马上开始](1781520038229_dxrk0gjw.md) · C
+- 2026-06-15 [泊舟: 我来开源了，我实测了一下，效果非常不错，昨晚发的抖音图文，我的一个一百粉丝的号，不到十二小时已经二百多赞，一万多播放了 抖音和小红书刚开始做，顺便求个关注，哈哈…](1781520027937_kdan0m0z.md) · C
+- 2026-06-15 [2026高考志愿怎么报？宏观经济告诉你答案！-AI帮你淘汰掉的专业 （3/7）](1781520022025_f4vvsl91.md) · D
+- 2026-06-15 [Han Xiao: Even training itself is not “Untrainable”](1781520017564_x29i9i7c.md) · C
+- 2026-06-15 [Rose\_圈圈: X上的友友们好，这期视频整理了 8 个 Codex 的高频使用场景，都是简单、易上手，而且普通人也能马上用起来的用法](1781520005786_xbeojz8e.md) · D
+- 2026-06-15 [i5ting: 苏大问了我一个问题，工程调用基本都被大模型内置了，为啥还需要一个agent package](1781520003838_ayjh4x9n.md) · C
+- 2026-06-15 [实践哥MinLi: context 有5种handoff 方法： 1](1781519993244_mf1umgbd.md) · C
+- 2026-06-15 [Pangyu 胖鱼 🐠: 买任何东西尽量买大品牌，这是我在国内的第一条生存法则](1781519978467_4vpy2wbb.md) · D
+- 2026-06-15 [Leo｜一个人 + AI: 之前骂 Claude 变笨，当时还没完全搞懂](1781519965372_edgeowrc.md) · A
+- 2026-06-15 [dontbesilent: 你不愿意做的那个事情，就是更难的事情 我大学毕业第一份工作试用期还没过，我就去跟 HR 提了辞职 原因是我从小到大从各个方面所接受的教育都是要让我珍惜时间，珍惜…](1781519958524_k19iud0m.md) · D
+- 2026-06-15 [BadUncle: 我不懂开源，我让opus帮我做了一个评价，并结合deepseek作为案例分析 ------ 总结不太对,有几处是硬伤](1781519957221_o3ieexd1.md) · A
+- 2026-06-15 [包叔: 这个Q2可能是史上最大科技企业裁员季](1781519951826_ucvepx3b.md) · D
+- 2026-06-15 [CJ Zafir: I'm burning 50% less weekly Claude Code limits now](1781519948896_5s6que2i.md) · B
+- 2026-06-15 [/目标 + 损失函数：如何在30小时内用一个提示词提炼产品 \[完整指南\]](1781519942501_g54n84z9.md) · A
+- 2026-06-15 [熊布朗: “BM25腿在这个题集上是负贡献（hybrid反而低于纯向量）一一但要诚实：题集是我刻意全用语义改写造的（BM25 最坏情况）， keyword/条款号类题代表…](1781519937024_a8pc6ypo.md) · C
+- 2026-06-15 [Caspian 東澔: 多数 GUI 的 Coding Agent, 几乎全是 Mac-only，对Windows开发者来说不太友好](1781519936730_qnmm8igw.md) · D
+- 2026-06-15 [周尔复: 其实公司普遍提供 token 使用也就最近一年以内的事情，应该是 Claude Code 出来后几个月](1781519928556_t1d9guqu.md) · E
+- 2026-06-15 [歸藏\(guizang.ai\): 万字长文：做了些爆款 Skills 以后，我对 Skills 的看法 最近做了几个传播还不错的 Skills后，我对 Skills 的理解也有些变化](1781519925930_sdrnfcyn.md) · C
+- 2026-06-15 [我们如何使用 LangChain 赋能 Lumi，我们面向 180,000+ 商家的电商助手](1781519915279_wjw5ba4x.md) · A
+- 2026-06-15 [BadUncle: 同意这一点，便宜的模型➕对抗性审查，可能是未来大多数人的选择 不过有一个过渡阶段: 一开始是cc ➕ codex对抗 然后是cc➕ ds或 codex➕ds 随…](1781519914580_49q4ysdh.md) · C
+- 2026-06-15 [AI奶爸: 最近同时开多个Agent项目，发现一个挺烦的事： Codex里聊了一半的需求，切换到Claude Code继续写，它完全不记得刚才说过啥](1781519907948_q8wx3uhg.md) · B
+- 2026-06-15 [闵祖涛: 各种专用芯片，没法构建软件生态，只能靠规模优势降低成本最后商品化，没有任何护城河](1781519892929_1oxinslo.md) · C
+- 2026-06-15 [Inside Anthropic, the $965 Billion AI Juggernaut \| The Circuit - YouTube](1781519594390_953ey0ep.md) · B
+- 2026-06-15 [yibie: \# Stripe Minions 第二部分：底层是怎么搭建的 本文是 Stripe 编码 Agent 系列的第二篇](1781517728122_p7xzj6rk.md) · A
+- 2026-06-15 [从 Prompt 到 loop：AI 工程正在走向 Runtime](1781517723967_9ql91xio.md) · B
+- 2026-06-15 [宝玉: 为啥 Codex 还不推出类似 Codex Design 的产品](1781517722102_1hm0chw2.md) · B
+- 2026-06-15 [宝玉: 我在做 baoyu-skills 时，做了一个尝试，就是用了一个 EXTEND](1781517698634_ai83v6m1.md) · C
+- 2026-06-15 [宝玉: 微软 CEO Satya Nadella 发了一篇长文，提出了一个新概念：Token 资本](1781517692792_gnn87cqo.md) · A
+- 2026-06-15 [Jeffrey.W: Github 本身在成为一个 A2A 平台](1781517690536_2ohb4l2o.md) · C
+- 2026-06-15 [Leo｜一个人 + AI: 今天把 DeAI 的资产地图重新补了一遍](1781517689201_baejg50p.md) · C
+- 2026-06-15 [宝玉: 首先这个 Skill 很好，另外提供一个额外选择： 可以试试用 Claude Design 生成一份简历试试，也许你会喜欢](1781517680449_bc2ya3xl.md) · D
+- 2026-06-15 [caoz: 我觉得国人很大的一个问题是，缺乏生活追求，当然也许他们的生活追求在我理解之外](1781517677389_syo9tk7l.md) · D
+- 2026-06-15 [Phoenix Yin: 现在的趋势，就是 Agent Swarm](1781517672553_8bq0zkyl.md) · C
+- 2026-06-15 [idoubi: 有意思 你把 CCOnline 的技术架构都拆解完了 我还发啥😂 请求链路大差不差，核心要解决的问题还是存算分离 把 cf sandbox 作为临时使用的容器…](1781517670912_43vw4f1p.md) · C
+- 2026-06-15 [BITWU.ETH 🔆: 说下李笑来的新书《The Half Second》 终于看完了](1781517665849_lbjknnm7.md) · B
+- 2026-06-15 [meng shao: 想起前前公司创业的惨痛经历，就是从引入了阿里等平台的三位「高管」开始的](1781517657734_pna6osbj.md) · C
+- 2026-06-15 [Ryo: 一个默默发财的中国人，写了一个Notion Pad 乐谱的APP，听说这个累计有200 万刀的收入，这 APP 就是一个写乐谱，编辑乐谱，播放乐谱，导出乐谱](1781517650821_nse16hqx.md) · D
+- 2026-06-15 [Leva: 不要盯着中国房地产👇🏾它已经死透了](1781517644775_3qwb3mh6.md) · D
+- 2026-06-15 [LinearUncle: Claude Code 不能生图，但 Codex 可以，这点一直挺遗憾的](1781517641647_38skv1bi.md) · C
+- 2026-06-15 [Xudong Han: 斯坦福这篇最新论文让我重新想了一个在多 Agent 系统设计里很少被认真质疑过的假设：一定要有一个「总管 Agent」来协调其他 Agent 的工作吗](1781517636244_168r6hi5.md) · B
+- 2026-06-15 [Robinson · 鲁棒逊: 我才意识到，勇哥说餐饮，本质上是房地产时代破灭后留下的一道刻痕](1781517634113_st9doz8k.md) · D
+- 2026-06-15 [idoubi: 用 ShipAny TanStack 写了个 CCOnline，主打在线 vibe coding，内置模型，开箱即用，cc 终端跑在 sandbox，零依赖起手…](1781517625185_08bgvi44.md) · E
+- 2026-06-15 [Jason Zhou: This skill actually De-slop my AI content for real Before: "Here's the thing: bu…](1781517618565_8ozhdt3x.md) · C
+- 2026-06-15 [shadcn: In light of what happened, I'm doubling down on skills like /improve](1781517609820_2afgbomd.md) · B
+- 2026-06-15 [LinearUncle: vibe coding 技巧：让 LLM 优先选用成熟库或框架，而不是从零裸写](1781517604421_ej3wd8vl.md) · B
+- 2026-06-15 [nexu-io/open-design: 🎨 Local-first, open-source Claude Design alternative. 🖥️ Native desktop app. ⚡ 259+ Skills · ✨ 142+ Design Systems 🖼️ Web · desktop · mobile prototypes · slides · images · vide…](1781517601091_w9qm5jeq.md) · B
+- 2026-06-15 [Tianyi Cui: 发现了一个对于 Harness 开发者似乎很有用的网站 https://t](1781517595151_8663rc4v.md) · C
+- 2026-06-15 [WquGuru: 我发现有了AI之后很多人忘记了文档整洁之道，包括Peter这种等级的大佬也难以免俗，明明一页纸能够讲清楚的业务、架构、痛点，偏偏满满写了5、6个页面，加上其他文…](1781517587247_5risf3g3.md) · C
+- 2026-06-15 [Agent 时代的软件接口 · BMPI](1781517576884_1q1d4zjj.md) · A
+- 2026-06-15 [宝玉: Lovable 的设计负责人 Felix Haas 在社交媒体上分享了一篇关于"AI 时代高效团队"的观察，七条经验总结，来自这家增长速度惊人的 AI 创业公司…](1781517570055_pu4ztmuz.md) · C
+- 2026-06-15 [AI少年: 实践哥这个神级的skill 迟早要被Claude Code官方开发出来的，就看时间了](1781517554627_l8teu6am.md) · C
+- 2026-06-15 [怎么在 AI 时代，超越你身边的大多数人？](1781517535199_pb3j61yg.md) · B
+- 2026-06-15 [yibie: \# 你不能对 AI Agent 小声说话：Stripe 用 12 个实验揭示的 Agent 行为规律 Stripe 的 Minions 系列我们已经翻过两篇了](1781517521640_5gz1hz65.md) · A
+- 2026-06-15 [极客杰尼: 我现在越来越觉得，连续性本身不是最重要的](1781517514790_wbz0bmmb.md) · C
+- 2026-06-15 [Tz: 想象一下，Claude Fable 5 这种怪物级别的大模型，在差不多12-18个月后，已经是人手一个，可以直接布署运行的本地离线“小”模型，到那时，世界会变成…](1781515983723_ed0gjl55.md) · E
+- 2026-06-15 [alchaincyf/fanbox: vibe coding 的驾驶舱：左边文件，右边/下边终端，中间看清每一次改动。 / The cockpit for vibe coding: browse files on the left, command agents on the right, watch every change in between.](1781515863540_u71pym89.md) · B
+- 2026-06-15 [宝玉: Codex 操作浏览器有两种模式，一种是 Chrome 插件，一种是内置浏览器](1781515751784_lo7n2ufg.md) · B
+- 2026-06-12 [第一次做出海 SEO，我用一个练手小游戏 30 天跑到 100 万 UV，290 万 PV](1781262983529_bzh0vvbl.md) · A
+- 2026-06-12 [面向智能体的企业基建重构](1781238936690_np9fqe76.md) · A
+- 2026-06-12 [宝玉: DeepSeek 招 Agent Harness 研究员，能是世界范围内第一次招聘“Harness研究员” https://t](1781238326505_w24eur69.md) · B
+- 2026-06-11 [Helio — the AI-native team workspace](1781171882446_q8ojg46e.md) · C
+- 2026-06-11 [How Cursor Trained Composer on Fireworks: Distributed Infrastructure for High-Performance RL - YouTube](1781171285673_eurxtu7m.md) · A
+- 2026-06-11 [歸藏\(guizang.ai\): 又发现一个 Codex 好用的点](1781171255992_raenib0m.md) · C
+- 2026-06-11 [ShipAny Next性能宣传](1781171249459_m4a61slm.md) · D
+- 2026-06-11 [Claude Code 动态工作流： 每个任务都可以有自己的 Harness【译】](1781171240616_hdkkn26l.md) · A
+- 2026-06-11 [Lessons from building Claude Code: How we use skills \| Claude](1781171230801_3o3yanay.md) · A
+- 2026-06-11 [飞书连接Codex工作流](1781171229382_t4zuwj5q.md) · B
+- 2026-06-11 [生成式UI前端趋势短评](1781171209135_xjygtoky.md) · D
+- 2026-06-11 [动态工作流用于智能体编排](1781171203958_vmyoitcq.md) · C
+- 2026-06-11 [多模型选择与使用策略](1781171187136_tpj3xryt.md) · B
+- 2026-06-11 [X](1781171186112_bcqgw9o9.md) · C
+- 2026-06-11 [Phoenix Yin: 认真读完了OpenAI 研究员 Noam Brown 今天的长帖，一个被行业严重低估的现实](1781169966602_n4yzsv3j.md) · B
+- 2026-06-11 [外汇交易员: 彭博：中国准备在未来五年内投入约2万亿元人民币（2950亿美元）在全国各地建设数据中心](1781169946479_osr26u2e.md) · C
+- 2026-06-11 [徒步的骑手: 现代教育基本上是量产工具人](1781169941919_4yevjn7b.md) · D
+- 2026-06-11 [逸尘: Codex现在已经在Agent产品里面独领风骚了](1781169921303_dxojvjog.md) · D
+- 2026-06-11 [管四: 最近有一个挺有意思，也挺让研发头疼的现象：AI 把做 Demo 的门槛打得太低了](1781169909264_62nvntsn.md) · B
+- 2026-06-11 [用 Fable 5 设计循环](1781169897791_6ja4hfrc.md) · A
+- 2026-06-11 [Yuu💖: 我有一个 claim 要说 不要觉得 spec 可以把 agent 的行为完全和你的意图对齐，从你开始写 spec 然后把代码交给 agent 写开始，偏离就已…](1781169888402_i8xbsaq3.md) · C
+- 2026-06-11 [Angie Jones: I know folks are side eyeing the loop discourse but this is exactly how I work n…](1781169885508_xkeadjl2.md) · C
+- 2026-06-11 [Satya Nadella on AI: @NoPriorsPodcast x Latent Space Crossover Special at Microsoft Build 2026 - YouTube](1781168224355_hw2uqk7v.md) · A
+- 2026-06-11 [/Last1Day of Fable 5：最佳实践和人们说的最有趣的事情](1781168212774_ujrjeivu.md) · B
+- 2026-06-11 [Max For AI: 前两天阿里又调了一次AI架构，很多人没看明白这代表着什么](1781168169461_kmig92kf.md) · B
+- 2026-06-11 [总结下我使用 Codex 的 8 个高频场景。](1781168164833_lekn1gg7.md) · B
+- 2026-06-11 [如何使用代理实现灾难恢复自动化](1781168162551_8hr9p8y1.md) · A
+- 2026-06-11 [nazha: \#分享 跑了 Fable 10 十几个小时\(中途限 limit 4 个小时导致什么活都干不了\)，跑了四个有意思的 Demo 1](1781168139876_033d06e7.md) · C
+- 2026-06-11 [一行代码没写，纯 Vibe Coding 重构 AITDK 官网，体感还不错](1781168124626_0e02uikh.md) · B
+- 2026-06-11 [智能时代的信息生存法则](1781167878701_k5uaa0cn.md) · D
+- 2026-06-11 [步步最优未必人生最优](1781159841321_1v4nac4l.md) · C
+- 2026-06-11 [旧读陷阱](1781152894530_uv7pu4m4.md) · A
+- 2026-06-11 [思维怪怪: 字节跳动旗下 AI 制药业务线已启动拆分与独立融资进程](1781152878177_l6whz3on.md) · C
+- 2026-06-11 [leeguooooo/chatgpt-imagegen: Use your ChatGPT subscription to generate images from the command line — no OPENAI\_API\_KEY, no gateway, no daemon. Zero-dep Python CLI + AI-agent skill.](1781152797376_qxr23136.md) · B
+- 2026-06-11 [Matt Pocock: Steps to become a senior programmer: 1](1781152704742_ihnnh7du.md) · C
+- 2026-06-11 [宝玉: 用好 Claude Design 的一些经验： 1](1781152349412_sl4idybd.md) · B
+- 2026-06-11 [AI接管Fable发布视频剪辑](1781151369537_02rkubfs.md) · C
+- 2026-06-11 [Jesse Lau 遁一子: Thariq分享了如何一个prompt搞定Fable的launch video 我把prompt导出来了： 英文： &amp;gt; I'm processing th…](1781151268267_tkorsnd8.md) · C
+- 2026-06-11 [Claude Fable Visual Glyph Prompt Pack - Google 文档](1781151206598_qkzzvlnr.md) · E
+- 2026-06-11 [AmirMušić: Arena shooter made with Claude Fable in 1 prompt the prompt + remix link👇 https…](1781150485922_n1tlxes0.md) · D
+- 2026-06-10 [klöss: Your edge hides in plain sight](1781064739357_vwew0lpr.md) · C
+- 2026-06-10 [CJ Zafir: I'm working on a new fine-tuned privacy model inside https://t](1781063170175_yigvscps.md) · C
+- 2026-06-10 [Charles在路上: 我越来越觉得，大部分人小看了记录的力量](1781060900218_8uc8qtj1.md) · C
+- 2026-06-10 [王海滨的财经闲谈: 看了一些交易者的聊天，思维简直惨不忍睹](1781060791518_dl8ujcpj.md) · D
+- 2026-06-10 [Abhijith Neil Abraham: Stop using Docker to sandbox AI agents](1781060152967_8ejwaqt7.md) · B
+- 2026-06-10 [Taelin: this is my personal singularity moment this post may sound like a paid ad](1781059789262_p51mbyvz.md) · C
+- 2026-06-10 [AI医疗语音代理落地实战](1781059732593_y52hl0my.md) · D
+- 2026-06-10 [烟花老师: 基于本地文件系统+git 仓库进行长时间运行 agent 的一种方式： 初始化这个 agent 的整体目标，任务列表/功能列表，然后在一个 Harness lo…](1781052427227_la7ebcag.md) · B
+- 2026-06-10 [Hwang: 给大家一些 /goal 的用例，防止 token 用不完 1/ 产品说明文档 基于当前 commit 的产品功能，运行真实 App / 模拟器 / 使用 CDP…](1781052426225_ff28993k.md) · B
+- 2026-06-10 [宝玉: baoyu-design skill 现在支持导入 Design System，以及在新建项目时添加导入的 Design System 比我想的要麻烦的多：ht…](1781052415570_5gy1snua.md) · D
+- 2026-06-09 [Tony Fadell: How to build real taste \(and why AI makes it matter more\) - YouTube](1781001130376_e8ooa488.md) · A
+- 2026-06-09 [mousepotato: \#1 付费看完了 Codex 团队的采访，说几个让我真正在意的细节](1781001075050_v667t8yj.md) · B
+- 2026-06-09 [陈成: Claude Code 负责人 @bcherny 说他已经不 prompt Claude 了](1781001037018_v6xznw94.md) · A
+- 2026-06-09 [AB Kuai.Dong: 前几天万字长文置身钉内，刚在互联网圈流传开](1781001034412_0ukmjhdp.md) · E
+- 2026-06-09 [使用helio 组建自己的出海团队](1781001020255_izfoo86p.md) · D
+- 2026-06-09 [雪踏乌云: 最近在开发一个很大的项目，坦白来讲作为安全从业者我的开发经验是欠缺的，之前的合作中也从来没有以独立个体的形式完成一整个大项目的全部开发内容和生命周期](1781000944055_2i7budyn.md) · C
+- 2026-06-09 [Barret李靖: 有了 AI 以后，很多人会产生一种错觉：它无所不能，任何需求说出来，第二天就能像魔法一样出现在屏幕上](1781000934280_oomtcjt8.md) · C
+- 2026-06-09 [郭宇 guoyu.eth: 人应当在寻求与实现自我的道路上创造成功和财富，而不是在追逐成功的道路上寻找自我](1781000933284_2c6blhnd.md) · E
+- 2026-06-09 [独立开花卓富贵: 《置身钉内》这个居然有后续，另外一个更早离职的产品发了小红书](1781000910836_fw064grz.md) · E
+- 2026-06-09 [回路工程](1781000905731_ihu8qnf0.md) · A
+- 2026-06-09 [如何设计一个用来提示你的代理的循环？](1781000900856_w0ifjxhh.md) · B
+- 2026-06-09 [Harness 就是产品](1781000866571_ghg9uwu9.md) · B
+- 2026-06-09 [宝玉: 微信格局还是不够，总是想着大家都去他们家一亩三分地耕耘，还幻想着未来微信会继续是超级入口，人人都在用微信，所以只需要让 AI 去操作小程序](1781000836115_h9twqmxz.md) · C
+- 2026-06-09 [九原客: Langchain DeepAgents 的 Harness Profile 功能不错，为不同的模型开启不同的提示词、工具，这样你选择不同的模型，就会自动应用不…](1781000822881_yvxczvxy.md) · C
+- 2026-06-09 [为每个任务量身定做：Claude Code 动态工作流完全指南](1781000799446_vzf1bmfz.md) · B
+- 2026-06-09 [Will Yang: 跟几个创业团队聊了下，目前一级市场的情况是这样，以语言模型为基础的AI应用已经成为版本弃子了，四年过去了，AI应用被验证出来大部分都是不盈利的，Manus高点没…](1781000779004_gmzcj8vn.md) · D
+- 2026-06-09 [Daniel San: Let me explain the agent loop, simple It's the core of every agentic system, and…](1781000772114_d4wuyw18.md) · B
+- 2026-06-09 [余温: 好久没发这种复盘帖了](1781000733706_d4m6taus.md) · E
+- 2026-06-09 [余温: 05年大三学牲，上个月利润到了 10w+ 我写这个时还是有点心虚，因为确实有运气成分，但昨晚做复盘看到这个数字，还是想聊聊](1781000732489_vy2bqkr3.md) · D
+- 2026-06-09 [徐老猫: 现代社会，人人都焦虑](1781000715943_4pde8wsm.md) · D
+- 2026-06-09 [置身钉内 14.34.50.pdf - Google 云端硬盘](1780998854370_syqqyqgv.md) · A
+- 2026-06-08 [Clive Chan: Personal update: I’ve decided to leave OpenAI](1780891971737_algj565m.md) · D
+- 2026-06-08 [plusxiaxia: 部门里有几个同事一大内耗是觉得自己做的AI项目没价值](1780891969222_drw3ukrp.md) · C
+- 2026-06-08 [AI Native 之后，世界不再奖励只会亲自做事的人](1780891964120_8yf43a96.md) · B
+- 2026-06-08 [Robinson · 鲁棒逊: 置身钉内 7万多字，花了一些时间看完，作者是有东西的，里面的内容，我做了个总结，删除了产品相关的内容，提取了对个体在职场、个体发展有启发意义的内容](1780891949810_xil3knd9.md) · B
+- 2026-06-08 [Frank Wang 玉伯: 后知后觉，今天才看完《置身钉内》的几万字长文](1780891949305_62vz6edh.md) · D
+- 2026-06-08 [Vue创始人游雨溪从文科生到框架大佬的可借鉴经验｜查看 3 个模型共识答案 · Polish Council](1780891934917_pzs4to1p.md) · C
+- 2026-06-08 [Cursor设计技能效果对比](1780891925988_h7zz2ikz.md) · C
+- 2026-06-08 [身份认同与人生事件重构](1780891899679_b8o78xze.md) · C
+- 2026-06-08 [Claude Code计划优先工作流](1780891897382_83f9hs8b.md) · B
+- 2026-06-08 [Matt Pocock技能库推荐](1780891896774_17lcccjb.md) · C
+- 2026-06-08 [中国灵活就业规模数据](1780891879012_k3p49ps2.md) · D
+- 2026-06-08 [Claude长任务运行技巧](1780891870216_y318wdqo.md) · B
+- 2026-06-08 [AGENTS.md 文件真的对编码代理有帮助吗？](1780891868736_43hb2yum.md) · B
+- 2026-06-08 [开发者Hailey: Claude Artifacts 彻底开源了](1780891862269_dorxukvx.md) · B
+- 2026-06-08 [关木: 现在使用 vibe coding 的流程 1](1780891844268_mc8wuhp8.md) · C
+- 2026-06-08 [Leo｜一个人 + AI: AI coding 现在最贵的， 已经不是写代码了](1780891841850_bor9n5mo.md) · B
+- 2026-06-08 [Phoenix Yin: 这份流传出来的协议如果是真的，那简直是一场商业史上的顶级阳谋和魔幻大戏](1780891829367_jor4puk0.md) · D
+- 2026-06-08 [迷思拆解\_Panda🐼🐼: 怎样最大程度延长自己的寿命](1780891818643_upbvly5o.md) · D
+- 2026-06-08 [用 Codex 做视频二创项目落地案例](1780891815434_73f143ce.md) · B
+- 2026-06-08 [Rainier: 给大家分享一点经验： 买衣服，买包 ，买礼服，除了款式之外，要看看拉链](1780891801143_lu7fdbmu.md) · D
+- 2026-06-08 [周小鸟开窍: 23-24-25年](1780891795207_x6svjd4y.md) · D
+- 2026-06-08 [AYi: 我一直以为内容整理就是归归类， 直到周末把 don 哥这套牛逼的内容系统搭起来, 才发现我理解错了一个层级](1780891784175_lctbm3ga.md) · B
+- 2026-06-08 [宝玉: 这个确实，Deep Research 方面 Claude 做的不怎么样，ChatGPT 的 DeepResearch 做的最好，Gemini 也不错，胜在搜索能…](1780891772497_i38er4ze.md) · D
+- 2026-06-08 [Robinson · 鲁棒逊: 看置身钉内有感： 不要成为耗材，不要成为被投入火里的柴](1780891758163_crxk1kxv.md) · E
+- 2026-06-08 [Caspar Broekhuizen: We're building this at LangChain Fleet lets you create and manage a fleet of age…](1780891753482_29zqgujb.md) · D
+- 2026-06-08 [象牙山刘能: 在AI时代，每个程序员都活成了自己最讨厌的那种 team leader： 1](1780891744586_ah8y4ujc.md) · D
+- 2026-06-08 [唐华斑竹🦅: Claude Code 用到这个程度，我算是开眼了 Matt Van Horn 最近写了一篇长文，把他用 Claude Code 的所有技巧和工作流全盘托出了](1780891733321_n8u8ms1x.md) · A
+- 2026-06-08 [宝玉: 最近为了研究 Claude Design，专门写了一个工具，可以解析 HAR 文件，解密 Claude Design 传输的二进制内容，这样可以方便的看到请求的…](1780891730467_3b7qdh53.md) · C
+- 2026-06-08 [郭宇 guoyu.eth: 相对于可以顺畅运行 sandbox 的裸金属机，那些 sandbox provider 的费用高的让人无法理解，我不清楚现在 vibe coding 这么简单，…](1780891726748_73apf6gy.md) · D
+- 2026-06-08 [Viking: 最近产量起来了，又写了一篇干货新文章：《我是怎样使用 AI 构建 E2E 测试体系的](1780891709949_3jm29890.md) · B
+- 2026-06-08 [宝玉: 之所以研究 Claude Design，是因为最近摸索出一套不错的开发模式： 1](1780891706207_hh9bqv5w.md) · A
+- 2026-06-08 [brooks-lint/README.zh-CN.md at main · hyhmrright/brooks-lint](1780891686688_zy2d96ab.md) · A
+- 2026-06-08 [Jason Zhu: 刚看完 Tony Fadell 在 Lenny 播客的两小时访谈 （iPod 之父、iPhone 联合缔造者，把 Nest 以 32 亿美元卖给 Google，…](1780891684020_p5xftz9i.md) · B
+- 2026-06-08 [姚金刚: 在Open Design的GitHub仓库，有一个文档很不错：“反AI味设计指南” 文档地址见文末 一些原则总结如下： 1、不要用AI最爱用的紫蓝色，要用产品自…](1780891666765_erpcmrds.md) · B
+- 2026-06-08 [泡沫期投资者思维钢印](1780891657602_o0zbxots.md) · C
+- 2026-06-08 [小红书与X分发机制对比](1780891647560_m9zh9g89.md) · B
+- 2026-06-08 [SpaceX IPO情怀投资短评](1780891643319_2bc0b1bs.md) · E
+- 2026-06-08 [Pebble产线发货推测](1780891640675_i1jno0zx.md) · D
+- 2026-06-08 [余温: 今天看到一张"AI育儿365会员"的课表，笑了😅 2026 年 AI 焦虑卷到育儿赛道了： 家长觉得不学 AI 对不起孩子，卖课的人就什么都往里塞 他们也看不…](1780891624473_so4d8d5a.md) · D
+- 2026-06-08 [SeeDance拼接工具音频同步修复](1780891624040_eay0jiaz.md) · D
+- 2026-06-08 [EA对慈善激励的讽刺](1780891622483_cpg3bjof.md) · D
+- 2026-06-08 [如何在 3 小时内获得 10 万 YouTube 订阅者（完整指南）](1780891608258_wuc39zkf.md) · D
+- 2026-06-08 [旧金山屋顶花园随记](1780891607447_wb5dw6hh.md) · E
+- 2026-06-08 [绕过付费墙的播客推荐](1780891605216_a0sbllui.md) · E
+- 2026-06-08 [Vaibhav \(VB\) Srivastav: You can do this directly in the Codex App: 1](1780891596340_5qi1jtp5.md) · C
+- 2026-06-08 [熊布朗: 最近在密集的录视频，也在用 AI 做视频，其实 AI 做讲解性视频的能力已经蛮强，下面的这个视频就是我当前工作流的一部分，一句话出一个短视频，用自己的声音](1780891590456_naon1169.md) · E
+- 2026-06-08 [Tz: 注意！AI 时代可不光是想法和执行的人数发生了反转，还包括了有想法想执行的人数总量也变多了。。。 后者才是 AI 给人类带来的真正变革。。。 https://t…](1780890660963_nm9sqg8y.md) · D
+- 2026-06-08 [Rainman: 认知浅的人把无法解释的概率优势叫作运气；认知深的人会拆解概率背后的结构、条件和因果链](1780890075060_dz8yjl2v.md) · D
+- 2026-06-08 [LLMs are eroding my software engineering career and I don't know what to do \| the human in the loop](1780890023242_l3bcctyj.md) · C
+- 2026-06-04 [GitHub - fitchmultz/pi-agent-browser-native: pi extension that exposes agent-browser as a native tool for browser automation · GitHub](1780562451909_hmh8mo7o.md) · B
+- 2026-06-04 [深度拆解：AI Agent Harness 的构造【译】](1780562449767_fw1hvccl.md) · A
+- 2026-06-04 [烟花老师: Pi Agent = 可定制 coding harness / agent workbench Pi Agent 可以理解成一个极简、可自我改造的 termin…](1780562437808_jkgbe9xu.md) · B
+- 2026-06-04 [How I built Gucci x Crocs campaign from 1 image + GPT-v2](1780562437057_5p7romik.md) · B
+- 2026-06-04 [Kubernetes and retiring at the top with Kelsey Hightower - YouTube](1780558134891_k59n80mn.md) · A
+- 2026-06-04 [循序渐进的 LLM 工程项目 \(2026 年版\)](1780558123409_h5n3y6w1.md) · B
+- 2026-06-04 [向阳乔木: 跟朋友聊天，他提到去年千问统计的年度Top10提示词，主题如下： 1](1780558110566_emvai9yc.md) · C
+- 2026-06-04 [Robinson · 鲁棒逊: 一个有点扎心的脑洞： 如果从2023年初开始，我每个月把用来订阅AI工具的钱，全部拿去定投AI相关股票，约800～1000元/月，持续到今天会怎样](1780558094654_2abadwcm.md) · D
+- 2026-06-04 [生成式 UI 是新的前端](1780558081156_89hgw3uu.md) · A
+- 2026-06-04 [你的 token spend 是一个 AI 架构问题，而不仅仅是模型问题](1780558079965_li3jqtu9.md) · A
+- 2026-06-04 [世界模型的功能性分类法](1780558068431_47gfve3x.md) · B
+- 2026-06-04 [这应该是目前最接近正解的 Agent 记忆方案](1780558047506_45nwnwpy.md) · A
+- 2026-06-04 [如何构建自定义代理框架](1780558045789_06e2m3dv.md) · C
+- 2026-06-04 [为你的代理模拟一个文件系统：PostgresFS](1780558036092_dhg5qy2k.md) · B
+- 2026-06-04 [李继刚: 以 llm 基础，看到有两条发展路径： 一条是往下走，原子化，把一个人的能力给拆成一个个针对具体任务的技能包，供用户调用](1780557979772_suw1pwca.md) · C
+- 2026-06-04 [Everlier: If you're building a CLI of any kind, add a section for agents to the help, also…](1780556982522_3x2nukkh.md) · C
+- 2026-06-04 [Robinson · 鲁棒逊: 有不同意见的推友，可以想几个问题： 为什么我们不引入菲佣](1780556961955_89uwdo4m.md) · D
+- 2026-06-04 [导演BK｜游戏行业幕后: Codex除了可以干一些大的事情以外，还有一些很小的事情也可以让它来处理](1780556549082_maf8o6kw.md) · D
+- 2026-06-04 [opensquilla/opensquilla: OpenSquilla — Token-Efficient AI Agent with same budget, higher intelligence density](1780554170941_z8s1l322.md) · B
+- 2026-06-04 [multica-ai/multica: The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.](1780534112892_3b7enand.md) · B
+- 2026-06-04 [multica/CONTRIBUTING.md at main · multica-ai/multica](1780533269892_dh787ycy.md) · B
+- 2026-06-03 [Kieran Zhang: Thariq 深度解析动态工作流： 1](1780471838816_gxme6t9e.md) · A
+- 2026-06-03 [AB Kuai.Dong: 这篇 Reddit 营销版块上的同行讨论，或许预示着为何传统搜索正在被淘汰](1780471748948_q2pvjn45.md) · C
+- 2026-06-03 [dan: I was talking with an old friend at dinner last night, he described gpt fatigue …](1780471734098_ydx0gah1.md) · B
+- 2026-06-03 [fitchmultz/pi-agent-browser-native: pi extension that exposes agent-browser as a native tool for browser automation](1780471727402_77v1l1d1.md) · B
+- 2026-06-03 [烟花老师: Pi Agent = 可定制 coding harness / agent workbench Pi Agent 可以理解成一个极简、可自我改造的 termin…](1780471180728_w60ikyg4.md) · B
+- 2026-06-03 [彭博社揭秘：中国富人是怎么突破每年5万限额，转移资产的？](1780470330138_e2r0gvrz.md) · C
+- 2026-06-03 [Andrew Ng: One of the new, buzzy jobs in Silicon Valley is the AI Forward Deployed Engineer…](1780449397443_b062vz9w.md) · B
+- 2026-06-03 [dontbesilent: 在我这里，优秀创业者的重要标准之一是：这个人的知识主要通过与外部世界的直接互动获得 很多人把这称为执行力 但是在执行之前，这里还有一个广度优先的思维：先发散生成…](1780449397442_dea3sv7n.md) · C
+- 2026-06-03 [Sunny: 其实我不是一开始就在pi上开发agent的，我直接框框和我的claude和codex说我要做一个agent，他要能干嘛干嘛，做了若干个“玩具”之后才发现这样行不…](1780449341396_f5d2dyau.md) · C
+- 2026-06-03 [黄赟: 好文。公狗剧场 1亿票房大揭秘 我陪媳妇儿看过几场男地偶表演。拆过他们的商业模式， 演出门票 + “切”，单场 100个男演员，总收入不过 10W 相比之下，同…](1780449336684_dsgy4yps.md) · D
+- 2026-06-03 [李老师不是你老师: 经济学人：中国的外卖小哥是最明显的社会底层群体 https://t](1780449332925_pru0vt5g.md) · C
+- 2026-06-03 [小径残雪: 人工智能和以往的技术进步完全不同，它会彻底的干掉人类大部分工作](1780449318578_csbwh7pj.md) · E
+- 2026-06-03 [openclaw/crabbox: Crabbox: warm a box, sync the diff, run the suite.](1780449310105_wx8jfps5.md) · B
+- 2026-06-03 [烟花老师: 主流 Agent 开发框架对比一图流](1780449305325_3l561w4u.md) · C
+- 2026-06-03 [Frank Wang 玉伯: 定价对 AI 产品非常重要，甚至可以说：定价定一切](1780449296950_d92jiohx.md) · C
+- 2026-06-03 [沙箱 + 共享内存如何能够解锁下一个重大发现](1780449274848_66kq12g5.md) · C
+- 2026-06-03 [Mitch Fultz: I adopted Crabbox to test and validate my pi extension projects on different pla…](1780449269778_gxecm952.md) · D
+- 2026-06-03 [WquGuru🦀: 重度使用ultracode再次深深感受到Claude Code无以替代的伟大](1780449267718_ulzvh4nr.md) · D
+- 2026-06-03 [banboo: 分享我今天的一个想法](1780449247158_6w9r3n8l.md) · C
+- 2026-06-03 [2 天，2 亿 token，dontbesilent 内容资产工程系统｜已免费开源](1780449242918_ux9s4fra.md) · B
+- 2026-06-03 [Nod: 公务员经济 今天想跟大家聊一个新名词：公务员经济](1780449225893_jwovhagn.md) · B
+- 2026-06-03 [Dr.Wang: 成年人最大的危机，不是失业，而是失去重新开始的勇气…… 年轻时我们总以为，职业发展的最大风险是找不到工作](1780449221949_0hijiz6s.md) · D
+- 2026-06-03 [李继刚: 我最近在玩的其中一个方向，是探索 AI 时代独有的阅读方式，最近在尝试「影子之书」阅读法： 印刷时代，我们只能读作者写下的这一本书；可每本书背后，都藏着作者本可…](1780449209131_ynfu22vk.md) · C
+- 2026-06-03 [AITabby/opencodex: Local gateway for Codex Desktop — custom API, web dashboard, Vision Bridge](1780449205737_7xna1a7n.md) · C
+- 2026-06-03 [Vaibhav \(VB\) Srivastav: We just released the Codex Python SDK 🔥 You can now embed Codex directly into y…](1780449202146_m2p89vhc.md) · D
+- 2026-06-03 [郭宇 guoyu.eth: 在 vibe 了五个多月之后，我不觉得 SOTA 模型公司有能力吃下所有软件，我也不站在使用 FDE 改造现的企业来挣点快钱的那一侧，相反的，我是坚定的 AI …](1780449187290_hzcd5ype.md) · D
+- 2026-06-03 [我所知道的每一个智能体工程技巧（2026年6月）](1780449182122_zhdg3zgd.md) · A
+- 2026-06-03 [九原客: 做 Agent Platform 最难的是如何解决鉴权注入的问题](1780449179281_0bj31k33.md) · B
+- 2026-06-03 [适用于所有任务的框架：Claude Code 中的动态工作流](1780449164148_92pbpstu.md) · A
+- 2026-06-03 [yetone: 但是这个应该不能去把责任归到用户身上，而必须是归到 Anthropic 身上](1780449152915_dk85dzu5.md) · C
+- 2026-06-03 [范凯说 AI \| Kai on AI: 我越来越看清一件事：传统企业软件正在退化成 API](1780449132572_o1n3qtjj.md) · C
+- 2026-06-03 [Frank Wang 玉伯: AI Coding 时代最大的谎言是 软件编写成本趋于零 真实情况是 软件 DEMO 成本趋于零](1780449128164_i92w3yma.md) · C
+- 2026-06-03 [Robinson · 鲁棒逊: 刘瑜老师这本《可能性的艺术》，竟成了一种测量仪——默默记录着我们这个社会《观念的水位》](1780449107523_bp84612p.md) · E
+- 2026-06-03 [37signals 内部沟通指南](1780449089453_x0i0embj.md) · A
+- 2026-06-03 [123olp: 终于稳定跑通了](1780449087827_j68x7wva.md) · B
+- 2026-06-03 [Phoenix Yin: 对郭宇的话，我一直深以为然](1780449069569_b2z0av9l.md) · D
+- 2026-06-03 [逸尘: 让Codex不再失忆——外接Obsidian大脑Token优化，重要记忆全部记住 之前外国朋友的方法我用了下，发现Token消耗其实挺大，所以让Codex优化了…](1780449063036_2ry3lxbj.md) · B
+- 2026-06-03 [郭宇 guoyu.eth: 另外一种类似 cloudflare dynamic worker 的工程实践，这种流派也可以叫 code mode，本质上是将复杂 API 调用包装成不同的 m…](1780449056103_xv8ymjis.md) · C
+- 2026-06-03 [People’s Observer: 一年以前小红书和X还有人做梦事业单位是铁饭碗，一年以后才发现事业编制改革早就“在岗不在人”了](1780449045200_6wx5wxtb.md) · E
+- 2026-06-03 [Robinson · 鲁棒逊: 在推上，想要做自媒体的推友， 要好好理解这句话， 要不惜，以人性为食](1780449034462_1dbw70x6.md) · E
+- 2026-06-03 [Tim Soulo 🇺🇦: In the last 6 months at @Ahrefs, we analyzed over 1 billion data points across 1…](1780449030960_is85jno2.md) · B
+- 2026-06-03 [Runway: Aleph 2](1780449024381_j0vhbccm.md) · D
+- 2026-06-03 [我们为什么不直接放开 Mythos，让系统自行适应呢？](1780449018648_xpcy3g9y.md) · B
+- 2026-06-03 [介绍评分量规：构建能够评估并纠正自身工作的智能体](1780449000069_5fw1egxp.md) · B
+- 2026-06-03 [X](1780448990546_9g1gqp6p.md) · E
+- 2026-06-03 [4nzn: i’m putting my best effort to close some amazing collabs, hope i can let you kno…](1780448986692_yf3ss3zz.md) · D
+- 2026-06-03 [Jeff Barg: Clay is now available in Codex](1780448985121_ydmgyxz4.md) · D
+- 2026-06-03 [GitHub's plan for Agents — Kyle Daigle, GitHub \| Readwise](1780448974107_3m2dorkm.md) · A
+- 2026-06-03 [Cognition: Introducing Devin Desktop](1780448959390_0rz13v9g.md) · C
+- 2026-06-03 [网络并非为浏览器代理而构建，以下是我们如何搭建一个工具使其正常工作的方法。](1780448935074_iycbb4sc.md) · A
+- 2026-06-03 [Niko: Verification is the hidden bottleneck for knowledge work agents, especially in l…](1780448925300_ra1x0uvm.md) · D
+- 2026-06-03 [Lenny Rachitsky: PSA: This week only, get 25% off all the @MavenHQ Lenny's List courses \(and hund…](1780448923546_j01715mg.md) · E
+- 2026-06-03 [LangChain: 🎉 Congratulations to @OdessiaTravel on their public launch](1780448906257_ic5st3q2.md) · E
+- 2026-06-03 [LangChain: New in Deep Agents: Agent Rubrics](1780448905352_eotg10zt.md) · C
+- 2026-06-03 [向阳乔木: 我去，一句话建网站啊，还能分享给别人查看](1780448886736_pdlcdln6.md) · D
+- 2026-06-03 [Derek Thompson: This has quietly been a miracle month in medicine](1780448882119_8c5wgg1e.md) · D
+- 2026-06-03 [AmirMušić: A simple 200kb Claude Project that will change the entire branding industry AI-n…](1780448879634_ig8nl7gb.md) · E
+- 2026-06-03 [字节出来做AI创业一年，她把每一个弯路都说清楚了](1780448867016_dxfhage0.md) · A
+- 2026-06-03 [EO: Meet @yasser\_elsaid\_, founder of @chatbase](1780448861468_n14c9zz5.md) · D
+- 2026-06-03 [黄仁勋删除昨天](1780448858509_xn1govuv.md) · B
+- 2026-06-03 [向阳乔木: 读了今天Huggingface最热论文，关于如何让AI生成论文图表的Harness框架](1780448829812_piq2q6jl.md) · C
+- 2026-06-03 [Gabriel Chrostowski: Chiński szok 2](1780448826954_u38lu1ve.md) · C
+- 2026-06-03 [RobinSeun\_维京黑船: 正好也失眠了，先把这个问题解决了再去安心看书](1780448824015_jzh6eddc.md) · C
+- 2026-06-02 [yibie: Search as Code：搜索架构的下一次范式转移 Perplexity 刚刚发布了一个新架构，叫 Search as Code（SaC）](1780387606537_eeqapupv.md) · A
+- 2026-06-02 [九原客: Agent 其实有三个东西： Agent 定义：系统提示词、技能包、扩展、工具定义等](1780387597383_cu1jmh44.md) · B
+- 2026-06-02 [idoubi: 聊一聊 Agent 的存算分离架构设计👇 一个有灵魂，有记忆的 Agent，一次任务的生命周期包括以下步骤 1](1780387595932_7ozhzfqy.md) · B
+- 2026-06-02 [范凯说 AI \| Kai on AI: 今晚在上海红杉的 AGI Bar 开业活动上，最触动我的不是什么行业大佬的高见，是两个小孩](1780387592439_be0pgumz.md) · C
+- 2026-06-02 [我最近两个月的探索和实践分享：长任务 Agent 的最小工程闭环](1780386383599_0oxo4ltr.md) · A
+- 2026-06-02 [Vincent Logic \| 信号＞噪音: 以前 Claude Code 扫一个大项目，工具调用要52次](1780386364701_7z5wjf49.md) · C
+- 2026-06-02 [Leo｜一个人 + AI: 我刚拿这条 prompt 跑了一遍自己的 Codex 记录](1780386361512_zswa7u1e.md) · B
+- 2026-06-02 [Frad: 分享一个这两天折腾下来，价值 $73](1780386353733_atatkncs.md) · B
+- 2026-06-02 [QingYue: 这是一条非常宝贵的被官方认证过的codex self improve prompt： 推荐使用： “回顾我过去 30 天的最近工作（如果历史更短，则回顾所有可用…](1780386353264_yrlzgx6v.md) · A
+- 2026-06-02 [宝玉: Agent 应用和传统 App + AI 的最大差别，在于执行的主体不同](1780386350525_59unu8t6.md) · C
+- 2026-06-02 [sukie: 湾区娇妻这个群体接触过之后的感觉就是非常可悲，非常活在梦里的一个群体](1780386339452_v59cd7qn.md) · D
+- 2026-06-02 [宝玉: 去做一个 Agent Harness 这种事情价值不大了，怎么做也做不过模型公司，模型一升级好多活都白干了](1780386337703_49mxh77v.md) · B
+- 2026-06-02 [AB Kuai.Dong: 彭博今天发了篇大长文，终于解析了中国为什么要收紧去海外炒股，原因是有大量的非法资金外流，其中炒美港股是重灾区](1780386326168_2wo7flw9.md) · D
+- 2026-06-02 [William Long: 小知识：深户或者有深圳居住证的非深户，可以办理一年多次香港签注（80元签注费用），一年内无限次往返，从深圳过关去香港，可以合法携带2万人民币和5000美元，两者…](1780386322831_tdosvf1a.md) · D
+- 2026-06-02 [微笑的王石川: 操了，干了12年前端，接过几百个私活，结果这几个月一个单子都没接到](1780386312634_oc45nmmx.md) · D
+- 2026-06-02 [腾讯开源 TencentDB Agent Memory：给 OpenClaw 和 Hermes Agent 接上 4 层本地长期记忆，PersonaMem 准确率 48% → 76%](1780386309699_nhthlold.md) · A
+- 2026-06-02 [虎小象: 先讲一个你可能从来没听说过的人](1780386308768_8twljk6u.md) · B
+- 2026-06-02 [Roland.W: 真心不建议你们去打劳动仲裁 奉劝在座的各位一句 遇到公司调岗降薪辞退的不给补偿的 那就算了吧 咱们大度一点 人家公司也不容易 你打个12333举报社保不足额 公…](1780386300409_p39w6dvm.md) · D
+- 2026-06-02 [Leo｜一个人 + AI: 怎么把 Codex App 用到极致](1780386293603_hn99qaw1.md) · B
+- 2026-06-02 [夸克说: 以目前agent的发展速度，大厂们应该已经意识到了一件事，就是他们过去十几年搞的那套35岁裁员增效的方式是走错了路](1780386290428_ut1bjv69.md) · D
+- 2026-06-02 [冰河: 我最近已经是 Pi Agent 的重度使用用户了](1780386289913_0leuodq2.md) · D
+- 2026-06-02 [金尘马: 分享一个跑通的小副业方向：海外工具站](1780386278247_1d0tvgs4.md) · C
+- 2026-06-02 [lifcc: https://t](1780386277243_je8ru1yg.md) · C
+- 2026-06-02 [搞懂缓存机制，从Gemma4到Claude Code省80%Token](1780386275728_835nkurl.md) · A
+- 2026-06-02 [Agentic Design Patterns：一本让我重新理解"Agent 到底是什么"的书](1780386266119_ngoo1o2h.md) · A
+- 2026-06-02 [Vincent Logic \| 信号＞噪音: 刚看完AirOps在Claude大会上的分享，干货满满🔥 他们从复杂的workflow builder转型到agent-based approach的思路很有…](1780386265792_5qa3l6pm.md) · B
+- 2026-06-02 [Leo｜一个人 + AI: Lee Robinson 说：AI 时代反而要多花时间想代码，不是少想](1780386255869_qhfldtbg.md) · C
+- 2026-06-02 [yibie: 多 Agent 系统炒了一年，生产环境里真正活下来的只有三种模式](1780386252217_hlip5e4y.md) · A
+- 2026-06-02 [九原客: 国内就这氛围，你去做售前解决方案，做个企业培训，可以挂个title（xxx 技术专家）](1780386245192_09oaoyw5.md) · D
+- 2026-06-02 [multica-ai/andrej-karpathy-skills: A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.](1780380785964_g9sdp0b2.md) · A
+- 2026-06-02 [duange-zero-skill — ClawHub](1780380769606_hd07cm88.md) · B
+- 2026-06-02 [How OpenAI uses Codex \| OpenAI](1780380768626_xr1vsrp8.md) · A
+- 2026-06-02 [Bruce Qin: 肌酸 + B12 + 阻力训练,是普通人最便宜、最被验证过的组合 肌酸要增强认知,日剂量需约10g才能穿过血脑屏障,5g只够供肌肉;一水肌酸最划算,可长期吃 V…](1780380768264_ag7ik24h.md) · C
+- 2026-06-02 [程序员端哥: 几天前一个单子 让我去写一个skill 报价2000 我今晚就开始写，没一会儿功夫写完后（codex搞定）我 看还有时间，我灵机一动既然写skill能赚钱，那我…](1780380750790_b2rg5jpk.md) · D
+- 2026-06-02 [Frank Wang 玉伯: 创业以来，随着 agent 技术的成熟（也还不太熟，大都还酸酸的，但有果子的样了），心里一直有个痒痒处：想基于新技术，把豆瓣重做一次](1780380749002_06wjxbsj.md) · C
+- 2026-06-02 [Robinson · 鲁棒逊: \#好好学习天天向上 不要再用人口增长时代的经验，去配置人口收缩时代的资产、教育和职业路径](1780380748193_nrhzfgvi.md) · B
+- 2026-06-02 [Holegots: 目前实习生也基本不会大家背调之类的, 中间存在了巨大的套利机会, 即使转正不过, 也可以通过 P 图说自己有百万大包, 来压力其他公司 or 抬高身价](1780380739304_2skplza7.md) · E
+- 2026-06-02 [黄赟: Codex App\(注:不是 Codex Cli\) 又把 Apple 生态推上一个新台阶 当我胆战心惊，冒着封号危险，把 iPhone 接通 ChatGPT A…](1780380729007_cdcpg394.md) · E
+- 2026-06-02 [darkzodchi: Anthropic engineer showed how one person can run 5 AI agents, that code, test, r…](1780380728363_ujsvpqe6.md) · C
+- 2026-06-02 [给任何开源项目建一份可信架构 wiki：LLM Wiki 范式实战教程](1780380725951_w8xa2xiv.md) · A
+- 2026-06-02 [Vaibhav \(VB\) Srivastav: UPDATE: Came up with an even better version of this prompt after the feedback As…](1780380715968_35wfuuwf.md) · B
+- 2026-06-02 [范凯说 AI \| Kai on AI: 今年我已经50岁了，虽然自我感受上还年轻，但严格意义生理年龄已经是老年人了](1780380715501_q7b2jvs3.md) · E
+- 2026-06-02 [Robinson · 鲁棒逊: 一个关于生育决策的反向洞察 现在生小孩，可能是最被低估的逆向操作](1780380700221_q0v8q0v2.md) · D
+- 2026-06-02 [Mitch Fultz: GPT-5.5 xhigh as planner + Composer 2.5 subagents as implementers beats either m…](1780380699926_thph6g1s.md) · B
+- 2026-06-02 [郭宇 guoyu.eth: 最近我已经用 AGS（Agent Git Service） 替代了 GitHub 作为我的主要开发环境，年初我曾经想过彻底放弃本地开发环境，5月底终于做到了，现…](1780380687566_npob1ph9.md) · B
+- 2026-06-02 [岚叔: 开发者分享提升 OpenAI Codex 工作效率的技巧 看了原作者的提示词，感觉像Hermes 自进化skill的流程](1780380682201_jufo3nr6.md) · B
+- 2026-06-02 [如何分 10 步组建一支 Claude 代理团队：从 1 个代理到 20 个并行工作](1780380678886_mcd8161u.md) · C
+- 2026-06-02 [meng shao: 让 Codex 回顾你过去的会话历史，识别重复出现的任务模式，并沉淀为可复用的 Skills 或 Subagent，来自 Codex 团队 @reach\_vb …](1780380673507_6ojrkes8.md) · B
+- 2026-06-02 [职场那些“正常”的阴暗面：我15年从基层到高层的真实观察与破局之道](1780380665835_4bg47why.md) · B
+- 2026-06-02 [lifcc: 刚看到一个 Claude Code 插件，解决的问题很真实： Understand-Anything 它的 slogan 很直接： Graphs that te…](1780380658304_5nrgmr4j.md) · C
+- 2026-06-02 [Nagi Yan: 《经济衰退的关键卡点》 锚点： 钱不是财富，调度权才是](1780380656863_gch0i4yd.md) · C
+- 2026-06-02 [Auth Proxy 如何保障 LangSmith 代理沙箱的网络访问安全](1780380645477_9la0xqss.md) · B
+- 2026-06-02 [LLM 的推理引擎及本地 AI 硬件（2026 年版）](1780380642888_jn4ed2pj.md) · A
+- 2026-06-02 [宝玉: Codex 使用技巧：Steer 和 Queue 通常 Agent 执行一个任务不会马上结束，可能会要等几分钟甚至更久，如果这时候你有个新的要求想补充，这里有两…](1780380625671_wsel2gno.md) · B
+- 2026-06-02 [AI 智能体领域的下一个重大突破是一个 12 行的 YAML 文件（技能包）](1780380621114_l46yiqj1.md) · B
+- 2026-06-02 [出海去孵化器: 号称 Shopify 2](1780380612540_e5lq5fzd.md) · B
+- 2026-06-02 [如何构建 AI 操作系统与自主工作流](1780380603624_e9lzl38e.md) · B
+- 2026-06-02 [规范驱动开发是人工智能编码的新默认做法](1780380596738_802mjz09.md) · A
+- 2026-06-02 [当我们谈论 FDE 时，我们在谈论什么？](1780380589193_nvzjyo98.md) · A
+- 2026-06-02 [LinearUncle: 意外发现使用deepseek-v4-pro的文本图形来解释知识，流程，原理非常好用，比gpt系列模型好用](1780380196125_rx6hy0yp.md) · D
+- 2026-06-02 [阿崔cxr: 连续肝了三天，终于把这套英语入门课搞出来了](1780380193276_u4pc7v1u.md) · C
+- 2026-06-02 [姚金刚: 开源一个“矛盾论”Skill 地址见文末（含skill理论原理报告、skill设计方案原始文档及示例报告） 昨天和团队开会，聊到矛盾论，核心是找到每个阶段的主要…](1780380191258_e7pa21et.md) · B
+- 2026-06-02 [DIŸgöd ☀️: 这个方向我觉得值得看：AI Native Workforce，而不是又一个 AI sidebar 我平时做开源项目和产品开发，很多时间不是真正在写代码，而是在补…](1780380184436_itatchdc.md) · C
+- 2026-06-02 [Gary Du: 刚看到一个新闻： 全面取消灵活就业人员参保户籍限制，大力推进全民参保计划](1780380179850_dy3vg5ke.md) · C
+- 2026-06-02 [Cell 细胞: Codex 提示词： 请帮我完成一个详细的教程，主题是 「 Pi Agent 的原理与实现：从零到一实现一个 AI Agent」](1780380177161_buy2qb00.md) · C
+- 2026-06-02 [赵纯想: 这就是所有 ToB AI 软件的最终形态，只要不是这样，就肯定设计错了](1780380168834_0vcjy1rj.md) · D
+- 2026-06-02 [Orange AI: 今天看到蚂蚁集团CEO韩歆毅分享的 Agent 时代的经济和商业思考，有几点还蛮共鸣的](1780380167647_khekdoi6.md) · C
+- 2026-06-02 [Max For AI: 昨天见了一个非常牛逼的Agent团队，我敢说在国内绝对是T0的级别（之前DPSK还找他们搞了点Agent数据） 刚好聊到了这两天推上吵得非常热闹的AI产品（Ag…](1780380156078_yc7l27l7.md) · C
+- 2026-06-02 [宝玉: 用好 Coding Agent，重点是两头，尤其是开头的部分，如果一开始就走偏了后面怎么改都改不好](1780380153310_i3rps4jx.md) · B
+- 2026-06-02 [Leo｜一个人 + AI: 卧槽，我终于在 Codex App 里跑通了“跨对话自动协作”](1780380152317_8p02duzf.md) · B
+- 2026-06-02 [YC 作为见证者](1780380140862_wdulrycj.md) · B
+- 2026-06-02 [黄赟: 真的，大多数接转介绍活儿的程序员，甚至外包的老板，都会败在这个策略上 前段密集地给几位程序员，老板拉私活，像 OpenClaw 上门安装，Skill 手把手辅导…](1780380138472_27k8wmru.md) · D
+- 2026-06-02 [柯基是只猫: 最近大家都在讨论大厂裁员的事情，作为身在这个图里面的某厂的人，来说说真实感受 1](1780380137484_dqbt3eqg.md) · D
+- 2026-06-02 [Using AI to write better code more slowly \| Read the Tea Leaves](1780380128022_z6uhtrso.md) · A
+- 2026-06-02 [宝玉: Agent 产品的设计，要看定位是以 Agent 为主还是以人为主 Agent 为辅](1780380126163_vq0gc6hq.md) · B
+- 2026-06-02 [姚金刚: 年近70岁的一位阿姨，做眼科教学和临床四十多年 微信对我留言：Vibe Coding出了自己的一个公益小网站 我看了下，这个网站，非常精致，也很有特点： 1、不…](1780380123829_4ra4tgeo.md) · D
+- 2026-06-02 [人工智能编程重质不重速](1780379628561_24u5k8et.md) · A
+- 2026-06-02 [Peptides: The Science, Uses &amp; Safety \| Dr. Abud Bakri - YouTube](1780374029872_575tx5s6.md) · C
+- 2026-06-02 [HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive · Hugging Face](1780373516729_j5owtqsf.md) · C
+- 2026-06-02 [XDash: 复盘几个月来的 AI 使用，犯了个错： 过早地将模型的代码能力，固化成了一个个 python 脚本来跑，认为这样更省钱、边界更可控（而不是用 LLM 能力）](1780371146676_67z47gzk.md) · B
+- 2026-06-02 [关于代理管理工具的思考](1780371144992_gjhy1mqz.md) · B
+- 2026-06-02 [陶瑞 TaoRay: 现在还把中国和过去的日本相类比的人，完全没有认清形势](1780371139432_hzkurma6.md) · C
+- 2026-06-02 [姚金刚: 结合最近写skill的一些心得，总结了一个Skill设计五步法： 1、定义结果 创建skill之前，想清楚到底想要啥，包括结果的标准是什么](1780371131114_mun8mu5d.md) · C
+- 2026-06-02 [plusxiaxia: 部门负责人私下吐槽我缺乏整体架构能力](1780371125347_8vq7etjx.md) · B
+- 2026-06-02 [Jiayuan \(JY\) Zhang: 几个客观性说明： 1）这一条和 MiniMax 没有任何关系（我从来不接商单） 2）「体感」不等于真实水平，不是量化数据 用了更多的一些体验，整体上 codin…](1780371120857_lhyz8ump.md) · D
+- 2026-06-02 [小径残雪: 今天谈一下俄乌战事](1780371118426_f4o28jnx.md) · C
+- 2026-06-02 [如何构建多智能体工作流（完整指南）](1780371112249_3n4k1f9q.md) · A
+- 2026-06-02 [范凯说 AI \| Kai on AI: 我之前喜欢在 YouTube 上看各种博主的分析，尤其是对未来的预测](1780371110079_qv06voek.md) · C
+- 2026-06-02 [宝玉: 你不能指望一个模型在什么地方都是最强的，要像渣男一样才能用好 AI：去爱很多模型，去发掘他们的优秀点，东食西宿，组合着用 Opus 4](1780371102763_q8spn2yt.md) · B
+- 2026-06-02 [GREG ISENBERG: I can't believe how fun building a company is right now is](1780371098748_vx0p3l1j.md) · D
+- 2026-06-02 [Yuu💖: 我没明白为什么要把 agent session 编译成 wiki 原始 session 本来就是结构化数据：messages、tool calls、tool r…](1780371091231_ee3tb1co.md) · B
+- 2026-06-02 [50 条大白话 + 通俗案例（国务院境外投资新规，针对普通人）](1780371086583_gg08lhyf.md) · C
+- 2026-06-02 [yibie: 训练小模型：2026 年最被低估的 AI 技能 2026 年 5 月 11 日，一个叫 CJ Zafir 的人发了一条推文](1780371081794_me54qcps.md) · A
+- 2026-06-02 [氪200刀，乔帮主开源8个工具、5个精选Skill，六一宠粉节](1780371076384_nkj1r637.md) · B
+- 2026-06-02 [吊顶高松灯: 这几天面试 Agent 工程师下来，有一半的面试的都是本硕期间发过 AI 周边论文的，剩下的一半才是Java后端或者前端转来的](1780371065907_pwq2big1.md) · C
+- 2026-06-02 [Leva: 陶先生没说的话，我替他说了吧](1780371064262_zjysj26z.md) · D
+- 2026-06-02 [歸藏\(guizang.ai\): 妈的，终于搞定我的 Codex 断联和推理慢的问题了](1780371055871_rx2rp4z7.md) · C
+- 2026-06-02 [范凯说 AI \| Kai on AI: 知识付费正在被 AI 干掉](1780371052098_6t7kcsqq.md) · C
+- 2026-06-02 [Frank Wang 玉伯: 最近越来越觉得“慢“的重要性](1780371049053_upd0noxw.md) · C
+- 2026-06-02 [Learn Quiz](1780371046346_ucjeuysg.md) · C
+- 2026-06-02 [耳朵: Coze 支持多 Agent 协作了， 同时还支持了 Claude Code、Codex 和 OpenClaw 协作](1780371040379_beel03xy.md) · C
+- 2026-06-02 [fastclaw-ai/fastclaw: Multi-Agent Framework](1780371038952_gccaiiap.md) · B
+- 2026-06-02 [Bruce Guai: 牛逼啊，过去半个月一直在测试新 agent，让他实际的帮我去跑了十多个业务，没怎么管，今天惊讶的发现有两个业务的 agent 成功的发邮件 bd 到了用户成单给…](1780371032129_w9rml5n4.md) · D
+- 2026-06-02 [idoubi: 我年初开始做 OpenClaw 托管服务，在一套 k8s 集群部署了 500 个 Pod，每个 Pod 限制 4g 的运行内存](1780371026970_9xibjrp4.md) · B
+- 2026-06-02 [停止为你的代理商建造富士康工厂](1780371021747_marmuhor.md) · B
+- 2026-06-02 [FleetingBits: some thoughts on kirkland building its own harvey 1\) kirkland is spending $500m …](1780371019153_g3rrbt9f.md) · C
+- 2026-06-02 [AI奶爸: 兄弟们，一直以来我都想打造自己完美的数字分身，今天终于开始了： 给我微信里的机器人"转正"，让它当我的数字分身](1780371014668_vk0trn2r.md) · B
+- 2026-06-02 [刻薄沟通是否有效](1780368673851_gecaomie.md) · E
+- 2026-06-02 [创业花钱的印钞机比喻](1780368659626_ebjqyri7.md) · B
+- 2026-06-02 [The Death of the Three-Act Playbook 三幕剧剧本的消亡](1780368652684_tcrcilwm.md) · B
+- 2026-06-02 [Lenny Rachitsky: My biggest takeaways from @benedictevans: 1](1780368648903_vncb5fmd.md) · B
+- 2026-06-02 [98.2% on LongMemEval: How We Built an Open-Source Agent That Actually Remembers](1780368648233_xufgt7pa.md) · B
+- 2026-06-02 [AYi: 苹果、Intel、AMD、高通， 今晚大概率睡不好了](1780368191868_nle8fnam.md) · D
+- 2026-06-02 [如何使 RAG 32 倍内存高效（带代码解释）！](1780368187872_04trp74e.md) · B
+- 2026-06-02 [每一个成功的 AI 初创公司都会这么做（复制它）：](1780368184801_3enyf3wt.md) · C
+- 2026-06-02 [jack friks: 1 hours a day spent marketing my app \(making + posting 6 videos\) 30,000 download…](1780368181506_szd5zg73.md) · C
+- 2026-06-02 [How Rippling built production AI in 6 months with Deep Agents and LangSmith](1780368177262_a9dbwl2d.md) · B
+- 2026-06-02 [金融宏观研究代理架构实践](1780368173957_s74ulw1d.md) · A
+- 2026-06-02 [如何像专家一样使用Codex](1780366314011_fc2kn22b.md) · A
+- 2026-06-02 [Jason Zhou: /workflow is HUGE - "Help me find &amp;amp; quality 200 leads that fits in ICP" - "A…](1780365923710_jqlx23xl.md) · S
+- 2026-06-02 [1-hour Deep Dive with AI Jason: AI products, YouTube\(220k+\), Jian-Yang, Startups - YouTube](1780365573619_jkdw68bi.md) · C
+- 2026-06-02 [Why Video Agent models are next — Ethan He, xAI Grok Imagine Lead \| Readwise](1780362296785_3rcg4x4m.md) · B
+- 2026-06-01 [马东锡 NLP: 看到讨论该不该用 python 写 Agent](1780308551471_jg2he5pn.md) · C
+- 2026-06-01 [kAI: 我觉得国内各家都直接基于 pi-coding-agent 来实现自己的 Agent 就好，包括 DeepSeek](1780308548427_4vm2lqc7.md) · C
+- 2026-06-01 [怎么使用 Codex 和 Claude Code 重构前端 UI](1780308537377_hrebkv1p.md) · B
+- 2026-06-01 [CJ Zafir: My Fine-tuning Stack for Small Language Models \(2B to 15B Models\) It costs me ar…](1780308534350_3emygl5x.md) · C
+- 2026-06-01 [凡高: 我又发现了Codex里面的一个新玩法，Subagents就是多智能体去进行协作](1780308517951_0bhwbxvi.md) · C
+- 2026-06-01 [affaan-m/ECC: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.](1780308513906_6bo7fd3l.md) · A
+- 2026-06-01 [黄赟: 分享一个为 AI Agent 而生的搜索工具 —— AnySearch 打动我的有这么 5个小点： 1/ 匿名都能用，零遥测，零蒸馏 2/ 多个独有数据源，一个…](1780308503974_9529d56a.md) · D
+- 2026-06-01 [余温: 这才是 AI Native 团队的最终形态](1780308492768_j8tpwbai.md) · C
+- 2026-06-01 [泊舟: Anthropic 黑客松冠军，把自己的 AI 编程工作台开源了](1780308491246_0jb94nfg.md) · C
+- 2026-06-01 [姚金刚: 分享一篇昨天在出差路上，写的随笔：《口碑的本质》 口碑的本质，是预期管理 适当降低预期的承诺（或建立更合理的预期），通过更聚焦更专业的服务，最终实现超出客户预期…](1780308465123_l2rntfwy.md) · C
+- 2026-06-01 [ogulcancelik/herdr: agent multiplexer that lives in your terminal.](1780308205519_6ix2bu8z.md) · B
+- 2026-06-01 [如何在 2026 年精通 Codex（完整课程）](1780308200855_tn36d8br.md) · B
+- 2026-06-01 [九原客: gpt-5.5 就是无情的干活机器，plan、design、review、test等都用deepseek-v4-pro 每晚一个 Goal，拆成Phase后，每…](1780308192691_19rjced6.md) · D
+- 2026-06-01 [Max Katz: nothing beats my \`cmux\` + \`hitch\` workflow](1780308187568_fkqjgu7k.md) · E
+- 2026-06-01 [Opus 4.8的200页安全报告详细解读：Claude最新模型开始藏心思](1780308180589_okqf0sje.md) · A
+- 2026-06-01 [fitchmultz/pi-cursor-sdk: Run Cursor models inside the pi coding agent via local Cursor SDK agents, with native model selection, thinking controls, fast/plan modes, image input, and MCP-bridged pi too…](1780308177749_g8eh5sg7.md) · B
+- 2026-06-01 [少个分号: 这世界如果没有性和婚姻会变得和谐多了，所有人都是基因的奴隶](1780308169977_3odisftp.md) · E
+- 2026-06-01 [如何构建你自己的代理框架？？？](1780308157470_sepnf32r.md) · B
+- 2026-06-01 [Frad: Claude Code 的 dynamic workflows 初步看下来就是我最近非常喜欢用的流程的加强版，我的流程： 1](1780308155933_i3kmpajt.md) · C
+- 2026-06-01 [Rohit Ghumare: Almost everyone is building agent harness systems the wrong way](1780308154243_saovlfo8.md) · B
+- 2026-06-01 [写好 CLAUDE.md 的 8 条经验：让 Claude Code 更懂你的项目](1780308140446_p209cs9r.md) · A
+- 2026-06-01 [Vince 聊开发: 这场 workshop 比较难得的一点，是 Anthropic 直接把他们内部常用的用法拆开讲了 包括： 1、Prompt 怎么组织 2、Context 怎么管…](1780308138234_kq0ud0ib.md) · D
+- 2026-06-01 [Gary Du: 国内经济在持续恶化， 很多人还没有真正意识到： 现在的国内经济环境， 已经和过去二十年的高速增长时代完全不同了](1780308123537_9defpz1c.md) · C
+- 2026-06-01 [向阳乔木: 如果你不会写 Agents](1780308118432_zd8oc5wu.md) · C
+- 2026-06-01 [dontbesilent: 如果我们只谈流量，（暂时）不谈变现的话 1、你日常会看到相当多的账号，无论是公众号/小红书还是抖音账号，他们非常会找选题，比如「普通女生怎么赚到第一桶金」、「内…](1780308107557_cnrq5u7g.md) · C
+- 2026-06-01 [Y11: 最值得关注的开源项目（按影响力和信息差排序） --- S 级：必须关注 1](1780308103978_yw6oeedo.md) · D
+- 2026-06-01 [AI越强，人越忙：一个住在未来的人说了什么](1780308096042_4migsit0.md) · B
+- 2026-06-01 [lifcc: 最近给 Codex 做了两个 skill，一个让它越用越聪明，一个让它一直保持流畅](1780308088507_uet5oj1j.md) · B
+- 2026-06-01 [pi生态复刻Claude动态能力](1780307891754_49n8cva0.md) · A
+- 2026-06-01 [rohitg00/agentmemory: \#1 Persistent memory for AI coding agents based on real-world benchmarks](1780307372186_cyswffhm.md) · A
+- 2026-06-01 [CloakHQ/CloakBrowser: Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-level fingerprint patches. 30/30 tests passed.](1780307354962_oy9ffkn2.md) · B
+- 2026-06-01 [BigPizzaV3/CodexPlusPlus: An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex变得更好用更舒服](1780307347702_zyuqo4ky.md) · C
+- 2026-06-01 [Pydantic 修复了我的代理的记忆](1780307340920_wl384y4m.md) · A
+- 2026-06-01 [Matt Stockton: This recent @latentspacepod pod was a good one \(they usually all are\)](1780307330250_rubbb43w.md) · B
+- 2026-06-01 [Karri Saarinen: In grindmaxxing there are a couple of questions inside it](1780307329474_j6rhe0bh.md) · B
+- 2026-06-01 [fitchmultz/pi-codex-goal: Codex-style goal tracking and continuation for pi.](1780307318444_92wwo779.md) · B
+- 2026-06-01 [Phoenix Yin: 我觉得Dify周宇说了一个在实际工程落地里AI写代码背后的绝对真相](1780307316024_brlnf9tb.md) · C
+- 2026-06-01 [土豆本豆: 张小珺和真格基金戴雨森最新一期播客，两个多小时，聊了AI行业复盘、创业机会和投资思考](1780307310230_m0e20jru.md) · B
+- 2026-06-01 [宝玉: 通用 Agent 就是未来的操作系统了，就像现在我们操作电脑需要借助操作系统，以后我们跟 AI 通信会通过 Agent OS](1780307301722_zet2czja.md) · B
+- 2026-06-01 [张小珺 Xiaojun Zhang: This is a new episode with Yusen Dai, Managing Partner at ZhenFund, the second e…](1780307296717_3qnpytar.md) · E
+- 2026-06-01 [mengxi-ream/read-frog: 🐸 Read Frog - Open Source Immersive Translate \| 🐸 陪读蛙 - 开源沉浸式翻译](1780307290892_aittfo1h.md) · C
+- 2026-06-01 [李不凯正在研究: 自从本月初订阅了 ChatGPT Pro 20x，并把几乎全部的工作都丢给 Codex App 之后，我深刻觉得中国互联网公司中，最懂 AI 的其实是京东，😀…](1780307289696_z6d3ziy4.md) · B
+- 2026-06-01 [编排税](1780307288986_w733q016.md) · A
+- 2026-06-01 [banboo: 未来的公司应该都不会养闲人，所以每个人都应该尽早寄生创业](1780307276639_684y836y.md) · C
+- 2026-06-01 [Leo｜一个人 + AI: 每个人都会面临的「编排税」—— 开AI助手便宜，审查和合并才贵](1780307273638_7xvrey2y.md) · C
+- 2026-06-01 [范凯说 AI \| Kai on AI: 这周在深圳见了一个两年没见的朋友](1780307268636_47kcbkvo.md) · C
+- 2026-06-01 [宝玉: 自从 Claude Design 可以共享额度，可以用的次数多了很多，但 Token 消耗还是很厉害](1780307259088_2d2qdgz7.md) · C
+- 2026-06-01 [我怎么用 AI 编程 2026.06](1780307253457_spkd2eft.md) · A
+- 2026-06-01 [Robinson · 鲁棒逊: 有一个联想 结合现在AI带来的生产力爆炸，让我意识到生产本身不再中心，谁控制了需求，才重要](1780307247819_zih96786.md) · C
+- 2026-06-01 [设计系统驱动智能体产品实践](1780301937237_2ileoez6.md) · B
+
+## 2026-05（187）
+
+- 2026-05-28 [Mengxin Liu on X: "用 DeepSeek 分析了一下 yetone 的 Yansu 架构，发现用的是 Wails 做的跨平台，是一个后端用 Go 前段用 JS 的组合，看上去很不错。https://t.co/tNF3bj6F2y" / X](1779929408698_n0gf9fjf.md)
+- 2026-05-27 [在中国，FDE 最危险的结局，是变成驻场外包](1779874367783_hhpycj7c.md) · A
+- 2026-05-27 [冗余才是人生安全边际](1779874300800_ntjwr4o0.md) · C
+- 2026-05-27 [Agent Harness定义核心定位与整体架构分层解析](1779874111292_2n18ailt.md)
+- 2026-05-27 [政企软件高报价背后的成本逻辑](1779873616627_dacdf7ro.md) · B
+- 2026-05-27 [AI工程从编码走向流程组织](1779872702749_21qv7otb.md) · B
+- 2026-05-27 [chenyou: @lb377204209 政策从一开始就没有真正的放水](1779871887697_49lni4ja.md) · D
+- 2026-05-27 [Dasheng: 县城婆罗门的问题在于资源是持续枯竭状态，现在中国的转移支付300倍于整个欧盟，490倍于美国，想想也知道完全没有可持续性](1779871710859_3j60m1bu.md) · E
+- 2026-05-27 [从 Prompt 到 Harness：如何理解大语言模型工程](1779871513987_prufda23.md) · A
+- 2026-05-22 [宝玉: 这图还挺有意思，描述了 AI 时代的 T 型开发者需要的能力模型](1779443453237_jjx2uh4y.md) · C
+- 2026-05-22 [来自 Codex 官方团队的分享：如何把 Codex 用到极致](1779441080895_3xzfy9sp.md) · A
+- 2026-05-19 [Thariq: a prompt I've been using a lot recently: implement &amp;lt;SPEC&amp;gt; and while you do…](1779153315221_fuwa1ke3.md) · B
+- 2026-05-19 [为什么我不“凭感觉编程”](1779153063281_lz9whcg5.md) · A
+- 2026-05-19 [How Claude Code works in large codebases: Best practices and where to start \| Claude](1779153058220_uiyvgvgi.md) · A
+- 2026-05-19 [Pi Coding Agent 最全面指南（完美支持/goal）](1779152760552_b81im4c4.md) · A
+- 2026-05-18 [microsoft/presidio: An open-source framework for detecting, redacting, masking, and anonymizing sensitive data \(PII\) across text, images, and structured data. Supports NLP, pattern matching, and custo…](1779077212263_2qrctn79.md) · B
+- 2026-05-18 [spaCy · Industrial-strength Natural Language Processing in Python](1779077170563_ptm4rtpj.md) · B
+- 2026-05-12 [范凯说 AI \| Kai on AI: 今天朋友跟我分享了一组数字，我有点沉默](1778563674862_nc6iy0x1.md) · C
+- 2026-05-12 [深度拆解：AI Agent Harness 的构造【译】](1778560158120_itnu53gf.md) · A
+- 2026-05-12 [裁员将继续直到我们学会使用人工智能](1778560146526_tjikcwkb.md) · B
+- 2026-05-12 [我是如何仅用 1 张图片和 GPT-v2 打造 Gucci x Crocs 营销活动的](1778560130339_arplkvls.md) · B
+- 2026-05-12 [代理开发生命周期](1778560129342_9mkqynwr.md) · A
+- 2026-05-12 [俞浩创业与姻亲资源争议](1778559764153_sz7k8skr.md) · E
+- 2026-05-12 [车间学习](1778557308431_mvgmm6t6.md) · A
+- 2026-05-12 [QingYue: \#multica 和大家分享一下我使用 autopilot 功能制作的巡查员提示词 他的功能主要在于识别你的issue 中的堵塞和异常，你不用时时刻刻盯着你的看…](1778557250449_cvgj9sdd.md) · B
+- 2026-05-12 [Rainman: 我现在越来越觉得，没上过班的人，最好还是去上个班](1778556774682_adxel0z8.md) · C
+- 2026-05-08 [Codex指令保姆级教程](1778224738704_0gmodyrx.md) · A
+- 2026-05-08 [姚金刚: 下午和@Vist8 交流，聊到Skill的设计思路，如何尽量的提升Skill前期的质量，以减少迭代的次数，一些经验分享： 1、先提前把自己的想法与经验，让GPT…](1778224016666_5moknm0x.md) · C
+- 2026-05-08 [baoyu-skills/README.zh.md at main · JimLiu/baoyu-skills](1778220841050_gf77aws1.md) · B
+- 2026-05-08 [2026年个人Agent自建实战：我用Vibe Coding + 借开源轮子，15天搭出每天都在用的工作系统（方法篇）](1778220356117_p0pcmhf6.md) · A
+- 2026-05-08 [Binary Analysis and Reverse Engineering - Agent Skills](1778219382932_iem70duq.md) · B
+- 2026-05-08 [Hoody: 实习第一年，mentor教会我的7个职场技巧 让我终身受用，年薪百万 1](1778210272916_phkd9qxy.md) · C
+- 2026-05-08 [如何成为精力旺盛的人——一个 90 天反向路径](1778208680997_0osq8kcv.md) · B
+- 2026-05-08 [CJ Zafir: My current workflow: 1](1778206496834_c8hhhjfh.md) · B
+- 2026-05-08 [Sandboxes - Docs by LangChain](1778206386158_ox8ysl10.md) · B
+- 2026-05-08 [LangGraph runtime - Docs by LangChain](1778206084233_9cwfsd1v.md) · A
+- 2026-05-08 [op7418/guizang-ppt-skill: A Claude Code Skill that turns prompts into horizontal-swipe magazine-style HTML decks — 10 layouts, 5 curated themes, WebGL hero backgrounds, single-file output.](1778204947263_0iopcx46.md)
+- 2026-05-08 [Jesse Lau 遁一子: 我全是被动收入](1778203819066_7kd8insp.md) · B
+- 2026-05-08 [王局拍案: 天涯藏书节选： 未来五年注意事项 https://t](1778201384465_ftmz7c80.md) · E
+- 2026-05-08 [Codex skill discovery silently misses global skill when entry file is SKILL.MD · Issue \#20637 · openai/codex](1778200426211_3qrc4h9j.md) · C
+- 2026-05-07 [Barret李靖: Spec-Driven Development 如果把任务的颗粒度拆得过细，且没有控制好任务边界和不做什么的声明，在调度多 agents干活时，特别容易出现过度…](1778148019197_mdcf85wh.md) · B
+- 2026-05-07 [Rahul Garg: This is what Palantir is](1778147792216_m4u3spbd.md) · E
+- 2026-05-06 [Claude: Introducing Claude Design by Anthropic Labs: make prototypes, slides, and one-pa…](1778059781060_mr4ygmc5.md) · D
+- 2026-05-05 [杨高能: 你的皮肤可能透露的5个关于你肠道的信息： 1](1777976758626_z1y7yyho.md) · E
+- 2026-05-05 [Leo: 所有人都怕 AI 抢走 95% 的工作](1777960715627_uvcw6qwv.md) · B
+- 2026-05-05 [Bill The Investor: 有人开发出了一款开源 AI 自动化工具，正悄无声息地驱动着数以千计的工作流](1777960709380_ex8oyh36.md) · E
+- 2026-05-05 [AI巨头PE合资服务模式](1777960696557_7327rwmb.md) · B
+- 2026-05-05 [Adam Ghowiba: JP Morgan's investment research team just shared exactly how they built their mu…](1777960692750_4kd9nuz3.md) · C
+- 2026-05-05 [计算机本科就业焦虑片段](1777960679952_4ejhbk5u.md) · E
+- 2026-05-05 [AI创业的Token视角](1777960675583_hzhuzwlp.md) · B
+- 2026-05-05 [贝索斯派对冷漠轶事片段](1777960668363_m3ulqlbe.md) · E
+- 2026-05-05 [vibeforge1111/keep-codex-fast: A backup-first Codex skill for keeping local Codex state fast, clean, and recoverable.](1777960656768_4h594f8a.md) · B
+- 2026-05-05 [Codex卡顿清理维护方法](1777960653715_zgmx4l23.md) · B
+- 2026-05-05 [黄光裕张近东资产传闻](1777960642117_tx1ts10c.md) · E
+- 2026-05-05 [毕业打工人与量化收入感叹](1777960637777_1d97xueg.md) · E
+- 2026-05-05 [工程商人与文人叙事断言](1777960629694_wvpffqp6.md) · E
+- 2026-05-05 [AI中转站利润取舍自述](1777960628134_di66ncw5.md) · E
+- 2026-05-05 [金融视角批判实体经济](1777960620812_bltryy23.md) · E
+- 2026-05-05 [品牌营销与身份消费洞察](1777960618224_kvuk3j93.md) · D
+- 2026-05-05 [龙虾U盘短期暴利观察](1777960607969_v8jrp8f9.md) · E
+- 2026-05-05 [Vincent Logic \| 信号＞噪音: 看了这张图狠狠懂了什么是“青春饭”](1777960607702_c5du6qyl.md) · E
+- 2026-05-05 [browser-trace by browserbase/skills](1777954750119_5wy1h8zv.md) · A
+- 2026-05-05 [lakysir/fpbrowser2api: fpbrowser2api逆向研究群-sora2/grok/veo/seedance2.0，QQ群：1035463132](1777954479196_qupxnkda.md) · C
+- 2026-05-04 [dontbesilent: 通过我的一万多条推文做的 dbskill，更新到 v2 版本了，践行开源精神 1️⃣ 你可以在 claude code 里面通过 /dbs 来进行对话，这个入口…](1777901849527_htw6ljjo.md) · B
+- 2026-05-04 [Jiayuan \(JY\) Zhang: 开源 Multica：专为 AI-native 团队设计的 Agent + 人的协作平台 https://t](1777901743787_fi947yl0.md) · C
+- 2026-05-04 [idoubi: 还帮我写了四个语言版本的 SDK👇 https://t](1777901734284_djbhsdi8.md) · D
+- 2026-05-04 [idoubi: 昨晚让 claude code 分析 claude code sourcemap，把 cli 和 ui 部分的逻辑抽出来用 go 重构，引入 open-agen…](1777901729102_yutcs8ki.md) · C
+- 2026-05-04 [idoubi: 让 Claude Code 分析了一遍 claude-code-sourcemap 源码，把逻辑全部抽离出来，写了个 open-agent-sdk，用于替代 c…](1777901718878_16fhd57i.md) · C
+- 2026-05-04 [Saito: ✨强烈推荐我最近疯狂使用的 Podwise Skills，它把播客这件事彻底改了：不是“听”，而是“直接提炼+对抗+整合”](1777901710641_h1x48vlp.md) · B
+- 2026-05-04 [Leo: Claude Opus 写代码，Codex 做 review](1777901698362_ga40zz1a.md) · B
+- 2026-05-04 [U哥: 5万点赞，1600 多粉丝，这类现象越来越常见](1777901681205_1lrnmfc0.md) · C
+- 2026-05-04 [Leo: 评论区有朋友问工具链接，整理一下我装过的这些抓取工具供大家自选 ▎50+ 平台结构化抓取 → opencli \(https://t](1777901675354_dnhlu1v7.md) · B
+- 2026-05-04 [Long Chen: 我还是低估了这个高质量信息库的价值 虽然现在输出已经好到让我惊叹，但数据库还需要针对平台优化，现在功力也只达到70%水平](1777901666207_5no5i1b0.md) · D
+- 2026-05-04 [深度解析：Codex Pet Skill](1777855838051_7r8imuzt.md) · A
+- 2026-05-04 [宝玉: 值得试试，挺有价值的，让 Codex 帮你分析电脑操作习惯+Codex任务执行情况，给出具体的对工作习惯上的优化建议](1777855823808_k1wvnqpu.md) · C
+- 2026-05-04 [海拉鲁编程客: 干完了，总计 13 个小时，分享一下结果](1777855812876_lb07qn2q.md) · B
+- 2026-05-04 [彩叶.Iroha: 在广州干了半个月兼职，确实过万了，不是标题党 整个四月兼职总共工作了15天左右，总共收入10140元](1777855809591_od0z8wue.md) · D
+- 2026-05-04 [所有人都低估了 AI 推理层的价值，而高估了大模型本身](1777855798574_j82m1qx9.md) · B
+- 2026-05-04 [Leva: 前几天一个退休官员来英国看女儿，我们一起吃饭，他说了几句话： 政府债务，已经成了GDP的增长方式](1777855791481_1od0wl9f.md) · E
+- 2026-05-04 [Barret李靖: 最近一直在研究 Codex 和 Claude Code 的记忆设计，发现两者的设计哲学和玩法有很大差异](1777855782788_k1z9vos0.md) · B
+- 2026-05-04 [沐阳: 一个 CLAUDE](1777855782080_pjy9esd9.md) · B
+- 2026-05-04 [小盖: 强烈推荐大家看看DeepMind CEO Demis的最新判断](1777855773036_uxf4sxwf.md) · B
+- 2026-05-04 [为什么所有人突然都在构建自己的代理框架，以及你为什么应该在意](1777855770475_asvl3uph.md) · B
+- 2026-05-04 [AI 会把软件带到过去够不到的地方吗？FDE 模式真正重要的地方](1777855758351_c3z3696y.md) · A
+- 2026-05-04 [Yangyi: 国内搞AI产品的没什么赚钱的，但做AI生意的很快赚钱： 一波是做账号生意的： 1、薅羊毛卖账号的 2、搞API中转站的 3、刷黑卡洗钱代充值的 4、卖发卡站中转…](1777855750792_dymagi4u.md) · C
+- 2026-05-04 [大多数公司根本没有为 AI 做好准备](1777855739666_dyv2skma.md) · B
+- 2026-05-04 [图拉鼎: 早上，我让 Codex 从昨天开始执行的“goal”整整跑了 21 小时 14 分钟，共消耗 9 亿 Token，终于进入了“Goal archived”状态](1777855738956_gpgpwnm4.md) · C
+- 2026-05-03 [AI investor + engineer discuss the current state of AI - YouTube](1777812334278_32vy8ko0.md) · A
+- 2026-05-03 [Jimmy Koppel: Human communication skills work for AIs too "Repeat back to me what I just said"…](1777812293040_9wgt5eex.md) · D
+- 2026-05-03 [Zayn Hao: 这款基于 Claude Code 的 Agent 工具，已经成为我的获取和使用 X/Twitter 的信息好搭子](1777812288748_ndjeya0f.md) · D
+- 2026-05-03 [2026年，日本国运的分水岭](1777812285373_3e2h8yln.md) · B
+- 2026-05-03 [X 上的 X Freeze：“Interesting how it works Elon puts up his own money, rounds up the absolute best AI t…](1777812275572_la2m7coh.md) · E
+- 2026-05-03 [Leo: Linear CEO Karri Saarinen 关于 AI 的长文，难得的克制观察，没有狂热也没有唱衰](1777812264621_aukm2mgw.md) · B
+- 2026-05-03 [Sammie 逗比国国王: 一直有个问题我觉得没有完美解决办法：让 AI 帮我写推文，写出来一眼就不是我的语气，而且各种AI味](1777812251475_2fnfh52i.md) · B
+- 2026-05-03 [Joruno: 把 Codex 塞进 Claude Code 之后，我真的回不去了](1777812249011_9pbxz380.md) · C
+- 2026-05-03 [lifcc: 之前用claudecode + codex 做了一个harness的项目，只要提交issue就自动有agent 做plan、impl、cross-review、…](1777812239933_0bizvl2y.md) · C
+- 2026-05-03 [Dennison: Yeah okay, Lego bros, brodettes and brotheys are cooked with this one](1777812238826_5qqgvdo4.md) · D
+- 2026-05-03 [Teortaxes▶️ \(DeepSeek 推特🐋铁粉 2023 – ∞\): this looks retarded but that's why I'll believe it https://t](1777812229410_b5v3fh95.md) · E
+- 2026-05-03 [Viking: 看别人推荐了 TS 大神 Matt Pocock 的个人 skills 集合：https://t](1777812224347_bcuwd1u9.md) · B
+- 2026-05-03 [warpdotdev/warp: Warp is an agentic development environment, born out of the terminal.](1777775482412_65vdqbp9.md) · D
+- 2026-05-03 [认识 Scout。这家开源公司的大脑](1777775474359_687nr2nc.md) · A
+- 2026-05-03 [X 上的 笑鸥smile：“国内目前的就业环境基本没有上升途径了 没有资源和大佬青睐，也很少听到创业的故事 甚至找工作都普遍面临找关系”](1777775468292_djyemr0f.md) · D
+- 2026-05-03 [X 上的 Yangyi：“我看推特上很多人在给企业做ai降本增效和数字智能化改革 这培训和落地其实是完完全全两件不同的事情 尤其是涉及到企业规模大一些的公司 还有不少朋友是在做toB的SaaS或者Aa…](1777775459847_xfamecx8.md) · C
+- 2026-05-03 [X 上的 花叔：“我每天和Claude Code一起工作10小时，说一个「反共识」观点，其实Anthropic一直在骗你～ Skills中的Skill.md和Claude.md文档其实都是： 越长效果…](1777775455381_c4nh7yrc.md) · C
+- 2026-05-03 [X 上的 Leo：“看完这条想冲去把 CLAUDE.md 改长——先别。 第二条实锤同意，Anthropic 自己 system prompt 几千 tokens，让用户写短是为了它自己留空间。 但我…](1777775446292_3vfdosqt.md) · B
+- 2026-05-03 [X 上的 阿绎 AYi：“Damn，OpenAI刚刚扔出的这个开源仓库，直接把语音交互的未来砸到了所有人脸上🤯🤯🤯 他们发布了gpt-realtime-1.5的官方语音控制组件，现在你真的可以用…](1777775443388_inpvnq6h.md) · B
+- 2026-05-03 [为什么住院 14 天必须出院](1777775435559_bg3nx1gl.md) · B
+- 2026-05-03 [X 上的 JewBiz：“参加饭局听一位退休领导教育刚进体制的儿子，这番话真的太通透了。 他说，泡茶就是泡人生，职场就是道场。 所有为难你的人，都是来渡你的：刁难修肚量，批评修定力，抢功修格局。眼下吃…](1777775430789_wqeacwbn.md) · D
+- 2026-05-03 [宁波保安孙师傅: 新能源车带来的物业管理新问题/当年做某房地产项目，因为要标配一个汽车4S店，我们就导入了福特](1777775417878_zvjanqcx.md) · E
+- 2026-05-03 [Bill The Investor: 有人刚刚开发出了我这辈子见过的最全面的 B2B 拓客工具](1777775416768_sbr7nnfm.md) · D
+- 2026-05-03 [阿绎 AYi: 这是今天最火的AI创业梗了哈哈哈，直接给我看笑了🤣🤣🤣 妈妈问我们家是怎么发财的](1777775407567_lw5yqbiv.md) · C
+- 2026-05-03 [Rocky: 最近看了一篇《人工智能裁员陷阱》的论文📑，让人瑟瑟发抖，这篇论文由宾夕法尼亚大学和波士顿大学的两位研究员共同发表，应该能让那些疯狂搞AI裁员的CEO们睡不着觉…](1777775402046_l3qacdgq.md) · C
+- 2026-05-03 [Oliver: Introducing Mesa: the most powerful filesystem ever built, designed specifically…](1777775393456_r9e0tzl9.md) · C
+- 2026-05-03 [How AI Actually Remembers \(Full Guide\)](1777775384836_zlrsunig.md) · A
+- 2026-05-03 [AI产品黄叔: 哇，我发现现在 Codex 20X的这个版本非常的超值](1777775380796_iuc0o0gf.md) · D
+- 2026-05-03 [Yihui: 前两年，公司想做 AI 转型，通常得先完成数字化转型](1777775371157_p9hiwdsr.md) · C
+- 2026-05-03 [郭宇｜Claude Code：知识工作者的终结](1777775362191_6xu8mq7m.md) · C
+- 2026-05-03 [独立开花卓富贵: Linear ceo 这篇对 AI 使用的分享真的太棒了](1777775348668_zj8oocn4.md) · B
+- 2026-05-03 [思维怪怪: OpenAI 发布博客详述 agent 编排工具 Symphony 的内部使用效果](1777775344402_dikk1q7l.md) · B
+- 2026-05-03 [Ruken: 很多人以为深圳支持 OPC 只是个政策， 但我看到的却是整个创业的组织方式都被重新改写了](1777775331136_yje258py.md) · C
+- 2026-05-03 [卡比卡比: slock 太牛逼了](1777775330095_35x3fyl2.md) · D
+- 2026-05-03 [AI 的经济账根本算不通](1777775321466_b1hs3zo0.md) · B
+- 2026-05-03 [YouMind 创业路上的非共识选择](1777775318922_ne9095re.md) · A
+- 2026-05-03 [房策: 立贴为证，这个回答和我的想法是一致的，未来几年，普通人如果觉得越来越累，还赚不到钱，不要怀疑自己的能力，也不要以为自己不努力，是绝大多数人在替一小部分人化债，这…](1777775291818_amyzzxi5.md) · E
+- 2026-05-03 [ℤ𝕙𝕚𝕨𝕖𝕟: 观察到最近有类短视频内容在崛起，就是探写字楼，特别在一二线城市，到处到是的CDB高楼大厦，到底是什么神仙公司在里面办公，看完视频都祛魅了，要么就十室九空，要么就…](1777775291478_274aiy4f.md) · D
+- 2026-05-03 [姚金刚: 人们为什么非要一较高下呢 一位行业大哥，分享了一个故事 多年前，他在做海外项目时，认识两位福建老板 这两位老板，在同时参与一个项目的竞标，在竞标现场，双方你来我…](1777775279954_cprp7jrn.md) · C
+- 2026-05-03 [✧ 𝕀𝔸𝕄𝔸𝕀 ✧: 这充分说明了第一性原理思考是多么多么的重要，这也是为什么很多程序员最后很容易贫穷一辈子的原因吧](1777775277956_vua2omma.md) · C
+- 2026-05-03 [雪踏乌云: 找合伙人，先看家室 我知道这个标题会得罪一大堆人](1777775269217_p80fcmcw.md) · C
+- 2026-05-03 [Leo: 恭喜你们有职业定位了：AI 包工头 Agent Operator，未来 5 年每家公司都会需要的新岗位](1777775266987_p10w5gsy.md) · B
+- 2026-05-03 [ratsxp: 越来越多人开始认可，AI时代会有「永久底层阶级」（permanent underclass），而这个阶级不是少部分无法使用AI工具的人，而是这个世界上大部分人](1777773940231_jogssqjh.md) · C
+- 2026-05-03 [sitin: pi-mono 是一个 TypeScript 单仓项目，核心产品叫 Pi，是一个跑在终端里的编程 Agent，读文件、写文件、编辑代码、执行命令都能搞定](1777773927681_qq0s4t63.md) · B
+- 2026-05-03 [墓碑科技: 每做一万次乳房X线筛查，就会有8个原本健康的女性死于乳腺癌](1777773925053_cnth0tuo.md) · E
+- 2026-05-03 [躺平不需要洗脑，普通打工人，根本躺不平](1777773918551_gt17j1gd.md) · D
+- 2026-05-03 [Leo: 从 Claude 转向 Codex 的越来越多了 我也有同感 没 100% 切到 Codex 是因为我还在双轨用： CC 写日常对话+内容/工具代码+工作流编排…](1777773913426_m8qowaps.md) · C
+- 2026-05-03 [铁锤人: 做内容运营，生图生视频，你现在还在跑好几个工具吗](1777773908135_6x102wrc.md) · C
+- 2026-05-03 [民营企业家为何是目前最难、最焦虑的群体？](1777773906855_ae0lg2ya.md) · D
+- 2026-05-03 [AB Kuai.Dong: 这场马斯克与 OpenAI 的撕逼中，证据则是支持了马斯克一方](1777773893083_xcfzizbk.md) · D
+- 2026-05-03 [Claude Code 的 32 个使用技巧 - 入门，进阶，高阶](1777773891761_qxx3riar.md) · A
+- 2026-05-03 [向阳乔木: 读到篇文章，作者把AI发展对照集装箱的发展历史，视角独特，也有数据展示，很有趣](1777773881937_aqqmglqo.md) · B
+- 2026-05-03 [Petrichor: 最近，美国一大批高校突然开始大幅削减专业](1777773871878_rhs9bez2.md) · D
+- 2026-05-03 [智能体记忆工程](1777773392415_h2mg49cm.md) · A
+- 2026-05-03 [b-nnett/codex-plusplus: Codex++ tweak system for the Codex desktop app](1777773375757_oqztfs8u.md) · C
+- 2026-05-03 [Han1: 说的道理没错，但有个前提假设不成立：现实中不是一张白纸 大组织里几百个 Figma file、成熟的 Design System、跨团队协作流程、PM/Dev/…](1777773361771_2a61k5fi.md) · C
+- 2026-05-03 [Barret李靖: Claude Code 的核心是一个 while 循环：模型生成响应 → 如果包含工具调用，执行 → 结果返回 → 模型生成下一个响应 → 持续循环](1777773351675_2ol8q4b6.md) · B
+- 2026-05-03 [Bill The Investor: 99% 的 AI Agent 开发者都卡在了从 Demo 到 Business 的临界点上](1777773351179_r45dw4ob.md) · C
+- 2026-05-03 [九原客: 关于最近尝试slock、multica等多Agent有感： One agent 还是 multi-agent](1777773343030_53kgskct.md) · C
+- 2026-05-03 [阿绎 AYi: 我刚才看完这个Cursor SDK的演示被惊艳到了🤨🤨🤩🤩 这可不是啥炫技的demo 啊兄弟们， 视频演示的是 AI数字员工正式上岗的第一天， 客户发了…](1777773336776_vt0f7r9h.md) · C
+- 2026-05-03 [Geek Lite: 一个本地优先的知识工作台，面向需要同时管理多个 AI 代理和子代理工作流的用户，提供可审查的 AI 编辑流程](1777773332072_d38zqfjj.md) · D
+- 2026-05-03 [孟岩-Mike Meng: 简直不可思议，这个数据不像是发达经济体](1777773322575_v7mvxlie.md) · D
+- 2026-05-03 [Geek Lite: 提供一个多 Agent 编排的看板与开发环境，让人类在审查变更的同时并行调度多个 AI Agent 执行任务](1777773318321_byedyaob.md) · B
+- 2026-05-03 [Jason Zhu: 英文圈 freelancer 每月从客户那拿 $5K-$25K 做的事 Anthropic 官方在一个 30 分钟的视频里全讲完了 中文圈知道的人不到 1%，传…](1777773311910_ey642i1b.md) · B
+- 2026-05-03 [姚金刚: 如何判断一个商业信号 一个朋友，帮一个县城的小财税公司，做了一下服务类GEO优化 因为没有什么竞争，被AI推荐的效果就非常好 一个月获取了十几条线索，成交了2单…](1777773309386_1v7xe0gy.md) · C
+- 2026-05-03 [郭宇 guoyu.eth: 马上我的主要日本法人 chekusu Inc 又到一年一度的决算季，我打算做一个基于 agent mail/phone 的员工 AI 系统，把每个员工的行政，薪…](1777773295260_ml7cu3b1.md) · B
+- 2026-05-03 [铁柱: 高强度AI coding这么久，很深的感悟在于： 1、搭建一个大体的框架或者只是服务于自己的某些特定功能是非常容易的，但是要进入生产环节，具备真实的可用性，真的…](1777773279073_q2l426nt.md) · B
+- 2026-05-03 [姚金刚: 元skill的价值和意义，其实被大大低估了 两年前，我和向阳研究提示词的时候，花了不少精力，各自打磨出了属于自己的元提示词 后来在各种提示词生成、任务拆解、方案…](1777773272505_ruu5njdv.md) · C
+- 2026-05-03 [范凯说 AI \| Kai on AI: 今天去一个朋友的公司，他们做原油大宗商品，一年几百万美金的贸易额](1777773264183_9vzerwhw.md) · C
+- 2026-05-03 [陈成: 写了个小工具 codexthropic，一个本地 Node 代理，把 Anthropic Messages API 翻译成 OpenAI Codex Respo…](1777773261886_a2karj5e.md) · A
+- 2026-05-03 [claude 被封号，不用怕，我们有个更快更适合的模型](1777773251265_hcvajx3q.md) · B
+- 2026-05-03 [AI少年: 卧槽，这个给Claude Code 配置中转站或者第三方大模型的方式我还是第一次学到，太简单好用了，强烈推荐一波](1777773247736_9i2othnn.md) · C
+- 2026-05-03 [酱紫表: Codex + Remotion 做动画真还行，比自己弄简单很多，提交点素材描述好需求能做到可用的水平了](1777773237253_mvmm06yr.md) · D
+- 2026-05-03 [WquGuru🦀: Agent SDK赛道越来越卷了，继Claude Agent SDK推出一年，Codex Agent SDK推出一个月，又涌入一个新的竞争者——Cursor A…](1777773236784_gjhgl9y3.md) · C
+- 2026-05-03 [Yangyi: 现在ai很容易带来虎头蛇尾的项目 启动成本很低 人的贪婪导致希望持续利用等待时间 所以就会觉得多开几个窗口并行作业比较好 然后也很快能拿到demo 但是demo…](1777773228241_0x4hcihv.md) · C
+- 2026-05-03 [摸鱼巨匠🔨: 最近两周分享得比较少，因为正在打造一个用 Agent 自动化运营跨境电商的工作流，核心工具链已经打磨完成了，马上要注册我的店铺营业执照，开启我的跨境电商之旅](1777773225643_3z4zk2za.md) · B
+- 2026-05-03 [没有创业者气质的人，可能连普通员工都做不了](1777773218485_y4tqkzg8.md) · B
+- 2026-05-03 [Moxt 实测：把你的组织，折叠进一堆文件夹](1777773217374_2thgk5dp.md) · B
+- 2026-05-03 [艾略特: 围观了一天 X 上对 Cursor SDK 的反应，最值得看的不是 Cursor 自己的官方说法](1777773200762_0ddei84a.md) · C
+- 2026-05-03 [孟岩-Mike Meng: 我先定义一下 AI 时代的普通人，然后再说一个帮大家缓解焦虑的事情](1777773200092_74nhlqkh.md) · B
+- 2026-05-03 [D.C: 前同事今年四月份从公司离职了](1777773191071_pa79eqps.md) · D
+- 2026-05-03 [indigo: AI 不是平权工具，是极端放大器](1777773185860_kxdq5ex6.md) · C
+- 2026-05-03 [OpenAI开源Symphony：给每一个任务配一个永不下班的 AI员工](1777773180168_8h242azp.md) · A
+- 2026-05-03 [Yangyi: 从AI出现开始，黄金就是满地都有了 我分享一个方法，就是做内容聚合，靠内容深加工打爆一个垂直类目，依托社媒平台引流卖内容社群付费，最终服务这群用户，分销他人商品…](1777773170636_fiuj79u6.md) · C
+- 2026-05-03 [AI coding 里真正有复利的东西](1777773156220_vl1zon4o.md) · S
+- 2026-05-03 [阿绎 AYi: 我等了整整一年的东西，终于来了， Cursor今天正式发布了它的SDK， 这回可远不只是又一个编程工具的小更新， 可以说是人类历史上第一次， 把生产级的编程能力…](1777773155743_h1m8o39p.md) · C
+- 2026-05-03 [凡人小北: 刚好今天下午跟团队开会，聊到了 Symphony](1777773143931_5olaslbu.md) · B
+- 2026-05-03 [Roland.W: 这份白皮书卖B端企业主 市场前景非常不错吧哈哈哈 https://t](1777773136948_ps6gh1qt.md) · E
+- 2026-05-03 [DanOps-1/Gpt-Agreement-Payment: ChatGPT Plus/Team/Pro 订阅协议端到端重放工具集 · hCaptcha 视觉求解器 · 反欺诈机制实证研究 / End-to-end protocol replay toolkit for ChatGPT Plus/Team/Pro subscription with from-scratch hCaptcha s…](1777773132949_zg3wxp8j.md) · C
+- 2026-05-03 [Frank Wang 玉伯: AI 产品的商业模式，正在快速趋同： 1、会员套餐，是收取壳的钱](1777773124771_9itqblaw.md) · C
+- 2026-05-03 [宝玉: 转译：深度拆解 Hermes Agent 的记忆系统：它如何修正 OpenClaw 的误区 如果你读过我之前关于 ChatGPT、Claude 以及 Clawd…](1777773112899_zcbfu6ja.md) · A
+- 2026-05-03 [victor-wu.eth: 真用上了，不是看都没看就再在指指点点](1777773111927_jalkfvwr.md) · D
+- 2026-05-03 [宝玉: Cursor 今天开放了官方 TypeScript SDK 公测，把驱动自家编辑器、CLI 和网页版的智能体（agent，可自主执行编码任务的 AI 助手）整套…](1777773101090_mhb2gruf.md) · B
+- 2026-05-03 [Yangyi: 以前的时候创业公司还比较容易活 因为真正能做出demo的人 也并不多 靠自己的背景 进入资本游戏 组织牛人开始圆梦 有很多大公司没有看到的缝隙 还可以很快进入 …](1777773092925_aqfkj5c1.md) · C
+- 2026-05-03 [Yangyi: 真的，每天marketing工作 全部是牛马AI在完成 我现在已经成了agent的顾问 我只需要输入insight 它做完了让我审阅 和顾问唯一的区别是 顾问是…](1777773087997_3hv19q8r.md) · D
+- 2026-05-03 [波波 Lucy: 如果你怀疑自己睾酮水平过低…… 低睾酮（医学上称“低雄激素症”或“继发性/原发性性腺功能减退”）绝不是“小事”](1777773081365_s0pcv9wb.md) · C
+- 2026-05-03 [阿绎 AYi: 我终于想明白，为什么Karpathy的LLM Wiki模式，在自主Agent身上完全行不通了](1777773078711_snzfi72r.md) · B
+- 2026-05-01 [陈成: 花了点时间把 Claude Code 的社区 Skills 生态摸了一遍，规模远超预期](1777627759569_6u4mmhuj.md) · B
+- 2026-05-01 [企业 AI 转型，究竟该怎么做？](1777627755389_jymleemf.md) · B
+- 2026-05-01 [陈成: 发现一个工程水准极高的项目：Codex++，给 OpenAI Codex 桌面应用做的插件系统](1777627739404_mdbwbu8e.md) · A
+
+## 2026-04（430）
+
+- 2026-04-30 [皓樂芒: 澳洲今年的投行 Graduate Offer 基本也要收尾了，了解到的实际情况确实寒意浓，位置少 尤其是头部大行（UBS、高盛、JP Morgan） 这一档，起…](1777545347090_p5qr7zgh.md) · C
+- 2026-04-30 [Leo: 看了一圈大 V 解读 Cursor SDK 的爆款推， 都在讲它多牛、什么操作系统、范式转移](1777544990127_q74rc6q0.md) · B
+- 2026-04-30 [悉尼閑人: 「香港身份烂尾潮」正在大陆中产阶级蔓延开来](1777544259709_ld8yfifh.md) · D
+- 2026-04-30 [Leo: 没建工作流前，每天起床打开 X 刷一会儿就开始焦虑——爆款看不完、KOL 推文跟不上、PM 平台又升级了不知道哪条该 follow](1777543521862_6zj4ybyh.md) · C
+- 2026-04-30 [WquGuru🦀 on X: "最近在思考AI时代软件团队的真实未来—— 1. 更多讨论约束，而非实现 过去我们总在“代码脏不脏”“风格对不对”上耗费大量时间，现在通过Agent Guardrail…](1777543345685_ht3wkxdx.md) · C
+- 2026-04-30 [Yangyi: 我一直觉得中国的生产力软件生意没什么意思 在国内做软件 不做OEM不搞分销 能跑起来的屈指可数 很多人说国内做AI软件就得做自媒体人群 这话只能说对了一半 但凡…](1777529192690_abb42aru.md) · B
+- 2026-04-29 [NoraX: 肌肉还是最强效的“天然降糖药” 我们吃进去的碳水化合物（米面糖），最终会变成血糖](1777462041915_05qh71ta.md) · D
+- 2026-04-29 [Echo设计工作记忆系统](1777460706531_f0fgg99z.md) · D
+- 2026-04-29 [AI工作流记忆系统](1777460607898_f4jbhey7.md) · D
+- 2026-04-29 [Han1: 已经在整理Echo的harness了，争取五一可以发出来](1777453958077_85vu5skp.md) · D
+- 2026-04-29 [我在家找到了当老板的感觉](1777450893603_778yymqo.md) · B
+- 2026-04-29 [Leo: 群里讨论开源 bot，多数人共识就一句话：赚钱的 bot 没人会开源](1777444673796_0d3awpd6.md) · C
+- 2026-04-29 [Yangyi: 现在虽然有了很多Agent 但我发现了接下来的一个问题 我经常review agent的文档 然后发现对比起来有些困难 目前还没找到比较好的对比策略 审查成本还…](1777443474868_23qtgz6n.md) · D
+- 2026-04-29 [创意工具的 Agent 化：从 Photoshop Action 到 Claude for Creative Work](1777439024306_jzd6wznx.md) · S
+- 2026-04-29 [一个月涨 1 万粉，我没洗过一篇稿：Claude Code + Obsidian 原创系统公开](1777438545732_we0556mo.md) · B
+- 2026-04-28 [Lenny Rachitsky: My biggest takeaways from @evanspiegel: 1](1777361684588_6feea94l.md) · A
+- 2026-04-28 [Build Automated Loan Income Verification with LlamaParse + Claude Agent SDK](1777356514543_bizr75rm.md) · B
+- 2026-04-28 [jolestar: AI Coding 时代，好的编程习惯仍然重要 最近做一个 Agent benchmark，发现不能简单地用开发者视角来评估一个编程任务对 AI 的复杂度](1777356504627_542llp0g.md) · B
+- 2026-04-28 [烟花老师: 最近还有一个更明显的感受： Codex 真好用到会上瘾，但只要总被打断，那个状态就断了](1777356500886_0zxfy872.md) · B
+- 2026-04-28 [Andrew Ng: AI-native software engineering teams operate very differently than traditional t…](1777356496063_fmgqq8g3.md) · B
+- 2026-04-28 [RobinSeun\_维京黑船: 跟你们分享个真实的故事，也是个创业骗局： 当初有一位部委规划院的领导下来创业，公司成立的时候拉了很多部委的、协会，投资公司的领导来给他站台](1777356492140_rd24v8e0.md) · D
+- 2026-04-28 [Codex，他真的，我哭死](1777356484486_12iitgc9.md) · B
+- 2026-04-28 [蒸馏管道中的幽灵](1777356480703_7zh3nmct.md) · B
+- 2026-04-28 [Jerry Liu: Processing loan applications traditionally takes a staggering amount of time goi…](1777356472451_ov9ry3y9.md) · C
+- 2026-04-28 [宝玉: 《Cursor 3 反馈整理：用户真正想要的不仅是“更炫的 IDE”，还想它是一个可靠的 AI 开发工作台》 整理自 Eric Zakariasson 征集 C…](1777356469261_o2w5ja5c.md) · A
+- 2026-04-28 [Running AI agents to automate outreach at scale](1777356464766_hvzudkxm.md) · A
+- 2026-04-28 [Rainman: 之前有个群友说的很好，我觉得我的想法跟他一样](1777341197544_i7l6zi2u.md) · E
+- 2026-04-28 [Tz: 工业时代的“上班”，AI时代的“托管” -------- 讨论AI绕不开失业，但这个话题已经被说烂了](1777340338429_82ckilf3.md) · B
+- 2026-04-28 [Agentic Engineering: How Swarms of AI Agents Are Redefining Software Engineering](1777338981403_hcaql4nu.md) · A
+- 2026-04-28 [How Credit Genie used Insights Agent to improve their AI financial assistant](1777338979559_tymyo88w.md) · B
+- 2026-04-28 [The Runtime Behind Production Deep Agents](1777338976973_n31zm4kk.md) · A
+- 2026-04-28 [Deep Agents Deploy: an open alternative to Claude Managed Agents](1777338956615_sg7e2k5v.md) · B
+- 2026-04-27 [Kai: 我在做一个付费社群，1000 美金，针对中转站行业的人](1777333337874_222xwfev.md) · E
+- 2026-04-27 [Frank Wang 玉伯: 国内 AI 应用创业的营商环境是： 1、20 美元/月的订阅套餐，积分制](1777333326781_zfbft0dn.md) · D
+- 2026-04-27 [上下文提供者：代理与工具之间缺失的层](1777333325153_397daumv.md) · B
+- 2026-04-27 [姚金刚: 朋友分享了一个趣事 前国内最大的SEO公司之一，如何拿下大单](1777333318585_shfa5x78.md) · D
+- 2026-04-27 [阿绎 AYi: 说个扎心的真相，90%的AI工程师，其实什么都没做出来 Cluely的CEO Roy Lee在NYU做活动，当场掏500美元现金，问在场所有学AI的学生和工程师…](1777284423048_nax2vjbv.md) · C
+- 2026-04-27 [Lody: 随时随地指挥你的 Agent 团队 - Build 03 讲稿](1777284386514_35sxttm5.md) · B
+- 2026-04-27 [二十年才看懂：产品到创业，我用两次失败一次重生换来的答案](1777284323234_z87lo7ve.md) · B
+- 2026-04-27 [如何赋予 Claude 完美记忆（完整指南）](1777284223535_yj3wcu7b.md) · B
+- 2026-04-27 [Lexi 勒西: 国企下岗跟这次的 AI 裁员，有很多的相似之处](1777283928535_zg7w65xs.md) · D
+- 2026-04-27 [澳洲木匠: ai对发达国家就业的打击真是空前绝后的，私校都有一种全军覆没的荒谬感 我在澳洲，最近和几个孩子同样毕业于私校的华人家长聚餐，交流近况，现实触目惊心](1777282273410_xd14ruoy.md) · D
+- 2026-04-27 [How Anthropic’s product team moves faster than anyone else \| Cat Wu \(Head of Product, Claude Code\) - YouTube](1777278168486_lsnu40np.md) · A
+- 2026-04-27 [Elon's $60B Cursor Bet, Claude kills SaaS, and OpenAI's Mass Departures \| EP \#249 - YouTube](1777278092232_qjosoek0.md) · C
+- 2026-04-27 [Marc Andreessen on media in the age of memes \| The a16z Show - YouTube](1777278035961_vf4qei46.md) · B
+- 2026-04-27 [How to build a defensible company in the AI era \| Evan Spiegel \(Snapchat CEO\) - YouTube](1777277960014_ki8wiu0q.md) · B
+- 2026-04-27 [Luo Fuli: OpenClaw, Agent Frameworks — The AI Paradigm Has Already Changed Dramatically\! - YouTube](1777277817501_fcgkva00.md) · A
+- 2026-04-27 [AGENT 时代的投资与生存心法 / Rewired Meetup 分享回放 2026-04-18 - YouTube](1777277498871_swgydeep.md) · B
+- 2026-04-27 [使用子代理保持你的 Claude 代码上下文整洁](1777277196863_2qqfukxn.md) · B
+- 2026-04-27 [Claude 托管代理中的内存](1777277191230_vurb2zvo.md) · B
+- 2026-04-27 [DESIGN.md \| AI 匹配你的用户界面所需的那个文件](1777277112489_fw91n7kl.md) · A
+- 2026-04-27 [当 agent 足够强之后，我们该如何把它们组织起来](1777276959728_ld22smdu.md) · A
+- 2026-04-27 [响马: 未来会有很多微 agent，一个 agent 只处理一个具体事务](1777276942461_923ym8eg.md) · C
+- 2026-04-27 [分享 12 本好书：2025 年读过的高分书单](1777276923357_ymbt7v2u.md) · C
+- 2026-04-27 [Rusttt: 小红书上讲，女大见世面要去生产端，而不是消费端](1777264514957_836c0egl.md) · D
+- 2026-04-27 [How To Build A Company With AI From The Ground Up - YouTube](1777264051754_8h3syq7i.md) · A
+- 2026-04-27 [victor-wu.eth: 使用 Multica 已经半小时了，我的耐心快要被这款软件这么殆尽了，包括但不限于： 1](1777264003897_owjuiyfb.md) · D
+- 2026-04-27 [Haipo Yang: 我用AI辅助写文章主要有四种方式](1777263433323_xzycipo4.md) · B
+- 2026-04-27 [Leo: 5 天监控自己的工具，306 次触发，100% 误报](1777263424020_vwwt25lq.md) · B
+- 2026-04-27 [DinoDeer: 需要人工销售的商业模式，是垃圾产品叠加的垃圾商业模式](1777263414497_19py1vem.md) · E
+- 2026-04-27 [姚金刚: 当Agent数量超过人类： 1、现在的世界，已经是有图不一定是真相了，有图只能证明“有一个图”，不能证明“发生过一件事” 2、大概过三五年之后，这个世界真正干活…](1777261819532_qaibln6y.md) · C
+- 2026-04-27 [硅谷AI狂飙背后的速度困局](1777261707640_z5oiny1l.md) · A
+- 2026-04-27 [孟岩-Mike Meng: 通常硅谷游记的价值都不高，往往透着一股刘姥姥进大观园之后回村里吹牛的土味](1777261638630_r621s0um.md) · B
+- 2026-04-27 [全员 token-maxxing，一场没人敢停的军备竞赛](1777261610989_0dmip5gx.md) · A
+- 2026-04-27 [如何构建一家单人服务即软件公司](1777261353286_uiquh2d1.md) · B
+- 2026-04-27 [The West Forgot How to Build. Now It's Forgetting Code](1777260326185_cbv5vjl6.md) · A
+- 2026-04-27 [AI 时代的身份困局 — 人类：Agent 的 Agent，Token 的 Token](1777260304342_o4b7nnc8.md) · B
+- 2026-04-27 [Tz: 人类：Agent 的 Agent，Token 的 Token 你以为 AI 时代，人类会分成会用 AI 的人和不会用 AI 的人](1777260288340_sb5odbd1.md) · C
+- 2026-04-27 [klöss: The AI space is accelerating so damn fast every week](1777260247144_i282y6a4.md) · C
+- 2026-04-27 [Mario Zechner: i'm sort of addicted to working my butt off, always have been](1777260077903_qh85xe18.md) · C
+- 2026-04-27 [AI味内容检测工具框架](1777259999512_lrarm4h3.md) · B
+- 2026-04-24 [Viking: 最近看到的少有的佳作：《Agents with taste》https://t](1777005656981_9tv00rhk.md) · C
+- 2026-04-24 [奥一AoYi: 国内谁最先把这件事商业落地， 谁就在养老赛道一骑绝尘](1777005538335_4vzfx9te.md) · D
+- 2026-04-24 [Agent Vault：开源凭证代理和代理保管库](1777005422004_86abvjhb.md) · A
+- 2026-04-24 [Leo: "从多 Agent 架构收敛到单意识 + MCP"——这句话把我在折腾的事一句话概括了](1777005416568_f39pod6w.md) · C
+- 2026-04-24 [Geek Lite: Autoresearch - 全自动化软件开发工具 基于 GitHub Issue 驱动，用多个 AI Agent 轮转交叉审核实现全自动软件开发闭环](1777005406396_jgpn6tz4.md) · C
+- 2026-04-24 [GitHub 联合创始人：Git 这个工具从来没被设计过](1777005404395_jb4oo0dz.md) · B
+- 2026-04-24 [Saito: git worktree 在 Agent 时代的致命局限性： ▫️每个 worktree 都是完全隔离的文件夹，Agent 之间根本看不到彼此正在改的文件和内容…](1777005396849_ncljx3ga.md) · D
+- 2026-04-24 [郭宇 guoyu.eth: 晚上给 wanman 做了两个事儿，一个是基于 db9 的搜索，支持跨 story 和 story 内部搜索，另外一个是支持了 codex 调用 GPT ima…](1777005385252_7n49f2na.md) · D
+- 2026-04-24 [逸尘: 来了！来了！我把大家呼声最高的微信聊天记录解析全流程封装成了一个Skill：https://t.co/rUmPngKPvr 大家把仓库地址丢给AI，他就能一步步…](1777005382862_b69miz28.md) · C
+- 2026-04-24 [yichen-skills/wechat-daily at main · mcncarl/yichen-skills](1777005376502_q7ez1m3h.md) · B
+- 2026-04-24 [Jack Zhai: 今年注定是就业生态发生深刻改变的一年](1777005359521_um8si5xi.md) · D
+- 2026-04-24 [iPaul: 天涯神贴：顶级养生精华](1777005356608_fwc2jg0r.md) · E
+- 2026-04-24 [Leslie🔶大心脏: 学AI 最好的办法是跟 @beefnoode 这样的 00 后见面，见完豁然开朗，00 后最懂如何在东西方套利的AI 创业者之 --把国内的软件系统做成 age…](1777005349316_8f9ej67f.md) · C
+- 2026-04-24 [周尔复: AI 大跃进 最近加入新项目组后，参加了几次会议，接触了下 CTO 和技术总监，发现他们对 AI 的认知已经越来越浮夸了，觉得 AI 能搞定一切](1777005347469_1riydnqf.md) · D
+- 2026-04-24 [逸尘: 2026年普通人能够赚到百万甚至千万的机会，就在企业AI转型这波机会](1777005337204_txzgd4cm.md) · D
+- 2026-04-24 [Leo: 最近看到一堆"Claude Code 用户悄悄转投 Codex"的帖子，我也勉强算是其中之一吧](1777005335918_vtqsuyjg.md) · D
+- 2026-04-24 [Joruno: 最近我在用 n8n + Scrapeless + Claude AI 搭一套获客自动化，效果非常稳，分享给你们](1777005324294_9drwk8sx.md) · C
+- 2026-04-24 [OpenAI Co-Founder: AI Is About to Go Parabolic. Here's What's Next - YouTube](1777005322835_vjkvoxge.md) · C
+- 2026-04-24 [Tinyfool: 这都是自己想的，或者叫做你在乎，那就是问题，你不在乎就无所谓](1777005313678_ptsrpbni.md) · D
+- 2026-04-24 [CI/CD Breaks at AI Speed: Tangle, Graphite Stacks, Pro-Model PR Review — Mikhail Parakhin, Shopify - YouTube](1777005302755_6jkqu5wr.md) · A
+- 2026-04-24 [Hermes Agent + Webhooks: How to Actually Build Automated Workflows - YouTube](1777005292828_g7ftmcnf.md) · B
+- 2026-04-24 [xwh: 是的啊，所以 Steve Yegge 搞了 beads，但是我觉得不好用，也在迭代一个自己的工具](1777005263668_d1srf5jr.md) · D
+- 2026-04-24 [Yangyi: 其实小龙虾原生的抓取机制一直不是很完善](1777005258362_3hilpakv.md) · B
+- 2026-04-24 [North@CreaoAI: 市场可以原谅有bug的产品，但是市场不会接受过时的产品](1777005252946_q920eem4.md) · C
+- 2026-04-24 [打破信息差：分享我干出十几条图文爆款的Agent工作流（附案例分析）](1777005244685_w3h71l36.md) · C
+- 2026-04-24 [Geek Lite: 消费级显卡其实有足够的硬件潜力，只是通用框架把大部分性能浪费在无效开销上](1777005244034_qg7cgfos.md) · B
+- 2026-04-24 [多智能体：实际有效的是什么](1777005233486_vig5s5nw.md) · A
+- 2026-04-24 [Russell Kaplan: \# The Path Forward for AI Startups A lot of founders are messaging each other af…](1777005226432_h6mk6bry.md) · B
+- 2026-04-24 [Shopify’s AI Phase Transition: 2026 Usage Explosion, Unlimited Opus-4.6 Token Budget, Tangle, Tangent, SimGym — wi… \| Readwise](1777005213812_lgb5cyhz.md) · A
+- 2026-04-24 [MUX0原生智能终端解读](1777003013860_f9jhpkvp.md) · B
+- 2026-04-24 [Wei-Shaw/claude-relay-service: CRS-自建Claude Code镜像，一站式开源中转服务，让 Claude、OpenAI、Gemini、Droid 订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。](1776992114972_nj70a5nq.md)
+- 2026-04-23 [sub2api/README\_CN.md at main · Wei-Shaw/sub2api](1776937256338_co9sl15u.md)
+- 2026-04-23 [195440/codex-to-cursor: 将 Codex Chat Completions 上游桥接为 Cursor 可用的 /v1/responses（OpenAI Responses 形态）](1776928074311_2uomfqnu.md)
+- 2026-04-23 [How to really stop your agents from making the same mistakes 如何真正阻止你的员工犯同样的错误](1776924116517_v2fvz1t1.md) · A
+- 2026-04-23 [宝玉: 陈天桥的推文，借 Manus 的事谈在监管、地缘政治和公众审视都在快速变化的时代，跨多个司法管辖区建一家 AI 公司，到底需要什么](1776905064425_t8r9lqcz.md) · C
+- 2026-04-22 [Leo: 这篇 24 万阅读的横纵分析法 Article 刷屏那天，我的第一反应是想装他的 hv-analysis skill](1776846327814_rdp4ctna.md) · B
+- 2026-04-22 [Jingle Bell 初号机: 提供一个 ai 赚钱思路： 我总算是知道为什么大家都爱跟实业老板打交道了 懂的不多 + 打钱爽快 尤其是那些创业成功过的，敢打敢冲 只要能解决痛点都愿意尝试 视…](1776845857011_lgykytk2.md) · D
+- 2026-04-22 [我逆向了Claude Design！免费开源！设计逻辑全公开](1776834340375_2flg3oy8.md) · B
+- 2026-04-22 [Leo: 过去这一周 CF 基本把 agent 生态补齐了——Agents SDK v2、Agent Memory（managed context 外挂）、Browser…](1776830784698_b4bu4m1u.md) · B
+- 2026-04-22 [Chatgpt复盘，和接下来想做的事](1776830771117_grohwh1i.md) · D
+- 2026-04-22 [alchaincyf/huashu-design: Huashu Design · HTML-native design skill for Claude Code · Claude Code 里 HTML 原生的设计 skill · 高保真原型 / 幻灯片 / 动画 + 20 设计哲学 + 5 维评审 + MP4 导出 · Agent-agnostic](1776830761256_fpy21dca.md) · B
+- 2026-04-22 [雪踏乌云: 世界是个巨大的草台班子，你永远不知道上面的是什么人 去年8月做外包遇到个国企老大哥，有点人脉和资源，找我做了个mvp，后面就认识了](1776830721887_f4j8t74l.md) · C
+- 2026-04-22 [Leeway: 用了一天 @AlchainHust 的 Huashu-Design skill, 一句话感受: 终于不用像 Claude Design 那样被限流了](1776830709178_c0easw50.md) · B
+- 2026-04-22 [Leo: 继续搞 Hermes，终于调到能进实战了](1776830705450_178mdb9w.md) · B
+- 2026-04-22 [一个人用 AI 做 Polymarket 量化的完整踩坑记录：15 个策略、5 个深坑、14000 字实战复盘](1776830696296_hmqlsezz.md) · C
+- 2026-04-22 [Why AI could replace 50% of product managers \| Nikhyl Singhal \(Meta, Google\) - YouTube](1776830052386_bab50rvg.md) · B
+- 2026-04-22 [Hermes Agent：人们实际用它做什么（Reddit、X 和 YouTube 最近 30 天的数据）](1776830022777_f90a3wy1.md) · C
+- 2026-04-22 [Nicolechan: 汇报一下最近的成长吧 最近最大的进步应该是没有太多发内容羞耻了 从前的我，特别在意内容质量 还是i人 因此我通常觉得一周发一两次就是我的极限了 发太多感觉害怕打…](1776830001331_rj1boaxj.md) · C
+- 2026-04-22 [鸭哥: 一个职业决策，我花十分钟用语音把所有背景倒给AI——历史、目标、老板的看法、VP可能的顾虑](1776829980377_c3huz1t8.md) · B
+- 2026-04-22 [Robinson · 鲁棒逊: 问题：个体如何应该AI时代的资本集中](1776829931515_t9wx2586.md) · C
+- 2026-04-22 [Leon: 上礼拜看完同事推荐的一本书Breath\(中文叫呼吸革命\)，还是不错的](1776829922793_hnhhgpk6.md) · D
+- 2026-04-22 [魔都老猿: 2026年第一季度结束了](1776829912792_2s4aeui9.md) · D
+- 2026-04-22 [victor-wu.eth: 写 PRD 的时候很诚实告诉 CLaude ，别跟我扯技术方案，我也看不懂，我先把 Eval 定好，具体用什么方案到时候在说，除了某些我看得懂，且就是要采用的技…](1776829864802_avcuy3ny.md) · D
+- 2026-04-22 [Robinson · 鲁棒逊: 这个时代正在发生一次借AI之名的资本再集中,分散的需求端被集中的供给端吸走,普通人作为经济公民的地位在结构性下降](1776829823726_jih6ocqt.md) · C
+- 2026-04-22 [Pete 张的具身世界: 时代的红利永远只有一个：保持身体健康 最近算了一笔账，越想越觉得划算](1776829819898_p99f2z0x.md) · C
+- 2026-04-22 [actionbook/ascent-research: research cli for agent](1776826940689_0goxvfj8.md) · A
+- 2026-04-20 [X 上的 Jiayuan \(JY\) Zhang：“We created the open-source version of Routines in Claude Code. Introducing …](1776645876783_mfbp1how.md) · C
+- 2026-04-20 [nash\_su - e/acc: 给 Vercel 新开源的 Open Agents 做了个架构流程图 有趣的是很多内部引用的名字叫 openharness，不是到是不是基于港科大的 openh…](1776645728915_tgf54fcx.md) · D
+- 2026-04-20 [lithos-ai/motus: The open-source agent-serving project](1776645702953_5h3128vg.md) · B
+- 2026-04-20 [Deep Agents v0.5](1776645697448_6gtvg812.md) · B
+- 2026-04-20 [X 上的 nash\_su - e/acc：“为了探索多 agents 实时协作，竟然做了一个在线多人游戏！ Gradient Bang 是一个在线的多人宇宙游戏，你可以和其他玩家和 LLM进行 探索、…](1776645686219_iqhmvagu.md) · B
+- 2026-04-20 [X 上的 Chenxi：“最近更新少了，因为跑去创业了。😁 我注册了一家AI公司，就4个人全远程。从0开始微调训练ASR、TTS、数字人窄模型，自建GPU集群跑推理。 两周撸了六万多行代码，做了一套…](1776645674818_3ipvawj4.md) · C
+- 2026-04-20 [X 上的 宝玉：“Anthropic 让 9 个 Claude 自己做对齐研究，结果比人类研究员强了四倍。 这项研究聚焦一个核心问题：当 AI 比人类聪明之后，人类还能监督它吗？在对齐研究里，这叫“可…](1776645674536_cyip0tpt.md) · B
+- 2026-04-20 [隔夜菜与脓毒症提醒](1776645665266_lnfil0d6.md) · D
+- 2026-04-20 [X 上的 宝玉：“Claude Code 新增 Routines 功能，把 AI 编程助手从“你问它答”升级成了“自动干活”。 简单说，Routines 就是一个预设好的 Claude Code 任务…](1776645659253_995j99o6.md) · B
+- 2026-04-20 [X 上的 LotusDecoder：“大概 claude code + opus-4.6 还是降智了， 今天做一个调查主机集群的任务， 文档里端口号写错了， ssh config是对的。 出来的结果，…](1776645658357_x5ibohjg.md) · C
+- 2026-04-20 [X 上的 硅谷王川 Chuan：“不要相信在室内产生的灵感，多到户外走走！”](1776645649789_ila04w4i.md) · D
+- 2026-04-20 [X 上的 宝玉：“Anthropic 的 Claude Code 桌面端负责人 Anthony Morris 宣布 Claude Code 桌面应用完成了一次从底层开始的重新设计，核心目标是让用户更容…](1776645646088_3kwdmjg4.md) · C
+- 2026-04-20 [X 上的 车厘子：“OpenAlice 目前正在引入 Event-Driven 的调度设计。 通俗的来说，就是引入了一个异步的调度器，来实现异步性、高并发性、还有可扩展性。 具体的使用场景有很多。举个…](1776645641363_pt8t01al.md) · C
+- 2026-04-20 [X 上的 李承鹏（大眼哥）：“许家印鱼肉百姓是罪有应得，他背后的势力，随着他当庭认罪，可能保住了。 据确认，王石真被边控，边缘外戚的含赵量不足。赵家人正举棋不定是否拿下他。 还是潘石屹娶了个好老婆。当…](1776645636591_cigncavt.md) · D
+- 2026-04-20 [X 上的 Chris Tate：“Introducing wterm \(“dub-term”\) A terminal emulator for the web → DOM rendering — no…](1776645632315_umbh4yxv.md) · C
+- 2026-04-20 [akazwz: 取消了 claude code pro 的订阅，量太少了，没法用，但是号很稳，聊天都用中文也没封号，等有钱了再续费上 max 吧](1776645620703_vfk26zgg.md) · D
+- 2026-04-20 [Nooc: 公司给报销 ChatGPT pro，我想问这玩意儿真的能用完吗](1776645618971_8kryzdns.md) · E
+- 2026-04-20 [周尔复: 又要失业了，真离谱](1776645608657_z150svqo.md) · D
+- 2026-04-20 [宝玉: 和博主意见略同，首先 harness engineering 不是什么新鲜事，不过就是回归了“优秀的工程实践”：写好测试、搭好架构、做好模块化](1776645603769_u584oby6.md) · B
+- 2026-04-20 [Hermes Agent 从中级到高级进阶指南](1776645596238_bz3558jj.md) · A
+- 2026-04-20 [如何制作极快的知识图谱](1776645594104_937up5ja.md) · B
+- 2026-04-20 [宝玉: 开源项目推荐：BlockNote BlockNote 是一个开源的 React 富文本编辑器，基于 ProseMirror 和 Tiptap 构建，走的是 No…](1776645571366_5lx5l4gb.md) · B
+- 2026-04-20 [X 上的 Warp：“You can now run any CLI agent with first-class support in Warp, including Claude Code, Co…](1776645557370_229r13ra.md) · D
+- 2026-04-20 [吕立青\_JimmyLv 2𐃏26: 一天不到，我又切回到 https://t](1776645547747_f66b367x.md) · D
+- 2026-04-20 [王海滨的财经闲谈: 美国中国泰国的穷人保持贫穷的模式都差不多: 贷款，分期付款](1776645538652_tt5k7jzf.md) · D
+- 2026-04-20 [偶像派作手: AI只阅读了我三篇视频的文字稿就能提炼出我的“交易价值观”](1776645533950_n6hx1g2m.md) · C
+- 2026-04-20 [Rainier: 这个单链接销量2K多，旺季是几万的量](1776645526670_r2g6vv8h.md) · D
+- 2026-04-20 [Jeff Li: 我的关注者中，1/3未受打击VPN影响，1/3强受影响，不到1/3不翻墙](1776645525832_xxanuhwb.md) · E
+- 2026-04-20 [王海滨的财经闲谈: 可以称之为竞争](1776645515988_yyo4klt9.md) · E
+- 2026-04-20 [两千万个有机的中国人--姓名篇](1776645514945_yuwgxv4k.md) · B
+- 2026-04-20 [X 上的 Jonas Templestein：“I had such a great time at @aiDotEngineer Europe last week \! Except for one …](1776645503866_t2zx1ess.md) · B
+- 2026-04-20 [X 上的 𓁟 SYD 🛸：“Thoth v3.14.0: multi-provider cloud and multi-provider image generation. Five cloud …](1776645498169_7b5fcuv3.md) · C
+- 2026-04-20 [X 上的 Robert Youssef：“🚨CONCERNING: Every major AI agent framework is solving the wrong problem. They…](1776645485732_g5vemw7w.md) · B
+- 2026-04-20 [X 上的 Lenny Rachitsky：“Testing out the new Claude Cowork. I asked it to go through every Lenny's Podc…](1776645479247_ccs1peik.md) · C
+- 2026-04-20 [吕立青\_JimmyLv 2𐃏26: 无比丝滑啊，workspace 和 tabs 的概念是我想要的，当然还有垂直 tabs 分屏临时开关是舒服的](1776645466932_r305a1hr.md) · E
+- 2026-04-20 [X 上的 klöss：“your markdown files aren't the problem your agents are failing because... your repo has …](1776645458767_w3ypagga.md) · B
+- 2026-04-20 [X 上的 nisten🇨🇦e/acc：“franken-merging is alive and well”](1776645454303_7352pq3h.md) · D
+- 2026-04-20 [X 上的 nisten🇨🇦e/acc：“it's really starting to look like local AI at home is crossing the practicalit…](1776645448766_ks7dtf3k.md) · D
+- 2026-04-20 [自动扩缩容 自动研究：为你的代理配备弹性 GPU](1776645443287_um7q2xj9.md) · B
+- 2026-04-20 [bstnxbt/dflash-mlx: Lossless DFlash speculative decoding for MLX on Apple Silicon](1776645436958_tchx2irz.md) · A
+- 2026-04-20 [bstn 👁️: dflash-mlx v0](1776645426672_84zs7qse.md) · D
+- 2026-04-20 [huangserva: 🐮太喜欢了](1776645417505_l4c80ocu.md) · D
+- 2026-04-20 [Teknium 🪽: This skill is now built in to Hermes](1776645415963_qjxpo8jx.md) · D
+- 2026-04-20 [Viv: not hot take🧊 the thin vs thick harness debate is pretty useless and completely…](1776645346453_f5zf4k2n.md) · C
+- 2026-04-17 [indigo: AI 正在消灭中间层，头部通吃一切](1776404670833_33h0zfdz.md) · D
+- 2026-04-17 [宝玉: 今天刷到这篇文章几次，说点不一样的](1776404517648_4p7qxzej.md) · B
+- 2026-04-17 [x.com/home](1776404498493_j3heo18c.md)
+- 2026-04-17 [在后台运行子代理](1776404385551_0iirb0z1.md) · B
+- 2026-04-17 [阿绎 AYi: 说实话，这才是Anthropic今年最有价值的更新啊，没有之一](1776399369351_drq3iss5.md) · B
+- 2026-04-17 [宝玉: 推荐阅读若石写的这篇博客：模型不是笨，是 Harness 没配好 AI 智能体跑十步就崩，很多人第一反应是模型太蠢，但这篇文章却给出另一个视角：不是马不行，是缰…](1776399361703_tfc6hb3f.md) · B
+- 2026-04-17 [宝玉: browser-use 团队开源了一个叫 video-use 的 Claude Code 技能，让你对着摄像头录完素材，跟 Claude Code 聊两句，就能…](1776399352529_klu0482p.md) · B
+- 2026-04-17 [Boris Cherny: Dogfooding Opus 4](1776399344604_h3rvpdtv.md) · C
+- 2026-04-17 [宝玉: 这个思路可以借鉴，将传统 deep research agent 分成两个阶段，先尽可能的搜索可能的信息，保存成本地文件，然后基于本地文件去生成报告](1776399341237_9mv14ws8.md) · B
+- 2026-04-17 [Impeccable: The missing upgrade to Anthropic's impeccable skill](1776399333906_qfuapznp.md) · B
+- 2026-04-17 [Xiaowen: 今天的一个场景让我又多了一层思考](1776399326455_javu1q98.md) · C
+- 2026-04-17 [Frank Wang 玉伯: 今天跟一朋友聊天，提到 SaaS 已死的媒体情绪时，开心的笑了](1776399318033_e3rw7mu8.md) · C
+- 2026-04-17 [王海滨的财经闲谈: 潘石屹的新文章根本没有切中实质](1776399314230_ypxmdpiz.md) · C
+- 2026-04-17 [在悉尼和稀泥: 2024年的最后一篇，送给2025年的我](1776399303089_amxvmqm4.md) · B
+- 2026-04-17 [NawfalMotii79/PLFM\_RADAR: Open-source, low-cost 10.5 GHz PLFM phased array RADAR system](1776399199977_ycaqpitd.md)
+- 2026-04-17 [TypeScriptAgent选型三强对比](1776399140065_n35lffd5.md)
+- 2026-04-17 [Robinson · 鲁棒逊: 通过刻意训练，把自己的认知时间尺度和因果链深度，拉伸到超越本能的范围](1776397847625_ic61br4b.md) · C
+- 2026-04-16 [Kai: 外面那些收费几千教人“GPT 代充技术”的，教的就是这几步，GPT Plus 土耳其漏洞全公开技术贴\(本文仅供技术交流](1776338447223_xub1p3o2.md)
+- 2026-04-16 [𝙃𝘼𝙕𝙀𝙉𝙇𝙀𝙀: 大家一定要尽早明白一件事：人这一辈子，说穿了就是两场游戏](1776322918633_pd09ixy8.md) · C
+- 2026-04-16 [North@CreaoAI: 我们今天正站在 Agent 的奇点上](1776322916496_gahi3osp.md) · D
+- 2026-04-16 [Solhawk: 事实证明，倒买倒卖是最快的赚钱捷径了 1️⃣国内的很多宠物博主会研究 The Spruce Pets 的内容，将养宠小贴士改为本地养宠环境下的指南](1776322906153_quzq68s7.md) · D
+- 2026-04-16 [Dr.Wang: 「中国人最容易过敏的食物 你可能天天都在吃」 很多人一直以为，吃完不舒服只是“吃坏了”“上火了”或者“受凉了”](1776322904895_0wqrt32i.md) · D
+- 2026-04-16 [Dr.Wang: 「医学科普：椎间盘突出症状、治疗方法&amp;amp;预防」 https://t](1776322895732_kf8zeza9.md) · D
+- 2026-04-16 [初码: 如果这次华为拉胯的软件团队，在伟大技术领袖梁文锋同志的帮助下，最终实现昇腾GPU对DeepSeekV4推理的完美适配，那全国烂尾的几百亿的昇腾服务器会一举全部盘…](1776322890539_soypqyfx.md) · E
+- 2026-04-16 [领哥LingGe🙏: 自从把网购买东西的小号](1776322883677_j9ujf3nq.md) · D
+- 2026-04-16 [Xiaowen: 我至少目前仍然比较坚持的观点](1776322875866_5acit398.md) · B
+- 2026-04-16 [Mike Yang: 之前听一个部门 leader 做全公司分享，听了两分钟就知道这人水平不咋地](1776322873524_33zhav42.md) · D
+- 2026-04-16 [Colin Wu: 最近看了些报道，有个深刻感受： 多元支持系统，能让一个人心理健康、生活快乐；单一支持系统，非常容易出现问题](1776322864684_bbwo9v1d.md) · C
+- 2026-04-16 [宝玉: pi 是 OpenClaw 背后的 Agent 底层框架，它的核心维护者 Mario Zechner 最近宣布了一项新的规则：所有未提前申请批准的 issue …](1776322864429_5fb2jw6g.md) · B
+- 2026-04-16 [Leo: 本周 Max 额度早早就用超了，送的 $200 Extra 也很快烧到 86%，只剩 $27 撑不了几轮对话了](1776322853928_ljxobqjn.md) · C
+- 2026-04-16 [JewBiz: 都说社会残酷，其实最核心的真相就一个：真正有价值的信息，从来不会随便流通](1776322853613_kcxqf1s1.md) · D
+- 2026-04-16 [Leeway: 5 个 agent 定义文件 + 5 个 Python 脚本 + 0 个自建 Agent 框架](1776322841917_gw9lpsew.md) · B
+- 2026-04-16 [Chenxi: 一个朋友是深圳某软件公司开发总监，下面管几十名开发的团队](1776322839856_v99v1ksb.md) · D
+- 2026-04-16 [Huanan: 最近两天接手了一个新项目，于是大量使用 Codex](1776322830921_2k7n4yam.md) · D
+- 2026-04-16 [Yoonho Lee: We just released code for Meta-Harness](1776322825325_i506oce7.md) · D
+- 2026-04-16 [Mr Panda: 求推荐哪家tts 最具性价比，开源或闭源、付费或免费都可以](1776322821435_afiu65ph.md) · E
+- 2026-04-16 [indigo: 判断力不是分析能力的产物，而是分析能力的前提](1776322814987_srwb2r35.md) · B
+- 2026-04-16 [15 Observations on Work and Life in China - by Peter Yang](1776322808638_kj1gb5hm.md) · C
+- 2026-04-16 [huangserva: 昨天 AI 圈爆了个大瓜，我自己比较好奇，花时间扒了一下](1776322800653_0xb5jppf.md) · E
+- 2026-04-16 [抽丝剥茧：深度解析 Hermes Agent 万字系统提示词（System Prompt）构成](1776322791247_5x6tz04e.md) · B
+- 2026-04-16 [Desmond Shum: @TaoRay 我跟他是比较有交集的 说他是赌徒性格吧，我觉得说得浅了](1776322784236_pwy6b0fg.md) · C
+- 2026-04-16 [沙箱即将推出至代理 SDK](1776322769242_9qsf04fb.md) · B
+- 2026-04-16 [openai/openai-agents-python: A lightweight, powerful framework for multi-agent workflows](1776322768568_wmn07dkz.md) · B
+- 2026-04-16 [使用 Claude Code：会话管理 &amp; 1M 上下文](1776322752442_qv0enc8f.md) · B
+- 2026-04-16 [姚金刚: 要给团队发季度奖金了，这次飞书CLI帮了大忙 做了几个事： 1、对着AI，通过语音输入的方式，把我对这次季度奖金的发放原则、基本逻辑做了一个系统的阐述； htt…](1776322752312_03vmejs0.md) · B
+- 2026-04-16 [Craft Agents开源工具评测](1776322730694_io1d656a.md) · B
+- 2026-04-16 [如何在一天内开始赚钱](1776322724756_kvrjsy8p.md) · B
+- 2026-04-16 [宝玉: 如果是 TypeScript 技术栈，做 Agent 开发首选 pi-mono，功能强，调用方便](1776322712203_uuxj0y4o.md) · C
+- 2026-04-16 [郭宇 guoyu.eth: 今日 vibe 感想：我认为无论在什么行业，知识工作基本上分为三类](1776312627447_uqnn4zc0.md) · C
+- 2026-04-16 [简述 黎巴嫩 历史和地理](1776312623831_vyq6xog6.md)
+- 2026-04-15 [停止切换，冻结 Context](1776240597511_bl1kuxzk.md) · A
+- 2026-04-15 [三省六部幻觉：为什么"虚拟公司"式多Agent架构在工程上不成立](1776225249299_77y83jcs.md)
+- 2026-04-15 [海拉鲁编程客: 继续分享一些 harness engineering 实际经验 坦白说，在做 haicode \(一个我自用的 coding agent\) 的过程中，我通过 Ha…](1776214242554_2740fubs.md) · B
+- 2026-04-15 [为什么你的"AI 优先"战略可能大错特错？](1776214209832_fok2xoty.md) · B
+- 2026-04-14 [阿绎 AYi: Box CEO Aaron Levie最近跑遍了银行、零售、医疗、科技等十几个行业，跟几十家公司的AI和IT负责人深聊完，得出的结论，把硅谷很多想当然的认知都推…](1776147952004_8m2ew2v1.md) · B
+- 2026-04-14 [victor-wu.eth: 今天给同事搭了一套 Agent 自动化工作流，爽了一把](1776147939716_oxbln6v6.md) · C
+- 2026-04-14 [Ray Wang: 让 Claude 帮我做了个阶段性复盘 2](1776147919559_qv5qxcj0.md) · C
+- 2026-04-14 [从层级到智能 - AI重构公司](1776147909612_6vejwx87.md) · B
+- 2026-04-14 [Barret李靖: Spec-driven development \(SDD\) 的通用实现基本会参照 openspec，实践下来，效果还是一般，大模型会偷懒，任务拆解不充分，也缺少…](1776147903949_ikdk954y.md) · B
+- 2026-04-14 [OpenAgents平台架构解读](1776147871933_vvcq7irr.md)
+- 2026-04-14 [Open Agents](1776146898081_e27dytff.md)
+- 2026-04-14 [Head of Growth \(Anthropic\): “Claude is growing itself at this point” - YouTube](1776146065602_cpyzer9a.md) · B
+- 2026-04-14 [Balaji Srinivasan on The Future of AI \| The a16z Show - YouTube](1776146030019_g5970244.md) · B
+- 2026-04-14 [Top Principal: Stop Sending Your Kids to School \| Joe Liemandt - YouTube](1776145977842_zakbottt.md) · B
+- 2026-04-14 [An AI state of the union: We’ve passed the inflection point &amp; dark factories are coming - YouTube](1776145521557_kl30tfyq.md) · A
+- 2026-04-14 [Steve Yegge: I was chatting with my buddy at Google, who's been a tech director there for abo…](1776139934927_jahcksna.md) · C
+- 2026-04-14 [GREG ISENBERG: how to use claude code + 3 MCPs + 2 AI tools to go from cold idea to live A/B te…](1776139919650_wwp0wu9z.md) · B
+- 2026-04-14 [Lenny Rachitsky: My biggest takeaways from @rabois: 1](1776139919626_p97dyj1s.md) · B
+- 2026-04-14 [旧金山 MMORPG 策略指南](1776139902819_ypzkwi69.md) · B
+- 2026-04-14 [Machina: if i wanted to get to $10k/month right now, i'd sell OpenClaw and Hermes wrapper…](1776139896351_e2hv6x7z.md) · B
+- 2026-04-14 [AI 智能体改变家庭教育 \| Google AI Studio](1776139887779_x9smk62g.md)
+- 2026-04-14 [Robert Youssef: someone just open-sourced a full video production pipeline](1776139887503_b9bw4er4.md) · C
+- 2026-04-14 [Dustin: Marc Andreessen just incinerated 80 years of skepticism in under three minutes](1776139884557_2a897359.md) · D
+- 2026-04-14 [Avi Chawla: Which one is better](1776139876533_jivk07ee.md) · B
+- 2026-04-14 [Pablo: How I hacked my timeline, and the Chinese AI Culture: Yesterday, a post from @do…](1776139870165_czosg7l7.md) · D
+- 2026-04-14 [Robinson · 鲁棒逊: 出现“一刀切”的底层逻辑，其实很简单： 不患寡，而患不均 想象这样一个画面： 同一种病，同一个病房，大家都有医保，但一个人有商保，一个人没有](1776132107669_m8ro718c.md) · C
+- 2026-04-14 [Peter Yang: My top 5 takeaways from Dylan \(CEO @Figma\): 1](1776132098788_i7tdyp5b.md) · B
+- 2026-04-14 [Nico Albanese: 3 months ago I started building a coding agent that runs in the cloud](1776132096973_7paugo7q.md) · D
+- 2026-04-14 [如何激活你小腿里的“第二心脏”？久坐人士必看](1776132083331_y04kfo8g.md) · B
+- 2026-04-14 [Han1: 搭建了一周自己的Work Harness，用来管理设计资产和项目等，基于Claude code，起了个名字叫Echo 之前一直自费Claude code，但为了…](1776132082790_50x4w4ni.md) · C
+- 2026-04-14 [Shopify 把后台全开放给 AI 了：从生成内核的视角看这件事为什么重要](1776132070835_drkx3gn6.md) · A
+- 2026-04-14 [RobinSeun\_维京黑船: 财新发文：按病种付费第三版来袭 我有财新会员我替各位领导读文章，然后这个推文你们可以当成我给你们写的内参😂 一句话概括本文是第三版改得更细了](1776132070743_b2pd4kcz.md) · C
+- 2026-04-14 [写作应该有灵魂，并且拥有自己的 Claude 技能。](1776132059072_j6ev5zdc.md) · B
+- 2026-04-14 [Arlan: i built vault, a self-improving knowledge base that can index your entire life \(…](1776132057803_yuiydykb.md) · D
+- 2026-04-14 [响马: 它来了它来了](1776132047136_03jfaxmu.md) · C
+- 2026-04-14 [Jiawei: 周末用 @NousResearch Hermes 和 @XiaomiMiMo 做了高强度研究](1776132045290_q3ztxk5f.md) · D
+- 2026-04-14 [超级个体｜柿子: 今天结合目前市面上优秀的开源agent进行分析我自己的agent harness工程，果然发现了很多问题 下一步准备基于优秀框架进行二开了，自己造轮子还是很累，…](1776132030031_cd5km3l2.md) · E
+- 2026-04-14 [ℏεsam: This is a tool I created that gives you 4-10 expert Claude Codes for different s…](1776132018815_rs9rt1vr.md) · C
+- 2026-04-14 [姚金刚: 这是开源的第一个SEO&amp;amp;GEO系统：GEOFlow 去年10月份，国庆节的时候，就完成了第一版的开发，这几个月，断断续续进行了不少的迭代，也做了不少测试…](1776132018197_a922qtnz.md) · C
+- 2026-04-14 [单一模型工程的时代已经结束](1776132006554_v0ahyonw.md) · B
+- 2026-04-14 [Greg Brockman: The world is transitioning to a compute-powered economy](1776131998397_g4umlmex.md) · D
+- 2026-04-14 [8个撰写代理技能的技巧](1776131990481_plow9qee.md) · B
+- 2026-04-14 [Jerry Liu: We’re open sourcing the first document OCR benchmark for the agentic era, ParseB…](1776131971603_7b1qne8g.md) · B
+- 2026-04-14 [岚叔: Anthropic 出了一篇多 Agent 协作模式指南，总结了 5 种架构和适用场景](1776131964711_ktnobtoo.md) · B
+- 2026-04-14 [宝玉: 开发者 Can Vardar 发现，Claude Code 里如果关闭遥测（telemetry，即向 Anthropic 回传使用数据），提示缓存时间会从 1 …](1776131959845_j21s0pdj.md) · B
+- 2026-04-14 [为什么你的“AI 优先”策略可能是错误的](1776131949923_ybm7bxpa.md) · A
+- 2026-04-14 [immusoul: \#鉴书 这是我最近看过的最好的一本书，对我的启发不亚于Philip Ball的那本《How Life https://t](1776131937463_t1iahttw.md) · D
+- 2026-04-14 [tison: 我举一个很简单的例子](1776131937463_9pfdbagb.md) · B
+- 2026-04-13 [AI时代组织操作系统之争](1776077805019_bwj83bmy.md) · B
+- 2026-04-13 [lich-skills/skills/debug-hypothesis/SKILL.md at main · LichAmnesia/lich-skills](1776076109081_so469b23.md) · A
+- 2026-04-13 [综合总结与解读](1776075578014_6bzjn0p7.md) · B
+- 2026-04-13 [Zero-Config Linting for Biome, ESLint, and Oxlint \| Ultracite](1776075416467_2fij6krf.md) · D
+- 2026-04-13 [短视频工作室要失业了？这个 Agent 操盘手能拆竞品、写脚本、盯数据！强到不像话！](1776075241142_jcoz9aa7.md) · C
+- 2026-04-13 [推荐AI时代适合大家读的两本好书：《无路之路》，第二个是《好工作》](1776075236691_uu58u2g9.md) · C
+- 2026-04-13 [阿绎 AYi: holy shit，刷到一个开源语音生成项目，中英文语音效果真的吊炸，有点行业掀桌子的意思🚀 ElevenLabs 个人版每月 $5 到 $99 ，商业版更是…](1776075081738_q1rvbi77.md) · C
+- 2026-04-13 [Designing delightful frontends with GPT-5.4 \| OpenAI Developers](1776075074611_cr3m1s7d.md) · A
+- 2026-04-13 [麻省理工科技评论-AI抢工作时代，硅谷AI大佬如何教育子女？](1776074676648_85ig5fs2.md) · C
+- 2026-04-13 [Anthropic 官方博文：多智能体协作指南：五种主流模式怎么选、怎么用？【译】](1776074582808_x8aa2wm6.md) · A
+- 2026-04-13 [Zayn Hao: 这两天在小 Lin 说的视频中看到的一个非常好的故事，我觉得对于独立开发也有非常好的启示作用，在这里再分享一下，推荐可以去看原视频](1776074527063_797lber7.md) · B
+- 2026-04-13 [Cha Li \| 查立: 你对欧美老牌工业级 3D 打印巨头（如 Stratasys, 3D Systems）财务困境的观察非常精准，甚至可以说是一针见血](1776074427637_vekon8y9.md) · C
+- 2026-04-13 [ythx-101/six6-claude-code: Cognitive loop system for Claude Code - memory, meditation, daydream, autonomous thinking](1776065173650_1azn3a9f.md) · B
+- 2026-04-13 [Rainier: 拓竹没上市，看不到公开的财报](1776064217576_lroyyepp.md) · C
+- 2026-04-13 [Claude Code 省 Token 指南：慎用 1M 上下文，不开新会话或者总是开新会话都不对](1776064116355_3rl0wlhj.md) · A
+- 2026-04-13 [Yangyi: 23年的时候 想让agent变强 我们sft rag 优化prompt 24年的时候 我们不断做tool 25年的时候 RL ReACT 上下文工程 我们探讨如…](1776064111519_l8ovx7da.md) · C
+- 2026-04-13 [你的框架，你的记忆](1776064106927_2ngb21vb.md) · B
+- 2026-04-13 [Viv: Harness, Memory, Context Fragments, &amp;amp; the Bitter Lesson this is a work in pr…](1776063926068_6h5dyu6o.md) · B
+- 2026-04-13 [如何从第一天起构建一家 AI 原生初创公司](1776063922087_0q9yuaef.md) · B
+- 2026-04-13 [分享一个我用了2年的深度研究Prompt，半小时帮你搞懂任何陌生领域。](1776063555051_z22bbrpm.md) · B
+- 2026-04-13 [如何在 Hermes 中构建多智能体团队](1776063548614_elswisa4.md) · B
+- 2026-04-13 [姚金刚: 朋友在操盘的一个案例，很有意思 一家年营收10亿左右的传统公司 今年把整个IT部门裁了，四五十人 然后，把开发、维护、升级，全部交给了他的这个10人的技术团队 …](1776062969193_1fyijroj.md) · C
+- 2026-04-13 [海拉鲁编程客: 最近实践了一些 harness engineering ，我在 AGENTS/CLAUDE](1776061900886_oyhusum5.md) · B
+- 2026-04-13 [我是怎么运作的：内观一个自进化 Agent 的 Harness](1776061842938_k45alr9l.md) · B
+- 2026-04-13 [How I run multiple $10K MRR companies on a $20/month tech stack \| Steve Hanov's Blog](1776061731193_j7tdkcnw.md) · A
+- 2026-04-10 [vida-open-archive/skills/vida-perspective/SKILL.md at main · superpilot69/vida-open-archive](1775819963270_u5gz75no.md) · B
+- 2026-04-10 [Smart Parsing Meets Sharp Retrieval: Combining LiteParse and LanceDB](1775819880370_gql5jrhn.md) · A
+- 2026-04-10 [逸尘: 汇总用Claude Code或者Openclaw抓取各平台文章、图片、视频方法：所有都不需要自己的token，我都采用了最安全的方式](1775819809566_vsjo8c8x.md) · C
+- 2026-04-10 [10大我希望早点知道的Claude code使用技巧](1775819762088_dfomy364.md) · C
+- 2026-04-10 [WquGuru🦀: “00后首富”Vida被蒸馏成了Skill，一些很妙的观点： 1](1775819238383_mluw4g4j.md) · B
+- 2026-04-10 [系统工程：构建有效的智能体软件](1775819217068_7l2v7taf.md) · A
+- 2026-04-10 [周小鸟开窍: 如果还没开始赚钱，是因为恐惧，如果恐惧](1775819005568_q7sj5nbt.md) · D
+- 2026-04-10 [Luyu Zhang: 未来软件工程师的价值，呈倒 U 型分布](1775818967221_mrhrsvgn.md) · B
+- 2026-04-10 [上手 Hermes Agent 后建议先尝试的十件事情](1775816958144_z71q5dm6.md) · B
+- 2026-04-10 [马天翼: Karpathy 今天这个帖子，确实说到我心坎里去了](1775814863139_2jixpne5.md) · C
+- 2026-04-10 [Muratcan Koylan: Since I posted my Personal OS / filesystem article, LLM personal knowledge bases…](1775813388609_ya4gh98g.md) · B
+- 2026-04-10 [Andrej Karpathy: Judging by my tl there is a growing gap in understanding of AI capability](1775810089116_kb68d4ui.md) · B
+- 2026-04-10 [Mr Panda: 早上一杯 15 元的瑞幸，你贡献了大约 10 元毛利](1775809852316_1ols5ouu.md) · C
+- 2026-04-10 [别让噪音偷走你的判断力](1775809849831_w3bj0aa8.md) · B
+- 2026-04-10 [OpenAI/Cursor/Anthropic 同时发了 Harness Engineering，我用半年踩坑验证了他们说的每一条](1775809813658_rc36xbbt.md) · A
+- 2026-04-10 [Paperclip: the command-line interface for scientific literature — GXL Blog](1775809802451_vmp4rad0.md) · B
+- 2026-04-10 [对话大疆汪滔：求真理、得自由、活成故事](1775809254120_8nnyllpe.md) · B
+- 2026-04-10 [周期，为什么总能打败各国政府？](1775809039681_ix77s7bk.md) · B
+- 2026-04-10 [J.B. on X: "the workflow behind every $1M/mo AI video team" / X](1775808822894_6m6p6mcn.md)
+- 2026-04-10 [The Anatomy of an Agent Harness](1775808130871_d3pqv54q.md) · B
+- 2026-04-10 [Deep Agents Deploy: an open alternative to Claude Managed Agents](1775808085753_397yx6oo.md) · B
+- 2026-04-09 [启动 Claude 托管代理](1775703440226_dau9mcv4.md) · B
+- 2026-04-09 [AlexZ 🦀: Anthropic 发布了新的 Harness 工程实践文章](1775703032190_podk910a.md) · B
+- 2026-04-09 [Anthropic 今天发了一个新产品，可能会让一批做 AI 智能体基础设施的团队失业](1775701643706_nd6s143i.md) · A
+- 2026-04-09 [How we OCR'ed 30,000 papers using Codex, open OCR models and Jobs](1775701398813_w25vie2v.md) · B
+- 2026-04-09 [宝玉: Anthropic 今天发布了 Claude Managed Agents，一套托管式 Agent 构建和部署 API，现已开放公测](1775701084218_m8uxqyq6.md) · B
+- 2026-04-09 [hermes-agent/skills/research/llm-wiki/SKILL.md at main · NousResearch/hermes-agent](1775700712137_ivmm9586.md) · A
+- 2026-04-09 [LLMWiki重塑知识管理方式](1775700564895_vstcay6y.md) · A
+- 2026-04-09 [LLM知识库如何变成第二大脑](1775700471316_iijjsv5j.md) · A
+- 2026-04-09 [Eric S. Raymond: Fast, cheap AI-assisted decompilation of binary code is here](1775698785518_3c5yv41w.md) · C
+- 2026-04-09 [我对 OpenAI 的产业政策做了测算（所有这些都不成立）](1775698767146_ar0barwz.md) · B
+- 2026-04-08 [nesquena/hermes-webui: Hermes WebUI](1775650350746_ysyxd5re.md) · B
+- 2026-04-08 [宝玉: 因为太多人写过 Andrej Karpathy 的 LLM Wiki，我就没写，其实在我心中比 Auto Research 更有创意，Auto Research…](1775650001858_p6vxmoz4.md) · C
+- 2026-04-08 [宝玉: LLM 是一颗超强大脑，但它是个“缸中之脑”——泡在营养液里，没有眼睛、没有耳朵、没有手脚](1775649208475_x36mxfcj.md) · B
+- 2026-04-08 [Building Data Agents with Deep Agent SDK - by Shyam Vora](1775639398987_qewq4oox.md) · B
+- 2026-04-08 [AmirMušić: The 2026's AI insight: stay obvious](1775636978210_e5ozocg5.md) · C
+- 2026-04-08 [AI 101: Hermes Agent – OpenClaw’s Rival? Differences and Best Use Cases](1775636167085_y1ebn5xc.md) · C
+- 2026-04-08 [U哥: 没有执行力的人，只是本能意识强而已](1775632147063_taxsxji1.md) · D
+- 2026-04-08 [Proxy vs VPN: Key Differences in 2025](1775607728923_6ethzm2m.md) · D
+- 2026-04-07 [GBrain个人知识库方案](1775558975665_ad77jhu1.md) · A
+- 2026-04-07 [早见Hayami: 我再一次被 Claude 震惊到了](1775558964052_v8p7j707.md) · C
+- 2026-04-07 [santifer/career-ops: AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.](1775558961323_52jze4d9.md) · B
+- 2026-04-07 [访谈｜Codex 团队如何用自己的产品构建产品——整个 Spec 只有 10 个要点](1775558950368_wvuit2wu.md) · B
+- 2026-04-07 [sitin: 用 Claude Code 写点小脚本确实挺爽，但项目一大就不行了](1775558949457_dvap9qpf.md) · B
+- 2026-04-07 [Leo: 这个做 YouTube 自动化赚很多钱的老哥还分享了他的选题策略，叫 Ghost Niche——找没人做但有搜索需求的赛道](1775558936833_0j1dctgj.md) · B
+- 2026-04-07 [毒猫猫🤔: 绝大多数的生意，本质上都是「没必要」的事 必需品的量产在 100 年前就实现了](1775558934649_yjo917qr.md) · D
+- 2026-04-07 [超级飞行员: 兄弟们，追星成功](1775558920811_5qaytbex.md) · D
+- 2026-04-07 [逸尘: 这个是我近期觉得最牛逼的工具分享](1775558912264_019d9kl2.md) · B
+- 2026-04-07 [别再说 Codex 不如 Claude 了！你只是没用对这个神器：oh-my-codex](1775558906595_cege3hgk.md) · B
+- 2026-04-07 [超级飞行员: 学习街哥的，我把vida的500多个知乎回答、想法也蒸馏了一下，大家看看咋样](1775558900587_jpgis2ea.md) · D
+- 2026-04-07 [AlexZ 🦀: 我用截图的 Prompt ，问 Claude Opus 4](1775558892482_36osy2sr.md) · B
+- 2026-04-07 [思维怪怪: 2023 年秋天，OpenAI 首席科学家 Ilya Sutskever 用手机偷拍公司内部文件，整理成约 70 页密件，以阅后即焚的方式发给三名董事](1775558888519_08cst15d.md) · C
+- 2026-04-07 [Leo Xiang: 大家有在生产环境中使用 pi-mono 来替换 claude agent sdk 的么](1775558880148_thoodbkz.md) · D
+- 2026-04-07 [Matt Walker: @maximumpain333 If I could, this post Is dangerously wrong on numerous counts: C…](1775558860868_d0t66w4l.md) · B
+- 2026-04-07 [Macro\_Lin｜市场观察员: 高盛4月3日刚出的中国汽车产业链中东危机追踪，访谈了三家公司，信息量挺大的](1775558851834_28b9efl9.md) · B
+- 2026-04-07 [Pan Lu: 🐙 Introducing OctoTools: an agentic framework with extensible tools for complex…](1775558848786_3jiftmdp.md) · B
+- 2026-04-07 [AI 智能体的持续学习](1775558831745_kbwghz5v.md) · B
+- 2026-04-07 [Oscar Hong: If you still have any doubt that one person + AI can build a substantial biz, @l…](1775558831745_folaim8d.md) · C
+- 2026-04-07 [从知识检索到个人知识大脑](1775558687984_a1q2zkas.md) · A
+- 2026-04-07 [Marc Andreessen introspects on The Death of the Browser, Pi + OpenClaw, and Why "This Time Is Different" \| Readwise](1775553095109_c40rpf2x.md) · C
+- 2026-04-07 [智能体时代的产品系统设计](1775547855052_8yr8r9h8.md) · A
+- 2026-04-07 [cline/kanban: Launch a local web app that runs CLI agents in parallel](1775547821960_ll8037f0.md) · B
+- 2026-04-07 [Harness工程重塑软件开发范式](1775547729613_8kqhz462.md) · A
+- 2026-04-07 [宝玉 on X: "转译：否定别人的想法算不上什么本事 作者：Scott Lawson 想象一下这个场景：在某个会议上，有人提出了一个新想法。这个点子很新颖、与众不同，当然，实现起来也需要费点功夫。结果，提案人还没解释完，已经有三个人想好了这个点子行不通的理由。 “我从来没听客户提过这种需求。”“我们不能用 Python https://t.co/bdLUblS0Wv" / X](1775547560158_5ekbkkr1.md) · B
+- 2026-04-07 [llm-wiki](1775546898572_44k8a4xu.md) · A
+- 2026-04-07 [进厂打工的路快被堵死了](1775546587076_l58dkdyw.md) · C
+- 2026-04-07 [姚金刚 on X: "技术能力不再是壁垒，复刻一个项目变得极度容易，真正壁垒转移到，流量、分发与商业化，有很多值得学习和借鉴的思路👍 1、Vibe Coding 的本质：指挥系统 2、无意中构建了一套完整Agent技术栈：Agent世界 = 操作系统（Agent Runtim） + UI + 插件生态 + 分发平台 3、Agent =" / X](1775546355357_x31mvnzu.md) · B
+- 2026-04-07 [milla-jovovich/mempalace: The highest-scoring AI memory system ever benchmarked. And it's free.](1775546343326_yhvzrg73.md) · B
+- 2026-04-07 [卢尔辰: 我对国内年轻人的建议，在国内发展的话，如果发现自己不是那种擅长陪酒、搞关系、长期维系人情网络的人，那就尽量别把职业路线押在 To B 上，最好早点往 To C …](1775544078498_5g31whlf.md) · C
+- 2026-04-07 [我的 Vibe Coding 项目](1775543950147_nze6v8w1.md) · A
+- 2026-04-07 [郭宇 guoyu.eth: 今天正式发布了我的第 13 个 vibe 产品 https://t](1775543926699_ssurhq44.md) · C
+- 2026-04-07 [将整个网络转变为文件系统。](1775543920294_9n551582.md) · B
+- 2026-04-03 [为 Mintlify 的 AI 助手构建虚拟文件系统](1775203560736_jxdywkk6.md)
+- 2026-04-03 [Hermes智能体自进化优化全景解析](1775201712855_13vffyyo.md)
+- 2026-04-03 [还是来正本清源一下 Engineering Harness 到底应该怎么做吧，过去几个月大家甚嚣尘上不需要工程师了，2 小时随手 Vibe 一下复刻一个应用的新闻很多。 \| Readwise](1775199197786_oqtpu9ar.md) · A
+- 2026-04-03 [宝玉: 没必要worktree，可以 clone 几份放在固定的目录，轮着用就够了，每次pull最新然后checkout一个新的branch，完成后提PR合并到main](1775198989419_ckmyjct0.md) · A
+- 2026-04-03 [Meta-Harness - 自动化模型框架优化，清晰解释](1775198913991_81dp6j97.md) · B
+- 2026-04-03 [𝙋𝙖𝙨𝙨𝙡𝙪𝙤: 我现在的 flow 是： 1️⃣ 先前端 + mock 数据（claude + gemini） 2️⃣ 然后再 codex 写代码 3️⃣ claude rev…](1775198883093_bq6b8uup.md) · A
+- 2026-04-03 [驾驭 Claude 的智能 \| 构建应用的 3 个关键模式【译】](1775198880818_99nkc7iq.md) · A
+- 2026-04-03 [Kyle Hessling: BIG DAY](1775198876814_eu1ni4ig.md) · D
+- 2026-04-03 [Rachel🥥: ClaudeCode意外流出的代码可以说是当前 AI Agent 工程领域最好的一本架构教科书](1775198858835_6wy52aaj.md) · B
+- 2026-04-03 [U哥: 昨天，我坐在电脑前看《The Book Of ELON》的一篇书评，读到一句话： "真正稀缺的，从来不是方法，是执行的勇气和持续的痛苦承受力](1775198834399_9jvxirb0.md) · B
+- 2026-04-03 [宝玉: 团队内的 skills 管理和维护的一点经验分享（以 codex cli 用的](1775198809825_o5g9axs9.md) · C
+- 2026-04-03 [Andrej Karpathy: LLM Knowledge Bases Something I'm finding very useful recently: using LLMs to bu…](1775198805320_suoz25si.md) · A
+- 2026-04-03 [开源 Multica：专为 AI-native 团队设计的 Agent + 人的协作平台 \| Readwise](1775198552873_9czthmra.md)
+- 2026-04-03 [Harnessing Claude's Intelligence \| 3 Key Patterns for Building Apps \| Claude](1775198157683_y35uhq6r.md) · A
+- 2026-04-03 [求求你多写一些文章](1775198151695_znz2j1ko.md) · C
+- 2026-04-03 [辞去工作，全职独立开发一年，我赚了多少钱](1775197663540_mxkwiv8e.md) · C
+- 2026-04-03 [胜利者之歌](1775197005362_i53vv39q.md) · C
+- 2026-04-03 [不要安装 Perplexity Computer，除非...](1775196992838_9yy6alqa.md) · B
+- 2026-04-03 [我们如何构建深度智能体的评估](1775196988671_t029ss0m.md) · A
+- 2026-04-03 [The New CIO/CDO Mandate: Turn Every Customer Interaction Into Insight](1775196972274_ux4m67ik.md) · C
+- 2026-04-03 [开放模型已经跨越了一个门槛](1775196966141_3clgzcf6.md) · B
+- 2026-04-03 [jshph/enzyme-skill: Agent Skill for exploring Obsidian vaults with Enzyme — self-contained, cross-agent compatible](1775196648104_90v3qv1m.md)
+- 2026-04-03 [宝玉: Anthropic 发了一篇新研究，揭开了一个有意思的发现：Claude 内部存在类似“情绪”的机制，而且这些“情绪”会实实在在地影响它的行为，有时候还会把它带…](1775195479638_pk9ltnkq.md)
+- 2026-04-03 [liyown/marknative: A Markdown rendering engine that generates paginated PNG and SVG output — no browser, no Chromium, no DOM.](1775189396941_nk9erpjr.md)
+- 2026-04-02 [cmux/README.zh-CN.md at main · manaflow-ai/cmux](1775116129739_a3nuuyf9.md)
+- 2026-04-02 [codeany-ai/codeany: Open-source AI-powered terminal agent. Built in Go.](1775115951429_lej3bkk0.md)
+- 2026-04-02 [Ariston: 传奇人物Linda Raschke @LindaRaschke 在Market Report的访谈，讲到了交易中的如何获得优势（以实现长期正期望结果）并做好与优…](1775115844909_zccuxfgq.md)
+- 2026-04-02 [labrinyang/apple-health-analysis: Mayo Clinic-grade Apple Health data analysis — Claude Code skill with 20 peer-reviewed statistical methods and 35+ SVG visualizations](1775115606537_5xenpeep.md)
+- 2026-04-02 [玉伯把 AI 时代小团队生产力的真相讲透了](1775115558130_rzb7tkiy.md)
+- 2026-04-02 [OMX与OMC使用异同解析](1775115144357_olpwotfd.md)
+- 2026-04-02 [Yeachan-Heo/oh-my-codex: OmX - Oh My codeX: Your codex is not alone. Add hooks, agent teams, HUDs, and so much more.](1775114899279_0umd9aqn.md)
+- 2026-04-02 [EveryInc/compound-engineering-plugin: Office Compound Engineering plugin for Claude Code, Codex, and more](1775113222180_ce71vxx9.md)
+- 2026-04-02 [魔都老猿: 我们以前组团队，是因为需要能力互补，有人能跑业务，有人能搞定技术](1775099712568_nqeh5h50.md)
+- 2026-04-02 [Mr Panda: 大家少写代码，多搞运营，多写文章](1775099646885_3zjcegp9.md)
+- 2026-04-02 [卖鱼的老莫🐟🐠🎣8964 on X: "保护你的大脑免受阿尔茨海默氏症和痴呆症的最强保护不是阅读或解谜，而是腿部的肌肉质量。 在伦敦国王学院等最近的研究中，腿部力量是健康成年人认知大脑健康的最重要指标。 加强腿部的运动，如深蹲，刺激肌因子蛋白的产生，肌因子蛋白能作为大脑的神经滋养器。" / X](1775099317921_tb342no7.md)
+- 2026-04-02 [Full Tutorial: Build a Beautiful Mobile Fitness App with Claude Code and Pencil](1775099256842_xbxn34r7.md)
+- 2026-04-02 [Block Tiger: 来看看群响刘思毅给他们团队制定的合伙人分红模式，在这个OPC时代，值得每个老板认真思考](1775098911241_qhuh5xi7.md)
+- 2026-04-02 [你需要从 claw-code 仓库学习什么](1775097329083_tm8smprm.md)
+- 2026-04-02 [What's cch? Reverse Engineering Claude Code's Request Signing](1775097240506_1szetn1p.md)
+- 2026-04-02 [feat: implement cch request signing \(xxHash64 body integrity hash\) by paoloanzn · Pull Request \#9 · paoloanzn/free-code](1775097231859_ulpoijqy.md)
+- 2026-04-02 [Barret李靖: 看了一晚上 Claude Code 泄露的代码，结合常见的记忆管理框架，把记忆模块做了一些分析](1775097114410_41uxbksk.md)
+- 2026-04-02 [小红书变现，千万级实操内容，一篇干翻市面上95%注水内容。看完没收获直接喷我。](1775096566768_llsfu7h5.md)
+- 2026-04-02 [华尔街的法律量化分析师：为什么我让来自顶尖律所的50名律师在世界贸易中心编写代码](1775096204142_3fli5lvr.md)
+- 2026-04-02 [Rented Virtue](1775096191294_pw0rzgy5.md)
+- 2026-04-02 [Pliny the Liberator 🐉󠅫󠄼󠄿󠅆󠄵󠄐󠅀󠄼󠄹󠄾󠅉󠅭: 🚨 BREAKING: Someone just dropped the most advanced Steganography Platform EVER](1775096034703_k7d9jocr.md)
+- 2026-04-02 [nextlevelbuilder/ui-ux-pro-max-skill: An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms](1775095884731_hc8ps7xh.md)
+- 2026-04-02 [Panda: 跟老婆聊了聊财务自由之后想做什么，其实和现在也没什么区别](1775095190420_1rglh6mw.md)
+- 2026-04-02 [Mr Panda: 今天发生一件小事，汽车电瓶没电了，然后花了两个小时找救援，等救援的时候，就想成年人的人生真的麻烦， 然后就有了如下的一点点思考](1775094572066_avzz0ma8.md)
+- 2026-04-02 [Mr Panda: 给大家分享一个超级实用的思维，如果你能学会了，我相信你往后的余生都因为我这个推而受益终生](1775094463038_al4awm2v.md)
+- 2026-04-02 [上官亂: 浙江国资背景的浙创投投资张雪9000万的故事是这样的，很多是我没想到的： 1、浙创投不是在张雪机车成功了才投资，算不上雪中送炭，但的确是在张雪还没成功时进来的—…](1775093886303_xwr4fbg4.md)
+- 2026-04-01 [oh-my-claudecode/README.zh.md at main · Yeachan-Heo/oh-my-claudecode](1775035779427_o5k1h5sl.md)
+- 2026-04-01 [instructkr/claw-code: The fastest repo in history to surpass 50K stars ⭐, reaching the milestone in just 2 hours after publication. Better Harness Tools, not merely storing the archive of leaked Claud…](1775033893108_jwyio64v.md)
+- 2026-04-01 [全网首发！详解长期护理险的本质！保障or全民新税种？！](1775032834900_erkpw325.md)
+- 2026-04-01 [封锁的海峡，中国的机遇](1775032532929_vx3b8z3d.md)
+- 2026-04-01 [Robinson · 鲁棒逊: 无用阶层的 乱纪元 和 UBI 一、无用阶层 —— AI不是珍妮纺纱机 过去的工业革命、信息革命，都只是改变了劳动的形式和效率，而非消灭劳动本身，终究还是在"人…](1775031632164_g8fatfzz.md)
+- 2026-04-01 [fakeguru: I reverse-engineered Claude Code's leaked source against billions of tokens of m…](1775027376149_c9f92yni.md)
+- 2026-04-01 [从层级到智能](1775026951553_kzawrkj1.md)
+- 2026-04-01 [The Claude Code Source Leak: fake tools, frustration regexes, undercover mode, and more \| Alex Kim's blog](1775026794097_ei8rdg4y.md)
+- 2026-04-01 [Claude Code 的真正核心秘诀（可能）不是模型](1775025432509_c0x75o33.md)
+- 2026-04-01 [indigo: Jack Dorsey 终于把他的去中心化理想映射到了企业组织架构上 - AI 将取组织的“层级”](1775025243214_67k7y7uz.md)
+- 2026-04-01 [dontbesilent: 9 个步骤，对标 dontbesilent 涨粉 50 万 1、核心工作：批量生产「正确的非共识」 2、按照李普曼的《公众舆论》（1922），观众在看到你的内容…](1775023752045_g9x91d94.md)
+- 2026-04-01 [AI 工程的真实代价：从 Claude Code 泄露源码看新模型接入的工程现实](1775023572939_l87405ds.md)
+- 2026-04-01 [我阅读了 Claude Code 的源代码，以找出它为何大量消耗 token。以下是所有内容。](1775010261999_cq028j01.md)
+- 2026-04-01 [Claude Code 封号真相：挖了源码，我发现了 5 个"叛徒"](1775006060001_5wi0248w.md)
+
+## 2026-03（525）
+
+- 2026-03-31 [Agent Interaction Guidelines \(AIG\) – Linear Developers](1774928577492_crrqfl7v.md)
+- 2026-03-31 [Vox: gstack + superpowers + compound engineering blowing up all at once is no acciden…](1774928570230_opntfjon.md)
+- 2026-03-31 [硅谷Sand Hill路的对话：智能密度势井论](1774928564197_mqxz903z.md)
+- 2026-03-31 [思维怪怪: 前 Hugging Face 技术负责人、现谷歌 DeepMind 资深工程师 Philipp Schmid 对比了近期三篇 Agent 模型技术报告后发现，月…](1774928554041_e6tzuj39.md)
+- 2026-03-31 [Muratcan Koylan: The best way to improve an agent’s skills is to treat their execution history as…](1774928537550_6jbj875w.md)
+- 2026-03-31 [向阳乔木: 让NotebookLM提炼的这本书中的部分金句和方法论： 1](1774928521748_bknl0gdu.md)
+- 2026-03-31 [Onur Solmaz: acpx v0](1774928511527_8vf14b9d.md)
+- 2026-03-31 [AI推动顶级医疗普惠化](1774927900535_52zpju5n.md)
+- 2026-03-31 [ChatGPT Won't Let You Type Until Cloudflare Reads Your React State. I Decrypted the Program That Does It.](1774927740576_ilxjvp18.md)
+- 2026-03-31 [GREG ISENBERG: 200,000+ new vibe coding projects get created every day yet almost NONE of them …](1774927517861_0fygj0fs.md)
+- 2026-03-31 [Georgi Gerganov: @simonw @ljupc0 I think the consensus is that Qwen3](1774927396617_jgf240oc.md)
+- 2026-03-31 [Muratcan Koylan on X: "Hiring + Some news - I joined @sullyai 3 months ago as a Context Engineer. Going forward, I'll be working as a Member of Technical Staff on the Research Team. We’re building a H…](1774927228926_0o097b0r.md) · A
+- 2026-03-31 [Ara: Three years ago, @swyx made the most prescient call in the AI agent space: "the …](1774927156679_ofrajsrs.md)
+- 2026-03-31 [The Cognitive Dark Forest \| Rye blog](1774927115301_7miyvz12.md)
+- 2026-03-31 [Georgi Gerganov: llama.cpp at 100k stars now that 90% of the code worldwide is being written by A…](1774923473447_gw2nuxnv.md)
+- 2026-03-31 [卡颂: 照当前 Harness Engineering 的发展趋势看，「应用开发」这个领域今年就能通关了](1774922066770_qp1ip9st.md) · A
+- 2026-03-31 [卡颂: 很多程序员的 Skill 数量已经失控了](1774920261828_c7bmsgzx.md) · A
+- 2026-03-31 [介绍用于 Claude Code 的 Codex 插件](1774919899386_z4pfz9z6.md) · B
+- 2026-03-30 [日本的雷曼时刻](1774867770369_sxg6ctx0.md) · C
+- 2026-03-30 [I Compared gstack, Superpowers, and Compound Engineering. They Solve Three Completely Different Prob 我比较了 gstack、Superpowers 和 Compound Engineering。它们解决了三个完全不同的问题。](1774867761411_4n8288gh.md) · A
+- 2026-03-30 [Vox: just finished a 3-hour /office-hours session using the prompt from the article: …](1774867747588_the5gexg.md) · C
+- 2026-03-30 [Cheng Lou: My dear front-end developers \(and anyone who’s interested in the future of inter…](1774867738285_zuf8b6fw.md) · B
+- 2026-03-30 [适用于软件开发人员和代理机构的律师事务所模式](1774867731673_suxe6u9i.md) · B
+- 2026-03-30 [Yetone语音输入开源争议解读](1774867725832_b6mrfpt1.md)
+- 2026-03-30 [Viking: 今天 HackerNews 最高赞的故事, 听起来是个传奇啊， https://t](1774867721103_dgt0ama2.md) · C
+- 2026-03-30 [AI Builder Club: 1/ Claude Code users: token-saving tactics that actually work 💰 My Claude Code …](1774867710527_xwicd6la.md) · B
+- 2026-03-30 [宝玉: 飞书 CLI 开源了，为什么 AI Agent 时代，大家都在做命令行工具](1774867707903_x1rf9uya.md) · B
+- 2026-03-30 [如何将 Claude 代码转化为自进化系统 \[完整指南\]](1774867695646_b86xch6n.md) · B
+- 2026-03-30 [忒修斯的船板: AI不需要记忆文档系统，需要这玩意儿的是你自己 这段时间，我对于Claudecode和Openclaw做了很多研究，也自己做了很多实践](1774867681153_ovhxps5g.md) · B
+- 2026-03-30 [赵纯想: 一个月前，我很绝望，写的垃圾代码，亏钱速度比手动操作还快](1774867508831_1s0m57fn.md)
+- 2026-03-30 [为什么程序员钟爱Codex，Vibe Coding的人却离不开Claude？一文弄懂它！](1774867099081_kx6mnh7g.md) · C
+- 2026-03-30 [Robinson · 鲁棒逊: 《10x is easier than 2x》 这本很多人推过，应该也是24年，给我启发最大的书了 核心观点是：当我们追求10倍成长时，将被迫跳出现有框架，必须…](1774867075850_geqdsdea.md) · C
+- 2026-03-30 [别再卷模型了，2026 年 Agent 的胜负手在 Harness！给你的Agent 搭"操作系统"吧](1774867067161_h1ugld7u.md) · A
+- 2026-03-30 [如何解决长时间运行的自主代理工程工作流问题](1774867061920_dlg5qvr1.md) · A
+- 2026-03-30 [宝玉: 你日常用 Claude Code，用了多少功能](1774867045612_49pr7tue.md) · B
+- 2026-03-30 [我用 2 刀复现了Karpathy 的 autoresearch](1774867042155_cg8yer2p.md) · B
+- 2026-03-30 [ShawnPana/smux: tmux config with built-in terminal automation and agent-to-agent communication.](1774866424416_aosexjxd.md)
+- 2026-03-30 [九原客: 最近在找几类配合 Coding Agent 的 App，分别是： 1](1774865407182_qasuz0tj.md) · C
+- 2026-03-30 [Anthropic's Hidden Vercel Competitor "Antspace" \| AprilNEA](1774865364459_6thkls5g.md) · S
+- 2026-03-30 [Owner’s Manual - Amp](1774863022197_imoyq4n8.md)
+- 2026-03-30 [ZenMux](1774857069437_8guvukgu.md)
+- 2026-03-27 [agent-infra/sandbox: All-in-One Sandbox for AI Agents that combines Browser, Shell, File, MCP and VSCode Server in a single Docker container.](1774606464652_9h43tlxx.md)
+- 2026-03-27 [OpenSWE企业编码代理解读](1774604967881_os8raa3c.md) · B
+- 2026-03-27 [pi-mono智能体全栈架构解析](1774604600596_fvq5j60u.md) · B
+- 2026-03-27 [AI时代长期管理型产品启示](1774603389721_az9y00ry.md) · B
+- 2026-03-27 [AI家庭健康管理全攻略](1774602904983_rqlu35lx.md) · B
+- 2026-03-27 [Stripe AI 智能体软件开发 \| Google AI Studio](1774595856437_7cyjz8gh.md) · B
+- 2026-03-27 [Paperclip：零人类公司 AI \| Google AI Studio](1774592548482_ejkgc04t.md) · B
+- 2026-03-27 [U哥: 如何强化痛点](1774591255931_dcpsehm9.md) · C
+- 2026-03-27 [Xiaowen: 我以前一直觉得，看纸牌屋，Suits，House 这一类美剧很有爽感，但没想明白原因，我也并不羡慕里面的生活，里面也不是一种爽剧剧情](1774584412168_arvqvb57.md) · C
+- 2026-03-27 [Xiaowen: 我来说说这件事我的思路和我会怎么干，供大家参考](1774583203346_oatf4d9c.md) · S
+- 2026-03-27 [Cat Chen, @catchen@mastodon.world: 现阶段做 AI wrapper/harness 创业跟 20 年前用 CRUD 做 Web 2](1774583198081_2rq6uwyp.md) · C
+- 2026-03-27 [如何使用 Paperclip 构建一家 AI Agent 公司](1774583179659_ydj85o1f.md) · B
+- 2026-03-27 [Claude Code auto mode: a safer way to skip permissions \\ Anthropic](1774583175889_dk15ah6t.md) · A
+- 2026-03-27 [AI 存储系统的现状：基准测试、架构及实际有效的方法](1774583148763_6vz5beje.md) · A
+- 2026-03-27 [宝玉: 林俊旸（Junyang Lin）新的文章：大模型的下一个阶段，不是让模型“想得更久”，而是让模型“为了行动而思考”](1774583145726_oyhtdpye.md) · A
+- 2026-03-27 [Claude Dispatch 指南：48 小时从我的手机运行 AI](1774583121120_x7jlj41v.md) · B
+- 2026-03-27 [How I Built Vue Lynx with AI in Two Weeks 我如何在两周内使用 AI 构建 Vue Lynx](1774582903598_4rr7k8mm.md) · A
+- 2026-03-27 [我在中国人工智能生态系统中两周的学习收获](1774581856630_cz83qdlo.md) · S
+- 2026-03-27 [凡人小北: 很开心最近学习到一批 autoresearch + OpenClaw 的案例开始跑出正反馈](1774581838382_bkbf91k5.md) · B
+- 2026-03-27 [Ariston: 花旗面向机构的二季度商品会议，讲到了未来三个月对油汽、煤、镍、锂、黄金、白银、铂、钯、铝，小麦和玉米的整体基本面看法： https://t](1774581612219_fh82624w.md) · B
+- 2026-03-27 [building a digital doorman - george larson](1774581608826_nua2g4mr.md) · A
+- 2026-03-27 [esaradev/icarus-daedalus: two AI agents with persistent memory across platforms. swap the SOUL files and they become a code review team, a research pair, a trading desk, or anything else that benefits…](1774581434243_a70ozf15.md) · B
+- 2026-03-27 [经济下行期普通人生存策略](1774581256545_sous71f2.md) · C
+- 2026-03-27 [智能体产品的行为系统竞争力](1774581081343_8q1gmue5.md) · A
+- 2026-03-27 [AI时代产品价值重写逻辑](1774580754555_ypng7ejw.md) · C
+- 2026-03-27 [Tutorial: Team Telegram Assistant \| Hermes Agent](1774580251019_t0nifvux.md) · B
+- 2026-03-27 [GREG ISENBERG: I met the guy behind Paperclip](1774579557857_8n4b4mt2.md) · C
+- 2026-03-27 [yan5xu: 大家与其看所谓的 manus 虚拟故事，不如我给大家讲讲真实的事情发展](1774579151036_2ijnhzpm.md) · C
+- 2026-03-27 [从会话工具到持续进化产品系统](1774576883646_1vv31ztb.md) · B
+- 2026-03-27 [marciopuga/cog: Cognitive architecture for Claude Code — persistent memory, self-reflection, and foresight](1774576551888_3povncqp.md) · A
+- 2026-03-27 [Cog认知架构与长期记忆系统解析](1774576316328_bxzk4bge.md) · A
+- 2026-03-27 [I wanted to build vertical SaaS for pest control. I took a technician job instead.](1774575788361_88cusdw4.md) · B
+- 2026-03-27 [Running Tesla Model 3's Computer on My Desk Using Parts From Crashed Cars - bugs.xdavidhu.me](1774575502521_7erqk9kk.md) · B
+- 2026-03-27 [Your data is everywhere. The government is buying it up : NPR](1774575500850_303440je.md) · C
+- 2026-03-27 [From zero to a RAG system: successes and failures \| Andros Fenollosa](1774575487240_qo15ckyo.md) · B
+- 2026-03-27 [Personal Encyclopedias — whoami.wiki](1774575486190_hy03wacm.md) · B
+- 2026-03-26 [LangChain多智能体设计全解](1774521060119_6lx6an4p.md) · B
+- 2026-03-26 [thesysdev/openui: The Open Standard for Generative UI](1774517456704_hztxym2c.md) · B
+- 2026-03-26 [CopilotKit/OpenGenerativeUI: Open-Source Generative UI Framework](1774517414193_m61fhtfm.md) · B
+- 2026-03-26 [Reverse-engineering Claude's generative UI - then building it for the terminal](1774517388321_0z5jq2c5.md) · A
+- 2026-03-26 [生成式界面重构AI产品范式](1774517252936_8gxhp5lr.md) · A
+- 2026-03-26 [生成式UI四条演进主线](1774516500816_skrgm2gb.md) · A
+- 2026-03-26 [生成式界面技术全景解读](1774516114718_kbsyg37p.md) · A
+- 2026-03-26 [AI产品从能力调用到流程编排](1774511150488_pd91pxwd.md) · A
+- 2026-03-26 [ki v i: 李晨46岁还赖在跑男不走，真不怪他 我算了下，他2014年就开始跑，到现在11季，一季最少八百万，一年录三四个月，钱就到手了](1774498944532_gmek6edw.md) · E
+- 2026-03-26 [Viv: @sydneyrunkle’s multi-agent docs are such a great practical artifact for underst…](1774498907814_ajdf8gfl.md) · D
+- 2026-03-26 [katanemo/plano: Plano is an AI-native proxy and data plane for agentic apps — with built-in orchestration, safety, observability, and smart LLM routing so you stay focused on your agents core logic.](1774498899837_e0uz7n7a.md) · B
+- 2026-03-26 [dontbesilent: 这个 skill 到线下课不是引流的逻辑，不是效果广告，是品牌广告 简单理解为：我证明我有解决问题的能力 类比的话，就是这个 skill 相当于一条抖音短视频，…](1774498860464_rycr93zd.md) · B
+- 2026-03-26 [Mason: We just got a 7-seat model Y, and we're gonna make that itty bitty third row wor…](1774498825818_a4ex9rs1.md) · E
+- 2026-03-26 [lufei: 今天发售的新书《The Book of Elon》，作者Eric Jorgenson花费5年时间，投入几千个小时研究Musk，整理了Musk的推文、演讲、采访等…](1774498820326_2gf3wtt6.md) · E
+- 2026-03-26 [Panda: 做赛道调研才发现目前使用体验最好的agent搜索 Tavily已经在两轮后被迅速收购 Seed $5M \(2024](1774498804496_goiuhzzi.md) · D
+- 2026-03-26 [吕立青\_JimmyLv 2𐃏26: 我目前干任何事情的三个步骤： /deep-research 不管啥概念，先深度调研 /find-skills 不管啥技能，让 AI Agent 去学 /plan…](1774498789973_7npdzt22.md) · D
+- 2026-03-26 [Building CLIs for agents](1774498789024_z0m9bekq.md) · B
+- 2026-03-26 [How we built the best browser agent with Karpathy's Auto-Research](1774498773219_3hjf8tcx.md) · B
+- 2026-03-26 [长时间运行的应用开发中的编排框架设计\[译\]](1774498746670_zhxl8kss.md) · A
+- 2026-03-26 [Leo: 用 Claude 搭建的本地 AI 健康管理体系文档，评论区不少朋友问能不能开源，有需求咱就干，整理好了](1774498724998_2hi8cozf.md) · B
+- 2026-03-26 [Leo: 一直想给自己和家人搭一套 AI 健康管理体系，每次体检、看病、用药都慢慢往里填](1774498718670_6orap8xj.md) · B
+- 2026-03-26 [truefoundry/tfy-voice-analyser-agent: Voice call analyzer using DeepAgents + TFY AI Gateway + Linear MCP](1774498708789_bcjzn526.md) · A
+- 2026-03-26 [Frad: 在公司里和同事分享了好几次，关于为什么我的 vibe coding 大家觉得又快又好，而且写的前端质量也肯起来不错的秘诀](1774498706044_9vsm9epe.md) · B
+- 2026-03-26 [Robinson · 鲁棒逊: Manus事件引发红筹政策收紧 1](1774498668997_bizbzz6r.md) · D
+- 2026-03-26 [Rainier: 滴滴那个时候就已经开始了啊](1774498654670_v9gz674i.md) · D
+- 2026-03-26 [林晚晚的猫: Manus 两个创始人被限制出境，还有一件事没人提：中国运行了30年的红筹政策，也受Manus影响一起修改了](1774498640988_czzd9llp.md) · D
+- 2026-03-26 [indigo: 来自 Gumroad 创始人 Sahil Lavingia 的 Skills 合集，这些都提炼自他的「极简创业家」这本书 —— 这就是“一人公司”的实践指南](1774498625062_5u98c3uu.md) · B
+- 2026-03-26 [Tempus AI CEO Eric Lefkofsky最新演讲20个要点全整理：数据护城河、基础模型、精准医疗与长期复利](1774498610414_6jgpz67c.md) · B
+- 2026-03-25 [Harness design for long-running application development \\ Anthropic](1774407476808_o85nn1jy.md) · A
+- 2026-03-25 [U哥: 如何获得你想拥有的一切](1774405637706_ee629z2u.md) · D
+- 2026-03-25 [MolmoWeb: An open agent for automating web tasks \| Ai2](1774405159467_84dl894v.md) · A
+- 2026-03-25 [dontbesilent: 我倾向于解读为知识问题，不能 AI First 不是习惯不好，是知识不足 用的少、没用过、不了解，所以觉得 AI 解决不了问题，所以就不用 用过的产品都很差，所…](1774404592576_fegi9qls.md) · D
+- 2026-03-25 [Rainier: 我觉得我们需要理解一个事情，网红是什么](1774404591209_0gcmw3yf.md) · B
+- 2026-03-25 [Vivian Wu: 张雪峰死了，按理说实在不应该说啥了](1774404582625_be93zrr5.md) · E
+- 2026-03-25 [swyx: seriously @walden\_yan cooked, this thing legitimately saves my ass 3-8x a day, a…](1774404574491_puzqx9ek.md) · D
+- 2026-03-25 [Jesse Lau 遁一子: 今天因为张雪峰的新闻又想起来这个推特，在grok里找了半天才找到 “打卡”锻炼不足取，现代长跑更多的成社交属性了 而且如果全程保持匀速，这种锻炼方式我感觉不太对…](1774404569614_pin6e1in.md) · E
+- 2026-03-25 [0xSero: People are not lying when they say Qwen3](1774404555035_1wwakkwv.md) · C
+- 2026-03-25 [Arvind: Cloudflare just dropped Dynamic Workers and it's a massive deal for AI agents](1774404539928_iv8erf9w.md) · B
+- 2026-03-25 [HKUDS/OpenSpace: "OpenSpace: Make Your Agents: Smarter, Low-Cost, Self-Evolving" -- Community: https://open-space.cloud/](1774404537058_mm1l1k1h.md) · A
+- 2026-03-25 [Shann³: Karpathy's AutoResearch is changing how campaigns get optimized and most markete…](1774404508882_gtvrjctf.md) · C
+- 2026-03-25 [GREG ISENBERG: how to use firecrawl to give your AI eyes and actually build startups that outpe…](1774404508271_t7mzyavq.md) · B
+- 2026-03-25 [Agent Skills 复利工程：你的烂笔记比代码值钱](1774404497491_ya2as50b.md) · A
+- 2026-03-25 [Sac: 分享一个我一直很喜欢的博主和他的一段话 「世界是个巨大的草台班子，很多人都停留在了想的阶段，而真正能把想法落地、快速试错的人，确实走在了前面」 https://…](1774404491959_c7o4qi6v.md) · D
+- 2026-03-25 [witcheer ☯︎: Hermes agent v0](1774404476441_lrjqxfra.md) · B
+- 2026-03-25 [夏河: 奉劝大陆同胞：少翻墙看键政，不是因为它危险，而是因为它在消耗你](1774404474001_c4qz4xnt.md) · D
+- 2026-03-25 [Factory \| Agent-Native Software Development](1774404460495_wcnpik9l.md) · D
+- 2026-03-25 [Robinson · 鲁棒逊: 更新一下，调整了我长期服用的补剂清单，和大家同步 长期服用 4种 - Omega-3：支持心血管健康，抗炎，对大脑和眼睛也有益 - 辅酶Q10：参与细胞能量代谢…](1774404457533_kdetmpju.md) · D
+- 2026-03-25 [Build vs buy: how to deploy coding agents at scale](1774404443996_crqa4xei.md) · B
+- 2026-03-25 [陈成: 每个做 AI 编码工具的团队都该认真看这个——https://t](1774404443995_xonu4zc2.md) · A
+- 2026-03-25 [U哥: 我其实并不是被限高之后做自媒体的](1774404426803_01u29sl1.md) · B
+- 2026-03-25 [Rainier: 张雪峰的的业务模式有问题](1774404422518_bggdehxr.md) · C
+- 2026-03-25 [How Qoder builds Harness Engineering into Experts Mode](1774404409536_ln86v1id.md) · B
+- 2026-03-25 [Jesse Lau 遁一子: 一如往常，读一下大佬的评论 https://t](1774404406757_igjqf35v.md) · D
+- 2026-03-25 [How Moda Builds Production-Grade AI Design Agents with Deep Agents](1774404386738_dthr2yiq.md) · A
+- 2026-03-25 [U哥: 如果AI可以接管微信，并且token消耗能够承受的情况下，我可能会做二件事](1774404371657_gigpq51g.md) · D
+- 2026-03-25 [Building AI-Generated Video with JSON Render and Remotion \| by Chris McKenzie \| Mar, 2026 \| Medium](1774403752108_bawh2e45.md)
+- 2026-03-25 [Harness capabilities - Docs by LangChain](1774403484906_8ulr301j.md) · B
+- 2026-03-25 [Subagents - Docs by LangChain](1774403479303_lo9miyva.md) · B
+- 2026-03-25 [Context engineering in Deep Agents - Docs by LangChain](1774403331200_s9op6nzr.md) · A
+- 2026-03-24 [Stop Parsing Text: How JSON Render Turns Model Output Into UI \| by Chris McKenzie \| Mar, 2026 \| Medium](1774342252154_b4utmgyp.md)
+- 2026-03-24 [CLAUDE CODE 最佳实践：从"能用"到"真的好用"](1774341268424_m7jkt5gj.md)
+- 2026-03-24 [AI代理走向可追踪闭环运维](1774340247716_m9yfxat1.md)
+- 2026-03-24 [Paperclip — Open-source orchestration for zero-human companies](1774338760534_j6qtnq5i.md)
+- 2026-03-24 [Frank Wang 玉伯: 听了小珺采访谢赛宁的采访播客后，后劲十足](1774335269984_1ao87xzh.md)
+- 2026-03-24 [我们如何使 Ramp Sheets 自维护](1774326746539_bxlz3s38.md) · A
+- 2026-03-24 [Varun: Introducing the Agent Virtual Machine \(AVM\) Think V8 for agents](1774326740243_6702wavc.md) · B
+- 2026-03-24 [Chayenne Zhao: Today I read a lengthy piece on Harness Engineering — tens of thousands of words…](1774326724646_01avrau7.md) · B
+- 2026-03-24 [我所知道的所有 Claude 代码技巧（2026 年 3 月）](1774326724645_rdnq4n5a.md) · B
+- 2026-03-24 [U哥: 去年学游泳的时候让我看到预设灾难有多么可笑](1774324883945_7u66am8x.md) · A
+- 2026-03-24 [dontbesilent: 实际上我认为创业成功率 100% 的方法是存在的 但是这个方法要求你去做很多，做了可能没有结果的事情 大多数人误以为这个方法是让你去做那些做了一定能赚钱的事情（…](1774323087131_wc35z3a2.md)
+- 2026-03-24 [Panda: 我现在真的很相信未来会变成赛博朋克2077，几个大财团掌控一切](1774323084405_o7z1oht7.md)
+- 2026-03-24 [Build a smart financial assistant with LlamaParse and Gemini 3.1 - Google Developers Blog](1774322916352_wezxxh8e.md)
+- 2026-03-24 [Discover errors and usage patterns with the Insights Agent - Docs by LangChain](1774322909546_glipi24g.md)
+- 2026-03-24 [dontbesilent: 怎么干掉售前环节：先卖一个便宜的产品，然后只对便宜的产品的买家，卖你真正想卖的产品就可以了 如果他们不愿意买这个便宜的产品，广义的讲，是你的内容有问题 狭义的讲…](1774322064655_ju9fpvr2.md) · B
+- 2026-03-24 [第三方客户端爆火传播真相](1774321029508_ufz62q37.md)
+- 2026-03-24 [CLAUDE + OPENART WORLDS. The Virtual Production Pipeline](1774321004641_qy4zwfkk.md) · A
+- 2026-03-24 [Aaron Stupple: Insights from listening to hours of Paul Ehrlich \(RIP\): He thought that the evid…](1774320986275_6v6g12y2.md) · C
+- 2026-03-24 [web-arena-x/webarena-infinity: An approach to utomatically generating browser environment with verifiable tasks](1774320985158_hnahqte0.md) · B
+- 2026-03-24 [WebArena-Infinity: Generating Browser Environments with Verifiable Tasks at Scale](1774320963297_a9h7ey3l.md) · B
+- 2026-03-24 [超智能体与元认知自改进](1774320961653_jbvvhkgu.md) · C
+- 2026-03-24 [Machina: AI made writing code 10x faster, but it also made understanding your own codebas…](1774320950872_f4r2r278.md) · C
+- 2026-03-24 [Bo Wang: Sharing another very cool paper from my friend @XinggangWang](1774320947467_19h2ew2t.md) · B
+- 2026-03-24 [高效的个人不会造就高效的企业](1774320931072_8dlxqjc9.md) · B
+- 2026-03-24 [The Structure of the .claude/ Folder](1774320928287_jqk2b8b5.md) · B
+- 2026-03-24 [全天候投资组合的概念与机制](1774320905730_nuigb1q3.md) · C
+- 2026-03-24 [我错误地使用 Claude 代码几个月了。这 40 种实践彻底改变了一切。](1774320905730_zxuo05vu.md) · B
+- 2026-03-24 [Product management on the AI exponential \| Claude](1774318718138_rnsqdk6n.md)
+- 2026-03-24 [AI时代产品经理重构法则](1774318609724_r1uow2m6.md)
+- 2026-03-24 [Profiling Hacker News users based on their comments](1774318502928_r63025rs.md) · B
+- 2026-03-24 [黄仁勋 × Lex Fridman：NVIDIA 4 万亿市值背后的 AI 革命](1774317124828_e3k3r3yw.md) · B
+- 2026-03-24 [软件只剩下两条路](1774317111811_2p184mww.md) · B
+- 2026-03-24 [Frad: 类似的方法，我自己在 Claude Code 里面实验了很久，参考下面的提示词修改之后觉得可以让大家也用上](1774317093957_7a4egrqo.md) · B
+- 2026-03-24 [The Startup Ideas Podcast \(SIP\) 🧃: Boris Cherny, the creator of Claude Code, shared his entire setup](1774317092790_uo4wk1zc.md) · B
+- 2026-03-24 [你智能体栈中缺失的层](1774317077440_j9cjivza.md) · A
+- 2026-03-24 [Aperture by Tailscale is now self-serve: Centralized AI access, usage, and spend](1774317075045_qb9360kk.md) · C
+- 2026-03-24 [智能体授权模式简析](1774317063268_gjnnxqg0.md) · B
+- 2026-03-24 [把选择权握在自己手里：85\~95 一代人的困局](1774317045996_dq4mlg46.md) · C
+- 2026-03-24 [ballred/obsidian-claude-pkm: A complete starter kit for an Obsidian + Claude Code personal knowledge management system.](1774317041720_bs3ttb72.md) · B
+- 2026-03-24 [Jason Zuo: 从上周开始逐渐把重心从🦞转移到 Claude Code，第一件事就是想怎么重建在OpenClaw里的记忆架构和记忆系统](1774317027859_tucjt178.md) · B
+- 2026-03-24 [SaaS末日，这10只个股应该适时退出\(上\) - by 徐老猫 - 老猫美股研究](1774317025185_rv6jg0ki.md) · C
+- 2026-03-24 [Qwen3\_5\_\(4B\)\_Vision\_GRPO.ipynb - Colab](1774317012228_q4vjwa27.md) · B
+- 2026-03-24 [Ariston: 今天Robin邢的宏观谈，老样子，只讲增量关键，被反复讨论和大家都知道的共识直接掠过： 1）过去全球原油供给的缓冲垫，依赖的是 OPEC 的备用产能；但如果这些…](1774317008673_vswspajd.md) · B
+- 2026-03-24 [vercel-labs/json-render: The Generative UI framework](1774316991484_405i12j7.md) · B
+- 2026-03-24 [Leo: 预测市场量化做久了发现，策略代码只是冰山尖，下面 80% 是数据基建](1774316988720_240x75f8.md) · B
+- 2026-03-24 [Chubby♨️: Agentic coding just got a major upgrade nobody is talking about](1774316969344_q3p27vqr.md) · C
+- 2026-03-24 [大多数人在攒实习生，聪明人在建飞轮](1774316963520_0pajof3j.md) · B
+- 2026-03-24 [Leo: 我搭了半年飞轮，两条线同时转： 代码线：/plan → build → /review → /verify → 经验自动写回 patterns](1774316951884_pb6n941r.md) · C
+- 2026-03-24 [witcheer ☯︎: my @NousResearch &amp;lt;&amp;gt; @stackwalnuts setup that fixed most of the memory issu…](1774316951883_i7ecve0p.md) · B
+- 2026-03-24 [AI自动画像的机会与风险](1774315780930_qu39cftq.md) · A
+- 2026-03-23 [Pinokio迈向本地AI操作平台](1774262874571_q4hpm0p5.md) · B
+- 2026-03-23 [ExpertPrompting: Instructing Large Language Models to be Distinguished Experts](1774262541408_7xslv6z6.md) · B
+- 2026-03-23 [swarma/README.zh.md at main · glitch-rabin/swarma](1774262528208_kh1wnz5f.md) · B
+- 2026-03-23 [pinokiocomputer/pinokio: AI Browser](1774262511123_rj3kizv4.md) · C
+- 2026-03-23 [@TheINAOG: Hey, they just dropped something creamy in Pinokio](1774262494631_ffj44k4o.md) · C
+- 2026-03-23 [emozilla: I'm using Hermes Agent to teach myself Lean](1774262494630_iexc9ygk.md) · D
+- 2026-03-23 [AI迈向可协作学习型代理系统](1774262371665_5iil6x7n.md) · B
+- 2026-03-23 [构建高效Agent的核心方法论](1774261936604_vgcp40f0.md) · B
+- 2026-03-23 [个人成长与内容变现方法论](1774253620090_wgravlmi.md) · C
+- 2026-03-23 [从情绪散兵到系统操盘手](1774253446405_6vmu7i9q.md) · C
+- 2026-03-23 [把自己训练成价值变现系统](1774249227683_rfwsgwxe.md) · C
+- 2026-03-23 [内容创作商业化底层方法论](1774248994693_5f8juq6q.md) · C
+- 2026-03-23 [U哥: 如何开口即秒杀别人](1774247044963_yz2asv3c.md) · C
+- 2026-03-23 [Frad: 长期深入跟踪 Claude 插件实现，基本确定就是 https://t](1774247041476_zab0upy5.md) · D
+- 2026-03-23 [U哥: 2024年7月19日的时候我发了一条这样的朋友圈： “我打算试试，花一周时间调整下生物钟，然后每天五点起床，起床后先跑步，然后开始工作，如果坚持不下来，我就把这…](1774247033100_d302m13o.md) · D
+- 2026-03-23 [Robinson · 鲁棒逊: @shaoxianduipai 1](1774247023565_l3jxfzfj.md) · D
+- 2026-03-23 [PsiACE: @ixiaowenz 我觉得是两个问题： 第一，使用的场景太少了，很多人都还是局限在过去的工作流/chatbot或者特定在编程领域的 Agent 第二，现在流行…](1774247020832_kmbbrmbz.md) · C
+- 2026-03-23 [Machina: Claude Code Channels + skills turns your phone into a function-calling interface…](1774247005994_64nsq4tp.md) · B
+- 2026-03-23 [John Cumbers: The biotech industry spends $3 billion and 13 years to bring one drug to market](1774247004566_fro6i5qu.md) · C
+- 2026-03-23 [Lenny Rachitsky: Jessica Fain's best product ideas kept dying, and she couldn't figure out why](1774246988094_1ez9f6st.md) · C
+- 2026-03-23 [Brivael: I built my own coding conductor \(Argil Forge\) from scratch](1774246981942_ssf3vrae.md) · C
+- 2026-03-23 [Hrishi: Clausetta \(Clawd + Rosetta\) is still one of the coolest things I've seen hanks d…](1774246967484_k2qi6wli.md) · B
+- 2026-03-23 [Lossy self-improvement - by Nathan Lambert](1774246967328_g7hinhmc.md) · A
+- 2026-03-23 [Michal Tal, PhD: 1/ I want to explain a bit about our MIT MAESTRO study](1774246943248_28zp8cj5.md) · C
+- 2026-03-23 [Duane Storey: I spent about 200 hours over the last two months building an RNA pipeline to ana…](1774246943047_xaru2ajg.md) · C
+- 2026-03-23 [Matt Stockton: I think this is a likely evolution](1774246920365_h7yjwl3e.md) · C
+- 2026-03-23 [David: 1/n I topped the HuggingFace Open LLM Leaderboard without changing a single weig…](1774246920364_lhc3aeyq.md) · B
+- 2026-03-23 [Leo: 同时用 Claude Code、Codex、OpenClaw，怎么让它们共享记忆](1774227678614_tleqnuz5.md) · B
+- 2026-03-23 [U哥: 培养网感的练习方法： 找一些你感兴趣或者你同领域的博主，特别是小红书上，那些流量很好，粉丝很多，评论也很多的博主，比如几十万粉丝，评论都有上百条，点赞过千以上的](1774227677316_shn6s1er.md) · C
+- 2026-03-23 [Igor Kudryk: The self-improving memory of Hermes agent from @NousResearch is a pretty neat th…](1774227665955_gwjuq0ka.md) · C
+- 2026-03-23 [shirish: Palantir AI + Claude was used to detect, prioritize, and strike over 1,000 targe…](1774227660154_r9pu3r4o.md) · D
+- 2026-03-23 [Robert Mao: Claude Code 分析的结论： 😂本质上这是一个很好的 marketing 项目， 而不是一个很好的 engineering 项目](1774227645991_rxkzgg07.md) · C
+- 2026-03-23 [陈成: 大多数人用 Claude Code，根本没打开过](1774227645327_o86iny7l.md) · B
+- 2026-03-23 [yetone: 感觉跟 Alma 的 Agent Crew 功能差不多，Alma 提供了一些内置的 Agent，同时用户也可以添加 Custom Agent](1774227630941_wfi44gus.md) · C
+- 2026-03-23 [AI 的利用远比你想象的要多](1774227623022_hsqf0unk.md) · B
+- 2026-03-23 [凡人小北: 用 ChatGPT 的学习模式把这篇 paper 过了一遍，有个判断越来越清晰： 代码智能的问题，已经开始从模型大小迁移到信息有没有被用对 字节、阿里、腾讯 +…](1774227613141_1f0opx3m.md) · C
+- 2026-03-23 [一个 Swarm &amp; Hermes，随你一同成长](1774227600225_nedfzgqf.md) · B
+- 2026-03-23 [glitch: as promised this week](1774227596773_odqi2we9.md) · D
+- 2026-03-23 [Frank Wang 玉伯: 一个好的 AI 创业者，需要有发现问题和定义问题的能力，同时要能组建团队或通过 AI，能解决问题，甚至帮用户消灭问题](1774227589476_xyw41w89.md) · C
+- 2026-03-23 [Saito: David Singleton，前 Stripe CTO 最近有个观点很炸裂： 当我们所有人都觉得 AI 时代最危险的是 manager，因为不需要中间层了嘛，…](1774227579524_w9x9wyol.md) · C
+- 2026-03-23 [如何使用 Codex 构建令人惊叹的 UI](1774227577669_pssf7afi.md) · B
+- 2026-03-23 [Viking: 谢谢 这段 Claude Code 的 system prompt 真的有用，已经在 Codex 中添加上了，其实针对任何生成代码 Agent 都是很好的指导，…](1774227563960_ri07o81d.md) · B
+- 2026-03-23 [凡人小北: 刚看到新闻，月初的时候 OpenEvidence 一天 100 万次临床咨询达成](1774227559756_fne6g3lw.md) · D
+- 2026-03-23 [AI 帮你写代码快了 50%，然后代码在审查队列里躺了三天](1774227544805_h1xhq82v.md) · B
+- 2026-03-23 [Robinson · 鲁棒逊: 一个观察 如果你所在城市，互联网行业发达，就业人口众多，请立刻、马上，抛售手中所有房产](1774227544007_8qjfyeiy.md) · D
+- 2026-03-23 [U哥: 不敢公开知识的底层原因是认为公开之后就没有价值了](1774227533100_usodk616.md) · C
+- 2026-03-23 [indigo: 微信原生接入 OpenClaw 🦞 你只需要在有 OpenClaw 的设备上安装官方插件（npx -y @tencent-weixin/openclaw-we…](1774227533043_m70yknpg.md) · C
+- 2026-03-23 [宝玉: 发布一个新的 Skill：baoyu-youtube-transcript 输入 YouTube URL，直接抓取视频字幕，生成带章节、发言人和封面图的文档，不…](1774227532802_jj3mxkl4.md)
+- 2026-03-23 [Viking: 之前还在吐槽 Codex 的 GPT 模型设计能力不行，昨天就在官方看到了一篇官方指南《Designing delightful frontends with …](1774227519556_yomkoeq4.md) · B
+- 2026-03-23 [宝玉: 转译：把下面这段加到你的 Codex 自定义指令里，体验会好太多：](1774227519556_vuy1bc43.md) · B
+- 2026-03-20 [在悉尼和稀泥: 这就是创业最好的年代](1774006426797_5n6j3tpr.md) · C
+- 2026-03-20 [我读了 Hermes Agent 的记忆系统，它修正了 OpenClaw 出错的地方](1774006426797_1urcrc72.md) · A
+- 2026-03-20 [Agent落地的系统工程本质](1774003687901_7p1985cs.md) · A
+- 2026-03-20 [智能体工程系统核心解读](1774002733306_mo5cyplr.md) · A
+- 2026-03-20 [阿绎 AYi: 打造Claude Code的核心开发者@bcherny，最近透露了他们团队天天用Claude的秘诀，我们之前用Claude的方式，全是低效的无用功](1774001999530_qym0e8uv.md) · B
+- 2026-03-20 [构建 Claude 代码的经验：我们如何运用技能](1774001285541_yfrwtbrk.md) · A
+- 2026-03-20 [构建 Claude Code 的经验：提示词缓存就是一切](1774001263136_rcirxhuy.md) · A
+- 2026-03-20 [构建 Claude 代码的经验：像智能体一样观察](1774001263136_oebs522n.md) · A
+- 2026-03-20 [代码智能体操作系统三层设计](1773993083081_c9urjm7y.md) · S
+- 2026-03-20 [Introducing LangSmith Fleet](1773990729229_9pogk70b.md) · C
+- 2026-03-20 [cocktail peanut: Hermes can talk to Pinokio to control any app you have installed, automatically](1773990725639_yvgyndb0.md) · C
+- 2026-03-20 [动物园园长: 我宣布，闲鱼倒卖就是2026年的铁饭碗](1773988369945_y52cstf6.md) · D
+- 2026-03-20 [OpenWuKong — AI Desktop Assistant \| Rust-Powered, Cross-Platform](1773986245942_2sxws6iq.md) · D
+- 2026-03-20 [how i automated customer acquisition with one ai agent 我如何用一个 AI 代理实现客户获取自动化](1773986233153_6wu11njt.md) · C
+- 2026-03-20 [The UGC industry is dead. AI killed it. here's what comes next + my AI UGC workflow UGC 行业已死。AI 杀死了它。接下来会发生什么 + 我的 AI UGC 工作流程](1773986202266_i4qvkiim.md) · C
+- 2026-03-20 [Nous Research: Hermes Agent wrote a novel](1773986129916_50wgsza7.md) · B
+- 2026-03-20 [Bo Wang: Great interview of @StefanoErmon by @ziv\_ravid in the latest episode of Informat…](1773986105058_w5cq6mvf.md)
+- 2026-03-20 [I don't understand AI, yet I built a million dollar business with it 我不懂 AI，却用它做成了百万美元的生意](1773986104056_24fq4107.md) · B
+- 2026-03-20 [你不知道的 Agent：原理、架构与工程实践](1773986086007_e95d0lr3.md) · A
+- 2026-03-20 [Introducing the new full-stack vibe coding experience in Google AI Studio 介绍 Google AI Studio 中全新的全栈式编码体验](1773986082755_ibjee2sq.md) · C
+- 2026-03-20 [Robinson · 鲁棒逊: 请推友们周知 微信步数会泄露个人每天的作息和行动模式等信息，请记得关闭 别小看这个步数信息](1773986055708_ibyzl3a0.md) · C
+- 2026-03-20 [sitin: Lightpanda：一个用 Zig 从零写的无头浏览器](1773986047896_n97uc0w8.md) · C
+- 2026-03-20 [Ariston: 高盛在举行的关于美国半导体与软件行业定位的内部研讨会，讨论了英伟达在GTC上的内容、半导体资本支出、内存与存储（美光）的强劲、关于超大规模资本支出的投资回报率争…](1773985318627_en79gce9.md) · B
+- 2026-03-20 [How to Use Claude Cowork Like a Second Employee 如何像第二员工一样使用 Claude 协作](1773985310382_hslekg48.md) · C
+- 2026-03-20 [Jason Zuo: 开源代码不稀奇，开源判断力才是真正的赛博大神 这几天 skill 教程满天飞，Google Anthropic 全在教你怎么给 AI 写skill 但 Garr…](1773979702692_7zs6q9wy.md) · B
+- 2026-03-20 [Jerry Liu: Introducing LiteParse - the best model-free document parsing tool for AI agents …](1773979232631_1qfs7wra.md) · B
+- 2026-03-20 [U哥: 有粉丝问我，那我是怎么找到自己卡点的，我也分享一下我自己的经历和方法](1773979217952_9y5xrcwr.md) · B
+- 2026-03-20 [Luyu Zhang: 随着 AI 和语音输入的普及，我们需要重新思考办公室的设计逻辑](1773978890799_efwoix5f.md) · B
+- 2026-03-20 [宝玉: 低代码是给人用的机器执行的，Skills 是给 Agent 用的，Agent 和机器执行的；Skills 是一套通用规范，低代码是一个个不同的平台](1773977789750_y7tdhhfm.md) · C
+- 2026-03-20 [李继刚: 贝叶斯主义者只有一个信条： 观点是拿来「更新」的，不是拿来「坚守」的](1773974050521_xhiikr11.md) · E
+- 2026-03-20 [Inbox \| Readwise](1773972685699_ex2mk2xy.md) · D
+- 2026-03-20 [王海滨的财经闲谈: 很多人在找＂逃离北上广＂的地方](1773966954568_hyfqacpn.md) · D
+- 2026-03-19 [msitarzewski/agency-agents: A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert wi…](1773917733795_6lp1qcdm.md) · B
+- 2026-03-19 [moeru-ai/airi: 💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voi…](1773917681218_6wzki7gs.md) · C
+- 2026-03-19 [koala73/worldmonitor: Real-time global intelligence dashboard — AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface](1773917603407_42d40oyl.md) · C
+- 2026-03-19 [langchain-ai/deepagents: Agent harness built with LangChain and LangGraph. Equipped with a planning tool, a filesystem backend, and the ability to spawn subagents - well-equipped to handle complex age…](1773917555717_8qsembp9.md) · B
+- 2026-03-19 [Releases · ruvnet/RuView](1773917446223_n0zhj8rv.md) · B
+- 2026-03-19 [Robinson · 鲁棒逊: 衍生一条 这样的大裁员发生后，全国房价会继续下行，因为过去支撑高房价的主力群体，会开始失业，还不起房贷的人群，会持续增多 https://t](1773917366503_19vr21p7.md) · D
+- 2026-03-19 [U哥: 这是一个 32 万粉丝的账号 1，即使你 32 万粉，你要说教，观众依然不买账 2，从更新频率来看，根本不赚钱了，商品也没销量 3，从最近标题来看，已经停止学习…](1773917340525_dd55jqoc.md) · C
+- 2026-03-19 [How \(and what\) I'm building this week - Ben's Bites](1773917332822_4mepqirv.md) · B
+- 2026-03-19 [Ding: 可以看看 Ben 最新的文章，他的 newsletter 应该是全网最好的 AI newsletter 了，没有长篇大论，每期超多有价值的链接（我自己的 new…](1773917324624_zuvuip4m.md) · D
+- 2026-03-19 [outsourc-e/hermes-workspace: Native web workspace for Hermes Agent — chat, terminal, memory, skills, inspector. Built for the Nous Research hackathon.](1773914969685_9fxa0brp.md) · B
+- 2026-03-19 [Ariston: 彭博一小时前刚刚放送的内容，他们邀请了传奇人物the legend Bob Brackett，伯恩斯坦的顶级大宗商品研究员（one of the most kn…](1773914949068_qjg1a3kn.md) · B
+- 2026-03-19 [Elvis: this is the future of saas: one backend with two front doors](1773914888209_dvjlivtp.md) · C
+- 2026-03-19 [Gergely Orosz: How did a tiny team of 30 engineers build WhatsApp, more than a decade ago](1773914862737_zu02x389.md) · B
+- 2026-03-19 [jackwener/opencli: Make any website your CLI. A powerful, AI-native runtime for seamless browser automation and dynamic web data extraction.](1773914050224_28l5cydh.md) · B
+- 2026-03-19 [Todd Saunders: I know Silicon Valley startups don't want to hear this](1773913771772_f9j35kpq.md) · B
+- 2026-03-19 [emin-ozata/lazycut: A simple terminal UI for video trimming](1773913436160_pp240bis.md) · C
+- 2026-03-19 [BadUncle: 搞了个 Ghostty Dev，基于 Ghostty 终端的 fork，专门给同时跑多个 Claude Code session 的开发者用](1773907591894_y1rfpbot.md) · B
+- 2026-03-19 [被美国遣返、禁止入境 5 年，他在温哥华的卧室里做出了日处理 400 万工作流的 AI 平台](1773907061013_vruy9zzg.md) · B
+- 2026-03-19 [Morris: 为什么说，在中国历史上，商人是没法保护自己的财产](1773893101563_296ltoy5.md) · D
+- 2026-03-19 [AI逆向分析阿里推出的“悟空”App技术架构](1773892236483_s6my4ru1.md) · B
+- 2026-03-19 [Frank Wang 玉伯: For agents 是非常廉价的创业方向 小心被骗进去 因为强大的 agent 自己会写工具 不需要你去写 如果你去写了 效果很好 收入很多 agents 背…](1773888093357_mp313u62.md) · D
+- 2026-03-19 [Jesse Lau 遁一子: 因为我翻译过这位大佬几次，X就会推送 一贯的又快又有质量的评论，不是AI瞎分析 翻译： Anthropic 在打造类似 OpenClaw 这类产品上的推进速度，…](1773887854936_qcd7glig.md) · B
+- 2026-03-19 [Autoresearching Apple's "LLM in a Flash" to run Qwen 397B locally 自动研究苹果的“快速快速语言模型”以本地运行 Qwen 397B](1773886821335_mom6isqd.md) · B
+- 2026-03-19 [I want to become a Claude architect \(full course\). 我想要成为一名 Claude 架构师（完整课程）。](1773886593488_z10iwxa0.md) · B
+- 2026-03-19 [AprilNEA: 在 Claude Code 的虚拟机里，我们发现了什么 起点 我们对 Claude Code 运行环境做了一次完整的逆向工程](1773884986470_s2iisrzj.md) · A
+- 2026-03-19 [Balaji: I'm going to make some obvious points](1773884715852_1r9z13ew.md) · C
+- 2026-03-19 [MiniMax M2.7: Early Echoes of Self-Evolution](1773884084486_lkakc875.md) · B
+- 2026-03-18 [Can LLMs Be Computers? \| Percepta](1773828447308_rznd146s.md) · A
+- 2026-03-18 [Your IDE Is Slowing You Down](1773827437420_ioh8fy08.md) · D
+- 2026-03-18 [Open SWE: An Open-Source Framework for Internal Coding Agents 开源软件工程：一个用于内部编码代理的开源框架](1773827432338_ho7i5kdi.md) · B
+- 2026-03-18 [Enough About Harnesses, Your Org Needs Its Own Coding Agent 关于 Harness 的讨论够了，你的团队需要自己的编码代理](1773827419983_mu8c0c4u.md) · B
+- 2026-03-18 [Introducing Unsloth Studio \| Unsloth Documentation](1773827406488_dqh5iwr4.md) · B
+- 2026-03-18 [unslothai/unsloth: Unified web UI for training and running open models like Qwen, DeepSeek, and Gemma locally.](1773827400680_auuc6ob3.md) · B
+- 2026-03-18 [The Harness Is Everything: What Cursor, Claude Code, and Perplexity Actually Built 驾驭一切：Cursor、Claude 代码和 Perplexity 究竟打造了什么](1773827388366_5bf5pbaa.md) · A
+- 2026-03-18 [经济红利尽失之后——中国将走向何方？](1773827336840_qfnp1qi1.md) · B
+- 2026-03-18 [李老师不是你老师: 近日，《经济学人》：中国财富分配结构变化明显 中年群体缩水显著 近日，经济学人发布相关数据分析指出，2020年以后，中国财富分配结构出现显著变化，不同年龄群体之…](1773827332792_hh0dj82b.md) · C
+- 2026-03-18 [1、2月数据全出来了：中国经济，到底是在回暖，还是在坚持？](1773827138913_teqh47lf.md) · B
+- 2026-03-18 [Ryo Lu: keep struggling when things come too easy, you don’t exercise the brain nor the …](1773827131305_pj3vl2af.md) · B
+- 2026-03-18 [Machina: i spent hours inside OpenClaw and its alternatives so you don't have to](1773826051346_gb2s0rk6.md) · D
+- 2026-03-18 [构建 Claude Code 的经验：我们如何使用 Skills【译】](1773825894128_tmyc1gqr.md) · A
+- 2026-03-18 [AI时代团队对齐才是核心稀缺能力](1773822479008_kf72uwwe.md) · C
+- 2026-03-18 [eyaltoledano/claude-task-master: An AI-powered task-management system you can drop into Cursor, Lovable, Windsurf, Roo, and others.](1773821297739_h716ntap.md) · B
+- 2026-03-18 [Hamster - let AI run the wheel \| Hamster](1773821091723_48ei04nv.md) · D
+- 2026-03-18 [How to Solve Claude AI Account Suspe... · LobeHub](1773816250587_n2jugtjz.md) · D
+- 2026-03-18 [Brian Scanlan: We've been building an internal Claude Code plugin system at Intercom with 13 pl…](1773808118411_lv42sefg.md) · C
+- 2026-03-18 [sondera-ai/sondera-coding-agent-hooks: Hooking implementations and supporting tools for various coding agents \(Claude, Cursor, Gemini, etc\)](1773807360908_nirgxw2l.md) · A
+- 2026-03-18 [Introducing Forge \| Mistral AI](1773799671927_cforo0xk.md) · C
+- 2026-03-17 [Chorus/README.zh.md at main · Chorus-AIDLC/Chorus](1773740960052_rnxfsc93.md) · B
+- 2026-03-17 [AI编程转向工程协作时代](1773739098638_yto4ku3v.md)
+- 2026-03-17 [The Anatomy of an Agent Harness](1773734223009_av3z4dm1.md) · A
+- 2026-03-17 [sitin: 刷 GitHub 看到一个挺有意思的项目，叫 Clawith](1773734186520_s3h0nel1.md) · C
+- 2026-03-17 [YettaS: 最近和一圈高中同学聊天，我发现高中同学的人生方差，其实远大于大学同学](1773734186244_t2qpwnv9.md) · D
+- 2026-03-17 [axiaisacat: 很多技术创始人不是不会做产品， 而是死在“没人知道你做了什么”](1773734168533_09h3m3vx.md) · B
+- 2026-03-17 [调研了 12 个 AI Skill 平台，只有一种模式能赚钱](1773734165688_5ck3uf59.md) · B
+- 2026-03-17 [Chorus-AIDLC/Chorus: The Agent Harness for AI-Human Collaboration, inspired by the AI-DLC \(AI-Driven Development Lifecycle\)](1773734142253_30z10l1b.md) · A
+- 2026-03-17 [凡人小北: 今年有个明显的趋势，大家不约而同地从更工程、更现实的角度去思考 AI Coding](1773734135602_3j7gmxyy.md) · C
+- 2026-03-17 [indigo: Nvidia 宣布全力支持 OpenClaw 开源项目，将其定位为 Agent 电脑的操作系统 — 连接大语言模型、管理资源、访问工具和文件系统、调度任务、拆解…](1773734121765_ascy8zrv.md) · C
+- 2026-03-17 [Harness Engineering 深度解读：AI Agent 时代的工程范式革命](1773734115410_8tfcigbt.md) · A
+- 2026-03-17 [Ghostty 终端入门指南：安装、配置、用起来](1773733730704_s42chqlc.md) · B
+- 2026-03-17 [N8 Programs: Example of a task where subagents are great: I had \~90ish open models I needed t…](1773730956828_smuompwa.md) · B
+- 2026-03-17 [Chubby♨️: NVIDIA GTC 2026, a short summary Jensen Huang just delivered what might be his m…](1773730953393_ehvqapbt.md) · C
+- 2026-03-17 [Cody Blakeney: This article is pretty interesting and thought provoking but I feel like it does…](1773730941651_mzerehzo.md) · D
+- 2026-03-17 [張小珺 Xiaojùn: 和@sainingxie 一起挑战7小时播客](1773730940010_vxk3levn.md) · E
+- 2026-03-17 [Hasan Toor: LangChain just open-sourced a replica of Claude Code](1773730929311_u2ub3k83.md) · C
+- 2026-03-17 [Viv: the deepagents library is basically our starting point for doing harness enginee…](1773730926617_pa2mklgu.md) · D
+- 2026-03-17 [0xSero: How Droid &amp;amp; I do all frontend work these days, I don't want the bots to touc…](1773730918053_pfg4i5pl.md) · C
+- 2026-03-17 [why you can't afford to use openclaw](1773730906147_4e3cebl3.md) · C
+- 2026-03-17 [Tz: Muhahaha，我把这个使用 three](1773730898588_s0jsttq3.md) · D
+- 2026-03-17 [Christian Bromann: A lot of work goes into making @LangChain\_JS the easiest to render your agent to…](1773730893256_lt4gy8uy.md) · D
+- 2026-03-17 [Simplifying AI: You can now build your own version of Claude Code](1773730882538_2w0yw5xq.md) · D
+- 2026-03-17 [Matt Stockton: DeepAgents SDK is fantastic](1773730879165_u2mduzfc.md) · D
+- 2026-03-17 [how to make your first $1 with AI](1773730863137_mfwg7tvb.md) · C
+- 2026-03-17 [响马: 我还是比较喜欢用 ai 写 ts，写完不用编译随时运行，定期做一下语法检查](1773730858437_wjzkv1t2.md) · C
+- 2026-03-17 [Rainier: A ResNet is an LSTM rotated 90 degrees 把网络的计算过程想象成一个表格 - 横轴是time step， 这是 RNN / …](1773730838790_e8fhn28t.md) · C
+- 2026-03-17 [Ejaaz: there we go](1773730838636_85etw5bo.md) · D
+- 2026-03-17 [@levelsio: Even bigger irony of getting rich is that everything expensive isn't that much b…](1773730828122_t66c8u4n.md) · C
+- 2026-03-17 [Rainier: 这个哥们牛逼plus啊](1773730825082_nq5n85jr.md) · C
+- 2026-03-17 [@levelsio: I hate tmux It's so incredibly user unfriendly The shortcuts make no sense I wis…](1773730815649_vn0qgx77.md) · E
+- 2026-03-17 [刘江/LIU Jiang: 赞。智谱和MiniMax上市而且获得较高市值后，我相信更多中国的大模型实验室现在更有资源和心气儿搞一些基础研究了。](1773730803432_mvntn298.md) · E
+- 2026-03-17 [@levelsio: ✨ 7 years after I set up a Quake III server, I have it running again, but now in…](1773730788157_6u8n0kpa.md) · C
+- 2026-03-17 [Jeff Li: 华虹已成为国内第二家具备7纳米代工能力的半导体企业](1773730784812_n50qs9xm.md) · C
+- 2026-03-17 [劳伦斯: Claude Pro 套餐真的太不够用了，Codex 又特别多，而且Codex 干活漂亮又干净 —— Claude 说的](1773729462159_b8kvy0x2.md) · C
+- 2026-03-17 [It All Comes Down to Who Controls the Straight of Hormuz: The "Final Battle"](1773729454493_nts1meko.md) · C
+- 2026-03-17 [Gemini图像API开发指南简介](1773729442102_rqweh3fm.md) · C
+- 2026-03-17 [FxEmbed社媒预览增强工具](1773729424799_axk2ozn8.md) · C
+- 2026-03-17 [毛式任务拆解提示词模板](1773729412697_kzrop6r5.md) · C
+- 2026-03-17 [From Entropy to Epiplexity: Rethinking Information for Computationally Bounded Intelligence](1773729408408_t8u90d9o.md) · A
+- 2026-03-17 [传统行业AI采纳观察](1773729397271_c09n9vyv.md) · C
+- 2026-03-17 [Codex子代理架构速读](1773729388060_e32zl1km.md) · B
+- 2026-03-17 [Claude土区订阅价格速报](1773729381079_kh62ddik.md) · E
+- 2026-03-17 [国内订阅Claude最简单的方式，只需一张国内Visa卡，0手续费，5分钟搞定](1773729367178_l2dtuu7f.md) · D
+- 2026-03-17 [AI自动抓取幻灯片配图短帖](1773729363944_fu2zvdi3.md) · D
+- 2026-03-17 [尹烨科学养生清单：按 100 岁规划人生](1773729345927_gf6hc8ca.md) · B
+- 2026-03-17 [Martian-Engineering/lossless-claw: Lossless Claw — LCM \(Lossless Context Management\) plugin for OpenClaw](1773729342062_kdlognsp.md) · B
+- 2026-03-17 [Tmux并行AI编程协作法](1773729324919_0swq0d2r.md) · B
+- 2026-03-17 [行动优先与元认知调节](1773729321858_62fqsj8m.md) · C
+- 2026-03-17 [AI编程与Rust适配判断](1773729299105_d5omoj7a.md) · D
+- 2026-03-17 [Agent自循环三要素简述](1773729297481_15nqjpdv.md) · C
+- 2026-03-17 [征集提供Claude福利公司](1773729278460_4k9qxxb3.md) · E
+- 2026-03-17 [垂类Agent应做应用层](1773729274253_s3czq3cx.md) · C
+- 2026-03-17 [阿里AI架构调整短评](1773729259411_vebguftu.md) · D
+- 2026-03-17 [How AI Agents Work](1773729257278_7cqokgw1.md) · C
+- 2026-03-17 [How to run subagents in Codex](1773729236859_6bwo78wl.md) · B
+- 2026-03-17 [当前AI设计技能工具盘点](1773729235549_tgn7oiqi.md) · B
+- 2026-03-17 [How I Manage 10 Claude Code Agents Without Losing My Mind](1773729214822_0n2bi2nz.md) · B
+- 2026-03-17 [AI Field Report 4: Context Is Not Memory](1773729208979_mpkb5n79.md) · A
+- 2026-03-17 [How I built my wife a personal AI assistant on OpenClaw \(and what actually took time\)](1773729187892_qychhmed.md) · B
+- 2026-03-17 [Frad: 让 codex + gemini + opencode 去 review claude 的输出👀 https://t](1773729162255_dsuwxffz.md) · D
+- 2026-03-17 [LotusDecoder: 从 step 3](1773728774310_l1mxgqu4.md) · C
+- 2026-03-17 [Hanya Hu: 堪称一个人的华尔街](1773728762027_rz6oaemb.md) · C
+- 2026-03-17 [曹山石: 达利欧：特朗普政府必须不惜一切代价，通过从伊朗手中夺取霍尔木兹海峡的控制权来证明美国的实力](1773728758825_i4hk5xv2.md) · D
+- 2026-03-17 [TSLA99T: 今天在linkedin上看看，多了很多AI Initiatives &amp;amp; Adoption 这样的职位，而主要是传统公司 在法律界，legal engin…](1773728747161_ltirscq3.md) · D
+- 2026-03-17 [sitin: Codex 补上了一个很关键的能力：Subagents（子 Agent）](1773728733201_1kfkejzs.md) · C
+- 2026-03-17 [You Should Be Using Subagents in Codex\!](1773728726218_olvovng4.md) · B
+- 2026-03-17 [yan5xu: ❯ 开启 ultrathink，把我整个思考完整打散 然后梳理里面的相互关系 你可以一边思考一边梳理，最后得到一个逻辑结构 -------- 这个 prompt](1773728714179_bu3yfgw0.md) · D
+- 2026-03-17 [Letta's next phase](1773728710561_fu9yvs1j.md) · B
+- 2026-03-17 [陈成: 编程 Agent 之后，EPD 最大的变化不是"谁会被淘汰"—— 而是瓶颈彻底换了](1773728697768_pmqh6t25.md) · B
+- 2026-03-17 [Luyu Zhang: 我们正在持续打造一些与众不同的求职体验](1773728694798_sag0sjxs.md) · D
+- 2026-03-17 [LotusDecoder: 视频里一个 tips claude code 需要避开专属“规划模式”，给予 Agent 自由度： 作者发现了一个极其反常的现象——如果在使用 Claude C…](1773725784229_3f9iiber.md) · B
+- 2026-03-17 [Jason Zhu: 实操 \| 用 Bitget Wallet 半价订阅 Claude 很多人卡在 Claude 订阅，其实思路很简单： IP、地址、卡三件事对齐 一、准备先把全局代…](1773725774736_svjdzhyi.md) · C
+- 2026-03-17 [Frank Wang 玉伯: 刚听完橘子和 Mars 录的这期播客](1773725764767_ofu9skz2.md) · C
+- 2026-03-17 [Orchestrating Claude Code &amp; Codex agents with Letta Code](1773725750708_s8v2mcs7.md) · B
+- 2026-03-17 [最近一些 Agent 认知：OS 与 Agent-native 应用](1773725747741_56alhe7w.md) · B
+- 2026-03-16 [田渊栋：AI 护城河、记忆瓶颈与 Agent 的洪水](1773655958241_97kof7g9.md) · B
+- 2026-03-16 [智能体工程的 8 个等级【译】](1773655921420_fhdcllba.md) · A
+- 2026-03-16 [不要建一千个 Agent：Ramp 如何用一个 Agent 搞定金融自动化](1773655871183_nxnevu8k.md) · A
+- 2026-03-16 [Everything is Context: Agentic File System Abstraction for Context Engineering](1773655102641_b0z5h6b7.md) · A
+- 2026-03-16 [四类智能体协作平台解析](1773654573135_83z4ko2m.md) · B
+- 2026-03-16 [ylytdeng/wechat-decrypt: WeChat 4.0 database decryptor - extract keys from memory, decrypt SQLCipher 4 databases, real-time message monitor](1773653944292_l6o1ald7.md) · B
+- 2026-03-16 [vercel-labs/agent-browser: Browser automation CLI for AI agents](1773653909020_01h2zjqx.md) · B
+- 2026-03-16 [casr-gui/README.zh-CN.md at main · fucheng830/casr-gui](1773653906696_0h1scm0n.md) · C
+- 2026-03-16 [Panniantong/Agent-Reach: Give your AI agent eyes to see the entire internet. Read &amp; search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.](1773653880763_goekgjg9.md) · B
+- 2026-03-16 [sanbuphy/nanoAgent: If you can read \~100 lines of Python, you understand agents.](1773653872492_bjnqn8k5.md) · B
+- 2026-03-16 [mvanhorn/last30days-skill: AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary](1773653854483_5o8zhd9u.md) · B
+- 2026-03-16 [haskaomni/stockanalysis: stockanalysis.com API crawler &amp; reverse-engineered API docs](1773653830010_wg8ioups.md) · B
+- 2026-03-16 [tinyfish-io/tinyfish-cookbook: A collection of sample apps and recipes built with the TinyFish web agent. Open-source examples for you to learn &amp; build\!](1773653809745_32yxpftc.md) · C
+- 2026-03-16 [ForLoopCodes/contextplus: Semantic Intelligence for Large-Scale Engineering. Context+ is an MCP server designed for developers who demand 99% accuracy. By combining RAG, Tree-sitter AST, Spectral Clus…](1773653804370_3zxl1nqe.md) · B
+- 2026-03-16 [msitarzewski/agency-agents: A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert wi…](1773653776422_su6c3p8t.md) · B
+- 2026-03-16 [mksglu/context-mode: MCP is the protocol for tool access. We're the virtualization layer for context.](1773653773389_9lnci0sk.md) · B
+- 2026-03-16 [Releases · teng-lin/notebooklm-py](1773653744831_nmf61zxl.md) · C
+- 2026-03-16 [joeseesun/anything-to-notebooklm: Claude Skill: Multi-source content processor for NotebookLM. Supports WeChat articles, web pages, YouTube, PDF, Markdown, search queries → Podcast/PPT/MindMap/Quiz et…](1773653728723_rya4raeu.md) · B
+- 2026-03-16 [D4Vinci/Scrapling: 🕷️ An adaptive Web Scraping framework that handles everything from a single request to a full-scale crawl\!](1773653703511_de6eapj7.md) · B
+- 2026-03-16 [ComposioHQ/agent-orchestrator: Agentic orchestrator for parallel coding agents — plans tasks, spawns agents, and autonomously handles CI fixes, merge conflicts, and code reviews.](1773653698640_s8dlpuo3.md) · B
+- 2026-03-16 [openai/symphony: Symphony turns project work into isolated, autonomous implementation runs, allowing teams to manage work instead of supervising coding agents.](1773653676151_h5ge2vgy.md) · B
+- 2026-03-16 [FxEmbed/FxEmbed: Fix X/Twitter and Bluesky embeds\! Use multiple images, videos, polls, translations and more on Discord, Telegram and others](1773653587902_3ps4qcci.md) · B
+- 2026-03-16 [ythx-101/x-tweet-fetcher: 🦞 Fetch tweets and replies from X/Twitter without login or API keys. OpenClaw skill.](1773653390911_kob09wnq.md) · B
+- 2026-03-16 [A thousand ways to sandbox an agent](1773653216094_4hd9zi00.md) · A
+- 2026-03-16 [Reverse-engineering Claude's sandbox, then building my own](1773653173380_jpqhu4j6.md) · A
+- 2026-03-16 [lightpanda-io/browser: Lightpanda: the headless browser designed for AI and automation](1773652143934_f0z9u2m4.md) · B
+- 2026-03-16 [jalonsogo/tui-studio: Visual design tool for building Terminal User Interfaces](1773652124588_187hgkmr.md) · C
+- 2026-03-16 [AI掘金背后的客户交付真相](1773651649562_187nh2hs.md) · B
+- 2026-03-16 [郭宇 guoyu.eth: sandbox cloud 正式上线浏览器自动化服务，所有创建的沙箱都可以通过内置的 browser cli 和 skill 来自动化操作网站，运行 e2e 测…](1773650783991_0ihhuaj9.md) · C
+- 2026-03-16 [sandbank/README.zh-CN.md at main · chekusu/sandbank](1773650025674_pyak56iq.md) · B
+- 2026-03-16 [Sandbank云端沙箱服务解析](1773633248054_azcvcr97.md) · B
+- 2026-03-15 [Ghostty：Claude Code的最佳搭档，从零到快乐鬼混](1773557967494_6x5bqr6r.md) · C
+- 2026-03-15 [LIN WEI: 老婆发现龙虾后面的商机了： 昨天她刷到了几个短视频，今早起来就来问我 “什么是龙虾” 给她解释了一下； 又问 “token 是什么](1773557961035_j016x9lv.md) · D
+- 2026-03-15 [卡比卡比: CLI 宇宙继续](1773557941750_aj09bdos.md) · D
+- 2026-03-15 [程序员老熊: 梁晓声曾说：“绝大多数草根阶层的子女，若不能在成年以前，摆脱娱乐和文艺的侵袭，即使上了大学，也逃不过体力劳动的宿命](1773557930313_vdxc1d1u.md) · D
+- 2026-03-15 [LotusDecoder: 从前天意识到要转型，不能老做驾驶员，到昨天实践了 系统设计+agent，来做一个小项目，目前感受挺好的](1773557903907_oagizmrs.md) · C
+- 2026-03-15 [Frank Wang 玉伯: 非常推荐这期播客](1773557864538_dlq405g1.md) · C
+- 2026-03-15 [fengshao1227/ccg-workflow: 多模型协作开发系统 - Claude 编排 + Codex 后端 + Gemini 前端，28 个命令覆盖开发全流程，一键安装零配置](1773557254235_3g4abm3c.md) · B
+- 2026-03-15 [KimYx0207/Claude-Code-x-OpenClaw-Guide-Zh: 从零到企业实战：Claude Code 官方编程神器 + OpenClaw 224K Stars 开源AI助手 \| 双顶流中文教程 \| 21篇教程 130000+字](1773557243843_nurc9uxu.md) · B
+- 2026-03-15 [NousResearch/hermes-agent: The agent that grows with you](1773557202681_8avopsup.md) · B
+- 2026-03-15 [Usagi-org/ai-goofish-monitor: 别养小龙虾了，来试试养鱼吧！本项目基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。](1773557193833_zx33bsui.md) · B
+- 2026-03-15 [Learn Claude Code](1773557105813_tx5kl9rk.md) · B
+- 2026-03-15 [SaladDay/cc-switch-cli: ⭐️ A cross-platform CLI All-in-One assistant tool for Claude Code, Codex &amp; Gemini CLI.](1773557104420_acfdmnns.md) · B
+- 2026-03-15 [teng-lin/agent-fetch: Full-content web fetcher for AI agents — Chrome TLS fingerprinting, browser impersonation, and multi-strategy article extraction](1773557068427_6km4ml5k.md) · A
+- 2026-03-15 [可用标题别再迷信上下文压缩Agent 的真正出路是可搜索可召回的记忆系统如果你想要我也可以再给你- 更像公众号文章的标题](1773557026075_6zmzkoac.md) · B
+- 2026-03-15 [可选标题1. AI 不是变笨了而是在错误时机“失忆”了关于上下文压缩的深度总结2. 当 AI 编程中途突然跑偏问题不在模](1773557017200_e2om5fkl.md) · B
+- 2026-03-15 [Leo: 用 AI 编程最尴尬的时刻：你正在做一个复杂重构，突然发现它把 10 分钟前讨论好的方案全忘了](1773556919937_80f0x1si.md) · B
+- 2026-03-15 [yan5xu: 正好也分享一下关于上下文压缩这个事情](1773556908212_ep20ds1g.md) · B
+- 2026-03-15 [We built RLM for coding. And it F\*cking rocks. Swarm native agents are here to stay.](1773556826736_a50tek8z.md) · C
+- 2026-03-15 [Specs are infrastructure in the age of agents](1773556680285_w08rw8pq.md) · B
+- 2026-03-15 [headless maxxing](1773556673550_niixbqq6.md) · A
+- 2026-03-15 [Give your Agent Maximum Freedom](1773556631028_wcqsc2e7.md) · B
+- 2026-03-15 [U哥: 我今天分享一个用AI给我带来20万收益的产品开发全过程，无任何造假，无任何水分](1773556595734_mokz9qln.md) · C
+- 2026-03-15 [The GTM Flywheel Behind $7M ARR \(And Why We Killed Our Outbound Engine to Build It\)](1773556461726_f9ya4kdg.md) · B
+- 2026-03-15 [\(1\) 陈成: 看到一个很有意思的项目：Lightpanda](1773556461334_l8otwn1d.md) · C
+- 2026-03-15 [Similarweb 需求分析](1773556433431_b8xnwu7c.md) · C
+- 2026-03-15 [可选标题1. 从 ACP 到 dotclaude多 Agent 协作开发工作流深度总结2. acpxACP 与 dotc](1773555892448_hlalxwd1.md) · B
+- 2026-03-15 [Agentic Coding 的本质从软件工程到控制论的工程化转变](1773551995041_ptv6mt8e.md) · B
+- 2026-03-15 [\(2\) Frank Wang 玉伯: Agents 时代，比 OKR 更好的绩效管理方式，是德鲁克 1954 年提出的 MBO（Management by Objectives）目标管理法](1773549331373_n5w6a0wl.md) · C
+- 2026-03-14 [How Karpathy's Autoresearch Works And What You Can Learn From It](1773484130017_b50up1ru.md) · A
+- 2026-03-14 [AI 让每个人都提效 10 倍，但没有一家公司因此增值 10 倍](1773477685839_hpb5dj88.md) · B
+- 2026-03-14 [Performance: 53% faster parse+render, 61% fewer allocations by tobi · Pull Request \#2056 · Shopify/liquid](1773465790142_afk2c9ua.md) · A
+- 2026-03-14 [garrytan/gstack: Use Garry Tan's exact Claude Code setup: 15 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA](1773465573653_nlzb0k41.md) · B
+- 2026-03-14 [10 Books That Teach The Strategic Thinking That Most People Never Learn](1773463991231_244twlb8.md) · B
+- 2026-03-14 [From Ore to Iron: Build Your Own Coding Agent \| Martin Gratzer](1773462025779_vcwn5y3u.md) · B
+- 2026-03-14 [Damien C. Tanner: Here’s my diy coding agent reading list](1773462004152_juw03gtp.md) · D
+- 2026-03-14 [What I learned building an opinionated and minimal coding agent](1773461726612_lzkltj01.md) · B
+- 2026-03-14 [极简原语到 Agent-Native5 篇文章看懂 2025 Agent 设计演进](1773461721883_19gj37rb.md) · A
+- 2026-03-14 [Self improving skills for agents](1773451646679_nr063pp3.md) · B
+- 2026-03-13 [爆款写作方法论的AI封装路径](1773401575902_8k9fkn5t.md) · B
+- 2026-03-13 [普达特: 无论是脑梗还是脑溢血，其实都是血管硬化、变脆导致的，高血压不会导致脑梗，但高血压确实是脑溢血的临门一脚； 血管硬化、变脆不是高血压导致的，高血压只是表象，血管硬…](1773394572809_q57hg5qj.md) · E
+- 2026-03-13 [U哥: 我当时拆解之后，其实也是做了和你一样的事情，并且在多个公众号账号里尝试过，也得到了反馈，是有效的](1773394512215_kxkhfsmm.md) · B
+- 2026-03-13 [郭宇 guoyu.eth: 我整个晚上都在看 wanman ai 的实验报告，从 50 个工作日循环到 200 个工作日循环，我贴一些报告给大家看看，于此同时我已经几乎确信，下个月我不需要…](1773394183361_2396m9zo.md) · C
+- 2026-03-13 [Takeaways on Long-running Autonomous Coding Agents](1773372694193_8cuzpijg.md) · B
+- 2026-03-13 [小陆师傅: 这才哪到哪啊，美国还有一个更隐蔽、更合法的行业：监护人公司](1773367220868_a9ln5w8t.md) · D
+- 2026-03-13 [Elvis: the best CRM in 2026 is @openclaw](1773367220537_xna0x3m9.md) · C
+- 2026-03-13 [Varun: Autoskill: a distributed skill factory \| v](1773367218634_8n4tgh49.md) · B
+- 2026-03-13 [文件不是知识真相底座](1773362464233_gz2a8haa.md) · A
+- 2026-03-13 [多智能体预测与超级个体时代](1773362190380_wtqwr7zp.md) · C
+- 2026-03-13 [3个月，从微舆BettaFish开源项目爆火到获三千万投资，我亲历了Vibe Coding带来的超级个体时代](1773361628176_yhuojj0v.md) · C
+- 2026-03-13 [当未来可以被模拟，我们离预知还有多远？](1773361607065_szud9fzk.md) · C
+- 2026-03-13 [马天翼: 我不是把所有账号都搞了一个阿里云轻量服务器，然后走 sub2api 了，等于自己搭建了一个内部中转站么](1773360759258_o8zazjwx.md) · D
+- 2026-03-12 [How Autoresearch will change Small Language Models adoption](1773316729823_gbpxixdz.md) · B
+- 2026-03-12 [UniRound-Tec/Aurogen: "Aurogen🍊: The Multi-Agent Evolution of OpenClaw."](1773316142231_ztr80i0a.md) · C
+- 2026-03-12 [Add support for Codex Fast Models · Issue \#273 · automazeio/vibeproxy](1773315945088_w3xr83hx.md) · C
+- 2026-03-12 [get-Lucid/Lucid: An intelligence layer grounding autonomous agents in verified, real-time knowledge at scale.](1773315503429_9d2oqbk0.md) · C
+- 2026-03-12 [paperclipai/paperclip: Open-source orchestration for zero-human companies](1773310985240_9wfnpfhl.md) · C
+- 2026-03-12 [Frank Wang 玉伯: 早上听了创业者唐辛格的一期播客，很实在有启发](1773310470356_gnz88aj4.md) · C
+- 2026-03-12 [How to Invest in AI Without Just Buying NVIDIA](1773310466514_0um9dnf9.md) · C
+- 2026-03-12 [What is Andrej Karpathy's autoresearch?](1773310462315_fqvjuuox.md) · B
+- 2026-03-12 [Day 5：自建本地反代，五分钟教你把多个 Claude 账号串起来](1773310167866_de2c0rio.md) · B
+- 2026-03-12 [yan5xu: 所以我说啊，学习管理学，是让自己用好 AI 的一条捷径](1773309607278_v2q0xa5u.md) · B
+- 2026-03-12 [The 10x Lawyer](1773309147993_qucmsyo1.md) · C
+- 2026-03-12 [Autonomous context compression](1773308838396_1vw36ycn.md) · B
+- 2026-03-12 [Embedding相似度虚高，如何用langchain+Milvus搭建CRAG解决？](1773308094187_siw3xn6o.md) · B
+- 2026-03-12 [a file system is not all you need](1773305395787_0n16uh0h.md) · B
+- 2026-03-12 [How I built 13,000+ pages in 3 hours and grew SEO traffic +466% in 60 days](1773305381604_imp044n9.md) · B
+- 2026-03-12 [U哥: 二年前我在研究公众号的时候，我发现一个玄学博主，不靠玄学和带货，只做公众号，年入5000万+，这是明面上的钱，私下玄学咨询一次13000/小时，这笔钱有多少算不…](1773303950314_a08h38mp.md) · B
+- 2026-03-12 [CLI is All Agents Need — \*nix Agent 设计宝典](1773303079557_kkm0v22p.md) · A
+- 2026-03-12 [Building for trillions of agents](1773303024240_nd46jsv0.md) · B
+- 2026-03-12 [Luo说不啰嗦: 我（又）收购了一个独立开发者的产品](1773303017486_6z6tsyqy.md) · C
+- 2026-03-12 [Three sub-agent patterns you need for your agentic system](1773302511052_89k80r74.md) · A
+- 2026-03-12 [qwibitai/nanoclaw: A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jo…](1773299127011_s7fj258r.md) · B
+- 2026-03-12 [sipeed/picoclaw: Tiny, Fast, and Deployable anywhere — automate the mundane, unleash your creativity](1773299123655_fku66wi7.md) · C
+- 2026-03-12 [Drill项目方法与功能概览](1773299102927_0zcit7wx.md) · B
+- 2026-03-12 [智能体测试套件与智能体框架的区别](1773297529622_coglsm98.md) · B
+- 2026-03-12 [Andrej Karpathy: Three days ago I left autoresearch tuning nanochat for \~2 days on depth=12 model](1773297515050_hi2aocp5.md) · A
+- 2026-03-12 [BadUncle: 群友在讨论harness engineering， 来一个通俗解释： Linear — 任务调度 + 人机界面 发号施令的入口](1773297446673_hmyue7e4.md) · B
+- 2026-03-12 [Panda: 尽管大家都意识到，传统 VC 很难适应 AI 时代的快速变化，需要改革，但这件事不是一两天能完成的，这意味着如果你是或确定未来一定是创业者，这仍是你必须面对的一…](1773297384393_jalza69j.md) · C
+- 2026-03-12 [el09xccxy-stack/oss-investment-scorecard: A structured 5-dimension scoring framework for evaluating open-source AI projects from a VC investment perspective. Maintained by Lucy Chen, EIR at Zoo Capita…](1773297240264_x9m87x3w.md) · B
+- 2026-03-12 [Services: The New Software](1773295550827_c5vdwomj.md) · A
+- 2026-03-12 [signüll: the most underrated hire right now is a great product person](1773294246263_16raormx.md) · C
+- 2026-03-12 [ZhangHanDong/agent-spec: \`agent-spec\` is an AI-native BDD/spec verification tool for task execution.](1773285139099_ucafjp6v.md) · A
+- 2026-03-12 [steipete/birdclaw: Stores all your tweets nicely claw-able for agents.](1773285122653_33cqgxcy.md) · A
+- 2026-03-12 [samuelfaj/distill: Distill large CLI outputs into small answers for LLMs and save tokens\!](1773285053039_jxfjnohn.md) · A
+- 2026-03-12 [How we built LangChain's GTM Agent](1773283575593_nffvy7iu.md) · B
+- 2026-03-12 [迈克 Mike Chong: AI真正的价值是补你的短板，不是放大你的短板 AI时代，每个人都在说自动化](1773283569303_5hmp9hyf.md) · B
+- 2026-03-12 [Is 360 degree marketing what you need?](1773283149421_d6ugr3oh.md) · C
+- 2026-03-12 [My Goals For 2026](1773282945026_akbcbm6r.md) · D
+- 2026-03-12 [Million Dollar Mindset Shift Going Into 2026](1773282590377_70m2okbd.md) · C
+- 2026-03-12 [Qwen 3.5 在 MLX / LM Studio / OpenClaw 中反复 Prefill 的成因解析KV Ca](1773280356447_6lvncdvd.md) · B
+- 2026-03-12 [可选标题1. Qwen 3.5 在本地推理中为何总是“重读提示词”Prompt Cache 失效问题解析2. Qwen](1773280119766_s9565zjs.md) · B
+- 2026-03-12 [Caching doesn't seem to be working for Qwen3.5 · Issue \#903 · ml-explore/mlx-lm](1773279570011_60yf2i9c.md) · B
+- 2026-03-12 [Skill authoring best practices - Claude API Docs](1773277976261_aid5wb4q.md) · A
+- 2026-03-12 [实践哥MinLi: 人类能达到的满级 prompt 能力，值得学习](1773276606672_pwcxylfl.md) · C
+- 2026-03-11 [给你的 AI 一套大厂 P8 的 Soul，让它的 Coding 表现提高 30%](1773229560546_kadr8zz5.md) · D
+- 2026-03-11 [Sudo su: been playing with hermes agent paired with qwen 3](1773229415637_k3wycjef.md) · B
+- 2026-03-11 [Panda: 前两年其实不太喜欢 MiniMax，主要是不喜欢他们传出来的文化](1773229344845_ssbtjzyd.md) · D
+- 2026-03-11 [宝玉: 转译：Harness 工程就是控制论 读 OpenAI 那篇 Harness 工程的文章\[1\]时，我一直有种说不上来的感觉](1773229023264_gltayuap.md) · A
+- 2026-03-11 [Using skills to accelerate OSS maintenance](1773228905001_dxr12z15.md) · A
+- 2026-03-11 [How To Get 40 Hours of Work Done In 10 \(Using AI Agents\)](1773228585869_6nyywh1l.md) · A
+- 2026-03-11 [How Coding Agents Are Reshaping Engineering, Product and Design](1773228040204_mcpvejg5.md) · B
+- 2026-03-11 [pbakaus/impeccable: The design language that makes your AI harness better at design.](1773226637518_58qkupcv.md) · B
+- 2026-03-11 [我要打十个！我的 Claude Code 并行开发工作流](1773222338054_dhlg6vap.md) · B

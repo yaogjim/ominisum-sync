@@ -1,0 +1,21 @@
+# 收藏（17）
+
+[← 总览](../README.md)
+
+- 2026-09-21 [Jeff Bezos: AI productivity gains could lead to labor shortages and deflation - YouTube](fav_1789960663759_y6axzkld.md)
+- 2026-08-07 [Eminent\_minds: STRANGE FATHERHOOD ADVICE I GOT FROM AN OLDER DAD THAT ACTUALLY WORKS: 1](fav_1786073989928_hgn4p9jn.md)
+- 2026-04-28 [宝玉: 《Cursor 3 反馈整理：用户真正想要的不仅是“更炫的 IDE”，还想它是一个可靠的 AI 开发工作台》 整理自 Eric Zakariasson 征集 C…](fav_1777363022688_6hn1ppoh.md)
+- 2026-04-02 [卖鱼的老莫🐟🐠🎣8964 on X: "保护你的大脑免受阿尔茨海默氏症和痴呆症的最强保护不是阅读或解谜，而是腿部的肌肉质量。 在伦敦国王学院等最近的研究中，腿部力量是健康成年人认知大脑健康的最重要指标。 加强腿部的运动，如深蹲，刺激肌因子蛋白的产生，肌因子蛋白能作为大脑的神经滋养器。" / X](fav_1775099363191_pom3alis.md)
+- 2026-04-02 [Mr Panda: 今天发生一件小事，汽车电瓶没电了，然后花了两个小时找救援，等救援的时候，就想成年人的人生真的麻烦， 然后就有了如下的一点点思考](fav_1775095013732_h26t870f.md)
+- 2026-03-31 [卡颂: 照当前 Harness Engineering 的发展趋势看，「应用开发」这个领域今年就能通关了](fav_1774922479096_k1fp55yf.md)
+- 2026-03-12 [a file system is not all you need](fav_1773310682398_yipust0z.md)
+- 2026-03-12 [a file system is not all you need](fav_1773310676932_h7t8thqm.md)
+- 2026-03-12 [U哥: 二年前我在研究公众号的时候，我发现一个玄学博主，不靠玄学和带货，只做公众号，年入5000万+，这是明面上的钱，私下玄学咨询一次13000/小时，这笔钱有多少算不…](fav_1773304634837_obe3zju5.md)
+- 2026-03-12 [U哥: 二年前我在研究公众号的时候，我发现一个玄学博主，不靠玄学和带货，只做公众号，年入5000万+，这是明面上的钱，私下玄学咨询一次13000/小时，这笔钱有多少算不…](fav_1773304629184_sjezwboz.md)
+- 2026-03-11 [宝玉: 转译：Harness 工程就是控制论 读 OpenAI 那篇 Harness 工程的文章\[1\]时，我一直有种说不上来的感觉](fav_1773229337155_bpehul6p.md)
+- 2026-03-11 [海拉鲁编程客: 跟风测试了 https://t](fav_1773223536890_hv3cxapt.md)
+- 2026-03-11 [Tongtong Bee 🐝 on X: "这篇文章研究了 25 位在 24–29 岁创立目前市值50 亿美元以上公司的创始人，发现顶级创业者往往是“分布之外的人”。 他们通常具备三个共同特征：早期创伤经历、非典型思维方式（神经多样性）、以及跨学科能力组合。 创伤让他们对问题有深层情感连接并具备极强抗压能力； - Vlad Tenev" / X](fav_1773222541938_nsq814eb.md)
+- 2026-03-11 [智能体软件工程 \#4 ｜ 当 Agent 写完代码，谁来说「可以合并」？](fav_1773197591525_46p05it0.md)
+- 2026-03-11 [Agent Harness定义核心定位与整体架构分层解析](fav_1773197328085_oy4vknnw.md)
+- 2026-03-11 [The Anatomy of an Agent Harness 智能体管理框架的结构](fav_1773193307829_j1kxsy9b.md)
+- 2026-03-11 [The Anatomy of an Agent Harness 智能体管理框架的结构](fav_1773193294536_7w0nv20m.md)

@@ -1,0 +1,152 @@
+# 评级：E（148）
+
+[← 评级索引](index.md) · [总览](../README.md)
+
+- 2026-07-02 [Rainier: 这个背后的大背景是，中国国内图书市场的崩盘](../sessions/1782991186292_7luo6hyh.md) · 24.5 分 · 出版行业
+- 2026-07-02 [黄赟: Claude 在写作直出的可读性方面，还是有很大优势，几乎是南波王的，所以我为它专门铺设了一条 VPS 路线，20美刀一个月，3年来从未出事 挑 GIA CN2…](../sessions/1782985553576_zye3ehnp.md) · 24.5 分 · AI工具使用
+- 2026-06-17 [AI教学魔方的短证据](../sessions/1781660924986_gyoscvj9.md) · 24.5 分 · AI学习应用
+- 2026-06-17 [八十年代工厂现代化冲击](../sessions/1781660788860_n42638z4.md) · 24.5 分 · 社会观察
+- 2026-06-16 [王海滨的财经闲谈: 坐车约到过几个司机都是断供的，说银行都是电话来好声好气的商量](../sessions/1781602571139_31j5iqtf.md) · 24.5 分 · 财经观察
+- 2026-06-15 [AI会话浏览器开发进展](../sessions/1781521024108_cp19tmq9.md) · 24.5 分 · AI工具动态
+- 2026-06-15 [idoubi: 用 ShipAny TanStack 写了个 CCOnline，主打在线 vibe coding，内置模型，开箱即用，cc 终端跑在 sandbox，零依赖起手…](../sessions/1781517625185_08bgvi44.md) · 24.5 分 · AI开发工具
+- 2026-06-09 [AB Kuai.Dong: 前几天万字长文置身钉内，刚在互联网圈流传开](../sessions/1781001034412_0ukmjhdp.md) · 24.5 分 · 职场观察
+- 2026-06-08 [熊布朗: 最近在密集的录视频，也在用 AI 做视频，其实 AI 做讲解性视频的能力已经蛮强，下面的这个视频就是我当前工作流的一部分，一句话出一个短视频，用自己的声音](../sessions/1780891590456_naon1169.md) · 24.5 分 · AI内容创作
+- 2026-06-02 [黄赟: Codex App\(注:不是 Codex Cli\) 又把 Apple 生态推上一个新台阶 当我胆战心惊，冒着封号危险，把 iPhone 接通 ChatGPT A…](../sessions/1780380729007_cdcpg394.md) · 24.5 分 · AI工具随感
+- 2026-06-02 [范凯说 AI \| Kai on AI: 今年我已经50岁了，虽然自我感受上还年轻，但严格意义生理年龄已经是老年人了](../sessions/1780380715501_q7b2jvs3.md) · 24.5 分 · 个人感悟
+- 2026-06-01 [Max Katz: nothing beats my \`cmux\` + \`hitch\` workflow](../sessions/1780308187568_fkqjgu7k.md) · 24.5 分 · 开发工具
+- 2026-04-28 [Rainman: 之前有个群友说的很好，我觉得我的想法跟他一样](../sessions/1777341197544_i7l6zi2u.md) · 24.5 分 · 个人成长
+- 2026-04-14 [超级个体｜柿子: 今天结合目前市面上优秀的开源agent进行分析我自己的agent harness工程，果然发现了很多问题 下一步准备基于优秀框架进行二开了，自己造轮子还是很累，…](../sessions/1776132030031_cd5km3l2.md) · 24.5 分 · AI工程实践
+- 2026-07-16 [Kay Ke: Inside Physical Intelligence's Open-Source Robot Models and the Robotics Landscape - YouTube](../sessions/1784162648221_pquk8jty.md) · 24 分 · AI与机器人
+- 2026-07-15 [4nzn: building a market means building an entire economic system underneath first](../sessions/1784101345439_eo71f2pf.md) · 24 分 · 加密资产平台动态
+- 2026-06-25 [向阳乔木: 手头还有几个正在开发，计划本周开源的项目](../sessions/1782349613299_41mkoz2v.md) · 24 分 · 个人动态
+- 2026-06-25 [Cell 细胞: 准备，国庆后 出来全职 OPC 了， 万推有什么好的建议或者人生经验吗 感觉到 Q3 国内 Coding 和 生图生视频 模型 都会到一个 可用、能用、大碗 的…](../sessions/1782349469736_1z4n5exe.md) · 24 分 · AI内容创业
+- 2026-06-25 [动物园园长: 不怕各位笑话，我快四十岁了，才知道什么是纳指、定投这些东西](../sessions/1782348603171_apltf8eo.md) · 24 分 · 个人成长
+- 2026-06-18 [Agent基础设施宣传短帖](../sessions/1781783072907_0zz5ewes.md) · 24 分 · AI工具与基础设施
+- 2026-06-17 [用户未必在意AI垃圾感](../sessions/1781660984614_d7u4g1kc.md) · 24 分 · 产品观察
+- 2026-06-08 [Robinson · 鲁棒逊: 看置身钉内有感： 不要成为耗材，不要成为被投入火里的柴](../sessions/1780891758163_crxk1kxv.md) · 24 分 · 职场思考
+- 2026-06-03 [Robinson · 鲁棒逊: 刘瑜老师这本《可能性的艺术》，竟成了一种测量仪——默默记录着我们这个社会《观念的水位》](../sessions/1780449107523_bp84612p.md) · 24 分 · 读书推荐
+- 2026-06-03 [X](../sessions/1780448990546_9g1gqp6p.md) · 24 分 · AI工具使用
+- 2026-04-16 [Mr Panda: 求推荐哪家tts 最具性价比，开源或闭源、付费或免费都可以](../sessions/1776322821435_afiu65ph.md) · 24 分 · AI工具选型
+- 2026-07-02 [失业观察日报: 35岁现象，为什么在中国特别突出](../sessions/1782991344220_agoop0l5.md) · 23.5 分 · 社会观察
+- 2026-06-03 [Robinson · 鲁棒逊: 在推上，想要做自媒体的推友， 要好好理解这句话， 要不惜，以人性为食](../sessions/1780449034462_1dbw70x6.md) · 23.5 分 · 自媒体运营
+- 2026-05-03 [房策: 立贴为证，这个回答和我的想法是一致的，未来几年，普通人如果觉得越来越累，还赚不到钱，不要怀疑自己的能力，也不要以为自己不努力，是绝大多数人在替一小部分人化债，这…](../sessions/1777775291818_amyzzxi5.md) · 23.5 分 · 宏观经济评论
+- 2026-04-20 [Jeff Li: 我的关注者中，1/3未受打击VPN影响，1/3强受影响，不到1/3不翻墙](../sessions/1776645525832_xxanuhwb.md) · 23.5 分 · 社交媒体观察
+- 2026-03-17 [張小珺 Xiaojùn: 和@sainingxie 一起挑战7小时播客](../sessions/1773730940010_vxk3levn.md) · 23.5 分 · 人物访谈宣传
+- 2026-07-09 [王海滨的财经闲谈: 是在北京没有确定病因，在香港确定了，但治疗方式没有准入，只能回国治疗，未果](../sessions/1783567136213_gmx5l3ul.md) · 23 分 · 社会观察
+- 2026-06-25 [Tom: 号外：\#Alma 已经支持了无限画布的功能，挺好用的](../sessions/1782349757886_retzf6cx.md) · 23 分 · AI工具动态
+- 2026-06-25 [李老师不是你老师: 青年失业率真的下降了吗](../sessions/1782348611655_117cdc6g.md) · 23 分 · 社会经济
+- 2026-06-18 [四大审计衰落原因简述](../sessions/1781783015362_au2ool79.md) · 23 分 · 财经职场
+- 2026-06-15 [Tz: 想象一下，Claude Fable 5 这种怪物级别的大模型，在差不多12-18个月后，已经是人手一个，可以直接布署运行的本地离线“小”模型，到那时，世界会变成…](../sessions/1781515983723_ed0gjl55.md) · 23 分 · 人工智能
+- 2026-06-08 [SpaceX IPO情怀投资短评](../sessions/1780891643319_2bc0b1bs.md) · 23 分 · 投资评论
+- 2026-06-03 [Lenny Rachitsky: PSA: This week only, get 25% off all the @MavenHQ Lenny's List courses \(and hund…](../sessions/1780448923546_j01715mg.md) · 23 分 · 课程促销
+- 2026-05-03 [X 上的 X Freeze：“Interesting how it works Elon puts up his own money, rounds up the absolute best AI t…](../sessions/1777812275572_la2m7coh.md) · 23 分 · AI行业舆论
+- 2026-04-20 [吕立青\_JimmyLv 2𐃏26: 无比丝滑啊，workspace 和 tabs 的概念是我想要的，当然还有垂直 tabs 分屏临时开关是舒服的](../sessions/1776645466932_r305a1hr.md) · 23 分 · 工具体验
+- 2026-04-16 [huangserva: 昨天 AI 圈爆了个大瓜，我自己比较好奇，花时间扒了一下](../sessions/1776322800653_0xb5jppf.md) · 23 分 · AI行业舆情
+- 2026-03-17 [刘江/LIU Jiang: 赞。智谱和MiniMax上市而且获得较高市值后，我相信更多中国的大模型实验室现在更有资源和心气儿搞一些基础研究了。](../sessions/1773730803432_mvntn298.md) · 23 分 · AI产业观点
+- 2026-06-25 [Tz: AI 狂欢里的 1929 回声：这一次，技术革命会拯救我们吗](../sessions/1782349744185_ndkg908r.md) · 22.5 分 · AI与宏观叙事
+- 2026-06-25 [eigenrobot: another way to look at elite shifts is that all elites in the west are now trans…](../sessions/1782349694389_8zau95n3.md) · 22.5 分 · 政治评论
+- 2026-06-25 [房策: 新能源汽车下乡预示着新能源车的发展空间到顶了，后续，只会更加衰落，叠加房屋建筑统一代码制度，预示着房产税要提前了](../sessions/1782349253825_fu3mx4cc.md) · 22.5 分 · 财经地产
+- 2026-06-15 [赵纯想: laper是2026最新财富密码——我实测的结果，数据说话：这两条视频，仅仅是我开发期间试水的作业](../sessions/1781520902562_f3b0yswe.md) · 22.5 分 · AI内容创作
+- 2026-06-15 [徒步的骑手: 前几年，美国大使馆的微博贴过一篇有关明恩溥的文章](../sessions/1781520895898_1ulpw4ud.md) · 22.5 分 · 历史社会评论
+- 2026-06-02 [刻薄沟通是否有效](../sessions/1780368673851_gecaomie.md) · 22.5 分 · 社会观察
+- 2026-05-27 [Dasheng: 县城婆罗门的问题在于资源是持续枯竭状态，现在中国的转移支付300倍于整个欧盟，490倍于美国，想想也知道完全没有可持续性](../sessions/1779871710859_3j60m1bu.md) · 22.5 分 · 社会观察
+- 2026-05-03 [宁波保安孙师傅: 新能源车带来的物业管理新问题/当年做某房地产项目，因为要标配一个汽车4S店，我们就导入了福特](../sessions/1777775417878_zvjanqcx.md) · 22.5 分 · 城市与物业管理
+- 2026-04-20 [Nooc: 公司给报销 ChatGPT pro，我想问这玩意儿真的能用完吗](../sessions/1776645618971_8kryzdns.md) · 22.5 分 · AI工具使用体验
+- 2026-03-25 [Jesse Lau 遁一子: 今天因为张雪峰的新闻又想起来这个推特，在grok里找了半天才找到 “打卡”锻炼不足取，现代长跑更多的成社交属性了 而且如果全程保持匀速，这种锻炼方式我感觉不太对…](../sessions/1774404569614_pin6e1in.md) · 22.5 分 · 运动健康观点
+- 2026-03-17 [征集提供Claude福利公司](../sessions/1773729278460_4k9qxxb3.md) · 22.5 分 · AI工具行业观察
+- 2026-09-16 [卫斯理: Omarchy 终于走到这一步了，哈哈哈 安装个Windows虚拟机，试试剪映效果咋样 https://t](../sessions/1789533153988_6ccyjw6w.md) · 22 分 · 桌面系统与虚拟化
+- 2026-07-22 [Shreyas Doshi: A few things that are different about the Product Sense course: - not just for P…](../sessions/1784692591970_3xj9mvgy.md) · 22 分 · 产品管理
+- 2026-07-03 [Colin Wu: 听老人们聊 90 年代的下岗潮，像城市一样大小的厂子们，突然开始几千人几千人的裁员](../sessions/1783078132856_izdo4yu0.md) · 22 分 · 社会观察
+- 2026-06-25 [Anthropic谈判代表传闻](../sessions/1782360525223_ivaz85md.md) · 22 分 · AI行业动态
+- 2026-06-15 [周尔复: 其实公司普遍提供 token 使用也就最近一年以内的事情，应该是 Claude Code 出来后几个月](../sessions/1781519928556_t1d9guqu.md) · 22 分 · AI工具与职场观点
+- 2026-06-03 [小径残雪: 人工智能和以往的技术进步完全不同，它会彻底的干掉人类大部分工作](../sessions/1780449318578_csbwh7pj.md) · 22 分 · 人工智能
+- 2026-06-03 [People’s Observer: 一年以前小红书和X还有人做梦事业单位是铁饭碗，一年以后才发现事业编制改革早就“在岗不在人”了](../sessions/1780449045200_6wx5wxtb.md) · 22 分 · 社会观察
+- 2026-05-05 [Vincent Logic \| 信号＞噪音: 看了这张图狠狠懂了什么是“青春饭”](../sessions/1777960607702_c5du6qyl.md) · 22 分 · 职业发展
+- 2026-04-27 [DinoDeer: 需要人工销售的商业模式，是垃圾产品叠加的垃圾商业模式](../sessions/1777263414497_19py1vem.md) · 22 分 · 商业模式
+- 2026-07-06 [iOS定位伪装实践片段](../sessions/1783333019136_zd4i6brx.md) · 21.5 分 · 技术工具
+- 2026-06-25 [Sahil Bloom: The older I get, the more I realize you can reinvent yourself as many times as y…](../sessions/1782349665392_84oynnae.md) · 21.5 分 · 个人成长
+- 2026-05-12 [俞浩创业与姻亲资源争议](../sessions/1778559764153_sz7k8skr.md) · 21.5 分 · 商业八卦
+- 2026-05-05 [AI中转站利润取舍自述](../sessions/1777960628134_di66ncw5.md) · 21.5 分 · AI服务商业观察
+- 2026-03-26 [Mason: We just got a 7-seat model Y, and we're gonna make that itty bitty third row wor…](../sessions/1774498825818_a4ex9rs1.md) · 21.5 分 · 消费科技体验
+- 2026-09-16 [李老师不是你老师: 9月15日，浙江宁波海曙区白云街道沁水丽庭3幢顶层发生火灾，救援画面拍到一名女性在长梯旁从楼体外坠落](../sessions/1789533467489_5ohbwijp.md) · 21 分 · 社会事件
+- 2026-07-01 [Rabi Shanker Guha: Introducing Generative UI for Eve powered by OpenUI Building this was a real joy](../sessions/1782900956386_04wad5ur.md) · 21 分 · AI产品动态
+- 2026-06-03 [LangChain: 🎉 Congratulations to @OdessiaTravel on their public launch](../sessions/1780448906257_ic5st3q2.md) · 21 分 · AI应用
+- 2026-06-02 [Holegots: 目前实习生也基本不会大家背调之类的, 中间存在了巨大的套利机会, 即使转正不过, 也可以通过 P 图说自己有百万大包, 来压力其他公司 or 抬高身价](../sessions/1780380739304_2skplza7.md) · 21 分 · 职业伦理
+- 2026-05-04 [Leva: 前几天一个退休官员来英国看女儿，我们一起吃饭，他说了几句话： 政府债务，已经成了GDP的增长方式](../sessions/1777855791481_1od0wl9f.md) · 21 分 · 时政评论
+- 2026-04-27 [Kai: 我在做一个付费社群，1000 美金，针对中转站行业的人](../sessions/1777333337874_222xwfev.md) · 21 分 · 灰产商业推广
+- 2026-06-25 [相信好事仍在前方](../sessions/1782360611101_v9i93uxp.md) · 20.5 分 · 个人成长
+- 2026-06-18 [外卖骑手就业出口争议](../sessions/1781783012538_u1k2ryvu.md) · 20.5 分 · 社会评论
+- 2026-05-05 [杨高能: 你的皮肤可能透露的5个关于你肠道的信息： 1](../sessions/1777976758626_z1y7yyho.md) · 20.5 分 · 健康科普
+- 2026-05-05 [龙虾U盘短期暴利观察](../sessions/1777960607969_v8jrp8f9.md) · 20.5 分 · 商业观察
+- 2026-07-06 [动物园园长: 自从我把日均发帖数降到30左右后，上一期我的日均曝光达到了500万，看看这个数据能保持多久](../sessions/1783301171448_c1kv60q4.md) · 19.5 分 · 社交媒体运营
+- 2026-07-03 [王海滨的财经闲谈: 电影业是这样玩的，初创者和团队在电影拍摄时先卖一圈投资份额，上映前再卖一圈投资者，然后上映](../sessions/1783080116811_0cafveqe.md) · 19.5 分 · 财经评论
+- 2026-03-26 [lufei: 今天发售的新书《The Book of Elon》，作者Eric Jorgenson花费5年时间，投入几千个小时研究Musk，整理了Musk的推文、演讲、采访等…](../sessions/1774498820326_2gf3wtt6.md) · 19.5 分 · 读物推荐
+- 2026-09-18 [Tz: 翻译： 1. 解决衰老问题。 2. 找到癌症、阿尔茨海默病、心脏病的治愈方法。 3. 发现室温超导体。 4. 解决量子引力问题。 5. 开发全沉浸式VR。 6.…](../sessions/1789703227356_0dzw4vsf.md) · 19 分 · 科技未来主义
+- 2026-07-09 [Frey轰轰: 在深圳用我19块钱240G 流量的广电卡，搭配中兴redcap随身WiFi太爽了，小巧轻便，一块电池续航7-8个小时，网速稳定80-90兆，深圳的redcap信…](../sessions/1783567163946_nlegre2u.md) · 19 分 · 消费电子
+- 2026-07-03 [LinearUncle: 牛逼，全球最知名的个人独立开发者evelsio 是 Cursor 早期投资人，B 轮投了 10 万美金](../sessions/1783080018473_qrokllus.md) · 19 分 · 投资资讯
+- 2026-06-29 [海拉鲁编程客: 新视频真全干工程师了 esp32 硬件 + 前端 + 后端 + voice agent + 剪辑 + AI 编曲 🤣 ai时代太狂野了](../sessions/1782697724805_mkd3hkjr.md) · 19 分 · 技术动态
+- 2026-06-25 [热爱当下工作的十年目标](../sessions/1782360593982_re5aytcd.md) · 19 分 · 个人成长
+- 2026-06-25 [高薪职业毁掉潜力论断](../sessions/1782360561678_tu8qpeos.md) · 19 分 · 个人成长
+- 2026-06-25 [Teortaxes▶️ \(DeepSeek 推特🐋铁粉 2023 – ∞\): &amp;gt; this would be very easy for architectural experiments; one could just copy …](../sessions/1782348566987_io4jxijo.md) · 19 分 · 人工智能
+- 2026-06-18 [中文播客简短推荐清单](../sessions/1781783103140_bknk257i.md) · 19 分 · 内容推荐
+- 2026-06-09 [郭宇 guoyu.eth: 人应当在寻求与实现自我的道路上创造成功和财富，而不是在追逐成功的道路上寻找自我](../sessions/1781000933284_2c6blhnd.md) · 19 分 · 个人成长
+- 2026-05-05 [Bill The Investor: 有人开发出了一款开源 AI 自动化工具，正悄无声息地驱动着数以千计的工作流](../sessions/1777960709380_ex8oyh36.md) · 19 分 · AI工具资讯
+- 2026-05-05 [计算机本科就业焦虑片段](../sessions/1777960679952_4ejhbk5u.md) · 19 分 · 就业与职业观察
+- 2026-05-05 [工程商人与文人叙事断言](../sessions/1777960629694_wvpffqp6.md) · 19 分 · 社会观察
+- 2026-06-25 [AIF获奖短片推荐推文](../sessions/1782360610187_icjpltid.md) · 18.5 分 · AI影视
+- 2026-06-17 [Moshi移动多窗格快捷导航](../sessions/1781660870789_r818jtin.md) · 18.5 分 · 工具动态
+- 2026-05-07 [Rahul Garg: This is what Palantir is](../sessions/1778147792216_m4u3spbd.md) · 18.5 分 · AI与企业软件
+- 2026-03-20 [李继刚: 贝叶斯主义者只有一个信条： 观点是拿来「更新」的，不是拿来「坚守」的](../sessions/1773974050521_xhiikr11.md) · 18.5 分 · 思维方式
+- 2026-03-17 [@levelsio: I hate tmux It's so incredibly user unfriendly The shortcuts make no sense I wis…](../sessions/1773730815649_vn0qgx77.md) · 18.5 分 · 工具讨论
+- 2026-07-30 [KOReader](../sessions/1785376910013_7melfx62.md) · 18 分 · 阅读工具
+- 2026-07-29 [旅行生活笔记标签展示](../sessions/1785288034884_22co76vs.md) · 18 分 · 个人知识管理
+- 2026-06-15 [边缘AI代理视频转发](../sessions/1781520900426_nfgwdzck.md) · 18 分 · AI工程
+- 2026-06-09 [余温: 好久没发这种复盘帖了](../sessions/1781000733706_d4m6taus.md) · 18 分 · AI创业
+- 2026-06-03 [AmirMušić: A simple 200kb Claude Project that will change the entire branding industry AI-n…](../sessions/1780448879634_ig8nl7gb.md) · 18 分 · AI工具与品牌设计
+- 2026-06-17 [Claude工具切换短评](../sessions/1781660827972_qkd42cev.md) · 17.5 分 · AI工具动态
+- 2026-04-24 [iPaul: 天涯神贴：顶级养生精华](../sessions/1777005356608_fwc2jg0r.md) · 17.5 分 · 健康养生
+- 2026-03-13 [普达特: 无论是脑梗还是脑溢血，其实都是血管硬化、变脆导致的，高血压不会导致脑梗，但高血压确实是脑溢血的临门一脚； 血管硬化、变脆不是高血压导致的，高血压只是表象，血管硬…](../sessions/1773394572809_q57hg5qj.md) · 17.5 分 · 健康信息辨析
+- 2026-06-15 [yetone: 「每天早例会 9 点开始，要打开 AI 听记录音，员工要聚在各自业务的进度表大白板前拍照，AI 数人头、按声纹判断几人参会](../sessions/1781521044737_voq43soj.md) · 17 分 · AI职场治理
+- 2026-06-15 [X](../sessions/1781520939243_cs7tmhfu.md) · 17 分 · 社会政治评论
+- 2026-05-03 [墓碑科技: 每做一万次乳房X线筛查，就会有8个原本健康的女性死于乳腺癌](../sessions/1777773925053_cnth0tuo.md) · 17 分 · 健康医疗
+- 2026-05-03 [Roland.W: 这份白皮书卖B端企业主 市场前景非常不错吧哈哈哈 https://t](../sessions/1777773136948_ps6gh1qt.md) · 17 分 · 商业观察
+- 2026-04-16 [初码: 如果这次华为拉胯的软件团队，在伟大技术领袖梁文锋同志的帮助下，最终实现昇腾GPU对DeepSeekV4推理的完美适配，那全国烂尾的几百亿的昇腾服务器会一举全部盘…](../sessions/1776322890539_soypqyfx.md) · 17 分 · AI产业舆情
+- 2026-06-25 [未剪辑的设计评审录音](../sessions/1782360759487_3sfq49so.md) · 16.5 分 · 产品设计
+- 2026-03-17 [Claude土区订阅价格速报](../sessions/1773729381079_kh62ddik.md) · 16.5 分 · 产品价格信息
+- 2026-09-03 [陈着冷静: @szslg 当时应当注册个咨询公司，签咨询合同，开发票，既可以走对公账户，收入也合理了](../sessions/1788418714187_tgpfo8lf.md) · 16 分 · 社会传闻与法律风险
+- 2026-07-09 [酱紫表: 🤡又让 Claude 帮我刷机了，这次刷大疆 4G 模块，教程链接直接甩给 AI 开干](../sessions/1783567152698_9scz6awi.md) · 16 分 · AI工具使用
+- 2026-06-09 [独立开花卓富贵: 《置身钉内》这个居然有后续，另外一个更早离职的产品发了小红书](../sessions/1781000910836_fw064grz.md) · 16 分 · 职场八卦
+- 2026-05-05 [黄光裕张近东资产传闻](../sessions/1777960642117_tx1ts10c.md) · 16 分 · 商业八卦
+- 2026-05-03 [Teortaxes▶️ \(DeepSeek 推特🐋铁粉 2023 – ∞\): this looks retarded but that's why I'll believe it https://t](../sessions/1777812229410_b5v3fh95.md) · 16 分 · 社交媒体传闻
+- 2026-06-25 [Milly Barker: Day 9 building @tenant\_register Had to go check an IRL property issue today](../sessions/1782360519103_uf52whkj.md) · 15.5 分 · 创业动态
+- 2026-06-25 [关于经济增长蛋糕论推文](../sessions/1782360593080_w94mul9i.md) · 15 分 · 经济观点
+- 2026-06-01 [张小珺 Xiaojun Zhang: This is a new episode with Yusen Dai, Managing Partner at ZhenFund, the second e…](../sessions/1780307296717_3qnpytar.md) · 15 分 · 创业投资
+- 2026-05-08 [王局拍案: 天涯藏书节选： 未来五年注意事项 https://t](../sessions/1778201384465_ftmz7c80.md) · 15 分 · 宏观经济
+- 2026-05-05 [贝索斯派对冷漠轶事片段](../sessions/1777960668363_m3ulqlbe.md) · 15 分 · 人物轶事
+- 2026-07-07 [\(1\) Aditya: harness does play an important role after all https://t](../sessions/1783384821955_fy4haumd.md) · 14 分 · AI模型评测
+- 2026-04-20 [王海滨的财经闲谈: 可以称之为竞争](../sessions/1776645515988_yyo4klt9.md) · 14 分 · 社会舆论
+- 2026-03-25 [Vivian Wu: 张雪峰死了，按理说实在不应该说啥了](../sessions/1774404582625_be93zrr5.md) · 14 分 · 社会评论
+- 2026-09-09 [悲观、沮丧与黑色幽默：中国社交媒体上的“负能量”](../sessions/1788927341347_g7wz5efa.md) · 13 分 · 社会文化观察
+- 2026-07-06 [一条缺少信息的书籍推荐](../sessions/1783301238727_0kpt7efc.md) · 13 分 · 书籍推荐
+- 2026-06-25 [Patrick Collison: Very early experiment but I think this will be cool](../sessions/1782349675236_dt369jyq.md) · 13 分 · 产品动态
+- 2026-06-18 [X](../sessions/1781783270808_lpet3jjb.md) · 13 分 · AI工具使用
+- 2026-06-18 [skills/skills at main · mattpocock/skills](../sessions/1781782957480_hbqejhpc.md) · 13 分 · 无有效内容
+- 2026-06-15 [sukie: 太抽象了 但以我对湾区性压抑的了解 感觉这篇文章yy的程度比较高 90%的人都在aa房租 因为交完一个月房租paycheck就没了 没有aa饭钱已经是大方男人了…](../sessions/1781520912653_qckp8pw1.md) · 13 分 · 社交媒体吐槽
+- 2026-06-01 [少个分号: 这世界如果没有性和婚姻会变得和谐多了，所有人都是基因的奴隶](../sessions/1780308169977_3odisftp.md) · 13 分 · 社交媒体观点
+- 2026-05-05 [毕业打工人与量化收入感叹](../sessions/1777960637777_1d97xueg.md) · 13 分 · 职业观察
+- 2026-06-25 [牵Sofia走🇮🇹: 🤣这个妈妈不错](../sessions/1782349569140_kkejwxc2.md) · 12.5 分 · 社交观点
+- 2026-07-09 [高善文演讲转发线索](../sessions/1783556327587_mdpnwjd1.md) · 12 分 · 信息线索
+- 2026-06-11 [Claude Fable Visual Glyph Prompt Pack - Google 文档](../sessions/1781151206598_qkzzvlnr.md) · 12 分 · 无有效内容
+- 2026-03-26 [ki v i: 李晨46岁还赖在跑男不走，真不怪他 我算了下，他2014年就开始跑，到现在11季，一季最少八百万，一年录三四个月，钱就到手了](../sessions/1774498944532_gmek6edw.md) · 12 分 · 娱乐八卦
+- 2026-06-08 [绕过付费墙的播客推荐](../sessions/1780891605216_a0sbllui.md) · 11.5 分 · 社交媒体推广
+- 2026-07-22 [风暴前夜：光绪](../sessions/1784694035306_65qpo8b9.md) · 11 分 · 历史文化
+- 2026-06-25 [StarKnight: Prompt： 根据你的刻板印象，绘制一张并排三列的图片，分别展示中国人的工作场景，韩国人的工作场景，日本人的工作场景](../sessions/1782349591653_x14vr7gi.md) · 11 分 · AI生成内容
+- 2026-05-05 [金融视角批判实体经济](../sessions/1777960620812_bltryy23.md) · 11 分 · 观点吐槽
+- 2026-07-09 [itewqq: Had a lot fun with this](../sessions/1783567123880_t8krlwcv.md) · 10 分 · 社交媒体内容
+- 2026-06-25 [化妆前后反差展示短帖](../sessions/1782360671993_jg4w0753.md) · 10 分 · 娱乐内容
+- 2026-06-25 [一则缺乏信息的吐槽推文](../sessions/1782360629448_2znoycbi.md) · 10 分 · 低价值碎片信息
+- 2026-06-18 [X](../sessions/1781783263419_3ery2w37.md) · 10 分 · 生活随感
+- 2026-06-17 [电影超脱的一句话观感](../sessions/1781660821671_24gbjy2h.md) · 10 分 · 个人动态
+- 2026-06-15 [失效推文页面无有效内容](../sessions/1781521016449_ti4frp37.md) · 10 分 · 无效内容
+- 2026-06-15 [X](../sessions/1781520891407_hpiww0pg.md) · 10 分 · 无有效内容
+- 2026-06-08 [旧金山屋顶花园随记](../sessions/1780891607447_wb5dw6hh.md) · 10 分 · 生活随笔
