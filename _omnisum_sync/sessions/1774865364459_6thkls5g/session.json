@@ -1,18 +1,72 @@
 {
+  "ancestorRevisionIds": [
+    "sha256:fcd8a6906134348af8fe40291970684b5ca8f20c68487fa0723090eaf1dd4abc"
+  ],
   "createdAt": 1774865364459,
   "entityType": "session",
   "id": "1774865364459_6thkls5g",
-  "parentRevisionIds": [],
+  "parentRevisionIds": [
+    "sha256:fcd8a6906134348af8fe40291970684b5ca8f20c68487fa0723090eaf1dd4abc"
+  ],
   "payload": {
+    "actionItems": [
+      "对自有Agent运行时执行dmesg、/proc/1/cmdline和strace检查，确认虚拟化类型、PID 1职责及进程监督机制。",
+      "使用go version -m、objdump -t和定向字符串搜索审计自有Go产物是否泄露内部模块、协议或调试符号。",
+      "将快照恢复后的时钟修正、随机数重播种、缓存清理、设备重挂载和能力降权纳入沙箱安全检查清单。"
+    ],
+    "archiveReason": "包含较完整的Firecracker快照恢复架构、进程控制协议、内部部署链路及可复用的Go二进制逆向流程，技术细节和方法论价值均较高。",
+    "classifiedAt": 1789532996944,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 8,
+      "information_density": 9,
+      "long_term_leverage": 8,
+      "methodology_value": 9,
+      "novelty": 9,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "技术博客",
+    "classifyTitle": "Claude Code Web架构逆向",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
     "domain": "aprilnea.me",
     "favicon": "",
-    "rating": null,
+    "knowledgePoints": [
+      "Firecracker可通过预启动最小initramfs并冻结整机状态，在恢复时热替换根文件系统和工具镜像，实现低延迟、会话隔离的沙箱启动。",
+      "未剥离的Go二进制会暴露模块路径、依赖、包结构、方法签名、结构体标签和错误字符串，可据此恢复内部功能与协议。",
+      "文中呈现的AI原生PaaS链路将自然语言生成、沙箱构建、数据库配置和应用部署整合进同一平台。"
+    ],
+    "oneHighValuePoint": "文章展示了如何结合Go符号表、构建元数据、结构体标签和运行时追踪，在无需反编译器的情况下重建一个AI Agent平台的组件边界与通信流程。",
+    "oneLineReview": "这是一篇证据较丰富、方法可复用的AI运行时逆向分析，但对Anthropic战略意图和产品走向的判断仍带有推测性。",
+    "primaryCategory": "AI基础设施与运行时架构",
+    "rating": "S",
+    "rejectReason": "",
+    "retentionDecision": "重点精读并长期存档，适合作为AI Agent运行时、沙箱架构和Go二进制分析的参考资料",
+    "secondaryCategories": [
+      "二进制逆向工程",
+      "AI原生PaaS"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章利用dmesg、strace、objdump及Go构建元数据逆向Claude Code Web，梳理其Firecracker快照运行时、进程控制协议、Baku应用生成环境、BYOC机制及内部Antspace部署平台。",
+    "tags": [
+      "Claude Code",
+      "Firecracker",
+      "Go二进制逆向",
+      "AI原生PaaS",
+      "Agent运行时"
+    ],
     "title": "Anthropic's Hidden Vercel Competitor \"Antspace\" | AprilNEA",
+    "totalScore": 88,
     "url": "https://aprilnea.me/en/blog/reverse-engineering-claude-code-antspace"
   },
-  "payloadHash": "sha256:7c4ff67ada5c09bfe79a2f6f5b41f4697c7b3d0c320e55be646255ca2c9c272a",
+  "payloadHash": "sha256:607a2554940c1793e1d9b4076c31940729581d84ef0125081e2bc2d461cd581f",
   "refs": {},
-  "revisionId": "sha256:fcd8a6906134348af8fe40291970684b5ca8f20c68487fa0723090eaf1dd4abc",
+  "revisionId": "sha256:f9494fdaf02a96a3db581c2de458e5b7cc31e55966789f4656dbd3f5750a6cd9",
   "schemaVersion": 1,
-  "updatedAt": 1774867098472
+  "updatedAt": 1789605307628
 }

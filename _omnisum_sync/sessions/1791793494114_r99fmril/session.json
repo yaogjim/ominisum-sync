@@ -1,0 +1,67 @@
+{
+  "createdAt": 1791793494114,
+  "entityType": "session",
+  "id": "1791793494114_r99fmril",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "搭建事件触发、服务端Agent循环与独立执行虚拟机组成的原型，使用Temporal等持久化工作流工具，并测试故障后的任务恢复。",
+      "梳理提示和工具描述，固定公共前缀与区块顺序，按需读取工具详情，将长输出移出主上下文，并观察缓存命中和token消耗变化。",
+      "区分外部不可信内容与用户指令，对发送邮件等不可逆操作设置确认流程，将工具误调用等失败案例转为评估用例，验证修改后再发布。"
+    ],
+    "archiveReason": "包含可复用的事件驱动架构、持久化工作流、执行环境解耦及上下文成本优化方法，直接服务于Agent开发。",
+    "classifiedAt": 1791795021838,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 5,
+      "information_density": 7,
+      "long_term_leverage": 8,
+      "methodology_value": 8,
+      "novelty": 7,
+      "relevance": 10,
+      "transferability": 8
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "常驻主动智能体的架构与工程实践",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/0a4db377/img/favicon.ico",
+    "knowledgePoints": [
+      "常驻不等于计算资源持续运行：消息、定时任务和外部事件可唤醒Agent，持久化状态与按需启停的执行环境共同支撑持续服务。",
+      "长期运行需要控制主Agent上下文：按需加载工具说明，将长输出存入文件，并让子智能体承担高上下文消耗任务、仅回传结果。",
+      "提示缓存依赖稳定的公共前缀；保持工具定义、系统提示及区块顺序稳定，并在缓存仍有效时进行必要的上下文压缩，有助于降低成本，但压缩仍可能丢失信息。"
+    ],
+    "oneHighValuePoint": "将Agent控制循环与执行用的云端虚拟机解耦，并通过持久化工作流保存任务进度，使执行环境能够独立休眠、重建和恢复，而不必同时终止Agent服务。",
+    "oneLineReview": "可作为常驻Agent的架构设计参考，但缺少代码和量化验证，对幻觉基本解决、自动审查优于人工等断言应保持审慎。",
+    "primaryCategory": "Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "精读并保留架构与上下文优化部分，产品效果和未来预测需另行验证",
+    "secondaryCategories": [
+      "系统架构",
+      "AI产品设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "讲解常驻主动智能体的产品与工程架构，包括事件触发、持久化工作流、独立云端计算机、子智能体协作、分层记忆与提示缓存，并讨论权限审批、提示注入防护和评估迭代。内容以团队实践介绍为主，缺少量化验证。",
+    "tags": [
+      "常驻智能体",
+      "持久化工作流",
+      "上下文工程",
+      "提示缓存",
+      "智能体安全"
+    ],
+    "title": "Stanford CS146S: How always-on agents work - YouTube",
+    "totalScore": 79,
+    "url": "https://www.youtube.com/watch?v=L1OBRtfPS34"
+  },
+  "payloadHash": "sha256:0c64fafea0309dd9d25fd2922eceb04909fef5dac760ef76df5be9d712d0f502",
+  "refs": {},
+  "revisionId": "sha256:7511765f68b0bf77e0466a44ab0d137fd6d221b3353db43f1dc9af006562b937",
+  "schemaVersion": 1,
+  "updatedAt": 1791795021915
+}

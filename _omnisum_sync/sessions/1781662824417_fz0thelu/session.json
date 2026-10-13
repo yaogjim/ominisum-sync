@@ -1,18 +1,74 @@
 {
+  "ancestorRevisionIds": [
+    "sha256:8572bae62be177af1c81085374a259f88a4371b99f5251d77fd39b89c729ca40"
+  ],
   "createdAt": 1781662824417,
   "entityType": "session",
   "id": "1781662824417_fz0thelu",
-  "parentRevisionIds": [],
+  "parentRevisionIds": [
+    "sha256:8572bae62be177af1c81085374a259f88a4371b99f5251d77fd39b89c729ca40"
+  ],
   "payload": {
+    "actionItems": [
+      "如需试用，可执行 npm i -g reasonix 或 brew install 安装工具。",
+      "使用 reasonix setup 生成 reasonix.toml 并配置 DEEPSEEK_API_KEY。",
+      "在真实项目中运行 reasonix run 测试代码修改、单元测试生成和成本表现。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1781783831615,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 5,
+      "novelty": 4,
+      "relevance": 7,
+      "transferability": 5
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Reasonix工具快速介绍",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
     "domain": "github.com",
     "favicon": "https://github.githubassets.com/favicons/favicon.svg",
-    "rating": null,
+    "knowledgePoints": [
+      "Reasonix 使用 reasonix.toml 声明 provider、agent、工具和插件，内核不硬编码模型。",
+      "外部工具通过 stdio JSON-RPC 作为子进程运行，并兼容 MCP。",
+      "支持 DeepSeek、MiMo 以及任意 OpenAI 兼容端点，可进行双模型协同。",
+      "密钥优先通过环境变量或系统凭据存储管理，避免直接写入配置文件。",
+      "提供 checkpoints 与 rewind 机制作为代码编辑安全网。"
+    ],
+    "oneHighValuePoint": "Reasonix 通过配置驱动、插件子进程和单二进制分发降低 AI Agent 工具的部署与集成成本。",
+    "oneLineReview": "适合作为了解和试用 Reasonix 的入口文档，但方法论和长期参考价值有限。",
+    "primaryCategory": "AI开发工具",
+    "rating": "B",
+    "rejectReason": "内容主要是项目README，偏安装与功能说明，缺少深入原理、真实案例和效果数据。",
+    "retentionDecision": "短期参考后可删除",
+    "secondaryCategories": [
+      "开源项目",
+      "命令行工具"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章介绍 DeepSeek-Reasonix 的定位、特性、安装方式、配置示例和相关文档入口。其核心是一个配置与插件驱动的轻量 Go 单二进制 AI Agent harness，支持 DeepSeek、OpenAI兼容端点、MCP插件和双模型协同。",
+    "tags": [
+      "DeepSeek",
+      "Reasonix",
+      "AI Agent",
+      "Go",
+      "MCP"
+    ],
     "title": "DeepSeek-Reasonix/README.zh-CN.md at main-v2 · esengine/DeepSeek-Reasonix",
+    "totalScore": 56.5,
     "url": "https://github.com/esengine/DeepSeek-Reasonix/blob/main-v2/README.zh-CN.md"
   },
-  "payloadHash": "sha256:28a6d15a8c42a02703ba7b014b0d050690610e61fd4fef2b509eb15f549c4a03",
+  "payloadHash": "sha256:14c0f37ea296264884b3c60579d5932c88f33b3c96921b6bda74b4ac44b8d4e6",
   "refs": {},
-  "revisionId": "sha256:8572bae62be177af1c81085374a259f88a4371b99f5251d77fd39b89c729ca40",
+  "revisionId": "sha256:e672029db773fb71bdd3a42322eae1f2b2932417f521b03dea290aa7e78a8983",
   "schemaVersion": 1,
-  "updatedAt": 1781662825498
+  "updatedAt": 1781783833690
 }

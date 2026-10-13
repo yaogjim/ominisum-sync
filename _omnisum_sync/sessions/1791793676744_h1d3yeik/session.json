@@ -1,0 +1,67 @@
+{
+  "createdAt": 1791793676744,
+  "entityType": "session",
+  "id": "1791793676744_h1d3yeik",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "先核对现有记忆系统是否已满足作用域、来源和时间管理需求，仅针对未覆盖的产品规则增加门控。",
+      "为候选记忆定义账户级、任务级、会话级和禁止存储的分类，并明确哪些偏好必须经用户陈述或确认。",
+      "将候选事实、来源证据和当前状态提交给语义判断模块，由应用代码依据返回结果执行保存、限定作用域、暂留或拒绝。"
+    ],
+    "archiveReason": "明确区分记忆系统原生能力与产品特定准入规则，并给出候选信息、语义判断、代码执行和存储的可复用流程。",
+    "classifiedAt": 1791794947392,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 7,
+      "evidence_quality": 5,
+      "information_density": 8,
+      "long_term_leverage": 8,
+      "methodology_value": 7,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "Agent长期记忆的语义准入门控",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "持久偏好、单次任务指令和临时事件应采用不同的记忆作用域与保留策略，不能将所有候选事实统一长期存储。",
+      "语义门控可结合拟议事实、来源证据及用户、任务和会话状态，判断明确确认程度、跨任务适用性与复用风险。",
+      "准入门控负责产品特定规则，后续记忆系统负责提取、实体解析、溯源、时间更新和检索；设计时应避免职责重复。"
+    ],
+    "oneHighValuePoint": "只有产品特定的记忆准入规则超出现有记忆系统能力时，才增加语义门控，并将模型的分类判断与代码的策略执行分离。",
+    "oneLineReview": "对Agent记忆的作用域和准入架构有直接参考价值，但案例为示意，缺少实现细节、概率校准和效果验证。",
+    "primaryCategory": "Agent开发",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "保留为Agent记忆准入设计参考，不作为工具能力或安全效果的验证依据",
+    "secondaryCategories": [
+      "AI系统架构",
+      "产品规则设计"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章以旅行助手为例，区分长期偏好、单次指令与临时事实，说明何时应在Graphiti摄取前加入Jev语义门控，由模型判断记忆范围与确认状态，再由代码执行产品规则；同时强调避免重复已有能力。",
+    "tags": [
+      "Agent记忆",
+      "语义门控",
+      "记忆作用域",
+      "Graphiti",
+      "Jev"
+    ],
+    "title": "Avi Chawla: Jev for Agent Memory, clearly explained: An agent-memory system often passes con…",
+    "totalScore": 74,
+    "url": "https://x.com/_avichawla/status/2109215376727028208"
+  },
+  "payloadHash": "sha256:66bd72e1f828a5bdb24cc32d14b192e85013f8b6c2980f1fb51ab32fecf20a92",
+  "refs": {},
+  "revisionId": "sha256:742fe535b31c9e3c9e7ee0b3be681ea148fecebd08b9804336ff7af1427aa9f9",
+  "schemaVersion": 1,
+  "updatedAt": 1791794947443
+}

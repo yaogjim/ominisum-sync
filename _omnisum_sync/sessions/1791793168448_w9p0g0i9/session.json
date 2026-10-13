@@ -1,0 +1,67 @@
+{
+  "createdAt": 1791793168448,
+  "entityType": "session",
+  "id": "1791793168448_w9p0g0i9",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "查看OpenMinis/iCTRL仓库，确认安装、设备配对和智能体接入所需条件。",
+      "以文中打开网页并查找eSIM的任务为最小实验，检查点击、输入及OCR读屏能力。",
+      "测试无线连接、错误后的继续执行及浏览器屏幕串流，核对发布方描述与实际表现。"
+    ],
+    "archiveReason": "提供明确的开源项目入口及面向智能体的iOS自动化功能线索，可供后续工具选型与实验参考。",
+    "classifiedAt": 1791795139211,
+    "classifyAction": "存档",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 5,
+      "evidence_quality": 3,
+      "information_density": 7,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 6
+    },
+    "classifySourceType": "新闻",
+    "classifyTitle": "iCTRL开源：智能体手机自动化",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "iCTRL被介绍为基于XCUITest、面向AI智能体的iPhone与iPad自动化工具，支持点击、输入、读取屏幕和启动应用。",
+      "发布方称内置OCR可读取网页视图及自定义绘制文本，错误反馈可提示智能体下一步操作。",
+      "发布方称工具支持一次配对后的Wi-Fi控制，并可将工作中的设备屏幕串流至浏览器。"
+    ],
+    "oneHighValuePoint": "将手机控制与Skill、OCR和提示下一步操作的错误反馈结合，为构建移动端智能体执行闭环提供了具体工具线索。",
+    "oneLineReview": "与Agent开发高度相关的工具发布线索，但功能主要来自发布方自述，尚不足以判断实际可用性。",
+    "primaryCategory": "AI Agent工具",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "作为移动端Agent工具线索保留，优先查看仓库文档而非精读推文",
+    "secondaryCategories": [
+      "移动端自动化",
+      "开源工具"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "Open Minis宣布开源基于XCUITest的iCTRL，称其可让AI智能体控制iPhone和iPad，提供Skill、OCR、错误反馈、浏览器屏幕串流及无线连接，但未展示部署步骤或性能验证。",
+    "tags": [
+      "iCTRL",
+      "XCUITest",
+      "iOS自动化",
+      "AI智能体",
+      "OCR"
+    ],
+    "title": "Open Minis: iCTRL is now open source",
+    "totalScore": 57,
+    "url": "https://x.com/OpenMinis/status/2109313759407947812"
+  },
+  "payloadHash": "sha256:676bed068625d832b7283aa491c6cd6686535a8aebd23bb8b053f51fa3e40a71",
+  "refs": {},
+  "revisionId": "sha256:f78d8b9626b1e5a67f31503e7098b5d050a4fb9502f8c0e8678e76590b18a1ca",
+  "schemaVersion": 1,
+  "updatedAt": 1791795139255
+}

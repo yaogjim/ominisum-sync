@@ -1,0 +1,67 @@
+{
+  "createdAt": 1791793642194,
+  "entityType": "session",
+  "id": "1791793642194_19cvsig4",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "先核对候选仓库的文档、许可证和运行要求，再用真实产品素材制作一个短场景，验证工具是否适合交付。",
+      "把发布脚本拆成带精确时长的分镜表，建立统一品牌令牌文件，逐场景构建而非一次性生成整片。",
+      "在最终输出前检查关键帧与转场快照，并用ffprobe和联系表核对成片时长、音频及布局问题。"
+    ],
+    "archiveReason": "包含可复用的分镜规划、品牌令牌管理、确定性动画和渲染验证流程，对产品演示与客户交付有直接参考价值。",
+    "classifiedAt": 1791794974820,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 8
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "AI产品动画工具选型与制作流程",
+    "classifyWarnings": [],
+    "deepRead": "是",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "代码驱动视频应让画面状态由时间确定，并避免无种子的随机数和系统时钟，以支持逐帧定位与可重复渲染。",
+      "将产品名称、颜色、字体和标志集中到品牌令牌文件，可减少改名换标时的重复修改与视觉不一致。",
+      "静态快照正常不代表最终视频正常；验证应覆盖转场中间状态、最终成片、音频流和文字可读性。"
+    ],
+    "oneHighValuePoint": "按内容的准确性需求分工：UI、价格、声明和CTA用代码或后期确保准确，实体产品镜头可用生成式视频，再统一到可控时间线中。",
+    "oneLineReview": "制作与验证流程具有明确实践价值，但工具排名和能力宣传证据偏弱，应将可复用方法与时效性信息分开采纳。",
+    "primaryCategory": "AI产品视频制作",
+    "rating": "A",
+    "rejectReason": "不宜直接采信“最佳”排名、模型能力及星标数据：缺少统一比较标准，主要依据社交平台案例，且引用中已有身份归属被纠正。",
+    "retentionDecision": "重点阅读并保留制作流程，工具版本与排名仅作待核实线索",
+    "secondaryCategories": [
+      "AI编程工具",
+      "产品营销与交付"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "文章汇总十二类AI产品动画制作方案，比较代码渲染、技能包和生成式视频的适用场景与限制，并提供环境准备、真实素材收集、分镜、音画同步和渲染验证流程；工具排名及版本数据仍需核实。",
+    "tags": [
+      "产品发布视频",
+      "代码驱动动画",
+      "Remotion",
+      "HyperFrames",
+      "逐帧验证"
+    ],
+    "title": "目前用 AI 制作产品动画的 12 种最佳方法",
+    "totalScore": 72,
+    "url": "https://x.com/rryssf/status/2109336862099911149"
+  },
+  "payloadHash": "sha256:b1447165f0c79ac00c23e519786702c4c6e9b14c8e92f31044c9c842009a1469",
+  "refs": {},
+  "revisionId": "sha256:94fd688014fff4506a896e63cccda9b090a13df94a359d2bc5410616814197d6",
+  "schemaVersion": 1,
+  "updatedAt": 1791794974903
+}

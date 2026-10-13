@@ -1,0 +1,63 @@
+{
+  "createdAt": 1791793300343,
+  "entityType": "session",
+  "id": "1791793300343_7f6qcvs3",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "评估专用模型方案时，将前期后训练投入及其所需的摊销使用量纳入成本比较。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1791795084892,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 3,
+      "evidence_quality": 2,
+      "information_density": 5,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 4,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "开放模型与后训练的降本潜力",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "后训练的潜在降本路径包括提升小模型的任务能力，以及减少完成任务所需的token。",
+      "评估模型专业化的经济性，需要同时考虑前期训练投入与后续使用量，而不能只比较单次推理价格。"
+    ],
+    "oneHighValuePoint": "模型专业化是否划算，不只取决于推理成本，也取决于前期后训练投入需要多少使用量才能摊销。",
+    "oneLineReview": "与AI产品成本优化直接相关，但主要是未经量化验证的趋势判断，适合速览而非据此决策。",
+    "primaryCategory": "AI模型优化",
+    "rating": "C",
+    "rejectReason": "缺少模型案例、成本数据和实施条件，附带回复多数偏离主题，尚不足以形成可复用的决策参考。",
+    "retentionDecision": "速览核心观点，暂不作为技术选型或成本决策依据",
+    "secondaryCategories": [
+      "技术成本管理"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "文章认为，开放权重结合后训练与推理优化，可让更小模型以更少token完成任务、降低成本；并预测后训练变便宜后，专业化模型的投入更容易摊销。内容以趋势判断为主，未提供验证数据。",
+    "tags": [
+      "开放权重",
+      "后训练",
+      "推理优化",
+      "模型专业化",
+      "成本摊销"
+    ],
+    "title": "Yash Patil: Open models and post-training will be a big part of how this plays out",
+    "totalScore": 47,
+    "url": "https://x.com/ypatil125/status/2109469970216427980"
+  },
+  "payloadHash": "sha256:4ef8f486610286ed59a706cd5bc24ec87b92d8db4750bdb17a73575be7b47fc3",
+  "refs": {},
+  "revisionId": "sha256:ae749405c686de8fc3013d8c8eae9b21c4b4ff62840a572110fdc563ddc498de",
+  "schemaVersion": 1,
+  "updatedAt": 1791795084934
+}

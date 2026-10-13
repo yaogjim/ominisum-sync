@@ -1,0 +1,64 @@
+{
+  "createdAt": 1791793235999,
+  "entityType": "session",
+  "id": "1791793235999_53utob2j",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "设计 AI 产品需求入口时，优先使用修图、查询销售趋势等具体任务表述，而非要求用户提出“构建软件”。"
+    ],
+    "archiveReason": "",
+    "classifiedAt": 1791795111368,
+    "classifyAction": "速览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 4,
+      "evidence_quality": 3,
+      "information_density": 6,
+      "long_term_leverage": 5,
+      "methodology_value": 3,
+      "novelty": 5,
+      "relevance": 8,
+      "transferability": 6
+    },
+    "classifySourceType": "社区讨论",
+    "classifyTitle": "从用户任务看智能代理替代软件",
+    "classifyWarnings": [],
+    "deepRead": "否",
+    "deleteReason": "",
+    "domain": "x.com",
+    "favicon": "https://abs.twimg.com/favicons/twitter.3.ico",
+    "knowledgePoints": [
+      "任务导向交互将用户关注点放在预期结果，而非软件名称或开发过程。",
+      "回复中的 Excel 个案提示：功能改善并不必然带来用户迁移，既有习惯和学习成本可能阻碍采纳。",
+      "代理替代传统软件在本文中仍是预测，示例场景不能证明其已被普通用户广泛采用。"
+    ],
+    "oneHighValuePoint": "用户可能表达的是要完成的任务，而不是要构建的软件；AI 产品入口应区分这两种需求表述。",
+    "oneLineReview": "任务导向的交互视角值得参考，但不足以支撑普通用户将大规模放弃传统软件的结论。",
+    "primaryCategory": "AI 产品设计",
+    "rating": "C",
+    "rejectReason": "缺少实际产品数据、可核实案例和实现方法，主要是趋势预测与个人经验争论，长期留存优先级较低。",
+    "retentionDecision": "速览核心观点与反例，不作为软件替代趋势的可靠依据",
+    "secondaryCategories": [
+      "Agent 应用",
+      "用户行为"
+    ],
+    "shouldArchive": false,
+    "shouldDelete": false,
+    "summaryBrief": "讨论普通用户是否会通过表达具体任务，让 AI 代理自动构建工具并替代传统软件。作者以修图和跨平台销售分析为例，回复则质疑用户理解能力，并以抵制替换 Excel 的经历强调习惯与学习成本。",
+    "tags": [
+      "任务导向交互",
+      "智能代理",
+      "软件替代",
+      "用户采纳阻力"
+    ],
+    "title": "@levelsio: A big % of tech people don't get it Normies won't ask \"build me software\" They w…",
+    "totalScore": 52,
+    "url": "https://x.com/levelsio/status/2109288526726549822"
+  },
+  "payloadHash": "sha256:36180da26c45d2f5bc9fbd1144a65a4ee03ea91a95abe3d64e85f5aa1bedbc8b",
+  "refs": {},
+  "revisionId": "sha256:ebb7e9134bda3a5548a83f2e96748ac169a54eb754b4eab0c2bbbe4980b1f789",
+  "schemaVersion": 1,
+  "updatedAt": 1791795111415
+}

@@ -1,0 +1,67 @@
+{
+  "createdAt": 1791793126625,
+  "entityType": "session",
+  "id": "1791793126625_ih5dvu0a",
+  "parentRevisionIds": [],
+  "payload": {
+    "actionItems": [
+      "选择一个明确的视觉检查任务，如判断物体是否到位，用文中提到的演示或开放权重模型测试受约束输出。",
+      "在目标硬件上测试模型预热后的推理延迟，并计入应用其他环节的耗时，避免仅凭参数量判断部署可行性。",
+      "原型中分离模型判断、任务流程和运动控制，并测试复杂环境下的失败情况及转交其他模块或人工处理的条件。"
+    ],
+    "archiveReason": "包含端侧性能判断、受约束决策输出及感知与控制分离的可复用知识，对Agent和机器人原型设计有参考价值。",
+    "classifiedAt": 1791795177702,
+    "classifyAction": "浏览",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 6,
+      "evidence_quality": 5,
+      "information_density": 6,
+      "long_term_leverage": 7,
+      "methodology_value": 6,
+      "novelty": 6,
+      "relevance": 9,
+      "transferability": 7
+    },
+    "classifySourceType": "视频",
+    "classifyTitle": "多模态决策模型与端侧部署实践",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
+    "domain": "www.youtube.com",
+    "favicon": "https://www.youtube.com/s/desktop/0a4db377/img/favicon.ico",
+    "knowledgePoints": [
+      "决策模型可针对自然语言描述的任务输出概率、选项或分数，使软件直接消费判断结果，而不必生成长篇文本。",
+      "参数量小不等于目标设备上的推理速度快；运算类型、内存使用、运行软件与具体硬件都会影响延迟。",
+      "厂商报告的模型加载并预热后的图像处理延迟，不等于完整应用的端到端延迟，也不能单独证明真实环境中的可靠性。"
+    ],
+    "oneHighValuePoint": "将模型限制在感知与受约束判断环节，由任务软件决定下一步、专用控制器执行运动，为机器人系统提供了比模型直接包办全部控制更清晰的职责划分。",
+    "oneLineReview": "与AI系统开发高度相关，端侧部署和系统分层观点值得保留，但演示与厂商数据不足以证明真实场景中的可靠性。",
+    "primaryCategory": "AI技术",
+    "rating": "B",
+    "rejectReason": "",
+    "retentionDecision": "选择性浏览并保留部署判断与系统分层要点，具体性能数据需回查原始资料",
+    "secondaryCategories": [
+      "Agent开发",
+      "技术实现"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "视频介绍Liquid AI开放权重的多模态决策模型，与文本决策模型作比较，通过游戏演示、厂商延迟数据和机器人场景，说明端侧判断的用途、硬件约束及感知与控制分工，并指出真实环境验证仍是挑战。",
+    "tags": [
+      "多模态决策模型",
+      "端侧推理",
+      "开放权重",
+      "机器人系统",
+      "推理延迟"
+    ],
+    "title": "Liquid AI vs Jev: When Decision Models Can See and Hear - YouTube",
+    "totalScore": 67,
+    "url": "https://www.youtube.com/watch?v=EjX3OQQNPoo"
+  },
+  "payloadHash": "sha256:52c36ef89de25706f3d8e43936df2f2eec609dc59afbd0e756083c6524ef97f7",
+  "refs": {},
+  "revisionId": "sha256:a0e487c04ae744d896f8c641f9e74690b0f9e6b7936ddbdd24d4545fbad1d61a",
+  "schemaVersion": 1,
+  "updatedAt": 1791795177772
+}

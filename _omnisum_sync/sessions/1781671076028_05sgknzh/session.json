@@ -1,9 +1,39 @@
 {
+  "ancestorRevisionIds": [
+    "sha256:c44dda673a79420654f02ed6ea8e9feb3b5eb7e217cbc9840bd786ae4ed38139"
+  ],
   "createdAt": 1781671076028,
   "entityType": "session",
   "id": "1781671076028_05sgknzh",
-  "parentRevisionIds": [],
+  "parentRevisionIds": [
+    "sha256:c44dda673a79420654f02ed6ea8e9feb3b5eb7e217cbc9840bd786ae4ed38139"
+  ],
   "payload": {
+    "actionItems": [
+      "如需设计 coding agent，可借鉴其 Provider/Tool 接口、注册表和插件适配层划分。",
+      "重点参考其权限规则优先级、Bash 命令前缀审批和文件编辑路径作用域设计。",
+      "评估上下文压缩策略是否适用于自己的长会话代理系统，并补充实际 token、缓存命中率和质量评测。",
+      "若使用 MCP 插件生态，可参考其 stdio/http transport 抽象和工具命名空间方案。"
+    ],
+    "archiveReason": "包含较完整的编码代理架构契约、接口设计、插件协议、会话压缩与权限模型，具备复用价值",
+    "classifiedAt": 1781783833821,
+    "classifyAction": "精读",
+    "classifyPartial": false,
+    "classifyScores": {
+      "actionability": 8,
+      "evidence_quality": 4,
+      "information_density": 8,
+      "long_term_leverage": 7,
+      "methodology_value": 8,
+      "novelty": 6,
+      "relevance": 8,
+      "transferability": 7
+    },
+    "classifySourceType": "文档",
+    "classifyTitle": "Reasonix编码代理架构规范",
+    "classifyWarnings": [],
+    "deepRead": "可选",
+    "deleteReason": "",
     "domain": "github.com",
     "favicon": "",
     "imageAnalysis": [
@@ -31,15 +61,44 @@
         "width": 0
       }
     ],
-    "rating": null,
+    "knowledgePoints": [
+      "核心只依赖 Provider 和 Tool 接口，具体模型与工具通过配置、注册表或插件注入，避免硬编码模型分支。",
+      "外部插件采用 MCP/JSON-RPC 协议接入，并将远程工具适配为统一 Tool 接口，命名空间化以避免冲突。",
+      "双模型协作通过 planner 与 executor 分离会话实现，避免模型切换破坏 prompt prefix cache。",
+      "上下文压缩只在接近 context window 阈值时低频触发，并保留用户关键轮次与摘要以降低信息漂移。",
+      "权限层独立于模型和 CLI，基于 allow/ask/deny 规则对工具调用进行细粒度裁决。"
+    ],
+    "oneHighValuePoint": "通过接口优先、注册表驱动和 MCP 插件适配，将模型、工具、权限和运行时扩展解耦，形成可扩展的 coding agent 核心架构。",
+    "oneLineReview": "一份信息密度高、工程设计完整的 coding agent 架构规范，但缺少实验数据和实际效果验证。",
+    "primaryCategory": "AI编程代理架构",
+    "rating": "A",
+    "rejectReason": "",
+    "retentionDecision": "长期保留，适合作为设计编程代理、插件系统和工具权限层的参考规范",
     "schema": [],
     "schemaTypes": [],
+    "secondaryCategories": [
+      "软件工程",
+      "插件系统",
+      "权限控制"
+    ],
+    "shouldArchive": true,
+    "shouldDelete": false,
+    "summaryBrief": "本文是 Reasonix 编码代理的技术规格，描述其配置与插件驱动架构、Provider/Tool 接口、MCP 插件接入、双模型协作、上下文压缩、记忆检索和细粒度权限控制等设计。",
+    "tags": [
+      "coding-agent",
+      "MCP",
+      "Go",
+      "插件架构",
+      "权限策略",
+      "上下文压缩"
+    ],
     "title": "DeepSeek-Reasonix/docs/SPEC.md at main-v2 · esengine/DeepSeek-Reasonix",
+    "totalScore": 72,
     "url": "https://github.com/esengine/DeepSeek-Reasonix/blob/main-v2/docs/SPEC.md"
   },
-  "payloadHash": "sha256:e599551dcf2af19ab7f8157f0fdffae9c0eeedbc65ef5521fd7d64293b790d45",
+  "payloadHash": "sha256:e19798b19c83b0cc2b77cce4c9fb4fc25900731e7ffccb5878d4c0d0f574e56c",
   "refs": {},
-  "revisionId": "sha256:c44dda673a79420654f02ed6ea8e9feb3b5eb7e217cbc9840bd786ae4ed38139",
+  "revisionId": "sha256:72d3e6af8efae43b3709e25172a2cf6e8b3c0734483073919e9cd6b558e51edf",
   "schemaVersion": 1,
-  "updatedAt": 1781671122249
+  "updatedAt": 1789692416416
 }
